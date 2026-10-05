@@ -1,0 +1,15 @@
+# Build caches and local secrets; retain production state and final deliverables.
+.env
+.env.*
+!.env.example
+*.pem
+__pycache__/
+.venv/
+node_modules/
+.cache/
+tmp/
+build/page-renders/
+production/private/
+
+# Optional commercial reference evidence is local by default.
+references/private/

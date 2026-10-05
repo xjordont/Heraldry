@@ -1,0 +1,62 @@
+{
+  "source": "source/Heraldry_RC484.md",
+  "source_authority": "RC484 supplied manuscript; no historical-rule imports",
+  "models": {
+    "orchestrator": "claude-opus-5-5",
+    "orchestrator_effort": "medium",
+    "bulk_work": "claude-sonnet-5-5",
+    "mechanical_work": "haiku",
+    "max_concurrent_subagents": 2
+  },
+  "budget": {
+    "claude_cloud_credit_limit_usd": 100,
+    "target_spend_usd": 80,
+    "repair_reserve_usd": 20,
+    "allow_paid_overage": false,
+    "enforcement": "Prompt guidance plus account-level controls; this JSON does not enforce billing"
+  },
+  "format": {
+    "trim_width_inches": 8.5,
+    "trim_height_inches": 11,
+    "orientation": "portrait",
+    "interior_colour": "grayscale",
+    "interior_bleed": "none by default; selected printer controls any bleed variant",
+    "inside_margin_inches": 0.875,
+    "outside_margin_inches": 0.625,
+    "top_margin_inches": 0.65,
+    "bottom_margin_inches": 0.7,
+    "column_gap_inches": 0.25,
+    "body_font_size_pt": 10.5,
+    "body_leading_pt": 13.5,
+    "table_font_size_pt": 9.5,
+    "minimum_essential_text_pt": 9,
+    "adjust_gutter_for_final_binding_and_page_count": true
+  },
+  "image_generation": {
+    "route": "auto-select only among configured and authorized services or supplied assets",
+    "external_spend_limit_usd": 0,
+    "paid_calls_authorized": false,
+    "known_no_cost_quota": null,
+    "incoming_art_directory": "assets/art/incoming",
+    "minimum_grayscale_ppi_starting_target": 300,
+    "minimum_one_bit_line_art_ppi_starting_target": 600,
+    "printer_specifications_override_resolution_defaults": true
+  },
+  "printer": {
+    "name": null,
+    "binding": null,
+    "paper_stock": null,
+    "specification_file": null,
+    "cover_template_file": null,
+    "required_pdf_standard": null,
+    "state": "generic print candidate until a concrete profile is verified"
+  },
+  "verified_publication_metadata": {
+    "title": "HERALDRY SKIRMISH: THE DYING LANDS",
+    "version": "Release Candidate 484 (RC484)",
+    "author_credit": null,
+    "publisher": null,
+    "isbn": null,
+    "copyright_holder": null
+  }
+}
