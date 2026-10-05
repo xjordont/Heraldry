@@ -1,0 +1,324 @@
+{
+  "method": "Representative rendered-page inspection plus selected detail pages; not full-book audit",
+  "supplied_files": 32,
+  "unique_files": 29,
+  "files": [
+    {
+      "filename": "01-Frostgrave.pdf",
+      "sha256": "17a1653860342768",
+      "page_count": 225,
+      "sampled_pdf_pages": [
+        6,
+        45,
+        124
+      ]
+    },
+    {
+      "filename": "02-Nimble-CoreRules.pdf",
+      "sha256": "c9550dce8ed293eb",
+      "page_count": 58,
+      "sampled_pdf_pages": [
+        6,
+        10,
+        32
+      ]
+    },
+    {
+      "filename": "03-Lasting-Tales.pdf",
+      "sha256": "d998c14277785af4",
+      "page_count": 266,
+      "sampled_pdf_pages": [
+        7,
+        33,
+        147
+      ]
+    },
+    {
+      "filename": "04-Pathfinder-2e-Player-Core-Remaster.pdf",
+      "sha256": "9e34130ba88cb6a7",
+      "page_count": 466,
+      "sampled_pdf_pages": [
+        6,
+        257,
+        276
+      ]
+    },
+    {
+      "filename": "05-Dungeoneers-Rulebook-v16.pdf",
+      "sha256": "5e9aa6742d42fcae",
+      "page_count": 110,
+      "sampled_pdf_pages": [
+        6,
+        61
+      ]
+    },
+    {
+      "filename": "06-FLftB-Core-Rules-3rd-Edition.pdf",
+      "sha256": "1cc445a38a44fd3a",
+      "page_count": 236,
+      "sampled_pdf_pages": [
+        6,
+        130,
+        138
+      ]
+    },
+    {
+      "filename": "07-ARENACONTEST-4-.pdf",
+      "sha256": "6bda1cef073c1d7c",
+      "page_count": 40,
+      "sampled_pdf_pages": [
+        6,
+        22,
+        23
+      ]
+    },
+    {
+      "filename": "08-ATO_CORE_Rulebook_v1.1.pdf",
+      "sha256": "64e8c4c30b73783c",
+      "page_count": 83,
+      "sampled_pdf_pages": [
+        6,
+        9,
+        46
+      ]
+    },
+    {
+      "filename": "09-SAS-Rulebook-3-.pdf",
+      "sha256": "d30e80368a251144",
+      "page_count": 40,
+      "sampled_pdf_pages": [
+        6,
+        18,
+        23
+      ]
+    },
+    {
+      "filename": "10-Rulebook-web-Dungeon-Universalis-2-.pdf",
+      "sha256": "7249b48451c76d1f",
+      "page_count": 119,
+      "sampled_pdf_pages": [
+        10,
+        40,
+        66
+      ]
+    },
+    {
+      "filename": "11-Middara.pdf",
+      "sha256": "667b7b6c2c9f85c0",
+      "page_count": 102,
+      "sampled_pdf_pages": [
+        6,
+        34,
+        57
+      ]
+    },
+    {
+      "filename": "12-EAHQ.pdf",
+      "sha256": "114fc23ee36e4759",
+      "page_count": 168,
+      "sampled_pdf_pages": [
+        6,
+        27,
+        93
+      ]
+    },
+    {
+      "filename": "13-Ker-Nethalas-Carnage-Aether-3-.pdf",
+      "sha256": "83e856bea4967164",
+      "page_count": 256,
+      "sampled_pdf_pages": [
+        7,
+        39,
+        141
+      ]
+    },
+    {
+      "filename": "14-Hametsu-3-.pdf",
+      "sha256": "0a393f1bdb606799",
+      "page_count": 183,
+      "sampled_pdf_pages": [
+        11,
+        29,
+        101
+      ]
+    },
+    {
+      "filename": "15-The-Walking-Dead-All-Out-War.pdf",
+      "sha256": "850e4eba12012c13",
+      "page_count": 177,
+      "sampled_pdf_pages": [
+        6,
+        29,
+        98
+      ]
+    },
+    {
+      "filename": "16-XCOM-The-Miniatures-Game-Core-Rules-digital.pdf",
+      "sha256": "a80fe8ea98dd2697",
+      "page_count": 276,
+      "sampled_pdf_pages": [
+        8,
+        41,
+        152
+      ]
+    },
+    {
+      "filename": "17-The-Village-Hunt-Veil-Hollow.pdf",
+      "sha256": "286e97e5ba48dce6",
+      "page_count": 25,
+      "sampled_pdf_pages": [
+        6,
+        14,
+        16
+      ]
+    },
+    {
+      "filename": "18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf",
+      "sha256": "b86881466e048836",
+      "page_count": 138,
+      "sampled_pdf_pages": [
+        12,
+        29,
+        76
+      ]
+    },
+    {
+      "filename": "19-Call-of-Dungeons.pdf",
+      "sha256": "fa9410145097ea0b",
+      "page_count": 32,
+      "sampled_pdf_pages": [
+        7,
+        13,
+        18
+      ]
+    },
+    {
+      "filename": "20-FINAL-GoN-Dux-Disciplinam.pdf",
+      "sha256": "99f551cc7f8b0993",
+      "page_count": 28,
+      "sampled_pdf_pages": [
+        8,
+        16
+      ]
+    },
+    {
+      "filename": "21-FINAL-GoN-Tome-of-Knowledge.pdf",
+      "sha256": "6127616692d0c948",
+      "page_count": 76,
+      "sampled_pdf_pages": [
+        6,
+        27,
+        42
+      ]
+    },
+    {
+      "filename": "22-FINAL-GoN-Scenario-Book.pdf",
+      "sha256": "aef6cb8051f4912e",
+      "page_count": 68,
+      "sampled_pdf_pages": [
+        8,
+        38
+      ]
+    },
+    {
+      "filename": "BlackDeathCity-Playtest-101.pdf",
+      "sha256": "7d46035bea637078",
+      "page_count": 134,
+      "sampled_pdf_pages": [
+        7,
+        32,
+        74
+      ]
+    },
+    {
+      "filename": "DREAD_NIGHTS_11_singles.pdf",
+      "sha256": "356282f2582121d5",
+      "page_count": 128,
+      "sampled_pdf_pages": [
+        10,
+        30,
+        71
+      ]
+    },
+    {
+      "filename": "Deth Wizards 2024.pdf",
+      "sha256": "6ef4852bb3ffad11",
+      "page_count": 108,
+      "sampled_pdf_pages": [
+        9,
+        55,
+        60
+      ]
+    },
+    {
+      "filename": "FLftB - Core Rules 3rd Edition(1).pdf",
+      "sha256": "1cc445a38a44fd3a",
+      "page_count": 236,
+      "sampled_pdf_pages": [
+        6,
+        130,
+        138
+      ]
+    },
+    {
+      "filename": "Hametsu - Second Printing.pdf",
+      "sha256": "0a393f1bdb606799",
+      "page_count": 183,
+      "sampled_pdf_pages": [
+        11,
+        29,
+        101
+      ]
+    },
+    {
+      "filename": "Hellcrawl_2026-09-13.pdf",
+      "sha256": "fe360a0c29916461",
+      "page_count": 109,
+      "sampled_pdf_pages": [
+        7,
+        56,
+        60
+      ]
+    },
+    {
+      "filename": "Mythras - Classic Fantasy Imperative(1).pdf",
+      "sha256": "9387747af7cacca1",
+      "page_count": 157,
+      "sampled_pdf_pages": [
+        7,
+        87,
+        96
+      ]
+    },
+    {
+      "filename": "TES_CTA_Core-Rulebook_DIGITAL_v001sk.pdf",
+      "sha256": "faf8cd4b45fae190",
+      "page_count": 136,
+      "sampled_pdf_pages": [
+        7,
+        75,
+        95
+      ]
+    },
+    {
+      "filename": "TNA Ultimate Rulebook.pdf",
+      "sha256": "e9cf60bc3e022f20",
+      "page_count": 43,
+      "sampled_pdf_pages": [
+        6,
+        10,
+        24
+      ]
+    },
+    {
+      "filename": "The Village Hunt - Veil Hollow(1).pdf",
+      "sha256": "286e97e5ba48dce6",
+      "page_count": 25,
+      "sampled_pdf_pages": [
+        6,
+        14,
+        16
+      ]
+    }
+  ]
+}

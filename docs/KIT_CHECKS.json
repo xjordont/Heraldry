@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "review_date": "2026-10-05",
+  "scope": "Launch kit validation; not rendered-book or live Claude-account validation",
+  "native_agent_definitions": [
+    "book-designer",
+    "mechanical-assistant",
+    "publication-auditor",
+    "publication-engineer",
+    "rules-illustrator"
+  ],
+  "source_hash": "2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3",
+  "source_byte_identical": true,
+  "model_effort_config_validated": true,
+  "budget_arithmetic_validated": true,
+  "external_spend_disabled_by_default": true,
+  "prompt_topics_present": true,
+  "master_words": 4978,
+  "kit_version": 2,
+  "reference_unique_books": 29,
+  "reference_primary_pages": 14,
+  "reference_selected_pages": 19,
+  "reference_render_verified": true,
+  "github_root_readme_present": true
+}
