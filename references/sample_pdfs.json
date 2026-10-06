@@ -1,189 +1,126 @@
 {
-  "schema": 1,
-  "status": "uploaded_and_hash_verified",
-  "authorization": "Owner request 2026-10-06: upload the supplied sample PDFs to Heraldry for layout, art and illustration inspiration",
-  "purpose": "Visual inspiration only; active Heraldry manuscript governs all mechanics and lore",
+  "schema": 2,
+  "status": "awaiting_lfs_objects",
+  "authorization": "Owner correction 2026-10-06: only TNA Ultimate, FLftB Core, Deth Wizards, Mythras Classic Fantasy, The Village Hunt, Dread Nights, Hellcrawl, TES CTA Core Rules, Hametsu and BlackDeath-City are intended references",
+  "purpose": "Visual inspiration only; active Heraldry manuscript governs mechanics and lore",
   "directory": "references/private/pdfs",
   "storage": "Git LFS; excluded from publication packages",
-  "file_count": 22,
-  "total_bytes": 929562264,
+  "file_count": 10,
+  "total_bytes": 489181772,
   "files": [
     {
-      "id": "SAMPLE-01",
-      "filename": "01-Frostgrave.pdf",
-      "path": "references/private/pdfs/01-Frostgrave.pdf",
-      "bytes": 32869537,
-      "sha256": "17a1653860342768",
-      "title": "Frostgrave"
+      "id": "REF-TNA",
+      "title": "TNA Ultimate",
+      "original_filename": "TNA Ultimate Rulebook.pdf",
+      "filename": "TNA-Ultimate-Rulebook.pdf",
+      "path": "references/private/pdfs/TNA-Ultimate-Rulebook.pdf",
+      "bytes": 15038319,
+      "sha256": "e9cf60bc3e022f20"
     },
     {
-      "id": "SAMPLE-02",
-      "filename": "02-Nimble-CoreRules.pdf",
-      "path": "references/private/pdfs/02-Nimble-CoreRules.pdf",
-      "bytes": 14963945,
-      "sha256": "c9550dce8ed293eb",
-      "title": "Nimble \u2014 Core Rules"
-    },
-    {
-      "id": "SAMPLE-03",
-      "filename": "03-Lasting-Tales.pdf",
-      "path": "references/private/pdfs/03-Lasting-Tales.pdf",
-      "bytes": 30706752,
-      "sha256": "d998c14277785af4",
-      "title": "Lasting Tales"
-    },
-    {
-      "id": "SAMPLE-04",
-      "filename": "04-Pathfinder-2e-Player-Core-Remaster.pdf",
-      "path": "references/private/pdfs/04-Pathfinder-2e-Player-Core-Remaster.pdf",
-      "bytes": 28849599,
-      "sha256": "9e34130ba88cb6a7",
-      "title": "Pathfinder 2e \u2014 Player Core Remaster"
-    },
-    {
-      "id": "SAMPLE-05",
-      "filename": "05-Dungeoneers-Rulebook-v16.pdf",
-      "path": "references/private/pdfs/05-Dungeoneers-Rulebook-v16.pdf",
-      "bytes": 11697114,
-      "sha256": "5e9aa6742d42fcae",
-      "title": "Dungeoneers Rulebook \u2014 v16"
-    },
-    {
-      "id": "SAMPLE-06",
-      "filename": "06-FLftB-Core-Rules-3rd-Edition.pdf",
-      "path": "references/private/pdfs/06-FLftB-Core-Rules-3rd-Edition.pdf",
+      "id": "REF-FIVELEAGUES",
+      "title": "Five Leagues from the Borderlands — Core Rules, Third Edition",
+      "original_filename": "06-FLftB-Core-Rules-3rd-Edition.pdf",
+      "filename": "FLftB-Core-Rules-3rd-Edition.pdf",
+      "path": "references/private/pdfs/FLftB-Core-Rules-3rd-Edition.pdf",
       "bytes": 23350619,
-      "sha256": "1cc445a38a44fd3a",
-      "title": "Five Leagues from the Borderlands \u2014 Core Rules, Third Edition"
+      "sha256": "1cc445a38a44fd3a"
     },
     {
-      "id": "SAMPLE-07",
-      "filename": "07-ARENACONTEST-4-.pdf",
-      "path": "references/private/pdfs/07-ARENACONTEST-4-.pdf",
-      "bytes": 6178354,
-      "sha256": "6bda1cef073c1d7c",
-      "title": "Arena Contest"
+      "id": "REF-DETH",
+      "title": "Deth Wizards",
+      "original_filename": "Deth Wizards 2024.pdf",
+      "filename": "Deth-Wizards-2024.pdf",
+      "path": "references/private/pdfs/Deth-Wizards-2024.pdf",
+      "bytes": 53070894,
+      "sha256": "6ef4852bb3ffad11"
     },
     {
-      "id": "SAMPLE-08",
-      "filename": "08-ATO_CORE_Rulebook_v1.1.pdf",
-      "path": "references/private/pdfs/08-ATO_CORE_Rulebook_v1.1.pdf",
-      "bytes": 36533183,
-      "sha256": "64e8c4c30b73783c",
-      "title": "ATO \u2014 Core Rulebook v1.1"
+      "id": "REF-MYTHRAS",
+      "title": "Mythras — Classic Fantasy Imperative",
+      "original_filename": "Mythras - Classic Fantasy Imperative(1).pdf",
+      "filename": "Mythras-Classic-Fantasy-Imperative.pdf",
+      "path": "references/private/pdfs/Mythras-Classic-Fantasy-Imperative.pdf",
+      "bytes": 13582835,
+      "sha256": "9387747af7cacca1"
     },
     {
-      "id": "SAMPLE-09",
-      "filename": "09-SAS-Rulebook-3-.pdf",
-      "path": "references/private/pdfs/09-SAS-Rulebook-3-.pdf",
-      "bytes": 9532161,
-      "sha256": "d30e80368a251144",
-      "title": "SAS Rulebook"
-    },
-    {
-      "id": "SAMPLE-10",
-      "filename": "10-Rulebook-web-Dungeon-Universalis-2-.pdf",
-      "path": "references/private/pdfs/10-Rulebook-web-Dungeon-Universalis-2-.pdf",
-      "bytes": 26144070,
-      "sha256": "7249b48451c76d1f",
-      "title": "Dungeon Universalis Rulebook"
-    },
-    {
-      "id": "SAMPLE-11",
-      "filename": "11-Middara.pdf",
-      "path": "references/private/pdfs/11-Middara.pdf",
-      "bytes": 96792036,
-      "sha256": "667b7b6c2c9f85c0",
-      "title": "Middara"
-    },
-    {
-      "id": "SAMPLE-12",
-      "filename": "12-EAHQ.pdf",
-      "path": "references/private/pdfs/12-EAHQ.pdf",
-      "bytes": 60789133,
-      "sha256": "114fc23ee36e4759",
-      "title": "EAHQ"
-    },
-    {
-      "id": "SAMPLE-13",
-      "filename": "13-Ker-Nethalas-Carnage-Aether-3-.pdf",
-      "path": "references/private/pdfs/13-Ker-Nethalas-Carnage-Aether-3-.pdf",
-      "bytes": 9683862,
-      "sha256": "83e856bea4967164",
-      "title": "Ker Nethalas \u2014 Carnage Aether"
-    },
-    {
-      "id": "SAMPLE-14",
-      "filename": "14-Hametsu-3-.pdf",
-      "path": "references/private/pdfs/14-Hametsu-3-.pdf",
-      "bytes": 98162107,
-      "sha256": "0a393f1bdb606799",
-      "title": "Hametsu"
-    },
-    {
-      "id": "SAMPLE-15",
-      "filename": "15-The-Walking-Dead-All-Out-War.pdf",
-      "path": "references/private/pdfs/15-The-Walking-Dead-All-Out-War.pdf",
-      "bytes": 48546210,
-      "sha256": "850e4eba12012c13",
-      "title": "The Walking Dead \u2014 All Out War"
-    },
-    {
-      "id": "SAMPLE-16",
-      "filename": "16-XCOM-The-Miniatures-Game-Core-Rules-digital.pdf",
-      "path": "references/private/pdfs/16-XCOM-The-Miniatures-Game-Core-Rules-digital.pdf",
-      "bytes": 21736111,
-      "sha256": "a80fe8ea98dd2697",
-      "title": "XCOM \u2014 The Miniatures Game Core Rules"
-    },
-    {
-      "id": "SAMPLE-17",
-      "filename": "17-The-Village-Hunt-Veil-Hollow.pdf",
-      "path": "references/private/pdfs/17-The-Village-Hunt-Veil-Hollow.pdf",
+      "id": "REF-VILLAGEHUNT",
+      "title": "The Village Hunt — Veil Hollow",
+      "original_filename": "17-The-Village-Hunt-Veil-Hollow.pdf",
+      "filename": "The-Village-Hunt-Veil-Hollow.pdf",
+      "path": "references/private/pdfs/The-Village-Hunt-Veil-Hollow.pdf",
       "bytes": 30689553,
-      "sha256": "286e97e5ba48dce6",
-      "title": "The Village Hunt \u2014 Veil Hollow"
+      "sha256": "286e97e5ba48dce6"
     },
     {
-      "id": "SAMPLE-18",
-      "filename": "18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf",
-      "path": "references/private/pdfs/18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf",
-      "bytes": 25768590,
-      "sha256": "b86881466e048836",
-      "title": "Relicblade \u2014 The Seekers Handbook, Second Edition"
+      "id": "REF-DREADNIGHTS",
+      "title": "Dread Nights",
+      "original_filename": "DREAD_NIGHTS_11_singles.pdf",
+      "filename": "DREAD-NIGHTS-11-singles.pdf",
+      "path": "references/private/pdfs/DREAD-NIGHTS-11-singles.pdf",
+      "bytes": 39426419,
+      "sha256": "356282f2582121d5"
     },
     {
-      "id": "SAMPLE-19",
-      "filename": "19-Call-of-Dungeons.pdf",
-      "path": "references/private/pdfs/19-Call-of-Dungeons.pdf",
-      "bytes": 37383029,
-      "sha256": "fa9410145097ea0b",
-      "title": "Call of Dungeons"
+      "id": "REF-HELLCRAWL",
+      "title": "Hellcrawl",
+      "original_filename": "Hellcrawl_2026-09-13.pdf",
+      "filename": "Hellcrawl-2026-09-13.pdf",
+      "path": "references/private/pdfs/Hellcrawl-2026-09-13.pdf",
+      "bytes": 48061361,
+      "sha256": "fe360a0c29916461"
     },
     {
-      "id": "SAMPLE-20",
-      "filename": "20-FINAL-GoN-Dux-Disciplinam.pdf",
-      "path": "references/private/pdfs/20-FINAL-GoN-Dux-Disciplinam.pdf",
-      "bytes": 65011274,
-      "sha256": "99f551cc7f8b0993",
-      "title": "GoN \u2014 Dux Disciplinam"
+      "id": "REF-CALLTOARMS",
+      "title": "The Elder Scrolls — Call to Arms Core Rules",
+      "original_filename": "TES_CTA_Core-Rulebook_DIGITAL_v001sk.pdf",
+      "filename": "TES-CTA-Core-Rulebook-DIGITAL-v001sk.pdf",
+      "path": "references/private/pdfs/TES-CTA-Core-Rulebook-DIGITAL-v001sk.pdf",
+      "bytes": 65606433,
+      "sha256": "faf8cd4b45fae190"
     },
     {
-      "id": "SAMPLE-21",
-      "filename": "21-FINAL-GoN-Tome-of-Knowledge.pdf",
-      "path": "references/private/pdfs/21-FINAL-GoN-Tome-of-Knowledge.pdf",
-      "bytes": 60859567,
-      "sha256": "6127616692d0c948",
-      "title": "GoN \u2014 Tome of Knowledge"
+      "id": "REF-HAMETSU",
+      "title": "Hametsu — Second Printing",
+      "original_filename": "14-Hametsu-3-.pdf",
+      "filename": "Hametsu-Second-Printing.pdf",
+      "path": "references/private/pdfs/Hametsu-Second-Printing.pdf",
+      "bytes": 98162107,
+      "sha256": "0a393f1bdb606799"
     },
     {
-      "id": "SAMPLE-22",
-      "filename": "22-FINAL-GoN-Scenario-Book.pdf",
-      "path": "references/private/pdfs/22-FINAL-GoN-Scenario-Book.pdf",
-      "bytes": 153315458,
-      "sha256": "aef6cb8051f4912e",
-      "title": "GoN \u2014 Scenario Book"
+      "id": "REF-BLACKDEATH",
+      "title": "BlackDeathCity — Playtest 101",
+      "original_filename": "BlackDeathCity-Playtest-101.pdf",
+      "filename": "BlackDeathCity-Playtest-101.pdf",
+      "path": "references/private/pdfs/BlackDeathCity-Playtest-101.pdf",
+      "bytes": 102193232,
+      "sha256": "7d46035bea637078"
     }
   ],
-  "verification": "All 22 original objects downloaded from GitHub LFS and verified by SHA256 and byte count before committing pointers"
+  "replaced_reference_paths": [
+    "references/private/pdfs/01-Frostgrave.pdf",
+    "references/private/pdfs/02-Nimble-CoreRules.pdf",
+    "references/private/pdfs/03-Lasting-Tales.pdf",
+    "references/private/pdfs/04-Pathfinder-2e-Player-Core-Remaster.pdf",
+    "references/private/pdfs/05-Dungeoneers-Rulebook-v16.pdf",
+    "references/private/pdfs/06-FLftB-Core-Rules-3rd-Edition.pdf",
+    "references/private/pdfs/07-ARENACONTEST-4-.pdf",
+    "references/private/pdfs/08-ATO_CORE_Rulebook_v1.1.pdf",
+    "references/private/pdfs/09-SAS-Rulebook-3-.pdf",
+    "references/private/pdfs/10-Rulebook-web-Dungeon-Universalis-2-.pdf",
+    "references/private/pdfs/11-Middara.pdf",
+    "references/private/pdfs/12-EAHQ.pdf",
+    "references/private/pdfs/13-Ker-Nethalas-Carnage-Aether-3-.pdf",
+    "references/private/pdfs/14-Hametsu-3-.pdf",
+    "references/private/pdfs/15-The-Walking-Dead-All-Out-War.pdf",
+    "references/private/pdfs/16-XCOM-The-Miniatures-Game-Core-Rules-digital.pdf",
+    "references/private/pdfs/17-The-Village-Hunt-Veil-Hollow.pdf",
+    "references/private/pdfs/18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf",
+    "references/private/pdfs/19-Call-of-Dungeons.pdf",
+    "references/private/pdfs/20-FINAL-GoN-Dux-Disciplinam.pdf",
+    "references/private/pdfs/21-FINAL-GoN-Tome-of-Knowledge.pdf",
+    "references/private/pdfs/22-FINAL-GoN-Scenario-Book.pdf"
+  ]
 }
