@@ -58,6 +58,26 @@ def _dimh(s, x1, x2, y, label):
     pill(s, (x1 + x2) / 2, y + 3.2, label, 9, 700)
 
 
+GEOM14 = {}   # FIG-14 separation dimensions in battlefield inches, recorded when drawn (checked by make_figures.selfcheck)
+
+
+def _dimc(s, x1, y1, x2, y2, label, size=9, side=None, dy=0.0):
+    """Dimension line between two measured points with an arrowhead and an end tick at both ends.
+    The label sits on the line, so the line itself must be long enough to show beyond the label."""
+    ang = math.atan2(y2 - y1, x2 - x1)
+    L, W = 3.6, 1.6
+    s.line(x1, y1, x2, y2, INK, 0.8)
+    for (px, py, a) in ((x1, y1, ang + math.pi), (x2, y2, ang)):
+        bx, by = px - L * math.cos(a), py - L * math.sin(a)
+        nx, ny = -math.sin(a) * W, math.cos(a) * W
+        s.polygon([(px, py), (bx + nx, by + ny), (bx - nx, by - ny)], INK)
+        s.line(px - math.sin(a) * 2.8, py + math.cos(a) * 2.8, px + math.sin(a) * 2.8, py - math.cos(a) * 2.8, INK, 0.8)
+    if side is None:                       # label centred above a horizontal line
+        pill(s, (x1 + x2) / 2, (y1 + y2) / 2 - 4.2, label, size, 700)
+    else:                                  # label beside a short line (side = signed x offset in pt)
+        pill(s, (x1 + x2) / 2 + side, (y1 + y2) / 2 + 3.2 + dy, label, size, 700, anchor="end" if side < 0 else "start")
+
+
 # ---------------------------------------------------------------- panels
 def d_long(s, bx, by):
     zone(s, bx, by, K, 0, 0, 6, 36)
@@ -129,23 +149,44 @@ def d_chasm(s, bx, by):
     zone(s, bx, by, K, 0, 0, 36, 8)
     terrain(s, "impassable", bx, by + 14 * K, BS, 8 * K, None, sw=0.9)
     pill(s, bx + BS / 2, by + 18 * K + 3.4, "Chasm 8\" wide", 9, 700)
-    toks(s, bx, by, K, "A", [(6, 2.4), (12, 2.4)], 3.0)
-    toks(s, bx, by, K, "B", [(21, 2.4), (27, 2.4)], 3.0)
-    # 6" limit measured from an A Hero's footprint edge toward an opposing Hero
-    _dimh(s, bx + 12.5 * K, bx + 18.5 * K, by + 5.6 * K, "6\"")
+    r = 3.0                                # enlarged Hero marker radius (pt)
+    ri = r / K                             # marker radius in drawn inches
+    ay = 5.0
+    toks(s, bx, by, K, "A", [(6, ay), (12, ay)], r)
+    # nearest opposing Hero: drawn marker edges are 7" apart (more than the 6" limit)
+    bxn = 12 + 2 * ri + 7.0
+    toks(s, bx, by, K, "B", [(bxn, ay), (27, ay)], r)
+    # dashed arc = 6" from the Party A Hero's marker edge (clipped to the board's top edge)
+    R = 6.0 + ri
+    x_top = 12 + math.sqrt(R * R - ay * ay)
+    s.path("M %s %s A %s %s 0 0 1 %s %s" % (f1(bx + x_top * K), f1(by), f1(R * K), f1(R * K), f1(bx + 12 * K), f1(by + (ay + R) * K)), stroke=INK, sw=0.9, dash="3 2")
+    # 6" limit (radial, down from the Party A Hero) and the actual gap to the nearest Party B Hero
+    _dimc(s, bx + 12 * K, by + (ay + ri) * K, bx + 12 * K, by + (ay + R) * K, "6\"", side=-3.5, dy=9)
+    _dimc(s, bx + (12 + ri) * K, by + ay * K, bx + (bxn - ri) * K, by + ay * K, "7\"")
+    GEOM14["B"] = dict(a=(12.0, ay), b=(bxn, ay), r=ri, limit=6.0, dim=((12 + ri, ay), (bxn - ri, ay)))
     _dimv(s, bx + 33 * K, by, by + 8 * K, "8\"")
 
 
 def d_quake(s, bx, by):
-    """Detail of the centre of the battlefield at 8 pt per inch (not the full 36\" board)."""
+    """Detail of the centre of the battlefield at 6.6 pt per inch (not the full 36\" board).
+    Hero markers are drawn at their true 1\" footprint at this scale (r = 0.5\")."""
     k = BS / 18.0
     x0, y0 = 9.0, 9.0                      # inches shown from the board's north-west corner
     ox = bx - x0 * k
     oy = by - y0 * k
+    r = 0.5 * k
     zone(s, ox, oy, k, 14, 14, 8, 8)
-    toks(s, ox, oy, k, "A", [(15, 16), (15, 20)], 3.4)
-    toks(s, ox, oy, k, "B", [(20.5, 16), (20.5, 20)], 3.4)
-    _dimh(s, ox + 15.5 * k, ox + 18.5 * k, oy + 18 * k, "min 3\"")
+    a1, a2 = (15.5, 16.8), (15.5, 21.2)
+    b1, b2 = (20.5, 16.8), (20.5, 21.2)    # nearest opposing pair: footprint edges 4" apart (limit 3")
+    # dashed ring = 3" from the Party A Hero's footprint edge
+    s.circle(ox + a1[0] * k, oy + a1[1] * k, (0.5 + 3.0) * k, fill="none", stroke=INK, sw=0.9, dash="3 2")
+    toks(s, ox, oy, k, "A", [a1, a2], r)
+    toks(s, ox, oy, k, "B", [b1, b2], r)
+    # 3" limit (radial, to the left of the Party A Hero) and the actual gap A edge -> nearest B edge
+    _dimc(s, ox + (a1[0] - 0.5) * k, oy + a1[1] * k, ox + (a1[0] - 3.5) * k, oy + a1[1] * k, "3\"")
+    _dimc(s, ox + (a1[0] + 0.5) * k, oy + a1[1] * k, ox + (b1[0] - 0.5) * k, oy + b1[1] * k, "4\"")
+    GEOM14["C"] = dict(a=a1, b=b1, r=0.5, limit=3.0, dim=((a1[0] + 0.5, a1[1]), (b1[0] - 0.5, b1[1])),
+                       others=[a2, b2], zone=(14, 14, 22, 22))
     s.text(bx + BS / 2, by + BS - 4, "centre detail", 9, 600, "middle", "#333")
     _dimh(s, ox + 14 * k, ox + 22 * k, oy + 12.2 * k, "8\"")
     pill(s, ox + 18 * k, oy + 24.4 * k, "Safe Zone", 9, 700)
@@ -200,7 +241,7 @@ def fig14():
     y = max(ys) + 6
     from svgkit import legend
     y = legend(s, [("A", "Party A Heroes (enlarged)"), ("B", "Party B Heroes (enlarged)"), ("zone", "deployment zone"), ("impassable", "Chasm (Impassable Terrain)"), ("difficult", "Ravine floor (Difficult Terrain)")], 0, y, FULL_W)
-    yy = s.para(0, y + 4, "Zones, the Trail, the Chasm and the Ravine are drawn to scale on a 36\"\u00d736\" battlefield (3.3 pt per inch); Hero markers are enlarged. Dimension lines show the stated placement limits. Where the source gives a range (Trail 3\u20134\", Ravine 6\u20138\"), a value inside the range is drawn and its position is schematic.", FULL_W, 9, lead=10.4)
+    yy = s.para(0, y + 4, "Zones, the Trail, the Chasm and the Ravine are drawn to scale on a 36\"\u00d736\" battlefield (3.3 pt per inch); Hero markers are enlarged. Zone-depth dimensions show the stated limits. In panels B and C no Hero is placed within the stated distance of an opposing Hero: the dashed arc (B, 6\") or ring (C, 3\") marks that distance from a Party A Hero\u2019s edge, and the dimension line between the nearest opposing Heroes runs between their closest edges (2.6), 7\" in B and 4\" in C, both outside the limit. Panel B is measured between drawn marker edges; panel C markers are drawn at their true 1\" size. Where the source gives a range (Trail 3\u20134\", Ravine 6\u20138\"), a value inside the range is drawn and its position is schematic.", FULL_W, 9, lead=10.4)
     return s, yy + 2
 
 
@@ -209,9 +250,9 @@ def fig14():
 # ---------------------------------------------------------------------------
 def fig15():
     s = Svg(FULL_W)
-    k = 5.4
+    k = 4.3
     side = 36 * k
-    panel_title(s, 0, 0, "A", "The Chasm Crossing (10.4, Undermarches 2)")
+    panel_title(s, 0, 0, "A", "The Chasm Crossing")
     bx, by = 4, 26
     board(s, bx, by, side)
     # start-side deployment zone (8" from the short edge)
@@ -220,32 +261,32 @@ def fig15():
     terrain(s, "impassable", bx, by + 14 * k, side, 8 * k, None, sw=0.9)
     # path of ledges: 4 narrow platforms bridging the chasm along the middle (schematic proportions)
     lx = bx + side * 0.5
-    ledge_w, ledge_l, gap = 9.0, 7.0, 5.0
-    top = by + 14 * k + 0.0
+    ledge_w, ledge_l, gap = 7.0, 5.0, 4.6
+    top = by + 14 * k + 0.3
     for i in range(4):
         y0 = top + i * (ledge_l + gap)
         crumbling = i == 1
         s.rect(lx - ledge_w / 2, y0, ledge_w, ledge_l, fill=WHITE, stroke=INK, sw=1.3, dash="2.5 1.8" if crumbling else None)
-    pill(s, lx + 46, top + 21, "Path of Ledges", 9, 700)
+    pill(s, lx + 11, top + 17, "Path of Ledges", 9, 700, anchor="start")
+    pill(s, bx + 5, by + 18 * k + 3.4, "Chasm 8\" wide", 9, 700, anchor="start")
     # start-side tokens
-    toks(s, bx, by, k, "A", [(6, 3), (11, 3)], 4.5)
-    toks(s, bx, by, k, "B", [(21, 3), (26, 3)], 4.5)
+    toks(s, bx, by, k, "A", [(5, 3), (9.5, 3)], 3.8)
+    toks(s, bx, by, k, "B", [(24.5, 3), (29, 3)], 3.8)
     # objectives
     mx, my = lx, by + 11 * k
-    token(s, "obj", mx, my, 5.6)
+    token(s, "obj", mx, my, 5.0)
     sx_, sy_ = lx, by + 25 * k
-    token(s, "obj", sx_, sy_, 5.6)
-    pill(s, mx + 36, my + 3.4, "Survey Map", 9, 700)
-    pill(s, sx_ + 52, sy_ + 3.4, "Cartographer's Stone", 9, 700)
-    # 3" dimensions
-    _dimv(s, lx - 18, my, by + 14 * k, "3\"")
-    _dimv(s, lx - 18, by + 21.3 * k, sy_, "3\"")
-    pill(s, bx + 40, by + 18 * k + 3.4, "Chasm 8\" wide", 9, 700)
-    s.text(bx + side - 4, by + 2 + 4 * k + 2, "start side", 9, 600, "end") if False else None
-    pill(s, bx + side - 34, by + 6.3 * k, "start side", 9, 600)
-    pill(s, bx + side - 40, by + 31 * k, "delivery side", 9, 600)
+    token(s, "obj", sx_, sy_, 5.0)
+    pill(s, mx + 9, my + 3.4, "Survey Map", 9, 700, anchor="start")
+    pill(s, sx_ + 9, sy_ - 1.0, "Cartographer's", 9, 700, anchor="start")
+    pill(s, sx_ + 9, sy_ + 9.4, "Stone", 9, 700, anchor="start")
+    # 3" dimensions: Map to the first ledge, last ledge to the Stone (marker centres to the Chasm edges)
+    _dimc(s, lx - 14, my, lx - 14, by + 14 * k, "3\"", side=-4)
+    _dimc(s, lx - 14, by + 22 * k, lx - 14, sy_, "3\"", side=-4)
+    pill(s, bx + side - 4, by + 6.3 * k + 6, "start side", 9, 600, anchor="end")
+    pill(s, bx + side - 4, by + 31 * k, "delivery side", 9, 600, anchor="end")
     schematic(s, bx + side, by + side + 12)
-    # ---------------- right: explanation ----------------
+    # ---------------- right: placement notes ----------------
     rx = side + 26
     rw = FULL_W - rx
     panel_title(s, rx, 0, "B", "Reading the placement")
@@ -255,13 +296,27 @@ def fig15():
         "**Survey Map:** a carried objective that starts on the start side, 3\" from the first ledge. Its carrier's Speed is reduced by 1\" while carrying it.",
         "**Path of Ledges:** 3–4 narrow (1\" wide) platform markers bridging the Chasm, with 1–2\" gaps that require a Jump. 1–2 ledges are marked Crumbling: a Hero ending an activation on one makes a DEX Check and falls on a failure.",
         "**Cartographer's Stone:** a 1\" marker on the delivery side, 3\" from the last ledge. The first party to place the Survey Map adjacent to it wins immediately.",
-        "**Jumping the Gaps (4.4.9):** each 1\" jumped costs 2\" of movement; declare a landing point, then make a DEX Check. A failed Jump into the Chasm causes a Chasm Fall: the combatant is immediately removed from play (a Hero is Defeated and makes a normal Injuries Roll), any carried items including the Survey Map are lost, and this replaces the normal Falling rule.",
+        "**Jumping the Gaps (4.4.9):** each 1\" jumped costs 2\" of movement; declare a landing point, then make a DEX Check. A failed Jump into the Chasm causes a Chasm Fall (panel C).",
     ]
     y = step_list(s, rx, y, notes, rw, gap=5)
     y += 2
     y = legend(s, [("A", "Party A"), ("B", "Party B"), ("zone", "deployment zone"), ("impassable", "Chasm"), ("obj", "objective"), ("square", "ledge (dashed = Crumbling)")], rx, y, rw)
-    H = max(y, by + side + 18)
-    return s, H + 2
+    # ---------------- bottom: Chasm Fall, with the Fly/Climb exceptions ----------------
+    y = max(y, by + side + 18) + 1
+    panel_title(s, 0, y, "C", "Chasm Fall (Undermarches 2 Special Rules)")
+    y += 22
+    falls = [
+        "**Chasm Fall:** a combatant Pushed off a Ledge into the Chasm, or that fails a Crumbling Ledge Check and falls, is immediately removed from play. A Hero is Defeated and makes a normal Injuries Roll. A non-Hero is resolved as though reduced to 0 HP. This replaces the normal Falling rule. Any carried items, including the Survey Map, fall into the Chasm and are lost.",
+        "**Hero or Hireling with a Fly or Climb Speed** that would fall may immediately spend 1 unspent AP, including AP reserved for Reactions, to catch themselves. Place them Prone in the nearest legal space on a Ledge, and end their current movement. If they cannot spend the AP, resolve the Chasm Fall normally.",
+        "**Monster with a Fly or Climb Speed** that would fall is placed Prone in the nearest legal space on a Ledge, and their activation ends.",
+    ]
+    for i, st in enumerate(falls, 6):
+        lines = wrap(st, FULL_W - 2 * 6.6 - 6, 9)
+        callout(s, 6.6, y + 6.6 - 1.6, i, 6.6)
+        for kk, ln in enumerate(lines):
+            s.text(2 * 6.6 + 6, y + 6 + kk * 10.5, ln, 9)
+        y += max(13.2, len(lines) * 10.5) + 4
+    return s, y - 3
 
 
 # ---------------------------------------------------------------------------
