@@ -55,10 +55,10 @@
 <rect x="171.68" y="80.82" width="8.84" height="6.76" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
 <line x1="171.68" y1="83.68" x2="180.52" y2="83.68" stroke="#777" stroke-width="0.8" stroke-linecap="butt"/>
 <polygon points="95.27,55.6 92.78,59.9 87.82,59.9 85.33,55.6 87.82,51.3 92.78,51.3" fill="url(#p-mon-l)" stroke="#777" stroke-width="1" stroke-linejoin="round"/>
-<line x1="27.9" y1="55.6" x2="35.9" y2="55.6" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
-<polygon points="42.9,55.6 35.9,59 35.9,52.2" fill="#000"/>
-<line x1="215.1" y1="55.6" x2="207.1" y2="55.6" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
-<polygon points="200.1,55.6 207.1,52.2 207.1,59" fill="#000"/>
+<line x1="27.9" y1="55.6" x2="35.9" y2="55.6" stroke="#777" stroke-width="1.4" stroke-linecap="butt" stroke-dasharray="3 2"/>
+<polygon points="42.9,55.6 35.9,59 35.9,52.2" fill="#777"/>
+<line x1="215.1" y1="55.6" x2="207.1" y2="55.6" stroke="#777" stroke-width="1.4" stroke-linecap="butt" stroke-dasharray="3 2"/>
+<polygon points="200.1,55.6 207.1,52.2 207.1,59" fill="#777"/>
 <circle cx="46.62" cy="29.6" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
 <circle cx="162.68" cy="29.6" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
 <circle cx="196.38" cy="29.6" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>

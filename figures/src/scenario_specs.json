@@ -77,14 +77,14 @@
     {"id": "w1", "kind": "marker", "glyph": "chest", "at": [18, 8.5], "status": "CONSTRAINED", "lines": [12142], "label": "W1", "anno": [{"t": "rel", "of": [18, 0], "d": 8, "label": "8\"", "rel": "eq", "style": "ruler"}], "lp": "l"},
     {"id": "w2", "kind": "marker", "glyph": "chest", "at": [18, 17.25], "status": "CONSTRAINED", "lines": [12143], "label": "W2", "lp": "l"},
     {"id": "w3", "kind": "marker", "glyph": "chest", "at": [18, 27.5], "status": "CONSTRAINED", "lines": [12144], "label": "W3", "anno": [{"t": "rel", "of": [18, 36], "d": 8, "label": "8\"", "rel": "eq", "style": "ruler"}], "lp": "l"},
-    {"id": "cap", "kind": "monster", "sz": "M", "at": [18, 15.2], "status": "CONSTRAINED", "lines": [12162], "label": "Captain·A", "anno": [{"t": "rel", "of": "w2", "d": 1, "label": "1\"", "rel": "le", "style": "ring", "ang": 160}], "lp": "r"},
+    {"id": "cap", "kind": "monster", "sz": "M", "at": [18, 15.2], "status": "ILLUSTRATIVE", "lines": [12162], "label": "Captain·A", "anno": [{"t": "rel", "of": "w2", "d": 1, "label": "1\"", "rel": "le", "style": "ring", "ang": 160}], "lp": "r"},
     {"id": "trA", "kind": "feature", "shape": "rect", "g": [25, 15, 31, 21], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [12132], "label": "Tree"},
     {"id": "ugA", "kind": "feature", "shape": "rect", "g": [5, 10, 10, 15], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [12132], "label": "Undergrowth"},
     {"id": "trB", "kind": "feature", "shape": "rect", "g": [26, 5, 31, 9], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [12132]},
     {"id": "g1", "kind": "monster", "sz": "M", "at": [21.4, 8.5], "status": "CONSTRAINED", "lines": [12166], "label": "G1·R", "anno": [{"t": "rel", "of": "w1", "d": 3, "label": "3\"", "rel": "le", "style": "ring", "ang": -40}]},
     {"id": "g2", "kind": "monster", "sz": "M", "at": [14.6, 27.5], "status": "CONSTRAINED", "lines": [12167], "label": "G2·R", "anno": [{"t": "rel", "of": "w3", "d": 3, "label": "3\"", "rel": "le", "style": "ring", "ang": 140}]},
     {"id": "g3", "kind": "monster", "sz": "M", "at": [28, 18], "status": "CONSTRAINED", "lines": [12168], "label": "G3·R", "anno": [{"t": "inside", "of": "trA"}, {"t": "rel", "of": "w2", "d": 8, "label": "min 8\"", "rel": "ge", "style": "ruler", "lp": "t"}, {"t": "rel", "of": "zA", "d": 8, "label": "min 8\"", "rel": "ge", "style": "ruler", "lp": "r"}]},
-    {"id": "rf", "kind": "edge", "mode": "arrive", "edges": ["N", "E", "S", "W"], "pos": 10, "status": "CONSTRAINED", "lines": [12176], "label": "R3", "draw": "open"}
+    {"id": "rf", "kind": "edge", "mode": "arrive", "edges": ["N", "E", "S", "W"], "pos": 18, "status": "CONSTRAINED", "lines": [12176], "label": "R3"}
   ]
 },
 "Greenmark 4": {
@@ -101,7 +101,7 @@
   "elements": [
     {"id": "zA", "kind": "zone", "party": "A", "rect": [0, 0, 36, 6], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [12238]},
     {"id": "zB", "kind": "zone", "party": "B", "rect": [0, 30, 36, 36], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [12238]},
-    {"id": "rav", "kind": "feature", "shape": "rect", "g": [0, 14.5, 36, 21.5], "terrain": "difficult", "status": "CONSTRAINED", "lines": [12209], "label": "Ravine 6–8\"", "lp": "c", "lat": [27.5, 15.8]},
+    {"id": "rav", "kind": "feature", "shape": "rect", "g": [0, 14.5, 36, 21.5], "terrain": "difficult", "status": "CONSTRAINED", "lines": [12209], "label": "Ravine 6–8\"", "lp": "c", "lat": [6, 15.8]},
     {"id": "w1", "kind": "feature", "shape": "circle", "g": [8, 18, 1.25], "terrain": "difficult", "status": "CONSTRAINED", "lines": [12209, 12211]},
     {"id": "w2", "kind": "feature", "shape": "circle", "g": [18, 20.2, 1.25], "terrain": "difficult", "status": "CONSTRAINED", "lines": [12209, 12211]},
     {"id": "w3", "kind": "feature", "shape": "circle", "g": [28, 18, 1.25], "terrain": "difficult", "status": "CONSTRAINED", "lines": [12209, 12211]},
@@ -117,7 +117,7 @@
     {"id": "t4", "kind": "monster", "sz": "M", "at": [14, 15.5], "status": "ILLUSTRATIVE", "lines": [12232], "label": "Tarantula·R", "lp": "t"},
     {"id": "c1", "kind": "marker", "glyph": "chest", "at": [9, 9.5], "status": "CONSTRAINED", "lines": [12211], "anno": [{"t": "rel", "of": [9, 0], "d": 8, "label": "min 8\"", "rel": "ge", "style": "ruler", "lp": "r"}]},
     {"id": "c2", "kind": "marker", "glyph": "chest", "at": [27, 26.5], "status": "CONSTRAINED", "lines": [12211], "anno": [{"t": "rel", "of": [27, 36], "d": 8, "label": "min 8\"", "rel": "ge", "style": "ruler", "lp": "r"}]},
-    {"id": "tr1", "kind": "feature", "shape": "rect", "g": [3, 10.5, 7, 13.5], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [12209], "label": "Tree", "lp": "b"},
+    {"id": "tr1", "kind": "feature", "shape": "rect", "g": [3, 24, 7, 27], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [12209], "label": "Tree", "lp": "b"},
     {"id": "tr2", "kind": "feature", "shape": "rect", "g": [30, 23, 34, 26], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [12209]},
     {"id": "g1", "kind": "monster", "sz": "M", "at": [29, 11], "status": "ILLUSTRATIVE", "lines": [12236], "label": "G1·R"},
     {"id": "x", "kind": "edge", "mode": "exit", "edges": ["N", "E", "S", "W"], "pos": 18, "status": "MANDATORY_POSITION", "lines": [12254]}
@@ -131,8 +131,8 @@
   "caption": "The Ambushed Emissary: parties deploy in opposite 8\"×8\" corners; the Bandit Camp lies in one quadrant at least 8\" from every edge, with four Clue markers at least 6\" from each other and the Camp (see 10.4, Greenmark Scenario 5).",
   "detail_figures": [],
   "setup_rules": ["10.1 step 11 (alternate placing is stated; the corner choice follows the Setup Roll-off default)"],
-  "foot": [{"text": "Roll-off winner chooses the Camp quadrant.", "lines": [12280]}],
-  "ambiguities": [],
+  "foot": [{"text": "Roll-off winner chooses the Camp quadrant.", "lines": [12280]}, {"text": "G3: the 6\" ring conflicts with the Camp size.", "lines": [12280, 12312]}],
+  "ambiguities": ["Group 3 (12312): 'at the perimeter of the Bandit Camp, 6\" from its centre' conflicts with a Camp 'about 4\"×4\"' (12280), whose perimeter lies about 2\" from its centre. The map draws the literal 6\" ring from the centre with Group 3 as an illustrative (grey dashed) marker and does not choose between the two readings."],
   "undrawn": [{"what": "Forest-Road Reeve and the Emissary", "why": "not placed until the Camp is found (more than half the Clues deciphered)", "lines": [12306, 12318]}, {"what": "Diplomatic Satchel", "why": "held by the Emissary; not placed on the battlefield until the Emissary is placed", "lines": [12282]}],
   "elements": [
     {"id": "zA", "kind": "zone", "party": "A", "rect": [0, 0, 8, 8], "depth": "8\"×8\"", "status": "CONSTRAINED", "lines": [12314], "shared": [11072]},
@@ -149,7 +149,7 @@
     {"id": "ug1", "kind": "feature", "shape": "rect", "g": [28, 24, 33, 27], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [12280], "label": "Undergrowth", "lp": "l"},
     {"id": "g1", "kind": "monster", "sz": "M", "at": [14, 10], "status": "CONSTRAINED", "lines": [12310], "label": "G1·R", "anno": [{"t": "rel", "of": "k1", "d": 4, "label": "4\"", "rel": "le", "style": "ring", "ang": -20}]},
     {"id": "g2", "kind": "monster", "sz": "M", "at": [8.8, 16.5], "status": "CONSTRAINED", "lines": [12311], "label": "G2·R", "anno": [{"t": "rel", "of": "k2", "d": 4, "label": "4\"", "rel": "le", "style": "ring", "ang": 150}]},
-    {"id": "g3", "kind": "monster", "sz": "M", "at": [24, 17], "status": "CONSTRAINED", "lines": [12312], "label": "G3·R", "anno": [{"t": "ring", "r": 6, "label": "6\"", "rel": "eq", "centre": "camp", "ang": -50}]},
+    {"id": "g3", "kind": "monster", "sz": "M", "at": [24, 17], "status": "ILLUSTRATIVE", "lines": [12312], "label": "G3·R", "anno": [{"t": "ring", "r": 6, "label": "6\"", "rel": "eq", "centre": "camp", "ang": -50}]},
     {"id": "x", "kind": "edge", "mode": "exit", "edges": ["N", "E", "S", "W"], "pos": 18, "status": "MANDATORY_POSITION", "lines": [12328]}
   ]
 },
@@ -168,7 +168,7 @@
     {"id": "zA", "kind": "zone", "party": "A", "rect": [0, 0, 6, 36], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [12398]},
     {"id": "zB", "kind": "zone", "party": "B", "rect": [30, 0, 36, 36], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [12398]},
     {"id": "grove", "kind": "feature", "shape": "circle", "g": [18, 18, 7.75], "terrain": "open", "status": "CONSTRAINED", "lines": [12363], "label": "Grove 6\"", "lp": "t"},
-    {"id": "tree", "kind": "feature", "shape": "circle", "g": [18, 18, 1.75], "terrain": "blocking", "status": "MANDATORY_POSITION", "lines": [12363]},
+    {"id": "tree", "kind": "feature", "shape": "circle", "g": [18, 18, 1.75], "terrain": "blocking", "status": "MANDATORY_POSITION", "lines": [12363], "label": "Mother Tree", "lp": "l"},
     {"id": "ent", "kind": "monster", "sz": "H", "at": [18, 21.25], "status": "CONSTRAINED", "lines": [12390], "label": "Treant·A", "lp": "b"},
     {"id": "tot", "kind": "marker", "glyph": "obj", "at": [20.0, 21.25], "status": "CONSTRAINED", "lines": [12365], "label": "Totem", "lp": "r"},
     {"id": "c1", "kind": "marker", "glyph": "chest", "at": [18, 10.25], "status": "CONSTRAINED", "lines": [12365]},
@@ -247,7 +247,7 @@
     {"id": "c1", "kind": "marker", "glyph": "chest", "at": [8.5, 21.5], "status": "ILLUSTRATIVE", "lines": [12517]},
     {"id": "c2", "kind": "marker", "glyph": "chest", "at": [28.5, 13.5], "status": "ILLUSTRATIVE", "lines": [12517]},
     {"id": "g1", "kind": "monster", "sz": "M", "at": [12, 8], "status": "ILLUSTRATIVE", "lines": [12543], "label": "G1·R"},
-    {"id": "g2", "kind": "edge", "mode": "arrive", "edges": ["W", "E"], "pos": 8, "status": "CONSTRAINED", "lines": [12544], "label": "G2 R3", "label_all": false}
+    {"id": "g2", "kind": "edge", "mode": "arrive", "edges": ["W", "E"], "pos": 8, "status": "CONSTRAINED", "lines": [12544], "label": "G2 R3", "label_all": false, "draw": "open"}
   ]
 },
 "Ashlands 3": {
@@ -264,22 +264,22 @@
   "elements": [
     {"id": "zA", "kind": "zone", "party": "A", "rect": [0, 0, 8, 8], "depth": "8\"×8\"", "status": "CONSTRAINED", "lines": [12604], "shared": [11072]},
     {"id": "zB", "kind": "zone", "party": "B", "rect": [28, 28, 36, 36], "depth": "8\"×8\"", "status": "CONSTRAINED", "lines": [12604], "shared": [11072]},
-    {"id": "ruin", "kind": "feature", "shape": "rect", "g": [16, 16, 20, 20], "terrain": "open", "status": "CONSTRAINED", "lines": [12589], "label": "Ruin 4\"×4\"", "lp": "c", "sw": 1.4},
-    {"id": "uz1", "kind": "feature", "shape": "rect", "g": [16.5, 5, 19.5, 8], "terrain": "hazard", "status": "CONSTRAINED", "lines": [12589], "label": "Unstable 3\"×3\"", "lp": "r"},
-    {"id": "uz2", "kind": "feature", "shape": "rect", "g": [27, 16.5, 30, 19.5], "terrain": "hazard", "status": "CONSTRAINED", "lines": [12589], "anno": [{"t": "rel", "of": "uz1", "d": 6, "label": "min 6\"", "rel": "ge", "style": "ruler", "lp": "b"}]},
-    {"id": "uz3", "kind": "feature", "shape": "rect", "g": [16.5, 28, 19.5, 31], "terrain": "hazard", "status": "CONSTRAINED", "lines": [12589]},
-    {"id": "uz4", "kind": "feature", "shape": "rect", "g": [6, 16.5, 9, 19.5], "terrain": "hazard", "status": "CONSTRAINED", "lines": [12589]},
+    {"id": "ruin", "kind": "feature", "shape": "rect", "g": [16, 16, 20, 20], "terrain": "open", "status": "CONSTRAINED", "lines": [12589], "label": "Ruin 4\"×4\"", "lp": "t", "sw": 1.4},
+    {"id": "uz1", "kind": "feature", "shape": "rect", "g": [16.5, 5, 19.5, 8], "terrain": "hazard", "status": "CONSTRAINED", "lines": [12589], "label": "Unstable 3\"×3\"", "lp": "l"},
+    {"id": "uz2", "kind": "feature", "shape": "rect", "g": [27, 16.5, 30, 19.5], "terrain": "hazard", "status": "CONSTRAINED", "lines": [12589], "label": "Unstable", "lp": "b", "anno": [{"t": "rel", "of": "uz1", "d": 6, "label": "min 6\"", "rel": "ge", "style": "ruler", "lp": "t"}]},
+    {"id": "uz3", "kind": "feature", "shape": "rect", "g": [16.5, 28, 19.5, 31], "terrain": "hazard", "status": "CONSTRAINED", "lines": [12589], "label": "Unstable", "lp": "r"},
+    {"id": "uz4", "kind": "feature", "shape": "rect", "g": [6, 16.5, 9, 19.5], "terrain": "hazard", "status": "CONSTRAINED", "lines": [12589], "label": "Unstable", "lp": "b"},
     {"id": "wl1", "kind": "feature", "shape": "rect", "g": [14, 11, 17, 12.2], "terrain": "blocking", "status": "ILLUSTRATIVE", "lines": [12589], "label": "Wall", "lp": "t"},
     {"id": "wl2", "kind": "feature", "shape": "rect", "g": [18, 25, 21.5, 26.2], "terrain": "blocking", "status": "ILLUSTRATIVE", "lines": [12589]},
     {"id": "wl3", "kind": "feature", "shape": "rect", "g": [23, 9, 24.2, 12.5], "terrain": "blocking", "status": "ILLUSTRATIVE", "lines": [12589]},
     {"id": "oc1", "kind": "feature", "shape": "rect", "g": [10, 23, 14, 26], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [12589], "label": "Outcrop", "lp": "t"},
     {"id": "oc2", "kind": "feature", "shape": "rect", "g": [25, 28, 28, 31], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [12589]},
-    {"id": "g1", "kind": "monster", "sz": "M", "at": [22.6, 6.5], "status": "CONSTRAINED", "lines": [12599], "label": "G1·R", "anno": [{"t": "rel", "of": "uz1", "d": 4, "label": "4\"", "rel": "le", "style": "ring", "ang": -20}]},
-    {"id": "g2", "kind": "monster", "sz": "M", "at": [13.2, 30], "status": "CONSTRAINED", "lines": [12600], "label": "G2·R", "anno": [{"t": "rel", "of": "uz3", "d": 4, "label": "4\"", "rel": "le", "style": "ring", "ang": 200}]},
+    {"id": "g1", "kind": "monster", "sz": "M", "at": [22.6, 6.5], "status": "CONSTRAINED", "lines": [12599], "label": "G1·R", "anno": [{"t": "rel", "of": "uz1", "d": 4, "label": "4\"", "rel": "le", "style": "ring", "ang": -20}], "lp": "r"},
+    {"id": "g2", "kind": "monster", "sz": "M", "at": [13.2, 30], "status": "CONSTRAINED", "lines": [12600], "label": "G2·R", "anno": [{"t": "rel", "of": "uz3", "d": 4, "label": "4\"", "rel": "le", "style": "ring", "ang": 200}], "lp": "l"},
     {"id": "g3", "kind": "monster", "sz": "M", "at": [18, 18], "status": "ILLUSTRATIVE", "lines": [12601], "label": "G3·R"},
-    {"id": "g4", "kind": "edge", "mode": "arrive", "edges": ["N", "E", "S", "W"], "pos": 10, "status": "CONSTRAINED", "lines": [12602], "label": "G4 R2", "draw": "open"},
-    {"id": "xa", "kind": "edge", "mode": "exit", "edges": ["S", "E"], "pos": 26, "status": "CONSTRAINED", "lines": [12618], "label": "A", "label_all": true},
-    {"id": "xb", "kind": "edge", "mode": "exit", "edges": ["N", "W"], "pos": 26, "status": "CONSTRAINED", "lines": [12618], "label": "B", "label_all": true}
+    {"id": "g4", "kind": "edge", "mode": "arrive", "edges": ["N", "E", "S", "W"], "pos": 22, "status": "CONSTRAINED", "lines": [12602], "label": "G4 R2", "draw": "open"},
+    {"id": "xa", "kind": "edge", "mode": "exit", "edges": ["S", "E"], "pos": 14, "status": "CONSTRAINED", "lines": [12618], "label": "A", "label_all": true},
+    {"id": "xb", "kind": "edge", "mode": "exit", "edges": ["N", "W"], "pos": 14, "status": "CONSTRAINED", "lines": [12618], "label": "B", "label_all": true}
   ]
 },
 "Ashlands 4": {
@@ -296,7 +296,7 @@
   "elements": [
     {"id": "zA", "kind": "zone", "party": "A", "rect": [0, 0, 36, 6], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [12680], "shared": [11072]},
     {"id": "zB", "kind": "zone", "party": "B", "rect": [0, 30, 36, 36], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [12680], "shared": [11072]},
-    {"id": "hall", "kind": "feature", "shape": "rect", "g": [14, 16, 22, 20], "terrain": "open", "status": "CONSTRAINED", "lines": [12644], "label": "Hall 8\"×4\"", "lp": "t", "sw": 1.4},
+    {"id": "hall", "kind": "feature", "shape": "rect", "g": [14, 16, 22, 20], "terrain": "open", "status": "CONSTRAINED", "lines": [12644], "label": "Hall 8\"×4\"", "lp": "t", "sw": 1.4, "draw": "open"},
     {"id": "ch1", "kind": "feature", "shape": "rect", "g": [3, 14, 11, 22], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [12644], "label": "Chamber", "lp": "i"},
     {"id": "ch2", "kind": "feature", "shape": "rect", "g": [25, 14, 33, 22], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [12644]},
     {"id": "co1", "kind": "feature", "shape": "rect", "g": [11, 17, 14, 19], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [12644]},
@@ -416,11 +416,11 @@
     {"id": "g2", "kind": "monster", "sz": "M", "at": [14.5, 18], "status": "CONSTRAINED", "lines": [12926], "label": "G2·R", "lp": "t"},
     {"id": "c1", "kind": "marker", "glyph": "chest", "at": [11, 10], "status": "ILLUSTRATIVE", "lines": [12901]},
     {"id": "c2", "kind": "marker", "glyph": "chest", "at": [25, 26], "status": "ILLUSTRATIVE", "lines": [12901]},
-    {"id": "cw1", "kind": "feature", "shape": "rect", "g": [22, 7, 26, 8.3], "terrain": "blocking", "status": "ILLUSTRATIVE", "lines": [12899], "label": "Cave wall", "lp": "r"},
+    {"id": "cw1", "kind": "feature", "shape": "rect", "g": [22, 7, 26, 8.3], "terrain": "blocking", "status": "ILLUSTRATIVE", "lines": [12899], "label": "Cave wall", "lp": "b"},
     {"id": "cw2", "kind": "feature", "shape": "rect", "g": [10, 27, 14, 28.3], "terrain": "blocking", "status": "ILLUSTRATIVE", "lines": [12899]},
     {"id": "sg1", "kind": "feature", "shape": "rect", "g": [19, 23, 22, 26], "terrain": "obstacle", "status": "ILLUSTRATIVE", "lines": [12899], "label": "Stalagmite", "lp": "r"},
     {"id": "sg2", "kind": "feature", "shape": "rect", "g": [14, 4, 17, 7], "terrain": "obstacle", "status": "ILLUSTRATIVE", "lines": [12899]},
-    {"id": "fu1", "kind": "marker", "glyph": "mk", "at": [20, 8], "status": "ILLUSTRATIVE", "lines": [12899], "label": "Fungi", "anno": [{"t": "ring", "r": 2, "label": "2\"", "rel": "eq", "ang": -135}], "lp": "r"},
+    {"id": "fu1", "kind": "marker", "glyph": "mk", "at": [30, 11], "status": "ILLUSTRATIVE", "lines": [12899], "label": "Fungi", "anno": [{"t": "ring", "r": 2, "label": "2\"", "rel": "eq", "ang": -135}], "lp": "r"},
     {"id": "fu2", "kind": "marker", "glyph": "mk", "at": [24, 29], "status": "ILLUSTRATIVE", "lines": [12899], "anno": [{"t": "ring", "r": 2, "label": "2\"", "rel": "eq", "ang": 45}]},
     {"id": "x", "kind": "edge", "mode": "exit", "edges": ["N", "E", "S", "W"], "pos": 18, "status": "MANDATORY_POSITION", "lines": [12939]}
   ]
@@ -531,7 +531,9 @@
   "elements": [
     {"id": "zA", "kind": "zone", "party": "A", "rect": [0, 0, 36, 6], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [13239]},
     {"id": "zB", "kind": "zone", "party": "B", "rect": [0, 30, 36, 36], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [13239]},
-    {"id": "pas", "kind": "feature", "shape": "poly", "g": [[11.5, 0], [11.5, 9], [19.5, 14], [19.5, 24], [11.5, 30], [11.5, 36], [16.5, 36], [16.5, 29], [24.5, 24], [24.5, 13], [16.5, 8], [16.5, 0]], "terrain": "shade", "status": "CONSTRAINED", "lines": [13212], "draw": "open"},
+    {"id": "pas", "kind": "feature", "shape": "poly", "g": [[11.5, 0], [11.5, 9], [19.5, 14], [19.5, 24], [11.5, 30], [11.5, 36], [16.5, 36], [16.5, 29], [24.5, 24], [24.5, 13], [16.5, 8], [16.5, 0]], "terrain": "shade", "status": "CONSTRAINED", "lines": [13212], "label": "Deep Shadow", "draw": "open", "lat": [18, 11.2]},
+    {"id": "wl_l", "kind": "feature", "shape": "line", "g": [[11.5, 0], [11.5, 9], [19.5, 14], [19.5, 24], [11.5, 30], [11.5, 36]], "terrain": "blocking", "status": "CONSTRAINED", "lines": [13212], "exempt": true},
+    {"id": "wl_r", "kind": "feature", "shape": "line", "g": [[16.5, 0], [16.5, 8], [24.5, 13], [24.5, 24], [16.5, 29], [16.5, 36]], "terrain": "blocking", "status": "CONSTRAINED", "lines": [13212], "exempt": true},
     {"id": "al1", "kind": "feature", "shape": "rect", "g": [8.5, 6.5, 11.5, 9.5], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13212]},
     {"id": "al2", "kind": "feature", "shape": "rect", "g": [24.5, 15.5, 28.5, 20.5], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13212]},
     {"id": "al3", "kind": "feature", "shape": "rect", "g": [10.5, 26.5, 14.2, 29.5], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13212]},
@@ -563,12 +565,12 @@
   "elements": [
     {"id": "zA", "kind": "zone", "party": "A", "rect": [0, 0, 36, 6], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [13318], "shared": [11072]},
     {"id": "zB", "kind": "zone", "party": "B", "rect": [0, 30, 36, 36], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [13318], "shared": [11072]},
-    {"id": "cav", "kind": "feature", "shape": "rect", "g": [11.5, 11.5, 24.5, 24.5], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13285], "label": "Cavern", "lp": "i"},
+    {"id": "cav", "kind": "feature", "shape": "rect", "g": [11.5, 11.5, 24.5, 24.5], "terrain": "shade", "status": "ILLUSTRATIVE", "lines": [13285], "label": "Cavern", "lp": "i"},
     {"id": "sc1", "kind": "feature", "shape": "rect", "g": [3, 15, 10, 21], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13285]},
     {"id": "sc2", "kind": "feature", "shape": "rect", "g": [26, 15, 33, 21], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13285]},
     {"id": "tu1", "kind": "feature", "shape": "rect", "g": [10, 17.25, 11.5, 18.75], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13285]},
     {"id": "tu2", "kind": "feature", "shape": "rect", "g": [24.5, 17.25, 26, 18.75], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13285]},
-    {"id": "tu3", "kind": "feature", "shape": "rect", "g": [17.25, 6, 18.75, 11.5], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13285], "label": "Tunnel", "lp": "r"},
+    {"id": "tu3", "kind": "feature", "shape": "rect", "g": [17.25, 6, 18.75, 11.5], "terrain": "shade", "status": "ILLUSTRATIVE", "lines": [13285], "label": "Tunnel", "lp": "r"},
     {"id": "bc", "kind": "feature", "shape": "circle", "g": [18, 18, 2], "terrain": "open", "status": "CONSTRAINED", "lines": [13285], "label": "Circle 4\"", "lp": "b", "sw": 1.4},
     {"id": "o1", "kind": "marker", "glyph": "mk", "at": [18, 14.5], "status": "CONSTRAINED", "lines": [13285], "label": "Orb", "anno": [{"t": "rel", "of": "bc", "d": 2, "label": "2\"", "rel": "le", "style": "ring", "ang": -40}], "lp": "t"},
     {"id": "o2", "kind": "marker", "glyph": "mk", "at": [21.03, 19.75], "status": "CONSTRAINED", "lines": [13285]},
@@ -628,18 +630,18 @@
     {"id": "zB", "kind": "zone", "party": "B", "rect": [0, 30, 36, 36], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [13470], "shared": [11072]},
     {"id": "lab", "kind": "feature", "shape": "rect", "g": [14, 13, 22, 19], "terrain": "open", "status": "CONSTRAINED", "lines": [13438], "label": "Lab 6\"×8\"", "lp": "t", "sw": 1.4},
     {"id": "bd1", "kind": "feature", "shape": "rect", "g": [5, 9, 10, 13], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13438], "label": "Building", "lp": "t"},
-    {"id": "bd2", "kind": "feature", "shape": "rect", "g": [25, 20, 30, 25], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13438]},
+    {"id": "bd2", "kind": "feature", "shape": "rect", "g": [22.5, 13.5, 28.5, 19.5], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13438], "anno": [{"t": "rel", "of": "lab", "d": 1, "label": "1\"", "rel": "le", "style": "ruler", "hide": true}]},
     {"id": "bd3", "kind": "feature", "shape": "rect", "g": [9, 21, 13, 25], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13438]},
     {"id": "ib1", "kind": "feature", "shape": "rect", "g": [24, 12, 27, 13], "terrain": "impassable", "status": "ILLUSTRATIVE", "lines": [13438], "label": "Ice Barricade", "lp": "r"},
     {"id": "ib2", "kind": "feature", "shape": "rect", "g": [14, 22, 17, 23], "terrain": "impassable", "status": "ILLUSTRATIVE", "lines": [13438]},
-    {"id": "fd", "kind": "feature", "shape": "rect", "g": [27, 15, 30, 18], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [13438], "label": "Debris", "lp": "b"},
+    {"id": "fd", "kind": "feature", "shape": "rect", "g": [29, 23, 32, 26], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [13438], "label": "Debris", "lp": "b"},
     {"id": "rc1", "kind": "marker", "glyph": "chest", "at": [16, 15], "status": "CONSTRAINED", "lines": [13440], "label": "Reagent", "anno": [{"t": "inside", "of": "lab"}], "lp": "t"},
     {"id": "rc2", "kind": "marker", "glyph": "chest", "at": [20, 15], "status": "CONSTRAINED", "lines": [13440], "anno": [{"t": "inside", "of": "lab"}]},
     {"id": "rc3", "kind": "marker", "glyph": "chest", "at": [19, 17.7], "status": "CONSTRAINED", "lines": [13440], "anno": [{"t": "inside", "of": "lab"}]},
-    {"id": "tc", "kind": "marker", "glyph": "chest", "at": [30, 22], "status": "CONSTRAINED", "lines": [13440], "label": "Chest", "lp": "b"},
+    {"id": "tc", "kind": "marker", "glyph": "chest", "at": [26.5, 17.5], "status": "CONSTRAINED", "lines": [13440], "label": "Chest", "anno": [{"t": "inside", "of": "bd2"}], "lp": "b"},
     {"id": "gol", "kind": "monster", "sz": "M", "at": [16.4, 17.7], "status": "CONSTRAINED", "lines": [13463], "label": "Golem·A", "anno": [{"t": "inside", "of": "lab"}], "lp": "l"},
     {"id": "g1", "kind": "monster", "sz": "M", "at": [12, 11], "status": "CONSTRAINED", "lines": [13467], "label": "G1·R", "lp": "t"},
-    {"id": "g2", "kind": "monster", "sz": "M", "at": [27.5, 22.5], "status": "CONSTRAINED", "lines": [13468], "label": "G2·R"},
+    {"id": "g2", "kind": "monster", "sz": "M", "at": [24, 15], "status": "CONSTRAINED", "lines": [13468], "label": "G2·R", "anno": [{"t": "inside", "of": "bd2"}]},
     {"id": "x", "kind": "edge", "mode": "exit", "edges": ["N", "E", "S", "W"], "pos": 18, "status": "MANDATORY_POSITION", "lines": [13482]}
   ]
 },
@@ -662,7 +664,7 @@
     {"id": "cr1", "kind": "feature", "shape": "rect", "g": [8.5, 10, 14.5, 14], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13508], "label": "Crypt", "lp": "i"},
     {"id": "cr2", "kind": "feature", "shape": "rect", "g": [21.5, 10, 27.5, 14], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13508]},
     {"id": "gc", "kind": "feature", "shape": "rect", "g": [11, 22, 25, 26], "terrain": "open", "status": "ILLUSTRATIVE", "lines": [13508], "label": "Grand Crypt", "lp": "i"},
-    {"id": "ic1", "kind": "feature", "shape": "rect", "g": [9, 17, 12, 20], "terrain": "slippery", "status": "ILLUSTRATIVE", "lines": [13508], "label": "Cracked ice", "lp": "b"},
+    {"id": "ic1", "kind": "feature", "shape": "rect", "g": [24.5, 16, 27.5, 19], "terrain": "slippery", "status": "ILLUSTRATIVE", "lines": [13508], "label": "Cracked ice", "lp": "b"},
     {"id": "ic2", "kind": "feature", "shape": "rect", "g": [24, 22.5, 27, 25.5], "terrain": "slippery", "status": "ILLUSTRATIVE", "lines": [13508]},
     {"id": "sa1", "kind": "marker", "glyph": "obj", "at": [11.5, 12], "status": "ILLUSTRATIVE", "lines": [13508], "label": "Sarcophagus", "lp": "t"},
     {"id": "sa2", "kind": "marker", "glyph": "obj", "at": [24.5, 12], "status": "ILLUSTRATIVE", "lines": [13508]},
@@ -891,7 +893,7 @@
   "elements": [
     {"id": "zA", "kind": "zone", "party": "A", "rect": [0, 0, 6, 36], "depth": "6\"", "status": "CONSTRAINED", "lines": [14089], "shared": [11072]},
     {"id": "zB", "kind": "zone", "party": "B", "rect": [30, 0, 36, 36], "depth": "6\"", "status": "CONSTRAINED", "lines": [14089], "shared": [11072]},
-    {"id": "col", "kind": "feature", "shape": "rect", "g": [14.5, 14.5, 21.5, 21.5], "terrain": "blocking", "status": "CONSTRAINED", "lines": [14053], "label": "Colossus", "lp": "b"},
+    {"id": "col", "kind": "feature", "shape": "rect", "g": [14.5, 14.5, 21.5, 21.5], "terrain": "blocking", "status": "CONSTRAINED", "lines": [14053], "label": "Colossus", "lp": "b", "draw": "open"},
     {"id": "run", "kind": "marker", "glyph": "obj", "at": [18, 16.3], "status": "CONSTRAINED", "lines": [14053], "label": "Rune", "anno": [{"t": "inside", "of": "col"}], "lp": "t"},
     {"id": "hs", "kind": "marker", "glyph": "obj", "at": [18, 19], "status": "CONSTRAINED", "lines": [14057], "label": "Heartstone", "anno": [{"t": "inside", "of": "col"}], "lp": "r"},
     {"id": "dn1", "kind": "feature", "shape": "rect", "g": [9, 9, 14, 12], "terrain": "cover", "status": "ILLUSTRATIVE", "lines": [14053], "label": "Dune", "lp": "t"},
@@ -918,7 +920,7 @@
   "elements": [
     {"id": "zA", "kind": "zone", "party": "A", "rect": [0, 0, 36, 6], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [14168], "shared": [11072]},
     {"id": "zB", "kind": "zone", "party": "B", "rect": [0, 30, 36, 36], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [14168], "shared": [11072]},
-    {"id": "dais", "kind": "feature", "shape": "rect", "g": [15.5, 15.5, 20.5, 20.5], "terrain": "impassable", "status": "CONSTRAINED", "lines": [14133], "label": "Dais", "lp": "b"},
+    {"id": "dais", "kind": "feature", "shape": "rect", "g": [15.5, 15.5, 20.5, 20.5], "terrain": "impassable", "status": "CONSTRAINED", "lines": [14133], "label": "Dais", "lp": "b", "draw": "open"},
     {"id": "gs1", "kind": "marker", "glyph": "obj", "at": [18, 12], "status": "CONSTRAINED", "lines": [14133], "label": "Stone", "lp": "r"},
     {"id": "gs2", "kind": "marker", "glyph": "obj", "at": [23.2, 21], "status": "CONSTRAINED", "lines": [14133]},
     {"id": "gs3", "kind": "marker", "glyph": "obj", "at": [12.8, 21], "status": "CONSTRAINED", "lines": [14133]},
@@ -943,7 +945,7 @@
   "detail_figures": [],
   "setup_rules": ["10.1 step 11 (Setup Roll-off winner chooses the short edge; 'driest banks' is not located by the source)"],
   "foot": [],
-  "ambiguities": [],
+  "ambiguities": ["Group 2 (14252): 'patrolling murky water' - the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258), while Group 2 patrols water outside the Barrow's sanctum; whether outer Shallow Water counts as murky is not stated. Group 2 is drawn as an illustrative marker in an outer Shallow patch."],
   "undrawn": [{"what": "Salttide's Shade", "why": "placed adjacent to the Reliquary when a Hero first attempts to take it", "lines": [14243]}, {"what": "second Giant Leech Swarm", "why": "present only if the 1d2 roll is 2; placed Resting in adjacent floodwater outside the Sanctum", "lines": [14245]}],
   "elements": [
     {"id": "zA", "kind": "zone", "party": "A", "rect": [0, 0, 36, 6], "depth": "6\"", "status": "MANDATORY_POSITION", "lines": [14254], "shared": [11072]},

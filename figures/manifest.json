@@ -595,13 +595,13 @@
     "file": "figures/out/FIG-20.svg",
     "size_pt": {
       "width": 504,
-      "height": 355.0
+      "height": 436.8
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Swatches reuse the figures/README visual grammar; every inch value printed (6\", 8\"x8\", 2\"x2\", 3\"x3\") is checked against lines 594, 618-619 and 11072; North/short/long edge naming against 11056-11058; closest-point measurement against 594.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "f72486e3e21d592778afde33081ec7901c94a1e79d2d834b2af7955c165d7c12",
+    "svg_sha256": "818751502d7ebdf6ec09d94e36351df925ca2408701399bee70ff3c7aa6e8ea5",
     "ambiguity": "None in the key. Terrain pieces whose type the scenario leaves to 2.9.1 ('Impassable or Blocking') use a neutral grey swatch rather than either type."
   },
   {
@@ -662,7 +662,7 @@
       "10.4 Greenmark Scenario 3: The Bandit's Toll (source lines 12112-12188)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 2 mandatory, 10 constrained and 3 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 2 mandatory, 9 constrained and 4 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
     "caption": "The Bandit's Toll: parties deploy within 6\" of the opposite short edges where a Trail 3–4\" wide runs, with at least two Heroes each on the Trail; the Barricade and Wagon 2 stand at the midpoint (see 10.4, Greenmark Scenario 3).",
     "insert_after": "B12170",
     "scope": "column",
@@ -676,7 +676,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12112-12188; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "d3633c63a35676df5c25c291467aa227902e93fe96c74f77a8ea93fa41f02c95",
+    "svg_sha256": "04dca41fb3971a2b6c19d18e66f6d3d54454e0dda9d08c2a622661e0ebbdf91d",
     "ambiguity": "Wagon 2 and the Toll Captain: the source places Wagon 2 'adjacent to the central Barricade' and the Captain 'behind the central Barricade' without saying which side of the Barricade is 'behind'; the map draws Wagon 2 on one side only as an illustration.; The Barricade is 2–3\" long but the Trail is 3–4\" wide; the text does not say how a Barricade shorter than the Trail spans it ('across the Trail')."
   },
   {
@@ -701,7 +701,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12189-12259; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "974f476d76cba5229f14f79eebb3fd8b51d2c90165e0e414f0a84db7e9a377cf",
+    "svg_sha256": "1e5a92c3e3f807dbde13e510d734c687f05463f2ed3f15660bea35143fc232ff",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
@@ -712,7 +712,7 @@
       "10.4 Greenmark Scenario 5: The Ambushed Emissary (source lines 12260-12337)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 1 mandatory, 12 constrained and 3 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 1 mandatory, 11 constrained and 4 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
     "caption": "The Ambushed Emissary: parties deploy in opposite 8\"×8\" corners; the Bandit Camp lies in one quadrant at least 8\" from every edge, with four Clue markers at least 6\" from each other and the Camp (see 10.4, Greenmark Scenario 5).",
     "insert_after": "B12314",
     "scope": "column",
@@ -720,14 +720,14 @@
     "file": "figures/out/FIG-25.svg",
     "size_pt": {
       "width": 243,
-      "height": 259.9
+      "height": 270.3
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12260-12337; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "4fc8f2380f1baeb4fc8c879d44ae88556b9f61d37482edbb558049f6c54fda81",
-    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+    "svg_sha256": "45e6f808f17d738bb9004e98ba853ab14a5200f21c131c6238e67b2ee4b9be9b",
+    "ambiguity": "Group 3 (12312): 'at the perimeter of the Bandit Camp, 6\" from its centre' conflicts with a Camp 'about 4\"×4\"' (12280), whose perimeter lies about 2\" from its centre. The map draws the literal 6\" ring from the centre with Group 3 as an illustrative (grey dashed) marker and does not choose between the two readings."
   },
   {
     "id": "FIG-26",
@@ -751,7 +751,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12338-12424; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "d2e569f64145d34de5fab3af7c6b866bd06d689d8f366852b73cdc4794ce0e49",
+    "svg_sha256": "60da29832ce79ddd3fe0db4b57e77909ec07a65bf130731f863f3e7d249c743b",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
@@ -801,7 +801,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12495-12568; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "449a4a0a3a69326363e5ba78465dc0aa851f79491df1a8a2524eb79dd8e23765",
+    "svg_sha256": "705e7f9e3341a0b882f03949cd99f689d27f5373f4221697d5773691f0757c8e",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
@@ -826,7 +826,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12569-12623; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "a4adb021ca6ee36f7c366a30a417e0939ab5d7743779899e0595ec4424cab5cd",
+    "svg_sha256": "240672a0e7cca15bf6686940a9cd819bef7aa07f60ebe415045e5e44b81c01f5",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
@@ -851,7 +851,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12624-12703; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "21181f36680052555a72d81db00062715d98299a4858c1c2fd19401bdc5f5a1c",
+    "svg_sha256": "ed1edf48c570f3883e18b19cc771acc41483f6a9e027bf408d4ea4fa8ef87cef",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
@@ -926,7 +926,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12879-12944; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "1ccfc273400fd6c77d8492d468880b0c6341a9de1fd63b7fcc5bed7525a59cf6",
+    "svg_sha256": "3a57ca69deef65a284680e80cbf737ba2d22d8e00e3001f64d4ac63a2cf37a11",
     "ambiguity": "Group 3 arrival edge (12927): 'a random battlefield edge that is not adjacent to either deployment corner' cannot be satisfied when the parties deploy in opposite corner zones, because each of the four edges touches one of those corners. No arrival edge is drawn; the owner must say which edges qualify."
   },
   {
@@ -1012,7 +1012,7 @@
       "10.4 Undermarches Scenario 5: The Shadowed Under Passage (source lines 13187-13259)",
       "10.1 Preparation Steps (11060-11073)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 10 constrained and 5 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 12 constrained and 5 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
     "caption": "The Shadowed Under Passage: Party A deploys within 6\" of the short edge farther from the Heart, Party B within 6\" of the opposite edge; a winding Under Passage runs between the two edges and the Heart lies at least 12\" from Party A's edge (see 10.4, Undermarches Scenario 5).",
     "insert_after": "B13239",
     "scope": "column",
@@ -1026,7 +1026,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13187-13259; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "39a0adda60293c81d9d186a266ec21ac9accec75adde860399f82d6790c5eda5",
+    "svg_sha256": "6654517ae8f509d4261663dd149d85fc9978c4481561b239cac6faec0da51d83",
     "ambiguity": "Party A's edge (13214, 13239): Party A deploys at the end 'farther from the Heart' while the Heart lies at least 12\" from Party A's edge, so each rule is defined by the other; if the Heart is equidistant from both ends neither end is 'farther'. The map puts Party A at the top with the Heart in the lower half, which satisfies both.; Under Passage length (13212): the passage is 'about 18\" long' yet 'runs from one short battlefield edge to the other' of a 36\"×36\" battlefield; both cannot hold for a straight run. The map draws a winding passage between the two short edges and prints no length."
   },
   {
@@ -1051,7 +1051,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13260-13363; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "4d183d42aaf22e0361bc9872789455a4493e03602c99ea7cd8433d2a90d961b0",
+    "svg_sha256": "cee48625d37a672994b635c17e3aef6aee8d9c3bce1d64d08f7d7963fc140a19",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
@@ -1101,7 +1101,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13418-13487; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "5922de5666aee85d14dac9cc791286d50898e990bac581b7e1a33afe43d3ab1f",
+    "svg_sha256": "712eb7c952c44eedbaaa785efc0fe0066495b47d06aa2390d3c8fa19f5ec9713",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
@@ -1126,7 +1126,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13488-13556; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "d04ce5157598955c94a37bcd284058dd37ae38fe7726ded865b90a00f93c7e6c",
+    "svg_sha256": "f028dd8c0ae6f07ffa96dba05e30fd2cf7defa01d6cc427bc2a9f3704b69e705",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
@@ -1326,7 +1326,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14033-14107; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "e379c42923633d727c8a426e2dad4cb15362cfc88a843207f284ce7469406efc",
+    "svg_sha256": "753047b6f161c0b3bf040d07c48c8041acdabec2770d66b01362055727e9b53b",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
@@ -1351,7 +1351,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14108-14194; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "6f3544a926834a8c934d7ecc0668eecb56b60251a322d9d082e4492d40513577",
+    "svg_sha256": "d6f3af0e4232d4e25114863759902ce67338c66538e981923c16adfcfa10b168",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
@@ -1377,7 +1377,7 @@
     "status": "drawn 2026-10-06 pending independent review",
     "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
     "svg_sha256": "e2452a1e4fd3ab91e50d065ce014a07ca77cae534e71aaa17fac5fde17593bdf",
-    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+    "ambiguity": "Group 2 (14252): 'patrolling murky water' - the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258), while Group 2 patrols water outside the Barrow's sanctum; whether outer Shallow Water counts as murky is not stated. Group 2 is drawn as an illustrative marker in an outer Shallow patch."
   },
   {
     "id": "FIG-52",

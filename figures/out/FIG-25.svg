@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="243pt" height="259.9pt" viewBox="0 0 243 259.9">
+<svg xmlns="http://www.w3.org/2000/svg" width="243pt" height="270.3pt" viewBox="0 0 243 270.3">
 <title>Greenmark Scenario 5: The Ambushed Emissary, deployment map</title>
 <desc>Column-width top-down map of the setup for Greenmark 5: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.</desc>
 <defs>
@@ -68,7 +68,7 @@
 <line x1="39.08" y1="122.68" x2="47.92" y2="122.68" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 <polygon points="105.67,66 103.18,70.3 98.22,70.3 95.73,66 98.22,61.7 103.18,61.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
 <polygon points="78.63,99.8 76.14,104.1 71.18,104.1 68.69,99.8 71.18,95.5 76.14,95.5" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
-<polygon points="157.67,102.4 155.18,106.7 150.22,106.7 147.73,102.4 150.22,98.1 155.18,98.1" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="157.67,102.4 155.18,106.7 150.22,106.7 147.73,102.4 150.22,98.1 155.18,98.1" fill="url(#p-mon-l)" stroke="#777" stroke-width="1" stroke-linejoin="round"/>
 <line x1="121.5" y1="29" x2="121.5" y2="21" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
 <polygon points="121.5,14 124.9,21 118.1,21" fill="#000"/>
 <line x1="200.1" y1="107.6" x2="208.1" y2="107.6" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
@@ -132,4 +132,5 @@
 <text x="6" y="226.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Grey dashed = one legal arrangement; position not fixed by</text>
 <text x="6" y="237.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the rules</text>
 <text x="6" y="247.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Roll-off winner chooses the Camp quadrant.</text>
+<text x="6" y="257.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">G3: the 6" ring conflicts with the Camp size.</text>
 </svg>

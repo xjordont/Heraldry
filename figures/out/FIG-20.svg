@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="355pt" viewBox="0 0 504 355">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="436.8pt" viewBox="0 0 504 436.8">
 <title>Key to the 10.4 deployment maps</title>
 <desc>One shared key for the 36 column-width deployment maps in 10.4: party zones, markers, Monster Group notation, terrain patterns, distance and edge symbols, map scale and the status convention for open positions.</desc>
 <defs>
@@ -88,9 +88,18 @@
 <text x="290" y="133.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Impassable or</text>
 <text x="290" y="144" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking, decided per</text>
 <text x="290" y="154.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">piece (2.9.1)</text>
-<rect x="256" y="166.6" width="26" height="12" fill="none" stroke="#000" stroke-width="0.9"/>
-<text x="290" y="168.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Open feature: room,</text>
-<text x="290" y="179.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">clearing, path</text>
+<rect x="256" y="166.6" width="26" height="12" fill="#cfcfcf" stroke="#000" stroke-width="0.9"/>
+<text x="290" y="168.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hazard area (Unstable</text>
+<text x="290" y="179.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Ground)</text>
+<rect x="256" y="191.4" width="26" height="12" fill="url(#p-dark)" stroke="#000" stroke-width="0.9"/>
+<text x="290" y="193.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Deep Shadow or</text>
+<text x="290" y="204" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Darkness</text>
+<line x1="256" y1="222.2" x2="282" y2="222.2" stroke="#000" stroke-width="2.4" stroke-linecap="butt"/>
+<text x="290" y="218.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking wall, drawn</text>
+<text x="290" y="228.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">as a line</text>
+<rect x="256" y="241" width="26" height="12" fill="none" stroke="#000" stroke-width="0.9"/>
+<text x="290" y="243.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Open feature: room,</text>
+<text x="290" y="253.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">clearing, path</text>
 <text x="381" y="28" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Distances, edges, status</text>
 <line x1="383" y1="52.6" x2="409" y2="52.6" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 <line x1="383" y1="49.6" x2="383" y2="55.6" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
@@ -121,15 +130,18 @@
 <text x="417" y="188.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Grey dashed: one legal</text>
 <text x="417" y="198.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">arrangement; position</text>
 <text x="417" y="209.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">not fixed by the rules</text>
-<line x1="0" y1="220" x2="504" y2="220" stroke="#000" stroke-width="0.6" stroke-linecap="butt"/>
-<text x="0" y="229" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Orientation.</tspan><tspan font-weight="400"> North is drawn at the top. The Setup Roll-off winner designates the North edge before setup; North and South are the</tspan></text>
-<text x="0" y="239.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">short battlefield edges and East and West the long ones, even on a square battlefield (10.1).</text>
-<text x="0" y="255.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Scale.</tspan><tspan font-weight="400"> The battlefield, zones and stated distances are drawn to scale at 5.2 pt per inch, with a 6" scale bar; markers are enlarged, and</tspan></text>
-<text x="0" y="266.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Large and Huge Monsters are drawn at their 2"×2" and 3"×3" footprints. Distances are measured between closest points, except from a</text>
-<text x="0" y="277.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">centre or origin where the rule says so (2.6).</text>
-<text x="0" y="293" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Counts.</tspan><tspan font-weight="400"> Scattered terrain is drawn as a few representative pieces; the printed counts and the 10.6 scaling stay in the scenario text.</tspan></text>
-<text x="0" y="303.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Group numbers are the scenario's own. Hidden contents (face-down markers) are never drawn.</text>
-<text x="0" y="319.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Where a scenario is silent</tspan><tspan font-weight="400">, 10.1 step 11 applies: the Setup Roll-off winner chooses the edge or corner zone and the other party takes</tspan></text>
-<text x="0" y="330.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the opposite one; each zone extends 6" from its edge, a corner zone is 8"×8", and parties alternate placing Heroes, starting with the</text>
-<text x="0" y="341.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">party that lost the Roll-off.</text>
+<line x1="0" y1="264.4" x2="504" y2="264.4" stroke="#000" stroke-width="0.6" stroke-linecap="butt"/>
+<text x="0" y="273.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Orientation.</tspan><tspan font-weight="400"> North is drawn at the top. The Setup Roll-off winner designates the North edge before setup; North and South are the</tspan></text>
+<text x="0" y="284.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">short battlefield edges and East and West the long ones, even on a square battlefield (10.1).</text>
+<text x="0" y="300" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Scale.</tspan><tspan font-weight="400"> The battlefield, zones and stated distances are drawn to scale at 5.2 pt per inch, with a 6" scale bar; markers are enlarged, and</tspan></text>
+<text x="0" y="310.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Large and Huge Monsters are drawn at their 2"×2" and 3"×3" footprints. Distances are measured between closest points, except from a</text>
+<text x="0" y="321.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">centre or origin where the rule says so (2.6).</text>
+<text x="0" y="337.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Counts.</tspan><tspan font-weight="400"> Scattered terrain is drawn as a few representative pieces; the printed counts and the 10.6 scaling stay in the scenario text.</tspan></text>
+<text x="0" y="348.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Group numbers are the scenario's own. Hidden contents (face-down markers) are never drawn.</text>
+<text x="0" y="364" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Solid and dashed.</tspan><tspan font-weight="400"> A solid marker or zone with a distance symbol is one position that meets that printed limit, not a fixed position;</tspan></text>
+<text x="0" y="374.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">only the battlefield, zone depths and stated distances are exact. Letters A and B beside exit arrows or zones are the drawn zones'</text>
+<text x="0" y="385.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">parties; where a scenario assigns Party A or B by die roll, the drawn zones do not say who is which.</text>
+<text x="0" y="401.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Where a scenario is silent</tspan><tspan font-weight="400">, 10.1 step 11 applies: the Setup Roll-off winner chooses the edge or corner zone and the other party takes</tspan></text>
+<text x="0" y="412.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the opposite one; each zone extends 6" from its edge, a corner zone is 8"×8", and parties alternate placing Heroes, starting with the</text>
+<text x="0" y="423" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">party that lost the Roll-off.</text>
 </svg>
