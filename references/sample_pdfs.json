@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "awaiting_lfs_objects",
+  "status": "uploaded_and_hash_verified",
   "authorization": "Owner request 2026-10-06: upload the supplied sample PDFs to Heraldry for layout, art and illustration inspiration",
   "purpose": "Visual inspiration only; active Heraldry manuscript governs all mechanics and lore",
   "directory": "references/private/pdfs",
@@ -22,7 +22,7 @@
       "path": "references/private/pdfs/02-Nimble-CoreRules.pdf",
       "bytes": 14963945,
       "sha256": "c9550dce8ed293eb",
-      "title": "Nimble — Core Rules"
+      "title": "Nimble \u2014 Core Rules"
     },
     {
       "id": "SAMPLE-03",
@@ -38,7 +38,7 @@
       "path": "references/private/pdfs/04-Pathfinder-2e-Player-Core-Remaster.pdf",
       "bytes": 28849599,
       "sha256": "9e34130ba88cb6a7",
-      "title": "Pathfinder 2e — Player Core Remaster"
+      "title": "Pathfinder 2e \u2014 Player Core Remaster"
     },
     {
       "id": "SAMPLE-05",
@@ -46,7 +46,7 @@
       "path": "references/private/pdfs/05-Dungeoneers-Rulebook-v16.pdf",
       "bytes": 11697114,
       "sha256": "5e9aa6742d42fcae",
-      "title": "Dungeoneers Rulebook — v16"
+      "title": "Dungeoneers Rulebook \u2014 v16"
     },
     {
       "id": "SAMPLE-06",
@@ -54,7 +54,7 @@
       "path": "references/private/pdfs/06-FLftB-Core-Rules-3rd-Edition.pdf",
       "bytes": 23350619,
       "sha256": "1cc445a38a44fd3a",
-      "title": "Five Leagues from the Borderlands — Core Rules, Third Edition"
+      "title": "Five Leagues from the Borderlands \u2014 Core Rules, Third Edition"
     },
     {
       "id": "SAMPLE-07",
@@ -70,7 +70,7 @@
       "path": "references/private/pdfs/08-ATO_CORE_Rulebook_v1.1.pdf",
       "bytes": 36533183,
       "sha256": "64e8c4c30b73783c",
-      "title": "ATO — Core Rulebook v1.1"
+      "title": "ATO \u2014 Core Rulebook v1.1"
     },
     {
       "id": "SAMPLE-09",
@@ -110,7 +110,7 @@
       "path": "references/private/pdfs/13-Ker-Nethalas-Carnage-Aether-3-.pdf",
       "bytes": 9683862,
       "sha256": "83e856bea4967164",
-      "title": "Ker Nethalas — Carnage Aether"
+      "title": "Ker Nethalas \u2014 Carnage Aether"
     },
     {
       "id": "SAMPLE-14",
@@ -126,7 +126,7 @@
       "path": "references/private/pdfs/15-The-Walking-Dead-All-Out-War.pdf",
       "bytes": 48546210,
       "sha256": "850e4eba12012c13",
-      "title": "The Walking Dead — All Out War"
+      "title": "The Walking Dead \u2014 All Out War"
     },
     {
       "id": "SAMPLE-16",
@@ -134,7 +134,7 @@
       "path": "references/private/pdfs/16-XCOM-The-Miniatures-Game-Core-Rules-digital.pdf",
       "bytes": 21736111,
       "sha256": "a80fe8ea98dd2697",
-      "title": "XCOM — The Miniatures Game Core Rules"
+      "title": "XCOM \u2014 The Miniatures Game Core Rules"
     },
     {
       "id": "SAMPLE-17",
@@ -142,7 +142,7 @@
       "path": "references/private/pdfs/17-The-Village-Hunt-Veil-Hollow.pdf",
       "bytes": 30689553,
       "sha256": "286e97e5ba48dce6",
-      "title": "The Village Hunt — Veil Hollow"
+      "title": "The Village Hunt \u2014 Veil Hollow"
     },
     {
       "id": "SAMPLE-18",
@@ -150,7 +150,7 @@
       "path": "references/private/pdfs/18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf",
       "bytes": 25768590,
       "sha256": "b86881466e048836",
-      "title": "Relicblade — The Seekers Handbook, Second Edition"
+      "title": "Relicblade \u2014 The Seekers Handbook, Second Edition"
     },
     {
       "id": "SAMPLE-19",
@@ -166,7 +166,7 @@
       "path": "references/private/pdfs/20-FINAL-GoN-Dux-Disciplinam.pdf",
       "bytes": 65011274,
       "sha256": "99f551cc7f8b0993",
-      "title": "GoN — Dux Disciplinam"
+      "title": "GoN \u2014 Dux Disciplinam"
     },
     {
       "id": "SAMPLE-21",
@@ -174,7 +174,7 @@
       "path": "references/private/pdfs/21-FINAL-GoN-Tome-of-Knowledge.pdf",
       "bytes": 60859567,
       "sha256": "6127616692d0c948",
-      "title": "GoN — Tome of Knowledge"
+      "title": "GoN \u2014 Tome of Knowledge"
     },
     {
       "id": "SAMPLE-22",
@@ -182,7 +182,8 @@
       "path": "references/private/pdfs/22-FINAL-GoN-Scenario-Book.pdf",
       "bytes": 153315458,
       "sha256": "aef6cb8051f4912e",
-      "title": "GoN — Scenario Book"
+      "title": "GoN \u2014 Scenario Book"
     }
-  ]
+  ],
+  "verification": "All 22 original objects downloaded from GitHub LFS and verified by SHA256 and byte count before committing pointers"
 }
