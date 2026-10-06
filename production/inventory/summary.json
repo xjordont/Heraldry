@@ -16,9 +16,9 @@
  "tables_ragged_rows": [],
  "constructs": {
   "heading": 833,
-  "inline_text": 55721,
+  "inline_text": 55729,
   "para": 7743,
-  "inline_strong": 22796,
+  "inline_strong": 22800,
   "hr": 42,
   "list": 1518,
   "list_item": 4185,
@@ -111,6 +111,14 @@
    "blocks": 321
   }
  ],
- "patches_applied": [],
+ "patches_applied": [
+  "P-01",
+  "P-02",
+  "P-03",
+  "P-04",
+  "P-05",
+  "P-06",
+  "P-07"
+ ],
  "duplicate_heading_slugs": {}
 }
