@@ -2,19 +2,19 @@
  {
   "id": "FIG-01",
   "placed": true,
-  "folio": "30",
+  "folio": "29",
   "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
  },
  {
   "id": "FIG-02",
   "placed": true,
-  "folio": "31",
+  "folio": "30",
   "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
  },
  {
   "id": "FIG-03",
   "placed": true,
-  "folio": "48",
+  "folio": "47",
   "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
  },
  {
@@ -26,91 +26,91 @@
  {
   "id": "FIG-05",
   "placed": true,
-  "folio": "39",
+  "folio": "38",
   "semantic_status": "revised after audit: major fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
  },
  {
   "id": "FIG-06",
   "placed": true,
-  "folio": "46",
+  "folio": "45",
   "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
  },
  {
   "id": "FIG-07",
   "placed": true,
   "folio": "22",
-  "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
+  "semantic_status": "aligned to editorial patches 2026-10-06"
  },
  {
   "id": "FIG-08",
   "placed": true,
   "folio": "20",
-  "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
+  "semantic_status": "aligned to editorial patches 2026-10-06"
  },
  {
   "id": "FIG-09",
   "placed": true,
-  "folio": "42",
+  "folio": "41",
   "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
  },
  {
   "id": "FIG-10",
   "placed": true,
-  "folio": "182",
+  "folio": "181",
   "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
  },
  {
   "id": "FIG-11",
   "placed": true,
-  "folio": "185",
+  "folio": "184",
   "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
  },
  {
   "id": "FIG-12",
   "placed": true,
-  "folio": "186",
+  "folio": "185",
   "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
  },
  {
   "id": "FIG-13",
   "placed": true,
-  "folio": "256",
-  "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
+  "folio": "255",
+  "semantic_status": "aligned to editorial patches 2026-10-06"
  },
  {
   "id": "FIG-14",
   "placed": true,
-  "folio": "257",
+  "folio": "256",
   "semantic_status": "corrected 2026-10-06 (release correction pass)"
  },
  {
   "id": "FIG-15",
   "placed": true,
-  "folio": "305",
+  "folio": "304",
   "semantic_status": "corrected 2026-10-06 (release correction pass)"
  },
  {
   "id": "FIG-16",
   "placed": true,
-  "folio": "286",
-  "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
+  "folio": "285",
+  "semantic_status": "aligned to editorial patches 2026-10-06"
  },
  {
   "id": "FIG-17",
   "placed": true,
-  "folio": "353",
+  "folio": "352",
   "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
  },
  {
   "id": "FIG-18",
   "placed": true,
   "folio": "380",
-  "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
+  "semantic_status": "aligned to editorial patches 2026-10-06"
  },
  {
   "id": "FIG-19",
   "placed": true,
   "folio": "397",
-  "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
+  "semantic_status": "aligned to editorial patches 2026-10-06"
  }
 ]

@@ -20,3 +20,6 @@ Heraldry_RC484_digital.pdf (439 pp: covers + inside-front blank + 436-page inter
 
 ## Release correction pass (2026-10-06)
 FIG-15 Fly/Climb rescue exceptions; FIG-14 dimension geometry; independent hash-bound re-review (gate PASS); source_preflight and figure_semantic_review now mandatory; ambiguity triage; balancer/orphan fixes; all pages re-inspected. Open minor: FIG-19 step 3 wording.
+
+## Editorial patch pass (2026-10-06)
+Seven author-authorized clarifications applied as publication-layer patches (P-01..P-07); six figures aligned; independent re-review 0 open findings; gate PASS (15 checks); all 436 pages re-inspected.

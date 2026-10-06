@@ -6,13 +6,13 @@
  },
  {
   "purpose": "Two-column rules + worked example",
-  "book_page_index": 47,
-  "folio": "41"
+  "book_page_index": 46,
+  "folio": "40"
  },
  {
   "purpose": "Facing page: sustained procedure",
-  "book_page_index": 35,
-  "folio": "29"
+  "book_page_index": 34,
+  "folio": "28"
  },
  {
   "purpose": "Short random-result table",
@@ -21,8 +21,8 @@
  },
  {
   "purpose": "Numeric equipment table (multi-page, repeated header)",
-  "book_page_index": 103,
-  "folio": "97"
+  "book_page_index": 102,
+  "folio": "96"
  },
  {
   "purpose": "Widest source table as labelled entries (T082, 12 columns)",
@@ -31,18 +31,18 @@
  },
  {
   "purpose": "Longest prose cells / long-description table",
-  "book_page_index": 367,
-  "folio": "361"
+  "book_page_index": 366,
+  "folio": "360"
  },
  {
   "purpose": "Monster profiles",
-  "book_page_index": 197,
-  "folio": "191"
+  "book_page_index": 196,
+  "folio": "190"
  },
  {
   "purpose": "Scenario with canonical scaling fields",
-  "book_page_index": 290,
-  "folio": "284"
+  "book_page_index": 289,
+  "folio": "283"
  },
  {
   "purpose": "Appendix reference page",
