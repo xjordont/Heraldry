@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "status": "awaiting_lfs_objects",
+  "status": "uploaded_and_hash_verified",
   "authorization": "Owner correction 2026-10-06: only TNA Ultimate, FLftB Core, Deth Wizards, Mythras Classic Fantasy, The Village Hunt, Dread Nights, Hellcrawl, TES CTA Core Rules, Hametsu and BlackDeath-City are intended references",
   "purpose": "Visual inspiration only; active Heraldry manuscript governs mechanics and lore",
   "directory": "references/private/pdfs",
@@ -19,7 +19,7 @@
     },
     {
       "id": "REF-FIVELEAGUES",
-      "title": "Five Leagues from the Borderlands — Core Rules, Third Edition",
+      "title": "Five Leagues from the Borderlands \u2014 Core Rules, Third Edition",
       "original_filename": "06-FLftB-Core-Rules-3rd-Edition.pdf",
       "filename": "FLftB-Core-Rules-3rd-Edition.pdf",
       "path": "references/private/pdfs/FLftB-Core-Rules-3rd-Edition.pdf",
@@ -37,7 +37,7 @@
     },
     {
       "id": "REF-MYTHRAS",
-      "title": "Mythras — Classic Fantasy Imperative",
+      "title": "Mythras \u2014 Classic Fantasy Imperative",
       "original_filename": "Mythras - Classic Fantasy Imperative(1).pdf",
       "filename": "Mythras-Classic-Fantasy-Imperative.pdf",
       "path": "references/private/pdfs/Mythras-Classic-Fantasy-Imperative.pdf",
@@ -46,7 +46,7 @@
     },
     {
       "id": "REF-VILLAGEHUNT",
-      "title": "The Village Hunt — Veil Hollow",
+      "title": "The Village Hunt \u2014 Veil Hollow",
       "original_filename": "17-The-Village-Hunt-Veil-Hollow.pdf",
       "filename": "The-Village-Hunt-Veil-Hollow.pdf",
       "path": "references/private/pdfs/The-Village-Hunt-Veil-Hollow.pdf",
@@ -73,7 +73,7 @@
     },
     {
       "id": "REF-CALLTOARMS",
-      "title": "The Elder Scrolls — Call to Arms Core Rules",
+      "title": "The Elder Scrolls \u2014 Call to Arms Core Rules",
       "original_filename": "TES_CTA_Core-Rulebook_DIGITAL_v001sk.pdf",
       "filename": "TES-CTA-Core-Rulebook-DIGITAL-v001sk.pdf",
       "path": "references/private/pdfs/TES-CTA-Core-Rulebook-DIGITAL-v001sk.pdf",
@@ -82,7 +82,7 @@
     },
     {
       "id": "REF-HAMETSU",
-      "title": "Hametsu — Second Printing",
+      "title": "Hametsu \u2014 Second Printing",
       "original_filename": "14-Hametsu-3-.pdf",
       "filename": "Hametsu-Second-Printing.pdf",
       "path": "references/private/pdfs/Hametsu-Second-Printing.pdf",
@@ -91,7 +91,7 @@
     },
     {
       "id": "REF-BLACKDEATH",
-      "title": "BlackDeathCity — Playtest 101",
+      "title": "BlackDeathCity \u2014 Playtest 101",
       "original_filename": "BlackDeathCity-Playtest-101.pdf",
       "filename": "BlackDeathCity-Playtest-101.pdf",
       "path": "references/private/pdfs/BlackDeathCity-Playtest-101.pdf",
@@ -99,28 +99,5 @@
       "sha256": "7d46035bea637078"
     }
   ],
-  "replaced_reference_paths": [
-    "references/private/pdfs/01-Frostgrave.pdf",
-    "references/private/pdfs/02-Nimble-CoreRules.pdf",
-    "references/private/pdfs/03-Lasting-Tales.pdf",
-    "references/private/pdfs/04-Pathfinder-2e-Player-Core-Remaster.pdf",
-    "references/private/pdfs/05-Dungeoneers-Rulebook-v16.pdf",
-    "references/private/pdfs/06-FLftB-Core-Rules-3rd-Edition.pdf",
-    "references/private/pdfs/07-ARENACONTEST-4-.pdf",
-    "references/private/pdfs/08-ATO_CORE_Rulebook_v1.1.pdf",
-    "references/private/pdfs/09-SAS-Rulebook-3-.pdf",
-    "references/private/pdfs/10-Rulebook-web-Dungeon-Universalis-2-.pdf",
-    "references/private/pdfs/11-Middara.pdf",
-    "references/private/pdfs/12-EAHQ.pdf",
-    "references/private/pdfs/13-Ker-Nethalas-Carnage-Aether-3-.pdf",
-    "references/private/pdfs/14-Hametsu-3-.pdf",
-    "references/private/pdfs/15-The-Walking-Dead-All-Out-War.pdf",
-    "references/private/pdfs/16-XCOM-The-Miniatures-Game-Core-Rules-digital.pdf",
-    "references/private/pdfs/17-The-Village-Hunt-Veil-Hollow.pdf",
-    "references/private/pdfs/18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf",
-    "references/private/pdfs/19-Call-of-Dungeons.pdf",
-    "references/private/pdfs/20-FINAL-GoN-Dux-Disciplinam.pdf",
-    "references/private/pdfs/21-FINAL-GoN-Tome-of-Knowledge.pdf",
-    "references/private/pdfs/22-FINAL-GoN-Scenario-Book.pdf"
-  ]
+  "verification": "All 10 original objects downloaded from GitHub LFS and verified by SHA256 and byte count before committing pointers"
 }
