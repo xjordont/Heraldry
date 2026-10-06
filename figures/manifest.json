@@ -576,5 +576,957 @@
     ],
     "svg_sha256": "485135198445731d4c3cd1af696e717472b054f6d56f010c8e5df5f59babf704",
     "ambiguity": "Resolved by P-06: groups are assigned to Monster Entry markers at random, one complete group per marker (all markers carry identical group glyphs, so no assignment is drawn). Terrain positions and the road's width are schematic; who places the markers and which edges are deployment edges are not specified (north and south drawn)."
+  },
+  {
+    "id": "FIG-20",
+    "title": "Key to the 10.4 deployment maps",
+    "purpose": "One shared key for the 36 column-width deployment maps in 10.4: party zones, markers, Monster Group notation, terrain patterns, distance and edge symbols, map scale and the status convention for open positions.",
+    "source_refs": [
+      "10.1 Random Direction and Battlefield Edges (11056-11058)",
+      "10.1 Setup Roll-off (11035) and Preparation Steps, step 11 (11072)",
+      "2.6 Measurement (594) and Size and Footprints (618-619)",
+      "2.9.1 Terrain Types (832-878)"
+    ],
+    "geometry_spec": "Four columns of swatches (parties and zones; markers and Monsters; terrain patterns; distances, edges and status) above four short notes on orientation, scale, counts and the step 11 default; no board geometry beyond the swatches.",
+    "caption": "Key to the deployment maps in 10.4: symbols for zones, markers, Monster Groups, terrain, distances and edges, with the orientation, scale and open-position conventions every map follows (see 10.4).",
+    "insert_after": "B11970",
+    "scope": "full",
+    "schematic": false,
+    "file": "figures/out/FIG-20.svg",
+    "size_pt": {
+      "width": 504,
+      "height": 355.0
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Swatches reuse the figures/README visual grammar; every inch value printed (6\", 8\"x8\", 2\"x2\", 3\"x3\") is checked against lines 594, 618-619 and 11072; North/short/long edge naming against 11056-11058; closest-point measurement against 594.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "f72486e3e21d592778afde33081ec7901c94a1e79d2d834b2af7955c165d7c12",
+    "ambiguity": "None in the key. Terrain pieces whose type the scenario leaves to 2.9.1 ('Impassable or Blocking') use a neutral grey swatch rather than either type."
+  },
+  {
+    "id": "FIG-21",
+    "title": "Greenmark Scenario 1: Hunt the Wild Beast, deployment map",
+    "purpose": "Column-width top-down map of the setup for Greenmark 1: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Greenmark Scenario 1: Hunt the Wild Beast (source lines 11974-12041)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 6 constrained and 5 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "Hunt the Wild Beast: parties deploy within 6\" of opposite long battlefield edges, and the Great Forest Boar starts within 2\" of the Mud Wallow near the centre (see 10.4, Greenmark Scenario 1).",
+    "insert_after": "B12025",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-21.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 11974-12041; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "a64388b6b077b59a3e582fda284b8132a64a02bb00164ae98dbc2da906a2a52d",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-22",
+    "title": "Greenmark Scenario 2: The Whispering Grove, deployment map",
+    "purpose": "Column-width top-down map of the setup for Greenmark 2: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Greenmark Scenario 2: The Whispering Grove (source lines 12042-12111)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 0 mandatory, 11 constrained and 3 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Whispering Grove: parties deploy in opposite 8\"×8\" corners; three Standing Stones stand 6–8\" apart in a Central Clearing about 12–15\" across (see 10.4, Greenmark Scenario 2).",
+    "insert_after": "B12096",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-22.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12042-12111; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "0e72dde508110afcecc1a8e0875107cf8e7b0363df233b740d1e0dcbd6aac771",
+    "ambiguity": "'outer Standing Stone' (Group 1): the three Stones form a triangle, so no Stone is more 'outer' than another; the map shows Group 1 within 3\" of one Stone and any of the three is legal."
+  },
+  {
+    "id": "FIG-23",
+    "title": "Greenmark Scenario 3: The Bandit's Toll, deployment map",
+    "purpose": "Column-width top-down map of the setup for Greenmark 3: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Greenmark Scenario 3: The Bandit's Toll (source lines 12112-12188)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 2 mandatory, 10 constrained and 3 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Bandit's Toll: parties deploy within 6\" of the opposite short edges where a Trail 3–4\" wide runs, with at least two Heroes each on the Trail; the Barricade and Wagon 2 stand at the midpoint (see 10.4, Greenmark Scenario 3).",
+    "insert_after": "B12170",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-23.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12112-12188; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "d3633c63a35676df5c25c291467aa227902e93fe96c74f77a8ea93fa41f02c95",
+    "ambiguity": "Wagon 2 and the Toll Captain: the source places Wagon 2 'adjacent to the central Barricade' and the Captain 'behind the central Barricade' without saying which side of the Barricade is 'behind'; the map draws Wagon 2 on one side only as an illustration.; The Barricade is 2–3\" long but the Trail is 3–4\" wide; the text does not say how a Barricade shorter than the Trail spans it ('across the Trail')."
+  },
+  {
+    "id": "FIG-24",
+    "title": "Greenmark Scenario 4: The Spider's Silk Route, deployment map",
+    "purpose": "Column-width top-down map of the setup for Greenmark 4: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Greenmark Scenario 4: The Spider's Silk Route (source lines 12189-12259)",
+      "10.1 Preparation Steps (11060-11073)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 12 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Spider's Silk Route: parties deploy within 6\" of opposite short edges on higher ground, either side of a Ravine 6–8\" wide that cuts across the midpoint with a Silk Bundle in each of three Webbed Sections (see 10.4, Greenmark Scenario 4).",
+    "insert_after": "B12238",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-24.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12189-12259; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "974f476d76cba5229f14f79eebb3fd8b51d2c90165e0e414f0a84db7e9a377cf",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-25",
+    "title": "Greenmark Scenario 5: The Ambushed Emissary, deployment map",
+    "purpose": "Column-width top-down map of the setup for Greenmark 5: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Greenmark Scenario 5: The Ambushed Emissary (source lines 12260-12337)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 1 mandatory, 12 constrained and 3 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Ambushed Emissary: parties deploy in opposite 8\"×8\" corners; the Bandit Camp lies in one quadrant at least 8\" from every edge, with four Clue markers at least 6\" from each other and the Camp (see 10.4, Greenmark Scenario 5).",
+    "insert_after": "B12314",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-25.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12260-12337; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "4fc8f2380f1baeb4fc8c879d44ae88556b9f61d37482edbb558049f6c54fda81",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-26",
+    "title": "Greenmark Scenario 6: Ritual of the Old Growth, deployment map",
+    "purpose": "Column-width top-down map of the setup for Greenmark 6: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Greenmark Scenario 6: Ritual of the Old Growth (source lines 12338-12424)",
+      "10.1 Preparation Steps (11060-11073)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 4 mandatory, 8 constrained and 4 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "Ritual of the Old Growth: the Setup Roll-off winner picks a long edge and deploys within 6\"; the Mother Tree at the centre has a Sacred Grove within 6\" of it, with three Treasure Chests evenly spaced on its outer edge (see 10.4, Greenmark Scenario 6).",
+    "insert_after": "B12398",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-26.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12338-12424; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "d2e569f64145d34de5fab3af7c6b866bd06d689d8f366852b73cdc4794ce0e49",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-27",
+    "title": "Ashlands Scenario 1: The Fallen Observatory, deployment map",
+    "purpose": "Column-width top-down map of the setup for Ashlands 1: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Ashlands Scenario 1: The Fallen Observatory (source lines 12427-12494)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 4 mandatory, 9 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Fallen Observatory: parties deploy within 6\" of opposite long edges around a central 6\"×6\" Collapsed Dome holding the Star Lens, with two raised Platforms at least 10\" apart (see 10.4, Ashlands Scenario 1).",
+    "insert_after": "B12481",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-27.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12427-12494; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "f3e895c8f6807558db765ffbeaa4572d1d334430721b626cb98956d99e007aa0",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-28",
+    "title": "Ashlands Scenario 2: The Guardian's Test, deployment map",
+    "purpose": "Column-width top-down map of the setup for Ashlands 2: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Ashlands Scenario 2: The Guardian's Test (source lines 12495-12568)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 2 mandatory, 7 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Guardian's Test: parties deploy within 6\" of opposite short edges, with the Sealed Gateway in one long edge and three Trial Pedestals at least 5\" apart in a Courtyard about 15\"×15\" (see 10.4, Ashlands Scenario 2).",
+    "insert_after": "B12546",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-28.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12495-12568; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "449a4a0a3a69326363e5ba78465dc0aa851f79491df1a8a2524eb79dd8e23765",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-29",
+    "title": "Ashlands Scenario 3: The Shifting Sands of Time, deployment map",
+    "purpose": "Column-width top-down map of the setup for Ashlands 3: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Ashlands Scenario 3: The Shifting Sands of Time (source lines 12569-12623)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 0 mandatory, 12 constrained and 6 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Shifting Sands of Time: parties deploy in opposite 8\"×8\" corners around a 4\"×4\" Central Ruin with four 3\"×3\" Unstable Ground zones at least 6\" apart; carriers escape by the two edges not touching their corner (see 10.4, Ashlands Scenario 3).",
+    "insert_after": "B12604",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-29.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12569-12623; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "a4adb021ca6ee36f7c366a30a417e0939ab5d7743779899e0595ec4424cab5cd",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-30",
+    "title": "Ashlands Scenario 4: The Sealed Archive, deployment map",
+    "purpose": "Column-width top-down map of the setup for Ashlands 4: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Ashlands Scenario 4: The Sealed Archive (source lines 12624-12703)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 11 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Sealed Archive: parties deploy within 6\" of opposite short edges around an 8\"×4\" Archive Hall with the Codex on its lectern, two side chambers and Tablet Caches two in one chamber and one in the other (see 10.4, Ashlands Scenario 4).",
+    "insert_after": "B12680",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-30.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12624-12703; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "21181f36680052555a72d81db00062715d98299a4858c1c2fd19401bdc5f5a1c",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-31",
+    "title": "Ashlands Scenario 5: The Reliquary of Broken Saints, deployment map",
+    "purpose": "Column-width top-down map of the setup for Ashlands 5: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Ashlands Scenario 5: The Reliquary of Broken Saints (source lines 12704-12777)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 7 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Reliquary of Broken Saints: parties deploy within 6\" of opposite long edges around a long central nave with the Reliquary on its altar platform, Bone Fragments in the two side aisles (see 10.4, Ashlands Scenario 5).",
+    "insert_after": "B12759",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-31.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12704-12777; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "9aa47a12343802b9132ddf4fc0c1aba5eb4a53d3ade1b07deeaaa7e90de80f8b",
+    "ambiguity": "'left side aisle' and 'right side aisle' (Groups 1 and 2): the source does not say from which viewpoint left and right are taken, and the nave's orientation is not fixed; the map shows one aisle each without asserting which is 'left'."
+  },
+  {
+    "id": "FIG-32",
+    "title": "Ashlands Scenario 6: The Iron-Vein Vault, deployment map",
+    "purpose": "Column-width top-down map of the setup for Ashlands 6: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Ashlands Scenario 6: The Iron-Vein Vault (source lines 12778-12876)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 11 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Iron-Vein Vault: parties deploy within 6\" of opposite long edges around a central 6\"×6\" Chamber with an iron door whose hinges and lock carry the Binding Points, and the Vault Record 3\" beyond the door (see 10.4, Ashlands Scenario 6).",
+    "insert_after": "B12846",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-32.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12778-12876; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "24f620de10cf6c49d7a2ee7b25a5a38e171e5d48133bc56d52986e3b110a5156",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-33",
+    "title": "Undermarches Scenario 1: The Crystal Harvest, deployment map",
+    "purpose": "Column-width top-down map of the setup for Undermarches 1: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Undermarches Scenario 1: The Crystal Harvest (source lines 12879-12944)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 1 mandatory, 8 constrained and 13 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Crystal Harvest: parties deploy in opposite 8\"×8\" corners; two Main Caverns 8\"×8\" are linked by narrow passages, with a central Crystal Node midway between them (see 10.4, Undermarches Scenario 1).",
+    "insert_after": "B12929",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-33.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12879-12944; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "1ccfc273400fd6c77d8492d468880b0c6341a9de1fd63b7fcc5bed7525a59cf6",
+    "ambiguity": "Group 3 arrival edge (12927): 'a random battlefield edge that is not adjacent to either deployment corner' cannot be satisfied when the parties deploy in opposite corner zones, because each of the four edges touches one of those corners. No arrival edge is drawn; the owner must say which edges qualify."
+  },
+  {
+    "id": "FIG-34",
+    "title": "Undermarches Scenario 2: The Chasm Crossing, deployment map",
+    "purpose": "Column-width top-down map of the setup for Undermarches 2: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Undermarches Scenario 2: The Chasm Crossing (source lines 12945-13014)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 2 mandatory, 2 constrained and 9 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Chasm Crossing: both parties deploy within 8\" of one short edge, no Heroes within 6\" of an opposing Hero; the Chasm 8\" wide bisects the battlefield, with the Survey Map and the Stone each 3\" from the end ledges (see 10.4, Undermarches Scenario 2).",
+    "insert_after": "B12995",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-34.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 12945-13014; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "171ea388a68d34a0169facde38e9aeca690b220a4a82d47e7f9fa7ad98065d3d",
+    "ambiguity": "The 'start' short edge (12997): the scenario names the 'start' side but not which short edge it is or who chooses it; the 10.1 step 11 default assigns different edges to the parties and so cannot be applied here. Drawn at the top as an illustration."
+  },
+  {
+    "id": "FIG-35",
+    "title": "Undermarches Scenario 3: The Quake, deployment map",
+    "purpose": "Column-width top-down map of the setup for Undermarches 3: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Undermarches Scenario 3: The Quake (source lines 13015-13079)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 1 mandatory, 0 constrained and 16 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Quake: both parties deploy inside a central 8\"×8\" Safe Zone, no Hero within 3\" of an opposing Hero; the Setup Roll-off winner designates the Main Exit and the two perpendicular edges are Collapsed Tunnels (see 10.4, Undermarches Scenario 3).",
+    "insert_after": "B13062",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-35.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13015-13079; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "4dc62a74cc296b44c38e95805c18c17faf0f3bbed47d77e3fbdf0dc864687c7c",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-36",
+    "title": "Undermarches Scenario 4: The Undermarches Outpost Raid, deployment map",
+    "purpose": "Column-width top-down map of the setup for Undermarches 4: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Undermarches Scenario 4: The Undermarches Outpost Raid (source lines 13080-13186)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 1 mandatory, 10 constrained and 9 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Undermarches Outpost Raid: parties deploy in opposite 8\"×8\" corners around an outpost with a central 3\"×3\" Command Tent holding the Battle Plans and 2–3 Guard Towers (see 10.4, Undermarches Scenario 4).",
+    "insert_after": "B13166",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-36.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13080-13186; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "f399589b53e2759665fe72946545e064c2334e8b96f64a494247346b33c12292",
+    "ambiguity": "Group 2 (13164): 'Place using normal alternating scenario placement' does not say who places the group or what limits apply; 10.1 step 7 and step 9 give an alternating rule only for terrain and weather markers. Group 2 is drawn as an unfixed (open) marker."
+  },
+  {
+    "id": "FIG-37",
+    "title": "Undermarches Scenario 5: The Shadowed Under Passage, deployment map",
+    "purpose": "Column-width top-down map of the setup for Undermarches 5: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Undermarches Scenario 5: The Shadowed Under Passage (source lines 13187-13259)",
+      "10.1 Preparation Steps (11060-11073)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 10 constrained and 5 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Shadowed Under Passage: Party A deploys within 6\" of the short edge farther from the Heart, Party B within 6\" of the opposite edge; a winding Under Passage runs between the two edges and the Heart lies at least 12\" from Party A's edge (see 10.4, Undermarches Scenario 5).",
+    "insert_after": "B13239",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-37.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13187-13259; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "39a0adda60293c81d9d186a266ec21ac9accec75adde860399f82d6790c5eda5",
+    "ambiguity": "Party A's edge (13214, 13239): Party A deploys at the end 'farther from the Heart' while the Heart lies at least 12\" from Party A's edge, so each rule is defined by the other; if the Heart is equidistant from both ends neither end is 'farther'. The map puts Party A at the top with the Heart in the lower half, which satisfies both.; Under Passage length (13212): the passage is 'about 18\" long' yet 'runs from one short battlefield edge to the other' of a 36\"×36\" battlefield; both cannot hold for a straight run. The map draws a winding passage between the two short edges and prints no length."
+  },
+  {
+    "id": "FIG-38",
+    "title": "Undermarches Scenario 6: The Ritual of Shadow Binding, deployment map",
+    "purpose": "Column-width top-down map of the setup for Undermarches 6: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Undermarches Scenario 6: The Ritual of Shadow Binding (source lines 13260-13363)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 2 mandatory, 9 constrained and 8 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Ritual of Shadow Binding: Party A deploys within 6\" of one short edge and Party B within 6\" of the opposite one; three Shadow Orbs stand within 2\" of the 4\" Binding Circle at the centre of the central cavern (see 10.4, Undermarches Scenario 6).",
+    "insert_after": "B13318",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-38.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13260-13363; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "4d183d42aaf22e0361bc9872789455a4493e03602c99ea7cd8433d2a90d961b0",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-39",
+    "title": "Pale City Scenario 1: Plunder of the Frozen Ruins, deployment map",
+    "purpose": "Column-width top-down map of the setup for Pale City 1: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Pale City Scenario 1: Plunder of the Frozen Ruins (source lines 13366-13417)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 1 mandatory, 9 constrained and 6 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "Plunder of the Frozen Ruins: parties deploy in opposite 8\"×8\" corners; the five Chests are placed alternately at least 6\" apart and at least 8\" from any deployment zone (see 10.4, Pale City Scenario 1).",
+    "insert_after": "B13404",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-39.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13366-13417; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "0cdce1784214511890e93954b8bf9ce6395acad7931d8a3fad43a0b971a1c4f0",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-40",
+    "title": "Pale City Scenario 2: The Alchemist's Frozen Laboratory, deployment map",
+    "purpose": "Column-width top-down map of the setup for Pale City 2: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Pale City Scenario 2: The Alchemist's Frozen Laboratory (source lines 13418-13487)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 8 constrained and 6 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Alchemist's Frozen Laboratory: parties deploy within 6\" of opposite short edges; the Laboratory, about 6\"×8\", holds three Reagent Chests and the Alchemical Golem (see 10.4, Pale City Scenario 2).",
+    "insert_after": "B13470",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-40.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13418-13487; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "5922de5666aee85d14dac9cc791286d50898e990bac581b7e1a33afe43d3ab1f",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-41",
+    "title": "Pale City Scenario 3: The Haunted Mausoleum, deployment map",
+    "purpose": "Column-width top-down map of the setup for Pale City 3: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Pale City Scenario 3: The Haunted Mausoleum (source lines 13488-13556)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 1 constrained and 13 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Haunted Mausoleum: parties deploy within 6\" of opposite short edges outside the mausoleum, which holds a Grand Hall, 3 Burial Crypts and exactly five Sarcophagi (see 10.4, Pale City Scenario 3).",
+    "insert_after": "B13541",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-41.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13488-13556; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "d04ce5157598955c94a37bcd284058dd37ae38fe7726ded865b90a00f93c7e6c",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-42",
+    "title": "Pale City Scenario 4: The Clockwork Menagerie, deployment map",
+    "purpose": "Column-width top-down map of the setup for Pale City 4: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Pale City Scenario 4: The Clockwork Menagerie (source lines 13557-13616)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 1 mandatory, 5 constrained and 11 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Clockwork Menagerie: the Setup Roll-off winner picks any battlefield edge and deploys within 6\"; three Clockwork Guardians start Awake beside the Workbenches or within 3\" of the centre (see 10.4, Pale City Scenario 4).",
+    "insert_after": "B13603",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-42.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13557-13616; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "5206bc79da602ef7dafa3aa28c035bc5d8284918a33b4595cc81a9057499a2e5",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-43",
+    "title": "Pale City Scenario 5: The Ice Wyrm's Hoard, deployment map",
+    "purpose": "Column-width top-down map of the setup for Pale City 5: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Pale City Scenario 5: The Ice Wyrm's Hoard (source lines 13617-13692)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 0 mandatory, 5 constrained and 8 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Ice Wyrm's Hoard: parties deploy within 6\" of opposite edges where the frozen tunnels enter a central lair about 12\"×12\", with the Ice Wyrm at its centre and the Hoard within 2\" of it (see 10.4, Pale City Scenario 5).",
+    "insert_after": "B13671",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-43.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13617-13692; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "18a874460be210e668109b3362bdf6eac567347a5826d704cd98449c0bd256f6",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-44",
+    "title": "Pale City Scenario 6: The Icebound Court, deployment map",
+    "purpose": "Column-width top-down map of the setup for Pale City 6: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Pale City Scenario 6: The Icebound Court (source lines 13693-13768)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 4 constrained and 8 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Icebound Court: parties deploy within 6\" of opposite short edges around a central throne chamber where the Frost Bailiff Magistrate begins on the Ice Throne with Ice Mephit Bodyguards within 2\" (see 10.4, Pale City Scenario 6).",
+    "insert_after": "B13745",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-44.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13693-13768; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "184c46253a8d6762cb67cfbfc7d5b4003d179d1d79b026f933636a694ef1a48a",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-45",
+    "title": "Sun-Drowned Scenario 1: The Oasis Raiders, deployment map",
+    "purpose": "Column-width top-down map of the setup for Sun-Drowned 1: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Sun-Drowned Scenario 1: The Oasis Raiders (source lines 13771-13837)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 2 mandatory, 4 constrained and 12 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Oasis Raiders: parties deploy within 6\" of opposite long edges around a central Oasis about 8\"×8\" with the Wellspring, the Raider Chieftain starting within 2\" of it (see 10.4, Sun-Drowned Scenario 1).",
+    "insert_after": "B13819",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-45.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13771-13837; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "1f13e2f451222e454456e695ddd4e60ae53eab9c1729ea41f37a85cad4c6fad7",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-46",
+    "title": "Sun-Drowned Scenario 2: The Cinder Lord's Lost Brazier, deployment map",
+    "purpose": "Column-width top-down map of the setup for Sun-Drowned 2: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Sun-Drowned Scenario 2: The Cinder Lord's Lost Brazier (source lines 13838-13902)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 4 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Cinder Lord's Lost Brazier: parties deploy on opposite short edges converging on a plaza whose 2\"×2\" Altar has three Elemental Locus pillars 4–6\" from it (see 10.4, Sun-Drowned Scenario 2).",
+    "insert_after": "B13884",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-46.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13838-13902; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "f40827603b2e3e2d15d08adb1b494fe70059af13f88dec2684d3d3a21af19406",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-47",
+    "title": "Sun-Drowned Scenario 3: Tomb of the Sunken Kings, deployment map",
+    "purpose": "Column-width top-down map of the setup for Sun-Drowned 3: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Sun-Drowned Scenario 3: Tomb of the Sunken Kings (source lines 13903-13970)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 1 mandatory, 7 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "Tomb of the Sunken Kings: parties deploy in opposite corner zones (8\"×8\" by the 10.1 default) breaching a tomb complex with a Grand Hall about 5\"×10\" and three Royal Sarcophagi in separate chambers (see 10.4, Sun-Drowned Scenario 3).",
+    "insert_after": "B13955",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-47.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13903-13970; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "f0d4cb16d23a191da963841efb70d0be54919f8e893748560541f7550b889415",
+    "ambiguity": "Tomb Herald (13948): the Herald starts 'guarding the central Sarcophagus', but the three Sarcophagi are placed in separate chambers and none is designated central; the Herald is not drawn."
+  },
+  {
+    "id": "FIG-48",
+    "title": "Sun-Drowned Scenario 4: The Sandwyrm's Lair, deployment map",
+    "purpose": "Column-width top-down map of the setup for Sun-Drowned 4: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Sun-Drowned Scenario 4: The Sandwyrm's Lair (source lines 13971-14032)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 0 mandatory, 3 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Sandwyrm's Lair: parties deploy within 6\" of opposite battlefield edges around a broad sand basin with a central Shifting Sands Zone where the burrowed Sandwyrm first appears (see 10.4, Sun-Drowned Scenario 4).",
+    "insert_after": "B14018",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-48.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 13971-14032; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "1ad2da5de36436a6d6b29f3d30ffa2208113e81245c3d36f0fb323081ba0fe8b",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-49",
+    "title": "Sun-Drowned Scenario 5: The Cursed Colossus of the Waste, deployment map",
+    "purpose": "Column-width top-down map of the setup for Sun-Drowned 5: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Sun-Drowned Scenario 5: The Cursed Colossus of the Waste (source lines 14033-14107)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 1 mandatory, 5 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Cursed Colossus of the Waste: parties deploy within 6\" of opposite battlefield edges around a large central Colossus of Blocking Terrain bearing the Glowing Rune and holding the Heartstone (see 10.4, Sun-Drowned Scenario 5).",
+    "insert_after": "B14089",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-49.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 14033-14107; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "e379c42923633d727c8a426e2dad4cb15362cfc88a843207f284ce7469406efc",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-50",
+    "title": "Sun-Drowned Scenario 6: The Cinder Lord's Obsidian Prison, deployment map",
+    "purpose": "Column-width top-down map of the setup for Sun-Drowned 6: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 Sun-Drowned Scenario 6: The Cinder Lord's Obsidian Prison (source lines 14108-14194)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 2 mandatory, 4 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Cinder Lord's Obsidian Prison: parties deploy within 6\" of opposite short edges around a central Obsidian Dais with three Glyphic Stones evenly arranged around it (see 10.4, Sun-Drowned Scenario 6).",
+    "insert_after": "B14168",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-50.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 14108-14194; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "6f3544a926834a8c934d7ecc0668eecb56b60251a322d9d082e4492d40513577",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-51",
+    "title": "The Mire Scenario 1: The Reliquary of Edrava Salttide, deployment map",
+    "purpose": "Column-width top-down map of the setup for The Mire 1: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 The Mire Scenario 1: The Reliquary of Edrava Salttide (source lines 14197-14267)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 3 mandatory, 4 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Reliquary of Edrava Salttide: parties deploy within 6\" of opposite short edges on the driest banks around a central Sunken Barrow whose flooded sanctum holds the Reliquary (see 10.4, The Mire Scenario 1).",
+    "insert_after": "B14254",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-51.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 14197-14267; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "e2452a1e4fd3ab91e50d065ce014a07ca77cae534e71aaa17fac5fde17593bdf",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-52",
+    "title": "The Mire Scenario 2: The Lizardfolk's Stolen Offerings, deployment map",
+    "purpose": "Column-width top-down map of the setup for The Mire 2: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 The Mire Scenario 2: The Lizardfolk's Stolen Offerings (source lines 14268-14342)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 0 mandatory, 7 constrained and 6 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Lizardfolk's Stolen Offerings: parties deploy within 6\" of opposite battlefield edges around a swamp encampment where three Offering Piles are placed alternately (see 10.4, The Mire Scenario 2).",
+    "insert_after": "B14325",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-52.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 14268-14342; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "451ffe1f664b245e775fc212e601d2b5878533c7481497d727a1a86969fc6f08",
+    "ambiguity": "Escape edge (14333): 'Escape Conditions: Required for the Sunstone Amulet and for any unbanked rewards from Offering Piles' names no battlefield edge or extraction zone, and 10.4's fallback to any edge is stated only for Secondary Objectives (10984). No exit is drawn; the owner must state the legal extraction edge."
+  },
+  {
+    "id": "FIG-53",
+    "title": "The Mire Scenario 3: The Mire Titan's Fen, deployment map",
+    "purpose": "Column-width top-down map of the setup for The Mire 3: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 The Mire Scenario 3: The Mire Titan's Fen (source lines 14343-14417)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 1 mandatory, 4 constrained and 9 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Mire Titan's Fen: parties deploy in opposite corner zones on the outer banks (8\"×8\" by the 10.1 default), around a central Bubbling Fen where the Mire Titan starts Awake (see 10.4, The Mire Scenario 3).",
+    "insert_after": "B14402",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-53.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 259.9
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 14343-14417; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "3579aad95148c9b3817ead00eaf9b20ad310c2206e33b631eab2a7a50ee0ffc9",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-54",
+    "title": "The Mire Scenario 4: The Blighted Heartwood, deployment map",
+    "purpose": "Column-width top-down map of the setup for The Mire 4: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 The Mire Scenario 4: The Blighted Heartwood (source lines 14418-14496)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 2 mandatory, 5 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Blighted Heartwood: parties deploy within 6\" of opposite short edges around a central Blighted Grove about 8\"×8\" of Thorny Vines with the Heartwood at its centre (see 10.4, The Mire Scenario 4).",
+    "insert_after": "B14477",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-54.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 14418-14496; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "fb187641fe2b7cf43466bd45dfb45e168b462a913069c63179fa87234fe6195e",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-55",
+    "title": "The Mire Scenario 5: Salttide's Reckoning, deployment map",
+    "purpose": "Column-width top-down map of the setup for The Mire 5: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 The Mire Scenario 5: Salttide's Reckoning (source lines 14497-14578)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 2 mandatory, 5 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "Salttide's Reckoning: parties deploy along the outer banks within 6\" of opposite long edges (6\" is the 10.1 default) around a central Ritual Island holding Edrava Salttide and three Cursed Effigies (see 10.4, The Mire Scenario 5).",
+    "insert_after": "B14554",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-55.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 14497-14578; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "200b3539b03c622f46bf717894a4aa71a2bc568f688901742540fd8b12b6d6a4",
+    "ambiguity": "Group 1 arrival (14552): the group 'enters from a water edge', but the scenario never says which battlefield edge is a water edge. The arrival edge is not drawn.; Escape edge (14568): 'Required only if a party is carrying the Salttide's Counting Stone' names no battlefield edge or extraction zone. No exit is drawn; the owner must state the legal extraction edge."
+  },
+  {
+    "id": "FIG-56",
+    "title": "The Mire Scenario 6: The Serpent's Sunken Hoard, deployment map",
+    "purpose": "Column-width top-down map of the setup for The Mire 6: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.",
+    "source_refs": [
+      "10.4 The Mire Scenario 6: The Serpent's Sunken Hoard (source lines 14579-14648)",
+      "10.1 Preparation Steps, step 11 (11072)"
+    ],
+    "geometry_spec": "36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). 2 mandatory, 4 constrained and 5 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed.",
+    "caption": "The Serpent's Sunken Hoard: parties deploy outside the Sinkhole area within 6\" of opposite short edges (6\" is the 10.1 default), around a central Deep Water Sinkhole Pool 10–12\" across holding three Hoard Chests (see 10.4, The Mire Scenario 6).",
+    "insert_after": "B14633",
+    "scope": "column",
+    "schematic": true,
+    "file": "figures/out/FIG-56.svg",
+    "size_pt": {
+      "width": 243,
+      "height": 249.5
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Each element's source lines lie inside lines 14579-14648; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "e787e007664000629173b4504bf94e03ad79505f3c149ca8d27dfbca923d2c10",
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
+  },
+  {
+    "id": "FIG-57",
+    "title": "10.1 Preparation Steps: procedural template",
+    "purpose": "Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default deployment zones and the step 7 terrain exclusion distances on a generic battlefield.",
+    "source_refs": [
+      "10.1 Preparation Steps, steps 1-12 (11062-11073)",
+      "2.6 Measurement (592)"
+    ],
+    "geometry_spec": "Left: the 12 Preparation Steps as numbered rows (steps 7 and 11 highlighted). Right: two 36\"x36\" boards at 3.3 pt per inch. Edge default: zones 6\" deep on opposite edges, exclusion = 3\" from an edge and 6\" from a zone (allowed region 12\"-24\" across, 3\"-33\" down). Corner default: 8\"x8\" corner zones diagonally opposite, exclusion with rounded 6\" corners.",
+    "caption": "Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default zones (6\" deep or 8\"×8\" corners) and the step 7 limits on major Blocking and Impassable Terrain (3\" from an edge, 6\" from a zone) (see 10.1).",
+    "insert_after": "B11062",
+    "scope": "full",
+    "schematic": true,
+    "file": "figures/out/FIG-57.svg",
+    "size_pt": {
+      "width": 504,
+      "height": 325.6
+    },
+    "generator": "figures/src/make_figures.py",
+    "semantic_check": "Step text compared with lines 11062-11073; 3\" and 6\" from step 7 (11068), 6\", 8\"x8\" and alternate placing from step 11 (11072); selfcheck asserts 6+6=12, 36-12=24, 8+6=14 and that the printed inch values appear in the cited lines.",
+    "status": "drawn 2026-10-06 pending independent review",
+    "audit_response": "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "398b547408db9b205c73bbb62b9eb3fff68fe1120c1fe7f40b193d9fb1d8b959",
+    "ambiguity": "None. Which edge pair or corner pair is used is chosen by the Setup Roll-off winner; the figure shows one example of each and says so."
   }
 ]

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="355pt" viewBox="0 0 504 355">
+<title>Key to the 10.4 deployment maps</title>
+<desc>One shared key for the 36 column-width deployment maps in 10.4: party zones, markers, Monster Group notation, terrain patterns, distance and edge symbols, map scale and the status convention for open positions.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<defs>
+<pattern id="p-cover-l" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#aaa" stroke-width="0.6" fill="none"/></pattern>
+<pattern id="p-diff-l" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.7" fill="#999"/><circle cx="3" cy="3" r="0.7" fill="#999"/></pattern>
+<pattern id="p-imp-l" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.6" height="2.6" fill="#fff"/><path d="M0.4 0V2.6" stroke="#aaa" stroke-width="0.8" fill="none"/></pattern>
+<pattern id="p-mon-l" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#999" stroke-width="0.9" fill="none"/></pattern>
+<pattern id="p-water" width="6" height="4" patternUnits="userSpaceOnUse"><rect width="6" height="4" fill="#fff"/><path d="M0 2.2Q1.5 0.4 3 2.2T6 2.2" stroke="#333" stroke-width="0.8" fill="none"/></pattern>
+<pattern id="p-water-l" width="6" height="4" patternUnits="userSpaceOnUse"><rect width="6" height="4" fill="#fff"/><path d="M0 2.2Q1.5 0.4 3 2.2T6 2.2" stroke="#aaa" stroke-width="0.8" fill="none"/></pattern>
+<pattern id="p-slip" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#333" stroke-width="0.9" fill="none"/></pattern>
+<pattern id="p-slip-l" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#aaa" stroke-width="0.9" fill="none"/></pattern>
+<clipPath id="bclip"><rect x="22.5" y="14" width="198" height="198"/></clipPath>
+<pattern id="p-dark" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#d9d9d9"/><path d="M0 4L4 0" stroke="#fff" stroke-width="0.9" fill="none"/></pattern>
+</defs>
+<text x="0" y="10" font-weight="700" font-family="'Source Sans 3'" font-size="10.5" fill="#000">Key to the deployment maps in 10.4</text>
+<text x="0" y="28" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Parties and zones</text>
+<rect x="0" y="45.6" width="30" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="0" y="45.6" width="3.2" height="14" fill="#000"/>
+<circle cx="18" cy="52.6" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="36" y="43.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A zone: black</text>
+<text x="36" y="54" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Heroes, solid edge</text>
+<text x="36" y="64.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">band</text>
+<rect x="0" y="80.8" width="30" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="0" y="80.8" width="3.2" height="14" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<circle cx="18" cy="87.8" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="18" cy="87.8" r="1.6" fill="#000"/>
+<text x="36" y="78.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B zone: dotted</text>
+<text x="36" y="89.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Heroes, open edge</text>
+<text x="36" y="99.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">band</text>
+<rect x="0" y="116" width="30" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="0" y="116" width="3.2" height="14" fill="#000"/>
+<line x1="1.6" y1="116" x2="1.6" y2="130" stroke="#fff" stroke-width="1" stroke-linecap="butt" stroke-dasharray="3 3"/>
+<circle cx="12" cy="123" r="3.9" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="23" cy="123" r="3.9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="23" cy="123" r="1.6" fill="#000"/>
+<text x="36" y="114" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Zone both parties</text>
+<text x="36" y="124.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">share (both Hero</text>
+<text x="36" y="134.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">symbols)</text>
+<text x="15" y="161.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">A  B</text>
+<text x="36" y="149.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Positions of Heroes</text>
+<text x="36" y="159.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">inside a zone are free;</text>
+<text x="36" y="170" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">two or three are drawn</text>
+<text x="127" y="28" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Markers and Monsters</text>
+<polygon points="142,42.2 147.2,47.4 142,52.6 136.8,47.4" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="139.4" y1="47.4" x2="144.6" y2="47.4" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="142" y1="44.8" x2="142" y2="50" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<text x="163" y="43.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Objective or carried</text>
+<text x="163" y="54" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">objective</text>
+<rect x="137.58" y="63.92" width="8.84" height="6.76" fill="#d9d9d9" stroke="#000" stroke-width="1"/>
+<line x1="137.58" y1="66.78" x2="146.42" y2="66.78" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<text x="163" y="68.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Treasure Chest</text>
+<rect x="137.84" y="78.14" width="8.32" height="8.32" fill="#c4c4c4" stroke="#000" stroke-width="1"/>
+<text x="142" y="85.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">!</text>
+<text x="163" y="83.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hazard marker</text>
+<rect x="138.1" y="93.4" width="7.8" height="7.8" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="142" cy="97.3" r="1.3" fill="#000"/>
+<text x="163" y="98.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Other marker or token</text>
+<polygon points="146.97,122.4 144.48,126.7 139.52,126.7 137.03,122.4 139.52,118.1 144.48,118.1" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<text x="163" y="113.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster Group: G1 is</text>
+<text x="163" y="123.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Group 1, R Resting, A</text>
+<text x="163" y="134.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Awake</text>
+<rect x="136.8" y="152.4" width="10.4" height="10.4" fill="url(#p-mon)" stroke="#000" stroke-width="1.4"/>
+<text x="163" y="148.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Large Monster (2"×2"),</text>
+<text x="163" y="159" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">drawn at footprint</text>
+<text x="163" y="169.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">scale</text>
+<text x="254" y="28" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Terrain</text>
+<rect x="256" y="36.5" width="26" height="12" fill="#4a4a4a" stroke="#000" stroke-width="0.9"/>
+<text x="290" y="43.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking</text>
+<rect x="256" y="51.5" width="26" height="12" fill="url(#p-imp)" stroke="#000" stroke-width="0.9"/>
+<text x="290" y="58.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Impassable</text>
+<rect x="256" y="66.5" width="26" height="12" fill="url(#p-cover)" stroke="#000" stroke-width="0.9"/>
+<text x="290" y="73.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Cover</text>
+<rect x="256" y="81.5" width="26" height="12" fill="url(#p-diff)" stroke="#000" stroke-width="0.9"/>
+<text x="290" y="88.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Difficult</text>
+<rect x="256" y="96.5" width="26" height="12" fill="url(#p-water)" stroke="#000" stroke-width="0.9"/>
+<text x="290" y="103.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Shallow or Deep Water</text>
+<rect x="256" y="111.5" width="26" height="12" fill="url(#p-slip)" stroke="#000" stroke-width="0.9"/>
+<text x="290" y="118.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Slippery</text>
+<rect x="256" y="136.6" width="26" height="12" fill="#a3a3a3" stroke="#000" stroke-width="0.9"/>
+<text x="290" y="133.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Impassable or</text>
+<text x="290" y="144" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking, decided per</text>
+<text x="290" y="154.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">piece (2.9.1)</text>
+<rect x="256" y="166.6" width="26" height="12" fill="none" stroke="#000" stroke-width="0.9"/>
+<text x="290" y="168.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Open feature: room,</text>
+<text x="290" y="179.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">clearing, path</text>
+<text x="381" y="28" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Distances, edges, status</text>
+<line x1="383" y1="52.6" x2="409" y2="52.6" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="383" y1="49.6" x2="383" y2="55.6" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="409" y1="49.6" x2="409" y2="55.6" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<text x="417" y="43.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Stated distance at</text>
+<text x="417" y="54" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">map scale; 'min'</text>
+<text x="417" y="64.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">means at least</text>
+<circle cx="396" cy="82.6" r="6.5" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="3 2.5"/>
+<circle cx="396" cy="82.6" r="1.6" fill="#000"/>
+<text x="417" y="78.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Ring: within the stated</text>
+<text x="417" y="89.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">distance</text>
+<rect x="385.25" y="102.88" width="21.49" height="10.89" fill="#fff"/>
+<text x="387.05" y="110.8" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">6–8"</text>
+<text x="417" y="103.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A range: any value</text>
+<text x="417" y="114" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">inside it is legal</text>
+<line x1="383" y1="139.2" x2="409" y2="139.2" stroke="#000" stroke-width="1.3" stroke-linecap="butt"/>
+<line x1="396" y1="126.2" x2="396" y2="131.2" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="396,138.2 392.6,131.2 399.4,131.2" fill="#000"/>
+<text x="417" y="128.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Exit or extraction</text>
+<text x="417" y="138.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">through that edge</text>
+<line x1="383" y1="169.2" x2="409" y2="169.2" stroke="#000" stroke-width="1.3" stroke-linecap="butt"/>
+<line x1="396" y1="168.2" x2="396" y2="163.2" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="396,156.2 399.4,163.2 392.6,163.2" fill="#000"/>
+<text x="417" y="153.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Arrival from off the</text>
+<text x="417" y="163.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">battlefield (R3 is</text>
+<text x="417" y="174" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Round 3)</text>
+<rect x="383" y="191.4" width="26" height="12" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<text x="417" y="188.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Grey dashed: one legal</text>
+<text x="417" y="198.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">arrangement; position</text>
+<text x="417" y="209.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">not fixed by the rules</text>
+<line x1="0" y1="220" x2="504" y2="220" stroke="#000" stroke-width="0.6" stroke-linecap="butt"/>
+<text x="0" y="229" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Orientation.</tspan><tspan font-weight="400"> North is drawn at the top. The Setup Roll-off winner designates the North edge before setup; North and South are the</tspan></text>
+<text x="0" y="239.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">short battlefield edges and East and West the long ones, even on a square battlefield (10.1).</text>
+<text x="0" y="255.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Scale.</tspan><tspan font-weight="400"> The battlefield, zones and stated distances are drawn to scale at 5.2 pt per inch, with a 6" scale bar; markers are enlarged, and</tspan></text>
+<text x="0" y="266.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Large and Huge Monsters are drawn at their 2"×2" and 3"×3" footprints. Distances are measured between closest points, except from a</text>
+<text x="0" y="277.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">centre or origin where the rule says so (2.6).</text>
+<text x="0" y="293" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Counts.</tspan><tspan font-weight="400"> Scattered terrain is drawn as a few representative pieces; the printed counts and the 10.6 scaling stay in the scenario text.</tspan></text>
+<text x="0" y="303.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Group numbers are the scenario's own. Hidden contents (face-down markers) are never drawn.</text>
+<text x="0" y="319.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Where a scenario is silent</tspan><tspan font-weight="400">, 10.1 step 11 applies: the Setup Roll-off winner chooses the edge or corner zone and the other party takes</tspan></text>
+<text x="0" y="330.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the opposite one; each zone extends 6" from its edge, a corner zone is 8"×8", and parties alternate placing Heroes, starting with the</text>
+<text x="0" y="341.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">party that lost the Roll-off.</text>
+</svg>

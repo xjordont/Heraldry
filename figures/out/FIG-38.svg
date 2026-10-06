@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="243pt" height="249.5pt" viewBox="0 0 243 249.5">
+<title>Undermarches Scenario 6: The Ritual of Shadow Binding, deployment map</title>
+<desc>Column-width top-down map of the setup for Undermarches 6: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<defs>
+<pattern id="p-cover-l" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#aaa" stroke-width="0.6" fill="none"/></pattern>
+<pattern id="p-diff-l" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.7" fill="#999"/><circle cx="3" cy="3" r="0.7" fill="#999"/></pattern>
+<pattern id="p-imp-l" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.6" height="2.6" fill="#fff"/><path d="M0.4 0V2.6" stroke="#aaa" stroke-width="0.8" fill="none"/></pattern>
+<pattern id="p-mon-l" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#999" stroke-width="0.9" fill="none"/></pattern>
+<pattern id="p-water" width="6" height="4" patternUnits="userSpaceOnUse"><rect width="6" height="4" fill="#fff"/><path d="M0 2.2Q1.5 0.4 3 2.2T6 2.2" stroke="#333" stroke-width="0.8" fill="none"/></pattern>
+<pattern id="p-water-l" width="6" height="4" patternUnits="userSpaceOnUse"><rect width="6" height="4" fill="#fff"/><path d="M0 2.2Q1.5 0.4 3 2.2T6 2.2" stroke="#aaa" stroke-width="0.8" fill="none"/></pattern>
+<pattern id="p-slip" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#333" stroke-width="0.9" fill="none"/></pattern>
+<pattern id="p-slip-l" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#aaa" stroke-width="0.9" fill="none"/></pattern>
+<clipPath id="bclip"><rect x="22.5" y="14" width="198" height="198"/></clipPath>
+<pattern id="p-dark" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#d9d9d9"/><path d="M0 4L4 0" stroke="#fff" stroke-width="0.9" fill="none"/></pattern>
+</defs>
+<rect x="27.9" y="14" width="187.2" height="187.2" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<rect x="27.9" y="14" width="187.2" height="31.2" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="27.9" y="14" width="187.2" height="3.2" fill="#000"/>
+<line x1="84.06" y1="14" x2="84.06" y2="45.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="87.06" y1="14" x2="81.06" y2="14" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="87.06" y1="45.2" x2="81.06" y2="45.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="27.9" y="170" width="187.2" height="31.2" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="27.9" y="198" width="187.2" height="3.2" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<line x1="84.06" y1="170" x2="84.06" y2="201.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="87.06" y1="170" x2="81.06" y2="170" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="87.06" y1="201.2" x2="81.06" y2="201.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="87.7" y="73.8" width="67.6" height="67.6" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="43.5" y="92" width="36.4" height="31.2" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="163.1" y="92" width="36.4" height="31.2" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="79.9" y="103.7" width="7.8" height="7.8" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="155.3" y="103.7" width="7.8" height="7.8" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="117.6" y="45.2" width="7.8" height="28.6" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<circle cx="121.5" cy="107.6" r="10.4" fill="none" stroke="#000" stroke-width="1.4"/>
+<rect x="64.3" y="76.4" width="15.6" height="15.6" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="163.1" y="123.2" width="15.6" height="15.6" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<circle cx="121.5" cy="107.6" r="20.8" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="3 2.5"/>
+<circle cx="121.5" cy="107.6" r="26" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="3 2.5"/>
+<rect x="117.6" y="85.5" width="7.8" height="7.8" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="121.5" cy="89.4" r="1.3" fill="#000"/>
+<rect x="133.36" y="112.8" width="7.8" height="7.8" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="137.26" cy="116.7" r="1.3" fill="#000"/>
+<rect x="101.84" y="112.8" width="7.8" height="7.8" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="105.74" cy="116.7" r="1.3" fill="#000"/>
+<rect x="54.68" y="104.22" width="8.84" height="6.76" fill="#d9d9d9" stroke="#000" stroke-width="1"/>
+<line x1="54.68" y1="107.08" x2="63.52" y2="107.08" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="179.48" y="104.22" width="8.84" height="6.76" fill="#d9d9d9" stroke="#000" stroke-width="1"/>
+<line x1="179.48" y1="107.08" x2="188.32" y2="107.08" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<polygon points="126.47,107.6 123.98,111.9 119.02,111.9 116.53,107.6 119.02,103.3 123.98,103.3" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="107.23,88.88 104.74,93.18 99.78,93.18 97.29,88.88 99.78,84.58 104.74,84.58" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="126.47,58.2 123.98,62.5 119.02,62.5 116.53,58.2 119.02,53.9 123.98,53.9" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<circle cx="46.62" cy="29.6" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="162.68" cy="29.6" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="196.38" cy="29.6" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="46.62" cy="185.6" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="46.62" cy="185.6" r="1.6" fill="#000"/>
+<circle cx="162.68" cy="185.6" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="162.68" cy="185.6" r="1.6" fill="#000"/>
+<circle cx="196.38" cy="185.6" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="196.38" cy="185.6" r="1.6" fill="#000"/>
+<rect x="129.2" y="88.7" width="30.44" height="11.2" fill="#fff"/>
+<text x="130.8" y="97.1" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Cavern</text>
+<rect x="88.56" y="24" width="12.16" height="11.2" fill="#fff"/>
+<text x="90.16" y="32.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
+<rect x="88.56" y="180" width="12.16" height="11.2" fill="#fff"/>
+<text x="90.16" y="188.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
+<rect x="137.8" y="53.9" width="30.2" height="11.2" fill="#fff"/>
+<text x="139.4" y="62.3" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Tunnel</text>
+<line x1="121.5" y1="118.5" x2="121.5" y2="129" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="103.49" y="129" width="36.01" height="11.2" fill="#fff"/>
+<text x="105.09" y="137.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Circle 4"</text>
+<rect x="49.34" y="63.2" width="45.52" height="11.2" fill="#fff"/>
+<text x="50.94" y="71.6" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Stalagmite</text>
+<rect x="145.13" y="75.33" width="12.16" height="11.2" fill="#fff"/>
+<text x="146.73" y="83.73" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">2"</text>
+<rect x="110.82" y="70.32" width="12.16" height="11.2" fill="#fff"/>
+<text x="112.42" y="78.72" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">3"</text>
+<line x1="115.8" y1="89.4" x2="96.3" y2="89.4" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="78.61" y="83.8" width="17.69" height="11.2" fill="#fff"/>
+<text x="80.21" y="92.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Orb</text>
+<line x1="125.43" y1="111.53" x2="139.04" y2="125.14" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="139.04" y="125.14" width="33.32" height="11.2" fill="#fff"/>
+<text x="140.64" y="133.54" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Caller·A</text>
+<rect x="91.78" y="95.94" width="20.97" height="11.2" fill="#fff"/>
+<text x="93.38" y="104.34" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">G1·A</text>
+<rect x="110.86" y="39.94" width="21.27" height="11.2" fill="#fff"/>
+<text x="112.46" y="48.34" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">G2·R</text>
+<text x="27.9" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Undermarches 6</text>
+<text x="98.02" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">·  36"×36"</text>
+<polygon points="210.1,3 206.9,9.5 213.3,9.5" fill="#000"/>
+<text x="204.1" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">N</text>
+<text x="23.9" y="111" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">W</text>
+<text x="219.1" y="111" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">E</text>
+<line x1="27.9" y1="211.2" x2="59.1" y2="211.2" stroke="#000" stroke-width="1.4" stroke-linecap="butt"/>
+<line x1="27.9" y1="208.2" x2="27.9" y2="214.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="59.1" y1="208.2" x2="59.1" y2="214.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="43.5" y1="209.2" x2="43.5" y2="213.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<text x="63.1" y="214.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">6" scale</text>
+<text x="104.38" y="214.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Schematic</text>
+<text x="215.1" y="214.2" font-family="'Source Sans 3'" font-size="9" fill="#000"></text>
+<text x="219.1" y="210.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">S</text>
+<text x="6" y="226.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Grey dashed = one legal arrangement; position not fixed by</text>
+<text x="6" y="237.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the rules</text>
+</svg>

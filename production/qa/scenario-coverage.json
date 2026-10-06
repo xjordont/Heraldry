@@ -1,0 +1,1514 @@
+{
+  "generated": "2026-10-06",
+  "source": "source/Heraldry_RC485.md",
+  "scenarios": [
+    {
+      "key": "Greenmark 1",
+      "climate": "Greenmark",
+      "climate_number": 1,
+      "number": 1,
+      "title": "Hunt the Wild Beast",
+      "source_lines": [
+        11974,
+        12041
+      ],
+      "map_figure": "FIG-21",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B12025",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the long edge; alternate placing)",
+        "10.6.5 / 10.6.6 (Monster Group count and placement order)"
+      ],
+      "elements": {
+        "mandatory": 3,
+        "constrained": 6,
+        "illustrative": 5
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Pristine Boar Pelt token",
+          "why": "placed where the Boar falls during play",
+          "lines": [
+            12029
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Greenmark 2",
+      "climate": "Greenmark",
+      "climate_number": 1,
+      "number": 2,
+      "title": "The Whispering Grove",
+      "source_lines": [
+        12042,
+        12111
+      ],
+      "map_figure": "FIG-22",
+      "detail_figures": [
+        "FIG-13",
+        "FIG-16"
+      ],
+      "insert_after": "B12096",
+      "setup_rules": [
+        "10.1 step 11 (alternate placing of Heroes; winner chooses the corner)"
+      ],
+      "elements": {
+        "mandatory": 0,
+        "constrained": 11,
+        "illustrative": 3
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Antlered Warden",
+          "why": "not placed at setup; placed adjacent to the first Standing Stone a Hero Interacts with (see FIG-16)",
+          "lines": [
+            12088
+          ]
+        }
+      ],
+      "ambiguities": [
+        "'outer Standing Stone' (Group 1): the three Stones form a triangle, so no Stone is more 'outer' than another; the map shows Group 1 within 3\" of one Stone and any of the three is legal."
+      ],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Greenmark 3",
+      "climate": "Greenmark",
+      "climate_number": 1,
+      "number": 3,
+      "title": "The Bandit's Toll",
+      "source_lines": [
+        12112,
+        12188
+      ],
+      "map_figure": "FIG-23",
+      "detail_figures": [
+        "FIG-14"
+      ],
+      "insert_after": "B12170",
+      "setup_rules": [
+        "10.1 step 11 (alternate placing of Heroes, starting with the Setup Roll-off loser)"
+      ],
+      "elements": {
+        "mandatory": 2,
+        "constrained": 10,
+        "illustrative": 3
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [
+        "Wagon 2 and the Toll Captain: the source places Wagon 2 'adjacent to the central Barricade' and the Captain 'behind the central Barricade' without saying which side of the Barricade is 'behind'; the map draws Wagon 2 on one side only as an illustration.",
+        "The Barricade is 2–3\" long but the Trail is 3–4\" wide; the text does not say how a Barricade shorter than the Trail spans it ('across the Trail')."
+      ],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "Greenmark 4",
+      "climate": "Greenmark",
+      "climate_number": 1,
+      "number": 4,
+      "title": "The Spider's Silk Route",
+      "source_lines": [
+        12189,
+        12259
+      ],
+      "map_figure": "FIG-24",
+      "detail_figures": [
+        "FIG-14"
+      ],
+      "insert_after": "B12238",
+      "setup_rules": [
+        "10.6.5 (Monster Group placement pattern)"
+      ],
+      "elements": {
+        "mandatory": 3,
+        "constrained": 12,
+        "illustrative": 7
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Greenmark 5",
+      "climate": "Greenmark",
+      "climate_number": 1,
+      "number": 5,
+      "title": "The Ambushed Emissary",
+      "source_lines": [
+        12260,
+        12337
+      ],
+      "map_figure": "FIG-25",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B12314",
+      "setup_rules": [
+        "10.1 step 11 (alternate placing is stated; the corner choice follows the Setup Roll-off default)"
+      ],
+      "elements": {
+        "mandatory": 1,
+        "constrained": 12,
+        "illustrative": 3
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Forest-Road Reeve and the Emissary",
+          "why": "not placed until the Camp is found (more than half the Clues deciphered)",
+          "lines": [
+            12306,
+            12318
+          ]
+        },
+        {
+          "what": "Diplomatic Satchel",
+          "why": "held by the Emissary; not placed on the battlefield until the Emissary is placed",
+          "lines": [
+            12282
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "Greenmark 6",
+      "climate": "Greenmark",
+      "climate_number": 1,
+      "number": 6,
+      "title": "Ritual of the Old Growth",
+      "source_lines": [
+        12338,
+        12424
+      ],
+      "map_figure": "FIG-26",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B12398",
+      "setup_rules": [
+        "10.1 step 11 (alternate placing of Heroes)"
+      ],
+      "elements": {
+        "mandatory": 4,
+        "constrained": 8,
+        "illustrative": 4
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Blighted Intruders group",
+          "why": "appears during play within 3\" of the Mother Tree",
+          "lines": [
+            12412
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Ashlands 1",
+      "climate": "Ashlands",
+      "climate_number": 2,
+      "number": 1,
+      "title": "The Fallen Observatory",
+      "source_lines": [
+        12427,
+        12494
+      ],
+      "map_figure": "FIG-27",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B12481",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the long edge)"
+      ],
+      "elements": {
+        "mandatory": 4,
+        "constrained": 9,
+        "illustrative": 10
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Ashlands 2",
+      "climate": "Ashlands",
+      "climate_number": 2,
+      "number": 2,
+      "title": "The Guardian's Test",
+      "source_lines": [
+        12495,
+        12568
+      ],
+      "map_figure": "FIG-28",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B12546",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the short edge)"
+      ],
+      "elements": {
+        "mandatory": 2,
+        "constrained": 7,
+        "illustrative": 7
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Guardian Construct",
+          "why": "not placed at setup (see Awaken Protocol)",
+          "lines": [
+            12539
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Ashlands 3",
+      "climate": "Ashlands",
+      "climate_number": 2,
+      "number": 3,
+      "title": "The Shifting Sands of Time",
+      "source_lines": [
+        12569,
+        12623
+      ],
+      "map_figure": "FIG-29",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B12604",
+      "setup_rules": [
+        "10.1 step 11 (alternate placing is stated; the corner choice follows the Setup Roll-off default)"
+      ],
+      "elements": {
+        "mandatory": 0,
+        "constrained": 12,
+        "illustrative": 6
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Treasure Chests",
+          "why": "none start on the battlefield; they appear during play",
+          "lines": [
+            12591
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Ashlands 4",
+      "climate": "Ashlands",
+      "climate_number": 2,
+      "number": 4,
+      "title": "The Sealed Archive",
+      "source_lines": [
+        12624,
+        12703
+      ],
+      "map_figure": "FIG-30",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B12680",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the short edge)"
+      ],
+      "elements": {
+        "mandatory": 3,
+        "constrained": 11,
+        "illustrative": 10
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Tablet Cache values (Lesser/Greater)",
+          "why": "face-down hidden information; the map shows identical markers only",
+          "lines": [
+            12649,
+            12686
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Ashlands 5",
+      "climate": "Ashlands",
+      "climate_number": 2,
+      "number": 5,
+      "title": "The Reliquary of Broken Saints",
+      "source_lines": [
+        12704,
+        12777
+      ],
+      "map_figure": "FIG-31",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B12759",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the long edge)"
+      ],
+      "elements": {
+        "mandatory": 3,
+        "constrained": 7,
+        "illustrative": 10
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [
+        "'left side aisle' and 'right side aisle' (Groups 1 and 2): the source does not say from which viewpoint left and right are taken, and the nave's orientation is not fixed; the map shows one aisle each without asserting which is 'left'."
+      ],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Ashlands 6",
+      "climate": "Ashlands",
+      "climate_number": 2,
+      "number": 6,
+      "title": "The Iron-Vein Vault",
+      "source_lines": [
+        12778,
+        12876
+      ],
+      "map_figure": "FIG-32",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B12846",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the long edge)",
+        "10.6.9 (printed number of Binding Points is 3; scaled in solo/co-op only)"
+      ],
+      "elements": {
+        "mandatory": 3,
+        "constrained": 11,
+        "illustrative": 7
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Vault Presence",
+          "why": "placed adjacent to the iron door only when every Binding Point is Broken",
+          "lines": [
+            12838
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Undermarches 1",
+      "climate": "Undermarches",
+      "climate_number": 3,
+      "number": 1,
+      "title": "The Crystal Harvest",
+      "source_lines": [
+        12879,
+        12944
+      ],
+      "map_figure": "FIG-33",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B12929",
+      "setup_rules": [
+        "10.1 step 11 (alternate placing is stated; the corner choice follows the Setup Roll-off default)"
+      ],
+      "elements": {
+        "mandatory": 1,
+        "constrained": 8,
+        "illustrative": 13
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Group 3",
+          "why": "arrives at the start of Round 3 from a random battlefield edge 'not adjacent to either deployment corner'; with opposite corner zones every edge is adjacent to one of them, so no edge qualifies (see ambiguities)",
+          "lines": [
+            12927
+          ]
+        }
+      ],
+      "ambiguities": [
+        "Group 3 arrival edge (12927): 'a random battlefield edge that is not adjacent to either deployment corner' cannot be satisfied when the parties deploy in opposite corner zones, because each of the four edges touches one of those corners. No arrival edge is drawn; the owner must say which edges qualify."
+      ],
+      "status": "blocked-by-ambiguity",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Undermarches 2",
+      "climate": "Undermarches",
+      "climate_number": 3,
+      "number": 2,
+      "title": "The Chasm Crossing",
+      "source_lines": [
+        12945,
+        13014
+      ],
+      "map_figure": "FIG-34",
+      "detail_figures": [
+        "FIG-14",
+        "FIG-15"
+      ],
+      "insert_after": "B12995",
+      "setup_rules": [
+        "10.1 step 11 (alternate placing is stated)"
+      ],
+      "elements": {
+        "mandatory": 2,
+        "constrained": 2,
+        "illustrative": 9
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Chasm Stalkers",
+          "why": "placed at a numbered wall marker only when a Hero would have LOS to it or the Stalker attacks",
+          "lines": [
+            12991
+          ]
+        }
+      ],
+      "ambiguities": [
+        "The 'start' short edge (12997): the scenario names the 'start' side but not which short edge it is or who chooses it; the 10.1 step 11 default assigns different edges to the parties and so cannot be applied here. Drawn at the top as an illustration."
+      ],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Undermarches 3",
+      "climate": "Undermarches",
+      "climate_number": 3,
+      "number": 3,
+      "title": "The Quake",
+      "source_lines": [
+        13015,
+        13079
+      ],
+      "map_figure": "FIG-35",
+      "detail_figures": [
+        "FIG-14"
+      ],
+      "insert_after": "B13062",
+      "setup_rules": [
+        "10.1 step 11 (alternate placing is stated)"
+      ],
+      "elements": {
+        "mandatory": 1,
+        "constrained": 0,
+        "illustrative": 16
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Rock Elemental Guardian",
+          "why": "not placed at setup; erupts from a wall section at the end of Round 2",
+          "lines": [
+            13055
+          ]
+        },
+        {
+          "what": "Mining tunnel network",
+          "why": "layout not fixed by the source",
+          "lines": [
+            13035
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "Undermarches 4",
+      "climate": "Undermarches",
+      "climate_number": 3,
+      "number": 4,
+      "title": "The Undermarches Outpost Raid",
+      "source_lines": [
+        13080,
+        13186
+      ],
+      "map_figure": "FIG-36",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13166",
+      "setup_rules": [
+        "10.1 step 11 (alternate placing is stated; the corner choice follows the Setup Roll-off default)"
+      ],
+      "elements": {
+        "mandatory": 1,
+        "constrained": 10,
+        "illustrative": 9
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [
+        "Group 2 (13164): 'Place using normal alternating scenario placement' does not say who places the group or what limits apply; 10.1 step 7 and step 9 give an alternating rule only for terrain and weather markers. Group 2 is drawn as an unfixed (open) marker."
+      ],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Undermarches 5",
+      "climate": "Undermarches",
+      "climate_number": 3,
+      "number": 5,
+      "title": "The Shadowed Under Passage",
+      "source_lines": [
+        13187,
+        13259
+      ],
+      "map_figure": "FIG-37",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13239",
+      "setup_rules": [
+        "10.1 step 11 (the Setup Roll-off default applies to who takes which edge only where the scenario is silent)"
+      ],
+      "elements": {
+        "mandatory": 3,
+        "constrained": 10,
+        "illustrative": 5
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [
+        "Party A's edge (13214, 13239): Party A deploys at the end 'farther from the Heart' while the Heart lies at least 12\" from Party A's edge, so each rule is defined by the other; if the Heart is equidistant from both ends neither end is 'farther'. The map puts Party A at the top with the Heart in the lower half, which satisfies both.",
+        "Under Passage length (13212): the passage is 'about 18\" long' yet 'runs from one short battlefield edge to the other' of a 36\"×36\" battlefield; both cannot hold for a straight run. The map draws a winding passage between the two short edges and prints no length."
+      ],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "Undermarches 6",
+      "climate": "Undermarches",
+      "climate_number": 3,
+      "number": 6,
+      "title": "The Ritual of Shadow Binding",
+      "source_lines": [
+        13260,
+        13363
+      ],
+      "map_figure": "FIG-38",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13318",
+      "setup_rules": [
+        "10.1 step 11 (the Setup Roll-off default applies to who takes which edge only where the scenario is silent)"
+      ],
+      "elements": {
+        "mandatory": 2,
+        "constrained": 9,
+        "illustrative": 8
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Pale City 1",
+      "climate": "Pale City",
+      "climate_number": 4,
+      "number": 1,
+      "title": "Plunder of the Frozen Ruins",
+      "source_lines": [
+        13366,
+        13417
+      ],
+      "map_figure": "FIG-39",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13404",
+      "setup_rules": [
+        "10.1 step 11 (alternate placing; corners chosen by the Setup Roll-off winner)",
+        "10.6.4 (Final Random Monster Groups: two are drawn)"
+      ],
+      "elements": {
+        "mandatory": 1,
+        "constrained": 9,
+        "illustrative": 6
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Chest contents markers",
+          "why": "face-down hidden information; Chests are shown without contents",
+          "lines": [
+            13388
+          ]
+        },
+        {
+          "what": "Attention Group",
+          "why": "generated during play within 6\" of the looting Hero",
+          "lines": [
+            13410
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Pale City 2",
+      "climate": "Pale City",
+      "climate_number": 4,
+      "number": 2,
+      "title": "The Alchemist's Frozen Laboratory",
+      "source_lines": [
+        13418,
+        13487
+      ],
+      "map_figure": "FIG-40",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13470",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the short edge)"
+      ],
+      "elements": {
+        "mandatory": 3,
+        "constrained": 8,
+        "illustrative": 6
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "Pale City 3",
+      "climate": "Pale City",
+      "climate_number": 4,
+      "number": 3,
+      "title": "The Haunted Mausoleum",
+      "source_lines": [
+        13488,
+        13556
+      ],
+      "map_figure": "FIG-41",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13541",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the short edge)"
+      ],
+      "elements": {
+        "mandatory": 3,
+        "constrained": 1,
+        "illustrative": 13
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Pale Court Magistrate and Restless Spirits",
+          "why": "placed in the Grand Crypt when a Hero enters it or a Sarcophagus opens; Spirits appear when Sarcophagi are opened",
+          "lines": [
+            13533,
+            13535
+          ]
+        },
+        {
+          "what": "Heirloom / Empty markers",
+          "why": "face-down hidden information beneath each Sarcophagus",
+          "lines": [
+            13510
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Pale City 4",
+      "climate": "Pale City",
+      "climate_number": 4,
+      "number": 4,
+      "title": "The Clockwork Menagerie",
+      "source_lines": [
+        13557,
+        13616
+      ],
+      "map_figure": "FIG-42",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13603",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the edge; the other party takes the opposite one)"
+      ],
+      "elements": {
+        "mandatory": 1,
+        "constrained": 5,
+        "illustrative": 11
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "Pale City 5",
+      "climate": "Pale City",
+      "climate_number": 4,
+      "number": 5,
+      "title": "The Ice Wyrm's Hoard",
+      "source_lines": [
+        13617,
+        13692
+      ],
+      "map_figure": "FIG-43",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13671",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the edge; the other party takes the opposite one)"
+      ],
+      "elements": {
+        "mandatory": 0,
+        "constrained": 5,
+        "illustrative": 8
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "Pale City 6",
+      "climate": "Pale City",
+      "climate_number": 4,
+      "number": 6,
+      "title": "The Icebound Court",
+      "source_lines": [
+        13693,
+        13768
+      ],
+      "map_figure": "FIG-44",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13745",
+      "setup_rules": [
+        "10.1 step 11 (the Setup Roll-off default applies to who takes which edge only where the scenario is silent)"
+      ],
+      "elements": {
+        "mandatory": 3,
+        "constrained": 4,
+        "illustrative": 8
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "Sun-Drowned 1",
+      "climate": "Sun-Drowned",
+      "climate_number": 5,
+      "number": 1,
+      "title": "The Oasis Raiders",
+      "source_lines": [
+        13771,
+        13837
+      ],
+      "map_figure": "FIG-45",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13819",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the long edge)"
+      ],
+      "elements": {
+        "mandatory": 2,
+        "constrained": 4,
+        "illustrative": 12
+      },
+      "undrawn_conditional": [],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Sun-Drowned 2",
+      "climate": "Sun-Drowned",
+      "climate_number": 5,
+      "number": 2,
+      "title": "The Cinder Lord's Lost Brazier",
+      "source_lines": [
+        13838,
+        13902
+      ],
+      "map_figure": "FIG-46",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13884",
+      "setup_rules": [
+        "10.1 step 11 (6\" depth applies because the scenario states none; the Setup Roll-off winner chooses the short edge)"
+      ],
+      "elements": {
+        "mandatory": 3,
+        "constrained": 4,
+        "illustrative": 7
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Flame Guardians and the Lost Brazier",
+          "why": "spawned or revealed by successful Locus searches during play",
+          "lines": [
+            13877,
+            13888
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Sun-Drowned 3",
+      "climate": "Sun-Drowned",
+      "climate_number": 5,
+      "number": 3,
+      "title": "Tomb of the Sunken Kings",
+      "source_lines": [
+        13903,
+        13970
+      ],
+      "map_figure": "FIG-47",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B13955",
+      "setup_rules": [
+        "10.1 step 11 (8\"×8\" corner zones and alternate placing apply because the scenario states neither)"
+      ],
+      "elements": {
+        "mandatory": 1,
+        "constrained": 7,
+        "illustrative": 10
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Tomb Herald",
+          "why": "'guarding the central Sarcophagus': no Sarcophagus is designated central (see ambiguities)",
+          "lines": [
+            13948
+          ]
+        },
+        {
+          "what": "Pressure Plate markers",
+          "why": "number is rolled (1d3) and placed alternately before Hero deployment",
+          "lines": [
+            13959
+          ]
+        }
+      ],
+      "ambiguities": [
+        "Tomb Herald (13948): the Herald starts 'guarding the central Sarcophagus', but the three Sarcophagi are placed in separate chambers and none is designated central; the Herald is not drawn."
+      ],
+      "status": "blocked-by-ambiguity",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "Sun-Drowned 4",
+      "climate": "Sun-Drowned",
+      "climate_number": 5,
+      "number": 4,
+      "title": "The Sandwyrm's Lair",
+      "source_lines": [
+        13971,
+        14032
+      ],
+      "map_figure": "FIG-48",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B14018",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the edge; the other party takes the opposite one)"
+      ],
+      "elements": {
+        "mandatory": 0,
+        "constrained": 3,
+        "illustrative": 7
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Great Sandwyrm",
+          "why": "starts burrowed and off-battlefield; placed within the Shifting Sands Zone on its first activation",
+          "lines": [
+            14007,
+            14011
+          ]
+        },
+        {
+          "what": "Hoard of the Wastes",
+          "why": "placed where the Sandwyrm falls",
+          "lines": [
+            13993
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "Sun-Drowned 5",
+      "climate": "Sun-Drowned",
+      "climate_number": 5,
+      "number": 5,
+      "title": "The Cursed Colossus of the Waste",
+      "source_lines": [
+        14033,
+        14107
+      ],
+      "map_figure": "FIG-49",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B14089",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the edge; the other party takes the opposite one)"
+      ],
+      "elements": {
+        "mandatory": 1,
+        "constrained": 5,
+        "illustrative": 7
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Cursed Colossus (Boss)",
+          "why": "inert and treated as terrain under Awaken Protocol; it is the central feature drawn",
+          "lines": [
+            14082
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "Sun-Drowned 6",
+      "climate": "Sun-Drowned",
+      "climate_number": 5,
+      "number": 6,
+      "title": "The Cinder Lord's Obsidian Prison",
+      "source_lines": [
+        14108,
+        14194
+      ],
+      "map_figure": "FIG-50",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B14168",
+      "setup_rules": [
+        "10.1 step 11 (the Setup Roll-off default applies to who takes which edge only where the scenario is silent)"
+      ],
+      "elements": {
+        "mandatory": 2,
+        "constrained": 4,
+        "illustrative": 10
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Bound Cinder Lord",
+          "why": "not placed at setup; appears only if the prison is broken",
+          "lines": [
+            14159
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "The Mire 1",
+      "climate": "The Mire",
+      "climate_number": 6,
+      "number": 1,
+      "title": "The Reliquary of Edrava Salttide",
+      "source_lines": [
+        14197,
+        14267
+      ],
+      "map_figure": "FIG-51",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B14254",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the short edge; 'driest banks' is not located by the source)"
+      ],
+      "elements": {
+        "mandatory": 3,
+        "constrained": 4,
+        "illustrative": 10
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Salttide's Shade",
+          "why": "placed adjacent to the Reliquary when a Hero first attempts to take it",
+          "lines": [
+            14243
+          ]
+        },
+        {
+          "what": "second Giant Leech Swarm",
+          "why": "present only if the 1d2 roll is 2; placed Resting in adjacent floodwater outside the Sanctum",
+          "lines": [
+            14245
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "The Mire 2",
+      "climate": "The Mire",
+      "climate_number": 6,
+      "number": 2,
+      "title": "The Lizardfolk's Stolen Offerings",
+      "source_lines": [
+        14268,
+        14342
+      ],
+      "map_figure": "FIG-52",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B14325",
+      "setup_rules": [
+        "10.1 step 11 (Setup Roll-off winner chooses the edge; the other party takes the opposite one)"
+      ],
+      "elements": {
+        "mandatory": 0,
+        "constrained": 7,
+        "illustrative": 6
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Group 1 (Monsters)",
+          "why": "not on the battlefield until the encampment is attacked; only its numbered reeds marker is placed",
+          "lines": [
+            14323
+          ]
+        },
+        {
+          "what": "Escape edge",
+          "why": "Escape Conditions require escape but name no edge or zone (see ambiguities)",
+          "lines": [
+            14333
+          ]
+        },
+        {
+          "what": "Offering Pile contents",
+          "why": "face-down hidden information",
+          "lines": [
+            14295
+          ]
+        }
+      ],
+      "ambiguities": [
+        "Escape edge (14333): 'Escape Conditions: Required for the Sunstone Amulet and for any unbanked rewards from Offering Piles' names no battlefield edge or extraction zone, and 10.4's fallback to any edge is stated only for Secondary Objectives (10984). No exit is drawn; the owner must state the legal extraction edge."
+      ],
+      "status": "blocked-by-ambiguity",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "The Mire 3",
+      "climate": "The Mire",
+      "climate_number": 6,
+      "number": 3,
+      "title": "The Mire Titan's Fen",
+      "source_lines": [
+        14343,
+        14417
+      ],
+      "map_figure": "FIG-53",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B14402",
+      "setup_rules": [
+        "10.1 step 11 (8\"×8\" corner zones and alternate placing apply because the scenario states neither)"
+      ],
+      "elements": {
+        "mandatory": 1,
+        "constrained": 4,
+        "illustrative": 9
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Group 1 (Monsters)",
+          "why": "not on the battlefield until a Hero enters or uses Interact within 6\" of its numbered marker",
+          "lines": [
+            14399
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 259.9
+      }
+    },
+    {
+      "key": "The Mire 4",
+      "climate": "The Mire",
+      "climate_number": 6,
+      "number": 4,
+      "title": "The Blighted Heartwood",
+      "source_lines": [
+        14418,
+        14496
+      ],
+      "map_figure": "FIG-54",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B14477",
+      "setup_rules": [
+        "10.1 step 11 (the Setup Roll-off default applies to who takes which edge only where the scenario is silent)"
+      ],
+      "elements": {
+        "mandatory": 2,
+        "constrained": 5,
+        "illustrative": 7
+      },
+      "undrawn_conditional": [
+        {
+          "what": "second Thornling Sprout group",
+          "why": "not on the battlefield until a Hero enters or uses Interact within 6\" of its numbered vine marker",
+          "lines": [
+            14469
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "The Mire 5",
+      "climate": "The Mire",
+      "climate_number": 6,
+      "number": 5,
+      "title": "Salttide's Reckoning",
+      "source_lines": [
+        14497,
+        14578
+      ],
+      "map_figure": "FIG-55",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B14554",
+      "setup_rules": [
+        "10.1 step 11 (6\" depth applies because the scenario states none; the Setup Roll-off winner chooses the long edge)"
+      ],
+      "elements": {
+        "mandatory": 2,
+        "constrained": 5,
+        "illustrative": 7
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Group 1 (Monsters)",
+          "why": "begins off-battlefield and enters 'from a water edge' at the start of Round 3; no battlefield edge is defined as a water edge (see ambiguities)",
+          "lines": [
+            14552
+          ]
+        },
+        {
+          "what": "Escape edge",
+          "why": "Escape Conditions name no edge or zone (see ambiguities)",
+          "lines": [
+            14568
+          ]
+        }
+      ],
+      "ambiguities": [
+        "Group 1 arrival (14552): the group 'enters from a water edge', but the scenario never says which battlefield edge is a water edge. The arrival edge is not drawn.",
+        "Escape edge (14568): 'Required only if a party is carrying the Salttide's Counting Stone' names no battlefield edge or extraction zone. No exit is drawn; the owner must state the legal extraction edge."
+      ],
+      "status": "blocked-by-ambiguity",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    },
+    {
+      "key": "The Mire 6",
+      "climate": "The Mire",
+      "climate_number": 6,
+      "number": 6,
+      "title": "The Serpent's Sunken Hoard",
+      "source_lines": [
+        14579,
+        14648
+      ],
+      "map_figure": "FIG-56",
+      "detail_figures": [
+        "FIG-13"
+      ],
+      "insert_after": "B14633",
+      "setup_rules": [
+        "10.1 step 11 (6\" depth applies because the scenario states none; the Setup Roll-off winner chooses the short edge)"
+      ],
+      "elements": {
+        "mandatory": 2,
+        "constrained": 4,
+        "illustrative": 5
+      },
+      "undrawn_conditional": [
+        {
+          "what": "Great Swamp Serpent",
+          "why": "not placed at setup; placed in the Sinkhole Pool when its Lurker in the Deep rule triggers",
+          "lines": [
+            14626
+          ]
+        }
+      ],
+      "ambiguities": [],
+      "status": "drawn",
+      "map_size_pt": {
+        "width": 243,
+        "height": 249.5
+      }
+    }
+  ],
+  "appendix": [
+    {
+      "key": "Appendix A: Learn to Play, A.4 Quickstart Scenario: The Broken Courier",
+      "source_lines": [
+        16172,
+        16208
+      ],
+      "map_figure": "FIG-18",
+      "detail_figures": [],
+      "insert_after": "B16371",
+      "setup_rules": [
+        "A.2 terrain list",
+        "A.4 Setup Roll-off (short edge, 4\" zones)"
+      ],
+      "drawn_in_figure": [
+        "24\"x24\" battlefield",
+        "4\" deployment bands on both short edges (16184)",
+        "3\"x3\" centre ruin, Blocking (16108)",
+        "Dispatch Satchel adjacent to the centre ruin (16180; side not stated, so the adjacent band is outlined)",
+        "Treasure Chest 5\" east of centre (A.11 sample; A.4 allows 5-6\" near one flank, 16180)",
+        "Dire Wolves within 2\" of the Satchel (16182) as a relative layout inset",
+        "Hero starting positions from the A.11 table"
+      ],
+      "not_drawn": [
+        "A.2 flank low wall (4-6\" from centre), flank rubble patch and 2-3 scatter pieces (16109-16111): positions are open and are not needed for deployment"
+      ],
+      "ambiguities": [
+        "Which side of the centre ruin the Satchel (and therefore the Dire Wolves) stands on is not stated."
+      ],
+      "status": "drawn (existing FIG-18 checked; unchanged)"
+    },
+    {
+      "key": "Appendix B: Basic Mode, B.6 Basic Scenario: The Courier's Strongbox",
+      "source_lines": [
+        17072,
+        17095
+      ],
+      "map_figure": "FIG-19",
+      "detail_figures": [],
+      "insert_after": "B17082",
+      "setup_rules": [
+        "B.6 deployment (4\" of opposite edges)",
+        "B.6 Monster Setup (3 Monster Entry markers, 5-7\" from centre, 4\" apart)"
+      ],
+      "drawn_in_figure": [
+        "24\"x24\" battlefield",
+        "4\" bands on opposite edges (17078)",
+        "Strongbox at the centre (17082)",
+        "Monster Entry band 5-7\" from centre, markers at least 4\" apart, outside both zones (17080)",
+        "one Satchel on each Entry marker (17082)",
+        "road across the centre, 2 ruins/carts/low walls within 4\" of centre, 4 quarter pieces of 3\"x3\" (17076)",
+        "no Advanced Mode rules shown"
+      ],
+      "not_drawn": [
+        "which opposite edges are the deployment edges and who places the Entry markers are not stated (north and south drawn)"
+      ],
+      "ambiguities": [],
+      "status": "drawn (existing FIG-19 checked; unchanged)"
+    }
+  ],
+  "procedural": {
+    "key": "10.1 Preparation Steps",
+    "source_lines": [
+      11060,
+      11073
+    ],
+    "map_figure": "FIG-57",
+    "legend_figure": "FIG-20",
+    "detail_figures": [
+      "FIG-13",
+      "FIG-14"
+    ],
+    "insert_after": "B11062",
+    "setup_rules": [
+      "step 7 exclusion: 3\" from a battlefield edge, 6\" from a deployment zone",
+      "step 11 default: edge zones 6\" deep, corner zones 8\"x8\", alternate placing from the Roll-off loser"
+    ],
+    "status": "drawn"
+  },
+  "summary": {
+    "scenarios": 36,
+    "drawn": 32,
+    "blocked_by_ambiguity": 4,
+    "scenario_map_figures": "FIG-21 to FIG-56",
+    "legend_figure": "FIG-20",
+    "template_figure": "FIG-57",
+    "elements": {
+      "mandatory": 68,
+      "constrained": 243,
+      "illustrative": 284
+    },
+    "ambiguities_logged": 13,
+    "global_notes": [
+      "Group placement constraints ('within 3\" of ...', 'at least 8\" from ...') are drawn for one marker per Monster Group; the text does not say whether every member of a multi-Monster group must satisfy them.",
+      "Counts of scattered terrain are printed values; maps draw a few representative pieces and never resolve 10.6 scaling."
+    ]
+  }
+}

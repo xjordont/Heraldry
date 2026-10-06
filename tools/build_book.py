@@ -281,7 +281,9 @@ class Book:
         mapping = {"id": b["id"], "src": b["src"], "rep": rep, "scope": c["scope"], "columns": c["columns"],
                    "rows": c["rows"], "header": c["header"]}
         if rep == "stat" or (c["header"][:6] == ["HP", "AV", "SPD", "LVL", "CV", "Sz"]):
-            if len(b["rows"]) == 1 and c["scope"] == "column" and rep == "stat":
+            # a compact strip only when every value is short; formula profiles use labelled key/value rows
+            short = all(len(cell_plain(v)) <= 12 for v in b["rows"][0]) if b["rows"] else False
+            if len(b["rows"]) == 1 and c["scope"] == "column" and rep == "stat" and short:
                 mapping["rep"] = "statstrip"
                 s = f"#statstrip({lit(b['id'])}, ({', '.join('[' + h + ']' for h in hdr)},), ({', '.join('[' + v + ']' for v in rows[0])},))"
             elif len(b["rows"]) == 1:

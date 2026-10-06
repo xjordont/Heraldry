@@ -18,3 +18,4 @@ references/private/
 build/
 typst/content.typ
 figures/src/test/
+figures/anchor_proposals.json

@@ -244,6 +244,10 @@ PATCHED = {
 }
 PATCH_STATUS = "aligned to editorial patches 2026-10-06"
 
+# Scenario deployment maps (FIG-20 onward) are generated from figures/src/scenario_specs.json.
+import fig_scenmaps
+META.update(fig_scenmaps.meta_entries())
+
 # Resolve placement against the current manuscript, never against inherited line numbers.
 import sys
 sys.path.insert(0, os.path.join(FIG_DIR, "..", "tools"))
@@ -292,6 +296,12 @@ def write_all(dims=None):
             entry["audit_response"] = "Editorial patch alignment: " + PATCHED[fid] + " Earlier: " + entry["audit_response"]
             entry["editorial_patches"] = sorted(set(__import__("re").findall(r"P-0\d", PATCHED[fid])))
             import hashlib
+            with open(os.path.join(FIG_DIR, "out", fid + ".svg"), "rb") as sf:
+                entry["svg_sha256"] = hashlib.sha256(sf.read()).hexdigest()
+        if m.pop("new_figure", False):
+            import hashlib
+            entry["status"] = "drawn 2026-10-06 pending independent review"
+            entry["audit_response"] = "Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done)."
             with open(os.path.join(FIG_DIR, "out", fid + ".svg"), "rb") as sf:
                 entry["svg_sha256"] = hashlib.sha256(sf.read()).hexdigest()
         if "ambiguity" in m:
