@@ -1,29 +1,46 @@
 {
-  "version": 1,
-  "checked_date": "2026-10-05",
+  "version": 2,
+  "checked_date": "2026-10-06",
   "page_numbering": "1-based PDF viewer pages, not printed folios",
-  "authority": "Visual inspiration only. Heraldry source exclusively governs mechanics.",
+  "authority": "Owner's ten selected visual references; exact editions and inherited inspected pages verified by SHA256. Heraldry source exclusively governs mechanics.",
   "references": [
     {
-      "id": "REF-BLACKDEATH",
-      "title": "BlackDeathCity - Playtest 101",
+      "id": "REF-TNA",
+      "title": "TNA Ultimate Rulebook",
       "file_aliases": [
-        "BlackDeathCity-Playtest-101.pdf"
+        "TNA-Ultimate-Rulebook.pdf",
+        "TNA Ultimate Rulebook.pdf"
       ],
-      "sha256": "7d46035bea63707833dbbba7430125ad6dc35067125d8d4c24bfabc535a1f3ce",
-      "page_count": 134,
+      "sha256": "e9cf60bc3e022f2084060b6d20547896af2ccd3710adb31817274036f6426eff",
+      "page_count": 43,
       "pages": [
-        32,
-        36,
-        74
+        10
+      ],
+      "priority": "secondary",
+      "purpose": "Local grid diagrams and corner-case panels; spread PDF geometry"
+    },
+    {
+      "id": "REF-FIVELEAGUES",
+      "title": "Five Leagues from the Borderlands - Third Edition",
+      "file_aliases": [
+        "FLftB-Core-Rules-3rd-Edition.pdf",
+        "06-FLftB-Core-Rules-3rd-Edition.pdf",
+        "FLftB - Core Rules 3rd Edition(1).pdf"
+      ],
+      "sha256": "1cc445a38a44fd3adaadccbe1de9e4da2469c0761c806f5319809a0cf298d72d",
+      "page_count": 236,
+      "pages": [
+        38,
+        130
       ],
       "priority": "primary",
-      "purpose": "Monochrome atmosphere, scenario pairing, campaign entry cards"
+      "purpose": "Keyed diagram and compact procedural table"
     },
     {
       "id": "REF-DETH",
       "title": "Deth Wizards",
       "file_aliases": [
+        "Deth-Wizards-2024.pdf",
         "Deth Wizards 2024.pdf"
       ],
       "sha256": "6ef4852bb3ffad11e9fc056aa3db6e61b20984f418932eb9f1b237c08675ab56",
@@ -40,6 +57,7 @@
       "id": "REF-MYTHRAS",
       "title": "Mythras: Classic Fantasy Imperative",
       "file_aliases": [
+        "Mythras-Classic-Fantasy-Imperative.pdf",
         "Mythras - Classic Fantasy Imperative(1).pdf"
       ],
       "sha256": "9387747af7cacca15a6999fd7d748d51f4a3435f248a69ac4934a2d41bcb29cd",
@@ -52,41 +70,44 @@
       "purpose": "Clean grayscale prose and full-width table transition"
     },
     {
-      "id": "REF-HAMETSU",
-      "title": "Hametsu - Second Printing",
+      "id": "REF-VILLAGEHUNT",
+      "title": "The Village Hunt — Veil Hollow",
       "file_aliases": [
-        "14-Hametsu-3-.pdf",
-        "Hametsu - Second Printing.pdf"
+        "The-Village-Hunt-Veil-Hollow.pdf",
+        "17-The-Village-Hunt-Veil-Hollow.pdf"
       ],
-      "sha256": "0a393f1bdb606799a4b2fa758edfb8ddc8e3e7f72707eeb7a8647f20b04019ef",
-      "page_count": 183,
+      "sha256": "286e97e5ba48dce633d618fb8370b5390cd9bdbbd2692bedaf64377d38bb3940",
+      "page_count": 25,
       "pages": [
-        29,
-        101
+        6,
+        14,
+        16
       ],
-      "priority": "primary",
-      "purpose": "Rules/examples pairing and equipment table widths"
+      "priority": "secondary",
+      "purpose": "Layout and art-style calibration; pages inherited from the exact-file inspection inventory"
     },
     {
-      "id": "REF-FIVELEAGUES",
-      "title": "Five Leagues from the Borderlands - Third Edition",
+      "id": "REF-DREADNIGHTS",
+      "title": "Dread Nights",
       "file_aliases": [
-        "06-FLftB-Core-Rules-3rd-Edition.pdf",
-        "FLftB - Core Rules 3rd Edition(1).pdf"
+        "DREAD-NIGHTS-11-singles.pdf",
+        "DREAD_NIGHTS_11_singles.pdf"
       ],
-      "sha256": "1cc445a38a44fd3adaadccbe1de9e4da2469c0761c806f5319809a0cf298d72d",
-      "page_count": 236,
+      "sha256": "356282f2582121d5be80a086014419d9794019ed1a8cfb94a38e0f7ceefa23cf",
+      "page_count": 128,
       "pages": [
-        38,
-        130
+        10,
+        30,
+        71
       ],
-      "priority": "primary",
-      "purpose": "Keyed diagram and compact procedural table"
+      "priority": "secondary",
+      "purpose": "Layout and art-style calibration; pages inherited from the exact-file inspection inventory"
     },
     {
       "id": "REF-HELLCRAWL",
       "title": "Hellcrawl 2026-09-13",
       "file_aliases": [
+        "Hellcrawl-2026-09-13.pdf",
         "Hellcrawl_2026-09-13.pdf"
       ],
       "sha256": "fe360a0c29916461d3450ac373cd5e45b94088b71405ab310c497eda03c91f24",
@@ -102,6 +123,7 @@
       "id": "REF-CALLTOARMS",
       "title": "The Elder Scrolls: Call to Arms",
       "file_aliases": [
+        "TES-CTA-Core-Rulebook-DIGITAL-v001sk.pdf",
         "TES_CTA_Core-Rulebook_DIGITAL_v001sk.pdf"
       ],
       "sha256": "faf8cd4b45fae190be7fd1d498298e13586e78dff73cb9e23f4d2d3c661e2a98",
@@ -114,33 +136,37 @@
       "purpose": "Property table and adjacent AI diagram"
     },
     {
-      "id": "REF-TNA",
-      "title": "TNA Ultimate Rulebook",
+      "id": "REF-HAMETSU",
+      "title": "Hametsu - Second Printing",
       "file_aliases": [
-        "TNA Ultimate Rulebook.pdf"
+        "Hametsu-Second-Printing.pdf",
+        "14-Hametsu-3-.pdf",
+        "Hametsu - Second Printing.pdf"
       ],
-      "sha256": "e9cf60bc3e022f2084060b6d20547896af2ccd3710adb31817274036f6426eff",
-      "page_count": 43,
+      "sha256": "0a393f1bdb606799a4b2fa758edfb8ddc8e3e7f72707eeb7a8647f20b04019ef",
+      "page_count": 183,
       "pages": [
-        10
+        29,
+        101
       ],
-      "priority": "secondary",
-      "purpose": "Local grid diagrams and corner-case panels; spread PDF geometry"
+      "priority": "primary",
+      "purpose": "Rules/examples pairing and equipment table widths"
     },
     {
-      "id": "REF-PATHFINDER",
-      "title": "Pathfinder 2e Player Core Remaster",
+      "id": "REF-BLACKDEATH",
+      "title": "BlackDeathCity - Playtest 101",
       "file_aliases": [
-        "04-Pathfinder-2e-Player-Core-Remaster.pdf"
+        "BlackDeathCity-Playtest-101.pdf"
       ],
-      "sha256": "9e34130ba88cb6a700f588d8837c9ad0b1e5122bbf5e75f4d19f8bf3b575cd22",
-      "page_count": 466,
+      "sha256": "7d46035bea63707833dbbba7430125ad6dc35067125d8d4c24bfabc535a1f3ce",
+      "page_count": 134,
       "pages": [
-        17,
-        459
+        32,
+        36,
+        74
       ],
-      "priority": "secondary",
-      "purpose": "Entry anatomy and semantic index"
+      "priority": "primary",
+      "purpose": "Monochrome atmosphere, scenario pairing, campaign entry cards"
     }
   ]
 }

@@ -1,57 +1,8 @@
 {
   "method": "Representative rendered-page inspection plus selected detail pages; not full-book audit",
-  "supplied_files": 32,
-  "unique_files": 29,
+  "supplied_files": 10,
+  "unique_files": 10,
   "files": [
-    {
-      "filename": "01-Frostgrave.pdf",
-      "sha256": "17a1653860342768192ed7aba6a139890b9ec39f06538c30648b5eca8cd65e47",
-      "page_count": 225,
-      "sampled_pdf_pages": [
-        6,
-        45,
-        124
-      ]
-    },
-    {
-      "filename": "02-Nimble-CoreRules.pdf",
-      "sha256": "c9550dce8ed293eb2944da17d1922251e22331b73dfccd47a7f1486acb7677a6",
-      "page_count": 58,
-      "sampled_pdf_pages": [
-        6,
-        10,
-        32
-      ]
-    },
-    {
-      "filename": "03-Lasting-Tales.pdf",
-      "sha256": "d998c14277785af4023416a7dcedc89e0b366688767048252f382fb50872d9c3",
-      "page_count": 266,
-      "sampled_pdf_pages": [
-        7,
-        33,
-        147
-      ]
-    },
-    {
-      "filename": "04-Pathfinder-2e-Player-Core-Remaster.pdf",
-      "sha256": "9e34130ba88cb6a700f588d8837c9ad0b1e5122bbf5e75f4d19f8bf3b575cd22",
-      "page_count": 466,
-      "sampled_pdf_pages": [
-        6,
-        257,
-        276
-      ]
-    },
-    {
-      "filename": "05-Dungeoneers-Rulebook-v16.pdf",
-      "sha256": "5e9aa6742d42fcae79bb4ee22dfa34aef5fc9c52bebf35bf15c7fa562ad83b66",
-      "page_count": 110,
-      "sampled_pdf_pages": [
-        6,
-        61
-      ]
-    },
     {
       "filename": "06-FLftB-Core-Rules-3rd-Edition.pdf",
       "sha256": "1cc445a38a44fd3adaadccbe1de9e4da2469c0761c806f5319809a0cf298d72d",
@@ -60,76 +11,6 @@
         6,
         130,
         138
-      ]
-    },
-    {
-      "filename": "07-ARENACONTEST-4-.pdf",
-      "sha256": "6bda1cef073c1d7c8889f6cf926dac842c8e77871a84cda2e8bd6058b0762350",
-      "page_count": 40,
-      "sampled_pdf_pages": [
-        6,
-        22,
-        23
-      ]
-    },
-    {
-      "filename": "08-ATO_CORE_Rulebook_v1.1.pdf",
-      "sha256": "64e8c4c30b73783ccb6950d4f9f5bda8c6cc2158e28a2432dc666ea3de289a4d",
-      "page_count": 83,
-      "sampled_pdf_pages": [
-        6,
-        9,
-        46
-      ]
-    },
-    {
-      "filename": "09-SAS-Rulebook-3-.pdf",
-      "sha256": "d30e80368a25114492134c6b39d3ffa3684c0295eaf39b45f1be757ad6a143a2",
-      "page_count": 40,
-      "sampled_pdf_pages": [
-        6,
-        18,
-        23
-      ]
-    },
-    {
-      "filename": "10-Rulebook-web-Dungeon-Universalis-2-.pdf",
-      "sha256": "7249b48451c76d1f1ad94d64e5a50a2bdafe63e26e5b05889df83696b9f87fe1",
-      "page_count": 119,
-      "sampled_pdf_pages": [
-        10,
-        40,
-        66
-      ]
-    },
-    {
-      "filename": "11-Middara.pdf",
-      "sha256": "667b7b6c2c9f85c0296c427c07a86ab8d3def93e7195a6b98b6bba4751f2f261",
-      "page_count": 102,
-      "sampled_pdf_pages": [
-        6,
-        34,
-        57
-      ]
-    },
-    {
-      "filename": "12-EAHQ.pdf",
-      "sha256": "114fc23ee36e4759a987e0da85329cfd9f2be06fbed7de2c81a2710b1e9f7af0",
-      "page_count": 168,
-      "sampled_pdf_pages": [
-        6,
-        27,
-        93
-      ]
-    },
-    {
-      "filename": "13-Ker-Nethalas-Carnage-Aether-3-.pdf",
-      "sha256": "83e856bea4967164315933094df3b5d5048bc8aa27d5fb46d7e5ed7bdca45c15",
-      "page_count": 256,
-      "sampled_pdf_pages": [
-        7,
-        39,
-        141
       ]
     },
     {
@@ -143,26 +24,6 @@
       ]
     },
     {
-      "filename": "15-The-Walking-Dead-All-Out-War.pdf",
-      "sha256": "850e4eba12012c1351334206eac05c90c2a65715e8c1749912313bf77ace701f",
-      "page_count": 177,
-      "sampled_pdf_pages": [
-        6,
-        29,
-        98
-      ]
-    },
-    {
-      "filename": "16-XCOM-The-Miniatures-Game-Core-Rules-digital.pdf",
-      "sha256": "a80fe8ea98dd2697002b1c473bce0ebc4536e6ad705cd60e5a4c121155b16b64",
-      "page_count": 276,
-      "sampled_pdf_pages": [
-        8,
-        41,
-        152
-      ]
-    },
-    {
       "filename": "17-The-Village-Hunt-Veil-Hollow.pdf",
       "sha256": "286e97e5ba48dce633d618fb8370b5390cd9bdbbd2692bedaf64377d38bb3940",
       "page_count": 25,
@@ -170,54 +31,6 @@
         6,
         14,
         16
-      ]
-    },
-    {
-      "filename": "18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf",
-      "sha256": "b86881466e048836f3e0c28d93523b3310ce7530e491b1a907a6889f19a41a19",
-      "page_count": 138,
-      "sampled_pdf_pages": [
-        12,
-        29,
-        76
-      ]
-    },
-    {
-      "filename": "19-Call-of-Dungeons.pdf",
-      "sha256": "fa9410145097ea0b03128c36c83c2ea7dc6437cc1aafa62ebcbe476813f2887a",
-      "page_count": 32,
-      "sampled_pdf_pages": [
-        7,
-        13,
-        18
-      ]
-    },
-    {
-      "filename": "20-FINAL-GoN-Dux-Disciplinam.pdf",
-      "sha256": "99f551cc7f8b099370a1e57a24bd99e6d894e45c689c064783f9e88daaaf7b5f",
-      "page_count": 28,
-      "sampled_pdf_pages": [
-        8,
-        16
-      ]
-    },
-    {
-      "filename": "21-FINAL-GoN-Tome-of-Knowledge.pdf",
-      "sha256": "6127616692d0c9482dd2a7410f9df6014d83984f31aac1d2dbbca65137ceab0e",
-      "page_count": 76,
-      "sampled_pdf_pages": [
-        6,
-        27,
-        42
-      ]
-    },
-    {
-      "filename": "22-FINAL-GoN-Scenario-Book.pdf",
-      "sha256": "aef6cb8051f4912e6f118bf65564cc828da500713754e85726a0e4bb54c3dc70",
-      "page_count": 68,
-      "sampled_pdf_pages": [
-        8,
-        38
       ]
     },
     {
@@ -500,5 +313,6 @@
         38
       ]
     }
-  }
+  },
+  "selection_note": "Current inventory is restricted to the ten titles named by the owner on 2026-10-06. Earlier sampled-page evidence is retained for these exact hashes; duplicate aliases remain inspection records, not extra PDF files."
 }
