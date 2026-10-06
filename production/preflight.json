@@ -52,11 +52,11 @@
       "git": true,
       "python3": true,
       "typst": false,
-      "pandoc": true,
-      "pdfinfo": true,
-      "pdftoppm": true,
+      "pandoc": false,
+      "pdfinfo": false,
+      "pdftoppm": false,
       "qpdf": false,
-      "gs": true
+      "gs": false
     },
     "python_modules": {
       "typst": true,
