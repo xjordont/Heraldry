@@ -1,8 +1,8 @@
 {
   "zip": "dist/Heraldry_RC485_release.zip",
-  "bytes": 18354182,
+  "bytes": 18354207,
   "files": 217,
-  "sha256": "1e3c73155afc34fbcc8e065e099f270dcad38a4feb126d72702399663bd6ac70",
+  "sha256": "3efd77e6d3df97317881527ee0d81a66cf38ef7cc7b01cc13755e211211ad5e0",
   "status": "PASS",
   "duplicate_entries": [],
   "checksums_verified": 216,
