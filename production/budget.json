@@ -2,7 +2,7 @@
  "authorized_limit_usd": 100,
  "target_usd": 80,
  "reserve_usd": 20,
- "telemetry": "UNAVAILABLE: get_session exposes only rate-limit status (ccr_promotional, allowed); no dollar or token totals. Figures below are conservative estimates, not measured spend.",
+ "telemetry": "AVAILABLE (session-level): get_session usage.cost_usd. It does not state whether subagent usage is included; no remaining-credit/balance endpoint; rate_limit_info: ccr_promotional, status allowed, no overage.",
  "basis": "Estimated from orchestrator turn count and context size; Opus 5.5 orchestrator (medium effort) did parser/template/build work directly to avoid re-ingesting context in subagents.",
  "ledger": [
   {
@@ -33,5 +33,16 @@
   "stop_optional_expansion_usd": 60,
   "completion_only_usd": 80
  },
- "status": "Estimated ~$52 of $100; below the $60 optional-expansion threshold. Not measured: no spend telemetry available in this session."
+ "status": "Measured session cost $33.96 at start of correction pass (scope of subagent inclusion unknown); earlier figures were estimates.",
+ "measured": [
+  {
+   "at": "2026-10-06T13:15Z",
+   "source": "get_session external_metadata.usage",
+   "cost_usd": 33.958009,
+   "cache_read_tokens": 100945965,
+   "cache_write_tokens": 1559353,
+   "output_tokens": 526144,
+   "note": "start of release correction pass; supersedes the earlier $52 estimate as the measured session figure"
+  }
+ ]
 }
