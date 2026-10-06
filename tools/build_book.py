@@ -105,7 +105,7 @@ def first_text(b) -> str:
 def inject(s: str, mark: str) -> str:
     """Put a zero-size marker INSIDE a rendered block so that no stray inline content
     sits between a heading and the block it must keep with."""
-    for f in ("#example[", "#flavour[", "#note-box[", "#runin[", "#keep["):
+    for f in ("#example[", "#flavour[", "#note-box[", "#runin[", "#keep[", "#gloss["):
         if s.startswith(f):
             return f + mark + s[len(f):]
     for f in ("#htable(", "#statstrip(", "#statcard(", "#cards(", "#figure-block("):
@@ -155,6 +155,7 @@ class Book:
         self.seg_count = 0
         self.seg_sigs = {}
         self.placed_figs = set()
+        self.in_glossary = False
         self.piece_heads = {}
         self.table_map = []
         self.block_map = []   # (block id, src span, representation, segment)
@@ -233,6 +234,8 @@ class Book:
             return f"#flavour[{tag}{body}]"
         if is_caption(b):
             return f"#runin[{tag}{body}]\n"
+        if self.in_glossary and b["c"] and b["c"][0]["t"] == "strong" and first_text({"c": b["c"][0]["c"]}).rstrip().endswith(":"):
+            return f"#gloss[{tag}{body}]\n"   # dictionary-style hanging indent (layout only)
         return f"{tag}{body}\n\n"
 
     def block_inline(self, b):
@@ -461,6 +464,8 @@ class Book:
         return f"#figure-block({lit(fig['id'])}, {lit('../figures/out/' + fig['id'] + '.svg')}, [#{lit(cap)}], width: {w})\n"
 
     def render(self, b):
+        if b["type"] == "heading" and b["level"] <= 3:
+            self.in_glossary = b["title"].startswith("C.11 ")
         t = b["type"]
         if t == "heading":
             return self.heading(b) + "\n"
