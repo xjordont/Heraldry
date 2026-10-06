@@ -1,0 +1,456 @@
+#!/usr/bin/env python3
+"""Generate typst/content.typ from build/blocks.json and run the balancing build loop.
+
+Text is emitted only as Typst string literals (#"..."), so Typst never applies
+smart quotes, shorthands or markup interpretation to manuscript characters.
+Layout-only transformations (no-break spaces in dice/AP units, soft line breaks
+rendered as line breaks, table representations) are recorded in
+production/mappings/.
+"""
+from __future__ import annotations
+import argparse, json, re, sys, time
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from tables import classify, cell_plain, COL_W, FULL_W  # noqa: E402
+
+ROOT = Path(__file__).resolve().parents[1]
+BUILD = ROOT / "build"
+MAP = ROOT / "production/mappings"
+
+DIE_HEADERS = re.compile(r"^(\d*d\d+|d\d+|\d+d\d+ roll|Roll|\d+d\d+)$", re.I)
+NOBREAK = [
+    re.compile(r"\b\d*d\d+(?: [+−-] (?:APL/\d|\d+))+"),      # 1d6 + 2, 1d8 + APL/2
+    re.compile(r"\[\d+ AP\]"),                                # [1 AP]
+    re.compile(r"\b\d+ AP\b"),                               # 2 AP
+    re.compile(r"\b(?:STR|DEX|INT|SPI) [+−-]?\d+\b"),        # STR +1
+    re.compile(r"\bAPL \d+(?:–\d+|\+)?"),                    # APL 1–3
+    re.compile(r"\bRound \d+\b"),
+]
+NBSP = " "
+
+
+def nobreak(s: str) -> str:
+    for rx in NOBREAK:
+        s = rx.sub(lambda m: m.group(0).replace(" ", NBSP), s)
+    return s
+
+
+def lit(s: str) -> str:
+    return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+
+class Emitter:
+    def __init__(self, anchors: set[str]):
+        self.anchors = anchors
+        self.links = []
+
+    def inl(self, nodes, soft_break=True) -> str:
+        out = []
+        for n in nodes:
+            t = n["t"]
+            if t == "text":
+                if n["v"]:
+                    out.append("#" + lit(nobreak(n["v"])))
+            elif t == "code":
+                out.append("#raw(" + lit(n["v"]) + ")")
+            elif t == "soft":
+                out.append("#linebreak()" if soft_break else "#\" \"")
+            elif t == "br":
+                out.append("#linebreak()")
+            elif t == "strong":
+                out.append("#strong[" + self.inl(n["c"], soft_break) + "]")
+            elif t == "em":
+                out.append("#emph[" + self.inl(n["c"], soft_break) + "]")
+            elif t == "link":
+                href = n.get("href") or ""
+                if href.startswith("#") and href[1:] in self.anchors:
+                    self.links.append(href[1:])
+                    out.append(f"#link(label({lit('h-' + href[1:])}))[" + self.inl(n["c"], soft_break) + "]")
+                else:
+                    raise SystemExit(f"Unresolved link {href!r}")
+            else:
+                raise SystemExit(f"unknown inline {t}")
+        return "".join(out)
+
+
+def is_flavour(b) -> bool:
+    if b["type"] != "para":
+        return False
+    nodes = [n for n in b["c"] if not (n["t"] == "text" and not n["v"].strip())]
+    return bool(nodes) and all(n["t"] == "em" for n in nodes) and not first_text(b).startswith("Example")
+
+
+def first_text(b) -> str:
+    nodes = b.get("c", [])
+    s = ""
+    def walk(ns):
+        nonlocal s
+        for n in ns:
+            if len(s) > 40:
+                return
+            if n["t"] == "text":
+                s += n["v"]
+            elif "c" in n:
+                walk(n["c"])
+    walk(nodes)
+    return s.strip()
+
+
+def is_example(b) -> bool:
+    if b["type"] != "para" or not b["c"]:
+        return False
+    ft = first_text(b)
+    first = next((n for n in b["c"] if not (n["t"] == "text" and not n["v"])), None)
+    if first and first["t"] == "em" and ft.startswith("Example"):
+        return True
+    if first and first["t"] == "strong" and re.match(r"^[\w ,'-]*Example:", ft):
+        return True
+    return False
+
+
+class Book:
+    def __init__(self, model, balance):
+        self.model = model
+        self.balance = balance  # seg index -> tail start piece
+        anchors = set()
+        for ch in model["chapters"]:
+            self._anchors(ch["blocks"], anchors)
+        self.em = Emitter(anchors)
+        self.seg_count = 0
+        self.table_map = []
+        self.block_map = []   # (block id, src span, representation, segment)
+        self.out = []
+        self.fig_slots = json.loads((ROOT / "figures/placements.json").read_text()) if (ROOT / "figures/placements.json").exists() else {}
+        self.index_targets = json.loads((BUILD / "index_targets.json").read_text()) if (BUILD / "index_targets.json").exists() else {}
+
+    def _anchors(self, bs, acc):
+        for b in bs:
+            if b["type"] == "heading":
+                acc.add(b["anchor"])
+            for it in b.get("items", []):
+                self._anchors(it["blocks"], acc)
+            self._anchors(b.get("blocks", []), acc)
+
+    # ------------------------------------------------------------- blocks
+    def heading(self, b):
+        lvl = b["level"] - 1
+        body = self.em.inl(b["c"])
+        bm = "true" if lvl <= 3 else "false"
+        ol = "true" if lvl <= 2 else "false"
+        s = f"#heading(level: {lvl}, outlined: {ol}, bookmarked: {bm})[{body}] #label({lit(b['id'])})"
+        for idx in self.index_targets.get(b["id"], []):
+            s += f"#metadata({lit(idx)}) #label({lit('ix-' + idx)})"
+        return s
+
+    def para(self, b, role=None):
+        body = self.em.inl(b["c"])
+        tag = ""
+        for idx in self.index_targets.get(b["id"], []):
+            tag += f"#metadata({lit(idx)}) #label({lit('ix-' + idx)})"
+        if role == "example" or is_example(b):
+            return f"#example[{tag}{body}]"
+        if is_flavour(b):
+            return f"#flavour[{tag}{body}]"
+        return f"{tag}{body}\n\n"
+
+    def block_inline(self, b):
+        """Render a block inside a list item / quote."""
+        t = b["type"]
+        if t == "para":
+            return self.em.inl(b["c"])
+        if t == "list":
+            return self.lst(b)
+        if t == "table":
+            return self.table(b, force_column=True)
+        if t == "quote":
+            return self.quote(b)
+        if t == "heading":
+            raise SystemExit(f"heading inside container {b['id']}")
+        if t == "hr":
+            return "#hr-ornament()"
+        raise SystemExit(t)
+
+    def lst(self, b):
+        items = []
+        for it in b["items"]:
+            parts = [self.block_inline(x) for x in it["blocks"]]
+            items.append("[" + "#parbreak()".join(parts) + "]")
+        if b["ordered"]:
+            return f"#enum(start: {b['start']}, " + ", ".join(items) + ")\n"
+        return "#list(" + ", ".join(items) + ")\n"
+
+    def quote(self, b):
+        inner = "#parbreak()".join(self.block_inline(x) for x in b["blocks"])
+        return f"#note-box[{inner}]"
+
+    def table(self, b, force_column=False):
+        c = classify(b, None)
+        hdr = [self.em.inl(h) for h in b["header"]]
+        rows = [[self.em.inl(cell) for cell in r] for r in b["rows"]]
+        rep = c["rep"]
+        mapping = {"id": b["id"], "src": b["src"], "rep": rep, "scope": c["scope"], "columns": c["columns"],
+                   "rows": c["rows"], "header": c["header"]}
+        if rep == "stat" or (c["header"][:6] == ["HP", "AV", "SPD", "LVL", "CV", "Sz"]):
+            if len(b["rows"]) == 1 and c["scope"] == "column" and rep == "stat":
+                mapping["rep"] = "statstrip"
+                s = f"#statstrip({lit(b['id'])}, ({', '.join('[' + h + ']' for h in hdr)},), ({', '.join('[' + v + ']' for v in rows[0])},))"
+            elif len(b["rows"]) == 1:
+                mapping["rep"] = "statcard"
+                mapping["scope"] = "column"
+                c["scope"] = "column"
+                mapping["field_map"] = {h: f"row1.{h}" for h in c["header"]}
+                s = f"#statcard({lit(b['id'])}, ({', '.join('[' + h + ']' for h in hdr)},), ({', '.join('[' + v + ']' for v in rows[0])},))"
+            else:
+                s = self._plain_table(b, c, hdr, rows)
+        elif rep == "cards":
+            s = self._cards(b, c, hdr, rows, mapping)
+        else:
+            s = self._plain_table(b, c, hdr, rows)
+        mapping["scope"] = c["scope"]
+        self.table_map.append(mapping)
+        return s, c["scope"]
+
+    def _aligns(self, b, c):
+        al = []
+        for i, a in enumerate(b["align"]):
+            col = [cell_plain(r[i]).strip() for r in b["rows"]]
+            if a in ("right", "center"):
+                al.append("center" if DIE_HEADERS.match(c["header"][i]) else a)
+            elif DIE_HEADERS.match(c["header"][i]) or all(re.fullmatch(r"[\d–\-+×\"c/ .%]{1,7}", x or "-") for x in col):
+                al.append("center")
+            else:
+                al.append("left")
+        return al
+
+    def _plain_table(self, b, c, hdr, rows):
+        total = COL_W if c["scope"] == "column" else FULL_W
+        w = list(c["widths"])
+        slack = total - sum(w)
+        if slack > 0:
+            # give spare width to the column with the most text
+            i = max(range(len(w)), key=lambda k: c["max_pt"][k])
+            w[i] += slack
+        aligns = self._aligns(b, c)
+        hs = ", ".join("[" + h + "]" for h in hdr)
+        rs = ", ".join("(" + ", ".join("[" + v + "]" for v in r) + ",)" for r in rows)
+        ws = ", ".join(f"{x:.2f}" for x in w)
+        als = ", ".join(aligns)
+        return f"#htable({lit(b['id'])}, ({ws},), ({als},), ({hs},), ({rs},))"
+
+    def _cards(self, b, c, hdr, rows, mapping):
+        heads = c["header"]
+        desc = set(c["desc_cols"])
+        die = DIE_HEADERS.match(heads[0]) is not None
+        name_col = 1 if die else 0
+        entries = []
+        fmap = {}
+        for r in rows:
+            title_parts = []
+            if die:
+                title_parts.append(f"#text(weight: 700, fill: ink2)[{r[0]}]#h(6pt)")
+            title_parts.append(f"#strong[{r[name_col]}]")
+            fields = [f"([{hdr[i]}], [{r[i]}])" for i in range(len(heads)) if i not in desc and i != name_col and not (die and i == 0)]
+            descs = [f"([{hdr[i]}:], [{r[i]}])" for i in sorted(desc)]
+            entries.append(f"(title: [{''.join(title_parts)}], fields: ({', '.join(fields)}{',' if fields else ''}), desc: ({', '.join(descs)}{',' if descs else ''}))")
+        for i, h in enumerate(heads):
+            fmap[h] = "entry.title.roll" if (die and i == 0) else "entry.title.name" if i == name_col else ("entry.desc" if i in desc else "entry.field")
+        mapping["field_map"] = fmap
+        return f"#cards({lit(b['id'])}, ({', '.join(entries)},))"
+
+    # ------------------------------------------------------------- chapters
+    def emit(self):
+        o = self.out
+        o.append('#import "heraldry.typ": *\n#import "frontmatter.typ": *\n#show: book\n')
+        chapters = self.model["chapters"]
+        fr = chapters[0]["blocks"]
+        assert fr[0]["type"] == "heading" and fr[0]["level"] == 1
+        t1, _, t2 = fr[0]["title"].partition(": ")
+        o.append(f"#frontmatter(title: ({lit(t1)}, {lit(t2)}), subtitle: [{self.em.inl(fr[1]['c'])}], version: [{self.em.inl(fr[2]['c'])}])\n")
+        for ch in chapters:
+            if ch["id"] == "front":
+                self.front = ch
+                for b in ch["blocks"]:
+                    self.block_map.append((b["id"], b["src"], "front-matter-title-page", None))
+                continue
+            if ch["id"] == "h-table-of-contents":
+                for b in ch["blocks"]:
+                    self.block_map.append((b["id"], b["src"], "replaced-by-generated-toc", None))
+                continue
+            self.chapter(ch)
+        o.append("#backmatter()\n")
+        return "".join(o)
+
+    def chapter(self, ch):
+        blocks = ch["blocks"]
+        h = blocks[0]
+        title = h["title"]
+        m = re.match(r"^((?:Appendix [A-Z]\.)|(?:\d+\.))\s+(.*)$", title)
+        num, rest = (m.group(1), m.group(2)) if m else (None, title)
+        # Title must be rendered from the source inline nodes: split on the first text node.
+        lead = None
+        i = 1
+        if len(blocks) > 1 and is_flavour(blocks[1]):
+            lead = self.em.inl(blocks[1]["c"])
+            self.block_map.append((blocks[1]["id"], blocks[1]["src"], "chapter-lead", None))
+            i = 2
+        first = ch is self.model["chapters"][2] if len(self.model["chapters"]) > 2 else False
+        if num and num.startswith("1.") and title.startswith("1. "):
+            self.out.append("#mainmatter()\n")
+        self.block_map.append((h["id"], h["src"], "chapter-opener", None))
+        numlit = f"[#{lit(num)}]" if num else "none"
+        self.out.append(f"#chapter-opener({numlit}, [#{lit(rest)}], {lit(h['id'])}, lead: {('[' + lead + ']') if lead else 'none'})\n")
+        for ix in self.index_targets.get(h["id"], []):
+            self.out.append(f"#metadata({lit(ix)}) #label({lit('ix-' + ix)})\n")
+        # group remaining blocks into segments
+        cur = []
+        rest_blocks = blocks[i:]
+        for k, b in enumerate(rest_blocks):
+            nxt = rest_blocks[k + 1] if k + 1 < len(rest_blocks) else None
+            if b["type"] == "hr" and (nxt is None):
+                self.block_map.append((b["id"], b["src"], "hr-absorbed-by-chapter-break", None))
+                continue
+            if b["type"] == "table":
+                s, scope = self.table(b)
+                if scope == "full":
+                    # carry immediately preceding heading(s) with the full-width table
+                    carry = []
+                    while cur and cur[-1][0]["type"] == "heading":
+                        carry.insert(0, cur.pop())
+                    self.flush(cur)
+                    cur = []
+                    body = "".join(x[1] for x in carry) + s
+                    for x in carry:
+                        self.block_map.append((x[0]["id"], x[0]["src"], "full-width-heading", None))
+                    self.block_map.append((b["id"], b["src"], "table-full", None))
+                    self.out.append(f"#full[{body}]\n")
+                    continue
+                cur.append((b, s + "\n"))
+                continue
+            cur.append((b, self.render(b)))
+            for fig in self.fig_slots.get(b["id"], []):
+                cur.append(({"type": "figure", "id": fig["id"], "src": b["src"]}, self.figure(fig)))
+        self.flush(cur)
+
+    def figure(self, fig):
+        w = fig.get("width", "100%")
+        cap = fig["caption"]
+        return f"#figure-block({lit(fig['id'])}, {lit('../figures/out/' + fig['id'] + '.svg')}, [#{lit(cap)}], width: {w})\n"
+
+    def render(self, b):
+        t = b["type"]
+        if t == "heading":
+            return self.heading(b) + "\n"
+        if t == "para":
+            return self.para(b)
+        if t == "list":
+            return self.lst(b)
+        if t == "quote":
+            return self.quote(b) + "\n"
+        if t == "hr":
+            return "#hr-ornament()\n"
+        raise SystemExit(t)
+
+    def flush(self, pieces):
+        if not pieces:
+            return
+        sid = self.seg_count
+        self.seg_count += 1
+        tail = self.balance.get(str(sid))
+        parts = []
+        for j, (b, s) in enumerate(pieces):
+            self.block_map.append((b["id"], b["src"], "column", sid))
+            parts.append(f"#pm({sid}, {j}, \"s\")" + s)
+        end = f"#pm({sid}, {len(pieces)}, \"e\")"
+        if tail is None or tail >= len(pieces):
+            self.out.append("#seg[" + "".join(parts) + end + "]\n")
+        else:
+            if tail > 0:
+                self.out.append("#seg[" + "".join(parts[:tail]) + "]\n")
+            tp = parts[tail:]
+            tp[-1] = tp[-1] + end
+            self.out.append("#bal(" + ", ".join("[" + x + "]" for x in tp) + ")\n")
+
+
+def compile_book(variant="cream", out=None, query=True):
+    import typst
+    out = out or BUILD / f"book-{variant}.pdf"
+    t0 = time.time()
+    typst.compile(str(ROOT / "typst/content.typ"), output=str(out), root=str(ROOT),
+                  font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True,
+                  sys_inputs={"substrate": variant})
+    dt = time.time() - t0
+    pm = None
+    if query:
+        pm = json.loads(typst.query(str(ROOT / "typst/content.typ"), "<pm>", field="value", root=str(ROOT),
+                                    font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True,
+                                    sys_inputs={"substrate": variant}))
+    return out, dt, pm
+
+
+TOP_Y = 0.65 * 72
+BODY_BOTTOM = 792 - 0.7 * 72
+
+
+def compute_balance(pm, prev):
+    """Decide, per segment, from which piece the tail on its last page should be balanced."""
+    segs = {}
+    for m in pm:
+        segs.setdefault(m["seg"], []).append(m)
+    res = {}
+    for sid, ms in segs.items():
+        starts = sorted([m for m in ms if m["edge"] == "s"], key=lambda m: m["piece"])
+        end = [m for m in ms if m["edge"] == "e"][0]
+        L = end["page"]
+        pt = prev.get(str(sid))
+        if pt is not None and pt < len(starts) and starts[pt]["page"] == L:
+            res[str(sid)] = pt   # hysteresis: previous tail still sits on the last page
+            continue
+        on_last = [m for m in starts if m["page"] == L]
+        if not on_last:
+            continue  # only the tail of a straddling piece is on the last page; leave natural
+        t = on_last[0]["piece"]
+        if t > 0:
+            prevp = starts[t - 1]
+            first = on_last[0]
+            at_top = abs(first["y"] - TOP_Y) < 20 and first["x"] < 300
+            if not at_top:
+                # previous piece straddles onto the last page; include it if little is left on the previous page
+                if BODY_BOTTOM - prevp["y"] < 160 or prevp["page"] == L:
+                    t = t - 1
+                else:
+                    continue
+        # skip when the last page is already essentially full in both columns
+        res[str(sid)] = t
+    return res
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--variant", default="cream")
+    ap.add_argument("--passes", type=int, default=5)
+    ap.add_argument("--no-balance", action="store_true")
+    a = ap.parse_args()
+    model = json.loads((BUILD / "blocks.json").read_text())
+    balance = {}
+    bal_file = BUILD / "balance.json"
+    if bal_file.exists() and not a.no_balance:
+        balance = json.loads(bal_file.read_text())
+    for p in range(a.passes):
+        book = Book(model, balance)
+        (ROOT / "typst/content.typ").write_text(book.emit())
+        out, dt, pm = compile_book(a.variant)
+        new = compute_balance(pm, balance) if not a.no_balance else {}
+        print(f"pass {p+1}: {dt:.1f}s, segments={book.seg_count}, balanced={len(new)}, changed={sum(1 for k in set(new)|set(balance) if new.get(k)!=balance.get(k))}")
+        if new == balance or a.no_balance:
+            break
+        balance = new
+        bal_file.write_text(json.dumps(balance))
+    MAP.mkdir(parents=True, exist_ok=True)
+    (MAP / "tables.json").write_text(json.dumps(book.table_map, ensure_ascii=False, indent=0))
+    (MAP / "blocks.json").write_text(json.dumps(book.block_map, ensure_ascii=False))
+    print("links:", len(book.em.links), "->", out)
+
+
+if __name__ == "__main__":
+    main()

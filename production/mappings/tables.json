@@ -1,0 +1,6402 @@
+[
+{
+"id": "T001",
+"src": [
+179,
+185
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 5,
+"header": [
+"Goal",
+"Recommended route"
+]
+},
+{
+"id": "T002",
+"src": [
+479,
+492
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 12,
+"header": [
+"Term",
+"Meaning"
+]
+},
+{
+"id": "T003",
+"src": [
+545,
+558
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 12,
+"header": [
+"Source",
+"Attack Modifier",
+"Full Rule"
+]
+},
+{
+"id": "T004",
+"src": [
+614,
+619
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 4,
+"header": [
+"Sz",
+"Size",
+"Footprint",
+"Grid Footprint"
+]
+},
+{
+"id": "T005",
+"src": [
+706,
+710
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 3,
+"header": [
+"Shape",
+"Area"
+]
+},
+{
+"id": "T006",
+"src": [
+716,
+719
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 2,
+"header": [
+"Mode",
+"Placing an Area"
+]
+},
+{
+"id": "T007",
+"src": [
+725,
+731
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 5,
+"header": [
+"Shape",
+"Affected Squares"
+]
+},
+{
+"id": "T008",
+"src": [
+752,
+756
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 3,
+"header": [
+"Step",
+"State",
+"Effect"
+]
+},
+{
+"id": "T009",
+"src": [
+848,
+874
+],
+"rep": "table",
+"scope": "full",
+"columns": 3,
+"rows": 25,
+"header": [
+"Feature",
+"Type",
+"Tags"
+]
+},
+{
+"id": "T010",
+"src": [
+1161,
+1180
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 18,
+"header": [
+"Topic",
+"Reminder",
+"Full Rule"
+]
+},
+{
+"id": "T011",
+"src": [
+1204,
+1219
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 14,
+"header": [
+"Action",
+"AP Cost",
+"Effect"
+]
+},
+{
+"id": "T012",
+"src": [
+1292,
+1302
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 9,
+"header": [
+"Movement Type",
+"Meaning",
+"Triggers Reflex Attack?"
+]
+},
+{
+"id": "T013",
+"src": [
+1504,
+1509
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 4,
+"header": [
+"Reaction",
+"AP Cost",
+"Best Use"
+]
+},
+{
+"id": "T014",
+"src": [
+1581,
+1594
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 12,
+"header": [
+"Abbreviation",
+"Damage Type"
+]
+},
+{
+"id": "T015",
+"src": [
+1668,
+1673
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 4,
+"header": [
+"Parry roll",
+"Outcome"
+]
+},
+{
+"id": "T016",
+"src": [
+1787,
+1808
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Result",
+"Effect"
+]
+},
+{
+"id": "T017",
+"src": [
+2110,
+2117
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 6,
+"header": [
+"d10",
+"Ancestry",
+"Random Ancestry Bonus"
+]
+},
+{
+"id": "T018",
+"src": [
+2123,
+2130
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 6,
+"header": [
+"d10",
+"Rare Ancestry",
+"Random Ancestry Bonus"
+]
+},
+{
+"id": "T019",
+"src": [
+2138,
+2149
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 10,
+"header": [
+"d10",
+"Trinket",
+"Value",
+"Rules"
+]
+},
+{
+"id": "T020",
+"src": [
+2359,
+2380
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 20,
+"header": [
+"d20",
+"Background"
+]
+},
+{
+"id": "T021",
+"src": [
+2546,
+2559
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 12,
+"header": [
+"Result",
+"Class"
+]
+},
+{
+"id": "T022",
+"src": [
+2637,
+2650
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 12,
+"header": [
+"Class",
+"Archetype",
+"Complexity",
+"Role"
+]
+},
+{
+"id": "T023",
+"src": [
+3190,
+3198
+],
+"rep": "cards",
+"scope": "column",
+"columns": 7,
+"rows": 7,
+"header": [
+"Form",
+"Tier",
+"SPD",
+"Sz",
+"AV",
+"Natural Attack",
+"Form Trait"
+],
+"field_map": {
+"Form": "entry.title.name",
+"Tier": "entry.field",
+"SPD": "entry.field",
+"Sz": "entry.field",
+"AV": "entry.field",
+"Natural Attack": "entry.field",
+"Form Trait": "entry.desc"
+}
+},
+{
+"id": "T024",
+"src": [
+3279,
+3289
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 9,
+"header": [
+"Current Level",
+"New Level",
+"Training Cost"
+]
+},
+{
+"id": "T025",
+"src": [
+3330,
+3342
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 11,
+"header": [
+"Category",
+"Use",
+"Full Rule"
+]
+},
+{
+"id": "T026",
+"src": [
+3411,
+3416
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 4,
+"header": [
+"Marker",
+"Result"
+]
+},
+{
+"id": "T027",
+"src": [
+3450,
+3461
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 10,
+"header": [
+"d100",
+"Result",
+"Chance"
+]
+},
+{
+"id": "T028",
+"src": [
+3465,
+3479
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 13,
+"header": [
+"d100",
+"Result",
+"Chance"
+]
+},
+{
+"id": "T029",
+"src": [
+3483,
+3498
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 14,
+"header": [
+"d100",
+"Result",
+"Chance"
+]
+},
+{
+"id": "T030",
+"src": [
+3502,
+3517
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 14,
+"header": [
+"d100",
+"Result",
+"Chance"
+]
+},
+{
+"id": "T031",
+"src": [
+3521,
+3536
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 14,
+"header": [
+"d100",
+"Result",
+"Chance"
+]
+},
+{
+"id": "T032",
+"src": [
+3542,
+3560
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 17,
+"header": [
+"Trait",
+"Rule"
+]
+},
+{
+"id": "T033",
+"src": [
+3580,
+3588
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 7,
+"header": [
+"Trait",
+"Rule"
+]
+},
+{
+"id": "T034",
+"src": [
+3598,
+3642
+],
+"rep": "table",
+"scope": "full",
+"columns": 7,
+"rows": 43,
+"header": [
+"Weapon",
+"Cost (c)",
+"Hands",
+"STR Req",
+"DEX Req",
+"Damage",
+"Traits"
+]
+},
+{
+"id": "T035",
+"src": [
+3648,
+3663
+],
+"rep": "table",
+"scope": "full",
+"columns": 8,
+"rows": 14,
+"header": [
+"Weapon",
+"Cost (c)",
+"Hands",
+"Range",
+"STR Req",
+"DEX Req",
+"Damage",
+"Traits"
+]
+},
+{
+"id": "T036",
+"src": [
+3679,
+3696
+],
+"rep": "table",
+"scope": "full",
+"columns": 7,
+"rows": 16,
+"header": [
+"Armour",
+"Cost (c)",
+"AD",
+"STR Req",
+"DEX Pen",
+"Max Speed",
+"Rule"
+]
+},
+{
+"id": "T037",
+"src": [
+3712,
+3725
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 12,
+"header": [
+"Quality",
+"Value",
+"Rule"
+]
+},
+{
+"id": "T038",
+"src": [
+3731,
+3744
+],
+"rep": "table",
+"scope": "full",
+"columns": 3,
+"rows": 12,
+"header": [
+"Quality",
+"Value",
+"Rule"
+]
+},
+{
+"id": "T039",
+"src": [
+3748,
+3769
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T040",
+"src": [
+3773,
+3794
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T041",
+"src": [
+3798,
+3819
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T042",
+"src": [
+3823,
+3844
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T043",
+"src": [
+3848,
+3869
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T044",
+"src": [
+3873,
+3894
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T045",
+"src": [
+3898,
+3919
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T046",
+"src": [
+3923,
+3944
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T047",
+"src": [
+3948,
+3969
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T048",
+"src": [
+3973,
+3994
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T049",
+"src": [
+3998,
+4019
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T050",
+"src": [
+4023,
+4038
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 14,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T051",
+"src": [
+4042,
+4063
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T052",
+"src": [
+4067,
+4088
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T053",
+"src": [
+4092,
+4109
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 16,
+"header": [
+"d20",
+"Item",
+"Value (c)"
+]
+},
+{
+"id": "T054",
+"src": [
+4119,
+4131
+],
+"rep": "cards",
+"scope": "column",
+"columns": 7,
+"rows": 11,
+"header": [
+"Shield",
+"Cost (c)",
+"AD",
+"STR Req",
+"DEX Pen",
+"Max Speed",
+"Rule"
+],
+"field_map": {
+"Shield": "entry.title.name",
+"Cost (c)": "entry.field",
+"AD": "entry.field",
+"STR Req": "entry.field",
+"DEX Pen": "entry.field",
+"Max Speed": "entry.field",
+"Rule": "entry.desc"
+}
+},
+{
+"id": "T055",
+"src": [
+4148,
+4169
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T056",
+"src": [
+4173,
+4194
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T057",
+"src": [
+4198,
+4219
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T058",
+"src": [
+4223,
+4244
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T059",
+"src": [
+4248,
+4269
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T060",
+"src": [
+4291,
+4312
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T061",
+"src": [
+4316,
+4337
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T062",
+"src": [
+4341,
+4362
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T063",
+"src": [
+4366,
+4387
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T064",
+"src": [
+4391,
+4412
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T065",
+"src": [
+4448,
+4469
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T066",
+"src": [
+4473,
+4494
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T067",
+"src": [
+4498,
+4519
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T068",
+"src": [
+4523,
+4544
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T069",
+"src": [
+4548,
+4569
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T070",
+"src": [
+4573,
+4594
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 20,
+"header": [
+"d20",
+"Item",
+"Cost (c)",
+"Effect"
+]
+},
+{
+"id": "T071",
+"src": [
+4600,
+4628
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 27,
+"header": [
+"Item",
+"Cost (c)",
+"In-Game Effect"
+]
+},
+{
+"id": "T072",
+"src": [
+4651,
+4655
+],
+"rep": "cards",
+"scope": "column",
+"columns": 6,
+"rows": 3,
+"header": [
+"d6",
+"Name",
+"Cost (c)",
+"Req",
+"AD/AV",
+"Rule"
+],
+"field_map": {
+"d6": "entry.title.roll",
+"Name": "entry.title.name",
+"Cost (c)": "entry.field",
+"Req": "entry.field",
+"AD/AV": "entry.field",
+"Rule": "entry.desc"
+}
+},
+{
+"id": "T073",
+"src": [
+4659,
+4663
+],
+"rep": "cards",
+"scope": "column",
+"columns": 6,
+"rows": 3,
+"header": [
+"d6",
+"Name",
+"Cost (c)",
+"Req",
+"AD/AV",
+"Rule"
+],
+"field_map": {
+"d6": "entry.title.roll",
+"Name": "entry.title.name",
+"Cost (c)": "entry.field",
+"Req": "entry.field",
+"AD/AV": "entry.field",
+"Rule": "entry.desc"
+}
+},
+{
+"id": "T074",
+"src": [
+4667,
+4671
+],
+"rep": "cards",
+"scope": "column",
+"columns": 6,
+"rows": 3,
+"header": [
+"d6",
+"Name",
+"Cost (c)",
+"Req",
+"AD/AV",
+"Rule"
+],
+"field_map": {
+"d6": "entry.title.roll",
+"Name": "entry.title.name",
+"Cost (c)": "entry.field",
+"Req": "entry.field",
+"AD/AV": "entry.field",
+"Rule": "entry.desc"
+}
+},
+{
+"id": "T075",
+"src": [
+4675,
+4679
+],
+"rep": "cards",
+"scope": "column",
+"columns": 6,
+"rows": 3,
+"header": [
+"d6",
+"Name",
+"Cost (c)",
+"Req",
+"AD/AV",
+"Rule"
+],
+"field_map": {
+"d6": "entry.title.roll",
+"Name": "entry.title.name",
+"Cost (c)": "entry.field",
+"Req": "entry.field",
+"AD/AV": "entry.field",
+"Rule": "entry.desc"
+}
+},
+{
+"id": "T076",
+"src": [
+4683,
+4686
+],
+"rep": "cards",
+"scope": "column",
+"columns": 6,
+"rows": 2,
+"header": [
+"d6",
+"Name",
+"Cost (c)",
+"Req",
+"AD/AV",
+"Rule"
+],
+"field_map": {
+"d6": "entry.title.roll",
+"Name": "entry.title.name",
+"Cost (c)": "entry.field",
+"Req": "entry.field",
+"AD/AV": "entry.field",
+"Rule": "entry.desc"
+}
+},
+{
+"id": "T077",
+"src": [
+4690,
+4701
+],
+"rep": "cards",
+"scope": "column",
+"columns": 6,
+"rows": 10,
+"header": [
+"d10",
+"Name",
+"Cost (c)",
+"Damage",
+"Traits",
+"Rule"
+],
+"field_map": {
+"d10": "entry.title.roll",
+"Name": "entry.title.name",
+"Cost (c)": "entry.field",
+"Damage": "entry.field",
+"Traits": "entry.field",
+"Rule": "entry.desc"
+}
+},
+{
+"id": "T078",
+"src": [
+4705,
+4716
+],
+"rep": "cards",
+"scope": "column",
+"columns": 6,
+"rows": 10,
+"header": [
+"d10",
+"Name",
+"Cost (c)",
+"Damage",
+"Traits",
+"Rule"
+],
+"field_map": {
+"d10": "entry.title.roll",
+"Name": "entry.title.name",
+"Cost (c)": "entry.field",
+"Damage": "entry.field",
+"Traits": "entry.field",
+"Rule": "entry.desc"
+}
+},
+{
+"id": "T079",
+"src": [
+4720,
+4731
+],
+"rep": "cards",
+"scope": "column",
+"columns": 6,
+"rows": 10,
+"header": [
+"d10",
+"Name",
+"Cost (c)",
+"Damage",
+"Traits",
+"Rule"
+],
+"field_map": {
+"d10": "entry.title.roll",
+"Name": "entry.title.name",
+"Cost (c)": "entry.field",
+"Damage": "entry.field",
+"Traits": "entry.field",
+"Rule": "entry.desc"
+}
+},
+{
+"id": "T080",
+"src": [
+4735,
+4746
+],
+"rep": "cards",
+"scope": "column",
+"columns": 6,
+"rows": 10,
+"header": [
+"d10",
+"Name",
+"Cost (c)",
+"Damage",
+"Traits",
+"Rule"
+],
+"field_map": {
+"d10": "entry.title.roll",
+"Name": "entry.title.name",
+"Cost (c)": "entry.field",
+"Damage": "entry.field",
+"Traits": "entry.field",
+"Rule": "entry.desc"
+}
+},
+{
+"id": "T081",
+"src": [
+4750,
+4761
+],
+"rep": "cards",
+"scope": "column",
+"columns": 6,
+"rows": 10,
+"header": [
+"d10",
+"Name",
+"Cost (c)",
+"Damage",
+"Traits",
+"Rule"
+],
+"field_map": {
+"d10": "entry.title.roll",
+"Name": "entry.title.name",
+"Cost (c)": "entry.field",
+"Damage": "entry.field",
+"Traits": "entry.field",
+"Rule": "entry.desc"
+}
+},
+{
+"id": "T082",
+"src": [
+4765,
+4786
+],
+"rep": "cards",
+"scope": "column",
+"columns": 12,
+"rows": 20,
+"header": [
+"d20",
+"Name",
+"Equipment Type",
+"AD/AV",
+"STR",
+"DEX",
+"INT",
+"SPI",
+"DEX Pen",
+"Max Speed",
+"Cost (c)",
+"Description"
+],
+"field_map": {
+"d20": "entry.title.roll",
+"Name": "entry.title.name",
+"Equipment Type": "entry.field",
+"AD/AV": "entry.field",
+"STR": "entry.field",
+"DEX": "entry.field",
+"INT": "entry.field",
+"SPI": "entry.field",
+"DEX Pen": "entry.field",
+"Max Speed": "entry.field",
+"Cost (c)": "entry.field",
+"Description": "entry.desc"
+}
+},
+{
+"id": "T083",
+"src": [
+4790,
+4801
+],
+"rep": "cards",
+"scope": "column",
+"columns": 9,
+"rows": 10,
+"header": [
+"d10",
+"Name",
+"Equipment Type",
+"STR",
+"DEX",
+"INT",
+"SPI",
+"Cost (c)",
+"Description"
+],
+"field_map": {
+"d10": "entry.title.roll",
+"Name": "entry.title.name",
+"Equipment Type": "entry.field",
+"STR": "entry.field",
+"DEX": "entry.field",
+"INT": "entry.field",
+"SPI": "entry.field",
+"Cost (c)": "entry.field",
+"Description": "entry.desc"
+}
+},
+{
+"id": "T084",
+"src": [
+4805,
+4826
+],
+"rep": "cards",
+"scope": "column",
+"columns": 9,
+"rows": 20,
+"header": [
+"d20",
+"Name",
+"Equipment Type",
+"STR",
+"DEX",
+"INT",
+"SPI",
+"Cost (c)",
+"Description"
+],
+"field_map": {
+"d20": "entry.title.roll",
+"Name": "entry.title.name",
+"Equipment Type": "entry.field",
+"STR": "entry.field",
+"DEX": "entry.field",
+"INT": "entry.field",
+"SPI": "entry.field",
+"Cost (c)": "entry.field",
+"Description": "entry.desc"
+}
+},
+{
+"id": "T085",
+"src": [
+5196,
+5202
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 5,
+"header": [
+"Tradition",
+"Usual Casting Score",
+"Failure Model",
+"Metal Equipment Restriction",
+"Distinctive Rule"
+]
+},
+{
+"id": "T086",
+"src": [
+5210,
+5216
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 5,
+"header": [
+"Tradition",
+"Primary Class Access",
+"Full Power List"
+]
+},
+{
+"id": "T087",
+"src": [
+5218,
+5221
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 2,
+"header": [
+"Tier",
+"Usual Use in Play",
+"Notes"
+]
+},
+{
+"id": "T088",
+"src": [
+7789,
+7791
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T089",
+"src": [
+7808,
+7810
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T090",
+"src": [
+7825,
+7827
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T091",
+"src": [
+7839,
+7841
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T092",
+"src": [
+7854,
+7856
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T093",
+"src": [
+7873,
+7875
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T094",
+"src": [
+7889,
+7891
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T095",
+"src": [
+7907,
+7909
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T096",
+"src": [
+7926,
+7928
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T097",
+"src": [
+7945,
+7947
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T098",
+"src": [
+7962,
+7964
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T099",
+"src": [
+7982,
+7984
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T100",
+"src": [
+8001,
+8003
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T101",
+"src": [
+8023,
+8025
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T102",
+"src": [
+8047,
+8049
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T103",
+"src": [
+8069,
+8071
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T104",
+"src": [
+8084,
+8086
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T105",
+"src": [
+8103,
+8105
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T106",
+"src": [
+8121,
+8123
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T107",
+"src": [
+8144,
+8146
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T108",
+"src": [
+8168,
+8170
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T109",
+"src": [
+8185,
+8187
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T110",
+"src": [
+8202,
+8204
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T111",
+"src": [
+8220,
+8222
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T112",
+"src": [
+8237,
+8239
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T113",
+"src": [
+8257,
+8259
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T114",
+"src": [
+8275,
+8277
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T115",
+"src": [
+8294,
+8296
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T116",
+"src": [
+8315,
+8317
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T117",
+"src": [
+8333,
+8335
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T118",
+"src": [
+8354,
+8356
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T119",
+"src": [
+8377,
+8379
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T120",
+"src": [
+8398,
+8400
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T121",
+"src": [
+8416,
+8418
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T122",
+"src": [
+8436,
+8438
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T123",
+"src": [
+8453,
+8455
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T124",
+"src": [
+8474,
+8476
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T125",
+"src": [
+8494,
+8496
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T126",
+"src": [
+8516,
+8518
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T127",
+"src": [
+8536,
+8538
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T128",
+"src": [
+8560,
+8562
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T129",
+"src": [
+8578,
+8580
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T130",
+"src": [
+8595,
+8597
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T131",
+"src": [
+8611,
+8613
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T132",
+"src": [
+8630,
+8632
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T133",
+"src": [
+8648,
+8650
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T134",
+"src": [
+8666,
+8668
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T135",
+"src": [
+8687,
+8689
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T136",
+"src": [
+8709,
+8711
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T137",
+"src": [
+8729,
+8731
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T138",
+"src": [
+8748,
+8750
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T139",
+"src": [
+8770,
+8772
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T140",
+"src": [
+8792,
+8794
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T141",
+"src": [
+8808,
+8810
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T142",
+"src": [
+8826,
+8828
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T143",
+"src": [
+8845,
+8847
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T144",
+"src": [
+8863,
+8865
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T145",
+"src": [
+8886,
+8888
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T146",
+"src": [
+8907,
+8909
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T147",
+"src": [
+8925,
+8927
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T148",
+"src": [
+8948,
+8950
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T149",
+"src": [
+8965,
+8967
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T150",
+"src": [
+8985,
+8987
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T151",
+"src": [
+9002,
+9004
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T152",
+"src": [
+9021,
+9023
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T153",
+"src": [
+9037,
+9039
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T154",
+"src": [
+9053,
+9055
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T155",
+"src": [
+9072,
+9074
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T156",
+"src": [
+9090,
+9092
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T157",
+"src": [
+9106,
+9108
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T158",
+"src": [
+9124,
+9126
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T159",
+"src": [
+9143,
+9145
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T160",
+"src": [
+9163,
+9165
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T161",
+"src": [
+9181,
+9183
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T162",
+"src": [
+9203,
+9205
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T163",
+"src": [
+9220,
+9222
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T164",
+"src": [
+9241,
+9243
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T165",
+"src": [
+9264,
+9266
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T166",
+"src": [
+9284,
+9286
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T167",
+"src": [
+9303,
+9305
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T168",
+"src": [
+9327,
+9329
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T169",
+"src": [
+9346,
+9348
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T170",
+"src": [
+9364,
+9366
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T171",
+"src": [
+9380,
+9382
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T172",
+"src": [
+9397,
+9399
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T173",
+"src": [
+9413,
+9415
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T174",
+"src": [
+9431,
+9433
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T175",
+"src": [
+9448,
+9450
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T176",
+"src": [
+9468,
+9470
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T177",
+"src": [
+9490,
+9492
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T178",
+"src": [
+9508,
+9510
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T179",
+"src": [
+9527,
+9529
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T180",
+"src": [
+9544,
+9546
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T181",
+"src": [
+9562,
+9564
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T182",
+"src": [
+9583,
+9585
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T183",
+"src": [
+9602,
+9604
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T184",
+"src": [
+9624,
+9626
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T185",
+"src": [
+9646,
+9648
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T186",
+"src": [
+9668,
+9670
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T187",
+"src": [
+9692,
+9694
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T188",
+"src": [
+9716,
+9718
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T189",
+"src": [
+9735,
+9737
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T190",
+"src": [
+9757,
+9759
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T191",
+"src": [
+9774,
+9776
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T192",
+"src": [
+9792,
+9794
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T193",
+"src": [
+9811,
+9813
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T194",
+"src": [
+9829,
+9831
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T195",
+"src": [
+9849,
+9851
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T196",
+"src": [
+9867,
+9869
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T197",
+"src": [
+9886,
+9888
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T198",
+"src": [
+9908,
+9910
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T199",
+"src": [
+9928,
+9930
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T200",
+"src": [
+9948,
+9950
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T201",
+"src": [
+9969,
+9971
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T202",
+"src": [
+9988,
+9990
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T203",
+"src": [
+10010,
+10012
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T204",
+"src": [
+10031,
+10033
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T205",
+"src": [
+10051,
+10053
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T206",
+"src": [
+10073,
+10075
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T207",
+"src": [
+10095,
+10097
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T208",
+"src": [
+10143,
+10145
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T209",
+"src": [
+10167,
+10169
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T210",
+"src": [
+10189,
+10191
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T211",
+"src": [
+10212,
+10214
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T212",
+"src": [
+10235,
+10237
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T213",
+"src": [
+10259,
+10261
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T214",
+"src": [
+10281,
+10283
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T215",
+"src": [
+10303,
+10305
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T216",
+"src": [
+10325,
+10327
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T217",
+"src": [
+10349,
+10351
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T218",
+"src": [
+10372,
+10374
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T219",
+"src": [
+10398,
+10400
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T220",
+"src": [
+10424,
+10426
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T221",
+"src": [
+10451,
+10453
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T222",
+"src": [
+10477,
+10479
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T223",
+"src": [
+10516,
+10527
+],
+"rep": "table",
+"scope": "column",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T224",
+"src": [
+10531,
+10542
+],
+"rep": "table",
+"scope": "column",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T225",
+"src": [
+10546,
+10557
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T226",
+"src": [
+10561,
+10572
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T227",
+"src": [
+10576,
+10587
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T228",
+"src": [
+10593,
+10604
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T229",
+"src": [
+10608,
+10619
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T230",
+"src": [
+10623,
+10634
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T231",
+"src": [
+10638,
+10649
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T232",
+"src": [
+10653,
+10664
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T233",
+"src": [
+10670,
+10681
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T234",
+"src": [
+10685,
+10696
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T235",
+"src": [
+10700,
+10711
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T236",
+"src": [
+10715,
+10726
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T237",
+"src": [
+10730,
+10741
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T238",
+"src": [
+10747,
+10758
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T239",
+"src": [
+10762,
+10773
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T240",
+"src": [
+10777,
+10788
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T241",
+"src": [
+10792,
+10803
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T242",
+"src": [
+10807,
+10818
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T243",
+"src": [
+10824,
+10835
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T244",
+"src": [
+10839,
+10850
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T245",
+"src": [
+10854,
+10865
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T246",
+"src": [
+10869,
+10880
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T247",
+"src": [
+10884,
+10895
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T248",
+"src": [
+10901,
+10912
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T249",
+"src": [
+10916,
+10927
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T250",
+"src": [
+10931,
+10942
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T251",
+"src": [
+10946,
+10957
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T252",
+"src": [
+10961,
+10972
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 10,
+"header": [
+"d10",
+"1 Hero",
+"2 Heroes",
+"3 Heroes",
+"4 Heroes"
+]
+},
+{
+"id": "T253",
+"src": [
+11008,
+11027
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 18,
+"header": [
+"Field",
+"Use"
+]
+},
+{
+"id": "T254",
+"src": [
+11045,
+11054
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 8,
+"header": [
+"1d8",
+"Direction"
+]
+},
+{
+"id": "T255",
+"src": [
+11083,
+11120
+],
+"rep": "table",
+"scope": "full",
+"columns": 5,
+"rows": 36,
+"header": [
+"Climate Roll",
+"Climate",
+"Scenario Roll",
+"Core Scenario",
+"Objective at a Glance"
+]
+},
+{
+"id": "T256",
+"src": [
+11896,
+11903
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 6,
+"header": [
+"1d6",
+"Weather Condition",
+"Effect"
+]
+},
+{
+"id": "T257",
+"src": [
+11907,
+11914
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 6,
+"header": [
+"1d6",
+"Weather Condition",
+"Effect"
+]
+},
+{
+"id": "T258",
+"src": [
+11920,
+11927
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 6,
+"header": [
+"1d6",
+"Cavern Condition",
+"Effect"
+]
+},
+{
+"id": "T259",
+"src": [
+11931,
+11938
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 6,
+"header": [
+"1d6",
+"Weather Condition",
+"Effect"
+]
+},
+{
+"id": "T260",
+"src": [
+11942,
+11949
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 6,
+"header": [
+"1d6",
+"Weather Condition",
+"Effect"
+]
+},
+{
+"id": "T261",
+"src": [
+11953,
+11960
+],
+"rep": "table",
+"scope": "full",
+"columns": 3,
+"rows": 6,
+"header": [
+"1d6",
+"Weather Condition",
+"Effect"
+]
+},
+{
+"id": "T262",
+"src": [
+12000,
+12002
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T263",
+"src": [
+12070,
+12072
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T264",
+"src": [
+12148,
+12150
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T265",
+"src": [
+12215,
+12217
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T266",
+"src": [
+12290,
+12292
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T267",
+"src": [
+12369,
+12371
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T268",
+"src": [
+12457,
+12459
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T269",
+"src": [
+12521,
+12523
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T270",
+"src": [
+12654,
+12656
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T271",
+"src": [
+12739,
+12741
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T272",
+"src": [
+12820,
+12822
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T273",
+"src": [
+12905,
+12907
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T274",
+"src": [
+12973,
+12975
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T275",
+"src": [
+13041,
+13043
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T276",
+"src": [
+13114,
+13116
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T277",
+"src": [
+13134,
+13136
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T278",
+"src": [
+13151,
+13153
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T279",
+"src": [
+13218,
+13220
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T280",
+"src": [
+13293,
+13295
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T281",
+"src": [
+13328,
+13330
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T282",
+"src": [
+13444,
+13446
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T283",
+"src": [
+13514,
+13516
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T284",
+"src": [
+13583,
+13585
+],
+"rep": "statstrip",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+]
+},
+{
+"id": "T285",
+"src": [
+13643,
+13645
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T286",
+"src": [
+13724,
+13726
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T287",
+"src": [
+13797,
+13799
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T288",
+"src": [
+13864,
+13866
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T289",
+"src": [
+13929,
+13931
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T290",
+"src": [
+13997,
+13999
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T291",
+"src": [
+14061,
+14063
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T292",
+"src": [
+14139,
+14141
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T293",
+"src": [
+14225,
+14227
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T294",
+"src": [
+14302,
+14304
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T295",
+"src": [
+14374,
+14376
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T296",
+"src": [
+14449,
+14451
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T297",
+"src": [
+14528,
+14530
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T298",
+"src": [
+14605,
+14607
+],
+"rep": "statcard",
+"scope": "column",
+"columns": 6,
+"rows": 1,
+"header": [
+"HP",
+"AV",
+"SPD",
+"LVL",
+"CV",
+"Sz"
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
+},
+{
+"id": "T299",
+"src": [
+14716,
+14723
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 6,
+"header": [
+"Competitive Scenario Type",
+"Solo/Co-op Objective",
+"Extraction Requirement"
+]
+},
+{
+"id": "T300",
+"src": [
+14743,
+14748
+],
+"rep": "cards",
+"scope": "column",
+"columns": 6,
+"rows": 4,
+"header": [
+"d4",
+"Pressure Clock",
+"Trigger",
+"Escalation",
+"Fail Threshold",
+"Mitigation"
+],
+"field_map": {
+"d4": "entry.title.roll",
+"Pressure Clock": "entry.title.name",
+"Trigger": "entry.desc",
+"Escalation": "entry.desc",
+"Fail Threshold": "entry.desc",
+"Mitigation": "entry.desc"
+}
+},
+{
+"id": "T301",
+"src": [
+14874,
+14880
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 5,
+"header": [
+"Total Heroes in Play",
+"Final Random Monster Groups"
+]
+},
+{
+"id": "T302",
+"src": [
+14888,
+14893
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 4,
+"header": [
+"LVL",
+"CV multiplier"
+]
+},
+{
+"id": "T303",
+"src": [
+14956,
+14961
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 4,
+"header": [
+"Starting Party Size",
+"Minimum Extracted Heroes"
+]
+},
+{
+"id": "T304",
+"src": [
+15001,
+15007
+],
+"rep": "table",
+"scope": "full",
+"columns": 3,
+"rows": 5,
+"header": [
+"Phase or Topic",
+"Reminder",
+"Full Rule"
+]
+},
+{
+"id": "T305",
+"src": [
+15141,
+15152
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 10,
+"header": [
+"Hero Level",
+"Retirement Payout"
+]
+},
+{
+"id": "T306",
+"src": [
+15204,
+15215
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 10,
+"header": [
+"d10",
+"Expedition Event"
+]
+},
+{
+"id": "T307",
+"src": [
+15255,
+15276
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 20,
+"header": [
+"d20",
+"Journey Result"
+]
+},
+{
+"id": "T308",
+"src": [
+15280,
+15301
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 20,
+"header": [
+"d20",
+"Journey Result"
+]
+},
+{
+"id": "T309",
+"src": [
+15305,
+15326
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 20,
+"header": [
+"d20",
+"Journey Result"
+]
+},
+{
+"id": "T310",
+"src": [
+15330,
+15351
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 20,
+"header": [
+"d20",
+"Journey Result"
+]
+},
+{
+"id": "T311",
+"src": [
+15355,
+15376
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 20,
+"header": [
+"d20",
+"Journey Result"
+]
+},
+{
+"id": "T312",
+"src": [
+15380,
+15401
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 20,
+"header": [
+"d20",
+"Journey Result"
+]
+},
+{
+"id": "T313",
+"src": [
+15495,
+15500
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 4,
+"header": [
+"Heroes in the Party",
+"Maximum Active Hirelings",
+"Per-Hero Control Limit"
+]
+},
+{
+"id": "T314",
+"src": [
+15516,
+15532
+],
+"rep": "cards",
+"scope": "column",
+"columns": 9,
+"rows": 15,
+"header": [
+"Hireling",
+"Min SPI",
+"Cost",
+"SPD",
+"Sz",
+"HP",
+"AV",
+"Attack",
+"Special Abilities"
+],
+"field_map": {
+"Hireling": "entry.title.name",
+"Min SPI": "entry.field",
+"Cost": "entry.field",
+"SPD": "entry.field",
+"Sz": "entry.field",
+"HP": "entry.field",
+"AV": "entry.field",
+"Attack": "entry.field",
+"Special Abilities": "entry.desc"
+}
+},
+{
+"id": "T315",
+"src": [
+15568,
+15580
+],
+"rep": "cards",
+"scope": "column",
+"columns": 9,
+"rows": 11,
+"header": [
+"Animal Companion",
+"Min SPI",
+"Cost",
+"SPD",
+"Sz",
+"HP",
+"AV",
+"Attack",
+"Special Abilities"
+],
+"field_map": {
+"Animal Companion": "entry.title.name",
+"Min SPI": "entry.field",
+"Cost": "entry.field",
+"SPD": "entry.field",
+"Sz": "entry.field",
+"HP": "entry.field",
+"AV": "entry.field",
+"Attack": "entry.field",
+"Special Abilities": "entry.desc"
+}
+},
+{
+"id": "T316",
+"src": [
+15593,
+15600
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 6,
+"header": [
+"Components already completed",
+"Cost of the next Component"
+]
+},
+{
+"id": "T317",
+"src": [
+15720,
+15731
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 10,
+"header": [
+"Stronghold Component",
+"Legendary Veteran Benefit"
+]
+},
+{
+"id": "T318",
+"src": [
+15796,
+15803
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 6,
+"header": [
+"Finale Climate",
+"Roll",
+"Triumph Minion"
+]
+},
+{
+"id": "T319",
+"src": [
+16049,
+16066
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 16,
+"header": [
+"d20",
+"Triumph Boss"
+]
+},
+{
+"id": "T320",
+"src": [
+16084,
+16092
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 7,
+"header": [
+"Element",
+"Learn-to-Play Rule"
+]
+},
+{
+"id": "T321",
+"src": [
+16356,
+16367
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 10,
+"header": [
+"Element",
+"Starting Position"
+]
+},
+{
+"id": "T322",
+"src": [
+16521,
+16531
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 9,
+"header": [
+"Element",
+"Basic Mode Rule"
+]
+},
+{
+"id": "T323",
+"src": [
+17128,
+17142
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 13,
+"header": [
+"Topic",
+"Reference"
+]
+},
+{
+"id": "T324",
+"src": [
+17197,
+17210
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 12,
+"header": [
+"Abbreviation",
+"Meaning"
+]
+},
+{
+"id": "T325",
+"src": [
+17220,
+17238
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 17,
+"header": [
+"Condition",
+"Effect",
+"Ends When"
+]
+},
+{
+"id": "T326",
+"src": [
+17246,
+17261
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 14,
+"header": [
+"Action",
+"AP Cost",
+"Effect"
+]
+},
+{
+"id": "T327",
+"src": [
+17267,
+17272
+],
+"rep": "table",
+"scope": "full",
+"columns": 4,
+"rows": 4,
+"header": [
+"Reaction",
+"AP Cost",
+"Trigger",
+"Effect"
+]
+},
+{
+"id": "T328",
+"src": [
+17823,
+17828
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 4,
+"header": [
+"Sz",
+"Footprint"
+]
+},
+{
+"id": "T329",
+"src": [
+17851,
+17863
+],
+"rep": "table",
+"scope": "column",
+"columns": 3,
+"rows": 11,
+"header": [
+"Action",
+"Cost",
+"Summary"
+]
+},
+{
+"id": "T330",
+"src": [
+17881,
+17886
+],
+"rep": "table",
+"scope": "column",
+"columns": 4,
+"rows": 4,
+"header": [
+"Reaction",
+"Cost",
+"Trigger",
+"Summary"
+]
+},
+{
+"id": "T331",
+"src": [
+17905,
+17922
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 16,
+"header": [
+"Condition",
+"Summary"
+]
+},
+{
+"id": "T332",
+"src": [
+17954,
+17965
+],
+"rep": "table",
+"scope": "column",
+"columns": 2,
+"rows": 10,
+"header": [
+"Procedure",
+"Rule"
+]
+}
+]

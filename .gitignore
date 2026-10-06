@@ -13,3 +13,8 @@ production/private/
 
 # Optional commercial reference evidence is local by default.
 references/private/
+
+# Generated build intermediates (reproducible via `make`)
+build/
+typst/content.typ
+fonts/variable/
