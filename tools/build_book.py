@@ -97,6 +97,14 @@ def first_text(b) -> str:
     return s.strip()
 
 
+def is_caption(b) -> bool:
+    """A paragraph consisting solely of one short bold run (e.g. **APL 1–2 (d10)**)."""
+    if b["type"] != "para":
+        return False
+    nodes = [n for n in b["c"] if not (n["t"] == "text" and not n["v"].strip())]
+    return len(nodes) == 1 and nodes[0]["t"] == "strong" and len(first_text(b)) <= 60
+
+
 def is_example(b) -> bool:
     if b["type"] != "para" or not b["c"]:
         return False
@@ -118,11 +126,58 @@ class Book:
             self._anchors(ch["blocks"], anchors)
         self.em = Emitter(anchors)
         self.seg_count = 0
+        self.seg_sigs = {}
         self.table_map = []
         self.block_map = []   # (block id, src span, representation, segment)
         self.out = []
         self.fig_slots = json.loads((ROOT / "figures/placements.json").read_text()) if (ROOT / "figures/placements.json").exists() else {}
         self.index_targets = json.loads((BUILD / "index_targets.json").read_text()) if (BUILD / "index_targets.json").exists() else {}
+        self.tclass = self._classify_all()
+
+    def _classify_all(self):
+        """Classify every table, then unify families (same header signature within the
+        same H3 section) so that sibling tables share one representation and widths."""
+        from tables import measure_table, allocate, est_height
+        tabs = []
+        def walk(bs, sec):
+            for b in bs:
+                if b["type"] == "heading" and b["level"] <= 3:
+                    sec = b["id"]
+                if b["type"] == "table":
+                    tabs.append((b, sec))
+                for it in b.get("items", []):
+                    walk(it["blocks"], sec)
+                walk(b.get("blocks", []), sec)
+            return sec
+        sec = None
+        for ch in self.model["chapters"]:
+            sec = walk(ch["blocks"], sec)
+        res, fam = {}, {}
+        for b, sec in tabs:
+            c = classify(b, None)
+            res[b["id"]] = c
+            fam.setdefault((sec, tuple(c["header"])), []).append(b)
+        self.families = {}
+        for key, members in fam.items():
+            if len(members) < 2:
+                continue
+            cs = [res[m["id"]] for m in members]
+            for m in members:
+                self.families[m["id"]] = members[0]["id"]
+            if any(c["rep"] in ("cards", "stat", "statcard") for c in cs) or len({c["rep"] for c in cs}) > 1:
+                continue
+            scope = "full" if any(c["scope"] == "full" for c in cs) else "column"
+            mins = [max(x) for x in zip(*[measure_table(m)[0] for m in members])]
+            maxs = [max(x) for x in zip(*[measure_table(m)[1] for m in members])]
+            w, _ = allocate(mins, maxs, FULL_W if scope == "full" else COL_W)
+            if w is None:
+                continue
+            for m, c in zip(members, cs):
+                c["scope"] = scope
+                c["widths"] = [round(x, 2) for x in w]
+                c["max_pt"] = [round(x, 1) for x in maxs]
+                c["family"] = members[0]["id"]
+        return res
 
     def _anchors(self, bs, acc):
         for b in bs:
@@ -185,7 +240,7 @@ class Book:
         return f"#note-box[{inner}]"
 
     def table(self, b, force_column=False):
-        c = classify(b, None)
+        c = self.tclass[b["id"]]
         hdr = [self.em.inl(h) for h in b["header"]]
         rows = [[self.em.inl(cell) for cell in r] for r in b["rows"]]
         rep = c["rep"]
@@ -208,6 +263,8 @@ class Book:
         else:
             s = self._plain_table(b, c, hdr, rows)
         mapping["scope"] = c["scope"]
+        if "family" in c:
+            mapping["family"] = c["family"]
         self.table_map.append(mapping)
         return s, c["scope"]
 
@@ -296,7 +353,7 @@ class Book:
             i = 2
         first = ch is self.model["chapters"][2] if len(self.model["chapters"]) > 2 else False
         if num and num.startswith("1.") and title.startswith("1. "):
-            self.out.append("#mainmatter()\n")
+            self.out.append("#mainmatter()\n#set page(numbering: \"1\")\n#counter(page).update(1)\n")
         self.block_map.append((h["id"], h["src"], "chapter-opener", None))
         numlit = f"[#{lit(num)}]" if num else "none"
         self.out.append(f"#chapter-opener({numlit}, [#{lit(rest)}], {lit(h['id'])}, lead: {('[' + lead + ']') if lead else 'none'})\n")
@@ -315,13 +372,14 @@ class Book:
                 if scope == "full":
                     # carry immediately preceding heading(s) with the full-width table
                     carry = []
-                    while cur and cur[-1][0]["type"] == "heading":
+                    while cur and (cur[-1][0]["type"] == "heading" or is_caption(cur[-1][0])):
                         carry.insert(0, cur.pop())
                     self.flush(cur)
                     cur = []
                     body = "".join(x[1] for x in carry) + s
+                    body = body.replace("#pm(", "#pmx(")
                     for x in carry:
-                        self.block_map.append((x[0]["id"], x[0]["src"], "full-width-heading", None))
+                        self.block_map.append((x[0]["id"], x[0]["src"], "full-width-caption", None))
                     self.block_map.append((b["id"], b["src"], "table-full", None))
                     self.out.append(f"#full[{body}]\n")
                     continue
@@ -356,7 +414,10 @@ class Book:
             return
         sid = self.seg_count
         self.seg_count += 1
-        tail = self.balance.get(str(sid))
+        sig = f"{pieces[0][0]['id']}:{len(pieces)}"
+        self.seg_sigs[str(sid)] = sig
+        entry = self.balance.get(str(sid))
+        tail = entry[1] if entry and entry[0] == sig and len(pieces) - entry[1] <= 60 else None
         parts = []
         for j, (b, s) in enumerate(pieces):
             self.block_map.append((b["id"], b["src"], "column", sid))
@@ -392,7 +453,7 @@ TOP_Y = 0.65 * 72
 BODY_BOTTOM = 792 - 0.7 * 72
 
 
-def compute_balance(pm, prev):
+def compute_balance(pm, prev, sigs):
     """Decide, per segment, from which piece the tail on its last page should be balanced."""
     segs = {}
     for m in pm:
@@ -403,8 +464,9 @@ def compute_balance(pm, prev):
         end = [m for m in ms if m["edge"] == "e"][0]
         L = end["page"]
         pt = prev.get(str(sid))
+        pt = pt[1] if pt and pt[0] == sigs.get(str(sid)) else None
         if pt is not None and pt < len(starts) and starts[pt]["page"] == L:
-            res[str(sid)] = pt   # hysteresis: previous tail still sits on the last page
+            res[str(sid)] = [sigs[str(sid)], pt]   # hysteresis: previous tail still sits on the last page
             continue
         on_last = [m for m in starts if m["page"] == L]
         if not on_last:
@@ -421,7 +483,7 @@ def compute_balance(pm, prev):
                 else:
                     continue
         # skip when the last page is already essentially full in both columns
-        res[str(sid)] = t
+        res[str(sid)] = [sigs[str(sid)], t]
     return res
 
 
@@ -440,7 +502,7 @@ def main():
         book = Book(model, balance)
         (ROOT / "typst/content.typ").write_text(book.emit())
         out, dt, pm = compile_book(a.variant)
-        new = compute_balance(pm, balance) if not a.no_balance else {}
+        new = compute_balance(pm, balance, book.seg_sigs) if not a.no_balance else {}
         print(f"pass {p+1}: {dt:.1f}s, segments={book.seg_count}, balanced={len(new)}, changed={sum(1 for k in set(new)|set(balance) if new.get(k)!=balance.get(k))}")
         if new == balance or a.no_balance:
             break

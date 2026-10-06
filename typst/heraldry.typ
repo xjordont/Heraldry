@@ -140,7 +140,7 @@
       #motif(len: 80pt)
       #v(10pt)
       #if num != none [
-        #text(font: display, size: 13pt, weight: 600, tracking: 0.18em, fill: ink2, num)
+        #text(font: display, size: 13pt, weight: 600, fill: ink2, num)
         #v(2pt)
       ]
       #set par(leading: 6pt)
@@ -152,7 +152,7 @@
       v(10pt)
       align(center, block(width: 78%)[
         #set par(justify: false, leading: 3.4pt)
-        #set text(size: 10.5pt, style: "italic", fill: ink)
+        #set text(size: 10.5pt, fill: ink)
         #lead
       ])
     }
@@ -163,6 +163,7 @@
 #let seg-gap = gap
 #let pm(seg, piece, edge) = context [#metadata((seg: seg, piece: piece, edge: edge, page: here().page(), y: here().position().y.pt(), x: here().position().x.pt())) <pm>]
 
+#let pmx(..args) = none
 #let seg(body) = columns(2, gutter: gap, body)
 
 // Balanced tail: pieces are top-level blocks that sat on one page in the previous pass.
@@ -172,10 +173,16 @@
   let ps = pieces.pos()
   let n = ps.len()
   let stack(a, b) = measure(block(width: col-w, { for p in ps.slice(a, b) { p } })).height
+  // prefix height grows and suffix height shrinks with k: binary search the crossing.
+  let lo = 1
+  let hi = n - 1
   let best = stack(0, n)
-  for k in range(1, n) {
-    let h = calc.max(stack(0, k), stack(k, n))
-    if h < best { best = h }
+  while lo <= hi {
+    let k = calc.div-euclid(lo + hi, 2)
+    let a = stack(0, k)
+    let b = stack(k, n)
+    best = calc.min(best, calc.max(a, b))
+    if a < b { lo = k + 1 } else { hi = k - 1 }
   }
   let avail = body-bottom - here().position().y
   if best + 14pt > avail {
@@ -188,10 +195,8 @@
 #let full(body) = block(width: 100%, above: 8pt, below: 10pt, body)
 
 // ---------------------------------------------------------------- body components
-#let flavour(body) = block(above: 4pt, below: 8pt)[
-  #set text(style: "italic")
-  #body
-]
+// Flavour text: the source marks it with emphasis, so the italic comes from #emph.
+#let flavour(body) = block(above: 4pt, below: 8pt, body)
 
 #let example(body) = block(width: 100%, above: 8pt, below: 10pt, breakable: true,
   stroke: (left: 1pt + ink), inset: (left: 8pt, top: 2pt, bottom: 2pt, right: 0pt))[
@@ -211,11 +216,12 @@
 }
 
 #let htable(id, widths, aligns, header, rows, kind: "table", title: none) = {
-  set text(font: sans, size: 9.5pt, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining", number-width: "tabular")
+  set text(font: sans, size: 9.5pt, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining", number-width: "tabular", hyphenate: false)
   set par(leading: 2.6pt, spacing: 4pt)
   set strong(delta: 200)
   let n = widths.len()
   let fills = (x, y) => if y > 0 and calc.even(y) { band } else { none }
+  set table.cell(breakable: false)   // keep ordinary rows intact
   block(width: 100%, above: 8pt, below: 10pt, breakable: true)[
     #metadata(id) #label("tbl-" + id)
     #table(
@@ -280,7 +286,7 @@
         ]
         #if e.fields.len() > 0 {
           set text(font: sans, size: 9.5pt, number-type: "lining")
-          block(below: 3pt, e.fields.map(((k, v)) => box[#text(weight: 600, fill: ink2, k) #v]).join(h(4pt) + text(fill: rule-ink, "·") + h(4pt)))
+          block(below: 3pt, e.fields.map(((k, v)) => box[#text(weight: 600, fill: ink2, k)#h(3pt)#v]).join(h(9pt, weak: true)))
         }
         #for (k, v) in e.desc {
           block(below: 2pt)[#text(font: sans, size: 9.5pt, weight: 600, fill: ink2, k) #h(2pt) #text(size: 10pt, v)]
