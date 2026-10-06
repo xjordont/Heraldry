@@ -1,0 +1,4 @@
+{
+  "policy": "Explicit patches applied to a separate publication text layer by tools/parse_source.py; source/Heraldry_RC484.md is never modified. Only demonstrably mechanical corrections with a uniquely supported interpretation are eligible.",
+  "patches": []
+}

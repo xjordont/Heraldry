@@ -1,0 +1,47 @@
+{
+ "pages": {
+  "cream": 419,
+  "white": 419
+ },
+ "substrate_edges": {
+  "cream": [],
+  "white": []
+ },
+ "page_map_identical": false,
+ "page_text_differences": [
+  1
+ ],
+ "links": {
+  "cream": {
+   "internal_links": 1262,
+   "unresolved_links": 0,
+   "examples": [],
+   "bookmarks": 551,
+   "bookmark_levels": {
+    "1": 15,
+    "2": 134,
+    "3": 402
+   },
+   "bookmarks_bad_target": 0
+  },
+  "white": {
+   "internal_links": 1262,
+   "unresolved_links": 0,
+   "examples": [],
+   "bookmarks": 551,
+   "bookmark_levels": {
+    "1": 15,
+    "2": 134,
+    "3": 402
+   },
+   "bookmarks_bad_target": 0
+  }
+ },
+ "rasters": [],
+ "page_labels_sample": [
+  "ageLabeli",
+  "ageLabel204",
+  "ageLabel413"
+ ],
+ "status": "FAIL"
+}

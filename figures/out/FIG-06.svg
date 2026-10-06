@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="242pt" viewBox="0 0 504 242">
+<title>FIG-06</title>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="13" height="13" fill="#000"/>
+<text x="6.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Grid Mode melee bands (5.1)</text>
+<rect x="4" y="24" width="110" height="110" fill="#fff"/>
+<line x1="4" y1="24" x2="4" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="26" y1="24" x2="26" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="48" y1="24" x2="48" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="70" y1="24" x2="70" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="92" y1="24" x2="92" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="114" y1="24" x2="114" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="24" x2="114" y2="24" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="46" x2="114" y2="46" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="68" x2="114" y2="68" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="90" x2="114" y2="90" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="112" x2="114" y2="112" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="134" x2="114" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="4" y="24" width="110" height="110" fill="none" stroke="#000" stroke-width="0.9"/>
+<rect x="4.4" y="24.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="26.4" y="24.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="48.4" y="24.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="70.4" y="24.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="92.4" y="24.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="4.4" y="46.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="26.4" y="46.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="48.4" y="46.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="70.4" y="46.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="92.4" y="46.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="4.4" y="68.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="26.4" y="68.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="70.4" y="68.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="92.4" y="68.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="4.4" y="90.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="26.4" y="90.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="48.4" y="90.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="70.4" y="90.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="92.4" y="90.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="4.4" y="112.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="26.4" y="112.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="48.4" y="112.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="70.4" y="112.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<rect x="92.4" y="112.4" width="21.2" height="21.2" fill="#f0f0f0"/>
+<line x1="4" y1="24" x2="4" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="26" y1="24" x2="26" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="48" y1="24" x2="48" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="70" y1="24" x2="70" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="92" y1="24" x2="92" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="114" y1="24" x2="114" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="24" x2="114" y2="24" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="46" x2="114" y2="46" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="68" x2="114" y2="68" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="90" x2="114" y2="90" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="112" x2="114" y2="112" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="134" x2="114" y2="134" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="4" y="24" width="110" height="110" fill="none" stroke="#000" stroke-width="0.9"/>
+<circle cx="59" cy="79" r="7" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="81" cy="57" r="7" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="81" cy="57" r="1.96" fill="#000"/>
+<polygon points="22.02,123 18.51,129.08 11.49,129.08 7.98,123 11.49,116.92 18.51,116.92" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<text x="122" y="36" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Adjacent: the 8 surrounding</text>
+<text x="122" y="47" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">squares. A melee attack</text>
+<text x="122" y="58" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">normally targets these.</text>
+<rect x="122" y="70" width="12" height="9" fill="#d9d9d9" stroke="#000" stroke-width="0.6"/>
+<text x="138" y="78" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">adjacent (1 square)</text>
+<rect x="122" y="84" width="12" height="9" fill="#f0f0f0" stroke="#000" stroke-width="0.6"/>
+<text x="138" y="92" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">within Reach (2 squares)</text>
+<text x="4" y="146" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Engaged</tspan><tspan font-weight="400"> = adjacent to at least one enemy: the Party B</tspan></text>
+<text x="4" y="156.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant is adjacent, so both are Engaged. The Monster is</text>
+<text x="4" y="167.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">within Reach distance but not adjacent, so it does not Engage.</text>
+<text x="4" y="177.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Tabletop Mode: melee 1", Reach 2". Reach does not change</text>
+<text x="4" y="188.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Engagement.</text>
+<rect x="262" y="0" width="13" height="13" fill="#000"/>
+<text x="268.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="280" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Leaving melee distance (4.4.4, 5.5.4)</text>
+<rect x="264" y="26" width="110" height="66" fill="#fff"/>
+<line x1="264" y1="26" x2="264" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="286" y1="26" x2="286" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="308" y1="26" x2="308" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="330" y1="26" x2="330" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="352" y1="26" x2="352" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="374" y1="26" x2="374" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="264" y1="26" x2="374" y2="26" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="264" y1="48" x2="374" y2="48" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="264" y1="70" x2="374" y2="70" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="264" y1="92" x2="374" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="264" y="26" width="110" height="66" fill="none" stroke="#000" stroke-width="0.9"/>
+<rect x="264.4" y="26.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="286.4" y="26.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="308.4" y="26.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="264.4" y="48.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="308.4" y="48.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="264.4" y="70.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="286.4" y="70.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="308.4" y="70.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<line x1="264" y1="26" x2="264" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="286" y1="26" x2="286" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="308" y1="26" x2="308" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="330" y1="26" x2="330" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="352" y1="26" x2="352" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="374" y1="26" x2="374" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="264" y1="26" x2="374" y2="26" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="264" y1="48" x2="374" y2="48" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="264" y1="70" x2="374" y2="70" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="264" y1="92" x2="374" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="264" y="26" width="110" height="66" fill="none" stroke="#000" stroke-width="0.9"/>
+<circle cx="297" cy="59" r="5.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="297" cy="59" r="1.6" fill="#000"/>
+<circle cx="319" cy="59" r="5.4" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="1.6 2"/>
+<line x1="325" y1="59" x2="350" y2="59" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="357,59 350,62.4 350,55.6" fill="#000"/>
+<circle cx="363" cy="59" r="5.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="319" y="103" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Move [1 AP]</text>
+<text x="319" y="114" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Reflex Attack triggers</text>
+<circle cx="325" cy="48" r="5.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="325" y="51.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<rect x="386" y="26" width="110" height="66" fill="#fff"/>
+<line x1="386" y1="26" x2="386" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="408" y1="26" x2="408" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="430" y1="26" x2="430" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="452" y1="26" x2="452" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="474" y1="26" x2="474" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="496" y1="26" x2="496" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386" y1="26" x2="496" y2="26" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386" y1="48" x2="496" y2="48" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386" y1="70" x2="496" y2="70" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386" y1="92" x2="496" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="386" y="26" width="110" height="66" fill="none" stroke="#000" stroke-width="0.9"/>
+<rect x="386.4" y="26.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="408.4" y="26.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="430.4" y="26.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="386.4" y="48.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="430.4" y="48.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="386.4" y="70.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="408.4" y="70.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<rect x="430.4" y="70.4" width="21.2" height="21.2" fill="#d9d9d9"/>
+<line x1="386" y1="26" x2="386" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="408" y1="26" x2="408" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="430" y1="26" x2="430" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="452" y1="26" x2="452" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="474" y1="26" x2="474" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="496" y1="26" x2="496" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386" y1="26" x2="496" y2="26" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386" y1="48" x2="496" y2="48" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386" y1="70" x2="496" y2="70" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386" y1="92" x2="496" y2="92" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="386" y="26" width="110" height="66" fill="none" stroke="#000" stroke-width="0.9"/>
+<circle cx="419" cy="59" r="5.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="419" cy="59" r="1.6" fill="#000"/>
+<circle cx="441" cy="59" r="5.4" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="1.6 2"/>
+<line x1="447" y1="59" x2="450" y2="59" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="457,59 450,62.4 450,55.6" fill="#000"/>
+<circle cx="463" cy="59" r="5.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="441" y="103" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Shift [1 AP]</text>
+<text x="441" y="114" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">No Reflex Attack</text>
+<text x="262" y="128" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Move</tspan><tspan font-weight="400"> away from the Party B combatant's melee distance: that</tspan></text>
+<text x="262" y="138.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant may spend 1 AP on a Reflex Attack (base damage</text>
+<text x="262" y="149.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">dice with Disadvantage). It resolves at the trigger point (1),</text>
+<text x="262" y="159.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">before the mover leaves. </tspan><tspan font-weight="700">Shift</tspan><tspan font-weight="400"> (1" , 1 AP) and forced movement</tspan></text>
+<text x="262" y="170.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">do not trigger it.</text>
+<text x="0" y="213" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
+<circle cx="31.88" cy="213" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="48.88" y="216" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A</text>
+<circle cx="94.56" cy="213" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="94.56" cy="213" r="1.68" fill="#000"/>
+<text x="111.56" y="216" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B</text>
+<polygon points="164.13,213 160.89,218.61 154.41,218.61 151.17,213 154.41,207.39 160.89,207.39" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<text x="174.65" y="216" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster</text>
+<rect x="217.4" y="207.5" width="16" height="11" fill="#d9d9d9" stroke="#000" stroke-width="0.8"/>
+<text x="241.4" y="216" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">adjacent / enemy melee band</text>
+<rect x="364.66" y="207.5" width="16" height="11" fill="#f0f0f0" stroke="#000" stroke-width="0.8"/>
+<text x="388.66" y="216" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reach band</text>
+<circle cx="9" cy="228" r="6" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="1.6 2"/>
+<text x="26" y="231" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">starting position</text>
+<line x1="97.9" y1="228" x2="110.9" y2="228" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="117.9,228 110.9,231.4 110.9,224.6" fill="#000"/>
+<text x="123.9" y="231" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Move / Shift path</text>
+<circle cx="206.59" cy="228" r="6.2" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="206.59" y="231.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="223.59" y="231" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">step</text>
+</svg>

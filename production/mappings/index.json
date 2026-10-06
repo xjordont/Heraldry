@@ -1,0 +1,3719 @@
+[
+{
+"term": "Acid",
+"key": "g-acid",
+"locators": [
+"B17388"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Active Party",
+"key": "g-active-party",
+"locators": [
+"B17390",
+"h-1112-active-party-roster-and-bench",
+"B15017"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Adamantine",
+"key": "g-adamantine",
+"locators": [
+"B17392",
+"h-76-treasure-tables"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Adjacent",
+"key": "g-adjacent",
+"locators": [
+"B17394"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Advantage",
+"key": "g-advantage",
+"locators": [
+"B17396",
+"h-241-attack-advantage-and-disadvantage",
+"B03423"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Aftermath",
+"see": "Aftermath Phase",
+"source": "B17398"
+},
+{
+"term": "Aftermath Phase",
+"key": "g-aftermath-phase",
+"locators": [
+"B17400",
+"h-112-the-campaign-cycle",
+"B15195",
+"B17365"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "AI Step",
+"key": "g-ai-step",
+"locators": [
+"B17402",
+"h-d-ai-step-abilities",
+"h-hostile-ai-step-1-example"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Allied",
+"key": "g-allied",
+"locators": [
+"B17404",
+"h-1051-allied-force-size"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Ally",
+"key": "g-ally",
+"locators": [
+"B17406"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "AP",
+"key": "g-ap",
+"locators": [
+"B17408",
+"h-332-unspent-ap-and-reactions",
+"h-431-interact-1-ap",
+"h-432-hide-1-ap",
+"B00412",
+"B03127"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "APL",
+"key": "g-apl",
+"locators": [
+"B17410",
+"h-614-average-party-level-apl",
+"h-tier-1-treasure-table-apl-12",
+"h-tier-2-treasure-table-apl-34",
+"B03202",
+"B14814"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Arcane",
+"key": "g-arcane",
+"locators": [
+"B17412",
+"h-tier-1-arcane-scrolls",
+"h-tier-2-arcane-scrolls",
+"h-tier-3-arcane-scrolls"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Area of Effect",
+"key": "g-area-of-effect",
+"locators": [
+"B17414",
+"h-273-areas-of-effect"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Armour Dice (AD)",
+"key": "g-armour-dice-ad",
+"locators": [
+"B17416",
+"B01601"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Armour Value (AV)",
+"key": "g-armour-value-av",
+"locators": [
+"B17418",
+"B01596"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Aura",
+"key": "g-aura",
+"locators": [
+"B17420",
+"h-273-areas-of-effect",
+"h-26-measurement-size-distances-and-rounding"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Awake",
+"key": "g-awake",
+"locators": [
+"B17422",
+"h-1066-monster-deployment-and-awake-groups",
+"h-1067-scenario-specific-awake-groups",
+"B07578",
+"B07608"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Base Damage Dice",
+"key": "g-base-damage-dice",
+"locators": [
+"B17424"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Beast",
+"key": "g-beast",
+"locators": [
+"B17426",
+"B07682",
+"B07798",
+"B07897"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Bench",
+"key": "g-bench",
+"locators": [
+"B17428",
+"h-1112-active-party-roster-and-bench",
+"B15019"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Bleeding",
+"key": "g-bleeding",
+"locators": [
+"B17430",
+"h-bleeding",
+"B01826"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Blinded",
+"key": "g-blinded",
+"locators": [
+"B17432",
+"h-blinded",
+"B01832"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Block",
+"key": "g-block",
+"locators": [
+"B17434",
+"h-551-block-1-ap"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Blocking Terrain",
+"key": "g-blocking-terrain",
+"locators": [
+"B17436",
+"B00840"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Blood Price",
+"key": "g-blood-price",
+"locators": [
+"B17438",
+"B06294"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Blood Surge",
+"key": "g-blood-surge",
+"locators": [
+"B17440",
+"B03103"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Blunt",
+"key": "g-blunt",
+"locators": [
+"B17442",
+"B17295"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Boss",
+"key": "g-boss",
+"locators": [
+"B17444"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Boss Scale",
+"key": "g-boss-scale",
+"locators": [
+"B17446",
+"h-97-the-bestiary"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Burning",
+"key": "g-burning",
+"locators": [
+"B17448",
+"h-burning"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Carried Objective",
+"key": "g-carried-objective",
+"locators": [
+"B17450"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Caster Supremacy",
+"key": "g-caster-supremacy",
+"locators": [
+"B17452",
+"B02697"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Casting Check",
+"key": "g-casting-check",
+"locators": [
+"B17454"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Celestial",
+"key": "g-celestial",
+"locators": [
+"B17456"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Check",
+"key": "g-check",
+"locators": [
+"B17458",
+"h-23-ability-checks"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Climb",
+"key": "g-climb",
+"locators": [
+"B17460",
+"h-448-climb"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Coin Value",
+"key": "g-coin-value",
+"locators": [
+"B17462"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Coins",
+"key": "g-coins",
+"locators": [
+"B17464"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Collision",
+"key": "g-collision",
+"locators": [
+"B17466",
+"h-446-forced-movement"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Combatant",
+"key": "g-combatant",
+"locators": [
+"B17468",
+"h-331-activating-a-combatant"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Cover",
+"key": "g-cover",
+"locators": [
+"B17470",
+"h-28-cover-light-hidden-and-visibility",
+"h-284-cover",
+"h-grid-los-and-cover-example",
+"B00758",
+"B00802",
+"B00808"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Cover Terrain",
+"key": "g-cover-terrain",
+"locators": [
+"B17472",
+"B00688",
+"B00836"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Critical Cast",
+"key": "g-critical-cast",
+"locators": [
+"B17474",
+"h-82-casting-powers",
+"B05435"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Critical Failure",
+"key": "g-critical-failure",
+"locators": [
+"B17476"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Critical Hit",
+"key": "g-critical-hit",
+"locators": [
+"B17478",
+"B01527",
+"B04927"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Critical Success",
+"key": "g-critical-success",
+"locators": [
+"B17480"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Cursed",
+"key": "g-cursed",
+"locators": [
+"B17482",
+"h-cursed",
+"B01844",
+"B14078"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Dangerous Terrain",
+"key": "g-dangerous-terrain",
+"locators": [
+"B17484",
+"h-294-dangerous-terrain",
+"B00886",
+"B17941"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Darkness",
+"key": "g-darkness",
+"locators": [
+"B17486",
+"h-283-darkness",
+"B00767",
+"B00785",
+"B17946"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Darkvision",
+"key": "g-darkvision",
+"locators": [
+"B17488",
+"B02157"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Declared State",
+"key": "g-declared-state",
+"locators": [
+"B17490",
+"h-261-declared-movement-and-positional-state"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Deep Water",
+"key": "g-deep-water",
+"locators": [
+"B17492",
+"h-297-deep-water",
+"B00889",
+"B17943"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "DEX Check",
+"key": "g-dex-check",
+"locators": [
+"B17494"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "DEX Pen",
+"key": "g-dex-pen",
+"locators": [
+"B17496",
+"h-710-armour"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Difficult Terrain",
+"key": "g-difficult-terrain",
+"locators": [
+"B17498",
+"h-293-difficult-terrain",
+"B00885",
+"B00891",
+"B01380"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Disadvantage",
+"key": "g-disadvantage",
+"locators": [
+"B17500",
+"h-241-attack-advantage-and-disadvantage"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Dodge",
+"key": "g-dodge",
+"locators": [
+"B17502",
+"h-552-dodge-1-ap",
+"B01500"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Elevation",
+"key": "g-elevation",
+"locators": [
+"B17504",
+"h-299-elevation",
+"B00939",
+"B17948"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Empower",
+"key": "g-empower",
+"locators": [
+"B17506",
+"h-82-casting-powers",
+"h-empower",
+"B05318"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Enemy",
+"key": "g-enemy",
+"locators": [
+"B17508"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Engaged",
+"key": "g-engaged",
+"locators": [
+"B17510",
+"B07631"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Explosion",
+"key": "g-explosion",
+"locators": [
+"B17512",
+"h-273-areas-of-effect"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Extract",
+"key": "g-extract",
+"locators": [
+"B17514"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Falling",
+"key": "g-falling",
+"locators": [
+"B17516",
+"h-4410-falling"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Fiend",
+"key": "g-fiend",
+"locators": [
+"B17518",
+"B07696",
+"B09277",
+"B09356"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Finesse",
+"key": "g-finesse",
+"locators": [
+"B17520",
+"h-77-weapon-traits",
+"B16616",
+"B16651",
+"B16761"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Fire",
+"key": "g-fire",
+"locators": [
+"B17522"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Footprint",
+"key": "g-footprint",
+"locators": [
+"B17524",
+"h-26-measurement-size-distances-and-rounding"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Forced Movement",
+"key": "g-forced-movement",
+"locators": [
+"B17526",
+"h-446-forced-movement",
+"B01352"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Frightened",
+"key": "g-frightened",
+"locators": [
+"B17528",
+"h-frightened",
+"B01850"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Guard Point",
+"key": "g-guard-point",
+"locators": [
+"B17530"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Heal / Healing",
+"key": "g-heal-healing",
+"locators": [
+"B17532"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Heard the Song",
+"key": "g-heard-the-song",
+"locators": [
+"B17534",
+"h-97-the-bestiary",
+"B10364"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Hero",
+"key": "g-hero",
+"locators": [
+"B17536",
+"h-damaging-a-knocked-out-hero",
+"h-63-core-hero-creation-rules",
+"h-64-hero-attributes"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Hidden",
+"key": "g-hidden",
+"locators": [
+"B17538",
+"h-59-conditions",
+"h-28-cover-light-hidden-and-visibility",
+"h-285-hidden-and-invisible",
+"h-hidden",
+"B00680",
+"B00704"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Hireling",
+"key": "g-hireling",
+"locators": [
+"B17540"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Holy",
+"key": "g-holy",
+"locators": [
+"B17542"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "HP",
+"key": "g-hp",
+"locators": [
+"B17544",
+"h-541-hp-loss-and-untyped-harm",
+"h-542-temporary-hp",
+"h-reduced-to-0-hp",
+"B03128",
+"B07519",
+"B16587"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Huge (H)",
+"key": "g-huge-h",
+"locators": [
+"B17546"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "HP loss",
+"key": "g-hp-loss",
+"locators": [
+"B17548",
+"h-54-damage-types-av-and-damage-modifiers",
+"h-541-hp-loss-and-untyped-harm"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Ice",
+"key": "g-ice",
+"locators": [
+"B17550"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Immobilized",
+"key": "g-immobilized",
+"locators": [
+"B17552",
+"h-immobilized",
+"B01888"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Immune",
+"key": "g-immune",
+"locators": [
+"B17554",
+"h-544-immune-resistant-and-vulnerable",
+"B01613",
+"B08137",
+"B08160"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Impassable Terrain",
+"key": "g-impassable-terrain",
+"locators": [
+"B17556",
+"B00838"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Initiative",
+"key": "g-initiative",
+"locators": [
+"B17558",
+"h-32-initiative-phase",
+"h-1054-pve-initiative",
+"B01984"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Initiative Winner",
+"key": "g-initiative-winner",
+"locators": [
+"B17560"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Injuries Table",
+"key": "g-injuries-table",
+"locators": [
+"B17562",
+"h-581-injuries-table"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "INT Check",
+"key": "g-int-check",
+"locators": [
+"B17564"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Invisible",
+"key": "g-invisible",
+"locators": [
+"B17566",
+"h-285-hidden-and-invisible",
+"h-invisible",
+"B01898"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Journey Table",
+"key": "g-journey-table",
+"locators": [
+"B17568",
+"h-1123-phase-3-aftermath"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Jump",
+"key": "g-jump",
+"locators": [
+"B17570",
+"h-449-jump"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Knocked Out",
+"key": "g-knocked-out",
+"locators": [
+"B17572",
+"h-58-knocked-out-wounds-and-death",
+"h-damaging-a-knocked-out-hero",
+"h-knocked-out",
+"B01757",
+"B01906"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Large (L)",
+"key": "g-large-l",
+"locators": [
+"B17574"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Legendary Artifact",
+"key": "g-legendary-artifact",
+"locators": [
+"B17576",
+"h-716-adventuring-equipment",
+"h-tier-5-legendary-artifact-weapons-apl-910",
+"h-tier-5-legendary-artifact-armour-and-shields-d20"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Legendary Veteran",
+"key": "g-legendary-veteran",
+"locators": [
+"B17578",
+"h-114-legendary-veterans"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Light Source",
+"key": "g-light-source",
+"locators": [
+"B17580",
+"B17945"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Lightning",
+"key": "g-lightning",
+"locators": [
+"B17582"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Line of Sight (LOS)",
+"key": "g-line-of-sight-los",
+"locators": [
+"B17584"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Living Combatant",
+"key": "g-living-combatant",
+"locators": [
+"B17586",
+"B17900"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Luck (Luck Points)",
+"key": "g-luck-luck-points",
+"locators": [
+"B17588",
+"h-210-luck-points"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Magical Darkness",
+"key": "g-magical-darkness",
+"locators": [
+"B17590",
+"B00787"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Magical Weapon",
+"key": "g-magical-weapon",
+"locators": [
+"B17592",
+"B17901"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Martial Supremacy",
+"key": "g-martial-supremacy",
+"locators": [
+"B17594"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Medium (M)",
+"key": "g-medium-m",
+"locators": [
+"B17596"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Max HP",
+"key": "g-max-hp",
+"locators": [
+"B17599",
+"h-62-character-creation-procedure"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Max NRG",
+"key": "g-max-nrg",
+"locators": [
+"B17601",
+"h-62-character-creation-procedure"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Max Speed",
+"key": "g-max-speed",
+"locators": [
+"B17603",
+"h-710-armour"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Metal Equipment",
+"key": "g-metal-equipment",
+"locators": [
+"B17605",
+"h-72-universal-item-rules",
+"h-82-casting-powers",
+"h-metal-equipment-and-traditions",
+"B03353",
+"B17967"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Monster",
+"key": "g-monster",
+"locators": [
+"B17607",
+"h-34-monster-phase",
+"h-341-monster-wake-up",
+"h-342-monster-group-activation-order"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Monster Allegiance",
+"key": "g-monster-allegiance",
+"locators": [
+"B17609"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Monster Group",
+"key": "g-monster-group",
+"locators": [
+"B17612",
+"h-342-monster-group-activation-order"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Monster Phase",
+"key": "g-monster-phase",
+"locators": [
+"B17614",
+"h-34-monster-phase",
+"h-the-monster-phase",
+"h-a9-monster-phase",
+"B01001",
+"B16225",
+"B16411"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Move",
+"key": "g-move",
+"locators": [
+"B17617",
+"h-442-move-1-ap",
+"B16260"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Natural",
+"key": "g-natural",
+"locators": [
+"B17619",
+"B00884",
+"B17947"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Necrotic",
+"key": "g-necrotic",
+"locators": [
+"B17621"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Negative Condition",
+"key": "g-negative-condition",
+"locators": [
+"B17623"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "NRG",
+"key": "g-nrg",
+"locators": [
+"B17625"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Off-Hand Weapon",
+"key": "g-off-hand-weapon",
+"locators": [
+"B17627",
+"h-613-hero-classes"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Open Terrain",
+"key": "g-open-terrain",
+"locators": [
+"B17629",
+"B00834"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Parry",
+"key": "g-parry",
+"locators": [
+"B17631",
+"h-553-parry-1-ap",
+"B01655",
+"B12159"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Party",
+"key": "g-party",
+"locators": [
+"B17633",
+"h-33-party-phase",
+"h-61-party-structure",
+"h-party-leader"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Party Leader",
+"key": "g-party-leader",
+"locators": [
+"B17635",
+"h-61-party-structure",
+"h-party-leader",
+"B01988"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Party Phase",
+"key": "g-party-phase",
+"locators": [
+"B17637",
+"h-33-party-phase",
+"h-the-party-phase",
+"B00995",
+"B16224",
+"B17154"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Party Treasury",
+"key": "g-party-treasury",
+"locators": [
+"B17639"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Piercing",
+"key": "g-piercing",
+"locators": [
+"B17641",
+"B17294"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Poison",
+"key": "g-poison",
+"locators": [
+"B17643",
+"h-7141-poison-use-rules"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Poisoned [dX]",
+"key": "g-poisoned-dx",
+"locators": [
+"B17645",
+"h-poisoned-dx"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Power",
+"key": "g-power",
+"locators": [
+"B17647",
+"h-power-navigation",
+"h-power-entry-format",
+"h-power-durations"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Pressure Clock",
+"key": "g-pressure-clock",
+"locators": [
+"B17649",
+"h-1057-pressure-clocks",
+"B11992",
+"B12060",
+"B12130"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Primary Target",
+"key": "g-primary-target",
+"locators": [
+"B17651",
+"h-95-universal-monster-ai-principles",
+"B07598"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Primary Weapon",
+"key": "g-primary-weapon",
+"locators": [
+"B17653",
+"h-613-hero-classes"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Prone",
+"key": "g-prone",
+"locators": [
+"B17655",
+"h-prone",
+"B01926"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Psychic",
+"key": "g-psychic",
+"locators": [
+"B17657",
+"h-psychic-feedback-psions",
+"h-87-psychic-abilities",
+"h-tier-0-psychic-techniques-psion"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Pull X\"",
+"key": "g-pull-x",
+"locators": [
+"B17659",
+"B01356"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Push X\"",
+"key": "g-push-x",
+"locators": [
+"B17661",
+"B01354"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Psychic Ability",
+"key": "g-psychic-ability",
+"locators": [
+"B17663",
+"h-87-psychic-abilities"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Random Determination",
+"key": "g-random-determination",
+"locators": [
+"B17665",
+"h-263-random-determination",
+"B07648"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Reach",
+"key": "g-reach",
+"locators": [
+"B17667",
+"B01460",
+"B01466"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Reaction",
+"key": "g-reaction",
+"locators": [
+"B17669",
+"h-512-combat-reaction-guide"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Recharge X-Y",
+"key": "g-recharge-x-y",
+"locators": [
+"B17671",
+"B07603"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Reflex Attack",
+"key": "g-reflex-attack",
+"locators": [
+"B17673",
+"h-554-reflex-attack-1-ap"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Relentless Assault",
+"key": "g-relentless-assault",
+"locators": [
+"B17675",
+"h-97-the-bestiary"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Reload [1 AP]",
+"key": "g-reload-1-ap",
+"locators": [
+"B17677",
+"h-435-reload-1-ap"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Resistant",
+"key": "g-resistant",
+"locators": [
+"B17679",
+"h-544-immune-resistant-and-vulnerable",
+"B01614",
+"B07867",
+"B07975"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Riposte",
+"key": "g-riposte",
+"locators": [
+"B17681"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Roster",
+"key": "g-roster",
+"locators": [
+"B17683",
+"h-1112-active-party-roster-and-bench",
+"B15018"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Round",
+"key": "g-round",
+"locators": [
+"B17685",
+"h-31-overview-of-a-round",
+"h-35-end-of-round",
+"h-a6-round-structure"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Same-Named Effects",
+"key": "g-same-named-effects",
+"locators": [
+"B17687",
+"h-212-same-named-effects"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Setup Roll-off",
+"key": "g-setup-roll-off",
+"locators": [
+"B17689",
+"h-101-adventure-preparation-sequence",
+"h-setup-roll-off"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Shallow Water",
+"key": "g-shallow-water",
+"locators": [
+"B17691",
+"h-296-shallow-water",
+"B00888",
+"B17942"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Shift",
+"key": "g-shift",
+"locators": [
+"B17693",
+"h-444-shift-1-ap",
+"B16263"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Silenced",
+"key": "g-silenced",
+"locators": [
+"B17695",
+"h-silenced",
+"B01932"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Size (Sz)",
+"key": "g-size-sz",
+"locators": [
+"B17697",
+"h-26-measurement-size-distances-and-rounding"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Slashing",
+"key": "g-slashing",
+"locators": [
+"B17699",
+"B17296"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Sleeping",
+"key": "g-sleeping",
+"locators": [
+"B17701",
+"h-sleeping",
+"B01938",
+"B01940"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Slippery Terrain",
+"key": "g-slippery-terrain",
+"locators": [
+"B17703",
+"h-295-slippery-terrain",
+"B00887"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Slowed",
+"key": "g-slowed",
+"locators": [
+"B17705",
+"h-slowed",
+"B01946"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Small (S)",
+"key": "g-small-s",
+"locators": [
+"B17707"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Sorcery",
+"key": "g-sorcery",
+"locators": [
+"B17709",
+"h-85-sorceries"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Space",
+"key": "g-space",
+"locators": [
+"B17711",
+"h-26-measurement-size-distances-and-rounding"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Speed (SPD)",
+"key": "g-speed-spd",
+"locators": [
+"B17713"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "SPI Check",
+"key": "g-spi-check",
+"locators": [
+"B17715"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Spot",
+"key": "g-spot",
+"locators": [
+"B17717",
+"h-59-conditions",
+"h-43-interact-hide-spot-and-read-scroll",
+"h-433-spot-1-ap",
+"B01266",
+"B01268"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Stand",
+"key": "g-stand",
+"locators": [
+"B17719"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Storage",
+"key": "g-storage",
+"locators": [
+"B17721",
+"h-1114-treasury-and-storage",
+"B15063"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "STR Check",
+"key": "g-str-check",
+"locators": [
+"B17723"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Stronghold",
+"key": "g-stronghold",
+"locators": [
+"B17725",
+"h-113-building-the-stronghold",
+"h-the-stronghold-chapel"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Stronghold Component",
+"key": "g-stronghold-component",
+"locators": [
+"B17727",
+"h-113-building-the-stronghold"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Stunned",
+"key": "g-stunned",
+"locators": [
+"B17729",
+"h-stunned",
+"B01952"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Summon",
+"key": "g-summon",
+"locators": [
+"B17731",
+"h-251-summon-limits",
+"h-summon-power-standard"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Sunder",
+"key": "g-sunder",
+"locators": [
+"B17733",
+"B02696"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Swim (X\")",
+"key": "g-swim-x",
+"locators": [
+"B17735",
+"B00923",
+"B07723"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "TAP",
+"key": "g-tap",
+"locators": [
+"B17737",
+"h-train-1-tap"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Target",
+"key": "g-target",
+"locators": [
+"B17739",
+"h-e-target-priorities-and-tie-breakers",
+"B05433",
+"B05440",
+"B05446"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Target Priority",
+"key": "g-target-priority",
+"locators": [
+"B17741",
+"h-95-universal-monster-ai-principles",
+"B07599",
+"B12006",
+"B12076"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Temporary HP",
+"key": "g-temporary-hp",
+"locators": [
+"B17743",
+"h-542-temporary-hp",
+"B01561",
+"B01569"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Terrain",
+"key": "g-terrain",
+"locators": [
+"B17745",
+"h-29-terrain",
+"h-291-terrain-types",
+"h-292-terrain-tags",
+"B17076"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Terrain Tag",
+"key": "g-terrain-tag",
+"locators": [
+"B17747"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Terrain Type",
+"key": "g-terrain-type",
+"locators": [
+"B17749"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Total Miss",
+"key": "g-total-miss",
+"locators": [
+"B17751",
+"h-53-critical-hits-and-exploding-damage-dice",
+"B01529"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Treasure roll",
+"key": "g-treasure-roll",
+"locators": [
+"B17753",
+"h-761-treasure-rolls"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Treasury",
+"key": "g-treasury",
+"locators": [
+"B17755",
+"h-112-the-campaign-cycle",
+"h-1114-treasury-and-storage"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Triumph",
+"key": "g-triumph",
+"locators": [
+"B17757",
+"h-1154-triumph-finale",
+"B00429",
+"B15109"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Vault Reserve",
+"key": "g-vault-reserve",
+"locators": [
+"B17759",
+"h-113-building-the-stronghold"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Visible",
+"key": "g-visible",
+"locators": [
+"B17761"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Vulnerable",
+"key": "g-vulnerable",
+"locators": [
+"B17763",
+"h-544-immune-resistant-and-vulnerable",
+"B01615",
+"B08115",
+"B08138"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Weakened",
+"key": "g-weakened",
+"locators": [
+"B17765",
+"h-weakened",
+"B01958"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Weather Shift",
+"key": "g-weather-shift",
+"locators": [
+"B17767"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Wild Shape",
+"key": "g-wild-shape",
+"locators": [
+"B17769",
+"h-612-general-talents"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Wound",
+"key": "g-wound",
+"locators": [
+"B17771"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Wounded",
+"key": "g-wounded",
+"locators": [
+"B17773"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Weather",
+"key": "x-weather",
+"locators": [
+"h-103-weather-tables-by-climate"
+],
+"basis": "curated section"
+},
+{
+"term": "Secondary Objectives",
+"key": "x-secondary-objectives",
+"locators": [
+"h-102-secondary-objectives-by-climate"
+],
+"basis": "curated section"
+},
+{
+"term": "Scenario Scaling",
+"key": "x-scenario-scaling",
+"locators": [
+"h-106-dynamic-party-and-scenario-scaling"
+],
+"basis": "curated section"
+},
+{
+"term": "Solo and Cooperative Play",
+"key": "x-solo-and-cooperative-play",
+"locators": [
+"h-105-solo-and-cooperative-play",
+"h-115-solo-and-cooperative-campaign-adjustments"
+],
+"basis": "curated section"
+},
+{
+"term": "Stronghold",
+"key": "g-stronghold",
+"locators": [
+"h-113-building-the-stronghold"
+],
+"basis": "curated section"
+},
+{
+"term": "Legendary Veterans",
+"key": "x-legendary-veterans",
+"locators": [
+"h-114-legendary-veterans"
+],
+"basis": "curated section"
+},
+{
+"term": "Hirelings",
+"key": "x-hirelings",
+"locators": [
+"h-615-hirelings"
+],
+"basis": "curated section"
+},
+{
+"term": "Backgrounds",
+"key": "x-backgrounds",
+"locators": [
+"h-610-backgrounds"
+],
+"basis": "curated section"
+},
+{
+"term": "General Talents",
+"key": "x-general-talents",
+"locators": [
+"h-612-general-talents"
+],
+"basis": "curated section"
+},
+{
+"term": "Monster AI",
+"key": "x-monster-ai",
+"locators": [
+"h-95-universal-monster-ai-principles",
+"h-c8-monster-ai-summary"
+],
+"basis": "curated section"
+},
+{
+"term": "Universal Special Abilities",
+"key": "x-universal-special-abilities",
+"locators": [
+"h-96-universal-special-abilities-sa-list"
+],
+"basis": "curated section"
+},
+{
+"term": "Random Monster Generation",
+"key": "x-random-monster-generation",
+"locators": [
+"h-98-random-monster-generation-tables"
+],
+"basis": "curated section"
+},
+{
+"term": "Weapons",
+"key": "x-weapons",
+"locators": [
+"h-78-melee-weapons",
+"h-79-ranged-weapons"
+],
+"basis": "curated section"
+},
+{
+"term": "Armour",
+"key": "x-armour",
+"locators": [
+"h-710-armour"
+],
+"basis": "curated section"
+},
+{
+"term": "Shields",
+"key": "x-shields",
+"locators": [
+"h-712-shields"
+],
+"basis": "curated section"
+},
+{
+"term": "Potions",
+"key": "x-potions",
+"locators": [
+"h-713-potions"
+],
+"basis": "curated section"
+},
+{
+"term": "Poisons",
+"key": "x-poisons",
+"locators": [
+"h-714-poisons"
+],
+"basis": "curated section"
+},
+{
+"term": "Scrolls",
+"key": "x-scrolls",
+"locators": [
+"h-715-scrolls"
+],
+"basis": "curated section"
+},
+{
+"term": "Character Creation",
+"key": "x-character-creation",
+"locators": [
+"h-62-character-creation-procedure",
+"h-63-core-hero-creation-rules"
+],
+"basis": "curated section"
+},
+{
+"term": "Hero Advancement",
+"key": "x-hero-advancement",
+"locators": [
+"h-616-hero-advancement"
+],
+"basis": "curated section"
+},
+{
+"term": "Campaign Cycle",
+"key": "x-campaign-cycle",
+"locators": [
+"h-112-the-campaign-cycle"
+],
+"basis": "curated section"
+},
+{
+"term": "Adventure Preparation",
+"key": "x-adventure-preparation",
+"locators": [
+"h-101-adventure-preparation-sequence"
+],
+"basis": "curated section"
+},
+{
+"term": "Learn to Play",
+"key": "x-learn-to-play",
+"locators": [
+"h-appendix-a-learn-to-play"
+],
+"basis": "curated section"
+},
+{
+"term": "Basic Mode",
+"key": "x-basic-mode",
+"locators": [
+"h-appendix-b-basic-mode"
+],
+"basis": "curated section"
+},
+{
+"term": "Rules Reference",
+"key": "x-rules-reference",
+"locators": [
+"h-appendix-c-rules-reference"
+],
+"basis": "curated section"
+},
+{
+"term": "Rules Hierarchy",
+"key": "x-rules-hierarchy",
+"locators": [
+"h-16-rules-hierarchy-and-precedence"
+],
+"basis": "curated section"
+},
+{
+"term": "Measurement",
+"key": "x-measurement",
+"locators": [
+"h-26-measurement-size-distances-and-rounding"
+],
+"basis": "curated section"
+},
+{
+"term": "Line of Sight",
+"key": "x-line-of-sight",
+"locators": [
+"h-27-line-of-sight-and-areas-of-effect"
+],
+"basis": "curated section"
+},
+{
+"term": "Terrain",
+"key": "g-terrain",
+"locators": [
+"h-29-terrain"
+],
+"basis": "curated section"
+},
+{
+"term": "Reactions",
+"key": "x-reactions",
+"locators": [
+"h-45-reactions",
+"h-c5-reactions-summary"
+],
+"basis": "curated section"
+},
+{
+"term": "Attack Sequence",
+"key": "x-attack-sequence",
+"locators": [
+"h-52-the-attack-sequence",
+"h-c6-attack-resolution-summary"
+],
+"basis": "curated section"
+},
+{
+"term": "Monster Phase",
+"key": "g-monster-phase",
+"locators": [
+"h-34-monster-phase"
+],
+"basis": "curated section"
+},
+{
+"term": "Party Phase",
+"key": "g-party-phase",
+"locators": [
+"h-33-party-phase"
+],
+"basis": "curated section"
+},
+{
+"term": "Initiative Phase",
+"key": "x-initiative-phase",
+"locators": [
+"h-32-initiative-phase"
+],
+"basis": "curated section"
+},
+{
+"term": "End of Round",
+"key": "x-end-of-round",
+"locators": [
+"h-35-end-of-round"
+],
+"basis": "curated section"
+},
+{
+"term": "Timing Rules",
+"key": "x-timing-rules",
+"locators": [
+"h-36-timing-rules"
+],
+"basis": "curated section"
+},
+{
+"term": "Ancestries — Human",
+"key": "n-ancestries-human",
+"locators": [
+"h-human"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Ancestries — Halfling",
+"key": "n-ancestries-halfling",
+"locators": [
+"h-halfling"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Ancestries — Dwarf",
+"key": "n-ancestries-dwarf",
+"locators": [
+"h-dwarf"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Ancestries — Elf",
+"key": "n-ancestries-elf",
+"locators": [
+"h-elf"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Ancestries — Gnome",
+"key": "n-ancestries-gnome",
+"locators": [
+"h-gnome"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Ancestries — Goblin",
+"key": "n-ancestries-goblin",
+"locators": [
+"h-goblin"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Ancestries — Orc",
+"key": "n-ancestries-orc",
+"locators": [
+"h-orc"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Ancestries — Ratkin",
+"key": "n-ancestries-ratkin",
+"locators": [
+"h-ratkin"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Ancestries — Deep Elf",
+"key": "n-ancestries-deep-elf",
+"locators": [
+"h-deep-elf"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Ancestries — Demonborn",
+"key": "n-ancestries-demonborn",
+"locators": [
+"h-demonborn"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Ancestries — Drakeblood",
+"key": "n-ancestries-drakeblood",
+"locators": [
+"h-drakeblood"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Class Archetypes",
+"key": "n-classes-class-archetypes",
+"locators": [
+"h-class-archetypes"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Universal Class Progression",
+"key": "n-classes-universal-class-progression",
+"locators": [
+"h-universal-class-progression"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Resource Restrictions",
+"key": "n-classes-resource-restrictions",
+"locators": [
+"h-resource-restrictions"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Automatic Special Abilities",
+"key": "n-classes-automatic-special-abilities",
+"locators": [
+"h-automatic-special-abilities"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Fighter",
+"key": "n-classes-fighter",
+"locators": [
+"h-fighter-15-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Berserker",
+"key": "n-classes-berserker",
+"locators": [
+"h-berserker-25-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Rogue",
+"key": "n-classes-rogue",
+"locators": [
+"h-rogue-25-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Assassin",
+"key": "n-classes-assassin",
+"locators": [
+"h-assassin-35-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Ranger",
+"key": "n-classes-ranger",
+"locators": [
+"h-ranger-35-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Cleric",
+"key": "n-classes-cleric",
+"locators": [
+"h-cleric-35-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Paladin",
+"key": "n-classes-paladin",
+"locators": [
+"h-paladin-45-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Wizard",
+"key": "n-classes-wizard",
+"locators": [
+"h-wizard-45-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Psion",
+"key": "n-classes-psion",
+"locators": [
+"h-psion-45-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Trickster",
+"key": "n-classes-trickster",
+"locators": [
+"h-trickster-55-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Sorcerer",
+"key": "n-classes-sorcerer",
+"locators": [
+"h-sorcerer-55-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Classes — Druid",
+"key": "n-classes-druid",
+"locators": [
+"h-druid-55-complexity"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Giant Tarantula",
+"key": "n-monsters-bestiary-entries-giant-tarantula",
+"locators": [
+"h-giant-tarantula-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Goblin",
+"key": "n-monsters-bestiary-entries-goblin",
+"locators": [
+"h-goblin-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Beastman",
+"key": "n-monsters-bestiary-entries-beastman",
+"locators": [
+"h-beastman-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Bandit",
+"key": "n-monsters-bestiary-entries-bandit",
+"locators": [
+"h-bandit-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Satyr Reveler",
+"key": "n-monsters-bestiary-entries-satyr-reveler",
+"locators": [
+"h-satyr-reveler-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Briarling",
+"key": "n-monsters-bestiary-entries-briarling",
+"locators": [
+"h-briarling-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Dire Wolf",
+"key": "n-monsters-bestiary-entries-dire-wolf",
+"locators": [
+"h-dire-wolf-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Orc",
+"key": "n-monsters-bestiary-entries-orc",
+"locators": [
+"h-orc-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Bugbear",
+"key": "n-monsters-bestiary-entries-bugbear",
+"locators": [
+"h-bugbear-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Harpy",
+"key": "n-monsters-bestiary-entries-harpy",
+"locators": [
+"h-harpy-cannon"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Goblin Shaman",
+"key": "n-monsters-bestiary-entries-goblin-shaman",
+"locators": [
+"h-goblin-shaman-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Bandit Captain",
+"key": "n-monsters-bestiary-entries-bandit-captain",
+"locators": [
+"h-bandit-captain-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Dire Bear",
+"key": "n-monsters-bestiary-entries-dire-bear",
+"locators": [
+"h-dire-bear-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Blood Ape",
+"key": "n-monsters-bestiary-entries-blood-ape",
+"locators": [
+"h-blood-ape-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Gorebeak Bear",
+"key": "n-monsters-bestiary-entries-gorebeak-bear",
+"locators": [
+"h-gorebeak-bear-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Ogre",
+"key": "n-monsters-bestiary-entries-ogre",
+"locators": [
+"h-ogre-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Dryad Grovewarden",
+"key": "n-monsters-bestiary-entries-dryad-grovewarden",
+"locators": [
+"h-dryad-grovewarden-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Forest Troll",
+"key": "n-monsters-bestiary-entries-forest-troll",
+"locators": [
+"h-forest-troll-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Werewolf",
+"key": "n-monsters-bestiary-entries-werewolf",
+"locators": [
+"h-werewolf-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Green Dragon",
+"key": "n-monsters-bestiary-entries-green-dragon",
+"locators": [
+"h-green-dragon-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Undead Warrior",
+"key": "n-monsters-bestiary-entries-undead-warrior",
+"locators": [
+"h-undead-warrior-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Undead Crossbowman",
+"key": "n-monsters-bestiary-entries-undead-crossbowman",
+"locators": [
+"h-undead-crossbowman-cannon"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Ghoul",
+"key": "n-monsters-bestiary-entries-ghoul",
+"locators": [
+"h-ghoul-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Possessed Corpse",
+"key": "n-monsters-bestiary-entries-possessed-corpse",
+"locators": [
+"h-possessed-corpse-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Ember Skull",
+"key": "n-monsters-bestiary-entries-ember-skull",
+"locators": [
+"h-ember-skull-cannon"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Wererat",
+"key": "n-monsters-bestiary-entries-wererat",
+"locators": [
+"h-wererat-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Spectre",
+"key": "n-monsters-bestiary-entries-spectre",
+"locators": [
+"h-spectre-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Undead Sentinel",
+"key": "n-monsters-bestiary-entries-undead-sentinel",
+"locators": [
+"h-undead-sentinel-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Undead Champion",
+"key": "n-monsters-bestiary-entries-undead-champion",
+"locators": [
+"h-undead-champion-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Gargoyle",
+"key": "n-monsters-bestiary-entries-gargoyle",
+"locators": [
+"h-gargoyle-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Stone Sentinel",
+"key": "n-monsters-bestiary-entries-stone-sentinel",
+"locators": [
+"h-stone-sentinel-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Minotaur",
+"key": "n-monsters-bestiary-entries-minotaur",
+"locators": [
+"h-minotaur-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Night Hag",
+"key": "n-monsters-bestiary-entries-night-hag",
+"locators": [
+"h-night-hag-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Forsaken Archer",
+"key": "n-monsters-bestiary-entries-forsaken-archer",
+"locators": [
+"h-forsaken-archer-cannon"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Forsaken Knight",
+"key": "n-monsters-bestiary-entries-forsaken-knight",
+"locators": [
+"h-forsaken-knight-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Forsaken Duelist",
+"key": "n-monsters-bestiary-entries-forsaken-duelist",
+"locators": [
+"h-forsaken-duelist-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Basilisk",
+"key": "n-monsters-bestiary-entries-basilisk",
+"locators": [
+"h-basilisk-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Ashen Revenant",
+"key": "n-monsters-bestiary-entries-ashen-revenant",
+"locators": [
+"h-ashen-revenant-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Iron Golem",
+"key": "n-monsters-bestiary-entries-iron-golem",
+"locators": [
+"h-iron-golem-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Lich",
+"key": "n-monsters-bestiary-entries-lich",
+"locators": [
+"h-lich-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Kobold",
+"key": "n-monsters-bestiary-entries-kobold",
+"locators": [
+"h-kobold-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Cave Goblin",
+"key": "n-monsters-bestiary-entries-cave-goblin",
+"locators": [
+"h-cave-goblin-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Giant Bat",
+"key": "n-monsters-bestiary-entries-giant-bat",
+"locators": [
+"h-giant-bat-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Vaultfang",
+"key": "n-monsters-bestiary-entries-vaultfang",
+"locators": [
+"h-vaultfang-cannon"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Giant Centipede",
+"key": "n-monsters-bestiary-entries-giant-centipede",
+"locators": [
+"h-giant-centipede-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Noxcloth",
+"key": "n-monsters-bestiary-entries-noxcloth",
+"locators": [
+"h-noxcloth-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Troglodyte",
+"key": "n-monsters-bestiary-entries-troglodyte",
+"locators": [
+"h-troglodyte-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Giant Black Widow",
+"key": "n-monsters-bestiary-entries-giant-black-widow",
+"locators": [
+"h-giant-black-widow-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Gloomspore Jelly",
+"key": "n-monsters-bestiary-entries-gloomspore-jelly",
+"locators": [
+"h-gloomspore-jelly-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Troglodyte Shaman",
+"key": "n-monsters-bestiary-entries-troglodyte-shaman",
+"locators": [
+"h-troglodyte-shaman-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Vault Ooze",
+"key": "n-monsters-bestiary-entries-vault-ooze",
+"locators": [
+"h-vault-ooze-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Vrymk",
+"key": "n-monsters-bestiary-entries-vrymk",
+"locators": [
+"h-vrymk-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Deep Elf Warrior",
+"key": "n-monsters-bestiary-entries-deep-elf-warrior",
+"locators": [
+"h-deep-elf-warrior-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Deep Elf Priest",
+"key": "n-monsters-bestiary-entries-deep-elf-priest",
+"locators": [
+"h-deep-elf-priest-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Gloom Hulk",
+"key": "n-monsters-bestiary-entries-gloom-hulk",
+"locators": [
+"h-gloom-hulk-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Cryptstrangler",
+"key": "n-monsters-bestiary-entries-cryptstrangler",
+"locators": [
+"h-cryptstrangler-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Elder Vrymk",
+"key": "n-monsters-bestiary-entries-elder-vrymk",
+"locators": [
+"h-elder-vrymk-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Evil Eye",
+"key": "n-monsters-bestiary-entries-evil-eye",
+"locators": [
+"h-evil-eye-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Burrowmaw",
+"key": "n-monsters-bestiary-entries-burrowmaw",
+"locators": [
+"h-burrowmaw-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Thought-Eater",
+"key": "n-monsters-bestiary-entries-thought-eater",
+"locators": [
+"h-thought-eater-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Frozen Skeleton",
+"key": "n-monsters-bestiary-entries-frozen-skeleton",
+"locators": [
+"h-frozen-skeleton-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Snow Goblin",
+"key": "n-monsters-bestiary-entries-snow-goblin",
+"locators": [
+"h-snow-goblin-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Ratkin Scavenger",
+"key": "n-monsters-bestiary-entries-ratkin-scavenger",
+"locators": [
+"h-ratkin-scavenger-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Tundra Wolf",
+"key": "n-monsters-bestiary-entries-tundra-wolf",
+"locators": [
+"h-tundra-wolf-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Ratkin Warrior",
+"key": "n-monsters-bestiary-entries-ratkin-warrior",
+"locators": [
+"h-ratkin-warrior-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — White Court Guard",
+"key": "n-monsters-bestiary-entries-white-court-guard",
+"locators": [
+"h-white-court-guard-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Ratkin Seer",
+"key": "n-monsters-bestiary-entries-ratkin-seer",
+"locators": [
+"h-ratkin-seer-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Frost Ghoul",
+"key": "n-monsters-bestiary-entries-frost-ghoul",
+"locators": [
+"h-frost-ghoul-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — White Court Archer",
+"key": "n-monsters-bestiary-entries-white-court-archer",
+"locators": [
+"h-white-court-archer-cannon"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Blackfire Hound",
+"key": "n-monsters-bestiary-entries-blackfire-hound",
+"locators": [
+"h-blackfire-hound-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Ice Wraith",
+"key": "n-monsters-bestiary-entries-ice-wraith",
+"locators": [
+"h-ice-wraith-cannon"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — White Court Sentinel",
+"key": "n-monsters-bestiary-entries-white-court-sentinel",
+"locators": [
+"h-white-court-sentinel-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Ice Elemental",
+"key": "n-monsters-bestiary-entries-ice-elemental",
+"locators": [
+"h-ice-elemental-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Fallen Paladin",
+"key": "n-monsters-bestiary-entries-fallen-paladin",
+"locators": [
+"h-fallen-paladin-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Werebear",
+"key": "n-monsters-bestiary-entries-werebear",
+"locators": [
+"h-werebear-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — White Court Executioner",
+"key": "n-monsters-bestiary-entries-white-court-executioner",
+"locators": [
+"h-white-court-executioner-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Frost Wyvern",
+"key": "n-monsters-bestiary-entries-frost-wyvern",
+"locators": [
+"h-frost-wyvern-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Gelid Fiend",
+"key": "n-monsters-bestiary-entries-gelid-fiend",
+"locators": [
+"h-gelid-fiend-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Frost Giant",
+"key": "n-monsters-bestiary-entries-frost-giant",
+"locators": [
+"h-frost-giant-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — White Dragon",
+"key": "n-monsters-bestiary-entries-white-dragon",
+"locators": [
+"h-white-dragon-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Fire Beetle",
+"key": "n-monsters-bestiary-entries-fire-beetle",
+"locators": [
+"h-fire-beetle-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Imp",
+"key": "n-monsters-bestiary-entries-imp",
+"locators": [
+"h-imp-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Skeleton Warrior",
+"key": "n-monsters-bestiary-entries-skeleton-warrior",
+"locators": [
+"h-skeleton-warrior-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Corpsehound",
+"key": "n-monsters-bestiary-entries-corpsehound",
+"locators": [
+"h-corpsehound-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Gnoll",
+"key": "n-monsters-bestiary-entries-gnoll",
+"locators": [
+"h-gnoll-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Giant Scorpion",
+"key": "n-monsters-bestiary-entries-giant-scorpion",
+"locators": [
+"h-giant-scorpion-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Skeleton Archer",
+"key": "n-monsters-bestiary-entries-skeleton-archer",
+"locators": [
+"h-skeleton-archer-cannon"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Mummy",
+"key": "n-monsters-bestiary-entries-mummy",
+"locators": [
+"h-mummy-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Skeletal Beast",
+"key": "n-monsters-bestiary-entries-skeletal-beast",
+"locators": [
+"h-skeletal-beast-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Wind Elemental",
+"key": "n-monsters-bestiary-entries-wind-elemental",
+"locators": [
+"h-wind-elemental-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Desert Naga",
+"key": "n-monsters-bestiary-entries-desert-naga",
+"locators": [
+"h-desert-naga-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Fire Elemental",
+"key": "n-monsters-bestiary-entries-fire-elemental",
+"locators": [
+"h-fire-elemental-cannon"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Giant Skeleton",
+"key": "n-monsters-bestiary-entries-giant-skeleton",
+"locators": [
+"h-giant-skeleton-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Medusa",
+"key": "n-monsters-bestiary-entries-medusa",
+"locators": [
+"h-medusa-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Tomb Necromancer",
+"key": "n-monsters-bestiary-entries-tomb-necromancer",
+"locators": [
+"h-tomb-necromancer-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Tomb Guardian",
+"key": "n-monsters-bestiary-entries-tomb-guardian",
+"locators": [
+"h-tomb-guardian-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Brass Golem",
+"key": "n-monsters-bestiary-entries-brass-golem",
+"locators": [
+"h-brass-golem-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Manticore",
+"key": "n-monsters-bestiary-entries-manticore",
+"locators": [
+"h-manticore-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Demon",
+"key": "n-monsters-bestiary-entries-demon",
+"locators": [
+"h-demon-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Blue Dragon",
+"key": "n-monsters-bestiary-entries-blue-dragon",
+"locators": [
+"h-blue-dragon-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Bogling",
+"key": "n-monsters-bestiary-entries-bogling",
+"locators": [
+"h-bogling-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Swamp Goblin",
+"key": "n-monsters-bestiary-entries-swamp-goblin",
+"locators": [
+"h-swamp-goblin-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Zombie",
+"key": "n-monsters-bestiary-entries-zombie",
+"locators": [
+"h-zombie-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Stirge",
+"key": "n-monsters-bestiary-entries-stirge",
+"locators": [
+"h-stirge-minion"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Will-o'-Wisp",
+"key": "n-monsters-bestiary-entries-will-o-wisp",
+"locators": [
+"h-will-o-wisp-cannon"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Lizardfolk Warrior",
+"key": "n-monsters-bestiary-entries-lizardfolk-warrior",
+"locators": [
+"h-lizardfolk-warrior-soldier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Lizardfolk Hunter",
+"key": "n-monsters-bestiary-entries-lizardfolk-hunter",
+"locators": [
+"h-lizardfolk-hunter-cannon"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Crocodile",
+"key": "n-monsters-bestiary-entries-crocodile",
+"locators": [
+"h-crocodile-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Lizardfolk Shaman",
+"key": "n-monsters-bestiary-entries-lizardfolk-shaman",
+"locators": [
+"h-lizardfolk-shaman-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Miasma Serpent",
+"key": "n-monsters-bestiary-entries-miasma-serpent",
+"locators": [
+"h-miasma-serpent-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Swamp Naga",
+"key": "n-monsters-bestiary-entries-swamp-naga",
+"locators": [
+"h-swamp-naga-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Giant Constrictor",
+"key": "n-monsters-bestiary-entries-giant-constrictor",
+"locators": [
+"h-giant-constrictor-skirmisher"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Shambling Mound",
+"key": "n-monsters-bestiary-entries-shambling-mound",
+"locators": [
+"h-shambling-mound-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Swamp Hag",
+"key": "n-monsters-bestiary-entries-swamp-hag",
+"locators": [
+"h-swamp-hag-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Banshee",
+"key": "n-monsters-bestiary-entries-banshee",
+"locators": [
+"h-banshee-controller"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Swamp Troll",
+"key": "n-monsters-bestiary-entries-swamp-troll",
+"locators": [
+"h-swamp-troll-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Hydra",
+"key": "n-monsters-bestiary-entries-hydra",
+"locators": [
+"h-hydra-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Blackwater Wight",
+"key": "n-monsters-bestiary-entries-blackwater-wight",
+"locators": [
+"h-blackwater-wight-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Mire Titan",
+"key": "n-monsters-bestiary-entries-mire-titan",
+"locators": [
+"h-mire-titan-brute"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Black Dragon",
+"key": "n-monsters-bestiary-entries-black-dragon",
+"locators": [
+"h-black-dragon-elite"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — The Ancient Void Dragon",
+"key": "n-monsters-bestiary-entries-the-ancient-void-dragon",
+"locators": [
+"h-the-ancient-void-dragon-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — The Hollow Crown of the Ashlands",
+"key": "n-monsters-bestiary-entries-the-hollow-crown-of-the-ashlands",
+"locators": [
+"h-the-hollow-crown-of-the-ashlands-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — The Last Colossus",
+"key": "n-monsters-bestiary-entries-the-last-colossus",
+"locators": [
+"h-the-last-colossus-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Avatar of the Old Growth",
+"key": "n-monsters-bestiary-entries-avatar-of-the-old-growth",
+"locators": [
+"h-avatar-of-the-old-growth-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — The Broodmother Prime",
+"key": "n-monsters-bestiary-entries-the-broodmother-prime",
+"locators": [
+"h-the-broodmother-prime-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Captain Veyr of the Forsaken",
+"key": "n-monsters-bestiary-entries-captain-veyr-of-the-forsaken",
+"locators": [
+"h-captain-veyr-of-the-forsaken-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — The Frost Bailiff Magistrate",
+"key": "n-monsters-bestiary-entries-the-frost-bailiff-magistrate",
+"locators": [
+"h-the-frost-bailiff-magistrate-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — The Sun-Crowned Prince",
+"key": "n-monsters-bestiary-entries-the-sun-crowned-prince",
+"locators": [
+"h-the-sun-crowned-prince-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — The Antlered Warden of the Tithe",
+"key": "n-monsters-bestiary-entries-the-antlered-warden-of-the-tithe",
+"locators": [
+"h-the-antlered-warden-of-the-tithe-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — The Voice Beneath the Bells",
+"key": "n-monsters-bestiary-entries-the-voice-beneath-the-bells",
+"locators": [
+"h-the-voice-beneath-the-bells-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Maelthorn the Verdant",
+"key": "n-monsters-bestiary-entries-maelthorn-the-verdant",
+"locators": [
+"h-maelthorn-the-verdant-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Sirrach the Black",
+"key": "n-monsters-bestiary-entries-sirrach-the-black",
+"locators": [
+"h-sirrach-the-black-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Visath the White",
+"key": "n-monsters-bestiary-entries-visath-the-white",
+"locators": [
+"h-visath-the-white-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Khorrun the Dracolich",
+"key": "n-monsters-bestiary-entries-khorrun-the-dracolich",
+"locators": [
+"h-khorrun-the-dracolich-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Monsters (Bestiary entries) — Vossegar of the Flooded Cathedral",
+"key": "n-monsters-bestiary-entries-vossegar-of-the-flooded-cathedral",
+"locators": [
+"h-vossegar-of-the-flooded-cathedral-boss"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 1: Hunt the Wild Beast [Intro]",
+"key": "n-scenarios-core-scenario-1-hunt-the-wild-beast-intro",
+"locators": [
+"h-scenario-1-hunt-the-wild-beast-intro"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 2: The Whispering Grove",
+"key": "n-scenarios-core-scenario-2-the-whispering-grove",
+"locators": [
+"h-scenario-2-the-whispering-grove"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 3: The Bandit's Toll",
+"key": "n-scenarios-core-scenario-3-the-bandit-s-toll",
+"locators": [
+"h-scenario-3-the-bandits-toll"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 4: The Spider's Silk Route",
+"key": "n-scenarios-core-scenario-4-the-spider-s-silk-route",
+"locators": [
+"h-scenario-4-the-spiders-silk-route"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 5: The Ambushed Emissary",
+"key": "n-scenarios-core-scenario-5-the-ambushed-emissary",
+"locators": [
+"h-scenario-5-the-ambushed-emissary"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 6: Ritual of the Old Growth",
+"key": "n-scenarios-core-scenario-6-ritual-of-the-old-growth",
+"locators": [
+"h-scenario-6-ritual-of-the-old-growth"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 1: The Fallen Observatory [Intro]",
+"key": "n-scenarios-core-scenario-1-the-fallen-observatory-intro",
+"locators": [
+"h-scenario-1-the-fallen-observatory-intro"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 2: The Guardian's Test",
+"key": "n-scenarios-core-scenario-2-the-guardian-s-test",
+"locators": [
+"h-scenario-2-the-guardians-test"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 3: The Shifting Sands of Time",
+"key": "n-scenarios-core-scenario-3-the-shifting-sands-of-time",
+"locators": [
+"h-scenario-3-the-shifting-sands-of-time"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 4: The Sealed Archive",
+"key": "n-scenarios-core-scenario-4-the-sealed-archive",
+"locators": [
+"h-scenario-4-the-sealed-archive"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 5: The Reliquary of Broken Saints",
+"key": "n-scenarios-core-scenario-5-the-reliquary-of-broken-saints",
+"locators": [
+"h-scenario-5-the-reliquary-of-broken-saints"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 6: The Iron-Vein Vault",
+"key": "n-scenarios-core-scenario-6-the-iron-vein-vault",
+"locators": [
+"h-scenario-6-the-iron-vein-vault"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 1: The Crystal Harvest [Intro]",
+"key": "n-scenarios-core-scenario-1-the-crystal-harvest-intro",
+"locators": [
+"h-scenario-1-the-crystal-harvest-intro"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 2: The Chasm Crossing",
+"key": "n-scenarios-core-scenario-2-the-chasm-crossing",
+"locators": [
+"h-scenario-2-the-chasm-crossing"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 3: The Quake",
+"key": "n-scenarios-core-scenario-3-the-quake",
+"locators": [
+"h-scenario-3-the-quake"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 4: The Undermarches Outpost Raid",
+"key": "n-scenarios-core-scenario-4-the-undermarches-outpost-raid",
+"locators": [
+"h-scenario-4-the-undermarches-outpost-raid"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 5: The Shadowed Under Passage",
+"key": "n-scenarios-core-scenario-5-the-shadowed-under-passage",
+"locators": [
+"h-scenario-5-the-shadowed-under-passage"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 6: The Ritual of Shadow Binding",
+"key": "n-scenarios-core-scenario-6-the-ritual-of-shadow-binding",
+"locators": [
+"h-scenario-6-the-ritual-of-shadow-binding"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 1: Plunder of the Frozen Ruins [Intro]",
+"key": "n-scenarios-core-scenario-1-plunder-of-the-frozen-ruins-intro",
+"locators": [
+"h-scenario-1-plunder-of-the-frozen-ruins-intro"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 2: The Alchemist's Frozen Laboratory",
+"key": "n-scenarios-core-scenario-2-the-alchemist-s-frozen-laboratory",
+"locators": [
+"h-scenario-2-the-alchemists-frozen-laboratory"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 3: The Haunted Mausoleum",
+"key": "n-scenarios-core-scenario-3-the-haunted-mausoleum",
+"locators": [
+"h-scenario-3-the-haunted-mausoleum"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 4: The Clockwork Menagerie",
+"key": "n-scenarios-core-scenario-4-the-clockwork-menagerie",
+"locators": [
+"h-scenario-4-the-clockwork-menagerie"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 5: The Ice Wyrm's Hoard",
+"key": "n-scenarios-core-scenario-5-the-ice-wyrm-s-hoard",
+"locators": [
+"h-scenario-5-the-ice-wyrms-hoard"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 6: The Icebound Court",
+"key": "n-scenarios-core-scenario-6-the-icebound-court",
+"locators": [
+"h-scenario-6-the-icebound-court"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 1: The Oasis Raiders [Intro]",
+"key": "n-scenarios-core-scenario-1-the-oasis-raiders-intro",
+"locators": [
+"h-scenario-1-the-oasis-raiders-intro"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 2: The Cinder Lord's Lost Brazier",
+"key": "n-scenarios-core-scenario-2-the-cinder-lord-s-lost-brazier",
+"locators": [
+"h-scenario-2-the-cinder-lords-lost-brazier"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 3: Tomb of the Sunken Kings",
+"key": "n-scenarios-core-scenario-3-tomb-of-the-sunken-kings",
+"locators": [
+"h-scenario-3-tomb-of-the-sunken-kings"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 4: The Sandwyrm's Lair",
+"key": "n-scenarios-core-scenario-4-the-sandwyrm-s-lair",
+"locators": [
+"h-scenario-4-the-sandwyrms-lair"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 5: The Cursed Colossus of the Waste",
+"key": "n-scenarios-core-scenario-5-the-cursed-colossus-of-the-waste",
+"locators": [
+"h-scenario-5-the-cursed-colossus-of-the-waste"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 6: The Cinder Lord's Obsidian Prison",
+"key": "n-scenarios-core-scenario-6-the-cinder-lord-s-obsidian-prison",
+"locators": [
+"h-scenario-6-the-cinder-lords-obsidian-prison"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 1: The Reliquary of Edrava Salttide [Intro]",
+"key": "n-scenarios-core-scenario-1-the-reliquary-of-edrava-salttide-intro",
+"locators": [
+"h-scenario-1-the-reliquary-of-edrava-salttide-intro"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 2: The Lizardfolk's Stolen Offerings",
+"key": "n-scenarios-core-scenario-2-the-lizardfolk-s-stolen-offerings",
+"locators": [
+"h-scenario-2-the-lizardfolks-stolen-offerings"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 3: The Mire Titan's Fen",
+"key": "n-scenarios-core-scenario-3-the-mire-titan-s-fen",
+"locators": [
+"h-scenario-3-the-mire-titans-fen"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 4: The Blighted Heartwood",
+"key": "n-scenarios-core-scenario-4-the-blighted-heartwood",
+"locators": [
+"h-scenario-4-the-blighted-heartwood"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 5: Salttide's Reckoning",
+"key": "n-scenarios-core-scenario-5-salttide-s-reckoning",
+"locators": [
+"h-scenario-5-salttides-reckoning"
+],
+"basis": "named entry heading"
+},
+{
+"term": "Scenarios (Core) — Scenario 6: The Serpent's Sunken Hoard",
+"key": "n-scenarios-core-scenario-6-the-serpent-s-sunken-hoard",
+"locators": [
+"h-scenario-6-the-serpents-sunken-hoard"
+],
+"basis": "named entry heading"
+}
+]

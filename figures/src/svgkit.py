@@ -243,6 +243,11 @@ def token(s, kind, cx, cy, r=7.0):
         raise ValueError(kind)
 
 
+def ghost(s, cx, cy, r=7.0):
+    """Dotted outline = starting position (not a combatant on the board any more)."""
+    s.circle(cx, cy, r, fill="none", stroke=INK, sw=1.0, dash="1.6 2")
+
+
 def callout(s, cx, cy, n, r=6.6):
     s.circle(cx, cy, r, fill=INK, stroke=INK, sw=0.5)
     s.text(cx, cy + 3.3, str(n), 9, 700, "middle", WHITE)
@@ -374,6 +379,17 @@ def _swatch(s, kind, x, y):
         s.rect(x + 2, y - 5.5, 16, 11, fill=PAT["aoe"], stroke=INK, sw=0.8)
     elif kind == "square":
         s.rect(x + 3, y - 6, 12, 12, fill=WHITE, stroke=INK, sw=0.6)
+    elif kind == "ghost":
+        ghost(s, x + 9, y, 6.0)
+    elif kind == "blockx":
+        xmark(s, x + 9, y, 4.2, 1.6, halo=False)
+    elif kind == "hazard":
+        s.rect(x + 2, y - 5.5, 16, 11, fill="#c4c4c4", stroke=INK, sw=0.8)
+        s.text(x + 10, y + 3.6, "!", 9, 700, "middle")
+    elif kind == "lowfill":
+        s.rect(x + 2, y - 5.5, 16, 11, fill=LIGHT, stroke=INK, sw=0.8)
+    elif kind == "palefill":
+        s.rect(x + 2, y - 5.5, 16, 11, fill=PALE, stroke=INK, sw=0.8)
     else:
         raise ValueError(kind)
 
@@ -448,3 +464,35 @@ def panel_title(s, x, y, letter, title, width=None):
     s.rect(x, y, 13, 13, fill=INK, stroke=None)
     s.text(x + 6.5, y + 10.4, letter, 9, 700, "middle", WHITE)
     s.text(x + 18, y + 10.4, title, 9.5, 700)
+
+
+class Grid:
+    """Square-grid helper: columns/rows count from 0 at top-left."""
+
+    def __init__(self, s, ox, oy, cols, rows, cell, draw=True, fill=WHITE):
+        self.s, self.ox, self.oy, self.cols, self.rows, self.cell = s, ox, oy, cols, rows, cell
+        if draw:
+            grid(s, ox, oy, cols, rows, cell, fill=fill)
+
+    def c(self, col, row):
+        return (self.ox + (col + 0.5) * self.cell, self.oy + (row + 0.5) * self.cell)
+
+    def pt(self, x, y):
+        """Point at grid-corner coordinates (x cells from left, y cells from top)."""
+        return (self.ox + x * self.cell, self.oy + y * self.cell)
+
+    def fillcell(self, col, row, kind, label=None):
+        terrain(self.s, kind, self.ox + col * self.cell, self.oy + row * self.cell, self.cell, self.cell, label, sw=0.6)
+
+    def block(self, col, row, w, h, kind, label=None, sw=0.9):
+        terrain(self.s, kind, self.ox + col * self.cell, self.oy + row * self.cell, w * self.cell, h * self.cell, label, sw=sw)
+
+    def token(self, col, row, kind, r=None, span=1):
+        x, y = self.c(col + (span - 1) / 2.0, row + (span - 1) / 2.0)
+        if kind == "ML":
+            token(self.s, "ML", x, y, span * self.cell / 2.0 - 2)
+        else:
+            token(self.s, kind, x, y, r or self.cell * 0.38)
+
+    def height(self):
+        return self.rows * self.cell

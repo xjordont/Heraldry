@@ -1,0 +1,10 @@
+brotli==1.2.0
+fonttools==4.66.1
+markdown-it-py==4.2.0
+mdit-py-plugins==0.6.1
+mdurl==0.1.2
+pdfplumber==0.11.10
+pillow==12.3.0
+pymupdf==1.28.2
+pypdf==6.17.0
+typst==0.15.0

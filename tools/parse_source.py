@@ -36,7 +36,8 @@ def inline(children):
     cur = out
     for t in children:
         if t.type == "text":
-            cur.append({"t": "text", "v": t.content})
+            if t.content:
+                cur.append({"t": "text", "v": t.content})
         elif t.type in ("strong_open", "em_open", "link_open"):
             node = {"t": {"strong_open": "strong", "em_open": "em", "link_open": "link"}[t.type], "c": []}
             if t.type == "link_open":

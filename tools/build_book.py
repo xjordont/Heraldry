@@ -127,6 +127,7 @@ class Book:
         self.em = Emitter(anchors)
         self.seg_count = 0
         self.seg_sigs = {}
+        self.placed_figs = set()
         self.table_map = []
         self.block_map = []   # (block id, src span, representation, segment)
         self.out = []
@@ -194,15 +195,11 @@ class Book:
         bm = "true" if lvl <= 3 else "false"
         ol = "true" if lvl <= 2 else "false"
         s = f"#heading(level: {lvl}, outlined: {ol}, bookmarked: {bm})[{body}] #label({lit(b['id'])})"
-        for idx in self.index_targets.get(b["id"], []):
-            s += f"#metadata({lit(idx)}) #label({lit('ix-' + idx)})"
-        return s
+        return s + self.tags(b["id"])
 
     def para(self, b, role=None):
         body = self.em.inl(b["c"])
-        tag = ""
-        for idx in self.index_targets.get(b["id"], []):
-            tag += f"#metadata({lit(idx)}) #label({lit('ix-' + idx)})"
+        tag = self.tags(b["id"])
         if role == "example" or is_example(b):
             return f"#example[{tag}{body}]"
         if is_flavour(b):
@@ -213,7 +210,7 @@ class Book:
         """Render a block inside a list item / quote."""
         t = b["type"]
         if t == "para":
-            return self.em.inl(b["c"])
+            return self.tags(b["id"]) + self.em.inl(b["c"])
         if t == "list":
             return self.lst(b)
         if t == "table":
@@ -225,6 +222,9 @@ class Book:
         if t == "hr":
             return "#hr-ornament()"
         raise SystemExit(t)
+
+    def tags(self, bid):
+        return "".join(f"#ixm({lit(k)})" for k in self.index_targets.get(bid, []))
 
     def lst(self, b):
         items = []
@@ -336,6 +336,9 @@ class Book:
                 continue
             self.chapter(ch)
         o.append("#backmatter()\n")
+        want = {f["id"] for v in self.fig_slots.values() for f in v}
+        if want - self.placed_figs:
+            raise SystemExit(f"figures not placed (unknown insert_after ids): {sorted(want - self.placed_figs)}")
         return "".join(o)
 
     def chapter(self, ch):
@@ -356,9 +359,13 @@ class Book:
             self.out.append("#mainmatter()\n#set page(numbering: \"1\")\n#counter(page).update(1)\n")
         self.block_map.append((h["id"], h["src"], "chapter-opener", None))
         numlit = f"[#{lit(num)}]" if num else "none"
-        self.out.append(f"#chapter-opener({numlit}, [#{lit(rest)}], {lit(h['id'])}, lead: {('[' + lead + ']') if lead else 'none'})\n")
-        for ix in self.index_targets.get(h["id"], []):
-            self.out.append(f"#metadata({lit(ix)}) #label({lit('ix-' + ix)})\n")
+        art = "none"
+        if num and num.rstrip(".").isdigit():
+            f = ROOT / f"assets/art/incoming/ART-CH{int(num.rstrip('.')):02d}-001.png"
+            if f.exists():
+                art = lit("../" + str(f.relative_to(ROOT)))
+        self.out.append(f"#chapter-opener({numlit}, [#{lit(rest)}], {lit(h['id'])}, lead: {('[' + lead + ']') if lead else 'none'}, art: {art})\n")
+        self.out.append(self.tags(h["id"]) + "\n")
         # group remaining blocks into segments
         cur = []
         rest_blocks = blocks[i:]
@@ -386,11 +393,33 @@ class Book:
                 cur.append((b, s + "\n"))
                 continue
             cur.append((b, self.render(b)))
-            for fig in self.fig_slots.get(b["id"], []):
-                cur.append(({"type": "figure", "id": fig["id"], "src": b["src"]}, self.figure(fig)))
+            for fig in self.figs_for(b):
+                if fig.get("scope") == "full":
+                    self.flush(cur)
+                    cur = []
+                    self.block_map.append((fig["id"], b["src"], "figure-full", None))
+                    self.out.append(f"#full[{self.figure(fig, full=True)}]\n")
+                else:
+                    cur.append(({"type": "figure", "id": fig["id"], "src": b["src"]}, self.figure(fig)))
         self.flush(cur)
 
-    def figure(self, fig):
+    def figs_for(self, b):
+        ids = []
+        def walk(x):
+            ids.append(x["id"])
+            for it in x.get("items", []):
+                for y in it["blocks"]:
+                    walk(y)
+            for y in x.get("blocks", []):
+                walk(y)
+        walk(b)
+        out = []
+        for i in ids:
+            out.extend(self.fig_slots.get(i, []))
+            self.placed_figs.update(f["id"] for f in self.fig_slots.get(i, []))
+        return out
+
+    def figure(self, fig, full=False):
         w = fig.get("width", "100%")
         cap = fig["caption"]
         return f"#figure-block({lit(fig['id'])}, {lit('../figures/out/' + fig['id'] + '.svg')}, [#{lit(cap)}], width: {w})\n"
@@ -433,13 +462,13 @@ class Book:
             self.out.append("#bal(" + ", ".join("[" + x + "]" for x in tp) + ")\n")
 
 
-def compile_book(variant="cream", out=None, query=True):
+def compile_book(variant="cream", out=None, query=True, edition="print"):
     import typst
     out = out or BUILD / f"book-{variant}.pdf"
     t0 = time.time()
     typst.compile(str(ROOT / "typst/content.typ"), output=str(out), root=str(ROOT),
                   font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True,
-                  sys_inputs={"substrate": variant})
+                  sys_inputs={"substrate": variant, "edition": edition})
     dt = time.time() - t0
     pm = None
     if query:
@@ -492,7 +521,13 @@ def main():
     ap.add_argument("--variant", default="cream")
     ap.add_argument("--passes", type=int, default=5)
     ap.add_argument("--no-balance", action="store_true")
+    ap.add_argument("--variants-only", action="store_true", help="compile white + digital from the current content.typ")
     a = ap.parse_args()
+    if a.variants_only:
+        for v, ed, name in (("white", "print", "book-white.pdf"), ("cream", "digital", "book-digital.pdf")):
+            out, dt, _ = compile_book(v, BUILD / name, query=False, edition=ed)
+            print(f"{name}: {dt:.1f}s")
+        return
     model = json.loads((BUILD / "blocks.json").read_text())
     balance = {}
     bal_file = BUILD / "balance.json"

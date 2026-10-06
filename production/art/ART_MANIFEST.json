@@ -1,0 +1,437 @@
+{
+ "route": "C — no configured/authorised image service and no supplied artwork; art-light edition delivered",
+ "selected_final_suite": "Mandatory: 1 cover hero + 11 chapter openers (12 assets). Optional vignettes deferred until the mandatory suite exists.",
+ "status": "INCOMPLETE — 0 of 12 mandatory illustrations generated; fully illustrated edition BLOCKED on an authorised image route or supplied assets",
+ "style_anchor_plan": "Generate ART-CH01-001 first; approve it as the style anchor and attach it as the reference image for every later asset.",
+ "resolution_rule": "Native pixel size must meet the required_pixels at placed size; never upsample or re-tag DPI to fake detail; place smaller if native resolution is short.",
+ "shared_style_block": "Create an original illustration for HERALDRY SKIRMISH: THE DYING LANDS,\na dark medieval fantasy tabletop skirmish rulebook.\n\nSUBJECT: {source-supported subject and exact lore details}\nSCENE: {specific setting, figures, equipment, action, and focal point}\nCOMPOSITION: {aspect ratio, camera/viewpoint, intended crop, negative-space locations}\nPRINT PLACEMENT: {intended physical size and required native pixel dimensions}\n\nUse rough black-and-white pen-and-ink drawing: expressive irregular nib lines,\ncontrolled crosshatching, dry-brush accents, occasional stippling, readable silhouettes,\ndeliberate paper-white negative space, and selective dense black shapes.\nIt should have the visual character of a skilled medieval fantasy ink illustrator's\nhand-drawn work, without photographic rendering or glossy digital airbrushing.\nKeep architecture, anatomy, clothing, weapons, and material details coherent.\nMatch the attached approved reference's line character, contrast, and degree of finish\nwhen a reference is supplied.\n\nNo embedded lettering, title, label, signature, logo, watermark, colour, faint grid,\ndecorative pseudo-script, tiling, or parchment texture behind the entire image.\nLeave the specified negative space useful for separately typeset book elements.\nFollow the requested dimensions where supported; do not claim an unsupported resolution.",
+ "assets": [
+  {
+   "asset_id": "ART-COVER-001",
+   "source_lore_refs": [
+    "1.1 lines 165-175",
+    "6.x Recommended First Party (line 2631)",
+    "1.2 lines 191-199"
+   ],
+   "subject": "A four-Hero adventuring party — Human Fighter, Elf Ranger, Dwarf Cleric, Halfling Rogue — advancing through a rain-soaked ruined shrine; a rival party's banner across the ruin; a Monster silhouette in the treeline",
+   "composition": "Low three-quarter view; party small in the lower third; broken shrine arch as frame; open sky upper half reserved for typeset title",
+   "intended_printed_size_in": [
+    6.5,
+    5.0
+   ],
+   "aspect_ratio": "13:10",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     1950,
+     1500
+    ],
+    "line_art_1bit_600ppi": [
+     3900,
+     3000
+    ]
+   },
+   "crop_negative_space_plan": "Upper 40% open sky for title; edges fade to paper; no hard rectangle",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: A four-Hero adventuring party — Human Fighter, Elf Ranger, Dwarf Cleric, Halfling Rogue — advancing through a rain-soaked ruined shrine; a rival party's banner across the ruin; a Monster silhouette in the treeline\nSCENE/COMPOSITION: Low three-quarter view; party small in the lower third; broken shrine arch as frame; open sky upper half reserved for typeset title\nPRINT PLACEMENT: 6.5 x 5.0 in; native 1950x1500 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": "ART-CH01-001 once approved as style anchor",
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-COVER-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  },
+  {
+   "asset_id": "ART-CH01-001",
+   "source_lore_refs": [
+    "1.3 Greythorn, line 277"
+   ],
+   "subject": "Greythorn: a timber-walled town among ancient oaks at the last surviving forest crossroads; tithe-bundles left at standing stones; gate-wardens at the gate",
+   "composition": "Wide establishing view from the forest road; palisade and gate right of centre; standing stones with tithe-bundles foreground left",
+   "intended_printed_size_in": [
+    7.0,
+    3.6
+   ],
+   "aspect_ratio": "35:18",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     2100,
+     1080
+    ],
+    "line_art_1bit_600ppi": [
+     4200,
+     2160
+    ]
+   },
+   "crop_negative_space_plan": "Sky band top 25% light; vignette fades left/right edges",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: Greythorn: a timber-walled town among ancient oaks at the last surviving forest crossroads; tithe-bundles left at standing stones; gate-wardens at the gate\nSCENE/COMPOSITION: Wide establishing view from the forest road; palisade and gate right of centre; standing stones with tithe-bundles foreground left\nPRINT PLACEMENT: 7.0 x 3.6 in; native 2100x1080 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": null,
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-CH01-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  },
+  {
+   "asset_id": "ART-CH02-001",
+   "source_lore_refs": [
+    "2.7 example line 804"
+   ],
+   "subject": "A Ranger drawing a bow with clear line of sight to a Skeleton Warrior while the sight line crosses their own Fighter",
+   "composition": "Side view across rubble; Ranger left, Fighter mid-ground, Skeleton Warrior right among broken pillars",
+   "intended_printed_size_in": [
+    7.0,
+    3.6
+   ],
+   "aspect_ratio": "35:18",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     2100,
+     1080
+    ],
+    "line_art_1bit_600ppi": [
+     4200,
+     2160
+    ]
+   },
+   "crop_negative_space_plan": "Keep central sight line legible; open space above",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: A Ranger drawing a bow with clear line of sight to a Skeleton Warrior while the sight line crosses their own Fighter\nSCENE/COMPOSITION: Side view across rubble; Ranger left, Fighter mid-ground, Skeleton Warrior right among broken pillars\nPRINT PLACEMENT: 7.0 x 3.6 in; native 2100x1080 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": "ART-CH01-001 once approved as style anchor",
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-CH02-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  },
+  {
+   "asset_id": "ART-CH03-001",
+   "source_lore_refs": [
+    "3.x initiative example line 1035"
+   ],
+   "subject": "Dawn of a new round: a weary party (the Road Wardens) gathering behind a ruined wall as a chapel bell tolls over a drowned field",
+   "composition": "Wide shot, low horizon, bell tower silhouette right",
+   "intended_printed_size_in": [
+    7.0,
+    3.6
+   ],
+   "aspect_ratio": "35:18",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     2100,
+     1080
+    ],
+    "line_art_1bit_600ppi": [
+     4200,
+     2160
+    ]
+   },
+   "crop_negative_space_plan": "Horizon at lower third",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: Dawn of a new round: a weary party (the Road Wardens) gathering behind a ruined wall as a chapel bell tolls over a drowned field\nSCENE/COMPOSITION: Wide shot, low horizon, bell tower silhouette right\nPRINT PLACEMENT: 7.0 x 3.6 in; native 2100x1080 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": "ART-CH01-001 once approved as style anchor",
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-CH03-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  },
+  {
+   "asset_id": "ART-CH04-001",
+   "source_lore_refs": [
+    "4.x forced movement example line 1374"
+   ],
+   "subject": "A Skeleton hurled back toward the crumbling edge of a ledge by a blast of force",
+   "composition": "Diagonal composition; ledge edge lower right; debris falling into darkness",
+   "intended_printed_size_in": [
+    7.0,
+    3.6
+   ],
+   "aspect_ratio": "35:18",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     2100,
+     1080
+    ],
+    "line_art_1bit_600ppi": [
+     4200,
+     2160
+    ]
+   },
+   "crop_negative_space_plan": "Black void lower right; light upper left",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: A Skeleton hurled back toward the crumbling edge of a ledge by a blast of force\nSCENE/COMPOSITION: Diagonal composition; ledge edge lower right; debris falling into darkness\nPRINT PLACEMENT: 7.0 x 3.6 in; native 2100x1080 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": "ART-CH01-001 once approved as style anchor",
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-CH04-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  },
+  {
+   "asset_id": "ART-CH05-001",
+   "source_lore_refs": [
+    "5.x Reactions example line 1428"
+   ],
+   "subject": "An Ogre's club swinging at a Cleric who throws themself aside (Dodge)",
+   "composition": "Close medium shot; Ogre fills right half; Cleric low left mid-roll",
+   "intended_printed_size_in": [
+    7.0,
+    3.6
+   ],
+   "aspect_ratio": "35:18",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     2100,
+     1080
+    ],
+    "line_art_1bit_600ppi": [
+     4200,
+     2160
+    ]
+   },
+   "crop_negative_space_plan": "Strong silhouettes against open ground",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: An Ogre's club swinging at a Cleric who throws themself aside (Dodge)\nSCENE/COMPOSITION: Close medium shot; Ogre fills right half; Cleric low left mid-roll\nPRINT PLACEMENT: 7.0 x 3.6 in; native 2100x1080 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": "ART-CH01-001 once approved as style anchor",
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-CH05-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  },
+  {
+   "asset_id": "ART-CH06-001",
+   "source_lore_refs": [
+    "Recommended First Party line 2631",
+    "6.9 Ancestries",
+    "6.13 Classes"
+   ],
+   "subject": "Portrait group: Human Fighter (Soldier), Elf Ranger (Scout), Dwarf Cleric (Soldier), Halfling Rogue (Smuggler) preparing gear",
+   "composition": "Frieze-like line-up at a campfire, varied heights true to ancestry",
+   "intended_printed_size_in": [
+    7.0,
+    3.6
+   ],
+   "aspect_ratio": "35:18",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     2100,
+     1080
+    ],
+    "line_art_1bit_600ppi": [
+     4200,
+     2160
+    ]
+   },
+   "crop_negative_space_plan": "Firelight pool centre; dark edges",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: Portrait group: Human Fighter (Soldier), Elf Ranger (Scout), Dwarf Cleric (Soldier), Halfling Rogue (Smuggler) preparing gear\nSCENE/COMPOSITION: Frieze-like line-up at a campfire, varied heights true to ancestry\nPRINT PLACEMENT: 7.0 x 3.6 in; native 2100x1080 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": "ART-CH01-001 once approved as style anchor",
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-CH06-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  },
+  {
+   "asset_id": "ART-CH07-001",
+   "source_lore_refs": [
+    "7.6 example line 3706 (Masterwork Longsword, Adamantine Buckler)",
+    "7.8 Melee Weapons",
+    "7.10 Armour"
+   ],
+   "subject": "A smith's trestle in a fortified town: a masterwork longsword, an adamantine buckler, mail and plate on a rack",
+   "composition": "Still life, slightly high angle",
+   "intended_printed_size_in": [
+    7.0,
+    3.6
+   ],
+   "aspect_ratio": "35:18",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     2100,
+     1080
+    ],
+    "line_art_1bit_600ppi": [
+     4200,
+     2160
+    ]
+   },
+   "crop_negative_space_plan": "Objects centred; paper background",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: A smith's trestle in a fortified town: a masterwork longsword, an adamantine buckler, mail and plate on a rack\nSCENE/COMPOSITION: Still life, slightly high angle\nPRINT PLACEMENT: 7.0 x 3.6 in; native 2100x1080 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": "ART-CH01-001 once approved as style anchor",
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-CH07-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  },
+  {
+   "asset_id": "ART-CH08-001",
+   "source_lore_refs": [
+    "8.2 casting example line 5417"
+   ],
+   "subject": "A Wizard declaring Arcane Bolt at a Ghoul twelve inches away across a ruined library",
+   "composition": "Wizard left foreground back three-quarter; Ghoul right distance; bolt as white negative-space streak",
+   "intended_printed_size_in": [
+    7.0,
+    3.6
+   ],
+   "aspect_ratio": "35:18",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     2100,
+     1080
+    ],
+    "line_art_1bit_600ppi": [
+     4200,
+     2160
+    ]
+   },
+   "crop_negative_space_plan": "Bolt rendered as negative space",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: A Wizard declaring Arcane Bolt at a Ghoul twelve inches away across a ruined library\nSCENE/COMPOSITION: Wizard left foreground back three-quarter; Ghoul right distance; bolt as white negative-space streak\nPRINT PLACEMENT: 7.0 x 3.6 in; native 2100x1080 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": "ART-CH01-001 once approved as style anchor",
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-CH08-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  },
+  {
+   "asset_id": "ART-CH09-001",
+   "source_lore_refs": [
+    "9.7 Giant Tarantula entry line 7785"
+   ],
+   "subject": "A giant tarantula stalking Greenmark leaf litter on stilted steps, body the size of a war helm",
+   "composition": "Low ground-level view among roots and leaves",
+   "intended_printed_size_in": [
+    7.0,
+    3.6
+   ],
+   "aspect_ratio": "35:18",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     2100,
+     1080
+    ],
+    "line_art_1bit_600ppi": [
+     4200,
+     2160
+    ]
+   },
+   "crop_negative_space_plan": "Creature centre-right; litter fades to paper",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: A giant tarantula stalking Greenmark leaf litter on stilted steps, body the size of a war helm\nSCENE/COMPOSITION: Low ground-level view among roots and leaves\nPRINT PLACEMENT: 7.0 x 3.6 in; native 2100x1080 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": "ART-CH01-001 once approved as style anchor",
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-CH09-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  },
+  {
+   "asset_id": "ART-CH10-001",
+   "source_lore_refs": [
+    "10.4 Scenario 2: The Whispering Grove, line 12042"
+   ],
+   "subject": "The Whispering Grove: three standing stones in a central clearing ringed by ancient trees; the Antlered Warden, woven from bark and grey moss, at the clearing's edge",
+   "composition": "Wide view of clearing; stones as triangle; Warden half-hidden left",
+   "intended_printed_size_in": [
+    7.0,
+    3.6
+   ],
+   "aspect_ratio": "35:18",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     2100,
+     1080
+    ],
+    "line_art_1bit_600ppi": [
+     4200,
+     2160
+    ]
+   },
+   "crop_negative_space_plan": "Clearing open centre",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: The Whispering Grove: three standing stones in a central clearing ringed by ancient trees; the Antlered Warden, woven from bark and grey moss, at the clearing's edge\nSCENE/COMPOSITION: Wide view of clearing; stones as triangle; Warden half-hidden left\nPRINT PLACEMENT: 7.0 x 3.6 in; native 2100x1080 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": "ART-CH01-001 once approved as style anchor",
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-CH10-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  },
+  {
+   "asset_id": "ART-CH11-001",
+   "source_lore_refs": [
+    "11.x Journey Home example line 15403",
+    "11.3 Building the Stronghold"
+   ],
+   "subject": "A party returning from The Mire at dusk by fen-lantern light, carrying wounded toward their stronghold's palisade gate",
+   "composition": "Procession left to right on a causeway; gate right",
+   "intended_printed_size_in": [
+    7.0,
+    3.6
+   ],
+   "aspect_ratio": "35:18",
+   "required_pixels": {
+    "grayscale_300ppi": [
+     2100,
+     1080
+    ],
+    "line_art_1bit_600ppi": [
+     4200,
+     2160
+    ]
+   },
+   "crop_negative_space_plan": "Water reflections minimal; open sky",
+   "shared_style_prompt": "Rough black-and-white pen-and-ink drawing: expressive irregular nib lines, controlled crosshatching, dry-brush accents, occasional stippling, readable silhouettes, deliberate paper-white negative space, selective dense black shapes. Hand-drawn medieval fantasy ink character without photographic rendering or glossy digital airbrushing.",
+   "asset_prompt": "SUBJECT: A party returning from The Mire at dusk by fen-lantern light, carrying wounded toward their stronghold's palisade gate\nSCENE/COMPOSITION: Procession left to right on a causeway; gate right\nPRINT PLACEMENT: 7.0 x 3.6 in; native 2100x1080 px or larger.",
+   "full_prompt_template": "docs/ART_DIRECTION.md 'Reusable ChatGPT/image-service prompt' with SUBJECT/SCENE/COMPOSITION/PRINT PLACEMENT filled from this entry",
+   "exclusions": "No lettering, title, label, signature, logo, watermark, colour, faint grid, pseudo-script, tiling, parchment texture, photorealism, airbrush gradients, named-artist imitation.",
+   "service_model": null,
+   "reference_asset": "ART-CH01-001 once approved as style anchor",
+   "generation_status": "NOT GENERATED — no authorised image service (config/production.json external_spend_limit_usd = 0) and no supplied assets in assets/art/incoming/",
+   "provenance": null,
+   "permitted_use_terms": null,
+   "qa": "NOT TESTED",
+   "insertion": "Place the approved master as assets/art/incoming/ART-CH11-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
+  }
+ ]
+}

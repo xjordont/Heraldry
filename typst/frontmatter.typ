@@ -1,5 +1,7 @@
 // Front and back matter: title page, how-to-use, generated contents, index.
 #import "heraldry.typ": *
+#import "cover.typ": front-cover, back-cover
+#let edition = sys.inputs.at("edition", default: "print")
 
 #let how-to-use = json("../editorial/how_to_use.json")
 #let index-data = if sys.inputs.at("index", default: "on") == "on" { json("../build/index.json") } else { (entries: ()) }
@@ -17,7 +19,7 @@
     #v(22pt)
     #line(length: 40%, stroke: 0.7pt + ink)
     #v(18pt)
-    #block(width: 70%)[#set text(size: 12pt, style: "italic"); #subtitle]
+    #block(width: 80%)[#set par(leading: 5pt); #set text(size: 12pt, style: "italic"); #subtitle]
     #v(1fr)
   ]
   #place(bottom + center, dy: -0.4in)[
@@ -54,7 +56,12 @@
   columns(2, gutter: gap, outline(title: none, depth: 2, indent: 0pt))
 }
 
+#let version-text = json("../build/cover.json").version
 #let frontmatter(title: ("HERALDRY SKIRMISH", "THE DYING LANDS"), subtitle: [], version: []) = {
+  if edition == "digital" {
+    front-cover(title, emph(subtitle), version)
+    page(header: none, footer: none, numbering: none)[]   // inside front cover (keeps recto/verso parity)
+  }
   set page(numbering: "i")
   counter(page).update(1)
   title-page(title, subtitle, version)
@@ -132,4 +139,10 @@
   ]
 }
 
-#let backmatter() = { index-page() }
+#let backmatter() = {
+  index-page()
+  if edition == "digital" {
+    let cd = json("../build/cover.json")
+    back-cover((lead: emph(cd.lead), facts: cd.facts), version-text)
+  }
+}

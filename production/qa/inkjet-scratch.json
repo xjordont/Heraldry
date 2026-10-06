@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "pdf": "build/book-cream.pdf",
+  "pages": 419,
+  "text_spans_checked": 85491,
+  "font_resources_checked": 11,
+  "checks": [
+    "Letter portrait boxes/rotation",
+    "minimum text size",
+    "text edge safety",
+    "simulated centred overscan text clipping",
+    "referenced font embedding",
+    "searchable text present"
+  ],
+  "failure_counts": {},
+  "failure_examples_first_50": [],
+  "physical_inkjet_proof": "NOT TESTED",
+  "limits": "Not source reconciliation, art/background/raster/mark inspection, all-page visual QA, or physical printer certification",
+  "tool": {
+    "PyMuPDF": "1.28.2",
+    "python": "3.13.16"
+  }
+}
