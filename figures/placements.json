@@ -50,7 +50,7 @@
   "B00810": [
     {
       "id": "FIG-07",
-      "caption": "Blocking Terrain, a corner shared by two Blocking squares and the interior of Cover Terrain block LOS. Touching only a Cover Terrain corner, an intervening combatant and Impassable Terrain leave LOS clear but give the target Cover; a Shift of 1 AP clear of the line removes the combatant's Cover (see 2.7.2 and 2.8.4).",
+      "caption": "Blocking Terrain, a corner shared by two Blocking squares and the interior of Cover Terrain block LOS. Touching only a Cover Terrain corner, an intervening combatant and Impassable Terrain leave LOS clear and give the target Cover (Impassable Terrain unless its terrain entry says otherwise); a Shift of 1 AP clear of the line removes the combatant's Cover (see 2.7.2 and 2.8.4).",
       "width": "100%",
       "scope": "full"
     }
@@ -58,7 +58,7 @@
   "B00741": [
     {
       "id": "FIG-08",
-      "caption": "A Grid Mode Aura 2\" affects 13 squares (including the source square) and a 3\" Cone 7 squares beyond its origin; a square whose sight line from the origin is blocked by Blocking Terrain is unaffected even if the template covers it. Shared area damage is rolled once (see 2.7.3).",
+      "caption": "A Grid Mode Aura 2\" affects 13 squares (including the source square); a 3\" Cone affects 7 squares and not its origin square, because a cone or line does not affect the combatant it originates from. A square whose sight line from the origin is blocked by Blocking Terrain is unaffected even if the template covers it, and shared area damage is rolled once (see 2.7.3).",
       "width": "100%",
       "scope": "full"
     }
@@ -98,7 +98,7 @@
   "B11062": [
     {
       "id": "FIG-13",
-      "caption": "Deployment patterns used by the Core Scenarios, drawn on a 36\"×36\" battlefield: opposite long or short edges within 6\", a Setup Roll-off winner's choice of edge or 8\"×8\" corner, and opposite corner zones with alternating placement where stated (see 10.1 and each scenario's Party Deployment).",
+      "caption": "Deployment patterns used by the Core Scenarios, drawn on a 36\"×36\" battlefield: opposite long or short edges within 6\", a Setup Roll-off winner's choice of edge or 8\"×8\" corner, and opposite corner zones with alternating placement. Where a scenario is silent, the 10.1 step 11 default supplies the 6\" depth, the 8\"×8\" corner size and the placing order (see 10.1 and each scenario's Party Deployment).",
       "width": "100%",
       "scope": "full"
     },
@@ -120,7 +120,7 @@
   "B12100": [
     {
       "id": "FIG-16",
-      "caption": "In the Whispering Grove the Antlered Warden's Target Priority is the valid Hero who most recently activated or attempted to activate a Standing Stone, whichever party that Hero belongs to; its Entangling Roots then applies if the target is within 8\" (see 10.4).",
+      "caption": "In the Whispering Grove the Antlered Warden is placed adjacent to the first Standing Stone a Hero Interacts with, and its Target Priority is the valid Hero who most recently activated or attempted to activate a Stone, whichever party that Hero belongs to. Entangling Roots then applies if the target is within 8\" (see 10.4).",
       "width": "100%",
       "scope": "full"
     }
@@ -136,7 +136,7 @@
   "B16371": [
     {
       "id": "FIG-18",
-      "caption": "Appendix A starting positions and Round 1 of the sample game. Edric ends the round with 16 − 5 = 11, 11 − 3 = 8 and 8 − 3 = 5 HP after Varek's attack and two Dire Wolf bites (see A.11).",
+      "caption": "Appendix A starting positions, with the Dispatch Satchel adjacent to the centre ruin, and Round 1 of the sample game. Edric ends the round with 16 − 5 = 11, 11 − 3 = 8 and 8 − 3 = 5 HP after Varek's attack and two Dire Wolf bites (see A.11).",
       "width": "100%",
       "scope": "full"
     }
@@ -144,7 +144,7 @@
   "B17082": [
     {
       "id": "FIG-19",
-      "caption": "Basic Mode setup for The Courier's Strongbox on a 24\"×24\" battlefield. Example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move, and extracting it plus 1 Satchel, 2 Goblins and 1 Bandit scores 12 + 4 + 2 + 3 = 21c (see B.6).",
+      "caption": "Basic Mode setup for The Courier's Strongbox on a 24\"×24\" battlefield, with one complete Monster group per Entry marker, assigned at random. Example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move, and extracting it plus 1 Satchel, 2 Goblins and 1 Bandit scores 12 + 4 + 2 + 3 = 21c (see B.6).",
       "width": "100%",
       "scope": "full"
     }

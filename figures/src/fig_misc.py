@@ -108,10 +108,12 @@ def fig18():
     # centre cross-hairs
     s.line(cx - 4, cy, cx + 4, cy, MID, 0.6)
     s.line(cx, cy - 4, cx, cy + 4, MID, 0.6)
-    # satchel at the centre, 4 wolves 2" N/S/E/W
-    token(s, "obj", cx, cy, 4.8)
-    for dx, dy in ((0, 2), (2, 0), (-2, 0), (0, -2)):
-        token(s, "M", cx + dx * k, cy + dy * k, 5.0)
+    # centre ruin (A.2): 3"x3" Blocking, centred on the battlefield centre. The Dispatch Satchel is placed
+    # adjacent to it (A.4, A.11); the side is not stated, so the band of adjacent squares is outlined, not a position.
+    terrain(s, "blocking", cx - 1.5 * k, cy - 1.5 * k, 3 * k, 3 * k, None)
+    s.rect(cx - 2.5 * k, cy - 2.5 * k, 5 * k, 5 * k, fill="none", stroke=INK, sw=0.9, dash="3 2")
+    pill(s, cx, cy - 2.5 * k - 4, "Satchel: adjacent to ruin", 9, 600)
+    pill(s, cx, cy + 3.3, "ruin", 9, 600)
     # chest 5" east of centre
     token(s, "chest", cx + 5 * k, cy, 5.0)
     # heroes (A.11 table): Party A south edge, Party B north edge
@@ -127,8 +129,15 @@ def fig18():
     _dimv(s, bx + 9.5 * k, by + 20 * k, by + side, "4\"") if False else None
     pill(s, cx + 5 * k + 4, cy + 17, "5\" east", 9, 600)
     pill(s, cx + 13, cy - 2 * k - 1 + 12, "wolves 2\"", 9, 600) if False else None
-    yy = s.para(bx, by + side + 11, "24\"×24\" battlefield, 7 pt per inch; markers enlarged. Positions are those of the A.11 table. The terrain of A.2 is not drawn.", 190, 9, lead=10.4)
-    yl = legend(s, [("A", "Road Wardens"), ("B", "Black Briar Raiders"), ("M", "Dire Wolf"), ("obj", "Dispatch Satchel"), ("chest", "Treasure Chest"), ("zone", "within 4\" of short edge")], 0, yy + 4, 190)
+    yy = s.para(bx, by + side + 11, "24\"×24\" battlefield, 7 pt per inch; markers enlarged. Hero and Chest positions are those of the A.11 table. The Satchel is adjacent to the centre ruin (A.4); its side is not stated, so only the squares around the ruin are outlined. The other A.2 terrain is not drawn.", 190, 9, lead=10.4)
+    # relative layout of the Satchel and the four Dire Wolves (A.11), drawn apart from the board because the Satchel's side of the ruin is not stated
+    iy = yy + 24
+    ix = bx + 28
+    token(s, "obj", ix, iy, 4.8)
+    for dx, dy in ((0, 2), (2, 0), (-2, 0), (0, -2)):
+        token(s, "M", ix + dx * 10, iy + dy * 10, 5.0)
+    s.para(ix + 36, iy - 14, "Satchel with Dire Wolves 2\" north, south, east and west of it (A.11). Relative layout only; 10 pt per inch.", 124, 9, lead=10.4)
+    yl = legend(s, [("A", "Road Wardens"), ("B", "Black Briar Raiders"), ("M", "Dire Wolf"), ("obj", "Dispatch Satchel"), ("chest", "Treasure Chest"), ("blocking", "centre ruin (Blocking)"), ("zone", "within 4\" of short edge")], 0, iy + 38, 190)
     # ---------------- right: round 1 ----------------
     rx = 200
     rw = FULL_W - rx
@@ -236,7 +245,7 @@ def fig19():
     notes = [
         "**Terrain:** a road across the centre; 2 ruins, carts or low walls within 4\" of the centre; 4 more 3\"×3\" pieces, one in each quarter. Ruins are Blocking, carts and low walls Impassable, other pieces Cover.",
         "**Deployment:** each side deploys within 4\" of opposite battlefield edges.",
-        "**Monster Entry markers:** 3 markers around the centre, each 5–7\" from it, at least 4\" from each other and outside both deployment zones. One complete group (Goblins, Skeleton Warriors, Bandits) and 1 Satchel at each marker; every group begins Resting.",
+        "**Monster Entry markers:** 3 markers around the centre, each 5–7\" from it, at least 4\" from each other and outside both deployment zones. The 3 groups (4 Goblins, 4 Skeleton Warriors, 4 Bandits) are assigned to the markers at random, one complete group per marker, with 1 Satchel on each marker. Every group begins Resting.",
         "**Treasure:** the Strongbox (12c) at the centre; 3 Satchels (4c each). A carrier of the Strongbox has −2\" Speed, to a minimum of 1\".",
         "**Extraction:** leave the battlefield through your own deployment edge; the carried treasure's Coin Value is added to your score.",
     ]

@@ -219,13 +219,13 @@ def fig13():
     set_scale(4.0)
     P = 228
     ys = []
-    ys.append(deploy_panel(0, s, "A", "Opposite long edges", "Each party deploys within 6\" of its own long battlefield edge.", d_long, row_pitch=P))
-    ys.append(deploy_panel(1, s, "B", "Opposite short edges", "Each party deploys within 6\" of its own short battlefield edge.", d_short, row_pitch=P))
-    ys.append(deploy_panel(2, s, "C", "Roll-off winner chooses the edge", "(1) The Setup Roll-off winner chooses the edge (a long edge, or any battlefield edge, as the scenario states). (2) The other party takes the opposite edge. Both are within 6\" of their edge.", d_choose, row_pitch=P))
-    ys.append(deploy_panel(3, s, "D", "Roll-off winner chooses a corner", "(1) The Setup Roll-off winner chooses an 8\"\u00d78\" corner zone. (2) The other party deploys in the diagonally opposite corner.", d_corner_choose, row_pitch=P))
-    ys.append(deploy_panel(4, s, "E", "Opposite corners, alternate placing", "Opposite 8\"\u00d78\" corner zones. Where the scenario says so, parties alternate placing Heroes within their zone, starting with the party that lost the Setup Roll-off.", d_corner_alt, row_pitch=P))
+    ys.append(deploy_panel(0, s, "A", "Opposite long edges", "Each party deploys within 6\" of its own long battlefield edge (6\" is the 10.1 step 11 default where the scenario gives no depth).", d_long, row_pitch=P))
+    ys.append(deploy_panel(1, s, "B", "Opposite short edges", "Each party deploys within 6\" of its own short battlefield edge (6\" is the 10.1 step 11 default where the scenario gives no depth).", d_short, row_pitch=P))
+    ys.append(deploy_panel(2, s, "C", "Roll-off winner chooses the edge", "(1) The Setup Roll-off winner chooses the edge (a long edge, or any battlefield edge, as the scenario states; the 10.1 step 11 default where it is silent). (2) The other party takes the opposite edge. Both are within 6\" of it.", d_choose, row_pitch=P))
+    ys.append(deploy_panel(3, s, "D", "Roll-off winner chooses a corner", "(1) The Setup Roll-off winner chooses an 8\"\u00d78\" corner zone (10.1 step 11 default). (2) The other party deploys in the diagonally opposite corner.", d_corner_choose, row_pitch=P))
+    ys.append(deploy_panel(4, s, "E", "Opposite corners, alternate placing", "Opposite 8\"\u00d78\" corner zones. Parties alternate placing Heroes within their zone, starting with the party that lost the Setup Roll-off (stated, or the 10.1 step 11 default).", d_corner_alt, row_pitch=P))
     yl = _legend_block(s, 2 * 168 + 4, P + 22, [("A", "Party A Heroes (enlarged)"), ("B", "Party B Heroes (enlarged)"), ("zone", "deployment zone")],
-                       "Zones and bands are drawn to scale on a 36\"\u00d736\" battlefield (4 pt per inch); Hero markers are enlarged. North and South are the short edges and East and West the long edges, even on a square battlefield (10.1). Each party may field 1\u20134 Heroes; two or three are shown. Sun-Drowned 2, The Mire 5 and The Mire 6 state no band distance: the 6\" band is the general pattern there, not a stated value.", 160)
+                       "Zones and bands are drawn to scale on a 36\"\u00d736\" battlefield (4 pt per inch); Hero markers are enlarged. North and South are the short edges and East and West the long edges, even on a square battlefield (10.1). Each party may field 1\u20134 Heroes; two or three are shown. Where a scenario states no depth, zone size or placing order (Sun-Drowned 2 and 3, The Mire 3, 5 and 6, Pale City 1), the 10.1 step 11 default applies: 6\" from the edge, 8\"\u00d78\" corners, alternate placing from the Roll-off loser. Where only \"opposite battlefield edges\" are named, the Roll-off winner chooses the edge.", 160)
     return s, max(ys[3], ys[4], yl) + 4
 
 
@@ -335,33 +335,43 @@ def fig16():
     for (x, y) in stones:
         token(s, "obj", x, y, 5.5)
     _dimh(s, stones[1][0], stones[2][0], stones[1][1] + 17, "6\u20138\"")
-    ha = (stones[0][0] + 14, stones[0][1] + 2)
+    ha = (stones[0][0] + 13, stones[0][1] - 3.6)
     hb = (stones[1][0] - 14, stones[1][1] - 2)
     token(s, "A", *ha, 5.5)
     token(s, "B", *hb, 5.5)
-    wx, wy = cx + 3, cy + 2
+    # Antlered Warden (Large, 2" square) adjacent to the first Stone a Hero Interacts with (here the Stone the Party A Hero uses)
+    wx, wy = stones[0][0], stones[0][1] + 16.5
     token(s, "ML", wx, wy, 10)
+    # Random Monster Group 2: inside the Clearing, 4" from its edge (radius 6.75" - 4" = 2.75" from the Clearing centre)
+    ang = math.radians(30)
+    gx, gy = cx + 2.75 * k * math.cos(ang), cy - 2.75 * k * math.sin(ang)
+    ex_, ey_ = cx + 6.75 * k * math.cos(ang), cy - 6.75 * k * math.sin(ang)
+    assert abs(math.hypot(ex_ - gx, ey_ - gy) - 4.0 * k) < 1e-9
+    assert all(math.hypot(gx - sx, gy - sy) > 6.5 + 5.5 for (sx, sy) in stones) and math.hypot(gx - wx, gy - wy) > 17
+    _dimc(s, gx, gy, ex_, ey_, "4\"", side=3.5, dy=-3)      # from the group's marker centre to the Clearing edge
+    token(s, "M", gx, gy, 5.6)                               # marker drawn over the dimension's start
     callout(s, ha[0] + 12, ha[1] - 10, 1, 6.0)
-    callout(s, hb[0] - 12, hb[1] - 10, 2, 6.0)
-    callout(s, wx + 17, wy - 14, 3, 6.0)
-    arrow(s, wx - 11, wy + 4, hb[0] + 7, hb[1] + 3, "los")
+    callout(s, hb[0], hb[1] - 13, 2, 6.0)
+    callout(s, wx - 19, wy - 8, 3, 6.0)
+    callout(s, gx + 12, gy + 8, 6, 6.0)
+    arrow(s, wx - 11, wy + 2, hb[0] + 7, hb[1] - 4, "los")
     pill(s, cx, by + side - 8, "Central Clearing: about 12\u201315\" across", 9, 600)
-    s.text(bx, by + side + 12, "Detail of the centre of the battlefield", 9, 600, "start", "#333")
-    s.text(bx, by + side + 23, "(10 pt per inch; positions schematic)", 9, 600, "start", "#333")
+    ycap = s.para(bx, by + side + 11, "Detail of the centre of the battlefield (10 pt per inch; Clearing drawn 13.5\" across; positions schematic).", 190, 9, 600, lead=10.4, fill="#333")
     # ---------------- right: sequence ----------------
     rx = side + 26
     rw = FULL_W - rx
     panel_title(s, rx, 0, "B", "Two parties, one Monster (PvPvE)")
     y = 24
     notes = [
-        "**Activate a Stone (10.4):** a Hero adjacent to a Standing Stone uses Interact [2 AP] and makes a SPI Check. A stone is claimed by only one party. Here a Party A Hero activates a Stone first.",
+        "**Activate a Stone (10.4):** a Hero adjacent to a Standing Stone uses Interact [2 AP] and makes a SPI Check. A stone is claimed by only one party. Here a Party A Hero Interacts with a Stone first.",
         "**Rival attempt:** a Party B Hero later attempts to activate another Stone.",
-        "**Antlered Warden:** not placed at setup. When the first Stone is Interacted with, it is placed adjacent to the central Standing Stone and is Awake when placed.",
+        "**Antlered Warden:** not placed at setup. When a Hero first Interacts with a Standing Stone, it is placed adjacent to that Stone (here, the Party A Hero\u2019s Stone) and is Awake when placed.",
         "**Monster Phase:** the Warden's Target Priority is the valid Hero who most recently activated or attempted to activate a Standing Stone, here the Party B Hero. If no listed target is valid, the normal Monster target priorities apply (9.5 E).",
         "**AI Step 1, Entangling Roots:** if the Primary Target is within 8\" and not Immobilized, it must pass a DEX Check or become Immobilized. The activation then ends.",
+        "**Random Monster Group 2:** placed inside the Central Clearing, 4\" from its edge, Resting. Groups 1 and 3 (near a Stone and a Treasure Chest) are not drawn.",
     ]
     y = step_list(s, rx, y, notes, rw, gap=5)
     y += 2
-    y = legend(s, [("A", "Party A Hero"), ("B", "Party B Hero"), ("ML", "Antlered Warden"), ("obj", "Standing Stone"), ("los", "Warden's target")], rx, y, rw)
-    H = max(y, by + side + 28)
+    y = legend(s, [("A", "Party A Hero"), ("B", "Party B Hero"), ("ML", "Antlered Warden"), ("M", "Monster Group 2"), ("obj", "Standing Stone"), ("los", "Warden's target")], rx, y, rw)
+    H = max(y, ycap + 2)
     return s, H + 2
