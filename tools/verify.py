@@ -120,7 +120,11 @@ def main():
     # figure semantic review must be current (hash-bound to the SVG and caption) and free of open majors
     st["figure_semantic_review"], _ = run(["tools/figure_review_gate.py", "--report", str(QA / "figure-review-gate.json")], QA / "figure-review-gate.json")
 
-    mandatory = ["source_preflight", "source_integrity", "reconciliation", "reconciliation_digital", "layout_detectors", "inkjet_checker_cream",
+    declared = [x["id"] for x in json.loads((ROOT / "editorial/patches.json").read_text())["patches"] if x.get("status") == "applied"]
+    applied = json.loads((ROOT / "build/blocks.json").read_text()).get("patches_applied", [])
+    st["editorial_patches"] = "PASS" if declared == applied else "FAIL"
+
+    mandatory = ["editorial_patches", "source_preflight", "source_integrity", "reconciliation", "reconciliation_digital", "layout_detectors", "inkjet_checker_cream",
                  "inkjet_checker_white", "print_supplementary", "no_duplicate_tables_figures", "xref_audit", "table_audit", "index_audit", "figures_placed",
                  "figure_semantic_review"]
     failed = [k for k in mandatory if st.get(k) != "PASS"]
