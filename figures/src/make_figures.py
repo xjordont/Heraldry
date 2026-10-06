@@ -82,6 +82,24 @@ def selfcheck():
         for j in range(i + 1, 3):
             assert math.hypot(ents[i][0] - ents[j][0], ents[i][1] - ents[j][1]) >= 4
         assert 4 <= ents[i][1] <= 20
+    # FIG-14 panels B and C: each separation dimension runs exactly between the closest edges (2.6) of the
+    # nearest opposing Heroes; those Heroes are farther apart than the limit; every marker is inside its zone
+    import fig_scen
+    for key in ("B", "C"):
+        g = fig_scen.GEOM14[key]
+        (x1, y1), (x2, y2) = g["dim"]
+        (ax, ay), (bx_, by_) = g["a"], g["b"]
+        assert abs(math.hypot(bx_ - ax, by_ - ay) - g["r"] * 2 - math.hypot(x2 - x1, y2 - y1)) < 1e-9
+        assert abs(x1 - (ax + g["r"])) < 1e-9 and abs(x2 - (bx_ - g["r"])) < 1e-9 and y1 == ay and y2 == by_
+        assert math.hypot(x2 - x1, y2 - y1) > g["limit"]
+    gc = fig_scen.GEOM14["C"]
+    z = gc["zone"]
+    for (x, y) in [gc["a"], gc["b"]] + gc["others"]:
+        assert z[0] <= x - 0.5 and x + 0.5 <= z[2] and z[1] <= y - 0.5 and y + 0.5 <= z[3]
+    for (ax, ay) in [gc["a"], gc["others"][0]]:      # every A-B pair is more than 3" apart (closest points)
+        for (bx_, by_) in [gc["b"], gc["others"][1]]:
+            assert math.hypot(bx_ - ax, by_ - ay) - 1.0 > 3.0
+    assert fig_scen.GEOM14["B"]["b"][0] - fig_scen.GEOM14["B"]["a"][0] - 2 * fig_scen.GEOM14["B"]["r"] > 6.0
     # FIG-15: Survey Map 3" before the first ledge, Stone 3" after the last
     assert 14 - 11 == 3 and 25 - 22 == 3
 

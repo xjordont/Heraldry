@@ -112,7 +112,7 @@
   "B12997": [
     {
       "id": "FIG-15",
-      "caption": "In The Chasm Crossing the Survey Map starts 3\" from the first ledge and must be placed adjacent to the Cartographer's Stone 3\" beyond the last ledge. Gaps of 1–2\" between ledges are crossed by Jump, and a failed Jump into the Chasm causes a Chasm Fall (see 10.4).",
+      "caption": "In The Chasm Crossing the Survey Map starts 3\" from the first ledge and must be placed adjacent to the Cartographer's Stone 3\" beyond the last ledge. Gaps of 1–2\" between ledges are crossed by Jump, and a failed Jump into the Chasm causes a Chasm Fall, with stated exceptions for Fly or Climb Speeds (see 10.4).",
       "width": "100%",
       "scope": "full"
     }
