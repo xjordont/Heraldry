@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="243pt" height="259.9pt" viewBox="0 0 243 259.9">
+<title>Greenmark Scenario 5: The Ambushed Emissary, deployment map</title>
+<desc>Column-width top-down map of the setup for Greenmark 5: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<defs>
+<pattern id="p-cover-l" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#aaa" stroke-width="0.6" fill="none"/></pattern>
+<pattern id="p-diff-l" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.7" fill="#999"/><circle cx="3" cy="3" r="0.7" fill="#999"/></pattern>
+<pattern id="p-imp-l" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.6" height="2.6" fill="#fff"/><path d="M0.4 0V2.6" stroke="#aaa" stroke-width="0.8" fill="none"/></pattern>
+<pattern id="p-mon-l" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#999" stroke-width="0.9" fill="none"/></pattern>
+<pattern id="p-water" width="6" height="4" patternUnits="userSpaceOnUse"><rect width="6" height="4" fill="#fff"/><path d="M0 2.2Q1.5 0.4 3 2.2T6 2.2" stroke="#333" stroke-width="0.8" fill="none"/></pattern>
+<pattern id="p-water-l" width="6" height="4" patternUnits="userSpaceOnUse"><rect width="6" height="4" fill="#fff"/><path d="M0 2.2Q1.5 0.4 3 2.2T6 2.2" stroke="#aaa" stroke-width="0.8" fill="none"/></pattern>
+<pattern id="p-slip" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#333" stroke-width="0.9" fill="none"/></pattern>
+<pattern id="p-slip-l" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#aaa" stroke-width="0.9" fill="none"/></pattern>
+<clipPath id="bclip"><rect x="22.5" y="14" width="198" height="198"/></clipPath>
+<pattern id="p-dark" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#d9d9d9"/><path d="M0 4L4 0" stroke="#fff" stroke-width="0.9" fill="none"/></pattern>
+</defs>
+<rect x="27.9" y="14" width="187.2" height="187.2" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<rect x="27.9" y="14" width="41.6" height="41.6" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="27.9" y="14" width="3.2" height="41.6" fill="#000"/>
+<rect x="27.9" y="14" width="41.6" height="3.2" fill="#000"/>
+<line x1="27.9" y1="43.95" x2="69.5" y2="43.95" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="27.9" y1="40.95" x2="27.9" y2="46.95" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="69.5" y1="40.95" x2="69.5" y2="46.95" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="173.5" y="159.6" width="41.6" height="41.6" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="211.9" y="159.6" width="3.2" height="41.6" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<rect x="173.5" y="198" width="41.6" height="3.2" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<line x1="173.5" y1="189.55" x2="215.1" y2="189.55" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="173.5" y1="186.55" x2="173.5" y2="192.55" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="215.1" y1="186.55" x2="215.1" y2="192.55" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="142.3" y="60.8" width="20.8" height="20.8" fill="url(#p-cover)" stroke="#000" stroke-width="0.9"/>
+<rect x="173.5" y="29.6" width="31.2" height="20.8" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="100.7" y="128.4" width="26" height="20.8" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="173.5" y="138.8" width="26" height="15.6" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g clip-path="url(#bclip)">
+<circle cx="152.7" cy="71.2" r="31.2" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="3 2.5"/>
+</g>
+<line x1="152.7" y1="14" x2="152.7" y2="55.6" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="155.3" y1="14" x2="150.1" y2="14" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="155.3" y1="55.6" x2="150.1" y2="55.6" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="100.16" y1="50.34" x2="93.74" y2="80.87" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="102.71" y1="50.88" x2="97.62" y2="49.81" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="96.28" y1="81.41" x2="91.19" y2="80.34" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="142.3" y1="81.6" x2="142.3" y2="112.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="144.9" y1="81.6" x2="139.7" y2="81.6" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="144.9" y1="112.8" x2="139.7" y2="112.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="144.9" y1="120.6" x2="186.5" y2="120.6" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="144.9" y1="118" x2="144.9" y2="123.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="186.5" y1="118" x2="186.5" y2="123.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<circle cx="100.7" cy="47.8" r="23.4" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="3 2.5"/>
+<circle cx="90.3" cy="97.2" r="23.4" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="3 2.5"/>
+<rect x="96.8" y="43.9" width="7.8" height="7.8" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="100.7" cy="47.8" r="1.3" fill="#000"/>
+<rect x="86.4" y="93.3" width="7.8" height="7.8" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="90.3" cy="97.2" r="1.3" fill="#000"/>
+<rect x="138.4" y="116.7" width="7.8" height="7.8" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="142.3" cy="120.6" r="1.3" fill="#000"/>
+<rect x="76" y="155.7" width="7.8" height="7.8" fill="#fff" stroke="#000" stroke-width="1.5"/>
+<circle cx="79.9" cy="159.6" r="1.3" fill="#000"/>
+<rect x="189.88" y="117.22" width="8.84" height="6.76" fill="#d9d9d9" stroke="#000" stroke-width="1"/>
+<line x1="189.88" y1="120.08" x2="198.72" y2="120.08" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="39.08" y="119.82" width="8.84" height="6.76" fill="#d9d9d9" stroke="#000" stroke-width="1"/>
+<line x1="39.08" y1="122.68" x2="47.92" y2="122.68" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<polygon points="105.67,66 103.18,70.3 98.22,70.3 95.73,66 98.22,61.7 103.18,61.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="78.63,99.8 76.14,104.1 71.18,104.1 68.69,99.8 71.18,95.5 76.14,95.5" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="157.67,102.4 155.18,106.7 150.22,106.7 147.73,102.4 150.22,98.1 155.18,98.1" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<line x1="121.5" y1="29" x2="121.5" y2="21" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="121.5,14 124.9,21 118.1,21" fill="#000"/>
+<line x1="200.1" y1="107.6" x2="208.1" y2="107.6" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="215.1,107.6 208.1,111 208.1,104.2" fill="#000"/>
+<line x1="121.5" y1="186.2" x2="121.5" y2="194.2" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="121.5,201.2 118.1,194.2 124.9,194.2" fill="#000"/>
+<line x1="42.9" y1="107.6" x2="34.9" y2="107.6" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="27.9,107.6 34.9,104.2 34.9,111" fill="#000"/>
+<circle cx="39.55" cy="24.4" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="57.85" cy="24.4" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="185.15" cy="170" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="185.15" cy="170" r="1.6" fill="#000"/>
+<circle cx="203.45" cy="170" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="203.45" cy="170" r="1.6" fill="#000"/>
+<rect x="35.84" y="30.75" width="25.73" height="11.2" fill="#fff"/>
+<text x="37.44" y="39.15" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">8"×8"</text>
+<rect x="181.44" y="176.35" width="25.73" height="11.2" fill="#fff"/>
+<text x="183.04" y="184.75" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">8"×8"</text>
+<rect x="178.8" y="34.4" width="20.6" height="11.2" fill="#fff"/>
+<text x="180.4" y="42.8" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Tree</text>
+<rect x="151.23" y="122.6" width="28.94" height="11.2" fill="#fff"/>
+<text x="152.83" y="131" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">min 8"</text>
+<rect x="165.1" y="65.6" width="25.69" height="11.2" fill="#fff"/>
+<text x="166.7" y="74" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Camp</text>
+<rect x="116.39" y="141" width="55.11" height="11.2" fill="#fff"/>
+<text x="117.99" y="149.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Undergrowth</text>
+<rect x="159.2" y="34.7" width="12.16" height="11.2" fill="#fff"/>
+<text x="160.8" y="43.1" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
+<rect x="155.85" y="20.45" width="28.94" height="11.2" fill="#fff"/>
+<text x="157.45" y="28.85" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">min 8"</text>
+<rect x="63.51" y="60.01" width="28.94" height="11.2" fill="#fff"/>
+<text x="65.11" y="68.41" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">min 6"</text>
+<rect x="108.86" y="91.6" width="28.94" height="11.2" fill="#fff"/>
+<text x="110.46" y="100" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">min 6"</text>
+<rect x="124.09" y="27.2" width="12.16" height="11.2" fill="#fff"/>
+<text x="125.69" y="35.6" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">4"</text>
+<rect x="71.44" y="110.3" width="12.16" height="11.2" fill="#fff"/>
+<text x="73.04" y="118.7" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">4"</text>
+<rect x="90.5" y="29.4" width="20.39" height="11.2" fill="#fff"/>
+<text x="92.1" y="37.8" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Clue</text>
+<rect x="107.76" y="60.4" width="21.27" height="11.2" fill="#fff"/>
+<text x="109.36" y="68.8" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">G1·R</text>
+<rect x="45.33" y="94.2" width="21.27" height="11.2" fill="#fff"/>
+<text x="46.93" y="102.6" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">G2·R</text>
+<rect x="159.76" y="96.8" width="21.27" height="11.2" fill="#fff"/>
+<text x="161.36" y="105.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">G3·R</text>
+<text x="27.9" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Greenmark 5</text>
+<text x="84.22" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">·  36"×36"</text>
+<polygon points="210.1,3 206.9,9.5 213.3,9.5" fill="#000"/>
+<text x="204.1" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">N</text>
+<text x="23.9" y="111" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">W</text>
+<text x="219.1" y="111" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">E</text>
+<line x1="27.9" y1="211.2" x2="59.1" y2="211.2" stroke="#000" stroke-width="1.4" stroke-linecap="butt"/>
+<line x1="27.9" y1="208.2" x2="27.9" y2="214.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="59.1" y1="208.2" x2="59.1" y2="214.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="43.5" y1="209.2" x2="43.5" y2="213.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<text x="63.1" y="214.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">6" scale</text>
+<text x="104.38" y="214.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Schematic</text>
+<text x="215.1" y="214.2" font-family="'Source Sans 3'" font-size="9" fill="#000"></text>
+<text x="219.1" y="210.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">S</text>
+<text x="6" y="226.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Grey dashed = one legal arrangement; position not fixed by</text>
+<text x="6" y="237.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the rules</text>
+<text x="6" y="247.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Roll-off winner chooses the Camp quadrant.</text>
+</svg>

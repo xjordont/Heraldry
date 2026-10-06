@@ -123,5 +123,195 @@
     "section": "h-tier-5-legendary-artifact-armour-and-shields-d20",
     "type": "table",
     "prefix": "d20 | Name | Equipment Type | AD/AV | STR | DEX | INT | SPI | DEX Pen | Max Speed | Cost (c) | Description | 1 | Sunforged Full Plate | Chest | d12+5 | 8 | - | - | - | -5 | 5\" | 12"
+  },
+  "FIG-20": {
+    "section": "h-104-core-scenario-outlines",
+    "type": "para",
+    "prefix": "If a scenario's printed Tiebreaker is also tied, the adventure is a draw: neither party wins the adventure, and both par"
+  },
+  "FIG-21": {
+    "section": "h-scenario-1-hunt-the-wild-beast-intro",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite long battlefield edges, within 6\" of their edge."
+  },
+  "FIG-22": {
+    "section": "h-scenario-2-the-whispering-grove",
+    "type": "para",
+    "prefix": "Party Deployment: Parties make a Setup Roll-off. The winner chooses an 8\"×8\" corner zone. The other party deploys in the"
+  },
+  "FIG-23": {
+    "section": "h-scenario-3-the-bandits-toll",
+    "type": "para",
+    "prefix": "Party Deployment: Parties make a Setup Roll-off. The winner chooses one short battlefield edge (where the Trail enters)."
+  },
+  "FIG-24": {
+    "section": "h-scenario-4-the-spiders-silk-route",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite short battlefield edges, on higher ground outside the Ravine, within 6\" of "
+  },
+  "FIG-25": {
+    "section": "h-scenario-5-the-ambushed-emissary",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy in opposite corner zones (8\"×8\"). Parties alternate placing Heroes within their zone, s"
+  },
+  "FIG-26": {
+    "section": "h-scenario-6-ritual-of-the-old-growth",
+    "type": "para",
+    "prefix": "Party Deployment: Parties make a Setup Roll-off. The winner chooses a long battlefield edge and deploys within 6\" of tha"
+  },
+  "FIG-27": {
+    "section": "h-scenario-1-the-fallen-observatory-intro",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite long battlefield edges, within 6\" of their edge."
+  },
+  "FIG-28": {
+    "section": "h-scenario-2-the-guardians-test",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite short battlefield edges, within 6\" of their edge."
+  },
+  "FIG-29": {
+    "section": "h-scenario-3-the-shifting-sands-of-time",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy in opposite corner zones (8\"×8\"). Parties alternate placing Heroes within their zone, s"
+  },
+  "FIG-30": {
+    "section": "h-scenario-4-the-sealed-archive",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite short battlefield edges, within 6\" of their edge."
+  },
+  "FIG-31": {
+    "section": "h-scenario-5-the-reliquary-of-broken-saints",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite long battlefield edges, within 6\" of their edge."
+  },
+  "FIG-32": {
+    "section": "h-scenario-6-the-iron-vein-vault",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite long battlefield edges, within 6\" of their edge."
+  },
+  "FIG-33": {
+    "section": "h-scenario-1-the-crystal-harvest-intro",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy in opposite corner zones (8\"×8\"). Parties alternate placing Heroes within their zone, s"
+  },
+  "FIG-34": {
+    "section": "h-scenario-2-the-chasm-crossing",
+    "type": "list",
+    "prefix": "Group 1: Roll once on the Undermarches Random Monster Table. Place on the delivery side of the Chasm near the Cartograph"
+  },
+  "FIG-35": {
+    "section": "h-scenario-3-the-quake",
+    "type": "para",
+    "prefix": "Party Deployment: Both parties deploy within a central 8\"×8\" Safe Zone cavern, representing both parties caught by the i"
+  },
+  "FIG-36": {
+    "section": "h-scenario-4-the-undermarches-outpost-raid",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy in opposite corner zones (8\"×8\"). Parties alternate placing Heroes within their zone, s"
+  },
+  "FIG-37": {
+    "section": "h-scenario-5-the-shadowed-under-passage",
+    "type": "para",
+    "prefix": "Party Deployment: Party A deploys within 6\" of one short battlefield edge (the end of the Under Passage farther from the"
+  },
+  "FIG-38": {
+    "section": "h-scenario-6-the-ritual-of-shadow-binding",
+    "type": "para",
+    "prefix": "Party Deployment: Party A deploys within 6\" of one short battlefield edge. Party B deploys within 6\" of the opposite sho"
+  },
+  "FIG-39": {
+    "section": "h-scenario-1-plunder-of-the-frozen-ruins-intro",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy in opposite corner zones (8\"×8\")."
+  },
+  "FIG-40": {
+    "section": "h-scenario-2-the-alchemists-frozen-laboratory",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite short battlefield edges, within 6\" of their edge."
+  },
+  "FIG-41": {
+    "section": "h-scenario-3-the-haunted-mausoleum",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite short battlefield edges outside the mausoleum, within 6\" of their edge."
+  },
+  "FIG-42": {
+    "section": "h-scenario-4-the-clockwork-menagerie",
+    "type": "para",
+    "prefix": "Party Deployment: Parties make a Setup Roll-off. The winner chooses one battlefield edge and deploys their party within "
+  },
+  "FIG-43": {
+    "section": "h-scenario-5-the-ice-wyrms-hoard",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite battlefield edges where the tunnel approaches enter, within 6\" of their edg"
+  },
+  "FIG-44": {
+    "section": "h-scenario-6-the-icebound-court",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite short battlefield edges, within 6\" of their edge."
+  },
+  "FIG-45": {
+    "section": "h-scenario-1-the-oasis-raiders-intro",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite long battlefield edges, within 6\" of their edge."
+  },
+  "FIG-46": {
+    "section": "h-scenario-2-the-cinder-lords-lost-brazier",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite short battlefield edges, converging on the plaza."
+  },
+  "FIG-47": {
+    "section": "h-scenario-3-tomb-of-the-sunken-kings",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy in opposite corner zones, representing different breaches into the tomb."
+  },
+  "FIG-48": {
+    "section": "h-scenario-4-the-sandwyrms-lair",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite battlefield edges, within 6\" of their edge."
+  },
+  "FIG-49": {
+    "section": "h-scenario-5-the-cursed-colossus-of-the-waste",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite battlefield edges, within 6\" of their edge."
+  },
+  "FIG-50": {
+    "section": "h-scenario-6-the-cinder-lords-obsidian-prison",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite short battlefield edges, within 6\" of their edge."
+  },
+  "FIG-51": {
+    "section": "h-scenario-1-the-reliquary-of-edrava-salttide-intro",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite short battlefield edges on the driest banks, within 6\" of their edge."
+  },
+  "FIG-52": {
+    "section": "h-scenario-2-the-lizardfolks-stolen-offerings",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite battlefield edges, within 6\" of their edge."
+  },
+  "FIG-53": {
+    "section": "h-scenario-3-the-mire-titans-fen",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy in opposite corner zones on the outer banks."
+  },
+  "FIG-54": {
+    "section": "h-scenario-4-the-blighted-heartwood",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite short battlefield edges, within 6\" of their edge."
+  },
+  "FIG-55": {
+    "section": "h-scenario-5-salttides-reckoning",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite long battlefield edges along the outer banks."
+  },
+  "FIG-56": {
+    "section": "h-scenario-6-the-serpents-sunken-hoard",
+    "type": "para",
+    "prefix": "Party Deployment: Parties deploy on opposite short battlefield edges, outside the immediate Sinkhole area."
+  },
+  "FIG-57": {
+    "section": "h-preparation-steps",
+    "type": "list",
+    "prefix": "Determine Average Party Level (APL). Determine each party's APL as described in Section 6.14. Choose Climate. Select or "
   }
 }

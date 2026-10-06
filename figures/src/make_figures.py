@@ -11,7 +11,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 OUT = os.path.join(HERE, "..", "out")
 
-MODULES = ["fig_seq", "fig_spatial", "fig_monster", "fig_scen", "fig_misc"]
+MODULES = ["fig_seq", "fig_spatial", "fig_monster", "fig_scen", "fig_misc", "fig_scenmaps"]
 
 
 def registry():
@@ -103,6 +103,10 @@ def selfcheck():
     assert fig_scen.GEOM14["B"]["b"][0] - fig_scen.GEOM14["B"]["a"][0] - 2 * fig_scen.GEOM14["B"]["r"] > 6.0
     # FIG-15: Survey Map 3" before the first ledge, Stone 3" after the last
     assert 14 - 11 == 3 and 25 - 22 == 3
+    # FIG-20..57: scenario deployment maps, legend and procedural template
+    import fig_scenmaps
+    problems = fig_scenmaps.check_scenmaps()
+    assert not problems, "scenario map checks failed:\n  " + "\n  ".join(problems)
 
 
 def validate_svgs():
@@ -182,6 +186,87 @@ def validate_placements():
     return errs
 
 
+def write_anchor_proposals():
+    """figures/anchor_proposals.json: content-anchor definitions (section, type, text prefix) for the new figures,
+    ready to merge into config/content_anchors.json so that placement survives line renumbering."""
+    import figdata
+    from content_anchors import text_of
+    model = json.load(open(os.path.join(HERE, "..", "..", "build", "blocks.json")))
+    cands, section = [], None
+    for ch in model["chapters"]:
+        for b in ch["blocks"]:
+            if b["type"] == "heading":
+                section = b["id"]
+            cands.append((section, b))
+    byid = {b["id"]: (sec, b) for sec, b in cands}
+    out = {}
+    for fid in sorted(figdata.META):
+        if not figdata.META[fid].get("new_figure"):
+            continue
+        sec, b = byid[figdata.META[fid]["insert_after"]]
+        t = text_of(b)
+        for n in (120, 160, 220, 300, 400):
+            pre = t[:n]
+            hits = [x for s_, x in cands if s_ == sec and x["type"] == b["type"] and text_of(x).startswith(pre)]
+            if len(hits) == 1:
+                out[fid] = dict(section=sec, type=b["type"], prefix=pre)
+                break
+        else:
+            raise SystemExit("no unique anchor prefix for " + fid)
+    with open(os.path.join(HERE, "..", "anchor_proposals.json"), "w", encoding="utf-8") as f:
+        json.dump(out, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+
+
+def write_coverage(dims):
+    """production/qa/scenario-coverage.json: scenario / map / rule coverage matrix."""
+    import figdata
+    import fig_scenmaps
+    rows, summ, amb_total = fig_scenmaps.coverage_matrix()
+    for r in rows:
+        r["map_size_pt"] = {"width": dims[r["map_figure"]][0], "height": dims[r["map_figure"]][1]}
+    appendix = [
+        dict(key="Appendix A: Learn to Play, A.4 Quickstart Scenario: The Broken Courier", source_lines=[16172, 16208],
+             map_figure="FIG-18", detail_figures=[], insert_after=figdata.META["FIG-18"]["insert_after"],
+             setup_rules=["A.2 terrain list", "A.4 Setup Roll-off (short edge, 4\" zones)"],
+             drawn_in_figure=["24\"x24\" battlefield", "4\" deployment bands on both short edges (16184)", "3\"x3\" centre ruin, Blocking (16108)",
+                              "Dispatch Satchel adjacent to the centre ruin (16180; side not stated, so the adjacent band is outlined)",
+                              "Treasure Chest 5\" east of centre (A.11 sample; A.4 allows 5-6\" near one flank, 16180)",
+                              "Dire Wolves within 2\" of the Satchel (16182) as a relative layout inset", "Hero starting positions from the A.11 table"],
+             not_drawn=["A.2 flank low wall (4-6\" from centre), flank rubble patch and 2-3 scatter pieces (16109-16111): positions are open and are not needed for deployment"],
+             ambiguities=["Which side of the centre ruin the Satchel (and therefore the Dire Wolves) stands on is not stated."],
+             status="drawn (existing FIG-18 checked; unchanged)"),
+        dict(key="Appendix B: Basic Mode, B.6 Basic Scenario: The Courier's Strongbox", source_lines=[17072, 17095],
+             map_figure="FIG-19", detail_figures=[], insert_after=figdata.META["FIG-19"]["insert_after"],
+             setup_rules=["B.6 deployment (4\" of opposite edges)", "B.6 Monster Setup (3 Monster Entry markers, 5-7\" from centre, 4\" apart)"],
+             drawn_in_figure=["24\"x24\" battlefield", "4\" bands on opposite edges (17078)", "Strongbox at the centre (17082)",
+                              "Monster Entry band 5-7\" from centre, markers at least 4\" apart, outside both zones (17080)", "one Satchel on each Entry marker (17082)",
+                              "road across the centre, 2 ruins/carts/low walls within 4\" of centre, 4 quarter pieces of 3\"x3\" (17076)",
+                              "no Advanced Mode rules shown"],
+             not_drawn=["which opposite edges are the deployment edges and who places the Entry markers are not stated (north and south drawn)"],
+             ambiguities=[], status="drawn (existing FIG-19 checked; unchanged)"),
+    ]
+    procedural = dict(key="10.1 Preparation Steps", source_lines=[11060, 11073], map_figure="FIG-%d" % (fig_scenmaps.FIRST_MAP_FIG + 36),
+                      legend_figure=fig_scenmaps.LEGEND_FIG, detail_figures=["FIG-13", "FIG-14"],
+                      insert_after="B%05d" % fig_scenmaps.TEMPLATE_ANCHOR_LINE,
+                      setup_rules=["step 7 exclusion: 3\" from a battlefield edge, 6\" from a deployment zone", "step 11 default: edge zones 6\" deep, corner zones 8\"x8\", alternate placing from the Roll-off loser"],
+                      status="drawn")
+    drawn = sum(1 for r in rows if r["status"] == "drawn")
+    summary = dict(scenarios=len(rows), drawn=drawn, blocked_by_ambiguity=len(rows) - drawn,
+                   scenario_map_figures="FIG-%d to FIG-%d" % (fig_scenmaps.FIRST_MAP_FIG, fig_scenmaps.FIRST_MAP_FIG + len(rows) - 1),
+                   legend_figure=fig_scenmaps.LEGEND_FIG, template_figure=procedural["map_figure"],
+                   elements=dict(mandatory=summ["MANDATORY_POSITION"], constrained=summ["CONSTRAINED"], illustrative=summ["ILLUSTRATIVE"]),
+                   ambiguities_logged=amb_total,
+                   global_notes=["Group placement constraints ('within 3\" of ...', 'at least 8\" from ...') are drawn for one marker per Monster Group; the text does not say whether every member of a multi-Monster group must satisfy them.",
+                                 "Counts of scattered terrain are printed values; maps draw a few representative pieces and never resolve 10.6 scaling."])
+    out = dict(generated="2026-10-06", source="source/Heraldry_RC485.md", scenarios=rows, appendix=appendix, procedural=procedural, summary=summary)
+    path = os.path.join(HERE, "..", "..", "production", "qa", "scenario-coverage.json")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(out, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+
+
 if __name__ == "__main__":
     only = sys.argv[1:] or None
     done = build(only)
@@ -194,6 +279,9 @@ if __name__ == "__main__":
         import figdata
         figdata.write_all({d[0]: (d[1], d[2]) for d in done})
         print("wrote manifest.json, placements.json")
+        write_coverage({d[0]: (d[1], d[2]) for d in done})
+        write_anchor_proposals()
+        print("wrote production/qa/scenario-coverage.json")
         errs += validate_placements()
     for e in errs:
         print("VALIDATION:", e)
