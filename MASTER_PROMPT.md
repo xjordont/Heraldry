@@ -46,6 +46,10 @@ Use scripts for parsing, conversion, inventory, counting, image processing, page
 
 ## 4. Inspect capabilities, then establish the build
 
+Before the first project edit, run `python3 tools/preflight.py --baseline --report production/preflight.json` and read `docs/LAUNCH_CHECKLIST.md`. The script validates the shipped kit and source, not the future book. On resumed production after legitimate project changes, omit `--baseline` while keeping the immutable source check. Repair failed kit checks before proceeding; provision missing tools during this milestone.
+
+Cloud dependency downloads may be constrained by the GitHub proxy: release assets from unrelated repositories can be blocked even when registries are reachable. Prefer a supported registry/system-package route or another documented installation method if that happens; record actual versions and do not invent credentials or repeat the same blocked request.
+
 Inventory available Python, Pandoc, Typst, Poppler, PDF inspection libraries, fonts, vector tools, screenshot/image-reading capabilities, PDF/X tools, network access, image services, and secrets by variable NAME only. Do not display secret values. Check current official documentation only for uncertain implementation details; do not perform an expansive research project before building.
 
 Prefer a **Markdown → semantic AST/JSON → custom Typst components → PDF** pipeline, with Python/Pandoc filters where useful. Use a proper Markdown parser and measured content-based column sizing; generic pipe-table rendering is insufficient. Preserve source text through conversion. Layout decisions belong in templates and sidecar metadata, not prose rewritten by an LLM. An equally capable alternative is acceptable only if the representative specimen exposes a concrete Typst blocker; document the reason and change the engine once, rather than maintaining competing stacks.

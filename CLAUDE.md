@@ -9,3 +9,5 @@ Read `config/production.json`, `docs/ART_DIRECTION.md`, and `docs/DESIGN_SPEC.md
 Use deterministic scripts for conversion/inventory; never regenerate all source prose or tables with an LLM. Maintain complete source/table/output mappings. Build a real stress specimen, then the complete book, diagrams/assets, navigation, and verified deliverables. The specimen is not completion.
 
 Track state/next commands in `production/STATE.md`; record costs, editorial changes, asset status, QA and print blockers in on-disk ledgers. Continue authorized work without design approval pauses. Preserve checkpoints under resource limits. Report actual results; no unsupported claims of full illustration, PDF/X certification, perfect visual inspection, or printer-specific readiness.
+
+Before first execution, read `docs/LAUNCH_CHECKLIST.md` and run `python3 tools/preflight.py --baseline --report production/preflight.json`. On resume after production changes, omit `--baseline` while retaining source integrity. `production/STATE.md` is initialised as NOT STARTED; update it with evidence at each milestone.

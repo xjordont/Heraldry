@@ -25,6 +25,6 @@ The manuscript is the only authority for rules. Reference books supply visual in
 
 ## Verify the uploaded kit
 
-Run `sha256sum -c SHA256SUMS.txt` from the repository root. These checks cover this launch kit, not a future generated book.
+Run `python3 tools/preflight.py --baseline` from the repository root. The check uses only the Python standard library, verifies the source and all shipped checksums, and reports runtime capabilities. Read [docs/LAUNCH_CHECKLIST.md](docs/LAUNCH_CHECKLIST.md) for optional visual references and remaining account/art/printer inputs. These checks cover the launch kit, not a future generated book.
 
 The publication PDFs, original art, final pagination, and printer-specific preflight are production tasks to be completed during execution.
