@@ -6,38 +6,32 @@
  "basis": "Estimated from orchestrator turn count and context size; Opus 5.5 orchestrator (medium effort) did parser/template/build work directly to avoid re-ingesting context in subagents.",
  "ledger": [
   {
-   "milestone": "M0 preflight, toolchain, inventory, full first build",
+   "milestone": "Orchestration, parser, design system, full build, QA tooling, index, covers, repairs, visual review, packaging",
    "model": "claude-opus-5-5",
    "effort": "medium",
-   "estimated_usd": 12,
-   "basis": "~45 orchestrator turns, ~150k context peak"
+   "estimated_usd": 45,
+   "basis": "~200 orchestrator turns, cached context growing to ~250k tokens; assumed Opus-class list pricing; promotional accounting may differ"
   },
   {
-   "milestone": "M1-M5 conversion, QA tooling, index, covers, navigation, repairs",
-   "model": "claude-opus-5-5",
-   "effort": "medium",
-   "estimated_usd": 18,
-   "basis": "~90 further orchestrator turns at ~150-200k cached context"
-  },
-  {
-   "milestone": "Figures (rules-illustrator subagent, in progress)",
-   "model": "claude-sonnet-5-5",
+   "milestone": "Rules diagrams + audit fixes (rules-illustrator)",
+   "model": "claude-sonnet-5-5 (requested via agent model 'sonnet')",
    "effort": "high (agent definition)",
-   "estimated_usd": 8,
-   "basis": "estimate; no telemetry"
+   "estimated_usd": 6,
+   "basis": "~957k subagent tokens reported by harness, mostly cached"
+  },
+  {
+   "milestone": "Independent figure audit (publication-auditor)",
+   "model": "claude-sonnet-5-5",
+   "effort": "high",
+   "estimated_usd": 1.5,
+   "basis": "~176k subagent tokens reported"
   }
  ],
- "estimated_total_usd": 38,
- "outstanding": [
-  "specimen + design review",
-  "figures",
-  "index",
-  "reconciliation QA",
-  "visual QA batches",
-  "variants, covers, calibration, packaging"
- ],
+ "estimated_total_usd": 52.5,
+ "outstanding": [],
  "thresholds": {
   "stop_optional_expansion_usd": 60,
   "completion_only_usd": 80
- }
+ },
+ "status": "Estimated ~$52 of $100; below the $60 optional-expansion threshold. Not measured: no spend telemetry available in this session."
 }

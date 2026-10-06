@@ -29,3 +29,16 @@ None. `editorial/patches.json` is empty; the publication text is byte-identical 
 ## Rules ambiguities / contradictions
 
 No full semantic contradiction audit of the 241,000-word manuscript has been performed in this build. Ambiguities found while drawing figures are listed in `figures/manifest.json` (field `ambiguity`) and summarised here when present. Final-content status therefore remains qualified: no known unresolved contradiction, full rules audit NOT TESTED.
+
+## Additional layout notes
+* L-03 addendum: a `<br>` followed by a source newline renders as one line break.
+* L-09: paragraphs consisting only of one bold label (e.g. "Initiative Phase", "APL 1–2 (d10)") are kept with the following block (run-in label); text unchanged.
+
+## Ambiguities recorded while drawing figures (source text preserved; only uncontested parts drawn)
+From `figures/manifest.json` (`ambiguity`) and the independent review `production/qa/figure-semantic-review.json`:
+1. Appendix A: A.2 places the centre ruin "at the centre" while A.4/A.11 place the Dispatch Satchel at the centre with wolves 2" away; FIG-18 omits A.2 terrain.
+2. Scenario 2 (The Whispering Grove): "central Standing Stone" is undefined for three stones in a triangle; one Group placement is unclear — not drawn (FIG-16).
+3. Cone origin-square inclusion and Line tie squares in Grid Mode are not settled — no Grid Line drawn (FIG-08).
+4. Ranges (Trail 3–4", Ravine 6–8", ledges) drawn at one value and labelled schematic; several scenarios say "opposite battlefield edges" without long/short, and Sun-Drowned 2, The Mire 5 and The Mire 6 state no deployment distance (FIG-13 marks these "distance not stated").
+5. The Chasm Crossing: generic Jump failure (4.4.9) vs. the scenario's Chasm Fall rule — the figure draws the scenario rule, which is the more specific rule under 1.6.
+None of these were edited in the text; they are reported for the author. Whether any is a material contradiction is an authorial judgement: final-content status is therefore qualified.
