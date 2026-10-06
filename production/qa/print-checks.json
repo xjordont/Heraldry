@@ -1,7 +1,7 @@
 {
  "pages": {
-  "cream": 436,
-  "white": 436
+  "cream": 450,
+  "white": 450
  },
  "substrate_edges": {
   "cream": [],
@@ -38,8 +38,8 @@
  "rasters": [],
  "page_labels_sample": [
   "ageLabeli",
-  "ageLabel213",
-  "ageLabel430"
+  "ageLabel220",
+  "ageLabel444"
  ],
  "status": "PASS"
 }

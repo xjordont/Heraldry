@@ -3932,7 +3932,7 @@
 10143,
 10145
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -3943,7 +3943,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T209",
@@ -3951,7 +3959,7 @@
 10167,
 10169
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -3962,7 +3970,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T210",
@@ -3970,7 +3986,7 @@
 10189,
 10191
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -3981,7 +3997,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T211",
@@ -3989,7 +4013,7 @@
 10212,
 10214
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4000,7 +4024,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T212",
@@ -4008,7 +4040,7 @@
 10235,
 10237
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4019,7 +4051,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T213",
@@ -4027,7 +4067,7 @@
 10259,
 10261
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4038,7 +4078,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T214",
@@ -4046,7 +4094,7 @@
 10281,
 10283
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4057,7 +4105,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T215",
@@ -4065,7 +4121,7 @@
 10303,
 10305
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4076,7 +4132,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T216",
@@ -4084,7 +4148,7 @@
 10325,
 10327
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4095,7 +4159,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T217",
@@ -4103,7 +4175,7 @@
 10349,
 10351
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4114,7 +4186,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T218",
@@ -4122,7 +4202,7 @@
 10372,
 10374
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4133,7 +4213,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T219",
@@ -4141,7 +4229,7 @@
 10398,
 10400
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4152,7 +4240,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T220",
@@ -4160,7 +4256,7 @@
 10424,
 10426
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4171,7 +4267,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T221",
@@ -4179,7 +4283,7 @@
 10451,
 10453
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4190,7 +4294,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T222",
@@ -4198,7 +4310,7 @@
 10477,
 10479
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4209,7 +4321,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T223",
@@ -4936,7 +5056,7 @@
 12000,
 12002
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -4947,7 +5067,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T263",
@@ -5441,7 +5569,7 @@
 13328,
 13330
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -5452,7 +5580,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T282",
@@ -5514,7 +5650,7 @@
 13583,
 13585
 ],
-"rep": "statstrip",
+"rep": "statcard",
 "scope": "column",
 "columns": 6,
 "rows": 1,
@@ -5525,7 +5661,15 @@
 "LVL",
 "CV",
 "Sz"
-]
+],
+"field_map": {
+"HP": "row1.HP",
+"AV": "row1.AV",
+"SPD": "row1.SPD",
+"LVL": "row1.LVL",
+"CV": "row1.CV",
+"Sz": "row1.Sz"
+}
 },
 {
 "id": "T285",
