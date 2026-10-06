@@ -1,0 +1,333 @@
+{
+  "section_1_6_lines": [
+    431,
+    433,
+    435
+  ],
+  "items": [
+    {
+      "id": "A-01",
+      "topic": "Appendix A: centre ruin 'at the centre' vs Dispatch Satchel 'at the battlefield centre, adjacent to the centre ruin'",
+      "figures": [
+        "FIG-18"
+      ],
+      "source_lines": [
+        16108,
+        16180,
+        16182,
+        16358
+      ],
+      "classification": "RESOLVED_BY_1.6",
+      "reasoning": "Three statements: A.2 puts a 3\"x3\" Blocking ruin at the centre; A.4 (the scenario) places the Satchel 'adjacent to the centre ruin' and the wolves within 2\" of the Satchel; the A.11 table (a worked example) says the Satchel is 'at the battlefield centre, adjacent to the centre ruin'. A literal centre-point Satchel cannot be adjacent to a ruin that covers the centre. 1.6 last sentence: examples never override the main rules text, so the A.11 table cannot override A.2/A.4; the scenario rule (A.4) is the operative placement.",
+      "answer_if_resolved": "Satchel is adjacent to the centre ruin (not on the exact centre point); A.11 coordinates are illustrative only. FIG-18 draws the A.11 positions and says the A.2 terrain is not drawn.",
+      "competing_readings_if_unresolved": null,
+      "impact": "None for rules outcomes; FIG-18 is a faithful drawing of the example."
+    },
+    {
+      "id": "A-02",
+      "topic": "Whispering Grove: Warden placed 'adjacent to the central Standing Stone' but 3 Stones form a rough triangle",
+      "figures": [
+        "FIG-16"
+      ],
+      "source_lines": [
+        12088,
+        12062,
+        12100
+      ],
+      "classification": "UNRESOLVED",
+      "reasoning": "1.6 resolves conflicts between rules; here there is a gap (no Stone is defined as central), not a conflict. No more-specific or more-restrictive rule picks a Stone. 9.5 A 'Unassigned Choices' (7612) assigns Random Determination to free choices of a Monster rule, but a Boss Deployment placement is arguably a scenario setup instruction rather than a Monster rule, so applying it is itself contestable.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": "(1) The Stone nearest the centre of the Central Clearing / battlefield. (2) The Stone that was just Interacted with (the placement trigger). (3) Random Determination among the three Stones (by analogy with 7612). (4) Any point adjacent to the centre of the triangle (reading 'central' loosely).",
+      "impact": "Low to moderate: changes the Warden's starting position relative to the Stones and Heroes (8\" Entangling Roots range, who is nearest), so can sway which party the Warden pressures first. No rule contradiction; players need a house default."
+    },
+    {
+      "id": "A-03",
+      "topic": "Whispering Grove Group 2: 'perimeter of the Central Clearing, 4\" from its edge'",
+      "figures": [
+        "FIG-16"
+      ],
+      "source_lines": [
+        12093
+      ],
+      "classification": "UNRESOLVED",
+      "reasoning": "'Perimeter' is the edge itself, so '4\" from its edge' is internally inconsistent; no precedence rule selects between the readings (single rule, self-contradictory).",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": "(1) On the perimeter circle. (2) 4\" inside the edge. (3) 4\" outside the clearing. (4) Anywhere in the ring from edge to 4\" inside.",
+      "impact": "Low: places one Resting group; affects wake-up distances (6\" movement trigger) but no figure shows it."
+    },
+    {
+      "id": "A-04",
+      "topic": "Grid Mode Cone: is the origin square 'within the cone'?",
+      "figures": [
+        "FIG-08"
+      ],
+      "source_lines": [
+        708,
+        727,
+        728,
+        741
+      ],
+      "classification": "UNRESOLVED",
+      "reasoning": "Cone row of the Affected Squares table says 'every square whose centre lies within the cone, rounded outward at ties' with no origin-square statement; the Line row explicitly includes the origin square and the Aura row includes every source square. The Cone apex coincides with the origin square centre, a boundary point, so 'ties rounded outward' supports inclusion, while the contrast with Line/Aura and a Cone being a triangle 'extending from' the origin supports exclusion. This is a gap, not a conflict between two rules, so 1.6 gives no unique answer. Caption/panel of FIG-08 only claim 7 squares beyond the origin square.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": "(1) Included: the apex centre is a tie and rounds outward, so the source's own square is in the area. (2) Excluded: the cone extends away from the source, matching how Line and Aura state inclusion explicitly where intended.",
+      "impact": "Low to moderate: decides whether a Cone hits the combatant, marker or hazard in its own origin square (normally the source itself), i.e. self-damage by area effects."
+    },
+    {
+      "id": "A-05",
+      "topic": "Grid Mode Line: tie squares at both ends and origin square",
+      "figures": [
+        "FIG-08"
+      ],
+      "source_lines": [
+        709,
+        728
+      ],
+      "classification": "NOT_AN_AMBIGUITY",
+      "reasoning": "The Line row of the table is explicit: squares whose centre lies within the width, ties rounded outward, and the origin square is included if its centre lies within the line. A 3\" Line of default 1\" width centred on a square row therefore covers the origin square plus 3 squares (far-end centre is a tie and rounds outward). The manifest/ledger doubt is not borne out by the text; FIG-08 simply does not draw a Grid Line.",
+      "answer_if_resolved": "Resolved by the Line row itself (origin included; far-end tie included). Not a 1.6 matter.",
+      "competing_readings_if_unresolved": null,
+      "impact": "None; no Grid Line is drawn."
+    },
+    {
+      "id": "A-06",
+      "topic": "Source ranges drawn at one value (Trail 3-4\", Ravine 6-8\", ledge count/length/gaps, Clearing 12-15\", stone spacing 6-8\")",
+      "figures": [
+        "FIG-14",
+        "FIG-15",
+        "FIG-16"
+      ],
+      "source_lines": [
+        12132,
+        12209,
+        12965,
+        12062
+      ],
+      "classification": "NOT_AN_AMBIGUITY",
+      "reasoning": "The source gives ranges and leaves the exact value to setup; drawing one value inside the range with a 'schematic'/range note changes no rule.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": null,
+      "impact": "None."
+    },
+    {
+      "id": "A-07",
+      "topic": "Scenarios say only 'opposite battlefield edges' (long vs short not stated)",
+      "figures": [
+        "FIG-13"
+      ],
+      "source_lines": [
+        13671,
+        14018,
+        14089,
+        14325,
+        11058
+      ],
+      "classification": "UNRESOLVED",
+      "reasoning": "10.1 defines long and short edges but gives no default when a scenario names neither; Pale City 5, Sun-Drowned 4/5 and The Mire 2 give no terrain hint. A gap, so 1.6 cannot choose. FIG-13 shows both patterns (A and B) and assigns these scenarios to 'A or B'.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": "(1) Long edges (East/West). (2) Short edges (North/South). (3) The Setup Roll-off winner or the players choose which opposite pair.",
+      "impact": "Low to moderate: changes approach geometry and range to objectives; both parties are treated symmetrically either way."
+    },
+    {
+      "id": "A-08",
+      "topic": "Deployment distance not stated: Sun-Drowned 2 ('converging on the plaza'), The Mire 5 ('along the outer banks'), The Mire 6 ('outside the immediate Sinkhole area')",
+      "figures": [
+        "FIG-13"
+      ],
+      "source_lines": [
+        13884,
+        14554,
+        14633
+      ],
+      "classification": "UNRESOLVED",
+      "reasoning": "No general default deployment depth exists in 10.1; 6\" appears only as the explicit value in other scenarios and 6\" is merely a pattern. Gap, not a conflict. FIG-13's key already says the 6\" band is the general pattern there, not a stated value.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": "(1) Reuse the 6\" band used by the other edge scenarios. (2) Players agree the depth. (3) Any space on the named edge/area satisfying the phrase.",
+      "impact": "Moderate for these three scenarios only: deployment depth affects early-round reach and the 6\" terrain-placement buffer from a deployment zone (11068)."
+    },
+    {
+      "id": "A-09",
+      "topic": "Corner zones with no stated size (Sun-Drowned 3, The Mire 3) and corner scenarios without an alternate-placement statement (Pale City 1, Sun-Drowned 3, The Mire 3)",
+      "figures": [
+        "FIG-13"
+      ],
+      "source_lines": [
+        13404,
+        13955,
+        14402,
+        12314
+      ],
+      "classification": "UNRESOLVED",
+      "reasoning": "Other corner scenarios state 8\"x8\" and alternate placing; these omit size and/or procedure. No default rule fills either gap; 1.6 only resolves conflicts. FIG-13 panel E draws 8\"x8\" as the common size and says alternation applies 'where the scenario says so'.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": "(1) Use the 8\"x8\" size of the other corner scenarios. (2) Players agree a size. For placement order: (1) alternate starting with the Roll-off loser as in other scenarios; (2) each party places its whole party in turn.",
+      "impact": "Low to moderate for those two or three scenarios: zone size and placement order affect the opening position."
+    },
+    {
+      "id": "A-10",
+      "topic": "The Chasm Crossing: generic failed Jump (4.4.9: place at last legal point before the gap, Prone, movement ends) vs scenario 'A failed Jump into the Chasm causes a Chasm Fall'",
+      "figures": [
+        "FIG-15"
+      ],
+      "source_lines": [
+        1394,
+        1399,
+        13003,
+        13005,
+        13007
+      ],
+      "classification": "RESOLVED_BY_1.6",
+      "reasoning": "1.6: 'Scenario rules override the core rules for that scenario' and 'use the more specific rule'. 13003 first adopts the normal Jump rules, then specifies a different consequence for a failed Jump into the Chasm; 13005 adds 'This replaces the normal Falling rule'. Reading the generic placement as controlling would make the scenario sentence a dead letter, since every gap between Ledges lies over the Chasm. FIG-15 draws only the scenario rule, which is the controlling one.",
+      "answer_if_resolved": "A failed Jump across a Ledge gap over the Chasm is a Chasm Fall (removed from play; Hero Defeated with a normal Injuries Roll; non-Hero as 0 HP; carried items lost), subject to the Hero/Hireling Fly/Climb AP option and the Monster Fly/Climb placement in 13007.",
+      "competing_readings_if_unresolved": null,
+      "impact": "Residual wording ('into the Chasm' for a jump that would be placed back on the take-off Ledge) is handled by the same precedence; no figure impact."
+    },
+    {
+      "id": "A-11",
+      "topic": "FIG-05 panel C: how later steps count squares already occupied by a multi-square footprint",
+      "figures": [
+        "FIG-05"
+      ],
+      "source_lines": [
+        1325
+      ],
+      "classification": "NOT_AN_AMBIGUITY",
+      "reasoning": "4.4.3 gives the per-step rule: use the highest movement cost applying to any square the combatant will occupy after that step. The figure draws only the first orthogonal step (cost 2\"), which that rule fixes uniquely; undrawn later steps follow the same rule.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": null,
+      "impact": "None."
+    },
+    {
+      "id": "A-12",
+      "topic": "FIG-06: exact Grid position of the 'trigger point' for Reflex Attack",
+      "figures": [
+        "FIG-06"
+      ],
+      "source_lines": [
+        1685,
+        641
+      ],
+      "classification": "NOT_AN_AMBIGUITY",
+      "reasoning": "5.5.4 resolves the attack 'before the enemy leaves your melee distance' and 2.6.1 at 'the first point on the path where its trigger occurs'. The drawing marks the last square inside the band; this is a drawing choice, not a rules gap.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": null,
+      "impact": "None."
+    },
+    {
+      "id": "A-13",
+      "topic": "FIG-07 panel E: Sz of the intervening combatant",
+      "figures": [
+        "FIG-07"
+      ],
+      "source_lines": [
+        797
+      ],
+      "classification": "NOT_AN_AMBIGUITY",
+      "reasoning": "2.8.4 itself conditions Cover on an intervening combatant of the same or larger Sz than the target; the figure states that condition. The Ranger/Fighter example omits Sz, which is an example (1.6: examples never override the rule).",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": null,
+      "impact": "None."
+    },
+    {
+      "id": "A-14",
+      "topic": "FIG-09: footprint straddling the edge point and unstated fall height",
+      "figures": [
+        "FIG-09"
+      ],
+      "source_lines": [
+        1370,
+        1374,
+        1412
+      ],
+      "classification": "NOT_AN_AMBIGUITY",
+      "reasoning": "4.4.6 moves the target 'to the edge point'; 4.4.10 sets falling HP loss from the vertical distance, which the example does not give. Not drawing a height or footprint position changes no rule.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": null,
+      "impact": "None."
+    },
+    {
+      "id": "A-15",
+      "topic": "FIG-12 panel C: ranged Monster and Blocked Route",
+      "figures": [
+        "FIG-12"
+      ],
+      "source_lines": [
+        7662
+      ],
+      "classification": "NOT_AN_AMBIGUITY",
+      "reasoning": "Blocked Route applies only if no legal route reaches a position from which the Monster may attack the Primary Target; a ranged Monster with a legal firing position is not blocked. The text decides this and the figure is explicitly for a melee Monster.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": null,
+      "impact": "None."
+    },
+    {
+      "id": "A-16",
+      "topic": "FIG-14: placements drawn clear of the 'within 6\"' / 'within 3\"' limits; Chasm Crossing 'start' edge and lateral positions not specified",
+      "figures": [
+        "FIG-14"
+      ],
+      "source_lines": [
+        12997,
+        13062,
+        12170
+      ],
+      "classification": "NOT_AN_AMBIGUITY",
+      "reasoning": "The figure avoids the exact-limit case by design (7\" and 4\" between closest edges) and treats unspecified positions as schematic; the layout is symmetric so the unspecified start edge or lateral offset has no rules consequence.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": null,
+      "impact": "None."
+    },
+    {
+      "id": "A-17",
+      "topic": "FIG-19: terrain positions, road width and which edges are deployment edges not specified",
+      "figures": [
+        "FIG-19"
+      ],
+      "source_lines": [
+        17074,
+        17078
+      ],
+      "classification": "NOT_AN_AMBIGUITY",
+      "reasoning": "B.6 gives counts, sizes and distance limits but no coordinates; the figure labels positions and the road as schematic and the drawn deployment edges as an example.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": null,
+      "impact": "None."
+    },
+    {
+      "id": "A-18",
+      "topic": "Basic Mode: which Monster group goes at which Monster Entry marker (and who places the markers)",
+      "figures": [
+        "FIG-19"
+      ],
+      "source_lines": [
+        17080,
+        16540,
+        16541
+      ],
+      "classification": "UNRESOLVED",
+      "reasoning": "B.2 and B.6 require one complete group per marker but never assign groups to markers or say which side places markers; a gap with no precedence rule. FIG-19 draws identical group glyphs.",
+      "answer_if_resolved": null,
+      "competing_readings_if_unresolved": "(1) Players agree/alternate. (2) Random Determination (2.6.3). (3) Setup Roll-off winner chooses.",
+      "impact": "Low: markers are constrained to a 5-7\" ring and are symmetric by rule, but Goblins vs Bandits near a given deployment edge changes difficulty slightly."
+    },
+    {
+      "id": "A-19",
+      "topic": "Audit addition (not in ledger): Impassable Terrain 'provides Cover' vs terrain table row 'Chasms and pits - Impassable Terrain - They provide no Cover'",
+      "figures": [
+        "FIG-07",
+        "FIG-09",
+        "FIG-14",
+        "FIG-15"
+      ],
+      "source_lines": [
+        838,
+        872
+      ],
+      "classification": "RESOLVED_BY_1.6",
+      "reasoning": "Generic Impassable rule (838) gives Cover; the defaults table row (872) specifically says chasms and pits provide none. 1.6: more specific rule applies. The table row is operative defaults content in 2.9.1 rather than a summary or reference table, so the last sentence of 1.6 does not strip it. No figure draws Cover for a chasm: FIG-07 panel F is a generic Impassable feature; FIG-09/14/15 use the Impassable pattern only as a missing surface/Chasm.",
+      "answer_if_resolved": "Chasms and pits provide no Cover; other Impassable Terrain does (FIG-07 panel F unaffected).",
+      "competing_readings_if_unresolved": null,
+      "impact": "None for current figures."
+    }
+  ]
+}

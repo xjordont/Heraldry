@@ -1,8 +1,8 @@
 {
   "status": "PASS",
   "pdf": "/home/user/Heraldry/dist/Heraldry_RC484_inkjet-borderless-white.pdf",
-  "pages": 435,
-  "text_spans_checked": 86693,
+  "pages": 436,
+  "text_spans_checked": 86705,
   "font_resources_checked": 11,
   "checks": [
     "Letter portrait boxes/rotation",

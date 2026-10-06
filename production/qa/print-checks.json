@@ -1,7 +1,7 @@
 {
  "pages": {
-  "cream": 435,
-  "white": 435
+  "cream": 436,
+  "white": 436
  },
  "substrate_edges": {
   "cream": [],
@@ -11,7 +11,7 @@
  "page_text_differences": [],
  "links": {
   "cream": {
-   "internal_links": 1262,
+   "internal_links": 1261,
    "unresolved_links": 0,
    "examples": [],
    "bookmarks": 551,
@@ -23,7 +23,7 @@
    "bookmarks_bad_target": 0
   },
   "white": {
-   "internal_links": 1262,
+   "internal_links": 1261,
    "unresolved_links": 0,
    "examples": [],
    "bookmarks": 551,
@@ -38,8 +38,8 @@
  "rasters": [],
  "page_labels_sample": [
   "ageLabeli",
-  "ageLabel212",
-  "ageLabel429"
+  "ageLabel213",
+  "ageLabel430"
  ],
  "status": "PASS"
 }

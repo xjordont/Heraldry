@@ -1,308 +1,496 @@
 {
- "reviewer": "publication-auditor (independent)",
- "figures": [
-  {
-   "id": "FIG-01",
-   "verdict": "PASS",
-   "checked_against_lines": [
-    "985-1016",
-    "1017-1036",
-    "1037-1090",
-    "1091-1120",
-    "1121-1131"
-   ],
-   "findings": []
-  },
-  {
-   "id": "FIG-02",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "564-571",
-    "1055-1080",
-    "1200-1220",
-    "1418-1435",
-    "1623-1632"
-   ],
-   "findings": [
+  "reviewer": "publication-auditor (independent re-review)",
+  "reviewed_at": "2026-10-06T13:31:57Z",
+  "figures": [
     {
-     "severity": "minor",
-     "issue": "Panel B Monster Phase row shows 'A Monster attacks the Hero: the Hero declares Block' without the Block trigger condition (blunt, piercing or slashing damage while holding an equipped shield). The sheet states 'Assumes a Hero with an equipped shield' but not the damage type, so a reader could infer Block works against any attack.",
-     "evidence_source_line": "1623-1626 (5.5.1 Trigger)",
-     "fix": "Append 'blunt, piercing or slashing' to the Monster attack text, e.g. 'A Monster's slashing attack would damage the Hero: ...'."
-    }
-   ]
-  },
-  {
-   "id": "FIG-03",
-   "verdict": "PASS",
-   "checked_against_lines": [
-    "1486-1501",
-    "1511-1522",
-    "1523-1546",
-    "1573-1610"
-   ],
-   "findings": []
-  },
-  {
-   "id": "FIG-04",
-   "verdict": "PASS",
-   "checked_against_lines": [
-    "588-628",
-    "629-647"
-   ],
-   "findings": []
-  },
-  {
-   "id": "FIG-05",
-   "verdict": "FAIL",
-   "checked_against_lines": [
-    "598-600",
-    "893-896",
-    "1320-1331",
-    "1376-1383"
-   ],
-   "findings": [
-    {
-     "severity": "major",
-     "issue": "Panel A labels the forbidden diagonal cell '6.5'. The drawn forbidden arrow leaves the 4-inch position (cell (3,2)) diagonally to cell (4,1), so the running total for that move is 4 + 1.5 = 5.5, not 6.5. 6.5 would only arise for a diagonal taken after the legal 1-inch orthogonal step (5 + 1.5), which is a different cell from the one drawn. The source states only that the 1.5-inch diagonal cost exceeds the 1 inch remaining after 4 inches. The author's semantic_check rationalises the label instead of correcting it; the printed number is inconsistent with the drawing and the source example.",
-     "evidence_source_line": "1331 (4.4.3 example: 4\" spent, 1\" remaining, diagonal 1.5\" cannot be entered)",
-     "fix": "Change the label at fig_spatial.py:124 from '6.5' to '5.5' (4\" + 1.5\"), or redraw the forbidden diagonal from the 5\" cell (4,2) to (5,1) and keep 6.5. Update manifest FIG-05 geometry_spec and semantic_check text to match."
-    }
-   ]
-  },
-  {
-   "id": "FIG-06",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "1454-1470",
-    "1332-1343",
-    "1677-1688",
-    "629-647"
-   ],
-   "findings": [
-    {
-     "severity": "minor",
-     "issue": "Grayscale redundancy: the adjacent band (#d9d9d9) and Reach band (#f0f0f0) are distinguished by tone alone; no pattern or outline differs. Spatial ring position and the key help but the two greys are close on a home inkjet.",
-     "evidence_source_line": "1460-1462 (adjacent vs Reach band)",
-     "fix": "Give the Reach band a hatch or dotted pattern, or add a 'R' / '1' / '2' ring label in the grid."
-    }
-   ]
-  },
-  {
-   "id": "FIG-07",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "664-697",
-    "786-813",
-    "832-879"
-   ],
-   "findings": [
-    {
-     "severity": "minor",
-     "issue": "Panel E: after the Shift the new sight line passes only about 0.08 inch above the corner of the intervening ally's square (y = 1.917 at x = 4 against a square top at y = 2). At print scale it appears to graze the ally, which could be read as still touching a combatant. Rules say a line that crosses a combatant gives Cover, so clear separation matters for the teaching point.",
-     "evidence_source_line": "813 (example: Shift clear of the sight line, no Cover applies)",
-     "fix": "Shift the destination or target row so the line clears the ally square by at least a quarter square, or enlarge the offset in the drawing."
-    }
-   ]
-  },
-  {
-   "id": "FIG-08",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "698-750"
-   ],
-   "findings": [
-    {
-     "severity": "minor",
-     "issue": "Panel B text 'within 2\" ... plus the source square: 13 squares' can be read as 12 + source + another? The count 13 already includes the source square (drawn hatch count is 13: 1+3+5+3+1).",
-     "evidence_source_line": "705-714 (Aura: include every source square)",
-     "fix": "Reword to 'including the source square: 13 squares'."
-    }
-   ]
-  },
-  {
-   "id": "FIG-09",
-   "verdict": "PASS",
-   "checked_against_lines": [
-    "1350-1383",
-    "1701-1708"
-   ],
-   "findings": []
-  },
-  {
-   "id": "FIG-10",
-   "verdict": "PASS",
-   "checked_against_lines": [
-    "7551-7590",
-    "1868"
-   ],
-   "findings": []
-  },
-  {
-   "id": "FIG-11",
-   "verdict": "PASS",
-   "checked_against_lines": [
-    "7626-7641",
-    "1113-1120"
-   ],
-   "findings": []
-  },
-  {
-   "id": "FIG-12",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "7605-7614",
-    "7642-7651",
-    "7652-7669"
-   ],
-   "findings": [
-    {
-     "severity": "minor",
-     "issue": "Panel C step badges '1' and '2' float 50-70 px from the figures they refer to and are not touching the ringed enemy or the reachable enemy, so the reader may mis-associate them. The Monster is also not stated to be melee-only; a ranged Monster could attack the ringed enemy from a legal firing position, in which case Blocked Route would not apply (the manifest records only the Speed assumption).",
-     "evidence_source_line": "7662 (Blocked Route: no legal route reaches a position from which it may attack)",
-     "fix": "Attach badges adjacent to the two enemy markers and add 'melee Monster' to the Panel C caption."
-    }
-   ]
-  },
-  {
-   "id": "FIG-13",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "11029-11075",
-    "12025",
-    "13884",
-    "14554",
-    "14633",
-    "scenario Party Deployment lines (36 verified)"
-   ],
-   "findings": [
-    {
-     "severity": "minor",
-     "issue": "Panels A and B state 'within 6\"' for every scenario assigned to them, but three assigned scenarios give no distance: Sun-Drowned 2 (13884, 'converging on the plaza'), The Mire 5 (14554, 'along the outer banks') and The Mire 6 (14633, 'outside the immediate Sinkhole area'). The manifest records the unstated corner-zone sizes and the unstated long/short orientation but not these unstated band widths, so the drawing asserts a 6\" value the source does not give for those three.",
-     "evidence_source_line": "13884, 14554, 14633",
-     "fix": "Add these three to the manifest ambiguity note (band width not stated; 6\" is the general pattern), or caption panels A and B 'where a scenario gives 6\"'."
-    }
-   ]
-  },
-  {
-   "id": "FIG-14",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "12132-12170",
-    "12209-12238",
-    "12965-12997",
-    "13035-13062"
-   ],
-   "findings": [
-    {
-     "severity": "minor",
-     "issue": "Panel C is drawn inside a square frame the same style as the other panels' battlefield border, but it is only an 18-inch-wide detail at 6.6 pt per inch; the 'detail of the centre' wording appears only in the caption, so the frame can be read as the battlefield edge with an oversized zone. The 3\" dimension line also does not span the drawn gap between opposing Hero markers (about 5\").",
-     "evidence_source_line": "13062 (central 8x8 Safe Zone; 3\" separation)",
-     "fix": "Use a dashed or broken frame plus an on-drawing 'detail of centre' tag; keep the 3\" dimension as a limit marker but label it 'minimum 3\"'."
-    }
-   ]
-  },
-  {
-   "id": "FIG-15",
-   "verdict": "FAIL",
-   "checked_against_lines": [
-    "12945-13014",
-    "1394-1405"
-   ],
-   "findings": [
-    {
-     "severity": "major",
-     "issue": "Panel B step 5 gives the generic 4.4.9 failure result for a failed Jump ('stops at the last legal point before the gap, falls Prone, movement ends') as the outcome in this scenario. The scenario's own rule overrides this: 'A failed Jump into the Chasm causes a Chasm Fall', which removes the combatant from play, Defeats a Hero and loses any carried item including the Survey Map. The figure and caption never mention Chasm Fall, so the drawing takes the generic side of an unrecorded conflict and understates the stakes of the central mechanic.",
-     "evidence_source_line": "13003-13005 (Jumping the Gaps; Chasm Fall); 1394-1405 (generic Jump failure)",
-     "fix": "Replace step 5 with: 'Jump (4.4.9): each 1\" jumped costs 2\" of movement; declare a legal landing point, then make a DEX Check. A failed Jump into the Chasm causes a Chasm Fall: the combatant is removed from play (a Hero is Defeated) and any carried item, including the Survey Map, is lost.' Record the generic-versus-scenario reading in manifest ambiguity."
+      "id": "FIG-01",
+      "svg_sha256": "1a7289ab44110c2ee0eecad78db26907c95b3049f76c47db758f0e01d1f2d0c1",
+      "caption_sha256": "52861a6881d4605007bb65dbf1b5fdc4e48ae089709972c007b9e373633557d6",
+      "verdict": "PASS",
+      "checked_against_lines": [
+        "985-1016",
+        "1017-1036",
+        "1037-1090",
+        "1091-1120",
+        "1121-1131"
+      ],
+      "findings": []
     },
     {
-     "severity": "minor",
-     "issue": "Step 4 says the Map 'must be carried to' the Stone; victory is when a Hero places the Survey Map adjacent to the Cartographer's Stone.",
-     "evidence_source_line": "13011 (Victory Conditions)",
-     "fix": "Say 'placed adjacent to the Cartographer's Stone'."
-    }
-   ]
-  },
-  {
-   "id": "FIG-16",
-   "verdict": "PASS",
-   "checked_against_lines": [
-    "12042-12111",
-    "7642-7651"
-   ],
-   "findings": []
-  },
-  {
-   "id": "FIG-17",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "15189-15199",
-    "15200-15216",
-    "15221-15252",
-    "15405-15480"
-   ],
-   "findings": [
-    {
-     "severity": "minor",
-     "issue": "Town box says 'unspent TAP are lost at the end of the phase' and the loop strip says the Aftermath and Town Phases resolve after every adventure; the source qualifies both with 'unless a rule says otherwise'. The caption sentence 'cycle repeats after every adventure' is also broader than 11.2, which states only that Aftermath and Town are resolved after every adventure.",
-     "evidence_source_line": "15197-15198, 15411",
-     "fix": "Add 'unless a rule says otherwise' to the Town box and loop strip."
-    }
-   ]
-  },
-  {
-   "id": "FIG-18",
-   "verdict": "PASS",
-   "checked_against_lines": [
-    "16082-16208",
-    "16254-16339",
-    "16348-16490"
-   ],
-   "findings": []
-  },
-  {
-   "id": "FIG-19",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "16519-16532",
-    "16584-16590",
-    "17016-17070",
-    "17072-17095"
-   ],
-   "findings": [
-    {
-     "severity": "minor",
-     "issue": "Strongbox and Satchel share one glyph and the road band is unlabelled in the drawing (label code disabled) and uses the same #f0f0f0 tone as the deployment bands; only dashed outlines separate them in grayscale.",
-     "evidence_source_line": "17082, 17086",
-     "fix": "Give the Strongbox a larger or different glyph, add a 'road' label, and hatch or dot the road band."
+      "id": "FIG-02",
+      "svg_sha256": "9c9314e179a9aa1321c0539d4a835e5f7e70cc5de3630834b565a558c2ae7c35",
+      "caption_sha256": "ed4ed4f46d21fef9323d26e776d16e5dec23538dd2debe48cc8b8963d4e216ab",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "564-571",
+        "1055-1080",
+        "1200-1220",
+        "1418-1435",
+        "1623-1632"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note: Monster Phase row lacked the Block trigger damage type. Current SVG reads 'A Monster's slashing attack would damage the Hero'.",
+          "evidence_source_line": "1623-1626 (5.5.1 Trigger)",
+          "fix": "None needed; verified in current SVG text and render."
+        }
+      ]
     },
     {
-     "severity": "minor",
-     "issue": "The example omits the Interact [1 AP] needed to pick up the Strongbox and assumes straight-line movement over open ground ('12 / 2 = 6 Move actions'); it is labelled 'assumed' but not as a minimum.",
-     "evidence_source_line": "17086, 17090",
-     "fix": "Append 'at least 6 Move actions, plus Interact [1 AP] to pick it up'."
+      "id": "FIG-03",
+      "svg_sha256": "37d280f1068d619b18ab4238014731f5a183aebbf932a90a9baf4f493ba8aad6",
+      "caption_sha256": "09631197450cead2e57a066925946b5f44b24d6a6ea541cb5a6e6fa1a9e289b3",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "1486-1501",
+        "1511-1522",
+        "1523-1546",
+        "1573-1610"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Panel B step 1 summarises 5.1.1 step 1 without the words 'together with any flat mitigation' or the multi-type reduction order. Nothing invented; both worked examples reproduce the source numbers exactly (6-5+4=5; 9-3=6; 9-(3+2)=4).",
+          "evidence_source_line": "1488-1490",
+          "fix": "Optional: append 'with any flat mitigation' to step 1. Accepted: summary is faithful and the examples do not depend on it."
+        }
+      ]
+    },
+    {
+      "id": "FIG-04",
+      "svg_sha256": "9b096e37ee0f9c9fa71bb557dc3608a31c76042b8495b26c3b6abd2bdc32aea1",
+      "caption_sha256": "af0a2348990a339cb58f9c310a312c21d2bf0509ff7c0827544a8671fe2c7a82",
+      "verdict": "PASS",
+      "checked_against_lines": [
+        "588-628",
+        "629-647"
+      ],
+      "findings": []
+    },
+    {
+      "id": "FIG-05",
+      "svg_sha256": "2aec8ebe1666a0d3916285470008ce62af98b1ea3edd2328b07220265027a344",
+      "caption_sha256": "3c8b97284dbb16f647708e93f2b3c1c04fd3293df1642e819c788366902789f1",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "598-600",
+        "893-896",
+        "1310-1331",
+        "1376-1383"
+      ],
+      "findings": [
+        {
+          "severity": "major",
+          "status": "resolved",
+          "issue": "Previous MAJOR: forbidden diagonal cell was labelled 6.5. Current SVG labels it 5.5 (4 + 1.5) and the arrow leaves the 4\" cell; running totals 1, 2.5, 4, 5, 5.5 verified against the render and 4.4.3 example (Speed 5\": 1 + 1.5 + 1.5 = 4, 1\" left, one more orthogonal allowed, another 1.5\" diagonal not).",
+          "evidence_source_line": "1329-1331",
+          "fix": "None; verified in current file."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Panel C draws the Large 2x2 footprint in the Monster hatch while the text says 'Large combatant'. The rule (4.4.3 highest cost per step) applies to every combatant; no mechanic is misstated.",
+          "evidence_source_line": "1325",
+          "fix": "Optional: use a neutral hatch. Accepted."
+        }
+      ]
+    },
+    {
+      "id": "FIG-06",
+      "svg_sha256": "95b6280c207fe96d78d386a2f3662ce4a93a59f93fdc40051f9d04a7d177b8e8",
+      "caption_sha256": "2b64538ff90d7b6bf81b00fc10ab6af2508ff75c98b78c44ddb2309b98f3604c",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "1454-1485",
+        "1332-1343",
+        "1677-1688",
+        "629-647"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note: adjacent and Reach bands distinguished by grey tone only. Digit labels 1 and 2 now present in every band square.",
+          "evidence_source_line": "1460-1462",
+          "fix": "None; verified in render."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Trigger point drawn as the last square inside the melee band; Grid Mode has no exact trigger-point coordinate. Consistent with 'before the enemy leaves your melee distance' (5.5.4) and 'first point on the path where its trigger occurs' (2.6.1).",
+          "evidence_source_line": "1685; 641",
+          "fix": "None. Triaged as A-12 NOT_AN_AMBIGUITY."
+        }
+      ]
+    },
+    {
+      "id": "FIG-07",
+      "svg_sha256": "e40df398ee5c5e8cded452e98fb4a47078c351cedb240c03e940b8de27e338cc",
+      "caption_sha256": "fc3eed1469186b05e7f58de7ee6494b754d87b3a8afcf49f68d6432a5e8070a5",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "664-681",
+        "682-697",
+        "789-813",
+        "832-880"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note: panel E post-Shift line grazed the ally square. Current render shows the dashed line clearing the Fighter square.",
+          "evidence_source_line": "804-805",
+          "fix": "None; verified in render."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Panel E assumes the intervening combatant is the same Sz as the target; the figure states the Sz condition in its own text.",
+          "evidence_source_line": "797",
+          "fix": "None. Triaged as A-13."
+        }
+      ]
+    },
+    {
+      "id": "FIG-08",
+      "svg_sha256": "209412d5c982517a20d380002681ceeca055aeebf9375dc64d480a792d51c4a4",
+      "caption_sha256": "1585e382d9b0dd3200663ec9176fd2f2297b4f5d8cc4775e57faa22c1aafaa13",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "698-747"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note: panel B wording. Current text reads 'including the source square: 13 squares'; count 13 re-derived (dx^2+dy^2<=4: 1+4+4+4).",
+          "evidence_source_line": "726-730",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Cone count '7 squares beyond the origin square' re-derived (|dy|<=dx/2, ties outward: 1+3+3). Whether the origin square itself is 'within the cone' is not settled by the text; the figure does not claim a total including it.",
+          "evidence_source_line": "727",
+          "fix": "None for the figure. Source gap triaged as A-04 UNRESOLVED."
+        }
+      ]
+    },
+    {
+      "id": "FIG-09",
+      "svg_sha256": "b45caa4c89bd326753aefc4da65f914c425811ec57bde9ad8549aa2707cfb34b",
+      "caption_sha256": "541b0cb23f14eaf54fa559fef9c62dc83584c24808e496e78e9eb3942a2eb2e6",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "1350-1375",
+        "1376-1383",
+        "1701-1708"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Edge-point marker straddles the ledge line; fall height not stated so no HP loss is drawn. Both are consistent with 4.4.6 text and example (Push 3\", ledge 2\", move to edge point, then Falling; not a Collision).",
+          "evidence_source_line": "1371-1374",
+          "fix": "None. Triaged as A-14."
+        }
+      ]
+    },
+    {
+      "id": "FIG-10",
+      "svg_sha256": "44446a9b431e175b9024f6b76a79703d6cb42b2283b3c54fb1c466482a0d515d",
+      "caption_sha256": "4839eb469dc7059f722eddbb959d8140ea89a8c3e1e8c69be21a6d1102f90ab8",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "7551-7572",
+        "7573-7590",
+        "1866-1870"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Hidden note omits the clause 'unless a rule makes that enemy visible to the group' and that the enemy remains Hidden after the group wakes. Not an invented mechanic; the figure heading already says triggers apply 'unless a scenario or stat block says otherwise'.",
+          "evidence_source_line": "7588",
+          "fix": "Optional: add the 'unless a rule makes that enemy visible' clause. Accepted."
+        }
+      ]
+    },
+    {
+      "id": "FIG-11",
+      "svg_sha256": "1e5f3f6044822265041b4b981aa80478f44121742703d6a8d498837e929fe930",
+      "caption_sha256": "8da7d89daaa60fbf9f01e91971cfa7dafd10c016db63e670bc9fd22b6ce3ae01",
+      "verdict": "PASS",
+      "checked_against_lines": [
+        "7626-7637",
+        "7638-7641",
+        "1113-1120"
+      ],
+      "findings": []
+    },
+    {
+      "id": "FIG-12",
+      "svg_sha256": "4e71c511ba9a4939192f2e7f50ffe9cbea30b36f65edf35351ac6aea66925395",
+      "caption_sha256": "945896acf9d3b54252f47c392792c1f06dae616e04a3d44d2f388600297b457d",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "7605-7614",
+        "7642-7651",
+        "7652-7669"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note: step badges floating and Monster type unstated. Badges now sit beside the two enemies and panel C says 'melee Monster'.",
+          "evidence_source_line": "7662",
+          "fix": "None; verified in render."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Panel C is valid only for a melee Monster; a ranged Monster with a legal firing position would not trigger Blocked Route. The figure states 'melee Monster'.",
+          "evidence_source_line": "7662",
+          "fix": "None. Triaged as A-15."
+        }
+      ]
+    },
+    {
+      "id": "FIG-13",
+      "svg_sha256": "c960456aa43ec9ad92285fe16e9ea8d7fe94bf534e358841b3e5595865fc85fe",
+      "caption_sha256": "b3975d9db2efd97eafcf0333537a51cb13119e7373e72b84491e0e18757bf86b",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "11029-11075",
+        "12025",
+        "12096",
+        "12170",
+        "12238",
+        "12314",
+        "12398",
+        "12481",
+        "12546",
+        "12604",
+        "12680",
+        "12759",
+        "12846",
+        "12929",
+        "12997",
+        "13062",
+        "13166",
+        "13239",
+        "13318",
+        "13404",
+        "13470",
+        "13541",
+        "13603",
+        "13671",
+        "13745",
+        "13819",
+        "13884",
+        "13955",
+        "14018",
+        "14089",
+        "14168",
+        "14254",
+        "14325",
+        "14402",
+        "14477",
+        "14554",
+        "14633"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note: three scenarios without a stated band distance. Key now says Sun-Drowned 2, The Mire 5 and The Mire 6 state no band distance. All 36 Party Deployment lines re-classified against manifest coverage; counts 6+12+4+2+1+7+4 = 36 and every classification matches its source line.",
+          "evidence_source_line": "13884; 14554; 14633",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Panel E states 'Opposite 8\"x8\" corner zones' generically, but Sun-Drowned 3 (13955) and The Mire 5/Titan's Fen (14402) give no zone size; the on-figure key discloses the missing distance for bands but not for these corner zones (disclosed only in manifest). Caption does not claim 8\"x8\" for them.",
+          "evidence_source_line": "13955; 14402",
+          "fix": "Optional: add 'zone size not stated for Sun-Drowned 3 and The Mire 3' to the key. Triaged as A-09."
+        }
+      ]
+    },
+    {
+      "id": "FIG-14",
+      "svg_sha256": "d3cb535b58b6a466641d8899e0ede021e5f97835ba67620fdd0528269da7da70",
+      "caption_sha256": "b5d1e41e77a1ffc73b1d998f7842236bfd7c273761fed3a1c73d78a40c213e21",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "12132-12170",
+        "12209-12238",
+        "12965-12997",
+        "13035-13062"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note: panel C frame/centre-detail and floating 'min 3\"'. Current panels B and C use dimension lines with arrowheads/ticks between closest footprint edges (7\" in B, 4\" in C) plus a 6\" arc / 3\" ring. Measured in 400-ppi render: B 7\" = 125 px vs 6\" radial = 107 px at 18.3 px/in (consistent); C 3\" radial 112 px, 4\" gap 143 px at 36.7 px/in; all other A-B pairs in C exceed 5\" edge to edge; all C markers lie inside the 8\"x8\" zone; zone-depth dimensions 8\" and 6\" match.",
+          "evidence_source_line": "12997; 13062; 594",
+          "fix": "None; verified."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Ranges (Trail 3-4\", Ravine 6-8\") drawn at 3.5\" and 7\"; limits drawn clear of the 'within' boundary; lateral positions schematic. Disclosed in the on-figure note.",
+          "evidence_source_line": "12132; 12209",
+          "fix": "None. Triaged as A-06 / A-16."
+        }
+      ]
+    },
+    {
+      "id": "FIG-15",
+      "svg_sha256": "a4f2117f955f73a924c7c009397efb44aca81f0427375915b2189628084e7912",
+      "caption_sha256": "8e07bd57d6b106743b90851764ff8cecc992a82c03e54dcf22402af28817ed70",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "12945-13014",
+        "1394-1405"
+      ],
+      "findings": [
+        {
+          "severity": "major",
+          "status": "resolved",
+          "issue": "Previous MAJOR (Chasm Fall wording / Fly-Climb exceptions). Current panel C steps 6-8 reproduce 13005-13007 sentence by sentence. Distinctions verified: Chasm Fall = removed from play; Hero Defeated with a normal Injuries Roll; non-Hero as though reduced to 0 HP; replaces normal Falling; carried items incl. Survey Map lost. HERO OR HIRELING with Fly/Climb Speed: may immediately spend 1 unspent AP including AP reserved for Reactions; placed Prone in nearest legal Ledge space; current movement ends; if the AP cannot be spent the Chasm Fall resolves normally. MONSTER with Fly/Climb: placed Prone in nearest legal Ledge space and activation ends, no AP cost and no fallback. Jump 2\" per 1\" and DEX Check (4.4.9) in step 5; map 3\"/stone 3\", 8\" Chasm, 3-4 ledges, 1-2\" gaps, 1-2 Crumbling all match.",
+          "evidence_source_line": "13003-13007",
+          "fix": "None; verified in current file."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note: step 4 'carried to' the Stone. Now 'place the Survey Map adjacent to it'.",
+          "evidence_source_line": "13011",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Ledge proportions, board position of the Chasm and Treasure Chests are schematic and labelled 'Schematic - not to scale'.",
+          "evidence_source_line": "12965-12969",
+          "fix": "None. Triaged as A-06."
+        }
+      ]
+    },
+    {
+      "id": "FIG-16",
+      "svg_sha256": "3540399da8df157eb7e960f468d41fa594fa71b8bd8af9cdef4a1219df28c4ce",
+      "caption_sha256": "1f7d72da17d432d6b9ded916a2d9feb1ae5c95ebde8e1802907133d33daf67c7",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "12042-12111",
+        "7642-7651"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Panel A places the Warden inside the triangle, not visibly adjacent to any Stone, while panel B step 3 quotes 'adjacent to the central Standing Stone'. The source gives no central Stone among three in a rough triangle; the drawing is labelled schematic and the dashed 8\"-range line is not dimensioned.",
+          "evidence_source_line": "12088; 12062",
+          "fix": "None for the figure. Source gap triaged as A-02 UNRESOLVED."
+        }
+      ]
+    },
+    {
+      "id": "FIG-17",
+      "svg_sha256": "c2d2eaae5ed8a465b4b5f92d4e9d92298827624fd8f4c3d24fb395d504d91087",
+      "caption_sha256": "9bbff0ec3080c708ed8841aacc21de7f3ab9e2b3496f5307f163a768e14c3b43",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "15189-15199",
+        "15200-15216",
+        "15221-15252",
+        "15405-15480"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note: missing 'unless a rule says otherwise'. Present in the loop strip and the Town box; verified in render.",
+          "evidence_source_line": "15197; 15411",
+          "fix": "None."
+        }
+      ]
+    },
+    {
+      "id": "FIG-18",
+      "svg_sha256": "6068583d30489eb200b494d914d93e57499917e02163f6703b03220881a02ba3",
+      "caption_sha256": "ffb9cb8159bccb7b95c0331f0057be6cded1f946ea641f9f1ad94f16eb2895ab",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "16082-16208",
+        "16254-16339",
+        "16348-16490"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "All numbers re-derived: initiative 13+0+1=14 vs 10; Varek 6+3=9, 9-4=5 (16->11); Mara 4+3=7, AV 1, 6 (15->9); Senna 5+3=8 dodged by Mara 11+3=14; Wolf 1 5+1=6-3=3 (11->8), STR 9+3=12 success; Wolf 2 max(4,7)+1=8-5=3 (8->5), STR 6+3=9 fail, Prone; Wolves 3 and 4 no attack. Only A.7/A.8 mechanics used. A.2's centre ruin is not drawn and the Satchel sits at the centre per A.11 table; disclosed on the figure.",
+          "evidence_source_line": "16108; 16180; 16358",
+          "fix": "None. Triaged as A-01 RESOLVED_BY_1.6 (A.11 is an example; does not override A.2/A.4)."
+        }
+      ]
+    },
+    {
+      "id": "FIG-19",
+      "svg_sha256": "269032258dcf212ba8eaaae4fe02d10eb9df044f308be1a75e04621722797a59",
+      "caption_sha256": "973e2c8a4f860b19a16a450ecf522a1a5efdede2395d9b76ed4780466b3123c3",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "16519-16532",
+        "17016-17070",
+        "17072-17095",
+        "16584-16590"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier notes: Strongbox/Satchel glyph, road label, example wording. Verified in render: distinct chest glyph, labelled dotted road, 'at least 6 Moves' and Interact [1 AP] note. Marker distances re-measured from render: 5.8-6.2\" from centre, 10+\" apart, outside deployment bands; Goblin 1c, Skeleton 1c, Bandit 3c; 12+4+2+3=21c.",
+          "evidence_source_line": "17074-17082",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Panel B step 3 reads 'One complete group (Goblins, Skeleton Warriors, Bandits) and 1 Satchel at each marker'. The parenthesis can be read as all three groups at every marker; the source places one complete group per marker (4 Goblins, 4 Skeleton Warriors, 4 Bandits across 3 markers) and does not say which group goes where.",
+          "evidence_source_line": "17080; 16541",
+          "fix": "Reword to 'One complete group (Goblins, Skeleton Warriors or Bandits - one group per marker) and 1 Satchel at each marker'. Open minor; does not affect gate."
+        }
+      ]
     }
-   ]
-  }
- ],
- "summary": {
-  "figures_reviewed": 19,
-  "verdicts": {
-   "PASS": 8,
-   "PASS_WITH_NOTES": 9,
-   "FAIL": 2
-  },
-  "findings_by_severity": {
-   "minor": 11,
-   "major": 2
-  },
-  "critical": 0,
-  "major_fix_required": [
-   "FIG-05",
-   "FIG-15"
   ],
-  "method": "Read every SVG text node and caption, read cited source spans, rendered all 19 SVGs with typst and inspected each; geometry spot-checked from SVG/code (FIG-05 arrows, FIG-08 hatch counts 13/7/5, FIG-14 zone rects, FIG-19 marker distances); all 36 Party Deployment lines compared with FIG-13/14 coverage.",
-  "not_checked": "Print-scale legibility and PDF placement not assessed here."
- }
+  "summary": {
+    "figures_reviewed": 19,
+    "verdicts": {
+      "PASS": 3,
+      "PASS_WITH_NOTES": 16
+    },
+    "findings_by_severity_status": {
+      "major/resolved": 2,
+      "minor/accepted": 13,
+      "minor/open": 1,
+      "minor/resolved": 10
+    },
+    "critical_open": 0,
+    "major_open": 0,
+    "previous_majors": {
+      "FIG-05": "resolved (label 5.5 verified)",
+      "FIG-15": "resolved (Chasm Fall + Fly/Climb Hero/Hireling vs Monster distinctions verified verbatim)"
+    },
+    "open_minor": [
+      "FIG-19 step 3 wording"
+    ],
+    "method": "Read every SVG text node and caption; compared with cited source spans (sed -n) and neighbouring lines; re-derived arithmetic and counts (FIG-03/04/05/08/18/19); rendered all 19 SVGs with typst and inspected each at 130 ppi, FIG-14 panels B/C at 400 ppi with pixel dimension checks; reconciled all 36 Party Deployment lines with FIG-13/14 coverage.",
+    "not_checked": "Print-scale legibility, PDF placement and physical output not assessed here. Authorial semantic judgement on UNRESOLVED source gaps recorded in ambiguity-triage.json."
+  }
 }
