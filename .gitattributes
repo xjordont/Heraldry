@@ -1,0 +1,2 @@
+# Owner-authorized sample books: originals in LFS, never in publishing archives.
+references/private/pdfs/*.pdf filter=lfs diff=lfs merge=lfs -text
