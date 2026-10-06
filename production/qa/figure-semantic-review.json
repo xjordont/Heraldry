@@ -1,6 +1,6 @@
 {
-  "reviewer": "publication-auditor (independent re-review)",
-  "reviewed_at": "2026-10-06T13:31:57Z",
+  "reviewer": "publication-auditor (independent semantic re-review against patched text, P-01..P-07)",
+  "reviewed_at": "2026-10-06T14:16:23Z",
   "figures": [
     {
       "id": "FIG-01",
@@ -128,14 +128,16 @@
     },
     {
       "id": "FIG-07",
-      "svg_sha256": "e40df398ee5c5e8cded452e98fb4a47078c351cedb240c03e940b8de27e338cc",
-      "caption_sha256": "fc3eed1469186b05e7f58de7ee6494b754d87b3a8afcf49f68d6432a5e8070a5",
+      "svg_sha256": "3c498cd01aacd8209db2fc410a87d0e44595c43a9df01c6f19fd20a26dc8c87a",
+      "caption_sha256": "9aace777a0ef13cc944e5a164ff9619a7904b7c507c45bd82647ac80cf90ba82",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "664-681",
         "682-697",
         "789-813",
-        "832-880"
+        "832-880",
+        "838",
+        "872"
       ],
       "findings": [
         {
@@ -151,31 +153,48 @@
           "issue": "Panel E assumes the intervening combatant is the same Sz as the target; the figure states the Sz condition in its own text.",
           "evidence_source_line": "797",
           "fix": "None. Triaged as A-13."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "P-02 (2.9.1 Impassable Terrain provides Cover unless its terrain entry says otherwise). Panel F now reads \"A generic Impassable feature provides Cover unless its terrain entry says otherwise (chasms and pits provide none), and does not block LOS (2.9.1, 2.8.4)\"; caption carries the same qualifier. Both match patched line 838 and the terrain-table row at 872 (\"Chasms and pits ... They provide no Cover\"). Panel F still draws a generic Impassable feature with clear LOS; nothing else in the figure changed meaning. Re-rendered and re-read every text node (panels A-F, footer, key) against 2.7.2 and 2.8.4; LOS-blocked/clear outcomes and Cover outcomes unchanged.",
+          "evidence_source_line": "838; 872; 804-805",
+          "fix": "None; P-02 verified depicted faithfully. Triaged as A-19."
         }
       ]
     },
     {
       "id": "FIG-08",
-      "svg_sha256": "209412d5c982517a20d380002681ceeca055aeebf9375dc64d480a792d51c4a4",
-      "caption_sha256": "1585e382d9b0dd3200663ec9176fd2f2297b4f5d8cc4775e57faa22c1aafaa13",
+      "svg_sha256": "c1d458ec0caf3229e92beb59043e60a680c858bb642e26385853c3c00d99068b",
+      "caption_sha256": "3d93b57cb6a1e9c7d2ea8be382a9d49f2a56f2d63c2bd2847e681678678b622e",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
-        "698-747"
+        "698-747",
+        "727",
+        "728",
+        "741"
       ],
       "findings": [
         {
           "severity": "minor",
           "status": "resolved",
-          "issue": "Earlier note: panel B wording. Current text reads 'including the source square: 13 squares'; count 13 re-derived (dx^2+dy^2<=4: 1+4+4+4).",
+          "issue": "Earlier note: panel B wording. Current text reads \"including the source square: 13 squares\"; count 13 re-derived (dx^2+dy^2<=4: 1+4+4+4); drawn rows 1+3+5+3+1.",
           "evidence_source_line": "726-730",
           "fix": "None."
         },
         {
           "severity": "minor",
-          "status": "accepted",
-          "issue": "Cone count '7 squares beyond the origin square' re-derived (|dy|<=dx/2, ties outward: 1+3+3). Whether the origin square itself is 'within the cone' is not settled by the text; the figure does not claim a total including it.",
-          "evidence_source_line": "727",
-          "fix": "None for the figure. Source gap triaged as A-04 UNRESOLVED."
+          "status": "resolved",
+          "issue": "P-01 (2.7.3: a cone or line originates at the effect's source and does not affect the combatant it originates from). Panel A text \"A Cone or Line does not affect the combatant it originates from\" and the caption clause match the patched sentence. Cone count re-derived and re-measured in a 250 ppi render: 3\" cone with apex at the origin-square centre and far edge 3\" wide at 3\" distance; centres satisfy |dy|<=dx/2 at dx=1 (1 square), dx=2 (3 squares, ties outward) and dx=3 (3 squares) = 7 squares beyond the origin square, none hatched in the origin square. The count 7 is consistent with P-01 (it counts squares other than the origin square and does not depend on whether the origin square is counted).",
+          "evidence_source_line": "727; 741",
+          "fix": "None for the count."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Wording slightly exceeds P-01. Panel C says \"The origin square (the source) is not affected\" and the caption says a cone \"affects 7 squares and not its origin square, because a cone or line does not affect the combatant it originates from\". P-01 excludes the originating COMBATANT, not the origin SQUARE as a square: the Line row of the Affected Squares table explicitly includes the origin square, the Cone row is silent, and a 2x2/3x3 source's other footprint squares can lie inside the cone. Any marker or hazard sharing the origin square is not addressed by P-01. The 7-square count is unaffected; only the \"origin square is not affected\" inference is not literally in the patched text. Panel A omits the rule's \"Unless a rule says otherwise\" qualifier (minor).",
+          "evidence_source_line": "727-728; 741",
+          "fix": "Panel C: replace \"The origin square (the source) is not affected.\" with \"The combatant the cone originates from is not affected.\" Caption: replace \"affects 7 squares and not its origin square, because a cone or line does not affect the combatant it originates from\" with \"affects 7 squares beyond its origin square, and never affects the combatant it originates from\". Optional: prefix panel A sentence with \"Unless a rule says otherwise,\". Does not affect the gate."
         }
       ]
     },
@@ -260,11 +279,12 @@
     },
     {
       "id": "FIG-13",
-      "svg_sha256": "c960456aa43ec9ad92285fe16e9ea8d7fe94bf534e358841b3e5595865fc85fe",
-      "caption_sha256": "b3975d9db2efd97eafcf0333537a51cb13119e7373e72b84491e0e18757bf86b",
+      "svg_sha256": "340d346d2202280b7d3feb6186b1d1ac1772628289b542bdc6fde6da07ae80a7",
+      "caption_sha256": "c9fd96822f11e7afd1afcb345638305892f5e3c901bb7d2e12e29f4f7c4c0af7",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "11029-11075",
+        "11072",
         "12025",
         "12096",
         "12170",
@@ -306,16 +326,23 @@
         {
           "severity": "minor",
           "status": "resolved",
-          "issue": "Earlier note: three scenarios without a stated band distance. Key now says Sun-Drowned 2, The Mire 5 and The Mire 6 state no band distance. All 36 Party Deployment lines re-classified against manifest coverage; counts 6+12+4+2+1+7+4 = 36 and every classification matches its source line.",
-          "evidence_source_line": "13884; 14554; 14633",
+          "issue": "Earlier note: three scenarios without a stated band distance. Now resolved by P-03: all 36 Party Deployment lines re-listed from the patched text and re-classified. Depth silent: Sun-Drowned 2 (13884, short edges), The Mire 5 (14554, long edges), The Mire 6 (14633, short edges) -> 6\" per step 11 default. Corner size/order silent: Sun-Drowned 3 (13955), The Mire 3 (14402) -> 8\"x8\", alternate from Roll-off loser; Pale City 1 (13404) states 8\"x8\" but not the order -> alternate. The four \"opposite battlefield edges\" scenarios (Pale City 5 13671, Sun-Drowned 4 14018, Sun-Drowned 5 14089, The Mire 2 14325) state 6\" themselves; the figure takes only the edge choice from the default (Roll-off winner chooses, other party takes the opposite edge) and does not attribute the 6\" to the default; panels A/B captions say the 6\" default applies only \"where the scenario gives no depth\". Geometry re-read from SVG: boards 144 pt = 36\" at 4 pt/in, bands 24 pt = 6\", corner zones 32 pt = 8\", diagonally opposite corners in D/E, opposite edges in A/B/C.",
+          "evidence_source_line": "13884; 13955; 14402; 13404; 14554; 14633; 13671; 14018; 14089; 14325; 11072",
           "fix": "None."
         },
         {
           "severity": "minor",
-          "status": "accepted",
-          "issue": "Panel E states 'Opposite 8\"x8\" corner zones' generically, but Sun-Drowned 3 (13955) and The Mire 5/Titan's Fen (14402) give no zone size; the on-figure key discloses the missing distance for bands but not for these corner zones (disclosed only in manifest). Caption does not claim 8\"x8\" for them.",
-          "evidence_source_line": "13955; 14402",
-          "fix": "Optional: add 'zone size not stated for Sun-Drowned 3 and The Mire 3' to the key. Triaged as A-09."
+          "status": "resolved",
+          "issue": "Earlier accepted note (zone size not stated for Sun-Drowned 3 and The Mire 3) is resolved by P-03 (corner zone 8\"x8\" default). Key and caption now cite the 10.1 step 11 default.",
+          "evidence_source_line": "13955; 14402; 11072",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Key scoping: \"Where a scenario states no depth, zone size or placing order (Sun-Drowned 2 and 3, The Mire 3, 5 and 6, Pale City 1), the 10.1 step 11 default applies\". The list is complete for depth and zone size, but the placing-order default (alternate placing from the Roll-off loser) applies wherever a scenario is silent on order, which includes essentially every edge-deployment scenario (e.g. 12025, 12481, 13819), not only these six. The figure does not claim those scenarios lack alternation, so nothing is false, but the list reads as exhaustive for order. Panel D labels the 8\"x8\" corner \"(10.1 step 11 default)\" although Greenmark 2 (12096) states 8\"x8\" itself (value identical; attribution imprecise).",
+          "evidence_source_line": "11072; 12025; 12096",
+          "fix": "Key: change to \"Where a scenario states no depth or zone size (Sun-Drowned 2 and 3, The Mire 3, 5 and 6), the step 11 default applies: 6\" from the edge, 8\"x8\" corners. Where it states no placing order (these, Pale City 1 and most edge scenarios), Heroes are placed alternately from the Roll-off loser.\" Panel D: \"(stated; also the 10.1 step 11 default)\". Does not affect the gate."
         }
       ]
     },
@@ -382,20 +409,37 @@
     },
     {
       "id": "FIG-16",
-      "svg_sha256": "3540399da8df157eb7e960f468d41fa594fa71b8bd8af9cdef4a1219df28c4ce",
-      "caption_sha256": "1f7d72da17d432d6b9ded916a2d9feb1ae5c95ebde8e1802907133d33daf67c7",
+      "svg_sha256": "2733195c817d41378688c1f3511d24cc020ed3dff7887c70c7d9c75283296f09",
+      "caption_sha256": "b7a7b860be061f63ce542b54f74b98478d6c0919eef747b3799a7297fe43677a",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12042-12111",
+        "12088",
+        "12093",
+        "12100",
         "7642-7651"
       ],
       "findings": [
         {
           "severity": "minor",
-          "status": "accepted",
-          "issue": "Panel A places the Warden inside the triangle, not visibly adjacent to any Stone, while panel B step 3 quotes 'adjacent to the central Standing Stone'. The source gives no central Stone among three in a rough triangle; the drawing is labelled schematic and the dashed 8\"-range line is not dimensioned.",
+          "status": "resolved",
+          "issue": "Earlier note: central Standing Stone undefined for three Stones in a triangle. P-04 now reads \"When a Hero first Interacts with a Standing Stone, place the Antlered Warden adjacent to that Stone\"; panel B step 3 and the caption say the Warden is placed adjacent to the Stone the Hero first Interacts with, and is Awake when placed. No central Stone is invented. Panel A draws the Warden against the Party A Hero's Stone (Party A Hero adjacent to the same Stone).",
           "evidence_source_line": "12088; 12062",
-          "fix": "None for the figure. Source gap triaged as A-02 UNRESOLVED."
+          "fix": "None. Triaged as A-02."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "P-05: Group 2 now placed \"inside the Central Clearing, 4\" from its edge\". Panel A item 6 matches. Geometry re-measured: Clearing r = 67.5 pt = 13.5\" diameter at 10 pt/in (inside the stated 12-15\"); Group 2 centre is 27.5 pt from the Clearing centre, i.e. 40 pt = 4\" from the edge, and the 4\" dimension line is collinear and 40 pt long. Stones form an equilateral triangle of 70 pt = 7\" sides (inside 6-8\"). Warden-to-Party B Hero distance about 6.5\" (<=8\") consistent with Entangling Roots; step 5 and Target Priority text match 12080-12086 and 7642-7651 (\"Otherwise, use the normal Monster target priorities\").",
+          "evidence_source_line": "12093; 12062; 12082-12086",
+          "fix": "None. Triaged as A-03."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Panel A draws a 0.1\" gap between the Warden square and the Stone marker; the panel is labelled schematic, and the 8\" range is not dimensioned (distance drawn is within 8\").",
+          "evidence_source_line": "12088",
+          "fix": "None."
         }
       ]
     },
@@ -422,49 +466,74 @@
     },
     {
       "id": "FIG-18",
-      "svg_sha256": "6068583d30489eb200b494d914d93e57499917e02163f6703b03220881a02ba3",
-      "caption_sha256": "ffb9cb8159bccb7b95c0331f0057be6cded1f946ea641f9f1ad94f16eb2895ab",
+      "svg_sha256": "02cb37a56e8ae1868f74396485efdff345dcd0dffd9e9cf4154a48fb8abbb682",
+      "caption_sha256": "9ace7939d746eea3d5e09e3b74ecd83bf64052f4414d8eb7a7c344aec423c0f9",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "16082-16208",
         "16254-16339",
-        "16348-16490"
-      ],
-      "findings": [
-        {
-          "severity": "minor",
-          "status": "accepted",
-          "issue": "All numbers re-derived: initiative 13+0+1=14 vs 10; Varek 6+3=9, 9-4=5 (16->11); Mara 4+3=7, AV 1, 6 (15->9); Senna 5+3=8 dodged by Mara 11+3=14; Wolf 1 5+1=6-3=3 (11->8), STR 9+3=12 success; Wolf 2 max(4,7)+1=8-5=3 (8->5), STR 6+3=9 fail, Prone; Wolves 3 and 4 no attack. Only A.7/A.8 mechanics used. A.2's centre ruin is not drawn and the Satchel sits at the centre per A.11 table; disclosed on the figure.",
-          "evidence_source_line": "16108; 16180; 16358",
-          "fix": "None. Triaged as A-01 RESOLVED_BY_1.6 (A.11 is an example; does not override A.2/A.4)."
-        }
-      ]
-    },
-    {
-      "id": "FIG-19",
-      "svg_sha256": "269032258dcf212ba8eaaae4fe02d10eb9df044f308be1a75e04621722797a59",
-      "caption_sha256": "973e2c8a4f860b19a16a450ecf522a1a5efdede2395d9b76ed4780466b3123c3",
-      "verdict": "PASS_WITH_NOTES",
-      "checked_against_lines": [
-        "16519-16532",
-        "17016-17070",
-        "17072-17095",
-        "16584-16590"
+        "16348-16490",
+        "16182",
+        "16358"
       ],
       "findings": [
         {
           "severity": "minor",
           "status": "resolved",
-          "issue": "Earlier notes: Strongbox/Satchel glyph, road label, example wording. Verified in render: distinct chest glyph, labelled dotted road, 'at least 6 Moves' and Interact [1 AP] note. Marker distances re-measured from render: 5.8-6.2\" from centre, 10+\" apart, outside deployment bands; Goblin 1c, Skeleton 1c, Bandit 3c; 12+4+2+3=21c.",
+          "issue": "P-07: A.11 table now says \"Adjacent to the centre ruin.\" The figure no longer places the Satchel at the exact centre. Panel A does NOT choose a side of the ruin: no Satchel marker is drawn on the board, only a label \"Satchel: adjacent to ruin\" and a dashed 1\" ring of squares around the 3\"x3\" ruin, with the on-figure note \"its side is not stated, so only the squares around the ruin are outlined\". The A.11 wolf layout is shown as a separate inset (\"Relative layout only\"). Nothing invents which side of the ruin the Satchel is on. Previous accepted note about the Satchel drawn at the centre is therefore resolved.",
+          "evidence_source_line": "16182; 16358; 16108",
+          "fix": "None. Triaged as A-01."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Geometry re-measured (7 pt/in; board 168 pt = 24\"): deployment bands 28 pt = 4\" from the short edges; Edric and Varek on the centre line 4\" from their edges; Mara and Senna 6\" east of it (Senna drawn on the east side as north-facing view); ruin 21 pt = 3\" at the centre; Treasure Chest 35 pt = 5\" east of the centre and outside both zones and the ruin ring. The label \"Satchel: adjacent to ruin\" sits north of the ruin outline, which could be read as a side; the figure states the side is unstated. Optionally move the label beside the ring with a leader.",
+          "evidence_source_line": "16160-16210; 16348-16380",
+          "fix": "None required."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "All Round 1 numbers re-derived from A.11: initiative 13+0+1=14 vs 10; Varek 6+3=9, 9-4=5 (16->11); Mara 4+3=7, AV 1, 6 (15->9), keeps 1 AP; Senna 5+3=8 dodged by Mara 11+3=14 (Check against 12), Mara 3 AP spent, Senna keeps 1 AP; Wolf 1 5+1=6-3=3 (11->8), STR 9+3=12 success; Wolf 2 max(4,7)+1=8-5=3 (8->5), STR 6+3=9 fails, Prone; Wolves 3 and 4 do not attack; end state Edric 5 HP, Prone, Satchel, Engaged by Varek, Wolf 1, Wolf 2. AP squares match. Caption 16-5=11, 11-3=8, 8-3=5 matches.",
+          "evidence_source_line": "16360-16400",
+          "fix": "None."
+        }
+      ]
+    },
+    {
+      "id": "FIG-19",
+      "svg_sha256": "485135198445731d4c3cd1af696e717472b054f6d56f010c8e5df5f59babf704",
+      "caption_sha256": "f63b03e2be6c774f8dcf41a74c70093188d84cf8ff23a35ff431d12a2f368805",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "16519-16532",
+        "17016-17070",
+        "17072-17095",
+        "16584-16590",
+        "17080",
+        "16540-16541"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier notes: Strongbox/Satchel glyph, road label, example wording. Verified in render: distinct chest glyph, labelled dotted road, \"at least 6 Moves\" and Interact [1 AP] note. Marker distances re-measured from the SVG at 7 pt/in: all three Monster Entry markers exactly 42 pt = 6\" from the centre (inside 5-7\"), about 10.4\" apart (>=4\"), outside the 4\" deployment bands; rings at 35 pt and 49 pt = 5\" and 7\"; ruin and cart within 4\" of the centre; four 3\"x3\" pieces one per quarter; Goblin 1c, Skeleton 1c, Bandit 3c; 12+4+2+3=21c.",
           "evidence_source_line": "17074-17082",
           "fix": "None."
         },
         {
           "severity": "minor",
-          "status": "open",
-          "issue": "Panel B step 3 reads 'One complete group (Goblins, Skeleton Warriors, Bandits) and 1 Satchel at each marker'. The parenthesis can be read as all three groups at every marker; the source places one complete group per marker (4 Goblins, 4 Skeleton Warriors, 4 Bandits across 3 markers) and does not say which group goes where.",
+          "status": "resolved",
+          "issue": "Old step-3 wording note (parenthesis could be read as all three groups at every marker) is fixed. Panel B step 3 now reads \"The 3 groups (4 Goblins, 4 Skeleton Warriors, 4 Bandits) are assigned to the markers at random, one complete group per marker, with 1 Satchel on each marker. Every group begins Resting.\" This matches P-06 (\"one complete group per marker, assigned at random\") and B.6 Treasure (one Satchel on each marker). Caption carries \"assigned at random\".",
           "evidence_source_line": "17080; 16541",
-          "fix": "Reword to 'One complete group (Goblins, Skeleton Warriors or Bandits - one group per marker) and 1 Satchel at each marker'. Open minor; does not affect gate."
+          "fix": "None. Triaged as A-18."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Caption wording: \"extracting it plus 1 Satchel, 2 Goblins and 1 Bandit scores 12 + 4 + 2 + 3 = 21c\" reads as though Goblins and a Bandit are extracted; per B.6 Monster Coin Value they score when a side reduces them to 0 HP. The caption also omits that the example is assumed (panel B heading says \"Example (assumed)\"). The arithmetic matches the profiles and B.6.",
+          "evidence_source_line": "17016-17070; 17072-17095",
+          "fix": "Caption: \"Illustrative example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move; extracting it with 1 Satchel and having defeated 2 Goblins and 1 Bandit scores 12 + 4 + 2 + 3 = 21c (see B.6).\" Does not affect the gate."
         }
       ]
     }
@@ -477,9 +546,9 @@
     },
     "findings_by_severity_status": {
       "major/resolved": 2,
-      "minor/accepted": 13,
-      "minor/open": 1,
-      "minor/resolved": 10
+      "minor/accepted": 12,
+      "minor/open": 3,
+      "minor/resolved": 17
     },
     "critical_open": 0,
     "major_open": 0,
@@ -488,9 +557,12 @@
       "FIG-15": "resolved (Chasm Fall + Fly/Climb Hero/Hireling vs Monster distinctions verified verbatim)"
     },
     "open_minor": [
-      "FIG-19 step 3 wording"
+      "FIG-08 panel C/caption \"origin square is not affected\" exceeds P-01 (combatant, not square)",
+      "FIG-13 key placing-order scoping and panel D default attribution",
+      "FIG-19 caption \"extracting ... Goblins and Bandit\" wording"
     ],
     "method": "Read every SVG text node and caption; compared with cited source spans (sed -n) and neighbouring lines; re-derived arithmetic and counts (FIG-03/04/05/08/18/19); rendered all 19 SVGs with typst and inspected each at 130 ppi, FIG-14 panels B/C at 400 ppi with pixel dimension checks; reconciled all 36 Party Deployment lines with FIG-13/14 coverage.",
-    "not_checked": "Print-scale legibility, PDF placement and physical output not assessed here. Authorial semantic judgement on UNRESOLVED source gaps recorded in ambiguity-triage.json."
+    "not_checked": "Print-scale legibility, PDF placement and physical output not assessed here. Reviewed from rendered SVG (typst, 120 ppi, one 250 ppi crop) and SVG source coordinates only.",
+    "re_review_scope": "Post-patch re-review (editorial/patches.json P-01..P-07 applied to the unchanged canonical source; line numbers are identical in the patched layer). Stale figures per figure_review_gate --print-hashes: FIG-07, FIG-08, FIG-13, FIG-16, FIG-18, FIG-19, each fully re-reviewed: every SVG text node, caption, number, distance and placement compared with cited patched-source lines; geometry re-measured from SVG coordinates; each rendered with typst and viewed (FIG-08 panel C at 250 ppi). The other 13 figures have unchanged SVG and caption hashes; their entries are carried forward from the earlier review (reviewed 2026-10-06T13:31:57Z). Patch-impact check on them: none of their cited source ranges contain a patched line; P-02 (Cover) does not alter FIG-09/14/15, which draw only the Impassable pattern as a missing surface/Chasm and never show Cover for it; FIG-14 panels B/C already state alternate placing and panels A/D state nothing contradicting the P-03 default; P-01 touches no other figure."
   }
 }
