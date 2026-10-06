@@ -105,7 +105,7 @@ def first_text(b) -> str:
 def inject(s: str, mark: str) -> str:
     """Put a zero-size marker INSIDE a rendered block so that no stray inline content
     sits between a heading and the block it must keep with."""
-    for f in ("#example[", "#flavour[", "#note-box[", "#runin["):
+    for f in ("#example[", "#flavour[", "#note-box[", "#runin[", "#keep["):
         if s.startswith(f):
             return f + mark + s[len(f):]
     for f in ("#htable(", "#statstrip(", "#statcard(", "#cards(", "#figure-block("):
@@ -117,6 +117,11 @@ def inject(s: str, mark: str) -> str:
         i = s.index("[")
         return s[:i + 1] + mark + s[i + 1:]
     return mark + s
+
+
+def first_text_full(b) -> str:
+    from parse_source import plain
+    return plain(b.get("c", []))
 
 
 def is_caption(b) -> bool:
@@ -418,7 +423,12 @@ class Book:
                     continue
                 cur.append((b, s + "\n"))
                 continue
-            cur.append((b, self.render(b)))
+            r = self.render(b)
+            # a short plain paragraph right after a heading is kept whole (no 1-line orphan under it)
+            if (b["type"] == "para" and cur and cur[-1][0]["type"] == "heading" and r.endswith("\n\n")
+                    and len(first_text_full(b)) < 300 and not r.startswith(("#example[", "#flavour[", "#runin["))):
+                r = f"#keep[{r.rstrip()}]\n"
+            cur.append((b, r))
             for fig in self.figs_for(b):
                 if fig.get("scope") == "full":
                     self.flush(cur)
@@ -523,6 +533,7 @@ def typst_query(sel):
                                   sys_inputs={"substrate": "cream", "edition": "print"}))
 
 
+STRADDLE_MAX = 250   # pt: max gap a straddling piece may leave at the foot of the previous page
 TOP_Y = 0.65 * 72
 BODY_BOTTOM = 792 - 0.7 * 72
 
@@ -545,21 +556,30 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None):
         L = end["page"]
         pt = prev.get(str(sid))
         pt = pt[1] if pt and pt[0] == sigs.get(str(sid)) else None
-        if pt is not None and pt < len(starts) and starts[pt]["page"] == L:
+        byp = {m["piece"]: m for m in starts}
+        if pt is not None and pt in byp and byp[pt]["page"] == L:
             res[str(sid)] = [sigs[str(sid)], pt]   # hysteresis: previous tail still sits on the last page
             continue
         on_last = [m for m in starts if m["page"] == L]
         if not on_last:
-            continue  # only the tail of a straddling piece is on the last page; leave natural
+            # only the continuation of one straddling piece is on the last page
+            lastp = starts[-1] if starts else None
+            if lastp and lastp["page"] == L - 1 and BODY_BOTTOM - lastp["y"] < STRADDLE_MAX:
+                res[str(sid)] = [sigs[str(sid)], lastp["piece"]]
+            continue
         t = on_last[0]["piece"]
         if t > 0:
-            prevp = starts[t - 1]
+            prevs = [m for m in starts if m["piece"] < t]
+            if not prevs:
+                res[str(sid)] = [sigs[str(sid)], t]
+                continue
+            prevp = prevs[-1]
             first = on_last[0]
             at_top = abs(first["y"] - TOP_Y) < 20 and first["x"] < 300
             if not at_top:
                 # previous piece straddles onto the last page; include it if little is left on the previous page
-                if BODY_BOTTOM - prevp["y"] < 160 or prevp["page"] == L:
-                    t = t - 1
+                if BODY_BOTTOM - prevp["y"] < STRADDLE_MAX or prevp["page"] == L:
+                    t = prevp["piece"]
                 else:
                     continue
         res[str(sid)] = [sigs[str(sid)], t]

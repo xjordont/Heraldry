@@ -6,7 +6,7 @@ Canonical source: source/Heraldry_RC484.md — SHA-256 2744833106569e6b20f691334
 Branch: claude/heraldry-rc484-build. See production/RELEASE_STATUS.md for per-area statuses.
 
 ## Deliverables (dist/)
-Heraldry_RC484_digital.pdf (438 pp: covers + inside-front blank + 435-page interior), Heraldry_RC484_inkjet-borderless.pdf and -white.pdf (435 pp each, identical), covers (cream/white), calibration sheet, PRINT_INSTRUCTIONS.md, specimen/, Heraldry_RC484_release.zip + SHA256SUMS.txt.
+Heraldry_RC484_digital.pdf (439 pp: covers + inside-front blank + 436-page interior), Heraldry_RC484_inkjet-borderless.pdf and -white.pdf (436 pp each, identical), covers (cream/white), calibration sheet, PRINT_INSTRUCTIONS.md, specimen/, Heraldry_RC484_release.zip + SHA256SUMS.txt.
 
 ## Resume / rebuild
 1. `python3 tools/preflight.py --report production/preflight.json`
@@ -17,3 +17,6 @@ Heraldry_RC484_digital.pdf (438 pp: covers + inside-front blank + 435-page inter
 - Original illustrations (12 mandatory assets) — needs an authorised image service or supplied files.
 - Physical proof on the user's printer/paper.
 - Author/publisher/copyright metadata if a commercial edition is wanted.
+
+## Release correction pass (2026-10-06)
+FIG-15 Fly/Climb rescue exceptions; FIG-14 dimension geometry; independent hash-bound re-review (gate PASS); source_preflight and figure_semantic_review now mandatory; ambiguity triage; balancer/orphan fixes; all pages re-inspected. Open minor: FIG-19 step 3 wording.

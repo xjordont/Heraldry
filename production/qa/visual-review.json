@@ -1,7 +1,7 @@
 {
  "pdf": "dist/Heraldry_RC484_inkjet-borderless.pdf",
- "sha256": "76bae534dd9bef3e59491523bb1f5731b243f3620b2cbd027a058c24126ea92a",
- "pages": 435,
+ "sha256": "2a3ac389612c4168b2bca7c4c94e1648babfe536036f8d5183283038f41ce132",
+ "pages": 436,
  "all_page_contact_sheets": {
   "batches": [
    "1-24",
@@ -22,12 +22,12 @@
    "361-384",
    "385-408",
    "409-432",
-   "433-435"
+   "433-436"
   ],
   "render_dpi": 24,
-  "pages_covered": "1-435 (all)",
+  "pages_covered": "1-436 (all)",
   "inspected": true,
-  "method": "19 contact sheets of 24 pages each viewed by the orchestrator; detects composition, voids, overlaps, misplaced components; not glyph-level proofreading"
+  "pass": "release correction pass 2026-10-06"
  },
  "detailed_pages_viewed_at_45-80dpi": [
   "title i",
@@ -65,9 +65,21 @@
   "bold run-in labels separated from text"
  ],
  "residual": [
-  "FIG-14 panel C 'min 3\"' dimension label does not span the drawn gap (minor, label correct)",
-  "12 chapter-final pages end part-way down (normal chapter ends); voids otherwise none >40% of body",
-  "potion/scroll tables set in column width are long and uniform (legible; layout choice)"
+  "One unbalanced tail: end of Appendix C before the Index (acceptable chapter end)",
+  "Chapter-final pages end part-way down"
  ],
- "status": "PASS (contact-sheet coverage of all pages + detailed sample); glyph-level proofreading of every page NOT claimed"
+ "status": "PASS (contact-sheet coverage of all pages + detailed sample); glyph-level proofreading of every page NOT claimed",
+ "correction_pass": {
+  "changed_vs_previous_release": "419 of 435 pages repaginated (balancer and keep-with-next fixes); all pages re-inspected",
+  "detail_viewed": [
+   "FIG-14 p.256 at 85 dpi",
+   "FIG-15 p.304 at 85 dpi",
+   "p.39 (4.4.4 orphan fix)"
+  ],
+  "fixes": [
+   "unbalanced column tails before full-width figures (piece lookup bug)",
+   "straddling tails now balanced",
+   "1-line orphan under headings"
+  ]
+ }
 }

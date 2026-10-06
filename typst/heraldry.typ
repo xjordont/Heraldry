@@ -194,11 +194,12 @@
     best = calc.min(best, calc.max(a, b))
     if a < b { lo = k + 1 } else { hi = k - 1 }
   }
-  let avail = body-bottom - here().position().y
-  if best + 14pt > avail {
+  // If the balanced block does not fit in the space left on this page but fits a page,
+  // it is unbreakable and moves whole to the next page; only longer tails fall back to natural flow.
+  if best + 14pt > body-bottom - m-top {
     columns(2, gutter: gap, { for p in ps { p } })
   } else {
-    block(width: 100%, height: best + 14pt, above: 0pt, below: 8pt, columns(2, gutter: gap, { for p in ps { p } }))
+    block(width: 100%, height: best + 14pt, above: 0pt, below: 8pt, breakable: false, columns(2, gutter: gap, { for p in ps { p } }))
   }
 }
 
@@ -206,6 +207,8 @@
 
 // ---------------------------------------------------------------- body components
 // Flavour text: the source marks it with emphasis, so the italic comes from #emph.
+// A short paragraph directly after a heading is kept whole (no 1-line orphan under a heading).
+#let keep(body) = block(breakable: false, above: 6pt, below: 6pt, body)
 // A paragraph that is only a bold label acts as a minor heading: keep it with what follows.
 #let runin(body) = block(sticky: true, above: 6pt, below: 6pt, body)
 #let flavour(body) = block(above: 4pt, below: 8pt, body)

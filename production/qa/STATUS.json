@@ -12,13 +12,14 @@
   "no_duplicate_tables_figures": "PASS",
   "table_audit": "PASS",
   "index_audit": "PASS",
-  "figures_placed": "PASS"
+  "figures_placed": "PASS",
+  "figure_semantic_review": "PASS"
  },
  "mandatory_failed": [],
  "release_gate": "PASS",
  "not_covered_here": [
   "all-page visual inspection (production/qa/visual-review.json)",
-  "diagram semantic review (figures/manifest.json)",
+  "diagram semantic correctness beyond the hash-bound review record (production/qa/figure-semantic-review.json)",
   "physical inkjet proof: NOT TESTED"
  ]
 }

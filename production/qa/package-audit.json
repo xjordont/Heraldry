@@ -1,7 +1,7 @@
 {
  "zip": "dist/Heraldry_RC484_release.zip",
- "bytes": 16993618,
- "files": 143,
+ "bytes": 17049544,
+ "files": 148,
  "pdfs": [
   "Heraldry_RC484/dist/Heraldry_RC484_covers-front-back-white.pdf",
   "Heraldry_RC484/dist/Heraldry_RC484_covers-front-back.pdf",
@@ -12,5 +12,5 @@
   "Heraldry_RC484/dist/specimen/Heraldry_RC484_specimen.pdf"
  ],
  "forbidden_entries": [],
- "sha256": "6515566be17eed909aac2354593b89215c4cbd38acb831c766ebc5b387c677d4"
+ "sha256": "1cf51c9b1560e7e57a10e3e80c6b02d812ac9f35952c8ccac0f2a13d363dfee1"
 }
