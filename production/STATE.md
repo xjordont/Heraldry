@@ -6,7 +6,7 @@ Canonical source: source/Heraldry_RC484.md — SHA-256 2744833106569e6b20f691334
 Branch: claude/heraldry-rc484-build. See production/RELEASE_STATUS.md for per-area statuses.
 
 ## Deliverables (dist/)
-Heraldry_RC484_digital.pdf (437 pp), Heraldry_RC484_inkjet-borderless.pdf and -white.pdf (435 pp each, identical), covers (cream/white), calibration sheet, PRINT_INSTRUCTIONS.md, specimen/, Heraldry_RC484_release.zip + SHA256SUMS.txt.
+Heraldry_RC484_digital.pdf (438 pp: covers + inside-front blank + 435-page interior), Heraldry_RC484_inkjet-borderless.pdf and -white.pdf (435 pp each, identical), covers (cream/white), calibration sheet, PRINT_INSTRUCTIONS.md, specimen/, Heraldry_RC484_release.zip + SHA256SUMS.txt.
 
 ## Resume / rebuild
 1. `python3 tools/preflight.py --report production/preflight.json`
