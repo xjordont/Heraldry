@@ -210,6 +210,8 @@
 // Flavour text: the source marks it with emphasis, so the italic comes from #emph.
 // A short paragraph directly after a heading is kept whole (no 1-line orphan under a heading).
 #let keep(body) = block(breakable: false, above: 6pt, below: 6pt, body)
+// Glossary entry: hanging indent so each bold term stands at the margin.
+#let gloss(body) = block(above: 5pt, below: 5pt, par(hanging-indent: 9pt, body))
 // A paragraph that is only a bold label acts as a minor heading: keep it with what follows.
 #let runin(body) = block(sticky: true, above: 6pt, below: 6pt, body)
 #let flavour(body) = block(above: 4pt, below: 8pt, body)

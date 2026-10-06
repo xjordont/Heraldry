@@ -433,5 +433,20 @@
    "qa": "NOT TESTED",
    "insertion": "Place the approved master as assets/art/incoming/ART-CH11-001.png (grayscale, transparent or matching cream matte); rebuild with `make all verify`."
   }
- ]
+ ],
+ "route_check_2026_10_06": {
+  "result": "BLOCKED — no authorized image route",
+  "evidence": [
+   "config/production.json image_generation.paid_calls_authorized = false",
+   "config/production.json image_generation.external_spend_limit_usd = 0",
+   "known_no_cost_quota = null",
+   "assets/art/incoming/ contains only README.md (no supplied masters)",
+   "No image-generation tool or connector is available to this Claude session"
+  ],
+  "note": "Cloud credentials are present in the environment (names only: AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY, CLOUDSDK_AUTH_ACCESS_TOKEN). Credentials are not spending authorization; they were not used.",
+  "to_unblock": [
+   "Owner sets image_generation.paid_calls_authorized=true with an explicit external_spend_limit_usd and names the service/model, OR",
+   "Owner supplies approved masters as assets/art/incoming/<ASSET-ID>.png per the assets list (ART-CH01-001 first as style anchor)"
+  ]
+ }
 }
