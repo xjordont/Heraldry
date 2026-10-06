@@ -67,7 +67,14 @@ def main():
     entries = []
     mapping = []
 
+    heads_for = {}
+
     def tag(bid, key):
+        if bid.startswith("h-"):
+            heads_for.setdefault(key, [])
+            if bid not in heads_for[key]:
+                heads_for[key].append(bid)
+            return
         targets.setdefault(bid, [])
         if key not in targets[bid]:
             targets[bid].append(key)
@@ -167,7 +174,7 @@ def main():
     entries.sort(key=lambda e: re.sub(r"[^a-z0-9 ]", "", e["term"].lower()))
     note = ("Main entries follow the terms of C.11 Glossary of Terms and Conditions. "
             "Locators point to the glossary entry, the sections it cites, and sections that define or apply the term.")
-    (ROOT / "build/index.json").write_text(json.dumps({"note": note, "entries": entries}, ensure_ascii=False))
+    (ROOT / "build/index.json").write_text(json.dumps({"note": note, "entries": entries, "heads": heads_for}, ensure_ascii=False))
     (ROOT / "build/index_targets.json").write_text(json.dumps(targets, ensure_ascii=False))
     (ROOT / "production/mappings").mkdir(parents=True, exist_ok=True)
     (ROOT / "production/mappings/index.json").write_text(json.dumps(mapping, ensure_ascii=False, indent=0))

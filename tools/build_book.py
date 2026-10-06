@@ -47,8 +47,13 @@ class Emitter:
 
     def inl(self, nodes, soft_break=True) -> str:
         out = []
+        prev = None
         for n in nodes:
             t = n["t"]
+            if t == "soft" and prev == "br":
+                prev = t
+                continue   # "<br>" + source newline is one line break, not two
+            prev = t
             if t == "text":
                 if n["v"]:
                     out.append("#" + lit(nobreak(n["v"])))
@@ -97,6 +102,23 @@ def first_text(b) -> str:
     return s.strip()
 
 
+def inject(s: str, mark: str) -> str:
+    """Put a zero-size marker INSIDE a rendered block so that no stray inline content
+    sits between a heading and the block it must keep with."""
+    for f in ("#example[", "#flavour[", "#note-box["):
+        if s.startswith(f):
+            return f + mark + s[len(f):]
+    for f in ("#htable(", "#statstrip(", "#statcard(", "#cards(", "#figure-block("):
+        if s.startswith(f):
+            return f + f"pre: [{mark}], " + s[len(f):]
+    if s.startswith("#hr-ornament()"):
+        return f"#hr-ornament(pre: [{mark}])" + s[len("#hr-ornament()"):]
+    if s.startswith("#list([") or s.startswith("#enum("):
+        i = s.index("[")
+        return s[:i + 1] + mark + s[i + 1:]
+    return mark + s
+
+
 def is_caption(b) -> bool:
     """A paragraph consisting solely of one short bold run (e.g. **APL 1–2 (d10)**)."""
     if b["type"] != "para":
@@ -128,6 +150,7 @@ class Book:
         self.seg_count = 0
         self.seg_sigs = {}
         self.placed_figs = set()
+        self.piece_heads = {}
         self.table_map = []
         self.block_map = []   # (block id, src span, representation, segment)
         self.out = []
@@ -194,8 +217,7 @@ class Book:
         body = self.em.inl(b["c"])
         bm = "true" if lvl <= 3 else "false"
         ol = "true" if lvl <= 2 else "false"
-        s = f"#heading(level: {lvl}, outlined: {ol}, bookmarked: {bm})[{body}] #label({lit(b['id'])})"
-        return s + self.tags(b["id"])
+        return f"#heading(level: {lvl}, outlined: {ol}, bookmarked: {bm})[{body}] #label({lit(b['id'])})"
 
     def para(self, b, role=None):
         body = self.em.inl(b["c"])
@@ -224,6 +246,8 @@ class Book:
         raise SystemExit(t)
 
     def tags(self, bid):
+        if bid.startswith("h-"):
+            return ""   # headings are index targets through their own label (see make_index heads)
         return "".join(f"#ixm({lit(k)})" for k in self.index_targets.get(bid, []))
 
     def lst(self, b):
@@ -335,7 +359,7 @@ class Book:
                     self.block_map.append((b["id"], b["src"], "replaced-by-generated-toc", None))
                 continue
             self.chapter(ch)
-        o.append("#backmatter()\n")
+        o.append("#backmatter()\n#hpos-summary()\n")
         want = {f["id"] for v in self.fig_slots.values() for f in v}
         if want - self.placed_figs:
             raise SystemExit(f"figures not placed (unknown insert_after ids): {sorted(want - self.placed_figs)}")
@@ -450,8 +474,12 @@ class Book:
         parts = []
         for j, (b, s) in enumerate(pieces):
             self.block_map.append((b["id"], b["src"], "column", sid))
-            parts.append(f"#pm({sid}, {j}, \"s\")" + s)
-        end = f"#pm({sid}, {len(pieces)}, \"e\")"
+            if b["type"] == "heading":
+                self.piece_heads[f"{sid}:{j}"] = b["id"]
+                parts.append(s)
+            else:
+                parts.append(inject(s, f"#pm({sid}, {j}, \"s\")"))
+        end = f"#place(pm({sid}, {len(pieces)}, \"e\"))"
         if tail is None or tail >= len(pieces):
             self.out.append("#seg[" + "".join(parts) + end + "]\n")
         else:
@@ -463,30 +491,42 @@ class Book:
 
 
 def compile_book(variant="cream", out=None, query=True, edition="print"):
-    import typst
+    import subprocess
     out = out or BUILD / f"book-{variant}.pdf"
-    t0 = time.time()
-    typst.compile(str(ROOT / "typst/content.typ"), output=str(out), root=str(ROOT),
-                  font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True,
-                  sys_inputs={"substrate": variant, "edition": edition})
-    dt = time.time() - t0
-    pm = None
+    qf = BUILD / "query.json"
+    args = [sys.executable, str(ROOT / "tools/typst_run.py"), str(out), variant, edition] + ([str(qf)] if query else [])
+    r = subprocess.run(args, capture_output=True, text=True)
+    if r.returncode:
+        raise SystemExit(r.stderr[-3000:])
+    dt = float(r.stdout.strip().splitlines()[-1])
     if query:
-        pm = json.loads(typst.query(str(ROOT / "typst/content.typ"), "<pm>", field="value", root=str(ROOT),
-                                    font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True,
-                                    sys_inputs={"substrate": variant}))
-    return out, dt, pm
+        q = json.loads(qf.read_text())
+        return out, dt, (q["pm"], q["hpos"])
+    return out, dt, None
+
+
+def typst_query(sel):
+    import typst
+    return json.loads(typst.query(str(ROOT / "typst/content.typ"), sel, field="value", root=str(ROOT),
+                                  font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True,
+                                  sys_inputs={"substrate": "cream", "edition": "print"}))
 
 
 TOP_Y = 0.65 * 72
 BODY_BOTTOM = 792 - 0.7 * 72
 
 
-def compute_balance(pm, prev, sigs):
+def compute_balance(pm, prev, sigs, heads=None, hpos=None):
     """Decide, per segment, from which piece the tail on its last page should be balanced."""
     segs = {}
     for m in pm:
         segs.setdefault(m["seg"], []).append(m)
+    hp = {h["id"]: h for h in (hpos or [])}
+    for key, hid in (heads or {}).items():
+        sid, j = map(int, key.split(":"))
+        if hid in hp:
+            h = hp[hid]
+            segs.setdefault(sid, []).append({"seg": sid, "piece": j, "edge": "s", "page": h["page"], "y": h["y"], "x": h["x"]})
     res = {}
     for sid, ms in segs.items():
         starts = sorted([m for m in ms if m["edge"] == "s"], key=lambda m: m["piece"])
@@ -533,14 +573,26 @@ def main():
     bal_file = BUILD / "balance.json"
     if bal_file.exists() and not a.no_balance:
         balance = json.loads(bal_file.read_text())
+    flips = {}
     for p in range(a.passes):
         book = Book(model, balance)
         (ROOT / "typst/content.typ").write_text(book.emit())
-        out, dt, pm = compile_book(a.variant)
-        new = compute_balance(pm, balance, book.seg_sigs) if not a.no_balance else {}
+        out, dt, (pm, hpos) = compile_book(a.variant)
+        new = compute_balance(pm, balance, book.seg_sigs, book.piece_heads, hpos) if not a.no_balance else {}
         print(f"pass {p+1}: {dt:.1f}s, segments={book.seg_count}, balanced={len(new)}, changed={sum(1 for k in set(new)|set(balance) if new.get(k)!=balance.get(k))}")
         if new == balance or a.no_balance:
             break
+        # damping: a segment that has already changed twice keeps its current value
+        for k in set(new) | set(balance):
+            if new.get(k) != balance.get(k):
+                flips[k] = flips.get(k, 0) + 1
+                if flips[k] > 2:
+                    if k in balance:
+                        new[k] = balance[k]
+                    else:
+                        new.pop(k, None)
+        if p == a.passes - 1 or new == balance:
+            break   # keep balance.json consistent with the PDF just compiled
         balance = new
         bal_file.write_text(json.dumps(balance))
     MAP.mkdir(parents=True, exist_ok=True)
