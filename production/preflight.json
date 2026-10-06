@@ -1,5 +1,5 @@
 {
-  "scope": "Launch-kit integrity only; not publication or live-Claude-account certification",
+  "scope": "Repository contracts only; not publication or live-Claude-account certification",
   "kit_status": "PASS",
   "checks": [
     {
@@ -11,8 +11,9 @@
       "check": "source_integrity",
       "status": "PASS",
       "detail": {
-        "sha256": "2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3",
-        "bytes": 1450722
+        "sha256": "fc6caeeedf1e8e2cce80ed469ef74fb3c196048563c6bfec65031f2b03c4bbbe",
+        "bytes": 1451105,
+        "version": "RC485"
       }
     },
     {
@@ -46,7 +47,7 @@
     }
   ],
   "runtime_observed": {
-    "python": "3.13.16",
+    "python": "3.12.14",
     "commands": {
       "git": true,
       "python3": true,
@@ -55,13 +56,14 @@
       "pdfinfo": true,
       "pdftoppm": true,
       "qpdf": false,
-      "gs": false
+      "gs": true
     },
     "python_modules": {
       "typst": true,
       "fitz": true,
       "pypdf": true,
-      "pdfplumber": true,
+      "markdown_it": true,
+      "fontTools": true,
       "PIL": true
     }
   },

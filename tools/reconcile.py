@@ -34,7 +34,7 @@ def norm(s: str) -> str:
 
 def pdf_stream(pdf, skip_covers=False):
     doc = pymupdf.open(pdf)
-    parts, page_at = [], []
+    parts = []
     bold, ital = [], []
     pos = 0
     global fonts
@@ -62,7 +62,6 @@ def pdf_stream(pdf, skip_covers=False):
                 bold.append(" ")
                 ital.append(" ")
                 parts.append("\n")
-        page_at.append(len("".join(parts)))
     raw = "".join(parts)
     return norm(raw), norm("".join(bold)), norm("".join(ital)), len(doc)
 
@@ -193,7 +192,7 @@ def main():
     res["duplicated_blocks"] = [{"text": t[:70], "source": src_stream.count(t), "pdf": text.count(t)} for t in src_counts
                                 if text.count(t) > src_stream.count(t) + figtxt.count(t) + capt.count(t)]
     res["units"] = len(units)
-    res["status"] = "PASS" if not res["duplicated_blocks"] and not res["missing"] and not res["table_cells_missing"] and not res["strong_missing"] and not res["em_missing"] else "FAIL"
+    res["status"] = "PASS" if not res["duplicated_blocks"] and not res["out_of_order"] and not res["missing"] and not res["table_cells_missing"] and not res["strong_missing"] and not res["em_missing"] else "FAIL"
     res["pdf_pages"] = npages
     allowed = {"SourceSerif4", "SourceSans3", "Cinzel"}
     res["fonts"] = sorted(fonts)
@@ -203,6 +202,7 @@ def main():
     Path(a.report).write_text(json.dumps(res, indent=1, ensure_ascii=False))
     summ = {k: (len(v) if isinstance(v, list) else v) for k, v in res.items()}
     print(json.dumps(summ))
+    raise SystemExit(0 if res["status"] == "PASS" else 1)
 
 
 if __name__ == "__main__":

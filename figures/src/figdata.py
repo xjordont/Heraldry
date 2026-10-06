@@ -1,7 +1,7 @@
 """Figure metadata for figures/manifest.json and figures/placements.json.
 
 Single source of truth for IDs, captions, insertion targets and semantic checks.
-Line spans refer to source/Heraldry_RC484.md (read-only); block ids to build/blocks.json.
+Historical line spans refer to RC484/RC485; placements resolve via config/content_anchors.json.
 """
 import json
 import os
@@ -243,6 +243,14 @@ PATCHED = {
     "FIG-19": "P-06: step 3 now reads 'assigned to the markers at random, one complete group per marker'.",
 }
 PATCH_STATUS = "aligned to editorial patches 2026-10-06"
+
+# Resolve placement against the current manuscript, never against inherited line numbers.
+import sys
+sys.path.insert(0, os.path.join(FIG_DIR, "..", "tools"))
+from content_anchors import resolve
+for fid, anchor in resolve().items():
+    if fid in META:
+        META[fid]["insert_after"] = anchor
 
 # (id, ...) order for manifest
 ORDER = sorted(META)

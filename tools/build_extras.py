@@ -5,6 +5,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
+from content_anchors import resolve
+from manuscript import version, pdf_epoch
 from parse_source import plain  # noqa: E402
 
 
@@ -22,10 +24,11 @@ def cover_data():
         walk(ch["blocks"])
     fr = m["chapters"][0]["blocks"]
     t1, _, t2 = fr[0]["title"].partition(": ")
-    lead = plain(blocks["B00163"]["c"])
+    anchors = resolve()
+    lead = plain(blocks[anchors["cover-lead"]]["c"])
     # verbatim sentences from 1.1 (B00169, B00173, B00175)
     facts = []
-    for bid, take in (("B00169", None), ("B00173", 1), ("B00175", None)):
+    for bid, take in ((anchors["cover-fact-1"], None), (anchors["cover-fact-2"], 1), (anchors["cover-fact-3"], None)):
         txt = plain(blocks[bid]["c"])
         facts.append(txt if take is None else txt.split(". ")[0] + ".")
     data = {"title": [t1, t2], "subtitle": plain(fr[1]["c"]), "version": plain(fr[2]["c"]),
@@ -37,10 +40,13 @@ def cover_data():
 def compile_doc(src, out, variant):
     import typst
     typst.compile(str(src), output=str(out), root=str(ROOT), font_paths=[str(ROOT / "fonts/static")],
-                  ignore_system_fonts=True, sys_inputs={"substrate": variant})
+                  ignore_system_fonts=True, sys_inputs={"substrate": variant}, timestamp=pdf_epoch())
 
 
 def main():
+    instructions = (ROOT / "docs/PRINT_INSTRUCTIONS_TEMPLATE.md").read_text().replace("{{VERSION}}", version())
+    (ROOT / "dist").mkdir(exist_ok=True)
+    (ROOT / "dist/PRINT_INSTRUCTIONS.md").write_text(instructions)
     d = cover_data()
     print(json.dumps({k: d[k] for k in ("title", "version")}))
     out = ROOT / "build"

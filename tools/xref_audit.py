@@ -4,7 +4,8 @@ against the numbered headings. Also checks heading-number sequence gaps/duplicat
 import json, re
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
-src = (ROOT / "source/Heraldry_RC484.md").read_text().split("\n")
+from manuscript import source_path
+src = source_path().read_text().split("\n")
 heads = json.loads((ROOT / "production/inventory/headings.json").read_text())
 nums = {}
 for h in heads:

@@ -39,11 +39,11 @@ def main():
             if a.scale != 1.0:
                 s = a.scale
                 w, h = page.rect.width, page.rect.height
-                mat = pymupdf.Matrix(s, 0, 0, s, -(s - 1) * w / 2, -(s - 1) * h / 2) * mat
-                pix = page.get_pixmap(matrix=mat, clip=None)
+                pix = page.get_pixmap(matrix=pymupdf.Matrix(s * a.dpi / 72, s * a.dpi / 72), alpha=False)
                 img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
-                W, H = int(w * a.dpi / 72), int(h * a.dpi / 72)
-                img = img.crop((0, 0, W, H))
+                W, H = round(w * a.dpi / 72), round(h * a.dpi / 72)
+                x0, y0 = (img.width - W) // 2, (img.height - H) // 2
+                img = img.crop((x0, y0, x0 + W, y0 + H))
             elif a.crop:
                 x0, y0, x1, y1 = map(float, a.crop.split(","))
                 pix = page.get_pixmap(matrix=mat, clip=pymupdf.Rect(x0, y0, x1, y1))

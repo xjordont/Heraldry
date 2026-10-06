@@ -1,25 +1,23 @@
-# Heraldry publication state
+# Production state — RC485, main
 
-Status: ART-LIGHT RELEASE BUILT AND VERIFIED (release gate PASS). Atmospheric illustration suite BLOCKED (no authorised image route). Physical print proof NOT TESTED.
+Updated 2026-10-06. Working/delivery branch: **main**. No new branch without an explicit owner decision and recorded reason. `claude/heraldry-rc484-build` is a historical checkpoint.
 
-Canonical source: source/Heraldry_RC484.md — SHA-256 2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3.
-Branch: claude/heraldry-rc484-build. See production/RELEASE_STATUS.md for per-area statuses.
+## Active manuscript
 
-## Deliverables (dist/)
-Heraldry_RC484_digital.pdf (439 pp: covers + inside-front blank + 436-page interior), Heraldry_RC484_inkjet-borderless.pdf and -white.pdf (436 pp each, identical), covers (cream/white), calibration sheet, PRINT_INSTRUCTIONS.md, specimen/, Heraldry_RC484_release.zip + SHA256SUMS.txt.
+`source/versions.json` identifies `source/Heraldry_RC485.md`, SHA-256 `fc6caeeedf1e8e2cce80ed469ef74fb3c196048563c6bfec65031f2b03c4bbbe`. It contains the seven previously approved clarifications P-01–P-07, plus the RC485 marker. Original RC484 is unchanged. Exact patch history is `editorial/history/RC485.json`. No build-only manuscript patch layer remains.
 
-## Resume / rebuild
-1. `python3 tools/preflight.py --report production/preflight.json`
-2. `make all && make verify && make package`
-3. After adding art to assets/art/incoming/ (names in production/art/ART_MANIFEST.json): rebuild, re-verify, redo the contact-sheet visual review (pagination changes).
+Future text edits follow `docs/WORKFLOW.md` and promote an approved exact patch batch with `tools/revise_manuscript.py`; the next revision is RC486. Artwork, figures and layout use Git commits without an RC bump. Only the orchestrator promotes snapshots and integrates main commits.
 
-## Open items (external inputs)
-- Original illustrations (12 mandatory assets) — needs an authorised image service or supplied files.
-- Physical proof on the user's printer/paper.
-- Author/publisher/copyright metadata if a commercial edition is wanted.
+## Current delivery and verification
 
-## Release correction pass (2026-10-06)
-FIG-15 Fly/Climb rescue exceptions; FIG-14 dimension geometry; independent hash-bound re-review (gate PASS); source_preflight and figure_semantic_review now mandatory; ambiguity triage; balancer/orphan fixes; all pages re-inspected. Open minor: FIG-19 step 3 wording.
+Digital PDF: 439 pages. Cream and white interiors: 436 pages each, identical pagination. Current covers, calibration, print instructions, 13-page specimen and ZIP are under dist/. The calibration ruler stays within its column. PDF timestamps are pinned to the revision date.
 
-## Editorial patch pass (2026-10-06)
-Seven author-authorized clarifications applied as publication-layer patches (P-01..P-07); six figures aligned; independent re-review 0 open findings; gate PASS (15 checks); all 436 pages re-inspected.
+12 regression tests PASS; 18/18 release checks PASS. 8,426 source text blocks in order; 332 tables / 10,341 cells; 19 figures with prior independent reviews also bound to source-rule dependencies. All 436 pages inspected as 24-dpi contact sheets, five pages at 100 dpi, covers, calibration and one 1.03 overscan page; exact hash/scope in the visual ledger. Not full glyph-level proofreading or a complete rules contradiction audit.
+
+Clean repeated builds produced identical cream, white, digital and cover PDF bytes. Packaging verifies unique entries/checksums and includes all instructions, agents, reference metadata and fonts needed by a clean checkout. GitHub checks protect prior snapshots/records against the base commit. Extracted-package rebuild evidence is in production/qa/rebuild-audit.json.
+
+## Remaining inputs and next run
+
+Atmospheric illustrations: BLOCKED (12 planned pieces, no supplied art or authorized paid service). Physical inkjet proof: NOT TESTED. Full manuscript contradiction audit: NOT TESTED beyond existing triage and figure review. Commercial wrap/PDF-X: NOT APPLICABLE. Author/publisher/copyright/ISBN details were not supplied.
+
+Resume requested component work; do not restart initial production. Read the budget ledger and live account controls before paid work; do not reset spending or assume a renewed $100. Run `make clean all`, inspect affected pages/repagination and update visual/figure evidence, then `make verify package`. Push verified work directly to main without force. If the platform blocks main writes, record the actual restriction and preserve work rather than silently making a branch.

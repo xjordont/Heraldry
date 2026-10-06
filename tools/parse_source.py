@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Parse the canonical RC484 manuscript into a lossless semantic block model.
+"""Parse the active versioned manuscript into a lossless semantic block model.
 
 Output: build/blocks.json (document model consumed by the Typst templates) and
 production/inventory/*.json (heading, table, construct and source-span inventories).
@@ -14,9 +14,8 @@ from pathlib import Path
 from markdown_it import MarkdownIt
 
 ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / "source/Heraldry_RC484.md"
-SHA = "2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3"
-PATCHES = ROOT / "editorial/patches.json"
+from manuscript import source_path, check
+SRC = source_path()
 
 
 def slugify(text: str) -> str:
@@ -177,23 +176,12 @@ def parse(text: str):
 
 
 def main():
+    authority = check()
     raw = SRC.read_bytes()
-    sha = hashlib.sha256(raw).hexdigest()
-    if sha != SHA:
-        sys.exit(f"SOURCE HASH MISMATCH {sha}")
+    sha = authority["sha256"]
     text = raw.decode("utf-8")
-    # Editorial patch layer: applied to a separate publication text, never to the source file.
-    patches = json.loads(PATCHES.read_text()) if PATCHES.exists() else {"patches": []}
     pub = text
-    applied = []
-    for p in patches["patches"]:
-        if p.get("status") != "applied":
-            continue
-        n = pub.count(p["find"])
-        if n != p.get("expected_count", 1):
-            sys.exit(f"patch {p['id']} matched {n} times")
-        pub = pub.replace(p["find"], p["replace"])
-        applied.append(p["id"])
+    applied = []  # text patches belong to immutable manuscript revisions
     blocks = parse(pub)
     lines = pub.split("\n")
 

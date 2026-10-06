@@ -1,6 +1,6 @@
 # Launch readiness and visual references
 
-This repository is a prepared production assignment, not an already built publishing application. The parser, layouts, fonts, diagrams, PDF build commands, and publication QA are work Claude performs during the run. No preflight result certifies an unseen book.
+This repository contains the current publication build. Resume production/STATE.md and follow docs/WORKFLOW.md. Preflight checks repository contracts and manuscript history; PDF and visual evidence require separate checks.
 
 ## Inspiration inputs
 
@@ -12,7 +12,7 @@ Whole commercial PDFs are not needed in the repository. If you have permission t
 
 ## Initial run
 
-1. Select only this repository and the current `main` branch in Claude Code cloud. Work on the cloud task branch after launch. A multi-repository project may start above the clones and not load nested agent/settings files; if using that mode, explicitly verify configuration discovery.
+1. Select only this repository and the current `main` branch in Claude Code cloud. Continue on main; another branch requires an explicit owner decision. A multi-repository project may start above the clones and not load nested agent/settings files; if using that mode, explicitly verify configuration discovery.
 2. Select the configured Opus model and medium effort; check actual access and credit/paid-overage settings in the account.
 3. Use the available cloud execution mode, without assuming a Bypass option exists. Keep dependency registries reachable. The repository cannot grant model access, modify billing, or alter the network policy.
 4. Send: `Read MASTER_PROMPT.md and execute it completely.`
@@ -25,7 +25,7 @@ GitHub API/release downloads from unrelated repositories can be blocked by the c
 
 ## Resume
 
-Read `production/STATE.md` and update it at every milestone. On resume, run `python3 tools/preflight.py --report production/preflight.json` without `--baseline`: production code and setup may legitimately change, but the protected source must still match. Use the full baseline again only when auditing an untouched checkout of this launch-kit revision. Never recompute the canonical source hash to disguise a changed manuscript.
+Read `production/STATE.md` and update it at every milestone. On resume, run `python3 tools/preflight.py --report production/preflight.json` without `--baseline`: production code and setup may legitimately change, but the protected source must still match. The baseline option checks the archived RC484 original. Never alter a snapshot hash to disguise a manuscript edit; promote an approved batch to the next RC revision.
 
 The preflight does not enforce the paid-service budget. The account's controls enforce billing; configuration and the production ledger guide the agent.
 
@@ -43,4 +43,4 @@ Official capability references checked 2026-10-06:
 - https://code.claude.com/docs/en/claude-code-on-the-web
 - https://code.claude.com/docs/en/cloud-environments
 
-Read `docs/INKJET_PRINT.md`, `docs/VISUAL_QA.md` and `config/design_tokens.json` alongside the design specification. Commit and push task-branch checkpoints at each milestone. Render/review contact sheets in resumable batches to control disk/memory; preserve exact inspected-page coverage. Neither automatic preflight nor this launch checklist claims the future book already exists.
+Read `docs/INKJET_PRINT.md`, `docs/VISUAL_QA.md` and `config/design_tokens.json` alongside the design specification. Commit and push verified main checkpoints at each milestone. Render/review contact sheets in resumable batches to control disk/memory; preserve exact inspected-page coverage. Neither automatic preflight nor this launch checklist certifies the current PDFs.

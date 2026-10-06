@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "current": 485,
+  "revisions": [
+    {
+      "number": 484,
+      "path": "source/Heraldry_RC484.md",
+      "sha256": "2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3",
+      "bytes": 1450722,
+      "reason": "Original author-supplied manuscript"
+    },
+    {
+      "number": 485,
+      "path": "source/Heraldry_RC485.md",
+      "sha256": "fc6caeeedf1e8e2cce80ed469ef74fb3c196048563c6bfec65031f2b03c4bbbe",
+      "bytes": 1451105,
+      "parent_sha256": "2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3",
+      "created_at": "2026-10-06T19:09:17.536570+00:00",
+      "reason": "Promote the seven previously approved publication-layer clarifications into the interactive RC485 manuscript",
+      "authorization": "Owner instructions on 2026-10-06: version the recent RC484 patch as RC485; original seven-patch approval retained in archived batch",
+      "patch_ids": [
+        "P-01",
+        "P-02",
+        "P-03",
+        "P-04",
+        "P-05",
+        "P-06",
+        "P-07"
+      ],
+      "patch_file": "editorial/history/RC485.json",
+      "patch_sha256": "867bdc9a96592305905102b2bba247e9d32a1c7a9d29416f3cd3334b2bbb079f"
+    }
+  ]
+}

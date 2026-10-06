@@ -79,3 +79,7 @@ Canonical text is unchanged in every case. Section 1.6 lines: 431, 433, 435
 * A-17 FIG-19: terrain positions, road width and which edges are deployment edges not specified
 
 Final-content status: no unresolved direct contradiction was found; the unresolved items are source gaps (unstated values or undefined references). A full semantic audit of the whole manuscript remains NOT TESTED.
+
+## RC485 manuscript promotion (2026-10-06)
+
+P-01–P-07 were promoted without further rules edits into source/Heraldry_RC485.md. The only additional manuscript change is the RC485 version marker. Exact evidence is retained in editorial/history/RC485.json and the hash/parent chain in source/versions.json. The prior publication patch layer is disabled. All future approved manuscript text-patch batches advance RC by one; art/figure/layout changes use normal main commits.

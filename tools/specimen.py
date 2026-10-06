@@ -5,6 +5,8 @@ import json, sys
 from pathlib import Path
 import pymupdf
 
+from manuscript import version
+from content_anchors import resolve
 ROOT = Path(__file__).resolve().parents[1]
 
 # (purpose, search text) — first page containing the text after the contents pages
@@ -12,9 +14,9 @@ TARGETS = [
     ("Chapter opening", "2.1 Core Terms"),
     ("Two-column rules + worked example", "Example: An effect pushes a Skeleton"),
     ("Facing page: sustained procedure", "3.1 Overview of a Round"),
-    ("Short random-result table", "TBL:T020"),
+    ("Short random-result table", "ANCHOR:specimen-short-table"),
     ("Numeric equipment table (multi-page, repeated header)", "7.8 Melee Weapons"),
-    ("Widest source table as labelled entries (T082, 12 columns)", "TBL:T082"),
+    ("Widest source table as labelled entries (T082, 12 columns)", "ANCHOR:specimen-wide-table"),
     ("Longest prose cells / long-description table", "Specialist Hireling Roster"),
     ("Monster profiles", "Giant Tarantula [Skirmisher]"),
     ("Scenario with canonical scaling fields", "Scenario 2: The Whispering Grove"),
@@ -29,11 +31,12 @@ def main():
     doc = pymupdf.open(src)
     start = 6
     picks = []
+    anchors = resolve()
     audit = json.loads((ROOT / "production/qa/table-audit.json").read_text())
     tpages = {r["id"]: r["pdf_pages"][0] - 1 for r in audit["rows"] if r["pdf_pages"]}
     for purpose, needle in TARGETS:
-        if needle.startswith("TBL:"):
-            picks.append((purpose, tpages.get(needle[4:])))
+        if needle.startswith("ANCHOR:"):
+            picks.append((purpose, tpages.get(anchors[needle[7:]])))
             continue
         for i in range(start, len(doc)):
             if doc[i].search_for(needle):
@@ -41,6 +44,9 @@ def main():
                 break
         else:
             picks.append((purpose, None))
+    missing = [purpose for purpose, page in picks if page is None]
+    if missing:
+        raise SystemExit(f"Specimen targets missing: {missing}")
     pages = []
     for p, i in picks:
         if i is not None and i not in pages:
@@ -53,9 +59,9 @@ def main():
     # stamp page 1 as production material
     pg = out[0]
     pg.insert_textbox(pymupdf.Rect(72, 640, 540, 720),
-                      "PRODUCTION SPECIMEN — representative pages extracted from the RC484 build for design review. "
+                      f"PRODUCTION SPECIMEN — representative pages extracted from the {version()} build for design review. "
                       "Not the finished book.", fontsize=10, fontname="helv", align=1)
-    dst = ROOT / "dist/specimen/Heraldry_RC484_specimen.pdf"
+    dst = ROOT / f"dist/specimen/Heraldry_{version()}_specimen.pdf"
     dst.parent.mkdir(parents=True, exist_ok=True)
     out.save(dst, garbage=3, deflate=True)
     from pypdf import PdfReader

@@ -1,168 +1,17 @@
-# Set up the Heraldry publication project in Claude Code cloud
+# Claude Code setup and continuation
 
-Prepared 5 October 2026 for the supplied RC484 manuscript. This kit contains a production prompt and starting configuration, not an already generated rulebook PDF.
+This is an existing, built publication project. Select `xjordont/Heraldry` and `main` in Claude Code cloud; read `CLAUDE.md`, `docs/WORKFLOW.md`, `production/STATE.md` and the requested change. Do not recreate the initial kit or start a task branch. The old Claude build branch is a historical checkpoint.
 
-## What this can realistically accomplish
+The active manuscript comes from `source/versions.json`. Every approved manuscript text-patch batch creates the next RC snapshot using `tools/revise_manuscript.py`. Earlier snapshots are immutable; artwork, figures and layout do not increment RC. `MASTER_PROMPT.md` supplies the standing production/design contract.
 
-Claude Code cloud can build the publishing software, make precise vector diagrams, typeset the whole manuscript, create navigation, and run repeatable PDF checks. Native subagents run in cloud sessions and support separate model and effort settings. Opus 5.5 and Sonnet 5.5 are documented current models; the kit pins their full model IDs instead of relying on moving aliases.
+Start with `python3 tools/preflight.py --baseline --report production/preflight.json` and `make test`. Install pinned dependencies if needed, then use `make clean all verify package`. Read `BUILD.md` for outputs and the workflow for exact patch promotion. Do not claim completion until current evidence and the visual review support it.
 
-The difficult parts are content fidelity, the volume of pagination exceptions, illustrations, and printer-specific acceptance. No prompt can guarantee a flawless illustrated book within $100, keep a session alive indefinitely, or certify an unspecified printer's files. The master prompt requires implementation through delivery while preventing false claims about these limitations.
+Verify the live account's model availability, remaining Claude credit, expiry and paid-overage controls. The configured $100 ceiling is the project boundary; do not assume each new iteration renews it. `.claude/settings.json` selects configured Opus/medium, native agent definitions select configured Sonnet for substantive work, and at most two workers run concurrently. Report any runtime model substitution. Do not launch separately billed nested model workers.
 
-Your source is approximately **241,434 words with 332 pipe-table blocks and 833 headings**. The widest observed table has 12 columns. This is a substantial reference book, not a short skirmish pamphlet. The final page count must come from a real layout. The kit preserves the supplied manuscript exactly and requires lossless data checks for all tables.
+No external paid image calls are authorized by default. Supply original approved assets in `assets/art/incoming/` using the IDs in `production/art/ART_MANIFEST.json`, or explicitly authorize/configure a service and budget. Credentials alone do not authorize spend. Atmospheric art remains BLOCKED until supplied; continue independent work and preserve the art-light edition.
 
-## Recommended approach
+Optional visual evidence is limited to the selected reference pages in `references/reference_manifest.json`; written specifications are sufficient to continue. Keep commercial PDFs separate from publication assets and releases. Read `references/README.md` for optional local extraction.
 
-Use one autonomous assignment with internal milestones: preserve and inventory the source, prove the design on difficult real pages, build the full book, integrate diagrams/art, stabilize navigation, then verify and package. There is no request for approval between those stages. Building a complete reading PDF early protects against spending all the credit on attractive first pages while the remaining chapters are unconverted.
+The printing target is borderless portrait US Letter inkjet: cream and white variants with identical pagination, finished cover sheets, calibration page and instructions. File checks cannot prove the user's actual printer, driver, paper or binding. Physical proof remains NOT TESTED until actual printed sheets are inspected. Commercial cover wraps and PDF/X are additional scope.
 
-Use Claude for **all instructional diagrams**: it can generate editable SVGs precisely from geometry and rules. Use an image generator for **atmospheric ink illustration**. Temporary artwork reservations are useful during typesetting; visible placeholder boxes do not belong in a finished reader edition. The prompt has three explicit routes: configured image generation, supplied images, or an honestly labelled art-light edition with a complete art manifest.
-
-For your present situation, the economical route is to generate one style anchor and the main illustrations in ChatGPT Plus, save them into this repository, then let Claude integrate them. That involves a manual asset transfer. For a genuinely unattended illustrated build, configure a separately budgeted image API or compatible image-generation MCP before launch. Claude cloud credit does not pay for another provider.
-
-## 1. Put the kit in a private repository
-
-Unzip the package. Upload **the contents of `Heraldry_Claude_Publication_Kit/`** to the root of a new private GitHub repository. Keep `CLAUDE.md`, `MASTER_PROMPT.md`, `.claude/`, `config/`, `docs/`, and `source/` at that root. A browser file picker may hide `.claude`; confirm its agent files actually appear in the repository. The unchanged source is already included as `source/Heraldry_RC484.md`, so no transcription or filename editing is needed.
-
-If using a local checkout, the ordinary setup is:
-
-```bash
-git init
-git add .
-git commit -m "Add Heraldry publication source and production brief"
-```
-
-Create the private remote using your normal GitHub workflow and push. A remote is convenient for cloud onboarding and durable work. Current Claude Code also documents bundling a local git repository into a cloud task; browser/GitHub onboarding is simpler when working from an iPhone.
-
-The bundled manuscript retains its original content and SHA-256. The prompt instructs Claude to make publication edits in a separate patch/text layer rather than overwrite your finalized rules.
-
-## 2. Configure the cloud environment once
-
-Open [Claude Code cloud](https://claude.ai/code), connect the private repository, and select its branch. Verify that your $100 promotional credit is claimed, applies to this cloud session, and has the balance/expiry shown in your own account. This kit does not verify your entitlement, remaining credit, or promotion terms.
-
-Configure the environment to allow the build dependencies and any selected external service. Depending on your environment, this may require GitHub/release downloads, Python package sources, licensed font sources, and the chosen image API domain. A prompt cannot enable network access that the environment denies. Claude is instructed to discover installed tools first and install only what is needed.
-
-Use the execution permission mode available in your cloud session for in-repository builds, dependency setup, and asset processing. Do not assume a Bypass option exists or that a repository setting can override mandatory policy blocks. The kit does not commit blanket permission bypasses or change your account policies. Do not start in Plan mode, which is unsuitable for immediate implementation.
-
-Keep account-level paid overage/automatic recharge disabled, or set its cap to your intended authorized amount, before launching if you want a strict external spending boundary. The prompt targets $80 and holds $20 for repairs, but **instructions in a prompt are not a hard billing control**. The native subagents are preferred over separately billed API/CLI workers.
-
-Cloud work may continue after you close your device. It can still stop because of usage limits, runtime expiry, inaccessible dependencies, or a completed agent turn. On-disk state, commits, and a resumable build protect progress; they cannot promise perpetual execution.
-
-## 3. Select models and effort
-
-Select **Opus 5.5, medium effort** for the primary session. The included `.claude/settings.json` requests the full Opus ID and medium effort. Confirm the cloud session actually applied them; configuration cannot grant access to a model your account lacks.
-
-Where supported, explicit commands are:
-
-```text
-/model claude-opus-5-5
-/effort medium
-```
-
-Send these individually if needed, before the launch instruction. Current cloud documentation supports argument-form model/effort commands. Do not assume a terminal picker is available in the browser.
-
-| Task | Model | Effort |
-|---|---|---|
-| Main orchestration | Opus 5.5 | medium |
-| Architecture, difficult source ambiguity, final acceptance | Opus 5.5 | high for a bounded review |
-| Build/parser/index correctness | Sonnet 5.5 | high initially, medium for routine changes |
-| Layout production | Sonnet 5.5 | medium |
-| Diagram semantics and independent QA | Sonnet 5.5 | high |
-| Simple inventory/report formatting | Haiku 4.5 | supported default |
-
-Both 5.5 models support low, medium, high, xhigh, and max in current Claude Code documentation. Its default is medium for both, while the Sonnet API documentation lists a different API default; the kit sets task effort explicitly. `xhigh` and `max` are not economical blanket choices for this assignment. Haiku 4.5 does not receive an unsupported effort field.
-
-The `.claude/agents/` files are ready before session startup, so cloud discovery is more reliable than creating them midway through the task. The master prompt limits concurrency to two and requires disjoint file ownership. It keeps expensive Opus focused on integration and consequential decisions.
-
-## 4. Decide the artwork route
-
-### Use ChatGPT Plus and transfer files
-
-ChatGPT Plus includes image generation, but **API usage is separately billed**. I found no documented supported bridge by which Claude Code can spend your ChatGPT Plus image allowance as an image-generation API. Do not design the project around a speculative connector or automated signed-in ChatGPT browser session.
-
-Use the style prompt in `docs/ART_DIRECTION.md` in ChatGPT. Generate the style anchor first; use it as an image reference for subsequent requests. Ask Claude's source-aware art plan for each asset's subject and placement size, or supply a small initial suite. Save originals into `assets/art/incoming/`, with clear stable filenames. Commit/push assets before launch, or send a follow-up directing the existing session to integrate them after they are available. Keep the original generated files; repeated screenshots and JPEG recompression reduce print quality.
-
-A later art-integration pass is straightforward because image locations, dimensions, and crops live in a manifest rather than scattered hard-coded page edits. Insertion can change pagination, so it must trigger TOC/index/link and final-PDF rechecks.
-
-### Use a configured image API/MCP for unattended generation
-
-Configure the service in the cloud environment's secret settings. For an OpenAI API integration, use separately funded API credentials and current official image-generation documentation. Do not commit credentials. Set an explicit amount in `config/production.json` under `image_generation.external_spend_limit_usd`; default is **0**, so finding an API key does not authorize paid calls. For authorized paid generation, also set `paid_calls_authorized` to `true`; both the explicit limit and authorization must be present. An already configured, documented no-cost quota can be recorded separately.
-
-The user, not this kit, must authorize and configure that external spend before launch. The master prompt can implement the adapter and use the service once these conditions exist. It does not contain invented endpoints or a promised price per image. Text and captions are typeset separately; precision diagrams stay vector-based.
-
-For a single launch that reaches the requested **fully illustrated** result, choose this route or provide the complete image suite up front. Without either, Claude should finish the art-light edition and report the illustrated target as incomplete.
-
-## 5. Set the print target if known
-
-Default design: borderless US Letter portrait for home inkjet printing, almost-white warm cream background, black/grayscale content, safe binding-aware text margins, and finished Letter front/back cover sheets. A paper-white companion retains the same pagination. Read `docs/INKJET_PRINT.md`; this replaces the earlier non-bleed/commercial-printer default.
-
-If you know the inkjet model, driver and stock, supply its current borderless media instructions in `config/printer/`. The run can complete the specified file without this. Print the small calibration/specimen batch before the whole book; expansion and duplex support depend on the device/media. Borderless does not remove safe text margins.
-
-Claude delivers checked borderless cream/white PDFs, complete cover sheets, an inkjet calibration PDF and print instructions. Physical proof remains NOT TESTED until inspected. A commercial wrap, spine template and PDF/X are not required for the primary target; pursue them only if a separate commercial edition is requested with its actual profile.
-
-## 6. Launch
-
-Paste the following short instruction into the configured Opus cloud session:
-
-```text
-Read MASTER_PROMPT.md and execute it completely as the production director.
-Use source/Heraldry_RC484.md as the protected canonical manuscript.
-Use the included production configuration and native Sonnet subagents.
-Proceed autonomously through implementation, rendering, QA, repairs, and packaging.
-Do not stop after planning or the specimen. Preserve the $20 repair reserve.
-Use only configured, budget-authorized artwork services or supplied assets.
-Report any external dependency honestly and complete all independent production work.
-```
-
-Do not paste the massive manuscript into the conversation. Claude reads it in targeted slices from the repository. `MASTER_PROMPT.md` is the complete reusable prompt if you prefer to paste it directly, but storing it in the repo makes it easier to recover after compaction.
-
-If the session is interrupted, send:
-
-```text
-Resume from production/STATE.md and the latest committed checkpoint.
-Read MASTER_PROMPT.md, retain its source-integrity and budget constraints,
-and complete the remaining acceptance gates without repeating finished work.
-```
-
-## 7. What to expect at delivery
-
-Look for a full reading PDF, print interior, finished Letter cover sheets, editable sources, assets, actual TOC/index page maps, a complete table reconciliation report, reviewed-page ledger, preflight report, and ZIP. A specimen is not the finished publication. The final report should distinguish content, layout, figures, illustration, inkjet file checks, physical proof, and any separately requested commercial status.
-
-The $100 may support a strong production pipeline and substantial finished output if scripts do bulk conversion and context stays controlled. It is **not a reliable fixed-price estimate** for exhaustive visual polish of a 241,000-word illustrated book. Image generation is additional unless your existing service covers it. The prompt is designed to spend on reusable components and defect repair, while keeping a complete checkpoint if the credit runs out.
-
-## Research and why the prompt is structured this way
-
-All links below were checked on 5 October 2026. They support the workflow; they do not establish that this particular book has already passed production checks.
-
-- [Claude Code cloud documentation](https://code.claude.com/docs/en/claude-code-on-the-web): cloud environments, repository access, continuing off-device, supported commands, and native subagents.
-- [Custom subagents](https://code.claude.com/docs/en/sub-agents): project-scoped agent files, model selection, and effort frontmatter.
-- [Model configuration](https://code.claude.com/docs/en/model-config): model IDs, supported effort settings, cloud controls, and per-model behaviour.
-- [Claude Sonnet 5.5 specifications](https://platform.claude.com/docs/en/models/sonnet-5-5/overview) and [Opus 5.5 announcement](https://www.anthropic.com/claude-opus-5-5): current model availability and capabilities.
-- [Configure permissions](https://code.claude.com/docs/en/permissions): execution modes and the limits of prompt-level autonomy.
-- [Ashen RPG production instructions](https://github.com/HallowXIII/ashen-rules/blob/master/CLAUDE.md): a directly comparable public tabletop rulebook with a Typst assembly layer, chapter files, central styles, pinned toolchain, and Claude-specific build instructions. This is evidence that the architecture is used in a real project, not proof of its quality or permission to copy its assets.
-- [Typst TTRPG templates](https://github.com/Collapsologist/typst-ttrpg-templates): tabletop-oriented reusable typesetting patterns. Inspect licences before reusing code; do not copy another game's identity or art.
-- [Typst table documentation](https://typst.app/docs/reference/model/table/) and [PDF export documentation](https://typst.app/docs/reference/pdf/): repeating headers and export standards. The kit adds its own content reconciliation and design requirements rather than assuming a generic converter handles the tables well.
-- [IngramSpark File Creation Guide](https://www.ingramspark.com/hubfs/downloads/file-creation-guide.pdf), edition 24 August 2026: an example of real printer-specific requirements for embedded fonts, resolution, bleed, PDF compliance, and cover preparation. This is a reference, not a printer selection for you.
-- [ChatGPT Plus documentation](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus) and [OpenAI image-generation API](https://developers.openai.com/api/docs/guides/image-generation): image access and separately billed API integration.
-
-## Kit review
-
-The prompt was reviewed a second time for: source protection; complete table coverage; model/effort realism; context efficiency; bounded credit use; art availability and style consistency; accurate diagram semantics; TOC/index convergence; original typography and covers; printer-specific requirements; no routine approval pauses; recovery; and honest final statuses. The findings and changes are recorded in `docs/PROMPT_REVIEW.md`.
-
-## Version 2: reference-informed design
-
-This kit includes `docs/DESIGN_SPEC.md` and `docs/REFERENCE_ANALYSIS.md`, distilled from representative rendered pages of the supplied books. MASTER_PROMPT.md now requires the design specification before the specimen build. The canonical manuscript is unchanged.
-
-Default: upload this kit and start the build from its written specification. Optional: provide the 14 primary visual pages across six books for calibration. `references/README.md` explains hash-verified extraction, access, and exclusions. The complete commercial PDFs and their images are not bundled. Do not make their availability a build dependency.
-
-Read `MASTER_PROMPT.md` and execute it completely remains the launch instruction.
-
-## Final launch audit
-
-Read `docs/LAUNCH_CHECKLIST.md`. Before the first project edit, run `python3 tools/preflight.py --baseline --report production/preflight.json`. It verifies protected source bytes, shipped checksums, required files, config/agent contracts, and reference page selections. It reports installed runtime capabilities without exposing credentials or installing packages. On resume after legitimate project changes, omit `--baseline` while retaining the immutable source check.
-
-Current cloud documentation notes that downloads of release assets from unattached GitHub repositories can be blocked. Use a documented registry/system-package route where available and lock versions after successful provisioning; do not let repeated blocked release downloads consume the run.
-
-## Light borderless design revision, 2026-10-06
-
-The supplied references were re-inspected for clean dark-fantasy composition. DESIGN_SPEC.md, VISUAL_QA.md and design_tokens.json now specify near-white cream, authored line/ornament vocabulary, typography/spacing defaults, table craft and final-size artwork checks. The primary output is borderless portrait Letter on every page. No additional PDF upload, image API, printer template, or commercial certification is needed to begin; unavailable atmospheric art uses the honest art-light route.
-
-Use a cloud session attached only to Heraldry so repository agents/settings load normally. In multi-repository project sessions, explicitly verify project configuration discovery rather than assume nested settings were loaded. Cloud dependencies are provisioned during capability discovery; setup scripts configured in the environment UI are optional. The repo is the execution authority; local files or installed tools do not automatically carry over.
+Cloud settings and network policies apply independently of repository instructions. If the platform blocks main writes, model access or a dependency source, record the actual restriction and preserve work; do not override it or invent a successful push. Prefer a permitted package registry for blocked dependency downloads. Never expose credentials.

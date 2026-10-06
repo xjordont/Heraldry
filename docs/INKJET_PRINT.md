@@ -16,7 +16,7 @@ The primary physical output is home inkjet printing in borderless mode on US Let
 
 Borderless drivers may enlarge and clip the file. Support varies by model, media, paper source, and driver. Do not assume an overscan amount or that automatic duplex is compatible. Use the actual device's current manual when its model is supplied.
 
-Produce `dist/Heraldry_RC484_inkjet-calibration.pdf`: one diagnostic Letter page with a 1-inch square/ruler, inset distance markers at 0.125/0.25/0.375/0.5 inch, 9/9.5/10.5-pt type, 0.6/0.75/1-pt rules, light table bands, a cream/white comparison, and representative hatch detail. These diagnostic marks never enter the reader edition. Include relevant dense specimen pages for a small first print batch. This calibration file is excluded from book-wide essential-edge checks because its diagnostic edge marks intentionally violate those margins.
+Produce `dist/Heraldry_RC###_inkjet-calibration.pdf`: one diagnostic Letter page with a 1-inch square/ruler, inset distance markers at 0.125/0.25/0.375/0.5 inch, 9/9.5/10.5-pt type, 0.6/0.75/1-pt rules, light table bands, a cream/white comparison, and representative hatch detail. These diagnostic marks never enter the reader edition. Include relevant dense specimen pages for a small first print batch. This calibration file is excluded from book-wide essential-edge checks because its diagnostic edge marks intentionally violate those margins.
 
 In `dist/PRINT_INSTRUCTIONS.md`, instruct the user to select Letter portrait, one PDF page per sheet, borderless on, and actual size/100% at the application level (no Fit/Shrink or additional scale). Let the supported driver control expansion; start at its lowest amount that yields acceptable edge coverage and adjust from the physical proof. A driver may enlarge even when the application says 100%. Select a supported media/source and the quality appropriate to the stock; never claim one driver setting fits every model. Test duplex/flip direction on a small batch if double-sided printing is wanted, using manual duplex if necessary.
 
@@ -29,7 +29,7 @@ Report `inkjet_file_preflight` independently from `physical_inkjet_proof`. The f
 After installing and locking PyMuPDF, run:
 
 ```sh
-python3 tools/verify_inkjet_pdf.py dist/Heraldry_RC484_inkjet-borderless.pdf --report production/inkjet-preflight.json
+python3 tools/verify_inkjet_pdf.py dist/Heraldry_RC###_inkjet-borderless.pdf --report production/inkjet-preflight.json
 ```
 
 The checker covers portrait geometry/boxes, referenced font embedding, minimum type size, text edge safety, and simulated text overscan. Its PASS does not certify source fidelity, background paint, vector-only figures, raster resolution, artwork, all-page visual quality, print marks, or the physical printer. Those require the production evidence and visual gates in MASTER_PROMPT.md. No PDF of the book has been produced by this preparation task.
@@ -38,3 +38,5 @@ Official references checked 2026-10-06:
 
 - https://support2.epson.net/manuals/english/lfp/styluspro38803885/ug/html/print_4.htm — example manufacturer documentation explaining enlargement/cropping and borderless modes; not identification of the user's printer or a universal setting.
 - https://code.claude.com/docs/en/cloud-environments — runtime, network and checkpoint considerations for producing the files.
+
+Output names use the active RC number from source/versions.json; replace RC### in command examples with that number.

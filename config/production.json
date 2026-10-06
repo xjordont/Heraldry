@@ -1,6 +1,6 @@
 {
-  "source": "source/Heraldry_RC484.md",
-  "source_authority": "RC484 supplied manuscript; no historical-rule imports",
+  "source": "source/Heraldry_RC485.md",
+  "source_authority": "Active immutable snapshot in source/versions.json; prior snapshots retained",
   "models": {
     "orchestrator": "claude-opus-5-5",
     "orchestrator_effort": "medium",
@@ -53,7 +53,7 @@
   },
   "verified_publication_metadata": {
     "title": "HERALDRY SKIRMISH: THE DYING LANDS",
-    "version": "Release Candidate 484 (RC484)",
+    "version": "Release Candidate 485 (RC485)",
     "author_credit": null,
     "publisher": null,
     "isbn": null,
@@ -71,5 +71,10 @@
     "overscan_test_scale": 1.03,
     "physical_proof_status": "NOT TESTED",
     "duplex": "verify device/media; manual if necessary"
+  },
+  "workflow": {
+    "working_branch": "main",
+    "new_branch_policy": "explicit owner decision with recorded reason",
+    "manuscript_version_policy": "one increment per approved text-patch batch; immutable prior snapshots"
   }
 }

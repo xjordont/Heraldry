@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "method": "Extract release ZIP to a new directory; install/use locked dependencies; make clean all; make test verify; compare all six output PDF SHA256 hashes against the reviewed delivery",
+  "tests_passed": 12,
+  "mandatory_checks_passed": 18,
+  "pdfs_identical": {
+    "dist/Heraldry_RC485_covers-front-back-white.pdf": "c33464706f02c1e4551e9c232473c6d645b655ace6aa3cac3ed8aecff0bfba49",
+    "dist/Heraldry_RC485_covers-front-back.pdf": "330fa091b91fd77c0805cf0d1cae16ada64ef51a8d1473a103046d79066f8b36",
+    "dist/Heraldry_RC485_digital.pdf": "8600b7129c95bc500eed6871c1e716bfd4a2676d7d08d72bc43d1f5e095d44e2",
+    "dist/Heraldry_RC485_inkjet-borderless-white.pdf": "ae60016d92aa44f24b4e1d3bdc19ce5fb6bec3e98f3f7b8df9ecb91c9bccaf6e",
+    "dist/Heraldry_RC485_inkjet-borderless.pdf": "45019d9804fc3dc57eefa21461e7f88967f22bb588908f0dece621e6ec4b9672",
+    "dist/Heraldry_RC485_inkjet-calibration.pdf": "f23b928a4196b637fcab68a1a39e8e37ef4a6695041ff783fbf0a2519b568022"
+  },
+  "note": "The final ZIP is repackaged to include this evidence and workflow documentation. These documentation/report additions do not change publishing inputs or PDF bytes."
+}
