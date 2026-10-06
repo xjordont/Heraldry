@@ -3,8 +3,24 @@
  "reviewer": "publication-auditor (FIG-01..19 independent re-review against patched text P-01..P-07; FIG-20..57 scenario-map semantic review against RC485)",
  "reviewed_at": "2026-10-06T21:36:13Z",
  "figures_total": 57,
- "figures_pass": 51,
- "stale": [],
+ "figures_pass": 42,
+ "stale": [
+  "FIG-20",
+  "FIG-23",
+  "FIG-24",
+  "FIG-25",
+  "FIG-26",
+  "FIG-28",
+  "FIG-29",
+  "FIG-30",
+  "FIG-33",
+  "FIG-37",
+  "FIG-38",
+  "FIG-40",
+  "FIG-41",
+  "FIG-49",
+  "FIG-50"
+ ],
  "missing_review": [],
  "open_majors": {
   "FIG-20": [
@@ -456,7 +472,7 @@
   {
    "id": "FIG-20",
    "current": {
-    "svg_sha256": "f72486e3e21d592778afde33081ec7901c94a1e79d2d834b2af7955c165d7c12",
+    "svg_sha256": "818751502d7ebdf6ec09d94e36351df925ca2408701399bee70ff3c7aa6e8ea5",
     "caption_sha256": "9dc35d896b770167e008b42927a746506ad09208bcaf23c0c3af192eaf86444c",
     "rules_sha256": "199117c3cc8e9e8d8d4a38e63e61e9eefe030b88095e749c927aa06b6c7bf928"
    },
@@ -466,8 +482,10 @@
     "rules_sha256": "199117c3cc8e9e8d8d4a38e63e61e9eefe030b88095e749c927aa06b6c7bf928"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "FAIL",
    "open_majors": [
     {
@@ -481,6 +499,7 @@
     "Letters A/B beside exit arrows (FIG-29) and Party A/B zone letters are not explained; in scenarios with role assignment (FIG-32, 37, 38, 44, 50, 52, 54, 55) Party A/B are scenario roles assigned by die roll and are not tied to the drawn zone."
    ],
    "fail_reasons": [
+    "STALE review",
     "verdict FAIL",
     "1 unresolved critical/major finding(s)"
    ],
@@ -531,7 +550,7 @@
   {
    "id": "FIG-23",
    "current": {
-    "svg_sha256": "d3633c63a35676df5c25c291467aa227902e93fe96c74f77a8ea93fa41f02c95",
+    "svg_sha256": "04dca41fb3971a2b6c19d18e66f6d3d54454e0dda9d08c2a622661e0ebbdf91d",
     "caption_sha256": "92e7d1713a3f180e25465ed3abeb745949e44f24f70d456c375a85f69726808f",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
@@ -541,8 +560,10 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "FAIL",
    "open_majors": [
     {
@@ -555,6 +576,7 @@
     "Toll Captain is drawn as a solid CONSTRAINED marker on the same side of the Barricade as Wagon 2, although 'behind the central Barricade' is a logged ambiguity (which side is behind is not stated)."
    ],
    "fail_reasons": [
+    "STALE review",
     "verdict FAIL",
     "1 unresolved critical/major finding(s)"
    ],
@@ -563,7 +585,7 @@
   {
    "id": "FIG-24",
    "current": {
-    "svg_sha256": "974f476d76cba5229f14f79eebb3fd8b51d2c90165e0e414f0a84db7e9a377cf",
+    "svg_sha256": "1e5a92c3e3f807dbde13e510d734c687f05463f2ed3f15660bea35143fc232ff",
     "caption_sha256": "7f788cdff71d00048b3b2a4afbccd26c6e55426e958dd272fa3d3f2ac90c3477",
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
@@ -573,20 +595,24 @@
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Label 'Tarantula·R' sits on top of the Tree piece (tr1) and hides its Cover pattern; the 'Ravine 6-8\"' label is crossed by the Tarantula leader line."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-25",
    "current": {
-    "svg_sha256": "4fc8f2380f1baeb4fc8c879d44ae88556b9f61d37482edbb558049f6c54fda81",
+    "svg_sha256": "45e6f808f17d738bb9004e98ba853ab14a5200f21c131c6238e67b2ee4b9be9b",
     "caption_sha256": "00d350130e168db2019fbde2ea1621de9d9425318ed11526215d133cc56107e6",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
@@ -596,8 +622,10 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "FAIL",
    "open_majors": [
     {
@@ -608,6 +636,7 @@
    ],
    "open_minors": [],
    "fail_reasons": [
+    "STALE review",
     "verdict FAIL",
     "1 unresolved critical/major finding(s)"
    ],
@@ -616,7 +645,7 @@
   {
    "id": "FIG-26",
    "current": {
-    "svg_sha256": "d2e569f64145d34de5fab3af7c6b866bd06d689d8f366852b73cdc4794ce0e49",
+    "svg_sha256": "60da29832ce79ddd3fe0db4b57e77909ec07a65bf130731f863f3e7d249c743b",
     "caption_sha256": "b9da7ca6d9e2c9700bdbd59991816437479d26904ff13049a4d5a6a0cb98dcf5",
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
@@ -626,15 +655,19 @@
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Mother Tree (3-4\" Blocking, MANDATORY centre) is unlabelled, and the 'Totem' label overlaps its dark disk; the three-chest rotation (evenly spaced, rotation open) is drawn solid."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-27",
@@ -662,7 +695,7 @@
   {
    "id": "FIG-28",
    "current": {
-    "svg_sha256": "449a4a0a3a69326363e5ba78465dc0aa851f79491df1a8a2524eb79dd8e23765",
+    "svg_sha256": "705e7f9e3341a0b882f03949cd99f689d27f5373f4221697d5773691f0757c8e",
     "caption_sha256": "dc70e79277bd2b2d7a58694954be5ebdd3044feef6ad1727c30371ef2a85b993",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
@@ -672,21 +705,25 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Group 2 arrival arrows (R3) are drawn solid at a fixed 8\" along both long edges; the source gives only 'a random edge that is neither party's deployment edge' (no point on the edge).",
     "'Gateway 4-6\"' label sits below the Courtyard border away from the gate on the east edge and 'G1·R' is placed 4\" from the colonnade it is meant to be 'amongst'."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-29",
    "current": {
-    "svg_sha256": "a4adb021ca6ee36f7c366a30a417e0939ab5d7743779899e0595ec4424cab5cd",
+    "svg_sha256": "240672a0e7cca15bf6686940a9cd819bef7aa07f60ebe415045e5e44b81c01f5",
     "caption_sha256": "9354f135c61fa7e9b5f065b9df4a4d4194e3059160a0be22a5ee60e3b7f8d0b2",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
@@ -696,8 +733,10 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "FAIL",
    "open_majors": [
     {
@@ -708,6 +747,7 @@
    ],
    "open_minors": [],
    "fail_reasons": [
+    "STALE review",
     "verdict FAIL",
     "1 unresolved critical/major finding(s)"
    ],
@@ -716,7 +756,7 @@
   {
    "id": "FIG-30",
    "current": {
-    "svg_sha256": "21181f36680052555a72d81db00062715d98299a4858c1c2fd19401bdc5f5a1c",
+    "svg_sha256": "ed1edf48c570f3883e18b19cc771acc41483f6a9e027bf408d4ea4fa8ef87cef",
     "caption_sha256": "d7547996ec6dea4ea0d50cbd616fc38a5b992ccb82b6b1a7b7e4646daec4b205",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
@@ -726,15 +766,19 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Hall orientation (8\"x4\", long axis E-W) and the chamber layout around it are not fixed by the source but the Hall is drawn solid."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-31",
@@ -783,7 +827,7 @@
   {
    "id": "FIG-33",
    "current": {
-    "svg_sha256": "1ccfc273400fd6c77d8492d468880b0c6341a9de1fd63b7fcc5bed7525a59cf6",
+    "svg_sha256": "3a57ca69deef65a284680e80cbf737ba2d22d8e00e3001f64d4ac63a2cf37a11",
     "caption_sha256": "e0ad9186cb04e334690efbc7333b9b73bd86a604051e878cc8f7cb4a6d9531e9",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
@@ -793,15 +837,19 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "The Cave wall (cw1) is almost completely hidden under the 'Fungi' and 'Cave wall' label halos; the 'Cave wall' label points at nothing visible."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-34",
@@ -874,7 +922,7 @@
   {
    "id": "FIG-37",
    "current": {
-    "svg_sha256": "39a0adda60293c81d9d186a266ec21ac9accec75adde860399f82d6790c5eda5",
+    "svg_sha256": "6654517ae8f509d4261663dd149d85fc9978c4481561b239cac6faec0da51d83",
     "caption_sha256": "194a1eed48afbeb8773f5d30d82364df19c17373f50dc8ec57df355e1e4b0e89",
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
@@ -884,8 +932,10 @@
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "FAIL",
    "open_majors": [
     {
@@ -896,6 +946,7 @@
    ],
    "open_minors": [],
    "fail_reasons": [
+    "STALE review",
     "verdict FAIL",
     "1 unresolved critical/major finding(s)"
    ],
@@ -904,7 +955,7 @@
   {
    "id": "FIG-38",
    "current": {
-    "svg_sha256": "4d183d42aaf22e0361bc9872789455a4493e03602c99ea7cd8433d2a90d961b0",
+    "svg_sha256": "cee48625d37a672994b635c17e3aef6aee8d9c3bce1d64d08f7d7963fc140a19",
     "caption_sha256": "4ba1311317233b2eabbeb7ba535b5c9382d50fa342c4db6fd81b6afea6b24194",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
@@ -914,15 +965,19 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "'The central cavern and tunnels are in Deep Darkness' is not indicated on the map; 'Caller·A' label overlaps a Stalagmite piece."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-39",
@@ -950,7 +1005,7 @@
   {
    "id": "FIG-40",
    "current": {
-    "svg_sha256": "5922de5666aee85d14dac9cc791286d50898e990bac581b7e1a33afe43d3ab1f",
+    "svg_sha256": "712eb7c952c44eedbaaa785efc0fe0066495b47d06aa2390d3c8fa19f5ec9713",
     "caption_sha256": "c16e580cf13bde878a999201498ebc53dbaffb33e005cb883dcc42205c393cb2",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
@@ -960,8 +1015,10 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "FAIL",
    "open_majors": [
     {
@@ -974,6 +1031,7 @@
     "'Frozen Debris' is Cover Terrain tagged Difficult Terrain but is drawn as Cover only."
    ],
    "fail_reasons": [
+    "STALE review",
     "verdict FAIL",
     "1 unresolved critical/major finding(s)"
    ],
@@ -982,7 +1040,7 @@
   {
    "id": "FIG-41",
    "current": {
-    "svg_sha256": "d04ce5157598955c94a37bcd284058dd37ae38fe7726ded865b90a00f93c7e6c",
+    "svg_sha256": "f028dd8c0ae6f07ffa96dba05e30fd2cf7defa01d6cc427bc2a9f3704b69e705",
     "caption_sha256": "365c4a475ac62c70844a4fdb693148954f8d8e3d3d3e8f4109d8ac14433474dc",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
@@ -992,15 +1050,19 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "'Grand Hall' label sits over the Cracked ice patch (ic1) and hides most of it."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-42",
@@ -1162,7 +1224,7 @@
   {
    "id": "FIG-49",
    "current": {
-    "svg_sha256": "e379c42923633d727c8a426e2dad4cb15362cfc88a843207f284ce7469406efc",
+    "svg_sha256": "753047b6f161c0b3bf040d07c48c8041acdabec2770d66b01362055727e9b53b",
     "caption_sha256": "cfc89d3ff7fc1b31bd0d1830b0d74cced496695aecd9a03364ed6476347f0a2b",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
@@ -1172,20 +1234,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Colossus is drawn as a solid 7\"x7\" Blocking square; the source gives only 'large central terrain feature' (no size), so the size should look illustrative."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-50",
    "current": {
-    "svg_sha256": "6f3544a926834a8c934d7ecc0668eecb56b60251a322d9d082e4492d40513577",
+    "svg_sha256": "d6f3af0e4232d4e25114863759902ce67338c66538e981923c16adfcfa10b168",
     "caption_sha256": "98085be95bf4ae5a18940f1b080afb6e18aac360d453a90c3a4da9939685413a",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
@@ -1195,15 +1261,19 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Glyphic Stones (Impassable Terrain) are drawn as objective diamonds; the central Dais is drawn solid 5\"x5\" although no size is given."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-51",
