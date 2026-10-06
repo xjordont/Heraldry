@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="421.8pt" viewBox="0 0 504 421.8">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="442.6pt" viewBox="0 0 504 442.6">
 <title>Areas of Effect</title>
 <desc>Show Cone, Line and Aura templates, the Grid Mode affected-square rules, Blocking Terrain stopping an area, and the shared-damage order.</desc>
 <defs>
@@ -27,11 +27,13 @@
 <rect x="42.6" y="153.08" width="12.81" height="10.89" fill="#fff"/>
 <text x="44.4" y="161" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">X"</text>
 <text x="64" y="144" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Aura X"</text>
-<text x="0" y="200" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Line width is 1" unless listed.</text>
-<text x="0" y="210.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Tabletop: affected if any part of</text>
-<text x="0" y="220.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the footprint is within or</text>
-<text x="0" y="231.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">touches the boundary.</text>
-<text x="0" y="244.6" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#333">Schematic — not to scale</text>
+<text x="0" y="200" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Line width is 1" unless listed. A</text>
+<text x="0" y="210.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Cone or Line does not affect the</text>
+<text x="0" y="220.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant it originates from.</text>
+<text x="0" y="231.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Tabletop: affected if any part of</text>
+<text x="0" y="241.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the footprint is within or</text>
+<text x="0" y="252" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">touches the boundary.</text>
+<text x="0" y="265.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#333">Schematic — not to scale</text>
 <rect x="128" y="0" width="13" height="13" fill="#000"/>
 <text x="134.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
 <text x="146" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Grid: Aura 2"</text>
@@ -133,7 +135,9 @@
 <text x="256" y="116" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Squares whose centre lies</text>
 <text x="256" y="126.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">within the cone (ties rounded</text>
 <text x="256" y="136.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">outward): </tspan><tspan font-weight="700">7 squares</tspan><tspan font-weight="400"> beyond</tspan></text>
-<text x="256" y="147.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the origin square.</text>
+<text x="256" y="147.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the origin square. The origin</text>
+<text x="256" y="157.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">square (the source) is not</text>
+<text x="256" y="168" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">affected.</text>
 <rect x="384" y="0" width="13" height="13" fill="#000"/>
 <text x="390.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">D</text>
 <text x="402" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Blocked by terrain</text>
@@ -181,57 +185,57 @@
 <text x="384" y="126.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">sight line from the origin to it is</text>
 <text x="384" y="136.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">blocked by Blocking Terrain,</text>
 <text x="384" y="147.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">even though the cone covers it.</text>
-<line x1="0" y1="252.6" x2="504" y2="252.6" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
-<rect x="0" y="258.6" width="13" height="13" fill="#000"/>
-<text x="6.5" y="269" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">E</text>
-<text x="18" y="269" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">When one damage roll is shared by several combatants (2.7.3)</text>
-<rect x="0" y="278.6" width="115.5" height="98.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="11" cy="289.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="11" y="292.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
-<text x="22" y="292.6" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Declare</text>
-<text x="5" y="304.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Each affected combatant</text>
-<text x="5" y="315.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">that can take a legal</text>
-<text x="5" y="325.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reaction may declare at</text>
-<text x="5" y="336.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">most one (4.5).</text>
-<line x1="117" y1="289.6" x2="122" y2="289.6" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
-<polygon points="128,289.6 121,286.4 121,292.8" fill="#000"/>
-<rect x="129.5" y="278.6" width="115.5" height="98.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="140.5" cy="289.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="140.5" y="292.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
-<text x="151.5" y="292.6" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Roll once</text>
-<text x="134.5" y="304.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Roll the shared damage</text>
-<text x="134.5" y="315.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">once, unless the effect says</text>
-<text x="134.5" y="325.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">otherwise.</text>
-<line x1="246.5" y1="289.6" x2="251.5" y2="289.6" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
-<polygon points="257.5,289.6 250.5,286.4 250.5,292.8" fill="#000"/>
-<rect x="259" y="278.6" width="115.5" height="98.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="270" cy="289.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="270" y="292.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
-<text x="281" y="292.6" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Luck</text>
-<text x="264" y="304.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve any Luck reroll</text>
-<text x="264" y="315.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(2.10) before defence or</text>
-<text x="264" y="325.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">mitigation begins.</text>
-<line x1="376" y1="289.6" x2="381" y2="289.6" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
-<polygon points="387,289.6 380,286.4 380,292.8" fill="#000"/>
-<rect x="388.5" y="278.6" width="115.5" height="98.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="399.5" cy="289.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="399.5" y="292.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
-<text x="410.5" y="292.6" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Resolve</text>
-<text x="393.5" y="304.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Using the final roll, each</text>
-<text x="393.5" y="315.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">affected combatant</text>
-<text x="393.5" y="325.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">separately resolves their</text>
-<text x="393.5" y="336.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reaction, then applies AD,</text>
-<text x="393.5" y="347" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">AV, Resistance,</text>
-<text x="393.5" y="357.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Vulnerability, Immunity and</text>
-<text x="393.5" y="368.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">other mitigation (5.1.1).</text>
-<text x="0" y="392.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
-<circle cx="31.88" cy="392.8" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
-<text x="48.88" y="395.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Source / origin</text>
-<rect x="115.79" y="387.3" width="16" height="11" fill="url(#p-aoe)" stroke="#000" stroke-width="0.8"/>
-<text x="139.79" y="395.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">affected square / area</text>
-<rect x="233.64" y="387.3" width="16" height="11" fill="#4a4a4a" stroke="#000" stroke-width="0.8"/>
-<text x="257.64" y="395.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking Terrain</text>
-<line x1="4.8" y1="403.6" x2="13.2" y2="412" stroke="#000" stroke-width="1.6" stroke-linecap="round"/>
-<line x1="4.8" y1="412" x2="13.2" y2="403.6" stroke="#000" stroke-width="1.6" stroke-linecap="round"/>
-<text x="26" y="410.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">covered but unaffected (sight line blocked)</text>
+<line x1="0" y1="273.4" x2="504" y2="273.4" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="0" y="279.4" width="13" height="13" fill="#000"/>
+<text x="6.5" y="289.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">E</text>
+<text x="18" y="289.8" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">When one damage roll is shared by several combatants (2.7.3)</text>
+<rect x="0" y="299.4" width="115.5" height="98.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="11" cy="310.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="11" y="313.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="22" y="313.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Declare</text>
+<text x="5" y="325.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Each affected combatant</text>
+<text x="5" y="336" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">that can take a legal</text>
+<text x="5" y="346.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reaction may declare at</text>
+<text x="5" y="357.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">most one (4.5).</text>
+<line x1="117" y1="310.4" x2="122" y2="310.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="128,310.4 121,307.2 121,313.6" fill="#000"/>
+<rect x="129.5" y="299.4" width="115.5" height="98.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="140.5" cy="310.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="140.5" y="313.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="151.5" y="313.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Roll once</text>
+<text x="134.5" y="325.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Roll the shared damage</text>
+<text x="134.5" y="336" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">once, unless the effect says</text>
+<text x="134.5" y="346.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">otherwise.</text>
+<line x1="246.5" y1="310.4" x2="251.5" y2="310.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="257.5,310.4 250.5,307.2 250.5,313.6" fill="#000"/>
+<rect x="259" y="299.4" width="115.5" height="98.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="270" cy="310.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="270" y="313.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="281" y="313.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Luck</text>
+<text x="264" y="325.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve any Luck reroll</text>
+<text x="264" y="336" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(2.10) before defence or</text>
+<text x="264" y="346.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">mitigation begins.</text>
+<line x1="376" y1="310.4" x2="381" y2="310.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="387,310.4 380,307.2 380,313.6" fill="#000"/>
+<rect x="388.5" y="299.4" width="115.5" height="98.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="399.5" cy="310.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="399.5" y="313.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+<text x="410.5" y="313.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Resolve</text>
+<text x="393.5" y="325.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Using the final roll, each</text>
+<text x="393.5" y="336" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">affected combatant</text>
+<text x="393.5" y="346.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">separately resolves their</text>
+<text x="393.5" y="357.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reaction, then applies AD,</text>
+<text x="393.5" y="367.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">AV, Resistance,</text>
+<text x="393.5" y="378.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Vulnerability, Immunity and</text>
+<text x="393.5" y="389" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">other mitigation (5.1.1).</text>
+<text x="0" y="413.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
+<circle cx="31.88" cy="413.6" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="48.88" y="416.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Source / origin</text>
+<rect x="115.79" y="408.1" width="16" height="11" fill="url(#p-aoe)" stroke="#000" stroke-width="0.8"/>
+<text x="139.79" y="416.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">affected square / area</text>
+<rect x="233.64" y="408.1" width="16" height="11" fill="#4a4a4a" stroke="#000" stroke-width="0.8"/>
+<text x="257.64" y="416.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking Terrain</text>
+<line x1="4.8" y1="424.4" x2="13.2" y2="432.8" stroke="#000" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="4.8" y1="432.8" x2="13.2" y2="424.4" stroke="#000" stroke-width="1.6" stroke-linecap="round"/>
+<text x="26" y="431.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">covered but unaffected (sight line blocked)</text>
 </svg>

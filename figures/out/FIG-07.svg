@@ -196,9 +196,11 @@
 <text x="172" y="311.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">or Knocked Out and is the same Sz or</text>
 <text x="172" y="321.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">larger than the target: Cover. 2 Shift 1 AP</text>
 <text x="172" y="332" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">clear of the line. 3 No Cover (2.8.4).</text>
-<text x="344" y="290" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">LOS clear; target has Cover.</text>
-<text x="344" y="300.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Impassable Terrain provides Cover and</text>
-<text x="344" y="311.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">does not block LOS (2.9.1, 2.8.4).</text>
+<text x="344" y="290" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">LOS clear; Cover by default.</text>
+<text x="344" y="300.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A generic Impassable feature provides</text>
+<text x="344" y="311.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Cover unless its terrain entry says</text>
+<text x="344" y="321.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">otherwise (chasms and pits provide none),</text>
+<text x="344" y="332" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">and does not block LOS (2.9.1, 2.8.4).</text>
 <line x1="0" y1="346.4" x2="504" y2="346.4" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
 <text x="0" y="358.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> is binary and does not stack. Against a target with Cover, ranged weapon and thrown attacks roll their base damage dice with</tspan></text>
 <text x="0" y="369" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Disadvantage. Cover never applies to melee attacks, and Areas of Effect and hazards ignore Cover (2.8.4). Tabletop Mode: the sight line</text>

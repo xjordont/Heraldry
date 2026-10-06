@@ -13,16 +13,16 @@ DEP_MAP = {
     "A Opposite long edges (fixed)": [
         "Greenmark 1 Hunt the Wild Beast (12025)", "Ashlands 1 The Fallen Observatory (12481)",
         "Ashlands 5 The Reliquary of Broken Saints (12759)", "Ashlands 6 The Iron-Vein Vault (12846)",
-        "Sun-Drowned 1 The Oasis Raiders (13819)", "The Mire 5 Salttide's Reckoning, along the outer banks (14554; distance not stated)"],
+        "Sun-Drowned 1 The Oasis Raiders (13819)", "The Mire 5 Salttide's Reckoning, along the outer banks (14554; 6\" per 10.1 step 11 default)"],
     "B Opposite short edges (fixed)": [
         "Ashlands 2 The Guardian's Test (12546)", "Ashlands 4 The Sealed Archive (12680)",
         "Undermarches 5 The Shadowed Under Passage, Party A at the end farther from the Heart (13239)",
         "Undermarches 6 The Ritual of Shadow Binding, Party A at one short edge (13318)",
         "Pale City 2 The Alchemist's Frozen Laboratory (13470)", "Pale City 3 The Haunted Mausoleum, outside the mausoleum (13541)",
-        "Pale City 6 The Icebound Court (13745)", "Sun-Drowned 2 The Cinder Lord's Lost Brazier, converging on the plaza (13884; distance not stated)",
+        "Pale City 6 The Icebound Court (13745)", "Sun-Drowned 2 The Cinder Lord's Lost Brazier, converging on the plaza (13884; 6\" per 10.1 step 11 default)",
         "Sun-Drowned 6 The Cinder Lord's Obsidian Prison (14168)", "The Mire 1 The Reliquary of Edrava Salttide, driest banks (14254)",
-        "The Mire 4 The Blighted Heartwood (14477)", "The Mire 6 The Serpent's Sunken Hoard, outside the Sinkhole area (14633; distance not stated)"],
-    "A or B (edges stated only as 'opposite battlefield edges'; orientation not specified)": [
+        "The Mire 4 The Blighted Heartwood (14477)", "The Mire 6 The Serpent's Sunken Hoard, outside the Sinkhole area (14633; 6\" per 10.1 step 11 default)"],
+    "A or B (edges stated only as 'opposite battlefield edges'; the Setup Roll-off winner chooses the edge and the other party takes the opposite one, 10.1 step 11 default, zone 6\" deep)": [
         "Pale City 5 The Ice Wyrm's Hoard, where tunnel approaches enter (13671)", "Sun-Drowned 4 The Sandwyrm's Lair (14018)",
         "Sun-Drowned 5 The Cursed Colossus of the Waste (14089)", "The Mire 2 The Lizardfolk's Stolen Offerings (14325)"],
     "C Roll-off winner chooses the edge": [
@@ -31,8 +31,8 @@ DEP_MAP = {
     "E Opposite corner zones": [
         "Greenmark 5 The Ambushed Emissary, alternate placing (12314)", "Ashlands 3 The Shifting Sands of Time, alternate placing (12604)",
         "Undermarches 1 The Crystal Harvest, alternate placing (12929)", "Undermarches 4 The Undermarches Outpost Raid, alternate placing (13166)",
-        "Pale City 1 Plunder of the Frozen Ruins, 8x8 zones, no alternation stated (13404)",
-        "Sun-Drowned 3 Tomb of the Sunken Kings, zone size not stated (13955)", "The Mire 3 The Mire Titan's Fen, outer banks, zone size not stated (14402)"],
+        "Pale City 1 Plunder of the Frozen Ruins, 8x8 zones, alternate placing per 10.1 step 11 default (13404)",
+        "Sun-Drowned 3 Tomb of the Sunken Kings, 8x8 zones and alternate placing per 10.1 step 11 default (13955)", "The Mire 3 The Mire Titan's Fen, outer banks, 8x8 zones and alternate placing per 10.1 step 11 default (14402)"],
     "FIG-14 A Trail": ["Greenmark 3 The Bandit's Toll (12170)"],
     "FIG-14 B One shared short edge": ["Undermarches 2 The Chasm Crossing (12997)"],
     "FIG-14 C Central Safe Zone": ["Undermarches 3 The Quake (13062)"],
@@ -97,20 +97,20 @@ META = {
         title="Line of sight, Cover and Blocking Terrain",
         purpose="Show six Grid Mode sight-line cases separating what blocks LOS from what only grants Cover.",
         source_refs=["2.7.1 The Sight Line (664-681)", "2.7.2 Blocked Line of Sight (682-697)", "2.8.4 Cover incl. Ranger/Fighter example (789-813)", "2.9.1 Terrain Types (832-879)"],
-        geometry_spec="Six 8x4 grids, 20 pt squares, centre-to-centre sight lines: (A) Blocking column on the line; (B) Blocking squares (3,1),(4,2) sharing corner (4,2) on the line from (2,3) to (5,0); (C) Cover Terrain column crossed; (D) Cover squares (3,2),(3,3), line from (2,1) to (5,2) touches only corner (4,2); (E) ally in line (Fighter) then Shift to (1,1): line (1,1)-(7,2) clears the Fighter square; (F) Impassable column crossed.",
-        caption="Blocking Terrain, a corner shared by two Blocking squares and the interior of Cover Terrain block LOS. Touching only a Cover Terrain corner, an intervening combatant and Impassable Terrain leave LOS clear but give the target Cover; a Shift of 1 AP clear of the line removes the combatant's Cover (see 2.7.2 and 2.8.4).",
+        geometry_spec="Six 8x4 grids, 20 pt squares, centre-to-centre sight lines: (A) Blocking column on the line; (B) Blocking squares (3,1),(4,2) sharing corner (4,2) on the line from (2,3) to (5,0); (C) Cover Terrain column crossed; (D) Cover squares (3,2),(3,3), line from (2,1) to (5,2) touches only corner (4,2); (E) ally in line (Fighter) then Shift to (1,1): line (1,1)-(7,2) clears the Fighter square; (F) generic Impassable column crossed; its label states Cover unless the terrain entry says otherwise (chasms and pits provide none), per editorial patch P-02.",
+        caption="Blocking Terrain, a corner shared by two Blocking squares and the interior of Cover Terrain block LOS. Touching only a Cover Terrain corner, an intervening combatant and Impassable Terrain leave LOS clear and give the target Cover (Impassable Terrain unless its terrain entry says otherwise); a Shift of 1 AP clear of the line removes the combatant's Cover (see 2.7.2 and 2.8.4).",
         insert_after="B00810", scope="full", schematic=False,
-        semantic_check="Panel texts compared with 2.7.2 (Grid: corner of 2 Blocking squares; interior of Cover square neither occupies; edge or corner touch does not pass through but grants Cover), 2.8.4 (non-Open feature edge/corner; intervening combatant not Prone/Knocked Out, same or larger Sz; Cover binary), 2.9.1 (Impassable provides Cover, does not block LOS). Geometry checked numerically: line (2.5,3.5)-(5.5,0.5) passes the shared corner (4,2); line (2.5,1.5)-(5.5,2.5) reaches y=2 only at x=4 (corner); line (1.5,1.5)-(7.5,2.5) stays above y=2 over the Fighter square.",
+        semantic_check="Panel texts compared with 2.7.2 (Grid: corner of 2 Blocking squares; interior of Cover square neither occupies; edge or corner touch does not pass through but grants Cover), 2.8.4 (non-Open feature edge/corner; intervening combatant not Prone/Knocked Out, same or larger Sz; Cover binary), 2.9.1 as patched by P-02 (Impassable provides Cover unless its terrain entry says otherwise, does not block LOS; defaults row: chasms and pits provide no Cover). Panel F is a generic Impassable feature and its label carries the P-02 qualifier; no chasm or pit is drawn with Cover. Geometry checked numerically: line (2.5,3.5)-(5.5,0.5) passes the shared corner (4,2); line (2.5,1.5)-(5.5,2.5) reaches y=2 only at x=4 (corner); line (1.5,1.5)-(7.5,2.5) stays above y=2 over the Fighter square.",
         ambiguity="Panel E's intervening combatant is assumed to be the same Sz as the target (the Ranger example in 2.8.4 does not state Sz)."),
     "FIG-08": dict(
         title="Areas of Effect",
         purpose="Show Cone, Line and Aura templates, the Grid Mode affected-square rules, Blocking Terrain stopping an area, and the shared-damage order.",
         source_refs=["2.7.3 Areas of Effect (698-747)"],
-        geometry_spec="Panel A schematic templates with variable X. Panel B Aura 2\" on a 7x7 grid: squares with centre within 2 of the source centre, ties included = 13 squares including the source square. Panel C Cone 3\" on a 6x5 grid: apex at the origin square centre, far edge 3 along the centreline and 3 wide; squares with centre inside, ties outward = 7 squares beyond the origin. Panel D same cone with one Blocking square at (2,3): square (3,3) is covered by the cone but its sight line from the origin crosses the Blocking square. Panel E four-step shared-damage flow.",
-        caption="A Grid Mode Aura 2\" affects 13 squares (including the source square) and a 3\" Cone 7 squares beyond its origin; a square whose sight line from the origin is blocked by Blocking Terrain is unaffected even if the template covers it. Shared area damage is rolled once (see 2.7.3).",
+        geometry_spec="Panel A schematic templates with variable X; text states that a Cone or Line does not affect the combatant it originates from (P-01). Panel B Aura 2\" on a 7x7 grid: squares with centre within 2 of the source centre, ties included = 13 squares including the source square (an Aura includes its source square). Panel C Cone 3\" on a 6x5 grid: apex at the origin square centre, far edge 3 along the centreline and 3 wide; squares with centre inside, ties outward = 7 squares beyond the origin; the origin square is left unshaded and the panel text says it is not affected. Panel D same cone with one Blocking square at (2,3): square (3,3) is covered by the cone but its sight line from the origin crosses the Blocking square. Panel E four-step shared-damage flow.",
+        caption="A Grid Mode Aura 2\" affects 13 squares (including the source square); a 3\" Cone affects 7 squares and not its origin square, because a cone or line does not affect the combatant it originates from. A square whose sight line from the origin is blocked by Blocking Terrain is unaffected even if the template covers it, and shared area damage is rolled once (see 2.7.3).",
         insert_after="B00741", scope="full", schematic=True,
-        semantic_check="Aura rule 'every square whose centre lies within the listed straight-line distance ... rounded outward at ties' -> offsets with dx^2+dy^2<=4: 1+4+4+4=13. Cone rule 'every square whose centre lies within the cone' -> |dy|<=dx/2: x=1:1, x=2:3, x=3:3 = 7. Blocking: sight line origin-to-square-centre tested with a corner/interior check in code (make_figures). Four-step order compared with the list at 741-745.",
-        ambiguity="Whether a cone's own origin square counts as 'within the cone' and the square count of a Line (ties at both ends) are not settled by the text; the figure marks the origin square only as the source and draws no Grid Line."),
+        semantic_check="Aura rule 'every square whose centre lies within the listed straight-line distance ... rounded outward at ties' and 'Include every source square' -> offsets with dx^2+dy^2<=4: 1+4+4+4=13. Cone rule 'every square whose centre lies within the cone' -> |dy|<=dx/2: x=1:1, x=2:3, x=3:3 = 7 squares beyond the origin; origin excluded per 2.7.3 as patched by P-01 (a cone or line does not affect the combatant it originates from); make_figures.selfcheck asserts the origin square is not among the cone squares. Blocking: sight line origin-to-square-centre tested with a corner/interior check in code. Four-step order compared with the list at 741-745.",
+        ambiguity="Resolved by P-01: the Cone panel, its text and the caption agree that the origin square (the source) is not affected. Not drawn: a Grid Line (the source text includes the origin square of a Line only 'if its centre lies within the line unless the rule says otherwise'; the figure draws no Grid Line and states only the P-01 sentence for templates in panel A)."),
     "FIG-09": dict(
         title="Forced movement, Collision and the ledge example",
         purpose="Show Push, Pull and Slide, a Collision with terrain or a combatant, and the source's ledge example.",
@@ -151,12 +151,12 @@ META = {
         title="Party deployment configurations I",
         purpose="One validated diagram for each general deployment pattern used by the Core Scenarios: fixed long/short edges, roll-off choice of edge or corner, and corner zones.",
         source_refs=["10.1 Adventure Preparation Sequence, Setup Roll-off, Battlefield Edges (11029-11075)", "10.4 Party Deployment lines (36 scenarios; see 'coverage')"],
-        geometry_spec="Five 36\"x36\" boards at 4 pt per inch (to scale): A bands 6\" wide on both long edges; B bands 6\" on both short edges; C winner's edge and opposite edge, 6\"; D 8\"x8\" corner and diagonally opposite 8\"x8\" corner; E opposite 8\"x8\" corner zones. Hero markers enlarged.",
-        caption="Deployment patterns used by the Core Scenarios, drawn on a 36\"×36\" battlefield: opposite long or short edges within 6\", a Setup Roll-off winner's choice of edge or 8\"×8\" corner, and opposite corner zones with alternating placement where stated (see 10.1 and each scenario's Party Deployment).",
+        geometry_spec="Five 36\"x36\" boards at 4 pt per inch (to scale): A bands 6\" wide on both long edges; B bands 6\" on both short edges; C winner's edge (callout 1) and opposite edge (callout 2), 6\"; D 8\"x8\" corner (callout 1) and diagonally opposite 8\"x8\" corner (callout 2); E opposite 8\"x8\" corner zones. Hero markers enlarged. Panel captions and the key cite the 10.1 step 11 default (P-03) for depth 6\", corner zones 8\"x8\", the edge/corner choice by the Setup Roll-off winner with the opposite zone for the other party, and alternate placing starting with the Roll-off loser; the former 'distance not stated' marks are removed.",
+        caption="Deployment patterns used by the Core Scenarios, drawn on a 36\"×36\" battlefield: opposite long or short edges within 6\", a Setup Roll-off winner's choice of edge or 8\"×8\" corner, and opposite corner zones with alternating placement. Where a scenario is silent, the 10.1 step 11 default supplies the 6\" depth, the 8\"×8\" corner size and the placing order (see 10.1 and each scenario's Party Deployment).",
         insert_after="B11062", scope="full", schematic=False,
         coverage=DEP_MAP,
-        semantic_check="All 36 Party Deployment lines (grep 'Party Deployment:') classified; distances 6\" and 8\" and 'long = East/West, short = North/South' (10.1) compared with the source; geometry drawn from stated values only.",
-        ambiguity="Scenarios that say only 'opposite battlefield edges' do not state long or short; panels A or B apply. Sun-Drowned 2 (13884, 'converging on the plaza'), The Mire 5 (14554, 'along the outer banks') and The Mire 6 (14633, 'outside the immediate Sinkhole area') state no band distance: the 6\" band is the general pattern shown for them, not a stated value (the figure key says so). Corner zones in Tomb of the Sunken Kings and The Mire Titan's Fen do not state a size; panel E uses the 8\"x8\" size used by the other corner scenarios as an illustration."),
+        semantic_check="All 36 Party Deployment lines (grep 'Party Deployment:') classified; distances 6\" and 8\" and 'long = East/West, short = North/South' (10.1) compared with the source; geometry drawn from stated values and from the 10.1 step 11 default as patched by P-03 (Roll-off winner chooses the edge or corner zone and the other party takes the opposite one; zones 6\" from the edge; corner zone 8\"x8\"; alternate placing starting with the Roll-off loser). Sun-Drowned 2, The Mire 5 and The Mire 6 (depth), Sun-Drowned 3 and The Mire 3 (corner size and order) and Pale City 1 (alternation) now rest on that default and are labelled so in the coverage list.",
+        ambiguity="Resolved by P-03: depth (Sun-Drowned 2, The Mire 5, The Mire 6), corner-zone size and placing order (Sun-Drowned 3, The Mire 3, Pale City 1) and the edge pair for scenarios that name only 'opposite battlefield edges' (Pale City 5, Sun-Drowned 4 and 5, The Mire 2) come from the 10.1 step 11 default; the figure draws the generic patterns and does not pick long or short edges for the last group (panels A, B and C each apply)."),
     "FIG-14": dict(
         title="Party deployment configurations II",
         purpose="Deployment patterns with extra spatial conditions: Trail, shared short edge, central Safe Zone, and short edges across a Ravine.",
@@ -180,11 +180,11 @@ META = {
         title="Whispering Grove: PvPvE interaction",
         purpose="Show how one neutral Monster responds to two competing parties through its printed Target Priority.",
         source_refs=["10.4 Greenmark Scenario 2: The Whispering Grove (12042-12111)", "9.5 E (7642-7651)"],
-        geometry_spec="Detail of the Central Clearing at 10 pt per inch: clearing drawn 13.5\" across (source about 12-15\"), three Standing Stones in a rough triangle 7\" apart (source 6-8\"), Party A Hero at one Stone, Party B Hero at another, Antlered Warden (Large) placed within the triangle; dashed targeting line from Warden to the Party B Hero. Positions schematic.",
-        caption="In the Whispering Grove the Antlered Warden's Target Priority is the valid Hero who most recently activated or attempted to activate a Standing Stone, whichever party that Hero belongs to; its Entangling Roots then applies if the target is within 8\" (see 10.4).",
+        geometry_spec="Detail of the Central Clearing at 10 pt per inch: clearing drawn 13.5\" across (source about 12-15\"), three Standing Stones in a rough triangle 7\" apart (source 6-8\"), Party A Hero at the first Stone Interacted with, Party B Hero at another; Antlered Warden (Large, 2\" square) placed adjacent to the Party A Hero's Stone (P-04); Random Monster Group 2 marker inside the clearing 2.75\" from its centre, i.e. 4\" from the clearing edge, with a 4\" radial dimension (P-05; selfcheck-style assertion in the drawing code); dashed targeting line from Warden to the Party B Hero. Positions schematic.",
+        caption="In the Whispering Grove the Antlered Warden is placed adjacent to the first Standing Stone a Hero Interacts with, and its Target Priority is the valid Hero who most recently activated or attempted to activate a Stone, whichever party that Hero belongs to. Entangling Roots then applies if the target is within 8\" (see 10.4).",
         insert_after="B12100", scope="full", schematic=True,
-        semantic_check="Interact [2 AP] + SPI Check, one claimant per stone (12100); Warden placement, Awake when placed, Target Priority wording and Entangling Roots (8\", DEX Check, Immobilized, end activation) from 12042-12094; normal priorities as fallback (9.5 E).",
-        ambiguity="The scenario places the Warden 'adjacent to the central Standing Stone' but a rough triangle of 3 Stones has no unambiguous central Stone; the figure places the Warden inside the triangle without choosing a Stone. Group 2's placement ('perimeter of the Central Clearing, 4\" from its edge') is internally unclear and is not drawn."),
+        semantic_check="Interact [2 AP] + SPI Check, one claimant per stone (12100); Warden placement as patched by P-04 (when a Hero first Interacts with a Standing Stone, adjacent to that Stone; Awake when placed), Target Priority wording and Entangling Roots (8\", DEX Check, Immobilized, end activation) from 12042-12094; Group 2 as patched by P-05 (inside the Central Clearing, 4\" from its edge, Resting); normal priorities as fallback (9.5 E).",
+        ambiguity="Resolved by P-04 and P-05: the Warden stands adjacent to the first Stone a Hero Interacts with (the drawn Party A Hero's Stone, an illustrative choice of which Stone is first) and Group 2 stands inside the Central Clearing 4\" from its edge. Remaining schematic choices: the 4\" is drawn from the marker centre to the clearing edge, and Group 2's direction around the clearing is not fixed by the source. Groups 1 and 3 are not drawn."),
     "FIG-17": dict(
         title="Campaign cycle and Town Phase",
         purpose="Give a concise campaign/downtime sequence: four phases, Aftermath steps, Town checklist and locations.",
@@ -198,20 +198,20 @@ META = {
         title="Learn to Play: setup and first-round opening",
         purpose="Show the Appendix A starting positions and the sample Round 1 using only Appendix A rules and the A.11 fixed rolls.",
         source_refs=["A.1-A.4 setup, Quickstart Scenario (16082-16208)", "A.7-A.9 activations, Reactions, Dire Wolf AI (16254-16339)", "A.11 Sample Opening, Round 1 (16348-16490)"],
-        geometry_spec="24\"x24\" at 7 pt per inch: 4\" deployment bands on the short edges; Satchel at the centre; Dire Wolves 2\" N/S/E/W of the Satchel; Chest 5\" east of centre; Edric at 4\" from the south edge on the centre line, Mara 4\" from it and 6\" east, Varek and Senna mirrored from the north. Round 1 table with AP squares.",
-        caption="Appendix A starting positions and Round 1 of the sample game. Edric ends the round with 16 − 5 = 11, 11 − 3 = 8 and 8 − 3 = 5 HP after Varek's attack and two Dire Wolf bites (see A.11).",
+        geometry_spec="24\"x24\" at 7 pt per inch: 4\" deployment bands on the short edges; centre ruin 3\"x3\" Blocking centred on the battlefield centre (A.2) with a dashed outline of the squares adjacent to it, where the Satchel is placed (A.4, P-07); Chest 5\" east of centre; Edric at 4\" from the south edge on the centre line, Mara 4\" from it and 6\" east, Varek and Senna mirrored from the north. The side of the ruin on which the Satchel stands is not stated, so no Satchel or Wolf position is drawn on the board; a small inset shows the Satchel with Dire Wolves 2\" N/S/E/W of it (A.11) as a relative layout. Round 1 table with AP squares.",
+        caption="Appendix A starting positions, with the Dispatch Satchel adjacent to the centre ruin, and Round 1 of the sample game. Edric ends the round with 16 − 5 = 11, 11 − 3 = 8 and 8 − 3 = 5 HP after Varek's attack and two Dire Wolf bites (see A.11).",
         insert_after="B16371", scope="full", schematic=False,
-        semantic_check="Positions from the A.11 table; initiative 13+0+1=14 vs 10+0+0=10; Varek 6+3=9, AD 4, 9-4=5; Mara 4+3=7, AV 1, 6; Dodge 11+3=14 >= 12; Wolf 1 5+1=6, AD 3 -> 3, STR 9+3=12 success; Wolf 2 max(4,7)+1=8, AD 5 -> 3, STR 6+3=9 fail. Only actions and Reactions named in A.7-A.8 are used (Move, Attack, Interact, Dodge, Pack Tactics).",
-        ambiguity="A.2 places a 3\"x3\" Blocking ruin 'at the centre' while A.4/A.11 place the Satchel at the centre adjacent to that ruin and wolves 2\" from it; the ruin's exact position is not fixed and A.2's terrain is not drawn."),
+        semantic_check="Hero and Chest positions from the A.11 table; Satchel adjacent to the centre ruin as patched by P-07 (A.4, A.11) with the ruin 3\"x3\" at the centre from A.2; Wolves 2\" N/S/E/W of the Satchel (A.11); initiative 13+0+1=14 vs 10+0+0=10; Varek 6+3=9, AD 4, 9-4=5; Mara 4+3=7, AV 1, 6; Dodge 11+3=14 >= 12; Wolf 1 5+1=6, AD 3 -> 3, STR 9+3=12 success; Wolf 2 max(4,7)+1=8, AD 5 -> 3, STR 6+3=9 fail. Only actions and Reactions named in A.7-A.8 are used (Move, Attack, Interact, Dodge, Pack Tactics).",
+        ambiguity="Resolved by P-07: the Satchel is adjacent to the centre ruin (it is no longer at the battlefield centre point). Remaining: the side of the ruin where the Satchel stands, and therefore where the Wolves stand on the board, is not stated, so the board shows only the adjacent band and the inset shows the relative layout; other A.2 terrain is not drawn."),
     "FIG-19": dict(
         title="Basic Mode: The Courier's Strongbox setup and an example score",
         purpose="Show the Appendix B setup constraints (zones, Monster Entry band, terrain types) and one source-supported carrying and scoring example.",
         source_refs=["B.1 Basic Mode At a Glance (16519-16532)", "B.5 Monster profiles (17016-17070)", "B.6 Basic Scenario: The Courier's Strongbox (17072-17095)", "B.4 Ironscar SPD 4\" (16584-16590)"],
         geometry_spec="24\"x24\" at 7 pt per inch: 4\" bands on opposite edges; Strongbox at the centre; dashed rings at 5\" and 7\" from the centre bounding Monster Entry markers (3 drawn 6\" out, 120 degrees apart, > 4\" apart); each marker with a Monster group and a Satchel; two 3\"x3\" pieces within 4\" of the centre (Blocking ruin, Impassable cart/low wall); four 3\"x3\" Cover pieces one per quarter; road band (width not stated). Example: SPD 4\" - 2\" = 2\" per Move; 12\" / 2\" = 6 Moves; 12 + 4 + 2 + 3 = 21c.",
-        caption="Basic Mode setup for The Courier's Strongbox on a 24\"×24\" battlefield. Example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move, and extracting it plus 1 Satchel, 2 Goblins and 1 Bandit scores 12 + 4 + 2 + 3 = 21c (see B.6).",
+        caption="Basic Mode setup for The Courier's Strongbox on a 24\"×24\" battlefield, with one complete Monster group per Entry marker, assigned at random. Example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move, and extracting it plus 1 Satchel, 2 Goblins and 1 Bandit scores 12 + 4 + 2 + 3 = 21c (see B.6).",
         insert_after="B17082", scope="full", schematic=True,
-        semantic_check="Terrain counts, 3\"x3\" size, 4\" deployment, Entry markers (5-7\", >= 4\" apart, outside zones, one group each, Resting), Strongbox 12c, Satchels 4c, -2\" Speed to a minimum of 1\", extraction through own edge (17074-17094); Goblin 1c, Skeleton Warrior 1c, Bandit 3c (B.5); Ironscar SPD 4\" (B.4). Only B-appendix terms used; no Hide, Powers or advanced rules.",
-        ambiguity="Terrain positions, the road's width and which Monster group sits at which Entry marker are not specified; they are schematic. Which edges are deployment edges is not specified (north and south drawn)."),
+        semantic_check="Terrain counts, 3\"x3\" size, 4\" deployment, Entry markers (5-7\", >= 4\" apart, outside zones, one complete group each assigned at random per P-06, Resting), Strongbox 12c, Satchels 4c, -2\" Speed to a minimum of 1\", extraction through own edge (17074-17094); step 3 text reads \"assigned to the markers at random, one complete group per marker\"; Goblin 1c, Skeleton Warrior 1c, Bandit 3c (B.5); Ironscar SPD 4\" (B.4). Only B-appendix terms used; no Hide, Powers or advanced rules.",
+        ambiguity="Resolved by P-06: groups are assigned to Monster Entry markers at random, one complete group per marker (all markers carry identical group glyphs, so no assignment is drawn). Terrain positions and the road's width are schematic; who places the markers and which edges are deployment edges are not specified (north and south drawn)."),
 }
 
 AUDIT = {
@@ -232,6 +232,17 @@ CORRECTED = {
     "FIG-14": "Release correction pass 2026-10-06: the floating 'min 3\"' label in panel C is replaced by a dimension line with arrowheads and end ticks that runs exactly between the closest edges (2.6) of one Party A Hero and the nearest Party B Hero (4\"), plus a dashed ring marking the 3\" limit; panel C markers are now true 1\" size at the stated 6.6 pt per inch. Panel B's 6\" label, which floated between markers, is replaced the same way (6\" arc and radial dimension, 7\" edge-to-edge dimension to the nearest Party B Hero). The remaining dimensions (6\", 8\") span zone edges and were checked. Selfcheck asserts the dimension endpoints.",
     "FIG-15": "Release correction pass 2026-10-06: step 5 stated the Chasm Fall consequence but omitted the Fly/Climb provisions of 13007. New panel C (steps 6-8) states the Chasm Fall (Hero Defeated with a normal Injuries Roll; non-Hero as though reduced to 0 HP; carried items lost) and separately the Hero or Hireling Fly/Climb option (spend 1 unspent AP, including AP reserved for Reactions; Prone on the nearest legal Ledge space; movement ends; Chasm Fall if the AP cannot be spent) and the Monster Fly/Climb provision (Prone on the nearest legal Ledge space; activation ends) in the source's wording. Caption notes the exceptions. Height 328 pt.",
 }
+
+# editorial patches (editorial/patches.json) applied 2026-10-06; figures re-aligned to the patched text
+PATCHED = {
+    "FIG-07": "P-02: panel F label and caption state that Impassable Terrain provides Cover unless its terrain entry says otherwise (chasms and pits provide none).",
+    "FIG-08": "P-01: Cone panel, panel A text and caption agree that a cone or line does not affect the combatant it originates from (origin square not counted).",
+    "FIG-13": "P-03: the 'distance not stated' marks are replaced by the 10.1 step 11 default (6\" zones, 8\"x8\" corners, Roll-off winner chooses, alternate placing from the Roll-off loser); key, captions and coverage updated.",
+    "FIG-16": "P-04 and P-05: Warden drawn adjacent to the first Stone a Hero Interacts with; Random Monster Group 2 drawn inside the Central Clearing 4\" from its edge; 'central Stone' and 'perimeter' ambiguity text removed.",
+    "FIG-18": "P-07: Satchel is adjacent to the centre ruin (no longer 'at the battlefield centre'); centre ruin drawn; Satchel and Wolves shown as a relative layout because the side is not stated.",
+    "FIG-19": "P-06: step 3 now reads 'assigned to the markers at random, one complete group per marker'.",
+}
+PATCH_STATUS = "aligned to editorial patches 2026-10-06"
 
 # (id, ...) order for manifest
 ORDER = sorted(META)
@@ -265,6 +276,13 @@ def write_all(dims=None):
         if fid in CORRECTED:
             entry["status"] = "corrected 2026-10-06 (release correction pass)"
             entry["audit_response"] = CORRECTED[fid] + " Earlier audit response: " + entry["audit_response"]
+            import hashlib
+            with open(os.path.join(FIG_DIR, "out", fid + ".svg"), "rb") as sf:
+                entry["svg_sha256"] = hashlib.sha256(sf.read()).hexdigest()
+        if fid in PATCHED:
+            entry["status"] = PATCH_STATUS
+            entry["audit_response"] = "Editorial patch alignment: " + PATCHED[fid] + " Earlier: " + entry["audit_response"]
+            entry["editorial_patches"] = sorted(set(__import__("re").findall(r"P-0\d", PATCHED[fid])))
             import hashlib
             with open(os.path.join(FIG_DIR, "out", fid + ".svg"), "rb") as sf:
                 entry["svg_sha256"] = hashlib.sha256(sf.read()).hexdigest()
