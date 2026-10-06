@@ -1,0 +1,522 @@
+{
+ "status": "FAIL",
+ "reviewer": "publication-auditor (independent)",
+ "reviewed_at": null,
+ "figures_total": 19,
+ "figures_pass": 0,
+ "stale": [
+  "FIG-01",
+  "FIG-02",
+  "FIG-03",
+  "FIG-04",
+  "FIG-05",
+  "FIG-06",
+  "FIG-07",
+  "FIG-08",
+  "FIG-09",
+  "FIG-10",
+  "FIG-11",
+  "FIG-12",
+  "FIG-13",
+  "FIG-14",
+  "FIG-15",
+  "FIG-16",
+  "FIG-17",
+  "FIG-18",
+  "FIG-19"
+ ],
+ "missing_review": [],
+ "open_majors": {
+  "FIG-05": [
+   {
+    "severity": "major",
+    "status": null,
+    "issue": "Panel A labels the forbidden diagonal cell '6.5'. The drawn forbidden arrow leaves the 4-inch position (cell (3,2)) diagonally to cell (4,1), so the running total for that move is 4 + 1.5 = 5.5, not 6.5. 6.5 would only arise for a diagonal taken after the legal 1-inch orthogonal step (5 + 1.5), which is a different cell from the one drawn. The source states only that the 1.5-inch diagonal cost exceeds the 1 inch remaining after 4 inches. The author's semantic_check rationalises the label instead of correcting it; the printed number is inconsistent with the drawing and the source example."
+   }
+  ],
+  "FIG-15": [
+   {
+    "severity": "major",
+    "status": null,
+    "issue": "Panel B step 5 gives the generic 4.4.9 failure result for a failed Jump ('stops at the last legal point before the gap, falls Prone, movement ends') as the outcome in this scenario. The scenario's own rule overrides this: 'A failed Jump into the Chasm causes a Chasm Fall', which removes the combatant from play, Defeats a Hero and loses any carried item including the Survey Map. The figure and caption never mention Chasm Fall, so the drawing takes the generic side of an unrecorded conflict and understates the stakes of the central mechanic."
+   }
+  ]
+ },
+ "open_minor_count": 0,
+ "review_entries_for_unknown_figures": [],
+ "problems": [],
+ "figures": [
+  {
+   "id": "FIG-01",
+   "current": {
+    "svg_sha256": "1a7289ab44110c2ee0eecad78db26907c95b3049f76c47db758f0e01d1f2d0c1",
+    "caption_sha256": "52861a6881d4605007bb65dbf1b5fdc4e48ae089709972c007b9e373633557d6"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-02",
+   "current": {
+    "svg_sha256": "9c9314e179a9aa1321c0539d4a835e5f7e70cc5de3630834b565a558c2ae7c35",
+    "caption_sha256": "ed4ed4f46d21fef9323d26e776d16e5dec23538dd2debe48cc8b8963d4e216ab"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS_WITH_NOTES",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-03",
+   "current": {
+    "svg_sha256": "37d280f1068d619b18ab4238014731f5a183aebbf932a90a9baf4f493ba8aad6",
+    "caption_sha256": "09631197450cead2e57a066925946b5f44b24d6a6ea541cb5a6e6fa1a9e289b3"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-04",
+   "current": {
+    "svg_sha256": "9b096e37ee0f9c9fa71bb557dc3608a31c76042b8495b26c3b6abd2bdc32aea1",
+    "caption_sha256": "af0a2348990a339cb58f9c310a312c21d2bf0509ff7c0827544a8671fe2c7a82"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-05",
+   "current": {
+    "svg_sha256": "2aec8ebe1666a0d3916285470008ce62af98b1ea3edd2328b07220265027a344",
+    "caption_sha256": "3c8b97284dbb16f647708e93f2b3c1c04fd3293df1642e819c788366902789f1"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "FAIL",
+   "open_majors": [
+    {
+     "severity": "major",
+     "status": null,
+     "issue": "Panel A labels the forbidden diagonal cell '6.5'. The drawn forbidden arrow leaves the 4-inch position (cell (3,2)) diagonally to cell (4,1), so the running total for that move is 4 + 1.5 = 5.5, not 6.5. 6.5 would only arise for a diagonal taken after the legal 1-inch orthogonal step (5 + 1.5), which is a different cell from the one drawn. The source states only that the 1.5-inch diagonal cost exceeds the 1 inch remaining after 4 inches. The author's semantic_check rationalises the label instead of correcting it; the printed number is inconsistent with the drawing and the source example."
+    }
+   ],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review",
+    "verdict FAIL",
+    "1 unresolved critical/major finding(s)"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-06",
+   "current": {
+    "svg_sha256": "95b6280c207fe96d78d386a2f3662ce4a93a59f93fdc40051f9d04a7d177b8e8",
+    "caption_sha256": "2b64538ff90d7b6bf81b00fc10ab6af2508ff75c98b78c44ddb2309b98f3604c"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS_WITH_NOTES",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-07",
+   "current": {
+    "svg_sha256": "e40df398ee5c5e8cded452e98fb4a47078c351cedb240c03e940b8de27e338cc",
+    "caption_sha256": "fc3eed1469186b05e7f58de7ee6494b754d87b3a8afcf49f68d6432a5e8070a5"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS_WITH_NOTES",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-08",
+   "current": {
+    "svg_sha256": "209412d5c982517a20d380002681ceeca055aeebf9375dc64d480a792d51c4a4",
+    "caption_sha256": "1585e382d9b0dd3200663ec9176fd2f2297b4f5d8cc4775e57faa22c1aafaa13"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS_WITH_NOTES",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-09",
+   "current": {
+    "svg_sha256": "b45caa4c89bd326753aefc4da65f914c425811ec57bde9ad8549aa2707cfb34b",
+    "caption_sha256": "541b0cb23f14eaf54fa559fef9c62dc83584c24808e496e78e9eb3942a2eb2e6"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-10",
+   "current": {
+    "svg_sha256": "44446a9b431e175b9024f6b76a79703d6cb42b2283b3c54fb1c466482a0d515d",
+    "caption_sha256": "4839eb469dc7059f722eddbb959d8140ea89a8c3e1e8c69be21a6d1102f90ab8"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-11",
+   "current": {
+    "svg_sha256": "1e5f3f6044822265041b4b981aa80478f44121742703d6a8d498837e929fe930",
+    "caption_sha256": "8da7d89daaa60fbf9f01e91971cfa7dafd10c016db63e670bc9fd22b6ce3ae01"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-12",
+   "current": {
+    "svg_sha256": "4e71c511ba9a4939192f2e7f50ffe9cbea30b36f65edf35351ac6aea66925395",
+    "caption_sha256": "945896acf9d3b54252f47c392792c1f06dae616e04a3d44d2f388600297b457d"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS_WITH_NOTES",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-13",
+   "current": {
+    "svg_sha256": "c960456aa43ec9ad92285fe16e9ea8d7fe94bf534e358841b3e5595865fc85fe",
+    "caption_sha256": "b3975d9db2efd97eafcf0333537a51cb13119e7373e72b84491e0e18757bf86b"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS_WITH_NOTES",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-14",
+   "current": {
+    "svg_sha256": "18b0f036823810aa0d4abd0a97bdfacf9e3491b53e129941f275329a73599cfe",
+    "caption_sha256": "b5d1e41e77a1ffc73b1d998f7842236bfd7c273761fed3a1c73d78a40c213e21"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS_WITH_NOTES",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-15",
+   "current": {
+    "svg_sha256": "fed21672a08f5359965b902400fbbcc333d516181a828c48b02a4846bc0859ee",
+    "caption_sha256": "829d8471fd66fe3254927ae9bce12de276671522734bf82dcf6c5498288a8bc9"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "FAIL",
+   "open_majors": [
+    {
+     "severity": "major",
+     "status": null,
+     "issue": "Panel B step 5 gives the generic 4.4.9 failure result for a failed Jump ('stops at the last legal point before the gap, falls Prone, movement ends') as the outcome in this scenario. The scenario's own rule overrides this: 'A failed Jump into the Chasm causes a Chasm Fall', which removes the combatant from play, Defeats a Hero and loses any carried item including the Survey Map. The figure and caption never mention Chasm Fall, so the drawing takes the generic side of an unrecorded conflict and understates the stakes of the central mechanic."
+    }
+   ],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review",
+    "verdict FAIL",
+    "1 unresolved critical/major finding(s)"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-16",
+   "current": {
+    "svg_sha256": "3540399da8df157eb7e960f468d41fa594fa71b8bd8af9cdef4a1219df28c4ce",
+    "caption_sha256": "1f7d72da17d432d6b9ded916a2d9feb1ae5c95ebde8e1802907133d33daf67c7"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-17",
+   "current": {
+    "svg_sha256": "c2d2eaae5ed8a465b4b5f92d4e9d92298827624fd8f4c3d24fb395d504d91087",
+    "caption_sha256": "9bbff0ec3080c708ed8841aacc21de7f3ab9e2b3496f5307f163a768e14c3b43"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS_WITH_NOTES",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-18",
+   "current": {
+    "svg_sha256": "6068583d30489eb200b494d914d93e57499917e02163f6703b03220881a02ba3",
+    "caption_sha256": "ffb9cb8159bccb7b95c0331f0057be6cded1f946ea641f9f1ad94f16eb2895ab"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  },
+  {
+   "id": "FIG-19",
+   "current": {
+    "svg_sha256": "269032258dcf212ba8eaaae4fe02d10eb9df044f308be1a75e04621722797a59",
+    "caption_sha256": "973e2c8a4f860b19a16a450ecf522a1a5efdede2395d9b76ed4780466b3123c3"
+   },
+   "reviewed": {
+    "svg_sha256": null,
+    "caption_sha256": null
+   },
+   "reviewed_present": true,
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 missing from review",
+    "caption_sha256 missing from review"
+   ],
+   "verdict": "PASS_WITH_NOTES",
+   "open_majors": [],
+   "open_minors": [],
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
+  }
+ ]
+}
