@@ -137,7 +137,7 @@ def fig02():
     rows = [
         ("Initiative Phase", 3, "Refresh to 3 AP.", "3.2"),
         ("Party Phase — this Hero's one activation", 1, None, "3.3"),
-        ("Monster Phase", 0, "A Monster attacks the Hero: the Hero declares **Block** (Reaction, 1 AP). It is not an activation.", "5.5.1"),
+        ("Monster Phase", 0, "A Monster's slashing attack would damage the Hero: the Hero declares **Block** (Reaction, 1 AP). It is not an activation.", "5.5.1"),
         ("End of Round", 0, "Any unspent AP is removed.", "3.5"),
     ]
     ry = y + 6

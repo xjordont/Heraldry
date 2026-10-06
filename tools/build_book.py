@@ -105,7 +105,7 @@ def first_text(b) -> str:
 def inject(s: str, mark: str) -> str:
     """Put a zero-size marker INSIDE a rendered block so that no stray inline content
     sits between a heading and the block it must keep with."""
-    for f in ("#example[", "#flavour[", "#note-box["):
+    for f in ("#example[", "#flavour[", "#note-box[", "#runin["):
         if s.startswith(f):
             return f + mark + s[len(f):]
     for f in ("#htable(", "#statstrip(", "#statcard(", "#cards(", "#figure-block("):
@@ -226,6 +226,8 @@ class Book:
             return f"#example[{tag}{body}]"
         if is_flavour(b):
             return f"#flavour[{tag}{body}]"
+        if is_caption(b):
+            return f"#runin[{tag}{body}]\n"
         return f"{tag}{body}\n\n"
 
     def block_inline(self, b):
@@ -438,7 +440,7 @@ class Book:
                 walk(y)
         walk(b)
         out = []
-        for i in ids:
+        for i in dict.fromkeys(ids):   # a list and its first item paragraph can share an id
             out.extend(self.fig_slots.get(i, []))
             self.placed_figs.update(f["id"] for f in self.fig_slots.get(i, []))
         return out
@@ -485,7 +487,16 @@ class Book:
         else:
             if tail > 0:
                 self.out.append("#seg[" + "".join(parts[:tail]) + "]\n")
-            tp = parts[tail:]
+            tp = []
+            carry = ""
+            for j in range(tail, len(parts)):
+                if f"{sid}:{j}" in self.piece_heads and j < len(parts) - 1:
+                    carry += parts[j]      # keep headings in the same balancing unit as what follows
+                    continue
+                tp.append(carry + parts[j])
+                carry = ""
+            if carry:
+                tp.append(carry)
             tp[-1] = tp[-1] + end
             self.out.append("#bal(" + ", ".join("[" + x + "]" for x in tp) + ")\n")
 
@@ -551,8 +562,12 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None):
                     t = t - 1
                 else:
                     continue
-        # skip when the last page is already essentially full in both columns
         res[str(sid)] = [sigs[str(sid)], t]
+    # never leave a heading as the last piece before the balanced tail
+    for k, (sig, t) in list(res.items()):
+        while t > 0 and f"{k}:{t-1}" in (heads or {}):
+            t -= 1
+        res[k] = [sig, t]
     return res
 
 
@@ -591,6 +606,10 @@ def main():
                         new[k] = balance[k]
                     else:
                         new.pop(k, None)
+        for k, (sig, t) in list(new.items()):
+            while t > 0 and f"{k}:{t-1}" in book.piece_heads:
+                t -= 1
+            new[k] = [sig, t]
         if p == a.passes - 1 or new == balance:
             break   # keep balance.json consistent with the PDF just compiled
         balance = new

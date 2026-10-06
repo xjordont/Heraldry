@@ -43,11 +43,6 @@
       "check": "script_syntax",
       "status": "PASS",
       "detail": "Python scripts parse successfully"
-    },
-    {
-      "check": "shipped_baseline",
-      "status": "PASS",
-      "detail": "31 shipped files match checksums"
     }
   ],
   "runtime_observed": {
@@ -63,8 +58,8 @@
       "gs": false
     },
     "python_modules": {
-      "typst": false,
-      "fitz": false,
+      "typst": true,
+      "fitz": true,
       "pypdf": true,
       "pdfplumber": true,
       "PIL": true

@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="340.2pt" viewBox="0 0 504 340.2">
-<title>FIG-04</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="350.8pt" viewBox="0 0 504 350.8">
+<title>Measurement, footprints and declared movement</title>
+<desc>Contrast Tabletop closest-point measurement with Grid orthogonal/diagonal counting, show footprints by Sz, and show the declared-movement and Declared State procedure.</desc>
 <defs>
 <pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
 <pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
@@ -52,11 +53,12 @@
 <rect x="257.82" y="44.08" width="8.35" height="10.89" fill="#fff"/>
 <text x="259.62" y="52" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1</text>
 <text x="207" y="123" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">source square</text>
-<text x="174" y="137" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1.5" + 1.5" + 1" = 4"  (source square not counted)</text>
+<text x="174" y="137" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1.5" + 1.5" + 1" = 4"</text>
 <text x="174" y="149" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Orthogonal square = 1", diagonal square =</text>
-<text x="174" y="159.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">1.5". Count the shortest grid distance.</text>
-<text x="174" y="170.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Obstacles do not change it; check LOS,</text>
-<text x="174" y="180.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Cover and terrain separately.</text>
+<text x="174" y="159.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">1.5". Count the shortest grid distance</text>
+<text x="174" y="170.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">without the source square. Obstacles do</text>
+<text x="174" y="180.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">not change it; check LOS, Cover and terrain</text>
+<text x="174" y="191.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">separately.</text>
 <rect x="350" y="0" width="13" height="13" fill="#000"/>
 <text x="356.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">C</text>
 <text x="368" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Grid Mode: footprints (2.6)</text>
@@ -106,56 +108,56 @@
 <text x="350" y="132.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">their Sz footprint (S and M 1×1, L 2×2, H</text>
 <text x="350" y="143.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">3×3). Their whole footprint must fit in</text>
 <text x="350" y="153.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">every legal final position.</text>
-<line x1="0" y1="201.4" x2="504" y2="201.4" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
-<rect x="0" y="207.4" width="13" height="13" fill="#000"/>
-<text x="6.5" y="217.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">D</text>
-<text x="18" y="217.8" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Declared movement and positional state (2.6.1)</text>
-<rect x="0" y="227.4" width="115.5" height="108.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="11" cy="238.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="11" y="241.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
-<text x="22" y="241.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Declare</text>
-<text x="5" y="253.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Before voluntary or forced</text>
-<text x="5" y="264" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">movement, declare the</text>
-<text x="5" y="274.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">intended path and final</text>
-<text x="5" y="285.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">position (for placement, the</text>
-<text x="5" y="295.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">final position).</text>
-<line x1="117" y1="238.4" x2="122" y2="238.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
-<polygon points="128,238.4 121,235.2 121,241.6" fill="#000"/>
-<rect x="129.5" y="227.4" width="115.5" height="108.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="140.5" cy="238.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="140.5" y="241.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
-<text x="151.5" y="241.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Verify</text>
-<text x="134.5" y="253.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">An opposing player may</text>
-<text x="134.5" y="264" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">measure and verify it. If</text>
-<text x="134.5" y="274.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">illegal, amend it or choose</text>
-<text x="134.5" y="285.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">another action; an</text>
-<text x="134.5" y="295.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">abandoned declaration</text>
-<text x="134.5" y="306.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">costs no AP.</text>
-<line x1="246.5" y1="238.4" x2="251.5" y2="238.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
-<polygon points="257.5,238.4 250.5,235.2 250.5,241.6" fill="#000"/>
-<rect x="259" y="227.4" width="115.5" height="108.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="270" cy="238.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="270" y="241.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
-<text x="281" y="241.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Move</text>
-<text x="264" y="253.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Once movement begins, or</text>
-<text x="264" y="264" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">a Reaction is declared</text>
-<text x="264" y="274.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">against it, the declaration</text>
-<text x="264" y="285.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">cannot be amended or</text>
-<text x="264" y="295.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">abandoned. A triggered</text>
-<text x="264" y="306.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reaction resolves at the</text>
-<text x="264" y="317" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">first point on the path</text>
-<text x="264" y="327.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">where its trigger occurs.</text>
-<line x1="376" y1="238.4" x2="381" y2="238.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
-<polygon points="387,238.4 380,235.2 380,241.6" fill="#000"/>
-<rect x="388.5" y="227.4" width="115.5" height="108.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="399.5" cy="238.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="399.5" y="241.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
-<text x="410.5" y="241.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Declared State</text>
-<text x="393.5" y="253.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">The actual path and final</text>
-<text x="393.5" y="264" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">position become the</text>
-<text x="393.5" y="274.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Declared State until the</text>
-<text x="393.5" y="285.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant moves or is</text>
-<text x="393.5" y="295.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">moved. If a miniature is</text>
-<text x="393.5" y="306.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">moved accidentally, restore</text>
-<text x="393.5" y="317" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">it.</text>
+<line x1="0" y1="212" x2="504" y2="212" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="0" y="218" width="13" height="13" fill="#000"/>
+<text x="6.5" y="228.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">D</text>
+<text x="18" y="228.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Declared movement and positional state (2.6.1)</text>
+<rect x="0" y="238" width="115.5" height="108.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="11" cy="249" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="11" y="252.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="22" y="252" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Declare</text>
+<text x="5" y="264" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Before voluntary or forced</text>
+<text x="5" y="274.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">movement, declare the</text>
+<text x="5" y="285.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">intended path and final</text>
+<text x="5" y="295.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">position (for placement, the</text>
+<text x="5" y="306.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">final position).</text>
+<line x1="117" y1="249" x2="122" y2="249" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="128,249 121,245.8 121,252.2" fill="#000"/>
+<rect x="129.5" y="238" width="115.5" height="108.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="140.5" cy="249" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="140.5" y="252.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="151.5" y="252" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Verify</text>
+<text x="134.5" y="264" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">An opposing player may</text>
+<text x="134.5" y="274.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">measure and verify it. If</text>
+<text x="134.5" y="285.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">illegal, amend it or choose</text>
+<text x="134.5" y="295.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">another action; an</text>
+<text x="134.5" y="306.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">abandoned declaration</text>
+<text x="134.5" y="317" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">costs no AP.</text>
+<line x1="246.5" y1="249" x2="251.5" y2="249" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="257.5,249 250.5,245.8 250.5,252.2" fill="#000"/>
+<rect x="259" y="238" width="115.5" height="108.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="270" cy="249" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="270" y="252.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="281" y="252" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Move</text>
+<text x="264" y="264" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Once movement begins, or</text>
+<text x="264" y="274.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">a Reaction is declared</text>
+<text x="264" y="285.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">against it, the declaration</text>
+<text x="264" y="295.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">cannot be amended or</text>
+<text x="264" y="306.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">abandoned. A triggered</text>
+<text x="264" y="317" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reaction resolves at the</text>
+<text x="264" y="327.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">first point on the path</text>
+<text x="264" y="338.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">where its trigger occurs.</text>
+<line x1="376" y1="249" x2="381" y2="249" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="387,249 380,245.8 380,252.2" fill="#000"/>
+<rect x="388.5" y="238" width="115.5" height="108.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="399.5" cy="249" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="399.5" y="252.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+<text x="410.5" y="252" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Declared State</text>
+<text x="393.5" y="264" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">The actual path and final</text>
+<text x="393.5" y="274.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">position become the</text>
+<text x="393.5" y="285.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Declared State until the</text>
+<text x="393.5" y="295.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant moves or is</text>
+<text x="393.5" y="306.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">moved. If a miniature is</text>
+<text x="393.5" y="317" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">moved accidentally, restore</text>
+<text x="393.5" y="327.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">it.</text>
 </svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="252pt" viewBox="0 0 504 252">
+<title>Whispering Grove: PvPvE interaction</title>
+<desc>Show how one neutral Monster responds to two competing parties through its printed Target Priority.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="13" height="13" fill="#000"/>
+<text x="6.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">The Whispering Grove (10.4, Greenmark 2)</text>
+<rect x="4" y="26" width="196" height="196" fill="#fff" stroke="#000" stroke-width="1" stroke-dasharray="6 3"/>
+<circle cx="102" cy="122" r="67.5" fill="#fff" stroke="#000" stroke-width="1.2" stroke-dasharray="5 3"/>
+<polygon points="102,76.1 107.5,81.6 102,87.1 96.5,81.6" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="99.25" y1="81.6" x2="104.75" y2="81.6" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="102" y1="78.85" x2="102" y2="84.35" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<polygon points="67,136.7 72.5,142.2 67,147.7 61.5,142.2" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="64.25" y1="142.2" x2="69.75" y2="142.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="67" y1="139.45" x2="67" y2="144.95" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<polygon points="137,136.7 142.5,142.2 137,147.7 131.5,142.2" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="134.25" y1="142.2" x2="139.75" y2="142.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="137" y1="139.45" x2="137" y2="144.95" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="67" y1="159.2" x2="137" y2="159.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="67" y1="156.7" x2="67" y2="161.7" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="137" y1="156.7" x2="137" y2="161.7" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="90.87" y="154.48" width="22.26" height="10.89" fill="#fff"/>
+<text x="92.67" y="162.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">6–8"</text>
+<circle cx="116" cy="83.6" r="5.5" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="53" cy="140.2" r="5.5" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="53" cy="140.2" r="1.6" fill="#000"/>
+<rect x="95" y="114" width="20" height="20" fill="url(#p-mon)" stroke="#000" stroke-width="1.4"/>
+<circle cx="128" cy="73.6" r="6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="128" y="76.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<circle cx="41" cy="130.2" r="6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="41" y="133.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<circle cx="122" cy="110" r="6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="122" y="113.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<line x1="94" y1="128" x2="60" y2="143.2" stroke="#000" stroke-width="1.1" stroke-linecap="butt" stroke-dasharray="4.5 2.8"/>
+<circle cx="94" cy="128" r="1.9" fill="#000"/>
+<circle cx="60" cy="143.2" r="1.9" fill="#000"/>
+<rect x="27.55" y="206.08" width="148.91" height="10.89" fill="#fff"/>
+<text x="29.35" y="214" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Central Clearing: about 12–15" across</text>
+<text x="4" y="234" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#333">Detail of the centre of the battlefield</text>
+<text x="4" y="245" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#333">(10 pt per inch; positions schematic)</text>
+<rect x="222" y="0" width="13" height="13" fill="#000"/>
+<text x="228.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="240" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Two parties, one Monster (PvPvE)</text>
+<circle cx="228.6" cy="29" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="228.6" y="32.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="241.2" y="30" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Activate a Stone (10.4):</tspan><tspan font-weight="400"> a Hero adjacent to a Standing Stone uses</tspan></text>
+<text x="241.2" y="40.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Interact [2 AP] and makes a SPI Check. A stone is claimed by only one</text>
+<text x="241.2" y="51" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">party. Here a Party A Hero activates a Stone first.</text>
+<circle cx="228.6" cy="65.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="228.6" y="68.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="241.2" y="66.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Rival attempt:</tspan><tspan font-weight="400"> a Party B Hero later attempts to activate another</tspan></text>
+<text x="241.2" y="77" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Stone.</text>
+<circle cx="228.6" cy="91.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="228.6" y="94.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="241.2" y="92.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Antlered Warden:</tspan><tspan font-weight="400"> not placed at setup. When the first Stone is</tspan></text>
+<text x="241.2" y="103" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Interacted with, it is placed adjacent to the central Standing Stone</text>
+<text x="241.2" y="113.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">and is Awake when placed.</text>
+<circle cx="228.6" cy="128" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="228.6" y="131.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+<text x="241.2" y="129" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Monster Phase:</tspan><tspan font-weight="400"> the Warden's Target Priority is the valid Hero who</tspan></text>
+<text x="241.2" y="139.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">most recently activated or attempted to activate a Standing Stone,</text>
+<text x="241.2" y="150" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">here the Party B Hero. If no listed target is valid, the normal Monster</text>
+<text x="241.2" y="160.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">target priorities apply (9.5 E).</text>
+<circle cx="228.6" cy="175" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="228.6" y="178.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
+<text x="241.2" y="176" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">AI Step 1, Entangling Roots:</tspan><tspan font-weight="400"> if the Primary Target is within 8" and not</tspan></text>
+<text x="241.2" y="186.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Immobilized, it must pass a DEX Check or become Immobilized. The</text>
+<text x="241.2" y="197" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">activation then ends.</text>
+<text x="222" y="216.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
+<circle cx="253.88" cy="216.5" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="270.88" y="219.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A Hero</text>
+<circle cx="336.69" cy="216.5" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="336.69" cy="216.5" r="1.68" fill="#000"/>
+<text x="353.69" y="219.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B Hero</text>
+<rect x="413.92" y="210.5" width="12" height="12" fill="url(#p-mon)" stroke="#000" stroke-width="1.4"/>
+<text x="436.92" y="219.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Antlered Warden</text>
+<polygon points="231,225.5 237,231.5 231,237.5 225,231.5" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="228" y1="231.5" x2="234" y2="231.5" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="231" y1="228.5" x2="231" y2="234.5" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<text x="248" y="234.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Standing Stone</text>
+<line x1="316.89" y1="231.5" x2="334.89" y2="231.5" stroke="#000" stroke-width="1.1" stroke-linecap="butt" stroke-dasharray="4.5 2.8"/>
+<circle cx="316.89" cy="231.5" r="1.9" fill="#000"/>
+<circle cx="334.89" cy="231.5" r="1.9" fill="#000"/>
+<text x="341.89" y="234.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Warden's target</text>
+</svg>

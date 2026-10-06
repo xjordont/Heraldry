@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="381.2pt" viewBox="0 0 504 381.2">
+<title>Learn to Play: setup and first-round opening</title>
+<desc>Show the Appendix A starting positions and the sample Round 1 using only Appendix A rules and the A.11 fixed rolls.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="13" height="13" fill="#000"/>
+<text x="6.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Setup and positions (A.4, A.11)</text>
+<rect x="4" y="24" width="168" height="168" fill="#fff" stroke="#000" stroke-width="1.1"/>
+<rect x="4" y="24" width="168" height="28" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.5 2"/>
+<rect x="4" y="164" width="168" height="28" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.5 2"/>
+<line x1="84" y1="108" x2="92" y2="108" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="88" y1="104" x2="88" y2="112" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
+<polygon points="88,103.2 92.8,108 88,112.8 83.2,108" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="85.6" y1="108" x2="90.4" y2="108" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="88" y1="105.6" x2="88" y2="110.4" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<polygon points="93.4,122 90.7,126.68 85.3,126.68 82.6,122 85.3,117.32 90.7,117.32" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="107.4,108 104.7,112.68 99.3,112.68 96.6,108 99.3,103.32 104.7,103.32" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="79.4,108 76.7,112.68 71.3,112.68 68.6,108 71.3,103.32 76.7,103.32" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="93.4,94 90.7,98.68 85.3,98.68 82.6,94 85.3,89.32 90.7,89.32" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<rect x="118.75" y="104.75" width="8.5" height="6.5" fill="#d9d9d9" stroke="#000" stroke-width="1"/>
+<line x1="118.75" y1="107.5" x2="127.25" y2="107.5" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<circle cx="88" cy="164" r="5.2" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="130" cy="164" r="5.2" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="88" cy="52" r="5.2" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="88" cy="52" r="1.6" fill="#000"/>
+<circle cx="130" cy="52" r="5.2" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="130" cy="52" r="1.6" fill="#000"/>
+<rect x="76.3" y="172.18" width="23.39" height="10.89" fill="#fff"/>
+<text x="78.1" y="180.1" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Edric</text>
+<rect x="118.53" y="172.18" width="22.95" height="10.89" fill="#fff"/>
+<text x="120.33" y="180.1" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Mara</text>
+<rect x="75.16" y="27.98" width="25.69" height="10.89" fill="#fff"/>
+<text x="76.96" y="35.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Varek</text>
+<rect x="116.1" y="27.98" width="27.79" height="10.89" fill="#fff"/>
+<text x="117.9" y="35.9" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Senna</text>
+<rect x="111.66" y="117.08" width="30.69" height="10.89" fill="#fff"/>
+<text x="113.45" y="125" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">5" east</text>
+<text x="4" y="203" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">24"×24" battlefield, 7 pt per inch; markers</text>
+<text x="4" y="213.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">enlarged. Positions are those of the A.11 table. The</text>
+<text x="4" y="223.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">terrain of A.2 is not drawn.</text>
+<text x="0" y="246.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
+<circle cx="31.88" cy="246.2" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="48.88" y="249.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Road Wardens</text>
+<circle cx="9" cy="261.2" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="9" cy="261.2" r="1.68" fill="#000"/>
+<text x="26" y="264.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Black Briar Raiders</text>
+<polygon points="122.27,261.2 119.03,266.81 112.55,266.81 109.31,261.2 112.55,255.59 119.03,255.59" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<text x="132.79" y="264.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Dire Wolf</text>
+<polygon points="9,270.2 15,276.2 9,282.2 3,276.2" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="6" y1="276.2" x2="12" y2="276.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="9" y1="273.2" x2="9" y2="279.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<text x="26" y="279.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Dispatch Satchel</text>
+<rect x="102.51" y="271.97" width="11.05" height="8.45" fill="#d9d9d9" stroke="#000" stroke-width="1"/>
+<line x1="102.51" y1="275.55" x2="113.56" y2="275.55" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<text x="125.04" y="279.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Treasure Chest</text>
+<rect x="1" y="285.7" width="17" height="11" fill="#f0f0f0" stroke="#000" stroke-width="0.8" stroke-dasharray="3 2"/>
+<text x="26" y="294.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">within 4" of short edge</text>
+<rect x="200" y="0" width="13" height="13" fill="#000"/>
+<text x="206.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="218" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Round 1 as played in A.11 (fixed rolls)</text>
+<rect x="200" y="22" width="304" height="38.9" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="204" y="33.38" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Initiative:</tspan><tspan font-weight="400"> Road Wardens 1d20 = 13, +0 INT, +1 SPI = </tspan><tspan font-weight="700">14</tspan><tspan font-weight="400">. Black Briar Raiders</tspan></text>
+<text x="204" y="44.18" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">1d20 = 10, +0, +0 = </tspan><tspan font-weight="700">10</tspan><tspan font-weight="400">. The Road Wardens win and choose to act first. All Heroes</tspan></text>
+<text x="204" y="54.98" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">refresh to 3 AP.</text>
+<text x="200" y="73.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Party Phase (activations alternate, Road Wardens first)</text>
+<rect x="200" y="78.9" width="304" height="27.2" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
+<text x="204" y="89.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1 Edric</text>
+<text x="250" y="88.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Move, Move, Interact: picks up the Dispatch Satchel.</text>
+<text x="250" y="99.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">With 0 AP left he cannot take Reactions this round.</text>
+<rect x="464" y="82.9" width="9" height="9" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="466" y1="84.9" x2="471" y2="89.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="466" y1="89.9" x2="471" y2="84.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="476" y="82.9" width="9" height="9" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="478" y1="84.9" x2="483" y2="89.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="478" y1="89.9" x2="483" y2="84.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="488" y="82.9" width="9" height="9" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="490" y1="84.9" x2="495" y2="89.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="490" y1="89.9" x2="495" y2="84.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="200" y="108.1" width="304" height="37.8" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
+<text x="204" y="119.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">2 Varek</text>
+<text x="250" y="118.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Move, Move (Engaged with Edric), Attack with Battleaxe:</text>
+<text x="250" y="128.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">1d8 = 6, +3 STR = 9. Edric's Brigandine AD d8 = 4, so</text>
+<text x="250" y="139.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Edric takes 9 − 4 = 5 (16 → 11 HP).</text>
+<rect x="464" y="112.1" width="9" height="9" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="466" y1="114.1" x2="471" y2="119.1" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="466" y1="119.1" x2="471" y2="114.1" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="476" y="112.1" width="9" height="9" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="478" y1="114.1" x2="483" y2="119.1" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="478" y1="119.1" x2="483" y2="114.1" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="488" y="112.1" width="9" height="9" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="490" y1="114.1" x2="495" y2="119.1" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="490" y1="119.1" x2="495" y2="114.1" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="200" y="147.9" width="304" height="27.2" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
+<text x="204" y="158.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">3 Mara</text>
+<text x="250" y="157.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Move, Attack with Shortbow: 1d6 = 4, +3 DEX = 7. Dire</text>
+<text x="250" y="168.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Wolf 3 has AV 1: 7 − 1 = 6 (15 → 9 HP). Keeps 1 AP.</text>
+<rect x="464" y="151.9" width="9" height="9" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="466" y1="153.9" x2="471" y2="158.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="466" y1="158.9" x2="471" y2="153.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="476" y="151.9" width="9" height="9" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="478" y1="153.9" x2="483" y2="158.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="478" y1="158.9" x2="483" y2="153.9" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="488" y="151.9" width="9" height="9" fill="#000" stroke="#000" stroke-width="0.8"/>
+<rect x="200" y="177.1" width="304" height="48.4" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
+<text x="204" y="188.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">4 Senna</text>
+<text x="250" y="187.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Move, Attack with Shortbow: 1d6 = 5, +3 DEX = 8. Mara</text>
+<text x="250" y="197.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">declares Dodge [1 AP]: 1d20 = 11, +3 DEX = 14. A Check</text>
+<text x="250" y="208.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">of 12 or more succeeds: Mara takes 0 (her 3 AP are</text>
+<text x="250" y="218.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">spent). Senna keeps 1 AP.</text>
+<rect x="464" y="181.1" width="9" height="9" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="466" y1="183.1" x2="471" y2="188.1" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="466" y1="188.1" x2="471" y2="183.1" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="476" y="181.1" width="9" height="9" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="478" y1="183.1" x2="483" y2="188.1" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="478" y1="188.1" x2="483" y2="183.1" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="488" y="181.1" width="9" height="9" fill="#000" stroke="#000" stroke-width="0.8"/>
+<text x="200" y="238.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster Phase (Dire Wolves 1 to 4 in order; Edric carries the Satchel)</text>
+<rect x="200" y="243.5" width="304" height="27.2" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
+<text x="204" y="254.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Wolf 1</text>
+<text x="258" y="253.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Moves into Engagement with Edric and Bites: 1d8 = 5, +1 = 6. AD</text>
+<text x="258" y="264.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">d8 = 3: Edric takes 3 (11 → 8 HP). STR Check 9 + 3 = 12 succeeds.</text>
+<rect x="200" y="272.7" width="304" height="27.2" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
+<text x="204" y="283.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Wolf 2</text>
+<text x="258" y="282.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Pack Tactics (Advantage): 4 and 7, keep 7, +1 = 8. AD d8 = 5:</text>
+<text x="258" y="293.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Edric takes 3 (8 → 5 HP). STR Check 6 + 3 = 9 fails: Edric is Prone.</text>
+<rect x="200" y="301.9" width="304" height="27.2" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
+<text x="204" y="312.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Wolves 3, 4</text>
+<text x="258" y="311.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">No open space from which to engage Edric: they end as close as</text>
+<text x="258" y="322.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">possible and do not attack.</text>
+<rect x="200" y="333.1" width="304" height="28.1" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="204" y="344.48" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">End of Round:</tspan><tspan font-weight="400"> Senna's 1 unspent AP is removed. Edric: 5 HP, Prone, carrying</tspan></text>
+<text x="204" y="355.28" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the Satchel, Engaged by Varek and Dire Wolves 1 and 2.</text>
+<text x="200" y="373.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">AP squares:</text>
+<rect x="256" y="364.7" width="9" height="9" fill="#000" stroke="#000" stroke-width="0.8"/>
+<text x="268" y="373.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">unspent after activation</text>
+<rect x="370" y="364.7" width="9" height="9" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="372" y1="366.7" x2="377" y2="371.7" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="372" y1="371.7" x2="377" y2="366.7" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<text x="382" y="373.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">spent</text>
+</svg>

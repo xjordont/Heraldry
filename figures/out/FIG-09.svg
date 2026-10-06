@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="247.2pt" viewBox="0 0 504 247.2">
-<title>FIG-09</title>
+<title>Forced movement, Collision and the ledge example</title>
+<desc>Show Push, Pull and Slide, a Collision with terrain or a combatant, and the source's ledge example.</desc>
 <defs>
 <pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
 <pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
@@ -135,8 +136,8 @@
 <polygon points="422,71 414.5,74.8 414.5,67.2" fill="#000"/>
 <polygon points="435.48,71 432.24,76.61 425.76,76.61 422.52,71 425.76,65.39 432.24,65.39" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
 <line x1="429" y1="38" x2="429" y2="104" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
-<rect x="445.58" y="44.58" width="43.84" height="10.89" fill="#fff"/>
-<text x="447.38" y="52.5" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">no surface</text>
+<rect x="447.58" y="84.18" width="43.84" height="10.89" fill="#fff"/>
+<text x="449.38" y="92.1" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">no surface</text>
 <line x1="385" y1="112" x2="429" y2="112" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 <line x1="385" y1="109" x2="385" y2="115" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 <line x1="429" y1="109" x2="429" y2="115" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
