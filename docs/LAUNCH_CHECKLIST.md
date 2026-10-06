@@ -12,7 +12,7 @@ Whole commercial PDFs are not needed in the repository. If you have permission t
 
 ## Initial run
 
-1. Select this repository and the current `main` branch in Claude Code cloud. Work on the cloud task branch after launch.
+1. Select only this repository and the current `main` branch in Claude Code cloud. Work on the cloud task branch after launch. A multi-repository project may start above the clones and not load nested agent/settings files; if using that mode, explicitly verify configuration discovery.
 2. Select the configured Opus model and medium effort; check actual access and credit/paid-overage settings in the account.
 3. Use the available cloud execution mode, without assuming a Bypass option exists. Keep dependency registries reachable. The repository cannot grant model access, modify billing, or alter the network policy.
 4. Send: `Read MASTER_PROMPT.md and execute it completely.`
@@ -33,7 +33,7 @@ The preflight does not enforce the paid-service budget. The account's controls e
 
 With no supplied original illustrations or configured authorised image service, the run completes an art-light edition and an asset-generation plan. The fully illustrated target remains incomplete until the planned original assets are integrated and pagination is rechecked. Inspiration art is never used as replacement artwork.
 
-With no printer selected, the run creates a complete digital edition, a generic print candidate, and cover panels/candidate. Submission-ready print files still require the printer's specification, binding/paper decisions, final page count, and cover template. Check the estimated full page count early: do not shrink type, omit rules, or silently split volumes to satisfy an unknown binding limit.
+The specified target is borderless portrait US Letter home inkjet printing. The run completes cream and white interior PDFs with identical pagination, finished Letter cover sheets, a calibration PDF and print instructions. Run the inkjet file checker and inspect the visual stress specimen. Physical device/media proof is NOT TESTED until actual sheets are examined; it does not block completion of the files. Commercial wraps, spine templates and PDF/X are NOT APPLICABLE unless separately requested. Check page count early for handling/binding; do not shrink type, omit rules or silently split volumes.
 
 The required final checks remain complete source/table reconciliation, precise diagram semantics, stable TOC/index links, all-page visual coverage, and truthful separate readiness statuses. One passing launch check is not a substitute for those production gates.
 
@@ -42,3 +42,5 @@ Official capability references checked 2026-10-06:
 - https://code.claude.com/docs/en/sub-agents
 - https://code.claude.com/docs/en/claude-code-on-the-web
 - https://code.claude.com/docs/en/cloud-environments
+
+Read `docs/INKJET_PRINT.md`, `docs/VISUAL_QA.md` and `config/design_tokens.json` alongside the design specification. Commit and push task-branch checkpoints at each milestone. Render/review contact sheets in resumable batches to control disk/memory; preserve exact inspected-page coverage. Neither automatic preflight nor this launch checklist claims the future book already exists.

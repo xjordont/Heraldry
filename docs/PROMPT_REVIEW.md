@@ -19,7 +19,7 @@ Review date: 5 October 2026. This records a separate self-review of the complete
 | ChatGPT Plus is mistaken for image API credit | Manual transfer explained; API billing separate; no speculative Plus bridge promised. |
 | Procedural ornaments masquerade as final illustrations | Atmosphere and vector diagrams have separate definitions and acceptance states. |
 | Assets lose style consistency or lack print detail | Style anchor, repeated attributes/reference mechanism, contact sheets, native/effective resolution, bounded retries, final-size inspection. |
-| Tall/wide tables clip or become microscopic | Content-based widths; full-page, continuation, faithful cards, or justified landscape; 9 pt essential-text minimum; all-cell reconciliation. |
+| Tall/wide tables clip or become microscopic | Content-based widths; full-page, keyed portrait continuation, or faithful cards; 9 pt essential-text minimum; all-cell reconciliation. |
 | Random-table row relationships are damaged | Range/order checks, repeated keys on split representations, explicit transformed-field mapping. |
 | Diagrams change the game | Source-linked geometry, timing/AP checks, verified examples, all distinct deployment coverage, independent review. |
 | TOC/index look finished but contain stale page numbers | Stable tagged targets, final locator validation, rebuild-to-convergence, page labels/bookmarks. |
@@ -35,7 +35,7 @@ Review date: 5 October 2026. This records a separate self-review of the complete
 
 - The cloud account must actually expose the selected models, effort fields, runtime, credit balance, and network paths. The prompt verifies these; it does not grant access.
 - The requested fully illustrated edition requires supplied assets or an already configured and authorized image service. Defaults do not spend external funds.
-- Printer-specific submission readiness needs an actual printer profile and cover template matching binding, stock, and final page count.
+- Physical home-inkjet proof needs the actual device/media; the specified borderless file can be completed independently. Commercial submission/wrap requirements apply only to a separately requested edition.
 - A $100 limit and a request for exhaustive perfection can conflict. The prompt prioritises a complete reproducible book and reserves repair credit, but no fixed-cost guarantee is made.
 
 ## Package checks performed before delivery
@@ -61,3 +61,14 @@ The local validation checks parse production/settings JSON; parse agent YAML; ve
 - No reference PDF upload is required. Original illustration assets, printer inputs, and live account/model/credit access remain external inputs.
 - Scope: prepared assignment readiness; no generated publication, cloud dependency installation, or live account operation is certified.
 - Preflight validation passed on the pristine kit; deliberate manuscript mutation, budget mismatch, and baseline tampering were rejected. A legitimate state update passed the resume check.
+
+## Borderless/light-style and single-prompt review, 2026-10-06
+
+- User-specified borderless portrait Letter replaces the earlier generic non-bleed profile throughout config, master prompt, design guide, agents and setup instructions.
+- Cream/white companion files have identical content/pagination. All essential text/furniture remain safe despite edge-to-edge backgrounds; no landscape fallback or oversized bleed sheet.
+- Added concrete design tokens and visible-quality acceptance rubric covering generic ornament, typography, tables, artwork construction/matting, and reader flow.
+- Re-inspected attached reference compositions/details; recorded exact viewer pages and abstract adaptations without bundling source artwork.
+- Added an actual PDF file checker and required inkjet calibration proof/instructions. Physical proof and commercial conformance are distinct from file readiness.
+- Clarified single-repository cloud loading, supported dependency recovery, committed/pushed checkpoints, and resumable page-review batches.
+- No book build or actual inkjet print has run. Live model access, credit, network and optional image service still require capability discovery in Claude.
+- File checker tests passed for valid embedded-font Letter output and rejected A4, landscape, unsafe edge text, undersized type, unembedded fonts, rotated/cropped pages and non-searchable output. Launch preflight rejected landscape/token mismatches and source mutation while permitting a legitimate state update.

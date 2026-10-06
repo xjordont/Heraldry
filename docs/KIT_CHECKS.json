@@ -15,8 +15,8 @@
   "budget_arithmetic_validated": true,
   "external_spend_disabled_by_default": true,
   "prompt_topics_present": true,
-  "master_words": 5081,
-  "kit_version": 3,
+  "master_words": 5373,
+  "kit_version": 4,
   "reference_unique_books": 29,
   "reference_primary_pages": 14,
   "reference_selected_pages": 19,
@@ -30,5 +30,26 @@
     "budget_mismatch",
     "baseline_tamper"
   ],
-  "preflight_resume_state_update_passed": true
+  "preflight_resume_state_update_passed": true,
+  "borderless_letter_contract_validated": true,
+  "design_tokens_and_visual_rubric_added": true,
+  "reference_reinspection_files": 22,
+  "reference_reinspection_contact_pages": 44,
+  "reference_reinspection_detail_pages": 6,
+  "inkjet_pdf_checker_tests_passed": [
+    "embedded_letter_pass",
+    "a4_rejected",
+    "landscape_rejected",
+    "edge_rejected",
+    "small_type_rejected",
+    "unembedded_font_rejected",
+    "rotated_page_rejected",
+    "cropped_box_rejected",
+    "no_searchable_text_rejected"
+  ],
+  "preflight_design_contract_tests_passed": [
+    "landscape_rejected",
+    "safe_zone_mismatch_rejected"
+  ],
+  "physical_inkjet_proof": "NOT TESTED"
 }

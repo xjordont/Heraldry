@@ -320,5 +320,185 @@
         16
       ]
     }
-  ]
+  ],
+  "light_borderless_review": {
+    "date": "2026-10-06",
+    "method": "44 representative rendered pages on four contact sheets; six enlarged detail renders; not exhaustive audit",
+    "files": [
+      {
+        "file": "01-Frostgrave.pdf",
+        "pages": [
+          6,
+          45
+        ]
+      },
+      {
+        "file": "02-Nimble-CoreRules.pdf",
+        "pages": [
+          6,
+          10
+        ]
+      },
+      {
+        "file": "03-Lasting-Tales.pdf",
+        "pages": [
+          7,
+          33
+        ]
+      },
+      {
+        "file": "04-Pathfinder-2e-Player-Core-Remaster.pdf",
+        "pages": [
+          6,
+          257
+        ]
+      },
+      {
+        "file": "05-Dungeoneers-Rulebook-v16.pdf",
+        "pages": [
+          6,
+          61
+        ]
+      },
+      {
+        "file": "06-FLftB-Core-Rules-3rd-Edition.pdf",
+        "pages": [
+          6,
+          130
+        ]
+      },
+      {
+        "file": "07-ARENACONTEST-4-.pdf",
+        "pages": [
+          6,
+          22
+        ]
+      },
+      {
+        "file": "08-ATO_CORE_Rulebook_v1.1.pdf",
+        "pages": [
+          6,
+          9
+        ]
+      },
+      {
+        "file": "09-SAS-Rulebook-3-.pdf",
+        "pages": [
+          6,
+          18
+        ]
+      },
+      {
+        "file": "10-Rulebook-web-Dungeon-Universalis-2-.pdf",
+        "pages": [
+          10,
+          40
+        ]
+      },
+      {
+        "file": "11-Middara.pdf",
+        "pages": [
+          6,
+          34
+        ]
+      },
+      {
+        "file": "12-EAHQ.pdf",
+        "pages": [
+          6,
+          27
+        ]
+      },
+      {
+        "file": "13-Ker-Nethalas-Carnage-Aether-3-.pdf",
+        "pages": [
+          7,
+          39
+        ]
+      },
+      {
+        "file": "14-Hametsu-3-.pdf",
+        "pages": [
+          11,
+          29
+        ]
+      },
+      {
+        "file": "15-The-Walking-Dead-All-Out-War.pdf",
+        "pages": [
+          6,
+          29
+        ]
+      },
+      {
+        "file": "16-XCOM-The-Miniatures-Game-Core-Rules-digital.pdf",
+        "pages": [
+          8,
+          41
+        ]
+      },
+      {
+        "file": "17-The-Village-Hunt-Veil-Hollow.pdf",
+        "pages": [
+          6,
+          14
+        ]
+      },
+      {
+        "file": "18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf",
+        "pages": [
+          12,
+          29
+        ]
+      },
+      {
+        "file": "19-Call-of-Dungeons.pdf",
+        "pages": [
+          7,
+          13
+        ]
+      },
+      {
+        "file": "20-FINAL-GoN-Dux-Disciplinam.pdf",
+        "pages": [
+          8,
+          16
+        ]
+      },
+      {
+        "file": "21-FINAL-GoN-Tome-of-Knowledge.pdf",
+        "pages": [
+          6,
+          27
+        ]
+      },
+      {
+        "file": "22-FINAL-GoN-Scenario-Book.pdf",
+        "pages": [
+          8,
+          38
+        ]
+      }
+    ],
+    "detail_pages": {
+      "18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf": [
+        29
+      ],
+      "13-Ker-Nethalas-Carnage-Aether-3-.pdf": [
+        7
+      ],
+      "14-Hametsu-3-.pdf": [
+        101
+      ],
+      "06-FLftB-Core-Rules-3rd-Edition.pdf": [
+        130
+      ],
+      "02-Nimble-CoreRules.pdf": [
+        10
+      ],
+      "22-FINAL-GoN-Scenario-Book.pdf": [
+        38
+      ]
+    }
+  }
 }

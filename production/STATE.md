@@ -13,6 +13,8 @@ Source SHA-256: 2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3
 4. Create the semantic source inventory and budget ledger.
 5. Build the actual-content stress specimen and continue through the full production sequence.
 
-Optional visual reference files are not required to begin. Original atmospheric art and printer specifications are currently external inputs; use the prescribed fallbacks and report their status honestly.
+Optional visual reference files are not required to begin. Original atmospheric art is an external input with an art-light fallback. Borderless portrait Letter file requirements are specified; physical inkjet proof is NOT TESTED. Commercial wrap/template requirements are NOT APPLICABLE unless separately requested. Read the inkjet and visual-QA contracts and design tokens.
 
 Replace this state with evidence-based progress and the next exact actions at each milestone. On resume after project changes, omit --baseline while retaining the immutable source check. Do not mark any book deliverable complete solely because this preparation file exists.
+
+At milestones commit and push the task branch. Keep builds/page-review batches resumable. Primary print outputs: cream/white borderless Letter PDFs with identical pagination, finished cover sheets, calibration proof and print instructions. Publication conversion/build remain NOT STARTED.
