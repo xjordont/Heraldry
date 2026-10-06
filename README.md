@@ -1,34 +1,34 @@
 # Heraldry Skirmish publication project
 
-This repository contains the canonical RC484 manuscript and the reference-informed Claude Code publication kit.
+[source/versions.json](source/versions.json) identifies the active manuscript. [RC485](source/Heraldry_RC485.md) was created to contain the seven approved clarifications previously applied during the RC484 build. The [original RC484](source/Heraldry_RC484.md) remains unchanged. All snapshots and their exact approved patch evidence remain available.
 
-## Launch
+All future iterations use **main** unless the owner explicitly decides otherwise. Manuscript text-patch batches advance the RC number once; artwork, figure and layout changes use ordinary Git commits. Read [WORKFLOW.md](docs/WORKFLOW.md) for the exact revision command and review requirements.
 
-Connect this repository to Claude Code cloud, verify available models and spending controls, then use:
+## Continue with Claude Code
 
-> Read MASTER_PROMPT.md and execute it completely.
+Select this repository and main, then provide your requested change with:
 
-The kit requests Opus orchestration and Sonnet implementation, with a $100 maximum Claude-credit budget and $20 reserved for final repairs. Model availability and permissions are checked at execution.
+> Read CLAUDE.md, docs/WORKFLOW.md and production/STATE.md. Implement the requested iteration on main using the active manuscript in source/versions.json. Preserve earlier snapshots. Advance the RC number once if manuscript text changes. Follow MASTER_PROMPT.md, rebuild, verify, inspect and package the result, update the ledgers, and push verified work to main. Do not create a branch unless I explicitly decide to use one.
 
-## Project files
+The project already has a working Typst build and 19 rules figures. [MASTER_PROMPT.md](MASTER_PROMPT.md) is its standing design/production contract. Resume the existing work; do not restart it. Budgets and actual prior spend remain subject to the account and [budget ledger](production/budget.json).
 
-- [MASTER_PROMPT.md](MASTER_PROMPT.md): complete production brief and acceptance criteria.
-- [README_SETUP.md](README_SETUP.md): setup, budget, artwork routes, and execution guidance.
-- [docs/DESIGN_SPEC.md](docs/DESIGN_SPEC.md): typesetting, page layout, table components, diagrams, and navigation.
-- [docs/REFERENCE_ANALYSIS.md](docs/REFERENCE_ANALYSIS.md): design lessons from 29 unique supplied reference books.
-- [docs/ART_DIRECTION.md](docs/ART_DIRECTION.md): original monochrome fantasy illustration direction.
-- [source/Heraldry_RC484.md](source/Heraldry_RC484.md): preserved canonical rules manuscript.
-- [references/README.md](references/README.md): optional selected-page visual calibration.
-- [.claude/agents/](.claude/agents/): five configured production roles.
+## Build
 
-The manuscript is the only authority for rules. Reference books supply visual inspiration only. Full commercial reference PDFs and page images are not included. Their absence does not block the build.
+```sh
+python3 -m pip install -r requirements.lock
+make test
+make clean all verify package
+```
 
-## Verify the uploaded kit
+See [BUILD.md](BUILD.md) for commands and [RELEASE_STATUS.md](production/RELEASE_STATUS.md) for actual evidence and limitations. Current PDFs and the release ZIP are in [dist/](dist/). Automated checks bind results to current source, code, assets and PDF hashes; visual review and physical printing remain separate.
 
-Run `python3 tools/preflight.py --baseline` from the repository root. The check uses only the Python standard library, verifies the source and all shipped checksums, and reports runtime capabilities. Read [docs/LAUNCH_CHECKLIST.md](docs/LAUNCH_CHECKLIST.md) for optional visual references and remaining account/art/printer inputs. These checks cover the launch kit, not a future generated book.
+## Design and components
 
-The publication PDFs, original art, final pagination, and inkjet file preflight are production tasks to be completed during execution.
+- [Design specification](docs/DESIGN_SPEC.md), [art direction](docs/ART_DIRECTION.md), [visual QA](docs/VISUAL_QA.md) and [inkjet profile](docs/INKJET_PRINT.md).
+- Manuscript snapshots and approved patch history: `source/` and `editorial/history/`.
+- Original atmospheric assets and prompts: `assets/art/incoming/` and `production/art/`.
+- Rules figure sources, SVGs and reviewed placement: `figures/`.
+- Typesetting and build tools: `typst/`, `tools/` and `config/`.
+- [Native Claude agents](.claude/agents/) and [reference analysis](docs/REFERENCE_ANALYSIS.md).
 
-## Primary output and visual contract
-
-Borderless portrait US Letter inkjet sheets, light cream/parchment tone with clean black ink, and a paper-white companion. Every page remains portrait; backgrounds extend to edges while essential content stays safe. Read [DESIGN_SPEC.md](docs/DESIGN_SPEC.md), [VISUAL_QA.md](docs/VISUAL_QA.md), [INKJET_PRINT.md](docs/INKJET_PRINT.md), and [design_tokens.json](config/design_tokens.json). The final book checker is `tools/verify_inkjet_pdf.py`; run it on final book PDFs during production. Physical printing is a separate proof step. Commercial wraps are optional additional work.
+The design is clean dark fantasy on cream or white, borderless portrait US Letter, with essential content protected inside the printer overscan area. Reference books provide visual inspiration only; the active Heraldry manuscript is the rules authority. Commercial PDFs are not bundled. Atmospheric illustrations still require supplied approved art or an explicitly authorized service. Physical printer proof remains NOT TESTED.

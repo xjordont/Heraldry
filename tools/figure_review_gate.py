@@ -37,6 +37,8 @@ def _sha(b):
 def _manifest_ids(root):
     m = json.loads((root / "figures/manifest.json").read_text())
     m = m["figures"] if isinstance(m, dict) else m
+    if not m:
+        raise ValueError("Empty figure manifest")
     return [f["id"] for f in m]
 
 
@@ -47,12 +49,17 @@ def current_hashes(root=ROOT):
     for anchor, items in pl.items():
         for it in (items if isinstance(items, list) else [items]):
             if isinstance(it, dict) and "id" in it:
+                if it["id"] in caps:
+                    raise ValueError(f"Duplicate figure placement: {it['id']}")
                 caps[it["id"]] = it.get("caption", "")
+    from figure_dependencies import hashes
+    rules = hashes(root)
     out = {}
     for fid in _manifest_ids(root):
         svg = root / "figures/out" / f"{fid}.svg"
         out[fid] = {"svg_sha256": _sha(svg.read_bytes()) if svg.exists() else None,
-                    "caption_sha256": _sha(caps[fid].encode("utf-8")) if fid in caps else None}
+                    "caption_sha256": _sha(caps[fid].encode("utf-8")) if fid in caps else None,
+                    "rules_sha256": rules.get(fid)}
     return out
 
 
@@ -60,6 +67,9 @@ def run_gate(root=ROOT, review_path=None, report_path=None):
     root = Path(root)
     review_path = Path(review_path or root / "production/qa/figure-semantic-review.json")
     report_path = Path(report_path or root / "production/qa/figure-review-gate.json")
+    ids = _manifest_ids(root)
+    if len(ids) != len(set(ids)):
+        raise ValueError("Duplicate manifest figure IDs")
     cur = current_hashes(root)
     reviews = {}
     reviewer = reviewed_at = None
@@ -68,6 +78,8 @@ def run_gate(root=ROOT, review_path=None, report_path=None):
         rv = json.loads(review_path.read_text())
         reviewer, reviewed_at = rv.get("reviewer"), rv.get("reviewed_at")
         for e in rv.get("figures", []):
+            if e.get("id") in reviews:
+                raise ValueError("Duplicate review figure IDs")
             reviews[e.get("id")] = e
     else:
         problems.append(f"review file missing: {review_path}")
@@ -83,9 +95,9 @@ def run_gate(root=ROOT, review_path=None, report_path=None):
         if e is None:
             row["fail_reasons"].append("no review entry")
         else:
-            row["reviewed"] = {"svg_sha256": e.get("svg_sha256"), "caption_sha256": e.get("caption_sha256")}
+            row["reviewed"] = {"svg_sha256": e.get("svg_sha256"), "caption_sha256": e.get("caption_sha256"), "rules_sha256": e.get("rules_sha256")}
             row["verdict"] = e.get("verdict")
-            for k in ("svg_sha256", "caption_sha256"):
+            for k in ("svg_sha256", "caption_sha256", "rules_sha256"):
                 if e.get(k) != c[k]:
                     row["stale"] = True
                     row["stale_reasons"].append(f"{k} " + ("missing from review" if not e.get(k) else "differs from current"))

@@ -1,0 +1,127 @@
+{
+  "cover-lead": {
+    "section": "h-1-the-world-of-heraldry",
+    "type": "para",
+    "prefix": "Banners rot in the rain. Shrines sink into the mud. Oaths are broken, kings are buried, and the roads between settlements grow more dangerous with each passing season. Yet the ruin"
+  },
+  "cover-fact-1": {
+    "section": "h-11-what-is-heraldry-skirmish",
+    "type": "para",
+    "prefix": "A standard competitive game uses 4 Heroes per side on a 36\"×36\" battlefield. It is usually played by 2 players, but supports 2–8 players by dividing control of each side's Heroes a"
+  },
+  "cover-fact-2": {
+    "section": "h-11-what-is-heraldry-skirmish",
+    "type": "para",
+    "prefix": "Heraldry Skirmish supports solo and cooperative play. In those games, 1–4 players control 1–4 allied Heroes against scenarios strengthened by additional Monsters, harsher threats, "
+  },
+  "cover-fact-3": {
+    "section": "h-11-what-is-heraldry-skirmish",
+    "type": "para",
+    "prefix": "A typical single game, called an adventure, lasts about 60–90 minutes (4–8 rounds). A typical campaign spans 16–18 adventures and is usually split across 8–18 play sessions."
+  },
+  "FIG-04": {
+    "section": "h-26-measurement-size-distances-and-rounding",
+    "type": "para",
+    "prefix": "Each orthogonal square of movement or distance counts as 1\", and each diagonal square counts as 1.5\", unless a rule says otherwise. For range and other non-movement distances, coun"
+  },
+  "FIG-08": {
+    "section": "h-273-areas-of-effect",
+    "type": "list",
+    "prefix": "Each affected combatant that can take a legal Reaction against the effect may declare at most one under 4.5. Roll the shared damage. Before resolving any defence or mitigation, res"
+  },
+  "FIG-07": {
+    "section": "h-284-cover",
+    "type": "para",
+    "prefix": "If a target has Cover, ranged weapon attacks and thrown weapon attacks against them roll their base damage dice with Disadvantage. If a non-area damaging ranged Power rolls damage "
+  },
+  "FIG-01": {
+    "section": "h-31-overview-of-a-round",
+    "type": "para",
+    "prefix": "If a specific rule places the Monster Phase before the Party Phase, both phases still resolve once before the End of Round begins."
+  },
+  "FIG-02": {
+    "section": "h-331-activating-a-combatant",
+    "type": "para",
+    "prefix": "A combatant cannot activate again during the same round after their activation ends."
+  },
+  "FIG-05": {
+    "section": "h-443-grid-mode-movement",
+    "type": "para",
+    "prefix": "Example: In Grid Mode, a Hero with Speed 5\" takes a Move action. They enter one orthogonal square for 1\", then two diagonal squares for 1.5\" each, spending 4\" in total. With 1\" of "
+  },
+  "FIG-09": {
+    "section": "h-446-forced-movement",
+    "type": "para",
+    "prefix": "Example: An effect pushes a Skeleton 3\" directly away from the effect's source, toward a ledge that lies 2\" along the forced movement path. The missing surface beyond the ledge doe"
+  },
+  "FIG-06": {
+    "section": "h-51-combat-basics",
+    "type": "para",
+    "prefix": "Reach does not change Engagement. A combatant can be within a Reach attack's melee distance without being Engaged."
+  },
+  "FIG-03": {
+    "section": "h-52-the-attack-sequence",
+    "type": "list",
+    "prefix": "Declare and verify. Declare the attacker, attack, target, primary damage type, and any additional damage types. Confirm LOS, visibility, range, Cover, and every other targeting req"
+  },
+  "FIG-10": {
+    "section": "h-94-monster-waking-and-activation-state",
+    "type": "para",
+    "prefix": "Once a group becomes Awake, it remains Awake for the rest of the adventure."
+  },
+  "FIG-11": {
+    "section": "h-c-standard-monster-ai-script",
+    "type": "para",
+    "prefix": "Unless a Monster rule explicitly says otherwise, resolving a valid AI Step instruction ends that Monster's activation."
+  },
+  "FIG-12": {
+    "section": "h-f-movement-priorities",
+    "type": "para",
+    "prefix": "Blocked Route: If no legal route lets the Monster reach a position this activation from which it may attack its Primary Target, but a legal route lets it reach a position this acti"
+  },
+  "FIG-13": {
+    "section": "h-preparation-steps",
+    "type": "list",
+    "prefix": "Determine Average Party Level (APL). Determine each party's APL as described in Section 6.14. Choose Climate. Select or randomly determine the Climate using 10.1.1 Climate and Core"
+  },
+  "FIG-14": {
+    "section": "h-preparation-steps",
+    "type": "list",
+    "prefix": "Determine Average Party Level (APL). Determine each party's APL as described in Section 6.14. Choose Climate. Select or randomly determine the Climate using 10.1.1 Climate and Core"
+  },
+  "FIG-16": {
+    "section": "h-scenario-2-the-whispering-grove",
+    "type": "para",
+    "prefix": "Activating a Standing Stone: A Hero adjacent to a Standing Stone uses Interact [2 AP] and makes a SPI Check. On a success, that party claims the stone; mark it with a token. A ston"
+  },
+  "FIG-15": {
+    "section": "h-scenario-2-the-chasm-crossing",
+    "type": "para",
+    "prefix": "Party Deployment: Both parties deploy along the same short battlefield edge (the \"start\" side of the Chasm), within 8\" of that edge. Parties alternate placing Heroes within that zo"
+  },
+  "FIG-17": {
+    "section": "h-112-the-campaign-cycle",
+    "type": "para",
+    "prefix": "The Aftermath Phase includes the return journey from the expedition site. After every adventure, whether the party wins or loses, resolve the Aftermath Phase and Town Phase unless "
+  },
+  "FIG-18": {
+    "section": "h-initial-positions-and-values",
+    "type": "para",
+    "prefix": "At the start of Round 1, each Hero has 3 AP. Edric has 16 HP, Mara has 12 HP, Varek has 15 HP, and Senna has 11 HP. Each Dire Wolf has 15 HP."
+  },
+  "FIG-19": {
+    "section": "h-b6-basic-scenario-the-couriers-strongbox",
+    "type": "para",
+    "prefix": "Treasure: Place 1 Strongbox at the battlefield centre. It is worth 12c. Place 3 Satchels, each worth 4c, with one Satchel on each Monster Entry marker."
+  },
+  "specimen-short-table": {
+    "section": "h-random-background-table-d20",
+    "type": "table",
+    "prefix": "d20 | Background | 1 | Farmer | 2 | Nomad | 3 | Sailor | 4 | Soldier | 5 | Smuggler | 6 | Courier | 7 | Scout | 8 | Performer | 9 | Artisan | 10 | Scholar | 11 | Apprentice | 12 | "
+  },
+  "specimen-wide-table": {
+    "section": "h-tier-5-legendary-artifact-armour-and-shields-d20",
+    "type": "table",
+    "prefix": "d20 | Name | Equipment Type | AD/AV | STR | DEX | INT | SPI | DEX Pen | Max Speed | Cost (c) | Description | 1 | Sunforged Full Plate | Chest | d12+5 | 8 | - | - | - | -5 | 5\" | 12"
+  }
+}

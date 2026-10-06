@@ -15,3 +15,5 @@ Inspect actual rendered files; distinguish all-page contact-sheet inspection fro
 Write actionable findings with severity, source/page/asset ID, evidence, and acceptance check. Retain blocked external inputs instead of marking them passing. Return concise totals and critical exceptions. Do not spawn workers.
 
 Apply VISUAL_QA.md and INKJET_PRINT.md independently. Run the supplied inkjet PDF checker on both book variants; inspect all-page substrate/edge coverage, art mattes, significant vector geometry and cropped overscan samples. Confirm identical cream/white pagination and resolved navigation. Physical proof is NOT TESTED until actual printed sheets have been examined; commercial wrap is NOT APPLICABLE unless separately requested.
+
+Follow docs/WORKFLOW.md: main is the working branch; do not create branches or push independently. Only the orchestrator promotes authorized manuscript patch batches to the next RC snapshot. Never edit an existing snapshot or apply build-only rules text patches. Artifact and layout edits do not bump RC.

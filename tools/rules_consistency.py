@@ -13,7 +13,7 @@ missing, checked = {}, 0
 def walk(bs):
     global checked
     for b in bs:
-        if b["type"] == "table" and plain(b["header"][0]) == "d10" and plain(b["header"][1]) == "1 Hero":
+        if b["type"] == "table" and plain(b["header"][0]) == "d10" and len(b["header"]) > 1 and plain(b["header"][1]) == "1 Hero":
             for r in b["rows"]:
                 for c in r[1:]:
                     for part in plain(c).split(","):
@@ -23,9 +23,13 @@ def walk(bs):
                             if mm.group(2) not in best:
                                 missing.setdefault(mm.group(2), []).append(b["id"])
         walk(b.get("blocks", []))
+        for item in b.get("items", []):
+            walk(item["blocks"])
 for ch in m["chapters"]:
     walk(ch["blocks"])
 out = {"bestiary_entries": len(best), "monster_group_mentions_checked": checked, "missing_bestiary_entries": missing,
        "status": "PASS" if not missing else "FAIL"}
 (ROOT / "production/qa/rules-consistency.json").write_text(json.dumps(out, indent=1))
 print(json.dumps(out))
+
+raise SystemExit(0 if out["status"] == "PASS" else 1)

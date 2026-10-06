@@ -155,6 +155,8 @@ def validate_placements():
     import blockindex
     import figdata
     idx = blockindex.load()
+    model = json.load(open(os.path.join(HERE, "..", "..", "build", "blocks.json")))
+    appendix_c = {b["id"] for ch in model["chapters"] if ch["id"].startswith("h-appendix-c") for b in ch["blocks"]}
     errs = []
     seen = set()
     for fid, m in figdata.META.items():
@@ -167,7 +169,7 @@ def validate_placements():
         if not idx[b]["top"]:
             errs.append("%s: block %s not top-level" % (fid, b))
         src = idx[b]["src"]
-        if src and src[0] >= 17122:
+        if b in appendix_c:
             errs.append("%s: block %s in Appendix C" % (fid, b))
         if fid in seen:
             errs.append("duplicate %s" % fid)

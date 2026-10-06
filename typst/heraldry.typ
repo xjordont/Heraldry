@@ -1,6 +1,7 @@
 // HERALDRY SKIRMISH — publication design system (frozen after specimen review).
 // All layout lives here; content.typ is generated from the protected manuscript.
 
+#let publication = json("../config/production.json")
 #let tokens = json("../config/design_tokens.json")
 #let substrate-name = sys.inputs.at("substrate", default: "cream")
 #let substrate = if substrate-name == "white" { rgb("#FFFFFF") } else { rgb(tokens.substrate.warm_cream_hex) }
@@ -92,7 +93,7 @@
 #let section-rule = line(length: 100%, stroke: 0.6pt + ink)
 
 #let book(body) = {
-  set document(title: "HERALDRY SKIRMISH: THE DYING LANDS — Release Candidate 484 (RC484)")
+  set document(title: publication.verified_publication_metadata.title + " — " + publication.verified_publication_metadata.version)
   set page(
     width: page-w, height: page-h,
     fill: substrate,

@@ -47,7 +47,7 @@ def rasters(doc):
         for img in p.get_images(full=True):
             xref = img[0]
             for r in p.get_image_rects(xref):
-                ppi = img[2] / (r.width / 72) if r.width else 0
+                ppi = min(img[2] / (r.width / 72), img[3] / (r.height / 72)) if r.width and r.height else 0
                 out.append({"page": i + 1, "xref": xref, "px": [img[2], img[3]], "placed_in": [round(r.width / 72, 2), round(r.height / 72, 2)], "effective_ppi": round(ppi)})
     return out
 
@@ -73,7 +73,7 @@ def main():
     res["page_labels_sample"] = [c[i].get_label() for i in (0, len(c) // 2, len(c) - 1)]
     ok = (not res["substrate_edges"]["cream"] and not res["substrate_edges"]["white"] and res["page_map_identical"]
           and res["links"]["cream"]["unresolved_links"] == 0 and res["links"]["white"]["unresolved_links"] == 0
-          and res["links"]["cream"]["bookmarks_bad_target"] == 0
+          and res["links"]["cream"]["bookmarks_bad_target"] == 0 and res["links"]["white"]["bookmarks_bad_target"] == 0
           and all(r["effective_ppi"] >= 300 for r in res["rasters"]))
     res["status"] = "PASS" if ok else "FAIL"
     Path(a.report).write_text(json.dumps(res, indent=1))

@@ -1,6 +1,7 @@
 // Inkjet calibration sheet — diagnostic only; never part of the reader edition.
 // Its edge markers intentionally sit inside the 0.375 in safe zone.
 #import "heraldry.typ": *
+#let revision = json("../source/versions.json").current
 #set page(width: page-w, height: page-h, fill: substrate, margin: 0pt)
 #set text(font: sans, size: 9.5pt, fill: ink)
 
@@ -11,7 +12,7 @@
   place(top + left, dx: 1.2in + k * 1.1in, dy: d + 1.5pt, text(size: 6.5pt, lbl + " in"))
 }
 #place(top + left, dx: 0.75in, dy: 0.75in, block(width: page-w - 1.5in)[
-  #text(font: display, weight: 700, size: 20pt)[Inkjet Calibration — RC484]
+  #text(font: display, weight: 700, size: 20pt)[Inkjet Calibration — #("RC" + str(revision))]
   #v(-4pt)
   #text(size: 9.5pt)[Print at Letter portrait, 100% / Actual size, borderless on. Diagnostic sheet only (edge markers intentionally violate the book's 0.375 in safe edge). Substrate of this file: #substrate-name.]
   #v(8pt)
@@ -21,9 +22,9 @@
       #v(4pt)
       #rect(width: 1in, height: 1in, stroke: 0.75pt + ink)
       #v(4pt)
-      #box(width: 4in, height: 18pt, {
-        place(line(start: (0pt, 0pt), end: (4in, 0pt), stroke: 0.6pt))
-        for i in range(0, 33) {
+      #box(width: 3in, height: 18pt, {
+        place(line(start: (0pt, 0pt), end: (3in, 0pt), stroke: 0.6pt))
+        for i in range(0, 25) {
           let x = i * 0.125in
           let l = if calc.rem(i, 8) == 0 { 12pt } else if calc.rem(i, 4) == 0 { 8pt } else { 4pt }
           place(dx: x, line(start: (0pt, 0pt), end: (0pt, l), stroke: 0.5pt))

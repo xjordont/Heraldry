@@ -1,8 +1,8 @@
 {
- "sha256": "2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3",
- "bytes": 1450722,
+ "sha256": "fc6caeeedf1e8e2cce80ed469ef74fb3c196048563c6bfec65031f2b03c4bbbe",
+ "bytes": 1451105,
  "lines": 17970,
- "words_whitespace": 241434,
+ "words_whitespace": 241495,
  "headings_by_level": {
   "1": 1,
   "2": 15,
@@ -111,14 +111,6 @@
    "blocks": 321
   }
  ],
- "patches_applied": [
-  "P-01",
-  "P-02",
-  "P-03",
-  "P-04",
-  "P-05",
-  "P-06",
-  "P-07"
- ],
+ "patches_applied": [],
  "duplicate_heading_slugs": {}
 }

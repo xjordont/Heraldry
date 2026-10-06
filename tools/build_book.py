@@ -526,12 +526,6 @@ def compile_book(variant="cream", out=None, query=True, edition="print"):
     return out, dt, None
 
 
-def typst_query(sel):
-    import typst
-    return json.loads(typst.query(str(ROOT / "typst/content.typ"), sel, field="value", root=str(ROOT),
-                                  font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True,
-                                  sys_inputs={"substrate": "cream", "edition": "print"}))
-
 
 STRADDLE_MAX = 250   # pt: max gap a straddling piece may leave at the foot of the previous page
 TOP_Y = 0.65 * 72

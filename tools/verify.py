@@ -9,32 +9,44 @@ ROOT = Path(__file__).resolve().parents[1]
 QA = ROOT / "production/qa"
 DIST = ROOT / "dist"
 PY = sys.executable
+from manuscript import version
+from provenance import check as check_provenance
+QUERY_CACHE = None
 
 
 def run(args, report=None):
+    if report:
+        Path(report).unlink(missing_ok=True)
     r = subprocess.run([PY] + args, cwd=ROOT, capture_output=True, text=True)
     status = "PASS" if r.returncode == 0 else "FAIL"
-    if report and Path(report).exists():
-        try:
-            status = json.loads(Path(report).read_text()).get("status", status)
-        except Exception:
-            pass
+    if report:
+        if not Path(report).exists():
+            status = "FAIL"
+        else:
+            try:
+                if json.loads(Path(report).read_text()).get("status") != "PASS":
+                    status = "FAIL"
+            except (ValueError, OSError):
+                status = "FAIL"
     return status, (r.stdout + r.stderr)[-600:]
 
 
 def tquery(sel):
-    import typst
-    return json.loads(typst.query(str(ROOT / "typst/content.typ"), sel, field="value", root=str(ROOT),
-                                  font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True,
-                                  sys_inputs={"substrate": "cream", "edition": "print"}))
+    global QUERY_CACHE
+    if QUERY_CACHE is None:
+        r = subprocess.run([PY, "tools/query_typst.py"], cwd=ROOT, capture_output=True, text=True, check=True)
+        QUERY_CACHE = json.loads(r.stdout)
+    return QUERY_CACHE[sel]
 
 
 def main():
     QA.mkdir(parents=True, exist_ok=True)
-    cream = DIST / "Heraldry_RC484_inkjet-borderless.pdf"
-    white = DIST / "Heraldry_RC484_inkjet-borderless-white.pdf"
-    digital = DIST / "Heraldry_RC484_digital.pdf"
+    cream = DIST / f"Heraldry_{version()}_inkjet-borderless.pdf"
+    white = DIST / f"Heraldry_{version()}_inkjet-borderless-white.pdf"
+    digital = DIST / f"Heraldry_{version()}_digital.pdf"
     st = {}
+    provenance = check_provenance()
+    st["build_provenance"] = "PASS"
     st["source_preflight"], _ = run(["tools/preflight.py", "--report", "production/preflight.json"])
     pf = json.loads((ROOT / "production/preflight.json").read_text())
     src_ok = next(c for c in pf["checks"] if c["check"] == "source_integrity")["status"]
@@ -43,13 +55,23 @@ def main():
     st["reconciliation_digital"], _ = run(["tools/reconcile.py", str(digital), "--skip-covers", "--report", str(QA / "reconciliation-digital.json")], QA / "reconciliation-digital.json")
     lay, _ = run(["tools/layout_qa.py", str(cream), "--report", str(QA / "layout.json")])
     lj = json.loads((QA / "layout.json").read_text())
-    st["layout_detectors"] = "PASS" if not lj["counts"] else "FAIL"
+    st["layout_detectors"] = "PASS" if lay == "PASS" and not lj["counts"] else "FAIL"
     st["inkjet_checker_cream"], _ = run(["tools/verify_inkjet_pdf.py", str(cream), "--report", str(QA / "inkjet-preflight.json")], QA / "inkjet-preflight.json")
     st["inkjet_checker_white"], _ = run(["tools/verify_inkjet_pdf.py", str(white), "--report", str(QA / "inkjet-preflight-white.json")], QA / "inkjet-preflight-white.json")
     st["print_supplementary"], _ = run(["tools/print_checks.py", "--cream", str(cream), "--white", str(white), "--report", str(QA / "print-checks.json")], QA / "print-checks.json")
     st["xref_audit"], _ = run(["tools/xref_audit.py"])
     xr = json.loads((QA / "xref-audit.json").read_text())
-    st["xref_audit"] = "PASS" if not xr["unresolved"] and not xr["duplicate_heading_numbers"] else "FAIL"
+    st["xref_audit"] = "PASS" if st["xref_audit"] == "PASS" and not xr["unresolved"] and not xr["duplicate_heading_numbers"] else "FAIL"
+
+    st["monster_references"], _ = run(["tools/rules_consistency.py"], QA / "rules-consistency.json")
+
+    try:
+        from visual_review_gate import check as check_visual
+        check_visual(cream, json.loads((QA / "reconciliation.json").read_text())["pdf_pages"])
+        st["visual_review_currency"] = "PASS"
+    except (ValueError, OSError) as exc:
+        st["visual_review_currency"] = "FAIL"
+        print(str(exc), file=sys.stderr)
 
     # ---- all-table audit: source id → output pages → representation → reconciliation
     rec = json.loads((QA / "reconciliation.json").read_text())
@@ -124,18 +146,23 @@ def main():
     applied = json.loads((ROOT / "build/blocks.json").read_text()).get("patches_applied", [])
     st["editorial_patches"] = "PASS" if declared == applied else "FAIL"
 
-    mandatory = ["editorial_patches", "source_preflight", "source_integrity", "reconciliation", "reconciliation_digital", "layout_detectors", "inkjet_checker_cream",
+    mandatory = ["visual_review_currency", "monster_references", "build_provenance", "editorial_patches", "source_preflight", "source_integrity", "reconciliation", "reconciliation_digital", "layout_detectors", "inkjet_checker_cream",
                  "inkjet_checker_white", "print_supplementary", "no_duplicate_tables_figures", "xref_audit", "table_audit", "index_audit", "figures_placed",
                  "figure_semantic_review"]
     failed = [k for k in mandatory if st.get(k) != "PASS"]
-    out = {"checks": st, "mandatory_failed": failed, "release_gate": "PASS" if not failed else "FAIL",
+    out = {"provenance": provenance, "checks": st, "mandatory_failed": failed, "release_gate": "PASS" if not failed else "FAIL",
            "not_covered_here": ["all-page visual inspection (production/qa/visual-review.json)",
                                 "diagram semantic correctness beyond the hash-bound review record (production/qa/figure-semantic-review.json)",
                                 "physical inkjet proof: NOT TESTED"]}
     (QA / "STATUS.json").write_text(json.dumps(out, indent=1))
-    print(json.dumps(out, indent=1))
+    print(json.dumps({k: v for k, v in out.items() if k != "provenance"}, indent=1))
     sys.exit(0 if not failed else 1)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        QA.mkdir(parents=True, exist_ok=True)
+        (QA / "STATUS.json").write_text(json.dumps({"release_gate": "FAIL", "mandatory_failed": ["verification_execution"], "error": str(exc)}, indent=2) + "\n")
+        raise

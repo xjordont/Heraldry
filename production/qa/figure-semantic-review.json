@@ -14,7 +14,8 @@
         "1091-1120",
         "1121-1131"
       ],
-      "findings": []
+      "findings": [],
+      "rules_sha256": "d1a72d227329f5931d351c9692f4eb8f098c34e88c637edf11242d8d97943548"
     },
     {
       "id": "FIG-02",
@@ -36,7 +37,8 @@
           "evidence_source_line": "1623-1626 (5.5.1 Trigger)",
           "fix": "None needed; verified in current SVG text and render."
         }
-      ]
+      ],
+      "rules_sha256": "fbd59fc5656526646fe120874331793c436722707f951b1808aeda3671f4b190"
     },
     {
       "id": "FIG-03",
@@ -57,7 +59,8 @@
           "evidence_source_line": "1488-1490",
           "fix": "Optional: append 'with any flat mitigation' to step 1. Accepted: summary is faithful and the examples do not depend on it."
         }
-      ]
+      ],
+      "rules_sha256": "a3ed7f5a303b089a293b4971c9b47e41dbabd4381b7906d7f63bd756bc802ce9"
     },
     {
       "id": "FIG-04",
@@ -68,7 +71,8 @@
         "588-628",
         "629-647"
       ],
-      "findings": []
+      "findings": [],
+      "rules_sha256": "f8ca9f36f833cd713aff701a69e1dd72987d11fb52905b708d378c8b57dedbe5"
     },
     {
       "id": "FIG-05",
@@ -96,7 +100,8 @@
           "evidence_source_line": "1325",
           "fix": "Optional: use a neutral hatch. Accepted."
         }
-      ]
+      ],
+      "rules_sha256": "420b6f83c7b85679fb2c60c75e6be4b3db5d3df2e986bfb14a32b03754c87c2d"
     },
     {
       "id": "FIG-06",
@@ -124,7 +129,8 @@
           "evidence_source_line": "1685; 641",
           "fix": "None. Triaged as A-12 NOT_AN_AMBIGUITY."
         }
-      ]
+      ],
+      "rules_sha256": "0fb4f27e637f8249d86a04ddd32eed46e0832a8971fb9ddb7b8ece48635e6902"
     },
     {
       "id": "FIG-07",
@@ -161,7 +167,8 @@
           "evidence_source_line": "838; 872; 804-805",
           "fix": "None; P-02 verified depicted faithfully. Triaged as A-19."
         }
-      ]
+      ],
+      "rules_sha256": "2c44cf737fb0cff529cfeef78a0cd24cd33a076e26a8b02d9ff4587f580f7ba0"
     },
     {
       "id": "FIG-08",
@@ -197,7 +204,8 @@
           "fix": "Panel C: replace \"The origin square (the source) is not affected.\" with \"The combatant the cone originates from is not affected.\" Caption: replace \"affects 7 squares and not its origin square, because a cone or line does not affect the combatant it originates from\" with \"affects 7 squares beyond its origin square, and never affects the combatant it originates from\". Optional: prefix panel A sentence with \"Unless a rule says otherwise,\". Does not affect the gate.",
           "resolution": "Re-review after wording fix: panel C now reads 'The combatant the cone originates from is not affected', panel A restores 'Unless a rule says otherwise', and the caption reads '7 squares beyond its origin square, and never affects the combatant it originates from' (caption omits the qualifier but matches P-01's meaning for the normal case). Matches patched 2.7.3 (does not affect the combatant it originates from); no claim about the origin square as a square. Cone geometry and counts (13, 7) unchanged in render."
         }
-      ]
+      ],
+      "rules_sha256": "21a93b363f7429179b99d2d01229ee8524458d968cfc75f1d680900bb42881a5"
     },
     {
       "id": "FIG-09",
@@ -217,7 +225,8 @@
           "evidence_source_line": "1371-1374",
           "fix": "None. Triaged as A-14."
         }
-      ]
+      ],
+      "rules_sha256": "4c471b73102a7d7e73c9004f4d9ed3eee84faadb73471c5d67dce44359abf2ad"
     },
     {
       "id": "FIG-10",
@@ -237,7 +246,8 @@
           "evidence_source_line": "7588",
           "fix": "Optional: add the 'unless a rule makes that enemy visible' clause. Accepted."
         }
-      ]
+      ],
+      "rules_sha256": "81d4f7ac6034183ba29085355d20a3fa2d779d93d62b3d310727be7d646a2e3e"
     },
     {
       "id": "FIG-11",
@@ -249,7 +259,8 @@
         "7638-7641",
         "1113-1120"
       ],
-      "findings": []
+      "findings": [],
+      "rules_sha256": "1534259aafaab4b1e571e823cbbfb5e70d73c460f949b6e54f5fdc5dcc005882"
     },
     {
       "id": "FIG-12",
@@ -276,7 +287,8 @@
           "evidence_source_line": "7662",
           "fix": "None. Triaged as A-15."
         }
-      ]
+      ],
+      "rules_sha256": "433b0affd47670e764c4ffd6e7657b1bfc721e4e2413820780611e25e05f6ca3"
     },
     {
       "id": "FIG-13",
@@ -346,7 +358,8 @@
           "fix": "Key: change to \"Where a scenario states no depth or zone size (Sun-Drowned 2 and 3, The Mire 3, 5 and 6), the step 11 default applies: 6\" from the edge, 8\"x8\" corners. Where it states no placing order (these, Pale City 1 and most edge scenarios), Heroes are placed alternately from the Roll-off loser.\" Panel D: \"(stated; also the 10.1 step 11 default)\". Does not affect the gate.",
           "resolution": "Re-review after wording fix: key now says 'Where a scenario states no depth or zone size (Sun-Drowned 2 and 3, The Mire 3, 5 and 6), the 10.1 step 11 default applies: 6\" from the edge, 8x8 corners. Where it states no placing order (these, Pale City 1 and most edge scenarios), Heroes are placed alternately from the Roll-off loser.' Re-checked against all 36 Party Deployment lines: depth silent = 13884, 14554, 14633; size silent = 13955, 14402; order silent = those plus 13404 and the edge scenarios. Panel D now '(as the scenario states; also the 10.1 step 11 default)', matching 12096. Geometry unchanged and legible, no clipping."
         }
-      ]
+      ],
+      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-14",
@@ -374,7 +387,8 @@
           "evidence_source_line": "12132; 12209",
           "fix": "None. Triaged as A-06 / A-16."
         }
-      ]
+      ],
+      "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
     },
     {
       "id": "FIG-15",
@@ -407,7 +421,8 @@
           "evidence_source_line": "12965-12969",
           "fix": "None. Triaged as A-06."
         }
-      ]
+      ],
+      "rules_sha256": "34e12852b9502196e116896e54eb8384a6aa8060b50a222c638ad1620e9098fd"
     },
     {
       "id": "FIG-16",
@@ -443,7 +458,8 @@
           "evidence_source_line": "12088",
           "fix": "None."
         }
-      ]
+      ],
+      "rules_sha256": "1fad8f1e8c4e8604159ccc830b0ea3c6d7d11aad1e12f6e03ba1cc7a50adc9a4"
     },
     {
       "id": "FIG-17",
@@ -464,7 +480,8 @@
           "evidence_source_line": "15197; 15411",
           "fix": "None."
         }
-      ]
+      ],
+      "rules_sha256": "b1b5db799055ac4c3a0c031aa1cd7bcf30835fdfa90c9746a2f63478d9ca560c"
     },
     {
       "id": "FIG-18",
@@ -500,7 +517,8 @@
           "evidence_source_line": "16360-16400",
           "fix": "None."
         }
-      ]
+      ],
+      "rules_sha256": "9bbb0b9a59a7e67dd419107ae7e7474a7407f27fc0d357e8da6da48682442c1a"
     },
     {
       "id": "FIG-19",
@@ -538,7 +556,8 @@
           "fix": "Caption: \"Illustrative example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move; extracting it with 1 Satchel and having defeated 2 Goblins and 1 Bandit scores 12 + 4 + 2 + 3 = 21c (see B.6).\" Does not affect the gate.",
           "resolution": "Re-review after wording fix: caption now 'Assumed example: ... extracting it with 1 Satchel, having defeated 2 Goblins and 1 Bandit, scores 12 + 4 + 2 + 3 = 21c (see B.6)', consistent with B.6 Monster Coin Value (score on reducing to 0 HP) and the panel's 'Example (assumed)'. Arithmetic 12+4+2+3=21 and P-06 'assigned at random' wording unchanged and correct; geometry unchanged."
         }
-      ]
+      ],
+      "rules_sha256": "17002c1770b12fc10565e4973020395819f8a09a293420473d626fd18a0b7646"
     }
   ],
   "summary": {
@@ -562,5 +581,6 @@
     "method": "Read every SVG text node and caption; compared with cited source spans (sed -n) and neighbouring lines; re-derived arithmetic and counts (FIG-03/04/05/08/18/19); rendered all 19 SVGs with typst and inspected each at 130 ppi, FIG-14 panels B/C at 400 ppi with pixel dimension checks; reconciled all 36 Party Deployment lines with FIG-13/14 coverage.",
     "not_checked": "Print-scale legibility, PDF placement and physical output not assessed here. Reviewed from rendered SVG (typst, 120 ppi, one 250 ppi crop) and SVG source coordinates only.",
     "re_review_scope": "Post-patch re-review (editorial/patches.json P-01..P-07 applied to the unchanged canonical source; line numbers are identical in the patched layer). Stale figures per figure_review_gate --print-hashes: FIG-07, FIG-08, FIG-13, FIG-16, FIG-18, FIG-19, each fully re-reviewed: every SVG text node, caption, number, distance and placement compared with cited patched-source lines; geometry re-measured from SVG coordinates; each rendered with typst and viewed (FIG-08 panel C at 250 ppi). The other 13 figures have unchanged SVG and caption hashes; their entries are carried forward from the earlier review (reviewed 2026-10-06T13:31:57Z). Patch-impact check on them: none of their cited source ranges contain a patched line; P-02 (Cover) does not alter FIG-09/14/15, which draw only the Impassable pattern as a missing surface/Chasm and never show Cover for it; FIG-14 panels B/C already state alternate placing and panels A/D state nothing contradicting the P-03 default; P-01 touches no other figure. Addendum: FIG-08, FIG-13 and FIG-19 re-reviewed after the illustrator fixed the three open minors; all three resolved, fresh hashes recorded."
-  }
+  },
+  "dependency_binding_note": "Existing independent review carried forward into RC485: rules text is byte-for-byte the previously reviewed RC484 publication patch layer, apart from its version marker. Future changes to dependent sections invalidate affected figures."
 }

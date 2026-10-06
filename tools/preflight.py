@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the publication launch kit; report runtime gaps without installing anything."""
+"""Validate the current publication repository; report runtime gaps without installing anything."""
 from __future__ import annotations
 import argparse
 import ast
@@ -36,7 +36,7 @@ def digest(path: Path) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
-    parser.add_argument('--baseline', action='store_true', help='Verify every shipped checksum before first execution')
+    parser.add_argument('--baseline', action='store_true', help='Also verify the archived original RC484 baseline')
     parser.add_argument('--report', type=Path, help='Optional JSON output; no secrets or environment values are recorded')
     args = parser.parse_args()
     root = args.root.resolve()
@@ -60,12 +60,9 @@ def main() -> int:
 
     def source_integrity():
         config = json.loads((root / 'config/production.json').read_text())
-        inventory = json.loads((root / 'source/source_inventory.json').read_text())
-        require(config['source'] == 'source/Heraldry_RC484.md', 'Canonical source path changed')
-        source = root / config['source']
-        require(digest(source) == SOURCE_HASH == inventory['sha256'], 'Canonical source hash mismatch')
-        require(source.stat().st_size == inventory['bytes'], 'Canonical source size mismatch')
-        return {'sha256': SOURCE_HASH, 'bytes': source.stat().st_size}
+        from manuscript import check
+        current = check(root)
+        return {"sha256": current["sha256"], "bytes": current["bytes"], "version": f"RC{current['number']}"}
 
     def configuration():
         c = json.loads((root / 'config/production.json').read_text())
@@ -73,6 +70,7 @@ def main() -> int:
         require(s['model'] == c['models']['orchestrator'], 'Orchestrator settings/config differ')
         require(s['effortLevel'] == c['models']['orchestrator_effort'], 'Orchestrator effort differs')
         require(c['models']['max_concurrent_subagents'] == 2, 'Concurrency differs from reviewed limit')
+        require(c["workflow"]["working_branch"] == "main", "Working branch differs from owner instruction")
         b = c['budget']
         require(b['target_spend_usd'] + b['repair_reserve_usd'] == b['claude_cloud_credit_limit_usd'], 'Budget allocations do not reconcile')
         require(b['claude_cloud_credit_limit_usd'] == 100 and not b['allow_paid_overage'], 'Reviewed credit boundary changed')
@@ -144,22 +142,8 @@ def main() -> int:
         return 'Python scripts parse successfully'
 
     def baseline():
-        lines = (root / 'SHA256SUMS.txt').read_text().splitlines()
-        seen = set()
-        for line in lines:
-            expected, name = line.split('  ', 1)
-            path = (root / name).resolve()
-            require(path.is_relative_to(root), 'Checksum path leaves repository')
-            require(name not in seen, 'Duplicate checksum entry')
-            require(path.is_file() and digest(path) == expected, 'Checksum mismatch: ' + name)
-            seen.add(name)
-        tracked = {p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()
-                   and '.git' not in p.parts and '__pycache__' not in p.parts
-                   and p.name != 'SHA256SUMS.txt' and 'private' not in p.parts
-                   and p.relative_to(root).parts[0] not in {'build', 'dist', 'tmp'}
-                   and not (p.relative_to(root).parts[0] == 'production' and p.name != 'STATE.md')}
-        require(tracked <= seen, 'Files missing from checksum inventory: ' + ', '.join(sorted(tracked - seen)))
-        return f'{len(seen)} shipped files match checksums'
+        require(digest(root / 'source/Heraldry_RC484.md') == SOURCE_HASH, 'Original RC484 baseline altered')
+        return 'Archived RC484 baseline hash verified; historical launch-kit checksums are in docs/history/launch-kit/'
 
     check('required_files', required_files)
     check('source_integrity', source_integrity)
@@ -171,8 +155,8 @@ def main() -> int:
     if args.baseline:
         check('shipped_baseline', baseline)
     commands = {n: bool(shutil.which(n)) for n in ['git', 'python3', 'typst', 'pandoc', 'pdfinfo', 'pdftoppm', 'qpdf', 'gs']}
-    modules = {n: importlib.util.find_spec(n) is not None for n in ['typst', 'fitz', 'pypdf', 'pdfplumber', 'PIL']}
-    result = {'scope': 'Launch-kit integrity only; not publication or live-Claude-account certification',
+    modules = {n: importlib.util.find_spec(n) is not None for n in ['typst', 'fitz', 'pypdf', 'markdown_it', 'fontTools', 'PIL']}
+    result = {'scope': 'Repository contracts only; not publication or live-Claude-account certification',
               'kit_status': 'FAIL' if any(c['status'] == 'FAIL' for c in checks) else 'PASS',
               'checks': checks,
               'runtime_observed': {'python': sys.version.split()[0], 'commands': commands, 'python_modules': modules},
