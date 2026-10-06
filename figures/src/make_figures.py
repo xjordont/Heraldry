@@ -68,7 +68,7 @@ def selfcheck():
     # FIG-08 counts
     assert len(fs.aura_squares((3, 3), 2)) == 13
     assert len(fs.cone_squares((0, 2), 3)) == 7
-    assert (0, 2) not in [q for q, _ in fs.cone_squares((0, 2), 3)]   # P-01: the origin square (the source) is not affected
+    assert (0, 2) not in [q for q, _ in fs.cone_squares((0, 2), 3)]   # the origin square is not among the counted cone squares (P-01 concerns the originating combatant)
     blk = fs.cone_squares((0, 2), 3, [(2, 3)])
     assert dict(blk)[(3, 3)] is True and dict(blk)[(3, 2)] is False
     # FIG-12 equal routes (not drawn) and FIG-18 arithmetic

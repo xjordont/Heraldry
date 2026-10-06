@@ -458,7 +458,7 @@ def fig08():
     s.line(ox3, oy3, ox3 + 24, oy3, INK, 1.0)
     pill(s, ox3 + 13, oy3 - 3, "X\"", 9, 600)
     s.text(ox3 + 28, oy3 - 20, "Aura X\"", 9, 700)
-    yy = s.para(X[0], 200, "Line width is 1\" unless listed. A Cone or Line does not affect the combatant it originates from. Tabletop: affected if any part of the footprint is within or touches the boundary.", PW, 9, lead=10.4)
+    yy = s.para(X[0], 200, "Line width is 1\" unless listed. Unless a rule says otherwise, a Cone or Line does not affect the combatant it originates from. Tabletop: affected if any part of the footprint is within or touches the boundary.", PW, 9, lead=10.4)
     s.text(X[0], yy + 3, "Schematic \u2014 not to scale", 9, 600, "start", "#333")
     ya = yy + 5
     # ------------- Panel B: aura grid -------------
@@ -483,7 +483,7 @@ def fig08():
     ox_, oy_ = g.c(*src)
     s.polygon([(ox_, oy_), (ox_ + 3 * K, oy_ - 1.5 * K), (ox_ + 3 * K, oy_ + 1.5 * K)], fill="none", stroke=INK, sw=1.1)
     g.token(0, 2, "A", r=5.5)
-    yc = s.para(X[2], g.oy + 5 * K + 12, "Squares whose centre lies within the cone (ties rounded outward): **%d squares** beyond the origin square. The origin square (the source) is not affected." % len(cs), PW, 9, lead=10.4)
+    yc = s.para(X[2], g.oy + 5 * K + 12, "Squares whose centre lies within the cone (ties rounded outward): **%d squares** beyond the origin square. The combatant the cone originates from is not affected." % len(cs), PW, 9, lead=10.4)
     # ------------- Panel D: blocked -------------
     panel_title(s, X[3], 0, "D", "Blocked by terrain")
     g = Grid(s, X[3] + 4, 24, 6, 5, K)

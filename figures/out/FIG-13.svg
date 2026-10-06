@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="479pt" viewBox="0 0 504 479">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="499.8pt" viewBox="0 0 504 499.8">
 <title>Party deployment configurations I</title>
 <desc>One validated diagram for each general deployment pattern used by the Core Scenarios: fixed long/short edges, roll-off choice of edge or corner, and corner zones.</desc>
 <defs>
@@ -137,9 +137,10 @@
 <rect x="41.41" y="261.28" width="13.19" height="10.89" fill="#fff"/>
 <text x="43.21" y="269.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">8"</text>
 <text x="0" y="405" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(1) The Setup Roll-off winner chooses an</text>
-<text x="0" y="415.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">8"×8" corner zone (10.1 step 11 default).</text>
-<text x="0" y="425.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(2) The other party deploys in the</text>
-<text x="0" y="436.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">diagonally opposite corner.</text>
+<text x="0" y="415.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">8"×8" corner zone (as the scenario states;</text>
+<text x="0" y="425.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">also the 10.1 step 11 default). (2) The other</text>
+<text x="0" y="436.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">party deploys in the diagonally opposite</text>
+<text x="0" y="446.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">corner.</text>
 <rect x="168" y="228" width="13" height="13" fill="#000"/>
 <text x="174.5" y="238.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">E</text>
 <text x="186" y="238.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Opposite corners, alternate placing</text>
@@ -182,12 +183,14 @@
 <text x="340" y="360.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">long edges, even on a square battlefield</text>
 <text x="340" y="371" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(10.1). Each party may field 1–4 Heroes;</text>
 <text x="340" y="381.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">two or three are shown. Where a scenario</text>
-<text x="340" y="391.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">states no depth, zone size or placing order</text>
-<text x="340" y="402.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(Sun-Drowned 2 and 3, The Mire 3, 5 and 6,</text>
-<text x="340" y="412.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Pale City 1), the 10.1 step 11 default</text>
-<text x="340" y="423" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">applies: 6" from the edge, 8"×8" corners,</text>
-<text x="340" y="433.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">alternate placing from the Roll-off loser.</text>
-<text x="340" y="443.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Where only "opposite battlefield edges"</text>
-<text x="340" y="454.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">are named, the Roll-off winner chooses</text>
-<text x="340" y="464.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the edge.</text>
+<text x="340" y="391.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">states no depth or zone size</text>
+<text x="340" y="402.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(Sun-Drowned 2 and 3, The Mire 3, 5 and</text>
+<text x="340" y="412.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">6), the 10.1 step 11 default applies: 6" from</text>
+<text x="340" y="423" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the edge, 8"×8" corners. Where it states no</text>
+<text x="340" y="433.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">placing order (these, Pale City 1 and most</text>
+<text x="340" y="443.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">edge scenarios), Heroes are placed</text>
+<text x="340" y="454.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">alternately from the Roll-off loser. Where</text>
+<text x="340" y="464.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">only "opposite battlefield edges" are</text>
+<text x="340" y="475" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">named, the Roll-off winner chooses the</text>
+<text x="340" y="485.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">edge.</text>
 </svg>
