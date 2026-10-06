@@ -1,6 +1,6 @@
 {
   "result": "PASS",
-  "review_date": "2026-10-05",
+  "review_date": "2026-10-06",
   "scope": "Launch kit validation; not rendered-book or live Claude-account validation",
   "native_agent_definitions": [
     "book-designer",
@@ -15,11 +15,20 @@
   "budget_arithmetic_validated": true,
   "external_spend_disabled_by_default": true,
   "prompt_topics_present": true,
-  "master_words": 4978,
-  "kit_version": 2,
+  "master_words": 5081,
+  "kit_version": 3,
   "reference_unique_books": 29,
   "reference_primary_pages": 14,
   "reference_selected_pages": 19,
   "reference_render_verified": true,
-  "github_root_readme_present": true
+  "github_root_readme_present": true,
+  "runnable_preflight_added": true,
+  "cloud_dependency_proxy_guidance_added": true,
+  "publication_execution_status": "NOT STARTED",
+  "preflight_negative_tests_passed": [
+    "source_mutation",
+    "budget_mismatch",
+    "baseline_tamper"
+  ],
+  "preflight_resume_state_update_passed": true
 }

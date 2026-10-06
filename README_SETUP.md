@@ -40,7 +40,7 @@ Open [Claude Code cloud](https://claude.ai/code), connect the private repository
 
 Configure the environment to allow the build dependencies and any selected external service. Depending on your environment, this may require GitHub/release downloads, Python package sources, licensed font sources, and the chosen image API domain. A prompt cannot enable network access that the environment denies. Claude is instructed to discover installed tools first and install only what is needed.
 
-For minimal interruptions, choose an available execution permission mode that permits the intended in-repository builds, dependency setup, and asset processing. If your cloud UI offers **Bypass permissions**, it avoids routine tool prompts in the isolated cloud task; choose it only for this dedicated repository/environment, without unrelated credentials. Otherwise use the available automatic/allow-rule configuration and expect mandatory policy blocks to remain possible. The kit deliberately does not commit blanket permission bypasses or override your account policies. Do not start in Plan mode, which is unsuitable for immediate implementation.
+Use the execution permission mode available in your cloud session for in-repository builds, dependency setup, and asset processing. Do not assume a Bypass option exists or that a repository setting can override mandatory policy blocks. The kit does not commit blanket permission bypasses or change your account policies. Do not start in Plan mode, which is unsuitable for immediate implementation.
 
 Keep account-level paid overage/automatic recharge disabled, or set its cap to your intended authorized amount, before launching if you want a strict external spending boundary. The prompt targets $80 and holds $20 for repairs, but **instructions in a prompt are not a hard billing control**. The native subagents are preferred over separately billed API/CLI workers.
 
@@ -154,3 +154,9 @@ This kit includes `docs/DESIGN_SPEC.md` and `docs/REFERENCE_ANALYSIS.md`, distil
 Default: upload this kit and start the build from its written specification. Optional: provide the 14 primary visual pages across six books for calibration. `references/README.md` explains hash-verified extraction, access, and exclusions. The complete commercial PDFs and their images are not bundled. Do not make their availability a build dependency.
 
 Read `MASTER_PROMPT.md` and execute it completely remains the launch instruction.
+
+## Final launch audit
+
+Read `docs/LAUNCH_CHECKLIST.md`. Before the first project edit, run `python3 tools/preflight.py --baseline --report production/preflight.json`. It verifies protected source bytes, shipped checksums, required files, config/agent contracts, and reference page selections. It reports installed runtime capabilities without exposing credentials or installing packages. On resume after legitimate project changes, omit `--baseline` while retaining the immutable source check.
+
+Current cloud documentation notes that downloads of release assets from unattached GitHub repositories can be blocked. Use a documented registry/system-package route where available and lock versions after successful provisioning; do not let repeated blocked release downloads consume the run.

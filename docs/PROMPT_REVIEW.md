@@ -51,3 +51,13 @@ The local validation checks parse production/settings JSON; parse agent YAML; ve
 - No commercial PDFs or page images in the kit. Local reference renders ignored by Git and excluded from final publication/release assets.
 - Source manuscript bytes unchanged; typography and all-table fidelity contracts retained.
 - Reference extraction tested with the supplied editions; specimen and future book completion remain execution work.
+
+## Final launch audit, 2026-10-06
+
+- Added runnable standard-library preflight with source/hash, config, five-agent, manifest, required-file, and script-syntax checks.
+- Added explicit initial/resumed-run contracts so legitimate production edits do not falsely invalidate baseline checks.
+- Added launch checklist and initial NOT STARTED state.
+- Removed speculative cloud Bypass-permission guidance; documented the cloud GitHub-proxy restriction affecting unrelated release downloads.
+- No reference PDF upload is required. Original illustration assets, printer inputs, and live account/model/credit access remain external inputs.
+- Scope: prepared assignment readiness; no generated publication, cloud dependency installation, or live account operation is certified.
+- Preflight validation passed on the pristine kit; deliberate manuscript mutation, budget mismatch, and baseline tampering were rejected. A legitimate state update passed the resume check.
