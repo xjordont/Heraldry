@@ -80,9 +80,7 @@
 }
 
 #let mainmatter() = {
-  pagebreak(weak: true)
-  set page(numbering: "1")
-  counter(page).update(1)
+  pagebreak(to: "odd", weak: true)
   [#metadata("main") <mainmatter>]
 }
 

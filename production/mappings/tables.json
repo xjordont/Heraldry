@@ -435,7 +435,8 @@
 "d100",
 "Result",
 "Chance"
-]
+],
+"family": "T027"
 },
 {
 "id": "T028",
@@ -451,7 +452,8 @@
 "d100",
 "Result",
 "Chance"
-]
+],
+"family": "T027"
 },
 {
 "id": "T029",
@@ -467,7 +469,8 @@
 "d100",
 "Result",
 "Chance"
-]
+],
+"family": "T027"
 },
 {
 "id": "T030",
@@ -483,7 +486,8 @@
 "d100",
 "Result",
 "Chance"
-]
+],
+"family": "T027"
 },
 {
 "id": "T031",
@@ -499,7 +503,8 @@
 "d100",
 "Result",
 "Chance"
-]
+],
+"family": "T027"
 },
 {
 "id": "T032",
@@ -514,7 +519,8 @@
 "header": [
 "Trait",
 "Rule"
-]
+],
+"family": "T032"
 },
 {
 "id": "T033",
@@ -529,7 +535,8 @@
 "header": [
 "Trait",
 "Rule"
-]
+],
+"family": "T032"
 },
 {
 "id": "T034",
@@ -599,14 +606,15 @@
 3725
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 3,
 "rows": 12,
 "header": [
 "Quality",
 "Value",
 "Rule"
-]
+],
+"family": "T037"
 },
 {
 "id": "T038",
@@ -622,7 +630,8 @@
 "Quality",
 "Value",
 "Rule"
-]
+],
+"family": "T037"
 },
 {
 "id": "T039",
@@ -638,7 +647,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T040",
@@ -654,7 +664,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T041",
@@ -670,7 +681,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T042",
@@ -686,7 +698,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T043",
@@ -702,7 +715,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T044",
@@ -718,7 +732,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T045",
@@ -734,7 +749,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T046",
@@ -750,7 +766,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T047",
@@ -766,7 +783,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T048",
@@ -782,7 +800,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T049",
@@ -798,7 +817,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T050",
@@ -814,7 +834,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T051",
@@ -830,7 +851,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T052",
@@ -846,7 +868,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T053",
@@ -862,7 +885,8 @@
 "d20",
 "Item",
 "Value (c)"
-]
+],
+"family": "T039"
 },
 {
 "id": "T054",
@@ -908,7 +932,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T055"
 },
 {
 "id": "T056",
@@ -925,7 +950,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T055"
 },
 {
 "id": "T057",
@@ -942,7 +968,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T055"
 },
 {
 "id": "T058",
@@ -959,7 +986,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T055"
 },
 {
 "id": "T059",
@@ -976,7 +1004,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T055"
 },
 {
 "id": "T060",
@@ -993,7 +1022,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T060"
 },
 {
 "id": "T061",
@@ -1010,7 +1040,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T060"
 },
 {
 "id": "T062",
@@ -1027,7 +1058,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T060"
 },
 {
 "id": "T063",
@@ -1044,7 +1076,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T060"
 },
 {
 "id": "T064",
@@ -1061,7 +1094,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T060"
 },
 {
 "id": "T065",
@@ -1078,7 +1112,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T065"
 },
 {
 "id": "T066",
@@ -1095,7 +1130,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T065"
 },
 {
 "id": "T067",
@@ -1112,7 +1148,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T065"
 },
 {
 "id": "T068",
@@ -1129,7 +1166,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T065"
 },
 {
 "id": "T069",
@@ -1146,7 +1184,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T065"
 },
 {
 "id": "T070",
@@ -1163,7 +1202,8 @@
 "Item",
 "Cost (c)",
 "Effect"
-]
+],
+"family": "T065"
 },
 {
 "id": "T071",
@@ -4178,7 +4218,7 @@
 10527
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 5,
 "rows": 10,
 "header": [
@@ -4187,7 +4227,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T224",
@@ -4196,7 +4237,7 @@
 10542
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 5,
 "rows": 10,
 "header": [
@@ -4205,7 +4246,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T225",
@@ -4223,7 +4265,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T226",
@@ -4241,7 +4284,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T227",
@@ -4259,7 +4303,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T228",
@@ -4277,7 +4322,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T229",
@@ -4295,7 +4341,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T230",
@@ -4313,7 +4360,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T231",
@@ -4331,7 +4379,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T232",
@@ -4349,7 +4398,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T233",
@@ -4367,7 +4417,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T234",
@@ -4385,7 +4436,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T235",
@@ -4403,7 +4455,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T236",
@@ -4421,7 +4474,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T237",
@@ -4439,7 +4493,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T238",
@@ -4457,7 +4512,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T239",
@@ -4475,7 +4531,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T240",
@@ -4493,7 +4550,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T241",
@@ -4511,7 +4569,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T242",
@@ -4529,7 +4588,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T243",
@@ -4547,7 +4607,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T244",
@@ -4565,7 +4626,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T245",
@@ -4583,7 +4645,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T246",
@@ -4601,7 +4664,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T247",
@@ -4619,7 +4683,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T248",
@@ -4637,7 +4702,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T249",
@@ -4655,7 +4721,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T250",
@@ -4673,7 +4740,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T251",
@@ -4691,7 +4759,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T252",
@@ -4709,7 +4778,8 @@
 "2 Heroes",
 "3 Heroes",
 "4 Heroes"
-]
+],
+"family": "T223"
 },
 {
 "id": "T253",
@@ -4766,14 +4836,15 @@
 11903
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 3,
 "rows": 6,
 "header": [
 "1d6",
 "Weather Condition",
 "Effect"
-]
+],
+"family": "T256"
 },
 {
 "id": "T257",
@@ -4782,14 +4853,15 @@
 11914
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 3,
 "rows": 6,
 "header": [
 "1d6",
 "Weather Condition",
 "Effect"
-]
+],
+"family": "T256"
 },
 {
 "id": "T258",
@@ -4814,14 +4886,15 @@
 11938
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 3,
 "rows": 6,
 "header": [
 "1d6",
 "Weather Condition",
 "Effect"
-]
+],
+"family": "T256"
 },
 {
 "id": "T260",
@@ -4830,14 +4903,15 @@
 11949
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 3,
 "rows": 6,
 "header": [
 "1d6",
 "Weather Condition",
 "Effect"
-]
+],
+"family": "T256"
 },
 {
 "id": "T261",
@@ -4853,7 +4927,8 @@
 "1d6",
 "Weather Condition",
 "Effect"
-]
+],
+"family": "T256"
 },
 {
 "id": "T262",
@@ -5977,7 +6052,8 @@
 "header": [
 "d20",
 "Journey Result"
-]
+],
+"family": "T307"
 },
 {
 "id": "T308",
@@ -5992,7 +6068,8 @@
 "header": [
 "d20",
 "Journey Result"
-]
+],
+"family": "T307"
 },
 {
 "id": "T309",
@@ -6007,7 +6084,8 @@
 "header": [
 "d20",
 "Journey Result"
-]
+],
+"family": "T307"
 },
 {
 "id": "T310",
@@ -6022,7 +6100,8 @@
 "header": [
 "d20",
 "Journey Result"
-]
+],
+"family": "T307"
 },
 {
 "id": "T311",
@@ -6037,7 +6116,8 @@
 "header": [
 "d20",
 "Journey Result"
-]
+],
+"family": "T307"
 },
 {
 "id": "T312",
@@ -6052,7 +6132,8 @@
 "header": [
 "d20",
 "Journey Result"
-]
+],
+"family": "T307"
 },
 {
 "id": "T313",

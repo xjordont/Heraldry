@@ -1,0 +1,32 @@
+{
+ "found_in_order": 8426,
+ "found_out_of_order": 0,
+ "missing": [],
+ "table_cells": 10341,
+ "table_cells_missing": [],
+ "tables_ok": 332,
+ "tables_total": 332,
+ "strong_runs": 22796,
+ "strong_missing": [],
+ "em_runs": 449,
+ "em_missing": [],
+ "hr_rendered_as_ornament": 42,
+ "out_of_order": [],
+ "units": 8800,
+ "status": "PASS",
+ "pdf_pages": 415,
+ "fonts": [
+  "Cinzel-Bold",
+  "Cinzel-Semibold",
+  "SourceSans3-Bold",
+  "SourceSans3-Italic",
+  "SourceSans3-Regular",
+  "SourceSans3-Semibold",
+  "SourceSerif4-Bold",
+  "SourceSerif4-Italic",
+  "SourceSerif4-Regular",
+  "SourceSerif4-Semibold",
+  "SourceSerif4-SemiboldIta"
+ ],
+ "unexpected_fonts": []
+}
