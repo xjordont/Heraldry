@@ -31,8 +31,8 @@
  },
  {
   "purpose": "Longest prose cells / long-description table",
-  "book_page_index": 366,
-  "folio": "360"
+  "book_page_index": 380,
+  "folio": "374"
  },
  {
   "purpose": "Monster profiles",
@@ -41,13 +41,13 @@
  },
  {
   "purpose": "Scenario with canonical scaling fields",
-  "book_page_index": 289,
-  "folio": "283"
+  "book_page_index": 293,
+  "folio": "287"
  },
  {
   "purpose": "Appendix reference page",
-  "book_page_index": 410,
-  "folio": "404"
+  "book_page_index": 424,
+  "folio": "418"
  },
  {
   "purpose": "Rules diagram",
@@ -56,7 +56,7 @@
  },
  {
   "purpose": "Index slice",
-  "book_page_index": 433,
-  "folio": "427"
+  "book_page_index": 447,
+  "folio": "441"
  }
 ]

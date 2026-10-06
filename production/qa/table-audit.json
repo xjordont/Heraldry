@@ -39,17 +39,15 @@
   "T082",
   "T084",
   "T223",
-  "T225",
   "T228",
   "T230",
-  "T232",
+  "T235",
   "T237",
   "T239",
   "T241",
   "T243",
   "T245",
-  "T247",
-  "T249",
+  "T252",
   "T253",
   "T255",
   "T256",
@@ -5582,10 +5580,17 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "c41ec24d3783fc35458d4582c212125e5eff1985e01c222f34ca5f888de48163",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
     234,
     234
@@ -5608,10 +5613,17 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "55749f4786af7880a4a4298443e80d463161112025ca8da6db1cf3cdfaed9f96",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
     235,
     235
@@ -5634,10 +5646,17 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "8faa08a5ebf881391b178408239e1d63df62d2f4d65909888c231755d9e9e1c6",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
     235,
     235
@@ -5660,17 +5679,24 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "5598673177fe8f42c5cf86f724b5fb183306ca1078664c4e9a15f860953a6607",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
-    235,
-    235
+    236,
+    236
    ],
    "folios": [
-    "229",
-    "229"
+    "230",
+    "230"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -5686,10 +5712,17 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "56404cbc14fd76665fea1f49f80f551e7c507b72ace234ad30e8763c8b7660e6",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
     236,
     236
@@ -5712,17 +5745,24 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "6c4f11f269310c6ae7d75bd3bfa99f674c52f562bb9ca7eadc1b50cd4f104bc8",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
-    236,
-    236
+    237,
+    237
    ],
    "folios": [
-    "230",
-    "230"
+    "231",
+    "231"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -5738,10 +5778,17 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "b2c160f6ec4a61cc853e630681e15d8ae03cf0645eda00caf9bd0d651ab822fd",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
     237,
     237
@@ -5764,17 +5811,24 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "72a76e559d59979e7c4763f0bd9b60385e046e826eddf366033bfdb39e32b6ae",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
-    237,
-    237
+    238,
+    238
    ],
    "folios": [
-    "231",
-    "231"
+    "232",
+    "232"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -5790,10 +5844,17 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "4bd8d4916de76dd1e9ddfe9bd9b6f3977ee427c2b3566af36c0faf5876531bd2",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
     238,
     238
@@ -5816,17 +5877,24 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "2bbcf4e3de0e09ba954151eb8a7f945a88f16e1a189375cdf92ca40c1a9cf0eb",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
-    238,
-    238
+    239,
+    239
    ],
    "folios": [
-    "232",
-    "232"
+    "233",
+    "233"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -5842,10 +5910,17 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "8ae27394352ff34cde520db2233e303dbca53afd4e18e60f31100db13e54d4a7",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
     239,
     239
@@ -5868,17 +5943,24 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "56a7e5883efd609a59b029df3025a535f234832cffabcddbc61a8a351fff5c81",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
-    239,
-    239
+    240,
+    240
    ],
    "folios": [
-    "233",
-    "233"
+    "234",
+    "234"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -5894,10 +5976,17 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "f53f740c3799466a7c38581a806450ad0f141ad79440fca97c2ba81005a10aac",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
     240,
     240
@@ -5920,10 +6009,17 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "093caab1c2e906484c8496f084a1d077fe567784046f34840e2944c92427ce22",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
     241,
     241
@@ -5946,17 +6042,24 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "792dd58ce7f22ed6a7f5f103cd14027f90c9a7031157159003e06759dcdd07df",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
-    241,
-    241
+    242,
+    242
    ],
    "folios": [
-    "235",
-    "235"
+    "236",
+    "236"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -5977,12 +6080,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    242,
-    243
+    243,
+    244
    ],
    "folios": [
-    "236",
-    "237"
+    "237",
+    "238"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6003,12 +6106,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    243,
-    243
+    244,
+    244
    ],
    "folios": [
-    "237",
-    "237"
+    "238",
+    "238"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6029,14 +6132,14 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    243,
+    244,
     244
    ],
    "folios": [
-    "237",
+    "238",
     "238"
    ],
-   "multipage": true,
+   "multipage": false,
    "reconciliation": "PASS"
   },
   {
@@ -6055,12 +6158,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    244,
-    244
+    245,
+    245
    ],
    "folios": [
-    "238",
-    "238"
+    "239",
+    "239"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6081,12 +6184,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    244,
-    244
+    245,
+    245
    ],
    "folios": [
-    "238",
-    "238"
+    "239",
+    "239"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6107,12 +6210,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    244,
-    245
+    245,
+    246
    ],
    "folios": [
-    "238",
-    "239"
+    "239",
+    "240"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6133,12 +6236,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    245,
-    245
+    246,
+    246
    ],
    "folios": [
-    "239",
-    "239"
+    "240",
+    "240"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6159,12 +6262,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    245,
-    246
+    246,
+    247
    ],
    "folios": [
-    "239",
-    "240"
+    "240",
+    "241"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6185,12 +6288,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    246,
-    246
+    247,
+    247
    ],
    "folios": [
-    "240",
-    "240"
+    "241",
+    "241"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6211,14 +6314,14 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    246,
+    247,
     247
    ],
    "folios": [
-    "240",
+    "241",
     "241"
    ],
-   "multipage": true,
+   "multipage": false,
    "reconciliation": "PASS"
   },
   {
@@ -6237,12 +6340,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    247,
-    247
+    248,
+    248
    ],
    "folios": [
-    "241",
-    "241"
+    "242",
+    "242"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6263,12 +6366,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    247,
-    247
+    248,
+    248
    ],
    "folios": [
-    "241",
-    "241"
+    "242",
+    "242"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6290,13 +6393,13 @@
    "field_map": null,
    "pdf_pages": [
     248,
-    248
+    249
    ],
    "folios": [
     "242",
-    "242"
+    "243"
    ],
-   "multipage": false,
+   "multipage": true,
    "reconciliation": "PASS"
   },
   {
@@ -6315,12 +6418,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    248,
-    248
+    249,
+    249
    ],
    "folios": [
-    "242",
-    "242"
+    "243",
+    "243"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6341,12 +6444,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    248,
-    249
+    249,
+    250
    ],
    "folios": [
-    "242",
-    "243"
+    "243",
+    "244"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6367,12 +6470,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    249,
-    249
+    250,
+    250
    ],
    "folios": [
-    "243",
-    "243"
+    "244",
+    "244"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6393,12 +6496,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    249,
-    250
+    250,
+    251
    ],
    "folios": [
-    "243",
-    "244"
+    "244",
+    "245"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6419,12 +6522,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    250,
-    250
+    251,
+    251
    ],
    "folios": [
-    "244",
-    "244"
+    "245",
+    "245"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6445,12 +6548,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    250,
-    251
+    251,
+    252
    ],
    "folios": [
-    "244",
-    "245"
+    "245",
+    "246"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6471,12 +6574,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    251,
-    251
+    252,
+    252
    ],
    "folios": [
-    "245",
-    "245"
+    "246",
+    "246"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6497,12 +6600,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    251,
-    252
+    252,
+    253
    ],
    "folios": [
-    "245",
-    "246"
+    "246",
+    "247"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6523,12 +6626,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    252,
-    252
+    253,
+    253
    ],
    "folios": [
-    "246",
-    "246"
+    "247",
+    "247"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6549,12 +6652,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    252,
-    253
+    253,
+    254
    ],
    "folios": [
-    "246",
-    "247"
+    "247",
+    "248"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6575,12 +6678,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    253,
-    253
+    254,
+    254
    ],
    "folios": [
-    "247",
-    "247"
+    "248",
+    "248"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6601,14 +6704,14 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    253,
+    254,
     254
    ],
    "folios": [
-    "247",
+    "248",
     "248"
    ],
-   "multipage": true,
+   "multipage": false,
    "reconciliation": "PASS"
   },
   {
@@ -6627,12 +6730,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    254,
-    254
+    255,
+    255
    ],
    "folios": [
-    "248",
-    "248"
+    "249",
+    "249"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6653,14 +6756,14 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    254,
+    255,
     255
    ],
    "folios": [
-    "248",
+    "249",
     "249"
    ],
-   "multipage": true,
+   "multipage": false,
    "reconciliation": "PASS"
   },
   {
@@ -6679,12 +6782,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    255,
-    255
+    256,
+    256
    ],
    "folios": [
-    "249",
-    "249"
+    "250",
+    "250"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6705,12 +6808,12 @@
    "family": "T223",
    "field_map": null,
    "pdf_pages": [
-    255,
-    255
+    256,
+    256
    ],
    "folios": [
-    "249",
-    "249"
+    "250",
+    "250"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6732,13 +6835,13 @@
    "field_map": null,
    "pdf_pages": [
     256,
-    256
+    257
    ],
    "folios": [
     "250",
-    "250"
+    "251"
    ],
-   "multipage": false,
+   "multipage": true,
    "reconciliation": "PASS"
   },
   {
@@ -6757,12 +6860,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    258,
-    259
+    259,
+    260
    ],
    "folios": [
-    "252",
-    "253"
+    "253",
+    "254"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6783,12 +6886,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    259,
-    259
+    260,
+    260
    ],
    "folios": [
-    "253",
-    "253"
+    "254",
+    "254"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6809,12 +6912,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    262,
-    264
+    264,
+    266
    ],
    "folios": [
-    "256",
-    "258"
+    "258",
+    "260"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6835,12 +6938,12 @@
    "family": "T256",
    "field_map": null,
    "pdf_pages": [
-    284,
-    285
+    286,
+    287
    ],
    "folios": [
-    "278",
-    "279"
+    "280",
+    "281"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6861,12 +6964,12 @@
    "family": "T256",
    "field_map": null,
    "pdf_pages": [
-    285,
-    285
+    287,
+    287
    ],
    "folios": [
-    "279",
-    "279"
+    "281",
+    "281"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6887,12 +6990,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    286,
-    286
+    288,
+    288
    ],
    "folios": [
-    "280",
-    "280"
+    "282",
+    "282"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6913,12 +7016,12 @@
    "family": "T256",
    "field_map": null,
    "pdf_pages": [
-    287,
-    287
+    289,
+    289
    ],
    "folios": [
-    "281",
-    "281"
+    "283",
+    "283"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6939,12 +7042,12 @@
    "family": "T256",
    "field_map": null,
    "pdf_pages": [
-    287,
-    287
+    289,
+    289
    ],
    "folios": [
-    "281",
-    "281"
+    "283",
+    "283"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -6965,12 +7068,12 @@
    "family": "T256",
    "field_map": null,
    "pdf_pages": [
-    287,
-    288
+    289,
+    290
    ],
    "folios": [
-    "281",
-    "282"
+    "283",
+    "284"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -6986,17 +7089,24 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "6b214c75e6460d6bac6225166baa5ebdc0fe2709eb62faf5399799f42a164c40",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
-    289,
-    289
+    291,
+    291
    ],
    "folios": [
-    "283",
-    "283"
+    "285",
+    "285"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7024,12 +7134,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    290,
-    290
+    293,
+    293
    ],
    "folios": [
-    "284",
-    "284"
+    "287",
+    "287"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7057,12 +7167,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    292,
-    292
+    296,
+    296
    ],
    "folios": [
-    "286",
-    "286"
+    "290",
+    "290"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7090,12 +7200,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    294,
-    294
+    298,
+    298
    ],
    "folios": [
-    "288",
-    "288"
+    "292",
+    "292"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7123,12 +7233,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    295,
-    295
+    299,
+    299
    ],
    "folios": [
-    "289",
-    "289"
+    "293",
+    "293"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7156,12 +7266,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    297,
-    297
+    302,
+    302
    ],
    "folios": [
-    "291",
-    "291"
+    "296",
+    "296"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7189,12 +7299,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    299,
-    299
+    304,
+    304
    ],
    "folios": [
-    "293",
-    "293"
+    "298",
+    "298"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7222,12 +7332,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    300,
-    300
+    306,
+    306
    ],
    "folios": [
-    "294",
-    "294"
+    "300",
+    "300"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7255,12 +7365,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    303,
-    303
+    309,
+    309
    ],
    "folios": [
-    "297",
-    "297"
+    "303",
+    "303"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7288,12 +7398,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    304,
-    304
+    311,
+    311
    ],
    "folios": [
-    "298",
-    "298"
+    "305",
+    "305"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7321,12 +7431,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    306,
-    306
+    313,
+    313
    ],
    "folios": [
-    "300",
-    "300"
+    "307",
+    "307"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7354,12 +7464,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    308,
-    308
+    315,
+    315
    ],
    "folios": [
-    "302",
-    "302"
+    "309",
+    "309"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7387,12 +7497,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    309,
-    309
+    316,
+    316
    ],
    "folios": [
-    "303",
-    "303"
+    "310",
+    "310"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7420,12 +7530,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    311,
-    311
+    319,
+    319
    ],
    "folios": [
-    "305",
-    "305"
+    "313",
+    "313"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7453,12 +7563,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    313,
-    313
+    321,
+    321
    ],
    "folios": [
-    "307",
-    "307"
+    "315",
+    "315"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7486,12 +7596,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    313,
-    313
+    321,
+    321
    ],
    "folios": [
-    "307",
-    "307"
+    "315",
+    "315"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7519,12 +7629,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    314,
-    314
+    322,
+    322
    ],
    "folios": [
-    "308",
-    "308"
+    "316",
+    "316"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7552,12 +7662,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    315,
-    315
+    323,
+    323
    ],
    "folios": [
-    "309",
-    "309"
+    "317",
+    "317"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7585,12 +7695,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    317,
-    317
+    325,
+    325
    ],
    "folios": [
-    "311",
-    "311"
+    "319",
+    "319"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7606,17 +7716,24 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "adc8c37a6767bca77a187f94d3f105b1f2deaeb615ef2607bf816da863244337",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
-    317,
-    317
+    326,
+    326
    ],
    "folios": [
-    "311",
-    "311"
+    "320",
+    "320"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7644,12 +7761,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    320,
-    320
+    329,
+    329
    ],
    "folios": [
-    "314",
-    "314"
+    "323",
+    "323"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7677,12 +7794,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    321,
-    321
+    331,
+    331
    ],
    "folios": [
-    "315",
-    "315"
+    "325",
+    "325"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7698,17 +7815,24 @@
    "rows": 1,
    "cells": 12,
    "cell_sha256": "b05857533dd67d16cedcf5aa36e77cb0e0633e7862838ced7bae3d87396f2a85",
-   "representation": "statstrip",
+   "representation": "statcard",
    "scope": "column",
    "family": null,
-   "field_map": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
    "pdf_pages": [
-    322,
-    322
+    333,
+    333
    ],
    "folios": [
-    "316",
-    "316"
+    "327",
+    "327"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7736,12 +7860,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    324,
-    324
+    334,
+    334
    ],
    "folios": [
-    "318",
-    "318"
+    "328",
+    "328"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7769,12 +7893,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    326,
-    326
+    336,
+    336
    ],
    "folios": [
-    "320",
-    "320"
+    "330",
+    "330"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7802,12 +7926,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    327,
-    327
+    338,
+    338
    ],
    "folios": [
-    "321",
-    "321"
+    "332",
+    "332"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7835,12 +7959,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    328,
-    328
+    339,
+    339
    ],
    "folios": [
-    "322",
-    "322"
+    "333",
+    "333"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7868,12 +7992,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    329,
-    329
+    341,
+    341
    ],
    "folios": [
-    "323",
-    "323"
+    "335",
+    "335"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7901,12 +8025,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    331,
-    331
+    342,
+    342
    ],
    "folios": [
-    "325",
-    "325"
+    "336",
+    "336"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7934,12 +8058,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    332,
-    332
+    344,
+    344
    ],
    "folios": [
-    "326",
-    "326"
+    "338",
+    "338"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -7967,12 +8091,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    334,
-    334
+    346,
+    346
    ],
    "folios": [
-    "328",
-    "328"
+    "340",
+    "340"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8000,12 +8124,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    336,
-    336
+    348,
+    348
    ],
    "folios": [
-    "330",
-    "330"
+    "342",
+    "342"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8033,12 +8157,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    337,
-    337
+    350,
+    350
    ],
    "folios": [
-    "331",
-    "331"
+    "344",
+    "344"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8066,12 +8190,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    339,
-    339
+    352,
+    352
    ],
    "folios": [
-    "333",
-    "333"
+    "346",
+    "346"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8099,12 +8223,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    340,
-    340
+    353,
+    353
    ],
    "folios": [
-    "334",
-    "334"
+    "347",
+    "347"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8132,12 +8256,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    341,
-    341
+    355,
+    355
    ],
    "folios": [
-    "335",
-    "335"
+    "349",
+    "349"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8165,12 +8289,12 @@
     "Sz": "row1.Sz"
    },
    "pdf_pages": [
-    343,
-    343
+    357,
+    357
    ],
    "folios": [
-    "337",
-    "337"
+    "351",
+    "351"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8191,12 +8315,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    346,
-    346
+    360,
+    360
    ],
    "folios": [
-    "340",
-    "340"
+    "354",
+    "354"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8224,12 +8348,12 @@
     "Mitigation": "entry.desc"
    },
    "pdf_pages": [
-    346,
-    347
+    360,
+    361
    ],
    "folios": [
-    "340",
-    "341"
+    "354",
+    "355"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -8250,12 +8374,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    350,
-    350
+    364,
+    364
    ],
    "folios": [
-    "344",
-    "344"
+    "358",
+    "358"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8276,12 +8400,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    350,
-    350
+    364,
+    364
    ],
    "folios": [
-    "344",
-    "344"
+    "358",
+    "358"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8302,12 +8426,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    351,
-    351
+    365,
+    365
    ],
    "folios": [
-    "345",
-    "345"
+    "359",
+    "359"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8328,12 +8452,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    353,
-    353
+    367,
+    367
    ],
    "folios": [
-    "347",
-    "347"
+    "361",
+    "361"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8354,12 +8478,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    356,
-    357
+    370,
+    371
    ],
    "folios": [
-    "350",
-    "351"
+    "364",
+    "365"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -8380,12 +8504,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    359,
-    359
+    373,
+    373
    ],
    "folios": [
-    "353",
-    "353"
+    "367",
+    "367"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8406,12 +8530,12 @@
    "family": "T307",
    "field_map": null,
    "pdf_pages": [
-    360,
-    360
+    374,
+    374
    ],
    "folios": [
-    "354",
-    "354"
+    "368",
+    "368"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8432,12 +8556,12 @@
    "family": "T307",
    "field_map": null,
    "pdf_pages": [
-    360,
-    361
+    374,
+    375
    ],
    "folios": [
-    "354",
-    "355"
+    "368",
+    "369"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -8458,12 +8582,12 @@
    "family": "T307",
    "field_map": null,
    "pdf_pages": [
-    361,
-    361
+    375,
+    375
    ],
    "folios": [
-    "355",
-    "355"
+    "369",
+    "369"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8484,12 +8608,12 @@
    "family": "T307",
    "field_map": null,
    "pdf_pages": [
-    361,
-    362
+    375,
+    376
    ],
    "folios": [
-    "355",
-    "356"
+    "369",
+    "370"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -8510,12 +8634,12 @@
    "family": "T307",
    "field_map": null,
    "pdf_pages": [
-    362,
-    363
+    376,
+    377
    ],
    "folios": [
-    "356",
-    "357"
+    "370",
+    "371"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -8536,12 +8660,12 @@
    "family": "T307",
    "field_map": null,
    "pdf_pages": [
-    363,
-    363
+    377,
+    377
    ],
    "folios": [
-    "357",
-    "357"
+    "371",
+    "371"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8562,12 +8686,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    366,
-    366
+    380,
+    380
    ],
    "folios": [
-    "360",
-    "360"
+    "374",
+    "374"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8598,12 +8722,12 @@
     "Special Abilities": "entry.desc"
    },
    "pdf_pages": [
-    366,
-    367
+    380,
+    381
    ],
    "folios": [
-    "360",
-    "361"
+    "374",
+    "375"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -8634,12 +8758,12 @@
     "Special Abilities": "entry.desc"
    },
    "pdf_pages": [
-    368,
-    369
+    382,
+    383
    ],
    "folios": [
-    "362",
-    "363"
+    "376",
+    "377"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -8660,12 +8784,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    369,
-    369
+    383,
+    383
    ],
    "folios": [
-    "363",
-    "363"
+    "377",
+    "377"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8686,12 +8810,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    371,
-    372
+    385,
+    386
    ],
    "folios": [
-    "365",
-    "366"
+    "379",
+    "380"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -8712,12 +8836,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    373,
-    373
+    387,
+    387
    ],
    "folios": [
-    "367",
-    "367"
+    "381",
+    "381"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8738,12 +8862,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    378,
-    378
+    392,
+    392
    ],
    "folios": [
-    "372",
-    "372"
+    "386",
+    "386"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8764,12 +8888,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    379,
-    379
+    393,
+    393
    ],
    "folios": [
-    "373",
-    "373"
+    "387",
+    "387"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8790,12 +8914,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    385,
-    385
+    399,
+    399
    ],
    "folios": [
-    "379",
-    "379"
+    "393",
+    "393"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8816,12 +8940,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    391,
-    391
+    405,
+    405
    ],
    "folios": [
-    "385",
-    "385"
+    "399",
+    "399"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8842,12 +8966,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    406,
-    406
+    420,
+    420
    ],
    "folios": [
-    "400",
-    "400"
+    "414",
+    "414"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8868,12 +8992,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    407,
-    407
+    421,
+    421
    ],
    "folios": [
-    "401",
-    "401"
+    "415",
+    "415"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8894,12 +9018,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    407,
-    409
+    421,
+    423
    ],
    "folios": [
-    "401",
-    "403"
+    "415",
+    "417"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -8920,12 +9044,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    409,
-    409
+    423,
+    423
    ],
    "folios": [
-    "403",
-    "403"
+    "417",
+    "417"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8946,12 +9070,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    410,
-    411
+    424,
+    425
    ],
    "folios": [
-    "404",
-    "405"
+    "418",
+    "419"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -8972,12 +9096,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    427,
-    427
+    441,
+    441
    ],
    "folios": [
-    "421",
-    "421"
+    "435",
+    "435"
    ],
    "multipage": false,
    "reconciliation": "PASS"
@@ -8998,12 +9122,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    427,
-    428
+    441,
+    442
    ],
    "folios": [
-    "421",
-    "422"
+    "435",
+    "436"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -9024,12 +9148,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    428,
-    429
+    442,
+    443
    ],
    "folios": [
-    "422",
-    "423"
+    "436",
+    "437"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -9050,12 +9174,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    429,
-    430
+    443,
+    444
    ],
    "folios": [
-    "423",
-    "424"
+    "437",
+    "438"
    ],
    "multipage": true,
    "reconciliation": "PASS"
@@ -9076,12 +9200,12 @@
    "family": null,
    "field_map": null,
    "pdf_pages": [
-    431,
-    432
+    445,
+    446
    ],
    "folios": [
-    "425",
-    "426"
+    "439",
+    "440"
    ],
    "multipage": true,
    "reconciliation": "PASS"

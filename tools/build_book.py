@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from tables import classify, cell_plain, COL_W, FULL_W  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
+FLOAT_FIGS = set(json.loads((ROOT / "config/design_tokens.json").read_text()).get("layout", {}).get("float_figures", []))
 BUILD = ROOT / "build"
 MAP = ROOT / "production/mappings"
 
@@ -439,7 +440,11 @@ class Book:
                     self.flush(cur)
                     cur = []
                     self.block_map.append((fig["id"], b["src"], "figure-full", None))
-                    self.out.append(f"#full[{self.figure(fig, full=True)}]\n")
+                    if fig["id"] in FLOAT_FIGS:
+                        # very tall reference figure: float to the next page top instead of leaving a void
+                        self.out.append(f"#place(auto, float: true, clearance: 12pt)[{self.figure(fig, full=True)}]\n")
+                    else:
+                        self.out.append(f"#full[{self.figure(fig, full=True)}]\n")
                 else:
                     cur.append(({"type": "figure", "id": fig["id"], "src": b["src"]}, self.figure(fig)))
         self.flush(cur)

@@ -33,7 +33,7 @@
   "stop_optional_expansion_usd": 60,
   "completion_only_usd": 80
  },
- "status": "Measured session cost $60.80 of $100 at the start of the scenario-map run (session-level; subagent inclusion not stated).",
+ "status": "Measured session cost $90.25 of $100 (session-level). Completion-only threshold passed; remaining work must be repair/packaging only. Art remains BLOCKED (no paid image authorization).",
  "measured": [
   {
    "at": "2026-10-06T13:15Z",
@@ -56,6 +56,12 @@
    "source": "get_session external_metadata.usage",
    "cost_usd": 60.8032456,
    "note": "start of illustrated-edition/scenario-map run; above the $60 stop-optional-expansion threshold, so this run is limited to requested deliverables"
+  },
+  {
+   "at": "2026-10-06T21:48Z",
+   "source": "get_session external_metadata.usage",
+   "cost_usd": 90.2539204,
+   "note": "end of scenario-map/layout run before final commit; above $80 completion-only threshold; ~$9.75 of the $100 authorization remains"
   }
  ]
 }

@@ -74,43 +74,271 @@
  {
   "id": "FIG-13",
   "placed": true,
-  "folio": "255",
+  "folio": "256",
   "semantic_status": "aligned to editorial patches 2026-10-06"
  },
  {
   "id": "FIG-14",
   "placed": true,
-  "folio": "256",
+  "folio": "257",
   "semantic_status": "corrected 2026-10-06 (release correction pass)"
  },
  {
   "id": "FIG-15",
   "placed": true,
-  "folio": "304",
+  "folio": "312",
   "semantic_status": "corrected 2026-10-06 (release correction pass)"
  },
  {
   "id": "FIG-16",
   "placed": true,
-  "folio": "285",
+  "folio": "289",
   "semantic_status": "aligned to editorial patches 2026-10-06"
  },
  {
   "id": "FIG-17",
   "placed": true,
-  "folio": "352",
+  "folio": "366",
   "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
  },
  {
   "id": "FIG-18",
   "placed": true,
-  "folio": "380",
+  "folio": "394",
   "semantic_status": "aligned to editorial patches 2026-10-06"
  },
  {
   "id": "FIG-19",
   "placed": true,
-  "folio": "397",
+  "folio": "411",
   "semantic_status": "aligned to editorial patches 2026-10-06"
+ },
+ {
+  "id": "FIG-20",
+  "placed": true,
+  "folio": "285",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-21",
+  "placed": true,
+  "folio": "286",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-22",
+  "placed": true,
+  "folio": "288",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-23",
+  "placed": true,
+  "folio": "291",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-24",
+  "placed": true,
+  "folio": "292",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-25",
+  "placed": true,
+  "folio": "294",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-26",
+  "placed": true,
+  "folio": "297",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-27",
+  "placed": true,
+  "folio": "299",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-28",
+  "placed": true,
+  "folio": "300",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-29",
+  "placed": true,
+  "folio": "302",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-30",
+  "placed": true,
+  "folio": "303",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-31",
+  "placed": true,
+  "folio": "305",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-32",
+  "placed": true,
+  "folio": "307",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-33",
+  "placed": true,
+  "folio": "309",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-34",
+  "placed": true,
+  "folio": "311",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-35",
+  "placed": true,
+  "folio": "314",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-36",
+  "placed": true,
+  "folio": "316",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-37",
+  "placed": true,
+  "folio": "318",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-38",
+  "placed": true,
+  "folio": "320",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-39",
+  "placed": true,
+  "folio": "322",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-40",
+  "placed": true,
+  "folio": "324",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-41",
+  "placed": true,
+  "folio": "326",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-42",
+  "placed": true,
+  "folio": "327",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-43",
+  "placed": true,
+  "folio": "329",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-44",
+  "placed": true,
+  "folio": "331",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-45",
+  "placed": true,
+  "folio": "332",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-46",
+  "placed": true,
+  "folio": "334",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-47",
+  "placed": true,
+  "folio": "335",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-48",
+  "placed": true,
+  "folio": "337",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-49",
+  "placed": true,
+  "folio": "339",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-50",
+  "placed": true,
+  "folio": "341",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-51",
+  "placed": true,
+  "folio": "343",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-52",
+  "placed": true,
+  "folio": "345",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-53",
+  "placed": true,
+  "folio": "346",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-54",
+  "placed": true,
+  "folio": "348",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-55",
+  "placed": true,
+  "folio": "350",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-56",
+  "placed": true,
+  "folio": "352",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
+ },
+ {
+  "id": "FIG-57",
+  "placed": true,
+  "folio": "258",
+  "semantic_status": "drawn 2026-10-06 pending independent review"
  }
 ]
