@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "status": "awaiting_lfs_objects",
+  "authorization": "Owner request 2026-10-06: upload the supplied sample PDFs to Heraldry for layout, art and illustration inspiration",
+  "purpose": "Visual inspiration only; active Heraldry manuscript governs all mechanics and lore",
+  "directory": "references/private/pdfs",
+  "storage": "Git LFS; excluded from publication packages",
+  "file_count": 22,
+  "total_bytes": 929562264,
+  "files": [
+    {
+      "id": "SAMPLE-01",
+      "filename": "01-Frostgrave.pdf",
+      "path": "references/private/pdfs/01-Frostgrave.pdf",
+      "bytes": 32869537,
+      "sha256": "17a1653860342768",
+      "title": "Frostgrave"
+    },
+    {
+      "id": "SAMPLE-02",
+      "filename": "02-Nimble-CoreRules.pdf",
+      "path": "references/private/pdfs/02-Nimble-CoreRules.pdf",
+      "bytes": 14963945,
+      "sha256": "c9550dce8ed293eb",
+      "title": "Nimble — Core Rules"
+    },
+    {
+      "id": "SAMPLE-03",
+      "filename": "03-Lasting-Tales.pdf",
+      "path": "references/private/pdfs/03-Lasting-Tales.pdf",
+      "bytes": 30706752,
+      "sha256": "d998c14277785af4",
+      "title": "Lasting Tales"
+    },
+    {
+      "id": "SAMPLE-04",
+      "filename": "04-Pathfinder-2e-Player-Core-Remaster.pdf",
+      "path": "references/private/pdfs/04-Pathfinder-2e-Player-Core-Remaster.pdf",
+      "bytes": 28849599,
+      "sha256": "9e34130ba88cb6a7",
+      "title": "Pathfinder 2e — Player Core Remaster"
+    },
+    {
+      "id": "SAMPLE-05",
+      "filename": "05-Dungeoneers-Rulebook-v16.pdf",
+      "path": "references/private/pdfs/05-Dungeoneers-Rulebook-v16.pdf",
+      "bytes": 11697114,
+      "sha256": "5e9aa6742d42fcae",
+      "title": "Dungeoneers Rulebook — v16"
+    },
+    {
+      "id": "SAMPLE-06",
+      "filename": "06-FLftB-Core-Rules-3rd-Edition.pdf",
+      "path": "references/private/pdfs/06-FLftB-Core-Rules-3rd-Edition.pdf",
+      "bytes": 23350619,
+      "sha256": "1cc445a38a44fd3a",
+      "title": "Five Leagues from the Borderlands — Core Rules, Third Edition"
+    },
+    {
+      "id": "SAMPLE-07",
+      "filename": "07-ARENACONTEST-4-.pdf",
+      "path": "references/private/pdfs/07-ARENACONTEST-4-.pdf",
+      "bytes": 6178354,
+      "sha256": "6bda1cef073c1d7c",
+      "title": "Arena Contest"
+    },
+    {
+      "id": "SAMPLE-08",
+      "filename": "08-ATO_CORE_Rulebook_v1.1.pdf",
+      "path": "references/private/pdfs/08-ATO_CORE_Rulebook_v1.1.pdf",
+      "bytes": 36533183,
+      "sha256": "64e8c4c30b73783c",
+      "title": "ATO — Core Rulebook v1.1"
+    },
+    {
+      "id": "SAMPLE-09",
+      "filename": "09-SAS-Rulebook-3-.pdf",
+      "path": "references/private/pdfs/09-SAS-Rulebook-3-.pdf",
+      "bytes": 9532161,
+      "sha256": "d30e80368a251144",
+      "title": "SAS Rulebook"
+    },
+    {
+      "id": "SAMPLE-10",
+      "filename": "10-Rulebook-web-Dungeon-Universalis-2-.pdf",
+      "path": "references/private/pdfs/10-Rulebook-web-Dungeon-Universalis-2-.pdf",
+      "bytes": 26144070,
+      "sha256": "7249b48451c76d1f",
+      "title": "Dungeon Universalis Rulebook"
+    },
+    {
+      "id": "SAMPLE-11",
+      "filename": "11-Middara.pdf",
+      "path": "references/private/pdfs/11-Middara.pdf",
+      "bytes": 96792036,
+      "sha256": "667b7b6c2c9f85c0",
+      "title": "Middara"
+    },
+    {
+      "id": "SAMPLE-12",
+      "filename": "12-EAHQ.pdf",
+      "path": "references/private/pdfs/12-EAHQ.pdf",
+      "bytes": 60789133,
+      "sha256": "114fc23ee36e4759",
+      "title": "EAHQ"
+    },
+    {
+      "id": "SAMPLE-13",
+      "filename": "13-Ker-Nethalas-Carnage-Aether-3-.pdf",
+      "path": "references/private/pdfs/13-Ker-Nethalas-Carnage-Aether-3-.pdf",
+      "bytes": 9683862,
+      "sha256": "83e856bea4967164",
+      "title": "Ker Nethalas — Carnage Aether"
+    },
+    {
+      "id": "SAMPLE-14",
+      "filename": "14-Hametsu-3-.pdf",
+      "path": "references/private/pdfs/14-Hametsu-3-.pdf",
+      "bytes": 98162107,
+      "sha256": "0a393f1bdb606799",
+      "title": "Hametsu"
+    },
+    {
+      "id": "SAMPLE-15",
+      "filename": "15-The-Walking-Dead-All-Out-War.pdf",
+      "path": "references/private/pdfs/15-The-Walking-Dead-All-Out-War.pdf",
+      "bytes": 48546210,
+      "sha256": "850e4eba12012c13",
+      "title": "The Walking Dead — All Out War"
+    },
+    {
+      "id": "SAMPLE-16",
+      "filename": "16-XCOM-The-Miniatures-Game-Core-Rules-digital.pdf",
+      "path": "references/private/pdfs/16-XCOM-The-Miniatures-Game-Core-Rules-digital.pdf",
+      "bytes": 21736111,
+      "sha256": "a80fe8ea98dd2697",
+      "title": "XCOM — The Miniatures Game Core Rules"
+    },
+    {
+      "id": "SAMPLE-17",
+      "filename": "17-The-Village-Hunt-Veil-Hollow.pdf",
+      "path": "references/private/pdfs/17-The-Village-Hunt-Veil-Hollow.pdf",
+      "bytes": 30689553,
+      "sha256": "286e97e5ba48dce6",
+      "title": "The Village Hunt — Veil Hollow"
+    },
+    {
+      "id": "SAMPLE-18",
+      "filename": "18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf",
+      "path": "references/private/pdfs/18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf",
+      "bytes": 25768590,
+      "sha256": "b86881466e048836",
+      "title": "Relicblade — The Seekers Handbook, Second Edition"
+    },
+    {
+      "id": "SAMPLE-19",
+      "filename": "19-Call-of-Dungeons.pdf",
+      "path": "references/private/pdfs/19-Call-of-Dungeons.pdf",
+      "bytes": 37383029,
+      "sha256": "fa9410145097ea0b",
+      "title": "Call of Dungeons"
+    },
+    {
+      "id": "SAMPLE-20",
+      "filename": "20-FINAL-GoN-Dux-Disciplinam.pdf",
+      "path": "references/private/pdfs/20-FINAL-GoN-Dux-Disciplinam.pdf",
+      "bytes": 65011274,
+      "sha256": "99f551cc7f8b0993",
+      "title": "GoN — Dux Disciplinam"
+    },
+    {
+      "id": "SAMPLE-21",
+      "filename": "21-FINAL-GoN-Tome-of-Knowledge.pdf",
+      "path": "references/private/pdfs/21-FINAL-GoN-Tome-of-Knowledge.pdf",
+      "bytes": 60859567,
+      "sha256": "6127616692d0c948",
+      "title": "GoN — Tome of Knowledge"
+    },
+    {
+      "id": "SAMPLE-22",
+      "filename": "22-FINAL-GoN-Scenario-Book.pdf",
+      "path": "references/private/pdfs/22-FINAL-GoN-Scenario-Book.pdf",
+      "bytes": 153315458,
+      "sha256": "aef6cb8051f4912e",
+      "title": "GoN — Scenario Book"
+    }
+  ]
+}

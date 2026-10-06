@@ -1,32 +1,53 @@
-# Optional visual references
+# Visual reference PDF library
 
-The mandatory design instructions live in `docs/DESIGN_SPEC.md`; the rationale and sampled observations live in `docs/REFERENCE_ANALYSIS.md`. `reference_manifest.json` identifies exact supplied file hashes and selected PDF viewer pages. Reference availability is optional and never blocks the Heraldry build.
+The owner authorized the 22 supplied sample books for visual inspiration on 2026-10-06. Originals belong in `references/private/pdfs/`, using Git LFS. The exact filenames, byte counts and SHA256 hashes are in [sample_pdfs.json](sample_pdfs.json); its status distinguishes a prepared transfer from a completed, hash-verified upload. Reference availability never blocks the Heraldry build.
 
-## Default
+## Use in Claude Code
 
-Upload the kit's contents to the project repository. Read the design specification and execute MASTER_PROMPT.md. The distilled guidance is sufficient to begin the actual-content specimen.
+Read `docs/DESIGN_SPEC.md`, `docs/REFERENCE_ANALYSIS.md`, `docs/ART_DIRECTION.md` and `docs/INKJET_PRINT.md` first. Then inspect a small selection relevant to the current design problem: typography and hierarchy, readable rules/table layouts, art integrated with negative space, scenario maps and legends, or navigation/index design. These PDFs are visual references, not Heraldry source manuscripts or original Heraldry assets.
 
-## Optional visual calibration
+Git LFS pointers are small text files, not readable PDFs. Fetch only the books needed for the current task, for example:
 
-Keep chosen source PDFs in a separate authorised reference directory. The recommended first set is BlackDeathCity, Deth Wizards, Mythras, Hametsu, Five Leagues, and Hellcrawl: 14 selected viewer pages across six unique books. Do not read entire books or copies with identical hashes.
+```sh
+git lfs install --local
+git lfs pull --include="references/private/pdfs/06-FLftB-Core-Rules-3rd-Edition.pdf,references/private/pdfs/14-Hametsu-3-.pdf"
+```
 
-Preview the selection without loading sources:
+To fetch all 22 originals, use `git lfs pull --include="references/private/pdfs/*.pdf"`. This downloads about 887 MiB. Check files against the catalog before choosing pages. If LFS authentication, quota or tool availability blocks retrieval, report the exact limitation and continue with the distilled guides.
 
-    python3 tools/render_reference_pages.py --plan
+The earlier curated `reference_manifest.json` contains edition-specific page selections for nine books; only some are among this 22-book upload. Match the SHA256 hash before reusing page numbers. Other books need fresh page inspection. Do not claim all sample pages were reviewed merely because their files are available.
 
-Render only the primary selection:
+Inspect representative pages as images at readable scale. Record actual PDF viewer page numbers and concrete observations for useful specimens. Adopt principles such as disciplined spacing, hierarchy, column rhythm, restrained ink drawing, legible table rules and clear deployment geometry. Adapt them to Heraldry's clean dark fantasy identity, light substrate and portrait borderless US Letter inkjet constraints. Do not copy reference artwork, lettering, prose or mechanics into Heraldry.
 
-    python3 -m pip install PyMuPDF
-    python3 tools/render_reference_pages.py --source-root /path/to/authorised/reference-pdfs
+## Catalog
 
-The output goes to `references/private/`, which is excluded from Git by default. Inspect render-status.json for availability, successful rendering, and any PDF warnings. The exact-file hash verifies that the selected page numbers refer to the inspected edition. Different editions need a new visual check and a revised manifest.
+| ID | Sample | File |
+|---|---|---|
+| SAMPLE-01 | Frostgrave | [PDF](private/pdfs/01-Frostgrave.pdf) |
+| SAMPLE-02 | Nimble — Core Rules | [PDF](private/pdfs/02-Nimble-CoreRules.pdf) |
+| SAMPLE-03 | Lasting Tales | [PDF](private/pdfs/03-Lasting-Tales.pdf) |
+| SAMPLE-04 | Pathfinder 2e — Player Core Remaster | [PDF](private/pdfs/04-Pathfinder-2e-Player-Core-Remaster.pdf) |
+| SAMPLE-05 | Dungeoneers Rulebook — v16 | [PDF](private/pdfs/05-Dungeoneers-Rulebook-v16.pdf) |
+| SAMPLE-06 | Five Leagues from the Borderlands — Core Rules, Third Edition | [PDF](private/pdfs/06-FLftB-Core-Rules-3rd-Edition.pdf) |
+| SAMPLE-07 | Arena Contest | [PDF](private/pdfs/07-ARENACONTEST-4-.pdf) |
+| SAMPLE-08 | ATO — Core Rulebook v1.1 | [PDF](private/pdfs/08-ATO_CORE_Rulebook_v1.1.pdf) |
+| SAMPLE-09 | SAS Rulebook | [PDF](private/pdfs/09-SAS-Rulebook-3-.pdf) |
+| SAMPLE-10 | Dungeon Universalis Rulebook | [PDF](private/pdfs/10-Rulebook-web-Dungeon-Universalis-2-.pdf) |
+| SAMPLE-11 | Middara | [PDF](private/pdfs/11-Middara.pdf) |
+| SAMPLE-12 | EAHQ | [PDF](private/pdfs/12-EAHQ.pdf) |
+| SAMPLE-13 | Ker Nethalas — Carnage Aether | [PDF](private/pdfs/13-Ker-Nethalas-Carnage-Aether-3-.pdf) |
+| SAMPLE-14 | Hametsu | [PDF](private/pdfs/14-Hametsu-3-.pdf) |
+| SAMPLE-15 | The Walking Dead — All Out War | [PDF](private/pdfs/15-The-Walking-Dead-All-Out-War.pdf) |
+| SAMPLE-16 | XCOM — The Miniatures Game Core Rules | [PDF](private/pdfs/16-XCOM-The-Miniatures-Game-Core-Rules-digital.pdf) |
+| SAMPLE-17 | The Village Hunt — Veil Hollow | [PDF](private/pdfs/17-The-Village-Hunt-Veil-Hollow.pdf) |
+| SAMPLE-18 | Relicblade — The Seekers Handbook, Second Edition | [PDF](private/pdfs/18-Relicblade-The-Seekers-Handbook-2nd-Edition.pdf) |
+| SAMPLE-19 | Call of Dungeons | [PDF](private/pdfs/19-Call-of-Dungeons.pdf) |
+| SAMPLE-20 | GoN — Dux Disciplinam | [PDF](private/pdfs/20-FINAL-GoN-Dux-Disciplinam.pdf) |
+| SAMPLE-21 | GoN — Tome of Knowledge | [PDF](private/pdfs/21-FINAL-GoN-Tome-of-Knowledge.pdf) |
+| SAMPLE-22 | GoN — Scenario Book | [PDF](private/pdfs/22-FINAL-GoN-Scenario-Book.pdf) |
 
-For one particular design problem, request only relevant IDs, for example:
+## Publication boundary
 
-    python3 tools/render_reference_pages.py --source-root /path/to/reference-pdfs --ids REF-CALLTOARMS REF-TNA
+`references/private/` remains excluded from publication ZIPs and local render caches remain ignored. The original PDFs are explicitly tracked through LFS despite this directory's default ignore rule. Never include reference PDF bytes or reference page images in the Heraldry digital/print PDFs, specimen or release archive. Preserve the repository's private visibility.
 
-`--all` includes all nine manifested books and 19 selected pages. It is optional, not the default reading assignment. These reference pages are evidence, not original Heraldry assets. Keep them out of the publication PDFs and release archive. If copying excerpts into a shared or cloud project, do so only with the necessary permission; private hosting is not a substitute for that permission.
-
-For cloud execution without reference file access, proceed with the distilled specification. If approved reference evidence is supplied through an available private channel, point Claude to its exact location and manifest ID. Give individual workers only the decisions or selected images needed for their task.
-
-Claude Code currently documents visual image reads and PDF page-range reads using Poppler. See https://code.claude.com/docs/en/tools-reference. Verify the installed tools rather than assuming the future session has identical behaviour.
+The one-time `Import original visual reference PDFs` workflow prepares scoped LFS upload actions, waits for the authorized transfer, downloads and verifies every original, and only then commits PDF pointers to main. It never commits repository credentials or temporary upload URLs. After successful import, the workflow can be removed; keep the catalog, PDFs and this guide.
