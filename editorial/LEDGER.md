@@ -2,9 +2,21 @@
 
 Canonical source: `source/Heraldry_RC484.md`, SHA-256 `2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3` (verified on every parse).
 
-## Applied source patches
+## Applied source patches (author-authorized, 2026-10-06)
 
-None. `editorial/patches.json` is empty; the publication text is byte-identical to the manuscript at the inline-text level.
+Seven find/replace patches in `editorial/patches.json` (each must match exactly once) are applied to a separate publication text layer. `source/Heraldry_RC484.md` is unchanged and still hash-verified. Each patch closes one item from the ambiguity triage.
+
+| Patch | Section | Issue closed | New text (excerpt) |
+|---|---|---|---|
+| P-01 | 2.7.3 | A-04 (+ Tabletop equivalent): does a cone or line affect the combatant it originates from? | Unless a rule says otherwise, a cone or line originates at the effect's source and does not affect the combatant it originates from. |
+| P-02 | 2.9 | A-19: Impassable Terrain 'provides Cover' vs terrain table 'Chasms and pits ... provide no Cover' | It provides **Cover** unless its terrain entry says otherwise. It does not block **LOS**. A combatant may **Jump** over an **Impassable Terrain** feat |
+| P-03 | 10.1 Preparation Steps, step 11 | A-07, A-08, A-09: unstated deployment edge pair, depth, corner-zone size and placement order | 11. **Deploy the Parties.** Resolve deployment exactly as the scenario instructs. Where the scenario is silent, the **Setup Roll-off** winner chooses  |
+| P-04 | 10.4 Greenmark Scenario 2 | A-02: 'central Standing Stone' undefined for three Stones in a triangle | When a Hero first Interacts with a Standing Stone, place the Antlered Warden adjacent to that Stone. |
+| P-05 | 10.4 Greenmark Scenario 2 | A-03: 'at the perimeter of the Central Clearing, 4" from its edge' is self-contradictory | Place inside the Central Clearing, **4"** from its edge. |
+| P-06 | B.6 | A-18: which Monster group goes to which Monster Entry marker | at the **3 Monster Entry** markers, one complete group per marker, assigned at random. |
+| P-07 | A.11 starting positions | A-01: Satchel 'at the battlefield centre' yet 'adjacent to the centre ruin' (A.2/A.4 govern) | / **Dispatch Satchel** / Adjacent to the centre ruin. / |
+
+A-10 (Chasm Fall vs the generic Jump failure) needed no patch: the scenario's own rule governs under 1.6 and FIG-15 states it.
 
 ## Layout-only transformations (not text changes)
 
@@ -44,7 +56,7 @@ Canonical text is unchanged in every case. Section 1.6 lines: 431, 433, 435
 * **A-10 The Chasm Crossing: generic failed Jump (4.4.9: place at last legal point before the gap, Prone, movement ends) vs scenario 'A failed Jump into the Chasm causes a Chasm Fall'** (FIG-15; lines 1394, 1399, 13003, 13005, 13007): A failed Jump across a Ledge gap over the Chasm is a Chasm Fall (removed from play; Hero Defeated with a normal Injuries Roll; non-Hero as 0 HP; carried items lost), subject to the Hero/Hireling Fly/Climb AP option and the Monster Fly/Climb placement in 13007.
 * **A-19 Audit addition (not in ledger): Impassable Terrain 'provides Cover' vs terrain table row 'Chasms and pits - Impassable Terrain - They provide no Cover'** (FIG-07, FIG-09, FIG-14, FIG-15; lines 838, 872): Chasms and pits provide no Cover; other Impassable Terrain does (FIG-07 panel F unaffected).
 
-### Genuinely unresolved (7) — reported to the author; figures draw only the uncontested part
+### Previously unresolved (7) — now closed by patches P-01 and P-03 to P-06
 
 * **A-02 Whispering Grove: Warden placed 'adjacent to the central Standing Stone' but 3 Stones form a rough triangle** (FIG-16; lines 12088, 12062, 12100): (1) The Stone nearest the centre of the Central Clearing / battlefield. (2) The Stone that was just Interacted with (the placement trigger). (3) Random Determination among the three Stones (by analogy with 7612). (4) Any point adjacent to the centre of the triangle (reading 'central' loosely).. Impact: Low to moderate: changes the Warden's starting position relative to the Stones and Heroes (8" Entangling Roots range, who is nearest), so can sway which party the Warden pressures first. No rule contradiction; players need a house default.
 * **A-03 Whispering Grove Group 2: 'perimeter of the Central Clearing, 4" from its edge'** (FIG-16; lines 12093): (1) On the perimeter circle. (2) 4" inside the edge. (3) 4" outside the clearing. (4) Anywhere in the ring from edge to 4" inside.. Impact: Low: places one Resting group; affects wake-up distances (6" movement trigger) but no figure shows it.

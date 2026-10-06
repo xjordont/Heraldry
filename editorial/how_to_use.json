@@ -4,23 +4,43 @@
   "colophon": [
     "HERALDRY SKIRMISH: THE DYING LANDS",
     "Release Candidate 484 (RC484).",
-    "This edition is typeset from the RC484 manuscript without alteration of its rules text. Contents, running heads, page numbers, figures, bookmarks and the index are navigation and explanatory additions of this edition.",
+    "This edition is typeset from the RC484 manuscript with seven authorized clarifications to its rules text (area-of-effect sources, Impassable Terrain Cover, default party deployment, and three setup placements). Contents, running heads, page numbers, figures, bookmarks and the index are navigation and explanatory additions of this edition.",
     "Art-light edition: atmospheric illustrations are not included in this release; ornaments and rules diagrams are original vector drawings.",
     "Typeset in Source Serif 4, Source Sans 3 and Cinzel, used under the SIL Open Font License 1.1.",
     "Formatted for borderless US Letter (8.5 × 11 in) printing."
   ],
   "sections": [
-    {"heading": "Finding your way", "paras": [
-      "The rules are presented in eleven numbered chapters followed by Appendices A, B and C. Chapter and section numbers are those of the RC484 manuscript, and every cross-reference in the text uses them. This edition adds page numbers, running heads, a contents list, PDF bookmarks, hyperlinks and an index."]},
-    {"heading": "Where to start", "paras": [
-      "Section 1.1 contains a route table for a first game, a quick or demonstration game, a standard one-off adventure, a campaign, and rules lookup during play.",
-      "Appendix A (Learn to Play) is a guided first game. Appendix B (Basic Mode) is a simplified way to play. Appendix C (Rules Reference) gathers summaries for use at the table and cites the full rules."]},
-    {"heading": "Reading the page", "paras": [
-      "Passages set entirely in italics describe the world. Worked examples are marked by a rule in the left margin.",
-      "Monster profiles open with a six-field stat line: HP, AV, SPD, LVL, CV and Sz. A few wide tables whose rows contain long rules text are set as entries: each source row becomes one entry, and every column heading is kept as a field label in its original order."]},
-    {"heading": "Figures", "paras": [
-      "Numbered figures are explanatory additions to this edition. They illustrate the adjacent rules, are schematic unless a scale is stated, and do not add to or change any rule. Where a figure seems to differ from the text, the text governs."]},
-    {"heading": "Index", "paras": [
-      "The index lists game terms, conditions, actions, terrain, procedures and campaign concepts with the pages where they are defined or applied. Page numbers refer to this edition only."]}
+    {
+      "heading": "Finding your way",
+      "paras": [
+        "The rules are presented in eleven numbered chapters followed by Appendices A, B and C. Chapter and section numbers are those of the RC484 manuscript, and every cross-reference in the text uses them. This edition adds page numbers, running heads, a contents list, PDF bookmarks, hyperlinks and an index."
+      ]
+    },
+    {
+      "heading": "Where to start",
+      "paras": [
+        "Section 1.1 contains a route table for a first game, a quick or demonstration game, a standard one-off adventure, a campaign, and rules lookup during play.",
+        "Appendix A (Learn to Play) is a guided first game. Appendix B (Basic Mode) is a simplified way to play. Appendix C (Rules Reference) gathers summaries for use at the table and cites the full rules."
+      ]
+    },
+    {
+      "heading": "Reading the page",
+      "paras": [
+        "Passages set entirely in italics describe the world. Worked examples are marked by a rule in the left margin.",
+        "Monster profiles open with a six-field stat line: HP, AV, SPD, LVL, CV and Sz. A few wide tables whose rows contain long rules text are set as entries: each source row becomes one entry, and every column heading is kept as a field label in its original order."
+      ]
+    },
+    {
+      "heading": "Figures",
+      "paras": [
+        "Numbered figures are explanatory additions to this edition. They illustrate the adjacent rules, are schematic unless a scale is stated, and do not add to or change any rule. Where a figure seems to differ from the text, the text governs."
+      ]
+    },
+    {
+      "heading": "Index",
+      "paras": [
+        "The index lists game terms, conditions, actions, terrain, procedures and campaign concepts with the pages where they are defined or applied. Page numbers refer to this edition only."
+      ]
+    }
   ]
 }
