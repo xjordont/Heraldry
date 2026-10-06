@@ -1,33 +1,25 @@
 {
  "pdf": "dist/Heraldry_RC484_inkjet-borderless.pdf",
- "sha256": "2a3ac389612c4168b2bca7c4c94e1648babfe536036f8d5183283038f41ce132",
+ "sha256": "57bb9362779092a7f183d426186791e0f26b2005633ba38953e8da944c718ff1",
  "pages": 436,
  "all_page_contact_sheets": {
   "batches": [
-   "1-24",
-   "25-48",
-   "49-72",
-   "73-96",
-   "97-120",
-   "121-144",
-   "145-168",
-   "169-192",
-   "193-216",
-   "217-240",
-   "241-264",
-   "265-288",
-   "289-312",
-   "313-336",
-   "337-360",
-   "361-384",
-   "385-408",
-   "409-432",
-   "433-436"
+   "1-40",
+   "41-80",
+   "81-120",
+   "121-160",
+   "161-200",
+   "201-240",
+   "241-280",
+   "281-320",
+   "321-360",
+   "361-400",
+   "401-436"
   ],
-  "render_dpi": 24,
+  "render_dpi": 20,
   "pages_covered": "1-436 (all)",
   "inspected": true,
-  "pass": "release correction pass 2026-10-06"
+  "pass": "editorial patch pass 2026-10-06 (374 pages repaginated)"
  },
  "detailed_pages_viewed_at_45-80dpi": [
   "title i",

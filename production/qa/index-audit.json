@@ -6,16 +6,16 @@
  "term_pages": {
   "g-ap": [
    "10",
-   "32",
+   "31",
+   "35",
    "36",
-   "37",
-   "84",
+   "83",
    "410"
   ],
   "g-triumph": [
    "10",
-   "351",
-   "367",
+   "350",
+   "366",
    "419"
   ],
   "g-hidden": [
@@ -23,13 +23,13 @@
    "18",
    "20",
    "23",
+   "54",
    "55",
-   "56",
    "413"
   ],
   "g-cover-terrain": [
    "17",
-   "24",
+   "23",
    "412"
   ],
   "g-cover": [
@@ -48,15 +48,15 @@
    "415"
   ],
   "g-open-terrain": [
-   "24",
+   "23",
    "415"
   ],
   "g-impassable-terrain": [
-   "24",
+   "23",
    "414"
   ],
   "g-blocking-terrain": [
-   "24",
+   "23",
    "411"
   ],
   "g-natural": [
@@ -66,347 +66,345 @@
   ],
   "g-difficult-terrain": [
    "25",
-   "26",
-   "42",
+   "41",
    "412"
   ],
   "g-dangerous-terrain": [
    "25",
-   "26",
    "412",
    "424"
   ],
   "g-slippery-terrain": [
-   "26",
+   "25",
    "417"
   ],
   "g-shallow-water": [
-   "26",
+   "25",
    "417",
    "425"
   ],
   "g-deep-water": [
-   "26",
+   "25",
    "412",
    "425"
   ],
   "g-swim-x": [
-   "26",
-   "189",
+   "25",
+   "188",
    "419"
   ],
   "g-elevation": [
-   "27",
+   "26",
    "412",
    "425"
   ],
   "g-party-phase": [
+   "28",
    "29",
-   "30",
-   "376",
+   "375",
    "400",
    "416"
   ],
   "g-monster-phase": [
-   "29",
-   "32",
+   "28",
+   "31",
+   "375",
    "376",
-   "377",
-   "379",
+   "378",
    "381",
    "415"
   ],
   "g-spot": [
+   "35",
    "36",
-   "37",
-   "55",
+   "54",
    "418"
   ],
   "g-forced-movement": [
-   "41",
+   "40",
    "413"
   ],
   "g-push-x": [
-   "41",
+   "40",
    "416"
   ],
   "g-pull-x": [
-   "41",
+   "40",
    "416"
   ],
   "g-reach": [
-   "45",
+   "44",
    "416"
   ],
   "g-dodge": [
-   "47",
-   "50",
+   "46",
+   "49",
    "412"
   ],
   "g-critical-hit": [
-   "48",
-   "140",
+   "47",
+   "139",
    "412"
   ],
   "g-total-miss": [
-   "48",
+   "47",
    "419"
   ],
   "g-temporary-hp": [
-   "49",
+   "48",
    "419"
   ],
   "g-armour-value-av": [
-   "50",
+   "49",
    "410"
   ],
   "g-armour-dice-ad": [
-   "50",
+   "49",
    "410"
   ],
   "g-immune": [
-   "50",
+   "49",
+   "195",
    "196",
-   "197",
    "414"
   ],
   "g-resistant": [
-   "50",
-   "192",
-   "194",
+   "49",
+   "191",
+   "193",
    "417"
   ],
   "g-vulnerable": [
-   "50",
-   "196",
+   "49",
+   "195",
    "419"
   ],
   "g-parry": [
-   "51",
-   "287",
+   "50",
+   "286",
    "415"
   ],
   "g-knocked-out": [
-   "53",
-   "57",
+   "52",
+   "56",
    "414"
   ],
   "g-bleeding": [
-   "55",
+   "54",
    "410"
   ],
   "g-blinded": [
-   "55",
+   "54",
    "410"
   ],
   "g-cursed": [
-   "55",
-   "328",
+   "54",
+   "327",
    "412"
   ],
   "g-frightened": [
-   "55",
+   "54",
    "413"
   ],
   "g-immobilized": [
-   "56",
+   "55",
    "414"
   ],
   "g-invisible": [
    "23",
-   "56",
+   "55",
    "414"
   ],
   "g-prone": [
-   "57",
+   "56",
    "416"
   ],
   "g-silenced": [
-   "57",
+   "56",
    "417"
   ],
   "g-sleeping": [
-   "57",
+   "56",
    "417"
   ],
   "g-slowed": [
-   "57",
+   "56",
    "418"
   ],
   "g-stunned": [
-   "57",
+   "56",
    "418"
   ],
   "g-weakened": [
-   "58",
+   "57",
    "419"
   ],
   "g-initiative": [
-   "30",
-   "59",
-   "340",
+   "29",
+   "58",
+   "339",
    "414"
   ],
   "g-party-leader": [
+   "58",
    "59",
-   "60",
    "416"
   ],
   "g-darkvision": [
-   "63",
+   "62",
    "412"
   ],
   "g-sunder": [
-   "73",
+   "72",
    "419"
   ],
   "g-caster-supremacy": [
-   "73",
+   "72",
    "411"
   ],
   "g-blood-surge": [
-   "83",
+   "82",
    "411"
   ],
   "g-hp": [
-   "49",
-   "53",
-   "84",
-   "180",
+   "48",
+   "52",
+   "83",
+   "179",
    "386",
    "413"
   ],
   "g-apl": [
-   "86",
+   "85",
+   "92",
    "93",
-   "94",
-   "344",
+   "343",
    "410"
   ],
   "g-metal-equipment": [
-   "90",
-   "148",
+   "89",
+   "147",
    "415",
    "426"
   ],
   "g-advantage": [
    "13",
-   "93",
+   "92",
    "409"
   ],
   "g-empower": [
-   "148",
+   "147",
+   "149",
    "150",
-   "151",
    "413"
   ],
   "g-target": [
-   "153",
-   "185",
+   "152",
+   "184",
    "419"
   ],
   "g-critical-cast": [
-   "148",
-   "153",
+   "147",
+   "152",
    "412"
   ],
   "g-blood-price": [
-   "164",
+   "163",
    "411"
   ],
   "g-awake": [
-   "181",
-   "183",
-   "345",
+   "180",
+   "182",
+   "344",
    "410"
   ],
   "g-primary-target": [
-   "182",
+   "181",
    "416"
   ],
   "g-target-priority": [
-   "182",
+   "181",
+   "283",
    "284",
-   "285",
    "419"
   ],
   "g-recharge-x-y": [
-   "183",
+   "182",
    "417"
   ],
   "g-engaged": [
-   "184",
+   "183",
    "413"
   ],
   "g-random-determination": [
    "17",
-   "185",
+   "184",
    "416"
   ],
   "g-beast": [
-   "187",
-   "191",
-   "193",
+   "186",
+   "190",
+   "192",
    "410"
   ],
   "g-fiend": [
-   "188",
-   "214",
-   "216",
+   "187",
+   "213",
+   "215",
    "413"
   ],
   "g-heard-the-song": [
-   "190",
-   "234",
+   "189",
+   "233",
    "413"
   ],
   "g-pressure-clock": [
-   "283",
-   "285",
-   "287",
-   "341",
+   "282",
+   "284",
+   "286",
+   "340",
    "416"
   ],
   "g-active-party": [
-   "349",
+   "348",
    "409"
   ],
   "g-roster": [
-   "349",
+   "348",
    "417"
   ],
   "g-bench": [
-   "349",
+   "348",
    "410"
   ],
   "g-storage": [
-   "350",
+   "349",
    "418"
   ],
   "g-aftermath-phase": [
-   "353",
+   "352",
    "408",
    "409"
   ],
   "g-move": [
-   "38",
-   "377",
+   "37",
+   "376",
    "415"
   ],
   "g-shift": [
-   "40",
-   "377",
+   "39",
+   "376",
    "417"
   ],
   "g-finesse": [
-   "95",
+   "94",
    "387",
    "388",
    "390",
    "413"
   ],
   "g-terrain": [
-   "24",
+   "23",
    "25",
    "396",
    "419"
@@ -427,28 +425,28 @@
    "409"
   ],
   "g-adamantine": [
-   "92",
+   "91",
    "409"
   ],
   "g-adjacent": [
    "409"
   ],
   "g-ai-step": [
-   "185",
+   "184",
    "410",
    "420"
   ],
   "g-allied": [
-   "339",
+   "338",
    "410"
   ],
   "g-ally": [
    "410"
   ],
   "g-arcane": [
+   "120",
    "121",
    "122",
-   "123",
    "410"
   ],
   "g-area-of-effect": [
@@ -464,18 +462,18 @@
    "410"
   ],
   "g-block": [
-   "50",
+   "49",
    "410"
   ],
   "g-boss": [
    "411"
   ],
   "g-boss-scale": [
-   "190",
+   "189",
    "411"
   ],
   "g-burning": [
-   "55",
+   "54",
    "411"
   ],
   "g-carried-objective": [
@@ -492,7 +490,7 @@
    "411"
   ],
   "g-climb": [
-   "42",
+   "41",
    "411"
   ],
   "g-coin-value": [
@@ -502,11 +500,11 @@
    "411"
   ],
   "g-collision": [
-   "41",
+   "40",
    "411"
   ],
   "g-combatant": [
-   "31",
+   "30",
    "411"
   ],
   "g-critical-failure": [
@@ -523,7 +521,7 @@
    "412"
   ],
   "g-dex-pen": [
-   "99",
+   "98",
    "412"
   ],
   "g-disadvantage": [
@@ -541,7 +539,7 @@
    "413"
   ],
   "g-falling": [
-   "43",
+   "42",
    "413"
   ],
   "g-fire": [
@@ -558,9 +556,9 @@
    "413"
   ],
   "g-hero": [
-   "53",
+   "52",
+   "59",
    "60",
-   "61",
    "413"
   ],
   "g-hireling": [
@@ -573,7 +571,7 @@
    "413"
   ],
   "g-hp-loss": [
-   "49",
+   "48",
    "414"
   ],
   "g-ice": [
@@ -583,30 +581,30 @@
    "414"
   ],
   "g-injuries-table": [
-   "54",
+   "53",
    "414"
   ],
   "g-int-check": [
    "414"
   ],
   "g-journey-table": [
-   "354",
+   "353",
    "414"
   ],
   "g-jump": [
-   "42",
+   "41",
    "414"
   ],
   "g-large-l": [
    "414"
   ],
   "g-legendary-artifact": [
-   "128",
-   "134",
+   "127",
+   "133",
    "414"
   ],
   "g-legendary-veteran": [
-   "366",
+   "365",
    "414"
   ],
   "g-light-source": [
@@ -624,7 +622,7 @@
    "423"
   ],
   "g-luck-luck-points": [
-   "27",
+   "26",
    "414"
   ],
   "g-magical-weapon": [
@@ -638,26 +636,26 @@
    "415"
   ],
   "g-max-hp": [
-   "60",
+   "59",
    "415"
   ],
   "g-max-nrg": [
-   "60",
+   "59",
    "415"
   ],
   "g-max-speed": [
-   "99",
+   "98",
    "415"
   ],
   "g-monster": [
-   "32",
+   "31",
    "415"
   ],
   "g-monster-allegiance": [
    "415"
   ],
   "g-monster-group": [
-   "32",
+   "31",
    "415"
   ],
   "g-necrotic": [
@@ -670,66 +668,66 @@
    "415"
   ],
   "g-off-hand-weapon": [
-   "72",
+   "71",
    "415"
   ],
   "g-party": [
-   "30",
-   "59",
+   "29",
+   "58",
    "416"
   ],
   "g-party-treasury": [
    "416"
   ],
   "g-poison": [
-   "113",
+   "112",
    "416"
   ],
   "g-poisoned-dx": [
-   "57",
+   "56",
    "416"
   ],
   "g-power": [
+   "147",
    "148",
-   "149",
    "416"
   ],
   "g-primary-weapon": [
-   "72",
+   "71",
    "416"
   ],
   "g-psychic": [
-   "152",
-   "174",
+   "151",
+   "173",
    "416"
   ],
   "g-psychic-ability": [
-   "174",
+   "173",
    "416"
   ],
   "g-reaction": [
-   "47",
+   "46",
    "416"
   ],
   "g-reflex-attack": [
-   "51",
+   "50",
    "417"
   ],
   "g-relentless-assault": [
-   "190",
+   "189",
    "417"
   ],
   "g-reload-1-ap": [
-   "37",
+   "36",
    "417"
   ],
   "g-riposte": [
    "417"
   ],
   "g-round": [
-   "29",
-   "33",
-   "376",
+   "28",
+   "32",
+   "375",
    "417"
   ],
   "g-same-named-effects": [
@@ -737,7 +735,7 @@
    "417"
   ],
   "g-setup-roll-off": [
-   "254",
+   "253",
    "417"
   ],
   "g-size-sz": [
@@ -748,7 +746,7 @@
    "418"
   ],
   "g-sorcery": [
-   "163",
+   "162",
    "418"
   ],
   "g-space": [
@@ -768,21 +766,21 @@
    "418"
   ],
   "g-stronghold": [
+   "363",
    "364",
-   "365",
    "418"
   ],
   "g-stronghold-component": [
-   "364",
+   "363",
    "418"
   ],
   "g-summon": [
    "14",
-   "150",
+   "149",
    "418"
   ],
   "g-tap": [
-   "87",
+   "86",
    "419"
   ],
   "g-terrain-tag": [
@@ -792,16 +790,16 @@
    "419"
   ],
   "g-treasure-roll": [
-   "92",
+   "91",
    "419"
   ],
   "g-treasury": [
-   "350",
-   "353",
+   "349",
+   "352",
    "419"
   ],
   "g-vault-reserve": [
-   "364",
+   "363",
    "419"
   ],
   "g-visible": [
@@ -811,7 +809,7 @@
    "419"
   ],
   "g-wild-shape": [
-   "70",
+   "69",
    "419"
   ],
   "g-wound": [
@@ -821,73 +819,73 @@
    "420"
   ],
   "x-weather": [
-   "279"
+   "278"
   ],
   "x-secondary-objectives": [
-   "259"
+   "258"
   ],
   "x-scenario-scaling": [
-   "344"
+   "343"
   ],
   "x-solo-and-cooperative-play": [
-   "339",
-   "367"
-  ],
-  "x-legendary-veterans": [
+   "338",
    "366"
   ],
+  "x-legendary-veterans": [
+   "365"
+  ],
   "x-hirelings": [
-   "87"
+   "86"
   ],
   "x-backgrounds": [
-   "66"
+   "65"
   ],
   "x-general-talents": [
-   "70"
+   "69"
   ],
   "x-monster-ai": [
-   "182",
+   "181",
    "407"
   ],
   "x-universal-special-abilities": [
-   "187"
+   "186"
   ],
   "x-random-monster-generation": [
-   "237"
+   "236"
   ],
   "x-weapons": [
-   "97",
-   "98"
+   "96",
+   "97"
   ],
   "x-armour": [
-   "99"
+   "98"
   ],
   "x-shields": [
-   "105"
+   "104"
   ],
   "x-potions": [
-   "106"
+   "105"
   ],
   "x-poisons": [
-   "113"
+   "112"
   ],
   "x-scrolls": [
-   "120"
+   "119"
   ],
   "x-character-creation": [
-   "60"
+   "59"
   ],
   "x-hero-advancement": [
-   "87"
+   "86"
   ],
   "x-campaign-cycle": [
-   "353"
+   "352"
   ],
   "x-adventure-preparation": [
-   "254"
+   "253"
   ],
   "x-learn-to-play": [
-   "374"
+   "373"
   ],
   "x-basic-mode": [
    "385"
@@ -905,615 +903,615 @@
    "17"
   ],
   "x-reactions": [
-   "43",
+   "42",
    "404"
   ],
   "x-attack-sequence": [
-   "47",
+   "46",
    "405"
   ],
   "x-initiative-phase": [
-   "30"
+   "29"
   ],
   "x-end-of-round": [
-   "33"
+   "32"
   ],
   "x-timing-rules": [
-   "33"
+   "32"
   ],
   "n-ancestries-human": [
-   "64"
+   "63"
   ],
   "n-ancestries-halfling": [
-   "64"
+   "63"
   ],
   "n-ancestries-dwarf": [
-   "64"
+   "63"
   ],
   "n-ancestries-elf": [
-   "64"
+   "63"
   ],
   "n-ancestries-gnome": [
-   "65"
+   "64"
   ],
   "n-ancestries-goblin": [
-   "65"
+   "64"
   ],
   "n-ancestries-orc": [
-   "65"
+   "64"
   ],
   "n-ancestries-ratkin": [
-   "65"
+   "64"
   ],
   "n-ancestries-deep-elf": [
-   "66"
+   "65"
   ],
   "n-ancestries-demonborn": [
-   "66"
+   "65"
   ],
   "n-ancestries-drakeblood": [
-   "66"
+   "65"
   ],
   "n-classes-class-archetypes": [
-   "72"
+   "71"
   ],
   "n-classes-universal-class-progression": [
-   "73"
+   "72"
   ],
   "n-classes-resource-restrictions": [
-   "73"
+   "72"
   ],
   "n-classes-automatic-special-abilities": [
-   "73"
+   "72"
   ],
   "n-classes-fighter": [
-   "74"
+   "73"
   ],
   "n-classes-berserker": [
-   "75"
+   "74"
   ],
   "n-classes-rogue": [
-   "75"
+   "74"
   ],
   "n-classes-assassin": [
-   "76"
+   "75"
   ],
   "n-classes-ranger": [
-   "77"
+   "76"
   ],
   "n-classes-cleric": [
-   "78"
+   "77"
   ],
   "n-classes-paladin": [
-   "79"
+   "78"
   ],
   "n-classes-wizard": [
-   "80"
+   "79"
   ],
   "n-classes-psion": [
-   "81"
+   "80"
   ],
   "n-classes-trickster": [
-   "82"
+   "81"
   ],
   "n-classes-sorcerer": [
-   "83"
+   "82"
   ],
   "n-classes-druid": [
-   "84"
+   "83"
   ],
   "n-monsters-bestiary-entries-giant-tarantula": [
-   "191"
+   "190"
   ],
   "n-monsters-bestiary-entries-goblin": [
-   "191"
+   "190"
   ],
   "n-monsters-bestiary-entries-beastman": [
-   "191"
+   "190"
   ],
   "n-monsters-bestiary-entries-bandit": [
-   "192"
+   "191"
   ],
   "n-monsters-bestiary-entries-satyr-reveler": [
-   "192"
+   "191"
   ],
   "n-monsters-bestiary-entries-briarling": [
-   "192"
+   "191"
   ],
   "n-monsters-bestiary-entries-dire-wolf": [
-   "192"
+   "191"
   ],
   "n-monsters-bestiary-entries-orc": [
-   "193"
+   "192"
   ],
   "n-monsters-bestiary-entries-bugbear": [
-   "193"
+   "192"
   ],
   "n-monsters-bestiary-entries-harpy": [
-   "193"
+   "192"
   ],
   "n-monsters-bestiary-entries-goblin-shaman": [
-   "194"
+   "193"
   ],
   "n-monsters-bestiary-entries-bandit-captain": [
-   "194"
+   "193"
   ],
   "n-monsters-bestiary-entries-dire-bear": [
-   "194"
+   "193"
   ],
   "n-monsters-bestiary-entries-blood-ape": [
-   "194"
+   "193"
   ],
   "n-monsters-bestiary-entries-gorebeak-bear": [
-   "195"
+   "194"
   ],
   "n-monsters-bestiary-entries-ogre": [
-   "195"
+   "194"
   ],
   "n-monsters-bestiary-entries-dryad-grovewarden": [
-   "195"
+   "194"
   ],
   "n-monsters-bestiary-entries-forest-troll": [
-   "196"
+   "195"
   ],
   "n-monsters-bestiary-entries-werewolf": [
-   "196"
+   "195"
   ],
   "n-monsters-bestiary-entries-green-dragon": [
-   "196"
+   "195"
   ],
   "n-monsters-bestiary-entries-undead-warrior": [
-   "197"
+   "196"
   ],
   "n-monsters-bestiary-entries-undead-crossbowman": [
-   "197"
+   "196"
   ],
   "n-monsters-bestiary-entries-ghoul": [
-   "197"
+   "196"
   ],
   "n-monsters-bestiary-entries-possessed-corpse": [
-   "198"
+   "197"
   ],
   "n-monsters-bestiary-entries-ember-skull": [
-   "198"
+   "197"
   ],
   "n-monsters-bestiary-entries-wererat": [
-   "198"
+   "197"
   ],
   "n-monsters-bestiary-entries-spectre": [
-   "198"
+   "197"
   ],
   "n-monsters-bestiary-entries-undead-sentinel": [
-   "199"
+   "198"
   ],
   "n-monsters-bestiary-entries-undead-champion": [
-   "199"
+   "198"
   ],
   "n-monsters-bestiary-entries-gargoyle": [
-   "199"
+   "198"
   ],
   "n-monsters-bestiary-entries-stone-sentinel": [
-   "199"
+   "198"
   ],
   "n-monsters-bestiary-entries-minotaur": [
-   "200"
+   "199"
   ],
   "n-monsters-bestiary-entries-night-hag": [
-   "200"
+   "199"
   ],
   "n-monsters-bestiary-entries-forsaken-archer": [
-   "201"
+   "200"
   ],
   "n-monsters-bestiary-entries-forsaken-knight": [
-   "201"
+   "200"
   ],
   "n-monsters-bestiary-entries-forsaken-duelist": [
-   "201"
+   "200"
   ],
   "n-monsters-bestiary-entries-basilisk": [
-   "201"
+   "200"
   ],
   "n-monsters-bestiary-entries-ashen-revenant": [
-   "202"
+   "201"
   ],
   "n-monsters-bestiary-entries-iron-golem": [
-   "202"
+   "201"
   ],
   "n-monsters-bestiary-entries-lich": [
-   "202"
+   "201"
   ],
   "n-monsters-bestiary-entries-kobold": [
-   "203"
+   "202"
   ],
   "n-monsters-bestiary-entries-cave-goblin": [
-   "203"
+   "202"
   ],
   "n-monsters-bestiary-entries-giant-bat": [
-   "203"
+   "202"
   ],
   "n-monsters-bestiary-entries-vaultfang": [
-   "204"
+   "203"
   ],
   "n-monsters-bestiary-entries-giant-centipede": [
-   "204"
+   "203"
   ],
   "n-monsters-bestiary-entries-noxcloth": [
-   "204"
+   "203"
   ],
   "n-monsters-bestiary-entries-troglodyte": [
-   "204"
+   "203"
   ],
   "n-monsters-bestiary-entries-giant-black-widow": [
-   "205"
+   "204"
   ],
   "n-monsters-bestiary-entries-gloomspore-jelly": [
-   "205"
+   "204"
   ],
   "n-monsters-bestiary-entries-troglodyte-shaman": [
-   "205"
+   "204"
   ],
   "n-monsters-bestiary-entries-vault-ooze": [
-   "206"
+   "205"
   ],
   "n-monsters-bestiary-entries-vrymk": [
-   "206"
+   "205"
   ],
   "n-monsters-bestiary-entries-deep-elf-warrior": [
-   "206"
+   "205"
   ],
   "n-monsters-bestiary-entries-deep-elf-priest": [
-   "207"
+   "206"
   ],
   "n-monsters-bestiary-entries-gloom-hulk": [
-   "207"
+   "206"
   ],
   "n-monsters-bestiary-entries-cryptstrangler": [
-   "207"
+   "206"
   ],
   "n-monsters-bestiary-entries-elder-vrymk": [
-   "208"
+   "207"
   ],
   "n-monsters-bestiary-entries-evil-eye": [
-   "208"
+   "207"
   ],
   "n-monsters-bestiary-entries-burrowmaw": [
-   "208"
+   "207"
   ],
   "n-monsters-bestiary-entries-thought-eater": [
-   "209"
+   "208"
   ],
   "n-monsters-bestiary-entries-frozen-skeleton": [
-   "209"
+   "208"
   ],
   "n-monsters-bestiary-entries-snow-goblin": [
-   "209"
+   "208"
   ],
   "n-monsters-bestiary-entries-ratkin-scavenger": [
-   "210"
+   "209"
   ],
   "n-monsters-bestiary-entries-tundra-wolf": [
-   "210"
+   "209"
   ],
   "n-monsters-bestiary-entries-ratkin-warrior": [
-   "210"
+   "209"
   ],
   "n-monsters-bestiary-entries-white-court-guard": [
-   "210"
+   "209"
   ],
   "n-monsters-bestiary-entries-ratkin-seer": [
-   "211"
+   "210"
   ],
   "n-monsters-bestiary-entries-frost-ghoul": [
-   "211"
+   "210"
   ],
   "n-monsters-bestiary-entries-white-court-archer": [
-   "211"
+   "210"
   ],
   "n-monsters-bestiary-entries-blackfire-hound": [
-   "212"
+   "211"
   ],
   "n-monsters-bestiary-entries-ice-wraith": [
-   "212"
+   "211"
   ],
   "n-monsters-bestiary-entries-white-court-sentinel": [
-   "212"
+   "211"
   ],
   "n-monsters-bestiary-entries-ice-elemental": [
-   "213"
+   "212"
   ],
   "n-monsters-bestiary-entries-fallen-paladin": [
-   "213"
+   "212"
   ],
   "n-monsters-bestiary-entries-werebear": [
-   "213"
+   "212"
   ],
   "n-monsters-bestiary-entries-white-court-executioner": [
-   "213"
+   "212"
   ],
   "n-monsters-bestiary-entries-frost-wyvern": [
-   "214"
+   "213"
   ],
   "n-monsters-bestiary-entries-gelid-fiend": [
-   "214"
+   "213"
   ],
   "n-monsters-bestiary-entries-frost-giant": [
-   "214"
+   "213"
   ],
   "n-monsters-bestiary-entries-white-dragon": [
-   "215"
+   "214"
   ],
   "n-monsters-bestiary-entries-fire-beetle": [
-   "215"
+   "214"
   ],
   "n-monsters-bestiary-entries-imp": [
-   "215"
+   "214"
   ],
   "n-monsters-bestiary-entries-skeleton-warrior": [
-   "216"
+   "215"
   ],
   "n-monsters-bestiary-entries-corpsehound": [
-   "216"
+   "215"
   ],
   "n-monsters-bestiary-entries-gnoll": [
-   "216"
+   "215"
   ],
   "n-monsters-bestiary-entries-giant-scorpion": [
-   "216"
+   "215"
   ],
   "n-monsters-bestiary-entries-skeleton-archer": [
-   "217"
+   "216"
   ],
   "n-monsters-bestiary-entries-mummy": [
-   "217"
+   "216"
   ],
   "n-monsters-bestiary-entries-skeletal-beast": [
-   "217"
+   "216"
   ],
   "n-monsters-bestiary-entries-wind-elemental": [
-   "217"
+   "216"
   ],
   "n-monsters-bestiary-entries-desert-naga": [
-   "218"
+   "217"
   ],
   "n-monsters-bestiary-entries-fire-elemental": [
-   "218"
+   "217"
   ],
   "n-monsters-bestiary-entries-giant-skeleton": [
-   "218"
+   "217"
   ],
   "n-monsters-bestiary-entries-medusa": [
-   "218"
+   "217"
   ],
   "n-monsters-bestiary-entries-tomb-necromancer": [
-   "219"
+   "218"
   ],
   "n-monsters-bestiary-entries-tomb-guardian": [
-   "219"
+   "218"
   ],
   "n-monsters-bestiary-entries-brass-golem": [
-   "220"
+   "219"
   ],
   "n-monsters-bestiary-entries-manticore": [
-   "220"
+   "219"
   ],
   "n-monsters-bestiary-entries-demon": [
-   "220"
+   "219"
   ],
   "n-monsters-bestiary-entries-blue-dragon": [
-   "221"
+   "220"
   ],
   "n-monsters-bestiary-entries-bogling": [
-   "221"
+   "220"
   ],
   "n-monsters-bestiary-entries-swamp-goblin": [
-   "221"
+   "220"
   ],
   "n-monsters-bestiary-entries-zombie": [
-   "222"
+   "221"
   ],
   "n-monsters-bestiary-entries-stirge": [
-   "222"
+   "221"
   ],
   "n-monsters-bestiary-entries-will-o-wisp": [
-   "222"
+   "221"
   ],
   "n-monsters-bestiary-entries-lizardfolk-warrior": [
-   "223"
+   "222"
   ],
   "n-monsters-bestiary-entries-lizardfolk-hunter": [
-   "223"
+   "222"
   ],
   "n-monsters-bestiary-entries-crocodile": [
-   "223"
+   "222"
   ],
   "n-monsters-bestiary-entries-lizardfolk-shaman": [
-   "224"
+   "223"
   ],
   "n-monsters-bestiary-entries-miasma-serpent": [
-   "224"
+   "223"
   ],
   "n-monsters-bestiary-entries-swamp-naga": [
-   "224"
+   "223"
   ],
   "n-monsters-bestiary-entries-giant-constrictor": [
-   "225"
+   "224"
   ],
   "n-monsters-bestiary-entries-shambling-mound": [
-   "225"
+   "224"
   ],
   "n-monsters-bestiary-entries-swamp-hag": [
-   "225"
+   "224"
   ],
   "n-monsters-bestiary-entries-banshee": [
-   "226"
+   "225"
   ],
   "n-monsters-bestiary-entries-swamp-troll": [
-   "226"
+   "225"
   ],
   "n-monsters-bestiary-entries-hydra": [
-   "226"
+   "225"
   ],
   "n-monsters-bestiary-entries-blackwater-wight": [
-   "227"
+   "226"
   ],
   "n-monsters-bestiary-entries-mire-titan": [
-   "227"
+   "226"
   ],
   "n-monsters-bestiary-entries-black-dragon": [
-   "228"
+   "227"
   ],
   "n-monsters-bestiary-entries-the-ancient-void-dragon": [
-   "229"
+   "228"
   ],
   "n-monsters-bestiary-entries-the-hollow-crown-of-the-ashlands": [
-   "229"
+   "228"
   ],
   "n-monsters-bestiary-entries-the-last-colossus": [
-   "230"
+   "229"
   ],
   "n-monsters-bestiary-entries-avatar-of-the-old-growth": [
-   "230"
+   "229"
   ],
   "n-monsters-bestiary-entries-the-broodmother-prime": [
-   "231"
+   "230"
   ],
   "n-monsters-bestiary-entries-captain-veyr-of-the-forsaken": [
-   "231"
+   "230"
   ],
   "n-monsters-bestiary-entries-the-frost-bailiff-magistrate": [
-   "232"
+   "231"
   ],
   "n-monsters-bestiary-entries-the-sun-crowned-prince": [
-   "232"
+   "231"
   ],
   "n-monsters-bestiary-entries-the-antlered-warden-of-the-tithe": [
-   "233"
+   "232"
   ],
   "n-monsters-bestiary-entries-the-voice-beneath-the-bells": [
-   "233"
+   "232"
   ],
   "n-monsters-bestiary-entries-maelthorn-the-verdant": [
-   "234"
+   "233"
   ],
   "n-monsters-bestiary-entries-sirrach-the-black": [
-   "234"
+   "233"
   ],
   "n-monsters-bestiary-entries-visath-the-white": [
-   "235"
+   "234"
   ],
   "n-monsters-bestiary-entries-khorrun-the-dracolich": [
-   "235"
+   "234"
   ],
   "n-monsters-bestiary-entries-vossegar-of-the-flooded-cathedral": [
-   "236"
+   "235"
   ],
   "n-scenarios-core-scenario-1-hunt-the-wild-beast-intro": [
-   "283"
+   "282"
   ],
   "n-scenarios-core-scenario-2-the-whispering-grove": [
-   "284"
+   "283"
   ],
   "n-scenarios-core-scenario-3-the-bandit-s-toll": [
-   "286"
+   "285"
   ],
   "n-scenarios-core-scenario-4-the-spider-s-silk-route": [
-   "288"
+   "287"
   ],
   "n-scenarios-core-scenario-5-the-ambushed-emissary": [
-   "290"
+   "289"
   ],
   "n-scenarios-core-scenario-6-ritual-of-the-old-growth": [
-   "291"
+   "290"
   ],
   "n-scenarios-core-scenario-1-the-fallen-observatory-intro": [
-   "293"
+   "292"
   ],
   "n-scenarios-core-scenario-2-the-guardian-s-test": [
-   "295"
+   "294"
   ],
   "n-scenarios-core-scenario-3-the-shifting-sands-of-time": [
-   "296"
+   "295"
   ],
   "n-scenarios-core-scenario-4-the-sealed-archive": [
-   "297"
+   "296"
   ],
   "n-scenarios-core-scenario-5-the-reliquary-of-broken-saints": [
-   "299"
+   "298"
   ],
   "n-scenarios-core-scenario-6-the-iron-vein-vault": [
-   "300"
+   "299"
   ],
   "n-scenarios-core-scenario-1-the-crystal-harvest-intro": [
-   "302"
+   "301"
   ],
   "n-scenarios-core-scenario-2-the-chasm-crossing": [
-   "304"
+   "303"
   ],
   "n-scenarios-core-scenario-3-the-quake": [
-   "306"
+   "305"
   ],
   "n-scenarios-core-scenario-4-the-undermarches-outpost-raid": [
-   "307"
+   "306"
   ],
   "n-scenarios-core-scenario-5-the-shadowed-under-passage": [
-   "309"
+   "308"
   ],
   "n-scenarios-core-scenario-6-the-ritual-of-shadow-binding": [
-   "311"
+   "310"
   ],
   "n-scenarios-core-scenario-1-plunder-of-the-frozen-ruins-intro": [
-   "313"
+   "312"
   ],
   "n-scenarios-core-scenario-2-the-alchemist-s-frozen-laboratory": [
-   "314"
+   "313"
   ],
   "n-scenarios-core-scenario-3-the-haunted-mausoleum": [
-   "316"
+   "315"
   ],
   "n-scenarios-core-scenario-4-the-clockwork-menagerie": [
-   "317"
+   "316"
   ],
   "n-scenarios-core-scenario-5-the-ice-wyrm-s-hoard": [
-   "318"
+   "317"
   ],
   "n-scenarios-core-scenario-6-the-icebound-court": [
-   "320"
+   "319"
   ],
   "n-scenarios-core-scenario-1-the-oasis-raiders-intro": [
-   "321"
+   "320"
   ],
   "n-scenarios-core-scenario-2-the-cinder-lord-s-lost-brazier": [
-   "323"
+   "322"
   ],
   "n-scenarios-core-scenario-3-tomb-of-the-sunken-kings": [
-   "324"
+   "323"
   ],
   "n-scenarios-core-scenario-4-the-sandwyrm-s-lair": [
-   "325"
+   "324"
   ],
   "n-scenarios-core-scenario-5-the-cursed-colossus-of-the-waste": [
-   "327"
+   "326"
   ],
   "n-scenarios-core-scenario-6-the-cinder-lord-s-obsidian-prison": [
-   "328"
+   "327"
   ],
   "n-scenarios-core-scenario-1-the-reliquary-of-edrava-salttide-intro": [
-   "330"
+   "329"
   ],
   "n-scenarios-core-scenario-2-the-lizardfolk-s-stolen-offerings": [
-   "332"
+   "331"
   ],
   "n-scenarios-core-scenario-3-the-mire-titan-s-fen": [
-   "333"
+   "332"
   ],
   "n-scenarios-core-scenario-4-the-blighted-heartwood": [
-   "334"
+   "333"
   ],
   "n-scenarios-core-scenario-5-salttide-s-reckoning": [
-   "336"
+   "335"
   ],
   "n-scenarios-core-scenario-6-the-serpent-s-sunken-hoard": [
-   "338"
+   "337"
   ]
  },
  "status": "PASS"

@@ -13,7 +13,8 @@
   "table_audit": "PASS",
   "index_audit": "PASS",
   "figures_placed": "PASS",
-  "figure_semantic_review": "PASS"
+  "figure_semantic_review": "PASS",
+  "editorial_patches": "PASS"
  },
  "mandatory_failed": [],
  "release_gate": "PASS",
