@@ -92,11 +92,11 @@ For a single launch that reaches the requested **fully illustrated** result, cho
 
 ## 5. Set the print target if known
 
-Default design: US Letter portrait, grayscale, clean non-bleed interior, binding-aware margins, separate cover. This is a sensible production starting point, not a universal printer-approved profile.
+Default design: borderless US Letter portrait for home inkjet printing, almost-white warm cream background, black/grayscale content, safe binding-aware text margins, and finished Letter front/back cover sheets. A paper-white companion retains the same pagination. Read `docs/INKJET_PRINT.md`; this replaces the earlier non-bleed/commercial-printer default.
 
-If you know the printer, binding, and paper, place its current specification and actual cover template in `config/printer/` and reference them in `config/production.json`. The cover wrap must use the template matching the actual final page count and stock. For a book this large, verify the printer's binding/page-count limits before placing an order.
+If you know the inkjet model, driver and stock, supply its current borderless media instructions in `config/printer/`. The run can complete the specified file without this. Print the small calibration/specimen batch before the whole book; expansion and duplex support depend on the device/media. Borderless does not remove safe text margins.
 
-Without those inputs, Claude can deliver complete cover panels, a parametric wrap candidate, and a generally preflighted print interior. It must label the printer-dependent files as candidates. It cannot honestly deliver a certified final spine/cover for an unspecified printer. PDF/A export is not PDF/X certification; Typst currently documents PDF versions, PDF/A, and PDF/UA output rather than native PDF/X export. The prompt includes a separate verified print-export route where required.
+Claude delivers checked borderless cream/white PDFs, complete cover sheets, an inkjet calibration PDF and print instructions. Physical proof remains NOT TESTED until inspected. A commercial wrap, spine template and PDF/X are not required for the primary target; pursue them only if a separate commercial edition is requested with its actual profile.
 
 ## 6. Launch
 
@@ -124,7 +124,7 @@ and complete the remaining acceptance gates without repeating finished work.
 
 ## 7. What to expect at delivery
 
-Look for a full reading PDF, print interior, cover panels/wrap status, editable sources, assets, actual TOC/index page maps, a complete table reconciliation report, reviewed-page ledger, preflight report, and ZIP. A specimen is not the finished publication. The final report should distinguish content, layout, figures, illustration, general print checks, printer-specific interior, and printer-specific cover status.
+Look for a full reading PDF, print interior, finished Letter cover sheets, editable sources, assets, actual TOC/index page maps, a complete table reconciliation report, reviewed-page ledger, preflight report, and ZIP. A specimen is not the finished publication. The final report should distinguish content, layout, figures, illustration, inkjet file checks, physical proof, and any separately requested commercial status.
 
 The $100 may support a strong production pipeline and substantial finished output if scripts do bulk conversion and context stays controlled. It is **not a reliable fixed-price estimate** for exhaustive visual polish of a 241,000-word illustrated book. Image generation is additional unless your existing service covers it. The prompt is designed to spend on reusable components and defect repair, while keeping a complete checkpoint if the credit runs out.
 
@@ -160,3 +160,9 @@ Read `MASTER_PROMPT.md` and execute it completely remains the launch instruction
 Read `docs/LAUNCH_CHECKLIST.md`. Before the first project edit, run `python3 tools/preflight.py --baseline --report production/preflight.json`. It verifies protected source bytes, shipped checksums, required files, config/agent contracts, and reference page selections. It reports installed runtime capabilities without exposing credentials or installing packages. On resume after legitimate project changes, omit `--baseline` while retaining the immutable source check.
 
 Current cloud documentation notes that downloads of release assets from unattached GitHub repositories can be blocked. Use a documented registry/system-package route where available and lock versions after successful provisioning; do not let repeated blocked release downloads consume the run.
+
+## Light borderless design revision, 2026-10-06
+
+The supplied references were re-inspected for clean dark-fantasy composition. DESIGN_SPEC.md, VISUAL_QA.md and design_tokens.json now specify near-white cream, authored line/ornament vocabulary, typography/spacing defaults, table craft and final-size artwork checks. The primary output is borderless portrait Letter on every page. No additional PDF upload, image API, printer template, or commercial certification is needed to begin; unavailable atmospheric art uses the honest art-light route.
+
+Use a cloud session attached only to Heraldry so repository agents/settings load normally. In multi-repository project sessions, explicitly verify project configuration discovery rather than assume nested settings were loaded. Cloud dependencies are provisioned during capability discovery; setup scripts configured in the environment UI are optional. The repo is the execution authority; local files or installed tools do not automatically carry over.

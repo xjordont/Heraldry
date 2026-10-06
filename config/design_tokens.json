@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "authority": "Starting values for docs/DESIGN_SPEC.md; refine optical details at the actual-content specimen, then freeze",
+  "page": {"width_pt": 612, "height_pt": 792, "orientation": "portrait", "essential_edge_safe_pt": 27, "overscan_test_scale": 1.03},
+  "substrate": {"default": "warm_cream", "warm_cream_hex": "#FCFAF5", "paper_white_hex": "#FFFFFF", "parchment_mode": "light flat tone; no scanned stains, grain, vignette, or repeated texture", "cover_to_page_edge": true},
+  "ink": {"essential_text_gray": 0, "secondary_text_gray": 0.2, "rule_gray": 0.35, "band_gray": 0.94, "colour_has_rule_meaning": false},
+  "fonts": {"body": "Source Serif 4", "table_label": "Source Sans 3", "display": "Cinzel", "max_families": 3, "verify_and_bundle_licences": true},
+  "type_pt": {"body": 10.5, "body_leading": 13.5, "chapter": 28, "section": 17, "subsection": 13, "table": 9.5, "table_leading": 12, "caption": 9.5, "navigation": 9, "minimum_essential": 9},
+  "spacing_pt": {"unit": 3, "paragraph_after": 6, "section_before": 15, "section_after": 6, "subsection_before": 9, "subsection_after": 3, "table_horizontal_padding": 4, "table_vertical_padding": 3, "column_gap": 18},
+  "line_pt": {"ordinary_rule": 0.6, "table_header_rule": 0.75, "example_left_rule": 1},
+  "ornament": {"family": "one original broken-ring and tapered-rule motif", "maximum_marks_per_ordinary_page": 2, "ordinary_page_perimeter_frame": false, "decorative_watermark": false},
+  "art": {"ordinary_page_target_max_area_fraction": 0.25, "chapter_opening_target_max_area_fraction": 0.4, "full_art_pages_default": false, "ink_style": "economical contour, deliberate hatch, readable silhouette, open negative space"}
+}

@@ -19,8 +19,8 @@
     "trim_width_inches": 8.5,
     "trim_height_inches": 11,
     "orientation": "portrait",
-    "interior_colour": "grayscale",
-    "interior_bleed": "none by default; selected printer controls any bleed variant",
+    "interior_colour": "black/grayscale content on near-white warm cream; paper-white companion",
+    "interior_bleed": "background to sheet edge; exact Letter canvas; no external bleed",
     "inside_margin_inches": 0.875,
     "outside_margin_inches": 0.625,
     "top_margin_inches": 0.65,
@@ -49,7 +49,7 @@
     "specification_file": null,
     "cover_template_file": null,
     "required_pdf_standard": null,
-    "state": "generic print candidate until a concrete profile is verified"
+    "state": "borderless inkjet file profile specified; physical device/media proof not tested"
   },
   "verified_publication_metadata": {
     "title": "HERALDRY SKIRMISH: THE DYING LANDS",
@@ -58,5 +58,18 @@
     "publisher": null,
     "isbn": null,
     "copyright_holder": null
+  },
+  "inkjet": {
+    "primary_output": "home inkjet borderless Letter",
+    "borderless": true,
+    "page_width_pt": 612,
+    "page_height_pt": 792,
+    "external_bleed_inches": 0,
+    "crop_marks": false,
+    "landscape_pages_allowed": false,
+    "essential_edge_safe_inches": 0.375,
+    "overscan_test_scale": 1.03,
+    "physical_proof_status": "NOT TESTED",
+    "duplex": "verify device/media; manual if necessary"
   }
 }

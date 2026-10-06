@@ -27,4 +27,8 @@ The manuscript is the only authority for rules. Reference books supply visual in
 
 Run `python3 tools/preflight.py --baseline` from the repository root. The check uses only the Python standard library, verifies the source and all shipped checksums, and reports runtime capabilities. Read [docs/LAUNCH_CHECKLIST.md](docs/LAUNCH_CHECKLIST.md) for optional visual references and remaining account/art/printer inputs. These checks cover the launch kit, not a future generated book.
 
-The publication PDFs, original art, final pagination, and printer-specific preflight are production tasks to be completed during execution.
+The publication PDFs, original art, final pagination, and inkjet file preflight are production tasks to be completed during execution.
+
+## Primary output and visual contract
+
+Borderless portrait US Letter inkjet sheets, light cream/parchment tone with clean black ink, and a paper-white companion. Every page remains portrait; backgrounds extend to edges while essential content stays safe. Read [DESIGN_SPEC.md](docs/DESIGN_SPEC.md), [VISUAL_QA.md](docs/VISUAL_QA.md), [INKJET_PRINT.md](docs/INKJET_PRINT.md), and [design_tokens.json](config/design_tokens.json). The final book checker is `tools/verify_inkjet_pdf.py`; run it on final book PDFs during production. Physical printing is a separate proof step. Commercial wraps are optional additional work.

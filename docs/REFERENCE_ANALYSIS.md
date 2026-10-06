@@ -16,7 +16,7 @@ This is a comparative design reconnaissance, not an exhaustive page-by-page audi
 
 ## The design to build
 
-Heraldry should read like a substantial, well-edited monochrome fantasy reference book: clear serif prose, economical sans-serif table typography, restrained medieval display lettering, clean paper-white reading fields, original rough ink illustrations, consistent small ornaments, and exact vector diagrams. Its identity should survive grayscale printing and remain usable during a game.
+Heraldry should read like a substantial, well-edited monochrome fantasy reference book: clear serif prose, economical sans-serif table typography, restrained medieval display lettering, clean near-white cream reading fields (with a paper-white export), original rough ink illustrations, consistent small ornaments, and exact vector diagrams. Its identity should survive grayscale printing and remain usable during a game.
 
 Use the atmospheric lessons of BlackDeathCity and Deth Wizards, the readable monochrome structure of Mythras, the table and example discipline of Hametsu and Five Leagues, and the labelled instructional graphics found in Call to Arms and TNA. Hellcrawl is useful for compact keyed content; Pathfinder supplies lessons in repeatable entry anatomy and indexing. These are separate assigned roles, not an instruction to mix their entire visual identities.
 
@@ -64,7 +64,7 @@ Assign each component a job. Chapter title and art set atmosphere. A section hea
 
 Use one original heraldic motif family and one rules-diagram symbol family. Repeat a small number of marks consistently rather than generating a different decorative crest for every section. Chapter recognition can use chapter number, title, and a restrained original mark; it must not depend on colour.
 
-Atmosphere belongs mainly on the cover, chapter openings, and relevant vignettes. Ordinary rules pages should have a stable, clean substrate. Reject permanent parchment, mottled grayscale backgrounds, wide textured borders, watermark emblems behind prose, and decorative objects crossing the text frame.
+Atmosphere belongs mainly on the cover, chapter openings, and relevant vignettes. Ordinary rules pages should have a stable, clean substrate. Use very light flat cream/parchment tone; reject noisy aged-paper scans and mottled grayscale backgrounds, wide textured borders, watermark emblems behind prose, and decorative objects crossing the text frame.
 
 ## Typesetting and text flow
 
@@ -94,7 +94,7 @@ Heraldry's 332 reconnaissance table blocks need several related templates. The r
 
 Use thin horizontal rules and light grayscale banding selectively. Avoid making every table a boxed spreadsheet. Vertical rules may be useful in genuinely complex matrices but should be exceptional. Use dark headers sparingly. Tables with dense long text often need more spacing rather than more lines.
 
-Do not substitute visual neatness for data completeness. A card layout is acceptable only with a source-to-field mapping and a verifier covering every cell. Landscape pages are a last useful option, not a failure; preserving a readable relationship is preferable to illegible portrait columns.
+Do not substitute visual neatness for data completeness. A card layout is acceptable only with a source-to-field mapping and a verifier covering every cell. The current output is strictly portrait. Wide tables must use keyed portrait continuation panels or source-mapped entry representations; readable relationships take priority over squeezing columns.
 
 ## Diagrams and examples
 
@@ -132,3 +132,20 @@ Claude Code's current official tool documentation says PDF page-range reads rend
 ## Final recommendation
 
 Upload the distilled project now. Optionally supply the primary reference pages privately for visual calibration. Do not upload all 32 PDFs as a mandatory reading assignment, and do not feed them into every subagent. Establish the page grammar once, then spend the remaining production budget on Heraldry's actual tables, diagrams, pagination, and verification.
+
+## Borderless/light-page re-review, 2026-10-06
+
+The user clarified home inkjet borderless portrait Letter and a clean white/cream/parchment dark-fantasy identity. Re-inspected 44 representative pages across the 22 PDFs currently attached, using contact sheets for composition; examined six larger detail renders for hierarchy, tables, ink placement and scenario grouping. Hametsu p101 was additionally rendered. This remains a representative design review, not an exhaustive book audit or a measurement of exact font sizes.
+
+| Reference / PDF viewer pages examined in detail | Useful visible lesson | Original Heraldry decision |
+|---|---|---|
+| Relicblade p29 | Short italic/bold procedure headings, unboxed serif prose, illustrative action vignette at the lower edge | Keep prose calm; attach a relevant economical ink vignette, blend its edge to cream, protect folio and essential content |
+| Ker Nethalas: Carnage & Aether p7 | Large serif title, two thin horizontal rules, quiet two-column structure, small creature art at an edge | Strong chapter hierarchy with one restrained line vocabulary; omit the repeated noisy substrate/perimeter treatment |
+| Hametsu p101 | Generous full-width equipment groups, clear short numeric columns and variable-height description cells | Make width follow field role; light grayscale bands, no coloured permanent frame, no squeezed prose |
+| Five Leagues p130 | Procedural prose beside labelled random table, explicit callout and obvious range column | Related example/table stays close to the rule; quiet rule/caption and compact range column |
+| Nimble p10 | Two immediately adjacent dice examples above their next subject; clear heading separation | Small exact vector examples near text, redundant symbols/labels; no colour-dependent meaning or heavy aged paper |
+| GoN Scenario Book p38 | Repeatable setup/objective/special-rule groups, short instructions and grouped results | Preserve Heraldry's canonical headings and field names in a repeatable scenario template; remove wooden banner and colour coding |
+
+Broad comparisons also covered Frostgrave, Lasting Tales, Pathfinder, Dungeoneers, Arena Contest, ATO, SAS, Dungeon Universalis, Middara, EAHQ, Walking Dead, XCOM, Village Hunt, Call of Dungeons, and both GoN rules books. Their heavy scans, photographic miniatures, repeated borders, branded components, saturated panels and modern military styling are not default choices for Heraldry. Selected abstract lessons support clean composition and instructional proximity only.
+
+The recorded 44-page re-review list is in `references/inspection_inventory.json` under `light_borderless_review`. These pages need not be supplied to Claude: their decisions are now explicit in DESIGN_SPEC.md, design_tokens.json and VISUAL_QA.md. The existing optional 14-page primary manifest remains bounded and unchanged. No third-party page/art files are added to the repository or publication assets.
