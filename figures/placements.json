@@ -58,7 +58,7 @@
   "B00741": [
     {
       "id": "FIG-08",
-      "caption": "A Grid Mode Aura 2\" affects 13 squares (including the source square); a 3\" Cone affects 7 squares and not its origin square, because a cone or line does not affect the combatant it originates from. A square whose sight line from the origin is blocked by Blocking Terrain is unaffected even if the template covers it, and shared area damage is rolled once (see 2.7.3).",
+      "caption": "A Grid Mode Aura 2\" affects 13 squares (including the source square); a 3\" Cone affects 7 squares beyond its origin square, and never affects the combatant it originates from. A square whose sight line from the origin is blocked by Blocking Terrain is unaffected even if the template covers it, and shared area damage is rolled once (see 2.7.3).",
       "width": "100%",
       "scope": "full"
     }
@@ -144,7 +144,7 @@
   "B17082": [
     {
       "id": "FIG-19",
-      "caption": "Basic Mode setup for The Courier's Strongbox on a 24\"×24\" battlefield, with one complete Monster group per Entry marker, assigned at random. Example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move, and extracting it plus 1 Satchel, 2 Goblins and 1 Bandit scores 12 + 4 + 2 + 3 = 21c (see B.6).",
+      "caption": "Basic Mode setup for The Courier's Strongbox on a 24\"×24\" battlefield, with one complete Monster group per Entry marker, assigned at random. Assumed example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move; extracting it with 1 Satchel, having defeated 2 Goblins and 1 Bandit, scores 12 + 4 + 2 + 3 = 21c (see B.6).",
       "width": "100%",
       "scope": "full"
     }
