@@ -1,0 +1,73 @@
+{
+ "pdf": "dist/Heraldry_RC484_inkjet-borderless.pdf",
+ "sha256": "76bae534dd9bef3e59491523bb1f5731b243f3620b2cbd027a058c24126ea92a",
+ "pages": 435,
+ "all_page_contact_sheets": {
+  "batches": [
+   "1-24",
+   "25-48",
+   "49-72",
+   "73-96",
+   "97-120",
+   "121-144",
+   "145-168",
+   "169-192",
+   "193-216",
+   "217-240",
+   "241-264",
+   "265-288",
+   "289-312",
+   "313-336",
+   "337-360",
+   "361-384",
+   "385-408",
+   "409-432",
+   "433-435"
+  ],
+  "render_dpi": 24,
+  "pages_covered": "1-435 (all)",
+  "inspected": true,
+  "method": "19 contact sheets of 24 pages each viewed by the orchestrator; detects composition, voids, overlaps, misplaced components; not glyph-level proofreading"
+ },
+ "detailed_pages_viewed_at_45-80dpi": [
+  "title i",
+  "contents iv",
+  "1 (ch.1 opener)",
+  "15 FIG-04",
+  "19 terrain table",
+  "25 ch.3 opener",
+  "86/96 equipment",
+  "98 potions",
+  "116 cards",
+  "164 bestiary",
+  "206/208 encounter tables",
+  "248 scenario",
+  "256 FIG-14",
+  "341/347 rosters",
+  "361 App A",
+  "379 FIG-18",
+  "405 App C",
+  "411 index"
+ ],
+ "overscan_1.03_stress": "specimen pages rendered centred 1.03 and cropped (build/overscan, not shipped); running heads/folios remain inside crop",
+ "covers_viewed": true,
+ "calibration_viewed": true,
+ "findings_repaired": [
+  "stranded headings (marker paragraphs broke keep-with-next)",
+  "balanced-tail overflow overlaps",
+  "double line breaks in App A hero cards",
+  "heading hyphenation",
+  "table cell hyphenation",
+  "italic flavour rendered upright",
+  "fallback font",
+  "duplicated FIG-13/14",
+  "heading split from paragraph by balancer",
+  "bold run-in labels separated from text"
+ ],
+ "residual": [
+  "FIG-14 panel C 'min 3\"' dimension label does not span the drawn gap (minor, label correct)",
+  "12 chapter-final pages end part-way down (normal chapter ends); voids otherwise none >40% of body",
+  "potion/scroll tables set in column width are long and uniform (legible; layout choice)"
+ ],
+ "status": "PASS (contact-sheet coverage of all pages + detailed sample); glyph-level proofreading of every page NOT claimed"
+}

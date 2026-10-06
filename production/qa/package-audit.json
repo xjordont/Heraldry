@@ -1,0 +1,16 @@
+{
+ "zip": "dist/Heraldry_RC484_release.zip",
+ "bytes": 16993618,
+ "files": 143,
+ "pdfs": [
+  "Heraldry_RC484/dist/Heraldry_RC484_covers-front-back-white.pdf",
+  "Heraldry_RC484/dist/Heraldry_RC484_covers-front-back.pdf",
+  "Heraldry_RC484/dist/Heraldry_RC484_digital.pdf",
+  "Heraldry_RC484/dist/Heraldry_RC484_inkjet-borderless-white.pdf",
+  "Heraldry_RC484/dist/Heraldry_RC484_inkjet-borderless.pdf",
+  "Heraldry_RC484/dist/Heraldry_RC484_inkjet-calibration.pdf",
+  "Heraldry_RC484/dist/specimen/Heraldry_RC484_specimen.pdf"
+ ],
+ "forbidden_entries": [],
+ "sha256": "6515566be17eed909aac2354593b89215c4cbd38acb831c766ebc5b387c677d4"
+}
