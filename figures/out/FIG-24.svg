@@ -37,7 +37,7 @@
 <circle cx="173.5" cy="107.6" r="6.5" fill="url(#p-diff)" stroke="#000" stroke-width="0.9"/>
 <circle cx="95.5" cy="94.6" r="7.8" fill="url(#p-diff-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 <circle cx="152.7" cy="123.2" r="6.5" fill="url(#p-diff-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
-<rect x="43.5" y="68.6" width="20.8" height="15.6" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="43.5" y="138.8" width="20.8" height="15.6" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 <rect x="183.9" y="133.6" width="20.8" height="15.6" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 <line x1="72.04" y1="108.16" x2="92.35" y2="112.63" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 <line x1="72.6" y1="105.62" x2="71.48" y2="110.7" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
@@ -88,14 +88,14 @@
 <circle cx="162.68" cy="185.6" r="1.6" fill="#000"/>
 <circle cx="196.38" cy="185.6" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
 <circle cx="196.38" cy="185.6" r="1.6" fill="#000"/>
-<rect x="146.26" y="90.56" width="49.28" height="11.2" fill="#fff"/>
-<text x="147.86" y="98.96" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Ravine 6–8"</text>
+<rect x="34.46" y="90.56" width="49.28" height="11.2" fill="#fff"/>
+<text x="36.06" y="98.96" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Ravine 6–8"</text>
 <rect x="88.56" y="24" width="12.16" height="11.2" fill="#fff"/>
 <text x="90.16" y="32.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
 <rect x="88.56" y="180" width="12.16" height="11.2" fill="#fff"/>
 <text x="90.16" y="188.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
-<rect x="43.6" y="88.8" width="20.6" height="11.2" fill="#fff"/>
-<text x="45.2" y="97.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Tree</text>
+<rect x="43.6" y="159" width="20.6" height="11.2" fill="#fff"/>
+<text x="45.2" y="167.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Tree</text>
 <rect x="67.73" y="114.89" width="28.94" height="11.2" fill="#fff"/>
 <text x="69.33" y="123.29" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">min 4"</text>
 <rect x="126.8" y="127.19" width="12.16" height="11.2" fill="#fff"/>
@@ -109,12 +109,12 @@
 <text x="173.05" y="174.45" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">min 8"</text>
 <rect x="128.7" y="113.44" width="30.7" height="11.2" fill="#fff"/>
 <text x="130.3" y="121.84" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Bundle</text>
-<line x1="121.5" y1="100.86" x2="121.5" y2="81.36" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
-<rect x="104.31" y="70.16" width="34.38" height="11.2" fill="#fff"/>
-<text x="105.91" y="78.56" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Brood·A</text>
-<line x1="142.59" y1="102.63" x2="156.2" y2="89.02" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
-<rect x="156.2" y="77.82" width="48.63" height="11.2" fill="#fff"/>
-<text x="157.8" y="86.22" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Tarantula·A</text>
+<line x1="125.53" y1="102.53" x2="132.84" y2="95.22" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="132.84" y="84.02" width="34.38" height="11.2" fill="#fff"/>
+<text x="134.44" y="92.42" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Brood·A</text>
+<line x1="138.66" y1="101" x2="138.66" y2="81.5" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="114.34" y="70.3" width="48.63" height="11.2" fill="#fff"/>
+<text x="115.94" y="78.7" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Tarantula·A</text>
 <line x1="96.77" y1="90.67" x2="89.46" y2="83.36" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 <rect x="40.52" y="72.16" width="48.94" height="11.2" fill="#fff"/>
 <text x="42.12" y="80.56" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Tarantula·R</text>

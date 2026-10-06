@@ -31,7 +31,7 @@
 <line x1="84.06" y1="170" x2="84.06" y2="201.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 <line x1="87.06" y1="170" x2="81.06" y2="170" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 <line x1="87.06" y1="201.2" x2="81.06" y2="201.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<rect x="108.5" y="94.6" width="26" height="26" fill="url(#p-imp)" stroke="#000" stroke-width="0.9"/>
+<rect x="108.5" y="94.6" width="26" height="26" fill="url(#p-imp-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 <rect x="74.7" y="76.4" width="7.8" height="7.8" fill="url(#p-imp-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 <rect x="163.1" y="131" width="7.8" height="7.8" fill="url(#p-imp-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 <rect x="147.5" y="50.4" width="26" height="15.6" fill="url(#p-diff-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>

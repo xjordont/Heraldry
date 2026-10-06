@@ -440,6 +440,8 @@ def feat_path(e):
         return "rect", (X(g[0]), Y(g[1]), (g[2] - g[0]) * SC, (g[3] - g[1]) * SC)
     if e["shape"] == "circle":
         return "circle", (X(g[0]), Y(g[1]), g[2] * SC)
+    if e["shape"] == "line":
+        return "line", [(X(p[0]), Y(p[1])) for p in g]
     return "poly", [(X(p[0]), Y(p[1])) for p in g]
 
 
@@ -460,6 +462,11 @@ def draw_feature(c, e):
     elif kind == "circle":
         s.circle(p[0], p[1], p[2], fill=fill, stroke=stroke, sw=sw, dash=dash)
         bb = (p[0] - p[2], p[1] - p[2], p[0] + p[2], p[1] + p[2])
+    elif kind == "line":
+        s.polyline(p, INK, e.get("sw", 2.4))
+        xs = [q[0] for q in p]
+        ys = [q[1] for q in p]
+        bb = (min(xs), min(ys), max(xs), max(ys))
     else:
         a = ' fill="%s"' % fill
         if stroke:
@@ -896,6 +903,9 @@ def fig20():
             (lambda s_, x, y: _sw_terrain(s_, x, y, "water"), "Shallow or Deep Water"),
             (lambda s_, x, y: _sw_terrain(s_, x, y, "slippery"), "Slippery"),
             (lambda s_, x, y: _sw_terrain(s_, x, y, "obstacle"), "Impassable or Blocking, decided per piece (2.9.1)"),
+            (lambda s_, x, y: _sw_terrain(s_, x, y, "hazard"), "Hazard area (Unstable Ground)"),
+            (lambda s_, x, y: _sw_terrain(s_, x, y, "shade"), "Deep Shadow or Darkness"),
+            (lambda s_, x, y: s_.line(x + 2, y, x + 28, y, INK, 2.4), "Blocking wall, drawn as a line"),
             (lambda s_, x, y: _sw_terrain(s_, x, y, "open"), "Open feature: room, clearing, path"),
         ]),
         ("Distances, edges, status", [
@@ -917,6 +927,7 @@ def fig20():
         "**Orientation.** North is drawn at the top. The Setup Roll-off winner designates the North edge before setup; North and South are the short battlefield edges and East and West the long ones, even on a square battlefield (10.1).",
         "**Scale.** The battlefield, zones and stated distances are drawn to scale at 5.2 pt per inch, with a 6\" scale bar; markers are enlarged, and Large and Huge Monsters are drawn at their 2\"×2\" and 3\"×3\" footprints. Distances are measured between closest points, except from a centre or origin where the rule says so (2.6).",
         "**Counts.** Scattered terrain is drawn as a few representative pieces; the printed counts and the 10.6 scaling stay in the scenario text. Group numbers are the scenario's own. Hidden contents (face-down markers) are never drawn.",
+        "**Solid and dashed.** A solid marker or zone with a distance symbol is one position that meets that printed limit, not a fixed position; only the battlefield, zone depths and stated distances are exact. Letters A and B beside exit arrows or zones are the drawn zones' parties; where a scenario assigns Party A or B by die roll, the drawn zones do not say who is which.",
         "**Where a scenario is silent**, 10.1 step 11 applies: the Setup Roll-off winner chooses the edge or corner zone and the other party takes the opposite one; each zone extends 6\" from its edge, a corner zone is 8\"×8\", and parties alternate placing Heroes, starting with the party that lost the Roll-off.",
     ]
     for n in notes:
@@ -1127,6 +1138,7 @@ def meta_entries():
 # checks (called from make_figures.selfcheck)
 # ---------------------------------------------------------------------------------------------
 KINDS = {"zone", "feature", "marker", "monster", "edge"}
+LEGEND_TERRAIN = {"blocking", "impassable", "cover", "difficult", "water", "slippery", "obstacle", "open", "hazard", "shade", "gap"}
 STATUSES = {"MANDATORY_POSITION", "CONSTRAINED", "ILLUSTRATIVE"}
 TOL = 0.06
 
@@ -1234,6 +1246,10 @@ def check_scenmaps():
                     errs.append("%s: shared line %d is not a 10.1 / 10.6 rule line" % (tag, n))
             if e["kind"] == "zone":
                 zones.append(e)
+            if e["kind"] == "feature" and e.get("terrain", "open") not in LEGEND_TERRAIN:
+                errs.append("%s: terrain %s has no legend swatch" % (tag, e.get("terrain")))
+            if e["kind"] == "edge" and e["mode"] == "arrive" and "midpoint" in _text_of(e["lines"]) and e.get("pos") != 18:
+                errs.append("%s: arrival at an edge midpoint must be drawn at 18\"" % tag)
         for t in sp.get("foot", []):
             for n in t["lines"]:
                 if not (hl <= n <= end):

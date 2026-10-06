@@ -40,10 +40,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS",
-        "open_major": 0
       }
     },
     {
@@ -86,10 +82,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS",
-        "open_major": 0
       }
     },
     {
@@ -112,8 +104,8 @@
       ],
       "elements": {
         "mandatory": 2,
-        "constrained": 10,
-        "illustrative": 3
+        "constrained": 9,
+        "illustrative": 4
       },
       "undrawn_conditional": [],
       "ambiguities": [
@@ -124,10 +116,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 259.9
-      },
-      "review": {
-        "verdict": "FAIL",
-        "open_major": 1
       }
     },
     {
@@ -159,10 +147,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -185,8 +169,8 @@
       ],
       "elements": {
         "mandatory": 1,
-        "constrained": 12,
-        "illustrative": 3
+        "constrained": 11,
+        "illustrative": 4
       },
       "undrawn_conditional": [
         {
@@ -205,15 +189,13 @@
           ]
         }
       ],
-      "ambiguities": [],
+      "ambiguities": [
+        "Group 3 (12312): 'at the perimeter of the Bandit Camp, 6\" from its centre' conflicts with a Camp 'about 4\"×4\"' (12280), whose perimeter lies about 2\" from its centre. The map draws the literal 6\" ring from the centre with Group 3 as an illustrative (grey dashed) marker and does not choose between the two readings."
+      ],
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
-      },
-      "review": {
-        "verdict": "FAIL",
-        "open_major": 1
+        "height": 270.3
       }
     },
     {
@@ -253,10 +235,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -288,10 +266,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -331,10 +305,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -374,10 +344,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "FAIL",
-        "open_major": 1
       }
     },
     {
@@ -418,10 +384,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -455,10 +417,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS",
-        "open_major": 0
       }
     },
     {
@@ -499,10 +457,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -544,10 +498,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -590,10 +540,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -640,10 +586,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 259.9
-      },
-      "review": {
-        "verdict": "PASS",
-        "open_major": 0
       }
     },
     {
@@ -677,10 +619,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -703,7 +641,7 @@
       ],
       "elements": {
         "mandatory": 3,
-        "constrained": 10,
+        "constrained": 12,
         "illustrative": 5
       },
       "undrawn_conditional": [],
@@ -715,10 +653,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 259.9
-      },
-      "review": {
-        "verdict": "FAIL",
-        "open_major": 1
       }
     },
     {
@@ -750,10 +684,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -801,10 +731,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -836,10 +762,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 259.9
-      },
-      "review": {
-        "verdict": "FAIL",
-        "open_major": 1
       }
     },
     {
@@ -887,10 +809,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -922,10 +840,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 259.9
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -957,10 +871,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 259.9
-      },
-      "review": {
-        "verdict": "PASS",
-        "open_major": 0
       }
     },
     {
@@ -992,10 +902,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 259.9
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -1027,10 +933,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -1071,10 +973,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -1123,10 +1021,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -1174,10 +1068,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 259.9
-      },
-      "review": {
-        "verdict": "PASS",
-        "open_major": 0
       }
     },
     {
@@ -1217,10 +1107,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 259.9
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -1260,10 +1146,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -1305,15 +1187,13 @@
           ]
         }
       ],
-      "ambiguities": [],
+      "ambiguities": [
+        "Group 2 (14252): 'patrolling murky water' - the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258), while Group 2 patrols water outside the Barrow's sanctum; whether outer Shallow Water counts as murky is not stated. Group 2 is drawn as an illustrative marker in an outer Shallow patch."
+      ],
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -1369,10 +1249,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 259.9
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -1412,10 +1288,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 259.9
-      },
-      "review": {
-        "verdict": "PASS",
-        "open_major": 0
       }
     },
     {
@@ -1455,10 +1327,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS_WITH_NOTES",
-        "open_major": 0
       }
     },
     {
@@ -1508,10 +1376,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS",
-        "open_major": 0
       }
     },
     {
@@ -1551,10 +1415,6 @@
       "map_size_pt": {
         "width": 243,
         "height": 249.5
-      },
-      "review": {
-        "verdict": "PASS",
-        "open_major": 0
       }
     }
   ],
@@ -1647,9 +1507,9 @@
     "elements": {
       "mandatory": 68,
       "constrained": 243,
-      "illustrative": 284
+      "illustrative": 286
     },
-    "ambiguities_logged": 13,
+    "ambiguities_logged": 15,
     "global_notes": [
       "Group placement constraints ('within 3\" of ...', 'at least 8\" from ...') are drawn for one marker per Monster Group; the text does not say whether every member of a multi-Monster group must satisfy them.",
       "Counts of scattered terrain are printed values; maps draw a few representative pieces and never resolve 10.6 scaling."
