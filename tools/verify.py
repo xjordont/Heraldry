@@ -84,6 +84,11 @@ def main():
     loc = {}
     for m in tquery("<ixpos>"):
         loc.setdefault(m["k"], set()).add(m["folio"])
+    hpos = {h["id"]: h for h in tquery("<hpos>")[0]}
+    for k, hids in idx.get("heads", {}).items():
+        for hid in hids:
+            if hid in hpos:
+                loc.setdefault(k, set()).add(str(hpos[hid]["folio"]))
     keys = [k for e in idx["entries"] for k in e.get("keys", [])] + [k for e in idx["entries"] for s in e.get("sub", []) for k in s["keys"]]
     missing = [k for k in keys if k not in loc]
     see_bad = [e["term"] for e in idx["entries"] if e.get("see") and e["see"].lower() not in {x["term"].lower() for x in idx["entries"]}]

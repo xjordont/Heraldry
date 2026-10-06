@@ -110,8 +110,12 @@
   set text(font: sans, size: 9.5pt)
   set par(leading: 2.4pt, spacing: 2pt, hanging-indent: 10pt)
   let pages-for(key) = {
-    let hits = query(label("ix-" + key))
-    let ps = hits.map(h => (n: counter(page).at(h.location()).first(), loc: h.location()))
+    let hits = query(label("ix-" + key)).map(h => h.location())
+    for hid in index-data.at("heads", default: (:)).at(key, default: ()) {
+      let q = query(label(hid))
+      if q.len() > 0 { hits.push(q.first().location()) }
+    }
+    let ps = hits.map(l => (n: counter(page).at(l).first(), loc: l))
     let seen = ()
     let out = ()
     for p in ps.sorted(key: p => p.n) {

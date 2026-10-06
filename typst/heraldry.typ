@@ -109,6 +109,7 @@
   set enum(indent: 2pt, body-indent: 5pt, spacing: 4pt)
   set table(stroke: none)
   set heading(numbering: none)
+  show heading: set text(hyphenate: false)
 
   // chapter title (H2 in the manuscript → level 1)
   show heading.where(level: 1): it => block(text(font: display, weight: 600, size: 28pt, hyphenate: false, it.body))
@@ -169,6 +170,10 @@
 #let pmx(..args) = none
 #let tmark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), folio: counter(page).display())) <tblpos>]
 #let ixm(k) = [#metadata(k) #label("ix-" + k)#context [#metadata((k: k, page: here().page(), folio: counter(page).display())) <ixpos>]]
+// One summary of every labelled heading's position (balancing + index audit).
+#let hpos-summary() = context [#metadata(query(heading).filter(h => h.has("label")).map(h => (
+  id: str(h.label), page: h.location().page(), y: h.location().position().y.pt(), x: h.location().position().x.pt(),
+  folio: counter(page).at(h.location()).first()))) <hpos>]
 #let seg(body) = columns(2, gutter: gap, body)
 
 // Balanced tail: pieces are top-level blocks that sat on one page in the previous pass.
@@ -203,7 +208,7 @@
 // Flavour text: the source marks it with emphasis, so the italic comes from #emph.
 #let flavour(body) = block(above: 4pt, below: 8pt, body)
 
-#let example(body) = block(width: 100%, above: 8pt, below: 10pt, breakable: true,
+#let example(body, pre: none) = block(width: 100%, above: 8pt, below: 10pt, breakable: true,
   stroke: (left: 1pt + ink), inset: (left: 8pt, top: 2pt, bottom: 2pt, right: 0pt))[
   #set text(size: 10pt)
   #set par(leading: 2.9pt)
@@ -213,14 +218,14 @@
 #let note-box(body) = block(width: 100%, above: 8pt, below: 10pt, breakable: true,
   stroke: (left: 1pt + ink, top: 0.4pt + rule-ink, bottom: 0.4pt + rule-ink), inset: (left: 8pt, top: 5pt, bottom: 5pt, right: 4pt))[#body]
 
-#let hr-ornament() = align(center, block(above: 10pt, below: 10pt, motif(len: 30pt)))
+#let hr-ornament(pre: none) = align(center, block(above: 10pt, below: 10pt)[#pre#motif(len: 30pt)])
 
 // ---------------------------------------------------------------- tables
 #let tcell(body, header: false) = {
   if header { text(font: sans, weight: 600, size: 9.5pt, body) } else { body }
 }
 
-#let htable(id, widths, aligns, header, rows, kind: "table", title: none) = {
+#let htable(id, widths, aligns, header, rows, kind: "table", title: none, pre: none) = {
   set text(font: sans, size: 9.5pt, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining", number-width: "tabular", hyphenate: false)
   set par(leading: 2.6pt, spacing: 4pt)
   set strong(delta: 200)
@@ -228,7 +233,7 @@
   let fills = (x, y) => if y > 0 and calc.even(y) { band } else { none }
   set table.cell(breakable: false)   // keep ordinary rows intact
   block(width: 100%, above: 8pt, below: 10pt, breakable: true)[
-    #metadata(id) #label("tbl-" + id)#tmark(id, "s")
+    #pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")
     #table(
       columns: widths.map(w => w * 1pt),
       align: (x, y) => aligns.at(x) + top,
@@ -246,10 +251,10 @@
 }
 
 // Monster stat strip: compact six-field profile.
-#let statstrip(id, header, values) = {
+#let statstrip(id, header, values, pre: none) = {
   set text(font: sans, size: 9.5pt, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining", number-width: "tabular")
   block(width: 100%, above: 6pt, below: 8pt, breakable: false)[
-    #metadata(id) #label("tbl-" + id)#tmark(id, "s")#tmark(id, "e")
+    #pre#pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")#tmark(id, "e")
     #table(
       columns: (1fr,) * header.len(),
       align: center + horizon,
@@ -263,10 +268,10 @@
 }
 
 // Labelled key/value profile (stat tables whose cells hold formulas).
-#let statcard(id, header, values) = {
+#let statcard(id, header, values, pre: none) = {
   set text(font: sans, size: 9.5pt, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining")
   block(width: 100%, above: 6pt, below: 8pt, breakable: false)[
-    #metadata(id) #label("tbl-" + id)#tmark(id, "s")#tmark(id, "e")
+    #pre#pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")#tmark(id, "e")
     #table(
       columns: (auto, 1fr),
       inset: (x: 4pt, y: 2.6pt),
@@ -279,9 +284,9 @@
 
 // Prose-heavy many-column tables: one labelled entry per source row.
 // `lead` = key fields shown in the entry title line, `fields` = (label, value) pairs, `desc` = (label, value) prose fields.
-#let cards(id, entries, title-label: none) = {
+#let cards(id, entries, title-label: none, pre: none) = {
   block(width: 100%, above: 6pt, below: 8pt, breakable: true)[
-    #metadata(id) #label("tbl-" + id)#tmark(id, "s")
+    #pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")
     #for e in entries {
       block(width: 100%, above: 0pt, below: 0pt, breakable: true, inset: (top: 5pt, bottom: 6pt),
         stroke: (top: 0.3pt + rgb(0,0,0,30%)))[
@@ -305,8 +310,8 @@
 }
 
 // ---------------------------------------------------------------- figures
-#let figure-block(id, file, caption, width: 100%, anchor: none) = block(width: 100%, above: 10pt, below: 12pt, breakable: false)[
-  #metadata(id) #label("fig-" + id)#tmark(id, "s")
+#let figure-block(id, file, caption, width: 100%, anchor: none, pre: none) = block(width: 100%, above: 10pt, below: 12pt, breakable: false)[
+  #pre#metadata(id) #label("fig-" + id)#tmark(id, "s")
   #align(center, image(file, width: width))
   #v(4pt)
   #set text(font: sans, size: 9pt, fill: ink)

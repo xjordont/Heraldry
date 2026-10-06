@@ -11,7 +11,7 @@ SAFE = 27
 TOP, BOT = 0.65 * 72, 792 - 0.7 * 72
 
 
-def lines_of(page):
+def lines_of(page, fonts=False):
     out = []
     d = page.get_text("dict")
     for b in d["blocks"]:
@@ -20,8 +20,21 @@ def lines_of(page):
             if not txt:
                 continue
             size = max(s["size"] for s in l["spans"])
-            out.append((pymupdf.Rect(l["bbox"]), txt, size))
+            out.append((pymupdf.Rect(l["bbox"]), txt, size) + ((l["spans"][0]["font"],) if fonts else ()))
     return out
+
+
+def stranded_headings(page):
+    """Heading-styled line in the last 60 pt of a column with < 2 lines after it in that column."""
+    ls = lines_of(page, fonts=True)
+    hits = []
+    for r, t, sz, f in ls:
+        is_head = ("Cinzel" in f and sz > 12) or ("Serif4-Semibold" in f and sz > 12) or ("Serif4-Bold" in f and sz > 10.8)
+        if is_head and r.y1 > BOT - 60 and r.y0 > 200:
+            below = [x for x in ls if x[0].y0 > r.y1 and abs(x[0].x0 - r.x0) < 60]
+            if len(below) < 2:
+                hits.append(t[:50])
+    return hits
 
 
 def main():
@@ -53,6 +66,8 @@ def main():
             furniture = s <= 9.6 and (r.y1 < TOP or r.y0 > BOT - 2)
             if not furniture and (r.y1 > BOT + 2 or r.y0 < TOP - 14):
                 flags.append({"page": n, "code": "outside_body_frame", "text": t[:50], "bbox": [round(v) for v in r]})
+        for t in stranded_headings(page):
+            flags.append({"page": n, "code": "stranded_heading", "text": t})
         body = [r for r, t, s in ls if TOP - 2 < r.y0 and r.y1 < BOT + 2]
         if body:
             fill = max(r.y1 for r in body) - min(r.y0 for r in body)
