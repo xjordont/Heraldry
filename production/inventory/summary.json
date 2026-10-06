@@ -1,0 +1,116 @@
+{
+ "sha256": "2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3",
+ "bytes": 1450722,
+ "lines": 17970,
+ "words_whitespace": 241434,
+ "headings_by_level": {
+  "1": 1,
+  "2": 15,
+  "3": 134,
+  "4": 402,
+  "5": 281
+ },
+ "headings": 833,
+ "tables": 332,
+ "max_table_columns": 12,
+ "tables_ragged_rows": [],
+ "constructs": {
+  "heading": 833,
+  "inline_text": 65214,
+  "para": 7743,
+  "inline_strong": 22796,
+  "hr": 42,
+  "list": 1518,
+  "list_item": 4185,
+  "inline_link": 149,
+  "inline_em": 449,
+  "table": 332,
+  "inline_soft": 672,
+  "quote": 1,
+  "inline_br": 18
+ },
+ "chapters": [
+  {
+   "id": "front",
+   "title": null,
+   "blocks": 4
+  },
+  {
+   "id": "h-table-of-contents",
+   "title": "Table of Contents",
+   "blocks": 2
+  },
+  {
+   "id": "h-1-the-world-of-heraldry",
+   "title": "1. The World of Heraldry",
+   "blocks": 130
+  },
+  {
+   "id": "h-2-core-mechanics",
+   "title": "2. Core Mechanics",
+   "blocks": 226
+  },
+  {
+   "id": "h-3-the-game-round",
+   "title": "3. The Game Round",
+   "blocks": 72
+  },
+  {
+   "id": "h-4-actions-and-movement",
+   "title": "4. Actions and Movement",
+   "blocks": 125
+  },
+  {
+   "id": "h-5-combat",
+   "title": "5. Combat",
+   "blocks": 214
+  },
+  {
+   "id": "h-6-your-adventuring-party",
+   "title": "6. Your Adventuring Party",
+   "blocks": 416
+  },
+  {
+   "id": "h-7-equipment-and-items",
+   "title": "7. Equipment and Items",
+   "blocks": 355
+  },
+  {
+   "id": "h-8-powers-and-traditions",
+   "title": "8. Powers and Traditions",
+   "blocks": 803
+  },
+  {
+   "id": "h-9-monsters",
+   "title": "9. Monsters",
+   "blocks": 1268
+  },
+  {
+   "id": "h-10-scenarios",
+   "title": "10. Scenarios",
+   "blocks": 1523
+  },
+  {
+   "id": "h-11-campaign-play",
+   "title": "11. Campaign Play",
+   "blocks": 379
+  },
+  {
+   "id": "h-appendix-a-learn-to-play",
+   "title": "Appendix A. Learn to Play",
+   "blocks": 178
+  },
+  {
+   "id": "h-appendix-b-basic-mode",
+   "title": "Appendix B. Basic Mode",
+   "blocks": 242
+  },
+  {
+   "id": "h-appendix-c-rules-reference",
+   "title": "Appendix C. Rules Reference",
+   "blocks": 321
+  }
+ ],
+ "patches_applied": [],
+ "duplicate_heading_slugs": {}
+}

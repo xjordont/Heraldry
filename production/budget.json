@@ -1,0 +1,13 @@
+{
+  "authorized_limit_usd": 100,
+  "target_usd": 80,
+  "reserve_usd": 20,
+  "telemetry": "UNAVAILABLE: get_session exposes only rate-limit status (ccr_promotional, allowed); no dollar or token totals. Figures below are conservative estimates, not measured spend.",
+  "basis": "Estimated from orchestrator turn count and context size; Opus 5.5 orchestrator (medium effort) did parser/template/build work directly to avoid re-ingesting context in subagents.",
+  "ledger": [
+    {"milestone": "M0 preflight, toolchain, inventory, full first build", "model": "claude-opus-5-5", "effort": "medium", "estimated_usd": 12, "basis": "~45 orchestrator turns, ~150k context peak"}
+  ],
+  "estimated_total_usd": 12,
+  "outstanding": ["specimen + design review", "figures", "index", "reconciliation QA", "visual QA batches", "variants, covers, calibration, packaging"],
+  "thresholds": {"stop_optional_expansion_usd": 60, "completion_only_usd": 80}
+}
