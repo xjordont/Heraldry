@@ -117,13 +117,16 @@ def main():
         (QA / "figure-audit.json").write_text(json.dumps(fa, indent=1))
     else:
         st["figures_placed"] = "NOT TESTED"
+    # figure semantic review must be current (hash-bound to the SVG and caption) and free of open majors
+    st["figure_semantic_review"], _ = run(["tools/figure_review_gate.py", "--report", str(QA / "figure-review-gate.json")], QA / "figure-review-gate.json")
 
-    mandatory = ["source_integrity", "reconciliation", "reconciliation_digital", "layout_detectors", "inkjet_checker_cream",
-                 "inkjet_checker_white", "print_supplementary", "no_duplicate_tables_figures", "xref_audit", "table_audit", "index_audit", "figures_placed"]
+    mandatory = ["source_preflight", "source_integrity", "reconciliation", "reconciliation_digital", "layout_detectors", "inkjet_checker_cream",
+                 "inkjet_checker_white", "print_supplementary", "no_duplicate_tables_figures", "xref_audit", "table_audit", "index_audit", "figures_placed",
+                 "figure_semantic_review"]
     failed = [k for k in mandatory if st.get(k) != "PASS"]
     out = {"checks": st, "mandatory_failed": failed, "release_gate": "PASS" if not failed else "FAIL",
            "not_covered_here": ["all-page visual inspection (production/qa/visual-review.json)",
-                                "diagram semantic review (figures/manifest.json)",
+                                "diagram semantic correctness beyond the hash-bound review record (production/qa/figure-semantic-review.json)",
                                 "physical inkjet proof: NOT TESTED"]}
     (QA / "STATUS.json").write_text(json.dumps(out, indent=1))
     print(json.dumps(out, indent=1))
