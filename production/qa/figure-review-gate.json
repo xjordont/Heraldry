@@ -1,10 +1,14 @@
 {
- "status": "PASS",
+ "status": "FAIL",
  "reviewer": "publication-auditor (independent semantic re-review against patched text, P-01..P-07)",
  "reviewed_at": "2026-10-06T14:16:23Z",
  "figures_total": 19,
- "figures_pass": 19,
- "stale": [],
+ "figures_pass": 16,
+ "stale": [
+  "FIG-08",
+  "FIG-13",
+  "FIG-19"
+ ],
  "missing_review": [],
  "open_majors": {},
  "open_minor_count": 3,
@@ -147,23 +151,28 @@
   {
    "id": "FIG-08",
    "current": {
-    "svg_sha256": "c1d458ec0caf3229e92beb59043e60a680c858bb642e26385853c3c00d99068b",
-    "caption_sha256": "3d93b57cb6a1e9c7d2ea8be382a9d49f2a56f2d63c2bd2847e681678678b622e"
+    "svg_sha256": "e13c38904a9db3e3cff11ea37fb61466567743c251e915052f54bee33929cabe",
+    "caption_sha256": "2720a0ef5102c9927f3631a14d2138988e77cf96cf8cbb92988104b9e235e040"
    },
    "reviewed": {
     "svg_sha256": "c1d458ec0caf3229e92beb59043e60a680c858bb642e26385853c3c00d99068b",
     "caption_sha256": "3d93b57cb6a1e9c7d2ea8be382a9d49f2a56f2d63c2bd2847e681678678b622e"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Wording slightly exceeds P-01. Panel C says \"The origin square (the source) is not affected\" and the caption says a cone \"affects 7 squares and not its origin square, because a cone or line does not affect the combatant it originates from\". P-01 excludes the originating COMBATANT, not the origin SQUARE as a square: the Line row of the Affected Squares table explicitly includes the origin square, the Cone row is silent, and a 2x2/3x3 source's other footprint squares can lie inside the cone. Any marker or hazard sharing the origin square is not addressed by P-01. The 7-square count is unaffected; only the \"origin square is not affected\" inference is not literally in the patched text. Panel A omits the rule's \"Unless a rule says otherwise\" qualifier (minor)."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-09",
@@ -244,7 +253,7 @@
   {
    "id": "FIG-13",
    "current": {
-    "svg_sha256": "340d346d2202280b7d3feb6186b1d1ac1772628289b542bdc6fde6da07ae80a7",
+    "svg_sha256": "3934447ce6f1aeba8ffb806740c3f74a585dc40c7543bfad1d98268706bbcb10",
     "caption_sha256": "c9fd96822f11e7afd1afcb345638305892f5e3c901bb7d2e12e29f4f7c4c0af7"
    },
    "reviewed": {
@@ -252,15 +261,19 @@
     "caption_sha256": "c9fd96822f11e7afd1afcb345638305892f5e3c901bb7d2e12e29f4f7c4c0af7"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Key scoping: \"Where a scenario states no depth, zone size or placing order (Sun-Drowned 2 and 3, The Mire 3, 5 and 6, Pale City 1), the 10.1 step 11 default applies\". The list is complete for depth and zone size, but the placing-order default (alternate placing from the Roll-off loser) applies wherever a scenario is silent on order, which includes essentially every edge-deployment scenario (e.g. 12025, 12481, 13819), not only these six. The figure does not claim those scenarios lack alternation, so nothing is false, but the list reads as exhaustive for order. Panel D labels the 8\"x8\" corner \"(10.1 step 11 default)\" although Greenmark 2 (12096) states 8\"x8\" itself (value identical; attribution imprecise)."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-14",
@@ -361,22 +374,26 @@
    "id": "FIG-19",
    "current": {
     "svg_sha256": "485135198445731d4c3cd1af696e717472b054f6d56f010c8e5df5f59babf704",
-    "caption_sha256": "f63b03e2be6c774f8dcf41a74c70093188d84cf8ff23a35ff431d12a2f368805"
+    "caption_sha256": "91debae1163303187f8d3cd863e10a01fa1f6473504f65725fe66deb4b98074c"
    },
    "reviewed": {
     "svg_sha256": "485135198445731d4c3cd1af696e717472b054f6d56f010c8e5df5f59babf704",
     "caption_sha256": "f63b03e2be6c774f8dcf41a74c70093188d84cf8ff23a35ff431d12a2f368805"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Caption wording: \"extracting it plus 1 Satchel, 2 Goblins and 1 Bandit scores 12 + 4 + 2 + 3 = 21c\" reads as though Goblins and a Bandit are extracted; per B.6 Monster Coin Value they score when a side reduces them to 0 HP. The caption also omits that the example is assumed (panel B heading says \"Example (assumed)\"). The arithmetic matches the profiles and B.6."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   }
  ]
 }
