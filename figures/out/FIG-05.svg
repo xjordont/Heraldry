@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="397.2pt" viewBox="0 0 504 397.2">
+<title>FIG-05</title>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="13" height="13" fill="#000"/>
+<text x="6.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Grid Mode Move, Speed 5" (4.4.3)</text>
+<rect x="4" y="24" width="140" height="100" fill="#fff"/>
+<line x1="4" y1="24" x2="4" y2="124" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="24" y1="24" x2="24" y2="124" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="44" y1="24" x2="44" y2="124" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="64" y1="24" x2="64" y2="124" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="84" y1="24" x2="84" y2="124" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="104" y1="24" x2="104" y2="124" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="124" y1="24" x2="124" y2="124" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="144" y1="24" x2="144" y2="124" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="24" x2="144" y2="24" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="44" x2="144" y2="44" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="64" x2="144" y2="64" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="84" x2="144" y2="84" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="104" x2="144" y2="104" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="124" x2="144" y2="124" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="4" y="24" width="140" height="100" fill="none" stroke="#000" stroke-width="0.9"/>
+<circle cx="14" cy="114" r="7" fill="#000" stroke="#000" stroke-width="0.75"/>
+<polyline points="14,114 34,114 54,94 74,74" fill="none" stroke="#000" stroke-width="1.6" stroke-linecap="butt" stroke-linejoin="round"/>
+<circle cx="34" cy="114" r="2.6" fill="#000"/>
+<circle cx="54" cy="94" r="2.6" fill="#000"/>
+<circle cx="74" cy="74" r="2.6" fill="#000"/>
+<line x1="74" y1="74" x2="87" y2="74" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="94,74 87,77.4 87,70.6" fill="#000"/>
+<line x1="77" y1="71" x2="92" y2="56" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<circle cx="92" cy="56" r="7.2" fill="#fff"/>
+<line x1="87" y1="51" x2="97" y2="61" stroke="#000" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="87" y1="61" x2="97" y2="51" stroke="#000" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="29.82" y="92.08" width="8.35" height="10.89" fill="#fff"/>
+<text x="31.62" y="100" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1</text>
+<rect x="59.1" y="93.08" width="15.8" height="10.89" fill="#fff"/>
+<text x="60.9" y="101" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">2.5</text>
+<rect x="56.82" y="60.08" width="8.35" height="10.89" fill="#fff"/>
+<text x="58.62" y="68" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">4</text>
+<rect x="89.82" y="74.08" width="8.35" height="10.89" fill="#fff"/>
+<text x="91.62" y="82" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">5</text>
+<rect x="102.1" y="50.08" width="15.8" height="10.89" fill="#fff"/>
+<text x="103.9" y="58" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">6.5</text>
+<text x="4" y="136" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Running total of movement spent (inches).</text>
+<text x="4" y="148" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Speed 5": one orthogonal square (1"), two diagonal squares</text>
+<text x="4" y="158.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(1.5" each) = 4". One more orthogonal square (1") is allowed;</text>
+<text x="4" y="169.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">another diagonal (1.5") would exceed the 1" remaining.</text>
+<rect x="262" y="0" width="13" height="13" fill="#000"/>
+<text x="268.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="280" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Cost of one step into a square (2.6, 2.9.3)</text>
+<rect x="266" y="26" width="60" height="60" fill="#fff"/>
+<line x1="266" y1="26" x2="266" y2="86" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="286" y1="26" x2="286" y2="86" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="306" y1="26" x2="306" y2="86" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="326" y1="26" x2="326" y2="86" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="266" y1="26" x2="326" y2="26" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="266" y1="46" x2="326" y2="46" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="266" y1="66" x2="326" y2="66" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="266" y1="86" x2="326" y2="86" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="266" y="26" width="60" height="60" fill="none" stroke="#000" stroke-width="0.9"/>
+<circle cx="296" cy="56" r="7.6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<rect x="291.82" y="31.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="293.62" y="39.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1</text>
+<rect x="271.82" y="51.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="273.62" y="59.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1</text>
+<rect x="311.82" y="51.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="313.62" y="59.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1</text>
+<rect x="291.82" y="71.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="293.62" y="79.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1</text>
+<rect x="268.1" y="31.58" width="15.8" height="10.89" fill="#fff"/>
+<text x="269.9" y="39.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1.5</text>
+<rect x="308.1" y="31.58" width="15.8" height="10.89" fill="#fff"/>
+<text x="309.9" y="39.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1.5</text>
+<rect x="268.1" y="71.58" width="15.8" height="10.89" fill="#fff"/>
+<text x="269.9" y="79.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1.5</text>
+<rect x="308.1" y="71.58" width="15.8" height="10.89" fill="#fff"/>
+<text x="309.9" y="79.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1.5</text>
+<text x="296" y="98" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Open Terrain</text>
+<rect x="354" y="26" width="60" height="60" fill="#fff"/>
+<line x1="354" y1="26" x2="354" y2="86" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="374" y1="26" x2="374" y2="86" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="394" y1="26" x2="394" y2="86" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="414" y1="26" x2="414" y2="86" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="354" y1="26" x2="414" y2="26" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="354" y1="46" x2="414" y2="46" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="354" y1="66" x2="414" y2="66" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="354" y1="86" x2="414" y2="86" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="354" y="26" width="60" height="60" fill="none" stroke="#000" stroke-width="0.9"/>
+<rect x="354" y="26" width="20" height="20" fill="url(#p-diff)" stroke="#000" stroke-width="0.6"/>
+<rect x="374" y="26" width="20" height="20" fill="url(#p-diff)" stroke="#000" stroke-width="0.6"/>
+<rect x="394" y="26" width="20" height="20" fill="url(#p-diff)" stroke="#000" stroke-width="0.6"/>
+<rect x="354" y="46" width="20" height="20" fill="url(#p-diff)" stroke="#000" stroke-width="0.6"/>
+<rect x="394" y="46" width="20" height="20" fill="url(#p-diff)" stroke="#000" stroke-width="0.6"/>
+<rect x="354" y="66" width="20" height="20" fill="url(#p-diff)" stroke="#000" stroke-width="0.6"/>
+<rect x="374" y="66" width="20" height="20" fill="url(#p-diff)" stroke="#000" stroke-width="0.6"/>
+<rect x="394" y="66" width="20" height="20" fill="url(#p-diff)" stroke="#000" stroke-width="0.6"/>
+<circle cx="384" cy="56" r="7.6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<rect x="379.82" y="31.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="381.62" y="39.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">2</text>
+<rect x="359.82" y="51.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="361.62" y="59.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">2</text>
+<rect x="399.82" y="51.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="401.62" y="59.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">2</text>
+<rect x="379.82" y="71.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="381.62" y="79.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">2</text>
+<rect x="359.82" y="31.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="361.62" y="39.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">3</text>
+<rect x="399.82" y="31.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="401.62" y="39.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">3</text>
+<rect x="359.82" y="71.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="361.62" y="79.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">3</text>
+<rect x="399.82" y="71.58" width="8.35" height="10.89" fill="#fff"/>
+<text x="401.62" y="79.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">3</text>
+<text x="384" y="98" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Difficult Terrain</text>
+<text x="262" y="112" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Numbers are the movement spent to enter that square from the</text>
+<text x="262" y="122.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">centre square. Difficult Terrain: 2" orthogonal, 3" diagonal. If</text>
+<text x="262" y="133.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Difficult Terrain, Climb or Jump each apply to the same 1", use</text>
+<text x="262" y="143.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">only the single highest cost (4.4.7).</text>
+<line x1="0" y1="189.8" x2="504" y2="189.8" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="0" y="195.8" width="13" height="13" fill="#000"/>
+<text x="6.5" y="206.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">C</text>
+<text x="18" y="206.2" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Multi-square footprint (4.4.3)</text>
+<rect x="4" y="219.8" width="120" height="80" fill="#fff"/>
+<line x1="4" y1="219.8" x2="4" y2="299.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="24" y1="219.8" x2="24" y2="299.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="44" y1="219.8" x2="44" y2="299.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="64" y1="219.8" x2="64" y2="299.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="84" y1="219.8" x2="84" y2="299.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="104" y1="219.8" x2="104" y2="299.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="124" y1="219.8" x2="124" y2="299.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="219.8" x2="124" y2="219.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="239.8" x2="124" y2="239.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="259.8" x2="124" y2="259.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="279.8" x2="124" y2="279.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="4" y1="299.8" x2="124" y2="299.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="4" y="219.8" width="120" height="80" fill="none" stroke="#000" stroke-width="0.9"/>
+<rect x="44" y="239.8" width="20" height="20" fill="url(#p-diff)" stroke="#000" stroke-width="0.9"/>
+<rect x="44" y="239.8" width="20" height="20" fill="url(#p-diff)" stroke="#000" stroke-width="0.6"/>
+<rect x="6" y="241.8" width="36" height="36" fill="url(#p-mon)" stroke="#000" stroke-width="1.4"/>
+<rect x="25" y="240.8" width="38" height="38" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="4 2.5"/>
+<line x1="30" y1="289.8" x2="47" y2="289.8" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="54,289.8 47,293.2 47,286.4" fill="#000"/>
+<rect x="74.19" y="244.88" width="31.63" height="10.89" fill="#fff"/>
+<text x="75.99" y="252.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">cost 2"</text>
+<text x="66" y="311.8" font-family="'Source Sans 3'" font-size="9" fill="#000"></text>
+<text x="4" y="311.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A Large combatant stepping east would occupy a Difficult</text>
+<text x="4" y="322.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Terrain square. For each step, use the highest movement cost</text>
+<text x="4" y="333" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">that applies to any square occupied after the step: this</text>
+<text x="4" y="343.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">orthogonal step costs 2".</text>
+<rect x="262" y="195.8" width="13" height="13" fill="#000"/>
+<text x="268.5" y="206.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">D</text>
+<text x="280" y="206.2" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Diagonal steps around corners (4.4.3)</text>
+<rect x="266" y="219.8" width="48" height="48" fill="#fff"/>
+<line x1="266" y1="219.8" x2="266" y2="267.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="290" y1="219.8" x2="290" y2="267.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="314" y1="219.8" x2="314" y2="267.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="266" y1="219.8" x2="314" y2="219.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="266" y1="243.8" x2="314" y2="243.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="266" y1="267.8" x2="314" y2="267.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="266" y="219.8" width="48" height="48" fill="none" stroke="#000" stroke-width="0.9"/>
+<rect x="266" y="219.8" width="24" height="24" fill="#4a4a4a" stroke="#000" stroke-width="0.6"/>
+<rect x="290" y="243.8" width="24" height="24" fill="#4a4a4a" stroke="#000" stroke-width="0.6"/>
+<circle cx="278" cy="255.8" r="9.12" fill="#000" stroke="#000" stroke-width="0.75"/>
+<line x1="282" y1="251.8" x2="301" y2="232.8" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<circle cx="301" cy="232.8" r="7.2" fill="#fff"/>
+<line x1="296" y1="227.8" x2="306" y2="237.8" stroke="#000" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="296" y1="237.8" x2="306" y2="227.8" stroke="#000" stroke-width="1.8" stroke-linecap="round"/>
+<text x="290" y="279.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Not allowed</text>
+<rect x="386" y="219.8" width="48" height="48" fill="#fff"/>
+<line x1="386" y1="219.8" x2="386" y2="267.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="410" y1="219.8" x2="410" y2="267.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="434" y1="219.8" x2="434" y2="267.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386" y1="219.8" x2="434" y2="219.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386" y1="243.8" x2="434" y2="243.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386" y1="267.8" x2="434" y2="267.8" stroke="#a6a6a6" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="386" y="219.8" width="48" height="48" fill="none" stroke="#000" stroke-width="0.9"/>
+<rect x="386" y="219.8" width="24" height="24" fill="#4a4a4a" stroke="#000" stroke-width="0.6"/>
+<circle cx="398" cy="255.8" r="9.12" fill="#000" stroke="#000" stroke-width="0.75"/>
+<line x1="402" y1="251.8" x2="416.05" y2="237.75" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="421,232.8 418.45,240.15 413.65,235.35" fill="#000"/>
+<text x="410" y="279.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Allowed</text>
+<text x="262" y="291.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A diagonal step needs at least one of the 2 orthogonal</text>
+<text x="262" y="302.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">intermediate positions to be one the combatant could legally</text>
+<text x="262" y="313" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">enter. If both are closed, no diagonal step is possible.</text>
+<text x="0" y="368.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
+<circle cx="31.88" cy="368.2" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="48.88" y="371.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Combatant</text>
+<polygon points="116.89,368.2 113.65,373.81 107.17,373.81 103.93,368.2 107.17,362.59 113.65,362.59" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<text x="127.41" y="371.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster</text>
+<rect x="170.16" y="362.7" width="16" height="11" fill="url(#p-diff)" stroke="#000" stroke-width="0.8"/>
+<text x="194.16" y="371.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Difficult Terrain</text>
+<rect x="264.72" y="362.7" width="16" height="11" fill="#4a4a4a" stroke="#000" stroke-width="0.8"/>
+<text x="288.72" y="371.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking Terrain</text>
+<line x1="360.42" y1="368.2" x2="373.42" y2="368.2" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="380.42,368.2 373.42,371.6 373.42,364.8" fill="#000"/>
+<text x="386.42" y="371.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Move (permitted)</text>
+<line x1="0" y1="383.2" x2="15" y2="383.2" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<circle cx="15" cy="383.2" r="7.2" fill="#fff"/>
+<line x1="10" y1="378.2" x2="20" y2="388.2" stroke="#000" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="10" y1="388.2" x2="20" y2="378.2" stroke="#000" stroke-width="1.8" stroke-linecap="round"/>
+<text x="26" y="386.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Not permitted</text>
+</svg>

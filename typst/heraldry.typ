@@ -131,11 +131,14 @@
 }
 
 // ---------------------------------------------------------------- chapter opener
-#let chapter-opener(num, title, anchor, lead: none) = {
+#let chapter-opener(num, title, anchor, lead: none, art: none) = {
   pagebreak(weak: true)
   block(width: 100%, above: 0pt, below: 18pt, breakable: false)[
     #metadata(anchor) <chapter-opener>
-    #v(0.35in)
+    #if art != none {
+      align(center, image(art, width: 100%, height: 3.6in, fit: "contain"))
+      v(6pt)
+    } else { v(0.35in) }
     #align(center)[
       #motif(len: 80pt)
       #v(10pt)
@@ -164,6 +167,8 @@
 #let pm(seg, piece, edge) = context [#metadata((seg: seg, piece: piece, edge: edge, page: here().page(), y: here().position().y.pt(), x: here().position().x.pt())) <pm>]
 
 #let pmx(..args) = none
+#let tmark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), folio: counter(page).display())) <tblpos>]
+#let ixm(k) = [#metadata(k) #label("ix-" + k)#context [#metadata((k: k, page: here().page(), folio: counter(page).display())) <ixpos>]]
 #let seg(body) = columns(2, gutter: gap, body)
 
 // Balanced tail: pieces are top-level blocks that sat on one page in the previous pass.
@@ -223,7 +228,7 @@
   let fills = (x, y) => if y > 0 and calc.even(y) { band } else { none }
   set table.cell(breakable: false)   // keep ordinary rows intact
   block(width: 100%, above: 8pt, below: 10pt, breakable: true)[
-    #metadata(id) #label("tbl-" + id)
+    #metadata(id) #label("tbl-" + id)#tmark(id, "s")
     #table(
       columns: widths.map(w => w * 1pt),
       align: (x, y) => aligns.at(x) + top,
@@ -236,6 +241,7 @@
       table.header(repeat: true, ..header.map(h => table.cell(text(weight: 600, h)))),
       ..rows.flatten(),
     )
+    #tmark(id, "e")
   ]
 }
 
@@ -243,7 +249,7 @@
 #let statstrip(id, header, values) = {
   set text(font: sans, size: 9.5pt, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining", number-width: "tabular")
   block(width: 100%, above: 6pt, below: 8pt, breakable: false)[
-    #metadata(id) #label("tbl-" + id)
+    #metadata(id) #label("tbl-" + id)#tmark(id, "s")#tmark(id, "e")
     #table(
       columns: (1fr,) * header.len(),
       align: center + horizon,
@@ -260,7 +266,7 @@
 #let statcard(id, header, values) = {
   set text(font: sans, size: 9.5pt, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining")
   block(width: 100%, above: 6pt, below: 8pt, breakable: false)[
-    #metadata(id) #label("tbl-" + id)
+    #metadata(id) #label("tbl-" + id)#tmark(id, "s")#tmark(id, "e")
     #table(
       columns: (auto, 1fr),
       inset: (x: 4pt, y: 2.6pt),
@@ -275,7 +281,7 @@
 // `lead` = key fields shown in the entry title line, `fields` = (label, value) pairs, `desc` = (label, value) prose fields.
 #let cards(id, entries, title-label: none) = {
   block(width: 100%, above: 6pt, below: 8pt, breakable: true)[
-    #metadata(id) #label("tbl-" + id)
+    #metadata(id) #label("tbl-" + id)#tmark(id, "s")
     #for e in entries {
       block(width: 100%, above: 0pt, below: 0pt, breakable: true, inset: (top: 5pt, bottom: 6pt),
         stroke: (top: 0.3pt + rgb(0,0,0,30%)))[
@@ -294,12 +300,13 @@
       ]
     }
     #line(length: 100%, stroke: 0.6pt + ink)
+    #tmark(id, "e")
   ]
 }
 
 // ---------------------------------------------------------------- figures
 #let figure-block(id, file, caption, width: 100%, anchor: none) = block(width: 100%, above: 10pt, below: 12pt, breakable: false)[
-  #metadata(id) #label("fig-" + id)
+  #metadata(id) #label("fig-" + id)#tmark(id, "s")
   #align(center, image(file, width: width))
   #v(4pt)
   #set text(font: sans, size: 9pt, fill: ink)
