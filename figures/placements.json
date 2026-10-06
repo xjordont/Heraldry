@@ -1,0 +1,152 @@
+{
+  "B01015": [
+    {
+      "id": "FIG-01",
+      "caption": "The four phases of a round in order. If a specific rule places the Monster Phase before the Party Phase, both phases still resolve once before End of Round (see 3.1).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01071": [
+    {
+      "id": "FIG-02",
+      "caption": "Left: the activation procedure. Right: a Hero's 3 AP across one round, assuming a shield: Move (1 AP) and Attack (1 AP) leave 1 AP, which a Block Reaction (1 AP) uses in the Monster Phase; otherwise it is removed at End of Round (see 3.3).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01515": [
+    {
+      "id": "FIG-03",
+      "caption": "The five-step attack sequence and the Mitigation Order. Source example: 6 slashing and 4 fire damage against 5 AV is (6 − 5) + 4 = 5 damage; with d6 AD rolling 3, 9 slashing is 9 − 3 = 6, or 9 − (3 + 2) = 4 with a +2 AV Block (see 5.2).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B00598": [
+    {
+      "id": "FIG-04",
+      "caption": "Tabletop Mode measures between closest points; Grid Mode counts orthogonal squares as 1\" and diagonal squares as 1.5\", so this range is 1.5 + 1.5 + 1 = 4\" without the source square. Footprints follow Sz, and movement is declared and verified before it is resolved (see 2.6).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01330": [
+    {
+      "id": "FIG-05",
+      "caption": "Source example: a Speed 5\" Move of 1 + 1.5 + 1.5 = 4\" leaves 1\", enough for one orthogonal square but not for another 1.5\" diagonal. Difficult Terrain costs 2\" orthogonal and 3\" diagonal, a multi-square footprint pays the highest cost among its squares, and a diagonal step needs an open orthogonal route (see 4.4.3).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01466": [
+    {
+      "id": "FIG-06",
+      "caption": "In Grid Mode a melee attack targets the 8 surrounding squares and Reach extends to 2 squares; only adjacency Engages. Leaving an enemy's melee distance with Move allows a Reflex Attack at the trigger point, while Shift does not (see 5.1).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B00810": [
+    {
+      "id": "FIG-07",
+      "caption": "Blocking Terrain, a corner shared by two Blocking squares and the interior of Cover Terrain block LOS. Touching only a Cover Terrain corner, an intervening combatant and Impassable Terrain leave LOS clear but give the target Cover; a Shift of 1 AP clear of the line removes the combatant's Cover (see 2.7.2 and 2.8.4).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B00741": [
+    {
+      "id": "FIG-08",
+      "caption": "A Grid Mode Aura 2\" affects 13 squares (including the source square) and a 3\" Cone 7 squares beyond its origin; a square whose sight line from the origin is blocked by Blocking Terrain is unaffected even if the template covers it. Shared area damage is rolled once (see 2.7.3).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B01374": [
+    {
+      "id": "FIG-09",
+      "caption": "Forced movement follows a line and stops at the last legal position; a Collision deals no damage by itself. Source example: a 3\" Push toward a ledge 2\" away moves the Skeleton 2\" to the edge point, then Falling is resolved from that point (see 4.4.6).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B07590": [
+    {
+      "id": "FIG-10",
+      "caption": "A Monster Group begins Resting and becomes Awake for the rest of the adventure when a trigger occurs: an enemy moving within 6\" (no LOS needed), a visible enemy entering LOS within 12\", damage, a loud event within 6\", or a scenario rule (see 9.4).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B07636": [
+    {
+      "id": "FIG-11",
+      "caption": "The Standard Monster AI Script: a Monster executes the first valid instruction and its activation then ends. Each instruction is tried only if the one above it does not apply (see 9.5 C).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B07662": [
+    {
+      "id": "FIG-12",
+      "caption": "Primary Target is the nearest visible enemy; equal candidates are separated by lowest current HP, then Most Recent Attacker, then Random Determination. If the Primary Target cannot be reached, the nearest reachable visible enemy becomes the new Primary Target (see 9.5 E and 9.5 F).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B11062": [
+    {
+      "id": "FIG-13",
+      "caption": "Deployment patterns used by the Core Scenarios, drawn on a 36\"×36\" battlefield: opposite long or short edges within 6\", a Setup Roll-off winner's choice of edge or 8\"×8\" corner, and opposite corner zones with alternating placement where stated (see 10.1 and each scenario's Party Deployment).",
+      "width": "100%",
+      "scope": "full"
+    },
+    {
+      "id": "FIG-14",
+      "caption": "Special deployments: a Trail with at least two Heroes on it, one shared short edge within 8\" (no Hero within 6\" of an opposing Hero), a central 8\"×8\" Safe Zone (no Hero within 3\" of an opposing Hero), and short edges either side of a Ravine (see 10.4).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B12997": [
+    {
+      "id": "FIG-15",
+      "caption": "In The Chasm Crossing the Survey Map starts 3\" from the first ledge and must be placed adjacent to the Cartographer's Stone 3\" beyond the last ledge. Gaps of 1–2\" between ledges are crossed by Jump, and a failed Jump into the Chasm causes a Chasm Fall (see 10.4).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B12100": [
+    {
+      "id": "FIG-16",
+      "caption": "In the Whispering Grove the Antlered Warden's Target Priority is the valid Hero who most recently activated or attempted to activate a Standing Stone, whichever party that Hero belongs to; its Entangling Roots then applies if the target is within 8\" (see 10.4).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B15198": [
+    {
+      "id": "FIG-17",
+      "caption": "Each adventure runs Expedition, Skirmish, Aftermath, then Town; Aftermath and Town follow every adventure, win or lose, unless a rule says otherwise. The Town Phase grants 4 TAP, or the Journey-modified amount, to spend at six locations (see 11.2).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B16371": [
+    {
+      "id": "FIG-18",
+      "caption": "Appendix A starting positions and Round 1 of the sample game. Edric ends the round with 16 − 5 = 11, 11 − 3 = 8 and 8 − 3 = 5 HP after Varek's attack and two Dire Wolf bites (see A.11).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ],
+  "B17082": [
+    {
+      "id": "FIG-19",
+      "caption": "Basic Mode setup for The Courier's Strongbox on a 24\"×24\" battlefield. Example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move, and extracting it plus 1 Satchel, 2 Goblins and 1 Bandit scores 12 + 4 + 2 + 3 = 21c (see B.6).",
+      "width": "100%",
+      "scope": "full"
+    }
+  ]
+}

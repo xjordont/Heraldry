@@ -1,0 +1,9092 @@
+{
+ "tables": 332,
+ "pass": 332,
+ "multipage": [
+  "T004",
+  "T009",
+  "T014",
+  "T016",
+  "T019",
+  "T023",
+  "T025",
+  "T031",
+  "T032",
+  "T034",
+  "T036",
+  "T037",
+  "T042",
+  "T046",
+  "T055",
+  "T056",
+  "T057",
+  "T058",
+  "T059",
+  "T060",
+  "T061",
+  "T062",
+  "T063",
+  "T064",
+  "T065",
+  "T066",
+  "T067",
+  "T068",
+  "T069",
+  "T070",
+  "T071",
+  "T076",
+  "T078",
+  "T080",
+  "T081",
+  "T082",
+  "T083",
+  "T084",
+  "T225",
+  "T230",
+  "T232",
+  "T234",
+  "T243",
+  "T245",
+  "T247",
+  "T249",
+  "T251",
+  "T253",
+  "T255",
+  "T256",
+  "T261",
+  "T299",
+  "T300",
+  "T306",
+  "T307",
+  "T310",
+  "T311",
+  "T314",
+  "T315",
+  "T321",
+  "T325",
+  "T327",
+  "T329",
+  "T330",
+  "T331",
+  "T332"
+ ],
+ "rows": [
+  {
+   "id": "T001",
+   "src_lines": [
+    179,
+    185
+   ],
+   "heading": "1.1 What is Heraldry Skirmish?",
+   "columns": 2,
+   "rows": 5,
+   "cells": 12,
+   "cell_sha256": "d26b1b7541ce5c993cb11d940e0cdcda72860380e0010af442beb13fcb24f766",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    7,
+    7
+   ],
+   "folios": [
+    "1",
+    "1"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T002",
+   "src_lines": [
+    479,
+    492
+   ],
+   "heading": "2.1.1 Core Stats and Abbreviations",
+   "columns": 2,
+   "rows": 12,
+   "cells": 26,
+   "cell_sha256": "f0ca6db8e4dd4e918548103d218264dcaed6dd9a0384548efc0dd4dff4ec3a38",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    18,
+    18
+   ],
+   "folios": [
+    "12",
+    "12"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T003",
+   "src_lines": [
+    545,
+    558
+   ],
+   "heading": "2.4.1 Attack Advantage and Disadvantage",
+   "columns": 3,
+   "rows": 12,
+   "cells": 39,
+   "cell_sha256": "ab18ff772606891eaf7f3a5a51503372268e425bd5fc669f9f87a2d6288a8f98",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    19,
+    19
+   ],
+   "folios": [
+    "13",
+    "13"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T004",
+   "src_lines": [
+    614,
+    619
+   ],
+   "heading": "Size and Footprints",
+   "columns": 4,
+   "rows": 4,
+   "cells": 20,
+   "cell_sha256": "e34d250d7649b79521224e480896eee112fa3bf0a1e1aeae4c9da5714d47887f",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    21,
+    22
+   ],
+   "folios": [
+    "15",
+    "16"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T005",
+   "src_lines": [
+    706,
+    710
+   ],
+   "heading": "2.7.3 Areas of Effect",
+   "columns": 2,
+   "rows": 3,
+   "cells": 8,
+   "cell_sha256": "2d8ff68e148de5bc6b3114e371b1f67fbbcf04d32136d626847af2ab64f63154",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    24,
+    24
+   ],
+   "folios": [
+    "18",
+    "18"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T006",
+   "src_lines": [
+    716,
+    719
+   ],
+   "heading": "2.7.3 Areas of Effect",
+   "columns": 2,
+   "rows": 2,
+   "cells": 6,
+   "cell_sha256": "d3fc76fe39fdfaa3480aa45a41780a5b6e661b7cc5f9986245b42e88a1b859b0",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    24,
+    24
+   ],
+   "folios": [
+    "18",
+    "18"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T007",
+   "src_lines": [
+    725,
+    731
+   ],
+   "heading": "2.7.3 Areas of Effect",
+   "columns": 2,
+   "rows": 5,
+   "cells": 12,
+   "cell_sha256": "2f1671ebf3cc1f05c6f9352ff7589978a98a9d71f90e4062400adcc42ed0ec6b",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    24,
+    24
+   ],
+   "folios": [
+    "18",
+    "18"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T008",
+   "src_lines": [
+    752,
+    756
+   ],
+   "heading": "2.8 Cover, Light, Hidden, and Visibility",
+   "columns": 3,
+   "rows": 3,
+   "cells": 12,
+   "cell_sha256": "92bfe47ea2d3abfc246d681b52c31fec720ae5905dcc3eb2db65033d790f3f9b",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    26,
+    26
+   ],
+   "folios": [
+    "20",
+    "20"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T009",
+   "src_lines": [
+    848,
+    874
+   ],
+   "heading": "2.9.1 Terrain Types",
+   "columns": 3,
+   "rows": 25,
+   "cells": 78,
+   "cell_sha256": "24555433e14d0e93d1838351088c67ce4399c6cfa8a3dc0fa3204d4447ac9700",
+   "representation": "table",
+   "scope": "full",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    29,
+    30
+   ],
+   "folios": [
+    "23",
+    "24"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T010",
+   "src_lines": [
+    1161,
+    1180
+   ],
+   "heading": "Battlefield Reference Table",
+   "columns": 3,
+   "rows": 18,
+   "cells": 57,
+   "cell_sha256": "46453c86cf66168af4f728ba2b7f83e0c7c65328ad5fd148fd3b1db9e4c6c1d0",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    40,
+    40
+   ],
+   "folios": [
+    "34",
+    "34"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T011",
+   "src_lines": [
+    1204,
+    1219
+   ],
+   "heading": "4.2 Universal Actions",
+   "columns": 3,
+   "rows": 14,
+   "cells": 45,
+   "cell_sha256": "fd3f6e0b290b675fbf7b124b3ae3c0984ae48a86388bdc6b73d35f1f123dc29f",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    41,
+    41
+   ],
+   "folios": [
+    "35",
+    "35"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T012",
+   "src_lines": [
+    1292,
+    1302
+   ],
+   "heading": "4.4.1 Movement Type Reference",
+   "columns": 3,
+   "rows": 9,
+   "cells": 30,
+   "cell_sha256": "c38a98ed3d022a50282b49783eabe97ea6ba049263b20c80476627aef2878d9f",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    43,
+    43
+   ],
+   "folios": [
+    "37",
+    "37"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T013",
+   "src_lines": [
+    1504,
+    1509
+   ],
+   "heading": "5.1.2 Combat Reaction Guide",
+   "columns": 3,
+   "rows": 4,
+   "cells": 15,
+   "cell_sha256": "7712df52683245e6a839e7d059983b28a71cb0fc2b5adf19a8092a19e729548c",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    52,
+    52
+   ],
+   "folios": [
+    "46",
+    "46"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T014",
+   "src_lines": [
+    1581,
+    1594
+   ],
+   "heading": "5.4.3 Damage Types",
+   "columns": 2,
+   "rows": 12,
+   "cells": 26,
+   "cell_sha256": "70588177977f4b3352816df8686fcfcf4359c4bccd768ea39a046e938dd0239d",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    54,
+    55
+   ],
+   "folios": [
+    "48",
+    "49"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T015",
+   "src_lines": [
+    1668,
+    1673
+   ],
+   "heading": "5.5.3 Parry [1 AP]",
+   "columns": 2,
+   "rows": 4,
+   "cells": 10,
+   "cell_sha256": "d320e7a97f57a6d9efe742c0393ccf47d3c8dabf3014ba29292777d1eb847901",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    56,
+    56
+   ],
+   "folios": [
+    "50",
+    "50"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T016",
+   "src_lines": [
+    1787,
+    1808
+   ],
+   "heading": "5.8.1 Injuries Table",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "c069c91bdab38ae638697e20eeaf9c92a268b85424e53579133091defb3121e0",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    59,
+    60
+   ],
+   "folios": [
+    "53",
+    "54"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T017",
+   "src_lines": [
+    2110,
+    2117
+   ],
+   "heading": "Random Ancestry Table (d10)",
+   "columns": 3,
+   "rows": 6,
+   "cells": 21,
+   "cell_sha256": "1f05979ef7692222094d422385b87b5ecf6218435010c0a663a555e54a57c66a",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    67,
+    67
+   ],
+   "folios": [
+    "61",
+    "61"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T018",
+   "src_lines": [
+    2123,
+    2130
+   ],
+   "heading": "Rare Ancestry Table (d10)",
+   "columns": 3,
+   "rows": 6,
+   "cells": 21,
+   "cell_sha256": "5651c1a6f8874bd3feaf465bac13aceed6ba705c2a7e4196c87bf20cf8dcef6e",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    67,
+    67
+   ],
+   "folios": [
+    "61",
+    "61"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T019",
+   "src_lines": [
+    2138,
+    2149
+   ],
+   "heading": "6.7 Human Trinket Table",
+   "columns": 4,
+   "rows": 10,
+   "cells": 44,
+   "cell_sha256": "78261f1a1461c6b12616724872dc04c4660ffbbb0a90a2153a54ef777d0a270a",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    67,
+    68
+   ],
+   "folios": [
+    "61",
+    "62"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T020",
+   "src_lines": [
+    2359,
+    2380
+   ],
+   "heading": "Random Background Table (d20)",
+   "columns": 2,
+   "rows": 20,
+   "cells": 42,
+   "cell_sha256": "85f50907717fcd2dceba87d13cbbe3fcbd6df677af748a8d937d31941af77d51",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    71,
+    71
+   ],
+   "folios": [
+    "65",
+    "65"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T021",
+   "src_lines": [
+    2546,
+    2559
+   ],
+   "heading": "6.11 Random Class Table",
+   "columns": 2,
+   "rows": 12,
+   "cells": 26,
+   "cell_sha256": "645dcb600632b4e1a3a81ea178100de3590f732acc53cf88ac63aac36f37d704",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    74,
+    74
+   ],
+   "folios": [
+    "68",
+    "68"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T022",
+   "src_lines": [
+    2637,
+    2650
+   ],
+   "heading": "6.13 Hero Classes",
+   "columns": 4,
+   "rows": 12,
+   "cells": 52,
+   "cell_sha256": "b4faf680ffd110b95dea9e578352f2e86f2bdb7a627fe41694b2a2c911213036",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    77,
+    77
+   ],
+   "folios": [
+    "71",
+    "71"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T023",
+   "src_lines": [
+    3190,
+    3198
+   ],
+   "heading": "Wild Shape Forms",
+   "columns": 7,
+   "rows": 7,
+   "cells": 56,
+   "cell_sha256": "3c1af6e45741a53cb73c3705ec27b364525a0ca5622b7b3dac69d1ffc08917db",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "Form": "entry.title.name",
+    "Tier": "entry.field",
+    "SPD": "entry.field",
+    "Sz": "entry.field",
+    "AV": "entry.field",
+    "Natural Attack": "entry.field",
+    "Form Trait": "entry.desc"
+   },
+   "pdf_pages": [
+    90,
+    91
+   ],
+   "folios": [
+    "84",
+    "85"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T024",
+   "src_lines": [
+    3279,
+    3289
+   ],
+   "heading": "Training Cost",
+   "columns": 3,
+   "rows": 9,
+   "cells": 30,
+   "cell_sha256": "82520aa730f4018f48d10952809220098ef14c36c3d3d269696720217086999b",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    92,
+    92
+   ],
+   "folios": [
+    "86",
+    "86"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T025",
+   "src_lines": [
+    3330,
+    3342
+   ],
+   "heading": "Equipment Category Reference",
+   "columns": 3,
+   "rows": 11,
+   "cells": 36,
+   "cell_sha256": "8412e484d1b490201f7f5acd87210e8d99bf695cee4b214be868e3da4bd29c0f",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    94,
+    95
+   ],
+   "folios": [
+    "88",
+    "89"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T026",
+   "src_lines": [
+    3411,
+    3416
+   ],
+   "heading": "7.6.1 Treasure Rolls",
+   "columns": 2,
+   "rows": 4,
+   "cells": 10,
+   "cell_sha256": "0ee509438a5fc2d239eaa2707c714f96b10fedfa89e11d94ef7da30454f485dd",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    97,
+    97
+   ],
+   "folios": [
+    "91",
+    "91"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T027",
+   "src_lines": [
+    3450,
+    3461
+   ],
+   "heading": "Tier 1 Treasure Table (APL 1–2)",
+   "columns": 3,
+   "rows": 10,
+   "cells": 33,
+   "cell_sha256": "a6417d2ab3e94c46ca97769c9123a4bbc645d0cee1f15759a7e8b917bc1f599a",
+   "representation": "table",
+   "scope": "column",
+   "family": "T027",
+   "field_map": null,
+   "pdf_pages": [
+    98,
+    98
+   ],
+   "folios": [
+    "92",
+    "92"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T028",
+   "src_lines": [
+    3465,
+    3479
+   ],
+   "heading": "Tier 2 Treasure Table (APL 3–4)",
+   "columns": 3,
+   "rows": 13,
+   "cells": 42,
+   "cell_sha256": "d53827adaa8d4904c0fd20634d5b17ed19f3a61bd6f4473206d003d3abc31d30",
+   "representation": "table",
+   "scope": "column",
+   "family": "T027",
+   "field_map": null,
+   "pdf_pages": [
+    99,
+    99
+   ],
+   "folios": [
+    "93",
+    "93"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T029",
+   "src_lines": [
+    3483,
+    3498
+   ],
+   "heading": "Tier 3 Treasure Table (APL 5–6)",
+   "columns": 3,
+   "rows": 14,
+   "cells": 45,
+   "cell_sha256": "52c917f9d1b0e2c9d6c738d0771468687ef40c171d24356385756dfbefd8c37b",
+   "representation": "table",
+   "scope": "column",
+   "family": "T027",
+   "field_map": null,
+   "pdf_pages": [
+    99,
+    99
+   ],
+   "folios": [
+    "93",
+    "93"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T030",
+   "src_lines": [
+    3502,
+    3517
+   ],
+   "heading": "Tier 4 Treasure Table (APL 7–8)",
+   "columns": 3,
+   "rows": 14,
+   "cells": 45,
+   "cell_sha256": "b8bb2cac199696f608a316af73c01a2cda558d45861a8f4cb1076da1292a565e",
+   "representation": "table",
+   "scope": "column",
+   "family": "T027",
+   "field_map": null,
+   "pdf_pages": [
+    99,
+    99
+   ],
+   "folios": [
+    "93",
+    "93"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T031",
+   "src_lines": [
+    3521,
+    3536
+   ],
+   "heading": "Tier 5 Treasure Table (APL 9–10)",
+   "columns": 3,
+   "rows": 14,
+   "cells": 45,
+   "cell_sha256": "532d428521d97ef48af4d43a44bae921fea3d76dc19db9c8c99494aa3476747c",
+   "representation": "table",
+   "scope": "column",
+   "family": "T027",
+   "field_map": null,
+   "pdf_pages": [
+    99,
+    100
+   ],
+   "folios": [
+    "93",
+    "94"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T032",
+   "src_lines": [
+    3542,
+    3560
+   ],
+   "heading": "Mechanical Traits",
+   "columns": 2,
+   "rows": 17,
+   "cells": 36,
+   "cell_sha256": "e282d847f05d4d9a1c51e8984208846b35c72ded5227e2bbd1bf45db53e70dc9",
+   "representation": "table",
+   "scope": "column",
+   "family": "T032",
+   "field_map": null,
+   "pdf_pages": [
+    100,
+    101
+   ],
+   "folios": [
+    "94",
+    "95"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T033",
+   "src_lines": [
+    3580,
+    3588
+   ],
+   "heading": "Material and Craftsmanship Traits",
+   "columns": 2,
+   "rows": 7,
+   "cells": 16,
+   "cell_sha256": "5c17748910ac26d02f7f1341a992ac6d238931a9c51a47f8bf5fbae62608e06b",
+   "representation": "table",
+   "scope": "column",
+   "family": "T032",
+   "field_map": null,
+   "pdf_pages": [
+    101,
+    101
+   ],
+   "folios": [
+    "95",
+    "95"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T034",
+   "src_lines": [
+    3598,
+    3642
+   ],
+   "heading": "7.8 Melee Weapons",
+   "columns": 7,
+   "rows": 43,
+   "cells": 308,
+   "cell_sha256": "db46b11e2ebed7b1b9d6bd6bcf05f661683601c106aa51cdb336567ca0622fad",
+   "representation": "table",
+   "scope": "full",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    102,
+    103
+   ],
+   "folios": [
+    "96",
+    "97"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T035",
+   "src_lines": [
+    3648,
+    3663
+   ],
+   "heading": "7.9 Ranged Weapons",
+   "columns": 8,
+   "rows": 14,
+   "cells": 120,
+   "cell_sha256": "6d16d1f33273684fee6d4363fe85861169ef684cd6654ff5482c70aa17fe13d2",
+   "representation": "table",
+   "scope": "full",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    103,
+    103
+   ],
+   "folios": [
+    "97",
+    "97"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T036",
+   "src_lines": [
+    3679,
+    3696
+   ],
+   "heading": "7.10 Armour",
+   "columns": 7,
+   "rows": 16,
+   "cells": 119,
+   "cell_sha256": "0c28b54b606ca7f21506d516d57eb2038f03eea8f88f99df4a61577737989903",
+   "representation": "table",
+   "scope": "full",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    104,
+    105
+   ],
+   "folios": [
+    "98",
+    "99"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T037",
+   "src_lines": [
+    3712,
+    3725
+   ],
+   "heading": "Weapon Qualities",
+   "columns": 3,
+   "rows": 12,
+   "cells": 39,
+   "cell_sha256": "13a7e6b5bee54d10f6f931424eeb176de80db5dbf9c6cd847ea6b43e2aab294f",
+   "representation": "table",
+   "scope": "full",
+   "family": "T037",
+   "field_map": null,
+   "pdf_pages": [
+    105,
+    106
+   ],
+   "folios": [
+    "99",
+    "100"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T038",
+   "src_lines": [
+    3731,
+    3744
+   ],
+   "heading": "Armour and Shield Qualities",
+   "columns": 3,
+   "rows": 12,
+   "cells": 39,
+   "cell_sha256": "a76353e645e36ff452c0a7a301bf4f135405ec1bee1eaf6d344af93dcb3cb419",
+   "representation": "table",
+   "scope": "full",
+   "family": "T037",
+   "field_map": null,
+   "pdf_pages": [
+    106,
+    106
+   ],
+   "folios": [
+    "100",
+    "100"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T039",
+   "src_lines": [
+    3748,
+    3769
+   ],
+   "heading": "Tier 1 Enhanced Weapon Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "38df68e23287419d8c8438ed2439d114ff12d985642c7c211242e8861c5830c1",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    107,
+    107
+   ],
+   "folios": [
+    "101",
+    "101"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T040",
+   "src_lines": [
+    3773,
+    3794
+   ],
+   "heading": "Tier 1 Enhanced Armour Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "0d4351dab286732dd13e7273ecd3843bc935dceac41b282c691f669b0c7a7685",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    107,
+    107
+   ],
+   "folios": [
+    "101",
+    "101"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T041",
+   "src_lines": [
+    3798,
+    3819
+   ],
+   "heading": "Tier 1 Enhanced Shield Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "f50b94eb9915b96e93a24a3a1d15e3bafb8bee563f45a9399aba9195585a9710",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    107,
+    107
+   ],
+   "folios": [
+    "101",
+    "101"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T042",
+   "src_lines": [
+    3823,
+    3844
+   ],
+   "heading": "Tier 2 Enhanced Weapon Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "42a3ce16842a818cd2b4e0e93a93cd4fa11abeef89b5009bf7b28f1619ea70f8",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    107,
+    108
+   ],
+   "folios": [
+    "101",
+    "102"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T043",
+   "src_lines": [
+    3848,
+    3869
+   ],
+   "heading": "Tier 2 Enhanced Armour Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "8159aa33ef846ac6d3f2eca6f965edc99860322901002fc41f4c46ce76e8a9f0",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    108,
+    108
+   ],
+   "folios": [
+    "102",
+    "102"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T044",
+   "src_lines": [
+    3873,
+    3894
+   ],
+   "heading": "Tier 2 Enhanced Shield Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "38419eaa2b7f73f33d1dd8e1b0cd479c52a9117ed6c9202f9f4ceb8be8fac6f4",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    108,
+    108
+   ],
+   "folios": [
+    "102",
+    "102"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T045",
+   "src_lines": [
+    3898,
+    3919
+   ],
+   "heading": "Tier 3 Enhanced Weapon Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "b0ad167a7256b496f2be33eb8632657bd4e89482a9026521c84006b03fceb0c4",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    108,
+    108
+   ],
+   "folios": [
+    "102",
+    "102"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T046",
+   "src_lines": [
+    3923,
+    3944
+   ],
+   "heading": "Tier 3 Enhanced Armour Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "626db6e0a8a19465f4b4034a4efec183c9b781dcf1f57335d1e6d9122fadfee5",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    108,
+    109
+   ],
+   "folios": [
+    "102",
+    "103"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T047",
+   "src_lines": [
+    3948,
+    3969
+   ],
+   "heading": "Tier 3 Enhanced Shield Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "166d4cb01442cd1d88c7545bb9c00d104ddc08f61e2673053a61f94c41e0dc17",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    109,
+    109
+   ],
+   "folios": [
+    "103",
+    "103"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T048",
+   "src_lines": [
+    3973,
+    3994
+   ],
+   "heading": "Tier 4 Enhanced Weapon Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "5f16f80594f41c8729869e2002f2bdcc424bf842247ed1ee3353d2d6841dcb15",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    109,
+    109
+   ],
+   "folios": [
+    "103",
+    "103"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T049",
+   "src_lines": [
+    3998,
+    4019
+   ],
+   "heading": "Tier 4 Enhanced Armour Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "ccb0c47232dc98f8731b97e1665c6b624c6fae239e157650ba06911c365c6732",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    109,
+    109
+   ],
+   "folios": [
+    "103",
+    "103"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T050",
+   "src_lines": [
+    4023,
+    4038
+   ],
+   "heading": "Tier 4 Enhanced Shield Table (d20)",
+   "columns": 3,
+   "rows": 14,
+   "cells": 45,
+   "cell_sha256": "a5b4b303967623a646dce0ef78128778c855f6888208c486f5bf6556fd0cb644",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    110,
+    110
+   ],
+   "folios": [
+    "104",
+    "104"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T051",
+   "src_lines": [
+    4042,
+    4063
+   ],
+   "heading": "Tier 5 Enhanced Weapon Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "7ec4bab3a1968cba9b38da7caa78f43191b4eba6e7846d4b1cadadb660e8094e",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    110,
+    110
+   ],
+   "folios": [
+    "104",
+    "104"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T052",
+   "src_lines": [
+    4067,
+    4088
+   ],
+   "heading": "Tier 5 Enhanced Armour Table (d20)",
+   "columns": 3,
+   "rows": 20,
+   "cells": 63,
+   "cell_sha256": "9264f4fbfd47aac3d94aee1235c7938505a0ce7172be186d2af1fdc2235d4eaf",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    110,
+    110
+   ],
+   "folios": [
+    "104",
+    "104"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T053",
+   "src_lines": [
+    4092,
+    4109
+   ],
+   "heading": "Tier 5 Enhanced Shield Table (d20)",
+   "columns": 3,
+   "rows": 16,
+   "cells": 51,
+   "cell_sha256": "bfbc302c10dc176473b5f617e0fbbc76435febcf907cb7568c6ab7eabc10d16a",
+   "representation": "table",
+   "scope": "column",
+   "family": "T039",
+   "field_map": null,
+   "pdf_pages": [
+    110,
+    110
+   ],
+   "folios": [
+    "104",
+    "104"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T054",
+   "src_lines": [
+    4119,
+    4131
+   ],
+   "heading": "7.12 Shields",
+   "columns": 7,
+   "rows": 11,
+   "cells": 84,
+   "cell_sha256": "e6d58cdb682ffcf5a3ee5fb59130d25b907f8088ac9af020ab956238c491fcd7",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "Shield": "entry.title.name",
+    "Cost (c)": "entry.field",
+    "AD": "entry.field",
+    "STR Req": "entry.field",
+    "DEX Pen": "entry.field",
+    "Max Speed": "entry.field",
+    "Rule": "entry.desc"
+   },
+   "pdf_pages": [
+    111,
+    111
+   ],
+   "folios": [
+    "105",
+    "105"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T055",
+   "src_lines": [
+    4148,
+    4169
+   ],
+   "heading": "Tier 1 Potions",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "b3b92510292c29fbf8cb505fcb44401361bb5b813c600cd4b3cb88e1f723d965",
+   "representation": "table",
+   "scope": "column",
+   "family": "T055",
+   "field_map": null,
+   "pdf_pages": [
+    112,
+    113
+   ],
+   "folios": [
+    "106",
+    "107"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T056",
+   "src_lines": [
+    4173,
+    4194
+   ],
+   "heading": "Tier 2 Potions",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "e099efe6ee3f9cbc666a53dc0e71f8a28a52b14217d308aae33b3578640abfc1",
+   "representation": "table",
+   "scope": "column",
+   "family": "T055",
+   "field_map": null,
+   "pdf_pages": [
+    113,
+    114
+   ],
+   "folios": [
+    "107",
+    "108"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T057",
+   "src_lines": [
+    4198,
+    4219
+   ],
+   "heading": "Tier 3 Potions",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "adcffc3356867c14d282b22aa1591995e851fe404d566961132927d22ae35375",
+   "representation": "table",
+   "scope": "column",
+   "family": "T055",
+   "field_map": null,
+   "pdf_pages": [
+    114,
+    115
+   ],
+   "folios": [
+    "108",
+    "109"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T058",
+   "src_lines": [
+    4223,
+    4244
+   ],
+   "heading": "Tier 4 Potions",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "06c70bb798364a994f833e15b136c996221038ca1ef9ef6e87376e03ea176afb",
+   "representation": "table",
+   "scope": "column",
+   "family": "T055",
+   "field_map": null,
+   "pdf_pages": [
+    115,
+    117
+   ],
+   "folios": [
+    "109",
+    "111"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T059",
+   "src_lines": [
+    4248,
+    4269
+   ],
+   "heading": "Tier 5 Potions",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "73e0e85f60f0ac7421353dd2f07603a56d15efe71f5f72bc601aebc62ff007d2",
+   "representation": "table",
+   "scope": "column",
+   "family": "T055",
+   "field_map": null,
+   "pdf_pages": [
+    117,
+    118
+   ],
+   "folios": [
+    "111",
+    "112"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T060",
+   "src_lines": [
+    4291,
+    4312
+   ],
+   "heading": "Tier 1 Poisons",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "afb75fded8a31aacaf97ec92ca1d60ae444d7aaec74a03c568f72f336de3251d",
+   "representation": "table",
+   "scope": "column",
+   "family": "T060",
+   "field_map": null,
+   "pdf_pages": [
+    119,
+    120
+   ],
+   "folios": [
+    "113",
+    "114"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T061",
+   "src_lines": [
+    4316,
+    4337
+   ],
+   "heading": "Tier 2 Poisons",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "49666ee3223af5d36d497617be1f79ebfbb2bcfd8e9cd785ca464297867948da",
+   "representation": "table",
+   "scope": "column",
+   "family": "T060",
+   "field_map": null,
+   "pdf_pages": [
+    120,
+    121
+   ],
+   "folios": [
+    "114",
+    "115"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T062",
+   "src_lines": [
+    4341,
+    4362
+   ],
+   "heading": "Tier 3 Poisons",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "6ce01a048430b1838c72f58d5ad89f6b99a69f003169d1b4e292b6af9f7fa9e9",
+   "representation": "table",
+   "scope": "column",
+   "family": "T060",
+   "field_map": null,
+   "pdf_pages": [
+    121,
+    122
+   ],
+   "folios": [
+    "115",
+    "116"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T063",
+   "src_lines": [
+    4366,
+    4387
+   ],
+   "heading": "Tier 4 Poisons",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "674590f0ae1ffd428a8c206df6a9c55fd5087eb5ca9c22eb7b52065cbabc7ec3",
+   "representation": "table",
+   "scope": "column",
+   "family": "T060",
+   "field_map": null,
+   "pdf_pages": [
+    123,
+    124
+   ],
+   "folios": [
+    "117",
+    "118"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T064",
+   "src_lines": [
+    4391,
+    4412
+   ],
+   "heading": "Tier 5 Poisons",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "7297599bdd78f6aabb7f15be83a9a3315387285ae3f3cd2bfc4fc6432a9c8c69",
+   "representation": "table",
+   "scope": "column",
+   "family": "T060",
+   "field_map": null,
+   "pdf_pages": [
+    124,
+    125
+   ],
+   "folios": [
+    "118",
+    "119"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T065",
+   "src_lines": [
+    4448,
+    4469
+   ],
+   "heading": "Tier 1 Arcane Scrolls",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "8d213c48a6bcf13a3b649bb02c58e9b9cce6ad9899525465bd7e9b2f19feafa6",
+   "representation": "table",
+   "scope": "column",
+   "family": "T065",
+   "field_map": null,
+   "pdf_pages": [
+    126,
+    127
+   ],
+   "folios": [
+    "120",
+    "121"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T066",
+   "src_lines": [
+    4473,
+    4494
+   ],
+   "heading": "Tier 2 Arcane Scrolls",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "d903981d6e5f7ac0dbfbf22a6b0752d046f1ed9b96000209a9d1e6f3b62a7911",
+   "representation": "table",
+   "scope": "column",
+   "family": "T065",
+   "field_map": null,
+   "pdf_pages": [
+    127,
+    128
+   ],
+   "folios": [
+    "121",
+    "122"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T067",
+   "src_lines": [
+    4498,
+    4519
+   ],
+   "heading": "Tier 3 Arcane Scrolls",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "931e656584bda57486d12dffb0d10a4466818bf1c1a38fbf1227a2954df3001a",
+   "representation": "table",
+   "scope": "column",
+   "family": "T065",
+   "field_map": null,
+   "pdf_pages": [
+    128,
+    130
+   ],
+   "folios": [
+    "122",
+    "124"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T068",
+   "src_lines": [
+    4523,
+    4544
+   ],
+   "heading": "Tier 1 Divine Scrolls",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "399910e9f061656d122c4df0120ad2e9c2615d64d8df900e3872ac6d8ff976b6",
+   "representation": "table",
+   "scope": "column",
+   "family": "T065",
+   "field_map": null,
+   "pdf_pages": [
+    130,
+    131
+   ],
+   "folios": [
+    "124",
+    "125"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T069",
+   "src_lines": [
+    4548,
+    4569
+   ],
+   "heading": "Tier 2 Divine Scrolls",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "438ce7bd14a464ef7c3ce2568b6b8d5e19db869a073dba50ebf8e56f70c4e12b",
+   "representation": "table",
+   "scope": "column",
+   "family": "T065",
+   "field_map": null,
+   "pdf_pages": [
+    131,
+    132
+   ],
+   "folios": [
+    "125",
+    "126"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T070",
+   "src_lines": [
+    4573,
+    4594
+   ],
+   "heading": "Tier 3 Divine Scrolls",
+   "columns": 4,
+   "rows": 20,
+   "cells": 84,
+   "cell_sha256": "dc64b7f82ba5a46aeeea5aae293168e7a6332b8c202d78dd4f004652ab7b5c15",
+   "representation": "table",
+   "scope": "column",
+   "family": "T065",
+   "field_map": null,
+   "pdf_pages": [
+    132,
+    134
+   ],
+   "folios": [
+    "126",
+    "128"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T071",
+   "src_lines": [
+    4600,
+    4628
+   ],
+   "heading": "7.16 Adventuring Equipment",
+   "columns": 3,
+   "rows": 27,
+   "cells": 84,
+   "cell_sha256": "9328d0f74e27528242e442b2f27c74146c28ac1ba2cb1c2f5f85a26eac8c6fe4",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    134,
+    135
+   ],
+   "folios": [
+    "128",
+    "129"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T072",
+   "src_lines": [
+    4651,
+    4655
+   ],
+   "heading": "Tier 1 Special Armour and Shields (APL 1–2)",
+   "columns": 6,
+   "rows": 3,
+   "cells": 24,
+   "cell_sha256": "44ce31c88b9561d646a3b4ea24a0227688c57ec08ee69e2264168c144338d71f",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d6": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Cost (c)": "entry.field",
+    "Req": "entry.field",
+    "AD/AV": "entry.field",
+    "Rule": "entry.desc"
+   },
+   "pdf_pages": [
+    136,
+    136
+   ],
+   "folios": [
+    "130",
+    "130"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T073",
+   "src_lines": [
+    4659,
+    4663
+   ],
+   "heading": "Tier 2 Special Armour and Shields (APL 3–4)",
+   "columns": 6,
+   "rows": 3,
+   "cells": 24,
+   "cell_sha256": "9fc55b5644ab6532c150470b90b62ef04acd4b2780d9fca451b6bfbc49c61217",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d6": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Cost (c)": "entry.field",
+    "Req": "entry.field",
+    "AD/AV": "entry.field",
+    "Rule": "entry.desc"
+   },
+   "pdf_pages": [
+    136,
+    136
+   ],
+   "folios": [
+    "130",
+    "130"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T074",
+   "src_lines": [
+    4667,
+    4671
+   ],
+   "heading": "Tier 3 Special Armour and Shields (APL 5–6)",
+   "columns": 6,
+   "rows": 3,
+   "cells": 24,
+   "cell_sha256": "9fcc2ef24c1b2f0102a51eb249f5109d891044d8b756811f3e75691ea79f1561",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d6": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Cost (c)": "entry.field",
+    "Req": "entry.field",
+    "AD/AV": "entry.field",
+    "Rule": "entry.desc"
+   },
+   "pdf_pages": [
+    136,
+    136
+   ],
+   "folios": [
+    "130",
+    "130"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T075",
+   "src_lines": [
+    4675,
+    4679
+   ],
+   "heading": "Tier 4 Special Armour and Shields (APL 7–8)",
+   "columns": 6,
+   "rows": 3,
+   "cells": 24,
+   "cell_sha256": "a0df25d4ccbe32609ef86d2a7545ca129d9f207107e2ff46ff0dcdfdb890d35a",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d6": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Cost (c)": "entry.field",
+    "Req": "entry.field",
+    "AD/AV": "entry.field",
+    "Rule": "entry.desc"
+   },
+   "pdf_pages": [
+    136,
+    136
+   ],
+   "folios": [
+    "130",
+    "130"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T076",
+   "src_lines": [
+    4683,
+    4686
+   ],
+   "heading": "Tier 5 Legendary Shields (APL 9–10)",
+   "columns": 6,
+   "rows": 2,
+   "cells": 18,
+   "cell_sha256": "c9b36f6c3b0079dcecd2a0e1e1579c363484e715959135a4ce767856f1c0f4a5",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d6": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Cost (c)": "entry.field",
+    "Req": "entry.field",
+    "AD/AV": "entry.field",
+    "Rule": "entry.desc"
+   },
+   "pdf_pages": [
+    136,
+    137
+   ],
+   "folios": [
+    "130",
+    "131"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T077",
+   "src_lines": [
+    4690,
+    4701
+   ],
+   "heading": "Tier 1 Special Weapons (APL 1–2)",
+   "columns": 6,
+   "rows": 10,
+   "cells": 66,
+   "cell_sha256": "eb1a5e273390d12c8a3e65c1d0f030a87108c6babbe1b8ee06c01474bd07d92e",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d10": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Cost (c)": "entry.field",
+    "Damage": "entry.field",
+    "Traits": "entry.field",
+    "Rule": "entry.desc"
+   },
+   "pdf_pages": [
+    137,
+    137
+   ],
+   "folios": [
+    "131",
+    "131"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T078",
+   "src_lines": [
+    4705,
+    4716
+   ],
+   "heading": "Tier 2 Special Weapons (APL 3–4)",
+   "columns": 6,
+   "rows": 10,
+   "cells": 66,
+   "cell_sha256": "ad0d99c49a27535e91e667ca724a8885890de7d0a318879e934cef51de094090",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d10": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Cost (c)": "entry.field",
+    "Damage": "entry.field",
+    "Traits": "entry.field",
+    "Rule": "entry.desc"
+   },
+   "pdf_pages": [
+    137,
+    138
+   ],
+   "folios": [
+    "131",
+    "132"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T079",
+   "src_lines": [
+    4720,
+    4731
+   ],
+   "heading": "Tier 3 Special Weapons (APL 5–6)",
+   "columns": 6,
+   "rows": 10,
+   "cells": 66,
+   "cell_sha256": "5c13dd951a2403435107cda761b270a8932218772a4be6a967c8d51d0503a479",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d10": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Cost (c)": "entry.field",
+    "Damage": "entry.field",
+    "Traits": "entry.field",
+    "Rule": "entry.desc"
+   },
+   "pdf_pages": [
+    138,
+    138
+   ],
+   "folios": [
+    "132",
+    "132"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T080",
+   "src_lines": [
+    4735,
+    4746
+   ],
+   "heading": "Tier 4 Special Weapons (APL 7–8)",
+   "columns": 6,
+   "rows": 10,
+   "cells": 66,
+   "cell_sha256": "1fa5699dd5abf98155785308f3341b5fb83a56b156846adbedf5618ee6581658",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d10": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Cost (c)": "entry.field",
+    "Damage": "entry.field",
+    "Traits": "entry.field",
+    "Rule": "entry.desc"
+   },
+   "pdf_pages": [
+    138,
+    139
+   ],
+   "folios": [
+    "132",
+    "133"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T081",
+   "src_lines": [
+    4750,
+    4761
+   ],
+   "heading": "Tier 5 Legendary Artifact Weapons (APL 9–10)",
+   "columns": 6,
+   "rows": 10,
+   "cells": 66,
+   "cell_sha256": "48a717593d0e50ecfdd7424e42134bc51b716e6df69670cd6dd2e89b08f69ac1",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d10": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Cost (c)": "entry.field",
+    "Damage": "entry.field",
+    "Traits": "entry.field",
+    "Rule": "entry.desc"
+   },
+   "pdf_pages": [
+    139,
+    140
+   ],
+   "folios": [
+    "133",
+    "134"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T082",
+   "src_lines": [
+    4765,
+    4786
+   ],
+   "heading": "Tier 5 Legendary Artifact Armour and Shields (d20)",
+   "columns": 12,
+   "rows": 20,
+   "cells": 252,
+   "cell_sha256": "76c37887ea38cc4cb2911aff0cad146298f0d8f2788f51a0847c0243512297c6",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d20": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Equipment Type": "entry.field",
+    "AD/AV": "entry.field",
+    "STR": "entry.field",
+    "DEX": "entry.field",
+    "INT": "entry.field",
+    "SPI": "entry.field",
+    "DEX Pen": "entry.field",
+    "Max Speed": "entry.field",
+    "Cost (c)": "entry.field",
+    "Description": "entry.desc"
+   },
+   "pdf_pages": [
+    140,
+    141
+   ],
+   "folios": [
+    "134",
+    "135"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T083",
+   "src_lines": [
+    4790,
+    4801
+   ],
+   "heading": "Tier 1 Special Items (APL 1–2)",
+   "columns": 9,
+   "rows": 10,
+   "cells": 99,
+   "cell_sha256": "b458923fb3d92f041f65878904d9e30d5dbfe6c8295724b0f643b89e7a745af4",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d10": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Equipment Type": "entry.field",
+    "STR": "entry.field",
+    "DEX": "entry.field",
+    "INT": "entry.field",
+    "SPI": "entry.field",
+    "Cost (c)": "entry.field",
+    "Description": "entry.desc"
+   },
+   "pdf_pages": [
+    141,
+    142
+   ],
+   "folios": [
+    "135",
+    "136"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T084",
+   "src_lines": [
+    4805,
+    4826
+   ],
+   "heading": "Tier 5 Legendary Artifacts (d20)",
+   "columns": 9,
+   "rows": 20,
+   "cells": 189,
+   "cell_sha256": "8603746747328a215faa3c462f1e51f313da95a8ad2f2cf9518cf97d5c6a4265",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d20": "entry.title.roll",
+    "Name": "entry.title.name",
+    "Equipment Type": "entry.field",
+    "STR": "entry.field",
+    "DEX": "entry.field",
+    "INT": "entry.field",
+    "SPI": "entry.field",
+    "Cost (c)": "entry.field",
+    "Description": "entry.desc"
+   },
+   "pdf_pages": [
+    142,
+    143
+   ],
+   "folios": [
+    "136",
+    "137"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T085",
+   "src_lines": [
+    5196,
+    5202
+   ],
+   "heading": "Tradition Summary",
+   "columns": 5,
+   "rows": 5,
+   "cells": 30,
+   "cell_sha256": "bfc296e4b4e914395e4aee0340b4f623845e14802620b0784c62fcf280b8af33",
+   "representation": "table",
+   "scope": "full",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    152,
+    152
+   ],
+   "folios": [
+    "146",
+    "146"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T086",
+   "src_lines": [
+    5210,
+    5216
+   ],
+   "heading": "Power Navigation",
+   "columns": 3,
+   "rows": 5,
+   "cells": 18,
+   "cell_sha256": "d8eb95050ca671033d4d3d4c9eac16411db870c9cf0eb5c22c0178c4b811358f",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    153,
+    153
+   ],
+   "folios": [
+    "147",
+    "147"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T087",
+   "src_lines": [
+    5218,
+    5221
+   ],
+   "heading": "Power Navigation",
+   "columns": 3,
+   "rows": 2,
+   "cells": 9,
+   "cell_sha256": "523be42edc07c946343cf439ca70d7d9d0698100935358058bcc97c6fedec300",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    153,
+    153
+   ],
+   "folios": [
+    "147",
+    "147"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T088",
+   "src_lines": [
+    7789,
+    7791
+   ],
+   "heading": "Giant Tarantula [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "df02ac29f1469a850bf46018a4c1c1ce335d10d11fa8e9ce888dd5fc41fc67b3",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    196,
+    196
+   ],
+   "folios": [
+    "190",
+    "190"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T089",
+   "src_lines": [
+    7808,
+    7810
+   ],
+   "heading": "Goblin [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "8071a72655c835d6eea7f993cd44cc29e44677d2e4014a489e5e1bee6f6d9280",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    196,
+    196
+   ],
+   "folios": [
+    "190",
+    "190"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T090",
+   "src_lines": [
+    7825,
+    7827
+   ],
+   "heading": "Beastman [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "7031efef23b8015967b16562f427eff25dded9ded2aaf50eca15620d3b6255cd",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    197,
+    197
+   ],
+   "folios": [
+    "191",
+    "191"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T091",
+   "src_lines": [
+    7839,
+    7841
+   ],
+   "heading": "Bandit [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "ee2da4f445b55b195339b946aa455dfba35bf15774e09eefc981a73d38df69a3",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    197,
+    197
+   ],
+   "folios": [
+    "191",
+    "191"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T092",
+   "src_lines": [
+    7854,
+    7856
+   ],
+   "heading": "Satyr Reveler [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "2e604a92c3e0b4312dc70b36c1dde50ffb8d1aec1c8ad578777395807ef47b46",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    197,
+    197
+   ],
+   "folios": [
+    "191",
+    "191"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T093",
+   "src_lines": [
+    7873,
+    7875
+   ],
+   "heading": "Briarling [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "d97a6373c8dab706b938b61ea3d0d0d285a51b818bd59161cd65e6fa262e2282",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    197,
+    197
+   ],
+   "folios": [
+    "191",
+    "191"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T094",
+   "src_lines": [
+    7889,
+    7891
+   ],
+   "heading": "Dire Wolf [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "81cd6e36c3121a6350888dfbaee33191828435d05b786504ec8ed099df0d244c",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    197,
+    197
+   ],
+   "folios": [
+    "191",
+    "191"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T095",
+   "src_lines": [
+    7907,
+    7909
+   ],
+   "heading": "Orc [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "fcb4af367023f9819659e1cd74ebdec386d9029dc3039eb6140ab11b8006cef1",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    198,
+    198
+   ],
+   "folios": [
+    "192",
+    "192"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T096",
+   "src_lines": [
+    7926,
+    7928
+   ],
+   "heading": "Bugbear [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "fcb4af367023f9819659e1cd74ebdec386d9029dc3039eb6140ab11b8006cef1",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    198,
+    198
+   ],
+   "folios": [
+    "192",
+    "192"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T097",
+   "src_lines": [
+    7945,
+    7947
+   ],
+   "heading": "Harpy [Cannon]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "07fc8bd1cbdcf059f305a96505e2680ecdc772afd57568b0f9329f8c79f109d8",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    198,
+    198
+   ],
+   "folios": [
+    "192",
+    "192"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T098",
+   "src_lines": [
+    7962,
+    7964
+   ],
+   "heading": "Goblin Shaman [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "6075cbefd6c5f5738cb39741574f342ad97f3c78a8c3baa2a0c09a140e6e803c",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    199,
+    199
+   ],
+   "folios": [
+    "193",
+    "193"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T099",
+   "src_lines": [
+    7982,
+    7984
+   ],
+   "heading": "Bandit Captain [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "e51d266a273d27e7d9c263bafeebb1183dc768d903a269c9d2aba60eed1db9a2",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    199,
+    199
+   ],
+   "folios": [
+    "193",
+    "193"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T100",
+   "src_lines": [
+    8001,
+    8003
+   ],
+   "heading": "Dire Bear [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "bda1678dcb629879635d40c037f4c4084d405bfe112d37d4d9be44fe861d4c83",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    199,
+    199
+   ],
+   "folios": [
+    "193",
+    "193"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T101",
+   "src_lines": [
+    8023,
+    8025
+   ],
+   "heading": "Blood Ape [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "3487ee01ad255c4c90627259b3bc58ef872e20b8247bcd9fd87a56a24036a089",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    200,
+    200
+   ],
+   "folios": [
+    "194",
+    "194"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T102",
+   "src_lines": [
+    8047,
+    8049
+   ],
+   "heading": "Gorebeak Bear [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "76126759e3eb08ab30c6fe29b331152276ce295862471ea4749576f97d04642b",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    200,
+    200
+   ],
+   "folios": [
+    "194",
+    "194"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T103",
+   "src_lines": [
+    8069,
+    8071
+   ],
+   "heading": "Ogre [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "5ac49f383b7b12ffd7b5405a90277cf9c1284268ad7093f8713e48359bbcb6dc",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    200,
+    200
+   ],
+   "folios": [
+    "194",
+    "194"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T104",
+   "src_lines": [
+    8084,
+    8086
+   ],
+   "heading": "Dryad Grovewarden [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "a5a7a248118dc300546aa284f48c6ed7e82989d41530da3ed2efe16613f5d477",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    200,
+    200
+   ],
+   "folios": [
+    "194",
+    "194"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T105",
+   "src_lines": [
+    8103,
+    8105
+   ],
+   "heading": "Forest Troll [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "71a2edee27965a440a10de0b7814c26f7b0e55b9bd902b13f2f2735e70d0f4a7",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    201,
+    201
+   ],
+   "folios": [
+    "195",
+    "195"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T106",
+   "src_lines": [
+    8121,
+    8123
+   ],
+   "heading": "Werewolf [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "b24c1389a116c3eaa40237afbb315d8f1f371e1a696c96b8e93a2ebc300774b1",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    201,
+    201
+   ],
+   "folios": [
+    "195",
+    "195"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T107",
+   "src_lines": [
+    8144,
+    8146
+   ],
+   "heading": "Green Dragon [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "de4dfd5f5c0e492f6e27b7dd6e58d74f62a52e5f5efdaecd298c93fb3aa41655",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    201,
+    201
+   ],
+   "folios": [
+    "195",
+    "195"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T108",
+   "src_lines": [
+    8168,
+    8170
+   ],
+   "heading": "Undead Warrior [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "fbab96d5142a513b7d554bf8cbed4a49cfcc10ed34b2e50dd812b333b5da0af9",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    202,
+    202
+   ],
+   "folios": [
+    "196",
+    "196"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T109",
+   "src_lines": [
+    8185,
+    8187
+   ],
+   "heading": "Undead Crossbowman [Cannon]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "bd064f3c502f846b887edcc7280f1bab16e981e2c516deb44384ea1a9fec1f8e",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    202,
+    202
+   ],
+   "folios": [
+    "196",
+    "196"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T110",
+   "src_lines": [
+    8202,
+    8204
+   ],
+   "heading": "Ghoul [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "660fb8c728aa199dc0b95f4308ee358f2859a3e7ede56368d4fcfd2a00647122",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    202,
+    202
+   ],
+   "folios": [
+    "196",
+    "196"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T111",
+   "src_lines": [
+    8220,
+    8222
+   ],
+   "heading": "Possessed Corpse [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "d97a6373c8dab706b938b61ea3d0d0d285a51b818bd59161cd65e6fa262e2282",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    203,
+    203
+   ],
+   "folios": [
+    "197",
+    "197"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T112",
+   "src_lines": [
+    8237,
+    8239
+   ],
+   "heading": "Ember Skull [Cannon]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "0d6351148bfb52fde4c7f748db417a741930e18e271a76d9bfde34d63da24a92",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    203,
+    203
+   ],
+   "folios": [
+    "197",
+    "197"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T113",
+   "src_lines": [
+    8257,
+    8259
+   ],
+   "heading": "Wererat [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "c0054b1514f4837905deac82f5975f0b5d25a953d86925e96f9e18b569abbdea",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    203,
+    203
+   ],
+   "folios": [
+    "197",
+    "197"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T114",
+   "src_lines": [
+    8275,
+    8277
+   ],
+   "heading": "Spectre [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "0b54447078e78624a9fd98c575e393747f3697e0e018438546808cc2d4bfcae6",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    203,
+    203
+   ],
+   "folios": [
+    "197",
+    "197"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T115",
+   "src_lines": [
+    8294,
+    8296
+   ],
+   "heading": "Undead Sentinel [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "7e0987edaf7801370c32c8f206114152a687c2f5806d8934c1e3c53d8e8017c1",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    204,
+    204
+   ],
+   "folios": [
+    "198",
+    "198"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T116",
+   "src_lines": [
+    8315,
+    8317
+   ],
+   "heading": "Undead Champion [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "7e0987edaf7801370c32c8f206114152a687c2f5806d8934c1e3c53d8e8017c1",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    204,
+    204
+   ],
+   "folios": [
+    "198",
+    "198"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T117",
+   "src_lines": [
+    8333,
+    8335
+   ],
+   "heading": "Gargoyle [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "e199c6d3fa84a90071c2cf1a3abdb58f9bd0cc2543ddce2b9ceba2692bea61c6",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    204,
+    204
+   ],
+   "folios": [
+    "198",
+    "198"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T118",
+   "src_lines": [
+    8354,
+    8356
+   ],
+   "heading": "Stone Sentinel [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "ce61abbb7e1010c0dcc7573c2e6c57a4d251155d9c8fb5d14b4a7e892760023b",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    205,
+    205
+   ],
+   "folios": [
+    "199",
+    "199"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T119",
+   "src_lines": [
+    8377,
+    8379
+   ],
+   "heading": "Minotaur [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "3c20da1b02c8f102f057c83d9499574543d50c209213f9e540215143ff1da26f",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    205,
+    205
+   ],
+   "folios": [
+    "199",
+    "199"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T120",
+   "src_lines": [
+    8398,
+    8400
+   ],
+   "heading": "Night Hag [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "1564f7ebe83d2745dfcd7b1dfbad05cdc8c559bdde68482de77d41092ad9a5e3",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    205,
+    205
+   ],
+   "folios": [
+    "199",
+    "199"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T121",
+   "src_lines": [
+    8416,
+    8418
+   ],
+   "heading": "Forsaken Archer [Cannon]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "fd383977e46715280e156d5341a8af66e1802b19c4b87ba9c75fb7a37d261d41",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    206,
+    206
+   ],
+   "folios": [
+    "200",
+    "200"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T122",
+   "src_lines": [
+    8436,
+    8438
+   ],
+   "heading": "Forsaken Knight [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "1f31ffa329c9fb0a672f7f5aa1c34621a392a2e2cfff3e26bb12567d22a56352",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    206,
+    206
+   ],
+   "folios": [
+    "200",
+    "200"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T123",
+   "src_lines": [
+    8453,
+    8455
+   ],
+   "heading": "Forsaken Duelist [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "ba518ec1dd0210d3f6d423793f63cb4a62db0da5dc3a2a8ecbf271e68c1c3e89",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    206,
+    206
+   ],
+   "folios": [
+    "200",
+    "200"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T124",
+   "src_lines": [
+    8474,
+    8476
+   ],
+   "heading": "Basilisk [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "5539871d6da9f52883be12918153f8f3c6194112de0c07c5f1343872ee9e40a4",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    207,
+    207
+   ],
+   "folios": [
+    "201",
+    "201"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T125",
+   "src_lines": [
+    8494,
+    8496
+   ],
+   "heading": "Ashen Revenant [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "393c5eb4d789cb2b1922732b31091588d8d5f8a8ab6f4d487bd64446c7bd2487",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    207,
+    207
+   ],
+   "folios": [
+    "201",
+    "201"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T126",
+   "src_lines": [
+    8516,
+    8518
+   ],
+   "heading": "Iron Golem [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "bd3ff3bf6973485715a1934fb7ddd7b0a9f93919064197eb5b2e16fe218d9cae",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    207,
+    207
+   ],
+   "folios": [
+    "201",
+    "201"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T127",
+   "src_lines": [
+    8536,
+    8538
+   ],
+   "heading": "Lich [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "d5cb489f8c8c83548e30675a0ad4f60549c5b144f9942e5d1a897be4d8faf1b6",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    208,
+    208
+   ],
+   "folios": [
+    "202",
+    "202"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T128",
+   "src_lines": [
+    8560,
+    8562
+   ],
+   "heading": "Kobold [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "8071a72655c835d6eea7f993cd44cc29e44677d2e4014a489e5e1bee6f6d9280",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    208,
+    208
+   ],
+   "folios": [
+    "202",
+    "202"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T129",
+   "src_lines": [
+    8578,
+    8580
+   ],
+   "heading": "Cave Goblin [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "8071a72655c835d6eea7f993cd44cc29e44677d2e4014a489e5e1bee6f6d9280",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    208,
+    208
+   ],
+   "folios": [
+    "202",
+    "202"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T130",
+   "src_lines": [
+    8595,
+    8597
+   ],
+   "heading": "Giant Bat [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "303358571d06b69c791ed7870c239180082a4613537da70bcfa6d0c7d34364fc",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    208,
+    208
+   ],
+   "folios": [
+    "202",
+    "202"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T131",
+   "src_lines": [
+    8611,
+    8613
+   ],
+   "heading": "Vaultfang [Cannon]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "604cc3541e404ed18ad05c1242748c9be25808a799d9fbc37209ab2ae7c45789",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    209,
+    209
+   ],
+   "folios": [
+    "203",
+    "203"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T132",
+   "src_lines": [
+    8630,
+    8632
+   ],
+   "heading": "Giant Centipede [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "581e8b53f03b643ec627a825aa8c6dd5b9aa0dced062c51de6cd1b85d0adaaa2",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    209,
+    209
+   ],
+   "folios": [
+    "203",
+    "203"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T133",
+   "src_lines": [
+    8648,
+    8650
+   ],
+   "heading": "Noxcloth [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "4ac13c4076e1a0afb7f48efa601e75d5668e6f6f2575752055565422efce2dab",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    209,
+    209
+   ],
+   "folios": [
+    "203",
+    "203"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T134",
+   "src_lines": [
+    8666,
+    8668
+   ],
+   "heading": "Troglodyte [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "ee2da4f445b55b195339b946aa455dfba35bf15774e09eefc981a73d38df69a3",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    210,
+    210
+   ],
+   "folios": [
+    "204",
+    "204"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T135",
+   "src_lines": [
+    8687,
+    8689
+   ],
+   "heading": "Giant Black Widow [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "0db00c293fe525410076824c956cf18af92d86859b052df5b6d0a84453162482",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    210,
+    210
+   ],
+   "folios": [
+    "204",
+    "204"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T136",
+   "src_lines": [
+    8709,
+    8711
+   ],
+   "heading": "Gloomspore Jelly [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "2614239f4e734a997040de584274364ee93b6b1cc9a63fd9311c4b6deab89f0f",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    210,
+    210
+   ],
+   "folios": [
+    "204",
+    "204"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T137",
+   "src_lines": [
+    8729,
+    8731
+   ],
+   "heading": "Troglodyte Shaman [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "cdc140c30136aa5a0992600944fd7450741de83e2d279055cca04f8d00c4451e",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    210,
+    210
+   ],
+   "folios": [
+    "204",
+    "204"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T138",
+   "src_lines": [
+    8748,
+    8750
+   ],
+   "heading": "Vault Ooze [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "2c57535600835a583261696b615fa2774bff706bfcd5ae58abb6e3ca98e042ea",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    211,
+    211
+   ],
+   "folios": [
+    "205",
+    "205"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T139",
+   "src_lines": [
+    8770,
+    8772
+   ],
+   "heading": "Vrymk [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "0fc9e707b171bc67e78bbabb1c10b62488bb635977814059e0e7677a015cbc5f",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    211,
+    211
+   ],
+   "folios": [
+    "205",
+    "205"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T140",
+   "src_lines": [
+    8792,
+    8794
+   ],
+   "heading": "Deep Elf Warrior [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "99bcd0da9205255d77a70c1e440ea0d565127a5c74d3044399ae966a949679fa",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    211,
+    211
+   ],
+   "folios": [
+    "205",
+    "205"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T141",
+   "src_lines": [
+    8808,
+    8810
+   ],
+   "heading": "Deep Elf Priest [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "1564f7ebe83d2745dfcd7b1dfbad05cdc8c559bdde68482de77d41092ad9a5e3",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    212,
+    212
+   ],
+   "folios": [
+    "206",
+    "206"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T142",
+   "src_lines": [
+    8826,
+    8828
+   ],
+   "heading": "Gloom Hulk [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "ac8334e50de6dcfc5b6dbadbae1fbdcb1cffdf2ae59661ab7f27b2dad4d72e3e",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    212,
+    212
+   ],
+   "folios": [
+    "206",
+    "206"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T143",
+   "src_lines": [
+    8845,
+    8847
+   ],
+   "heading": "Cryptstrangler [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "ad62bffb83527441c52aaf5d6aa775b74bca3177eb93a70c2597461b1bdc3992",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    212,
+    212
+   ],
+   "folios": [
+    "206",
+    "206"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T144",
+   "src_lines": [
+    8863,
+    8865
+   ],
+   "heading": "Elder Vrymk [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "d6d7f5cca5ccb4a302e9dd767a513cb526c7a5a4e985df00f0364cbd3ee852f4",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    213,
+    213
+   ],
+   "folios": [
+    "207",
+    "207"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T145",
+   "src_lines": [
+    8886,
+    8888
+   ],
+   "heading": "Evil Eye [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "c549240616fd3d7e5778871b44416a666551e0dab8dbc4518e43df2652a00b1a",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    213,
+    213
+   ],
+   "folios": [
+    "207",
+    "207"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T146",
+   "src_lines": [
+    8907,
+    8909
+   ],
+   "heading": "Burrowmaw [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "77e4d289b7be55803d8583a32df273612b14b75a23099f31d841210915bcf823",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    214,
+    214
+   ],
+   "folios": [
+    "208",
+    "208"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T147",
+   "src_lines": [
+    8925,
+    8927
+   ],
+   "heading": "Thought-Eater [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "5230cf8ed2c50d28f32336ac9f5e2c2abefb6117ea0efd7cb8062e09e5cfc793",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    214,
+    214
+   ],
+   "folios": [
+    "208",
+    "208"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T148",
+   "src_lines": [
+    8948,
+    8950
+   ],
+   "heading": "Frozen Skeleton [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "fbab96d5142a513b7d554bf8cbed4a49cfcc10ed34b2e50dd812b333b5da0af9",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    214,
+    214
+   ],
+   "folios": [
+    "208",
+    "208"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T149",
+   "src_lines": [
+    8965,
+    8967
+   ],
+   "heading": "Snow Goblin [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "8071a72655c835d6eea7f993cd44cc29e44677d2e4014a489e5e1bee6f6d9280",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    214,
+    214
+   ],
+   "folios": [
+    "208",
+    "208"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T150",
+   "src_lines": [
+    8985,
+    8987
+   ],
+   "heading": "Ratkin Scavenger [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "8071a72655c835d6eea7f993cd44cc29e44677d2e4014a489e5e1bee6f6d9280",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    215,
+    215
+   ],
+   "folios": [
+    "209",
+    "209"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T151",
+   "src_lines": [
+    9002,
+    9004
+   ],
+   "heading": "Tundra Wolf [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "81cd6e36c3121a6350888dfbaee33191828435d05b786504ec8ed099df0d244c",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    215,
+    215
+   ],
+   "folios": [
+    "209",
+    "209"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T152",
+   "src_lines": [
+    9021,
+    9023
+   ],
+   "heading": "Ratkin Warrior [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "787b18ddcede74062a0e0dd8ef3223e7eacb2a87f171d662a0e3cd77f4a3d08a",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    215,
+    215
+   ],
+   "folios": [
+    "209",
+    "209"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T153",
+   "src_lines": [
+    9037,
+    9039
+   ],
+   "heading": "White Court Guard [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "fab9adc54df8ff66c11ba073fee6f2a232d5573623072c3f0371c0a8f22fd91f",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    216,
+    216
+   ],
+   "folios": [
+    "210",
+    "210"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T154",
+   "src_lines": [
+    9053,
+    9055
+   ],
+   "heading": "Ratkin Seer [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "6075cbefd6c5f5738cb39741574f342ad97f3c78a8c3baa2a0c09a140e6e803c",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    216,
+    216
+   ],
+   "folios": [
+    "210",
+    "210"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T155",
+   "src_lines": [
+    9072,
+    9074
+   ],
+   "heading": "Frost Ghoul [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "8871cf745531e9b453e3c6459b0c532ca383e218173fb39872ee374ee8b82706",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    216,
+    216
+   ],
+   "folios": [
+    "210",
+    "210"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T156",
+   "src_lines": [
+    9090,
+    9092
+   ],
+   "heading": "White Court Archer [Cannon]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "66414ad4ae8fb9bb3126506c15e6ed2da7e3438bba9838d85d718cec6151a872",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    216,
+    216
+   ],
+   "folios": [
+    "210",
+    "210"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T157",
+   "src_lines": [
+    9106,
+    9108
+   ],
+   "heading": "Blackfire Hound [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "dc84598d1a7ecffc0a4012727a091ccf3e889e9c06644d1b69481ce3a0a1a115",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    217,
+    217
+   ],
+   "folios": [
+    "211",
+    "211"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T158",
+   "src_lines": [
+    9124,
+    9126
+   ],
+   "heading": "Ice Wraith [Cannon]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "52cf7fe74fce3bfba931126ca8fc6f8443a6e0757318193bb2b27c7a222b59ce",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    217,
+    217
+   ],
+   "folios": [
+    "211",
+    "211"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T159",
+   "src_lines": [
+    9143,
+    9145
+   ],
+   "heading": "White Court Sentinel [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "db3e52b586f25b8568f9e94c5e0a2685570a637ded90c59aa62bb59fdac67d8e",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    217,
+    217
+   ],
+   "folios": [
+    "211",
+    "211"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T160",
+   "src_lines": [
+    9163,
+    9165
+   ],
+   "heading": "Ice Elemental [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "3fdd880ad0f25edd152cf71401e70471deaea8658767e4935d4d5b2399ac6f13",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    218,
+    218
+   ],
+   "folios": [
+    "212",
+    "212"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T161",
+   "src_lines": [
+    9181,
+    9183
+   ],
+   "heading": "Fallen Paladin [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "fce30233025339eae8c3410e1b1f129b679d396fd2acaf9aeb996b93d27ecea5",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    218,
+    218
+   ],
+   "folios": [
+    "212",
+    "212"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T162",
+   "src_lines": [
+    9203,
+    9205
+   ],
+   "heading": "Werebear [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "6ddda8d13886a35f355d35aa5ce18dabdc1ee375fdb93e9e2b9b5beef3304be4",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    218,
+    218
+   ],
+   "folios": [
+    "212",
+    "212"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T163",
+   "src_lines": [
+    9220,
+    9222
+   ],
+   "heading": "White Court Executioner [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "905a5671941be45b684458b6603dee417721028b6446a5dace37f19ae473ef32",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    218,
+    218
+   ],
+   "folios": [
+    "212",
+    "212"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T164",
+   "src_lines": [
+    9241,
+    9243
+   ],
+   "heading": "Frost Wyvern [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "76f09f0b860f46b27aa252cfc1eb8045ac704b45858544db774e7fe67fd4e6f0",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    219,
+    219
+   ],
+   "folios": [
+    "213",
+    "213"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T165",
+   "src_lines": [
+    9264,
+    9266
+   ],
+   "heading": "Gelid Fiend [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "5b58c65492bc23def140f4a3e29e12e5124d47fb30a28352e3e7ff38ebe6c291",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    219,
+    219
+   ],
+   "folios": [
+    "213",
+    "213"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T166",
+   "src_lines": [
+    9284,
+    9286
+   ],
+   "heading": "Frost Giant [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "4e413f72f0cbd36b31751f66a8a265da255758dca133081a353eaa9a5fee1a3d",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    220,
+    220
+   ],
+   "folios": [
+    "214",
+    "214"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T167",
+   "src_lines": [
+    9303,
+    9305
+   ],
+   "heading": "White Dragon [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "de4dfd5f5c0e492f6e27b7dd6e58d74f62a52e5f5efdaecd298c93fb3aa41655",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    220,
+    220
+   ],
+   "folios": [
+    "214",
+    "214"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T168",
+   "src_lines": [
+    9327,
+    9329
+   ],
+   "heading": "Fire Beetle [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "73ddeb2625889678a6f1f374e01bec8b48bd2add63e0bff4582a849d151a94e4",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    220,
+    220
+   ],
+   "folios": [
+    "214",
+    "214"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T169",
+   "src_lines": [
+    9346,
+    9348
+   ],
+   "heading": "Imp [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "b224248bd271cc9e7825385d7f264113c252f8cea66494d889dcdd38d6e225aa",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    220,
+    220
+   ],
+   "folios": [
+    "214",
+    "214"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T170",
+   "src_lines": [
+    9364,
+    9366
+   ],
+   "heading": "Skeleton Warrior [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "fbab96d5142a513b7d554bf8cbed4a49cfcc10ed34b2e50dd812b333b5da0af9",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    221,
+    221
+   ],
+   "folios": [
+    "215",
+    "215"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T171",
+   "src_lines": [
+    9380,
+    9382
+   ],
+   "heading": "Corpsehound [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "532ddb60386a062742cf0cf443875aa5cf84595f0594d52f0f307bb2dfa77b42",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    221,
+    221
+   ],
+   "folios": [
+    "215",
+    "215"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T172",
+   "src_lines": [
+    9397,
+    9399
+   ],
+   "heading": "Gnoll [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "ee2da4f445b55b195339b946aa455dfba35bf15774e09eefc981a73d38df69a3",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    221,
+    221
+   ],
+   "folios": [
+    "215",
+    "215"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T173",
+   "src_lines": [
+    9413,
+    9415
+   ],
+   "heading": "Giant Scorpion [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "3f05263ce3e344112889f2154597b45f74075034a7f90920a8a0e547e0274c91",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    221,
+    221
+   ],
+   "folios": [
+    "215",
+    "215"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T174",
+   "src_lines": [
+    9431,
+    9433
+   ],
+   "heading": "Skeleton Archer [Cannon]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "9425affc5c1baab025351f90a5186373fd0e9395d09230545f399e95a589770e",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    222,
+    222
+   ],
+   "folios": [
+    "216",
+    "216"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T175",
+   "src_lines": [
+    9448,
+    9450
+   ],
+   "heading": "Mummy [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "5751357fc6796c31710642c502fe2f46a8dfe4e0e0f26587a3dcdc0163eb5383",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    222,
+    222
+   ],
+   "folios": [
+    "216",
+    "216"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T176",
+   "src_lines": [
+    9468,
+    9470
+   ],
+   "heading": "Skeletal Beast [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "dc84598d1a7ecffc0a4012727a091ccf3e889e9c06644d1b69481ce3a0a1a115",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    222,
+    222
+   ],
+   "folios": [
+    "216",
+    "216"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T177",
+   "src_lines": [
+    9490,
+    9492
+   ],
+   "heading": "Wind Elemental [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "69332a73a1353a1c2272f24fe9fbfadcdffdc1ba53f8e06a77222388abec7c0c",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    223,
+    223
+   ],
+   "folios": [
+    "217",
+    "217"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T178",
+   "src_lines": [
+    9508,
+    9510
+   ],
+   "heading": "Desert Naga [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "699510694a3ef2fa0ef4ffa7db02408af3e91d694a6b762c77b855b3df677d0e",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    223,
+    223
+   ],
+   "folios": [
+    "217",
+    "217"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T179",
+   "src_lines": [
+    9527,
+    9529
+   ],
+   "heading": "Fire Elemental [Cannon]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "19f876033426cb33fbf18dbb5dddf7429c0059086b450c7b94e272b5b5c1ed51",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    223,
+    223
+   ],
+   "folios": [
+    "217",
+    "217"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T180",
+   "src_lines": [
+    9544,
+    9546
+   ],
+   "heading": "Giant Skeleton [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "76126759e3eb08ab30c6fe29b331152276ce295862471ea4749576f97d04642b",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    223,
+    223
+   ],
+   "folios": [
+    "217",
+    "217"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T181",
+   "src_lines": [
+    9562,
+    9564
+   ],
+   "heading": "Medusa [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "b1292df29c81ce5acfbdb389fe92784e06b167b54c7c61c7ecd34e9d5b3da5da",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    224,
+    224
+   ],
+   "folios": [
+    "218",
+    "218"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T182",
+   "src_lines": [
+    9583,
+    9585
+   ],
+   "heading": "Tomb Necromancer [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "af82f4441445641200488a91e23906ad60a8a484cb80996cfb6931d8c0730d28",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    224,
+    224
+   ],
+   "folios": [
+    "218",
+    "218"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T183",
+   "src_lines": [
+    9602,
+    9604
+   ],
+   "heading": "Tomb Guardian [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "1e4820d1e39c2e4763684acaad8a1825d3ccf82b079a8a11dc913a468e2178cd",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    224,
+    224
+   ],
+   "folios": [
+    "218",
+    "218"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T184",
+   "src_lines": [
+    9624,
+    9626
+   ],
+   "heading": "Brass Golem [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "df3f806d429729a00fb7b1446f0b06e15fb095c1f2e09891e489508a44d9a9f4",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    225,
+    225
+   ],
+   "folios": [
+    "219",
+    "219"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T185",
+   "src_lines": [
+    9646,
+    9648
+   ],
+   "heading": "Manticore [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "963a99fc0b5cb28cd5b6ec60b0597c468f907cccf1ed1d1506e9ab27333133cb",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    225,
+    225
+   ],
+   "folios": [
+    "219",
+    "219"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T186",
+   "src_lines": [
+    9668,
+    9670
+   ],
+   "heading": "Demon [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "9f6ce43e44558d5d6f2a301ff8b129c13b9ab361deb13c07181db8b5449915cc",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    225,
+    225
+   ],
+   "folios": [
+    "219",
+    "219"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T187",
+   "src_lines": [
+    9692,
+    9694
+   ],
+   "heading": "Blue Dragon [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "de4dfd5f5c0e492f6e27b7dd6e58d74f62a52e5f5efdaecd298c93fb3aa41655",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    226,
+    226
+   ],
+   "folios": [
+    "220",
+    "220"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T188",
+   "src_lines": [
+    9716,
+    9718
+   ],
+   "heading": "Bogling [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "4c48eac34eeda9557d6c597f58abcc0ec4a4d11295abe5236e999f1948b37abe",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    226,
+    226
+   ],
+   "folios": [
+    "220",
+    "220"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T189",
+   "src_lines": [
+    9735,
+    9737
+   ],
+   "heading": "Swamp Goblin [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "73ddeb2625889678a6f1f374e01bec8b48bd2add63e0bff4582a849d151a94e4",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    226,
+    226
+   ],
+   "folios": [
+    "220",
+    "220"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T190",
+   "src_lines": [
+    9757,
+    9759
+   ],
+   "heading": "Zombie [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "111ede84a52c91c6ae355256d704fd981909e3f0a379ddf3ba8634e170945746",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    227,
+    227
+   ],
+   "folios": [
+    "221",
+    "221"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T191",
+   "src_lines": [
+    9774,
+    9776
+   ],
+   "heading": "Stirge [Minion]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "f1503ac5946c7cd7fda031be90d99d90366017fe51df94b1989c54c60fa8bcec",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    227,
+    227
+   ],
+   "folios": [
+    "221",
+    "221"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T192",
+   "src_lines": [
+    9792,
+    9794
+   ],
+   "heading": "Will-o'-Wisp [Cannon]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "6174cf32a03572779ad7ce71c158435d368d333cb6b5e0987f92b40bbac778d9",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    227,
+    227
+   ],
+   "folios": [
+    "221",
+    "221"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T193",
+   "src_lines": [
+    9811,
+    9813
+   ],
+   "heading": "Lizardfolk Warrior [Soldier]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "ee2da4f445b55b195339b946aa455dfba35bf15774e09eefc981a73d38df69a3",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    228,
+    228
+   ],
+   "folios": [
+    "222",
+    "222"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T194",
+   "src_lines": [
+    9829,
+    9831
+   ],
+   "heading": "Lizardfolk Hunter [Cannon]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "5ebe825904105e1d8aaeebed7f12f5fb7d3ba8ebbc0269203100bed6a1eb9a35",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    228,
+    228
+   ],
+   "folios": [
+    "222",
+    "222"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T195",
+   "src_lines": [
+    9849,
+    9851
+   ],
+   "heading": "Crocodile [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "fcb2f8492ea9ca9a42bcd01ddc7197103e65239b96d1b73448afb04de321fce4",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    228,
+    228
+   ],
+   "folios": [
+    "222",
+    "222"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T196",
+   "src_lines": [
+    9867,
+    9869
+   ],
+   "heading": "Lizardfolk Shaman [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "5aaf3e4f04abd288a191cd5e2c50faec292c19d3a3d2b7b27d5c1a6bd6607d44",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    229,
+    229
+   ],
+   "folios": [
+    "223",
+    "223"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T197",
+   "src_lines": [
+    9886,
+    9888
+   ],
+   "heading": "Miasma Serpent [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "976d6cef945f967b59ee7e9db1293119b53dc679c3de55f928ee9c96822b78a2",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    229,
+    229
+   ],
+   "folios": [
+    "223",
+    "223"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T198",
+   "src_lines": [
+    9908,
+    9910
+   ],
+   "heading": "Swamp Naga [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "699510694a3ef2fa0ef4ffa7db02408af3e91d694a6b762c77b855b3df677d0e",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    229,
+    229
+   ],
+   "folios": [
+    "223",
+    "223"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T199",
+   "src_lines": [
+    9928,
+    9930
+   ],
+   "heading": "Giant Constrictor [Skirmisher]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "e199c6d3fa84a90071c2cf1a3abdb58f9bd0cc2543ddce2b9ceba2692bea61c6",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    230,
+    230
+   ],
+   "folios": [
+    "224",
+    "224"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T200",
+   "src_lines": [
+    9948,
+    9950
+   ],
+   "heading": "Shambling Mound [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "3d64cda2db7989a7df3c9290b06fe34eb19fe58486acb32ad01b235d93b6ae28",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    230,
+    230
+   ],
+   "folios": [
+    "224",
+    "224"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T201",
+   "src_lines": [
+    9969,
+    9971
+   ],
+   "heading": "Swamp Hag [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "1564f7ebe83d2745dfcd7b1dfbad05cdc8c559bdde68482de77d41092ad9a5e3",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    230,
+    230
+   ],
+   "folios": [
+    "224",
+    "224"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T202",
+   "src_lines": [
+    9988,
+    9990
+   ],
+   "heading": "Banshee [Controller]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "671500e68baaaaf23fbf6aa01c4d12bf3b9dc6df39779ad1b2863394386e8b66",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    231,
+    231
+   ],
+   "folios": [
+    "225",
+    "225"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T203",
+   "src_lines": [
+    10010,
+    10012
+   ],
+   "heading": "Swamp Troll [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "71a2edee27965a440a10de0b7814c26f7b0e55b9bd902b13f2f2735e70d0f4a7",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    231,
+    231
+   ],
+   "folios": [
+    "225",
+    "225"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T204",
+   "src_lines": [
+    10031,
+    10033
+   ],
+   "heading": "Hydra [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "9922ccd87d8c085bf59bb2742f705468180423537426b122fd59754c49eeef50",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    231,
+    231
+   ],
+   "folios": [
+    "225",
+    "225"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T205",
+   "src_lines": [
+    10051,
+    10053
+   ],
+   "heading": "Blackwater Wight [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "e02a4884ee3c750d384cc84832d1fd4516debdfaf64a90d5809c25ed472f9fd6",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    232,
+    232
+   ],
+   "folios": [
+    "226",
+    "226"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T206",
+   "src_lines": [
+    10073,
+    10075
+   ],
+   "heading": "Mire Titan [Brute]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "6098eafe41a533f31ffcd8bc2406c1057072f9246ef639a6e12548d399e0c6aa",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    232,
+    232
+   ],
+   "folios": [
+    "226",
+    "226"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T207",
+   "src_lines": [
+    10095,
+    10097
+   ],
+   "heading": "Black Dragon [Elite]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "ab8a58c3d48eed6dcea40602ec97f5c6565163880b2c9bf7137ae04faa7f3952",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    233,
+    233
+   ],
+   "folios": [
+    "227",
+    "227"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T208",
+   "src_lines": [
+    10143,
+    10145
+   ],
+   "heading": "The Ancient Void Dragon [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "c41ec24d3783fc35458d4582c212125e5eff1985e01c222f34ca5f888de48163",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    234,
+    234
+   ],
+   "folios": [
+    "228",
+    "228"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T209",
+   "src_lines": [
+    10167,
+    10169
+   ],
+   "heading": "The Hollow Crown of the Ashlands [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "55749f4786af7880a4a4298443e80d463161112025ca8da6db1cf3cdfaed9f96",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    235,
+    235
+   ],
+   "folios": [
+    "229",
+    "229"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T210",
+   "src_lines": [
+    10189,
+    10191
+   ],
+   "heading": "The Last Colossus [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "8faa08a5ebf881391b178408239e1d63df62d2f4d65909888c231755d9e9e1c6",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    235,
+    235
+   ],
+   "folios": [
+    "229",
+    "229"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T211",
+   "src_lines": [
+    10212,
+    10214
+   ],
+   "heading": "Avatar of the Old Growth [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "5598673177fe8f42c5cf86f724b5fb183306ca1078664c4e9a15f860953a6607",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    235,
+    235
+   ],
+   "folios": [
+    "229",
+    "229"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T212",
+   "src_lines": [
+    10235,
+    10237
+   ],
+   "heading": "The Broodmother Prime [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "56404cbc14fd76665fea1f49f80f551e7c507b72ace234ad30e8763c8b7660e6",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    236,
+    236
+   ],
+   "folios": [
+    "230",
+    "230"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T213",
+   "src_lines": [
+    10259,
+    10261
+   ],
+   "heading": "Captain Veyr of the Forsaken [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "6c4f11f269310c6ae7d75bd3bfa99f674c52f562bb9ca7eadc1b50cd4f104bc8",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    236,
+    236
+   ],
+   "folios": [
+    "230",
+    "230"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T214",
+   "src_lines": [
+    10281,
+    10283
+   ],
+   "heading": "The Frost Bailiff Magistrate [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "b2c160f6ec4a61cc853e630681e15d8ae03cf0645eda00caf9bd0d651ab822fd",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    237,
+    237
+   ],
+   "folios": [
+    "231",
+    "231"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T215",
+   "src_lines": [
+    10303,
+    10305
+   ],
+   "heading": "The Sun-Crowned Prince [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "72a76e559d59979e7c4763f0bd9b60385e046e826eddf366033bfdb39e32b6ae",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    237,
+    237
+   ],
+   "folios": [
+    "231",
+    "231"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T216",
+   "src_lines": [
+    10325,
+    10327
+   ],
+   "heading": "The Antlered Warden of the Tithe [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "4bd8d4916de76dd1e9ddfe9bd9b6f3977ee427c2b3566af36c0faf5876531bd2",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    238,
+    238
+   ],
+   "folios": [
+    "232",
+    "232"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T217",
+   "src_lines": [
+    10349,
+    10351
+   ],
+   "heading": "The Voice Beneath the Bells [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "2bbcf4e3de0e09ba954151eb8a7f945a88f16e1a189375cdf92ca40c1a9cf0eb",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    238,
+    238
+   ],
+   "folios": [
+    "232",
+    "232"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T218",
+   "src_lines": [
+    10372,
+    10374
+   ],
+   "heading": "Maelthorn the Verdant [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "8ae27394352ff34cde520db2233e303dbca53afd4e18e60f31100db13e54d4a7",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    239,
+    239
+   ],
+   "folios": [
+    "233",
+    "233"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T219",
+   "src_lines": [
+    10398,
+    10400
+   ],
+   "heading": "Sirrach the Black [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "56a7e5883efd609a59b029df3025a535f234832cffabcddbc61a8a351fff5c81",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    239,
+    239
+   ],
+   "folios": [
+    "233",
+    "233"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T220",
+   "src_lines": [
+    10424,
+    10426
+   ],
+   "heading": "Visath the White [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "f53f740c3799466a7c38581a806450ad0f141ad79440fca97c2ba81005a10aac",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    240,
+    240
+   ],
+   "folios": [
+    "234",
+    "234"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T221",
+   "src_lines": [
+    10451,
+    10453
+   ],
+   "heading": "Khorrun the Dracolich [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "093caab1c2e906484c8496f084a1d077fe567784046f34840e2944c92427ce22",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    241,
+    241
+   ],
+   "folios": [
+    "235",
+    "235"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T222",
+   "src_lines": [
+    10477,
+    10479
+   ],
+   "heading": "Vossegar of the Flooded Cathedral [Boss]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "792dd58ce7f22ed6a7f5f103cd14027f90c9a7031157159003e06759dcdd07df",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    241,
+    241
+   ],
+   "folios": [
+    "235",
+    "235"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T223",
+   "src_lines": [
+    10516,
+    10527
+   ],
+   "heading": "Greenmark Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "be718a023e42b68ca9a9b7d5011a259681032da588fec429dc39f51962ab0015",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    243,
+    243
+   ],
+   "folios": [
+    "237",
+    "237"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T224",
+   "src_lines": [
+    10531,
+    10542
+   ],
+   "heading": "Greenmark Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "b69e9c17374b847554a81858b8a263ae7bb7940a4aafb758cad79476a479a838",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    243,
+    243
+   ],
+   "folios": [
+    "237",
+    "237"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T225",
+   "src_lines": [
+    10546,
+    10557
+   ],
+   "heading": "Greenmark Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "ec2723eefe59f3528677250fc9a4c550ef03773b6e1460f389ecfb77686ce231",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    243,
+    244
+   ],
+   "folios": [
+    "237",
+    "238"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T226",
+   "src_lines": [
+    10561,
+    10572
+   ],
+   "heading": "Greenmark Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "c5adacef361a7c1942379beba5cbb5a682e803862994e91c49303368b42d8767",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    244,
+    244
+   ],
+   "folios": [
+    "238",
+    "238"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T227",
+   "src_lines": [
+    10576,
+    10587
+   ],
+   "heading": "Greenmark Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "e1b5ce8cc8f0fd9afcf1a9a449952ceb73563b66cebc3d55b2abffa6fd69907c",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    244,
+    244
+   ],
+   "folios": [
+    "238",
+    "238"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T228",
+   "src_lines": [
+    10593,
+    10604
+   ],
+   "heading": "Ashlands Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "15dd4e5a6ee1ebe3321d589d73055e64be30272c085ec21d78747c5002713af2",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    245,
+    245
+   ],
+   "folios": [
+    "239",
+    "239"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T229",
+   "src_lines": [
+    10608,
+    10619
+   ],
+   "heading": "Ashlands Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "3c01b3459b63a38af9047a736fc222853f737e1b117279462c08c9070c0153ca",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    245,
+    245
+   ],
+   "folios": [
+    "239",
+    "239"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T230",
+   "src_lines": [
+    10623,
+    10634
+   ],
+   "heading": "Ashlands Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "ebff9ff82131abff9010c80c2fcab8bd893a0fd616f1e4b1a88f1cada99837a6",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    245,
+    246
+   ],
+   "folios": [
+    "239",
+    "240"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T231",
+   "src_lines": [
+    10638,
+    10649
+   ],
+   "heading": "Ashlands Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "9954626ab1988c13f1004dcd261389b80d557e4bd3d8c2b4d860cebbda8801c9",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    246,
+    246
+   ],
+   "folios": [
+    "240",
+    "240"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T232",
+   "src_lines": [
+    10653,
+    10664
+   ],
+   "heading": "Ashlands Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "34e8a01957844b79f8700f2354b55ea205cd1358c8d4e0698fb8400e9bd90cd5",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    246,
+    247
+   ],
+   "folios": [
+    "240",
+    "241"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T233",
+   "src_lines": [
+    10670,
+    10681
+   ],
+   "heading": "Undermarches Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "365fec470d8b22aba252002cd211fb1f1de7a4dcd5ba923ceb2c106e22679d82",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    247,
+    247
+   ],
+   "folios": [
+    "241",
+    "241"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T234",
+   "src_lines": [
+    10685,
+    10696
+   ],
+   "heading": "Undermarches Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "fd3133101f9ca05f59291d3902380afd4a48e101f2018d6f9b4a6dfc856ed200",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    247,
+    248
+   ],
+   "folios": [
+    "241",
+    "242"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T235",
+   "src_lines": [
+    10700,
+    10711
+   ],
+   "heading": "Undermarches Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "4ab72e6a53f400b31a7b9850e346010b4e968a3539b94bc14d77b4904e99f3c9",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    248,
+    248
+   ],
+   "folios": [
+    "242",
+    "242"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T236",
+   "src_lines": [
+    10715,
+    10726
+   ],
+   "heading": "Undermarches Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "e3694171ea54e779537ad039d1942340e07529a2be757be4ea825d66c774651e",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    248,
+    248
+   ],
+   "folios": [
+    "242",
+    "242"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T237",
+   "src_lines": [
+    10730,
+    10741
+   ],
+   "heading": "Undermarches Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "1397240ecedfb07c2a87201e28fab862dc8b3e509da11df9121caac7e26f17c4",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    249,
+    249
+   ],
+   "folios": [
+    "243",
+    "243"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T238",
+   "src_lines": [
+    10747,
+    10758
+   ],
+   "heading": "Pale City Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "1e6d3195384ea38be7eb111a89afa35723fa3370f7b44dff511323eb290823ba",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    249,
+    249
+   ],
+   "folios": [
+    "243",
+    "243"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T239",
+   "src_lines": [
+    10762,
+    10773
+   ],
+   "heading": "Pale City Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "9ed6ed903f2e261f4d62a43d08b016ba559db793138561db13de62e31299e27e",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    250,
+    250
+   ],
+   "folios": [
+    "244",
+    "244"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T240",
+   "src_lines": [
+    10777,
+    10788
+   ],
+   "heading": "Pale City Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "22a32f7c22f763f16738bd6776690bd14254c2615f4f23b479668dacb5626406",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    250,
+    250
+   ],
+   "folios": [
+    "244",
+    "244"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T241",
+   "src_lines": [
+    10792,
+    10803
+   ],
+   "heading": "Pale City Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "99ec6d08df940cbffbc128ded278c505144e4387a0a1c2f997f713c521463964",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    251,
+    251
+   ],
+   "folios": [
+    "245",
+    "245"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T242",
+   "src_lines": [
+    10807,
+    10818
+   ],
+   "heading": "Pale City Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "4275ed682bead52c1d71a3f4692c5659976c2f72c6b1023954cd2faf10a73548",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    251,
+    251
+   ],
+   "folios": [
+    "245",
+    "245"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T243",
+   "src_lines": [
+    10824,
+    10835
+   ],
+   "heading": "Sun-Drowned Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "7c3eb83ac86e853c9f4818d3e5f8fb758c8d51dfdd40a5aa7c608815caef0526",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    251,
+    252
+   ],
+   "folios": [
+    "245",
+    "246"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T244",
+   "src_lines": [
+    10839,
+    10850
+   ],
+   "heading": "Sun-Drowned Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "11bd328dcdb5e76f9bd515f766e0f433866b5d13a5904de8a642d03effbb045e",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    252,
+    252
+   ],
+   "folios": [
+    "246",
+    "246"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T245",
+   "src_lines": [
+    10854,
+    10865
+   ],
+   "heading": "Sun-Drowned Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "4eb572916fecd85b54eab681a8408bc98b45bddaeaee63014ecce91a29d44f7e",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    252,
+    253
+   ],
+   "folios": [
+    "246",
+    "247"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T246",
+   "src_lines": [
+    10869,
+    10880
+   ],
+   "heading": "Sun-Drowned Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "a5fbac013f1c5c600513265ecfdc93a694e633164763e0a53d14064c3f519e39",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    253,
+    253
+   ],
+   "folios": [
+    "247",
+    "247"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T247",
+   "src_lines": [
+    10884,
+    10895
+   ],
+   "heading": "Sun-Drowned Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "566b5d03ed5609b7bb089bf321cc09a0507468f9338efaf158bbc9b4ad39d964",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    253,
+    254
+   ],
+   "folios": [
+    "247",
+    "248"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T248",
+   "src_lines": [
+    10901,
+    10912
+   ],
+   "heading": "The Mire Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "59087d171451c7a7bc18f9335fa5ffca4c2fcc627aadd45b76e3a977db1524c7",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    254,
+    254
+   ],
+   "folios": [
+    "248",
+    "248"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T249",
+   "src_lines": [
+    10916,
+    10927
+   ],
+   "heading": "The Mire Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "3c941ab49c0ba4cfbbda392aac600942a6c936cd618e0a853f7498ca6e81d083",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    254,
+    255
+   ],
+   "folios": [
+    "248",
+    "249"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T250",
+   "src_lines": [
+    10931,
+    10942
+   ],
+   "heading": "The Mire Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "230321642587eeb0944c75e01f223e59f1b35b83911a9f81ef9609273e87b7c6",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    255,
+    255
+   ],
+   "folios": [
+    "249",
+    "249"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T251",
+   "src_lines": [
+    10946,
+    10957
+   ],
+   "heading": "The Mire Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "77158120193adc0dd96340f94a88d7f7a7235cc3b4caf1cb8e029021aa101fe8",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    255,
+    256
+   ],
+   "folios": [
+    "249",
+    "250"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T252",
+   "src_lines": [
+    10961,
+    10972
+   ],
+   "heading": "The Mire Random Monster Table",
+   "columns": 5,
+   "rows": 10,
+   "cells": 55,
+   "cell_sha256": "76037e6822719892f6c248d691dddace64c5e77d3913be2dd86c05cb3724afa7",
+   "representation": "table",
+   "scope": "full",
+   "family": "T223",
+   "field_map": null,
+   "pdf_pages": [
+    256,
+    256
+   ],
+   "folios": [
+    "250",
+    "250"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T253",
+   "src_lines": [
+    11008,
+    11027
+   ],
+   "heading": "Scenario Scaling Field Reference",
+   "columns": 2,
+   "rows": 18,
+   "cells": 38,
+   "cell_sha256": "8ffb5846b7a22e2962e0ac5d9b7fe0028d25b098e2ccf0e01ae2e1caa4f06473",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    258,
+    259
+   ],
+   "folios": [
+    "252",
+    "253"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T254",
+   "src_lines": [
+    11045,
+    11054
+   ],
+   "heading": "Random Direction",
+   "columns": 2,
+   "rows": 8,
+   "cells": 18,
+   "cell_sha256": "e68e7e53aec9fa3446f765952ebfa0d79e051de8edec6d26a719e3ca279f69e5",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    259,
+    259
+   ],
+   "folios": [
+    "253",
+    "253"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T255",
+   "src_lines": [
+    11083,
+    11120
+   ],
+   "heading": "10.1.1 Climate and Core Scenario Selection",
+   "columns": 5,
+   "rows": 36,
+   "cells": 185,
+   "cell_sha256": "5517560481a3d466be7854182cbc0b0ae9f88d3d97a7f8d52b18495a53986558",
+   "representation": "table",
+   "scope": "full",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    262,
+    264
+   ],
+   "folios": [
+    "256",
+    "258"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T256",
+   "src_lines": [
+    11896,
+    11903
+   ],
+   "heading": "Climate 1: Greenmark Weather Table",
+   "columns": 3,
+   "rows": 6,
+   "cells": 21,
+   "cell_sha256": "0bebd6d00316767d1b90ee86b4d62bbfcf03fc3ecbd57bec02f4880198d2a4e1",
+   "representation": "table",
+   "scope": "full",
+   "family": "T256",
+   "field_map": null,
+   "pdf_pages": [
+    284,
+    285
+   ],
+   "folios": [
+    "278",
+    "279"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T257",
+   "src_lines": [
+    11907,
+    11914
+   ],
+   "heading": "Climate 2: Ashlands Weather Table",
+   "columns": 3,
+   "rows": 6,
+   "cells": 21,
+   "cell_sha256": "4e52e3104d178d02b9dd6635182a8c95db997f5aa66b86071f108043dcc2676d",
+   "representation": "table",
+   "scope": "full",
+   "family": "T256",
+   "field_map": null,
+   "pdf_pages": [
+    285,
+    285
+   ],
+   "folios": [
+    "279",
+    "279"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T258",
+   "src_lines": [
+    11920,
+    11927
+   ],
+   "heading": "Climate 3: Undermarches Cavern Conditions Table",
+   "columns": 3,
+   "rows": 6,
+   "cells": 21,
+   "cell_sha256": "e5fccd457d77266e795868e4530a8b06be20281416519c36b3dea786bf0bf851",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    286,
+    286
+   ],
+   "folios": [
+    "280",
+    "280"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T259",
+   "src_lines": [
+    11931,
+    11938
+   ],
+   "heading": "Climate 4: Pale City Weather Table",
+   "columns": 3,
+   "rows": 6,
+   "cells": 21,
+   "cell_sha256": "5adb58db70a561d2d8330275d4dbae8384c56cf707e995023632baf6f69a3e91",
+   "representation": "table",
+   "scope": "full",
+   "family": "T256",
+   "field_map": null,
+   "pdf_pages": [
+    287,
+    287
+   ],
+   "folios": [
+    "281",
+    "281"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T260",
+   "src_lines": [
+    11942,
+    11949
+   ],
+   "heading": "Climate 5: Sun-Drowned Weather Table",
+   "columns": 3,
+   "rows": 6,
+   "cells": 21,
+   "cell_sha256": "d6b0d34baf83d2f29b00acfc6ac3f6bc3c9ec802c258bd2b97e9c799c6335733",
+   "representation": "table",
+   "scope": "full",
+   "family": "T256",
+   "field_map": null,
+   "pdf_pages": [
+    287,
+    287
+   ],
+   "folios": [
+    "281",
+    "281"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T261",
+   "src_lines": [
+    11953,
+    11960
+   ],
+   "heading": "Climate 6: The Mire Weather Table",
+   "columns": 3,
+   "rows": 6,
+   "cells": 21,
+   "cell_sha256": "6611949afc4a8e190599cc29e2dbe7f1e6a1ebffda727efcf794242fab442b59",
+   "representation": "table",
+   "scope": "full",
+   "family": "T256",
+   "field_map": null,
+   "pdf_pages": [
+    287,
+    288
+   ],
+   "folios": [
+    "281",
+    "282"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T262",
+   "src_lines": [
+    12000,
+    12002
+   ],
+   "heading": "Scenario 1: Hunt the Wild Beast [Intro]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "6b214c75e6460d6bac6225166baa5ebdc0fe2709eb62faf5399799f42a164c40",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    289,
+    289
+   ],
+   "folios": [
+    "283",
+    "283"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T263",
+   "src_lines": [
+    12070,
+    12072
+   ],
+   "heading": "Scenario 2: The Whispering Grove",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "76b5ad2492f636ceae683082ee142232d42f065cbda5264599d8af969919337a",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    290,
+    290
+   ],
+   "folios": [
+    "284",
+    "284"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T264",
+   "src_lines": [
+    12148,
+    12150
+   ],
+   "heading": "Scenario 3: The Bandit's Toll",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "68b8e1888aa83feba26c9bc40704ce6847d46ec0291d00581cabf9f3b8b0945c",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    292,
+    292
+   ],
+   "folios": [
+    "286",
+    "286"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T265",
+   "src_lines": [
+    12215,
+    12217
+   ],
+   "heading": "Scenario 4: The Spider's Silk Route",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "e51a6449e045b18a195391943fb628ddb93c04a363e27b64f114198dbbbb8568",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    294,
+    294
+   ],
+   "folios": [
+    "288",
+    "288"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T266",
+   "src_lines": [
+    12290,
+    12292
+   ],
+   "heading": "Scenario 5: The Ambushed Emissary",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "d26d4918cdbde846e4581232d413fbdc08916bfa18407bc06f42f24f2fe0bd8d",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    295,
+    295
+   ],
+   "folios": [
+    "289",
+    "289"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T267",
+   "src_lines": [
+    12369,
+    12371
+   ],
+   "heading": "Scenario 6: Ritual of the Old Growth",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "9b89bf4e259d6775b47cc4ec921c749afe248e2933b20dec9f1e01ab28ba2983",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    297,
+    297
+   ],
+   "folios": [
+    "291",
+    "291"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T268",
+   "src_lines": [
+    12457,
+    12459
+   ],
+   "heading": "Scenario 1: The Fallen Observatory [Intro]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "cf5243f66d4f68525bf3b92ea5453c4d3a0e0860a9aeb315edf572dfafc61fff",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    299,
+    299
+   ],
+   "folios": [
+    "293",
+    "293"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T269",
+   "src_lines": [
+    12521,
+    12523
+   ],
+   "heading": "Scenario 2: The Guardian's Test",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "cbf8ba473d2af8ffae25378613753c1ee21956807ec1c0dc2ce6c048aa2793a8",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    300,
+    300
+   ],
+   "folios": [
+    "294",
+    "294"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T270",
+   "src_lines": [
+    12654,
+    12656
+   ],
+   "heading": "Scenario 4: The Sealed Archive",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "6ce772e5167b77146b49246be20492d7a9b3d4ae02f1a9294f8612a870e8819e",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    303,
+    303
+   ],
+   "folios": [
+    "297",
+    "297"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T271",
+   "src_lines": [
+    12739,
+    12741
+   ],
+   "heading": "Scenario 5: The Reliquary of Broken Saints",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "9537d890aee57d474ee8e40c3f2890693e64976cad88f4975af3046fc6cd7e09",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    304,
+    304
+   ],
+   "folios": [
+    "298",
+    "298"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T272",
+   "src_lines": [
+    12820,
+    12822
+   ],
+   "heading": "Scenario 6: The Iron-Vein Vault",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "bb8ddfc36e512c0aeea4f604513cd6e0e859a3222e16ffbdbefa766ab0c60154",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    306,
+    306
+   ],
+   "folios": [
+    "300",
+    "300"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T273",
+   "src_lines": [
+    12905,
+    12907
+   ],
+   "heading": "Scenario 1: The Crystal Harvest [Intro]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "44b5d8b07a69021579768710d2c3e329d899d684c2078eeacda505f412b0f0ff",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    308,
+    308
+   ],
+   "folios": [
+    "302",
+    "302"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T274",
+   "src_lines": [
+    12973,
+    12975
+   ],
+   "heading": "Scenario 2: The Chasm Crossing",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "1a9788a521fb917ffdd9afce65483c07921f4f5df968f965853c9c26d5550978",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    309,
+    309
+   ],
+   "folios": [
+    "303",
+    "303"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T275",
+   "src_lines": [
+    13041,
+    13043
+   ],
+   "heading": "Scenario 3: The Quake",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "c93fc4ee6e2e6bf7b998821598f8316683207946a89d54a7eff35076aa169178",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    311,
+    311
+   ],
+   "folios": [
+    "305",
+    "305"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T276",
+   "src_lines": [
+    13114,
+    13116
+   ],
+   "heading": "Scenario 4: The Undermarches Outpost Raid",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "5b6ffed4ecc078b86de316a87b3c25615500ba007a48500bbe0a24b42a4a4d4f",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    313,
+    313
+   ],
+   "folios": [
+    "307",
+    "307"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T277",
+   "src_lines": [
+    13134,
+    13136
+   ],
+   "heading": "Scenario 4: The Undermarches Outpost Raid",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "e1300938f919dd1880971d86a1f83845ed01fd3104a14353519cd6969fa6d871",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    313,
+    313
+   ],
+   "folios": [
+    "307",
+    "307"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T278",
+   "src_lines": [
+    13151,
+    13153
+   ],
+   "heading": "Scenario 4: The Undermarches Outpost Raid",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "877b047ea5bc7d94af07c322516b0cf508cc38c8c2ef37c0a3f6283e4ea332da",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    314,
+    314
+   ],
+   "folios": [
+    "308",
+    "308"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T279",
+   "src_lines": [
+    13218,
+    13220
+   ],
+   "heading": "Scenario 5: The Shadowed Under Passage",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "024bb8088351687694d9cab1ea06c8ce3a256b562a3ffd5c7c6ae5ed3bef3cf1",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    315,
+    315
+   ],
+   "folios": [
+    "309",
+    "309"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T280",
+   "src_lines": [
+    13293,
+    13295
+   ],
+   "heading": "Scenario 6: The Ritual of Shadow Binding",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "c03f231ee4de36008f55a65586c90af10e6ef80a874857465e14c07b93a51c8a",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    317,
+    317
+   ],
+   "folios": [
+    "311",
+    "311"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T281",
+   "src_lines": [
+    13328,
+    13330
+   ],
+   "heading": "Scenario 6: The Ritual of Shadow Binding",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "adc8c37a6767bca77a187f94d3f105b1f2deaeb615ef2607bf816da863244337",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    317,
+    317
+   ],
+   "folios": [
+    "311",
+    "311"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T282",
+   "src_lines": [
+    13444,
+    13446
+   ],
+   "heading": "Scenario 2: The Alchemist's Frozen Laboratory",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "f5171e8069f608782458815ad730ab6f1d5e0aa4b00b9d9870faff2e6435957c",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    320,
+    320
+   ],
+   "folios": [
+    "314",
+    "314"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T283",
+   "src_lines": [
+    13514,
+    13516
+   ],
+   "heading": "Scenario 3: The Haunted Mausoleum",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "4f4a14034f85354a4bc34e91458df9c82927c5545e64b7e9603c03e66336734b",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    321,
+    321
+   ],
+   "folios": [
+    "315",
+    "315"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T284",
+   "src_lines": [
+    13583,
+    13585
+   ],
+   "heading": "Scenario 4: The Clockwork Menagerie",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "b05857533dd67d16cedcf5aa36e77cb0e0633e7862838ced7bae3d87396f2a85",
+   "representation": "statstrip",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    322,
+    322
+   ],
+   "folios": [
+    "316",
+    "316"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T285",
+   "src_lines": [
+    13643,
+    13645
+   ],
+   "heading": "Scenario 5: The Ice Wyrm's Hoard",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "482837db997040fc943232ef98130d9de624c4c54174b9245124bcef6fa9702b",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    324,
+    324
+   ],
+   "folios": [
+    "318",
+    "318"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T286",
+   "src_lines": [
+    13724,
+    13726
+   ],
+   "heading": "Scenario 6: The Icebound Court",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "9a44fb1edad0a177f600e6331da515a07fd6bea0f6d50cb8951ed46534f2dad3",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    326,
+    326
+   ],
+   "folios": [
+    "320",
+    "320"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T287",
+   "src_lines": [
+    13797,
+    13799
+   ],
+   "heading": "Scenario 1: The Oasis Raiders [Intro]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "b99af8d075c5f9bcdfc9ca8e1bc3d4d4c34821bec4c27ef51c307766be792632",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    327,
+    327
+   ],
+   "folios": [
+    "321",
+    "321"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T288",
+   "src_lines": [
+    13864,
+    13866
+   ],
+   "heading": "Scenario 2: The Cinder Lord's Lost Brazier",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "a59c77dd34af46a605dc09ea00b96abec65ce271d6361a603176e548843380c0",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    328,
+    328
+   ],
+   "folios": [
+    "322",
+    "322"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T289",
+   "src_lines": [
+    13929,
+    13931
+   ],
+   "heading": "Scenario 3: Tomb of the Sunken Kings",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "439b12267223502947df7cb230f7e4619345b2771e5bae5c69ce1582a5351854",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    329,
+    329
+   ],
+   "folios": [
+    "323",
+    "323"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T290",
+   "src_lines": [
+    13997,
+    13999
+   ],
+   "heading": "Scenario 4: The Sandwyrm's Lair",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "6d9e78315435ec3587563ca6f74d115fcbbe03b3f72c5975f4e8cc749a27f793",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    331,
+    331
+   ],
+   "folios": [
+    "325",
+    "325"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T291",
+   "src_lines": [
+    14061,
+    14063
+   ],
+   "heading": "Scenario 5: The Cursed Colossus of the Waste",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "d86733e42a8b551781a0cf5026cc067573f7a5420944098a60f97fca50a834ef",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    332,
+    332
+   ],
+   "folios": [
+    "326",
+    "326"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T292",
+   "src_lines": [
+    14139,
+    14141
+   ],
+   "heading": "Scenario 6: The Cinder Lord's Obsidian Prison",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "c35744088b43355d5343077165f047b99eeb5688d0da3218289943108b1b93f2",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    334,
+    334
+   ],
+   "folios": [
+    "328",
+    "328"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T293",
+   "src_lines": [
+    14225,
+    14227
+   ],
+   "heading": "Scenario 1: The Reliquary of Edrava Salttide [Intro]",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "2bfb754c0f91204d7a7a895fcc7ca691fbe005afe3ca4c010c1dbb327050f5c1",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    336,
+    336
+   ],
+   "folios": [
+    "330",
+    "330"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T294",
+   "src_lines": [
+    14302,
+    14304
+   ],
+   "heading": "Scenario 2: The Lizardfolk's Stolen Offerings",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "9dea3d08bde078cd8549f8fe8ea731d56e2291f60e3d849054614b19d1bc6d7c",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    337,
+    337
+   ],
+   "folios": [
+    "331",
+    "331"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T295",
+   "src_lines": [
+    14374,
+    14376
+   ],
+   "heading": "Scenario 3: The Mire Titan's Fen",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "e0237391cbc13b318406fd3819b3ad482921c713c6af75b1a71d8519cc4f55d3",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    339,
+    339
+   ],
+   "folios": [
+    "333",
+    "333"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T296",
+   "src_lines": [
+    14449,
+    14451
+   ],
+   "heading": "Scenario 4: The Blighted Heartwood",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "389c36ed7c46e16d4408aa07f8bf2aee2c27ef7ec87c566afbcb97795314e027",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    340,
+    340
+   ],
+   "folios": [
+    "334",
+    "334"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T297",
+   "src_lines": [
+    14528,
+    14530
+   ],
+   "heading": "Scenario 5: Salttide's Reckoning",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "3db2154ff23f8c8ae5fcd66a97f39183603f84cb3d114422870e6d0ff921dcd2",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    341,
+    341
+   ],
+   "folios": [
+    "335",
+    "335"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T298",
+   "src_lines": [
+    14605,
+    14607
+   ],
+   "heading": "Scenario 6: The Serpent's Sunken Hoard",
+   "columns": 6,
+   "rows": 1,
+   "cells": 12,
+   "cell_sha256": "7c8cd8dd3cf9287b57a5fca75d6385b2a22081d6c17aa6c4043139e35f344293",
+   "representation": "statcard",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "HP": "row1.HP",
+    "AV": "row1.AV",
+    "SPD": "row1.SPD",
+    "LVL": "row1.LVL",
+    "CV": "row1.CV",
+    "Sz": "row1.Sz"
+   },
+   "pdf_pages": [
+    343,
+    343
+   ],
+   "folios": [
+    "337",
+    "337"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T299",
+   "src_lines": [
+    14716,
+    14723
+   ],
+   "heading": "10.5.5 Solo and Cooperative Scenario Conversion",
+   "columns": 3,
+   "rows": 6,
+   "cells": 21,
+   "cell_sha256": "4193c2a9cdecad08bea610d5f0e60edeb2d866e1a53a0eda9b34c0cc8a936a44",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    345,
+    346
+   ],
+   "folios": [
+    "339",
+    "340"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T300",
+   "src_lines": [
+    14743,
+    14748
+   ],
+   "heading": "10.5.7 Pressure Clocks",
+   "columns": 6,
+   "rows": 4,
+   "cells": 30,
+   "cell_sha256": "4e5924c67c9e1f7a7bfa0fc0f199c053aa4b8dcfb4d6b9c232c649d329ebf4e0",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "d4": "entry.title.roll",
+    "Pressure Clock": "entry.title.name",
+    "Trigger": "entry.desc",
+    "Escalation": "entry.desc",
+    "Fail Threshold": "entry.desc",
+    "Mitigation": "entry.desc"
+   },
+   "pdf_pages": [
+    346,
+    347
+   ],
+   "folios": [
+    "340",
+    "341"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T301",
+   "src_lines": [
+    14874,
+    14880
+   ],
+   "heading": "10.6.4 Final Random Monster Groups",
+   "columns": 2,
+   "rows": 5,
+   "cells": 12,
+   "cell_sha256": "724f996a73deff07c123bfa74be3372667822b932a8618a3b30a01353b1490a8",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    349,
+    349
+   ],
+   "folios": [
+    "343",
+    "343"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T302",
+   "src_lines": [
+    14888,
+    14893
+   ],
+   "heading": "Scenario-Specific Monster Coin Value",
+   "columns": 2,
+   "rows": 4,
+   "cells": 10,
+   "cell_sha256": "5057d1630207a1c570cbe12e513b9d1eaff00a59761228cb7f1b40d297c30cef",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    350,
+    350
+   ],
+   "folios": [
+    "344",
+    "344"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T303",
+   "src_lines": [
+    14956,
+    14961
+   ],
+   "heading": "10.6.10 Extraction Clauses",
+   "columns": 2,
+   "rows": 4,
+   "cells": 10,
+   "cell_sha256": "6fa19ee31b4ab933222a8dd7fea355436139bed7a66e18ec571a163bbaf9fb8c",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    351,
+    351
+   ],
+   "folios": [
+    "345",
+    "345"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T304",
+   "src_lines": [
+    15001,
+    15007
+   ],
+   "heading": "Campaign Reference",
+   "columns": 3,
+   "rows": 5,
+   "cells": 18,
+   "cell_sha256": "421c1ff5ac4f692ffa8c64ace6e8d14ddab90812aa9b3a4907fbfcdd1d661c95",
+   "representation": "table",
+   "scope": "full",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    353,
+    353
+   ],
+   "folios": [
+    "347",
+    "347"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T305",
+   "src_lines": [
+    15141,
+    15152
+   ],
+   "heading": "Retirement Payout",
+   "columns": 2,
+   "rows": 10,
+   "cells": 22,
+   "cell_sha256": "8bfe17828c9521f3e92c7d28aa6b4b4aad97c845306b63604d24d18f1fe4f4ea",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    356,
+    356
+   ],
+   "folios": [
+    "350",
+    "350"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T306",
+   "src_lines": [
+    15204,
+    15215
+   ],
+   "heading": "11.2.1 Phase 1: Expedition",
+   "columns": 2,
+   "rows": 10,
+   "cells": 22,
+   "cell_sha256": "3eaee1ec9255d8d777745f351386d7fbac82fbc64c1a36f35d58171fcd06af76",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    358,
+    359
+   ],
+   "folios": [
+    "352",
+    "353"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T307",
+   "src_lines": [
+    15255,
+    15276
+   ],
+   "heading": "Climate 1: Greenmark Journey Table (1d20)",
+   "columns": 2,
+   "rows": 20,
+   "cells": 42,
+   "cell_sha256": "a1818c6f6a627dbc14126ab16af8d78886da5ad4e4f3216ec02a5a5ed18046e1",
+   "representation": "table",
+   "scope": "column",
+   "family": "T307",
+   "field_map": null,
+   "pdf_pages": [
+    359,
+    360
+   ],
+   "folios": [
+    "353",
+    "354"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T308",
+   "src_lines": [
+    15280,
+    15301
+   ],
+   "heading": "Climate 2: Ashlands Journey Table (1d20)",
+   "columns": 2,
+   "rows": 20,
+   "cells": 42,
+   "cell_sha256": "aef67d8cd790c1a45e20ec97a817d8bd2a9b518e343c54225e52c57e808b19ca",
+   "representation": "table",
+   "scope": "column",
+   "family": "T307",
+   "field_map": null,
+   "pdf_pages": [
+    360,
+    360
+   ],
+   "folios": [
+    "354",
+    "354"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T309",
+   "src_lines": [
+    15305,
+    15326
+   ],
+   "heading": "Climate 3: Undermarches Journey Table (1d20)",
+   "columns": 2,
+   "rows": 20,
+   "cells": 42,
+   "cell_sha256": "488fd7aacd23761912fbc5eb1795d3a39a3d720a9532224abefccb5c4867f2bb",
+   "representation": "table",
+   "scope": "column",
+   "family": "T307",
+   "field_map": null,
+   "pdf_pages": [
+    361,
+    361
+   ],
+   "folios": [
+    "355",
+    "355"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T310",
+   "src_lines": [
+    15330,
+    15351
+   ],
+   "heading": "Climate 4: Pale City Journey Table (1d20)",
+   "columns": 2,
+   "rows": 20,
+   "cells": 42,
+   "cell_sha256": "5a671595427ce377a2b29c2a87a353f5f0c51eb9646d2de12def1b2e82964be0",
+   "representation": "table",
+   "scope": "column",
+   "family": "T307",
+   "field_map": null,
+   "pdf_pages": [
+    361,
+    362
+   ],
+   "folios": [
+    "355",
+    "356"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T311",
+   "src_lines": [
+    15355,
+    15376
+   ],
+   "heading": "Climate 5: Sun-Drowned Journey Table (1d20)",
+   "columns": 2,
+   "rows": 20,
+   "cells": 42,
+   "cell_sha256": "07b6b8169a5b72e6dfa17965800e5c9aeed100ff756926e60ca20416cd8060b2",
+   "representation": "table",
+   "scope": "column",
+   "family": "T307",
+   "field_map": null,
+   "pdf_pages": [
+    362,
+    363
+   ],
+   "folios": [
+    "356",
+    "357"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T312",
+   "src_lines": [
+    15380,
+    15401
+   ],
+   "heading": "Climate 6: The Mire Journey Table (1d20)",
+   "columns": 2,
+   "rows": 20,
+   "cells": 42,
+   "cell_sha256": "c1832406ba4b7bb7a684dc387530cd3e01e6ae6773cd1fe69ed118c701eb2472",
+   "representation": "table",
+   "scope": "column",
+   "family": "T307",
+   "field_map": null,
+   "pdf_pages": [
+    363,
+    363
+   ],
+   "folios": [
+    "357",
+    "357"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T313",
+   "src_lines": [
+    15495,
+    15500
+   ],
+   "heading": "Active Hirelings and Summon Limits",
+   "columns": 3,
+   "rows": 4,
+   "cells": 15,
+   "cell_sha256": "a419eae86cd2ce67be0f762f29615ec40bb7645471afdd69c36bcb35b30a7146",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    366,
+    366
+   ],
+   "folios": [
+    "360",
+    "360"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T314",
+   "src_lines": [
+    15516,
+    15532
+   ],
+   "heading": "Specialist Hireling Roster",
+   "columns": 9,
+   "rows": 15,
+   "cells": 144,
+   "cell_sha256": "4fd84d842187c2f9164be5fda002e4225eb8b7ee03668c06700c96a9afa75b1e",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "Hireling": "entry.title.name",
+    "Min SPI": "entry.field",
+    "Cost": "entry.field",
+    "SPD": "entry.field",
+    "Sz": "entry.field",
+    "HP": "entry.field",
+    "AV": "entry.field",
+    "Attack": "entry.field",
+    "Special Abilities": "entry.desc"
+   },
+   "pdf_pages": [
+    366,
+    367
+   ],
+   "folios": [
+    "360",
+    "361"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T315",
+   "src_lines": [
+    15568,
+    15580
+   ],
+   "heading": "Animal Companion Roster",
+   "columns": 9,
+   "rows": 11,
+   "cells": 108,
+   "cell_sha256": "645cc4ae7898345a38f05f58fca16c59786f5ba42c580d9022e7adba511476f8",
+   "representation": "cards",
+   "scope": "column",
+   "family": null,
+   "field_map": {
+    "Animal Companion": "entry.title.name",
+    "Min SPI": "entry.field",
+    "Cost": "entry.field",
+    "SPD": "entry.field",
+    "Sz": "entry.field",
+    "HP": "entry.field",
+    "AV": "entry.field",
+    "Attack": "entry.field",
+    "Special Abilities": "entry.desc"
+   },
+   "pdf_pages": [
+    368,
+    369
+   ],
+   "folios": [
+    "362",
+    "363"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T316",
+   "src_lines": [
+    15593,
+    15600
+   ],
+   "heading": "11.3 Building the Stronghold",
+   "columns": 2,
+   "rows": 6,
+   "cells": 14,
+   "cell_sha256": "d2c9d1abeeb236566df8bc3ea5e9f97f7241c61004b8430c7a789fcbc9d56655",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    369,
+    369
+   ],
+   "folios": [
+    "363",
+    "363"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T317",
+   "src_lines": [
+    15720,
+    15731
+   ],
+   "heading": "11.4 Legendary Veterans",
+   "columns": 2,
+   "rows": 10,
+   "cells": 22,
+   "cell_sha256": "83802941f12781bb3d072a4b4e41bef157267bae0add9f1b0c11c388cfa2a3d8",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    371,
+    371
+   ],
+   "folios": [
+    "365",
+    "365"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T318",
+   "src_lines": [
+    15796,
+    15803
+   ],
+   "heading": "Triumph Minions",
+   "columns": 3,
+   "rows": 6,
+   "cells": 21,
+   "cell_sha256": "e39c9c7c3de36e40477aac16c91b16e40fbd2ec2f04530aa4ba463a2fb692880",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    373,
+    373
+   ],
+   "folios": [
+    "367",
+    "367"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T319",
+   "src_lines": [
+    16049,
+    16066
+   ],
+   "heading": "Triumph Boss Table",
+   "columns": 2,
+   "rows": 16,
+   "cells": 34,
+   "cell_sha256": "af7e7e2c436f2c7cc23dbec471ca00f18f33616ee247e26befbe8f6bd5d565f4",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    378,
+    378
+   ],
+   "folios": [
+    "372",
+    "372"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T320",
+   "src_lines": [
+    16084,
+    16092
+   ],
+   "heading": "A.1 Learn to Play At a Glance",
+   "columns": 2,
+   "rows": 7,
+   "cells": 16,
+   "cell_sha256": "0a8e08677e30c4aa20a54b8685465117e57c316eead631f0bc36e68ca7587158",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    379,
+    379
+   ],
+   "folios": [
+    "373",
+    "373"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T321",
+   "src_lines": [
+    16356,
+    16367
+   ],
+   "heading": "Initial Positions and Values",
+   "columns": 2,
+   "rows": 10,
+   "cells": 22,
+   "cell_sha256": "de7c6e61aa8a14c6ca655f6a0b08b378b7f9730128be3562c2d1eb7b922590ff",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    384,
+    385
+   ],
+   "folios": [
+    "378",
+    "379"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T322",
+   "src_lines": [
+    16521,
+    16531
+   ],
+   "heading": "B.1 Basic Mode At a Glance",
+   "columns": 2,
+   "rows": 9,
+   "cells": 20,
+   "cell_sha256": "90a82b70af3ba68dd83c540c6960e5f46e5c3aeccb6ff38a27767c9e0b01e874",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    390,
+    390
+   ],
+   "folios": [
+    "384",
+    "384"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T323",
+   "src_lines": [
+    17128,
+    17142
+   ],
+   "heading": "Quick Reference Index",
+   "columns": 2,
+   "rows": 13,
+   "cells": 28,
+   "cell_sha256": "784655bf1fd42ad4c6603a45a5192c62abe53c5a60c148a292ea24cf2bc53bde",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    405,
+    405
+   ],
+   "folios": [
+    "399",
+    "399"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T324",
+   "src_lines": [
+    17197,
+    17210
+   ],
+   "heading": "C.2 Core Terms and Abbreviations",
+   "columns": 2,
+   "rows": 12,
+   "cells": 26,
+   "cell_sha256": "ee287870c752a52525e8a7dae180e4427a3fed9093da05f139bc0b57f194061d",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    406,
+    406
+   ],
+   "folios": [
+    "400",
+    "400"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T325",
+   "src_lines": [
+    17220,
+    17238
+   ],
+   "heading": "C.3 Conditions Summary",
+   "columns": 3,
+   "rows": 17,
+   "cells": 54,
+   "cell_sha256": "4758d8e2e06d9bf5de34933c551e9c799d5b5e685fcd5424e62549a6b7ea8b1a",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    406,
+    408
+   ],
+   "folios": [
+    "400",
+    "402"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T326",
+   "src_lines": [
+    17246,
+    17261
+   ],
+   "heading": "C.4 Actions Summary",
+   "columns": 3,
+   "rows": 14,
+   "cells": 45,
+   "cell_sha256": "55610dbedbea610e35498483a6c43ebf9c4e27f8fae3ba9830b68420ac172701",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    408,
+    408
+   ],
+   "folios": [
+    "402",
+    "402"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T327",
+   "src_lines": [
+    17267,
+    17272
+   ],
+   "heading": "C.5 Reactions Summary",
+   "columns": 4,
+   "rows": 4,
+   "cells": 20,
+   "cell_sha256": "2db06a519ed549d3e08c13d443df6c99ebf9d161a586784b9a6ff238fad7cdc3",
+   "representation": "table",
+   "scope": "full",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    409,
+    410
+   ],
+   "folios": [
+    "403",
+    "404"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T328",
+   "src_lines": [
+    17823,
+    17828
+   ],
+   "heading": "Size and Footprints Summary",
+   "columns": 2,
+   "rows": 4,
+   "cells": 10,
+   "cell_sha256": "89adbec9370713afd5489bce3d2f7648740ae8c216cd256494847ac2d98140ea",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    426,
+    426
+   ],
+   "folios": [
+    "420",
+    "420"
+   ],
+   "multipage": false,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T329",
+   "src_lines": [
+    17851,
+    17863
+   ],
+   "heading": "Universal Actions",
+   "columns": 3,
+   "rows": 11,
+   "cells": 36,
+   "cell_sha256": "63bcb53e2e28b8a21249e3a0d1b331874ab001c03a2c29016818b9f4ba414d60",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    426,
+    427
+   ],
+   "folios": [
+    "420",
+    "421"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T330",
+   "src_lines": [
+    17881,
+    17886
+   ],
+   "heading": "Combat Reactions",
+   "columns": 4,
+   "rows": 4,
+   "cells": 20,
+   "cell_sha256": "c3d347919f33aa01ce2680d94623ef2e89987ddefadacc9fc8de521604bcdb2b",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    427,
+    428
+   ],
+   "folios": [
+    "421",
+    "422"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T331",
+   "src_lines": [
+    17905,
+    17922
+   ],
+   "heading": "Conditions",
+   "columns": 2,
+   "rows": 16,
+   "cells": 34,
+   "cell_sha256": "3134d6636ccfa0373b6c7d6a26aef5aad73dc04965ffe4ea20c28523ddbaf852",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    428,
+    429
+   ],
+   "folios": [
+    "422",
+    "423"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  },
+  {
+   "id": "T332",
+   "src_lines": [
+    17954,
+    17965
+   ],
+   "heading": "C.14 Equipment Quick Reference",
+   "columns": 2,
+   "rows": 10,
+   "cells": 22,
+   "cell_sha256": "c9f7701d8c10a30d21aeed5ffc819126651ae7954d024e24d306c959736e04ae",
+   "representation": "table",
+   "scope": "column",
+   "family": null,
+   "field_map": null,
+   "pdf_pages": [
+    430,
+    431
+   ],
+   "folios": [
+    "424",
+    "425"
+   ],
+   "multipage": true,
+   "reconciliation": "PASS"
+  }
+ ],
+ "note": "Cell-level check: every normalised source cell appears in the PDF text layer within the table's local window (tools/reconcile.py). Repeated headers and card field labels are layout duplication, not source data.",
+ "status": "PASS"
+}

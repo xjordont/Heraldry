@@ -40,7 +40,7 @@ def main():
     src_ok = next(c for c in pf["checks"] if c["check"] == "source_integrity")["status"]
     st["source_integrity"] = src_ok
     st["reconciliation"], _ = run(["tools/reconcile.py", str(cream), "--report", str(QA / "reconciliation.json")], QA / "reconciliation.json")
-    st["reconciliation_digital"], _ = run(["tools/reconcile.py", str(digital), "--report", str(QA / "reconciliation-digital.json")], QA / "reconciliation-digital.json")
+    st["reconciliation_digital"], _ = run(["tools/reconcile.py", str(digital), "--skip-covers", "--report", str(QA / "reconciliation-digital.json")], QA / "reconciliation-digital.json")
     lay, _ = run(["tools/layout_qa.py", str(cream), "--report", str(QA / "layout.json")])
     lj = json.loads((QA / "layout.json").read_text())
     st["layout_detectors"] = "PASS" if not lj["counts"] else "FAIL"
@@ -57,8 +57,15 @@ def main():
     inv = json.loads((ROOT / "production/inventory/tables.json").read_text())
     reps = {t["id"]: t for t in json.loads((ROOT / "production/mappings/tables.json").read_text())}
     pos = {}
-    for m in tquery("<tblpos>"):
+    allpos = tquery("<tblpos>")
+    for m in allpos:
         pos.setdefault(m["id"], []).append(m)
+    starts = {}
+    for m in allpos:
+        if m["edge"] == "s":
+            starts[m["id"]] = starts.get(m["id"], 0) + 1
+    dup = {k: v for k, v in starts.items() if v != 1}
+    st["no_duplicate_tables_figures"] = "PASS" if not dup else "FAIL"
     rows = []
     for t in inv:
         ps = pos.get(t["id"], [])
@@ -112,7 +119,7 @@ def main():
         st["figures_placed"] = "NOT TESTED"
 
     mandatory = ["source_integrity", "reconciliation", "reconciliation_digital", "layout_detectors", "inkjet_checker_cream",
-                 "inkjet_checker_white", "print_supplementary", "xref_audit", "table_audit", "index_audit", "figures_placed"]
+                 "inkjet_checker_white", "print_supplementary", "no_duplicate_tables_figures", "xref_audit", "table_audit", "index_audit", "figures_placed"]
     failed = [k for k in mandatory if st.get(k) != "PASS"]
     out = {"checks": st, "mandatory_failed": failed, "release_gate": "PASS" if not failed else "FAIL",
            "not_covered_here": ["all-page visual inspection (production/qa/visual-review.json)",

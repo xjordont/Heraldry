@@ -1,0 +1,45 @@
+{
+ "pages": {
+  "cream": 435,
+  "white": 435
+ },
+ "substrate_edges": {
+  "cream": [],
+  "white": []
+ },
+ "page_map_identical": true,
+ "page_text_differences": [],
+ "links": {
+  "cream": {
+   "internal_links": 1262,
+   "unresolved_links": 0,
+   "examples": [],
+   "bookmarks": 551,
+   "bookmark_levels": {
+    "1": 15,
+    "2": 134,
+    "3": 402
+   },
+   "bookmarks_bad_target": 0
+  },
+  "white": {
+   "internal_links": 1262,
+   "unresolved_links": 0,
+   "examples": [],
+   "bookmarks": 551,
+   "bookmark_levels": {
+    "1": 15,
+    "2": 134,
+    "3": 402
+   },
+   "bookmarks_bad_target": 0
+  }
+ },
+ "rasters": [],
+ "page_labels_sample": [
+  "ageLabeli",
+  "ageLabel212",
+  "ageLabel429"
+ ],
+ "status": "PASS"
+}

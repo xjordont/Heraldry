@@ -17,3 +17,4 @@ references/private/
 # Generated build intermediates (reproducible via `make`)
 build/
 typst/content.typ
+figures/src/test/

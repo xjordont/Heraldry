@@ -1,0 +1,24 @@
+{
+ "checks": {
+  "source_preflight": "PASS",
+  "source_integrity": "PASS",
+  "reconciliation": "PASS",
+  "reconciliation_digital": "PASS",
+  "layout_detectors": "PASS",
+  "inkjet_checker_cream": "PASS",
+  "inkjet_checker_white": "PASS",
+  "print_supplementary": "PASS",
+  "xref_audit": "PASS",
+  "no_duplicate_tables_figures": "PASS",
+  "table_audit": "PASS",
+  "index_audit": "PASS",
+  "figures_placed": "PASS"
+ },
+ "mandatory_failed": [],
+ "release_gate": "PASS",
+ "not_covered_here": [
+  "all-page visual inspection (production/qa/visual-review.json)",
+  "diagram semantic review (figures/manifest.json)",
+  "physical inkjet proof: NOT TESTED"
+ ]
+}

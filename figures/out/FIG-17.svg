@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="338.8pt" viewBox="0 0 504 338.8">
+<title>Campaign cycle and Town Phase</title>
+<desc>Give a concise campaign/downtime sequence: four phases, Aftermath steps, Town checklist and locations.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="4" width="114" height="22" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="12" cy="15" r="6.6" fill="#fff"/>
+<text x="12" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">1</text>
+<text x="22" y="19" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Expedition</text>
+<text x="110" y="19" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">11.2.1</text>
+<rect x="0" y="29" width="114" height="112.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="5" y="41" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="12" y="41" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">After selecting the Active</text>
+<text x="12" y="51.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party, before generating</text>
+<text x="12" y="62.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the battlefield, each party</text>
+<text x="12" y="72.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">rolls 1d10 on the</text>
+<text x="12" y="83.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Expedition Event Table.</text>
+<text x="5" y="97.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="12" y="97.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Apply the result</text>
+<text x="12" y="108.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">immediately unless it</text>
+<text x="12" y="118.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">specifies a later timing.</text>
+<line x1="115.5" y1="15" x2="122.5" y2="15" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="128.5,15 121.5,11.8 121.5,18.2" fill="#000"/>
+<rect x="130" y="4" width="114" height="22" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="142" cy="15" r="6.6" fill="#fff"/>
+<text x="142" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">2</text>
+<text x="152" y="19" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Skirmish</text>
+<text x="240" y="19" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">11.2.2</text>
+<rect x="130" y="29" width="114" height="112.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="135" y="41" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="142" y="41" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Generate the battlefield,</text>
+<text x="142" y="51.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">deploy forces and resolve</text>
+<text x="142" y="62.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the adventure using the</text>
+<text x="142" y="72.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">scenario rules in Section</text>
+<text x="142" y="83.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">10.</text>
+<line x1="245.5" y1="15" x2="252.5" y2="15" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="258.5,15 251.5,11.8 251.5,18.2" fill="#000"/>
+<rect x="260" y="4" width="114" height="22" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="272" cy="15" r="6.6" fill="#fff"/>
+<text x="272" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">3</text>
+<text x="282" y="19" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Aftermath</text>
+<text x="370" y="19" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">11.2.3</text>
+<rect x="260" y="29" width="114" height="112.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="265" y="41" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="272" y="41" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 1: secure Coins and</text>
+<text x="272" y="51.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">loot.</text>
+<text x="265" y="65.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="272" y="65.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 2: resolve the Fallen.</text>
+<text x="265" y="79.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="272" y="79.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 3: Journey Home.</text>
+<text x="272" y="90.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Roll 1d20 on the</text>
+<text x="272" y="101" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">completed Climate's</text>
+<text x="272" y="111.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Journey Table and apply</text>
+<text x="272" y="122.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">it.</text>
+<line x1="375.5" y1="15" x2="382.5" y2="15" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="388.5,15 381.5,11.8 381.5,18.2" fill="#000"/>
+<rect x="390" y="4" width="114" height="22" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="402" cy="15" r="6.6" fill="#fff"/>
+<text x="402" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">4</text>
+<text x="412" y="19" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Town</text>
+<text x="500" y="19" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">11.2.4</text>
+<rect x="390" y="29" width="114" height="112.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<text x="395" y="41" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="402" y="41" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">The party receives 4 Town</text>
+<text x="402" y="51.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Action Points (TAP), or the</text>
+<text x="402" y="62.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">amount a Journey result</text>
+<text x="402" y="72.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">sets.</text>
+<text x="395" y="86.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
+<text x="402" y="86.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Spend TAP on Town</text>
+<text x="402" y="97.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">actions; unspent TAP are</text>
+<text x="402" y="108.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">lost at the end of the</text>
+<text x="402" y="118.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">phase unless a rule says</text>
+<text x="402" y="129.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">otherwise.</text>
+<line x1="447" y1="141.4" x2="447" y2="151.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<line x1="447" y1="151.4" x2="57" y2="151.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<line x1="57" y1="151.4" x2="57" y2="143.4" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="57,141.4 53.6,148.4 60.4,148.4" fill="#000"/>
+<rect x="61.6" y="146.68" width="380.81" height="10.89" fill="#fff"/>
+<text x="63.4" y="154.6" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">After every adventure, win or lose, resolve Aftermath and Town unless a rule says otherwise (11.2)</text>
+<line x1="0" y1="167.4" x2="504" y2="167.4" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
+<rect x="0" y="173.4" width="13" height="13" fill="#000"/>
+<text x="6.5" y="183.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="183.8" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Town Phase checklist (11.2.4)</text>
+<rect x="262" y="173.4" width="13" height="13" fill="#000"/>
+<text x="268.5" y="183.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="280" y="183.8" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Town locations</text>
+<circle cx="6.6" cy="198.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="6.6" y="201.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="19.2" y="199.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Confirm current Storage, Treasury, roster status and any</text>
+<text x="19.2" y="209.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">lingering injuries.</text>
+<circle cx="6.6" cy="222.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="6.6" y="225.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="19.2" y="223.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve start-of-Town effects, then gain 4 TAP (or the</text>
+<text x="19.2" y="233.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">modified amount).</text>
+<circle cx="6.6" cy="246.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="6.6" y="249.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="19.2" y="247.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Spend TAP on legal Town actions in any order.</text>
+<circle cx="6.6" cy="262.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="6.6" y="265.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+<text x="19.2" y="263.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Pay all required coin costs as each Town action resolves.</text>
+<circle cx="6.6" cy="278.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="6.6" y="282.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
+<text x="19.2" y="279.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Update Hero sheets, known Powers, equipped items,</text>
+<text x="19.2" y="290.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">pending commissions, Storage and Stronghold progress.</text>
+<circle cx="6.6" cy="302.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="6.6" y="306.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">6</text>
+<text x="19.2" y="303.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Confirm the party's legal Roster and Active Party before the</text>
+<text x="19.2" y="314.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">next adventure.</text>
+<rect x="262" y="193.4" width="242" height="15.6" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2"/>
+<text x="266" y="203.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">The Grand Hall:</tspan><tspan font-weight="400"> trade, brokerage, commissions and fencing</tspan></text>
+<rect x="262" y="212" width="242" height="26.2" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2"/>
+<text x="266" y="222" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">The Chapel:</tspan><tspan font-weight="400"> restores the injured, removes afflictions, petitions</tspan></text>
+<text x="266" y="232.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">for miracles</text>
+<rect x="262" y="241.2" width="242" height="15.6" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2"/>
+<text x="266" y="251.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">The Arcane Spire:</tspan><tspan font-weight="400"> researches Powers and copies scrolls</tspan></text>
+<rect x="262" y="259.8" width="242" height="26.2" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2"/>
+<text x="266" y="269.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">The Training Grounds:</tspan><tspan font-weight="400"> retrains veterans and sharpens</tspan></text>
+<text x="266" y="280.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">technique</text>
+<rect x="262" y="289" width="242" height="15.6" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2"/>
+<text x="266" y="299" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">The Ironworks:</tspan><tspan font-weight="400"> improves gear and reforges prized equipment</tspan></text>
+<rect x="262" y="307.6" width="242" height="26.2" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2"/>
+<text x="266" y="317.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">The Guild of Keys:</tspan><tspan font-weight="400"> manages contracts, maps, logistics and</tspan></text>
+<text x="266" y="328.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">black-market routes</text>
+</svg>

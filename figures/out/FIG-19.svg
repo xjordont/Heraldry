@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="360.6pt" viewBox="0 0 504 360.6">
+<title>Basic Mode: The Courier's Strongbox setup and an example score</title>
+<desc>Show the Appendix B setup constraints (zones, Monster Entry band, terrain types) and one source-supported carrying and scoring example.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="13" height="13" fill="#000"/>
+<text x="6.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">The Courier's Strongbox (B.6)</text>
+<rect x="4" y="24" width="168" height="168" fill="#fff" stroke="#000" stroke-width="1.1"/>
+<rect x="4" y="24" width="168" height="28" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.5 2"/>
+<rect x="4" y="164" width="168" height="28" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.5 2"/>
+<rect x="4" y="97.5" width="168" height="21" fill="#fff"/>
+<line x1="4" y1="97.5" x2="172" y2="97.5" stroke="#8c8c8c" stroke-width="0.7" stroke-linecap="butt" stroke-dasharray="6 3"/>
+<line x1="4" y1="118.5" x2="172" y2="118.5" stroke="#8c8c8c" stroke-width="0.7" stroke-linecap="butt" stroke-dasharray="6 3"/>
+<line x1="4" y1="108" x2="172" y2="108" stroke="#8c8c8c" stroke-width="0.8" stroke-linecap="butt" stroke-dasharray="1 3"/>
+<rect x="13.19" y="98.08" width="21.62" height="10.89" fill="#fff"/>
+<text x="14.99" y="106" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">road</text>
+<rect x="95" y="76.5" width="21" height="21" fill="#4a4a4a" stroke="#000" stroke-width="0.9"/>
+<rect x="60" y="115" width="21" height="21" fill="url(#p-imp)" stroke="#000" stroke-width="0.9"/>
+<rect x="25" y="66" width="21" height="21" fill="url(#p-cover)" stroke="#000" stroke-width="0.9"/>
+<rect x="130" y="62.5" width="21" height="21" fill="url(#p-cover)" stroke="#000" stroke-width="0.9"/>
+<rect x="25" y="132.5" width="21" height="21" fill="url(#p-cover)" stroke="#000" stroke-width="0.9"/>
+<rect x="130" y="129" width="21" height="21" fill="url(#p-cover)" stroke="#000" stroke-width="0.9"/>
+<circle cx="88" cy="108" r="35" fill="none" stroke="#8c8c8c" stroke-width="0.8" stroke-dasharray="2 2.5"/>
+<circle cx="88" cy="108" r="49" fill="none" stroke="#8c8c8c" stroke-width="0.8" stroke-dasharray="2 2.5"/>
+<polygon points="136.05,108 133.02,113.24 126.98,113.24 123.95,108 126.98,102.76 133.02,102.76" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="141,104 145,108 141,112 137,108" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="139" y1="108" x2="143" y2="108" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="141" y1="106" x2="141" y2="110" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<polygon points="73.05,71.63 70.02,76.86 63.98,76.86 60.95,71.63 63.98,66.39 70.02,66.39" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="78,67.63 82,71.63 78,75.63 74,71.63" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="76" y1="71.63" x2="80" y2="71.63" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="78" y1="69.63" x2="78" y2="73.63" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<polygon points="73.05,144.37 70.02,149.61 63.98,149.61 60.95,144.37 63.98,139.14 70.02,139.14" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="78,140.37 82,144.37 78,148.37 74,144.37" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="76" y1="144.37" x2="80" y2="144.37" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="78" y1="142.37" x2="78" y2="146.37" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<rect x="82.05" y="103.45" width="11.9" height="9.1" fill="#d9d9d9" stroke="#000" stroke-width="1"/>
+<line x1="82.05" y1="107.3" x2="93.95" y2="107.3" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<circle cx="53" cy="38" r="4.6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="53" cy="178" r="4.6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="53" cy="178" r="1.6" fill="#000"/>
+<circle cx="88" cy="38" r="4.6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="88" cy="178" r="4.6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="88" cy="178" r="1.6" fill="#000"/>
+<circle cx="123" cy="38" r="4.6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="123" cy="178" r="4.6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="123" cy="178" r="1.6" fill="#000"/>
+<text x="4" y="203" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">24"×24" battlefield, 7 pt per inch. Dashed rings</text>
+<text x="4" y="213.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">mark 5" and 7" from the centre, the band for</text>
+<text x="4" y="223.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster Entry markers (3 drawn, at least 4" apart).</text>
+<text x="4" y="234.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Terrain positions and the road are schematic.</text>
+<text x="0" y="256.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
+<circle cx="31.88" cy="256.6" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="48.88" y="259.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">one side</text>
+<circle cx="99.39" cy="256.6" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="99.39" cy="256.6" r="1.68" fill="#000"/>
+<text x="116.39" y="259.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">other side</text>
+<polygon points="15.48,271.6 12.24,277.21 5.76,277.21 2.52,271.6 5.76,265.99 12.24,265.99" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<text x="26" y="274.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster group (Resting)</text>
+<rect x="3.48" y="282.38" width="11.05" height="8.45" fill="#d9d9d9" stroke="#000" stroke-width="1"/>
+<line x1="3.48" y1="285.95" x2="14.52" y2="285.95" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<text x="26" y="289.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Strongbox</text>
+<polygon points="84.18,280.6 90.18,286.6 84.18,292.6 78.18,286.6" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
+<line x1="81.18" y1="286.6" x2="87.18" y2="286.6" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="84.18" y1="283.6" x2="84.18" y2="289.6" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<text x="101.18" y="289.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Satchel</text>
+<rect x="2" y="296.1" width="16" height="11" fill="#4a4a4a" stroke="#000" stroke-width="0.8"/>
+<text x="26" y="304.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">ruin: Blocking</text>
+<rect x="2" y="311.1" width="16" height="11" fill="url(#p-imp)" stroke="#000" stroke-width="0.8"/>
+<text x="26" y="319.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">cart or low wall: Impassable</text>
+<rect x="2" y="326.1" width="16" height="11" fill="url(#p-cover)" stroke="#000" stroke-width="0.8"/>
+<text x="26" y="334.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">other piece: Cover</text>
+<rect x="1" y="341.1" width="17" height="11" fill="#f0f0f0" stroke="#000" stroke-width="0.8" stroke-dasharray="3 2"/>
+<text x="26" y="349.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">within 4" of an edge</text>
+<rect x="204" y="0" width="13" height="13" fill="#000"/>
+<text x="210.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="222" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Placement rules and an example score</text>
+<circle cx="210.6" cy="27" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="210.6" y="30.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="223.2" y="28" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Terrain:</tspan><tspan font-weight="400"> a road across the centre; 2 ruins, carts or low walls within 4" of</tspan></text>
+<text x="223.2" y="38.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the centre; 4 more 3"×3" pieces, one in each quarter. Ruins are Blocking,</text>
+<text x="223.2" y="49" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">carts and low walls Impassable, other pieces Cover.</text>
+<circle cx="210.6" cy="62.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="210.6" y="65.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="223.2" y="63.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Deployment:</tspan><tspan font-weight="400"> each side deploys within 4" of opposite battlefield edges.</tspan></text>
+<circle cx="210.6" cy="79.7" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="210.6" y="83" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="223.2" y="80.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Monster Entry markers:</tspan><tspan font-weight="400"> 3 markers around the centre, each 5–7" from it,</tspan></text>
+<text x="223.2" y="91.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">at least 4" from each other and outside both deployment zones. One</text>
+<text x="223.2" y="101.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">complete group (Goblins, Skeleton Warriors, Bandits) and 1 Satchel at</text>
+<text x="223.2" y="112.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">each marker; every group begins Resting.</text>
+<circle cx="210.6" cy="125.7" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="210.6" y="129" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+<text x="223.2" y="126.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Treasure:</tspan><tspan font-weight="400"> the Strongbox (12c) at the centre; 3 Satchels (4c each). A carrier</tspan></text>
+<text x="223.2" y="137.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">of the Strongbox has −2" Speed, to a minimum of 1".</text>
+<circle cx="210.6" cy="150.7" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="210.6" y="154" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
+<text x="223.2" y="151.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Extraction:</tspan><tspan font-weight="400"> leave the battlefield through your own deployment edge; the</tspan></text>
+<text x="223.2" y="162.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">carried treasure's Coin Value is added to your score.</text>
+<text x="204" y="180.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Example (assumed): Ironscar, SPD 4", carries the Strongbox from the centre</text>
+<rect x="204" y="184.7" width="300" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="208" y="196.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Speed carrying the Strongbox</text>
+<text x="500" y="196.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">4" − 2" = 2" per Move</text>
+<rect x="204" y="200.7" width="300" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="208" y="212.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Centre to an edge, open ground</text>
+<text x="500" y="212.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">12"; 12" ÷ 2" = at least 6 Moves</text>
+<rect x="204" y="216.7" width="300" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="208" y="228.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Score: Strongbox + 1 Satchel + 2 Goblins + 1 Bandit</text>
+<text x="500" y="228.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">12 + 4 + 2 + 3 = 21c</text>
+<text x="204" y="244.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Picking up the Strongbox also costs Interact [1 AP]. Coin Values: Goblin 1c,</text>
+<text x="204" y="255.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Skeleton Warrior 1c, Bandit 3c (B.5). The game ends after Round 6; the higher</text>
+<text x="204" y="265.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">score wins (B.6).</text>
+</svg>

@@ -12,9 +12,9 @@ TARGETS = [
     ("Chapter opening", "2.1 Core Terms"),
     ("Two-column rules + worked example", "Example: An effect pushes a Skeleton"),
     ("Facing page: sustained procedure", "3.1 Overview of a Round"),
-    ("Short random-result table", "Random Background Table (d20)"),
+    ("Short random-result table", "TBL:T020"),
     ("Numeric equipment table (multi-page, repeated header)", "7.8 Melee Weapons"),
-    ("Widest source table as labelled entries (T082, 12 columns)", "Tier 5 Legendary Artifact Armour and Shields"),
+    ("Widest source table as labelled entries (T082, 12 columns)", "TBL:T082"),
     ("Longest prose cells / long-description table", "Specialist Hireling Roster"),
     ("Monster profiles", "Giant Tarantula [Skirmisher]"),
     ("Scenario with canonical scaling fields", "Scenario 2: The Whispering Grove"),
@@ -29,7 +29,12 @@ def main():
     doc = pymupdf.open(src)
     start = 6
     picks = []
+    audit = json.loads((ROOT / "production/qa/table-audit.json").read_text())
+    tpages = {r["id"]: r["pdf_pages"][0] - 1 for r in audit["rows"] if r["pdf_pages"]}
     for purpose, needle in TARGETS:
+        if needle.startswith("TBL:"):
+            picks.append((purpose, tpages.get(needle[4:])))
+            continue
         for i in range(start, len(doc)):
             if doc[i].search_for(needle):
                 picks.append((purpose, i))
@@ -53,8 +58,10 @@ def main():
     dst = ROOT / "dist/specimen/Heraldry_RC484_specimen.pdf"
     dst.parent.mkdir(parents=True, exist_ok=True)
     out.save(dst, garbage=3, deflate=True)
+    from pypdf import PdfReader
+    labels = PdfReader(str(src)).page_labels
     manifest = [{"purpose": p, "book_page_index": (i + 1 if i is not None else None),
-                 "folio": (doc[i].get_label() if i is not None else None)} for p, i in picks]
+                 "folio": (labels[i] if i is not None else None)} for p, i in picks]
     (ROOT / "dist/specimen/specimen_pages.json").write_text(json.dumps(manifest, indent=1))
     # overscan stress renders (1.03 centred scale, clipped to sheet)
     od = ROOT / "build/overscan"

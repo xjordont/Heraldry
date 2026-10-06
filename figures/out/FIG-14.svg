@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="323.6pt" viewBox="0 0 504 323.6">
+<title>Party deployment configurations II</title>
+<desc>Deployment patterns with extra spatial conditions: Trail, shared short edge, central Safe Zone, and short edges across a Ravine.</desc>
+<defs>
+<pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
+<pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
+<pattern id="p-imp" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><path d="M0.4 0V2.4" stroke="#000" stroke-width="0.95" fill="none"/></pattern>
+<pattern id="p-mon" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#000" stroke-width="1" fill="none"/></pattern>
+<pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
+</defs>
+<rect x="0" y="0" width="13" height="13" fill="#000"/>
+<text x="6.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">A</text>
+<text x="18" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Trail</text>
+<rect x="4" y="22" width="118.8" height="118.8" fill="#fff" stroke="#000" stroke-width="1.1"/>
+<rect x="4" y="22" width="118.8" height="19.8" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.5 2"/>
+<rect x="4" y="121" width="118.8" height="19.8" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.5 2"/>
+<rect x="57.62" y="22" width="11.55" height="118.8" fill="#fff"/>
+<line x1="57.62" y1="22" x2="57.62" y2="140.8" stroke="#000" stroke-width="1.3" stroke-linecap="butt"/>
+<line x1="69.17" y1="22" x2="69.17" y2="140.8" stroke="#000" stroke-width="1.3" stroke-linecap="butt"/>
+<circle cx="63.4" cy="30.58" r="3" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="63.4" cy="38.5" r="3" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="30.4" cy="33.88" r="3" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="63.4" cy="132.22" r="3" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="63.4" cy="132.22" r="1.6" fill="#000"/>
+<circle cx="63.4" cy="124.3" r="3" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="63.4" cy="124.3" r="1.6" fill="#000"/>
+<circle cx="96.4" cy="128.92" r="3" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="96.4" cy="128.92" r="1.6" fill="#000"/>
+<rect x="88.71" y="76.48" width="21.99" height="10.89" fill="#fff"/>
+<text x="90.51" y="84.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Trail</text>
+<text x="0" y="151.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">The Setup Roll-off winner</text>
+<text x="0" y="162.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">chooses the short edge where</text>
+<text x="0" y="172.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the Trail enters and deploys</text>
+<text x="0" y="183" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">within 6" of it with at least two</text>
+<text x="0" y="193.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Heroes on the Trail. The other</text>
+<text x="0" y="203.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">party does the same at the</text>
+<text x="0" y="214.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">opposite short edge. The Trail</text>
+<text x="0" y="224.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">is 3–4" wide and runs the full</text>
+<text x="0" y="235" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">length.</text>
+<rect x="126" y="0" width="13" height="13" fill="#000"/>
+<text x="132.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
+<text x="144" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">One shared edge</text>
+<rect x="130" y="22" width="118.8" height="118.8" fill="#fff" stroke="#000" stroke-width="1.1"/>
+<rect x="130" y="22" width="118.8" height="26.4" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.5 2"/>
+<rect x="130" y="68.2" width="118.8" height="26.4" fill="url(#p-imp)" stroke="#000" stroke-width="0.9"/>
+<rect x="157.95" y="76.88" width="62.89" height="10.89" fill="#fff"/>
+<text x="159.75" y="84.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Chasm 8" wide</text>
+<circle cx="149.8" cy="29.92" r="3" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="169.6" cy="29.92" r="3" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="199.3" cy="29.92" r="3" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="199.3" cy="29.92" r="1.6" fill="#000"/>
+<circle cx="219.1" cy="29.92" r="3" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="219.1" cy="29.92" r="1.6" fill="#000"/>
+<line x1="171.25" y1="40.48" x2="191.05" y2="40.48" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="171.25" y1="37.98" x2="171.25" y2="42.98" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="191.05" y1="37.98" x2="191.05" y2="42.98" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="174.56" y="35.76" width="13.19" height="10.89" fill="#fff"/>
+<text x="176.36" y="43.68" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
+<line x1="238.9" y1="22" x2="238.9" y2="48.4" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="236.4" y1="22" x2="241.4" y2="22" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="236.4" y1="48.4" x2="241.4" y2="48.4" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="232.31" y="30.48" width="13.19" height="10.89" fill="#fff"/>
+<text x="234.11" y="38.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">8"</text>
+<text x="126" y="151.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Both parties deploy along the</text>
+<text x="126" y="162.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">same short edge (the start side</text>
+<text x="126" y="172.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">of the Chasm) within 8" of it,</text>
+<text x="126" y="183" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">placing Heroes alternately</text>
+<text x="126" y="193.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">starting with the party that lost</text>
+<text x="126" y="203.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the Setup Roll-off. No Hero is</text>
+<text x="126" y="214.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">placed within 6" of an opposing</text>
+<text x="126" y="224.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hero.</text>
+<rect x="252" y="0" width="13" height="13" fill="#000"/>
+<text x="258.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">C</text>
+<text x="270" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Central Safe Zone</text>
+<rect x="256" y="22" width="118.8" height="118.8" fill="#fff" stroke="#000" stroke-width="1.1" stroke-dasharray="7 3"/>
+<rect x="289" y="55" width="52.8" height="52.8" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.5 2"/>
+<circle cx="295.6" cy="68.2" r="3.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="295.6" cy="94.6" r="3.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="331.9" cy="68.2" r="3.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="331.9" cy="68.2" r="1.6" fill="#000"/>
+<circle cx="331.9" cy="94.6" r="3.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="331.9" cy="94.6" r="1.6" fill="#000"/>
+<line x1="298.9" y1="81.4" x2="318.7" y2="81.4" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="298.9" y1="78.9" x2="298.9" y2="83.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="318.7" y1="78.9" x2="318.7" y2="83.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="293.63" y="76.68" width="30.33" height="10.89" fill="#fff"/>
+<text x="295.43" y="84.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">min 3"</text>
+<text x="315.4" y="136.8" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#333" text-anchor="middle">centre detail</text>
+<line x1="289" y1="43.12" x2="341.8" y2="43.12" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="289" y1="40.62" x2="289" y2="45.62" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="341.8" y1="40.62" x2="341.8" y2="45.62" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="308.81" y="38.4" width="13.19" height="10.89" fill="#fff"/>
+<text x="310.61" y="46.32" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">8"</text>
+<rect x="294.12" y="115.72" width="42.55" height="10.89" fill="#fff"/>
+<text x="295.92" y="123.64" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Safe Zone</text>
+<text x="252" y="151.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Both parties deploy inside a</text>
+<text x="252" y="162.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">central 8"×8" Safe Zone (shown</text>
+<text x="252" y="172.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">enlarged: detail of the centre,</text>
+<text x="252" y="183" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">6.6 pt per inch), placing Heroes</text>
+<text x="252" y="193.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">alternately starting with the</text>
+<text x="252" y="203.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">party that lost the Setup</text>
+<text x="252" y="214.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Roll-off. No Hero is placed</text>
+<text x="252" y="224.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">within 3" of an opposing Hero.</text>
+<rect x="378" y="0" width="13" height="13" fill="#000"/>
+<text x="384.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">D</text>
+<text x="396" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Across a Ravine</text>
+<rect x="382" y="22" width="118.8" height="118.8" fill="#fff" stroke="#000" stroke-width="1.1"/>
+<rect x="382" y="22" width="118.8" height="19.8" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.5 2"/>
+<rect x="382" y="121" width="118.8" height="19.8" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.5 2"/>
+<rect x="382" y="69.85" width="118.8" height="23.1" fill="url(#p-diff)" stroke="#000" stroke-width="0.9"/>
+<rect x="405.2" y="76.88" width="72.41" height="10.89" fill="#fff"/>
+<text x="407" y="84.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Ravine 6–8" wide</text>
+<circle cx="415" cy="31.9" r="3.8" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="441.4" cy="31.9" r="3.8" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="467.8" cy="31.9" r="3.8" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="415" cy="130.9" r="3.8" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="415" cy="130.9" r="1.6" fill="#000"/>
+<circle cx="441.4" cy="130.9" r="3.8" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="441.4" cy="130.9" r="1.6" fill="#000"/>
+<circle cx="467.8" cy="130.9" r="3.8" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="467.8" cy="130.9" r="1.6" fill="#000"/>
+<line x1="487.6" y1="22" x2="487.6" y2="41.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="485.1" y1="22" x2="490.1" y2="22" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="485.1" y1="41.8" x2="490.1" y2="41.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="481.01" y="27.18" width="13.19" height="10.89" fill="#fff"/>
+<text x="482.81" y="35.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
+<line x1="487.6" y1="121" x2="487.6" y2="140.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="485.1" y1="121" x2="490.1" y2="121" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="485.1" y1="140.8" x2="490.1" y2="140.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="481.01" y="126.18" width="13.19" height="10.89" fill="#fff"/>
+<text x="482.81" y="134.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
+<text x="378" y="151.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Opposite short edges, within 6"</text>
+<text x="378" y="162.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">of the edge, on higher ground</text>
+<text x="378" y="172.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">outside the Ravine (6–8" wide,</text>
+<text x="378" y="183" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">perpendicular to the long</text>
+<text x="378" y="193.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">edges).</text>
+<text x="0" y="259.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
+<circle cx="31.88" cy="259.4" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="48.88" y="262.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A Heroes (enlarged)</text>
+<circle cx="163.52" cy="259.4" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="163.52" cy="259.4" r="1.68" fill="#000"/>
+<text x="180.52" y="262.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B Heroes (enlarged)</text>
+<rect x="287.57" y="253.9" width="17" height="11" fill="#f0f0f0" stroke="#000" stroke-width="0.8" stroke-dasharray="3 2"/>
+<text x="312.57" y="262.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">deployment zone</text>
+<rect x="2" y="268.9" width="16" height="11" fill="url(#p-imp)" stroke="#000" stroke-width="0.8"/>
+<text x="26" y="277.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Chasm (Impassable Terrain)</text>
+<rect x="143.24" y="268.9" width="16" height="11" fill="url(#p-diff)" stroke="#000" stroke-width="0.8"/>
+<text x="167.24" y="277.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Ravine floor (Difficult Terrain)</text>
+<text x="0" y="290.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Zones, the Trail, the Chasm and the Ravine are drawn to scale on a 36"×36" battlefield (3.3 pt per inch); Hero markers are enlarged.</text>
+<text x="0" y="300.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Dimension lines show the stated placement limits. Where the source gives a range (Trail 3–4", Ravine 6–8"), a value inside the range is</text>
+<text x="0" y="311.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">drawn and its position is schematic.</text>
+</svg>

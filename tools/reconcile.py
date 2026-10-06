@@ -32,7 +32,7 @@ def norm(s: str) -> str:
     return re.sub(r"([-–—/]) ", r"\1", s)
 
 
-def pdf_stream(pdf):
+def pdf_stream(pdf, skip_covers=False):
     doc = pymupdf.open(pdf)
     parts, page_at = [], []
     bold, ital = [], []
@@ -40,6 +40,8 @@ def pdf_stream(pdf):
     global fonts
     fonts = set()
     for i, page in enumerate(doc):
+        if skip_covers and i in (0, len(doc) - 1):
+            continue   # digital edition covers quote source text (cover copy), not body content
         d = page.get_text("dict")
         for b in d["blocks"]:
             for l in b.get("lines", []):
@@ -115,9 +117,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("pdf")
     ap.add_argument("--report", required=True)
+    ap.add_argument("--skip-covers", action="store_true")
     a = ap.parse_args()
     model = json.loads((ROOT / "build/blocks.json").read_text())
-    text, btext, itext, npages = pdf_stream(a.pdf)
+    text, btext, itext, npages = pdf_stream(a.pdf, a.skip_covers)
     units = collect(model)
     cursor = 0
     res = {"found_in_order": 0, "found_out_of_order": 0, "missing": [], "table_cells": 0, "table_cells_missing": [],
@@ -175,8 +178,22 @@ def main():
             res["em_runs"] += 1
             if r not in itext:
                 res["em_missing"].append({"id": u["id"], "run": r[:60]})
+    # duplicate detection: long text blocks must appear exactly as often as in the source
+    from collections import Counter
+    src_counts = Counter(u["text"] for u in units if u["kind"] == "para" and len(u.get("text", "")) > 60)
+    src_stream = " ".join([u.get("text", "") for u in units] + [c for u in units for c in u.get("cells", [])])
+    # figures are live vector text and may quote the rules they illustrate
+    import html as _html
+    figtxt = norm(" ".join(_html.unescape(x) for f in sorted((ROOT / "figures/out").glob("FIG-*.svg"))
+                           for x in re.findall(r"<text[^>]*>(.*?)</text>", f.read_text(), re.S)))
+    capt = ""
+    pl = ROOT / "figures/placements.json"
+    if pl.exists():
+        capt = norm(" ".join(f["caption"] for v in json.loads(pl.read_text()).values() for f in v))
+    res["duplicated_blocks"] = [{"text": t[:70], "source": src_stream.count(t), "pdf": text.count(t)} for t in src_counts
+                                if text.count(t) > src_stream.count(t) + figtxt.count(t) + capt.count(t)]
     res["units"] = len(units)
-    res["status"] = "PASS" if not res["missing"] and not res["table_cells_missing"] and not res["strong_missing"] and not res["em_missing"] else "FAIL"
+    res["status"] = "PASS" if not res["duplicated_blocks"] and not res["missing"] and not res["table_cells_missing"] and not res["strong_missing"] and not res["em_missing"] else "FAIL"
     res["pdf_pages"] = npages
     allowed = {"SourceSerif4", "SourceSans3", "Cinzel"}
     res["fonts"] = sorted(fonts)

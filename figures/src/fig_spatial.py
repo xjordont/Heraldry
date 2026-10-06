@@ -60,8 +60,8 @@ def fig04():
         mx, my = (a_[0] + b_[0]) / 2, (a_[1] + b_[1]) / 2
         pill(s, mx + (8 if lab != "1" else 0), my + (8 if lab != "1" else -5), lab, 9, 700)
     s.text(g.c(1, 3)[0], g.oy + 4 * K + 11, "source square", 9, 400, "middle")
-    s.text(bx + 4, g.oy + g.height() + 25, "1.5\" + 1.5\" + 1\" = 4\"  (source square not counted)", 9, 700)
-    yy = s.para(bx + 4, g.oy + g.height() + 37, "Orthogonal square = 1\", diagonal square = 1.5\". Count the shortest grid distance. Obstacles do not change it; check LOS, Cover and terrain separately.", 162, 9, lead=10.6)
+    s.text(bx + 4, g.oy + g.height() + 25, "1.5\" + 1.5\" + 1\" = 4\"", 9, 700)
+    yy = s.para(bx + 4, g.oy + g.height() + 37, "Orthogonal square = 1\", diagonal square = 1.5\". Count the shortest grid distance without the source square. Obstacles do not change it; check LOS, Cover and terrain separately.", 162, 9, lead=10.6)
     yb = yy
     # ---------------- Panel C: footprints ----------------
     cx0 = 350
@@ -121,7 +121,7 @@ def fig05():
     arrow(s, x3 + 3, y3 - 3, x5 - 2, y5 + 2, "move", forbidden=True)
     for (cx_, cy_), lab, dx, dy in [((1, 4), "1", 0, -4), ((2, 3), "2.5", 13, 17), ((3, 2), "4", -13, 4), ((4, 2), "5", 0, 18)]:
         pill(s, g.ox + cx_ * C + C / 2 + dx, g.oy + cy_ * C + dy, lab, 9, 700)
-    pill(s, g.ox + 5 * C + 6, g.oy + 1 * C + 14, "6.5", 9, 700)
+    pill(s, g.ox + 5 * C + 6, g.oy + 1 * C + 14, "5.5", 9, 700)
     gy = g.oy + g.height()
     s.text(4, gy + 12, "Running total of movement spent (inches).", 9)
     yy = s.para(4, gy + 24, "Speed 5\": one orthogonal square (1\"), two diagonal squares (1.5\" each) = 4\". One more orthogonal square (1\") is allowed; another diagonal (1.5\") would exceed the 1\" remaining.", 235, 9, lead=10.6)
@@ -211,6 +211,12 @@ def fig06():
             ring = max(abs(c - 2), abs(r - 2))
             s.rect(g.ox + c * K + 0.4, g.oy + r * K + 0.4, K - 0.8, K - 0.8, fill=LIGHT if ring == 1 else PALE, stroke=None)
     grid(s, g.ox, g.oy, 5, 5, K, fill=None)
+    for r in range(5):
+        for c in range(5):
+            if (c, r) in ((2, 2), (3, 1), (0, 4)):
+                continue
+            ring = max(abs(c - 2), abs(r - 2))
+            s.text(g.ox + c * K + K / 2, g.oy + r * K + K / 2 + 3.2, str(ring), 9, 600, "middle", "#444")
     g.token(2, 2, "A", r=7)
     g.token(3, 1, "B", r=7)
     g.token(0, 4, "M", r=6.5)
@@ -224,7 +230,7 @@ def fig06():
     s.rect(g.ox + 5 * K + 8, g.oy + 60, 12, 9, fill=PALE, stroke=INK, sw=0.6)
     s.text(g.ox + 5 * K + 24, g.oy + 68, "within Reach (2 squares)", 9)
     yy = g.oy + 5 * K + 12
-    yy = s.para(4, yy, "**Engaged** = adjacent to at least one enemy: the Party B combatant is adjacent, so both are Engaged. The Monster is within Reach distance but not adjacent, so it does not Engage. Tabletop Mode: melee 1\", Reach 2\". Reach does not change Engagement.", 236, 9, lead=10.6)
+    yy = s.para(4, yy, "**Engaged** = adjacent to at least one enemy: the Party B combatant is adjacent, so both are Engaged. The Monster is within Reach distance but not adjacent, so it does not Engage. Digits give the distance in squares. Tabletop Mode: melee 1\", Reach 2\". Reach does not change Engagement.", 236, 9, lead=10.6)
     ya = yy
     # ---------------- Panel B ----------------
     bx = 262
@@ -249,7 +255,7 @@ def fig06():
         if k == 0:
             callout(s, a[0] + 6, a[1] - 11, 1, 5.6)
     yy = 26 + 3 * K2 + 36
-    yy = s.para(bx, yy, "**Move** away from the Party B combatant's melee distance: that combatant may spend 1 AP on a Reflex Attack (base damage dice with Disadvantage). It resolves at the trigger point (1), before the mover leaves. **Shift** (1\" , 1 AP) and forced movement do not trigger it.", 242, 9, lead=10.6)
+    yy = s.para(bx, yy, "**Move** away from the Party B combatant's melee distance: that combatant may spend 1 AP on a Reflex Attack (base damage dice with Disadvantage). It resolves at the trigger point (1), before the mover leaves. **Shift** (1\", 1 AP) and forced movement do not trigger it.", 242, 9, lead=10.6)
     yb = yy
     y = max(ya, yb) + 6
     y = legend(s, [("A", "Party A"), ("B", "Party B"), ("M", "Monster"), ("lowfill", "adjacent / enemy melee band"), ("palefill", "Reach band"), ("ghost", "starting position"), ("move", "Move / Shift path"), ("step", "step")], 0, y, FULL_W)
@@ -304,7 +310,7 @@ def fig07():
     g4.token(2, 1, "A"); g4.token(5, 2, "M")
     # P5 intervening combatant + Shift
     g5, ox5, oy5 = base(4, "E", "Intervening combatant")
-    g5.token(3, 2, "A")
+    g5.token(2, 2, "A")
     ghost(s, *g5.c(0, 2))
     arrow(s, *g5.c(0, 2), *g5.c(7, 2), "los") if False else None
     # first sight line (from ghost position) crossing the Fighter
@@ -315,7 +321,7 @@ def fig07():
     a2 = g5.c(1, 1)
     s.line(a2[0], a2[1], b[0], b[1], INK, 1.0, dash="4.5 2.8")
     g5.token(1, 1, "A"); g5.token(7, 2, "M")
-    callout(s, g5.pt(1.9, 3.15)[0], g5.pt(1.9, 3.15)[1], 1, 6.0)
+    callout(s, g5.pt(3.8, 3.2)[0], g5.pt(3.8, 3.2)[1], 1, 6.0)
     callout(s, g5.pt(0.35, 1.15)[0], g5.pt(0.35, 1.15)[1], 2, 6.0)
     callout(s, g5.pt(4.6, 1.45)[0], g5.pt(4.6, 1.45)[1], 3, 6.0)
     # P6 Impassable
@@ -430,40 +436,34 @@ def cone_squares(src, length, blocking=()):
 
 def fig08():
     s = Svg(FULL_W)
+    PW, gp = 120, 8
+    K = 16
+    X = [i * (PW + gp) for i in range(4)]
     # ------------- Panel A: template shapes -------------
-    panel_title(s, 0, 0, "A", "Templates (2.7.3)")
-    L = 52
-    # Cone
-    ox, oy = 8, 56
+    panel_title(s, X[0], 0, "A", "Templates (2.7.3)")
+    L = 50
+    ox, oy = X[0] + 8, 58
     s.polygon([(ox, oy), (ox + L, oy - L / 2), (ox + L, oy + L / 2)], fill=PAT["aoe"], stroke=INK, sw=1.0)
     token(s, "A", ox, oy, 5.5)
-    dim(s, ox, oy + L / 2 + 12, ox + L, oy + L / 2 + 12, "X\"", off=-1, side="below")
-    s.text(ox + L / 2, oy - L / 2 - 6, "Cone X\"", 9, 700, "middle")
-    s.text(ox + L + 6, oy + 3, "X\"", 9, 600)
-    # Line
-    ox2, oy2 = 100, 56
+    s.text(ox + 4, oy - L / 2 - 4, "Cone X\"", 9, 700)
+    pill(s, ox + L - 8, oy + 3.4, "X\"", 9, 600)
+    ox2, oy2 = X[0] + 8, 112
     s.rect(ox2, oy2 - 6, L, 12, fill=PAT["aoe"], stroke=INK, sw=1.0)
     token(s, "A", ox2, oy2, 5.5)
-    dim(s, ox2, oy2 + L / 2 + 12, ox2 + L, oy2 + L / 2 + 12, "X\"", off=-1, side="below")
-    s.text(ox2 + L / 2 + 4, oy2 - 12, "Line X\"", 9, 700, "middle")
-    s.text(ox2 + L / 2, oy2 + 22 - 14, "", 9)
-    # Aura
-    ox3, oy3 = 54, 142
-    s.circle(ox3, oy3, 28, fill=PAT["aoe"], stroke=INK, sw=1.0)
+    s.text(ox2 + 4, oy2 - 12, "Line X\"", 9, 700)
+    pill(s, ox2 + L - 8, oy2 + 3.4, "X\"", 9, 600)
+    ox3, oy3 = X[0] + 36, 164
+    s.circle(ox3, oy3, 24, fill=PAT["aoe"], stroke=INK, sw=1.0)
     token(s, "A", ox3, oy3, 5.5)
-    s.line(ox3, oy3, ox3 + 28, oy3, INK, 1.0)
-    pill(s, ox3 + 16, oy3 - 3, "X\"", 9, 600)
-    s.text(ox3, oy3 + 42, "Aura X\"", 9, 700, "middle")
-    yy = s.para(100, 118, "Line: default width 1\"; a line with a stated width but no length is as long as the effect's Range.", 140, 9, lead=10.6)
-    s.text(100, 160 + 0, "", 9)
-    yy = s.para(100, 166, "Tabletop Mode: a combatant is affected if any part of its footprint lies within or touches the boundary.", 140, 9, lead=10.6)
-    s.text(0, yy + 4, "Schematic — not to scale", 9, 600, "start", "#333")
-    ya = yy + 6
+    s.line(ox3, oy3, ox3 + 24, oy3, INK, 1.0)
+    pill(s, ox3 + 13, oy3 - 3, "X\"", 9, 600)
+    s.text(ox3 + 28, oy3 - 20, "Aura X\"", 9, 700)
+    yy = s.para(X[0], 200, "Line width is 1\" unless listed. Tabletop: affected if any part of the footprint is within or touches the boundary.", PW, 9, lead=10.4)
+    s.text(X[0], yy + 3, "Schematic \u2014 not to scale", 9, 600, "start", "#333")
+    ya = yy + 5
     # ------------- Panel B: aura grid -------------
-    K = 16
-    bx = 262
-    panel_title(s, bx, 0, "B", "Grid Mode: Aura 2\" (example)")
-    g = Grid(s, bx + 4, 24, 7, 7, K)
+    panel_title(s, X[1], 0, "B", "Grid: Aura 2\"")
+    g = Grid(s, X[1] + 4, 24, 7, 7, K)
     src = (3, 3)
     sq = aura_squares(src, 2)
     for (c, r), _ in sq:
@@ -471,21 +471,10 @@ def fig08():
     grid(s, g.ox, g.oy, 7, 7, K, fill=None)
     g.token(3, 3, "A", r=5.5)
     n_sq = len(sq)
-    s.text(bx + 4 + 7 * K + 8, g.oy + 12, "Squares whose centre lies", 9)
-    s.text(bx + 4 + 7 * K + 8, g.oy + 23, "within 2\" of the source", 9)
-    s.text(bx + 4 + 7 * K + 8, g.oy + 34, "square's centre (a tie at", 9)
-    s.text(bx + 4 + 7 * K + 8, g.oy + 45, "exactly 2\" is included),", 9)
-    s.text(bx + 4 + 7 * K + 8, g.oy + 56, "plus the source square:", 9)
-    s.text(bx + 4 + 7 * K + 8, g.oy + 68, "%d squares." % n_sq, 9, 700)
-    yb = g.oy + 7 * K + 4
-    # ------------- row 2 -------------
-    y = max(ya, yb) + 6
-    s.line(0, y, FULL_W, y, MID, 0.6)
-    y += 6
+    yb = s.para(X[1], g.oy + 7 * K + 12, "Squares whose centre lies within 2\" of the source square's centre (a tie at exactly 2\" is included), including the source square: **%d squares**." % n_sq, PW, 9, lead=10.4)
     # ------------- Panel C: cone grid -------------
-    panel_title(s, 0, y, "C", "Grid Mode: Cone 3\" (example)")
-    gy0 = y + 24
-    g = Grid(s, 4, gy0, 6, 5, K)
+    panel_title(s, X[2], 0, "C", "Grid: Cone 3\"")
+    g = Grid(s, X[2] + 4, 24, 6, 5, K)
     src = (0, 2)
     cs = cone_squares(src, 3)
     for (c, r), blk in cs:
@@ -494,16 +483,10 @@ def fig08():
     ox_, oy_ = g.c(*src)
     s.polygon([(ox_, oy_), (ox_ + 3 * K, oy_ - 1.5 * K), (ox_ + 3 * K, oy_ + 1.5 * K)], fill="none", stroke=INK, sw=1.1)
     g.token(0, 2, "A", r=5.5)
-    s.text(4 + 6 * K + 8, gy0 + 12, "Squares whose centre lies", 9)
-    s.text(4 + 6 * K + 8, gy0 + 23, "within the cone (ties", 9)
-    s.text(4 + 6 * K + 8, gy0 + 34, "rounded outward):", 9)
-    s.text(4 + 6 * K + 8, gy0 + 46, "%d squares," % len(cs), 9, 700)
-    s.text(4 + 6 * K + 8, gy0 + 57, "beyond the origin square.", 9)
-    yc = gy0 + 5 * K + 4
+    yc = s.para(X[2], g.oy + 5 * K + 12, "Squares whose centre lies within the cone (ties rounded outward): **%d squares** beyond the origin square." % len(cs), PW, 9, lead=10.4)
     # ------------- Panel D: blocked -------------
-    bx = 262
-    panel_title(s, bx, y, "D", "Blocking Terrain stops an area (2.7.3)")
-    g = Grid(s, bx + 4, gy0, 6, 5, K)
+    panel_title(s, X[3], 0, "D", "Blocked by terrain")
+    g = Grid(s, X[3] + 4, 24, 6, 5, K)
     blocking = [(2, 3)]
     cs2 = cone_squares(src, 3, blocking)
     for (c, r), blk in cs2:
@@ -511,21 +494,15 @@ def fig08():
             s.rect(g.ox + c * K + 0.5, g.oy + r * K + 0.5, K - 1, K - 1, fill=PAT["aoe"], stroke=None)
     grid(s, g.ox, g.oy, 6, 5, K, fill=None)
     ox_, oy_ = g.c(*src)
-    s.polygon([(ox_, oy_), (ox_ + 3 * K, oy_ - 1.5 * K), (ox_ + 3 * K, oy_ + 1.5 * K)], fill="none", stroke=INK, sw=1.1, )
+    s.polygon([(ox_, oy_), (ox_ + 3 * K, oy_ - 1.5 * K), (ox_ + 3 * K, oy_ + 1.5 * K)], fill="none", stroke=INK, sw=1.1)
     for (c, r) in blocking:
         g.fillcell(c, r, "blocking")
     for (c, r), blk in cs2:
         if blk:
             xmark(s, *g.c(c, r), 4.0, 1.5, halo=True)
     g.token(0, 2, "A", r=5.5)
-    n_aff = sum(1 for _, b in cs2 if not b)
-    s.text(bx + 4 + 6 * K + 8, gy0 + 12, "A square is unaffected if", 9)
-    s.text(bx + 4 + 6 * K + 8, gy0 + 23, "the sight line from the", 9)
-    s.text(bx + 4 + 6 * K + 8, gy0 + 34, "origin to it is blocked,", 9)
-    s.text(bx + 4 + 6 * K + 8, gy0 + 45, "even though the cone", 9)
-    s.text(bx + 4 + 6 * K + 8, gy0 + 56, "covers it.", 9)
-    yd = gy0 + 5 * K + 4
-    y = max(yc, yd) + 6
+    yd = s.para(X[3], g.oy + 5 * K + 12, "A square is unaffected if the sight line from the origin to it is blocked by Blocking Terrain, even though the cone covers it.", PW, 9, lead=10.4)
+    y = max(ya, yb, yc, yd) + 6
     s.line(0, y, FULL_W, y, MID, 0.6)
     panel_title(s, 0, y + 6, "E", "When one damage roll is shared by several combatants (2.7.3)")
     y += 26
