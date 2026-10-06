@@ -1,6 +1,6 @@
 {
   "reviewer": "publication-auditor (FIG-01..19 independent re-review against patched text P-01..P-07; FIG-20..57 scenario-map semantic review against RC485)",
-  "reviewed_at": "2026-10-06T21:36:13Z",
+  "reviewed_at": "2026-10-06T21:41:15Z",
   "figures": [
     {
       "id": "FIG-01",
@@ -561,9 +561,9 @@
     },
     {
       "id": "FIG-20",
-      "svg_sha256": "f72486e3e21d592778afde33081ec7901c94a1e79d2d834b2af7955c165d7c12",
+      "svg_sha256": "818751502d7ebdf6ec09d94e36351df925ca2408701399bee70ff3c7aa6e8ea5",
       "caption_sha256": "9dc35d896b770167e008b42927a746506ad09208bcaf23c0c3af192eaf86444c",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "11068-11072",
         "10962-10990",
@@ -575,24 +575,27 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Legend does not match map glyphs: the light-grey 'hazard area' fill used for the four Unstable Ground zones (FIG-29) and the light diagonal 'Deep Shadow' hatch used for the Under Passage (FIG-37) have no swatch or label in the key; the only grey swatch is 'Impassable or Blocking, decided per piece'.",
           "evidence_source_line": "12589 (Unstable Ground zones, FIG-29); 13212 (Under Passage Deep Shadow, FIG-37)",
-          "fix": "Either add two swatches to FIG-20 ('Hazard area (Unstable Ground)' and 'Deep Shadow') or relabel those two features directly on FIG-29/FIG-37 and stop using the unlisted fills. Acceptance: every fill used in FIG-21..56 appears in FIG-20 or is directly labelled."
+          "fix": "Either add two swatches to FIG-20 ('Hazard area (Unstable Ground)' and 'Deep Shadow') or relabel those two features directly on FIG-29/FIG-37 and stop using the unlisted fills. Acceptance: every fill used in FIG-21..56 appears in FIG-20 or is directly labelled.",
+          "re_review_note": "Re-review: swatches 'Hazard area (Unstable Ground)', 'Deep Shadow or Darkness' and 'Blocking wall, drawn as a line' added and match FIG-29/33/37/38 fills."
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Key only says 'Grey dashed = one legal arrangement'. It does not say that a SOLID marker/zone drawn with a distance symbol (e.g. 'within 3\"', 'at least 8\"', corner zone chosen by the Roll-off winner) is one position meeting the printed constraint, not a fixed position. Solid CONSTRAINED and MANDATORY_POSITION elements look identical.",
           "evidence_source_line": "11068-11072 (alternate placing / winner chooses); e.g. 12092 'within 3\" of one outer Standing Stone'",
-          "fix": "Add one sentence to the 'Distances, edges, status' column: 'Solid markers with a distance symbol show one legal position; any position meeting the stated distance is legal.'"
+          "fix": "Add one sentence to the 'Distances, edges, status' column: 'Solid markers with a distance symbol show one legal position; any position meeting the stated distance is legal.'",
+          "re_review_note": "Re-review: 'Solid and dashed' paragraph added."
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Letters A/B beside exit arrows (FIG-29) and Party A/B zone letters are not explained; in scenarios with role assignment (FIG-32, 37, 38, 44, 50, 52, 54, 55) Party A/B are scenario roles assigned by die roll and are not tied to the drawn zone.",
           "evidence_source_line": "12618; 12782; 13191; 13264",
-          "fix": "Add to the zones swatch: 'A and B on the maps only distinguish the two zones; scenario Party A/B roles are assigned during setup.'"
+          "fix": "Add to the zones swatch: 'A and B on the maps only distinguish the two zones; scenario Party A/B roles are assigned during setup.'",
+          "re_review_note": "Re-review: A/B letter note added."
         }
       ],
       "rules_sha256": "199117c3cc8e9e8d8d4a38e63e61e9eefe030b88095e749c927aa06b6c7bf928"
@@ -642,9 +645,9 @@
     },
     {
       "id": "FIG-23",
-      "svg_sha256": "d3633c63a35676df5c25c291467aa227902e93fe96c74f77a8ea93fa41f02c95",
+      "svg_sha256": "04dca41fb3971a2b6c19d18e66f6d3d54454e0dda9d08c2a622661e0ebbdf91d",
       "caption_sha256": "92e7d1713a3f180e25465ed3abeb745949e44f24f70d456c375a85f69726808f",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12112-12188",
         "11068-11072",
@@ -654,24 +657,26 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Bandit Reinforcement arrows (R3) are drawn at 10\" along each edge, but the source places arrivals at the MIDPOINT of the edge closest to the Toll Captain. The drawn entry points are therefore wrong on all four edges (midpoint = 18\").",
           "evidence_source_line": "12176",
-          "fix": "In scenario_specs.json element 'rf' (FIG-23) change pos 10 to 18 (midpoint of each edge) and keep the grey-dashed open style for the unresolved edge choice; reposition the N/S arrows clear of the Trail ruler labels. Acceptance: all four R3 arrows centred on the edge midpoints."
+          "fix": "In scenario_specs.json element 'rf' (FIG-23) change pos 10 to 18 (midpoint of each edge) and keep the grey-dashed open style for the unresolved edge choice; reposition the N/S arrows clear of the Trail ruler labels. Acceptance: all four R3 arrows centred on the edge midpoints.",
+          "re_review_note": "Re-review: R3 arrows now at x=18 on N/S and y~18 on W/E (edge midpoints), grey-dashed; verified in render."
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Toll Captain is drawn as a solid CONSTRAINED marker on the same side of the Barricade as Wagon 2, although 'behind the central Barricade' is a logged ambiguity (which side is behind is not stated).",
           "evidence_source_line": "12162; ledger ambiguity 2",
-          "fix": "Draw the Captain in the grey-dashed illustrative style or add a foot note that the side of the Barricade is not fixed."
+          "fix": "Draw the Captain in the grey-dashed illustrative style or add a foot note that the side of the Barricade is not fixed.",
+          "re_review_note": "Re-review: Captain now drawn in grey (illustrative) style."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-24",
-      "svg_sha256": "974f476d76cba5229f14f79eebb3fd8b51d2c90165e0e414f0a84db7e9a377cf",
+      "svg_sha256": "1e5a92c3e3f807dbde13e510d734c687f05463f2ed3f15660bea35143fc232ff",
       "caption_sha256": "7f788cdff71d00048b3b2a4afbccd26c6e55426e958dd272fa3d3f2ac90c3477",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -683,19 +688,20 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Label 'Tarantula·R' sits on top of the Tree piece (tr1) and hides its Cover pattern; the 'Ravine 6-8\"' label is crossed by the Tarantula leader line.",
           "evidence_source_line": "12209; 12232",
-          "fix": "Move the t4 label below the ravine edge and shorten the t2 leader; acceptance: tr1 pattern and Ravine label fully visible."
+          "fix": "Move the t4 label below the ravine edge and shorten the t2 leader; acceptance: tr1 pattern and Ravine label fully visible.",
+          "re_review_note": "Re-review: Tree moved clear and labelled; Ravine label legible."
         }
       ],
       "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
     },
     {
       "id": "FIG-25",
-      "svg_sha256": "4fc8f2380f1baeb4fc8c879d44ae88556b9f61d37482edbb558049f6c54fda81",
+      "svg_sha256": "45e6f808f17d738bb9004e98ba853ab14a5200f21c131c6238e67b2ee4b9be9b",
       "caption_sha256": "00d350130e168db2019fbde2ea1621de9d9425318ed11526215d133cc56107e6",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12260-12337",
         "11068-11072",
@@ -705,17 +711,18 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Unlogged source conflict drawn as settled: Group 3 is to be placed 'at the perimeter of the Bandit Camp, 6\" from its centre', but the Camp is only about 4\"x4\" so its perimeter lies about 2\" (max 2.8\") from the centre, not 6\". The map silently follows the '6\" from centre' clause with a solid marker and a 6\" ring, putting the Group 4\" outside the Camp edge.",
           "evidence_source_line": "12280 (Camp about 4\"x4\"); 12312 (Group 3 placement)",
-          "fix": "Add this as a 14th ledger ambiguity in scenario-coverage.json (Greenmark 5) and redraw g3 as ILLUSTRATIVE (grey dashed) with a foot note 'Group 3: perimeter and 6\"-from-centre both stated; Camp is about 4\"x4\"'. Acceptance: map no longer presents either reading as the rule."
+          "fix": "Add this as a 14th ledger ambiguity in scenario-coverage.json (Greenmark 5) and redraw g3 as ILLUSTRATIVE (grey dashed) with a foot note 'Group 3: perimeter and 6\"-from-centre both stated; Camp is about 4\"x4\"'. Acceptance: map no longer presents either reading as the rule.",
+          "re_review_note": "Re-review: g3 now grey dashed (illustrative) with 6\" ring and foot note 'G3: the 6\" ring conflicts with the Camp size'; conflict logged as ambiguity in scenario-coverage.json (15 logged)."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-26",
-      "svg_sha256": "d2e569f64145d34de5fab3af7c6b866bd06d689d8f366852b73cdc4794ce0e49",
+      "svg_sha256": "60da29832ce79ddd3fe0db4b57e77909ec07a65bf130731f863f3e7d249c743b",
       "caption_sha256": "b9da7ca6d9e2c9700bdbd59991816437479d26904ff13049a4d5a6a0cb98dcf5",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -727,10 +734,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "accepted",
           "issue": "Mother Tree (3-4\" Blocking, MANDATORY centre) is unlabelled, and the 'Totem' label overlaps its dark disk; the three-chest rotation (evenly spaced, rotation open) is drawn solid.",
           "evidence_source_line": "12363; 12365",
-          "fix": "Label the dark disk 'Mother Tree'; move the Totem label clear; optionally dash the chest rotation."
+          "fix": "Label the dark disk 'Mother Tree'; move the Totem label clear; optionally dash the chest rotation.",
+          "re_review_note": "Re-review: Mother Tree now labelled. Remaining: 'Totem' label halo touches the tree disc and chest rotation drawn solid; accepted because the disc stays identifiable and the key now says solid markers are one legal position."
         }
       ],
       "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
@@ -759,7 +767,7 @@
     },
     {
       "id": "FIG-28",
-      "svg_sha256": "449a4a0a3a69326363e5ba78465dc0aa851f79491df1a8a2524eb79dd8e23765",
+      "svg_sha256": "705e7f9e3341a0b882f03949cd99f689d27f5373f4221697d5773691f0757c8e",
       "caption_sha256": "dc70e79277bd2b2d7a58694954be5ebdd3044feef6ad1727c30371ef2a85b993",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -771,26 +779,28 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Group 2 arrival arrows (R3) are drawn solid at a fixed 8\" along both long edges; the source gives only 'a random edge that is neither party's deployment edge' (no point on the edge).",
           "evidence_source_line": "12544",
-          "fix": "Set draw 'open' (grey dashed) on element g2 as FIG-29 does for its arrival edge."
+          "fix": "Set draw 'open' (grey dashed) on element g2 as FIG-29 does for its arrival edge.",
+          "re_review_note": "Re-review: arrival arrows now grey dashed."
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "accepted",
           "issue": "'Gateway 4-6\"' label sits below the Courtyard border away from the gate on the east edge and 'G1·R' is placed 4\" from the colonnade it is meant to be 'amongst'.",
           "evidence_source_line": "12515; 12543",
-          "fix": "Move the label next to the gate; place G1 beside a pillar."
+          "fix": "Move the label next to the gate; place G1 beside a pillar.",
+          "re_review_note": "Re-review: Gateway label still sits below the Courtyard border; accepted because the gate is the only dark wall piece on the east edge and the label is unambiguous."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-29",
-      "svg_sha256": "a4adb021ca6ee36f7c366a30a417e0939ab5d7743779899e0595ec4424cab5cd",
+      "svg_sha256": "240672a0e7cca15bf6686940a9cd819bef7aa07f60ebe415045e5e44b81c01f5",
       "caption_sha256": "9354f135c61fa7e9b5f065b9df4a4d4194e3059160a0be22a5ee60e3b7f8d0b2",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12569-12623",
         "11068-11072",
@@ -800,17 +810,18 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "The four 3\"x3\" Unstable Ground zones (the scenario's key terrain) are unreadable: they use an unlisted light-grey fill, three are partly covered by the 'G4 R2', 'G2·R' and 'Ruin 4\"x4\"' label halos so they read as L-shapes, and only one is labelled ('Unstable 3\"x3\"'). The 'min 6\"' ruler runs between zones that cannot be identified.",
           "evidence_source_line": "12589",
-          "fix": "Label each zone ('Unstable'), move the G4/G2/Ruin labels clear of the zones, and give the fill a legend swatch (see FIG-20 finding). Acceptance: four complete 3\"x3\" squares visible and identifiable without the source text."
+          "fix": "Label each zone ('Unstable'), move the G4/G2/Ruin labels clear of the zones, and give the fill a legend swatch (see FIG-20 finding). Acceptance: four complete 3\"x3\" squares visible and identifiable without the source text.",
+          "re_review_note": "Re-review: four complete 3\"x3\" Unstable Ground squares visible (N, W, E, S of the ruin), three labelled 'Unstable' plus 'Unstable 3\"x3\"', fill in key; G4/Ruin labels no longer cover them. Exits A (S,E) and B (N,W) still correct."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-30",
-      "svg_sha256": "21181f36680052555a72d81db00062715d98299a4858c1c2fd19401bdc5f5a1c",
+      "svg_sha256": "ed1edf48c570f3883e18b19cc771acc41483f6a9e027bf408d4ea4fa8ef87cef",
       "caption_sha256": "d7547996ec6dea4ea0d50cbd616fc38a5b992ccb82b6b1a7b7e4646daec4b205",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -822,10 +833,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Hall orientation (8\"x4\", long axis E-W) and the chamber layout around it are not fixed by the source but the Hall is drawn solid.",
           "evidence_source_line": "12644",
-          "fix": "Footnote or dash the Hall orientation; label 'Chamber' only inside a chamber (currently overlaps the Hall border)."
+          "fix": "Footnote or dash the Hall orientation; label 'Chamber' only inside a chamber (currently overlaps the Hall border).",
+          "re_review_note": "Re-review: Hall now dashed (orientation illustrative)."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
@@ -868,7 +880,7 @@
     },
     {
       "id": "FIG-33",
-      "svg_sha256": "1ccfc273400fd6c77d8492d468880b0c6341a9de1fd63b7fcc5bed7525a59cf6",
+      "svg_sha256": "3a57ca69deef65a284680e80cbf737ba2d22d8e00e3001f64d4ac63a2cf37a11",
       "caption_sha256": "e0ad9186cb04e334690efbc7333b9b73bd86a604051e878cc8f7cb4a6d9531e9",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -880,10 +892,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The Cave wall (cw1) is almost completely hidden under the 'Fungi' and 'Cave wall' label halos; the 'Cave wall' label points at nothing visible.",
           "evidence_source_line": "12899",
-          "fix": "Move the labels so cw1 is visible; acceptance: grey wall piece and label adjacent."
+          "fix": "Move the labels so cw1 is visible; acceptance: grey wall piece and label adjacent.",
+          "re_review_note": "Re-review: Cave wall piece visible beside its label."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
@@ -955,9 +968,9 @@
     },
     {
       "id": "FIG-37",
-      "svg_sha256": "39a0adda60293c81d9d186a266ec21ac9accec75adde860399f82d6790c5eda5",
+      "svg_sha256": "6654517ae8f509d4261663dd149d85fc9978c4481561b239cac6faec0da51d83",
       "caption_sha256": "194a1eed48afbeb8773f5d30d82364df19c17373f50dc8ec57df355e1e4b0e89",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13187-13259",
         "11068-11072",
@@ -967,17 +980,25 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Required terrain missing: the Under Passage must be 'walled on both sides by Blocking Terrain', but the map draws only a dashed shaded polygon; no walls are shown. The shading ('Deep Shadow' hatch) is not in the key and not labelled, so the reader cannot tell what the passage fill means.",
           "evidence_source_line": "13212",
-          "fix": "Add Blocking wall bands along both sides of the passage polygon (or a labelled 'Blocking walls' edge style) and label the fill 'Deep Shadow' (or add a FIG-20 swatch). Acceptance: both passage walls visible; fill identified."
+          "fix": "Add Blocking wall bands along both sides of the passage polygon (or a labelled 'Blocking walls' edge style) and label the fill 'Deep Shadow' (or add a FIG-20 swatch). Acceptance: both passage walls visible; fill identified.",
+          "re_review_note": "Re-review: Blocking walls drawn as black lines along both sides of the passage; fill labelled 'Deep Shadow' and in key."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "The wall lines run across the openings of the side alcoves (Font/Chest alcoves on the east side and the chest alcove west of the middle section), so alcoves look sealed off although they 'branch off the main passage'.",
+          "evidence_source_line": "13212",
+          "fix": "Break the wall line where each alcove joins the passage."
         }
       ],
       "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
     },
     {
       "id": "FIG-38",
-      "svg_sha256": "4d183d42aaf22e0361bc9872789455a4493e03602c99ea7cd8433d2a90d961b0",
+      "svg_sha256": "cee48625d37a672994b635c17e3aef6aee8d9c3bce1d64d08f7d7963fc140a19",
       "caption_sha256": "4ba1311317233b2eabbeb7ba535b5c9382d50fa342c4db6fd81b6afea6b24194",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -989,10 +1010,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "accepted",
           "issue": "'The central cavern and tunnels are in Deep Darkness' is not indicated on the map; 'Caller·A' label overlaps a Stalagmite piece.",
           "evidence_source_line": "13285",
-          "fix": "Add a foot note 'Cavern and tunnels: Deep Darkness' and move the label."
+          "fix": "Add a foot note 'Cavern and tunnels: Deep Darkness' and move the label.",
+          "re_review_note": "Re-review: Deep Darkness hatch added to cavern and tunnels (resolved). Caller·A label still partly overlaps one Stalagmite piece; accepted because the piece remains identifiable and is illustrative."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
@@ -1021,9 +1043,9 @@
     },
     {
       "id": "FIG-40",
-      "svg_sha256": "5922de5666aee85d14dac9cc791286d50898e990bac581b7e1a33afe43d3ab1f",
+      "svg_sha256": "712eb7c952c44eedbaaa785efc0fe0066495b47d06aa2390d3c8fa19f5ec9713",
       "caption_sha256": "c16e580cf13bde878a999201498ebc53dbaffb33e005cb883dcc42205c393cb2",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13418-13487",
         "11068-11072",
@@ -1033,24 +1055,26 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Group 2 constraint not met by the drawn arrangement: the source places Group 2 'inside a ruined building adjacent to the Laboratory', but G2 sits in building bd2, about 3\" from the Laboratory footprint (adjacent = 1\" or less per 2.1).",
           "evidence_source_line": "13468",
-          "fix": "Move bd2 (with G2 and the outside Treasure Chest) so a gap of 1\" or less separates it from the Lab, or move G2 into a building abutting the Lab. Acceptance: G2 inside a building whose nearest edge is within 1\" of the Lab."
+          "fix": "Move bd2 (with G2 and the outside Treasure Chest) so a gap of 1\" or less separates it from the Lab, or move G2 into a building abutting the Lab. Acceptance: G2 inside a building whose nearest edge is within 1\" of the Lab.",
+          "re_review_note": "Re-review: bd2 now abuts the Lab (gap about 0.5\"); G2 inside it, Treasure Chest in the same outside structure."
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'Frozen Debris' is Cover Terrain tagged Difficult Terrain but is drawn as Cover only.",
           "evidence_source_line": "13438",
-          "fix": "Add 'Difficult' dots over the Debris or label 'Cover+Difficult'."
+          "fix": "Add 'Difficult' dots over the Debris or label 'Cover+Difficult'.",
+          "re_review_note": "Re-review: Debris relabelled."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-41",
-      "svg_sha256": "d04ce5157598955c94a37bcd284058dd37ae38fe7726ded865b90a00f93c7e6c",
+      "svg_sha256": "f028dd8c0ae6f07ffa96dba05e30fd2cf7defa01d6cc427bc2a9f3704b69e705",
       "caption_sha256": "365c4a475ac62c70844a4fdb693148954f8d8e3d3d3e8f4109d8ac14433474dc",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1062,10 +1086,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'Grand Hall' label sits over the Cracked ice patch (ic1) and hides most of it.",
           "evidence_source_line": "13508",
-          "fix": "Move the Grand Hall label."
+          "fix": "Move the Grand Hall label.",
+          "re_review_note": "Re-review: Grand Hall label moved; Cracked ice visible."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
@@ -1210,7 +1235,7 @@
     },
     {
       "id": "FIG-49",
-      "svg_sha256": "e379c42923633d727c8a426e2dad4cb15362cfc88a843207f284ce7469406efc",
+      "svg_sha256": "753047b6f161c0b3bf040d07c48c8041acdabec2770d66b01362055727e9b53b",
       "caption_sha256": "cfc89d3ff7fc1b31bd0d1830b0d74cced496695aecd9a03364ed6476347f0a2b",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1222,17 +1247,18 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Colossus is drawn as a solid 7\"x7\" Blocking square; the source gives only 'large central terrain feature' (no size), so the size should look illustrative.",
           "evidence_source_line": "14053",
-          "fix": "Dash the outline or label 'size not fixed'."
+          "fix": "Dash the outline or label 'size not fixed'.",
+          "re_review_note": "Re-review: Colossus now grey dashed (size illustrative)."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-50",
-      "svg_sha256": "6f3544a926834a8c934d7ecc0668eecb56b60251a322d9d082e4492d40513577",
+      "svg_sha256": "d6f3af0e4232d4e25114863759902ce67338c66538e981923c16adfcfa10b168",
       "caption_sha256": "98085be95bf4ae5a18940f1b080afb6e18aac360d453a90c3a4da9939685413a",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1244,10 +1270,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "accepted",
           "issue": "Glyphic Stones (Impassable Terrain) are drawn as objective diamonds; the central Dais is drawn solid 5\"x5\" although no size is given.",
           "evidence_source_line": "14133",
-          "fix": "Add 'Impassable' to the Stone label; dash or annotate the Dais size."
+          "fix": "Add 'Impassable' to the Stone label; dash or annotate the Dais size.",
+          "re_review_note": "Re-review: Dais now dashed (resolved). Glyphic Stones still diamonds without 'Impassable' in the label; accepted because the Impassable status is in the scenario text and the key marks objectives with that glyph."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
@@ -1387,24 +1414,19 @@
   "scenario_maps_summary": {
     "figures_reviewed": 38,
     "verdicts": {
-      "FAIL": 6,
-      "PASS": 10,
-      "PASS_WITH_NOTES": 22
+      "PASS_WITH_NOTES": 28,
+      "PASS": 10
     },
     "findings_by_severity_status": {
-      "major/open": 6,
-      "minor/open": 28
+      "major/resolved": 6,
+      "minor/resolved": 10,
+      "minor/accepted": 4,
+      "minor/open": 15
     },
-    "major_open_figures": [
-      "FIG-20",
-      "FIG-23",
-      "FIG-25",
-      "FIG-29",
-      "FIG-37",
-      "FIG-40"
-    ],
+    "major_open_figures": [],
     "method": "Read each scenario's full setup text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) plus 10.1 steps 7/11 and section 10 intro; rendered every SVG with figures/src/test/render.py at 200 ppi (FIG-29 at 300 ppi, FIG-33 crop at 350 ppi) and inspected each individually; re-derived distances from specs/SVG coordinates; compared Escape Conditions with drawn exits; compared Sz of scenario monsters with source tables; checked every printed inch value against the scenario span and font sizes (min 9 pt, column width 243 pt) by script.",
     "ambiguity_check": "13 logged ambiguities all genuine (RC485 text and 1.6 do not resolve them); FIG-34 'start edge' is low-impact/borderline (step 11 chooser clause may supply the chooser). Unlogged candidates: FIG-25 Group 3 perimeter vs 6\" from centre (major, recorded); FIG-51 'murky water' (minor, recorded). Blocked elements verified undrawn: FIG-33 Group 3 arrival, FIG-47 Tomb Herald, FIG-52 exit, FIG-55 Group 1 arrival and exit.",
-    "not_checked": "Placed page proof not reviewed; legibility judged from SVG at 9 pt minimum font and 200-300 ppi renders; physical print not tested."
+    "not_checked": "Placed page proof not reviewed; legibility judged from SVG at 9 pt minimum font and 200-300 ppi renders; physical print not tested.",
+    "re_review": "Second pass on FIG-20,23,24,25,26,28,29,30,33,37,38,40,41,49,50 after illustrator fixes: all 6 majors resolved (render-verified); no new major; one new minor (FIG-37 alcove openings)."
   }
 }
