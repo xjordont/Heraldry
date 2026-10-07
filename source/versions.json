@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 485,
+  "current": 486,
   "revisions": [
     {
       "number": 484,
@@ -29,6 +29,25 @@
       ],
       "patch_file": "editorial/history/RC485.json",
       "patch_sha256": "867bdc9a96592305905102b2bba247e9d32a1c7a9d29416f3cd3334b2bbb079f"
+    },
+    {
+      "number": 486,
+      "path": "source/Heraldry_RC486.md",
+      "sha256": "5da05cec6153ac11865874a0da416c002ce90b2dc4936fc9ce50abca9d3dbbe5",
+      "bytes": 1451198,
+      "parent_sha256": "fc6caeeedf1e8e2cce80ed469ef74fb3c196048563c6bfec65031f2b03c4bbbe",
+      "created_at": "2026-10-07T10:30:00.929922+00:00",
+      "reason": "Resolve the four unplaced scenario setup elements (Undermarches 1 Group 3 arrival, Sun-Drowned 3 Tomb Herald, The Mire 2 and The Mire 5 escape edges, The Mire 5 Group 1 arrival) found during deployment-map review",
+      "authorization": "Owner instruction 2026-10-07 in Claude Code session: 'Fix the unplaced elements and minor notes to the best of your ability.'",
+      "patch_ids": [
+        "P-08",
+        "P-09",
+        "P-10",
+        "P-11",
+        "P-12"
+      ],
+      "patch_file": "editorial/history/RC486.json",
+      "patch_sha256": "f56dc517dbe879ef98f7e9afd4f9cfc8d8c19974685f97304d06c4cc27744b38"
     }
   ]
 }

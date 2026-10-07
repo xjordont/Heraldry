@@ -1,0 +1,17 @@
+{"patches":[
+{"id":"P-08","status":"approved","issue":"Undermarches 1 Group 3: with opposite corner zones every edge is adjacent to a deployment corner, so no edge qualified",
+ "find":"arrives at the start of Round 3 from a random battlefield edge that is not adjacent to either deployment corner. Awake when it arrives.",
+ "replace":"arrives at the start of Round 3 at the midpoint of a random battlefield edge. Awake when it arrives.","expected_count":1},
+{"id":"P-09","status":"approved","issue":"Sun-Drowned 3: three Royal Sarcophagi in separate chambers; none is designated 'central'",
+ "find":"Starts **Awake** guarding the central Sarcophagus.",
+ "replace":"Starts **Awake** guarding the Royal Sarcophagus nearest the battlefield centre.","expected_count":1},
+{"id":"P-10","status":"approved","issue":"The Mire 2: escape required but no escape edge stated",
+ "find":"**Escape Conditions:** Required for the Sunstone Amulet and for any unbanked rewards from Offering Piles.",
+ "replace":"**Escape Conditions:** Required for the Sunstone Amulet and for any unbanked rewards from Offering Piles. Escape via any battlefield edge.","expected_count":1},
+{"id":"P-11","status":"approved","issue":"The Mire 5 Group 1: 'water edge' undefined; parties hold both long edges",
+ "find":"enters from a water edge at the start of Round 3. Awake when it arrives.",
+ "replace":"enters at the midpoint of a random short battlefield edge at the start of Round 3. Awake when it arrives.","expected_count":1},
+{"id":"P-12","status":"approved","issue":"The Mire 5: escape required but no escape edge stated",
+ "find":"**Escape Conditions:** Required only if a party is carrying the Salttide's Counting Stone.",
+ "replace":"**Escape Conditions:** Required only if a party is carrying the Salttide's Counting Stone. Escape via any battlefield edge.","expected_count":1}
+]}
