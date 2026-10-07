@@ -1,10 +1,5 @@
 {
-  "zip": "dist/Heraldry_RC485_release.zip",
-  "bytes": 18354207,
-  "files": 217,
-  "sha256": "3efd77e6d3df97317881527ee0d81a66cf38ef7cc7b01cc13755e211211ad5e0",
-  "status": "PASS",
-  "duplicate_entries": [],
-  "checksums_verified": 216,
-  "note": "This audit is external to the ZIP to avoid self-reference; PDFs are verified files, visual and physical proof statuses remain separately qualified."
+  "status": "PENDING",
+  "scope": "Current illustrated/design iteration",
+  "note": "Earlier archive withheld. Rebuild, visually review and verify current inputs before make package."
 }

@@ -8,13 +8,6 @@
     "mechanical_work": "haiku",
     "max_concurrent_subagents": 2
   },
-  "budget": {
-    "claude_cloud_credit_limit_usd": 100,
-    "target_spend_usd": 80,
-    "repair_reserve_usd": 20,
-    "allow_paid_overage": false,
-    "enforcement": "Prompt guidance plus account-level controls; this JSON does not enforce billing"
-  },
   "format": {
     "trim_width_inches": 8.5,
     "trim_height_inches": 11,
@@ -33,14 +26,13 @@
     "adjust_gutter_for_final_binding_and_page_count": true
   },
   "image_generation": {
-    "route": "auto-select only among configured and authorized services or supplied assets",
-    "external_spend_limit_usd": 0,
-    "paid_calls_authorized": false,
-    "known_no_cost_quota": null,
+    "route": "chatgpt_builtin",
     "incoming_art_directory": "assets/art/incoming",
     "minimum_grayscale_ppi_starting_target": 300,
     "minimum_one_bit_line_art_ppi_starting_target": 600,
-    "printer_specifications_override_resolution_defaults": true
+    "printer_specifications_override_resolution_defaults": true,
+    "generation_owner": "ChatGPT Work",
+    "external_api_generation": false
   },
   "printer": {
     "name": null,
@@ -75,6 +67,7 @@
   "workflow": {
     "working_branch": "main",
     "new_branch_policy": "explicit owner decision with recorded reason",
-    "manuscript_version_policy": "one increment per approved text-patch batch; immutable prior snapshots"
+    "manuscript_version_policy": "one increment per approved text-patch batch; immutable prior snapshots",
+    "indesign_export": "ON HOLD — owner decision 2026-10-06; continue PDF production"
   }
 }

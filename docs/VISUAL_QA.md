@@ -40,7 +40,7 @@ The independent auditor reviews without relying on the designer's assertions. As
 
 ## Art-light acceptance
 
-With no authorized image route, a typographic cover, sparse original vector marks, exact instructional figures, and composed clean pages are acceptable for an art-light edition. Do not fill missing illustrations with repeated generic silhouettes, decorative clip art, fake signatures, or prompts rendered as reader-facing placeholders. Keep the missing atmospheric suite visibly incomplete in the production report, while finishing the rest of the publication.
+The twelve atmospheric masters are now supplied. The earlier art-light review is historical; the requested illustrated edition needs final-size placement review on cream and white. Do not fill missing illustrations with repeated generic silhouettes, decorative clip art, fake signatures, or prompts rendered as reader-facing placeholders. Keep the missing atmospheric suite visibly incomplete in the production report, while finishing the rest of the publication.
 
 ## Owner-requested refinement, 2026-10-07
 

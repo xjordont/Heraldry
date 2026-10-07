@@ -1,0 +1,52 @@
+name: Import ChatGPT artwork masters
+on:
+  push:
+    branches: [main]
+    paths:
+      - production/art/TRANSFER.json
+      - .github/workflows/import-chatgpt-art.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: chatgpt-art-import
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare scoped LFS upload actions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/import_art_lfs.py prepare --output "$RUNNER_TEMP/art-upload"
+      - name: Transfer instructions for the authorized upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: art-upload-actions
+          path: ${{ runner.temp }}/art-upload/upload-actions.json
+          retention-days: 1
+          if-no-files-found: error
+      - name: Verify native masters and commit artwork pointers to main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/import_art_lfs.py finish --timeout 900
+      - name: Package verified artwork masters
+        run: |
+          git lfs pull --include="assets/art/incoming/*.png" --exclude=""
+          python tools/art_package.py --output "$RUNNER_TEMP/Heraldry_RC485_artwork.zip"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Heraldry-RC485-artwork
+          path: ${{ runner.temp }}/Heraldry_RC485_artwork.zip
+          retention-days: 30
+          if-no-files-found: error

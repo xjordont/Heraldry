@@ -1,6 +1,6 @@
 # Heraldry illustration direction
 
-This document governs atmospheric illustration and art planning. MASTER_PROMPT.md governs source fidelity, asset QA, budget, and placement. The manuscript, not this brief, supplies setting facts.
+This document governs atmospheric illustration and art planning. MASTER_PROMPT.md governs source fidelity, asset QA, and placement. The manuscript, not this brief, supplies setting facts.
 
 ## Shared style
 
@@ -41,7 +41,7 @@ Follow the requested dimensions where supported; do not claim an unsupported res
 ## Production plan
 
 1. Plan a source-specific cover scene and one representative chapter image as the style test. The approved anchor is an internal quality gate; the autonomous agent need not request approval.
-2. Prioritise the cover hero image and 11 chapter-opening images. Read each actual chapter and derive its subject, not merely its title. Optional climate, creature, item, and landscape vignettes follow only within the remaining budget.
+2. Prioritise the cover hero image and 11 chapter-opening images. Read each actual chapter and derive its subject, not merely its title. Optional climate, creature, item, and landscape vignettes follow after the required suite.
 3. Number assets with stable IDs, for example `ART-COVER-001` and `ART-CH01-001`. Use the same IDs in the manifest and filenames. Preserve native originals and separate final grayscale/crop derivatives.
 4. When a generated image has limited native resolution, place it smaller or use a supported high-resolution route and inspect the result. Changing a DPI tag or resampling does not create authentic fine detail.
 5. Assess style consistency using a contact sheet and assess final crops at print size. Check setting accuracy, visual artefacts, muddy blacks, hatching survival, and space for titles.
@@ -58,8 +58,7 @@ Follow VISUAL_QA.md. Keep foreground ink separate from the page substrate. Trans
 
 Review hands, joints, armour closures, weapon grips, material transitions, masonry, scale and setting facts in enlarged crops, then inspect the placed size. A beautiful texture cannot rescue incoherent construction. The dark-fantasy character must survive a paper-white background without blanket grain or a heavy frame. This is a visible-quality contract, not a promise to hide generated provenance or an instruction to misrepresent authorship.
 
-## Current reference calibration and GPT route
 
-Use only the ten owner-selected references in REFERENCE_ANALYSIS.md. Deth Wizards pp9/27 supplies useful silhouette and ink observations; BlackDeathCity pp32/36/74 and The Village Hunt pp6/14/16 supply art/text composition lessons. These are abstract design observations, not assets to copy. Keep the shared original style anchor and clean substrate.
+## Current reference calibration and artwork route
 
-See ART_AUTOMATION.md for ChatGPT generation versus an unattended OpenAI API runner. The current review adds a route specification, not an implemented runner or spending authorization. Claude cannot inherit this chat's image tool; paid_calls_authorized remains false and the external image budget remains $0 until an owner decision. Preserve native masters and stable manifest IDs; an image must pass subject, print-resolution and placed-size checks before integration.
+Use the ten owner-selected references in REFERENCE_ANALYSIS.md for abstract silhouette, ink and composition lessons. Artwork is generated with ChatGPT Work's built-in image tool. See ART_AUTOMATION.md for master naming, provenance and integration. Claude integrates supplied masters and reviews native resolution, alpha edges, setting fidelity and final-size quality; no external image API runner is used.

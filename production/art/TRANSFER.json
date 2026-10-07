@@ -1,0 +1,161 @@
+{
+  "status": "pending_upload",
+  "files": [
+    {
+      "filename": "ART-CH01-001.png",
+      "path": "assets/art/incoming/ART-CH01-001.png",
+      "sha256": "1144fe3eaa665a047db27fd3863457f5c8a519b90cdb61bfbd975cff0c4b31c7",
+      "bytes": 3900936,
+      "width_px": 1748,
+      "height_px": 900,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "filename": "ART-CH02-001.png",
+      "path": "assets/art/incoming/ART-CH02-001.png",
+      "sha256": "23e68b17ce667de5dc7ee5340100eec69458a958e554fc2c7b90a4dd67c9e2b8",
+      "bytes": 3115017,
+      "width_px": 1747,
+      "height_px": 900,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "filename": "ART-CH03-001.png",
+      "path": "assets/art/incoming/ART-CH03-001.png",
+      "sha256": "3f5f06b60141e64bcc1db03cdf25be2500a89bded09a2f1d70f258bed800ef47",
+      "bytes": 3007842,
+      "width_px": 1746,
+      "height_px": 901,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "filename": "ART-CH04-001.png",
+      "path": "assets/art/incoming/ART-CH04-001.png",
+      "sha256": "e08a6bf641fe53a4bc92de4f1ed0766afb82d6e785fc5ecc68c12fca7abd2074",
+      "bytes": 2233915,
+      "width_px": 1746,
+      "height_px": 901,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "filename": "ART-CH05-001.png",
+      "path": "assets/art/incoming/ART-CH05-001.png",
+      "sha256": "c6ef1bdef91965ec663a675b33df8f7f837d0aa909cb483fb126e99ca2a9c0f8",
+      "bytes": 2954680,
+      "width_px": 1746,
+      "height_px": 901,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "filename": "ART-CH06-001.png",
+      "path": "assets/art/incoming/ART-CH06-001.png",
+      "sha256": "f137c9535387da0f02c588c2e1a2ca74c5bf2fe2a131f9e20fad2d16a492015b",
+      "bytes": 2695155,
+      "width_px": 1746,
+      "height_px": 901,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "filename": "ART-CH07-001.png",
+      "path": "assets/art/incoming/ART-CH07-001.png",
+      "sha256": "89e399dca4a1da6b26131071c8eacd223259a464208a560844f93de5f4429004",
+      "bytes": 3490726,
+      "width_px": 1746,
+      "height_px": 901,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "filename": "ART-CH08-001.png",
+      "path": "assets/art/incoming/ART-CH08-001.png",
+      "sha256": "8867976278025e49384286f80675bffec13176c0e482411d20143fbfe4e87401",
+      "bytes": 2919329,
+      "width_px": 1746,
+      "height_px": 901,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "filename": "ART-CH09-001.png",
+      "path": "assets/art/incoming/ART-CH09-001.png",
+      "sha256": "fbbe0cf42a6602407e79ed0674b6b7694117d5cab6b942dfe34f04fab0333396",
+      "bytes": 3333425,
+      "width_px": 1747,
+      "height_px": 900,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "filename": "ART-CH10-001.png",
+      "path": "assets/art/incoming/ART-CH10-001.png",
+      "sha256": "661bdd6fd717b007a89249183f9404ff54ead138bc74279a36505e359dfcb137",
+      "bytes": 4148558,
+      "width_px": 1746,
+      "height_px": 901,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "filename": "ART-CH11-001.png",
+      "path": "assets/art/incoming/ART-CH11-001.png",
+      "sha256": "bb1c747cd7b924ff33e15d0bfc857584620ebf7cd082cb7bbf4b4cf5bd01e92f",
+      "bytes": 2600775,
+      "width_px": 1746,
+      "height_px": 901,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "filename": "ART-COVER-001.png",
+      "path": "assets/art/incoming/ART-COVER-001.png",
+      "sha256": "2bdf63d69f16bf45222962b718d29b65eaed25ae89837e00a71866f9b0076e68",
+      "bytes": 3308935,
+      "width_px": 1430,
+      "height_px": 1100,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    }
+  ]
+}
