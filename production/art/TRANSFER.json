@@ -1,5 +1,5 @@
 {
-  "status": "pending_upload",
+  "status": "uploaded_and_hash_verified",
   "files": [
     {
       "filename": "ART-CH01-001.png",
@@ -157,5 +157,6 @@
         255
       ]
     }
-  ]
+  ],
+  "verification": "All 12 original objects downloaded from GitHub LFS and verified by SHA256 and byte count before committing pointers"
 }
