@@ -1,6 +1,6 @@
 {
-  "reviewer": "figure-semantic-review: FIG-01..12 and FIG-17 by publication-auditor (carried forward, hashes unchanged); FIG-13..16, 18..20 and FIG-21..57 independently re-reviewed after the shared-glyph redraw (scenkit.py) against RC485",
-  "reviewed_at": "2026-10-07T04:05:11Z",
+  "reviewer": "figure-semantic-review: FIG-01..12, FIG-17, FIG-18 and FIG-57 carried forward (hashes unchanged); FIG-13..16, 19, 20 and FIG-21..56 independently re-reviewed against RC486 (P-08..P-12) by a reviewer who did not draw them",
+  "reviewed_at": "2026-10-07T10:58:00Z",
   "figures": [
     {
       "id": "FIG-01",
@@ -294,7 +294,7 @@
       "id": "FIG-13",
       "svg_sha256": "56ba2a97c17cbcdb86e042ee147da88b0d19ae8608d8e69587bb4b9e41221a6a",
       "caption_sha256": "2a0de41b660deb37e1f141fbe382326cf855c028ca8a01e36bb69e0e648c7165",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "11029-11075",
         "11072",
@@ -364,9 +364,17 @@
           "issue": "Redrawn FIG-13 re-reviewed against all 36 Party Deployment lines: panels A-E, the zone glyphs (A solid band, B open band), 6\" and 8\" values, 'long = East/West' and the step 11 default list (depth silent: Sun-Drowned 2, The Mire 5 and 6; size silent: Sun-Drowned 3, The Mire 3; order silent: Pale City 1 and most edge scenarios) all match; the key strip lists exactly the five glyphs used and each looks identical to FIG-20.",
           "evidence_source_line": "13884; 13955; 14402; 14554; 14633; 13404; 11072",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Content re-read against 10.1 step 11 (11072) and all 36 Party Deployment lines; none of the five RC486 lines is a Party Deployment line, and the list of depth/size-silent scenarios (Sun-Drowned 2 and 3, The Mire 3, 5, 6) is still exact. SVG and caption unchanged since the previous review. SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-14",
@@ -401,9 +409,17 @@
           "issue": "Redrawn FIG-14 re-reviewed: Trail panel shows at least two Heroes of each party on the Trail (12170); shared-edge panel 8\" zone, 6\" ring and 7\" closest-edge dimension (12997); Safe Zone 8\"x8\" with 3\" ring and 4\" dimension (13062); Ravine 6-8\" on higher ground (12209, 12238). Key strip glyphs (Heroes, three zone types, Ravine floor = Difficult, Chasm, Open feature, distance, ring, range) all appear in FIG-20 with the same appearance.",
           "evidence_source_line": "12170; 12997; 13062; 12209; 12238",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Panels re-read against 12132-12170 (Greenmark 3), 12209-12238 (Greenmark 4), 12965-12997 (Undermarches 2) and 13035-13062 (Undermarches 3); none of these lines changed in RC486. SVG and caption unchanged. SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "43fe7ea70bcb0c071483e84a52e40817717281b93248838c1366f738b233cd52"
+      "rules_sha256": "60a72e81078eddd4be7d95d9df8353896f6537692484ef0efc15aac54c44b678",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-15",
@@ -443,9 +459,17 @@
           "issue": "Redrawn FIG-15 re-reviewed: 3\" map and stone distances, 8\" Chasm, 1\" ledges, 1-2\" gaps, Crumbling DEX Check, Jump 2\" per 1\" (4.4.9), Chasm Fall steps 6-8 versus 13005-13007 sentence by sentence; key strip (Party A, Party B, Zone both use, Objective, Numbered step, Chasm, Ledge, Crumbling Ledge, Stated distance) matches FIG-20.",
           "evidence_source_line": "12965; 12969; 13003; 13005-13007; 1394-1405",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Re-read against 12945-13014 and 4.4.9; Chasm Fall steps (13005-13007) unchanged in RC486. SVG and caption unchanged. SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "34e12852b9502196e116896e54eb8384a6aa8060b50a222c638ad1620e9098fd"
+      "rules_sha256": "c66526f0a181e2d17e00ac1e71526e7cc4f4ba6725a9cab80d9bf6a2c920863d",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-16",
@@ -487,9 +511,17 @@
           "issue": "Redrawn FIG-16 re-reviewed: Warden placement adjacent to the first Interacted Stone (12088), Target Priority and Entangling Roots 8\" DEX Check (AI step), Group 2 inside the Central Clearing 4\" from its edge (12093), Stones 6-8\" apart, Clearing 12-15\" (13.5\" drawn). Warden is the shared Large 2\"x2\" square; key strip glyphs match FIG-20 ('Standing Stone' is the Objective diamond under a compact-strip label).",
           "evidence_source_line": "12088; 12093; 12062; AI Steps",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Re-read against 12042-12111 (Antlered Warden at 12088, Group 2 at 12093) and 9.5; unchanged in RC486. SVG and caption unchanged. SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "1fad8f1e8c4e8604159ccc830b0ea3c6d7d11aad1e12f6e03ba1cc7a50adc9a4"
+      "rules_sha256": "78f702e3e45b205afcd7e9934c3b78532fa25bad31aed946ada5ee57dc93af23",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-17",
@@ -559,7 +591,7 @@
     },
     {
       "id": "FIG-19",
-      "svg_sha256": "9ca6b352846e75e58771381009803ffc82ffc39dc9700c5abf0f0abcbfd51da0",
+      "svg_sha256": "fb50d064c7ce685f410f6188688a8e37abac0de8eafba61eaefc0d83f2d9226c",
       "caption_sha256": "fe49806f43a98b023b889e149ab5d124fada5cd1ddb23fceae5a6a02f9988d64",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -595,17 +627,19 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "accepted",
           "issue": "Label 'Group·R' is drawn on top of the Cart-or-wall hatch piece (it hides part of the piece and reads as labelling it); its leader runs a long way to the east group. The '5-7\"' label also sits on the outer dashed ring.",
           "evidence_source_line": "17076; 17080",
-          "fix": "Move the 'Group·R' label to a clear spot beside the east group (lp 'b' on m1) and the '5-7\"' label off the ring line."
+          "fix": "Move the 'Group·R' label to a clear spot beside the east group (lp 'b' on m1) and the '5-7\"' label off the ring line.",
+          "resolution": "RC486 re-review: the 'Group·R' label no longer covers the Cart-or-wall piece (piece moved, label beside the east group with a short leader). The '5-7\"' label still sits on the outer dashed ring behind its white halo, which is the map convention elsewhere and stays legible."
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The two exit arrows (N and S) are drawn in the grey-dashed 'position not fixed' state although both edges are stated (each side leaves by its own deployment edge); the key strip shows the solid arrow.",
           "evidence_source_line": "17090",
-          "fix": "Draw the two exit arrows solid (status MANDATORY_POSITION); the side-to-edge assignment stays unstated and needs no marking."
+          "fix": "Draw the two exit arrows solid (status MANDATORY_POSITION); the side-to-edge assignment stays unstated and needs no marking.",
+          "resolution": "RC486 re-review: both exit arrows are now solid (render and SVG checked), matching the key strip and 17090."
         },
         {
           "severity": "minor",
@@ -613,15 +647,23 @@
           "issue": "Appendix scope re-checked: only B.1-B.6 lines cited (B.6 terrain, deployment 4\", Entry markers 5-7\" from centre, at least 4\" apart, Strongbox 12c, Satchels 4c, -2\" Speed, own-edge extraction, Round 6); Entry markers at 6\" from centre, Entry-to-Entry gaps 10.4\" and more; no advanced rule appears; key strip glyphs all in FIG-20.",
           "evidence_source_line": "17072-17095",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. SVG changed by the illustrator: the Cart-or-wall piece moved off the Group label (still within 4\" of the centre, 17076) and both exit arrows are now solid (17090: each side leaves by its own deployment edge). Panel B text, Treasure arithmetic (12+4+2+3 = 21c) and Monster Entry geometry unchanged and match B.6 (17074-17090). SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "17002c1770b12fc10565e4973020395819f8a09a293420473d626fd18a0b7646"
+      "rules_sha256": "17002c1770b12fc10565e4973020395819f8a09a293420473d626fd18a0b7646",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-20",
-      "svg_sha256": "9134e937a1195c778628b314ee8a64126cda17e3d812c63244cd49cdec70b966",
+      "svg_sha256": "1d66a838af5dd263e854c2cf79dc4a414bfe6ec7fa8512e448624982dca2418a",
       "caption_sha256": "4e7a4b0ea5e8e47438461bfdc1de9f61bd20db112177c4a0652b7b15ee284b2b",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "11068-11072",
         "10962-10990",
@@ -662,9 +704,17 @@
           "issue": "Redrawn key re-reviewed: 40 swatches equal the glyph registry; every glyph id, state and pattern used on FIG-13-16, 18, 19, 21-57 is explained (checked by script and by eye); Large 2\"x2\" and Huge 3\"x3\" match 618-619; scale/closest-point statement matches 594; step 11 default text matches 11072. FIG-13-16, 18 and 19 strips list only glyphs their diagrams use.",
           "evidence_source_line": "594; 618-619; 11072",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Key redrawn without the 'not placed by the text' swatch: no scenario map uses it any more (checked: no data-glyph=unres in any SVG). 'Arrival edge (R3 = Round 3)' swatch matches the maps (FIG-23, 29, 33, 36, 55). Orientation text matches 11056-11058, scale text 594, Large/Huge 618-619, step 11 default 11072, terrain swatches the 2.9.1 table (845-873). SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "199117c3cc8e9e8d8d4a38e63e61e9eefe030b88095e749c927aa06b6c7bf928"
+      "rules_sha256": "5dd84e28a5b03b19717cfb942592a44ca562abb434d4dbcaab3cd68defc07821",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-57",
@@ -692,12 +742,21 @@
         "10962-10990",
         "14901-14915"
       ],
-      "findings": [],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. No change since the last review; zones, Boar within 2\" of the Wallow (11996, 12018), chests 6\" apart, Group 1 and 2 constraints (12022-12023), exit on all edges (12031) all match. SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
+        }
+      ],
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-22",
-      "svg_sha256": "4cb7e6fd827d2b5e5a720debc0e5353d893e15a94c33ebe0bc7b3e06479edbf3",
+      "svg_sha256": "0289816a622eb896610f23040c89b1bdeffdea9da8b6889716c16c6ee47fcc9f",
       "caption_sha256": "a088dc773ba845429fdf518e08da129cc8186ac21979a0622bbcfb4863acd8e1",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -718,10 +777,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The single 'Stone' label sits between the Stone diamonds and G2 and is not attached to any one of the three identical Stone markers; the G2 'min 8\"' / '3\"' labels crowd the north-east Chest.",
           "evidence_source_line": "12062",
-          "fix": "Add a leader from 'Stone' to s1 or label all three; no data change."
+          "fix": "Add a leader from 'Stone' to s1 or label all three; no data change.",
+          "resolution": "RC486 re-review: 'Stone' has a leader to s1; G2 labels no longer crowd the chest (render)."
         },
         {
           "severity": "minor",
@@ -729,13 +789,21 @@
           "issue": "'one outer Standing Stone' (12092): three Stones in a triangle have no 'outer' one; logged ambiguity, drawn as one legal choice (ring on s1).",
           "evidence_source_line": "12092",
           "fix": "None; owner decision logged."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: 'Stone' now has a leader to one Stone; the G2 labels no longer crowd the chest. Stones 8.0\" apart (6-8\"), Clearing 13.5\" (12-15\"), Group 2 3.99\" inside the Clearing edge (12093), chests at least 8\" from any Stone, Undergrowth drawn Cover plus Difficult. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-23",
-      "svg_sha256": "ff3027fb709cde6e9ff7ce5c3d1628ec8f6a91db8e2a8c7a77b7879e2e25c90c",
+      "svg_sha256": "b7f5efdf485fe2f85df7b158ee09ee3f030823977303518840858817f87670d2",
       "caption_sha256": "67d21a4b8596209ea89c44bb159acc2dcbddfc2e4eb50ad8c509efbe4ab1c14c",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -774,13 +842,21 @@
           "issue": "The map draws the printed 3 Wagons; if scaling places fewer (12136-12138) W1/W3 disappear but the Group 1/2 rings (12166-12167: 'whether or not Wagon 1 is placed') stay. Not stated on the map.",
           "evidence_source_line": "12134-12138; 12166-12167",
           "fix": "Optional foot note 'Wagons 1 and 3 appear only if scaling places them'."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Foot note added (W1 and W3 appear only if scaling places them, 12134-12138). Arrival arrows at all four edge midpoints with the foot note 'edge nearest the Captain' match 12176; at least two Heroes on the Trail (12170). SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-24",
-      "svg_sha256": "15c5bb5f1bd192b1f71de15ddf3ea59687ddef2dd6b457c0dfb402b973fb577a",
+      "svg_sha256": "a23164922f64e64aac69ad7624fb31d41c891321a94f0c482a425e1f827768ee",
       "caption_sha256": "5cf60e2da9c2829fd5aa3c7eed91ce90fb5987fc388e173c934966813dd58545",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -800,10 +876,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Leader line from 'Tarantula·R' runs through the 'Ravine 6-8\"' label (between '6-' and '8\"'); 'Brood·A', '2\"', 'Tarantula·A' and the 1\" ring are tightly packed at the Bundle.",
           "evidence_source_line": "12209; 12232",
-          "fix": "Route the Tarantula·R leader from below the label or place 'Ravine 6-8\"' at the left end (lp 'l'); optional spacing of 'Brood·A'."
+          "fix": "Route the Tarantula·R leader from below the label or place 'Ravine 6-8\"' at the left end (lp 'l'); optional spacing of 'Brood·A'.",
+          "resolution": "RC486 re-review: the 'Ravine 6-8\"' label moved to the east; the Tarantula leader no longer crosses it (render)."
         },
         {
           "severity": "minor",
@@ -811,15 +888,23 @@
           "issue": "The two Resting Tarantulas are drawn overlapping inside a ghosted Webbed Section (illustrative).",
           "evidence_source_line": "12232",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: ravine label moved so the Tarantula leader no longer crosses it. Ravine 7\" wide (6-8\"), bundles at least 4\" apart, Broodmother within 1\" of the central bundle, Tarantulas within 2\", two Resting Tarantulas in a Webbed Section, chests at least 8\" from an edge. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
+      "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-25",
-      "svg_sha256": "d3d0ce84d0e6c74ea277ac5c60cf8ce29e7108d0dd864f8bf1e12a267089ccf9",
+      "svg_sha256": "3162a747a3d0a3d434565093d58a0c4af763206d2523759e7e8d8dbb532d87a4",
       "caption_sha256": "f8ed61a55822f6ba3ebb6b49e3ae9e289110a5e2c64fa8e1158864efa6437853",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "12260-12337",
         "11068-11072",
@@ -845,19 +930,28 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'Undergrowth' label is detached from its piece (about 3\" away) and touches the corner of Party B's 8\"x8\" zone; the min-6\" ruler through G1 runs under the 'G1·R' label.",
           "evidence_source_line": "12280",
-          "fix": "Place the label directly above the piece (lp 't'); no data change."
+          "fix": "Place the label directly above the piece (lp 't'); no data change.",
+          "resolution": "RC486 re-review: 'Undergrowth' now sits directly under its piece, clear of the zone; ruler and G1 label read separately (render)."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Undergrowth label sits under its piece, now Cover plus Difficult. Camp 4\"x4\" at least 8\" from every edge, clues at least 6\" apart and from the Camp, chests at least 8\" from any Clue; the Group 3 6\" ring versus 4\"x4\" Camp conflict (12312, 12280) is genuine and is logged in the spec. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-26",
-      "svg_sha256": "d9a0327f5edbcd3b6ccce2c8266971b8ab760615c889861c338cd371ca6b98e3",
+      "svg_sha256": "5a51b9fb8aee3619f39f6d53be5b20219bb64d2e1128d6ada0145f985c2767cf",
       "caption_sha256": "5a88723a16616abb589343f0598bba92a24c6db77fccd13db59578f6b1f9830e",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "12338-12424",
         "11068-11072",
@@ -875,17 +969,19 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'Grove 6\"' label sits on Group 1's dashed 8\" ring, not on the solid Grove circle where the Chests stand (solid radius 7.75\" from the Mother Tree centre); a reader can take the dashed ring for the Grove. Group 3's 3\" ring also cuts the 'Totem' label.",
           "evidence_source_line": "12363; 12394; 12365",
-          "fix": "Move 'Grove 6\"' inside the solid circle (lp 'i') or add a leader; shift 'Totem' clear of the G3 ring."
+          "fix": "Move 'Grove 6\"' inside the solid circle (lp 'i') or add a leader; shift 'Totem' clear of the G3 ring.",
+          "resolution": "RC486 re-review: 'Grove 6\"' is inside the solid Grove circle; the Totem label is clear of the Group 3 ring (400 ppi crop)."
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The Sacred Grove is stated Cover Terrain (Natural, Difficult for non-Druid/Ranger Heroes unless SPI Check) but is drawn as an unfilled 'Open feature'.",
           "evidence_source_line": "12363",
-          "fix": "Add foot note 'Grove: Cover Terrain (Difficult for most Heroes)' or give the circle a light cover tint."
+          "fix": "Add foot note 'Grove: Cover Terrain (Difficult for most Heroes)' or give the circle a light cover tint.",
+          "resolution": "RC486 re-review: foot note 'Grove: Cover; Difficult for most Heroes.' added (12363)."
         },
         {
           "severity": "minor",
@@ -894,13 +990,21 @@
           "evidence_source_line": "12363; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
           "fix": "In scenario_specs.json set terrain 'coverdiff' on ug (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
           "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Grove label inside the solid Grove circle (radius 7.75\" = 1.75\" Tree radius + 6\"), foot note 'Grove: Cover; Difficult for most Heroes' added (12363), Totem label clear of the Group 3 ring, Undergrowth drawn Cover plus Difficult. Chests evenly spaced on the outer edge. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
+      "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-27",
-      "svg_sha256": "2734cf641bb44ac92e65a17b87f4a132908fdc3a4df3c1098c66d4bad7d18dd5",
+      "svg_sha256": "be4678b91d07f6e883af0bc7bf41e413aec44c7ff37ce029f0d9018c9127f9ee",
       "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -913,10 +1017,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "accepted",
           "issue": "Dense centre: earlier crowding note persists. 'Orrery' sits next to the G2 hexagon (the Orrery diamond is 3\" lower) and 'G2·R' sits beside the Platform, so labels read against the wrong symbols; 'Wall' floats about 3\" above its piece without a leader; the min-10\" ruler crosses the Dome and Lens.",
           "evidence_source_line": "12447; 12452; 12479",
-          "fix": "Add leaders for 'Orrery' and 'G2·R', put 'Wall' under its piece (lp 'b'), and draw the ruler between the Platforms' nearest corners only."
+          "fix": "Add leaders for 'Orrery' and 'G2·R', put 'Wall' under its piece (lp 'b'), and draw the ruler between the Platforms' nearest corners only.",
+          "resolution": "RC486 re-review: Orrery, G2 and Wall labels fixed; the ruler now runs between the nearest Platform corners (11.3\", minimum 10\"). It still crosses the Dome because the Platforms stand at opposite corners of it; no shorter legal depiction exists, and the Lens and Hazard markers stay legible at 400 ppi. A new minor is recorded for the Lens leader."
         },
         {
           "severity": "minor",
@@ -925,15 +1030,30 @@
           "evidence_source_line": "12447; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
           "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
           "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "New: the 'Lens' label leader runs up through the Unstable Floor hazard square u3 (2.4\" below the Lens) to the Lens diamond, so the label reads against the hazard square.",
+          "evidence_source_line": "12451; 12447",
+          "fix": "Give 'Lens' lp 'l' or 'r' inside the Dome (or drop the leader and place the label beside the diamond) so no leader crosses u3. No data change."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Wall label beside its wall, Orrery and G2 labels adjacent to their symbols, G2 moved out of the Platform area. Ruler between the Platforms now runs between nearest corners (11.3\" for the 10\" minimum). Residual: the ruler crosses the Dome. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-28",
-      "svg_sha256": "b844bed7e8bfdac841a66773ef0e90dc3762c888f998aded71223f64d67ab789",
+      "svg_sha256": "356b531bd6c4c92f139abb9c8236adb8f484e46995a39a335db222b0e49fc0c6",
       "caption_sha256": "03d2bafaaa4596a0d5bef8ae1efc15497c01b0a48341eb2d8ae7698e19725dee",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "12495-12568",
         "11068-11072",
@@ -952,10 +1072,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The 'Insight' leader runs through the 'Courtyard 15\"x15\"' label.",
           "evidence_source_line": "12515",
-          "fix": "Label Pedestals below their markers or move the Courtyard label (lp 'b')."
+          "fix": "Label Pedestals below their markers or move the Courtyard label (lp 'b').",
+          "resolution": "RC486 re-review: 'Insight' sits below its Pedestal; no leader crosses the Courtyard label (render)."
         },
         {
           "severity": "minor",
@@ -964,9 +1085,17 @@
           "evidence_source_line": "12515; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
           "fix": "In scenario_specs.json set terrain 'coverdiff' on rub (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
           "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Insight label below its Pedestal, no leader crossing the Courtyard label. Pedestals at least 5\" apart, Courtyard 15\"x15\", Gateway 4-6\" on a long edge, Group 2 arrival W and E (neither party's deployment edge, 12544). SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-29",
@@ -990,10 +1119,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "accepted",
           "issue": "'Unstable 3\"x3\"' label crosses Group 1's 4\" ring outline.",
           "evidence_source_line": "12589; 12599",
-          "fix": "Move the label above the zone (lp 't')."
+          "fix": "Move the label above the zone (lp 't').",
+          "resolution": "RC486 re-review: SVG unchanged (the label already sits left of and below its zone). The Group 1 4\" ring outline passes behind the label's white halo; the label and the ring both read, and no value or relation is obscured. Accepted as a cosmetic residual."
         },
         {
           "severity": "minor",
@@ -1002,13 +1132,21 @@
           "evidence_source_line": "12589; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
           "fix": "In scenario_specs.json set terrain 'coverdiff' on oc1, oc2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
           "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. SVG unchanged by the label move (same auto-placement). Opposite 8\"x8\" corners, four 3\"x3\" zones at least 6\" apart, Group 4 arrival on a random edge (open arrows), exits by the two edges not touching each corner (12618). Residual: the Group 1 4\" ring outline passes behind the 'Unstable 3\"x3\"' label. SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-30",
-      "svg_sha256": "9e206816f2f585c629e480caecb36d5a5162b766b37a856dc04d5757f7709d0d",
+      "svg_sha256": "86c1e24a790341c97356ed833d88475f8d130862158d91a10057b34b98b19172",
       "caption_sha256": "8a22d6432a10ba1a6487af97cd7728fbf46551ac2d9fb5f2b05271016f2cc002",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1030,7 +1168,8 @@
           "status": "open",
           "issue": "'Chamber' and 'Hall 8\"x4\"' labels sit side by side above the Hall and read as one phrase; the two Chests and one Dust marker drawn dashed are small, unlabelled and faint.",
           "evidence_source_line": "12644; 12650",
-          "fix": "Label the east Chamber too or move 'Chamber' to lp 'i'; label one Chest."
+          "fix": "Label the east Chamber too or move 'Chamber' to lp 'i'; label one Chest.",
+          "resolution": "RC486 re-review: both Chambers and the Chest are now labelled (resolved), but the 'Hall 8\"x4\"' label is about 10\" above the Hall box, no leader, between the west 'Chamber' label and the Dust corridor, so it still reads as part of the 'Chamber ... Hall' phrase or as labelling the corridor. Fix: lp 'b' or a leader (lat) on the Hall, or place it inside the Hall box."
         },
         {
           "severity": "minor",
@@ -1038,13 +1177,21 @@
           "issue": "Tablet Cache values are hidden information and are drawn as identical markers (two in one chamber, one in the other).",
           "evidence_source_line": "12649; 12686",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: both Chambers and one Chest labelled. Remaining: the Hall label is detached from the Hall box. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-31",
-      "svg_sha256": "874dfd40bf472988963fea093e871fcae41b49ca2936b22f710864d96b6f2092",
+      "svg_sha256": "8b54212c12d104d649cbaa3089b78204969536d8691607314c447d1630ea6029",
       "caption_sha256": "8b8db7c5a96a1eae9ac8785598503f7e2e33e077ccd7897def5f0e7d8e65120e",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1057,10 +1204,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'Curtain' label sits directly over the Rubble square and about 2\" from the Curtain strip, so 'Curtain' and 'Rubble' both appear to label one square.",
           "evidence_source_line": "12729",
-          "fix": "Give 'Curtain' lp 't' on its own strip or add a leader."
+          "fix": "Give 'Curtain' lp 't' on its own strip or add a leader.",
+          "resolution": "RC486 re-review: 'Curtain' is centred on its own strip (lat), 'Rubble' labels its own piece (render)."
         },
         {
           "severity": "minor",
@@ -1068,15 +1216,23 @@
           "issue": "'left side aisle' / 'right side aisle': viewpoint not stated (logged ambiguity); one aisle each drawn without asserting which is left.",
           "evidence_source_line": "12756-12757",
           "fix": "None; owner decision logged."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Curtain labelled on its own strip, Rubble separate. Reliquary on the altar, two Revenants adjacent, Bone Fragments in separate aisles, Group 1 and 2 in aisles (left/right ambiguity logged). SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-32",
       "svg_sha256": "a1c14185b5723555f90ae393cf0f1670366e5aaa4866d96095cf8ae608c4faa9",
       "caption_sha256": "299cb39bb185df20d39b5f3cf92925614e623ab5c63502c070b309ab61220a9a",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "12778-12876",
         "11068-11072",
@@ -1099,15 +1255,23 @@
           "evidence_source_line": "12803; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
           "fix": "In scenario_specs.json set terrain 'coverdiff' on ru (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
           "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. No change since the last review; Binding Points on the door, Record 3\" beyond the door (12811), Group 3 adjacent to the door Awake (12844), Vault Presence not drawn (12838). SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-33",
-      "svg_sha256": "9d2f56c61238dd744d0aa8fd7d5ee2f8f7a9ae47c005c3075ddf39ceacbd6fd2",
+      "svg_sha256": "91d5bed6462264467175dc145edef175f0930f5a0511d40736b1d3d098003d31",
       "caption_sha256": "9a4a3e0acc9d93714ef2a566f9e884ac4fdadba6e33a9e750341742f9d12eb51",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "12879-12944",
         "11068-11072",
@@ -1124,20 +1288,30 @@
         },
         {
           "severity": "minor",
-          "status": "accepted",
+          "status": "resolved",
           "issue": "UNRESOLVED element verified genuine: Group 3 arrives 'from a random battlefield edge that is not adjacent to either deployment corner' (12927), but the parties deploy in opposite corner zones (12929) and each of the four edges touches one of them; no other line names a qualifying edge. Correctly not drawn; ? tag and note match the key; nothing invented.",
           "evidence_source_line": "12927; 12929",
-          "fix": "None; owner must state which edges qualify."
+          "fix": "None; owner must state which edges qualify.",
+          "resolution": "Superseded by RC486: P-08 (RC486 12927) now places Group 3 at the midpoint of a random battlefield edge; the element is drawn and no ? tag remains."
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'Cave wall' label has no leader and sits next to the Fungi ring and its '2\"' label rather than under its wall.",
           "evidence_source_line": "12899",
-          "fix": "Place 'Cave wall' directly below the wall (lp 'b') or add a leader."
+          "fix": "Place 'Cave wall' directly below the wall (lp 'b') or add a leader.",
+          "resolution": "RC486 re-review: 'Cave wall' now sits directly under its wall; the Fungi ring label moved (render)."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. RC486 element: Group 3 'arrives at the start of Round 3 at the midpoint of a random battlefield edge' (12927). Drawn as arrival arrows at the midpoints of all four edges, solid, labelled 'G3 R3 random edge'; exit arrows (any battlefield edge, 12939) offset to pos 26 with a foot note. Matches the patched text exactly; only one group arrives, so four arrows are alternatives, not four groups; no new rule implied. Cave wall label now directly beneath its wall; Fungi ring label moved. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-34",
@@ -1171,15 +1345,23 @@
           "issue": "Ledges are small (about 6x9 pt at placed size) but labelled 'Ledge' and 'Crumbling' and are drawn per 12965-12969.",
           "evidence_source_line": "12965-12969",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. No change since the last review; Chasm 8\" wide across the long edges, Map and Stone each 3\" from the end ledges, 'start' edge ambiguity logged, no exit (13009). SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-35",
       "svg_sha256": "3b89e9e697dfd21b03168df9c848e52ed64be66b4176e0b60571abbbf40750bd",
       "caption_sha256": "22bd865dbd2cb161ee661022be8f4bbb937a72445eae74b03172d96f7a665c23",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "13015-13079",
         "11068-11072",
@@ -1195,15 +1377,23 @@
           "evidence_source_line": "13035; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
           "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
           "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. No change since the last review; central 8\"x8\" Safe Zone, 3\" Hero separation, Main Exit with two perpendicular Collapsed edges (13035, 13062). SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-36",
-      "svg_sha256": "2db3b4a5e9fd62d38aef685fffd6ca4913155d730da6be4d41b9924924a2be9a",
+      "svg_sha256": "542956e4bcafdff489231a0442393ae2844f7a8995b302e0c2f5f5d4de29c5dc",
       "caption_sha256": "ac1bc8f01ad5029bbd8a9b4f22d099cc6bbd345554c44fcd5b796ed09c4ba0ba",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "13080-13186",
         "11068-11072",
@@ -1222,10 +1412,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'Low wall' label floats about 4\" above its wall without a leader; the Guard hexagon overlaps the Chest inside the same Tower.",
           "evidence_source_line": "13104; 13106; 13159",
-          "fix": "Put 'Low wall' beside lw1 and offset the Guard from the Chest; no data change."
+          "fix": "Put 'Low wall' beside lw1 and offset the Guard from the Chest; no data change.",
+          "resolution": "RC486 re-review: 'Low wall' labels lw2 with a leader; the Guard is offset from the Chest in its Tower (render)."
         },
         {
           "severity": "minor",
@@ -1241,13 +1432,21 @@
           "issue": "Sweep check: low defensive walls now Impassable (870 lists low walls Impassable); hatched pieces lw1/lw2 render correctly. Step 7 distances unaffected.",
           "evidence_source_line": "13104; 870",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Low wall label beside lw2 with leader, Guard offset from the Chest in its Tower. Towers 3\", Tent 3\"x3\", Plans inside the Tent, two Guards on two different Towers, R4 arrival (random edge, open arrows) and exit all edges (13174, 13176). SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-37",
-      "svg_sha256": "282c238a70dcafc0ddaee49cb4d89bbcf81a4d6a4bb6972c471faa00c9489c49",
+      "svg_sha256": "5619ae31958308dad68169e3ed2f89313d701ac67d1d60ad51a004fe4382978f",
       "caption_sha256": "13cbf14c7b47fb52d82cf76cec9f9e75d7accc5e4e00765079f665baafed8050",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1274,10 +1473,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'Deep Shadow' label sits in the white area left of the passage, not on the hatched passage; 'min 12\"' label sits on Party A's dashed zone boundary.",
           "evidence_source_line": "13212; 13214",
-          "fix": "Move 'Deep Shadow' onto the passage hatch (lat inside) and the 'min 12\"' label below the zone line."
+          "fix": "Move 'Deep Shadow' onto the passage hatch (lat inside) and the 'min 12\"' label below the zone line.",
+          "resolution": "RC486 re-review: 'Deep Shadow' has a leader onto the passage hatch; 'min 12\"' sits clear of the zone line (render)."
         },
         {
           "severity": "minor",
@@ -1285,15 +1485,23 @@
           "issue": "'about 18\" long' versus 'runs from one short battlefield edge to the other' of a 36\" board (logged ambiguity) and Party A 'farther from the Heart' versus Heart 'at least 12\" from Party A's edge' (circular, logged): passage drawn winding edge to edge with no length printed; Heart in the lower half satisfies both.",
           "evidence_source_line": "13212; 13214; 13239",
           "fix": "None; owner decision logged."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Deep Shadow label leader onto the passage hatch; 'min 12\"' label clear of the zone line; alcove openings drawn. Heart 12\" or more from Party A's edge, Shade within 1\", Group 2 within 2\" of a Font, ambiguities (Party A edge, passage length) logged. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
+      "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-38",
-      "svg_sha256": "ff7ff87b3e8023c82972fb2402eb64c3d1323bb66c2c0320a64904703ab720bf",
+      "svg_sha256": "93547f1b5ecbdbd5ae8161b3a0388816f939db06d610b85543843746abd6f641",
       "caption_sha256": "3cbe27fbfab686100e750213d176449b681abb3e56937651555a25acd81cb30d",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "13260-13363",
         "11068-11072",
@@ -1310,17 +1518,26 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'G1·A' label is about 7\" above its hexagon at the end of a long leader that crosses the 2\" ring; '3\"', '2\"' and 'Caller·A' labels crowd the Binding Circle.",
           "evidence_source_line": "13315; 13285",
-          "fix": "Place 'G1·A' beside its hexagon (lp 'l')."
+          "fix": "Place 'G1·A' beside its hexagon (lp 'l').",
+          "resolution": "RC486 re-review: 'G1·A' sits beside its hexagon; the Binding Circle labels are separate (render)."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: G1·A label beside its hexagon. Orbs 1.5\" from the Circle edge and evenly spaced (120 degrees), Group 1 within 3\" of the Circle (13315), Group 2 in an approach tunnel. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-39",
-      "svg_sha256": "938d122ff2d47f009d6233d5dfaed539e111afc3722a2438721498c9cf241739",
+      "svg_sha256": "a4b70812445a84cebe546d2d37183e4fe3e6b93fb5d46a4db68f6a185f1525db",
       "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1333,10 +1550,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The 'min 6\"' rulers c1-c2 and G1-c2 are close to collinear and the c1 ruler ends under the 'G1·R' label; the number of Random Monster Groups is variable (10.6.4) but two are drawn without a note.",
           "evidence_source_line": "13388; 13402",
-          "fix": "Offset one ruler and add foot note 'Two Monster Groups drawn; the number comes from 10.6.4'."
+          "fix": "Offset one ruler and add foot note 'Two Monster Groups drawn; the number comes from 10.6.4'.",
+          "resolution": "RC486 re-review: G1 moved so the two 'min 6\"' rulers diverge and no ruler ends under a label; foot note 'Two Monster Groups drawn; the number follows 10.6.4.' present. A different minor (Wall label) is recorded separately."
         },
         {
           "severity": "minor",
@@ -1345,15 +1563,30 @@
           "evidence_source_line": "13386; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
           "fix": "In scenario_specs.json set terrain 'coverdiff' on ru (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
           "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "The 'Wall' label sits about 3\" below the wall it names, directly under Chest c2 and its 'min 6\"' ruler, so it reads as labelling the Chest (otherwise unlabelled) rather than the wall at the end of the 'min 6\"' label.",
+          "evidence_source_line": "13386",
+          "fix": "Place 'Wall' beside or under wall wl1 (lp 'b') or add a leader (lat) to wl1; no data change."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: G1 moved clear of the ruler, rulers no longer collinear, foot note 'Two Monster Groups drawn; the number follows 10.6.4' added. Chests at least 6\" apart and 8\" from both zones; Groups at least 6\" from every Chest. Remaining: the Wall label is detached from its wall. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-40",
       "svg_sha256": "3c9917e4cecfd02907231cf4f73cc5eb78c62d4a4b39531ae46344bd2cd269cd",
       "caption_sha256": "e8be7e6d362e7365c34f59828aae77aa3ec01578618e731161d65f110755230c",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "13418-13487",
         "11068-11072",
@@ -1375,15 +1608,23 @@
           "issue": "Frozen Debris is drawn Cover and Difficult (Cover Terrain tagged Difficult, 13438).",
           "evidence_source_line": "13438",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. No change since the last review; Laboratory 8\" wide by 6\" tall holds three Reagent Chests and the Golem (13463), Treasure Chest in a nearby structure. SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-41",
-      "svg_sha256": "29ba464c49a092653bacd8024d54af9e4db7483445de38930ebb5f4841835d24",
+      "svg_sha256": "6864534af2d9fa263d3d45fb9a6dbeb6a3297d5f4c5378e6d618142a05467f5c",
       "caption_sha256": "6907dc8ea9a1e2bd22bc70c530f9681ab771df1bd34b463d7b1b9fd86338c613",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "13488-13556",
         "11068-11072",
@@ -1400,17 +1641,26 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The mausoleum outline is unlabelled and the 'Crypt' and 'Grand Crypt' labels sit outside it (above and below), so they read as labelling the outline rather than the crypt rectangles.",
           "evidence_source_line": "13508",
-          "fix": "Label inside each crypt (lp 'i') and add 'Mausoleum' on the outline."
+          "fix": "Label inside each crypt (lp 'i') and add 'Mausoleum' on the outline.",
+          "resolution": "RC486 re-review: 'Mausoleum' labels the outline; 'Crypt' x2 and 'Grand Crypt' labelled inside their rectangles (render)."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Mausoleum labelled on its outline; Crypt, Grand Crypt, Grand Hall labelled inside. Exactly five Sarcophagi, three Crypts including the larger Grand Crypt, one Chest in the Grand Hall. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-42",
-      "svg_sha256": "bc993910fd3d816de983a4b381761e45886bff174a433e39f11e9583548cac9b",
+      "svg_sha256": "bf2126e3de536ae105a3a428591128e6ebf6a1dd41344ada61f3bcd8e7b26410",
       "caption_sha256": "08b85b987ca1b35e5c4a428829cd4d195e12fa27a85be74bd92d7549f9ad93be",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1430,10 +1680,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The three Chests and four Conduits are grey-dashed, small and mostly unlabelled; at placed size they are hard to identify without the key.",
           "evidence_source_line": "13577; 13579",
-          "fix": "Label one Chest, or draw the four Conduits and three Chests in the solid state with a foot note that positions are free."
+          "fix": "Label one Chest, or draw the four Conduits and three Chests in the solid state with a foot note that positions are free.",
+          "resolution": "RC486 re-review: one Chest and one Conduit labelled; guardians, workbenches and the 3\" ring read clearly (render)."
         },
         {
           "severity": "minor",
@@ -1448,13 +1699,21 @@
           "issue": "Sweep check: Workbenches now Impassable (870); drawn hatched, 6.0\" from each zone (step 7 limit met); check_scenmaps clean.",
           "evidence_source_line": "13577; 870; 11068",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: one Chest and one Conduit labelled. Two Workbenches each with a Guardian adjacent, third Guardian within 3\" of the centre (13599), foot note present. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-43",
-      "svg_sha256": "fc11b58d88b2dc21fbed09e7ad1d7689d6322366e43d030573ec246c00090499",
+      "svg_sha256": "32fb8d989bc129f8594e95e9ddc99d3f1db5dbc1cfdf7507e76fd7a6a0e0bc96",
       "caption_sha256": "696980c4a640dc106f7560f39ad9ff073034130aa1d42026b0947bdd26ff0622",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1466,10 +1725,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The Hoard's 2\" ring around the Wyrm is cut by the 'Pillar', '2\"' and 'Hoard' label halos and is not read as a closed ring; Ice Pillars are drawn about 1.5\" although described as 'large'.",
           "evidence_source_line": "13637; 13639",
-          "fix": "Move 'Pillar' and 'Hoard' off the ring; optionally enlarge the Pillars (illustrative)."
+          "fix": "Move 'Pillar' and 'Hoard' off the ring; optionally enlarge the Pillars (illustrative).",
+          "resolution": "RC486 re-review: Pillars enlarged to 2.5\" and the Pillar label moved off the ring. The Hoard ring is still interrupted by the '2\"' and 'Hoard' label halos but reads as one ring (300 ppi crop)."
         },
         {
           "severity": "minor",
@@ -1477,13 +1737,21 @@
           "issue": "Edges drawn long; text says only 'opposite edges' (foot note).",
           "evidence_source_line": "13671",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Pillars enlarged to 2.5\" and the Pillar label moved off the Hoard ring. Lair 12\"x12\", Wyrm at the centre, Hoard within 2\" (13639). Residual: the Hoard ring is interrupted by the '2\"' and 'Hoard' label halos. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-44",
-      "svg_sha256": "b6b3c7fc8e88f5651194fd53d4046d334087a89cca2cfcf89690045f1e6957b4",
+      "svg_sha256": "1f25e4ea1a092601eb838fb366e4e8020ce145e66a88d685a5b9f5e73705299a",
       "caption_sha256": "a5cafdb87a508cd6d929132674b0e028c6598d957cc8b2156efe33fe0625005d",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1502,10 +1770,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Mephit leader and the 'Throne chamber' label overlap near the right end of the label.",
           "evidence_source_line": "13739",
-          "fix": "Move 'Throne chamber' to lp 't' of the chamber."
+          "fix": "Move 'Throne chamber' to lp 't' of the chamber.",
+          "resolution": "RC486 re-review: 'Throne chamber' wrapped inside the chamber; the Mephit leader no longer overlaps it (render)."
         },
         {
           "severity": "minor",
@@ -1513,15 +1782,23 @@
           "issue": "Group 1 'outer corridors' are not drawn (corridors are generic); one Mephit drawn (foot note).",
           "evidence_source_line": "13743; 13739",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Throne chamber label wrapped, Mephit leader clear. Bailiff on the Throne, one Mephit within 2\" (13739, foot note), chests in side chambers, Group 1 in the outer corridors. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-45",
-      "svg_sha256": "caa653428e145c59ba531747eba3f0cd3b5bdad7d98c6ab7305869e7fdfffb04",
+      "svg_sha256": "4b3e02446a4903a6c9e30a3e282771223e92e94955079a5a72d95c2632cea321",
       "caption_sha256": "544c8db44d30d68a170e82b87f93e59acd8c613cd1a78241cdd5b6da180b07fa",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "13771-13837",
         "11068-11072",
@@ -1532,10 +1809,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'Oasis 8\"x8\"' label sits about 3.5\" above the Oasis outline with no leader, between the Dune and G2; the 2\" and 3\" rings and their labels overlap at the Oasis top right.",
           "evidence_source_line": "13791; 13811; 13815",
-          "fix": "Put 'Oasis 8\"x8\"' inside or directly above the box (lp 'i')."
+          "fix": "Put 'Oasis 8\"x8\"' inside or directly above the box (lp 'i').",
+          "resolution": "RC486 re-review: 'Oasis 8\"x8\"' sits directly above the box; the 2\" and 3\" ring labels are separated (render)."
         },
         {
           "severity": "minor",
@@ -1544,15 +1822,23 @@
           "evidence_source_line": "13791; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
           "fix": "In scenario_specs.json set terrain 'coverdiff' on dn1, dn2, dn3, oc1, oc2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
           "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Oasis label directly above the box; ring labels separated. Oasis 8\"x8\", Chieftain within 2\" of the Wellspring (13811), Group 1 within 3\" of the Chieftain (13815), chests behind dunes. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-46",
       "svg_sha256": "36d0d10666a2892bf08c1b85665b1d78d77f4bc435583f91dbb24cc8f3e4b037",
       "caption_sha256": "fb6594f930d50d81cbc37664daf0cca076daedeef6d97a663abf493565575591",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "13838-13902",
         "11068-11072",
@@ -1575,13 +1861,21 @@
           "evidence_source_line": "13858; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
           "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
           "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. No change since the last review; Altar 2\"x2\", three Loci 4-6\" from it, Group 1 within 4\" of a Locus (13881), zones marked default, Guardians and Brazier not drawn (13877, 13888). SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-47",
-      "svg_sha256": "61869909f3f97babbebb08281cebcdb48c211a59854208ba3401c9870372bcd0",
+      "svg_sha256": "ae44621033fdcf16aeec9c5b72aea6274f531cfd94027a21efcddfb2212df6fe",
       "caption_sha256": "8f66e4b11b21a3e9422a15715b49fb82e77c071d1d8c7709f1ded3a47ff2719c",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1603,10 +1897,11 @@
         },
         {
           "severity": "minor",
-          "status": "accepted",
+          "status": "resolved",
           "issue": "UNRESOLVED element verified genuine: the Tomb Herald 'starts Awake guarding the central Sarcophagus' (13948) but the three Sarcophagi are placed 'in separate chambers' (13925) and none is designated central. Correctly not drawn; ? tag and note match the key.",
           "evidence_source_line": "13948; 13925",
-          "fix": "None; owner must say which Sarcophagus is central."
+          "fix": "None; owner must say which Sarcophagus is central.",
+          "resolution": "Superseded by RC486: P-09 (RC486 13948) now designates the Royal Sarcophagus nearest the battlefield centre; the Herald is drawn."
         },
         {
           "severity": "minor",
@@ -1614,13 +1909,21 @@
           "issue": "Pressure Plates (1d3, placed alternately before deployment, 13959) are not drawn; zone size and order rest on the step 11 default and are marked 'default'.",
           "evidence_source_line": "13959; 13955; 11072",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. RC486 element: 'Starts Awake guarding the Royal Sarcophagus nearest the battlefield centre' (13948). Herald drawn beside sa3, which is nearest the centre (distances 8.2\", 9.9\", 10.7\" from (18,18)); drawn grey dashed (position not fixed beyond 'guarding'), foot note states the layout is open, and check_one asserts the guarded item is the nearest. Matches the patched text; the three Sarcophagi stay in separate chambers (13925); no new rule implied. Hall about 5\"x10\", zones 8\"x8\" default (11072). SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-48",
-      "svg_sha256": "40c7c6f8b8dcfb1e59d7fdb504b6ba3eb16974a70a163db6cebc7ca4691cb28b",
+      "svg_sha256": "f672a58ef6499e63dcd84b23bd4ebd3cc6551f44b4ba2e74f522d1dcdf9a5a4e",
       "caption_sha256": "54ef4455882afc5eabba98a2e45bf7c2492e506a281d52828d5c07adde12f0dc",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1633,10 +1936,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The Shifting Sands Zone has no stated size or position (only 'central'); it is drawn as a 10\" circle with status CONSTRAINED. It is drawn grey-dashed, but the label sits outside it next to a Dune and reads as labelling the Dune.",
           "evidence_source_line": "13991; 14007",
-          "fix": "Mark the zone ILLUSTRATIVE in the spec (size not stated) and place its label inside the circle."
+          "fix": "Mark the zone ILLUSTRATIVE in the spec (size not stated) and place its label inside the circle.",
+          "resolution": "RC486 re-review: Shifting Sands Zone is ILLUSTRATIVE in the spec and its label is inside the circle (render)."
         },
         {
           "severity": "minor",
@@ -1659,9 +1963,17 @@
           "issue": "Sweep check: Rocks ('rock shelves') stay on the neutral Impassable-or-Blocking swatch; unlisted, nearest defaults (boulders 871) are Impassable or Blocking, so neutral is correct.",
           "evidence_source_line": "13991; 871",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: the Shifting Sands Zone is now ILLUSTRATIVE (size not stated) with its label inside. Burrowed Sandwyrm and Hoard correctly not drawn; edges drawn long with foot note. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-49",
@@ -1704,9 +2016,17 @@
           "issue": "Sweep check: 'broken statuary' now Impassable; 870 lists only 'statue bases' (Impassable), so the type is an inference for an unlisted feature, acceptable and illustrative.",
           "evidence_source_line": "14053; 870",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. No change since the last review; Colossus as Blocking central feature, Heartstone and Rune inside, Boss inert (14082), exit all edges (14099). SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-50",
@@ -1734,13 +2054,21 @@
           "issue": "Two Flame Mephits (Small, 1\"x1\") drawn as Monster hexagons; Cinder Lord not drawn (appears only if the prison is broken).",
           "evidence_source_line": "14159; 14180",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. No change since the last review; Dais with three Glyphic Stones 6\" from the centre at 120 degrees, two Mephits guarding the Dais, Cinder Lord not drawn (14159). SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-51",
-      "svg_sha256": "b0073d136d089c90fcbc88eff8b09e6995a17f77820923ac250eaa1059a9fea2",
+      "svg_sha256": "8844d12d65b43fc0ba910cfbeae7d3d12cef0ec4ec829a099f094797e817ace9",
       "caption_sha256": "8ed4b790280f1a99b72e41841c37f130d4eb71445f8faf6816ce1ab290d5845e",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1770,26 +2098,36 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "accepted",
           "issue": "Group 2 'patrolling murky water' is drawn in an outer Shallow patch; the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258). Possible unlogged ambiguity. Sanctum label sits over the Sanctum water.",
           "evidence_source_line": "14252; 14258",
-          "fix": "Log in ambiguity-triage or draw Group 2 in the Barrow water."
+          "fix": "Log in ambiguity-triage or draw Group 2 in the Barrow water.",
+          "resolution": "RC486 re-review: genuine ambiguity, not an invention: the only defined Murky Water is 'within the Sunken Barrow mound' (14258) while Group 2 'patrols murky water' (14252) outside it. The map draws an illustrative grey marker in an outer Shallow patch and logs the ambiguity in scenario_specs.json and scenario-coverage.json. Follow-up for the orchestrator: add it to ambiguity-triage.json."
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "New: the relocated Group 1 hexagon overlaps the Chest glyph on the Bog Island (island is 4\" across).",
           "evidence_source_line": "14251; 14219",
-          "fix": "Offset g1 about 0.8\" from c1 or enlarge the island to radius 2.5\"."
+          "fix": "Offset g1 about 0.8\" from c1 or enlarge the island to radius 2.5\".",
+          "resolution": "RC486 re-review: Bog Island enlarged to radius 2.5\" and G1 offset 1.2\" from the Chest; no overlap (render)."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: G1 offset from the Chest on the enlarged Bog Island (radius 2.5\"). Group 2 is still drawn in an outer Shallow patch; the Murky Water rule covers only the Barrow (14258) so 'patrolling murky water' (14252) is a genuine ambiguity, logged in the spec and coverage but not yet in ambiguity-triage.json. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-52",
-      "svg_sha256": "3e1bc4dc058818e08345e3bcf266512e08267d06abcf2045ecea34e4538759c3",
+      "svg_sha256": "cea4ff7438bdc691992d48fc32ff48582f71fc2a995a8b9a528d0b588f065d46",
       "caption_sha256": "6622d45c42690e499c14e13929ac78d0df19fabfc16359fbed143a1c2e24970a",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "14268-14342",
         "11068-11072",
@@ -1808,26 +2146,36 @@
         },
         {
           "severity": "minor",
-          "status": "accepted",
+          "status": "resolved",
           "issue": "UNRESOLVED element verified genuine: Escape Conditions require escape for the Sunstone Amulet and Pile rewards but name no edge or zone (14333); the any-edge fallback is stated only for Secondary Objectives (10984) and 14770 defers to 'a legal extraction edge ... as the scenario requires'. Not drawn; ? tag matches the key.",
           "evidence_source_line": "14333; 10984; 14770",
-          "fix": "None; owner must state the extraction edge."
+          "fix": "None; owner must state the extraction edge.",
+          "resolution": "Superseded by RC486: P-10 (RC486 14333) now states 'Escape via any battlefield edge'; exit arrows are drawn."
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The numbered reeds marker is labelled 'G1' (reads as a Monster Group glyph; FIG-53/54 say 'Reeds 1' and 'Vine 1'); the 'Shaman·A' leader runs through the third Pile marker; Troglodytes (2 + APL/2, max 6) drawn as one hexagon without a foot note.",
           "evidence_source_line": "14323; 14319",
-          "fix": "Label 'Reeds 1'; route the Shaman leader aside; add foot note 'one Troglodyte drawn'."
+          "fix": "Label 'Reeds 1'; route the Shaman leader aside; add foot note 'one Troglodyte drawn'.",
+          "resolution": "RC486 re-review: marker labelled 'Reeds 1'; Shaman leader clear of the Pile markers; foot note 'One Troglodyte drawn (count 2 + APL/2, max 6).' present."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. RC486 element: 'Escape via any battlefield edge' (14333). Exit arrows on all four edges, solid, at the midpoints; no arrival edge exists in this scenario. Matches the patched text; no new rule implied. Also fixed: reeds marker labelled 'Reeds 1', Shaman leader clear, one-Troglodyte foot note. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-53",
-      "svg_sha256": "889d9d0947263bde1ad28a779518e995f3b7b716336767b4b7ab5e7f577e5d7d",
+      "svg_sha256": "7e0ae35e86dae55209bdb00bd78e7539d2514280924b72d266481bcd2cfb1816",
       "caption_sha256": "a265935108bb677a0691bdbdc83c6734d8a6df1a7cd0d7d27c840dd94b11e62f",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "14343-14417",
         "11068-11072",
@@ -1847,13 +2195,22 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The Fen is 'deep mud and shallow pools': drawn only as the Water pattern, with a 16\" diameter that the text does not state, status CONSTRAINED.",
           "evidence_source_line": "14368; 852",
-          "fix": "Mark the Fen ILLUSTRATIVE and add foot note 'Fen: deep mud (Difficult) and shallow pools'."
+          "fix": "Mark the Fen ILLUSTRATIVE and add foot note 'Fen: deep mud (Difficult) and shallow pools'.",
+          "resolution": "RC486 re-review: Fen is ILLUSTRATIVE (grey dashed) with foot note 'Fen: deep mud (Difficult) and shallow pools.'"
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Fen is ILLUSTRATIVE with the foot note 'deep mud (Difficult) and shallow pools'. Corner zones 8\"x8\" default, Titan Awake in the Fen, numbered Razor Reeds marker with 6\" ring near a Geode (14399), exit for The Heist only. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-54",
@@ -1890,15 +2247,23 @@
           "issue": "Second Thornling group not placed until a Hero comes within 6\" of its numbered vine marker: marker 'Vine 1' with 6\" ring drawn; Treant (Huge) drawn grey-dashed 'near the Heartwood'.",
           "evidence_source_line": "14469",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. No change since the last review; Grove 8\"x8\" of Thorny Vines with the Heartwood, chests in Muck, Vine marker with 6\" ring, second Thornling group undrawn (14469). SVG unchanged since the previous review; carried forward after re-reading against RC486.",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-55",
-      "svg_sha256": "77ae19e4df061cc2c55cdb8aeb9f8a5c1c3ca8faeb58092d1bafc419d2d21e54",
+      "svg_sha256": "c215176a27c3d5039c3654ce67e2b0de7adf8eaa689cc974d8ce23d96e594a75",
       "caption_sha256": "301f619dd66ddace585da3361de4e88462ad56df541343ea6d8c1028d94c379d",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "14497-14578",
         "11068-11072",
@@ -1926,26 +2291,36 @@
         },
         {
           "severity": "minor",
-          "status": "accepted",
+          "status": "resolved",
           "issue": "UNRESOLVED elements verified genuine: (a) Group 1 enters 'from a water edge' (14552) but no battlefield edge is called a water edge; (b) Escape Conditions (14568) name no extraction edge or zone. Both correctly not drawn; the two ? tags match the key.",
           "evidence_source_line": "14552; 14568",
-          "fix": "None; owner decisions logged."
+          "fix": "None; owner decisions logged.",
+          "resolution": "Superseded by RC486: P-11 and P-12 (RC486 14552, 14568) now state the random short edge midpoint and escape via any battlefield edge; both are drawn."
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The Ritual Island radius (4\") is not stated but is drawn with a solid heavy outline; the water square (20\") is dashed.",
           "evidence_source_line": "14522",
-          "fix": "Draw the island dashed (draw 'open') or mark ILLUSTRATIVE."
+          "fix": "Draw the island dashed (draw 'open') or mark ILLUSTRATIVE.",
+          "resolution": "RC486 re-review: Ritual Island drawn grey dashed (radius not stated); Chests sit on islets."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. RC486 elements: (a) Group 1 'enters at the midpoint of a random short battlefield edge at the start of Round 3' (14552): arrival arrows at the N and S midpoints only (N and S are the short edges, 11058), solid, labelled 'G1 R3 random short edge'; (b) 'Escape via any battlefield edge' (14568): exit arrows on all four edges, offset (N/S pos 10, W/E pos 14) with a foot note. Matches the patched text exactly; no new rule implied. Also fixed: island drawn dashed (radius not stated), Chests on islets. SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     },
     {
       "id": "FIG-56",
-      "svg_sha256": "a637a27b407553549285e7837b79c96899f05380681059db0fbee7d6da2f1e8b",
+      "svg_sha256": "90606eb507a023889cf4a40a421de456189cec6404cf50102db36de78ba177c9",
       "caption_sha256": "d99b1e8d5a335dc3f1b5f629a6ab67b2e4552d378a98b9facd1468da3dc015ea",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "14579-14648",
         "11068-11072",
@@ -1965,13 +2340,22 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'The edges are Crumbling Banks' (14599; 852: Open, Difficult, Natural) are not shown or footnoted.",
           "evidence_source_line": "14599; 852",
-          "fix": "Add foot note 'Pool edges: Crumbling Banks (Difficult)'."
+          "fix": "Add foot note 'Pool edges: Crumbling Banks (Difficult)'.",
+          "resolution": "RC486 re-review: foot note 'Pool edges: Crumbling Banks (Difficult).' added (14599)."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: foot note 'Pool edges: Crumbling Banks (Difficult)' added (14599). Sinkhole 10-12\" with three Hoard Chests, zones 6\" default, Serpent not drawn (14626). SVG changed since the previous review (hash updated).",
+          "evidence_source_line": "see checked_against_lines",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
+      "reviewed_at": "2026-10-07T10:58:00Z"
     }
   ],
   "summary": {
@@ -2064,5 +2448,81 @@
       ],
       "result": "All 9 previous majors resolved (FIG-47 Deep Sand/Fallen Pillar, FIG-51 Reeds and Group 1 on island, FIG-52 Reed screen, FIG-53 Razor Reeds, FIG-54 Mangroves/Muck, FIG-55 Reeds and Chests on islets, FIG-56 Reeds); S1 Cover+Difficult sweep verified on 15 maps; no new major."
     }
+  },
+  "rc486_rereview": {
+    "reviewed_at": "2026-10-07T10:58:00Z",
+    "figures": [
+      "FIG-13",
+      "FIG-14",
+      "FIG-15",
+      "FIG-16",
+      "FIG-19",
+      "FIG-20",
+      "FIG-21",
+      "FIG-22",
+      "FIG-23",
+      "FIG-24",
+      "FIG-25",
+      "FIG-26",
+      "FIG-27",
+      "FIG-28",
+      "FIG-29",
+      "FIG-30",
+      "FIG-31",
+      "FIG-32",
+      "FIG-33",
+      "FIG-34",
+      "FIG-35",
+      "FIG-36",
+      "FIG-37",
+      "FIG-38",
+      "FIG-39",
+      "FIG-40",
+      "FIG-41",
+      "FIG-42",
+      "FIG-43",
+      "FIG-44",
+      "FIG-45",
+      "FIG-46",
+      "FIG-47",
+      "FIG-48",
+      "FIG-49",
+      "FIG-50",
+      "FIG-51",
+      "FIG-52",
+      "FIG-53",
+      "FIG-54",
+      "FIG-55",
+      "FIG-56"
+    ],
+    "figures_reviewed": 42,
+    "verdicts": {
+      "PASS": 19,
+      "PASS_WITH_NOTES": 23
+    },
+    "findings_by_severity_status": {
+      "major/resolved": 16,
+      "minor/accepted": 25,
+      "minor/open": 3,
+      "minor/resolved": 124
+    },
+    "open_minor_figures": [
+      "FIG-27",
+      "FIG-30",
+      "FIG-39"
+    ],
+    "critical_open": 0,
+    "major_open": 0,
+    "four_rc486_elements": {
+      "FIG-33": "Group 3 arrives at the midpoint of a random battlefield edge at the start of Round 3 (12927): arrows at the four edge midpoints, solid; matches P-08",
+      "FIG-47": "Tomb Herald guards the Royal Sarcophagus nearest the battlefield centre (13948): drawn beside the nearest of three; matches P-09",
+      "FIG-52": "Escape via any battlefield edge (14333): exits on all four edges; matches P-10",
+      "FIG-55": "Group 1 enters at the midpoint of a random short edge at the start of Round 3 (14552; N/S) and escape via any battlefield edge (14568): matches P-11 and P-12"
+    },
+    "no_new_rule_implied": "Each of the four elements is drawn only as the patched sentence states; positions the text leaves open (which of four edges, which short edge, Herald's exact side of its Sarcophagus) are shown as alternatives or grey dashed.",
+    "line_number_check": "P-08..P-12 are single-line replacements; RC485 and RC486 differ only at lines 5, 12927, 13948, 14333, 14552, 14568, so no citation shifted. All element line citations in scenario_specs.json lie inside their scenario span and point at lines of the expected heading type (script); three Objective Placement bullet lists and Group bullets confirmed by eye.",
+    "previously_open_minors": "29 previously open minors: 24 resolved; 4 accepted with reasons (FIG-19 '5-7\" label on ring', FIG-27 ruler across the Dome, FIG-29 label halo, FIG-51 Group 2 murky-water ambiguity); 1 still open (FIG-30 Hall label detached, which the illustrator counted as fixed). New open minors: FIG-27 Lens leader through hazard u3, FIG-39 Wall label detached from its wall (the earlier FIG-39 ruler item is resolved). Remaining open minors: FIG-27, FIG-30, FIG-39 (all minor, none affects a rule or number).",
+    "method": "Specs and scenario text read side by side; every SVG rendered with figures/src/test/render.py at 200 ppi (equal to the 243 pt placed column width) and viewed; crops at 300-400 ppi for FIG-26, 27, 30, 39, 43; make_figures.py run in a scratch copy to confirm byte-identical SVGs and passing geometry assertions.",
+    "not_checked": "Page-placed PDF, column balancing and physical print. Five maps (FIG-47, 52, 53, 54, 55) are 274.2 pt tall because of three-line foot notes; figures/README says maps stay at most about 260 pt, so the keep/pagination audit should confirm they place whole."
   }
 }
