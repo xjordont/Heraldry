@@ -19,7 +19,7 @@
     {
       "check": "configuration",
       "status": "PASS",
-      "detail": "Configuration reconciles; account billing and model access require live checks"
+      "detail": "Configuration reconciles; runtime model access requires live checks"
     },
     {
       "check": "agent_contracts",
@@ -36,7 +36,7 @@
       "status": "PASS",
       "detail": {
         "primary_pages": 14,
-        "all_selected_pages": 19,
+        "all_selected_pages": 23,
         "availability": "optional"
       }
     },
@@ -44,6 +44,11 @@
       "check": "script_syntax",
       "status": "PASS",
       "detail": "Python scripts parse successfully"
+    },
+    {
+      "check": "shipped_baseline",
+      "status": "PASS",
+      "detail": "Archived RC484 baseline hash verified; historical launch-kit checksums are in docs/history/launch-kit/"
     }
   ],
   "runtime_observed": {
@@ -52,25 +57,25 @@
       "git": true,
       "python3": true,
       "typst": false,
-      "pandoc": false,
-      "pdfinfo": false,
-      "pdftoppm": false,
+      "pandoc": true,
+      "pdfinfo": true,
+      "pdftoppm": true,
       "qpdf": false,
-      "gs": false
+      "gs": true
     },
     "python_modules": {
-      "typst": true,
+      "typst": false,
       "fitz": true,
       "pypdf": true,
-      "markdown_it": true,
+      "markdown_it": false,
       "fontTools": true,
       "PIL": true
     }
   },
   "external_inputs": {
-    "claude_model_access_and_credit": "VERIFY_IN_CLAUDE",
+    "claude_model_access": "VERIFY_IN_CLAUDE",
     "cloud_network_and_dependency_provisioning": "VERIFY_IN_CLAUDE",
-    "original_illustrations": "SUPPLY_OR_USE_CONFIGURED_SERVICE; ART_LIGHT_FALLBACK",
+    "original_illustrations": "CHATGPT_WORK_GENERATED_MASTERS; INTEGRATE_AND_REVIEW",
     "physical_inkjet_proof": "NOT TESTED; DOES NOT BLOCK FILE COMPLETION",
     "commercial_cover_wrap": "NOT APPLICABLE UNLESS SEPARATELY REQUESTED"
   },

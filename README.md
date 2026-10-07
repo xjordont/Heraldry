@@ -10,7 +10,7 @@ Select this repository and main, then provide your requested change with:
 
 > Read CLAUDE.md, docs/WORKFLOW.md and production/STATE.md. Implement the requested iteration on main using the active manuscript in source/versions.json. Preserve earlier snapshots. Advance the RC number once if manuscript text changes. Follow MASTER_PROMPT.md, rebuild, verify, inspect and package the result, update the ledgers, and push verified work to main. Do not create a branch unless I explicitly decide to use one.
 
-The project already has a working Typst build and 19 rules figures. [MASTER_PROMPT.md](MASTER_PROMPT.md) is its standing design/production contract. Resume the existing work; do not restart it. Budgets and actual prior spend remain subject to the account and [budget ledger](production/budget.json).
+The project already has a working Typst build, 57 editable rules figures and twelve ChatGPT-generated atmospheric masters. [MASTER_PROMPT.md](MASTER_PROMPT.md) is its standing design/production contract. Resume the existing work; do not restart it.
 
 ## Build
 
@@ -20,7 +20,7 @@ make test
 make clean all verify package
 ```
 
-See [BUILD.md](BUILD.md) for commands and [RELEASE_STATUS.md](production/RELEASE_STATUS.md) for actual evidence and limitations. Current PDFs and the release ZIP are in [dist/](dist/). Automated checks bind results to current source, code, assets and PDF hashes; visual review and physical printing remain separate.
+See [BUILD.md](BUILD.md) for commands and [RELEASE_STATUS.md](production/RELEASE_STATUS.md) for actual evidence and limitations. The earlier art-light PDFs are in [dist/](dist/). The prior release ZIP is withheld during this artwork/design iteration; rebuild and review before creating a new release archive. Automated checks bind results to current source, code, assets and PDF hashes; visual review and physical printing remain separate.
 
 ## Design and components
 
@@ -31,4 +31,4 @@ See [BUILD.md](BUILD.md) for commands and [RELEASE_STATUS.md](production/RELEASE
 - Typesetting and build tools: `typst/`, `tools/` and `config/`.
 - [Native Claude agents](.claude/agents/) and [reference analysis](docs/REFERENCE_ANALYSIS.md).
 
-The design is clean dark fantasy on cream or white, borderless portrait US Letter, with essential content protected inside the printer overscan area. Reference books provide visual inspiration only; the active Heraldry manuscript is the rules authority. Commercial PDFs are not bundled. Atmospheric illustrations still require supplied approved art or an explicitly authorized service. Physical printer proof remains NOT TESTED.
+The design is clean dark fantasy on cream or white, borderless portrait US Letter, with essential content protected inside the printer overscan area. Reference books provide visual inspiration only; the active Heraldry manuscript is the rules authority. Commercial PDFs are not bundled. The twelve native atmospheric masters are supplied in assets/art/incoming/; read [artwork handoff](production/art/HANDOFF.md) for exact prompts, native placement limits and the required integration/review pass. InDesign export is on hold. Physical printer proof remains NOT TESTED.

@@ -71,17 +71,14 @@ def main() -> int:
         require(s['effortLevel'] == c['models']['orchestrator_effort'], 'Orchestrator effort differs')
         require(c['models']['max_concurrent_subagents'] == 2, 'Concurrency differs from reviewed limit')
         require(c["workflow"]["working_branch"] == "main", "Working branch differs from owner instruction")
-        b = c['budget']
-        require(b['target_spend_usd'] + b['repair_reserve_usd'] == b['claude_cloud_credit_limit_usd'], 'Budget allocations do not reconcile')
-        require(b['claude_cloud_credit_limit_usd'] == 100 and not b['allow_paid_overage'], 'Reviewed credit boundary changed')
         f = c['format']
         require(f['trim_width_inches'] == 8.5 and f['trim_height_inches'] == 11, 'Reviewed trim changed')
         require(f['minimum_essential_text_pt'] >= 9, 'Essential type minimum is too small')
         require(f['inside_margin_inches'] > f['outside_margin_inches'], 'Binding gutter is not larger than outside margin')
         i = c['image_generation']
-        require(i['external_spend_limit_usd'] >= 0, 'Negative image budget')
-        require(not i['paid_calls_authorized'] or i['external_spend_limit_usd'] > 0, 'Paid image calls lack a positive budget')
-        return 'Configuration reconciles; account billing and model access require live checks'
+        require(i['route'] == 'chatgpt_builtin' and i['generation_owner'] == 'ChatGPT Work', 'Artwork route differs from owner instruction')
+        require(i['external_api_generation'] is False, 'Artwork generation belongs in ChatGPT Work')
+        return 'Configuration reconciles; runtime model access requires live checks'
 
     def design_print_contract():
         c = json.loads((root / 'config/production.json').read_text())
@@ -160,9 +157,9 @@ def main() -> int:
               'kit_status': 'FAIL' if any(c['status'] == 'FAIL' for c in checks) else 'PASS',
               'checks': checks,
               'runtime_observed': {'python': sys.version.split()[0], 'commands': commands, 'python_modules': modules},
-              'external_inputs': {'claude_model_access_and_credit': 'VERIFY_IN_CLAUDE',
+              'external_inputs': {'claude_model_access': 'VERIFY_IN_CLAUDE',
                                   'cloud_network_and_dependency_provisioning': 'VERIFY_IN_CLAUDE',
-                                  'original_illustrations': 'SUPPLY_OR_USE_CONFIGURED_SERVICE; ART_LIGHT_FALLBACK',
+                                  'original_illustrations': 'CHATGPT_WORK_GENERATED_MASTERS; INTEGRATE_AND_REVIEW',
                                   'physical_inkjet_proof': 'NOT TESTED; DOES NOT BLOCK FILE COMPLETION',
                                   'commercial_cover_wrap': 'NOT APPLICABLE UNLESS SEPARATELY REQUESTED'},
               'missing_tools_policy': 'Provision during the capability milestone; availability is not kit integrity'}

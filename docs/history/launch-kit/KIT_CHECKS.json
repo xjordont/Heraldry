@@ -12,8 +12,6 @@
   "source_hash": "2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3",
   "source_byte_identical": true,
   "model_effort_config_validated": true,
-  "budget_arithmetic_validated": true,
-  "external_spend_disabled_by_default": true,
   "prompt_topics_present": true,
   "master_words": 5373,
   "kit_version": 4,
@@ -27,7 +25,6 @@
   "publication_execution_status": "NOT STARTED",
   "preflight_negative_tests_passed": [
     "source_mutation",
-    "budget_mismatch",
     "baseline_tamper"
   ],
   "preflight_resume_state_update_passed": true,

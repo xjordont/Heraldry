@@ -1262,7 +1262,7 @@ def check_scenmaps():
         spc = json.loads(json.dumps(sp))
         c, h = draw_map(spc)
         if h > 275:
-            errs.append("%s: map height %.0f pt exceeds the column budget" % (key, h))
+            errs.append("%s: map height %.0f pt exceeds the column height" % (key, h))
         for w in c.warn:
             if float(w.rsplit("(", 1)[1].split(" ")[0]) > 6:
                 errs.append("%s: %s" % (key, w))

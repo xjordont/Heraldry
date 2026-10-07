@@ -28,6 +28,10 @@ jobs:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: requirements.lock
+      - name: Fetch native atmospheric artwork
+        run: git lfs pull --include="assets/art/incoming/*.png" --exclude=""
+      - name: Check reviewed artwork masters
+        run: python tools/check_art.py
       - name: Install locked publishing dependencies
         run: python -m pip install -r requirements.lock
       - name: Protect prior manuscript snapshots and evidence

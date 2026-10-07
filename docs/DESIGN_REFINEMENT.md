@@ -30,7 +30,7 @@ Retain portrait Letter, flat #FCFAF5 cream/white companions, safe margins, exist
 4. Tables: family-specific widths and alignment, strong header separation, generous descriptive column and restrained alternating bands. Selective dark header treatment may help a small lookup table, but large tables remain light. Every continuation repeats the correct column headers and identifies its source table.
 5. Reference entries: stable title → source metadata/stat strip → description → abilities/procedure anatomy. Short entries stay together when they fit; long entries continue with a repeated identifying name. Separate neighbouring entries through spacing and a fine rule, not a box around every paragraph.
 6. Scenarios: fresh page at each named scenario; clear scenario title and source flavour; canonical setup fields in a predictable arrangement; deployment map beside or directly after its setup. Continue into special rules, scoring and aftermath using the exact source headings. A multi-page scenario is acceptable; a split opening with detached deployment instructions is not.
-7. Atmospheric spot art: after the twelve required masters are complete, add a bounded set of source-specific creatures, equipment or architecture at natural transitions if budget permits. Use rectangular/open placements with clean negative space, never text over artwork or art filling a known pagination defect. Keep deployment figures as precise editable vectors.
+7. Atmospheric spot art: after the twelve required masters are complete, add a bounded set of source-specific creatures, equipment or architecture at natural transitions after review of the required suite. Use rectangular/open placements with clean negative space, never text over artwork or art filling a known pagination defect. Keep deployment figures as precise editable vectors.
 
 ## Pagination policy
 
@@ -64,13 +64,10 @@ Extend the layout audit to record semantic heading starts and their following co
 
 Inspect all revised pages at contact-sheet scale for rhythm, every continuation/table exception and all scenario openings at readable size, then the cream/white pairing and overscan crops. Reconcile all text/cells, rebuild navigation and package from the same final input hashes. Record the current design outcome separately from historical geometry PASS. Physical printer proof remains NOT TESTED.
 
-Budget: latest ledger records measured Claude spend $90.25 of the original $100. Do not reset it or assume this redesign fits the remaining $9.75. Preserve the buildable current delivery, finish bounded repairs within remaining authorization and record the exact unfinished work if resources run out. A further production allocation requires an owner decision. Artwork API spend is separate and remains unauthorized at $0; see ART_AUTOMATION.md. Do not remove those gates to make a promise of a single unlimited run.
 
-## Optional InDesign export
+## InDesign export — on hold
 
-An editable InDesign edition should be another exporter from the existing semantic model, using the same active manuscript, design tokens and original assets. Generate IDML or an InDesign assembly script with named paragraph/character/table/object styles, threaded stories, native tables, anchored/linked art, parent pages, navigation and source-ID mapping. Open in licensed InDesign, inspect overset text/fonts/links/keeps, and save .indd there. Native validation is required before claiming it is a ready-to-edit InDesign deliverable.
-
-Start with a small real-content pilot: chapter opener, normal rules, short and long table, monster and scenario. A complete 450-page exporter is substantial separate engineering and QA, not an extra PDF save option. InDesign may paginate differently; do not promise byte-identical or page-identical output across engines. Keep text edits authoritative in immutable Markdown revisions; editorial changes made in InDesign must return through the same approved patch/revision process. Do not start this optional exporter until the owner chooses it; it must not delay the requested PDF repair.
+The owner has deferred InDesign output. Do not build an IDML exporter, assembly script or .indd edition. Complete the portrait Letter PDF and artwork integration. Revisit another publishing format only after an explicit owner decision.
 
 ## Sources consulted 2026-10-07
 
@@ -83,4 +80,3 @@ These support the pagination/API/export methods. Numerical keep thresholds and H
 - Adobe, table rows/headers across frames: https://helpx.adobe.com/ca/indesign/desktop/add-tables-and-data/format-tables/break-tables-across-frames.html
 - Typst, sticky/unbreakable blocks: https://typst.app/docs/reference/layout/block/
 - Typst, table continuations: https://typst.app/docs/guides/tables/
-- Adobe, IDML and scripting: https://helpx.adobe.com/ca/indesign/desktop/automation-and-scripting/document-automation/automated-workflows-overview.html

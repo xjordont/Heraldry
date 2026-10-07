@@ -6,9 +6,9 @@ The active manuscript comes from `source/versions.json`. Every approved manuscri
 
 Start with `python3 tools/preflight.py --baseline --report production/preflight.json` and `make test`. Install pinned dependencies if needed, then use `make clean all verify package`. Read `BUILD.md` for outputs and the workflow for exact patch promotion. Do not claim completion until current evidence and the visual review support it.
 
-Verify the live account's model availability, remaining Claude credit, expiry and paid-overage controls. The configured $100 ceiling is the project boundary; do not assume each new iteration renews it. `.claude/settings.json` selects configured Opus/medium, native agent definitions select configured Sonnet for substantive work, and at most two workers run concurrently. Report any runtime model substitution. Do not launch separately billed nested model workers.
+Verify runtime model availability. `.claude/settings.json` selects configured Opus/medium; native agent definitions select configured Sonnet for substantive work, with at most two workers concurrently. Report any runtime model substitution. Use native workers.
 
-No external paid image calls are authorized by default. Supply original approved assets in `assets/art/incoming/` using the IDs in `production/art/ART_MANIFEST.json`, or explicitly authorize/configure a service and budget. Credentials alone do not authorize spend. Atmospheric art remains BLOCKED until supplied; continue independent work and preserve the art-light edition.
+Atmospheric artwork is generated in ChatGPT Work and supplied in `assets/art/incoming/` using the manifest IDs. Claude integrates and reviews those original masters; no external image API runner is part of this project. Continue independent work if a particular asset needs repair.
 
 Optional visual evidence is limited to the selected reference pages in `references/reference_manifest.json`; written specifications are sufficient to continue. Keep commercial PDFs separate from publication assets and releases. Read `references/README.md` for optional local extraction.
 

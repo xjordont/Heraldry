@@ -10,6 +10,6 @@ Follow MASTER_PROMPT.md. Read exact relevant source rules and existing style spe
 
 Do not import another game's mechanics or use image generation for measured diagrams. Do not make hidden information visible, change AP/timing, invent deployment positions, or resolve a rules ambiguity by drawing a preferred interpretation. Use source-supported numerical examples and verify arithmetic and legality. Cover every assigned distinct deployment configuration; reuse validated diagrams where appropriate.
 
-For atmospheric art planning, derive subjects from source lore, apply docs/ART_DIRECTION.md, and write manifests/prompts. Use external services only if explicitly configured and budget-authorized. Output concise file/check/exception handoffs and avoid nested workers.
+For atmospheric art planning, derive subjects from source lore, apply docs/ART_DIRECTION.md, and write manifests/prompts. Atmospheric images are generated in ChatGPT Work; integrate and review supplied masters, without invoking external image APIs. Output concise file/check/exception handoffs and avoid nested workers.
 
 Follow docs/WORKFLOW.md: main is the working branch; do not create branches or push independently. Only the orchestrator promotes authorized manuscript patch batches to the next RC snapshot. Never edit an existing snapshot or apply build-only rules text patches. Artifact and layout edits do not bump RC.
