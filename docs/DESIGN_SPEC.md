@@ -38,7 +38,7 @@ These are targets, not measurements copied from the books. Optical adjustment is
 
 ## 4. Reading flow
 
-Apply the explicit fresh-page and conditional-keep policy in DESIGN_REFINEMENT.md. Chapters, major numbered sections and named scenarios start on fresh pages, with the first section composed with its chapter opener. Nested headings keep meaningful opening content; short fit-capable subsections and tables move whole when necessary. Keep definition, procedure, exceptions, and interpretive table notes together where practical. Keep headings with at least a meaningful paragraph or two complete list items. Prevent single-line widows/orphans without forcing large gaps. Keep ordinary table rows intact; handle over-height rows explicitly.
+Apply the explicit fresh-page and conditional-keep policy in DESIGN_REFINEMENT.md. Chapters, major numbered sections and named scenarios start on fresh pages, with the first section composed with its chapter opener. Nested headings keep meaningful opening content; all complete fit-capable sections, subsections, scenarios, tables and entries must stay on a single physical page and move whole when remaining space is insufficient, including their headings and necessary associated content. Keep definition, procedure, exceptions, and interpretive table notes together where practical. Keep headings with at least a meaningful paragraph or two complete list items. Prevent single-line widows/orphans without forcing large gaps. Keep ordinary table rows intact; handle over-height rows explicitly.
 
 Start with non-justified body text. If adopting justification, require Canadian English hyphenation and inspect spacing/rivers. Prevent breaks within short dice notation, bracketed costs, modifiers, and values with units, using layout semantics rather than changing canonical text.
 
@@ -68,7 +68,7 @@ Use recurring entry templates rather than a unique box for every named ability. 
 
 Monster anatomy follows the canonical order and contains no invented abilities or resources. Scenario pages retain canonical headers and scaling fields. Use repeatable spacing to make setup, timing, special rules, scoring, and source-provided aftermath easy to find without relabelling them.
 
-A scenario may occupy a spread or several pages. Keep its deployment diagram and key setup instructions together when possible. Do not force a one-page format by omitting rules. Stronghold/campaign entries may use light cards when the source structure supports them; keep card contents fully reconciled.
+A scenario may occupy several pages only when its complete measured unit cannot fit one usable page at the approved width. A fit-capable scenario, including its heading, deployment map, setup, rules, scoring and notes, must occupy one physical page. Keep fit-capable child units intact in longer scenarios. Do not force a one-page format by omitting rules. Stronghold/campaign entries may use light cards when the source structure supports them; keep card contents fully reconciled.
 
 ## 7. Original graphics and artwork
 

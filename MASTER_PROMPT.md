@@ -187,3 +187,9 @@ Implement sensible commands such as `make specimen`, `make digital`, `make print
 At final acceptance, Opus performs a bounded review of the final reports, source exceptions, representative difficult pages, every unresolved finding, and delivery completeness. Fix any remaining actionable defect, rebuild, and recheck before responding. Give a concise final report with file paths, actual page/figure/table counts, build commands, status evidence, source changes, and any narrowly specified remaining external input. Do not finish with “shall I continue?” or a list of tasks you could have completed within the authorized session.
 
 **Resume the current project, implement the requested iteration, and complete all applicable build, verification, inspection and packaging gates. Do not restart completed work. InDesign export is on hold; complete the PDF edition.**
+
+## Mandatory owner clarification: one-page units
+
+**Mandatory one-page keeps:** Every complete scenario, section/subsection, table, example, procedure, stat profile or reference entry that fits within one empty usable page at its approved layout width must occupy exactly one physical page. Include its heading, all nested content belonging to that unit, caption, legend/deployment diagram and necessary notes in the measured group. If insufficient space remains, move the entire unit to the next page; do not split it across pages merely to fill space or balance columns. A column limitation is not proof that a unit cannot fit a page: use the approved full-width layout where appropriate. Preserve legible type, spacing and all content.
+
+Apply the measurement and all-unit release audit in docs/DESIGN_REFINEMENT.md. This requirement overrides softer “where practical/possible” keep language. A fit-capable unit split across physical pages is a release failure; a genuinely over-height parent may continue while its smaller fit-capable children stay intact.
