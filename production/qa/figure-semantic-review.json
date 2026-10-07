@@ -1,6 +1,6 @@
 {
-  "reviewer": "publication-auditor (FIG-01..19 independent re-review against patched text P-01..P-07; FIG-20..57 scenario-map semantic review against RC485)",
-  "reviewed_at": "2026-10-06T21:41:15Z",
+  "reviewer": "figure-semantic-review: FIG-01..12 and FIG-17 by publication-auditor (carried forward, hashes unchanged); FIG-13..16, 18..20 and FIG-21..57 independently re-reviewed after the shared-glyph redraw (scenkit.py) against RC485",
+  "reviewed_at": "2026-10-07T04:01:08Z",
   "figures": [
     {
       "id": "FIG-01",
@@ -292,8 +292,8 @@
     },
     {
       "id": "FIG-13",
-      "svg_sha256": "3934447ce6f1aeba8ffb806740c3f74a585dc40c7543bfad1d98268706bbcb10",
-      "caption_sha256": "c9fd96822f11e7afd1afcb345638305892f5e3c901bb7d2e12e29f4f7c4c0af7",
+      "svg_sha256": "56ba2a97c17cbcdb86e042ee147da88b0d19ae8608d8e69587bb4b9e41221a6a",
+      "caption_sha256": "2a0de41b660deb37e1f141fbe382326cf855c028ca8a01e36bb69e0e648c7165",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "11029-11075",
@@ -357,20 +357,28 @@
           "evidence_source_line": "11072; 12025; 12096",
           "fix": "Key: change to \"Where a scenario states no depth or zone size (Sun-Drowned 2 and 3, The Mire 3, 5 and 6), the step 11 default applies: 6\" from the edge, 8\"x8\" corners. Where it states no placing order (these, Pale City 1 and most edge scenarios), Heroes are placed alternately from the Roll-off loser.\" Panel D: \"(stated; also the 10.1 step 11 default)\". Does not affect the gate.",
           "resolution": "Re-review after wording fix: key now says 'Where a scenario states no depth or zone size (Sun-Drowned 2 and 3, The Mire 3, 5 and 6), the 10.1 step 11 default applies: 6\" from the edge, 8x8 corners. Where it states no placing order (these, Pale City 1 and most edge scenarios), Heroes are placed alternately from the Roll-off loser.' Re-checked against all 36 Party Deployment lines: depth silent = 13884, 14554, 14633; size silent = 13955, 14402; order silent = those plus 13404 and the edge scenarios. Panel D now '(as the scenario states; also the 10.1 step 11 default)', matching 12096. Geometry unchanged and legible, no clipping."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Redrawn FIG-13 re-reviewed against all 36 Party Deployment lines: panels A-E, the zone glyphs (A solid band, B open band), 6\" and 8\" values, 'long = East/West' and the step 11 default list (depth silent: Sun-Drowned 2, The Mire 5 and 6; size silent: Sun-Drowned 3, The Mire 3; order silent: Pale City 1 and most edge scenarios) all match; the key strip lists exactly the five glyphs used and each looks identical to FIG-20.",
+          "evidence_source_line": "13884; 13955; 14402; 14554; 14633; 13404; 11072",
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-14",
-      "svg_sha256": "d3cb535b58b6a466641d8899e0ede021e5f97835ba67620fdd0528269da7da70",
-      "caption_sha256": "b5d1e41e77a1ffc73b1d998f7842236bfd7c273761fed3a1c73d78a40c213e21",
+      "svg_sha256": "f083e99959602cb73d0320e933c4ff2606fced992f288988289eacfbe192b4f4",
+      "caption_sha256": "e8df7abbe9f5ebe6f622b24f93949e75aa83e20727227341f48972cb11c483ce",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12132-12170",
         "12209-12238",
         "12965-12997",
-        "13035-13062"
+        "13035-13062",
+        "11072"
       ],
       "findings": [
         {
@@ -386,18 +394,26 @@
           "issue": "Ranges (Trail 3-4\", Ravine 6-8\") drawn at 3.5\" and 7\"; limits drawn clear of the 'within' boundary; lateral positions schematic. Disclosed in the on-figure note.",
           "evidence_source_line": "12132; 12209",
           "fix": "None. Triaged as A-06 / A-16."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Redrawn FIG-14 re-reviewed: Trail panel shows at least two Heroes of each party on the Trail (12170); shared-edge panel 8\" zone, 6\" ring and 7\" closest-edge dimension (12997); Safe Zone 8\"x8\" with 3\" ring and 4\" dimension (13062); Ravine 6-8\" on higher ground (12209, 12238). Key strip glyphs (Heroes, three zone types, Ravine floor = Difficult, Chasm, Open feature, distance, ring, range) all appear in FIG-20 with the same appearance.",
+          "evidence_source_line": "12170; 12997; 13062; 12209; 12238",
+          "fix": "None."
         }
       ],
-      "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
+      "rules_sha256": "43fe7ea70bcb0c071483e84a52e40817717281b93248838c1366f738b233cd52"
     },
     {
       "id": "FIG-15",
-      "svg_sha256": "a4f2117f955f73a924c7c009397efb44aca81f0427375915b2189628084e7912",
-      "caption_sha256": "8e07bd57d6b106743b90851764ff8cecc992a82c03e54dcf22402af28817ed70",
+      "svg_sha256": "4b0ace584a52b631868ef8a9a58cce079fda1d7a078615ff3c18deea4042c17a",
+      "caption_sha256": "9ad7ddf4dd7899960895ce2aa3af130450d8492101c1d158ed0e0fdf0187977e",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12945-13014",
-        "1394-1405"
+        "1394-1405",
+        "13011"
       ],
       "findings": [
         {
@@ -420,14 +436,21 @@
           "issue": "Ledge proportions, board position of the Chasm and Treasure Chests are schematic and labelled 'Schematic - not to scale'.",
           "evidence_source_line": "12965-12969",
           "fix": "None. Triaged as A-06."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Redrawn FIG-15 re-reviewed: 3\" map and stone distances, 8\" Chasm, 1\" ledges, 1-2\" gaps, Crumbling DEX Check, Jump 2\" per 1\" (4.4.9), Chasm Fall steps 6-8 versus 13005-13007 sentence by sentence; key strip (Party A, Party B, Zone both use, Objective, Numbered step, Chasm, Ledge, Crumbling Ledge, Stated distance) matches FIG-20.",
+          "evidence_source_line": "12965; 12969; 13003; 13005-13007; 1394-1405",
+          "fix": "None."
         }
       ],
       "rules_sha256": "34e12852b9502196e116896e54eb8384a6aa8060b50a222c638ad1620e9098fd"
     },
     {
       "id": "FIG-16",
-      "svg_sha256": "2733195c817d41378688c1f3511d24cc020ed3dff7887c70c7d9c75283296f09",
-      "caption_sha256": "b7a7b860be061f63ce542b54f74b98478d6c0919eef747b3799a7297fe43677a",
+      "svg_sha256": "ee2d73d64f4e2c1396530cc69b2c044f987907991e2927475703211d76d835c8",
+      "caption_sha256": "ae5fde33740332bc58851e5f222f4cb7d6a742c0b0bcd7b59081340c117c55d7",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12042-12111",
@@ -457,6 +480,13 @@
           "issue": "Panel A draws a 0.1\" gap between the Warden square and the Stone marker; the panel is labelled schematic, and the 8\" range is not dimensioned (distance drawn is within 8\").",
           "evidence_source_line": "12088",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Redrawn FIG-16 re-reviewed: Warden placement adjacent to the first Interacted Stone (12088), Target Priority and Entangling Roots 8\" DEX Check (AI step), Group 2 inside the Central Clearing 4\" from its edge (12093), Stones 6-8\" apart, Clearing 12-15\" (13.5\" drawn). Warden is the shared Large 2\"x2\" square; key strip glyphs match FIG-20 ('Standing Stone' is the Objective diamond under a compact-strip label).",
+          "evidence_source_line": "12088; 12093; 12062; AI Steps",
+          "fix": "None."
         }
       ],
       "rules_sha256": "1fad8f1e8c4e8604159ccc830b0ea3c6d7d11aad1e12f6e03ba1cc7a50adc9a4"
@@ -485,8 +515,8 @@
     },
     {
       "id": "FIG-18",
-      "svg_sha256": "02cb37a56e8ae1868f74396485efdff345dcd0dffd9e9cf4154a48fb8abbb682",
-      "caption_sha256": "9ace7939d746eea3d5e09e3b74ecd83bf64052f4414d8eb7a7c344aec423c0f9",
+      "svg_sha256": "2627c83d32b5c91333b6ebb22a1166756bd5a2f28733b836890785ef3a92b686",
+      "caption_sha256": "0e28e0e58ebb9a1ac43821294569d5aad172d5cc1dccd85a98f16cafc7337d9d",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "16082-16208",
@@ -516,14 +546,21 @@
           "issue": "All Round 1 numbers re-derived from A.11: initiative 13+0+1=14 vs 10; Varek 6+3=9, 9-4=5 (16->11); Mara 4+3=7, AV 1, 6 (15->9), keeps 1 AP; Senna 5+3=8 dodged by Mara 11+3=14 (Check against 12), Mara 3 AP spent, Senna keeps 1 AP; Wolf 1 5+1=6-3=3 (11->8), STR 9+3=12 success; Wolf 2 max(4,7)+1=8-5=3 (8->5), STR 6+3=9 fails, Prone; Wolves 3 and 4 do not attack; end state Edric 5 HP, Prone, Satchel, Engaged by Varek, Wolf 1, Wolf 2. AP squares match. Caption 16-5=11, 11-3=8, 8-3=5 matches.",
           "evidence_source_line": "16360-16400",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Appendix scope re-checked after redraw: every cited line is inside A.2/A.4/A.7-A.9/A.11 (16094-16112, 16172-16208, 16348-16371); no 10.1/10.6 line is cited; terrain per A.2 (ruin Blocking, low wall Impassable, rubble Cover+Difficult drawn with the Rubble swatch, two Cover pieces); Chest 5\" east of centre from the A.11 table; zones 4\"; extraction at any edge (16194). No Hide, Powers or advanced rules appear. Key strip glyphs (Heroes, zones, North, Scale bar, Satchel, Chest, Dire Wolf, Centre ruin, Low wall, Cover piece, Rubble, Distance, ring, Range, Exit edge, Leader line, Grey dashed) all appear in FIG-20.",
+          "evidence_source_line": "16108-16111; 16194; 16358-16363",
+          "fix": "None."
         }
       ],
       "rules_sha256": "9bbb0b9a59a7e67dd419107ae7e7474a7407f27fc0d357e8da6da48682442c1a"
     },
     {
       "id": "FIG-19",
-      "svg_sha256": "485135198445731d4c3cd1af696e717472b054f6d56f010c8e5df5f59babf704",
-      "caption_sha256": "91debae1163303187f8d3cd863e10a01fa1f6473504f65725fe66deb4b98074c",
+      "svg_sha256": "9ca6b352846e75e58771381009803ffc82ffc39dc9700c5abf0f0abcbfd51da0",
+      "caption_sha256": "fe49806f43a98b023b889e149ab5d124fada5cd1ddb23fceae5a6a02f9988d64",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "16519-16532",
@@ -555,14 +592,35 @@
           "evidence_source_line": "17016-17070; 17072-17095",
           "fix": "Caption: \"Illustrative example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move; extracting it with 1 Satchel and having defeated 2 Goblins and 1 Bandit scores 12 + 4 + 2 + 3 = 21c (see B.6).\" Does not affect the gate.",
           "resolution": "Re-review after wording fix: caption now 'Assumed example: ... extracting it with 1 Satchel, having defeated 2 Goblins and 1 Bandit, scores 12 + 4 + 2 + 3 = 21c (see B.6)', consistent with B.6 Monster Coin Value (score on reducing to 0 HP) and the panel's 'Example (assumed)'. Arithmetic 12+4+2+3=21 and P-06 'assigned at random' wording unchanged and correct; geometry unchanged."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Label 'Group·R' is drawn on top of the Cart-or-wall hatch piece (it hides part of the piece and reads as labelling it); its leader runs a long way to the east group. The '5-7\"' label also sits on the outer dashed ring.",
+          "evidence_source_line": "17076; 17080",
+          "fix": "Move the 'Group·R' label to a clear spot beside the east group (lp 'b' on m1) and the '5-7\"' label off the ring line."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "The two exit arrows (N and S) are drawn in the grey-dashed 'position not fixed' state although both edges are stated (each side leaves by its own deployment edge); the key strip shows the solid arrow.",
+          "evidence_source_line": "17090",
+          "fix": "Draw the two exit arrows solid (status MANDATORY_POSITION); the side-to-edge assignment stays unstated and needs no marking."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Appendix scope re-checked: only B.1-B.6 lines cited (B.6 terrain, deployment 4\", Entry markers 5-7\" from centre, at least 4\" apart, Strongbox 12c, Satchels 4c, -2\" Speed, own-edge extraction, Round 6); Entry markers at 6\" from centre, Entry-to-Entry gaps 10.4\" and more; no advanced rule appears; key strip glyphs all in FIG-20.",
+          "evidence_source_line": "17072-17095",
+          "fix": "None."
         }
       ],
       "rules_sha256": "17002c1770b12fc10565e4973020395819f8a09a293420473d626fd18a0b7646"
     },
     {
       "id": "FIG-20",
-      "svg_sha256": "818751502d7ebdf6ec09d94e36351df925ca2408701399bee70ff3c7aa6e8ea5",
-      "caption_sha256": "9dc35d896b770167e008b42927a746506ad09208bcaf23c0c3af192eaf86444c",
+      "svg_sha256": "9134e937a1195c778628b314ee8a64126cda17e3d812c63244cd49cdec70b966",
+      "caption_sha256": "4e7a4b0ea5e8e47438461bfdc1de9f61bd20db112177c4a0652b7b15ee284b2b",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "11068-11072",
@@ -570,7 +628,8 @@
         "14901-14915",
         "11056-11073",
         "594",
-        "618-619"
+        "618-619",
+        "845-873"
       ],
       "findings": [
         {
@@ -596,14 +655,21 @@
           "evidence_source_line": "12618; 12782; 13191; 13264",
           "fix": "Add to the zones swatch: 'A and B on the maps only distinguish the two zones; scenario Party A/B roles are assigned during setup.'",
           "re_review_note": "Re-review: A/B letter note added."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Redrawn key re-reviewed: 40 swatches equal the glyph registry; every glyph id, state and pattern used on FIG-13-16, 18, 19, 21-57 is explained (checked by script and by eye); Large 2\"x2\" and Huge 3\"x3\" match 618-619; scale/closest-point statement matches 594; step 11 default text matches 11072. FIG-13-16, 18 and 19 strips list only glyphs their diagrams use.",
+          "evidence_source_line": "594; 618-619; 11072",
+          "fix": "None."
         }
       ],
       "rules_sha256": "199117c3cc8e9e8d8d4a38e63e61e9eefe030b88095e749c927aa06b6c7bf928"
     },
     {
       "id": "FIG-57",
-      "svg_sha256": "398b547408db9b205c73bbb62b9eb3fff68fe1120c1fe7f40b193d9fb1d8b959",
-      "caption_sha256": "8d3c9876f67fa1c8bf199796d1cff1c4d4df7ed44b14fec0f73f408404fe0514",
+      "svg_sha256": "85ebef91750f0f0e8f550841f60d08275c8b7813347f8921793d38b2e16d2c01",
+      "caption_sha256": "e78b962bc8252bc7cc96bc30ae8ac636038f51ed0a357b7c7585979ade6d91b5",
       "verdict": "PASS",
       "checked_against_lines": [
         "11068-11072",
@@ -617,8 +683,8 @@
     },
     {
       "id": "FIG-21",
-      "svg_sha256": "a64388b6b077b59a3e582fda284b8132a64a02bb00164ae98dbc2da906a2a52d",
-      "caption_sha256": "0ae7d3ff54c9afdc182599ef3bb34b8db334e55dfb09fd4bbf4fa7e709fad280",
+      "svg_sha256": "9e9892a4661387bcce6c10b99720b520763d45f6f957f0410a35b7d43e8d3b4f",
+      "caption_sha256": "24e3de61ebae16efb499c45473c6d3e9c9ddbce16f7b430265f1800c74a005c0",
       "verdict": "PASS",
       "checked_against_lines": [
         "11974-12041",
@@ -631,198 +697,312 @@
     },
     {
       "id": "FIG-22",
-      "svg_sha256": "0e72dde508110afcecc1a8e0875107cf8e7b0363df233b740d1e0dcbd6aac771",
-      "caption_sha256": "94c5556c1841ca730131098616aeb92bcb6a9a3dfb22a181cf429bf289460e94",
-      "verdict": "PASS",
+      "svg_sha256": "a547e124a91847f175bf62e1d0faffb6ae583dc341d95dcead272bd95bac2b40",
+      "caption_sha256": "a088dc773ba845429fdf518e08da129cc8186ac21979a0622bbcfb4863acd8e1",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12042-12111",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
-      "findings": [],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Undergrowth patches are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "12062; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ug (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "The single 'Stone' label sits between the Stone diamonds and G2 and is not attached to any one of the three identical Stone markers; the G2 'min 8\"' / '3\"' labels crowd the north-east Chest.",
+          "evidence_source_line": "12062",
+          "fix": "Add a leader from 'Stone' to s1 or label all three; no data change."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "'one outer Standing Stone' (12092): three Stones in a triangle have no 'outer' one; logged ambiguity, drawn as one legal choice (ring on s1).",
+          "evidence_source_line": "12092",
+          "fix": "None; owner decision logged."
+        }
+      ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-23",
-      "svg_sha256": "04dca41fb3971a2b6c19d18e66f6d3d54454e0dda9d08c2a622661e0ebbdf91d",
-      "caption_sha256": "92e7d1713a3f180e25465ed3abeb745949e44f24f70d456c375a85f69726808f",
+      "svg_sha256": "436579f8b1af6400a7a6f5bfa03af7ce0e6b84ae13b71a73f398bde0de9db250",
+      "caption_sha256": "67d21a4b8596209ea89c44bb159acc2dcbddfc2e4eb50ad8c509efbe4ab1c14c",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12112-12188",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
       "findings": [
         {
           "severity": "major",
           "status": "resolved",
-          "issue": "Bandit Reinforcement arrows (R3) are drawn at 10\" along each edge, but the source places arrivals at the MIDPOINT of the edge closest to the Toll Captain. The drawn entry points are therefore wrong on all four edges (midpoint = 18\").",
+          "issue": "Previous major (R3 arrival arrows) re-checked: arrows now sit at the edge midpoint (18\") on all four edges, labelled R3 with the foot note 'reinforcements enter at the edge nearest the Captain'.",
           "evidence_source_line": "12176",
-          "fix": "In scenario_specs.json element 'rf' (FIG-23) change pos 10 to 18 (midpoint of each edge) and keep the grey-dashed open style for the unresolved edge choice; reposition the N/S arrows clear of the Trail ruler labels. Acceptance: all four R3 arrows centred on the edge midpoints.",
-          "re_review_note": "Re-review: R3 arrows now at x=18 on N/S and y~18 on W/E (edge midpoints), grey-dashed; verified in render."
+          "fix": "None."
         },
         {
           "severity": "minor",
           "status": "resolved",
-          "issue": "Toll Captain is drawn as a solid CONSTRAINED marker on the same side of the Barricade as Wagon 2, although 'behind the central Barricade' is a logged ambiguity (which side is behind is not stated).",
-          "evidence_source_line": "12162; ledger ambiguity 2",
-          "fix": "Draw the Captain in the grey-dashed illustrative style or add a foot note that the side of the Barricade is not fixed.",
-          "re_review_note": "Re-review: Captain now drawn in grey (illustrative) style."
+          "issue": "Captain side of the Barricade is a logged ambiguity; now drawn as grey-dashed ILLUSTRATIVE, foot ambiguity logged.",
+          "evidence_source_line": "12162; 12143",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Undergrowth patches are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "12132; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ugA (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "The map draws the printed 3 Wagons; if scaling places fewer (12136-12138) W1/W3 disappear but the Group 1/2 rings (12166-12167: 'whether or not Wagon 1 is placed') stay. Not stated on the map.",
+          "evidence_source_line": "12134-12138; 12166-12167",
+          "fix": "Optional foot note 'Wagons 1 and 3 appear only if scaling places them'."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-24",
-      "svg_sha256": "1e5a92c3e3f807dbde13e510d734c687f05463f2ed3f15660bea35143fc232ff",
-      "caption_sha256": "7f788cdff71d00048b3b2a4afbccd26c6e55426e958dd272fa3d3f2ac90c3477",
+      "svg_sha256": "15c5bb5f1bd192b1f71de15ddf3ea59687ddef2dd6b457c0dfb402b973fb577a",
+      "caption_sha256": "5cf60e2da9c2829fd5aa3c7eed91ce90fb5987fc388e173c934966813dd58545",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12189-12259",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "852"
       ],
       "findings": [
         {
           "severity": "minor",
           "status": "resolved",
-          "issue": "Label 'Tarantula·R' sits on top of the Tree piece (tr1) and hides its Cover pattern; the 'Ravine 6-8\"' label is crossed by the Tarantula leader line.",
+          "issue": "Earlier note (Tarantula label on the Tree) resolved.",
+          "evidence_source_line": "12232",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Leader line from 'Tarantula·R' runs through the 'Ravine 6-8\"' label (between '6-' and '8\"'); 'Brood·A', '2\"', 'Tarantula·A' and the 1\" ring are tightly packed at the Bundle.",
           "evidence_source_line": "12209; 12232",
-          "fix": "Move the t4 label below the ravine edge and shorten the t2 leader; acceptance: tr1 pattern and Ravine label fully visible.",
-          "re_review_note": "Re-review: Tree moved clear and labelled; Ravine label legible."
+          "fix": "Route the Tarantula·R leader from below the label or place 'Ravine 6-8\"' at the left end (lp 'l'); optional spacing of 'Brood·A'."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "The two Resting Tarantulas are drawn overlapping inside a ghosted Webbed Section (illustrative).",
+          "evidence_source_line": "12232",
+          "fix": "None."
         }
       ],
       "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
     },
     {
       "id": "FIG-25",
-      "svg_sha256": "45e6f808f17d738bb9004e98ba853ab14a5200f21c131c6238e67b2ee4b9be9b",
-      "caption_sha256": "00d350130e168db2019fbde2ea1621de9d9425318ed11526215d133cc56107e6",
+      "svg_sha256": "5cb0df5baecb55220de30584080dbd6fec698dd969cd87427fb6880b970a91ac",
+      "caption_sha256": "f8ed61a55822f6ba3ebb6b49e3ae9e289110a5e2c64fa8e1158864efa6437853",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12260-12337",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
       "findings": [
         {
           "severity": "major",
           "status": "resolved",
-          "issue": "Unlogged source conflict drawn as settled: Group 3 is to be placed 'at the perimeter of the Bandit Camp, 6\" from its centre', but the Camp is only about 4\"x4\" so its perimeter lies about 2\" (max 2.8\") from the centre, not 6\". The map silently follows the '6\" from centre' clause with a solid marker and a 6\" ring, putting the Group 4\" outside the Camp edge.",
-          "evidence_source_line": "12280 (Camp about 4\"x4\"); 12312 (Group 3 placement)",
-          "fix": "Add this as a 14th ledger ambiguity in scenario-coverage.json (Greenmark 5) and redraw g3 as ILLUSTRATIVE (grey dashed) with a foot note 'Group 3: perimeter and 6\"-from-centre both stated; Camp is about 4\"x4\"'. Acceptance: map no longer presents either reading as the rule.",
-          "re_review_note": "Re-review: g3 now grey dashed (illustrative) with 6\" ring and foot note 'G3: the 6\" ring conflicts with the Camp size'; conflict logged as ambiguity in scenario-coverage.json (15 logged)."
+          "issue": "Previous major (Group 3 '6\" from its centre' versus a 4\"x4\" Camp) re-verified: drawn as the literal 6\" ring with an illustrative marker and the foot note 'the 6\" ring conflicts with the Camp size'; ambiguity logged.",
+          "evidence_source_line": "12280; 12312",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Undergrowth patches are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "12280; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ug1 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "'Undergrowth' label is detached from its piece (about 3\" away) and touches the corner of Party B's 8\"x8\" zone; the min-6\" ruler through G1 runs under the 'G1·R' label.",
+          "evidence_source_line": "12280",
+          "fix": "Place the label directly above the piece (lp 't'); no data change."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-26",
-      "svg_sha256": "60da29832ce79ddd3fe0db4b57e77909ec07a65bf130731f863f3e7d249c743b",
-      "caption_sha256": "b9da7ca6d9e2c9700bdbd59991816437479d26904ff13049a4d5a6a0cb98dcf5",
+      "svg_sha256": "29a789618ec845896101cb1490ff9c1d438abca366004cf7b736a00a6f24473d",
+      "caption_sha256": "5a88723a16616abb589343f0598bba92a24c6db77fccd13db59578f6b1f9830e",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12338-12424",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
       "findings": [
         {
           "severity": "minor",
-          "status": "accepted",
-          "issue": "Mother Tree (3-4\" Blocking, MANDATORY centre) is unlabelled, and the 'Totem' label overlaps its dark disk; the three-chest rotation (evenly spaced, rotation open) is drawn solid.",
+          "status": "resolved",
+          "issue": "Earlier notes (Mother Tree unlabelled, Totem label over the disk) resolved; the three Chests (rotation open) are grey-dashed.",
           "evidence_source_line": "12363; 12365",
-          "fix": "Label the dark disk 'Mother Tree'; move the Totem label clear; optionally dash the chest rotation.",
-          "re_review_note": "Re-review: Mother Tree now labelled. Remaining: 'Totem' label halo touches the tree disc and chest rotation drawn solid; accepted because the disc stays identifiable and the key now says solid markers are one legal position."
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "'Grove 6\"' label sits on Group 1's dashed 8\" ring, not on the solid Grove circle where the Chests stand (solid radius 7.75\" from the Mother Tree centre); a reader can take the dashed ring for the Grove. Group 3's 3\" ring also cuts the 'Totem' label.",
+          "evidence_source_line": "12363; 12394; 12365",
+          "fix": "Move 'Grove 6\"' inside the solid circle (lp 'i') or add a leader; shift 'Totem' clear of the G3 ring."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "The Sacred Grove is stated Cover Terrain (Natural, Difficult for non-Druid/Ranger Heroes unless SPI Check) but is drawn as an unfilled 'Open feature'.",
+          "evidence_source_line": "12363",
+          "fix": "Add foot note 'Grove: Cover Terrain (Difficult for most Heroes)' or give the circle a light cover tint."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Undergrowth patches are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "12363; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ug (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
         }
       ],
       "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
     },
     {
       "id": "FIG-27",
-      "svg_sha256": "f3e895c8f6807558db765ffbeaa4572d1d334430721b626cb98956d99e007aa0",
-      "caption_sha256": "302d891fdd442b72ba69c439c337374ab1cf8ca1f16d1185e33ad148e4901641",
+      "svg_sha256": "e3a0ac44a2d87a34d570b063e5dc6125f1bcdd8eee3422f508a51d4819778096",
+      "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12427-12494",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
       "findings": [
         {
           "severity": "minor",
           "status": "open",
-          "issue": "Dense cluster at the Dome: 'Lens', 'min 10\"', 'Dome 6\"x6\"', 'Sentinel·A', '2\"' labels crowd the dome edge and hazard markers; readable but at the limit at 9 pt.",
-          "evidence_source_line": "12447; 12474",
-          "fix": "Move the min 10\" ruler label outside the dome and offset the Sentinel label."
+          "issue": "Dense centre: earlier crowding note persists. 'Orrery' sits next to the G2 hexagon (the Orrery diamond is 3\" lower) and 'G2·R' sits beside the Platform, so labels read against the wrong symbols; 'Wall' floats about 3\" above its piece without a leader; the min-10\" ruler crosses the Dome and Lens.",
+          "evidence_source_line": "12447; 12452; 12479",
+          "fix": "Add leaders for 'Orrery' and 'G2·R', put 'Wall' under its piece (lp 'b'), and draw the ruler between the Platforms' nearest corners only."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Rubble fields are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "12447; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-28",
-      "svg_sha256": "705e7f9e3341a0b882f03949cd99f689d27f5373f4221697d5773691f0757c8e",
-      "caption_sha256": "dc70e79277bd2b2d7a58694954be5ebdd3044feef6ad1727c30371ef2a85b993",
+      "svg_sha256": "4ceb2989f434d3af371a92d4306051c8c214b9c538698cb84a92873b79df27fa",
+      "caption_sha256": "03d2bafaaa4596a0d5bef8ae1efc15497c01b0a48341eb2d8ae7698e19725dee",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12495-12568",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863",
+        "873"
       ],
       "findings": [
         {
           "severity": "minor",
           "status": "resolved",
-          "issue": "Group 2 arrival arrows (R3) are drawn solid at a fixed 8\" along both long edges; the source gives only 'a random edge that is neither party's deployment edge' (no point on the edge).",
-          "evidence_source_line": "12544",
-          "fix": "Set draw 'open' (grey dashed) on element g2 as FIG-29 does for its arrival edge.",
-          "re_review_note": "Re-review: arrival arrows now grey dashed."
+          "issue": "Earlier notes (G2 arrows fixed at 8\"; Gateway label far from the gate) resolved: G2 arrows are grey-dashed 'G2 R3' on W and E; Gateway is labelled beside the gate; the wall section is Blocking per 873.",
+          "evidence_source_line": "12544; 12515",
+          "fix": "None."
         },
         {
           "severity": "minor",
-          "status": "accepted",
-          "issue": "'Gateway 4-6\"' label sits below the Courtyard border away from the gate on the east edge and 'G1·R' is placed 4\" from the colonnade it is meant to be 'amongst'.",
-          "evidence_source_line": "12515; 12543",
-          "fix": "Move the label next to the gate; place G1 beside a pillar.",
-          "re_review_note": "Re-review: Gateway label still sits below the Courtyard border; accepted because the gate is the only dark wall piece on the east edge and the label is unambiguous."
+          "status": "open",
+          "issue": "The 'Insight' leader runs through the 'Courtyard 15\"x15\"' label.",
+          "evidence_source_line": "12515",
+          "fix": "Label Pedestals below their markers or move the Courtyard label (lp 'b')."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Rubble are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "12515; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on rub (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-29",
-      "svg_sha256": "240672a0e7cca15bf6686940a9cd819bef7aa07f60ebe415045e5e44b81c01f5",
-      "caption_sha256": "9354f135c61fa7e9b5f065b9df4a4d4194e3059160a0be22a5ee60e3b7f8d0b2",
+      "svg_sha256": "b6a25e34d7e48dbf47d8203340a1ebc9bc7e9f10d40c1657d2d9885c1d39e7b4",
+      "caption_sha256": "ce89ad7247593b2f87859ece91d6e5809d444e310e809d1aa02cc291758d495e",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12569-12623",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
       "findings": [
         {
           "severity": "major",
           "status": "resolved",
-          "issue": "The four 3\"x3\" Unstable Ground zones (the scenario's key terrain) are unreadable: they use an unlisted light-grey fill, three are partly covered by the 'G4 R2', 'G2·R' and 'Ruin 4\"x4\"' label halos so they read as L-shapes, and only one is labelled ('Unstable 3\"x3\"'). The 'min 6\"' ruler runs between zones that cannot be identified.",
-          "evidence_source_line": "12589",
-          "fix": "Label each zone ('Unstable'), move the G4/G2/Ruin labels clear of the zones, and give the fill a legend swatch (see FIG-20 finding). Acceptance: four complete 3\"x3\" squares visible and identifiable without the source text.",
-          "re_review_note": "Re-review: four complete 3\"x3\" Unstable Ground squares visible (N, W, E, S of the ruin), three labelled 'Unstable' plus 'Unstable 3\"x3\"', fill in key; G4/Ruin labels no longer cover them. Exits A (S,E) and B (N,W) still correct."
+          "issue": "Previous major (Unstable Ground zones unreadable, unlisted fill) re-verified: the four 3\"x3\" zones use the keyed 'Hazard area' swatch, all labelled, 11.3\" apart, with the 4\" Group rings and the A/B exit arrows (edges not touching each corner, 12618).",
+          "evidence_source_line": "12589; 12618",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "'Unstable 3\"x3\"' label crosses Group 1's 4\" ring outline.",
+          "evidence_source_line": "12589; 12599",
+          "fix": "Move the label above the zone (lp 't')."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Rocky outcrops are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "12589; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on oc1, oc2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-30",
-      "svg_sha256": "ed1edf48c570f3883e18b19cc771acc41483f6a9e027bf408d4ea4fa8ef87cef",
-      "caption_sha256": "d7547996ec6dea4ea0d50cbd616fc38a5b992ccb82b6b1a7b7e4646daec4b205",
+      "svg_sha256": "9e206816f2f585c629e480caecb36d5a5162b766b37a856dc04d5757f7709d0d",
+      "caption_sha256": "8a22d6432a10ba1a6487af97cd7728fbf46551ac2d9fb5f2b05271016f2cc002",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12624-12703",
@@ -834,54 +1014,91 @@
         {
           "severity": "minor",
           "status": "resolved",
-          "issue": "Hall orientation (8\"x4\", long axis E-W) and the chamber layout around it are not fixed by the source but the Hall is drawn solid.",
+          "issue": "Earlier note (Hall orientation drawn solid) resolved: Hall is a dashed 8\"x4\" outline.",
           "evidence_source_line": "12644",
-          "fix": "Footnote or dash the Hall orientation; label 'Chamber' only inside a chamber (currently overlaps the Hall border).",
-          "re_review_note": "Re-review: Hall now dashed (orientation illustrative)."
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "'Chamber' and 'Hall 8\"x4\"' labels sit side by side above the Hall and read as one phrase; the two Chests and one Dust marker drawn dashed are small, unlabelled and faint.",
+          "evidence_source_line": "12644; 12650",
+          "fix": "Label the east Chamber too or move 'Chamber' to lp 'i'; label one Chest."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Tablet Cache values are hidden information and are drawn as identical markers (two in one chamber, one in the other).",
+          "evidence_source_line": "12649; 12686",
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-31",
-      "svg_sha256": "9aa47a12343802b9132ddf4fc0c1aba5eb4a53d3ade1b07deeaaa7e90de80f8b",
-      "caption_sha256": "eb751f384b4675ad4352cf319dac909df7fd3a10eca0bd14ed05a27583c40431",
-      "verdict": "PASS",
+      "svg_sha256": "6984dfb450eb99284371fc6ad9b438198dda929cd1736e9f934823ebffead867",
+      "caption_sha256": "8b8db7c5a96a1eae9ac8785598503f7e2e33e077ccd7897def5f0e7d8e65120e",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12704-12777",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
-      ],
-      "findings": [],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
-    },
-    {
-      "id": "FIG-32",
-      "svg_sha256": "24f620de10cf6c49d7a2ee7b25a5a38e171e5d48133bc56d52986e3b110a5156",
-      "caption_sha256": "d7cf3c4b63fdb981f7ee890bd27088f9c7c15d9cc1aa4d98544fad196ee89650",
-      "verdict": "PASS_WITH_NOTES",
-      "checked_against_lines": [
-        "12778-12876",
-        "11068-11072",
-        "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "870"
       ],
       "findings": [
         {
           "severity": "minor",
           "status": "open",
-          "issue": "Zones are lettered A/B, but in this scenario Party A (Sealers) and Party B (Openers) are assigned by die roll and need not match the drawn zones; the Door label is also crowded by the G3·A marker.",
-          "evidence_source_line": "12782; 12844",
-          "fix": "Add the FIG-20 note on map letters; move the Door label."
+          "issue": "'Curtain' label sits directly over the Rubble square and about 2\" from the Curtain strip, so 'Curtain' and 'Rubble' both appear to label one square.",
+          "evidence_source_line": "12729",
+          "fix": "Give 'Curtain' lp 't' on its own strip or add a leader."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "'left side aisle' / 'right side aisle': viewpoint not stated (logged ambiguity); one aisle each drawn without asserting which is left.",
+          "evidence_source_line": "12756-12757",
+          "fix": "None; owner decision logged."
+        }
+      ],
+      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    },
+    {
+      "id": "FIG-32",
+      "svg_sha256": "49e6d71cb2dea5e7fba32f4eb9e4a19c7de94968b66125e89beaf1208502ed10",
+      "caption_sha256": "299cb39bb185df20d39b5f3cf92925614e623ab5c63502c070b309ab61220a9a",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "12778-12876",
+        "11068-11072",
+        "10962-10990",
+        "14901-14915",
+        "863"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier notes (zone A/B versus roles; Door label crowded) resolved: key explains A/B; Door label is clear.",
+          "evidence_source_line": "12782; 12803",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Rubble fields are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "12803; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-33",
-      "svg_sha256": "3a57ca69deef65a284680e80cbf737ba2d22d8e00e3001f64d4ac63a2cf37a11",
-      "caption_sha256": "e0ad9186cb04e334690efbc7333b9b73bd86a604051e878cc8f7cb4a6d9531e9",
+      "svg_sha256": "9d2f56c61238dd744d0aa8fd7d5ee2f8f7a9ae47c005c3075ddf39ceacbd6fd2",
+      "caption_sha256": "9a4a3e0acc9d93714ef2a566f9e884ac4fdadba6e33a9e750341742f9d12eb51",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12879-12944",
@@ -893,18 +1110,31 @@
         {
           "severity": "minor",
           "status": "resolved",
-          "issue": "The Cave wall (cw1) is almost completely hidden under the 'Fungi' and 'Cave wall' label halos; the 'Cave wall' label points at nothing visible.",
+          "issue": "Earlier note (Cave wall hidden under labels) resolved: walls visible.",
           "evidence_source_line": "12899",
-          "fix": "Move the labels so cw1 is visible; acceptance: grey wall piece and label adjacent.",
-          "re_review_note": "Re-review: Cave wall piece visible beside its label."
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "UNRESOLVED element verified genuine: Group 3 arrives 'from a random battlefield edge that is not adjacent to either deployment corner' (12927), but the parties deploy in opposite corner zones (12929) and each of the four edges touches one of them; no other line names a qualifying edge. Correctly not drawn; ? tag and note match the key; nothing invented.",
+          "evidence_source_line": "12927; 12929",
+          "fix": "None; owner must state which edges qualify."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "'Cave wall' label has no leader and sits next to the Fungi ring and its '2\"' label rather than under its wall.",
+          "evidence_source_line": "12899",
+          "fix": "Place 'Cave wall' directly below the wall (lp 'b') or add a leader."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-34",
-      "svg_sha256": "171ea388a68d34a0169facde38e9aeca690b220a4a82d47e7f9fa7ad98065d3d",
-      "caption_sha256": "d87082bfc8b83c746ff01de399bf2cc4b4debfdf6abc1d0f89ac8c281d08e138",
+      "svg_sha256": "d6d1dd9c8351df0c7cf1c223bbd78d368386ee5524eacda38ebe2c8909a59c82",
+      "caption_sha256": "870bd56f84aef729295144d8af56822901b3e84bc15c9185a541368b709cdbd6",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12945-13014",
@@ -915,91 +1145,137 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
-          "issue": "Chasm (8\" wide, MANDATORY) is drawn with the Impassable hatch although the source defines it through Chasm Fall/Jump, not as Impassable Terrain.",
+          "status": "resolved",
+          "issue": "Earlier note (Chasm drawn Impassable) resolved: shared Chasm swatch, Ledge and Crumbling Ledge glyphs (a drop, 13005).",
           "evidence_source_line": "12965; 13005",
-          "fix": "Use a neutral 'chasm' fill or add a foot note that the hatch means 'cannot be walked; Chasm Fall'."
+          "fix": "None."
         },
         {
           "severity": "minor",
-          "status": "open",
-          "issue": "Ledger ambiguity 'start edge' is genuine but low-impact: step 11's first clause (winner chooses the edge) arguably supplies the chooser even though the 'other party takes the opposite edge' clause is displaced by the scenario. Map is symmetric so the drawn top edge is harmless.",
+          "status": "accepted",
+          "issue": "Which short edge is the 'start' side is not stated; the step 11 chooser clause may supply the chooser. Symmetric map; drawn at the top as one arrangement.",
           "evidence_source_line": "12997; 11072",
-          "fix": "Soften the ledger wording to 'scenario does not say which short edge or who chooses; step 11 chooser clause may apply'."
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Ledges are small (about 6x9 pt at placed size) but labelled 'Ledge' and 'Crumbling' and are drawn per 12965-12969.",
+          "evidence_source_line": "12965-12969",
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-35",
-      "svg_sha256": "4dc62a74cc296b44c38e95805c18c17faf0f3bbed47d77e3fbdf0dc864687c7c",
-      "caption_sha256": "8fb8b0755b6b805ac893232ad670e1d3b976b89c34f90562142e313f12e99d3a",
-      "verdict": "PASS",
+      "svg_sha256": "a31ae341fddf792a37be68120656856f2f90705a84a9a1e84dc18244fca44b19",
+      "caption_sha256": "22bd865dbd2cb161ee661022be8f4bbb937a72445eae74b03172d96f7a665c23",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13015-13079",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
-      ],
-      "findings": [],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
-    },
-    {
-      "id": "FIG-36",
-      "svg_sha256": "f399589b53e2759665fe72946545e064c2334e8b96f64a494247346b33c12292",
-      "caption_sha256": "8a157b8371f6bbef85d7a89922d645f0811ddb4c3cc95335e839c92eefac55ba",
-      "verdict": "PASS_WITH_NOTES",
-      "checked_against_lines": [
-        "13080-13186",
-        "11068-11072",
-        "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
       "findings": [
         {
           "severity": "minor",
           "status": "open",
-          "issue": "Low defensive walls are drawn with the Impassable pattern; the source gives a terrain type only for the Guard Towers and Tent. The 'Low wall' label sits far above its wall.",
-          "evidence_source_line": "13104",
-          "fix": "Draw walls in the neutral per-piece grey and place the label beside lw1."
+          "issue": "Terrain type incomplete: Loose Rubble patches are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "13035; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+        }
+      ],
+      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    },
+    {
+      "id": "FIG-36",
+      "svg_sha256": "689b5c06c2d62a99681ae0b7c120833546fe86ceaae312b2ccbfb7c0e794b958",
+      "caption_sha256": "ac1bc8f01ad5029bbd8a9b4f22d099cc6bbd345554c44fcd5b796ed09c4ba0ba",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "13080-13186",
+        "11068-11072",
+        "10962-10990",
+        "14901-14915",
+        "863",
+        "870"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note (low walls with Impassable pattern) resolved: low walls use the neutral per-piece swatch (2.9.1 lists low walls Impassable).",
+          "evidence_source_line": "13104; 870",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "'Low wall' label floats about 4\" above its wall without a leader; the Guard hexagon overlaps the Chest inside the same Tower.",
+          "evidence_source_line": "13104; 13106; 13159",
+          "fix": "Put 'Low wall' beside lw1 and offset the Guard from the Chest; no data change."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Rubble are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "13104; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-37",
-      "svg_sha256": "6654517ae8f509d4261663dd149d85fc9978c4481561b239cac6faec0da51d83",
-      "caption_sha256": "194a1eed48afbeb8773f5d30d82364df19c17373f50dc8ec57df355e1e4b0e89",
+      "svg_sha256": "282c238a70dcafc0ddaee49cb4d89bbcf81a4d6a4bb6972c471faa00c9489c49",
+      "caption_sha256": "13cbf14c7b47fb52d82cf76cec9f9e75d7accc5e4e00765079f665baafed8050",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13187-13259",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "873"
       ],
       "findings": [
         {
           "severity": "major",
           "status": "resolved",
-          "issue": "Required terrain missing: the Under Passage must be 'walled on both sides by Blocking Terrain', but the map draws only a dashed shaded polygon; no walls are shown. The shading ('Deep Shadow' hatch) is not in the key and not labelled, so the reader cannot tell what the passage fill means.",
+          "issue": "Previous major (Blocking walls and Deep Shadow not drawn) re-verified: walls drawn as the keyed Blocking line on both sides with gaps for alcoves; passage in the keyed Deep Shadow hatch.",
           "evidence_source_line": "13212",
-          "fix": "Add Blocking wall bands along both sides of the passage polygon (or a labelled 'Blocking walls' edge style) and label the fill 'Deep Shadow' (or add a FIG-20 swatch). Acceptance: both passage walls visible; fill identified.",
-          "re_review_note": "Re-review: Blocking walls drawn as black lines along both sides of the passage; fill labelled 'Deep Shadow' and in key."
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note (walls closing alcove openings) resolved: gaps left at the alcoves.",
+          "evidence_source_line": "13212",
+          "fix": "None."
         },
         {
           "severity": "minor",
           "status": "open",
-          "issue": "The wall lines run across the openings of the side alcoves (Font/Chest alcoves on the east side and the chest alcove west of the middle section), so alcoves look sealed off although they 'branch off the main passage'.",
-          "evidence_source_line": "13212",
-          "fix": "Break the wall line where each alcove joins the passage."
+          "issue": "'Deep Shadow' label sits in the white area left of the passage, not on the hatched passage; 'min 12\"' label sits on Party A's dashed zone boundary.",
+          "evidence_source_line": "13212; 13214",
+          "fix": "Move 'Deep Shadow' onto the passage hatch (lat inside) and the 'min 12\"' label below the zone line."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "'about 18\" long' versus 'runs from one short battlefield edge to the other' of a 36\" board (logged ambiguity) and Party A 'farther from the Heart' versus Heart 'at least 12\" from Party A's edge' (circular, logged): passage drawn winding edge to edge with no length printed; Heart in the lower half satisfies both.",
+          "evidence_source_line": "13212; 13214; 13239",
+          "fix": "None; owner decision logged."
         }
       ],
       "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
     },
     {
       "id": "FIG-38",
-      "svg_sha256": "cee48625d37a672994b635c17e3aef6aee8d9c3bce1d64d08f7d7963fc140a19",
-      "caption_sha256": "4ba1311317233b2eabbeb7ba535b5c9382d50fa342c4db6fd81b6afea6b24194",
+      "svg_sha256": "ff7ff87b3e8023c82972fb2402eb64c3d1323bb66c2c0320a64904703ab720bf",
+      "caption_sha256": "3cbe27fbfab686100e750213d176449b681abb3e56937651555a25acd81cb30d",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13260-13363",
@@ -1010,72 +1286,85 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "accepted",
-          "issue": "'The central cavern and tunnels are in Deep Darkness' is not indicated on the map; 'Caller·A' label overlaps a Stalagmite piece.",
+          "status": "resolved",
+          "issue": "Earlier notes (Deep Darkness not indicated; Caller label over a Stalagmite) resolved: foot note and shading; no overlap.",
           "evidence_source_line": "13285",
-          "fix": "Add a foot note 'Cavern and tunnels: Deep Darkness' and move the label.",
-          "re_review_note": "Re-review: Deep Darkness hatch added to cavern and tunnels (resolved). Caller·A label still partly overlaps one Stalagmite piece; accepted because the piece remains identifiable and is illustrative."
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "'G1·A' label is about 7\" above its hexagon at the end of a long leader that crosses the 2\" ring; '3\"', '2\"' and 'Caller·A' labels crowd the Binding Circle.",
+          "evidence_source_line": "13315; 13285",
+          "fix": "Place 'G1·A' beside its hexagon (lp 'l')."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-39",
-      "svg_sha256": "0cdce1784214511890e93954b8bf9ce6395acad7931d8a3fad43a0b971a1c4f0",
-      "caption_sha256": "2cc8e72e566985e3ab703235e75bb1aced91c0cbc2e7709290928e5523d5960a",
+      "svg_sha256": "830df3a29696c70a329bb75ea0221174bd3d1cb7cc52b557cbdc07cdf4dfecb7",
+      "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13366-13417",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
       "findings": [
         {
           "severity": "minor",
           "status": "open",
-          "issue": "The c1-c2 and G1-c2 'min 6\"' rulers are nearly collinear and read as one long line through the G1 marker; number of Random Monster Groups (10.6.4, variable) is not stated though two are drawn.",
+          "issue": "The 'min 6\"' rulers c1-c2 and G1-c2 are close to collinear and the c1 ruler ends under the 'G1·R' label; the number of Random Monster Groups is variable (10.6.4) but two are drawn without a note.",
           "evidence_source_line": "13388; 13402",
-          "fix": "Offset the G1 ruler; add 'Groups: per 10.6.4' foot note."
+          "fix": "Offset one ruler and add foot note 'Two Monster Groups drawn; the number comes from 10.6.4'."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Rubble are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "13386; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-40",
-      "svg_sha256": "712eb7c952c44eedbaaa785efc0fe0066495b47d06aa2390d3c8fa19f5ec9713",
-      "caption_sha256": "c16e580cf13bde878a999201498ebc53dbaffb33e005cb883dcc42205c393cb2",
+      "svg_sha256": "3c9917e4cecfd02907231cf4f73cc5eb78c62d4a4b39531ae46344bd2cd269cd",
+      "caption_sha256": "e8be7e6d362e7365c34f59828aae77aa3ec01578618e731161d65f110755230c",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13418-13487",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "870"
       ],
       "findings": [
         {
           "severity": "major",
           "status": "resolved",
-          "issue": "Group 2 constraint not met by the drawn arrangement: the source places Group 2 'inside a ruined building adjacent to the Laboratory', but G2 sits in building bd2, about 3\" from the Laboratory footprint (adjacent = 1\" or less per 2.1).",
+          "issue": "Previous major (Group 2 not adjacent to the Laboratory) re-verified: bd2 is 0.5\" from the Lab and G2 stands inside it.",
           "evidence_source_line": "13468",
-          "fix": "Move bd2 (with G2 and the outside Treasure Chest) so a gap of 1\" or less separates it from the Lab, or move G2 into a building abutting the Lab. Acceptance: G2 inside a building whose nearest edge is within 1\" of the Lab.",
-          "re_review_note": "Re-review: bd2 now abuts the Lab (gap about 0.5\"); G2 inside it, Treasure Chest in the same outside structure."
+          "fix": "None."
         },
         {
           "severity": "minor",
           "status": "resolved",
-          "issue": "'Frozen Debris' is Cover Terrain tagged Difficult Terrain but is drawn as Cover only.",
+          "issue": "Frozen Debris is drawn Cover and Difficult (Cover Terrain tagged Difficult, 13438).",
           "evidence_source_line": "13438",
-          "fix": "Add 'Difficult' dots over the Debris or label 'Cover+Difficult'.",
-          "re_review_note": "Re-review: Debris relabelled."
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-41",
-      "svg_sha256": "f028dd8c0ae6f07ffa96dba05e30fd2cf7defa01d6cc427bc2a9f3704b69e705",
-      "caption_sha256": "365c4a475ac62c70844a4fdb693148954f8d8e3d3d3e8f4109d8ac14433474dc",
+      "svg_sha256": "29ba464c49a092653bacd8024d54af9e4db7483445de38930ebb5f4841835d24",
+      "caption_sha256": "6907dc8ea9a1e2bd22bc70c530f9681ab771df1bd34b463d7b1b9fd86338c613",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13488-13556",
@@ -1087,21 +1376,64 @@
         {
           "severity": "minor",
           "status": "resolved",
-          "issue": "'Grand Hall' label sits over the Cracked ice patch (ic1) and hides most of it.",
+          "issue": "Earlier note (Grand Hall label over Cracked ice) resolved.",
           "evidence_source_line": "13508",
-          "fix": "Move the Grand Hall label.",
-          "re_review_note": "Re-review: Grand Hall label moved; Cracked ice visible."
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "The mausoleum outline is unlabelled and the 'Crypt' and 'Grand Crypt' labels sit outside it (above and below), so they read as labelling the outline rather than the crypt rectangles.",
+          "evidence_source_line": "13508",
+          "fix": "Label inside each crypt (lp 'i') and add 'Mausoleum' on the outline."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-42",
-      "svg_sha256": "5206bc79da602ef7dafa3aa28c035bc5d8284918a33b4595cc81a9057499a2e5",
-      "caption_sha256": "a3a0c8a6c4a368070c4c0e652ace3077c3e9aa9706009af1d07d1d1eda0738a8",
+      "svg_sha256": "0ef86773a89fe4a10956d5bf69cd3560ce6c11826cc5eb3894b1f35a8368b591",
+      "caption_sha256": "08b85b987ca1b35e5c4a428829cd4d195e12fa27a85be74bd92d7549f9ad93be",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13557-13616",
+        "11068-11072",
+        "10962-10990",
+        "14901-14915",
+        "870"
+      ],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note (Workbenches with Impassable pattern) resolved: Workbenches are neutral per-piece (2.9.1 lists workbenches Impassable).",
+          "evidence_source_line": "13577; 870",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "The three Chests and four Conduits are grey-dashed, small and mostly unlabelled; at placed size they are hard to identify without the key.",
+          "evidence_source_line": "13577; 13579",
+          "fix": "Label one Chest, or draw the four Conduits and three Chests in the solid state with a foot note that positions are free."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Two Workbenches drawn (2-3 allowed); foot note states it.",
+          "evidence_source_line": "13577; 13599",
+          "fix": "None."
+        }
+      ],
+      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    },
+    {
+      "id": "FIG-43",
+      "svg_sha256": "fc11b58d88b2dc21fbed09e7ad1d7689d6322366e43d030573ec246c00090499",
+      "caption_sha256": "696980c4a640dc106f7560f39ad9ff073034130aa1d42026b0947bdd26ff0622",
+      "verdict": "PASS_WITH_NOTES",
+      "checked_against_lines": [
+        "13617-13692",
         "11068-11072",
         "10962-10990",
         "14901-14915"
@@ -1110,31 +1442,24 @@
         {
           "severity": "minor",
           "status": "open",
-          "issue": "Workbenches are drawn with the Impassable pattern although the source gives them no terrain type.",
-          "evidence_source_line": "13577",
-          "fix": "Use the neutral per-piece grey swatch."
+          "issue": "The Hoard's 2\" ring around the Wyrm is cut by the 'Pillar', '2\"' and 'Hoard' label halos and is not read as a closed ring; Ice Pillars are drawn about 1.5\" although described as 'large'.",
+          "evidence_source_line": "13637; 13639",
+          "fix": "Move 'Pillar' and 'Hoard' off the ring; optionally enlarge the Pillars (illustrative)."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Edges drawn long; text says only 'opposite edges' (foot note).",
+          "evidence_source_line": "13671",
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
-      "id": "FIG-43",
-      "svg_sha256": "18a874460be210e668109b3362bdf6eac567347a5826d704cd98449c0bd256f6",
-      "caption_sha256": "db2a7c4c064540f51578d297fc6a89f1ac73a4f4c3fb9fa300f71c2c7debb3e7",
-      "verdict": "PASS",
-      "checked_against_lines": [
-        "13617-13692",
-        "11068-11072",
-        "10962-10990",
-        "14901-14915"
-      ],
-      "findings": [],
-      "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
-    },
-    {
       "id": "FIG-44",
-      "svg_sha256": "184c46253a8d6762cb67cfbfc7d5b4003d179d1d79b026f933636a694ef1a48a",
-      "caption_sha256": "623a1ad672538a1488d8a1c3533aa85e601ebc3eae14aba238f6808d8af4e6a6",
+      "svg_sha256": "b6b3c7fc8e88f5651194fd53d4046d334087a89cca2cfcf89690045f1e6957b4",
+      "caption_sha256": "a5cafdb87a508cd6d929132674b0e028c6598d957cc8b2156efe33fe0625005d",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13693-13768",
@@ -1145,246 +1470,448 @@
       "findings": [
         {
           "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier notes (Ice Throne not drawn; Ice Mephit Sz S) resolved: Throne drawn and labelled; Small and Medium share a 1\"x1\" footprint (616-617).",
+          "evidence_source_line": "13739; 13751",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
           "status": "open",
-          "issue": "The Ice Throne the Magistrate begins on is not drawn or labelled; the Ice Mephit (Sz S) uses the generic M glyph; G1 is shown in open ground not in an 'outer corridor' (corridors outer to the chambers are not drawn). Zones A/B vs Shard Seekers/Bounty Hunters not tied (see FIG-20).",
-          "evidence_source_line": "13720; 13739; 13743; 13751",
-          "fix": "Label the throne under the Bailiff; accept glyph sizes; move G1 into a drawn corridor."
+          "issue": "Mephit leader and the 'Throne chamber' label overlap near the right end of the label.",
+          "evidence_source_line": "13739",
+          "fix": "Move 'Throne chamber' to lp 't' of the chamber."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Group 1 'outer corridors' are not drawn (corridors are generic); one Mephit drawn (foot note).",
+          "evidence_source_line": "13743; 13739",
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-45",
-      "svg_sha256": "1f13e2f451222e454456e695ddd4e60ae53eab9c1729ea41f37a85cad4c6fad7",
-      "caption_sha256": "ea5f7edba9d639e04b235719b11c7fe6bd4fc4a732c20328309569586f066d37",
+      "svg_sha256": "33e5270d283d9a4dcc1bc8c3f84638906a9fa6ca414f0c4bfbc8b46d7f205d91",
+      "caption_sha256": "544c8db44d30d68a170e82b87f93e59acd8c613cd1a78241cdd5b6da180b07fa",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13771-13837",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
       "findings": [
         {
           "severity": "minor",
           "status": "open",
-          "issue": "Oasis cluster is cramped: 'Oasis 8\"x8\"', 'Wellspring', 'Chieftain·A', 'G1·A' labels hide the Oasis top/right outline.",
-          "evidence_source_line": "13791; 13811",
-          "fix": "Offset labels so the 8\"x8\" outline is complete."
+          "issue": "'Oasis 8\"x8\"' label sits about 3.5\" above the Oasis outline with no leader, between the Dune and G2; the 2\" and 3\" rings and their labels overlap at the Oasis top right.",
+          "evidence_source_line": "13791; 13811; 13815",
+          "fix": "Put 'Oasis 8\"x8\"' inside or directly above the box (lp 'i')."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Sand Dunes and Rocky Outcrops are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "13791; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on dn1, dn2, dn3, oc1, oc2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-46",
-      "svg_sha256": "f40827603b2e3e2d15d08adb1b494fe70059af13f88dec2684d3d3a21af19406",
-      "caption_sha256": "bd93b223ffc247f94add11c80edc3911bd4c9b6db3f2c04dad5257da5170cb17",
+      "svg_sha256": "2940fe8d432eebfcdceb88d251e4768066a3e6489cc89a7c3644c517144947e5",
+      "caption_sha256": "fb6594f930d50d81cbc37664daf0cca076daedeef6d97a663abf493565575591",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13838-13902",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
-          "issue": "The three Elemental Locus pillars (Impassable Terrain, 4-6\" from the Altar) are drawn as objective diamonds; the Impassable nature is lost. Zone depth 6\" is the step 11 default but is drawn like a printed value.",
+          "status": "resolved",
+          "issue": "Earlier notes (Locus pillars as plain diamonds; 6\" printed like a stated value) resolved: Loci are objective diamonds on the Impassable square labelled 'Locus (Impassable)'; zone depth marked '6\" default'.",
           "evidence_source_line": "13858; 13884",
-          "fix": "Add 'Impassable' to the Locus label or foot note; note the 6\" default in the footer."
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: obsidian rubble are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "13858; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-47",
-      "svg_sha256": "f0d4cb16d23a191da963841efb70d0be54919f8e893748560541f7550b889415",
-      "caption_sha256": "514d6dce5666126d81e3c31da4dcb6a2c61ee7b73961a71cd8ab07a960db7231",
-      "verdict": "PASS_WITH_NOTES",
+      "svg_sha256": "6198126f9ec22f375fe325007e2c6d1a0e84526cf1902f751cd3b8759aeea469",
+      "caption_sha256": "8f66e4b11b21a3e9422a15715b49fb82e77c071d1d8c7709f1ded3a47ff2719c",
+      "verdict": "FAIL",
       "checked_against_lines": [
         "13903-13970",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "852",
+        "870"
       ],
       "findings": [
         {
-          "severity": "minor",
+          "severity": "major",
           "status": "open",
-          "issue": "Deep Sand is drawn with the Difficult Terrain pattern and Fallen Pillar with Impassable; the source gives neither a terrain type.",
-          "evidence_source_line": "13923",
-          "fix": "Use the neutral per-piece grey or a plain label."
+          "issue": "Wrong terrain type drawn: 'Deep Sand' (large grey patch, label 'Deep Sand') is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Open Terrain tagged Difficult (walkable), so the map tells the reader a walkable/see-through piece blocks movement or sight.",
+          "evidence_source_line": "13923; 852 (deep or drifted sand: Open Terrain, Difficult Terrain, Natural); 13959 (Pressure Plates may not be placed in Deep Sand, so it is entered)",
+          "fix": "Set ds terrain 'difficult' (keyed Difficult stipple); set fp (Fallen Pillars) to 'impassable' (870 lists fallen pillars Impassable)."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "UNRESOLVED element verified genuine: the Tomb Herald 'starts Awake guarding the central Sarcophagus' (13948) but the three Sarcophagi are placed 'in separate chambers' (13925) and none is designated central. Correctly not drawn; ? tag and note match the key.",
+          "evidence_source_line": "13948; 13925",
+          "fix": "None; owner must say which Sarcophagus is central."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Pressure Plates (1d3, placed alternately before deployment, 13959) are not drawn; zone size and order rest on the step 11 default and are marked 'default'.",
+          "evidence_source_line": "13959; 13955; 11072",
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-48",
-      "svg_sha256": "1ad2da5de36436a6d6b29f3d30ffa2208113e81245c3d36f0fb323081ba0fe8b",
-      "caption_sha256": "663a280181e9a3b663386b2a8c3252818035a4072da675ef259f053976c44366",
-      "verdict": "PASS",
+      "svg_sha256": "ee68d7ab4041e91c542c58714b26f778955f0f9bfe7cec3433e669f44f04ea45",
+      "caption_sha256": "54ef4455882afc5eabba98a2e45bf7c2492e506a281d52828d5c07adde12f0dc",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13971-14032",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
-      "findings": [],
+      "findings": [
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "The Shifting Sands Zone has no stated size or position (only 'central'); it is drawn as a 10\" circle with status CONSTRAINED. It is drawn grey-dashed, but the label sits outside it next to a Dune and reads as labelling the Dune.",
+          "evidence_source_line": "13991; 14007",
+          "fix": "Mark the zone ILLUSTRATIVE in the spec (size not stated) and place its label inside the circle."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Dune ridges are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "13991; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on dr1, dr2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Edges drawn long; text says only 'opposite battlefield edges' (foot note). The burrowed Sandwyrm starts off the battlefield and is not drawn.",
+          "evidence_source_line": "14018; 14011",
+          "fix": "None."
+        }
+      ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-49",
-      "svg_sha256": "753047b6f161c0b3bf040d07c48c8041acdabec2770d66b01362055727e9b53b",
-      "caption_sha256": "cfc89d3ff7fc1b31bd0d1830b0d74cced496695aecd9a03364ed6476347f0a2b",
+      "svg_sha256": "47ab469cdbc487a1175435b32e37d5dd0651f522f5253964f5f7c96fb2e13075",
+      "caption_sha256": "752bf3f58b809e97a2d9d3982846f343def50359b09e0b623af8afcf7f886514",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "14033-14107",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "863"
       ],
       "findings": [
         {
           "severity": "minor",
           "status": "resolved",
-          "issue": "Colossus is drawn as a solid 7\"x7\" Blocking square; the source gives only 'large central terrain feature' (no size), so the size should look illustrative.",
+          "issue": "Earlier note (Colossus solid 7\"x7\") resolved: drawn grey-dashed as an unsized central feature.",
           "evidence_source_line": "14053",
-          "fix": "Dash the outline or label 'size not fixed'.",
-          "re_review_note": "Re-review: Colossus now grey dashed (size illustrative)."
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "Terrain type incomplete: Sand Dunes are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
+          "evidence_source_line": "14053; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on dn1, dn2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "'broken statuary' has no listed terrain type; drawn Cover (illustrative).",
+          "evidence_source_line": "14053",
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-50",
-      "svg_sha256": "d6f3af0e4232d4e25114863759902ce67338c66538e981923c16adfcfa10b168",
-      "caption_sha256": "98085be95bf4ae5a18940f1b080afb6e18aac360d453a90c3a4da9939685413a",
+      "svg_sha256": "a12c52e20aaab7213f7d7fd54106672fef29d6e3afa34e1bbdfcc50e267a0152",
+      "caption_sha256": "67a4283af306188eee04688bb10c4ac0f60ba4ed0c4bce5dc33e42eaefd682ee",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "14108-14194",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "870"
       ],
       "findings": [
         {
           "severity": "minor",
-          "status": "accepted",
-          "issue": "Glyphic Stones (Impassable Terrain) are drawn as objective diamonds; the central Dais is drawn solid 5\"x5\" although no size is given.",
+          "status": "resolved",
+          "issue": "Earlier notes (Glyphic Stones as plain diamonds; Dais drawn solid) resolved: Stones are objective diamonds on the Impassable square, labelled 'Stone (Impassable)'; Dais drawn grey-dashed; three Stones 6\" from the Dais centre and 120 degrees apart (rotation open).",
           "evidence_source_line": "14133",
-          "fix": "Add 'Impassable' to the Stone label; dash or annotate the Dais size.",
-          "re_review_note": "Re-review: Dais now dashed (resolved). Glyphic Stones still diamonds without 'Impassable' in the label; accepted because the Impassable status is in the scenario text and the key marks objectives with that glyph."
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Two Flame Mephits (Small, 1\"x1\") drawn as Monster hexagons; Cinder Lord not drawn (appears only if the prison is broken).",
+          "evidence_source_line": "14159; 14180",
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-51",
-      "svg_sha256": "e2452a1e4fd3ab91e50d065ce014a07ca77cae534e71aaa17fac5fde17593bdf",
-      "caption_sha256": "9d08158875eccf5f55cd4aa7834b929a4686dd1c3c64fdeefe356379ce0c9e29",
-      "verdict": "PASS_WITH_NOTES",
+      "svg_sha256": "05aa1dcd40c656ce324975ba93a3f3cc4d999ebe291f0db1d08c3b72ca4845c5",
+      "caption_sha256": "8ed4b790280f1a99b72e41841c37f130d4eb71445f8faf6816ce1ab290d5845e",
+      "verdict": "FAIL",
       "checked_against_lines": [
         "14197-14267",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "859",
+        "861"
       ],
       "findings": [
         {
+          "severity": "major",
+          "status": "open",
+          "issue": "Wrong terrain type drawn: 'Reeds' (two pieces, one holding a Chest) is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover Terrain (not Impassable/Blocking), so the map tells the reader a walkable/see-through piece blocks movement or sight.",
+          "evidence_source_line": "14217; 14219; 859 (reeds: Cover Terrain, Natural)",
+          "fix": "Set rd1 and rd2 terrain 'cover'."
+        },
+        {
+          "severity": "major",
+          "status": "open",
+          "issue": "Illustrative arrangement violates the placement: Group 1 must be placed 'on a Bog Island near one Chest', but the hexagon (centre 2.7\" from the island centre, island radius 2\") lies wholly outside the island circle.",
+          "evidence_source_line": "14251",
+          "fix": "Move g1 to about (6.9, 10.0) so its footprint lies inside the island."
+        },
+        {
           "severity": "minor",
           "status": "open",
-          "issue": "Group 2 'patrolling murky water' is drawn in an outer Shallow patch; the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258), so the placement may be illegal. Possible unlogged ambiguity. Sanctum outline is partly hidden by the Shallow/Reliquary/Sanctum labels.",
+          "issue": "Group 2 'patrolling murky water' is drawn in an outer Shallow patch; the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258). Possible unlogged ambiguity. Sanctum label sits over the Sanctum water.",
           "evidence_source_line": "14252; 14258",
-          "fix": "Either draw G2 in barrow water or log the ambiguity; move labels clear of the Sanctum."
+          "fix": "Log in ambiguity-triage or draw Group 2 in the Barrow water."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-52",
-      "svg_sha256": "451ffe1f664b245e775fc212e601d2b5878533c7481497d727a1a86969fc6f08",
-      "caption_sha256": "ee97335ad81333be66092a27962d2affdf7f3131781eee66dcdbf8e27727aae2",
-      "verdict": "PASS_WITH_NOTES",
+      "svg_sha256": "8385a1c58828b8d70dcc628377093d23b80be091f3dfa3950e448575b191bfdc",
+      "caption_sha256": "6622d45c42690e499c14e13929ac78d0df19fabfc16359fbed143a1c2e24970a",
+      "verdict": "FAIL",
       "checked_against_lines": [
         "14268-14342",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "862"
       ],
       "findings": [
         {
+          "severity": "major",
+          "status": "open",
+          "issue": "Wrong terrain type drawn: 'Reed screen' is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover Terrain tagged Difficult, so the map tells the reader a walkable/see-through piece blocks movement or sight.",
+          "evidence_source_line": "14293; 862 (reed screens: Cover Terrain tagged Difficult Terrain)",
+          "fix": "Set rs terrain 'coverdiff'."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "UNRESOLVED element verified genuine: Escape Conditions require escape for the Sunstone Amulet and Pile rewards but name no edge or zone (14333); the any-edge fallback is stated only for Secondary Objectives (10984) and 14770 defers to 'a legal extraction edge ... as the scenario requires'. Not drawn; ? tag matches the key.",
+          "evidence_source_line": "14333; 10984; 14770",
+          "fix": "None; owner must state the extraction edge."
+        },
+        {
           "severity": "minor",
           "status": "open",
-          "issue": "Reed screens are drawn with the Difficult pattern; the source gives no terrain type.",
-          "evidence_source_line": "14293",
-          "fix": "Use a neutral swatch."
+          "issue": "The numbered reeds marker is labelled 'G1' (reads as a Monster Group glyph; FIG-53/54 say 'Reeds 1' and 'Vine 1'); the 'Shaman·A' leader runs through the third Pile marker; Troglodytes (2 + APL/2, max 6) drawn as one hexagon without a foot note.",
+          "evidence_source_line": "14323; 14319",
+          "fix": "Label 'Reeds 1'; route the Shaman leader aside; add foot note 'one Troglodyte drawn'."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-53",
-      "svg_sha256": "3579aad95148c9b3817ead00eaf9b20ad310c2206e33b631eab2a7a50ee0ffc9",
-      "caption_sha256": "5f3c45befc3c4ae26f458ddbfac37e0dbd52610ba5af338466e4718fa5d93408",
-      "verdict": "PASS",
+      "svg_sha256": "b57ae5acd14e34e8690d874188cfb88d4c532504ffef749240b4dd8a84ffe5a5",
+      "caption_sha256": "a265935108bb677a0691bdbdc83c6734d8a6df1a7cd0d7d27c840dd94b11e62f",
+      "verdict": "FAIL",
       "checked_against_lines": [
         "14343-14417",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "859",
+        "852"
       ],
-      "findings": [],
+      "findings": [
+        {
+          "severity": "major",
+          "status": "open",
+          "issue": "Wrong terrain type drawn: 'Razor Reeds' (two pieces) is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover Terrain, so the map tells the reader a walkable/see-through piece blocks movement or sight.",
+          "evidence_source_line": "14368; 859 (reeds: Cover Terrain, Natural; unlisted features use the defaults, 845)",
+          "fix": "Set rr1 and rr2 terrain 'cover'."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "The Fen is 'deep mud and shallow pools': drawn only as the Water pattern, with a 16\" diameter that the text does not state, status CONSTRAINED.",
+          "evidence_source_line": "14368; 852",
+          "fix": "Mark the Fen ILLUSTRATIVE and add foot note 'Fen: deep mud (Difficult) and shallow pools'."
+        }
+      ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-54",
-      "svg_sha256": "fb187641fe2b7cf43466bd45dfb45e168b462a913069c63179fa87234fe6195e",
-      "caption_sha256": "02c7d723c64359a1a3d2988c2e3ee1af4e8b6b3d1f563dd37e2b3b28f5bd1c3e",
-      "verdict": "PASS_WITH_NOTES",
+      "svg_sha256": "25ec22a8359b7e876013a987f0611f2a6f01f372de0178d083ebf1272d9ec5ec",
+      "caption_sha256": "bc8d245f6f693cc8f28fb4b08d44d4032834a8e7a37efd79b06bd4c090d36c07",
+      "verdict": "FAIL",
       "checked_against_lines": [
         "14418-14496",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "852",
+        "859"
       ],
       "findings": [
         {
-          "severity": "minor",
+          "severity": "major",
           "status": "open",
-          "issue": "Thorny Vines are Cover, Difficult, Dangerous and Natural but the Grove is drawn as Cover only; Corrupted Muck is drawn Difficult without source support; 'Thornlings·A' label overlaps the Mangroves piece.",
-          "evidence_source_line": "14443; 14481",
-          "fix": "Add 'Difficult, Dangerous' to the Grove label; use neutral swatch for Muck; move label."
+          "issue": "Wrong terrain type drawn: 'Mangroves' and the two 'Corrupted Muck' patches (each holding a Chest) is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Mangroves Cover Terrain; Muck Open Terrain tagged Difficult (enterable), so the map tells the reader a walkable/see-through piece blocks movement or sight.",
+          "evidence_source_line": "14443; 14445; 859 (mangroves: Cover Terrain, Natural); 852 (mud, bog, muck: Open Terrain, Difficult Terrain); 14481 (Heroes enter and end activations in Corrupted Muck)",
+          "fix": "Set mg terrain 'cover'; set mu1 and mu2 terrain 'difficult' (the Chests stay inside)."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Earlier note (Thorny Vines Cover only) resolved: Grove is Cover and Difficult with the foot note adding Dangerous (1 piercing damage).",
+          "evidence_source_line": "14443",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Second Thornling group not placed until a Hero comes within 6\" of its numbered vine marker: marker 'Vine 1' with 6\" ring drawn; Treant (Huge) drawn grey-dashed 'near the Heartwood'.",
+          "evidence_source_line": "14469",
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-55",
-      "svg_sha256": "200b3539b03c622f46bf717894a4aa71a2bc568f688901742540fd8b12b6d6a4",
-      "caption_sha256": "7a5fcefef796b13ee72cde47b0e86d705272d4004ea72cd6d9d59ca172756d72",
-      "verdict": "PASS",
+      "svg_sha256": "d0d858a615471c91508474756658bfd43f2461efde1db9af5070d7c07a3a809e",
+      "caption_sha256": "301f619dd66ddace585da3361de4e88462ad56df541343ea6d8c1028d94c379d",
+      "verdict": "FAIL",
       "checked_against_lines": [
         "14497-14578",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "859",
+        "852"
       ],
-      "findings": [],
+      "findings": [
+        {
+          "severity": "major",
+          "status": "open",
+          "issue": "Wrong terrain type drawn: 'Reeds' is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover Terrain, so the map tells the reader a walkable/see-through piece blocks movement or sight.",
+          "evidence_source_line": "14522; 859 (reeds: Cover Terrain, Natural)",
+          "fix": "Set rd terrain 'cover'."
+        },
+        {
+          "severity": "major",
+          "status": "open",
+          "issue": "Illustrative arrangement violates the placement: Treasure Chests go 'on muddy islands' (14524) but both Chests are drawn in open Shallow Water; the only islet drawn (Islet) holds no Chest.",
+          "evidence_source_line": "14524; 14522",
+          "fix": "Add two small open islets under c1 and c2 (or move them onto islets) so each Chest stands on an island."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "UNRESOLVED elements verified genuine: (a) Group 1 enters 'from a water edge' (14552) but no battlefield edge is called a water edge; (b) Escape Conditions (14568) name no extraction edge or zone. Both correctly not drawn; the two ? tags match the key.",
+          "evidence_source_line": "14552; 14568",
+          "fix": "None; owner decisions logged."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "The Ritual Island radius (4\") is not stated but is drawn with a solid heavy outline; the water square (20\") is dashed.",
+          "evidence_source_line": "14522",
+          "fix": "Draw the island dashed (draw 'open') or mark ILLUSTRATIVE."
+        }
+      ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-56",
-      "svg_sha256": "e787e007664000629173b4504bf94e03ad79505f3c149ca8d27dfbca923d2c10",
-      "caption_sha256": "88aca6a01050d9c3ec5562379bc707e484c1ee2e561121831db83a5f736f49ea",
-      "verdict": "PASS",
+      "svg_sha256": "5a66410fda42b183a6ff74c28e6d1ed1ae06843cce8ae94f8337a759fe8fdf4d",
+      "caption_sha256": "d99b1e8d5a335dc3f1b5f629a6ab67b2e4552d378a98b9facd1468da3dc015ea",
+      "verdict": "FAIL",
       "checked_against_lines": [
         "14579-14648",
         "11068-11072",
         "10962-10990",
-        "14901-14915"
+        "14901-14915",
+        "852",
+        "859"
       ],
-      "findings": [],
+      "findings": [
+        {
+          "severity": "major",
+          "status": "open",
+          "issue": "Wrong terrain type drawn: 'Reeds' is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover Terrain, so the map tells the reader a walkable/see-through piece blocks movement or sight.",
+          "evidence_source_line": "14599; 859 (reeds: Cover Terrain, Natural)",
+          "fix": "Set rd terrain 'cover'."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "'The edges are Crumbling Banks' (14599; 852: Open, Difficult, Natural) are not shown or footnoted.",
+          "evidence_source_line": "14599; 852",
+          "fix": "Add foot note 'Pool edges: Crumbling Banks (Difficult)'."
+        }
+      ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     }
   ],
@@ -1428,5 +1955,51 @@
     "ambiguity_check": "13 logged ambiguities all genuine (RC485 text and 1.6 do not resolve them); FIG-34 'start edge' is low-impact/borderline (step 11 chooser clause may supply the chooser). Unlogged candidates: FIG-25 Group 3 perimeter vs 6\" from centre (major, recorded); FIG-51 'murky water' (minor, recorded). Blocked elements verified undrawn: FIG-33 Group 3 arrival, FIG-47 Tomb Herald, FIG-52 exit, FIG-55 Group 1 arrival and exit.",
     "not_checked": "Placed page proof not reviewed; legibility judged from SVG at 9 pt minimum font and 200-300 ppi renders; physical print not tested.",
     "re_review": "Second pass on FIG-20,23,24,25,26,28,29,30,33,37,38,40,41,49,50 after illustrator fixes: all 6 majors resolved (render-verified); no new major; one new minor (FIG-37 alcove openings)."
+  },
+  "redrawn_figures_review": {
+    "reviewed_at": "2026-10-07T04:01:08Z",
+    "figures_reviewed": 44,
+    "scope": "FIG-13, 14, 15, 16, 18, 19, 20 (key), 21-56 (36 Core maps), 57 (10.1 template)",
+    "verdicts": {
+      "PASS_WITH_NOTES": 35,
+      "PASS": 2,
+      "FAIL": 7
+    },
+    "findings_by_severity_status": {
+      "minor/resolved": 39,
+      "minor/accepted": 25,
+      "major/resolved": 7,
+      "minor/open": 43,
+      "major/open": 9
+    },
+    "open_majors": {
+      "FIG-47": [
+        "Wrong terrain type drawn: 'Deep Sand' (large grey patch, label 'Deep Sand') is drawn with "
+      ],
+      "FIG-51": [
+        "Wrong terrain type drawn: 'Reeds' (two pieces, one holding a Chest) is drawn with the neut",
+        "Illustrative arrangement violates the placement: Group 1 must be placed 'on a Bog Island n"
+      ],
+      "FIG-52": [
+        "Wrong terrain type drawn: 'Reed screen' is drawn with the neutral 'Impassable or Blocking "
+      ],
+      "FIG-53": [
+        "Wrong terrain type drawn: 'Razor Reeds' (two pieces) is drawn with the neutral 'Impassable"
+      ],
+      "FIG-54": [
+        "Wrong terrain type drawn: 'Mangroves' and the two 'Corrupted Muck' patches (each holding a"
+      ],
+      "FIG-55": [
+        "Wrong terrain type drawn: 'Reeds' is drawn with the neutral 'Impassable or Blocking per pi",
+        "Illustrative arrangement violates the placement: Treasure Chests go 'on muddy islands' (14"
+      ],
+      "FIG-56": [
+        "Wrong terrain type drawn: 'Reeds' is drawn with the neutral 'Impassable or Blocking per pi"
+      ]
+    },
+    "method": "For each map: read the scenario setup text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) and 10.1 steps 7, 8, 11 with sed; compared every element of figures/src/scenario_specs.json and the rendered SVG (typst, placed width 243 pt, 150 ppi for all 36 maps; 300 ppi crops of FIG-24, 25, 26, 27, 28, 36, 37, 42, 43, 45 and of FIG-14 panel A, FIG-19 panel A, FIG-57) with zones, markers, Monsters (including Sz), terrain types, distances, entries, exits, ILLUSTRATIVE versus fixed status, caption and foot note; re-derived numeric constraints (Stones 6-8\", Orbs and Stones evenly spaced, Chests, Wagons, 12\" Heart, 10\" Platforms, Warden 2\", binding points); compared terrain types against the 2.9.1 table (845-873); scripted checks of glyph ids against the FIG-20 key (all explained, strips equal), min font 9 pt, no images, check_scenmaps and check_registry both clean; verified the four ? elements (Undermarches 1 Group 3, Sun-Drowned 3 Tomb Herald, The Mire 2 escape, The Mire 5 Group 1 arrival and escape) are genuinely unstated and nothing is drawn for them.",
+    "not_checked": "Page-placed PDF proof, physical print, and the interplay with column balancing are outside this review; legibility judged from placed-width renders only.",
+    "systematic_open_minor": "S1: pieces that 2.9.1 types Cover plus Difficult (Undergrowth, Rubble fields, dunes, rocky outcrops, 863-864) are drawn Cover only in 15 maps (FIG-22, 23, 25, 26, 27, 28, 29, 32, 35, 36, 39, 45, 46, 48, 49); recorded as open minor on each.",
+    "systematic_open_major": "S2: the neutral 'Impassable or Blocking per piece' swatch is used for pieces that 2.9.1 lists as walkable or Cover (Deep Sand, Reeds, Reed screens, Razor Reeds, Mangroves, Corrupted Muck): FIG-47, 51, 52, 53, 54, 55, 56. Two further placement majors: FIG-51 Group 1 off its Bog Island and FIG-55 Chests not on islands."
   }
 }
