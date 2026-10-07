@@ -218,7 +218,6 @@ class Book:
                 self._anchors(it["blocks"], acc)
             self._anchors(b.get("blocks", []), acc)
 
-    # ------------------------------------------------------------- blocks
     def heading(self, b):
         lvl = b["level"] - 1
         body = self.em.inl(b["c"])
@@ -236,11 +235,10 @@ class Book:
         if is_caption(b):
             return f"#runin[{tag}{body}]\n"
         if self.in_glossary and b["c"] and b["c"][0]["t"] == "strong" and first_text({"c": b["c"][0]["c"]}).rstrip().endswith(":"):
-            return f"#gloss[{tag}{body}]\n"   # dictionary-style hanging indent (layout only)
+            return f"#gloss[{tag}{body}]\n"
         return f"{tag}{body}\n\n"
 
     def block_inline(self, b):
-        """Render a block inside a list item / quote."""
         t = b["type"]
         if t == "para":
             return self.tags(b["id"]) + self.em.inl(b["c"])
@@ -258,7 +256,7 @@ class Book:
 
     def tags(self, bid):
         if bid.startswith("h-"):
-            return ""   # headings are index targets through their own label (see make_index heads)
+            return ""
         return "".join(f"#ixm({lit(k)})" for k in self.index_targets.get(bid, []))
 
     def lst(self, b):
@@ -282,7 +280,6 @@ class Book:
         mapping = {"id": b["id"], "src": b["src"], "rep": rep, "scope": c["scope"], "columns": c["columns"],
                    "rows": c["rows"], "header": c["header"]}
         if rep == "stat" or (c["header"][:6] == ["HP", "AV", "SPD", "LVL", "CV", "Sz"]):
-            # a compact strip only when every value is short; formula profiles use labelled key/value rows
             short = all(len(cell_plain(v)) <= 12 for v in b["rows"][0]) if b["rows"] else False
             if len(b["rows"]) == 1 and c["scope"] == "column" and rep == "stat" and short:
                 mapping["rep"] = "statstrip"
@@ -322,7 +319,6 @@ class Book:
         w = list(c["widths"])
         slack = total - sum(w)
         if slack > 0:
-            # give spare width to the column with the most text
             i = max(range(len(w)), key=lambda k: c["max_pt"][k])
             w[i] += slack
         aligns = self._aligns(b, c)
@@ -352,7 +348,6 @@ class Book:
         mapping["field_map"] = fmap
         return f"#cards({lit(b['id'])}, ({', '.join(entries)},))"
 
-    # ------------------------------------------------------------- chapters
     def emit(self):
         o = self.out
         o.append('#import "heraldry.typ": *\n#import "frontmatter.typ": *\n#show: book\n')
@@ -384,7 +379,6 @@ class Book:
         title = h["title"]
         m = re.match(r"^((?:Appendix [A-Z]\.)|(?:\d+\.))\s+(.*)$", title)
         num, rest = (m.group(1), m.group(2)) if m else (None, title)
-        # Title must be rendered from the source inline nodes: split on the first text node.
         lead = None
         i = 1
         if len(blocks) > 1 and is_flavour(blocks[1]):
@@ -403,7 +397,6 @@ class Book:
                 art = lit("../" + str(f.relative_to(ROOT)))
         self.out.append(f"#chapter-opener({numlit}, [#{lit(rest)}], {lit(h['id'])}, lead: {('[' + lead + ']') if lead else 'none'}, art: {art})\n")
         self.out.append(self.tags(h["id"]) + "\n")
-        # group remaining blocks into segments
         cur = []
         rest_blocks = blocks[i:]
         for k, b in enumerate(rest_blocks):
@@ -414,7 +407,6 @@ class Book:
             if b["type"] == "table":
                 s, scope = self.table(b)
                 if scope == "full":
-                    # carry immediately preceding heading(s) with the full-width table
                     carry = []
                     while cur and (cur[-1][0]["type"] == "heading" or is_caption(cur[-1][0])):
                         carry.insert(0, cur.pop())
@@ -430,7 +422,6 @@ class Book:
                 cur.append((b, s + "\n"))
                 continue
             r = self.render(b)
-            # a short plain paragraph right after a heading is kept whole (no 1-line orphan under it)
             if (b["type"] == "para" and cur and cur[-1][0]["type"] == "heading" and r.endswith("\n\n")
                     and len(first_text_full(b)) < 300 and not r.startswith(("#example[", "#flavour[", "#runin["))):
                 r = f"#keep[{r.rstrip()}]\n"
@@ -441,12 +432,11 @@ class Book:
                     cur = []
                     self.block_map.append((fig["id"], b["src"], "figure-full", None))
                     if fig["id"] in FLOAT_FIGS:
-                        # very tall reference figure: float to the next page top instead of leaving a void
                         self.out.append(f"#place(auto, float: true, clearance: 12pt)[{self.figure(fig, full=True)}]\n")
                     else:
                         self.out.append(f"#full[{self.figure(fig, full=True)}]\n")
                 else:
-                    cur.append(({"type": "figure", "id": fig["id"], "src": b["src"]}, self.figure(fig)))
+                    cur.append({"type": "figure", "id": fig["id"], "src": b["src"]}, self.figure(fig))
         self.flush(cur)
 
     def figs_for(self, b):
@@ -460,7 +450,7 @@ class Book:
                 walk(y)
         walk(b)
         out = []
-        for i in dict.fromkeys(ids):   # a list and its first item paragraph can share an id
+        for i in dict.fromkeys(ids):
             out.extend(self.fig_slots.get(i, []))
             self.placed_figs.update(f["id"] for f in self.fig_slots.get(i, []))
         return out
@@ -513,7 +503,7 @@ class Book:
             carry = ""
             for j in range(tail, len(parts)):
                 if f"{sid}:{j}" in self.piece_heads and j < len(parts) - 1:
-                    carry += parts[j]      # keep headings in the same balancing unit as what follows
+                    carry += parts[j]
                     continue
                 tp.append(carry + parts[j])
                 carry = ""
@@ -538,14 +528,12 @@ def compile_book(variant="cream", out=None, query=True, edition="print"):
     return out, dt, None
 
 
-
-STRADDLE_MAX = 250   # pt: max gap a straddling piece may leave at the foot of the previous page
+STRADDLE_MAX = 250
 TOP_Y = 0.65 * 72
 BODY_BOTTOM = 792 - 0.7 * 72
 
 
 def compute_balance(pm, prev, sigs, heads=None, hpos=None):
-    """Decide, per segment, from which piece the tail on its last page should be balanced."""
     segs = {}
     for m in pm:
         segs.setdefault(m["seg"], []).append(m)
@@ -564,11 +552,10 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None):
         pt = pt[1] if pt and pt[0] == sigs.get(str(sid)) else None
         byp = {m["piece"]: m for m in starts}
         if pt is not None and pt in byp and byp[pt]["page"] == L:
-            res[str(sid)] = [sigs[str(sid)], pt]   # hysteresis: previous tail still sits on the last page
+            res[str(sid)] = [sigs[str(sid)], pt]
             continue
         on_last = [m for m in starts if m["page"] == L]
         if not on_last:
-            # only the continuation of one straddling piece is on the last page
             lastp = starts[-1] if starts else None
             if lastp and lastp["page"] == L - 1 and BODY_BOTTOM - lastp["y"] < STRADDLE_MAX:
                 res[str(sid)] = [sigs[str(sid)], lastp["piece"]]
@@ -583,13 +570,11 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None):
             first = on_last[0]
             at_top = abs(first["y"] - TOP_Y) < 20 and first["x"] < 300
             if not at_top:
-                # previous piece straddles onto the last page; include it if little is left on the previous page
                 if BODY_BOTTOM - prevp["y"] < STRADDLE_MAX or prevp["page"] == L:
                     t = prevp["piece"]
                 else:
                     continue
         res[str(sid)] = [sigs[str(sid)], t]
-    # never leave a heading as the last piece before the balanced tail
     for k, (sig, t) in list(res.items()):
         while t > 0 and f"{k}:{t-1}" in (heads or {}):
             t -= 1
@@ -598,6 +583,10 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None):
 
 
 def main():
+    BUILD.mkdir(parents=True, exist_ok=True)
+    MAP.mkdir(parents=True, exist_ok=True)
+    if not (BUILD / "blocks.json").exists():
+        raise FileNotFoundError("Missing build/blocks.json; generate the parsed manuscript before building the book.")
     ap = argparse.ArgumentParser()
     ap.add_argument("--variant", default="cream")
     ap.add_argument("--passes", type=int, default=5)
@@ -623,7 +612,6 @@ def main():
         print(f"pass {p+1}: {dt:.1f}s, segments={book.seg_count}, balanced={len(new)}, changed={sum(1 for k in set(new)|set(balance) if new.get(k)!=balance.get(k))}")
         if new == balance or a.no_balance:
             break
-        # damping: a segment that has already changed twice keeps its current value
         for k in set(new) | set(balance):
             if new.get(k) != balance.get(k):
                 flips[k] = flips.get(k, 0) + 1
@@ -637,7 +625,7 @@ def main():
                 t -= 1
             new[k] = [sig, t]
         if p == a.passes - 1 or new == balance:
-            break   # keep balance.json consistent with the PDF just compiled
+            break
         balance = new
         bal_file.write_text(json.dumps(balance))
     MAP.mkdir(parents=True, exist_ok=True)
