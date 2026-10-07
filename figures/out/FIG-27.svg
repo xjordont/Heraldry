@@ -126,7 +126,7 @@
 <polygon points="168.47,101 165.98,105.3 161.02,105.3 158.53,101 161.02,96.7 165.98,96.7" fill="url(#p-mon-l)" stroke="#777" stroke-width="1" stroke-linejoin="round"/>
 </g>
 <g data-glyph="mon" data-state="illus">
-<polygon points="78.47,98 75.98,102.3 71.02,102.3 68.53,98 71.02,93.7 75.98,93.7" fill="url(#p-mon-l)" stroke="#777" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="75.47,155 72.98,159.3 68.02,159.3 65.53,155 68.02,150.7 72.98,150.7" fill="url(#p-mon-l)" stroke="#777" stroke-width="1" stroke-linejoin="round"/>
 </g>
 <g data-glyph="arr-exit">
 <line x1="121.5" y1="29" x2="121.5" y2="21" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
@@ -172,24 +172,24 @@
 <line x1="121.5" y1="103.5" x2="121.5" y2="83.44" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
 <text x="116.35" y="80.44" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Dome 6"×6"</text>
-<text x="92.14" y="61.1" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Wall</text>
+<text x="68.58" y="80.4" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Wall</text>
 <text x="178.7" y="100.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Rubble</text>
-<text x="100.7" y="94.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Platform</text>
+<text x="47.99" y="94.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Platform</text>
 <g data-glyph="leader">
-<line x1="118.71" y1="122.21" x2="118.71" y2="144.71" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="118.71" y1="116.21" x2="118.71" y2="101.71" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="103.53" y="153.31" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">min 10"</text>
+<text x="103.53" y="98.71" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">min 10"</text>
 <g data-glyph="leader">
-<line x1="115.8" y1="122" x2="101.3" y2="122" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="121.5" y1="127.7" x2="121.5" y2="142.2" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="81.6" y="124.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Lens</text>
-<text x="40.15" y="104.02" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Orrery</text>
+<text x="112.5" y="150.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Lens</text>
+<text x="34.5" y="110.34" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Orrery</text>
 <text x="144.73" y="140.52" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Sentinel·A</text>
 <g data-glyph="leader">
 <line x1="168.81" y1="102.66" x2="176.97" y2="105.23" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
 <text x="178.67" y="113.83" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·R</text>
-<text x="64.46" y="88.44" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G2·R</text>
+<text x="44.17" y="157.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G2·R</text>
 <text x="13.5" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Ashlands 1</text>
 <text x="60.94" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">·  36"×36"</text>
 <g data-glyph="compass">

@@ -88,8 +88,8 @@
 <line x1="121.5" y1="119.4" x2="121.5" y2="124.6" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
 </g>
 <g data-glyph="chest" data-state="illus">
-<rect x="87.08" y="85.62" width="8.84" height="6.76" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
-<line x1="87.08" y1="88.48" x2="95.92" y2="88.48" stroke="#777" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="75.08" y="88.62" width="8.84" height="6.76" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
+<line x1="75.08" y1="91.48" x2="83.92" y2="91.48" stroke="#777" stroke-width="0.8" stroke-linecap="butt"/>
 </g>
 <g data-glyph="chest" data-state="illus">
 <rect x="171.08" y="181.62" width="8.84" height="6.76" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
@@ -134,9 +134,9 @@
 </g>
 <text x="27.02" y="81.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
 <text x="207.02" y="81.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
+<text x="98.92" y="93" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Oasis 8"×8"</text>
 <text x="133.23" y="108.2" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
-<text x="142.71" y="93.87" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">3"</text>
-<text x="107.97" y="78.95" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Oasis 8"×8"</text>
+<text x="148.01" y="88.56" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">3"</text>
 <g data-glyph="leader">
 <line x1="103" y1="109.4" x2="94.5" y2="109.4" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>

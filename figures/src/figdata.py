@@ -247,6 +247,10 @@ PATCH_STATUS = "aligned to editorial patches 2026-10-06"
 UNIFIED = {"FIG-%02d" % n for n in (13, 14, 15, 16, 18, 19)} | {"FIG-%d" % n for n in range(20, 58)}
 UNIFIED_STATUS = "unified iconography 2026-10-07, pending independent review"
 
+# RC486 (P-08 to P-12): the four formerly unplaced elements are drawn; open minor review findings fixed (labels, leaders, foot notes, layout).
+RC486_REDRAWN = {"FIG-%d" % n for n in (19, 20, 22, 23, 24, 25, 26, 27, 28, 30, 31, 33, 36, 37, 38, 39, 41, 42, 43, 44, 45, 47, 48, 51, 52, 53, 55, 56)}
+RC486_STATUS = "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
+
 # Scenario deployment maps (FIG-20 onward) are generated from figures/src/scenario_specs.json.
 import fig_scenmaps
 META.update(fig_scenmaps.meta_entries())
@@ -314,6 +318,9 @@ def write_all(dims=None):
             entry["audit_response"] = ("Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); "
                                        "not yet independently re-reviewed. Earlier record: " + prev)
             entry["iconography"] = "shared-v2"
+            if fid in RC486_REDRAWN:
+                entry["status"] = RC486_STATUS
+                entry["audit_response"] = ("Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: " + entry["audit_response"].split("Earlier record: ")[-1])
             with open(os.path.join(FIG_DIR, "out", fid + ".svg"), "rb") as sf:
                 entry["svg_sha256"] = hashlib.sha256(sf.read()).hexdigest()
         if "ambiguity" in m:

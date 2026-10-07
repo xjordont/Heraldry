@@ -346,7 +346,7 @@ def draw_zone(c, e):
             dim_line(c, e["id"], c.X(xx), c.Y(y0), c.X(xx), c.Y(y1), e["depth"])
 
 
-def dim_line(c, eid, x1, y1, x2, y2, label, ticks=3.0, sw=0.8, lp="c", off=0.0):
+def dim_line(c, eid, x1, y1, x2, y2, label, ticks=3.0, sw=0.8, lp="c", off=0.0, lf=0.5):
     s = c.s
     if off:
         ox, oy = K.dim_offset(s, x1, y1, x2, y2, off * c.sc, ticks, sw)
@@ -354,7 +354,7 @@ def dim_line(c, eid, x1, y1, x2, y2, label, ticks=3.0, sw=0.8, lp="c", off=0.0):
     else:
         K.dim(s, x1, y1, x2, y2, ticks, sw)
     ang = math.atan2(y2 - y1, x2 - x1)
-    mx, my = (x1 + x2) / 2.0, (y1 + y2) / 2.0
+    mx, my = x1 + (x2 - x1) * lf, y1 + (y2 - y1) * lf
     length = math.hypot(x2 - x1, y2 - y1)
     lines = label.split("\n")
     wlab = max(tw(t, 9, 600) for t in lines)
@@ -420,6 +420,8 @@ def draw_feature(c, e):
                 return
             lp = "r"
         if e.get("lat"):
+            if e.get("lead"):        # label sits in clear space outside a thin piece: leader from the label anchor to a point on the piece
+                K.leader(s, c.X(e["lat"][0]), c.Y(e["lat"][1]), c.X(e["lead"][0]), c.Y(e["lead"][1]))
             c.add_label(e["id"], e["label"], c.X(e["lat"][0]), c.Y(e["lat"][1]), 0, pref=lp if lp != "c" else "rltb",
                         fixed="c" if lp == "c" else None, weight=600, leader=False)
             return
@@ -554,7 +556,7 @@ def draw_anno(c, e, a):
                 ang = math.radians(a["ang"])
                 p1 = ray_point(tsh, 0.0, a["ang"])
             q2 = (p1[0] + math.cos(ang) * d, p1[1] + math.sin(ang) * d)
-            dim_line(c, eid, c.X(p1[0]), c.Y(p1[1]), c.X(q2[0]), c.Y(q2[1]), a["label"], lp=a.get("lp", "c"), ticks=2.6, off=a.get("off", 0))
+            dim_line(c, eid, c.X(p1[0]), c.Y(p1[1]), c.X(q2[0]), c.Y(q2[1]), a["label"], lp=a.get("lp", "c"), ticks=2.6, off=a.get("off", 0), lf=a.get("lf", 0.5))
     elif t == "edgein":                   # distance d measured inward from the boundary of a circular feature
         tsh = footprint(c.els[a["of"]])
         cx, cy = tsh[1], tsh[2]
@@ -737,7 +739,7 @@ def embed_map(s, sp, x, y, width, bx=None, by=14.0):
 # ---------------------------------------------------------------------------------------------
 KEY_COLS = [
     ("Parties and zones", ["hero-A", "hero-B", "zone-A", "zone-B", "zone-AB", "compass", "scale", "illus", "leader"]),
-    ("Markers, Monsters, steps", ["obj", "chest", "haz", "mk", "unres", "mon", "mon-L", "mon-H", "step", "los"]),
+    ("Markers, Monsters, steps", ["obj", "chest", "haz", "mk", "mon", "mon-L", "mon-H", "step", "los"]),
     ("Terrain", ["ter-blocking", "ter-impassable", "ter-cover", "ter-difficult", "ter-coverdiff", "ter-water", "ter-slippery",
                  "ter-obstacle", "ter-hazard", "ter-shade", "ter-chasm"]),
     ("Pieces, lines, status", ["line-wall", "ter-open", "ledge", "ledge-crumbling", "dim", "ring", "range", "arr-exit",
@@ -781,7 +783,6 @@ def fig20():
         "**Scale.** The battlefield, zones and stated distances are drawn to scale; markers are enlarged, and Large and Huge Monsters are drawn at their 2\"×2\" and 3\"×3\" footprints. Distances are measured between closest points, except from a centre or origin where the rule says so (2.6).",
         "**Counts.** Scattered terrain is drawn as a few representative pieces; the printed counts and the 10.6 scaling stay in the scenario text. Group numbers are the scenario's own. Hidden contents (face-down markers) are never drawn.",
         "**Solid and dashed.** A solid marker or zone with a distance symbol is one position that meets the printed limit; only the battlefield, zone depths and stated distances are exact. Grey dashed pieces show one legal arrangement of something the rules leave open. Letters A and B name the drawn zones; where a scenario assigns the parties by die roll, the zones do not say who is which.",
-        "**Not placed by the text.** A ? tag marks an element the scenario text does not place, such as an arrival or escape edge it never names. It is listed under the map with a short note and is not drawn on the battlefield; the scenario text governs.",
         "**Where a scenario is silent**, 10.1 step 11 applies: the Setup Roll-off winner chooses the edge or corner zone and the other party takes the opposite one; zones are 6\" deep or 8\"×8\" corners, marked \"(default)\" on a map, and parties alternate placing Heroes, starting with the party that lost the Roll-off.",
     ]
     for n in notes:
@@ -937,7 +938,7 @@ def meta_entries():
         caption="Key to the setup and deployment diagrams: symbols for Heroes, zones, markers, Monster Groups, terrain, distances, edges and not-placed elements, with the orientation, scale and grey-dashed conventions every such diagram follows (see 10.4).",
         insert_after="B%05d" % LEGEND_ANCHOR_LINE, scope="full", schematic=False,
         semantic_check="Swatches are drawn by the same shared glyph functions as the diagrams; every inch value printed (6\", 8\"x8\", 2\"x2\", 3\"x3\") is checked against lines 594, 618-619 and 11072; North/short/long edge naming against 11056-11058; closest-point measurement against 594. The registry check proves the key covers every id used on FIG-13 to FIG-16 and FIG-18 to FIG-57.",
-        ambiguity="None in the key. Terrain pieces whose type the scenario leaves to 2.9.1 ('Impassable or Blocking') use a neutral grey swatch rather than either type; the ? tag records elements the text does not place instead of choosing a position.",
+        ambiguity="None in the key. Terrain pieces whose type the scenario leaves to 2.9.1 ('Impassable or Blocking') use a neutral grey swatch rather than either type.",
         new_figure=True)
     for key in scenario_order():
         sp = sc[key]
@@ -951,7 +952,7 @@ def meta_entries():
             title="%s Scenario %d: %s, deployment map" % (climate, sno, title),
             purpose="Column-width top-down map of the setup for %s %d: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states and the shared symbols of FIG-20." % (climate, sno),
             source_refs=refs,
-            geometry_spec="36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. %d mandatory, %d constrained, %d illustrative and %d unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note." % (cnt["mandatory"], cnt["constrained"], cnt["illustrative"], cnt["unresolved"]),
+            geometry_spec="36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. %d mandatory, %d constrained and %d illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed." % (cnt["mandatory"], cnt["constrained"], cnt["illustrative"]) + ("" if not cnt["unresolved"] else " %d unresolved elements carry a ? tag and a note." % cnt["unresolved"]),
             caption=sp["caption"],
             insert_after="B%05d" % sp["insert_after_line"], scope="column", schematic=True,
             semantic_check="Each element's source lines lie inside lines %d-%d; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20." % (hl, end),
@@ -1139,6 +1140,17 @@ def check_one(key, sp, spans, errs, L, width=COL_W):
             errs.append("%s: on-terrain %s" % (tag, e["on"]))
         if e["kind"] == "edge" and e["mode"] == "arrive" and "midpoint" in _text_of(e["lines"]) and e.get("pos") != n / 2:
             errs.append("%s: arrival at an edge midpoint must be drawn at %s\"" % (tag, n / 2))
+        if e.get("guards"):      # "guarding the item nearest the battlefield centre" (13948): drawn beside that item, and it must be the nearest
+            g = e["guards"]
+            cand = {i: next(x for x in sp["elements"] if x["id"] == i) for i in g["among"]}
+            near = min(cand, key=lambda i: math.hypot(cand[i]["at"][0] - n / 2, cand[i]["at"][1] - n / 2))
+            if near != g["of"]:
+                errs.append("%s: guarded item %s is not the one nearest the battlefield centre (%s)" % (tag, g["of"], near))
+            tx, ty = cand[g["of"]]["at"]
+            if math.hypot(e["at"][0] - tx, e["at"][1] - ty) > 2.0:
+                errs.append("%s: Monster is not drawn beside the item it guards" % tag)
+            if any(math.hypot(e["at"][0] - c_["at"][0], e["at"][1] - c_["at"][1]) < math.hypot(e["at"][0] - tx, e["at"][1] - ty) for i, c_ in cand.items() if i != g["of"]):
+                errs.append("%s: Monster is nearer another item than the one it guards" % tag)
         if e["kind"] == "unresolved" and not e.get("note"):
             errs.append("%s: unresolved element without a note" % tag)
     for t in sp.get("foot", []):

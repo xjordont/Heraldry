@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-07",
-  "source": "source/Heraldry_RC485.md",
+  "source": "source/Heraldry_RC486.md",
   "scenarios": [
     {
       "key": "Greenmark 1",
@@ -146,7 +146,7 @@
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 263.8
+        "height": 274.2
       },
       "review": {
         "figure": "FIG-23",
@@ -307,7 +307,7 @@
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 253.4
+        "height": 263.8
       },
       "review": {
         "figure": "FIG-26",
@@ -647,33 +647,15 @@
       ],
       "elements": {
         "mandatory": 1,
-        "constrained": 8,
+        "constrained": 9,
         "illustrative": 13,
-        "unresolved": 1
+        "unresolved": 0
       },
-      "undrawn_conditional": [
-        {
-          "what": "Group 3",
-          "why": "arrives at the start of Round 3 from a random battlefield edge 'not adjacent to either deployment corner'; with opposite corner zones every edge is adjacent to one of them, so no edge qualifies (see ambiguities)",
-          "lines": [
-            12927
-          ]
-        }
-      ],
-      "unresolved_elements": [
-        {
-          "id": "u3",
-          "note": "Group 3 arrival edge not fixed: no edge qualifies as written (see text)",
-          "lines": [
-            12927
-          ]
-        }
-      ],
-      "ambiguities": [
-        "Group 3 arrival edge (12927): 'a random battlefield edge that is not adjacent to either deployment corner' cannot be satisfied when the parties deploy in opposite corner zones, because each of the four edges touches one of those corners. No arrival edge is drawn; the owner must say which edges qualify."
-      ],
+      "undrawn_conditional": [],
+      "unresolved_elements": [],
+      "ambiguities": [],
       "iconography": "shared-v2",
-      "status": "blocked-by-ambiguity (one element shown as unresolved with a ? tag; owner decision needed)",
+      "status": "drawn",
       "map_size_pt": {
         "width": 243,
         "height": 274.2
@@ -993,7 +975,7 @@
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 253.4
+        "height": 263.8
       },
       "review": {
         "figure": "FIG-39",
@@ -1368,17 +1350,10 @@
       "elements": {
         "mandatory": 1,
         "constrained": 7,
-        "illustrative": 10,
-        "unresolved": 1
+        "illustrative": 11,
+        "unresolved": 0
       },
       "undrawn_conditional": [
-        {
-          "what": "Tomb Herald",
-          "why": "'guarding the central Sarcophagus': no Sarcophagus is designated central (see ambiguities)",
-          "lines": [
-            13948
-          ]
-        },
         {
           "what": "Pressure Plate markers",
           "why": "number is rolled (1d3) and placed alternately before Hero deployment",
@@ -1387,20 +1362,10 @@
           ]
         }
       ],
-      "unresolved_elements": [
-        {
-          "id": "u1",
-          "note": "Tomb Herald not placed: no Sarcophagus is designated central (see text)",
-          "lines": [
-            13948
-          ]
-        }
-      ],
-      "ambiguities": [
-        "Tomb Herald (13948): the Herald starts 'guarding the central Sarcophagus', but the three Sarcophagi are placed in separate chambers and none is designated central; the Herald is not drawn."
-      ],
+      "unresolved_elements": [],
+      "ambiguities": [],
       "iconography": "shared-v2",
-      "status": "blocked-by-ambiguity (one element shown as unresolved with a ? tag; owner decision needed)",
+      "status": "drawn",
       "map_size_pt": {
         "width": 243,
         "height": 274.2
@@ -1437,8 +1402,8 @@
       ],
       "elements": {
         "mandatory": 0,
-        "constrained": 3,
-        "illustrative": 7,
+        "constrained": 2,
+        "illustrative": 8,
         "unresolved": 0
       },
       "undrawn_conditional": [
@@ -1665,10 +1630,10 @@
         "10.1 step 11 (Setup Roll-off winner chooses the edge; the other party takes the opposite one)"
       ],
       "elements": {
-        "mandatory": 0,
+        "mandatory": 1,
         "constrained": 7,
         "illustrative": 6,
-        "unresolved": 1
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -1679,13 +1644,6 @@
           ]
         },
         {
-          "what": "Escape edge",
-          "why": "Escape Conditions require escape but name no edge or zone (see ambiguities)",
-          "lines": [
-            14333
-          ]
-        },
-        {
           "what": "Offering Pile contents",
           "why": "face-down hidden information",
           "lines": [
@@ -1693,20 +1651,10 @@
           ]
         }
       ],
-      "unresolved_elements": [
-        {
-          "id": "u1",
-          "note": "Escape edge not stated (see text)",
-          "lines": [
-            14333
-          ]
-        }
-      ],
-      "ambiguities": [
-        "Escape edge (14333): 'Escape Conditions: Required for the Sunstone Amulet and for any unbanked rewards from Offering Piles' names no battlefield edge or extraction zone, and 10.4's fallback to any edge is stated only for Secondary Objectives (10984). No exit is drawn; the owner must state the legal extraction edge."
-      ],
+      "unresolved_elements": [],
+      "ambiguities": [],
       "iconography": "shared-v2",
-      "status": "blocked-by-ambiguity (one element shown as unresolved with a ? tag; owner decision needed)",
+      "status": "drawn",
       "map_size_pt": {
         "width": 243,
         "height": 274.2
@@ -1743,8 +1691,8 @@
       ],
       "elements": {
         "mandatory": 1,
-        "constrained": 4,
-        "illustrative": 9,
+        "constrained": 3,
+        "illustrative": 10,
         "unresolved": 0
       },
       "undrawn_conditional": [
@@ -1762,7 +1710,7 @@
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 263.8
+        "height": 274.2
       },
       "review": {
         "figure": "FIG-53",
@@ -1848,49 +1796,16 @@
         "10.1 step 11 (6\" depth applies because the scenario states none; the Setup Roll-off winner chooses the long edge)"
       ],
       "elements": {
-        "mandatory": 2,
+        "mandatory": 4,
         "constrained": 5,
-        "illustrative": 9,
-        "unresolved": 2
+        "illustrative": 10,
+        "unresolved": 0
       },
-      "undrawn_conditional": [
-        {
-          "what": "Group 1 (Monsters)",
-          "why": "begins off-battlefield and enters 'from a water edge' at the start of Round 3; no battlefield edge is defined as a water edge (see ambiguities)",
-          "lines": [
-            14552
-          ]
-        },
-        {
-          "what": "Escape edge",
-          "why": "Escape Conditions name no edge or zone (see ambiguities)",
-          "lines": [
-            14568
-          ]
-        }
-      ],
-      "unresolved_elements": [
-        {
-          "id": "u1",
-          "note": "Group 1 arrival: the \"water edge\" is not defined (see text)",
-          "lines": [
-            14552
-          ]
-        },
-        {
-          "id": "u2",
-          "note": "Escape edge not stated (see text)",
-          "lines": [
-            14568
-          ]
-        }
-      ],
-      "ambiguities": [
-        "Group 1 arrival (14552): the group 'enters from a water edge', but the scenario never says which battlefield edge is a water edge. The arrival edge is not drawn.",
-        "Escape edge (14568): 'Required only if a party is carrying the Salttide's Counting Stone' names no battlefield edge or extraction zone. No exit is drawn; the owner must state the legal extraction edge."
-      ],
+      "undrawn_conditional": [],
+      "unresolved_elements": [],
+      "ambiguities": [],
       "iconography": "shared-v2",
-      "status": "blocked-by-ambiguity (one element shown as unresolved with a ? tag; owner decision needed)",
+      "status": "drawn",
       "map_size_pt": {
         "width": 243,
         "height": 274.2
@@ -1946,7 +1861,7 @@
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 253.4
+        "height": 263.8
       },
       "review": {
         "figure": "FIG-56",
@@ -2045,9 +1960,9 @@
       "detail_figures": [],
       "insert_after": "B17082",
       "elements": {
-        "mandatory": 1,
+        "mandatory": 2,
         "constrained": 9,
-        "illustrative": 10,
+        "illustrative": 9,
         "unresolved": 0
       },
       "iconography": "shared-v2",
@@ -2098,20 +2013,20 @@
   },
   "summary": {
     "scenarios": 36,
-    "drawn": 32,
-    "blocked_by_ambiguity": 4,
+    "drawn": 36,
+    "blocked_by_ambiguity": 0,
     "scenario_map_figures": "FIG-21 to FIG-56",
     "legend_figure": "FIG-20",
     "template_figure": "FIG-57",
     "elements": {
-      "mandatory": 68,
-      "constrained": 248,
-      "illustrative": 289,
-      "unresolved": 5
+      "mandatory": 71,
+      "constrained": 247,
+      "illustrative": 293,
+      "unresolved": 0
     },
     "iconography": "shared-v2",
     "glyph_registry": "figures/src/scenkit.py (REG); key FIG-20",
-    "ambiguities_logged": 15,
+    "ambiguities_logged": 10,
     "global_notes": [
       "Group placement constraints ('within 3\" of ...', 'at least 8\" from ...') are drawn for one marker per Monster Group; the text does not say whether every member of a multi-Monster group must satisfy them.",
       "Counts of scattered terrain are printed values; maps draw a few representative pieces and never resolve 10.6 scaling."

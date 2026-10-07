@@ -54,7 +54,7 @@
 <rect x="116.25" y="117.5" width="22.5" height="22.5" fill="#c4c4c4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="ter-impassable" data-state="illus">
-<rect x="97.5" y="72.5" width="22.5" height="22.5" fill="url(#p-imp-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="81" y="73.25" width="22.5" height="22.5" fill="url(#p-imp-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="ter-cover" data-state="illus">
 <rect x="30" y="55.25" width="22.5" height="22.5" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
@@ -118,13 +118,13 @@
 <g data-glyph="mon">
 <polygon points="74.72,143 72.23,147.3 67.27,147.3 64.78,143 67.27,138.7 72.23,138.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
 </g>
-<g data-glyph="arr-exit" data-state="illus">
-<line x1="105" y1="29" x2="105" y2="21" stroke="#777" stroke-width="1.4" stroke-linecap="butt" stroke-dasharray="3 2"/>
-<polygon points="105,14 108.4,21 101.6,21" fill="#777"/>
+<g data-glyph="arr-exit">
+<line x1="105" y1="29" x2="105" y2="21" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="105,14 108.4,21 101.6,21" fill="#000"/>
 </g>
-<g data-glyph="arr-exit" data-state="illus">
-<line x1="105" y1="179" x2="105" y2="187" stroke="#777" stroke-width="1.4" stroke-linecap="butt" stroke-dasharray="3 2"/>
-<polygon points="105,194 101.6,187 108.4,187" fill="#777"/>
+<g data-glyph="arr-exit">
+<line x1="105" y1="179" x2="105" y2="187" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="105,194 101.6,187 108.4,187" fill="#000"/>
 </g>
 <g data-glyph="hero-B">
 <circle cx="33" cy="29" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
@@ -155,9 +155,9 @@
 <text x="43.2" y="181.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">4"</text>
 <text x="95.32" y="131.55" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Ruin</text>
 <g data-glyph="leader">
-<line x1="108.75" y1="72" x2="108.75" y2="49.5" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="92.25" y1="72.75" x2="92.25" y2="50.25" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="86.46" y="46.5" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Cart or wall</text>
+<text x="69.96" y="47.25" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Cart or wall</text>
 <text x="30" y="87.85" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Cover</text>
 <text x="56.09" y="106.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Strongbox</text>
 <g data-glyph="leader">
@@ -169,9 +169,9 @@
 </g>
 <text x="156.39" y="87.16" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Satchel</text>
 <g data-glyph="leader">
-<line x1="136.88" y1="98.45" x2="136.4" y2="91.33" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="137.25" y1="98.44" x2="137.25" y2="89.79" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="102.87" y="88.33" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Group·R</text>
+<text x="113.04" y="86.79" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Group·R</text>
 <text x="15" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">24"×24"</text>
 <g data-glyph="compass">
 <polygon points="190,3 186.8,9.5 193.2,9.5" fill="#000"/>

@@ -243,7 +243,7 @@ def write_coverage(dims):
                    ambiguities_logged=amb_total,
                    global_notes=["Group placement constraints ('within 3\" of ...', 'at least 8\" from ...') are drawn for one marker per Monster Group; the text does not say whether every member of a multi-Monster group must satisfy them.",
                                  "Counts of scattered terrain are printed values; maps draw a few representative pieces and never resolve 10.6 scaling."])
-    out = dict(generated="2026-10-07", source="source/Heraldry_RC485.md", scenarios=rows, appendix=appendix, procedural=procedural, summary=summary)
+    out = dict(generated="2026-10-07", source="source/Heraldry_RC486.md", scenarios=rows, appendix=appendix, procedural=procedural, summary=summary)
     path = os.path.join(HERE, "..", "..", "production", "qa", "scenario-coverage.json")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     # independent-review records live in the same file: carry every existing "review" key over, never regenerate it

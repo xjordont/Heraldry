@@ -171,7 +171,7 @@
 <circle cx="207.9" cy="212" r="1.6" fill="#000"/>
 </g>
 <g data-glyph="range">
-<text x="42.79" y="95.27" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Ravine 6–8"</text>
+<text x="164.46" y="111.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Ravine 6–8"</text>
 </g>
 <text x="128.57" y="152.84" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">1"</text>
 <text x="84" y="34.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
@@ -186,12 +186,15 @@
 <line x1="121.5" y1="114.3" x2="121.5" y2="96.13" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
 <text x="93.29" y="93.13" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Brood·A</text>
-<text x="118.58" y="111.24" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Tarantula·A</text>
 <g data-glyph="leader">
-<line x1="80.7" y1="109.24" x2="80.7" y2="71.8" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="142.43" y1="115.36" x2="146.18" y2="97.31" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="78.04" y="68.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Tarantula·R</text>
-<text x="195.76" y="82.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·R</text>
+<text x="147.88" y="94.31" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Tarantula·A</text>
+<g data-glyph="leader">
+<line x1="80.7" y1="109.24" x2="80.7" y2="98.66" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+</g>
+<text x="35.89" y="95.66" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Tarantula·R</text>
+<text x="198.76" y="82.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·R</text>
 <text x="13.5" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Greenmark 4</text>
 <text x="69.82" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">·  36"×36"</text>
 <g data-glyph="compass">

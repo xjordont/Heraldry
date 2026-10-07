@@ -163,6 +163,7 @@
 <text x="84" y="214.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
 <text x="71.62" y="82.83" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Hall 8"×4"</text>
 <text x="32.32" y="87.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Chamber</text>
+<text x="161.45" y="80.67" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Chamber</text>
 <text x="193.7" y="93.3" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Shelves</text>
 <text x="132.9" y="82.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Dust</text>
 <g data-glyph="leader">
@@ -170,6 +171,7 @@
 </g>
 <text x="109.45" y="144.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Codex</text>
 <text x="54.47" y="107.62" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Cache</text>
+<text x="31.2" y="70.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Chest</text>
 <g data-glyph="leader">
 <line x1="132.9" y1="132.96" x2="132.9" y2="152.35" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>

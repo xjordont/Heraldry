@@ -136,21 +136,37 @@
 <g data-glyph="mon">
 <polygon points="105.47,122 102.98,126.3 98.02,126.3 95.53,122 98.02,117.7 102.98,117.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
 </g>
-<g data-glyph="arr-exit">
-<line x1="121.5" y1="29" x2="121.5" y2="21" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
-<polygon points="121.5,14 124.9,21 118.1,21" fill="#000"/>
+<g data-glyph="arr-arrive">
+<line x1="121.5" y1="14" x2="121.5" y2="22" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="121.5,29 118.1,22 124.9,22" fill="#000"/>
+</g>
+<g data-glyph="arr-arrive">
+<line x1="229.5" y1="122" x2="221.5" y2="122" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="214.5,122 221.5,118.6 221.5,125.4" fill="#000"/>
+</g>
+<g data-glyph="arr-arrive">
+<line x1="121.5" y1="230" x2="121.5" y2="222" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="121.5,215 124.9,222 118.1,222" fill="#000"/>
+</g>
+<g data-glyph="arr-arrive">
+<line x1="13.5" y1="122" x2="21.5" y2="122" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="28.5,122 21.5,125.4 21.5,118.6" fill="#000"/>
 </g>
 <g data-glyph="arr-exit">
-<line x1="214.5" y1="122" x2="222.5" y2="122" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
-<polygon points="229.5,122 222.5,125.4 222.5,118.6" fill="#000"/>
+<line x1="169.5" y1="29" x2="169.5" y2="21" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="169.5,14 172.9,21 166.1,21" fill="#000"/>
 </g>
 <g data-glyph="arr-exit">
-<line x1="121.5" y1="215" x2="121.5" y2="223" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
-<polygon points="121.5,230 118.1,223 124.9,223" fill="#000"/>
+<line x1="214.5" y1="170" x2="222.5" y2="170" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="229.5,170 222.5,173.4 222.5,166.6" fill="#000"/>
 </g>
 <g data-glyph="arr-exit">
-<line x1="28.5" y1="122" x2="20.5" y2="122" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
-<polygon points="13.5,122 20.5,118.6 20.5,125.4" fill="#000"/>
+<line x1="169.5" y1="215" x2="169.5" y2="223" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="169.5,230 166.1,223 172.9,223" fill="#000"/>
+</g>
+<g data-glyph="arr-exit">
+<line x1="28.5" y1="170" x2="20.5" y2="170" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="13.5,170 20.5,166.6 20.5,173.4" fill="#000"/>
 </g>
 <g data-glyph="hero-A">
 <circle cx="26.94" cy="26" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
@@ -168,7 +184,7 @@
 </g>
 <text x="26.24" y="51.36" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">8"×8"</text>
 <text x="194.24" y="219.36" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">8"×8"</text>
-<text x="173.49" y="67.27" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
+<text x="168.18" y="78.93" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
 <text x="168.56" y="206.33" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
 <text x="114.75" y="139.76" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">1"</text>
 <text x="37.52" y="148.18" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">4"</text>
@@ -176,19 +192,24 @@
 <g data-glyph="range">
 <text x="96.28" y="111.68" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Passage 1–2"</text>
 </g>
-<text x="139.05" y="82" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Cave wall</text>
+<text x="172.7" y="62.7" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Cave wall</text>
 <text x="81.98" y="163.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Stalagmite</text>
 <g data-glyph="leader">
 <line x1="121.5" y1="116.3" x2="121.5" y2="101.8" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
 <text x="111.25" y="98.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Node</text>
 <g data-glyph="leader">
-<line x1="196.04" y1="74.9" x2="200.17" y2="66.59" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="193.5" y1="85.7" x2="193.5" y2="100.2" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="201.87" y="63.59" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Fungi</text>
+<text x="182.66" y="108.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Fungi</text>
 <text x="141.62" y="139.94" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Lurker·A</text>
 <text x="46.46" y="164.16" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·R</text>
 <text x="85.33" y="139.61" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G2·R</text>
+<g data-glyph="leader">
+<line x1="125.63" y1="23.3" x2="146.26" y2="32.29" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+</g>
+<text x="147.96" y="40.89" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G3 R3</text>
+<text x="147.96" y="50.89" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">random edge</text>
 <text x="13.5" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Undermarches 1</text>
 <text x="83.62" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">·  36"×36"</text>
 <g data-glyph="compass">
@@ -206,10 +227,6 @@
 <text x="233.5" y="125.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">E</text>
 <text x="233.5" y="239" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">S</text>
 <text x="6" y="241" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Schematic. Grey dashed = position not fixed by the rules.</text>
-<g data-glyph="unres">
-<rect x="6.74" y="243.46" width="10.92" height="9.88" fill="#fff" stroke="#000" stroke-width="1.2" rx="2.6"/>
-<text x="12.2" y="251.9" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000" text-anchor="middle">?</text>
-</g>
-<text x="22" y="251.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Group 3 arrival edge not fixed: no edge qualifies as</text>
-<text x="22" y="261.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">written (see text)</text>
+<text x="6" y="251.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Escape arrows are offset from the R3 arrival midpoints;</text>
+<text x="6" y="261.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">any point on any edge qualifies.</text>
 </svg>
