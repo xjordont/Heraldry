@@ -46,6 +46,9 @@
 <g data-glyph="ter-shade" data-state="illus">
 <polygon points="82.5,14 82.5,68 130.5,98 130.5,158 82.5,194 82.5,230 112.5,230 112.5,188 160.5,158 160.5,92 112.5,62 112.5,14" fill="url(#p-dark)" stroke="#777" stroke-width="0.9" stroke-linejoin="round" stroke-dasharray="3 2"/>
 </g>
+<g data-glyph="leader">
+<line x1="76.5" y1="95" x2="133.5" y2="95.6" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+</g>
 <g data-glyph="line-wall">
 <polyline points="82.5,14 82.5,53" fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="butt" stroke-linejoin="round"/>
 </g>
@@ -168,12 +171,12 @@
 <circle cx="207.9" cy="212" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
 <circle cx="207.9" cy="212" r="1.6" fill="#000"/>
 </g>
-<text x="60.61" y="98.25" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Deep Shadow</text>
+<text x="50.03" y="97.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Deep Shadow</text>
 <text x="141.92" y="120.31" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">1"</text>
 <text x="177.59" y="100.86" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
 <text x="63.65" y="34.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
 <text x="63.65" y="214.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
-<text x="151.2" y="52.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">min 12"</text>
+<text x="151.2" y="74.4" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">min 12"</text>
 <g data-glyph="leader">
 <line x1="67.8" y1="62" x2="59.3" y2="62" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>

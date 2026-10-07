@@ -55,8 +55,8 @@
 <rect x="97.5" y="146" width="30" height="24" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="ter-coverdiff" data-state="illus">
-<rect x="181.5" y="158" width="30" height="18" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
-<rect x="181.5" y="158" width="30" height="18" fill="url(#p-diffo-l)"/>
+<rect x="136.5" y="158" width="30" height="18" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="136.5" y="158" width="30" height="18" fill="url(#p-diffo-l)"/>
 </g>
 <g data-glyph="ring">
 <g clip-path="url(#bclip)">
@@ -164,7 +164,7 @@
 <text x="118.39" y="46.57" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">4"</text>
 <text x="64.69" y="133.35" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">4"</text>
 <text x="155.37" y="104.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Camp</text>
-<text x="129.64" y="186.74" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Undergrowth</text>
+<text x="125.54" y="192.1" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Undergrowth</text>
 <text x="144.63" y="31" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">min 8"</text>
 <text x="61.73" y="76.35" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">min 6"</text>
 <text x="119.62" y="125.81" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">min 6"</text>

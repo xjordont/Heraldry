@@ -53,10 +53,10 @@
 <rect x="157.5" y="116" width="72" height="12" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="ter-blocking" data-state="illus">
-<rect x="97.5" y="98" width="9" height="9" fill="#c4c4c4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="89.1" y="89.6" width="15" height="15" fill="#c4c4c4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="ter-blocking" data-state="illus">
-<rect x="136.5" y="137" width="9" height="9" fill="#c4c4c4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="138.9" y="139.4" width="15" height="15" fill="#c4c4c4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="ring">
 <g clip-path="url(#bclip)">
@@ -111,16 +111,19 @@
 <text x="127.02" y="107.49" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
 <text x="97.28" y="81.5" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Lair 12"×12"</text>
 <text x="31.15" y="142.51" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Tunnel</text>
-<text x="91.76" y="117.1" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Pillar</text>
 <g data-glyph="leader">
-<line x1="136.62" y1="127.23" x2="132.81" y2="135.99" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="88.6" y1="97.1" x2="80.1" y2="97.1" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="107.12" y="144.59" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Hoard</text>
+<text x="57.92" y="99.9" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Pillar</text>
+<g data-glyph="leader">
+<line x1="137.42" y1="127.5" x2="135.99" y2="132.81" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+</g>
+<text x="110.3" y="141.41" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Hoard</text>
 <g data-glyph="leader">
 <line x1="121.5" y1="128.5" x2="121.5" y2="161" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
 <text x="106.45" y="169.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Wyrm·A</text>
-<text x="52.46" y="109.44" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·R</text>
+<text x="39.56" y="111.89" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·R</text>
 <text x="50.17" y="160.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G2·R</text>
 <text x="13.5" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Pale City 5</text>
 <text x="60.05" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">·  36"×36"</text>

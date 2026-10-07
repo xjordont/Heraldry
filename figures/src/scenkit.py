@@ -497,7 +497,6 @@ _reg("obj", "Markers and Monsters", "Objective or carried objective", "Objective
 _reg("chest", "Markers and Monsters", "Treasure Chest", "Treasure Chest", lambda s, x, y: marker(s, "chest", x + 15, y))
 _reg("haz", "Markers and Monsters", "Hazard marker", "Hazard marker", lambda s, x, y: marker(s, "haz", x + 15, y))
 _reg("mk", "Markers and Monsters", "Other marker or token", "Marker", lambda s, x, y: marker(s, "mk", x + 15, y))
-_reg("unres", "Markers and Monsters", "Not placed by the text (see note)", "Not placed by the text", lambda s, x, y: unresolved(s, x + 15, y))
 _reg("mon", "Markers and Monsters", "Monster Group (G1 Group 1, R Resting, A Awake)", "Monster", lambda s, x, y: monster(s, "M", x + 15, y))
 _reg("mon-L", "Markers and Monsters", "Large Monster, 2\"×2\"", "Large Monster 2\"×2\"", lambda s, x, y: monster(s, "L", x + 15, y))
 _reg("mon-H", "Markers and Monsters", "Huge Monster, 3\"×3\"", "Huge Monster 3\"×3\"", lambda s, x, y: monster(s, "H", x + 15, y))

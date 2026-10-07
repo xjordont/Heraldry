@@ -126,8 +126,9 @@
 <circle cx="207.9" cy="212" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
 <circle cx="207.9" cy="212" r="1.6" fill="#000"/>
 </g>
-<text x="88.7" y="102.1" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Throne chamber</text>
-<text x="144.49" y="116.2" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
+<text x="88.7" y="102.1" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Throne</text>
+<text x="88.7" y="112.1" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">chamber</text>
+<text x="138.48" y="107.03" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
 <text x="84" y="34.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
 <text x="84" y="214.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
 <text x="101.05" y="139.3" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Ice Throne</text>
@@ -141,9 +142,9 @@
 </g>
 <text x="150.27" y="86.59" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Mephit·A</text>
 <g data-glyph="leader">
-<line x1="81.81" y1="120.34" x2="89.97" y2="117.77" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="82.06" y1="122" x2="90.56" y2="122" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="91.67" y="114.77" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·R</text>
+<text x="92.26" y="124.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·R</text>
 <text x="13.5" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Pale City 6</text>
 <text x="60.05" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">·  36"×36"</text>
 <g data-glyph="compass">

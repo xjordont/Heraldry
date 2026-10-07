@@ -574,12 +574,12 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Terrain counts, 3\"x3\" size, 4\" deployment, Entry markers (5-7\", >= 4\" apart, outside zones, one complete group each assigned at random per P-06, Resting), Strongbox 12c, Satchels 4c, -2\" Speed to a minimum of 1\", extraction through own edge (17074-17094); step 3 text reads \"assigned to the markers at random, one complete group per marker\"; Goblin 1c, Skeleton Warrior 1c, Bandit 3c (B.5); Ironscar SPD 4\" (B.4). Only B-appendix terms used; no Hide, Powers or advanced rules.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Editorial patch alignment: P-06: step 3 now reads 'assigned to the markers at random, one complete group per marker'. Earlier: Minor fixed: Strongbox now has its own glyph (chest) distinct from the Satchel diamond; the road band is white with a dotted centre line and 'road' labels; the example now reads 'at least 6 Moves' and notes the Interact [1 AP] to pick up.",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Editorial patch alignment: P-06: step 3 now reads 'assigned to the markers at random, one complete group per marker'. Earlier: Minor fixed: Strongbox now has its own glyph (chest) distinct from the Satchel diamond; the road band is white with a dotted centre line and 'road' labels; the example now reads 'at least 6 Moves' and notes the Interact [1 AP] to pick up.",
     "editorial_patches": [
       "P-06"
     ],
-    "svg_sha256": "9ca6b352846e75e58771381009803ffc82ffc39dc9700c5abf0f0abcbfd51da0",
+    "svg_sha256": "fb50d064c7ce685f410f6188688a8e37abac0de8eafba61eaefc0d83f2d9226c",
     "iconography": "shared-v2",
     "ambiguity": "Resolved by P-06: groups are assigned to Monster Entry markers at random, one complete group per marker (all markers carry identical group glyphs, so no assignment is drawn). The Monster group and Satchel are drawn beside, not on, each Entry marker for legibility. Terrain positions, the road's width, who places the markers and which opposite edges are the deployment edges are not specified (north and south drawn, grey dashed)."
   },
@@ -593,7 +593,7 @@
       "2.6 Measurement (594) and Size and Footprints (618-619)",
       "2.9.1 Terrain Types (832-878)"
     ],
-    "geometry_spec": "Four columns of swatches (parties and zones; markers, Monsters and steps; terrain; pieces, distances, edges and status), 40 entries, one per glyph id in scenkit.REG, above six short notes on orientation, scale, counts, solid and dashed, not-placed elements and the step 11 default; no board geometry beyond the swatches. make_figures checks that every glyph and pattern id emitted by any setup diagram appears here.",
+    "geometry_spec": "Four columns of swatches (parties and zones; markers, Monsters and steps; terrain; pieces, distances, edges and status), 39 entries, one per glyph id in scenkit.REG, above six short notes on orientation, scale, counts, solid and dashed, not-placed elements and the step 11 default; no board geometry beyond the swatches. make_figures checks that every glyph and pattern id emitted by any setup diagram appears here.",
     "caption": "Key to the setup and deployment diagrams: symbols for Heroes, zones, markers, Monster Groups, terrain, distances, edges and not-placed elements, with the orientation, scale and grey-dashed conventions every such diagram follows (see 10.4).",
     "insert_after": "B11970",
     "scope": "full",
@@ -601,15 +601,15 @@
     "file": "figures/out/FIG-20.svg",
     "size_pt": {
       "width": 504,
-      "height": 447.8
+      "height": 421.2
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Swatches are drawn by the same shared glyph functions as the diagrams; every inch value printed (6\", 8\"x8\", 2\"x2\", 3\"x3\") is checked against lines 594, 618-619 and 11072; North/short/long edge naming against 11056-11058; closest-point measurement against 594. The registry check proves the key covers every id used on FIG-13 to FIG-16 and FIG-18 to FIG-57.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "9134e937a1195c778628b314ee8a64126cda17e3d812c63244cd49cdec70b966",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "1d66a838af5dd263e854c2cf79dc4a414bfe6ec7fa8512e448624982dca2418a",
     "iconography": "shared-v2",
-    "ambiguity": "None in the key. Terrain pieces whose type the scenario leaves to 2.9.1 ('Impassable or Blocking') use a neutral grey swatch rather than either type; the ? tag records elements the text does not place instead of choosing a position."
+    "ambiguity": "None in the key. Terrain pieces whose type the scenario leaves to 2.9.1 ('Impassable or Blocking') use a neutral grey swatch rather than either type."
   },
   {
     "id": "FIG-21",
@@ -619,7 +619,7 @@
       "10.4 Greenmark Scenario 1: Hunt the Wild Beast (source lines 11974-12041)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 6 constrained, 5 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 6 constrained and 5 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "Hunt the Wild Beast: parties deploy within 6\" of opposite long battlefield edges, and the Great Forest Boar starts within 2\" of the Mud Wallow near the centre; key: FIG-20 (see 10.4, Greenmark Scenario 1).",
     "insert_after": "B12025",
     "scope": "column",
@@ -645,7 +645,7 @@
       "10.4 Greenmark Scenario 2: The Whispering Grove (source lines 12042-12111)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 0 mandatory, 11 constrained, 3 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 0 mandatory, 11 constrained and 3 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Whispering Grove: parties deploy in opposite 8\"×8\" corners; three Standing Stones stand 6–8\" apart in a Central Clearing about 12–15\" across; key: FIG-20 (see 10.4, Greenmark Scenario 2).",
     "insert_after": "B12096",
     "scope": "column",
@@ -657,9 +657,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12042-12111; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "4cb7e6fd827d2b5e5a720debc0e5353d893e15a94c33ebe0bc7b3e06479edbf3",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "0289816a622eb896610f23040c89b1bdeffdea9da8b6889716c16c6ee47fcc9f",
     "iconography": "shared-v2",
     "ambiguity": "'outer Standing Stone' (Group 1): the three Stones form a triangle, so no Stone is more 'outer' than another; the map shows Group 1 within 3\" of one Stone and any of the three is legal."
   },
@@ -671,7 +671,7 @@
       "10.4 Greenmark Scenario 3: The Bandit's Toll (source lines 12112-12188)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 9 constrained, 4 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 9 constrained and 4 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Bandit's Toll: parties deploy within 6\" of the opposite short edges where a Trail 3–4\" wide runs, with at least two Heroes each on the Trail; the Barricade and Wagon 2 stand at the midpoint; key: FIG-20 (see 10.4, Greenmark Scenario 3).",
     "insert_after": "B12170",
     "scope": "column",
@@ -679,13 +679,13 @@
     "file": "figures/out/FIG-23.svg",
     "size_pt": {
       "width": 243,
-      "height": 263.8
+      "height": 274.2
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12112-12188; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "ff3027fb709cde6e9ff7ce5c3d1628ec8f6a91db8e2a8c7a77b7879e2e25c90c",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "b7f5efdf485fe2f85df7b158ee09ee3f030823977303518840858817f87670d2",
     "iconography": "shared-v2",
     "ambiguity": "Wagon 2 and the Toll Captain: the source places Wagon 2 'adjacent to the central Barricade' and the Captain 'behind the central Barricade' without saying which side of the Barricade is 'behind'; the map draws Wagon 2 on one side only as an illustration.; The Barricade is 2–3\" long but the Trail is 3–4\" wide; the text does not say how a Barricade shorter than the Trail spans it ('across the Trail')."
   },
@@ -697,7 +697,7 @@
       "10.4 Greenmark Scenario 4: The Spider's Silk Route (source lines 12189-12259)",
       "10.1 Preparation Steps (11060-11073)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 12 constrained, 7 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 12 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Spider's Silk Route: parties deploy within 6\" of opposite short edges on higher ground, either side of a Ravine 6–8\" wide that cuts across the midpoint with a Silk Bundle in each of three Webbed Sections; key: FIG-20 (see 10.4, Greenmark Scenario 4).",
     "insert_after": "B12238",
     "scope": "column",
@@ -709,9 +709,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12189-12259; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "15c5bb5f1bd192b1f71de15ddf3ea59687ddef2dd6b457c0dfb402b973fb577a",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "a23164922f64e64aac69ad7624fb31d41c891321a94f0c482a425e1f827768ee",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -723,7 +723,7 @@
       "10.4 Greenmark Scenario 5: The Ambushed Emissary (source lines 12260-12337)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 11 constrained, 4 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 11 constrained and 4 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Ambushed Emissary: parties deploy in opposite 8\"×8\" corners; the Bandit Camp lies in one quadrant at least 8\" from every edge, with four Clue markers at least 6\" from each other and the Camp; key: FIG-20 (see 10.4, Greenmark Scenario 5).",
     "insert_after": "B12314",
     "scope": "column",
@@ -735,9 +735,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12260-12337; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "d3d0ce84d0e6c74ea277ac5c60cf8ce29e7108d0dd864f8bf1e12a267089ccf9",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "3162a747a3d0a3d434565093d58a0c4af763206d2523759e7e8d8dbb532d87a4",
     "iconography": "shared-v2",
     "ambiguity": "Group 3 (12312): 'at the perimeter of the Bandit Camp, 6\" from its centre' conflicts with a Camp 'about 4\"×4\"' (12280), whose perimeter lies about 2\" from its centre. The map draws the literal 6\" ring from the centre with Group 3 as an illustrative (grey dashed) marker and does not choose between the two readings."
   },
@@ -749,7 +749,7 @@
       "10.4 Greenmark Scenario 6: Ritual of the Old Growth (source lines 12338-12424)",
       "10.1 Preparation Steps (11060-11073)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 4 mandatory, 8 constrained, 4 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 4 mandatory, 8 constrained and 4 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "Ritual of the Old Growth: the Setup Roll-off winner picks a long edge and deploys within 6\"; the Mother Tree at the centre has a Sacred Grove within 6\" of it, with three Treasure Chests evenly spaced on its outer edge; key: FIG-20 (see 10.4, Greenmark Scenario 6).",
     "insert_after": "B12398",
     "scope": "column",
@@ -757,13 +757,13 @@
     "file": "figures/out/FIG-26.svg",
     "size_pt": {
       "width": 243,
-      "height": 253.4
+      "height": 263.8
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12338-12424; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "d9a0327f5edbcd3b6ccce2c8266971b8ab760615c889861c338cd371ca6b98e3",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "5a51b9fb8aee3619f39f6d53be5b20219bb64d2e1128d6ada0145f985c2767cf",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -775,7 +775,7 @@
       "10.4 Ashlands Scenario 1: The Fallen Observatory (source lines 12427-12494)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 4 mandatory, 9 constrained, 10 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 4 mandatory, 9 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Fallen Observatory: parties deploy within 6\" of opposite long edges around a central 6\"×6\" Collapsed Dome holding the Star Lens, with two raised Platforms at least 10\" apart; key: FIG-20 (see 10.4, Ashlands Scenario 1).",
     "insert_after": "B12481",
     "scope": "column",
@@ -787,9 +787,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12427-12494; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "2734cf641bb44ac92e65a17b87f4a132908fdc3a4df3c1098c66d4bad7d18dd5",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "be4678b91d07f6e883af0bc7bf41e413aec44c7ff37ce029f0d9018c9127f9ee",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -801,7 +801,7 @@
       "10.4 Ashlands Scenario 2: The Guardian's Test (source lines 12495-12568)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 7 constrained, 7 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 7 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Guardian's Test: parties deploy within 6\" of opposite short edges, with the Sealed Gateway in one long edge and three Trial Pedestals at least 5\" apart in a Courtyard about 15\"×15\"; key: FIG-20 (see 10.4, Ashlands Scenario 2).",
     "insert_after": "B12546",
     "scope": "column",
@@ -813,9 +813,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12495-12568; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "b844bed7e8bfdac841a66773ef0e90dc3762c888f998aded71223f64d67ab789",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "356b531bd6c4c92f139abb9c8236adb8f484e46995a39a335db222b0e49fc0c6",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -827,7 +827,7 @@
       "10.4 Ashlands Scenario 3: The Shifting Sands of Time (source lines 12569-12623)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 0 mandatory, 12 constrained, 6 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 0 mandatory, 12 constrained and 6 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Shifting Sands of Time: parties deploy in opposite 8\"×8\" corners around a 4\"×4\" Central Ruin with four 3\"×3\" Unstable Ground zones at least 6\" apart; carriers escape by the two edges not touching their corner; key: FIG-20 (see 10.4, Ashlands Scenario 3).",
     "insert_after": "B12604",
     "scope": "column",
@@ -853,7 +853,7 @@
       "10.4 Ashlands Scenario 4: The Sealed Archive (source lines 12624-12703)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 11 constrained, 10 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 11 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Sealed Archive: parties deploy within 6\" of opposite short edges around an 8\"×4\" Archive Hall with the Codex on its lectern, two side chambers and Tablet Caches two in one chamber and one in the other; key: FIG-20 (see 10.4, Ashlands Scenario 4).",
     "insert_after": "B12680",
     "scope": "column",
@@ -865,9 +865,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12624-12703; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "9e206816f2f585c629e480caecb36d5a5162b766b37a856dc04d5757f7709d0d",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "86c1e24a790341c97356ed833d88475f8d130862158d91a10057b34b98b19172",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -879,7 +879,7 @@
       "10.4 Ashlands Scenario 5: The Reliquary of Broken Saints (source lines 12704-12777)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 7 constrained, 10 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 7 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Reliquary of Broken Saints: parties deploy within 6\" of opposite long edges around a long central nave with the Reliquary on its altar platform, Bone Fragments in the two side aisles; key: FIG-20 (see 10.4, Ashlands Scenario 5).",
     "insert_after": "B12759",
     "scope": "column",
@@ -891,9 +891,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12704-12777; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "874dfd40bf472988963fea093e871fcae41b49ca2936b22f710864d96b6f2092",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "8b54212c12d104d649cbaa3089b78204969536d8691607314c447d1630ea6029",
     "iconography": "shared-v2",
     "ambiguity": "'left side aisle' and 'right side aisle' (Groups 1 and 2): the source does not say from which viewpoint left and right are taken, and the nave's orientation is not fixed; the map shows one aisle each without asserting which is 'left'."
   },
@@ -905,7 +905,7 @@
       "10.4 Ashlands Scenario 6: The Iron-Vein Vault (source lines 12778-12876)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 11 constrained, 7 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 11 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Iron-Vein Vault: parties deploy within 6\" of opposite long edges around a central 6\"×6\" Chamber with an iron door whose hinges and lock carry the Binding Points, and the Vault Record 3\" beyond the door; key: FIG-20 (see 10.4, Ashlands Scenario 6).",
     "insert_after": "B12846",
     "scope": "column",
@@ -931,7 +931,7 @@
       "10.4 Undermarches Scenario 1: The Crystal Harvest (source lines 12879-12944)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 8 constrained, 13 illustrative and 1 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 9 constrained and 13 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Crystal Harvest: parties deploy in opposite 8\"×8\" corners; two Main Caverns 8\"×8\" are linked by narrow passages, with a central Crystal Node midway between them; key: FIG-20 (see 10.4, Undermarches Scenario 1).",
     "insert_after": "B12929",
     "scope": "column",
@@ -943,11 +943,11 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12879-12944; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "9d2f56c61238dd744d0aa8fd7d5ee2f8f7a9ae47c005c3075ddf39ceacbd6fd2",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "91d5bed6462264467175dc145edef175f0930f5a0511d40736b1d3d098003d31",
     "iconography": "shared-v2",
-    "ambiguity": "Group 3 arrival edge (12927): 'a random battlefield edge that is not adjacent to either deployment corner' cannot be satisfied when the parties deploy in opposite corner zones, because each of the four edges touches one of those corners. No arrival edge is drawn; the owner must say which edges qualify."
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
     "id": "FIG-34",
@@ -957,7 +957,7 @@
       "10.4 Undermarches Scenario 2: The Chasm Crossing (source lines 12945-13014)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 2 constrained, 9 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 2 constrained and 9 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Chasm Crossing: both parties deploy within 8\" of one short edge, no Heroes within 6\" of an opposing Hero; the Chasm 8\" wide bisects the battlefield, with the Survey Map and the Stone each 3\" from the end ledges; key: FIG-20 (see 10.4, Undermarches Scenario 2).",
     "insert_after": "B12995",
     "scope": "column",
@@ -983,7 +983,7 @@
       "10.4 Undermarches Scenario 3: The Quake (source lines 13015-13079)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 0 constrained, 16 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 0 constrained and 16 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Quake: both parties deploy inside a central 8\"×8\" Safe Zone, no Hero within 3\" of an opposing Hero; the Setup Roll-off winner designates the Main Exit and the two perpendicular edges are Collapsed Tunnels; key: FIG-20 (see 10.4, Undermarches Scenario 3).",
     "insert_after": "B13062",
     "scope": "column",
@@ -1009,7 +1009,7 @@
       "10.4 Undermarches Scenario 4: The Undermarches Outpost Raid (source lines 13080-13186)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 10 constrained, 9 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 10 constrained and 9 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Undermarches Outpost Raid: parties deploy in opposite 8\"×8\" corners around an outpost with a central 3\"×3\" Command Tent holding the Battle Plans and 2–3 Guard Towers; key: FIG-20 (see 10.4, Undermarches Scenario 4).",
     "insert_after": "B13166",
     "scope": "column",
@@ -1021,9 +1021,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13080-13186; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "2db3b4a5e9fd62d38aef685fffd6ca4913155d730da6be4d41b9924924a2be9a",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "542956e4bcafdff489231a0442393ae2844f7a8995b302e0c2f5f5d4de29c5dc",
     "iconography": "shared-v2",
     "ambiguity": "Group 2 (13164): 'Place using normal alternating scenario placement' does not say who places the group or what limits apply; 10.1 step 7 and step 9 give an alternating rule only for terrain and weather markers. Group 2 is drawn as an unfixed (open) marker."
   },
@@ -1035,7 +1035,7 @@
       "10.4 Undermarches Scenario 5: The Shadowed Under Passage (source lines 13187-13259)",
       "10.1 Preparation Steps (11060-11073)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 17 constrained, 5 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 17 constrained and 5 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Shadowed Under Passage: Party A deploys within 6\" of the short edge farther from the Heart, Party B within 6\" of the opposite edge; a winding Under Passage runs between the two edges and the Heart lies at least 12\" from Party A's edge; key: FIG-20 (see 10.4, Undermarches Scenario 5).",
     "insert_after": "B13239",
     "scope": "column",
@@ -1047,9 +1047,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13187-13259; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "282c238a70dcafc0ddaee49cb4d89bbcf81a4d6a4bb6972c471faa00c9489c49",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "5619ae31958308dad68169e3ed2f89313d701ac67d1d60ad51a004fe4382978f",
     "iconography": "shared-v2",
     "ambiguity": "Party A's edge (13214, 13239): Party A deploys at the end 'farther from the Heart' while the Heart lies at least 12\" from Party A's edge, so each rule is defined by the other; if the Heart is equidistant from both ends neither end is 'farther'. The map puts Party A at the top with the Heart in the lower half, which satisfies both.; Under Passage length (13212): the passage is 'about 18\" long' yet 'runs from one short battlefield edge to the other' of a 36\"×36\" battlefield; both cannot hold for a straight run. The map draws a winding passage between the two short edges and prints no length."
   },
@@ -1061,7 +1061,7 @@
       "10.4 Undermarches Scenario 6: The Ritual of Shadow Binding (source lines 13260-13363)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 9 constrained, 8 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 9 constrained and 8 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Ritual of Shadow Binding: Party A deploys within 6\" of one short edge and Party B within 6\" of the opposite one; three Shadow Orbs stand within 2\" of the 4\" Binding Circle at the centre of the central cavern; key: FIG-20 (see 10.4, Undermarches Scenario 6).",
     "insert_after": "B13318",
     "scope": "column",
@@ -1073,9 +1073,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13260-13363; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "ff7ff87b3e8023c82972fb2402eb64c3d1323bb66c2c0320a64904703ab720bf",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "93547f1b5ecbdbd5ae8161b3a0388816f939db06d610b85543843746abd6f641",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1087,7 +1087,7 @@
       "10.4 Pale City Scenario 1: Plunder of the Frozen Ruins (source lines 13366-13417)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 9 constrained, 6 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 9 constrained and 6 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "Plunder of the Frozen Ruins: parties deploy in opposite 8\"×8\" corners; the five Chests are placed alternately at least 6\" apart and at least 8\" from any deployment zone; key: FIG-20 (see 10.4, Pale City Scenario 1).",
     "insert_after": "B13404",
     "scope": "column",
@@ -1095,13 +1095,13 @@
     "file": "figures/out/FIG-39.svg",
     "size_pt": {
       "width": 243,
-      "height": 253.4
+      "height": 263.8
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13366-13417; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "938d122ff2d47f009d6233d5dfaed539e111afc3722a2438721498c9cf241739",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "a4b70812445a84cebe546d2d37183e4fe3e6b93fb5d46a4db68f6a185f1525db",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1113,7 +1113,7 @@
       "10.4 Pale City Scenario 2: The Alchemist's Frozen Laboratory (source lines 13418-13487)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 8 constrained, 6 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 8 constrained and 6 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Alchemist's Frozen Laboratory: parties deploy within 6\" of opposite short edges; the Laboratory, about 6\"×8\", holds three Reagent Chests and the Alchemical Golem; key: FIG-20 (see 10.4, Pale City Scenario 2).",
     "insert_after": "B13470",
     "scope": "column",
@@ -1139,7 +1139,7 @@
       "10.4 Pale City Scenario 3: The Haunted Mausoleum (source lines 13488-13556)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 1 constrained, 13 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 1 constrained and 13 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Haunted Mausoleum: parties deploy within 6\" of opposite short edges outside the mausoleum, which holds a Grand Hall, 3 Burial Crypts and exactly five Sarcophagi; key: FIG-20 (see 10.4, Pale City Scenario 3).",
     "insert_after": "B13541",
     "scope": "column",
@@ -1151,9 +1151,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13488-13556; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "29ba464c49a092653bacd8024d54af9e4db7483445de38930ebb5f4841835d24",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "6864534af2d9fa263d3d45fb9a6dbeb6a3297d5f4c5378e6d618142a05467f5c",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1165,7 +1165,7 @@
       "10.4 Pale City Scenario 4: The Clockwork Menagerie (source lines 13557-13616)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 5 constrained, 11 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 5 constrained and 11 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Clockwork Menagerie: the Setup Roll-off winner picks any battlefield edge and deploys within 6\"; three Clockwork Guardians start Awake beside the Workbenches or within 3\" of the centre; key: FIG-20 (see 10.4, Pale City Scenario 4).",
     "insert_after": "B13603",
     "scope": "column",
@@ -1177,9 +1177,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13557-13616; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "bc993910fd3d816de983a4b381761e45886bff174a433e39f11e9583548cac9b",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "bf2126e3de536ae105a3a428591128e6ebf6a1dd41344ada61f3bcd8e7b26410",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1191,7 +1191,7 @@
       "10.4 Pale City Scenario 5: The Ice Wyrm's Hoard (source lines 13617-13692)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 0 mandatory, 5 constrained, 8 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 0 mandatory, 5 constrained and 8 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Ice Wyrm's Hoard: parties deploy within 6\" of opposite edges where the frozen tunnels enter a central lair about 12\"×12\", with the Ice Wyrm at its centre and the Hoard within 2\" of it; key: FIG-20 (see 10.4, Pale City Scenario 5).",
     "insert_after": "B13671",
     "scope": "column",
@@ -1203,9 +1203,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13617-13692; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "fc11b58d88b2dc21fbed09e7ad1d7689d6322366e43d030573ec246c00090499",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "32fb8d989bc129f8594e95e9ddc99d3f1db5dbc1cfdf7507e76fd7a6a0e0bc96",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1217,7 +1217,7 @@
       "10.4 Pale City Scenario 6: The Icebound Court (source lines 13693-13768)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 4 constrained, 9 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 4 constrained and 9 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Icebound Court: parties deploy within 6\" of opposite short edges around a central throne chamber where the Frost Bailiff Magistrate begins on the Ice Throne with Ice Mephit Bodyguards within 2\"; key: FIG-20 (see 10.4, Pale City Scenario 6).",
     "insert_after": "B13745",
     "scope": "column",
@@ -1229,9 +1229,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13693-13768; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "b6b3c7fc8e88f5651194fd53d4046d334087a89cca2cfcf89690045f1e6957b4",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "1f25e4ea1a092601eb838fb366e4e8020ce145e66a88d685a5b9f5e73705299a",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1243,7 +1243,7 @@
       "10.4 Sun-Drowned Scenario 1: The Oasis Raiders (source lines 13771-13837)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 4 constrained, 12 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 4 constrained and 12 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Oasis Raiders: parties deploy within 6\" of opposite long edges around a central Oasis about 8\"×8\" with the Wellspring, the Raider Chieftain starting within 2\" of it; key: FIG-20 (see 10.4, Sun-Drowned Scenario 1).",
     "insert_after": "B13819",
     "scope": "column",
@@ -1255,9 +1255,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13771-13837; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "caa653428e145c59ba531747eba3f0cd3b5bdad7d98c6ab7305869e7fdfffb04",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "4b3e02446a4903a6c9e30a3e282771223e92e94955079a5a72d95c2632cea321",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1269,7 +1269,7 @@
       "10.4 Sun-Drowned Scenario 2: The Cinder Lord's Lost Brazier (source lines 13838-13902)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 4 constrained, 7 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 4 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Cinder Lord's Lost Brazier: parties deploy on opposite short edges converging on a plaza whose 2\"×2\" Altar has three Elemental Locus pillars 4–6\" from it; key: FIG-20 (see 10.4, Sun-Drowned Scenario 2).",
     "insert_after": "B13884",
     "scope": "column",
@@ -1295,7 +1295,7 @@
       "10.4 Sun-Drowned Scenario 3: Tomb of the Sunken Kings (source lines 13903-13970)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 7 constrained, 10 illustrative and 1 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 7 constrained and 11 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "Tomb of the Sunken Kings: parties deploy in opposite corner zones (8\"×8\" by the 10.1 default) breaching a tomb complex with a Grand Hall about 5\"×10\" and three Royal Sarcophagi in separate chambers; key: FIG-20 (see 10.4, Sun-Drowned Scenario 3).",
     "insert_after": "B13955",
     "scope": "column",
@@ -1307,11 +1307,11 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13903-13970; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "61869909f3f97babbebb08281cebcdb48c211a59854208ba3401c9870372bcd0",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "ae44621033fdcf16aeec9c5b72aea6274f531cfd94027a21efcddfb2212df6fe",
     "iconography": "shared-v2",
-    "ambiguity": "Tomb Herald (13948): the Herald starts 'guarding the central Sarcophagus', but the three Sarcophagi are placed in separate chambers and none is designated central; the Herald is not drawn."
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
     "id": "FIG-48",
@@ -1321,7 +1321,7 @@
       "10.4 Sun-Drowned Scenario 4: The Sandwyrm's Lair (source lines 13971-14032)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 0 mandatory, 3 constrained, 7 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 0 mandatory, 2 constrained and 8 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Sandwyrm's Lair: parties deploy within 6\" of opposite battlefield edges around a broad sand basin with a central Shifting Sands Zone where the burrowed Sandwyrm first appears; key: FIG-20 (see 10.4, Sun-Drowned Scenario 4).",
     "insert_after": "B14018",
     "scope": "column",
@@ -1333,9 +1333,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13971-14032; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "40c7c6f8b8dcfb1e59d7fdb504b6ba3eb16974a70a163db6cebc7ca4691cb28b",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "f672a58ef6499e63dcd84b23bd4ebd3cc6551f44b4ba2e74f522d1dcdf9a5a4e",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1347,7 +1347,7 @@
       "10.4 Sun-Drowned Scenario 5: The Cursed Colossus of the Waste (source lines 14033-14107)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 5 constrained, 7 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 5 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Cursed Colossus of the Waste: parties deploy within 6\" of opposite battlefield edges around a large central Colossus of Blocking Terrain bearing the Glowing Rune and holding the Heartstone; key: FIG-20 (see 10.4, Sun-Drowned Scenario 5).",
     "insert_after": "B14089",
     "scope": "column",
@@ -1373,7 +1373,7 @@
       "10.4 Sun-Drowned Scenario 6: The Cinder Lord's Obsidian Prison (source lines 14108-14194)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 4 constrained, 10 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 4 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Cinder Lord's Obsidian Prison: parties deploy within 6\" of opposite short edges around a central Obsidian Dais with three Glyphic Stones evenly arranged around it; key: FIG-20 (see 10.4, Sun-Drowned Scenario 6).",
     "insert_after": "B14168",
     "scope": "column",
@@ -1399,7 +1399,7 @@
       "10.4 The Mire Scenario 1: The Reliquary of Edrava Salttide (source lines 14197-14267)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 4 constrained, 10 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 4 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Reliquary of Edrava Salttide: parties deploy within 6\" of opposite short edges on the driest banks around a central Sunken Barrow whose flooded sanctum holds the Reliquary; key: FIG-20 (see 10.4, The Mire Scenario 1).",
     "insert_after": "B14254",
     "scope": "column",
@@ -1411,9 +1411,9 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 14197-14267; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "b0073d136d089c90fcbc88eff8b09e6995a17f77820923ac250eaa1059a9fea2",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "8844d12d65b43fc0ba910cfbeae7d3d12cef0ec4ec829a099f094797e817ace9",
     "iconography": "shared-v2",
     "ambiguity": "Group 2 (14252): 'patrolling murky water' - the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258), while Group 2 patrols water outside the Barrow's sanctum; whether outer Shallow Water counts as murky is not stated. Group 2 is drawn as an illustrative marker in an outer Shallow patch."
   },
@@ -1425,7 +1425,7 @@
       "10.4 The Mire Scenario 2: The Lizardfolk's Stolen Offerings (source lines 14268-14342)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 0 mandatory, 7 constrained, 6 illustrative and 1 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 7 constrained and 6 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Lizardfolk's Stolen Offerings: parties deploy within 6\" of opposite battlefield edges around a swamp encampment where three Offering Piles are placed alternately; key: FIG-20 (see 10.4, The Mire Scenario 2).",
     "insert_after": "B14325",
     "scope": "column",
@@ -1437,11 +1437,11 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 14268-14342; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "3e1bc4dc058818e08345e3bcf266512e08267d06abcf2045ecea34e4538759c3",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "cea4ff7438bdc691992d48fc32ff48582f71fc2a995a8b9a528d0b588f065d46",
     "iconography": "shared-v2",
-    "ambiguity": "Escape edge (14333): 'Escape Conditions: Required for the Sunstone Amulet and for any unbanked rewards from Offering Piles' names no battlefield edge or extraction zone, and 10.4's fallback to any edge is stated only for Secondary Objectives (10984). No exit is drawn; the owner must state the legal extraction edge."
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
     "id": "FIG-53",
@@ -1451,7 +1451,7 @@
       "10.4 The Mire Scenario 3: The Mire Titan's Fen (source lines 14343-14417)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 4 constrained, 9 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 3 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Mire Titan's Fen: parties deploy in opposite corner zones on the outer banks (8\"×8\" by the 10.1 default), around a central Bubbling Fen where the Mire Titan starts Awake; key: FIG-20 (see 10.4, The Mire Scenario 3).",
     "insert_after": "B14402",
     "scope": "column",
@@ -1459,13 +1459,13 @@
     "file": "figures/out/FIG-53.svg",
     "size_pt": {
       "width": 243,
-      "height": 263.8
+      "height": 274.2
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 14343-14417; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "889d9d0947263bde1ad28a779518e995f3b7b716336767b4b7ab5e7f577e5d7d",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "7e0ae35e86dae55209bdb00bd78e7539d2514280924b72d266481bcd2cfb1816",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1477,7 +1477,7 @@
       "10.4 The Mire Scenario 4: The Blighted Heartwood (source lines 14418-14496)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 5 constrained, 7 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 5 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Blighted Heartwood: parties deploy within 6\" of opposite short edges around a central Blighted Grove about 8\"×8\" of Thorny Vines with the Heartwood at its centre; key: FIG-20 (see 10.4, The Mire Scenario 4).",
     "insert_after": "B14477",
     "scope": "column",
@@ -1503,7 +1503,7 @@
       "10.4 The Mire Scenario 5: Salttide's Reckoning (source lines 14497-14578)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 5 constrained, 9 illustrative and 2 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 4 mandatory, 5 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "Salttide's Reckoning: parties deploy along the outer banks within 6\" of opposite long edges (6\" is the 10.1 default) around a central Ritual Island holding Edrava Salttide and three Cursed Effigies; key: FIG-20 (see 10.4, The Mire Scenario 5).",
     "insert_after": "B14554",
     "scope": "column",
@@ -1515,11 +1515,11 @@
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 14497-14578; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "77ae19e4df061cc2c55cdb8aeb9f8a5c1c3ca8faeb58092d1bafc419d2d21e54",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "c215176a27c3d5039c3654ce67e2b0de7adf8eaa689cc974d8ce23d96e594a75",
     "iconography": "shared-v2",
-    "ambiguity": "Group 1 arrival (14552): the group 'enters from a water edge', but the scenario never says which battlefield edge is a water edge. The arrival edge is not drawn.; Escape edge (14568): 'Required only if a party is carrying the Salttide's Counting Stone' names no battlefield edge or extraction zone. No exit is drawn; the owner must state the legal extraction edge."
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
     "id": "FIG-56",
@@ -1529,7 +1529,7 @@
       "10.4 The Mire Scenario 6: The Serpent's Sunken Hoard (source lines 14579-14648)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 4 constrained, 5 illustrative and 0 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 4 constrained and 5 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Serpent's Sunken Hoard: parties deploy outside the Sinkhole area within 6\" of opposite short edges (6\" is the 10.1 default), around a central Deep Water Sinkhole Pool 10–12\" across holding three Hoard Chests; key: FIG-20 (see 10.4, The Mire Scenario 6).",
     "insert_after": "B14633",
     "scope": "column",
@@ -1537,13 +1537,13 @@
     "file": "figures/out/FIG-56.svg",
     "size_pt": {
       "width": 243,
-      "height": 253.4
+      "height": 263.8
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 14579-14648; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
-    "status": "unified iconography 2026-10-07, pending independent review",
-    "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "a637a27b407553549285e7837b79c96899f05380681059db0fbee7d6da2f1e8b",
+    "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
+    "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
+    "svg_sha256": "90606eb507a023889cf4a40a421de456189cec6404cf50102db36de78ba177c9",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },

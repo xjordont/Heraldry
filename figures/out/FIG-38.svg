@@ -104,7 +104,7 @@
 <polygon points="126.47,122 123.98,126.3 119.02,126.3 116.53,122 119.02,117.7 123.98,117.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
 </g>
 <g data-glyph="mon">
-<polygon points="104.27,100.4 101.78,104.7 96.82,104.7 94.33,100.4 96.82,96.1 101.78,96.1" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="96.47,110 93.98,114.3 89.02,114.3 86.53,110 89.02,105.7 93.98,105.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
 </g>
 <g data-glyph="mon">
 <polygon points="126.47,65 123.98,69.3 119.02,69.3 116.53,65 119.02,60.7 123.98,60.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
@@ -131,7 +131,7 @@
 <circle cx="207.9" cy="212" r="1.6" fill="#000"/>
 </g>
 <text x="135.41" y="109.37" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
-<text x="91.13" y="114.88" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">3"</text>
+<text x="102.86" y="96.54" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">3"</text>
 <text x="84" y="34.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
 <text x="84" y="214.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
 <text x="107.88" y="171.1" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Cavern</text>
@@ -146,10 +146,7 @@
 <line x1="126.55" y1="119.68" x2="147.02" y2="110.29" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
 <text x="148.72" y="107.29" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Caller·A</text>
-<g data-glyph="leader">
-<line x1="99.3" y1="94.84" x2="99.3" y2="62.34" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
-</g>
-<text x="90.42" y="59.34" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·A</text>
+<text x="76.51" y="98.05" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·A</text>
 <g data-glyph="leader">
 <line x1="124.37" y1="60.24" x2="128.97" y2="52.59" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
