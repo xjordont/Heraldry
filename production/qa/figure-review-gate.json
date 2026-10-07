@@ -1,56 +1,13 @@
 {
- "status": "FAIL",
- "reviewer": "figure-semantic-review: FIG-01..12 and FIG-17 by publication-auditor (carried forward, hashes unchanged); FIG-13..16, 18..20 and FIG-21..57 independently re-reviewed after the shared-glyph redraw (scenkit.py) against RC485",
- "reviewed_at": "2026-10-07T04:05:11Z",
+ "status": "PASS",
+ "reviewer": "figure-semantic-review: FIG-01..12, FIG-17, FIG-18 and FIG-57 carried forward (hashes unchanged); FIG-13..16, 19, 20 and FIG-21..56 independently re-reviewed against RC486 (P-08..P-12) by a reviewer who did not draw them",
+ "reviewed_at": "2026-10-07T10:58:00Z",
  "figures_total": 57,
- "figures_pass": 15,
- "stale": [
-  "FIG-13",
-  "FIG-14",
-  "FIG-15",
-  "FIG-16",
-  "FIG-19",
-  "FIG-20",
-  "FIG-21",
-  "FIG-22",
-  "FIG-23",
-  "FIG-24",
-  "FIG-25",
-  "FIG-26",
-  "FIG-27",
-  "FIG-28",
-  "FIG-29",
-  "FIG-30",
-  "FIG-31",
-  "FIG-32",
-  "FIG-33",
-  "FIG-34",
-  "FIG-35",
-  "FIG-36",
-  "FIG-37",
-  "FIG-38",
-  "FIG-39",
-  "FIG-40",
-  "FIG-41",
-  "FIG-42",
-  "FIG-43",
-  "FIG-44",
-  "FIG-45",
-  "FIG-46",
-  "FIG-47",
-  "FIG-48",
-  "FIG-49",
-  "FIG-50",
-  "FIG-51",
-  "FIG-52",
-  "FIG-53",
-  "FIG-54",
-  "FIG-55",
-  "FIG-56"
- ],
+ "figures_pass": 57,
+ "stale": [],
  "missing_review": [],
  "open_majors": {},
- "open_minor_count": 29,
+ "open_minor_count": 3,
  "review_entries_for_unknown_figures": [],
  "problems": [],
  "figures": [
@@ -316,20 +273,16 @@
    "reviewed": {
     "svg_sha256": "56ba2a97c17cbcdb86e042ee147da88b0d19ae8608d8e69587bb4b9e41221a6a",
     "caption_sha256": "2a0de41b660deb37e1f141fbe382326cf855c028ca8a01e36bb69e0e648c7165",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-14",
@@ -341,20 +294,16 @@
    "reviewed": {
     "svg_sha256": "f083e99959602cb73d0320e933c4ff2606fced992f288988289eacfbe192b4f4",
     "caption_sha256": "e8df7abbe9f5ebe6f622b24f93949e75aa83e20727227341f48972cb11c483ce",
-    "rules_sha256": "43fe7ea70bcb0c071483e84a52e40817717281b93248838c1366f738b233cd52"
+    "rules_sha256": "60a72e81078eddd4be7d95d9df8353896f6537692484ef0efc15aac54c44b678"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-15",
@@ -366,20 +315,16 @@
    "reviewed": {
     "svg_sha256": "4b0ace584a52b631868ef8a9a58cce079fda1d7a078615ff3c18deea4042c17a",
     "caption_sha256": "9ad7ddf4dd7899960895ce2aa3af130450d8492101c1d158ed0e0fdf0187977e",
-    "rules_sha256": "34e12852b9502196e116896e54eb8384a6aa8060b50a222c638ad1620e9098fd"
+    "rules_sha256": "c66526f0a181e2d17e00ac1e71526e7cc4f4ba6725a9cab80d9bf6a2c920863d"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-16",
@@ -391,20 +336,16 @@
    "reviewed": {
     "svg_sha256": "ee2d73d64f4e2c1396530cc69b2c044f987907991e2927475703211d76d835c8",
     "caption_sha256": "ae5fde33740332bc58851e5f222f4cb7d6a742c0b0bcd7b59081340c117c55d7",
-    "rules_sha256": "1fad8f1e8c4e8604159ccc830b0ea3c6d7d11aad1e12f6e03ba1cc7a50adc9a4"
+    "rules_sha256": "78f702e3e45b205afcd7e9934c3b78532fa25bad31aed946ada5ee57dc93af23"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-17",
@@ -456,25 +397,18 @@
     "rules_sha256": "17002c1770b12fc10565e4973020395819f8a09a293420473d626fd18a0b7646"
    },
    "reviewed": {
-    "svg_sha256": "9ca6b352846e75e58771381009803ffc82ffc39dc9700c5abf0f0abcbfd51da0",
+    "svg_sha256": "fb50d064c7ce685f410f6188688a8e37abac0de8eafba61eaefc0d83f2d9226c",
     "caption_sha256": "fe49806f43a98b023b889e149ab5d124fada5cd1ddb23fceae5a6a02f9988d64",
     "rules_sha256": "17002c1770b12fc10565e4973020395819f8a09a293420473d626fd18a0b7646"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "Label 'Group·R' is drawn on top of the Cart-or-wall hatch piece (it hides part of the piece and reads as labelling it); its leader runs a long way to the east group. The '5-7\"' label also sits on the outer dashed ring.",
-    "The two exit arrows (N and S) are drawn in the grey-dashed 'position not fixed' state although both edges are stated (each side leaves by its own deployment edge); the key strip shows the solid arrow."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-20",
@@ -484,23 +418,18 @@
     "rules_sha256": "5dd84e28a5b03b19717cfb942592a44ca562abb434d4dbcaab3cd68defc07821"
    },
    "reviewed": {
-    "svg_sha256": "9134e937a1195c778628b314ee8a64126cda17e3d812c63244cd49cdec70b966",
+    "svg_sha256": "1d66a838af5dd263e854c2cf79dc4a414bfe6ec7fa8512e448624982dca2418a",
     "caption_sha256": "4e7a4b0ea5e8e47438461bfdc1de9f61bd20db112177c4a0652b7b15ee284b2b",
-    "rules_sha256": "199117c3cc8e9e8d8d4a38e63e61e9eefe030b88095e749c927aa06b6c7bf928"
+    "rules_sha256": "5dd84e28a5b03b19717cfb942592a44ca562abb434d4dbcaab3cd68defc07821"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-21",
@@ -512,20 +441,16 @@
    "reviewed": {
     "svg_sha256": "9e9892a4661387bcce6c10b99720b520763d45f6f957f0410a35b7d43e8d3b4f",
     "caption_sha256": "24e3de61ebae16efb499c45473c6d3e9c9ddbce16f7b430265f1800c74a005c0",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-22",
@@ -535,25 +460,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "4cb7e6fd827d2b5e5a720debc0e5353d893e15a94c33ebe0bc7b3e06479edbf3",
+    "svg_sha256": "0289816a622eb896610f23040c89b1bdeffdea9da8b6889716c16c6ee47fcc9f",
     "caption_sha256": "a088dc773ba845429fdf518e08da129cc8186ac21979a0622bbcfb4863acd8e1",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "The single 'Stone' label sits between the Stone diamonds and G2 and is not attached to any one of the three identical Stone markers; the G2 'min 8\"' / '3\"' labels crowd the north-east Chest."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-23",
@@ -563,23 +481,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "ff3027fb709cde6e9ff7ce5c3d1628ec8f6a91db8e2a8c7a77b7879e2e25c90c",
+    "svg_sha256": "b7f5efdf485fe2f85df7b158ee09ee3f030823977303518840858817f87670d2",
     "caption_sha256": "67d21a4b8596209ea89c44bb159acc2dcbddfc2e4eb50ad8c509efbe4ab1c14c",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-24",
@@ -589,25 +502,18 @@
     "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d"
    },
    "reviewed": {
-    "svg_sha256": "15c5bb5f1bd192b1f71de15ddf3ea59687ddef2dd6b457c0dfb402b973fb577a",
+    "svg_sha256": "a23164922f64e64aac69ad7624fb31d41c891321a94f0c482a425e1f827768ee",
     "caption_sha256": "5cf60e2da9c2829fd5aa3c7eed91ce90fb5987fc388e173c934966813dd58545",
-    "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
+    "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "Leader line from 'Tarantula·R' runs through the 'Ravine 6-8\"' label (between '6-' and '8\"'); 'Brood·A', '2\"', 'Tarantula·A' and the 1\" ring are tightly packed at the Bundle."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-25",
@@ -617,25 +523,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "d3d0ce84d0e6c74ea277ac5c60cf8ce29e7108d0dd864f8bf1e12a267089ccf9",
+    "svg_sha256": "3162a747a3d0a3d434565093d58a0c4af763206d2523759e7e8d8dbb532d87a4",
     "caption_sha256": "f8ed61a55822f6ba3ebb6b49e3ae9e289110a5e2c64fa8e1158864efa6437853",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "'Undergrowth' label is detached from its piece (about 3\" away) and touches the corner of Party B's 8\"x8\" zone; the min-6\" ruler through G1 runs under the 'G1·R' label."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-26",
@@ -645,26 +544,18 @@
     "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d"
    },
    "reviewed": {
-    "svg_sha256": "d9a0327f5edbcd3b6ccce2c8266971b8ab760615c889861c338cd371ca6b98e3",
+    "svg_sha256": "5a51b9fb8aee3619f39f6d53be5b20219bb64d2e1128d6ada0145f985c2767cf",
     "caption_sha256": "5a88723a16616abb589343f0598bba92a24c6db77fccd13db59578f6b1f9830e",
-    "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
+    "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "'Grove 6\"' label sits on Group 1's dashed 8\" ring, not on the solid Grove circle where the Chests stand (solid radius 7.75\" from the Mother Tree centre); a reader can take the dashed ring for the Grove. Group 3's 3\" ring also cuts the 'Totem' label.",
-    "The Sacred Grove is stated Cover Terrain (Natural, Difficult for non-Druid/Ranger Heroes unless SPI Check) but is drawn as an unfilled 'Open feature'."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-27",
@@ -674,25 +565,20 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "2734cf641bb44ac92e65a17b87f4a132908fdc3a4df3c1098c66d4bad7d18dd5",
+    "svg_sha256": "be4678b91d07f6e883af0bc7bf41e413aec44c7ff37ce029f0d9018c9127f9ee",
     "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
-    "Dense centre: earlier crowding note persists. 'Orrery' sits next to the G2 hexagon (the Orrery diamond is 3\" lower) and 'G2·R' sits beside the Platform, so labels read against the wrong symbols; 'Wall' floats about 3\" above its piece without a leader; the min-10\" ruler crosses the Dome and Lens."
+    "New: the 'Lens' label leader runs up through the Unstable Floor hazard square u3 (2.4\" below the Lens) to the Lens diamond, so the label reads against the hazard square."
    ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-28",
@@ -702,25 +588,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "b844bed7e8bfdac841a66773ef0e90dc3762c888f998aded71223f64d67ab789",
+    "svg_sha256": "356b531bd6c4c92f139abb9c8236adb8f484e46995a39a335db222b0e49fc0c6",
     "caption_sha256": "03d2bafaaa4596a0d5bef8ae1efc15497c01b0a48341eb2d8ae7698e19725dee",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "The 'Insight' leader runs through the 'Courtyard 15\"x15\"' label."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-29",
@@ -732,22 +611,16 @@
    "reviewed": {
     "svg_sha256": "2d12ad7322b8894cd23897a2842b9162bec67f83164a35e13a0e40a3ab893f36",
     "caption_sha256": "ce89ad7247593b2f87859ece91d6e5809d444e310e809d1aa02cc291758d495e",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "'Unstable 3\"x3\"' label crosses Group 1's 4\" ring outline."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-30",
@@ -757,25 +630,20 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "9e206816f2f585c629e480caecb36d5a5162b766b37a856dc04d5757f7709d0d",
+    "svg_sha256": "86c1e24a790341c97356ed833d88475f8d130862158d91a10057b34b98b19172",
     "caption_sha256": "8a22d6432a10ba1a6487af97cd7728fbf46551ac2d9fb5f2b05271016f2cc002",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "'Chamber' and 'Hall 8\"x4\"' labels sit side by side above the Hall and read as one phrase; the two Chests and one Dust marker drawn dashed are small, unlabelled and faint."
    ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-31",
@@ -785,25 +653,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "874dfd40bf472988963fea093e871fcae41b49ca2936b22f710864d96b6f2092",
+    "svg_sha256": "8b54212c12d104d649cbaa3089b78204969536d8691607314c447d1630ea6029",
     "caption_sha256": "8b8db7c5a96a1eae9ac8785598503f7e2e33e077ccd7897def5f0e7d8e65120e",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "'Curtain' label sits directly over the Rubble square and about 2\" from the Curtain strip, so 'Curtain' and 'Rubble' both appear to label one square."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-32",
@@ -815,20 +676,16 @@
    "reviewed": {
     "svg_sha256": "a1c14185b5723555f90ae393cf0f1670366e5aaa4866d96095cf8ae608c4faa9",
     "caption_sha256": "299cb39bb185df20d39b5f3cf92925614e623ab5c63502c070b309ab61220a9a",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-33",
@@ -838,25 +695,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "9d2f56c61238dd744d0aa8fd7d5ee2f8f7a9ae47c005c3075ddf39ceacbd6fd2",
+    "svg_sha256": "91d5bed6462264467175dc145edef175f0930f5a0511d40736b1d3d098003d31",
     "caption_sha256": "9a4a3e0acc9d93714ef2a566f9e884ac4fdadba6e33a9e750341742f9d12eb51",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "'Cave wall' label has no leader and sits next to the Fungi ring and its '2\"' label rather than under its wall."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-34",
@@ -868,20 +718,16 @@
    "reviewed": {
     "svg_sha256": "d6d1dd9c8351df0c7cf1c223bbd78d368386ee5524eacda38ebe2c8909a59c82",
     "caption_sha256": "870bd56f84aef729295144d8af56822901b3e84bc15c9185a541368b709cdbd6",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-35",
@@ -893,20 +739,16 @@
    "reviewed": {
     "svg_sha256": "3b89e9e697dfd21b03168df9c848e52ed64be66b4176e0b60571abbbf40750bd",
     "caption_sha256": "22bd865dbd2cb161ee661022be8f4bbb937a72445eae74b03172d96f7a665c23",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-36",
@@ -916,25 +758,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "2db3b4a5e9fd62d38aef685fffd6ca4913155d730da6be4d41b9924924a2be9a",
+    "svg_sha256": "542956e4bcafdff489231a0442393ae2844f7a8995b302e0c2f5f5d4de29c5dc",
     "caption_sha256": "ac1bc8f01ad5029bbd8a9b4f22d099cc6bbd345554c44fcd5b796ed09c4ba0ba",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "'Low wall' label floats about 4\" above its wall without a leader; the Guard hexagon overlaps the Chest inside the same Tower."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-37",
@@ -944,25 +779,18 @@
     "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d"
    },
    "reviewed": {
-    "svg_sha256": "282c238a70dcafc0ddaee49cb4d89bbcf81a4d6a4bb6972c471faa00c9489c49",
+    "svg_sha256": "5619ae31958308dad68169e3ed2f89313d701ac67d1d60ad51a004fe4382978f",
     "caption_sha256": "13cbf14c7b47fb52d82cf76cec9f9e75d7accc5e4e00765079f665baafed8050",
-    "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
+    "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "'Deep Shadow' label sits in the white area left of the passage, not on the hatched passage; 'min 12\"' label sits on Party A's dashed zone boundary."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-38",
@@ -972,25 +800,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "ff7ff87b3e8023c82972fb2402eb64c3d1323bb66c2c0320a64904703ab720bf",
+    "svg_sha256": "93547f1b5ecbdbd5ae8161b3a0388816f939db06d610b85543843746abd6f641",
     "caption_sha256": "3cbe27fbfab686100e750213d176449b681abb3e56937651555a25acd81cb30d",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "'G1·A' label is about 7\" above its hexagon at the end of a long leader that crosses the 2\" ring; '3\"', '2\"' and 'Caller·A' labels crowd the Binding Circle."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-39",
@@ -1000,25 +821,20 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "938d122ff2d47f009d6233d5dfaed539e111afc3722a2438721498c9cf241739",
+    "svg_sha256": "a4b70812445a84cebe546d2d37183e4fe3e6b93fb5d46a4db68f6a185f1525db",
     "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
-    "The 'min 6\"' rulers c1-c2 and G1-c2 are close to collinear and the c1 ruler ends under the 'G1·R' label; the number of Random Monster Groups is variable (10.6.4) but two are drawn without a note."
+    "The 'Wall' label sits about 3\" below the wall it names, directly under Chest c2 and its 'min 6\"' ruler, so it reads as labelling the Chest (otherwise unlabelled) rather than the wall at the end of the 'min 6\"' label."
    ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-40",
@@ -1030,20 +846,16 @@
    "reviewed": {
     "svg_sha256": "3c9917e4cecfd02907231cf4f73cc5eb78c62d4a4b39531ae46344bd2cd269cd",
     "caption_sha256": "e8be7e6d362e7365c34f59828aae77aa3ec01578618e731161d65f110755230c",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-41",
@@ -1053,25 +865,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "29ba464c49a092653bacd8024d54af9e4db7483445de38930ebb5f4841835d24",
+    "svg_sha256": "6864534af2d9fa263d3d45fb9a6dbeb6a3297d5f4c5378e6d618142a05467f5c",
     "caption_sha256": "6907dc8ea9a1e2bd22bc70c530f9681ab771df1bd34b463d7b1b9fd86338c613",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "The mausoleum outline is unlabelled and the 'Crypt' and 'Grand Crypt' labels sit outside it (above and below), so they read as labelling the outline rather than the crypt rectangles."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-42",
@@ -1081,25 +886,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "bc993910fd3d816de983a4b381761e45886bff174a433e39f11e9583548cac9b",
+    "svg_sha256": "bf2126e3de536ae105a3a428591128e6ebf6a1dd41344ada61f3bcd8e7b26410",
     "caption_sha256": "08b85b987ca1b35e5c4a428829cd4d195e12fa27a85be74bd92d7549f9ad93be",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "The three Chests and four Conduits are grey-dashed, small and mostly unlabelled; at placed size they are hard to identify without the key."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-43",
@@ -1109,25 +907,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "fc11b58d88b2dc21fbed09e7ad1d7689d6322366e43d030573ec246c00090499",
+    "svg_sha256": "32fb8d989bc129f8594e95e9ddc99d3f1db5dbc1cfdf7507e76fd7a6a0e0bc96",
     "caption_sha256": "696980c4a640dc106f7560f39ad9ff073034130aa1d42026b0947bdd26ff0622",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "The Hoard's 2\" ring around the Wyrm is cut by the 'Pillar', '2\"' and 'Hoard' label halos and is not read as a closed ring; Ice Pillars are drawn about 1.5\" although described as 'large'."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-44",
@@ -1137,25 +928,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "b6b3c7fc8e88f5651194fd53d4046d334087a89cca2cfcf89690045f1e6957b4",
+    "svg_sha256": "1f25e4ea1a092601eb838fb366e4e8020ce145e66a88d685a5b9f5e73705299a",
     "caption_sha256": "a5cafdb87a508cd6d929132674b0e028c6598d957cc8b2156efe33fe0625005d",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "Mephit leader and the 'Throne chamber' label overlap near the right end of the label."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-45",
@@ -1165,25 +949,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "caa653428e145c59ba531747eba3f0cd3b5bdad7d98c6ab7305869e7fdfffb04",
+    "svg_sha256": "4b3e02446a4903a6c9e30a3e282771223e92e94955079a5a72d95c2632cea321",
     "caption_sha256": "544c8db44d30d68a170e82b87f93e59acd8c613cd1a78241cdd5b6da180b07fa",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "'Oasis 8\"x8\"' label sits about 3.5\" above the Oasis outline with no leader, between the Dune and G2; the 2\" and 3\" rings and their labels overlap at the Oasis top right."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-46",
@@ -1195,20 +972,16 @@
    "reviewed": {
     "svg_sha256": "36d0d10666a2892bf08c1b85665b1d78d77f4bc435583f91dbb24cc8f3e4b037",
     "caption_sha256": "fb6594f930d50d81cbc37664daf0cca076daedeef6d97a663abf493565575591",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-47",
@@ -1218,23 +991,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "61869909f3f97babbebb08281cebcdb48c211a59854208ba3401c9870372bcd0",
+    "svg_sha256": "ae44621033fdcf16aeec9c5b72aea6274f531cfd94027a21efcddfb2212df6fe",
     "caption_sha256": "8f66e4b11b21a3e9422a15715b49fb82e77c071d1d8c7709f1ded3a47ff2719c",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-48",
@@ -1244,25 +1012,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "40c7c6f8b8dcfb1e59d7fdb504b6ba3eb16974a70a163db6cebc7ca4691cb28b",
+    "svg_sha256": "f672a58ef6499e63dcd84b23bd4ebd3cc6551f44b4ba2e74f522d1dcdf9a5a4e",
     "caption_sha256": "54ef4455882afc5eabba98a2e45bf7c2492e506a281d52828d5c07adde12f0dc",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "The Shifting Sands Zone has no stated size or position (only 'central'); it is drawn as a 10\" circle with status CONSTRAINED. It is drawn grey-dashed, but the label sits outside it next to a Dune and reads as labelling the Dune."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-49",
@@ -1274,20 +1035,16 @@
    "reviewed": {
     "svg_sha256": "1f0fd6d9d1fbc15158572d905843518149b0ec51903bbcf21d18e528a47aa93d",
     "caption_sha256": "752bf3f58b809e97a2d9d3982846f343def50359b09e0b623af8afcf7f886514",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-50",
@@ -1299,20 +1056,16 @@
    "reviewed": {
     "svg_sha256": "a12c52e20aaab7213f7d7fd54106672fef29d6e3afa34e1bbdfcc50e267a0152",
     "caption_sha256": "67a4283af306188eee04688bb10c4ac0f60ba4ed0c4bce5dc33e42eaefd682ee",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-51",
@@ -1322,26 +1075,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "b0073d136d089c90fcbc88eff8b09e6995a17f77820923ac250eaa1059a9fea2",
+    "svg_sha256": "8844d12d65b43fc0ba910cfbeae7d3d12cef0ec4ec829a099f094797e817ace9",
     "caption_sha256": "8ed4b790280f1a99b72e41841c37f130d4eb71445f8faf6816ce1ab290d5845e",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "Group 2 'patrolling murky water' is drawn in an outer Shallow patch; the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258). Possible unlogged ambiguity. Sanctum label sits over the Sanctum water.",
-    "New: the relocated Group 1 hexagon overlaps the Chest glyph on the Bog Island (island is 4\" across)."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-52",
@@ -1351,25 +1096,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "3e1bc4dc058818e08345e3bcf266512e08267d06abcf2045ecea34e4538759c3",
+    "svg_sha256": "cea4ff7438bdc691992d48fc32ff48582f71fc2a995a8b9a528d0b588f065d46",
     "caption_sha256": "6622d45c42690e499c14e13929ac78d0df19fabfc16359fbed143a1c2e24970a",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "The numbered reeds marker is labelled 'G1' (reads as a Monster Group glyph; FIG-53/54 say 'Reeds 1' and 'Vine 1'); the 'Shaman·A' leader runs through the third Pile marker; Troglodytes (2 + APL/2, max 6) drawn as one hexagon without a foot note."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-53",
@@ -1379,25 +1117,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "889d9d0947263bde1ad28a779518e995f3b7b716336767b4b7ab5e7f577e5d7d",
+    "svg_sha256": "7e0ae35e86dae55209bdb00bd78e7539d2514280924b72d266481bcd2cfb1816",
     "caption_sha256": "a265935108bb677a0691bdbdc83c6734d8a6df1a7cd0d7d27c840dd94b11e62f",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "The Fen is 'deep mud and shallow pools': drawn only as the Water pattern, with a 16\" diameter that the text does not state, status CONSTRAINED."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-54",
@@ -1409,20 +1140,16 @@
    "reviewed": {
     "svg_sha256": "b361774f32dc63807c9fac145be9a0f436adf73c138dde20eb85665180cbf097",
     "caption_sha256": "bc8d245f6f693cc8f28fb4b08d44d4032834a8e7a37efd79b06bd4c090d36c07",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "rules_sha256 differs from current"
-   ],
+   "stale": false,
+   "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-55",
@@ -1432,25 +1159,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "77ae19e4df061cc2c55cdb8aeb9f8a5c1c3ca8faeb58092d1bafc419d2d21e54",
+    "svg_sha256": "c215176a27c3d5039c3654ce67e2b0de7adf8eaa689cc974d8ce23d96e594a75",
     "caption_sha256": "301f619dd66ddace585da3361de4e88462ad56df541343ea6d8c1028d94c379d",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "The Ritual Island radius (4\") is not stated but is drawn with a solid heavy outline; the water square (20\") is dashed."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-56",
@@ -1460,25 +1180,18 @@
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "a637a27b407553549285e7837b79c96899f05380681059db0fbee7d6da2f1e8b",
+    "svg_sha256": "90606eb507a023889cf4a40a421de456189cec6404cf50102db36de78ba177c9",
     "caption_sha256": "d99b1e8d5a335dc3f1b5f629a6ab67b2e4552d378a98b9facd1468da3dc015ea",
-    "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
+    "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
-   "stale": true,
-   "stale_reasons": [
-    "svg_sha256 differs from current",
-    "rules_sha256 differs from current"
-   ],
-   "verdict": "PASS_WITH_NOTES",
+   "stale": false,
+   "stale_reasons": [],
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "'The edges are Crumbling Banks' (14599; 852: Open, Difficult, Natural) are not shown or footnoted."
-   ],
-   "fail_reasons": [
-    "STALE review"
-   ],
-   "status": "FAIL"
+   "open_minors": [],
+   "fail_reasons": [],
+   "status": "PASS"
   },
   {
    "id": "FIG-57",
