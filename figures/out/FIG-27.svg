@@ -180,9 +180,9 @@
 </g>
 <text x="103.53" y="98.71" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">min 10"</text>
 <g data-glyph="leader">
-<line x1="121.5" y1="127.7" x2="121.5" y2="142.2" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="115.8" y1="122" x2="101.3" y2="122" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="112.5" y="150.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Lens</text>
+<text x="81.6" y="124.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Lens</text>
 <text x="34.5" y="110.34" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Orrery</text>
 <text x="144.73" y="140.52" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Sentinel·A</text>
 <g data-glyph="leader">
