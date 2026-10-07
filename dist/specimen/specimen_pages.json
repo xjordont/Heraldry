@@ -1,62 +1,62 @@
 [
  {
   "purpose": "Chapter opening",
-  "book_page_index": 17,
-  "folio": "11"
+  "book_page_index": 23,
+  "folio": "17"
  },
  {
   "purpose": "Two-column rules + worked example",
-  "book_page_index": 46,
-  "folio": "40"
+  "book_page_index": 65,
+  "folio": "59"
  },
  {
   "purpose": "Facing page: sustained procedure",
-  "book_page_index": 34,
-  "folio": "28"
+  "book_page_index": 47,
+  "folio": "41"
  },
  {
   "purpose": "Short random-result table",
-  "book_page_index": 71,
-  "folio": "65"
+  "book_page_index": 103,
+  "folio": "97"
  },
  {
   "purpose": "Numeric equipment table (multi-page, repeated header)",
-  "book_page_index": 102,
-  "folio": "96"
+  "book_page_index": 148,
+  "folio": "142"
  },
  {
   "purpose": "Widest source table as labelled entries (T082, 12 columns)",
-  "book_page_index": 139,
-  "folio": "133"
+  "book_page_index": 195,
+  "folio": "189"
  },
  {
   "purpose": "Longest prose cells / long-description table",
-  "book_page_index": 380,
-  "folio": "374"
+  "book_page_index": 500,
+  "folio": "494"
  },
  {
   "purpose": "Monster profiles",
-  "book_page_index": 196,
-  "folio": "190"
+  "book_page_index": 264,
+  "folio": "258"
  },
  {
   "purpose": "Scenario with canonical scaling fields",
-  "book_page_index": 293,
-  "folio": "287"
+  "book_page_index": 392,
+  "folio": "386"
  },
  {
   "purpose": "Appendix reference page",
-  "book_page_index": 424,
-  "folio": "418"
+  "book_page_index": 563,
+  "folio": "557"
  },
  {
   "purpose": "Rules diagram",
-  "book_page_index": 21,
-  "folio": "15"
+  "book_page_index": 29,
+  "folio": "23"
  },
  {
   "purpose": "Index slice",
-  "book_page_index": 447,
-  "folio": "441"
+  "book_page_index": 591,
+  "folio": "585"
  }
 ]

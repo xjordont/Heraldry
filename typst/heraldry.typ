@@ -138,12 +138,13 @@
   block(width: 100%, above: 0pt, below: 18pt, breakable: false)[
     #metadata(anchor) <chapter-opener>
     #if art != none {
-      align(center, image(art, width: 100%, height: 3.6in, fit: "contain"))
-      v(6pt)
+      let (file, w, h) = art
+      v(4pt)
+      align(center, image(file, width: w, height: h))
+      v(8pt)
     } else { v(0.35in) }
     #align(center)[
-      #motif(len: 80pt)
-      #v(10pt)
+      #if art == none { motif(len: 80pt); v(10pt) }
       #if num != none [
         #text(font: display, size: 13pt, weight: 600, fill: ink2, num)
         #v(2pt)
@@ -180,31 +181,87 @@
 // Balanced tail: pieces are top-level blocks that sat on one page in the previous pass.
 // Height = min over split points k of max(stack(0..k), stack(k..n)): a guaranteed fit,
 // after which Typst's own column flow balances further at line level.
-#let bal(..pieces) = context {
-  let ps = pieces.pos()
+// ---------------------------------------------------------------- keep units (one-page rule)
+// Usable frame height of an empty page; units no taller than this must stay on one physical page.
+#let frame-h = body-bottom - m-top
+#let umark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), y: here().position().y.pt())) <um-pos>]
+// Column-fit unit: unbreakable inside the two-column flow.
+#let keepcol(body) = {
+  let b = block(breakable: false, width: 100%, above: 6pt, below: 6pt, body)
+  // Typst force-places an unbreakable block into an empty column that is too short, so check
+  // the remaining space here and again after one column break (at the new position).
+  let fits() = measure(block(width: col-w, b)).height + 6pt <= body-bottom - here().position().y
+  context {
+    if not fits() { colbreak() }
+    context {
+      if not fits() { colbreak() }
+      b
+    }
+  }
+}
+// Height of pieces laid out as a balanced two-column run (same search as `bal`).
+#let bal-split(ps) = {
+  // best split index k: minimises the taller of the two stacks
   let n = ps.len()
   let stack(a, b) = measure(block(width: col-w, { for p in ps.slice(a, b) { p } })).height
-  // prefix height grows and suffix height shrinks with k: binary search the crossing.
+  let best = (stack(0, n), n)
   let lo = 1
   let hi = n - 1
-  let best = stack(0, n)
   while lo <= hi {
     let k = calc.div-euclid(lo + hi, 2)
     let a = stack(0, k)
     let b = stack(k, n)
-    best = calc.min(best, calc.max(a, b))
+    if calc.max(a, b) < best.at(0) { best = (calc.max(a, b), k) }
     if a < b { lo = k + 1 } else { hi = k - 1 }
   }
-  // If the balanced block does not fit in the space left on this page but fits a page,
-  // it is unbreakable and moves whole to the next page; only longer tails fall back to natural flow.
-  if best + 14pt > body-bottom - m-top {
+  best
+}
+#let bal-height(ps) = bal-split(ps).at(0) + 4pt
+// Balanced two-column run built from whole pieces: no flow, so it can never overflow.
+#let balcols(ps) = context {
+  let (h, k) = bal-split(ps)
+  block(width: 100%, above: 0pt, below: 8pt, breakable: false,
+    grid(columns: (col-w, col-w), column-gutter: gap,
+      { for p in ps.slice(0, k) { p } }, { for p in ps.slice(k) { p } }))
+}
+#let bal(..pieces) = context {
+  let ps = pieces.pos()
+  let avail = body-bottom - here().position().y
+  if ps.len() < 2 { columns(2, gutter: gap, { for p in ps { p } }); return }
+  let (h, k) = bal-split(ps)
+  if h + 6pt > avail {
     columns(2, gutter: gap, { for p in ps { p } })
   } else {
-    block(width: 100%, height: best + 14pt, above: 0pt, below: 8pt, breakable: false, columns(2, gutter: gap, { for p in ps { p } }))
+    block(width: 100%, above: 0pt, below: 8pt, breakable: false,
+      grid(columns: (col-w, col-w), column-gutter: gap,
+        { for p in ps.slice(0, k) { p } }, { for p in ps.slice(k) { p } }))
   }
 }
 
 #let full(body) = block(width: 100%, above: 8pt, below: 10pt, body)
+// Prose-only run: real flowing columns at half the stacked height plus three lines of slack.
+#let flow-height(ps) = measure(block(width: col-w, { for p in ps { p } })).height / 2 + 40pt
+#let flowcols(ps) = context block(width: 100%, height: flow-height(ps), above: 0pt, below: 8pt, breakable: false,
+  columns(2, gutter: gap, { for p in ps { p } }))
+// Page-fit unit: one unbreakable composition (balanced column runs and full-width parts).
+#let keeppage(id: none, ..parts) = block(breakable: false, width: 100%, above: 0pt, below: 10pt, {
+  if id != none { umark(id, "s") }
+  for (kind, body) in parts.pos() {
+    if kind == "c" { balcols(body) } else if kind == "p" { flowcols(body) } else { block(width: 100%, above: 6pt, below: 8pt, body) }
+  }
+  if id != none { umark(id, "e") }
+})
+// Measurement record for the build's classification pass.
+#let munit(id, parts) = context {
+  let cols = parts.filter(p => p.at(0) != "f")
+  let h1 = if cols.len() == parts.len() {
+    measure(block(width: col-w, { for (_, ps) in parts { for p in ps { p } } })).height.pt()
+  } else { 1e9 }
+  let h2 = parts.map(((kind, body)) => if kind == "c" { bal-height(body).pt() + 8 } else if kind == "p" { flow-height(body).pt() + 8 } else {
+    measure(block(width: frame-w, body)).height.pt() + 14 }).sum()
+  [#metadata((id: id, h1: h1, h2: h2)) <um>]
+}
+
 
 // ---------------------------------------------------------------- body components
 // Flavour text: the source marks it with emphasis, so the italic comes from #emph.

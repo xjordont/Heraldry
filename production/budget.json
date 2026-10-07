@@ -1,9 +1,9 @@
 {
   "currency": "USD",
-  "budget_limit": 1000.00,
-  "used": 98.64,
-  "remaining": 901.36,
+  "budget_limit": 1000.0,
+  "used": 103.72,
+  "remaining": 896.28,
   "status": "active",
-  "updated_at": "2026-10-07T00:00:00Z",
-  "notes": "Current budget log restored after missing file incident."
+  "updated_at": "2026-10-07T03:00:00Z",
+  "notes": "Measured via get_session usage.cost_usd (session-level; subagent inclusion not stated). Illustrated/one-page-keep run."
 }

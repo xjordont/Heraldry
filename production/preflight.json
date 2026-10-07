@@ -44,15 +44,10 @@
       "check": "script_syntax",
       "status": "PASS",
       "detail": "Python scripts parse successfully"
-    },
-    {
-      "check": "shipped_baseline",
-      "status": "PASS",
-      "detail": "Archived RC484 baseline hash verified; historical launch-kit checksums are in docs/history/launch-kit/"
     }
   ],
   "runtime_observed": {
-    "python": "3.12.14",
+    "python": "3.13.16",
     "commands": {
       "git": true,
       "python3": true,
@@ -61,13 +56,13 @@
       "pdfinfo": true,
       "pdftoppm": true,
       "qpdf": false,
-      "gs": true
+      "gs": false
     },
     "python_modules": {
-      "typst": false,
+      "typst": true,
       "fitz": true,
       "pypdf": true,
-      "markdown_it": false,
+      "markdown_it": true,
       "fontTools": true,
       "PIL": true
     }

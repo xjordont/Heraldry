@@ -9,4 +9,4 @@ if __name__ == "__main__":
         font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True,
         sys_inputs={"substrate": "cream", "edition": "print"})
     print(json.dumps({s: json.loads(compiler.query(s, field="value"))
-                      for s in ("<tblpos>", "<ixpos>", "<hpos>")}))
+                      for s in ("<tblpos>", "<ixpos>", "<hpos>", "<um-pos>")}))

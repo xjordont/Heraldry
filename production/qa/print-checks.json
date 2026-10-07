@@ -1,7 +1,7 @@
 {
  "pages": {
-  "cream": 450,
-  "white": 450
+  "cream": 594,
+  "white": 594
  },
  "substrate_edges": {
   "cream": [],
@@ -11,7 +11,7 @@
  "page_text_differences": [],
  "links": {
   "cream": {
-   "internal_links": 1259,
+   "internal_links": 1257,
    "unresolved_links": 0,
    "examples": [],
    "bookmarks": 551,
@@ -23,7 +23,7 @@
    "bookmarks_bad_target": 0
   },
   "white": {
-   "internal_links": 1259,
+   "internal_links": 1257,
    "unresolved_links": 0,
    "examples": [],
    "bookmarks": 551,
@@ -35,11 +35,155 @@
    "bookmarks_bad_target": 0
   }
  },
- "rasters": [],
+ "rasters": [
+  {
+   "page": 7,
+   "xref": 63424,
+   "px": [
+    1748,
+    900
+   ],
+   "placed_in": [
+    5.83,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 22,
+   "xref": 63426,
+   "px": [
+    1747,
+    900
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 46,
+   "xref": 63428,
+   "px": [
+    1746,
+    901
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 55,
+   "xref": 63430,
+   "px": [
+    1746,
+    901
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 70,
+   "xref": 63432,
+   "px": [
+    1746,
+    901
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 90,
+   "xref": 63434,
+   "px": [
+    1746,
+    901
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 133,
+   "xref": 63436,
+   "px": [
+    1746,
+    901
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 205,
+   "xref": 63438,
+   "px": [
+    1746,
+    901
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 248,
+   "xref": 63440,
+   "px": [
+    1747,
+    900
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 352,
+   "xref": 63442,
+   "px": [
+    1746,
+    901
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 483,
+   "xref": 63444,
+   "px": [
+    1746,
+    901
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  }
+ ],
  "page_labels_sample": [
   "ageLabeli",
-  "ageLabel220",
-  "ageLabel444"
+  "ageLabel292",
+  "ageLabel588"
  ],
  "status": "PASS"
 }
