@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="325.6pt" viewBox="0 0 504 325.6">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="338.5pt" viewBox="0 0 504 338.5">
 <title>10.1 Preparation Steps: procedural template</title>
 <desc>Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default deployment zones and the step 7 terrain exclusion distances on a generic battlefield.</desc>
 <defs>
@@ -17,136 +17,247 @@
 <pattern id="p-water-l" width="6" height="4" patternUnits="userSpaceOnUse"><rect width="6" height="4" fill="#fff"/><path d="M0 2.2Q1.5 0.4 3 2.2T6 2.2" stroke="#aaa" stroke-width="0.8" fill="none"/></pattern>
 <pattern id="p-slip" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#333" stroke-width="0.9" fill="none"/></pattern>
 <pattern id="p-slip-l" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#aaa" stroke-width="0.9" fill="none"/></pattern>
-<clipPath id="bclip"><rect x="22.5" y="14" width="198" height="198"/></clipPath>
 <pattern id="p-dark" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#d9d9d9"/><path d="M0 4L4 0" stroke="#fff" stroke-width="0.9" fill="none"/></pattern>
+<pattern id="p-diffo" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.8" fill="#222"/><circle cx="3" cy="3" r="0.8" fill="#222"/></pattern>
+<pattern id="p-diffo-l" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.8" fill="#999"/><circle cx="3" cy="3" r="0.8" fill="#999"/></pattern>
+<pattern id="p-chasm" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#d4d4d4"/><path d="M1.5 0V6M4.5 0V6" stroke="#333" stroke-width="1.1" stroke-dasharray="2.6 1.6" fill="none"/></pattern>
+<pattern id="p-chasm-l" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#efefef"/><path d="M1.5 0V6M4.5 0V6" stroke="#aaa" stroke-width="1.1" stroke-dasharray="2.6 1.6" fill="none"/></pattern>
 </defs>
 <text x="0" y="10" font-weight="700" font-family="'Source Sans 3'" font-size="10.5" fill="#000">10.1 Preparation Steps</text>
+<g data-glyph="step">
 <circle cx="9.5" cy="29.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="32.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+</g>
 <text x="22" y="31.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Determine Average Party Level (APL).</text>
 <line x1="9.5" y1="36.3" x2="9.5" y2="40.6" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<g data-glyph="step">
 <circle cx="9.5" cy="48.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="51.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+</g>
 <text x="22" y="50.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Choose Climate.</text>
 <line x1="9.5" y1="55.3" x2="9.5" y2="59.6" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<g data-glyph="step">
 <circle cx="9.5" cy="67.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="70.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+</g>
 <text x="22" y="69.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Choose the Core Scenario.</text>
 <line x1="9.5" y1="74.3" x2="9.5" y2="78.6" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<g data-glyph="step">
 <circle cx="9.5" cy="86.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="89.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+</g>
 <text x="22" y="88.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Generate Secondary Objectives: record only.</text>
 <line x1="9.5" y1="93.3" x2="9.5" y2="97.6" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<g data-glyph="step">
 <circle cx="9.5" cy="105.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="108.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
+</g>
 <text x="22" y="107.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Generate Weather: record only.</text>
 <line x1="9.5" y1="112.3" x2="9.5" y2="116.6" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<g data-glyph="step">
 <circle cx="9.5" cy="124.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="127.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">6</text>
+</g>
 <text x="22" y="126.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve the Setup Roll-off.</text>
 <line x1="9.5" y1="131.3" x2="9.5" y2="135.6" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
 <rect x="0" y="135" width="214" height="46.6" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2"/>
+<g data-glyph="step">
 <circle cx="9.5" cy="158.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="162.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">7</text>
+</g>
 <text x="22" y="145.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Place Terrain.</tspan><tspan font-weight="400"> Major Blocking or Impassable</tspan></text>
 <text x="22" y="155.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Terrain stays 3" from a battlefield edge and 6"</text>
 <text x="22" y="166" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">from a deployment zone unless the scenario says</text>
 <text x="22" y="176.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">otherwise.</text>
 <line x1="9.5" y1="165.6" x2="9.5" y2="185.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<g data-glyph="step">
 <circle cx="9.5" cy="193.1" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="196.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">8</text>
+</g>
 <text x="22" y="195.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Place Objectives and Markers.</text>
 <line x1="9.5" y1="199.9" x2="9.5" y2="204.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<g data-glyph="step">
 <circle cx="9.5" cy="212.1" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="215.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">9</text>
+</g>
 <text x="22" y="214.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Generate and Place Monsters.</text>
 <line x1="9.5" y1="218.9" x2="9.5" y2="223.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<g data-glyph="step">
 <circle cx="9.5" cy="231.1" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="234.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">10</text>
+</g>
 <text x="22" y="233.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Assign Guard Points.</text>
 <line x1="9.5" y1="237.9" x2="9.5" y2="242.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
 <rect x="0" y="241.6" width="214" height="57" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2"/>
+<g data-glyph="step">
 <circle cx="9.5" cy="270.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="273.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">11</text>
+</g>
 <text x="22" y="251.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Deploy the Parties</tspan><tspan font-weight="400"> as the scenario instructs.</tspan></text>
 <text x="22" y="262.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Where it is silent: the Roll-off winner chooses an</text>
 <text x="22" y="272.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">edge or corner zone and the other party takes the</text>
 <text x="22" y="283" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">opposite one; alternate placing Heroes, the</text>
 <text x="22" y="293.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Roll-off loser first.</text>
 <line x1="9.5" y1="277.4" x2="9.5" y2="302.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<g data-glyph="step">
 <circle cx="9.5" cy="310.1" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="9.5" y="313.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">12</text>
+</g>
 <text x="22" y="312.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Begin Round 1 with the Initiative Phase.</text>
 <rect x="232" y="6" width="272" height="17" fill="#fff" stroke="#000" stroke-width="1.2" rx="2"/>
 <text x="368" y="18.2" font-weight="700" font-family="'Source Sans 3'" font-size="10" fill="#000" text-anchor="middle">Template — not a fixed battlefield</text>
 <text x="238" y="36.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 11 default: edge zones</text>
 <text x="370.8" y="36.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 11 default: corner zones</text>
+<g data-glyph="ter-excl">
 <rect x="238" y="44" width="118.8" height="118.8" fill="url(#p-aoe)"/>
-<rect x="277.6" y="53.9" width="39.6" height="99" fill="#fff" stroke="#000" stroke-width="0.8" stroke-dasharray="3 2"/>
+</g>
+<rect x="277.6" y="53.9" width="39.6" height="99" fill="#fff"/>
 <rect x="238" y="44" width="118.8" height="118.8" fill="none" stroke="#000" stroke-width="1.2"/>
+<g data-glyph="zone-A">
 <rect x="238" y="44" width="19.8" height="118.8" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="238" y="44" width="3.2" height="118.8" fill="#000"/>
+</g>
+<g data-glyph="hero-A">
 <circle cx="247.9" cy="67.76" r="3.6" fill="#000" stroke="#000" stroke-width="0.75"/>
+</g>
+<g data-glyph="hero-A">
 <circle cx="247.9" cy="103.4" r="3.6" fill="#000" stroke="#000" stroke-width="0.75"/>
+</g>
+<g data-glyph="hero-A">
 <circle cx="247.9" cy="139.04" r="3.6" fill="#000" stroke="#000" stroke-width="0.75"/>
+</g>
+<g data-glyph="zone-B">
 <rect x="337" y="44" width="19.8" height="118.8" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="353.6" y="44" width="3.2" height="118.8" fill="#fff" stroke="#000" stroke-width="0.8"/>
+</g>
+<g data-glyph="hero-B">
 <circle cx="346.9" cy="67.76" r="3.6" fill="#fff" stroke="#000" stroke-width="1.4"/>
 <circle cx="346.9" cy="67.76" r="1.6" fill="#000"/>
+</g>
+<g data-glyph="hero-B">
 <circle cx="346.9" cy="103.4" r="3.6" fill="#fff" stroke="#000" stroke-width="1.4"/>
 <circle cx="346.9" cy="103.4" r="1.6" fill="#000"/>
+</g>
+<g data-glyph="hero-B">
 <circle cx="346.9" cy="139.04" r="3.6" fill="#fff" stroke="#000" stroke-width="1.4"/>
 <circle cx="346.9" cy="139.04" r="1.6" fill="#000"/>
-<line x1="238" y1="101.75" x2="257.8" y2="101.75" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="238" y1="99.15" x2="238" y2="104.35" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="257.8" y1="99.15" x2="257.8" y2="104.35" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<rect x="241.62" y="97.03" width="12.55" height="10.89" fill="#fff"/>
-<text x="243.42" y="104.95" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
-<line x1="257.8" y1="101.75" x2="277.6" y2="101.75" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="257.8" y1="99.15" x2="257.8" y2="104.35" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="277.6" y1="99.15" x2="277.6" y2="104.35" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<rect x="261.42" y="97.03" width="12.55" height="10.89" fill="#fff"/>
-<text x="263.22" y="104.95" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
+</g>
+<g data-glyph="dim">
+<line x1="238" y1="85.58" x2="257.8" y2="85.58" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="238" y1="82.78" x2="238" y2="88.38" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="257.8" y1="82.78" x2="257.8" y2="88.38" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+</g>
+<text x="247.9" y="88.78" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">6"</text>
+<g data-glyph="dim">
+<line x1="257.8" y1="85.58" x2="277.6" y2="85.58" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="257.8" y1="82.78" x2="257.8" y2="88.38" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="277.6" y1="82.78" x2="277.6" y2="88.38" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+</g>
+<text x="267.7" y="88.78" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">6"</text>
+<g data-glyph="dim">
 <line x1="297.4" y1="44" x2="297.4" y2="53.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="300" y1="44" x2="294.8" y2="44" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="300" y1="53.9" x2="294.8" y2="53.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<rect x="291.12" y="44.23" width="12.55" height="10.89" fill="#fff"/>
-<text x="292.92" y="52.15" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">3"</text>
+<line x1="300.2" y1="44" x2="294.6" y2="44" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="300.2" y1="53.9" x2="294.6" y2="53.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+</g>
+<text x="297.4" y="52.15" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">3"</text>
+<g data-glyph="ter-excl">
 <rect x="370.8" y="44" width="118.8" height="118.8" fill="url(#p-aoe)"/>
-<path d="M417 53.9 H479.7 V116.6 H463.2 A19.8 19.8 0 0 0 443.4 136.4 V152.9 H380.7 V90.2 H397.2 A19.8 19.8 0 0 0 417 70.4 V53.9 Z" fill="#fff" stroke="#000" stroke-width="0.8" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="3 2"/>
+</g>
+<path d="M417 53.9 H479.7 V116.6 H463.2 A19.8 19.8 0 0 0 443.4 136.4 V152.9 H380.7 V90.2 H397.2 A19.8 19.8 0 0 0 417 70.4 V53.9 Z" fill="#fff"/>
 <rect x="370.8" y="44" width="118.8" height="118.8" fill="none" stroke="#000" stroke-width="1.2"/>
+<g data-glyph="zone-A">
 <rect x="370.8" y="44" width="26.4" height="26.4" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="370.8" y="44" width="3.2" height="26.4" fill="#000"/>
+<rect x="370.8" y="44" width="26.4" height="3.2" fill="#000"/>
+</g>
+<g data-glyph="hero-A">
 <circle cx="379.38" cy="52.58" r="3.6" fill="#000" stroke="#000" stroke-width="0.75"/>
+</g>
+<g data-glyph="hero-A">
 <circle cx="388.62" cy="61.82" r="3.6" fill="#000" stroke="#000" stroke-width="0.75"/>
+</g>
+<g data-glyph="zone-B">
 <rect x="463.2" y="136.4" width="26.4" height="26.4" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="486.4" y="136.4" width="3.2" height="26.4" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<rect x="463.2" y="159.6" width="26.4" height="3.2" fill="#fff" stroke="#000" stroke-width="0.8"/>
+</g>
+<g data-glyph="hero-B">
 <circle cx="471.78" cy="144.98" r="3.6" fill="#fff" stroke="#000" stroke-width="1.4"/>
 <circle cx="471.78" cy="144.98" r="1.6" fill="#000"/>
+</g>
+<g data-glyph="hero-B">
 <circle cx="481.02" cy="154.22" r="3.6" fill="#fff" stroke="#000" stroke-width="1.4"/>
 <circle cx="481.02" cy="154.22" r="1.6" fill="#000"/>
+</g>
+<g data-glyph="dim">
 <line x1="370.8" y1="75.35" x2="397.2" y2="75.35" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="370.8" y1="72.75" x2="370.8" y2="77.95" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="397.2" y1="72.75" x2="397.2" y2="77.95" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<rect x="377.72" y="70.63" width="12.55" height="10.89" fill="#fff"/>
-<text x="379.52" y="78.55" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">8"</text>
+<line x1="370.8" y1="72.55" x2="370.8" y2="78.15" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="397.2" y1="72.55" x2="397.2" y2="78.15" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+</g>
+<text x="384" y="78.55" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">8"</text>
+<g data-glyph="dim">
 <line x1="430.2" y1="44" x2="430.2" y2="53.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="432.8" y1="44" x2="427.6" y2="44" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="432.8" y1="53.9" x2="427.6" y2="53.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<rect x="423.92" y="44.23" width="12.55" height="10.89" fill="#fff"/>
-<text x="425.72" y="52.15" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">3"</text>
+<line x1="433" y1="44" x2="427.4" y2="44" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="433" y1="53.9" x2="427.4" y2="53.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+</g>
+<text x="430.2" y="52.15" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">3"</text>
 <line x1="397.2" y1="70.4" x2="411.2" y2="84.4" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<rect x="412.7" y="80.96" width="12.55" height="10.89" fill="#fff"/>
-<text x="414.5" y="88.88" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
+<text x="418.98" y="88.88" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">6"</text>
 <text x="238" y="174.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Zones are 6" deep. The other pair</text>
 <text x="238" y="185.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">of opposite edges works the</text>
 <text x="238" y="195.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">same way.</text>
 <text x="370.8" y="174.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Corner zones are 8"×8"; the</text>
 <text x="370.8" y="185.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">second zone is diagonally</text>
 <text x="370.8" y="195.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">opposite.</text>
-<rect x="232" y="204" width="22" height="11" fill="url(#p-aoe)" stroke="#000" stroke-width="0.8"/>
-<text x="260" y="213" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 7: no major Blocking or Impassable Terrain here</text>
-<rect x="232" y="219" width="22" height="11" fill="#fff" stroke="#000" stroke-width="0.8" stroke-dasharray="3 2"/>
-<text x="260" y="228" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 7: major Blocking or Impassable Terrain allowed</text>
-<rect x="232" y="234" width="22" height="11" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
-<text x="260" y="243" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Deployment zone (Party A black, Party B dotted)</text>
-<text x="232" y="256" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Drawn to scale at 3.3 pt per inch on a 36"×36" battlefield; the 3" edge</text>
-<text x="232" y="266.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">margin and the 6" distance from a zone are measured from the zone's</text>
-<text x="232" y="276.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">outline, so corner zones leave a rounded exclusion.</text>
+<g data-strip="ter-excl">
+<rect x="234" y="211.5" width="26" height="12" fill="url(#p-aoe)" stroke="#000" stroke-width="0.8"/>
+</g>
+<text x="266" y="220.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 7 exclusion</text>
+<g data-strip="zone-A">
+<g data-glyph="zone-A">
+<rect x="335.94" y="210.5" width="30" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="335.94" y="210.5" width="3.2" height="14" fill="#000"/>
+</g>
+<g data-glyph="hero-A">
+<circle cx="353.94" cy="217.5" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+</g>
+</g>
+<text x="369.94" y="220.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A zone</text>
+<g data-strip="zone-B">
+<g data-glyph="zone-B">
+<rect x="232" y="226" width="30" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="232" y="226" width="3.2" height="14" fill="#fff" stroke="#000" stroke-width="0.8"/>
+</g>
+<g data-glyph="hero-B">
+<circle cx="250" cy="233" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="250" cy="233" r="1.6" fill="#000"/>
+</g>
+</g>
+<text x="266" y="236" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B zone</text>
+<g data-strip="hero-A">
+<g data-glyph="hero-A">
+<circle cx="336.98" cy="233" r="5" fill="#000" stroke="#000" stroke-width="0.75"/>
+</g>
+</g>
+<text x="355.98" y="236" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A Hero</text>
+<g data-strip="hero-B">
+<g data-glyph="hero-B">
+<circle cx="426.8" cy="233" r="5" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="426.8" cy="233" r="1.6" fill="#000"/>
+</g>
+</g>
+<text x="445.8" y="236" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B Hero</text>
+<g data-strip="dim">
+<g data-glyph="dim">
+<line x1="234" y1="248.5" x2="260" y2="248.5" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="234" y1="245.5" x2="234" y2="251.5" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="260" y1="245.5" x2="260" y2="251.5" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+</g>
+</g>
+<text x="266" y="251.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Stated distance</text>
+<text x="232" y="271.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hatched: step 7 forbids major Blocking or Impassable Terrain. White:</text>
+<text x="232" y="281.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">allowed.</text>
+<text x="232" y="303.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Drawn to scale at 3.3 pt per inch on a 36"×36" battlefield; the 3" edge</text>
+<text x="232" y="313.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">margin and the 6" distance from a zone are measured from the zone's</text>
+<text x="232" y="324.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">outline, so corner zones leave a rounded exclusion.</text>
 </svg>

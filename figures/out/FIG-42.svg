@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="243pt" height="259.9pt" viewBox="0 0 243 259.9">
+<svg xmlns="http://www.w3.org/2000/svg" width="243pt" height="263.8pt" viewBox="0 0 243 263.8">
 <title>Pale City Scenario 4: The Clockwork Menagerie, deployment map</title>
-<desc>Column-width top-down map of the setup for Pale City 4: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states.</desc>
+<desc>Column-width top-down map of the setup for Pale City 4: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states and the shared symbols of FIG-20.</desc>
 <defs>
 <pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
 <pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
@@ -17,88 +17,149 @@
 <pattern id="p-water-l" width="6" height="4" patternUnits="userSpaceOnUse"><rect width="6" height="4" fill="#fff"/><path d="M0 2.2Q1.5 0.4 3 2.2T6 2.2" stroke="#aaa" stroke-width="0.8" fill="none"/></pattern>
 <pattern id="p-slip" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#333" stroke-width="0.9" fill="none"/></pattern>
 <pattern id="p-slip-l" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#aaa" stroke-width="0.9" fill="none"/></pattern>
-<clipPath id="bclip"><rect x="22.5" y="14" width="198" height="198"/></clipPath>
 <pattern id="p-dark" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#d9d9d9"/><path d="M0 4L4 0" stroke="#fff" stroke-width="0.9" fill="none"/></pattern>
+<pattern id="p-diffo" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.8" fill="#222"/><circle cx="3" cy="3" r="0.8" fill="#222"/></pattern>
+<pattern id="p-diffo-l" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.8" fill="#999"/><circle cx="3" cy="3" r="0.8" fill="#999"/></pattern>
+<pattern id="p-chasm" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#d4d4d4"/><path d="M1.5 0V6M4.5 0V6" stroke="#333" stroke-width="1.1" stroke-dasharray="2.6 1.6" fill="none"/></pattern>
+<pattern id="p-chasm-l" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#efefef"/><path d="M1.5 0V6M4.5 0V6" stroke="#aaa" stroke-width="1.1" stroke-dasharray="2.6 1.6" fill="none"/></pattern>
+<clipPath id="bclip"><rect x="13.5" y="14" width="216" height="216"/></clipPath>
 </defs>
-<rect x="27.9" y="14" width="187.2" height="187.2" fill="#fff" stroke="#000" stroke-width="1.3"/>
-<rect x="27.9" y="14" width="31.2" height="187.2" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
-<rect x="27.9" y="14" width="3.2" height="187.2" fill="#000"/>
-<line x1="27.9" y1="70.16" x2="59.1" y2="70.16" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="27.9" y1="67.16" x2="27.9" y2="73.16" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="59.1" y1="67.16" x2="59.1" y2="73.16" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<rect x="183.9" y="14" width="31.2" height="187.2" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
-<rect x="211.9" y="14" width="3.2" height="187.2" fill="#fff" stroke="#000" stroke-width="0.8"/>
-<line x1="183.9" y1="70.16" x2="215.1" y2="70.16" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="183.9" y1="67.16" x2="183.9" y2="73.16" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="215.1" y1="67.16" x2="215.1" y2="73.16" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<rect x="90.3" y="76.4" width="10.4" height="5.2" fill="url(#p-imp-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
-<rect x="142.3" y="128.4" width="10.4" height="5.2" fill="url(#p-imp-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
-<rect x="100.7" y="45.2" width="26" height="20.8" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
-<rect x="116.3" y="149.2" width="26" height="20.8" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
-<circle cx="121.5" cy="107.6" r="15.6" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="3 2.5"/>
-<rect x="96.54" y="124.24" width="8.32" height="8.32" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
-<text x="100.7" y="131.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#777" text-anchor="middle">!</text>
-<rect x="138.14" y="77.44" width="8.32" height="8.32" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
-<text x="142.3" y="85" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#777" text-anchor="middle">!</text>
-<rect x="65.34" y="113.84" width="8.32" height="8.32" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
-<text x="69.5" y="121.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#777" text-anchor="middle">!</text>
-<rect x="169.34" y="72.24" width="8.32" height="8.32" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
-<text x="173.5" y="79.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#777" text-anchor="middle">!</text>
-<rect x="91.08" y="156.22" width="8.84" height="6.76" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
-<line x1="91.08" y1="159.08" x2="99.92" y2="159.08" stroke="#777" stroke-width="0.8" stroke-linecap="butt"/>
-<rect x="169.08" y="41.82" width="8.84" height="6.76" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
-<line x1="169.08" y1="44.68" x2="177.92" y2="44.68" stroke="#777" stroke-width="0.8" stroke-linecap="butt"/>
-<rect x="158.68" y="140.62" width="8.84" height="6.76" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
-<line x1="158.68" y1="143.48" x2="167.52" y2="143.48" stroke="#777" stroke-width="0.8" stroke-linecap="butt"/>
-<polygon points="100.47,84.2 97.98,88.5 93.02,88.5 90.53,84.2 93.02,79.9 97.98,79.9" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
-<polygon points="152.47,136.2 149.98,140.5 145.02,140.5 142.53,136.2 145.02,131.9 149.98,131.9" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
-<polygon points="139.47,112.8 136.98,117.1 132.02,117.1 129.53,112.8 132.02,108.5 136.98,108.5" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<rect x="13.5" y="14" width="216" height="216" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<g data-glyph="zone-A">
+<rect x="13.5" y="14" width="36" height="216" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="13.5" y="14" width="3.2" height="216" fill="#000"/>
+</g>
+<g data-glyph="dim">
+<line x1="13.5" y1="78.8" x2="49.5" y2="78.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="13.5" y1="75.8" x2="13.5" y2="81.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="49.5" y1="75.8" x2="49.5" y2="81.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+</g>
+<g data-glyph="zone-B">
+<rect x="193.5" y="14" width="36" height="216" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="226.3" y="14" width="3.2" height="216" fill="#fff" stroke="#000" stroke-width="0.8"/>
+</g>
+<g data-glyph="dim">
+<line x1="193.5" y1="78.8" x2="229.5" y2="78.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="193.5" y1="75.8" x2="193.5" y2="81.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="229.5" y1="75.8" x2="229.5" y2="81.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+</g>
+<g data-glyph="ter-obstacle" data-state="illus">
+<rect x="85.5" y="86" width="12" height="6" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+</g>
+<g data-glyph="ter-obstacle" data-state="illus">
+<rect x="145.5" y="146" width="12" height="6" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+</g>
+<g data-glyph="ter-open" data-state="illus">
+<rect x="97.5" y="50" width="30" height="24" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+</g>
+<g data-glyph="ter-open" data-state="illus">
+<rect x="115.5" y="170" width="30" height="24" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+</g>
+<g data-glyph="ring">
+<g clip-path="url(#bclip)">
+<circle cx="121.5" cy="122" r="18" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="3 2.5"/>
+</g>
+</g>
+<g data-glyph="haz" data-state="illus">
+<rect x="93.34" y="141.84" width="8.32" height="8.32" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
+<text x="97.5" y="149.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#777" text-anchor="middle">!</text>
+</g>
+<g data-glyph="haz" data-state="illus">
+<rect x="141.34" y="87.84" width="8.32" height="8.32" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
+<text x="145.5" y="95.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#777" text-anchor="middle">!</text>
+</g>
+<g data-glyph="haz" data-state="illus">
+<rect x="57.34" y="129.84" width="8.32" height="8.32" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
+<text x="61.5" y="137.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#777" text-anchor="middle">!</text>
+</g>
+<g data-glyph="haz" data-state="illus">
+<rect x="177.34" y="81.84" width="8.32" height="8.32" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
+<text x="181.5" y="89.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#777" text-anchor="middle">!</text>
+</g>
+<g data-glyph="chest" data-state="illus">
+<rect x="87.08" y="178.62" width="8.84" height="6.76" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
+<line x1="87.08" y1="181.48" x2="95.92" y2="181.48" stroke="#777" stroke-width="0.8" stroke-linecap="butt"/>
+</g>
+<g data-glyph="chest" data-state="illus">
+<rect x="177.08" y="46.62" width="8.84" height="6.76" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
+<line x1="177.08" y1="49.48" x2="185.92" y2="49.48" stroke="#777" stroke-width="0.8" stroke-linecap="butt"/>
+</g>
+<g data-glyph="chest" data-state="illus">
+<rect x="165.08" y="160.62" width="8.84" height="6.76" fill="#fff" stroke="#777" stroke-width="1" stroke-dasharray="2.4 1.6"/>
+<line x1="165.08" y1="163.48" x2="173.92" y2="163.48" stroke="#777" stroke-width="0.8" stroke-linecap="butt"/>
+</g>
+<g data-glyph="mon">
+<polygon points="96.47,95 93.98,99.3 89.02,99.3 86.53,95 89.02,90.7 93.98,90.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-glyph="mon">
+<polygon points="156.47,155 153.98,159.3 149.02,159.3 146.53,155 149.02,150.7 153.98,150.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-glyph="mon">
+<polygon points="141.47,128 138.98,132.3 134.02,132.3 131.53,128 134.02,123.7 138.98,123.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<g data-glyph="arr-exit">
 <line x1="121.5" y1="29" x2="121.5" y2="21" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
 <polygon points="121.5,14 124.9,21 118.1,21" fill="#000"/>
-<line x1="200.1" y1="107.6" x2="208.1" y2="107.6" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
-<polygon points="215.1,107.6 208.1,111 208.1,104.2" fill="#000"/>
-<line x1="121.5" y1="186.2" x2="121.5" y2="194.2" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
-<polygon points="121.5,201.2 118.1,194.2 124.9,194.2" fill="#000"/>
-<line x1="42.9" y1="107.6" x2="34.9" y2="107.6" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
-<polygon points="27.9,107.6 34.9,104.2 34.9,111" fill="#000"/>
-<circle cx="43.5" cy="32.72" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
-<circle cx="43.5" cy="148.78" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
-<circle cx="43.5" cy="182.48" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
-<circle cx="199.5" cy="32.72" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
-<circle cx="199.5" cy="32.72" r="1.6" fill="#000"/>
-<circle cx="199.5" cy="148.78" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
-<circle cx="199.5" cy="148.78" r="1.6" fill="#000"/>
-<circle cx="199.5" cy="182.48" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
-<circle cx="199.5" cy="182.48" r="1.6" fill="#000"/>
-<rect x="37.42" y="56.96" width="12.16" height="11.2" fill="#fff"/>
-<text x="39.02" y="65.36" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
-<rect x="193.42" y="56.96" width="12.16" height="11.2" fill="#fff"/>
-<text x="195.02" y="65.36" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
-<rect x="71.88" y="60.6" width="47.25" height="11.2" fill="#fff"/>
-<text x="73.48" y="69" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Workbench</text>
-<rect x="128.7" y="50" width="37.51" height="11.2" fill="#fff"/>
-<text x="130.3" y="58.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Platform</text>
-<rect x="121.45" y="87.2" width="12.16" height="11.2" fill="#fff"/>
-<text x="123.05" y="95.6" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">3"</text>
-<rect x="83.67" y="110" width="34.05" height="11.2" fill="#fff"/>
-<text x="85.27" y="118.4" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Conduit</text>
-<rect x="72.26" y="91.26" width="46.47" height="11.2" fill="#fff"/>
-<text x="73.86" y="99.66" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Guardian·A</text>
-<text x="27.9" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Pale City 4</text>
-<text x="74.45" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">·  36"×36"</text>
-<polygon points="210.1,3 206.9,9.5 213.3,9.5" fill="#000"/>
-<text x="204.1" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">N</text>
-<text x="23.9" y="111" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">W</text>
-<text x="219.1" y="111" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">E</text>
-<line x1="27.9" y1="211.2" x2="59.1" y2="211.2" stroke="#000" stroke-width="1.4" stroke-linecap="butt"/>
-<line x1="27.9" y1="208.2" x2="27.9" y2="214.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
-<line x1="59.1" y1="208.2" x2="59.1" y2="214.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
-<line x1="43.5" y1="209.2" x2="43.5" y2="213.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<text x="63.1" y="214.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">6" scale</text>
-<text x="104.38" y="214.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Schematic</text>
-<text x="215.1" y="214.2" font-family="'Source Sans 3'" font-size="9" fill="#000"></text>
-<text x="219.1" y="210.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">S</text>
-<text x="6" y="226.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Grey dashed = one legal arrangement; position not fixed by</text>
-<text x="6" y="237.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the rules</text>
-<text x="6" y="247.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Two Workbenches drawn (the text allows 2–3).</text>
+</g>
+<g data-glyph="arr-exit">
+<line x1="214.5" y1="122" x2="222.5" y2="122" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="229.5,122 222.5,125.4 222.5,118.6" fill="#000"/>
+</g>
+<g data-glyph="arr-exit">
+<line x1="121.5" y1="215" x2="121.5" y2="223" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="121.5,230 118.1,223 124.9,223" fill="#000"/>
+</g>
+<g data-glyph="arr-exit">
+<line x1="28.5" y1="122" x2="20.5" y2="122" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
+<polygon points="13.5,122 20.5,118.6 20.5,125.4" fill="#000"/>
+</g>
+<g data-glyph="hero-A">
+<circle cx="31.5" cy="35.6" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+</g>
+<g data-glyph="hero-A">
+<circle cx="31.5" cy="169.52" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+</g>
+<g data-glyph="hero-A">
+<circle cx="31.5" cy="208.4" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+</g>
+<g data-glyph="hero-B">
+<circle cx="211.5" cy="35.6" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="211.5" cy="35.6" r="1.6" fill="#000"/>
+</g>
+<g data-glyph="hero-B">
+<circle cx="211.5" cy="169.52" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="211.5" cy="169.52" r="1.6" fill="#000"/>
+</g>
+<g data-glyph="hero-B">
+<circle cx="211.5" cy="208.4" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="211.5" cy="208.4" r="1.6" fill="#000"/>
+</g>
+<text x="27.02" y="81.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
+<text x="207.02" y="81.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
+<text x="132.61" y="115.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">3"</text>
+<g data-glyph="leader">
+<line x1="91.5" y1="82.5" x2="91.5" y2="74.74" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+</g>
+<text x="49.41" y="71.74" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Workbench</text>
+<text x="130.7" y="64.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Platform</text>
+<text x="58.25" y="148.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Conduit</text>
+<text x="69.86" y="110.16" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Guardian·A</text>
+<text x="13.5" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Pale City 4</text>
+<text x="60.05" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">·  36"×36"</text>
+<g data-glyph="compass">
+<polygon points="224.5,3 221.3,9.5 227.7,9.5" fill="#000"/>
+<text x="218.5" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">N</text>
+</g>
+<g data-glyph="scale">
+<line x1="155.69" y1="7.2" x2="191.69" y2="7.2" stroke="#000" stroke-width="1.4" stroke-linecap="butt"/>
+<line x1="155.69" y1="4.2" x2="155.69" y2="10.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="191.69" y1="4.2" x2="191.69" y2="10.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<line x1="173.69" y1="5.2" x2="173.69" y2="9.2" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<text x="195.69" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">6"</text>
+</g>
+<text x="9.5" y="125.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">W</text>
+<text x="233.5" y="125.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">E</text>
+<text x="233.5" y="239" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">S</text>
+<text x="6" y="241" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Schematic. Grey dashed = position not fixed by the rules.</text>
+<text x="6" y="251.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Two Workbenches drawn (the text allows 2–3).</text>
 </svg>

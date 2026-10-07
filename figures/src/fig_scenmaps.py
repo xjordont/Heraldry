@@ -1,78 +1,37 @@
-"""Scenario deployment maps (FIG-20 onward): one compact column-width top-down map per Core Scenario.
+"""Scenario setup maps: FIG-21 to FIG-56 (the 36 Core Scenarios), the board panels of FIG-18 and FIG-19 (Appendix A and B),
+the shared key FIG-20 and the 10.1 template FIG-57.
 
-Data-driven: every map is drawn from one entry of figures/src/scenario_specs.json.
-Board coordinates are inches, origin at the top-left corner, x to the right, y downward; North is drawn at the
-top (the Setup Roll-off winner designates North in play, 10.1).  Short edges = North/South (top/bottom),
-long edges = East/West (left/right), even on a square battlefield (10.1).
+Data-driven: every map is drawn from one entry of figures/src/scenario_specs.json by the one renderer in this module,
+using only the glyph functions of scenkit.py (the same functions draw the key, FIG-13 to FIG-16 and the appendix figures).
+Board coordinates are inches, origin at the top-left corner, x to the right, y downward; North is drawn at the top
+(the Setup Roll-off winner designates North in play, 10.1).  Short edges = North/South (top/bottom), long edges =
+East/West (left/right), even on a square battlefield (10.1).
 
 Statuses recorded per spec element:
   MANDATORY_POSITION  the source fixes the location (drawn solid)
   CONSTRAINED         the source gives a range or relation (drawn solid with its dimension/ring)
   ILLUSTRATIVE        the source leaves the location open; one legal arrangement is drawn in light grey dashes
+  UNRESOLVED          the text does not place the element (kind "unresolved"): shown as a ? tag with a short note
 Elements may carry "draw": "open" to force the light dashed style where only the extent is fixed.
 
-Scale: the board, zones and every stated distance are drawn at SC pt per inch; markers are enlarged
-(Large and Huge Monsters are drawn at their 2"x2" and 3"x3" footprints).  A 6" scale bar is included.
+Scale: the board, zones and every stated distance are drawn at `sc` pt per inch (6 for the 36" maps, 7 for the 24"
+Appendix panels); markers are enlarged (Large and Huge Monsters are drawn at their 2"x2" and 3"x3" footprints).
 """
 import json
 import math
 import os
 import re
 
-from svgkit import (Svg, COL_W, FULL_W, INK, DARK, MID, LIGHT, PALE, WHITE, PAT, tw, wrap, hexpts, token,
-                    arrow, DEFS, f1, callout, box, pill)  # noqa: F401
+import scenkit as K
+from scenkit import MapSvg, GREY, LGREY
+from svgkit import (Svg, COL_W, FULL_W, INK, DARK, MID, LIGHT, PALE, WHITE, PAT, tw, wrap, hexpts, f1, box)  # noqa: F401
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 SPEC_PATH = os.path.join(HERE, "scenario_specs.json")
 
-SC = 5.2                 # pt per inch
-BX = (COL_W - 36 * SC) / 2.0
-BY = 14.0
-GREY = "#777"            # ILLUSTRATIVE outline
-LGREY = "#aaa"
-INFO = "grey dashed = one legal arrangement; position not fixed by the rules"
-NOTE_STD = "Grey dashed = one legal arrangement; position not fixed by the rules"
-
-EXTRA_DEFS = """<defs>
-<pattern id="p-cover-l" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#aaa" stroke-width="0.6" fill="none"/></pattern>
-<pattern id="p-diff-l" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.7" fill="#999"/><circle cx="3" cy="3" r="0.7" fill="#999"/></pattern>
-<pattern id="p-imp-l" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.6" height="2.6" fill="#fff"/><path d="M0.4 0V2.6" stroke="#aaa" stroke-width="0.8" fill="none"/></pattern>
-<pattern id="p-mon-l" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="3.2" height="3.2" fill="#fff"/><path d="M0.5 0V3.2" stroke="#999" stroke-width="0.9" fill="none"/></pattern>
-<pattern id="p-water" width="6" height="4" patternUnits="userSpaceOnUse"><rect width="6" height="4" fill="#fff"/><path d="M0 2.2Q1.5 0.4 3 2.2T6 2.2" stroke="#333" stroke-width="0.8" fill="none"/></pattern>
-<pattern id="p-water-l" width="6" height="4" patternUnits="userSpaceOnUse"><rect width="6" height="4" fill="#fff"/><path d="M0 2.2Q1.5 0.4 3 2.2T6 2.2" stroke="#aaa" stroke-width="0.8" fill="none"/></pattern>
-<pattern id="p-slip" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#333" stroke-width="0.9" fill="none"/></pattern>
-<pattern id="p-slip-l" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)"><rect width="6" height="6" fill="#fff"/><path d="M0.5 1.5H3.5M3.5 4.5H5.5" stroke="#aaa" stroke-width="0.9" fill="none"/></pattern>
-<clipPath id="bclip"><rect x="22.5" y="14" width="198" height="198"/></clipPath>
-<pattern id="p-dark" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#d9d9d9"/><path d="M0 4L4 0" stroke="#fff" stroke-width="0.9" fill="none"/></pattern>
-</defs>"""
-
-# terrain kind -> (solid fill, light fill)
-TER = {
-    "cover": ("url(#p-cover)", "url(#p-cover-l)"),
-    "difficult": ("url(#p-diff)", "url(#p-diff-l)"),
-    "impassable": ("url(#p-imp)", "url(#p-imp-l)"),
-    "blocking": (DARK, "#c4c4c4"),
-    "water": ("url(#p-water)", "url(#p-water-l)"),
-    "slippery": ("url(#p-slip)", "url(#p-slip-l)"),
-    "open": (WHITE, WHITE),
-    "obstacle": ("#a3a3a3", "#d4d4d4"),
-    "hazard": ("#cfcfcf", "#ececec"),
-    "gap": (WHITE, WHITE),
-    "shade": ("url(#p-dark)", "url(#p-dark)"),
-}
-
-
-class MapSvg(Svg):
-    def render(self, height, title=None, desc=None):
-        t = Svg.render(self, height, title=title, desc=desc)
-        return t.replace("</defs>", "</defs>\n" + EXTRA_DEFS, 1)
-
-    def vtext(self, x, y, s, size=9, weight=600, anchor="middle", fill=INK):
-        """Text rotated -90 deg about (x, y)."""
-        self.raw('<g transform="rotate(-90 %s %s)">' % (f1(x), f1(y)))
-        self.text(x, y, s, size, weight, anchor, fill)
-        self.raw("</g>")
+NOTE_STD = "Grey dashed = position not fixed by the rules"
+KEY_REF = "Key: FIG-20"
 
 
 # ---------------------------------------------------------------------------------------------
@@ -101,12 +60,10 @@ def source_lines():
 
 
 def scenario_spans():
-    """{key: (heading_line, last_line, climate_no, scenario_no, title)} computed from the manuscript."""
+    """{key: (heading_line, last_line, climate_no, scenario_no, title, climate)} computed from the manuscript."""
     L = source_lines()
     out = {}
-    climates = []
     cur_climate = None
-    start = None
     keys = []
     for i, t in enumerate(L, 1):
         m = re.match(r"^#### Climate (\d+): (.+?) Scenarios\s*$", t)
@@ -115,12 +72,11 @@ def scenario_spans():
         m = re.match(r"^##### Scenario (\d+): (.+?)(?: \[Intro\])?\s*$", t)
         if m and cur_climate:
             keys.append((i, "%s %s" % (cur_climate[1], m.group(1)), cur_climate, int(m.group(1)), m.group(2)))
-    # end of each span: next heading of level <= 5 after the start
     for k, (i, key, cl, n, title) in enumerate(keys):
         end = len(L)
         for j in range(i, len(L)):
             if re.match(r"^#{1,5} ", L[j]):
-                end = j          # 0-based index j == line j+1; last line of span is j
+                end = j
                 break
         out[key] = (i, end, cl[0], n, title, cl[1])
     return out
@@ -156,7 +112,7 @@ def footprint(e):
         xs = [p[0] for p in g]
         ys = [p[1] for p in g]
         return ("r", min(xs), min(ys), max(xs), max(ys))
-    if k == "marker":
+    if k in ("marker", "hero"):
         return ("c", e["at"][0], e["at"][1], 0.5)
     if k == "monster":
         x, y = e["at"]
@@ -198,6 +154,12 @@ def inside(inner, outer):
     return s[1] - 1e-9 <= c[0] <= s[3] + 1e-9 and s[2] - 1e-9 <= c[1] <= s[4] + 1e-9
 
 
+def centre_shape(s):
+    if s[0] == "c":
+        return (s[1], s[2])
+    return ((s[1] + s[3]) / 2.0, (s[2] + s[4]) / 2.0)
+
+
 def closest_points(a, b):
     """Closest points between two footprints (inches), used to draw dimension lines."""
     ca, cb = centre_shape(a), centre_shape(b)
@@ -207,56 +169,67 @@ def closest_points(a, b):
             d = math.hypot(p[0] - s[1], p[1] - s[2]) or 1e-9
             return (s[1] + (p[0] - s[1]) / d * s[3], s[2] + (p[1] - s[2]) / d * s[3])
         return (min(max(p[0], s[1]), s[3]), min(max(p[1], s[2]), s[4]))
-    # iterate twice: point on a nearest to b, then point on b nearest to that
     pa = toward(a, cb)
     pb = toward(b, pa)
     pa = toward(a, pb)
     return pa, pb
 
 
-def centre_shape(s):
-    if s[0] == "c":
-        return (s[1], s[2])
-    return ((s[1] + s[3]) / 2.0, (s[2] + s[4]) / 2.0)
-
-
 # ---------------------------------------------------------------------------------------------
-# drawing
+# the map context: board frame, occupancy and labels
 # ---------------------------------------------------------------------------------------------
-def X(x):
-    return BX + x * SC
-
-
-def Y(y):
-    return BY + y * SC
+DIRS = {"r": 0, "d": 45, "b": 90, "e": 135, "l": 180, "v": 225, "t": 270, "u": 315, "R": 0, "L": 180}
 
 
 class Ctx:
-    def __init__(self, sp):
+    def __init__(self, sp, width=COL_W, bx=None, by=14.0):
         self.sp = sp
-        self.s = MapSvg(COL_W)
-        self.occ = []          # occupied rects (x0, y0, x1, y1) in pt
-        self.labels = []       # deferred labels
+        self.n = sp.get("board_in", 36)
+        self.sc = sp.get("sc", 6.0)
+        self.bs = self.n * self.sc
+        self.width = width
+        self.bx = (width - self.bs) / 2.0 if bx is None else bx
+        self.by = by
+        self.s = MapSvg(width)
+        self.s.add_def('<clipPath id="bclip"><rect x="%s" y="%s" width="%s" height="%s"/></clipPath>' % (
+            f1(self.bx), f1(self.by), f1(self.bs), f1(self.bs)))
+        self.occ = []          # hard occupied rects (x0, y0, x1, y1, owner)
+        self.soft = []         # outlines a label should avoid but may cross
+        self.labels = []
         self.inches = []       # (printed text, element id) for audit
         self.warn = []
         self.els = {e["id"]: e for e in sp["elements"]}
         self.illus = False
         self.tokens = []
-        self.bs = 36 * SC
+        self.notes = []
+        self.placed = []       # (element id, text, ring distance, hard overlap, soft overlap) per placed label
+
+    def X(self, x):
+        return self.bx + x * self.sc
+
+    def Y(self, y):
+        return self.by + y * self.sc
 
     # ---- occupancy ----
-    def occupy(self, x0, y0, x1, y1):
-        self.occ.append((min(x0, x1), min(y0, y1), max(x0, x1), max(y0, y1)))
+    def occupy(self, x0, y0, x1, y1, owner=None):
+        self.occ.append((min(x0, x1), min(y0, y1), max(x0, x1), max(y0, y1), owner))
 
-    def free(self, r, ignore=0):
-        for o in self.occ:
-            if r[0] < o[2] and r[2] > o[0] and r[1] < o[3] and r[3] > o[1]:
-                return False
-        return True
+    def outline_soft(self, pts, closed=True, step=3.0):
+        n = len(pts)
+        rng = range(n) if closed else range(n - 1)
+        for i in rng:
+            (x1, y1), (x2, y2) = pts[i], pts[(i + 1) % n]
+            L = math.hypot(x2 - x1, y2 - y1)
+            k = max(1, int(L // step))
+            for j in range(k + 1):
+                qx, qy = x1 + (x2 - x1) * j / k, y1 + (y2 - y1) * j / k
+                self.soft.append((qx - 1.4, qy - 1.4, qx + 1.4, qy + 1.4, None))
 
-    def overlap_area(self, r):
+    def overlap(self, r, lst, owner=None):
         a = 0.0
-        for o in self.occ:
+        for o in lst:
+            if owner is not None and o[4] == owner:
+                continue
             w = min(r[2], o[2]) - max(r[0], o[0])
             h = min(r[3], o[3]) - max(r[1], o[1])
             if w > 0 and h > 0:
@@ -264,120 +237,85 @@ class Ctx:
         return a
 
     # ---- labels ----
-    def add_label(self, eid, text, ax, ay, cr, pref="rltb", fixed=None, weight=600, leader=True):
+    def add_label(self, eid, text, ax, ay, cr, pref="rltb", fixed=None, weight=600, leader=True, own=None):
         self.labels.append(dict(eid=eid, text=text, ax=ax, ay=ay, cr=cr, pref=pref, fixed=fixed, weight=weight,
-                                leader=leader))
+                                leader=leader, own=own))
         for v in inch_tokens(text):
             self.inches.append((v + '"', eid))
 
     def place_labels(self):
         s = self.s
-        bx0, by0, bx1, by1 = BX + 1, BY + 1, BX + self.bs - 1, BY + self.bs - 1
-        # fixed-position labels first, then others in order
+        bx0, by0, bx1, by1 = self.bx + 1, self.by + 1, self.bx + self.bs - 1, self.by + self.bs - 1
         order = sorted(self.labels, key=lambda l: 0 if l["fixed"] else 1)
         for lb in order:
             lines = lb["text"].split("\n")
-            w = max(tw(t, 9, lb["weight"]) for t in lines) + 3.2
-            h = len(lines) * 10 + 1.2
-            cands = []
+            w = max(tw(t, 9, lb["weight"]) for t in lines) + 3.4
+            h = len(lines) * 10 + 1.6
             ax, ay, cr = lb["ax"], lb["ay"], lb["cr"]
-            for ring in (2.0, 11.0, 20.0):
-                d = cr + ring
-                pos = {
-                    "r": (ax + d, ay - h / 2), "l": (ax - d - w, ay - h / 2),
-                    "t": (ax - w / 2, ay - d - h), "b": (ax - w / 2, ay + d),
-                    "R": (ax + d, ay - h - 1), "L": (ax - d - w, ay - h - 1),
-                    "u": (ax + d * 0.7, ay - d * 0.7 - h), "v": (ax - d * 0.7 - w, ay - d * 0.7 - h),
-                    "d": (ax + d * 0.7, ay + d * 0.7), "e": (ax - d * 0.7 - w, ay + d * 0.7),
-                }
-                prefs = lb["pref"] + "".join(c for c in "rltbuvde" if c not in lb["pref"])
-                for c in prefs:
-                    if c in pos:
-                        cands.append(pos[c])
-            if lb["fixed"] is not None:
-                cands = [(lb["ax"] - w / 2, lb["ay"] - h / 2)] + cands if lb["fixed"] == "c" else [lb["fixed"]] + cands
+            own = lb["own"]
+            cands = []        # (x0, y0, extra_penalty, dist)
+            fx = lb["fixed"]
+            if fx == "c":
+                cands.append((ax - w / 2, ay - h / 2, -50.0, 0))
+            elif fx is not None:
+                cands.append((fx[0], fx[1], -50.0, 0))
+            prefs = [DIRS[c] for c in lb["pref"] if c in DIRS] or [0, 90, 180, 270]
+            for k in range(16):
+                th = k * 22.5
+                dev = min(min(abs((th - p + 180) % 360 - 180) for p in prefs[i:i + 1]) / 45.0 * 1.4 + i * 0.7
+                          for i in range(len(prefs)))
+                if th not in prefs:
+                    dev += 0.8
+                c_, s_ = math.cos(math.radians(th)), math.sin(math.radians(th))
+                ext = abs(c_) * w / 2 + abs(s_) * h / 2
+                for D in (1.5, 4.5, 9.0, 15.0, 23.0, 33.0):
+                    d = cr + D + ext
+                    cands.append((ax + c_ * d - w / 2, ay + s_ * d - h / 2, dev + D * 0.3, D))
             best = None
-            for (x0, y0) in cands:
+            for (x0, y0, pen, D) in cands:
                 r = (x0, y0, x0 + w, y0 + h)
                 if r[0] < bx0 or r[2] > bx1 or r[1] < by0 or r[3] > by1:
                     continue
-                a = self.overlap_area(r)
-                if a == 0:
-                    best = (x0, y0, 0)
-                    break
-                if best is None or a < best[2]:
-                    best = (x0, y0, a)
+                hard = self.overlap(r, self.occ, own)
+                soft = self.overlap(r, self.soft, own)
+                score = hard * 40 + soft * 0.3 + pen
+                if best is None or score < best[0]:
+                    best = (score, x0, y0, hard, D, soft)
             if best is None:
                 x0, y0 = ax - w / 2, ay - h / 2
                 x0 = min(max(x0, bx0), bx1 - w)
                 y0 = min(max(y0, by0), by1 - h)
-                best = (x0, y0, 9e9)
-            if best[2] > 0:
-                self.warn.append("label overlap %s %r (%.0f pt2)" % (lb["eid"], lb["text"], best[2]))
-            x0, y0 = best[0], best[1]
+                best = (9e9, x0, y0, 9e9, 0, 0)
+            _, x0, y0, hard, D, soft_ = best
+            self.placed.append((lb["eid"], lb["text"], D, hard, soft_))
+            if hard > 0:
+                self.warn.append("label overlap %s %r (%.0f pt2)" % (lb["eid"], lb["text"], hard))
             if cr > 0 and lb.get("leader", True):
-                # nearest point of the label box to the anchor; draw a leader when the label sits away from its glyph
                 nx_ = min(max(ax, x0), x0 + w)
                 ny_ = min(max(ay, y0), y0 + h)
                 dd = math.hypot(nx_ - ax, ny_ - ay)
                 if dd > cr + 5:
                     ang_ = math.atan2(ny_ - ay, nx_ - ax)
-                    s.line(ax + math.cos(ang_) * (cr + 0.5), ay + math.sin(ang_) * (cr + 0.5), nx_, ny_, "#555", 0.6)
-            s.rect(x0, y0, w, h, fill=WHITE, stroke=None)
+                    K.leader(s, ax + math.cos(ang_) * (cr + 0.5), ay + math.sin(ang_) * (cr + 0.5), nx_, ny_)
             for i, t in enumerate(lines):
-                s.text(x0 + 1.6, y0 + 8.4 + i * 10, t, 9, lb["weight"])
+                K.pill_label(s, x0 + 1.7, y0 + 8.6 + i * 10, t, 9, lb["weight"], "start")
             self.occupy(x0, y0, x0 + w, y0 + h)
-
-
-def _tfill(terrain, open_):
-    if terrain == "open":
-        return "none"
-    if terrain == "gap":
-        return WHITE
-    a, b = TER[terrain]
-    return b if open_ else a
-
-
-def draw_board(c):
-    s = c.s
-    s.rect(BX, BY, c.bs, c.bs, fill=WHITE, stroke=INK, sw=1.3)
 
 
 def is_open(e):
     return e.get("draw") == "open" or (e["status"] == "ILLUSTRATIVE" and e.get("draw") != "fixed")
 
 
+# ---------------------------------------------------------------------------------------------
+# elements
+# ---------------------------------------------------------------------------------------------
 def draw_zone(c, e):
     s = c.s
     x0, y0, x1, y1 = e["rect"]
-    s.rect(X(x0), Y(y0), (x1 - x0) * SC, (y1 - y0) * SC, fill=PALE, stroke=INK, sw=0.9, dash="3.2 2.2")
     party = e["party"]
-    # edge band along the board edge(s) the zone is measured from (strip zones: the long edge only)
-    bw = 3.2
-    bands = []
-    strip = min(x1 - x0, y1 - y0) <= 8.01 and max(x1 - x0, y1 - y0) >= 20
-    horiz = (x1 - x0) > (y1 - y0)
-    if x0 <= 0 and not (strip and horiz):
-        bands.append((X(x0), Y(y0), bw, (y1 - y0) * SC))
-    if x1 >= 36 and not (strip and horiz):
-        bands.append((X(x1) - bw, Y(y0), bw, (y1 - y0) * SC))
-    if y0 <= 0 and not (strip and not horiz):
-        bands.append((X(x0), Y(y0), (x1 - x0) * SC, bw))
-    if y1 >= 36 and not (strip and not horiz):
-        bands.append((X(x0), Y(y1) - bw, (x1 - x0) * SC, bw))
-    for (bx_, by_, bw_, bh_) in bands:
-        if party == "A":
-            s.rect(bx_, by_, bw_, bh_, fill=INK, stroke=None)
-        elif party == "AB":
-            s.rect(bx_, by_, bw_, bh_, fill=INK, stroke=None)
-            if bw_ > bh_:
-                s.line(bx_, by_ + bh_ / 2, bx_ + bw_, by_ + bh_ / 2, WHITE, 1.0, dash="3 3")
-            else:
-                s.line(bx_ + bw_ / 2, by_, bx_ + bw_ / 2, by_ + bh_, WHITE, 1.0, dash="3 3")
-        else:
-            s.rect(bx_, by_, bw_, bh_, fill=WHITE, stroke=INK, sw=0.8)
-    c.occupy(X(x0), Y(y0), X(x1), Y(y1)) if False else None
-    # hero tokens
+    open_ = is_open(e) if e["status"] == "ILLUSTRATIVE" else False
+    sides = [b[0] for b in K.band_sides(e["rect"], c.n)]
+    K.zone(s, c.X(x0), c.Y(y0), (x1 - x0) * c.sc, (y1 - y0) * c.sc, party, sides, open_)
     w, h = x1 - x0, y1 - y0
     toks = e.get("tokens")
     if toks is None and party == "AB":
@@ -393,106 +331,103 @@ def draw_zone(c, e):
     for tk in toks:
         tx, ty = tk[0], tk[1]
         tp = tk[2] if len(tk) > 2 else party
-        c.tokens.append((tp, X(tx), Y(ty)))
-        c.occupy(X(tx) - 5, Y(ty) - 5, X(tx) + 5, Y(ty) + 5)
-    # depth dimension
+        c.tokens.append((tp, c.X(tx), c.Y(ty)))
+        c.occupy(c.X(tx) - 5, c.Y(ty) - 5, c.X(tx) + 5, c.Y(ty) + 5)
     if e.get("depth"):
         at = e.get("dim_at")
         if abs(w - h) < 0.01:     # corner zone: horizontal dimension, label gives both sides
             yy = at if at is not None else y0 + h * 0.72
-            dim_line(c, e["id"], X(x0), Y(yy), X(x1), Y(yy), e["depth"], vertical=False)
+            dim_line(c, e["id"], c.X(x0), c.Y(yy), c.X(x1), c.Y(yy), e["depth"])
         elif w < h:       # vertical strip: depth is horizontal
             yy = at if at is not None else y0 + h * 0.3
-            xa, xb = x0, x1
-            dim_line(c, e["id"], X(xa), Y(yy), X(xb), Y(yy), e["depth"], vertical=False)
+            dim_line(c, e["id"], c.X(x0), c.Y(yy), c.X(x1), c.Y(yy), e["depth"])
         else:
             xx = at if at is not None else x0 + w * 0.3
-            dim_line(c, e["id"], X(xx), Y(y0), X(xx), Y(y1), e["depth"], vertical=True)
+            dim_line(c, e["id"], c.X(xx), c.Y(y0), c.X(xx), c.Y(y1), e["depth"])
 
 
-def dim_line(c, eid, x1, y1, x2, y2, label, vertical=None, ticks=3.0, sw=0.8, lp="c"):
+def dim_line(c, eid, x1, y1, x2, y2, label, ticks=3.0, sw=0.8, lp="c", off=0.0):
     s = c.s
-    s.line(x1, y1, x2, y2, INK, sw)
+    if off:
+        ox, oy = K.dim_offset(s, x1, y1, x2, y2, off * c.sc, ticks, sw)
+        x1, y1, x2, y2 = x1 + ox, y1 + oy, x2 + ox, y2 + oy
+    else:
+        K.dim(s, x1, y1, x2, y2, ticks, sw)
     ang = math.atan2(y2 - y1, x2 - x1)
-    nx, ny = -math.sin(ang), math.cos(ang)
-    for (px_, py_) in ((x1, y1), (x2, y2)):
-        s.line(px_ - nx * ticks, py_ - ny * ticks, px_ + nx * ticks, py_ + ny * ticks, INK, sw)
     mx, my = (x1 + x2) / 2.0, (y1 + y2) / 2.0
     length = math.hypot(x2 - x1, y2 - y1)
     lines = label.split("\n")
     wlab = max(tw(t, 9, 600) for t in lines)
+    own = "dim%d" % len(c.labels)
     if lp == "c" and length >= wlab + 8 and abs(math.sin(ang)) < 0.3:
-        c.add_label(eid, label, mx, my, 0, fixed="c")
+        c.add_label(eid, label, mx, my, 0, fixed="c", own=own)
     else:
-        # place beside the line
-        c.add_label(eid, label, mx, my, 2.5 + (0 if abs(math.sin(ang)) > 0.7 else 0), pref="tbrl" if abs(math.sin(ang)) < 0.5 else "rlbt")
-    # reserve small boxes along the line so other labels avoid sitting on the dimension
+        c.add_label(eid, label, mx, my, 2.5, pref="tbrl" if abs(math.sin(ang)) < 0.5 else "rlbt", own=own)
     n = max(1, int(length // 5))
     for i in range(n + 1):
         qx, qy = x1 + (x2 - x1) * i / n, y1 + (y2 - y1) * i / n
-        c.occupy(qx - 1.6, qy - 1.6, qx + 1.6, qy + 1.6)
+        c.soft.append((qx - 1.6, qy - 1.6, qx + 1.6, qy + 1.6, own))
 
 
-def feat_path(e):
-    """SVG geometry helper: returns (kind, params) in pt."""
+def feat_path(c, e):
     g = e["g"]
     if e["shape"] == "rect":
-        return "rect", (X(g[0]), Y(g[1]), (g[2] - g[0]) * SC, (g[3] - g[1]) * SC)
+        return "rect", (c.X(g[0]), c.Y(g[1]), (g[2] - g[0]) * c.sc, (g[3] - g[1]) * c.sc)
     if e["shape"] == "circle":
-        return "circle", (X(g[0]), Y(g[1]), g[2] * SC)
+        return "circle", (c.X(g[0]), c.Y(g[1]), g[2] * c.sc)
     if e["shape"] == "line":
-        return "line", [(X(p[0]), Y(p[1])) for p in g]
-    return "poly", [(X(p[0]), Y(p[1])) for p in g]
+        return "line", [(c.X(p[0]), c.Y(p[1])) for p in g]
+    return "poly", [(c.X(p[0]), c.Y(p[1])) for p in g]
 
 
 def draw_feature(c, e):
     s = c.s
     open_ = is_open(e)
     t = e.get("terrain", "open")
-    fill = _tfill(t, open_)
-    stroke = GREY if open_ else INK
-    dash = "3 2" if open_ else None
     sw = e.get("sw", 0.9)
-    if e.get("outline") == "none":
-        stroke = None
-    kind, p = feat_path(e)
+    outline = e.get("outline") != "none"
+    kind, p = feat_path(c, e)
     if kind == "rect":
-        s.rect(p[0], p[1], p[2], p[3], fill=fill, stroke=stroke, sw=sw, dash=dash)
+        K.terrain_shape(s, t, "rect", p, open_, sw, outline)
         bb = (p[0], p[1], p[0] + p[2], p[1] + p[3])
+        c.outline_soft([(bb[0], bb[1]), (bb[2], bb[1]), (bb[2], bb[3]), (bb[0], bb[3])])
     elif kind == "circle":
-        s.circle(p[0], p[1], p[2], fill=fill, stroke=stroke, sw=sw, dash=dash)
+        K.terrain_shape(s, t, "circle", p, open_, sw, outline)
         bb = (p[0] - p[2], p[1] - p[2], p[0] + p[2], p[1] + p[2])
+        c.outline_soft([(p[0] + p[2] * math.cos(a * math.pi / 12), p[1] + p[2] * math.sin(a * math.pi / 12)) for a in range(24)])
     elif kind == "line":
-        s.polyline(p, INK, e.get("sw", 2.4))
+        K.wall_line(s, p, e.get("sw", 2.4))
         xs = [q[0] for q in p]
         ys = [q[1] for q in p]
         bb = (min(xs), min(ys), max(xs), max(ys))
+        c.outline_soft(p, closed=False)
     else:
-        a = ' fill="%s"' % fill
-        if stroke:
-            a += ' stroke="%s" stroke-width="%s" stroke-linejoin="round"' % (stroke, f1(sw))
-        if dash:
-            a += ' stroke-dasharray="%s"' % dash
-        s.raw('<polygon points="%s"%s/>' % (" ".join("%s,%s" % (f1(x), f1(y)) for x, y in p), a))
+        K.terrain_shape(s, t, "poly", p, open_, sw, outline)
         xs = [q[0] for q in p]
         ys = [q[1] for q in p]
         bb = (min(xs), min(ys), max(xs), max(ys))
+        c.outline_soft(p)
     e["_bb"] = bb
     if e.get("label"):
         cx, cy = (bb[0] + bb[2]) / 2, (bb[1] + bb[3]) / 2
         lp = e.get("lp", "c")
         if lp == "i":
             lines_ = e["label"].split("\n")
-            c.add_label(e["id"], e["label"], cx, cy, 0, pref="t", fixed=(bb[0] + 1.5, bb[1] + 1.5), weight=600,
-                        leader=False)
-            return_ = True
-        elif e.get("lat"):
-            cx, cy = X(e["lat"][0]), Y(e["lat"][1])
-        elif lp not in ("c",) and (bb[2] - bb[0]) < 40 and (bb[3] - bb[1]) < 40:
+            wl = max(tw(t_, 9, 600) for t_ in lines_) + 3.4
+            hl_ = len(lines_) * 10 + 1.6
+            if wl <= (bb[2] - bb[0]) - 1.5 and hl_ <= (bb[3] - bb[1]) - 1.5:
+                c.add_label(e["id"], e["label"], cx, cy, 0, pref="t", fixed=(bb[0] + 1.5, bb[1] + 1.5), weight=600, leader=False)
+                return
+            lp = "r"
+        if e.get("lat"):
+            c.add_label(e["id"], e["label"], c.X(e["lat"][0]), c.Y(e["lat"][1]), 0, pref=lp if lp != "c" else "rltb",
+                        fixed="c" if lp == "c" else None, weight=600, leader=False)
+            return
+        if lp != "c" and (bb[2] - bb[0]) < 40 and (bb[3] - bb[1]) < 40:
             half = max(bb[2] - bb[0], bb[3] - bb[1]) / 2.0
             c.add_label(e["id"], e["label"], cx, cy, half, pref=lp + "rltb", weight=600, leader=True)
-            lp = "done"
-        elif lp == "t":
+            return
+        if lp == "t":
             cy = bb[1]
         elif lp == "b":
             cy = bb[3]
@@ -500,69 +435,46 @@ def draw_feature(c, e):
             cx = bb[0]
         elif lp == "r":
             cx = bb[2]
-        if lp not in ("i", "done"):
-            c.add_label(e["id"], e["label"], cx, cy, 0, pref=lp, fixed="c" if lp == "c" else None, weight=600,
-                        leader=False)
-
-
-def glyph_marker(s, g, x, y, open_=False, r=5.2):
-    if g == "chest":
-        if open_:
-            s.rect(x - r * 0.85, y - r * 0.65, r * 1.7, r * 1.3, fill=WHITE, stroke=GREY, sw=1.0, dash="2.4 1.6")
-            s.line(x - r * 0.85, y - r * 0.1, x + r * 0.85, y - r * 0.1, GREY, 0.8)
-        else:
-            token(s, "chest", x, y, r)
-    elif g == "obj":
-        if open_:
-            s.polygon([(x, y - r), (x + r, y), (x, y + r), (x - r, y)], fill=WHITE, stroke=GREY, sw=1.1)
-            s.line(x - r * 0.5, y, x + r * 0.5, y, GREY, 0.9)
-            s.line(x, y - r * 0.5, x, y + r * 0.5, GREY, 0.9)
-        else:
-            token(s, "obj", x, y, r)
-    elif g == "haz":
-        s.rect(x - r * 0.8, y - r * 0.8, r * 1.6, r * 1.6, fill="#c4c4c4" if not open_ else WHITE,
-               stroke=INK if not open_ else GREY, sw=1.0, dash="2.4 1.6" if open_ else None)
-        s.text(x, y + 3.4, "!", 9, 700, "middle", INK if not open_ else GREY)
-    elif g == "mk":
-        s.rect(x - r * 0.75, y - r * 0.75, r * 1.5, r * 1.5, fill=WHITE, stroke=INK if not open_ else GREY, sw=1.5,
-               dash="2.4 1.6" if open_ else None)
-        s.circle(x, y, 1.3, fill=INK if not open_ else GREY, stroke=None)
-    else:
-        raise ValueError(g)
-
-
-def glyph_monster(s, sz, x, y, open_=False):
-    """Returns the half-size (pt) of the drawn glyph.  Large and Huge are drawn at their 2"x2" / 3"x3" footprints."""
-    if sz in ("M", "S"):
-        r = 4.6
-        if open_:
-            s.polygon(hexpts(x, y, r * 1.08), fill="url(#p-mon-l)", stroke=GREY, sw=1.0)
-        else:
-            token(s, "M", x, y, r)
-        return r * 1.1
-    half = {"L": 1.0, "H": 1.5}[sz] * SC
-    if open_:
-        s.rect(x - half, y - half, 2 * half, 2 * half, fill="url(#p-mon-l)", stroke=GREY, sw=1.4, dash="3 2")
-    else:
-        s.rect(x - half, y - half, 2 * half, 2 * half, fill=PAT["monster"], stroke=INK, sw=1.4)
-    return half
+        c.add_label(e["id"], e["label"], cx, cy, 0, pref=lp, fixed="c" if lp == "c" else None, weight=600, leader=False)
 
 
 def draw_marker(c, e):
-    x, y = X(e["at"][0]), Y(e["at"][1])
+    x, y = c.X(e["at"][0]), c.Y(e["at"][1])
     r = 5.2
-    glyph_marker(c.s, e["glyph"], x, y, is_open(e), r)
+    if e.get("on"):
+        K.on_piece(c.s, e["on"], x, y, r)
+    K.marker(c.s, e["glyph"], x, y, is_open(e), r)
     c.occupy(x - r - 0.5, y - r - 0.5, x + r + 0.5, y + r + 0.5)
     if e.get("label"):
         c.add_label(e["id"], e["label"], x, y, r, pref=e.get("lp", "rltb"))
 
 
 def draw_monster(c, e):
-    x, y = X(e["at"][0]), Y(e["at"][1])
-    half = glyph_monster(c.s, e.get("sz", "M"), x, y, is_open(e))
+    x, y = c.X(e["at"][0]), c.Y(e["at"][1])
+    half = K.monster(c.s, e.get("sz", "M"), x, y, is_open(e), c.sc)
     c.occupy(x - half - 0.5, y - half - 0.5, x + half + 0.5, y + half + 0.5)
     if e.get("label"):
         c.add_label(e["id"], e["label"], x, y, half, pref=e.get("lp", "rltb"))
+
+
+def draw_hero(c, e):
+    x, y = c.X(e["at"][0]), c.Y(e["at"][1])
+    r = 4.8
+    K.hero(c.s, e["party"], x, y, r)
+    c.occupy(x - r - 0.5, y - r - 0.5, x + r + 0.5, y + r + 0.5)
+    if e.get("label"):
+        c.add_label(e["id"], e["label"], x, y, r, pref=e.get("lp", "bltr"))
+
+
+def draw_unres(c, e):
+    """Element the text does not place: always a note under the map with the ? tag; on the board only if `at` is given."""
+    if e.get("at"):
+        x, y = c.X(e["at"][0]), c.Y(e["at"][1])
+        K.unresolved(c.s, x, y)
+        c.occupy(x - 6, y - 6, x + 6, y + 6)
+        if e.get("label"):
+            c.add_label(e["id"], e["label"], x, y, 6, pref=e.get("lp", "rltb"))
+    c.notes.append(e["note"])
 
 
 def ray_point(shape, d, ang_deg):
@@ -580,21 +492,19 @@ def ray_point(shape, d, ang_deg):
     return cx + ca * hi, cy + sa * hi
 
 
-def outline_within(c, sh, d, dash="3 2.5"):
+def outline_within(c, sh, d):
     """Dashed outline at distance d (inches, closest point) around a footprint."""
     s = c.s
     if sh[0] == "c":
-        s.circle(X(sh[1]), Y(sh[2]), (sh[3] + d) * SC, fill="none", stroke=INK, sw=0.9, dash=dash)
+        K.ring(s, c.X(sh[1]), c.Y(sh[2]), (sh[3] + d) * c.sc, clip="bclip")
         return
     x0, y0, x1, y1 = sh[1:]
-    r = d * SC
-    X0, Y0, X1, Y1 = X(x0), Y(y0), X(x1), Y(y1)
+    r = d * c.sc
+    X0, Y0, X1, Y1 = c.X(x0), c.Y(y0), c.X(x1), c.Y(y1)
     path = ("M%s %s H%s A%s %s 0 0 1 %s %s V%s A%s %s 0 0 1 %s %s H%s A%s %s 0 0 1 %s %s V%s A%s %s 0 0 1 %s %s Z" % (
         f1(X0), f1(Y0 - r), f1(X1), f1(r), f1(r), f1(X1 + r), f1(Y0), f1(Y1), f1(r), f1(r), f1(X1), f1(Y1 + r),
         f1(X0), f1(r), f1(r), f1(X0 - r), f1(Y1), f1(Y0), f1(r), f1(r), f1(X0), f1(Y0 - r)))
-    s.raw('<g clip-path="url(#bclip)">')
-    s.path(path, fill="none", stroke=INK, sw=0.9, dash=dash)
-    s.raw("</g>")
+    K.ring_path(s, path, clip="bclip")
 
 
 def target_shape(c, e, to):
@@ -603,15 +513,19 @@ def target_shape(c, e, to):
     return footprint(c.els[to])
 
 
+def _ring_soft(c, cx, cy, r):
+    c.outline_soft([(cx + r * math.cos(a * math.pi / 18), cy + r * math.sin(a * math.pi / 18)) for a in range(36)], step=5.0)
+
+
 def draw_anno(c, e, a):
-    """Annotations (drawn constraint geometry).  Each is also asserted in check_map()."""
+    """Annotations (drawn constraint geometry).  Each is also asserted in check_one()."""
     s = c.s
     t = a["t"]
     eid = e["id"]
     me = footprint(e)
     if a.get("hide"):
         return
-    if t == "ring":                       # radius ring about a centre/origin point (stated "from its centre")
+    if t == "ring":                       # radius ring about a centre/origin point
         ctr = a.get("centre")
         if isinstance(ctr, list):
             cx, cy = ctr
@@ -619,13 +533,12 @@ def draw_anno(c, e, a):
             cx, cy = centre(e)
         else:
             cx, cy = centre(c.els[ctr])
-        s.raw('<g clip-path="url(#bclip)">')
-        s.circle(X(cx), Y(cy), a["r"] * SC, fill="none", stroke=INK, sw=0.9, dash="3 2.5")
-        s.raw("</g>")
+        K.ring(s, c.X(cx), c.Y(cy), a["r"] * c.sc, clip="bclip")
+        _ring_soft(c, c.X(cx), c.Y(cy), a["r"] * c.sc)
         if a.get("label"):
             ang = math.radians(a.get("ang", -45))
-            lx, ly = X(cx) + math.cos(ang) * a["r"] * SC, Y(cy) + math.sin(ang) * a["r"] * SC
-            c.add_label(eid, a["label"], lx, ly, 0, pref=a.get("lp", "uvde"))
+            lx, ly = c.X(cx) + math.cos(ang) * a["r"] * c.sc, c.Y(cy) + math.sin(ang) * a["r"] * c.sc
+            c.add_label(eid, a["label"], lx, ly, 0, pref=a.get("lp", "uvde"), fixed="c")
     elif t == "rel":                      # "within d of" / "at least d from" the target: ring outline or ruler
         tsh = target_shape(c, e, a["of"])
         d = a["d"]
@@ -633,18 +546,15 @@ def draw_anno(c, e, a):
             outline_within(c, tsh, d)
             if a.get("label"):
                 px_, py_ = ray_point(tsh, d, a.get("ang", -45))
-                c.add_label(eid, a["label"], X(px_), Y(py_), 0, pref=a.get("lp", "uvde"))
+                c.add_label(eid, a["label"], c.X(px_), c.Y(py_), 0, pref=a.get("lp", "uvde"), fixed="c")
         else:                              # ruler: a segment of exactly d from the reference toward this element
             p1, p2 = closest_points(tsh, me)
             ang = math.atan2(p2[1] - p1[1], p2[0] - p1[0]) if p1 != p2 else math.radians(a.get("ang", 0))
             if "ang" in a:
                 ang = math.radians(a["ang"])
-                cs_ = centre_shape(tsh)
-                # start on the reference boundary along that direction
                 p1 = ray_point(tsh, 0.0, a["ang"])
             q2 = (p1[0] + math.cos(ang) * d, p1[1] + math.sin(ang) * d)
-            dim_line(c, eid, X(p1[0]), Y(p1[1]), X(q2[0]), Y(q2[1]), a["label"], lp=a.get("lp", "c"),
-                     ticks=2.6, sw=0.8)
+            dim_line(c, eid, c.X(p1[0]), c.Y(p1[1]), c.X(q2[0]), c.Y(q2[1]), a["label"], lp=a.get("lp", "c"), ticks=2.6, off=a.get("off", 0))
     elif t == "edgein":                   # distance d measured inward from the boundary of a circular feature
         tsh = footprint(c.els[a["of"]])
         cx, cy = tsh[1], tsh[2]
@@ -652,17 +562,19 @@ def draw_anno(c, e, a):
         ang = math.atan2(my - cy, mx - cx)
         p1 = (cx + math.cos(ang) * tsh[3], cy + math.sin(ang) * tsh[3])
         q2 = (p1[0] - math.cos(ang) * a["d"], p1[1] - math.sin(ang) * a["d"])
-        dim_line(c, eid, X(p1[0]), Y(p1[1]), X(q2[0]), Y(q2[1]), a["label"], lp=a.get("lp", "c"), ticks=2.6, sw=0.8)
+        dim_line(c, eid, c.X(p1[0]), c.Y(p1[1]), c.X(q2[0]), c.Y(q2[1]), a["label"], lp=a.get("lp", "c"), ticks=2.6, off=a.get("off", 0))
     elif t == "pdim":                     # dimension between two Hero footprints (1" tokens) given as points
         pa = ("c", a["p"][0], a["p"][1], 0.5)
         pb = ("c", a["q"][0], a["q"][1], 0.5)
         p1, p2 = closest_points(pa, pb)
-        dim_line(c, eid, X(p1[0]), Y(p1[1]), X(p2[0]), Y(p2[1]), a["label"], lp=a.get("lp", "c"), ticks=2.6)
+        dim_line(c, eid, c.X(p1[0]), c.Y(p1[1]), c.X(p2[0]), c.Y(p2[1]), a["label"], lp=a.get("lp", "c"), ticks=2.6, off=a.get("off", 0))
+    elif t == "cdim":                     # dimension between two points (centre to centre)
+        dim_line(c, eid, c.X(a["p"][0]), c.Y(a["p"][1]), c.X(a["q"][0]), c.Y(a["q"][1]), a["label"], lp=a.get("lp", "c"), ticks=2.6, off=a.get("off", 0))
     elif t == "dim":                      # dimension between closest points of two things (the actual drawn gap)
         tsh = target_shape(c, e, a["to"])
         p1, p2 = closest_points(me, tsh)
-        dim_line(c, eid, X(p1[0]), Y(p1[1]), X(p2[0]), Y(p2[1]), a["label"], lp=a.get("lp", "c"))
-    elif t in ("inside", "adj"):
+        dim_line(c, eid, c.X(p1[0]), c.Y(p1[1]), c.X(p2[0]), c.Y(p2[1]), a["label"], lp=a.get("lp", "c"), off=a.get("off", 0))
+    elif t in ("inside", "adj", "cring"):
         pass
     else:
         raise ValueError(t)
@@ -673,76 +585,62 @@ def draw_edge(c, e):
     mode = e["mode"]
     edges = e.get("edges") or [e["edge"]]
     L = 15.0
+    n = c.n
     for ed in edges:
-        pos = e.get("pos", 18)
+        pos = e.get("pos", n / 2)
         if ed == "N":
-            x, y, dx, dy = X(pos), Y(0), 0, 1
+            x, y, dx, dy = c.X(pos), c.Y(0), 0, 1
         elif ed == "S":
-            x, y, dx, dy = X(pos), Y(36), 0, -1
+            x, y, dx, dy = c.X(pos), c.Y(n), 0, -1
         elif ed == "W":
-            x, y, dx, dy = X(0), Y(pos), 1, 0
+            x, y, dx, dy = c.X(0), c.Y(pos), 1, 0
         else:
-            x, y, dx, dy = X(36), Y(pos), -1, 0
-        gcol = INK if not is_open(e) else GREY
+            x, y, dx, dy = c.X(n), c.Y(pos), -1, 0
         if mode == "arrive":
             x1, y1, x2, y2 = x, y, x + dx * L, y + dy * L
         else:        # exit: arrow ends at the edge
             x1, y1, x2, y2 = x + dx * L, y + dy * L, x, y
-        if is_open(e):
-            ang = math.atan2(y2 - y1, x2 - x1)
-            s.line(x1, y1, x2 - math.cos(ang) * 7, y2 - math.sin(ang) * 7, GREY, 1.4, dash="3 2")
-            s.polygon([(x2, y2), (x2 - math.cos(ang) * 7 - math.sin(ang) * 3.4, y2 - math.sin(ang) * 7 + math.cos(ang) * 3.4),
-                       (x2 - math.cos(ang) * 7 + math.sin(ang) * 3.4, y2 - math.sin(ang) * 7 - math.cos(ang) * 3.4)], GREY)
-        else:
-            arrow(s, x1, y1, x2, y2, "move", sw=1.8)
+        K.edge_arrow(s, x1, y1, x2, y2, mode, is_open(e))
         c.occupy(min(x1, x2) - 2, min(y1, y2) - 2, max(x1, x2) + 2, max(y1, y2) + 2)
         if e.get("label") and (ed == edges[0] or e.get("label_all")):
             mx, my = (x1 + x2) / 2, (y1 + y2) / 2
             c.add_label(e["id"], e["label"], mx, my, 4, pref=e.get("lp", "rltb"))
 
 
-def draw_edgeband(c, e):
-    """Edge-attached feature (wall band, gateway) drawn as a thin rect in terrain pattern."""
-    draw_feature(c, e)
-
-
 def draw_title(c):
     sp = c.sp
     s = c.s
-    s.text(BX, 10.2, sp["tag"], 9, 700)
-    w = tw(sp["tag"], 9, 700)
-    dims = '36"×36"'
-    s.text(BX + w + 5, 10.2, "·  " + dims, 9, 400)
-    c.inches.append(('36"', "board"))
-    c.inches.append(('36"', "board"))
-    # North arrow (top right)
-    ax = BX + c.bs - 5
-    s.polygon([(ax, 3), (ax - 3.2, 9.5), (ax + 3.2, 9.5)], INK)
-    s.text(ax - 6, 10.2, "N", 9, 700, "end")
-    # E / W / S letters
-    s.text(BX - 4, Y(18) + 3.4, "W", 9, 700, "end")
-    s.text(BX + c.bs + 4, Y(18) + 3.4, "E", 9, 700, "start")
+    n = c.n
+    dims = '%d"×%d"' % (n, n)
+    if sp.get("title_mode", "full") == "full":
+        s.text(c.bx, 10.2, sp["tag"], 9, 700)
+        w = tw(sp["tag"], 9, 700)
+        s.text(c.bx + w + 5, 10.2, "·  " + dims, 9, 400)
+    else:
+        s.text(c.bx, 10.2, dims, 9, 400)
+    c.inches.append(('%d"' % n, "board"))
+    ax = c.bx + c.bs - 5
+    K.compass(s, ax)
+    L = 6 * c.sc
+    K.scale_bar(s, ax - 20.5 - (L + 4 + tw('6"', 9, 400)), 10.2, c.sc, 6, '6"')
+    s.text(c.bx - 4, c.Y(n / 2) + 3.4, "W", 9, 700, "end")
+    s.text(c.bx + c.bs + 4, c.Y(n / 2) + 3.4, "E", 9, 700, "start")
 
 
 def draw_footer(c):
     s = c.s
-    y = BY + c.bs + 13
-    # scale bar (6")
-    x0 = BX
-    s.line(x0, y - 3, x0 + 6 * SC, y - 3, INK, 1.4)
-    s.line(x0, y - 6, x0, y, INK, 1.0)
-    s.line(x0 + 6 * SC, y - 6, x0 + 6 * SC, y, INK, 1.0)
-    s.line(x0 + 3 * SC, y - 5, x0 + 3 * SC, y - 1, INK, 0.8)
-    s.text(x0 + 6 * SC + 4, y, '6" scale', 9, 400)
-    sw_ = tw('6" scale', 9, 400)
-    s.text(x0 + 6 * SC + 4 + sw_ + 12, y, "Schematic", 9, 600)
-    s.text(BX + c.bs, y + 0.0, "", 9)
-    # S letter below board, right end
-    s.text(BX + c.bs + 4, BY + c.bs + 9, "S", 9, 700, "start")
-    y += 12.5
-    for ln in c.foot_lines():
-        for sub in wrap(ln, COL_W - 2 * 6, 9, 400):
+    s.text(c.bx + c.bs + 4, c.by + c.bs + 9, "S", 9, 700, "start")
+    y = c.by + c.bs + 11
+    fw = c.width - 24
+    for ln in foot_lines_impl(c):
+        for sub in wrap(ln, fw, 9, 400):
             s.text(6, y, sub, 9, 400)
+            y += 10.4
+    for note in c.notes:
+        K.unresolved(s, 6 + 6.2, y - 3)
+        lines = wrap(note, fw - 6, 9, 400)
+        for sub in lines:
+            s.text(6 + 16, y, sub, 9, 400)
             y += 10.4
     return y
 
@@ -751,7 +649,9 @@ def foot_lines_impl(c):
     out = []
     sp = c.sp
     if c.illus:
-        out.append(NOTE_STD)
+        out.append(sp.get("std_note", "Schematic. " + NOTE_STD + "."))
+    else:
+        out.append("Schematic.")
     for t in sp.get("foot", []):
         out.append(t["text"])
         for v in inch_tokens(t["text"]):
@@ -759,17 +659,14 @@ def foot_lines_impl(c):
     return out
 
 
-Ctx.foot_lines = foot_lines_impl
-
-
 ORDER = {"zone": 0, "feature": 1, "edgeband": 1, "marker": 3, "monster": 4, "edge": 5}
 
 
-def draw_map(sp):
-    c = Ctx(sp)
+def draw_map(sp, width=COL_W, bx=None, by=14.0):
+    c = Ctx(sp, width, bx, by)
     s = c.s
     c.illus = any(e["status"] == "ILLUSTRATIVE" or e.get("draw") == "open" for e in sp["elements"])
-    draw_board(c)
+    s.rect(c.bx, c.by, c.bs, c.bs, fill=WHITE, stroke=INK, sw=1.3)
     for e in sp["elements"]:
         if e["kind"] == "zone":
             draw_zone(c, e)
@@ -778,10 +675,12 @@ def draw_map(sp):
             draw_feature(c, e)
     for e in sp["elements"]:
         for a in e.get("anno", []):
-            draw_anno(c, e, a) if a["t"] in ("within", "ring") else None
+            if a["t"] == "ring":
+                draw_anno(c, e, a)
     for e in sp["elements"]:
         for a in e.get("anno", []):
-            draw_anno(c, e, a) if a["t"] not in ("within", "ring") else None
+            if a["t"] != "ring":
+                draw_anno(c, e, a)
     for e in sp["elements"]:
         if e["kind"] == "marker":
             draw_marker(c, e)
@@ -792,12 +691,17 @@ def draw_map(sp):
         if e["kind"] == "edge":
             draw_edge(c, e)
     for (party, tx, ty) in c.tokens:
-        token(s, party, tx, ty, 4.4)
+        K.hero(s, party, tx, ty, 4.4)
+    for e in sp["elements"]:
+        if e["kind"] == "hero":
+            draw_hero(c, e)
+    for e in sp["elements"]:
+        if e["kind"] == "unresolved":
+            draw_unres(c, e)
     c.place_labels()
     draw_title(c)
     yend = draw_footer(c)
-    for eid, text in [(l["eid"], l["text"]) for l in c.labels]:
-        pass
+    c.height = yend + 2
     return c, yend + 2
 
 
@@ -818,55 +722,41 @@ def build_fig(key):
     return c.s, h
 
 
+def embed_map(s, sp, x, y, width, bx=None, by=14.0):
+    """Draw an Appendix map into the composite figure svg `s` at offset (x, y); returns (ctx, height)."""
+    c, h = draw_map(sp, width, bx, by)
+    s.raw('<g transform="translate(%s %s)">' % (f1(x), f1(y)))
+    s.body.extend(c.s.body)
+    s.raw("</g>")
+    s.defs.extend(c.s.defs)
+    return c, h
+
+
 # ---------------------------------------------------------------------------------------------
-# FIG-20: legend for the 10.4 deployment maps (full width)
+# FIG-20: the shared key (full width), one swatch per registry entry
 # ---------------------------------------------------------------------------------------------
-def _sw_zone(s, x, y, party):
-    s.rect(x, y - 7, 30, 14, fill=PALE, stroke=INK, sw=0.9, dash="3.2 2.2")
-    if party == "A":
-        s.rect(x, y - 7, 3.2, 14, fill=INK, stroke=None)
-        token(s, "A", x + 18, y, 4.4)
-    elif party == "B":
-        s.rect(x, y - 7, 3.2, 14, fill=WHITE, stroke=INK, sw=0.8)
-        token(s, "B", x + 18, y, 4.4)
-    else:
-        s.rect(x, y - 7, 3.2, 14, fill=INK, stroke=None)
-        s.line(x + 1.6, y - 7, x + 1.6, y + 7, WHITE, 1.0, dash="3 3")
-        token(s, "A", x + 12, y, 3.9)
-        token(s, "B", x + 23, y, 3.9)
+KEY_COLS = [
+    ("Parties and zones", ["hero-A", "hero-B", "zone-A", "zone-B", "zone-AB", "compass", "scale", "illus", "leader"]),
+    ("Markers, Monsters, steps", ["obj", "chest", "haz", "mk", "unres", "mon", "mon-L", "mon-H", "step", "los"]),
+    ("Terrain", ["ter-blocking", "ter-impassable", "ter-cover", "ter-difficult", "ter-coverdiff", "ter-water", "ter-slippery",
+                 "ter-obstacle", "ter-hazard", "ter-shade", "ter-chasm"]),
+    ("Pieces, lines, status", ["line-wall", "ter-open", "ledge", "ledge-crumbling", "dim", "ring", "range", "arr-exit",
+                               "arr-arrive", "ter-excl"]),
+]
 
 
-def _sw_terrain(s, x, y, kind, open_=False):
-    fill = TER[kind][1 if open_ else 0] if kind != "open" else "none"
-    s.rect(x + 2, y - 6, 26, 12, fill=fill, stroke=GREY if open_ else INK, sw=0.9, dash="3 2" if open_ else None)
+def key_ids():
+    return [g for _, ids in KEY_COLS for g in ids]
 
 
-def _sw_ruler(s, x, y):
-    s.line(x + 2, y, x + 28, y, INK, 0.8)
-    s.line(x + 2, y - 3, x + 2, y + 3, INK, 0.8)
-    s.line(x + 28, y - 3, x + 28, y + 3, INK, 0.8)
-
-
-def _sw_ring(s, x, y):
-    s.circle(x + 15, y, 6.5, fill="none", stroke=INK, sw=0.9, dash="3 2.5")
-    s.circle(x + 15, y, 1.6, fill=INK, stroke=None)
-
-
-def _sw_arrow(s, x, y, out):
-    s.line(x + 2, y + 7, x + 28, y + 7, INK, 1.3)
-    if out:
-        arrow(s, x + 15, y - 6, x + 15, y + 6, "move", sw=1.6)
-    else:
-        arrow(s, x + 15, y + 6, x + 15, y - 6, "move", sw=1.6)
-
-
-def _legend_col(s, x, y, title, entries, width, audit):
+def _legend_col(s, x, y, title, ids, width, audit):
     s.text(x, y, title, 9.5, 700)
     y += 7
-    for fn, text in entries:
+    for gid in ids:
+        text = K.REG[gid]["label"]
         lines = wrap(text, width - 36, 9)
         h = max(15, len(lines) * 10.4 + 4)
-        fn(s, x, y + h / 2)
+        K.swatch(s, gid, x, y + h / 2)
         for k, ln in enumerate(lines):
             s.text(x + 36, y + 7.6 + k * 10.4 + (h - len(lines) * 10.4) / 2 - 1, ln, 9)
         audit.append(text)
@@ -877,58 +767,22 @@ def _legend_col(s, x, y, title, entries, width, audit):
 def fig20():
     s = MapSvg(FULL_W)
     audit = []
-    s.text(0, 10, "Key to the deployment maps in 10.4", 10.5, 700)
+    s.text(0, 10, "Key to the setup and deployment diagrams", 10.5, 700)
     cw = 122
     xs = [0, 127, 254, 381]
-    col = [
-        ("Parties and zones", [
-            (lambda s_, x, y: _sw_zone(s_, x, y, "A"), "Party A zone: black Heroes, solid edge band"),
-            (lambda s_, x, y: _sw_zone(s_, x, y, "B"), "Party B zone: dotted Heroes, open edge band"),
-            (lambda s_, x, y: _sw_zone(s_, x, y, "AB"), "Zone both parties share (both Hero symbols)"),
-            (lambda s_, x, y: s_.text(x + 15, y + 3.4, "A  B", 9, 700, "middle"), "Positions of Heroes inside a zone are free; two or three are drawn"),
-        ]),
-        ("Markers and Monsters", [
-            (lambda s_, x, y: glyph_marker(s_, "obj", x + 15, y), "Objective or carried objective"),
-            (lambda s_, x, y: glyph_marker(s_, "chest", x + 15, y), "Treasure Chest"),
-            (lambda s_, x, y: glyph_marker(s_, "haz", x + 15, y), "Hazard marker"),
-            (lambda s_, x, y: glyph_marker(s_, "mk", x + 15, y), "Other marker or token"),
-            (lambda s_, x, y: glyph_monster(s_, "M", x + 15, y), "Monster Group: G1 is Group 1, R Resting, A Awake"),
-            (lambda s_, x, y: glyph_monster(s_, "L", x + 15, y), "Large Monster (2\"×2\"), drawn at footprint scale"),
-        ]),
-        ("Terrain", [
-            (lambda s_, x, y: _sw_terrain(s_, x, y, "blocking"), "Blocking"),
-            (lambda s_, x, y: _sw_terrain(s_, x, y, "impassable"), "Impassable"),
-            (lambda s_, x, y: _sw_terrain(s_, x, y, "cover"), "Cover"),
-            (lambda s_, x, y: _sw_terrain(s_, x, y, "difficult"), "Difficult"),
-            (lambda s_, x, y: _sw_terrain(s_, x, y, "water"), "Shallow or Deep Water"),
-            (lambda s_, x, y: _sw_terrain(s_, x, y, "slippery"), "Slippery"),
-            (lambda s_, x, y: _sw_terrain(s_, x, y, "obstacle"), "Impassable or Blocking, decided per piece (2.9.1)"),
-            (lambda s_, x, y: _sw_terrain(s_, x, y, "hazard"), "Hazard area (Unstable Ground)"),
-            (lambda s_, x, y: _sw_terrain(s_, x, y, "shade"), "Deep Shadow or Darkness"),
-            (lambda s_, x, y: s_.line(x + 2, y, x + 28, y, INK, 2.4), "Blocking wall, drawn as a line"),
-            (lambda s_, x, y: _sw_terrain(s_, x, y, "open"), "Open feature: room, clearing, path"),
-        ]),
-        ("Distances, edges, status", [
-            (_sw_ruler, "Stated distance at map scale; 'min' means at least"),
-            (_sw_ring, "Ring: within the stated distance"),
-            (lambda s_, x, y: pill(s_, x + 15, y + 3.4, '6–8"'), "A range: any value inside it is legal"),
-            (lambda s_, x, y: _sw_arrow(s_, x, y, True), "Exit or extraction through that edge"),
-            (lambda s_, x, y: _sw_arrow(s_, x, y, False), "Arrival from off the battlefield (R3 is Round 3)"),
-            (lambda s_, x, y: _sw_terrain(s_, x, y, "cover", True), "Grey dashed: one legal arrangement; position not fixed by the rules"),
-        ]),
-    ]
     yend = 0
-    for (title, entries), x in zip(col, xs):
-        yy = _legend_col(s, x, 28, title, entries, cw, audit)
+    for (title, ids), x in zip(KEY_COLS, xs):
+        yy = _legend_col(s, x, 28, title, ids, cw, audit)
         yend = max(yend, yy)
     y = yend + 8
     s.line(0, y - 3, FULL_W, y - 3, INK, 0.6)
     notes = [
         "**Orientation.** North is drawn at the top. The Setup Roll-off winner designates the North edge before setup; North and South are the short battlefield edges and East and West the long ones, even on a square battlefield (10.1).",
-        "**Scale.** The battlefield, zones and stated distances are drawn to scale at 5.2 pt per inch, with a 6\" scale bar; markers are enlarged, and Large and Huge Monsters are drawn at their 2\"×2\" and 3\"×3\" footprints. Distances are measured between closest points, except from a centre or origin where the rule says so (2.6).",
+        "**Scale.** The battlefield, zones and stated distances are drawn to scale; markers are enlarged, and Large and Huge Monsters are drawn at their 2\"×2\" and 3\"×3\" footprints. Distances are measured between closest points, except from a centre or origin where the rule says so (2.6).",
         "**Counts.** Scattered terrain is drawn as a few representative pieces; the printed counts and the 10.6 scaling stay in the scenario text. Group numbers are the scenario's own. Hidden contents (face-down markers) are never drawn.",
-        "**Solid and dashed.** A solid marker or zone with a distance symbol is one position that meets that printed limit, not a fixed position; only the battlefield, zone depths and stated distances are exact. Letters A and B beside exit arrows or zones are the drawn zones' parties; where a scenario assigns Party A or B by die roll, the drawn zones do not say who is which.",
-        "**Where a scenario is silent**, 10.1 step 11 applies: the Setup Roll-off winner chooses the edge or corner zone and the other party takes the opposite one; each zone extends 6\" from its edge, a corner zone is 8\"×8\", and parties alternate placing Heroes, starting with the party that lost the Roll-off.",
+        "**Solid and dashed.** A solid marker or zone with a distance symbol is one position that meets the printed limit; only the battlefield, zone depths and stated distances are exact. Grey dashed pieces show one legal arrangement of something the rules leave open. Letters A and B name the drawn zones; where a scenario assigns the parties by die roll, the zones do not say who is which.",
+        "**Not placed by the text.** A ? tag marks an element the scenario text does not place, such as an arrival or escape edge it never names. It is listed under the map with a short note and is not drawn on the battlefield; the scenario text governs.",
+        "**Where a scenario is silent**, 10.1 step 11 applies: the Setup Roll-off winner chooses the edge or corner zone and the other party takes the opposite one; zones are 6\" deep or 8\"×8\" corners, marked \"(default)\" on a map, and parties alternate placing Heroes, starting with the party that lost the Roll-off.",
     ]
     for n in notes:
         y = s.para(0, y + 6, n, FULL_W, 9, 400, lead=10.8) - 1
@@ -967,13 +821,12 @@ def template_geometry():
 def _tpl_board(s, ox, oy, variant, audit):
     g = template_geometry()
     bs = 36 * ST
-
-    def P(x, y):
-        return ox + x * ST, oy + y * ST
+    s.raw('<g data-glyph="ter-excl">')
     s.rect(ox, oy, bs, bs, fill=PAT["aoe"], stroke=None)
+    s.raw("</g>")
     if variant == "edge":
         x0, y0, x1, y1 = g["edge_rect"]
-        s.rect(ox + x0 * ST, oy + y0 * ST, (x1 - x0) * ST, (y1 - y0) * ST, fill=WHITE, stroke=INK, sw=0.8, dash="3 2")
+        s.rect(ox + x0 * ST, oy + y0 * ST, (x1 - x0) * ST, (y1 - y0) * ST, fill=WHITE, stroke=None)
         zones = [("A", (0, 0, g["depth"], 36)), ("B", (36 - g["depth"], 0, 36, 36))]
     else:
         c_, r_ = g["corner"], g["clear"]
@@ -983,41 +836,31 @@ def _tpl_board(s, ox, oy, variant, audit):
             f1(ox + (36 - c_) * ST), f1(r_ * ST), f1(r_ * ST), f1(ox + (36 - c_ - r_) * ST), f1(oy + (36 - c_) * ST),
             f1(oy + (36 - e_) * ST), f1(ox + e_ * ST), f1(oy + (c_ + r_) * ST), f1(ox + c_ * ST),
             f1(r_ * ST), f1(r_ * ST), f1(ox + (c_ + r_) * ST), f1(oy + c_ * ST), f1(oy + e_ * ST))
-        s.path(pts, fill=WHITE, stroke=INK, sw=0.8, dash="3 2")
+        s.path(pts, fill=WHITE, stroke=None)
         zones = [("A", (0, 0, c_, c_)), ("B", (36 - c_, 36 - c_, 36, 36))]
     s.rect(ox, oy, bs, bs, fill="none", stroke=INK, sw=1.2)
     for party, (x0, y0, x1, y1) in zones:
-        s.rect(ox + x0 * ST, oy + y0 * ST, (x1 - x0) * ST, (y1 - y0) * ST, fill=PALE, stroke=INK, sw=0.9, dash="3.2 2.2")
+        sides = [b[0] for b in K.band_sides((x0, y0, x1, y1), 36)]
+        K.zone(s, ox + x0 * ST, oy + y0 * ST, (x1 - x0) * ST, (y1 - y0) * ST, party, sides)
         cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
         if variant == "edge":
             for f in (0.2, 0.5, 0.8):
-                token(s, party, ox + cx * ST, oy + (y0 + (y1 - y0) * f) * ST, 3.6)
+                K.hero(s, party, ox + cx * ST, oy + (y0 + (y1 - y0) * f) * ST, 3.6)
         else:
-            token(s, party, ox + (x0 + 2.6) * ST, oy + (y0 + 2.6) * ST, 3.6)
-            token(s, party, ox + (x1 - 2.6) * ST, oy + (y1 - 2.6) * ST, 3.6)
-    # dimensions
-    lab = []
+            K.hero(s, party, ox + (x0 + 2.6) * ST, oy + (y0 + 2.6) * ST, 3.6)
+            K.hero(s, party, ox + (x1 - 2.6) * ST, oy + (y1 - 2.6) * ST, 3.6)
     if variant == "edge":
-        _tpl_dim(s, ox + 0 * ST, oy + 17.5 * ST, ox + 6 * ST, oy + 17.5 * ST, '6"')
-        _tpl_dim(s, ox + 6 * ST, oy + 17.5 * ST, ox + 12 * ST, oy + 17.5 * ST, '6"')
-        _tpl_dim(s, ox + 18 * ST, oy + 0 * ST, ox + 18 * ST, oy + 3 * ST, '3"')
+        K.dim_labeled(s, ox + 0 * ST, oy + 12.6 * ST, ox + 6 * ST, oy + 12.6 * ST, '6"')
+        K.dim_labeled(s, ox + 6 * ST, oy + 12.6 * ST, ox + 12 * ST, oy + 12.6 * ST, '6"')
+        K.dim_labeled(s, ox + 18 * ST, oy + 0 * ST, ox + 18 * ST, oy + 3 * ST, '3"')
         audit += ['6"', '6"', '3"']
     else:
-        _tpl_dim(s, ox + 0 * ST, oy + 9.5 * ST, ox + 8 * ST, oy + 9.5 * ST, '8"')
-        _tpl_dim(s, ox + 18 * ST, oy + 0 * ST, ox + 18 * ST, oy + 3 * ST, '3"')
+        K.dim_labeled(s, ox + 0 * ST, oy + 9.5 * ST, ox + 8 * ST, oy + 9.5 * ST, '8"')
+        K.dim_labeled(s, ox + 18 * ST, oy + 0 * ST, ox + 18 * ST, oy + 3 * ST, '3"')
         s.line(ox + 8 * ST, oy + 8 * ST, ox + (8 + 6 * math.cos(math.radians(45))) * ST, oy + (8 + 6 * math.sin(math.radians(45))) * ST, INK, 0.8)
-        pill(s, ox + 14.6 * ST, oy + 13.6 * ST, '6"', 9, 600)
+        K.pill_label(s, ox + 14.6 * ST, oy + 13.6 * ST, '6"', 9, 600)
         audit += ['8"', '3"', '6"']
     return bs
-
-
-def _tpl_dim(s, x1, y1, x2, y2, label):
-    s.line(x1, y1, x2, y2, INK, 0.8)
-    ang = math.atan2(y2 - y1, x2 - x1)
-    nx, ny = -math.sin(ang), math.cos(ang)
-    for (px_, py_) in ((x1, y1), (x2, y2)):
-        s.line(px_ - nx * 2.6, py_ - ny * 2.6, px_ + nx * 2.6, py_ + ny * 2.6, INK, 0.8)
-    pill(s, (x1 + x2) / 2, (y1 + y2) / 2 + 3.2, label, 9, 600)
 
 
 def fig57():
@@ -1026,7 +869,6 @@ def fig57():
     g = template_geometry()
     assert g["depth"] + g["clear"] == 12 and 36 - 12 == 24 and g["corner"] + g["clear"] == 14
     s.text(0, 10, "10.1 Preparation Steps", 10.5, 700)
-    # flow
     fw = 214
     y = 22
     for i, (txt, hot) in enumerate(TPL_STEPS, 1):
@@ -1034,7 +876,7 @@ def fig57():
         h = max(15, len(lines) * 10.4 + 4)
         if hot:
             s.rect(0, y - 1, fw, h + 1, fill=PALE, stroke=INK, sw=0.9, rx=2)
-        callout(s, 9.5, y + h / 2, i, 6.6)
+        K.step(s, 9.5, y + h / 2, i, 6.6)
         for k, ln in enumerate(lines):
             s.text(22, y + 8.2 + k * 10.4 + (h - len(lines) * 10.4) / 2 - 1, ln, 9)
         audit.append(txt)
@@ -1042,7 +884,6 @@ def fig57():
             s.line(9.5, y + h / 2 + 6.8, 9.5, y + h + 3.6, INK, 1.0)
         y += h + 4
     yflow = y
-    # right: label + two boards
     rx = 232
     box_w = FULL_W - rx
     s.rect(rx, 6, box_w, 17, fill=WHITE, stroke=INK, sw=1.2, rx=2)
@@ -1062,15 +903,10 @@ def fig57():
     yb2 = s.para(ox2, yb, t2, bw + 6, 9, 400, lead=10.4)
     audit += [t1, t2]
     yk = max(ya, yb2) + 6
-    # key
-    s.rect(rx, yk - 8, 22, 11, fill=PAT["aoe"], stroke=INK, sw=0.8)
-    s.text(rx + 28, yk + 1, "Step 7: no major Blocking or Impassable Terrain here", 9)
-    s.rect(rx, yk + 7, 22, 11, fill=WHITE, stroke=INK, sw=0.8, dash="3 2")
-    s.text(rx + 28, yk + 16, "Step 7: major Blocking or Impassable Terrain allowed", 9)
-    s.rect(rx, yk + 22, 22, 11, fill=PALE, stroke=INK, sw=0.9, dash="3.2 2.2")
-    s.text(rx + 28, yk + 31, "Deployment zone (Party A black, Party B dotted)", 9)
+    yk = K.key_strip(s, ["ter-excl", "zone-A", "zone-B", "hero-A", "hero-B", "dim"], rx, yk, box_w, title=None) + 2
+    yk = s.para(rx, yk + 7, "Hatched: step 7 forbids major Blocking or Impassable Terrain. White: allowed.", box_w, 9, 400, lead=10.4) - 3
     nt = "Drawn to scale at 3.3 pt per inch on a 36\"×36\" battlefield; the 3\" edge margin and the 6\" distance from a zone are measured from the zone's outline, so corner zones leave a rounded exclusion."
-    ye = s.para(rx, yk + 44, nt, box_w, 9, 400, lead=10.4)
+    ye = s.para(rx, yk + 14, nt, box_w, 9, 400, lead=10.4)
     audit += [nt]
     fig57.audit = audit
     return s, max(yflow, ye) + 4
@@ -1079,13 +915,13 @@ def fig57():
 # ---------------------------------------------------------------------------------------------
 # metadata for figdata (manifest and placements)
 # ---------------------------------------------------------------------------------------------
-def _sec(key):
-    return key
-
-
 def scenario_order():
     spans = scenario_spans()
     return sorted(spans, key=lambda k: spans[k][0])
+
+
+STATUS_KEYS = {"MANDATORY_POSITION": "mandatory", "CONSTRAINED": "constrained", "ILLUSTRATIVE": "illustrative",
+               "UNRESOLVED": "unresolved"}
 
 
 def meta_entries():
@@ -1093,40 +929,40 @@ def meta_entries():
     sc = spec()["scenarios"]
     out = {}
     out[LEGEND_FIG] = dict(
-        title="Key to the 10.4 deployment maps",
-        purpose="One shared key for the 36 column-width deployment maps in 10.4: party zones, markers, Monster Group notation, terrain patterns, distance and edge symbols, map scale and the status convention for open positions.",
+        title="Key to the setup and deployment diagrams",
+        purpose="One shared key for every setup and deployment diagram (the deployment patterns, the Chasm Crossing and Whispering Grove details, the Appendix A and B maps and the 36 Core Scenario maps): one swatch per glyph, pattern, line type and status convention, drawn by the same functions as the diagrams.",
         source_refs=["10.1 Random Direction and Battlefield Edges (11056-11058)", "10.1 Setup Roll-off (11035) and Preparation Steps, step 11 (11072)",
                      "2.6 Measurement (594) and Size and Footprints (618-619)", "2.9.1 Terrain Types (832-878)"],
-        geometry_spec="Four columns of swatches (parties and zones; markers and Monsters; terrain patterns; distances, edges and status) above four short notes on orientation, scale, counts and the step 11 default; no board geometry beyond the swatches.",
-        caption="Key to the deployment maps in 10.4: symbols for zones, markers, Monster Groups, terrain, distances and edges, with the orientation, scale and open-position conventions every map follows (see 10.4).",
+        geometry_spec="Four columns of swatches (parties and zones; markers, Monsters and steps; terrain; pieces, distances, edges and status), %d entries, one per glyph id in scenkit.REG, above six short notes on orientation, scale, counts, solid and dashed, not-placed elements and the step 11 default; no board geometry beyond the swatches. make_figures checks that every glyph and pattern id emitted by any setup diagram appears here." % len(key_ids()),
+        caption="Key to the setup and deployment diagrams: symbols for Heroes, zones, markers, Monster Groups, terrain, distances, edges and not-placed elements, with the orientation, scale and grey-dashed conventions every such diagram follows (see 10.4).",
         insert_after="B%05d" % LEGEND_ANCHOR_LINE, scope="full", schematic=False,
-        semantic_check="Swatches reuse the figures/README visual grammar; every inch value printed (6\", 8\"x8\", 2\"x2\", 3\"x3\") is checked against lines 594, 618-619 and 11072; North/short/long edge naming against 11056-11058; closest-point measurement against 594.",
-        ambiguity="None in the key. Terrain pieces whose type the scenario leaves to 2.9.1 ('Impassable or Blocking') use a neutral grey swatch rather than either type.",
+        semantic_check="Swatches are drawn by the same shared glyph functions as the diagrams; every inch value printed (6\", 8\"x8\", 2\"x2\", 3\"x3\") is checked against lines 594, 618-619 and 11072; North/short/long edge naming against 11056-11058; closest-point measurement against 594. The registry check proves the key covers every id used on FIG-13 to FIG-16 and FIG-18 to FIG-57.",
+        ambiguity="None in the key. Terrain pieces whose type the scenario leaves to 2.9.1 ('Impassable or Blocking') use a neutral grey swatch rather than either type; the ? tag records elements the text does not place instead of choosing a position.",
         new_figure=True)
     for key in scenario_order():
         sp = sc[key]
         hl, end, cno, sno, title, climate = spans[key]
-        cnt = {"MANDATORY_POSITION": 0, "CONSTRAINED": 0, "ILLUSTRATIVE": 0}
+        cnt = dict.fromkeys(STATUS_KEYS.values(), 0)
         for e in sp["elements"]:
-            cnt[e["status"]] += 1
+            cnt[STATUS_KEYS[e["status"]]] += 1
         refs = ["10.4 %s Scenario %d: %s (source lines %d-%d)" % (climate, sno, title, hl, end),
                 "10.1 Preparation Steps, step 11 (11072)" if any(11072 in e.get("shared", []) for e in sp["elements"]) else "10.1 Preparation Steps (11060-11073)"]
         out[sp["fig"]] = dict(
             title="%s Scenario %d: %s, deployment map" % (climate, sno, title),
-            purpose="Column-width top-down map of the setup for %s %d: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states." % (climate, sno),
+            purpose="Column-width top-down map of the setup for %s %d: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states and the shared symbols of FIG-20." % (climate, sno),
             source_refs=refs,
-            geometry_spec="36\"x36\" battlefield at 5.2 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale). %d mandatory, %d constrained and %d illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are light grey dashed." % (cnt["MANDATORY_POSITION"], cnt["CONSTRAINED"], cnt["ILLUSTRATIVE"]),
+            geometry_spec="36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. %d mandatory, %d constrained, %d illustrative and %d unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note." % (cnt["mandatory"], cnt["constrained"], cnt["illustrative"], cnt["unresolved"]),
             caption=sp["caption"],
             insert_after="B%05d" % sp["insert_after_line"], scope="column", schematic=True,
-            semantic_check="Each element's source lines lie inside lines %d-%d; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances." % (hl, end),
+            semantic_check="Each element's source lines lie inside lines %d-%d; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20." % (hl, end),
             ambiguity=("; ".join(sp["ambiguities"]) if sp["ambiguities"] else "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."),
             new_figure=True)
     out["FIG-%d" % (FIRST_MAP_FIG + 36)] = dict(
         title="10.1 Preparation Steps: procedural template",
         purpose="Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default deployment zones and the step 7 terrain exclusion distances on a generic battlefield.",
         source_refs=["10.1 Preparation Steps, steps 1-12 (11062-11073)", "2.6 Measurement (592)"],
-        geometry_spec="Left: the 12 Preparation Steps as numbered rows (steps 7 and 11 highlighted). Right: two 36\"x36\" boards at 3.3 pt per inch. Edge default: zones 6\" deep on opposite edges, exclusion = 3\" from an edge and 6\" from a zone (allowed region 12\"-24\" across, 3\"-33\" down). Corner default: 8\"x8\" corner zones diagonally opposite, exclusion with rounded 6\" corners.",
-        caption="Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default zones (6\" deep or 8\"×8\" corners) and the step 7 limits on major Blocking and Impassable Terrain (3\" from an edge, 6\" from a zone) (see 10.1).",
+        geometry_spec="Left: the 12 Preparation Steps as numbered rows (steps 7 and 11 highlighted). Right: two 36\"x36\" boards at 3.3 pt per inch, drawn with the shared zone, Hero and dimension glyphs. Edge default: zones 6\" deep on opposite edges, exclusion (hatched) = 3\" from an edge and 6\" from a zone (allowed region 12\"-24\" across, 3\"-33\" down). Corner default: 8\"x8\" corner zones diagonally opposite, exclusion with rounded 6\" corners.",
+        caption="Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default zones (6\" deep or 8\"×8\" corners) and the step 7 limits on major Blocking and Impassable Terrain (3\" from an edge, 6\" from a zone); key: FIG-20 (see 10.1).",
         insert_after="B%05d" % TEMPLATE_ANCHOR_LINE, scope="full", schematic=True,
         semantic_check="Step text compared with lines 11062-11073; 3\" and 6\" from step 7 (11068), 6\", 8\"x8\" and alternate placing from step 11 (11072); selfcheck asserts 6+6=12, 36-12=24, 8+6=14 and that the printed inch values appear in the cited lines.",
         ambiguity="None. Which edge pair or corner pair is used is chosen by the Setup Roll-off winner; the figure shows one example of each and says so.",
@@ -1137,9 +973,9 @@ def meta_entries():
 # ---------------------------------------------------------------------------------------------
 # checks (called from make_figures.selfcheck)
 # ---------------------------------------------------------------------------------------------
-KINDS = {"zone", "feature", "marker", "monster", "edge"}
-LEGEND_TERRAIN = {"blocking", "impassable", "cover", "difficult", "water", "slippery", "obstacle", "open", "hazard", "shade", "gap"}
-STATUSES = {"MANDATORY_POSITION", "CONSTRAINED", "ILLUSTRATIVE"}
+KINDS = {"zone", "feature", "marker", "monster", "edge", "hero", "unresolved"}
+LEGEND_TERRAIN = set(K.TERRAIN_KINDS)
+STATUSES = {"MANDATORY_POSITION", "CONSTRAINED", "ILLUSTRATIVE", "UNRESOLVED"}
 TOL = 0.06
 
 
@@ -1166,15 +1002,24 @@ def _anno_checks(sp, e, errs, key):
                 errs.append("%s: distance %.2f is not %s" % (tag, d, a["d"]))
         elif t == "ring":
             ctr = a.get("centre")
-            cx, cy = ctr if isinstance(ctr, list) else (centre(e) if ctr in (None, "self") else centre(els[ctr]))
             if ctr in (None, "self"):
                 continue
-            if isinstance(ctr, str):
-                my = centre(e)
-                dd = math.hypot(my[0] - cx, my[1] - cy)
-                rel = a.get("rel", "eq")
-                if rel == "eq" and abs(dd - a["r"]) > TOL + 0.01:
-                    errs.append("%s: centre distance %.2f is not %s" % (tag, dd, a["r"]))
+            cx, cy = ctr if isinstance(ctr, list) else centre(els[ctr])
+            my = centre(e)
+            dd = math.hypot(my[0] - cx, my[1] - cy)
+            rel = a.get("rel", "eq")
+            if rel == "eq" and abs(dd - a["r"]) > TOL + 0.01:
+                errs.append("%s: centre distance %.2f is not %s" % (tag, dd, a["r"]))
+        elif t == "cring":                     # centre-to-centre distance from a point lies in [lo, hi]
+            cx, cy = a["centre"]
+            my = centre(e)
+            dd = math.hypot(my[0] - cx, my[1] - cy)
+            if dd < a["lo"] - TOL or dd > a["hi"] + TOL:
+                errs.append("%s: centre distance %.2f outside %s-%s" % (tag, dd, a["lo"], a["hi"]))
+        elif t == "cdim":
+            dd = math.hypot(a["p"][0] - a["q"][0], a["p"][1] - a["q"][1])
+            if abs(dd - a["d"]) > TOL:
+                errs.append("%s: centre distance %.2f is not %s" % (tag, dd, a["d"]))
         elif t == "edgein":
             sh = footprint(els[a["of"]])
             my = centre(e)
@@ -1198,6 +1043,118 @@ def _anno_checks(sp, e, errs, key):
             errs.append("%s: unknown annotation" % tag)
 
 
+def check_one(key, sp, spans, errs, L, width=COL_W):
+    """Checks for one map spec.  spans: list of (first, last) source line ranges the spec may cite."""
+    def in_span(n):
+        return any(a <= n <= b for a, b in spans)
+    n = sp.get("board_in", 36)
+    if not any(in_span(sp["insert_after_line"]) for _ in (0,)):
+        errs.append("%s: insertion line outside the scenario" % key)
+    if not in_span(sp["board_line"]) or '%d"×%d"' % (n, n) not in L[sp["board_line"] - 1]:
+        errs.append("%s: board_line does not state %d\"x%d\"" % (key, n, n))
+    ids = set()
+    zones = []
+    for e in sp["elements"]:
+        tag = "%s/%s" % (key, e.get("id"))
+        if e["id"] in ids:
+            errs.append("%s: duplicate id" % tag)
+        ids.add(e["id"])
+        if e["kind"] not in KINDS:
+            errs.append("%s: kind %s" % (tag, e["kind"]))
+        if e["status"] not in STATUSES:
+            errs.append("%s: status %s" % (tag, e["status"]))
+        if (e["kind"] == "unresolved") != (e["status"] == "UNRESOLVED"):
+            errs.append("%s: kind unresolved and status UNRESOLVED go together" % tag)
+        if not e["lines"]:
+            errs.append("%s: no source lines" % tag)
+        for ln in e["lines"]:
+            if not in_span(ln):
+                errs.append("%s: line %d outside the cited spans %s" % (tag, ln, spans))
+        for ln in e.get("shared", []):
+            if ln not in SHARED_OK:
+                errs.append("%s: shared line %d is not a 10.1 / 10.6 rule line" % (tag, ln))
+        if e["kind"] == "zone":
+            zones.append(e)
+        if e["kind"] == "feature" and e.get("terrain", "open") not in LEGEND_TERRAIN:
+            errs.append("%s: terrain %s has no legend swatch" % (tag, e.get("terrain")))
+        if e["kind"] == "marker" and e["glyph"] not in ("obj", "chest", "haz", "mk"):
+            errs.append("%s: glyph %s" % (tag, e["glyph"]))
+        if e["kind"] == "marker" and e.get("on") and e["on"] not in LEGEND_TERRAIN:
+            errs.append("%s: on-terrain %s" % (tag, e["on"]))
+        if e["kind"] == "edge" and e["mode"] == "arrive" and "midpoint" in _text_of(e["lines"]) and e.get("pos") != n / 2:
+            errs.append("%s: arrival at an edge midpoint must be drawn at %s\"" % (tag, n / 2))
+        if e["kind"] == "unresolved" and not e.get("note"):
+            errs.append("%s: unresolved element without a note" % tag)
+    for t in sp.get("foot", []):
+        for ln in t["lines"]:
+            if not in_span(ln):
+                errs.append("%s: foot line %d outside" % (key, ln))
+    for u in sp.get("undrawn", []):
+        for ln in u["lines"]:
+            if not in_span(ln):
+                errs.append("%s: undrawn line %d outside" % (key, ln))
+    spc = json.loads(json.dumps(sp))
+    c, h = draw_map(spc, width)
+    if h > sp.get("max_height", 275):
+        errs.append("%s: map height %.0f pt exceeds the allowed height" % (key, h))
+    for w in c.warn:
+        if float(w.rsplit("(", 1)[1].split(" ")[0]) > 6:
+            errs.append("%s: %s" % (key, w))
+    els = {e["id"]: e for e in sp["elements"]}
+    for (tok, eid) in c.inches:
+        if eid == "board":
+            txt = _text_of([sp["board_line"]])
+        elif eid.startswith("foot:"):
+            txt = _text_of([ln for t in sp["foot"] if t["text"].startswith(eid[5:]) for ln in t["lines"]])
+        else:
+            e = els[eid]
+            txt = _text_of(e["lines"] + e.get("shared", []))
+        if tok not in txt:
+            errs.append("%s/%s: printed %s not found in cited source lines" % (key, eid, tok))
+    for e in sp["elements"]:
+        _anno_checks(sp, e, errs, key)
+    for e in sp["elements"]:
+        for note_key in ("note",):
+            if note_key in e:
+                for v in inch_tokens(e[note_key]):
+                    if v + '"' not in _text_of(e["lines"]):
+                        errs.append("%s/%s: printed %s\" in note not found in cited lines" % (key, e["id"], v))
+    zshapes = [footprint(z) for z in zones]
+    for e in sp["elements"]:
+        tag = "%s/%s" % (key, e["id"])
+        fp = footprint(e) if e["kind"] not in ("edge", "unresolved") else None
+        if fp is not None:
+            for v in (fp[1], fp[2]) if fp[0] == "c" else (fp[1], fp[2], fp[3], fp[4]):
+                if v < -0.01 or v > n + 0.01:
+                    errs.append("%s: footprint outside the %d\"x%d\" battlefield" % (tag, n, n))
+                    break
+        if e["kind"] in ("marker", "monster") and not e.get("zone_ok"):
+            for z, zs in zip(zones, zshapes):
+                if shape_dist(fp, zs) < 0.01:
+                    errs.append("%s: marker or Monster inside deployment zone %s (10.1 step 8)" % (tag, z["id"]))
+        if e["kind"] == "feature" and e.get("terrain") in ("blocking", "impassable", "obstacle") and not e.get("exempt") and sp.get("step7", True):
+            bb_ = fp if fp[0] == "r" else ("r", fp[1] - fp[3], fp[2] - fp[3], fp[1] + fp[3], fp[2] + fp[3])
+            if bb_[1] < 3 - 0.01 or bb_[2] < 3 - 0.01 or bb_[3] > n - 3 + 0.01 or bb_[4] > n - 3 + 0.01:
+                errs.append("%s: Blocking/Impassable piece within 3\" of an edge (10.1 step 7)" % tag)
+            for z, zs in zip(zones, zshapes):
+                if shape_dist(fp, zs) < 6 - 0.01:
+                    errs.append("%s: Blocking/Impassable piece within 6\" of zone %s (10.1 step 7)" % (tag, z["id"]))
+        if e["kind"] == "zone":
+            for tk in e.get("tokens") or []:
+                if not (e["rect"][0] <= tk[0] <= e["rect"][2] and e["rect"][1] <= tk[1] <= e["rect"][3]):
+                    errs.append("%s: Hero token outside its zone" % tag)
+        if e["kind"] == "hero":
+            ok = False
+            for z in zones:
+                if z["party"] in (e["party"], "AB"):
+                    r = z["rect"]
+                    if r[0] - 0.51 <= e["at"][0] <= r[2] + 0.51 and r[1] - 0.51 <= e["at"][1] <= r[3] + 0.51:
+                        ok = True
+            if not ok:
+                errs.append("%s: Hero not in (or at the edge of) a zone of its party" % tag)
+    return c
+
+
 def check_scenmaps():
     """Returns a list of problems (empty when every map passes)."""
     errs = []
@@ -1218,93 +1175,17 @@ def check_scenmaps():
         if key not in sc:
             continue
         sp = sc[key]
-        hl, end = spans[key][0], spans[key][1]
         if sp["tag"] != key:
             errs.append("%s: tag %r" % (key, sp["tag"]))
-        if not (hl <= sp["insert_after_line"] <= end):
-            errs.append("%s: insertion line outside the scenario" % key)
-        if not (hl <= sp["board_line"] <= end) or '36"×36"' not in L[sp["board_line"] - 1]:
-            errs.append("%s: board_line does not state 36\"x36\"" % key)
-        ids = set()
-        zones = []
+        hl, end = spans[key][0], spans[key][1]
+        check_one(key, sp, [(hl, end)], errs, L)
+        if not re.search(r"; key: FIG-20 \(see [^)]+\)\.$", sp["caption"]):
+            errs.append("%s: caption must end with '; key: FIG-20 (see ...).'" % key)
+    for akey, sp in spec().get("appendix", {}).items():
+        check_one("Appendix " + akey, sp, [tuple(r) for r in sp["spans"]], errs, L, width=sp.get("check_width", 192))
         for e in sp["elements"]:
-            tag = "%s/%s" % (key, e.get("id"))
-            if e["id"] in ids:
-                errs.append("%s: duplicate id" % tag)
-            ids.add(e["id"])
-            if e["kind"] not in KINDS:
-                errs.append("%s: kind %s" % (tag, e["kind"]))
-            if e["status"] not in STATUSES:
-                errs.append("%s: status %s" % (tag, e["status"]))
-            if not e["lines"]:
-                errs.append("%s: no source lines" % tag)
-            for n in e["lines"]:
-                if not (hl <= n <= end):
-                    errs.append("%s: line %d outside %d-%d" % (tag, n, hl, end))
-            for n in e.get("shared", []):
-                if n not in SHARED_OK:
-                    errs.append("%s: shared line %d is not a 10.1 / 10.6 rule line" % (tag, n))
-            if e["kind"] == "zone":
-                zones.append(e)
-            if e["kind"] == "feature" and e.get("terrain", "open") not in LEGEND_TERRAIN:
-                errs.append("%s: terrain %s has no legend swatch" % (tag, e.get("terrain")))
-            if e["kind"] == "edge" and e["mode"] == "arrive" and "midpoint" in _text_of(e["lines"]) and e.get("pos") != 18:
-                errs.append("%s: arrival at an edge midpoint must be drawn at 18\"" % tag)
-        for t in sp.get("foot", []):
-            for n in t["lines"]:
-                if not (hl <= n <= end):
-                    errs.append("%s: foot line %d outside" % (key, n))
-        for u in sp.get("undrawn", []):
-            for n in u["lines"]:
-                if not (hl <= n <= end):
-                    errs.append("%s: undrawn line %d outside" % (key, n))
-        # draw and audit printed inch values
-        spc = json.loads(json.dumps(sp))
-        c, h = draw_map(spc)
-        if h > 275:
-            errs.append("%s: map height %.0f pt exceeds the column height" % (key, h))
-        for w in c.warn:
-            if float(w.rsplit("(", 1)[1].split(" ")[0]) > 6:
-                errs.append("%s: %s" % (key, w))
-        els = {e["id"]: e for e in sp["elements"]}
-        for (tok, eid) in c.inches:
-            if eid == "board":
-                txt = _text_of([sp["board_line"]])
-            elif eid.startswith("foot:"):
-                txt = _text_of([n for t in sp["foot"] if t["text"].startswith(eid[5:]) for n in t["lines"]])
-            else:
-                e = els[eid]
-                txt = _text_of(e["lines"] + e.get("shared", []))
-            if tok not in txt:
-                errs.append("%s/%s: printed %s not found in cited source lines" % (key, eid, tok))
-        # legality
-        for e in sp["elements"]:
-            _anno_checks(sp, e, errs, key)
-        zshapes = [footprint(z) for z in zones]
-        for e in sp["elements"]:
-            tag = "%s/%s" % (key, e["id"])
-            fp = footprint(e) if e["kind"] != "edge" else None
-            if fp is not None:
-                for v in (fp[1], fp[2]) if fp[0] == "c" else (fp[1], fp[2], fp[3], fp[4]):
-                    if v < -0.01 or v > 36.01:
-                        errs.append("%s: footprint outside the 36\"x36\" battlefield" % tag)
-                        break
-            if e["kind"] in ("marker", "monster") and not e.get("zone_ok"):
-                for z, zs in zip(zones, zshapes):
-                    if shape_dist(fp, zs) < 0.01:
-                        errs.append("%s: marker or Monster inside deployment zone %s (10.1 step 8)" % (tag, z["id"]))
-            if e["kind"] == "feature" and e.get("terrain") in ("blocking", "impassable", "obstacle") and not e.get("exempt"):
-                bb_ = fp if fp[0] == "r" else ("r", fp[1] - fp[3], fp[2] - fp[3], fp[1] + fp[3], fp[2] + fp[3])
-                if bb_[1] < 3 - 0.01 or bb_[2] < 3 - 0.01 or bb_[3] > 33 + 0.01 or bb_[4] > 33 + 0.01:
-                    errs.append("%s: Blocking/Impassable piece within 3\" of an edge (10.1 step 7)" % tag)
-                for z, zs in zip(zones, zshapes):
-                    if shape_dist(fp, zs) < 6 - 0.01:
-                        errs.append("%s: Blocking/Impassable piece within 6\" of zone %s (10.1 step 7)" % (tag, z["id"]))
-            if e["kind"] == "zone":
-                for tk in e.get("tokens") or []:
-                    if not (e["rect"][0] <= tk[0] <= e["rect"][2] and e["rect"][1] <= tk[1] <= e["rect"][3]):
-                        errs.append("%s: Hero token outside its zone" % tag)
-    # legend and template inch audit
+            if e.get("shared"):
+                errs.append("Appendix %s/%s: Appendix maps must not cite 10.1 / 10.6 rule lines" % (akey, e["id"]))
     for name, fn, lines in (("legend", fig20, LEGEND_LINES), ("template", fig57, TEMPLATE_LINES)):
         fn()
         txt = _text_of(lines)
@@ -1312,6 +1193,44 @@ def check_scenmaps():
             for v in inch_tokens(t):
                 if v + '"' not in txt:
                     errs.append("%s: printed %s\" not in the cited lines" % (name, v))
+    return errs
+
+
+SETUP_FIGS = ["FIG-%02d" % i for i in (13, 14, 15, 16, 18, 19)] + ["FIG-%d" % i for i in range(20, 58)]
+
+
+def check_registry(out_dir):
+    """Every glyph id and pattern emitted on any setup or deployment diagram must be explained by the FIG-20 key.
+    FIG-13 to FIG-16, FIG-18 and FIG-19 must also carry a compact key strip with exactly the glyphs their diagrams use
+    (Appendix readers may not have seen the key in 10.4)."""
+    errs = []
+    info = {}
+    for fid in SETUP_FIGS:
+        with open(os.path.join(out_dir, fid + ".svg"), encoding="utf-8") as f:
+            info[fid] = K.ids_in_svg(f.read())
+    key = info["FIG-20"]["key"]
+    reg = set(K.REG)
+    if key != reg:
+        errs.append("FIG-20 key swatches %s differ from the registry %s" % (sorted(key ^ reg), "(missing or extra)"))
+    used_all = set()
+    for fid in SETUP_FIGS:
+        i = info[fid]
+        if i["unknown"]:
+            errs.append("%s: pattern ids not in the registry: %s" % (fid, sorted(i["unknown"])))
+        ids = i["used"] | i["patterns"]
+        used_all |= ids
+        if fid != "FIG-20":
+            missing = ids - key
+            if missing:
+                errs.append("%s: glyph or pattern ids not explained by FIG-20: %s" % (fid, sorted(missing)))
+        if fid in ("FIG-13", "FIG-14", "FIG-15", "FIG-16", "FIG-18", "FIG-19"):
+            if i["strip"] != ids:
+                errs.append("%s: compact key strip %s does not match the glyphs used %s" % (fid, sorted(i["strip"]), sorted(ids)))
+        elif fid != "FIG-20" and i["strip"] - key:
+            errs.append("%s: key strip uses ids outside the key" % fid)
+    unused = key - used_all
+    if unused:
+        errs.append("FIG-20 explains ids that no setup diagram uses: %s" % sorted(unused))
     return errs
 
 
@@ -1335,26 +1254,69 @@ def coverage_matrix(dims=None):
     """production/qa/scenario-coverage.json content."""
     spans = scenario_spans()
     sc = spec()["scenarios"]
-    blocked = {"Undermarches 1", "Sun-Drowned 3", "The Mire 2", "The Mire 5"}
     rows = []
-    summ = {"MANDATORY_POSITION": 0, "CONSTRAINED": 0, "ILLUSTRATIVE": 0}
+    summ = dict.fromkeys(STATUS_KEYS, 0)
     amb_total = 0
     for key in scenario_order():
         sp = sc[key]
         hl, end, cno, sno, title, climate = spans[key]
-        cnt = {"mandatory": 0, "constrained": 0, "illustrative": 0}
+        cnt = dict.fromkeys(STATUS_KEYS.values(), 0)
         for e in sp["elements"]:
-            cnt[{"MANDATORY_POSITION": "mandatory", "CONSTRAINED": "constrained", "ILLUSTRATIVE": "illustrative"}[e["status"]]] += 1
+            cnt[STATUS_KEYS[e["status"]]] += 1
             summ[e["status"]] += 1
         amb_total += len(sp["ambiguities"])
+        blocked = any(e["status"] == "UNRESOLVED" for e in sp["elements"])
         rows.append(dict(
             key=key, climate=climate, climate_number=cno, number=sno, title=title, source_lines=[hl, end],
             map_figure=sp["fig"], detail_figures=_detail_figures(key, sp), insert_after="B%05d" % sp["insert_after_line"],
             setup_rules=sp["setup_rules"],
             elements=cnt, undrawn_conditional=[dict(u) for u in sp.get("undrawn", [])],
+            unresolved_elements=[dict(id=e["id"], note=e["note"], lines=e["lines"]) for e in sp["elements"] if e["kind"] == "unresolved"],
             ambiguities=sp["ambiguities"],
-            status="blocked-by-ambiguity" if key in blocked else "drawn"))
+            iconography="shared-v2",
+            status="blocked-by-ambiguity (one element shown as unresolved with a ? tag; owner decision needed)" if blocked else "drawn"))
     return rows, summ, amb_total
+
+
+APPX_COVERAGE = {
+    "A": dict(
+        key="Appendix A: Learn to Play, A.4 Quickstart Scenario: The Broken Courier",
+        setup_rules=["A.2 terrain list", "A.4 Setup Roll-off (short edge, 4\" zones)", "A.11 Initial Positions"],
+        drawn_in_figure=["24\"x24\" battlefield drawn by the shared map renderer at 7.5 pt per inch", "4\" deployment zones on the two short edges (16184, 16354)",
+                         "3\"x3\" centre ruin, Blocking (16108)", "low wall about 2\"x3\", Impassable, 4-6\" from the centre on one flank (16109; flank open, grey dashed)",
+                         "rubble about 3\"x3\", Cover tagged Difficult, 4-6\" from the centre on the opposite flank (16110; grey dashed)",
+                         "two Cover scatter pieces (16111; grey dashed)",
+                         "Dispatch Satchel adjacent to the centre ruin (16180, 16358; side not stated, so one legal arrangement in grey dashes)",
+                         "4 Dire Wolves within 2\" of the Satchel (16182; grey dashed) with the A.11 relative layout shown as a labelled inset",
+                         "Treasure Chest 5\" east of centre (A.11 table, 16359), Heroes Edric, Mara, Varek, Senna at the A.11 table positions (16360-16363)",
+                         "extraction through any battlefield edge (16194)"],
+        not_drawn=["the third scatter piece (A.2 allows 2-3; positions open)"],
+        ambiguities=["Which side of the centre ruin the Satchel (and therefore the Dire Wolves) stands on is not stated; drawn as one legal arrangement."]),
+    "B": dict(
+        key="Appendix B: Basic Mode, B.6 Basic Scenario: The Courier's Strongbox",
+        setup_rules=["B.6 deployment (4\" of opposite edges)", "B.6 Monster Setup (3 Monster Entry markers, 5-7\" from centre, 4\" apart)"],
+        drawn_in_figure=["24\"x24\" battlefield drawn by the shared map renderer at 7.5 pt per inch", "4\" zones on opposite edges (17078; which edges is not stated, so grey dashed, north and south drawn)",
+                         "road across the centre (17076; width not stated)", "Strongbox at the centre (17082)",
+                         "Monster Entry markers 5-7\" from the centre, at least 4\" apart, outside both zones (17080)", "one Monster group and one Satchel on each marker, drawn beside it (17080, 17082)",
+                         "2 ruins/carts/low walls within 4\" of centre, 4 quarter pieces of 3\"x3\" (17076)", "extraction through the own deployment edge (17090)", "no Advanced Mode rules shown"],
+        not_drawn=["which opposite edges are the deployment edges and who places the Entry markers are not stated (north and south drawn as one legal arrangement)"],
+        ambiguities=[]),
+}
+
+
+def appendix_coverage():
+    """Coverage rows for the two Appendix maps (FIG-18, FIG-19), generated from their specs."""
+    rows = []
+    for akey, sp in spec()["appendix"].items():
+        cnt = dict.fromkeys(STATUS_KEYS.values(), 0)
+        for e in sp["elements"]:
+            cnt[STATUS_KEYS[e["status"]]] += 1
+        r = dict(APPX_COVERAGE[akey])
+        r.update(source_lines=[sp["spans"][1][0] if akey == "A" else sp["spans"][0][0], sp["spans"][1][1] if akey == "A" else sp["spans"][0][1]],
+                 map_figure=sp["fig"], detail_figures=[], insert_after=None, elements=cnt, iconography="shared-v2",
+                 status="drawn with the shared map renderer and glyph set; compact key strip on the figure")
+        rows.append(r)
+    return rows
 
 
 def _install():
