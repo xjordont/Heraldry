@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06",
+  "generated": "2026-10-07",
   "source": "source/Heraldry_RC485.md",
   "scenarios": [
     {
@@ -24,7 +24,8 @@
       "elements": {
         "mandatory": 3,
         "constrained": 6,
-        "illustrative": 5
+        "illustrative": 5,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -35,11 +36,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -64,7 +67,8 @@
       "elements": {
         "mandatory": 0,
         "constrained": 11,
-        "illustrative": 3
+        "illustrative": 3,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -75,13 +79,15 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [
         "'outer Standing Stone' (Group 1): the three Stones form a triangle, so no Stone is more 'outer' than another; the map shows Group 1 within 3\" of one Stone and any of the three is legal."
       ],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -105,17 +111,20 @@
       "elements": {
         "mandatory": 2,
         "constrained": 9,
-        "illustrative": 4
+        "illustrative": 4,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [
         "Wagon 2 and the Toll Captain: the source places Wagon 2 'adjacent to the central Barricade' and the Captain 'behind the central Barricade' without saying which side of the Barricade is 'behind'; the map draws Wagon 2 on one side only as an illustration.",
         "The Barricade is 2–3\" long but the Trail is 3–4\" wide; the text does not say how a Barricade shorter than the Trail spans it ('across the Trail')."
       ],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
+        "height": 263.8
       }
     },
     {
@@ -139,14 +148,17 @@
       "elements": {
         "mandatory": 3,
         "constrained": 12,
-        "illustrative": 7
+        "illustrative": 7,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -170,7 +182,8 @@
       "elements": {
         "mandatory": 1,
         "constrained": 11,
-        "illustrative": 4
+        "illustrative": 4,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -189,13 +202,15 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [
         "Group 3 (12312): 'at the perimeter of the Bandit Camp, 6\" from its centre' conflicts with a Camp 'about 4\"×4\"' (12280), whose perimeter lies about 2\" from its centre. The map draws the literal 6\" ring from the centre with Group 3 as an illustrative (grey dashed) marker and does not choose between the two readings."
       ],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 270.3
+        "height": 274.2
       }
     },
     {
@@ -219,7 +234,8 @@
       "elements": {
         "mandatory": 4,
         "constrained": 8,
-        "illustrative": 4
+        "illustrative": 4,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -230,11 +246,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -258,14 +276,17 @@
       "elements": {
         "mandatory": 4,
         "constrained": 9,
-        "illustrative": 10
+        "illustrative": 10,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -289,7 +310,8 @@
       "elements": {
         "mandatory": 2,
         "constrained": 7,
-        "illustrative": 7
+        "illustrative": 7,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -300,11 +322,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -328,7 +352,8 @@
       "elements": {
         "mandatory": 0,
         "constrained": 12,
-        "illustrative": 6
+        "illustrative": 6,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -339,11 +364,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -367,7 +394,8 @@
       "elements": {
         "mandatory": 3,
         "constrained": 11,
-        "illustrative": 10
+        "illustrative": 10,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -379,11 +407,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -407,16 +437,19 @@
       "elements": {
         "mandatory": 3,
         "constrained": 7,
-        "illustrative": 10
+        "illustrative": 10,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [
         "'left side aisle' and 'right side aisle' (Groups 1 and 2): the source does not say from which viewpoint left and right are taken, and the nave's orientation is not fixed; the map shows one aisle each without asserting which is 'left'."
       ],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -441,7 +474,8 @@
       "elements": {
         "mandatory": 3,
         "constrained": 11,
-        "illustrative": 7
+        "illustrative": 7,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -452,11 +486,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -480,7 +516,8 @@
       "elements": {
         "mandatory": 1,
         "constrained": 8,
-        "illustrative": 13
+        "illustrative": 13,
+        "unresolved": 1
       },
       "undrawn_conditional": [
         {
@@ -491,13 +528,23 @@
           ]
         }
       ],
+      "unresolved_elements": [
+        {
+          "id": "u3",
+          "note": "Group 3 arrival edge not fixed: no edge qualifies as written (see text)",
+          "lines": [
+            12927
+          ]
+        }
+      ],
       "ambiguities": [
         "Group 3 arrival edge (12927): 'a random battlefield edge that is not adjacent to either deployment corner' cannot be satisfied when the parties deploy in opposite corner zones, because each of the four edges touches one of those corners. No arrival edge is drawn; the owner must say which edges qualify."
       ],
-      "status": "blocked-by-ambiguity",
+      "iconography": "shared-v2",
+      "status": "blocked-by-ambiguity (one element shown as unresolved with a ? tag; owner decision needed)",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 274.2
       }
     },
     {
@@ -522,7 +569,8 @@
       "elements": {
         "mandatory": 2,
         "constrained": 2,
-        "illustrative": 9
+        "illustrative": 9,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -533,13 +581,15 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [
         "The 'start' short edge (12997): the scenario names the 'start' side but not which short edge it is or who chooses it; the 10.1 step 11 default assigns different edges to the parties and so cannot be applied here. Drawn at the top as an illustration."
       ],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -563,7 +613,8 @@
       "elements": {
         "mandatory": 1,
         "constrained": 0,
-        "illustrative": 16
+        "illustrative": 16,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -581,11 +632,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
+        "height": 263.8
       }
     },
     {
@@ -609,16 +662,19 @@
       "elements": {
         "mandatory": 1,
         "constrained": 10,
-        "illustrative": 9
+        "illustrative": 9,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [
         "Group 2 (13164): 'Place using normal alternating scenario placement' does not say who places the group or what limits apply; 10.1 step 7 and step 9 give an alternating rule only for terrain and weather markers. Group 2 is drawn as an unfixed (open) marker."
       ],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -641,18 +697,21 @@
       ],
       "elements": {
         "mandatory": 3,
-        "constrained": 12,
-        "illustrative": 5
+        "constrained": 17,
+        "illustrative": 5,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [
         "Party A's edge (13214, 13239): Party A deploys at the end 'farther from the Heart' while the Heart lies at least 12\" from Party A's edge, so each rule is defined by the other; if the Heart is equidistant from both ends neither end is 'farther'. The map puts Party A at the top with the Heart in the lower half, which satisfies both.",
         "Under Passage length (13212): the passage is 'about 18\" long' yet 'runs from one short battlefield edge to the other' of a 36\"×36\" battlefield; both cannot hold for a straight run. The map draws a winding passage between the two short edges and prints no length."
       ],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
+        "height": 263.8
       }
     },
     {
@@ -676,14 +735,17 @@
       "elements": {
         "mandatory": 2,
         "constrained": 9,
-        "illustrative": 8
+        "illustrative": 8,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 263.8
       }
     },
     {
@@ -708,7 +770,8 @@
       "elements": {
         "mandatory": 1,
         "constrained": 9,
-        "illustrative": 6
+        "illustrative": 6,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -726,11 +789,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -754,14 +819,17 @@
       "elements": {
         "mandatory": 3,
         "constrained": 8,
-        "illustrative": 6
+        "illustrative": 6,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
+        "height": 263.8
       }
     },
     {
@@ -785,7 +853,8 @@
       "elements": {
         "mandatory": 3,
         "constrained": 1,
-        "illustrative": 13
+        "illustrative": 13,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -804,11 +873,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -832,14 +903,17 @@
       "elements": {
         "mandatory": 1,
         "constrained": 5,
-        "illustrative": 11
+        "illustrative": 11,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
+        "height": 263.8
       }
     },
     {
@@ -863,14 +937,17 @@
       "elements": {
         "mandatory": 0,
         "constrained": 5,
-        "illustrative": 8
+        "illustrative": 8,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
+        "height": 263.8
       }
     },
     {
@@ -894,14 +971,17 @@
       "elements": {
         "mandatory": 3,
         "constrained": 4,
-        "illustrative": 8
+        "illustrative": 9,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
+        "height": 263.8
       }
     },
     {
@@ -925,14 +1005,17 @@
       "elements": {
         "mandatory": 2,
         "constrained": 4,
-        "illustrative": 12
+        "illustrative": 12,
+        "unresolved": 0
       },
       "undrawn_conditional": [],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -956,7 +1039,8 @@
       "elements": {
         "mandatory": 3,
         "constrained": 4,
-        "illustrative": 7
+        "illustrative": 7,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -968,11 +1052,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -996,7 +1082,8 @@
       "elements": {
         "mandatory": 1,
         "constrained": 7,
-        "illustrative": 10
+        "illustrative": 10,
+        "unresolved": 1
       },
       "undrawn_conditional": [
         {
@@ -1014,13 +1101,23 @@
           ]
         }
       ],
+      "unresolved_elements": [
+        {
+          "id": "u1",
+          "note": "Tomb Herald not placed: no Sarcophagus is designated central (see text)",
+          "lines": [
+            13948
+          ]
+        }
+      ],
       "ambiguities": [
         "Tomb Herald (13948): the Herald starts 'guarding the central Sarcophagus', but the three Sarcophagi are placed in separate chambers and none is designated central; the Herald is not drawn."
       ],
-      "status": "blocked-by-ambiguity",
+      "iconography": "shared-v2",
+      "status": "blocked-by-ambiguity (one element shown as unresolved with a ? tag; owner decision needed)",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 274.2
       }
     },
     {
@@ -1044,7 +1141,8 @@
       "elements": {
         "mandatory": 0,
         "constrained": 3,
-        "illustrative": 7
+        "illustrative": 7,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -1063,11 +1161,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
+        "height": 263.8
       }
     },
     {
@@ -1091,7 +1191,8 @@
       "elements": {
         "mandatory": 1,
         "constrained": 5,
-        "illustrative": 7
+        "illustrative": 7,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -1102,11 +1203,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
+        "height": 263.8
       }
     },
     {
@@ -1130,7 +1233,8 @@
       "elements": {
         "mandatory": 2,
         "constrained": 4,
-        "illustrative": 10
+        "illustrative": 10,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -1141,11 +1245,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -1169,7 +1275,8 @@
       "elements": {
         "mandatory": 3,
         "constrained": 4,
-        "illustrative": 10
+        "illustrative": 10,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -1187,13 +1294,15 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [
         "Group 2 (14252): 'patrolling murky water' - the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258), while Group 2 patrols water outside the Barrow's sanctum; whether outer Shallow Water counts as murky is not stated. Group 2 is drawn as an illustrative marker in an outer Shallow patch."
       ],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     },
     {
@@ -1217,7 +1326,8 @@
       "elements": {
         "mandatory": 0,
         "constrained": 7,
-        "illustrative": 6
+        "illustrative": 6,
+        "unresolved": 1
       },
       "undrawn_conditional": [
         {
@@ -1242,13 +1352,23 @@
           ]
         }
       ],
+      "unresolved_elements": [
+        {
+          "id": "u1",
+          "note": "Escape edge not stated (see text)",
+          "lines": [
+            14333
+          ]
+        }
+      ],
       "ambiguities": [
         "Escape edge (14333): 'Escape Conditions: Required for the Sunstone Amulet and for any unbanked rewards from Offering Piles' names no battlefield edge or extraction zone, and 10.4's fallback to any edge is stated only for Secondary Objectives (10984). No exit is drawn; the owner must state the legal extraction edge."
       ],
-      "status": "blocked-by-ambiguity",
+      "iconography": "shared-v2",
+      "status": "blocked-by-ambiguity (one element shown as unresolved with a ? tag; owner decision needed)",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
+        "height": 274.2
       }
     },
     {
@@ -1272,7 +1392,8 @@
       "elements": {
         "mandatory": 1,
         "constrained": 4,
-        "illustrative": 9
+        "illustrative": 9,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -1283,11 +1404,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 259.9
+        "height": 263.8
       }
     },
     {
@@ -1311,7 +1434,8 @@
       "elements": {
         "mandatory": 2,
         "constrained": 5,
-        "illustrative": 7
+        "illustrative": 7,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -1322,11 +1446,13 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 274.2
       }
     },
     {
@@ -1350,7 +1476,8 @@
       "elements": {
         "mandatory": 2,
         "constrained": 5,
-        "illustrative": 7
+        "illustrative": 7,
+        "unresolved": 2
       },
       "undrawn_conditional": [
         {
@@ -1368,14 +1495,31 @@
           ]
         }
       ],
+      "unresolved_elements": [
+        {
+          "id": "u1",
+          "note": "Group 1 arrival: the \"water edge\" is not defined (see text)",
+          "lines": [
+            14552
+          ]
+        },
+        {
+          "id": "u2",
+          "note": "Escape edge not stated (see text)",
+          "lines": [
+            14568
+          ]
+        }
+      ],
       "ambiguities": [
         "Group 1 arrival (14552): the group 'enters from a water edge', but the scenario never says which battlefield edge is a water edge. The arrival edge is not drawn.",
         "Escape edge (14568): 'Required only if a party is carrying the Salttide's Counting Stone' names no battlefield edge or extraction zone. No exit is drawn; the owner must state the legal extraction edge."
       ],
-      "status": "blocked-by-ambiguity",
+      "iconography": "shared-v2",
+      "status": "blocked-by-ambiguity (one element shown as unresolved with a ? tag; owner decision needed)",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 274.2
       }
     },
     {
@@ -1399,7 +1543,8 @@
       "elements": {
         "mandatory": 2,
         "constrained": 4,
-        "illustrative": 5
+        "illustrative": 5,
+        "unresolved": 0
       },
       "undrawn_conditional": [
         {
@@ -1410,17 +1555,42 @@
           ]
         }
       ],
+      "unresolved_elements": [],
       "ambiguities": [],
+      "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 249.5
+        "height": 253.4
       }
     }
   ],
   "appendix": [
     {
       "key": "Appendix A: Learn to Play, A.4 Quickstart Scenario: The Broken Courier",
+      "setup_rules": [
+        "A.2 terrain list",
+        "A.4 Setup Roll-off (short edge, 4\" zones)",
+        "A.11 Initial Positions"
+      ],
+      "drawn_in_figure": [
+        "24\"x24\" battlefield drawn by the shared map renderer at 7.5 pt per inch",
+        "4\" deployment zones on the two short edges (16184, 16354)",
+        "3\"x3\" centre ruin, Blocking (16108)",
+        "low wall about 2\"x3\", Impassable, 4-6\" from the centre on one flank (16109; flank open, grey dashed)",
+        "rubble about 3\"x3\", Cover tagged Difficult, 4-6\" from the centre on the opposite flank (16110; grey dashed)",
+        "two Cover scatter pieces (16111; grey dashed)",
+        "Dispatch Satchel adjacent to the centre ruin (16180, 16358; side not stated, so one legal arrangement in grey dashes)",
+        "4 Dire Wolves within 2\" of the Satchel (16182; grey dashed) with the A.11 relative layout shown as a labelled inset",
+        "Treasure Chest 5\" east of centre (A.11 table, 16359), Heroes Edric, Mara, Varek, Senna at the A.11 table positions (16360-16363)",
+        "extraction through any battlefield edge (16194)"
+      ],
+      "not_drawn": [
+        "the third scatter piece (A.2 allows 2-3; positions open)"
+      ],
+      "ambiguities": [
+        "Which side of the centre ruin the Satchel (and therefore the Dire Wolves) stands on is not stated; drawn as one legal arrangement."
+      ],
       "source_lines": [
         16172,
         16208
@@ -1428,29 +1598,40 @@
       "map_figure": "FIG-18",
       "detail_figures": [],
       "insert_after": "B16371",
-      "setup_rules": [
-        "A.2 terrain list",
-        "A.4 Setup Roll-off (short edge, 4\" zones)"
-      ],
-      "drawn_in_figure": [
-        "24\"x24\" battlefield",
-        "4\" deployment bands on both short edges (16184)",
-        "3\"x3\" centre ruin, Blocking (16108)",
-        "Dispatch Satchel adjacent to the centre ruin (16180; side not stated, so the adjacent band is outlined)",
-        "Treasure Chest 5\" east of centre (A.11 sample; A.4 allows 5-6\" near one flank, 16180)",
-        "Dire Wolves within 2\" of the Satchel (16182) as a relative layout inset",
-        "Hero starting positions from the A.11 table"
-      ],
-      "not_drawn": [
-        "A.2 flank low wall (4-6\" from centre), flank rubble patch and 2-3 scatter pieces (16109-16111): positions are open and are not needed for deployment"
-      ],
-      "ambiguities": [
-        "Which side of the centre ruin the Satchel (and therefore the Dire Wolves) stands on is not stated."
-      ],
-      "status": "drawn (existing FIG-18 checked; unchanged)"
+      "elements": {
+        "mandatory": 7,
+        "constrained": 2,
+        "illustrative": 9,
+        "unresolved": 0
+      },
+      "iconography": "shared-v2",
+      "status": "drawn with the shared map renderer and glyph set; compact key strip on the figure",
+      "map_size_pt": {
+        "width": 504,
+        "height": 495.6
+      }
     },
     {
       "key": "Appendix B: Basic Mode, B.6 Basic Scenario: The Courier's Strongbox",
+      "setup_rules": [
+        "B.6 deployment (4\" of opposite edges)",
+        "B.6 Monster Setup (3 Monster Entry markers, 5-7\" from centre, 4\" apart)"
+      ],
+      "drawn_in_figure": [
+        "24\"x24\" battlefield drawn by the shared map renderer at 7.5 pt per inch",
+        "4\" zones on opposite edges (17078; which edges is not stated, so grey dashed, north and south drawn)",
+        "road across the centre (17076; width not stated)",
+        "Strongbox at the centre (17082)",
+        "Monster Entry markers 5-7\" from the centre, at least 4\" apart, outside both zones (17080)",
+        "one Monster group and one Satchel on each marker, drawn beside it (17080, 17082)",
+        "2 ruins/carts/low walls within 4\" of centre, 4 quarter pieces of 3\"x3\" (17076)",
+        "extraction through the own deployment edge (17090)",
+        "no Advanced Mode rules shown"
+      ],
+      "not_drawn": [
+        "which opposite edges are the deployment edges and who places the Entry markers are not stated (north and south drawn as one legal arrangement)"
+      ],
+      "ambiguities": [],
       "source_lines": [
         17072,
         17095
@@ -1458,24 +1639,18 @@
       "map_figure": "FIG-19",
       "detail_figures": [],
       "insert_after": "B17082",
-      "setup_rules": [
-        "B.6 deployment (4\" of opposite edges)",
-        "B.6 Monster Setup (3 Monster Entry markers, 5-7\" from centre, 4\" apart)"
-      ],
-      "drawn_in_figure": [
-        "24\"x24\" battlefield",
-        "4\" bands on opposite edges (17078)",
-        "Strongbox at the centre (17082)",
-        "Monster Entry band 5-7\" from centre, markers at least 4\" apart, outside both zones (17080)",
-        "one Satchel on each Entry marker (17082)",
-        "road across the centre, 2 ruins/carts/low walls within 4\" of centre, 4 quarter pieces of 3\"x3\" (17076)",
-        "no Advanced Mode rules shown"
-      ],
-      "not_drawn": [
-        "which opposite edges are the deployment edges and who places the Entry markers are not stated (north and south drawn)"
-      ],
-      "ambiguities": [],
-      "status": "drawn (existing FIG-19 checked; unchanged)"
+      "elements": {
+        "mandatory": 1,
+        "constrained": 9,
+        "illustrative": 10,
+        "unresolved": 0
+      },
+      "iconography": "shared-v2",
+      "status": "drawn with the shared map renderer and glyph set; compact key strip on the figure",
+      "map_size_pt": {
+        "width": 504,
+        "height": 411.8
+      }
     }
   ],
   "procedural": {
@@ -1485,6 +1660,7 @@
       11073
     ],
     "map_figure": "FIG-57",
+    "iconography": "shared-v2",
     "legend_figure": "FIG-20",
     "detail_figures": [
       "FIG-13",
@@ -1506,9 +1682,12 @@
     "template_figure": "FIG-57",
     "elements": {
       "mandatory": 68,
-      "constrained": 243,
-      "illustrative": 286
+      "constrained": 248,
+      "illustrative": 287,
+      "unresolved": 5
     },
+    "iconography": "shared-v2",
+    "glyph_registry": "figures/src/scenkit.py (REG); key FIG-20",
     "ambiguities_logged": 15,
     "global_notes": [
       "Group placement constraints ('within 3\" of ...', 'at least 8\" from ...') are drawn for one marker per Monster Group; the text does not say whether every member of a multi-Monster group must satisfy them.",
