@@ -161,25 +161,25 @@
 <text x="124.52" y="111.81" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
 <text x="84" y="34.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
 <text x="84" y="214.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
-<text x="71.62" y="82.83" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Hall 8"×4"</text>
-<text x="32.32" y="87.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Chamber</text>
+<text x="101.59" y="144.1" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Hall 8"×4"</text>
+<text x="37.79" y="93.5" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Chamber</text>
 <text x="161.45" y="80.67" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Chamber</text>
 <text x="193.7" y="93.3" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Shelves</text>
 <text x="132.9" y="82.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Dust</text>
 <g data-glyph="leader">
-<line x1="121.5" y1="127.7" x2="121.5" y2="136.2" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="121.5" y1="127.7" x2="121.5" y2="150.2" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="109.45" y="144.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Codex</text>
+<text x="109.45" y="158.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Codex</text>
 <text x="54.47" y="107.62" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Cache</text>
 <text x="31.2" y="70.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Chest</text>
 <g data-glyph="leader">
-<line x1="132.9" y1="132.96" x2="132.9" y2="152.35" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="134.58" y1="132.7" x2="139.71" y2="148.96" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="126.79" y="160.95" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Warden·R</text>
+<text x="141.41" y="157.56" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Warden·R</text>
 <g data-glyph="leader">
-<line x1="187.5" y1="139.56" x2="187.5" y2="148.06" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="187.5" y1="139.56" x2="187.5" y2="149.94" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="178.46" y="156.66" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·R</text>
+<text x="187.47" y="158.54" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">G1·R</text>
 <g data-glyph="leader">
 <line x1="55.5" y1="142.56" x2="55.5" y2="148.78" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>

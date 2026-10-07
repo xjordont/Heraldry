@@ -789,7 +789,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12427-12494; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "be4678b91d07f6e883af0bc7bf41e413aec44c7ff37ce029f0d9018c9127f9ee",
+    "svg_sha256": "79224bd940b155188f1ec1bf2c185041d55c517f5f7c5c072960998aacf40606",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -867,7 +867,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12624-12703; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "86c1e24a790341c97356ed833d88475f8d130862158d91a10057b34b98b19172",
+    "svg_sha256": "a9c445f527bb36680c5be14ec001a5db1136c7d1de1fdf10aaf784933c41a2dd",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1101,7 +1101,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13366-13417; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "a4b70812445a84cebe546d2d37183e4fe3e6b93fb5d46a4db68f6a185f1525db",
+    "svg_sha256": "d908d658eaee9c31b61f3a10ae83b7b9a5c6452e0549ee98e92a10a72f0194a3",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
