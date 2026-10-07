@@ -41,3 +41,11 @@ The independent auditor reviews without relying on the designer's assertions. As
 ## Art-light acceptance
 
 With no authorized image route, a typographic cover, sparse original vector marks, exact instructional figures, and composed clean pages are acceptable for an art-light edition. Do not fill missing illustrations with repeated generic silhouettes, decorative clip art, fake signatures, or prompts rendered as reader-facing placeholders. Keep the missing atmospheric suite visibly incomplete in the production report, while finishing the rest of the publication.
+
+## Owner-requested refinement, 2026-10-07
+
+Apply DESIGN_REFINEMENT.md before treating the requested visual iteration as complete. An art-light/geometry PASS remains a scoped historical result; it does not satisfy the owner's request for a less plain illustrated product.
+
+Review every major-section/scenario start, short fit-capable table and table/entry continuation. Headings need meaningful following content; short subsections should move together where they fit. Tables require attached caption, intact rows, repeat headers and identifying continuation. Inspect wide components with the prose above/below them and reject avoidable isolated rows, detached setup/maps and unexplained lone-column voids. Keep detailed evidence for T004 and T327 and the Whispering Grove scenario. Do not classify genuinely over-height tables or deliberate section-start whitespace as failures simply because they span pages or leave space.
+
+The requested design/pagination repairs are PENDING until implemented, rendered, reconciled and reviewed. Existing detector reports do not certify those new requirements. Record automated geometry, aesthetic review, artwork completeness and physical proof as separate statuses.

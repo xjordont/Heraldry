@@ -57,3 +57,9 @@ Rules diagrams use crisp editable vector geometry, clean typography, consistent 
 Follow VISUAL_QA.md. Keep foreground ink separate from the page substrate. Transparent spot art or a clean matte matching the actual cream is preferred; preserve native masters and avoid a bright rectangular paper patch or fringe. Use controlled asymmetry and specific source-supported equipment/architecture rather than generic skulls, hooded warriors, ornate weapons, smoke and spires repeated across chapters. Choose one clear focal subject and readable silhouette for each small vignette; cut incidental hatch before it turns into muddy grey at print size.
 
 Review hands, joints, armour closures, weapon grips, material transitions, masonry, scale and setting facts in enlarged crops, then inspect the placed size. A beautiful texture cannot rescue incoherent construction. The dark-fantasy character must survive a paper-white background without blanket grain or a heavy frame. This is a visible-quality contract, not a promise to hide generated provenance or an instruction to misrepresent authorship.
+
+## Current reference calibration and GPT route
+
+Use only the ten owner-selected references in REFERENCE_ANALYSIS.md. Deth Wizards pp9/27 supplies useful silhouette and ink observations; BlackDeathCity pp32/36/74 and The Village Hunt pp6/14/16 supply art/text composition lessons. These are abstract design observations, not assets to copy. Keep the shared original style anchor and clean substrate.
+
+See ART_AUTOMATION.md for ChatGPT generation versus an unattended OpenAI API runner. The current review adds a route specification, not an implemented runner or spending authorization. Claude cannot inherit this chat's image tool; paid_calls_authorized remains false and the external image budget remains $0 until an owner decision. Preserve native masters and stable manifest IDs; an image must pass subject, print-resolution and placed-size checks before integration.

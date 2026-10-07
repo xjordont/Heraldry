@@ -1,12 +1,12 @@
 # Heraldry publication design specification
 
-Status: implementation brief, distilled from supplied visual references. These specifications guide the first stress specimen. Tune optical details once after rendering, then apply the resulting system consistently. MASTER_PROMPT.md governs source preservation, budget, and completion. The manuscript governs all mechanics and terminology.
+Status: implementation brief, distilled from the ten owner-selected visual references. `docs/DESIGN_REFINEMENT.md` supplies the latest owner-requested iteration and overrides the earlier specimen freeze. These specifications guide the first stress specimen. Tune optical details once after rendering, then apply the resulting system consistently. MASTER_PROMPT.md governs source preservation, budget, and completion. The manuscript governs all mechanics and terminology.
 
 ## 1. Visual identity
 
 Build an original dark medieval fantasy reference book with a light, clean reading field: almost-white cream/parchment tone, black ink, readable serif prose, practical sans-serif tables, restrained display headings, sparse original heraldic ornament, economical ink vignettes, and crisp vector diagrams. The physical output is borderless portrait US Letter for home inkjet printing. Implement starting values from `config/design_tokens.json` and acceptance checks from `docs/VISUAL_QA.md`; refine once on real content, then freeze. High production quality must show in ordinary reference pages, not just a decorative cover.
 
-Reference assignments: BlackDeathCity and Deth Wizards for atmosphere and vignette placement; Mythras for calm grayscale prose; Hametsu and Five Leagues for tables, examples, and navigation; Hellcrawl for keyed entries. Relicblade additionally informs specific ink vignettes/open space; Ker Nethalas informs spare typographic chapter recognition; Nimble informs nearby compact visual examples. Secondary references address diagrams, index, and recurring entry anatomy only. Do not clone a page, extract source art into the book, or import reference mechanics.
+Reference assignments: BlackDeathCity and Deth Wizards for atmosphere and vignette placement; Mythras for calm grayscale prose; Hametsu and Five Leagues for tables, examples, and navigation; Hellcrawl for keyed entries. The Village Hunt informs silhouette/open-space integration; Dread Nights informs hierarchy and labelled entries; TNA Ultimate and TES: Call to Arms inform nearby exact instructional diagrams. Use only the ten titles recorded in `references/sample_pdfs.json`. Do not clone a page, extract source art into the book, or import reference mechanics.
 
 Default substrate: flat `#FCFAF5` warm cream from edge to edge, with a paper-white `#FFFFFF` export using identical pagination for cream stock or lower ink use. Parchment here means a very light restrained tone, not distressed texture. No scanned paper stains, burned edges, gritty noise, repeated texture, decorative watermark, distressed body font, heavy perimeter frame, colour-only coding, or dark ordinary-page background. Use an opaque page background independent of body margins; never place a white rectangle behind every paragraph/table. See `docs/INKJET_PRINT.md` for the file and proof contract.
 
@@ -38,7 +38,7 @@ These are targets, not measurements copied from the books. Optical adjustment is
 
 ## 4. Reading flow
 
-Keep definition, procedure, exceptions, and interpretive table notes together where practical. Keep headings with at least a meaningful paragraph or two complete list items. Prevent single-line widows/orphans without forcing large gaps. Keep ordinary table rows intact; handle over-height rows explicitly.
+Apply the explicit fresh-page and conditional-keep policy in DESIGN_REFINEMENT.md. Chapters, major numbered sections and named scenarios start on fresh pages, with the first section composed with its chapter opener. Nested headings keep meaningful opening content; short fit-capable subsections and tables move whole when necessary. Keep definition, procedure, exceptions, and interpretive table notes together where practical. Keep headings with at least a meaningful paragraph or two complete list items. Prevent single-line widows/orphans without forcing large gaps. Keep ordinary table rows intact; handle over-height rows explicitly.
 
 Start with non-justified body text. If adopting justification, require Canadian English hyphenation and inspect spacing/rivers. Prevent breaks within short dice notation, bracketed costs, modifiers, and values with units, using layout semantics rather than changing canonical text.
 

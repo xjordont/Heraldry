@@ -28,3 +28,9 @@ The full book was generated before the formal specimen because the pipeline rend
 7. Main matter starts on a recto (blank verso after contents); folio parity matches physical parity; PDF page labels i–v, 1–n.
 8. Prose-heavy many-column tables (18) are labelled entries; single-row formula stat tables (34) are key/value profiles; monster stat lines (138) are compact six-field strips.
 9. Chapters start on a new page, not forced recto, to avoid extra blank pages in a home-printed stack.
+
+## Reference re-review and owner refinement — 2026-10-07
+
+The earlier frozen-system note above describes the original cloud run, when PDFs were unavailable; it is retained as history. The ten correct original references are now on main with Git LFS and 23 selected PDF pages were visually inspected for this review. Current assignments and exact viewer-page evidence are in docs/REFERENCE_ANALYSIS.md. Earlier references outside the owner's ten-book list are no longer active design authorities.
+
+The owner finds the latest draft too plain and requests improved sectional/table flow. docs/DESIGN_REFINEMENT.md records observed cases in the verified RC485 digital PDF (453 pages) and the next concrete component/pagination requirements. The old visual freeze is reopened for this iteration. No renderer, tokens, manuscript, artwork or PDFs were changed in this documentation checkpoint; implementation and the next visual gate remain PENDING. Preserve original review ledgers and write new hash-bound evidence after actual repairs.

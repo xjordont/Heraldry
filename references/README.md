@@ -41,3 +41,6 @@ Adapt the references to Heraldry's clean dark fantasy identity, pale cream/white
 The full reference PDFs and reference-page renders remain excluded from Heraldry's published PDFs, specimen and release ZIP. Only owner-selected originals are tracked through LFS; rendered pages remain local. Preserve private repository visibility. This reference correction does not change the manuscript RC number.
 
 All ten original PDFs were retrieved from GitHub LFS and verified by SHA256 and byte count on 2026-10-06 before their entries were committed. The active folder contains only these ten selected titles; unrelated PDFs were removed from main. The successful one-time import workflow and helper remain recoverable in Git history and have been removed from the active project.
+
+
+The latest actual-page observations are in `docs/REFERENCE_ANALYSIS.md`; the owner's requested design and pagination iteration is `docs/DESIGN_REFINEMENT.md`. The older larger reference analysis has been replaced. These documents are a production handoff, not a claim that the current PDFs have already been redesigned.

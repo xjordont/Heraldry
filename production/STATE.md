@@ -12,7 +12,7 @@ Future text edits follow `docs/WORKFLOW.md` and promote an approved exact patch 
 
 Digital PDF: 453 pages. Cream and white interiors: 450 pages each, identical pagination. Current covers, calibration, print instructions, 13-page specimen and ZIP are under dist/. The calibration ruler stays within its column. PDF timestamps are pinned to the revision date.
 
-12 regression tests PASS; 18/18 release checks PASS. 8,426 source text blocks in order; 332 tables / 10,341 cells; 19 figures with prior independent reviews also bound to source-rule dependencies. All 436 pages inspected as 24-dpi contact sheets, five pages at 100 dpi, covers, calibration and one 1.03 overscan page; exact hash/scope in the visual ledger. Not full glyph-level proofreading or a complete rules contradiction audit.
+12 regression tests PASS; 18/18 release checks PASS. 8,426 source text blocks in order; 332 tables / 10,341 cells; 57 figures with source-bound semantic reviews (current scenario-map run below). The latest visual ledger records all 450 interior pages at contact-sheet scale and selected detail reviews; exact hash/scope in the visual ledger. Not full glyph-level proofreading or a complete rules contradiction audit.
 
 Clean repeated builds produced identical cream, white, digital and cover PDF bytes. Packaging verifies unique entries/checksums and includes all instructions, agents, reference metadata and fonts needed by a clean checkout. GitHub checks protect prior snapshots/records against the base commit. Extracted-package rebuild evidence is in production/qa/rebuild-audit.json.
 
@@ -29,3 +29,11 @@ Resume requested component work; do not restart initial production. Read the bud
 - Manuscript: unchanged (RC485). No text patches proposed this run.
 - Verified: 18/18 checks PASS; all 450 pages inspected; package rebuilt.
 - Spend: measured $90.25 of $100; only repair/packaging remains authorized within budget.
+
+## Owner design review — 2026-10-07
+
+The owner requests a less plain design, better sectional/table pagination, a GPT art route and an InDesign feasibility assessment. Read docs/DESIGN_REFINEMENT.md and docs/ART_AUTOMATION.md next. The ten correct reference books were inspected at 23 selected pages; docs/REFERENCE_ANALYSIS.md replaces the incorrect larger reference analysis and the standing brief now uses only these ten.
+
+Representative current draft/code review found avoidable T004 splitting, awkward C.5/T327 composition, unillustrated chapter openings and dispersed scenario openings. Current automated geometry checks do not cover the new sectional/table design contract. Requested redesign status: PENDING IMPLEMENTATION AND VISUAL REVIEW. This checkpoint changes instructions/evidence only; existing dist PDFs and RC485 remain unchanged. Historical release PASS is scoped to its existing checks, not approval of the requested redesign. Optional editable InDesign export is scoped but not started.
+
+Next: preflight/tests; enforce fresh-page/conditional-keep policy and improve components on the specified real-content stress cases; integrate artwork only through supplied masters or an authorized service; apply across the book, inspect continuations/scenarios and all-page rhythm, reconcile, rebuild navigation and package with current hashes. Work on main. Latest Claude spend remains $90.25/$100; do not reset it. Paid image authorization remains false/$0. If remaining resources are insufficient, preserve a buildable repair checkpoint and report exact pending work.
