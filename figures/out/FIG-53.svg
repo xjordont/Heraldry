@@ -54,11 +54,11 @@
 <g data-glyph="ter-open" data-state="illus">
 <circle cx="148.5" cy="101" r="9" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="169.5" y="74" width="30" height="18" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-cover" data-state="illus">
+<rect x="169.5" y="74" width="30" height="18" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="43.5" y="158" width="30" height="18" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-cover" data-state="illus">
+<rect x="43.5" y="158" width="30" height="18" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="ring">
 <g clip-path="url(#bclip)">

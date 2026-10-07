@@ -52,8 +52,8 @@
 <g data-glyph="ter-open" data-state="illus">
 <circle cx="184.5" cy="164" r="12" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="169.5" y="89" width="30" height="18" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-cover" data-state="illus">
+<rect x="169.5" y="89" width="30" height="18" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="chest">
 <rect x="102.08" y="106.62" width="8.84" height="6.76" fill="#d9d9d9" stroke="#000" stroke-width="1"/>

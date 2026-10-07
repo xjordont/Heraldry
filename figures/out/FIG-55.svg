@@ -52,8 +52,14 @@
 <g data-glyph="ter-open" data-state="illus">
 <circle cx="79.5" cy="86" r="9" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="133.5" y="74" width="24" height="18" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-open" data-state="illus">
+<circle cx="169.5" cy="146" r="8.4" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+</g>
+<g data-glyph="ter-open" data-state="illus">
+<circle cx="76.5" cy="164" r="8.4" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+</g>
+<g data-glyph="ter-cover" data-state="illus">
+<rect x="133.5" y="74" width="24" height="18" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="obj">
 <polygon points="107.7,104.8 112.9,110 107.7,115.2 102.5,110" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
@@ -120,9 +126,9 @@
 </g>
 <text x="102.51" y="156.26" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Salttide·A</text>
 <g data-glyph="leader">
-<line x1="88.5" y1="139.56" x2="88.5" y2="144.26" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="88.5" y1="128.44" x2="88.5" y2="123.74" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="69.28" y="152.86" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Croc·A</text>
+<text x="69.28" y="120.74" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Croc·A</text>
 <text x="13.5" y="10.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">The Mire 5</text>
 <text x="59.24" y="10.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">·  36"×36"</text>
 <g data-glyph="compass">

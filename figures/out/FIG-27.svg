@@ -55,11 +55,13 @@
 <g data-glyph="ter-blocking" data-state="illus">
 <rect x="85.5" y="146" width="7.2" height="24" fill="#c4c4c4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-cover" data-state="illus">
+<g data-glyph="ter-coverdiff" data-state="illus">
 <rect x="151.5" y="86" width="24" height="24" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="151.5" y="86" width="24" height="24" fill="url(#p-diffo-l)"/>
 </g>
-<g data-glyph="ter-cover" data-state="illus">
+<g data-glyph="ter-coverdiff" data-state="illus">
 <rect x="79.5" y="176" width="24" height="18" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="79.5" y="176" width="24" height="18" fill="url(#p-diffo-l)"/>
 </g>
 <g data-glyph="ter-open">
 <rect x="85.5" y="86" width="12" height="12" fill="none" stroke="#000" stroke-width="0.9"/>

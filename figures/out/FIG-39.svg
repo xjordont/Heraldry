@@ -60,8 +60,9 @@
 <g data-glyph="ter-blocking" data-state="illus">
 <rect x="79.5" y="188" width="36" height="7.2" fill="#c4c4c4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-cover" data-state="illus">
+<g data-glyph="ter-coverdiff" data-state="illus">
 <rect x="181.5" y="62" width="24" height="18" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="181.5" y="62" width="24" height="18" fill="url(#p-diffo-l)"/>
 </g>
 <g data-glyph="dim">
 <line x1="123.85" y1="51.86" x2="152.08" y2="74.21" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>

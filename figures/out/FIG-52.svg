@@ -55,8 +55,9 @@
 <g data-glyph="ter-water" data-state="illus">
 <rect x="61.5" y="164" width="30" height="24" fill="url(#p-water-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="97.5" y="68" width="36" height="6" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-coverdiff" data-state="illus">
+<rect x="97.5" y="68" width="36" height="6" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="97.5" y="68" width="36" height="6" fill="url(#p-diffo-l)"/>
 </g>
 <g data-glyph="obj">
 <polygon points="106.5,101.8 111.7,107 106.5,112.2 101.3,107" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>

@@ -983,6 +983,62 @@ def _text_of(lines):
     return cited_text(lines)
 
 
+# 2.9.1 standard assignments (source lines 849-872) for the named terrain pieces the maps draw.  A piece is named by its label
+# (or, if unlabelled, by the labelled sibling with the same id letters, e.g. tr2 -> tr1).  Types the scenario states itself
+# (Mother Tree, Barrow, Tent, Towers, Colossus, Dais, Collapsed edges, Heated ground, Ravine floor, Beams ...) carry no entry here.
+TERRAIN_2_9_1 = [
+    # (label keyword, allowed drawn terrain kinds, 2.9.1 row)
+    ("fallen pillar", {"impassable"}, "fallen pillars: Impassable"),
+    ("tree", {"cover"}, "tree areas: Cover"), ("thicket", {"cover"}, "thickets: Cover"), ("palm", {"cover"}, "trees: Cover"),
+    ("razor reeds", {"cover"}, "reeds: Cover"), ("reeds", {"cover"}, "reeds: Cover"), ("mangroves", {"cover"}, "mangroves: Cover"),
+    ("reed screen", {"coverdiff"}, "reed screens: Cover + Difficult"), ("curtain", {"cover"}, "scenario: Cover"),
+    ("camp", {"cover"}, "scenario: Cover"),
+    ("undergrowth", {"coverdiff"}, "undergrowth: Cover + Difficult"), ("rubble", {"coverdiff"}, "rubble fields: Cover + Difficult"),
+    ("debris", {"coverdiff"}, "debris fields: Cover + Difficult"), ("dune", {"coverdiff"}, "dunes: Cover + Difficult"),
+    ("outcrop", {"coverdiff"}, "rocky outcrops: Cover + Difficult"), ("thorny vines", {"coverdiff"}, "scenario: Cover + Difficult"),
+    ("deep sand", {"difficult"}, "deep sand: Open + Difficult"), ("muck", {"difficult"}, "muck: Open + Difficult"),
+    ("workbench", {"impassable"}, "workbenches: Impassable"), ("low wall", {"impassable"}, "low walls: Impassable"),
+    ("ice barricade", {"impassable"}, "scenario: Impassable"), ("barricade", {"impassable"}, "barricades: Impassable"),
+    ("altar", {"impassable"}, "altars: Impassable"), ("column", {"impassable"}, "broken columns: Impassable"),
+    ("statue", {"impassable"}, "statue bases: Impassable"), ("statuary", {"impassable"}, "statue bases: Impassable"),
+    ("cart or wall", {"impassable"}, "scenario Basic Mode: Impassable"),
+    ("shelves", {"obstacle"}, "shelving: Impassable or Blocking"), ("stalagmite", {"obstacle"}, "stalagmites: Impassable or Blocking"),
+    ("rocks", {"obstacle"}, "boulders: Impassable or Blocking"),
+    ("ice wall", {"blocking"}, "wall sections: Blocking"), ("cave wall", {"blocking"}, "cave walls: Blocking"),
+    ("building", {"blocking"}, "building footprints: Blocking"), ("ruin", {"blocking"}, "ruins: Blocking"),
+    ("pillar", {"blocking"}, "standing pillars: Blocking"), ("wall", {"blocking"}, "wall sections: Blocking"),
+    ("cracked ice", {"slippery"}, "scenario: Slippery"), ("shallow", {"water"}, "Shallow Water"),
+]
+
+
+def terrain_name(sp, e):
+    lab = e.get("label")
+    if not lab:
+        import re as _re
+        pre = _re.sub(r"[^a-zA-Z_].*$", "", e["id"]).rstrip("_")
+        for o in sp["elements"]:
+            if o is not e and o.get("label") and o["kind"] == "feature" and _re.sub(r"[^a-zA-Z_].*$", "", o["id"]).rstrip("_") == pre:
+                lab = o["label"]
+                break
+    return lab
+
+
+def check_terrain_types(key, sp, errs):
+    """Every named terrain piece must be drawn with the type 2.9.1 assigns to it (unless the scenario types it: flag typed_by_scenario)."""
+    for e in sp["elements"]:
+        if e["kind"] != "feature" or e.get("typed_by_scenario"):
+            continue
+        lab = terrain_name(sp, e)
+        if not lab:
+            continue
+        low = lab.lower()
+        for kw, kinds, row in TERRAIN_2_9_1:
+            if re.match(re.escape(kw) + r"\b", low) or (" " in kw and kw in low):
+                if e.get("terrain", "open") not in kinds:
+                    errs.append("%s/%s: %r drawn as %s but 2.9.1 gives %s (%s)" % (key, e["id"], lab, e.get("terrain", "open"), sorted(kinds), row))
+                break
+
+
 def _anno_checks(sp, e, errs, key):
     els = {x["id"]: x for x in sp["elements"]}
     me = footprint(e)
@@ -1113,6 +1169,7 @@ def check_one(key, sp, spans, errs, L, width=COL_W):
             errs.append("%s/%s: printed %s not found in cited source lines" % (key, eid, tok))
     for e in sp["elements"]:
         _anno_checks(sp, e, errs, key)
+    check_terrain_types(key, sp, errs)
     for e in sp["elements"]:
         for note_key in ("note",):
             if note_key in e:

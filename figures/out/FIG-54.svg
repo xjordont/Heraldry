@@ -50,14 +50,14 @@
 <g data-glyph="ter-water" data-state="illus">
 <rect x="37.5" y="74" width="36" height="36" fill="url(#p-water-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="169.5" y="86" width="30" height="18" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-cover" data-state="illus">
+<rect x="169.5" y="86" width="30" height="18" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="169.5" y="134" width="30" height="24" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-difficult" data-state="illus">
+<rect x="169.5" y="134" width="30" height="24" fill="url(#p-diff-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="61.5" y="134" width="30" height="24" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-difficult" data-state="illus">
+<rect x="61.5" y="134" width="30" height="24" fill="url(#p-diff-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="ring">
 <g clip-path="url(#bclip)">

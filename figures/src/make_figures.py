@@ -246,6 +246,18 @@ def write_coverage(dims):
     out = dict(generated="2026-10-07", source="source/Heraldry_RC485.md", scenarios=rows, appendix=appendix, procedural=procedural, summary=summary)
     path = os.path.join(HERE, "..", "..", "production", "qa", "scenario-coverage.json")
     os.makedirs(os.path.dirname(path), exist_ok=True)
+    # independent-review records live in the same file: carry every existing "review" key over, never regenerate it
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            old = json.load(f)
+        for sec in ("scenarios", "appendix"):
+            prev = {r["key"]: r["review"] for r in old.get(sec, []) if "review" in r}
+            for r in out[sec]:
+                if r["key"] in prev:
+                    r["review"] = prev[r["key"]]
+        for sec in ("procedural", "summary"):
+            if "review" in old.get(sec, {}):
+                out[sec]["review"] = old[sec]["review"]
     with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
         f.write("\n")
