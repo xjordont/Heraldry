@@ -1,10 +1,55 @@
 {
- "status": "PASS",
+ "status": "FAIL",
  "reviewer": "publication-auditor (FIG-01..19 independent re-review against patched text P-01..P-07; FIG-20..57 scenario-map semantic review against RC485)",
  "reviewed_at": "2026-10-06T21:41:15Z",
  "figures_total": 57,
- "figures_pass": 57,
- "stale": [],
+ "figures_pass": 13,
+ "stale": [
+  "FIG-13",
+  "FIG-14",
+  "FIG-15",
+  "FIG-16",
+  "FIG-18",
+  "FIG-19",
+  "FIG-20",
+  "FIG-21",
+  "FIG-22",
+  "FIG-23",
+  "FIG-24",
+  "FIG-25",
+  "FIG-26",
+  "FIG-27",
+  "FIG-28",
+  "FIG-29",
+  "FIG-30",
+  "FIG-31",
+  "FIG-32",
+  "FIG-33",
+  "FIG-34",
+  "FIG-35",
+  "FIG-36",
+  "FIG-37",
+  "FIG-38",
+  "FIG-39",
+  "FIG-40",
+  "FIG-41",
+  "FIG-42",
+  "FIG-43",
+  "FIG-44",
+  "FIG-45",
+  "FIG-46",
+  "FIG-47",
+  "FIG-48",
+  "FIG-49",
+  "FIG-50",
+  "FIG-51",
+  "FIG-52",
+  "FIG-53",
+  "FIG-54",
+  "FIG-55",
+  "FIG-56",
+  "FIG-57"
+ ],
  "missing_review": [],
  "open_majors": {},
  "open_minor_count": 15,
@@ -266,8 +311,8 @@
   {
    "id": "FIG-13",
    "current": {
-    "svg_sha256": "3934447ce6f1aeba8ffb806740c3f74a585dc40c7543bfad1d98268706bbcb10",
-    "caption_sha256": "c9fd96822f11e7afd1afcb345638305892f5e3c901bb7d2e12e29f4f7c4c0af7",
+    "svg_sha256": "56ba2a97c17cbcdb86e042ee147da88b0d19ae8608d8e69587bb4b9e41221a6a",
+    "caption_sha256": "2a0de41b660deb37e1f141fbe382326cf855c028ca8a01e36bb69e0e648c7165",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -276,20 +321,25 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-14",
    "current": {
-    "svg_sha256": "d3cb535b58b6a466641d8899e0ede021e5f97835ba67620fdd0528269da7da70",
-    "caption_sha256": "b5d1e41e77a1ffc73b1d998f7842236bfd7c273761fed3a1c73d78a40c213e21",
-    "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
+    "svg_sha256": "f083e99959602cb73d0320e933c4ff2606fced992f288988289eacfbe192b4f4",
+    "caption_sha256": "e8df7abbe9f5ebe6f622b24f93949e75aa83e20727227341f48972cb11c483ce",
+    "rules_sha256": "43fe7ea70bcb0c071483e84a52e40817717281b93248838c1366f738b233cd52"
    },
    "reviewed": {
     "svg_sha256": "d3cb535b58b6a466641d8899e0ede021e5f97835ba67620fdd0528269da7da70",
@@ -297,19 +347,25 @@
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current",
+    "rules_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-15",
    "current": {
-    "svg_sha256": "a4f2117f955f73a924c7c009397efb44aca81f0427375915b2189628084e7912",
-    "caption_sha256": "8e07bd57d6b106743b90851764ff8cecc992a82c03e54dcf22402af28817ed70",
+    "svg_sha256": "4b0ace584a52b631868ef8a9a58cce079fda1d7a078615ff3c18deea4042c17a",
+    "caption_sha256": "9ad7ddf4dd7899960895ce2aa3af130450d8492101c1d158ed0e0fdf0187977e",
     "rules_sha256": "34e12852b9502196e116896e54eb8384a6aa8060b50a222c638ad1620e9098fd"
    },
    "reviewed": {
@@ -318,19 +374,24 @@
     "rules_sha256": "34e12852b9502196e116896e54eb8384a6aa8060b50a222c638ad1620e9098fd"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-16",
    "current": {
-    "svg_sha256": "2733195c817d41378688c1f3511d24cc020ed3dff7887c70c7d9c75283296f09",
-    "caption_sha256": "b7a7b860be061f63ce542b54f74b98478d6c0919eef747b3799a7297fe43677a",
+    "svg_sha256": "ee2d73d64f4e2c1396530cc69b2c044f987907991e2927475703211d76d835c8",
+    "caption_sha256": "ae5fde33740332bc58851e5f222f4cb7d6a742c0b0bcd7b59081340c117c55d7",
     "rules_sha256": "1fad8f1e8c4e8604159ccc830b0ea3c6d7d11aad1e12f6e03ba1cc7a50adc9a4"
    },
    "reviewed": {
@@ -339,13 +400,18 @@
     "rules_sha256": "1fad8f1e8c4e8604159ccc830b0ea3c6d7d11aad1e12f6e03ba1cc7a50adc9a4"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-17",
@@ -371,8 +437,8 @@
   {
    "id": "FIG-18",
    "current": {
-    "svg_sha256": "02cb37a56e8ae1868f74396485efdff345dcd0dffd9e9cf4154a48fb8abbb682",
-    "caption_sha256": "9ace7939d746eea3d5e09e3b74ecd83bf64052f4414d8eb7a7c344aec423c0f9",
+    "svg_sha256": "2627c83d32b5c91333b6ebb22a1166756bd5a2f28733b836890785ef3a92b686",
+    "caption_sha256": "0e28e0e58ebb9a1ac43821294569d5aad172d5cc1dccd85a98f16cafc7337d9d",
     "rules_sha256": "9bbb0b9a59a7e67dd419107ae7e7474a7407f27fc0d357e8da6da48682442c1a"
    },
    "reviewed": {
@@ -381,19 +447,24 @@
     "rules_sha256": "9bbb0b9a59a7e67dd419107ae7e7474a7407f27fc0d357e8da6da48682442c1a"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-19",
    "current": {
-    "svg_sha256": "485135198445731d4c3cd1af696e717472b054f6d56f010c8e5df5f59babf704",
-    "caption_sha256": "91debae1163303187f8d3cd863e10a01fa1f6473504f65725fe66deb4b98074c",
+    "svg_sha256": "9ca6b352846e75e58771381009803ffc82ffc39dc9700c5abf0f0abcbfd51da0",
+    "caption_sha256": "fe49806f43a98b023b889e149ab5d124fada5cd1ddb23fceae5a6a02f9988d64",
     "rules_sha256": "17002c1770b12fc10565e4973020395819f8a09a293420473d626fd18a0b7646"
    },
    "reviewed": {
@@ -402,19 +473,24 @@
     "rules_sha256": "17002c1770b12fc10565e4973020395819f8a09a293420473d626fd18a0b7646"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-20",
    "current": {
-    "svg_sha256": "818751502d7ebdf6ec09d94e36351df925ca2408701399bee70ff3c7aa6e8ea5",
-    "caption_sha256": "9dc35d896b770167e008b42927a746506ad09208bcaf23c0c3af192eaf86444c",
+    "svg_sha256": "9134e937a1195c778628b314ee8a64126cda17e3d812c63244cd49cdec70b966",
+    "caption_sha256": "4e7a4b0ea5e8e47438461bfdc1de9f61bd20db112177c4a0652b7b15ee284b2b",
     "rules_sha256": "199117c3cc8e9e8d8d4a38e63e61e9eefe030b88095e749c927aa06b6c7bf928"
    },
    "reviewed": {
@@ -423,19 +499,24 @@
     "rules_sha256": "199117c3cc8e9e8d8d4a38e63e61e9eefe030b88095e749c927aa06b6c7bf928"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-21",
    "current": {
-    "svg_sha256": "a64388b6b077b59a3e582fda284b8132a64a02bb00164ae98dbc2da906a2a52d",
-    "caption_sha256": "0ae7d3ff54c9afdc182599ef3bb34b8db334e55dfb09fd4bbf4fa7e709fad280",
+    "svg_sha256": "9e9892a4661387bcce6c10b99720b520763d45f6f957f0410a35b7d43e8d3b4f",
+    "caption_sha256": "24e3de61ebae16efb499c45473c6d3e9c9ddbce16f7b430265f1800c74a005c0",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -444,19 +525,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-22",
    "current": {
-    "svg_sha256": "0e72dde508110afcecc1a8e0875107cf8e7b0363df233b740d1e0dcbd6aac771",
-    "caption_sha256": "94c5556c1841ca730131098616aeb92bcb6a9a3dfb22a181cf429bf289460e94",
+    "svg_sha256": "a547e124a91847f175bf62e1d0faffb6ae583dc341d95dcead272bd95bac2b40",
+    "caption_sha256": "a088dc773ba845429fdf518e08da129cc8186ac21979a0622bbcfb4863acd8e1",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -465,19 +551,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-23",
    "current": {
-    "svg_sha256": "04dca41fb3971a2b6c19d18e66f6d3d54454e0dda9d08c2a622661e0ebbdf91d",
-    "caption_sha256": "92e7d1713a3f180e25465ed3abeb745949e44f24f70d456c375a85f69726808f",
+    "svg_sha256": "436579f8b1af6400a7a6f5bfa03af7ce0e6b84ae13b71a73f398bde0de9db250",
+    "caption_sha256": "67d21a4b8596209ea89c44bb159acc2dcbddfc2e4eb50ad8c509efbe4ab1c14c",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -486,19 +577,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-24",
    "current": {
-    "svg_sha256": "1e5a92c3e3f807dbde13e510d734c687f05463f2ed3f15660bea35143fc232ff",
-    "caption_sha256": "7f788cdff71d00048b3b2a4afbccd26c6e55426e958dd272fa3d3f2ac90c3477",
+    "svg_sha256": "15c5bb5f1bd192b1f71de15ddf3ea59687ddef2dd6b457c0dfb402b973fb577a",
+    "caption_sha256": "5cf60e2da9c2829fd5aa3c7eed91ce90fb5987fc388e173c934966813dd58545",
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
    "reviewed": {
@@ -507,19 +603,24 @@
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-25",
    "current": {
-    "svg_sha256": "45e6f808f17d738bb9004e98ba853ab14a5200f21c131c6238e67b2ee4b9be9b",
-    "caption_sha256": "00d350130e168db2019fbde2ea1621de9d9425318ed11526215d133cc56107e6",
+    "svg_sha256": "5cb0df5baecb55220de30584080dbd6fec698dd969cd87427fb6880b970a91ac",
+    "caption_sha256": "f8ed61a55822f6ba3ebb6b49e3ae9e289110a5e2c64fa8e1158864efa6437853",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -528,19 +629,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-26",
    "current": {
-    "svg_sha256": "60da29832ce79ddd3fe0db4b57e77909ec07a65bf130731f863f3e7d249c743b",
-    "caption_sha256": "b9da7ca6d9e2c9700bdbd59991816437479d26904ff13049a4d5a6a0cb98dcf5",
+    "svg_sha256": "29a789618ec845896101cb1490ff9c1d438abca366004cf7b736a00a6f24473d",
+    "caption_sha256": "5a88723a16616abb589343f0598bba92a24c6db77fccd13db59578f6b1f9830e",
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
    "reviewed": {
@@ -549,19 +655,24 @@
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-27",
    "current": {
-    "svg_sha256": "f3e895c8f6807558db765ffbeaa4572d1d334430721b626cb98956d99e007aa0",
-    "caption_sha256": "302d891fdd442b72ba69c439c337374ab1cf8ca1f16d1185e33ad148e4901641",
+    "svg_sha256": "e3a0ac44a2d87a34d570b063e5dc6125f1bcdd8eee3422f508a51d4819778096",
+    "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -570,21 +681,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Dense cluster at the Dome: 'Lens', 'min 10\"', 'Dome 6\"x6\"', 'Sentinel·A', '2\"' labels crowd the dome edge and hazard markers; readable but at the limit at 9 pt."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-28",
    "current": {
-    "svg_sha256": "705e7f9e3341a0b882f03949cd99f689d27f5373f4221697d5773691f0757c8e",
-    "caption_sha256": "dc70e79277bd2b2d7a58694954be5ebdd3044feef6ad1727c30371ef2a85b993",
+    "svg_sha256": "4ceb2989f434d3af371a92d4306051c8c214b9c538698cb84a92873b79df27fa",
+    "caption_sha256": "03d2bafaaa4596a0d5bef8ae1efc15497c01b0a48341eb2d8ae7698e19725dee",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -593,19 +709,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-29",
    "current": {
-    "svg_sha256": "240672a0e7cca15bf6686940a9cd819bef7aa07f60ebe415045e5e44b81c01f5",
-    "caption_sha256": "9354f135c61fa7e9b5f065b9df4a4d4194e3059160a0be22a5ee60e3b7f8d0b2",
+    "svg_sha256": "b6a25e34d7e48dbf47d8203340a1ebc9bc7e9f10d40c1657d2d9885c1d39e7b4",
+    "caption_sha256": "ce89ad7247593b2f87859ece91d6e5809d444e310e809d1aa02cc291758d495e",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -614,19 +735,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-30",
    "current": {
-    "svg_sha256": "ed1edf48c570f3883e18b19cc771acc41483f6a9e027bf408d4ea4fa8ef87cef",
-    "caption_sha256": "d7547996ec6dea4ea0d50cbd616fc38a5b992ccb82b6b1a7b7e4646daec4b205",
+    "svg_sha256": "9e206816f2f585c629e480caecb36d5a5162b766b37a856dc04d5757f7709d0d",
+    "caption_sha256": "8a22d6432a10ba1a6487af97cd7728fbf46551ac2d9fb5f2b05271016f2cc002",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -635,19 +761,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-31",
    "current": {
-    "svg_sha256": "9aa47a12343802b9132ddf4fc0c1aba5eb4a53d3ade1b07deeaaa7e90de80f8b",
-    "caption_sha256": "eb751f384b4675ad4352cf319dac909df7fd3a10eca0bd14ed05a27583c40431",
+    "svg_sha256": "6984dfb450eb99284371fc6ad9b438198dda929cd1736e9f934823ebffead867",
+    "caption_sha256": "8b8db7c5a96a1eae9ac8785598503f7e2e33e077ccd7897def5f0e7d8e65120e",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -656,19 +787,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-32",
    "current": {
-    "svg_sha256": "24f620de10cf6c49d7a2ee7b25a5a38e171e5d48133bc56d52986e3b110a5156",
-    "caption_sha256": "d7cf3c4b63fdb981f7ee890bd27088f9c7c15d9cc1aa4d98544fad196ee89650",
+    "svg_sha256": "49e6d71cb2dea5e7fba32f4eb9e4a19c7de94968b66125e89beaf1208502ed10",
+    "caption_sha256": "299cb39bb185df20d39b5f3cf92925614e623ab5c63502c070b309ab61220a9a",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -677,21 +813,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Zones are lettered A/B, but in this scenario Party A (Sealers) and Party B (Openers) are assigned by die roll and need not match the drawn zones; the Door label is also crowded by the G3·A marker."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-33",
    "current": {
-    "svg_sha256": "3a57ca69deef65a284680e80cbf737ba2d22d8e00e3001f64d4ac63a2cf37a11",
-    "caption_sha256": "e0ad9186cb04e334690efbc7333b9b73bd86a604051e878cc8f7cb4a6d9531e9",
+    "svg_sha256": "9d2f56c61238dd744d0aa8fd7d5ee2f8f7a9ae47c005c3075ddf39ceacbd6fd2",
+    "caption_sha256": "9a4a3e0acc9d93714ef2a566f9e884ac4fdadba6e33a9e750341742f9d12eb51",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -700,19 +841,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-34",
    "current": {
-    "svg_sha256": "171ea388a68d34a0169facde38e9aeca690b220a4a82d47e7f9fa7ad98065d3d",
-    "caption_sha256": "d87082bfc8b83c746ff01de399bf2cc4b4debfdf6abc1d0f89ac8c281d08e138",
+    "svg_sha256": "d6d1dd9c8351df0c7cf1c223bbd78d368386ee5524eacda38ebe2c8909a59c82",
+    "caption_sha256": "870bd56f84aef729295144d8af56822901b3e84bc15c9185a541368b709cdbd6",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -721,22 +867,27 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Chasm (8\" wide, MANDATORY) is drawn with the Impassable hatch although the source defines it through Chasm Fall/Jump, not as Impassable Terrain.",
     "Ledger ambiguity 'start edge' is genuine but low-impact: step 11's first clause (winner chooses the edge) arguably supplies the chooser even though the 'other party takes the opposite edge' clause is displaced by the scenario. Map is symmetric so the drawn top edge is harmless."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-35",
    "current": {
-    "svg_sha256": "4dc62a74cc296b44c38e95805c18c17faf0f3bbed47d77e3fbdf0dc864687c7c",
-    "caption_sha256": "8fb8b0755b6b805ac893232ad670e1d3b976b89c34f90562142e313f12e99d3a",
+    "svg_sha256": "a31ae341fddf792a37be68120656856f2f90705a84a9a1e84dc18244fca44b19",
+    "caption_sha256": "22bd865dbd2cb161ee661022be8f4bbb937a72445eae74b03172d96f7a665c23",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -745,19 +896,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-36",
    "current": {
-    "svg_sha256": "f399589b53e2759665fe72946545e064c2334e8b96f64a494247346b33c12292",
-    "caption_sha256": "8a157b8371f6bbef85d7a89922d645f0811ddb4c3cc95335e839c92eefac55ba",
+    "svg_sha256": "689b5c06c2d62a99681ae0b7c120833546fe86ceaae312b2ccbfb7c0e794b958",
+    "caption_sha256": "ac1bc8f01ad5029bbd8a9b4f22d099cc6bbd345554c44fcd5b796ed09c4ba0ba",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -766,21 +922,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Low defensive walls are drawn with the Impassable pattern; the source gives a terrain type only for the Guard Towers and Tent. The 'Low wall' label sits far above its wall."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-37",
    "current": {
-    "svg_sha256": "6654517ae8f509d4261663dd149d85fc9978c4481561b239cac6faec0da51d83",
-    "caption_sha256": "194a1eed48afbeb8773f5d30d82364df19c17373f50dc8ec57df355e1e4b0e89",
+    "svg_sha256": "282c238a70dcafc0ddaee49cb4d89bbcf81a4d6a4bb6972c471faa00c9489c49",
+    "caption_sha256": "13cbf14c7b47fb52d82cf76cec9f9e75d7accc5e4e00765079f665baafed8050",
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
    "reviewed": {
@@ -789,21 +950,26 @@
     "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "The wall lines run across the openings of the side alcoves (Font/Chest alcoves on the east side and the chest alcove west of the middle section), so alcoves look sealed off although they 'branch off the main passage'."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-38",
    "current": {
-    "svg_sha256": "cee48625d37a672994b635c17e3aef6aee8d9c3bce1d64d08f7d7963fc140a19",
-    "caption_sha256": "4ba1311317233b2eabbeb7ba535b5c9382d50fa342c4db6fd81b6afea6b24194",
+    "svg_sha256": "ff7ff87b3e8023c82972fb2402eb64c3d1323bb66c2c0320a64904703ab720bf",
+    "caption_sha256": "3cbe27fbfab686100e750213d176449b681abb3e56937651555a25acd81cb30d",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -812,19 +978,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-39",
    "current": {
-    "svg_sha256": "0cdce1784214511890e93954b8bf9ce6395acad7931d8a3fad43a0b971a1c4f0",
-    "caption_sha256": "2cc8e72e566985e3ab703235e75bb1aced91c0cbc2e7709290928e5523d5960a",
+    "svg_sha256": "830df3a29696c70a329bb75ea0221174bd3d1cb7cc52b557cbdc07cdf4dfecb7",
+    "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -833,21 +1004,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "The c1-c2 and G1-c2 'min 6\"' rulers are nearly collinear and read as one long line through the G1 marker; number of Random Monster Groups (10.6.4, variable) is not stated though two are drawn."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-40",
    "current": {
-    "svg_sha256": "712eb7c952c44eedbaaa785efc0fe0066495b47d06aa2390d3c8fa19f5ec9713",
-    "caption_sha256": "c16e580cf13bde878a999201498ebc53dbaffb33e005cb883dcc42205c393cb2",
+    "svg_sha256": "3c9917e4cecfd02907231cf4f73cc5eb78c62d4a4b39531ae46344bd2cd269cd",
+    "caption_sha256": "e8be7e6d362e7365c34f59828aae77aa3ec01578618e731161d65f110755230c",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -856,19 +1032,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-41",
    "current": {
-    "svg_sha256": "f028dd8c0ae6f07ffa96dba05e30fd2cf7defa01d6cc427bc2a9f3704b69e705",
-    "caption_sha256": "365c4a475ac62c70844a4fdb693148954f8d8e3d3d3e8f4109d8ac14433474dc",
+    "svg_sha256": "29ba464c49a092653bacd8024d54af9e4db7483445de38930ebb5f4841835d24",
+    "caption_sha256": "6907dc8ea9a1e2bd22bc70c530f9681ab771df1bd34b463d7b1b9fd86338c613",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -877,19 +1058,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-42",
    "current": {
-    "svg_sha256": "5206bc79da602ef7dafa3aa28c035bc5d8284918a33b4595cc81a9057499a2e5",
-    "caption_sha256": "a3a0c8a6c4a368070c4c0e652ace3077c3e9aa9706009af1d07d1d1eda0738a8",
+    "svg_sha256": "0ef86773a89fe4a10956d5bf69cd3560ce6c11826cc5eb3894b1f35a8368b591",
+    "caption_sha256": "08b85b987ca1b35e5c4a428829cd4d195e12fa27a85be74bd92d7549f9ad93be",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -898,21 +1084,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Workbenches are drawn with the Impassable pattern although the source gives them no terrain type."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-43",
    "current": {
-    "svg_sha256": "18a874460be210e668109b3362bdf6eac567347a5826d704cd98449c0bd256f6",
-    "caption_sha256": "db2a7c4c064540f51578d297fc6a89f1ac73a4f4c3fb9fa300f71c2c7debb3e7",
+    "svg_sha256": "fc11b58d88b2dc21fbed09e7ad1d7689d6322366e43d030573ec246c00090499",
+    "caption_sha256": "696980c4a640dc106f7560f39ad9ff073034130aa1d42026b0947bdd26ff0622",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -921,19 +1112,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-44",
    "current": {
-    "svg_sha256": "184c46253a8d6762cb67cfbfc7d5b4003d179d1d79b026f933636a694ef1a48a",
-    "caption_sha256": "623a1ad672538a1488d8a1c3533aa85e601ebc3eae14aba238f6808d8af4e6a6",
+    "svg_sha256": "b6b3c7fc8e88f5651194fd53d4046d334087a89cca2cfcf89690045f1e6957b4",
+    "caption_sha256": "a5cafdb87a508cd6d929132674b0e028c6598d957cc8b2156efe33fe0625005d",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -942,21 +1138,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "The Ice Throne the Magistrate begins on is not drawn or labelled; the Ice Mephit (Sz S) uses the generic M glyph; G1 is shown in open ground not in an 'outer corridor' (corridors outer to the chambers are not drawn). Zones A/B vs Shard Seekers/Bounty Hunters not tied (see FIG-20)."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-45",
    "current": {
-    "svg_sha256": "1f13e2f451222e454456e695ddd4e60ae53eab9c1729ea41f37a85cad4c6fad7",
-    "caption_sha256": "ea5f7edba9d639e04b235719b11c7fe6bd4fc4a732c20328309569586f066d37",
+    "svg_sha256": "33e5270d283d9a4dcc1bc8c3f84638906a9fa6ca414f0c4bfbc8b46d7f205d91",
+    "caption_sha256": "544c8db44d30d68a170e82b87f93e59acd8c613cd1a78241cdd5b6da180b07fa",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -965,21 +1166,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Oasis cluster is cramped: 'Oasis 8\"x8\"', 'Wellspring', 'Chieftain·A', 'G1·A' labels hide the Oasis top/right outline."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-46",
    "current": {
-    "svg_sha256": "f40827603b2e3e2d15d08adb1b494fe70059af13f88dec2684d3d3a21af19406",
-    "caption_sha256": "bd93b223ffc247f94add11c80edc3911bd4c9b6db3f2c04dad5257da5170cb17",
+    "svg_sha256": "2940fe8d432eebfcdceb88d251e4768066a3e6489cc89a7c3644c517144947e5",
+    "caption_sha256": "fb6594f930d50d81cbc37664daf0cca076daedeef6d97a663abf493565575591",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -988,21 +1194,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "The three Elemental Locus pillars (Impassable Terrain, 4-6\" from the Altar) are drawn as objective diamonds; the Impassable nature is lost. Zone depth 6\" is the step 11 default but is drawn like a printed value."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-47",
    "current": {
-    "svg_sha256": "f0d4cb16d23a191da963841efb70d0be54919f8e893748560541f7550b889415",
-    "caption_sha256": "514d6dce5666126d81e3c31da4dcb6a2c61ee7b73961a71cd8ab07a960db7231",
+    "svg_sha256": "6198126f9ec22f375fe325007e2c6d1a0e84526cf1902f751cd3b8759aeea469",
+    "caption_sha256": "8f66e4b11b21a3e9422a15715b49fb82e77c071d1d8c7709f1ded3a47ff2719c",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -1011,21 +1222,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Deep Sand is drawn with the Difficult Terrain pattern and Fallen Pillar with Impassable; the source gives neither a terrain type."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-48",
    "current": {
-    "svg_sha256": "1ad2da5de36436a6d6b29f3d30ffa2208113e81245c3d36f0fb323081ba0fe8b",
-    "caption_sha256": "663a280181e9a3b663386b2a8c3252818035a4072da675ef259f053976c44366",
+    "svg_sha256": "ee68d7ab4041e91c542c58714b26f778955f0f9bfe7cec3433e669f44f04ea45",
+    "caption_sha256": "54ef4455882afc5eabba98a2e45bf7c2492e506a281d52828d5c07adde12f0dc",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -1034,19 +1250,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-49",
    "current": {
-    "svg_sha256": "753047b6f161c0b3bf040d07c48c8041acdabec2770d66b01362055727e9b53b",
-    "caption_sha256": "cfc89d3ff7fc1b31bd0d1830b0d74cced496695aecd9a03364ed6476347f0a2b",
+    "svg_sha256": "47ab469cdbc487a1175435b32e37d5dd0651f522f5253964f5f7c96fb2e13075",
+    "caption_sha256": "752bf3f58b809e97a2d9d3982846f343def50359b09e0b623af8afcf7f886514",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -1055,19 +1276,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-50",
    "current": {
-    "svg_sha256": "d6f3af0e4232d4e25114863759902ce67338c66538e981923c16adfcfa10b168",
-    "caption_sha256": "98085be95bf4ae5a18940f1b080afb6e18aac360d453a90c3a4da9939685413a",
+    "svg_sha256": "a12c52e20aaab7213f7d7fd54106672fef29d6e3afa34e1bbdfcc50e267a0152",
+    "caption_sha256": "67a4283af306188eee04688bb10c4ac0f60ba4ed0c4bce5dc33e42eaefd682ee",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -1076,19 +1302,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-51",
    "current": {
-    "svg_sha256": "e2452a1e4fd3ab91e50d065ce014a07ca77cae534e71aaa17fac5fde17593bdf",
-    "caption_sha256": "9d08158875eccf5f55cd4aa7834b929a4686dd1c3c64fdeefe356379ce0c9e29",
+    "svg_sha256": "05aa1dcd40c656ce324975ba93a3f3cc4d999ebe291f0db1d08c3b72ca4845c5",
+    "caption_sha256": "8ed4b790280f1a99b72e41841c37f130d4eb71445f8faf6816ce1ab290d5845e",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -1097,21 +1328,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Group 2 'patrolling murky water' is drawn in an outer Shallow patch; the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258), so the placement may be illegal. Possible unlogged ambiguity. Sanctum outline is partly hidden by the Shallow/Reliquary/Sanctum labels."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-52",
    "current": {
-    "svg_sha256": "451ffe1f664b245e775fc212e601d2b5878533c7481497d727a1a86969fc6f08",
-    "caption_sha256": "ee97335ad81333be66092a27962d2affdf7f3131781eee66dcdbf8e27727aae2",
+    "svg_sha256": "8385a1c58828b8d70dcc628377093d23b80be091f3dfa3950e448575b191bfdc",
+    "caption_sha256": "6622d45c42690e499c14e13929ac78d0df19fabfc16359fbed143a1c2e24970a",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -1120,21 +1356,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Reed screens are drawn with the Difficult pattern; the source gives no terrain type."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-53",
    "current": {
-    "svg_sha256": "3579aad95148c9b3817ead00eaf9b20ad310c2206e33b631eab2a7a50ee0ffc9",
-    "caption_sha256": "5f3c45befc3c4ae26f458ddbfac37e0dbd52610ba5af338466e4718fa5d93408",
+    "svg_sha256": "b57ae5acd14e34e8690d874188cfb88d4c532504ffef749240b4dd8a84ffe5a5",
+    "caption_sha256": "a265935108bb677a0691bdbdc83c6734d8a6df1a7cd0d7d27c840dd94b11e62f",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -1143,19 +1384,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-54",
    "current": {
-    "svg_sha256": "fb187641fe2b7cf43466bd45dfb45e168b462a913069c63179fa87234fe6195e",
-    "caption_sha256": "02c7d723c64359a1a3d2988c2e3ee1af4e8b6b3d1f563dd37e2b3b28f5bd1c3e",
+    "svg_sha256": "25ec22a8359b7e876013a987f0611f2a6f01f372de0178d083ebf1272d9ec5ec",
+    "caption_sha256": "bc8d245f6f693cc8f28fb4b08d44d4032834a8e7a37efd79b06bd4c090d36c07",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -1164,21 +1410,26 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
    "open_minors": [
     "Thorny Vines are Cover, Difficult, Dangerous and Natural but the Grove is drawn as Cover only; Corrupted Muck is drawn Difficult without source support; 'Thornlings·A' label overlaps the Mangroves piece."
    ],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-55",
    "current": {
-    "svg_sha256": "200b3539b03c622f46bf717894a4aa71a2bc568f688901742540fd8b12b6d6a4",
-    "caption_sha256": "7a5fcefef796b13ee72cde47b0e86d705272d4004ea72cd6d9d59ca172756d72",
+    "svg_sha256": "d0d858a615471c91508474756658bfd43f2461efde1db9af5070d7c07a3a809e",
+    "caption_sha256": "301f619dd66ddace585da3361de4e88462ad56df541343ea6d8c1028d94c379d",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -1187,19 +1438,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-56",
    "current": {
-    "svg_sha256": "e787e007664000629173b4504bf94e03ad79505f3c149ca8d27dfbca923d2c10",
-    "caption_sha256": "88aca6a01050d9c3ec5562379bc707e484c1ee2e561121831db83a5f736f49ea",
+    "svg_sha256": "5a66410fda42b183a6ff74c28e6d1ed1ae06843cce8ae94f8337a759fe8fdf4d",
+    "caption_sha256": "d99b1e8d5a335dc3f1b5f629a6ab67b2e4552d378a98b9facd1468da3dc015ea",
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed": {
@@ -1208,19 +1464,24 @@
     "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   },
   {
    "id": "FIG-57",
    "current": {
-    "svg_sha256": "398b547408db9b205c73bbb62b9eb3fff68fe1120c1fe7f40b193d9fb1d8b959",
-    "caption_sha256": "8d3c9876f67fa1c8bf199796d1cff1c4d4df7ed44b14fec0f73f408404fe0514",
+    "svg_sha256": "85ebef91750f0f0e8f550841f60d08275c8b7813347f8921793d38b2e16d2c01",
+    "caption_sha256": "e78b962bc8252bc7cc96bc30ae8ac636038f51ed0a357b7c7585979ade6d91b5",
     "rules_sha256": "4180613dd50441150a67913ed7da29ae376fb3cc30afabf7a10917721d984311"
    },
    "reviewed": {
@@ -1229,13 +1490,18 @@
     "rules_sha256": "4180613dd50441150a67913ed7da29ae376fb3cc30afabf7a10917721d984311"
    },
    "reviewed_present": true,
-   "stale": false,
-   "stale_reasons": [],
+   "stale": true,
+   "stale_reasons": [
+    "svg_sha256 differs from current",
+    "caption_sha256 differs from current"
+   ],
    "verdict": "PASS",
    "open_majors": [],
    "open_minors": [],
-   "fail_reasons": [],
-   "status": "PASS"
+   "fail_reasons": [
+    "STALE review"
+   ],
+   "status": "FAIL"
   }
  ]
 }
