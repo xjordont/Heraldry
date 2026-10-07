@@ -1,10 +1,10 @@
 {
- "pdf": "dist/Heraldry_RC485_inkjet-borderless.pdf",
+ "pdf": "dist/Heraldry_RC486_inkjet-borderless.pdf",
  "reviewer": "Opus orchestrator (actual image inspection in session)",
- "reviewed_at": "2026-10-07T04:10:53+00:00",
+ "reviewed_at": "2026-10-07T11:08:01+00:00",
  "all_page_contact_sheets": {
   "pages_covered": "1-596 (all) of this exact clean-build PDF",
-  "method": "pp1-300 and 481-596 at 15 dpi (60/sheet); pp301-480 (scenario chapter) at 20 dpi (40/sheet)"
+  "method": "pp1-300 and 481-596 at 15 dpi; pp301-480 (scenario chapter) at 17 dpi"
  },
  "detailed_pages_viewed_at_100dpi": [
   1,
@@ -32,7 +32,7 @@
  "limits": "Contact-sheet review of every interior page plus five detailed pages, covers, calibration and one overscan specimen; not glyph-level proofreading of every page, a complete rules contradiction audit, or physical printer proof.",
  "status": "PASS (contact-sheet all-page + detail sample; not glyph-level proofreading)",
  "repeat_build_note": "The final clean rebuild produced identical cream, white, digital and cover PDF bytes; only the repaired calibration sheet changed and was separately re-inspected.",
- "sha256": "fb461827012732dea385e9203d65700199facb158193a2fb0b5cd9ee01ef9684",
+ "sha256": "8bac43218d00bdc708a1c8b8a967736ad1d18c721c9e46cc202d480e3e8aaafa",
  "pages": 596,
  "pages_reviewed": [
   1,
@@ -633,11 +633,10 @@
   596
  ],
  "detail_viewed": [
-  "p.388 FIG-20 unified key at 70 dpi",
-  "p.462 FIG-51 The Mire 1 map at placed size, 70 dpi"
+  "p.470 FIG-55 The Mire 5 at 70 dpi (RC486 Group 1 short-edge arrival, exits, 6\" zones)"
  ],
  "changes_this_run": [
-  "44 setup diagrams redrawn with one glyph registry (scenkit); FIG-20 key covers all 40 glyphs; appendix maps on core renderer; '?' unresolved-element tags; terrain types corrected per 2.9.1"
+  "RC486 placements P-08..P-12 drawn in FIG-33, 47, 52, 55; unresolved-element glyph removed from FIG-20 key; 25 figure minors fixed, 4 accepted with reasons"
  ],
  "residual": [
   "Pagination grew 450 -> 594 interior pages: fresh-page sections/scenarios and whole-unit moves leave intentional whitespace",

@@ -11,9 +11,9 @@
       "check": "source_integrity",
       "status": "PASS",
       "detail": {
-        "sha256": "fc6caeeedf1e8e2cce80ed469ef74fb3c196048563c6bfec65031f2b03c4bbbe",
-        "bytes": 1451105,
-        "version": "RC485"
+        "sha256": "5da05cec6153ac11865874a0da416c002ce90b2dc4936fc9ce50abca9d3dbbe5",
+        "bytes": 1451198,
+        "version": "RC486"
       }
     },
     {
@@ -47,14 +47,14 @@
     }
   ],
   "runtime_observed": {
-    "python": "3.12.14",
+    "python": "3.13.16",
     "commands": {
       "git": true,
       "python3": true,
       "typst": false,
-      "pandoc": false,
-      "pdfinfo": false,
-      "pdftoppm": false,
+      "pandoc": true,
+      "pdfinfo": true,
+      "pdftoppm": true,
       "qpdf": false,
       "gs": false
     },
