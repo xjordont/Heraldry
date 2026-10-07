@@ -5,7 +5,6 @@ on:
     paths:
       - production/build-provenance.json
       - production/qa/visual-review.json
-      - .github/workflows/rebuild-delivery.yml
   workflow_dispatch:
 permissions:
   contents: read
