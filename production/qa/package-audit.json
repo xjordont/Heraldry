@@ -1,8 +1,8 @@
 {
   "zip": "dist/Heraldry_RC486_release.zip",
-  "bytes": 157940629,
+  "bytes": 157940864,
   "files": 245,
-  "sha256": "f3e7f563e1c3c84580dd36a38bbd9cb1d21f4adbe56fd5f3d7fa0d583c186fe0",
+  "sha256": "566e81ff19c17a1c064a550bc81e858a9c2832a33102f65744aa252de78b9004",
   "status": "PASS",
   "duplicate_entries": [],
   "checksums_verified": 244,
