@@ -103,11 +103,11 @@
       "review": {
         "figure": "FIG-22",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "a547e124a91847f175bf62e1d0faffb6ae583dc341d95dcead272bd95bac2b40",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "4cb7e6fd827d2b5e5a720debc0e5353d893e15a94c33ebe0bc7b3e06479edbf3",
         "caption_sha256": "a088dc773ba845429fdf518e08da129cc8186ac21979a0622bbcfb4863acd8e1",
         "open_major": 0,
-        "open_minor": 2,
+        "open_minor": 1,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -151,11 +151,11 @@
       "review": {
         "figure": "FIG-23",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "436579f8b1af6400a7a6f5bfa03af7ce0e6b84ae13b71a73f398bde0de9db250",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "ff3027fb709cde6e9ff7ce5c3d1628ec8f6a91db8e2a8c7a77b7879e2e25c90c",
         "caption_sha256": "67d21a4b8596209ea89c44bb159acc2dcbddfc2e4eb50ad8c509efbe4ab1c14c",
         "open_major": 0,
-        "open_minor": 1,
+        "open_minor": 0,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -259,11 +259,11 @@
       "review": {
         "figure": "FIG-25",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "5cb0df5baecb55220de30584080dbd6fec698dd969cd87427fb6880b970a91ac",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "d3d0ce84d0e6c74ea277ac5c60cf8ce29e7108d0dd864f8bf1e12a267089ccf9",
         "caption_sha256": "f8ed61a55822f6ba3ebb6b49e3ae9e289110a5e2c64fa8e1158864efa6437853",
         "open_major": 0,
-        "open_minor": 2,
+        "open_minor": 1,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -312,11 +312,11 @@
       "review": {
         "figure": "FIG-26",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "29a789618ec845896101cb1490ff9c1d438abca366004cf7b736a00a6f24473d",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "d9a0327f5edbcd3b6ccce2c8266971b8ab760615c889861c338cd371ca6b98e3",
         "caption_sha256": "5a88723a16616abb589343f0598bba92a24c6db77fccd13db59578f6b1f9830e",
         "open_major": 0,
-        "open_minor": 3,
+        "open_minor": 2,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -357,11 +357,11 @@
       "review": {
         "figure": "FIG-27",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "e3a0ac44a2d87a34d570b063e5dc6125f1bcdd8eee3422f508a51d4819778096",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "2734cf641bb44ac92e65a17b87f4a132908fdc3a4df3c1098c66d4bad7d18dd5",
         "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
         "open_major": 0,
-        "open_minor": 2,
+        "open_minor": 1,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -410,11 +410,11 @@
       "review": {
         "figure": "FIG-28",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "4ceb2989f434d3af371a92d4306051c8c214b9c538698cb84a92873b79df27fa",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "b844bed7e8bfdac841a66773ef0e90dc3762c888f998aded71223f64d67ab789",
         "caption_sha256": "03d2bafaaa4596a0d5bef8ae1efc15497c01b0a48341eb2d8ae7698e19725dee",
         "open_major": 0,
-        "open_minor": 2,
+        "open_minor": 1,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -463,11 +463,11 @@
       "review": {
         "figure": "FIG-29",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "b6a25e34d7e48dbf47d8203340a1ebc9bc7e9f10d40c1657d2d9885c1d39e7b4",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "2d12ad7322b8894cd23897a2842b9162bec67f83164a35e13a0e40a3ab893f36",
         "caption_sha256": "ce89ad7247593b2f87859ece91d6e5809d444e310e809d1aa02cc291758d495e",
         "open_major": 0,
-        "open_minor": 2,
+        "open_minor": 1,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -564,8 +564,8 @@
       "review": {
         "figure": "FIG-31",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "6984dfb450eb99284371fc6ad9b438198dda929cd1736e9f934823ebffead867",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "874dfd40bf472988963fea093e871fcae41b49ca2936b22f710864d96b6f2092",
         "caption_sha256": "8b8db7c5a96a1eae9ac8785598503f7e2e33e077ccd7897def5f0e7d8e65120e",
         "open_major": 0,
         "open_minor": 1,
@@ -618,11 +618,11 @@
       "review": {
         "figure": "FIG-32",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "49e6d71cb2dea5e7fba32f4eb9e4a19c7de94968b66125e89beaf1208502ed10",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "a1c14185b5723555f90ae393cf0f1670366e5aaa4866d96095cf8ae608c4faa9",
         "caption_sha256": "299cb39bb185df20d39b5f3cf92925614e623ab5c63502c070b309ab61220a9a",
         "open_major": 0,
-        "open_minor": 1,
+        "open_minor": 0,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -797,11 +797,11 @@
       "review": {
         "figure": "FIG-35",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "a31ae341fddf792a37be68120656856f2f90705a84a9a1e84dc18244fca44b19",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "3b89e9e697dfd21b03168df9c848e52ed64be66b4176e0b60571abbbf40750bd",
         "caption_sha256": "22bd865dbd2cb161ee661022be8f4bbb937a72445eae74b03172d96f7a665c23",
         "open_major": 0,
-        "open_minor": 1,
+        "open_minor": 0,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -844,11 +844,11 @@
       "review": {
         "figure": "FIG-36",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "689b5c06c2d62a99681ae0b7c120833546fe86ceaae312b2ccbfb7c0e794b958",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "2db3b4a5e9fd62d38aef685fffd6ca4913155d730da6be4d41b9924924a2be9a",
         "caption_sha256": "ac1bc8f01ad5029bbd8a9b4f22d099cc6bbd345554c44fcd5b796ed09c4ba0ba",
         "open_major": 0,
-        "open_minor": 2,
+        "open_minor": 1,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -998,11 +998,11 @@
       "review": {
         "figure": "FIG-39",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "830df3a29696c70a329bb75ea0221174bd3d1cb7cc52b557cbdc07cdf4dfecb7",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "938d122ff2d47f009d6233d5dfaed539e111afc3722a2438721498c9cf241739",
         "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
         "open_major": 0,
-        "open_minor": 2,
+        "open_minor": 1,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -1149,8 +1149,8 @@
       "review": {
         "figure": "FIG-42",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "0ef86773a89fe4a10956d5bf69cd3560ce6c11826cc5eb3894b1f35a8368b591",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "bc993910fd3d816de983a4b381761e45886bff174a433e39f11e9583548cac9b",
         "caption_sha256": "08b85b987ca1b35e5c4a428829cd4d195e12fa27a85be74bd92d7549f9ad93be",
         "open_major": 0,
         "open_minor": 1,
@@ -1284,11 +1284,11 @@
       "review": {
         "figure": "FIG-45",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "33e5270d283d9a4dcc1bc8c3f84638906a9fa6ca414f0c4bfbc8b46d7f205d91",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "caa653428e145c59ba531747eba3f0cd3b5bdad7d98c6ab7305869e7fdfffb04",
         "caption_sha256": "544c8db44d30d68a170e82b87f93e59acd8c613cd1a78241cdd5b6da180b07fa",
         "open_major": 0,
-        "open_minor": 2,
+        "open_minor": 1,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -1338,11 +1338,11 @@
       "review": {
         "figure": "FIG-46",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "2940fe8d432eebfcdceb88d251e4768066a3e6489cc89a7c3644c517144947e5",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "36d0d10666a2892bf08c1b85665b1d78d77f4bc435583f91dbb24cc8f3e4b037",
         "caption_sha256": "fb6594f930d50d81cbc37664daf0cca076daedeef6d97a663abf493565575591",
         "open_major": 0,
-        "open_minor": 1,
+        "open_minor": 0,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -1407,16 +1407,14 @@
       },
       "review": {
         "figure": "FIG-47",
-        "verdict": "FAIL",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "6198126f9ec22f375fe325007e2c6d1a0e84526cf1902f751cd3b8759aeea469",
+        "verdict": "PASS_WITH_NOTES",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "61869909f3f97babbebb08281cebcdb48c211a59854208ba3401c9870372bcd0",
         "caption_sha256": "8f66e4b11b21a3e9422a15715b49fb82e77c071d1d8c7709f1ded3a47ff2719c",
-        "open_major": 1,
+        "open_major": 0,
         "open_minor": 0,
         "unresolved_elements_verified_genuine": true,
-        "open_major_summary": [
-          "Wrong terrain type drawn: 'Deep Sand' (large grey patch, label 'Deep Sand') is drawn with the neutral 'Impassable or Blocking per piece (2.9"
-        ]
+        "open_major_summary": []
       }
     },
     {
@@ -1471,11 +1469,11 @@
       "review": {
         "figure": "FIG-48",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "ee68d7ab4041e91c542c58714b26f778955f0f9bfe7cec3433e669f44f04ea45",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "40c7c6f8b8dcfb1e59d7fdb504b6ba3eb16974a70a163db6cebc7ca4691cb28b",
         "caption_sha256": "54ef4455882afc5eabba98a2e45bf7c2492e506a281d52828d5c07adde12f0dc",
         "open_major": 0,
-        "open_minor": 2,
+        "open_minor": 1,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -1524,11 +1522,11 @@
       "review": {
         "figure": "FIG-49",
         "verdict": "PASS_WITH_NOTES",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "47ab469cdbc487a1175435b32e37d5dd0651f522f5253964f5f7c96fb2e13075",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "1f0fd6d9d1fbc15158572d905843518149b0ec51903bbcf21d18e528a47aa93d",
         "caption_sha256": "752bf3f58b809e97a2d9d3982846f343def50359b09e0b623af8afcf7f886514",
         "open_major": 0,
-        "open_minor": 1,
+        "open_minor": 0,
         "unresolved_elements_verified_genuine": false,
         "open_major_summary": []
       }
@@ -1638,17 +1636,14 @@
       },
       "review": {
         "figure": "FIG-51",
-        "verdict": "FAIL",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "05aa1dcd40c656ce324975ba93a3f3cc4d999ebe291f0db1d08c3b72ca4845c5",
+        "verdict": "PASS_WITH_NOTES",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "b0073d136d089c90fcbc88eff8b09e6995a17f77820923ac250eaa1059a9fea2",
         "caption_sha256": "8ed4b790280f1a99b72e41841c37f130d4eb71445f8faf6816ce1ab290d5845e",
-        "open_major": 2,
-        "open_minor": 1,
+        "open_major": 0,
+        "open_minor": 2,
         "unresolved_elements_verified_genuine": false,
-        "open_major_summary": [
-          "Wrong terrain type drawn: 'Reeds' (two pieces, one holding a Chest) is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swa",
-          "Illustrative arrangement violates the placement: Group 1 must be placed 'on a Bog Island near one Chest', but the hexagon (centre 2.7\" from "
-        ]
+        "open_major_summary": []
       }
     },
     {
@@ -1718,16 +1713,14 @@
       },
       "review": {
         "figure": "FIG-52",
-        "verdict": "FAIL",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "8385a1c58828b8d70dcc628377093d23b80be091f3dfa3950e448575b191bfdc",
+        "verdict": "PASS_WITH_NOTES",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "3e1bc4dc058818e08345e3bcf266512e08267d06abcf2045ecea34e4538759c3",
         "caption_sha256": "6622d45c42690e499c14e13929ac78d0df19fabfc16359fbed143a1c2e24970a",
-        "open_major": 1,
+        "open_major": 0,
         "open_minor": 1,
         "unresolved_elements_verified_genuine": true,
-        "open_major_summary": [
-          "Wrong terrain type drawn: 'Reed screen' is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as C"
-        ]
+        "open_major_summary": []
       }
     },
     {
@@ -1773,16 +1766,14 @@
       },
       "review": {
         "figure": "FIG-53",
-        "verdict": "FAIL",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "b57ae5acd14e34e8690d874188cfb88d4c532504ffef749240b4dd8a84ffe5a5",
+        "verdict": "PASS_WITH_NOTES",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "889d9d0947263bde1ad28a779518e995f3b7b716336767b4b7ab5e7f577e5d7d",
         "caption_sha256": "a265935108bb677a0691bdbdc83c6734d8a6df1a7cd0d7d27c840dd94b11e62f",
-        "open_major": 1,
+        "open_major": 0,
         "open_minor": 1,
         "unresolved_elements_verified_genuine": false,
-        "open_major_summary": [
-          "Wrong terrain type drawn: 'Razor Reeds' (two pieces) is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 "
-        ]
+        "open_major_summary": []
       }
     },
     {
@@ -1828,16 +1819,14 @@
       },
       "review": {
         "figure": "FIG-54",
-        "verdict": "FAIL",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "25ec22a8359b7e876013a987f0611f2a6f01f372de0178d083ebf1272d9ec5ec",
+        "verdict": "PASS_WITH_NOTES",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "b361774f32dc63807c9fac145be9a0f436adf73c138dde20eb85665180cbf097",
         "caption_sha256": "bc8d245f6f693cc8f28fb4b08d44d4032834a8e7a37efd79b06bd4c090d36c07",
-        "open_major": 1,
+        "open_major": 0,
         "open_minor": 0,
         "unresolved_elements_verified_genuine": false,
-        "open_major_summary": [
-          "Wrong terrain type drawn: 'Mangroves' and the two 'Corrupted Muck' patches (each holding a Chest) is drawn with the neutral 'Impassable or B"
-        ]
+        "open_major_summary": []
       }
     },
     {
@@ -1908,17 +1897,14 @@
       },
       "review": {
         "figure": "FIG-55",
-        "verdict": "FAIL",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "d0d858a615471c91508474756658bfd43f2461efde1db9af5070d7c07a3a809e",
+        "verdict": "PASS_WITH_NOTES",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "77ae19e4df061cc2c55cdb8aeb9f8a5c1c3ca8faeb58092d1bafc419d2d21e54",
         "caption_sha256": "301f619dd66ddace585da3361de4e88462ad56df541343ea6d8c1028d94c379d",
-        "open_major": 2,
+        "open_major": 0,
         "open_minor": 1,
         "unresolved_elements_verified_genuine": true,
-        "open_major_summary": [
-          "Wrong terrain type drawn: 'Reeds' is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover T",
-          "Illustrative arrangement violates the placement: Treasure Chests go 'on muddy islands' (14524) but both Chests are drawn in open Shallow Wat"
-        ]
+        "open_major_summary": []
       }
     },
     {
@@ -1964,16 +1950,14 @@
       },
       "review": {
         "figure": "FIG-56",
-        "verdict": "FAIL",
-        "reviewed_at": "2026-10-07T04:01:08Z",
-        "svg_sha256": "5a66410fda42b183a6ff74c28e6d1ed1ae06843cce8ae94f8337a759fe8fdf4d",
+        "verdict": "PASS_WITH_NOTES",
+        "reviewed_at": "2026-10-07T04:05:11Z",
+        "svg_sha256": "a637a27b407553549285e7837b79c96899f05380681059db0fbee7d6da2f1e8b",
         "caption_sha256": "d99b1e8d5a335dc3f1b5f629a6ab67b2e4552d378a98b9facd1468da3dc015ea",
-        "open_major": 1,
+        "open_major": 0,
         "open_minor": 1,
         "unresolved_elements_verified_genuine": false,
-        "open_major_summary": [
-          "Wrong terrain type drawn: 'Reeds' is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover T"
-        ]
+        "open_major_summary": []
       }
     }
   ],
@@ -2133,21 +2117,12 @@
       "Counts of scattered terrain are printed values; maps draw a few representative pieces and never resolve 10.6 scaling."
     ],
     "review": {
-      "reviewed_at": "2026-10-07T04:01:08Z",
+      "reviewed_at": "2026-10-07T04:05:11Z",
       "verdicts": {
         "PASS": 1,
-        "PASS_WITH_NOTES": 28,
-        "FAIL": 7
+        "PASS_WITH_NOTES": 35
       },
-      "open_major_figures": [
-        "FIG-47",
-        "FIG-51",
-        "FIG-52",
-        "FIG-53",
-        "FIG-54",
-        "FIG-55",
-        "FIG-56"
-      ]
+      "open_major_figures": []
     }
   }
 }
