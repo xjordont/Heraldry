@@ -1,7 +1,7 @@
 {
- "content_sha256": "63be87f9f34013e0515e579888f2593a101e21e8479d0e9041dfa4057db5c468",
- "pdf": "/home/runner/work/Heraldry/Heraldry/dist/Heraldry_RC485_inkjet-borderless.pdf",
- "pdf_sha256": "f3f5578a40531a9127d6bcad75efdb716d7dcf947cee4c95f25e8158a08f7123",
+ "content_sha256": "c3eca016b344ee8bcf3253f0f1df363ccef5f1b31b8675c5686d7be72aa4d64c",
+ "pdf": "/home/user/Heraldry/dist/Heraldry_RC485_inkjet-borderless.pdf",
+ "pdf_sha256": "fb461827012732dea385e9203d65700199facb158193a2fb0b5cd9ee01ef9684",
  "frame_fit_pt": 670.8000000000001,
  "units": 1833,
  "audited": 1833,
@@ -1954,7 +1954,7 @@
   {
    "id": "h-101-adventure-preparation-sequence",
    "kind": "section",
-   "h2_pt": 3672.9,
+   "h2_pt": 3718.5,
    "pages": [
     361,
     362,
@@ -1969,7 +1969,7 @@
   {
    "id": "h-preparation-steps",
    "kind": "section",
-   "h2_pt": 2502.7,
+   "h2_pt": 2548.3,
    "pages": [
     361,
     362,
@@ -2139,7 +2139,7 @@
   {
    "id": "h-104-core-scenario-outlines",
    "kind": "section",
-   "h2_pt": 44678.6,
+   "h2_pt": 44906.5,
    "pages": [
     394,
     395,
@@ -2227,14 +2227,15 @@
     477,
     478,
     479,
-    480
+    480,
+    481
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
   {
    "id": "h-climate-1-greenmark-scenarios",
    "kind": "section",
-   "h2_pt": 8007.8,
+   "h2_pt": 8080.0,
    "pages": [
     395,
     396,
@@ -2270,7 +2271,7 @@
   {
    "id": "h-scenario-2-the-whispering-grove",
    "kind": "section",
-   "h2_pt": 1498.5,
+   "h2_pt": 1552.2,
    "pages": [
     398,
     399,
@@ -2313,7 +2314,7 @@
   {
    "id": "h-scenario-6-ritual-of-the-old-growth",
    "kind": "section",
-   "h2_pt": 1574.2,
+   "h2_pt": 1578.1,
    "pages": [
     409,
     410,
@@ -2324,7 +2325,7 @@
   {
    "id": "h-climate-2-ashlands-scenarios",
    "kind": "section",
-   "h2_pt": 6956.3,
+   "h2_pt": 6979.9,
    "pages": [
     411,
     412,
@@ -2339,14 +2340,15 @@
     421,
     422,
     423,
-    424
+    424,
+    425
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
   {
    "id": "h-scenario-1-the-fallen-observatory-intro",
    "kind": "section",
-   "h2_pt": 1057.1,
+   "h2_pt": 1061.0,
    "pages": [
     411,
     412,
@@ -2367,7 +2369,7 @@
   {
    "id": "h-scenario-3-the-shifting-sands-of-time",
    "kind": "section",
-   "h2_pt": 949.9,
+   "h2_pt": 965.7,
    "pages": [
     416,
     417
@@ -2377,7 +2379,7 @@
   {
    "id": "h-scenario-4-the-sealed-archive",
    "kind": "section",
-   "h2_pt": 1153.1,
+   "h2_pt": 1154.7,
    "pages": [
     418,
     419
@@ -2401,16 +2403,16 @@
    "pages": [
     422,
     423,
-    424
+    424,
+    425
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
   {
    "id": "h-climate-3-undermarches-scenarios",
    "kind": "section",
-   "h2_pt": 8233.3,
+   "h2_pt": 8303.6,
    "pages": [
-    424,
     425,
     426,
     427,
@@ -2427,8 +2429,7 @@
     438,
     439,
     440,
-    441,
-    442
+    441
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2437,7 +2438,6 @@
    "kind": "section",
    "h2_pt": 1131.9,
    "pages": [
-    424,
     425,
     426
    ],
@@ -2446,7 +2446,7 @@
   {
    "id": "h-scenario-2-the-chasm-crossing",
    "kind": "section",
-   "h2_pt": 1731.6,
+   "h2_pt": 1747.1,
    "pages": [
     427,
     428,
@@ -2458,7 +2458,7 @@
   {
    "id": "h-scenario-3-the-quake",
    "kind": "section",
-   "h2_pt": 1179.9,
+   "h2_pt": 1183.8,
    "pages": [
     431,
     432
@@ -2494,16 +2494,16 @@
    "pages": [
     439,
     440,
-    441,
-    442
+    441
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
   {
    "id": "h-climate-4-pale-city-scenarios",
    "kind": "section",
-   "h2_pt": 6781.1,
+   "h2_pt": 6792.8,
    "pages": [
+    441,
     442,
     443,
     444,
@@ -2524,6 +2524,7 @@
    "kind": "section",
    "h2_pt": 951.0,
    "pages": [
+    441,
     442,
     443
    ],
@@ -2542,7 +2543,7 @@
   {
    "id": "h-scenario-3-the-haunted-mausoleum",
    "kind": "section",
-   "h2_pt": 1174.0,
+   "h2_pt": 1177.9,
    "pages": [
     446,
     447
@@ -2582,7 +2583,7 @@
   {
    "id": "h-climate-5-sun-drowned-scenarios",
    "kind": "section",
-   "h2_pt": 7361.6,
+   "h2_pt": 7373.3,
    "pages": [
     453,
     454,
@@ -2598,14 +2599,15 @@
     464,
     465,
     466,
-    467
+    467,
+    468
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
   {
    "id": "h-scenario-1-the-oasis-raiders-intro",
    "kind": "section",
-   "h2_pt": 1033.0,
+   "h2_pt": 1036.9,
    "pages": [
     453,
     454,
@@ -2616,7 +2618,7 @@
   {
    "id": "h-scenario-2-the-cinder-lords-lost-brazier",
    "kind": "section",
-   "h2_pt": 1060.9,
+   "h2_pt": 1064.8,
    "pages": [
     456,
     457
@@ -2626,7 +2628,7 @@
   {
    "id": "h-scenario-3-tomb-of-the-sunken-kings",
    "kind": "section",
-   "h2_pt": 1084.7,
+   "h2_pt": 1121.3,
    "pages": [
     458,
     459
@@ -2639,7 +2641,8 @@
    "h2_pt": 1645.0,
    "pages": [
     460,
-    461
+    461,
+    462
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2656,11 +2659,11 @@
   {
    "id": "h-scenario-5-the-cursed-colossus-of-the-waste",
    "kind": "section",
-   "h2_pt": 1398.2,
+   "h2_pt": 1402.1,
    "pages": [
-    462,
     463,
-    464
+    464,
+    465
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2669,18 +2672,17 @@
    "kind": "section",
    "h2_pt": 1537.7,
    "pages": [
-    465,
     466,
-    467
+    467,
+    468
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
   {
    "id": "h-climate-6-the-mire-scenarios",
    "kind": "section",
-   "h2_pt": 6907.9,
+   "h2_pt": 6951.7,
    "pages": [
-    467,
     468,
     469,
     470,
@@ -2693,7 +2695,8 @@
     477,
     478,
     479,
-    480
+    480,
+    481
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2702,7 +2705,6 @@
    "kind": "section",
    "h2_pt": 1195.0,
    "pages": [
-    467,
     468,
     469
    ],
@@ -2731,7 +2733,7 @@
   {
    "id": "h-scenario-4-the-blighted-heartwood",
    "kind": "section",
-   "h2_pt": 1319.9,
+   "h2_pt": 1344.6,
    "pages": [
     474,
     475
@@ -2741,21 +2743,22 @@
   {
    "id": "h-scenario-5-salttides-reckoning",
    "kind": "section",
-   "h2_pt": 1435.8,
+   "h2_pt": 1460.5,
    "pages": [
     476,
-    477
+    477,
+    478
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
   {
    "id": "h-scenario-6-the-serpents-sunken-hoard",
    "kind": "section",
-   "h2_pt": 1340.8,
+   "h2_pt": 1356.6,
    "pages": [
-    478,
     479,
-    480
+    480,
+    481
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2764,13 +2767,13 @@
    "kind": "section",
    "h2_pt": 3006.8,
    "pages": [
-    481,
     482,
     483,
     484,
     485,
     486,
-    487
+    487,
+    488
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2779,9 +2782,9 @@
    "kind": "section",
    "h2_pt": 1037.3,
    "pages": [
-    484,
     485,
-    486
+    486,
+    487
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2790,7 +2793,7 @@
    "kind": "table",
    "h2_pt": 802.5,
    "pages": [
-    485
+    486
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2799,10 +2802,10 @@
    "kind": "section",
    "h2_pt": 1772.2,
    "pages": [
-    488,
     489,
     490,
-    491
+    491,
+    492
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2811,12 +2814,12 @@
    "kind": "section",
    "h2_pt": 3129.3,
    "pages": [
-    494,
     495,
     496,
     497,
     498,
-    499
+    499,
+    500
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2825,8 +2828,8 @@
    "kind": "section",
    "h2_pt": 1089.4,
    "pages": [
-    495,
-    496
+    496,
+    497
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2835,8 +2838,8 @@
    "kind": "section",
    "h2_pt": 810.5,
    "pages": [
-    497,
-    498
+    498,
+    499
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2845,7 +2848,6 @@
    "kind": "section",
    "h2_pt": 7640.1,
    "pages": [
-    500,
     501,
     502,
     503,
@@ -2857,7 +2859,8 @@
     509,
     510,
     511,
-    512
+    512,
+    513
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2866,12 +2869,12 @@
    "kind": "section",
    "h2_pt": 3242.5,
    "pages": [
-    501,
     502,
     503,
     504,
     505,
-    506
+    506,
+    507
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2880,8 +2883,8 @@
    "kind": "section",
    "h2_pt": 756.8,
    "pages": [
-    502,
-    503
+    503,
+    504
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2890,8 +2893,8 @@
    "kind": "table",
    "h2_pt": 737.3,
    "pages": [
-    502,
-    503
+    503,
+    504
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2900,7 +2903,7 @@
    "kind": "section",
    "h2_pt": 731.7,
    "pages": [
-    503
+    504
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2909,7 +2912,7 @@
    "kind": "table",
    "h2_pt": 712.1,
    "pages": [
-    503
+    504
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2918,8 +2921,8 @@
    "kind": "section",
    "h2_pt": 796.1,
    "pages": [
-    503,
-    504
+    504,
+    505
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2928,8 +2931,8 @@
    "kind": "table",
    "h2_pt": 762.5,
    "pages": [
-    503,
-    504
+    504,
+    505
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2938,7 +2941,7 @@
    "kind": "section",
    "h2_pt": 920.3,
    "pages": [
-    504
+    505
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2947,7 +2950,7 @@
    "kind": "table",
    "h2_pt": 900.8,
    "pages": [
-    504
+    505
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2956,8 +2959,8 @@
    "kind": "section",
    "h2_pt": 846.4,
    "pages": [
-    504,
-    505
+    505,
+    506
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2966,8 +2969,8 @@
    "kind": "table",
    "h2_pt": 812.8,
    "pages": [
-    504,
-    505
+    505,
+    506
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2976,8 +2979,8 @@
    "kind": "section",
    "h2_pt": 920.3,
    "pages": [
-    505,
-    506
+    506,
+    507
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2986,8 +2989,8 @@
    "kind": "table",
    "h2_pt": 900.8,
    "pages": [
-    505,
-    506
+    506,
+    507
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -2996,9 +2999,9 @@
    "kind": "section",
    "h2_pt": 1438.1,
    "pages": [
-    506,
     507,
-    508
+    508,
+    509
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3007,7 +3010,7 @@
    "kind": "section",
    "h2_pt": 748.1,
    "pages": [
-    508
+    509
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3016,7 +3019,7 @@
    "kind": "list",
    "h2_pt": 748.1,
    "pages": [
-    508
+    509
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3025,9 +3028,9 @@
    "kind": "section",
    "h2_pt": 1503.0,
    "pages": [
-    508,
     509,
-    510
+    510,
+    511
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3036,8 +3039,8 @@
    "kind": "section",
    "h2_pt": 1263.6,
    "pages": [
-    509,
-    510
+    510,
+    511
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3046,8 +3049,8 @@
    "kind": "table",
    "h2_pt": 1263.6,
    "pages": [
-    509,
-    510
+    510,
+    511
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3056,9 +3059,9 @@
    "kind": "section",
    "h2_pt": 1578.7,
    "pages": [
-    510,
     511,
-    512
+    512,
+    513
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3067,8 +3070,8 @@
    "kind": "section",
    "h2_pt": 1324.4,
    "pages": [
-    511,
-    512
+    512,
+    513
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3077,8 +3080,8 @@
    "kind": "table",
    "h2_pt": 1324.4,
    "pages": [
-    511,
-    512
+    512,
+    513
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3087,9 +3090,9 @@
    "kind": "section",
    "h2_pt": 1385.8,
    "pages": [
-    513,
     514,
-    515
+    515,
+    516
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3098,14 +3101,14 @@
    "kind": "section",
    "h2_pt": 4177.5,
    "pages": [
-    517,
     518,
     519,
     520,
     521,
     522,
     523,
-    524
+    524,
+    525
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3114,14 +3117,14 @@
    "kind": "section",
    "h2_pt": 3797.9,
    "pages": [
-    517,
     518,
     519,
     520,
     521,
     522,
     523,
-    524
+    524,
+    525
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3130,11 +3133,11 @@
    "kind": "section",
    "h2_pt": 2458.6,
    "pages": [
-    520,
     521,
     522,
     523,
-    524
+    524,
+    525
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3143,31 +3146,31 @@
    "kind": "section",
    "h2_pt": 1000.2,
    "pages": [
-    533,
-    534
+    534,
+    535
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
   {
    "id": "h-a11-sample-opening-two-full-rounds-of-play",
    "kind": "section",
-   "h2_pt": 2746.8,
+   "h2_pt": 2833.0,
    "pages": [
-    537,
     538,
     539,
     540,
-    541
+    541,
+    542
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
   {
    "id": "h-initial-positions-and-values",
    "kind": "section",
-   "h2_pt": 799.3,
+   "h2_pt": 885.6,
    "pages": [
-    537,
-    538
+    538,
+    539
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3176,8 +3179,9 @@
    "kind": "section",
    "h2_pt": 859.6,
    "pages": [
-    538,
-    539
+    539,
+    540,
+    541
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3186,9 +3190,8 @@
    "kind": "section",
    "h2_pt": 1027.3,
    "pages": [
-    539,
-    540,
-    541
+    541,
+    542
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3197,7 +3200,6 @@
    "kind": "section",
    "h2_pt": 6842.2,
    "pages": [
-    547,
     548,
     549,
     550,
@@ -3209,7 +3211,8 @@
     556,
     557,
     558,
-    559
+    559,
+    560
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3218,8 +3221,8 @@
    "kind": "section",
    "h2_pt": 757.6,
    "pages": [
-    547,
-    548
+    548,
+    549
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3228,8 +3231,8 @@
    "kind": "section",
    "h2_pt": 1079.0,
    "pages": [
-    548,
-    549
+    549,
+    550
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3238,7 +3241,7 @@
    "kind": "section",
    "h2_pt": 771.6,
    "pages": [
-    549
+    550
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3247,9 +3250,9 @@
    "kind": "section",
    "h2_pt": 1009.2,
    "pages": [
-    549,
     550,
-    551
+    551,
+    552
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3258,7 +3261,7 @@
    "kind": "section",
    "h2_pt": 968.3,
    "pages": [
-    551
+    552
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3267,8 +3270,8 @@
    "kind": "section",
    "h2_pt": 1121.0,
    "pages": [
-    551,
-    552
+    552,
+    553
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3277,9 +3280,9 @@
    "kind": "section",
    "h2_pt": 1602.3,
    "pages": [
-    553,
     554,
-    555
+    555,
+    556
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3288,8 +3291,8 @@
    "kind": "list",
    "h2_pt": 1043.7,
    "pages": [
-    554,
-    555
+    555,
+    556
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3298,8 +3301,8 @@
    "kind": "section",
    "h2_pt": 1106.0,
    "pages": [
-    555,
-    556
+    556,
+    557
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3308,7 +3311,7 @@
    "kind": "section",
    "h2_pt": 812.5,
    "pages": [
-    556
+    557
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3317,9 +3320,9 @@
    "kind": "section",
    "h2_pt": 1107.0,
    "pages": [
-    556,
     557,
-    558
+    558,
+    559
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3328,18 +3331,18 @@
    "kind": "section",
    "h2_pt": 869.4,
    "pages": [
-    558,
-    559
+    559,
+    560
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
   {
    "id": "h-b6-basic-scenario-the-couriers-strongbox",
    "kind": "section",
-   "h2_pt": 903.7,
+   "h2_pt": 954.9,
    "pages": [
-    561,
-    562
+    562,
+    563
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3348,8 +3351,8 @@
    "kind": "section",
    "h2_pt": 750.2,
    "pages": [
-    563,
-    564
+    564,
+    565
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3358,8 +3361,8 @@
    "kind": "section",
    "h2_pt": 1946.9,
    "pages": [
-    569,
-    570
+    570,
+    571
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3368,8 +3371,8 @@
    "kind": "table",
    "h2_pt": 1946.9,
    "pages": [
-    569,
-    570
+    570,
+    571
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3378,8 +3381,8 @@
    "kind": "section",
    "h2_pt": 752.5,
    "pages": [
-    572,
-    573
+    573,
+    574
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3388,8 +3391,8 @@
    "kind": "section",
    "h2_pt": 739.5,
    "pages": [
-    574,
-    575
+    575,
+    576
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3398,7 +3401,7 @@
    "kind": "section",
    "h2_pt": 1355.7,
    "pages": [
-    576
+    577
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3407,7 +3410,7 @@
    "kind": "list",
    "h2_pt": 1327.6,
    "pages": [
-    576
+    577
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3416,7 +3419,7 @@
    "kind": "section",
    "h2_pt": 1168.8,
    "pages": [
-    577
+    578
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3425,7 +3428,7 @@
    "kind": "list",
    "h2_pt": 1140.7,
    "pages": [
-    577
+    578
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3434,7 +3437,6 @@
    "kind": "section",
    "h2_pt": 7218.9,
    "pages": [
-    580,
     581,
     582,
     583,
@@ -3444,7 +3446,8 @@
     587,
     588,
     589,
-    590
+    590,
+    591
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3453,8 +3456,8 @@
    "kind": "section",
    "h2_pt": 880.9,
    "pages": [
-    591,
-    592
+    592,
+    593
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3463,12 +3466,12 @@
    "kind": "section",
    "h2_pt": 2939.1,
    "pages": [
-    593,
     594,
     595,
     596,
     597,
-    598
+    598,
+    599
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3477,10 +3480,10 @@
    "kind": "section",
    "h2_pt": 1606.9,
    "pages": [
-    593,
     594,
     595,
-    596
+    596,
+    597
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3489,9 +3492,9 @@
    "kind": "section",
    "h2_pt": 1364.6,
    "pages": [
-    596,
     597,
-    598
+    598,
+    599
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3500,8 +3503,8 @@
    "kind": "section",
    "h2_pt": 1045.0,
    "pages": [
-    596,
-    597
+    597,
+    598
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3510,8 +3513,8 @@
    "kind": "table",
    "h2_pt": 1025.5,
    "pages": [
-    596,
-    597
+    597,
+    598
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3520,7 +3523,7 @@
    "kind": "section",
    "h2_pt": 899.5,
    "pages": [
-    598
+    599
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3529,7 +3532,7 @@
    "kind": "list",
    "h2_pt": 883.9,
    "pages": [
-    598
+    599
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3538,7 +3541,7 @@
    "kind": "section",
    "h2_pt": 809.2,
    "pages": [
-    599
+    600
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   },
@@ -3547,7 +3550,7 @@
    "kind": "table",
    "h2_pt": 715.9,
    "pages": [
-    599
+    600
    ],
    "reason": "taller than one empty usable page at its approved width; continues with intact child units"
   }
@@ -17731,7 +17734,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 3672.9,
+   "h2_pt": 3718.5,
    "fit_capable": false,
    "pages": [
     361,
@@ -17770,7 +17773,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 2502.7,
+   "h2_pt": 2548.3,
    "fit_capable": false,
    "pages": [
     361,
@@ -17797,7 +17800,7 @@
    "kind": "figure",
    "class": "full",
    "h1_pt": 1000000000.0,
-   "h2_pt": 568.8,
+   "h2_pt": 586.0,
    "fit_capable": true,
    "pages": [
     363
@@ -17808,7 +17811,7 @@
    "kind": "figure",
    "class": "full",
    "h1_pt": 1000000000.0,
-   "h2_pt": 400.1,
+   "h2_pt": 415.6,
    "fit_capable": true,
    "pages": [
     364
@@ -17819,7 +17822,7 @@
    "kind": "figure",
    "class": "full",
    "h1_pt": 1000000000.0,
-   "h2_pt": 370.9,
+   "h2_pt": 383.8,
    "fit_capable": true,
    "pages": [
     365
@@ -18098,7 +18101,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 44678.6,
+   "h2_pt": 44906.5,
    "fit_capable": false,
    "pages": [
     394,
@@ -18187,7 +18190,8 @@
     477,
     478,
     479,
-    480
+    480,
+    481
    ]
   },
   {
@@ -18195,7 +18199,7 @@
    "kind": "figure",
    "class": "full",
    "h1_pt": 1000000000.0,
-   "h2_pt": 482.1,
+   "h2_pt": 493.1,
    "fit_capable": true,
    "pages": [
     394
@@ -18206,7 +18210,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 8007.8,
+   "h2_pt": 8080.0,
    "fit_capable": false,
    "pages": [
     395,
@@ -18232,7 +18236,7 @@
    "id": "h-scenario-1-hunt-the-wild-beast-intro",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2159.9,
+   "h1_pt": 2163.8,
    "h2_pt": 1273.8,
    "fit_capable": false,
    "pages": [
@@ -18289,8 +18293,8 @@
    "id": "FIG-21",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
     396
@@ -18312,7 +18316,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 1498.5,
+   "h2_pt": 1552.2,
    "fit_capable": false,
    "pages": [
     398,
@@ -18379,8 +18383,8 @@
    "id": "FIG-22",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 292.6,
-   "h2_pt": 304.6,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
     399
@@ -18391,7 +18395,7 @@
    "kind": "figure",
    "class": "full",
    "h1_pt": 1000000000.0,
-   "h2_pt": 339.2,
+   "h2_pt": 377.9,
    "fit_capable": true,
    "pages": [
     399
@@ -18401,7 +18405,7 @@
    "id": "h-scenario-3-the-bandits-toll",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2600.9,
+   "h1_pt": 2604.8,
    "h2_pt": 1392.8,
    "fit_capable": false,
    "pages": [
@@ -18480,8 +18484,8 @@
    "id": "FIG-23",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 314.9,
-   "h2_pt": 326.9,
+   "h1_pt": 318.8,
+   "h2_pt": 330.8,
    "fit_capable": true,
    "pages": [
     402
@@ -18502,7 +18506,7 @@
    "id": "h-scenario-4-the-spiders-silk-route",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2262.7,
+   "h1_pt": 2278.5,
    "h2_pt": 1216.8,
    "fit_capable": false,
    "pages": [
@@ -18558,8 +18562,8 @@
    "id": "FIG-24",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 320.2,
+   "h2_pt": 332.2,
    "fit_capable": true,
    "pages": [
     405
@@ -18580,7 +18584,7 @@
    "id": "h-scenario-5-the-ambushed-emissary",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2782.9,
+   "h1_pt": 2798.6,
    "h2_pt": 1442.7,
    "fit_capable": false,
    "pages": [
@@ -18637,8 +18641,8 @@
    "id": "FIG-25",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 325.3,
-   "h2_pt": 337.3,
+   "h1_pt": 341.1,
+   "h2_pt": 353.1,
    "fit_capable": true,
    "pages": [
     407
@@ -18659,8 +18663,8 @@
    "id": "h-scenario-6-ritual-of-the-old-growth",
    "kind": "section",
    "class": "over",
-   "h1_pt": 3077.8,
-   "h2_pt": 1574.2,
+   "h1_pt": 3081.7,
+   "h2_pt": 1578.1,
    "fit_capable": false,
    "pages": [
     409,
@@ -18727,8 +18731,8 @@
    "id": "FIG-26",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 316.3,
-   "h2_pt": 328.3,
+   "h1_pt": 320.2,
+   "h2_pt": 332.2,
    "fit_capable": true,
    "pages": [
     410
@@ -18749,8 +18753,8 @@
    "id": "h-climate-2-ashlands-scenarios",
    "kind": "section",
    "class": "over",
-   "h1_pt": 13859.4,
-   "h2_pt": 6956.3,
+   "h1_pt": 13918.3,
+   "h2_pt": 6979.9,
    "fit_capable": false,
    "pages": [
     411,
@@ -18766,15 +18770,16 @@
     421,
     422,
     423,
-    424
+    424,
+    425
    ]
   },
   {
    "id": "h-scenario-1-the-fallen-observatory-intro",
    "kind": "section",
    "class": "over",
-   "h1_pt": 1964.2,
-   "h2_pt": 1057.1,
+   "h1_pt": 1968.1,
+   "h2_pt": 1061.0,
    "fit_capable": false,
    "pages": [
     411,
@@ -18841,8 +18846,8 @@
    "id": "FIG-27",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
     412
@@ -18852,7 +18857,7 @@
    "id": "h-scenario-2-the-guardians-test",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2205.9,
+   "h1_pt": 2209.8,
    "h2_pt": 1175.9,
    "fit_capable": false,
    "pages": [
@@ -18908,8 +18913,8 @@
    "id": "FIG-28",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
     415
@@ -18930,8 +18935,8 @@
    "id": "h-scenario-3-the-shifting-sands-of-time",
    "kind": "section",
    "class": "over",
-   "h1_pt": 1822.0,
-   "h2_pt": 949.9,
+   "h1_pt": 1837.7,
+   "h2_pt": 965.7,
    "fit_capable": false,
    "pages": [
     416,
@@ -18953,8 +18958,8 @@
    "id": "FIG-29",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 320.2,
+   "h2_pt": 332.2,
    "fit_capable": true,
    "pages": [
     416
@@ -18975,8 +18980,8 @@
    "id": "h-scenario-4-the-sealed-archive",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2274.1,
-   "h2_pt": 1153.1,
+   "h1_pt": 2289.8,
+   "h2_pt": 1154.7,
    "fit_capable": false,
    "pages": [
     418,
@@ -19042,8 +19047,8 @@
    "id": "FIG-30",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 320.2,
+   "h2_pt": 332.2,
    "fit_capable": true,
    "pages": [
     419
@@ -19075,7 +19080,7 @@
    "id": "h-scenario-5-the-reliquary-of-broken-saints",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2195.1,
+   "h1_pt": 2199.0,
    "h2_pt": 1181.1,
    "fit_capable": false,
    "pages": [
@@ -19153,8 +19158,8 @@
    "id": "FIG-31",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
     421
@@ -19175,13 +19180,14 @@
    "id": "h-scenario-6-the-iron-vein-vault",
    "kind": "section",
    "class": "over",
-   "h1_pt": 3325.0,
+   "h1_pt": 3340.7,
    "h2_pt": 1912.2,
    "fit_capable": false,
    "pages": [
     422,
     423,
-    424
+    424,
+    425
    ]
   },
   {
@@ -19265,8 +19271,8 @@
    "id": "FIG-32",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 320.2,
+   "h2_pt": 332.2,
    "fit_capable": true,
    "pages": [
     423
@@ -19280,7 +19286,7 @@
    "h2_pt": 94.0,
    "fit_capable": true,
    "pages": [
-    423
+    424
    ]
   },
   {
@@ -19302,7 +19308,7 @@
    "h2_pt": 193.9,
    "fit_capable": true,
    "pages": [
-    424
+    425
    ]
   },
   {
@@ -19310,10 +19316,9 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 8233.3,
+   "h2_pt": 8303.6,
    "fit_capable": false,
    "pages": [
-    424,
     425,
     426,
     427,
@@ -19330,19 +19335,17 @@
     438,
     439,
     440,
-    441,
-    442
+    441
    ]
   },
   {
    "id": "h-scenario-1-the-crystal-harvest-intro",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2157.8,
+   "h1_pt": 2182.5,
    "h2_pt": 1131.9,
    "fit_capable": false,
    "pages": [
-    424,
     425,
     426
    ]
@@ -19388,18 +19391,18 @@
    "h2_pt": 209.8,
    "fit_capable": true,
    "pages": [
-    425
+    426
    ]
   },
   {
    "id": "FIG-33",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 329.2,
+   "h2_pt": 341.2,
    "fit_capable": true,
    "pages": [
-    425
+    426
    ]
   },
   {
@@ -19407,7 +19410,7 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 1731.6,
+   "h2_pt": 1747.1,
    "fit_capable": false,
    "pages": [
     427,
@@ -19475,8 +19478,8 @@
    "id": "FIG-34",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 316.3,
-   "h2_pt": 328.3,
+   "h1_pt": 320.2,
+   "h2_pt": 332.2,
    "fit_capable": true,
    "pages": [
     428
@@ -19487,7 +19490,7 @@
    "kind": "figure",
    "class": "full",
    "h1_pt": 1000000000.0,
-   "h2_pt": 385.2,
+   "h2_pt": 400.7,
    "fit_capable": true,
    "pages": [
     429
@@ -19497,8 +19500,8 @@
    "id": "h-scenario-3-the-quake",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2275.8,
-   "h2_pt": 1179.9,
+   "h1_pt": 2279.7,
+   "h2_pt": 1183.8,
    "fit_capable": false,
    "pages": [
     431,
@@ -19553,8 +19556,8 @@
    "id": "FIG-35",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 326.7,
-   "h2_pt": 338.7,
+   "h1_pt": 330.6,
+   "h2_pt": 342.6,
    "fit_capable": true,
    "pages": [
     432
@@ -19564,7 +19567,7 @@
    "id": "h-scenario-4-the-undermarches-outpost-raid",
    "kind": "section",
    "class": "over",
-   "h1_pt": 3145.8,
+   "h1_pt": 3149.7,
    "h2_pt": 1592.8,
    "fit_capable": false,
    "pages": [
@@ -19688,8 +19691,8 @@
    "id": "FIG-36",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
     435
@@ -19710,7 +19713,7 @@
    "id": "h-scenario-5-the-shadowed-under-passage",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2453.8,
+   "h1_pt": 2457.7,
    "h2_pt": 1316.7,
    "fit_capable": false,
    "pages": [
@@ -19777,8 +19780,8 @@
    "id": "FIG-37",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 326.7,
-   "h2_pt": 338.7,
+   "h1_pt": 330.6,
+   "h2_pt": 342.6,
    "fit_capable": true,
    "pages": [
     438
@@ -19799,14 +19802,13 @@
    "id": "h-scenario-6-the-ritual-of-shadow-binding",
    "kind": "section",
    "class": "over",
-   "h1_pt": 3119.4,
+   "h1_pt": 3145.6,
    "h2_pt": 1631.5,
    "fit_capable": false,
    "pages": [
     439,
     440,
-    441,
-    442
+    441
    ]
   },
   {
@@ -19879,8 +19881,8 @@
    "id": "FIG-38",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 330.6,
+   "h2_pt": 342.6,
    "fit_capable": true,
    "pages": [
     440
@@ -19938,17 +19940,18 @@
    "h2_pt": 207.8,
    "fit_capable": true,
    "pages": [
-    442
+    441
    ]
   },
   {
    "id": "h-climate-4-pale-city-scenarios",
    "kind": "section",
    "class": "over",
-   "h1_pt": 13517.1,
-   "h2_pt": 6781.1,
+   "h1_pt": 13540.5,
+   "h2_pt": 6792.8,
    "fit_capable": false,
    "pages": [
+    441,
     442,
     443,
     444,
@@ -19967,10 +19970,11 @@
    "id": "h-scenario-1-plunder-of-the-frozen-ruins-intro",
    "kind": "section",
    "class": "over",
-   "h1_pt": 1873.8,
+   "h1_pt": 1877.7,
    "h2_pt": 951.0,
    "fit_capable": false,
    "pages": [
+    441,
     442,
     443
    ]
@@ -20001,18 +20005,18 @@
    "id": "FIG-39",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
-    443
+    442
    ]
   },
   {
    "id": "h-scenario-2-the-alchemists-frozen-laboratory",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2397.9,
+   "h1_pt": 2401.8,
    "h2_pt": 1275.8,
    "fit_capable": false,
    "pages": [
@@ -20079,8 +20083,8 @@
    "id": "FIG-40",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 314.9,
-   "h2_pt": 326.9,
+   "h1_pt": 318.8,
+   "h2_pt": 330.8,
    "fit_capable": true,
    "pages": [
     445
@@ -20090,8 +20094,8 @@
    "id": "h-scenario-3-the-haunted-mausoleum",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2134.9,
-   "h2_pt": 1174.0,
+   "h1_pt": 2138.8,
+   "h2_pt": 1177.9,
    "fit_capable": false,
    "pages": [
     446,
@@ -20157,8 +20161,8 @@
    "id": "FIG-41",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
     447
@@ -20168,7 +20172,7 @@
    "id": "h-scenario-4-the-clockwork-menagerie",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2284.9,
+   "h1_pt": 2288.8,
    "h2_pt": 1284.8,
    "fit_capable": false,
    "pages": [
@@ -20213,8 +20217,8 @@
    "id": "FIG-42",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 314.9,
-   "h2_pt": 326.9,
+   "h1_pt": 318.8,
+   "h2_pt": 330.8,
    "fit_capable": true,
    "pages": [
     449
@@ -20224,7 +20228,7 @@
    "id": "h-scenario-5-the-ice-wyrms-hoard",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2445.1,
+   "h1_pt": 2449.0,
    "h2_pt": 1235.0,
    "fit_capable": false,
    "pages": [
@@ -20291,8 +20295,8 @@
    "id": "FIG-43",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 314.9,
-   "h2_pt": 326.9,
+   "h1_pt": 318.8,
+   "h2_pt": 330.8,
    "fit_capable": true,
    "pages": [
     451
@@ -20324,7 +20328,7 @@
    "id": "h-scenario-6-the-icebound-court",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2307.3,
+   "h1_pt": 2311.2,
    "h2_pt": 1289.8,
    "fit_capable": false,
    "pages": [
@@ -20391,8 +20395,8 @@
    "id": "FIG-44",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 314.9,
-   "h2_pt": 326.9,
+   "h1_pt": 318.8,
+   "h2_pt": 330.8,
    "fit_capable": true,
    "pages": [
     453
@@ -20424,8 +20428,8 @@
    "id": "h-climate-5-sun-drowned-scenarios",
    "kind": "section",
    "class": "over",
-   "h1_pt": 14123.0,
-   "h2_pt": 7361.6,
+   "h1_pt": 14179.0,
+   "h2_pt": 7373.3,
    "fit_capable": false,
    "pages": [
     453,
@@ -20442,15 +20446,16 @@
     464,
     465,
     466,
-    467
+    467,
+    468
    ]
   },
   {
    "id": "h-scenario-1-the-oasis-raiders-intro",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2017.2,
-   "h2_pt": 1033.0,
+   "h1_pt": 2021.1,
+   "h2_pt": 1036.9,
    "fit_capable": false,
    "pages": [
     453,
@@ -20506,8 +20511,8 @@
    "id": "FIG-45",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
     454
@@ -20528,8 +20533,8 @@
    "id": "h-scenario-2-the-cinder-lords-lost-brazier",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2030.0,
-   "h2_pt": 1060.9,
+   "h1_pt": 2033.9,
+   "h2_pt": 1064.8,
    "fit_capable": false,
    "pages": [
     456,
@@ -20584,8 +20589,8 @@
    "id": "FIG-46",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
     457
@@ -20606,8 +20611,8 @@
    "id": "h-scenario-3-tomb-of-the-sunken-kings",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2146.8,
-   "h2_pt": 1084.7,
+   "h1_pt": 2183.4,
+   "h2_pt": 1121.3,
    "fit_capable": false,
    "pages": [
     458,
@@ -20673,8 +20678,8 @@
    "id": "FIG-47",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 341.1,
+   "h2_pt": 353.1,
    "fit_capable": true,
    "pages": [
     459
@@ -20684,12 +20689,13 @@
    "id": "h-scenario-4-the-sandwyrms-lair",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2482.5,
+   "h1_pt": 2486.4,
    "h2_pt": 1645.0,
    "fit_capable": false,
    "pages": [
     460,
-    461
+    461,
+    462
    ]
   },
   {
@@ -20741,8 +20747,8 @@
    "id": "FIG-48",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 314.9,
-   "h2_pt": 326.9,
+   "h1_pt": 318.8,
+   "h2_pt": 330.8,
    "fit_capable": true,
    "pages": [
     461
@@ -20763,13 +20769,13 @@
    "id": "h-scenario-5-the-cursed-colossus-of-the-waste",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2362.2,
-   "h2_pt": 1398.2,
+   "h1_pt": 2366.1,
+   "h2_pt": 1402.1,
    "fit_capable": false,
    "pages": [
-    462,
     463,
-    464
+    464,
+    465
    ]
   },
   {
@@ -20780,7 +20786,7 @@
    "h2_pt": 120.1,
    "fit_capable": true,
    "pages": [
-    462
+    463
    ]
   },
   {
@@ -20791,7 +20797,7 @@
    "h2_pt": 106.9,
    "fit_capable": true,
    "pages": [
-    462
+    463
    ]
   },
   {
@@ -20802,7 +20808,7 @@
    "h2_pt": 40.1,
    "fit_capable": true,
    "pages": [
-    462
+    463
    ]
   },
   {
@@ -20813,7 +20819,7 @@
    "h2_pt": 435.6,
    "fit_capable": true,
    "pages": [
-    463
+    464
    ]
   },
   {
@@ -20824,18 +20830,18 @@
    "h2_pt": 111.0,
    "fit_capable": true,
    "pages": [
-    463
+    464
    ]
   },
   {
    "id": "FIG-49",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 314.9,
-   "h2_pt": 326.9,
+   "h1_pt": 318.8,
+   "h2_pt": 330.8,
    "fit_capable": true,
    "pages": [
-    463
+    464
    ]
   },
   {
@@ -20846,20 +20852,20 @@
    "h2_pt": 66.0,
    "fit_capable": true,
    "pages": [
-    464
+    465
    ]
   },
   {
    "id": "h-scenario-6-the-cinder-lords-obsidian-prison",
    "kind": "section",
    "class": "over",
-   "h1_pt": 3011.1,
+   "h1_pt": 3015.0,
    "h2_pt": 1537.7,
    "fit_capable": false,
    "pages": [
-    465,
     466,
-    467
+    467,
+    468
    ]
   },
   {
@@ -20870,7 +20876,7 @@
    "h2_pt": 124.9,
    "fit_capable": true,
    "pages": [
-    465
+    466
    ]
   },
   {
@@ -20881,7 +20887,7 @@
    "h2_pt": 120.1,
    "fit_capable": true,
    "pages": [
-    465
+    466
    ]
   },
   {
@@ -20892,7 +20898,7 @@
    "h2_pt": 264.7,
    "fit_capable": true,
    "pages": [
-    465
+    466
    ]
   },
   {
@@ -20903,7 +20909,7 @@
    "h2_pt": 54.0,
    "fit_capable": true,
    "pages": [
-    465
+    466
    ]
   },
   {
@@ -20914,7 +20920,7 @@
    "h2_pt": 184.0,
    "fit_capable": true,
    "pages": [
-    465
+    466
    ]
   },
   {
@@ -20925,7 +20931,7 @@
    "h2_pt": 92.9,
    "fit_capable": true,
    "pages": [
-    466
+    467
    ]
   },
   {
@@ -20936,18 +20942,18 @@
    "h2_pt": 111.0,
    "fit_capable": true,
    "pages": [
-    466
+    467
    ]
   },
   {
    "id": "FIG-50",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
-    466
+    467
    ]
   },
   {
@@ -20958,18 +20964,17 @@
    "h2_pt": 193.9,
    "fit_capable": true,
    "pages": [
-    467
+    468
    ]
   },
   {
    "id": "h-climate-6-the-mire-scenarios",
    "kind": "section",
    "class": "over",
-   "h1_pt": 13760.5,
-   "h2_pt": 6907.9,
+   "h1_pt": 13847.8,
+   "h2_pt": 6951.7,
    "fit_capable": false,
    "pages": [
-    467,
     468,
     469,
     470,
@@ -20982,18 +20987,18 @@
     477,
     478,
     479,
-    480
+    480,
+    481
    ]
   },
   {
    "id": "h-scenario-1-the-reliquary-of-edrava-salttide-intro",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2111.1,
+   "h1_pt": 2115.0,
    "h2_pt": 1195.0,
    "fit_capable": false,
    "pages": [
-    467,
     468,
     469
    ]
@@ -21006,7 +21011,7 @@
    "h2_pt": 103.0,
    "fit_capable": true,
    "pages": [
-    467
+    468
    ]
   },
   {
@@ -21017,7 +21022,7 @@
    "h2_pt": 82.0,
    "fit_capable": true,
    "pages": [
-    467
+    468
    ]
   },
   {
@@ -21028,7 +21033,7 @@
    "h2_pt": 141.0,
    "fit_capable": true,
    "pages": [
-    468
+    469
    ]
   },
   {
@@ -21039,7 +21044,7 @@
    "h2_pt": 92.9,
    "fit_capable": true,
    "pages": [
-    468
+    469
    ]
   },
   {
@@ -21050,15 +21055,15 @@
    "h2_pt": 124.9,
    "fit_capable": true,
    "pages": [
-    468
+    469
    ]
   },
   {
    "id": "FIG-51",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 308.4,
+   "h2_pt": 320.4,
    "fit_capable": true,
    "pages": [
     469
@@ -21068,7 +21073,7 @@
    "id": "h-scenario-2-the-lizardfolks-stolen-offerings",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2278.4,
+   "h1_pt": 2292.7,
    "h2_pt": 1339.9,
    "fit_capable": false,
    "pages": [
@@ -21157,8 +21162,8 @@
    "id": "FIG-52",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 314.9,
-   "h2_pt": 326.9,
+   "h1_pt": 329.2,
+   "h2_pt": 341.2,
    "fit_capable": true,
    "pages": [
     471
@@ -21179,7 +21184,7 @@
    "id": "h-scenario-3-the-mire-titans-fen",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2108.7,
+   "h1_pt": 2112.6,
    "h2_pt": 1256.1,
    "fit_capable": false,
    "pages": [
@@ -21246,8 +21251,8 @@
    "id": "FIG-53",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 314.9,
-   "h2_pt": 326.9,
+   "h1_pt": 318.8,
+   "h2_pt": 330.8,
    "fit_capable": true,
    "pages": [
     473
@@ -21268,8 +21273,8 @@
    "id": "h-scenario-4-the-blighted-heartwood",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2357.8,
-   "h2_pt": 1319.9,
+   "h1_pt": 2382.6,
+   "h2_pt": 1344.6,
    "fit_capable": false,
    "pages": [
     474,
@@ -21357,8 +21362,8 @@
    "id": "FIG-54",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 329.2,
+   "h2_pt": 341.2,
    "fit_capable": true,
    "pages": [
     475
@@ -21379,12 +21384,13 @@
    "id": "h-scenario-5-salttides-reckoning",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2599.5,
-   "h2_pt": 1435.8,
+   "h1_pt": 2624.2,
+   "h2_pt": 1460.5,
    "fit_capable": false,
    "pages": [
     476,
-    477
+    477,
+    478
    ]
   },
   {
@@ -21457,8 +21463,8 @@
    "id": "FIG-55",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 329.2,
+   "h2_pt": 341.2,
    "fit_capable": true,
    "pages": [
     477
@@ -21472,20 +21478,20 @@
    "h2_pt": 152.0,
    "fit_capable": true,
    "pages": [
-    477
+    478
    ]
   },
   {
    "id": "h-scenario-6-the-serpents-sunken-hoard",
    "kind": "section",
    "class": "over",
-   "h1_pt": 2231.8,
-   "h2_pt": 1340.8,
+   "h1_pt": 2247.6,
+   "h2_pt": 1356.6,
    "fit_capable": false,
    "pages": [
-    478,
     479,
-    480
+    480,
+    481
    ]
   },
   {
@@ -21496,7 +21502,7 @@
    "h2_pt": 134.1,
    "fit_capable": true,
    "pages": [
-    478
+    479
    ]
   },
   {
@@ -21507,7 +21513,7 @@
    "h2_pt": 92.9,
    "fit_capable": true,
    "pages": [
-    478
+    479
    ]
   },
   {
@@ -21518,7 +21524,7 @@
    "h2_pt": 82.0,
    "fit_capable": true,
    "pages": [
-    478
+    479
    ]
   },
   {
@@ -21529,7 +21535,7 @@
    "h2_pt": 337.7,
    "fit_capable": true,
    "pages": [
-    479
+    480
    ]
   },
   {
@@ -21540,18 +21546,18 @@
    "h2_pt": 111.0,
    "fit_capable": true,
    "pages": [
-    479
+    480
    ]
   },
   {
    "id": "FIG-56",
    "kind": "figure",
    "class": "col",
-   "h1_pt": 304.5,
-   "h2_pt": 316.5,
+   "h1_pt": 320.2,
+   "h2_pt": 332.2,
    "fit_capable": true,
    "pages": [
-    480
+    481
    ]
   },
   {
@@ -21562,7 +21568,7 @@
    "h2_pt": 123.0,
    "fit_capable": true,
    "pages": [
-    480
+    481
    ]
   },
   {
@@ -21573,13 +21579,13 @@
    "h2_pt": 3006.8,
    "fit_capable": false,
    "pages": [
-    481,
     482,
     483,
     484,
     485,
     486,
-    487
+    487,
+    488
    ]
   },
   {
@@ -21590,7 +21596,7 @@
    "h2_pt": 187.0,
    "fit_capable": true,
    "pages": [
-    481
+    482
    ]
   },
   {
@@ -21601,7 +21607,7 @@
    "h2_pt": 658.3,
    "fit_capable": true,
    "pages": [
-    482
+    483
    ]
   },
   {
@@ -21612,7 +21618,7 @@
    "h2_pt": 157.0,
    "fit_capable": true,
    "pages": [
-    483
+    484
    ]
   },
   {
@@ -21623,7 +21629,7 @@
    "h2_pt": 130.1,
    "fit_capable": true,
    "pages": [
-    483
+    484
    ]
   },
   {
@@ -21634,7 +21640,7 @@
    "h2_pt": 504.3,
    "fit_capable": true,
    "pages": [
-    484
+    485
    ]
   },
   {
@@ -21645,7 +21651,7 @@
    "h2_pt": 84.1,
    "fit_capable": true,
    "pages": [
-    484
+    485
    ]
   },
   {
@@ -21656,9 +21662,9 @@
    "h2_pt": 1037.3,
    "fit_capable": false,
    "pages": [
-    484,
     485,
-    486
+    486,
+    487
    ]
   },
   {
@@ -21669,7 +21675,7 @@
    "h2_pt": 802.5,
    "fit_capable": false,
    "pages": [
-    485
+    486
    ]
   },
   {
@@ -21680,7 +21686,7 @@
    "h2_pt": 150.9,
    "fit_capable": true,
    "pages": [
-    486
+    487
    ]
   },
   {
@@ -21691,7 +21697,7 @@
    "h2_pt": 179.9,
    "fit_capable": true,
    "pages": [
-    486
+    487
    ]
   },
   {
@@ -21702,7 +21708,7 @@
    "h2_pt": 207.8,
    "fit_capable": true,
    "pages": [
-    486
+    487
    ]
   },
   {
@@ -21713,7 +21719,7 @@
    "h2_pt": 277.7,
    "fit_capable": true,
    "pages": [
-    487
+    488
    ]
   },
   {
@@ -21724,7 +21730,7 @@
    "h2_pt": 195.0,
    "fit_capable": true,
    "pages": [
-    487
+    488
    ]
   },
   {
@@ -21735,10 +21741,10 @@
    "h2_pt": 1772.2,
    "fit_capable": false,
    "pages": [
-    488,
     489,
     490,
-    491
+    491,
+    492
    ]
   },
   {
@@ -21749,7 +21755,7 @@
    "h2_pt": 109.0,
    "fit_capable": true,
    "pages": [
-    488
+    489
    ]
   },
   {
@@ -21760,7 +21766,7 @@
    "h2_pt": 213.3,
    "fit_capable": true,
    "pages": [
-    488
+    489
    ]
   },
   {
@@ -21771,7 +21777,7 @@
    "h2_pt": 98.0,
    "fit_capable": true,
    "pages": [
-    488
+    489
    ]
   },
   {
@@ -21782,7 +21788,7 @@
    "h2_pt": 256.0,
    "fit_capable": true,
    "pages": [
-    489
+    490
    ]
   },
   {
@@ -21793,7 +21799,7 @@
    "h2_pt": 355.8,
    "fit_capable": true,
    "pages": [
-    489
+    490
    ]
   },
   {
@@ -21804,7 +21810,7 @@
    "h2_pt": 189.9,
    "fit_capable": true,
    "pages": [
-    490
+    491
    ]
   },
   {
@@ -21815,7 +21821,7 @@
    "h2_pt": 123.9,
    "fit_capable": true,
    "pages": [
-    490
+    491
    ]
   },
   {
@@ -21826,7 +21832,7 @@
    "h2_pt": 98.0,
    "fit_capable": true,
    "pages": [
-    490
+    491
    ]
   },
   {
@@ -21837,7 +21843,7 @@
    "h2_pt": 152.9,
    "fit_capable": true,
    "pages": [
-    490
+    491
    ]
   },
   {
@@ -21848,7 +21854,7 @@
    "h2_pt": 226.6,
    "fit_capable": true,
    "pages": [
-    490
+    491
    ]
   },
   {
@@ -21859,7 +21865,7 @@
    "h2_pt": 185.9,
    "fit_capable": true,
    "pages": [
-    491
+    492
    ]
   },
   {
@@ -21870,12 +21876,12 @@
    "h2_pt": 3129.3,
    "fit_capable": false,
    "pages": [
-    494,
     495,
     496,
     497,
     498,
-    499
+    499,
+    500
    ]
   },
   {
@@ -21886,7 +21892,7 @@
    "h2_pt": 230.3,
    "fit_capable": true,
    "pages": [
-    494
+    495
    ]
   },
   {
@@ -21897,7 +21903,7 @@
    "h2_pt": 111.5,
    "fit_capable": true,
    "pages": [
-    494
+    495
    ]
   },
   {
@@ -21908,7 +21914,7 @@
    "h2_pt": 167.9,
    "fit_capable": true,
    "pages": [
-    495
+    496
    ]
   },
   {
@@ -21919,8 +21925,8 @@
    "h2_pt": 1089.4,
    "fit_capable": false,
    "pages": [
-    495,
-    496
+    496,
+    497
    ]
   },
   {
@@ -21931,7 +21937,7 @@
    "h2_pt": 168.9,
    "fit_capable": true,
    "pages": [
-    495
+    496
    ]
   },
   {
@@ -21942,7 +21948,7 @@
    "h2_pt": 151.8,
    "fit_capable": true,
    "pages": [
-    495
+    496
    ]
   },
   {
@@ -21953,7 +21959,7 @@
    "h2_pt": 148.8,
    "fit_capable": true,
    "pages": [
-    495
+    496
    ]
   },
   {
@@ -21964,7 +21970,7 @@
    "h2_pt": 124.4,
    "fit_capable": true,
    "pages": [
-    495
+    496
    ]
   },
   {
@@ -21975,7 +21981,7 @@
    "h2_pt": 469.7,
    "fit_capable": true,
    "pages": [
-    496
+    497
    ]
   },
   {
@@ -21986,7 +21992,7 @@
    "h2_pt": 124.2,
    "fit_capable": true,
    "pages": [
-    496
+    497
    ]
   },
   {
@@ -21997,7 +22003,7 @@
    "h2_pt": 124.2,
    "fit_capable": true,
    "pages": [
-    496
+    497
    ]
   },
   {
@@ -22008,7 +22014,7 @@
    "h2_pt": 257.9,
    "fit_capable": true,
    "pages": [
-    497
+    498
    ]
   },
   {
@@ -22019,8 +22025,8 @@
    "h2_pt": 810.5,
    "fit_capable": false,
    "pages": [
-    497,
-    498
+    498,
+    499
    ]
   },
   {
@@ -22031,7 +22037,7 @@
    "h2_pt": 280.7,
    "fit_capable": true,
    "pages": [
-    497
+    498
    ]
   },
   {
@@ -22042,7 +22048,7 @@
    "h2_pt": 185.9,
    "fit_capable": true,
    "pages": [
-    498
+    499
    ]
   },
   {
@@ -22053,7 +22059,7 @@
    "h2_pt": 187.7,
    "fit_capable": true,
    "pages": [
-    498
+    499
    ]
   },
   {
@@ -22064,7 +22070,7 @@
    "h2_pt": 186.4,
    "fit_capable": true,
    "pages": [
-    498
+    499
    ]
   },
   {
@@ -22075,7 +22081,7 @@
    "h2_pt": 422.0,
    "fit_capable": true,
    "pages": [
-    499
+    500
    ]
   },
   {
@@ -22086,7 +22092,6 @@
    "h2_pt": 7640.1,
    "fit_capable": false,
    "pages": [
-    500,
     501,
     502,
     503,
@@ -22098,7 +22103,8 @@
     509,
     510,
     511,
-    512
+    512,
+    513
    ]
   },
   {
@@ -22109,7 +22115,7 @@
    "h2_pt": 384.1,
    "fit_capable": true,
    "pages": [
-    500
+    501
    ]
   },
   {
@@ -22120,7 +22126,7 @@
    "h2_pt": 414.1,
    "fit_capable": true,
    "pages": [
-    501
+    502
    ]
   },
   {
@@ -22131,7 +22137,7 @@
    "h2_pt": 70.1,
    "fit_capable": true,
    "pages": [
-    501
+    502
    ]
   },
   {
@@ -22142,12 +22148,12 @@
    "h2_pt": 3242.5,
    "fit_capable": false,
    "pages": [
-    501,
     502,
     503,
     504,
     505,
-    506
+    506,
+    507
    ]
   },
   {
@@ -22158,7 +22164,7 @@
    "h2_pt": 124.4,
    "fit_capable": true,
    "pages": [
-    501
+    502
    ]
   },
   {
@@ -22169,7 +22175,7 @@
    "h2_pt": 195.9,
    "fit_capable": true,
    "pages": [
-    501
+    502
    ]
   },
   {
@@ -22180,7 +22186,7 @@
    "h2_pt": 308.6,
    "fit_capable": true,
    "pages": [
-    502
+    503
    ]
   },
   {
@@ -22191,8 +22197,8 @@
    "h2_pt": 756.8,
    "fit_capable": false,
    "pages": [
-    502,
-    503
+    503,
+    504
    ]
   },
   {
@@ -22203,8 +22209,8 @@
    "h2_pt": 737.3,
    "fit_capable": false,
    "pages": [
-    502,
-    503
+    503,
+    504
    ]
   },
   {
@@ -22215,7 +22221,7 @@
    "h2_pt": 731.7,
    "fit_capable": false,
    "pages": [
-    503
+    504
    ]
   },
   {
@@ -22226,7 +22232,7 @@
    "h2_pt": 712.1,
    "fit_capable": false,
    "pages": [
-    503
+    504
    ]
   },
   {
@@ -22237,8 +22243,8 @@
    "h2_pt": 796.1,
    "fit_capable": false,
    "pages": [
-    503,
-    504
+    504,
+    505
    ]
   },
   {
@@ -22249,8 +22255,8 @@
    "h2_pt": 762.5,
    "fit_capable": false,
    "pages": [
-    503,
-    504
+    504,
+    505
    ]
   },
   {
@@ -22261,7 +22267,7 @@
    "h2_pt": 920.3,
    "fit_capable": false,
    "pages": [
-    504
+    505
    ]
   },
   {
@@ -22272,7 +22278,7 @@
    "h2_pt": 900.8,
    "fit_capable": false,
    "pages": [
-    504
+    505
    ]
   },
   {
@@ -22283,8 +22289,8 @@
    "h2_pt": 846.4,
    "fit_capable": false,
    "pages": [
-    504,
-    505
+    505,
+    506
    ]
   },
   {
@@ -22295,8 +22301,8 @@
    "h2_pt": 812.8,
    "fit_capable": false,
    "pages": [
-    504,
-    505
+    505,
+    506
    ]
   },
   {
@@ -22307,8 +22313,8 @@
    "h2_pt": 920.3,
    "fit_capable": false,
    "pages": [
-    505,
-    506
+    506,
+    507
    ]
   },
   {
@@ -22319,8 +22325,8 @@
    "h2_pt": 900.8,
    "fit_capable": false,
    "pages": [
-    505,
-    506
+    506,
+    507
    ]
   },
   {
@@ -22331,7 +22337,7 @@
    "h2_pt": 93.5,
    "fit_capable": true,
    "pages": [
-    506
+    507
    ]
   },
   {
@@ -22342,9 +22348,9 @@
    "h2_pt": 1438.1,
    "fit_capable": false,
    "pages": [
-    506,
     507,
-    508
+    508,
+    509
    ]
   },
   {
@@ -22355,7 +22361,7 @@
    "h2_pt": 81.0,
    "fit_capable": true,
    "pages": [
-    506
+    507
    ]
   },
   {
@@ -22366,7 +22372,7 @@
    "h2_pt": 227.0,
    "fit_capable": true,
    "pages": [
-    506
+    507
    ]
   },
   {
@@ -22377,7 +22383,7 @@
    "h2_pt": 585.2,
    "fit_capable": true,
    "pages": [
-    507
+    508
    ]
   },
   {
@@ -22388,7 +22394,7 @@
    "h2_pt": 235.8,
    "fit_capable": true,
    "pages": [
-    507
+    508
    ]
   },
   {
@@ -22399,7 +22405,7 @@
    "h2_pt": 269.3,
    "fit_capable": true,
    "pages": [
-    507
+    508
    ]
   },
   {
@@ -22410,7 +22416,7 @@
    "h2_pt": 135.9,
    "fit_capable": true,
    "pages": [
-    508
+    509
    ]
   },
   {
@@ -22421,7 +22427,7 @@
    "h2_pt": 134.8,
    "fit_capable": true,
    "pages": [
-    508
+    509
    ]
   },
   {
@@ -22432,7 +22438,7 @@
    "h2_pt": 748.1,
    "fit_capable": false,
    "pages": [
-    508
+    509
    ]
   },
   {
@@ -22443,7 +22449,7 @@
    "h2_pt": 748.1,
    "fit_capable": false,
    "pages": [
-    508
+    509
    ]
   },
   {
@@ -22454,9 +22460,9 @@
    "h2_pt": 1503.0,
    "fit_capable": false,
    "pages": [
-    508,
     509,
-    510
+    510,
+    511
    ]
   },
   {
@@ -22467,7 +22473,7 @@
    "h2_pt": 258.8,
    "fit_capable": true,
    "pages": [
-    509
+    510
    ]
   },
   {
@@ -22478,8 +22484,8 @@
    "h2_pt": 1263.6,
    "fit_capable": false,
    "pages": [
-    509,
-    510
+    510,
+    511
    ]
   },
   {
@@ -22490,8 +22496,8 @@
    "h2_pt": 1263.6,
    "fit_capable": false,
    "pages": [
-    509,
-    510
+    510,
+    511
    ]
   },
   {
@@ -22502,7 +22508,7 @@
    "h2_pt": 178.8,
    "fit_capable": true,
    "pages": [
-    510
+    511
    ]
   },
   {
@@ -22513,9 +22519,9 @@
    "h2_pt": 1578.7,
    "fit_capable": false,
    "pages": [
-    510,
     511,
-    512
+    512,
+    513
    ]
   },
   {
@@ -22526,7 +22532,7 @@
    "h2_pt": 323.8,
    "fit_capable": true,
    "pages": [
-    510
+    511
    ]
   },
   {
@@ -22537,8 +22543,8 @@
    "h2_pt": 1324.4,
    "fit_capable": false,
    "pages": [
-    511,
-    512
+    512,
+    513
    ]
   },
   {
@@ -22549,8 +22555,8 @@
    "h2_pt": 1324.4,
    "fit_capable": false,
    "pages": [
-    511,
-    512
+    512,
+    513
    ]
   },
   {
@@ -22561,7 +22567,7 @@
    "h2_pt": 197.3,
    "fit_capable": true,
    "pages": [
-    512
+    513
    ]
   },
   {
@@ -22572,9 +22578,9 @@
    "h2_pt": 1385.8,
    "fit_capable": false,
    "pages": [
-    513,
     514,
-    515
+    515,
+    516
    ]
   },
   {
@@ -22585,7 +22591,7 @@
    "h2_pt": 136.4,
    "fit_capable": true,
    "pages": [
-    513
+    514
    ]
   },
   {
@@ -22596,7 +22602,7 @@
    "h2_pt": 144.0,
    "fit_capable": true,
    "pages": [
-    514
+    515
    ]
   },
   {
@@ -22607,7 +22613,7 @@
    "h2_pt": 128.9,
    "fit_capable": true,
    "pages": [
-    514
+    515
    ]
   },
   {
@@ -22618,7 +22624,7 @@
    "h2_pt": 144.0,
    "fit_capable": true,
    "pages": [
-    514
+    515
    ]
   },
   {
@@ -22629,7 +22635,7 @@
    "h2_pt": 115.0,
    "fit_capable": true,
    "pages": [
-    514
+    515
    ]
   },
   {
@@ -22640,7 +22646,7 @@
    "h2_pt": 101.0,
    "fit_capable": true,
    "pages": [
-    514
+    515
    ]
   },
   {
@@ -22651,7 +22657,7 @@
    "h2_pt": 128.9,
    "fit_capable": true,
    "pages": [
-    515
+    516
    ]
   },
   {
@@ -22662,7 +22668,7 @@
    "h2_pt": 115.0,
    "fit_capable": true,
    "pages": [
-    515
+    516
    ]
   },
   {
@@ -22673,7 +22679,7 @@
    "h2_pt": 87.0,
    "fit_capable": true,
    "pages": [
-    515
+    516
    ]
   },
   {
@@ -22684,7 +22690,7 @@
    "h2_pt": 115.0,
    "fit_capable": true,
    "pages": [
-    515
+    516
    ]
   },
   {
@@ -22695,7 +22701,7 @@
    "h2_pt": 115.0,
    "fit_capable": true,
    "pages": [
-    515
+    516
    ]
   },
   {
@@ -22706,7 +22712,7 @@
    "h2_pt": 464.4,
    "fit_capable": true,
    "pages": [
-    516
+    517
    ]
   },
   {
@@ -22717,14 +22723,14 @@
    "h2_pt": 4177.5,
    "fit_capable": false,
    "pages": [
-    517,
     518,
     519,
     520,
     521,
     522,
     523,
-    524
+    524,
+    525
    ]
   },
   {
@@ -22735,7 +22741,7 @@
    "h2_pt": 251.8,
    "fit_capable": true,
    "pages": [
-    517
+    518
    ]
   },
   {
@@ -22746,7 +22752,7 @@
    "h2_pt": 109.0,
    "fit_capable": true,
    "pages": [
-    517
+    518
    ]
   },
   {
@@ -22757,7 +22763,7 @@
    "h2_pt": 99.7,
    "fit_capable": true,
    "pages": [
-    517
+    518
    ]
   },
   {
@@ -22768,14 +22774,14 @@
    "h2_pt": 3797.9,
    "fit_capable": false,
    "pages": [
-    517,
     518,
     519,
     520,
     521,
     522,
     523,
-    524
+    524,
+    525
    ]
   },
   {
@@ -22786,7 +22792,7 @@
    "h2_pt": 82.1,
    "fit_capable": true,
    "pages": [
-    517
+    518
    ]
   },
   {
@@ -22797,7 +22803,7 @@
    "h2_pt": 548.0,
    "fit_capable": true,
    "pages": [
-    518
+    519
    ]
   },
   {
@@ -22808,7 +22814,7 @@
    "h2_pt": 124.2,
    "fit_capable": true,
    "pages": [
-    519
+    520
    ]
   },
   {
@@ -22819,7 +22825,7 @@
    "h2_pt": 260.2,
    "fit_capable": true,
    "pages": [
-    519
+    520
    ]
   },
   {
@@ -22830,7 +22836,7 @@
    "h2_pt": 206.8,
    "fit_capable": true,
    "pages": [
-    519
+    520
    ]
   },
   {
@@ -22841,7 +22847,7 @@
    "h2_pt": 247.5,
    "fit_capable": true,
    "pages": [
-    520
+    521
    ]
   },
   {
@@ -22852,11 +22858,11 @@
    "h2_pt": 2458.6,
    "fit_capable": false,
    "pages": [
-    520,
     521,
     522,
     523,
-    524
+    524,
+    525
    ]
   },
   {
@@ -22867,7 +22873,7 @@
    "h2_pt": 68.1,
    "fit_capable": true,
    "pages": [
-    520
+    521
    ]
   },
   {
@@ -22878,7 +22884,7 @@
    "h2_pt": 68.1,
    "fit_capable": true,
    "pages": [
-    521
+    522
    ]
   },
   {
@@ -22889,7 +22895,7 @@
    "h2_pt": 226.0,
    "fit_capable": true,
    "pages": [
-    521
+    522
    ]
   },
   {
@@ -22900,7 +22906,7 @@
    "h2_pt": 68.1,
    "fit_capable": true,
    "pages": [
-    521
+    522
    ]
   },
   {
@@ -22911,7 +22917,7 @@
    "h2_pt": 68.1,
    "fit_capable": true,
    "pages": [
-    522
+    523
    ]
   },
   {
@@ -22922,7 +22928,7 @@
    "h2_pt": 68.1,
    "fit_capable": true,
    "pages": [
-    522
+    523
    ]
   },
   {
@@ -22933,7 +22939,7 @@
    "h2_pt": 68.1,
    "fit_capable": true,
    "pages": [
-    523
+    524
    ]
   },
   {
@@ -22944,7 +22950,7 @@
    "h2_pt": 318.6,
    "fit_capable": true,
    "pages": [
-    524
+    525
    ]
   },
   {
@@ -22955,7 +22961,7 @@
    "h2_pt": 256.9,
    "fit_capable": true,
    "pages": [
-    526
+    527
    ]
   },
   {
@@ -22966,7 +22972,7 @@
    "h2_pt": 190.5,
    "fit_capable": true,
    "pages": [
-    527
+    528
    ]
   },
   {
@@ -22977,7 +22983,7 @@
    "h2_pt": 517.1,
    "fit_capable": true,
    "pages": [
-    528
+    529
    ]
   },
   {
@@ -22988,7 +22994,7 @@
    "h2_pt": 484.0,
    "fit_capable": true,
    "pages": [
-    529
+    530
    ]
   },
   {
@@ -22999,7 +23005,7 @@
    "h2_pt": 140.1,
    "fit_capable": true,
    "pages": [
-    530
+    531
    ]
   },
   {
@@ -23010,7 +23016,7 @@
    "h2_pt": 420.9,
    "fit_capable": true,
    "pages": [
-    531
+    532
    ]
   },
   {
@@ -23021,7 +23027,7 @@
    "h2_pt": 293.0,
    "fit_capable": true,
    "pages": [
-    532
+    533
    ]
   },
   {
@@ -23032,8 +23038,8 @@
    "h2_pt": 1000.2,
    "fit_capable": false,
    "pages": [
-    533,
-    534
+    534,
+    535
    ]
   },
   {
@@ -23044,7 +23050,7 @@
    "h2_pt": 432.5,
    "fit_capable": true,
    "pages": [
-    533
+    534
    ]
   },
   {
@@ -23055,7 +23061,7 @@
    "h2_pt": 80.1,
    "fit_capable": true,
    "pages": [
-    534
+    535
    ]
   },
   {
@@ -23066,7 +23072,7 @@
    "h2_pt": 80.1,
    "fit_capable": true,
    "pages": [
-    534
+    535
    ]
   },
   {
@@ -23077,7 +23083,7 @@
    "h2_pt": 488.8,
    "fit_capable": true,
    "pages": [
-    535
+    536
    ]
   },
   {
@@ -23088,7 +23094,7 @@
    "h2_pt": 97.3,
    "fit_capable": true,
    "pages": [
-    536
+    537
    ]
   },
   {
@@ -23096,14 +23102,14 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 2746.8,
+   "h2_pt": 2833.0,
    "fit_capable": false,
    "pages": [
-    537,
     538,
     539,
     540,
-    541
+    541,
+    542
    ]
   },
   {
@@ -23111,11 +23117,11 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 799.3,
+   "h2_pt": 885.6,
    "fit_capable": false,
    "pages": [
-    537,
-    538
+    538,
+    539
    ]
   },
   {
@@ -23126,7 +23132,7 @@
    "h2_pt": 250.6,
    "fit_capable": true,
    "pages": [
-    537
+    538
    ]
   },
   {
@@ -23134,10 +23140,10 @@
    "kind": "figure",
    "class": "full",
    "h1_pt": 1000000000.0,
-   "h2_pt": 454.7,
+   "h2_pt": 540.9,
    "fit_capable": true,
    "pages": [
-    538
+    539
    ]
   },
   {
@@ -23148,8 +23154,9 @@
    "h2_pt": 859.6,
    "fit_capable": false,
    "pages": [
-    538,
-    539
+    539,
+    540,
+    541
    ]
   },
   {
@@ -23160,9 +23167,8 @@
    "h2_pt": 1027.3,
    "fit_capable": false,
    "pages": [
-    539,
-    540,
-    541
+    541,
+    542
    ]
   },
   {
@@ -23173,7 +23179,7 @@
    "h2_pt": 298.9,
    "fit_capable": true,
    "pages": [
-    542
+    543
    ]
   },
   {
@@ -23184,7 +23190,7 @@
    "h2_pt": 314.0,
    "fit_capable": true,
    "pages": [
-    544
+    545
    ]
   },
   {
@@ -23195,7 +23201,7 @@
    "h2_pt": 225.0,
    "fit_capable": true,
    "pages": [
-    545
+    546
    ]
   },
   {
@@ -23206,7 +23212,7 @@
    "h2_pt": 279.5,
    "fit_capable": true,
    "pages": [
-    546
+    547
    ]
   },
   {
@@ -23217,7 +23223,6 @@
    "h2_pt": 6842.2,
    "fit_capable": false,
    "pages": [
-    547,
     548,
     549,
     550,
@@ -23229,7 +23234,8 @@
     556,
     557,
     558,
-    559
+    559,
+    560
    ]
   },
   {
@@ -23240,8 +23246,8 @@
    "h2_pt": 757.6,
    "fit_capable": false,
    "pages": [
-    547,
-    548
+    548,
+    549
    ]
   },
   {
@@ -23252,7 +23258,7 @@
    "h2_pt": 124.9,
    "fit_capable": true,
    "pages": [
-    547
+    548
    ]
   },
   {
@@ -23263,7 +23269,7 @@
    "h2_pt": 68.0,
    "fit_capable": true,
    "pages": [
-    547
+    548
    ]
   },
   {
@@ -23274,7 +23280,7 @@
    "h2_pt": 169.0,
    "fit_capable": true,
    "pages": [
-    547
+    548
    ]
   },
   {
@@ -23285,7 +23291,7 @@
    "h2_pt": 124.9,
    "fit_capable": true,
    "pages": [
-    547
+    548
    ]
   },
   {
@@ -23296,7 +23302,7 @@
    "h2_pt": 294.8,
    "fit_capable": true,
    "pages": [
-    548
+    549
    ]
   },
   {
@@ -23307,8 +23313,8 @@
    "h2_pt": 1079.0,
    "fit_capable": false,
    "pages": [
-    548,
-    549
+    549,
+    550
    ]
   },
   {
@@ -23319,7 +23325,7 @@
    "h2_pt": 236.7,
    "fit_capable": true,
    "pages": [
-    548
+    549
    ]
   },
   {
@@ -23330,7 +23336,7 @@
    "h2_pt": 54.0,
    "fit_capable": true,
    "pages": [
-    548
+    549
    ]
   },
   {
@@ -23341,7 +23347,7 @@
    "h2_pt": 169.0,
    "fit_capable": true,
    "pages": [
-    548
+    549
    ]
   },
   {
@@ -23352,7 +23358,7 @@
    "h2_pt": 236.7,
    "fit_capable": true,
    "pages": [
-    548
+    549
    ]
   },
   {
@@ -23363,7 +23369,7 @@
    "h2_pt": 406.5,
    "fit_capable": true,
    "pages": [
-    549
+    550
    ]
   },
   {
@@ -23374,7 +23380,7 @@
    "h2_pt": 771.6,
    "fit_capable": false,
    "pages": [
-    549
+    550
    ]
   },
   {
@@ -23385,7 +23391,7 @@
    "h2_pt": 124.9,
    "fit_capable": true,
    "pages": [
-    549
+    550
    ]
   },
   {
@@ -23396,7 +23402,7 @@
    "h2_pt": 68.0,
    "fit_capable": true,
    "pages": [
-    549
+    550
    ]
   },
   {
@@ -23407,7 +23413,7 @@
    "h2_pt": 196.9,
    "fit_capable": true,
    "pages": [
-    549
+    550
    ]
   },
   {
@@ -23418,7 +23424,7 @@
    "h2_pt": 351.7,
    "fit_capable": true,
    "pages": [
-    549
+    550
    ]
   },
   {
@@ -23429,7 +23435,7 @@
    "h2_pt": 54.0,
    "fit_capable": true,
    "pages": [
-    549
+    550
    ]
   },
   {
@@ -23440,9 +23446,9 @@
    "h2_pt": 1009.2,
    "fit_capable": false,
    "pages": [
-    549,
     550,
-    551
+    551,
+    552
    ]
   },
   {
@@ -23453,7 +23459,7 @@
    "h2_pt": 167.9,
    "fit_capable": true,
    "pages": [
-    550
+    551
    ]
   },
   {
@@ -23464,7 +23470,7 @@
    "h2_pt": 82.0,
    "fit_capable": true,
    "pages": [
-    550
+    551
    ]
   },
   {
@@ -23475,7 +23481,7 @@
    "h2_pt": 83.0,
    "fit_capable": true,
    "pages": [
-    550
+    551
    ]
   },
   {
@@ -23486,7 +23492,7 @@
    "h2_pt": 505.4,
    "fit_capable": true,
    "pages": [
-    550
+    551
    ]
   },
   {
@@ -23497,7 +23503,7 @@
    "h2_pt": 194.8,
    "fit_capable": true,
    "pages": [
-    550
+    551
    ]
   },
   {
@@ -23508,7 +23514,7 @@
    "h2_pt": 968.3,
    "fit_capable": false,
    "pages": [
-    551
+    552
    ]
   },
   {
@@ -23519,7 +23525,7 @@
    "h2_pt": 152.9,
    "fit_capable": true,
    "pages": [
-    551
+    552
    ]
   },
   {
@@ -23530,7 +23536,7 @@
    "h2_pt": 54.0,
    "fit_capable": true,
    "pages": [
-    551
+    552
    ]
   },
   {
@@ -23541,7 +23547,7 @@
    "h2_pt": 140.0,
    "fit_capable": true,
    "pages": [
-    551
+    552
    ]
   },
   {
@@ -23552,7 +23558,7 @@
    "h2_pt": 124.9,
    "fit_capable": true,
    "pages": [
-    551
+    552
    ]
   },
   {
@@ -23563,7 +23569,7 @@
    "h2_pt": 520.4,
    "fit_capable": true,
    "pages": [
-    551
+    552
    ]
   },
   {
@@ -23574,8 +23580,8 @@
    "h2_pt": 1121.0,
    "fit_capable": false,
    "pages": [
-    551,
-    552
+    552,
+    553
    ]
   },
   {
@@ -23586,7 +23592,7 @@
    "h2_pt": 236.7,
    "fit_capable": true,
    "pages": [
-    552
+    553
    ]
   },
   {
@@ -23597,7 +23603,7 @@
    "h2_pt": 68.0,
    "fit_capable": true,
    "pages": [
-    552
+    553
    ]
   },
   {
@@ -23608,7 +23614,7 @@
    "h2_pt": 140.0,
    "fit_capable": true,
    "pages": [
-    552
+    553
    ]
   },
   {
@@ -23619,7 +23625,7 @@
    "h2_pt": 434.5,
    "fit_capable": true,
    "pages": [
-    552
+    553
    ]
   },
   {
@@ -23630,7 +23636,7 @@
    "h2_pt": 265.7,
    "fit_capable": true,
    "pages": [
-    552
+    553
    ]
   },
   {
@@ -23641,7 +23647,7 @@
    "h2_pt": 601.8,
    "fit_capable": true,
    "pages": [
-    553
+    554
    ]
   },
   {
@@ -23652,9 +23658,9 @@
    "h2_pt": 1602.3,
    "fit_capable": false,
    "pages": [
-    553,
     554,
-    555
+    555,
+    556
    ]
   },
   {
@@ -23665,7 +23671,7 @@
    "h2_pt": 236.7,
    "fit_capable": true,
    "pages": [
-    554
+    555
    ]
   },
   {
@@ -23676,7 +23682,7 @@
    "h2_pt": 68.0,
    "fit_capable": true,
    "pages": [
-    554
+    555
    ]
   },
   {
@@ -23687,7 +23693,7 @@
    "h2_pt": 83.0,
    "fit_capable": true,
    "pages": [
-    554
+    555
    ]
   },
   {
@@ -23698,8 +23704,8 @@
    "h2_pt": 1043.7,
    "fit_capable": false,
    "pages": [
-    554,
-    555
+    555,
+    556
    ]
   },
   {
@@ -23710,7 +23716,7 @@
    "h2_pt": 194.8,
    "fit_capable": true,
    "pages": [
-    555
+    556
    ]
   },
   {
@@ -23721,8 +23727,8 @@
    "h2_pt": 1106.0,
    "fit_capable": false,
    "pages": [
-    555,
-    556
+    556,
+    557
    ]
   },
   {
@@ -23733,7 +23739,7 @@
    "h2_pt": 236.7,
    "fit_capable": true,
    "pages": [
-    555
+    556
    ]
   },
   {
@@ -23744,7 +23750,7 @@
    "h2_pt": 82.0,
    "fit_capable": true,
    "pages": [
-    555
+    556
    ]
   },
   {
@@ -23755,7 +23761,7 @@
    "h2_pt": 83.0,
    "fit_capable": true,
    "pages": [
-    555
+    556
    ]
   },
   {
@@ -23766,7 +23772,7 @@
    "h2_pt": 533.4,
    "fit_capable": true,
    "pages": [
-    555
+    556
    ]
   },
   {
@@ -23777,7 +23783,7 @@
    "h2_pt": 194.8,
    "fit_capable": true,
    "pages": [
-    556
+    557
    ]
   },
   {
@@ -23788,7 +23794,7 @@
    "h2_pt": 812.5,
    "fit_capable": false,
    "pages": [
-    556
+    557
    ]
   },
   {
@@ -23799,7 +23805,7 @@
    "h2_pt": 111.0,
    "fit_capable": true,
    "pages": [
-    556
+    557
    ]
   },
   {
@@ -23810,7 +23816,7 @@
    "h2_pt": 68.0,
    "fit_capable": true,
    "pages": [
-    556
+    557
    ]
   },
   {
@@ -23821,7 +23827,7 @@
    "h2_pt": 83.0,
    "fit_capable": true,
    "pages": [
-    556
+    557
    ]
   },
   {
@@ -23832,7 +23838,7 @@
    "h2_pt": 379.6,
    "fit_capable": true,
    "pages": [
-    556
+    557
    ]
   },
   {
@@ -23843,7 +23849,7 @@
    "h2_pt": 194.8,
    "fit_capable": true,
    "pages": [
-    556
+    557
    ]
   },
   {
@@ -23854,9 +23860,9 @@
    "h2_pt": 1107.0,
    "fit_capable": false,
    "pages": [
-    556,
     557,
-    558
+    558,
+    559
    ]
   },
   {
@@ -23867,7 +23873,7 @@
    "h2_pt": 236.7,
    "fit_capable": true,
    "pages": [
-    557
+    558
    ]
   },
   {
@@ -23878,7 +23884,7 @@
    "h2_pt": 95.9,
    "fit_capable": true,
    "pages": [
-    557
+    558
    ]
   },
   {
@@ -23889,7 +23895,7 @@
    "h2_pt": 210.9,
    "fit_capable": true,
    "pages": [
-    557
+    558
    ]
   },
   {
@@ -23900,7 +23906,7 @@
    "h2_pt": 180.8,
    "fit_capable": true,
    "pages": [
-    558
+    559
    ]
   },
   {
@@ -23911,7 +23917,7 @@
    "h2_pt": 406.5,
    "fit_capable": true,
    "pages": [
-    558
+    559
    ]
   },
   {
@@ -23922,8 +23928,8 @@
    "h2_pt": 869.4,
    "fit_capable": false,
    "pages": [
-    558,
-    559
+    559,
+    560
    ]
   },
   {
@@ -23934,7 +23940,7 @@
    "h2_pt": 84.1,
    "fit_capable": true,
    "pages": [
-    558
+    559
    ]
   },
   {
@@ -23945,7 +23951,7 @@
    "h2_pt": 54.0,
    "fit_capable": true,
    "pages": [
-    558
+    559
    ]
   },
   {
@@ -23956,7 +23962,7 @@
    "h2_pt": 181.9,
    "fit_capable": true,
    "pages": [
-    558
+    559
    ]
   },
   {
@@ -23967,7 +23973,7 @@
    "h2_pt": 378.6,
    "fit_capable": true,
    "pages": [
-    558
+    559
    ]
   },
   {
@@ -23978,7 +23984,7 @@
    "h2_pt": 194.8,
    "fit_capable": true,
    "pages": [
-    559
+    560
    ]
   },
   {
@@ -23989,7 +23995,7 @@
    "h2_pt": 408.5,
    "fit_capable": true,
    "pages": [
-    560
+    561
    ]
   },
   {
@@ -23997,11 +24003,11 @@
    "kind": "section",
    "class": "over",
    "h1_pt": 1000000000.0,
-   "h2_pt": 903.7,
+   "h2_pt": 954.9,
    "fit_capable": false,
    "pages": [
-    561,
-    562
+    562,
+    563
    ]
   },
   {
@@ -24009,10 +24015,10 @@
    "kind": "figure",
    "class": "full",
    "h1_pt": 1000000000.0,
-   "h2_pt": 417.8,
+   "h2_pt": 468.9,
    "fit_capable": true,
    "pages": [
-    561
+    562
    ]
   },
   {
@@ -24023,8 +24029,8 @@
    "h2_pt": 750.2,
    "fit_capable": false,
    "pages": [
-    563,
-    564
+    564,
+    565
    ]
   },
   {
@@ -24035,7 +24041,7 @@
    "h2_pt": 276.7,
    "fit_capable": true,
    "pages": [
-    563
+    564
    ]
   },
   {
@@ -24046,7 +24052,7 @@
    "h2_pt": 264.8,
    "fit_capable": true,
    "pages": [
-    566
+    567
    ]
   },
   {
@@ -24057,7 +24063,7 @@
    "h2_pt": 564.2,
    "fit_capable": true,
    "pages": [
-    567
+    568
    ]
   },
   {
@@ -24068,7 +24074,7 @@
    "h2_pt": 279.6,
    "fit_capable": true,
    "pages": [
-    568
+    569
    ]
   },
   {
@@ -24079,8 +24085,8 @@
    "h2_pt": 1946.9,
    "fit_capable": false,
    "pages": [
-    569,
-    570
+    570,
+    571
    ]
   },
   {
@@ -24091,8 +24097,8 @@
    "h2_pt": 1946.9,
    "fit_capable": false,
    "pages": [
-    569,
-    570
+    570,
+    571
    ]
   },
   {
@@ -24103,7 +24109,7 @@
    "h2_pt": 490.6,
    "fit_capable": true,
    "pages": [
-    571
+    572
    ]
   },
   {
@@ -24114,8 +24120,8 @@
    "h2_pt": 752.5,
    "fit_capable": false,
    "pages": [
-    572,
-    573
+    573,
+    574
    ]
   },
   {
@@ -24126,7 +24132,7 @@
    "h2_pt": 433.4,
    "fit_capable": true,
    "pages": [
-    573
+    574
    ]
   },
   {
@@ -24137,8 +24143,8 @@
    "h2_pt": 739.5,
    "fit_capable": false,
    "pages": [
-    574,
-    575
+    575,
+    576
    ]
   },
   {
@@ -24149,7 +24155,7 @@
    "h2_pt": 460.4,
    "fit_capable": true,
    "pages": [
-    574
+    575
    ]
   },
   {
@@ -24160,7 +24166,7 @@
    "h2_pt": 223.8,
    "fit_capable": true,
    "pages": [
-    575
+    576
    ]
   },
   {
@@ -24171,7 +24177,7 @@
    "h2_pt": 127.0,
    "fit_capable": true,
    "pages": [
-    575
+    576
    ]
   },
   {
@@ -24182,7 +24188,7 @@
    "h2_pt": 111.5,
    "fit_capable": true,
    "pages": [
-    575
+    576
    ]
   },
   {
@@ -24193,7 +24199,7 @@
    "h2_pt": 1355.7,
    "fit_capable": false,
    "pages": [
-    576
+    577
    ]
   },
   {
@@ -24204,7 +24210,7 @@
    "h2_pt": 1327.6,
    "fit_capable": false,
    "pages": [
-    576
+    577
    ]
   },
   {
@@ -24215,7 +24221,7 @@
    "h2_pt": 1168.8,
    "fit_capable": false,
    "pages": [
-    577
+    578
    ]
   },
   {
@@ -24226,7 +24232,7 @@
    "h2_pt": 1140.7,
    "fit_capable": false,
    "pages": [
-    577
+    578
    ]
   },
   {
@@ -24237,7 +24243,7 @@
    "h2_pt": 602.4,
    "fit_capable": true,
    "pages": [
-    578
+    579
    ]
   },
   {
@@ -24248,7 +24254,7 @@
    "h2_pt": 587.4,
    "fit_capable": true,
    "pages": [
-    579
+    580
    ]
   },
   {
@@ -24259,7 +24265,6 @@
    "h2_pt": 7218.9,
    "fit_capable": false,
    "pages": [
-    580,
     581,
     582,
     583,
@@ -24269,7 +24274,8 @@
     587,
     588,
     589,
-    590
+    590,
+    591
    ]
   },
   {
@@ -24280,8 +24286,8 @@
    "h2_pt": 880.9,
    "fit_capable": false,
    "pages": [
-    591,
-    592
+    592,
+    593
    ]
   },
   {
@@ -24292,7 +24298,7 @@
    "h2_pt": 139.0,
    "fit_capable": true,
    "pages": [
-    591
+    592
    ]
   },
   {
@@ -24303,7 +24309,7 @@
    "h2_pt": 139.0,
    "fit_capable": true,
    "pages": [
-    591
+    592
    ]
   },
   {
@@ -24314,7 +24320,7 @@
    "h2_pt": 139.0,
    "fit_capable": true,
    "pages": [
-    591
+    592
    ]
   },
   {
@@ -24325,7 +24331,7 @@
    "h2_pt": 125.0,
    "fit_capable": true,
    "pages": [
-    591
+    592
    ]
   },
   {
@@ -24336,7 +24342,7 @@
    "h2_pt": 111.0,
    "fit_capable": true,
    "pages": [
-    591
+    592
    ]
   },
   {
@@ -24347,7 +24353,7 @@
    "h2_pt": 139.4,
    "fit_capable": true,
    "pages": [
-    591
+    592
    ]
   },
   {
@@ -24358,7 +24364,7 @@
    "h2_pt": 126.0,
    "fit_capable": true,
    "pages": [
-    591
+    592
    ]
   },
   {
@@ -24369,7 +24375,7 @@
    "h2_pt": 196.5,
    "fit_capable": true,
    "pages": [
-    591
+    592
    ]
   },
   {
@@ -24380,7 +24386,7 @@
    "h2_pt": 222.8,
    "fit_capable": true,
    "pages": [
-    592
+    593
    ]
   },
   {
@@ -24391,7 +24397,7 @@
    "h2_pt": 166.9,
    "fit_capable": true,
    "pages": [
-    592
+    593
    ]
   },
   {
@@ -24402,12 +24408,12 @@
    "h2_pt": 2939.1,
    "fit_capable": false,
    "pages": [
-    593,
     594,
     595,
     596,
     597,
-    598
+    598,
+    599
    ]
   },
   {
@@ -24418,7 +24424,7 @@
    "h2_pt": 113.0,
    "fit_capable": true,
    "pages": [
-    593
+    594
    ]
   },
   {
@@ -24429,10 +24435,10 @@
    "h2_pt": 1606.9,
    "fit_capable": false,
    "pages": [
-    593,
     594,
     595,
-    596
+    596,
+    597
    ]
   },
   {
@@ -24443,7 +24449,7 @@
    "h2_pt": 96.5,
    "fit_capable": true,
    "pages": [
-    593
+    594
    ]
   },
   {
@@ -24454,7 +24460,7 @@
    "h2_pt": 307.2,
    "fit_capable": true,
    "pages": [
-    593
+    594
    ]
   },
   {
@@ -24465,7 +24471,7 @@
    "h2_pt": 487.3,
    "fit_capable": true,
    "pages": [
-    594
+    595
    ]
   },
   {
@@ -24476,7 +24482,7 @@
    "h2_pt": 476.0,
    "fit_capable": true,
    "pages": [
-    595
+    596
    ]
   },
   {
@@ -24487,7 +24493,7 @@
    "h2_pt": 677.3,
    "fit_capable": true,
    "pages": [
-    596
+    597
    ]
   },
   {
@@ -24498,7 +24504,7 @@
    "h2_pt": 279.3,
    "fit_capable": true,
    "pages": [
-    596
+    597
    ]
   },
   {
@@ -24509,9 +24515,9 @@
    "h2_pt": 1364.6,
    "fit_capable": false,
    "pages": [
-    596,
     597,
-    598
+    598,
+    599
    ]
   },
   {
@@ -24522,7 +24528,7 @@
    "h2_pt": 152.5,
    "fit_capable": true,
    "pages": [
-    596
+    597
    ]
   },
   {
@@ -24533,8 +24539,8 @@
    "h2_pt": 1045.0,
    "fit_capable": false,
    "pages": [
-    596,
-    597
+    597,
+    598
    ]
   },
   {
@@ -24545,8 +24551,8 @@
    "h2_pt": 1025.5,
    "fit_capable": false,
    "pages": [
-    596,
-    597
+    597,
+    598
    ]
   },
   {
@@ -24557,7 +24563,7 @@
    "h2_pt": 338.3,
    "fit_capable": true,
    "pages": [
-    598
+    599
    ]
   },
   {
@@ -24568,7 +24574,7 @@
    "h2_pt": 899.5,
    "fit_capable": false,
    "pages": [
-    598
+    599
    ]
   },
   {
@@ -24579,7 +24585,7 @@
    "h2_pt": 883.9,
    "fit_capable": false,
    "pages": [
-    598
+    599
    ]
   },
   {
@@ -24590,7 +24596,7 @@
    "h2_pt": 809.2,
    "fit_capable": false,
    "pages": [
-    599
+    600
    ]
   },
   {
@@ -24601,7 +24607,7 @@
    "h2_pt": 715.9,
    "fit_capable": false,
    "pages": [
-    599
+    600
    ]
   }
  ]

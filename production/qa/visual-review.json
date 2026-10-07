@@ -1,10 +1,10 @@
 {
  "pdf": "dist/Heraldry_RC485_inkjet-borderless.pdf",
  "reviewer": "Opus orchestrator (actual image inspection in session)",
- "reviewed_at": "2026-10-07T02:53:43+00:00",
+ "reviewed_at": "2026-10-07T04:10:53+00:00",
  "all_page_contact_sheets": {
-  "pages_covered": "1-594 (all) of this exact clean-build PDF",
-  "method": "10 sheets of 60 pages at 15 dpi"
+  "pages_covered": "1-596 (all) of this exact clean-build PDF",
+  "method": "pp1-300 and 481-596 at 15 dpi (60/sheet); pp301-480 (scenario chapter) at 20 dpi (40/sheet)"
  },
  "detailed_pages_viewed_at_100dpi": [
   1,
@@ -32,8 +32,8 @@
  "limits": "Contact-sheet review of every interior page plus five detailed pages, covers, calibration and one overscan specimen; not glyph-level proofreading of every page, a complete rules contradiction audit, or physical printer proof.",
  "status": "PASS (contact-sheet all-page + detail sample; not glyph-level proofreading)",
  "repeat_build_note": "The final clean rebuild produced identical cream, white, digital and cover PDF bytes; only the repaired calibration sheet changed and was separately re-inspected.",
- "sha256": "f3f5578a40531a9127d6bcad75efdb716d7dcf947cee4c95f25e8158a08f7123",
- "pages": 594,
+ "sha256": "fb461827012732dea385e9203d65700199facb158193a2fb0b5cd9ee01ef9684",
+ "pages": 596,
  "pages_reviewed": [
   1,
   2,
@@ -628,21 +628,16 @@
   591,
   592,
   593,
-  594
+  594,
+  595,
+  596
  ],
  "detail_viewed": [
-  "front/back cover at 45 dpi (ART-COVER-001 at 300 ppi, live title type)",
-  "Monsters opener ART-CH09 crop at 110 dpi (alpha on cream, no matte)",
-  "Spider's Silk Route scenario opening + map p.398-399 at 40 dpi",
-  "index p.593-594",
-  "Ch.2 opener, T004 size table, C.5 Reactions flowed across both columns, Ranged Weapons table page, Assassin class page (earlier same-pipeline builds)"
+  "p.388 FIG-20 unified key at 70 dpi",
+  "p.462 FIG-51 The Mire 1 map at placed size, 70 dpi"
  ],
  "changes_this_run": [
-  "12 ChatGPT Work masters placed at native 300 ppi (11 chapter openers + cover)",
-  "one-page keep units: measured rendered height, page/column moves, mandatory hash-bound keep audit",
-  "fresh page per numbered section (###) and named scenario",
-  "run-in labels and short lead-ins kept with their lists",
-  "whole-piece column balancing (no flow overflow)"
+  "44 setup diagrams redrawn with one glyph registry (scenkit); FIG-20 key covers all 40 glyphs; appendix maps on core renderer; '?' unresolved-element tags; terrain types corrected per 2.9.1"
  ],
  "residual": [
   "Pagination grew 450 -> 594 interior pages: fresh-page sections/scenarios and whole-unit moves leave intentional whitespace",
