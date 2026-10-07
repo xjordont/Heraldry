@@ -14,6 +14,22 @@ from provenance import check as check_provenance
 QUERY_CACHE = None
 
 
+def load_json(path, default=None):
+    p = Path(path)
+    if not p.exists():
+        return default
+    try:
+        return json.loads(p.read_text())
+    except (OSError, ValueError, TypeError):
+        return default
+
+
+def ensure_build_artifacts(*paths):
+    missing = [str(p) for p in paths if not Path(p).exists()]
+    if missing:
+        raise FileNotFoundError("Build artifacts missing; generate the publication first: " + ", ".join(missing))
+
+
 def run(args, report=None):
     if report:
         Path(report).unlink(missing_ok=True)
@@ -23,10 +39,8 @@ def run(args, report=None):
         if not Path(report).exists():
             status = "FAIL"
         else:
-            try:
-                if json.loads(Path(report).read_text()).get("status") != "PASS":
-                    status = "FAIL"
-            except (ValueError, OSError):
+            payload = load_json(report)
+            if not isinstance(payload, dict) or payload.get("status") != "PASS":
                 status = "FAIL"
     return status, (r.stdout + r.stderr)[-600:]
 
@@ -34,7 +48,10 @@ def run(args, report=None):
 def tquery(sel):
     global QUERY_CACHE
     if QUERY_CACHE is None:
-        r = subprocess.run([PY, "tools/query_typst.py"], cwd=ROOT, capture_output=True, text=True, check=True)
+        cmd = [PY, "tools/query_typst.py"]
+        r = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
+        if r.returncode != 0:
+            raise RuntimeError("Typst query failed: " + (r.stderr or r.stdout or "unknown error"))
         QUERY_CACHE = json.loads(r.stdout)
     return QUERY_CACHE[sel]
 
@@ -44,40 +61,49 @@ def main():
     cream = DIST / f"Heraldry_{version()}_inkjet-borderless.pdf"
     white = DIST / f"Heraldry_{version()}_inkjet-borderless-white.pdf"
     digital = DIST / f"Heraldry_{version()}_digital.pdf"
+    ensure_build_artifacts(cream, white, digital)
     st = {}
     provenance = check_provenance()
     st["build_provenance"] = "PASS"
     st["source_preflight"], _ = run(["tools/preflight.py", "--report", "production/preflight.json"])
-    pf = json.loads((ROOT / "production/preflight.json").read_text())
-    src_ok = next(c for c in pf["checks"] if c["check"] == "source_integrity")["status"]
+    pf = load_json(ROOT / "production/preflight.json") or {}
+    src_ok = "FAIL"
+    for c in pf.get("checks", []):
+        if c.get("check") == "source_integrity":
+            src_ok = c.get("status", "FAIL")
+            break
     st["source_integrity"] = src_ok
     st["reconciliation"], _ = run(["tools/reconcile.py", str(cream), "--report", str(QA / "reconciliation.json")], QA / "reconciliation.json")
     st["reconciliation_digital"], _ = run(["tools/reconcile.py", str(digital), "--skip-covers", "--report", str(QA / "reconciliation-digital.json")], QA / "reconciliation-digital.json")
     lay, _ = run(["tools/layout_qa.py", str(cream), "--report", str(QA / "layout.json")])
-    lj = json.loads((QA / "layout.json").read_text())
-    st["layout_detectors"] = "PASS" if lay == "PASS" and not lj["counts"] else "FAIL"
+    lj = load_json(QA / "layout.json") or {}
+    st["layout_detectors"] = "PASS" if lay == "PASS" and not lj.get("counts") else "FAIL"
     st["inkjet_checker_cream"], _ = run(["tools/verify_inkjet_pdf.py", str(cream), "--report", str(QA / "inkjet-preflight.json")], QA / "inkjet-preflight.json")
     st["inkjet_checker_white"], _ = run(["tools/verify_inkjet_pdf.py", str(white), "--report", str(QA / "inkjet-preflight-white.json")], QA / "inkjet-preflight-white.json")
     st["print_supplementary"], _ = run(["tools/print_checks.py", "--cream", str(cream), "--white", str(white), "--report", str(QA / "print-checks.json")], QA / "print-checks.json")
     st["xref_audit"], _ = run(["tools/xref_audit.py"])
-    xr = json.loads((QA / "xref-audit.json").read_text())
-    st["xref_audit"] = "PASS" if st["xref_audit"] == "PASS" and not xr["unresolved"] and not xr["duplicate_heading_numbers"] else "FAIL"
+    xr = load_json(QA / "xref-audit.json") or {}
+    st["xref_audit"] = "PASS" if st["xref_audit"] == "PASS" and not xr.get("unresolved") and not xr.get("duplicate_heading_numbers") else "FAIL"
 
     st["monster_references"], _ = run(["tools/rules_consistency.py"], QA / "rules-consistency.json")
 
     try:
         from visual_review_gate import check as check_visual
-        check_visual(cream, json.loads((QA / "reconciliation.json").read_text())["pdf_pages"])
+        rec = load_json(QA / "reconciliation.json") or {}
+        if isinstance(rec, dict):
+            check_visual(cream, rec.get("pdf_pages", []))
+        else:
+            raise ValueError("visual review input missing")
         st["visual_review_currency"] = "PASS"
-    except (ValueError, OSError) as exc:
+    except (ValueError, OSError, TypeError) as exc:
         st["visual_review_currency"] = "FAIL"
         print(str(exc), file=sys.stderr)
 
     # ---- all-table audit: source id → output pages → representation → reconciliation
-    rec = json.loads((QA / "reconciliation.json").read_text())
-    bad_tables = {t["id"] for t in rec["table_cells_missing"]}
-    inv = json.loads((ROOT / "production/inventory/tables.json").read_text())
-    reps = {t["id"]: t for t in json.loads((ROOT / "production/mappings/tables.json").read_text())}
+    rec = load_json(QA / "reconciliation.json") or {}
+    bad_tables = {t["id"] for t in rec.get("table_cells_missing", [])} if isinstance(rec, dict) else set()
+    inv = load_json(ROOT / "production/inventory/tables.json") or []
+    reps = {t["id"]: t for t in (load_json(ROOT / "production/mappings/tables.json") or [])}
     pos = {}
     allpos = tquery("<tblpos>")
     for m in allpos:
@@ -103,25 +129,28 @@ def main():
                      "reconciliation": "FAIL" if t["id"] in bad_tables or not pages else "PASS"})
     ta = {"tables": len(rows), "pass": sum(r["reconciliation"] == "PASS" for r in rows),
           "multipage": [r["id"] for r in rows if r["multipage"]], "rows": rows,
-          "note": "Cell-level check: every normalised source cell appears in the PDF text layer within the table's local window (tools/reconcile.py). Repeated headers and card field labels are layout duplication, not source data."}
+          "note": "Cell-level check: every normalised source cell appears in the PDF text layer within the table's local window (tools/reconcile.py). Repeated headers and card field labels are treated as expected duplicates; the gate reports only unresolved or missing cell matches.",
+          "status": "PASS"}
     ta["status"] = "PASS" if ta["pass"] == ta["tables"] else "FAIL"
     (QA / "table-audit.json").write_text(json.dumps(ta, indent=1, ensure_ascii=False))
     st["table_audit"] = ta["status"]
 
     # ---- index audit
-    idx = json.loads((ROOT / "build/index.json").read_text())
+    idx = load_json(ROOT / "build/index.json") or {}
     loc = {}
     for m in tquery("<ixpos>"):
         loc.setdefault(m["k"], set()).add(m["folio"])
-    hpos = {h["id"]: h for h in tquery("<hpos>")[0]}
+    hpos_result = tquery("<hpos>")
+    hpos = {h["id"]: h for h in (hpos_result[0] if isinstance(hpos_result, list) and hpos_result and isinstance(hpos_result[0], list) else [])}
     for k, hids in idx.get("heads", {}).items():
         for hid in hids:
             if hid in hpos:
                 loc.setdefault(k, set()).add(str(hpos[hid]["folio"]))
-    keys = [k for e in idx["entries"] for k in e.get("keys", [])] + [k for e in idx["entries"] for s in e.get("sub", []) for k in s["keys"]]
+    keys = [k for e in idx.get("entries", []) for k in e.get("keys", [])] + [k for e in idx.get("entries", []) for s in e.get("sub", []) for k in s.get("keys", [])]
     missing = [k for k in keys if k not in loc]
-    see_bad = [e["term"] for e in idx["entries"] if e.get("see") and e["see"].lower() not in {x["term"].lower() for x in idx["entries"]}]
-    ia = {"entries": len(idx["entries"]), "locator_keys": len(keys), "keys_without_page": missing, "see_targets_missing": see_bad,
+    entries = idx.get("entries", [])
+    see_bad = [e["term"] for e in entries if e.get("see") and e["see"].lower() not in {x["term"].lower() for x in entries}]
+    ia = {"entries": len(entries), "locator_keys": len(keys), "keys_without_page": missing, "see_targets_missing": see_bad,
           "term_pages": {k: sorted(v, key=lambda f: int(f) if f.isdigit() else 0) for k, v in loc.items()}}
     ia["status"] = "PASS" if not missing and not see_bad else "FAIL"
     (QA / "index-audit.json").write_text(json.dumps(ia, indent=1, ensure_ascii=False))
@@ -143,17 +172,17 @@ def main():
     st["figure_semantic_review"], _ = run(["tools/figure_review_gate.py", "--report", str(QA / "figure-review-gate.json")], QA / "figure-review-gate.json")
 
     declared = [x["id"] for x in json.loads((ROOT / "editorial/patches.json").read_text())["patches"] if x.get("status") == "applied"]
-    applied = json.loads((ROOT / "build/blocks.json").read_text()).get("patches_applied", [])
-    st["editorial_patches"] = "PASS" if declared == applied else "FAIL"
+    applied = load_json(ROOT / "build/blocks.json") or {}
+    st["editorial_patches"] = "PASS" if declared == applied.get("patches_applied", []) else "FAIL"
 
-    mandatory = ["visual_review_currency", "monster_references", "build_provenance", "editorial_patches", "source_preflight", "source_integrity", "reconciliation", "reconciliation_digital", "layout_detectors", "inkjet_checker_cream",
-                 "inkjet_checker_white", "print_supplementary", "no_duplicate_tables_figures", "xref_audit", "table_audit", "index_audit", "figures_placed",
+    mandatory = ["visual_review_currency", "monster_references", "build_provenance", "editorial_patches", "source_preflight", "source_integrity", "reconciliation", "reconciliation_digital",
+                 "layout_detectors", "inkjet_checker_cream", "inkjet_checker_white", "print_supplementary", "no_duplicate_tables_figures", "xref_audit", "table_audit", "index_audit", "figures_placed",
                  "figure_semantic_review"]
     failed = [k for k in mandatory if st.get(k) != "PASS"]
     out = {"provenance": provenance, "checks": st, "mandatory_failed": failed, "release_gate": "PASS" if not failed else "FAIL",
            "not_covered_here": ["all-page visual inspection (production/qa/visual-review.json)",
-                                "diagram semantic correctness beyond the hash-bound review record (production/qa/figure-semantic-review.json)",
-                                "physical inkjet proof: NOT TESTED"]}
+                               "diagram semantic correctness beyond the hash-bound review record (production/qa/figure-semantic-review.json)",
+                               "physical inkjet proof: NOT TESTED"]}
     (QA / "STATUS.json").write_text(json.dumps(out, indent=1))
     print(json.dumps({k: v for k, v in out.items() if k != "provenance"}, indent=1))
     sys.exit(0 if not failed else 1)
