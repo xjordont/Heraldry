@@ -103,10 +103,19 @@ def first_text(b) -> str:
     return s.strip()
 
 
+RIGID = ("#htable(", "#statstrip(", "#statcard(", "#cards(", "#keepcol[", "#figure-block(", "#list(", "#enum(",
+         "#example[", "#keep[", "#runin[", "#note-box[", "#gloss[", "#flavour[")
+
+
+def is_rigid(s: str) -> bool:
+    """True if a piece contains anything that cannot flow line-by-line between columns."""
+    return any(r in s for r in RIGID)
+
+
 def inject(s: str, mark: str) -> str:
     """Put a zero-size marker INSIDE a rendered block so that no stray inline content
     sits between a heading and the block it must keep with."""
-    for f in ("#example[", "#flavour[", "#note-box[", "#runin[", "#keep[", "#gloss["):
+    for f in ("#example[", "#flavour[", "#note-box[", "#runin[", "#keep[", "#gloss[", "#keepcol["):
         if s.startswith(f):
             return f + mark + s[len(f):]
     for f in ("#htable(", "#statstrip(", "#statcard(", "#cards(", "#figure-block("):
@@ -157,6 +166,10 @@ class Book:
         self.seg_sigs = {}
         self.placed_figs = set()
         self.in_glossary = False
+        self.measure_requests = []
+        self.unit_log = []
+        mf = BUILD / "unit_measure.json"
+        self.measures = json.loads(mf.read_text()) if mf.exists() else {}
         self.piece_heads = {}
         self.table_map = []
         self.block_map = []   # (block id, src span, representation, segment)
@@ -394,50 +407,245 @@ class Book:
         if num and num.rstrip(".").isdigit():
             f = ROOT / f"assets/art/incoming/ART-CH{int(num.rstrip('.')):02d}-001.png"
             if f.exists():
-                art = lit("../" + str(f.relative_to(ROOT)))
+                from PIL import Image
+                wpx, hpx = Image.open(f).size
+                # place at native 300 ppi (never upscaled): width = px / 300 in
+                art = f"({lit('../' + str(f.relative_to(ROOT)))}, {wpx / 300:.3f}in, {hpx / 300:.3f}in)"
         self.out.append(f"#chapter-opener({numlit}, [#{lit(rest)}], {lit(h['id'])}, lead: {('[' + lead + ']') if lead else 'none'}, art: {art})\n")
         self.out.append(self.tags(h["id"]) + "\n")
-        cur = []
-        rest_blocks = blocks[i:]
+        self.emit_chapter_body(blocks[i:])
+
+    # ------------------------------------------------------------- keep-unit layout
+    def chapter_items(self, rest_blocks):
+        """Flatten a chapter into rendered items: dict(b, s, kind 'c'|'f', id, typ)."""
+        items = []
         for k, b in enumerate(rest_blocks):
             nxt = rest_blocks[k + 1] if k + 1 < len(rest_blocks) else None
-            if b["type"] == "hr" and (nxt is None):
+            if b["type"] == "hr" and nxt is None:
                 self.block_map.append((b["id"], b["src"], "hr-absorbed-by-chapter-break", None))
                 continue
             if b["type"] == "table":
                 s, scope = self.table(b)
-                if scope == "full":
-                    carry = []
-                    while cur and (cur[-1][0]["type"] == "heading" or is_caption(cur[-1][0])):
-                        carry.insert(0, cur.pop())
-                    self.flush(cur)
-                    cur = []
-                    body = "".join(x[1] for x in carry) + s
-                    body = body.replace("#pm(", "#pmx(")
-                    for x in carry:
-                        self.block_map.append((x[0]["id"], x[0]["src"], "full-width-caption", None))
-                    self.block_map.append((b["id"], b["src"], "table-full", None))
-                    self.out.append(f"#full[{body}]\n")
-                    continue
-                cur.append((b, s + "\n"))
+                if items and items[-1]["s"].startswith("#runin[") and items[-1]["kind"] == "c":
+                    lab = items.pop()
+                    self.block_map.append((lab["id"], lab["b"]["src"], "label-with-table", None))
+                    s = lab["s"] + s
+                items.append(dict(b=b, s=s + "\n", kind="f" if scope == "full" else "c", id=b["id"], typ="table"))
                 continue
             r = self.render(b)
-            if (b["type"] == "para" and cur and cur[-1][0]["type"] == "heading" and r.endswith("\n\n")
+            if (b["type"] == "para" and items and items[-1]["typ"] == "heading" and r.endswith("\n\n")
                     and len(first_text_full(b)) < 300 and not r.startswith(("#example[", "#flavour[", "#runin["))):
                 r = f"#keep[{r.rstrip()}]\n"
-            cur.append((b, r))
+            typ = b["type"]
+            if typ == "para" and r.startswith("#example["):
+                typ = "example"
+            if typ in ("list", "quote") and items and items[-1]["s"].startswith("#runin[") and items[-1]["kind"] == "c":
+                # a bold run-in label ("Attacks", "Adept Assassin Talents") travels with the list it introduces
+                lab = items.pop()
+                self.block_map.append((lab["id"], lab["b"]["src"], "label-with-list", None))
+                r = lab["s"] + r
+            items.append(dict(b=b, s=r, kind="c", id=b["id"], typ=typ))
             for fig in self.figs_for(b):
-                if fig.get("scope") == "full":
-                    self.flush(cur)
-                    cur = []
-                    self.block_map.append((fig["id"], b["src"], "figure-full", None))
-                    if fig["id"] in FLOAT_FIGS:
-                        self.out.append(f"#place(auto, float: true, clearance: 12pt)[{self.figure(fig, full=True)}]\n")
-                    else:
-                        self.out.append(f"#full[{self.figure(fig, full=True)}]\n")
+                full = fig.get("scope") == "full"
+                items.append(dict(b={"type": "figure", "id": fig["id"], "src": b["src"]}, s=self.figure(fig, full=full),
+                                  kind="f" if full else "c", id=fig["id"], typ="figure",
+                                  float=fig["id"] in FLOAT_FIGS))
+        return items
+
+    @staticmethod
+    def build_tree(items):
+        root = {"level": 2, "children": [], "id": None}
+        stack = [root]
+        for it in items:
+            if it["typ"] == "heading":
+                lvl = it["b"]["level"]
+                while stack[-1]["level"] >= lvl:
+                    stack.pop()
+                node = {"level": lvl, "head": it, "children": [], "id": it["id"], "title": it["b"]["title"]}
+                stack[-1]["children"].append(node)
+                stack.append(node)
+            else:
+                stack[-1]["children"].append(it)
+        return root
+
+    def flat_parts(self, x):
+        """[(kind, [strings])] runs for measuring/placing a whole unit on one page."""
+        parts = []
+        glue = [False]
+        def add(kind, s, is_head=False):
+            if kind == "c" and parts and parts[-1][0] == "c":
+                if glue[0]:
+                    parts[-1][1][-1] += s        # a heading never ends a balancing piece
                 else:
-                    cur.append({"type": "figure", "id": fig["id"], "src": b["src"]}, self.figure(fig))
+                    parts[-1][1].append(s)
+            else:
+                parts.append((kind, [s]))
+            glue[0] = is_head and kind == "c"
+        def walk(n):
+            if "head" in n:
+                add("c", n["head"]["s"], True)
+                for c in n["children"]:
+                    walk(c)
+            else:
+                add(n["kind"], n["s"], n["s"].startswith("#runin["))
+        walk(x)
+        return parts
+
+    @staticmethod
+    def parts_typst(parts, strip=False):
+        out = []
+        rigid = RIGID
+        for kind, ss in parts:
+            if kind == "c":
+                # prose-only runs may flow between columns; runs with rigid pieces use the whole-piece grid
+                k = "c" if any(is_rigid(x) for x in ss) else "p"
+                out.append(f"(\"{k}\", ({', '.join('[' + x + ']' for x in ss)},))")
+            else:
+                out.append(f"(\"f\", [{''.join(ss)}])")
+        return ", ".join(out)
+
+    def measurable(self, x):
+        return ("head" in x) or x["typ"] in ("list", "table", "example", "quote", "figure")
+
+    def collect_units(self, x, acc):
+        if "head" in x:
+            acc.append(x)
+            for c in x["children"]:
+                self.collect_units(c, acc)
+        elif self.measurable(x):
+            acc.append(x)
+
+    def unit_class(self, x, fresh):
+        m = self.measures.get(x["id"])
+        if not m:
+            return "over"
+        if fresh and m["h2"] <= FRAME_FIT:
+            return "page"
+        if m["h1"] <= FRAME_FIT:
+            return "col"
+        if m["h2"] <= FRAME_FIT:
+            return "page"
+        return "over"
+
+    def emit_chapter_body(self, rest_blocks):
+        items = self.chapter_items(rest_blocks)
+        root = self.build_tree(items)
+        units = []
+        for c in root["children"]:
+            self.collect_units(c, units)
+        for u in units:
+            self.measure_requests.append(f"#munit({lit(u['id'])}, ({self.parts_typst(self.flat_parts(u))},))\n")
+        cur = []
+        prev_heading_only = True     # chapter opener counts as the start of the opening composition
+        for c in root["children"]:
+            cur, prev_heading_only = self.emit_x(c, cur, prev_heading_only)
         self.flush(cur)
+
+    def is_fresh(self, n):
+        return n["level"] == 3 or bool(re.match(r"^Scenario \d+: ", n.get("title", "")))
+
+    def record(self, x, mode):
+        def walk(n):
+            if "head" in n:
+                self.block_map.append((n["head"]["id"], n["head"]["b"]["src"], mode, None))
+                for c in n["children"]:
+                    walk(c)
+            else:
+                self.block_map.append((n["id"], n["b"]["src"], mode, None))
+        walk(x)
+
+    def emit_x(self, x, cur, after_heading):
+        """Emit item/node x. `after_heading`: nothing but headings since the last fresh-page start.
+        Returns (cur, after_heading)."""
+        if "head" not in x:
+            return self.emit_leaf(x, cur), False
+        fresh = self.is_fresh(x)
+        if fresh and not after_heading:
+            self.flush(cur)
+            cur = []
+            self.out.append("#pagebreak(weak: true)\n")
+        cls = self.unit_class(x, fresh)
+        self.unit_log.append({"id": x["id"], "kind": "section", "level": x["level"], "class": cls,
+                              **self.measures.get(x["id"], {})})
+        if cls == "col":
+            self.record(x, "keep-col")
+            body = "".join(s for _, ss in self.flat_parts(x) for s in ss)
+            cur.append((x["head"]["b"], f"#keepcol[#umark({lit(x['id'])}, \"s\"){body}#umark({lit(x['id'])}, \"e\")]\n"))
+            return cur, False
+        if cls == "page":
+            self.record(x, "keep-page")
+            self.flush(cur)
+            self.out.append(f"#keeppage(id: {lit(x['id'])}, {self.parts_typst(self.flat_parts(x))})\n")
+            return [], False
+        # over-height: heading sticks to its content; children keep their own units
+        self.block_map.append((x["head"]["id"], x["head"]["b"]["src"], "column", None))
+        head = f"#umark({lit(x['id'])}, \"s\")" + x["head"]["s"]
+        kids = x["children"]
+        if kids and "head" not in kids[0] and kids[0]["kind"] == "f":
+            # heading travels with a leading full-width element
+            self.flush(cur)
+            cur = []
+            self.out.append(f"#full[{head}{kids[0]['s']}]\n".replace("#pm(", "#pmx("))
+            self.record(kids[0], "full")
+            kids = kids[1:]
+            after = False
+        else:
+            # opening group: heading + first leaf (+ the list/table a short lead-in introduces) move as one
+            lead = []
+            def small(k):
+                if self.measurable(k):
+                    return self.measures.get(k["id"], {}).get("h1", 1e9) <= FRAME_FIT / 2
+                return k["typ"] in ("para", "heading") and len(first_text_full(k["b"])) < 1200
+            if kids and "head" not in kids[0] and kids[0]["kind"] == "c" and small(kids[0]):
+                lead.append(kids[0])
+                if (kids[0]["typ"] == "para" and first_text_full(kids[0]["b"]).rstrip().endswith(":")
+                        and len(kids) > 1 and "head" not in kids[1] and kids[1]["kind"] == "c"
+                        and self.measures.get(kids[1]["id"], {}).get("h1", 1e9) <= FRAME_FIT / 2):
+                    lead.append(kids[1])
+            if lead:
+                for l in lead:
+                    self.record(l, "keep-with-heading")
+                body = head + "".join(l["s"] for l in lead)
+                cur.append((x["head"]["b"], f"#keepcol[{body.rstrip()}]\n"))
+                kids = kids[len(lead):]
+                after = False
+            else:
+                cur.append((x["head"]["b"], head))
+                after = True
+        for c in kids:
+            cur, after = self.emit_x(c, cur, after)
+        cur.append(({"type": "marker", "id": x["id"] + ":end", "src": x["head"]["b"]["src"]},
+                    f"#umark({lit(x['id'])}, \"e\")"))
+        return cur, False
+
+    def emit_leaf(self, x, cur):
+        mid = x["id"]
+        if x["kind"] == "f":
+            self.flush(cur)
+            m = self.measures.get(mid)
+            self.record(x, "full")
+            if x.get("float"):
+                self.out.append(f"#place(auto, float: true, clearance: 12pt)[#umark({lit(mid)}, \"s\"){x['s']}#umark({lit(mid)}, \"e\")]\n")
+            else:
+                brk = "false" if (m and m["h2"] <= FRAME_FIT) else "true"
+                self.out.append(f"#full[#block(breakable: {brk}, width: 100%)[#umark({lit(mid)}, \"s\"){x['s']}#umark({lit(mid)}, \"e\")]]\n")
+            if self.measurable(x):
+                self.unit_log.append({"id": mid, "kind": x["typ"], "class": "full", **(m or {})})
+            return []
+        if not self.measurable(x):
+            cur.append((x["b"], x["s"]))
+            return cur
+        cls = self.unit_class(x, False)
+        self.unit_log.append({"id": mid, "kind": x["typ"], "class": cls, **self.measures.get(mid, {})})
+        if cls == "page":
+            self.flush(cur)
+            self.record(x, "keep-page")
+            self.out.append(f"#keeppage(id: {lit(mid)}, {self.parts_typst(self.flat_parts(x))})\n")
+            return []
+        s = x["s"].rstrip("\n")
+        body = f"#umark({lit(mid)}, \"s\"){s}#umark({lit(mid)}, \"e\")"
+        cur.append((x["b"], (f"#keepcol[{body}]" if cls == "col" else body) + "\n"))
+        return cur
 
     def figs_for(self, b):
         ids = []
@@ -510,7 +718,11 @@ class Book:
             if carry:
                 tp.append(carry)
             tp[-1] = tp[-1] + end
-            self.out.append("#bal(" + ", ".join("[" + x + "]" for x in tp) + ")\n")
+            if len(tp) == 1 and not is_rigid(tp[0]):
+                # a single prose tail flows across both columns at half height
+                self.out.append("#flowcols(([" + tp[0] + "],))\n")
+            else:
+                self.out.append("#bal(" + ", ".join("[" + x + "]" for x in tp) + ")\n")
 
 
 def compile_book(variant="cream", out=None, query=True, edition="print"):
@@ -530,6 +742,8 @@ def compile_book(variant="cream", out=None, query=True, edition="print"):
 
 STRADDLE_MAX = 250
 TOP_Y = 0.65 * 72
+FRAME_H = 792 - 0.65 * 72 - 0.7 * 72      # usable frame of an empty page (pt)
+FRAME_FIT = FRAME_H - 24                  # conservative fitting tolerance (block spacing, sticky headings)
 BODY_BOTTOM = 792 - 0.7 * 72
 
 
@@ -603,6 +817,15 @@ def main():
     bal_file = BUILD / "balance.json"
     if bal_file.exists() and not a.no_balance:
         balance = json.loads(bal_file.read_text())
+    # measurement pass: classify keep units from their real rendered heights
+    import subprocess
+    probe = Book(model, balance)
+    probe.emit()
+    (ROOT / "typst/measure.typ").write_text('#import "heraldry.typ": *\n#show: book\n' + "".join(probe.measure_requests))
+    r = subprocess.run([sys.executable, str(ROOT / "tools/measure_units.py")], capture_output=True, text=True)
+    if r.returncode:
+        raise SystemExit(r.stderr[-3000:])
+    print(r.stdout.strip())
     flips = {}
     for p in range(a.passes):
         book = Book(model, balance)
@@ -631,6 +854,9 @@ def main():
     MAP.mkdir(parents=True, exist_ok=True)
     (MAP / "tables.json").write_text(json.dumps(book.table_map, ensure_ascii=False, indent=0))
     (MAP / "blocks.json").write_text(json.dumps(book.block_map, ensure_ascii=False))
+    import hashlib
+    (BUILD / "units.json").write_text(json.dumps({"frame_fit_pt": FRAME_FIT, "units": book.unit_log,
+        "content_sha256": hashlib.sha256((ROOT / "typst/content.typ").read_bytes()).hexdigest()}))
     print("links:", len(book.em.links), "->", out)
 
 

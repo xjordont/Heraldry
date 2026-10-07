@@ -76,7 +76,8 @@
     #v(8pt)
     #motif(len: 120pt)
   ]
-  #place(center + horizon, dy: 0.55in, device(w: 230pt))
+  // ART-COVER-001 at native 300 ppi (1430 x 1100 px = 4.767 x 3.667 in); title stays live type
+  #place(center + horizon, dy: 0.45in, image("../assets/art/incoming/ART-COVER-001.png", width: 4.767in, height: 3.667in))
   #place(bottom + center, dy: -1.0in)[
     #set align(center)
     #block(width: 5.2in)[#set text(size: 13pt); #subtitle]

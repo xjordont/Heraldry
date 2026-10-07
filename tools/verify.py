@@ -78,6 +78,10 @@ def main():
     lay, _ = run(["tools/layout_qa.py", str(cream), "--report", str(QA / "layout.json")])
     lj = load_json(QA / "layout.json") or {}
     st["layout_detectors"] = "PASS" if lay == "PASS" and not lj.get("counts") else "FAIL"
+    tquery("<um-pos>")
+    (ROOT / "build/positions.json").write_text(json.dumps(QUERY_CACHE))
+    st["one_page_keeps"], _ = run(["tools/keep_audit.py", "--positions", "build/positions.json", "--pdf", str(cream),
+                                   "--report", str(QA / "keep-audit.json")], QA / "keep-audit.json")
     st["inkjet_checker_cream"], _ = run(["tools/verify_inkjet_pdf.py", str(cream), "--report", str(QA / "inkjet-preflight.json")], QA / "inkjet-preflight.json")
     st["inkjet_checker_white"], _ = run(["tools/verify_inkjet_pdf.py", str(white), "--report", str(QA / "inkjet-preflight-white.json")], QA / "inkjet-preflight-white.json")
     st["print_supplementary"], _ = run(["tools/print_checks.py", "--cream", str(cream), "--white", str(white), "--report", str(QA / "print-checks.json")], QA / "print-checks.json")
@@ -175,7 +179,7 @@ def main():
     applied = load_json(ROOT / "build/blocks.json") or {}
     st["editorial_patches"] = "PASS" if declared == applied.get("patches_applied", []) else "FAIL"
 
-    mandatory = ["visual_review_currency", "monster_references", "build_provenance", "editorial_patches", "source_preflight", "source_integrity", "reconciliation", "reconciliation_digital",
+    mandatory = ["one_page_keeps", "visual_review_currency", "monster_references", "build_provenance", "editorial_patches", "source_preflight", "source_integrity", "reconciliation", "reconciliation_digital",
                  "layout_detectors", "inkjet_checker_cream", "inkjet_checker_white", "print_supplementary", "no_duplicate_tables_figures", "xref_audit", "table_audit", "index_audit", "figures_placed",
                  "figure_semantic_review"]
     failed = [k for k in mandatory if st.get(k) != "PASS"]

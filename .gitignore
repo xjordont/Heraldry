@@ -19,3 +19,6 @@ build/
 typst/content.typ
 figures/src/test/
 figures/anchor_proposals.json
+typst/measure.typ
+dist/*.zip
+dist/SHA256SUMS.txt
