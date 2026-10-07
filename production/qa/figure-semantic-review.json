@@ -1,6 +1,6 @@
 {
   "reviewer": "figure-semantic-review: FIG-01..12 and FIG-17 by publication-auditor (carried forward, hashes unchanged); FIG-13..16, 18..20 and FIG-21..57 independently re-reviewed after the shared-glyph redraw (scenkit.py) against RC485",
-  "reviewed_at": "2026-10-07T04:01:08Z",
+  "reviewed_at": "2026-10-07T04:05:11Z",
   "figures": [
     {
       "id": "FIG-01",
@@ -697,7 +697,7 @@
     },
     {
       "id": "FIG-22",
-      "svg_sha256": "a547e124a91847f175bf62e1d0faffb6ae583dc341d95dcead272bd95bac2b40",
+      "svg_sha256": "4cb7e6fd827d2b5e5a720debc0e5353d893e15a94c33ebe0bc7b3e06479edbf3",
       "caption_sha256": "a088dc773ba845429fdf518e08da129cc8186ac21979a0622bbcfb4863acd8e1",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -710,10 +710,11 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Undergrowth patches are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "12062; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on ug (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ug (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         },
         {
           "severity": "minor",
@@ -734,7 +735,7 @@
     },
     {
       "id": "FIG-23",
-      "svg_sha256": "436579f8b1af6400a7a6f5bfa03af7ce0e6b84ae13b71a73f398bde0de9db250",
+      "svg_sha256": "ff3027fb709cde6e9ff7ce5c3d1628ec8f6a91db8e2a8c7a77b7879e2e25c90c",
       "caption_sha256": "67d21a4b8596209ea89c44bb159acc2dcbddfc2e4eb50ad8c509efbe4ab1c14c",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -761,10 +762,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Undergrowth patches are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "12132; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on ugA (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ugA (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         },
         {
           "severity": "minor",
@@ -815,7 +817,7 @@
     },
     {
       "id": "FIG-25",
-      "svg_sha256": "5cb0df5baecb55220de30584080dbd6fec698dd969cd87427fb6880b970a91ac",
+      "svg_sha256": "d3d0ce84d0e6c74ea277ac5c60cf8ce29e7108d0dd864f8bf1e12a267089ccf9",
       "caption_sha256": "f8ed61a55822f6ba3ebb6b49e3ae9e289110a5e2c64fa8e1158864efa6437853",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -835,10 +837,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Undergrowth patches are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "12280; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on ug1 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ug1 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         },
         {
           "severity": "minor",
@@ -852,7 +855,7 @@
     },
     {
       "id": "FIG-26",
-      "svg_sha256": "29a789618ec845896101cb1490ff9c1d438abca366004cf7b736a00a6f24473d",
+      "svg_sha256": "d9a0327f5edbcd3b6ccce2c8266971b8ab760615c889861c338cd371ca6b98e3",
       "caption_sha256": "5a88723a16616abb589343f0598bba92a24c6db77fccd13db59578f6b1f9830e",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -886,17 +889,18 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Undergrowth patches are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "12363; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on ug (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ug (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         }
       ],
       "rules_sha256": "5c54f9c87a55c32252e329e086e448dd45659397c0c3d398f92898b50afa2fed"
     },
     {
       "id": "FIG-27",
-      "svg_sha256": "e3a0ac44a2d87a34d570b063e5dc6125f1bcdd8eee3422f508a51d4819778096",
+      "svg_sha256": "2734cf641bb44ac92e65a17b87f4a132908fdc3a4df3c1098c66d4bad7d18dd5",
       "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -916,17 +920,18 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Rubble fields are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "12447; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-28",
-      "svg_sha256": "4ceb2989f434d3af371a92d4306051c8c214b9c538698cb84a92873b79df27fa",
+      "svg_sha256": "b844bed7e8bfdac841a66773ef0e90dc3762c888f998aded71223f64d67ab789",
       "caption_sha256": "03d2bafaaa4596a0d5bef8ae1efc15497c01b0a48341eb2d8ae7698e19725dee",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -954,17 +959,18 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Rubble are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "12515; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on rub (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on rub (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-29",
-      "svg_sha256": "b6a25e34d7e48dbf47d8203340a1ebc9bc7e9f10d40c1657d2d9885c1d39e7b4",
+      "svg_sha256": "2d12ad7322b8894cd23897a2842b9162bec67f83164a35e13a0e40a3ab893f36",
       "caption_sha256": "ce89ad7247593b2f87859ece91d6e5809d444e310e809d1aa02cc291758d495e",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -991,10 +997,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Rocky outcrops are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "12589; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on oc1, oc2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on oc1, oc2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
@@ -1037,7 +1044,7 @@
     },
     {
       "id": "FIG-31",
-      "svg_sha256": "6984dfb450eb99284371fc6ad9b438198dda929cd1736e9f934823ebffead867",
+      "svg_sha256": "874dfd40bf472988963fea093e871fcae41b49ca2936b22f710864d96b6f2092",
       "caption_sha256": "8b8db7c5a96a1eae9ac8785598503f7e2e33e077ccd7897def5f0e7d8e65120e",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1067,7 +1074,7 @@
     },
     {
       "id": "FIG-32",
-      "svg_sha256": "49e6d71cb2dea5e7fba32f4eb9e4a19c7de94968b66125e89beaf1208502ed10",
+      "svg_sha256": "a1c14185b5723555f90ae393cf0f1670366e5aaa4866d96095cf8ae608c4faa9",
       "caption_sha256": "299cb39bb185df20d39b5f3cf92925614e623ab5c63502c070b309ab61220a9a",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1087,10 +1094,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Rubble fields are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "12803; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
@@ -1169,7 +1177,7 @@
     },
     {
       "id": "FIG-35",
-      "svg_sha256": "a31ae341fddf792a37be68120656856f2f90705a84a9a1e84dc18244fca44b19",
+      "svg_sha256": "3b89e9e697dfd21b03168df9c848e52ed64be66b4176e0b60571abbbf40750bd",
       "caption_sha256": "22bd865dbd2cb161ee661022be8f4bbb937a72445eae74b03172d96f7a665c23",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1182,17 +1190,18 @@
       "findings": [
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Loose Rubble patches are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "13035; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-36",
-      "svg_sha256": "689b5c06c2d62a99681ae0b7c120833546fe86ceaae312b2ccbfb7c0e794b958",
+      "svg_sha256": "2db3b4a5e9fd62d38aef685fffd6ca4913155d730da6be4d41b9924924a2be9a",
       "caption_sha256": "ac1bc8f01ad5029bbd8a9b4f22d099cc6bbd345554c44fcd5b796ed09c4ba0ba",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1220,10 +1229,18 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Rubble are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "13104; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Sweep check: low defensive walls now Impassable (870 lists low walls Impassable); hatched pieces lw1/lw2 render correctly. Step 7 distances unaffected.",
+          "evidence_source_line": "13104; 870",
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
@@ -1303,7 +1320,7 @@
     },
     {
       "id": "FIG-39",
-      "svg_sha256": "830df3a29696c70a329bb75ea0221174bd3d1cb7cc52b557cbdc07cdf4dfecb7",
+      "svg_sha256": "938d122ff2d47f009d6233d5dfaed539e111afc3722a2438721498c9cf241739",
       "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1323,10 +1340,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Rubble are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "13386; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
@@ -1392,7 +1410,7 @@
     },
     {
       "id": "FIG-42",
-      "svg_sha256": "0ef86773a89fe4a10956d5bf69cd3560ce6c11826cc5eb3894b1f35a8368b591",
+      "svg_sha256": "bc993910fd3d816de983a4b381761e45886bff174a433e39f11e9583548cac9b",
       "caption_sha256": "08b85b987ca1b35e5c4a428829cd4d195e12fa27a85be74bd92d7549f9ad93be",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1422,6 +1440,13 @@
           "status": "accepted",
           "issue": "Two Workbenches drawn (2-3 allowed); foot note states it.",
           "evidence_source_line": "13577; 13599",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "resolved",
+          "issue": "Sweep check: Workbenches now Impassable (870); drawn hatched, 6.0\" from each zone (step 7 limit met); check_scenmaps clean.",
+          "evidence_source_line": "13577; 870; 11068",
           "fix": "None."
         }
       ],
@@ -1494,7 +1519,7 @@
     },
     {
       "id": "FIG-45",
-      "svg_sha256": "33e5270d283d9a4dcc1bc8c3f84638906a9fa6ca414f0c4bfbc8b46d7f205d91",
+      "svg_sha256": "caa653428e145c59ba531747eba3f0cd3b5bdad7d98c6ab7305869e7fdfffb04",
       "caption_sha256": "544c8db44d30d68a170e82b87f93e59acd8c613cd1a78241cdd5b6da180b07fa",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1514,17 +1539,18 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Sand Dunes and Rocky Outcrops are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "13791; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on dn1, dn2, dn3, oc1, oc2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on dn1, dn2, dn3, oc1, oc2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-46",
-      "svg_sha256": "2940fe8d432eebfcdceb88d251e4768066a3e6489cc89a7c3644c517144947e5",
+      "svg_sha256": "36d0d10666a2892bf08c1b85665b1d78d77f4bc435583f91dbb24cc8f3e4b037",
       "caption_sha256": "fb6594f930d50d81cbc37664daf0cca076daedeef6d97a663abf493565575591",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1544,19 +1570,20 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: obsidian rubble are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "13858; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on ru1, ru2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-47",
-      "svg_sha256": "6198126f9ec22f375fe325007e2c6d1a0e84526cf1902f751cd3b8759aeea469",
+      "svg_sha256": "61869909f3f97babbebb08281cebcdb48c211a59854208ba3401c9870372bcd0",
       "caption_sha256": "8f66e4b11b21a3e9422a15715b49fb82e77c071d1d8c7709f1ded3a47ff2719c",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "13903-13970",
         "11068-11072",
@@ -1568,10 +1595,11 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Wrong terrain type drawn: 'Deep Sand' (large grey patch, label 'Deep Sand') is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Open Terrain tagged Difficult (walkable), so the map tells the reader a walkable/see-through piece blocks movement or sight.",
           "evidence_source_line": "13923; 852 (deep or drifted sand: Open Terrain, Difficult Terrain, Natural); 13959 (Pressure Plates may not be placed in Deep Sand, so it is entered)",
-          "fix": "Set ds terrain 'difficult' (keyed Difficult stipple); set fp (Fallen Pillars) to 'impassable' (870 lists fallen pillars Impassable)."
+          "fix": "Set ds terrain 'difficult' (keyed Difficult stipple); set fp (Fallen Pillars) to 'impassable' (870 lists fallen pillars Impassable).",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: spec change verified in the spec and in the placed-size render (terrain swatch per 2.9.1 / placement now legal); no new collision introduced."
         },
         {
           "severity": "minor",
@@ -1592,7 +1620,7 @@
     },
     {
       "id": "FIG-48",
-      "svg_sha256": "ee68d7ab4041e91c542c58714b26f778955f0f9bfe7cec3433e669f44f04ea45",
+      "svg_sha256": "40c7c6f8b8dcfb1e59d7fdb504b6ba3eb16974a70a163db6cebc7ca4691cb28b",
       "caption_sha256": "54ef4455882afc5eabba98a2e45bf7c2492e506a281d52828d5c07adde12f0dc",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1612,10 +1640,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Dune ridges are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "13991; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on dr1, dr2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on dr1, dr2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         },
         {
           "severity": "minor",
@@ -1623,13 +1652,20 @@
           "issue": "Edges drawn long; text says only 'opposite battlefield edges' (foot note). The burrowed Sandwyrm starts off the battlefield and is not drawn.",
           "evidence_source_line": "14018; 14011",
           "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Sweep check: Rocks ('rock shelves') stay on the neutral Impassable-or-Blocking swatch; unlisted, nearest defaults (boulders 871) are Impassable or Blocking, so neutral is correct.",
+          "evidence_source_line": "13991; 871",
+          "fix": "None."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-49",
-      "svg_sha256": "47ab469cdbc487a1175435b32e37d5dd0651f522f5253964f5f7c96fb2e13075",
+      "svg_sha256": "1f0fd6d9d1fbc15158572d905843518149b0ec51903bbcf21d18e528a47aa93d",
       "caption_sha256": "752bf3f58b809e97a2d9d3982846f343def50359b09e0b623af8afcf7f886514",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1649,16 +1685,24 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "Terrain type incomplete: Sand Dunes are Cover Terrain tagged Difficult Terrain under the 2.9.1 standard assignments (the scenario does not say otherwise) but are drawn with the Cover-only cross-hatch. The same rubble is drawn Cover and Difficult in FIG-18 and FIG-40, so the set is inconsistent.",
           "evidence_source_line": "14053; 863-864 (Undergrowth, dunes, rocky outcrops; Rubble fields: Cover Terrain, Difficult Terrain)",
-          "fix": "In scenario_specs.json set terrain 'coverdiff' on dn1, dn2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change."
+          "fix": "In scenario_specs.json set terrain 'coverdiff' on dn1, dn2 (the 'Cover and Difficult' swatch already exists in FIG-20); no label or caption change.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: piece now renders Cover plus Difficult overlay (keyed Cover and Difficult swatch), matching FIG-18/40."
         },
         {
           "severity": "minor",
           "status": "accepted",
           "issue": "'broken statuary' has no listed terrain type; drawn Cover (illustrative).",
           "evidence_source_line": "14053",
+          "fix": "None."
+        },
+        {
+          "severity": "minor",
+          "status": "accepted",
+          "issue": "Sweep check: 'broken statuary' now Impassable; 870 lists only 'statue bases' (Impassable), so the type is an inference for an unlisted feature, acceptable and illustrative.",
+          "evidence_source_line": "14053; 870",
           "fix": "None."
         }
       ],
@@ -1696,9 +1740,9 @@
     },
     {
       "id": "FIG-51",
-      "svg_sha256": "05aa1dcd40c656ce324975ba93a3f3cc4d999ebe291f0db1d08c3b72ca4845c5",
+      "svg_sha256": "b0073d136d089c90fcbc88eff8b09e6995a17f77820923ac250eaa1059a9fea2",
       "caption_sha256": "8ed4b790280f1a99b72e41841c37f130d4eb71445f8faf6816ce1ab290d5845e",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "14197-14267",
         "11068-11072",
@@ -1710,17 +1754,19 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Wrong terrain type drawn: 'Reeds' (two pieces, one holding a Chest) is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover Terrain (not Impassable/Blocking), so the map tells the reader a walkable/see-through piece blocks movement or sight.",
           "evidence_source_line": "14217; 14219; 859 (reeds: Cover Terrain, Natural)",
-          "fix": "Set rd1 and rd2 terrain 'cover'."
+          "fix": "Set rd1 and rd2 terrain 'cover'.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: spec change verified in the spec and in the placed-size render (terrain swatch per 2.9.1 / placement now legal); no new collision introduced."
         },
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Illustrative arrangement violates the placement: Group 1 must be placed 'on a Bog Island near one Chest', but the hexagon (centre 2.7\" from the island centre, island radius 2\") lies wholly outside the island circle.",
           "evidence_source_line": "14251",
-          "fix": "Move g1 to about (6.9, 10.0) so its footprint lies inside the island."
+          "fix": "Move g1 to about (6.9, 10.0) so its footprint lies inside the island.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: spec change verified in the spec and in the placed-size render (terrain swatch per 2.9.1 / placement now legal); no new collision introduced."
         },
         {
           "severity": "minor",
@@ -1728,15 +1774,22 @@
           "issue": "Group 2 'patrolling murky water' is drawn in an outer Shallow patch; the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258). Possible unlogged ambiguity. Sanctum label sits over the Sanctum water.",
           "evidence_source_line": "14252; 14258",
           "fix": "Log in ambiguity-triage or draw Group 2 in the Barrow water."
+        },
+        {
+          "severity": "minor",
+          "status": "open",
+          "issue": "New: the relocated Group 1 hexagon overlaps the Chest glyph on the Bog Island (island is 4\" across).",
+          "evidence_source_line": "14251; 14219",
+          "fix": "Offset g1 about 0.8\" from c1 or enlarge the island to radius 2.5\"."
         }
       ],
       "rules_sha256": "df2f915bc899d361770c86f1d987d245dc0eb43ccbd093f8ce4a7436e41c6090"
     },
     {
       "id": "FIG-52",
-      "svg_sha256": "8385a1c58828b8d70dcc628377093d23b80be091f3dfa3950e448575b191bfdc",
+      "svg_sha256": "3e1bc4dc058818e08345e3bcf266512e08267d06abcf2045ecea34e4538759c3",
       "caption_sha256": "6622d45c42690e499c14e13929ac78d0df19fabfc16359fbed143a1c2e24970a",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "14268-14342",
         "11068-11072",
@@ -1747,10 +1800,11 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Wrong terrain type drawn: 'Reed screen' is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover Terrain tagged Difficult, so the map tells the reader a walkable/see-through piece blocks movement or sight.",
           "evidence_source_line": "14293; 862 (reed screens: Cover Terrain tagged Difficult Terrain)",
-          "fix": "Set rs terrain 'coverdiff'."
+          "fix": "Set rs terrain 'coverdiff'.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: spec change verified in the spec and in the placed-size render (terrain swatch per 2.9.1 / placement now legal); no new collision introduced."
         },
         {
           "severity": "minor",
@@ -1771,9 +1825,9 @@
     },
     {
       "id": "FIG-53",
-      "svg_sha256": "b57ae5acd14e34e8690d874188cfb88d4c532504ffef749240b4dd8a84ffe5a5",
+      "svg_sha256": "889d9d0947263bde1ad28a779518e995f3b7b716336767b4b7ab5e7f577e5d7d",
       "caption_sha256": "a265935108bb677a0691bdbdc83c6734d8a6df1a7cd0d7d27c840dd94b11e62f",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "14343-14417",
         "11068-11072",
@@ -1785,10 +1839,11 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Wrong terrain type drawn: 'Razor Reeds' (two pieces) is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover Terrain, so the map tells the reader a walkable/see-through piece blocks movement or sight.",
           "evidence_source_line": "14368; 859 (reeds: Cover Terrain, Natural; unlisted features use the defaults, 845)",
-          "fix": "Set rr1 and rr2 terrain 'cover'."
+          "fix": "Set rr1 and rr2 terrain 'cover'.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: spec change verified in the spec and in the placed-size render (terrain swatch per 2.9.1 / placement now legal); no new collision introduced."
         },
         {
           "severity": "minor",
@@ -1802,9 +1857,9 @@
     },
     {
       "id": "FIG-54",
-      "svg_sha256": "25ec22a8359b7e876013a987f0611f2a6f01f372de0178d083ebf1272d9ec5ec",
+      "svg_sha256": "b361774f32dc63807c9fac145be9a0f436adf73c138dde20eb85665180cbf097",
       "caption_sha256": "bc8d245f6f693cc8f28fb4b08d44d4032834a8e7a37efd79b06bd4c090d36c07",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "14418-14496",
         "11068-11072",
@@ -1816,10 +1871,11 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Wrong terrain type drawn: 'Mangroves' and the two 'Corrupted Muck' patches (each holding a Chest) is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Mangroves Cover Terrain; Muck Open Terrain tagged Difficult (enterable), so the map tells the reader a walkable/see-through piece blocks movement or sight.",
           "evidence_source_line": "14443; 14445; 859 (mangroves: Cover Terrain, Natural); 852 (mud, bog, muck: Open Terrain, Difficult Terrain); 14481 (Heroes enter and end activations in Corrupted Muck)",
-          "fix": "Set mg terrain 'cover'; set mu1 and mu2 terrain 'difficult' (the Chests stay inside)."
+          "fix": "Set mg terrain 'cover'; set mu1 and mu2 terrain 'difficult' (the Chests stay inside).",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: spec change verified in the spec and in the placed-size render (terrain swatch per 2.9.1 / placement now legal); no new collision introduced."
         },
         {
           "severity": "minor",
@@ -1840,9 +1896,9 @@
     },
     {
       "id": "FIG-55",
-      "svg_sha256": "d0d858a615471c91508474756658bfd43f2461efde1db9af5070d7c07a3a809e",
+      "svg_sha256": "77ae19e4df061cc2c55cdb8aeb9f8a5c1c3ca8faeb58092d1bafc419d2d21e54",
       "caption_sha256": "301f619dd66ddace585da3361de4e88462ad56df541343ea6d8c1028d94c379d",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "14497-14578",
         "11068-11072",
@@ -1854,17 +1910,19 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Wrong terrain type drawn: 'Reeds' is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover Terrain, so the map tells the reader a walkable/see-through piece blocks movement or sight.",
           "evidence_source_line": "14522; 859 (reeds: Cover Terrain, Natural)",
-          "fix": "Set rd terrain 'cover'."
+          "fix": "Set rd terrain 'cover'.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: spec change verified in the spec and in the placed-size render (terrain swatch per 2.9.1 / placement now legal); no new collision introduced."
         },
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Illustrative arrangement violates the placement: Treasure Chests go 'on muddy islands' (14524) but both Chests are drawn in open Shallow Water; the only islet drawn (Islet) holds no Chest.",
           "evidence_source_line": "14524; 14522",
-          "fix": "Add two small open islets under c1 and c2 (or move them onto islets) so each Chest stands on an island."
+          "fix": "Add two small open islets under c1 and c2 (or move them onto islets) so each Chest stands on an island.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: spec change verified in the spec and in the placed-size render (terrain swatch per 2.9.1 / placement now legal); no new collision introduced."
         },
         {
           "severity": "minor",
@@ -1885,9 +1943,9 @@
     },
     {
       "id": "FIG-56",
-      "svg_sha256": "5a66410fda42b183a6ff74c28e6d1ed1ae06843cce8ae94f8337a759fe8fdf4d",
+      "svg_sha256": "a637a27b407553549285e7837b79c96899f05380681059db0fbee7d6da2f1e8b",
       "caption_sha256": "d99b1e8d5a335dc3f1b5f629a6ab67b2e4552d378a98b9facd1468da3dc015ea",
-      "verdict": "FAIL",
+      "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "14579-14648",
         "11068-11072",
@@ -1899,10 +1957,11 @@
       "findings": [
         {
           "severity": "major",
-          "status": "open",
+          "status": "resolved",
           "issue": "Wrong terrain type drawn: 'Reeds' is drawn with the neutral 'Impassable or Blocking per piece (2.9.1)' swatch, but 2.9.1 lists it as Cover Terrain, so the map tells the reader a walkable/see-through piece blocks movement or sight.",
           "evidence_source_line": "14599; 859 (reeds: Cover Terrain, Natural)",
-          "fix": "Set rd terrain 'cover'."
+          "fix": "Set rd terrain 'cover'.",
+          "resolution": "Re-review 2026-10-07T04:05:11Z: spec change verified in the spec and in the placed-size render (terrain swatch per 2.9.1 / placement now legal); no new collision introduced."
         },
         {
           "severity": "minor",
@@ -1957,49 +2016,53 @@
     "re_review": "Second pass on FIG-20,23,24,25,26,28,29,30,33,37,38,40,41,49,50 after illustrator fixes: all 6 majors resolved (render-verified); no new major; one new minor (FIG-37 alcove openings)."
   },
   "redrawn_figures_review": {
-    "reviewed_at": "2026-10-07T04:01:08Z",
+    "reviewed_at": "2026-10-07T04:05:11Z",
     "figures_reviewed": 44,
     "scope": "FIG-13, 14, 15, 16, 18, 19, 20 (key), 21-56 (36 Core maps), 57 (10.1 template)",
     "verdicts": {
-      "PASS_WITH_NOTES": 35,
-      "PASS": 2,
-      "FAIL": 7
+      "PASS_WITH_NOTES": 42,
+      "PASS": 2
     },
     "findings_by_severity_status": {
-      "minor/resolved": 39,
-      "minor/accepted": 25,
-      "major/resolved": 7,
-      "minor/open": 43,
-      "major/open": 9
+      "minor/resolved": 56,
+      "minor/accepted": 27,
+      "major/resolved": 16,
+      "minor/open": 29
     },
-    "open_majors": {
-      "FIG-47": [
-        "Wrong terrain type drawn: 'Deep Sand' (large grey patch, label 'Deep Sand') is drawn with "
-      ],
-      "FIG-51": [
-        "Wrong terrain type drawn: 'Reeds' (two pieces, one holding a Chest) is drawn with the neut",
-        "Illustrative arrangement violates the placement: Group 1 must be placed 'on a Bog Island n"
-      ],
-      "FIG-52": [
-        "Wrong terrain type drawn: 'Reed screen' is drawn with the neutral 'Impassable or Blocking "
-      ],
-      "FIG-53": [
-        "Wrong terrain type drawn: 'Razor Reeds' (two pieces) is drawn with the neutral 'Impassable"
-      ],
-      "FIG-54": [
-        "Wrong terrain type drawn: 'Mangroves' and the two 'Corrupted Muck' patches (each holding a"
-      ],
-      "FIG-55": [
-        "Wrong terrain type drawn: 'Reeds' is drawn with the neutral 'Impassable or Blocking per pi",
-        "Illustrative arrangement violates the placement: Treasure Chests go 'on muddy islands' (14"
-      ],
-      "FIG-56": [
-        "Wrong terrain type drawn: 'Reeds' is drawn with the neutral 'Impassable or Blocking per pi"
-      ]
-    },
+    "open_majors": {},
     "method": "For each map: read the scenario setup text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) and 10.1 steps 7, 8, 11 with sed; compared every element of figures/src/scenario_specs.json and the rendered SVG (typst, placed width 243 pt, 150 ppi for all 36 maps; 300 ppi crops of FIG-24, 25, 26, 27, 28, 36, 37, 42, 43, 45 and of FIG-14 panel A, FIG-19 panel A, FIG-57) with zones, markers, Monsters (including Sz), terrain types, distances, entries, exits, ILLUSTRATIVE versus fixed status, caption and foot note; re-derived numeric constraints (Stones 6-8\", Orbs and Stones evenly spaced, Chests, Wagons, 12\" Heart, 10\" Platforms, Warden 2\", binding points); compared terrain types against the 2.9.1 table (845-873); scripted checks of glyph ids against the FIG-20 key (all explained, strips equal), min font 9 pt, no images, check_scenmaps and check_registry both clean; verified the four ? elements (Undermarches 1 Group 3, Sun-Drowned 3 Tomb Herald, The Mire 2 escape, The Mire 5 Group 1 arrival and escape) are genuinely unstated and nothing is drawn for them.",
     "not_checked": "Page-placed PDF proof, physical print, and the interplay with column balancing are outside this review; legibility judged from placed-width renders only.",
     "systematic_open_minor": "S1: pieces that 2.9.1 types Cover plus Difficult (Undergrowth, Rubble fields, dunes, rocky outcrops, 863-864) are drawn Cover only in 15 maps (FIG-22, 23, 25, 26, 27, 28, 29, 32, 35, 36, 39, 45, 46, 48, 49); recorded as open minor on each.",
-    "systematic_open_major": "S2: the neutral 'Impassable or Blocking per piece' swatch is used for pieces that 2.9.1 lists as walkable or Cover (Deep Sand, Reeds, Reed screens, Razor Reeds, Mangroves, Corrupted Muck): FIG-47, 51, 52, 53, 54, 55, 56. Two further placement majors: FIG-51 Group 1 off its Bog Island and FIG-55 Chests not on islands."
+    "systematic_open_major": "S2: the neutral 'Impassable or Blocking per piece' swatch is used for pieces that 2.9.1 lists as walkable or Cover (Deep Sand, Reeds, Reed screens, Razor Reeds, Mangroves, Corrupted Muck): FIG-47, 51, 52, 53, 54, 55, 56. Two further placement majors: FIG-51 Group 1 off its Bog Island and FIG-55 Chests not on islands.",
+    "re_review_2": {
+      "reviewed_at": "2026-10-07T04:05:11Z",
+      "figures": [
+        "FIG-22",
+        "FIG-23",
+        "FIG-25",
+        "FIG-26",
+        "FIG-27",
+        "FIG-28",
+        "FIG-29",
+        "FIG-31",
+        "FIG-32",
+        "FIG-35",
+        "FIG-36",
+        "FIG-39",
+        "FIG-42",
+        "FIG-45",
+        "FIG-46",
+        "FIG-47",
+        "FIG-48",
+        "FIG-49",
+        "FIG-51",
+        "FIG-52",
+        "FIG-53",
+        "FIG-54",
+        "FIG-55",
+        "FIG-56"
+      ],
+      "result": "All 9 previous majors resolved (FIG-47 Deep Sand/Fallen Pillar, FIG-51 Reeds and Group 1 on island, FIG-52 Reed screen, FIG-53 Razor Reeds, FIG-54 Mangroves/Muck, FIG-55 Reeds and Chests on islets, FIG-56 Reeds); S1 Cover+Difficult sweep verified on 15 maps; no new major."
+    }
   }
 }
