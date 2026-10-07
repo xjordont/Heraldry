@@ -1861,7 +1861,7 @@
       "elements": {
         "mandatory": 2,
         "constrained": 5,
-        "illustrative": 7,
+        "illustrative": 9,
         "unresolved": 2
       },
       "undrawn_conditional": [
@@ -2122,7 +2122,7 @@
     "elements": {
       "mandatory": 68,
       "constrained": 248,
-      "illustrative": 287,
+      "illustrative": 289,
       "unresolved": 5
     },
     "iconography": "shared-v2",

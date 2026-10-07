@@ -659,7 +659,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12042-12111; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "a547e124a91847f175bf62e1d0faffb6ae583dc341d95dcead272bd95bac2b40",
+    "svg_sha256": "4cb7e6fd827d2b5e5a720debc0e5353d893e15a94c33ebe0bc7b3e06479edbf3",
     "iconography": "shared-v2",
     "ambiguity": "'outer Standing Stone' (Group 1): the three Stones form a triangle, so no Stone is more 'outer' than another; the map shows Group 1 within 3\" of one Stone and any of the three is legal."
   },
@@ -685,7 +685,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12112-12188; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "436579f8b1af6400a7a6f5bfa03af7ce0e6b84ae13b71a73f398bde0de9db250",
+    "svg_sha256": "ff3027fb709cde6e9ff7ce5c3d1628ec8f6a91db8e2a8c7a77b7879e2e25c90c",
     "iconography": "shared-v2",
     "ambiguity": "Wagon 2 and the Toll Captain: the source places Wagon 2 'adjacent to the central Barricade' and the Captain 'behind the central Barricade' without saying which side of the Barricade is 'behind'; the map draws Wagon 2 on one side only as an illustration.; The Barricade is 2–3\" long but the Trail is 3–4\" wide; the text does not say how a Barricade shorter than the Trail spans it ('across the Trail')."
   },
@@ -737,7 +737,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12260-12337; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "5cb0df5baecb55220de30584080dbd6fec698dd969cd87427fb6880b970a91ac",
+    "svg_sha256": "d3d0ce84d0e6c74ea277ac5c60cf8ce29e7108d0dd864f8bf1e12a267089ccf9",
     "iconography": "shared-v2",
     "ambiguity": "Group 3 (12312): 'at the perimeter of the Bandit Camp, 6\" from its centre' conflicts with a Camp 'about 4\"×4\"' (12280), whose perimeter lies about 2\" from its centre. The map draws the literal 6\" ring from the centre with Group 3 as an illustrative (grey dashed) marker and does not choose between the two readings."
   },
@@ -763,7 +763,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12338-12424; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "29a789618ec845896101cb1490ff9c1d438abca366004cf7b736a00a6f24473d",
+    "svg_sha256": "d9a0327f5edbcd3b6ccce2c8266971b8ab760615c889861c338cd371ca6b98e3",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -789,7 +789,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12427-12494; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "e3a0ac44a2d87a34d570b063e5dc6125f1bcdd8eee3422f508a51d4819778096",
+    "svg_sha256": "2734cf641bb44ac92e65a17b87f4a132908fdc3a4df3c1098c66d4bad7d18dd5",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -815,7 +815,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12495-12568; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "4ceb2989f434d3af371a92d4306051c8c214b9c538698cb84a92873b79df27fa",
+    "svg_sha256": "b844bed7e8bfdac841a66773ef0e90dc3762c888f998aded71223f64d67ab789",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -841,7 +841,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12569-12623; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "b6a25e34d7e48dbf47d8203340a1ebc9bc7e9f10d40c1657d2d9885c1d39e7b4",
+    "svg_sha256": "2d12ad7322b8894cd23897a2842b9162bec67f83164a35e13a0e40a3ab893f36",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -893,7 +893,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12704-12777; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "6984dfb450eb99284371fc6ad9b438198dda929cd1736e9f934823ebffead867",
+    "svg_sha256": "874dfd40bf472988963fea093e871fcae41b49ca2936b22f710864d96b6f2092",
     "iconography": "shared-v2",
     "ambiguity": "'left side aisle' and 'right side aisle' (Groups 1 and 2): the source does not say from which viewpoint left and right are taken, and the nave's orientation is not fixed; the map shows one aisle each without asserting which is 'left'."
   },
@@ -919,7 +919,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12778-12876; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "49e6d71cb2dea5e7fba32f4eb9e4a19c7de94968b66125e89beaf1208502ed10",
+    "svg_sha256": "a1c14185b5723555f90ae393cf0f1670366e5aaa4866d96095cf8ae608c4faa9",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -997,7 +997,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13015-13079; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "a31ae341fddf792a37be68120656856f2f90705a84a9a1e84dc18244fca44b19",
+    "svg_sha256": "3b89e9e697dfd21b03168df9c848e52ed64be66b4176e0b60571abbbf40750bd",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1023,7 +1023,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13080-13186; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "689b5c06c2d62a99681ae0b7c120833546fe86ceaae312b2ccbfb7c0e794b958",
+    "svg_sha256": "2db3b4a5e9fd62d38aef685fffd6ca4913155d730da6be4d41b9924924a2be9a",
     "iconography": "shared-v2",
     "ambiguity": "Group 2 (13164): 'Place using normal alternating scenario placement' does not say who places the group or what limits apply; 10.1 step 7 and step 9 give an alternating rule only for terrain and weather markers. Group 2 is drawn as an unfixed (open) marker."
   },
@@ -1101,7 +1101,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13366-13417; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "830df3a29696c70a329bb75ea0221174bd3d1cb7cc52b557cbdc07cdf4dfecb7",
+    "svg_sha256": "938d122ff2d47f009d6233d5dfaed539e111afc3722a2438721498c9cf241739",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1179,7 +1179,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13557-13616; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "0ef86773a89fe4a10956d5bf69cd3560ce6c11826cc5eb3894b1f35a8368b591",
+    "svg_sha256": "bc993910fd3d816de983a4b381761e45886bff174a433e39f11e9583548cac9b",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1257,7 +1257,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13771-13837; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "33e5270d283d9a4dcc1bc8c3f84638906a9fa6ca414f0c4bfbc8b46d7f205d91",
+    "svg_sha256": "caa653428e145c59ba531747eba3f0cd3b5bdad7d98c6ab7305869e7fdfffb04",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1283,7 +1283,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13838-13902; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "2940fe8d432eebfcdceb88d251e4768066a3e6489cc89a7c3644c517144947e5",
+    "svg_sha256": "36d0d10666a2892bf08c1b85665b1d78d77f4bc435583f91dbb24cc8f3e4b037",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1309,7 +1309,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13903-13970; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "6198126f9ec22f375fe325007e2c6d1a0e84526cf1902f751cd3b8759aeea469",
+    "svg_sha256": "61869909f3f97babbebb08281cebcdb48c211a59854208ba3401c9870372bcd0",
     "iconography": "shared-v2",
     "ambiguity": "Tomb Herald (13948): the Herald starts 'guarding the central Sarcophagus', but the three Sarcophagi are placed in separate chambers and none is designated central; the Herald is not drawn."
   },
@@ -1335,7 +1335,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13971-14032; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "ee68d7ab4041e91c542c58714b26f778955f0f9bfe7cec3433e669f44f04ea45",
+    "svg_sha256": "40c7c6f8b8dcfb1e59d7fdb504b6ba3eb16974a70a163db6cebc7ca4691cb28b",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1361,7 +1361,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14033-14107; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "47ab469cdbc487a1175435b32e37d5dd0651f522f5253964f5f7c96fb2e13075",
+    "svg_sha256": "1f0fd6d9d1fbc15158572d905843518149b0ec51903bbcf21d18e528a47aa93d",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1413,7 +1413,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14197-14267; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "05aa1dcd40c656ce324975ba93a3f3cc4d999ebe291f0db1d08c3b72ca4845c5",
+    "svg_sha256": "b0073d136d089c90fcbc88eff8b09e6995a17f77820923ac250eaa1059a9fea2",
     "iconography": "shared-v2",
     "ambiguity": "Group 2 (14252): 'patrolling murky water' - the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258), while Group 2 patrols water outside the Barrow's sanctum; whether outer Shallow Water counts as murky is not stated. Group 2 is drawn as an illustrative marker in an outer Shallow patch."
   },
@@ -1439,7 +1439,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14268-14342; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "8385a1c58828b8d70dcc628377093d23b80be091f3dfa3950e448575b191bfdc",
+    "svg_sha256": "3e1bc4dc058818e08345e3bcf266512e08267d06abcf2045ecea34e4538759c3",
     "iconography": "shared-v2",
     "ambiguity": "Escape edge (14333): 'Escape Conditions: Required for the Sunstone Amulet and for any unbanked rewards from Offering Piles' names no battlefield edge or extraction zone, and 10.4's fallback to any edge is stated only for Secondary Objectives (10984). No exit is drawn; the owner must state the legal extraction edge."
   },
@@ -1465,7 +1465,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14343-14417; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "b57ae5acd14e34e8690d874188cfb88d4c532504ffef749240b4dd8a84ffe5a5",
+    "svg_sha256": "889d9d0947263bde1ad28a779518e995f3b7b716336767b4b7ab5e7f577e5d7d",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1491,7 +1491,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14418-14496; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "25ec22a8359b7e876013a987f0611f2a6f01f372de0178d083ebf1272d9ec5ec",
+    "svg_sha256": "b361774f32dc63807c9fac145be9a0f436adf73c138dde20eb85665180cbf097",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1503,7 +1503,7 @@
       "10.4 The Mire Scenario 5: Salttide's Reckoning (source lines 14497-14578)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 5 constrained, 7 illustrative and 2 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 5 constrained, 9 illustrative and 2 unresolved elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed; unresolved elements carry a ? tag and a note.",
     "caption": "Salttide's Reckoning: parties deploy along the outer banks within 6\" of opposite long edges (6\" is the 10.1 default) around a central Ritual Island holding Edrava Salttide and three Cursed Effigies; key: FIG-20 (see 10.4, The Mire Scenario 5).",
     "insert_after": "B14554",
     "scope": "column",
@@ -1517,7 +1517,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14497-14578; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "d0d858a615471c91508474756658bfd43f2461efde1db9af5070d7c07a3a809e",
+    "svg_sha256": "77ae19e4df061cc2c55cdb8aeb9f8a5c1c3ca8faeb58092d1bafc419d2d21e54",
     "iconography": "shared-v2",
     "ambiguity": "Group 1 arrival (14552): the group 'enters from a water edge', but the scenario never says which battlefield edge is a water edge. The arrival edge is not drawn.; Escape edge (14568): 'Required only if a party is carrying the Salttide's Counting Stone' names no battlefield edge or extraction zone. No exit is drawn; the owner must state the legal extraction edge."
   },
@@ -1543,7 +1543,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14579-14648; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "5a66410fda42b183a6ff74c28e6d1ed1ae06843cce8ae94f8337a759fe8fdf4d",
+    "svg_sha256": "a637a27b407553549285e7837b79c96899f05380681059db0fbee7d6da2f1e8b",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },

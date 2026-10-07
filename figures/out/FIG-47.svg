@@ -66,11 +66,11 @@
 <g data-glyph="ter-blocking" data-state="illus">
 <rect x="157.5" y="110" width="30" height="7.2" fill="#c4c4c4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="133.5" y="182" width="12" height="9.6" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-impassable" data-state="illus">
+<rect x="133.5" y="182" width="12" height="9.6" fill="url(#p-imp-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="37.5" y="122" width="36" height="30" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-difficult" data-state="illus">
+<rect x="37.5" y="122" width="36" height="30" fill="url(#p-diff-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="obj">
 <polygon points="76.5,77.8 81.7,83 76.5,88.2 71.3,83" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/>
@@ -134,7 +134,7 @@
 <text x="94.7" y="117.1" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Hall 5"×10"</text>
 <text x="22.88" y="85.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Chamber</text>
 <text x="142.7" y="56.4" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Wall</text>
-<text x="148.7" y="189.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Pillar</text>
+<text x="84.31" y="189.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Fallen Pillar</text>
 <text x="34.85" y="114.5" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Deep Sand</text>
 <text x="170.55" y="155.3" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Chest</text>
 <g data-glyph="leader">

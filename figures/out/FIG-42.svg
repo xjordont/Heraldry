@@ -43,11 +43,11 @@
 <line x1="193.5" y1="75.8" x2="193.5" y2="81.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 <line x1="229.5" y1="75.8" x2="229.5" y2="81.8" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="85.5" y="86" width="12" height="6" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-impassable" data-state="illus">
+<rect x="85.5" y="86" width="12" height="6" fill="url(#p-imp-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-obstacle" data-state="illus">
-<rect x="145.5" y="146" width="12" height="6" fill="#d4d4d4" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<g data-glyph="ter-impassable" data-state="illus">
+<rect x="145.5" y="146" width="12" height="6" fill="url(#p-imp-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
 <g data-glyph="ter-open" data-state="illus">
 <rect x="97.5" y="50" width="30" height="24" fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>

@@ -54,8 +54,9 @@
 <g data-glyph="ter-cover" data-state="illus">
 <rect x="97.5" y="146" width="30" height="24" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
 </g>
-<g data-glyph="ter-cover" data-state="illus">
+<g data-glyph="ter-coverdiff" data-state="illus">
 <rect x="181.5" y="158" width="30" height="18" fill="url(#p-cover-l)" stroke="#777" stroke-width="0.9" stroke-dasharray="3 2"/>
+<rect x="181.5" y="158" width="30" height="18" fill="url(#p-diffo-l)"/>
 </g>
 <g data-glyph="ring">
 <g clip-path="url(#bclip)">
