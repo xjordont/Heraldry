@@ -47,14 +47,14 @@
     }
   ],
   "runtime_observed": {
-    "python": "3.13.16",
+    "python": "3.12.14",
     "commands": {
       "git": true,
       "python3": true,
       "typst": false,
-      "pandoc": true,
-      "pdfinfo": true,
-      "pdftoppm": true,
+      "pandoc": false,
+      "pdfinfo": false,
+      "pdftoppm": false,
       "qpdf": false,
       "gs": false
     },
