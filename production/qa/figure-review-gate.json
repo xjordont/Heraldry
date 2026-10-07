@@ -1,13 +1,13 @@
 {
  "status": "PASS",
  "reviewer": "figure-semantic-review: FIG-01..12, FIG-17, FIG-18 and FIG-57 carried forward (hashes unchanged); FIG-13..16, 19, 20 and FIG-21..56 independently re-reviewed against RC486 (P-08..P-12) by a reviewer who did not draw them",
- "reviewed_at": "2026-10-07T10:58:00Z",
+ "reviewed_at": "2026-10-07T11:10:00Z",
  "figures_total": 57,
  "figures_pass": 57,
  "stale": [],
  "missing_review": [],
  "open_majors": {},
- "open_minor_count": 3,
+ "open_minor_count": 0,
  "review_entries_for_unknown_figures": [],
  "problems": [],
  "figures": [
@@ -560,12 +560,12 @@
   {
    "id": "FIG-27",
    "current": {
-    "svg_sha256": "be4678b91d07f6e883af0bc7bf41e413aec44c7ff37ce029f0d9018c9127f9ee",
+    "svg_sha256": "79224bd940b155188f1ec1bf2c185041d55c517f5f7c5c072960998aacf40606",
     "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "be4678b91d07f6e883af0bc7bf41e413aec44c7ff37ce029f0d9018c9127f9ee",
+    "svg_sha256": "79224bd940b155188f1ec1bf2c185041d55c517f5f7c5c072960998aacf40606",
     "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
@@ -574,9 +574,7 @@
    "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "New: the 'Lens' label leader runs up through the Unstable Floor hazard square u3 (2.4\" below the Lens) to the Lens diamond, so the label reads against the hazard square."
-   ],
+   "open_minors": [],
    "fail_reasons": [],
    "status": "PASS"
   },
@@ -625,12 +623,12 @@
   {
    "id": "FIG-30",
    "current": {
-    "svg_sha256": "86c1e24a790341c97356ed833d88475f8d130862158d91a10057b34b98b19172",
+    "svg_sha256": "a9c445f527bb36680c5be14ec001a5db1136c7d1de1fdf10aaf784933c41a2dd",
     "caption_sha256": "8a22d6432a10ba1a6487af97cd7728fbf46551ac2d9fb5f2b05271016f2cc002",
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "86c1e24a790341c97356ed833d88475f8d130862158d91a10057b34b98b19172",
+    "svg_sha256": "a9c445f527bb36680c5be14ec001a5db1136c7d1de1fdf10aaf784933c41a2dd",
     "caption_sha256": "8a22d6432a10ba1a6487af97cd7728fbf46551ac2d9fb5f2b05271016f2cc002",
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
@@ -639,9 +637,7 @@
    "stale_reasons": [],
    "verdict": "PASS_WITH_NOTES",
    "open_majors": [],
-   "open_minors": [
-    "'Chamber' and 'Hall 8\"x4\"' labels sit side by side above the Hall and read as one phrase; the two Chests and one Dust marker drawn dashed are small, unlabelled and faint."
-   ],
+   "open_minors": [],
    "fail_reasons": [],
    "status": "PASS"
   },
@@ -816,23 +812,21 @@
   {
    "id": "FIG-39",
    "current": {
-    "svg_sha256": "a4b70812445a84cebe546d2d37183e4fe3e6b93fb5d46a4db68f6a185f1525db",
+    "svg_sha256": "d908d658eaee9c31b61f3a10ae83b7b9a5c6452e0549ee98e92a10a72f0194a3",
     "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed": {
-    "svg_sha256": "a4b70812445a84cebe546d2d37183e4fe3e6b93fb5d46a4db68f6a185f1525db",
+    "svg_sha256": "d908d658eaee9c31b61f3a10ae83b7b9a5c6452e0549ee98e92a10a72f0194a3",
     "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
     "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b"
    },
    "reviewed_present": true,
    "stale": false,
    "stale_reasons": [],
-   "verdict": "PASS_WITH_NOTES",
+   "verdict": "PASS",
    "open_majors": [],
-   "open_minors": [
-    "The 'Wall' label sits about 3\" below the wall it names, directly under Chest c2 and its 'min 6\"' ruler, so it reads as labelling the Chest (otherwise unlabelled) rather than the wall at the end of the 'min 6\"' label."
-   ],
+   "open_minors": [],
    "fail_reasons": [],
    "status": "PASS"
   },

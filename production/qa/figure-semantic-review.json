@@ -1,6 +1,6 @@
 {
   "reviewer": "figure-semantic-review: FIG-01..12, FIG-17, FIG-18 and FIG-57 carried forward (hashes unchanged); FIG-13..16, 19, 20 and FIG-21..56 independently re-reviewed against RC486 (P-08..P-12) by a reviewer who did not draw them",
-  "reviewed_at": "2026-10-07T10:58:00Z",
+  "reviewed_at": "2026-10-07T11:10:00Z",
   "figures": [
     {
       "id": "FIG-01",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": "FIG-27",
-      "svg_sha256": "be4678b91d07f6e883af0bc7bf41e413aec44c7ff37ce029f0d9018c9127f9ee",
+      "svg_sha256": "79224bd940b155188f1ec1bf2c185041d55c517f5f7c5c072960998aacf40606",
       "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1033,10 +1033,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "New: the 'Lens' label leader runs up through the Unstable Floor hazard square u3 (2.4\" below the Lens) to the Lens diamond, so the label reads against the hazard square.",
           "evidence_source_line": "12451; 12447",
-          "fix": "Give 'Lens' lp 'l' or 'r' inside the Dome (or drop the leader and place the label beside the diamond) so no leader crosses u3. No data change."
+          "fix": "Give 'Lens' lp 'l' or 'r' inside the Dome (or drop the leader and place the label beside the diamond) so no leader crosses u3. No data change.",
+          "resolution": "RC486 re-review pass 2: Lens label now left of the diamond with a short leader that clears hazard u3; ruler unchanged (200 ppi render, 243 pt placed width)."
         },
         {
           "severity": "minor",
@@ -1047,7 +1048,7 @@
         }
       ],
       "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "reviewed_at": "2026-10-07T11:10:00Z"
     },
     {
       "id": "FIG-28",
@@ -1146,7 +1147,7 @@
     },
     {
       "id": "FIG-30",
-      "svg_sha256": "86c1e24a790341c97356ed833d88475f8d130862158d91a10057b34b98b19172",
+      "svg_sha256": "a9c445f527bb36680c5be14ec001a5db1136c7d1de1fdf10aaf784933c41a2dd",
       "caption_sha256": "8a22d6432a10ba1a6487af97cd7728fbf46551ac2d9fb5f2b05271016f2cc002",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -1165,11 +1166,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "'Chamber' and 'Hall 8\"x4\"' labels sit side by side above the Hall and read as one phrase; the two Chests and one Dust marker drawn dashed are small, unlabelled and faint.",
           "evidence_source_line": "12644; 12650",
           "fix": "Label the east Chamber too or move 'Chamber' to lp 'i'; label one Chest.",
-          "resolution": "RC486 re-review: both Chambers and the Chest are now labelled (resolved), but the 'Hall 8\"x4\"' label is about 10\" above the Hall box, no leader, between the west 'Chamber' label and the Dust corridor, so it still reads as part of the 'Chamber ... Hall' phrase or as labelling the corridor. Fix: lp 'b' or a leader (lat) on the Hall, or place it inside the Hall box."
+          "resolution": "RC486 re-review pass 2: Hall label now directly below the Hall box; it sits close to the Codex and Warden labels but each reads against its own symbol (200 ppi render)."
         },
         {
           "severity": "minor",
@@ -1187,7 +1188,7 @@
         }
       ],
       "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "reviewed_at": "2026-10-07T11:10:00Z"
     },
     {
       "id": "FIG-31",
@@ -1537,9 +1538,9 @@
     },
     {
       "id": "FIG-39",
-      "svg_sha256": "a4b70812445a84cebe546d2d37183e4fe3e6b93fb5d46a4db68f6a185f1525db",
+      "svg_sha256": "d908d658eaee9c31b61f3a10ae83b7b9a5c6452e0549ee98e92a10a72f0194a3",
       "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
-      "verdict": "PASS_WITH_NOTES",
+      "verdict": "PASS",
       "checked_against_lines": [
         "13366-13417",
         "11068-11072",
@@ -1566,10 +1567,11 @@
         },
         {
           "severity": "minor",
-          "status": "open",
+          "status": "resolved",
           "issue": "The 'Wall' label sits about 3\" below the wall it names, directly under Chest c2 and its 'min 6\"' ruler, so it reads as labelling the Chest (otherwise unlabelled) rather than the wall at the end of the 'min 6\"' label.",
           "evidence_source_line": "13386",
-          "fix": "Place 'Wall' beside or under wall wl1 (lp 'b') or add a leader (lat) to wl1; no data change."
+          "fix": "Place 'Wall' beside or under wall wl1 (lp 'b') or add a leader (lat) to wl1; no data change.",
+          "resolution": "RC486 re-review pass 2: Wall label now directly under wall wl1, clear of the Chest and rulers (200 ppi render)."
         },
         {
           "severity": "minor",
@@ -1580,7 +1582,7 @@
         }
       ],
       "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "reviewed_at": "2026-10-07T11:10:00Z"
     },
     {
       "id": "FIG-40",
@@ -2503,14 +2505,10 @@
     "findings_by_severity_status": {
       "major/resolved": 16,
       "minor/accepted": 25,
-      "minor/open": 3,
-      "minor/resolved": 124
+      "minor/open": 0,
+      "minor/resolved": 127
     },
-    "open_minor_figures": [
-      "FIG-27",
-      "FIG-30",
-      "FIG-39"
-    ],
+    "open_minor_figures": [],
     "critical_open": 0,
     "major_open": 0,
     "four_rc486_elements": {
@@ -2521,7 +2519,7 @@
     },
     "no_new_rule_implied": "Each of the four elements is drawn only as the patched sentence states; positions the text leaves open (which of four edges, which short edge, Herald's exact side of its Sarcophagus) are shown as alternatives or grey dashed.",
     "line_number_check": "P-08..P-12 are single-line replacements; RC485 and RC486 differ only at lines 5, 12927, 13948, 14333, 14552, 14568, so no citation shifted. All element line citations in scenario_specs.json lie inside their scenario span and point at lines of the expected heading type (script); three Objective Placement bullet lists and Group bullets confirmed by eye.",
-    "previously_open_minors": "29 previously open minors: 24 resolved; 4 accepted with reasons (FIG-19 '5-7\" label on ring', FIG-27 ruler across the Dome, FIG-29 label halo, FIG-51 Group 2 murky-water ambiguity); 1 still open (FIG-30 Hall label detached, which the illustrator counted as fixed). New open minors: FIG-27 Lens leader through hazard u3, FIG-39 Wall label detached from its wall (the earlier FIG-39 ruler item is resolved). Remaining open minors: FIG-27, FIG-30, FIG-39 (all minor, none affects a rule or number).",
+    "previously_open_minors": "29 previously open minors: 24 resolved; 4 accepted with reasons (FIG-19 '5-7\" label on ring', FIG-27 ruler across the Dome, FIG-29 label halo, FIG-51 Group 2 murky-water ambiguity); 1 still open (FIG-30 Hall label detached, which the illustrator counted as fixed). New open minors: FIG-27 Lens leader through hazard u3, FIG-39 Wall label detached from its wall (the earlier FIG-39 ruler item is resolved). Remaining open minors: FIG-27, FIG-30, FIG-39 (all minor, none affects a rule or number). Pass 2: FIG-27 Lens leader, FIG-30 Hall label and FIG-39 Wall label re-rendered and verified fixed; no open minors remain.",
     "method": "Specs and scenario text read side by side; every SVG rendered with figures/src/test/render.py at 200 ppi (equal to the 243 pt placed column width) and viewed; crops at 300-400 ppi for FIG-26, 27, 30, 39, 43; make_figures.py run in a scratch copy to confirm byte-identical SVGs and passing geometry assertions.",
     "not_checked": "Page-placed PDF, column balancing and physical print. Five maps (FIG-47, 52, 53, 54, 55) are 274.2 pt tall because of three-line foot notes; figures/README says maps stay at most about 260 pt, so the keep/pagination audit should confirm they place whole."
   }
