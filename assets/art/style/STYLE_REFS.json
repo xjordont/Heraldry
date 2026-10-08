@@ -1,0 +1,35 @@
+{
+ "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example.",
+ "refs": [
+  {
+   "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+   "source": "owner-supplied sample, 2026-10-08 session (original bytes)",
+   "px": [
+    2576,
+    1438
+   ],
+   "sha256": "3c0bea9e732212ef9b338e652292bc443b8195a3d3f082460763f4513435e50d",
+   "use": "generation style reference only; never placed in the book or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+   "source": "owner-supplied sample, 2026-10-08 session (original bytes)",
+   "px": [
+    2400,
+    1792
+   ],
+   "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
+   "use": "generation style reference only; never placed in the book or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
+   "source": "owner-supplied sample, 2026-10-08 session (original bytes)",
+   "px": [
+    2576,
+    1438
+   ],
+   "sha256": "d3834f414c62e8623c1c5f35afd6ed4da9edbaaf86e64ac4883763e92b7d61bf",
+   "use": "generation style reference only; never placed in the book or packaged"
+  }
+ ]
+}

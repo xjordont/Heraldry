@@ -37,7 +37,7 @@ jobs:
       - name: Fetch artwork masters (inspiration and anchors)
         run: |
           git lfs install --local
-          git lfs pull --include="assets/art/incoming/*.png,assets/art/masters/*.png" --exclude=""
+          git lfs pull --include="assets/art/masters/*.png" --exclude=""
       - name: Configure commit identity
         run: |
           git config user.name "heraldry-art-bot"

@@ -2,7 +2,22 @@
 
 This document governs atmospheric illustration and art planning. MASTER_PROMPT.md governs source fidelity, asset QA, and placement. The manuscript, not this brief, supplies setting facts.
 
-## Shared style
+## Shared style (owner-defined 2026-10-08)
+
+The operative wording is `style` in `config/art_style.json`. It was derived from three owner samples, kept privately in `assets/art/style/` and never packaged:
+- a hatched town scene, which sets the hatching, skies and scene density;
+- a line-only panorama, which sets detail with lots of white paper;
+- a skeleton warrior, which sets figures: bold contour, spot blacks, isolated on white.
+
+It also draws on classic black-and-white RPG interior art (bold woodcut-like contours, dense hatching) and Dark Souls' "withered beauty" (decayed grandeur, gothic ruin at overwhelming scale, quiet dread).
+
+The illustrator works in two registers with one hand:
+- **Figures:** monsters, ancestries, classes, backgrounds, traditions and items, isolated on white.
+- **Scenes:** cover, chapters, world sections, climates, bastions, scenarios and campaign rooms. These are vignettes that thin into white paper.
+
+Counter-example: the original ART-CH01-001 master's dense, near-photographic darkness muddies at spot size and is not the target. Mood comes from subject, decay and solid black shapes, not from grey tone.
+
+The paragraphs below remain as background.
 
 Rough black-and-white medieval fantasy pen-and-ink illustration. Expressive, slightly irregular nib lines, convincing economical contour drawing, dense but purposeful crosshatching, dry-brush accents, subtle stippling, strong silhouettes, open paper-white negative space, selective pools of black. The appearance of accomplished hand-drawn ink rather than photorealism or a polished digital render. Severe, weathered, grounded, inhabited, and materially coherent. Distress belongs in the depicted world and drawing marks; keep the image substrate clean enough for print.
 

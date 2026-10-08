@@ -1,5 +1,5 @@
 {
- "note": "Single style bible for every generated illustration (owner decision 2026-10-08). Changing this file changes prompts and therefore prompt hashes; already-approved art stays approved until regenerated.",
+ "note": "Single style bible for every generated illustration. Style defined 2026-10-08 from three owner samples (assets/art/style/), classic black-and-white fantasy RPG interior art and Dark Souls' 'withered beauty'. Changing this file changes every prompt hash.",
  "provider": "gemini",
  "image_model_preference": [
   "gemini-nano-banana-2.1",
@@ -17,87 +17,87 @@
  "candidates_per_entry": 3,
  "max_rounds": 2,
  "judge_pass_score": 7,
- "style": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim, clean dark-fantasy medieval tabletop skirmish rulebook. Every image in the book is drawn by the same single illustrator with one consistent technique: confident dip-pen contour lines of varied weight, controlled parallel hatching and crosshatching for all shading, occasional stippling, a few solid black shadow masses, and generous untouched paper-white negative space. Pure black ink on pure white paper only: no grey wash, no gradients, no colour, no paper texture. Light falls from the upper left. Grounded, weathered, believable anatomy, armour, clothing, masonry and materials.",
- "exclusions": "No lettering, captions, labels, numbers, signature, logo, watermark, border, frame, panel box, colour, grey wash, airbrush gradient, photorealism, 3D render, anime or cartoon style, tiled pattern, faint grid, parchment or paper texture. Do not imitate any named artist.",
- "reference_instruction": "The attached reference images define the illustrator's line weight, hatching density, contrast and finish. Match that technique exactly, but do not copy their subjects or compositions.",
+ "style": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.",
+ "exclusions": "No lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
+ "reference_instruction": "The attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.",
  "families": {
   "cover": {
    "aspect": "4:3",
    "size": "2K",
    "print_w_in": 4.8,
-   "framing": "Cinematic scene with a clear focal group; open white sky in the upper third for typeset title; vignette edges that fade to white paper."
+   "framing": "Cinematic establishing scene with one clear focal group; open white sky in the upper third reserved for the typeset title; strong black foreground framing. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
   },
   "chapter": {
    "aspect": "16:9",
    "size": "2K",
    "print_w_in": 5.8,
-   "framing": "Wide establishing scene; horizon in the lower third; vignette edges that fade irregularly to white paper; no rectangular edge."
+   "framing": "Wide establishing scene with a low horizon, black foreground framing and a lighter, finer-lined distance. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
   },
   "world": {
    "aspect": "3:2",
    "size": "1K",
    "print_w_in": 3.3,
-   "framing": "Small landscape or scene vignette; edges fade irregularly to white paper."
+   "framing": "Small establishing scene that captures the section's subject. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
   },
   "climate": {
    "aspect": "3:2",
    "size": "1K",
    "print_w_in": 3.3,
-   "framing": "Landscape vignette that captures the climate's defining terrain and danger; edges fade irregularly to white paper."
+   "framing": "Landscape that captures the climate's defining terrain, ruin and danger, with one or two tiny figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
   },
   "bastion": {
    "aspect": "3:2",
    "size": "1K",
    "print_w_in": 3.3,
-   "framing": "Town or fortress seen from its approach road; edges fade irregularly to white paper."
+   "framing": "The town or fortress seen from its approach road, with its defining feature unmistakable and tiny figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
   },
   "ancestry": {
    "aspect": "3:4",
    "size": "1K",
    "print_w_in": 1.9,
-   "framing": "Single full-length figure, three-quarter view, standing on a small patch of ground; isolated on white."
+   "framing": "Single full-length adventurer of this ancestry in travel-worn gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery."
   },
   "background": {
    "aspect": "1:1",
    "size": "1K",
    "print_w_in": 1.6,
-   "framing": "Small emblematic vignette of one figure or the tools of their trade; isolated on white."
+   "framing": "Small emblematic vignette: one figure or the tools of their trade. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery."
   },
   "class": {
    "aspect": "3:4",
    "size": "1K",
    "print_w_in": 1.9,
-   "framing": "Single full-length adventurer in an action-ready pose with class-typical arms and gear; isolated on white."
+   "framing": "Single full-length adventurer in an action-ready pose with class-typical arms and gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery."
   },
   "monster": {
    "aspect": "1:1",
    "size": "1K",
    "print_w_in": 1.9,
-   "framing": "Single creature, full body, three-quarter view, standing on a small patch of ground; isolated on white; a figure for scale only if the text implies it."
+   "framing": "Single creature, full body, three-quarter view, in a characteristic menacing pose; a small human figure for scale only if the creature is Large or Huge. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery."
   },
   "item": {
    "aspect": "3:2",
    "size": "1K",
    "print_w_in": 2.6,
-   "framing": "Still-life arrangement of the described objects on white; no table or background."
+   "framing": "Still-life arrangement of the described objects, worn and used. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery."
   },
   "tradition": {
    "aspect": "1:1",
    "size": "1K",
    "print_w_in": 1.6,
-   "framing": "Small emblematic vignette of a caster or the visible effect of the magic; isolated on white."
+   "framing": "Small emblematic vignette of a caster mid-ritual or the visible effect of the magic, rendered in ink marks only. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery."
   },
   "scenario": {
    "aspect": "3:2",
    "size": "1K",
    "print_w_in": 3.3,
-   "framing": "Small scene vignette of the scenario's key place and threat at the moment of action; edges fade irregularly to white paper."
+   "framing": "The scenario's key place and threat at the moment before action, with small figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
   },
   "campaign": {
    "aspect": "3:2",
    "size": "1K",
    "print_w_in": 2.6,
-   "framing": "Small interior or architectural vignette of the described stronghold room; edges fade irregularly to white paper."
+   "framing": "Interior or architectural view of the described stronghold room. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
   }
  },
  "anchor_ids": [
@@ -121,5 +121,10 @@
   "M": "Medium: about human-sized",
   "L": "Large: roughly twice a human's height or bulk",
   "H": "Huge: towering many times a human's size"
- }
+ },
+ "style_refs": [
+  "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+  "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+  "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+ ]
 }

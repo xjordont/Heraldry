@@ -316,7 +316,8 @@ def anchor_refs():
     a = load(ANCHORS, {})
     if a.get("status") != "approved":
         raise SystemExit("Anchors are not approved; run the anchors phase and review it first")
-    return [ROOT / p for p in a["references"]]
+    # approved anchors first (the judge compares against the first four), then the owner's style samples
+    return [ROOT / p for p in a["references"]] + [ROOT / p for p in CFG["style_refs"]]
 
 
 # ------------------------------------------------------------------ commands
@@ -337,7 +338,8 @@ def cmd_plan(a):
 
 
 def cmd_anchors(a):
-    insp = sorted((ROOT / "assets/art/incoming").glob("ART-*.png"))[:6]
+    # owner-supplied style samples define the hand; the old ChatGPT masters are no longer references
+    insp = [ROOT / p for p in CFG["style_refs"]]
     ids = CFG["anchor_ids"]
     for e in entries():
         if e["id"] in ids:
