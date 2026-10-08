@@ -1,0 +1,25 @@
+{
+ "status": "proposed",
+ "proposed_at": "2026-10-08T12:38:35+00:00",
+ "anchor_ids": [
+  "ART-CLI-THE-GREENMARK",
+  "ART-BAS-GREYTHORN",
+  "ART-MON-GIANT-TARANTULA",
+  "ART-MON-UNDEAD-CHAMPION",
+  "ART-CLA-FIGHTER",
+  "ART-ANC-DWARF"
+ ],
+ "references": [
+  "assets/art/masters/ART-CLI-THE-GREENMARK.png",
+  "assets/art/masters/ART-BAS-GREYTHORN.png",
+  "assets/art/masters/ART-MON-GIANT-TARANTULA.png",
+  "assets/art/masters/ART-MON-UNDEAD-CHAMPION.png",
+  "assets/art/masters/ART-CLA-FIGHTER.png",
+  "assets/art/masters/ART-ANC-DWARF.png"
+ ],
+ "inspiration": [
+  "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+  "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+  "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+ ]
+}
