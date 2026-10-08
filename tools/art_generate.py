@@ -107,6 +107,9 @@ def call(method, path, body=None, timeout=300):
                 return json.loads(r.read())
         except urllib.error.HTTPError as ex:
             msg = ex.read().decode(errors="replace")[:400]
+            if ex.code == 429 and ("free_tier" in msg or "PerDay" in msg):
+                raise SystemExit("Gemini quota exhausted (free tier or daily limit): enable billing on the key's "
+                                 "Google Cloud project, then rerun. " + msg[:300])
             if ex.code in (429, 500, 502, 503, 504) and attempt < 5:
                 time.sleep(min(90, 5 * 2 ** attempt))
                 continue
