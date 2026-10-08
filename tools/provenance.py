@@ -4,7 +4,10 @@ from pathlib import Path
 from manuscript import ROOT, active, sha256, version, check as check_source
 
 INPUTS = ["config", "source", "editorial/patches.json", "editorial/how_to_use.json", "editorial/history", "tools", "typst", "fonts", "figures/src", "figures/out",
-          "figures/manifest.json", "figures/placements.json", "assets", "Makefile", "requirements.lock", "docs/PRINT_INSTRUCTIONS_TEMPLATE.md"]
+          "figures/manifest.json", "figures/placements.json", "assets", "production/art/SELECTIONS.json", "production/art/SPOT_CATALOG.json",
+          "Makefile", "requirements.lock", "docs/PRINT_INSTRUCTIONS_TEMPLATE.md"]
+# generated raw masters are bound by SHA256 in production/art/SELECTIONS.json; builds use only the ink derivatives
+EXCLUDE = {"__pycache__", "test", "private", "masters"}
 SUFFIXES = ["digital", "inkjet-borderless", "inkjet-borderless-white", "covers-front-back", "covers-front-back-white", "inkjet-calibration"]
 
 
@@ -14,7 +17,7 @@ def inputs(root=ROOT):
         p = root / name
         paths.update(p.rglob("*") if p.is_dir() else [p])
     return {p.relative_to(root).as_posix(): sha256(p) for p in sorted(paths)
-            if p.is_file() and not ({"__pycache__", "test", "private"} & set(p.parts))
+            if p.is_file() and not (EXCLUDE & set(p.parts))
             and p.name != "content.typ" and not p.name.startswith(".env")}
 
 

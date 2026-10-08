@@ -1,0 +1,125 @@
+{
+ "note": "Single style bible for every generated illustration (owner decision 2026-10-08). Changing this file changes prompts and therefore prompt hashes; already-approved art stays approved until regenerated.",
+ "provider": "gemini",
+ "image_model_preference": [
+  "gemini-nano-banana-2.1",
+  "gemini-3.1-flash-image",
+  "gemini-3.1-flash-image-preview",
+  "gemini-2.5-flash-image"
+ ],
+ "judge_model_preference": [
+  "gemini-3.1-flash",
+  "gemini-3-flash",
+  "gemini-3-flash-preview",
+  "gemini-2.5-flash"
+ ],
+ "budget_usd": 150.0,
+ "candidates_per_entry": 3,
+ "max_rounds": 2,
+ "judge_pass_score": 7,
+ "style": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim, clean dark-fantasy medieval tabletop skirmish rulebook. Every image in the book is drawn by the same single illustrator with one consistent technique: confident dip-pen contour lines of varied weight, controlled parallel hatching and crosshatching for all shading, occasional stippling, a few solid black shadow masses, and generous untouched paper-white negative space. Pure black ink on pure white paper only: no grey wash, no gradients, no colour, no paper texture. Light falls from the upper left. Grounded, weathered, believable anatomy, armour, clothing, masonry and materials.",
+ "exclusions": "No lettering, captions, labels, numbers, signature, logo, watermark, border, frame, panel box, colour, grey wash, airbrush gradient, photorealism, 3D render, anime or cartoon style, tiled pattern, faint grid, parchment or paper texture. Do not imitate any named artist.",
+ "reference_instruction": "The attached reference images define the illustrator's line weight, hatching density, contrast and finish. Match that technique exactly, but do not copy their subjects or compositions.",
+ "families": {
+  "cover": {
+   "aspect": "4:3",
+   "size": "2K",
+   "print_w_in": 4.8,
+   "framing": "Cinematic scene with a clear focal group; open white sky in the upper third for typeset title; vignette edges that fade to white paper."
+  },
+  "chapter": {
+   "aspect": "16:9",
+   "size": "2K",
+   "print_w_in": 5.8,
+   "framing": "Wide establishing scene; horizon in the lower third; vignette edges that fade irregularly to white paper; no rectangular edge."
+  },
+  "world": {
+   "aspect": "3:2",
+   "size": "1K",
+   "print_w_in": 3.3,
+   "framing": "Small landscape or scene vignette; edges fade irregularly to white paper."
+  },
+  "climate": {
+   "aspect": "3:2",
+   "size": "1K",
+   "print_w_in": 3.3,
+   "framing": "Landscape vignette that captures the climate's defining terrain and danger; edges fade irregularly to white paper."
+  },
+  "bastion": {
+   "aspect": "3:2",
+   "size": "1K",
+   "print_w_in": 3.3,
+   "framing": "Town or fortress seen from its approach road; edges fade irregularly to white paper."
+  },
+  "ancestry": {
+   "aspect": "3:4",
+   "size": "1K",
+   "print_w_in": 1.9,
+   "framing": "Single full-length figure, three-quarter view, standing on a small patch of ground; isolated on white."
+  },
+  "background": {
+   "aspect": "1:1",
+   "size": "1K",
+   "print_w_in": 1.6,
+   "framing": "Small emblematic vignette of one figure or the tools of their trade; isolated on white."
+  },
+  "class": {
+   "aspect": "3:4",
+   "size": "1K",
+   "print_w_in": 1.9,
+   "framing": "Single full-length adventurer in an action-ready pose with class-typical arms and gear; isolated on white."
+  },
+  "monster": {
+   "aspect": "1:1",
+   "size": "1K",
+   "print_w_in": 1.9,
+   "framing": "Single creature, full body, three-quarter view, standing on a small patch of ground; isolated on white; a figure for scale only if the text implies it."
+  },
+  "item": {
+   "aspect": "3:2",
+   "size": "1K",
+   "print_w_in": 2.6,
+   "framing": "Still-life arrangement of the described objects on white; no table or background."
+  },
+  "tradition": {
+   "aspect": "1:1",
+   "size": "1K",
+   "print_w_in": 1.6,
+   "framing": "Small emblematic vignette of a caster or the visible effect of the magic; isolated on white."
+  },
+  "scenario": {
+   "aspect": "3:2",
+   "size": "1K",
+   "print_w_in": 3.3,
+   "framing": "Small scene vignette of the scenario's key place and threat at the moment of action; edges fade irregularly to white paper."
+  },
+  "campaign": {
+   "aspect": "3:2",
+   "size": "1K",
+   "print_w_in": 2.6,
+   "framing": "Small interior or architectural vignette of the described stronghold room; edges fade irregularly to white paper."
+  }
+ },
+ "anchor_ids": [
+  "ART-CLI-THE-GREENMARK",
+  "ART-BAS-GREYTHORN",
+  "ART-MON-GIANT-TARANTULA",
+  "ART-MON-UNDEAD-CHAMPION",
+  "ART-CLA-FIGHTER",
+  "ART-ANC-DWARF"
+ ],
+ "anchor_candidates": 4,
+ "price_per_mtok_usd": {
+  "image_out": 60.0,
+  "image_in": 0.5,
+  "judge_in": 0.5,
+  "judge_out": 3.0,
+  "note": "Estimates from the published Gemini 3.1 Flash Image (Nano Banana 2) rates; Google's billing console is authoritative."
+ },
+ "size_words": {
+  "S": "Small: smaller than a human",
+  "M": "Medium: about human-sized",
+  "L": "Large: roughly twice a human's height or bulk",
+  "H": "Huge: towering many times a human's size"
+ }
+}

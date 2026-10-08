@@ -28,7 +28,7 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.lock
       - name: Fetch native atmospheric artwork
-        run: git lfs pull --include="assets/art/incoming/*.png" --exclude=""
+        run: git lfs pull --include="assets/art/incoming/*.png,assets/art/ink/*.png" --exclude=""
       - name: Check reviewed artwork masters
         run: python tools/check_art.py
       - name: Install locked publishing dependencies

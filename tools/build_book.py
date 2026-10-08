@@ -15,6 +15,32 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from tables import classify, cell_plain, COL_W, FULL_W  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
+ART_SEL = ROOT / "production/art/SELECTIONS.json"
+ART_STYLE = ROOT / "config/art_style.json"
+
+
+def load_spot_art():
+    """Selected generated ink art keyed by catalog flavour block / asset id: (relpath, width_in).
+    Width = family print width, never above native 300 ppi."""
+    if not ART_SEL.exists():
+        return {}, {}
+    fams = json.loads(ART_STYLE.read_text())["families"]
+    cat = {e["id"]: e for e in json.loads((ROOT / "production/art/SPOT_CATALOG.json").read_text())["entries"]}
+    by_block, by_id = {}, {}
+    for aid, s in json.loads(ART_SEL.read_text()).items():
+        f = ROOT / s["ink"]["path"]
+        if aid not in cat or s.get("status") == "rejected" or not f.exists() or s["spec_sha256"] != cat[aid]["spec_sha256"]:
+            continue
+        from PIL import Image
+        wpx = Image.open(f).size[0]
+        w = min(fams[s["family"]]["print_w_in"], wpx / 300)
+        rec = ("../" + s["ink"]["path"], w)
+        by_id[aid] = rec
+        if cat[aid].get("flavour_block"):
+            by_block[cat[aid]["flavour_block"]] = rec
+    return by_block, by_id
+
+
 FLOAT_FIGS = set(json.loads((ROOT / "config/design_tokens.json").read_text()).get("layout", {}).get("float_figures", []))
 BUILD = ROOT / "build"
 MAP = ROOT / "production/mappings"
@@ -177,6 +203,7 @@ class Book:
         self.fig_slots = json.loads((ROOT / "figures/placements.json").read_text()) if (ROOT / "figures/placements.json").exists() else {}
         self.index_targets = json.loads((BUILD / "index_targets.json").read_text()) if (BUILD / "index_targets.json").exists() else {}
         self.tclass = self._classify_all()
+        self.spot_art, self.art_ids = load_spot_art()
 
     def _classify_all(self):
         """Classify every table, then unify families (same header signature within the
@@ -244,7 +271,9 @@ class Book:
         if role == "example" or is_example(b):
             return f"#example[{tag}{body}]"
         if is_flavour(b):
-            return f"#flavour[{tag}{body}]"
+            art = self.spot_art.get(b["id"])
+            pre = f"#spotart({lit(art[0])}, {art[1]:.3f}in)" if art else ""
+            return f"{pre}#flavour[{tag}{body}]"
         if is_caption(b):
             return f"#runin[{tag}{body}]\n"
         if self.in_glossary and b["c"] and b["c"][0]["t"] == "strong" and first_text({"c": b["c"][0]["c"]}).rstrip().endswith(":"):
@@ -405,8 +434,14 @@ class Book:
         numlit = f"[#{lit(num)}]" if num else "none"
         art = "none"
         if num and num.rstrip(".").isdigit():
-            f = ROOT / f"assets/art/incoming/ART-CH{int(num.rstrip('.')):02d}-001.png"
-            if f.exists():
+            gen = self.art_ids.get(f"ART-CH{int(num.rstrip('.')):02d}-002")
+            f = ROOT / gen[0][3:] if gen else ROOT / f"assets/art/incoming/ART-CH{int(num.rstrip('.')):02d}-001.png"
+            if gen:
+                from PIL import Image
+                wpx, hpx = Image.open(f).size
+                w = gen[1]
+                art = f"({lit(gen[0])}, {w:.3f}in, {w * hpx / wpx:.3f}in)"
+            elif f.exists():
                 from PIL import Image
                 wpx, hpx = Image.open(f).size
                 # place at native 300 ppi (never upscaled): width = px / 300 in

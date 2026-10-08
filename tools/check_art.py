@@ -31,6 +31,16 @@ def main():
         if not (0 < pw <= width / 300 and 0 < ph <= height / 300):
             raise ValueError(f"{rel}: placement exceeds native 300ppi limit")
     print("PASS: 12 native artwork masters, SHA256, dimensions and 300ppi placement limits")
+    sel_path = ROOT / "production/art/SELECTIONS.json"
+    if sel_path.exists():
+        sels = json.loads(sel_path.read_text())
+        for aid, s in sels.items():
+            ink = ROOT / s["ink"]["path"]
+            if ink.read_bytes()[:8] != b"\x89PNG\r\n\x1a\n":
+                raise ValueError(f"{ink}: ink PNG missing; fetch Git LFS objects")
+            if hashlib.sha256(ink.read_bytes()).hexdigest() != s["ink"]["sha256"]:
+                raise ValueError(f"{aid}: ink derivative differs from its selection record")
+        print(f"PASS: {len(sels)} generated ink derivatives match SELECTIONS.json")
 
 
 if __name__ == "__main__":

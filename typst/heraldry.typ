@@ -272,6 +272,8 @@
 // A paragraph that is only a bold label acts as a minor heading: keep it with what follows.
 #let runin(body) = block(sticky: true, above: 6pt, below: 6pt, body)
 #let flavour(body) = block(above: 4pt, below: 8pt, body)
+// generated pen-and-ink spot art (transparent ink, so the page substrate shows through)
+#let spotart(path, w) = block(width: 100%, above: 4pt, below: 2pt, breakable: false, align(center, image(path, width: w)))
 
 #let example(body, pre: none) = block(width: 100%, above: 8pt, below: 10pt, breakable: true,
   stroke: (left: 1pt + ink), inset: (left: 8pt, top: 2pt, bottom: 2pt, right: 0pt))[
