@@ -1,0 +1,66 @@
+name: Generate pen-and-ink artwork
+# Owner decision 2026-10-08: automated Gemini image generation for every catalog entry.
+# Requires the repository secret GEMINI_API_KEY. Spend is capped by config/art_style.json.
+on:
+  workflow_dispatch:
+    inputs:
+      phase:
+        description: 'plan | anchors | batch'
+        required: true
+        default: batch
+      family:
+        description: 'Optional space-separated families (e.g. "monster climate")'
+        required: false
+        default: ''
+      limit:
+        description: 'Maximum entries this run (0 = all pending)'
+        required: false
+        default: '0'
+permissions:
+  contents: write
+concurrency:
+  group: generate-art
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image library
+        run: python -m pip install pillow==12.3.0
+      - name: Fetch artwork masters (inspiration and anchors)
+        run: |
+          git lfs install --local
+          git lfs pull --include="assets/art/incoming/*.png,assets/art/masters/*.png" --exclude=""
+      - name: Configure commit identity
+        run: |
+          git config user.name "heraldry-art-bot"
+          git config user.email "heraldry-art-bot@users.noreply.github.com"
+      - name: Generate
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PHASE: ${{ inputs.phase }}
+          FAMILY: ${{ inputs.family }}
+          LIMIT: ${{ inputs.limit }}
+        run: |
+          case "$PHASE" in
+            plan)    python tools/art_generate.py plan ;;
+            anchors) python tools/art_generate.py anchors --commit-every 1 ;;
+            batch)   python tools/art_generate.py batch --commit-every 10 --max-minutes 320 --limit "$LIMIT" ${FAMILY:+--family $FAMILY} ;;
+            *) echo "unknown phase"; exit 1 ;;
+          esac
+          python tools/art_generate.py sheet || true
+      - name: Keep candidates and contact sheets
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: art-candidates-${{ github.run_id }}
+          path: build/art/
+          retention-days: 30
+          if-no-files-found: ignore

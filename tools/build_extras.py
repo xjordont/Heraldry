@@ -10,6 +10,21 @@ from manuscript import version, pdf_epoch
 from parse_source import plain  # noqa: E402
 
 
+def cover_art():
+    """Generated ink cover art when selected, else the original master; fits 4.8 x 3.67 in at <= native 300 ppi."""
+    from PIL import Image
+    from build_book import load_spot_art
+    _, ids = load_spot_art()
+    if "ART-COVER-002" in ids:
+        rel, w = ids["ART-COVER-002"]
+        wpx, hpx = Image.open(ROOT / rel[3:]).size
+        h = w * hpx / wpx
+        if h > 3.667:
+            w, h = w * 3.667 / h, 3.667
+        return {"path": rel, "w_in": round(w, 3), "h_in": round(h, 3)}
+    return {"path": "../assets/art/incoming/ART-COVER-001.png", "w_in": 4.767, "h_in": 3.667}
+
+
 def cover_data():
     m = json.loads((ROOT / "build/blocks.json").read_text())
     blocks = {}
@@ -32,7 +47,7 @@ def cover_data():
         txt = plain(blocks[bid]["c"])
         facts.append(txt if take is None else txt.split(". ")[0] + ".")
     data = {"title": [t1, t2], "subtitle": plain(fr[1]["c"]), "version": plain(fr[2]["c"]),
-            "lead": lead, "facts": facts, "source_blocks": ["h-heraldry-skirmish-the-dying-lands", "B00003", "B00005", "B00163", "B00169", "B00173", "B00175"]}
+            "lead": lead, "facts": facts, "art": cover_art(), "source_blocks": ["h-heraldry-skirmish-the-dying-lands", "B00003", "B00005", "B00163", "B00169", "B00173", "B00175"]}
     (ROOT / "build/cover.json").write_text(json.dumps(data, ensure_ascii=False, indent=1))
     return data
 
