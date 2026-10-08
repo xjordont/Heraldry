@@ -1,0 +1,256 @@
+{
+ "ART-CLI-THE-GREENMARK": {
+  "family": "climate",
+  "title": "The Greenmark",
+  "heading_id": "h-the-greenmark",
+  "replaces": null,
+  "spec_sha256": "51a918af38159abbb5bdcd015c3aecbb93a344d1a75a484adb76af8cce0b7225",
+  "prompt_sha256": "70cf22509916a7e1ae7eb1d4e5886ef052a0274421791ac6e7c279a8ec2fed1f",
+  "prompt": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.\n\nThe attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.\n\nFORMAT: Landscape that captures the climate's defining terrain, ruin and danger, with one or two tiny figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame. Aspect ratio 3:2.\n\nSUBJECT: \"The Greenmark\" (1.3 The Dying Lands / 1.3.2 The Six Climates of Ruin). Depict this faithfully, inventing nothing that contradicts it:\n\n\"The Greenmark is the great temperate forest of the surviving world. It is larger than the maps. Roots take a road within a season and make the mile-stones useless. Travellers report trees shifting at the edge of sight, upright hounds between trunks, and grove-circles where moss stays warm after snow. Foresters cut warning signs into bark for those who know how to read them. The most common sign means turn back even if the voice ahead is your own. The forest is no wilderness. It is a country that does not recognize human law.\"\n\nNo lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
+  "model": "gemini-nano-banana-2.1",
+  "judge_model": "gemini-3-flash-preview",
+  "round": 1,
+  "candidate": "r1c1.png",
+  "judge": {
+   "index": 1,
+   "style_match": 9,
+   "subject_fidelity": 9,
+   "craft": 9,
+   "defects": [],
+   "overall": 9.0
+  },
+  "status": "anchor-proposed",
+  "generated_at": "2026-10-08T12:28:55+00:00",
+  "master": {
+   "path": "assets/art/masters/ART-CLI-THE-GREENMARK.png",
+   "sha256": "e998f84194a6a154e373049adfd3a94383d4167b69815d3d27a86a9e8e55b9ec",
+   "px": [
+    1264,
+    848
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLI-THE-GREENMARK.png",
+   "sha256": "ee6d87696f2e4301d8186ecc82659e8512c2e8fe560fdfed38961717ad5fadc5",
+   "px": [
+    1207,
+    798
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.023
+  },
+  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn."
+ },
+ "ART-BAS-GREYTHORN": {
+  "family": "bastion",
+  "title": "Greythorn",
+  "heading_id": "h-greythorn",
+  "replaces": null,
+  "spec_sha256": "31fe0e2edd06d54e58896813b8f9559471e5dfad7ea63c49a4f53d4edf5b67d5",
+  "prompt_sha256": "6f6b810ff06f1205ee5abd029a5278e2ae310a7ea11a955e49dcbe8677d31f6a",
+  "prompt": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.\n\nThe attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.\n\nFORMAT: The town or fortress seen from its approach road, with its defining feature unmistakable and tiny figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame. Aspect ratio 3:2.\n\nSUBJECT: \"Greythorn\" (1.3 The Dying Lands / 1.3.3 The Six Bastions). Depict this faithfully, inventing nothing that contradicts it:\n\n\"Greythorn is a timber-walled town among ancient oaks at the last surviving crossroads of the western forest road. It endures because it pays the forest. Each autumn, tithe-bundles are left at the standing stones. Each spring, the gate-wardens count the foresters who returned, then count the tools of those who did not.\"\n\nNo lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
+  "model": "gemini-nano-banana-2.1",
+  "judge_model": "gemini-3-flash-preview",
+  "round": 1,
+  "candidate": "r1c4.png",
+  "judge": {
+   "index": 4,
+   "style_match": 8,
+   "subject_fidelity": 10,
+   "craft": 9,
+   "defects": [
+    "vignette"
+   ],
+   "overall": 9.0
+  },
+  "status": "anchor-proposed",
+  "generated_at": "2026-10-08T12:29:46+00:00",
+  "master": {
+   "path": "assets/art/masters/ART-BAS-GREYTHORN.png",
+   "sha256": "698801f6c22ea8c164ee3bc2342a6325bc3b5a755d2b52485c959feb1d1790af",
+   "px": [
+    1264,
+    848
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAS-GREYTHORN.png",
+   "sha256": "820199bd2135441db5cbc909bfea9b11715d52289425a0634f705174757ebe6f",
+   "px": [
+    1209,
+    761
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.03
+  },
+  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn."
+ },
+ "ART-ANC-DWARF": {
+  "family": "ancestry",
+  "title": "Dwarf",
+  "heading_id": "h-dwarf",
+  "replaces": null,
+  "spec_sha256": "f724191edb841540c718dd594dc49ab61717d399b352cc2e2a226aefc9e8aaca",
+  "prompt_sha256": "d765682ebf770a775d15670bcced7759887f3bfc91ee7978b83a0f4b51585e4f",
+  "prompt": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.\n\nThe attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.\n\nFORMAT: Single full-length adventurer of this ancestry in travel-worn gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery. Aspect ratio 3:4.\n\nSUBJECT: \"Dwarf\" (6. Your Adventuring Party / 6.9 Ancestries). Depict this faithfully, inventing nothing that contradicts it:\n\n\"Dwarves are cut from sealed stone halls, old grudges, and craft traditions older than most fallen kingdoms. Hardship did not sour them so much as harden them, and little in this world meets one of them head-on and walks away whole.\"\n\nNo lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
+  "model": "gemini-nano-banana-2.1",
+  "judge_model": "gemini-3-flash-preview",
+  "round": 1,
+  "candidate": "r1c4.png",
+  "judge": {
+   "index": 4,
+   "style_match": 9,
+   "subject_fidelity": 10,
+   "craft": 9,
+   "defects": [],
+   "overall": 9
+  },
+  "status": "anchor-proposed",
+  "generated_at": "2026-10-08T12:33:41+00:00",
+  "master": {
+   "path": "assets/art/masters/ART-ANC-DWARF.png",
+   "sha256": "77742a0ba4f111614972c44f2d945914ef8568f6b8218c0c17b69a813082d092",
+   "px": [
+    896,
+    1200
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-DWARF.png",
+   "sha256": "ea9a05b477e01de2021ac397af4150ff8d969298da510c6a7c8a465cdfd5faee",
+   "px": [
+    811,
+    1058
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.703
+  },
+  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn."
+ },
+ "ART-CLA-FIGHTER": {
+  "family": "class",
+  "title": "Fighter",
+  "heading_id": "h-fighter-15-complexity",
+  "replaces": null,
+  "spec_sha256": "cf59dd27dc7755ce1123649efb1443fc140738e4145f62fb708fe46800e80720",
+  "prompt_sha256": "fe0fc13ff56c417f897416cf40a779f75d99b6aae50168216fe3cbc44977545f",
+  "prompt": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.\n\nThe attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.\n\nFORMAT: Single full-length adventurer in an action-ready pose with class-typical arms and gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery. Aspect ratio 3:4.\n\nSUBJECT: \"Fighter\" (6. Your Adventuring Party / 6.13 Hero Classes). Depict this faithfully, inventing nothing that contradicts it:\n\n\"A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when holding it is the only thing that matters. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does.\"\n\nNo lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
+  "model": "gemini-nano-banana-2.1",
+  "judge_model": "gemini-3-flash-preview",
+  "round": 1,
+  "candidate": "r1c1.png",
+  "judge": {
+   "index": 1,
+   "style_match": 9,
+   "subject_fidelity": 10,
+   "craft": 9,
+   "defects": [],
+   "overall": 9
+  },
+  "status": "anchor-proposed",
+  "generated_at": "2026-10-08T12:34:22+00:00",
+  "master": {
+   "path": "assets/art/masters/ART-CLA-FIGHTER.png",
+   "sha256": "a44a5fe7267e4ba6c6ebe1d057289e367b71f0e1644df901f04122dc1917cf8e",
+   "px": [
+    896,
+    1200
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-FIGHTER.png",
+   "sha256": "856d6df2e17770a8325d92117b1b3d1394b275a559f1cbe7473bfb18e0c0ba74",
+   "px": [
+    822,
+    1068
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.74
+  },
+  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn."
+ },
+ "ART-MON-GIANT-TARANTULA": {
+  "family": "monster",
+  "title": "Giant Tarantula",
+  "heading_id": "h-giant-tarantula-skirmisher",
+  "replaces": null,
+  "spec_sha256": "8b17d0aa3d17ac154b0b4fa66d5a6e5c2adf085a7457ddb36449ae693d9e15f8",
+  "prompt_sha256": "1a420d9f24d30aafbf175f6e4e4d04d1bcc612723813bd2a2b8c29f49163855d",
+  "prompt": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.\n\nThe attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.\n\nFORMAT: Single creature, full body, three-quarter view, in a characteristic menacing pose; a small human figure for scale only if the creature is Large or Huge. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery. Aspect ratio 1:1.\n\nSUBJECT: the creature called \"Giant Tarantula\" (9.7 The Bestiary / Greenmark Bestiary). Size: Small: smaller than a human. Depict it faithfully from this description, inventing nothing that contradicts it:\n\n\"A hand-span of bristled legs around a body the size of a war helm, the giant tarantula stalks the Greenmark's leaf litter on stilted, deliberate steps. Its fangs weep a venom that turns a victim's muscles to wet rope. It spins no snares, preferring to run prey down and pin it where it falls. Foragers keep one eye on the canopy, because the largest specimens hunt from above and drop.\"\n\nNo lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
+  "model": "gemini-nano-banana-2.1",
+  "judge_model": "gemini-3-flash-preview",
+  "round": 1,
+  "candidate": "r1c2.png",
+  "judge": {
+   "index": 2,
+   "style_match": 7,
+   "subject_fidelity": 6,
+   "craft": 6,
+   "defects": [],
+   "overall": 7
+  },
+  "status": "anchor-proposed",
+  "generated_at": "2026-10-08T12:38:00+00:00",
+  "master": {
+   "path": "assets/art/masters/ART-MON-GIANT-TARANTULA.png",
+   "sha256": "3cc02055aaa66d81b1139731a1fa6365d2a88b9a5840295f489fec0daab4038a",
+   "px": [
+    1024,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-GIANT-TARANTULA.png",
+   "sha256": "b85334b05c5a24f3bd389aa969e51c2f0ce29c201776481a7dede0718bf59333",
+   "px": [
+    1011,
+    875
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.37
+  },
+  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn."
+ },
+ "ART-MON-UNDEAD-CHAMPION": {
+  "family": "monster",
+  "title": "Undead Champion",
+  "heading_id": "h-undead-champion-soldier",
+  "replaces": null,
+  "spec_sha256": "7cbe8beb02fb8344d982302d3fdd311cecd95644ec86de3f7f1c060379aadfb2",
+  "prompt_sha256": "dc25ef5aebd52ee8fb83f6ce8a5e0d129e13de140e2f2350e5da9eed79e659df",
+  "prompt": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.\n\nThe attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.\n\nFORMAT: Single creature, full body, three-quarter view, in a characteristic menacing pose; a small human figure for scale only if the creature is Large or Huge. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery. Aspect ratio 1:1.\n\nSUBJECT: the creature called \"Undead Champion\" (9.7 The Bestiary / Ashlands Bestiary). Size: Medium: about human-sized. Depict it faithfully from this description, inventing nothing that contradicts it:\n\n\"Raised from the largest corpses the Ashlands could muster, the undead champion is a slab of dead muscle swinging a maul of fused bone. Each blow lands with siege-engine weight and rattles whatever stands beside the thing it struck. It is slow, single-minded, and almost impossible to put off its feet. Where it walks, the lesser dead come on in its wake.\"\n\nNo lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
+  "model": "gemini-nano-banana-2.1",
+  "judge_model": "gemini-3-flash-preview",
+  "round": 1,
+  "candidate": "r1c3.png",
+  "judge": {
+   "index": 3,
+   "style_match": 10,
+   "subject_fidelity": 10,
+   "craft": 10,
+   "defects": [],
+   "overall": 10
+  },
+  "status": "anchor-proposed",
+  "generated_at": "2026-10-08T12:38:35+00:00",
+  "master": {
+   "path": "assets/art/masters/ART-MON-UNDEAD-CHAMPION.png",
+   "sha256": "4e6e44b98a217b3a8a8a9f44503c7df4aa37a6a6243cf3aa944c514dd272e67c",
+   "px": [
+    1024,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-UNDEAD-CHAMPION.png",
+   "sha256": "29a877bcabbfafc81f9fdc78540f4608152fc816ab287f76a874806000355b70",
+   "px": [
+    929,
+    911
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.097
+  },
+  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn."
+ }
+}
