@@ -74,11 +74,27 @@ def prompt_for(e, with_refs):
 
 
 # ------------------------------------------------------------------ API
+_key = None
+
+
 def key():
-    k = os.environ.get("GEMINI_API_KEY", "")
-    if not k:
+    """Bare API key from the secret. Tolerates surrounding whitespace/quotes, a NAME=value line
+    or a JSON object holding the key; never prints any part of it."""
+    global _key
+    if _key:
+        return _key
+    raw = os.environ.get("GEMINI_API_KEY", "")
+    if not raw.strip():
         raise SystemExit("GEMINI_API_KEY is not set (add it as a repository secret)")
-    return k
+    import re
+    found = re.findall(r"AIza[0-9A-Za-z_\-]{30,}", raw)
+    if found:
+        _key = found[0]
+    elif '"private_key"' in raw or '"type": "service_account"' in raw:
+        raise SystemExit("GEMINI_API_KEY holds a service-account JSON; store a Gemini API key from Google AI Studio instead")
+    else:
+        _key = raw.strip().split("=", 1)[-1].strip().strip("'\"")
+    return _key
 
 
 def call(method, path, body=None, timeout=300):
