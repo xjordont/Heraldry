@@ -11,7 +11,8 @@ DIST = ROOT / "dist"
 INCLUDE = ["Makefile", "requirements.lock", "README.md", "README_SETUP.md", "BUILD.md", "CLAUDE.md",
            "MASTER_PROMPT.md", ".gitignore", ".claude", ".github", "tests", "references",
            "source", "editorial", "typst", "tools", "figures", "fonts", "config", "docs", "assets", "production", "dist"]
-EXCLUDE_PARTS = {"__pycache__", "test", "private", ".git", "build", "overscan"}
+# style = owner-supplied generation references (never packaged); masters = raw generated art (ink derivatives ship)
+EXCLUDE_PARTS = {"__pycache__", "test", "private", ".git", "build", "overscan", "style", "masters"}
 EXCLUDE_NAMES = {"content.typ", "SHA256SUMS.txt", "package-audit.json"}
 
 
