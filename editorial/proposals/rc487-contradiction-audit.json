@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "status": "proposed",
+  "source_revision": 486,
+  "source_sha256": "5da05cec6153ac11865874a0da416c002ce90b2dc4936fc9ce50abca9d3dbbe5",
+  "scope": "Nine unique copy/name repairs and four exact table replacements. No design choices or invented example rolls.",
+  "authorization": "Audit and proposal only. Not authorized for promotion. Each patch remains proposed.",
+  "patches": [
+    {
+      "id": "CA-01",
+      "status": "proposed",
+      "finding": "F01",
+      "decision_class": "copy_alignment",
+      "issue": "Spot summaries omit the higher SPI option",
+      "find": "| **Spot** | 1 AP | Make an **INT Check** to reveal one eligible **Hidden** enemy combatant. |",
+      "replace": "| **Spot** | 1 AP | Make an **INT Check** or **SPI Check** against **12**, whichever is higher, to reveal one eligible **Hidden** enemy combatant. |",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-02",
+      "status": "proposed",
+      "finding": "F01",
+      "decision_class": "copy_alignment",
+      "issue": "Spot summaries omit the higher SPI option",
+      "find": "**Spot:** A universal action. Choose one **Hidden** enemy within **12\"** and **LOS**. **Spot** may choose a **Hidden** combatant despite the targeting restriction in **5.9**. Make an **INT Check** against **12**, with **Disadvantage** if that enemy has **Cover**. On success, that enemy loses **Hidden**. **Spot** does not remove **Invisible** unless a rule says otherwise.",
+      "replace": "**Spot:** A universal action. Choose one **Hidden** enemy within **12\"** and **LOS**. **Spot** may choose a **Hidden** combatant despite the targeting restriction in **5.9**. Make an **INT Check** or **SPI Check** against **12**, whichever is higher, with **Disadvantage** if that enemy has **Cover**. On success, that enemy loses **Hidden**. **Spot** does not remove **Invisible** unless a rule says otherwise.",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-03",
+      "status": "proposed",
+      "finding": "F02",
+      "decision_class": "copy_alignment",
+      "issue": "DEX Pen glossary says damage is unaffected",
+      "find": "**DEX Pen:** The **DEX** penalty listed by a piece of armour or a shield. It applies to **DEX Checks** and to any rule that uses the **DEX** modifier, and it does not reduce damage. See **7.10**.",
+      "replace": "**DEX Pen:** The **DEX** penalty listed by a piece of armour or a shield. It applies to the result of the wearer's **DEX Checks**, including **Dodge**, and to any damage total or other value that adds the wearer's **DEX**. See **7.10**.",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-04",
+      "status": "proposed",
+      "finding": "F03",
+      "decision_class": "copy_alignment",
+      "issue": "Impassable Terrain summaries omit the Cover exception",
+      "find": "| **Impassable Terrain** | Cannot be entered, moved through, or ended in. Provides **Cover**. Does not block **LOS**. | **2.9.1** |",
+      "replace": "| **Impassable Terrain** | Cannot be entered, moved through, or ended in. Provides **Cover** unless its terrain entry says otherwise. Does not block **LOS**. | **2.9.1** |",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-05",
+      "status": "proposed",
+      "finding": "F03",
+      "decision_class": "copy_alignment",
+      "issue": "Impassable Terrain summaries omit the Cover exception",
+      "find": "**Impassable Terrain:** Terrain that cannot be entered, moved through, or ended in. It provides **Cover**. It does not block **LOS**.",
+      "replace": "**Impassable Terrain:** Terrain that cannot be entered, moved through, or ended in. It provides **Cover** unless its terrain entry says otherwise. It does not block **LOS**.",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-06",
+      "status": "proposed",
+      "finding": "F04",
+      "decision_class": "copy_alignment",
+      "issue": "9.5 allegiance summary omits same-Group allies",
+      "find": "- Unless a scenario says otherwise, neutral Monster Groups treat other neutral Monster Groups as allies and every party combatant as an enemy. A Monster that is **hostile to all** treats every other combatant as an enemy.",
+      "replace": "- Unless a scenario says otherwise, neutral Monster Groups treat other neutral Monster Groups as allies and every party combatant as an enemy. A Monster that is **hostile to all** treats every other combatant, including Monsters from other Groups, as an enemy. Monsters in the same Group remain allied to one another unless a rule explicitly says otherwise.",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-07",
+      "status": "proposed",
+      "finding": "F05",
+      "decision_class": "copy_alignment",
+      "issue": "C.13 AI flow continues after a valid AI Step",
+      "find": "4. Evaluate numbered **AI Steps** in ascending order. For a step marked **on d6 N+**, roll **1d6** and require **N** or higher. Resolve the first valid step.",
+      "replace": "4. Evaluate numbered **AI Steps** in ascending order. For a step marked **on d6 N+**, roll **1d6** and require **N** or higher. Resolve the first valid step. Resolving a valid step ends the activation unless that step explicitly says it continues. If no step is valid, proceed to step 5.",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-08",
+      "status": "proposed",
+      "finding": "F13",
+      "decision_class": "copy_alignment",
+      "issue": "Two solo objective fields use names absent from their scenario objects",
+      "find": "**Solo/Co-op Objective:** Extract the Central Lens, at least 1 Lesser Fragment, and at least half the party through any battlefield edge as defined in **10.6.10**.",
+      "replace": "**Solo/Co-op Objective:** Extract the Star Lens, at least 1 Bronze Orrery Fragment, and at least half the party through any battlefield edge as defined in **10.6.10**.",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-09",
+      "status": "proposed",
+      "finding": "F13",
+      "decision_class": "copy_alignment",
+      "issue": "Two solo objective fields use names absent from their scenario objects",
+      "find": "**Solo/Co-op Objective:** Move the Cartographer's Map off the battlefield through the edge opposite its starting edge, then extract at least half the party through that edge as defined in **10.6.10**.",
+      "replace": "**Solo/Co-op Objective:** Move the Survey Map off the battlefield through the edge opposite its starting edge, then extract at least half the party through that edge as defined in **10.6.10**.",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-10",
+      "status": "proposed",
+      "finding": "F06",
+      "decision_class": "confirm_uniform_enhanced_valuation",
+      "issue": "Fifteen enhanced-table values differ from the quality formula",
+      "find": "| d20 | Item | Value (c) |\n| ---: | --- | ---: |\n| 1 | Masterwork Buckler | 3 |\n| 2 | Masterwork Main-Gauche | 10 |\n| 3 | Masterwork Targe | 6 |\n| 4 | Masterwork Spiked Targe | 13 |\n| 5 | Masterwork Round Shield | 7 |\n| 6 | Masterwork Heater Shield | 13 |\n| 7 | Masterwork Kite Shield | 21 |\n| 8 | Silvered Buckler | 3 |\n| 9 | Silvered Main-Gauche | 10 |\n| 10 | Silvered Targe | 6 |\n| 11 | Silvered Spiked Targe | 13 |\n| 12 | Silvered Round Shield | 7 |\n| 13 | Silvered Heater Shield | 13 |\n| 14 | Silvered Kite Shield | 21 |\n| 15 | Cold Iron Buckler | 3 |\n| 16 | Cold Iron Main-Gauche | 10 |\n| 17 | Cold Iron Targe | 6 |\n| 18 | Cold Iron Spiked Targe | 13 |\n| 19 | Deflecting Main-Gauche | 14 |\n| 20 | Vanguard's Targe | 11 |",
+      "replace": "| d20 | Item | Value (c) |\n| ---: | --- | ---: |\n| 1 | Masterwork Buckler | 3 |\n| 2 | Masterwork Main-Gauche | 10 |\n| 3 | Masterwork Targe | 6 |\n| 4 | Masterwork Spiked Targe | 12 |\n| 5 | Masterwork Round Shield | 7 |\n| 6 | Masterwork Heater Shield | 13 |\n| 7 | Masterwork Kite Shield | 18 |\n| 8 | Silvered Buckler | 3 |\n| 9 | Silvered Main-Gauche | 10 |\n| 10 | Silvered Targe | 6 |\n| 11 | Silvered Spiked Targe | 12 |\n| 12 | Silvered Round Shield | 7 |\n| 13 | Silvered Heater Shield | 13 |\n| 14 | Silvered Kite Shield | 18 |\n| 15 | Cold Iron Buckler | 3 |\n| 16 | Cold Iron Main-Gauche | 10 |\n| 17 | Cold Iron Targe | 6 |\n| 18 | Cold Iron Spiked Targe | 12 |\n| 19 | Deflecting Main-Gauche | 14 |\n| 20 | Vanguard's Targe | 11 |",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-11",
+      "status": "proposed",
+      "finding": "F06",
+      "decision_class": "confirm_uniform_enhanced_valuation",
+      "issue": "Fifteen enhanced-table values differ from the quality formula",
+      "find": "| d20 | Item | Value (c) |\n| ---: | --- | ---: |\n| 1 | Masterwork Round Shield | 7 |\n| 2 | Masterwork Heater Shield | 13 |\n| 3 | Masterwork Kite Shield | 21 |\n| 4 | Masterwork Wall Shield | 24 |\n| 5 | Silvered Round Shield | 7 |\n| 6 | Silvered Heater Shield | 13 |\n| 7 | Silvered Kite Shield | 21 |\n| 8 | Silvered Wall Shield | 24 |\n| 9 | Cold Iron Round Shield | 7 |\n| 10 | Cold Iron Heater Shield | 13 |\n| 11 | Cold Iron Kite Shield | 21 |\n| 12 | Cold Iron Wall Shield | 24 |\n| 13 | Sacred Round Shield | 10 |\n| 14 | Sacred Heater Shield | 18 |\n| 15 | Palesteel Round Shield | 10 |\n| 16 | Palesteel Heater Shield | 18 |\n| 17 | Palesteel Kite Shield | 28 |\n| 18 | Brawler's Spiked Targe | 23 |\n| 19 | Arrow-Catcher Round Shield | 24 |\n| 20 | Palesteel Wall Shield | 32 |",
+      "replace": "| d20 | Item | Value (c) |\n| ---: | --- | ---: |\n| 1 | Masterwork Round Shield | 7 |\n| 2 | Masterwork Heater Shield | 13 |\n| 3 | Masterwork Kite Shield | 18 |\n| 4 | Masterwork Wall Shield | 24 |\n| 5 | Silvered Round Shield | 7 |\n| 6 | Silvered Heater Shield | 13 |\n| 7 | Silvered Kite Shield | 18 |\n| 8 | Silvered Wall Shield | 24 |\n| 9 | Cold Iron Round Shield | 7 |\n| 10 | Cold Iron Heater Shield | 13 |\n| 11 | Cold Iron Kite Shield | 18 |\n| 12 | Cold Iron Wall Shield | 24 |\n| 13 | Sacred Round Shield | 10 |\n| 14 | Sacred Heater Shield | 18 |\n| 15 | Palesteel Round Shield | 10 |\n| 16 | Palesteel Heater Shield | 18 |\n| 17 | Palesteel Kite Shield | 24 |\n| 18 | Brawler's Spiked Targe | 23 |\n| 19 | Arrow-Catcher Round Shield | 24 |\n| 20 | Palesteel Wall Shield | 32 |",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-12",
+      "status": "proposed",
+      "finding": "F06",
+      "decision_class": "confirm_uniform_enhanced_valuation",
+      "issue": "Fifteen enhanced-table values differ from the quality formula",
+      "find": "| d20 | Item | Value (c) |\n| ---: | --- | ---: |\n| 1 | Masterwork Kite Shield | 21 |\n| 2 | Masterwork Tower Shield | 31 |\n| 3 | Masterwork Pavise | 45 |\n| 4 | Sacred Heater Shield | 18 |\n| 5 | Sacred Kite Shield | 28 |\n| 6 | Sacred Wall Shield | 32 |\n| 7 | Palesteel Heater Shield | 18 |\n| 8 | Palesteel Kite Shield | 28 |\n| 9 | Palesteel Tower Shield | 42 |\n| 10 | Palesteel Pavise | 60 |\n| 11 | Brawler's Spiked Targe | 23 |\n| 12 | Arrow-Catcher Round Shield | 24 |\n| 13 | Spell-Guard Heater Shield | 44 |\n| 14 | Sun-Crest Kite Shield | 44 |\n| 15 | Silvered Tower Shield | 31 |\n| 16 | Cold Iron Tower Shield | 31 |\n| 17 | Silvered Pavise | 45 |\n| 18 | Cold Iron Pavise | 45 |\n| 19 | Sacred Tower Shield | 42 |\n| 20 | Palesteel Wall Shield | 32 |",
+      "replace": "| d20 | Item | Value (c) |\n| ---: | --- | ---: |\n| 1 | Masterwork Kite Shield | 18 |\n| 2 | Masterwork Tower Shield | 31 |\n| 3 | Masterwork Pavise | 45 |\n| 4 | Sacred Heater Shield | 18 |\n| 5 | Sacred Kite Shield | 24 |\n| 6 | Sacred Wall Shield | 32 |\n| 7 | Palesteel Heater Shield | 18 |\n| 8 | Palesteel Kite Shield | 24 |\n| 9 | Palesteel Tower Shield | 42 |\n| 10 | Palesteel Pavise | 60 |\n| 11 | Brawler's Spiked Targe | 23 |\n| 12 | Arrow-Catcher Round Shield | 24 |\n| 13 | Spell-Guard Heater Shield | 44 |\n| 14 | Sun-Crest Kite Shield | 44 |\n| 15 | Silvered Tower Shield | 31 |\n| 16 | Cold Iron Tower Shield | 31 |\n| 17 | Silvered Pavise | 45 |\n| 18 | Cold Iron Pavise | 45 |\n| 19 | Sacred Tower Shield | 42 |\n| 20 | Palesteel Wall Shield | 32 |",
+      "expected_count": 1
+    },
+    {
+      "id": "CA-13",
+      "status": "proposed",
+      "finding": "F06",
+      "decision_class": "confirm_uniform_enhanced_valuation",
+      "issue": "Fifteen enhanced-table values differ from the quality formula",
+      "find": "| d20 | Item | Value (c) |\n| ---: | --- | ---: |\n| 1 | Enchanted +4 Flamberge | 78 |\n| 2 | Enchanted +4 Zweihander | 84 |\n| 3 | Enchanted +4 Greathammer | 66 |\n| 4 | Enchanted +4 Greatscythe | 76 |\n| 5 | Enchanted +4 Repeating Crossbow | 66 |\n| 6 | Enchanted +4 Greatbow | 62 |\n| 7 | Enchanted +5 Battleaxe | 68 |\n| 8 | Enchanted +5 Longbow | 67 |\n| 9 | Enchanted +5 Greathammer | 80 |\n| 10 | Enchanted +5 Flamberge | 92 |\n| 11 | Enchanted +5 Greatbow | 76 |\n| 12 | Enchanted +5 Zweihander | 98 |\n| 13 | Enchanted +5 Greatscythe | 90 |\n| 14 | Enchanted +5 Repeating Crossbow | 80 |\n| 15 | Adamantine Battleaxe | 72 |\n| 16 | Adamantine War Maul | 96 |\n| 17 | Adamantine Poleaxe | 96 |\n| 18 | Adamantine Greathammer | 120 |\n| 19 | Adamantine Greatbow | 104 |\n| 20 | Adamantine Repeating Crossbow | 120 |",
+      "replace": "| d20 | Item | Value (c) |\n| ---: | --- | ---: |\n| 1 | Enchanted +4 Flamberge | 78 |\n| 2 | Enchanted +4 Zweihander | 84 |\n| 3 | Enchanted +4 Greathammer | 66 |\n| 4 | Enchanted +4 Greatscythe | 76 |\n| 5 | Enchanted +4 Repeating Crossbow | 58 |\n| 6 | Enchanted +4 Greatbow | 62 |\n| 7 | Enchanted +5 Battleaxe | 68 |\n| 8 | Enchanted +5 Longbow | 67 |\n| 9 | Enchanted +5 Greathammer | 80 |\n| 10 | Enchanted +5 Flamberge | 92 |\n| 11 | Enchanted +5 Greatbow | 76 |\n| 12 | Enchanted +5 Zweihander | 98 |\n| 13 | Enchanted +5 Greatscythe | 90 |\n| 14 | Enchanted +5 Repeating Crossbow | 72 |\n| 15 | Adamantine Battleaxe | 72 |\n| 16 | Adamantine War Maul | 96 |\n| 17 | Adamantine Poleaxe | 96 |\n| 18 | Adamantine Greathammer | 120 |\n| 19 | Adamantine Greatbow | 104 |\n| 20 | Adamantine Repeating Crossbow | 88 |",
+      "expected_count": 1
+    }
+  ]
+}
