@@ -1,0 +1,1135 @@
+{
+  "schema": 1,
+  "date": "2026-10-09",
+  "repository": "xjordont/Heraldry",
+  "base_commit": "0c96b1ea6f91e109cf940d66d853e60e14d63738",
+  "source": {
+    "path": "source/Heraldry_RC486.md",
+    "revision": 486,
+    "sha256": "5da05cec6153ac11865874a0da416c002ce90b2dc4936fc9ce50abca9d3dbbe5",
+    "bytes": 1451198,
+    "lines": 17969
+  },
+  "review_status": "COMPLETE",
+  "semantic_clearance": "OPEN_FINDINGS",
+  "source_changed": false,
+  "findings": [
+    {
+      "id": "F01",
+      "title": "Spot summaries omit the higher SPI option",
+      "category": "summary",
+      "severity": "minor",
+      "disposition": "exact_copy_repair",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "| **Spot** | 1 AP |",
+          "matches": [
+            {
+              "line": 1217,
+              "text": "| **Spot** | 1 AP | Make an **INT Check** to reveal one eligible **Hidden** enemy combatant. |"
+            }
+          ]
+        },
+        {
+          "label": "**Spot:** A universal action.",
+          "matches": [
+            {
+              "line": 17717,
+              "text": "**Spot:** A universal action. Choose one **Hidden** enemy within **12\"** and **LOS**. **Spot** may choose a **Hidden** combatant despite the targeting restriction in **5.9**. Make an **INT Check** against **12**, with **Disadvantage** if that enemy has **Cover**. On success, that enemy loses **Hidden**. **Spot** does not remove **Invisible** unless a rule says otherwise."
+            }
+          ]
+        },
+        {
+          "label": "#### 4.3.3 Spot",
+          "matches": [
+            {
+              "line": 1254,
+              "text": "#### 4.3.3 Spot [1 AP]"
+            }
+          ]
+        }
+      ],
+      "analysis": "The action table and glossary require INT alone. The full Spot action permits INT or SPI, whichever is higher; C.4 and C.13 already match it. Under 1.6 the full action governs. A SPI-focused Hero following the stale summaries would lose a legal advantage.",
+      "smallest_repair": "Copy the higher-of-INT-or-SPI instruction into those two summaries; do not change DC, AP, range, LOS, Cover, or targeting.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F02",
+      "title": "DEX Pen glossary says damage is unaffected",
+      "category": "summary",
+      "severity": "major",
+      "disposition": "exact_copy_repair",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "**DEX Pen:**",
+          "matches": [
+            {
+              "line": 17496,
+              "text": "**DEX Pen:** The **DEX** penalty listed by a piece of armour or a shield. It applies to **DEX Checks** and to any rule that uses the **DEX** modifier, and it does not reduce damage. See **7.10**."
+            }
+          ]
+        },
+        {
+          "label": "Apply a worn armour's **DEX Pen**",
+          "matches": [
+            {
+              "line": 3677,
+              "text": "Apply a worn armour's **DEX Pen** to the result of the wearer's **DEX Checks**, including **Dodge**, and to any damage total or other value that adds the wearer's **DEX**. If both Chest armour and a shield list a **DEX Pen**, apply only the worse of the two values; **DEX Pen** values do not stack. A worn armour's **Max Speed** caps the combatant's **Speed** while worn."
+            }
+          ]
+        }
+      ],
+      "analysis": "The glossary says DEX Pen does not reduce damage, while 7.10 applies it to damage totals and other values that add DEX. Starter profiles in Appendix B follow 7.10. The glossary can produce inflated ranged/Finesse damage.",
+      "smallest_repair": "Replace the conflicting glossary sentence with the 7.10 scope, including Dodge. Keep the existing armour and shield stacking rules.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F03",
+      "title": "Impassable Terrain summaries omit the Cover exception",
+      "category": "summary",
+      "severity": "minor",
+      "disposition": "exact_copy_repair",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "| **Impassable Terrain** |",
+          "matches": [
+            {
+              "line": 870,
+              "text": "| Low walls, barricades, railings, tables, workbenches, platform supports, fallen pillars, broken columns, statue bases, sarcophagi, altars, pedestals | **Impassable Terrain** | - |"
+            },
+            {
+              "line": 872,
+              "text": "| Chasms and pits | **Impassable Terrain** | They provide no **Cover**. |"
+            },
+            {
+              "line": 1176,
+              "text": "| **Impassable Terrain** | Cannot be entered, moved through, or ended in. Provides **Cover**. Does not block **LOS**. | **2.9.1** |"
+            }
+          ]
+        },
+        {
+          "label": "**Impassable Terrain:**",
+          "matches": [
+            {
+              "line": 17556,
+              "text": "**Impassable Terrain:** Terrain that cannot be entered, moved through, or ended in. It provides **Cover**. It does not block **LOS**."
+            }
+          ]
+        },
+        {
+          "label": "It provides **Cover** unless its terrain entry says otherwise.",
+          "matches": [
+            {
+              "line": 838,
+              "text": "**Impassable Terrain** cannot be entered or moved through, and a combatant cannot end movement overlapping it. It provides **Cover** unless its terrain entry says otherwise. It does not block **LOS**. A combatant may **Jump** over an **Impassable Terrain** feature if the declared landing point is legal, as described in **4.4.9**; they do not enter the feature."
+            }
+          ]
+        }
+      ],
+      "analysis": "The Chapter 4 terrain reference and glossary claim unconditional Cover. RC485 P-02 explicitly made Cover subject to the terrain entry; pits and chasms do not provide it. The authoritative rule already resolves play.",
+      "smallest_repair": "Add “unless its terrain entry says otherwise” to the two summaries. Preserve P-02 and the distinct terrain types/tags.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F04",
+      "title": "9.5 allegiance summary omits same-Group allies",
+      "category": "summary",
+      "severity": "major",
+      "disposition": "exact_copy_repair",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "A Monster that is **hostile to all** treats every other combatant as an enemy.",
+          "matches": [
+            {
+              "line": 7609,
+              "text": "- Unless a scenario says otherwise, neutral Monster Groups treat other neutral Monster Groups as allies and every party combatant as an enemy. A Monster that is **hostile to all** treats every other combatant as an enemy."
+            }
+          ]
+        },
+        {
+          "label": "**Default Monster allegiance:**",
+          "matches": [
+            {
+              "line": 7571,
+              "text": "**Default Monster allegiance:** Unless a scenario says otherwise, all neutral Monster Groups are allied to one another and hostile to every party combatant. They do not target, become **Engaged** with, or wake because of allied Monsters. A Monster or Group that is **hostile to all** treats every other combatant, including Monsters from other Groups, as an enemy. Monsters in the same Group remain allied to one another unless a rule explicitly says otherwise."
+            }
+          ]
+        }
+      ],
+      "analysis": "9.3 preserves allies inside the same Monster Group unless explicitly overridden. 9.5 A omits that exception and can send hostile-to-all Group members against one another. C.8 and the glossary already preserve same-Group allegiance.",
+      "smallest_repair": "Add the same-Group allied exception to 9.5 A, with “unless a rule explicitly says otherwise”.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F05",
+      "title": "C.13 AI flow continues after a valid AI Step",
+      "category": "summary",
+      "severity": "major",
+      "disposition": "exact_copy_repair",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "4. Evaluate numbered **AI Steps**",
+          "matches": [
+            {
+              "line": 17931,
+              "text": "4. Evaluate numbered **AI Steps** in ascending order. For a step marked **on d6 N+**, roll **1d6** and require **N** or higher. Resolve the first valid step."
+            }
+          ]
+        },
+        {
+          "label": "Unless a **Monster** rule explicitly says otherwise, resolving a valid AI Step instruction ends",
+          "matches": [
+            {
+              "line": 7636,
+              "text": "Unless a **Monster** rule explicitly says otherwise, resolving a valid AI Step instruction ends that **Monster's** activation."
+            }
+          ]
+        }
+      ],
+      "analysis": "The numbered quick flow resolves a valid AI Step, then lists ordinary attacks/movement without the stop instruction. 9.5 C–D explicitly ends the activation after a valid step unless continuation is printed. Read as a procedure, C.13 would grant extra actions.",
+      "smallest_repair": "Append the authoritative stop/explicit-continuation instruction to step 4. Do not modify any individual Monster ability.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F06",
+      "title": "Fifteen enhanced-table values differ from the quality formula",
+      "category": "numerical",
+      "severity": "major",
+      "disposition": "valuation_alignment_proposed",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "#### Tier 1 Enhanced Shield Table",
+          "matches": [
+            {
+              "line": 3796,
+              "text": "#### Tier 1 Enhanced Shield Table (d20)"
+            }
+          ]
+        },
+        {
+          "label": "#### Tier 2 Enhanced Shield Table",
+          "matches": [
+            {
+              "line": 3871,
+              "text": "#### Tier 2 Enhanced Shield Table (d20)"
+            }
+          ]
+        },
+        {
+          "label": "#### Tier 3 Enhanced Shield Table",
+          "matches": [
+            {
+              "line": 3946,
+              "text": "#### Tier 3 Enhanced Shield Table (d20)"
+            }
+          ]
+        },
+        {
+          "label": "#### Tier 5 Enhanced Weapon Table",
+          "matches": [
+            {
+              "line": 4040,
+              "text": "#### Tier 5 Enhanced Weapon Table (d20)"
+            }
+          ]
+        },
+        {
+          "label": "Add the listed value adjustment to the base item's cost",
+          "matches": [
+            {
+              "line": 3704,
+              "text": "Add the listed value adjustment to the base item's cost when crafting or purchasing it. After applying all multipliers and flat value adjustments, a finished enhanced weapon, **Chest** armour, or shield has a minimum value set by its quality: **3c** for **Masterwork**, **Silvered**, and **Cold Iron**; **5c** for **Elven**, **Sacred**, and **Palesteel**; and the minimum listed by **Adamantine**. A quality that sets a higher minimum uses that minimum instead. Treasure tables that reference an **Enhanced Weapon Table**, **Enhanced Armour Table**, or **Enhanced Shield Table** grant the finished item shown on that table."
+            }
+          ]
+        }
+      ],
+      "analysis": "A complete scan of quality-prefixed enhanced rows reproduces 15 differences from mundane costs and 7.11 multipliers, flat additions, minima, and rounding. Shield differences concern Spiked Targe and Kite Shield; weapon differences concern Repeating Crossbow. Adamantine Steel Scale at 60c is correct because the armour minimum is 60c and is excluded. Importantly, 7.11 grants the finished item printed on a treasure table, so the discrepancies may be intentional treasure valuations rather than arithmetic mistakes. They should not be silently “fixed” during play.",
+      "smallest_repair": "If one value is intended for purchased/crafted and treasure versions, align only the 15 cells to the existing formula. Exact table replacements are proposed separately from summary/name repairs. Do not change base prices, quality effects, or balance formulas.",
+      "uncertainty": "The source supplies both a formula and finished-item values, but no justification for these particular exceptions. Author intent on separate treasure valuations is unverified."
+    },
+    {
+      "id": "F07",
+      "title": "Fifty Special Weapon rows lack an explicit complete equipment profile",
+      "category": "procedure",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "#### Tier 1 Special Weapons",
+          "matches": [
+            {
+              "line": 4688,
+              "text": "#### Tier 1 Special Weapons (APL 1–2)"
+            }
+          ]
+        },
+        {
+          "label": "#### Tier 2 Special Weapons",
+          "matches": [
+            {
+              "line": 4703,
+              "text": "#### Tier 2 Special Weapons (APL 3–4)"
+            }
+          ]
+        },
+        {
+          "label": "#### Tier 3 Special Weapons",
+          "matches": [
+            {
+              "line": 4718,
+              "text": "#### Tier 3 Special Weapons (APL 5–6)"
+            }
+          ]
+        },
+        {
+          "label": "#### Tier 4 Special Weapons",
+          "matches": [
+            {
+              "line": 4733,
+              "text": "#### Tier 4 Special Weapons (APL 7–8)"
+            }
+          ]
+        },
+        {
+          "label": "#### Tier 5 Legendary Artifact Weapons",
+          "matches": [
+            {
+              "line": 4748,
+              "text": "#### Tier 5 Legendary Artifact Weapons (APL 9–10)"
+            }
+          ]
+        },
+        {
+          "label": "When a named **Special Shield** includes",
+          "matches": [
+            {
+              "line": 4647,
+              "text": "When a named **Special Shield** includes a mundane shield type in its name or in parentheses, it uses that mundane shield's nonmagical rules in addition to the magical rule printed below unless a specific entry says otherwise."
+            }
+          ]
+        }
+      ],
+      "analysis": "The five 7.17 weapon tables list damage/traits/rules but omit Hands, requirements, and numeric ranged/thrown ranges. Elven Bow and other ranged weapons have Ranged without a distance; Ember Dagger and Rime Hatchet have Thrown without a range. Parenthetical/base-type names suggest inheritance, but the explicit inheritance paragraph covers Special Shields only. 7.17.3 shows that some later named weapons do print complete equipment details.",
+      "smallest_repair": "Decide whether these weapons inherit every unmodified mundane profile field. If so, add one explicit inheritance rule with an unambiguous base mapping for each weapon; otherwise add the missing fields. Do not infer new ranges, requirements, or hand counts from names.",
+      "uncertainty": "Intended base mapping is obvious for some entries and not explicit for all 50. Missing requirements could mean none; missing ranged distances still prevent an unambiguous complete profile."
+    },
+    {
+      "id": "F08",
+      "title": "Burning Seal uses an unbounded “maximum possible” Parry value",
+      "category": "procedure",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "**Saint Cael's Burning Seal** |",
+          "matches": [
+            {
+              "line": 4909,
+              "text": "**Saint Cael's Burning Seal** | Cost: **72c** | Damage: 1d10 (H) | Traits: **Parrying** | Req: **STR 4, SPI 4** | Equipment: Hands (Weapon, 1 Hand)"
+            }
+          ]
+        },
+        {
+          "label": "you may treat that roll as its maximum possible value without rolling.",
+          "matches": [
+            {
+              "line": 4913,
+              "text": "**Effect:** This weapon deals **holy** damage. While wielding Saint Cael's Burning Seal, once per adventure when you are within **2\"** of a scenario-marked threshold, bridge, ford, gate, or archway and you apply **AV** or use **Parry** against an **Undead** or **Fiend**, you may treat that roll as its maximum possible value without rolling. Additionally, **Undead** and **Fiends** that attack you while you are within **2\"** of such a threshold suffer **1d6 holy damage** after their attack resolves. While wielding Saint Cael's Burning Seal you may spend **[1 AP]** to end **Cursed** on yourself or one ally within **2\"**."
+            }
+          ]
+        },
+        {
+          "label": "2. If any retained base die shows its maximum value, roll exploding dice.",
+          "matches": [
+            {
+              "line": 1662,
+              "text": "2. If any retained base die shows its maximum value, roll exploding dice. Add the weapon's normal attack modifier to determine the parry total."
+            }
+          ]
+        }
+      ],
+      "analysis": "Parry dice explode recursively under 5.5.3/5.3, so the entire Parry roll has no finite maximum. The item does not state whether only its base die is maximized, whether bonus dice are rolled, or whether Riposte follows. Maximizing a single armour die is finite, but the shared wording does not settle the Parry case.",
+      "smallest_repair": "Specify which die/result is maximized and how explosions and Riposte resolve. Possible policies are maximize retained base dice then roll normal explosions, or supply a finite non-exploding result. Choosing one changes behaviour and requires a decision.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F09",
+      "title": "Two AI charge abilities grant a bonus to an attack they never perform",
+      "category": "procedure",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "**Charging Gore (AI Step 1):**",
+          "matches": [
+            {
+              "line": 8052,
+              "text": "- **Charging Gore (AI Step 1):** Moves their full Speed in a straight line toward the nearest visible enemy; if they end **Engaged**, their **Goring Beak** attack this activation deals an additional **1d8 piercing damage**."
+            }
+          ]
+        },
+        {
+          "label": "**Run Down (AI Step 1):** Moves their full Speed in a straight line",
+          "matches": [
+            {
+              "line": 9473,
+              "text": "- **Run Down (AI Step 1):** Moves their full Speed in a straight line toward the nearest visible enemy; if they end **Engaged**, their **Bone Jaws** attack this activation rolls its base damage die with **Advantage**."
+            }
+          ]
+        },
+        {
+          "label": "Remaining AI Steps are not evaluated once a valid AI Step has resolved.",
+          "matches": [
+            {
+              "line": 7640,
+              "text": "A Monster may have one or more numbered **AI Step** abilities (**AI Step 1**, **AI Step 2**, and upward), listed in ascending priority order. Not every Monster has AI Steps; if a Monster has none, skip this part of the script and proceed with standard Monster AI. When a Monster with AI Steps activates, evaluate them in ascending numerical order. If an AI Step is marked **on d6 N+**, roll **1d6** when that step is evaluated; the step is valid only on a result of **N** or higher. An AI Step is otherwise valid only if its trigger is met and every required target, route, attack, and placement is legal. The first valid AI Step resolves, and the activation ends unless that ability explicitly says it continues. Remaining AI Steps are not evaluated once a valid AI Step has resolved."
+            }
+          ]
+        }
+      ],
+      "analysis": "Gorebeak Bear Charging Gore and Skeletal Beast Run Down move, then modify an attack “this activation”, but neither performs an attack or explicitly continues. Under 9.5, the valid AI Step ends the activation; both bonuses are consequently unused. A different Run Down entry explicitly says “then makes their attacks”, demonstrating a working pattern without proving the intended behaviour for these two.",
+      "smallest_repair": "Choose whether each charge makes the named attack, continues normal AI, or intentionally only moves. Add the selected instruction locally; do not change the global end-after-step rule.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F10",
+      "title": "Bandit’s Toll requires two deployed Heroes in a legal one-Hero game",
+      "category": "scenario",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "with at least two Heroes starting on the Trail.",
+          "matches": [
+            {
+              "line": 12170,
+              "text": "**Party Deployment:** Parties make a Setup Roll-off. The winner chooses one short battlefield edge (where the Trail enters). They deploy their party within **6\"** of that edge with at least two Heroes starting on the Trail. The other party deploys within **6\"** of the opposite short battlefield edge under the same conditions."
+            }
+          ]
+        },
+        {
+          "label": "### 10.6",
+          "matches": [
+            {
+              "line": 14807,
+              "text": "### 10.6 Dynamic Party and Scenario Scaling"
+            },
+            {
+              "line": 14817,
+              "text": "#### 10.6.1 Legal Party Structures"
+            },
+            {
+              "line": 14838,
+              "text": "#### 10.6.2 Hero Action Economy"
+            },
+            {
+              "line": 14844,
+              "text": "#### 10.6.3 APL"
+            },
+            {
+              "line": 14870,
+              "text": "#### 10.6.4 Final Random Monster Groups"
+            },
+            {
+              "line": 14901,
+              "text": "#### 10.6.5 Random Monster Setup Patterns"
+            },
+            {
+              "line": 14907,
+              "text": "#### 10.6.6 Monster Deployment and Awake Groups"
+            },
+            {
+              "line": 14915,
+              "text": "#### 10.6.7 Scenario-Specific Awake Groups"
+            },
+            {
+              "line": 14919,
+              "text": "#### 10.6.8 Minion Swarms"
+            },
+            {
+              "line": 14930,
+              "text": "#### 10.6.9 Objective Count Scaling"
+            },
+            {
+              "line": 14952,
+              "text": "#### 10.6.10 Extraction Clauses"
+            }
+          ]
+        }
+      ],
+      "analysis": "10.6 permits one-Hero parties and the scenario contains a Solo/Co-op field. Its deployment instruction nevertheless requires at least two Heroes on the Trail for each party. A one-Hero party cannot satisfy that condition.",
+      "smallest_repair": "Choose between “at least two, or every Hero if the party has fewer than two” and an explicit minimum party size for this scenario. The former preserves one-Hero support but is a design decision.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F11",
+      "title": "Spider Silk Route does not designate a central Bundle; scaled second Bundle can disappear",
+      "category": "scenario",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "Place 3 **Spider Silk Bundle** tokens",
+          "matches": [
+            {
+              "line": 12211,
+              "text": "**Objective Placement:** Place 3 **Spider Silk Bundle** tokens, each inside a different Webbed Section within the Ravine, spaced at least 4\" apart. Place 2 Treasure Chests (**1 Treasure roll with Disadvantage** each) on higher ground overlooking the Ravine, at least 8\" from any battlefield edge."
+            }
+          ]
+        },
+        {
+          "label": "within 1\" of the central Silk Bundle.",
+          "matches": [
+            {
+              "line": 12232,
+              "text": "**Boss Deployment:** Starts **Awake** at the centre of the Ravine, within 1\" of the central Silk Bundle. Accompanied by 2 Giant Tarantulas (Awake) within 2\" of the Broodmother. An additional 2 Giant Tarantulas start Resting in a Webbed Section near a second Silk Bundle."
+            }
+          ]
+        },
+        {
+          "label": "**Objective Scaling:** Apply **10.6.9** to the Spider Silk Bundles.",
+          "matches": [
+            {
+              "line": 12201,
+              "text": "**Objective Scaling:** Apply **10.6.9** to the Spider Silk Bundles."
+            }
+          ]
+        }
+      ],
+      "analysis": "The objective placement supplies three separated Bundles without designating one central. Boss deployment requires a central Bundle and another tarantula Group near a second Bundle. Token scaling can leave only one Bundle, removing the second placement reference. Nearest-legal-space fallback does not identify the intended marker.",
+      "smallest_repair": "Designate the boss-associated Bundle and specify the tarantula placement when fewer than two Bundles remain. Do not reuse P-09 as authority for an unapproved new placement.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F12",
+      "title": "Ambushed Emissary Group 3 has incompatible placement geometry",
+      "category": "scenario",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "marker (about 4\"×4\", **Cover Terrain**)",
+          "matches": [
+            {
+              "line": 12280,
+              "text": "**Battlefield and Terrain (36\"×36\"):** Dense forest with small clearings. Place 4–6 Tree area terrain pieces and 2–3 Undergrowth patches. Place one **Makeshift Bandit Camp** marker (about 4\"×4\", **Cover Terrain**) in one quadrant, at least 8\" from any battlefield edge. The Camp's quadrant is determined by the party that won the Setup Roll-off; that party places the Camp."
+            }
+          ]
+        },
+        {
+          "label": "Place at the perimeter of the Bandit Camp, **6\"** from its centre.",
+          "matches": [
+            {
+              "line": 12312,
+              "text": "- **Group 3:** Roll once on the Greenmark Random Monster Table. Place at the perimeter of the Bandit Camp, **6\"** from its centre. **Resting**. This group becomes **Awake** when combat occurs within the Camp or within 4\" of it."
+            }
+          ]
+        }
+      ],
+      "analysis": "A roughly 4×4 Camp has an edge 2 inches from its centre and corners about 2.83 inches away. A location 6 inches from the centre cannot also be on that perimeter. The full Monster Group also needs legal footprint placement. P-05 repaired a different clearing instruction and does not decide this Camp placement.",
+      "smallest_repair": "Choose Camp perimeter placement or an outside 6-inch ring, and state which part of the Group is measured. Keep its state, wake trigger, and rolled composition.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F13",
+      "title": "Two solo objective fields use names absent from their scenario objects",
+      "category": "scenario_copy",
+      "severity": "major",
+      "disposition": "exact_copy_repair",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "Extract the Central Lens, at least 1 Lesser Fragment",
+          "matches": [
+            {
+              "line": 12443,
+              "text": "**Solo/Co-op Objective:** Extract the Central Lens, at least 1 Lesser Fragment, and at least half the party through any battlefield edge as defined in **10.6.10**."
+            }
+          ]
+        },
+        {
+          "label": "Place the **Star Lens**",
+          "matches": [
+            {
+              "line": 12451,
+              "text": "- Place the **Star Lens** on a central pedestal inside the dome (carried objective, 7 × (2 + (4 × APL)) Coins)."
+            }
+          ]
+        },
+        {
+          "label": "Place 3 **Bronze Orrery Fragment**",
+          "matches": [
+            {
+              "line": 12452,
+              "text": "- Place 3 **Bronze Orrery Fragment** markers in separate ruin alcoves outside the dome (each a carried objective, 1 × (2 + (4 × APL)) Coins)."
+            }
+          ]
+        },
+        {
+          "label": "Move the Cartographer's Map off the battlefield",
+          "matches": [
+            {
+              "line": 12961,
+              "text": "**Solo/Co-op Objective:** Move the Cartographer's Map off the battlefield through the edge opposite its starting edge, then extract at least half the party through that edge as defined in **10.6.10**."
+            }
+          ]
+        },
+        {
+          "label": "The \"Survey Map\" (carried objective",
+          "matches": [
+            {
+              "line": 12969,
+              "text": "**Objective Placement:** The \"Survey Map\" (carried objective worth 8 × (2 + (4 × APL)) Coins if delivered; carrier's Speed is reduced by 1\" for as long as they carry it) starts on the \"start\" side of the Chasm, 3\" from the first ledge. The \"Cartographer's Stone\" (1\" marker) is on the \"delivery\" side of the Chasm, 3\" from the last ledge. Place 3 Treasure Chests (**1 Treasure roll with Disadvantage** each) in alcoves on both sides of the Chasm (at least one on each side)."
+            }
+          ]
+        }
+      ],
+      "analysis": "Fallen Observatory creates Star Lens and Bronze Orrery Fragments, while its solo objective names Central Lens/Lesser Fragment. Chasm Crossing creates Survey Map, while the solo objective names Cartographer’s Map. Each has a unique corresponding objective in the same scenario, supporting a name-only repair. Chasm Crossing’s extraction route is a separate uncertainty (U03).",
+      "smallest_repair": "Rename the Observatory objects to Star Lens and Bronze Orrery Fragment, preserving quantity; rename Cartographer’s Map to Survey Map, leaving the route wording unchanged for a separate decision.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F14",
+      "title": "Shifting Sands asks for extraction of undefined Chronal Chests",
+      "category": "scenario",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "Extract at least 2 Chronal Chests",
+          "matches": [
+            {
+              "line": 12585,
+              "text": "**Solo/Co-op Objective:** Extract at least 2 Chronal Chests and at least half the party through any battlefield edge as defined in **10.6.10**."
+            }
+          ]
+        },
+        {
+          "label": "A Treasure Chest appears in the centre of the zone",
+          "matches": [
+            {
+              "line": 12612,
+              "text": "- **5–6:** A Treasure Chest appears in the centre of the zone (**1 Treasure roll**). Once a zone contains a Chest, it is stable and cannot be chosen again."
+            }
+          ]
+        },
+        {
+          "label": "Heroes carrying looted Coins must escape",
+          "matches": [
+            {
+              "line": 12618,
+              "text": "**Escape Conditions:** Heroes carrying looted Coins must escape via either battlefield edge that does not touch their party's deployment corner."
+            }
+          ]
+        }
+      ],
+      "analysis": "No object called Chronal Chest is created. The scenario produces ordinary Treasure Chests and rewards treasure/looted Coins, while the solo field requires extracting two physical chests. Section 10 defaults govern objects identified as carried objectives; they do not declare these chests portable. A name-only replacement would leave the carrying and counting procedure unresolved.",
+      "smallest_repair": "Decide whether the solo objective counts looting two generated chests, extracting their contents, or carrying two physical chests. State the pickup and banking/counting rules for the chosen objective. Do not invent a carrying penalty or new chest type.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F15",
+      "title": "Iron-Vein Vault forcing action does not state its successful effect",
+      "category": "scenario",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "**Breaking a Binding Point (Party B):**",
+          "matches": [
+            {
+              "line": 12860,
+              "text": "**Breaking a Binding Point (Party B):** A Hero may attack a Binding Point normally, or use **Interact [2 AP]** and pass a **STR Check** to force it. When a Binding Point reaches **0 HP**, it becomes **Broken**. An **Unsealed** or **Sealed** Binding Point can be broken."
+            }
+          ]
+        },
+        {
+          "label": "**Binding Point States:**",
+          "matches": [
+            {
+              "line": 12814,
+              "text": "**Binding Point States:** Each Binding Point is always in exactly one of three states: **Unsealed**, **Sealed**, or **Broken**. Every Binding Point begins **Unsealed**. Mark each Point's current state with a token beside it. The vault opens when every Binding Point placed after scaling is **Broken** at the same time."
+            }
+          ]
+        }
+      ],
+      "analysis": "Interact [2 AP] plus a passed STR Check can “force” a Binding Point, but the only explicit transition to Broken is reaching 0 HP. The text assigns no damage or direct state change to the successful Check. The intended break-open alternative is recognizable, but instant breaking versus HP damage materially changes the opposition’s sealing game.",
+      "smallest_repair": "State the successful Check result explicitly: e.g. a direct Broken transition or a defined HP effect. Do not supply either without a decision; preserve existing attack and re-sealing rules.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F16",
+      "title": "Swirling Vials determines damage type after damage is inflicted",
+      "category": "procedure",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "**Swirling Vials:**",
+          "matches": [
+            {
+              "line": 13455,
+              "text": "  - **Swirling Vials:** 1d8 + APL/2 damage. Each time this attack damages a target, roll **1d4** to determine the attack's damage type: **1** acid, **2** ice, **3** fire, **4** poison. On a **Critical Hit**, the target must also pass a **STR Check** or be **Pushed 1\"** directly away."
+            }
+          ]
+        },
+        {
+          "label": "### 5.2",
+          "matches": [
+            {
+              "line": 1511,
+              "text": "### 5.2 The Attack Sequence"
+            }
+          ]
+        }
+      ],
+      "analysis": "The Alchemical Golem rolls the type only when an attack has already damaged a target. Type is needed earlier for legal mitigation, Resistance, Immunity, and damage-type critical riders. A target immune to one possible type creates a circular test: whether it was damaged depends on the type that is determined only if damaged.",
+      "smallest_repair": "Place the existing d4 type roll before damage resolution and specify whether it is once per attack or once per target. Retain the printed four outcomes and damage formula. Moving the trigger changes when rolls occur, so the exact timing must be approved.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F17",
+      "title": "Icebound Court immediate ending prevents its same-round contest",
+      "category": "scenario",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "The adventure ends when the Frost Bailiff Magistrate is defeated and either item is escaped with",
+          "matches": [
+            {
+              "line": 13761,
+              "text": "**Victory Conditions:** The adventure ends when the Frost Bailiff Magistrate is defeated and either item is escaped with, after Round 8, or when all Heroes are defeated."
+            }
+          ]
+        },
+        {
+          "label": "If both parties escape with their designated items during the same round",
+          "matches": [
+            {
+              "line": 13764,
+              "text": "- If both parties escape with their designated items during the same round, the adventure ends at the end of that round. The party with the higher total Coin Value wins."
+            }
+          ]
+        }
+      ],
+      "analysis": "After the Boss falls, the first extraction ends the adventure immediately. The rival cannot subsequently extract during that round, although another bullet reserves an end-of-round comparison if both designated items escape. The more-specific same-round case cannot be reached by sequential voluntary extractions once play has ended. No instruction defers the first end trigger.",
+      "smallest_repair": "Choose immediate first-extraction victory and remove the unreachable same-round branch, or defer that end trigger to the round end and retain the comparison. Also state how extracting the other party’s item affects ending and winning. Do not silently select a winner timing.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F18",
+      "title": "Ritual Chant gives Monsters Advantage on Checks they never roll",
+      "category": "procedure",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "**Ritual Chant:**",
+          "matches": [
+            {
+              "line": 14317,
+              "text": "- **Ritual Chant:** At the start of their activation, allied **Monsters** within **8\"** gain **Advantage** on **Checks** to resist Powers and magical item effects until the end of the round."
+            }
+          ]
+        },
+        {
+          "label": "A **Monster** never makes a Check.",
+          "matches": [
+            {
+              "line": 523,
+              "text": "A **Monster** never makes a Check. A **Monster** has no **STR**, **DEX**, **INT**, or **SPI** score. If a rule would require a **Monster** to make a Check, do not roll it: resolve the effect that would occur on a failed Check against that Monster automatically unless they are **Immune** to it. If a **Power** would require a **Monster** to make such a Check and that **Monster's LVL** is higher than the Level of the Hero casting it, that **Power's Casting Check** is made with **Disadvantage**."
+            }
+          ]
+        }
+      ],
+      "analysis": "Mire-Scale Shaman grants allied Monsters Advantage on resistance Checks. 2.3 and 9.1 prohibit Monster Checks and automatically resolve the failed-Check outcome unless immune. Ritual Chant supplies neither a Monster score nor a specific replacement procedure; a modifier alone does not explicitly authorize making a forbidden roll. As written its listed benefit has no effect.",
+      "smallest_repair": "Choose an explicit defensive effect or an explicit exception with a complete roll procedure. Removing an intentionally inert benefit is also possible. Do not assume Monsters roll d20+0 or gain immunity.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F19",
+      "title": "Teaching example omits Mara’s automatic armour reduction",
+      "category": "example",
+      "severity": "major",
+      "disposition": "example_rewrite_required",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "Senna rolls damage [**1d6 = 4, +3 DEX, total 7**], and Mara falls",
+          "matches": [
+            {
+              "line": 16455,
+              "text": "Because Senna makes a ranged attack while adjacent to Mara, Mara may declare **Reflex Attack [1 AP]**. Mara declares it before Senna rolls damage. Only 1 **Reaction** may respond to the same action, so Mara cannot also **Block** the shot. Senna rolls damage [**1d6 = 4, +3 DEX, total 7**], and Mara falls from **12 HP** to **5 HP**."
+            }
+          ]
+        },
+        {
+          "label": "- **Gambeson:** Chest **AD d3**",
+          "matches": [
+            {
+              "line": 16138,
+              "text": "- **Gambeson:** Chest **AD d3**"
+            }
+          ]
+        },
+        {
+          "label": "For this teaching game, ignore equipment requirements",
+          "matches": [
+            {
+              "line": 16117,
+              "text": "For this teaching game, ignore equipment requirements, **DEX Pen**, and **Max Speed**. Use only the damage, **AD**, and traits printed here."
+            }
+          ]
+        }
+      ],
+      "analysis": "Appendix A explicitly keeps printed AD in use. Mara’s Gambeson supplies d3 AD, but Senna’s adjacent shot applies all 7 damage with no armour roll, taking Mara from 12 to 5. Spending AP on Reflex Attack does not suppress automatic Chest AD. An unstated d3 result would leave Mara at 6–8 HP, not 5. Subsequent Mara state summaries repeat the error.",
+      "smallest_repair": "Supply an explicit AD roll, resolve the shot correctly, and update all dependent Mara HP states. The manuscript contains no observed armour result; an illustrative new result must be identified as editorially chosen.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F20",
+      "title": "Teaching example ignores the Dire Wolf’s retained maximum and piercing Critical Hit",
+      "category": "example",
+      "severity": "major",
+      "disposition": "example_rewrite_required",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "Dire Wolf 2 rolls damage with **Advantage** [**1d8 = 3 and 8",
+          "matches": [
+            {
+              "line": 16477,
+              "text": "**Dire Wolf 2** is adjacent to Varek and Dire Wolf 1, so **Pack Tactics** applies. Varek is also **Prone**, but multiple instances of **Advantage** do not stack. Dire Wolf 2 rolls damage with **Advantage** [**1d8 = 3 and 8, keep 8, +1, total 9**]. Varek rolls **AD** [**d6 = 6**], reducing the damage to **3**. Varek falls from **12 HP** to **9 HP**. Because **Bite** dealt damage, Varek makes a **STR Check** [**1d20 = 16, +3 STR, total 19**] and remains **Prone** only from the earlier failed **Check**."
+            }
+          ]
+        },
+        {
+          "label": "- **Piercing (P):**",
+          "matches": [
+            {
+              "line": 1539,
+              "text": "- **Piercing (P):** During mitigation, the attack ignores the target's **AV**, including **AV** generated by **AD**, unless a rule says otherwise."
+            }
+          ]
+        },
+        {
+          "label": "- **Exploding Dice:**",
+          "matches": [
+            {
+              "line": 1528,
+              "text": "- **Exploding Dice:** For every retained base damage die that shows its maximum value, roll one additional bonus die of the same type and add it to the total. If a bonus die also shows its maximum value, it explodes again."
+            }
+          ]
+        }
+      ],
+      "analysis": "The retained 8 on d8 is a Critical Hit. Bite is piercing, so the printed armour reduction is invalid and at least one exploding bonus d8 must be rolled. With Varek at 12 HP, the minimum is 8+1+1=10 damage, leaving at most 2 HP; a bonus of 3 or more knocks him out. The printed 9 HP, later successful STR Check, Prone state, and subsequent state ledger are not supported.",
+      "smallest_repair": "Either retain the 8 and supply a complete exploding-die chain, critical rider, damage/KO resolution and dependent ledger, or deliberately change the illustrative base roll and recalculate the attack. Do not weaken Critical Hit rules or assert an unseen bonus roll.",
+      "uncertainty": ""
+    },
+    {
+      "id": "F21",
+      "title": "Basic Mode combined Traps/Hidden Strongbox variants cannot allocate all tokens",
+      "category": "procedure",
+      "severity": "major",
+      "disposition": "author_decision",
+      "status": "OPEN",
+      "evidence": [
+        {
+          "label": "use one or more of the following variants",
+          "matches": [
+            {
+              "line": 17098,
+              "text": "After the first game, use one or more of the following variants to increase replay value without using the full scenario system."
+            }
+          ]
+        },
+        {
+          "label": "**Traps:** Each **Satchel**",
+          "matches": [
+            {
+              "line": 17104,
+              "text": "**Traps:** Each **Satchel** and the **Strongbox** is potentially trapped. During setup, prepare **4** face-down tokens for the default scenario: **1** marked **\"Trap\"** and **3** blank. If the **Advanced Ogre** variant is used, prepare **5** face-down tokens instead: **2** marked **\"Trap\"** and **3** blank. Place one token under each treasure marker without revealing it."
+            }
+          ]
+        },
+        {
+          "label": "**Hidden Strongbox:**",
+          "matches": [
+            {
+              "line": 17110,
+              "text": "**Hidden Strongbox:** Place **3 Strongbox** markers along the battlefield midline, each within **6\"** of at least one other Strongbox marker. Only one is real. The first time a combatant uses **Interact [1 AP]** while adjacent to a Strongbox marker and not **Engaged**, they make an **INT Check**. On a success, that marker is the real **Strongbox** and may be picked up by the same **Interact**. On a failure, remove that marker as a fake. If **2** fake Strongbox markers have been removed, the last remaining marker is the real **Strongbox**."
+            }
+          ]
+        }
+      ],
+      "analysis": "The variants expressly allow combining them. Three Satchels plus three Hidden Strongbox markers require six tokens when Traps says put one under each treasure marker, but it provides four. With Advanced Ogre there are seven markers and five tokens. The text also does not order the fake/real Check against revealing a trap on the same pickup Interact.",
+      "smallest_repair": "Specify whether fakes receive tokens and how the token count/composition changes, then order Strongbox identification versus trap reveal/pickup. Do not invent additional trap probability.",
+      "uncertainty": ""
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "U01",
+      "title": "Created ice wall placement/profile",
+      "evidence": [
+        {
+          "label": "**Wall of Ice (AI Step 1",
+          "matches": [
+            {
+              "line": 9269,
+              "text": "- **Wall of Ice (AI Step 1, on d6 5+):** If not **Engaged**, create a **6\"** wall of ice up to **3\"** high, positioned to separate the most enemy combatants from this Monster. It blocks movement and **LOS** until the end of the round. This Monster then continues their activation normally."
+            }
+          ]
+        },
+        {
+          "label": "**Wall of Ice (once per adventure):",
+          "matches": [
+            {
+              "line": 13735,
+              "text": "- **Wall of Ice (once per adventure):** At the start of their activation, the Magistrate creates a 6\"×3\" ice wall (HP 15, AV 2) that lasts 3 rounds."
+            }
+          ]
+        }
+      ],
+      "analysis": "Gelid Fiend chooses a separating 6-inch wall; Frost Bailiff creates a 6×3 wall with HP/AV/duration, but neither gives a clear placement range. Width/height orientation and collision differ between them. 2.7.3 supplies default source origins for areas, and Section 10 supplies nearest-legal placement; neither clearly classifies these created walls as a Line area versus free-standing terrain. It would be overconfident to claim an unlimited range or ignore these defaults.",
+      "next_step": "Confirm terrain versus area status, origin/placement, dimensions, blocking/collision and attackable-object procedure. Do not add a distance or thickness without authority."
+    },
+    {
+      "id": "U02",
+      "title": "Command Tent and other complex-terrain interiors",
+      "evidence": [
+        {
+          "label": "one central Command Tent (3\"×3\", **Blocking Terrain**)",
+          "matches": [
+            {
+              "line": 13104,
+              "text": "**Battlefield and Terrain (36\"×36\"):** Create a small Undermarches outpost around the battlefield centre. Place 2–3 Guard Towers (2\" high, **Impassable Terrain**) connected by low defensive walls, with one central Command Tent (3\"×3\", **Blocking Terrain**). Scatter stalagmites and rubble around the outpost approaches."
+            }
+          ]
+        },
+        {
+          "label": "Every terrain feature, distinct part of a complex feature",
+          "matches": [
+            {
+              "line": 824,
+              "text": "Every terrain feature, distinct part of a complex feature, and supporting surface has exactly one **Terrain Type** and any number of **Terrain Tags**. Its type determines whether it may be entered and its default interaction with **Cover** and **LOS**. Its tags add movement, hazard, or other rules without changing its type."
+            }
+          ]
+        }
+      ],
+      "analysis": "Outpost Raid puts Battle Plans and the Commander inside a Blocking Terrain tent. Taken as an entire solid footprint, entry and LOS-based Interact fail. However, 2.9 explicitly separates complex-feature parts/supporting surfaces, defaults floors to Open, and requires pre-play assignment. An enterable tent with Blocking walls may be a legal reading. Similar barrow/dais cases can use distinct floors/upper surfaces and are not automatically contradictions.",
+      "next_step": "Confirm that the tent has an accessible floor and opening, and distinguish its walls from its interior in setup/diagram. Do not certify an unreachable objective without checking the parts assignment."
+    },
+    {
+      "id": "U03",
+      "title": "Chasm Crossing solo extraction direction",
+      "evidence": [
+        {
+          "label": "Move the Cartographer's Map off the battlefield",
+          "matches": [
+            {
+              "line": 12961,
+              "text": "**Solo/Co-op Objective:** Move the Cartographer's Map off the battlefield through the edge opposite its starting edge, then extract at least half the party through that edge as defined in **10.6.10**."
+            }
+          ]
+        },
+        {
+          "label": "starts on the \"start\" side of the Chasm, 3\" from the first ledge",
+          "matches": [
+            {
+              "line": 12969,
+              "text": "**Objective Placement:** The \"Survey Map\" (carried objective worth 8 × (2 + (4 × APL)) Coins if delivered; carrier's Speed is reduced by 1\" for as long as they carry it) starts on the \"start\" side of the Chasm, 3\" from the first ledge. The \"Cartographer's Stone\" (1\" marker) is on the \"delivery\" side of the Chasm, 3\" from the last ledge. Place 3 Treasure Chests (**1 Treasure roll with Disadvantage** each) in alcoves on both sides of the Chasm (at least one on each side)."
+            }
+          ]
+        }
+      ],
+      "analysis": "The map starts near a ledge, not on an edge, yet the solo instruction says “edge opposite its starting edge”. F13 safely corrects its name only. The start/delivery sides suggest the intended direction, but the object itself has no starting edge.",
+      "next_step": "Name the delivery-side edge or party-deployment opposite edge explicitly after confirming intended geometry. Do not alter the competitive Stone delivery objective."
+    },
+    {
+      "id": "U04",
+      "title": "War Room bonus in PvE Initiative",
+      "evidence": [
+        {
+          "label": "**Benefit:** Your party gains **+2 Initiative Bonus**.",
+          "matches": [
+            {
+              "line": 15690,
+              "text": "**Benefit:** Your party gains **+2 Initiative Bonus**."
+            }
+          ]
+        },
+        {
+          "label": "This roll replaces competitive side-based Initiative in PvE play.",
+          "matches": [
+            {
+              "line": 14708,
+              "text": "This roll replaces competitive side-based Initiative in PvE play. The rolled phase order also sets simultaneous-effect priority under **3.6 Timing Rules**."
+            }
+          ]
+        }
+      ],
+      "analysis": "10.5.4 replaces competitive Initiative with a d20 threshold and does not add the ordinary Initiative Bonus. War Room and its Veteran improve that bonus; campaign rules allow normal Stronghold benefits in PvE. The specific replacement can simply make this bonus inapplicable, so this is not a proven contradictory roll. It may leave a purchased benefit ineffective in PvE.",
+      "next_step": "Confirm intended PvE applicability. Do not automatically import leader INT/SPI, change the threshold, or add the bonus."
+    },
+    {
+      "id": "U05",
+      "title": "Move-only Monster steps and “in Reach” wording",
+      "evidence": [
+        {
+          "label": "**Guard Post (AI Step 1",
+          "matches": [
+            {
+              "line": 8359,
+              "text": "- **Guard Post (AI Step 1):** Move to remain within **3\"** of the nearest allied Monster and attack the nearest enemy in **Reach**. If no ally is on the battlefield, advance on the nearest visible enemy."
+            }
+          ]
+        },
+        {
+          "label": "**Hold the Seal (AI Step 1",
+          "matches": [
+            {
+              "line": 9607,
+              "text": "- **Hold the Seal (AI Step 1):** Move to the nearest objective marker or allied Undead within **6\"** that can be reached, then attack the nearest enemy in **Reach**. If neither exists, advance on the nearest visible enemy."
+            }
+          ]
+        },
+        {
+          "label": "**Form the Line (AI Step 1",
+          "matches": [
+            {
+              "line": 9148,
+              "text": "- **Form the Line (AI Step 1):** If an allied White Court Monster is within **3\"**, skip movement and attack the nearest enemy in **Reach**. Otherwise, advance on the nearest visible enemy and attack."
+            }
+          ]
+        }
+      ],
+      "analysis": "Stone Sentinel/Tomb Guardian fallback movement ends the activation and may deliberately be move-only. White-Court Sentinel says attack an enemy “in Reach” while its Bash lacks a Reach trait. Ordinary melee distance may be intended. These phrases do not authorize granting an extra attack or 2-inch Reach.",
+      "next_step": "Confirm intent or clarify wording to ordinary melee distance; retain default distance and end-after-step behaviour pending that decision."
+    },
+    {
+      "id": "U06",
+      "title": "Teaching aids: two-square footprint and objective setup order",
+      "evidence": [
+        {
+          "label": "A Ranger targets a two-square Monster in Grid Mode.",
+          "matches": [
+            {
+              "line": 17811,
+              "text": "*A Ranger targets a two-square Monster in Grid Mode. Under **2.6**, test source-square and target-square pairs using one pair for range, **LOS**, and **Cover**. One pair has a sight line that touches the corner of a **Cover Terrain** square but does not pass through that square's interior and crosses no **Blocking Terrain**. That pair has **LOS**, and the touched terrain grants **Cover**. If another legal pair gives the target less Cover, use that pair instead; if Cover is tied, use the shortest range. If every possible pair is blocked by **Blocking Terrain**, a solid floor/roof/platform, or the interior of an intervening **Cover Terrain** square as described in **2.7.2**, the Ranger has no **LOS**.*"
+            }
+          ]
+        },
+        {
+          "label": "#### 10.5.2",
+          "matches": [
+            {
+              "line": 14670,
+              "text": "#### 10.5.2 Solo and Cooperative Setup Checklist"
+            }
+          ]
+        }
+      ],
+      "analysis": "C.12’s “two-square Monster” does not match standard 1×1, 2×2 or 3×3 footprints unless it means two squares wide. Separately, solo setup deploys Monsters before placing objectives/hazards although some deployments depend on those positions. Planning the positions in advance may satisfy the latter without a rules change.",
+      "next_step": "Use an explicit standard footprint in the example if desired; clarify planning/deployment dependencies without treating the appendix as an override or inventing a new setup phase."
+    }
+  ],
+  "closed_or_not_defects": [
+    "1.6 resolves examples, summaries, and equally specific rules; full rules govern stale references.",
+    "RC485/RC486 P-01–P-12 remain present; the audit does not reopen their approved cone, terrain, deployment, or scenario-placement repairs.",
+    "Scenario-specific failed Jump consequences override the core fallback. The older chasm-jump triage is not a new defect.",
+    "Solo conversion/extraction continues past competitive ending conditions where 10.5.5 explicitly says so.",
+    "The global six-Group limit rejects a seventh placement event. A setup with five Random Groups plus multiple scenario Groups may omit a later Group, but is not allowed to place seven. The allocation may merit balance review; no new cap or merging rule is needed to resolve legality.",
+    "Boss Relentless activations, their per-round cap, and lack of ordinary Monster Phase activation are explicit; start-of-Monster-Phase effects remain applicable.",
+    "Tier-0 Hybrid cost, Sorcery resolving despite Blood Price, natural-form equipment suspension, and fixed Basic Mode profiles are explicit exceptions.",
+    "Immunity to Poisoned does not imply immunity to poison damage; Resistance and condition immunity are separate.",
+    "Scroll attack profiles can differ from known Powers because scrolls provide their own complete effect.",
+    "Throwing Knives always use one base die; Martial Supremacy and other die increases do not override the explicit exception.",
+    "Scenario CV/role deviations are deliberately allowed in 10.6.4; no automatic Monster repricing is justified.",
+    "Historical accounts of the Fall are deliberately competing/unreliable. No external canon was used to invent lore corrections."
+  ],
+  "coverage": [
+    {
+      "section": "1",
+      "scope": "Introduction, modes, setting, and rules hierarchy",
+      "method_limit": "Hierarchy used for all conflicts; lore checked for cross-reference consistency, not rewritten to harmonize intentionally competing history."
+    },
+    {
+      "section": "2",
+      "scope": "Scores, Checks, footprint/range/LOS, area templates, terrain and timing",
+      "method_limit": "Full mechanical review; terrain parts and specific overrides used to reject false positives."
+    },
+    {
+      "section": "3–5",
+      "scope": "Rounds, AP/actions, movement, attack/critical sequence, Reactions, HP/Wounds and conditions",
+      "method_limit": "Compared with all reference/teaching summaries and unique special procedures."
+    },
+    {
+      "section": "6",
+      "scope": "Hero creation, ancestry/classes/Talents, leveling, party/APL",
+      "method_limit": "Reviewed interactions and printed exception rules; no inferred balance changes."
+    },
+    {
+      "section": "7",
+      "scope": "Equipment, traits, treasure, quality formulas, consumables, special items",
+      "method_limit": "Reviewed procedures; all 274 recognizable quality-prefixed enhanced rows checked numerically. Fifty Special Weapon rows reviewed for missing profile fields."
+    },
+    {
+      "section": "8",
+      "scope": "Power traditions, casting, metal restrictions and Power profiles",
+      "method_limit": "Reviewed range/target/cost/duration/critical defaults and explicit exceptions; no external spell canon."
+    },
+    {
+      "section": "9",
+      "scope": "Monster rules, all 135 bestiary mechanical entries and Random tables",
+      "method_limit": "All mechanical entries reviewed; 1,898 Random-table references resolve. Flavour prose sampled for relevant rule claims; not a word-by-word literary proof."
+    },
+    {
+      "section": "10",
+      "scope": "Preparation, 120 Secondary Objectives, weather, all 36 Core Scenarios, solo/co-op/scaling",
+      "method_limit": "Reviewed setup geometry, tokens, states, extraction, end/win timing and mode conversion; direct die ranges checked automatically."
+    },
+    {
+      "section": "11",
+      "scope": "Campaign cycle, Town, training/recruitment/retirement, Strongholds and finale",
+      "method_limit": "Reviewed accounting, caps, progression and PvE interaction; War Room applicability isolated."
+    },
+    {
+      "section": "A–C",
+      "scope": "Teaching example, starter profiles/Basic Mode, glossary/quick reference/examples",
+      "method_limit": "Compared all mechanical summaries/profiles/procedures with governing rules; identified two missing teaching resolutions and combined-variant gap."
+    }
+  ],
+  "limits": [
+    "Semantic editorial review is not a formal proof of absence of all contradictions.",
+    "No current PDF rebuild, visual reapproval, physical printer proof, playtest or commercial certification.",
+    "No new gameplay behaviour or unseen dice results asserted.",
+    "This is not evidence of the contents of unavailable GitHub check annotations."
+  ],
+  "counts": {
+    "open_findings": 21,
+    "uncertainties": 6,
+    "exact_proposed_patches": 13,
+    "enhanced_value_cells": 15
+  },
+  "proposal_path": "editorial/proposals/rc487-contradiction-audit.json",
+  "verification_path": "production/qa/manuscript-contradiction-verification.json"
+}
