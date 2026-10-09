@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "source_sha256": "5da05cec6153ac11865874a0da416c002ce90b2dc4936fc9ce50abca9d3dbbe5",
+  "verification_status": "PASS",
+  "semantic_clearance": "OPEN_FINDINGS",
+  "meaning": "PASS verifies bounded calculations, evidence anchors, proposed matches and immutable history; it does not clear the manuscript.",
+  "history": [
+    {
+      "revision": 485,
+      "patch_ids": [
+        "P-01",
+        "P-02",
+        "P-03",
+        "P-04",
+        "P-05",
+        "P-06",
+        "P-07"
+      ],
+      "exact_reconstruction": "PASS"
+    },
+    {
+      "revision": 486,
+      "patch_ids": [
+        "P-08",
+        "P-09",
+        "P-10",
+        "P-11",
+        "P-12"
+      ],
+      "exact_reconstruction": "PASS"
+    }
+  ],
+  "tables": {
+    "count": 332,
+    "cells": 10341,
+    "ragged": []
+  },
+  "enhanced_values": {
+    "checked": 274,
+    "unmapped": [],
+    "differences": [
+      {
+        "table": "T041",
+        "item": "Masterwork Spiked Targe",
+        "printed": 13,
+        "computed": 12,
+        "base": 8,
+        "kind": "armour"
+      },
+      {
+        "table": "T041",
+        "item": "Masterwork Kite Shield",
+        "printed": 21,
+        "computed": 18,
+        "base": 12,
+        "kind": "armour"
+      },
+      {
+        "table": "T041",
+        "item": "Silvered Spiked Targe",
+        "printed": 13,
+        "computed": 12,
+        "base": 8,
+        "kind": "armour"
+      },
+      {
+        "table": "T041",
+        "item": "Silvered Kite Shield",
+        "printed": 21,
+        "computed": 18,
+        "base": 12,
+        "kind": "armour"
+      },
+      {
+        "table": "T041",
+        "item": "Cold Iron Spiked Targe",
+        "printed": 13,
+        "computed": 12,
+        "base": 8,
+        "kind": "armour"
+      },
+      {
+        "table": "T044",
+        "item": "Masterwork Kite Shield",
+        "printed": 21,
+        "computed": 18,
+        "base": 12,
+        "kind": "armour"
+      },
+      {
+        "table": "T044",
+        "item": "Silvered Kite Shield",
+        "printed": 21,
+        "computed": 18,
+        "base": 12,
+        "kind": "armour"
+      },
+      {
+        "table": "T044",
+        "item": "Cold Iron Kite Shield",
+        "printed": 21,
+        "computed": 18,
+        "base": 12,
+        "kind": "armour"
+      },
+      {
+        "table": "T044",
+        "item": "Palesteel Kite Shield",
+        "printed": 28,
+        "computed": 24,
+        "base": 12,
+        "kind": "armour"
+      },
+      {
+        "table": "T047",
+        "item": "Masterwork Kite Shield",
+        "printed": 21,
+        "computed": 18,
+        "base": 12,
+        "kind": "armour"
+      },
+      {
+        "table": "T047",
+        "item": "Sacred Kite Shield",
+        "printed": 28,
+        "computed": 24,
+        "base": 12,
+        "kind": "armour"
+      },
+      {
+        "table": "T047",
+        "item": "Palesteel Kite Shield",
+        "printed": 28,
+        "computed": 24,
+        "base": 12,
+        "kind": "armour"
+      },
+      {
+        "table": "T051",
+        "item": "Enchanted +4 Repeating Crossbow",
+        "printed": 66,
+        "computed": 58,
+        "base": 22,
+        "kind": "weapon"
+      },
+      {
+        "table": "T051",
+        "item": "Enchanted +5 Repeating Crossbow",
+        "printed": 80,
+        "computed": 72,
+        "base": 22,
+        "kind": "weapon"
+      },
+      {
+        "table": "T051",
+        "item": "Adamantine Repeating Crossbow",
+        "printed": 120,
+        "computed": 88,
+        "base": 22,
+        "kind": "weapon"
+      }
+    ]
+  },
+  "direct_die_range_tables": {
+    "checked": 93,
+    "issues": [],
+    "scope": "Only direct dN-labelled tables whose first column is wholly numeric ranges; excludes narrative and multi-table outcome semantics."
+  },
+  "evidence_anchors_checked": 86,
+  "proposed_patch_matches": [
+    {
+      "id": "CA-01",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-02",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-03",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-04",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-05",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-06",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-07",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-08",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-09",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-10",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-11",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-12",
+      "matches": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "CA-13",
+      "matches": 1,
+      "status": "PASS"
+    }
+  ],
+  "original_source_unchanged": true
+}
