@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install locked dependencies
+        run: python -m pip install -r requirements.lock
       - name: Check immutable manuscript chain and production contracts
         run: python tools/preflight.py --baseline
       - name: Check revision and failure gates
