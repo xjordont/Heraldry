@@ -6227,7 +6227,7 @@
 "anchor": "fire-elemental-cannon",
 "level": 5,
 "title": "Fire Elemental [Cannon]",
-"line": 9525,
+"line": 9524,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6240,7 +6240,7 @@
 "anchor": "giant-skeleton-brute",
 "level": 5,
 "title": "Giant Skeleton [Brute]",
-"line": 9542,
+"line": 9541,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6253,7 +6253,7 @@
 "anchor": "medusa-elite",
 "level": 5,
 "title": "Medusa [Elite]",
-"line": 9560,
+"line": 9559,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6266,7 +6266,7 @@
 "anchor": "tomb-necromancer-controller",
 "level": 5,
 "title": "Tomb Necromancer [Controller]",
-"line": 9581,
+"line": 9579,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6279,7 +6279,7 @@
 "anchor": "tomb-guardian-soldier",
 "level": 5,
 "title": "Tomb Guardian [Soldier]",
-"line": 9600,
+"line": 9598,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6292,7 +6292,7 @@
 "anchor": "brass-golem-brute",
 "level": 5,
 "title": "Brass Golem [Brute]",
-"line": 9622,
+"line": 9620,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6305,7 +6305,7 @@
 "anchor": "manticore-elite",
 "level": 5,
 "title": "Manticore [Elite]",
-"line": 9644,
+"line": 9642,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6318,7 +6318,7 @@
 "anchor": "demon-elite",
 "level": 5,
 "title": "Demon [Elite]",
-"line": 9666,
+"line": 9664,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6331,7 +6331,7 @@
 "anchor": "blue-dragon-elite",
 "level": 5,
 "title": "Blue Dragon [Elite]",
-"line": 9690,
+"line": 9688,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6344,7 +6344,7 @@
 "anchor": "the-mire-bestiary",
 "level": 4,
 "title": "The Mire Bestiary",
-"line": 9712,
+"line": 9710,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6356,7 +6356,7 @@
 "anchor": "bogling-minion",
 "level": 5,
 "title": "Bogling [Minion]",
-"line": 9714,
+"line": 9712,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6369,7 +6369,7 @@
 "anchor": "swamp-goblin-minion",
 "level": 5,
 "title": "Swamp Goblin [Minion]",
-"line": 9733,
+"line": 9731,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6382,7 +6382,7 @@
 "anchor": "zombie-minion",
 "level": 5,
 "title": "Zombie [Minion]",
-"line": 9755,
+"line": 9753,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6395,7 +6395,7 @@
 "anchor": "stirge-minion",
 "level": 5,
 "title": "Stirge [Minion]",
-"line": 9772,
+"line": 9770,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6408,7 +6408,7 @@
 "anchor": "will-o-wisp-cannon",
 "level": 5,
 "title": "Will-o'-Wisp [Cannon]",
-"line": 9790,
+"line": 9788,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6421,7 +6421,7 @@
 "anchor": "lizardfolk-warrior-soldier",
 "level": 5,
 "title": "Lizardfolk Warrior [Soldier]",
-"line": 9809,
+"line": 9807,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6434,7 +6434,7 @@
 "anchor": "lizardfolk-hunter-cannon",
 "level": 5,
 "title": "Lizardfolk Hunter [Cannon]",
-"line": 9827,
+"line": 9825,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6447,7 +6447,7 @@
 "anchor": "crocodile-skirmisher",
 "level": 5,
 "title": "Crocodile [Skirmisher]",
-"line": 9847,
+"line": 9845,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6460,7 +6460,7 @@
 "anchor": "lizardfolk-shaman-controller",
 "level": 5,
 "title": "Lizardfolk Shaman [Controller]",
-"line": 9865,
+"line": 9863,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6473,7 +6473,7 @@
 "anchor": "miasma-serpent-skirmisher",
 "level": 5,
 "title": "Miasma Serpent [Skirmisher]",
-"line": 9884,
+"line": 9882,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6486,7 +6486,7 @@
 "anchor": "swamp-naga-controller",
 "level": 5,
 "title": "Swamp Naga [Controller]",
-"line": 9906,
+"line": 9904,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6499,7 +6499,7 @@
 "anchor": "giant-constrictor-skirmisher",
 "level": 5,
 "title": "Giant Constrictor [Skirmisher]",
-"line": 9926,
+"line": 9924,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6512,7 +6512,7 @@
 "anchor": "shambling-mound-brute",
 "level": 5,
 "title": "Shambling Mound [Brute]",
-"line": 9946,
+"line": 9944,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6525,7 +6525,7 @@
 "anchor": "swamp-hag-controller",
 "level": 5,
 "title": "Swamp Hag [Controller]",
-"line": 9967,
+"line": 9965,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6538,7 +6538,7 @@
 "anchor": "banshee-controller",
 "level": 5,
 "title": "Banshee [Controller]",
-"line": 9986,
+"line": 9984,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6551,7 +6551,7 @@
 "anchor": "swamp-troll-brute",
 "level": 5,
 "title": "Swamp Troll [Brute]",
-"line": 10008,
+"line": 10006,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6564,7 +6564,7 @@
 "anchor": "hydra-elite",
 "level": 5,
 "title": "Hydra [Elite]",
-"line": 10029,
+"line": 10027,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6577,7 +6577,7 @@
 "anchor": "blackwater-wight-elite",
 "level": 5,
 "title": "Blackwater Wight [Elite]",
-"line": 10049,
+"line": 10047,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6590,7 +6590,7 @@
 "anchor": "mire-titan-brute",
 "level": 5,
 "title": "Mire Titan [Brute]",
-"line": 10071,
+"line": 10069,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6603,7 +6603,7 @@
 "anchor": "black-dragon-elite",
 "level": 5,
 "title": "Black Dragon [Elite]",
-"line": 10093,
+"line": 10091,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6616,7 +6616,7 @@
 "anchor": "bosses",
 "level": 4,
 "title": "Bosses",
-"line": 10117,
+"line": 10115,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6628,7 +6628,7 @@
 "anchor": "the-ancient-void-dragon-boss",
 "level": 5,
 "title": "The Ancient Void Dragon [Boss]",
-"line": 10141,
+"line": 10139,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6641,7 +6641,7 @@
 "anchor": "the-hollow-crown-of-the-ashlands-boss",
 "level": 5,
 "title": "The Hollow Crown of the Ashlands [Boss]",
-"line": 10165,
+"line": 10163,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6654,7 +6654,7 @@
 "anchor": "the-last-colossus-boss",
 "level": 5,
 "title": "The Last Colossus [Boss]",
-"line": 10187,
+"line": 10185,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6667,7 +6667,7 @@
 "anchor": "avatar-of-the-old-growth-boss",
 "level": 5,
 "title": "Avatar of the Old Growth [Boss]",
-"line": 10210,
+"line": 10208,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6680,7 +6680,7 @@
 "anchor": "the-broodmother-prime-boss",
 "level": 5,
 "title": "The Broodmother Prime [Boss]",
-"line": 10233,
+"line": 10231,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6693,7 +6693,7 @@
 "anchor": "captain-veyr-of-the-forsaken-boss",
 "level": 5,
 "title": "Captain Veyr of the Forsaken [Boss]",
-"line": 10257,
+"line": 10255,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6706,7 +6706,7 @@
 "anchor": "the-frost-bailiff-magistrate-boss",
 "level": 5,
 "title": "The Frost Bailiff Magistrate [Boss]",
-"line": 10279,
+"line": 10277,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6719,7 +6719,7 @@
 "anchor": "the-sun-crowned-prince-boss",
 "level": 5,
 "title": "The Sun-Crowned Prince [Boss]",
-"line": 10301,
+"line": 10299,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6732,7 +6732,7 @@
 "anchor": "the-antlered-warden-of-the-tithe-boss",
 "level": 5,
 "title": "The Antlered Warden of the Tithe [Boss]",
-"line": 10323,
+"line": 10321,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6745,7 +6745,7 @@
 "anchor": "the-voice-beneath-the-bells-boss",
 "level": 5,
 "title": "The Voice Beneath the Bells [Boss]",
-"line": 10347,
+"line": 10345,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6758,7 +6758,7 @@
 "anchor": "maelthorn-the-verdant-boss",
 "level": 5,
 "title": "Maelthorn the Verdant [Boss]",
-"line": 10370,
+"line": 10368,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6771,7 +6771,7 @@
 "anchor": "sirrach-the-black-boss",
 "level": 5,
 "title": "Sirrach the Black [Boss]",
-"line": 10396,
+"line": 10394,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6784,7 +6784,7 @@
 "anchor": "visath-the-white-boss",
 "level": 5,
 "title": "Visath the White [Boss]",
-"line": 10422,
+"line": 10420,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6797,7 +6797,7 @@
 "anchor": "khorrun-the-dracolich-boss",
 "level": 5,
 "title": "Khorrun the Dracolich [Boss]",
-"line": 10449,
+"line": 10447,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6810,7 +6810,7 @@
 "anchor": "vossegar-of-the-flooded-cathedral-boss",
 "level": 5,
 "title": "Vossegar of the Flooded Cathedral [Boss]",
-"line": 10475,
+"line": 10473,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6823,7 +6823,7 @@
 "anchor": "98-random-monster-generation-tables",
 "level": 3,
 "title": "9.8 Random Monster Generation Tables",
-"line": 10502,
+"line": 10500,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters"
@@ -6834,7 +6834,7 @@
 "anchor": "greenmark-random-monster-table",
 "level": 4,
 "title": "Greenmark Random Monster Table",
-"line": 10514,
+"line": 10512,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6846,7 +6846,7 @@
 "anchor": "ashlands-random-monster-table",
 "level": 4,
 "title": "Ashlands Random Monster Table",
-"line": 10591,
+"line": 10589,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6858,7 +6858,7 @@
 "anchor": "undermarches-random-monster-table",
 "level": 4,
 "title": "Undermarches Random Monster Table",
-"line": 10668,
+"line": 10666,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6870,7 +6870,7 @@
 "anchor": "pale-city-random-monster-table",
 "level": 4,
 "title": "Pale City Random Monster Table",
-"line": 10745,
+"line": 10743,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6882,7 +6882,7 @@
 "anchor": "sun-drowned-random-monster-table",
 "level": 4,
 "title": "Sun-Drowned Random Monster Table",
-"line": 10822,
+"line": 10820,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6894,7 +6894,7 @@
 "anchor": "the-mire-random-monster-table",
 "level": 4,
 "title": "The Mire Random Monster Table",
-"line": 10899,
+"line": 10897,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-9-monsters",
@@ -6906,7 +6906,7 @@
 "anchor": "10-scenarios",
 "level": 2,
 "title": "10. Scenarios",
-"line": 10976,
+"line": 10974,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands"
 ]
@@ -6916,7 +6916,7 @@
 "anchor": "reading-a-scenario-before-setup",
 "level": 3,
 "title": "Reading a Scenario Before Setup",
-"line": 11000,
+"line": 10998,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios"
@@ -6927,7 +6927,7 @@
 "anchor": "scenario-scaling-field-reference",
 "level": 3,
 "title": "Scenario Scaling Field Reference",
-"line": 11006,
+"line": 11004,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios"
@@ -6938,7 +6938,7 @@
 "anchor": "101-adventure-preparation-sequence",
 "level": 3,
 "title": "10.1 Adventure Preparation Sequence",
-"line": 11031,
+"line": 11029,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios"
@@ -6949,7 +6949,7 @@
 "anchor": "setup-roll-off",
 "level": 4,
 "title": "Setup Roll-off",
-"line": 11035,
+"line": 11033,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -6961,7 +6961,7 @@
 "anchor": "random-direction",
 "level": 4,
 "title": "Random Direction",
-"line": 11043,
+"line": 11041,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -6973,7 +6973,7 @@
 "anchor": "preparation-steps",
 "level": 4,
 "title": "Preparation Steps",
-"line": 11062,
+"line": 11060,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -6985,7 +6985,7 @@
 "anchor": "1011-climate-and-core-scenario-selection",
 "level": 4,
 "title": "10.1.1 Climate and Core Scenario Selection",
-"line": 11079,
+"line": 11077,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -6997,7 +6997,7 @@
 "anchor": "competitive-matched-play-variant",
 "level": 4,
 "title": "Competitive Matched Play Variant",
-"line": 11124,
+"line": 11122,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7009,7 +7009,7 @@
 "anchor": "secondary-objective-draft-variant",
 "level": 4,
 "title": "Secondary Objective Draft Variant",
-"line": 11132,
+"line": 11130,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7021,7 +7021,7 @@
 "anchor": "102-secondary-objectives-by-climate",
 "level": 3,
 "title": "10.2 Secondary Objectives by Climate",
-"line": 11136,
+"line": 11134,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios"
@@ -7032,7 +7032,7 @@
 "anchor": "climate-1-greenmark-secondary-objectives-1d20",
 "level": 4,
 "title": "Climate 1: Greenmark Secondary Objectives (1d20)",
-"line": 11152,
+"line": 11150,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7044,7 +7044,7 @@
 "anchor": "climate-2-ashlands-secondary-objectives-1d20",
 "level": 4,
 "title": "Climate 2: Ashlands Secondary Objectives (1d20)",
-"line": 11269,
+"line": 11267,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7056,7 +7056,7 @@
 "anchor": "climate-3-undermarches-secondary-objectives-1d20",
 "level": 4,
 "title": "Climate 3: Undermarches Secondary Objectives (1d20)",
-"line": 11399,
+"line": 11397,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7068,7 +7068,7 @@
 "anchor": "climate-4-pale-city-secondary-objectives-1d20",
 "level": 4,
 "title": "Climate 4: Pale City Secondary Objectives (1d20)",
-"line": 11515,
+"line": 11513,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7080,7 +7080,7 @@
 "anchor": "climate-5-sun-drowned-secondary-objectives-1d20",
 "level": 4,
 "title": "Climate 5: Sun-Drowned Secondary Objectives (1d20)",
-"line": 11641,
+"line": 11639,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7092,7 +7092,7 @@
 "anchor": "climate-6-the-mire-secondary-objectives-1d20",
 "level": 4,
 "title": "Climate 6: The Mire Secondary Objectives (1d20)",
-"line": 11759,
+"line": 11757,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7104,7 +7104,7 @@
 "anchor": "103-weather-tables-by-climate",
 "level": 3,
 "title": "10.3 Weather Tables by Climate",
-"line": 11886,
+"line": 11884,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios"
@@ -7115,7 +7115,7 @@
 "anchor": "climate-1-greenmark-weather-table",
 "level": 4,
 "title": "Climate 1: Greenmark Weather Table",
-"line": 11896,
+"line": 11894,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7127,7 +7127,7 @@
 "anchor": "climate-2-ashlands-weather-table",
 "level": 4,
 "title": "Climate 2: Ashlands Weather Table",
-"line": 11907,
+"line": 11905,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7139,7 +7139,7 @@
 "anchor": "climate-3-undermarches-cavern-conditions-table",
 "level": 4,
 "title": "Climate 3: Undermarches Cavern Conditions Table",
-"line": 11918,
+"line": 11916,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7151,7 +7151,7 @@
 "anchor": "climate-4-pale-city-weather-table",
 "level": 4,
 "title": "Climate 4: Pale City Weather Table",
-"line": 11931,
+"line": 11929,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7163,7 +7163,7 @@
 "anchor": "climate-5-sun-drowned-weather-table",
 "level": 4,
 "title": "Climate 5: Sun-Drowned Weather Table",
-"line": 11942,
+"line": 11940,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7175,7 +7175,7 @@
 "anchor": "climate-6-the-mire-weather-table",
 "level": 4,
 "title": "Climate 6: The Mire Weather Table",
-"line": 11953,
+"line": 11951,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7187,7 +7187,7 @@
 "anchor": "104-core-scenario-outlines",
 "level": 3,
 "title": "10.4 Core Scenario Outlines",
-"line": 11964,
+"line": 11962,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios"
@@ -7198,7 +7198,7 @@
 "anchor": "climate-1-greenmark-scenarios",
 "level": 4,
 "title": "Climate 1: Greenmark Scenarios",
-"line": 11974,
+"line": 11972,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7210,7 +7210,7 @@
 "anchor": "scenario-1-hunt-the-wild-beast-intro",
 "level": 5,
 "title": "Scenario 1: Hunt the Wild Beast [Intro]",
-"line": 11976,
+"line": 11974,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7223,7 +7223,7 @@
 "anchor": "scenario-2-the-whispering-grove",
 "level": 5,
 "title": "Scenario 2: The Whispering Grove",
-"line": 12044,
+"line": 12042,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7236,7 +7236,7 @@
 "anchor": "scenario-3-the-bandits-toll",
 "level": 5,
 "title": "Scenario 3: The Bandit's Toll",
-"line": 12114,
+"line": 12112,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7249,7 +7249,7 @@
 "anchor": "scenario-4-the-spiders-silk-route",
 "level": 5,
 "title": "Scenario 4: The Spider's Silk Route",
-"line": 12191,
+"line": 12189,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7262,7 +7262,7 @@
 "anchor": "scenario-5-the-ambushed-emissary",
 "level": 5,
 "title": "Scenario 5: The Ambushed Emissary",
-"line": 12262,
+"line": 12260,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7275,7 +7275,7 @@
 "anchor": "scenario-6-ritual-of-the-old-growth",
 "level": 5,
 "title": "Scenario 6: Ritual of the Old Growth",
-"line": 12340,
+"line": 12338,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7288,7 +7288,7 @@
 "anchor": "climate-2-ashlands-scenarios",
 "level": 4,
 "title": "Climate 2: Ashlands Scenarios",
-"line": 12427,
+"line": 12425,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7300,7 +7300,7 @@
 "anchor": "scenario-1-the-fallen-observatory-intro",
 "level": 5,
 "title": "Scenario 1: The Fallen Observatory [Intro]",
-"line": 12429,
+"line": 12427,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7313,7 +7313,7 @@
 "anchor": "scenario-2-the-guardians-test",
 "level": 5,
 "title": "Scenario 2: The Guardian's Test",
-"line": 12497,
+"line": 12495,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7326,7 +7326,7 @@
 "anchor": "scenario-3-the-shifting-sands-of-time",
 "level": 5,
 "title": "Scenario 3: The Shifting Sands of Time",
-"line": 12571,
+"line": 12569,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7339,7 +7339,7 @@
 "anchor": "scenario-4-the-sealed-archive",
 "level": 5,
 "title": "Scenario 4: The Sealed Archive",
-"line": 12626,
+"line": 12624,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7352,7 +7352,7 @@
 "anchor": "scenario-5-the-reliquary-of-broken-saints",
 "level": 5,
 "title": "Scenario 5: The Reliquary of Broken Saints",
-"line": 12706,
+"line": 12704,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7365,7 +7365,7 @@
 "anchor": "scenario-6-the-iron-vein-vault",
 "level": 5,
 "title": "Scenario 6: The Iron-Vein Vault",
-"line": 12780,
+"line": 12778,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7378,7 +7378,7 @@
 "anchor": "climate-3-undermarches-scenarios",
 "level": 4,
 "title": "Climate 3: Undermarches Scenarios",
-"line": 12879,
+"line": 12877,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7390,7 +7390,7 @@
 "anchor": "scenario-1-the-crystal-harvest-intro",
 "level": 5,
 "title": "Scenario 1: The Crystal Harvest [Intro]",
-"line": 12881,
+"line": 12879,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7403,7 +7403,7 @@
 "anchor": "scenario-2-the-chasm-crossing",
 "level": 5,
 "title": "Scenario 2: The Chasm Crossing",
-"line": 12947,
+"line": 12945,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7416,7 +7416,7 @@
 "anchor": "scenario-3-the-quake",
 "level": 5,
 "title": "Scenario 3: The Quake",
-"line": 13017,
+"line": 13015,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7429,7 +7429,7 @@
 "anchor": "scenario-4-the-undermarches-outpost-raid",
 "level": 5,
 "title": "Scenario 4: The Undermarches Outpost Raid",
-"line": 13082,
+"line": 13080,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7442,7 +7442,7 @@
 "anchor": "scenario-5-the-shadowed-under-passage",
 "level": 5,
 "title": "Scenario 5: The Shadowed Under Passage",
-"line": 13189,
+"line": 13187,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7455,7 +7455,7 @@
 "anchor": "scenario-6-the-ritual-of-shadow-binding",
 "level": 5,
 "title": "Scenario 6: The Ritual of Shadow Binding",
-"line": 13262,
+"line": 13260,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7468,7 +7468,7 @@
 "anchor": "climate-4-pale-city-scenarios",
 "level": 4,
 "title": "Climate 4: Pale City Scenarios",
-"line": 13366,
+"line": 13364,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7480,7 +7480,7 @@
 "anchor": "scenario-1-plunder-of-the-frozen-ruins-intro",
 "level": 5,
 "title": "Scenario 1: Plunder of the Frozen Ruins [Intro]",
-"line": 13368,
+"line": 13366,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7493,7 +7493,7 @@
 "anchor": "scenario-2-the-alchemists-frozen-laboratory",
 "level": 5,
 "title": "Scenario 2: The Alchemist's Frozen Laboratory",
-"line": 13420,
+"line": 13418,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7506,7 +7506,7 @@
 "anchor": "scenario-3-the-haunted-mausoleum",
 "level": 5,
 "title": "Scenario 3: The Haunted Mausoleum",
-"line": 13490,
+"line": 13488,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7519,7 +7519,7 @@
 "anchor": "scenario-4-the-clockwork-menagerie",
 "level": 5,
 "title": "Scenario 4: The Clockwork Menagerie",
-"line": 13559,
+"line": 13557,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7532,7 +7532,7 @@
 "anchor": "scenario-5-the-ice-wyrms-hoard",
 "level": 5,
 "title": "Scenario 5: The Ice Wyrm's Hoard",
-"line": 13619,
+"line": 13617,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7545,7 +7545,7 @@
 "anchor": "scenario-6-the-icebound-court",
 "level": 5,
 "title": "Scenario 6: The Icebound Court",
-"line": 13695,
+"line": 13693,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7558,7 +7558,7 @@
 "anchor": "climate-5-sun-drowned-scenarios",
 "level": 4,
 "title": "Climate 5: Sun-Drowned Scenarios",
-"line": 13771,
+"line": 13769,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7570,7 +7570,7 @@
 "anchor": "scenario-1-the-oasis-raiders-intro",
 "level": 5,
 "title": "Scenario 1: The Oasis Raiders [Intro]",
-"line": 13773,
+"line": 13771,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7583,7 +7583,7 @@
 "anchor": "scenario-2-the-cinder-lords-lost-brazier",
 "level": 5,
 "title": "Scenario 2: The Cinder Lord's Lost Brazier",
-"line": 13840,
+"line": 13838,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7596,7 +7596,7 @@
 "anchor": "scenario-3-tomb-of-the-sunken-kings",
 "level": 5,
 "title": "Scenario 3: Tomb of the Sunken Kings",
-"line": 13905,
+"line": 13903,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7609,7 +7609,7 @@
 "anchor": "scenario-4-the-sandwyrms-lair",
 "level": 5,
 "title": "Scenario 4: The Sandwyrm's Lair",
-"line": 13973,
+"line": 13971,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7622,7 +7622,7 @@
 "anchor": "scenario-5-the-cursed-colossus-of-the-waste",
 "level": 5,
 "title": "Scenario 5: The Cursed Colossus of the Waste",
-"line": 14035,
+"line": 14033,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7635,7 +7635,7 @@
 "anchor": "scenario-6-the-cinder-lords-obsidian-prison",
 "level": 5,
 "title": "Scenario 6: The Cinder Lord's Obsidian Prison",
-"line": 14110,
+"line": 14108,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7648,7 +7648,7 @@
 "anchor": "climate-6-the-mire-scenarios",
 "level": 4,
 "title": "Climate 6: The Mire Scenarios",
-"line": 14197,
+"line": 14195,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7660,7 +7660,7 @@
 "anchor": "scenario-1-the-reliquary-of-edrava-salttide-intro",
 "level": 5,
 "title": "Scenario 1: The Reliquary of Edrava Salttide [Intro]",
-"line": 14199,
+"line": 14197,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7673,7 +7673,7 @@
 "anchor": "scenario-2-the-lizardfolks-stolen-offerings",
 "level": 5,
 "title": "Scenario 2: The Lizardfolk's Stolen Offerings",
-"line": 14270,
+"line": 14268,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7686,7 +7686,7 @@
 "anchor": "scenario-3-the-mire-titans-fen",
 "level": 5,
 "title": "Scenario 3: The Mire Titan's Fen",
-"line": 14345,
+"line": 14343,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7699,7 +7699,7 @@
 "anchor": "scenario-4-the-blighted-heartwood",
 "level": 5,
 "title": "Scenario 4: The Blighted Heartwood",
-"line": 14420,
+"line": 14418,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7712,7 +7712,7 @@
 "anchor": "scenario-5-salttides-reckoning",
 "level": 5,
 "title": "Scenario 5: Salttide's Reckoning",
-"line": 14499,
+"line": 14497,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7725,7 +7725,7 @@
 "anchor": "scenario-6-the-serpents-sunken-hoard",
 "level": 5,
 "title": "Scenario 6: The Serpent's Sunken Hoard",
-"line": 14581,
+"line": 14579,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7738,7 +7738,7 @@
 "anchor": "105-solo-and-cooperative-play",
 "level": 3,
 "title": "10.5 Solo and Cooperative Play",
-"line": 14651,
+"line": 14649,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios"
@@ -7749,7 +7749,7 @@
 "anchor": "1051-allied-force-size",
 "level": 4,
 "title": "10.5.1 Allied Force Size",
-"line": 14657,
+"line": 14655,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7761,7 +7761,7 @@
 "anchor": "1052-solo-and-cooperative-setup-checklist",
 "level": 4,
 "title": "10.5.2 Solo and Cooperative Setup Checklist",
-"line": 14672,
+"line": 14670,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7773,7 +7773,7 @@
 "anchor": "1053-activation-order",
 "level": 4,
 "title": "10.5.3 Activation Order",
-"line": 14690,
+"line": 14688,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7785,7 +7785,7 @@
 "anchor": "1054-pve-initiative",
 "level": 4,
 "title": "10.5.4 PvE Initiative",
-"line": 14703,
+"line": 14701,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7797,7 +7797,7 @@
 "anchor": "1055-solo-and-cooperative-scenario-conversion",
 "level": 4,
 "title": "10.5.5 Solo and Cooperative Scenario Conversion",
-"line": 14714,
+"line": 14712,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7809,7 +7809,7 @@
 "anchor": "1056-scenario-pressure-and-scaling",
 "level": 4,
 "title": "10.5.6 Scenario Pressure and Scaling",
-"line": 14733,
+"line": 14731,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7821,7 +7821,7 @@
 "anchor": "1057-pressure-clocks",
 "level": 4,
 "title": "10.5.7 Pressure Clocks",
-"line": 14739,
+"line": 14737,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7833,7 +7833,7 @@
 "anchor": "1058-reinforcements-spawns-and-objective-impossibility",
 "level": 4,
 "title": "10.5.8 Reinforcements, Spawns, and Objective Impossibility",
-"line": 14762,
+"line": 14760,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7845,7 +7845,7 @@
 "anchor": "1059-extraction",
 "level": 4,
 "title": "10.5.9 Extraction",
-"line": 14770,
+"line": 14768,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7857,7 +7857,7 @@
 "anchor": "10510-victory-failure-and-outcome-grades",
 "level": 4,
 "title": "10.5.10 Victory, Failure, and Outcome Grades",
-"line": 14779,
+"line": 14777,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7869,7 +7869,7 @@
 "anchor": "10511-reward-timing-and-banking",
 "level": 4,
 "title": "10.5.11 Reward Timing and Banking",
-"line": 14796,
+"line": 14794,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7881,7 +7881,7 @@
 "anchor": "10512-play-example",
 "level": 4,
 "title": "10.5.12 Play Example",
-"line": 14805,
+"line": 14803,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7893,7 +7893,7 @@
 "anchor": "106-dynamic-party-and-scenario-scaling",
 "level": 3,
 "title": "10.6 Dynamic Party and Scenario Scaling",
-"line": 14809,
+"line": 14807,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios"
@@ -7904,7 +7904,7 @@
 "anchor": "1061-legal-party-structures",
 "level": 4,
 "title": "10.6.1 Legal Party Structures",
-"line": 14819,
+"line": 14817,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7916,7 +7916,7 @@
 "anchor": "solo-and-cooperative-play",
 "level": 5,
 "title": "Solo and Cooperative Play",
-"line": 14821,
+"line": 14819,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7929,7 +7929,7 @@
 "anchor": "competitive-pvpve-play",
 "level": 5,
 "title": "Competitive PvPvE Play",
-"line": 14825,
+"line": 14823,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7942,7 +7942,7 @@
 "anchor": "hirelings-and-summons",
 "level": 5,
 "title": "Hirelings and Summons",
-"line": 14836,
+"line": 14834,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7955,7 +7955,7 @@
 "anchor": "1062-hero-action-economy",
 "level": 4,
 "title": "10.6.2 Hero Action Economy",
-"line": 14840,
+"line": 14838,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7967,7 +7967,7 @@
 "anchor": "1063-apl",
 "level": 4,
 "title": "10.6.3 APL",
-"line": 14846,
+"line": 14844,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7979,7 +7979,7 @@
 "anchor": "solo-and-co-op-apl",
 "level": 5,
 "title": "Solo and Co-op APL",
-"line": 14850,
+"line": 14848,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -7992,7 +7992,7 @@
 "anchor": "competitive-pvpve-apl",
 "level": 5,
 "title": "Competitive PvPvE APL",
-"line": 14854,
+"line": 14852,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8005,7 +8005,7 @@
 "anchor": "lower-apl-party-bonus",
 "level": 5,
 "title": "Lower-APL Party Bonus",
-"line": 14858,
+"line": 14856,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8018,7 +8018,7 @@
 "anchor": "scenario-apl-in-competitive-pvpve",
 "level": 5,
 "title": "Scenario APL in Competitive PvPvE",
-"line": 14864,
+"line": 14862,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8031,7 +8031,7 @@
 "anchor": "1064-final-random-monster-groups",
 "level": 4,
 "title": "10.6.4 Final Random Monster Groups",
-"line": 14872,
+"line": 14870,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8043,7 +8043,7 @@
 "anchor": "scenario-specific-monster-coin-value",
 "level": 5,
 "title": "Scenario-Specific Monster Coin Value",
-"line": 14886,
+"line": 14884,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8056,7 +8056,7 @@
 "anchor": "maximum-group-cap",
 "level": 5,
 "title": "Maximum Group Cap",
-"line": 14899,
+"line": 14897,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8069,7 +8069,7 @@
 "anchor": "1065-random-monster-setup-patterns",
 "level": 4,
 "title": "10.6.5 Random Monster Setup Patterns",
-"line": 14903,
+"line": 14901,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8081,7 +8081,7 @@
 "anchor": "1066-monster-deployment-and-awake-groups",
 "level": 4,
 "title": "10.6.6 Monster Deployment and Awake Groups",
-"line": 14909,
+"line": 14907,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8093,7 +8093,7 @@
 "anchor": "1067-scenario-specific-awake-groups",
 "level": 4,
 "title": "10.6.7 Scenario-Specific Awake Groups",
-"line": 14917,
+"line": 14915,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8105,7 +8105,7 @@
 "anchor": "1068-minion-swarms",
 "level": 4,
 "title": "10.6.8 Minion Swarms",
-"line": 14921,
+"line": 14919,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8117,7 +8117,7 @@
 "anchor": "1069-objective-count-scaling",
 "level": 4,
 "title": "10.6.9 Objective Count Scaling",
-"line": 14932,
+"line": 14930,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8129,7 +8129,7 @@
 "anchor": "solo-and-co-op-objective-scaling",
 "level": 5,
 "title": "Solo and Co-op Objective Scaling",
-"line": 14936,
+"line": 14934,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8142,7 +8142,7 @@
 "anchor": "competitive-pvpve-objective-scaling",
 "level": 5,
 "title": "Competitive PvPvE Objective Scaling",
-"line": 14944,
+"line": 14942,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8155,7 +8155,7 @@
 "anchor": "scope-of-objective-scaling",
 "level": 5,
 "title": "Scope of Objective Scaling",
-"line": 14948,
+"line": 14946,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8168,7 +8168,7 @@
 "anchor": "10610-extraction-clauses",
 "level": 4,
 "title": "10.6.10 Extraction Clauses",
-"line": 14954,
+"line": 14952,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-10-scenarios",
@@ -8180,7 +8180,7 @@
 "anchor": "11-campaign-play",
 "level": 2,
 "title": "11. Campaign Play",
-"line": 14969,
+"line": 14967,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands"
 ]
@@ -8190,7 +8190,7 @@
 "anchor": "111-campaign-overview",
 "level": 3,
 "title": "11.1 Campaign Overview",
-"line": 14989,
+"line": 14987,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play"
@@ -8201,7 +8201,7 @@
 "anchor": "campaign-reference",
 "level": 4,
 "title": "Campaign Reference",
-"line": 14999,
+"line": 14997,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8213,7 +8213,7 @@
 "anchor": "1111-campaign-goal",
 "level": 4,
 "title": "11.1.1 Campaign Goal",
-"line": 15011,
+"line": 15009,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8225,7 +8225,7 @@
 "anchor": "1112-active-party-roster-and-bench",
 "level": 4,
 "title": "11.1.2 Active Party, Roster, and Bench",
-"line": 15015,
+"line": 15013,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8237,7 +8237,7 @@
 "anchor": "1113-campaign-setup",
 "level": 4,
 "title": "11.1.3 Campaign Setup",
-"line": 15025,
+"line": 15023,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8249,7 +8249,7 @@
 "anchor": "starting-roster",
 "level": 5,
 "title": "Starting Roster",
-"line": 15029,
+"line": 15027,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8262,7 +8262,7 @@
 "anchor": "starting-treasury-and-storage",
 "level": 5,
 "title": "Starting Treasury and Storage",
-"line": 15039,
+"line": 15037,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8275,7 +8275,7 @@
 "anchor": "no-starting-hirelings-or-summons",
 "level": 5,
 "title": "No Starting Hirelings or Summons",
-"line": 15047,
+"line": 15045,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8288,7 +8288,7 @@
 "anchor": "starting-stronghold",
 "level": 5,
 "title": "Starting Stronghold",
-"line": 15053,
+"line": 15051,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8301,7 +8301,7 @@
 "anchor": "persistent-and-per-adventure-elements",
 "level": 5,
 "title": "Persistent and Per-Adventure Elements",
-"line": 15057,
+"line": 15055,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8314,7 +8314,7 @@
 "anchor": "solo-and-cooperative-campaigns",
 "level": 5,
 "title": "Solo and Cooperative Campaigns",
-"line": 15085,
+"line": 15083,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8327,7 +8327,7 @@
 "anchor": "matched-play-parity",
 "level": 5,
 "title": "Matched-Play Parity",
-"line": 15089,
+"line": 15087,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8340,7 +8340,7 @@
 "anchor": "1114-treasury-and-storage",
 "level": 4,
 "title": "11.1.4 Treasury and Storage",
-"line": 15093,
+"line": 15091,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8352,7 +8352,7 @@
 "anchor": "1115-the-three-fates",
 "level": 4,
 "title": "11.1.5 The Three Fates",
-"line": 15105,
+"line": 15103,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8364,7 +8364,7 @@
 "anchor": "die",
 "level": 5,
 "title": "Die",
-"line": 15113,
+"line": 15111,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8377,7 +8377,7 @@
 "anchor": "retire",
 "level": 5,
 "title": "Retire",
-"line": 15125,
+"line": 15123,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8390,7 +8390,7 @@
 "anchor": "retirement-payout",
 "level": 5,
 "title": "Retirement Payout",
-"line": 15139,
+"line": 15137,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8403,7 +8403,7 @@
 "anchor": "triumph",
 "level": 5,
 "title": "Triumph",
-"line": 15156,
+"line": 15154,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8416,7 +8416,7 @@
 "anchor": "1116-new-recruits",
 "level": 4,
 "title": "11.1.6 New Recruits",
-"line": 15168,
+"line": 15166,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8428,7 +8428,7 @@
 "anchor": "112-the-campaign-cycle",
 "level": 3,
 "title": "11.2 The Campaign Cycle",
-"line": 15191,
+"line": 15189,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play"
@@ -8439,7 +8439,7 @@
 "anchor": "1121-phase-1-expedition",
 "level": 4,
 "title": "11.2.1 Phase 1: Expedition",
-"line": 15202,
+"line": 15200,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8451,7 +8451,7 @@
 "anchor": "1122-phase-2-skirmish",
 "level": 4,
 "title": "11.2.2 Phase 2: Skirmish",
-"line": 15219,
+"line": 15217,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8463,7 +8463,7 @@
 "anchor": "1123-phase-3-aftermath",
 "level": 4,
 "title": "11.2.3 Phase 3: Aftermath",
-"line": 15223,
+"line": 15221,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8475,7 +8475,7 @@
 "anchor": "step-1-secure-coins-and-loot",
 "level": 5,
 "title": "Step 1: Secure Coins and Loot",
-"line": 15227,
+"line": 15225,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8488,7 +8488,7 @@
 "anchor": "step-2-resolve-the-fallen",
 "level": 5,
 "title": "Step 2: Resolve the Fallen",
-"line": 15233,
+"line": 15231,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8501,7 +8501,7 @@
 "anchor": "step-3-journey-home",
 "level": 5,
 "title": "Step 3: Journey Home",
-"line": 15243,
+"line": 15241,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8514,7 +8514,7 @@
 "anchor": "climate-1-greenmark-journey-table-1d20",
 "level": 5,
 "title": "Climate 1: Greenmark Journey Table (1d20)",
-"line": 15255,
+"line": 15253,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8527,7 +8527,7 @@
 "anchor": "climate-2-ashlands-journey-table-1d20",
 "level": 5,
 "title": "Climate 2: Ashlands Journey Table (1d20)",
-"line": 15280,
+"line": 15278,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8540,7 +8540,7 @@
 "anchor": "climate-3-undermarches-journey-table-1d20",
 "level": 5,
 "title": "Climate 3: Undermarches Journey Table (1d20)",
-"line": 15305,
+"line": 15303,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8553,7 +8553,7 @@
 "anchor": "climate-4-pale-city-journey-table-1d20",
 "level": 5,
 "title": "Climate 4: Pale City Journey Table (1d20)",
-"line": 15330,
+"line": 15328,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8566,7 +8566,7 @@
 "anchor": "climate-5-sun-drowned-journey-table-1d20",
 "level": 5,
 "title": "Climate 5: Sun-Drowned Journey Table (1d20)",
-"line": 15355,
+"line": 15353,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8579,7 +8579,7 @@
 "anchor": "climate-6-the-mire-journey-table-1d20",
 "level": 5,
 "title": "Climate 6: The Mire Journey Table (1d20)",
-"line": 15380,
+"line": 15378,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8592,7 +8592,7 @@
 "anchor": "1124-phase-4-town-phase",
 "level": 4,
 "title": "11.2.4 Phase 4: Town Phase",
-"line": 15407,
+"line": 15405,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8604,7 +8604,7 @@
 "anchor": "the-grand-hall",
 "level": 5,
 "title": "The Grand Hall",
-"line": 15428,
+"line": 15426,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8617,7 +8617,7 @@
 "anchor": "the-chapel",
 "level": 5,
 "title": "The Chapel",
-"line": 15437,
+"line": 15435,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8630,7 +8630,7 @@
 "anchor": "the-arcane-spire",
 "level": 5,
 "title": "The Arcane Spire",
-"line": 15446,
+"line": 15444,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8643,7 +8643,7 @@
 "anchor": "the-training-grounds",
 "level": 5,
 "title": "The Training Grounds",
-"line": 15456,
+"line": 15454,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8656,7 +8656,7 @@
 "anchor": "the-ironworks",
 "level": 5,
 "title": "The Ironworks",
-"line": 15463,
+"line": 15461,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8669,7 +8669,7 @@
 "anchor": "the-guild-of-keys",
 "level": 5,
 "title": "The Guild of Keys",
-"line": 15469,
+"line": 15467,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8682,7 +8682,7 @@
 "anchor": "1125-hirelings",
 "level": 4,
 "title": "11.2.5 Hirelings",
-"line": 15483,
+"line": 15481,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8694,7 +8694,7 @@
 "anchor": "active-hirelings-and-summon-limits",
 "level": 5,
 "title": "Active Hirelings and Summon Limits",
-"line": 15491,
+"line": 15489,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8707,7 +8707,7 @@
 "anchor": "specialist-hireling-roster",
 "level": 5,
 "title": "Specialist Hireling Roster",
-"line": 15514,
+"line": 15512,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8720,7 +8720,7 @@
 "anchor": "specialist-hireling-rules",
 "level": 5,
 "title": "Specialist Hireling Rules",
-"line": 15535,
+"line": 15533,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8733,7 +8733,7 @@
 "anchor": "1126-animal-companions",
 "level": 4,
 "title": "11.2.6 Animal Companions",
-"line": 15543,
+"line": 15541,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8745,7 +8745,7 @@
 "anchor": "animal-companion-roster",
 "level": 5,
 "title": "Animal Companion Roster",
-"line": 15566,
+"line": 15564,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8758,7 +8758,7 @@
 "anchor": "companion-control-and-replacement",
 "level": 5,
 "title": "Companion Control and Replacement",
-"line": 15583,
+"line": 15581,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8771,7 +8771,7 @@
 "anchor": "113-building-the-stronghold",
 "level": 3,
 "title": "11.3 Building the Stronghold",
-"line": 15591,
+"line": 15589,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play"
@@ -8782,7 +8782,7 @@
 "anchor": "the-vault",
 "level": 4,
 "title": "The Vault",
-"line": 15614,
+"line": 15612,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8794,7 +8794,7 @@
 "anchor": "the-barracks",
 "level": 4,
 "title": "The Barracks",
-"line": 15624,
+"line": 15622,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8806,7 +8806,7 @@
 "anchor": "the-armoury",
 "level": 4,
 "title": "The Armoury",
-"line": 15634,
+"line": 15632,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8818,7 +8818,7 @@
 "anchor": "the-apothecary",
 "level": 4,
 "title": "The Apothecary",
-"line": 15644,
+"line": 15642,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8830,7 +8830,7 @@
 "anchor": "the-outer-walls",
 "level": 4,
 "title": "The Outer Walls",
-"line": 15654,
+"line": 15652,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8842,7 +8842,7 @@
 "anchor": "the-arcanum",
 "level": 4,
 "title": "The Arcanum",
-"line": 15664,
+"line": 15662,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8854,7 +8854,7 @@
 "anchor": "the-stronghold-chapel",
 "level": 4,
 "title": "The Stronghold Chapel",
-"line": 15674,
+"line": 15672,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8866,7 +8866,7 @@
 "anchor": "the-war-room",
 "level": 4,
 "title": "The War Room",
-"line": 15684,
+"line": 15682,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8878,7 +8878,7 @@
 "anchor": "the-expedition-hall",
 "level": 4,
 "title": "The Expedition Hall",
-"line": 15694,
+"line": 15692,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8890,7 +8890,7 @@
 "anchor": "the-undercroft",
 "level": 4,
 "title": "The Undercroft",
-"line": 15704,
+"line": 15702,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8902,7 +8902,7 @@
 "anchor": "114-legendary-veterans",
 "level": 3,
 "title": "11.4 Legendary Veterans",
-"line": 15714,
+"line": 15712,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play"
@@ -8913,7 +8913,7 @@
 "anchor": "115-solo-and-cooperative-campaign-adjustments",
 "level": 3,
 "title": "11.5 Solo and Cooperative Campaign Adjustments",
-"line": 15735,
+"line": 15733,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play"
@@ -8924,7 +8924,7 @@
 "anchor": "1151-campaign-length-and-party-structure",
 "level": 4,
 "title": "11.5.1 Campaign Length and Party Structure",
-"line": 15739,
+"line": 15737,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8936,7 +8936,7 @@
 "anchor": "1152-reward-and-economy-adjustments",
 "level": 4,
 "title": "11.5.2 Reward and Economy Adjustments",
-"line": 15749,
+"line": 15747,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8948,7 +8948,7 @@
 "anchor": "1153-solo-and-cooperative-campaign-generation",
 "level": 4,
 "title": "11.5.3 Solo and Cooperative Campaign Generation",
-"line": 15759,
+"line": 15757,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8960,7 +8960,7 @@
 "anchor": "1154-triumph-finale",
 "level": 4,
 "title": "11.5.4 Triumph Finale",
-"line": 15765,
+"line": 15763,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8972,7 +8972,7 @@
 "anchor": "triumph-setup",
 "level": 5,
 "title": "Triumph Setup",
-"line": 15778,
+"line": 15776,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8985,7 +8985,7 @@
 "anchor": "triumph-support",
 "level": 5,
 "title": "Triumph Support",
-"line": 15788,
+"line": 15786,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -8998,7 +8998,7 @@
 "anchor": "triumph-minions",
 "level": 5,
 "title": "Triumph Minions",
-"line": 15792,
+"line": 15790,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -9011,7 +9011,7 @@
 "anchor": "triumph-boss-rules",
 "level": 5,
 "title": "Triumph Boss Rules",
-"line": 15807,
+"line": 15805,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -9024,7 +9024,7 @@
 "anchor": "triumph-success-and-failure",
 "level": 5,
 "title": "Triumph Success and Failure",
-"line": 15817,
+"line": 15815,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -9037,7 +9037,7 @@
 "anchor": "triumph-objective-table",
 "level": 5,
 "title": "Triumph Objective Table",
-"line": 15827,
+"line": 15825,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -9050,7 +9050,7 @@
 "anchor": "triumph-boss-table",
 "level": 5,
 "title": "Triumph Boss Table",
-"line": 16047,
+"line": 16045,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-11-campaign-play",
@@ -9063,7 +9063,7 @@
 "anchor": "appendix-a-learn-to-play",
 "level": 2,
 "title": "Appendix A. Learn to Play",
-"line": 16072,
+"line": 16070,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands"
 ]
@@ -9073,7 +9073,7 @@
 "anchor": "a1-learn-to-play-at-a-glance",
 "level": 3,
 "title": "A.1 Learn to Play At a Glance",
-"line": 16084,
+"line": 16082,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9084,7 +9084,7 @@
 "anchor": "a2-what-you-need-for-the-first-game",
 "level": 3,
 "title": "A.2 What You Need for the First Game",
-"line": 16096,
+"line": 16094,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9095,7 +9095,7 @@
 "anchor": "a3-learn-to-play-parties",
 "level": 3,
 "title": "A.3 Learn-to-Play Parties",
-"line": 16115,
+"line": 16113,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9106,7 +9106,7 @@
 "anchor": "party-a-road-wardens",
 "level": 4,
 "title": "Party A: Road Wardens",
-"line": 16121,
+"line": 16119,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play",
@@ -9118,7 +9118,7 @@
 "anchor": "party-b-black-briar-raiders",
 "level": 4,
 "title": "Party B: Black Briar Raiders",
-"line": 16143,
+"line": 16141,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play",
@@ -9130,7 +9130,7 @@
 "anchor": "neutral-monsters-pack-of-dire-wolves",
 "level": 4,
 "title": "Neutral Monsters: Pack of Dire Wolves",
-"line": 16163,
+"line": 16161,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play",
@@ -9142,7 +9142,7 @@
 "anchor": "a4-quickstart-scenario-the-broken-courier",
 "level": 3,
 "title": "A.4 Quickstart Scenario: The Broken Courier",
-"line": 16174,
+"line": 16172,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9153,7 +9153,7 @@
 "anchor": "a5-goal-of-the-game",
 "level": 3,
 "title": "A.5 Goal of the Game",
-"line": 16211,
+"line": 16209,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9164,7 +9164,7 @@
 "anchor": "a6-round-structure",
 "level": 3,
 "title": "A.6 Round Structure",
-"line": 16221,
+"line": 16219,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9175,7 +9175,7 @@
 "anchor": "the-party-phase",
 "level": 4,
 "title": "The Party Phase",
-"line": 16238,
+"line": 16236,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play",
@@ -9187,7 +9187,7 @@
 "anchor": "the-monster-phase",
 "level": 4,
 "title": "The Monster Phase",
-"line": 16248,
+"line": 16246,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play",
@@ -9199,7 +9199,7 @@
 "anchor": "end-of-round",
 "level": 4,
 "title": "End of Round",
-"line": 16252,
+"line": 16250,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play",
@@ -9211,7 +9211,7 @@
 "anchor": "a7-hero-activations",
 "level": 3,
 "title": "A.7 Hero Activations",
-"line": 16256,
+"line": 16254,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9222,7 +9222,7 @@
 "anchor": "a8-attacks-multiple-attacks-and-reactions",
 "level": 3,
 "title": "A.8 Attacks, Multiple Attacks, and Reactions",
-"line": 16277,
+"line": 16275,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9233,7 +9233,7 @@
 "anchor": "a9-monster-phase",
 "level": 3,
 "title": "A.9 Monster Phase",
-"line": 16315,
+"line": 16313,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9244,7 +9244,7 @@
 "anchor": "a10-objectives-extraction-and-scoring",
 "level": 3,
 "title": "A.10 Objectives, Extraction, and Scoring",
-"line": 16342,
+"line": 16340,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9255,7 +9255,7 @@
 "anchor": "a11-sample-opening-two-full-rounds-of-play",
 "level": 3,
 "title": "A.11 Sample Opening: Two Full Rounds of Play",
-"line": 16350,
+"line": 16348,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9266,7 +9266,7 @@
 "anchor": "initial-positions-and-values",
 "level": 4,
 "title": "Initial Positions and Values",
-"line": 16354,
+"line": 16352,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play",
@@ -9278,7 +9278,7 @@
 "anchor": "round-1",
 "level": 4,
 "title": "Round 1",
-"line": 16375,
+"line": 16373,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play",
@@ -9290,7 +9290,7 @@
 "anchor": "round-2",
 "level": 4,
 "title": "Round 2",
-"line": 16431,
+"line": 16429,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play",
@@ -9302,7 +9302,7 @@
 "anchor": "a12-after-your-first-game",
 "level": 3,
 "title": "A.12 After Your First Game",
-"line": 16493,
+"line": 16491,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-a-learn-to-play"
@@ -9313,7 +9313,7 @@
 "anchor": "appendix-b-basic-mode",
 "level": 2,
 "title": "Appendix B. Basic Mode",
-"line": 16509,
+"line": 16507,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands"
 ]
@@ -9323,7 +9323,7 @@
 "anchor": "b1-basic-mode-at-a-glance",
 "level": 3,
 "title": "B.1 Basic Mode At a Glance",
-"line": 16521,
+"line": 16519,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode"
@@ -9334,7 +9334,7 @@
 "anchor": "b2-first-10-minutes-of-basic-mode",
 "level": 3,
 "title": "B.2 First 10 Minutes of Basic Mode",
-"line": 16535,
+"line": 16533,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode"
@@ -9345,7 +9345,7 @@
 "anchor": "b3-basic-mode-components-and-drafting",
 "level": 3,
 "title": "B.3 Basic Mode Components and Drafting",
-"line": 16547,
+"line": 16545,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode"
@@ -9356,7 +9356,7 @@
 "anchor": "b4-basic-mode-hero-profiles",
 "level": 3,
 "title": "B.4 Basic Mode Hero Profiles",
-"line": 16577,
+"line": 16575,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode"
@@ -9367,7 +9367,7 @@
 "anchor": "ironscar",
 "level": 4,
 "title": "Ironscar",
-"line": 16585,
+"line": 16583,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9379,7 +9379,7 @@
 "anchor": "blackknife",
 "level": 4,
 "title": "Blackknife",
-"line": 16621,
+"line": 16619,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9391,7 +9391,7 @@
 "anchor": "hearthbell",
 "level": 4,
 "title": "Hearthbell",
-"line": 16657,
+"line": 16655,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9403,7 +9403,7 @@
 "anchor": "graveglass",
 "level": 4,
 "title": "Graveglass",
-"line": 16693,
+"line": 16691,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9415,7 +9415,7 @@
 "anchor": "redhand",
 "level": 4,
 "title": "Redhand",
-"line": 16729,
+"line": 16727,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9427,7 +9427,7 @@
 "anchor": "thornmere",
 "level": 4,
 "title": "Thornmere",
-"line": 16766,
+"line": 16764,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9439,7 +9439,7 @@
 "anchor": "oathscale",
 "level": 4,
 "title": "Oathscale",
-"line": 16802,
+"line": 16800,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9451,7 +9451,7 @@
 "anchor": "mossgrave",
 "level": 4,
 "title": "Mossgrave",
-"line": 16836,
+"line": 16834,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9463,7 +9463,7 @@
 "anchor": "thoughtwake",
 "level": 4,
 "title": "Thoughtwake",
-"line": 16876,
+"line": 16874,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9475,7 +9475,7 @@
 "anchor": "ashborn",
 "level": 4,
 "title": "Ashborn",
-"line": 16911,
+"line": 16909,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9487,7 +9487,7 @@
 "anchor": "silkshade",
 "level": 4,
 "title": "Silkshade",
-"line": 16946,
+"line": 16944,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9499,7 +9499,7 @@
 "anchor": "crowwick",
 "level": 4,
 "title": "Crowwick",
-"line": 16982,
+"line": 16980,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9511,7 +9511,7 @@
 "anchor": "b5-basic-mode-monster-profiles",
 "level": 3,
 "title": "B.5 Basic Mode Monster Profiles",
-"line": 17018,
+"line": 17016,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode"
@@ -9522,7 +9522,7 @@
 "anchor": "basic-mode-goblin",
 "level": 4,
 "title": "Basic Mode Goblin",
-"line": 17022,
+"line": 17020,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9534,7 +9534,7 @@
 "anchor": "basic-mode-skeleton-warrior",
 "level": 4,
 "title": "Basic Mode Skeleton Warrior",
-"line": 17036,
+"line": 17034,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9546,7 +9546,7 @@
 "anchor": "basic-mode-bandit",
 "level": 4,
 "title": "Basic Mode Bandit",
-"line": 17048,
+"line": 17046,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9558,7 +9558,7 @@
 "anchor": "basic-mode-ogre",
 "level": 4,
 "title": "Basic Mode Ogre",
-"line": 17061,
+"line": 17059,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode",
@@ -9570,7 +9570,7 @@
 "anchor": "b6-basic-scenario-the-couriers-strongbox",
 "level": 3,
 "title": "B.6 Basic Scenario: The Courier's Strongbox",
-"line": 17074,
+"line": 17072,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode"
@@ -9581,7 +9581,7 @@
 "anchor": "b7-basic-mode-replay-variants",
 "level": 3,
 "title": "B.7 Basic Mode Replay Variants",
-"line": 17098,
+"line": 17096,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-b-basic-mode"
@@ -9592,7 +9592,7 @@
 "anchor": "appendix-c-rules-reference",
 "level": 2,
 "title": "Appendix C. Rules Reference",
-"line": 17128,
+"line": 17126,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands"
 ]
@@ -9602,7 +9602,7 @@
 "anchor": "quick-reference-index",
 "level": 3,
 "title": "Quick Reference Index",
-"line": 17132,
+"line": 17130,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9613,7 +9613,7 @@
 "anchor": "c1-timing-summary",
 "level": 3,
 "title": "C.1 Timing Summary",
-"line": 17150,
+"line": 17148,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9624,7 +9624,7 @@
 "anchor": "timing-terms",
 "level": 4,
 "title": "Timing Terms",
-"line": 17182,
+"line": 17180,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9636,7 +9636,7 @@
 "anchor": "c2-core-terms-and-abbreviations",
 "level": 3,
 "title": "C.2 Core Terms and Abbreviations",
-"line": 17201,
+"line": 17199,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9647,7 +9647,7 @@
 "anchor": "c3-conditions-summary",
 "level": 3,
 "title": "C.3 Conditions Summary",
-"line": 17220,
+"line": 17218,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9658,7 +9658,7 @@
 "anchor": "c4-actions-summary",
 "level": 3,
 "title": "C.4 Actions Summary",
-"line": 17246,
+"line": 17244,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9669,7 +9669,7 @@
 "anchor": "c5-reactions-summary",
 "level": 3,
 "title": "C.5 Reactions Summary",
-"line": 17269,
+"line": 17267,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9680,7 +9680,7 @@
 "anchor": "c6-attack-resolution-summary",
 "level": 3,
 "title": "C.6 Attack Resolution Summary",
-"line": 17280,
+"line": 17278,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9691,7 +9691,7 @@
 "anchor": "critical-hits",
 "level": 4,
 "title": "Critical Hits",
-"line": 17294,
+"line": 17292,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9703,7 +9703,7 @@
 "anchor": "damage-and-av",
 "level": 4,
 "title": "Damage and AV",
-"line": 17306,
+"line": 17304,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9715,7 +9715,7 @@
 "anchor": "multiple-attacks",
 "level": 4,
 "title": "Multiple Attacks",
-"line": 17312,
+"line": 17310,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9727,7 +9727,7 @@
 "anchor": "c7-power-summary",
 "level": 3,
 "title": "C.7 Power Summary",
-"line": 17316,
+"line": 17314,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9738,7 +9738,7 @@
 "anchor": "c8-monster-ai-summary",
 "level": 3,
 "title": "C.8 Monster AI Summary",
-"line": 17338,
+"line": 17336,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9749,7 +9749,7 @@
 "anchor": "c9-summon-summary",
 "level": 3,
 "title": "C.9 Summon Summary",
-"line": 17355,
+"line": 17353,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9760,7 +9760,7 @@
 "anchor": "c10-campaign-summary",
 "level": 3,
 "title": "C.10 Campaign Summary",
-"line": 17365,
+"line": 17363,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9771,7 +9771,7 @@
 "anchor": "pausing-and-resuming-a-campaign",
 "level": 4,
 "title": "Pausing and Resuming a Campaign",
-"line": 17384,
+"line": 17382,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9783,7 +9783,7 @@
 "anchor": "c11-glossary-of-terms-and-conditions",
 "level": 3,
 "title": "C.11 Glossary of Terms and Conditions",
-"line": 17390,
+"line": 17388,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9794,7 +9794,7 @@
 "anchor": "c12-play-examples",
 "level": 3,
 "title": "C.12 Play Examples",
-"line": 17781,
+"line": 17779,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9805,7 +9805,7 @@
 "anchor": "hero-creation-example",
 "level": 4,
 "title": "Hero Creation Example",
-"line": 17783,
+"line": 17781,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9817,7 +9817,7 @@
 "anchor": "power-casting-example",
 "level": 4,
 "title": "Power Casting Example",
-"line": 17787,
+"line": 17785,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9829,7 +9829,7 @@
 "anchor": "melee-combat-example",
 "level": 4,
 "title": "Melee Combat Example",
-"line": 17791,
+"line": 17789,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9841,7 +9841,7 @@
 "anchor": "ranged-combat-example",
 "level": 4,
 "title": "Ranged Combat Example",
-"line": 17795,
+"line": 17793,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9853,7 +9853,7 @@
 "anchor": "scenario-generation-example",
 "level": 4,
 "title": "Scenario Generation Example",
-"line": 17799,
+"line": 17797,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9865,7 +9865,7 @@
 "anchor": "monster-ai-example",
 "level": 4,
 "title": "Monster AI Example",
-"line": 17803,
+"line": 17801,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9877,7 +9877,7 @@
 "anchor": "hostile-ai-step-1-example",
 "level": 4,
 "title": "Hostile AI Step 1 Example",
-"line": 17807,
+"line": 17805,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9889,7 +9889,7 @@
 "anchor": "grid-movement-and-multi-square-example",
 "level": 4,
 "title": "Grid Movement and Multi-Square Example",
-"line": 17811,
+"line": 17809,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9901,7 +9901,7 @@
 "anchor": "grid-los-and-cover-example",
 "level": 4,
 "title": "Grid LOS and Cover Example",
-"line": 17815,
+"line": 17813,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9913,7 +9913,7 @@
 "anchor": "monster-route-resolution-example",
 "level": 4,
 "title": "Monster Route-Resolution Example",
-"line": 17819,
+"line": 17817,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9925,7 +9925,7 @@
 "anchor": "c13-single-sheet-rules-summary",
 "level": 3,
 "title": "C.13 Single-Sheet Rules Summary",
-"line": 17823,
+"line": 17821,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"
@@ -9936,7 +9936,7 @@
 "anchor": "size-and-footprints-summary",
 "level": 4,
 "title": "Size and Footprints Summary",
-"line": 17827,
+"line": 17825,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9948,7 +9948,7 @@
 "anchor": "side-a-round-actions-and-combat",
 "level": 4,
 "title": "Side A: Round, Actions, and Combat",
-"line": 17838,
+"line": 17836,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9960,7 +9960,7 @@
 "anchor": "adventure-preparation",
 "level": 5,
 "title": "Adventure Preparation",
-"line": 17840,
+"line": 17838,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9973,7 +9973,7 @@
 "anchor": "round-sequence",
 "level": 5,
 "title": "Round Sequence",
-"line": 17846,
+"line": 17844,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9986,7 +9986,7 @@
 "anchor": "universal-actions",
 "level": 5,
 "title": "Universal Actions",
-"line": 17855,
+"line": 17853,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -9999,7 +9999,7 @@
 "anchor": "attack-resolution",
 "level": 5,
 "title": "Attack Resolution",
-"line": 17873,
+"line": 17871,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -10012,7 +10012,7 @@
 "anchor": "combat-reactions",
 "level": 5,
 "title": "Combat Reactions",
-"line": 17885,
+"line": 17883,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -10025,7 +10025,7 @@
 "anchor": "power-defaults",
 "level": 5,
 "title": "Power Defaults",
-"line": 17894,
+"line": 17892,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -10038,7 +10038,7 @@
 "anchor": "side-b-conditions-ai-terrain-and-cover",
 "level": 4,
 "title": "Side B: Conditions, AI, Terrain, and Cover",
-"line": 17901,
+"line": 17899,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -10050,7 +10050,7 @@
 "anchor": "rules-boundaries",
 "level": 5,
 "title": "Rules Boundaries",
-"line": 17903,
+"line": 17901,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -10063,7 +10063,7 @@
 "anchor": "conditions",
 "level": 5,
 "title": "Conditions",
-"line": 17909,
+"line": 17907,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -10076,7 +10076,7 @@
 "anchor": "monster-ai-flow",
 "level": 5,
 "title": "Monster AI Flow",
-"line": 17932,
+"line": 17930,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -10089,7 +10089,7 @@
 "anchor": "terrain-and-cover-snapshot",
 "level": 5,
 "title": "Terrain and Cover Snapshot",
-"line": 17944,
+"line": 17942,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference",
@@ -10102,7 +10102,7 @@
 "anchor": "c14-equipment-quick-reference",
 "level": 3,
 "title": "C.14 Equipment Quick Reference",
-"line": 17956,
+"line": 17954,
 "parents": [
 "h-heraldry-skirmish-the-dying-lands",
 "h-appendix-c-rules-reference"

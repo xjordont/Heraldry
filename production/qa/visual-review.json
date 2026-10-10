@@ -1,12 +1,12 @@
 {
- "pdf": "dist/Heraldry_RC488_inkjet-borderless.pdf",
- "sha256": "51efdda8961e526e42e33f05d7abd32cee8356242570ce12d050b18020692fa9",
+ "pdf": "dist/Heraldry_RC490_inkjet-borderless.pdf",
+ "sha256": "653c30e897595b9e6e763f96d0c450b22c18622c8f0d489c5cd848cda0cd6a71",
  "pages": 597,
  "reviewer": "Claude Code orchestrator (actual image inspection in session)",
- "reviewed_at": "2026-10-10T14:31:06+00:00",
+ "reviewed_at": "2026-10-10T16:01:24+00:00",
  "all_page_contact_sheets": {
   "pages_covered": "1-597 of this exact clean-build PDF",
-  "method": "RC488 delta review: every page compared with the visually reviewed RC487 PDF by per-page text and embedded-image signature; pagination identical (597 pages); the 11 differing pages (1, 266, 276, 277, 283, 293, 299, 301, 464, 465, 471) rendered and inspected at 55 dpi; the other 586 pages are text- and image-identical to the reviewed RC487 pages"
+  "method": "Delta chain from the visually reviewed RC488 PDF, with per-page text and embedded-image signatures. RC489 vs RC488: 26 differing pages (1, 265, 275, 279, 281, 283, 285, 287, 289, 295, 301, 304-306, 364, 367, 369, 370, 372, 373, 375, 377, 379, 380, 439, 464), all rendered and inspected at 55 dpi. RC490 vs RC489: pages 1 and 306, with p.306 inspected at 70 dpi. Pagination is identical (597 pages); all other pages are text- and image-identical to reviewed pages."
  },
  "pages_reviewed": [
   1,
@@ -648,13 +648,12 @@
   "Fresh-page section starts and complete-unit keeps leave intentional whitespace."
  ],
  "limits": "All interior pages reviewed at contact-sheet scale, nineteen detailed pages plus one inherited blank, both covers and calibration, and one overscan specimen. Not glyph-level proofreading of every page, independent second review, or physical printer proof.",
- "status": "PASS (delta review against reviewed RC487 plus inspection of all changed pages; not glyph-level proofreading)",
+ "status": "PASS (delta review chained to the reviewed RC488 PDF, every changed page inspected; not glyph-level proofreading)",
  "detail_viewed": [
-  "p.464 FIG-52 The Mire 2 (Swamp Goblins) placed",
-  "pp.266-301 bestiary entries changed in RC488 (Orc, Undead Champion, Stone Sentinel, Noxcloth, White Court Guard, Frost Giant, Giant Scorpion)",
-  "p.471 The Mire 5 Summon Bog Minions"
+  "p.306 Tomb Guardian (RC490 correction) at 70 dpi",
+  "RC489 bestiary and 10.2/10.4 pages at 55 dpi"
  ],
  "changes_this_run": [
-  "RC488 owner bestiary and Mire refinements (13 patches); FIG-52 redrawn"
+  "RC489 audit resolution (31 patches) and RC490 Tomb Guardian correction"
  ]
 }

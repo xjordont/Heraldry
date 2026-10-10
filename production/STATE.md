@@ -104,3 +104,21 @@ Mandatory: every complete fit-capable scenario, section/subsection, table, proce
 - Briefs, prompts, queue and ILLUSTRATION_LIST updated for the changed entries.
 - Clean build: 597 interior pages, identical pagination; 11 pages differ from RC487, all inspected. 19/19 checks PASS; release ZIP built. The RC486/RC487 dist PDFs are retired from dist/. Physical proof NOT TESTED.
 - Next: owner starts ChatGPT Work on production/art/gpt/INSTRUCTIONS.md (anchors queue: 5 items; Greythorn already received).
+
+## Independent RC488 audit resolved: RC489 and RC490 — 2026-10-10
+- Owner asked to double-check the manuscript and illustration instructions. Two independent audits were archived in production/qa/rc488-audit-manuscript.json and rc488-audit-art.json.
+- **RC489** (31 patches; owner: "yes but replace staff with the mundane weapon quarterstaff"):
+  - Forsaken Duelist rapier.
+  - Flavour/stat-block consistency for 9 monsters.
+  - Elder Vrymk melee wording.
+  - In-climate creatures in Pale City 3 and 13 secondary objectives.
+  - Stray "None." bullets removed.
+  - Deep Elf Priest and Mire 2 Scale-Shaman Quarterstaff.
+- **RC490:** one corrective patch for my duplicated Tomb Guardian clause in RC489-04, found by the independent figure re-review.
+- **Figures:** citations remapped with tools/remap_figure_lines.py; independent delta reviews give gate 57/57, 0 open.
+- **Art:**
+  - Prompt builder: "must" requirements separated from prohibitions; isolation framing kept for figure families; traditions are scene vignettes; chapter art is 4.5 in.
+  - ChatGPT Work instructions: Git LFS, rebase before push, file types.
+  - All 274 briefs fixed (scenery-free figures, stat-block weapons, cover party per Package A, scale figures, de-duplication) and updated to RC489 text.
+- **Build:** 597 pages; every changed page inspected; 19/19 checks PASS; RC490 release ZIP built.
+- **Left open, not owner-approved:** Desert Naga Hexscale gives Sleeping where the flavour says weak; Undermarches 6 allied Spectre reward; judgement-call size and trait wording (production/art/SOURCE_NOTES.md). Physical proof NOT TESTED.
