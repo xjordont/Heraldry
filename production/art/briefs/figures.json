@@ -1,0 +1,3935 @@
+{
+ "_meta": {
+  "author": "figure brief worker",
+  "source": "RC487"
+ },
+ "ART-ANC-HUMAN": {
+  "identity": "A Human adventurer, medium-sized, the plain short-lived 'striver' people who persist where steadier peoples fail, shown as a traveller in a Bastion's service.",
+  "composition": "Full figure in three-quarter view mid-stride along a rutted road, walking staff planted ahead, head turned back over the shoulder toward unseen pursuit.",
+  "details": [
+   "Layered road clothes: patched tunic, belted over-coat, hooded mantle pushed back",
+   "Walking staff of plain ash, scuffed iron ferrule",
+   "Short sword in a worn scabbard at the left hip",
+   "Travel pack with bedroll and tin cup lashed on",
+   "Ordinary unremarkable face, stubble, weathered skin, determined set jaw",
+   "Mud-caked boots and frayed hem",
+   "No horns, fur, scales or pointed ears: wholly ordinary proportions"
+  ],
+  "atmosphere": "Plain weathered resolve, a small life walking through a vast dying land.",
+  "avoid": [
+   "No exotic features: the Human must look unmarked beside the other ancestries",
+   "No armour plate or heroic pose: this is a traveller, not a Fighter",
+   "Do not copy the Elf's long cloak or the Halfling's hood"
+  ],
+  "sources": [
+   "6.9 Ancestries: Human"
+  ]
+ },
+ "ART-ANC-HALFLING": {
+  "identity": "A Halfling adventurer, small-sized, hearth-and-hidden-roads folk who survive by staying unseen, shown as a capable traveller in a Bastion's service.",
+  "composition": "Full figure in three-quarter view, crouched low behind a broken wall top, sling hand drawn back, eyes alert over the edge.",
+  "details": [
+   "Child-sized body with adult proportions: stocky limbs, broad round face, no beard",
+   "Deep hooded cloak with mended hem",
+   "Leather sling with a round stone, other stones in a belt pouch",
+   "Well-kept pack with a small cooking pot and ladle tied on the outside",
+   "Bare, hairy-topped feet or light soft boots",
+   "Wall coursing and weeds that show the small scale",
+   "Wary but calm expression"
+  ],
+  "atmosphere": "Quiet alertness, hearth-smoke practicality in a hostile place.",
+  "avoid": [
+   "Do not make it a cute child or cartoon: adult, grounded proportions",
+   "No pointed ears (that is Elf/Gnome territory)",
+   "Do not stand it beside nothing; the wall must show it is small",
+   "No sword: its kit is sling, pack and pot"
+  ],
+  "sources": [
+   "6.9 Ancestries: Halfling"
+  ]
+ },
+ "ART-ANC-DWARF": {
+  "identity": "A Dwarf adventurer, medium-sized but broad and heavy, from sealed stone halls and old craft traditions, shown as a hardened traveller in a Bastion's service.",
+  "composition": "Full figure in three-quarter view, braced wide-stanced at the top of a descending stair, lantern held forward into the dark in one hand, shield and handaxe ready in the other.",
+  "details": [
+   "Very broad shoulders, short thick limbs, stocky frame, shorter than the Human but heavier",
+   "Long braided beard with metal rings, heavy brow, deep-set eyes used to the dark",
+   "Heavy mail or plated chest armour worn with ease, scuffed and re-riveted",
+   "Round shield on forearm, handaxe in hand",
+   "Lantern with a shuttered iron housing",
+   "Thick hobnailed boots planted on worn stone steps",
+   "Stone-cut craftsmanship in belt buckle and axe head"
+  ],
+  "atmosphere": "Granite stubbornness, a person built to be struck and remain standing.",
+  "avoid": [
+   "Not a comic dwarf: serious proportions, no oversized hat or cartoon nose",
+   "No horned helmet",
+   "Do not give it a greataxe (that is the Orc adventurer's kit)",
+   "Keep it clearly shorter than the Elf and Orc"
+  ],
+  "sources": [
+   "6.9 Ancestries: Dwarf"
+  ]
+ },
+ "ART-ANC-ELF": {
+  "identity": "An Elf adventurer, medium-sized, tall and lean, a graceful, long-memoried traveller in a Bastion's service.",
+  "composition": "Full figure in three-quarter view standing at ease at the edge of a wood, longbow lowered in one hand, head tilted as if listening, one hand resting on the quiver.",
+  "details": [
+   "Tall, lean build with long limbs and a long neck",
+   "Long pointed ears swept back, high cheekbones, calm eyes that notice much",
+   "Long weathered travelling cloak, faded and mended, pinned at one shoulder",
+   "Longbow taller than the Halfling's whole body, quiver of fletched arrows",
+   "Soft boots and bracers; light, unfussy kit",
+   "Fine, sparse hair loose or in a narrow braid",
+   "Sparse leaf litter and a trunk behind to show the forest home"
+  ],
+  "atmosphere": "Elegiac grace, beauty and loss held back behind composure.",
+  "avoid": [
+   "Not a Deep Elf: pale skin and dark armour belong to that entry, here keep light open clothes",
+   "Do not pose it drawing the bow: it is at ease",
+   "Avoid glowing or magical effects",
+   "No heavy armour"
+  ],
+  "sources": [
+   "6.9 Ancestries: Elf"
+  ]
+ },
+ "ART-ANC-GNOME": {
+  "identity": "A Gnome adventurer, small-sized, a clever, precise tinkerer drawn to dangerous devices, shown as a traveller in a Bastion's service.",
+  "composition": "Full figure in three-quarter view kneeling at a stone door-plate or trap mechanism, eyepiece lens flipped down, probing it with a thin tool while a small crossbow hangs ready on the back.",
+  "details": [
+   "Child-sized, adult-faced, large nose and bright magnified eye behind a flip-down lens",
+   "Bandolier of tinkering tools, picks, lenses and small screwdrivers",
+   "Small crossbow slung across the back",
+   "Heavy satchel bulging with coils of wire and cogs",
+   "Ink-stained leather gloves, apron over practical clothes",
+   "Lightly goggled cap or hood, neat tidy clothing",
+   "Mechanism with gears showing that it is a trap or lock"
+  ],
+  "atmosphere": "Absorbed curiosity, a happy student of lethal things.",
+  "avoid": [
+   "Do not turn it into a steampunk robot or give it huge goggles beyond one lens",
+   "Do not duplicate the Halfling's sling and cloak silhouette",
+   "Keep proportions grounded, not toy-like"
+  ],
+  "sources": [
+   "6.9 Ancestries: Gnome"
+  ]
+ },
+ "ART-ANC-GOBLIN": {
+  "identity": "A Goblin adventurer, small-sized, quick of hand and foot, shown as a hired hero in a Bastion's employ (an ally, not a raider).",
+  "composition": "Full figure in three-quarter view slipping around a corner, lantern held out and low in one hand, short blade pointed back down the passage in the other, ready to dodge.",
+  "details": [
+   "Child-sized body, long pointed ears, large expressive eyes, wide mouth showing a tooth",
+   "Patched but carefully kept leather jerkin and trousers",
+   "Short blade with a clean bright edge, lantern with a good wick",
+   "Bastion livery scrap or a plain tabard end tucked at the belt, no lettering",
+   "Alert intelligent face, wary rather than malicious",
+   "Belt with pouches and a coil of cord",
+   "Bare lean forearms, long clever fingers"
+  ],
+  "atmosphere": "Wary intelligence, a survivor who chooses where the blow is not.",
+  "avoid": [
+   "Must not read as the Goblin monster: no notched blade, no sling of river stones, no mob, no crude trophies",
+   "No hunched malicious snarl",
+   "Clean, repaired clothing, not rags"
+  ],
+  "sources": [
+   "6.9 Ancestries: Goblin"
+  ]
+ },
+ "ART-ANC-ORC": {
+  "identity": "An Orc adventurer, medium-sized and very powerfully built, shown as a sworn hireling in a Bastion's service (not a raider).",
+  "composition": "Full figure in three-quarter view standing composed and squared on a ridge road at rest, one hand on the haft of a greataxe slung over the back, gaze steady on the horizon.",
+  "details": [
+   "Huge shoulders, thick neck, grey skin scarred in old lines across cheek and forearm",
+   "Heavy lower tusks, but a composed controlled expression",
+   "Heavy travel-worn armour: studded breastplate, pauldrons, battered vambraces, kept oiled",
+   "Greataxe slung across the back, haft visible over the shoulder",
+   "Plain Bastion tabard worn over the armour, no lettering",
+   "Wide boots, belt with plain pouches",
+   "No trophies on display"
+  ],
+  "atmosphere": "Disciplined restraint, strength held in check.",
+  "avoid": [
+   "Must not read as the Orc monster: no snarl, no trophies, no cleaver, no shield wall",
+   "No ragged furs",
+   "Do not put the axe in a swinging pose"
+  ],
+  "sources": [
+   "6.9 Ancestries: Orc"
+  ]
+ },
+ "ART-ANC-RATKIN": {
+  "identity": "A Ratkin adventurer, small-sized, quick and swarming folk of refuse heaps and warrens, shown as a hired hero in a Bastion's service.",
+  "composition": "Full figure in three-quarter view hunkered on a low brick ledge, one hand cradling a scavenged tool, head tilted with nose and whiskers working.",
+  "details": [
+   "Child-sized body with a rat-like muzzle, long whiskers, round ears and bright watchful eyes",
+   "Long scaly tail curled around the feet",
+   "Hooded cloak open over a Bastion tabard with no lettering",
+   "Satchel of scavenged tools: pliers, hooks, a small crowbar, rolls of cord",
+   "Sharp front teeth showing",
+   "Clawed but dextrous hands",
+   "Cleaned, mended clothing"
+  ],
+  "atmosphere": "Alert hunger tamed into service.",
+  "avoid": [
+   "Do not make it a plague-ridden scavenger or a monster Ratkin Warrior or Scavenger",
+   "No weapons raised: this is an alert hero, not an attack",
+   "Do not draw it as a literal rat: upright, humanoid, clothed"
+  ],
+  "sources": [
+   "6.9 Ancestries: Ratkin"
+  ]
+ },
+ "ART-ANC-DEEP-ELF": {
+  "identity": "A Deep Elf adventurer, medium-sized, an outcast of the cruel night-bred branch of the elder blood who has come to the surface as a hireling.",
+  "composition": "Full figure in three-quarter view stepping out of a dark archway into daylight, one hand raised against the glare under a deep hood, curved blade held low in the other.",
+  "details": [
+   "Pale skin, long pointed ears, slim graceful build, narrow shadowed eyes",
+   "Deep hood pulled low against daylight, scarf at the throat",
+   "Fine dark armour: close-fitted scale or lamellar with plain trim, no court heraldry",
+   "Curved single-edged blade with a plain grip",
+   "Shadow cast long behind it, archway behind in solid black",
+   "Gloved hands, long cloak edge",
+   "Controlled, wary expression"
+  ],
+  "atmosphere": "Elegant discomfort, a creature of night enduring the sun.",
+  "avoid": [
+   "Not the Deep Elf Warrior or Priest monster: no ceremonial armour, no crescent glaive, no sigil staff",
+   "Not a light-cloaked surface Elf: keep dark gear and hood",
+   "No spider imagery"
+  ],
+  "sources": [
+   "6.9 Ancestries: Deep Elf"
+  ]
+ },
+ "ART-ANC-DEMONBORN": {
+  "identity": "A Demonborn adventurer, medium-sized, of infernal-stained blood, shown as a plain-cloaked pilgrim traveller in a Bastion's service.",
+  "composition": "Full figure in three-quarter view standing before a barred wooden door, one hand lifting the latch, cloak parted behind to show a tail, face turned to the viewer.",
+  "details": [
+   "Small curved horns breaking through the hair",
+   "Slender barbed tail emerging from under the pilgrim cloak hem",
+   "Eyes drawn as dark rings with a tiny white point, unlit and without glow",
+   "Plain pilgrim's cloak, rope belt, simple staff or satchel slung",
+   "Calm, slightly world-weary face",
+   "Warm hands, slightly long dark nails",
+   "Door closed against them as a visual hint"
+  ],
+  "atmosphere": "Quiet apartness, the face of someone doors never open for.",
+  "avoid": [
+   "No bat wings, hooves or fiery body: it is a person with horns and a tail",
+   "No fire effects or glow",
+   "Do not give it a weapon raised or demonic pose",
+   "Not an Imp or Demon monster"
+  ],
+  "sources": [
+   "6.9 Ancestries: Demonborn"
+  ]
+ },
+ "ART-ANC-DRAKEBLOOD": {
+  "identity": "A Drakeblood adventurer, medium-sized, carrying the remnant of an older dragon majesty in the blood, shown as a heavily cloaked traveller in a Bastion's service.",
+  "composition": "Full figure in three-quarter view braced low in a gale, spear levelled forward, thick cloak whipped back to expose scaled hands and jaw.",
+  "details": [
+   "Fine scales along the jaw, neck and backs of the hands, smoother skin elsewhere",
+   "Ridge of small horns on the brow and crown, no wings, no tail needed",
+   "Heavy travelling cloak and plain leather harness",
+   "Spear with a worn socketed head",
+   "Slitted watchful eyes, strong jaw",
+   "Scattered dry grass and blown cloak edge showing the wind",
+   "Dignified proud posture"
+  ],
+  "atmosphere": "Fallen majesty carried with stubborn pride.",
+  "avoid": [
+   "No breath weapon, flame or elemental effect",
+   "No wings or full dragon head: person with draconic traits",
+   "Do not copy the Demonborn's horns-plus-tail look: use ridge horns and scales",
+   "Not a Lizardfolk monster"
+  ],
+  "sources": [
+   "6.9 Ancestries: Drakeblood"
+  ]
+ },
+ "ART-BAC-FARMER": {
+  "identity": "A Farmer background: callused, stubborn labour from hard ground; starting kit Sickle and Bandages.",
+  "composition": "Still life on a weathered plank, three-quarter overhead view, a sickle laid diagonally across a bundle of cut wheat beside a wad of linen bandages.",
+  "details": [
+   "Curved sickle with a worn wooden handle and a nicked blade",
+   "Cut sheaf of ears of grain tied with twine",
+   "Roll of coarse linen bandages",
+   "Cracked leather work glove, worn thin",
+   "Clod of earth and a few stray stalks",
+   "Wooden plank table with knots and scratches",
+   "Small iron-bound wooden bucket edge at the rear"
+  ],
+  "atmosphere": "Humble labour, quiet and hard.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No blood on the bandages",
+   "Not the Merchant's sickle with coin"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Farmer"
+  ]
+ },
+ "ART-BAC-NOMAD": {
+  "identity": "A Nomad background: a crosser of hard country; starting kit Scimitar.",
+  "composition": "Still life against a dry ground, a scimitar propped in a rolled hide tent bundle beside a travel waterskin, seen from slightly above.",
+  "details": [
+   "Curved scimitar in a plain worn scabbard, half-drawn",
+   "Rolled felt or hide shelter bundle bound with cords",
+   "Cracked leather waterskin with a wooden stopper",
+   "Wind-worn cloak or scarf folded on top",
+   "Small bronze cooking pot with a handle",
+   "Dry grass tuft and a cracked flat stone for ground",
+   "Short walking stick lashed beside"
+  ],
+  "atmosphere": "Windswept self-reliance.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No camels or horses",
+   "Do not make the sword ornate"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Nomad"
+  ]
+ },
+ "ART-BAC-SAILOR": {
+  "identity": "A Sailor background: balance on wet planks; starting kit Rope, Shortsword, Buckler.",
+  "composition": "Still life on a wet plank deck section, a coiled rope in the foreground with a shortsword and a round buckler leaning on a belaying pin rail.",
+  "details": [
+   "Heavy coil of thick rope with a neat whipped end",
+   "Straight shortsword with a plain crossguard",
+   "Small round buckler with a central boss, scuffed",
+   "Wooden belaying pin rail with a second rope hanging",
+   "Puddle drips and wet plank grain",
+   "Barnacle or salt crust on the iron",
+   "Knotted rope with a marlinspike nearby"
+  ],
+  "atmosphere": "Salt-stained seasoned tension.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No ships, no sea monster",
+   "Not a cutlass pirate cliche"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Sailor"
+  ]
+ },
+ "ART-BAC-SOLDIER": {
+  "identity": "A Soldier background: discipline in war; starting kit Spear.",
+  "composition": "Still life, a tall spear leaning against a battered kit chest, a folded surcoat and a dented cap of iron hanging on the spear shaft.",
+  "details": [
+   "Spear with a leaf-shaped head and a worn ash shaft",
+   "Dented open kettle helm hung on the shaft",
+   "Folded plain surcoat with no heraldry",
+   "Iron-bound kit chest with a worn lock",
+   "Hobnailed boots set neatly beside",
+   "Whetstone and a rag on the chest lid",
+   "Worn belt with an empty scabbard loop"
+  ],
+  "atmosphere": "Weary order, war settled easily on the shoulders.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No banners with symbols",
+   "Not the Fighter class's kit"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Soldier"
+  ]
+ },
+ "ART-BAC-SMUGGLER": {
+  "identity": "A Smuggler background: false bottoms and whispered routes; starting kit Dagger and Lockpicks.",
+  "composition": "Still life of a barrel with a false lid half-lifted, a dagger and a roll of lockpicks laid across it, seen at a low angle.",
+  "details": [
+   "Small barrel with a hinged hidden compartment lid open and a rolled pouch inside",
+   "Slender dagger with a plain grip",
+   "Roll of lockpicks unrolled showing thin hooks and tension wrenches",
+   "Lantern shuttered to a slit",
+   "Rope-bound crate corner and sacking",
+   "Chalk mark of a route on the wood, no lettering",
+   "Knotted purse hung in shadow"
+  ],
+  "atmosphere": "Furtive and well-practised.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No coins spilled, keep it understated",
+   "Do not copy the Rogue's kit tableau"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Smuggler"
+  ]
+ },
+ "ART-BAC-COURIER": {
+  "identity": "A Courier background: speed over broken roads; starting kit Shortbow, +1 SPD.",
+  "composition": "Still life, a shortbow with an unstrung loop leaning against a satchel and a sealed scroll case, mud-spattered boots beside.",
+  "details": [
+   "Shortbow of laminated wood, bowstring wound on the limb",
+   "Leather dispatch satchel with a buckle and a wax seal",
+   "Waxed message tube with a sealed cap",
+   "Mud-spattered light boots, laced high",
+   "Worn cloak folded and pinned",
+   "Quiver of a few arrows",
+   "Horseshoe nail or milestone fragment"
+  ],
+  "atmosphere": "Hurried urgency held still.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No horse",
+   "Not identical in arrangement to the Scout still life: favour the satchel and boots"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Courier"
+  ]
+ },
+ "ART-BAC-SCOUT": {
+  "identity": "A Scout background: reading ground, distance and silence; starting kit Shortbow.",
+  "composition": "Still life on moss and leaf litter, a shortbow laid across a small bundle of tracking sign: a snapped twig, a clay-cast animal print, and a folded cloak.",
+  "details": [
+   "Shortbow with a leather grip, resting on leaf litter",
+   "Snapped branch tip and bent grass blades",
+   "Plaster-pressed animal paw print on a flat stone",
+   "Camouflage hood and cloak folded",
+   "Small hand-compass or horn spyglass",
+   "Bone-handled sheath knife",
+   "Tiny dried herb bundle on a thong"
+  ],
+  "atmosphere": "Silent attention, a fresh sign read in an instant.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "Do not repeat the Courier's satchel and scroll tube",
+   "No animal in the picture"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Scout"
+  ]
+ },
+ "ART-BAC-PERFORMER": {
+  "identity": "A Performer background: crowd-turning wit; starting kit 3 Throwing Knives.",
+  "composition": "Still life on a small trestle stage edge, three throwing knives fanned beside a battered mask and a pair of jingling bells.",
+  "details": [
+   "Three slim throwing knives fanned with points outward",
+   "Half-face theatrical mask, cracked and mended",
+   "Bells on a strap",
+   "Folded motley cloth patchwork",
+   "Lute or flute with a broken string",
+   "Tattered curtain edge",
+   "Painted target board with knife marks behind"
+  ],
+  "atmosphere": "Faded festivity, glamour gone threadbare.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No clown caricature",
+   "Mask must have no printed expression text or letters"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Performer"
+  ]
+ },
+ "ART-BAC-ARTISAN": {
+  "identity": "An Artisan background: patient craft; starting kit Hammer, Masterwork item.",
+  "composition": "Still life of a workbench corner, a hammer resting on an anvil face beside a half-finished shield boss and a tray of fine files.",
+  "details": [
+   "Smith's hammer with a worn haft",
+   "Small anvil with a bright polished face",
+   "Half-finished iron shield boss on the bench",
+   "Tray of files, punches and chisels",
+   "Leather apron hung on a peg",
+   "Calipers and a scribe line on the steel",
+   "Sparse quench-bucket edge"
+  ],
+  "atmosphere": "Patient care for good steel.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No forge fire glow",
+   "Do not make it a full armoury"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Artisan"
+  ]
+ },
+ "ART-BAC-SCHOLAR": {
+  "identity": "A Scholar background: knowledge in a dying world; starting kit Quarterstaff.",
+  "composition": "Still life of a leaning quarterstaff against a heavy reading desk covered with stacked books, loose diagrams and a spectacle case.",
+  "details": [
+   "Plain quarterstaff with a leather-wrapped grip",
+   "Stacked books with clasped bindings",
+   "Loose sheets of ruled diagrams without legible text",
+   "Candle stub in a brass holder",
+   "Quill and inkpot",
+   "Rolled map held by a weight",
+   "Spectacles folded on a book"
+  ],
+  "atmosphere": "Quiet obsessive study among ruins.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No legible writing: marks must be scribbled lines",
+   "No spellcasting effects"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Scholar"
+  ]
+ },
+ "ART-BAC-APPRENTICE": {
+  "identity": "An Apprentice background: scraps of craft from a harsh master; starting kit is only 1c (non-Martial classes gain Max NRG, Martial ones gain scrolls).",
+  "composition": "Still life of a wooden stool with a master's oversized coat hung over it, a scorched practice post stump, a small candle and a single copied page.",
+  "details": [
+   "Oversized worn coat sleeve hanging beyond the stool",
+   "Practice wand or knotted twig, scorched at the tip",
+   "Small candle in a clay dish, unlit",
+   "Simple scroll with scribbled marks no letters",
+   "Chalk-drawn circle on stone floor",
+   "Small cloth purse with one coin",
+   "Scorch marks on the stone"
+  ],
+  "atmosphere": "Unfinished promise and scorched inexperience.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No glow",
+   "Do not make it a full spell effect"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Apprentice"
+  ]
+ },
+ "ART-BAC-ALCHEMIST": {
+  "identity": "An Alchemist background: fire, acid and tincture; starting kit 2 Acid (Phosphoric), 2 Healing Potions.",
+  "composition": "Still life on a stained bench, two small stoppered healing flasks and two clay acid vials in a wooden rack, a mortar and a brass scale beside.",
+  "details": [
+   "Two round-bottomed glass flasks of healing tincture, corked",
+   "Two ceramic stoppered acid pots with wax seals",
+   "Wooden rack with five slots",
+   "Stone mortar and pestle with powder",
+   "Small brass balance scale",
+   "Leather satchel hanging open",
+   "Burn and acid pits scarring the bench"
+  ],
+  "atmosphere": "Cautious chemical menace, copper and ash.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No bubbling glow or smoke",
+   "No poison skull symbols"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Alchemist"
+  ]
+ },
+ "ART-BAC-BELIEVER": {
+  "identity": "A Believer background: faith kept in a hard age; starting kit 3 Holy Water, Lantern.",
+  "composition": "Still life on a stone shelf, a lit lantern stands beside three small stoppered vials of holy water; a worn prayer cord hangs from the lantern.",
+  "details": [
+   "Horn-paned or glass lantern with a small flame",
+   "Three narrow stoppered vials, one tilted",
+   "Knotted prayer cord with wooden beads",
+   "Small plain devotional shape (a bare sun-disc) scratched, no text",
+   "Shallow stone shelf in a niche",
+   "Candle drips",
+   "Folded cloth"
+  ],
+  "atmosphere": "Quiet steady hope.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No halo glow beyond the lamp flame",
+   "No specific real-world religious symbols"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Believer"
+  ]
+ },
+ "ART-BAC-HERMIT": {
+  "identity": "A Hermit background: solitary silence; starting kit Quarterstaff.",
+  "composition": "Still life at a cave mouth or hut doorstep, a gnarled staff leaning beside a tin cup and a bowl, a single stool and a cold fire ring.",
+  "details": [
+   "Gnarled staff with a knotted top",
+   "Tin cup and wooden bowl, empty",
+   "Cold ring of fire stones",
+   "Rough threadbare robe over a stump",
+   "Dried herbs strung on a line",
+   "Single stool, worn smooth",
+   "Distant lone tree through a gap in the stones"
+  ],
+  "atmosphere": "Utter solitude, bare and silent.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No companion animals",
+   "Do not add a hut interior full of clutter"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Hermit"
+  ]
+ },
+ "ART-BAC-CULTIST": {
+  "identity": "A Cultist background: service at a darker altar; starting kit Dagger, Torch.",
+  "composition": "Still life on a stained stone altar slab, a dagger laid across a torch with a tattered hooded robe hanging over the edge, candle stubs and a bowl.",
+  "details": [
+   "Straight dagger with a dark stained blade",
+   "Unlit torch with soot-black head",
+   "Tattered hooded robe with a rope belt",
+   "Empty shallow bowl with dark residue",
+   "Candle stubs melted into the slab",
+   "Abstract scratched circle sigil, no letters",
+   "Chain with a broken pendant"
+  ],
+  "atmosphere": "Lingering unease and shame.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No gore or blood pools",
+   "No skull pileup, no readable rune text"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Cultist"
+  ]
+ },
+ "ART-BAC-SHEPHERD": {
+  "identity": "A Shepherd background: watching helpless things; starting kit Sling, Quarterstaff, Bandages.",
+  "composition": "Still life on a fence rail or stone wall, a sling with stones, a crook-topped quarterstaff and a roll of bandages beside a bell.",
+  "details": [
+   "Leather sling with a pouch and a round stone",
+   "Quarterstaff with a hooked crook top",
+   "Roll of bandages tied with twine",
+   "Small iron sheep bell on a strap",
+   "Pile of smooth river stones",
+   "Wool tuft caught on the fence",
+   "Wooden fence post and distant lone hill suggested"
+  ],
+  "atmosphere": "Patient pastoral calm with an edge of wariness.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No sheep",
+   "Not identical to the Hermit's staff"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Shepherd"
+  ]
+ },
+ "ART-BAC-MERCHANT": {
+  "identity": "A Merchant background: value and leverage; starting kit Sickle, increased Luck.",
+  "composition": "Still life on a counting table, a sickle laid by an open coin ledger, a balance scale holding coins and a locked strongbox behind.",
+  "details": [
+   "Small sickle with a polished blade",
+   "Brass balance scale with coin in one pan",
+   "Small stack of coins, plain discs",
+   "Iron-bound strongbox with a heavy lock",
+   "Open ledger with abstract ruled columns, no letters",
+   "Wax seal and a pen",
+   "Drawn purse strings"
+  ],
+  "atmosphere": "Calculated mercantile caution.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No ledger text",
+   "Not the Farmer's sickle arrangement"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Merchant"
+  ]
+ },
+ "ART-BAC-NOBLE": {
+  "identity": "A Noble background: banners, debts and inherited expectation; starting kit Rapier.",
+  "composition": "Still life of a rapier laid across a faded velvet cushion on a carved table, a dusty signet ring and a threadbare banner edge hanging behind.",
+  "details": [
+   "Slender rapier with a swept hilt",
+   "Faded velvet cushion with moth holes",
+   "Signet ring with a blank face",
+   "Tattered family banner with a plain stripe, no readable device",
+   "Cracked wine goblet",
+   "Carved chair back with worn gilding",
+   "Dust motes via fine stipple"
+  ],
+  "atmosphere": "Faded grandeur, once-fine things in decay.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No crown",
+   "No readable heraldry or text"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Noble"
+  ]
+ },
+ "ART-BAC-PAUPER": {
+  "identity": "A Pauper background: hunger and want; starting kit Club.",
+  "composition": "Still life on bare ground, a crude knobbed club leaning on a cracked clay bowl beside a heel of bread and a ragged blanket.",
+  "details": [
+   "Crude wooden club with a knobbed head",
+   "Cracked clay bowl with a crust",
+   "Ragged patched blanket",
+   "Single worn shoe",
+   "Rusty tin cup",
+   "Cobblestone gutter detail",
+   "Rope-belted sack"
+  ],
+  "atmosphere": "Bare want and stubborn survival.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No pity beggar poses",
+   "Do not add coins"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Pauper"
+  ]
+ },
+ "ART-BAC-VAGABOND": {
+  "identity": "A Vagabond background: road to road with no roots; starting kit Bandages.",
+  "composition": "Still life on a roadside milestone, a bundle on a stick, a roll of bandages and a dice cup perched beside a half-burned stub of candle.",
+  "details": [
+   "Bundle-on-a-stick with a knotted cloth",
+   "Roll of bandages",
+   "Dice and a small cup",
+   "Patched cloak thrown over the stone",
+   "Boot with a flapping sole",
+   "Wild hare snare loop of cord",
+   "Crossroads milestone worn blank"
+  ],
+  "atmosphere": "Rootless drift and ruined luck.",
+  "avoid": [
+   "No figure or hands, and no lettering",
+   "No signpost lettering",
+   "Do not duplicate Hermit/Pauper compositions"
+  ],
+  "sources": [
+   "6.10 Backgrounds: Vagabond"
+  ]
+ },
+ "ART-CLA-FIGHTER": {
+  "identity": "A Fighter, Martial class: drilled, line-holding soldier of fortune; packages of Shortsword, Targe, Ring Shirt, Dagger.",
+  "composition": "Full figure in three-quarter view braced low behind a small round targe at a ruined gate, shortsword held back over the hip, taking an unseen charge.",
+  "details": [
+   "Ring shirt (mail of linked rings) over a padded arming coat",
+   "Targe: small round shield with a central boss, edge dented",
+   "Plain shortsword, single-handed, held ready",
+   "Dagger on belt",
+   "Open-faced helm or coif, no visor",
+   "Stance planted wide, weight forward, knuckles white",
+   "Scuffs and rust on mail, boots braced on cracked flagstones"
+  ],
+  "atmosphere": "Stoic resolve, the last thing between the line and collapse.",
+  "avoid": [
+   "Not heavy plate: ring shirt only",
+   "Do not give it a two-handed weapon (that is the Berserker or Ravager package)",
+   "No flourish or duel pose"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Fighter"
+  ]
+ },
+ "ART-CLA-BERSERKER": {
+  "identity": "A Berserker, Martial class: pain-numbed frenzied fighter; packages of Morningstar, Hide Cuirass, Handaxe, Club, Targe.",
+  "composition": "Full figure in three-quarter view mid-leap charge, mouth open in a roar, morningstar raised high overhead in one hand and handaxe in the other.",
+  "details": [
+   "Hide cuirass (boiled hide breastplate) over bare, scarred arms",
+   "Morningstar: spiked mace head on a short haft",
+   "Handaxe in the off hand",
+   "Wild matted hair and braids streaming back",
+   "Old scars and ritual paint lines on the chest and forearms",
+   "Torn trousers with bare, taped shins",
+   "Dust and gravel flying from a hard push-off"
+  ],
+  "atmosphere": "Unrestrained fury barely held in a human frame.",
+  "avoid": [
+   "No horned helm or fantasy barbarian cliche",
+   "No gore",
+   "Not a monster: still human proportions",
+   "Do not make it a shield user"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Berserker"
+  ]
+ },
+ "ART-CLA-ROGUE": {
+  "identity": "A Rogue, Martial class: scarcity-bred taker of chances; packages of Rapier, Daggers, Shortbow, Lockpicks, Smokestick, Caltrops.",
+  "composition": "Full figure in three-quarter view crouched at a barred door, lockpicks working in the keyhole, head turned over the shoulder to watch the corridor, rapier hilt at the hip.",
+  "details": [
+   "Leather coat with a turned-up collar, patched at elbows",
+   "Lockpicks held delicately between fingers",
+   "Rapier on left hip, two daggers in the belt",
+   "Smokestick tucked into a bandolier",
+   "Soft leather boots for silence",
+   "Hood back, sharp watchful eyes",
+   "Pouches, a coil of rope, and a few caltrops on the floor"
+  ],
+  "atmosphere": "Tense stealth, a thief moments from being caught.",
+  "avoid": [
+   "Not the Assassin: no bow, no venom, no ambush pose",
+   "No mask clich\u00e9s",
+   "Do not show the rapier drawn"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Rogue"
+  ]
+ },
+ "ART-CLA-ASSASSIN": {
+  "identity": "An Assassin, Martial class: patient killer who waits for certainty; packages of Shortbow, Dagger, Rapier, Basic Venom, Smokestick, Grappling Hook.",
+  "composition": "Full figure in three-quarter view pressed against a broken pillar in dim light, dagger in reverse grip held low, head turned toward an unseen target.",
+  "details": [
+   "Close-fitting hooded gambeson or leather coat in dark tones",
+   "Dagger in reverse grip with its edge dulled dark",
+   "Vial of venom corked at the belt",
+   "Shortbow slung across the back, unstrung or quiet",
+   "Smokestick and coiled grappling hook with a rope",
+   "Face half shadowed by the hood, calm cold eyes",
+   "Silent soft boots on dusty stone"
+  ],
+  "atmosphere": "Cold patience, a held breath.",
+  "avoid": [
+   "Not the Rogue: no lockpicking, no open crouch",
+   "Do not show the target or gore",
+   "No cape-flourish pose",
+   "No glowing poison"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Assassin"
+  ]
+ },
+ "ART-CLA-RANGER": {
+  "identity": "A Ranger, Hybrid class: ground-reader and strike-from-distance hunter; packages of Shortbow, Elven Dagger, Elven Spear, Hide Cuirass, Snares.",
+  "composition": "Full figure in three-quarter view standing tall at a forest edge, shortbow drawn to the cheek, eyes narrowed on a far target, cloak edge stirring.",
+  "details": [
+   "Leather coat with a hooded cloak and a green-grey faded tone suggested by hatching",
+   "Shortbow at full draw, arrow at the cheek",
+   "Elven dagger at the belt",
+   "Quiver on the hip, snares coiled at the belt",
+   "Fletching and bracers worn and mended",
+   "Boots with sinew-bound tops, mud-flecked",
+   "Trunks and ferns behind, depth by thinning lines"
+  ],
+  "atmosphere": "Focused calm of a hunter at full draw.",
+  "avoid": [
+   "Not the Assassin: no hooded crouch, no dagger-first pose",
+   "No animals companion",
+   "Do not give it a sword"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Ranger"
+  ]
+ },
+ "ART-CLA-CLERIC": {
+  "identity": "A Cleric, Caster class: faith kept in silence; packages of Mace, Targe, Ring Shirt, Quarterstaff, Holy Water, Bandages.",
+  "composition": "Full figure in three-quarter view kneeling in prayer on one knee amid fallen masonry, mace laid across the thigh and head bowed.",
+  "details": [
+   "Ring shirt under a plain habit-like surcoat with a bare circle mark",
+   "Flanged mace laid across the knee",
+   "Targe slung on the back",
+   "Satchel with bandages and a small stoppered vial",
+   "Rosary-like prayer cord wound around a wrist",
+   "Tonsured or cropped hair, solemn face",
+   "Rubble and a broken statue plinth behind"
+  ],
+  "atmosphere": "Tired devotion in an unanswering silence.",
+  "avoid": [
+   "Not the Paladin: no oath-sword, no standing knight pose",
+   "No glowing hands or halo",
+   "No book as primary prop"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Cleric"
+  ]
+ },
+ "ART-CLA-PALADIN": {
+  "identity": "A Paladin, Hybrid class: bearer of an unbending oath; packages of Mace, Longsword, Targe, Ring Shirt, Quarterstaff, Gambeson.",
+  "composition": "Full figure in three-quarter view standing upright at a ruined chapel doorway, longsword planted point-down before the feet, both hands folded on the pommel, head bowed.",
+  "details": [
+   "Ring shirt with a worn surcoat of cloth, torn but clean, no readable device",
+   "Longsword with a plain cross-guard, point resting in cracked flagstones",
+   "Targe slung on the left arm or back",
+   "Healer's kit pouch on the belt",
+   "Bare-headed with cropped hair or a helm hung at the belt",
+   "Strong shoulders squared, face composed",
+   "Broken arch behind, rays of sparse horizontal sky lines"
+  ],
+  "atmosphere": "Unyielding vow, grave dignity.",
+  "avoid": [
+   "Not the Cleric: no kneeling, no mace",
+   "No glowing sword or wings",
+   "No full plate"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Paladin"
+  ]
+ },
+ "ART-CLA-WIZARD": {
+  "identity": "A Wizard, Caster class: scholar of rebuilt power; packages of Quarterstaff, Magnifying Glass, Torches, Elven Dagger, Sling, Scroll of Arcane Bolt.",
+  "composition": "Full figure in three-quarter view standing under a torch, one hand raising a small scroll to a magnifying glass held in the other, staff tucked under the arm.",
+  "details": [
+   "Long layered robe, scuffed hem, ink stains on sleeves",
+   "Quarterstaff under the arm",
+   "Round magnifying glass with a brass rim",
+   "Scroll partly unrolled, filled with abstract scribbles, no letters",
+   "Satchel and book strap across the chest",
+   "Elven dagger at the belt",
+   "Thin face, a short beard or cropped grey hair, squinting"
+  ],
+  "atmosphere": "Intent scholarly obsession.",
+  "avoid": [
+   "Not the Sorcerer or Psion: no spell effects or levitation",
+   "No pointy star-covered hat",
+   "No glowing orbs"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Wizard"
+  ]
+ },
+ "ART-CLA-PSION": {
+  "identity": "A Psion, Caster class: thought sharpened into a weapon; packages of Dagger, Hide Cuirass, Targe, Throwing Knives, Gambeson, Quarterstaff.",
+  "composition": "Full figure in three-quarter view standing very still with one hand extended, palm out, while three throwing knives hang in the air in front, points turned outward.",
+  "details": [
+   "Three throwing knives suspended in the air at slightly staggered heights",
+   "Gambeson or hide cuirass, plain and tight",
+   "Dagger sheathed at the belt",
+   "Eyes closed or blank white pupils",
+   "Hair lifting slightly as in a hush of wind",
+   "Gaunt face, taut jaw, veins at the temple",
+   "Stillness: no movement lines"
+  ],
+  "atmosphere": "Disciplined stillness bordering on pain.",
+  "avoid": [
+   "No glowing eyes or auras",
+   "Not the Wizard: no staff, no books",
+   "Do not draw telekinetic arcs or lines; just suspended knives"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Psion"
+  ]
+ },
+ "ART-CLA-TRICKSTER": {
+  "identity": "A Trickster, Hybrid class: shaper of belief and illusion; packages of Elven Rapier, Shortbow, Elven Dagger, Smokestick, Caltrops, Lockpicks.",
+  "composition": "Full figure in three-quarter view sidestepping a blow with a flourish, rapier flicked out in a feint, trailing cloak flap, smoke curling at the feet.",
+  "details": [
+   "Elven rapier with a swept hilt in a feinting line",
+   "Leather coat with ornate stitching and mismatched cuffs",
+   "Smokestick burning at the belt, thin wisp rising",
+   "Small bag of caltrops at the hip",
+   "A faint extra outline (a second, thinner-line copy) of the same figure just behind the shoulder",
+   "Sly half-smile, tilted head",
+   "Light dancing footwork, one heel lifted"
+  ],
+  "atmosphere": "Poised mischief, the moment before everyone looks the wrong way.",
+  "avoid": [
+   "Not the Rogue: no lockpicking, no crouch",
+   "Do not draw two solid figures: the double must be pale line only",
+   "No jester costume or mask"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Trickster"
+  ]
+ },
+ "ART-CLA-SORCERER": {
+  "identity": "A Sorcerer, Caster class: carrier of unasked-for power; packages of Quarterstaff, Dagger, Sling, Gambeson, Bandages.",
+  "composition": "Full figure in three-quarter view bracing against its own power, one arm extended with a palm facing the viewer and a small crackling arc of ink-drawn lightning, the other hand clamping the bandaged forearm.",
+  "details": [
+   "Bandaged forearms, old scars and fresh dressings",
+   "Hair and cloak flung back by unseen wind",
+   "Plain gambeson, torn sleeve",
+   "Sling and dagger at belt",
+   "Wide eyes with solid-black pupils and a thin white ring",
+   "Veins or branching marks on the neck",
+   "Lightning rendered as sharp black zigzag strokes, not glow"
+  ],
+  "atmosphere": "Perilous overflowing strength.",
+  "avoid": [
+   "Not the Wizard: no scrolls, no magnifier, no staff pose",
+   "No glowing aura",
+   "No gore"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Sorcerer"
+  ]
+ },
+ "ART-CLA-DRUID": {
+  "identity": "A Druid, Caster class: servant of the world's slow reclamation; packages of Quarterstaff, Club, Wooden Shield, Sling, Elven Sickle, Leather Coat.",
+  "composition": "Full figure in three-quarter view standing barefoot in tall grass, staff planted in one hand and the other palm open and low, a crow perched on the staff head.",
+  "details": [
+   "Leather coat covered in lichen stains and patched with bark-like cloth",
+   "Quarterstaff carved with root-like twists",
+   "Sprig crown of leaves and a few small twigs in the hair",
+   "Sickle at the belt",
+   "Bare feet in grass, vines curling round the staff",
+   "Weather-lined face, calm eyes",
+   "Tall grass and distant trunks, rain lines"
+  ],
+  "atmosphere": "Calm ancient certainty.",
+  "avoid": [
+   "Not the Tier 3 tradition image: no bark skin or antlers",
+   "No animal companion beyond the crow",
+   "No glowing magic"
+  ],
+  "sources": [
+   "6.13 Hero Classes: Druid"
+  ]
+ },
+ "ART-TRA-TIER-1-ARCANE-SPELLS-D20": {
+  "identity": "Tier 1 Arcane Spells: the first lessons of any surviving academy (Arcane Bolt, Burning Hands, Ice Ray, Force Push, Phase Step).",
+  "composition": "A young apprentice at a scarred practice post, conjuring a small flame in one hand while a shimmer of force bends the air before the other hand; three-quarter view, mid-height.",
+  "details": [
+   "Apprentice in a plain, too-large robe with chalk and ink stains",
+   "Practice post with chopped and scorched marks",
+   "Small flame drawn as a single clean ink flame cupped in the palm",
+   "Air distortion drawn as bent parallel lines before the other palm",
+   "Training yard with cracked flagstones and a rack of straw targets",
+   "Anxious concentrated face, tongue-tip between teeth",
+   "A battered wooden staff leaning on the post"
+  ],
+  "atmosphere": "Nervous promise, academy ruin in the background.",
+  "avoid": [
+   "No lettering on tome pages or scrolls: marks only as abstract scribble",
+   "Not a grown Wizard: young, small and unsure",
+   "No big fireball or lightning"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.3 Arcane Spells, Tier 1"
+  ]
+ },
+ "ART-TRA-TIER-2-ARCANE-SPELLS-D20": {
+  "identity": "Tier 2 Arcane Spells: wartime spells copied from libraries since burned (Fireball, Haste, Blink, Sleep, Dispel).",
+  "composition": "A wizard hurriedly copying a spell from a scorched tome by candlelight while the library behind burns; wide interior view, wizard in the foreground.",
+  "details": [
+   "Hunched figure at a lectern with a quill and a single guttering candle",
+   "Scorched open tome with charred edges and unreadable marks",
+   "Tall bookshelves in the rear shown burning in tall ink flames and black smoke",
+   "Falling embers drawn as stipples",
+   "Spilled ink pot and loose pages",
+   "Arched vaulted ceiling cracked",
+   "Face lit from one side, sweating, wide eyes"
+  ],
+  "atmosphere": "Frantic last-minute rescue of knowledge.",
+  "avoid": [
+   "No lettering on tome pages or scrolls: marks only as abstract scribble",
+   "Do not draw a spell effect from the wizard",
+   "Keep the fire behind the figure, not on it"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.3 Arcane Spells, Tier 2"
+  ]
+ },
+ "ART-TRA-TIER-3-ARCANE-SPELLS-D20": {
+  "identity": "Tier 3 Arcane Spells: the spells the towers killed to keep (Meteor Impact, Disintegrate, Time Break, Reality Warp).",
+  "composition": "A wizard sifting ash and cipher-scraps among robed corpses on the floor of a ruined tower, a sealed book clutched to their chest; high-angle view into the chamber.",
+  "details": [
+   "Standing wizard in tattered robes, one hand holding a sealed book bound with chains and a lock",
+   "Robed corpses sprawled on a fractured mosaic floor",
+   "Drifting ash and ink-scrap pieces",
+   "Broken stair and a collapsed vault",
+   "Burned shelf and a toppled orrery frame",
+   "Wary glance upward at the broken roof",
+   "Light from the broken roof in hard diagonal hatch"
+  ],
+  "atmosphere": "Grim scavenger's triumph over a tomb of scholars.",
+  "avoid": [
+   "No lettering on tome pages or scrolls: marks only as abstract scribble",
+   "No gore or visible wounds on the corpses",
+   "Do not make the wizard heroic"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.3 Arcane Spells, Tier 3"
+  ]
+ },
+ "ART-TRA-TIER-1-DIVINE-PRAYERS-D20": {
+  "identity": "Tier 1 Divine Prayers: plain mercies (Sacred Flame, Guiding Light, Healing Touch, Blessing, Sanctuary).",
+  "composition": "A priest raising a lantern whose light falls on a wounded soldier, the wound visibly knitting closed; mid-shot, both figures in a ruined chapel aisle.",
+  "details": [
+   "Priest in a plain habit with a hooded head, lantern held high",
+   "Soldier seated against a column, bandaged arm in lantern light",
+   "Wound drawn as a long line fading to fine hairlines",
+   "Cone of light drawn with sparse straight radiating strokes",
+   "Broken pews and a cracked altar rail",
+   "Dust motes as stippling",
+   "Weary but tender expressions"
+  ],
+  "atmosphere": "Small hard-won mercy.",
+  "avoid": [
+   "No halo or glow wash: light shown only with line and white space",
+   "No lettering on the lantern",
+   "No visible gore"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.4 Divine Prayers, Tier 1"
+  ]
+ },
+ "ART-TRA-TIER-2-DIVINE-PRAYERS-D20": {
+  "identity": "Tier 2 Divine Prayers: prayers answered less often and at greater cost (Radiant Burst, Circle of Protection, Guardian Angel, Benediction).",
+  "composition": "A weary cleric kneeling at a cracked roadside shrine beside a ledger of offerings, candles guttering; low side view.",
+  "details": [
+   "Kneeling cleric, hood back, head bowed",
+   "Cracked stone shrine with a toppled statue",
+   "Open ledger with abstract ruled lines on a flat stone",
+   "Row of guttering candles and a few coins in a dish",
+   "Roadside weeds and dusk sky with sparse hatching",
+   "Satchel and travel-worn boots",
+   "Rain streaks beginning"
+  ],
+  "atmosphere": "Tired devotion paying a debt.",
+  "avoid": [
+   "No lettering on tome pages or scrolls: marks only as abstract scribble",
+   "No visible deity or angel",
+   "No spell effects"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.4 Divine Prayers, Tier 2"
+  ]
+ },
+ "ART-TRA-TIER-3-DIVINE-PRAYERS-D20": {
+  "identity": "Tier 3 Divine Prayers: prayers demanded rather than asked (Divine Wrath, Heaven's Spear, Resurrection Light, Sunburst).",
+  "composition": "A priest with arms raised on a hilltop, demanding, as a vast ambiguous shape takes form in the storm clouds above; low angle looking up.",
+  "details": [
+   "Small silhouette on a barren hilltop, robes whipped by wind",
+   "Arms thrown wide, head tipped back",
+   "Storm clouds drawn as dense swirling crosshatch",
+   "A vast, ambiguous form in the clouds: shoulders, perhaps a hand, not a clear face",
+   "Beams of sparse straight lines breaking from the cloud",
+   "Bare thorn trees on the ridge",
+   "Tiny discarded staff at the priest's feet"
+  ],
+  "atmosphere": "Awed, uneasy audacity.",
+  "avoid": [
+   "Do not resolve the cloud shape into a clear god or angel",
+   "No lettering or symbol",
+   "Do not make the priest triumphant"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.4 Divine Prayers, Tier 3"
+  ]
+ },
+ "ART-TRA-TIER-1-SORCERIES-D20": {
+  "identity": "Tier 1 Sorceries: cheap blood workings that never fail (Chaos Bolt, Bloodspark, Scorch Step, Ember Net).",
+  "composition": "A close view of a sorcerer's cut palm, drops of blood rising and twisting into a small crackling spark; close-up cropped to hand and forearm.",
+  "details": [
+   "Open palm with a shallow cut",
+   "Drops of blood rising as small black teardrops",
+   "A spark of ink-drawn jagged lines at the apex",
+   "Old scars across the wrist and forearm",
+   "Thin bandage strip unwound",
+   "A bit of the sorcerer's jaw and shadow at edge",
+   "Plain sleeve rolled to the elbow"
+  ],
+  "atmosphere": "Hushed, intimate peril.",
+  "avoid": [
+   "No gore pools or wound close-up detail",
+   "No glowing wash",
+   "Do not show a face fully"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.5 Sorceries, Tier 1"
+  ]
+ },
+ "ART-TRA-TIER-2-SORCERIES-D20": {
+  "identity": "Tier 2 Sorceries: the price climbs with the power (Volatile Fireball, Chain Shock, Stormskin, Shardstorm).",
+  "composition": "A gaunt sorcerer with scar-laddered forearms channelling a crackling storm between their hands; three-quarter view, standing braced.",
+  "details": [
+   "Forearms bare, with ladder-like rows of old scars",
+   "Gaunt hollow-cheeked face",
+   "Storm drawn as a knot of hard black jagged lightning between the hands",
+   "Hair and tattered sleeves flaring outward",
+   "Cracked flagstone floor under braced feet",
+   "Fresh drops of blood on the wrists",
+   "Dark robes in torn layers"
+  ],
+  "atmosphere": "Hungry electric tension.",
+  "avoid": [
+   "No glow wash",
+   "Not a Tier 3 consumed look: body intact",
+   "Do not copy Tier 1's palm close-up"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.5 Sorceries, Tier 2"
+  ]
+ },
+ "ART-TRA-TIER-3-SORCERIES-D20": {
+  "identity": "Tier 3 Sorceries: workings that do not care whether the caster survives (Catastrophe Sphere, Gravity Collapse, Ashen Vortex, Meteor Line).",
+  "composition": "A sorcerer half-consumed by their own working, a vortex of force tearing up the ground, villagers praying on their knees at a safe distance; wide view with the sorcerer centre.",
+  "details": [
+   "Sorcerer lit from within by white-line cracks across skin, body partly dissolving to ash flecks",
+   "Vortex shown as spiral crosshatching tearing a crater",
+   "Flying chunks of earth and flagstone",
+   "Kneeling villagers small in the background",
+   "A ruined farmstead edge",
+   "Cloak torn into streamers",
+   "Pained, resigned face"
+  ],
+  "atmosphere": "Awful tragic grandeur.",
+  "avoid": [
+   "No gore",
+   "Keep villagers small and praying, not fleeing",
+   "No glow wash"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.5 Sorceries, Tier 3"
+  ]
+ },
+ "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20": {
+  "identity": "Tier 1 Druidic Rituals: small agreements with root, weather and beast (Thorn Dart, Entangling Roots, Regrowth, Fog Bank).",
+  "composition": "A druid kneeling with one palm pressed to an exposed root, a hare and a crow watching, rain beginning to fall; low view at root level.",
+  "details": [
+   "Kneeling druid in a lichen-stained coat, hood back",
+   "Hand flat on a thick twisting root",
+   "Hare sitting alert in the foreground",
+   "Crow on a low branch",
+   "Fine slanting rain lines beginning",
+   "Damp moss and fern detail",
+   "Quarterstaff laid on the ground"
+  ],
+  "atmosphere": "Quiet communion.",
+  "avoid": [
+   "No magical glow",
+   "Do not show full transformation",
+   "Keep animals ordinary in size"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.6 Druidic Rituals, Tier 1"
+  ]
+ },
+ "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20": {
+  "identity": "Tier 2 Druidic Rituals: speaking the wild's language (Wall of Vines, Spike Growth, Summon Dire Wolf, Wild Dominion).",
+  "composition": "A druid speaking aloud as the surrounding trees bend toward them and roots heave up out of the earth; wide low view with the druid centre.",
+  "details": [
+   "Druid standing with open mouth, arms spread palm-down",
+   "Trees leaning inward with branches reaching like fingers",
+   "Roots heaving up from broken ground",
+   "Falling leaf scatter and flung soil in stipple",
+   "Ferns flattening in a ring of wind",
+   "Cloak flaring",
+   "Staff in one hand"
+  ],
+  "atmosphere": "Intense awakening power, unsettling beauty.",
+  "avoid": [
+   "Do not let the trees have faces",
+   "No glowing aura",
+   "Do not copy Tier 3's bark-skin"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.6 Druidic Rituals, Tier 2"
+  ]
+ },
+ "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20": {
+  "identity": "Tier 3 Druidic Rituals: becoming a clause in the oldest contract (Avatar of the Wild, Verdant Dominion, Summon Treant, Maelstrom).",
+  "composition": "A druid half-merged with an ancient oak, bark creeping over their skin and branches rising like antlers from their head; frontal-three-quarter figure growing out of the trunk.",
+  "details": [
+   "Lower body fused with the oak trunk",
+   "Bark texture climbing arms and chest",
+   "Branches forming antlers from the head",
+   "Face still human, eyes calm",
+   "Roots spreading across the ground",
+   "Leaves in sparse stipple",
+   "Dark hollow in the trunk beside"
+  ],
+  "atmosphere": "Reverent, uncanny, solemn.",
+  "avoid": [
+   "Not a Treant monster: a person fusing, not a giant",
+   "No glowing eyes",
+   "Do not make the face monstrous"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.6 Druidic Rituals, Tier 3"
+  ]
+ },
+ "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20": {
+  "identity": "Tier 1 Psychic Abilities: the first disciplines of the unquiet mind (Telekinetic Push, Precognition, Psychic Veil, Mind Link).",
+  "composition": "A psion seated cross-legged with closed eyes, pebbles hovering in a slow ring around them and a candle flame standing perfectly still; straight-on view, symmetrical.",
+  "details": [
+   "Seated figure in simple robes with closed eyes",
+   "Ring of eight to ten small pebbles at different heights",
+   "Candle with a flame drawn as a perfectly upright narrow tongue",
+   "Stone floor with a faint chalk circle",
+   "Bare monastic cell wall",
+   "Calm, drawn face",
+   "Hands resting open on the knees"
+  ],
+  "atmosphere": "Hushed stillness.",
+  "avoid": [
+   "No glowing aura",
+   "No lettering in the circle",
+   "Not the Psion class pose of hovering knives"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.7 Psychic Abilities, Tier 1"
+  ]
+ },
+ "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20": {
+  "identity": "Tier 2 Psychic Abilities: each ability leaves a mark the psion learns to hide (Psychic Lance, Mind Control, Temporal Skew, Psychic Renewal).",
+  "composition": "A psion alone in a dark corridor, hiding a trembling hand, fine cracks of strain around their eyes; mid-shot, leaning on the wall.",
+  "details": [
+   "Figure leaning on a damp stone wall",
+   "One hand clasped in the other to hide a tremor",
+   "Hairline cracks radiating from the eyes like fine crazing",
+   "Sweat beads and tired face",
+   "Long dark corridor with sparse torch bracket",
+   "Collar pulled high",
+   "Drip of dark fluid from the nose"
+  ],
+  "atmosphere": "Private strain and fear of being seen.",
+  "avoid": [
+   "No glow",
+   "Keep the cracks as thin lines",
+   "Do not draw other characters"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.7 Psychic Abilities, Tier 2"
+  ]
+ },
+ "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20": {
+  "identity": "Tier 3 Psychic Abilities: thought and world merge (Gravity Singularity, Reality Shear, Telekinetic Crush, Mass Domination).",
+  "composition": "A psion on a battlefield where stone steps and a wall rise from nothing at their gaze, enemies stumbling as the ground obeys the psion's thought; wide shot, psion centre-left.",
+  "details": [
+   "Psion standing still with a locked gaze, hand slightly raised",
+   "Rising stone steps and a wall emerging from the ground in stacked blocks",
+   "Ground cracks and floating debris fragments",
+   "Enemy soldiers tripping and falling back",
+   "Dust drawn as stipple",
+   "Banners limp in the distance",
+   "Tattered coat edges lifting"
+  ],
+  "atmosphere": "Terrifying calm control.",
+  "avoid": [
+   "No glow or beams",
+   "Enemies are ordinary soldiers, not monsters",
+   "Do not use the Tier 1 pebble ring"
+  ],
+  "sources": [
+   "8. Powers and Traditions: 8.7 Psychic Abilities, Tier 3"
+  ]
+ },
+ "ART-MON-GIANT-TARANTULA": {
+  "identity": "Giant Tarantula, Greenmark Skirmisher, small: a hand-span of bristled legs around a body the size of a war helm, a forest-floor venomous hunter.",
+  "composition": "Low three-quarter ground view of the spider stalking across leaf litter on stilted, deliberate legs, forelegs raised, fangs lifted; a discarded war helm beside it for scale.",
+  "details": [
+   "Exactly eight legs, jointed and tipped with small claws",
+   "Body the size of a war helm, hairy abdomen and cephalothorax",
+   "Dense bristle hairs rendered by short hatch flicks",
+   "Two large fangs with a bead of venom at the tips",
+   "Cluster of eight eyes on a small raised bump",
+   "Palps in front of the fangs",
+   "Leaf litter and a rusted iron helm for scale",
+   "Gripping toe-pads suggesting it can climb walls"
+  ],
+  "atmosphere": "Patient, stilted menace in damp leaf litter.",
+  "avoid": [
+   "Spiders have exactly eight legs",
+   "It spins no snares: no web",
+   "Do not make it larger than a dog",
+   "No human features"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Giant Tarantula [Skirmisher]"
+  ]
+ },
+ "ART-MON-GOBLIN": {
+  "identity": "Goblin, Greenmark Minion, small: a knee-high green-grey raider of ruined steadings that fights in chittering mobs.",
+  "composition": "Full figure in three-quarter view, hunched and scuttling forward, notched blade out in front, with a few smaller silhouettes of its mob in the background.",
+  "details": [
+   "Knee-high, green-grey (rendered as heavy hatching) wiry body, all elbows and knees",
+   "Large pointed ears, long nose, wide mouth full of crooked teeth",
+   "Notched, jagged short blade in the right hand",
+   "Sling of river stones: leather strap and a bulging pouch of round stones on the belt",
+   "Rag loincloth and strips of stolen leather",
+   "Malicious narrowed eyes",
+   "Background: ruined steading wall and two or three blurred mob silhouettes"
+  ],
+  "atmosphere": "Gleeful, cowardly malice.",
+  "avoid": [
+   "Not the Goblin ancestry hero: no clean kit, no lantern, no tabard",
+   "Not the Cave Goblin (blind black eyes) nor Snow Goblin (fur parka)",
+   "Do not give a spear (that is the Cave Goblin)"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Goblin [Minion]"
+  ]
+ },
+ "ART-MON-BEASTMAN": {
+  "identity": "Beastman, Greenmark Minion, medium: a hunched man-shape topped with the head of a goat or boar, black claws, a forest-edge warband raider.",
+  "composition": "Full figure in three-quarter view, bent forward and running at the forest edge, both clawed hands spread wide, head low.",
+  "details": [
+   "Goat head with swept-back horns, slotted pupils and a beard",
+   "Heavy shaggy fur over a hunched human frame",
+   "Black claws on both hands",
+   "Goat-like digitigrade lower legs with hooves",
+   "Ragged belt of hide strips, no weapon",
+   "Torn ear, scarred muzzle, open snarling mouth",
+   "Bracken and tree trunks behind"
+  ],
+  "atmosphere": "Feral grievance, an animal with a grudge.",
+  "avoid": [
+   "No weapons: its attack is Claws",
+   "Do not copy the Satyr Reveler (laurel crown, pipes, playful stance)",
+   "Do not make it a minotaur"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Beastman [Minion]"
+  ]
+ },
+ "ART-MON-BANDIT": {
+  "identity": "Bandit, Greenmark Soldier, medium: a deserter or broken tithe-collector turned forest raider, fighting with shortbow from cover and shortsword up close.",
+  "composition": "Full figure in three-quarter view crouched behind a fallen log, shortbow at half-draw, shortsword drawn and laid within reach.",
+  "details": [
+   "Mismatched scavenged armour: a cracked leather jerkin, one iron pauldron",
+   "Shortbow at half-draw with an arrow nocked",
+   "Shortsword on the log beside",
+   "Dirty hood and cloth mask pulled below the chin",
+   "Hungry, hard face with stubble",
+   "Quiver on hip, torn cloak",
+   "Fallen log and ferns for cover"
+  ],
+  "atmosphere": "Sullen opportunism.",
+  "avoid": [
+   "Not the Bandit Captain: no officer's cloak, no heavy crossbow",
+   "Not an adventurer class: no clean kit",
+   "No cheerful rogue look"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Bandit [Soldier]"
+  ]
+ },
+ "ART-MON-SATYR-REVELER": {
+  "identity": "Satyr Reveler, Greenmark Controller, medium: a goat-legged laurel-crowned fey piper whose music floods listeners with terror or lulls them.",
+  "composition": "Full figure in three-quarter view capering at the edge of firelight on one hoof, pipes at the lips, curved knife thrust in the belt.",
+  "details": [
+   "Goat legs with cloven hooves and shaggy thighs",
+   "Curled ram-like horns and pointed ears",
+   "Laurel crown, withered and brown",
+   "Bone-white pipes of many reeds raised to the mouth",
+   "Curved knife in a belt sheath",
+   "Bare human chest, hollow cheeks, wild grin",
+   "Firelight rim on one side and shallow grave mounds behind"
+  ],
+  "atmosphere": "Sour, soured revelry that is not joyful.",
+  "avoid": [
+   "Not the Beastman: no claws, no hunch, no snarl",
+   "Not cute: sour and haggard",
+   "Pipes are not carved wood"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Satyr Reveler [Controller]"
+  ]
+ },
+ "ART-MON-BRIARLING": {
+  "identity": "Briarling, Greenmark Minion, medium-sized: a hound-sized knot of animate thornwood on root-claws, a spent first line of the Antlered Warden's groves.",
+  "composition": "Low side view of the creature scuttling forward on root-claws with its barbed back bristling, head down.",
+  "details": [
+   "Body of twisted tangled wood strands with barbs",
+   "Four to six legs ending in root-claws",
+   "Hollow knothole eyes, no mouth or a split in the bark",
+   "Thorn spines in long and short rows along its back",
+   "A few withered leaves and moss tufts",
+   "Splinters spraying from a cracked limb",
+   "Mud and dead leaves under it"
+  ],
+  "atmosphere": "A dry, rustling, unliving menace.",
+  "avoid": [
+   "Not a dryad or a treant: no humanoid body, no face",
+   "Not a real hound or animal: pure wood",
+   "Do not draw flame"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Briarling [Minion]"
+  ]
+ },
+ "ART-MON-DIRE-WOLF": {
+  "identity": "Dire Wolf, Greenmark Skirmisher, medium: a pony-sized yellow-eyed pack hunter that cuts prey from the herd.",
+  "composition": "Low three-quarter view of the wolf stalking forward in a crouch, head lowered, hackles raised, as another pack member's outline shows behind.",
+  "details": [
+   "Shoulder as high as a pony, heavy powerful forequarters",
+   "Scarred hide with torn ear and a notch in the muzzle",
+   "Eyes with pale rings and dark pupils; yellow rendered as pale open ring",
+   "Lips curled to show long fangs",
+   "Thick ruffled mane and back hackles",
+   "Four legs only; thick paws with claws",
+   "Leaf litter and trees; a second blurry wolf shape behind"
+  ],
+  "atmosphere": "Patient, pack-coordinated threat.",
+  "avoid": [
+   "Do not make it a werewolf (no upright stance)",
+   "Do not copy Tundra Wolf (white coat, snow) or Blackfire Hound (flame)",
+   "No saddle"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Dire Wolf [Skirmisher]"
+  ]
+ },
+ "ART-MON-ORC": {
+  "identity": "Orc, Greenmark Soldier, medium: a broad, disciplined, grey-skinned raider with lower tusks and a greataxe, a warband member.",
+  "composition": "Full figure in three-quarter view mid-snarl, advancing with a heavy notched cleaver-like greataxe held across the body, trophies swinging from belt.",
+  "details": [
+   "Broad as a doorway, grey skin, heavy jaw, lower tusks jutting upward",
+   "Greataxe with a broad, notched, cleaver-like blade",
+   "Crude trophies: bone strings, a skull and teeth, tied at the belt and shoulder",
+   "Layered hide and iron plate scraps, battered shield strapped on back",
+   "Scarred knuckles and brow",
+   "Fierce open-mouthed snarl",
+   "Burnt steading gate behind"
+  ],
+  "atmosphere": "Brutal confidence, a warband's anvil.",
+  "avoid": [
+   "Not the Orc ancestry hero: no tabard, no composed bearing, no clean armour",
+   "Not a Bugbear (shaggy, long-armed)",
+   "Weapon is a greataxe, not a sword"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Orc [Soldier]"
+  ]
+ },
+ "ART-MON-BUGBEAR": {
+  "identity": "Bugbear, Greenmark Soldier, medium: a seven-foot, shaggy, long-armed ambusher with a flat face and a spiked morningstar.",
+  "composition": "Full figure in three-quarter view rising out of bracken, long arm already swinging a spiked morningstar from arm's reach.",
+  "details": [
+   "Seven feet tall with arms reaching to the knees",
+   "Shaggy fur the colour of dead bracken, drawn in long hatch lines",
+   "Flat face, small eyes, broad nose, wide mouth",
+   "Spiked morningstar with a long haft",
+   "Leather scraps and a belt of bones",
+   "Bracken and undergrowth parting around it",
+   "Silent poised stance"
+  ],
+  "atmosphere": "Silent, patient ambush.",
+  "avoid": [
+   "Not an Ogre: lean and long-limbed, not a hulking thing",
+   "Not a Beastman: no horns or hooves",
+   "Not a Blood Ape: no knuckle-walking"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Bugbear [Soldier]"
+  ]
+ },
+ "ART-MON-HARPY": {
+  "identity": "Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies.",
+  "composition": "Full figure in three-quarter view perched on a broken tower crenel, wings half-spread, head thrown back mid-song, one talon gripping stone and the other clawed forward.",
+  "details": [
+   "Woman's torso and face with ragged hair, hollow cheeks",
+   "Large carrion-bird wings, ragged feathers, long primaries",
+   "Legs of a bird of prey with hooked talons",
+   "Tail of dirty feathers",
+   "Open mouth mid-shriek, solid black",
+   "Filth-streaked feathers",
+   "Broken tower masonry and a scatter of bones"
+  ],
+  "atmosphere": "Beautiful and filthy.",
+  "avoid": [
+   "Not a siren or angel: ragged and foul",
+   "Keep hands human but with clawed nails; talons on feet",
+   "No wing-arms confusion: wings and arms both visible"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Harpy [Cannon]"
+  ]
+ },
+ "ART-MON-GOBLIN-SHAMAN": {
+  "identity": "Goblin Shaman, Greenmark Controller, small: a goblin hung with bone and crow-feather fetishes who hangs behind the mob and spits hexes.",
+  "composition": "Full figure in three-quarter view standing on a stump behind a mob, gnarled staff raised in one hand, other hand flinging a spit of dark hex-marks.",
+  "details": [
+   "Knee-high goblin with a larger head and long fingers",
+   "Cloak of crow feathers and clinking bones",
+   "Gnarled staff topped with a skull and feathers",
+   "Necklace of finger bones",
+   "Headdress of antlers or bird skull",
+   "Hex rendered as short dark dashes from the hand",
+   "Mob silhouettes lower in the background"
+  ],
+  "atmosphere": "Petty, spiteful magic.",
+  "avoid": [
+   "Not the plain Goblin: add staff, fetishes, no sling",
+   "Do not draw glow",
+   "Keep it small"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Goblin Shaman [Controller]"
+  ]
+ },
+ "ART-MON-BANDIT-CAPTAIN": {
+  "identity": "Bandit Captain, Greenmark Elite, medium: a commissioned-or-claiming leader in looted mail wielding a longsword and a heavy crossbow.",
+  "composition": "Full figure in three-quarter view standing with longsword levelled forward to command, heavy crossbow slung at the hip, cloak behind.",
+  "details": [
+   "Looted mail hauberk with mismatched officer's pauldron",
+   "Longsword with a fine crossguard and a chipped blade",
+   "Heavy crossbow slung across the back or hip",
+   "Faded officer's sash and scarf",
+   "Scarred face, narrow gaze, firm jaw",
+   "Boots with spurs, belt of keys",
+   "Battered wooden crate and two dim underling silhouettes behind"
+  ],
+  "atmosphere": "Hard command.",
+  "avoid": [
+   "Not the plain Bandit: higher status, upright, armoured",
+   "No ornate royal gear",
+   "No horse"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Bandit Captain [Elite]"
+  ]
+ },
+ "ART-MON-DIRE-BEAR": {
+  "identity": "Dire Bear, Greenmark Brute, large: a shaggy mountain of muscle twice a man's height, mauling with forepaws and a shield-splitting bite.",
+  "composition": "Three-quarter view of the bear reared on its hind legs, forepaws raised and swinging down, jaws open.",
+  "details": [
+   "Twice a man's height when reared",
+   "Huge shaggy hide with matted fur strokes",
+   "Broad skull, small eyes, large teeth",
+   "Long curved claws on both forepaws",
+   "Splintered branches at its feet",
+   "Visible shoulder muscle and hump",
+   "Broken shield fragment in the dirt"
+  ],
+  "atmosphere": "Mindless, immense force.",
+  "avoid": [
+   "Not the Gorebeak Bear: no beak or feathers",
+   "Not a Werebear",
+   "No malice-driven snarl: it is hungry, not evil"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Dire Bear [Brute]"
+  ]
+ },
+ "ART-MON-BLOOD-APE": {
+  "identity": "Blood Ape, Greenmark Soldier, medium: a slab-shouldered crimson-furred canopy ape that drops onto prey and hammers with both fists.",
+  "composition": "Three-quarter view of the ape swinging down from a thick branch by one long arm, other fist cocked back to pummel.",
+  "details": [
+   "Massive shoulders, long arms, short bowed legs",
+   "Dense dark fur (rendered with heavy hatching) streaked with red wounds shown as pale gaps",
+   "Flat brutal face with heavy brow and fangs",
+   "Knuckled fists as big as helmets",
+   "Branches and hanging vines",
+   "Wound scars on chest",
+   "Leaves falling"
+  ],
+  "atmosphere": "Furious, building frenzy.",
+  "avoid": [
+   "Not a Beastman or Bugbear",
+   "No weapons: it uses fists",
+   "Do not draw gore"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Blood Ape [Soldier]"
+  ]
+ },
+ "ART-MON-GOREBEAK-BEAR": {
+  "identity": "Gorebeak Bear, Greenmark Brute, large: a stitched-looking horror with a bear's body and a great owl's head and foreclaws, with a plate-punching hooked beak.",
+  "composition": "Three-quarter view of the creature charging low through the trees, head thrust forward, hooked beak open, foreclaws raking out.",
+  "details": [
+   "Bear's heavy body and hind legs",
+   "Great owl's head with a facial disk, round eyes and a hooked beak",
+   "Foreclaws of an owl: long curved talons",
+   "Feathered neck ruff blending to fur",
+   "Plate-pierced hook beak with a shred of armour",
+   "Four limbs only; no wings",
+   "Splintered saplings in its wake"
+  ],
+  "atmosphere": "Wrong, hybrid horror.",
+  "avoid": [
+   "No wings: it does not fly",
+   "Not the Dire Bear: no reared pose, no bear head",
+   "Not an owlbear cartoon"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Gorebeak Bear [Brute]"
+  ]
+ },
+ "ART-MON-OGRE": {
+  "identity": "Ogre, Greenmark Brute, large: a twice-man-height, slope-shouldered grey slab of muscle in stitched hides, claiming a ford with a tree-trunk great club.",
+  "composition": "Three-quarter view standing calf-deep in a ford, great club resting on the shoulder, one hand held out for a toll.",
+  "details": [
+   "Twice a man's height, slope-shouldered, with a heavy gut",
+   "Grey skin, bald head, small eyes, underbite",
+   "Stitched hide clothes patched with cord",
+   "Great club made from a tree trunk with roots at the head",
+   "Heavy bright objects (a dented helm and cups) hung from its belt",
+   "Stream water around its shins",
+   "Open outstretched empty palm"
+  ],
+  "atmosphere": "Brutal indifference.",
+  "avoid": [
+   "Not a troll: no claws or regeneration",
+   "Not a Forest Troll's lanky build",
+   "Not a Gloom Hulk"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Ogre [Brute]"
+  ]
+ },
+ "ART-MON-DRYAD-GROVEWARDEN": {
+  "identity": "Dryad Grovewarden, Greenmark Controller, medium: a bark-skinned fey tree-spirit crowned in living branches that binds intruders with roots.",
+  "composition": "Full figure in three-quarter view stepping out of a hollow tree trunk as if through a doorway, staff extended, roots snaking from its feet.",
+  "details": [
+   "Bark-textured skin and a woman-shaped body",
+   "Crown of living branches and leaves",
+   "Long hair of vines",
+   "Entangling staff of twisted wood",
+   "Roots creeping from the ankles over the ground",
+   "Hollow, serene, stern face",
+   "Tree trunk doorway behind with split bark"
+  ],
+  "atmosphere": "Cold, protective wrath.",
+  "avoid": [
+   "Not the Briarling: this is a humanoid",
+   "Not a Treant: only a person-sized figure",
+   "No nudity"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Dryad Grovewarden [Controller]"
+  ]
+ },
+ "ART-MON-FOREST-TROLL": {
+  "identity": "Forest Troll, Greenmark Brute, large: a gangling moss-slick bog-edge brute with reaching arms and broken tusks whose wounds knit shut.",
+  "composition": "Three-quarter view of the troll lurching forward with both long arms reaching, mouth agape.",
+  "details": [
+   "Gangling build, long arms, hunched back",
+   "Moss patches clinging to slick skin",
+   "Broken tusks in a wide mouth",
+   "Rending claws on both hands",
+   "Old wounds drawn closing as raised stitch-like seams",
+   "Ragged loincloth",
+   "Boggy ground and rotting trunk"
+  ],
+  "atmosphere": "Stupid, relentless hunger.",
+  "avoid": [
+   "Not the Ogre: lankier, with claws",
+   "Not the Swamp Troll (different habitat, mire details)",
+   "No fire or oil shown"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Forest Troll [Brute]"
+  ]
+ },
+ "ART-MON-WEREWOLF": {
+  "identity": "Werewolf, Greenmark Elite, medium: a haunted villager's cursed form, a hunched grey wolf-man killer that strikes from the treeline.",
+  "composition": "Three-quarter view of the beast striding upright out of the treeline, claws spread, torn villager's shirt still hanging.",
+  "details": [
+   "Upright hunched wolf-man with a lupine head and long muzzle",
+   "Shaggy grey fur rendered with long hatch",
+   "Long rending claws",
+   "Torn villager's clothes: shirt strips and a broken belt",
+   "Savage open jaws with a long tongue",
+   "Digitigrade legs",
+   "Trees behind with sparse moonlight lines"
+  ],
+  "atmosphere": "Terrible, tragic predator.",
+  "avoid": [
+   "Not the Dire Wolf: this walks upright",
+   "Do not show wounds",
+   "Not the Werebear or Wererat"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Werewolf [Elite]"
+  ]
+ },
+ "ART-MON-GREEN-DRAGON": {
+  "identity": "Green Dragon, Greenmark Elite, huge: a moss-coloured serpentine spine-crested tyrant with a corrosive breath; it flies. Typical adult, alone.",
+  "composition": "Wide three-quarter view of the dragon coiled on a mossy rock with its long neck raised and head turned toward the viewer, wings folded.",
+  "details": [
+   "Serpentine long body coiled on a rock",
+   "Spine crest running from the head down the back",
+   "Four legs and a pair of folded wings",
+   "Horned head with narrow eyes",
+   "Moss-textured scales drawn as fine overlapping arcs",
+   "Long forked tongue or a slight wisp of breath shown as stipple",
+   "Mossy boulder and bare ground with no treasure"
+  ],
+  "atmosphere": "Cunning, ancient patience.",
+  "avoid": [
+   "No lair, no hoard, no tribute or humans",
+   "Not a Frost Wyvern (two legs)",
+   "Not the Black, Blue or White Dragon: moss/serpentine silhouette with a long neck"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Greenmark Bestiary: Green Dragon [Elite]"
+  ]
+ },
+ "ART-MON-UNDEAD-WARRIOR": {
+  "identity": "Undead Warrior, Ashlands Minion, medium: a half-rotted corpse in rusted old-empire kit holding its post in the ash.",
+  "composition": "Three-quarter view of the corpse standing at its post, rectangular shield forward and short sword at the ready, ash drifting at its feet.",
+  "details": [
+   "Half-rotted corpse: leathery skin and exposed ribs, not a bare skeleton",
+   "Rusted imperial legion kit: segmental armour, plain helm",
+   "Rectangular shield, scarred and dented",
+   "Notched short sword",
+   "Dead hollow eye sockets as solid black",
+   "Tattered cloak edge, ash underfoot",
+   "Another dim shape behind in a ragged rank"
+  ],
+  "atmosphere": "Mindless drilled habit.",
+  "avoid": [
+   "Not bare bones: that is the Skeleton Warrior",
+   "Not frosty: that is the Frozen Skeleton",
+   "Not ornate: that is the White Court Guard"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Undead Warrior [Minion]"
+  ]
+ },
+ "ART-MON-UNDEAD-CROSSBOWMAN": {
+  "identity": "Undead Crossbowman, Ashlands Cannon, medium: a dead marksman cranking a warped windlass with fleshless fingers in the rear of a battle-line.",
+  "composition": "Three-quarter view of the figure with a boot in the stirrup, cranking the windlass, crossbow aimed at an unseen mark.",
+  "details": [
+   "Fleshless skeletal fingers on the windlass handle",
+   "Crossbow with a warped stock and iron prod",
+   "Quilted gambeson rotting to threads and kettle hat",
+   "Quiver of bolts at the hip, a few bolts left",
+   "Gaunt skull face with hollow sockets",
+   "Ash and rubble around the feet",
+   "Rank of dim shapes ahead"
+  ],
+  "atmosphere": "Tireless patient aim.",
+  "avoid": [
+   "No shield: unlike the Undead Warrior",
+   "Not a Skeleton Archer: crossbow, not bow",
+   "Not a Forsaken Archer: tattered common kit"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Undead Crossbowman [Cannon]"
+  ]
+ },
+ "ART-MON-GHOUL": {
+  "identity": "Ghoul, Ashlands Minion, medium: a grey, gaunt, hook-clawed corpse-eater with a paralytic bite that hunts tombs in packs.",
+  "composition": "Low three-quarter view of the ghoul loping forward on two legs and one knuckled hand, head forward, jaws opened.",
+  "details": [
+   "Grey stretched skin over visible ribs and spine",
+   "Long hook claws on each finger",
+   "Elongated jaw with sharp irregular teeth",
+   "Sunken eyes, thin lipless face",
+   "Tattered burial scraps",
+   "Bony hunched posture",
+   "Crypt floor with bones, tomb doorway behind"
+  ],
+  "atmosphere": "Starving, crafty hunger.",
+  "avoid": [
+   "Not the Possessed Corpse: ghouls are agile and feral",
+   "Not the Frost Ghoul: no ice or frost",
+   "No weapons"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Ghoul [Minion]"
+  ]
+ },
+ "ART-MON-POSSESSED-CORPSE": {
+  "identity": "Possessed Corpse, Ashlands Minion, medium: a body worn by something from the dark between worlds, lurching toward a jerking purpose.",
+  "composition": "Full figure in three-quarter view lurching forward with arms outstretched, head lolling to one side.",
+  "details": [
+   "Body in a tattered shroud or peasant clothes",
+   "Head tilted at a wrong angle",
+   "Mouth stretched open as a solid black void",
+   "Dark vapour strands leaking from eyes and mouth",
+   "Arms stiff and reaching, fingers curled",
+   "Bare feet dragging in ash",
+   "Gaping cuts without gore, grey skin"
+  ],
+  "atmosphere": "Wrong, jerking, silent.",
+  "avoid": [
+   "Not a Zombie of the Mire: no water, no bog plants",
+   "Not a Ghoul: stiff, lurching, not feral",
+   "No weapon"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Possessed Corpse [Minion]"
+  ]
+ },
+ "ART-MON-EMBER-SKULL": {
+  "identity": "Ember Skull, Ashlands Cannon, small: a single charred head wreathed in flame that drifts on cold updrafts; it flies.",
+  "composition": "Three-quarter view of the skull drifting in the air above rubble, jaw open, a thin fire ray spitting from the mouth.",
+  "details": [
+   "A single charred skull, no body",
+   "Tall wavy flame tongues around it rendered as hatched flame shapes",
+   "Jaw hinged open with cracked teeth",
+   "Eye sockets solid black with small white points",
+   "Ray of fire shown as a narrow tapered line",
+   "Rubble below receiving sparse cast light",
+   "Soot flecks"
+  ],
+  "atmosphere": "Small, spiteful ember in the cold.",
+  "avoid": [
+   "No body or wings (it flies without wings)",
+   "Not glow: draw flames in line",
+   "Do not make it cute"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Ember Skull [Cannon]"
+  ]
+ },
+ "ART-MON-WERERAT": {
+  "identity": "Wererat, Ashlands Skirmisher, small: a hunched plague-grey shapeshifter between man and rat that bites and skitters back into the dark.",
+  "composition": "Low three-quarter view of the creature crouched and half-turned, rusted blade held low, preparing to skitter away.",
+  "details": [
+   "Hunched half-man half-rat form",
+   "Long snout with chisel teeth, whiskers, naked tail",
+   "Plague-grey patchy fur and bare skin",
+   "Rusted blade gripped in a clawed hand",
+   "Ragged clothes of sewer rags",
+   "Sewer or undercroft arch with dripping water",
+   "Small size: knee-high to a man at an angle"
+  ],
+  "atmosphere": "Skulking disease and stealth.",
+  "avoid": [
+   "Not the Ratkin ancestry hero",
+   "Not the Ratkin Scavenger or Warrior",
+   "Do not draw it as a real rat only"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Wererat [Skirmisher]"
+  ]
+ },
+ "ART-MON-SPECTRE": {
+  "identity": "Spectre, Ashlands Controller, medium: grief and rage without a body, a flying incorporeal dead thing that drinks warmth and years by touch.",
+  "composition": "Three-quarter view of the spectre drifting out of a stone wall, one hand reaching forward to touch.",
+  "details": [
+   "Burned-away body fading into long tapering hatch strokes",
+   "Burn-scorched shreds of a robe or cloak trailing",
+   "Hollow face: black eye holes and open mouth",
+   "Reaching long fingers",
+   "Body half-embedded in the wall to show it passes through",
+   "Floating off the ground, no feet",
+   "The manner of its death hinted in a scorched rope or broken shackle"
+  ],
+  "atmosphere": "Aching grief and cold.",
+  "avoid": [
+   "Not the Banshee (no wail, no hair) or Ice Wraith",
+   "No flames",
+   "Do not draw a classic sheet ghost"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Spectre [Controller]"
+  ]
+ },
+ "ART-MON-UNDEAD-SENTINEL": {
+  "identity": "Undead Sentinel, Ashlands Soldier, medium: a towering gaunt dead gate-guard in tower-shield and reach-halberd who holds a breach forever.",
+  "composition": "Frontal three-quarter view of the sentinel planted in a broken gateway, rusted tower shield grounded to the left, reach-halberd raised in the right hand.",
+  "details": [
+   "Tall, gaunt dead soldier, taller than the arch's inner width",
+   "Rusted tower shield standing on its end",
+   "Halberd with a long haft and broad blade held high",
+   "Closed old-empire helm with a narrow eye slit",
+   "Rusted plate on the torso, mummified arms",
+   "Cracked gateway arch and rubble",
+   "Lesser dead dimly behind"
+  ],
+  "atmosphere": "Unmoving stillness.",
+  "avoid": [
+   "Not the White Court Sentinel (no ice, no greatshield crouch)",
+   "Not the Undead Warrior: far larger, with a halberd",
+   "Do not show it walking"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Undead Sentinel [Soldier]"
+  ]
+ },
+ "ART-MON-UNDEAD-CHAMPION": {
+  "identity": "Undead Champion, Ashlands Soldier, medium: a slab of dead muscle raised from the largest corpses, wielding a heavy great-axe built of fused bone.",
+  "composition": "Three-quarter view of the champion trudging forward, great-axe dragging low and then rising across the body.",
+  "details": [
+   "Huge, bloated shoulders and a thick neck with dead pale skin",
+   "Great-axe with a head and haft built from fused bone and iron",
+   "Scraps of rusted plate on shoulders and forearms",
+   "Bald scarred head with sunken eyes",
+   "Chains and rusted rivets across the chest",
+   "Planted heavy legs in ash",
+   "Lesser dead trailing behind"
+  ],
+  "atmosphere": "Slow, crushing inevitability.",
+  "avoid": [
+   "Not an Ogre or a living Fighter: it is dead, pale and plated in scraps",
+   "Not a Giant Skeleton: this has flesh",
+   "Do not hold a maul or hammer: the stat block gives a great-axe"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Undead Champion [Soldier]"
+  ]
+ },
+ "ART-MON-GARGOYLE": {
+  "identity": "Gargoyle, Ashlands Skirmisher, medium: a stone guardian that looks like statuary until prey strays beneath it; it flies.",
+  "composition": "Three-quarter view of the creature crouched on a broken cornice, wings half-open, one clawed hand gripping the edge and head turned down toward the viewer.",
+  "details": [
+   "Grey stone-textured skin with chisel marks",
+   "Bat-like stone wings",
+   "Horned head, wide fanged mouth",
+   "Clawed fingers and talon feet gripping the ledge",
+   "Cracks and moss in the stone",
+   "Half its body still carved-stone smooth",
+   "Gothic ruin cornice with a broken tracery"
+  ],
+  "atmosphere": "Patient, watchful stone.",
+  "avoid": [
+   "Must have wings: it flies",
+   "Not the Stone Sentinel (a humanoid construct)",
+   "No fire or glowing eyes"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Gargoyle [Skirmisher]"
+  ]
+ },
+ "ART-MON-STONE-SENTINEL": {
+  "identity": "Stone Sentinel, Ashlands Brute, medium: a faceless granite construct that grinds forward with a giant stone sword and cannot be pushed.",
+  "composition": "Three-quarter view of the sentinel striding forward through a ruined hall, giant stone blade slab swung low in one blocky fist.",
+  "details": [
+   "Blocky humanoid made of carved granite plates",
+   "Smooth faceless head with no features",
+   "Giant stone sword: a slab blade carved of the same granite",
+   "Thick legs like pillars with chiselled seams",
+   "Moss and chipped edges",
+   "Dust trailing from joints",
+   "Ruined hall columns for scale"
+  ],
+  "atmosphere": "Feelingless inevitability.",
+  "avoid": [
+   "Not the Iron Golem (no rivets or metal)",
+   "Not the Gargoyle: no wings, no animal head",
+   "No face or eyes"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Stone Sentinel [Brute]"
+  ]
+ },
+ "ART-MON-MINOTAUR": {
+  "identity": "Minotaur, Ashlands Elite, large: a bull-headed giant of labyrinthine ruins that charges head-down to gore then wades in with a greataxe.",
+  "composition": "Three-quarter view of the minotaur charging head-down through a narrow ruined street with greataxe trailing behind.",
+  "details": [
+   "Bull's head with large curved horns and a ring through the nose",
+   "Massive muscular human torso and thick bull neck",
+   "Greataxe in one hand with a long haft",
+   "Hooved legs, thick fur on the lower body",
+   "Fetid breath clouds as ink lines",
+   "Horns with chips and ash",
+   "Narrow canyon of ruined walls"
+  ],
+  "atmosphere": "Relentless fury.",
+  "avoid": [
+   "Not a Beastman: far larger",
+   "Do not give a shield",
+   "Do not draw a labyrinth map"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Minotaur [Elite]"
+  ]
+ },
+ "ART-MON-NIGHT-HAG": {
+  "identity": "Night Hag, Ashlands Controller, medium: a withered crone of the between-places who curses the sleeping and steps half into the ether.",
+  "composition": "Three-quarter view of the hag stepping half out of the shadow, one claw extended, lower body dissolving into hatching.",
+  "details": [
+   "Withered crone with sunken cheeks and a long nose",
+   "Long cursed claws on one hand",
+   "Ragged cloak and tangled hair",
+   "Eyes as pale rings with dark pupils",
+   "Lower half fading into sparse lines",
+   "Hunched back, bony fingers",
+   "Dark archway behind with crossed hatching"
+  ],
+  "atmosphere": "Malicious intimacy of the night.",
+  "avoid": [
+   "Not the Swamp Hag: no bog, no reeds",
+   "Not the Banshee",
+   "No broom or pointed hat"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Night Hag [Controller]"
+  ]
+ },
+ "ART-MON-FORSAKEN-ARCHER": {
+  "identity": "Forsaken Archer, Ashlands Cannon, medium: an oath-bound dead marksman of the empire's finest, drawing a cursed longbow.",
+  "composition": "Three-quarter view at full draw on a ruined rampart, cursed longbow bent, barbed arrow aimed.",
+  "details": [
+   "Finest imperial gilt scale armour, rotted and tarnished",
+   "Plumed helm in decay, hollow face",
+   "Cursed longbow taller than the archer, with a binding of dark cord",
+   "Barbed arrow with a rag tied at the head",
+   "Tattered ceremonial cloak with no readable device",
+   "Rampart parapet with a broken crenel",
+   "Smoke wisps drawn as sparse strokes"
+  ],
+  "atmosphere": "Old oath curdled into precision.",
+  "avoid": [
+   "Not the Skeleton Archer or Undead Crossbowman",
+   "Not a bare skeleton",
+   "Weapon is a longbow, not a shortbow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Forsaken Archer [Cannon]"
+  ]
+ },
+ "ART-MON-FORSAKEN-KNIGHT": {
+  "identity": "Forsaken Knight, Ashlands Soldier, medium: dead chivalry in spectral plate with a flamberge wreathed in grave-light.",
+  "composition": "Three-quarter view of the knight advancing through ash, flamberge held two-handed low, plate cloak in tatters.",
+  "details": [
+   "Full gothic plate in ghostly worn pale tones",
+   "Flamberge: a long two-handed wavy-edged blade",
+   "Grave-light drawn as ink wavy flame lines around the blade",
+   "Tattered banner on a pole behind with no readable emblem",
+   "Closed bascinet helm with dark eye slit",
+   "Ash drifting around greaves",
+   "Heavy steady stride"
+  ],
+  "atmosphere": "Cursed honour.",
+  "avoid": [
+   "Not the Forsaken Duelist (light) or Archer",
+   "Not the Fallen Paladin",
+   "No shield"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Forsaken Knight [Soldier]"
+  ]
+ },
+ "ART-MON-FORSAKEN-DUELIST": {
+  "identity": "Forsaken Duelist, Ashlands Skirmisher, medium: the empire's finest fencer, dead and tireless, with a single flashing rapier.",
+  "composition": "Three-quarter view of the duelist in an en garde stance, rapier extended, back arm raised for balance, slipping a blow.",
+  "details": [
+   "Slender build with a fencer's stance",
+   "Single slender rapier with a swept hilt",
+   "Tattered court jacket and ruffled collar",
+   "Half-face mask or hollow skull face",
+   "Light boots and a long cloak",
+   "Off hand raised behind",
+   "Cracked marble floor"
+  ],
+  "atmosphere": "Elegant lethal economy.",
+  "avoid": [
+   "No shield or buckler",
+   "Not the Forsaken Knight: unarmoured and light",
+   "Not the living Trickster or Rogue class"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Forsaken Duelist [Skirmisher]"
+  ]
+ },
+ "ART-MON-BASILISK": {
+  "identity": "Basilisk, Ashlands Elite, medium: an ox-sized, heavy, eight-legged reptile whose gaze slowly turns flesh to stone.",
+  "composition": "Three-quarter view of the basilisk dragging itself over rubble with its head low and eyes pale, a half-petrified statue in the background.",
+  "details": [
+   "Eight reptilian legs, four a side",
+   "Heavy lizard body the size of an ox",
+   "Wide blunt head with heavy brow and pale unblinking eyes",
+   "Rough scaled hide with bony ridges",
+   "Crawling pose with belly near the ground",
+   "Statues of surprised people, caught mid-stride, scattered behind",
+   "Rubble and ash"
+  ],
+  "atmosphere": "Heavy, patient dread.",
+  "avoid": [
+   "Exactly eight legs",
+   "No wings or fire",
+   "Not a snake or dragon",
+   "Do not show gore"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Basilisk [Elite]"
+  ]
+ },
+ "ART-MON-ASHEN-REVENANT": {
+  "identity": "Ashen Revenant, Ashlands Elite, medium: a corpse-warrior in fire-blackened plate driven by one grudge, clawing upright after being struck down.",
+  "composition": "Three-quarter view of the revenant rising from one knee, one fist on the ground, grave cleaver raised in the other hand.",
+  "details": [
+   "Fire-blackened cracked plate armour",
+   "Heavy grave cleaver with a broad blade",
+   "Skull-like face inside a split helm",
+   "Charred bone showing at the joints",
+   "Ash falling from the plate",
+   "Burnt ground, scorched stump",
+   "Intense focused posture"
+  ],
+  "atmosphere": "Single-minded vengeance.",
+  "avoid": [
+   "Not the Forsaken Knight (pale plate)",
+   "Not the Undead Champion",
+   "No glow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Ashen Revenant [Elite]"
+  ]
+ },
+ "ART-MON-IRON-GOLEM": {
+  "identity": "Iron Golem, Ashlands Brute, large: a towering automaton of riveted black iron guarding a throne, with piledriver fists.",
+  "composition": "Three-quarter view of the golem standing before an empty throne, both massive fists raised to slam down.",
+  "details": [
+   "Riveted black iron plates over a humanoid frame",
+   "Slit visor with no face",
+   "Thick piston-like limbs and large hands",
+   "Joints showing exposed pins",
+   "Dust sifting from its shoulders",
+   "Empty throne and dust on the steps",
+   "Chipped edges and rust bloom"
+  ],
+  "atmosphere": "Cold guarding of a long-dead king.",
+  "avoid": [
+   "Not the Brass Golem or Stone Sentinel",
+   "No weapon, only fists",
+   "No steam or gears"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Iron Golem [Brute]"
+  ]
+ },
+ "ART-MON-LICH": {
+  "identity": "Lich, Ashlands Elite, medium: a desiccated sorcerer-king in mouldering finery who commands the dead and flies a little above the floor.",
+  "composition": "Three-quarter view of the lich hovering over the floor, one skeletal hand reaching forward to touch.",
+  "details": [
+   "Desiccated body with leathery skin on a thin frame",
+   "Tarnished crown on a skull face",
+   "Mouldering royal robes trailing off the ground",
+   "Reaching long clawed hand",
+   "Eye sockets with tiny white points",
+   "Ring on each finger, chains and amulets",
+   "Dust and bone fragments, crumbling throne room"
+  ],
+  "atmosphere": "Cold, withered royal pride.",
+  "avoid": [
+   "No phylactery visible (it is hidden)",
+   "Not the Tomb Necromancer or Mummy",
+   "No glowing eyes"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Ashlands Bestiary: Lich [Elite]"
+  ]
+ },
+ "ART-MON-KOBOLD": {
+  "identity": "Kobold, Undermarches Minion, small: a knee-high reptilian scavenger with dull scales and a dingy mining pick who fights in warren mobs.",
+  "composition": "Low three-quarter view of the kobold peering from a tunnel mouth, mining pick over its shoulder, sling in the other hand, others dimly behind.",
+  "details": [
+   "Knee-high reptilian body with a snout, small horn nubs and a tail",
+   "Dull scales rendered with small scale marks",
+   "Dingy mining pick with a splintered haft",
+   "Sling and pouch of stones",
+   "Ragged cloth and a pick-hat or hood",
+   "Quick, darting eyes",
+   "Tunnel timbers and a jury-rigged trap"
+  ],
+  "atmosphere": "Nervous, scuttling cunning.",
+  "avoid": [
+   "Not a goblin: reptilian snout and tail",
+   "Not the Lizardfolk",
+   "Do not make it cute"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Kobold [Minion]"
+  ]
+ },
+ "ART-MON-CAVE-GOBLIN": {
+  "identity": "Cave Goblin, Undermarches Minion, small: a pale, blinder goblin with wide black eyes, a jagged spear and an instinct to flee towards more of its kind.",
+  "composition": "Low three-quarter view of the goblin shielding its eyes from a light, jagged spear trailing, half-turned to flee into a cave mouth.",
+  "details": [
+   "Pale skin and large black pool eyes",
+   "Long ears and a thin frame",
+   "Jagged spear improvised from a rusty blade lashed to a stick",
+   "Hand raised to shield eyes from light",
+   "Bare belly, loincloth and a few bones",
+   "Cave mouth behind with stalactites",
+   "Small, cowering stance"
+  ],
+  "atmosphere": "Skittish, nervous fear.",
+  "avoid": [
+   "Not the Greenmark Goblin: no sling, no notched blade",
+   "Not the Goblin ancestry hero",
+   "Do not draw a mob"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Cave Goblin [Minion]"
+  ]
+ },
+ "ART-MON-GIANT-BAT": {
+  "identity": "Giant Bat, Undermarches Minion, large: a leathery-winged cave bat wider than a man is tall that swoops, bites and wheels away; it flies.",
+  "composition": "Three-quarter view from below of the bat in a swooping pass, wings spread wide, jaws open, a cavern roof of stalactites behind.",
+  "details": [
+   "Wingspan wider than a man is tall: two long membrane wings with finger bones",
+   "Furred body, large ears, folded nose leaf",
+   "Open mouth with needle teeth",
+   "Clawed thumb hooks on the wings",
+   "Hind feet curled",
+   "Stalactites and a few other bat shapes hanging in the distance",
+   "Ragged membrane edges"
+  ],
+  "atmosphere": "Sudden swooping dread.",
+  "avoid": [
+   "Wings are required: it flies",
+   "Not a harpy, no human body",
+   "Not the Stirge: bat anatomy, not mosquito",
+   "No glowing eyes"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Giant Bat [Minion]"
+  ]
+ },
+ "ART-MON-VAULTFANG": {
+  "identity": "Vaultfang, Undermarches Cannon, medium: a mottled stone-hard chitin cone that mimics a stalactite and drops once, point first, through helm and skull.",
+  "composition": "Vertical composition looking up: the creature clinging to the cavern roof and starting to drop, single barbed point down, above a helmeted head.",
+  "details": [
+   "A single cone-shaped body mottled like stone",
+   "Ridged chitin plates banding the cone",
+   "Single large barbed point at the tip",
+   "Tiny gripping claws at the top to cling to the ceiling",
+   "No eyes, no limbs beyond the claws",
+   "Real stalactites beside it for comparison",
+   "A helmed head and shoulders at the bottom edge for scale"
+  ],
+  "atmosphere": "Still stone becoming a falling spear.",
+  "avoid": [
+   "Not a bat or spider",
+   "Do not draw legs or a face",
+   "It looks like a stalactite, not a monster at first glance"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Vaultfang [Cannon]"
+  ]
+ },
+ "ART-MON-GIANT-CENTIPEDE": {
+  "identity": "Giant Centipede, Undermarches Skirmisher, small: a spear-long, many-segmented, venomous cave predator that climbs walls on a hundred legs.",
+  "composition": "Three-quarter view of the centipede pouring down a cave wall in a long sinuous curve, mandibles open and forward.",
+  "details": [
+   "Long segmented body about as long as a spear",
+   "Many legs along each segment, hundreds suggested",
+   "Armoured plates on each segment",
+   "Two curved venomous mandibles",
+   "Long antennae",
+   "Shed husks scattered on the floor",
+   "Wall of wet rock"
+  ],
+  "atmosphere": "Cold sinuous hunger.",
+  "avoid": [
+   "Not a snake or caterpillar: armoured segments, one pair of legs per segment",
+   "Do not make it larger than a spear in length",
+   "No web"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Giant Centipede [Skirmisher]"
+  ]
+ },
+ "ART-MON-NOXCLOTH": {
+  "identity": "Noxcloth, Undermarches Controller, large: a fold of black leathery hide hanging from the cavern roof that drops to smother the head; it flies.",
+  "composition": "Wide view from below: the flat cloak-like creature half-peeled off the cavern ceiling, edges billowing over a torch-carrying figure's silhouette beneath.",
+  "details": [
+   "A cloak-shaped fold of black leathery skin with a trailing hem",
+   "Ragged edges and a ridge of muscle",
+   "Underside with faint ribs and a toothless slit",
+   "No visible eyes",
+   "Extremely flat but wider than a man",
+   "Snuffed torch below with a thin smoke line",
+   "Rock ceiling folds that match the body"
+  ],
+  "atmosphere": "Silent suffocating shadow.",
+  "avoid": [
+   "Not a Giant Bat: no skeleton, no head, no ears",
+   "Not a cloak worn by a person",
+   "Do not draw a face"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Noxcloth [Controller]"
+  ]
+ },
+ "ART-MON-TROGLODYTE": {
+  "identity": "Troglodyte, Undermarches Soldier, medium: a grey, crested reptilian cave-dweller whose skin shifts colour to vanish against stone, fighting claws first.",
+  "composition": "Three-quarter view of the troglodyte stepping out of a rock wall with both claws spread, parts of its body fading to the wall's texture.",
+  "details": [
+   "Grey scaly hide, head crest, lizard muzzle",
+   "Two clawed hands, long and hooked",
+   "Skin merging into the rock texture on one side",
+   "Naked body with a simple rag belt",
+   "Hunched predator stance",
+   "Sickly fume lines from the body to show the stench",
+   "Cave wall detail"
+  ],
+  "atmosphere": "Reeking camouflaged menace.",
+  "avoid": [
+   "Not a Lizardfolk Warrior (no weapons or armour)",
+   "Not a Kobold: bigger, crested",
+   "Do not draw a tail-stomping dinosaur"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Troglodyte [Soldier]"
+  ]
+ },
+ "ART-MON-GIANT-BLACK-WIDOW": {
+  "identity": "Giant Black Widow, Undermarches Controller, small: a glossy-black war-hound-sized spider with a crimson hourglass mark, squatting in its own webbing.",
+  "composition": "Three-quarter view from the front of the spider hanging head-down at the centre of a huge web in a cavern, one foreleg pulling a strand.",
+  "details": [
+   "Exactly eight legs, long and thin",
+   "Glossy black bulbous abdomen with a crimson mark (rendered as a bold solid shape with an hourglass in white)",
+   "Cluster of small eyes",
+   "Large fangs dripping venom",
+   "Cathedral of web strands spanning stalagmites",
+   "Cocooned bundle hanging off to one side",
+   "Strands in fine black lines"
+  ],
+  "atmosphere": "Predatory stillness in a lair of silk.",
+  "avoid": [
+   "Spiders have exactly eight legs",
+   "Not the Giant Tarantula (hairy, no web)",
+   "Do not make it giant-scale: war-hound size"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Giant Black Widow [Controller]"
+  ]
+ },
+ "ART-MON-GLOOMSPORE-JELLY": {
+  "identity": "Gloomspore Jelly, Undermarches Brute, medium: a cart-sized translucent grey ooze that creeps and dissolves what it engulfs, leaving scoured tunnels.",
+  "composition": "Low side view of the jelly creeping over a heap of bones and a rusted helm, a pseudopod reaching ahead.",
+  "details": [
+   "Translucent grey mound, glistening",
+   "Pseudopod extended like a blunt arm",
+   "Partially dissolved debris suspended inside: a helm, bones, a boot",
+   "Surface bubbles and skin film",
+   "Scoured, clean tunnel floor behind it",
+   "Faint trail on the stone",
+   "Spores shown as sparse stipple only"
+  ],
+  "atmosphere": "Slow, soundless dissolving hunger.",
+  "avoid": [
+   "Not the Vault Ooze (a cube) or the Mire's Shambling Mound",
+   "No face or eyes",
+   "Do not show gore"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Gloomspore Jelly [Brute]"
+  ]
+ },
+ "ART-MON-TROGLODYTE-SHAMAN": {
+  "identity": "Troglodyte Shaman, Undermarches Controller, medium: a grey crested cave reptile daubed in glowing fungus, hexing with a bone club.",
+  "composition": "Full figure in three-quarter view crouched in a fungus-lit cave, bone club in one hand, other hand throwing hex-spit.",
+  "details": [
+   "Crested grey reptilian head and body",
+   "Fungus daubs on skin and a necklace of mushroom caps",
+   "Bone club, a long femur with knobs",
+   "Hex spit drawn as small dark drops from the hand",
+   "Reeking vapour curls",
+   "Bone fetishes tied to the arm",
+   "Bracket fungi and stalagmites behind"
+  ],
+  "atmosphere": "Primitive eerie ritual.",
+  "avoid": [
+   "Not the regular Troglodyte: robe of fungus, club, spells",
+   "Not the Lizardfolk Shaman",
+   "No glow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Troglodyte Shaman [Controller]"
+  ]
+ },
+ "ART-MON-VAULT-OOZE": {
+  "identity": "Vault Ooze, Undermarches Brute, medium: a near-invisible cube of acidic slime that fills a corridor wall to wall.",
+  "composition": "Front view down a narrow stone corridor in which a clear cube-shaped mass fills the whole passage, a swallowed lantern and bones suspended within it.",
+  "details": [
+   "A clear cube outlined by faint shimmering lines",
+   "Fills the corridor from wall to wall and ceiling to floor",
+   "Suspended objects: a rusted helm, bones, a boot",
+   "Pitted and dissolving stone at the contact edges",
+   "Slime drips along the floor",
+   "A pseudopod pushing forward at one corner",
+   "Corridor vanishing point"
+  ],
+  "atmosphere": "Quiet inexorable sweep.",
+  "avoid": [
+   "Must be a cube",
+   "Not the Gloomspore Jelly: that is a mound",
+   "Do not draw a face"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Vault Ooze [Brute]"
+  ]
+ },
+ "ART-MON-VRYMK": {
+  "identity": "Vrymk, Undermarches Skirmisher, medium: a stone-grey tangle of rubbery tentacles around a hooked beak, no broader than a crouching man, clinging to cavern walls.",
+  "composition": "Three-quarter view of the creature clinging to a rock wall, camouflaged, with several tentacles lashing out and one pulling toward the beak.",
+  "details": [
+   "Writhing mass of rubbery tentacles (six to eight) with suction marks",
+   "Central hooked beak, parrot-like",
+   "No broader than a crouching man",
+   "Stone-grey skin mottled like the rock",
+   "Clinging suckers on the wall",
+   "Tentacle tips lashing outward",
+   "Wet shimmering stone"
+  ],
+  "atmosphere": "Ambush patience.",
+  "avoid": [
+   "Not the Thought-Eater (no robe, no octopus head) or Elder Vrymk (smaller)",
+   "Not an octopus underwater",
+   "Beak is hooked"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Vrymk [Skirmisher]"
+  ]
+ },
+ "ART-MON-DEEP-ELF-WARRIOR": {
+  "identity": "Deep Elf Warrior, Undermarches Skirmisher, medium: a coldly beautiful deep-court fighter of the deep courts, fighting with a poisoned hand-crossbow and shortsword; shown in full dark ceremonial armour carrying a crescent glaive.",
+  "composition": "Three-quarter view in cavern gloom, the warrior advancing with a crescent glaive held diagonally, hand-crossbow at the belt.",
+  "details": [
+   "Full dark ceremonial armour: fluted plates with a spidery decorative pattern",
+   "Crescent glaive with a curved moon-shaped blade",
+   "Hand-crossbow at the hip, small and ornate",
+   "Shortsword in a sheath",
+   "Pale narrow face, long pointed ears, hair swept back",
+   "Cape of black silk",
+   "Stalagmites and glowing fungus lines"
+  ],
+  "atmosphere": "Cold ceremonial menace.",
+  "avoid": [
+   "Not the Deep Elf ancestry hero: full court regalia, glaive, no hood",
+   "Not the Deep Elf Priest: no staff, no robes",
+   "Weapons: crescent glaive plus hand-crossbow and shortsword (glaive is the featured weapon)"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Deep Elf Warrior [Skirmisher]"
+  ]
+ },
+ "ART-MON-DEEP-ELF-PRIEST": {
+  "identity": "Deep Elf Priest, Undermarches Controller, medium: a black-silk-robed priest of the deep spider-gods who weaves darkness and drives warriors on with a scourge.",
+  "composition": "Three-quarter view of the priest in layered dark vestments, shadow-wreathed sigil staff raised in one hand, a scourge coiled in the other.",
+  "details": [
+   "Layered black silk vestments with bone fetishes",
+   "Staff topped with a spider-like sigil (abstract, no text) wrapped in black smoke",
+   "Scourge: a short handle with several knotted lashes",
+   "Pale elegant face, long ears, narrow eyes",
+   "Silhouette against a dark cavern wall",
+   "Shadow tendrils shown as black hatching",
+   "Tall mitre-like headdress"
+  ],
+  "atmosphere": "Cruel ritual elegance.",
+  "avoid": [
+   "Not the Warrior: no armour",
+   "Not the Elf ancestry hero",
+   "No readable symbols"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Deep Elf Priest [Controller]"
+  ]
+ },
+ "ART-MON-GLOOM-HULK": {
+  "identity": "Gloom Hulk, Undermarches Brute, large: a bull-sized, beetle-backed digger with great scything claws and four eyes that scramble the mind.",
+  "composition": "Three-quarter view of the hulk erupting from a rock wall in a rubble shower, claws raised and four eyes in a row on the face.",
+  "details": [
+   "Beetle shell back with segmented plates",
+   "Four eyes in two pairs on a blunt head",
+   "Great scything claws on forelegs",
+   "Mandibles at the mouth",
+   "Six legs, short and thick",
+   "Rock dust and falling stones",
+   "Collapsing gallery supports"
+  ],
+  "atmosphere": "Crushing subterranean fury.",
+  "avoid": [
+   "Exactly four eyes",
+   "Not a crab or scorpion",
+   "Not a Burrowmaw: has legs and claws"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Gloom Hulk [Brute]"
+  ]
+ },
+ "ART-MON-CRYPTSTRANGLER": {
+  "identity": "Cryptstrangler, Undermarches Controller, large: a stalagmite-like stony predator taller than a man whose sticky tendrils fling across a chamber.",
+  "composition": "Three-quarter view of a cavern chamber where the stalagmite-like creature stands among real stalagmites, tendrils shooting out and a boot caught.",
+  "details": [
+   "Cone-shaped stony body taller than a man",
+   "Tendrils sprouting from its sides like long strands",
+   "Mouth hidden within the tip or base with a ring of teeth",
+   "Looks like a stalagmite until it uncoils",
+   "Sticky tendril wrapping a boot or ankle",
+   "Several real stalagmites around",
+   "Stone texture on skin"
+  ],
+  "atmosphere": "Frozen patience.",
+  "avoid": [
+   "Not a plant or tree",
+   "Not the Vaultfang (ceiling) or Vrymk (tentacled ambusher on walls)",
+   "No eyes"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Cryptstrangler [Controller]"
+  ]
+ },
+ "ART-MON-ELDER-VRYMK": {
+  "identity": "Elder Vrymk, Undermarches Elite, large: a monstrous knot of leg-thick stone-grey tentacles around a plate-shearing beak, with smaller kin gathering around it.",
+  "composition": "Wide three-quarter view of the elder filling a tunnel, tentacles thick as a man's leg dragging a small vrymk and a victim toward the beak.",
+  "details": [
+   "Tentacles thick as a man's leg, ridged with suckers",
+   "Huge central beak that shears plate",
+   "Scarred stone-grey hide",
+   "Smaller vrymk clustered on the tunnel walls",
+   "Scoured, empty tunnel",
+   "Clinging to ceiling and walls",
+   "Larder of clean bones"
+  ],
+  "atmosphere": "Silent dominating menace.",
+  "avoid": [
+   "Not the small Vrymk: far bigger",
+   "Not the Thought-Eater",
+   "Do not draw a human head"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Elder Vrymk [Elite]"
+  ]
+ },
+ "ART-MON-EVIL-EYE": {
+  "identity": "Evil Eye, Undermarches Elite, large: a floating orb of leathery flesh with one great central eye and a crown of writhing eyestalks, with an antimagic aura; it flies.",
+  "composition": "Frontal three-quarter view of the orb drifting in a vaulted dark cavern, central eye wide open, eyestalks writhing.",
+  "details": [
+   "Round floating orb of leathery, wrinkled flesh",
+   "One great central eye with a solid black pupil",
+   "Crown of ten writhing eyestalks, each ending in a small eye",
+   "Large toothy mouth below the central eye",
+   "Fine radiating hatching around the body to suggest the antimagic aura",
+   "Cave ceiling with floating dust",
+   "No wings, no limbs"
+  ],
+  "atmosphere": "Cold regard.",
+  "avoid": [
+   "Must have exactly one central eye plus eyestalks",
+   "Not a Beholder lookalike with a mouth too large",
+   "No glow rays"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Evil Eye [Elite]"
+  ]
+ },
+ "ART-MON-BURROWMAW": {
+  "identity": "Burrowmaw, Undermarches Brute, large: a wagon-sized armour-plated horror with a blunt head and a face-splitting maw that swims through stone.",
+  "composition": "Three-quarter view of the burrowmaw erupting from a stone floor, jaws splitting its face open, rubble flying.",
+  "details": [
+   "Wagon-sized armoured plated body",
+   "Blunt head with the whole face opening like a four-part maw",
+   "Rings of teeth",
+   "Armoured segmented plates on the back",
+   "No legs visible, partly buried",
+   "Rubble shower and a cracked floor",
+   "Torn flagstones"
+  ],
+  "atmosphere": "Sudden earthquake horror.",
+  "avoid": [
+   "Not the Giant Constrictor or any snake",
+   "Not the Gloom Hulk (no legs or claws)",
+   "No eyes needed"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Burrowmaw [Brute]"
+  ]
+ },
+ "ART-MON-THOUGHT-EATER": {
+  "identity": "Thought-Eater, Undermarches Elite, medium: a robed humanoid with an octopus head, four tentacles and white pupilless eyes that feeds on minds.",
+  "composition": "Three-quarter view of the creature standing in a dark chamber with a hand raised, tentacles flowing from its head.",
+  "details": [
+   "Octopus-like head with four tentacles hanging",
+   "White pupilless eyes",
+   "Grey slick skin",
+   "Long robe with draped sleeves",
+   "Webbed fingers",
+   "Slender upright posture",
+   "Dark vaulted chamber with scattered fallen helmets"
+  ],
+  "atmosphere": "Quiet, reading, hungry intelligence.",
+  "avoid": [
+   "Not the Vrymk or Elder Vrymk",
+   "Four tentacles only",
+   "No glow or beams"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Undermarches Bestiary: Thought-Eater [Elite]"
+  ]
+ },
+ "ART-MON-FROZEN-SKELETON": {
+  "identity": "Frozen Skeleton, Pale City Minion, medium: a frost-rimed skeleton standing its post, sword welded to its hand by ice.",
+  "composition": "Three-quarter view of the skeleton standing in drifted snow, sword frozen to its hand, icicles hanging from the ribs.",
+  "details": [
+   "Bare skeleton, not flesh",
+   "Frost rime on every bone shown with dense stipple and hatch",
+   "Icicles hanging from ribs and arm bones",
+   "Sword bonded by an ice lump to the hand",
+   "Snow drifted around the feet",
+   "Rusted helm fragment on the skull",
+   "Narrow empty avenue behind"
+  ],
+  "atmosphere": "Frozen, stoic duty.",
+  "avoid": [
+   "Not the Skeleton Warrior (bronze, sand) or Undead Warrior (flesh, rust)",
+   "Not the White Court Guard (armoured corpse)",
+   "No glow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Frozen Skeleton [Minion]"
+  ]
+ },
+ "ART-MON-SNOW-GOBLIN": {
+  "identity": "Snow Goblin, Pale City Minion, small: a gaunt white-furred goblin that ambushes out of the whiteout with frost-edged knives.",
+  "composition": "Three-quarter view of the goblin rising from a snowdrift, frost knife in one hand, sling in the other, fur nearly the colour of the paper.",
+  "details": [
+   "Gaunt body covered in white fur (kept pale by sparse strokes)",
+   "Long pointed ears and a thin face",
+   "Frost knife with an icy edge",
+   "Sling in the off-hand with a stone",
+   "Rag and fur wrapping",
+   "Crouched on its toes",
+   "Snowdrift and falling snow"
+  ],
+  "atmosphere": "Cowardly stalking.",
+  "avoid": [
+   "Not the Greenmark Goblin or Cave Goblin",
+   "Not a yeti",
+   "Do not make it cute"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Snow Goblin [Minion]"
+  ]
+ },
+ "ART-MON-RATKIN-SCAVENGER": {
+  "identity": "Ratkin Scavenger, Pale City Minion, small: the lowest caste of verminous rat-folk, scrawny and twitching in matted grey fur, stripping ruins with a rusty knife.",
+  "composition": "Low three-quarter view of the scavenger darting across a frozen street, rusty knife held low, glancing back over its shoulder with a stolen scrap clutched in the other hand.",
+  "details": [
+   "Scrawny hunched rat-man with matted grey fur",
+   "Narrow snout, long whiskers, bald naked tail",
+   "Rusty knife with a broken tip",
+   "Scraps of rags and a sack of loot",
+   "Twitching ears and nervous eyes",
+   "Ruined street with drifted snow",
+   "Several smaller shapes scurrying in the background"
+  ],
+  "atmosphere": "Frightened hungry opportunism.",
+  "avoid": [
+   "Not the Ratkin ancestry hero (clean kit, tabard)",
+   "Not the Ratkin Warrior (no spear or plate scraps)",
+   "Not a literal rat"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Ratkin Scavenger [Minion]"
+  ]
+ },
+ "ART-MON-TUNDRA-WOLF": {
+  "identity": "Tundra Wolf, Pale City Skirmisher, medium: a white-coated wolf built for the killing cold that runs in herding packs over ice.",
+  "composition": "Side three-quarter view of the wolf padding across wind-scoured ice at a loping run, head level, breath trailing.",
+  "details": [
+   "Thick white coat (rendered by leaving paper white with fine outlines and a few shadow lines)",
+   "Long legs and wide paws suited to ice",
+   "Frost on the muzzle, pale eyes",
+   "Ruff along the neck and shoulders",
+   "Ice cracks and wind-blown snow",
+   "A second wolf outline in the far distance",
+   "Ears pinned back"
+  ],
+  "atmosphere": "Cold, quiet hunting.",
+  "avoid": [
+   "Not the Dire Wolf (dark scarred, forest) or Blackfire Hound (burnt black)",
+   "Do not make it a husky",
+   "No saddle"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Tundra Wolf [Skirmisher]"
+  ]
+ },
+ "ART-MON-RATKIN-WARRIOR": {
+  "identity": "Ratkin Warrior, Pale City Soldier, small: a hunched spear-wielding rat-man in scavenged scraps of plate that fights in a bristling shield-rank.",
+  "composition": "Three-quarter view of the warrior crouched behind a patched shield with a notched spear levelled forward over its edge.",
+  "details": [
+   "Hunched rat-man with a snarling snout and long front teeth",
+   "Scavenged plate scraps tied on with cord: a pauldron, a gorget",
+   "Notched spear with a bent head",
+   "Patched shield made of a door or cart board",
+   "Tail low behind",
+   "Frosted fur and breath mist",
+   "Another spear tip and shield edge at the frame's edge"
+  ],
+  "atmosphere": "Cringing, dogged discipline.",
+  "avoid": [
+   "Not the Scavenger (no spear or plate)",
+   "Not the Ratkin Seer (no staff or charms)",
+   "Not the ancestry hero"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Ratkin Warrior [Soldier]"
+  ]
+ },
+ "ART-MON-WHITE-COURT-GUARD": {
+  "identity": "White Court Guard, Pale City Soldier, medium: a frost-armoured noble corpse of the undead court's rank and file, holding a reach-halberd at a ceremonial slant.",
+  "composition": "Frontal three-quarter view of the guard standing at attention on a frozen avenue, halberd held at a ceremonial slant across the body.",
+  "details": [
+   "Ornate courtly armour with engraved fluting and gilt scrolls, frosted",
+   "Frozen fur mantle over the shoulders",
+   "Reach-halberd with a decorated blade and tasselled haft",
+   "Visor up on an open helm to show a frozen corpse face",
+   "Rime on every plate",
+   "Heavy plumed helm with a drooping plume",
+   "Icy avenue and snow"
+  ],
+  "atmosphere": "Cold ceremonial discipline.",
+  "avoid": [
+   "Not the Sentinel (no greatshield)",
+   "Not the Undead Sentinel (rust, rubble)",
+   "Not the Archer or Executioner",
+   "No actual shield"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: White Court Guard [Soldier]"
+  ]
+ },
+ "ART-MON-RATKIN-SEER": {
+  "identity": "Ratkin Seer, Pale City Controller, small: a half-mad rat-man draped in icicle-charms, spitting frost-hexes and croaking prophecy.",
+  "composition": "Three-quarter view of the seer perched on a broken pillar, bone staff in one hand, other hand flinging frosty hex-flecks, mouth open.",
+  "details": [
+   "Hunched rat-man draped in strings of icicle charms and bones",
+   "Bone staff with a dangling charm",
+   "Ragged hooded cloak with hair in tangles",
+   "Wild half-mad eyes with rings",
+   "Frosted whiskers",
+   "Hex shown as small spiked frost marks",
+   "Warriors dimly below"
+  ],
+  "atmosphere": "Mad croaking prophecy.",
+  "avoid": [
+   "Not the Scavenger or Warrior",
+   "Not the ancestry hero",
+   "No glow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Ratkin Seer [Controller]"
+  ]
+ },
+ "ART-MON-FROST-GHOUL": {
+  "identity": "Frost Ghoul, Pale City Minion, medium: a ghoul frozen and reborn in the cold, claws sheathed in frost, hunting in packs through snow-choked streets.",
+  "composition": "Low three-quarter view of the ghoul crawling over a snowdrift, frost-sheathed claws forward, jaw open, a second shape dim behind.",
+  "details": [
+   "Grey-blue skin stretched on a gaunt body",
+   "Claws encased in ice crystals",
+   "Frost-rimmed jaw with icicle teeth",
+   "Hollow eyes",
+   "Frost on shoulder blades and ribs",
+   "Bare feet in snow",
+   "Ruined street with snow-choked doorway"
+  ],
+  "atmosphere": "Frozen, unceasing hunger.",
+  "avoid": [
+   "Not the Ashlands Ghoul: this one has frost on skin and claws",
+   "Not the Frozen Skeleton (flesh, not bare bones)",
+   "No clothes beyond rags"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Frost Ghoul [Minion]"
+  ]
+ },
+ "ART-MON-WHITE-COURT-ARCHER": {
+  "identity": "White Court Archer, Pale City Cannon, medium: a dead marksman on a frozen balcony loosing ice-fletched arrows from a frostbow.",
+  "composition": "Three-quarter view of the archer standing on a frozen balcony, frostbow at full draw, quiver overflowing.",
+  "details": [
+   "Courtly light armour with frost and engraved lines",
+   "Tall composite frostbow with icicle-like tips",
+   "Ice-fletched arrow with crystalline feathers",
+   "Overflowing quiver",
+   "Frozen fur collar",
+   "Open helm with a corpse face",
+   "Balcony balustrade glazed in ice"
+  ],
+  "atmosphere": "Aimed cold elegance.",
+  "avoid": [
+   "Not the Forsaken Archer (Ashlands) or Skeleton Archer",
+   "Not a living elf",
+   "No glow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: White Court Archer [Cannon]"
+  ]
+ },
+ "ART-MON-BLACKFIRE-HOUND": {
+  "identity": "Blackfire Hound, Pale City Skirmisher, medium: a charred beast-shape with cold black flame guttering along its spine that leaves a trail of smouldering ash.",
+  "composition": "Side three-quarter view of the hound bounding across snow, flame along the spine and a trail of smouldering marks behind.",
+  "details": [
+   "Charred hound body, lean ribs showing",
+   "Flame rendered as black hatched tongues along the spine",
+   "Burnt jaws with fangs",
+   "Trail of ember spots and melted snow behind",
+   "Hollow eyes with white points",
+   "Cracked smoking paws",
+   "Snow melting in steam lines"
+  ],
+  "atmosphere": "Hellish chase.",
+  "avoid": [
+   "Not the Dire Wolf or Tundra Wolf (white fur)",
+   "Not the Corpsehound (desert)",
+   "Flame must be black ink shapes, not glow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Blackfire Hound [Skirmisher]"
+  ]
+ },
+ "ART-MON-ICE-WRAITH": {
+  "identity": "Ice Wraith, Pale City Cannon, medium: a knife-like translucent drifting spirit of someone who froze to death, hungry for warmth; it flies.",
+  "composition": "Three-quarter view of the wraith gliding down an icy avenue, one long arm reaching out with a frost-touch.",
+  "details": [
+   "Body tapering to a knife-like point",
+   "Translucent shape drawn with open outlines and sparse lines",
+   "Sharp angular face with hollow eyes",
+   "Long thin arms ending in icicle fingers",
+   "Frost crystals trailing behind",
+   "Ice-lined avenue and snow",
+   "No legs"
+  ],
+  "atmosphere": "Cold, grudging hunger.",
+  "avoid": [
+   "Not the Spectre (scorched) or Banshee",
+   "Not made of solid ice like the Ice Elemental",
+   "No glow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Ice Wraith [Cannon]"
+  ]
+ },
+ "ART-MON-WHITE-COURT-SENTINEL": {
+  "identity": "White Court Sentinel, Pale City Brute, medium: the dead nobility's bodyguard corpse-knight crouched behind an enormous greatshield, ornate visored helm.",
+  "composition": "Three-quarter view of the sentinel crouched low behind an enormous greatshield that covers most of its body, one visored eye slit peeking over the top.",
+  "details": [
+   "Enormous greatshield, almost body-length, scarred with frost and old dents",
+   "Ornate visored helm with a high crest",
+   "Armoured shoulder visible above the shield",
+   "Gauntleted hand gripping the rim",
+   "Ice crusted on the lower edge",
+   "Snow drifted against the shield",
+   "No polearm"
+  ],
+  "atmosphere": "Immovable frozen loyalty.",
+  "avoid": [
+   "No polearm or halberd: that is the Guard",
+   "Not the Undead Sentinel (tower shield and halberd)",
+   "Do not show it standing tall"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: White Court Sentinel [Brute]"
+  ]
+ },
+ "ART-MON-ICE-ELEMENTAL": {
+  "identity": "Ice Elemental, Pale City Controller, large: a lurching jagged figure of living glacier that freezes the ground it crosses.",
+  "composition": "Three-quarter view of the elemental lurching forward with both fists raised to slam, frost spreading on the ground in feathery lines.",
+  "details": [
+   "Humanoid made of jagged blue-white glacier blocks",
+   "Faceted blocky arms with crystal spikes",
+   "Face as a rough crack with hollow eye holes",
+   "Cracks running through the body",
+   "Frost patterns spreading on the ground",
+   "Chunks of ice falling from its shoulders",
+   "Blizzard sky"
+  ],
+  "atmosphere": "Groaning, slow, relentless cold.",
+  "avoid": [
+   "Not the Gelid Fiend (no devil horns or tail)",
+   "Not the Frost Giant",
+   "No glowing"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Ice Elemental [Controller]"
+  ]
+ },
+ "ART-MON-FALLEN-PALADIN": {
+  "identity": "Fallen Paladin, Pale City Elite, medium: an undead knight in defiled plate whose despair aura withers courage, wielding a necrotic-chilled flamberge.",
+  "composition": "Three-quarter view of the paladin kneeling then rising in a black chapel, defiled flamberge planted, head lifted.",
+  "details": [
+   "Defiled plate with a broken holy sunburst on the breast, no readable lettering",
+   "Flamberge with a wavy blade",
+   "Cracked visor with darkness inside",
+   "Tattered tabard in torn stripes",
+   "Frost running across the plate",
+   "Broken chapel arch and shattered stained glass",
+   "Chains hanging from the pauldrons"
+  ],
+  "atmosphere": "Broken vow, despair radiating cold.",
+  "avoid": [
+   "Not the Forsaken Knight (Ashlands, grave-light)",
+   "Not a living Paladin",
+   "No halo"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Fallen Paladin [Elite]"
+  ]
+ },
+ "ART-MON-WEREBEAR": {
+  "identity": "Werebear, Pale City Brute, large: a hulking white-furred man-beast built to maul, with strength that hurls men aside.",
+  "composition": "Three-quarter view of the werebear on all fours charging from a snowbank, claws raking and jaws open.",
+  "details": [
+   "Hulking half-man half-bear with a bear head and human-like shoulders",
+   "White shaggy fur",
+   "Wide clawed hands",
+   "Torn leftover tunic strips",
+   "Heavy jaws",
+   "Snow thrown up by its charge",
+   "Scarred shoulder"
+  ],
+  "atmosphere": "Savage brute force.",
+  "avoid": [
+   "Not the Dire Bear or Gorebeak (pure animals)",
+   "Not the Werewolf (wolf-headed)",
+   "Show it charging on all fours, never reared (the Dire Bear rears)"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Werebear [Brute]"
+  ]
+ },
+ "ART-MON-WHITE-COURT-EXECUTIONER": {
+  "identity": "White Court Executioner, Pale City Elite, medium: a towering hooded headsman in frost carrying out centuries-old sentences with a headsman's axe.",
+  "composition": "Three-quarter view of the executioner striding forward through snow with a frost-rimed headsman's axe resting over one shoulder.",
+  "details": [
+   "Hood and cowl hiding the face with just two dark eye holes",
+   "Broad headsman's axe with a long haft, frosted",
+   "Leather apron over coarse mail and fur",
+   "Heavy gauntlets",
+   "Towering broad frame",
+   "Frost on the shoulders",
+   "Drifting snow and frozen gallows posts behind"
+  ],
+  "atmosphere": "Patient pitiless judgement.",
+  "avoid": [
+   "Not the Guard (no armour finery)",
+   "Not the Frost Giant or Ogre",
+   "No visible face"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: White Court Executioner [Elite]"
+  ]
+ },
+ "ART-MON-FROST-WYVERN": {
+  "identity": "Frost Wyvern, Pale City Elite, large: a lean two-legged winged reptile the colour of dirty ice with a venom-and-frost tail stinger, smaller and rangier than a dragon; it flies.",
+  "composition": "Side three-quarter view of the wyvern on the wing stooping out of a white sky, tail stinger curled behind.",
+  "details": [
+   "Exactly two legs (taloned) and a pair of bat-like wings, wings double as forelimbs",
+   "Lean, long neck and rangy body",
+   "Narrow head with a toothy snout",
+   "Long whip tail ending in a barbed stinger",
+   "Dirty-ice scales rendered as sparse scale marks",
+   "Frost along the wing bones",
+   "Peaks and white sky with a few horizontal strokes"
+  ],
+  "atmosphere": "Predatory stoop.",
+  "avoid": [
+   "Exactly two legs: not a dragon",
+   "Not the White Dragon (heavier, four legs)",
+   "No breath"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Frost Wyvern [Elite]"
+  ]
+ },
+ "ART-MON-GELID-FIEND": {
+  "identity": "Gelid Fiend, Pale City Brute, large: a towering devil of blue-white ice and cruel geometry, a bound advocate of the frozen law.",
+  "composition": "Three-quarter view of the fiend holding an ice glaive with a tail curled behind, walls of ice rising at its sides.",
+  "details": [
+   "Tall devil with faceted carapace like cut ice crystals",
+   "Horns and a long jaw",
+   "Ice glaive with a reach blade",
+   "Spiked tail lashing behind",
+   "Lattice-pattern carapace",
+   "Walls of ice rising on either side",
+   "Cold mist lines"
+  ],
+  "atmosphere": "Rigid, judicial menace.",
+  "avoid": [
+   "Not the Ice Elemental (no horns/lattice)",
+   "Not the Demon",
+   "No glow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Gelid Fiend [Brute]"
+  ]
+ },
+ "ART-MON-FROST-GIANT": {
+  "identity": "Frost Giant, Pale City Elite, huge: a blue-skinned giant in glacier-ice armour wielding a greataxe, ruling the high drifts.",
+  "composition": "Wide low-angle view of the giant striding down a snowy street, greataxe raised overhead in two hands, boulder in the other arm's crook.",
+  "details": [
+   "Twice a man's height, blue skin rendered by dense hatching",
+   "Glacier-ice plate armour with jagged edges",
+   "Greataxe with a crescent blade",
+   "Boulder tucked under the arm",
+   "Braided beard with ice beads",
+   "Drifts up to its knees",
+   "Ruined oversized colonnade behind"
+  ],
+  "atmosphere": "Immense avalanching force.",
+  "avoid": [
+   "Not the Orc or Ogre",
+   "Not the Ice Elemental",
+   "No horns on the helm"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: Frost Giant [Elite]"
+  ]
+ },
+ "ART-MON-WHITE-DRAGON": {
+  "identity": "White Dragon, Pale City Elite, huge: a feral ice-crusted wyrm of pure predatory cold; it flies. Typical adult, alone.",
+  "composition": "Wide three-quarter view of the dragon perched on a jagged ice outcrop with wings half-raised, head lowered toward the viewer.",
+  "details": [
+   "Four legs and two large wings, half-raised",
+   "Heavy ice-crusted scales",
+   "Head with swept-back horns and a broad snout",
+   "Frozen breath wisps drawn as light stipple",
+   "Long spiky tail curled",
+   "Jagged ice outcrop under claws",
+   "No spire, no city, no buildings"
+  ],
+  "atmosphere": "Feral cold sovereignty.",
+  "avoid": [
+   "No city, spire or courtiers",
+   "Not the Frost Wyvern (two legs)",
+   "Not the Green or Black Dragon: crusted ice and broad snout"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Pale City Bestiary: White Dragon [Elite]"
+  ]
+ },
+ "ART-MON-FIRE-BEETLE": {
+  "identity": "Fire Beetle, Sun-Drowned Minion, small: a dog-sized, hard-shelled beetle with a ruddy inner glow that lights tomb passages.",
+  "composition": "Low side view of the beetle crawling across a tomb-passage floor, mandibles open and abdomen glowing.",
+  "details": [
+   "Hard-shelled domed carapace with ridges",
+   "Six jointed legs",
+   "Pair of snapping mandibles",
+   "Antennae",
+   "Light from its glands shown as short rays on the stone",
+   "Tomb passage walls and sand",
+   "Dog-sized scale next to a broken urn"
+  ],
+  "atmosphere": "Small, hot, hungry.",
+  "avoid": [
+   "Exactly six legs",
+   "Do not draw wings in flight",
+   "Not a scorpion"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Fire Beetle [Minion]"
+  ]
+ },
+ "ART-MON-IMP": {
+  "identity": "Imp, Sun-Drowned Skirmisher, small: a knee-high bat-winged spiteful fiend with a barbed venomous tail that flits about tombs; it flies.",
+  "composition": "Three-quarter view of the imp mid-flight, tail lashing forward, stinger raised, grinning.",
+  "details": [
+   "Knee-high, red-skinned (rendered with dark hatching)",
+   "Bat wings spread",
+   "Barbed tail with a stinger",
+   "Small horns, pointed ears, sharp grin",
+   "Clawed hands and feet",
+   "Tomb wall behind and heat shimmer",
+   "No clothes"
+  ],
+  "atmosphere": "Spiteful cackling nuisance.",
+  "avoid": [
+   "Not the Demon (huge) or Demonborn ancestry",
+   "Do not give it a weapon",
+   "Not cute"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Imp [Skirmisher]"
+  ]
+ },
+ "ART-MON-SKELETON-WARRIOR": {
+  "identity": "Skeleton Warrior, Sun-Drowned Minion, medium: a bare sun-bleached skeleton in corroded bronze scale, a priest-king's guard waiting centuries at its post.",
+  "composition": "Three-quarter view of the skeleton standing at its post in a sealed court, curved bronze blade held at the ready, sand drifted around its feet.",
+  "details": [
+   "Bare bleached skeleton, no flesh",
+   "Corroded bronze scale armour with green-black patina rendered as dense stipple",
+   "Crested bronze helm with a horsehair plume rotted to strands",
+   "Curved bronze blade, notched",
+   "Left hand empty or holding a small round bronze buckler, no tall shield",
+   "Sand underfoot and a carved lintel behind",
+   "Hollow eye sockets in solid black"
+  ],
+  "atmosphere": "Dry patient loyalty.",
+  "avoid": [
+   "Not the Undead Warrior (flesh, rust, ash, rectangular shield)",
+   "Not the Frozen Skeleton (frost)",
+   "Not the Skeleton Archer: no bow",
+   "No ice or ash"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Skeleton Warrior [Minion]"
+  ]
+ },
+ "ART-MON-CORPSEHOUND": {
+  "identity": "Corpsehound, Sun-Drowned Skirmisher, medium: a jackal-headed, quick runner between man and beast that hunts caravans in loping packs with scimitar and jaws.",
+  "composition": "Three-quarter view of the corpsehound mid-lope across a dune, scimitar trailing in one hand, jaws open, laughing.",
+  "details": [
+   "Jackal head with large upright ears and a long muzzle",
+   "Lean humanoid body with digitigrade legs",
+   "Scimitar in the right hand",
+   "Scraps of cloth wrapping and a leather harness",
+   "Mangy short fur rendered with stipple",
+   "Tail low behind",
+   "Dune crest and wind-blown sand"
+  ],
+  "atmosphere": "Cackling predatory pursuit.",
+  "avoid": [
+   "Not a Gnoll (hyena-headed, spear/longbow)",
+   "Not the Blackfire Hound or Dire Wolf",
+   "Do not draw four-legged"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Corpsehound [Skirmisher]"
+  ]
+ },
+ "ART-MON-GNOLL": {
+  "identity": "Gnoll, Sun-Drowned Soldier, medium: a hyena-headed, rangy, hunger-ruled raider armed with a throwing spear and a longbow.",
+  "composition": "Three-quarter view of the gnoll sprinting forward with a spear drawn back to throw, longbow slung across the back.",
+  "details": [
+   "Hyena head with a heavy jaw, rounded ears and a ruff of mane",
+   "Rangy long-limbed body with sloping back",
+   "Throwing spear in the throwing hand",
+   "Longbow and quiver on the back",
+   "Spotted fur rendered as short stipple spots",
+   "Scrap of cloth loincloth and bone jewellery",
+   "Sand and scattered bones"
+  ],
+  "atmosphere": "Cackling hunger.",
+  "avoid": [
+   "Not the Corpsehound (jackal head, scimitar)",
+   "Not the Beastman",
+   "Do not draw it with a scimitar"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Gnoll [Soldier]"
+  ]
+ },
+ "ART-MON-GIANT-SCORPION": {
+  "identity": "Giant Scorpion, Sun-Drowned Soldier, medium: a banded chitin-plated desert scorpion with two crushing pincers and a venom-dripping sting arched over its back.",
+  "composition": "Three-quarter view of the scorpion erupting from a dune, pincers wide, tail arched forward over its back, sand cascading.",
+  "details": [
+   "Exactly eight legs plus two pincers",
+   "Segmented chitin plates banded across the body",
+   "Two large crushing pincers",
+   "Tail curved over the back ending in a barbed sting with a venom drop",
+   "Small eyes on the front of the head",
+   "Sand cascading from the shell",
+   "Dune field behind"
+  ],
+  "atmosphere": "Sudden eruption from the sands.",
+  "avoid": [
+   "Exactly eight walking legs, two pincers, one tail",
+   "Not the Giant Tarantula or Black Widow",
+   "Do not draw wings"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Giant Scorpion [Soldier]"
+  ]
+ },
+ "ART-MON-SKELETON-ARCHER": {
+  "identity": "Skeleton Archer, Sun-Drowned Cannon, medium: a priest-king tomb skeleton standing in a carved alcove with a still-strung tomb bow.",
+  "composition": "Frontal three-quarter view of a skeleton standing in a carved niche loosing an arrow, the shape of the alcove fitted to it.",
+  "details": [
+   "Bare bleached skeleton",
+   "Long recurved tomb bow, still strung",
+   "Arrow with intact feathers",
+   "Quiver of arrows on a rotted strap",
+   "Scrap of linen sash and bronze armlets",
+   "Carved niche with hieroglyph-like motifs rendered as non-text patterns",
+   "Dusty floor"
+  ],
+  "atmosphere": "Perfect spiteful patience.",
+  "avoid": [
+   "Not the Skeleton Warrior: bow, no sword",
+   "Not the Undead Crossbowman",
+   "No lettering or legible hieroglyphs"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Skeleton Archer [Cannon]"
+  ]
+ },
+ "ART-MON-MUMMY": {
+  "identity": "Mummy, Sun-Drowned Controller, medium: a priest-king's preserved corpse bound in resin-soaked wrappings, risen in wrath.",
+  "composition": "Three-quarter view of the mummy stepping forward in a torch-lit tomb corridor, one arm raised in a cursing gesture, the other hanging with a fist.",
+  "details": [
+   "Full wrapping of resin-soaked bandage strips, trailing loose ends",
+   "Gold burial collar and a broken funerary mask or bare face with black sockets",
+   "Dried skin visible at the wrapping gaps",
+   "Heavy fist ready to strike",
+   "Scarab-shaped amulets (abstract, no text)",
+   "Sandy floor and sarcophagus behind",
+   "Dust motes"
+  ],
+  "atmosphere": "Dread authority of a dead god.",
+  "avoid": [
+   "Not the Skeleton Warrior",
+   "Not a Lich",
+   "Do not add a staff"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Mummy [Controller]"
+  ]
+ },
+ "ART-MON-SKELETAL-BEAST": {
+  "identity": "Skeletal Beast, Sun-Drowned Skirmisher, medium: the bound remains of a great desert predator, a charging framework of fang and claw.",
+  "composition": "Side three-quarter view of the bone-framework beast at a full charge across open sand, jaws wide.",
+  "details": [
+   "Four-legged bony skeleton of a lion-like predator",
+   "Long skull with large fangs",
+   "Raking claws on each paw",
+   "No flesh at all, hollow ribs",
+   "Remnants of a binding cord and amulet around the neck",
+   "Sand kicked up behind",
+   "Tail made of vertebrae"
+  ],
+  "atmosphere": "Tireless, hungry momentum.",
+  "avoid": [
+   "Not a living lion",
+   "Not the Corpsehound",
+   "No wings or flame"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Skeletal Beast [Skirmisher]"
+  ]
+ },
+ "ART-MON-WIND-ELEMENTAL": {
+  "identity": "Wind Elemental, Sun-Drowned Skirmisher, large: a howling, near-invisible spiral of desert air that flings sand and bodies; it flies.",
+  "composition": "Three-quarter view of a funnel-shaped vortex tearing across dunes, defined by swirling sand lines, with a vague hollow face in the vortex.",
+  "details": [
+   "Spiral funnel outlined by curved parallel lines of sand grains",
+   "Dense stipple at the base of the vortex",
+   "Faint face with two hollow eyes in the vortex",
+   "Debris flung outward: a spear, a cloak, a skull",
+   "Sparse lines for the invisible centre",
+   "Dune surface scoured",
+   "Sky ruled with horizontal strokes"
+  ],
+  "atmosphere": "Howling hostile weather.",
+  "avoid": [
+   "Do not draw a humanoid body",
+   "Not the Fire Elemental or a tornado cartoon",
+   "No lightning"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Wind Elemental [Skirmisher]"
+  ]
+ },
+ "ART-MON-DESERT-NAGA": {
+  "identity": "Desert Naga, Sun-Drowned Controller, large: a great serpent with an almost-human face coiled among tomb pillars, old and patient.",
+  "composition": "Three-quarter view of the naga coiled around a toppled tomb pillar, torso raised with the almost-human face turned to the viewer, mouth parted to spit.",
+  "details": [
+   "Long scaled serpent body in thick coils",
+   "Almost-human face with heavy-lidded eyes and a hood-like fold of skin",
+   "No arms, no legs",
+   "Tapering tail disappearing behind a pillar",
+   "Venom drip from the fangs",
+   "Faded gilded bands on the scales",
+   "Toppled pillars and sand drifts"
+  ],
+  "atmosphere": "Ancient guardian silence.",
+  "avoid": [
+   "Not the Swamp Naga: dry stone pillars and sand, no reeds",
+   "Not the Medusa (hair snakes)",
+   "No arms or hands"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Desert Naga [Controller]"
+  ]
+ },
+ "ART-MON-FIRE-ELEMENTAL": {
+  "identity": "Fire Elemental, Sun-Drowned Cannon, large: a roaring man-shape of living flame, white-hot at the core and shedding embers.",
+  "composition": "Three-quarter view of the elemental striding across a tomb floor, both arms extended to touch, a trail of cinders behind.",
+  "details": [
+   "Humanoid outline built from layered flame tongues",
+   "Solid white core with black flame hatching around it",
+   "Sparse ember dots rising",
+   "Hollow black eye sockets",
+   "Cinders and scorch marks on the floor",
+   "Heat distortion lines in the air",
+   "Tomb pillars blackened"
+  ],
+  "atmosphere": "Raw scorching presence.",
+  "avoid": [
+   "Not the Brass Golem or Imp",
+   "Do not use glow, use ink flame shapes",
+   "No weapons"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Fire Elemental [Cannon]"
+  ]
+ },
+ "ART-MON-GIANT-SKELETON": {
+  "identity": "Giant Skeleton, Sun-Drowned Brute, large: a looming framework of fused bone twice a man's height with fists like falling masonry.",
+  "composition": "Three-quarter view of the colossus advancing through a tomb gallery, one massive fist raised to smash.",
+  "details": [
+   "Twice a man's height skeleton of fused bone plates",
+   "Thick pillar-like limb bones",
+   "Enormous skull with a heavy brow",
+   "Massive bone fists",
+   "Ribs fused into a shield-like cage",
+   "Cracked pieces and bone dust",
+   "Tomb carvings of kneeling figures behind (non-legible)"
+  ],
+  "atmosphere": "Grinding deliberation.",
+  "avoid": [
+   "Not the Skeleton Warrior scaled up: no armour",
+   "Not the Frozen Skeleton",
+   "No weapon besides fists"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Giant Skeleton [Brute]"
+  ]
+ },
+ "ART-MON-MEDUSA": {
+  "identity": "Medusa, Sun-Drowned Elite, medium: a serpent-haired figure among statues that were once admirers, fighting with shortsword and snake-hair.",
+  "composition": "Three-quarter view of the medusa standing among statues in a tomb gallery, shortsword in hand and serpent hair writhing.",
+  "details": [
+   "Woman-shaped figure in a draped robe",
+   "Head of living snakes in place of hair",
+   "Eyes hidden in the shadow of a hood or blindfold so no gaze effect is drawn",
+   "Shortsword in right hand",
+   "Surrounding statues of surprised petrified people caught mid-stride",
+   "Gilded tomb-gallery columns",
+   "Snake-hair biting forward"
+  ],
+  "atmosphere": "Elegant doom.",
+  "avoid": [
+   "Not the Night Hag or Harpy",
+   "Snake hair, not tentacles",
+   "No gore"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Medusa [Elite]"
+  ]
+ },
+ "ART-MON-TOMB-NECROMANCER": {
+  "identity": "Tomb Necromancer, Sun-Drowned Controller, medium: a withered official in the faded regalia of a dead bureaucracy, raising the buried to enforce forgotten statutes.",
+  "composition": "Three-quarter view of the necromancer on a dais holding a court staff, one hand gesturing to the ground where hands break through sand.",
+  "details": [
+   "Withered face under a tall official's cap",
+   "Faded layered regalia with chains of office",
+   "Court staff topped with a scales-like emblem (no text)",
+   "Gesturing hand with long nails",
+   "Skeletal hands pushing out of the sand",
+   "Papyrus rolls on the belt",
+   "Dim columns"
+  ],
+  "atmosphere": "Pedantic dead authority.",
+  "avoid": [
+   "Not the Lich or Mummy",
+   "Not the Tomb Guardian",
+   "No glow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Tomb Necromancer [Controller]"
+  ]
+ },
+ "ART-MON-TOMB-GUARDIAN": {
+  "identity": "Tomb Guardian, Sun-Drowned Soldier, medium: a faceless construct of gilded stone and ritual standing at a threshold with a ceremonial glaive.",
+  "composition": "Frontal three-quarter view of the guardian planted in a tomb doorway, ceremonial glaive held upright with its blade high.",
+  "details": [
+   "Faceless smooth head, gilded flecks",
+   "Humanoid body of carved stone plates with ritual motif bands",
+   "Ceremonial glaive with a long curved blade",
+   "Gold leaf worn and flaking",
+   "Rigid symmetrical stance",
+   "Massive threshold with sealing stones",
+   "Dusty carved lintel"
+  ],
+  "atmosphere": "A thousand-year vigil.",
+  "avoid": [
+   "Not the Stone Sentinel (granite, giant sword)",
+   "Not the Brass Golem",
+   "No face or eyes"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Tomb Guardian [Soldier]"
+  ]
+ },
+ "ART-MON-BRASS-GOLEM": {
+  "identity": "Brass Golem, Sun-Drowned Brute, medium: a burnished automaton holding trapped forge-heat that hammers with searing fists.",
+  "composition": "Three-quarter view of the golem pounding both fists forward, heat shimmering around them, in front of a sealed treasure door.",
+  "details": [
+   "Burnished brass plates with rivet rows",
+   "Squat humanoid frame with thick limbs",
+   "Fists with heat shimmer lines and scorch marks",
+   "Slit visor, no face",
+   "Scorched stone floor beneath its feet",
+   "Sealed door with ornate bands",
+   "Polished highlights left as white paper"
+  ],
+  "atmosphere": "Cold-eyed forge-heat.",
+  "avoid": [
+   "Not the Iron Golem: smaller and brass, not black iron",
+   "Not the Fire Elemental",
+   "No flames"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Brass Golem [Brute]"
+  ]
+ },
+ "ART-MON-MANTICORE": {
+  "identity": "Manticore, Sun-Drowned Elite, large: a fusion of lion's body, bat's wings and a man's leering face that flicks volleys of iron spikes from its tail; it flies.",
+  "composition": "Three-quarter view of the manticore crouched on a dune-road ridge, tail arched over its back with spikes fanned out, wings half open.",
+  "details": [
+   "Lion's body with a thick mane",
+   "Bat wings half open",
+   "Human male face with a leering grin and beard",
+   "Scorpion-like arched tail studded with iron spikes",
+   "Spikes in flight shown as lines",
+   "Clawed paws gripping the ridge",
+   "Narrow dune-road below"
+  ],
+  "atmosphere": "Leering patient cruelty.",
+  "avoid": [
+   "Wings required: it flies",
+   "Not a sphinx",
+   "Tail is a spiked fan of iron barbs, not a scorpion sting"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Manticore [Elite]"
+  ]
+ },
+ "ART-MON-DEMON": {
+  "identity": "Demon, Sun-Drowned Elite, huge: a horned iron-coloured fiend wreathed in clinging flame, wielding a hooked glaive.",
+  "composition": "Wide low-angle view of the demon striding out of a breached ward in a tomb, hooked glaive in both hands, fire clinging to its shoulders.",
+  "details": [
+   "Huge horned fiend, taller than the tomb arch",
+   "Skin the colour of cooling iron, cracked like cooling metal",
+   "Flame rendered as ink tongues that cling but do not consume",
+   "Hooked glaive with a barbed blade",
+   "Clawed hands and feet",
+   "Broken ward circle on the floor (abstract marks)",
+   "Cracked pillars"
+  ],
+  "atmosphere": "Infernal oppressive dread.",
+  "avoid": [
+   "Not the Imp (small, winged)",
+   "Not the Gelid Fiend (ice)",
+   "No bat wings: it does not fly"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Demon [Elite]"
+  ]
+ },
+ "ART-MON-BLUE-DRAGON": {
+  "identity": "Blue Dragon, Sun-Drowned Elite, huge: a horned, sand-scaled wyrm that burrows beneath dunes and erupts in a lance of lightning; it flies and burrows. Typical adult, bursting from a dune.",
+  "composition": "Wide low-angle view of the dragon bursting up out of a dune, sand cascading from its horns and shoulders, head thrown back.",
+  "details": [
+   "Large horn crest on the head and along the jaw",
+   "Sand-scaled hide with fine scale texture",
+   "Four legs with powerful claws and wings still folded in the sand",
+   "Sand pouring from horns, shoulders and jaw",
+   "Lightning hinted by a few jagged lines at the throat",
+   "Dune slopes collapsing",
+   "Sparse sky"
+  ],
+  "atmosphere": "Territorial vain power.",
+  "avoid": [
+   "Not the Green, White or Black Dragon: horned and sand-scaled",
+   "No tomb or humans in the frame",
+   "No glow on the lightning"
+  ],
+  "sources": [
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Blue Dragon [Elite]"
+  ]
+ },
+ "ART-MON-BOGLING": {
+  "identity": "Bogling, Mire Minion, small: a squat frog-mouthed swamp creature lurking chest-deep with a spear and mud-darts.",
+  "composition": "Three-quarter view of the bogling standing chest-deep in reed-choked shallows, spear raised and a mud-dart in the other hand.",
+  "details": [
+   "Squat body with a wide frog mouth",
+   "Bulging eyes set on top of the head",
+   "Spear with a stone head and long haft",
+   "Mud dart ready in the throwing hand",
+   "Warty damp skin rendered with stipple",
+   "Reeds and lily pads, rippled water",
+   "Webbed fingers"
+  ],
+  "atmosphere": "Croaking nervous menace.",
+  "avoid": [
+   "Not the Swamp Goblin",
+   "Not the Lizardfolk",
+   "Do not draw it as a cute frog"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Bogling [Minion]"
+  ]
+ },
+ "ART-MON-SWAMP-GOBLIN": {
+  "identity": "Swamp Goblin, Mire Minion, small: a slime-streaked goblin that paddles the Mire's channels and blows poisoned darts from the reeds.",
+  "composition": "Low three-quarter view of the goblin crouched in a rough reed punt, blowpipe at its lips, bog knife at the belt.",
+  "details": [
+   "Knee-high slime-streaked goblin with wet hatched skin",
+   "Blowpipe held to the lips, dart visible",
+   "Bog knife in a belt sheath",
+   "Crude dugout punt with a paddle",
+   "Reed tufts woven into its clothing",
+   "Webbed fingers",
+   "Strings of teeth and trinkets stripped from the drowned"
+  ],
+  "atmosphere": "Sly damp ambush.",
+  "avoid": [
+   "Not the Greenmark Goblin (no sling, dry land) or Cave Goblin",
+   "Not the Bogling (frog mouth)",
+   "No fire"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Swamp Goblin [Minion]"
+  ]
+ },
+ "ART-MON-ZOMBIE": {
+  "identity": "Zombie, Mire Minion, medium: a waterlogged corpse the Mire would not keep, lurching upright in tattered remains and reaching up from beneath walkways.",
+  "composition": "Three-quarter view of the zombie rising from black water beneath a rotting plank walkway, one arm reaching up through the gap.",
+  "details": [
+   "Bloated waterlogged corpse with sagging skin",
+   "Tattered clothing hanging in strands",
+   "Pondweed and mud draped on the shoulders",
+   "Reaching arm and spread fingers",
+   "Dull blank eyes as solid black",
+   "Broken plank walkway and ripple lines",
+   "Reeds"
+  ],
+  "atmosphere": "Slow, mindless reaching hunger.",
+  "avoid": [
+   "Not the Possessed Corpse (dry, vapour-wrapped)",
+   "Not the Ghoul",
+   "No weapon"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Zombie [Minion]"
+  ]
+ },
+ "ART-MON-STIRGE": {
+  "identity": "Stirge, Mire Minion, small: a cat-sized bloated mosquito-thing with a needle proboscis and a blood-swollen belly; it flies.",
+  "composition": "Close three-quarter view of the stirge mid-flight, proboscis lowered at an attack angle, wings a blur of lines.",
+  "details": [
+   "Cat-sized insect body with a bloated belly",
+   "Long needle proboscis",
+   "Two translucent insect-like wings",
+   "Six thin legs with hooked tips",
+   "Round eyes",
+   "Fine hairs",
+   "Dusk air with reed stalks"
+  ],
+  "atmosphere": "Hungry itch.",
+  "avoid": [
+   "Not the Giant Bat (mammal)",
+   "Six legs",
+   "Do not draw a human face"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Stirge [Minion]"
+  ]
+ },
+ "ART-MON-WILL-O-WISP": {
+  "identity": "Will-o'-Wisp, Mire Cannon, small: a drifting orb of pale corpse-light that lures travellers into the mire; it flies.",
+  "composition": "Low view across dark water of a single glowing orb hanging motionless above the reeds like a lantern, with a hint of a path that vanishes into the mire.",
+  "details": [
+   "A single round orb drawn as a white circle with fine radial lines",
+   "Dense crosshatched darkness around it",
+   "Reeds in silhouette",
+   "Reflections on the black water in short strokes",
+   "A drowned traveller's lantern or boot at the bottom edge",
+   "A narrow plank path leading toward it",
+   "Small lightning-like spikes at its edge"
+  ],
+  "atmosphere": "Kindly looking, deadly.",
+  "avoid": [
+   "No face or body",
+   "Not an Ember Skull",
+   "Not a real lantern"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Will-o'-Wisp [Cannon]"
+  ]
+ },
+ "ART-MON-LIZARDFOLK-WARRIOR": {
+  "identity": "Lizardfolk Warrior, Mire Soldier, medium: a scaled cold-eyed pack fighter with heavy club and javelin who defends its breeding-pools.",
+  "composition": "Three-quarter view on a rotting bank, the warrior stepping forward with a heavy club raised and a javelin held in the off hand.",
+  "details": [
+   "Scaled lizard head with a long snout and a ridge crest",
+   "Muscular humanoid body with a thick tail",
+   "Heavy club of knotted wood",
+   "Javelin with a stone head",
+   "Simple hide harness and bone beads",
+   "Clawed webbed feet",
+   "Reeds and mud banks"
+  ],
+  "atmosphere": "Pragmatic territorial menace.",
+  "avoid": [
+   "Not the Troglodyte or Kobold",
+   "Not the Drakeblood hero",
+   "No bow or harpoon"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Lizardfolk Warrior [Soldier]"
+  ]
+ },
+ "ART-MON-LIZARDFOLK-HUNTER": {
+  "identity": "Lizardfolk Hunter, Mire Cannon, medium: a patient silent lizard-man stalking the margins with a barbed harpoon.",
+  "composition": "Three-quarter view of the hunter half-hidden in reeds, harpoon drawn back to throw, a coiled line trailing.",
+  "details": [
+   "Scaled head with a long snout and slit-pupil eyes",
+   "Barbed harpoon with a coil of rope",
+   "Hide wrap with reeds woven in",
+   "Low crouched posture",
+   "Clawed webbed toes in the shallows",
+   "Ripples and walkway timbers",
+   "Camouflage stipple"
+  ],
+  "atmosphere": "Unseen until the line snaps taut.",
+  "avoid": [
+   "Not the Warrior (club): this has a harpoon",
+   "Not a fisherman or human",
+   "No armour"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Lizardfolk Hunter [Cannon]"
+  ]
+ },
+ "ART-MON-CROCODILE": {
+  "identity": "Crocodile, Mire Skirmisher, large: a monstrous-length log-still ambusher exploding from the murk to drag victims under in a death-roll.",
+  "composition": "Three-quarter view of the crocodile surging half out of the water, jaws clamped on a plank walkway, spray flying.",
+  "details": [
+   "Long armoured body with ridged osteoderms",
+   "Heavy jaws with interlocking teeth",
+   "Four short sprawled legs, long tail",
+   "Small eyes high on the head",
+   "Water cascades and ripples",
+   "Plank walkway and reeds",
+   "Scale pattern in crosshatch"
+  ],
+  "atmosphere": "Sudden explosive ambush.",
+  "avoid": [
+   "Four legs",
+   "Not the Giant Constrictor or Swamp Naga",
+   "No wings or horns"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Crocodile [Skirmisher]"
+  ]
+ },
+ "ART-MON-LIZARDFOLK-SHAMAN": {
+  "identity": "Lizardfolk Shaman, Mire Controller, medium: a reed-cloaked lizard-man who speaks for the swamp-spirits and heals its pack with a staff and spirit-bolts.",
+  "composition": "Full figure in three-quarter view standing knee-deep, staff raised, mouth open in a croaked invocation.",
+  "details": [
+   "Scaled head with a fan-like frill",
+   "Cloak of dried reeds",
+   "Staff wrapped with feathers and bones",
+   "Bone trinkets around the neck",
+   "Hand extended with a dark lightning-like zigzag",
+   "Clawed feet in water",
+   "Reed banks and fog lines"
+  ],
+  "atmosphere": "Old patient ritual.",
+  "avoid": [
+   "Not the Warrior or Hunter",
+   "Not the Troglodyte Shaman (fungus)",
+   "No glow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Lizardfolk Shaman [Controller]"
+  ]
+ },
+ "ART-MON-MIASMA-SERPENT": {
+  "identity": "Miasma Serpent, Mire Skirmisher, medium: a bloated water-snake that exhales poison clouds as it swims.",
+  "composition": "Three-quarter view of the snake swimming through a channel with its head raised above the surface, haze rising from its open mouth.",
+  "details": [
+   "Bloated thick water-snake body with diamond scale pattern",
+   "Swollen throat",
+   "Open mouth with fangs and a forked tongue",
+   "Rendered haze as dense fine stipple around the head",
+   "Ripple lines on the water",
+   "Reed stalks",
+   "No legs, no hood"
+  ],
+  "atmosphere": "Foul drifting menace.",
+  "avoid": [
+   "Not the Swamp Naga (no human face, not huge)",
+   "Not the Giant Constrictor (not climbing)",
+   "No wings"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Miasma Serpent [Skirmisher]"
+  ]
+ },
+ "ART-MON-SWAMP-NAGA": {
+  "identity": "Swamp Naga, Mire Controller, large: a great serpent with a hooded watchful face coiled among drowned ruins, spitting venom and binding prey.",
+  "composition": "Three-quarter view of the naga coiled around a half-sunk column, hooded head raised and mouth spitting venom.",
+  "details": [
+   "Great serpent body in coils",
+   "Hooded watchful face with a hood like a cobra",
+   "Venom spit as short drops",
+   "Half-sunk drowned stonework",
+   "Algae and water weeds on its scales",
+   "Water ripples",
+   "No arms"
+  ],
+  "atmosphere": "Old, watchful, aloof.",
+  "avoid": [
+   "Not the Desert Naga: bog, weeds, drowned ruin, no sand",
+   "Not the Miasma Serpent",
+   "No arms"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Swamp Naga [Controller]"
+  ]
+ },
+ "ART-MON-GIANT-CONSTRICTOR": {
+  "identity": "Giant Constrictor, Mire Skirmisher, medium: a snake long enough to bridge a channel that drops from overhanging branches to coil and crush.",
+  "composition": "Three-quarter view of the snake dropping from a low branch with loops already wrapping an empty rope-slung pack, head striking down.",
+  "details": [
+   "Very long muscular snake body hanging from a branch in loops",
+   "Triangular head with open jaws",
+   "Patterned scales in diamonds",
+   "Coils tightening around a sack or empty cloak",
+   "Low branch and Spanish-moss-like hanging weeds",
+   "Water below with ripples",
+   "No hood and no limbs"
+  ],
+  "atmosphere": "Slow sudden crush.",
+  "avoid": [
+   "Not the Miasma Serpent or naga",
+   "Do not show a victim",
+   "No venom drops"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Giant Constrictor [Skirmisher]"
+  ]
+ },
+ "ART-MON-SHAMBLING-MOUND": {
+  "identity": "Shambling Mound, Mire Brute, large: a heaving mass of animate rot and creeper-vine, roughly man-shaped and tireless.",
+  "composition": "Three-quarter view of the mound lumbering through shallow fen, both vine-wrapped arms swinging in a slam.",
+  "details": [
+   "Roughly man-shaped heap of rotten vegetation, vines and mud",
+   "Creeper vines as thick cords",
+   "Bits of rotted wood, bone and cloth sticking out",
+   "Hollow dark pits for eyes",
+   "Dripping muck",
+   "Bulky arms ending in clumps",
+   "Water ripples"
+  ],
+  "atmosphere": "Sodden, tireless bulk.",
+  "avoid": [
+   "Not a Briarling or Dryad (no bark skin)",
+   "Not a Treant",
+   "No flowers or beauty"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Shambling Mound [Brute]"
+  ]
+ },
+ "ART-MON-SWAMP-HAG": {
+  "identity": "Swamp Hag, Mire Controller, medium: a warty, weed-haired crone who poles through the Mire cursing all she meets.",
+  "composition": "Three-quarter view of the hag standing on a small punt, poling it through fog, one clawed hand pointed in a curse.",
+  "details": [
+   "Warty skin, long nose, sunken cheeks",
+   "Weed-haired scalp with dripping strands",
+   "Ragged dress of dark cloth with pondweed",
+   "Clawed hand pointing",
+   "Long pole",
+   "Lantern hung on the punt",
+   "Fog and reed banks, lonely hut on stilts in the distance"
+  ],
+  "atmosphere": "Cruel sociable menace.",
+  "avoid": [
+   "Not the Night Hag (ashen, shadowy)",
+   "Not the Banshee",
+   "No broom or hat"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Swamp Hag [Controller]"
+  ]
+ },
+ "ART-MON-BANSHEE": {
+  "identity": "Banshee, Mire Controller, medium: the shrieking translucent spirit of a woman drowned in grief; it flies.",
+  "composition": "Three-quarter view of the banshee drifting over fog-covered water, mouth open in a wail, long hair streaming upward.",
+  "details": [
+   "Translucent woman-shaped figure drawn with open sparse lines",
+   "Long streaming hair and wet gown that trails into wisps",
+   "Open mouth as solid black void",
+   "Drowned and sunken-eyed face",
+   "Arms outstretched, fingers long",
+   "Lower body dissolving in mist",
+   "Fog and reeds"
+  ],
+  "atmosphere": "Keening grief.",
+  "avoid": [
+   "Not the Spectre (burnt) or Ice Wraith (icy)",
+   "No gore",
+   "Do not draw a classic sheet ghost"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Banshee [Controller]"
+  ]
+ },
+ "ART-MON-SWAMP-TROLL": {
+  "identity": "Swamp Troll, Mire Brute, large: a slime-green giant of reaching arms and a tusked maw that hauls itself on all fours through the Mire, regenerating wounds.",
+  "composition": "Three-quarter view of the troll heaving itself forward on all fours through black water, one huge clawed arm reaching.",
+  "details": [
+   "Slime-green hulking giant on all fours",
+   "Long reaching arms with rending claws",
+   "Tusked underslung maw",
+   "Drooping skin with slime",
+   "Reeds and weeds draped on its back",
+   "Wound scars closing",
+   "Dark mire water to the shoulders"
+  ],
+  "atmosphere": "Stupid, enduring bulk.",
+  "avoid": [
+   "Not the Forest Troll (moss-slick, upright)",
+   "Not the Ogre",
+   "No weapon"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Swamp Troll [Brute]"
+  ]
+ },
+ "ART-MON-HYDRA": {
+  "identity": "Hydra, Mire Elite, huge: a many-headed reptilian horror wallowing in the Mire's deepest pools, each serpentine neck striking on its own.",
+  "composition": "Wide three-quarter view of the hydra rearing from a black pool, five to seven serpent necks striking in different directions, with three clearly biting.",
+  "details": [
+   "Five to seven long serpentine necks each with a head",
+   "Heavy reptilian body half-submerged",
+   "Fanged mouths open on at least three heads",
+   "Wet scales with sparse scale marks",
+   "One stump of a head already healing beside the others",
+   "Lily pads and bones in the water",
+   "Reed-choked banks"
+  ],
+  "atmosphere": "Chaotic coordinated menace.",
+  "avoid": [
+   "Many heads: at least five necks",
+   "Not a dragon: no wings",
+   "Do not draw fire from the heads"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Hydra [Elite]"
+  ]
+ },
+ "ART-MON-BLACKWATER-WIGHT": {
+  "identity": "Blackwater Wight, Mire Elite, medium: a barnacled drowned corpse-warrior rising from black pools with a life-drinking drowned blade.",
+  "composition": "Three-quarter view of the wight wading up out of a black pool, drowned blade held low and water pouring from its armour.",
+  "details": [
+   "Barnacled corroded armour and helm",
+   "Drowned blade with algae and a notched edge",
+   "Sunken face with hollow eyes",
+   "Waterweed draped on the arms",
+   "Water streaming from the plates",
+   "Other drowned figures rising dimly behind",
+   "Black water and mist"
+  ],
+  "atmosphere": "Chilling command over the drowned.",
+  "avoid": [
+   "Not the Undead Warrior or Forsaken Knight",
+   "Not a living sailor",
+   "No glow"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Blackwater Wight [Elite]"
+  ]
+ },
+ "ART-MON-MIRE-TITAN": {
+  "identity": "Mire Titan, Mire Brute, huge: a colossal froglike amphibian horror of warty hide and lashing tentacles with a vast distensible maw. Typical individual, alone, waist-deep in fen water.",
+  "composition": "Wide low view of the titan standing waist-deep in fen water, reeds and mud sliding from its body, tentacles raised and mouth partly open.",
+  "details": [
+   "Froglike bulk with warty hide",
+   "Several thick lashing tentacles from the shoulders and jaw",
+   "Vast distensible maw with a ridge of small teeth",
+   "Wide flat head with small eyes",
+   "Reeds and mud sliding from its flanks",
+   "Water to the waist, ripples spreading",
+   "No geodes, no hunters or humans"
+  ],
+  "atmosphere": "Looming living sinkhole.",
+  "avoid": [
+   "No geodes or hunters",
+   "Not a Hydra or Crocodile",
+   "Do not show a victim"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Mire Titan [Brute]"
+  ]
+ },
+ "ART-MON-BLACK-DRAGON": {
+  "identity": "Black Dragon, Mire Elite, huge: a sleek horned wyrm the colour of stagnant water with an acid breath; it flies and swims. Typical adult, alone, rising from open black water.",
+  "composition": "Wide low-angle view of the dragon rising from open black water, acid dripping from its jaws, wings partly lifting.",
+  "details": [
+   "Sleek horned head with swept-back horns",
+   "Gaunt skull-like jaw with dripping acid",
+   "Wings half-lifting out of the water",
+   "Long neck draped in water weed",
+   "Pitted scales, glossy black",
+   "Water streaming and ripples",
+   "No ruin, no architecture, no humans"
+  ],
+  "atmosphere": "Cruel patient emergence.",
+  "avoid": [
+   "No ruin or architecture",
+   "Not the Green, White or Blue Dragon: sleek, skull-like head",
+   "No breath cone"
+  ],
+  "sources": [
+   "9.7 The Bestiary, The Mire Bestiary: Black Dragon [Elite]"
+  ]
+ }
+}

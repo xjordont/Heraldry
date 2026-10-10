@@ -89,7 +89,8 @@ def prompt_for(e, with_refs):
         comp.append(b["composition"])
     if e.get("direction"):
         comp.append(e["direction"])
-    comp.append(fam["framing"])
+    if not b.get("composition"):
+        comp.append(fam["framing"])
     if e["family"] in ("monster", "boss"):
         size = CFG["size_words"].get((e.get("facts") or {}).get("size_code") or "", "")
         if size:
@@ -103,7 +104,7 @@ def prompt_for(e, with_refs):
         out.append("SOURCE TEXT\nDepict this faithfully and invent nothing that contradicts it:\n\"" + e["flavour"] + "\"")
     atm = b.get("atmosphere", "The atmosphere is grounded, austere, mysterious and subtly ominous.")
     out.append("ARTISTIC STYLE AND ATMOSPHERE\n" + atm + "\n" + v2["style_" + ("scene" if kind == "scene" else "figure")])
-    final = ["Avoid " + "; ".join(x.rstrip(".") for x in b["avoid"]) + "."] if b.get("avoid") else []
+    final = ["Specific pitfalls to avoid:"] + ["* " + x.rstrip(".") + "." for x in b["avoid"]] if b.get("avoid") else []
     final.append(v2["final_" + ("scene" if kind == "scene" else "figure")])
     out.append("FINAL VISUAL REQUIREMENTS\n" + "\n".join(final))
     if with_refs:

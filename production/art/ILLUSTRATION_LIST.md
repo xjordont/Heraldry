@@ -46,11 +46,29 @@ Printed 4.8 in wide · aspect 3:2. Family framing: Cinematic establishing scene 
 
 ```text
 FRONT COVER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a four-Hero adventuring party — Human Fighter, Elf Ranger, Dwarf Cleric, Halfling Rogue — advancing through a rain-soaked ruined shrine; a rival party's banner across the ruin; a Monster silhouette in the treeline, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Recommended First Party of Heraldry Skirmish (Human Fighter, Elf Ranger, Dwarf Cleric, Halfling Rogue), four Heroes on an expedition into the monster-haunted ruins of the Dying Lands while a rival party works the same ground, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 A four-Hero adventuring party — Human Fighter, Elf Ranger, Dwarf Cleric, Halfling Rogue — advancing through a rain-soaked ruined shrine; a rival party's banner across the ruin; a Monster silhouette in the treeline.
 Low three-quarter view; party small in the lower third; broken shrine arch as frame; open sky upper half reserved for typeset title.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Low three-quarter view from ground level; the four-Hero party is small in the lower third, advancing between rain-slick flagstones. A broken shrine arch frames the scene on one side and the upper half of the picture is open ruled sky, left empty for the typeset title.
+SUBJECT DETAILS
+* Broken gothic shrine arch with a missing keystone and a headless saint in a wall niche
+* Rain drawn as sparse fine diagonal strokes, puddles on the flagstones reflecting the arch
+* Human Fighter in worn mail with sword and shield at the front, Elf Ranger with longbow, Dwarf Cleric in plate with a holy symbol on a staff or mace, small Halfling Rogue slipping along the wall edge
+* A rival party's tattered banner on a pole planted across the rubble, no readable device
+* Fallen columns, toppled statue fragments and moss on the stones
+* Treeline at the far edge with one Monster silhouette standing between the trunks, shape only
+* Lantern hung on the Ranger's pack, soaked cloaks, packs and bedrolls
+HUMAN ACTIVITY
+* The four Heroes advance in a loose staggered file, weapons half-drawn, looking toward the banner
+* Halfling Rogue crouches at the edge peering at the banner pole
+* Monster silhouette stands motionless in the trees, unseen by the party
+Wary, rain-heavy and austere; adventurers small against withered grandeur.
+Specific pitfalls to avoid:
+* Do not render the title or any lettering on banners.
+* Monster only a dark silhouette, not a detailed creature.
+* Do not make the party large or heroic-posed; no sunburst or glow.
+* Do not give the rival banner a heraldic device that reads as a symbol.
 ```
 
 ## Chapter openers (11)
@@ -63,11 +81,28 @@ Printed 5.8 in wide · aspect 3:2. Family framing: Wide establishing scene with 
 
 ```text
 CHAPTER 1 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Dying Lands seen from a broken mountain pass: a cracked imperial road winding down toward the skeletal towers of a dead city on the horizon, forest to one side and frozen peaks to the other; a small party with a banner pauses on the road in the foreground, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Dying Lands as a whole, seen from a broken mountain pass: forest on one flank, frozen peaks on the other, and the dead empire's ruined cities sprawled on the eastern horizon, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 The Dying Lands seen from a broken mountain pass: a cracked imperial road winding down toward the skeletal towers of a dead city on the horizon, forest to one side and frozen peaks to the other; a small party with a banner pauses on the road in the foreground.
 Wide vista; party small at lower left; road leads the eye to the distant dead city.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Wide vista from a high pass; a cracked imperial road winds down from the lower foreground toward the skeletal towers of a dead city on the horizon. A small party with a banner pauses at lower left, road leading the eye to the city.
+SUBJECT DETAILS
+* Straight, patient imperial road paved in broken slabs, with weeds and a leaning milestone half-swallowed by roots
+* Forest mass pressing in on one side, drawn as dense stippled and hatched canopy
+* Frozen peaks with fine sparse snow-line hatching on the other side
+* Distant dead city of snapped spires, collapsed domes and empty arches in thin fine lines
+* Fractured pass rocks and a cairn in the foreground
+* Wisps of smoke or ash thinly ruled over the far city
+* Sparse horizontal cloud strokes
+HUMAN ACTIVITY
+* Party of four stands on the road at lower left, one holding a banner on a pole, looking down toward the city
+* No other figures
+Vast, hushed and fatalistic; the world laid out like a wound.
+Specific pitfalls to avoid:
+* Do not repeat the cover composition or the Greythorn bastion portrait; no walled town visible.
+* Party small, banner without legible device.
+* Do not include any monsters or dragons in the sky.
+* No panorama of all six climates (that is the 1.3.2 world image).
 ```
 
 ### 2. Chapter 2 Opener
@@ -76,11 +111,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CHAPTER 2 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Two rival adventuring parties sighting each other across a fog-filled valley of ruined walls at first light, each crouched behind cover with weapons ready, a monster's silhouette moving in the mist between them, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Two rival adventuring parties of the Dying Lands meeting in a monster-haunted ruin, each fighting for the same objective in a PvPvE skirmish, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Two rival adventuring parties sighting each other across a fog-filled valley of ruined walls at first light, each crouched behind cover with weapons ready, a monster's silhouette moving in the mist between them.
 Wide shot; one party at lower left, the other small at far right; fog band across the middle.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Wide shot of a fog-filled valley of ruined walls at first light. One party crouches behind cover at lower left, the second is small at far right, a horizontal fog band crosses the middle and a monster silhouette moves in the mist between them.
+SUBJECT DETAILS
+* Low ruined walls, broken arches and collapsed cottages half-lost in fog
+* Fog shown by sparse fine horizontal lines and blank paper
+* First light as a few long shadows falling lower right
+* Left party behind a toppled wall section, shields and a crossbow barrel just visible
+* Right party behind a standing gable end, a banner pole barely visible
+* Monster as a large dark silhouette half-dissolved in the mist, ambiguous shape
+* Dead tree and a broken cart wheel for scale
+HUMAN ACTIVITY
+* Each party of four crouches or kneels behind cover with weapons ready, watching the other
+* Monster slouches through the fog between them, neither party engaging it yet
+Tense stillness before violence.
+Specific pitfalls to avoid:
+* Do not show combat actually happening; this is the moment of sighting.
+* Monster remains a silhouette, not a detailed portrait.
+* Keep it distinct from the cover (no rain, no shrine arch) and from ch.5 bridge melee.
+* No gore.
 ```
 
 ### 3. Chapter 3 Opener
@@ -89,11 +141,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CHAPTER 3 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Dawn of a new round: a weary party gathering behind a ruined wall as a lone chapel bell tower stands over a drowned field, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the turn structure of Heraldry Skirmish, the start of a new round of activations, imagined as the dawn of a new round in the field, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Dawn of a new round: a weary party gathering behind a ruined wall as a lone chapel bell tower stands over a drowned field.
 Wide shot, low horizon, bell tower silhouette at right.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Wide shot with a low horizon; a weary party gathers behind a ruined wall at left and middle ground, while a lone chapel bell tower stands as a silhouette at right over a drowned field.
+SUBJECT DETAILS
+* Chapel bell tower with a cracked belfry and a rope-less bell, no cross or legible mark
+* Drowned field with standing water reflecting thin sky, fence posts and a half-sunken plough
+* Ruined wall with a broken top and fallen coping stones
+* Faint horizon glow suggested by blank paper above and sparse ruled strokes
+* Reeds and dead stalks stippled across the water
+* Party gear: bedrolls, shields stacked on the wall, a shared flask
+* A single crow on the wall top
+HUMAN ACTIVITY
+* Four tired Heroes rise and stir behind the wall, one buckling armour, one tending a bandage, one scanning ahead, one asleep sitting up
+* All small, back or three-quarter view
+Weary vigilance in the first grey light.
+Specific pitfalls to avoid:
+* Do not show the Heroes heroically posed; they are exhausted.
+* Bell tower is rural chapel scale, not Sablekeep or any Bastion.
+* Avoid glowing sun disk or rays.
+* No monster in view.
 ```
 
 ### 4. Chapter 4 Opener
@@ -102,11 +171,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CHAPTER 4 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a party crossing the broken spans of a collapsed aqueduct: one climbs a rope, one leaps a gap, one braces to catch, the gorge falling away below, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the movement chapter of Heraldry Skirmish, imagined as an expedition crossing a ruined imperial aqueduct over a gorge, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 A party crossing the broken spans of a collapsed aqueduct: one climbs a rope, one leaps a gap, one braces to catch, the gorge falling away below.
 Strong diagonal of the broken aqueduct; figures mid-motion; deep drop beneath.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+A strong diagonal of a broken aqueduct across the frame, deep gorge falling away beneath. Figures are caught mid-motion on different spans, with the drop dominating the lower half.
+SUBJECT DETAILS
+* Roman-like arched aqueduct with collapsed spans, exposed rubble core and broken parapets
+* Ivy and roots hanging from the arches
+* Gorge floor far below drawn in fine light lines, a thread of river
+* Rope tied off to an arch pier and hanging into a gap
+* Loose stones falling from a crumbling edge
+* Wind-bent dead trees on the gorge rim
+* Packs and a lantern slung on climbers
+HUMAN ACTIVITY
+* One Hero climbs a rope up a broken span
+* One Hero leaps a gap between spans, cloak streaming
+* One Hero braces on a solid pier with hand outstretched to catch the others
+* A fourth waits further back on the intact section
+Vertigo and strain; the world coming apart under their feet.
+Specific pitfalls to avoid:
+* Not the stone bridge of ch.5 and not the Chasm Crossing scenario ledges (this is an arched aqueduct in open air).
+* No monsters.
+* Do not depict dimensions or jump distances.
+* No lettering on any stones.
 ```
 
 ### 5. Chapter 5 Opener
@@ -115,11 +203,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CHAPTER 5 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a desperate melee on a narrow stone bridge: adventurers locked shield-to-shield against a press of undead soldiers, one hero falling back wounded, the river far below, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the reaction and melee rules of Heraldry Skirmish, imagined as a desperate fight against undead soldiers of the Ashlands, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 A desperate melee on a narrow stone bridge: adventurers locked shield-to-shield against a press of undead soldiers, one hero falling back wounded, the river far below.
 Bridge seen from a low three-quarter angle; the clash at centre; ranks of undead receding into fog.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Narrow stone bridge seen from a low three-quarter angle; the clash at centre, shield against shield. Ranks of undead recede into fog behind, the river far below.
+SUBJECT DETAILS
+* Narrow humped stone bridge with a cracked parapet and a missing section of coping
+* Undead soldiers in rusted helms, tattered surcoats and corroded mail, shields pocked and splintered
+* Adventurers in mismatched gear locking shields, one bracing a spear
+* One hero falling back wounded, supported by a comrade, dropped weapon at their feet
+* Fog bank swallowing the far end with more helmets and spear points
+* Dark river far below with a few bleak reeds
+* Broken arrows stuck in the bridge deck
+HUMAN ACTIVITY
+* Three adventurers hold the line shield-to-shield
+* A wounded hero staggers back, clutching their side
+* Undead soldiers push forward in a disciplined rank, faces hollow
+Grim last stand without gore.
+Specific pitfalls to avoid:
+* Do not repeat ch.2 (parties across a valley) or ch.4 (aqueduct climbing).
+* No gore or dismemberment.
+* Undead are soldiers, not skeleton cartoons or a named boss.
+* No lettering on shields.
 ```
 
 ### 6. Chapter 6 Opener
@@ -128,11 +234,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CHAPTER 6 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a crowded hiring hall inside a Bastion: adventurers of many ancestries (dwarf, elf, ratkin, orc, halfling, human) bargaining over a contract nailed to a post beneath captured banners, a clerk with a ledger and coin scales, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Party creation and the Town Phase, imagined as a crowded hiring hall in a Bastion where adventurers bargain over contracts, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 A crowded hiring hall inside a Bastion: adventurers of many ancestries (dwarf, elf, ratkin, orc, halfling, human) bargaining over a contract nailed to a post beneath captured banners, a clerk with a ledger and coin scales.
 Interior wide shot; contract post at the focal centre; figures grouped around it.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Interior wide shot of a timbered hall; a contract nailed to a post at the focal centre, figures grouped around it beneath captured banners, a clerk at one side with a ledger and coin scales.
+SUBJECT DETAILS
+* Heavy timber hall with beams, a long bench, a hearth in the back wall and smoke-stained rafters
+* Captured banners hanging from the rafters, tattered and without legible devices
+* Contract sheet nailed to a post, seal dangling, no readable writing
+* Dwarf with braided beard and pack, elf in light armour, ratkin in scavenged scraps with a hunched posture, orc with tusks and heavy shoulders, halfling holding a tankard, human fighter in mail
+* Clerk behind a counter with a ledger, quill and a pair of coin scales
+* Stacked barrels, a notice board of pinned papers drawn as blank rectangles
+* Mud and straw on the floor, a dog or a rat under the bench
+HUMAN ACTIVITY
+* Six adventurers of different ancestries cluster around the post, pointing and haggling
+* Clerk weighs coin on the scales, a hand pressed on the ledger
+* Others lounge at benches in the background
+Mercenary bustle, tired and mercantile.
+Specific pitfalls to avoid:
+* Not the stronghold War Room (ch.11) - this is a public Bastion hall with many strangers.
+* Do not show readable text on the contract.
+* No Greythorn-specific features.
+* Ratkin must look like rat-folk, not rats, and not comic.
 ```
 
 ### 7. Chapter 7 Opener
@@ -141,11 +265,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CHAPTER 7 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Deepwarden forge cut into the rock: a smith quenching a glowing blade in a trough as steam rises, finished mail, helms and axes on racks, an apprentice working the bellows, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the equipment chapter, imagined as a Deepwarden forge cut into the rock, the best forges in the surviving world, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 A Deepwarden forge cut into the rock: a smith quenching a glowing blade in a trough as steam rises, finished mail, helms and axes on racks, an apprentice working the bellows.
 Interior; smith at the focal centre; racks framing both sides.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Interior of a carved rock forge; the smith at the focal centre quenching a glowing blade in a trough, steam rising; racks of finished mail, helms and axes framing both sides.
+SUBJECT DETAILS
+* Rough-hewn rock walls with tool marks and a chimney flue disappearing into the ceiling
+* Massive anvil, bellows, quench trough and tongs
+* Blade shown as a bright blank-paper shape with steam in fine lines
+* Racks of mail shirts, helms and axes along both walls
+* Smith in a leather apron with heavy forearms, a dwarf in a plain coif
+* Apprentice working the bellows at one side
+* Hanging lanterns and an ingot stack, coal bin and sparks as stippling
+HUMAN ACTIVITY
+* Smith lowers a blade into the trough
+* Apprentice leans on the bellows handle
+* No other figures
+Hard, honest labour in a stone-bound city.
+Specific pitfalls to avoid:
+* Not the Armoury (stronghold) - this is a master forge in Deepwarden.
+* No fire glow effects, show fire with ink and blank paper.
+* No readable maker's marks.
+* Do not turn the Deepwarden bastion portrait into this - interior only.
 ```
 
 ### 8. Chapter 8 Opener
@@ -154,11 +296,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CHAPTER 8 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a lone caster standing in the burned shell of an academy library at night, pages and embers swirling upward around them as a ring of force flares from an outstretched hand, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the magic chapter, imagined as a lone caster in the burned shell of an academy library, the arcane inheritance of broken empires, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 A lone caster standing in the burned shell of an academy library at night, pages and embers swirling upward around them as a ring of force flares from an outstretched hand.
 Tall broken shelves framing the figure; swirl of pages around the focal point.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Tall broken shelves frame a single figure at night; pages and embers swirl upward around them as a ring of force flares from an outstretched hand.
+SUBJECT DETAILS
+* Gutted gothic library hall with charred shelves rising out of frame and a roofless vault with stars through gaps
+* Burnt codices and scraps of paper whirling in a spiral, pages blank or with illegible scribble only
+* Ring of force drawn as concentric thin ink rings and radiating short lines from the hand
+* Caster in a scorched robe, hood back, staff or book at the belt
+* Collapsed ladder and fallen bookstands on the floor
+* Ash and ember stippling
+* A statue or bust with a broken face on a plinth
+HUMAN ACTIVITY
+* The caster stands braced, arm outstretched, robes whipped upward by the rising pages
+* No one else present
+Solitary, perilous, wonder tinged with ruin.
+Specific pitfalls to avoid:
+* No readable script on the pages.
+* Not the Fallen Observatory scenario (this is a library, not a dome).
+* Avoid colour or glow effects; use line and solid black.
+* Do not show a specific spell mechanic.
 ```
 
 ### 9. Chapter 9 Opener
@@ -167,11 +326,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CHAPTER 9 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the aftermath of a hunt at the forest's edge: a party standing over a slain beast too large to drag home, crows gathering on the carcass, eyes glinting in the treeline behind, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Bestiary chapter, imagined as the aftermath of a hunt at the edge of the Greenmark, with a slain beast too large to drag home, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 The aftermath of a hunt at the forest's edge: a party standing over a slain beast too large to drag home, crows gathering on the carcass, eyes glinting in the treeline behind.
 Carcass across the foreground; party in the middle ground; treeline dark behind.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Carcass sprawled across the foreground, party standing in the middle ground, dark treeline behind with glinting eyes.
+SUBJECT DETAILS
+* Huge slain dire bear seen only in part - a shaggy flank, a slumped head and a great clawed paw - half covered by a cast net, too large to drag home
+* Spears and a broken net rope across the carcass
+* Crows landing and clustering on the carcass
+* Hunters with boar spears, hooded cloaks, a hand-axe, a lantern, one wiping a blade
+* Forest edge of tall oaks and undergrowth drawn as dense black hatching
+* Several pairs of small eyes glinting in the dark treeline
+* Trampled grass and a fallen bow
+HUMAN ACTIVITY
+* Party of four stands over the beast in the middle ground, one kneeling to measure it, one scanning the treeline
+* Crows mob the carcass
+Hard-won victory under watching eyes.
+Specific pitfalls to avoid:
+* Not the Hunt the Wild Beast scenario, the Giant Tarantula or the Broodmother; the bear is a partial carcass, never a portrait.
+* No gore close-up; carcass drawn with restraint.
+* Eyes in the treeline are tiny dots, not creatures.
+* Not a trophy-pose heroic image.
 ```
 
 ### 10. Chapter 10 Opener
@@ -180,11 +356,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CHAPTER 10 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a party at a ruined crossroads reading a weathered, carved waystone; six roads lead away, toward forest, ruined city, mountain caves, ice, desert and fen on the horizon, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Scenarios chapter, imagined as a party at a ruined crossroads choosing which of the six climates to enter, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 A party at a ruined crossroads reading a weathered, carved waystone; six roads lead away, toward forest, ruined city, mountain caves, ice, desert and fen on the horizon.
 Waystone at centre; roads fanning out; six distant landscapes along the horizon.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Waystone at the centre; six roads fan out from the crossroads toward six distant landscapes along the horizon, each distinguishable in miniature.
+SUBJECT DETAILS
+* Weathered carved waystone with worn pictographs that read as shapes, not letters
+* Six roads, each with a different surface: root-split flagstones, soot-black pavement, a gaping cave road, snow-edged track, sand-drifted road, plank causeway
+* Horizon vignettes: forest line, ruined city skyline, cave mouths in mountains, ice-locked towers, dunes and tomb-teeth, fen with stilts
+* A gibbet or broken signpost stub and a milestone
+* Small party gathered close to the stone, one tracing its carving with a gloved finger
+* Dark clouds ruled lightly across the sky
+* Dried grass and thistle around the junction
+HUMAN ACTIVITY
+* Four Heroes cluster at the waystone, reading and pointing down different roads
+* No other figures
+Choice and foreboding at the edge of the known.
+Specific pitfalls to avoid:
+* Not the 1.3.2 mountain-spine panorama or the ch.1 pass vista.
+* Do not letter the stone.
+* Six landscapes must stay small and simple, no dragons.
 ```
 
 ### 11. Chapter 11 Opener
@@ -193,11 +385,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CHAPTER 11 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a battered party returning at dusk by fen-lantern light, carrying their wounded on a litter toward their stronghold's palisade gate, watchers on the wall above, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Campaign chapter, imagined as a battered party returning to its Stronghold at dusk after an expedition, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 A battered party returning at dusk by fen-lantern light, carrying their wounded on a litter toward their stronghold's palisade gate, watchers on the wall above.
 Gate at right; procession along a muddy track from the left; lanterns as focal points.
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Gate at right; a procession advances along a muddy track from the left toward a palisade gate, fen lanterns as focal points, watchers on the wall above.
+SUBJECT DETAILS
+* Palisade of sharpened timbers with a gatehouse and a small tower, ditch with spikes in front
+* Muddy rutted track with puddles reflecting lantern light
+* Lantern carried on a pole, hooked lantern hanging at the gate, as areas of untouched paper amid dense hatching
+* Litter made of two poles and a cloak carrying a wounded Hero
+* Reed clumps and a fen mist drawn sparsely
+* Watchers on the wall with torches and spears, silhouetted
+* Salvaged stonework patched into the palisade base
+HUMAN ACTIVITY
+* Four to six figures trudge in single file, two carrying the litter
+* One watcher on the wall raises a hand
+* Gate half open
+Exhausted homecoming, thin hope.
+Specific pitfalls to avoid:
+* Not a grand castle - a salvage-built palisade stronghold.
+* Do not repeat the construction scene of 11.1 (no scaffolding).
+* No monster in view.
+* Lanterns not glowing with rays.
 ```
 
 ## World sections (8)
@@ -210,13 +420,31 @@ Printed 3.3 in wide · aspect 3:2. Family framing: Small establishing scene that
 
 ```text
 1.2 THE GRIM WORLD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of 1.2 The Grim World (1. The World of Heraldry), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Grim World: kings, bishops and warlords raise banners over land they can barely hold, and peasants bear the cost, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Mid-distance view of a burnt farmstead yard with two warlords' banners planted on opposite sides; the tax cart and armed men fill the yard while a peasant family flees down a lane to one side.
 Two warlords' banners planted on either side of a burnt farmstead; a tax collector's cart and armed men in the yard while a peasant family flees down the lane.
+SUBJECT DETAILS
+* Blackened timber farmhouse with a fallen roof and a standing chimney
+* Two tall banner poles on either side of the yard with tattered banners of different cut (no legible devices)
+* Tax collector's cart with strongbox, ledger and a seated clerk
+* Armed men in mismatched gear holding spears, one counting sacks
+* Burnt barn, scattered tools and a dead cow or ox
+* Fleeing peasant family on the lane with bundles, a child carried, a dog
+* Distant smoke column and trampled fields
+HUMAN ACTIVITY
+* Armed men load the cart and loom over the yard
+* The family flees down the lane, looking back
+* Clerk records the taking
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The world of Heraldry Skirmish is a realm of old faiths, broken kingdoms, hungry roads, and colder bargains. Kings, princes, bishops, and warlords still raise banners over land they can barely hold. They fight over relics, tolls, doctrine, trade roads, salt, iron, and pride. Their victories are measured in burnt farms and new taxes. Their defeats are carried by peasants who never chose a side."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Bitter, mundane cruelty of petty war.
+Specific pitfalls to avoid:
+* No monsters; the cruelty here is human.
+* Do not show violence against the family.
+* Banners must not carry readable heraldry.
+* Distinct from the 1.3.5 abandoned monster-held village street.
 ```
 
 ### 2. 1.3.1 The Fall
@@ -225,13 +453,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 1.3.1 THE FALL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of 1.3.1 The Fall (1. The World of Heraldry / 1.3 The Dying Lands), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Fall, the unexplained end of the old empire: no one agrees what caused it, but the ruins of imperial power litter the land, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+The colossal broken head of an imperial statue half-buried in a ploughed field fills the middle ground, with a farmer and ox tiny beside it.
 The colossal broken head of an imperial statue lying half-buried in a ploughed field, a farmer and ox small beside it; nobody knows what toppled it.
+SUBJECT DETAILS
+* Giant stone head with a crowned brow, one cracked eye socket and half the face sunk in earth
+* Ploughed furrows curving around the head
+* Moss and crow-perched weeds on the cracks
+* Broken statue hand or sandal fragment elsewhere in the field
+* Distant ridge with a ruined colonnade
+* Low overcast sky with thin ruled strokes
+* Farmer's plough and a single ox, a crow on the ear
+HUMAN ACTIVITY
+* A farmer stands with a goad stick beside the ox, looking up at the head
+* No other figures
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "No one agrees on what ended the world. That has not stopped anyone from blaming someone else."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Silent grandeur fallen to farm-field, unexplained.
+Specific pitfalls to avoid:
+* Not the Cursed Colossus of the Waste (that is in sand, a priest-king).
+* No inscription on the plinth.
+* Do not suggest the cause of the Fall (no fire, no sky tear).
 ```
 
 ### 3. 1.3.2 The Six Climates of Ruin
@@ -240,13 +484,31 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 1.3.2 THE SIX CLIMATES OF RUIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of 1.3.2 The Six Climates of Ruin (1. The World of Heraldry / 1.3 The Dying Lands), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the shape of the Dying Lands: broken mountains down the spine, the dead empire in the east, the great forest in the west, ice in the north, dunes in the south and swamps in the south-east, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
-A sweeping panorama from the spine of the broken mountains: western forest, eastern dead city, northern ice and southern dunes all visible at once under one sky; a lone surveyor with a staff in the foreground.
+A sweeping panorama from the spine of the broken mountains with all six climates under one sky: forest to the west, dead city to the east, ice to the north, dunes to the south and drowned fen to the south-east, with dark cavern mouths in the mountainside below; a lone surveyor with a staff stands in the foreground.
+A sweeping panorama from the spine of the broken mountains showing all six climates under one sky: the great forest to the west, the dead imperial city to the east, ice to the north, dunes to the south, drowned fen to the south-east, and dark cavern mouths in the mountains below the viewer; a lone surveyor with a staff in the foreground.
+SUBJECT DETAILS
+* Jagged mountain crest with a cairn and a rock ledge foreground
+* Western forest as dense hatched mass running to a pale coast
+* Eastern city skyline of snapped towers and domes in fine lines
+* Northern ice fields with glacial walls and thin hatching
+* Southern dunes with tomb-teeth along the horizon
+* South-eastern fen of reeds, black pools and drowned trees in sparse fine lines
+* Dark cavern mouths and old mine adits in the mountain flank below the ledge (the Undermarches)
+* Imperial roads as straight lines radiating from the east across the lands
+* Surveyor with a staff, a rolled map and a leather satchel
+HUMAN ACTIVITY
+* The surveyor stands at the cairn looking across the lands, one hand raised to shade eyes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Beyond the walls, land has become allegiance. Expedition ledgers still say forest, city, cavern, ice, desert, and swamp. Survivors know better. They use older names. The shape of the world is plain enough to anyone who has walked it. The broken mountains run down its spine. The dead empire and its ruined cities sprawl across the eastern heart. The great forest spreads west to the salt-coast, the ice locks the north, the dunes burn in the south beyond the mountain passes, and the swamps drown the south-east where the rivers give out at the sea. The old imperial roads still join all of it, straight and patient, running out from the Ashlands to every climate that survived. A dry label cannot warn a traveller that a road has memory, a court still sits without lungs, or a pool of black water may be listening."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Immense, quiet and unsettled.
+Specific pitfalls to avoid:
+* Not the ch.1 pass vista (that has a party and a single road toward one city).
+* No dragons or creatures.
+* No map lettering.
+* No hard compass-rose graphic.
 ```
 
 ### 4. 1.3.3 The Six Bastions
@@ -255,13 +517,31 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 1.3.3 THE SIX BASTIONS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of 1.3.3 The Six Bastions (1. The World of Heraldry / 1.3 The Dying Lands), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the six Bastions survived the Fall by closing the gate while neighbours screamed outside, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A great Bastion gate grinding shut at dusk, seen from the outside looking in at a low angle; guards strain at the windlass within while desperate figures reach for the closing gap.
 A great Bastion gate grinding shut at dusk, guards straining at the windlass inside while desperate figures outside reach for the closing gap.
+SUBJECT DETAILS
+* Massive double gate of iron-bound timber halfway closed
+* Gatehouse arch with a portcullis chain, a murder-hole above and a stone relief with no legible text
+* Windlass with spokes and a drum and chain, guards leaning on it
+* Pikemen at the gate with faces turned away
+* Outside crowd of refugees with bundles, a mother holding a child at arm's length through the gap
+* Wall-top watchers with torches, one lowering a rope
+* Dust and trampled mud at the threshold
+HUMAN ACTIVITY
+* Four guards heave the windlass
+* Several refugees surge at the gap, reaching hands
+* A few pikemen hold them back with spear butts
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Each Bastion is a fortified holding: a walled town, a fortress-chapel, a sealed mining city, a stilt-town behind river-locks. None ruled before the Fall. They survived because they were small enough to be missed, lucky enough to be spared, or stubborn enough to close the gate while neighbours screamed outside. Now they are the great powers of what remains."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hard survival bought with others' lives.
+Specific pitfalls to avoid:
+* Not a specific Bastion's gate (no Deepwarden great gate, no Greythorn timber).
+* No monsters at the gate.
+* Do not depict violence against the refugees.
+* Distinct from the 1.3.6 postern departure.
 ```
 
 ### 5. 1.3.4 Magic in the Dying Lands
@@ -270,13 +550,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 1.3.4 MAGIC IN THE DYING LANDS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of 1.3.4 Magic in the Dying Lands (1. The World of Heraldry / 1.3 The Dying Lands), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Five Traditions of magic (Arcane, Divine, Druidic, Sorcery, Psychic) all survived the Fall, none intact, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on a cracked stone altar viewed at slight elevation; five damaged implements arranged in a rough arc, each broken in its own way.
 A still life on a cracked altar: five damaged implements, one per tradition - a scorched spellbook, a chipped holy symbol, a bloodied ritual knife, a withered antler-and-holly charm, and a cracked crystal - each broken in its own way.
+SUBJECT DETAILS
+* Scorched spellbook with a burnt corner and a warped clasp (Arcane)
+* Chipped holy symbol on a cracked chain (Divine)
+* Bloodied ritual knife with a notched blade (Sorcery)
+* Withered antler-and-holly charm on a frayed cord (Druidic)
+* Cracked crystal with a fracture across its facets (Psychic)
+* Cracked altar slab with dust, ash and a candle stub
+* Thin vine and moss creeping at one edge, a spider web in a corner
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Five Traditions all survived the Fall. None survived intact."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Reverent, damaged and uneasy.
+Specific pitfalls to avoid:
+* No readable runes or glyph text on the book.
+* Do not depict magic effects or glow.
+* Not the Treasure Tables still life (these are tools, not coin).
+* Do not label which tradition is which.
 ```
 
 ### 6. 1.3.5 Monstrous Threats
@@ -285,13 +579,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 1.3.5 MONSTROUS THREATS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of 1.3.5 Monstrous Threats (1. The World of Heraldry / 1.3 The Dying Lands), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Monsters hold the Dying Lands now; they close roads, empty fields and set up their own banners, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+An abandoned village street seen from one end in perspective, the market cross at the centre carrying a crude monster banner.
 An abandoned village street: claw-torn doors, an empty well, and a crude monster banner planted where the market cross once stood.
+SUBJECT DETAILS
+* Claw-torn doors hanging from hinges and deep gouges in timber frames
+* Empty well with a broken windlass and a dropped bucket
+* Market cross with a crude banner of hide and bones stuck on top
+* Overgrown cobbles, a cart on its side, scattered pots
+* Cottages with open shutters and dark windows
+* A dog skeleton or a small crow flock on a roof
+* Totem-like markings of scratches, no letters
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Monsters of the Dying Lands are not scattered obstacles. They hold the world now. They keep roads closed, fields empty, shrines silent, and old borders meaningless. A village may vanish because of hunger, tax, fever, or weather. Outside the walls, those causes often have claws, banners, laws, or names."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hollow, watched and recently emptied.
+Specific pitfalls to avoid:
+* No monsters visible in the frame.
+* No corpses.
+* Banner has no readable device.
+* Distinct from the 1.2 burnt farmstead (human conflict) and from scenarios.
 ```
 
 ### 7. 1.3.6 Adventurers and the Road
@@ -300,13 +608,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 1.3.6 ADVENTURERS AND THE ROAD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of 1.3.6 Adventurers and the Road (1. The World of Heraldry / 1.3 The Dying Lands), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Adventurers exist because the Bastions need work done beyond the reach of soldiers; a party of four takes contracts through the gate, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A small party of four walks out of a Bastion's postern gate along a muddy road, seen from behind, past a gibbet and a weathered warning post, toward a dark forest edge.
 A small party walking out of a Bastion's postern gate along a muddy road, past a gibbet and a weathered warning post, toward a dark forest edge.
+SUBJECT DETAILS
+* Small postern gate in a thick stone or timber wall with a guard looking down from a wall-top
+* Muddy road with ruts and puddles
+* Empty gibbet with a cage and chains
+* Weathered warning post with scratched marks (not letters)
+* Dark forest edge as dense hatching ahead
+* Party gear: packs, shields on backs, a spear, a hooded lantern
+* Dead-leaf and thistle roadside
+HUMAN ACTIVITY
+* Four figures walk single file, one glancing back at the gate
+* A guard watches from the wall
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Adventurers exist because the Bastions need work done beyond the reach of soldiers."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Resigned departure into danger.
+Specific pitfalls to avoid:
+* Not a heroic departure; no banners flying.
+* Not the Greythorn bastion portrait or the ch.1 vista.
+* No readable text on the post.
+* No monsters in sight.
 ```
 
 ### 8. 1.3.7 Legends and Echoes
@@ -315,13 +640,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 1.3.7 LEGENDS AND ECHOES - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of 1.3.7 Legends and Echoes (1. The World of Heraldry / 1.3 The Dying Lands), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Dying Lands remember: old battles and legends replay as echoes over the living ground, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A barrow field at dusk with low burial mounds in a wide meadow; faint ghostly warriors of an ancient battle re-enact their last charge through the grass, drawn only in sparse fine lines against solid living landscape.
 A barrow field at dusk where faint ghostly warriors of an ancient battle re-enact their last charge through the living grass, drawn only in sparse fine lines.
+SUBJECT DETAILS
+* Grassy barrows with a standing stone and an old spear half-leaning
+* Living grass drawn in firm confident strokes while ghosts use broken thin outlines
+* Ghost cavalry and foot soldiers with antique helmets and round shields charging left to right
+* A ghostly banner without device
+* Dead tree and a crow
+* Low sun-hazed horizon with sparse horizontal strokes
+* A lone shepherd or traveller on a rise as the only solid figure
+HUMAN ACTIVITY
+* Ghostly warriors charge across the field
+* A single traveller watches from a barrow, small
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Dying Lands remember. They do not remember kindly."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Haunted, wistful, unforgiving.
+Specific pitfalls to avoid:
+* Ghosts must be line-only, no gradient or glow.
+* No gore, no skeletons.
+* No named legend figures (Saint Cael, Ysolde Vane) depicted.
+* Not the Haunted Mausoleum or crypt interiors.
 ```
 
 ## Climates (6)
@@ -334,12 +676,26 @@ Printed 3.3 in wide · aspect 3:2. Family framing: Landscape that captures the c
 
 ```text
 THE GREENMARK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Greenmark (1.3 The Dying Lands / 1.3.2 The Six Climates of Ruin), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Greenmark, the great temperate forest of the surviving world, larger than the maps, where roots take roads and the forest does not recognize human law, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A forest road at ground level in deep woods, roots lifting the paving, trees seeming to lean in; a moss-warm grove circle opens in the middle distance.
+SUBJECT DETAILS
+* Ancient oaks with fluted trunks and heavy canopy
+* Road slabs broken and swallowed by roots, a milestone half-buried and tilted
+* Foresters' warning signs cut in bark as slashes and notches, not letters
+* Upright hound-like shapes between trunks, dark and indistinct
+* Grove-circle of standing mossy stones with low mist and a patch of bare paper where snow has melted
+* Fern, bracken, fallen logs, toadstools
+* Light shafts as blank paper between trunks
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Greenmark is the great temperate forest of the surviving world. It is larger than the maps. Roots take a road within a season and make the mile-stones useless. Travellers report trees shifting at the edge of sight, upright hounds between trunks, and grove-circles where moss stays warm after snow. Foresters cut warning signs into bark for those who know how to read them. The most common sign means turn back even if the voice ahead is your own. The forest is no wilderness. It is a country that does not recognize human law."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Ancient, watchful and indifferent to humans.
+Specific pitfalls to avoid:
+* No people; the climate is the subject.
+* Do not repeat the Whispering Grove scenario (that has humming standing stones in a clearing).
+* Hound shapes remain barely seen silhouettes.
+* No letters in the bark signs.
 ```
 
 ### 2. The Ashlands
@@ -348,12 +704,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE ASHLANDS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ashlands (1.3 The Dying Lands / 1.3.2 The Six Climates of Ruin), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ashlands, the cities of the old empires after fire, law and death finished with them, where the city still knows how to count, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Street-level one-point perspective down a soot-black avenue between collapsed forums and leaning temples, with a lit shrine lamp in the near corner.
+SUBJECT DETAILS
+* Black-streaked pavement with ash drifts and cracked flagstones
+* Collapsed forum colonnade, columns snapped and lying across the street
+* Temple facade leaning over a plaza filled with soot
+* Shrine niche with a small lit lamp and no worshippers
+* Crypt entrance gaping where a forum floor gave way
+* Far end: an armoured patrol silhouette crossing an old boundary line
+* Ash stippling and thin falling flecks
+HUMAN ACTIVITY
+* A small file of armoured dead patrols far down the street, tiny
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Ashlands are the cities of the old empires after fire, law, and death finished with them. They sprawl across the eastern heart of the world, where the imperial roads still run out to every climate like spokes from a shattered wheel. Forums have collapsed into crypts. Temples lean over plazas filled with soot. Streets run black across districts no living guide will enter twice. Lamps still burn in shrines whose gods have no congregation. Patrols still cross boundaries that vanished before the current Bastions had names. The Ashlands are rich because whole treasuries died under stone. They are feared because the city still knows how to count."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Austere, ordered and dead.
+Specific pitfalls to avoid:
+* Not the Hollow Crown throne room or any scenario ruin.
+* Patrol only as tiny silhouettes.
+* No inscriptions.
+* Not a sunny scene; heavy overcast.
 ```
 
 ### 3. The Undermarches
@@ -362,12 +734,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE UNDERMARCHES - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Undermarches (1.3 The Dying Lands / 1.3.2 The Six Climates of Ruin), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Undermarches, the endless underworld beneath every foundation, deepest under the broken mountains, where deep elves keep their own law, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A cutaway view: a mine shaft or cellar above breaking through into a smooth round tunnel no pick made; a small surveyor with a lantern and an inconsistent map stands at the join.
+SUBJECT DETAILS
+* Cellar barrels and a staircase at the top of frame, timber props
+* Hole opening into an older, smooth-walled tunnel of precise masonry
+* Cave-breath mist rising from a cellar floor crack
+* Surveyor with lantern and a map spread on a rock, compass in hand
+* Stalactites, dripping water and a sour pool
+* Distant tunnel mouth with a faint far-off lamp
+* Cracked support beam and loose rubble
+HUMAN ACTIVITY
+* Surveyor crouches, comparing the map to the tunnel, one hand shielding the lantern
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Undermarches begin under every place that claims to have a foundation, and run deepest beneath the broken mountains at the world's centre. Mines break into older shafts. Older shafts open into tunnels no pick made. Surveyors return with maps that disagree with themselves. Wells sour overnight. Cellars breathe in winter. Borders on the surface mean little below, where passages run under rivers, burial hills, and walls the Bastions call secure. Down in the true dark the deep elves keep their own houses and their own law, older than any empire and crueller than any court that ever sat above. The deep does not need to invade. The surface keeps falling into it."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Claustrophobic, uncanny, and too deep.
+Specific pitfalls to avoid:
+* Not the Chasm Crossing, Crystal Harvest or Quake scenes.
+* No deep elves visible.
+* No glowing crystals.
+* No readable map lettering.
 ```
 
 ### 4. The Pale City
@@ -376,12 +764,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE PALE CITY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Pale City (1.3 The Dying Lands / 1.3.2 The Six Climates of Ruin), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Pale City, the ice-locked northern cities where winter has become government and Hearthhold sends parties north with oil and fire-charms, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+View from the northern road toward an ice-locked city gate frozen mid-closing, a small tribute cairn left at the road in the foreground.
+SUBJECT DETAILS
+* Gate leaves caught half shut, thick with ice
+* Towers cracked from the cold, icicles hanging from battlements
+* Frozen processional of citizens in the street seen as ice-glazed figures
+* Tribute cairn of offerings on the old road
+* Small party with oil flasks and fire-charms leaving offering, backs turned
+* Wind-sculpted snow drifts
+* Thin horizontal sky strokes
+HUMAN ACTIVITY
+* Three small figures place an offering on the cairn
+* Frozen citizens stand still in the gate
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "In the north, winter has become government. Cities that once held tens of thousands stand ice-locked, their gates frozen mid-closing. Towers crack in the cold. Courts, offices, processions, and taxes continue in forms no living citizen would recognize. Hearthhold sends parties north with oil, fire-charms, and instructions to leave tribute on the old road. No one agrees who first made that bargain. The snow covers ruin with clean hands. It heals nothing."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Silent, bureaucratic cold.
+Specific pitfalls to avoid:
+* Not Visath's spire or the Frost Bailiff avenue (interior street) or Hearthhold.
+* Citizens stay distant and static, no ghoulish detail.
+* No dragons.
+* No glow or aurora.
 ```
 
 ### 5. The Sun-Drowned
@@ -390,12 +795,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE SUN-DROWNED - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Sun-Drowned (1.3 The Dying Lands / 1.3.2 The Six Climates of Ruin), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Sun-Drowned, the southern dunes that have climbed over the richest realms, dotted with tomb-cities, salt flats and unburied dead, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide shot across a dune sea toward tomb-cities breaking the horizon like teeth; a half-uncovered enthroned corpse in the foreground, salt flats glittering where a harbour stood.
+SUBJECT DETAILS
+* Tomb-city pyramids and spires jutting from the horizon
+* Salt flat with stranded ship ribs where a harbour once stood
+* Half-buried throne with an armoured, embalmed corpse sitting upright, wind-scoured
+* Wind-ripples in dunes drawn as fine parallel lines
+* A few Saltspire guides and travellers in head-wraps leading pack animals (mules)
+* Bleached bones and broken statuary
+* Heat shimmer as sparse vertical lines
+HUMAN ACTIVITY
+* Three small travellers trudge along a dune crest with a guide leading
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "South of the broken mountains, the dunes have climbed over the wealthiest realms the world ever boasted of. Tomb-cities of the priest-kings break the horizon like teeth. Salt flats glitter where harbours stood. The desert leaves the dead in sight, enthroned, armoured, embalmed, or half-uncovered by wind. Saltspire's ledgers call the southern routes profitable. Its guides call them damned and charge for the difference. Under the sand, sealed courts keep their lamps lit."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Scorched and sepulchral.
+Specific pitfalls to avoid:
+* Not the Cursed Colossus, Sunken Kings tomb or Saltspire bastion.
+* Do not draw glinting colour or sun-disc flares.
+* No camels (not in source) - use mules or nothing.
+* Dead remain objects, not reanimated.
 ```
 
 ### 6. The Mire
@@ -404,12 +825,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE MIRE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Mire (1.3 The Dying Lands / 1.3.2 The Six Climates of Ruin), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Mire, the southeastern swamps where rivers give out, where bogs swallowed roads and the dead drift below the walkways, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Water-level view along a plank walkway through a drowned village; mangroves grow through the roofs of stilt-houses, pale shapes drift beneath the surface.
+SUBJECT DETAILS
+* Leaning stilt-houses over dark water
+* Mangrove roots bursting through a roof
+* Plank walkway with missing boards
+* Water that looks shallow but opens in a darker circle
+* Pale drifting shapes beneath the surface (faces, hands) in fine lines
+* Reeds, floating weed, hanging moss, a heron-like bird
+* A lantern on a pole, unlit
+HUMAN ACTIVITY
+* A lone toll-ferryman poles a flat boat in the far distance, tiny
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Where the southern rivers gave out before the sea, the swamps inherited the rest, spreading across the world's south-eastern lowlands. Bogs swallowed roads. Mangroves grew through village roofs. Stilt-houses lean over water that looks shallow until it opens. Reedmarch survives by toll, ferry, leechcraft, and denial. The hag-courts hold the deep fen, and they keep older bargains than any Bastion will admit to honouring. Everyone there knows The Mire is rising. No one profits from saying it aloud. The dead drift below the walkways. Sometimes they drift back."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Damp, patient and quietly rising.
+Specific pitfalls to avoid:
+* Not Reedmarch itself (no barges, council hall or toll bridges) and not Vossegar's cathedral.
+* Dead shapes ambiguous and faint, no horror close-ups.
+* No lettering.
+* Not the Blighted Heartwood or Titan fen scenes.
 ```
 
 ## Bastions (6)
@@ -477,12 +914,29 @@ The finished artwork should be exceptionally detailed yet visually readable, wit
 
 ```text
 SABLEKEEP - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Sablekeep (1.3 The Dying Lands / 1.3.3 The Six Bastions), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Sablekeep, a fortified chapel-town built into the throat of a ruined imperial city where the Ashlands meet the eastern forest, ruled by the Sable Watch, which survives by burning, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+View from the straight imperial road looking up at the chapel-town climbing terraces in the throat of the ruined city; braziers burning at every gate, bridge and chapel window.
+SUBJECT DETAILS
+* Terraced chapel-town in dark stone with narrow buttresses and a bell turret
+* Lower terraces resting on the bones of an older temple, some arches oddly shaped, almost rib-like, but not clearly bones
+* Consecrated braziers on iron stands at gates, bridges and windows, flames drawn as ink strokes
+* Ruined imperial city walls and colonnades rising behind
+* Eastern forest edge pressing on one flank
+* Gate with a bridge over a dry cut and warrior-priests in dark cloaks on watch
+* Smoke rising in thin lines
+HUMAN ACTIVITY
+* Warrior-priests tend braziers at the gate, small
+* A column of travellers approaches on the road
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Sablekeep is a fortified chapel-town built into the throat of a ruined imperial city, where the Ashlands meet the eastern edge of the forest and the old roads run straight on into the dead empire. It survives by burning. Consecrated braziers stand at every gate, bridge, and chapel window. They are never permitted to go out. The lower terraces rest on the bones of an older temple, and the bones are not all the right shape."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Austere, fanatical vigilance against the dead city.
+Specific pitfalls to avoid:
+* Not a standard castle; a chapel-town crowded on terraces.
+* Do not show readable emblems of the Watch.
+* No Hearthhold-like central fire or Deepwarden gate.
+* No bones shown explicitly as skeletons.
 ```
 
 ### 3. Deepwarden
@@ -491,12 +945,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DEEPWARDEN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Deepwarden (1.3 The Dying Lands / 1.3.3 The Six Bastions), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Deepwarden, a sealed mining city carved into the foothills of the broken mountains, which survived by closing its great gate and now lives in upper terraces above the Dark, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+View from the upper terraces down over the sealed great gate and into a black void below, the Dark; forge smoke rising behind and lantern lights dotted across the terraces.
+SUBJECT DETAILS
+* Carved terraces and stairways cut into rock with stone balustrades
+* The great gate sealed, a vast iron-bound stone door set in a gorge
+* The Dark below as an abyss of solid black, with a few tiny lantern points
+* Forge chimneys and smoke columns
+* Lantern Council members with lanterns of consecrated flame on poles
+* Mining cranes, tram tracks and ore carts
+* Dwarven masonry with heavy lintels, no readable text
+HUMAN ACTIVITY
+* Small figures with lanterns cross the terraces
+* A guard watches the sealed gate from a parapet
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Deepwarden is a sealed mining city carved into the foothills of the broken mountains. It survived the Fall by closing its great gate. Half the city was on the wrong side when it closed. The half that survived now lives in the upper terraces above what its people call simply the Dark."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Austere, hard and shadowed.
+Specific pitfalls to avoid:
+* Not the ch.7 forge interior.
+* No visible creatures in the Dark.
+* Not a stone castle on a hill.
+* Gate closed, not open or being closed.
 ```
 
 ### 4. Hearthhold
@@ -505,12 +976,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 HEARTHHOLD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Hearthhold (1.3 The Dying Lands / 1.3.3 The Six Bastions), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Hearthhold, a walled town in the high north built around the Great Hearth that has burned unbroken since the Fall; the smallest, poorest and bravest Bastion, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Interior view across a snowy square toward the Great Hearth, a vast stone fire-pit and chimney with a side-chamber chapel; a ring of walls and training ground behind.
+SUBJECT DETAILS
+* Great Hearth: massive stone hearth under a tall chimney, flames drawn in ink
+* Fire-watchers in furs feeding it with logs and peat
+* A child handed a log to feed the flame
+* Side-chamber chapel with a small arched door
+* Snow-covered roofs, icicles and walls around, wall-top training ground
+* Stacked fuel, hand-carts and ladders
+* Banner of the Hearth Marshal without readable device
+HUMAN ACTIVITY
+* Fire-watchers tend the Hearth in shifts
+* Children carry logs
+* A sentry walks the wall
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Hearthhold is a walled town in the high north, built around the Great Hearth that has burned without interruption since the Fall. If the Hearth goes out, Hearthhold dies: first the children, then the elderly, then everyone. Every resident takes a turn on the fire-watch. Children are taught to feed the flame before they are taught to read."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Fragile warmth against the northern dark.
+Specific pitfalls to avoid:
+* Not the Pale City climate view.
+* No glow rays from fire, use ink.
+* Not a luxurious hall; poor and cramped.
+* No lettering.
 ```
 
 ### 5. Saltspire
@@ -519,12 +1008,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SALTSPIRE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Saltspire (1.3 The Dying Lands / 1.3.3 The Six Bastions), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Saltspire, a tower-city built around a deep sacred well at the centre of an oasis ringed by salt-pans and the bones of older cities; wealthy and hated, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Distant approach across salt-pans toward a cluster of tall towers around the oasis; caravans in the foreground, the sacred well-head at the heart.
+SUBJECT DETAILS
+* Slender tower-city of stacked towers with narrow windows around a central well-house
+* Oasis palms and a green belt around the walls
+* Salt-pans in geometric basins with raking crusts
+* Bones of older cities as broken columns on the plain
+* Mercenary and nomad guards on towers
+* Water-carrier lines and cistern tops
+* Caravan of mules and carts at the gate
+HUMAN ACTIVITY
+* Caravan approaches the gate
+* Guards watch from towers
+* Water-bearers walk in a line
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Saltspire is a tower-city built around a deep, sacred well at the centre of an oasis ringed by salt-pans and the bones of older cities. It has the only reliable water for a hundred miles. This makes it wealthy. It also makes it hated."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Wealthy, parched and resented.
+Specific pitfalls to avoid:
+* Not a bare small oasis camp (that is the Oasis Raiders scenario).
+* No visible dunes monsters.
+* Do not depict the well being sounded.
+* Not Reedmarch or Sablekeep silhouettes.
 ```
 
 ### 6. Reedmarch
@@ -533,12 +1040,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 REEDMARCH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Reedmarch (1.3 The Dying Lands / 1.3.3 The Six Bastions), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Reedmarch, a stilt-town raised over log pilings on barges, ferry platforms and toll bridges; the only crossing for 30 miles, populated by ferrymen, smugglers, leech-tenders and corpse-haulers, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Water-level view from a ferry at the toll bridge, looking at the stilt-town with its patchwork of platforms and barges; a barge hall repositioned in the middle.
+SUBJECT DETAILS
+* Log pilings and plank platforms with huts and ladders
+* Toll bridges with a rope-and-pulley gate and chain
+* Barge carrying a hall with a shingled roof (Marsh Council hall)
+* Corpse-hauler barge with covered bundles
+* Leech tanks and apothecary stalls on platforms
+* Reeds, hanging nets and ferry ropes
+* Smugglers' skiff moored at pilings
+HUMAN ACTIVITY
+* Ferrymen pole barges
+* A corpse-hauler unloads bundles
+* A toll-keeper counts coin on a bridge
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Reedmarch is a stilt-town raised over log pilings on a network of barges, ferry platforms, and toll bridges. It is the only crossing for 30 miles in any direction. Its people are ferrymen, smugglers, apothecaries, leech-tenders, and corpse-haulers. They know what is buried under their floors. They prefer not to discuss it."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Murky commerce above buried secrets.
+Specific pitfalls to avoid:
+* Not the Mire climate swamp scene (that is a drowned village, no town).
+* No clear view of what is under the floors.
+* Not a stone town.
+* No lettering.
 ```
 
 ## Ancestries (11)
@@ -551,13 +1076,26 @@ Printed 1.9 in wide · aspect 2:3. Family framing: Single full-length adventurer
 
 ```text
 HUMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Human (6. Your Adventuring Party / 6.9 Ancestries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Human adventurer, medium-sized, the plain short-lived 'striver' people who persist where steadier peoples fail, shown as a traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view mid-stride along a rutted road, walking staff planted ahead, head turned back over the shoulder toward unseen pursuit.
 A human traveller of a Bastion in layered road clothes with a pack, walking staff and short sword; ordinary, weathered and determined.
+SUBJECT DETAILS
+* Layered road clothes: patched tunic, belted over-coat, hooded mantle pushed back
+* Walking staff of plain ash, scuffed iron ferrule
+* Short sword in a worn scabbard at the left hip
+* Travel pack with bedroll and tin cup lashed on
+* Ordinary unremarkable face, stubble, weathered skin, determined set jaw
+* Mud-caked boots and frayed hem
+* No horns, fur, scales or pointed ears: wholly ordinary proportions
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Humans are short-lived strivers who raise fragile things in a brutal world and call the result civilization. They learn fast, adapt faster, and persist in places that wear steadier peoples down to nothing."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Plain weathered resolve, a small life walking through a vast dying land.
+Specific pitfalls to avoid:
+* No exotic features: the Human must look unmarked beside the other ancestries.
+* No armour plate or heroic pose: this is a traveller, not a Fighter.
+* Do not copy the Elf's long cloak or the Halfling's hood.
 ```
 
 ### 2. Halfling
@@ -566,13 +1104,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 HALFLING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Halfling (6. Your Adventuring Party / 6.9 Ancestries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Halfling adventurer, small-sized, hearth-and-hidden-roads folk who survive by staying unseen, shown as a capable traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view, crouched low behind a broken wall top, sling hand drawn back, eyes alert over the edge.
 A halfling traveller in a hooded cloak with a sling, a well-kept pack and a cooking pot, alert and capable.
+SUBJECT DETAILS
+* Child-sized body with adult proportions: stocky limbs, broad round face, no beard
+* Deep hooded cloak with mended hem
+* Leather sling with a round stone, other stones in a belt pouch
+* Well-kept pack with a small cooking pot and ladle tied on the outside
+* Bare, hairy-topped feet or light soft boots
+* Wall coursing and weeds that show the small scale
+* Wary but calm expression
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Halflings keep to hearth smoke and hidden roads, and to the quiet wisdom of staying alive while larger folk blunder into the dark. They are small and quick, and far harder to break than strangers ever expect."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Quiet alertness, hearth-smoke practicality in a hostile place.
+Specific pitfalls to avoid:
+* Do not make it a cute child or cartoon: adult, grounded proportions.
+* No pointed ears (that is Elf/Gnome territory).
+* Do not stand it beside nothing; the wall must show it is small.
+* No sword: its kit is sling, pack and pot.
 ```
 
 ### 3. Dwarf ◐
@@ -581,12 +1133,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DWARF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Dwarf (6. Your Adventuring Party / 6.9 Ancestries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Dwarf adventurer, medium-sized but broad and heavy, from sealed stone halls and old craft traditions, shown as a hardened traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view, braced wide-stanced at the top of a descending stair, lantern held forward into the dark in one hand, shield and handaxe ready in the other.
+SUBJECT DETAILS
+* Very broad shoulders, short thick limbs, stocky frame, shorter than the Human but heavier
+* Long braided beard with metal rings, heavy brow, deep-set eyes used to the dark
+* Heavy mail or plated chest armour worn with ease, scuffed and re-riveted
+* Round shield on forearm, handaxe in hand
+* Lantern with a shuttered iron housing
+* Thick hobnailed boots planted on worn stone steps
+* Stone-cut craftsmanship in belt buckle and axe head
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Dwarves are cut from sealed stone halls, old grudges, and craft traditions older than most fallen kingdoms. Hardship did not sour them so much as harden them, and little in this world meets one of them head-on and walks away whole."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Granite stubbornness, a person built to be struck and remain standing.
+Specific pitfalls to avoid:
+* Not a comic dwarf: serious proportions, no oversized hat or cartoon nose.
+* No horned helmet.
+* Do not give it a greataxe (that is the Orc adventurer's kit).
+* Keep it clearly shorter than the Elf and Orc.
 ```
 
 ### 4. Elf
@@ -595,13 +1161,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ELF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Elf (6. Your Adventuring Party / 6.9 Ancestries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of an Elf adventurer, medium-sized, tall and lean, a graceful, long-memoried traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view standing at ease at the edge of a wood, longbow lowered in one hand, head tilted as if listening, one hand resting on the quiver.
 An elf traveller, tall and lean, in a long weathered cloak with a longbow and quiver, calm and watchful.
+SUBJECT DETAILS
+* Tall, lean build with long limbs and a long neck
+* Long pointed ears swept back, high cheekbones, calm eyes that notice much
+* Long weathered travelling cloak, faded and mended, pinned at one shoulder
+* Longbow taller than the Halfling's whole body, quiver of fletched arrows
+* Soft boots and bracers; light, unfussy kit
+* Fine, sparse hair loose or in a narrow braid
+* Sparse leaf litter and a trunk behind to show the forest home
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Elves are shaped by older forests and longer memories, and carry a grace that seems almost inhuman to the hurried peoples of the age. They move lightly, notice much, and bear the weight of beauty and loss without letting it show."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Elegiac grace, beauty and loss held back behind composure.
+Specific pitfalls to avoid:
+* Not a Deep Elf: pale skin and dark armour belong to that entry, here keep light open clothes.
+* Do not pose it drawing the bow: it is at ease.
+* Avoid glowing or magical effects.
+* No heavy armour.
 ```
 
 ### 5. Gnome
@@ -610,13 +1190,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GNOME - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gnome (6. Your Adventuring Party / 6.9 Ancestries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Gnome adventurer, small-sized, a clever, precise tinkerer drawn to dangerous devices, shown as a traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view kneeling at a stone door-plate or trap mechanism, eyepiece lens flipped down, probing it with a thin tool while a small crossbow hangs ready on the back.
 A gnome traveller with tinkering tools and lenses on a bandolier, a small crossbow and a heavy satchel.
+SUBJECT DETAILS
+* Child-sized, adult-faced, large nose and bright magnified eye behind a flip-down lens
+* Bandolier of tinkering tools, picks, lenses and small screwdrivers
+* Small crossbow slung across the back
+* Heavy satchel bulging with coils of wire and cogs
+* Ink-stained leather gloves, apron over practical clothes
+* Lightly goggled cap or hood, neat tidy clothing
+* Mechanism with gears showing that it is a trap or lock
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Gnomes hold that every lock, mechanism, and buried device hides a lesson, and that the lesson is usually worth the risk of learning it. They are clever and precise, drawn to the exact dangers that sensible folk step around."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Absorbed curiosity, a happy student of lethal things.
+Specific pitfalls to avoid:
+* Do not turn it into a steampunk robot or give it huge goggles beyond one lens.
+* Do not duplicate the Halfling's sling and cloak silhouette.
+* Keep proportions grounded, not toy-like.
 ```
 
 ### 6. Goblin
@@ -625,13 +1218,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GOBLIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Goblin (6. Your Adventuring Party / 6.9 Ancestries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Goblin adventurer, small-sized, quick of hand and foot, shown as a hired hero in a Bastion's employ (an ally, not a raider), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view slipping around a corner, lantern held out and low in one hand, short blade pointed back down the passage in the other, ready to dodge.
 A goblin adventurer in a Bastion's employ: patched but well-kept leathers, a short blade and lantern, wary intelligence in the face; clearly a hired hero, not a raider.
+SUBJECT DETAILS
+* Child-sized body, long pointed ears, large expressive eyes, wide mouth showing a tooth
+* Patched but carefully kept leather jerkin and trousers
+* Short blade with a clean bright edge, lantern with a good wick
+* Bastion livery scrap or a plain tabard end tucked at the belt, no lettering
+* Alert intelligent face, wary rather than malicious
+* Belt with pouches and a coil of cord
+* Bare lean forearms, long clever fingers
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Goblins learn fast hands and quicker feet, and the plain truth that the weak survive by being where the blow is not. They fight mean, flee smart, and take every edge a hard world leaves lying about."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Wary intelligence, a survivor who chooses where the blow is not.
+Specific pitfalls to avoid:
+* Must not read as the Goblin monster: no notched blade, no sling of river stones, no mob, no crude trophies.
+* No hunched malicious snarl.
+* Clean, repaired clothing, not rags.
 ```
 
 ### 7. Orc
@@ -640,13 +1246,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ORC - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Orc (6. Your Adventuring Party / 6.9 Ancestries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of an Orc adventurer, medium-sized and very powerfully built, shown as a sworn hireling in a Bastion's service (not a raider), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view standing composed and squared on a ridge road at rest, one hand on the haft of a greataxe slung over the back, gaze steady on the horizon.
 An orc adventurer in a Bastion's employ: heavy travel-worn armour, a greataxe slung, scarred but composed; a sworn hireling, not a raider.
+SUBJECT DETAILS
+* Huge shoulders, thick neck, grey skin scarred in old lines across cheek and forearm
+* Heavy lower tusks, but a composed controlled expression
+* Heavy travel-worn armour: studded breastplate, pauldrons, battered vambraces, kept oiled
+* Greataxe slung across the back, haft visible over the shoulder
+* Plain Bastion tabard worn over the armour, no lettering
+* Wide boots, belt with plain pouches
+* No trophies on display
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Orcs are raised where weakness is punished at once and hesitation is never forgotten. Strength, momentum, and raw nerve have carried them this far, and they trust those three further than they trust subtlety."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Disciplined restraint, strength held in check.
+Specific pitfalls to avoid:
+* Must not read as the Orc monster: no snarl, no trophies, no cleaver, no shield wall.
+* No ragged furs.
+* Do not put the axe in a swinging pose.
 ```
 
 ### 8. Ratkin
@@ -655,13 +1274,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 RATKIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ratkin (6. Your Adventuring Party / 6.9 Ancestries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Ratkin adventurer, small-sized, quick and swarming folk of refuse heaps and warrens, shown as a hired hero in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view hunkered on a low brick ledge, one hand cradling a scavenged tool, head tilted with nose and whiskers working.
 A ratkin adventurer in a hooded cloak and Bastion tabard, satchel of scavenged tools, bright watchful eyes; a hired hero, not a scavenger.
+SUBJECT DETAILS
+* Child-sized body with a rat-like muzzle, long whiskers, round ears and bright watchful eyes
+* Long scaly tail curled around the feet
+* Hooded cloak open over a Bastion tabard with no lettering
+* Satchel of scavenged tools: pliers, hooks, a small crowbar, rolls of cord
+* Sharp front teeth showing
+* Clawed but dextrous hands
+* Cleaned, mended clothing
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Ratkin come up from refuse heaps, tunnel warrens, and plague-alleys where numbers, speed, and hunger settled every argument. They know how to scatter, swarm, and strike where the enemy is already bleeding."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Alert hunger tamed into service.
+Specific pitfalls to avoid:
+* Do not make it a plague-ridden scavenger or a monster Ratkin Warrior or Scavenger.
+* No weapons raised: this is an alert hero, not an attack.
+* Do not draw it as a literal rat: upright, humanoid, clothed.
 ```
 
 ### 9. Deep Elf
@@ -670,13 +1302,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DEEP ELF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Deep Elf (6. Your Adventuring Party / 6.9 Ancestries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Deep Elf adventurer, medium-sized, an outcast of the cruel night-bred branch of the elder blood who has come to the surface as a hireling, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view stepping out of a dark archway into daylight, one hand raised against the glare under a deep hood, curved blade held low in the other.
 A deep elf adventurer who has come to the surface: pale skin, a hood pulled against daylight, fine dark armour and a curved blade; an outcast hireling, not a warrior of the deep courts.
+SUBJECT DETAILS
+* Pale skin, long pointed ears, slim graceful build, narrow shadowed eyes
+* Deep hood pulled low against daylight, scarf at the throat
+* Fine dark armour: close-fitted scale or lamellar with plain trim, no court heraldry
+* Curved single-edged blade with a plain grip
+* Shadow cast long behind it, archway behind in solid black
+* Gloved hands, long cloak edge
+* Controlled, wary expression
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Deep elves are a crueller branch of the elder blood, raised on night, venom, and treachery taught as a fine art. They are graceful and dangerous, and far more at ease beneath the dark than beneath the sun."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Elegant discomfort, a creature of night enduring the sun.
+Specific pitfalls to avoid:
+* Not the Deep Elf Warrior or Priest monster: no ceremonial armour, no crescent glaive, no sigil staff.
+* Not a light-cloaked surface Elf: keep dark gear and hood.
+* No spider imagery.
 ```
 
 ### 10. Demonborn
@@ -685,13 +1330,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DEMONBORN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Demonborn (6. Your Adventuring Party / 6.9 Ancestries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Demonborn adventurer, medium-sized, of infernal-stained blood, shown as a plain-cloaked pilgrim traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view standing before a barred wooden door, one hand lifting the latch, cloak parted behind to show a tail, face turned to the viewer.
 A demonborn traveller with small horns, a tail and ember-like eyes, dressed in a plain pilgrim's cloak.
+SUBJECT DETAILS
+* Small curved horns breaking through the hair
+* Slender barbed tail emerging from under the pilgrim cloak hem
+* Eyes drawn as dark rings with a tiny white point, unlit and without glow
+* Plain pilgrim's cloak, rope belt, simple staff or satchel slung
+* Calm, slightly world-weary face
+* Warm hands, slightly long dark nails
+* Door closed against them as a visual hint
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Something infernal stains the demonborn line, whether by old pact, curse, or ancestral trespass. Doors do not open for them, but fire parts, fear bends, and darker powers sometimes answer when they are called."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Quiet apartness, the face of someone doors never open for.
+Specific pitfalls to avoid:
+* No bat wings, hooves or fiery body: it is a person with horns and a tail.
+* No fire effects or glow.
+* Do not give it a weapon raised or demonic pose.
+* Not an Imp or Demon monster.
 ```
 
 ### 11. Drakeblood
@@ -700,13 +1359,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DRAKEBLOOD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Drakeblood (6. Your Adventuring Party / 6.9 Ancestries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Drakeblood adventurer, medium-sized, carrying the remnant of an older dragon majesty in the blood, shown as a heavily cloaked traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view braced low in a gale, spear levelled forward, thick cloak whipped back to expose scaled hands and jaw.
 A drakeblood traveller with scaled skin along jaw and hands and a ridge of small horns, in a heavy cloak with a spear.
+SUBJECT DETAILS
+* Fine scales along the jaw, neck and backs of the hands, smoother skin elsewhere
+* Ridge of small horns on the brow and crown, no wings, no tail needed
+* Heavy travelling cloak and plain leather harness
+* Spear with a worn socketed head
+* Slitted watchful eyes, strong jaw
+* Scattered dry grass and blown cloak edge showing the wind
+* Dignified proud posture
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The drakeblood carry the remnant of an older majesty in the blood, as blessing, burden, or half-remembered debt. The world is fallen, but power still answers them in the old language of flame, storm, and scale."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Fallen majesty carried with stubborn pride.
+Specific pitfalls to avoid:
+* No breath weapon, flame or elemental effect.
+* No wings or full dragon head: person with draconic traits.
+* Do not copy the Demonborn's horns-plus-tail look: use ridge horns and scales.
+* Not a Lizardfolk monster.
 ```
 
 ## Backgrounds (20)
@@ -719,12 +1392,25 @@ Printed 1.6 in wide · aspect 1:1. Family framing: A small still life of the too
 
 ```text
 FARMER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Farmer (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Farmer background: callused, stubborn labour from hard ground; starting kit Sickle and Bandages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on a weathered plank, three-quarter overhead view, a sickle laid diagonally across a bundle of cut wheat beside a wad of linen bandages.
+SUBJECT DETAILS
+* Curved sickle with a worn wooden handle and a nicked blade
+* Cut sheaf of ears of grain tied with twine
+* Roll of coarse linen bandages
+* Cracked leather work glove, worn thin
+* Clod of earth and a few stray stalks
+* Wooden plank table with knots and scratches
+* Small iron-bound wooden bucket edge at the rear
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A farmer grows up with callused hands, stubborn habits, and the certain knowledge that work hurts and stops for no one. Hard ground built them a thicker frame than most wandering blades will ever earn."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Humble labour, quiet and hard.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No blood on the bandages.
+* Not the Merchant's sickle with coin.
 ```
 
 ### 2. Nomad
@@ -733,12 +1419,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 NOMAD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Nomad (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Nomad background: a crosser of hard country; starting kit Scimitar, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life against a dry ground, a scimitar propped in a rolled hide tent bundle beside a travel waterskin, seen from slightly above.
+SUBJECT DETAILS
+* Curved scimitar in a plain worn scabbard, half-drawn
+* Rolled felt or hide shelter bundle bound with cords
+* Cracked leather waterskin with a wooden stopper
+* Wind-worn cloak or scarf folded on top
+* Small bronze cooking pot with a handle
+* Dry grass tuft and a cracked flat stone for ground
+* Short walking stick lashed beside
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A nomad crosses hard country under open skies, surviving where the roads fail and shelter is never promised. The land that grinds others down only taught them its lessons."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Windswept self-reliance.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No camels or horses.
+* Do not make the sword ornate.
 ```
 
 ### 3. Sailor
@@ -747,12 +1446,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SAILOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Sailor (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Sailor background: balance on wet planks; starting kit Rope, Shortsword, Buckler, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on a wet plank deck section, a coiled rope in the foreground with a shortsword and a round buckler leaning on a belaying pin rail.
+SUBJECT DETAILS
+* Heavy coil of thick rope with a neat whipped end
+* Straight shortsword with a plain crossguard
+* Small round buckler with a central boss, scuffed
+* Wooden belaying pin rail with a second rope hanging
+* Puddle drips and wet plank grain
+* Barnacle or salt crust on the iron
+* Knotted rope with a marlinspike nearby
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A sailor learns balance on wet planks and danger under bad skies, shaped by rope, spray, and labour that does not wait on the weather. They keep their feet and keep moving while steadier folk go down."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Salt-stained seasoned tension.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No ships, no sea monster.
+* Not a cutlass pirate cliche.
 ```
 
 ### 4. Soldier
@@ -761,12 +1473,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SOLDIER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Soldier (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Soldier background: discipline in war; starting kit Spear, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life, a tall spear leaning against a battered kit chest, a folded surcoat and a dented cap of iron hanging on the spear shaft.
+SUBJECT DETAILS
+* Spear with a leaf-shaped head and a worn ash shaft
+* Dented open kettle helm hung on the shaft
+* Folded plain surcoat with no heraldry
+* Iron-bound kit chest with a worn lock
+* Hobnailed boots set neatly beside
+* Whetstone and a rag on the chest lid
+* Worn belt with an empty scabbard loop
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A soldier marched where they were told and fought when they were ordered, and learned that discipline keeps people alive longer than courage alone. War has settled into them now, and sits easy on the shoulders."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Weary order, war settled easily on the shoulders.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No banners with symbols.
+* Not the Fighter class's kit.
 ```
 
 ### 5. Smuggler
@@ -775,12 +1500,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SMUGGLER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Smuggler (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Smuggler background: false bottoms and whispered routes; starting kit Dagger and Lockpicks, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life of a barrel with a false lid half-lifted, a dagger and a roll of lockpicks laid across it, seen at a low angle.
+SUBJECT DETAILS
+* Small barrel with a hinged hidden compartment lid open and a rolled pouch inside
+* Slender dagger with a plain grip
+* Roll of lockpicks unrolled showing thin hooks and tension wrenches
+* Lantern shuttered to a slit
+* Rope-bound crate corner and sacking
+* Chalk mark of a route on the wood, no lettering
+* Knotted purse hung in shadow
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A smuggler lives by false bottoms, whispered routes, and the craft of keeping valuable things out of dangerous hands. Stealth is not a flourish to them. It is the trade that buys supper."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Furtive and well-practised.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No coins spilled, keep it understated.
+* Do not copy the Rogue's kit tableau.
 ```
 
 ### 6. Courier
@@ -789,12 +1527,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 COURIER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Courier (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Courier background: speed over broken roads; starting kit Shortbow, +1 SPD, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life, a shortbow with an unstrung loop leaning against a satchel and a sealed scroll case, mud-spattered boots beside.
+SUBJECT DETAILS
+* Shortbow of laminated wood, bowstring wound on the limb
+* Leather dispatch satchel with a buckle and a wax seal
+* Waxed message tube with a sealed cap
+* Mud-spattered light boots, laced high
+* Worn cloak folded and pinned
+* Quiver of a few arrows
+* Horseshoe nail or milestone fragment
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A courier carried news, coin, or secrets across broken roads and worse weather, for patrons who paid for speed and asked no questions. Speed was never a convenience. It was the difference between arriving and being found later."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hurried urgency held still.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No horse.
+* Not identical in arrangement to the Scout still life: favour the satchel and boots.
 ```
 
 ### 7. Scout
@@ -803,12 +1554,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCOUT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scout (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Scout background: reading ground, distance and silence; starting kit Shortbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on moss and leaf litter, a shortbow laid across a small bundle of tracking sign: a snapped twig, a clay-cast animal print, and a folded cloak.
+SUBJECT DETAILS
+* Shortbow with a leather grip, resting on leaf litter
+* Snapped branch tip and bent grass blades
+* Plaster-pressed animal paw print on a flat stone
+* Camouflage hood and cloak folded
+* Small hand-compass or horn spyglass
+* Bone-handled sheath knife
+* Tiny dried herb bundle on a thong
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A scout lived ahead of the line, where a broken branch or a fresh print decided whether the column ate or buried. They read ground, distance, and silence better than most people read letters."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Silent attention, a fresh sign read in an instant.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* Do not repeat the Courier's satchel and scroll tube.
+* No animal in the picture.
 ```
 
 ### 8. Performer
@@ -817,12 +1581,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 PERFORMER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Performer (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Performer background: crowd-turning wit; starting kit 3 Throwing Knives, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on a small trestle stage edge, three throwing knives fanned beside a battered mask and a pair of jingling bells.
+SUBJECT DETAILS
+* Three slim throwing knives fanned with points outward
+* Half-face theatrical mask, cracked and mended
+* Bells on a strap
+* Folded motley cloth patchwork
+* Lute or flute with a broken string
+* Tattered curtain edge
+* Painted target board with knife marks behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A performer survived on wit, nerve, and the knack of making a crowd look where they wanted. Stage, tavern, or market square, they learned how attention is turned into a weapon."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Faded festivity, glamour gone threadbare.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No clown caricature.
+* Mask must have no printed expression text or letters.
 ```
 
 ### 9. Artisan
@@ -831,12 +1608,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ARTISAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Artisan (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of an Artisan background: patient craft; starting kit Hammer, Masterwork item, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life of a workbench corner, a hammer resting on an anvil face beside a half-finished shield boss and a tray of fine files.
+SUBJECT DETAILS
+* Smith's hammer with a worn haft
+* Small anvil with a bright polished face
+* Half-finished iron shield boss on the bench
+* Tray of files, punches and chisels
+* Leather apron hung on a peg
+* Calipers and a scribe line on the steel
+* Sparse quench-bucket edge
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "An artisan spent years making useful things with patient hands and a careful eye. The craft taught them the worth of good tools and good steel, and of work done properly the first time, because a second time is rarely offered."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Patient care for good steel.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No forge fire glow.
+* Do not make it a full armoury.
 ```
 
 ### 10. Scholar
@@ -845,12 +1635,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCHOLAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scholar (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Scholar background: knowledge in a dying world; starting kit Quarterstaff, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life of a leaning quarterstaff against a heavy reading desk covered with stacked books, loose diagrams and a spectacle case.
+SUBJECT DETAILS
+* Plain quarterstaff with a leather-wrapped grip
+* Stacked books with clasped bindings
+* Loose sheets of ruled diagrams without legible text
+* Candle stub in a brass holder
+* Quill and inkpot
+* Rolled map held by a weight
+* Spectacles folded on a book
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A scholar lived among books, diagrams, and arguments, and the stubborn belief that knowledge matters even in a dying world. Where others see only rubble, they read the record of how it came to fall."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Quiet obsessive study among ruins.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No legible writing: marks must be scribbled lines.
+* No spellcasting effects.
 ```
 
 ### 11. Apprentice
@@ -859,12 +1662,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 APPRENTICE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Apprentice (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of an Apprentice background: scraps of craft from a harsh master; starting kit is only 1c (non-Martial classes gain Max NRG, Martial ones gain scrolls), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life of a wooden stool with a master's oversized coat hung over it, a scorched practice post stump, a small candle and a single copied page.
+SUBJECT DETAILS
+* Oversized worn coat sleeve hanging beyond the stool
+* Practice wand or knotted twig, scorched at the tip
+* Small candle in a clay dish, unlit
+* Simple scroll with scribbled marks no letters
+* Chalk-drawn circle on stone floor
+* Small cloth purse with one coin
+* Scorch marks on the stone
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "An apprentice served beneath someone wiser, crueller, or more dangerous than themselves, and took what scraps of the craft they could. Even unfinished training leaves marks that never quite fade."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Unfinished promise and scorched inexperience.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No glow.
+* Do not make it a full spell effect.
 ```
 
 ### 12. Alchemist
@@ -873,12 +1689,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ALCHEMIST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Alchemist (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of an Alchemist background: fire, acid and tincture; starting kit 2 Acid (Phosphoric), 2 Healing Potions, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on a stained bench, two small stoppered healing flasks and two clay acid vials in a wooden rack, a mortar and a brass scale beside.
+SUBJECT DETAILS
+* Two round-bottomed glass flasks of healing tincture, corked
+* Two ceramic stoppered acid pots with wax seals
+* Wooden rack with five slots
+* Stone mortar and pestle with powder
+* Small brass balance scale
+* Leather satchel hanging open
+* Burn and acid pits scarring the bench
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "An alchemist learned that fire, acid, tincture, and powder solve problems steel cannot reach. Their satchel never quite loses the smell of copper, ash, and the next mistake."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cautious chemical menace, copper and ash.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No bubbling glow or smoke.
+* No poison skull symbols.
 ```
 
 ### 13. Believer
@@ -887,12 +1716,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BELIEVER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Believer (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Believer background: faith kept in a hard age; starting kit 3 Holy Water, Lantern, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on a stone shelf, a lit lantern stands beside three small stoppered vials of holy water; a worn prayer cord hangs from the lantern.
+SUBJECT DETAILS
+* Horn-paned or glass lantern with a small flame
+* Three narrow stoppered vials, one tilted
+* Knotted prayer cord with wooden beads
+* Small plain devotional shape (a bare sun-disc) scratched, no text
+* Shallow stone shelf in a niche
+* Candle drips
+* Folded cloth
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A believer kept faith in a world that rewards it rarely, and learned that courage spreads as readily as panic. People stand straighter when they believe something is still watching from above."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Quiet steady hope.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No halo glow beyond the lamp flame.
+* No specific real-world religious symbols.
 ```
 
 ### 14. Hermit
@@ -901,12 +1743,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 HERMIT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Hermit (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Hermit background: solitary silence; starting kit Quarterstaff, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life at a cave mouth or hut doorstep, a gnarled staff leaning beside a tin cup and a bowl, a single stool and a cold fire ring.
+SUBJECT DETAILS
+* Gnarled staff with a knotted top
+* Tin cup and wooden bowl, empty
+* Cold ring of fire stones
+* Rough threadbare robe over a stump
+* Dried herbs strung on a line
+* Single stool, worn smooth
+* Distant lone tree through a gap in the stones
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A hermit withdrew from the world, or was left behind by it. Silence, hunger, and long solitude taught them to listen for older truths and to depend on no one."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Utter solitude, bare and silent.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No companion animals.
+* Do not add a hut interior full of clutter.
 ```
 
 ### 15. Cultist
@@ -915,12 +1770,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CULTIST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Cultist (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Cultist background: service at a darker altar; starting kit Dagger, Torch, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on a stained stone altar slab, a dagger laid across a torch with a tattered hooded robe hanging over the edge, candle stubs and a bowl.
+SUBJECT DETAILS
+* Straight dagger with a dark stained blade
+* Unlit torch with soot-black head
+* Tattered hooded robe with a rope belt
+* Empty shallow bowl with dark residue
+* Candle stubs melted into the slab
+* Abstract scratched circle sigil, no letters
+* Chain with a broken pendant
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A cultist served a darker altar once, out of terror, conviction, or need. Whatever they walked away from, part of it still answers when blood is spilled."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Lingering unease and shame.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No gore or blood pools.
+* No skull pileup, no readable rune text.
 ```
 
 ### 16. Shepherd
@@ -929,12 +1797,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SHEPHERD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Shepherd (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Shepherd background: watching helpless things; starting kit Sling, Quarterstaff, Bandages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on a fence rail or stone wall, a sling with stones, a crook-topped quarterstaff and a roll of bandages beside a bell.
+SUBJECT DETAILS
+* Leather sling with a pouch and a round stone
+* Quarterstaff with a hooked crook top
+* Roll of bandages tied with twine
+* Small iron sheep bell on a strap
+* Pile of smooth river stones
+* Wool tuft caught on the fence
+* Wooden fence post and distant lone hill suggested
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A shepherd watched helpless things for long hours and learned how predators move, wait, and choose. The surest way to live is to be the least tempting thing in the field."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Patient pastoral calm with an edge of wariness.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No sheep.
+* Not identical to the Hermit's staff.
 ```
 
 ### 17. Merchant
@@ -943,12 +1824,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 MERCHANT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Merchant (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Merchant background: value and leverage; starting kit Sickle, increased Luck, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on a counting table, a sickle laid by an open coin ledger, a balance scale holding coins and a locked strongbox behind.
+SUBJECT DETAILS
+* Small sickle with a polished blade
+* Brass balance scale with coin in one pan
+* Small stack of coins, plain discs
+* Iron-bound strongbox with a heavy lock
+* Open ledger with abstract ruled columns, no letters
+* Wax seal and a pen
+* Drawn purse strings
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A merchant learned value, leverage, and the quiet power of knowing what desperate people will pay. Coin is never only money to them. It is movement, influence, and another season behind the walls."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Calculated mercantile caution.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No ledger text.
+* Not the Farmer's sickle arrangement.
 ```
 
 ### 18. Noble
@@ -957,12 +1851,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 NOBLE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Noble (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Noble background: banners, debts and inherited expectation; starting kit Rapier, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life of a rapier laid across a faded velvet cushion on a carved table, a dusty signet ring and a threadbare banner edge hanging behind.
+SUBJECT DETAILS
+* Slender rapier with a swept hilt
+* Faded velvet cushion with moth holes
+* Signet ring with a blank face
+* Tattered family banner with a plain stripe, no readable device
+* Cracked wine goblet
+* Carved chair back with worn gilding
+* Dust motes via fine stipple
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A noble was raised among banners, debts, and inherited expectation. The fortune may be broken now, but privilege leaves marks the world is slow to forget."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Faded grandeur, once-fine things in decay.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No crown.
+* No readable heraldry or text.
 ```
 
 ### 19. Pauper
@@ -971,12 +1878,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 PAUPER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Pauper (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Pauper background: hunger and want; starting kit Club, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on bare ground, a crude knobbed club leaning on a cracked clay bowl beside a heel of bread and a ragged blanket.
+SUBJECT DETAILS
+* Crude wooden club with a knobbed head
+* Cracked clay bowl with a crust
+* Ragged patched blanket
+* Single worn shoe
+* Rusty tin cup
+* Cobblestone gutter detail
+* Rope-belted sack
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A pauper came up from the bottom, where every crust and every coin had to be fought for. Want made them wiry, stubborn, and stubbornly hard to finish."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Bare want and stubborn survival.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No pity beggar poses.
+* Do not add coins.
 ```
 
 ### 20. Vagabond
@@ -985,12 +1905,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 VAGABOND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Vagabond (6. Your Adventuring Party / 6.10 Backgrounds), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Vagabond background: road to road with no roots; starting kit Bandages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on a roadside milestone, a bundle on a stick, a roll of bandages and a dice cup perched beside a half-burned stub of candle.
+SUBJECT DETAILS
+* Bundle-on-a-stick with a knotted cloth
+* Roll of bandages
+* Dice and a small cup
+* Patched cloak thrown over the stone
+* Boot with a flapping sole
+* Wild hare snare loop of cord
+* Crossroads milestone worn blank
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A vagabond drifted from road to road with no roots deep enough to hold them anywhere. Luck, instinct, and shameless persistence carried them further than skill alone ever should have."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Rootless drift and ruined luck.
+Specific pitfalls to avoid:
+* No figure or hands, and no lettering.
+* No signpost lettering.
+* Do not duplicate Hermit/Pauper compositions.
 ```
 
 ## Classes (12)
@@ -1003,12 +1936,25 @@ Printed 1.9 in wide · aspect 2:3. Family framing: Single full-length adventurer
 
 ```text
 FIGHTER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Fighter (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Fighter, Martial class: drilled, line-holding soldier of fortune; packages of Shortsword, Targe, Ring Shirt, Dagger, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view braced low behind a small round targe at a ruined gate, shortsword held back over the hip, taking an unseen charge.
+SUBJECT DETAILS
+* Ring shirt (mail of linked rings) over a padded arming coat
+* Targe: small round shield with a central boss, edge dented
+* Plain shortsword, single-handed, held ready
+* Dagger on belt
+* Open-faced helm or coif, no visor
+* Stance planted wide, weight forward, knuckles white
+* Scuffs and rust on mail, boots braced on cracked flagstones
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when holding it is the only thing that matters. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Stoic resolve, the last thing between the line and collapse.
+Specific pitfalls to avoid:
+* Not heavy plate: ring shirt only.
+* Do not give it a two-handed weapon (that is the Berserker or Ravager package).
+* No flourish or duel pose.
 ```
 
 ### 2. Berserker
@@ -1017,12 +1963,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BERSERKER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Berserker (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Berserker, Martial class: pain-numbed frenzied fighter; packages of Morningstar, Hide Cuirass, Handaxe, Club, Targe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view mid-leap charge, mouth open in a roar, morningstar raised high overhead in one hand and handaxe in the other.
+SUBJECT DETAILS
+* Hide cuirass (boiled hide breastplate) over bare, scarred arms
+* Morningstar: spiked mace head on a short haft
+* Handaxe in the off hand
+* Wild matted hair and braids streaming back
+* Old scars and ritual paint lines on the chest and forearms
+* Torn trousers with bare, taped shins
+* Dust and gravel flying from a hard push-off
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Berserker learned early that restraint is no shield. Pain becomes familiar, then distant, until nothing is left in the noise but the fight itself. When the violence starts, they meet it with nothing held back."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Unrestrained fury barely held in a human frame.
+Specific pitfalls to avoid:
+* No horned helm or fantasy barbarian cliche.
+* No gore.
+* Not a monster: still human proportions.
+* Do not make it a shield user.
 ```
 
 ### 3. Rogue
@@ -1031,12 +1991,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ROGUE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Rogue (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Rogue, Martial class: scarcity-bred taker of chances; packages of Rapier, Daggers, Shortbow, Lockpicks, Smokestick, Caltrops, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view crouched at a barred door, lockpicks working in the keyhole, head turned over the shoulder to watch the corridor, rapier hilt at the hip.
+SUBJECT DETAILS
+* Leather coat with a turned-up collar, patched at elbows
+* Lockpicks held delicately between fingers
+* Rapier on left hip, two daggers in the belt
+* Smokestick tucked into a bandolier
+* Soft leather boots for silence
+* Hood back, sharp watchful eyes
+* Pouches, a coil of rope, and a few caltrops on the floor
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Rogue is bred in scarcity, where chances come rarely and are never handed over. Locks, shadows, and blind corners become tools long before anyone calls them a trade. A Rogue learns to take what is needed and be elsewhere before the loss is noticed."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Tense stealth, a thief moments from being caught.
+Specific pitfalls to avoid:
+* Not the Assassin: no bow, no venom, no ambush pose.
+* No mask clichés.
+* Do not show the rapier drawn.
 ```
 
 ### 4. Assassin
@@ -1045,12 +2018,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ASSASSIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Assassin (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of an Assassin, Martial class: patient killer who waits for certainty; packages of Shortbow, Dagger, Rapier, Basic Venom, Smokestick, Grappling Hook, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view pressed against a broken pillar in dim light, dagger in reverse grip held low, head turned toward an unseen target.
+SUBJECT DETAILS
+* Close-fitting hooded gambeson or leather coat in dark tones
+* Dagger in reverse grip with its edge dulled dark
+* Vial of venom corked at the belt
+* Shortbow slung across the back, unstrung or quiet
+* Smokestick and coiled grappling hook with a rope
+* Face half shadowed by the hood, calm cold eyes
+* Silent soft boots on dusty stone
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "An Assassin is built on patience and certainty. They watch, wait, and act only when the outcome is assured. Most fights are avoided. The rest are ended quickly."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold patience, a held breath.
+Specific pitfalls to avoid:
+* Not the Rogue: no lockpicking, no open crouch.
+* Do not show the target or gore.
+* No cape-flourish pose.
+* No glowing poison.
 ```
 
 ### 5. Ranger
@@ -1059,12 +2046,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 RANGER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ranger (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Ranger, Hybrid class: ground-reader and strike-from-distance hunter; packages of Shortbow, Elven Dagger, Elven Spear, Hide Cuirass, Snares, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view standing tall at a forest edge, shortbow drawn to the cheek, eyes narrowed on a far target, cloak edge stirring.
+SUBJECT DETAILS
+* Leather coat with a hooded cloak and a green-grey faded tone suggested by hatching
+* Shortbow at full draw, arrow at the cheek
+* Elven dagger at the belt
+* Quiver on the hip, snares coiled at the belt
+* Fletching and bracers worn and mended
+* Boots with sinew-bound tops, mud-flecked
+* Trunks and ferns behind, depth by thinning lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Ranger is schooled by ground that kills the careless. Tracks, wind, and distance tell them what others miss entirely. They learn to act before danger closes the gap, and to strike from where the enemy cannot answer."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Focused calm of a hunter at full draw.
+Specific pitfalls to avoid:
+* Not the Assassin: no hooded crouch, no dagger-first pose.
+* No animals companion.
+* Do not give it a sword.
 ```
 
 ### 6. Cleric
@@ -1073,12 +2073,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CLERIC - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Cleric (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Cleric, Caster class: faith kept in silence; packages of Mace, Targe, Ring Shirt, Quarterstaff, Holy Water, Bandages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view kneeling in prayer on one knee amid fallen masonry, mace laid across the thigh and head bowed.
+SUBJECT DETAILS
+* Ring shirt under a plain habit-like surcoat with a bare circle mark
+* Flanged mace laid across the knee
+* Targe slung on the back
+* Satchel with bandages and a small stoppered vial
+* Rosary-like prayer cord wound around a wrist
+* Tonsured or cropped hair, solemn face
+* Rubble and a broken statue plinth behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Cleric keeps the faith long after letting it go would be easier. They have knelt in the silence where an answer should be and spoken the words anyway. Now and then something answers, and that is reason enough to kneel again."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Tired devotion in an unanswering silence.
+Specific pitfalls to avoid:
+* Not the Paladin: no oath-sword, no standing knight pose.
+* No glowing hands or halo.
+* No book as primary prop.
 ```
 
 ### 7. Paladin
@@ -1087,12 +2100,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 PALADIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Paladin (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Paladin, Hybrid class: bearer of an unbending oath; packages of Mace, Longsword, Targe, Ring Shirt, Quarterstaff, Gambeson, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view standing upright at a ruined chapel doorway, longsword planted point-down before the feet, both hands folded on the pommel, head bowed.
+SUBJECT DETAILS
+* Ring shirt with a worn surcoat of cloth, torn but clean, no readable device
+* Longsword with a plain cross-guard, point resting in cracked flagstones
+* Targe slung on the left arm or back
+* Healer's kit pouch on the belt
+* Bare-headed with cropped hair or a helm hung at the belt
+* Strong shoulders squared, face composed
+* Broken arch behind, rays of sparse horizontal sky lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Paladin is bound to a promise that does not bend, in an age that breaks promises for sport. Oaths weigh more than steel, and keeping one costs more than strength. Most let theirs go. A Paladin does not."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Unyielding vow, grave dignity.
+Specific pitfalls to avoid:
+* Not the Cleric: no kneeling, no mace.
+* No glowing sword or wings.
+* No full plate.
 ```
 
 ### 8. Wizard
@@ -1101,12 +2127,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 WIZARD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Wizard (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Wizard, Caster class: scholar of rebuilt power; packages of Quarterstaff, Magnifying Glass, Torches, Elven Dagger, Sling, Scroll of Arcane Bolt, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view standing under a torch, one hand raising a small scroll to a magnifying glass held in the other, staff tucked under the arm.
+SUBJECT DETAILS
+* Long layered robe, scuffed hem, ink stains on sleeves
+* Quarterstaff under the arm
+* Round magnifying glass with a brass rim
+* Scroll partly unrolled, filled with abstract scribbles, no letters
+* Satchel and book strap across the chest
+* Elven dagger at the belt
+* Thin face, a short beard or cropped grey hair, squinting
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Wizard is formed through study that most would not endure. Fragments of knowledge, careful notes, and repeated failure shape their craft. Power is taken apart, understood, and rebuilt with precision."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Intent scholarly obsession.
+Specific pitfalls to avoid:
+* Not the Sorcerer or Psion: no spell effects or levitation.
+* No pointy star-covered hat.
+* No glowing orbs.
 ```
 
 ### 9. Psion
@@ -1115,12 +2154,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 PSION - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Psion (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Psion, Caster class: thought sharpened into a weapon; packages of Dagger, Hide Cuirass, Targe, Throwing Knives, Gambeson, Quarterstaff, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view standing very still with one hand extended, palm out, while three throwing knives hang in the air in front, points turned outward.
+SUBJECT DETAILS
+* Three throwing knives suspended in the air at slightly staggered heights
+* Gambeson or hide cuirass, plain and tight
+* Dagger sheathed at the belt
+* Eyes closed or blank white pupils
+* Hair lifting slightly as in a hush of wind
+* Gaunt face, taut jaw, veins at the temple
+* Stillness: no movement lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Psion turns inward until thought itself sharpens into a weapon, paring away everything that does not serve. What others fight to hold steady, a Psion bends to plain intent. The discipline is not so much chosen as survived."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Disciplined stillness bordering on pain.
+Specific pitfalls to avoid:
+* No glowing eyes or auras.
+* Not the Wizard: no staff, no books.
+* Do not draw telekinetic arcs or lines; just suspended knives.
 ```
 
 ### 10. Trickster
@@ -1129,12 +2181,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TRICKSTER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Trickster (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Trickster, Hybrid class: shaper of belief and illusion; packages of Elven Rapier, Shortbow, Elven Dagger, Smokestick, Caltrops, Lockpicks, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view sidestepping a blow with a flourish, rapier flicked out in a feint, trailing cloak flap, smoke curling at the feet.
+SUBJECT DETAILS
+* Elven rapier with a swept hilt in a feinting line
+* Leather coat with ornate stitching and mismatched cuffs
+* Smokestick burning at the belt, thin wisp rising
+* Small bag of caltrops at the hip
+* A faint extra outline (a second, thinner-line copy) of the same figure just behind the shoulder
+* Sly half-smile, tilted head
+* Light dancing footwork, one heel lifted
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Trickster survives by shaping what others take for true. Fact matters less than belief, and belief can be steered. They learn to move freely through the confusion they have already laid down."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Poised mischief, the moment before everyone looks the wrong way.
+Specific pitfalls to avoid:
+* Not the Rogue: no lockpicking, no crouch.
+* Do not draw two solid figures: the double must be pale line only.
+* No jester costume or mask.
 ```
 
 ### 11. Sorcerer
@@ -1143,12 +2208,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SORCERER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Sorcerer (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Sorcerer, Caster class: carrier of unasked-for power; packages of Quarterstaff, Dagger, Sling, Gambeson, Bandages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view bracing against its own power, one arm extended with a palm facing the viewer and a small crackling arc of ink-drawn lightning, the other hand clamping the bandaged forearm.
+SUBJECT DETAILS
+* Bandaged forearms, old scars and fresh dressings
+* Hair and cloak flung back by unseen wind
+* Plain gambeson, torn sleeve
+* Sling and dagger at belt
+* Wide eyes with solid-black pupils and a thin white ring
+* Veins or branching marks on the neck
+* Lightning rendered as sharp black zigzag strokes, not glow
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Sorcerer is handed power they never asked to carry. It comes fast and demands to be spent, and left to fester it consumes the one who holds it. Spent well, it can settle everything in a single breath."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Perilous overflowing strength.
+Specific pitfalls to avoid:
+* Not the Wizard: no scrolls, no magnifier, no staff pose.
+* No glowing aura.
+* No gore.
 ```
 
 ### 12. Druid
@@ -1157,12 +2235,25 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DRUID - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Druid (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Druid, Caster class: servant of the world's slow reclamation; packages of Quarterstaff, Club, Wooden Shield, Sling, Elven Sickle, Leather Coat, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view standing barefoot in tall grass, staff planted in one hand and the other palm open and low, a crow perched on the staff head.
+SUBJECT DETAILS
+* Leather coat covered in lichen stains and patched with bark-like cloth
+* Quarterstaff carved with root-like twists
+* Sprig crown of leaves and a few small twigs in the hair
+* Sickle at the belt
+* Bare feet in grass, vines curling round the staff
+* Weather-lined face, calm eyes
+* Tall grass and distant trunks, rain lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Druid knows the world was never owned by those who built upon it. Stone cracks, root spreads, and time takes everything back into the dark soil. A Druid has seen that plainly, and chosen to serve it rather than resist it."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Calm ancient certainty.
+Specific pitfalls to avoid:
+* Not the Tier 3 tradition image: no bark skin or antlers.
+* No animal companion beyond the crow.
+* No glowing magic.
 ```
 
 ## Equipment (2)
@@ -1175,13 +2266,27 @@ Printed 2.6 in wide · aspect 3:2. Family framing: Still-life arrangement of the
 
 ```text
 7.6 TREASURE TABLES - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of 7.6 Treasure Tables (7. Equipment and Items), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Treasure in the Dying Lands is never clean: coin and relics come from hoards, vaults and the dead, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life on a stone slab at slight elevation: a rotted purse spilling tarnished coins beside a skeletal hand, a mud-caked crown, a cracked reliquary and a salt-crusted signet ring.
 A still life of grim treasure: a rotted purse spilling tarnished coins beside a skeletal hand, a mud-caked crown, a cracked reliquary and a salt-crusted signet ring.
+SUBJECT DETAILS
+* Rotted leather purse with a frayed drawstring spilling coins
+* Skeletal hand with finger bones curled near the coins
+* Mud-caked crown with dull gems and a bent circlet
+* Cracked reliquary box with a missing hinge
+* Salt-crusted signet ring on a stone
+* Coins stippled to feel dull, no readable stamps
+* Cobweb, grave dirt and a spilled bone button
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Treasure in the Dying Lands is never clean. Coin comes from burial hoards, failed relief columns, chapel vaults, drowned roads, damned shrines, dead merchants, broken armies, and rooms sealed by people who feared being found. A purse is often the last record of a life. A crown may have passed through dirt, blood, ash, salt water, and another thief's stomach before it reaches a living hand."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Greedy and grave-soiled.
+Specific pitfalls to avoid:
+* Not the Magic traditions still life or the melee weapon still life.
+* No readable coin inscriptions.
+* No glinting sparkle effects.
+* No gore.
 ```
 
 ### 2. 7.8 Melee Weapons
@@ -1190,13 +2295,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 7.8 MELEE WEAPONS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of 7.8 Melee Weapons (7. Equipment and Items), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Salvaged arms from an older wider world that reach the Dying Lands as trade goods through Saltspire and Reedmarch, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Still life laid out on a sacking cloth viewed from above at an angle: a long-bladed messer, notched swordbreaker, throwing cross, bladed scourge, weighted cord and hook-and-chain, spaced evenly.
 A still life of salvaged arms laid on sacking: a long-bladed messer, a notched swordbreaker, a throwing cross, a bladed scourge, a weighted cord and a hook-and-chain.
+SUBJECT DETAILS
+* Langes messer: long single-edged blade with a nagel-style hilt
+* Swordbreaker with a notched back and a heavy guard
+* Throwing cross: four-armed bladed star-cross
+* Bladed scourge: multiple lashes ending in small blades
+* Weighted cord with a heavy ball at one end, coiled
+* Hook-and-chain: a long chain ending in a barbed hook
+* Burlap sack texture, a trader's tag as a blank rectangle, rope bindings
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Many of the arms below carry names from an older, wider world than the Bastions now remember: the long-bladed messer, the notched swordbreaker, the throwing cross, the bladed scourge, the weighted cord, and the hook-and-chain. They reach the Dying Lands as salvage, tribute, and trade goods, carried up the southern routes through Saltspire and bartered onward through Reedmarch. How a blade is named changes nothing about how it cuts. Each is listed here under the name the traders used."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Matter-of-fact salvage with dangerous elegance.
+Specific pitfalls to avoid:
+* Not the treasure still life.
+* Only the six named weapons, no extras like swords of legend.
+* No readable maker's marks.
+* No gore or blood.
 ```
 
 ## Spell and power tiers (15)
@@ -1209,13 +2328,26 @@ Printed 1.6 in wide · aspect 1:1. Family framing: Small emblematic vignette of 
 
 ```text
 TIER 1 ARCANE SPELLS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Arcane Spells (d20) (8. Powers and Traditions / 8.3 Arcane Spells), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Arcane Spells: the first lessons of any surviving academy (Arcane Bolt, Burning Hands, Ice Ray, Force Push, Phase Step), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A young apprentice at a scarred practice post, conjuring a small flame in one hand while a shimmer of force bends the air before the other hand; three-quarter view, mid-height.
 A young apprentice at a scarred practice post conjuring a small flame in one hand while a shimmer of force bends the air before the other.
+SUBJECT DETAILS
+* Apprentice in a plain, too-large robe with chalk and ink stains
+* Practice post with chopped and scorched marks
+* Small flame drawn as a single clean ink flame cupped in the palm
+* Air distortion drawn as bent parallel lines before the other palm
+* Training yard with cracked flagstones and a rack of straw targets
+* Anxious concentrated face, tongue-tip between teeth
+* A battered wooden staff leaning on the post
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The first lessons any surviving academy still teaches: force, fire, and the manipulation of what the eye reports. Apprentices roll for what their masters had time to pass on."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Nervous promise, academy ruin in the background.
+Specific pitfalls to avoid:
+* No lettering on tome pages or scrolls: marks only as abstract scribble.
+* Not a grown Wizard: young, small and unsure.
+* No big fireball or lightning.
 ```
 
 ### 2. Tier 2 Arcane Spells (d20)
@@ -1224,13 +2356,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 2 ARCANE SPELLS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Arcane Spells (d20) (8. Powers and Traditions / 8.3 Arcane Spells), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Arcane Spells: wartime spells copied from libraries since burned (Fireball, Haste, Blink, Sleep, Dispel), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A wizard hurriedly copying a spell from a scorched tome by candlelight while the library behind burns; wide interior view, wizard in the foreground.
 A wizard hurriedly copying a spell from a scorched tome by candlelight while the library behind them burns.
+SUBJECT DETAILS
+* Hunched figure at a lectern with a quill and a single guttering candle
+* Scorched open tome with charred edges and unreadable marks
+* Tall bookshelves in the rear shown burning in tall ink flames and black smoke
+* Falling embers drawn as stipples
+* Spilled ink pot and loose pages
+* Arched vaulted ceiling cracked
+* Face lit from one side, sweating, wide eyes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Beyond the apprentice work lie the spells that bent the old empire's wars. Each was copied from a library that has since burned."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Frantic last-minute rescue of knowledge.
+Specific pitfalls to avoid:
+* No lettering on tome pages or scrolls: marks only as abstract scribble.
+* Do not draw a spell effect from the wizard.
+* Keep the fire behind the figure, not on it.
 ```
 
 ### 3. Tier 3 Arcane Spells (d20)
@@ -1239,13 +2384,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 3 ARCANE SPELLS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Arcane Spells (d20) (8. Powers and Traditions / 8.3 Arcane Spells), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Arcane Spells: the spells the towers killed to keep (Meteor Impact, Disintegrate, Time Break, Reality Warp), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A wizard sifting ash and cipher-scraps among robed corpses on the floor of a ruined tower, a sealed book clutched to their chest; high-angle view into the chamber.
 A wizard sifting ash and cipher-scraps among robed corpses on the floor of a ruined tower, a sealed book clutched to their chest.
+SUBJECT DETAILS
+* Standing wizard in tattered robes, one hand holding a sealed book bound with chains and a lock
+* Robed corpses sprawled on a fractured mosaic floor
+* Drifting ash and ink-scrap pieces
+* Broken stair and a collapsed vault
+* Burned shelf and a toppled orrery frame
+* Wary glance upward at the broken roof
+* Light from the broken roof in hard diagonal hatch
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "These are the spells the towers killed to keep. What a wizard recovers at this tier, they recover from ash, ciphers, and the dead."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Grim scavenger's triumph over a tomb of scholars.
+Specific pitfalls to avoid:
+* No lettering on tome pages or scrolls: marks only as abstract scribble.
+* No gore or visible wounds on the corpses.
+* Do not make the wizard heroic.
 ```
 
 ### 4. Tier 1 Divine Prayers (d20)
@@ -1254,13 +2412,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 1 DIVINE PRAYERS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Divine Prayers (d20) (8. Powers and Traditions / 8.4 Divine Prayers), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Divine Prayers: plain mercies (Sacred Flame, Guiding Light, Healing Touch, Blessing, Sanctuary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A priest raising a lantern whose light falls on a wounded soldier, the wound visibly knitting closed; mid-shot, both figures in a ruined chapel aisle.
 A priest raising a lantern whose light falls on a wounded soldier, the wound visibly knitting closed.
+SUBJECT DETAILS
+* Priest in a plain habit with a hooded head, lantern held high
+* Soldier seated against a column, bandaged arm in lantern light
+* Wound drawn as a long line fading to fine hairlines
+* Cone of light drawn with sparse straight radiating strokes
+* Broken pews and a cracked altar rail
+* Dust motes as stippling
+* Weary but tender expressions
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The plainest mercies the surviving faiths can still call down: light, mending, and the courage to stand one more round."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Small hard-won mercy.
+Specific pitfalls to avoid:
+* No halo or glow wash: light shown only with line and white space.
+* No lettering on the lantern.
+* No visible gore.
 ```
 
 ### 5. Tier 2 Divine Prayers (d20)
@@ -1269,13 +2440,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 2 DIVINE PRAYERS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Divine Prayers (d20) (8. Powers and Traditions / 8.4 Divine Prayers), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Divine Prayers: prayers answered less often and at greater cost (Radiant Burst, Circle of Protection, Guardian Angel, Benediction), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A weary cleric kneeling at a cracked roadside shrine beside a ledger of offerings, candles guttering; low side view.
 A weary cleric kneeling at a cracked roadside shrine beside a ledger of offerings, candles guttering.
+SUBJECT DETAILS
+* Kneeling cleric, hood back, head bowed
+* Cracked stone shrine with a toppled statue
+* Open ledger with abstract ruled lines on a flat stone
+* Row of guttering candles and a few coins in a dish
+* Roadside weeds and dusk sky with sparse hatching
+* Satchel and travel-worn boots
+* Rain streaks beginning
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Prayers answered less often and at greater cost. The gods that remain are listening, but they are tired, and they keep accounts."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Tired devotion paying a debt.
+Specific pitfalls to avoid:
+* No lettering on tome pages or scrolls: marks only as abstract scribble.
+* No visible deity or angel.
+* No spell effects.
 ```
 
 ### 6. Tier 3 Divine Prayers (d20)
@@ -1284,13 +2468,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 3 DIVINE PRAYERS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Divine Prayers (d20) (8. Powers and Traditions / 8.4 Divine Prayers), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Divine Prayers: prayers demanded rather than asked (Divine Wrath, Heaven's Spear, Resurrection Light, Sunburst), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A priest with arms raised on a hilltop, demanding, as a vast ambiguous shape takes form in the storm clouds above; low angle looking up.
 A priest with arms raised on a hilltop, demanding, as a vast ambiguous shape takes form in the storm clouds above.
+SUBJECT DETAILS
+* Small silhouette on a barren hilltop, robes whipped by wind
+* Arms thrown wide, head tipped back
+* Storm clouds drawn as dense swirling crosshatch
+* A vast, ambiguous form in the clouds: shoulders, perhaps a hand, not a clear face
+* Beams of sparse straight lines breaking from the cloud
+* Bare thorn trees on the ridge
+* Tiny discarded staff at the priest's feet
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "At this height a prayer is not asked but demanded, and something always answers. Whether it is the god prayed to is a question the devout do not raise aloud."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Awed, uneasy audacity.
+Specific pitfalls to avoid:
+* Do not resolve the cloud shape into a clear god or angel.
+* No lettering or symbol.
+* Do not make the priest triumphant.
 ```
 
 ### 7. Tier 1 Sorceries (d20)
@@ -1299,13 +2496,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 1 SORCERIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Sorceries (d20) (8. Powers and Traditions / 8.5 Sorceries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Sorceries: cheap blood workings that never fail (Chaos Bolt, Bloodspark, Scorch Step, Ember Net), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A close view of a sorcerer's cut palm, drops of blood rising and twisting into a small crackling spark; close-up cropped to hand and forearm.
 A close view of a sorcerer's cut palm, drops of blood rising and twisting into a small crackling spark.
+SUBJECT DETAILS
+* Open palm with a shallow cut
+* Drops of blood rising as small black teardrops
+* A spark of ink-drawn jagged lines at the apex
+* Old scars across the wrist and forearm
+* Thin bandage strip unwound
+* A bit of the sorcerer's jaw and shadow at edge
+* Plain sleeve rolled to the elbow
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Sorcery does not study. It bleeds. These first workings cost little blood and never fail, which is how they teach the unwary to want more."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hushed, intimate peril.
+Specific pitfalls to avoid:
+* No gore pools or wound close-up detail.
+* No glowing wash.
+* Do not show a face fully.
 ```
 
 ### 8. Tier 2 Sorceries (d20)
@@ -1314,13 +2524,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 2 SORCERIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Sorceries (d20) (8. Powers and Traditions / 8.5 Sorceries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Sorceries: the price climbs with the power (Volatile Fireball, Chain Shock, Stormskin, Shardstorm), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A gaunt sorcerer with scar-laddered forearms channelling a crackling storm between their hands; three-quarter view, standing braced.
 A gaunt sorcerer with scar-laddered forearms channelling a crackling storm between their hands.
+SUBJECT DETAILS
+* Forearms bare, with ladder-like rows of old scars
+* Gaunt hollow-cheeked face
+* Storm drawn as a knot of hard black jagged lightning between the hands
+* Hair and tattered sleeves flaring outward
+* Cracked flagstone floor under braced feet
+* Fresh drops of blood on the wrists
+* Dark robes in torn layers
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The price climbs with the power. A sorcerer who reaches this tier has already learned what their veins are worth and decided it a fair trade."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hungry electric tension.
+Specific pitfalls to avoid:
+* No glow wash.
+* Not a Tier 3 consumed look: body intact.
+* Do not copy Tier 1's palm close-up.
 ```
 
 ### 9. Tier 3 Sorceries (d20)
@@ -1329,13 +2552,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 3 SORCERIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Sorceries (d20) (8. Powers and Traditions / 8.5 Sorceries), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Sorceries: workings that do not care whether the caster survives (Catastrophe Sphere, Gravity Collapse, Ashen Vortex, Meteor Line), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A sorcerer half-consumed by their own working, a vortex of force tearing up the ground, villagers praying on their knees at a safe distance; wide view with the sorcerer centre.
 A sorcerer half-consumed by their own working, a vortex of force tearing up the ground, villagers praying on their knees at a safe distance.
+SUBJECT DETAILS
+* Sorcerer lit from within by white-line cracks across skin, body partly dissolving to ash flecks
+* Vortex shown as spiral crosshatching tearing a crater
+* Flying chunks of earth and flagstone
+* Kneeling villagers small in the background
+* A ruined farmstead edge
+* Cloak torn into streamers
+* Pained, resigned face
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The workings here do not care whether the caster survives them. Sorcerers who command this tier are counted among the things other people pray against."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Awful tragic grandeur.
+Specific pitfalls to avoid:
+* No gore.
+* Keep villagers small and praying, not fleeing.
+* No glow wash.
 ```
 
 ### 10. Tier 1 Druidic Rituals (d20)
@@ -1344,13 +2580,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 1 DRUIDIC RITUALS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Druidic Rituals (d20) (8. Powers and Traditions / 8.6 Druidic Rituals), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Druidic Rituals: small agreements with root, weather and beast (Thorn Dart, Entangling Roots, Regrowth, Fog Bank), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A druid kneeling with one palm pressed to an exposed root, a hare and a crow watching, rain beginning to fall; low view at root level.
 A druid kneeling with one palm pressed to an exposed root, a hare and a crow watching, rain beginning to fall.
+SUBJECT DETAILS
+* Kneeling druid in a lichen-stained coat, hood back
+* Hand flat on a thick twisting root
+* Hare sitting alert in the foreground
+* Crow on a low branch
+* Fine slanting rain lines beginning
+* Damp moss and fern detail
+* Quarterstaff laid on the ground
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The oldest circles teach these first: the small agreements with root, weather, and beast that the Greenmark still honours."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Quiet communion.
+Specific pitfalls to avoid:
+* No magical glow.
+* Do not show full transformation.
+* Keep animals ordinary in size.
 ```
 
 ### 11. Tier 2 Druidic Rituals (d20)
@@ -1359,13 +2608,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 2 DRUIDIC RITUALS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Druidic Rituals (d20) (8. Powers and Traditions / 8.6 Druidic Rituals), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Druidic Rituals: speaking the wild's language (Wall of Vines, Spike Growth, Summon Dire Wolf, Wild Dominion), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A druid speaking aloud as the surrounding trees bend toward them and roots heave up out of the earth; wide low view with the druid centre.
 A druid speaking aloud as the surrounding trees bend toward them and roots heave up out of the earth.
+SUBJECT DETAILS
+* Druid standing with open mouth, arms spread palm-down
+* Trees leaning inward with branches reaching like fingers
+* Roots heaving up from broken ground
+* Falling leaf scatter and flung soil in stipple
+* Ferns flattening in a ring of wind
+* Cloak flaring
+* Staff in one hand
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Here the rituals stop asking the wild for favours and begin speaking its language. The forest answers in kind, and not always gently."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Intense awakening power, unsettling beauty.
+Specific pitfalls to avoid:
+* Do not let the trees have faces.
+* No glowing aura.
+* Do not copy Tier 3's bark-skin.
 ```
 
 ### 12. Tier 3 Druidic Rituals (d20)
@@ -1374,13 +2636,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 3 DRUIDIC RITUALS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Druidic Rituals (d20) (8. Powers and Traditions / 8.6 Druidic Rituals), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Druidic Rituals: becoming a clause in the oldest contract (Avatar of the Wild, Verdant Dominion, Summon Treant, Maelstrom), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A druid half-merged with an ancient oak, bark creeping over their skin and branches rising like antlers from their head; frontal-three-quarter figure growing out of the trunk.
 A druid half-merged with an ancient oak, bark creeping over their skin and branches rising like antlers from their head.
+SUBJECT DETAILS
+* Lower body fused with the oak trunk
+* Bark texture climbing arms and chest
+* Branches forming antlers from the head
+* Face still human, eyes calm
+* Roots spreading across the ground
+* Leaves in sparse stipple
+* Dark hollow in the trunk beside
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "At this tier a druid no longer borrows from the living world. They become a clause in its oldest contract, and the world keeps its terms."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Reverent, uncanny, solemn.
+Specific pitfalls to avoid:
+* Not a Treant monster: a person fusing, not a giant.
+* No glowing eyes.
+* Do not make the face monstrous.
 ```
 
 ### 13. Tier 1 Psychic Abilities (d20)
@@ -1389,13 +2664,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 1 PSYCHIC ABILITIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Psychic Abilities (d20) (8. Powers and Traditions / 8.7 Psychic Abilities), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Psychic Abilities: the first disciplines of the unquiet mind (Telekinetic Push, Precognition, Psychic Veil, Mind Link), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A psion seated cross-legged with closed eyes, pebbles hovering in a slow ring around them and a candle flame standing perfectly still; straight-on view, symmetrical.
 A psion seated with closed eyes, pebbles hovering in a slow ring around them and a candle flame standing perfectly still.
+SUBJECT DETAILS
+* Seated figure in simple robes with closed eyes
+* Ring of eight to ten small pebbles at different heights
+* Candle with a flame drawn as a perfectly upright narrow tongue
+* Stone floor with a faint chalk circle
+* Bare monastic cell wall
+* Calm, drawn face
+* Hands resting open on the knees
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The first disciplines of the unquiet mind: to push, to read, to hold a thought steady where the world wants it scattered."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hushed stillness.
+Specific pitfalls to avoid:
+* No glowing aura.
+* No lettering in the circle.
+* Not the Psion class pose of hovering knives.
 ```
 
 ### 14. Tier 2 Psychic Abilities (d20)
@@ -1404,13 +2692,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 2 PSYCHIC ABILITIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Psychic Abilities (d20) (8. Powers and Traditions / 8.7 Psychic Abilities), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Psychic Abilities: each ability leaves a mark the psion learns to hide (Psychic Lance, Mind Control, Temporal Skew, Psychic Renewal), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A psion alone in a dark corridor, hiding a trembling hand, fine cracks of strain around their eyes; mid-shot, leaning on the wall.
 A psion alone in a dark corridor, hiding a trembling hand, fine cracks of strain around their eyes.
+SUBJECT DETAILS
+* Figure leaning on a damp stone wall
+* One hand clasped in the other to hide a tremor
+* Hairline cracks radiating from the eyes like fine crazing
+* Sweat beads and tired face
+* Long dark corridor with sparse torch bracket
+* Collar pulled high
+* Drip of dark fluid from the nose
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Deeper into the self than most minds are built to go. Each ability here leaves a mark the psion learns to hide."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Private strain and fear of being seen.
+Specific pitfalls to avoid:
+* No glow.
+* Keep the cracks as thin lines.
+* Do not draw other characters.
 ```
 
 ### 15. Tier 3 Psychic Abilities (d20)
@@ -1419,13 +2720,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TIER 3 PSYCHIC ABILITIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Psychic Abilities (d20) (8. Powers and Traditions / 8.7 Psychic Abilities), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Psychic Abilities: thought and world merge (Gravity Singularity, Reality Shear, Telekinetic Crush, Mass Domination), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A psion on a battlefield where stone steps and a wall rise from nothing at their gaze, enemies stumbling as the ground obeys the psion's thought; wide shot, psion centre-left.
 A psion on a battlefield where stone steps and a wall rise from nothing at their gaze, enemies stumbling as the ground obeys the psion's thought.
+SUBJECT DETAILS
+* Psion standing still with a locked gaze, hand slightly raised
+* Rising stone steps and a wall emerging from the ground in stacked blocks
+* Ground cracks and floating debris fragments
+* Enemy soldiers tripping and falling back
+* Dust drawn as stipple
+* Banners limp in the distance
+* Tattered coat edges lifting
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "At this tier the boundary between thought and world thins to nothing. What the psion imagines, the battlefield is briefly obliged to believe."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Terrifying calm control.
+Specific pitfalls to avoid:
+* No glow or beams.
+* Enemies are ordinary soldiers, not monsters.
+* Do not use the Tier 1 pebble ring.
 ```
 
 ## Monsters (120)
@@ -1438,13 +2752,28 @@ Printed 1.9 in wide · aspect 1:1. Family framing: Single creature, full body, t
 
 ```text
 GIANT TARANTULA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Tarantula (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Tarantula, Greenmark Skirmisher, small: a hand-span of bristled legs around a body the size of a war helm, a forest-floor venomous hunter, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low three-quarter ground view of the spider stalking across leaf litter on stilted, deliberate legs, forelegs raised, fangs lifted; a discarded war helm beside it for scale.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Exactly eight legs, jointed and tipped with small claws
+* Body the size of a war helm, hairy abdomen and cephalothorax
+* Dense bristle hairs rendered by short hatch flicks
+* Two large fangs with a bead of venom at the tips
+* Cluster of eight eyes on a small raised bump
+* Palps in front of the fangs
+* Leaf litter and a rusted iron helm for scale
+* Gripping toe-pads suggesting it can climb walls
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A hand-span of bristled legs around a body the size of a war helm, the giant tarantula stalks the Greenmark's leaf litter on stilted, deliberate steps. Its fangs weep a venom that turns a victim's muscles to wet rope. It spins no snares, preferring to run prey down and pin it where it falls. Foragers keep one eye on the canopy, because the largest specimens hunt from above and drop."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Patient, stilted menace in damp leaf litter.
+Specific pitfalls to avoid:
+* Spiders have exactly eight legs.
+* It spins no snares: no web.
+* Do not make it larger than a dog.
+* No human features.
 ```
 
 ### 2. Goblin
@@ -1453,14 +2782,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GOBLIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Goblin (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Goblin, Greenmark Minion, small: a knee-high green-grey raider of ruined steadings that fights in chittering mobs, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view, hunched and scuttling forward, notched blade out in front, with a few smaller silhouettes of its mob in the background.
 A Greenmark goblin raider with a notched blade and river-stone sling, part of a mob; hunched and malicious.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Knee-high, green-grey (rendered as heavy hatching) wiry body, all elbows and knees
+* Large pointed ears, long nose, wide mouth full of crooked teeth
+* Notched, jagged short blade in the right hand
+* Sling of river stones: leather strap and a bulging pouch of round stones on the belt
+* Rag loincloth and strips of stolen leather
+* Malicious narrowed eyes
+* Background: ruined steading wall and two or three blurred mob silhouettes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Knee-high, green-grey, and all elbows and malice, goblins infest the Greenmark's ruined steadings in chittering mobs. Each carries a notched blade and a sling of river stones, and not one will hold a line once the fight turns against it. Singly they are cowards; in numbers they are a tide. Greythorn's gate-wardens read goblin-sign in the chewed bones left along the road."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Gleeful, cowardly malice.
+Specific pitfalls to avoid:
+* Not the Goblin ancestry hero: no clean kit, no lantern, no tabard.
+* Not the Cave Goblin (blind black eyes) nor Snow Goblin (fur parka).
+* Do not give a spear (that is the Cave Goblin).
 ```
 
 ### 3. Beastman
@@ -1469,13 +2811,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BEASTMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Beastman (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Beastman, Greenmark Minion, medium: a hunched man-shape topped with the head of a goat or boar, black claws, a forest-edge warband raider, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view, bent forward and running at the forest edge, both clawed hands spread wide, head low.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Goat head with swept-back horns, slotted pupils and a beard
+* Heavy shaggy fur over a hunched human frame
+* Black claws on both hands
+* Goat-like digitigrade lower legs with hooves
+* Ragged belt of hide strips, no weapon
+* Torn ear, scarred muzzle, open snarling mouth
+* Bracken and tree trunks behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "All fur and grievance, a beastman is a hunched man-shape topped with the head of a goat or boar, its hands ending in black claws. They run the forest edge in warbands, raiding for meat and metal, and there is nothing in them that will parley. They were among the first things the burning years shaped, and they have bred true down every generation since."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Feral grievance, an animal with a grudge.
+Specific pitfalls to avoid:
+* No weapons: its attack is Claws.
+* Do not copy the Satyr Reveler (laurel crown, pipes, playful stance).
+* Do not make it a minotaur.
 ```
 
 ### 4. Bandit
@@ -1484,13 +2839,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BANDIT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Bandit (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Bandit, Greenmark Soldier, medium: a deserter or broken tithe-collector turned forest raider, fighting with shortbow from cover and shortsword up close, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view crouched behind a fallen log, shortbow at half-draw, shortsword drawn and laid within reach.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Mismatched scavenged armour: a cracked leather jerkin, one iron pauldron
+* Shortbow at half-draw with an arrow nocked
+* Shortsword on the log beside
+* Dirty hood and cloth mask pulled below the chin
+* Hungry, hard face with stubble
+* Quiver on hip, torn cloak
+* Fallen log and ferns for cover
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Not every threat in the Greenmark has claws. Bandits are deserters, broken tithe-collectors, and folk the Bastions could no longer feed, gathered under whichever of them is cruellest that season. They favour shortbows from cover and blades up close, and they fight dirtiest against anything already bleeding. A full purse or a good pauldron is reason enough."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Sullen opportunism.
+Specific pitfalls to avoid:
+* Not the Bandit Captain: no officer's cloak, no heavy crossbow.
+* Not an adventurer class: no clean kit.
+* No cheerful rogue look.
 ```
 
 ### 5. Satyr Reveler
@@ -1499,13 +2867,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SATYR REVELER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Satyr Reveler (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Satyr Reveler, Greenmark Controller, medium: a goat-legged laurel-crowned fey piper whose music floods listeners with terror or lulls them, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view capering at the edge of firelight on one hoof, pipes at the lips, curved knife thrust in the belt.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Goat legs with cloven hooves and shaggy thighs
+* Curled ram-like horns and pointed ears
+* Laurel crown, withered and brown
+* Bone-white pipes of many reeds raised to the mouth
+* Curved knife in a belt sheath
+* Bare human chest, hollow cheeks, wild grin
+* Firelight rim on one side and shallow grave mounds behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Goat-legged and laurel-crowned, the satyr reveler capers at the edge of the firelight, piping on something that was never carved from wood. The music is the weapon: it floods a listener with borrowed terror or walks them gently into the dark. Satyrs were fey once, before the long silence soured them, and their revels end now in shallow graves."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Sour, soured revelry that is not joyful.
+Specific pitfalls to avoid:
+* Not the Beastman: no claws, no hunch, no snarl.
+* Not cute: sour and haggard.
+* Pipes are not carved wood.
 ```
 
 ### 6. Briarling
@@ -1514,13 +2895,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BRIARLING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Briarling (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Briarling, Greenmark Minion, medium-sized: a hound-sized knot of animate thornwood on root-claws, a spent first line of the Antlered Warden's groves, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low side view of the creature scuttling forward on root-claws with its barbed back bristling, head down.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Body of twisted tangled wood strands with barbs
+* Four to six legs ending in root-claws
+* Hollow knothole eyes, no mouth or a split in the bark
+* Thorn spines in long and short rows along its back
+* A few withered leaves and moss tufts
+* Splinters spraying from a cracked limb
+* Mud and dead leaves under it
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A knot of animate thornwood the size of a hound, the briarling scuttles on root-claws with a low, dry rustle, and bursts in a spray of barbed splinters when it is cut down. They cluster in the deep groves the Antlered Warden keeps, spent freely as the forest's first and least-mourned line. Fire is the only sure answer to them."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+A dry, rustling, unliving menace.
+Specific pitfalls to avoid:
+* Not a dryad or a treant: no humanoid body, no face.
+* Not a real hound or animal: pure wood.
+* Do not draw flame.
 ```
 
 ### 7. Dire Wolf
@@ -1529,13 +2923,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DIRE WOLF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Dire Wolf (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Dire Wolf, Greenmark Skirmisher, medium: a pony-sized yellow-eyed pack hunter that cuts prey from the herd, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low three-quarter view of the wolf stalking forward in a crouch, head lowered, hackles raised, as another pack member's outline shows behind.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Shoulder as high as a pony, heavy powerful forequarters
+* Scarred hide with torn ear and a notch in the muzzle
+* Eyes with pale rings and dark pupils; yellow rendered as pale open ring
+* Lips curled to show long fangs
+* Thick ruffled mane and back hackles
+* Four legs only; thick paws with claws
+* Leaf litter and trees; a second blurry wolf shape behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Bigger than a pony at the shoulder, scarred and yellow-eyed, the dire wolf works the Greenmark in coordinated packs, cutting prey from the herd with grim patience. One is dangerous; a pack is a sentence on any lone traveller. They take the slow, the young, and the foolish, in that order. Greythorn's outriders do not ride alone in wolf season."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Patient, pack-coordinated threat.
+Specific pitfalls to avoid:
+* Do not make it a werewolf (no upright stance).
+* Do not copy Tundra Wolf (white coat, snow) or Blackfire Hound (flame).
+* No saddle.
 ```
 
 ### 8. Orc
@@ -1544,14 +2951,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ORC - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Orc (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Orc, Greenmark Soldier, medium: a broad, disciplined, grey-skinned raider with lower tusks and a greataxe, a warband member, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
-An orc raider of the Greenmark with crude trophies and a notched cleaver, mid-snarl, nothing like a sworn hireling.
+Full figure in three-quarter view mid-snarl, advancing with a heavy notched cleaver-like greataxe held across the body, trophies swinging from belt.
+An orc raider of the Greenmark with crude trophies and a notched greataxe, mid-snarl, nothing like a sworn hireling.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Broad as a doorway, grey skin, heavy jaw, lower tusks jutting upward
+* Greataxe with a broad, notched, cleaver-like blade
+* Crude trophies: bone strings, a skull and teeth, tied at the belt and shoulder
+* Layered hide and iron plate scraps, battered shield strapped on back
+* Scarred knuckles and brow
+* Fierce open-mouthed snarl
+* Burnt steading gate behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Broad as a doorway and built around a greataxe, the orc is the Greenmark's most disciplined raider, grey-skinned and heavy-jawed, its lower tusks jutting above a wall of shields. Where beastmen break, orcs hold their formation. A warband takes a steading methodically, gate by gate, and savours the hard fight more than the loot it wins."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Brutal confidence, a warband's anvil.
+Specific pitfalls to avoid:
+* Not the Orc ancestry hero: no tabard, no composed bearing, no clean armour.
+* Not a Bugbear (shaggy, long-armed).
+* Weapon is a greataxe, not a sword.
 ```
 
 ### 9. Bugbear
@@ -1560,13 +2980,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BUGBEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Bugbear (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Bugbear, Greenmark Soldier, medium: a seven-foot, shaggy, long-armed ambusher with a flat face and a spiked morningstar, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view rising out of bracken, long arm already swinging a spiked morningstar from arm's reach.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Seven feet tall with arms reaching to the knees
+* Shaggy fur the colour of dead bracken, drawn in long hatch lines
+* Flat face, small eyes, broad nose, wide mouth
+* Spiked morningstar with a long haft
+* Leather scraps and a belt of bones
+* Bracken and undergrowth parting around it
+* Silent poised stance
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Seven feet of shaggy, long-armed menace with a flat face and fur the colour of dead bracken, the bugbear moves through the undergrowth in a silence it has no right to. It strikes from arm's reach before its quarry knows it is there, rising out of cover with a spiked morningstar already swinging. It much prefers the ambush to the open fight. Where bugbears lair, goblins serve as their terrified scouts."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Silent, patient ambush.
+Specific pitfalls to avoid:
+* Not an Ogre: lean and long-limbed, not a hulking thing.
+* Not a Beastman: no horns or hooves.
+* Not a Blood Ape: no knuckle-walking.
 ```
 
 ### 10. Harpy
@@ -1575,13 +3008,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 HARPY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Harpy (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view perched on a broken tower crenel, wings half-spread, head thrown back mid-song, one talon gripping stone and the other clawed forward.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Woman's torso and face with ragged hair, hollow cheeks
+* Large carrion-bird wings, ragged feathers, long primaries
+* Legs of a bird of prey with hooked talons
+* Tail of dirty feathers
+* Open mouth mid-shriek, solid black
+* Filth-streaked feathers
+* Broken tower masonry and a scatter of bones
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Half-mortal and half-carrion-bird, the harpy nests in the Greenmark's broken towers and sings travellers off the road and into its talons. The song is a lure that no resolve fully shakes. Up close it is filth and hooked claws, shrieking as it rakes. Its hunger is older than the Fall, and it was never once satisfied."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Beautiful and filthy.
+Specific pitfalls to avoid:
+* Not a siren or angel: ragged and foul.
+* Keep hands human but with clawed nails; talons on feet.
+* No wing-arms confusion: wings and arms both visible.
 ```
 
 ### 11. Goblin Shaman
@@ -1590,13 +3036,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GOBLIN SHAMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Goblin Shaman (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Goblin Shaman, Greenmark Controller, small: a goblin hung with bone and crow-feather fetishes who hangs behind the mob and spits hexes, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view standing on a stump behind a mob, gnarled staff raised in one hand, other hand flinging a spit of dark hex-marks.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Knee-high goblin with a larger head and long fingers
+* Cloak of crow feathers and clinking bones
+* Gnarled staff topped with a skull and feathers
+* Necklace of finger bones
+* Headdress of antlers or bird skull
+* Hex rendered as short dark dashes from the hand
+* Mob silhouettes lower in the background
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Hung with fetishes of bone and crow-feather, the goblin shaman is the one goblin its own kind fears more than the enemy. It hangs behind the mob and spits hexes that wither courage and rot resolve. Its magic is small and spiteful, scavenged from older powers it does not begin to understand. Kill it, and the warband's nerve tends to break with it."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Petty, spiteful magic.
+Specific pitfalls to avoid:
+* Not the plain Goblin: add staff, fetishes, no sling.
+* Do not draw glow.
+* Keep it small.
 ```
 
 ### 12. Bandit Captain
@@ -1605,13 +3064,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BANDIT CAPTAIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Bandit Captain (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Bandit Captain, Greenmark Elite, medium: a commissioned-or-claiming leader in looted mail wielding a longsword and a heavy crossbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view standing with longsword levelled forward to command, heavy crossbow slung at the hip, cloak behind.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Looted mail hauberk with mismatched officer's pauldron
+* Longsword with a fine crossguard and a chipped blade
+* Heavy crossbow slung across the back or hip
+* Faded officer's sash and scarf
+* Scarred face, narrow gaze, firm jaw
+* Boots with spurs, belt of keys
+* Battered wooden crate and two dim underling silhouettes behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The bandit captain held a real commission once, or says so often enough to be believed. Armoured in looted mail and barking orders a crew will actually follow, they turn a rabble into something that fights like soldiers. They parry the first blow, answer the second, and spend their underlings freely to keep their own skin whole. Greythorn carries a standing bounty on three of them by name."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hard command.
+Specific pitfalls to avoid:
+* Not the plain Bandit: higher status, upright, armoured.
+* No ornate royal gear.
+* No horse.
 ```
 
 ### 13. Dire Bear
@@ -1620,13 +3092,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DIRE BEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Dire Bear (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Dire Bear, Greenmark Brute, large: a shaggy mountain of muscle twice a man's height, mauling with forepaws and a shield-splitting bite, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the bear reared on its hind legs, forepaws raised and swinging down, jaws open.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Twice a man's height when reared
+* Huge shaggy hide with matted fur strokes
+* Broad skull, small eyes, large teeth
+* Long curved claws on both forepaws
+* Splintered branches at its feet
+* Visible shoulder muscle and hump
+* Broken shield fragment in the dirt
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The dire bear is the Greenmark grown teeth, a shaggy mountain of muscle that stands twice a man's height and swats deadwood aside to reach whatever it has smelled. It mauls with both forepaws and finishes with a bite that splits shields. Hunters who corner one rarely walk home. It bears no malice; it is only enormous, and always hungry."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Mindless, immense force.
+Specific pitfalls to avoid:
+* Not the Gorebeak Bear: no beak or feathers.
+* Not a Werebear.
+* No malice-driven snarl: it is hungry, not evil.
 ```
 
 ### 14. Blood Ape
@@ -1635,13 +3120,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BLOOD APE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Blood Ape (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Blood Ape, Greenmark Soldier, medium: a slab-shouldered crimson-furred canopy ape that drops onto prey and hammers with both fists, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the ape swinging down from a thick branch by one long arm, other fist cocked back to pummel.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Massive shoulders, long arms, short bowed legs
+* Dense dark fur (rendered with heavy hatching) streaked with red wounds shown as pale gaps
+* Flat brutal face with heavy brow and fangs
+* Knuckled fists as big as helmets
+* Branches and hanging vines
+* Wound scars on chest
+* Leaves falling
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Slab-shouldered and crimson-furred, the blood ape knuckles through the high canopy and drops onto anything that bleeds. It fights in a building frenzy, both fists hammering faster as its own wounds mount, so the redder it grows the harder it hits. They hold the upper branches of the deep Greenmark and suffer no rival to share them."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Furious, building frenzy.
+Specific pitfalls to avoid:
+* Not a Beastman or Bugbear.
+* No weapons: it uses fists.
+* Do not draw gore.
 ```
 
 ### 15. Gorebeak Bear
@@ -1650,13 +3148,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GOREBEAK BEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gorebeak Bear (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Gorebeak Bear, Greenmark Brute, large: a stitched-looking horror with a bear's body and a great owl's head and foreclaws, with a plate-punching hooked beak, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the creature charging low through the trees, head thrust forward, hooked beak open, foreclaws raking out.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Bear's heavy body and hind legs
+* Great owl's head with a facial disk, round eyes and a hooked beak
+* Foreclaws of an owl: long curved talons
+* Feathered neck ruff blending to fur
+* Plate-pierced hook beak with a shred of armour
+* Four limbs only; no wings
+* Splintered saplings in its wake
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Body of a bear, head and foreclaws of a great owl, the gorebeak is a stitched-together horror of the deep wood, its hooked beak punching clean through plate. It pins prey with raking claws and worries at the gap until something gives. Whether the burning years made these or merely woke them, the foresters cannot agree. The argument is no comfort to the pinned."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Wrong, hybrid horror.
+Specific pitfalls to avoid:
+* No wings: it does not fly.
+* Not the Dire Bear: no reared pose, no bear head.
+* Not an owlbear cartoon.
 ```
 
 ### 16. Ogre
@@ -1665,13 +3176,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 OGRE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ogre (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Ogre, Greenmark Brute, large: a twice-man-height, slope-shouldered grey slab of muscle in stitched hides, claiming a ford with a tree-trunk great club, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view standing calf-deep in a ford, great club resting on the shoulder, one hand held out for a toll.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Twice a man's height, slope-shouldered, with a heavy gut
+* Grey skin, bald head, small eyes, underbite
+* Stitched hide clothes patched with cord
+* Great club made from a tree trunk with roots at the head
+* Heavy bright objects (a dented helm and cups) hung from its belt
+* Stream water around its shins
+* Open outstretched empty palm
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Twice a man's height and slope-shouldered, an ogre is a slab of grey muscle and gut bound in stitched hides. It claims a ford or a narrow run between the trees and takes a toll of all that try to pass. It does not count coin. It counts the heavy, bright things its last few meals were carrying, and swings a tree-trunk club to collect more."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Brutal indifference.
+Specific pitfalls to avoid:
+* Not a troll: no claws or regeneration.
+* Not a Forest Troll's lanky build.
+* Not a Gloom Hulk.
 ```
 
 ### 17. Dryad Grovewarden
@@ -1680,13 +3204,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DRYAD GROVEWARDEN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Dryad Grovewarden (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Dryad Grovewarden, Greenmark Controller, medium: a bark-skinned fey tree-spirit crowned in living branches that binds intruders with roots, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view stepping out of a hollow tree trunk as if through a doorway, staff extended, roots snaking from its feet.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Bark-textured skin and a woman-shaped body
+* Crown of living branches and leaves
+* Long hair of vines
+* Entangling staff of twisted wood
+* Roots creeping from the ankles over the ground
+* Hollow, serene, stern face
+* Tree trunk doorway behind with split bark
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Bark-skinned and crowned in living branches, a dryad grovewarden is the will of an old tree given a shape that can walk and a grudge it can hold. It steps between trunks as though they were doorways and binds intruders in grasping root. The Antlered Warden's tithe keeps most groves quiet. Where it goes unpaid, the grovewardens stir."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold, protective wrath.
+Specific pitfalls to avoid:
+* Not the Briarling: this is a humanoid.
+* Not a Treant: only a person-sized figure.
+* No nudity.
 ```
 
 ### 18. Forest Troll
@@ -1695,13 +3232,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 FOREST TROLL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Forest Troll (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Forest Troll, Greenmark Brute, large: a gangling moss-slick bog-edge brute with reaching arms and broken tusks whose wounds knit shut, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the troll lurching forward with both long arms reaching, mouth agape.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Gangling build, long arms, hunched back
+* Moss patches clinging to slick skin
+* Broken tusks in a wide mouth
+* Rending claws on both hands
+* Old wounds drawn closing as raised stitch-like seams
+* Ragged loincloth
+* Boggy ground and rotting trunk
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Gangling, moss-slick, and stinking of the bog-edge, the forest troll is all reaching arms and a mouth of broken tusks. Its wounds knit shut before the blood has dried, and only fire or acid puts one down to stay. It is stupid, relentless, and forever hungry. Greythorn's woodcutters carry oil for exactly one reason."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Stupid, relentless hunger.
+Specific pitfalls to avoid:
+* Not the Ogre: lankier, with claws.
+* Not the Swamp Troll (different habitat, mire details).
+* No fire or oil shown.
 ```
 
 ### 19. Werewolf
@@ -1710,13 +3260,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 WEREWOLF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Werewolf (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Werewolf, Greenmark Elite, medium: a haunted villager's cursed form, a hunched grey wolf-man killer that strikes from the treeline, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the beast striding upright out of the treeline, claws spread, torn villager's shirt still hanging.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Upright hunched wolf-man with a lupine head and long muzzle
+* Shaggy grey fur rendered with long hatch
+* Long rending claws
+* Torn villager's clothes: shirt strips and a broken belt
+* Savage open jaws with a long tongue
+* Digitigrade legs
+* Trees behind with sparse moonlight lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A haunted villager by day, a hunched grey killer at the turning of need, the werewolf carries an old curse in its blood. Mundane steel slides from its hide; only silver and magic bite true. It strikes from the treeline and is gone before the screaming stops, then circles back for the wounded. Every bitten survivor is tomorrow's werewolf."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Terrible, tragic predator.
+Specific pitfalls to avoid:
+* Not the Dire Wolf: this walks upright.
+* Do not show wounds.
+* Not the Werebear or Wererat.
 ```
 
 ### 20. Green Dragon
@@ -1725,14 +3288,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GREEN DRAGON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Green Dragon (9.7 The Bestiary / Greenmark Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Green Dragon, Greenmark Elite, huge: a moss-coloured serpentine spine-crested tyrant with a corrosive breath; it flies. Typical adult, alone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide three-quarter view of the dragon coiled on a mossy rock with its long neck raised and head turned toward the viewer, wings folded.
 A typical adult green dragon of its kind, alone, coiled on a mossy rock; no lair, no tribute.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Serpentine long body coiled on a rock
+* Spine crest running from the head down the back
+* Four legs and a pair of folded wings
+* Horned head with narrow eyes
+* Moss-textured scales drawn as fine overlapping arcs
+* Long forked tongue or a slight wisp of breath shown as stipple
+* Mossy boulder and bare ground with no treasure
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Apex predator of the Greenmark and its oldest liar, the green dragon is a serpentine tyrant the colour of deep moss, spine-crested, its breath a rolling, corrosive poison. It does not rampage; it manipulates, ruling a swathe of forest through fear and bargain. Lesser things bring it tribute in exchange for being spared a while longer."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cunning, ancient patience.
+Specific pitfalls to avoid:
+* No lair, no hoard, no tribute or humans.
+* Not a Frost Wyvern (two legs).
+* Not the Black, Blue or White Dragon: moss/serpentine silhouette with a long neck.
 ```
 
 ### 21. Undead Warrior
@@ -1741,14 +3317,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 UNDEAD WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Warrior (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Warrior, Ashlands Minion, medium: a half-rotted corpse in rusted old-empire kit holding its post in the ash, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the corpse standing at its post, rectangular shield forward and short sword at the ready, ash drifting at its feet.
 A half-rotted corpse, not a bare skeleton, in rusted imperial legion kit with a short sword and a rectangular shield, ash underfoot.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Half-rotted corpse: leathery skin and exposed ribs, not a bare skeleton
+* Rusted imperial legion kit: segmental armour, plain helm
+* Rectangular shield, scarred and dented
+* Notched short sword
+* Dead hollow eye sockets as solid black
+* Tattered cloak edge, ash underfoot
+* Another dim shape behind in a ragged rank
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Ashlands never disbanded its legions; it merely let them die unburied. An undead warrior is a skeleton or half-rotted corpse in the rusted kit of the old empire, still holding the post it was set to generations back. It fights in ragged ranks, shield to shield, mindless but drilled by sheer habit. There are always more of them in the ash."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Mindless drilled habit.
+Specific pitfalls to avoid:
+* Not bare bones: that is the Skeleton Warrior.
+* Not frosty: that is the Frozen Skeleton.
+* Not ornate: that is the White Court Guard.
 ```
 
 ### 22. Undead Crossbowman
@@ -1757,13 +3346,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 UNDEAD CROSSBOWMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Crossbowman (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Crossbowman, Ashlands Cannon, medium: a dead marksman cranking a warped windlass with fleshless fingers in the rear of a battle-line, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the figure with a boot in the stirrup, cranking the windlass, crossbow aimed at an unseen mark.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Fleshless skeletal fingers on the windlass handle
+* Crossbow with a warped stock and iron prod
+* Quilted gambeson rotting to threads and kettle hat
+* Quiver of bolts at the hip, a few bolts left
+* Gaunt skull face with hollow sockets
+* Ash and rubble around the feet
+* Rank of dim shapes ahead
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Behind the shambling battle-line stand the crossbowmen, dead marksmen cranking warped windlasses with fleshless fingers. They loose in volleys at whatever their soldiers have fixed in place, and their bolts seek the gaps in armour with horrible patience. They do not tire, flinch, or lose their nerve. Only their bolts run out, eventually."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Tireless patient aim.
+Specific pitfalls to avoid:
+* No shield: unlike the Undead Warrior.
+* Not a Skeleton Archer: crossbow, not bow.
+* Not a Forsaken Archer: tattered common kit.
 ```
 
 ### 23. Ghoul
@@ -1772,13 +3374,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GHOUL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ghoul (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Ghoul, Ashlands Minion, medium: a grey, gaunt, hook-clawed corpse-eater with a paralytic bite that hunts tombs in packs, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low three-quarter view of the ghoul loping forward on two legs and one knuckled hand, head forward, jaws opened.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Grey stretched skin over visible ribs and spine
+* Long hook claws on each finger
+* Elongated jaw with sharp irregular teeth
+* Sunken eyes, thin lipless face
+* Tattered burial scraps
+* Bony hunched posture
+* Crypt floor with bones, tomb doorway behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Grey, gaunt, and hook-clawed, a ghoul is what hunger makes of a corpse that would not lie still. It lopes in packs through the Ashlands' tombs, and its bite carries a paralytic rot that stiffens the limbs. Ghouls take the living and the freshly dead alike, and they are clever enough to cut off the straggler. They were people once, before the long famine that came after the cities burned."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Starving, crafty hunger.
+Specific pitfalls to avoid:
+* Not the Possessed Corpse: ghouls are agile and feral.
+* Not the Frost Ghoul: no ice or frost.
+* No weapons.
 ```
 
 ### 24. Possessed Corpse
@@ -1787,13 +3402,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 POSSESSED CORPSE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Possessed Corpse (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Possessed Corpse, Ashlands Minion, medium: a body worn by something from the dark between worlds, lurching toward a jerking purpose, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view lurching forward with arms outstretched, head lolling to one side.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Body in a tattered shroud or peasant clothes
+* Head tilted at a wrong angle
+* Mouth stretched open as a solid black void
+* Dark vapour strands leaking from eyes and mouth
+* Arms stiff and reaching, fingers curled
+* Bare feet dragging in ash
+* Gaping cuts without gore, grey skin
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Not all the Ashlands' dead rose by design. A possessed corpse is a body worn by something that crept in from the dark between worlds, lurching on borrowed legs toward a wrong, jerking purpose. Its grip does not tire, and it bursts in a reek of corruption when it finally falls. Whatever rides it does not speak. It only reaches."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Wrong, jerking, silent.
+Specific pitfalls to avoid:
+* Not a Zombie of the Mire: no water, no bog plants.
+* Not a Ghoul: stiff, lurching, not feral.
+* No weapon.
 ```
 
 ### 25. Ember Skull
@@ -1802,13 +3430,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 EMBER SKULL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ember Skull (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Ember Skull, Ashlands Cannon, small: a single charred head wreathed in flame that drifts on cold updrafts; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the skull drifting in the air above rubble, jaw open, a thin fire ray spitting from the mouth.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* A single charred skull, no body
+* Tall wavy flame tongues around it rendered as hatched flame shapes
+* Jaw hinged open with cracked teeth
+* Eye sockets solid black with small white points
+* Ray of fire shown as a narrow tapered line
+* Rubble below receiving sparse cast light
+* Soot flecks
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A single charred head wreathed in green flame, the ember skull drifts the ruins on a cold updraft of malice, lighting the dark with its own hateful glow. It spits gouts of fire at the living from beyond their reach. Old grimoires name them the failed apprentices of the empire's pyromancers, kept burning by their final spite. Snuff the flame and the skull drops inert."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Small, spiteful ember in the cold.
+Specific pitfalls to avoid:
+* No body or wings (it flies without wings).
+* Not glow: draw flames in line.
+* Do not make it cute.
 ```
 
 ### 26. Wererat
@@ -1817,13 +3458,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 WERERAT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Wererat (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Wererat, Ashlands Skirmisher, small: a hunched plague-grey shapeshifter between man and rat that bites and skitters back into the dark, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low three-quarter view of the creature crouched and half-turned, rusted blade held low, preparing to skitter away.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Hunched half-man half-rat form
+* Long snout with chisel teeth, whiskers, naked tail
+* Plague-grey patchy fur and bare skin
+* Rusted blade gripped in a clawed hand
+* Ragged clothes of sewer rags
+* Sewer or undercroft arch with dripping water
+* Small size: knee-high to a man at an angle
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Where the Ashlands meet the old sewers and undercrofts, the wererat thrives, a hunched, plague-grey shapeshifter scurrying between man and rat-thing. It bites, then skitters back into the dark, leaving filth-fever in every wound. Mundane blades barely mark it. One wererat is a nuisance; a nest of them is an outbreak."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Skulking disease and stealth.
+Specific pitfalls to avoid:
+* Not the Ratkin ancestry hero.
+* Not the Ratkin Scavenger or Warrior.
+* Do not draw it as a real rat only.
 ```
 
 ### 27. Spectre
@@ -1832,13 +3486,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SPECTRE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Spectre (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Spectre, Ashlands Controller, medium: grief and rage without a body, a flying incorporeal dead thing that drinks warmth and years by touch, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the spectre drifting out of a stone wall, one hand reaching forward to touch.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Burned-away body fading into long tapering hatch strokes
+* Burn-scorched shreds of a robe or cloak trailing
+* Hollow face: black eye holes and open mouth
+* Reaching long fingers
+* Body half-embedded in the wall to show it passes through
+* Floating off the ground, no feet
+* The manner of its death hinted in a scorched rope or broken shackle
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Grief and rage with the body burned away, a spectre drifts the Ashlands trailing the manner of its death. It passes through wall and armour alike, and its touch drinks the warmth and the years out of the living. Steel finds nothing to bite; only silver and magic answer. The ruined city is thick with them, each one a question that was never answered."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Aching grief and cold.
+Specific pitfalls to avoid:
+* Not the Banshee (no wail, no hair) or Ice Wraith.
+* No flames.
+* Do not draw a classic sheet ghost.
 ```
 
 ### 28. Undead Sentinel
@@ -1847,14 +3514,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 UNDEAD SENTINEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Sentinel (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Sentinel, Ashlands Soldier, medium: a towering gaunt dead gate-guard in tower-shield and reach-halberd who holds a breach forever, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Frontal three-quarter view of the sentinel planted in a broken gateway, rusted tower shield grounded to the left, reach-halberd raised in the right hand.
 A towering gaunt dead soldier planted in a broken gateway, rusted tower-shield grounded and reach-halberd raised.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Tall, gaunt dead soldier, taller than the arch's inner width
+* Rusted tower shield standing on its end
+* Halberd with a long haft and broad blade held high
+* Closed old-empire helm with a narrow eye slit
+* Rusted plate on the torso, mummified arms
+* Cracked gateway arch and rubble
+* Lesser dead dimly behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "They guarded the empire's gates in life and they guard the rubble of them in death, towering dead men in tower-shield and reach-halberd. A sentinel plants itself in a breach and will not be shifted, lending its iron stillness to the lesser dead around it. It does not pursue. It only holds, forever, a line that fell centuries ago."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Unmoving stillness.
+Specific pitfalls to avoid:
+* Not the White Court Sentinel (no ice, no greatshield crouch).
+* Not the Undead Warrior: far larger, with a halberd.
+* Do not show it walking.
 ```
 
 ### 29. Undead Champion ◐
@@ -1863,13 +3543,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 UNDEAD CHAMPION - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Champion (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Champion, Ashlands Soldier, medium: a slab of dead muscle raised from the largest corpses, wielding a heavy great-axe built of fused bone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the champion trudging forward, great-axe dragging low and then rising across the body.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Huge, bloated shoulders and a thick neck with dead pale skin
+* Great-axe with a head and haft built from fused bone and iron
+* Scraps of rusted plate on shoulders and forearms
+* Bald scarred head with sunken eyes
+* Chains and rusted rivets across the chest
+* Planted heavy legs in ash
+* Lesser dead trailing behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Raised from the largest corpses the Ashlands could muster, the undead champion is a slab of dead muscle swinging a maul of fused bone. Each blow lands with siege-engine weight and rattles whatever stands beside the thing it struck. It is slow, single-minded, and almost impossible to put off its feet. Where it walks, the lesser dead come on in its wake."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Slow, crushing inevitability.
+Specific pitfalls to avoid:
+* Not an Ogre or a living Fighter: it is dead, pale and plated in scraps.
+* Not a Giant Skeleton: this has flesh.
+* Do not hold a maul or hammer: the stat block gives a great-axe.
 ```
 
 ### 30. Gargoyle
@@ -1878,13 +3571,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GARGOYLE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gargoyle (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Gargoyle, Ashlands Skirmisher, medium: a stone guardian that looks like statuary until prey strays beneath it; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the creature crouched on a broken cornice, wings half-open, one clawed hand gripping the edge and head turned down toward the viewer.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Grey stone-textured skin with chisel marks
+* Bat-like stone wings
+* Horned head, wide fanged mouth
+* Clawed fingers and talon feet gripping the ledge
+* Cracks and moss in the stone
+* Half its body still carved-stone smooth
+* Gothic ruin cornice with a broken tracery
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "By daylight a gargoyle is nothing but one more of the empire's stone guardians, perched and patient on a broken cornice. Let prey stray beneath, and the stone splits into claws and a biting maw. Its hide turns aside all but the heaviest blow. The Ashlands bristle with statues, and not every statue is one."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Patient, watchful stone.
+Specific pitfalls to avoid:
+* Must have wings: it flies.
+* Not the Stone Sentinel (a humanoid construct).
+* No fire or glowing eyes.
 ```
 
 ### 31. Stone Sentinel
@@ -1893,13 +3599,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 STONE SENTINEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Stone Sentinel (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Stone Sentinel, Ashlands Brute, medium: a faceless granite construct that grinds forward with a giant stone sword and cannot be pushed, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the sentinel striding forward through a ruined hall, giant stone blade slab swung low in one blocky fist.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Blocky humanoid made of carved granite plates
+* Smooth faceless head with no features
+* Giant stone sword: a slab blade carved of the same granite
+* Thick legs like pillars with chiselled seams
+* Moss and chipped edges
+* Dust trailing from joints
+* Ruined hall columns for scale
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A faceless construct of the old empire, the stone sentinel grinds forward on legs of carved granite and pounds with fists like falling masonry. It feels nothing and fears nothing, and it stops only when it is shattered. The empire raised thousands to guard halls that no longer stand. They guard them still."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Feelingless inevitability.
+Specific pitfalls to avoid:
+* Not the Iron Golem (no rivets or metal).
+* Not the Gargoyle: no wings, no animal head.
+* No face or eyes.
 ```
 
 ### 32. Minotaur
@@ -1908,13 +3627,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 MINOTAUR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Minotaur (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Minotaur, Ashlands Elite, large: a bull-headed giant of labyrinthine ruins that charges head-down to gore then wades in with a greataxe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the minotaur charging head-down through a narrow ruined street with greataxe trailing behind.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Bull's head with large curved horns and a ring through the nose
+* Massive muscular human torso and thick bull neck
+* Greataxe in one hand with a long haft
+* Hooved legs, thick fur on the lower body
+* Fetid breath clouds as ink lines
+* Horns with chips and ash
+* Narrow canyon of ruined walls
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Bull-headed and giant, the minotaur stalks the Ashlands' labyrinthine ruins and never once loses its way among the fallen streets. It charges head-down to gore and trample, then wades in with a greataxe. Its senses cut clean through smoke and shadow, so no ambush takes it in its own maze. Old maps mark its haunts with a single horned skull."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Relentless fury.
+Specific pitfalls to avoid:
+* Not a Beastman: far larger.
+* Do not give a shield.
+* Do not draw a labyrinth map.
 ```
 
 ### 33. Night Hag
@@ -1923,13 +3655,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 NIGHT HAG - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Night Hag (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Night Hag, Ashlands Controller, medium: a withered crone of the between-places who curses the sleeping and steps half into the ether, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the hag stepping half out of the shadow, one claw extended, lower body dissolving into hatching.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Withered crone with sunken cheeks and a long nose
+* Long cursed claws on one hand
+* Ragged cloak and tangled hair
+* Eyes as pale rings with dark pupils
+* Lower half fading into sparse lines
+* Hunched back, bony fingers
+* Dark archway behind with crossed hatching
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A withered crone of the between-places, the night hag slips into the waking world to feed on fear and curse the sleeping. Their claws leave a wound that festers, and when a fight turns against them they step half into the ether and are gone. They bargain, they lie, and they curse the young from the shadows. The Ashlands' long nights are their hunting ground."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Malicious intimacy of the night.
+Specific pitfalls to avoid:
+* Not the Swamp Hag: no bog, no reeds.
+* Not the Banshee.
+* No broom or pointed hat.
 ```
 
 ### 34. Forsaken Archer
@@ -1938,13 +3683,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 FORSAKEN ARCHER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Archer (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Archer, Ashlands Cannon, medium: an oath-bound dead marksman of the empire's finest, drawing a cursed longbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view at full draw on a ruined rampart, cursed longbow bent, barbed arrow aimed.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Finest imperial gilt scale armour, rotted and tarnished
+* Plumed helm in decay, hollow face
+* Cursed longbow taller than the archer, with a binding of dark cord
+* Barbed arrow with a rag tied at the head
+* Tattered ceremonial cloak with no readable device
+* Rampart parapet with a broken crenel
+* Smoke wisps drawn as sparse strokes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Forsaken were the empire's finest, sworn to an oath that outlived the flesh that swore it. A forsaken archer draws a cursed longbow with a dead marksman's precision, and its arrows leave a clinging curse where they strike. Smoke and shadow do not trouble its aim. It serves Captain Veyr still, exactly as it once swore it would."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Old oath curdled into precision.
+Specific pitfalls to avoid:
+* Not the Skeleton Archer or Undead Crossbowman.
+* Not a bare skeleton.
+* Weapon is a longbow, not a shortbow.
 ```
 
 ### 35. Forsaken Knight
@@ -1953,13 +3711,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 FORSAKEN KNIGHT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Knight (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Knight, Ashlands Soldier, medium: dead chivalry in spectral plate with a flamberge wreathed in grave-light, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the knight advancing through ash, flamberge held two-handed low, plate cloak in tatters.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Full gothic plate in ghostly worn pale tones
+* Flamberge: a long two-handed wavy-edged blade
+* Grave-light drawn as ink wavy flame lines around the blade
+* Tattered banner on a pole behind with no readable emblem
+* Closed bascinet helm with dark eye slit
+* Ash drifting around greaves
+* Heavy steady stride
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Dead chivalry in spectral plate, the forsaken knight advances through the ash with a flamberge wreathed in grave-light. It parries with a lifetime's drill written into bone and cannot be slowed or turned aside. Bound by an oath it can no longer recall, it follows Veyr's banner into every fight. Its honour has curdled into compulsion."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cursed honour.
+Specific pitfalls to avoid:
+* Not the Forsaken Duelist (light) or Archer.
+* Not the Fallen Paladin.
+* No shield.
 ```
 
 ### 36. Forsaken Duelist
@@ -1968,13 +3739,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 FORSAKEN DUELIST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Duelist (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Duelist, Ashlands Skirmisher, medium: the empire's finest fencer, dead and tireless, with a single flashing rapier, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the duelist in an en garde stance, rapier extended, back arm raised for balance, slipping a blow.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Slender build with a fencer's stance
+* Single slender rapier with a swept hilt
+* Tattered court jacket and ruffled collar
+* Half-face mask or hollow skull face
+* Light boots and a long cloak
+* Off hand raised behind
+* Cracked marble floor
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Faster than a dead thing has any right to be, the forsaken duelist fights with a single flashing rapier and a fencer's lethal economy. It waits for a blade to commit, slips the strike, and answers through the opening. In life it was the empire's finest fencer; in death it is the same, only tireless. Veyr keeps the duelists close, for they punish every misjudged swing."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Elegant lethal economy.
+Specific pitfalls to avoid:
+* No shield or buckler.
+* Not the Forsaken Knight: unarmoured and light.
+* Not the living Trickster or Rogue class.
 ```
 
 ### 37. Basilisk
@@ -1983,13 +3767,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BASILISK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Basilisk (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Basilisk, Ashlands Elite, medium: an ox-sized, heavy, eight-legged reptile whose gaze slowly turns flesh to stone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the basilisk dragging itself over rubble with its head low and eyes pale, a half-petrified statue in the background.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Eight reptilian legs, four a side
+* Heavy lizard body the size of an ox
+* Wide blunt head with heavy brow and pale unblinking eyes
+* Rough scaled hide with bony ridges
+* Crawling pose with belly near the ground
+* Statues of surprised people, caught mid-stride, scattered behind
+* Rubble and ash
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Heavy and eight-legged and the size of an ox, the basilisk drags itself through the Ashlands' rubble behind a gaze that turns flesh slowly to stone. Meet its eyes and the stiffening starts, the limbs first, then the rest. Even its blood petrifies whatever it touches. The ruins are dotted with its leavings, statues of the surprised, caught mid-stride."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Heavy, patient dread.
+Specific pitfalls to avoid:
+* Exactly eight legs.
+* No wings or fire.
+* Not a snake or dragon.
+* Do not show gore.
 ```
 
 ### 38. Ashen Revenant
@@ -1998,13 +3796,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ASHEN REVENANT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ashen Revenant (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Ashen Revenant, Ashlands Elite, medium: a corpse-warrior in fire-blackened plate driven by one grudge, clawing upright after being struck down, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the revenant rising from one knee, one fist on the ground, grave cleaver raised in the other hand.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Fire-blackened cracked plate armour
+* Heavy grave cleaver with a broad blade
+* Skull-like face inside a split helm
+* Charred bone showing at the joints
+* Ash falling from the plate
+* Burnt ground, scorched stump
+* Intense focused posture
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "An ashen revenant is a corpse-warrior in fire-blackened plate, risen with one purpose welded into its bones: to kill the thing that killed it. It hunts that grudge across the Ashlands with tireless focus, and struck down it claws upright again to land a final blow. Cross its path and you become the grudge. It does not stop until you do."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Single-minded vengeance.
+Specific pitfalls to avoid:
+* Not the Forsaken Knight (pale plate).
+* Not the Undead Champion.
+* No glow.
 ```
 
 ### 39. Iron Golem
@@ -2013,13 +3824,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 IRON GOLEM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Iron Golem (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Iron Golem, Ashlands Brute, large: a towering automaton of riveted black iron guarding a throne, with piledriver fists, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the golem standing before an empty throne, both massive fists raised to slam down.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Riveted black iron plates over a humanoid frame
+* Slit visor with no face
+* Thick piston-like limbs and large hands
+* Joints showing exposed pins
+* Dust sifting from its shoulders
+* Empty throne and dust on the steps
+* Chipped edges and rust bloom
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The empire's master-smiths forged iron golems to outlast the dynasty, and in that one task they grimly succeeded. A towering automaton of riveted black iron, it shrugs off blade and spell alike and answers with piledriver fists. Magic washes from its plates; edged steel skids away. It guards a throne whose claimant is centuries of dust."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold guarding of a long-dead king.
+Specific pitfalls to avoid:
+* Not the Brass Golem or Stone Sentinel.
+* No weapon, only fists.
+* No steam or gears.
 ```
 
 ### 40. Lich
@@ -2028,13 +3852,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 LICH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Lich (9.7 The Bestiary / Ashlands Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Lich, Ashlands Elite, medium: a desiccated sorcerer-king in mouldering finery who commands the dead and flies a little above the floor, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the lich hovering over the floor, one skeletal hand reaching forward to touch.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Desiccated body with leathery skin on a thin frame
+* Tarnished crown on a skull face
+* Mouldering royal robes trailing off the ground
+* Reaching long clawed hand
+* Eye sockets with tiny white points
+* Ring on each finger, chains and amulets
+* Dust and bone fragments, crumbling throne room
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A lich is an archmage who refused death and paid for the refusal in everything that made them human. A desiccated sorcerer-king in mouldering finery, they command the Ashlands' dead with a gesture and loose blasts of soul-rending necrosis. Destroy the body and they re-form, so long as the hidden phylactery endures. The empire fell. Its worst survivor did not."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold, withered royal pride.
+Specific pitfalls to avoid:
+* No phylactery visible (it is hidden).
+* Not the Tomb Necromancer or Mummy.
+* No glowing eyes.
 ```
 
 ### 41. Kobold
@@ -2043,13 +3880,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 KOBOLD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Kobold (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Kobold, Undermarches Minion, small: a knee-high reptilian scavenger with dull scales and a dingy mining pick who fights in warren mobs, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low three-quarter view of the kobold peering from a tunnel mouth, mining pick over its shoulder, sling in the other hand, others dimly behind.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Knee-high reptilian body with a snout, small horn nubs and a tail
+* Dull scales rendered with small scale marks
+* Dingy mining pick with a splintered haft
+* Sling and pouch of stones
+* Ragged cloth and a pick-hat or hood
+* Quick, darting eyes
+* Tunnel timbers and a jury-rigged trap
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Knee-high reptilian scavengers with dull scales and dingy picks, kobolds are the Undermarches' scuttling vermin-folk. One alone is nothing; a chittering mob of them, dragging traps and loosing slings from the dark, is a real danger. They know every tunnel and trust not one. Where a single kobold shows itself, a whole warren is watching."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Nervous, scuttling cunning.
+Specific pitfalls to avoid:
+* Not a goblin: reptilian snout and tail.
+* Not the Lizardfolk.
+* Do not make it cute.
 ```
 
 ### 42. Cave Goblin
@@ -2058,13 +3908,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CAVE GOBLIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Cave Goblin (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Cave Goblin, Undermarches Minion, small: a pale, blinder goblin with wide black eyes, a jagged spear and an instinct to flee towards more of its kind, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low three-quarter view of the goblin shielding its eyes from a light, jagged spear trailing, half-turned to flee into a cave mouth.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Pale skin and large black pool eyes
+* Long ears and a thin frame
+* Jagged spear improvised from a rusty blade lashed to a stick
+* Hand raised to shield eyes from light
+* Bare belly, loincloth and a few bones
+* Cave mouth behind with stalactites
+* Small, cowering stance
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Paler and blinder than their forest cousins, cave goblins have gone so long without sun that their eyes are wide black pools. They jab with jagged spears and bolt at the first hint of a losing fight. They infest the upper deep in nervous packs. A cave goblin's first instinct is to flee toward more cave goblins."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Skittish, nervous fear.
+Specific pitfalls to avoid:
+* Not the Greenmark Goblin: no sling, no notched blade.
+* Not the Goblin ancestry hero.
+* Do not draw a mob.
 ```
 
 ### 43. Giant Bat
@@ -2073,13 +3936,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GIANT BAT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Bat (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Bat, Undermarches Minion, large: a leathery-winged cave bat wider than a man is tall that swoops, bites and wheels away; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view from below of the bat in a swooping pass, wings spread wide, jaws open, a cavern roof of stalactites behind.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Wingspan wider than a man is tall: two long membrane wings with finger bones
+* Furred body, large ears, folded nose leaf
+* Open mouth with needle teeth
+* Clawed thumb hooks on the wings
+* Hind feet curled
+* Stalactites and a few other bat shapes hanging in the distance
+* Ragged membrane edges
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Leathery-winged and wider than a man is tall, the giant bat navigates the lightless depths by shrieks no living ear can catch. It harries intruders in swooping passes, biting and wheeling away before the answer lands. Torchlight only draws more of them. Whole colonies hang in the upper caverns, and they wake all at once."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Sudden swooping dread.
+Specific pitfalls to avoid:
+* Wings are required: it flies.
+* Not a harpy, no human body.
+* Not the Stirge: bat anatomy, not mosquito.
+* No glowing eyes.
 ```
 
 ### 44. Vaultfang
@@ -2088,13 +3965,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 VAULTFANG - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Vaultfang (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Vaultfang, Undermarches Cannon, medium: a mottled stone-hard chitin cone that mimics a stalactite and drops once, point first, through helm and skull, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Vertical composition looking up: the creature clinging to the cavern roof and starting to drop, single barbed point down, above a helmeted head.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* A single cone-shaped body mottled like stone
+* Ridged chitin plates banding the cone
+* Single large barbed point at the tip
+* Tiny gripping claws at the top to cling to the ceiling
+* No eyes, no limbs beyond the claws
+* Real stalactites beside it for comparison
+* A helmed head and shoulders at the bottom edge for scale
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A vaultfang clings to the cavern roof as a flawless imitation of a stalactite, a mottled cone of stone-hard chitin, and it waits. When something passes beneath, it drops, driving its single barbed point clean through helm and skull. It is a living spear that falls exactly once. Few who survive a low ceiling here ever walk easy under one again."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Still stone becoming a falling spear.
+Specific pitfalls to avoid:
+* Not a bat or spider.
+* Do not draw legs or a face.
+* It looks like a stalactite, not a monster at first glance.
 ```
 
 ### 45. Giant Centipede
@@ -2103,13 +3993,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GIANT CENTIPEDE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Centipede (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Centipede, Undermarches Skirmisher, small: a spear-long, many-segmented, venomous cave predator that climbs walls on a hundred legs, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the centipede pouring down a cave wall in a long sinuous curve, mandibles open and forward.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Long segmented body about as long as a spear
+* Many legs along each segment, hundreds suggested
+* Armoured plates on each segment
+* Two curved venomous mandibles
+* Long antennae
+* Shed husks scattered on the floor
+* Wall of wet rock
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Many-segmented and as long as a spear, the giant centipede pours over cave walls on a hundred legs, mandibles dripping a venom that locks the muscles solid. It hunts by vibration in the lightless dark. A bite swells black within minutes. Its shed husks carpet the floors of the oldest tunnels."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold sinuous hunger.
+Specific pitfalls to avoid:
+* Not a snake or caterpillar: armoured segments, one pair of legs per segment.
+* Do not make it larger than a spear in length.
+* No web.
 ```
 
 ### 46. Noxcloth
@@ -2118,13 +4021,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 NOXCLOTH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Noxcloth (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Noxcloth, Undermarches Controller, large: a fold of black leathery hide hanging from the cavern roof that drops to smother the head; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide view from below: the flat cloak-like creature half-peeled off the cavern ceiling, edges billowing over a torch-carrying figure's silhouette beneath.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* A cloak-shaped fold of black leathery skin with a trailing hem
+* Ragged edges and a ridge of muscle
+* Underside with faint ribs and a toothless slit
+* No visible eyes
+* Extremely flat but wider than a man
+* Snuffed torch below with a thin smoke line
+* Rock ceiling folds that match the body
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The noxcloth hangs from the cavern roof like a fold of black leather the size of a flung cloak, no different from shadow until it drops to smother. It wraps a victim's head and crushes, blind itself but needing no eyes in the dark it brings with it. With a gout of unnatural gloom it can snuff a torch outright. Of all the things that wait on the deep's ceilings, it is the one to fear most."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Silent suffocating shadow.
+Specific pitfalls to avoid:
+* Not a Giant Bat: no skeleton, no head, no ears.
+* Not a cloak worn by a person.
+* Do not draw a face.
 ```
 
 ### 47. Troglodyte
@@ -2133,13 +4049,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TROGLODYTE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Troglodyte (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Troglodyte, Undermarches Soldier, medium: a grey, crested reptilian cave-dweller whose skin shifts colour to vanish against stone, fighting claws first, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the troglodyte stepping out of a rock wall with both claws spread, parts of its body fading to the wall's texture.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Grey scaly hide, head crest, lizard muzzle
+* Two clawed hands, long and hooked
+* Skin merging into the rock texture on one side
+* Naked body with a simple rag belt
+* Hunched predator stance
+* Sickly fume lines from the body to show the stench
+* Cave wall detail
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Grey, crested, and degenerate, troglodytes are reptilian cave-dwellers whose skin shifts colour to vanish against bare stone. They reek so violently that the stench alone sickens the unready. They hunt in clutches, claws first, fading in and out of the rock. Their territory announces itself by smell long before anything is seen."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Reeking camouflaged menace.
+Specific pitfalls to avoid:
+* Not a Lizardfolk Warrior (no weapons or armour).
+* Not a Kobold: bigger, crested.
+* Do not draw a tail-stomping dinosaur.
 ```
 
 ### 48. Giant Black Widow
@@ -2148,13 +4077,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GIANT BLACK WIDOW - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Black Widow (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Black Widow, Undermarches Controller, small: a glossy-black war-hound-sized spider with a crimson hourglass mark, squatting in its own webbing, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view from the front of the spider hanging head-down at the centre of a huge web in a cavern, one foreleg pulling a strand.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Exactly eight legs, long and thin
+* Glossy black bulbous abdomen with a crimson mark (rendered as a bold solid shape with an hourglass in white)
+* Cluster of small eyes
+* Large fangs dripping venom
+* Cathedral of web strands spanning stalagmites
+* Cocooned bundle hanging off to one side
+* Strands in fine black lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Glossy-black and the size of a war-hound, the giant black widow squats in a cathedral of its own webbing, the telltale crimson mark on its swollen back. It flings strands to snare prey from across a chamber, then closes to deliver a venom that stops the heart cold. They are the Broodmother's lesser daughters, and they spin the most lethal traps below."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Predatory stillness in a lair of silk.
+Specific pitfalls to avoid:
+* Spiders have exactly eight legs.
+* Not the Giant Tarantula (hairy, no web).
+* Do not make it giant-scale: war-hound size.
 ```
 
 ### 49. Gloomspore Jelly
@@ -2163,13 +4105,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GLOOMSPORE JELLY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gloomspore Jelly (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Gloomspore Jelly, Undermarches Brute, medium: a cart-sized translucent grey ooze that creeps and dissolves what it engulfs, leaving scoured tunnels, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low side view of the jelly creeping over a heap of bones and a rusted helm, a pseudopod reaching ahead.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Translucent grey mound, glistening
+* Pseudopod extended like a blunt arm
+* Partially dissolved debris suspended inside: a helm, bones, a boot
+* Surface bubbles and skin film
+* Scoured, clean tunnel floor behind it
+* Faint trail on the stone
+* Spores shown as sparse stipple only
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A translucent grey ooze the size of a cart, the gloomspore jelly creeps over every surface and dissolves whatever it engulfs. Slashing only splits it, and it feels neither pain nor fear. Destroyed at last, it bursts in a cloud of soporific spores. It leaves the tunnels behind it scoured clean and faintly glistening."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Slow, soundless dissolving hunger.
+Specific pitfalls to avoid:
+* Not the Vault Ooze (a cube) or the Mire's Shambling Mound.
+* No face or eyes.
+* Do not show gore.
 ```
 
 ### 50. Troglodyte Shaman
@@ -2178,13 +4133,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TROGLODYTE SHAMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Troglodyte Shaman (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Troglodyte Shaman, Undermarches Controller, medium: a grey crested cave reptile daubed in glowing fungus, hexing with a bone club, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view crouched in a fungus-lit cave, bone club in one hand, other hand throwing hex-spit.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Crested grey reptilian head and body
+* Fungus daubs on skin and a necklace of mushroom caps
+* Bone club, a long femur with knobs
+* Hex spit drawn as small dark drops from the hand
+* Reeking vapour curls
+* Bone fetishes tied to the arm
+* Bracket fungi and stalagmites behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The troglodyte shaman daubs itself in glowing fungus and mutters to things that dwell below even the deep. It calls up reeking clouds and spiteful hexes to soften prey for the clutch. Its magic is primitive but real, and older than any empire that ever named it. The other troglodytes give way before it, and so should anything wise."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Primitive eerie ritual.
+Specific pitfalls to avoid:
+* Not the regular Troglodyte: robe of fungus, club, spells.
+* Not the Lizardfolk Shaman.
+* No glow.
 ```
 
 ### 51. Vault Ooze
@@ -2193,13 +4161,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 VAULT OOZE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Vault Ooze (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Vault Ooze, Undermarches Brute, medium: a near-invisible cube of acidic slime that fills a corridor wall to wall, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Front view down a narrow stone corridor in which a clear cube-shaped mass fills the whole passage, a swallowed lantern and bones suspended within it.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* A clear cube outlined by faint shimmering lines
+* Fills the corridor from wall to wall and ceiling to floor
+* Suspended objects: a rusted helm, bones, a boot
+* Pitted and dissolving stone at the contact edges
+* Slime drips along the floor
+* A pseudopod pushing forward at one corner
+* Corridor vanishing point
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Near-invisible and wall to wall, a vault ooze is a cube of acidic slime that fills a corridor and sweeps it clean of everything that ever breathed. The unwary walk straight in and are engulfed, dissolving while still aware of it. It moves in eerie silence, betrayed only by a faint shimmer. The neatest tombs in the deep were swept out by these."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Quiet inexorable sweep.
+Specific pitfalls to avoid:
+* Must be a cube.
+* Not the Gloomspore Jelly: that is a mound.
+* Do not draw a face.
 ```
 
 ### 52. Vrymk
@@ -2208,13 +4189,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 VRYMK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Vrymk (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Vrymk, Undermarches Skirmisher, medium: a stone-grey tangle of rubbery tentacles around a hooked beak, no broader than a crouching man, clinging to cavern walls, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the creature clinging to a rock wall, camouflaged, with several tentacles lashing out and one pulling toward the beak.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Writhing mass of rubbery tentacles (six to eight) with suction marks
+* Central hooked beak, parrot-like
+* No broader than a crouching man
+* Stone-grey skin mottled like the rock
+* Clinging suckers on the wall
+* Tentacle tips lashing outward
+* Wet shimmering stone
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A writhing tangle of stone-grey tentacles around a cruel hooked beak, no broader than a crouching man, the vrymk clings to cavern walls until prey wanders close. Camouflaged against the rock, it lashes out with rubbery arms and hauls the catch to its maw. It hunts by patience and ambush rather than speed. Anyone who hears a wet, slithering rasp from a bare wall has already been seen."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Ambush patience.
+Specific pitfalls to avoid:
+* Not the Thought-Eater (no robe, no octopus head) or Elder Vrymk (smaller).
+* Not an octopus underwater.
+* Beak is hooked.
 ```
 
 ### 53. Deep Elf Warrior
@@ -2223,14 +4217,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DEEP ELF WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Deep Elf Warrior (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Deep Elf Warrior, Undermarches Skirmisher, medium: a coldly beautiful deep-court fighter of the deep courts, fighting with a poisoned hand-crossbow and shortsword; shown in full dark ceremonial armour carrying a crescent glaive, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view in cavern gloom, the warrior advancing with a crescent glaive held diagonally, hand-crossbow at the belt.
 A deep elf warrior of the deep courts in full dark ceremonial armour with a crescent glaive, in the Undermarches gloom.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Full dark ceremonial armour: fluted plates with a spidery decorative pattern
+* Crescent glaive with a curved moon-shaped blade
+* Hand-crossbow at the hip, small and ornate
+* Shortsword in a sheath
+* Pale narrow face, long pointed ears, hair swept back
+* Cape of black silk
+* Stalagmites and glowing fungus lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The deep elves quit the surface ages before the Fall and have curdled, in the dark, into something coldly beautiful and merciless. A deep elf warrior fights with poisoned hand-crossbow and finesse blade, seeing perfectly in a lightlessness that blinds everything else. They raid the upper deep for slaves and for sport. Mercy was a surface weakness they bred out long ago."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold ceremonial menace.
+Specific pitfalls to avoid:
+* Not the Deep Elf ancestry hero: full court regalia, glaive, no hood.
+* Not the Deep Elf Priest: no staff, no robes.
+* Weapons: crescent glaive plus hand-crossbow and shortsword (glaive is the featured weapon).
 ```
 
 ### 54. Deep Elf Priest
@@ -2239,14 +4246,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DEEP ELF PRIEST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Deep Elf Priest (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Deep Elf Priest, Undermarches Controller, medium: a black-silk-robed priest of the deep spider-gods who weaves darkness and drives warriors on with a scourge, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the priest in layered dark vestments, shadow-wreathed sigil staff raised in one hand, a scourge coiled in the other.
 A deep elf priest in layered dark vestments raising a shadow-wreathed sigil staff.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Layered black silk vestments with bone fetishes
+* Staff topped with a spider-like sigil (abstract, no text) wrapped in black smoke
+* Scourge: a short handle with several knotted lashes
+* Pale elegant face, long ears, narrow eyes
+* Silhouette against a dark cavern wall
+* Shadow tendrils shown as black hatching
+* Tall mitre-like headdress
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Robed in black silk and bone fetishes, a deep elf priest serves the spider-gods of the deep. It wreathes its enemies in conjured darkness and bends their wills with a single spoken command. From the shadow it has made, scourge in hand, it drives the warriors forward. Its faith is cruelty refined into ritual."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cruel ritual elegance.
+Specific pitfalls to avoid:
+* Not the Warrior: no armour.
+* Not the Elf ancestry hero.
+* No readable symbols.
 ```
 
 ### 55. Gloom Hulk
@@ -2255,13 +4275,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GLOOM HULK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gloom Hulk (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Gloom Hulk, Undermarches Brute, large: a bull-sized, beetle-backed digger with great scything claws and four eyes that scramble the mind, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the hulk erupting from a rock wall in a rubble shower, claws raised and four eyes in a row on the face.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Beetle shell back with segmented plates
+* Four eyes in two pairs on a blunt head
+* Great scything claws on forelegs
+* Mandibles at the mouth
+* Six legs, short and thick
+* Rock dust and falling stones
+* Collapsing gallery supports
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Beetle-backed and the size of a bull, the gloom hulk is a digger armed with great scything claws and four eyes that scramble the mind of anything that meets them. It burrows through solid rock to erupt beneath its prey. Its gaze leaves victims reeling and helpless where they stand. More than one collapsed gallery in the deep is its doing."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Crushing subterranean fury.
+Specific pitfalls to avoid:
+* Exactly four eyes.
+* Not a crab or scorpion.
+* Not a Burrowmaw: has legs and claws.
 ```
 
 ### 56. Cryptstrangler
@@ -2270,13 +4303,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CRYPTSTRANGLER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Cryptstrangler (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Cryptstrangler, Undermarches Controller, large: a stalagmite-like stony predator taller than a man whose sticky tendrils fling across a chamber, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of a cavern chamber where the stalagmite-like creature stands among real stalagmites, tendrils shooting out and a boot caught.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Cone-shaped stony body taller than a man
+* Tendrils sprouting from its sides like long strands
+* Mouth hidden within the tip or base with a ring of teeth
+* Looks like a stalagmite until it uncoils
+* Sticky tendril wrapping a boot or ankle
+* Several real stalagmites around
+* Stone texture on skin
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A cryptstrangler passes for a stalagmite taller than a man until its strands uncoil, a stony predator that flings sticky tendrils across a chamber, reels in the catch, and bites it through. It can sit motionless for years between meals. The tendrils come from angles no one expects, faster than anything that still should move. Not every silent column down here is only stone."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Frozen patience.
+Specific pitfalls to avoid:
+* Not a plant or tree.
+* Not the Vaultfang (ceiling) or Vrymk (tentacled ambusher on walls).
+* No eyes.
 ```
 
 ### 57. Elder Vrymk
@@ -2285,13 +4331,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ELDER VRYMK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Elder Vrymk (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Elder Vrymk, Undermarches Elite, large: a monstrous knot of leg-thick stone-grey tentacles around a plate-shearing beak, with smaller kin gathering around it, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide three-quarter view of the elder filling a tunnel, tentacles thick as a man's leg dragging a small vrymk and a victim toward the beak.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Tentacles thick as a man's leg, ridged with suckers
+* Huge central beak that shears plate
+* Scarred stone-grey hide
+* Smaller vrymk clustered on the tunnel walls
+* Scoured, empty tunnel
+* Clinging to ceiling and walls
+* Larder of clean bones
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Where lesser vrymk lurk as ambushers, the eldest of a brood swells to monstrous size. It is a knot of stone-grey tentacles thick as a man's leg, gathered around a beak that shears clean through plate. It no longer hunts alone; the smaller kin gather to its silent direction and drag prey within its reach. A tunnel scoured of every other living thing is its larder."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Silent dominating menace.
+Specific pitfalls to avoid:
+* Not the small Vrymk: far bigger.
+* Not the Thought-Eater.
+* Do not draw a human head.
 ```
 
 ### 58. Evil Eye
@@ -2300,13 +4359,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 EVIL EYE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Evil Eye (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Evil Eye, Undermarches Elite, large: a floating orb of leathery flesh with one great central eye and a crown of writhing eyestalks, with an antimagic aura; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Frontal three-quarter view of the orb drifting in a vaulted dark cavern, central eye wide open, eyestalks writhing.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Round floating orb of leathery, wrinkled flesh
+* One great central eye with a solid black pupil
+* Crown of ten writhing eyestalks, each ending in a small eye
+* Large toothy mouth below the central eye
+* Fine radiating hatching around the body to suggest the antimagic aura
+* Cave ceiling with floating dust
+* No wings, no limbs
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A floating orb of leathery flesh ruled by one great central eye and crowned with writhing eyestalks, the evil eye spits a different doom from each lesser eye. It drifts the deep wrapped in an aura that unmakes magic outright. No two of its glares do the same thing twice. It regards every other living thing as a competitor to be erased."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold regard.
+Specific pitfalls to avoid:
+* Must have exactly one central eye plus eyestalks.
+* Not a Beholder lookalike with a mouth too large.
+* No glow rays.
 ```
 
 ### 59. Burrowmaw
@@ -2315,13 +4387,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BURROWMAW - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Burrowmaw (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Burrowmaw, Undermarches Brute, large: a wagon-sized armour-plated horror with a blunt head and a face-splitting maw that swims through stone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the burrowmaw erupting from a stone floor, jaws splitting its face open, rubble flying.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Wagon-sized armoured plated body
+* Blunt head with the whole face opening like a four-part maw
+* Rings of teeth
+* Armoured segmented plates on the back
+* No legs visible, partly buried
+* Rubble shower and a cracked floor
+* Torn flagstones
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "An armour-plated horror the size of a wagon, the burrowmaw has a blunt head and a maw that splits its whole face open. It swims through solid stone and erupts beneath its prey in a shower of rubble. It senses footfalls through the rock and leaps the last span with its jaws spread wide. The stone trembles faintly before it surfaces, and that is the only warning anyone gets."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Sudden earthquake horror.
+Specific pitfalls to avoid:
+* Not the Giant Constrictor or any snake.
+* Not the Gloom Hulk (no legs or claws).
+* No eyes needed.
 ```
 
 ### 60. Thought-Eater
@@ -2330,13 +4415,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THOUGHT-EATER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Thought-Eater (9.7 The Bestiary / Undermarches Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Thought-Eater, Undermarches Elite, medium: a robed humanoid with an octopus head, four tentacles and white pupilless eyes that feeds on minds, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the creature standing in a dark chamber with a hand raised, tentacles flowing from its head.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Octopus-like head with four tentacles hanging
+* White pupilless eyes
+* Grey slick skin
+* Long robe with draped sleeves
+* Webbed fingers
+* Slender upright posture
+* Dark vaulted chamber with scattered fallen helmets
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A robed, four-tentacled humanoid with an octopus's head, the thought-eater wears grey, slick skin and white, pupilless eyes. It feeds on living minds, and a single psychic blast drops a whole party to their knees. It can seize a victim's will and turn them on their own friends. It schemes in the dark beneath the dark, and to meet one is to feel it already reading you."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Quiet, reading, hungry intelligence.
+Specific pitfalls to avoid:
+* Not the Vrymk or Elder Vrymk.
+* Four tentacles only.
+* No glow or beams.
 ```
 
 ### 61. Frozen Skeleton
@@ -2345,14 +4443,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 FROZEN SKELETON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Frozen Skeleton (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Frozen Skeleton, Pale City Minion, medium: a frost-rimed skeleton standing its post, sword welded to its hand by ice, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the skeleton standing in drifted snow, sword frozen to its hand, icicles hanging from the ribs.
 A frost-rimed skeleton with icicles hanging from its ribs and a sword frozen to its hand, snow drifted around its feet.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Bare skeleton, not flesh
+* Frost rime on every bone shown with dense stipple and hatch
+* Icicles hanging from ribs and arm bones
+* Sword bonded by an ice lump to the hand
+* Snow drifted around the feet
+* Rusted helm fragment on the skull
+* Narrow empty avenue behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Rimed in blue frost, a sword welded to its hand by ice, a frozen skeleton is one of the Pale City's countless dead, still standing the post it was given. It guards avenues that have not seen a living census in centuries. The cold preserves it whole; it will hold that post when the last warm thing in the world goes out. There are always more under the snow."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Frozen, stoic duty.
+Specific pitfalls to avoid:
+* Not the Skeleton Warrior (bronze, sand) or Undead Warrior (flesh, rust).
+* Not the White Court Guard (armoured corpse).
+* No glow.
 ```
 
 ### 62. Snow Goblin
@@ -2361,13 +4472,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SNOW GOBLIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Snow Goblin (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Snow Goblin, Pale City Minion, small: a gaunt white-furred goblin that ambushes out of the whiteout with frost-edged knives, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the goblin rising from a snowdrift, frost knife in one hand, sling in the other, fur nearly the colour of the paper.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Gaunt body covered in white fur (kept pale by sparse strokes)
+* Long pointed ears and a thin face
+* Frost knife with an icy edge
+* Sling in the off-hand with a stone
+* Rag and fur wrapping
+* Crouched on its toes
+* Snowdrift and falling snow
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Gaunt and white-furred, snow goblins den in the Pale City's drifts and tunnels, ambushing out of the whiteout with frost-edged knives. They are invisible against the snow until the moment they move. Cowardly and quick, they strip the frozen dead and bolt from any honest fight. The blizzard hides both their approach and their retreat."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cowardly stalking.
+Specific pitfalls to avoid:
+* Not the Greenmark Goblin or Cave Goblin.
+* Not a yeti.
+* Do not make it cute.
 ```
 
 ### 63. Ratkin Scavenger
@@ -2376,13 +4500,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 RATKIN SCAVENGER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ratkin Scavenger (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Ratkin Scavenger, Pale City Minion, small: the lowest caste of verminous rat-folk, scrawny and twitching in matted grey fur, stripping ruins with a rusty knife, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low three-quarter view of the scavenger darting across a frozen street, rusty knife held low, glancing back over its shoulder with a stolen scrap clutched in the other hand.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Scrawny hunched rat-man with matted grey fur
+* Narrow snout, long whiskers, bald naked tail
+* Rusty knife with a broken tip
+* Scraps of rags and a sack of loot
+* Twitching ears and nervous eyes
+* Ruined street with drifted snow
+* Several smaller shapes scurrying in the background
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The ratkin are a verminous rat-folk that boiled up into the Pale City when the long winter first came down. The scavengers are their lowest caste, scrawny twitching things in matted grey fur, darting through the ruins to strip anything not frozen to the ground. They swarm, they scurry, and they rarely stand to fight. Where the scavengers pick, the warren is never far behind."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Frightened hungry opportunism.
+Specific pitfalls to avoid:
+* Not the Ratkin ancestry hero (clean kit, tabard).
+* Not the Ratkin Warrior (no spear or plate scraps).
+* Not a literal rat.
 ```
 
 ### 64. Tundra Wolf
@@ -2391,13 +4528,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TUNDRA WOLF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tundra Wolf (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tundra Wolf, Pale City Skirmisher, medium: a white-coated wolf built for the killing cold that runs in herding packs over ice, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Side three-quarter view of the wolf padding across wind-scoured ice at a loping run, head level, breath trailing.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Thick white coat (rendered by leaving paper white with fine outlines and a few shadow lines)
+* Long legs and wide paws suited to ice
+* Frost on the muzzle, pale eyes
+* Ruff along the neck and shoulders
+* Ice cracks and wind-blown snow
+* A second wolf outline in the far distance
+* Ears pinned back
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "White-coated and built for the killing cold, the tundra wolf pads across ice that would betray a heavier foot. It runs in packs that herd prey into the open, where the wind does half the killing. Its bite carries the chill of the Pale City itself. Travellers who hear no howling are in the gravest danger of all."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold, quiet hunting.
+Specific pitfalls to avoid:
+* Not the Dire Wolf (dark scarred, forest) or Blackfire Hound (burnt black).
+* Do not make it a husky.
+* No saddle.
 ```
 
 ### 65. Ratkin Warrior
@@ -2406,13 +4556,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 RATKIN WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ratkin Warrior (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Ratkin Warrior, Pale City Soldier, small: a hunched spear-wielding rat-man in scavenged scraps of plate that fights in a bristling shield-rank, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the warrior crouched behind a patched shield with a notched spear levelled forward over its edge.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Hunched rat-man with a snarling snout and long front teeth
+* Scavenged plate scraps tied on with cord: a pauldron, a gorget
+* Notched spear with a bent head
+* Patched shield made of a door or cart board
+* Tail low behind
+* Frosted fur and breath mist
+* Another spear tip and shield edge at the frame's edge
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A hunched, spear-wielding rat-man in scavenged scraps of plate, the ratkin warrior fights shoulder to shoulder behind a bristling wall of points. Alone it falters; in a shield-rank it holds. The warren feeds them forward in chittering blocks. They die easily and breed faster than they die."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cringing, dogged discipline.
+Specific pitfalls to avoid:
+* Not the Scavenger (no spear or plate).
+* Not the Ratkin Seer (no staff or charms).
+* Not the ancestry hero.
 ```
 
 ### 66. White Court Guard
@@ -2421,14 +4584,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 WHITE COURT GUARD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Guard (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Guard, Pale City Soldier, medium: a frost-armoured noble corpse of the undead court's rank and file, holding a reach-halberd at a ceremonial slant, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Frontal three-quarter view of the guard standing at attention on a frozen avenue, halberd held at a ceremonial slant across the body.
 A frost-armoured noble corpse in ornate courtly armour and a frozen fur mantle, reach-halberd held at a ceremonial slant.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Ornate courtly armour with engraved fluting and gilt scrolls, frosted
+* Frozen fur mantle over the shoulders
+* Reach-halberd with a decorated blade and tasselled haft
+* Visor up on an open helm to show a frozen corpse face
+* Rime on every plate
+* Heavy plumed helm with a drooping plume
+* Icy avenue and snow
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The White Court is the Pale City's undead nobility, and the guard is its rank and file: a frost-armoured corpse bearing a reach-halberd, moving with the cold discipline of a court that never once adjourned. They lock shields across the frozen avenues and advance by the old drill. Death only made them more obedient."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold ceremonial discipline.
+Specific pitfalls to avoid:
+* Not the Sentinel (no greatshield).
+* Not the Undead Sentinel (rust, rubble).
+* Not the Archer or Executioner.
+* No actual shield.
 ```
 
 ### 67. Ratkin Seer
@@ -2437,13 +4614,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 RATKIN SEER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ratkin Seer (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Ratkin Seer, Pale City Controller, small: a half-mad rat-man draped in icicle-charms, spitting frost-hexes and croaking prophecy, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the seer perched on a broken pillar, bone staff in one hand, other hand flinging frosty hex-flecks, mouth open.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Hunched rat-man draped in strings of icicle charms and bones
+* Bone staff with a dangling charm
+* Ragged hooded cloak with hair in tangles
+* Wild half-mad eyes with rings
+* Frosted whiskers
+* Hex shown as small spiked frost marks
+* Warriors dimly below
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Draped in icicle-charms and half-mad, the ratkin seer spits frost-hexes that sap the warmth and the will from its enemies. It hangs behind the warriors, croaking prophecy and curse in the same breath. Its magic is scavenged and unreliable, but a hex that lands at the wrong moment still kills. The warren treats its ravings as law."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Mad croaking prophecy.
+Specific pitfalls to avoid:
+* Not the Scavenger or Warrior.
+* Not the ancestry hero.
+* No glow.
 ```
 
 ### 68. Frost Ghoul
@@ -2452,13 +4642,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 FROST GHOUL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Ghoul (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Ghoul, Pale City Minion, medium: a ghoul frozen and reborn in the cold, claws sheathed in frost, hunting in packs through snow-choked streets, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low three-quarter view of the ghoul crawling over a snowdrift, frost-sheathed claws forward, jaw open, a second shape dim behind.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Grey-blue skin stretched on a gaunt body
+* Claws encased in ice crystals
+* Frost-rimmed jaw with icicle teeth
+* Hollow eyes
+* Frost on shoulder blades and ribs
+* Bare feet in snow
+* Ruined street with snow-choked doorway
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A ghoul frozen and reborn in the Pale City's cold, its claws sheathed in killing frost and its hunger undimmed, the frost ghoul hunts in packs through the snow-choked streets. It drags down the living to feed. The cold that should still it only whets its appetite. It does not slow, and it does not stop while anything warm remains."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Frozen, unceasing hunger.
+Specific pitfalls to avoid:
+* Not the Ashlands Ghoul: this one has frost on skin and claws.
+* Not the Frozen Skeleton (flesh, not bare bones).
+* No clothes beyond rags.
 ```
 
 ### 69. White Court Archer
@@ -2467,13 +4670,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 WHITE COURT ARCHER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Archer (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Archer, Pale City Cannon, medium: a dead marksman on a frozen balcony loosing ice-fletched arrows from a frostbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the archer standing on a frozen balcony, frostbow at full draw, quiver overflowing.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Courtly light armour with frost and engraved lines
+* Tall composite frostbow with icicle-like tips
+* Ice-fletched arrow with crystalline feathers
+* Overflowing quiver
+* Frozen fur collar
+* Open helm with a corpse face
+* Balcony balustrade glazed in ice
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "From the frozen balconies of the dead city, white court archers loose volleys of ice-fletched arrows, dead marksmen whose aim outlasted the flesh that learned it. They mass their fire on whatever the soldiers have pinned. The cold steadies their hands more surely than any living discipline could. Their quivers never empty."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Aimed cold elegance.
+Specific pitfalls to avoid:
+* Not the Forsaken Archer (Ashlands) or Skeleton Archer.
+* Not a living elf.
+* No glow.
 ```
 
 ### 70. Blackfire Hound
@@ -2482,13 +4698,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BLACKFIRE HOUND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Blackfire Hound (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Blackfire Hound, Pale City Skirmisher, medium: a charred beast-shape with cold black flame guttering along its spine that leaves a trail of smouldering ash, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Side three-quarter view of the hound bounding across snow, flame along the spine and a trail of smouldering marks behind.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Charred hound body, lean ribs showing
+* Flame rendered as black hatched tongues along the spine
+* Burnt jaws with fangs
+* Trail of ember spots and melted snow behind
+* Hollow eyes with white points
+* Cracked smoking paws
+* Snow melting in steam lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Cold black flame guttering along its spine, the blackfire hound is a charred beast-shape that leaves a trail of smouldering ash across the snow. Its bite burns with a fire no ordinary frost-ward will stop. They course in packs through the Pale City's ruins, herding prey onto their own burning trails. The snow hisses where they pass."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hellish chase.
+Specific pitfalls to avoid:
+* Not the Dire Wolf or Tundra Wolf (white fur).
+* Not the Corpsehound (desert).
+* Flame must be black ink shapes, not glow.
 ```
 
 ### 71. Ice Wraith
@@ -2497,13 +4726,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ICE WRAITH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ice Wraith (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Ice Wraith, Pale City Cannon, medium: a knife-like translucent drifting spirit of someone who froze to death, hungry for warmth; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the wraith gliding down an icy avenue, one long arm reaching out with a frost-touch.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Body tapering to a knife-like point
+* Translucent shape drawn with open outlines and sparse lines
+* Sharp angular face with hollow eyes
+* Long thin arms ending in icicle fingers
+* Frost crystals trailing behind
+* Ice-lined avenue and snow
+* No legs
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A knife of frozen malice given a drifting, translucent shape, the ice wraith is the spirit of someone who froze to death in the Pale City and never forgave it. Its touch saps warmth and thickens the blood to sludge. Steel passes clean through; only silver and magic bite. It haunts the coldest avenues, hungry for the heat of anything still living."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold, grudging hunger.
+Specific pitfalls to avoid:
+* Not the Spectre (scorched) or Banshee.
+* Not made of solid ice like the Ice Elemental.
+* No glow.
 ```
 
 ### 72. White Court Sentinel
@@ -2512,14 +4754,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 WHITE COURT SENTINEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Sentinel (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Sentinel, Pale City Brute, medium: the dead nobility's bodyguard corpse-knight crouched behind an enormous greatshield, ornate visored helm, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the sentinel crouched low behind an enormous greatshield that covers most of its body, one visored eye slit peeking over the top.
 A corpse-knight crouched behind an enormous greatshield, ornate visored helm, no polearm.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Enormous greatshield, almost body-length, scarred with frost and old dents
+* Ornate visored helm with a high crest
+* Armoured shoulder visible above the shield
+* Gauntleted hand gripping the rim
+* Ice crusted on the lower edge
+* Snow drifted against the shield
+* No polearm
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A greatshield-bearing corpse-knight, the white court sentinel is the dead nobility's bodyguard, planting itself before its lords and refusing to give ground. It lends its frozen resolve to the soldiers around it and weathers blows that would shatter a lesser guardian. It will not pursue and will not break. It only endures, as the court endures."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Immovable frozen loyalty.
+Specific pitfalls to avoid:
+* No polearm or halberd: that is the Guard.
+* Not the Undead Sentinel (tower shield and halberd).
+* Do not show it standing tall.
 ```
 
 ### 73. Ice Elemental
@@ -2528,13 +4783,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ICE ELEMENTAL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ice Elemental (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Ice Elemental, Pale City Controller, large: a lurching jagged figure of living glacier that freezes the ground it crosses, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the elemental lurching forward with both fists raised to slam, frost spreading on the ground in feathery lines.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Humanoid made of jagged blue-white glacier blocks
+* Faceted blocky arms with crystal spikes
+* Face as a rough crack with hollow eye holes
+* Cracks running through the body
+* Frost patterns spreading on the ground
+* Chunks of ice falling from its shoulders
+* Blizzard sky
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A lurching figure of living glacier, jagged and groaning, the ice elemental freezes the ground it crosses and the limbs it lands upon. Its slamming fists lock muscle solid in an instant. Fire is its bane; frost means nothing to it. The Pale City's deep cold breeds them where the ice grows thick enough to dream."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Groaning, slow, relentless cold.
+Specific pitfalls to avoid:
+* Not the Gelid Fiend (no devil horns or tail).
+* Not the Frost Giant.
+* No glowing.
 ```
 
 ### 74. Fallen Paladin
@@ -2543,13 +4811,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 FALLEN PALADIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Fallen Paladin (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Fallen Paladin, Pale City Elite, medium: an undead knight in defiled plate whose despair aura withers courage, wielding a necrotic-chilled flamberge, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the paladin kneeling then rising in a black chapel, defiled flamberge planted, head lifted.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Defiled plate with a broken holy sunburst on the breast, no readable lettering
+* Flamberge with a wavy blade
+* Cracked visor with darkness inside
+* Tattered tabard in torn stripes
+* Frost running across the plate
+* Broken chapel arch and shattered stained glass
+* Chains hanging from the pauldrons
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Holy oath turned to grave-frost, the fallen paladin is an undead knight in defiled plate, radiating an aura that withers the courage of all who come near. Its flamberge carries a necrotic chill, and despair leaks off it the way cold leaks off ice. It guards the Pale City's blackest chapels. Whatever vow it broke in life, it keeps a darker one now."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Broken vow, despair radiating cold.
+Specific pitfalls to avoid:
+* Not the Forsaken Knight (Ashlands, grave-light).
+* Not a living Paladin.
+* No halo.
 ```
 
 ### 75. Werebear
@@ -2558,13 +4839,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 WEREBEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Werebear (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Werebear, Pale City Brute, large: a hulking white-furred man-beast built to maul, with strength that hurls men aside, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the werebear on all fours charging from a snowbank, claws raking and jaws open.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Hulking half-man half-bear with a bear head and human-like shoulders
+* White shaggy fur
+* Wide clawed hands
+* Torn leftover tunic strips
+* Heavy jaws
+* Snow thrown up by its charge
+* Scarred shoulder
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "In the Pale City's frozen wilds prowls the werebear, a hulking man-beast of white fur and ruinous strength, damned kin to the werewolf but built to maul rather than skirmish. It strikes with both paws and a bone-cracking bite, and hurls grown men aside. Mundane weapons barely part its hide. A single one can break a war-band."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Savage brute force.
+Specific pitfalls to avoid:
+* Not the Dire Bear or Gorebeak (pure animals).
+* Not the Werewolf (wolf-headed).
+* Show it charging on all fours, never reared (the Dire Bear rears).
 ```
 
 ### 76. White Court Executioner
@@ -2573,14 +4867,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 WHITE COURT EXECUTIONER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Executioner (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Executioner, Pale City Elite, medium: a towering hooded headsman in frost carrying out centuries-old sentences with a headsman's axe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the executioner striding forward through snow with a frost-rimed headsman's axe resting over one shoulder.
 A towering hooded headsman striding forward with a frost-rimed executioner's axe over one shoulder.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Hood and cowl hiding the face with just two dark eye holes
+* Broad headsman's axe with a long haft, frosted
+* Leather apron over coarse mail and fur
+* Heavy gauntlets
+* Towering broad frame
+* Frost on the shoulders
+* Drifting snow and frozen gallows posts behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The white court executioner carries out sentences the living court passed centuries ago, a towering headsman whose frost-rimed axe seeks the weakest throat on the field. It strides past the hale to reach the wounded and ends them with grim efficiency. The court's justice did not die with the court. It only grew patient."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Patient pitiless judgement.
+Specific pitfalls to avoid:
+* Not the Guard (no armour finery).
+* Not the Frost Giant or Ogre.
+* No visible face.
 ```
 
 ### 77. Frost Wyvern
@@ -2589,14 +4896,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 FROST WYVERN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Wyvern (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Wyvern, Pale City Elite, large: a lean two-legged winged reptile the colour of dirty ice with a venom-and-frost tail stinger, smaller and rangier than a dragon; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Side three-quarter view of the wyvern on the wing stooping out of a white sky, tail stinger curled behind.
 A frost wyvern on the wing, two-legged and lean, distinctly smaller and rangier than a dragon.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Exactly two legs (taloned) and a pair of bat-like wings, wings double as forelimbs
+* Lean, long neck and rangy body
+* Narrow head with a toothy snout
+* Long whip tail ending in a barbed stinger
+* Dirty-ice scales rendered as sparse scale marks
+* Frost along the wing bones
+* Peaks and white sky with a few horizontal strokes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A lesser cousin of the great dragons, the frost wyvern is a winged reptile the colour of dirty ice, a venom-and-frost sting whipping at the end of its tail. It stoops from the white sky to harry and poison, then climbs out of reach before the answer comes. It is cunning rather than wise. The Pale City's frozen peaks are crowded with their roosts."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Predatory stoop.
+Specific pitfalls to avoid:
+* Exactly two legs: not a dragon.
+* Not the White Dragon (heavier, four legs).
+* No breath.
 ```
 
 ### 78. Gelid Fiend
@@ -2605,13 +4925,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GELID FIEND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gelid Fiend (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Gelid Fiend, Pale City Brute, large: a towering devil of blue-white ice and cruel geometry, a bound advocate of the frozen law, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the fiend holding an ice glaive with a tail curled behind, walls of ice rising at its sides.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Tall devil with faceted carapace like cut ice crystals
+* Horns and a long jaw
+* Ice glaive with a reach blade
+* Spiked tail lashing behind
+* Lattice-pattern carapace
+* Walls of ice rising on either side
+* Cold mist lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Pale City's frozen law keeps advocates that were never born under any sun. A gelid fiend is summoned and bound into the cold, a towering devil of blue-white ice and cruel geometry, its hide a lattice of frozen carapace. It raises walls of ice to pen its quarry and enforces judgements no mortal court would dare to sign. It does not tire, bargain, or relent, and the cold around it is the cold of a sentence already handed down."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Rigid, judicial menace.
+Specific pitfalls to avoid:
+* Not the Ice Elemental (no horns/lattice).
+* Not the Demon.
+* No glow.
 ```
 
 ### 79. Frost Giant
@@ -2620,13 +4953,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 FROST GIANT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Giant (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Giant, Pale City Elite, huge: a blue-skinned giant in glacier-ice armour wielding a greataxe, ruling the high drifts, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide low-angle view of the giant striding down a snowy street, greataxe raised overhead in two hands, boulder in the other arm's crook.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Twice a man's height, blue skin rendered by dense hatching
+* Glacier-ice plate armour with jagged edges
+* Greataxe with a crescent blade
+* Boulder tucked under the arm
+* Braided beard with ice beads
+* Drifts up to its knees
+* Ruined oversized colonnade behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Twice a man's height and blue-skinned, the frost giant goes armoured in glacier-ice and brings a greataxe down like an avalanche. It hurls boulders to scatter foes before it closes the distance. The Pale City's oldest streets were built to its scale, by something, for reasons no one living recalls. It rules the high drifts as a king."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Immense avalanching force.
+Specific pitfalls to avoid:
+* Not the Orc or Ogre.
+* Not the Ice Elemental.
+* No horns on the helm.
 ```
 
 ### 80. White Dragon
@@ -2635,14 +4981,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 WHITE DRAGON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of White Dragon (9.7 The Bestiary / Pale City Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of White Dragon, Pale City Elite, huge: a feral ice-crusted wyrm of pure predatory cold; it flies. Typical adult, alone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide three-quarter view of the dragon perched on a jagged ice outcrop with wings half-raised, head lowered toward the viewer.
 A typical adult white dragon, alone on a jagged ice outcrop with wings half-raised; no spire, no city.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Four legs and two large wings, half-raised
+* Heavy ice-crusted scales
+* Head with swept-back horns and a broad snout
+* Frozen breath wisps drawn as light stipple
+* Long spiky tail curled
+* Jagged ice outcrop under claws
+* No spire, no city, no buildings
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Pale City's frozen sovereign, the white dragon is a feral, ice-crusted wyrm whose breath flash-freezes whatever it touches. Less cunning than its kin but no less lethal, it is pure predatory cold given wings and an appetite. It nests in the highest spire and suffers the White Court about it as courtiers. When it descends, the city's eternal winter only deepens."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Feral cold sovereignty.
+Specific pitfalls to avoid:
+* No city, spire or courtiers.
+* Not the Frost Wyvern (two legs).
+* Not the Green or Black Dragon: crusted ice and broad snout.
 ```
 
 ### 81. Fire Beetle
@@ -2651,13 +5010,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 FIRE BEETLE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Fire Beetle (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Fire Beetle, Sun-Drowned Minion, small: a dog-sized, hard-shelled beetle with a ruddy inner glow that lights tomb passages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low side view of the beetle crawling across a tomb-passage floor, mandibles open and abdomen glowing.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Hard-shelled domed carapace with ridges
+* Six jointed legs
+* Pair of snapping mandibles
+* Antennae
+* Light from its glands shown as short rays on the stone
+* Tomb passage walls and sand
+* Dog-sized scale next to a broken urn
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Hard-shelled and the size of a dog, the fire beetle carries a ruddy inner heat that lights the tomb-passages it infests. It snaps with burning mandibles and bursts into a gout of flame when crushed. Tomb-robbers prize its glands for their steady light. The beetles prize the tomb-robbers for their meat."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Small, hot, hungry.
+Specific pitfalls to avoid:
+* Exactly six legs.
+* Do not draw wings in flight.
+* Not a scorpion.
 ```
 
 ### 82. Imp
@@ -2666,13 +5038,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 IMP - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Imp (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Imp, Sun-Drowned Skirmisher, small: a knee-high bat-winged spiteful fiend with a barbed venomous tail that flits about tombs; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the imp mid-flight, tail lashing forward, stinger raised, grinning.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Knee-high, red-skinned (rendered with dark hatching)
+* Bat wings spread
+* Barbed tail with a stinger
+* Small horns, pointed ears, sharp grin
+* Clawed hands and feet
+* Tomb wall behind and heat shimmer
+* No clothes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Knee-high and bat-winged, a barbed venomous tail lashing behind it, the imp flits about the Sun-Drowned tombs as the spiteful servant of darker things. It darts in to sting and wheels away cackling, untroubled by the desert's heat or its own infernal fire. Alone it is more nuisance than threat. It is also a herald of worse to come."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Spiteful cackling nuisance.
+Specific pitfalls to avoid:
+* Not the Demon (huge) or Demonborn ancestry.
+* Do not give it a weapon.
+* Not cute.
 ```
 
 ### 83. Skeleton Warrior
@@ -2681,14 +5066,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SKELETON WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeleton Warrior (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeleton Warrior, Sun-Drowned Minion, medium: a bare sun-bleached skeleton in corroded bronze scale, a priest-king's guard waiting centuries at its post, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the skeleton standing at its post in a sealed court, curved bronze blade held at the ready, sand drifted around its feet.
 A bare sun-bleached skeleton in corroded bronze scale and a crested bronze helm, holding a curved bronze blade, sand underfoot.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Bare bleached skeleton, no flesh
+* Corroded bronze scale armour with green-black patina rendered as dense stipple
+* Crested bronze helm with a horsehair plume rotted to strands
+* Curved bronze blade, notched
+* Left hand empty or holding a small round bronze buckler, no tall shield
+* Sand underfoot and a carved lintel behind
+* Hollow eye sockets in solid black
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A skeleton warrior stands at the post it was set in the year of its death, a sun-bleached frame in the corroded bronze of a priest-king's guard. It still holds the weapon it carried in life, waiting on an order that has not come in centuries. When intruders breach the sealed courts the order arrives at last, and the bones remember their drill. There are always more, ranked in the dark behind it."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Dry patient loyalty.
+Specific pitfalls to avoid:
+* Not the Undead Warrior (flesh, rust, ash, rectangular shield).
+* Not the Frozen Skeleton (frost).
+* Not the Skeleton Archer: no bow.
+* No ice or ash.
 ```
 
 ### 84. Corpsehound
@@ -2697,13 +5096,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CORPSEHOUND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Corpsehound (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Corpsehound, Sun-Drowned Skirmisher, medium: a jackal-headed, quick runner between man and beast that hunts caravans in loping packs with scimitar and jaws, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the corpsehound mid-lope across a dune, scimitar trailing in one hand, jaws open, laughing.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Jackal head with large upright ears and a long muzzle
+* Lean humanoid body with digitigrade legs
+* Scimitar in the right hand
+* Scraps of cloth wrapping and a leather harness
+* Mangy short fur rendered with stipple
+* Tail low behind
+* Dune crest and wind-blown sand
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Jackal-headed and quick, the corpsehound runs the dunes between man and beast, hunting the Sun-Drowned's caravans in loping packs. It strikes hardest off a running start, scimitar in one hand and slavering jaws beneath. They serve the tomb-courts as scouts and trackers. By the time the laughter reaches you, the pack already has your scent."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cackling predatory pursuit.
+Specific pitfalls to avoid:
+* Not a Gnoll (hyena-headed, spear/longbow).
+* Not the Blackfire Hound or Dire Wolf.
+* Do not draw four-legged.
 ```
 
 ### 85. Gnoll
@@ -2712,13 +5124,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GNOLL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gnoll (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Gnoll, Sun-Drowned Soldier, medium: a hyena-headed, rangy, hunger-ruled raider armed with a throwing spear and a longbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the gnoll sprinting forward with a spear drawn back to throw, longbow slung across the back.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Hyena head with a heavy jaw, rounded ears and a ruff of mane
+* Rangy long-limbed body with sloping back
+* Throwing spear in the throwing hand
+* Longbow and quiver on the back
+* Spotted fur rendered as short stipple spots
+* Scrap of cloth loincloth and bone jewellery
+* Sand and scattered bones
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Hyena-headed, rangy, and ruled by a bottomless hunger, gnolls sweep out of the Sun-Drowned wastes to fall on anything weaker than themselves. A gnoll that drops a victim grows frenzied and surges straight on to the next. They take slaves and meat and leave the bones in the sand. Their cackling carries for miles in the dry air."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cackling hunger.
+Specific pitfalls to avoid:
+* Not the Corpsehound (jackal head, scimitar).
+* Not the Beastman.
+* Do not draw it with a scimitar.
 ```
 
 ### 86. Giant Scorpion
@@ -2727,13 +5152,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GIANT SCORPION - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Scorpion (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Scorpion, Sun-Drowned Soldier, medium: a banded chitin-plated desert scorpion with two crushing pincers and a venom-dripping sting arched over its back, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the scorpion erupting from a dune, pincers wide, tail arched forward over its back, sand cascading.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Exactly eight legs plus two pincers
+* Segmented chitin plates banded across the body
+* Two large crushing pincers
+* Tail curved over the back ending in a barbed sting with a venom drop
+* Small eyes on the front of the head
+* Sand cascading from the shell
+* Dune field behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The size of a cart and banded in chitin plate, the giant scorpion bears two crushing pincers and a venom-dripping sting arched above its back. It buries itself in the dunes and erupts beneath whatever walks over it. Its venom liquefies a body from within. The Sun-Drowned's sands hide thousands of them, each one waiting on a footfall."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Sudden eruption from the sands.
+Specific pitfalls to avoid:
+* Exactly eight walking legs, two pincers, one tail.
+* Not the Giant Tarantula or Black Widow.
+* Do not draw wings.
 ```
 
 ### 87. Skeleton Archer
@@ -2742,13 +5180,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SKELETON ARCHER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeleton Archer (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeleton Archer, Sun-Drowned Cannon, medium: a priest-king tomb skeleton standing in a carved alcove with a still-strung tomb bow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Frontal three-quarter view of a skeleton standing in a carved niche loosing an arrow, the shape of the alcove fitted to it.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Bare bleached skeleton
+* Long recurved tomb bow, still strung
+* Arrow with intact feathers
+* Quiver of arrows on a rotted strap
+* Scrap of linen sash and bronze armlets
+* Carved niche with hieroglyph-like motifs rendered as non-text patterns
+* Dusty floor
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The archers of the priest-king tombs stand in alcoves carved to fit them, bows still strung after centuries. The arrows have not rotted; some things are kept by intention, others by spite. They loose in disciplined volleys at whatever the skeleton warriors have engaged. Their aim is exactly as good as it was the day they died."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Perfect spiteful patience.
+Specific pitfalls to avoid:
+* Not the Skeleton Warrior: bow, no sword.
+* Not the Undead Crossbowman.
+* No lettering or legible hieroglyphs.
 ```
 
 ### 88. Mummy
@@ -2757,13 +5208,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 MUMMY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Mummy (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Mummy, Sun-Drowned Controller, medium: a priest-king's preserved corpse bound in resin-soaked wrappings, risen in wrath, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the mummy stepping forward in a torch-lit tomb corridor, one arm raised in a cursing gesture, the other hanging with a fist.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Full wrapping of resin-soaked bandage strips, trailing loose ends
+* Gold burial collar and a broken funerary mask or bare face with black sockets
+* Dried skin visible at the wrapping gaps
+* Heavy fist ready to strike
+* Scarab-shaped amulets (abstract, no text)
+* Sandy floor and sarcophagus behind
+* Dust motes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A priest-king's preserved corpse risen in wrath, the mummy comes bound in resin-soaked wrappings and trailing the dread of a dead god's authority. Its touch lays a withering curse, and the mere sight of it can root a victim in terror. Fire is its one true fear. It guards a tomb whose treasures it will not share, not even now."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Dread authority of a dead god.
+Specific pitfalls to avoid:
+* Not the Skeleton Warrior.
+* Not a Lich.
+* Do not add a staff.
 ```
 
 ### 89. Skeletal Beast
@@ -2772,13 +5236,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SKELETAL BEAST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeletal Beast (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeletal Beast, Sun-Drowned Skirmisher, medium: the bound remains of a great desert predator, a charging framework of fang and claw, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Side three-quarter view of the bone-framework beast at a full charge across open sand, jaws wide.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Four-legged bony skeleton of a lion-like predator
+* Long skull with large fangs
+* Raking claws on each paw
+* No flesh at all, hollow ribs
+* Remnants of a binding cord and amulet around the neck
+* Sand kicked up behind
+* Tail made of vertebrae
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The bound remains of some great desert predator, the skeletal beast is a charging framework of fang and claw with nothing left in it to slow it down. It runs prey to ground across the open sand and tears with bony jaws. No flesh means no fatigue and no fear. The tomb-courts loose them like hounds."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Tireless, hungry momentum.
+Specific pitfalls to avoid:
+* Not a living lion.
+* Not the Corpsehound.
+* No wings or flame.
 ```
 
 ### 90. Wind Elemental
@@ -2787,13 +5264,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 WIND ELEMENTAL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Wind Elemental (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Wind Elemental, Sun-Drowned Skirmisher, large: a howling, near-invisible spiral of desert air that flings sand and bodies; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of a funnel-shaped vortex tearing across dunes, defined by swirling sand lines, with a vague hollow face in the vortex.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Spiral funnel outlined by curved parallel lines of sand grains
+* Dense stipple at the base of the vortex
+* Faint face with two hollow eyes in the vortex
+* Debris flung outward: a spear, a cloak, a skull
+* Sparse lines for the invisible centre
+* Dune surface scoured
+* Sky ruled with horizontal strokes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A howling spiral of desert air turned malevolent, the wind elemental is a near-invisible vortex that flings sand and bodies with equal ease. It buffets foes off their feet and is barely troubled by ordinary weapons. It haunts the open wastes where the Sun-Drowned's storms are born. You hear it long before the sand begins to bite."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Howling hostile weather.
+Specific pitfalls to avoid:
+* Do not draw a humanoid body.
+* Not the Fire Elemental or a tornado cartoon.
+* No lightning.
 ```
 
 ### 91. Desert Naga
@@ -2802,13 +5292,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DESERT NAGA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Desert Naga (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Desert Naga, Sun-Drowned Controller, large: a great serpent with an almost-human face coiled among tomb pillars, old and patient, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the naga coiled around a toppled tomb pillar, torso raised with the almost-human face turned to the viewer, mouth parted to spit.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Long scaled serpent body in thick coils
+* Almost-human face with heavy-lidded eyes and a hood-like fold of skin
+* No arms, no legs
+* Tapering tail disappearing behind a pillar
+* Venom drip from the fangs
+* Faded gilded bands on the scales
+* Toppled pillars and sand drifts
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A great serpent with an almost-human face and the patient cunning of something very old, the desert naga coils among the tomb-pillars. It spits venom from a distance and crushes what comes close, hexing the strong to leave them weak. The priest-kings kept them as guardians and oracles. They guard still. They no longer answer."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Ancient guardian silence.
+Specific pitfalls to avoid:
+* Not the Swamp Naga: dry stone pillars and sand, no reeds.
+* Not the Medusa (hair snakes).
+* No arms or hands.
 ```
 
 ### 92. Fire Elemental
@@ -2817,13 +5320,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 FIRE ELEMENTAL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Fire Elemental (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Fire Elemental, Sun-Drowned Cannon, large: a roaring man-shape of living flame, white-hot at the core and shedding embers, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the elemental striding across a tomb floor, both arms extended to touch, a trail of cinders behind.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Humanoid outline built from layered flame tongues
+* Solid white core with black flame hatching around it
+* Sparse ember dots rising
+* Hollow black eye sockets
+* Cinders and scorch marks on the floor
+* Heat distortion lines in the air
+* Tomb pillars blackened
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A roaring man-shape of living flame, white-hot at the core and shedding embers at the edges, the fire elemental sets alight everything it touches and scorches whatever strikes it. Water and ice are its only checks; the desert sun is its cradle. It draws a trail of cinders across the tomb-floors. To lay hands on it is to burn."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Raw scorching presence.
+Specific pitfalls to avoid:
+* Not the Brass Golem or Imp.
+* Do not use glow, use ink flame shapes.
+* No weapons.
 ```
 
 ### 93. Giant Skeleton
@@ -2832,13 +5348,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GIANT SKELETON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Skeleton (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Skeleton, Sun-Drowned Brute, large: a looming framework of fused bone twice a man's height with fists like falling masonry, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the colossus advancing through a tomb gallery, one massive fist raised to smash.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Twice a man's height skeleton of fused bone plates
+* Thick pillar-like limb bones
+* Enormous skull with a heavy brow
+* Massive bone fists
+* Ribs fused into a shield-like cage
+* Cracked pieces and bone dust
+* Tomb carvings of kneeling figures behind (non-legible)
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A looming framework of fused bone twice a man's height, the giant skeleton is what remains of something that was never entirely natural and is far less so now. It moves with grinding deliberation, sweeping aside anything in its path with fists like falling masonry. Tomb-city carvings show its kind kneeling before the priest-kings; none show them standing. Whatever it was raised to guard, it guards it still."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Grinding deliberation.
+Specific pitfalls to avoid:
+* Not the Skeleton Warrior scaled up: no armour.
+* Not the Frozen Skeleton.
+* No weapon besides fists.
 ```
 
 ### 94. Medusa
@@ -2847,13 +5376,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 MEDUSA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Medusa (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Medusa, Sun-Drowned Elite, medium: a serpent-haired figure among statues that were once admirers, fighting with shortsword and snake-hair, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the medusa standing among statues in a tomb gallery, shortsword in hand and serpent hair writhing.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Woman-shaped figure in a draped robe
+* Head of living snakes in place of hair
+* Eyes hidden in the shadow of a hood or blindfold so no gaze effect is drawn
+* Shortsword in right hand
+* Surrounding statues of surprised petrified people caught mid-stride
+* Gilded tomb-gallery columns
+* Snake-hair biting forward
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A serpent-haired figure whose gaze turns the living slowly to stone, the medusa lurks among the statues that were once its admirers. It fights with blade and venomous snake-hair, but its eyes are what fill the tomb-galleries with permanent witnesses. The priest-kings cursed its kind, or rewarded them; the tales cannot agree. Their victims cannot say."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Elegant doom.
+Specific pitfalls to avoid:
+* Not the Night Hag or Harpy.
+* Snake hair, not tentacles.
+* No gore.
 ```
 
 ### 95. Tomb Necromancer
@@ -2862,13 +5404,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TOMB NECROMANCER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tomb Necromancer (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tomb Necromancer, Sun-Drowned Controller, medium: a withered official in the faded regalia of a dead bureaucracy, raising the buried to enforce forgotten statutes, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the necromancer on a dais holding a court staff, one hand gesturing to the ground where hands break through sand.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Withered face under a tall official's cap
+* Faded layered regalia with chains of office
+* Court staff topped with a scales-like emblem (no text)
+* Gesturing hand with long nails
+* Skeletal hands pushing out of the sand
+* Papyrus rolls on the belt
+* Dim columns
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The necromancers of the Sun-Drowned were the tombs' original administrators, robed officials who chose preservation over death and never gave up their posts. A tomb necromancer is a withered figure in the faded regalia of a dead bureaucracy, raising the buried to enforce statutes no living court remembers. It withers the living with a gesture and calls up the dead to fill the gaps in its ranks. Everything it administers belongs to a world that ended."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Pedantic dead authority.
+Specific pitfalls to avoid:
+* Not the Lich or Mummy.
+* Not the Tomb Guardian.
+* No glow.
 ```
 
 ### 96. Tomb Guardian
@@ -2877,13 +5432,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 TOMB GUARDIAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tomb Guardian (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tomb Guardian, Sun-Drowned Soldier, medium: a faceless construct of gilded stone and ritual standing at a threshold with a ceremonial glaive, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Frontal three-quarter view of the guardian planted in a tomb doorway, ceremonial glaive held upright with its blade high.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Faceless smooth head, gilded flecks
+* Humanoid body of carved stone plates with ritual motif bands
+* Ceremonial glaive with a long curved blade
+* Gold leaf worn and flaking
+* Rigid symmetrical stance
+* Massive threshold with sealing stones
+* Dusty carved lintel
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A faceless construct of gilded stone and ritual, the tomb guardian was built to defend the priest-kings' seals and is tireless in that one duty. It plants itself at a threshold, lends its iron resolve to the dead around it, and cannot be hurried or frightened. It has held one doorway for a thousand years. It will hold it for a thousand more."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+A thousand-year vigil.
+Specific pitfalls to avoid:
+* Not the Stone Sentinel (granite, giant sword).
+* Not the Brass Golem.
+* No face or eyes.
 ```
 
 ### 97. Brass Golem
@@ -2892,13 +5460,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BRASS GOLEM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Brass Golem (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Brass Golem, Sun-Drowned Brute, medium: a burnished automaton holding trapped forge-heat that hammers with searing fists, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the golem pounding both fists forward, heat shimmering around them, in front of a sealed treasure door.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Burnished brass plates with rivet rows
+* Squat humanoid frame with thick limbs
+* Fists with heat shimmer lines and scorch marks
+* Slit visor, no face
+* Scorched stone floor beneath its feet
+* Sealed door with ornate bands
+* Polished highlights left as white paper
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A burnished automaton glowing with the trapped heat of the forge-rites that made it, the brass golem hammers with fists that sear on contact. Fire cannot harm it; it is fire's own child. The Sun-Drowned's wealthiest tombs are sealed behind these. They do not rust, tire, or reason."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold-eyed forge-heat.
+Specific pitfalls to avoid:
+* Not the Iron Golem: smaller and brass, not black iron.
+* Not the Fire Elemental.
+* No flames.
 ```
 
 ### 98. Manticore
@@ -2907,13 +5488,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 MANTICORE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Manticore (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Manticore, Sun-Drowned Elite, large: a fusion of lion's body, bat's wings and a man's leering face that flicks volleys of iron spikes from its tail; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the manticore crouched on a dune-road ridge, tail arched over its back with spikes fanned out, wings half open.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Lion's body with a thick mane
+* Bat wings half open
+* Human male face with a leering grin and beard
+* Scorpion-like arched tail studded with iron spikes
+* Spikes in flight shown as lines
+* Clawed paws gripping the ridge
+* Narrow dune-road below
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A monstrous fusion of lion's body, bat's wings, and a man's leering face, the manticore flicks volleys of iron spikes from its lashing tail. It waits where the dune-road narrows and rains barbs on whatever it has trapped. It savours a meal that begged first. The Sun-Drowned's loneliest trails are its larder."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Leering patient cruelty.
+Specific pitfalls to avoid:
+* Wings required: it flies.
+* Not a sphinx.
+* Tail is a spiked fan of iron barbs, not a scorpion sting.
 ```
 
 ### 99. Demon
@@ -2922,13 +5516,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 DEMON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Demon (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Demon, Sun-Drowned Elite, huge: a horned iron-coloured fiend wreathed in clinging flame, wielding a hooked glaive, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide low-angle view of the demon striding out of a breached ward in a tomb, hooked glaive in both hands, fire clinging to its shoulders.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Huge horned fiend, taller than the tomb arch
+* Skin the colour of cooling iron, cracked like cooling metal
+* Flame rendered as ink tongues that cling but do not consume
+* Hooked glaive with a barbed blade
+* Clawed hands and feet
+* Broken ward circle on the floor (abstract marks)
+* Cracked pillars
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A horned fiend the colour of cooling iron, wreathed in a flame that clings without consuming it, the demon clawed its way into the Sun-Drowned through some tomb-breached ward. It hews with a hooked glaive and looses surges of fire that pay no heed to armour. Those near it feel their courage drain away. Something summoned it once, and that something is almost certainly dead by now."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Infernal oppressive dread.
+Specific pitfalls to avoid:
+* Not the Imp (small, winged).
+* Not the Gelid Fiend (ice).
+* No bat wings: it does not fly.
 ```
 
 ### 100. Blue Dragon
@@ -2937,14 +5544,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BLUE DRAGON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Blue Dragon (9.7 The Bestiary / Sun-Drowned Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Blue Dragon, Sun-Drowned Elite, huge: a horned, sand-scaled wyrm that burrows beneath dunes and erupts in a lance of lightning; it flies and burrows. Typical adult, bursting from a dune, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide low-angle view of the dragon bursting up out of a dune, sand cascading from its horns and shoulders, head thrown back.
 A typical adult blue dragon bursting up out of a dune, sand cascading from its horns.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Large horn crest on the head and along the jaw
+* Sand-scaled hide with fine scale texture
+* Four legs with powerful claws and wings still folded in the sand
+* Sand pouring from horns, shoulders and jaw
+* Lightning hinted by a few jagged lines at the throat
+* Dune slopes collapsing
+* Sparse sky
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Sun-Drowned's apex tyrant, the blue dragon is a horned, sand-scaled wyrm that burrows beneath the dunes and erupts amid its prey in a lance of lightning. Vain and territorial, it rules a swathe of desert and the tomb-courts caught within it. It hoards beneath the sand and surfaces only to feed or to punish. The static before its breath raises every hair on the body."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Territorial vain power.
+Specific pitfalls to avoid:
+* Not the Green, White or Black Dragon: horned and sand-scaled.
+* No tomb or humans in the frame.
+* No glow on the lightning.
 ```
 
 ### 101. Bogling
@@ -2953,13 +5573,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BOGLING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Bogling (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Bogling, Mire Minion, small: a squat frog-mouthed swamp creature lurking chest-deep with a spear and mud-darts, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the bogling standing chest-deep in reed-choked shallows, spear raised and a mud-dart in the other hand.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Squat body with a wide frog mouth
+* Bulging eyes set on top of the head
+* Spear with a stone head and long haft
+* Mud dart ready in the throwing hand
+* Warty damp skin rendered with stipple
+* Reeds and lily pads, rippled water
+* Webbed fingers
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Squat and frog-mouthed, boglings lurk chest-deep in The Mire's reeking shallows with spears at the ready. They croak warnings across the water and hurl mud-darts before they close. Cowardly alone, they mass in the hundreds in the deep fens. The Mire's first warning is always the same: a sudden, total silence of frogs."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Croaking nervous menace.
+Specific pitfalls to avoid:
+* Not the Swamp Goblin.
+* Not the Lizardfolk.
+* Do not draw it as a cute frog.
 ```
 
 ### 102. Swamp Goblin
@@ -2968,13 +5601,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SWAMP GOBLIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Goblin (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Goblin, Mire Minion, small: a slime-streaked goblin that paddles the Mire's channels and blows poisoned darts from the reeds, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low three-quarter view of the goblin crouched in a rough reed punt, blowpipe at its lips, bog knife at the belt.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Knee-high slime-streaked goblin with wet hatched skin
+* Blowpipe held to the lips, dart visible
+* Bog knife in a belt sheath
+* Crude dugout punt with a paddle
+* Reed tufts woven into its clothing
+* Webbed fingers
+* Strings of teeth and trinkets stripped from the drowned
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Slime-streaked cousins of their forest kin, swamp goblins paddle The Mire's channels and blow poisoned darts from the reeds. They melt into the cover and strike from wherever the water hides them. A nuisance one at a time, a hazard in a swarm. They strip the drowned for trinkets and teeth."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Sly damp ambush.
+Specific pitfalls to avoid:
+* Not the Greenmark Goblin (no sling, dry land) or Cave Goblin.
+* Not the Bogling (frog mouth).
+* No fire.
 ```
 
 ### 103. Zombie
@@ -2983,13 +5629,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 ZOMBIE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Zombie (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Zombie, Mire Minion, medium: a waterlogged corpse the Mire would not keep, lurching upright in tattered remains and reaching up from beneath walkways, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the zombie rising from black water beneath a rotting plank walkway, one arm reaching up through the gap.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Bloated waterlogged corpse with sagging skin
+* Tattered clothing hanging in strands
+* Pondweed and mud draped on the shoulders
+* Reaching arm and spread fingers
+* Dull blank eyes as solid black
+* Broken plank walkway and ripple lines
+* Reeds
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A waterlogged corpse that The Mire would not keep, the zombie lurches upright in tattered remains, driven by a single-minded hunger. It is slow and mindless and horribly hard to put down, shrugging off blows that would fell a living man. It drifts beneath the walkways until something warm passes overhead. Then it reaches up."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Slow, mindless reaching hunger.
+Specific pitfalls to avoid:
+* Not the Possessed Corpse (dry, vapour-wrapped).
+* Not the Ghoul.
+* No weapon.
 ```
 
 ### 104. Stirge
@@ -2998,13 +5657,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 STIRGE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Stirge (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Stirge, Mire Minion, small: a cat-sized bloated mosquito-thing with a needle proboscis and a blood-swollen belly; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Close three-quarter view of the stirge mid-flight, proboscis lowered at an attack angle, wings a blur of lines.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Cat-sized insect body with a bloated belly
+* Long needle proboscis
+* Two translucent insect-like wings
+* Six thin legs with hooked tips
+* Round eyes
+* Fine hairs
+* Dusk air with reed stalks
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A bloated mosquito-thing the size of a cat, the stirge carries a needle proboscis and a belly that swells red with stolen blood. It darts in, latches on, and drains until it is pried loose. The Mire's dusk air hums with them. One is an itch; a swarm is exsanguination."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hungry itch.
+Specific pitfalls to avoid:
+* Not the Giant Bat (mammal).
+* Six legs.
+* Do not draw a human face.
 ```
 
 ### 105. Will-o'-Wisp
@@ -3013,13 +5685,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 WILL-O'-WISP - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Will-o'-Wisp (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Will-o'-Wisp, Mire Cannon, small: a drifting orb of pale corpse-light that lures travellers into the mire; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low view across dark water of a single glowing orb hanging motionless above the reeds like a lantern, with a hint of a path that vanishes into the mire.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* A single round orb drawn as a white circle with fine radial lines
+* Dense crosshatched darkness around it
+* Reeds in silhouette
+* Reflections on the black water in short strokes
+* A drowned traveller's lantern or boot at the bottom edge
+* A narrow plank path leading toward it
+* Small lightning-like spikes at its edge
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A drifting orb of pale corpse-light, the will-o'-wisp lures travellers off the safe paths and into the sucking mire to drown. It hangs motionless as a false beacon until prey strays near, then strikes with a shock of cold lightning. It feeds on the terror of the dying. The kindest-looking light in the mire is the one most likely to kill."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Kindly looking, deadly.
+Specific pitfalls to avoid:
+* No face or body.
+* Not an Ember Skull.
+* Not a real lantern.
 ```
 
 ### 106. Lizardfolk Warrior
@@ -3028,13 +5713,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 LIZARDFOLK WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Warrior (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Warrior, Mire Soldier, medium: a scaled cold-eyed pack fighter with heavy club and javelin who defends its breeding-pools, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view on a rotting bank, the warrior stepping forward with a heavy club raised and a javelin held in the off hand.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Scaled lizard head with a long snout and a ridge crest
+* Muscular humanoid body with a thick tail
+* Heavy club of knotted wood
+* Javelin with a stone head
+* Simple hide harness and bone beads
+* Clawed webbed feet
+* Reeds and mud banks
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Scaled and cold-eyed, the lizardfolk warrior hunts The Mire as easily in the water as on the rotting banks, fighting with heavy club and javelin in disciplined packs. They are not cruel, only pragmatic; to them the living are meat and territory. They defend their breeding-pools without mercy. The mire is theirs, and they forget no intruder who enters it."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Pragmatic territorial menace.
+Specific pitfalls to avoid:
+* Not the Troglodyte or Kobold.
+* Not the Drakeblood hero.
+* No bow or harpoon.
 ```
 
 ### 107. Lizardfolk Hunter
@@ -3043,13 +5741,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 LIZARDFOLK HUNTER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Hunter (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Hunter, Mire Cannon, medium: a patient silent lizard-man stalking the margins with a barbed harpoon, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the hunter half-hidden in reeds, harpoon drawn back to throw, a coiled line trailing.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Scaled head with a long snout and slit-pupil eyes
+* Barbed harpoon with a coil of rope
+* Hide wrap with reeds woven in
+* Low crouched posture
+* Clawed webbed toes in the shallows
+* Ripples and walkway timbers
+* Camouflage stipple
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A barbed harpoon in its claws, the lizardfolk hunter stalks The Mire's margins, dragging prey off the walkways and into the water where every advantage is its own. It strikes from cover and the reeds, unseen until the line snaps taut. Patient and silent, it waits out the careless. By the time it moves, you are already in the water."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Unseen until the line snaps taut.
+Specific pitfalls to avoid:
+* Not the Warrior (club): this has a harpoon.
+* Not a fisherman or human.
+* No armour.
 ```
 
 ### 108. Crocodile
@@ -3058,13 +5769,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CROCODILE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Crocodile (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Crocodile, Mire Skirmisher, large: a monstrous-length log-still ambusher exploding from the murk to drag victims under in a death-roll, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the crocodile surging half out of the water, jaws clamped on a plank walkway, spray flying.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Long armoured body with ridged osteoderms
+* Heavy jaws with interlocking teeth
+* Four short sprawled legs, long tail
+* Small eyes high on the head
+* Water cascades and ripples
+* Plank walkway and reeds
+* Scale pattern in crosshatch
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Grown to monstrous length in The Mire, the crocodile is a log-still ambusher that explodes from the murk to clamp on and drag its victim under in a death-roll. It can lie motionless for hours with only its eyes above the water. The deep channels belong to these. The walkways exist because of them."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Sudden explosive ambush.
+Specific pitfalls to avoid:
+* Four legs.
+* Not the Giant Constrictor or Swamp Naga.
+* No wings or horns.
 ```
 
 ### 109. Lizardfolk Shaman
@@ -3073,13 +5797,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 LIZARDFOLK SHAMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Shaman (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Shaman, Mire Controller, medium: a reed-cloaked lizard-man who speaks for the swamp-spirits and heals its pack with a staff and spirit-bolts, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Full figure in three-quarter view standing knee-deep, staff raised, mouth open in a croaked invocation.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Scaled head with a fan-like frill
+* Cloak of dried reeds
+* Staff wrapped with feathers and bones
+* Bone trinkets around the neck
+* Hand extended with a dark lightning-like zigzag
+* Clawed feet in water
+* Reed banks and fog lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Cloaked in dried reeds, the lizardfolk shaman speaks for the swamp-spirits, mending its packmates' wounds and hexing their prey. It hangs back among the warriors, croaking invocations over the water. Its magic is old and patient and bound to the mire itself. Kill the shaman and the pack fights harder, but it bleeds out faster."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Old patient ritual.
+Specific pitfalls to avoid:
+* Not the Warrior or Hunter.
+* Not the Troglodyte Shaman (fungus).
+* No glow.
 ```
 
 ### 110. Miasma Serpent
@@ -3088,13 +5825,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 MIASMA SERPENT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Miasma Serpent (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Miasma Serpent, Mire Skirmisher, medium: a bloated water-snake that exhales poison clouds as it swims, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the snake swimming through a channel with its head raised above the surface, haze rising from its open mouth.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Bloated thick water-snake body with diamond scale pattern
+* Swollen throat
+* Open mouth with fangs and a forked tongue
+* Rendered haze as dense fine stipple around the head
+* Ripple lines on the water
+* Reed stalks
+* No legs, no hood
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A bloated water-snake, the miasma serpent exhales clouds of poison gas as it swims, leaving a drifting green pall across the channels. Its bite carries a venom that festers fast. It hunts by lying in the haze of its own making. The mire's foulest-smelling stretches are where they nest."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Foul drifting menace.
+Specific pitfalls to avoid:
+* Not the Swamp Naga (no human face, not huge).
+* Not the Giant Constrictor (not climbing).
+* No wings.
 ```
 
 ### 111. Swamp Naga
@@ -3103,13 +5853,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SWAMP NAGA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Naga (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Naga, Mire Controller, large: a great serpent with a hooded watchful face coiled among drowned ruins, spitting venom and binding prey, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the naga coiled around a half-sunk column, hooded head raised and mouth spitting venom.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Great serpent body in coils
+* Hooded watchful face with a hood like a cobra
+* Venom spit as short drops
+* Half-sunk drowned stonework
+* Algae and water weeds on its scales
+* Water ripples
+* No arms
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A great serpent with a hooded, watchful face, the swamp naga coils among the drowned ruins, spitting venom and binding prey in its crushing length. It hexes the strong to sap their strength before it strikes. Older than the mire's human settlements, it remembers when the ground was dry. It guards sunken treasures no one else can reach."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Old, watchful, aloof.
+Specific pitfalls to avoid:
+* Not the Desert Naga: bog, weeds, drowned ruin, no sand.
+* Not the Miasma Serpent.
+* No arms.
 ```
 
 ### 112. Giant Constrictor
@@ -3118,13 +5881,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 GIANT CONSTRICTOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Constrictor (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Constrictor, Mire Skirmisher, medium: a snake long enough to bridge a channel that drops from overhanging branches to coil and crush, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the snake dropping from a low branch with loops already wrapping an empty rope-slung pack, head striking down.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Very long muscular snake body hanging from a branch in loops
+* Triangular head with open jaws
+* Patterned scales in diamonds
+* Coils tightening around a sack or empty cloak
+* Low branch and Spanish-moss-like hanging weeds
+* Water below with ripples
+* No hood and no limbs
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Long enough to bridge a channel, the giant constrictor drops from overhanging branches to coil and crush. It strikes, immobilizes, and squeezes the breath from its prey in the space of a few seconds. Then it slides back into the water before any rescue can reach it. The low branches over the mire are never safe to walk beneath."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Slow sudden crush.
+Specific pitfalls to avoid:
+* Not the Miasma Serpent or naga.
+* Do not show a victim.
+* No venom drops.
 ```
 
 ### 113. Shambling Mound
@@ -3133,13 +5909,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SHAMBLING MOUND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Shambling Mound (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Shambling Mound, Mire Brute, large: a heaving mass of animate rot and creeper-vine, roughly man-shaped and tireless, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the mound lumbering through shallow fen, both vine-wrapped arms swinging in a slam.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Roughly man-shaped heap of rotten vegetation, vines and mud
+* Creeper vines as thick cords
+* Bits of rotted wood, bone and cloth sticking out
+* Hollow dark pits for eyes
+* Dripping muck
+* Bulky arms ending in clumps
+* Water ripples
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A heaving mass of animate rot and creeper-vine, roughly man-shaped and utterly tireless, the shambling mound engulfs its prey in its sodden bulk. Lightning only feeds it; blades vanish into the muck. It drifts the deep fen absorbing whatever it smothers. The mire grows them wherever enough has drowned and rotted together."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Sodden, tireless bulk.
+Specific pitfalls to avoid:
+* Not a Briarling or Dryad (no bark skin).
+* Not a Treant.
+* No flowers or beauty.
 ```
 
 ### 114. Swamp Hag
@@ -3148,13 +5937,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SWAMP HAG - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Hag (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Hag, Mire Controller, medium: a warty, weed-haired crone who poles through the Mire cursing all she meets, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the hag standing on a small punt, poling it through fog, one clawed hand pointed in a curse.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Warty skin, long nose, sunken cheeks
+* Weed-haired scalp with dripping strands
+* Ragged dress of dark cloth with pondweed
+* Clawed hand pointing
+* Long pole
+* Lantern hung on the punt
+* Fog and reed banks, lonely hut on stilts in the distance
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A warty, weed-haired crone, the swamp hag poles their way through The Mire cursing all they meet, slipping half into the spirit-world when cornered. Their stench chokes out hope. They bargain, they lie, and they feed on misery. The loneliest hut in the mire is theirs, and it is never empty for long."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cruel sociable menace.
+Specific pitfalls to avoid:
+* Not the Night Hag (ashen, shadowy).
+* Not the Banshee.
+* No broom or hat.
 ```
 
 ### 115. Banshee
@@ -3163,13 +5965,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BANSHEE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Banshee (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Banshee, Mire Controller, medium: the shrieking translucent spirit of a woman drowned in grief; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the banshee drifting over fog-covered water, mouth open in a wail, long hair streaming upward.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Translucent woman-shaped figure drawn with open sparse lines
+* Long streaming hair and wet gown that trails into wisps
+* Open mouth as solid black void
+* Drowned and sunken-eyed face
+* Arms outstretched, fingers long
+* Lower body dissolving in mist
+* Fog and reeds
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The shrieking spirit of a woman drowned in grief, the banshee is a translucent horror whose wail stops hearts and freezes the blood. It drifts The Mire's fog, and its keening carries the plain certainty of death. Steel passes through it; only magic answers. To hear the wail clearly is to be the one it has chosen."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Keening grief.
+Specific pitfalls to avoid:
+* Not the Spectre (burnt) or Ice Wraith (icy).
+* No gore.
+* Do not draw a classic sheet ghost.
 ```
 
 ### 116. Swamp Troll
@@ -3178,13 +5993,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SWAMP TROLL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Troll (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Troll, Mire Brute, large: a slime-green giant of reaching arms and a tusked maw that hauls itself on all fours through the Mire, regenerating wounds, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the troll heaving itself forward on all fours through black water, one huge clawed arm reaching.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Slime-green hulking giant on all fours
+* Long reaching arms with rending claws
+* Tusked underslung maw
+* Drooping skin with slime
+* Reeds and weeds draped on its back
+* Wound scars closing
+* Dark mire water to the shoulders
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A slime-green giant of reaching arms and a tusked maw, the swamp troll hauls itself through The Mire on all fours, regenerating any wound that fire or acid has not seared. It stinks of the bog and hits like a falling tree. It is too stupid to fear and too durable to ignore. Mire-folk keep oil and flint within reach at all times."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Stupid, enduring bulk.
+Specific pitfalls to avoid:
+* Not the Forest Troll (moss-slick, upright).
+* Not the Ogre.
+* No weapon.
 ```
 
 ### 117. Hydra
@@ -3193,13 +6021,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 HYDRA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Hydra (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Hydra, Mire Elite, huge: a many-headed reptilian horror wallowing in the Mire's deepest pools, each serpentine neck striking on its own, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide three-quarter view of the hydra rearing from a black pool, five to seven serpent necks striking in different directions, with three clearly biting.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Five to seven long serpentine necks each with a head
+* Heavy reptilian body half-submerged
+* Fanged mouths open on at least three heads
+* Wet scales with sparse scale marks
+* One stump of a head already healing beside the others
+* Lily pads and bones in the water
+* Reed-choked banks
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A many-headed reptilian horror, the hydra wallows in The Mire's deepest pools, each serpentine neck striking on its own and snapping at anything in reach. It cannot be frightened, and it bites back the instant something draws near. Cut a head away and it simply works with the others. It is the apex even the crocodiles fear."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Chaotic coordinated menace.
+Specific pitfalls to avoid:
+* Many heads: at least five necks.
+* Not a dragon: no wings.
+* Do not draw fire from the heads.
 ```
 
 ### 118. Blackwater Wight
@@ -3208,13 +6049,26 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BLACKWATER WIGHT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Blackwater Wight (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Blackwater Wight, Mire Elite, medium: a barnacled drowned corpse-warrior rising from black pools with a life-drinking drowned blade, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of the wight wading up out of a black pool, drowned blade held low and water pouring from its armour.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Barnacled corroded armour and helm
+* Drowned blade with algae and a notched edge
+* Sunken face with hollow eyes
+* Waterweed draped on the arms
+* Water streaming from the plates
+* Other drowned figures rising dimly behind
+* Black water and mist
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The drowned dead given malice, the blackwater wight is a barnacled corpse-warrior that rises from the mire's black pools, hauling the recently dead up behind it. Its blade drinks the life from those it cuts, and the wound will not fully close until the adventure ends. It commands the drowned the way a sergeant commands recruits. The mire's deepest channels are its barracks."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Chilling command over the drowned.
+Specific pitfalls to avoid:
+* Not the Undead Warrior or Forsaken Knight.
+* Not a living sailor.
+* No glow.
 ```
 
 ### 119. Mire Titan
@@ -3223,14 +6077,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 MIRE TITAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Mire Titan (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Mire Titan, Mire Brute, huge: a colossal froglike amphibian horror of warty hide and lashing tentacles with a vast distensible maw. Typical individual, alone, waist-deep in fen water, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide low view of the titan standing waist-deep in fen water, reeds and mud sliding from its body, tentacles raised and mouth partly open.
 A typical Mire Titan alone, waist-deep in fen water, reeds and mud sliding from its body; no geodes or hunters.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Froglike bulk with warty hide
+* Several thick lashing tentacles from the shoulders and jaw
+* Vast distensible maw with a ridge of small teeth
+* Wide flat head with small eyes
+* Reeds and mud sliding from its flanks
+* Water to the waist, ripples spreading
+* No geodes, no hunters or humans
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A colossal amphibian-horror, the mire titan is a froglike bulk of warty hide and lashing tentacles crowned by a vast, distensible maw. It seizes prey in its arms and swallows them whole, dissolving them in its acid gut while they still struggle. It is The Mire's living sinkhole. Whole expeditions have gone into one and left only ripples."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Looming living sinkhole.
+Specific pitfalls to avoid:
+* No geodes or hunters.
+* Not a Hydra or Crocodile.
+* Do not show a victim.
 ```
 
 ### 120. Black Dragon
@@ -3239,14 +6106,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 BLACK DRAGON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Black Dragon (9.7 The Bestiary / The Mire Bestiary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Black Dragon, Mire Elite, huge: a sleek horned wyrm the colour of stagnant water with an acid breath; it flies and swims. Typical adult, alone, rising from open black water, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide low-angle view of the dragon rising from open black water, acid dripping from its jaws, wings partly lifting.
 A typical adult black dragon rising from open black water, acid dripping from its jaws; no ruin or architecture.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Sleek horned head with swept-back horns
+* Gaunt skull-like jaw with dripping acid
+* Wings half-lifting out of the water
+* Long neck draped in water weed
+* Pitted scales, glossy black
+* Water streaming and ripples
+* No ruin, no architecture, no humans
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Mire's sovereign, the black dragon is a sleek, horned wyrm the colour of stagnant water, its breath a hiss of acid. Cruel and patient, it lairs in a flooded ruin and rules the fen through terror, taking tribute and tearing apart any who refuse to pay. It swims as easily as it flies. When the frogs go silent and the water stills, it is already close."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cruel patient emergence.
+Specific pitfalls to avoid:
+* No ruin or architecture.
+* Not the Green, White or Blue Dragon: sleek, skull-like head.
+* No breath cone.
 ```
 
 ## Bosses (15)
@@ -3259,14 +6139,28 @@ Printed 2.6 in wide · aspect 3:2. Family framing: The unique named boss shown w
 
 ```text
 THE ANCIENT VOID DRAGON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ancient Void Dragon (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ancient Void Dragon, a boss wyrm older than the Fall and perhaps its cause, whose scales drink light and whose breath unmakes substance, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Night sky over a barren crag; the dragon is drawn mostly as negative space, a wyrm-shaped absence of untouched paper edged by fine contour lines, stars dimming around it. A broken watchtower stands small at the bottom for scale.
 The Ancient Void Dragon drawn mostly as negative space: a wyrm-shaped absence edged by fine lines, stars dimming around it.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Wyrm silhouette formed by blank paper bounded by thin broken contour lines
+* Stars as stippled points thinning and vanishing near its outline
+* Spreading wings and a long coiling neck implied by what the stars are missing
+* Where the breath passes, the landscape is erased to bare white with abrupt edges
+* Barren crag, snapped watchtower and a dry riverbed below
+* Solid black used as the surrounding night sky, hatching to form the void contrast
+* Peeling, fraying edges of substance along the breath
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Older than the Fall and perhaps its cause, the Ancient Void Dragon is a wound in the shape of a wyrm, its scales drinking the light from the air around them. Its breath neither burns nor freezes but unmakes, peeling away substance until nothing is left. Stars seem to dim where it passes. The wise do not speak its name, and the dead do not speak at all."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cosmic dread; a hole in the world.
+Specific pitfalls to avoid:
+* Not a normal rendered dragon with scales; absence is the subject.
+* Not the Dracolich (bones) or Visath (ice).
+* No glow or lens flare.
+* No figures except at most one tiny tower.
 ```
 
 ### 2. The Hollow Crown of the Ashlands
@@ -3275,14 +6169,31 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE HOLLOW CROWN OF THE ASHLANDS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Hollow Crown of the Ashlands (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Hollow Crown of the Ashlands, a black iron circlet that rules the dead empire's legions in place of its last emperor; its throne room is the whole of the ruined empire, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A vast ruined hall open to a sooty sky; a black iron circlet hovers above an empty regent's robe on a ruined throne at the far end, ranks of dead legionaries kneeling in rows below it.
 A black iron circlet floating above an empty regent's robe on a ruined throne, ranks of dead legionaries kneeling below.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Crown of black iron with spiked points hovering above an empty collar of an ermine-edged robe
+* Throne of cracked stone on a stepped dais, partly collapsed
+* Giant broken colonnades rising to broken lintels and sky
+* Rows of kneeling legionaries in rusted segmented armour and crested helms
+* Banners of the empire hanging in rags without device
+* Soot and ash drifts across the floor
+* Statues of past emperors with faces chiselled away
+HUMAN ACTIVITY
+* Dozens of dead legionaries kneel in rows, heads bowed, shields on arms
+* No living figures
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The empire's last emperor died without an heir, and the crown itself took up the rule. A circlet of black iron hovering above an empty regent's robe, the Hollow Crown commands the Ashlands' legions with a dead sovereign's absolute authority. It passes judgement that withers the living and raises the fallen to enforce it. Its throne room is the whole of the ruined empire."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hollow, absolute authority.
+Specific pitfalls to avoid:
+* Do not show a face inside the robe; it is empty.
+* Not the Ashlands climate street or Captain Veyr's company.
+* No readable inscriptions.
+* Keep legionaries as one disciplined mass, not a combat scene.
 ```
 
 ### 3. The Last Colossus
@@ -3291,14 +6202,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE LAST COLOSSUS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Last Colossus (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Last Colossus, a walking fortress of riveted black iron three times a man's height, the empire's last war-construct, marching the same patrol for centuries, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A cracked imperial road seen from a low angle; the Colossus marches toward the viewer, a small human figure at its feet for scale.
 A riveted black-iron war-construct three times a man's height marching along a ruined imperial road, a small figure at its feet for scale.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Slab-sided torso of riveted black iron plates with seams and weld lines
+* Thick pillar legs with piston-like joints and a flared hip skirt
+* Joints groaning with steam and vented thunder drawn as short rays of lines
+* Head as a small armoured helm with a slit visor
+* Massive hands like siege mauls, banner-pole stump on shoulder with a tattered pennant
+* Cracked imperial road with milestones snapped off and fallen leaves
+* Dust cloud, ruined arch in the distance
+HUMAN ACTIVITY
+* A single tiny human figure stands, shield raised, at its feet, dwarfed
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A walking fortress of riveted black iron three times a man's height, the Last Colossus groans at every joint with the thunder bound inside it. When the empire knew it was dying, it poured the last of its wealth into one war-construct meant to outlast everything. For centuries it has marched the same patrol, defending an empire that no longer exists. Nothing has yet proven able to stop it."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Relentless, mournful obedience to a dead empire.
+Specific pitfalls to avoid:
+* Not the Cursed Colossus of the Waste (a broken sand statue) or the Guardian Construct.
+* Not a cartoon robot or mecha.
+* No glowing eyes.
+* Three times a man's height only, not a skyscraper.
 ```
 
 ### 4. Avatar of the Old Growth
@@ -3307,14 +6234,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 AVATAR OF THE OLD GROWTH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Avatar of the Old Growth (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Avatar of the Old Growth, the will of the deep forest given a body: a towering shape of trunk and grasping root, bark-skinned, crowned with antlered branches, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Seen from the edge of a clearing at ground level; the tree-giant rises far above the canopy, roots dragging behind in furrows, its crown a tangle of antlered branches against the sky.
 A colossal walking tree-giant towering over the forest canopy, roots dragging behind it, its crown a tangle of antlered branches.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Bark-skinned limbs and torso made of fused trunks
+* Crown of antlered branches, some tipped with leaf clusters
+* Roots dragging, tearing the earth into furrows
+* Smaller trees bending in its wake
+* Hollow knots forming a face as solid black shadows
+* Leaves, birds fleeing and loose bark in the air
+* Forest floor ferns and broken saplings
+HUMAN ACTIVITY
+* A few tiny animals and one fleeing hare in the foreground; no humans
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A towering shape of ancient trunk and grasping root, bark-skinned and crowned with a tangle of antlered branches, the Avatar of the Old Growth is the will of the deep forest given a body to act through. It calls the lesser green things to its side and drowns intruders in living wood. To kill it is to wound the Greenmark itself. The Greenmark does not forgive."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Ancient, implacable and awake.
+Specific pitfalls to avoid:
+* Not Maelthorn (a wyrm) and not the Old Growth Treant scenario with a ritual and Mother Tree.
+* Not the Antlered Warden's bone-antler humanoid.
+* No faces that look cartoon-friendly.
+* No humans or party.
 ```
 
 ### 5. The Broodmother Prime
@@ -3323,14 +6266,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE BROODMOTHER PRIME - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Broodmother Prime (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Broodmother Prime, mother of every giant spider in the deep, a bloated cottage-sized horror squatting in the deepest dark of the Undermarches, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A vast webbed cavern seen from a ledge; the Broodmother squats at the centre, egg-sacs trailing and twitching, cocooned victims hanging in the webs.
 The Broodmother squatting in a vast webbed cavern, cottage-sized, egg-sacs trailing, cocooned victims hanging in the webs.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Bloated abdomen the size of a cottage, with segmented legs gripping the web anchors
+* Egg-sacs trailing on silk threads, some bulging
+* Cocooned bodies hanging in the webs, faceless wrapped forms
+* Huge radial and sheet webs strung between stalactites
+* Cavern floor with bones and discarded gear
+* A cluster of small spider shapes at the edge of the web
+* Fangs and clustered eyes as solid black points
+HUMAN ACTIVITY
+* No living humans except one tiny wrapped cocooned figure moving faintly
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "In the deepest dark of the Undermarches squats the mother of every giant spider that plagues the deep, a bloated horror the size of a cottage, egg-sacs trailing from it that twitch with the unborn. It floods the field with its brood and binds the survivors in webs for later. Its venom stops a heart in a single beat. The deep, in the end, is its nursery."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Nursery dread.
+Specific pitfalls to avoid:
+* Not the Spider's Silk Route ravine in the Greenmark.
+* No gore; cocoons are wrapped shapes.
+* Not a cartoon spider.
+* No glowing eyes.
 ```
 
 ### 6. Captain Veyr of the Forsaken
@@ -3339,14 +6298,31 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 CAPTAIN VEYR OF THE FORSAKEN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Captain Veyr of the Forsaken (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Captain Veyr of the Forsaken, the empire's greatest captain, who swore the company would never break and holds them past death, a duelist with paired blades, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A ruined road in a trampled battlefield at dusk; Veyr stands in the middle ground, spectral plate, paired blades raised, rallying a line of dead soldiers behind them, seen at a low angle.
 Captain Veyr in spectral plate with paired blades raised, rallying a line of dead soldiers behind them.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Spectral plate with gothic fluting, drawn in thin broken lines, with solid black under the visor
+* Paired blades, one held high and one level
+* Line of dead soldiers in rusted armour with broken spears behind
+* Tattered company standard without device
+* Torn banners and broken stakes in the ground
+* Ruined stone breach in the wall behind
+* Trampled mud and fallen shields
+HUMAN ACTIVITY
+* Veyr rallies, blades raised
+* The dead line braces shields and spears in formation
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Veyr was the empire's greatest captain, who swore their company would never break and held them to it past death itself. Now they lead the Forsaken in spectral plate, a duelist whose paired blades have not slowed in three centuries. They rally their dead soldiers with a voice like a closing tomb. They no longer recall the war they are still fighting. Only the oath."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Doomed discipline, forgotten war.
+Specific pitfalls to avoid:
+* Not the Hollow Crown's kneeling legionaries.
+* Veyr has no gendered features, use they/them presentation.
+* Not a combat scene with living heroes.
+* Do not draw an actual skull face; solid black visor slit.
 ```
 
 ### 7. The Frost Bailiff Magistrate
@@ -3355,14 +6331,31 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE FROST BAILIFF MAGISTRATE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Frost Bailiff Magistrate (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Frost Bailiff Magistrate, the Pale City court's undying enforcer who passes final judgement, freezing the guilty where they stand, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A frozen avenue of the Pale City in perspective; the Magistrate drifts in judicial robes in the middle distance, a figure freezing solid before it in the foreground.
 The Frost Bailiff drifting down a frozen avenue in judicial robes, a figure freezing solid where they stand before it.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Judicial robes with a high collar and long sleeves, hem trailing, face hidden in a hood of ice
+* Gavel-like staff or a scroll of sentence with no readable text
+* Frost crawling up the legs of the condemned figure, ice creeping across clothing
+* Ice-locked buildings with cracked facades flanking the avenue
+* Frost-furred lamp posts and snow-laden banners
+* Frozen citizens as background figures, stiff
+* Breath-mist drawn as fine curls
+HUMAN ACTIVITY
+* The condemned figure freezes in mid-protest, hand raised
+* The Magistrate glides without footsteps
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Pale City's court needed an enforcer for the sentences its living judges feared to sign, and so it raised one of its own into something colder still. The Frost Bailiff Magistrate drifts the frozen avenues passing final judgement, freezing the guilty where they stand and calling the White Court to carry out the verdict. Its rulings cannot be appealed. Its sentences are always death."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold legality; verdict without appeal.
+Specific pitfalls to avoid:
+* Not the Icebound Court throne scenario or the Pale City climate gate.
+* No gore.
+* No readable verdict text.
+* Do not depict the White Court escort in detail.
 ```
 
 ### 8. The Sun-Crowned Prince
@@ -3371,14 +6364,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE SUN-CROWNED PRINCE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Sun-Crowned Prince (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Sun-Crowned Prince, the greatest priest-king, who bound his soul into a crown of beaten gold and still rules his sealed tomb-court, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Sealed tomb-court in one-point perspective; the Prince sits enthroned at the far end, a withered corpse in funeral linen beneath a bright crown, skeletal subjects ranged along both sides.
 The Sun-Crowned Prince enthroned in a sealed tomb-court, a withered corpse in funeral linen beneath a bright crown of beaten gold.
 Size: Medium: about human-sized.
+SUBJECT DETAILS
+* Throne of carved stone with a tall back and a low dais
+* Corpse in funeral linen, leathery face and bone, hands on armrests
+* Crown of beaten gold rendered as clean blank paper with fine outline, the brightest thing in the picture
+* Rows of skeletal subjects in ceremonial wrappings and pointed hats
+* Painted walls carved with glyphs shown as repeating abstract patterns, not text
+* Braziers burning along the aisle
+* Sand drifted in the corners
+HUMAN ACTIVITY
+* Skeletal courtiers stand in attendance, still
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The greatest of the priest-kings refused to let their reign end and bound their soul into a crown of beaten gold. A wrapped and withered corpse robed in funeral linen, the crown still bright above a face of leather and bone, the Sun-Crowned Prince rules their sealed tomb-court as they ruled in life. They raise their skeletal subjects and scour trespassers with decrees of searing flame. They still believe the world answers to them, and within their tomb it does."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Stagnant majesty, absolute delusion.
+Specific pitfalls to avoid:
+* Not Khorrun's hoard gallery or the Sunken Kings tomb scenario (that has sarcophagi and pits).
+* No readable hieroglyphs.
+* Face not cartoonish.
+* Do not show a living prince.
 ```
 
 ### 9. The Antlered Warden of the Tithe
@@ -3387,14 +6396,31 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE ANTLERED WARDEN OF THE TITHE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Antlered Warden of the Tithe (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Antlered Warden of the Tithe, the antlered robed figure admitted at Greythorn's west gate each winter to collect the forest's due, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
-A gaunt, man-sized-to-towering figure of bone-antler and living wood standing at Greythorn's west gate in winter snow, dragging a debtor by the collar.
+Greythorn's timber west gate in winter snow at dusk; the towering Warden stands in the gateway dragging an indebted man by the collar, the town wall behind.
+A towering (Large) gaunt figure of bone-antler and living wood standing at Greythorn's west gate in winter snow, dragging a debtor by the collar.
 Size: Large: roughly twice a human's height or bulk.
+SUBJECT DETAILS
+* Bone-antler crown with many tines and living wood grown through it
+* Body of bark, living wood and moss with a ragged robe of grey moss
+* Timber-walled gate with a heavy gatehouse and snow-laden palisade
+* Debtor on his knees with a torn coat
+* Torch-bearing gatekeepers retreating inside
+* Snow and ancient oaks crowding the wall
+* Tithe bundles scattered at the stones outside
+HUMAN ACTIVITY
+* The Warden drags the debtor by the collar
+* Watchers on the wall look on, small and frozen in place
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The antlered figure admitted to Greythorn's west gate each winter does not come to bargain when the tithe goes unpaid. It comes to collect. A towering shape of bone-antler and living wood, it drags the indebted into its reach and calls the wild court to witness. The forest has never broken the agreement, and it does not forgive those who do."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Ritual debt collection, inevitable.
+Specific pitfalls to avoid:
+* Not the Avatar of the Old Growth or the Whispering Grove Antlered Warden scenario.
+* Not a friendly forest spirit.
+* No gore.
+* Greythorn gate must be timber-walled.
 ```
 
 ### 10. The Voice Beneath the Bells
@@ -3403,14 +6429,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE VOICE BENEATH THE BELLS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Voice Beneath the Bells (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Voice Beneath the Bells, a child-shaped figure of grief singing in a drowned chapel; its song hollows out all who hear, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Interior of a flooded chapel; a small child-shaped figure stands at the edge of guttering torchlight in knee-deep water, bells hanging silent above in the dark.
 A small child-shaped figure at the edge of guttering torchlight in a flooded chapel, singing, the bells hanging silent above.
 Size: Small: smaller than a human.
+SUBJECT DETAILS
+* Small robed figure with face turned partly away, hair hanging
+* Guttering torch on a bracket, flame drawn small
+* Dark water over the nave floor with ripples around the legs
+* Bells hanging in a broken belfry in the shadows, silent
+* Pews half-submerged and a broken altar
+* Ceiling arches vanishing in black
+* Floating candles or a drifted prayer book
+HUMAN ACTIVITY
+* The child figure sings; no other people
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Survivors describe a small figure at the edge of the torchlight, singing in a tongue that sounds like an old lullaby heard through water. Then the torch goes out. The Voice Beneath the Bells is grief given a child's shape and a drowned chapel's patience, and its song hollows out everyone who hears it. The bells it waits beneath have not rung in a very long time."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Quiet sorrow edged with horror.
+Specific pitfalls to avoid:
+* Not Vossegar's cathedral (that is a huge drowned cathedral with a wyrm).
+* The figure is not gory or monstrous in detail.
+* Do not show open mouth gore.
+* No faces readable, shadow only.
 ```
 
 ### 11. Maelthorn the Verdant
@@ -3419,14 +6461,31 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 MAELTHORN THE VERDANT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Maelthorn the Verdant (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Maelthorn the Verdant, a vast wyrm the deep green of stagnant pondwater, furred with moss, to whom Greythorn sends its autumn tithe in place of a war party, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Forest clearing at ground level; Maelthorn coils among the tithe offerings, moss and lichen furring its scales, poison fog spilling from its jaws across the clearing.
 Maelthorn coiled in a forest clearing among Greythorn's autumn tithe offerings, moss and lichen furring its scales, poison fog spilling from its jaws.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Overlapping scales furred with moss and lichen as stippled texture
+* Coils like a fallen tree, blunt head with heavy brow ridges
+* Poison fog rolling from its jaws, drawn as sparse curling lines, wilting grass and leaves
+* Tithe bundles of sacks, grain, barrels and wood piled at standing stones
+* Withered trees on the edge of the fog
+* Fleeing small beasts: deer, hares
+* Mossy standing stones circling the clearing
+HUMAN ACTIVITY
+* Tiny forest beasts flee ahead of the fog
+* No humans
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Maelthorn is a vast wyrm the deep green of stagnant pondwater, its overlapping scales furred with moss and creeping lichen. It does not hunt, because the Greenmark hunts on its behalf, and Greythorn sends the autumn tithe in place of a war party. Its breath is a rolling fog of poison that wilts all it touches. When it finally stirs, the lesser beasts of the wood flee the grove ahead of it."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Slow, poisonous patience.
+Specific pitfalls to avoid:
+* Not Avatar of the Old Growth (a tree giant) or the Whispering Grove scenario.
+* No heroes fighting.
+* Fog is line-drawn, not a gradient.
+* Not a cartoon dragon.
 ```
 
 ### 12. Sirrach the Black
@@ -3435,14 +6494,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SIRRACH THE BLACK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Sirrach the Black (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Sirrach the Black, the Undermarches' buried king, a black wyrm that swims through solid stone and surfaces only to feed, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+An unmapped gallery of the Undermarches in profile; Sirrach erupts out of solid stone, the rock rippling like water around its black body.
 Sirrach erupting out of solid stone in an unmapped gallery, the rock rippling like water around its black body.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Rock face with concentric ripples around the emerging wyrm
+* Black body with a heavy jaw, spines and a glossy outline
+* Dust and rock fragments flying in fine stipple
+* Hoard glimpsed at the gallery's end: coins, crowns, chests
+* Cracked gallery floor with stalagmites
+* Withered remains: a shrunken miner's body or dropped pick
+* Hairline cracks radiating across the wall
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Sirrach is the Undermarches' buried king, a black wyrm that swims through solid stone and surfaces only to feed. Its breath withers flesh and shortens lives, leaving even survivors diminished. It hoards in galleries no surface-dweller has ever mapped. The stone shudders before it the way a hand shudders before opening bad news."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Geological menace.
+Specific pitfalls to avoid:
+* Not the Broodmother's webbed cavern or the Rock Elemental Guardian scenario.
+* No glow.
+* Do not show people being withered.
+* Stone rippling must read as ink lines, not water.
 ```
 
 ### 13. Visath the White
@@ -3451,14 +6524,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 VISATH THE WHITE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Visath the White (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Visath the White, the Pale City's eternal winter in the body of a wyrm, who rules from the highest spire, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Looking up at the highest frozen spire of the Pale City; Visath perches on its tip with wings spread, victims locked mid-scream in the ice below.
 Visath perched atop the highest frozen spire of the Pale City, wings spread, victims locked mid-scream in the ice below.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Glacial wyrm with frost-ridged scales and icicle spines
+* Wings spread with ice-fringed membranes
+* Spire cracked and thick with ice, icicles hanging
+* Victims encased in ice, mid-scream, on spire walls and below
+* Snow falling harder near it, drawn as dense stippling
+* Lower city rooftops and towers in the distance
+* Sky ruled with heavy diagonal strokes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Visath is the Pale City's eternal winter wearing the body of a wyrm, a glacier with wings and a will. Its breath does not merely freeze; it stops time in the flesh, leaving victims locked mid-scream in the ice. It rules from the highest spire and suffers no warmth anywhere in its domain. Where it flies, the snow falls harder, as though the sky itself bows."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Absolute winter, a sky bowing.
+Specific pitfalls to avoid:
+* Not the Frost Bailiff avenue or the Ice Wyrm scenario cavern.
+* Victims are frozen shapes, not gore.
+* No glow or aurora.
+* No heroes.
 ```
 
 ### 14. Khorrun the Dracolich
@@ -3467,14 +6554,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 KHORRUN THE DRACOLICH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Khorrun the Dracolich (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Khorrun the Dracolich, a dragon that has not drawn breath since the Fall, coiled on its hoard in the sealed tomb-galleries beneath the Sun-Drowned, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Tomb gallery interior in wide view; Khorrun's skeletal dragon body draped in tattered scale coils atop a hoard, ledgers stacked to the ceiling around it.
 Khorrun's skeletal dragon body draped in tattered scale, coiled atop a hoard in a tomb gallery, ledgers stacked to the ceiling.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Skeletal dragon with lightning-scorched ribs and tattered scale remnants
+* Witchfire in empty sockets, drawn as tiny solid black points with fine lines
+* Hoard of coins, crowns and bones
+* Ledgers stacked to the ceiling in toppling towers
+* Gallery walls with carved bas-reliefs in abstract patterns
+* Pillars cracked and sand-drifted
+* Torn wings draped like banners from the ceiling
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Khorrun has not drawn breath since the Fall, yet still it coils atop its hoard in the sealed tomb-galleries beneath the Sun-Drowned. Its bones hold the shape of greed, draped in the tatters of scale and the cold blue fire of undeath, and ledgers stacked to the vault ceiling record exactly who has taken what. It rouses only to punish a debt or devour a trespasser. The lightning that pours from its jaws is the same colour as the witchfire in its empty sockets."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold avarice that outlasts life.
+Specific pitfalls to avoid:
+* Not the Sun-Crowned Prince's court or the Sunken Kings scenario.
+* No readable ledger text.
+* No glow effects.
+* Not a living dragon.
 ```
 
 ### 15. Vossegar of the Flooded Cathedral
@@ -3483,14 +6584,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 VOSSEGAR OF THE FLOODED CATHEDRAL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Vossegar of the Flooded Cathedral (9.7 The Bestiary / Bosses), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Vossegar of the Flooded Cathedral, a sleek black acid wyrm that lairs in a drowned cathedral at The Mire's heart and takes tribute from every settlement, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Looking down the nave of a drowned cathedral; Vossegar coils among submerged altars and broken pillars, black water rising around the nave.
 Vossegar coiled among submerged altars and broken pillars inside a drowned cathedral, black water rising around the nave.
 Size: Huge: towering many times a human's size.
+SUBJECT DETAILS
+* Sleek black wyrm with a narrow head and slick scales
+* Broken pillars and a collapsed rose window
+* Submerged altars with only their tops showing
+* Acid drips dissolving a pew rail in thin lines
+* Waterline mist and rising ripples
+* Bells hanging underwater as dark shapes
+* Frogless silent reeds and algae
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Vossegar lairs in a drowned cathedral at The Mire's heart, a sleek black wyrm coiled among submerged altars. Its acid breath strips flesh from bone, and at its will the waters rise to swallow the ground its enemies stand on. It takes tribute from every settlement in the mire and devours those who come up short. The bells of its cathedral toll underwater, and the frogs have not sung there in living memory."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Drowned grandeur, patient hunger.
+Specific pitfalls to avoid:
+* Not the Voice Beneath the Bells chapel (a small chapel with a child figure).
+* No heroes.
+* Acid rendered as lines, not glow.
+* Not a swamp exterior.
 ```
 
 ## Scenarios (37)
@@ -3503,12 +6618,30 @@ Printed 3.3 in wide · aspect 3:2. Family framing: The scenario's key place and 
 
 ```text
 SCENARIO 1: HUNT THE WILD BEAST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 1: Hunt the Wild Beast (10.4 Core Scenario Outlines / Climate 1: Greenmark Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Hunt the Wild Beast, a Greenmark scenario set in a Greythorn logging camp whose palisade timbers have been driven through and splintered by a Great Forest Boar that has made the deep wood its hunting ground, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide, slightly raised view of a smashed logging camp at early morning, a game trail leading from its ruined palisade into dense forest in the middle distance. The beast is only a vast dim hump among the trees far back.
+SUBJECT DETAILS
+* Palisade of oak timbers snapped and splintered outward, one trunk driven through a sawpit shed
+* Felled logs, stumps, an abandoned two-man saw and ox-yoke
+* Cloven hoof furrows and torn earth leading into the trees
+* A churned mud wallow glimpsed beyond the camp edge
+* Game trail 1-2 inches wide in scale, a pale gap in dense trunks
+* Dead dire wolf lying near the camp gate, not gored
+* Broken axe handles, a toppled log cart
+HUMAN ACTIVITY
+* Two small hunters with spears and boar-spears crouch at the camp edge reading the tracks
+* One kneels to touch a splintered timber
+* A watching raven on the palisade
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Something out of the deep wood has taken Greythorn's logging camps for its hunting ground, and with them the timber the Bastion is built on. The first deaths were blamed on dire wolves. The next were found driven through splintered palisade timbers, which dire wolves do not manage. Its pelt, skull, and teeth would buy a season behind the walls, and the Council of Captains will pay either way to have the camps cutting again. Comfort and timber have sent both parties into the trees."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Brooding aftermath with the hunter still near.
+Specific pitfalls to avoid:
+* Boar remains a barely seen shape, not a portrait; no tusks in close-up.
+* Not the ch.9 carcass scene or the Avatar.
+* Not the Bandit's Toll (this is a camp, not a trail barricade).
+* No gore on the camp.
 ```
 
 ### 2. Scenario 2: The Whispering Grove
@@ -3517,12 +6650,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 2: THE WHISPERING GROVE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 2: The Whispering Grove (10.4 Core Scenario Outlines / Climate 1: Greenmark Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Whispering Grove, an ancient Greenmark clearing older than Greythorn, with humming standing stones where pale lights move on moonless nights and farmers leave bread as part of the tithe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Night scene in a forest clearing seen from the tree edge; three tall standing stones in a rough triangle dominate the middle, small pale lights drifting between them, a loaf of bread on the nearest stone.
+SUBJECT DETAILS
+* Three mossy standing stones with spiral weathering, no letters
+* Tiny pale lights as untouched circles in dense black hatching
+* Loaf of bread and a cloth bundle at the foot of a stone
+* Ring of oaks and undergrowth around the clearing
+* Fine concentric ripples in the air around the stones to show the hum, drawn as thin rings
+* Frost-free moss circle in the grass
+* A lantern abandoned at the treeline
+HUMAN ACTIVITY
+* A single farmer in a hooded cloak walks away from the grove without looking back, small, at the far edge
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The grove is older than Greythorn and older than the western forest road that skirts it. The standing stones hum when no wind passes, and pale lights move between them on moonless nights. Greythorn's farmers leave bread there and do not look back. Scholars call it a site of power. The Council of Captains calls it part of the tithe, and pays it without complaint."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hushed, reverent unease.
+Specific pitfalls to avoid:
+* No Antlered Warden or any creature visible (it appears only when a stone is touched).
+* Not the Greenmark climate image (this is a clearing at night with stones).
+* Not Maelthorn's offering clearing.
+* No glow rays; lights are paper-white points.
 ```
 
 ### 3. Scenario 3: The Bandit's Toll
@@ -3531,12 +6680,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 3: THE BANDIT'S TOLL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 3: The Bandit's Toll (10.4 Core Scenario Outlines / Climate 1: Greenmark Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Bandit's Toll, a Greenmark scenario where a toll crew has claimed a bend of the western forest road, the artery carrying Deepwarden iron, Reedmarch salt and grain, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+View along the forest trail toward a makeshift log barricade at a bend; waiting stolen wagons behind it and bandits lounging. The viewer stands on the road with a caravan queue behind, in the foreground, small.
+SUBJECT DETAILS
+* Barricade of logs, upturned carts and spikes across the trail
+* Prices nailed to the trees as crude boards smeared with dark marks, no letters
+* Palisade of caravans waiting far behind with wagons circled
+* Stolen wagons with broken barrels and iron ingots
+* Bandits: a scimitar-wielding captain on a wagon, archers in trees, hooded raiders with cudgels
+* Tall oaks hemming the trail and shafts of light
+* A ribbon of milestones and deep wheel ruts
+HUMAN ACTIVITY
+* Three bandits loll or count coin at the barricade
+* A captain with a shortbow watches the road from a wagon
+* A caravan teamster waits with a mule team, tiny, at the near end
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The western forest road carries Deepwarden iron, Reedmarch salt, and grain between the Bastions, and it is the one artery Greythorn cannot do without. A toll crew has claimed a bend of the trail and nailed its prices to the trees in stolen blood. Caravans wait behind palisades while bread grows dear inside Greythorn's walls. The Council of Captains has stamped a bounty and sent it out with anyone hungry enough to answer."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Menace and sullen commerce.
+Specific pitfalls to avoid:
+* Not the Spider Silk Route ravine or the Emissary ambush camp.
+* Prices are marks only, no letters or numbers.
+* No fighting in progress.
+* Do not draw gore on boards (just dark marks).
 ```
 
 ### 4. Scenario 4: The Spider's Silk Route
@@ -3545,12 +6712,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 4: THE SPIDER'S SILK ROUTE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 4: The Spider's Silk Route (10.4 Core Scenario Outlines / Climate 1: Greenmark Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Spider's Silk Route, a hidden Greenmark ravine where the Broodmother's daughters spin webs that hold steel like thread and fetch absurd prices in Bastion markets, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+View from the high thorny rim down into a ravine bridged and filled with web sheets; silk bundles hang in the webs and a few spiders lurk. Thorn brambles frame the foreground edge.
+SUBJECT DETAILS
+* Ravine walls with trees overhanging the edges
+* Large sheet webs strung between the rims, laden with dew-beaded strands
+* Bundles of spun silk wrapped like cocoons hanging at different heights
+* A dagger and a rusted sword held motionless in a web strand as if in rope
+* Brambles and thorny path through the foreground
+* Tarantula-sized spiders in the web, a larger spider back in shadow
+* A pair of tracks that fork on the path (two parties sold the same path)
+HUMAN ACTIVITY
+* Two tiny scouts creep along the thorn path at the rim, one cutting a bramble
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Silk-traders whisper of a ravine in the deep Greenmark where the webs hold steel like thread and fetch absurd prices in Bastion markets. The spinners are the Broodmother's daughters, strayed up from the dark, and the place is on no honest map. That has not stopped a Greythorn merchant from selling the same path through the thorns to two parties at once."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Greed lured by beauty and dread.
+Specific pitfalls to avoid:
+* Not the Broodmother Prime's cavern lair (this is a surface ravine under open sky).
+* Spiders stay small and partial.
+* No human cocoons or gore.
+* Do not draw the Broodmother in full.
 ```
 
 ### 5. Scenario 5: The Ambushed Emissary
@@ -3559,12 +6742,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 5: THE AMBUSHED EMISSARY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 5: The Ambushed Emissary (10.4 Core Scenario Outlines / Climate 1: Greenmark Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ambushed Emissary, a Greenmark scenario where an emissary carrying documents sealed under two rival Bastion laws vanished on the western forest road and is now held in a makeshift bandit camp deep in the wood, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Dusk view from behind a screen of roots and ferns looking across a small clearing at a makeshift bandit camp; the bound emissary sits by a post near a lean-to while a reeve stands guard. Dropped clues are strewn across the lower foreground.
+SUBJECT DETAILS
+* Makeshift camp of hide lean-tos, a smoking fire pit and a rough palisade of stakes (cover only, not a fort)
+* Emissary in fine but mud-stained robes, hands bound to a post, a satchel strap across their chest
+* Forest-road reeve in half-armour with a longsword at the hip and a hand crossbow
+* Clues in the foreground: a broken cart wheel, a snapped sealed document tube with no readable writing, torn cloth caught on a thorn, a cut rope hanging from a branch
+* Tall oaks with small clearings and patches of undergrowth
+* Dusk sky ruled lightly, crows returning to roost
+* Boot tracks and wagon ruts leading off toward the road
+HUMAN ACTIVITY
+* Two bandits sit at the fire, one sharpening a blade
+* The reeve stands over the emissary, arms folded
+* Two tiny watchers crouch in the ferns at the bottom edge
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "An emissary vanished on the western forest road carrying documents sealed under two rival Bastion laws. One patron in Greythorn wants the courier found breathing. Another, further off, wants the satchel and does not ask after the courier. The deep wood has kept worse secrets, and the Hollow Quarter is not telling."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Tense, furtive espionage in the dark wood.
+Specific pitfalls to avoid:
+* Not the Bandit's Toll barricade or the road ambush itself.
+* No readable seals or documents.
+* No violence against the emissary.
+* Emissary must look like a courier or diplomat, not an adventurer.
 ```
 
 ### 6. Scenario 6: Ritual of the Old Growth
@@ -3573,12 +6774,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 6: RITUAL OF THE OLD GROWTH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 6: Ritual of the Old Growth (10.4 Core Scenario Outlines / Climate 1: Greenmark Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Ritual of the Old Growth, a Greenmark scenario in which an Old Growth Treant elder works slowly over a sickness in the roots beneath a Mother Tree, with a Heartwood Totem at the heart of the rite, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low angle among great roots looking up the trunk of the Mother Tree; the Treant is a partial towering shape of bark and branches kneeling among roots, the carved Heartwood Totem standing between them.
+SUBJECT DETAILS
+* Vast trunk with buttress roots large as walls
+* Dark sickness-stained patches in the roots, vein-like and dry
+* Totem of carved heartwood, a spiral or face-like carving
+* Treant's gnarled limbs and a bark-skinned head partly seen
+* Sacred Grove ring of ferns and moss and small standing flowers
+* Canopy light falling in shafts through white paper gaps
+* Tiny offerings: seeds, antler tips and bundled herbs
+HUMAN ACTIVITY
+* Two small intruders creep at the far edge of the grove, dwarfed by roots
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "An Old Growth elder works slowly over a sickness in the roots, and a Heartwood Totem worth more than most villages stands at the heart of the rite. Greythorn's tithe forbids touching it, and the Council of Captains keeps the tithe because the alternative is the wild court at the gate. Another Bastion, with no forest to answer to, calls the same act salvage. The roots are listening to both."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Slow, sacred, watchful.
+Specific pitfalls to avoid:
+* Not the Avatar of the Old Growth boss (this Treant is kneeling and passive, seen only in part).
+* No combat, no fire.
+* Not the Whispering Grove stones.
+* No faces rendered cutely.
 ```
 
 ### 7. Scenario 1: The Fallen Observatory
@@ -3587,12 +6804,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 1: THE FALLEN OBSERVATORY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 1: The Fallen Observatory (10.4 Core Scenario Outlines / Climate 2: Ashlands Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Fallen Observatory, an Ashlands scenario in ruins once crowned by a star-engine, whose broken brass arms still turn when moonlight enters the cracked dome, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Interior of the cracked dome at night looking up past a central pedestal; brass arms of an orrery tilt through a broken opening where the moon shows, instruments scattered across shifting floors.
+SUBJECT DETAILS
+* Cracked masonry dome with a broad fissure showing a thin moon
+* Broken brass arms and rings of the star-engine, some still turned and bent
+* Star Lens on a central pedestal, a large round disc outlined with fine lines
+* Raised observation platforms at the edges
+* Floor with cracked, tilting slabs and rubble
+* Scattered astrolabes, lenses and brass sextants
+* An armoured construct sentinel, small, standing near the pedestal
+HUMAN ACTIVITY
+* Two tiny robbers creep through the rubble toward the pedestal
+* Sentinel turns its head slowly toward them
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A star-engine once crowned these ruins, and its broken brass arms still turn when moonlight enters the cracked dome. Wizards would give a finger for the instruments scattered across the shifting floors, which is precisely why the Sable Watch wants them carried to Sablekeep and locked away from unregistered hands. The old servants of the place still know the penalty for touching them. They have a great deal of time in which to enforce it."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Haunted precision.
+Specific pitfalls to avoid:
+* Not the burned library (ch.8) or the Arcanum tower.
+* No readable star charts.
+* Sentinel small and indistinct.
+* No glow rays from the lens.
 ```
 
 ### 8. Scenario 2: The Guardian's Test
@@ -3601,12 +6835,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 2: THE GUARDIAN'S TEST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 2: The Guardian's Test (10.4 Core Scenario Outlines / Climate 2: Ashlands Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Guardian's Test, an Ashlands scenario set in a courtyard dominated by a sealed gate black with soot and old prayers, beyond which a vault waits and worthiness is tested, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+One-point perspective across a colonnaded courtyard toward the sealed gate in the far wall; three small trial pedestals ahead and a tiny party of heroes in the lower middle. Overcast daylight.
+SUBJECT DETAILS
+* Massive sealed gate with a pointed arch, blackened by soot, studded with sparse prayer-marks as indistinct scratches
+* Colonnade of free-standing pillars, some fallen
+* Three low pedestals each topped with a different shape: scroll, hammer, flame (no text)
+* Scattered rubble and fallen cornice blocks
+* Dead leaves and ash drifts
+* Rival party approaching from the opposite side carrying a plain banner
+* Guardian niche in the wall, empty and dark
+HUMAN ACTIVITY
+* The first party stands at a pedestal, one reaching out
+* A rival party appears at the courtyard arch, distant
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A sealed gate dominates the courtyard, black with soot and old prayers, somewhere along the imperial roads that run out from the dead empire's heart. The texts say a vault waits beyond. They warn that worthiness is tested before entry, and no surviving copy explains what worthiness means. The Sable Watch insists the guardian answers to a seal nobody now holds, while a rival party arrives carrying a Hollow Crown's Writ and a very different opinion."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Ominous ceremony.
+Specific pitfalls to avoid:
+* No guardian construct visible yet (it appears after the first trial).
+* Not the Iron-Vein Vault interior or the Reliquary nave.
+* No legible prayers.
+* Not a combat scene.
 ```
 
 ### 9. Scenario 3: The Shifting Sands of Time
@@ -3615,12 +6866,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 3: THE SHIFTING SANDS OF TIME - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 3: The Shifting Sands of Time (10.4 Core Scenario Outlines / Climate 2: Ashlands Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Shifting Sands of Time, an Ashlands ruin that does not keep time honestly: glyphs flare, soot drifts uphill and stone opens underfoot, while relics surface and sink, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide view of a ruined court from a rubble rise; the impossible behaviours are shown in the middle ground with a tiny traveller stepping onto a slab.
+SUBJECT DETAILS
+* Soot drifting upward along a wall in thin ribbons, like smoke in reverse
+* A paving slab splitting open beneath a stepping figure
+* A treasure chest half-emerging from one flagstone and another half-sinking elsewhere
+* Wall glyphs drawn as abstract flaring marks, not text
+* Staircase that ends in a wall, a doorway on its side
+* Shadows of two pillars falling in different directions
+* Ash stippling and cracked ground
+HUMAN ACTIVITY
+* A single tiny traveller steps carefully across the court
+* A second figure watches from a ruined wall, crouching
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The ruin does not keep time honestly. Glyphs flare and gutter. Soot drifts uphill in the corners. Stone that bore a traveller's weight at dawn may open beneath them by noon. Relics surface when the place remembers them and sink before anyone can make a clean claim, and the Sable Watch will register whatever is carried back to Sablekeep, whether the finder wishes it registered or not."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Disorienting, slow dread.
+Specific pitfalls to avoid:
+* Not a desert; this is an Ashlands ruin, overcast and soot-dark.
+* No clocks or hourglasses.
+* Not the Fallen Observatory.
+* No creature.
 ```
 
 ### 10. Scenario 4: The Sealed Archive
@@ -3629,12 +6897,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 4: THE SEALED ARCHIVE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 4: The Sealed Archive (10.4 Core Scenario Outlines / Climate 2: Ashlands Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Sealed Archive, an Ashlands scenario under a fractured basilica containing tablets, scrolls, debt records and sermons the Sable Watch would rather burn, kept in order by something older, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+One-point perspective down a dust-choked corridor of shelves toward a central hall with a lectern; newer shelves gnawed in the foreground, inner stacks orderly beyond.
+SUBJECT DETAILS
+* Vaulted stone corridor with a cracked basilica floor visible above through a fissure
+* Shelves heaped with tablets, scrolls and ledgers, newer ones gnawed by scavengers
+* Rats and scattered paper in the foreground
+* Dust shown as dense stipple
+* Lectern in the hall holding a closed codex, outlined with fine lines
+* A suspiciously neat pile of stacked books beside the lectern
+* Collapsed shelving and a sconce hanging crooked
+HUMAN ACTIVITY
+* Two small intruders with a shuttered lantern edge along the corridor wall
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A sealed archive lies under a fractured basilica in the dead empire's heart: tablets, scrolls, debt records, and sermons the Sable Watch would rather see burned than read. Dust chokes the corridors. Scavengers have gnawed through the newer shelves. Something older keeps the inner stacks in order, and it has waited longer than Sablekeep has stood for someone to disturb them."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Choked silence and watchful order.
+Specific pitfalls to avoid:
+* Not the burned academy library (ch.8: fire and a lone caster).
+* The book pile must read as books, with no creature shape.
+* No readable writing on tablets or scrolls.
+* No glow.
 ```
 
 ### 11. Scenario 5: The Reliquary of Broken Saints
@@ -3643,12 +6927,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 5: THE RELIQUARY OF BROKEN SAINTS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 5: The Reliquary of Broken Saints (10.4 Core Scenario Outlines / Climate 2: Ashlands Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Reliquary of Broken Saints, an Ashlands hall filled with broken statues and smashed reliquaries, its sanctified bone and silver guarded by dead who swore an oath, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+View from the entrance down a long nave toward a raised altar platform; broken saint statues line the aisles, two armoured figures stand motionless by the altar.
+SUBJECT DETAILS
+* Long nave with fallen saint statues, severed hands and robed torsos on the floor
+* Statue bases with no figures left
+* Smashed reliquary cases with silver and bone glimpsed
+* Hanging curtains and screens in tatters
+* Raised altar platform with steps
+* Two still, rust-eaten armoured guardians adjacent to the altar, almost statues
+* Rubble fields and light through a broken clerestory
+HUMAN ACTIVITY
+* A tiny robber party creeps along a side aisle with a sack
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Broken statues and smashed reliquaries fill the hall, and sanctified bone and silver remain in the wreckage, too holy to abandon and too valuable to leave. Sablekeep needs the relics to keep its braziers lit and its authority legal, and will pay to register every fragment. The dead here are not confused. They swore to guard these relics, and death has not released them from the oath."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Sacred desecration.
+Specific pitfalls to avoid:
+* Revenants barely visible and still, not attacking.
+* Not the Stronghold Chapel or Hollow Crown hall.
+* No readable inscriptions.
+* No glow around relics.
 ```
 
 ### 12. Scenario 6: The Iron-Vein Vault
@@ -3657,12 +6957,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 6: THE IRON-VEIN VAULT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 6: The Iron-Vein Vault (10.4 Core Scenario Outlines / Climate 2: Ashlands Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Iron-Vein Vault, an Ashlands vault sealed for two generations with Karnessa Iron-Vein's blood on its iron door, now cracked by tremors as something below pushes, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Central chamber seen from the entrance hall; the massive iron door fills the far wall, with a pressed handprint of old blood and three binding marks, hairline cracks and dark seepage around its frame.
+SUBJECT DETAILS
+* Massive iron door with great hinges and a central lock
+* Faded handprint seal on the iron, no letters
+* Hairline cracks in the vault walls leaking dark smoke-like seep
+* The door bulged slightly outward, rivets popping
+* Flanking corridors with collapsed walls
+* Dust sifting from the ceiling in stipple
+* Fresh scorch scratches on the floor leading to the door
+HUMAN ACTIVITY
+* Two tiny figures approach the door, one with a pot or vial
+* A rival pair watches from a corridor
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The vault has been sealed for two generations. Karnessa Iron-Vein pressed their blood into the iron door when something inside began to leak through the walls, and the seal has held. Until now. Tremors along the imperial roads have cracked the outer binding, and something below is pushing. Sablekeep sends one party to reinforce the seal before whatever waits finishes its work; a rival patron sends another to open the vault and price what was sealed there. The vault does not care about either contract."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Held breath at the point of breaking.
+Specific pitfalls to avoid:
+* No creature visible yet (Vault Presence is not placed until the vault opens); only seepage.
+* Not the Guardian's Test gate.
+* No readable glyphs.
+* No glow.
 ```
 
 ### 13. Scenario 1: The Crystal Harvest
@@ -3671,12 +6988,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 1: THE CRYSTAL HARVEST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 1: The Crystal Harvest (10.4 Core Scenario Outlines / Climate 3: Undermarches Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Crystal Harvest, an Undermarches scenario in a new cavern beneath the broken mountains whose crystal veins pulse with cold light and drag iron filings across the floor, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide cavern interior from a tunnel mouth; clusters of crystal in the middle ground, iron filings forming radial lines on the floor toward them, glowing fungi dots near the walls.
+SUBJECT DETAILS
+* Large crystal spires and clusters in a cavern, drawn as faceted forms with fine lines
+* Iron filings on the floor drawn as radial hatching toward the crystals
+* Stalagmite clusters and low cave walls
+* Glowing fungus patches as blank paper dots amid black
+* A crystal-camouflaged shape among the cluster, ambiguous
+* Prospectors' abandoned picks and a lamp
+* Narrow passage openings to other caverns
+HUMAN ACTIVITY
+* A few tiny prospectors with picks and lanterns crouch near a crystal
+* One reaches toward a cluster
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A new cavern has opened beneath the broken mountains, and its crystal veins pulse with cold light and drag iron filings across the floor. Deepwarden's forges would trade a season of grain for a vein this clean. The prospectors who found it have already lied about its location, and both parties arrive before the lie can harden into a map."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cold lure, covetous.
+Specific pitfalls to avoid:
+* Not the Quake (gems in cracked beam tunnels) or the Chasm.
+* Lurker only as faint shape.
+* No glow rays.
+* No lettering.
 ```
 
 ### 14. Scenario 2: The Chasm Crossing
@@ -3685,12 +7019,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 2: THE CHASM CROSSING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 2: The Chasm Crossing (10.4 Core Scenario Outlines / Climate 3: Undermarches Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Chasm Crossing, an Undermarches scenario where a chasm splits the caverns and is crossed only by narrow broken ledges, with things clinging to the stone below, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Looking along a line of broken stone ledges bridging a black chasm from near end, receding in perspective; lantern light at the near end only.
+SUBJECT DETAILS
+* Narrow ledges as slabs with gaps between
+* A cracked ledge crumbling, chips falling into the dark
+* Chasm walls with clinging shapes: long-limbed Chasm Stalkers, small and half-hidden
+* Black void below with faint spray
+* Far side with a standing marker stone
+* A rolled map clutched by the lead traveller
+* Rope and piton at the near end
+HUMAN ACTIVITY
+* One tiny traveller crosses mid-way, arms out for balance
+* Others wait at the near end with a lantern
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A chasm splits the caverns like a wound in the world, crossed only by narrow ledges in broken pieces. A Survey Map must reach the Lantern Council before Deepwarden's rivals can claim the new diggings. Things cling to the dark stone below the ledges and wait for a hand to shake. The Council wants the map. It does not ask what the things want."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Vertiginous, hand-shaking dread.
+Specific pitfalls to avoid:
+* Not the ch.4 aqueduct (open-air arches); this is a dark cavern.
+* Stalkers remain tiny, indistinct.
+* No numbers or map writing.
+* No explicit measurement of gaps.
 ```
 
 ### 15. Scenario 3: The Quake
@@ -3699,12 +7050,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 3: THE QUAKE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 3: The Quake (10.4 Core Scenario Outlines / Climate 3: Undermarches Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Quake, an Undermarches scenario in old mining tunnels that shook themselves open before dawn, with gemstone veins glimmering where support beams snapped and the exits blocked, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Mid-collapse view down a mining gallery with falling dust; snapped timber props and rubble in the foreground, a gem vein glimmering in a broken wall.
+SUBJECT DETAILS
+* Snapped timber support beams leaning at angles
+* Falling rubble and dust clouds as dense stipple
+* Gem-studded rock wall freshly exposed, faceted forms
+* Lost strongbox half-buried under rubble
+* Cart rails twisted
+* A hint of a stone shape forming in the wall (Rock Elemental Guardian), very faint
+* Tunnel exits choked by fallen rock
+HUMAN ACTIVITY
+* Three tiny miners/heroes scramble over rubble, one dragging a sack
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The old tunnels shook themselves open before dawn, and gemstone veins glimmer where the support beams snapped. Aftershocks still run through the stone. Deepwarden wants the gems hauled out before the shafts settle, and the usual exits are already blocked. The Dark has noticed the new air, and it is not the only thing moving toward it."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Chaos and urgency.
+Specific pitfalls to avoid:
+* Not the Crystal Harvest (cold crystal cavern) or the Chasm.
+* Guardian only as faint wall hints.
+* No gore.
+* No glow.
 ```
 
 ### 16. Scenario 4: The Undermarches Outpost Raid
@@ -3713,12 +7080,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 4: THE UNDERMARCHES OUTPOST RAID - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 4: The Undermarches Outpost Raid (10.4 Core Scenario Outlines / Climate 3: Undermarches Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Undermarches Outpost Raid, a scenario where an outpost lies below an old road shrine, holding plans for a surface incursion and the officer who drew them, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Looking down through a broken shrine floor opening into a lamp-lit underground outpost: guard towers, low walls and a central command tent; two scouts at the hole's edge.
+SUBJECT DETAILS
+* Ruined road shrine floor with a ragged hole and a ladder or rope
+* Underground outpost with two guard towers linked by low walls
+* Large command tent in the centre with open entrance
+* Sentries on towers with crossbows (silhouettes)
+* Hanging lamps and barrels
+* Banners hung but turned away so their device is unseen
+* Shrine altar fragments at the hole's edge
+HUMAN ACTIVITY
+* Two small scouts crouch at the hole
+* Sentries pace the towers below, tiny
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Scouts found an outpost below an old road shrine and did not stay to count the banners. Plans for a surface incursion lie inside, and so does the officer who drew them. Deepwarden wants the plans more than it wants the credit, and two parties descend under separate seals, each ordered to take the plans and claim the victory before the other can sell it."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Cautious infiltration.
+Specific pitfalls to avoid:
+* Do not specify the faction (deep elf or dwarf randomly).
+* Not the stronghold Undercroft or hidden passage.
+* No readable banners.
+* No fight in progress.
 ```
 
 ### 17. Scenario 5: The Shadowed Under Passage
@@ -3727,12 +7111,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 5: THE SHADOWED UNDER PASSAGE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 5: The Shadowed Under Passage (10.4 Core Scenario Outlines / Climate 3: Undermarches Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Shadowed Under Passage, an Undermarches passage touched by a colder dark than stone can explain, where shadows lie against the light and a Heart of Shadow waits below, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+A winding narrow passage seen from a lantern-lit near end into a mostly black bend; the lantern's shadow lies toward the lamp instead of away.
+SUBJECT DETAILS
+* Narrow passage walls closing in, rough stone
+* Lantern held at the near end casting a shadow toward itself
+* Solid black pooling at the bend, with edges that curl against the light
+* An unlit font of light, a stone basin on a plinth
+* Breath mist drawn oddly sinking
+* Ghostly handhold marks on the walls
+* A faint shade-shape in the deep dark, barely suggested
+HUMAN ACTIVITY
+* Two tiny figures advance with a lantern, one holding a hand to the wall
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "This passage has been touched by a colder dark than stone can explain. Breath sounds wrong here. The shadows lie against the light instead of with it. A Heart of Shadow waits below, prized by those who bargain with the deep elves and feared by anyone who has read Deepwarden's old warnings. The Lantern Council would rather it stayed lost. Someone with coin disagrees."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Wrongness of dark.
+Specific pitfalls to avoid:
+* Not the Ritual of Shadow Binding cavern; this is a passage.
+* Shade only a hint.
+* Shadows must be graphic solid shapes, not gradients.
+* No glow.
 ```
 
 ### 18. Scenario 6: The Ritual of Shadow Binding
@@ -3741,12 +7141,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 6: THE RITUAL OF SHADOW BINDING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 6: The Ritual of Shadow Binding (10.4 Core Scenario Outlines / Climate 3: Undermarches Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ritual of Shadow Binding, an Undermarches cavern without honest light where deep elf priests have drawn a binding circle around something answering from below the Dark, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Looking down from a ledge into a central cavern; a large binding circle on the floor ringed by three dark orbs, with robed priests around it and a tall Shadow Caller at its centre, small.
+SUBJECT DETAILS
+* Binding circle with abstract sigils, spirals and rings, no letters
+* Three dark spherical orbs in solid black around the circle
+* Deep elf priests with long ears, hooded robes and ritual knives
+* Cavern walls with stalagmites and side tunnels
+* Smoke of incense drawn as thin curling lines
+* Offering bowls and chains
+* Floor lines pulled inward, as if the circle draws the dark
+HUMAN ACTIVITY
+* Priests chant in a ring, arms raised
+* Two tiny intruders watch from the ledge
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "In a cavern without honest light, deep elf priests have drawn a binding circle around something that answers from the dark below the Dark. One patron in Deepwarden wants the rite broken before it finishes. Another wants the circle lifted out intact, sigils and all, and will not say for whom. The thing inside the circle has not been consulted."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Ritual dread.
+Specific pitfalls to avoid:
+* Not the Shadowed Under Passage.
+* The bound thing must not be seen.
+* No readable sigils.
+* No glow.
 ```
 
 ### 19. Scenario 1: Plunder of the Frozen Ruins
@@ -3755,12 +7172,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 1: PLUNDER OF THE FROZEN RUINS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 1: Plunder of the Frozen Ruins (10.4 Core Scenario Outlines / Climate 4: Pale City Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Plunder of the Frozen Ruins, a Pale City scenario where a promising ruin has cracked open under the snow and Hearthhold parties raid the treasures of citizens who froze too fast to hide them, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Overhead three-quarter view into a crack in a snow-buried street revealing a frozen room with chests and frozen citizens; the party lowers a rope at the rim.
+SUBJECT DETAILS
+* Fissure in packed snow revealing a vaulted frozen room
+* Frozen citizens in mid-gesture inside, ice-glazed, some with faces turned to the hole
+* Arcane treasure chests with magical seals on shelves
+* Ice-draped walls, ruined buildings around
+* Snow banks and a broken lamp post
+* Party members with a rope and sled
+* Cold mist
+HUMAN ACTIVITY
+* Three tiny looters at the crack lower a rope
+* One peers down
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Pale City is littered with magical treasure because its people froze too quickly to hide it, and Hearthhold has lived for generations by thawing out what they left. A promising ruin has cracked open under the snow. Both parties enter before the frozen citizens notice another room has been disturbed, because the citizens do notice, eventually, and they do not forgive trespass."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Greed amid frozen witnesses.
+Specific pitfalls to avoid:
+* Not the Mausoleum or Alchemist lab.
+* Citizens are static, no gore.
+* No readable seals.
+* Do not show an explicit dimension.
 ```
 
 ### 20. Scenario 2: The Alchemist's Frozen Laboratory
@@ -3769,12 +7203,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 2: THE ALCHEMIST'S FROZEN LABORATORY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 2: The Alchemist's Frozen Laboratory (10.4 Core Scenario Outlines / Climate 4: Pale City Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Alchemist's Frozen Laboratory, a Pale City scenario in the ice-locked Silent District where an alchemist's laboratory remains sealed under frost with benches, bottles and guardians preserved, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Interior at eye level; a frost-furred workbench of glassware in the foreground, a large alchemical golem standing in the shadow at the back, door ajar with daylight.
+SUBJECT DETAILS
+* Benches with retorts, flasks and alembics furred with hoarfrost
+* Frozen spill of liquid with icicles hanging from the edge
+* Shelves of bottles and reagent chests
+* Alchemical Golem of clay and glass, partial in the shadow
+* Ice on windows and the cracked door
+* Tools and notebooks frozen to the bench
+* Pipes and burners dead
+HUMAN ACTIVITY
+* One tiny looter reaches toward a reagent chest
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "In the ice-locked Silent District, north along the road out of Hearthhold, an alchemist's laboratory remains sealed under frost. The formula inside might be worth a village, and Hearthhold burns through everything it owns just to stay warm. The cold has preserved the benches, the bottles, the last mistakes, and the guardians left to watch them. Some things in that laboratory were never meant to thaw."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Preserved last mistakes.
+Specific pitfalls to avoid:
+* Not the stronghold Apothecary (that is warm); here everything is frost-bound.
+* Golem small and partial.
+* No readable labels.
+* No explosion or glow.
 ```
 
 ### 21. Scenario 3: The Haunted Mausoleum
@@ -3783,12 +7233,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 3: THE HAUNTED MAUSOLEUM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 3: The Haunted Mausoleum (10.4 Core Scenario Outlines / Climate 4: Pale City Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Haunted Mausoleum, a Pale City scenario of a noble White Court family's mausoleum under the ice, doors still sealed, heirlooms polished by cold and watched by names too proud to fade, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Approach down a stair carved in ice to the mausoleum entrance; sealed bronze doors ahead, pale faces just visible in the ice walls.
+SUBJECT DETAILS
+* Stair cut through blue-clear ice
+* Mausoleum facade with columns, door sealed with frost-thick seams
+* Effigies of nobles flanking the door, faces worn
+* Pale spectral faces in the ice walls drawn in sparse fine lines
+* Names carved as blank bands and stylised crests
+* Frost flowers on the bronze
+* Lantern at the stair top
+HUMAN ACTIVITY
+* Three tiny figures descend the stair with a lantern
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The mausoleum stands under the ice with its doors still sealed, and a noble family of the White Court rests below, or pretends to. Their heirlooms remain in the crypt, polished by cold and watched by names too proud to fade. Hearthhold needs whatever can be sold to buy another winter's fuel. The Court does not recognize the sale."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Proud cold and quiet watchers.
+Specific pitfalls to avoid:
+* Not the Icebound Court or Pale City gate scene.
+* No legible names.
+* Spirits very faint, not cartoonish ghosts.
+* No glow.
 ```
 
 ### 22. Scenario 4: The Clockwork Menagerie
@@ -3797,12 +7263,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 4: THE CLOCKWORK MENAGERIE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 4: The Clockwork Menagerie (10.4 Core Scenario Outlines / Climate 4: Pale City Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Clockwork Menagerie, a Pale City scenario in a frozen Deepwarden tinker's workshop full of brass legs, biting gears and small minds wound tight around old orders, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Workshop interior; tables, pipework and conveyor with brass animal automata frozen mid-motion, a heap of dust and tinker's tools on a stool in the foreground.
+SUBJECT DETAILS
+* Brass automata: a stag, a hound and a heron-like machine with visible gears
+* Conveyors and pipes furred with frost
+* Sparking conduits drawn with thin zigzag lines
+* Workbench with half-assembled brass limbs and gear wheels
+* Raised platforms and a hanging chain
+* Dust-shape of a person on a stool with a hat and a tool belt left behind
+* Open notebooks with unreadable scribble
+HUMAN ACTIVITY
+* Two tiny scavengers creep with a bag toward a workbench, one holding a pry bar
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Deepwarden tinker came north chasing a commission and froze here with the rest of the city, and the workshop is full of brass legs, biting gears, and small minds wound tight around old orders. The tinker is dust. The orders remain. Hearthhold's fire-watch wants the intact cores and the notebooks explaining how not to die retrieving them, because a Bastion this poor cannot leave brass that still moves."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Mechanical menace.
+Specific pitfalls to avoid:
+* Not the Deepwarden forge of ch.7 or the Alchemist lab.
+* Automata are not cute toys; no cartoon features.
+* No readable notes.
+* No humanoid robots.
 ```
 
 ### 23. Scenario 5: The Ice Wyrm's Hoard
@@ -3811,12 +7293,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 5: THE ICE WYRM'S HOARD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 5: The Ice Wyrm's Hoard (10.4 Core Scenario Outlines / Climate 4: Pale City Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ice Wyrm's Hoard, a Pale City scenario of a frozen cavern beneath the north road out of Hearthhold holding jewels and gold with a wyrm coiled upon it, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low view from the tunnel mouth into a large ice cavern; a gleaming hoard mound at the centre, and only part of a sleeping coil and one wing edge seen beyond an ice pillar.
+SUBJECT DETAILS
+* Large ice pillars and blue-clear walls
+* Mound of gold and jewels outlined with fine lines
+* Coil of an ice-scaled body behind a pillar, partial
+* A frozen armoured adventurer lying in front with frost on the helm (a past victim)
+* Icicles hanging from the ceiling
+* Slippery ice floor with scratches
+* Frost breath rime on the walls
+HUMAN ACTIVITY
+* Two tiny hunters crouch at the tunnel mouth
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The old stories put jewels and gold in a frozen cavern beneath the north road out of Hearthhold, and a wyrm coiled on top of them whose breath can stop a heart inside its own armour. Hearthhold needs the gold more than it fears the breath, which is the kind of arithmetic only the poorest Bastion does out loud. The second part of the story has never discouraged the first kind of listener."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Held-breath avarice.
+Specific pitfalls to avoid:
+* Not Visath the White (boss) on a spire.
+* Wyrm only partially glimpsed.
+* No gore on the victim.
+* No glow.
 ```
 
 ### 24. Scenario 6: The Icebound Court
@@ -3825,12 +7323,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 6: THE ICEBOUND COURT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 6: The Icebound Court (10.4 Core Scenario Outlines / Climate 4: Pale City Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Icebound Court, a Pale City sanctum of blue glass and frozen banners where the Frost Bailiff Magistrate still sits and the Heartfrost Shard lies at the centre, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Looking down the sanctum from its entrance; frozen banners hang along walls of blue glass, carved ice servants line both sides, the Shard on a plinth mid-hall and an Ice Throne with a tiny seated Magistrate at the far end.
+SUBJECT DETAILS
+* Walls of blue glass-like ice with fine facets
+* Frozen banners stiff like boards
+* Ranks of carved ice servants
+* Heartfrost Shard on a pedestal, a jagged crystal outlined in fine lines
+* Ice Throne with a tall back
+* Bound spirits as faint swirls in the ice
+* Breath mist hanging in the air
+HUMAN ACTIVITY
+* Two tiny intruders at the entrance step onto the slick floor
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "An ice-bound court still convenes in a sanctum of blue glass and frozen banners, north of every fire Hearthhold keeps lit. Its ruler is the Frost Bailiff Magistrate, who keeps bound spirits and carved servants close and passes sentences that were old before Hearthhold was founded. At the centre of the chamber lies the Heartfrost Shard, cold enough to make breath sound like prayer. Hearthhold wants the Shard. The Magistrate has not adjourned."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Court unadjourned.
+Specific pitfalls to avoid:
+* Magistrate small and distant, distinct from the Frost Bailiff avenue boss portrait.
+* Not the Haunted Mausoleum.
+* No glow rays.
+* No readable banners.
 ```
 
 ### 25. Scenario 1: The Oasis Raiders
@@ -3839,12 +7353,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 1: THE OASIS RAIDERS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 1: The Oasis Raiders (10.4 Core Scenario Outlines / Climate 5: Sun-Drowned Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Oasis Raiders, a Sun-Drowned scenario in which raiders hold a vital oasis south of the mountain passes: its wells, its shade and the people too slow to flee, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+From a dune crest looking down on an oasis pool with palms, raiders' camp in the shade, captives gathered, rocky outcrops and dunes beyond.
+SUBJECT DETAILS
+* Oasis pool with a stone wellspring and three or four palms
+* Raiders' tents of patched cloth, spears planted
+* Raider chieftain in loose robes on a rock
+* Captive villagers sitting roped together in shade
+* Dunes with ripples and rocky outcrops
+* Heat haze drawn as sparse vertical lines
+* Water skins and clay jars at the well
+HUMAN ACTIVITY
+* Raiders lounge or draw water
+* Captives huddle
+* Two tiny scouts on the dune crest
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A vital oasis south of the mountain passes has changed hands again, and raiders hold the wells, the shade, and the people too slow to flee. Saltspire sells water as sovereignty, and an oasis it does not control is a debt it cannot collect. One contract from the Well-Keepers says liberation. A rival contract says seizure. The water will not ask which seal is righteous."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Oppressive heat and captivity.
+Specific pitfalls to avoid:
+* Not Saltspire's tower-city or the Sandwyrm basin.
+* No violence.
+* No camels.
+* No readable flags.
 ```
 
 ### 26. Scenario 2: The Cinder Lord's Lost Brazier
@@ -3853,12 +7385,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 2: THE CINDER LORD'S LOST BRAZIER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 2: The Cinder Lord's Lost Brazier (10.4 Core Scenario Outlines / Climate 5: Sun-Drowned Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Cinder Lord's Lost Brazier, a Sun-Drowned scenario in scorched ruins where a brass brazier holds the ember of a bound Cinder Lord, to be found through searching ancient pillars, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Dusk view across a ruined plaza with a low altar at the centre and three scorched pillars around it; the half-buried brass brazier glimpsed in rubble in the foreground.
+SUBJECT DETAILS
+* Scorched flagstones and jagged obsidian rubble
+* Three tall pillars with burn bands and carved elemental marks as abstract patterns
+* Low altar of binding at plaza centre
+* Brass brazier half-buried with a tiny ember
+* Fire-blasted wall sections
+* Dune sand drifting at the plaza edge
+* Heat shimmer
+HUMAN ACTIVITY
+* One tiny searcher kneels at a pillar, brushing sand
+* Others wait at the plaza edge
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A brass brazier lies somewhere in the scorched ruins, still holding the ember of a bound Cinder Lord. The relic promises power to the hand that completes the binding, and Saltspire knows more about binding infernal things to contracts than it admits to anyone. One patron wants the brazier brought in quietly. Another wants the binding finished out here. Promises made by fire should be read twice."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Dry, infernal tension.
+Specific pitfalls to avoid:
+* Not the Obsidian Prison scenario (a burning dais).
+* No Flame Guardians visible.
+* No glow.
+* No readable binding text.
 ```
 
 ### 27. Scenario 3: Tomb of the Sunken Kings
@@ -3867,12 +7416,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 3: TOMB OF THE SUNKEN KINGS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 3: Tomb of the Sunken Kings (10.4 Core Scenario Outlines / Climate 5: Sun-Drowned Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Tomb of the Sunken Kings, a Sun-Drowned scenario in which the sand has drawn back from a priest-king tomb complex and gilded chambers show through the heat shimmer, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Looking down a sand-cut descent toward a tomb entrance of pillars and a gilded door; a tiny party at the top, a mummy figure in the doorway.
+SUBJECT DETAILS
+* Sand-banked descent with a stair
+* Fallen pillars and deep sand drifts
+* Tomb facade with a gilded door (blank paper with fine outline)
+* Hieroglyph-like patterns as abstract repeating ornament
+* Pressure plate square in the corridor, subtle
+* Mummy Herald in wrappings standing watch, small
+* Heat shimmer lines
+HUMAN ACTIVITY
+* Three tiny grave-robbers at the stair top peer down
+* The mummy stands motionless
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The sand has drawn back from a tomb complex of the priest-kings, and gilded chambers show through the heat shimmer. The old hazards remain patient, and so do the guardians. Saltspire will buy whatever is carried out and ask no awkward questions about how, because plausible innocence is worth as much to it as gold. Nothing buried with a priest-king expects to be taken politely."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Patient danger.
+Specific pitfalls to avoid:
+* Not the Sun-Crowned Prince's throne court.
+* Not Khorrun's hoard.
+* No readable hieroglyphs.
+* No glow.
 ```
 
 ### 28. Scenario 4: The Sandwyrm's Lair
@@ -3881,12 +7447,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 4: THE SANDWYRM'S LAIR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 4: The Sandwyrm's Lair (10.4 Core Scenario Outlines / Climate 5: Sun-Drowned Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Sandwyrm's Lair, a Sun-Drowned scenario in a broad basin of loose sand south of the passes where nomad legend places a vast shape beneath the dunes, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide shot of a sand basin from a rock shelf; a long furrow in the sand and a swirling shifting zone at the centre, the creature not seen.
+SUBJECT DETAILS
+* Broad bowl of rippled sand with a central swirl
+* A long ridge of disturbed sand moving toward the dunes
+* Rock shelves and ruined stakes
+* Coins and gems dribbling from a sand fold
+* Dune ridges with fine wind lines
+* Bleached bones half-buried
+* A nomad campfire on the rim
+HUMAN ACTIVITY
+* A few tiny hunters with ropes stand on the rock shelf
+* A nomad storyteller sits at the fire
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Nomad legends speak of a vast shape beneath the dunes south of the passes, and a gullet lined with the treasure of everything it has swallowed. The nomads tell it as a warning. Saltspire's patrons hear it as an inventory and pay accordingly. The dunes do not distinguish between the two kinds of listener."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Waiting and listening.
+Specific pitfalls to avoid:
+* The Sandwyrm not visible; only its trace.
+* Not Oasis Raiders.
+* No glow.
+* No gore.
 ```
 
 ### 29. Scenario 5: The Cursed Colossus of the Waste
@@ -3895,12 +7478,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 5: THE CURSED COLOSSUS OF THE WASTE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 5: The Cursed Colossus of the Waste (10.4 Core Scenario Outlines / Climate 5: Sun-Drowned Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Cursed Colossus of the Waste, a Sun-Drowned scenario centred on a colossal priest-king statue broken at the waist, still angry, with a Heartstone lodged in its hollow chest, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low view from a dune toward the colossal broken statue rising from the sand; the hollow chest cavity a black opening; broken statuary around the base.
+SUBJECT DETAILS
+* Priest-king statue broken at the waist, stern face under a headdress
+* Hollow chest cavity as solid black
+* Legs and shoulders climbable with ledges
+* Dune drifts and fallen statuary
+* A glowing rune marker drawn as a carved circle on the back
+* Skeleton warriors, tiny, at the base
+* Treasure chests half-buried
+HUMAN ACTIVITY
+* Tiny climbers scale the legs with ropes
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A colossal statue of a priest-king rises from the sand, broken at the waist and still angry, with a Heartstone lodged in its hollow chest. Fortune-hunters call it a prize. Grave-robbers know better and come anyway, and Saltspire pays the survivors of either trade the same rate. The waste keeps the ones who do not survive."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Colossal anger entombed in sand.
+Specific pitfalls to avoid:
+* Not the Last Colossus boss (iron) and not the Fall statue head (field).
+* No glow.
+* Skeletons only tiny.
+* No inscription.
 ```
 
 ### 30. Scenario 6: The Cinder Lord's Obsidian Prison
@@ -3909,12 +7508,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 6: THE CINDER LORD'S OBSIDIAN PRISON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 6: The Cinder Lord's Obsidian Prison (10.4 Core Scenario Outlines / Climate 5: Sun-Drowned Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Cinder Lord's Obsidian Prison, a Sun-Drowned scenario of an obsidian dais burning without fuel at the centre of a ruin, with a Cinder Lord straining against its binding, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Night scene looking up at a black obsidian dais with flames rising, three glyphic stones around it, and a vague silhouette within the fire; broken columns frame the view.
+SUBJECT DETAILS
+* Obsidian dais with climbable sides, polished and cracked
+* Flames rising without fuel drawn as ink strokes
+* Three glyphic stones with cracks, abstract carvings
+* Scorched flagstones and broken columns
+* Flame mephits small near the dais
+* Silhouette of horned figure within flame, vague
+* Night sky
+HUMAN ACTIVITY
+* Two tiny figures at a stone, one touching it, one watching
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "An obsidian dais burns without fuel at the centre of the ruin, and a Cinder Lord strains against the binding that holds it. Saltspire's Well-Keepers wrote bindings like this one, back when the desert still kept its own law, and one of them wants the prison strengthened before it fails. A rival patron wants it broken and calls that ambition. The Cinder Lord calls it overdue."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Barely held binding.
+Specific pitfalls to avoid:
+* Not the Lost Brazier plaza (daylight altar).
+* Cinder Lord only as silhouette in flames.
+* No glow.
+* No readable glyphs.
 ```
 
 ### 31. Scenario 1: The Reliquary of Edrava Salttide
@@ -3923,12 +7538,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 1: THE RELIQUARY OF EDRAVA SALTTIDE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 1: The Reliquary of Edrava Salttide (10.4 Core Scenario Outlines / Climate 6: The Mire Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Reliquary of Edrava Salttide, a Mire scenario at a Sunken Barrow, a grave-house sealed for two hundred years until recent floods opened it, holding the reliquary of the salt-coast's last great toll-lord, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Dawn mist view from a reed-fringed bog island toward a mossy barrow mound with a low flooded entrance at its base; a party wades through shallows in the lower foreground, small. The mound dominates the centre.
+SUBJECT DETAILS
+* Rounded barrow mound with a heavy stone lintel carved with abstract ship and wave shapes (no letters)
+* Open entrance filled with black water, steps going down under the surface
+* White salt crust on the stones, odd this far from any sea
+* Bog islands, dense reeds and drifting water-weed
+* A toppled standing stone half-sunk at the barrow's foot
+* Faint ripples of leech swarms in the shallows
+* Rope and a pole lying on the bank, mist drawn as sparse horizontal lines
+HUMAN ACTIVITY
+* Three tiny party members wade through reeds, one probing the water with a pole
+* A heron stands motionless on a hummock
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Recent floods opened a grave-house that The Mire had kept sealed for two hundred years. Edrava Salttide, the salt-coast's last great toll-lord, who fed their enemies to the tide and married four pirate-kings in succession, was laid here with a reliquary no Bastion will admit to wanting and every Bastion has quietly sent parties to find. Reedmarch knew where it lay all along and sold the location twice. Both parties enter before the dead gather the strength to close the door again. The water smells of salt. There is no ocean for eighty miles."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Waterlogged, ancient and unwelcoming.
+Specific pitfalls to avoid:
+* Not the island ritual of Salttide's Reckoning or the Vossegar cathedral.
+* Edrava's Shade and the reliquary stay unseen.
+* No readable carvings.
+* Not a stone castle; a flooded burial mound.
 ```
 
 ### 32. Scenario 2: The Lizardfolk's Stolen Offerings
@@ -3937,12 +7569,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 2: THE LIZARDFOLK'S STOLEN OFFERINGS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 2: The Lizardfolk's Stolen Offerings (10.4 Core Scenario Outlines / Climate 6: The Mire Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Lizardfolk's Stolen Offerings, a Mire scenario at a deep-fen lizardfolk shrine encampment raided before dawn, its Sunstone Amulet and offering piles dragged off into the reeds, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Pre-dawn view across the raised-ground swamp encampment of rope walkways and reed screens; empty offering plinths in the foreground and a drag trail leading into the reeds, with lizardfolk temple-guards small and alert.
+SUBJECT DETAILS
+* Raised mud platform with reed-thatched shrine huts and woven screens
+* Rope walkways slung between posts over shallow pools
+* Overturned offering baskets, scattered coins and a smashed clay bowl
+* Broad drag marks through the mud into tall reeds
+* Lizardfolk Scale-Shaman with a feathered staff and troglodyte guards with spears, reptilian crests and tails
+* Shallow pools with a few submerged snouts
+* Fen mist and a pale line of dawn
+HUMAN ACTIVITY
+* The Scale-Shaman examines an empty plinth
+* Guards sniff and scan the reeds
+* Two tiny thieves hide in the reeds at the far edge
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A lizardfolk shrine in the deep fen was raided before dawn, and the Sunstone Amulet and the offering-piles were dragged off into the reeds. The lizardfolk temple-guards want it back, and they remember faces. One writ names the amulet sacred and to be returned. Another names the silver recoverable property, and Reedmarch will broker either errand for its usual cut of silence."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Furious, watchful silence before dawn.
+Specific pitfalls to avoid:
+* Lizardfolk drawn as grounded reptilian people, not cartoon.
+* Not the Titan fen or the barrow.
+* No readable idol markings.
+* No glow around the amulet (absent).
 ```
 
 ### 33. Scenario 3: The Mire Titan's Fen
@@ -3951,12 +7601,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 3: THE MIRE TITAN'S FEN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 3: The Mire Titan's Fen (10.4 Core Scenario Outlines / Climate 6: The Mire Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Mire Titan's Fen, a Mire scenario of a bubbling fen where glimmering geodes lie scattered through a Mire Titan's territory like bait, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Wide view across the fen from a muddy bank; geodes glint on hummocks in the middle ground and a vast humped back breaks the pools far out. Razor reeds frame the left edge.
+SUBJECT DETAILS
+* Deep mud and shallow pools with rising gas bubbles drawn as small circles
+* Glimmering geodes as faceted shapes on small islands, outlined and left white
+* Razor reeds with serrated blades along the banks
+* Huge mud-caked hump of the Titan far out, partly submerged, barely resolved
+* Hooks, ropes and a boat pole on the bank
+* A heron-like bird fleeing
+* Low mist with sparse horizontal strokes
+HUMAN ACTIVITY
+* Hunters with hooks and ropes stand on the bank, small
+* A lighter thief creeps out along a hummock chain
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Mire Titan has claimed the bubbling fen, and glimmering geodes lie scattered through its territory like bait, because that is more or less what they are. Hunters arrive with hooks, ropes, and prayers. Thieves arrive lighter and usually leave that way. Reedmarch wants the geodes and does not much care which trade brings them in, so long as the fen stays quiet about the rest."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Baited, patient menace.
+Specific pitfalls to avoid:
+* Titan only a hump, not a portrait.
+* Not the Serpent's sinkhole or the Blighted Heartwood.
+* No glow from geodes.
+* No gore.
 ```
 
 ### 34. Scenario 4: The Blighted Heartwood
@@ -3965,12 +7632,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 4: THE BLIGHTED HEARTWOOD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 4: The Blighted Heartwood (10.4 Core Scenario Outlines / Climate 6: The Mire Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Blighted Heartwood, a Mire scenario in which blight has wrapped swamp growth around a pulsing Heartwood that beats under the bark like a buried organ, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Close, slightly low view at the edge of the Blighted Grove; a huge swamp tree with a swollen, vein-ridged bulge in its trunk fills the centre, thorny vines and muck pools around it, a treant guardian partly seen behind.
+SUBJECT DETAILS
+* Trunk bulge like a heart under split bark, with vein-like ridges
+* Thorny vines choking the grove
+* Corrupted muck pools with oily rings and dead reeds
+* A blighted treant guardian, bark-skinned, partly seen between trunks
+* Small thornling sprouts, twig-limbed, near the vines
+* Rot-furred branches and bracket fungus
+* Decaying boardwalk fragment at the edge
+HUMAN ACTIVITY
+* Two tiny figures hesitate at the vine edge, one with an axe
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Blight has wrapped the swamp growth around a pulsing Heartwood that beats under the bark like a buried organ. One patron wants it destroyed before the rot spreads to the ferry-roads Reedmarch lives on. Another wants its corruption bottled and carried off, and neither wants to be the one holding it on the way home. The Marsh Council would prefer the whole matter stay unspoken."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Sickly, throbbing wrongness.
+Specific pitfalls to avoid:
+* Not the Old Growth ritual grove (which is healthy) and not the Avatar.
+* No gore.
+* No glowing pulse.
+* Treant partial only.
 ```
 
 ### 35. Scenario 5: Salttide's Reckoning
@@ -3979,12 +7662,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 5: SALTTIDE'S RECKONING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 5: Salttide's Reckoning (10.4 Core Scenario Outlines / Climate 6: The Mire Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Salttide's Reckoning, a Mire scenario of a sacred island cursed like oil on water, where Edrava Salttide has made a ritual of the place and turns it on the living who entered without paying the toll, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+View across still oily water from the reed line toward a ritual island; reeds on both banks lean toward the island, three carved effigies stand on it with a robed figure among them.
+SUBJECT DETAILS
+* Reeds all bent toward the island as if drawn by wind
+* Concentric oily rings spreading over the water
+* Three carved driftwood effigies with crude faces
+* Robed toll-lord figure on the island with raised arms, ship-prow headdress
+* Crocodile snouts just breaking the surface
+* Muddy islets and dense reeds
+* White salt crust on the shore and a dead tree
+HUMAN ACTIVITY
+* The robed figure performs the rite
+* Two tiny watchers crouch in the reeds
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A curse lies over the sacred island like oil on water. Edrava Salttide has made a ritual of the place, the same ritual they once used to curse the harbours that refused their ships, now turned on the living who entered The Mire without paying the toll. The reeds bend toward the island. The water smells of brine, this far from any sea. Reedmarch sent one party to break the working, and let a rival sell the other a contract whose small print it has not read."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Brine-bitter curse in still air.
+Specific pitfalls to avoid:
+* Not the barrow entrance of Scenario 1.
+* Salttide small, not a portrait.
+* No readable markings.
+* No glow.
 ```
 
 ### 36. Scenario 6: The Serpent's Sunken Hoard
@@ -3993,12 +7693,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 SCENARIO 6: THE SERPENT'S SUNKEN HOARD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Scenario 6: The Serpent's Sunken Hoard (10.4 Core Scenario Outlines / Climate 6: The Mire Scenarios), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Serpent's Sunken Hoard, a Mire scenario of a flooded sinkhole opened in the black water, where something ancient coils below over a hoard, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+High angle onto a circular sinkhole pool in black water with crumbling banks; hoard chests glimpsed deep below and a long coil shown only as ripples and a darker line under the surface.
+SUBJECT DETAILS
+* Circular pool of black water edged by slumping, crumbling banks
+* Chests glimpsed deep down as pale rectangles
+* Faint spiral ripples suggesting a coil below
+* Small islands, reeds and muddy approaches
+* A rope tied to a stake leading into the water
+* Floating debris and a drowned ferry hull
+* Mist
+HUMAN ACTIVITY
+* One tiny diver with a rope descends a bank, three others hold the line
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A flooded sinkhole has opened in the black water, and something ancient coils below it, older than Reedmarch's oldest ferry-family. Its hide, its hoard, and its death would each command a price in a different market. The water is dark enough to hide which one is being hunted, and Reedmarch prefers it that way. Whatever is down there has paid the toll longer than anyone alive, and does not intend to stop now."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Black water, held breath.
+Specific pitfalls to avoid:
+* The serpent itself unseen.
+* Not the Mire climate walkways or Vossegar's cathedral.
+* No glow.
+* No gore.
 ```
 
 ### 37. A.4 Quickstart Scenario: The Broken Courier
@@ -4007,12 +7723,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 A.4 QUICKSTART SCENARIO: THE BROKEN COURIER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of A.4 Quickstart Scenario: The Broken Courier (Appendix A. Learn to Play), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Broken Courier, the Appendix A quickstart scenario in which a royal courier was cut down on the old road and two small parties race for the dispatch satchel before wolves or rivals claim it, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Overcast morning view along an old road with a low ruined wall in the centre; the fallen courier and satchel lie beside the ruin, four wolves at the edge, tiny hero pairs at the far left and right.
+SUBJECT DETAILS
+* Old cobbled road with ruts and grass breaking through
+* Low ruined wall about knee height and a patch of rubble
+* Courier lying in a spread cloak, drawn with restraint, satchel beside
+* Small lockbox thrown into brush
+* Four dire wolves approaching low across the field
+* Scatter pieces: fallen stones and a broken cart axle
+* Thin overcast sky with sparse strokes
+HUMAN ACTIVITY
+* Two heroes on each side advance warily from opposite edges
+* Wolves converge on the satchel
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A royal courier was cut down on the old road. The satchel still lies beside the body, and a small lockbox has been thrown clear into the brush. Both parties race to seize the dispatches before wolves or rivals claim them."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Brisk, grim race.
+Specific pitfalls to avoid:
+* No gore; courier clearly dead but not gruesome.
+* Not the Bandit's Toll or ch.2.
+* No readable seal on satchel.
+* Wolves not detailed portraits.
 ```
 
 ## Stronghold rooms (11)
@@ -4025,13 +7758,31 @@ Printed 2.6 in wide · aspect 3:2. Family framing: Interior or architectural vie
 
 ```text
 11.1 CAMPAIGN OVERVIEW - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of 11.1 Campaign Overview (11. Campaign Play), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Stronghold, a claim driven into a dying world with coin, fear, salvage and stubborn labour, built of stones from ruined shrines, watch-keeps and broken bridges, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of a stronghold under construction on a hill; workers haul shrine stones and broken bridge spans up a ramp, scaffolding around a half-built keep.
 A stronghold under construction from salvage: workers hauling shrine stones and broken bridge spans up a ramp, scaffolding around a half-built keep.
+SUBJECT DETAILS
+* Half-built keep with scaffolding and ropes
+* Reused masonry: a carved saint's head and a pier of a broken bridge span
+* Ramp with a sled and rollers dragging a block
+* Workers: debt-bound craftsmen, mules, a deserter soldier
+* Timber crane or windlass
+* Half-finished palisade and a ditch
+* Stacked salvaged blocks and a mason's hut
+HUMAN ACTIVITY
+* A dozen workers haul stones up the ramp
+* Others on the scaffolding set stones
+* A guard stands on a wall section
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Stronghold is not a castle in the noble sense. No ancient bloodline sanctifies it. No bard remembers its founding. It is a claim driven into a dying world with coin, fear, salvage, and stubborn labour. Its stones come from ruined shrines, abandoned watch-keeps, broken bridges, and walls that failed other people first. Its gates are paid for with burial gold, bounty coin, chapel debt, and the last wages of the dead."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Stubborn labour at the edge of ruin.
+Specific pitfalls to avoid:
+* Not the finished stronghold at dusk (ch.11 opener).
+* Not a noble castle.
+* No monsters.
+* No readable plans or text.
 ```
 
 ### 2. The Vault
@@ -4040,13 +7791,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE VAULT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Vault (11. Campaign Play / 11.3 Building the Stronghold), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Vault, a Stronghold facility that is a sealed confession of greed, iron-bound and watched by clerks who sleep in shifts, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low-ceilinged interior at eye level; a clerk dozes on a stool beside iron-bound chests and coin scales while a second clerk counts coins by candle.
 A low iron-bound vault room; a clerk dozing on a stool beside chests and coin scales while a second clerk counts by candle.
+SUBJECT DETAILS
+* Iron-bound chests with heavy locks and chains
+* Coin scales and stacks of coins
+* Candle in a dish and low barrel-vaulted ceiling
+* Ledger on a slanted desk
+* Iron door ajar with thick bolts
+* Sacks and strongboxes stacked
+* A wall of pigeonholes stuffed with receipts
+HUMAN ACTIVITY
+* One clerk dozes on a stool
+* One clerk counts coins with a quill beside
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Vault is not a treasury. It is a sealed confession of greed, iron-bound and watched by clerks who sleep in shifts. They count each coin as if the dead might come back to collect."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Claustrophobic, wary greed.
+Specific pitfalls to avoid:
+* Not the Khorrun hoard or the ch.6 hiring hall.
+* No readable ledger text.
+* No heaps of glittering treasure.
+* Not a bank palace.
 ```
 
 ### 3. The Barracks
@@ -4055,13 +7823,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE BARRACKS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Barracks (11. Campaign Play / 11.3 Building the Stronghold), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Barracks, a Stronghold dormitory smelling of straw, sweat, damp wool and boiled leather, with names carved into the beams, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Interior down the length of a long room under heavy beams; rows of straw bunks, one empty bunk in the foreground with a helmet left on it.
 Rows of straw bunks under heavy beams carved with names; damp wool and boots hung to dry; one empty bunk with a helmet left on it.
+SUBJECT DETAILS
+* Rows of straw bunks with rough blankets
+* Heavy beams carved with many names as scratches
+* Damp wool cloaks and boots hung to dry on lines
+* Small iron stove and a kettle
+* One empty bunk with a helmet resting
+* Shields stacked at the wall and a chest at each bed
+* Dust motes shown as stippling
+HUMAN ACTIVITY
+* One or two recruits sleep curled on bunks, the rest empty
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Barracks smell of straw, old sweat, damp wool, and boiled leather. Names are carved into the beams by people who expected to return. Few are still spoken."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Weary, mournful, lived-in.
+Specific pitfalls to avoid:
+* Not the Expedition Hall yard or Armoury racks.
+* Names must be scratches, not readable letters.
+* No gore.
+* Not a luxurious bedroom.
 ```
 
 ### 4. The Armoury
@@ -4070,13 +7854,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE ARMOURY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Armoury (11. Campaign Play / 11.3 Building the Stronghold), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Armoury, a Stronghold store of salvaged arms smelling of oil, wet leather, coal smoke and old violence, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Interior wall view; racks of salvaged arms behind a worn oil-cloth bench in the foreground.
 Racks of salvaged arms: blades from drowned shrines, a shield hammered flat by dragon-fire, ownerless helms on pegs, an oil-cloth bench.
+SUBJECT DETAILS
+* Racks of blades recovered from drowned shrines, rusted and barnacled
+* A shield hammered flat after dragon-fire
+* Ownerless helms on pegs, some dented
+* Oil-cloth bench with rags, an oil can and a whetstone
+* Spears and crossbows racked against the wall
+* Coal-smoke-stained beams and a coal brazier
+* Wet leather harnesses hanging
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Armoury smells of oil, wet leather, coal smoke, and old violence. Its walls hold blades recovered from drowned shrines, shields hammered flat after dragon-fire, and helms whose former owners are better left unnamed."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Old violence stored carefully.
+Specific pitfalls to avoid:
+* Not the ch.7 Deepwarden forge (no smith, no anvil).
+* Not the melee weapons still life on sacking.
+* No readable names on helms.
+* No figures.
 ```
 
 ### 5. The Apothecary
@@ -4085,13 +7883,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE APOTHECARY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Apothecary (11. Campaign Play / 11.3 Building the Stronghold), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Apothecary, a Stronghold workroom built around heat, glass, knives, bone saws and bitter herbs, stocked with tinctures from The Mire and salts from the Sun-Drowned, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Cramped workroom interior at eye level; glass alembics over a brazier at the centre, shelves of jars behind.
 A cramped workroom of glass alembics over a brazier, bone saws and knives on a cloth, shelves of labelled-less jars and hanging bitter herbs.
+SUBJECT DETAILS
+* Glass alembics and retorts over a brazier
+* Bone saws and knives laid on a cloth
+* Shelves of jars with unmarked labels (blank paper tags)
+* Bunches of herbs hanging from the rafters
+* Mortar and pestle, scales and a dish of salts
+* Operating table with leather straps
+* A skull used as a candle holder
+HUMAN ACTIVITY
+* Optional: a single apothecary's silhouette tending the brazier
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Apothecary is built around heat, glass, knives, bone saws, and the bitter stink of herbs that should not grow in clean soil. Its shelves hold tinctures from The Mire, salts from the Sun-Drowned, and poultices learned from surgeons paid in secrets."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Bitter, clinical and uneasy.
+Specific pitfalls to avoid:
+* Not the Alchemist's Frozen Laboratory scenario.
+* No gore on the table.
+* No readable labels.
+* Not a pretty potion-shop.
 ```
 
 ### 6. The Outer Walls
@@ -4100,13 +7914,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE OUTER WALLS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Outer Walls (11. Campaign Play / 11.3 Building the Stronghold), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Outer Walls, the Stronghold's ditch, spiked palisade and stone wall that make the dark work harder, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Night view from outside the ditch looking up at the wall; warding nails driven into the timbers, a lone sentry with a torch on the walkway.
 The stronghold's ditch, spiked palisade and stone wall at night, warding nails driven into the timbers, a lone sentry with a torch on the walkway.
+SUBJECT DETAILS
+* Ditch with sharpened stakes
+* Spiked palisade of heavy timbers
+* Stone wall section with salvaged masonry
+* Warding nails hammered into timbers in patterns
+* Sentry walkway with a torch and a bell
+* Night sky ruled with heavy hatching
+* Dead trees beyond the ditch and distant eyes as tiny dots
+HUMAN ACTIVITY
+* One sentry stands with a torch, small
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Outer Walls declare that the dark must work harder. Stone, timber, ditch, spike, and warding nail stand between the party's claim and the things that circle after sundown."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Thin security.
+Specific pitfalls to avoid:
+* Not the ch.11 returning party scene (no procession, no gate focus).
+* No monsters visible.
+* Not a grand castle wall.
+* Torch not glowing.
 ```
 
 ### 7. The Arcanum
@@ -4115,13 +7945,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE ARCANUM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Arcanum (11. Campaign Play / 11.3 Building the Stronghold), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Arcanum, a Stronghold tower that rises too thin and too tall, windows burning at hours when honest fires should be dead, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Looking up at the tower against a night sky; upper windows burn and brass instruments on the roof turn toward a storm.
 A thin, too-tall tower against a night sky, upper windows burning, brass instruments on its roof turned toward a storm.
+SUBJECT DETAILS
+* Tall thin tower with crooked stonework
+* Windows drawn as solid black with a few open slits of paper
+* Brass instruments: armillary ring, telescope, weathervane
+* Storm clouds as dense diagonal hatching
+* Lightning thin as a fine zigzag
+* Stronghold wall and roofs low below
+* Ivy and crooked buttresses
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Arcanum rises too thin and too tall. Its upper windows burn at hours when honest fires should be dead. Brass instruments turn toward storms, old constellations, and places where the sky has not healed."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Uneasy ambition.
+Specific pitfalls to avoid:
+* Not the Fallen Observatory (ruined dome).
+* Not the burned library of ch.8.
+* No glow rays.
+* No figures.
 ```
 
 ### 8. The Stronghold Chapel
@@ -4130,13 +7974,29 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE STRONGHOLD CHAPEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Stronghold Chapel (11. Campaign Play / 11.3 Building the Stronghold), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Stronghold Chapel, small, cold and crowded with votive offerings from those who survived by inches, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Interior at eye level looking toward a small altar; chipped saint statues and votives crowd the walls, a single mourner kneels.
 A small cold chapel crowded with votive offerings, chipped saint statues and low candles, a single mourner kneeling.
+SUBJECT DETAILS
+* Chipped saint statues with worn faces
+* Votive offerings: small figures, broken weapons, locks of hair
+* Low candles guttering
+* Narrow arched windows with plain glass
+* Plain stone altar and a cracked cloth
+* Suspect relic in a reliquary box
+* Cold breath mist
+HUMAN ACTIVITY
+* One mourner kneels at the altar, head bowed
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Chapel is small, cold, and crowded with votive offerings from those who survived by inches. Its saints are chipped. Its relics are suspect. Its candles burn low even when no wind enters."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hushed grief.
+Specific pitfalls to avoid:
+* Not the Sablekeep bastion or Voice Beneath the Bells drowned chapel.
+* No readable inscriptions.
+* No glowing halo.
+* Not ornate.
 ```
 
 ### 9. The War Room
@@ -4145,13 +8005,27 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE WAR ROOM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the War Room (11. Campaign Play / 11.3 Building the Stronghold), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the War Room, where contracts are signed, debts denied and maps stained, with a hearth beneath banners taken from ruins, enemies and dead patrons, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Interior across a heavy table toward the hearth; captured banners hang above, stained maps pinned with knives.
 A heavy table under captured banners, stained maps pinned with knives, a contract and quill, a hearth burning behind.
+SUBJECT DETAILS
+* Heavy table with stained maps pinned by knives
+* Contract and quill with an inkwell
+* Captured banners without device
+* Burning hearth in the back wall
+* Stools and a map chest
+* Candle stubs and a wine cup
+* Rough stone walls
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The War Room is where contracts are signed, debts are denied, and maps are stained. Its hearth burns beneath banners taken from ruins, enemies, and dead patrons."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Calculating and weathered.
+Specific pitfalls to avoid:
+* Not the ch.6 hiring hall (crowded) or the Vault.
+* No readable text on maps.
+* No figures needed.
+* Not luxurious.
 ```
 
 ### 10. The Expedition Hall
@@ -4160,13 +8034,30 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE EXPEDITION HALL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Expedition Hall (11. Campaign Play / 11.3 Building the Stronghold), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Expedition Hall, a packed-earth training yard with split-post walls where veterans correct recruits, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Three-quarter view of a training yard; a scarred veteran corrects a recruit's guard, blunted weapons on a rack, mud underfoot.
 A packed-earth training yard inside split-post walls: a scarred veteran correcting a recruit's guard, blunted weapons on a rack, mud underfoot.
+SUBJECT DETAILS
+* Split-post walls and a roofed lean-to
+* Packed-earth floor with puddles
+* Rack of blunted swords and staves
+* Straw-stuffed training dummy with cuts
+* Scarred veteran with a bandaged hand
+* Recruit with an oversized shield
+* Mud smears and a bucket
+HUMAN ACTIVITY
+* Veteran adjusts recruit's guard
+* Another recruit watches or spars in the background
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Expedition Hall is packed earth, split posts, blunted steel, blood in the mud, and shouted correction from veterans with no patience for heroic stupidity. New recruits learn quickly that courage is not a defence."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Hard instruction and mud.
+Specific pitfalls to avoid:
+* Not Hearthhold's training ground on the wall.
+* No blood.
+* Not the Barracks interior.
+* Not heroic poses.
 ```
 
 ### 11. The Undercroft
@@ -4175,12 +8066,28 @@ The atmosphere is grounded, austere, mysterious and subtly ominous.
 
 ```text
 THE UNDERCROFT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Undercroft (11. Campaign Play / 11.3 Building the Stronghold), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of the Undercroft, a warren of cellars, sealed drains and hidden doors older than the Stronghold above, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
+Low-angle view in a vaulted cellar warren lit by a single lantern; a hidden door ajar, a cloaked figure slipping into an older passage below.
 A vaulted cellar warren lit by one lantern, a hidden door ajar, a cloaked figure slipping into an older passage below.
+SUBJECT DETAILS
+* Vaulted brick ceiling and arches
+* Single lantern on a hook
+* Hidden door ajar with a heavy bolt
+* Sealed drain grate
+* Older masonry in the lower passage, finer than above
+* Barrels, crates, cobwebs
+* Water drips and a shallow puddle
+HUMAN ACTIVITY
+* A cloaked figure slips through the hidden door
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Undercroft is a warren of cellars, sealed drains, hidden doors, and passages older than the Stronghold above it. Smugglers, informants, and quiet killers all find reasons to know its shape."
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Secretive and old.
+Specific pitfalls to avoid:
+* Not the Undermarches climate or the Sealed Archive scenario.
+* Figure's face hidden.
+* No monsters.
+* No readable marks.
 ```
 

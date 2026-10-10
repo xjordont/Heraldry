@@ -1,6 +1,6 @@
 FIGHTER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Fighter (6. Your Adventuring Party / 6.13 Hero Classes), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of a Fighter, Martial class: drilled, line-holding soldier of fortune; packages of Shortsword, Targe, Ring Shirt, Dagger, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 
 FORMAT AND ISOLATION
 Tall 2:3 portrait composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing.
@@ -8,17 +8,30 @@ A single subject drawn whole, isolated on blank ivory-white paper: only a small 
 Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
 
 COMPOSITION
-Single full-length adventurer in an action-ready pose with class-typical arms and gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.
+Full figure in three-quarter view braced low behind a small round targe at a ruined gate, shortsword held back over the hip, taking an unseen charge.
+
+SUBJECT DETAILS
+* Ring shirt (mail of linked rings) over a padded arming coat
+* Targe: small round shield with a central boss, edge dented
+* Plain shortsword, single-handed, held ready
+* Dagger on belt
+* Open-faced helm or coif, no visor
+* Stance planted wide, weight forward, knuckles white
+* Scuffs and rust on mail, boots braced on cracked flagstones
 
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when holding it is the only thing that matters. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does."
 
 ARTISTIC STYLE AND ATMOSPHERE
-The atmosphere is grounded, austere, mysterious and subtly ominous.
+Stoic resolve, the last thing between the line and collapse.
 Use fine traditional pen-and-ink rendering: a confident, slightly heavier outer contour, crisp interior lines, crosshatching that follows the form, sparse stippling, and a few deliberate solid-black shapes for the deepest shadows. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn and weathered. The illustration must feel authentically hand-drawn rather than digitally rendered.
 
 FINAL VISUAL REQUIREMENTS
+Specific pitfalls to avoid:
+* Not heavy plate: ring shirt only.
+* Do not give it a two-handed weapon (that is the Berserker or Ravager package).
+* No flourish or duel pose.
 Avoid photorealism, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be detailed yet clean and readable at small size, suitable for seamless reproduction in a professionally printed fantasy rulebook.
 
 STYLE REFERENCES
