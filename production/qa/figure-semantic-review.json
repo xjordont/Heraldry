@@ -1,5 +1,5 @@
 {
- "reviewer": "Independent Sonnet auditor, RC488 delta review (FIG-13..16, FIG-20..56; all other entries carried forward with hashes unchanged); earlier reviewers retained in rc487_reviewer and prior_reviewer",
+ "reviewer": "Independent Claude Opus subagent, RC489 delta review (FIG-13..16, FIG-20..56; all other entries carried forward with hashes unchanged); earlier reviewers retained in rc488_reviewer, rc487_reviewer and prior_reviewer",
  "reviewed_at": "2026-10-10",
  "figures": [
   {
@@ -391,7 +391,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -411,6 +411,21 @@
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
     ],
     "party_deployment_note": "Party Deployment lines for The Mire 2 (14327: opposite edges within 6\") and The Mire 5 (opposite long edges) are unchanged; only the Mire 2 Boss Deployment line changed."
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: this figure (and its compact key strip) draws deployment/placement patterns from 10.1 and specific 10.4 scenarios (FIG-14: Bandit's Toll, Chasm Crossing, Quake, Spider's Silk Route; FIG-15: Chasm Crossing; FIG-16: Whispering Grove; FIG-13: Party Deployment lines). None of these paragraphs changed; the two RC489 10.4 changes (Pale City 3 Restless Spirits profile, The Mire 2 Shaman attack) are outside every cited span and no creature profile, weapon or secondary objective is depicted. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
+    ]
    }
   },
   {
@@ -455,7 +470,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "75b002553c33ae2733988b5069a4531ffd8249c482889c469fe91eb200adc28d",
+   "rules_sha256": "3f6184820c510f013384079d0a3acd3b43b6458efb99f98f9e7762731ae7a77c",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -475,6 +490,21 @@
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
     ],
     "party_deployment_note": "Party Deployment lines for The Mire 2 (14327: opposite edges within 6\") and The Mire 5 (opposite long edges) are unchanged; only the Mire 2 Boss Deployment line changed."
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "75b002553c33ae2733988b5069a4531ffd8249c482889c469fe91eb200adc28d",
+    "note": "RC489 delta review: this figure (and its compact key strip) draws deployment/placement patterns from 10.1 and specific 10.4 scenarios (FIG-14: Bandit's Toll, Chasm Crossing, Quake, Spider's Silk Route; FIG-15: Chasm Crossing; FIG-16: Whispering Grove; FIG-13: Party Deployment lines). None of these paragraphs changed; the two RC489 10.4 changes (Pale City 3 Restless Spirits profile, The Mire 2 Shaman attack) are outside every cited span and no creature profile, weapon or secondary objective is depicted. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
+    ]
    }
   },
   {
@@ -524,7 +554,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "2c1caea68aba269ea32f74e80a6e465a3c0c67aade3d14303abeef64b2fd0491",
+   "rules_sha256": "164cb74b8b1ca488a72cc943a36ddb1364923af4072ad6635a3f8f416cafdea1",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -544,6 +574,21 @@
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
     ],
     "key_legend_note": "Key/legend glyph and terrain content (FIG-20), Chasm/fall depiction (FIG-15) and area-of-effect depiction (FIG-16) are independent of Boss Deployment companions and of the Mire 5 summon list; no monster-type names appear in these SVGs."
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "2c1caea68aba269ea32f74e80a6e465a3c0c67aade3d14303abeef64b2fd0491",
+    "note": "RC489 delta review: this figure (and its compact key strip) draws deployment/placement patterns from 10.1 and specific 10.4 scenarios (FIG-14: Bandit's Toll, Chasm Crossing, Quake, Spider's Silk Route; FIG-15: Chasm Crossing; FIG-16: Whispering Grove; FIG-13: Party Deployment lines). None of these paragraphs changed; the two RC489 10.4 changes (Pale City 3 Restless Spirits profile, The Mire 2 Shaman attack) are outside every cited span and no creature profile, weapon or secondary objective is depicted. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
+    ]
    }
   },
   {
@@ -595,7 +640,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "f97d562e67c51c2c168d8625732c4c03f50296a54d0bb811736ee826e25f01e7",
+   "rules_sha256": "54c56a5dba42f519233901490946ae25742afff4b2b77b4c443115e3e7861384",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -615,6 +660,21 @@
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
     ],
     "key_legend_note": "Key/legend glyph and terrain content (FIG-20), Chasm/fall depiction (FIG-15) and area-of-effect depiction (FIG-16) are independent of Boss Deployment companions and of the Mire 5 summon list; no monster-type names appear in these SVGs."
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "f97d562e67c51c2c168d8625732c4c03f50296a54d0bb811736ee826e25f01e7",
+    "note": "RC489 delta review: this figure (and its compact key strip) draws deployment/placement patterns from 10.1 and specific 10.4 scenarios (FIG-14: Bandit's Toll, Chasm Crossing, Quake, Spider's Silk Route; FIG-15: Chasm Crossing; FIG-16: Whispering Grove; FIG-13: Party Deployment lines). None of these paragraphs changed; the two RC489 10.4 changes (Pale City 3 Restless Spirits profile, The Mire 2 Shaman attack) are outside every cited span and no creature profile, weapon or secondary objective is depicted. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
+    ]
    }
   },
   {
@@ -825,7 +885,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "8f65fb154cb2c5ff16e01f4d9e66f2265e929fbe447b128e1b643c16d6678261",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -845,6 +905,21 @@
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
     ],
     "key_legend_note": "Key/legend glyph and terrain content (FIG-20), Chasm/fall depiction (FIG-15) and area-of-effect depiction (FIG-16) are independent of Boss Deployment companions and of the Mire 5 summon list; no monster-type names appear in these SVGs."
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "8f65fb154cb2c5ff16e01f4d9e66f2265e929fbe447b128e1b643c16d6678261",
+    "note": "RC489 delta review: key/legend content (glyph swatches, orientation, scale, counts, solid/dashed and 10.1 step 11 default text) depends on 10.1, 2.6, 2.9.1 (byte-identical) and 10.4 only through the glyph registry used by FIG-13..16 and FIG-18..57; the two 10.4 changes are a stat-profile name and an attack line, neither introduces nor removes any drawn glyph (no SVG changed; selfcheck registry check OK). No secondary-objective (10.2) content is part of the key. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
+    ]
    }
   },
   {
@@ -882,7 +957,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -900,6 +975,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -947,7 +1037,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -965,6 +1055,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1018,7 +1123,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1036,6 +1141,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1082,7 +1202,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "44759f89045cb6931d799e0b38ce69a6ed494fb4a72f0df9b711c132c38693b2",
+   "rules_sha256": "f9595e2b7b8f224c9d77243ca639f21381a1d8a8cbd37d1b4650421210518e2a",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1100,6 +1220,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "44759f89045cb6931d799e0b38ce69a6ed494fb4a72f0df9b711c132c38693b2",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1147,7 +1282,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1165,6 +1300,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1220,7 +1370,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "44759f89045cb6931d799e0b38ce69a6ed494fb4a72f0df9b711c132c38693b2",
+   "rules_sha256": "f9595e2b7b8f224c9d77243ca639f21381a1d8a8cbd37d1b4650421210518e2a",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1238,6 +1388,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "44759f89045cb6931d799e0b38ce69a6ed494fb4a72f0df9b711c132c38693b2",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1286,7 +1451,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1304,6 +1469,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1352,7 +1532,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1370,6 +1550,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1417,7 +1612,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1435,6 +1630,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1480,7 +1690,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1498,6 +1708,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1537,7 +1762,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1555,6 +1780,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1594,7 +1834,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1612,6 +1852,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1658,7 +1913,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1676,6 +1931,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1720,7 +1990,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1738,6 +2008,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1770,7 +2055,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1788,6 +2073,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1843,7 +2143,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1861,6 +2161,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1914,7 +2229,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "44759f89045cb6931d799e0b38ce69a6ed494fb4a72f0df9b711c132c38693b2",
+   "rules_sha256": "f9595e2b7b8f224c9d77243ca639f21381a1d8a8cbd37d1b4650421210518e2a",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1932,6 +2247,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "44759f89045cb6931d799e0b38ce69a6ed494fb4a72f0df9b711c132c38693b2",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -1970,7 +2300,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1988,6 +2318,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2036,7 +2381,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2054,6 +2399,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2092,7 +2452,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2110,6 +2470,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2148,7 +2523,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2166,6 +2541,22 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: the only 10.4 change inside this scenario is the Restless Spirits stat source (canonical Spectre -> Ice Wraith profile, RC489 13535; LVL 3, HP 10 + 2xAPL, AV 0, CV and appearance rules unchanged). The map does not draw or label the Spirits (spec 'undrawn': 'Pale Court Magistrate and Restless Spirits', citing 13533/13535, no profile named); SVG text nodes are only Mausoleum, Grand Hall, Crypt x2, Grand Crypt, Sarcophagus, Chest, Cracked ice, G1.R, zone depths and the schematic note; the caption names no creature. Render of the unchanged SVG viewed (typst, 110 dpi): five Sarcophagus diamonds, Chest, G1 hexagon, no spirit glyph. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)",
+     "SVG/caption/spec grep: no Spectre, Ice Wraith, Restless or Spirit in FIG-41.svg or its caption; 'Restless Spirits' appears only in the spec undrawn list (not rendered)"
     ]
    }
   },
@@ -2219,7 +2610,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2237,6 +2628,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2275,7 +2681,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2293,6 +2699,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2338,7 +2759,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2356,6 +2777,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2396,7 +2832,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2414,6 +2850,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2453,7 +2904,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2471,6 +2922,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2519,7 +2985,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2537,6 +3003,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2591,7 +3072,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2609,6 +3090,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2662,7 +3158,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2680,6 +3176,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2718,7 +3229,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2736,6 +3247,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2793,7 +3319,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2811,6 +3337,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -2883,7 +3424,7 @@
      "resolution": "RC488 second follow-up re-review 2026-10-10 (SVG sha256 79c93b40..., stable across two reads one minute apart while make clean all ran): sgo moved to (13.4,21.9), both labels (Shaman·A at x121.6,y171.3; Swamp Goblins·A at x94.9,y183.0) now sit below the encampment, each on its own vertical leader (x=121.5 and x=93.9) that exits only through the encampment bottom edge (y=158). Checked in SVG coordinates and in the Typst render: no label or leader crosses any text, glyph, Party zone boundary (x=49.5 / 193.5), Shallow Water box dashed edge, Encampment edge (other than the leaders exiting the bottom) or the two labels each other. Goblin hex (x 88.9-98.9, y 141.1-149.7) and Shaman hex are inside Encampment rect x 85.5-157.5, y 86-158. Clearances are tight but positive: goblin leader is 2.4 units right of the lower-left Shallow box edge (x=91.5) and the goblin label starts 3.4 units right of it; the label ends ~162 vs lower-right Shallow box at x=169.5."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2908,6 +3449,22 @@
     "date": "2026-10-10",
     "note": "Second follow-up re-review. Spec: sgo at (13.4,21.9) status ILLUSTRATIVE, sz S, lp r; sha at (18,17.8) CONSTRAINED, sz M, lp r (unchanged statuses); enc ILLUSTRATIVE. Foot notes unchanged: \"Edges drawn long; text says only 'opposite edges'.\" and \"One Swamp Goblin drawn (count 2 + APL/2, max 6).\"; caption hash unchanged (6622d45c...), no \"Troglodyte\" in SVG/spec/caption. Label overlap minor resolved; no new findings. Remaining open minor count for FIG-52: 0.",
     "rendered_evidence": "FIG-52.svg rendered through Typst 0.15 (130 ppi, ~3x) and viewed in full; SVG coordinates of every label, leader, box and zone cross-checked."
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: the Scale-Shaman's attack changed from Barbed Spear (Reach, 1d8 + APL/2 piercing) to Quarterstaff (1d6 + APL/2 blunt) at RC489 14311. The figure depicts the Shaman only as a Medium Monster glyph labelled 'Shaman.A' inside the encampment (spec element 'sha', sz M, cites only 14319 Boss Deployment); no weapon, damage, Reach ring or melee-distance annotation appears in the SVG, spec, foot notes or caption. Size (M) is unchanged in the stat table. Render of the unchanged SVG viewed (typst, 110 dpi). Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)",
+     "SVG/caption/spec grep: no Barbed Spear, Quarterstaff, Reach, Spear, Staff or damage text in FIG-52.svg, its caption or the The Mire 2 spec; no spec citation of RC488 14313 / RC489 14311"
+    ]
    }
   },
   {
@@ -2948,7 +3505,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2966,6 +3523,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -3013,7 +3585,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3031,6 +3603,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS_WITH_NOTES",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   },
@@ -3088,7 +3675,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3108,6 +3695,21 @@
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
     ],
     "fig55_note": "Rendered and read FIG-55 (The Mire 5): draws Ritual Island, 3 Effigies, Salttide, 2 Crocodiles, Reeds/islets, R3 arrival arrows, 6\" opposite long-edge zones and escape arrows only. It does not depict Summon Bog Minions or any placed Boglings/Zombies/Troglodytes (summon placement is \"within 3\"\" and not drawn), so the Mire 5 line 14547 change does not affect it."
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
+    ]
    }
   },
   {
@@ -3148,7 +3750,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3166,6 +3768,21 @@
      "git diff HEAD~1 HEAD on figures/out shows only FIG-52.svg changed; placements.json captions unchanged for every figure",
      "no SVG text, spec element or caption names Troglodyte, Bogling, Zombie or a summon ability (grep of figures/out, scenario_specs.json, placements.json)",
      "scenario_specs.json line citations remapped RC487 -> RC488 verified: all 895 line integers shift by the exact diff offset and cited text is identical at old and new number (only exceptions are the three FIG-52 citations of changed line 14319 -> 14321)"
+    ]
+   },
+   "rc489_review": {
+    "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+    "date": "2026-10-10",
+    "verdict_basis": "unchanged verdict PASS",
+    "previous_rules_sha256": "73caae10c2a4c7d2e6b3d402336525c105a835acdf8544be5556b6f078b868ab",
+    "note": "RC489 delta review: dependent-section changes (10.4 only: Pale City 3 Restless Spirits now use the Ice Wraith profile at RC489 13535; The Mire 2 Scale-Shaman attack now Quarterstaff at RC489 14311) lie outside this scenario/figure and do not affect anything drawn or captioned; SVG/caption unchanged. Not affected.",
+    "checks": [
+     "SVG sha256 and caption sha256 equal the values recorded at the RC488 review (gate before this update: only rules_sha256 stale for this figure)",
+     "git diff 2797daf d54f0ab -- figures/out is empty (no SVG changed by the RC489 promotion); placements.json captions and all non-anchor fields identical for all 57 figures; all 55 placement anchors shifted by exactly -2 and point at byte-identical text (RC488 line N == RC489 line N-2)",
+     "Section-hash comparison RC488 vs RC489 over every dependency in config/figure_dependencies.json: only 10.4 changed; 10.1, 2.6, 2.9.1, 4.4.9 and 9.5 byte-identical. The 10.4 diff is exactly two lines: Pale City 3 Restless Spirits profile Spectre -> Ice Wraith (RC489 13535) and The Mire 2 Scale-Shaman attack Barbed Spear (Reach, 1d8 piercing) -> Quarterstaff (1d6 blunt) (RC489 14311). No figure depends on 9.x bestiary sections or 10.2 (secondary objectives).",
+     "make_figures.py rerun in a scratch copy (after parse_source.py) reproduces all 57 SVGs, manifest.json, placements.json, scenario_specs.json and scenario-coverage.json byte-identically; selfcheck and validation OK",
+     "All 895 line citations in scenario_specs.json (lines/shared/spans/insert_after_line/board_line) and all 476 remapped 4-5 digit citations in figures/src/*.py, manifest.json and placements.json verified exhaustively: uniform -2 shift, cited text identical at old RC488 and new RC489 line, sole exception the FIG-41 undrawn citation of the changed Restless Spirits line (13537 -> 13535)",
+     "checked_against_lines in this entry are RC487 numbers; for all lines after RC488 9579 the RC487 and RC489 numbering coincide (+2 at RC488, -2 at RC489). Verified 4945 cited lines across FIG-13..16, 20..56: RC487 text == RC489 text except the four intended content changes (13535, 14311 in RC489; 14319, 14545 from RC488)"
     ]
    }
   }
@@ -3432,5 +4049,126 @@
   "findings": "FIG-52: 3 minor resolved (Troglodyte -> Swamp Goblin; goblin leader crossing Shaman·A; goblin label overprinting zone/encampment lines), 0 open. No critical/major.",
   "not_verified": "No printed/placed-PDF inspection; renders made with Typst image embedding (not the Typst layout of the book pages). Other stale figures were verified by scope/diff/grep and, for FIG-55, a rendered view, not by full re-render of every figure."
  },
- "rc488_review_limits": "RC488 delta review by a separate Sonnet auditor (not the author of the FIG-52 regeneration); entries not listed in rc488_delta_review were not re-reviewed."
+ "rc488_review_limits": "RC488 delta review by a separate Sonnet auditor (not the author of the FIG-52 regeneration); entries not listed in rc488_delta_review were not re-reviewed.",
+ "rc488_reviewer": "Independent Sonnet auditor, RC488 delta review (FIG-13..16, FIG-20..56; all other entries carried forward with hashes unchanged); earlier reviewers retained in rc487_reviewer and prior_reviewer",
+ "rc489_delta_review": {
+  "reviewer": "Independent Claude Opus subagent reviewer, RC489 delta review (did not author the RC489 patches, the line remap or any figure)",
+  "date": "2026-10-10",
+  "figures_reviewed": [
+   "FIG-13",
+   "FIG-14",
+   "FIG-15",
+   "FIG-16",
+   "FIG-20",
+   "FIG-21",
+   "FIG-22",
+   "FIG-23",
+   "FIG-24",
+   "FIG-25",
+   "FIG-26",
+   "FIG-27",
+   "FIG-28",
+   "FIG-29",
+   "FIG-30",
+   "FIG-31",
+   "FIG-32",
+   "FIG-33",
+   "FIG-34",
+   "FIG-35",
+   "FIG-36",
+   "FIG-37",
+   "FIG-38",
+   "FIG-39",
+   "FIG-40",
+   "FIG-41",
+   "FIG-42",
+   "FIG-43",
+   "FIG-44",
+   "FIG-45",
+   "FIG-46",
+   "FIG-47",
+   "FIG-48",
+   "FIG-49",
+   "FIG-50",
+   "FIG-51",
+   "FIG-52",
+   "FIG-53",
+   "FIG-54",
+   "FIG-55",
+   "FIG-56"
+  ],
+  "figures_count": 41,
+  "manuscript_delta": "RC488 -> RC489 (31 approved patches, editorial/history/RC489.json): version line; bestiary flavour/stat fixes in section 9 (Bandit, Spectre, Undead Sentinel, Forsaken Duelist rapier, Iron Golem, Noxcloth, Gloomspore Jelly, Deep Elf Priest Quarterstaff, Elder Vrymk Direct the Brood wording, Ice Wraith, Giant Scorpion, Tomb Guardian); two '- None.' lines deleted (RC488 9523, 9579: -1 for RC488 9524-9578, -2 from 9580); 13 secondary-objective creature substitutions in 10.2 (RC489 11193-11793); 10.4 only Pale City 3 Restless Spirits Spectre -> Ice Wraith (13535) and The Mire 2 Scale-Shaman Barbed Spear -> Quarterstaff (14311). Of the figure dependency sections only 10.4 changed, which makes FIG-13..16, FIG-20 and FIG-21..56 stale by rules hash only.",
+  "affected_figures": [],
+  "unaffected_figures": [
+   "FIG-13",
+   "FIG-14",
+   "FIG-15",
+   "FIG-16",
+   "FIG-20",
+   "FIG-21",
+   "FIG-22",
+   "FIG-23",
+   "FIG-24",
+   "FIG-25",
+   "FIG-26",
+   "FIG-27",
+   "FIG-28",
+   "FIG-29",
+   "FIG-30",
+   "FIG-31",
+   "FIG-32",
+   "FIG-33",
+   "FIG-34",
+   "FIG-35",
+   "FIG-36",
+   "FIG-37",
+   "FIG-38",
+   "FIG-39",
+   "FIG-40",
+   "FIG-41",
+   "FIG-42",
+   "FIG-43",
+   "FIG-44",
+   "FIG-45",
+   "FIG-46",
+   "FIG-47",
+   "FIG-48",
+   "FIG-49",
+   "FIG-50",
+   "FIG-51",
+   "FIG-52",
+   "FIG-53",
+   "FIG-54",
+   "FIG-55",
+   "FIG-56"
+  ],
+  "targeted_checks": {
+   "FIG-52": "Shaman drawn as an unlabelled-weapon Medium Monster glyph 'Shaman.A'; no weapon, damage or Reach depicted (SVG text, spec, caption grep; render viewed).",
+   "FIG-41": "Restless Spirits not drawn (spec undrawn list only, no profile named); caption names no creature (render viewed).",
+   "10.2 secondary objectives": "No figure depends on 10.2; no SVG, caption, spec or manifest names Stirge, Giant Tarantula (10.2 context), Undead/Skeleton Warrior (10.2), Giant Centipede, Black Widow, Fire Beetle/Elemental, Troglodyte, Vault Ooze, Gelid Fiend, Frost Ghoul, Tundra Wolf Den, Blackfire Hound, Crocodile, Giant Constrictor, Desert Naga, Harpy, Imp, Wind Elemental or Blood Drain. Hits checked: FIG-24 'Tarantula' labels come from Greenmark 4 Boss Deployment (RC489 12232, unchanged); FIG-53 'Geode' from The Mire 3 Objective Placement (14370, unchanged); FIG-18/FIG-19 'Dire Wolf'/'Skeleton Warrior' are Appendix A/B figures not dependent on any changed section. FIG-57 'Generate Secondary Objectives: record only' is 10.1 step text (byte-identical).",
+   "FIG-13..16, FIG-20 keys": "Legend and key-strip text read in full from the SVGs; no creature profile, weapon or secondary objective appears; glyph registry unchanged (no SVG changed)."
+  },
+  "citation_spot_check": "Exhaustive rather than sampled: 895/895 scenario_specs.json citations and 476/476 remapped numeric citations in figures/src/*.py, manifest.json and placements.json compared text-to-text (RC488 old line vs RC489 new line): all identical except the intended FIG-41 citation of the changed Restless Spirits line. A seeded random sample of 60 was also printed and read by eye. No figure source cites any line between RC488 8000 and 10999 except 10986 -> 10984 (Secondary Objective Extraction, identical); nothing cites the two deleted '- None.' lines or their neighbourhood (RC488 9450-9650).",
+  "findings": "0 critical, 0 major, 0 minor against any figure. No figure is affected by RC489.",
+  "observations": [
+   {
+    "severity": "minor",
+    "status": "open",
+    "scope": "figure tooling/metadata, not rendered",
+    "issue": "tools/remap_figure_lines.py does not remap line numbers embedded in free text in scenario_specs.json (ambiguities strings: Undermarches 2 '(12997)', Undermarches 4 '(13164)', Undermarches 5 '(13214, 13239)' and '(13212)', The Mire 1 '(14252)' and '(14258)'); they flow into manifest.json 'ambiguity'. They were not remapped at RC488 either (stale by +2 in RC488) and are correct again in RC489 only by coincidence (verified: each cites the intended paragraph in RC489). They are not validated by selfcheck and will drift at the next line shift. Not rendered in any SVG or caption.",
+    "acceptance": "Remap tool (or selfcheck) covers free-text '(NNNNN)' citations in spec strings, or these strings cite structured 'lines' instead; rerun shows each cited text matches."
+   }
+  ],
+  "out_of_scope_observations": [
+   {
+    "severity": "minor",
+    "scope": "manuscript (not a figure dependency); owner/orchestrator decision",
+    "issue": "Approved patch RC489-04 produced a duplicated clause in the Tomb Guardian flavour text, RC489 line 9600 (##### Tomb Guardian [Soldier], 9598): 'It plants itself at a threshold, cannot be hurried or frightened, and cannot be hurried or frightened.' The patch replaced 'lends its iron resolve to the dead around it,' with text the sentence already contained.",
+    "acceptance": "A future approved text patch (new RC via tools/revise_manuscript.py) removes the duplicate clause; never edit the RC489 snapshot."
+   }
+  ],
+  "not_verified": "No printed or placed-PDF inspection of the figures in the RC489 book build (only standalone typst renders of FIG-41 and FIG-52 at 110 dpi); other stale figures verified by byte-identical SVGs, byte-identical regeneration, section diff, grep and exhaustive citation comparison, not by individual re-render. Physical proof NOT TESTED."
+ },
+ "rc489_review_limits": "RC489 delta review by an independent Claude Opus subagent (not the author of the RC489 promotion or of any figure); entries not listed in rc489_delta_review were not re-reviewed (hashes unchanged, carried forward)."
 }

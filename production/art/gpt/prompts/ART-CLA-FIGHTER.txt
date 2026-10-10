@@ -8,7 +8,8 @@ A single subject drawn whole, isolated on blank ivory-white paper: only a small 
 Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
 
 COMPOSITION
-Full figure in three-quarter view braced low behind a small round targe at a ruined gate, shortsword held back over the hip, taking an unseen charge.
+Full figure in three-quarter view braced low with a small round targe held forward, shortsword drawn back over the hip, taking an unseen charge.
+Single full-length adventurer in an action-ready pose with class-typical arms and gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.
 
 SUBJECT DETAILS
 * Ring shirt (mail of linked rings) over a padded arming coat
@@ -17,7 +18,7 @@ SUBJECT DETAILS
 * Dagger on belt
 * Open-faced helm or coif, no visor
 * Stance planted wide, weight forward, knuckles white
-* Scuffs and rust on mail, boots braced on cracked flagstones
+* Scuffs and rust on mail, boots braced on a small patch of cracked flagstone
 
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
@@ -28,10 +29,11 @@ Stoic resolve, the last thing between the line and collapse.
 Use fine traditional pen-and-ink rendering: a confident, slightly heavier outer contour, crisp interior lines, crosshatching that follows the form, sparse stippling, and a few deliberate solid-black shapes for the deepest shadows. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn and weathered. The illustration must feel authentically hand-drawn rather than digitally rendered.
 
 FINAL VISUAL REQUIREMENTS
-Specific pitfalls to avoid:
+Do not draw:
 * Not heavy plate: ring shirt only.
 * Do not give it a two-handed weapon (that is the Berserker or Ravager package).
 * No flourish or duel pose.
+* No gate, wall or other scenery.
 Avoid photorealism, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be detailed yet clean and readable at small size, suitable for seamless reproduction in a professionally printed fantasy rulebook.
 
 STYLE REFERENCES

@@ -9,6 +9,7 @@ Leave at least 8% clean white margin on every side; nothing touches or is croppe
 
 COMPOSITION
 Three-quarter view of the champion trudging forward, the war maul hauled back over one shoulder in both hands, ready to fall with siege-engine weight.
+Single creature, full body, three-quarter view, in a characteristic menacing pose; a small human figure for scale only if the creature is Large or Huge. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.
 Size: Medium: about human-sized.
 
 SUBJECT DETAILS
@@ -18,7 +19,8 @@ SUBJECT DETAILS
 * Bald scarred head with sunken eyes
 * Chains and rusted rivets across the chest
 * Planted heavy legs in ash
-* Lesser dead trailing behind
+Must be shown exactly:
+* Two-handed war maul with a head of fused bone
 
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
@@ -29,10 +31,11 @@ Slow, crushing inevitability.
 Use fine traditional pen-and-ink rendering: a confident, slightly heavier outer contour, crisp interior lines, crosshatching that follows the form, sparse stippling, and a few deliberate solid-black shapes for the deepest shadows. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn and weathered. The illustration must feel authentically hand-drawn rather than digitally rendered.
 
 FINAL VISUAL REQUIREMENTS
-Specific pitfalls to avoid:
+Do not draw:
 * Not an Ogre or a living Fighter: it is dead, pale and plated in scraps.
 * Not a Giant Skeleton: this has flesh.
-* Weapon is a two-handed war maul of fused bone: no axe blade.
+* No axe blade.
+* No other undead.
 Avoid photorealism, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be detailed yet clean and readable at small size, suitable for seamless reproduction in a professionally printed fantasy rulebook.
 
 STYLE REFERENCES

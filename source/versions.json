@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 489,
+  "current": 490,
   "revisions": [
     {
       "number": 484,
@@ -182,6 +182,21 @@
       ],
       "patch_file": "editorial/history/RC489.json",
       "patch_sha256": "283349954125c0d97e23eb2ce87699cb84e653a944d29f7f65dfc2b16a8718ff"
+    },
+    {
+      "number": 490,
+      "path": "source/Heraldry_RC490.md",
+      "sha256": "38d3e0572b9a5551436ed4ab8cbc6249f085b2987036a36553bb0edb9903ac86",
+      "bytes": 1453495,
+      "parent_sha256": "a28205099f18fe765445cc06f39dbf075c0f96c5511515216a699e88966be486",
+      "created_at": "2026-10-10T15:56:21.835535+00:00",
+      "reason": "Correct an orchestrator implementation error in approved patch RC489-04 (duplicated Tomb Guardian clause), found by the independent RC489 figure re-review",
+      "authorization": "Owner approval 2026-10-10 of the RC489 batch ('yes but replace staff with the mundane weapon quarterstaff'), whose RC489-04 intent was to remove the Tomb Guardian's unsupported aura claim; this patch implements that intent correctly. Reported to the owner.",
+      "patch_ids": [
+        "RC490-01"
+      ],
+      "patch_file": "editorial/history/RC490.json",
+      "patch_sha256": "29c3a54a02fa640c8dc1d3e2fcecffff88eac0f4144ea1228ae4321362cedbb1"
     }
   ]
 }

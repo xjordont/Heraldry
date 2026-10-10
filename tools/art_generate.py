@@ -87,8 +87,8 @@ def prompt_for(e, with_refs):
         comp.append(e["composition"].rstrip(".") + ".")
     if b.get("composition"):
         comp.append(b["composition"])
-    if e.get("direction"):
-        comp.append(e["direction"])
+    if e.get("direction") and not b.get("composition"):
+        comp.append(e["direction"])   # a brief expands the plan's direction and supersedes it
     if kind != "scene" or not b.get("composition"):
         comp.append(fam["framing"])
     if e["family"] in ("monster", "boss"):
