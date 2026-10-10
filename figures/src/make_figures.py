@@ -229,7 +229,7 @@ def write_coverage(dims):
     for r in appendix:
         r["insert_after"] = figdata.META[r["map_figure"]]["insert_after"]
         r["map_size_pt"] = {"width": dims[r["map_figure"]][0], "height": dims[r["map_figure"]][1]}
-    procedural = dict(key="10.1 Preparation Steps", source_lines=[11060, 11073], map_figure="FIG-%d" % (fig_scenmaps.FIRST_MAP_FIG + 36), iconography="shared-v2",
+    procedural = dict(key="10.1 Preparation Steps", source_lines=[11062, 11075], map_figure="FIG-%d" % (fig_scenmaps.FIRST_MAP_FIG + 36), iconography="shared-v2",
                       legend_figure=fig_scenmaps.LEGEND_FIG, detail_figures=["FIG-13", "FIG-14"],
                       insert_after="B%05d" % fig_scenmaps.TEMPLATE_ANCHOR_LINE,
                       setup_rules=["step 7 exclusion: 3\" from a battlefield edge, 6\" from a deployment zone", "step 11 default: edge zones 6\" deep, corner zones 8\"x8\", alternate placing from the Roll-off loser"],

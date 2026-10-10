@@ -1,5 +1,5 @@
 {
- "source_sha256": "d77a72f9030061f76ea61e947bf520dcc81628bd653f61ba144f2a474a088254",
+ "source_sha256": "9394be77c41ba1c325e84152609abe7d09522a4d9f641121611be8356b5d1305",
  "counts": {
   "cover": 1,
   "chapter": 11,
@@ -4153,7 +4153,7 @@
     "9.7 The Bestiary",
     "Greenmark Bestiary"
    ],
-   "flavour": "Broad as a doorway and built around a greataxe, the orc is the Greenmark's most disciplined raider, grey-skinned and heavy-jawed, its lower tusks jutting above a wall of shields. Where beastmen break, orcs hold their formation. A warband takes a steading methodically, gate by gate, and savours the hard fight more than the loot it wins.",
+   "flavour": "Broad as a doorway and armed with battleaxe and shield, the orc is the Greenmark's most disciplined raider, grey-skinned and heavy-jawed, its lower tusks jutting above a wall of shields. Where beastmen break, orcs hold their formation. A warband takes a steading methodically, gate by gate, and savours the hard fight more than the loot it wins.",
    "facts": {
     "role": "Soldier",
     "size_code": "M"
@@ -4162,15 +4162,15 @@
     7903,
     7903
    ],
-   "direction": "An orc raider of the Greenmark with crude trophies and a notched greataxe, mid-snarl, nothing like a sworn hireling.",
+   "direction": "An orc raider of the Greenmark with crude trophies, a notched battleaxe and a battered round shield, mid-snarl, nothing like a sworn hireling.",
    "brief": {
-    "identity": "Orc, Greenmark Soldier, medium: a broad, disciplined, grey-skinned raider with lower tusks and a greataxe, a warband member.",
-    "composition": "Full figure in three-quarter view mid-snarl, advancing with a heavy notched cleaver-like greataxe held across the body, trophies swinging from belt.",
+    "identity": "Orc, Greenmark Soldier, medium: a broad, disciplined, grey-skinned raider with lower tusks, armed with battleaxe and shield, a warband member that holds formation.",
+    "composition": "Full figure in three-quarter view mid-snarl, advancing behind a heavy round shield with a notched battleaxe raised in the other hand, trophies swinging from the belt.",
     "details": [
      "Broad as a doorway, grey skin, heavy jaw, lower tusks jutting upward",
-     "Greataxe with a broad, notched, cleaver-like blade",
+     "One-handed battleaxe with a broad notched blade",
      "Crude trophies: bone strings, a skull and teeth, tied at the belt and shoulder",
-     "Layered hide and iron plate scraps, battered shield strapped on back",
+     "Layered hide and iron plate scraps; a heavy iron-rimmed round shield on the forearm, battered and dented",
      "Scarred knuckles and brow",
      "Fierce open-mouthed snarl",
      "Burnt steading gate behind"
@@ -4179,19 +4179,19 @@
     "avoid": [
      "Not the Orc ancestry hero: no tabard, no composed bearing, no clean armour",
      "Not a Bugbear (shaggy, long-armed)",
-     "Weapon is a greataxe, not a sword"
+     "One-handed battleaxe and a shield on the arm: no greataxe, no sword"
     ],
     "sources": [
-     "9.7 The Bestiary, Greenmark Bestiary: Orc [Soldier]"
+     "9.7 The Bestiary, Greenmark Bestiary: Orc [Soldier] (RC488 Battleaxe, Shield Wall)"
     ]
    },
-   "spec_sha256": "23fe1d8cc5b84448b2804669f0a627ca6679f0b34fb9f58223323b678db3c94b"
+   "spec_sha256": "4cd2c20eb1b9060dcf033af6938d53a5af027a05b39c37be3a7096da45194441"
   },
   {
    "id": "ART-MON-BUGBEAR",
    "family": "monster",
    "heading_id": "h-bugbear-soldier",
-   "flavour_block": "B07924",
+   "flavour_block": "B07925",
    "title": "Bugbear",
    "context": [
     "9.7 The Bestiary",
@@ -4203,8 +4203,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    7922,
-    7922
+    7923,
+    7923
    ],
    "brief": {
     "identity": "Bugbear, Greenmark Soldier, medium: a seven-foot, shaggy, long-armed ambusher with a flat face and a spiked morningstar.",
@@ -4234,7 +4234,7 @@
    "id": "ART-MON-HARPY",
    "family": "monster",
    "heading_id": "h-harpy-cannon",
-   "flavour_block": "B07943",
+   "flavour_block": "B07944",
    "title": "Harpy",
    "context": [
     "9.7 The Bestiary",
@@ -4246,8 +4246,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    7941,
-    7941
+    7942,
+    7942
    ],
    "brief": {
     "identity": "Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies.",
@@ -4277,7 +4277,7 @@
    "id": "ART-MON-GOBLIN-SHAMAN",
    "family": "monster",
    "heading_id": "h-goblin-shaman-controller",
-   "flavour_block": "B07960",
+   "flavour_block": "B07961",
    "title": "Goblin Shaman",
    "context": [
     "9.7 The Bestiary",
@@ -4289,8 +4289,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    7958,
-    7958
+    7959,
+    7959
    ],
    "brief": {
     "identity": "Goblin Shaman, Greenmark Controller, small: a goblin hung with bone and crow-feather fetishes who hangs behind the mob and spits hexes.",
@@ -4320,7 +4320,7 @@
    "id": "ART-MON-BANDIT-CAPTAIN",
    "family": "monster",
    "heading_id": "h-bandit-captain-elite",
-   "flavour_block": "B07980",
+   "flavour_block": "B07981",
    "title": "Bandit Captain",
    "context": [
     "9.7 The Bestiary",
@@ -4332,8 +4332,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    7978,
-    7978
+    7979,
+    7979
    ],
    "brief": {
     "identity": "Bandit Captain, Greenmark Elite, medium: a commissioned-or-claiming leader in looted mail wielding a longsword and a heavy crossbow.",
@@ -4363,7 +4363,7 @@
    "id": "ART-MON-DIRE-BEAR",
    "family": "monster",
    "heading_id": "h-dire-bear-brute",
-   "flavour_block": "B07999",
+   "flavour_block": "B08000",
    "title": "Dire Bear",
    "context": [
     "9.7 The Bestiary",
@@ -4375,8 +4375,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    7997,
-    7997
+    7998,
+    7998
    ],
    "brief": {
     "identity": "Dire Bear, Greenmark Brute, large: a shaggy mountain of muscle twice a man's height, mauling with forepaws and a shield-splitting bite.",
@@ -4406,7 +4406,7 @@
    "id": "ART-MON-BLOOD-APE",
    "family": "monster",
    "heading_id": "h-blood-ape-soldier",
-   "flavour_block": "B08021",
+   "flavour_block": "B08022",
    "title": "Blood Ape",
    "context": [
     "9.7 The Bestiary",
@@ -4418,8 +4418,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8019,
-    8019
+    8020,
+    8020
    ],
    "brief": {
     "identity": "Blood Ape, Greenmark Soldier, medium: a slab-shouldered crimson-furred canopy ape that drops onto prey and hammers with both fists.",
@@ -4449,7 +4449,7 @@
    "id": "ART-MON-GOREBEAK-BEAR",
    "family": "monster",
    "heading_id": "h-gorebeak-bear-brute",
-   "flavour_block": "B08045",
+   "flavour_block": "B08046",
    "title": "Gorebeak Bear",
    "context": [
     "9.7 The Bestiary",
@@ -4461,8 +4461,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    8043,
-    8043
+    8044,
+    8044
    ],
    "brief": {
     "identity": "Gorebeak Bear, Greenmark Brute, large: a stitched-looking horror with a bear's body and a great owl's head and foreclaws, with a plate-punching hooked beak.",
@@ -4492,7 +4492,7 @@
    "id": "ART-MON-OGRE",
    "family": "monster",
    "heading_id": "h-ogre-brute",
-   "flavour_block": "B08067",
+   "flavour_block": "B08068",
    "title": "Ogre",
    "context": [
     "9.7 The Bestiary",
@@ -4504,8 +4504,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    8065,
-    8065
+    8066,
+    8066
    ],
    "brief": {
     "identity": "Ogre, Greenmark Brute, large: a twice-man-height, slope-shouldered grey slab of muscle in stitched hides, claiming a ford with a tree-trunk great club.",
@@ -4535,7 +4535,7 @@
    "id": "ART-MON-DRYAD-GROVEWARDEN",
    "family": "monster",
    "heading_id": "h-dryad-grovewarden-controller",
-   "flavour_block": "B08082",
+   "flavour_block": "B08083",
    "title": "Dryad Grovewarden",
    "context": [
     "9.7 The Bestiary",
@@ -4547,8 +4547,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8080,
-    8080
+    8081,
+    8081
    ],
    "brief": {
     "identity": "Dryad Grovewarden, Greenmark Controller, medium: a bark-skinned fey tree-spirit crowned in living branches that binds intruders with roots.",
@@ -4578,7 +4578,7 @@
    "id": "ART-MON-FOREST-TROLL",
    "family": "monster",
    "heading_id": "h-forest-troll-brute",
-   "flavour_block": "B08101",
+   "flavour_block": "B08102",
    "title": "Forest Troll",
    "context": [
     "9.7 The Bestiary",
@@ -4590,8 +4590,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    8099,
-    8099
+    8100,
+    8100
    ],
    "brief": {
     "identity": "Forest Troll, Greenmark Brute, large: a gangling moss-slick bog-edge brute with reaching arms and broken tusks whose wounds knit shut.",
@@ -4621,7 +4621,7 @@
    "id": "ART-MON-WEREWOLF",
    "family": "monster",
    "heading_id": "h-werewolf-elite",
-   "flavour_block": "B08119",
+   "flavour_block": "B08120",
    "title": "Werewolf",
    "context": [
     "9.7 The Bestiary",
@@ -4633,8 +4633,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8117,
-    8117
+    8118,
+    8118
    ],
    "brief": {
     "identity": "Werewolf, Greenmark Elite, medium: a haunted villager's cursed form, a hunched grey wolf-man killer that strikes from the treeline.",
@@ -4664,7 +4664,7 @@
    "id": "ART-MON-GREEN-DRAGON",
    "family": "monster",
    "heading_id": "h-green-dragon-elite",
-   "flavour_block": "B08142",
+   "flavour_block": "B08143",
    "title": "Green Dragon",
    "context": [
     "9.7 The Bestiary",
@@ -4676,8 +4676,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    8140,
-    8140
+    8141,
+    8141
    ],
    "direction": "A typical adult green dragon of its kind, alone, coiled on a mossy rock; no lair, no tribute.",
    "brief": {
@@ -4708,7 +4708,7 @@
    "id": "ART-MON-UNDEAD-WARRIOR",
    "family": "monster",
    "heading_id": "h-undead-warrior-minion",
-   "flavour_block": "B08166",
+   "flavour_block": "B08167",
    "title": "Undead Warrior",
    "context": [
     "9.7 The Bestiary",
@@ -4720,8 +4720,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8164,
-    8164
+    8165,
+    8165
    ],
    "direction": "A half-rotted corpse, not a bare skeleton, in rusted imperial legion kit with a short sword and a rectangular shield, ash underfoot.",
    "brief": {
@@ -4752,7 +4752,7 @@
    "id": "ART-MON-UNDEAD-CROSSBOWMAN",
    "family": "monster",
    "heading_id": "h-undead-crossbowman-cannon",
-   "flavour_block": "B08183",
+   "flavour_block": "B08184",
    "title": "Undead Crossbowman",
    "context": [
     "9.7 The Bestiary",
@@ -4764,8 +4764,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8181,
-    8181
+    8182,
+    8182
    ],
    "brief": {
     "identity": "Undead Crossbowman, Ashlands Cannon, medium: a dead marksman cranking a warped windlass with fleshless fingers in the rear of a battle-line.",
@@ -4795,7 +4795,7 @@
    "id": "ART-MON-GHOUL",
    "family": "monster",
    "heading_id": "h-ghoul-minion",
-   "flavour_block": "B08200",
+   "flavour_block": "B08201",
    "title": "Ghoul",
    "context": [
     "9.7 The Bestiary",
@@ -4807,8 +4807,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8198,
-    8198
+    8199,
+    8199
    ],
    "brief": {
     "identity": "Ghoul, Ashlands Minion, medium: a grey, gaunt, hook-clawed corpse-eater with a paralytic bite that hunts tombs in packs.",
@@ -4838,7 +4838,7 @@
    "id": "ART-MON-POSSESSED-CORPSE",
    "family": "monster",
    "heading_id": "h-possessed-corpse-minion",
-   "flavour_block": "B08218",
+   "flavour_block": "B08219",
    "title": "Possessed Corpse",
    "context": [
     "9.7 The Bestiary",
@@ -4850,8 +4850,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8216,
-    8216
+    8217,
+    8217
    ],
    "brief": {
     "identity": "Possessed Corpse, Ashlands Minion, medium: a body worn by something from the dark between worlds, lurching toward a jerking purpose.",
@@ -4881,7 +4881,7 @@
    "id": "ART-MON-EMBER-SKULL",
    "family": "monster",
    "heading_id": "h-ember-skull-cannon",
-   "flavour_block": "B08235",
+   "flavour_block": "B08236",
    "title": "Ember Skull",
    "context": [
     "9.7 The Bestiary",
@@ -4893,8 +4893,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    8233,
-    8233
+    8234,
+    8234
    ],
    "brief": {
     "identity": "Ember Skull, Ashlands Cannon, small: a single charred head wreathed in flame that drifts on cold updrafts; it flies.",
@@ -4924,7 +4924,7 @@
    "id": "ART-MON-WERERAT",
    "family": "monster",
    "heading_id": "h-wererat-skirmisher",
-   "flavour_block": "B08255",
+   "flavour_block": "B08256",
    "title": "Wererat",
    "context": [
     "9.7 The Bestiary",
@@ -4936,8 +4936,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    8253,
-    8253
+    8254,
+    8254
    ],
    "brief": {
     "identity": "Wererat, Ashlands Skirmisher, small: a hunched plague-grey shapeshifter between man and rat that bites and skitters back into the dark.",
@@ -4967,7 +4967,7 @@
    "id": "ART-MON-SPECTRE",
    "family": "monster",
    "heading_id": "h-spectre-controller",
-   "flavour_block": "B08273",
+   "flavour_block": "B08274",
    "title": "Spectre",
    "context": [
     "9.7 The Bestiary",
@@ -4979,8 +4979,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8271,
-    8271
+    8272,
+    8272
    ],
    "brief": {
     "identity": "Spectre, Ashlands Controller, medium: grief and rage without a body, a flying incorporeal dead thing that drinks warmth and years by touch.",
@@ -5010,7 +5010,7 @@
    "id": "ART-MON-UNDEAD-SENTINEL",
    "family": "monster",
    "heading_id": "h-undead-sentinel-soldier",
-   "flavour_block": "B08292",
+   "flavour_block": "B08293",
    "title": "Undead Sentinel",
    "context": [
     "9.7 The Bestiary",
@@ -5022,8 +5022,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8290,
-    8290
+    8291,
+    8291
    ],
    "direction": "A towering gaunt dead soldier planted in a broken gateway, rusted tower-shield grounded and reach-halberd raised.",
    "brief": {
@@ -5054,7 +5054,7 @@
    "id": "ART-MON-UNDEAD-CHAMPION",
    "family": "monster",
    "heading_id": "h-undead-champion-soldier",
-   "flavour_block": "B08313",
+   "flavour_block": "B08314",
    "title": "Undead Champion",
    "context": [
     "9.7 The Bestiary",
@@ -5066,15 +5066,15 @@
     "size_code": "M"
    },
    "src_lines": [
-    8311,
-    8311
+    8312,
+    8312
    ],
    "brief": {
-    "identity": "Undead Champion, Ashlands Soldier, medium: a slab of dead muscle raised from the largest corpses, wielding a heavy great-axe built of fused bone.",
-    "composition": "Three-quarter view of the champion trudging forward, great-axe dragging low and then rising across the body.",
+    "identity": "Undead Champion, Ashlands Soldier, medium: a slab of dead muscle raised from the largest corpses, swinging a two-handed war maul of fused bone.",
+    "composition": "Three-quarter view of the champion trudging forward, the war maul hauled back over one shoulder in both hands, ready to fall with siege-engine weight.",
     "details": [
      "Huge, bloated shoulders and a thick neck with dead pale skin",
-     "Great-axe with a head and haft built from fused bone and iron",
+     "Two-handed war maul whose massive head is a knot of fused bone bound in iron bands on a long haft",
      "Scraps of rusted plate on shoulders and forearms",
      "Bald scarred head with sunken eyes",
      "Chains and rusted rivets across the chest",
@@ -5085,19 +5085,19 @@
     "avoid": [
      "Not an Ogre or a living Fighter: it is dead, pale and plated in scraps",
      "Not a Giant Skeleton: this has flesh",
-     "Do not hold a maul or hammer: the stat block gives a great-axe"
+     "Weapon is a two-handed war maul of fused bone: no axe blade"
     ],
     "sources": [
-     "9.7 The Bestiary, Ashlands Bestiary: Undead Champion [Soldier]"
+     "9.7 The Bestiary, Ashlands Bestiary: Undead Champion [Soldier] (RC488 War Maul)"
     ]
    },
-   "spec_sha256": "d2494035ff6ae7b19d8fe7819e5254b55de32e28942b80cfb3124861d4fd206c"
+   "spec_sha256": "8376d77f5a2396196e47942645818283bfbf31743100fe7680d4e007c957d391"
   },
   {
    "id": "ART-MON-GARGOYLE",
    "family": "monster",
    "heading_id": "h-gargoyle-skirmisher",
-   "flavour_block": "B08331",
+   "flavour_block": "B08332",
    "title": "Gargoyle",
    "context": [
     "9.7 The Bestiary",
@@ -5109,8 +5109,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8329,
-    8329
+    8330,
+    8330
    ],
    "brief": {
     "identity": "Gargoyle, Ashlands Skirmisher, medium: a stone guardian that looks like statuary until prey strays beneath it; it flies.",
@@ -5140,28 +5140,28 @@
    "id": "ART-MON-STONE-SENTINEL",
    "family": "monster",
    "heading_id": "h-stone-sentinel-brute",
-   "flavour_block": "B08352",
+   "flavour_block": "B08353",
    "title": "Stone Sentinel",
    "context": [
     "9.7 The Bestiary",
     "Ashlands Bestiary"
    ],
-   "flavour": "A faceless construct of the old empire, the stone sentinel grinds forward on legs of carved granite and pounds with fists like falling masonry. It feels nothing and fears nothing, and it stops only when it is shattered. The empire raised thousands to guard halls that no longer stand. They guard them still.",
+   "flavour": "A faceless construct of the old empire, the stone sentinel grinds forward on legs of carved granite and hews with a greatsword of carved stone. It feels nothing and fears nothing, and it stops only when it is shattered. The empire raised thousands to guard halls that no longer stand. They guard them still.",
    "facts": {
     "role": "Brute",
     "size_code": "M"
    },
    "src_lines": [
-    8350,
-    8350
+    8351,
+    8351
    ],
    "brief": {
-    "identity": "Stone Sentinel, Ashlands Brute, medium: a faceless granite construct that grinds forward with a giant stone sword and cannot be pushed.",
-    "composition": "Three-quarter view of the sentinel striding forward through a ruined hall, giant stone blade slab swung low in one blocky fist.",
+    "identity": "Stone Sentinel, Ashlands Brute, medium: a faceless granite construct of the old empire that hews with a greatsword of carved stone and cannot be pushed.",
+    "composition": "Three-quarter view of the sentinel striding forward through a ruined hall, a two-handed greatsword of carved stone raised in both blocky fists.",
     "details": [
      "Blocky humanoid made of carved granite plates",
      "Smooth faceless head with no features",
-     "Giant stone sword: a slab blade carved of the same granite",
+     "Two-handed greatsword carved from the same granite, a long straight slab blade with a plain cross-guard",
      "Thick legs like pillars with chiselled seams",
      "Moss and chipped edges",
      "Dust trailing from joints",
@@ -5174,16 +5174,16 @@
      "No face or eyes"
     ],
     "sources": [
-     "9.7 The Bestiary, Ashlands Bestiary: Stone Sentinel [Brute]"
+     "9.7 The Bestiary, Ashlands Bestiary: Stone Sentinel [Brute] (RC488 Stone Greatsword)"
     ]
    },
-   "spec_sha256": "ec0754d516d26db9b4446da5bca95264d9a16aaee617699bee88da090417b2b7"
+   "spec_sha256": "77a735f6a043cacabe3e1e34762659d455850ae6791415e05fcf97a57b8d516b"
   },
   {
    "id": "ART-MON-MINOTAUR",
    "family": "monster",
    "heading_id": "h-minotaur-elite",
-   "flavour_block": "B08375",
+   "flavour_block": "B08376",
    "title": "Minotaur",
    "context": [
     "9.7 The Bestiary",
@@ -5195,8 +5195,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    8373,
-    8373
+    8374,
+    8374
    ],
    "brief": {
     "identity": "Minotaur, Ashlands Elite, large: a bull-headed giant of labyrinthine ruins that charges head-down to gore then wades in with a greataxe.",
@@ -5226,7 +5226,7 @@
    "id": "ART-MON-NIGHT-HAG",
    "family": "monster",
    "heading_id": "h-night-hag-controller",
-   "flavour_block": "B08396",
+   "flavour_block": "B08397",
    "title": "Night Hag",
    "context": [
     "9.7 The Bestiary",
@@ -5238,8 +5238,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8394,
-    8394
+    8395,
+    8395
    ],
    "brief": {
     "identity": "Night Hag, Ashlands Controller, medium: a withered crone of the between-places who curses the sleeping and steps half into the ether.",
@@ -5269,7 +5269,7 @@
    "id": "ART-MON-FORSAKEN-ARCHER",
    "family": "monster",
    "heading_id": "h-forsaken-archer-cannon",
-   "flavour_block": "B08414",
+   "flavour_block": "B08415",
    "title": "Forsaken Archer",
    "context": [
     "9.7 The Bestiary",
@@ -5281,8 +5281,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8412,
-    8412
+    8413,
+    8413
    ],
    "brief": {
     "identity": "Forsaken Archer, Ashlands Cannon, medium: an oath-bound dead marksman of the empire's finest, drawing a cursed longbow.",
@@ -5312,7 +5312,7 @@
    "id": "ART-MON-FORSAKEN-KNIGHT",
    "family": "monster",
    "heading_id": "h-forsaken-knight-soldier",
-   "flavour_block": "B08434",
+   "flavour_block": "B08435",
    "title": "Forsaken Knight",
    "context": [
     "9.7 The Bestiary",
@@ -5324,8 +5324,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8432,
-    8432
+    8433,
+    8433
    ],
    "brief": {
     "identity": "Forsaken Knight, Ashlands Soldier, medium: dead chivalry in spectral plate with a flamberge wreathed in grave-light.",
@@ -5355,7 +5355,7 @@
    "id": "ART-MON-FORSAKEN-DUELIST",
    "family": "monster",
    "heading_id": "h-forsaken-duelist-skirmisher",
-   "flavour_block": "B08451",
+   "flavour_block": "B08452",
    "title": "Forsaken Duelist",
    "context": [
     "9.7 The Bestiary",
@@ -5367,8 +5367,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8449,
-    8449
+    8450,
+    8450
    ],
    "brief": {
     "identity": "Forsaken Duelist, Ashlands Skirmisher, medium: the empire's finest fencer, dead and tireless, with a single flashing rapier.",
@@ -5398,7 +5398,7 @@
    "id": "ART-MON-BASILISK",
    "family": "monster",
    "heading_id": "h-basilisk-elite",
-   "flavour_block": "B08472",
+   "flavour_block": "B08473",
    "title": "Basilisk",
    "context": [
     "9.7 The Bestiary",
@@ -5410,8 +5410,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8470,
-    8470
+    8471,
+    8471
    ],
    "brief": {
     "identity": "Basilisk, Ashlands Elite, medium: an ox-sized, heavy, eight-legged reptile whose gaze slowly turns flesh to stone.",
@@ -5442,7 +5442,7 @@
    "id": "ART-MON-ASHEN-REVENANT",
    "family": "monster",
    "heading_id": "h-ashen-revenant-elite",
-   "flavour_block": "B08492",
+   "flavour_block": "B08493",
    "title": "Ashen Revenant",
    "context": [
     "9.7 The Bestiary",
@@ -5454,8 +5454,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8490,
-    8490
+    8491,
+    8491
    ],
    "brief": {
     "identity": "Ashen Revenant, Ashlands Elite, medium: a corpse-warrior in fire-blackened plate driven by one grudge, clawing upright after being struck down.",
@@ -5485,7 +5485,7 @@
    "id": "ART-MON-IRON-GOLEM",
    "family": "monster",
    "heading_id": "h-iron-golem-brute",
-   "flavour_block": "B08514",
+   "flavour_block": "B08515",
    "title": "Iron Golem",
    "context": [
     "9.7 The Bestiary",
@@ -5497,8 +5497,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    8512,
-    8512
+    8513,
+    8513
    ],
    "brief": {
     "identity": "Iron Golem, Ashlands Brute, large: a towering automaton of riveted black iron guarding a throne, with piledriver fists.",
@@ -5528,7 +5528,7 @@
    "id": "ART-MON-LICH",
    "family": "monster",
    "heading_id": "h-lich-elite",
-   "flavour_block": "B08534",
+   "flavour_block": "B08535",
    "title": "Lich",
    "context": [
     "9.7 The Bestiary",
@@ -5540,8 +5540,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8532,
-    8532
+    8533,
+    8533
    ],
    "brief": {
     "identity": "Lich, Ashlands Elite, medium: a desiccated sorcerer-king in mouldering finery who commands the dead and flies a little above the floor.",
@@ -5571,7 +5571,7 @@
    "id": "ART-MON-KOBOLD",
    "family": "monster",
    "heading_id": "h-kobold-minion",
-   "flavour_block": "B08558",
+   "flavour_block": "B08559",
    "title": "Kobold",
    "context": [
     "9.7 The Bestiary",
@@ -5583,8 +5583,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    8556,
-    8556
+    8557,
+    8557
    ],
    "brief": {
     "identity": "Kobold, Undermarches Minion, small: a knee-high reptilian scavenger with dull scales and a dingy mining pick who fights in warren mobs.",
@@ -5614,7 +5614,7 @@
    "id": "ART-MON-CAVE-GOBLIN",
    "family": "monster",
    "heading_id": "h-cave-goblin-minion",
-   "flavour_block": "B08576",
+   "flavour_block": "B08577",
    "title": "Cave Goblin",
    "context": [
     "9.7 The Bestiary",
@@ -5626,8 +5626,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    8574,
-    8574
+    8575,
+    8575
    ],
    "brief": {
     "identity": "Cave Goblin, Undermarches Minion, small: a pale, blinder goblin with wide black eyes, a jagged spear and an instinct to flee towards more of its kind.",
@@ -5657,7 +5657,7 @@
    "id": "ART-MON-GIANT-BAT",
    "family": "monster",
    "heading_id": "h-giant-bat-minion",
-   "flavour_block": "B08593",
+   "flavour_block": "B08594",
    "title": "Giant Bat",
    "context": [
     "9.7 The Bestiary",
@@ -5669,8 +5669,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    8591,
-    8591
+    8592,
+    8592
    ],
    "brief": {
     "identity": "Giant Bat, Undermarches Minion, large: a leathery-winged cave bat wider than a man is tall that swoops, bites and wheels away; it flies.",
@@ -5701,7 +5701,7 @@
    "id": "ART-MON-VAULTFANG",
    "family": "monster",
    "heading_id": "h-vaultfang-cannon",
-   "flavour_block": "B08609",
+   "flavour_block": "B08610",
    "title": "Vaultfang",
    "context": [
     "9.7 The Bestiary",
@@ -5713,8 +5713,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8607,
-    8607
+    8608,
+    8608
    ],
    "brief": {
     "identity": "Vaultfang, Undermarches Cannon, medium: a mottled stone-hard chitin cone that mimics a stalactite and drops once, point first, through helm and skull.",
@@ -5744,7 +5744,7 @@
    "id": "ART-MON-GIANT-CENTIPEDE",
    "family": "monster",
    "heading_id": "h-giant-centipede-skirmisher",
-   "flavour_block": "B08628",
+   "flavour_block": "B08629",
    "title": "Giant Centipede",
    "context": [
     "9.7 The Bestiary",
@@ -5756,8 +5756,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    8626,
-    8626
+    8627,
+    8627
    ],
    "brief": {
     "identity": "Giant Centipede, Undermarches Skirmisher, small: a spear-long, many-segmented, venomous cave predator that climbs walls on a hundred legs.",
@@ -5787,7 +5787,7 @@
    "id": "ART-MON-NOXCLOTH",
    "family": "monster",
    "heading_id": "h-noxcloth-controller",
-   "flavour_block": "B08646",
+   "flavour_block": "B08647",
    "title": "Noxcloth",
    "context": [
     "9.7 The Bestiary",
@@ -5796,21 +5796,21 @@
    "flavour": "The noxcloth hangs from the cavern roof like a fold of black leather the size of a flung cloak, no different from shadow until it drops to smother. It wraps a victim's head and crushes, blind itself but needing no eyes in the dark it brings with it. With a gout of unnatural gloom it can snuff a torch outright. Of all the things that wait on the deep's ceilings, it is the one to fear most.",
    "facts": {
     "role": "Controller",
-    "size_code": "L"
+    "size_code": "M"
    },
    "src_lines": [
-    8644,
-    8644
+    8645,
+    8645
    ],
    "brief": {
-    "identity": "Noxcloth, Undermarches Controller, large: a fold of black leathery hide hanging from the cavern roof that drops to smother the head; it flies.",
+    "identity": "Noxcloth, Undermarches Controller, medium: a fold of black leathery hide the size of a flung cloak that hangs from the cavern roof and drops to smother the head; it flies.",
     "composition": "Wide view from below: the flat cloak-like creature half-peeled off the cavern ceiling, edges billowing over a torch-carrying figure's silhouette beneath.",
     "details": [
      "A cloak-shaped fold of black leathery skin with a trailing hem",
      "Ragged edges and a ridge of muscle",
      "Underside with faint ribs and a toothless slit",
      "No visible eyes",
-     "Extremely flat but wider than a man",
+     "Extremely flat, about the size of a flung cloak",
      "Snuffed torch below with a thin smoke line",
      "Rock ceiling folds that match the body"
     ],
@@ -5821,16 +5821,16 @@
      "Do not draw a face"
     ],
     "sources": [
-     "9.7 The Bestiary, Undermarches Bestiary: Noxcloth [Controller]"
+     "9.7 The Bestiary, Undermarches Bestiary: Noxcloth [Controller] (RC488 size M)"
     ]
    },
-   "spec_sha256": "e18564c3efb345f6e0887985931eafa1b70c3359db1aa0b822d5e30e4d35664e"
+   "spec_sha256": "c94a79eff934d049e111a011f88feee64330c7a192865e74a2b46f587c20d547"
   },
   {
    "id": "ART-MON-TROGLODYTE",
    "family": "monster",
    "heading_id": "h-troglodyte-soldier",
-   "flavour_block": "B08664",
+   "flavour_block": "B08665",
    "title": "Troglodyte",
    "context": [
     "9.7 The Bestiary",
@@ -5842,8 +5842,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8662,
-    8662
+    8663,
+    8663
    ],
    "brief": {
     "identity": "Troglodyte, Undermarches Soldier, medium: a grey, crested reptilian cave-dweller whose skin shifts colour to vanish against stone, fighting claws first.",
@@ -5873,7 +5873,7 @@
    "id": "ART-MON-GIANT-BLACK-WIDOW",
    "family": "monster",
    "heading_id": "h-giant-black-widow-controller",
-   "flavour_block": "B08685",
+   "flavour_block": "B08686",
    "title": "Giant Black Widow",
    "context": [
     "9.7 The Bestiary",
@@ -5885,8 +5885,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    8683,
-    8683
+    8684,
+    8684
    ],
    "brief": {
     "identity": "Giant Black Widow, Undermarches Controller, small: a glossy-black war-hound-sized spider with a crimson hourglass mark, squatting in its own webbing.",
@@ -5916,7 +5916,7 @@
    "id": "ART-MON-GLOOMSPORE-JELLY",
    "family": "monster",
    "heading_id": "h-gloomspore-jelly-brute",
-   "flavour_block": "B08707",
+   "flavour_block": "B08708",
    "title": "Gloomspore Jelly",
    "context": [
     "9.7 The Bestiary",
@@ -5928,8 +5928,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8705,
-    8705
+    8706,
+    8706
    ],
    "brief": {
     "identity": "Gloomspore Jelly, Undermarches Brute, medium: a cart-sized translucent grey ooze that creeps and dissolves what it engulfs, leaving scoured tunnels.",
@@ -5959,7 +5959,7 @@
    "id": "ART-MON-TROGLODYTE-SHAMAN",
    "family": "monster",
    "heading_id": "h-troglodyte-shaman-controller",
-   "flavour_block": "B08727",
+   "flavour_block": "B08728",
    "title": "Troglodyte Shaman",
    "context": [
     "9.7 The Bestiary",
@@ -5971,8 +5971,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8725,
-    8725
+    8726,
+    8726
    ],
    "brief": {
     "identity": "Troglodyte Shaman, Undermarches Controller, medium: a grey crested cave reptile daubed in glowing fungus, hexing with a bone club.",
@@ -6002,7 +6002,7 @@
    "id": "ART-MON-VAULT-OOZE",
    "family": "monster",
    "heading_id": "h-vault-ooze-brute",
-   "flavour_block": "B08746",
+   "flavour_block": "B08747",
    "title": "Vault Ooze",
    "context": [
     "9.7 The Bestiary",
@@ -6014,8 +6014,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8744,
-    8744
+    8745,
+    8745
    ],
    "brief": {
     "identity": "Vault Ooze, Undermarches Brute, medium: a near-invisible cube of acidic slime that fills a corridor wall to wall.",
@@ -6045,7 +6045,7 @@
    "id": "ART-MON-VRYMK",
    "family": "monster",
    "heading_id": "h-vrymk-skirmisher",
-   "flavour_block": "B08768",
+   "flavour_block": "B08769",
    "title": "Vrymk",
    "context": [
     "9.7 The Bestiary",
@@ -6057,8 +6057,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8766,
-    8766
+    8767,
+    8767
    ],
    "brief": {
     "identity": "Vrymk, Undermarches Skirmisher, medium: a stone-grey tangle of rubbery tentacles around a hooked beak, no broader than a crouching man, clinging to cavern walls.",
@@ -6088,7 +6088,7 @@
    "id": "ART-MON-DEEP-ELF-WARRIOR",
    "family": "monster",
    "heading_id": "h-deep-elf-warrior-skirmisher",
-   "flavour_block": "B08790",
+   "flavour_block": "B08791",
    "title": "Deep Elf Warrior",
    "context": [
     "9.7 The Bestiary",
@@ -6100,8 +6100,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8788,
-    8788
+    8789,
+    8789
    ],
    "direction": "A deep elf warrior of the deep courts in full dark ceremonial armour with a crescent glaive, in the Undermarches gloom.",
    "brief": {
@@ -6132,7 +6132,7 @@
    "id": "ART-MON-DEEP-ELF-PRIEST",
    "family": "monster",
    "heading_id": "h-deep-elf-priest-controller",
-   "flavour_block": "B08806",
+   "flavour_block": "B08807",
    "title": "Deep Elf Priest",
    "context": [
     "9.7 The Bestiary",
@@ -6144,8 +6144,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8804,
-    8804
+    8805,
+    8805
    ],
    "direction": "A deep elf priest in layered dark vestments raising a shadow-wreathed sigil staff.",
    "brief": {
@@ -6176,7 +6176,7 @@
    "id": "ART-MON-GLOOM-HULK",
    "family": "monster",
    "heading_id": "h-gloom-hulk-brute",
-   "flavour_block": "B08824",
+   "flavour_block": "B08825",
    "title": "Gloom Hulk",
    "context": [
     "9.7 The Bestiary",
@@ -6188,8 +6188,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    8822,
-    8822
+    8823,
+    8823
    ],
    "brief": {
     "identity": "Gloom Hulk, Undermarches Brute, large: a bull-sized, beetle-backed digger with great scything claws and four eyes that scramble the mind.",
@@ -6219,7 +6219,7 @@
    "id": "ART-MON-CRYPTSTRANGLER",
    "family": "monster",
    "heading_id": "h-cryptstrangler-controller",
-   "flavour_block": "B08843",
+   "flavour_block": "B08844",
    "title": "Cryptstrangler",
    "context": [
     "9.7 The Bestiary",
@@ -6231,8 +6231,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    8841,
-    8841
+    8842,
+    8842
    ],
    "brief": {
     "identity": "Cryptstrangler, Undermarches Controller, large: a stalagmite-like stony predator taller than a man whose sticky tendrils fling across a chamber.",
@@ -6262,7 +6262,7 @@
    "id": "ART-MON-ELDER-VRYMK",
    "family": "monster",
    "heading_id": "h-elder-vrymk-elite",
-   "flavour_block": "B08861",
+   "flavour_block": "B08862",
    "title": "Elder Vrymk",
    "context": [
     "9.7 The Bestiary",
@@ -6274,8 +6274,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    8859,
-    8859
+    8860,
+    8860
    ],
    "brief": {
     "identity": "Elder Vrymk, Undermarches Elite, large: a monstrous knot of leg-thick stone-grey tentacles around a plate-shearing beak, with smaller kin gathering around it.",
@@ -6305,7 +6305,7 @@
    "id": "ART-MON-EVIL-EYE",
    "family": "monster",
    "heading_id": "h-evil-eye-elite",
-   "flavour_block": "B08884",
+   "flavour_block": "B08885",
    "title": "Evil Eye",
    "context": [
     "9.7 The Bestiary",
@@ -6317,8 +6317,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    8882,
-    8882
+    8883,
+    8883
    ],
    "brief": {
     "identity": "Evil Eye, Undermarches Elite, large: a floating orb of leathery flesh with one great central eye and a crown of writhing eyestalks, with an antimagic aura; it flies.",
@@ -6348,7 +6348,7 @@
    "id": "ART-MON-BURROWMAW",
    "family": "monster",
    "heading_id": "h-burrowmaw-brute",
-   "flavour_block": "B08905",
+   "flavour_block": "B08906",
    "title": "Burrowmaw",
    "context": [
     "9.7 The Bestiary",
@@ -6360,8 +6360,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    8903,
-    8903
+    8904,
+    8904
    ],
    "brief": {
     "identity": "Burrowmaw, Undermarches Brute, large: a wagon-sized armour-plated horror with a blunt head and a face-splitting maw that swims through stone.",
@@ -6391,7 +6391,7 @@
    "id": "ART-MON-THOUGHT-EATER",
    "family": "monster",
    "heading_id": "h-thought-eater-elite",
-   "flavour_block": "B08923",
+   "flavour_block": "B08924",
    "title": "Thought-Eater",
    "context": [
     "9.7 The Bestiary",
@@ -6403,8 +6403,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8921,
-    8921
+    8922,
+    8922
    ],
    "brief": {
     "identity": "Thought-Eater, Undermarches Elite, medium: a robed humanoid with an octopus head, four tentacles and white pupilless eyes that feeds on minds.",
@@ -6434,7 +6434,7 @@
    "id": "ART-MON-FROZEN-SKELETON",
    "family": "monster",
    "heading_id": "h-frozen-skeleton-minion",
-   "flavour_block": "B08946",
+   "flavour_block": "B08947",
    "title": "Frozen Skeleton",
    "context": [
     "9.7 The Bestiary",
@@ -6446,8 +6446,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8944,
-    8944
+    8945,
+    8945
    ],
    "direction": "A frost-rimed skeleton with icicles hanging from its ribs and a sword frozen to its hand, snow drifted around its feet.",
    "brief": {
@@ -6478,7 +6478,7 @@
    "id": "ART-MON-SNOW-GOBLIN",
    "family": "monster",
    "heading_id": "h-snow-goblin-minion",
-   "flavour_block": "B08963",
+   "flavour_block": "B08964",
    "title": "Snow Goblin",
    "context": [
     "9.7 The Bestiary",
@@ -6490,8 +6490,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    8961,
-    8961
+    8962,
+    8962
    ],
    "brief": {
     "identity": "Snow Goblin, Pale City Minion, small: a gaunt white-furred goblin that ambushes out of the whiteout with frost-edged knives.",
@@ -6521,7 +6521,7 @@
    "id": "ART-MON-RATKIN-SCAVENGER",
    "family": "monster",
    "heading_id": "h-ratkin-scavenger-minion",
-   "flavour_block": "B08983",
+   "flavour_block": "B08984",
    "title": "Ratkin Scavenger",
    "context": [
     "9.7 The Bestiary",
@@ -6533,8 +6533,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    8981,
-    8981
+    8982,
+    8982
    ],
    "brief": {
     "identity": "Ratkin Scavenger, Pale City Minion, small: the lowest caste of verminous rat-folk, scrawny and twitching in matted grey fur, stripping ruins with a rusty knife.",
@@ -6564,7 +6564,7 @@
    "id": "ART-MON-TUNDRA-WOLF",
    "family": "monster",
    "heading_id": "h-tundra-wolf-skirmisher",
-   "flavour_block": "B09000",
+   "flavour_block": "B09001",
    "title": "Tundra Wolf",
    "context": [
     "9.7 The Bestiary",
@@ -6576,8 +6576,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    8998,
-    8998
+    8999,
+    8999
    ],
    "brief": {
     "identity": "Tundra Wolf, Pale City Skirmisher, medium: a white-coated wolf built for the killing cold that runs in herding packs over ice.",
@@ -6607,7 +6607,7 @@
    "id": "ART-MON-RATKIN-WARRIOR",
    "family": "monster",
    "heading_id": "h-ratkin-warrior-soldier",
-   "flavour_block": "B09019",
+   "flavour_block": "B09020",
    "title": "Ratkin Warrior",
    "context": [
     "9.7 The Bestiary",
@@ -6619,8 +6619,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    9017,
-    9017
+    9018,
+    9018
    ],
    "brief": {
     "identity": "Ratkin Warrior, Pale City Soldier, small: a hunched spear-wielding rat-man in scavenged scraps of plate that fights in a bristling shield-rank.",
@@ -6650,29 +6650,29 @@
    "id": "ART-MON-WHITE-COURT-GUARD",
    "family": "monster",
    "heading_id": "h-white-court-guard-soldier",
-   "flavour_block": "B09035",
+   "flavour_block": "B09036",
    "title": "White Court Guard",
    "context": [
     "9.7 The Bestiary",
     "Pale City Bestiary"
    ],
-   "flavour": "The White Court is the Pale City's undead nobility, and the guard is its rank and file: a frost-armoured corpse bearing a reach-halberd, moving with the cold discipline of a court that never once adjourned. They lock shields across the frozen avenues and advance by the old drill. Death only made them more obedient.",
+   "flavour": "The White Court is the Pale City's undead nobility, and the guard is its rank and file: a frost-armoured corpse bearing longsword and shield, moving with the cold discipline of a court that never once adjourned. They lock shields across the frozen avenues and advance by the old drill. Death only made them more obedient.",
    "facts": {
     "role": "Soldier",
     "size_code": "M"
    },
    "src_lines": [
-    9033,
-    9033
+    9034,
+    9034
    ],
-   "direction": "A frost-armoured noble corpse in ornate courtly armour and a frozen fur mantle, reach-halberd held at a ceremonial slant.",
+   "direction": "A frost-armoured noble corpse in ornate courtly armour and a frozen fur mantle, longsword upright and kite shield braced in drill position.",
    "brief": {
-    "identity": "White Court Guard, Pale City Soldier, medium: a frost-armoured noble corpse of the undead court's rank and file, holding a reach-halberd at a ceremonial slant.",
-    "composition": "Frontal three-quarter view of the guard standing at attention on a frozen avenue, halberd held at a ceremonial slant across the body.",
+    "identity": "White Court Guard, Pale City Soldier, medium: a frost-armoured noble corpse of the undead court's rank and file, bearing longsword and shield.",
+    "composition": "Frontal three-quarter view of the guard standing in drill position on a frozen avenue, kite shield braced forward, longsword held upright at the shoulder.",
     "details": [
      "Ornate courtly armour with engraved fluting and gilt scrolls, frosted",
      "Frozen fur mantle over the shoulders",
-     "Reach-halberd with a decorated blade and tasselled haft",
+     "Longsword with a frosted blade held upright, and a tall kite shield with a plain frosted face (no readable heraldry)",
      "Visor up on an open helm to show a frozen corpse face",
      "Rime on every plate",
      "Heavy plumed helm with a drooping plume",
@@ -6680,22 +6680,22 @@
     ],
     "atmosphere": "Cold ceremonial discipline.",
     "avoid": [
-     "Not the Sentinel (no greatshield)",
-     "Not the Undead Sentinel (rust, rubble)",
+     "Not the White Court Sentinel: an ordinary shield, not a greatshield, and a sword",
+     "Not the Undead Sentinel (rust, rubble, halberd)",
      "Not the Archer or Executioner",
-     "No actual shield"
+     "No polearm"
     ],
     "sources": [
-     "9.7 The Bestiary, Pale City Bestiary: White Court Guard [Soldier]"
+     "9.7 The Bestiary, Pale City Bestiary: White Court Guard [Soldier] (RC488 Court Longsword, Shield Wall)"
     ]
    },
-   "spec_sha256": "8dc2f76968ce9caa01ddc8a046de38351c18dc86fcb7e50153276cca67cb59d2"
+   "spec_sha256": "be2a1a11ff9929a9937026eee309bec9898ba05f269cc3d1cd27dada345271d6"
   },
   {
    "id": "ART-MON-RATKIN-SEER",
    "family": "monster",
    "heading_id": "h-ratkin-seer-controller",
-   "flavour_block": "B09051",
+   "flavour_block": "B09053",
    "title": "Ratkin Seer",
    "context": [
     "9.7 The Bestiary",
@@ -6707,8 +6707,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    9049,
-    9049
+    9051,
+    9051
    ],
    "brief": {
     "identity": "Ratkin Seer, Pale City Controller, small: a half-mad rat-man draped in icicle-charms, spitting frost-hexes and croaking prophecy.",
@@ -6738,7 +6738,7 @@
    "id": "ART-MON-FROST-GHOUL",
    "family": "monster",
    "heading_id": "h-frost-ghoul-minion",
-   "flavour_block": "B09070",
+   "flavour_block": "B09072",
    "title": "Frost Ghoul",
    "context": [
     "9.7 The Bestiary",
@@ -6750,8 +6750,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9068,
-    9068
+    9070,
+    9070
    ],
    "brief": {
     "identity": "Frost Ghoul, Pale City Minion, medium: a ghoul frozen and reborn in the cold, claws sheathed in frost, hunting in packs through snow-choked streets.",
@@ -6781,7 +6781,7 @@
    "id": "ART-MON-WHITE-COURT-ARCHER",
    "family": "monster",
    "heading_id": "h-white-court-archer-cannon",
-   "flavour_block": "B09088",
+   "flavour_block": "B09090",
    "title": "White Court Archer",
    "context": [
     "9.7 The Bestiary",
@@ -6793,8 +6793,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9086,
-    9086
+    9088,
+    9088
    ],
    "brief": {
     "identity": "White Court Archer, Pale City Cannon, medium: a dead marksman on a frozen balcony loosing ice-fletched arrows from a frostbow.",
@@ -6824,7 +6824,7 @@
    "id": "ART-MON-BLACKFIRE-HOUND",
    "family": "monster",
    "heading_id": "h-blackfire-hound-skirmisher",
-   "flavour_block": "B09104",
+   "flavour_block": "B09106",
    "title": "Blackfire Hound",
    "context": [
     "9.7 The Bestiary",
@@ -6836,8 +6836,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9102,
-    9102
+    9104,
+    9104
    ],
    "brief": {
     "identity": "Blackfire Hound, Pale City Skirmisher, medium: a charred beast-shape with cold black flame guttering along its spine that leaves a trail of smouldering ash.",
@@ -6867,7 +6867,7 @@
    "id": "ART-MON-ICE-WRAITH",
    "family": "monster",
    "heading_id": "h-ice-wraith-cannon",
-   "flavour_block": "B09122",
+   "flavour_block": "B09124",
    "title": "Ice Wraith",
    "context": [
     "9.7 The Bestiary",
@@ -6879,8 +6879,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9120,
-    9120
+    9122,
+    9122
    ],
    "brief": {
     "identity": "Ice Wraith, Pale City Cannon, medium: a knife-like translucent drifting spirit of someone who froze to death, hungry for warmth; it flies.",
@@ -6910,7 +6910,7 @@
    "id": "ART-MON-WHITE-COURT-SENTINEL",
    "family": "monster",
    "heading_id": "h-white-court-sentinel-brute",
-   "flavour_block": "B09141",
+   "flavour_block": "B09143",
    "title": "White Court Sentinel",
    "context": [
     "9.7 The Bestiary",
@@ -6922,8 +6922,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9139,
-    9139
+    9141,
+    9141
    ],
    "direction": "A corpse-knight crouched behind an enormous greatshield, ornate visored helm, no polearm.",
    "brief": {
@@ -6940,7 +6940,7 @@
     ],
     "atmosphere": "Immovable frozen loyalty.",
     "avoid": [
-     "No polearm or halberd: that is the Guard",
+     "No polearm; not the Guard's longsword and kite shield",
      "Not the Undead Sentinel (tower shield and halberd)",
      "Do not show it standing tall"
     ],
@@ -6948,13 +6948,13 @@
      "9.7 The Bestiary, Pale City Bestiary: White Court Sentinel [Brute]"
     ]
    },
-   "spec_sha256": "cff0d117dc010c76bc123be330a8c39938912f1310f2252356483cde8f5cfd5c"
+   "spec_sha256": "d6f94ba423168d27929e791d72ebd734b5d0b59340ecf6094eeff3303de650c8"
   },
   {
    "id": "ART-MON-ICE-ELEMENTAL",
    "family": "monster",
    "heading_id": "h-ice-elemental-controller",
-   "flavour_block": "B09161",
+   "flavour_block": "B09163",
    "title": "Ice Elemental",
    "context": [
     "9.7 The Bestiary",
@@ -6966,8 +6966,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9159,
-    9159
+    9161,
+    9161
    ],
    "brief": {
     "identity": "Ice Elemental, Pale City Controller, large: a lurching jagged figure of living glacier that freezes the ground it crosses.",
@@ -6997,7 +6997,7 @@
    "id": "ART-MON-FALLEN-PALADIN",
    "family": "monster",
    "heading_id": "h-fallen-paladin-elite",
-   "flavour_block": "B09179",
+   "flavour_block": "B09181",
    "title": "Fallen Paladin",
    "context": [
     "9.7 The Bestiary",
@@ -7009,8 +7009,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9177,
-    9177
+    9179,
+    9179
    ],
    "brief": {
     "identity": "Fallen Paladin, Pale City Elite, medium: an undead knight in defiled plate whose despair aura withers courage, wielding a necrotic-chilled flamberge.",
@@ -7040,7 +7040,7 @@
    "id": "ART-MON-WEREBEAR",
    "family": "monster",
    "heading_id": "h-werebear-brute",
-   "flavour_block": "B09201",
+   "flavour_block": "B09203",
    "title": "Werebear",
    "context": [
     "9.7 The Bestiary",
@@ -7052,8 +7052,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9199,
-    9199
+    9201,
+    9201
    ],
    "brief": {
     "identity": "Werebear, Pale City Brute, large: a hulking white-furred man-beast built to maul, with strength that hurls men aside.",
@@ -7083,7 +7083,7 @@
    "id": "ART-MON-WHITE-COURT-EXECUTIONER",
    "family": "monster",
    "heading_id": "h-white-court-executioner-elite",
-   "flavour_block": "B09218",
+   "flavour_block": "B09220",
    "title": "White Court Executioner",
    "context": [
     "9.7 The Bestiary",
@@ -7095,8 +7095,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9216,
-    9216
+    9218,
+    9218
    ],
    "direction": "A towering hooded headsman striding forward with a frost-rimed executioner's axe over one shoulder.",
    "brief": {
@@ -7127,7 +7127,7 @@
    "id": "ART-MON-FROST-WYVERN",
    "family": "monster",
    "heading_id": "h-frost-wyvern-elite",
-   "flavour_block": "B09239",
+   "flavour_block": "B09241",
    "title": "Frost Wyvern",
    "context": [
     "9.7 The Bestiary",
@@ -7139,8 +7139,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9237,
-    9237
+    9239,
+    9239
    ],
    "direction": "A frost wyvern on the wing, two-legged and lean, distinctly smaller and rangier than a dragon.",
    "brief": {
@@ -7171,7 +7171,7 @@
    "id": "ART-MON-GELID-FIEND",
    "family": "monster",
    "heading_id": "h-gelid-fiend-brute",
-   "flavour_block": "B09262",
+   "flavour_block": "B09264",
    "title": "Gelid Fiend",
    "context": [
     "9.7 The Bestiary",
@@ -7183,8 +7183,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9260,
-    9260
+    9262,
+    9262
    ],
    "brief": {
     "identity": "Gelid Fiend, Pale City Brute, large: a towering devil of blue-white ice and cruel geometry, a bound advocate of the frozen law.",
@@ -7214,26 +7214,26 @@
    "id": "ART-MON-FROST-GIANT",
    "family": "monster",
    "heading_id": "h-frost-giant-elite",
-   "flavour_block": "B09282",
+   "flavour_block": "B09284",
    "title": "Frost Giant",
    "context": [
     "9.7 The Bestiary",
     "Pale City Bestiary"
    ],
-   "flavour": "Twice a man's height and blue-skinned, the frost giant goes armoured in glacier-ice and brings a greataxe down like an avalanche. It hurls boulders to scatter foes before it closes the distance. The Pale City's oldest streets were built to its scale, by something, for reasons no one living recalls. It rules the high drifts as a king.",
+   "flavour": "Blue-skinned and towering over humans, orcs, and ogres alike, the frost giant goes armoured in glacier-ice and brings a greataxe down like an avalanche. It hurls boulders to scatter foes before it closes the distance. The Pale City's oldest streets were built to its scale, by something, for reasons no one living recalls. It rules the high drifts as a king.",
    "facts": {
     "role": "Elite",
     "size_code": "H"
    },
    "src_lines": [
-    9280,
-    9280
+    9282,
+    9282
    ],
    "brief": {
-    "identity": "Frost Giant, Pale City Elite, huge: a blue-skinned giant in glacier-ice armour wielding a greataxe, ruling the high drifts.",
-    "composition": "Wide low-angle view of the giant striding down a snowy street, greataxe raised overhead in two hands, boulder in the other arm's crook.",
+    "identity": "Frost Giant, Pale City Elite, huge: a blue-skinned giant that towers over humans, orcs and ogres alike, armoured in glacier-ice and wielding a greataxe.",
+    "composition": "Wide low-angle view of the giant striding down a snowy street, greataxe raised overhead, a tiny human figure at its feet for scale.",
     "details": [
-     "Twice a man's height, blue skin rendered by dense hatching",
+     "Towering far above humans, orcs and ogres; blue skin rendered by dense hatching",
      "Glacier-ice plate armour with jagged edges",
      "Greataxe with a crescent blade",
      "Boulder tucked under the arm",
@@ -7248,16 +7248,16 @@
      "No horns on the helm"
     ],
     "sources": [
-     "9.7 The Bestiary, Pale City Bestiary: Frost Giant [Elite]"
+     "9.7 The Bestiary, Pale City Bestiary: Frost Giant [Elite] (RC488 description)"
     ]
    },
-   "spec_sha256": "e9f0e5d9025d9fa9808bfd4a261a76c3e30aefdb457dd4a4e8f191d6a923ff38"
+   "spec_sha256": "6be88025fac10a7ba249fbadccd87d7357f0b5042003c7d32c1a66dc5dd6eb6c"
   },
   {
    "id": "ART-MON-WHITE-DRAGON",
    "family": "monster",
    "heading_id": "h-white-dragon-elite",
-   "flavour_block": "B09301",
+   "flavour_block": "B09303",
    "title": "White Dragon",
    "context": [
     "9.7 The Bestiary",
@@ -7269,8 +7269,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    9299,
-    9299
+    9301,
+    9301
    ],
    "direction": "A typical adult white dragon, alone on a jagged ice outcrop with wings half-raised; no spire, no city.",
    "brief": {
@@ -7301,7 +7301,7 @@
    "id": "ART-MON-FIRE-BEETLE",
    "family": "monster",
    "heading_id": "h-fire-beetle-minion",
-   "flavour_block": "B09325",
+   "flavour_block": "B09327",
    "title": "Fire Beetle",
    "context": [
     "9.7 The Bestiary",
@@ -7313,8 +7313,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    9323,
-    9323
+    9325,
+    9325
    ],
    "brief": {
     "identity": "Fire Beetle, Sun-Drowned Minion, small: a dog-sized, hard-shelled beetle with a ruddy inner glow that lights tomb passages.",
@@ -7344,7 +7344,7 @@
    "id": "ART-MON-IMP",
    "family": "monster",
    "heading_id": "h-imp-skirmisher",
-   "flavour_block": "B09344",
+   "flavour_block": "B09346",
    "title": "Imp",
    "context": [
     "9.7 The Bestiary",
@@ -7356,8 +7356,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    9342,
-    9342
+    9344,
+    9344
    ],
    "brief": {
     "identity": "Imp, Sun-Drowned Skirmisher, small: a knee-high bat-winged spiteful fiend with a barbed venomous tail that flits about tombs; it flies.",
@@ -7387,7 +7387,7 @@
    "id": "ART-MON-SKELETON-WARRIOR",
    "family": "monster",
    "heading_id": "h-skeleton-warrior-minion",
-   "flavour_block": "B09362",
+   "flavour_block": "B09364",
    "title": "Skeleton Warrior",
    "context": [
     "9.7 The Bestiary",
@@ -7399,8 +7399,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9360,
-    9360
+    9362,
+    9362
    ],
    "direction": "A bare sun-bleached skeleton in corroded bronze scale and a crested bronze helm, holding a curved bronze blade, sand underfoot.",
    "brief": {
@@ -7432,7 +7432,7 @@
    "id": "ART-MON-CORPSEHOUND",
    "family": "monster",
    "heading_id": "h-corpsehound-skirmisher",
-   "flavour_block": "B09378",
+   "flavour_block": "B09380",
    "title": "Corpsehound",
    "context": [
     "9.7 The Bestiary",
@@ -7444,8 +7444,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9376,
-    9376
+    9378,
+    9378
    ],
    "brief": {
     "identity": "Corpsehound, Sun-Drowned Skirmisher, medium: a jackal-headed, quick runner between man and beast that hunts caravans in loping packs with scimitar and jaws.",
@@ -7475,7 +7475,7 @@
    "id": "ART-MON-GNOLL",
    "family": "monster",
    "heading_id": "h-gnoll-soldier",
-   "flavour_block": "B09395",
+   "flavour_block": "B09397",
    "title": "Gnoll",
    "context": [
     "9.7 The Bestiary",
@@ -7487,8 +7487,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9393,
-    9393
+    9395,
+    9395
    ],
    "brief": {
     "identity": "Gnoll, Sun-Drowned Soldier, medium: a hyena-headed, rangy, hunger-ruled raider armed with a throwing spear and a longbow.",
@@ -7518,23 +7518,23 @@
    "id": "ART-MON-GIANT-SCORPION",
    "family": "monster",
    "heading_id": "h-giant-scorpion-soldier",
-   "flavour_block": "B09411",
+   "flavour_block": "B09413",
    "title": "Giant Scorpion",
    "context": [
     "9.7 The Bestiary",
     "Sun-Drowned Bestiary"
    ],
-   "flavour": "The size of a cart and banded in chitin plate, the giant scorpion bears two crushing pincers and a venom-dripping sting arched above its back. It buries itself in the dunes and erupts beneath whatever walks over it. Its venom liquefies a body from within. The Sun-Drowned's sands hide thousands of them, each one waiting on a footfall.",
+   "flavour": "The size of a man and banded in chitin plate, the giant scorpion bears two crushing pincers and a venom-dripping sting arched above its back. It buries itself in the dunes and erupts beneath whatever walks over it. Its venom liquefies a body from within. The Sun-Drowned's sands hide thousands of them, each one waiting on a footfall.",
    "facts": {
     "role": "Soldier",
     "size_code": "M"
    },
    "src_lines": [
-    9409,
-    9409
+    9411,
+    9411
    ],
    "brief": {
-    "identity": "Giant Scorpion, Sun-Drowned Soldier, medium: a banded chitin-plated desert scorpion with two crushing pincers and a venom-dripping sting arched over its back.",
+    "identity": "Giant Scorpion, Sun-Drowned Soldier, medium: a man-sized, banded chitin-plated desert scorpion with two crushing pincers and a venom-dripping sting arched over its back.",
     "composition": "Three-quarter view of the scorpion erupting from a dune, pincers wide, tail arched forward over its back, sand cascading.",
     "details": [
      "Exactly eight legs plus two pincers",
@@ -7543,7 +7543,8 @@
      "Tail curved over the back ending in a barbed sting with a venom drop",
      "Small eyes on the front of the head",
      "Sand cascading from the shell",
-     "Dune field behind"
+     "Dune field behind",
+     "About the size of a man: its arched sting rises to a man's head height"
     ],
     "atmosphere": "Sudden eruption from the sands.",
     "avoid": [
@@ -7552,16 +7553,16 @@
      "Do not draw wings"
     ],
     "sources": [
-     "9.7 The Bestiary, Sun-Drowned Bestiary: Giant Scorpion [Soldier]"
+     "9.7 The Bestiary, Sun-Drowned Bestiary: Giant Scorpion [Soldier] (RC488 'size of a man')"
     ]
    },
-   "spec_sha256": "aabf638352d3171afee39185cc3a880a1fd90658ffcd3fd0b3555a92234180d1"
+   "spec_sha256": "72c3babeff5482ace591b878c7c0d697b293b2bbfba435b1b17a12331066d5bd"
   },
   {
    "id": "ART-MON-SKELETON-ARCHER",
    "family": "monster",
    "heading_id": "h-skeleton-archer-cannon",
-   "flavour_block": "B09429",
+   "flavour_block": "B09431",
    "title": "Skeleton Archer",
    "context": [
     "9.7 The Bestiary",
@@ -7573,8 +7574,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9427,
-    9427
+    9429,
+    9429
    ],
    "brief": {
     "identity": "Skeleton Archer, Sun-Drowned Cannon, medium: a priest-king tomb skeleton standing in a carved alcove with a still-strung tomb bow.",
@@ -7604,7 +7605,7 @@
    "id": "ART-MON-MUMMY",
    "family": "monster",
    "heading_id": "h-mummy-controller",
-   "flavour_block": "B09446",
+   "flavour_block": "B09448",
    "title": "Mummy",
    "context": [
     "9.7 The Bestiary",
@@ -7616,8 +7617,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9444,
-    9444
+    9446,
+    9446
    ],
    "brief": {
     "identity": "Mummy, Sun-Drowned Controller, medium: a priest-king's preserved corpse bound in resin-soaked wrappings, risen in wrath.",
@@ -7647,7 +7648,7 @@
    "id": "ART-MON-SKELETAL-BEAST",
    "family": "monster",
    "heading_id": "h-skeletal-beast-skirmisher",
-   "flavour_block": "B09466",
+   "flavour_block": "B09468",
    "title": "Skeletal Beast",
    "context": [
     "9.7 The Bestiary",
@@ -7659,8 +7660,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9464,
-    9464
+    9466,
+    9466
    ],
    "brief": {
     "identity": "Skeletal Beast, Sun-Drowned Skirmisher, medium: the bound remains of a great desert predator, a charging framework of fang and claw.",
@@ -7690,7 +7691,7 @@
    "id": "ART-MON-WIND-ELEMENTAL",
    "family": "monster",
    "heading_id": "h-wind-elemental-skirmisher",
-   "flavour_block": "B09488",
+   "flavour_block": "B09490",
    "title": "Wind Elemental",
    "context": [
     "9.7 The Bestiary",
@@ -7702,8 +7703,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9486,
-    9486
+    9488,
+    9488
    ],
    "brief": {
     "identity": "Wind Elemental, Sun-Drowned Skirmisher, large: a howling, near-invisible spiral of desert air that flings sand and bodies; it flies.",
@@ -7733,7 +7734,7 @@
    "id": "ART-MON-DESERT-NAGA",
    "family": "monster",
    "heading_id": "h-desert-naga-controller",
-   "flavour_block": "B09506",
+   "flavour_block": "B09508",
    "title": "Desert Naga",
    "context": [
     "9.7 The Bestiary",
@@ -7745,8 +7746,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9504,
-    9504
+    9506,
+    9506
    ],
    "brief": {
     "identity": "Desert Naga, Sun-Drowned Controller, large: a great serpent with an almost-human face coiled among tomb pillars, old and patient.",
@@ -7776,7 +7777,7 @@
    "id": "ART-MON-FIRE-ELEMENTAL",
    "family": "monster",
    "heading_id": "h-fire-elemental-cannon",
-   "flavour_block": "B09525",
+   "flavour_block": "B09527",
    "title": "Fire Elemental",
    "context": [
     "9.7 The Bestiary",
@@ -7788,8 +7789,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9523,
-    9523
+    9525,
+    9525
    ],
    "brief": {
     "identity": "Fire Elemental, Sun-Drowned Cannon, large: a roaring man-shape of living flame, white-hot at the core and shedding embers.",
@@ -7819,7 +7820,7 @@
    "id": "ART-MON-GIANT-SKELETON",
    "family": "monster",
    "heading_id": "h-giant-skeleton-brute",
-   "flavour_block": "B09542",
+   "flavour_block": "B09544",
    "title": "Giant Skeleton",
    "context": [
     "9.7 The Bestiary",
@@ -7831,8 +7832,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9540,
-    9540
+    9542,
+    9542
    ],
    "brief": {
     "identity": "Giant Skeleton, Sun-Drowned Brute, large: a looming framework of fused bone twice a man's height with fists like falling masonry.",
@@ -7862,7 +7863,7 @@
    "id": "ART-MON-MEDUSA",
    "family": "monster",
    "heading_id": "h-medusa-elite",
-   "flavour_block": "B09560",
+   "flavour_block": "B09562",
    "title": "Medusa",
    "context": [
     "9.7 The Bestiary",
@@ -7874,8 +7875,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9558,
-    9558
+    9560,
+    9560
    ],
    "brief": {
     "identity": "Medusa, Sun-Drowned Elite, medium: a serpent-haired figure among statues that were once admirers, fighting with shortsword and snake-hair.",
@@ -7905,7 +7906,7 @@
    "id": "ART-MON-TOMB-NECROMANCER",
    "family": "monster",
    "heading_id": "h-tomb-necromancer-controller",
-   "flavour_block": "B09581",
+   "flavour_block": "B09583",
    "title": "Tomb Necromancer",
    "context": [
     "9.7 The Bestiary",
@@ -7917,8 +7918,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9579,
-    9579
+    9581,
+    9581
    ],
    "brief": {
     "identity": "Tomb Necromancer, Sun-Drowned Controller, medium: a withered official in the faded regalia of a dead bureaucracy, raising the buried to enforce forgotten statutes.",
@@ -7948,7 +7949,7 @@
    "id": "ART-MON-TOMB-GUARDIAN",
    "family": "monster",
    "heading_id": "h-tomb-guardian-soldier",
-   "flavour_block": "B09600",
+   "flavour_block": "B09602",
    "title": "Tomb Guardian",
    "context": [
     "9.7 The Bestiary",
@@ -7960,8 +7961,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9598,
-    9598
+    9600,
+    9600
    ],
    "brief": {
     "identity": "Tomb Guardian, Sun-Drowned Soldier, medium: a faceless construct of gilded stone and ritual standing at a threshold with a ceremonial glaive.",
@@ -7991,7 +7992,7 @@
    "id": "ART-MON-BRASS-GOLEM",
    "family": "monster",
    "heading_id": "h-brass-golem-brute",
-   "flavour_block": "B09622",
+   "flavour_block": "B09624",
    "title": "Brass Golem",
    "context": [
     "9.7 The Bestiary",
@@ -8003,8 +8004,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9620,
-    9620
+    9622,
+    9622
    ],
    "brief": {
     "identity": "Brass Golem, Sun-Drowned Brute, medium: a burnished automaton holding trapped forge-heat that hammers with searing fists.",
@@ -8034,7 +8035,7 @@
    "id": "ART-MON-MANTICORE",
    "family": "monster",
    "heading_id": "h-manticore-elite",
-   "flavour_block": "B09644",
+   "flavour_block": "B09646",
    "title": "Manticore",
    "context": [
     "9.7 The Bestiary",
@@ -8046,8 +8047,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9642,
-    9642
+    9644,
+    9644
    ],
    "brief": {
     "identity": "Manticore, Sun-Drowned Elite, large: a fusion of lion's body, bat's wings and a man's leering face that flicks volleys of iron spikes from its tail; it flies.",
@@ -8077,7 +8078,7 @@
    "id": "ART-MON-DEMON",
    "family": "monster",
    "heading_id": "h-demon-elite",
-   "flavour_block": "B09666",
+   "flavour_block": "B09668",
    "title": "Demon",
    "context": [
     "9.7 The Bestiary",
@@ -8089,8 +8090,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    9664,
-    9664
+    9666,
+    9666
    ],
    "brief": {
     "identity": "Demon, Sun-Drowned Elite, huge: a horned iron-coloured fiend wreathed in clinging flame, wielding a hooked glaive.",
@@ -8120,7 +8121,7 @@
    "id": "ART-MON-BLUE-DRAGON",
    "family": "monster",
    "heading_id": "h-blue-dragon-elite",
-   "flavour_block": "B09690",
+   "flavour_block": "B09692",
    "title": "Blue Dragon",
    "context": [
     "9.7 The Bestiary",
@@ -8132,8 +8133,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    9688,
-    9688
+    9690,
+    9690
    ],
    "direction": "A typical adult blue dragon bursting up out of a dune, sand cascading from its horns.",
    "brief": {
@@ -8164,7 +8165,7 @@
    "id": "ART-MON-BOGLING",
    "family": "monster",
    "heading_id": "h-bogling-minion",
-   "flavour_block": "B09714",
+   "flavour_block": "B09716",
    "title": "Bogling",
    "context": [
     "9.7 The Bestiary",
@@ -8176,8 +8177,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    9712,
-    9712
+    9714,
+    9714
    ],
    "brief": {
     "identity": "Bogling, Mire Minion, small: a squat frog-mouthed swamp creature lurking chest-deep with a spear and mud-darts.",
@@ -8207,7 +8208,7 @@
    "id": "ART-MON-SWAMP-GOBLIN",
    "family": "monster",
    "heading_id": "h-swamp-goblin-minion",
-   "flavour_block": "B09733",
+   "flavour_block": "B09735",
    "title": "Swamp Goblin",
    "context": [
     "9.7 The Bestiary",
@@ -8219,8 +8220,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    9731,
-    9731
+    9733,
+    9733
    ],
    "brief": {
     "identity": "Swamp Goblin, Mire Minion, small: a slime-streaked goblin that paddles the Mire's channels and blows poisoned darts from the reeds.",
@@ -8250,7 +8251,7 @@
    "id": "ART-MON-ZOMBIE",
    "family": "monster",
    "heading_id": "h-zombie-minion",
-   "flavour_block": "B09755",
+   "flavour_block": "B09757",
    "title": "Zombie",
    "context": [
     "9.7 The Bestiary",
@@ -8262,8 +8263,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9753,
-    9753
+    9755,
+    9755
    ],
    "brief": {
     "identity": "Zombie, Mire Minion, medium: a waterlogged corpse the Mire would not keep, lurching upright in tattered remains and reaching up from beneath walkways.",
@@ -8293,7 +8294,7 @@
    "id": "ART-MON-STIRGE",
    "family": "monster",
    "heading_id": "h-stirge-minion",
-   "flavour_block": "B09772",
+   "flavour_block": "B09774",
    "title": "Stirge",
    "context": [
     "9.7 The Bestiary",
@@ -8305,8 +8306,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    9770,
-    9770
+    9772,
+    9772
    ],
    "brief": {
     "identity": "Stirge, Mire Minion, small: a cat-sized bloated mosquito-thing with a needle proboscis and a blood-swollen belly; it flies.",
@@ -8336,7 +8337,7 @@
    "id": "ART-MON-WILL-O-WISP",
    "family": "monster",
    "heading_id": "h-will-o-wisp-cannon",
-   "flavour_block": "B09790",
+   "flavour_block": "B09792",
    "title": "Will-o'-Wisp",
    "context": [
     "9.7 The Bestiary",
@@ -8348,8 +8349,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    9788,
-    9788
+    9790,
+    9790
    ],
    "brief": {
     "identity": "Will-o'-Wisp, Mire Cannon, small: a drifting orb of pale corpse-light that lures travellers into the mire; it flies.",
@@ -8379,7 +8380,7 @@
    "id": "ART-MON-LIZARDFOLK-WARRIOR",
    "family": "monster",
    "heading_id": "h-lizardfolk-warrior-soldier",
-   "flavour_block": "B09809",
+   "flavour_block": "B09811",
    "title": "Lizardfolk Warrior",
    "context": [
     "9.7 The Bestiary",
@@ -8391,8 +8392,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9807,
-    9807
+    9809,
+    9809
    ],
    "brief": {
     "identity": "Lizardfolk Warrior, Mire Soldier, medium: a scaled cold-eyed pack fighter with heavy club and javelin who defends its breeding-pools.",
@@ -8422,7 +8423,7 @@
    "id": "ART-MON-LIZARDFOLK-HUNTER",
    "family": "monster",
    "heading_id": "h-lizardfolk-hunter-cannon",
-   "flavour_block": "B09827",
+   "flavour_block": "B09829",
    "title": "Lizardfolk Hunter",
    "context": [
     "9.7 The Bestiary",
@@ -8434,8 +8435,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9825,
-    9825
+    9827,
+    9827
    ],
    "brief": {
     "identity": "Lizardfolk Hunter, Mire Cannon, medium: a patient silent lizard-man stalking the margins with a barbed harpoon.",
@@ -8465,7 +8466,7 @@
    "id": "ART-MON-CROCODILE",
    "family": "monster",
    "heading_id": "h-crocodile-skirmisher",
-   "flavour_block": "B09847",
+   "flavour_block": "B09849",
    "title": "Crocodile",
    "context": [
     "9.7 The Bestiary",
@@ -8477,8 +8478,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9845,
-    9845
+    9847,
+    9847
    ],
    "brief": {
     "identity": "Crocodile, Mire Skirmisher, large: a monstrous-length log-still ambusher exploding from the murk to drag victims under in a death-roll.",
@@ -8508,7 +8509,7 @@
    "id": "ART-MON-LIZARDFOLK-SHAMAN",
    "family": "monster",
    "heading_id": "h-lizardfolk-shaman-controller",
-   "flavour_block": "B09865",
+   "flavour_block": "B09867",
    "title": "Lizardfolk Shaman",
    "context": [
     "9.7 The Bestiary",
@@ -8520,8 +8521,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9863,
-    9863
+    9865,
+    9865
    ],
    "brief": {
     "identity": "Lizardfolk Shaman, Mire Controller, medium: a reed-cloaked lizard-man who speaks for the swamp-spirits and heals its pack with a staff and spirit-bolts.",
@@ -8551,7 +8552,7 @@
    "id": "ART-MON-MIASMA-SERPENT",
    "family": "monster",
    "heading_id": "h-miasma-serpent-skirmisher",
-   "flavour_block": "B09884",
+   "flavour_block": "B09886",
    "title": "Miasma Serpent",
    "context": [
     "9.7 The Bestiary",
@@ -8563,8 +8564,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9882,
-    9882
+    9884,
+    9884
    ],
    "brief": {
     "identity": "Miasma Serpent, Mire Skirmisher, medium: a bloated water-snake that exhales poison clouds as it swims.",
@@ -8594,7 +8595,7 @@
    "id": "ART-MON-SWAMP-NAGA",
    "family": "monster",
    "heading_id": "h-swamp-naga-controller",
-   "flavour_block": "B09906",
+   "flavour_block": "B09908",
    "title": "Swamp Naga",
    "context": [
     "9.7 The Bestiary",
@@ -8606,8 +8607,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9904,
-    9904
+    9906,
+    9906
    ],
    "brief": {
     "identity": "Swamp Naga, Mire Controller, large: a great serpent with a hooded watchful face coiled among drowned ruins, spitting venom and binding prey.",
@@ -8637,7 +8638,7 @@
    "id": "ART-MON-GIANT-CONSTRICTOR",
    "family": "monster",
    "heading_id": "h-giant-constrictor-skirmisher",
-   "flavour_block": "B09926",
+   "flavour_block": "B09928",
    "title": "Giant Constrictor",
    "context": [
     "9.7 The Bestiary",
@@ -8649,8 +8650,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9924,
-    9924
+    9926,
+    9926
    ],
    "brief": {
     "identity": "Giant Constrictor, Mire Skirmisher, medium: a snake long enough to bridge a channel that drops from overhanging branches to coil and crush.",
@@ -8680,7 +8681,7 @@
    "id": "ART-MON-SHAMBLING-MOUND",
    "family": "monster",
    "heading_id": "h-shambling-mound-brute",
-   "flavour_block": "B09946",
+   "flavour_block": "B09948",
    "title": "Shambling Mound",
    "context": [
     "9.7 The Bestiary",
@@ -8692,8 +8693,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    9944,
-    9944
+    9946,
+    9946
    ],
    "brief": {
     "identity": "Shambling Mound, Mire Brute, large: a heaving mass of animate rot and creeper-vine, roughly man-shaped and tireless.",
@@ -8723,7 +8724,7 @@
    "id": "ART-MON-SWAMP-HAG",
    "family": "monster",
    "heading_id": "h-swamp-hag-controller",
-   "flavour_block": "B09967",
+   "flavour_block": "B09969",
    "title": "Swamp Hag",
    "context": [
     "9.7 The Bestiary",
@@ -8735,8 +8736,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9965,
-    9965
+    9967,
+    9967
    ],
    "brief": {
     "identity": "Swamp Hag, Mire Controller, medium: a warty, weed-haired crone who poles through the Mire cursing all she meets.",
@@ -8766,7 +8767,7 @@
    "id": "ART-MON-BANSHEE",
    "family": "monster",
    "heading_id": "h-banshee-controller",
-   "flavour_block": "B09986",
+   "flavour_block": "B09988",
    "title": "Banshee",
    "context": [
     "9.7 The Bestiary",
@@ -8778,8 +8779,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    9984,
-    9984
+    9986,
+    9986
    ],
    "brief": {
     "identity": "Banshee, Mire Controller, medium: the shrieking translucent spirit of a woman drowned in grief; it flies.",
@@ -8809,7 +8810,7 @@
    "id": "ART-MON-SWAMP-TROLL",
    "family": "monster",
    "heading_id": "h-swamp-troll-brute",
-   "flavour_block": "B10008",
+   "flavour_block": "B10010",
    "title": "Swamp Troll",
    "context": [
     "9.7 The Bestiary",
@@ -8821,8 +8822,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    10006,
-    10006
+    10008,
+    10008
    ],
    "brief": {
     "identity": "Swamp Troll, Mire Brute, large: a slime-green giant of reaching arms and a tusked maw that hauls itself on all fours through the Mire, regenerating wounds.",
@@ -8852,7 +8853,7 @@
    "id": "ART-MON-HYDRA",
    "family": "monster",
    "heading_id": "h-hydra-elite",
-   "flavour_block": "B10029",
+   "flavour_block": "B10031",
    "title": "Hydra",
    "context": [
     "9.7 The Bestiary",
@@ -8864,8 +8865,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10027,
-    10027
+    10029,
+    10029
    ],
    "brief": {
     "identity": "Hydra, Mire Elite, huge: a many-headed reptilian horror wallowing in the Mire's deepest pools, each serpentine neck striking on its own.",
@@ -8895,7 +8896,7 @@
    "id": "ART-MON-BLACKWATER-WIGHT",
    "family": "monster",
    "heading_id": "h-blackwater-wight-elite",
-   "flavour_block": "B10049",
+   "flavour_block": "B10051",
    "title": "Blackwater Wight",
    "context": [
     "9.7 The Bestiary",
@@ -8907,8 +8908,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    10047,
-    10047
+    10049,
+    10049
    ],
    "brief": {
     "identity": "Blackwater Wight, Mire Elite, medium: a barnacled drowned corpse-warrior rising from black pools with a life-drinking drowned blade.",
@@ -8938,7 +8939,7 @@
    "id": "ART-MON-MIRE-TITAN",
    "family": "monster",
    "heading_id": "h-mire-titan-brute",
-   "flavour_block": "B10071",
+   "flavour_block": "B10073",
    "title": "Mire Titan",
    "context": [
     "9.7 The Bestiary",
@@ -8950,8 +8951,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10069,
-    10069
+    10071,
+    10071
    ],
    "direction": "A typical Mire Titan alone, waist-deep in fen water, reeds and mud sliding from its body; no geodes or hunters.",
    "brief": {
@@ -8982,7 +8983,7 @@
    "id": "ART-MON-BLACK-DRAGON",
    "family": "monster",
    "heading_id": "h-black-dragon-elite",
-   "flavour_block": "B10093",
+   "flavour_block": "B10095",
    "title": "Black Dragon",
    "context": [
     "9.7 The Bestiary",
@@ -8994,8 +8995,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10091,
-    10091
+    10093,
+    10093
    ],
    "direction": "A typical adult black dragon rising from open black water, acid dripping from its jaws; no ruin or architecture.",
    "brief": {
@@ -9026,7 +9027,7 @@
    "id": "ART-MON-THE-ANCIENT-VOID-DRAGON",
    "family": "boss",
    "heading_id": "h-the-ancient-void-dragon-boss",
-   "flavour_block": "B10141",
+   "flavour_block": "B10143",
    "title": "The Ancient Void Dragon",
    "context": [
     "9.7 The Bestiary",
@@ -9038,8 +9039,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10139,
-    10139
+    10141,
+    10141
    ],
    "direction": "The Ancient Void Dragon drawn mostly as negative space: a wyrm-shaped absence edged by fine lines, stars dimming around it.",
    "brief": {
@@ -9072,7 +9073,7 @@
    "id": "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
    "family": "boss",
    "heading_id": "h-the-hollow-crown-of-the-ashlands-boss",
-   "flavour_block": "B10165",
+   "flavour_block": "B10167",
    "title": "The Hollow Crown of the Ashlands",
    "context": [
     "9.7 The Bestiary",
@@ -9084,8 +9085,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    10163,
-    10163
+    10165,
+    10165
    ],
    "direction": "A black iron circlet floating above an empty regent's robe on a ruined throne, ranks of dead legionaries kneeling below.",
    "brief": {
@@ -9122,7 +9123,7 @@
    "id": "ART-MON-THE-LAST-COLOSSUS",
    "family": "boss",
    "heading_id": "h-the-last-colossus-boss",
-   "flavour_block": "B10187",
+   "flavour_block": "B10189",
    "title": "The Last Colossus",
    "context": [
     "9.7 The Bestiary",
@@ -9134,8 +9135,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10185,
-    10185
+    10187,
+    10187
    ],
    "direction": "A riveted black-iron war-construct three times a man's height marching along a ruined imperial road, a small figure at its feet for scale.",
    "brief": {
@@ -9171,7 +9172,7 @@
    "id": "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
    "family": "boss",
    "heading_id": "h-avatar-of-the-old-growth-boss",
-   "flavour_block": "B10210",
+   "flavour_block": "B10212",
    "title": "Avatar of the Old Growth",
    "context": [
     "9.7 The Bestiary",
@@ -9183,8 +9184,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10208,
-    10208
+    10210,
+    10210
    ],
    "direction": "A colossal walking tree-giant towering over the forest canopy, roots dragging behind it, its crown a tangle of antlered branches.",
    "brief": {
@@ -9220,7 +9221,7 @@
    "id": "ART-MON-THE-BROODMOTHER-PRIME",
    "family": "boss",
    "heading_id": "h-the-broodmother-prime-boss",
-   "flavour_block": "B10233",
+   "flavour_block": "B10235",
    "title": "The Broodmother Prime",
    "context": [
     "9.7 The Bestiary",
@@ -9232,8 +9233,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10231,
-    10231
+    10233,
+    10233
    ],
    "direction": "The Broodmother squatting in a vast webbed cavern, cottage-sized, egg-sacs trailing, cocooned victims hanging in the webs.",
    "brief": {
@@ -9269,7 +9270,7 @@
    "id": "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
    "family": "boss",
    "heading_id": "h-captain-veyr-of-the-forsaken-boss",
-   "flavour_block": "B10257",
+   "flavour_block": "B10259",
    "title": "Captain Veyr of the Forsaken",
    "context": [
     "9.7 The Bestiary",
@@ -9281,8 +9282,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    10255,
-    10255
+    10257,
+    10257
    ],
    "direction": "Captain Veyr in spectral plate with paired blades raised, rallying a line of dead soldiers behind them.",
    "brief": {
@@ -9318,7 +9319,7 @@
    "id": "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
    "family": "boss",
    "heading_id": "h-the-frost-bailiff-magistrate-boss",
-   "flavour_block": "B10279",
+   "flavour_block": "B10281",
    "title": "The Frost Bailiff Magistrate",
    "context": [
     "9.7 The Bestiary",
@@ -9330,8 +9331,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    10277,
-    10277
+    10279,
+    10279
    ],
    "direction": "The Frost Bailiff drifting down a frozen avenue in judicial robes, a figure freezing solid where they stand before it.",
    "brief": {
@@ -9368,7 +9369,7 @@
    "id": "ART-MON-THE-SUN-CROWNED-PRINCE",
    "family": "boss",
    "heading_id": "h-the-sun-crowned-prince-boss",
-   "flavour_block": "B10301",
+   "flavour_block": "B10303",
    "title": "The Sun-Crowned Prince",
    "context": [
     "9.7 The Bestiary",
@@ -9380,8 +9381,8 @@
     "size_code": "M"
    },
    "src_lines": [
-    10299,
-    10299
+    10301,
+    10301
    ],
    "direction": "The Sun-Crowned Prince enthroned in a sealed tomb-court, a withered corpse in funeral linen beneath a bright crown of beaten gold.",
    "brief": {
@@ -9417,7 +9418,7 @@
    "id": "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
    "family": "boss",
    "heading_id": "h-the-antlered-warden-of-the-tithe-boss",
-   "flavour_block": "B10323",
+   "flavour_block": "B10325",
    "title": "The Antlered Warden of the Tithe",
    "context": [
     "9.7 The Bestiary",
@@ -9429,8 +9430,8 @@
     "size_code": "L"
    },
    "src_lines": [
-    10321,
-    10321
+    10323,
+    10323
    ],
    "direction": "A towering (Large) gaunt figure of bone-antler and living wood standing at Greythorn's west gate in winter snow, dragging a debtor by the collar.",
    "brief": {
@@ -9467,7 +9468,7 @@
    "id": "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
    "family": "boss",
    "heading_id": "h-the-voice-beneath-the-bells-boss",
-   "flavour_block": "B10347",
+   "flavour_block": "B10349",
    "title": "The Voice Beneath the Bells",
    "context": [
     "9.7 The Bestiary",
@@ -9479,8 +9480,8 @@
     "size_code": "S"
    },
    "src_lines": [
-    10345,
-    10345
+    10347,
+    10347
    ],
    "direction": "A small child-shaped figure at the edge of guttering torchlight in a flooded chapel, singing, the bells hanging silent above.",
    "brief": {
@@ -9515,7 +9516,7 @@
    "id": "ART-MON-MAELTHORN-THE-VERDANT",
    "family": "boss",
    "heading_id": "h-maelthorn-the-verdant-boss",
-   "flavour_block": "B10370",
+   "flavour_block": "B10372",
    "title": "Maelthorn the Verdant",
    "context": [
     "9.7 The Bestiary",
@@ -9527,8 +9528,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10368,
-    10368
+    10370,
+    10370
    ],
    "direction": "Maelthorn coiled in a forest clearing among Greythorn's autumn tithe offerings, moss and lichen furring its scales, poison fog spilling from its jaws.",
    "brief": {
@@ -9566,7 +9567,7 @@
    "id": "ART-MON-SIRRACH-THE-BLACK",
    "family": "boss",
    "heading_id": "h-sirrach-the-black-boss",
-   "flavour_block": "B10396",
+   "flavour_block": "B10398",
    "title": "Sirrach the Black",
    "context": [
     "9.7 The Bestiary",
@@ -9578,8 +9579,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10394,
-    10394
+    10396,
+    10396
    ],
    "direction": "Sirrach erupting out of solid stone in an unmapped gallery, the rock rippling like water around its black body.",
    "brief": {
@@ -9613,7 +9614,7 @@
    "id": "ART-MON-VISATH-THE-WHITE",
    "family": "boss",
    "heading_id": "h-visath-the-white-boss",
-   "flavour_block": "B10422",
+   "flavour_block": "B10424",
    "title": "Visath the White",
    "context": [
     "9.7 The Bestiary",
@@ -9625,8 +9626,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10420,
-    10420
+    10422,
+    10422
    ],
    "direction": "Visath perched atop the highest frozen spire of the Pale City, wings spread, victims locked mid-scream in the ice below.",
    "brief": {
@@ -9660,7 +9661,7 @@
    "id": "ART-MON-KHORRUN-THE-DRACOLICH",
    "family": "boss",
    "heading_id": "h-khorrun-the-dracolich-boss",
-   "flavour_block": "B10449",
+   "flavour_block": "B10451",
    "title": "Khorrun the Dracolich",
    "context": [
     "9.7 The Bestiary",
@@ -9672,8 +9673,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10447,
-    10447
+    10449,
+    10449
    ],
    "direction": "Khorrun's skeletal dragon body draped in tattered scale, coiled atop a hoard in a tomb gallery, ledgers stacked to the ceiling.",
    "brief": {
@@ -9707,7 +9708,7 @@
    "id": "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
    "family": "boss",
    "heading_id": "h-vossegar-of-the-flooded-cathedral-boss",
-   "flavour_block": "B10475",
+   "flavour_block": "B10477",
    "title": "Vossegar of the Flooded Cathedral",
    "context": [
     "9.7 The Bestiary",
@@ -9719,8 +9720,8 @@
     "size_code": "H"
    },
    "src_lines": [
-    10473,
-    10473
+    10475,
+    10475
    ],
    "direction": "Vossegar coiled among submerged altars and broken pillars inside a drowned cathedral, black water rising around the nave.",
    "brief": {
@@ -9754,7 +9755,7 @@
    "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
    "family": "scenario",
    "heading_id": "h-scenario-1-hunt-the-wild-beast-intro",
-   "flavour_block": "B11976",
+   "flavour_block": "B11978",
    "title": "Scenario 1: Hunt the Wild Beast",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -9763,8 +9764,8 @@
    "flavour": "Something out of the deep wood has taken Greythorn's logging camps for its hunting ground, and with them the timber the Bastion is built on. The first deaths were blamed on dire wolves. The next were found driven through splintered palisade timbers, which dire wolves do not manage. Its pelt, skull, and teeth would buy a season behind the walls, and the Council of Captains will pay either way to have the camps cutting again. Comfort and timber have sent both parties into the trees.",
    "facts": {},
    "src_lines": [
-    11974,
-    11974
+    11976,
+    11976
    ],
    "brief": {
     "identity": "Hunt the Wild Beast, a Greenmark scenario set in a Greythorn logging camp whose palisade timbers have been driven through and splintered by a Great Forest Boar that has made the deep wood its hunting ground.",
@@ -9801,7 +9802,7 @@
    "id": "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
    "family": "scenario",
    "heading_id": "h-scenario-2-the-whispering-grove",
-   "flavour_block": "B12044",
+   "flavour_block": "B12046",
    "title": "Scenario 2: The Whispering Grove",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -9810,8 +9811,8 @@
    "flavour": "The grove is older than Greythorn and older than the western forest road that skirts it. The standing stones hum when no wind passes, and pale lights move between them on moonless nights. Greythorn's farmers leave bread there and do not look back. Scholars call it a site of power. The Council of Captains calls it part of the tithe, and pays it without complaint.",
    "facts": {},
    "src_lines": [
-    12042,
-    12042
+    12044,
+    12044
    ],
    "brief": {
     "identity": "The Whispering Grove, an ancient Greenmark clearing older than Greythorn, with humming standing stones where pale lights move on moonless nights and farmers leave bread as part of the tithe.",
@@ -9846,7 +9847,7 @@
    "id": "ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL",
    "family": "scenario",
    "heading_id": "h-scenario-3-the-bandits-toll",
-   "flavour_block": "B12114",
+   "flavour_block": "B12116",
    "title": "Scenario 3: The Bandit's Toll",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -9855,8 +9856,8 @@
    "flavour": "The western forest road carries Deepwarden iron, Reedmarch salt, and grain between the Bastions, and it is the one artery Greythorn cannot do without. A toll crew has claimed a bend of the trail and nailed its prices to the trees in stolen blood. Caravans wait behind palisades while bread grows dear inside Greythorn's walls. The Council of Captains has stamped a bounty and sent it out with anyone hungry enough to answer.",
    "facts": {},
    "src_lines": [
-    12112,
-    12112
+    12114,
+    12114
    ],
    "brief": {
     "identity": "The Bandit's Toll, a Greenmark scenario where a toll crew has claimed a bend of the western forest road, the artery carrying Deepwarden iron, Reedmarch salt and grain.",
@@ -9893,7 +9894,7 @@
    "id": "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE",
    "family": "scenario",
    "heading_id": "h-scenario-4-the-spiders-silk-route",
-   "flavour_block": "B12191",
+   "flavour_block": "B12193",
    "title": "Scenario 4: The Spider's Silk Route",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -9902,8 +9903,8 @@
    "flavour": "Silk-traders whisper of a ravine in the deep Greenmark where the webs hold steel like thread and fetch absurd prices in Bastion markets. The spinners are the Broodmother's daughters, strayed up from the dark, and the place is on no honest map. That has not stopped a Greythorn merchant from selling the same path through the thorns to two parties at once.",
    "facts": {},
    "src_lines": [
-    12189,
-    12189
+    12191,
+    12191
    ],
    "brief": {
     "identity": "The Spider's Silk Route, a hidden Greenmark ravine where the Broodmother's daughters spin webs that hold steel like thread and fetch absurd prices in Bastion markets.",
@@ -9938,7 +9939,7 @@
    "id": "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY",
    "family": "scenario",
    "heading_id": "h-scenario-5-the-ambushed-emissary",
-   "flavour_block": "B12262",
+   "flavour_block": "B12264",
    "title": "Scenario 5: The Ambushed Emissary",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -9947,8 +9948,8 @@
    "flavour": "An emissary vanished on the western forest road carrying documents sealed under two rival Bastion laws. One patron in Greythorn wants the courier found breathing. Another, further off, wants the satchel and does not ask after the courier. The deep wood has kept worse secrets, and the Hollow Quarter is not telling.",
    "facts": {},
    "src_lines": [
-    12260,
-    12260
+    12262,
+    12262
    ],
    "brief": {
     "identity": "The Ambushed Emissary, a Greenmark scenario where an emissary carrying documents sealed under two rival Bastion laws vanished on the western forest road and is now held in a makeshift bandit camp deep in the wood.",
@@ -9985,7 +9986,7 @@
    "id": "ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH",
    "family": "scenario",
    "heading_id": "h-scenario-6-ritual-of-the-old-growth",
-   "flavour_block": "B12340",
+   "flavour_block": "B12342",
    "title": "Scenario 6: Ritual of the Old Growth",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -9994,8 +9995,8 @@
    "flavour": "An Old Growth elder works slowly over a sickness in the roots, and a Heartwood Totem worth more than most villages stands at the heart of the rite. Greythorn's tithe forbids touching it, and the Council of Captains keeps the tithe because the alternative is the wild court at the gate. Another Bastion, with no forest to answer to, calls the same act salvage. The roots are listening to both.",
    "facts": {},
    "src_lines": [
-    12338,
-    12338
+    12340,
+    12340
    ],
    "brief": {
     "identity": "Ritual of the Old Growth, a Greenmark scenario in which an Old Growth Treant elder works slowly over a sickness in the roots beneath a Mother Tree, with a Heartwood Totem at the heart of the rite.",
@@ -10030,7 +10031,7 @@
    "id": "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
    "family": "scenario",
    "heading_id": "h-scenario-1-the-fallen-observatory-intro",
-   "flavour_block": "B12429",
+   "flavour_block": "B12431",
    "title": "Scenario 1: The Fallen Observatory",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10039,8 +10040,8 @@
    "flavour": "A star-engine once crowned these ruins, and its broken brass arms still turn when moonlight enters the cracked dome. Wizards would give a finger for the instruments scattered across the shifting floors, which is precisely why the Sable Watch wants them carried to Sablekeep and locked away from unregistered hands. The old servants of the place still know the penalty for touching them. They have a great deal of time in which to enforce it.",
    "facts": {},
    "src_lines": [
-    12427,
-    12427
+    12429,
+    12429
    ],
    "brief": {
     "identity": "The Fallen Observatory, an Ashlands scenario in ruins once crowned by a star-engine, whose broken brass arms still turn when moonlight enters the cracked dome.",
@@ -10076,7 +10077,7 @@
    "id": "ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST",
    "family": "scenario",
    "heading_id": "h-scenario-2-the-guardians-test",
-   "flavour_block": "B12497",
+   "flavour_block": "B12499",
    "title": "Scenario 2: The Guardian's Test",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10085,8 +10086,8 @@
    "flavour": "A sealed gate dominates the courtyard, black with soot and old prayers, somewhere along the imperial roads that run out from the dead empire's heart. The texts say a vault waits beyond. They warn that worthiness is tested before entry, and no surviving copy explains what worthiness means. The Sable Watch insists the guardian answers to a seal nobody now holds, while a rival party arrives carrying a Hollow Crown's Writ and a very different opinion.",
    "facts": {},
    "src_lines": [
-    12495,
-    12495
+    12497,
+    12497
    ],
    "brief": {
     "identity": "The Guardian's Test, an Ashlands scenario set in a courtyard dominated by a sealed gate black with soot and old prayers, beyond which a vault waits and worthiness is tested.",
@@ -10122,7 +10123,7 @@
    "id": "ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME",
    "family": "scenario",
    "heading_id": "h-scenario-3-the-shifting-sands-of-time",
-   "flavour_block": "B12571",
+   "flavour_block": "B12573",
    "title": "Scenario 3: The Shifting Sands of Time",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10131,8 +10132,8 @@
    "flavour": "The ruin does not keep time honestly. Glyphs flare and gutter. Soot drifts uphill in the corners. Stone that bore a traveller's weight at dawn may open beneath them by noon. Relics surface when the place remembers them and sink before anyone can make a clean claim, and the Sable Watch will register whatever is carried back to Sablekeep, whether the finder wishes it registered or not.",
    "facts": {},
    "src_lines": [
-    12569,
-    12569
+    12571,
+    12571
    ],
    "brief": {
     "identity": "The Shifting Sands of Time, an Ashlands ruin that does not keep time honestly: glyphs flare, soot drifts uphill and stone opens underfoot, while relics surface and sink.",
@@ -10167,7 +10168,7 @@
    "id": "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE",
    "family": "scenario",
    "heading_id": "h-scenario-4-the-sealed-archive",
-   "flavour_block": "B12626",
+   "flavour_block": "B12628",
    "title": "Scenario 4: The Sealed Archive",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10176,8 +10177,8 @@
    "flavour": "A sealed archive lies under a fractured basilica in the dead empire's heart: tablets, scrolls, debt records, and sermons the Sable Watch would rather see burned than read. Dust chokes the corridors. Scavengers have gnawed through the newer shelves. Something older keeps the inner stacks in order, and it has waited longer than Sablekeep has stood for someone to disturb them.",
    "facts": {},
    "src_lines": [
-    12624,
-    12624
+    12626,
+    12626
    ],
    "brief": {
     "identity": "The Sealed Archive, an Ashlands scenario under a fractured basilica containing tablets, scrolls, debt records and sermons the Sable Watch would rather burn, kept in order by something older.",
@@ -10212,7 +10213,7 @@
    "id": "ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT",
    "family": "scenario",
    "heading_id": "h-scenario-5-the-reliquary-of-broken-saints",
-   "flavour_block": "B12706",
+   "flavour_block": "B12708",
    "title": "Scenario 5: The Reliquary of Broken Saints",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10221,8 +10222,8 @@
    "flavour": "Broken statues and smashed reliquaries fill the hall, and sanctified bone and silver remain in the wreckage, too holy to abandon and too valuable to leave. Sablekeep needs the relics to keep its braziers lit and its authority legal, and will pay to register every fragment. The dead here are not confused. They swore to guard these relics, and death has not released them from the oath.",
    "facts": {},
    "src_lines": [
-    12704,
-    12704
+    12706,
+    12706
    ],
    "brief": {
     "identity": "The Reliquary of Broken Saints, an Ashlands hall filled with broken statues and smashed reliquaries, its sanctified bone and silver guarded by dead who swore an oath.",
@@ -10257,7 +10258,7 @@
    "id": "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
    "family": "scenario",
    "heading_id": "h-scenario-6-the-iron-vein-vault",
-   "flavour_block": "B12780",
+   "flavour_block": "B12782",
    "title": "Scenario 6: The Iron-Vein Vault",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10266,8 +10267,8 @@
    "flavour": "The vault has been sealed for two generations. Karnessa Iron-Vein pressed their blood into the iron door when something inside began to leak through the walls, and the seal has held. Until now. Tremors along the imperial roads have cracked the outer binding, and something below is pushing. Sablekeep sends one party to reinforce the seal before whatever waits finishes its work; a rival patron sends another to open the vault and price what was sealed there. The vault does not care about either contract.",
    "facts": {},
    "src_lines": [
-    12778,
-    12778
+    12780,
+    12780
    ],
    "brief": {
     "identity": "The Iron-Vein Vault, an Ashlands vault sealed for two generations with Karnessa Iron-Vein's blood on its iron door, now cracked by tremors as something below pushes.",
@@ -10302,7 +10303,7 @@
    "id": "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
    "family": "scenario",
    "heading_id": "h-scenario-1-the-crystal-harvest-intro",
-   "flavour_block": "B12881",
+   "flavour_block": "B12883",
    "title": "Scenario 1: The Crystal Harvest",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10311,8 +10312,8 @@
    "flavour": "A new cavern has opened beneath the broken mountains, and its crystal veins pulse with cold light and drag iron filings across the floor. Deepwarden's forges would trade a season of grain for a vein this clean. The prospectors who found it have already lied about its location, and both parties arrive before the lie can harden into a map.",
    "facts": {},
    "src_lines": [
-    12879,
-    12879
+    12881,
+    12881
    ],
    "brief": {
     "identity": "The Crystal Harvest, an Undermarches scenario in a new cavern beneath the broken mountains whose crystal veins pulse with cold light and drag iron filings across the floor.",
@@ -10348,7 +10349,7 @@
    "id": "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING",
    "family": "scenario",
    "heading_id": "h-scenario-2-the-chasm-crossing",
-   "flavour_block": "B12947",
+   "flavour_block": "B12949",
    "title": "Scenario 2: The Chasm Crossing",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10357,8 +10358,8 @@
    "flavour": "A chasm splits the caverns like a wound in the world, crossed only by narrow ledges in broken pieces. A Survey Map must reach the Lantern Council before Deepwarden's rivals can claim the new diggings. Things cling to the dark stone below the ledges and wait for a hand to shake. The Council wants the map. It does not ask what the things want.",
    "facts": {},
    "src_lines": [
-    12945,
-    12945
+    12947,
+    12947
    ],
    "brief": {
     "identity": "The Chasm Crossing, an Undermarches scenario where a chasm splits the caverns and is crossed only by narrow broken ledges, with things clinging to the stone below.",
@@ -10393,7 +10394,7 @@
    "id": "ART-SCE-SCENARIO-3-THE-QUAKE",
    "family": "scenario",
    "heading_id": "h-scenario-3-the-quake",
-   "flavour_block": "B13017",
+   "flavour_block": "B13019",
    "title": "Scenario 3: The Quake",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10402,8 +10403,8 @@
    "flavour": "The old tunnels shook themselves open before dawn, and gemstone veins glimmer where the support beams snapped. Aftershocks still run through the stone. Deepwarden wants the gems hauled out before the shafts settle, and the usual exits are already blocked. The Dark has noticed the new air, and it is not the only thing moving toward it.",
    "facts": {},
    "src_lines": [
-    13015,
-    13015
+    13017,
+    13017
    ],
    "brief": {
     "identity": "The Quake, an Undermarches scenario in old mining tunnels that shook themselves open before dawn, with gemstone veins glimmering where support beams snapped and the exits blocked.",
@@ -10438,7 +10439,7 @@
    "id": "ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID",
    "family": "scenario",
    "heading_id": "h-scenario-4-the-undermarches-outpost-raid",
-   "flavour_block": "B13082",
+   "flavour_block": "B13084",
    "title": "Scenario 4: The Undermarches Outpost Raid",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10447,8 +10448,8 @@
    "flavour": "Scouts found an outpost below an old road shrine and did not stay to count the banners. Plans for a surface incursion lie inside, and so does the officer who drew them. Deepwarden wants the plans more than it wants the credit, and two parties descend under separate seals, each ordered to take the plans and claim the victory before the other can sell it.",
    "facts": {},
    "src_lines": [
-    13080,
-    13080
+    13082,
+    13082
    ],
    "brief": {
     "identity": "The Undermarches Outpost Raid, a scenario where an outpost lies below an old road shrine, holding plans for a surface incursion and the officer who drew them.",
@@ -10483,7 +10484,7 @@
    "id": "ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE",
    "family": "scenario",
    "heading_id": "h-scenario-5-the-shadowed-under-passage",
-   "flavour_block": "B13189",
+   "flavour_block": "B13191",
    "title": "Scenario 5: The Shadowed Under Passage",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10492,8 +10493,8 @@
    "flavour": "This passage has been touched by a colder dark than stone can explain. Breath sounds wrong here. The shadows lie against the light instead of with it. A Heart of Shadow waits below, prized by those who bargain with the deep elves and feared by anyone who has read Deepwarden's old warnings. The Lantern Council would rather it stayed lost. Someone with coin disagrees.",
    "facts": {},
    "src_lines": [
-    13187,
-    13187
+    13189,
+    13189
    ],
    "brief": {
     "identity": "The Shadowed Under Passage, an Undermarches passage touched by a colder dark than stone can explain, where shadows lie against the light and a Heart of Shadow waits below.",
@@ -10527,7 +10528,7 @@
    "id": "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
    "family": "scenario",
    "heading_id": "h-scenario-6-the-ritual-of-shadow-binding",
-   "flavour_block": "B13262",
+   "flavour_block": "B13264",
    "title": "Scenario 6: The Ritual of Shadow Binding",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10536,8 +10537,8 @@
    "flavour": "In a cavern without honest light, deep elf priests have drawn a binding circle around something that answers from the dark below the Dark. One patron in Deepwarden wants the rite broken before it finishes. Another wants the circle lifted out intact, sigils and all, and will not say for whom. The thing inside the circle has not been consulted.",
    "facts": {},
    "src_lines": [
-    13260,
-    13260
+    13262,
+    13262
    ],
    "brief": {
     "identity": "The Ritual of Shadow Binding, an Undermarches cavern without honest light where deep elf priests have drawn a binding circle around something answering from below the Dark.",
@@ -10573,7 +10574,7 @@
    "id": "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
    "family": "scenario",
    "heading_id": "h-scenario-1-plunder-of-the-frozen-ruins-intro",
-   "flavour_block": "B13368",
+   "flavour_block": "B13370",
    "title": "Scenario 1: Plunder of the Frozen Ruins",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10582,8 +10583,8 @@
    "flavour": "The Pale City is littered with magical treasure because its people froze too quickly to hide it, and Hearthhold has lived for generations by thawing out what they left. A promising ruin has cracked open under the snow. Both parties enter before the frozen citizens notice another room has been disturbed, because the citizens do notice, eventually, and they do not forgive trespass.",
    "facts": {},
    "src_lines": [
-    13366,
-    13366
+    13368,
+    13368
    ],
    "brief": {
     "identity": "Plunder of the Frozen Ruins, a Pale City scenario where a promising ruin has cracked open under the snow and Hearthhold parties raid the treasures of citizens who froze too fast to hide them.",
@@ -10619,7 +10620,7 @@
    "id": "ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA",
    "family": "scenario",
    "heading_id": "h-scenario-2-the-alchemists-frozen-laboratory",
-   "flavour_block": "B13420",
+   "flavour_block": "B13422",
    "title": "Scenario 2: The Alchemist's Frozen Laboratory",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10628,8 +10629,8 @@
    "flavour": "In the ice-locked Silent District, north along the road out of Hearthhold, an alchemist's laboratory remains sealed under frost. The formula inside might be worth a village, and Hearthhold burns through everything it owns just to stay warm. The cold has preserved the benches, the bottles, the last mistakes, and the guardians left to watch them. Some things in that laboratory were never meant to thaw.",
    "facts": {},
    "src_lines": [
-    13418,
-    13418
+    13420,
+    13420
    ],
    "brief": {
     "identity": "The Alchemist's Frozen Laboratory, a Pale City scenario in the ice-locked Silent District where an alchemist's laboratory remains sealed under frost with benches, bottles and guardians preserved.",
@@ -10663,7 +10664,7 @@
    "id": "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM",
    "family": "scenario",
    "heading_id": "h-scenario-3-the-haunted-mausoleum",
-   "flavour_block": "B13490",
+   "flavour_block": "B13492",
    "title": "Scenario 3: The Haunted Mausoleum",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10672,8 +10673,8 @@
    "flavour": "The mausoleum stands under the ice with its doors still sealed, and a noble family of the White Court rests below, or pretends to. Their heirlooms remain in the crypt, polished by cold and watched by names too proud to fade. Hearthhold needs whatever can be sold to buy another winter's fuel. The Court does not recognize the sale.",
    "facts": {},
    "src_lines": [
-    13488,
-    13488
+    13490,
+    13490
    ],
    "brief": {
     "identity": "The Haunted Mausoleum, a Pale City scenario of a noble White Court family's mausoleum under the ice, doors still sealed, heirlooms polished by cold and watched by names too proud to fade.",
@@ -10708,7 +10709,7 @@
    "id": "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE",
    "family": "scenario",
    "heading_id": "h-scenario-4-the-clockwork-menagerie",
-   "flavour_block": "B13559",
+   "flavour_block": "B13561",
    "title": "Scenario 4: The Clockwork Menagerie",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10717,8 +10718,8 @@
    "flavour": "A Deepwarden tinker came north chasing a commission and froze here with the rest of the city, and the workshop is full of brass legs, biting gears, and small minds wound tight around old orders. The tinker is dust. The orders remain. Hearthhold's fire-watch wants the intact cores and the notebooks explaining how not to die retrieving them, because a Bastion this poor cannot leave brass that still moves.",
    "facts": {},
    "src_lines": [
-    13557,
-    13557
+    13559,
+    13559
    ],
    "brief": {
     "identity": "The Clockwork Menagerie, a Pale City scenario in a frozen Deepwarden tinker's workshop full of brass legs, biting gears and small minds wound tight around old orders.",
@@ -10753,7 +10754,7 @@
    "id": "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
    "family": "scenario",
    "heading_id": "h-scenario-5-the-ice-wyrms-hoard",
-   "flavour_block": "B13619",
+   "flavour_block": "B13621",
    "title": "Scenario 5: The Ice Wyrm's Hoard",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10762,8 +10763,8 @@
    "flavour": "The old stories put jewels and gold in a frozen cavern beneath the north road out of Hearthhold, and a wyrm coiled on top of them whose breath can stop a heart inside its own armour. Hearthhold needs the gold more than it fears the breath, which is the kind of arithmetic only the poorest Bastion does out loud. The second part of the story has never discouraged the first kind of listener.",
    "facts": {},
    "src_lines": [
-    13617,
-    13617
+    13619,
+    13619
    ],
    "brief": {
     "identity": "The Ice Wyrm's Hoard, a Pale City scenario of a frozen cavern beneath the north road out of Hearthhold holding jewels and gold with a wyrm coiled upon it.",
@@ -10798,7 +10799,7 @@
    "id": "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT",
    "family": "scenario",
    "heading_id": "h-scenario-6-the-icebound-court",
-   "flavour_block": "B13695",
+   "flavour_block": "B13697",
    "title": "Scenario 6: The Icebound Court",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10807,8 +10808,8 @@
    "flavour": "An ice-bound court still convenes in a sanctum of blue glass and frozen banners, north of every fire Hearthhold keeps lit. Its ruler is the Frost Bailiff Magistrate, who keeps bound spirits and carved servants close and passes sentences that were old before Hearthhold was founded. At the centre of the chamber lies the Heartfrost Shard, cold enough to make breath sound like prayer. Hearthhold wants the Shard. The Magistrate has not adjourned.",
    "facts": {},
    "src_lines": [
-    13693,
-    13693
+    13695,
+    13695
    ],
    "brief": {
     "identity": "The Icebound Court, a Pale City sanctum of blue glass and frozen banners where the Frost Bailiff Magistrate still sits and the Heartfrost Shard lies at the centre.",
@@ -10842,7 +10843,7 @@
    "id": "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS",
    "family": "scenario",
    "heading_id": "h-scenario-1-the-oasis-raiders-intro",
-   "flavour_block": "B13773",
+   "flavour_block": "B13775",
    "title": "Scenario 1: The Oasis Raiders",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10851,8 +10852,8 @@
    "flavour": "A vital oasis south of the mountain passes has changed hands again, and raiders hold the wells, the shade, and the people too slow to flee. Saltspire sells water as sovereignty, and an oasis it does not control is a debt it cannot collect. One contract from the Well-Keepers says liberation. A rival contract says seizure. The water will not ask which seal is righteous.",
    "facts": {},
    "src_lines": [
-    13771,
-    13771
+    13773,
+    13773
    ],
    "brief": {
     "identity": "The Oasis Raiders, a Sun-Drowned scenario in which raiders hold a vital oasis south of the mountain passes: its wells, its shade and the people too slow to flee.",
@@ -10888,7 +10889,7 @@
    "id": "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE",
    "family": "scenario",
    "heading_id": "h-scenario-2-the-cinder-lords-lost-brazier",
-   "flavour_block": "B13840",
+   "flavour_block": "B13842",
    "title": "Scenario 2: The Cinder Lord's Lost Brazier",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10897,8 +10898,8 @@
    "flavour": "A brass brazier lies somewhere in the scorched ruins, still holding the ember of a bound Cinder Lord. The relic promises power to the hand that completes the binding, and Saltspire knows more about binding infernal things to contracts than it admits to anyone. One patron wants the brazier brought in quietly. Another wants the binding finished out here. Promises made by fire should be read twice.",
    "facts": {},
    "src_lines": [
-    13838,
-    13838
+    13840,
+    13840
    ],
    "brief": {
     "identity": "The Cinder Lord's Lost Brazier, a Sun-Drowned scenario in scorched ruins where a brass brazier holds the ember of a bound Cinder Lord, to be found through searching ancient pillars.",
@@ -10934,7 +10935,7 @@
    "id": "ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS",
    "family": "scenario",
    "heading_id": "h-scenario-3-tomb-of-the-sunken-kings",
-   "flavour_block": "B13905",
+   "flavour_block": "B13907",
    "title": "Scenario 3: Tomb of the Sunken Kings",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10943,8 +10944,8 @@
    "flavour": "The sand has drawn back from a tomb complex of the priest-kings, and gilded chambers show through the heat shimmer. The old hazards remain patient, and so do the guardians. Saltspire will buy whatever is carried out and ask no awkward questions about how, because plausible innocence is worth as much to it as gold. Nothing buried with a priest-king expects to be taken politely.",
    "facts": {},
    "src_lines": [
-    13903,
-    13903
+    13905,
+    13905
    ],
    "brief": {
     "identity": "Tomb of the Sunken Kings, a Sun-Drowned scenario in which the sand has drawn back from a priest-king tomb complex and gilded chambers show through the heat shimmer.",
@@ -10980,7 +10981,7 @@
    "id": "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR",
    "family": "scenario",
    "heading_id": "h-scenario-4-the-sandwyrms-lair",
-   "flavour_block": "B13973",
+   "flavour_block": "B13975",
    "title": "Scenario 4: The Sandwyrm's Lair",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -10989,8 +10990,8 @@
    "flavour": "Nomad legends speak of a vast shape beneath the dunes south of the passes, and a gullet lined with the treasure of everything it has swallowed. The nomads tell it as a warning. Saltspire's patrons hear it as an inventory and pay accordingly. The dunes do not distinguish between the two kinds of listener.",
    "facts": {},
    "src_lines": [
-    13971,
-    13971
+    13973,
+    13973
    ],
    "brief": {
     "identity": "The Sandwyrm's Lair, a Sun-Drowned scenario in a broad basin of loose sand south of the passes where nomad legend places a vast shape beneath the dunes.",
@@ -11025,7 +11026,7 @@
    "id": "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA",
    "family": "scenario",
    "heading_id": "h-scenario-5-the-cursed-colossus-of-the-waste",
-   "flavour_block": "B14035",
+   "flavour_block": "B14037",
    "title": "Scenario 5: The Cursed Colossus of the Waste",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -11034,8 +11035,8 @@
    "flavour": "A colossal statue of a priest-king rises from the sand, broken at the waist and still angry, with a Heartstone lodged in its hollow chest. Fortune-hunters call it a prize. Grave-robbers know better and come anyway, and Saltspire pays the survivors of either trade the same rate. The waste keeps the ones who do not survive.",
    "facts": {},
    "src_lines": [
-    14033,
-    14033
+    14035,
+    14035
    ],
    "brief": {
     "identity": "The Cursed Colossus of the Waste, a Sun-Drowned scenario centred on a colossal priest-king statue broken at the waist, still angry, with a Heartstone lodged in its hollow chest.",
@@ -11069,7 +11070,7 @@
    "id": "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR",
    "family": "scenario",
    "heading_id": "h-scenario-6-the-cinder-lords-obsidian-prison",
-   "flavour_block": "B14110",
+   "flavour_block": "B14112",
    "title": "Scenario 6: The Cinder Lord's Obsidian Prison",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -11078,8 +11079,8 @@
    "flavour": "An obsidian dais burns without fuel at the centre of the ruin, and a Cinder Lord strains against the binding that holds it. Saltspire's Well-Keepers wrote bindings like this one, back when the desert still kept its own law, and one of them wants the prison strengthened before it fails. A rival patron wants it broken and calls that ambition. The Cinder Lord calls it overdue.",
    "facts": {},
    "src_lines": [
-    14108,
-    14108
+    14110,
+    14110
    ],
    "brief": {
     "identity": "The Cinder Lord's Obsidian Prison, a Sun-Drowned scenario of an obsidian dais burning without fuel at the centre of a ruin, with a Cinder Lord straining against its binding.",
@@ -11114,7 +11115,7 @@
    "id": "ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT",
    "family": "scenario",
    "heading_id": "h-scenario-1-the-reliquary-of-edrava-salttide-intro",
-   "flavour_block": "B14199",
+   "flavour_block": "B14201",
    "title": "Scenario 1: The Reliquary of Edrava Salttide",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -11123,8 +11124,8 @@
    "flavour": "Recent floods opened a grave-house that The Mire had kept sealed for two hundred years. Edrava Salttide, the salt-coast's last great toll-lord, who fed their enemies to the tide and married four pirate-kings in succession, was laid here with a reliquary no Bastion will admit to wanting and every Bastion has quietly sent parties to find. Reedmarch knew where it lay all along and sold the location twice. Both parties enter before the dead gather the strength to close the door again. The water smells of salt. There is no ocean for eighty miles.",
    "facts": {},
    "src_lines": [
-    14197,
-    14197
+    14199,
+    14199
    ],
    "brief": {
     "identity": "The Reliquary of Edrava Salttide, a Mire scenario at a Sunken Barrow, a grave-house sealed for two hundred years until recent floods opened it, holding the reliquary of the salt-coast's last great toll-lord.",
@@ -11160,7 +11161,7 @@
    "id": "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER",
    "family": "scenario",
    "heading_id": "h-scenario-2-the-lizardfolks-stolen-offerings",
-   "flavour_block": "B14270",
+   "flavour_block": "B14272",
    "title": "Scenario 2: The Lizardfolk's Stolen Offerings",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -11169,8 +11170,8 @@
    "flavour": "A lizardfolk shrine in the deep fen was raided before dawn, and the Sunstone Amulet and the offering-piles were dragged off into the reeds. The lizardfolk temple-guards want it back, and they remember faces. One writ names the amulet sacred and to be returned. Another names the silver recoverable property, and Reedmarch will broker either errand for its usual cut of silence.",
    "facts": {},
    "src_lines": [
-    14268,
-    14268
+    14270,
+    14270
    ],
    "brief": {
     "identity": "The Lizardfolk's Stolen Offerings, a Mire scenario at a deep-fen lizardfolk shrine encampment raided before dawn, its Sunstone Amulet and offering piles dragged off into the reeds.",
@@ -11180,13 +11181,13 @@
      "Rope walkways slung between posts over shallow pools",
      "Overturned offering baskets, scattered coins and a smashed clay bowl",
      "Broad drag marks through the mud into tall reeds",
-     "Lizardfolk Scale-Shaman with a feathered staff and troglodyte guards with spears, reptilian crests and tails",
+     "Lizardfolk Scale-Shaman with a feathered staff, with slime-streaked Swamp Goblins in reed canoes and on the walkways, small and furtive",
      "Shallow pools with a few submerged snouts",
      "Fen mist and a pale line of dawn"
     ],
     "activity": [
      "The Scale-Shaman examines an empty plinth",
-     "Guards sniff and scan the reeds",
+     "Swamp goblins lurk among the reed screens with blowpipes",
      "Two tiny thieves hide in the reeds at the far edge"
     ],
     "atmosphere": "Furious, watchful silence before dawn.",
@@ -11194,20 +11195,22 @@
      "Lizardfolk drawn as grounded reptilian people, not cartoon",
      "Not the Titan fen or the barrow",
      "No readable idol markings",
-     "No glow around the amulet (absent)"
+     "No glow around the amulet (absent)",
+     "No troglodytes: only Mire creatures"
     ],
     "sources": [
      "10.4 Scenario 2: The Lizardfolk's Stolen Offerings (Mire)",
-     "1.3.5 The old peoples and border powers"
+     "1.3.5 The old peoples and border powers",
+     "RC488: Swamp Goblins replace Troglodytes"
     ]
    },
-   "spec_sha256": "9fc1e9f5fa047908d24fe1a0eb2347907ac92b59426838f9f199f05629cc0946"
+   "spec_sha256": "6a8b07889034565d9b5b62bd60d8eec9c9b8643663a2f50fd24afb9c14db8ce8"
   },
   {
    "id": "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN",
    "family": "scenario",
    "heading_id": "h-scenario-3-the-mire-titans-fen",
-   "flavour_block": "B14345",
+   "flavour_block": "B14347",
    "title": "Scenario 3: The Mire Titan's Fen",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -11216,8 +11219,8 @@
    "flavour": "A Mire Titan has claimed the bubbling fen, and glimmering geodes lie scattered through its territory like bait, because that is more or less what they are. Hunters arrive with hooks, ropes, and prayers. Thieves arrive lighter and usually leave that way. Reedmarch wants the geodes and does not much care which trade brings them in, so long as the fen stays quiet about the rest.",
    "facts": {},
    "src_lines": [
-    14343,
-    14343
+    14345,
+    14345
    ],
    "brief": {
     "identity": "The Mire Titan's Fen, a Mire scenario of a bubbling fen where glimmering geodes lie scattered through a Mire Titan's territory like bait.",
@@ -11252,7 +11255,7 @@
    "id": "ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD",
    "family": "scenario",
    "heading_id": "h-scenario-4-the-blighted-heartwood",
-   "flavour_block": "B14420",
+   "flavour_block": "B14422",
    "title": "Scenario 4: The Blighted Heartwood",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -11261,8 +11264,8 @@
    "flavour": "Blight has wrapped the swamp growth around a pulsing Heartwood that beats under the bark like a buried organ. One patron wants it destroyed before the rot spreads to the ferry-roads Reedmarch lives on. Another wants its corruption bottled and carried off, and neither wants to be the one holding it on the way home. The Marsh Council would prefer the whole matter stay unspoken.",
    "facts": {},
    "src_lines": [
-    14418,
-    14418
+    14420,
+    14420
    ],
    "brief": {
     "identity": "The Blighted Heartwood, a Mire scenario in which blight has wrapped swamp growth around a pulsing Heartwood that beats under the bark like a buried organ.",
@@ -11297,7 +11300,7 @@
    "id": "ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING",
    "family": "scenario",
    "heading_id": "h-scenario-5-salttides-reckoning",
-   "flavour_block": "B14499",
+   "flavour_block": "B14501",
    "title": "Scenario 5: Salttide's Reckoning",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -11306,8 +11309,8 @@
    "flavour": "A curse lies over the sacred island like oil on water. Edrava Salttide has made a ritual of the place, the same ritual they once used to curse the harbours that refused their ships, now turned on the living who entered The Mire without paying the toll. The reeds bend toward the island. The water smells of brine, this far from any sea. Reedmarch sent one party to break the working, and let a rival sell the other a contract whose small print it has not read.",
    "facts": {},
    "src_lines": [
-    14497,
-    14497
+    14499,
+    14499
    ],
    "brief": {
     "identity": "Salttide's Reckoning, a Mire scenario of a sacred island cursed like oil on water, where Edrava Salttide has made a ritual of the place and turns it on the living who entered without paying the toll.",
@@ -11342,7 +11345,7 @@
    "id": "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
    "family": "scenario",
    "heading_id": "h-scenario-6-the-serpents-sunken-hoard",
-   "flavour_block": "B14581",
+   "flavour_block": "B14583",
    "title": "Scenario 6: The Serpent's Sunken Hoard",
    "context": [
     "10.4 Core Scenario Outlines",
@@ -11351,8 +11354,8 @@
    "flavour": "A flooded sinkhole has opened in the black water, and something ancient coils below it, older than Reedmarch's oldest ferry-family. Its hide, its hoard, and its death would each command a price in a different market. The water is dark enough to hide which one is being hunted, and Reedmarch prefers it that way. Whatever is down there has paid the toll longer than anyone alive, and does not intend to stop now.",
    "facts": {},
    "src_lines": [
-    14579,
-    14579
+    14581,
+    14581
    ],
    "brief": {
     "identity": "The Serpent's Sunken Hoard, a Mire scenario of a flooded sinkhole opened in the black water, where something ancient coils below over a hoard.",
@@ -11386,7 +11389,7 @@
    "id": "ART-CAM-11-1-CAMPAIGN-OVERVIEW",
    "family": "campaign",
    "heading_id": "h-111-campaign-overview",
-   "flavour_block": "B14989",
+   "flavour_block": "B14991",
    "title": "11.1 Campaign Overview",
    "context": [
     "11. Campaign Play"
@@ -11394,8 +11397,8 @@
    "flavour": "A Stronghold is not a castle in the noble sense. No ancient bloodline sanctifies it. No bard remembers its founding. It is a claim driven into a dying world with coin, fear, salvage, and stubborn labour. Its stones come from ruined shrines, abandoned watch-keeps, broken bridges, and walls that failed other people first. Its gates are paid for with burial gold, bounty coin, chapel debt, and the last wages of the dead.",
    "facts": {},
    "src_lines": [
-    14987,
-    14987
+    14989,
+    14989
    ],
    "direction": "A stronghold under construction from salvage: workers hauling shrine stones and broken bridge spans up a ramp, scaffolding around a half-built keep.",
    "brief": {
@@ -11432,7 +11435,7 @@
    "id": "ART-CAM-THE-VAULT",
    "family": "campaign",
    "heading_id": "h-the-vault",
-   "flavour_block": "B15614",
+   "flavour_block": "B15616",
    "title": "The Vault",
    "context": [
     "11. Campaign Play",
@@ -11441,8 +11444,8 @@
    "flavour": "The Vault is not a treasury. It is a sealed confession of greed, iron-bound and watched by clerks who sleep in shifts. They count each coin as if the dead might come back to collect.",
    "facts": {},
    "src_lines": [
-    15612,
-    15612
+    15614,
+    15614
    ],
    "direction": "A low iron-bound vault room; a clerk dozing on a stool beside chests and coin scales while a second clerk counts by candle.",
    "brief": {
@@ -11478,7 +11481,7 @@
    "id": "ART-CAM-THE-BARRACKS",
    "family": "campaign",
    "heading_id": "h-the-barracks",
-   "flavour_block": "B15624",
+   "flavour_block": "B15626",
    "title": "The Barracks",
    "context": [
     "11. Campaign Play",
@@ -11487,8 +11490,8 @@
    "flavour": "The Barracks smell of straw, old sweat, damp wool, and boiled leather. Names are carved into the beams by people who expected to return. Few are still spoken.",
    "facts": {},
    "src_lines": [
-    15622,
-    15622
+    15624,
+    15624
    ],
    "direction": "Rows of straw bunks under heavy beams carved with names; damp wool and boots hung to dry; one empty bunk with a helmet left on it.",
    "brief": {
@@ -11523,7 +11526,7 @@
    "id": "ART-CAM-THE-ARMOURY",
    "family": "campaign",
    "heading_id": "h-the-armoury",
-   "flavour_block": "B15634",
+   "flavour_block": "B15636",
    "title": "The Armoury",
    "context": [
     "11. Campaign Play",
@@ -11532,8 +11535,8 @@
    "flavour": "The Armoury smells of oil, wet leather, coal smoke, and old violence. Its walls hold blades recovered from drowned shrines, shields hammered flat after dragon-fire, and helms whose former owners are better left unnamed.",
    "facts": {},
    "src_lines": [
-    15632,
-    15632
+    15634,
+    15634
    ],
    "direction": "Racks of salvaged arms: blades from drowned shrines, a shield hammered flat by dragon-fire, ownerless helms on pegs, an oil-cloth bench.",
    "brief": {
@@ -11566,7 +11569,7 @@
    "id": "ART-CAM-THE-APOTHECARY",
    "family": "campaign",
    "heading_id": "h-the-apothecary",
-   "flavour_block": "B15644",
+   "flavour_block": "B15646",
    "title": "The Apothecary",
    "context": [
     "11. Campaign Play",
@@ -11575,8 +11578,8 @@
    "flavour": "The Apothecary is built around heat, glass, knives, bone saws, and the bitter stink of herbs that should not grow in clean soil. Its shelves hold tinctures from The Mire, salts from the Sun-Drowned, and poultices learned from surgeons paid in secrets.",
    "facts": {},
    "src_lines": [
-    15642,
-    15642
+    15644,
+    15644
    ],
    "direction": "A cramped workroom of glass alembics over a brazier, bone saws and knives on a cloth, shelves of labelled-less jars and hanging bitter herbs.",
    "brief": {
@@ -11611,7 +11614,7 @@
    "id": "ART-CAM-THE-OUTER-WALLS",
    "family": "campaign",
    "heading_id": "h-the-outer-walls",
-   "flavour_block": "B15654",
+   "flavour_block": "B15656",
    "title": "The Outer Walls",
    "context": [
     "11. Campaign Play",
@@ -11620,8 +11623,8 @@
    "flavour": "The Outer Walls declare that the dark must work harder. Stone, timber, ditch, spike, and warding nail stand between the party's claim and the things that circle after sundown.",
    "facts": {},
    "src_lines": [
-    15652,
-    15652
+    15654,
+    15654
    ],
    "direction": "The stronghold's ditch, spiked palisade and stone wall at night, warding nails driven into the timbers, a lone sentry with a torch on the walkway.",
    "brief": {
@@ -11656,7 +11659,7 @@
    "id": "ART-CAM-THE-ARCANUM",
    "family": "campaign",
    "heading_id": "h-the-arcanum",
-   "flavour_block": "B15664",
+   "flavour_block": "B15666",
    "title": "The Arcanum",
    "context": [
     "11. Campaign Play",
@@ -11665,8 +11668,8 @@
    "flavour": "The Arcanum rises too thin and too tall. Its upper windows burn at hours when honest fires should be dead. Brass instruments turn toward storms, old constellations, and places where the sky has not healed.",
    "facts": {},
    "src_lines": [
-    15662,
-    15662
+    15664,
+    15664
    ],
    "direction": "A thin, too-tall tower against a night sky, upper windows burning, brass instruments on its roof turned toward a storm.",
    "brief": {
@@ -11699,7 +11702,7 @@
    "id": "ART-CAM-THE-STRONGHOLD-CHAPEL",
    "family": "campaign",
    "heading_id": "h-the-stronghold-chapel",
-   "flavour_block": "B15674",
+   "flavour_block": "B15676",
    "title": "The Stronghold Chapel",
    "context": [
     "11. Campaign Play",
@@ -11708,8 +11711,8 @@
    "flavour": "The Chapel is small, cold, and crowded with votive offerings from those who survived by inches. Its saints are chipped. Its relics are suspect. Its candles burn low even when no wind enters.",
    "facts": {},
    "src_lines": [
-    15672,
-    15672
+    15674,
+    15674
    ],
    "direction": "A small cold chapel crowded with votive offerings, chipped saint statues and low candles, a single mourner kneeling.",
    "brief": {
@@ -11744,7 +11747,7 @@
    "id": "ART-CAM-THE-WAR-ROOM",
    "family": "campaign",
    "heading_id": "h-the-war-room",
-   "flavour_block": "B15684",
+   "flavour_block": "B15686",
    "title": "The War Room",
    "context": [
     "11. Campaign Play",
@@ -11753,8 +11756,8 @@
    "flavour": "The War Room is where contracts are signed, debts are denied, and maps are stained. Its hearth burns beneath banners taken from ruins, enemies, and dead patrons.",
    "facts": {},
    "src_lines": [
-    15682,
-    15682
+    15684,
+    15684
    ],
    "direction": "A heavy table under captured banners, stained maps pinned with knives, a contract and quill, a hearth burning behind.",
    "brief": {
@@ -11787,7 +11790,7 @@
    "id": "ART-CAM-THE-EXPEDITION-HALL",
    "family": "campaign",
    "heading_id": "h-the-expedition-hall",
-   "flavour_block": "B15694",
+   "flavour_block": "B15696",
    "title": "The Expedition Hall",
    "context": [
     "11. Campaign Play",
@@ -11796,8 +11799,8 @@
    "flavour": "The Expedition Hall is packed earth, split posts, blunted steel, blood in the mud, and shouted correction from veterans with no patience for heroic stupidity. New recruits learn quickly that courage is not a defence.",
    "facts": {},
    "src_lines": [
-    15692,
-    15692
+    15694,
+    15694
    ],
    "direction": "A packed-earth training yard inside split-post walls: a scarred veteran correcting a recruit's guard, blunted weapons on a rack, mud underfoot.",
    "brief": {
@@ -11833,7 +11836,7 @@
    "id": "ART-CAM-THE-UNDERCROFT",
    "family": "campaign",
    "heading_id": "h-the-undercroft",
-   "flavour_block": "B15704",
+   "flavour_block": "B15706",
    "title": "The Undercroft",
    "context": [
     "11. Campaign Play",
@@ -11842,8 +11845,8 @@
    "flavour": "The Undercroft is a warren of cellars, sealed drains, hidden doors, and passages older than the Stronghold above it. Smugglers, informants, and quiet killers all find reasons to know its shape.",
    "facts": {},
    "src_lines": [
-    15702,
-    15702
+    15704,
+    15704
    ],
    "direction": "A vaulted cellar warren lit by one lantern, a hidden door ajar, a cloaked figure slipping into an older passage below.",
    "brief": {
@@ -11878,7 +11881,7 @@
    "id": "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
    "family": "scenario",
    "heading_id": "h-a4-quickstart-scenario-the-broken-courier",
-   "flavour_block": "B16174",
+   "flavour_block": "B16176",
    "title": "A.4 Quickstart Scenario: The Broken Courier",
    "context": [
     "Appendix A. Learn to Play"
@@ -11886,8 +11889,8 @@
    "flavour": "A royal courier was cut down on the old road. The satchel still lies beside the body, and a small lockbox has been thrown clear into the brush. Both parties race to seize the dispatches before wolves or rivals claim them.",
    "facts": {},
    "src_lines": [
-    16172,
-    16172
+    16174,
+    16174
    ],
    "brief": {
     "identity": "The Broken Courier, the Appendix A quickstart scenario in which a royal courier was cut down on the old road and two small parties race for the dispatch satchel before wolves or rivals claim it.",

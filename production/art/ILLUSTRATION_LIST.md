@@ -2951,27 +2951,27 @@ Specific pitfalls to avoid:
 
 ```text
 ORC - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Orc, Greenmark Soldier, medium: a broad, disciplined, grey-skinned raider with lower tusks and a greataxe, a warband member, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Orc, Greenmark Soldier, medium: a broad, disciplined, grey-skinned raider with lower tusks, armed with battleaxe and shield, a warband member that holds formation, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
-Full figure in three-quarter view mid-snarl, advancing with a heavy notched cleaver-like greataxe held across the body, trophies swinging from belt.
-An orc raider of the Greenmark with crude trophies and a notched greataxe, mid-snarl, nothing like a sworn hireling.
+Full figure in three-quarter view mid-snarl, advancing behind a heavy round shield with a notched battleaxe raised in the other hand, trophies swinging from the belt.
+An orc raider of the Greenmark with crude trophies, a notched battleaxe and a battered round shield, mid-snarl, nothing like a sworn hireling.
 Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Broad as a doorway, grey skin, heavy jaw, lower tusks jutting upward
-* Greataxe with a broad, notched, cleaver-like blade
+* One-handed battleaxe with a broad notched blade
 * Crude trophies: bone strings, a skull and teeth, tied at the belt and shoulder
-* Layered hide and iron plate scraps, battered shield strapped on back
+* Layered hide and iron plate scraps; a heavy iron-rimmed round shield on the forearm, battered and dented
 * Scarred knuckles and brow
 * Fierce open-mouthed snarl
 * Burnt steading gate behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Broad as a doorway and built around a greataxe, the orc is the Greenmark's most disciplined raider, grey-skinned and heavy-jawed, its lower tusks jutting above a wall of shields. Where beastmen break, orcs hold their formation. A warband takes a steading methodically, gate by gate, and savours the hard fight more than the loot it wins."
+"Broad as a doorway and armed with battleaxe and shield, the orc is the Greenmark's most disciplined raider, grey-skinned and heavy-jawed, its lower tusks jutting above a wall of shields. Where beastmen break, orcs hold their formation. A warband takes a steading methodically, gate by gate, and savours the hard fight more than the loot it wins."
 Brutal confidence, a warband's anvil.
 Specific pitfalls to avoid:
 * Not the Orc ancestry hero: no tabard, no composed bearing, no clean armour.
 * Not a Bugbear (shaggy, long-armed).
-* Weapon is a greataxe, not a sword.
+* One-handed battleaxe and a shield on the arm: no greataxe, no sword.
 ```
 
 ### 9. Bugbear
@@ -3543,13 +3543,13 @@ Specific pitfalls to avoid:
 
 ```text
 UNDEAD CHAMPION - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Champion, Ashlands Soldier, medium: a slab of dead muscle raised from the largest corpses, wielding a heavy great-axe built of fused bone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Champion, Ashlands Soldier, medium: a slab of dead muscle raised from the largest corpses, swinging a two-handed war maul of fused bone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
-Three-quarter view of the champion trudging forward, great-axe dragging low and then rising across the body.
+Three-quarter view of the champion trudging forward, the war maul hauled back over one shoulder in both hands, ready to fall with siege-engine weight.
 Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Huge, bloated shoulders and a thick neck with dead pale skin
-* Great-axe with a head and haft built from fused bone and iron
+* Two-handed war maul whose massive head is a knot of fused bone bound in iron bands on a long haft
 * Scraps of rusted plate on shoulders and forearms
 * Bald scarred head with sunken eyes
 * Chains and rusted rivets across the chest
@@ -3562,7 +3562,7 @@ Slow, crushing inevitability.
 Specific pitfalls to avoid:
 * Not an Ogre or a living Fighter: it is dead, pale and plated in scraps.
 * Not a Giant Skeleton: this has flesh.
-* Do not hold a maul or hammer: the stat block gives a great-axe.
+* Weapon is a two-handed war maul of fused bone: no axe blade.
 ```
 
 ### 30. Gargoyle
@@ -3599,21 +3599,21 @@ Specific pitfalls to avoid:
 
 ```text
 STONE SENTINEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Stone Sentinel, Ashlands Brute, medium: a faceless granite construct that grinds forward with a giant stone sword and cannot be pushed, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Stone Sentinel, Ashlands Brute, medium: a faceless granite construct of the old empire that hews with a greatsword of carved stone and cannot be pushed, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
-Three-quarter view of the sentinel striding forward through a ruined hall, giant stone blade slab swung low in one blocky fist.
+Three-quarter view of the sentinel striding forward through a ruined hall, a two-handed greatsword of carved stone raised in both blocky fists.
 Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Blocky humanoid made of carved granite plates
 * Smooth faceless head with no features
-* Giant stone sword: a slab blade carved of the same granite
+* Two-handed greatsword carved from the same granite, a long straight slab blade with a plain cross-guard
 * Thick legs like pillars with chiselled seams
 * Moss and chipped edges
 * Dust trailing from joints
 * Ruined hall columns for scale
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"A faceless construct of the old empire, the stone sentinel grinds forward on legs of carved granite and pounds with fists like falling masonry. It feels nothing and fears nothing, and it stops only when it is shattered. The empire raised thousands to guard halls that no longer stand. They guard them still."
+"A faceless construct of the old empire, the stone sentinel grinds forward on legs of carved granite and hews with a greatsword of carved stone. It feels nothing and fears nothing, and it stops only when it is shattered. The empire raised thousands to guard halls that no longer stand. They guard them still."
 Feelingless inevitability.
 Specific pitfalls to avoid:
 * Not the Iron Golem (no rivets or metal).
@@ -4021,16 +4021,16 @@ Specific pitfalls to avoid:
 
 ```text
 NOXCLOTH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Noxcloth, Undermarches Controller, large: a fold of black leathery hide hanging from the cavern roof that drops to smother the head; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Noxcloth, Undermarches Controller, medium: a fold of black leathery hide the size of a flung cloak that hangs from the cavern roof and drops to smother the head; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Wide view from below: the flat cloak-like creature half-peeled off the cavern ceiling, edges billowing over a torch-carrying figure's silhouette beneath.
-Size: Large: roughly twice a human's height or bulk.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * A cloak-shaped fold of black leathery skin with a trailing hem
 * Ragged edges and a ridge of muscle
 * Underside with faint ribs and a toothless slit
 * No visible eyes
-* Extremely flat but wider than a man
+* Extremely flat, about the size of a flung cloak
 * Snuffed torch below with a thin smoke line
 * Rock ceiling folds that match the body
 SOURCE TEXT
@@ -4584,28 +4584,28 @@ Specific pitfalls to avoid:
 
 ```text
 WHITE COURT GUARD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Guard, Pale City Soldier, medium: a frost-armoured noble corpse of the undead court's rank and file, holding a reach-halberd at a ceremonial slant, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Guard, Pale City Soldier, medium: a frost-armoured noble corpse of the undead court's rank and file, bearing longsword and shield, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
-Frontal three-quarter view of the guard standing at attention on a frozen avenue, halberd held at a ceremonial slant across the body.
-A frost-armoured noble corpse in ornate courtly armour and a frozen fur mantle, reach-halberd held at a ceremonial slant.
+Frontal three-quarter view of the guard standing in drill position on a frozen avenue, kite shield braced forward, longsword held upright at the shoulder.
+A frost-armoured noble corpse in ornate courtly armour and a frozen fur mantle, longsword upright and kite shield braced in drill position.
 Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Ornate courtly armour with engraved fluting and gilt scrolls, frosted
 * Frozen fur mantle over the shoulders
-* Reach-halberd with a decorated blade and tasselled haft
+* Longsword with a frosted blade held upright, and a tall kite shield with a plain frosted face (no readable heraldry)
 * Visor up on an open helm to show a frozen corpse face
 * Rime on every plate
 * Heavy plumed helm with a drooping plume
 * Icy avenue and snow
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The White Court is the Pale City's undead nobility, and the guard is its rank and file: a frost-armoured corpse bearing a reach-halberd, moving with the cold discipline of a court that never once adjourned. They lock shields across the frozen avenues and advance by the old drill. Death only made them more obedient."
+"The White Court is the Pale City's undead nobility, and the guard is its rank and file: a frost-armoured corpse bearing longsword and shield, moving with the cold discipline of a court that never once adjourned. They lock shields across the frozen avenues and advance by the old drill. Death only made them more obedient."
 Cold ceremonial discipline.
 Specific pitfalls to avoid:
-* Not the Sentinel (no greatshield).
-* Not the Undead Sentinel (rust, rubble).
+* Not the White Court Sentinel: an ordinary shield, not a greatshield, and a sword.
+* Not the Undead Sentinel (rust, rubble, halberd).
 * Not the Archer or Executioner.
-* No actual shield.
+* No polearm.
 ```
 
 ### 67. Ratkin Seer
@@ -4772,7 +4772,7 @@ Depict this faithfully and invent nothing that contradicts it:
 "A greatshield-bearing corpse-knight, the white court sentinel is the dead nobility's bodyguard, planting itself before its lords and refusing to give ground. It lends its frozen resolve to the soldiers around it and weathers blows that would shatter a lesser guardian. It will not pursue and will not break. It only endures, as the court endures."
 Immovable frozen loyalty.
 Specific pitfalls to avoid:
-* No polearm or halberd: that is the Guard.
+* No polearm; not the Guard's longsword and kite shield.
 * Not the Undead Sentinel (tower shield and halberd).
 * Do not show it standing tall.
 ```
@@ -4953,12 +4953,12 @@ Specific pitfalls to avoid:
 
 ```text
 FROST GIANT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Giant, Pale City Elite, huge: a blue-skinned giant in glacier-ice armour wielding a greataxe, ruling the high drifts, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Giant, Pale City Elite, huge: a blue-skinned giant that towers over humans, orcs and ogres alike, armoured in glacier-ice and wielding a greataxe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
-Wide low-angle view of the giant striding down a snowy street, greataxe raised overhead in two hands, boulder in the other arm's crook.
+Wide low-angle view of the giant striding down a snowy street, greataxe raised overhead, a tiny human figure at its feet for scale.
 Size: Huge: towering many times a human's size.
 SUBJECT DETAILS
-* Twice a man's height, blue skin rendered by dense hatching
+* Towering far above humans, orcs and ogres; blue skin rendered by dense hatching
 * Glacier-ice plate armour with jagged edges
 * Greataxe with a crescent blade
 * Boulder tucked under the arm
@@ -4967,7 +4967,7 @@ SUBJECT DETAILS
 * Ruined oversized colonnade behind
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Twice a man's height and blue-skinned, the frost giant goes armoured in glacier-ice and brings a greataxe down like an avalanche. It hurls boulders to scatter foes before it closes the distance. The Pale City's oldest streets were built to its scale, by something, for reasons no one living recalls. It rules the high drifts as a king."
+"Blue-skinned and towering over humans, orcs, and ogres alike, the frost giant goes armoured in glacier-ice and brings a greataxe down like an avalanche. It hurls boulders to scatter foes before it closes the distance. The Pale City's oldest streets were built to its scale, by something, for reasons no one living recalls. It rules the high drifts as a king."
 Immense avalanching force.
 Specific pitfalls to avoid:
 * Not the Orc or Ogre.
@@ -5152,7 +5152,7 @@ Specific pitfalls to avoid:
 
 ```text
 GIANT SCORPION - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Scorpion, Sun-Drowned Soldier, medium: a banded chitin-plated desert scorpion with two crushing pincers and a venom-dripping sting arched over its back, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Scorpion, Sun-Drowned Soldier, medium: a man-sized, banded chitin-plated desert scorpion with two crushing pincers and a venom-dripping sting arched over its back, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the scorpion erupting from a dune, pincers wide, tail arched forward over its back, sand cascading.
 Size: Medium: about human-sized.
@@ -5164,9 +5164,10 @@ SUBJECT DETAILS
 * Small eyes on the front of the head
 * Sand cascading from the shell
 * Dune field behind
+* About the size of a man: its arched sting rises to a man's head height
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"The size of a cart and banded in chitin plate, the giant scorpion bears two crushing pincers and a venom-dripping sting arched above its back. It buries itself in the dunes and erupts beneath whatever walks over it. Its venom liquefies a body from within. The Sun-Drowned's sands hide thousands of them, each one waiting on a footfall."
+"The size of a man and banded in chitin plate, the giant scorpion bears two crushing pincers and a venom-dripping sting arched above its back. It buries itself in the dunes and erupts beneath whatever walks over it. Its venom liquefies a body from within. The Sun-Drowned's sands hide thousands of them, each one waiting on a footfall."
 Sudden eruption from the sands.
 Specific pitfalls to avoid:
 * Exactly eight walking legs, two pincers, one tail.
@@ -7577,12 +7578,12 @@ SUBJECT DETAILS
 * Rope walkways slung between posts over shallow pools
 * Overturned offering baskets, scattered coins and a smashed clay bowl
 * Broad drag marks through the mud into tall reeds
-* Lizardfolk Scale-Shaman with a feathered staff and troglodyte guards with spears, reptilian crests and tails
+* Lizardfolk Scale-Shaman with a feathered staff, with slime-streaked Swamp Goblins in reed canoes and on the walkways, small and furtive
 * Shallow pools with a few submerged snouts
 * Fen mist and a pale line of dawn
 HUMAN ACTIVITY
 * The Scale-Shaman examines an empty plinth
-* Guards sniff and scan the reeds
+* Swamp goblins lurk among the reed screens with blowpipes
 * Two tiny thieves hide in the reeds at the far edge
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
@@ -7593,6 +7594,7 @@ Specific pitfalls to avoid:
 * Not the Titan fen or the barrow.
 * No readable idol markings.
 * No glow around the amulet (absent).
+* No troglodytes: only Mire creatures.
 ```
 
 ### 33. Scenario 3: The Mire Titan's Fen

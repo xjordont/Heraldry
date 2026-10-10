@@ -76,4 +76,4 @@ Review hands, joints, armour closures, weapon grips, material transitions, mason
 
 ## Current reference calibration and artwork route
 
-Use the ten owner-selected references in REFERENCE_ANALYSIS.md for abstract silhouette, ink and composition lessons. Since the owner decision of 2026-10-08, all artwork is generated automatically through the Gemini image API pipeline in ART_AUTOMATION.md, with `config/art_style.json` as the operative style bible. Claude approves the style anchors and reviews native resolution, ink edges, setting fidelity and final-size quality.
+Use the ten owner-selected references in REFERENCE_ANALYSIS.md for abstract silhouette, ink and composition lessons. Since the owner decision of 2026-10-10, all artwork is generated in ChatGPT Work through the queue and intake route in ART_AUTOMATION.md, with `config/art_style.json` (prompt_v2) and the per-entry briefs as the operative art direction. Claude approves the style anchors and reviews native resolution, ink edges, setting fidelity and final-size quality.

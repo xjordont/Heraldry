@@ -19,7 +19,7 @@
    "defects": [],
    "overall": 9.0
   },
-  "status": "anchor-proposed",
+  "status": "superseded",
   "generated_at": "2026-10-08T12:28:55+00:00",
   "master": {
    "path": "assets/art/masters/ART-CLI-THE-GREENMARK.png",
@@ -39,7 +39,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.023
   },
-  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn."
+  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn.",
+  "superseded_note": "Gemini test drawing; route retired 2026-10-10 (owner chose ChatGPT Work)"
  },
  "ART-BAS-GREYTHORN": {
   "family": "bastion",
@@ -93,7 +94,7 @@
    "defects": [],
    "overall": 9
   },
-  "status": "anchor-proposed",
+  "status": "superseded",
   "generated_at": "2026-10-08T12:33:41+00:00",
   "master": {
    "path": "assets/art/masters/ART-ANC-DWARF.png",
@@ -113,7 +114,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.703
   },
-  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn."
+  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn.",
+  "superseded_note": "Gemini test drawing; route retired 2026-10-10 (owner chose ChatGPT Work)"
  },
  "ART-CLA-FIGHTER": {
   "family": "class",
@@ -135,7 +137,7 @@
    "defects": [],
    "overall": 9
   },
-  "status": "anchor-proposed",
+  "status": "superseded",
   "generated_at": "2026-10-08T12:34:22+00:00",
   "master": {
    "path": "assets/art/masters/ART-CLA-FIGHTER.png",
@@ -155,7 +157,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.74
   },
-  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn."
+  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn.",
+  "superseded_note": "Gemini test drawing; route retired 2026-10-10 (owner chose ChatGPT Work)"
  },
  "ART-MON-GIANT-TARANTULA": {
   "family": "monster",
@@ -177,7 +180,7 @@
    "defects": [],
    "overall": 7
   },
-  "status": "anchor-proposed",
+  "status": "superseded",
   "generated_at": "2026-10-08T12:38:00+00:00",
   "master": {
    "path": "assets/art/masters/ART-MON-GIANT-TARANTULA.png",
@@ -197,7 +200,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.37
   },
-  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn."
+  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn.",
+  "superseded_note": "Gemini test drawing; route retired 2026-10-10 (owner chose ChatGPT Work)"
  },
  "ART-MON-UNDEAD-CHAMPION": {
   "family": "monster",
@@ -219,7 +223,7 @@
    "defects": [],
    "overall": 10
   },
-  "status": "anchor-proposed",
+  "status": "superseded",
   "generated_at": "2026-10-08T12:38:35+00:00",
   "master": {
    "path": "assets/art/masters/ART-MON-UNDEAD-CHAMPION.png",
@@ -239,6 +243,7 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.097
   },
-  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn."
+  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn.",
+  "superseded_note": "Gemini test drawing; route retired 2026-10-10 (owner chose ChatGPT Work)"
  }
 }

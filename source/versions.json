@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 487,
+  "current": 488,
   "revisions": [
     {
       "number": 484,
@@ -110,6 +110,33 @@
       ],
       "patch_file": "editorial/history/RC487.json",
       "patch_sha256": "aa60bcf36af8d4947689a10ff6acbb9e0f5f91f40c71c286dc32eed487c6e2d2"
+    },
+    {
+      "number": 488,
+      "path": "source/Heraldry_RC488.md",
+      "sha256": "9394be77c41ba1c325e84152609abe7d09522a4d9f641121611be8356b5d1305",
+      "bytes": 1453678,
+      "parent_sha256": "d77a72f9030061f76ea61e947bf520dcc81628bd653f61ba144f2a474a088254",
+      "created_at": "2026-10-10T14:15:15.485041+00:00",
+      "reason": "Owner bestiary and Mire refinements found during illustration briefing: weapon/text consistency (Undead Champion, Stone Sentinel, Orc, White Court Guard), size descriptions (Giant Scorpion, Frost Giant, Noxcloth) and Mire-only deployments (The Mire 2 and 5)",
+      "authorization": "Owner instruction 2026-10-10 in Claude Code session: 'Change the undead champions stat block to use a maul or great maul from the manuscripts mundane weapon list. The stone sentinels text should say it attacks with a stone sword. The actual attack can be a mundane greatsword stat. The orc and white court guard should have a shield and a one handed weapon from the mundane weapon list... The giant scorpion should remain medium but update the description to the size of a man. The frost giant's text should say towers over human, orcs, and ogres alike. It is huge. The noxcloth is the size of flung cloak but should me coded as medium. The Mire Scenarios should only deploy Mire creature so replace troglodytes with something appropriate.'",
+      "patch_ids": [
+        "RC488-01",
+        "RC488-02",
+        "RC488-03",
+        "RC488-04",
+        "RC488-05",
+        "RC488-06",
+        "RC488-07",
+        "RC488-08",
+        "RC488-09",
+        "RC488-10",
+        "RC488-11",
+        "RC488-12",
+        "RC488-13"
+      ],
+      "patch_file": "editorial/history/RC488.json",
+      "patch_sha256": "b7b7e55496cd9ac6e2460566cb392089bc0ab1f0195120be811d754f593f6182"
     }
   ]
 }
