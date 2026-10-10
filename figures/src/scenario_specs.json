@@ -11121,22 +11121,22 @@
        "of": "enc"
       }
      ],
-     "lp": "b"
+     "lp": "r"
     },
     {
      "id": "sgo",
      "kind": "monster",
      "sz": "S",
      "at": [
-      14.6,
-      21.2
+      13.4,
+      21.9
      ],
      "status": "ILLUSTRATIVE",
      "lines": [
       14321
      ],
      "label": "Swamp Goblins·A",
-     "lp": "l"
+     "lp": "r"
     },
     {
      "id": "mk1",
