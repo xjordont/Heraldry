@@ -24,7 +24,7 @@ On a WARN, look at the thing it names. A WARN you looked at and judged fine need
 
 ## 2. Visual checklist
 
-Run it on the image and on the print-size preview. These are the ten hard fails in SKILL.md. How to check each:
+Run it on the image and on the print-size preview. `check` repeats the item's MUST and DO NOT DRAW lines for you; `save` asks you to state what you counted for each MUST line and to confirm the DO NOT DRAW items are absent, so do the counting first. These are the ten hard fails in SKILL.md. How to check each:
 
 1. **Subject and source.** Re-read the prompt's SOURCE TEXT. Is this the creature, place or object it describes? Does anything contradict it?
 2. **Must list.** Take each "Must be shown exactly" line and verify it by counting (legs, eyes, heads, arms, weapons, shields) or by finding the object.
@@ -59,7 +59,9 @@ Redo the one or two worst if attempts remain. If the whole batch drifted, stop a
 `save` writes it. By hand, append one JSON line per image to `production/art/gpt/RECEIPTS.jsonl`:
 
 ```json
-{"id": "ART-MON-GOBLIN", "prompt_sha256": "<the item's prompt_sha256 from QUEUE.json>", "surface": "ChatGPT Work", "model": "<image model if shown, else not shown>", "date_utc": "2026-10-10", "variants_tried": 2, "notes": "<anything unusual, including any correction sentence added>"}
+{"id": "ART-MON-GOBLIN", "prompt_sha256": "<the item's prompt_sha256 from QUEUE.json>", "surface": "ChatGPT Work", "model": "<image model if shown, else not shown>", "date_utc": "2026-10-10", "variants_tried": 2, "notes": "<anything unusual, including any correction sentence added>", "must_checked": ["<what you counted for each MUST line>"], "avoid_clear": true}
 ```
+
+`variants_tried` is the total number of generations made for the item, the saved one included. `save` fills it from the images you checked. `must_checked`, `avoid_clear` and `tripwires` are optional extras the reviewer reads; a later receipt for the same ID replaces an earlier one.
 
 A refusal: `{"id": "...", "refused": true, "reason": "<the tool's message>", "surface": "ChatGPT Work", "date_utc": "..."}`.

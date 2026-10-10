@@ -1,6 +1,7 @@
 """Tests for the ChatGPT Work illustration skill (production/art/skill/heraldry-classic-ink-art)."""
-import contextlib, hashlib, io, json, shutil, subprocess, sys, tempfile, unittest, zipfile
+import contextlib, hashlib, io, json, os, shutil, subprocess, sys, tempfile, unittest, zipfile
 from pathlib import Path
+from unittest import mock
 
 from PIL import Image, ImageDraw, ImageFilter
 
@@ -62,19 +63,19 @@ def make_repo(root, phase="anchors", items=None):
     refs = []
     for n in range(2):
         p = f"assets/art/style/REF-{n}.jpg"
-        figure_image().save(root / p, quality=80)
+        figure_image(scale=0.6 + 0.1 * n).save(root / p, quality=80)
         refs.append(p)
     items = items or [
         {"id": "ART-T-SCENE", "family": "bastion", "register": "scene", "title": "Test Scene", "size": "1536x1024", "print_w_in": 3.3, "must": [], "avoid": ["No people."], "size_class": "", "max_attempts": 3},
-        {"id": "ART-T-BEAST", "family": "monster", "register": "creature", "title": "Test Beast", "size": "1024x1024", "print_w_in": 1.9, "must": ["Exactly eight legs"], "avoid": [], "size_class": "Large: roughly twice a human's height or bulk", "max_attempts": 3},
+        {"id": "ART-T-BEAST", "family": "monster", "register": "creature", "title": "Test Beast", "size": "1024x1024", "print_w_in": 1.9, "must": ["Exactly eight legs"], "avoid": ["No scenery."], "size_class": "Large: roughly twice a human's height or bulk", "max_attempts": 3},
         {"id": "ART-T-HERO", "family": "class", "register": "person", "title": "Test Hero", "size": "1024x1536", "print_w_in": 1.9, "must": [], "avoid": [], "size_class": "", "max_attempts": 3},
     ]
     for it in items:
         text = f"{it['title'].upper()} - PROMPT\n\nMust be shown exactly:\n" + "\n".join("* " + m for m in it["must"])
         (root / "production/art/gpt/prompts" / f"{it['id']}.txt").write_text(text + "\n")
         it.update({"prompt": f"production/art/gpt/prompts/{it['id']}.txt", "prompt_sha256": hashlib.sha256(text.encode()).hexdigest(),
-                   "references": refs[:1], "save_as": f"assets/art/incoming/{it['id']}.png"})
-    q = {"schema": 2, "phase": phase, "generated_at": "2026-10-10T00:00:00+00:00", "max_references": 3, "references": refs, "count": len(items), "items": items}
+                   "references": refs[1:] if it["id"] == "ART-T-HERO" else refs[:1], "save_as": f"assets/art/incoming/{it['id']}.png"})
+    q = {"schema": 2, "phase": phase, "generated_at": "2026-10-10T00:00:00+00:00", "max_references": 3, "count": len(items), "items": items}
     (root / "production/art/gpt/QUEUE.json").write_text(json.dumps(q))
     return q
 
@@ -86,51 +87,80 @@ def run(root, *args):
     return code, out.getvalue(), err.getvalue()
 
 
+def queue_item(root, iid):
+    return next(i for i in json.loads((Path(root) / "production/art/gpt/QUEUE.json").read_text())["items"] if i["id"] == iid)
+
+
+def attest(item):
+    """The statements `save` asks for: one --must per MUST line, and --avoid-clear when there is a do-not-draw list."""
+    flags = []
+    for m in item["must"]:
+        flags += ["--must", f"{m}: checked"]
+    if item["avoid"]:
+        flags.append("--avoid-clear")
+    return flags
+
+
+def save(root, iid, path, *extra):
+    return run(root, "save", iid, str(path), *attest(queue_item(root, iid)), *extra)
+
+
 def git(root, *args):
     subprocess.run(["git", "-C", str(root), "-c", "user.name=t", "-c", "user.email=t@t", *args], check=True, capture_output=True)
 
 
-class Measurements(unittest.TestCase):
-    def verdict(self, im, item_id, tmp, name="x.png"):
-        root = Path(tmp)
-        if not (root / "r").exists():
-            make_repo(root / "r")
-        p = root / name
+class Isolated(unittest.TestCase):
+    """Each test gets its own scratch folder, so attempt counts and previews never leak between tests or into /tmp."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.tmp = Path(self._tmp.name)
+        patcher = mock.patch.dict(os.environ, {"HERALDRY_SCRATCH": str(self.tmp / "scratch")})
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        self.addCleanup(self._tmp.cleanup)
+
+
+class Measurements(Isolated):
+    def verdict(self, im, item_id, name="x.png"):
+        root = self.tmp / "r"
+        if not root.exists():
+            make_repo(root)
+        p = self.tmp / name
         im.save(p)
-        code, out, err = run(root / "r", "check", item_id, str(p), "--json")
+        with mock.patch.dict(os.environ, {"HERALDRY_SCRATCH": str(self.tmp / f"scratch-{name}-{id(im)}")}):   # one attempt per call
+            code, out, err = run(root, "check", item_id, str(p), "--json")
         return json.loads(out)
 
     def test_calibrated_classification(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            good = figure_image()
-            cases = {
-                "good": (good, "PASS"),
-                "frame": (self._frame(good), "FAIL"),
-                "cropped": (figure_image(offset=(420, 0)), "FAIL"),
-                "colour": (self._tint(good), "FAIL"),
-                "wash": (good.filter(ImageFilter.GaussianBlur(5)), "WARN"),
-                "blank": (Image.new("RGB", (1024, 1024), (250, 248, 240)), "FAIL"),
-                "tiny": (figure_image(scale=0.3), "WARN"),
-                "vanished": (figure_image(scale=0.1), "FAIL"),
-            }
-            for name, (im, expect) in cases.items():
-                with self.subTest(case=name):
-                    got = self.verdict(im, "ART-T-BEAST", tmp)
-                    self.assertEqual(got["result"], expect, got)
-            with self.subTest(case="wrong aspect"):
-                got = self.verdict(good.crop((0, 0, 1024, 700)), "ART-T-BEAST", tmp)
-                self.assertEqual(got["result"], "FAIL")
-                self.assertTrue(any("aspect" in f for f in got["fails"]))
-            with self.subTest(case="too small"):
-                got = self.verdict(figure_image((600, 600)), "ART-T-BEAST", tmp)
-                self.assertTrue(any("long side" in f for f in got["fails"]))
+        good = figure_image()
+        cases = {
+            "good": (good, "PASS"),
+            "frame": (self._frame(good), "FAIL"),
+            "cropped": (figure_image(offset=(420, 0)), "FAIL"),
+            "colour": (self._tint(good), "FAIL"),
+            "wash": (good.filter(ImageFilter.GaussianBlur(5)), "WARN"),
+            "blank": (Image.new("RGB", (1024, 1024), (250, 248, 240)), "FAIL"),
+            "tiny": (figure_image(scale=0.3), "WARN"),
+            "vanished": (figure_image(scale=0.1), "FAIL"),
+        }
+        for name, (im, expect) in cases.items():
+            with self.subTest(case=name):
+                got = self.verdict(im, "ART-T-BEAST")
+                self.assertEqual(got["result"], expect, got)
+        with self.subTest(case="wrong aspect"):
+            got = self.verdict(good.crop((0, 0, 1024, 700)), "ART-T-BEAST")
+            self.assertEqual(got["result"], "FAIL")
+            self.assertTrue(any("aspect" in f for f in got["fails"]))
+        with self.subTest(case="too small"):
+            got = self.verdict(figure_image((600, 600)), "ART-T-BEAST")
+            self.assertTrue(any("long side" in f for f in got["fails"]))
 
     def test_scene_register_wants_a_vignette(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            self.assertEqual(self.verdict(scene_image(), "ART-T-SCENE", tmp)["result"], "PASS")
-            bleed = self.verdict(scene_image(vignette=False), "ART-T-SCENE", tmp)
-            self.assertEqual(bleed["result"], "FAIL")
-            self.assertTrue(any("vignette" in f for f in bleed["fails"]))
+        self.assertEqual(self.verdict(scene_image(), "ART-T-SCENE")["result"], "PASS")
+        bleed = self.verdict(scene_image(vignette=False), "ART-T-SCENE", "bleed.png")
+        self.assertEqual(bleed["result"], "FAIL")
+        self.assertTrue(any("vignette" in f for f in bleed["fails"]))
 
     @staticmethod
     def _frame(im):
@@ -146,40 +176,36 @@ class Measurements(unittest.TestCase):
     def test_intake_numbers_match_art_ink(self):
         """The skill reports the same colour, mid-tone and border measures the intake computes."""
         from art_ink import prep
-        with tempfile.TemporaryDirectory() as tmp:
-            good = figure_image()
-            images = {"good": good, "frame": self._frame(good), "tint": self._tint(good), "wash": good.filter(ImageFilter.GaussianBlur(5)),
-                      "scene": scene_image()}
-            for name, im in images.items():
-                with self.subTest(image=name):
-                    src, dst = Path(tmp) / f"{name}.png", Path(tmp) / f"{name}_ink.png"
-                    im.save(src)
-                    info = prep(src, dst)
-                    m = ha.measure(src)
-                    self.assertAlmostEqual(m["colour"], info["colour_frac"], places=3)
-                    self.assertAlmostEqual(m["midtone"], info["midtone_frac"], places=3)
-                    self.assertAlmostEqual(m["intake_border_ink"], info["border_ink"], places=3)
+        good = figure_image()
+        images = {"good": good, "frame": self._frame(good), "tint": self._tint(good), "wash": good.filter(ImageFilter.GaussianBlur(5)),
+                  "scene": scene_image()}
+        for name, im in images.items():
+            with self.subTest(image=name):
+                src, dst = self.tmp / f"{name}.png", self.tmp / f"{name}_ink.png"
+                im.save(src)
+                info = prep(src, dst)
+                m = ha.measure(src)
+                self.assertAlmostEqual(m["colour"], info["colour_frac"], places=3)
+                self.assertAlmostEqual(m["midtone"], info["midtone_frac"], places=3)
+                self.assertAlmostEqual(m["intake_border_ink"], info["border_ink"], places=3)
 
 
-class Runner(unittest.TestCase):
+class Runner(Isolated):
     def setUp(self):
-        self._tmp = tempfile.TemporaryDirectory()
-        self.tmp = Path(self._tmp.name)
+        super().setUp()
         self.root = self.tmp / "repo"
         self.root.mkdir()
         self.q = make_repo(self.root)
 
-    def tearDown(self):
-        self._tmp.cleanup()
-
-    def image(self, name="gen.png", fmt="PNG", scene=False):
+    def image(self, name="gen.png", fmt="PNG", scene=False, scale=0.7):
         p = self.tmp / name
-        (scene_image() if scene else figure_image()).save(p, format=fmt)
+        (scene_image() if scene else figure_image(scale=scale)).save(p, format=fmt)
         return p
 
     def test_save_keeps_bytes_uses_true_extension_and_writes_receipt(self):
         src = self.image("looks_like.jpg", fmt="PNG")                    # PNG content under a .jpg name
-        code, out, err = run(self.root, "save", "ART-T-BEAST", str(src), "--attempts", "2", "--model", "GPT Images 2.5", "--notes", "first pass clean")
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(src), "--attempts", "2", "--model", "GPT Images 2.5", "--notes", "first pass clean",
+                             "--must", "Exactly eight legs: counted 8", "--avoid-clear")
         self.assertEqual(code, 0, err + out)
         dest = self.root / "assets/art/incoming/ART-T-BEAST.png"
         self.assertEqual(dest.read_bytes(), src.read_bytes())
@@ -188,32 +214,97 @@ class Runner(unittest.TestCase):
         self.assertEqual(rec["id"], "ART-T-BEAST")
         self.assertEqual(rec["prompt_sha256"], item["prompt_sha256"])
         self.assertEqual((rec["variants_tried"], rec["model"], rec["surface"]), (2, "GPT Images 2.5", "ChatGPT Work"))
+        self.assertEqual(rec["must_checked"], ["Exactly eight legs: counted 8"])
+        self.assertTrue(rec["avoid_clear"])
         self.assertRegex(rec["date_utc"], r"^\d{4}-\d\d-\d\d$")
         # one file per ID: saving a JPEG replaces the PNG
-        jpg = self.image("b.jpg", fmt="JPEG")
-        code, out, err = run(self.root, "save", "ART-T-BEAST", str(jpg), "--redo")
+        jpg = self.image("b.jpg", fmt="JPEG", scale=0.65)
+        code, out, err = save(self.root, "ART-T-BEAST", jpg, "--redo")
         self.assertEqual(code, 0, err + out)
         self.assertEqual([f.name for f in (self.root / "assets/art/incoming").glob("ART-T-BEAST.*")], ["ART-T-BEAST.jpg"])
 
-    def test_save_refuses_failures_and_unlisted_ids_but_can_accept_flags(self):
+    def test_save_demands_the_statements_and_accept_flags_demands_notes(self):
+        img = self.image()
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(img))
+        self.assertEqual(code, 2)
+        self.assertIn("Missing", err)
+        self.assertIn("Exactly eight legs", err)
+        self.assertIn("--avoid-clear", err)
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(img), "--must", "Exactly eight legs: counted 8")
+        self.assertEqual(code, 2)
+        self.assertIn("--avoid-clear", err)
+        self.assertNotIn("one --must", err)
+        self.assertFalse((self.root / "assets/art/incoming/ART-T-BEAST.png").exists())
+        # an item with no lists needs no statements
+        hero = self.tmp / "hero.png"
+        figure_image((1024, 1536)).save(hero)
+        code, out, err = run(self.root, "save", "ART-T-HERO", str(hero))
+        self.assertEqual(code, 0, err)
+        # --accept-flags skips the statements but needs notes
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(img), "--accept-flags")
+        self.assertEqual(code, 2)
+        self.assertIn("needs --notes", err)
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(img), "--accept-flags", "--notes", "legs not countable")
+        self.assertEqual(code, 0, err)
+
+    def test_save_refuses_mechanical_failures_and_unlisted_ids(self):
         bad = self.tmp / "bad.png"
         Image.new("RGB", (1024, 1024), (250, 248, 240)).save(bad)
-        code, out, err = run(self.root, "save", "ART-T-BEAST", str(bad))
+        code, out, err = save(self.root, "ART-T-BEAST", bad)
         self.assertEqual(code, 2)
         self.assertIn("mechanical failures", err)
         self.assertFalse((self.root / "assets/art/incoming/ART-T-BEAST.png").exists())
-        code, out, err = run(self.root, "save", "ART-T-BEAST", str(bad), "--accept-flags", "--attempts", "3")
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(bad), "--accept-flags", "--notes", "blank on every attempt")
         self.assertEqual(code, 0, err)
         rec = json.loads((self.root / "production/art/gpt/RECEIPTS.jsonl").read_text().splitlines()[-1])
         self.assertTrue(rec["tripwires"])
+        self.assertEqual(rec["notes"], "blank on every attempt")
         code, out, err = run(self.root, "save", "ART-NOT-QUEUED", str(self.image()))
         self.assertEqual(code, 2)
         self.assertIn("never generate an ID the queue does not list", err)
+
+    def test_attempts_are_counted_by_distinct_image_and_the_budget_is_enforced(self):
+        imgs = [self.image(f"a{i}.png", scale=0.5 + 0.05 * i) for i in range(4)]
+        for i in range(3):
+            code, out, err = run(self.root, "check", "ART-T-BEAST", str(imgs[i]))
+            self.assertEqual(code, 0, out + err)
+            self.assertIn(f"attempt {i + 1} of 3", out)
+        code, out, err = run(self.root, "check", "ART-T-BEAST", str(imgs[2]))          # the same image again is not a new attempt
+        self.assertIn("attempt 3 of 3", out)
+        self.assertEqual(len(ha.attempts_of(self.root, "ART-T-BEAST")), 3)
+        self.assertIn("used so far: 3", run(self.root, "show", "ART-T-BEAST")[1])
+        code, out, err = run(self.root, "check", "ART-T-BEAST", str(imgs[3]))
+        self.assertEqual(code, 1)
+        self.assertIn("attempt budget used up", out)
+        code, out, err = save(self.root, "ART-T-BEAST", imgs[3])
+        self.assertEqual(code, 2)
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(imgs[3]), "--accept-flags", "--notes", "budget spent; best of four")
+        self.assertEqual(code, 0, err)
+        rec = json.loads((self.root / "production/art/gpt/RECEIPTS.jsonl").read_text().splitlines()[-1])
+        self.assertEqual(rec["variants_tried"], 4)
+        self.assertTrue(any("budget" in t for t in rec["tripwires"]))
+        self.assertEqual(ha.attempts_of(self.root, "ART-T-BEAST"), [], "a save starts the item's count afresh")
+
+    def test_a_copy_of_another_image_or_a_reference_is_not_a_new_generation(self):
+        first = self.image("first.png")
+        self.assertEqual(save(self.root, "ART-T-BEAST", first)[0], 0)
+        code, out, err = run(self.root, "check", "ART-T-SCENE", str(first), "--json")
+        self.assertTrue(any("byte-identical to assets/art/incoming/ART-T-BEAST.png" in f for f in json.loads(out)["fails"]))
+        ref = self.root / "assets/art/style/REF-0.jpg"
+        code, out, err = run(self.root, "check", "ART-T-BEAST", str(ref), "--json")
+        self.assertTrue(any("byte-identical to assets/art/style/REF-0.jpg" in f for f in json.loads(out)["fails"]))
+
+    def test_check_repeats_the_lists_and_names_the_helper_in_messages(self):
+        code, out, err = run(self.root, "check", "ART-T-BEAST", str(self.image()))
+        self.assertIn("MUST BE SHOWN (count or find it): Exactly eight legs", out)
+        self.assertIn("DO NOT DRAW (confirm it is absent): No scenery.", out)
+        self.assertIn("heraldry_art.py", run(self.root, "status")[1])
 
     def test_show_verifies_prompt_hash_and_lists_must_and_avoid(self):
         code, out, err = run(self.root, "show", "ART-T-BEAST")
         self.assertEqual(code, 0, err)
         self.assertIn("* Exactly eight legs", out)
+        self.assertIn("* No scenery.", out)
         self.assertIn("Large: roughly twice", out)
         (self.root / "production/art/gpt/prompts/ART-T-BEAST.txt").write_text("changed\n")
         code, out, err = run(self.root, "show", "ART-T-BEAST")
@@ -232,6 +323,7 @@ class Runner(unittest.TestCase):
         code, out, err = run(self.root, "doctor")
         self.assertEqual(code, 0, out)                                         # not a git repo: generating is fine, delivery is not
         self.assertIn("READY TO GENERATE. Delivery by git is blocked: git is not available here", out)
+        self.assertIn(str(ha.scratch_dir(self.root)), out)
         (self.root / "assets/art/style/REF-0.jpg").write_bytes(b"version https://git-lfs.github.com/spec/v1\noid sha256:00\nsize 1\n")
         (self.root / "assets/art/style/REF-1.jpg").unlink()
         self.q["items"][0]["references"] = ["assets/art/style/REF-0.jpg", "assets/art/style/REF-1.jpg"]
@@ -239,7 +331,8 @@ class Runner(unittest.TestCase):
         (self.root / "production/art/gpt/prompts/ART-T-HERO.txt").write_text("edited\n")
         code, out, err = run(self.root, "doctor")
         self.assertEqual(code, 1)
-        self.assertIn("LFS pointer", out)
+        self.assertIn("LFS pointers, not images", out)
+        self.assertIn('git lfs pull --include="assets/art/style/REF-0.jpg"', out)
         self.assertIn("reference missing", out)
         self.assertIn("no longer match the queue hashes", out)
 
@@ -249,40 +342,53 @@ class Runner(unittest.TestCase):
         rec = json.loads((self.root / "production/art/gpt/RECEIPTS.jsonl").read_text().splitlines()[-1])
         self.assertEqual((rec["id"], rec["refused"], rec["reason"]), ("ART-T-BEAST", True, "content policy"))
         import art_intake
-        from unittest.mock import patch
-        with patch.object(art_intake, "RECEIPTS", self.root / "production/art/gpt/RECEIPTS.jsonl"):
+        with mock.patch.object(art_intake, "RECEIPTS", self.root / "production/art/gpt/RECEIPTS.jsonl"):
             r = art_intake.receipts()["ART-T-BEAST"]
         self.assertIsNone(r.get("prompt_sha256"))                # a later real receipt for the same ID replaces it
+        code, out, err = run(self.root, "check", "ART-T-BEAST", str(self.image()))
+        self.assertIn("recorded as refused", out)
         code, out, err = run(self.root, "refuse", "ART-NOT-QUEUED", "--reason", "x")
         self.assertEqual(code, 2)
 
-    def test_sheet_and_bundle(self):
-        for iid, sc in (("ART-T-BEAST", False), ("ART-T-SCENE", True)):
-            code, out, err = run(self.root, "save", iid, str(self.image(f"{iid}.png", scene=sc)))
-            self.assertEqual(code, 0, err + out)
+    def test_sheet_adds_the_references_of_every_item_on_it(self):
+        for iid, kw in (("ART-T-BEAST", {}), ("ART-T-SCENE", {"scene": True})):
+            self.assertEqual(save(self.root, iid, self.image(f"{iid}.png", **kw))[0], 0)
+        hero = self.tmp / "hero.png"
+        figure_image((1024, 1536)).save(hero)
+        self.assertEqual(save(self.root, "ART-T-HERO", hero)[0], 0)
         out_sheet = self.tmp / "sheet.jpg"
-        code, out, err = run(self.root, "sheet", "ART-T-BEAST", "ART-T-SCENE", "--refs", "--out", str(out_sheet))
+        code, out, err = run(self.root, "sheet", "--refs", "--out", str(out_sheet))
         self.assertEqual(code, 0, err)
         with Image.open(out_sheet) as sheet:
-            self.assertGreater(sheet.width, 600)
-        z = self.tmp / "b.zip"
-        for label in ("without git", "with git"):
-            if label == "with git":
-                if not HAVE_GIT:
-                    break
-                git(self.root, "init", "-q", "-b", "main")
-            with self.subTest(label):
-                self.assertIn("BUNDLE" if label == "without git" else "COMMIT AND PUSH", run(self.root, "status")[1])
-                code, out, err = run(self.root, "bundle", "--out", str(z))
-                self.assertEqual(code, 0, err + out)
-                names = zipfile.ZipFile(z).namelist()
-                self.assertIn("assets/art/incoming/ART-T-BEAST.png", names)
-                self.assertIn("receipts_append.jsonl", names)
-                lines = zipfile.ZipFile(z).read("receipts_append.jsonl").decode().strip().splitlines()
-                self.assertEqual({json.loads(x)["id"] for x in lines}, {"ART-T-BEAST", "ART-T-SCENE"})
+            # three images plus two distinct references (REF-0 for two items, REF-1 for the hero) = five cells = two rows of four
+            self.assertEqual(sheet.height, 2 * (360 + 22))
+        code, out, err = run(self.root, "sheet", "--out", str(out_sheet), "ART-T-BEAST")
+        self.assertEqual(code, 0, err)
+        # nothing saved and no IDs named
+        for f in (self.root / "assets/art/incoming").glob("*"):
+            f.unlink()
+        code, out, err = run(self.root, "sheet")
+        self.assertEqual(code, 2)
+        self.assertIn("Name the IDs", err)
+
+    def test_bundle_without_git_defaults_to_scratch_and_refuses_the_clone(self):
+        for iid in ("ART-T-BEAST", "ART-T-SCENE"):
+            self.assertEqual(save(self.root, iid, self.image(f"{iid}.png", scene=iid == "ART-T-SCENE"))[0], 0)
+        self.assertIn("BUNDLE", run(self.root, "status", "--end")[1])
+        code, out, err = run(self.root, "bundle", "--out", str(self.root / "batch.zip"))
+        self.assertEqual(code, 2)
+        self.assertIn("outside the repository clone", err)
+        self.assertFalse((self.root / "batch.zip").exists())
+        code, out, err = run(self.root, "bundle")
+        self.assertEqual(code, 0, err)
+        z = next((self.tmp / "scratch").rglob("batch_*.zip"))
+        names = zipfile.ZipFile(z).namelist()
+        self.assertIn("assets/art/incoming/ART-T-BEAST.png", names)
+        lines = zipfile.ZipFile(z).read("receipts_append.jsonl").decode().strip().splitlines()
+        self.assertEqual({json.loads(x)["id"] for x in lines}, {"ART-T-BEAST", "ART-T-SCENE"})
 
     def test_without_git_an_image_the_intake_has_recorded_counts_as_sent(self):
-        code, out, err = run(self.root, "save", "ART-T-BEAST", str(self.image()))
+        code, out, err = save(self.root, "ART-T-BEAST", self.image())
         self.assertEqual(code, 0, err)
         self.assertEqual(ha.states(self.root, self.q)["ART-T-BEAST"], "saved")
         data = (self.root / "assets/art/incoming/ART-T-BEAST.png").read_bytes()
@@ -293,83 +399,121 @@ class Runner(unittest.TestCase):
         sels["ART-T-BEAST"]["status"] = "rejected"
         (self.root / "production/art/SELECTIONS.json").write_text(json.dumps(sels))
         self.assertEqual(ha.states(self.root, self.q)["ART-T-BEAST"], "redo")
-        code, out, err = run(self.root, "save", "ART-T-BEAST", str(self.image("again.png", scene=False)))
+        code, out, err = save(self.root, "ART-T-BEAST", self.image("again.png", scale=0.62))
         self.assertEqual(code, 0, err)                                      # redo needs no --redo flag
+
+    def test_scratch_is_per_repository_and_overridable(self):
+        other = self.tmp / "other"
+        other.mkdir()
+        self.assertNotEqual(ha.scratch_dir(self.root), ha.scratch_dir(other))
+        self.assertTrue(str(ha.scratch_dir(self.root)).startswith(str(self.tmp / "scratch")))
+        with mock.patch.dict(os.environ, {"HERALDRY_SCRATCH": str(self.tmp / "elsewhere")}):
+            self.assertTrue(str(ha.scratch_dir(self.root)).startswith(str(self.tmp / "elsewhere")))
 
 
 @unittest.skipUnless(HAVE_GIT, "git not installed")
-class GitStates(unittest.TestCase):
+class GitStates(Isolated):
+    def make(self):
+        remote, root = self.tmp / "remote.git", self.tmp / "repo"
+        subprocess.run(["git", "init", "-q", "--bare", "-b", "main", str(remote)], check=True)
+        root.mkdir()
+        make_repo(root)
+        git(root, "init", "-q", "-b", "main")
+        git(root, "remote", "add", "origin", str(remote))
+        git(root, "add", "-A")
+        git(root, "commit", "-q", "-m", "base")
+        git(root, "push", "-q", "-u", "origin", "main")
+        return root
+
     def test_item_states_follow_git_history_and_next_action(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            tmp = Path(tmp)
-            remote, root = tmp / "remote.git", tmp / "repo"
-            subprocess.run(["git", "init", "-q", "--bare", "-b", "main", str(remote)], check=True)
-            root.mkdir()
-            make_repo(root)
-            git(root, "init", "-q", "-b", "main")
-            git(root, "remote", "add", "origin", str(remote))
-            git(root, "add", "-A")
-            git(root, "commit", "-q", "-m", "base")
-            git(root, "push", "-q", "-u", "origin", "main")
-            q = ha.load_queue(root)
-            self.assertEqual(set(ha.states(root, q).values()), {"pending"})
-            ids = [i["id"] for i in q["items"]]
-            # save all three
-            for iid, scene in zip(ids, (True, False, False)):
-                p = tmp / f"{iid}.png"
+        root = self.make()
+        q = ha.load_queue(root)
+        self.assertEqual(set(ha.states(root, q).values()), {"pending"})
+        ids = [i["id"] for i in q["items"]]
+        for iid, scene in zip(ids, (True, False, False)):
+            p = self.tmp / f"{iid}.png"
+            if iid == "ART-T-HERO":
+                figure_image((1024, 1536)).save(p)
+            else:
                 (scene_image() if scene else figure_image()).save(p)
-                if iid == "ART-T-HERO":
-                    Image.new("RGB", (1024, 1536), (255, 255, 255))
-                    figure_image((1024, 1536)).save(p)
-                code, out, err = run(root, "save", iid, str(p))
-                self.assertEqual(code, 0, err + out)
-            self.assertEqual(set(ha.states(root, q).values()), {"saved"})
-            self.assertIn("COMMIT AND PUSH", run(root, "status")[1])
-            git(root, "add", "-A")
-            git(root, "commit", "-q", "-m", "art")
-            self.assertEqual(set(ha.states(root, q).values()), {"saved"}, "committed but not pushed is still 'saved'")
-            git(root, "push", "-q", "origin", "main")
-            self.assertEqual(set(ha.states(root, q).values()), {"pushed"})
-            self.assertIn("STOP. The anchors are done", run(root, "status")[1])
-            # the reviewer rejects one: it becomes 'redo' until re-saved
-            (root / "production/art").mkdir(exist_ok=True)
-            (root / "production/art/SELECTIONS.json").write_text(json.dumps({"ART-T-BEAST": {"status": "rejected"}}))
-            st = ha.states(root, q)
-            self.assertEqual(st["ART-T-BEAST"], "redo")
-            self.assertIn("ART-T-BEAST", run(root, "next")[1])
-            code, out, err = run(root, "save", "ART-T-SCENE", str(tmp / "ART-T-BEAST.png"))
-            self.assertEqual(code, 2, "a delivered, un-rejected item needs --redo")
-            # a refusal is its own state, is not offered again, and its receipt must be pushed
-            code, out, err = run(root, "refuse", "ART-T-HERO", "--reason", "policy")
-            self.assertEqual(code, 0, err)
-            self.assertEqual(ha.states(root, q)["ART-T-HERO"], "refused")
-            status = run(root, "status")[1]
-            self.assertIn("refused=1", status)
-            self.assertIn("COMMIT AND PUSH", status)
-            self.assertNotIn("ART-T-HERO", run(root, "next")[1])
-            git(root, "add", "-A")
-            git(root, "commit", "-q", "-m", "refusal")
-            git(root, "push", "-q", "origin", "main")
-            status = run(root, "status")[1]
-            self.assertNotIn("COMMIT AND PUSH", status)
-            self.assertIn("ART-T-BEAST", status)                       # still 'redo' work first
-            (root / "production/art/SELECTIONS.json").write_text("{}")
-            status = run(root, "status")[1]
-            self.assertIn("STOP. The anchors are done (1 refused: ART-T-HERO)", status)
-            # a later save replaces the refusal
-            p = tmp / "retry.png"
-            figure_image((1024, 1536), scale=0.6).save(p)
-            self.assertEqual(run(root, "save", "ART-T-HERO", str(p), "--redo")[0], 0)
-            self.assertEqual(ha.states(root, q)["ART-T-HERO"], "saved")
-            # batch phase with everything pushed
-            git(root, "add", "-A")
-            git(root, "commit", "-q", "-m", "retry")
-            git(root, "push", "-q", "origin", "main")
-            q2 = json.loads((root / "production/art/gpt/QUEUE.json").read_text())
-            q2["phase"] = "batch"
-            (root / "production/art/gpt/QUEUE.json").write_text(json.dumps(q2))
-            (root / "production/art/SELECTIONS.json").write_text("{}")
-            self.assertIn("NOTHING LEFT", run(root, "status")[1])
+            code, out, err = save(root, iid, p)
+            self.assertEqual(code, 0, err + out)
+        self.assertEqual(set(ha.states(root, q).values()), {"saved"})
+        self.assertIn("COMMIT AND PUSH", run(root, "status")[1])
+        git(root, "add", "-A")
+        git(root, "commit", "-q", "-m", "art")
+        self.assertEqual(set(ha.states(root, q).values()), {"saved"}, "committed but not pushed is still 'saved'")
+        git(root, "push", "-q", "origin", "main")
+        self.assertEqual(set(ha.states(root, q).values()), {"pushed"})
+        self.assertIn("STOP. The anchors are done", run(root, "status")[1])
+        # the reviewer rejects one: it becomes 'redo' until re-saved
+        (root / "production/art").mkdir(exist_ok=True)
+        (root / "production/art/SELECTIONS.json").write_text(json.dumps({"ART-T-BEAST": {"status": "rejected"}}))
+        self.assertEqual(ha.states(root, q)["ART-T-BEAST"], "redo")
+        self.assertIn("ART-T-BEAST", run(root, "next")[1])
+        code, out, err = save(root, "ART-T-SCENE", self.tmp / "ART-T-BEAST.png")
+        self.assertEqual(code, 2, "a delivered, un-rejected item needs --redo")
+        # a refusal is its own state, is not offered again, and its receipt must be pushed
+        code, out, err = run(root, "refuse", "ART-T-HERO", "--reason", "policy")
+        self.assertEqual(code, 0, err)
+        self.assertEqual(ha.states(root, q)["ART-T-HERO"], "refused")
+        status = run(root, "status")[1]
+        self.assertIn("refused=1", status)
+        self.assertNotIn("ART-T-HERO", run(root, "next")[1])
+        git(root, "add", "-A")
+        git(root, "commit", "-q", "-m", "refusal")
+        git(root, "push", "-q", "origin", "main")
+        status = run(root, "status")[1]
+        self.assertNotIn("COMMIT AND PUSH", status)
+        self.assertIn("ART-T-BEAST", status)                       # still 'redo' work first
+        (root / "production/art/SELECTIONS.json").write_text("{}")
+        self.assertIn("STOP. The anchors are done (1 refused: ART-T-HERO", run(root, "status")[1])
+        # a later save replaces the refusal
+        p = self.tmp / "retry.png"
+        figure_image((1024, 1536), scale=0.6).save(p)
+        self.assertEqual(save(root, "ART-T-HERO", p, "--redo")[0], 0)
+        self.assertEqual(ha.states(root, q)["ART-T-HERO"], "saved")
+        git(root, "add", "-A")
+        git(root, "commit", "-q", "-m", "retry")
+        git(root, "push", "-q", "origin", "main")
+        q2 = json.loads((root / "production/art/gpt/QUEUE.json").read_text())
+        q2["phase"] = "batch"
+        (root / "production/art/gpt/QUEUE.json").write_text(json.dumps(q2))
+        self.assertIn("NOTHING LEFT", run(root, "status")[1])
+
+    def test_status_waits_for_a_batch_before_asking_for_a_push(self):
+        root = self.make()
+        with mock.patch.object(ha, "BATCH_PUSH_AT", 2):
+            self.assertEqual(save(root, "ART-T-SCENE", self._img(scene=True))[0], 0)
+            one = run(root, "status")[1]
+            self.assertIn("GENERATE next", one)
+            self.assertIn("1 saved and not sent yet", one)
+            self.assertNotIn("COMMIT AND PUSH", one)
+            end = run(root, "status", "--end")[1]
+            self.assertIn("COMMIT AND PUSH", end)
+            self.assertIn("art(gpt): ART-T-SCENE .. ART-T-SCENE", end)
+            self.assertIn("git lfs ls-files", end)
+            self.assertEqual(save(root, "ART-T-BEAST", self._img())[0], 0)
+            two = run(root, "status")[1]
+            self.assertIn("COMMIT AND PUSH", two)
+            self.assertIn("ART-T-SCENE .. ART-T-BEAST", two)
+
+    def _img(self, scene=False):
+        p = self.tmp / f"img{len(list(self.tmp.glob('img*')))}.png"
+        (scene_image() if scene else figure_image(scale=0.55 + 0.02 * len(list(self.tmp.glob("img*"))))).save(p)
+        return p
+
+    def test_bundle_with_git_uses_unpushed_images(self):
+        root = self.make()
+        self.assertEqual(save(root, "ART-T-BEAST", self._img())[0], 0)
+        code, out, err = run(root, "bundle")
+        self.assertEqual(code, 0, err)
+        git(root, "add", "-A")
+        git(root, "commit", "-q", "-m", "a")
+        git(root, "push", "-q", "origin", "main")
+        code, out, err = run(root, "bundle")
+        self.assertEqual(code, 2)
+        self.assertIn("nothing unsent", err)
 
 
 class SkillSources(unittest.TestCase):
@@ -379,6 +523,11 @@ class SkillSources(unittest.TestCase):
         self.assertTrue(skill.startswith("---\nname: heraldry-classic-ink-art\n"))
         for ref in set(re.findall(r"`((?:references|scripts)/[A-Za-z0-9_./-]+)`", skill)):
             self.assertTrue((SKILL / ref).exists(), ref)
+        # every command in the helper table exists as a subcommand, and the full path in the docs is real
+        for cmd in re.findall(r"^\| `([a-z]+)[ `]", skill, re.M):
+            self.assertTrue(hasattr(ha, "cmd_" + cmd), cmd)
+        self.assertTrue((ROOT / "production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py").is_file())
+        self.assertIn("python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py", skill)
 
 
 @unittest.skipUnless((ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip").is_file() and (ROOT / "assets/art/style").is_dir(),

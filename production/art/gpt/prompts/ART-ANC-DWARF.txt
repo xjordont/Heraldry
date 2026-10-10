@@ -12,7 +12,7 @@ Full figure in three-quarter view, braced wide-stanced, lantern held forward in 
 Single full-length adventurer of this ancestry in travel-worn gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.
 
 SUBJECT DETAILS
-* Very broad shoulders, short thick limbs, stocky frame, shorter than the Human but heavier
+* Very broad shoulders, short thick limbs, stocky frame, human-sized but far heavier in build
 * Long braided beard with metal rings, heavy brow, deep-set eyes used to the dark
 * Heavy mail or plated chest armour worn with ease, scuffed and re-riveted
 * Round shield strapped on the lantern arm, handaxe in the other hand
@@ -20,7 +20,7 @@ SUBJECT DETAILS
 * Thick hobnailed boots planted on a small patch of worn flagstone
 * Stone-cut craftsmanship in belt buckle and axe head
 Must be shown exactly:
-* Clearly shorter than an Elf or Orc, but broad and heavy
+* Broad and heavy build: shoulders very wide for the height, thick short limbs, no slender lines
 
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:

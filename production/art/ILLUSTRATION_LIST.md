@@ -688,7 +688,7 @@ Depict this faithfully and invent nothing that contradicts it:
 Ancient, watchful and indifferent to humans.
 Do not draw:
 * No people; the climate is the subject.
-* Do not repeat the Whispering Grove scenario (that has humming standing stones in a clearing).
+* Do not make the grove circle the focus: it is a small mossy ring of stones in the middle distance, so this is not the Whispering Grove scenario (standing stones in a clearing as the whole subject).
 * Do not detail the hound shapes: barely seen silhouettes only.
 * No letters in the bark signs.
 ```
@@ -1134,7 +1134,7 @@ Create an exceptionally detailed black-and-white pen-and-ink illustration of a D
 COMPOSITION
 Full figure in three-quarter view, braced wide-stanced, lantern held forward in one hand with a round shield strapped on that forearm, handaxe ready in the other hand.
 SUBJECT DETAILS
-* Very broad shoulders, short thick limbs, stocky frame, shorter than the Human but heavier
+* Very broad shoulders, short thick limbs, stocky frame, human-sized but far heavier in build
 * Long braided beard with metal rings, heavy brow, deep-set eyes used to the dark
 * Heavy mail or plated chest armour worn with ease, scuffed and re-riveted
 * Round shield strapped on the lantern arm, handaxe in the other hand
@@ -1142,7 +1142,7 @@ SUBJECT DETAILS
 * Thick hobnailed boots planted on a small patch of worn flagstone
 * Stone-cut craftsmanship in belt buckle and axe head
 Must be shown exactly:
-* Clearly shorter than an Elf or Orc, but broad and heavy
+* Broad and heavy build: shoulders very wide for the height, thick short limbs, no slender lines
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Dwarves are cut from sealed stone halls, old grudges, and craft traditions older than most fallen kingdoms. Hardship did not sour them so much as harden them, and little in this world meets one of them head-on and walks away whole."

@@ -21,7 +21,8 @@ This file is the repo-side contract and the skill is the procedure. They say the
 - Append one line per image to `production/art/gpt/RECEIPTS.jsonl`: `{"id": "...", "prompt_sha256": "<from the queue>", "surface": "ChatGPT Work", "model": "<image model if shown>", "date_utc": "YYYY-MM-DD", "variants_tried": N, "notes": "<anything unusual>"}`. The helper's `save` command writes it. A refusal by the image tool is recorded with the helper's `refuse` command.
 - Change no other file. Never edit the manuscript, prompts, queue, tools or skill. No branches. No force-push.
 - Commit and push to `main` after every 5–10 images with the message `art(gpt): <first id> .. <last id>`. Run `git pull --rebase origin main` before each push, because the intake workflow commits to `main` after every push of yours. If a push is rejected, pull with rebase again and retry.
-- PNGs are stored with Git LFS: `git lfs ls-files` must list each new PNG. Clone with `GIT_LFS_SKIP_SMUDGE=1` and fetch only what you need with `git lfs pull --include="assets/art/incoming/*.png"`. Do not download the private reference PDFs.
+- PNGs are stored with Git LFS: after `git add` and before `git commit`, `git lfs ls-files` must list each new PNG. Clone with `GIT_LFS_SKIP_SMUDGE=1`, run `git lfs install --local --skip-smudge`, and fetch only the reference images that `doctor` names. Do not download the private reference PDFs or every delivered PNG.
+- If the image tool cannot take the listed references, or takes fewer, say so in the receipt notes (`references attached: N of M`) and in your report. If it shows a revised prompt, note that too.
 - The anchors phase comes first. After you push the anchors, stop and wait: Claude Code reviews them and publishes the batch queue with the approved anchors in the reference sets.
 - Never describe these images as hand-drawn, and never mark one approved.
 

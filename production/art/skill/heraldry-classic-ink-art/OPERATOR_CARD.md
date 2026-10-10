@@ -4,7 +4,7 @@
 
 1. **ChatGPT Work** runs the `anchors` queue (5 images) and pushes. It stops.
 2. **You** tell Claude Code: "Review the anchors." Claude Code runs the intake, looks at them, approves or rejects them, and publishes the batch queue.
-3. **ChatGPT Work** runs the batch in order, committing every 5–10 images.
+3. **ChatGPT Work** runs the batch in order, pushing every 5 images (never more than 10 unsent) and at session end.
 4. **Claude Code** reviews each push. A rejected image goes back into the queue and shows as `redo`.
 5. Repeat 3 and 4 until `status` reports nothing left.
 
@@ -18,7 +18,7 @@ Claude Code owns the prompts, queue, references, review and approval. ChatGPT Wo
 
 **Batch run**
 
-> Use the heraldry-classic-ink-art skill on xjordont/heraldry, main. Pull, run doctor and status, then work through the queue in order without asking me between items. Commit every 5–10 images. Stop at a stop condition and give me the report.
+> Use the heraldry-classic-ink-art skill on xjordont/heraldry, main. Pull, run doctor and status, then work through the queue in order without asking me between items. Push every 5 images and at session end. Stop at a stop condition and give me the report.
 
 **Resume (new conversation)**
 

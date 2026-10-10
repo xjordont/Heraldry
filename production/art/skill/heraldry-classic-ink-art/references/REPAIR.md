@@ -2,13 +2,13 @@
 
 ## Budget
 
-At most the item's `max_attempts` generations (the queue says; usually 3, cover and chapters 5). Never exceed it. Stop at the first attempt with no hard fail. After the last allowed attempt, save the best one with `--accept-flags` and say in `--notes` what is still wrong. The reviewer can send the item back; you do not need to keep trying.
+At most the item's `max_attempts` generations (the queue says; usually 3, cover and chapters 5). Never exceed it. The helper counts every distinct image you run through `check`, shows "attempt N of M", and fails an attempt beyond the budget. Stop at the first attempt with no hard fail. After the last allowed attempt save the best one with `--accept-flags` and say in `--notes` what is still wrong. The reviewer can send the item back; you do not need to keep trying.
 
 An edit through the image tool's own edit or regenerate control counts as an attempt. Never open an image in any other editor.
 
 ## How to retry
 
-Use the same prompt, verbatim, plus one correction sentence at the very end. The sentence names what to change and what to keep. Add at most two corrections over all retries. Record each in `--notes`. The receipt's `prompt_sha256` stays the queue's value: the correction is a recorded addition, not a different prompt.
+A retry prompt is the verbatim prompt plus at most two correction sentences at the very end. Each names what to change and what to keep. Put the failure that breaks the earliest-numbered hard fail first. If a failure persists, repeat or sharpen its sentence; never stack more than two. Record the sentences in `--notes`. The receipt's `prompt_sha256` stays the queue's value: the corrections are a recorded addition, not a different prompt.
 
 If a retry makes the image worse, go back to the better earlier one and use that.
 
@@ -35,6 +35,8 @@ If a retry makes the image worse, go back to the better earlier one and use that
 | Subject too small or too fine to read when printed small | `Correction: draw the subject larger, filling about 70% of the frame, with fewer and bolder forms.` |
 | Same pose or composition as a sibling | `Correction: <the pose or camera the prompt describes>, a different composition from the references.` |
 
-## When the prompt itself seems wrong
+## When a requirement seems to clash
 
-If the prompt contradicts itself or the rulebook text it quotes, do not fix it. Generate once as written, save with a note, and put the contradiction in your report. Claude Code owns the prompts.
+A must-show item that looks opposed to a do-not-draw line is almost always about scale or focus, not a contradiction. Satisfy both the narrowest way: draw the required item as small and incidental as the prompt's composition places it, and do not make it the subject. Do not stop, and do not use `--accept-flags`.
+
+If the prompt truly cannot be satisfied, or contradicts the rulebook text it quotes, do not fix it. Generate once as written, save with a note, and put the contradiction in your report. Claude Code owns the prompts.
