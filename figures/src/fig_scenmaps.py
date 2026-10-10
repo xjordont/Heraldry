@@ -710,11 +710,11 @@ def draw_map(sp, width=COL_W, bx=None, by=14.0):
 fig_audit = {}
 FIRST_MAP_FIG = 21
 LEGEND_FIG = "FIG-20"
-LEGEND_ANCHOR_LINE = 11972
-TEMPLATE_ANCHOR_LINE = 11064
-LEGEND_LINES = [594, 618, 619, 11037, 11058, 11060, 11074]
-TEMPLATE_LINES = [592, 11064, 11070, 11071, 11073, 11074, 11075]
-SHARED_OK = list(range(11031, 11079)) + list(range(14872, 14969)) + [10986, 594, 592]
+LEGEND_ANCHOR_LINE = 11970
+TEMPLATE_ANCHOR_LINE = 11062
+LEGEND_LINES = [594, 618, 619, 11035, 11056, 11058, 11072]
+TEMPLATE_LINES = [592, 11062, 11068, 11069, 11071, 11072, 11073]
+SHARED_OK = list(range(11029, 11077)) + list(range(14870, 14967)) + [10984, 594, 592]
 
 
 def build_fig(key):
@@ -932,12 +932,12 @@ def meta_entries():
     out[LEGEND_FIG] = dict(
         title="Key to the setup and deployment diagrams",
         purpose="One shared key for every setup and deployment diagram (the deployment patterns, the Chasm Crossing and Whispering Grove details, the Appendix A and B maps and the 36 Core Scenario maps): one swatch per glyph, pattern, line type and status convention, drawn by the same functions as the diagrams.",
-        source_refs=["10.1 Random Direction and Battlefield Edges (11058-11060)", "10.1 Setup Roll-off (11037) and Preparation Steps, step 11 (11074)",
+        source_refs=["10.1 Random Direction and Battlefield Edges (11056-11058)", "10.1 Setup Roll-off (11035) and Preparation Steps, step 11 (11072)",
                      "2.6 Measurement (594) and Size and Footprints (618-619)", "2.9.1 Terrain Types (832-878)"],
         geometry_spec="Four columns of swatches (parties and zones; markers, Monsters and steps; terrain; pieces, distances, edges and status), %d entries, one per glyph id in scenkit.REG, above six short notes on orientation, scale, counts, solid and dashed, not-placed elements and the step 11 default; no board geometry beyond the swatches. make_figures checks that every glyph and pattern id emitted by any setup diagram appears here." % len(key_ids()),
         caption="Key to the setup and deployment diagrams: symbols for Heroes, zones, markers, Monster Groups, terrain, distances, edges and not-placed elements, with the orientation, scale and grey-dashed conventions every such diagram follows (see 10.4).",
         insert_after="B%05d" % LEGEND_ANCHOR_LINE, scope="full", schematic=False,
-        semantic_check="Swatches are drawn by the same shared glyph functions as the diagrams; every inch value printed (6\", 8\"x8\", 2\"x2\", 3\"x3\") is checked against lines 594, 618-619 and 11074; North/short/long edge naming against 11058-11060; closest-point measurement against 594. The registry check proves the key covers every id used on FIG-13 to FIG-16 and FIG-18 to FIG-57.",
+        semantic_check="Swatches are drawn by the same shared glyph functions as the diagrams; every inch value printed (6\", 8\"x8\", 2\"x2\", 3\"x3\") is checked against lines 594, 618-619 and 11072; North/short/long edge naming against 11056-11058; closest-point measurement against 594. The registry check proves the key covers every id used on FIG-13 to FIG-16 and FIG-18 to FIG-57.",
         ambiguity="None in the key. Terrain pieces whose type the scenario leaves to 2.9.1 ('Impassable or Blocking') use a neutral grey swatch rather than either type.",
         new_figure=True)
     for key in scenario_order():
@@ -947,7 +947,7 @@ def meta_entries():
         for e in sp["elements"]:
             cnt[STATUS_KEYS[e["status"]]] += 1
         refs = ["10.4 %s Scenario %d: %s (source lines %d-%d)" % (climate, sno, title, hl, end),
-                "10.1 Preparation Steps, step 11 (11074)" if any(11074 in e.get("shared", []) for e in sp["elements"]) else "10.1 Preparation Steps (11062-11075)"]
+                "10.1 Preparation Steps, step 11 (11072)" if any(11072 in e.get("shared", []) for e in sp["elements"]) else "10.1 Preparation Steps (11060-11073)"]
         out[sp["fig"]] = dict(
             title="%s Scenario %d: %s, deployment map" % (climate, sno, title),
             purpose="Column-width top-down map of the setup for %s %d: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states and the shared symbols of FIG-20." % (climate, sno),
@@ -961,11 +961,11 @@ def meta_entries():
     out["FIG-%d" % (FIRST_MAP_FIG + 36)] = dict(
         title="10.1 Preparation Steps: procedural template",
         purpose="Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default deployment zones and the step 7 terrain exclusion distances on a generic battlefield.",
-        source_refs=["10.1 Preparation Steps, steps 1-12 (11064-11075)", "2.6 Measurement (592)"],
+        source_refs=["10.1 Preparation Steps, steps 1-12 (11062-11073)", "2.6 Measurement (592)"],
         geometry_spec="Left: the 12 Preparation Steps as numbered rows (steps 7 and 11 highlighted). Right: two 36\"x36\" boards at 3.3 pt per inch, drawn with the shared zone, Hero and dimension glyphs. Edge default: zones 6\" deep on opposite edges, exclusion (hatched) = 3\" from an edge and 6\" from a zone (allowed region 12\"-24\" across, 3\"-33\" down). Corner default: 8\"x8\" corner zones diagonally opposite, exclusion with rounded 6\" corners.",
         caption="Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default zones (6\" deep or 8\"×8\" corners) and the step 7 limits on major Blocking and Impassable Terrain (3\" from an edge, 6\" from a zone); key: FIG-20 (see 10.1).",
         insert_after="B%05d" % TEMPLATE_ANCHOR_LINE, scope="full", schematic=True,
-        semantic_check="Step text compared with lines 11064-11075; 3\" and 6\" from step 7 (11070), 6\", 8\"x8\" and alternate placing from step 11 (11074); selfcheck asserts 6+6=12, 36-12=24, 8+6=14 and that the printed inch values appear in the cited lines.",
+        semantic_check="Step text compared with lines 11062-11073; 3\" and 6\" from step 7 (11068), 6\", 8\"x8\" and alternate placing from step 11 (11072); selfcheck asserts 6+6=12, 36-12=24, 8+6=14 and that the printed inch values appear in the cited lines.",
         ambiguity="None. Which edge pair or corner pair is used is chosen by the Setup Roll-off winner; the figure shows one example of each and says so.",
         new_figure=True)
     return out
@@ -1140,7 +1140,7 @@ def check_one(key, sp, spans, errs, L, width=COL_W):
             errs.append("%s: on-terrain %s" % (tag, e["on"]))
         if e["kind"] == "edge" and e["mode"] == "arrive" and "midpoint" in _text_of(e["lines"]) and e.get("pos") != n / 2:
             errs.append("%s: arrival at an edge midpoint must be drawn at %s\"" % (tag, n / 2))
-        if e.get("guards"):      # "guarding the item nearest the battlefield centre" (13950): drawn beside that item, and it must be the nearest
+        if e.get("guards"):      # "guarding the item nearest the battlefield centre" (13948): drawn beside that item, and it must be the nearest
             g = e["guards"]
             cand = {i: next(x for x in sp["elements"] if x["id"] == i) for i in g["among"]}
             near = min(cand, key=lambda i: math.hypot(cand[i]["at"][0] - n / 2, cand[i]["at"][1] - n / 2))
@@ -1351,23 +1351,23 @@ APPX_COVERAGE = {
     "A": dict(
         key="Appendix A: Learn to Play, A.4 Quickstart Scenario: The Broken Courier",
         setup_rules=["A.2 terrain list", "A.4 Setup Roll-off (short edge, 4\" zones)", "A.11 Initial Positions"],
-        drawn_in_figure=["24\"x24\" battlefield drawn by the shared map renderer at 7.5 pt per inch", "4\" deployment zones on the two short edges (16186, 16356)",
-                         "3\"x3\" centre ruin, Blocking (16110)", "low wall about 2\"x3\", Impassable, 4-6\" from the centre on one flank (16111; flank open, grey dashed)",
-                         "rubble about 3\"x3\", Cover tagged Difficult, 4-6\" from the centre on the opposite flank (16112; grey dashed)",
-                         "two Cover scatter pieces (16113; grey dashed)",
-                         "Dispatch Satchel adjacent to the centre ruin (16182, 16360; side not stated, so one legal arrangement in grey dashes)",
-                         "4 Dire Wolves within 2\" of the Satchel (16184; grey dashed) with the A.11 relative layout shown as a labelled inset",
-                         "Treasure Chest 5\" east of centre (A.11 table, 16361), Heroes Edric, Mara, Varek, Senna at the A.11 table positions (16362-16365)",
-                         "extraction through any battlefield edge (16196)"],
+        drawn_in_figure=["24\"x24\" battlefield drawn by the shared map renderer at 7.5 pt per inch", "4\" deployment zones on the two short edges (16184, 16354)",
+                         "3\"x3\" centre ruin, Blocking (16108)", "low wall about 2\"x3\", Impassable, 4-6\" from the centre on one flank (16109; flank open, grey dashed)",
+                         "rubble about 3\"x3\", Cover tagged Difficult, 4-6\" from the centre on the opposite flank (16110; grey dashed)",
+                         "two Cover scatter pieces (16111; grey dashed)",
+                         "Dispatch Satchel adjacent to the centre ruin (16180, 16358; side not stated, so one legal arrangement in grey dashes)",
+                         "4 Dire Wolves within 2\" of the Satchel (16182; grey dashed) with the A.11 relative layout shown as a labelled inset",
+                         "Treasure Chest 5\" east of centre (A.11 table, 16359), Heroes Edric, Mara, Varek, Senna at the A.11 table positions (16360-16363)",
+                         "extraction through any battlefield edge (16194)"],
         not_drawn=["the third scatter piece (A.2 allows 2-3; positions open)"],
         ambiguities=["Which side of the centre ruin the Satchel (and therefore the Dire Wolves) stands on is not stated; drawn as one legal arrangement."]),
     "B": dict(
         key="Appendix B: Basic Mode, B.6 Basic Scenario: The Courier's Strongbox",
         setup_rules=["B.6 deployment (4\" of opposite edges)", "B.6 Monster Setup (3 Monster Entry markers, 5-7\" from centre, 4\" apart)"],
-        drawn_in_figure=["24\"x24\" battlefield drawn by the shared map renderer at 7.5 pt per inch", "4\" zones on opposite edges (17080; which edges is not stated, so grey dashed, north and south drawn)",
-                         "road across the centre (17078; width not stated)", "Strongbox at the centre (17084)",
-                         "Monster Entry markers 5-7\" from the centre, at least 4\" apart, outside both zones (17082)", "one Monster group and one Satchel on each marker, drawn beside it (17082, 17084)",
-                         "2 ruins/carts/low walls within 4\" of centre, 4 quarter pieces of 3\"x3\" (17078)", "extraction through the own deployment edge (17092)", "no Advanced Mode rules shown"],
+        drawn_in_figure=["24\"x24\" battlefield drawn by the shared map renderer at 7.5 pt per inch", "4\" zones on opposite edges (17078; which edges is not stated, so grey dashed, north and south drawn)",
+                         "road across the centre (17076; width not stated)", "Strongbox at the centre (17082)",
+                         "Monster Entry markers 5-7\" from the centre, at least 4\" apart, outside both zones (17080)", "one Monster group and one Satchel on each marker, drawn beside it (17080, 17082)",
+                         "2 ruins/carts/low walls within 4\" of centre, 4 quarter pieces of 3\"x3\" (17076)", "extraction through the own deployment edge (17090)", "no Advanced Mode rules shown"],
         not_drawn=["which opposite edges are the deployment edges and who places the Entry markers are not stated (north and south drawn as one legal arrangement)"],
         ambiguities=[]),
 }
