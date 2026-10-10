@@ -40,6 +40,31 @@ def table_cell(blk, col):
     return None
 
 
+PLAN = ROOT / "production/art/SUBJECT_PLAN.json"
+
+
+def audit(entries):
+    """Uniqueness gate: every entry needs a distinct visual subject. Entries whose names share a
+    core noun (e.g. Goblin ancestry vs Goblin monster, a dragon vs a named dragon boss) must be
+    separated by family framing or explicit direction; chapter subjects must not repeat an entry."""
+    subj = {}
+    for e in entries:
+        key = (e.get("subject") or "") + "|" + (e.get("direction") or "") + "|" + (e.get("flavour") or "")
+        if key in subj:
+            raise SystemExit(f"duplicate visual subject: {e['id']} and {subj[key]}")
+        subj[key] = e["id"]
+    core = lambda t: re.sub(r"^(scenario \d+: |the |tier \d )", "", t.lower()).split(" [")[0]
+    names = {}
+    for e in entries:
+        names.setdefault(core(e["title"]), []).append(e)
+    for n, es in names.items():
+        fams = [x["family"] for x in es]
+        if len(es) > 1 and len(set(fams)) < len(fams) and not all("direction" in x for x in es):
+            raise SystemExit(f"same name and family: {[x['id'] for x in es]}")
+        if len(es) > 1 and sum("direction" not in x for x in es) > 1:
+            raise SystemExit(f"name collision without direction: {[x['id'] for x in es]}")
+
+
 def main():
     model = json.loads((ROOT / "build/blocks.json").read_text())
     man = json.loads((ROOT / "production/art/ART_MANIFEST.json").read_text())["assets"]
@@ -81,8 +106,19 @@ def main():
                             "title": name, "context": [t for _, t in stack[:-1]][-2:],
                             "flavour": text(blocks[i + 1]["c"]).strip(), "facts": facts,
                             "src_lines": b["src"]})
+    # orchestrator art direction: fresh chapter subjects, boss family, per-entry unique subjects
+    plan = json.loads(PLAN.read_text()) if PLAN.exists() else {"chapters": {}, "direction": {}}
     for e in entries:
-        e["spec_sha256"] = hashlib.sha256(json.dumps({k: e.get(k) for k in ("family", "title", "subject", "composition", "flavour", "facts", "context")}, sort_keys=True).encode()).hexdigest()
+        if e["id"] in plan["chapters"]:
+            e.update(plan["chapters"][e["id"]])
+        if e["family"] == "monster" and e.get("context") and e["context"][-1] == "Bosses":
+            e["family"] = "boss"
+        if plan["direction"].get(e["id"]):
+            e["direction"] = plan["direction"][e["id"]]
+    for e in entries:
+        keys = ("family", "title", "subject", "composition", "flavour", "facts", "context") + (("direction",) if "direction" in e else ())
+        e["spec_sha256"] = hashlib.sha256(json.dumps({k: e.get(k) for k in keys}, sort_keys=True).encode()).hexdigest()
+    audit(entries)
     counts = {}
     for e in entries:
         counts[e["family"]] = counts.get(e["family"], 0) + 1

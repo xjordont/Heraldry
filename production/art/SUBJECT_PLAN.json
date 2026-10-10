@@ -1,0 +1,129 @@
+{
+ "note": "Orchestrator art direction (2026-10-08, owner instruction: 'Ensure unique art planned for every illustration'). Chapter subjects replace the legacy ChatGPT-era subjects; 'direction' gives a concrete, unique visual subject where the flavour text is abstract or another entry would otherwise look the same. Flavour text is still quoted verbatim in every prompt. The six approved-pending anchors carry no direction so their specs stay unchanged.",
+ "chapters": {
+  "ART-CH01-002": {
+   "subject": "The Dying Lands seen from a broken mountain pass: a cracked imperial road winding down toward the skeletal towers of a dead city on the horizon, forest to one side and frozen peaks to the other; a small party with a banner pauses on the road in the foreground",
+   "composition": "Wide vista; party small at lower left; road leads the eye to the distant dead city"
+  },
+  "ART-CH02-002": {
+   "subject": "Two rival adventuring parties sighting each other across a fog-filled valley of ruined walls at first light, each crouched behind cover with weapons ready, a monster's silhouette moving in the mist between them",
+   "composition": "Wide shot; one party at lower left, the other small at far right; fog band across the middle"
+  },
+  "ART-CH03-002": {
+   "subject": "Dawn of a new round: a weary party gathering behind a ruined wall as a lone chapel bell tower stands over a drowned field",
+   "composition": "Wide shot, low horizon, bell tower silhouette at right"
+  },
+  "ART-CH04-002": {
+   "subject": "A party crossing the broken spans of a collapsed aqueduct: one climbs a rope, one leaps a gap, one braces to catch, the gorge falling away below",
+   "composition": "Strong diagonal of the broken aqueduct; figures mid-motion; deep drop beneath"
+  },
+  "ART-CH05-002": {
+   "subject": "A desperate melee on a narrow stone bridge: adventurers locked shield-to-shield against a press of undead soldiers, one hero falling back wounded, the river far below",
+   "composition": "Bridge seen from a low three-quarter angle; the clash at centre; ranks of undead receding into fog"
+  },
+  "ART-CH06-002": {
+   "subject": "A crowded hiring hall inside a Bastion: adventurers of many ancestries (dwarf, elf, ratkin, orc, halfling, human) bargaining over a contract nailed to a post beneath captured banners, a clerk with a ledger and coin scales",
+   "composition": "Interior wide shot; contract post at the focal centre; figures grouped around it"
+  },
+  "ART-CH07-002": {
+   "subject": "A Deepwarden forge cut into the rock: a smith quenching a glowing blade in a trough as steam rises, finished mail, helms and axes on racks, an apprentice working the bellows",
+   "composition": "Interior; smith at the focal centre; racks framing both sides"
+  },
+  "ART-CH08-002": {
+   "subject": "A lone caster standing in the burned shell of an academy library at night, pages and embers swirling upward around them as a ring of force flares from an outstretched hand",
+   "composition": "Tall broken shelves framing the figure; swirl of pages around the focal point"
+  },
+  "ART-CH09-002": {
+   "subject": "The aftermath of a hunt at the forest's edge: a party standing over a slain beast too large to drag home, crows gathering on the carcass, eyes glinting in the treeline behind",
+   "composition": "Carcass across the foreground; party in the middle ground; treeline dark behind"
+  },
+  "ART-CH10-002": {
+   "subject": "A party at a ruined crossroads reading a weathered, carved waystone; six roads lead away, toward forest, ruined city, mountain caves, ice, desert and fen on the horizon",
+   "composition": "Waystone at centre; roads fanning out; six distant landscapes along the horizon"
+  },
+  "ART-CH11-002": {
+   "subject": "A battered party returning at dusk by fen-lantern light, carrying their wounded on a litter toward their stronghold's palisade gate, watchers on the wall above",
+   "composition": "Gate at right; procession along a muddy track from the left; lanterns as focal points"
+  }
+ },
+ "direction": {
+  "ART-WOR-1-2-THE-GRIM-WORLD": "Two warlords' banners planted on either side of a burnt farmstead; a tax collector's cart and armed men in the yard while a peasant family flees down the lane.",
+  "ART-WOR-1-3-1-THE-FALL": "The colossal broken head of an imperial statue lying half-buried in a ploughed field, a farmer and ox small beside it; nobody knows what toppled it.",
+  "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN": "A sweeping panorama from the spine of the broken mountains: western forest, eastern dead city, northern ice and southern dunes all visible at once under one sky; a lone surveyor with a staff in the foreground.",
+  "ART-WOR-1-3-3-THE-SIX-BASTIONS": "A great Bastion gate grinding shut at dusk, guards straining at the windlass inside while desperate figures outside reach for the closing gap.",
+  "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS": "A still life on a cracked altar: five damaged implements, one per tradition - a scorched spellbook, a chipped holy symbol, a bloodied ritual knife, a withered antler-and-holly charm, and a cracked crystal - each broken in its own way.",
+  "ART-WOR-1-3-5-MONSTROUS-THREATS": "An abandoned village street: claw-torn doors, an empty well, and a crude monster banner planted where the market cross once stood.",
+  "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD": "A small party walking out of a Bastion's postern gate along a muddy road, past a gibbet and a weathered warning post, toward a dark forest edge.",
+  "ART-WOR-1-3-7-LEGENDS-AND-ECHOES": "A barrow field at dusk where faint ghostly warriors of an ancient battle re-enact their last charge through the living grass, drawn only in sparse fine lines.",
+  "ART-ITE-7-6-TREASURE-TABLES": "A still life of grim treasure: a rotted purse spilling tarnished coins beside a skeletal hand, a mud-caked crown, a cracked reliquary and a salt-crusted signet ring.",
+  "ART-ITE-7-8-MELEE-WEAPONS": "A still life of salvaged arms laid on sacking: a long-bladed messer, a notched swordbreaker, a throwing cross, a bladed scourge, a weighted cord and a hook-and-chain.",
+  "ART-TRA-TIER-1-ARCANE-SPELLS-D20": "A young apprentice at a scarred practice post conjuring a small flame in one hand while a shimmer of force bends the air before the other.",
+  "ART-TRA-TIER-2-ARCANE-SPELLS-D20": "A wizard hurriedly copying a spell from a scorched tome by candlelight while the library behind them burns.",
+  "ART-TRA-TIER-3-ARCANE-SPELLS-D20": "A wizard sifting ash and cipher-scraps among robed corpses on the floor of a ruined tower, a sealed book clutched to their chest.",
+  "ART-TRA-TIER-1-DIVINE-PRAYERS-D20": "A priest raising a lantern whose light falls on a wounded soldier, the wound visibly knitting closed.",
+  "ART-TRA-TIER-2-DIVINE-PRAYERS-D20": "A weary cleric kneeling at a cracked roadside shrine beside a ledger of offerings, candles guttering.",
+  "ART-TRA-TIER-3-DIVINE-PRAYERS-D20": "A priest with arms raised on a hilltop, demanding, as a vast ambiguous shape takes form in the storm clouds above.",
+  "ART-TRA-TIER-1-SORCERIES-D20": "A close view of a sorcerer's cut palm, drops of blood rising and twisting into a small crackling spark.",
+  "ART-TRA-TIER-2-SORCERIES-D20": "A gaunt sorcerer with scar-laddered forearms channelling a crackling storm between their hands.",
+  "ART-TRA-TIER-3-SORCERIES-D20": "A sorcerer half-consumed by their own working, a vortex of force tearing up the ground, villagers praying on their knees at a safe distance.",
+  "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20": "A druid kneeling with one palm pressed to an exposed root, a hare and a crow watching, rain beginning to fall.",
+  "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20": "A druid speaking aloud as the surrounding trees bend toward them and roots heave up out of the earth.",
+  "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20": "A druid half-merged with an ancient oak, bark creeping over their skin and branches rising like antlers from their head.",
+  "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20": "A psion seated with closed eyes, pebbles hovering in a slow ring around them and a candle flame standing perfectly still.",
+  "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20": "A psion alone in a dark corridor, hiding a trembling hand, fine cracks of strain around their eyes.",
+  "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20": "A psion on a battlefield where stone steps and a wall rise from nothing at their gaze, enemies stumbling as the ground obeys the psion's thought.",
+  "ART-CAM-11-1-CAMPAIGN-OVERVIEW": "A stronghold under construction from salvage: workers hauling shrine stones and broken bridge spans up a ramp, scaffolding around a half-built keep.",
+  "ART-CAM-THE-VAULT": "A low iron-bound vault room; a clerk dozing on a stool beside chests and coin scales while a second clerk counts by candle.",
+  "ART-CAM-THE-BARRACKS": "Rows of straw bunks under heavy beams carved with names; damp wool and boots hung to dry; one empty bunk with a helmet left on it.",
+  "ART-CAM-THE-ARMOURY": "Racks of salvaged arms: blades from drowned shrines, a shield hammered flat by dragon-fire, ownerless helms on pegs, an oil-cloth bench.",
+  "ART-CAM-THE-APOTHECARY": "A cramped workroom of glass alembics over a brazier, bone saws and knives on a cloth, shelves of labelled-less jars and hanging bitter herbs.",
+  "ART-CAM-THE-OUTER-WALLS": "The stronghold's ditch, spiked palisade and stone wall at night, warding nails driven into the timbers, a lone sentry with a torch on the walkway.",
+  "ART-CAM-THE-ARCANUM": "A thin, too-tall tower against a night sky, upper windows burning, brass instruments on its roof turned toward a storm.",
+  "ART-CAM-THE-STRONGHOLD-CHAPEL": "A small cold chapel crowded with votive offerings, chipped saint statues and low candles, a single mourner kneeling.",
+  "ART-CAM-THE-WAR-ROOM": "A heavy table under captured banners, stained maps pinned with knives, a contract and quill, a hearth burning behind.",
+  "ART-CAM-THE-EXPEDITION-HALL": "A packed-earth training yard inside split-post walls: a scarred veteran correcting a recruit's guard, blunted weapons on a rack, mud underfoot.",
+  "ART-CAM-THE-UNDERCROFT": "A vaulted cellar warren lit by one lantern, a hidden door ajar, a cloaked figure slipping into an older passage below.",
+  "ART-ANC-HUMAN": "A human traveller of a Bastion in layered road clothes with a pack, walking staff and short sword; ordinary, weathered and determined.",
+  "ART-ANC-HALFLING": "A halfling traveller in a hooded cloak with a sling, a well-kept pack and a cooking pot, alert and capable.",
+  "ART-ANC-ELF": "An elf traveller, tall and lean, in a long weathered cloak with a longbow and quiver, calm and watchful.",
+  "ART-ANC-GNOME": "A gnome traveller with tinkering tools and lenses on a bandolier, a small crossbow and a heavy satchel.",
+  "ART-ANC-GOBLIN": "A goblin adventurer in a Bastion's employ: patched but well-kept leathers, a short blade and lantern, wary intelligence in the face; clearly a hired hero, not a raider.",
+  "ART-ANC-ORC": "An orc adventurer in a Bastion's employ: heavy travel-worn armour, a greataxe slung, scarred but composed; a sworn hireling, not a raider.",
+  "ART-ANC-RATKIN": "A ratkin adventurer in a hooded cloak and Bastion tabard, satchel of scavenged tools, bright watchful eyes; a hired hero, not a scavenger.",
+  "ART-ANC-DEEP-ELF": "A deep elf adventurer who has come to the surface: pale skin, a hood pulled against daylight, fine dark armour and a curved blade; an outcast hireling, not a warrior of the deep courts.",
+  "ART-ANC-DEMONBORN": "A demonborn traveller with small horns, a tail and ember-like eyes, dressed in a plain pilgrim's cloak.",
+  "ART-ANC-DRAKEBLOOD": "A drakeblood traveller with scaled skin along jaw and hands and a ridge of small horns, in a heavy cloak with a spear.",
+  "ART-MON-GREEN-DRAGON": "A typical adult green dragon of its kind, alone, coiled on a mossy rock; no lair, no tribute.",
+  "ART-MON-WHITE-DRAGON": "A typical adult white dragon, alone on a jagged ice outcrop with wings half-raised; no spire, no city.",
+  "ART-MON-BLUE-DRAGON": "A typical adult blue dragon bursting up out of a dune, sand cascading from its horns.",
+  "ART-MON-BLACK-DRAGON": "A typical adult black dragon rising from open black water, acid dripping from its jaws; no ruin or architecture.",
+  "ART-MON-MAELTHORN-THE-VERDANT": "Maelthorn coiled in a forest clearing among Greythorn's autumn tithe offerings, moss and lichen furring its scales, poison fog spilling from its jaws.",
+  "ART-MON-SIRRACH-THE-BLACK": "Sirrach erupting out of solid stone in an unmapped gallery, the rock rippling like water around its black body.",
+  "ART-MON-VISATH-THE-WHITE": "Visath perched atop the highest frozen spire of the Pale City, wings spread, victims locked mid-scream in the ice below.",
+  "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL": "Vossegar coiled among submerged altars and broken pillars inside a drowned cathedral, black water rising around the nave.",
+  "ART-MON-KHORRUN-THE-DRACOLICH": "Khorrun's skeletal dragon body draped in tattered scale, coiled atop a hoard in a tomb gallery, ledgers stacked to the ceiling.",
+  "ART-MON-THE-ANCIENT-VOID-DRAGON": "The Ancient Void Dragon drawn mostly as negative space: a wyrm-shaped absence edged by fine lines, stars dimming around it.",
+  "ART-MON-AVATAR-OF-THE-OLD-GROWTH": "A colossal walking tree-giant towering over the forest canopy, roots dragging behind it, its crown a tangle of antlered branches.",
+  "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE": "A gaunt, man-sized-to-towering figure of bone-antler and living wood standing at Greythorn's west gate in winter snow, dragging a debtor by the collar.",
+  "ART-MON-THE-BROODMOTHER-PRIME": "The Broodmother squatting in a vast webbed cavern, cottage-sized, egg-sacs trailing, cocooned victims hanging in the webs.",
+  "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS": "A black iron circlet floating above an empty regent's robe on a ruined throne, ranks of dead legionaries kneeling below.",
+  "ART-MON-THE-LAST-COLOSSUS": "A riveted black-iron war-construct three times a man's height marching along a ruined imperial road, a small figure at its feet for scale.",
+  "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN": "Captain Veyr in spectral plate with paired blades raised, rallying a line of dead soldiers behind them.",
+  "ART-MON-THE-FROST-BAILIFF-MAGISTRATE": "The Frost Bailiff drifting down a frozen avenue in judicial robes, a figure freezing solid where they stand before it.",
+  "ART-MON-THE-SUN-CROWNED-PRINCE": "The Sun-Crowned Prince enthroned in a sealed tomb-court, a withered corpse in funeral linen beneath a bright crown of beaten gold.",
+  "ART-MON-THE-VOICE-BENEATH-THE-BELLS": "A small child-shaped figure at the edge of guttering torchlight in a flooded chapel, singing, the bells hanging silent above.",
+  "ART-MON-MIRE-TITAN": "A typical Mire Titan alone, waist-deep in fen water, reeds and mud sliding from its body; no geodes or hunters.",
+  "ART-MON-FROST-WYVERN": "A frost wyvern on the wing, two-legged and lean, distinctly smaller and rangier than a dragon.",
+  "ART-MON-DEEP-ELF-WARRIOR": "A deep elf warrior of the deep courts in full dark ceremonial armour with a crescent glaive, in the Undermarches gloom.",
+  "ART-MON-DEEP-ELF-PRIEST": "A deep elf priest in layered dark vestments raising a shadow-wreathed sigil staff.",
+  "ART-MON-ORC": "An orc raider of the Greenmark with crude trophies and a notched cleaver, mid-snarl, nothing like a sworn hireling.",
+  "ART-MON-GOBLIN": "A Greenmark goblin raider with a notched blade and river-stone sling, part of a mob; hunched and malicious.",
+  "ART-MON-UNDEAD-WARRIOR": "A half-rotted corpse, not a bare skeleton, in rusted imperial legion kit with a short sword and a rectangular shield, ash underfoot.",
+  "ART-MON-SKELETON-WARRIOR": "A bare sun-bleached skeleton in corroded bronze scale and a crested bronze helm, holding a curved bronze blade, sand underfoot.",
+  "ART-MON-FROZEN-SKELETON": "A frost-rimed skeleton with icicles hanging from its ribs and a sword frozen to its hand, snow drifted around its feet.",
+  "ART-MON-UNDEAD-SENTINEL": "A towering gaunt dead soldier planted in a broken gateway, rusted tower-shield grounded and reach-halberd raised.",
+  "ART-MON-WHITE-COURT-GUARD": "A frost-armoured noble corpse in ornate courtly armour and a frozen fur mantle, reach-halberd held at a ceremonial slant.",
+  "ART-MON-WHITE-COURT-SENTINEL": "A corpse-knight crouched behind an enormous greatshield, ornate visored helm, no polearm.",
+  "ART-MON-WHITE-COURT-EXECUTIONER": "A towering hooded headsman striding forward with a frost-rimed executioner's axe over one shoulder."
+ }
+}

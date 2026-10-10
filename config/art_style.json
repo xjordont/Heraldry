@@ -61,7 +61,7 @@
    "aspect": "1:1",
    "size": "1K",
    "print_w_in": 1.6,
-   "framing": "Small emblematic vignette: one figure or the tools of their trade. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery."
+   "framing": "A small still life of the tools, garments and keepsakes of this background's trade; no figure, so it never resembles a class or ancestry portrait. Isolated on white paper; no background scenery."
   },
   "class": {
    "aspect": "3:4",
@@ -91,13 +91,19 @@
    "aspect": "3:2",
    "size": "1K",
    "print_w_in": 3.3,
-   "framing": "The scenario's key place and threat at the moment before action, with small figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
+   "framing": "The scenario's key place and threat at the moment before action, with small figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame. Show the scenario's place and situation as the parties arrive; any named creature, guardian or boss appears only small, partial, distant or in silhouette, so the image is clearly distinct from that creature's bestiary portrait."
   },
   "campaign": {
    "aspect": "3:2",
    "size": "1K",
    "print_w_in": 2.6,
    "framing": "Interior or architectural view of the described stronghold room. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
+  },
+  "boss": {
+   "aspect": "4:3",
+   "size": "1K",
+   "print_w_in": 2.6,
+   "framing": "The unique named boss shown with its distinguishing features in its own lair or setting, dramatic in scale; clearly an individual, not a typical member of a kind. Composition reads as a vignette that thins out into white paper toward irregular edges; no frame."
   }
  },
  "anchor_ids": [

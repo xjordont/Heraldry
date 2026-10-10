@@ -61,7 +61,7 @@ def prompt_for(e, with_refs):
         parts.append(f"SUBJECT: {e['subject']}. COMPOSITION: {e['composition']}.")
     else:
         where = " / ".join(e.get("context", []))
-        if e["family"] == "monster":
+        if e["family"] in ("monster", "boss"):
             f = e.get("facts", {})
             size = CFG["size_words"].get(f.get("size_code") or "", "")
             parts.append(f"SUBJECT: the creature called \"{e['title']}\" ({where}). {('Size: ' + size + '.') if size else ''} "
@@ -69,6 +69,8 @@ def prompt_for(e, with_refs):
         else:
             parts.append(f"SUBJECT: \"{e['title']}\" ({where}). Depict this faithfully, inventing nothing that contradicts it:")
         parts.append("\"" + e["flavour"] + "\"")
+        if e.get("direction"):
+            parts.append("IMAGE: " + e["direction"])
     parts.append(CFG["exclusions"])
     return "\n\n".join(parts)
 

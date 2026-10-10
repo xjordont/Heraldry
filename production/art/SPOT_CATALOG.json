@@ -1,5 +1,5 @@
 {
- "source_sha256": "d77a72f9030061f76ea61e947bf520dcc81628bd653f61ba144f2a474a088254",
+ "source_sha256": "5da05cec6153ac11865874a0da416c002ce90b2dc4936fc9ce50abca9d3dbbe5",
  "counts": {
   "cover": 1,
   "chapter": 11,
@@ -11,7 +11,8 @@
   "class": 12,
   "item": 2,
   "tradition": 15,
-  "monster": 135,
+  "monster": 120,
+  "boss": 15,
   "scenario": 37,
   "campaign": 11
  },
@@ -37,148 +38,148 @@
    "family": "chapter",
    "heading_id": null,
    "title": "ART-CH01-001",
-   "subject": "Greythorn: a timber-walled town among ancient oaks at the last surviving forest crossroads; tithe-bundles left at standing stones; gate-wardens at the gate",
-   "composition": "Wide establishing view from the forest road; palisade and gate right of centre; standing stones with tithe-bundles foreground left",
+   "subject": "The Dying Lands seen from a broken mountain pass: a cracked imperial road winding down toward the skeletal towers of a dead city on the horizon, forest to one side and frozen peaks to the other; a small party with a banner pauses on the road in the foreground",
+   "composition": "Wide vista; party small at lower left; road leads the eye to the distant dead city",
    "lore_refs": [
     "1.3 Greythorn, line 277"
    ],
    "replaces": "ART-CH01-001",
-   "spec_sha256": "7b429988192d531766c8e0a1228515bdea3f09bbef6c55f56dd1eb5675552d8c"
+   "spec_sha256": "da05a039de8f0244df00ce27aa924e4f0f5cf12081dd8a7a2e28de046ad57028"
   },
   {
    "id": "ART-CH02-002",
    "family": "chapter",
    "heading_id": null,
    "title": "ART-CH02-001",
-   "subject": "A Ranger drawing a bow with clear line of sight to a Skeleton Warrior while the sight line crosses their own Fighter",
-   "composition": "Side view across rubble; Ranger left, Fighter mid-ground, Skeleton Warrior right among broken pillars",
+   "subject": "Two rival adventuring parties sighting each other across a fog-filled valley of ruined walls at first light, each crouched behind cover with weapons ready, a monster's silhouette moving in the mist between them",
+   "composition": "Wide shot; one party at lower left, the other small at far right; fog band across the middle",
    "lore_refs": [
     "2.7 example line 804"
    ],
    "replaces": "ART-CH02-001",
-   "spec_sha256": "02fde118b8e8cd42698266fa73a20548a3aad80cc8380c79eb0e468f87a6a653"
+   "spec_sha256": "5a25c548cf3962b09d8f58f44c0853eec182e54f60631cbede895aaeb7613747"
   },
   {
    "id": "ART-CH03-002",
    "family": "chapter",
    "heading_id": null,
    "title": "ART-CH03-001",
-   "subject": "Dawn of a new round: a weary party (the Road Wardens) gathering behind a ruined wall as a chapel bell tolls over a drowned field",
-   "composition": "Wide shot, low horizon, bell tower silhouette right",
+   "subject": "Dawn of a new round: a weary party gathering behind a ruined wall as a lone chapel bell tower stands over a drowned field",
+   "composition": "Wide shot, low horizon, bell tower silhouette at right",
    "lore_refs": [
     "3.x initiative example line 1035"
    ],
    "replaces": "ART-CH03-001",
-   "spec_sha256": "f41d26662303ea07a69652c1a165b1184992e2505909b02c8f011bd2f0fe4648"
+   "spec_sha256": "314576ee3a1d951389953678b046b9b35a8e5d8dc0cc788798cc212d09af9eb2"
   },
   {
    "id": "ART-CH04-002",
    "family": "chapter",
    "heading_id": null,
    "title": "ART-CH04-001",
-   "subject": "A Skeleton hurled back toward the crumbling edge of a ledge by a blast of force",
-   "composition": "Diagonal composition; ledge edge lower right; debris falling into darkness",
+   "subject": "A party crossing the broken spans of a collapsed aqueduct: one climbs a rope, one leaps a gap, one braces to catch, the gorge falling away below",
+   "composition": "Strong diagonal of the broken aqueduct; figures mid-motion; deep drop beneath",
    "lore_refs": [
     "4.x forced movement example line 1374"
    ],
    "replaces": "ART-CH04-001",
-   "spec_sha256": "a6c222752f4927fbcf34e1df3a0572e7d935fd165bf78d4370560395ca4b2659"
+   "spec_sha256": "f67b815db93d7209af171a4cd0b5a8693617e3510629af96767a7ee9453dbdc4"
   },
   {
    "id": "ART-CH05-002",
    "family": "chapter",
    "heading_id": null,
    "title": "ART-CH05-001",
-   "subject": "An Ogre's club swinging at a Cleric who throws themself aside (Dodge)",
-   "composition": "Close medium shot; Ogre fills right half; Cleric low left mid-roll",
+   "subject": "A desperate melee on a narrow stone bridge: adventurers locked shield-to-shield against a press of undead soldiers, one hero falling back wounded, the river far below",
+   "composition": "Bridge seen from a low three-quarter angle; the clash at centre; ranks of undead receding into fog",
    "lore_refs": [
     "5.x Reactions example line 1428"
    ],
    "replaces": "ART-CH05-001",
-   "spec_sha256": "0dc9348163afd37b7f5473331c85c8e6606ce8373b81402be92a7fb0bf215d40"
+   "spec_sha256": "76d4c1e54c1cd0f02a0828b2118409600802586cf715608d36fef594ed3bd1cc"
   },
   {
    "id": "ART-CH06-002",
    "family": "chapter",
    "heading_id": null,
    "title": "ART-CH06-001",
-   "subject": "Portrait group: Human Fighter (Soldier), Elf Ranger (Scout), Dwarf Cleric (Soldier), Halfling Rogue (Smuggler) preparing gear",
-   "composition": "Frieze-like line-up at a campfire, varied heights true to ancestry",
+   "subject": "A crowded hiring hall inside a Bastion: adventurers of many ancestries (dwarf, elf, ratkin, orc, halfling, human) bargaining over a contract nailed to a post beneath captured banners, a clerk with a ledger and coin scales",
+   "composition": "Interior wide shot; contract post at the focal centre; figures grouped around it",
    "lore_refs": [
     "Recommended First Party line 2631",
     "6.9 Ancestries",
     "6.13 Classes"
    ],
    "replaces": "ART-CH06-001",
-   "spec_sha256": "7283118a70a72c4f44591e8a8fd61581047cb61003f66513aaf38f8ca0e06ac9"
+   "spec_sha256": "3dc476f7e4454d251bb9686b183676759b0aea9026f94d7db1fbd3746e390d26"
   },
   {
    "id": "ART-CH07-002",
    "family": "chapter",
    "heading_id": null,
    "title": "ART-CH07-001",
-   "subject": "A smith's trestle in a fortified town: a masterwork longsword, an adamantine buckler, mail and plate on a rack",
-   "composition": "Still life, slightly high angle",
+   "subject": "A Deepwarden forge cut into the rock: a smith quenching a glowing blade in a trough as steam rises, finished mail, helms and axes on racks, an apprentice working the bellows",
+   "composition": "Interior; smith at the focal centre; racks framing both sides",
    "lore_refs": [
     "7.6 example line 3706 (Masterwork Longsword, Adamantine Buckler)",
     "7.8 Melee Weapons",
     "7.10 Armour"
    ],
    "replaces": "ART-CH07-001",
-   "spec_sha256": "26a672c87e1f9f64a8cef7e85cdb7b6d06c68da5ae797e184a4a39c425e90198"
+   "spec_sha256": "9a5cd09b3179b72af5d878d4f62a8ff0fdb989c1f0f10e337aa9ce9441f3bbdd"
   },
   {
    "id": "ART-CH08-002",
    "family": "chapter",
    "heading_id": null,
    "title": "ART-CH08-001",
-   "subject": "A Wizard declaring Arcane Bolt at a Ghoul twelve inches away across a ruined library",
-   "composition": "Wizard left foreground back three-quarter; Ghoul right distance; bolt as white negative-space streak",
+   "subject": "A lone caster standing in the burned shell of an academy library at night, pages and embers swirling upward around them as a ring of force flares from an outstretched hand",
+   "composition": "Tall broken shelves framing the figure; swirl of pages around the focal point",
    "lore_refs": [
     "8.2 casting example line 5417"
    ],
    "replaces": "ART-CH08-001",
-   "spec_sha256": "686dc161ef1a8e8af90882b26db255f5d65029764e4b5ac94b7209c2ace933d6"
+   "spec_sha256": "97c1522276e8d01f0af4d92f4d087de59bf2fda8231d20b28dae8f1804947921"
   },
   {
    "id": "ART-CH09-002",
    "family": "chapter",
    "heading_id": null,
    "title": "ART-CH09-001",
-   "subject": "A giant tarantula stalking Greenmark leaf litter on stilted steps, body the size of a war helm",
-   "composition": "Low ground-level view among roots and leaves",
+   "subject": "The aftermath of a hunt at the forest's edge: a party standing over a slain beast too large to drag home, crows gathering on the carcass, eyes glinting in the treeline behind",
+   "composition": "Carcass across the foreground; party in the middle ground; treeline dark behind",
    "lore_refs": [
     "9.7 Giant Tarantula entry line 7785"
    ],
    "replaces": "ART-CH09-001",
-   "spec_sha256": "833df9538ed75c0fc9419ad18061bbf3c77a7b0c2ef238200a9107b9828fdf05"
+   "spec_sha256": "86e90c009360a7aed3d6db3df97775001781be51f7fc7f6cc6dd565694bfd7e2"
   },
   {
    "id": "ART-CH10-002",
    "family": "chapter",
    "heading_id": null,
    "title": "ART-CH10-001",
-   "subject": "The Whispering Grove: three standing stones in a central clearing ringed by ancient trees; the Antlered Warden, woven from bark and grey moss, at the clearing's edge",
-   "composition": "Wide view of clearing; stones as triangle; Warden half-hidden left",
+   "subject": "A party at a ruined crossroads reading a weathered, carved waystone; six roads lead away, toward forest, ruined city, mountain caves, ice, desert and fen on the horizon",
+   "composition": "Waystone at centre; roads fanning out; six distant landscapes along the horizon",
    "lore_refs": [
     "10.4 Scenario 2: The Whispering Grove, line 12042"
    ],
    "replaces": "ART-CH10-001",
-   "spec_sha256": "38b895fdaa78b6a6a17d784d2c2664310773e980dbac461c789f7530d4cde47d"
+   "spec_sha256": "e7de09414bc7354e0f11e6836bc39f3534cce5c0a5b5725b297b2e8df1f38e31"
   },
   {
    "id": "ART-CH11-002",
    "family": "chapter",
    "heading_id": null,
    "title": "ART-CH11-001",
-   "subject": "A party returning from The Mire at dusk by fen-lantern light, carrying wounded toward their stronghold's palisade gate",
-   "composition": "Procession left to right on a causeway; gate right",
+   "subject": "A battered party returning at dusk by fen-lantern light, carrying their wounded on a litter toward their stronghold's palisade gate, watchers on the wall above",
+   "composition": "Gate at right; procession along a muddy track from the left; lanterns as focal points",
    "lore_refs": [
     "11.x Journey Home example line 15403",
     "11.3 Building the Stronghold"
    ],
    "replaces": "ART-CH11-001",
-   "spec_sha256": "e342fe8b1e80a17e03df09f3dbd2ea41dbee154a2ee19008229db9a89721b49f"
+   "spec_sha256": "d6dea6d76b559e41cf15ab05e26aed8a64e19c81ad09257f34bbf62a3426aa25"
   },
   {
    "id": "ART-WOR-1-2-THE-GRIM-WORLD",
@@ -195,7 +196,8 @@
     189,
     189
    ],
-   "spec_sha256": "4d86fb6753b3520b55266efe92848f2560080b1952abd31e328b9e36bdf21133"
+   "direction": "Two warlords' banners planted on either side of a burnt farmstead; a tax collector's cart and armed men in the yard while a peasant family flees down the lane.",
+   "spec_sha256": "f81bfb03e4d02f9e68f087dc8d1b951c93848dd591e9729911d575295ed047b3"
   },
   {
    "id": "ART-WOR-1-3-1-THE-FALL",
@@ -213,7 +215,8 @@
     215,
     215
    ],
-   "spec_sha256": "a234de8bd45c7808401865f74f5213fd4eb63f20ec4aff30888dd8b280ed5be4"
+   "direction": "The colossal broken head of an imperial statue lying half-buried in a ploughed field, a farmer and ox small beside it; nobody knows what toppled it.",
+   "spec_sha256": "c429efd93ad633379f90ac17cfc2445fbb909ac36913f521cb644d1d369f351d"
   },
   {
    "id": "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
@@ -231,7 +234,8 @@
     229,
     229
    ],
-   "spec_sha256": "5b650a74cefea19a9dcc6f30cffd37ed09d886349c12c906055b0f155869f21b"
+   "direction": "A sweeping panorama from the spine of the broken mountains: western forest, eastern dead city, northern ice and southern dunes all visible at once under one sky; a lone surveyor with a staff in the foreground.",
+   "spec_sha256": "843fae0595f2409bc8d996612d23c2cddb7dd0b7f9387433bf3e09bcbd0aa95d"
   },
   {
    "id": "ART-CLI-THE-GREENMARK",
@@ -357,7 +361,8 @@
     259,
     259
    ],
-   "spec_sha256": "813da3b4af9f06817f8fadb6beb8eb3c265bab105afa2e03d09c06c03ad1eb5d"
+   "direction": "A great Bastion gate grinding shut at dusk, guards straining at the windlass inside while desperate figures outside reach for the closing gap.",
+   "spec_sha256": "7f197b7caaec3e71c96093a50218bb42bf28df2e35da4a3711be31a6de7a10c6"
   },
   {
    "id": "ART-BAS-GREYTHORN",
@@ -483,7 +488,8 @@
     323,
     323
    ],
-   "spec_sha256": "5dc58d135001e4bbb4083df9377b52254a60820c1e398082147c3314974ba718"
+   "direction": "A still life on a cracked altar: five damaged implements, one per tradition - a scorched spellbook, a chipped holy symbol, a bloodied ritual knife, a withered antler-and-holly charm, and a cracked crystal - each broken in its own way.",
+   "spec_sha256": "c7afb432c61c60d2e67e5f88b141a109426b508f01645f9df2d92f6a6bde8eb3"
   },
   {
    "id": "ART-WOR-1-3-5-MONSTROUS-THREATS",
@@ -501,7 +507,8 @@
     339,
     339
    ],
-   "spec_sha256": "06e46c2b21c7ae68520383d69e754d2dcdc2adf54ab3d69847bfc40e7ec6615b"
+   "direction": "An abandoned village street: claw-torn doors, an empty well, and a crude monster banner planted where the market cross once stood.",
+   "spec_sha256": "11b82b47ad4a9a6cace14fb9dfebc7c36da5497a90336c780f8b18ea26b2e93d"
   },
   {
    "id": "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
@@ -519,7 +526,8 @@
     357,
     357
    ],
-   "spec_sha256": "0035220a3d096bd3bc001683d917aba5d03c481788b14f3f20113b249e70bf72"
+   "direction": "A small party walking out of a Bastion's postern gate along a muddy road, past a gibbet and a weathered warning post, toward a dark forest edge.",
+   "spec_sha256": "dc9dc3056b955ba0453c3f2e6f89c10bfe332ebc31689d9c47b237127142bbb2"
   },
   {
    "id": "ART-WOR-1-3-7-LEGENDS-AND-ECHOES",
@@ -537,7 +545,8 @@
     373,
     373
    ],
-   "spec_sha256": "94f3f36e17ddec0f126b17c47c76a7d380379dc2b645f1a319017d128261de93"
+   "direction": "A barrow field at dusk where faint ghostly warriors of an ancient battle re-enact their last charge through the living grass, drawn only in sparse fine lines.",
+   "spec_sha256": "dcd984ca89f9ba4a1acdcad462c5136061e3959415920e5b575499d659658fb7"
   },
   {
    "id": "ART-ANC-HUMAN",
@@ -555,7 +564,8 @@
     2175,
     2175
    ],
-   "spec_sha256": "12eca2801f3da475e4c446d702c65f1293df63cf0938f3b4bd05f84668e28372"
+   "direction": "A human traveller of a Bastion in layered road clothes with a pack, walking staff and short sword; ordinary, weathered and determined.",
+   "spec_sha256": "06828d69f65c58607f09e1038712e1c84448764be9f0bddc42d1b74369b9691d"
   },
   {
    "id": "ART-ANC-HALFLING",
@@ -573,7 +583,8 @@
     2190,
     2190
    ],
-   "spec_sha256": "f82c6e87960728990d99b34cfcb776674bdbc9b991d052cc760be0de788d673f"
+   "direction": "A halfling traveller in a hooded cloak with a sling, a well-kept pack and a cooking pot, alert and capable.",
+   "spec_sha256": "3ef28701eb23771bfd62bc882572f5d2ff64eeba50f7eb73a2f069fd5fe9e494"
   },
   {
    "id": "ART-ANC-DWARF",
@@ -609,7 +620,8 @@
     2222,
     2222
    ],
-   "spec_sha256": "c5764ac58638a05de634f943918d951d5c5b1a7201a5b1fd4cd50d83293c3561"
+   "direction": "An elf traveller, tall and lean, in a long weathered cloak with a longbow and quiver, calm and watchful.",
+   "spec_sha256": "c8f6490bbd7f04beb2453dfc0f4ddf86f78715f128f7276a13fc2fc09384bbcc"
   },
   {
    "id": "ART-ANC-GNOME",
@@ -627,7 +639,8 @@
     2237,
     2237
    ],
-   "spec_sha256": "01f93b6974a0435fea1d4acb60088e1353767eff4fc1de1945a468fdcb890404"
+   "direction": "A gnome traveller with tinkering tools and lenses on a bandolier, a small crossbow and a heavy satchel.",
+   "spec_sha256": "cffc4723e1563c6d45de342835cec372a2267e0c3442f23afbaa2836b8cb2531"
   },
   {
    "id": "ART-ANC-GOBLIN",
@@ -645,7 +658,8 @@
     2254,
     2254
    ],
-   "spec_sha256": "f17dc4fccc07bf4c8f95e0c05e2c17a51d05f826fec20b33d2d86cf4c28b48b1"
+   "direction": "A goblin adventurer in a Bastion's employ: patched but well-kept leathers, a short blade and lantern, wary intelligence in the face; clearly a hired hero, not a raider.",
+   "spec_sha256": "4cd5d50e6ff705cc7aff77b95f0854eae88a3ab3314b52c7569d80fd1a939a46"
   },
   {
    "id": "ART-ANC-ORC",
@@ -663,7 +677,8 @@
     2270,
     2270
    ],
-   "spec_sha256": "6dceb880e81b59a038f10fadedf00228676c142895182c2fa61df1819dc573f7"
+   "direction": "An orc adventurer in a Bastion's employ: heavy travel-worn armour, a greataxe slung, scarred but composed; a sworn hireling, not a raider.",
+   "spec_sha256": "866b75fed1a441c6c2946c8f623bdad3a98e99e62a98fc1d97a6f3a2f7444bf4"
   },
   {
    "id": "ART-ANC-RATKIN",
@@ -681,7 +696,8 @@
     2286,
     2286
    ],
-   "spec_sha256": "d453304e2ff8c00501dfe2ce6411a95817180bc121df7c0fe5eeccd8d6eec1a6"
+   "direction": "A ratkin adventurer in a hooded cloak and Bastion tabard, satchel of scavenged tools, bright watchful eyes; a hired hero, not a scavenger.",
+   "spec_sha256": "20e107a84a9d4a705cfed13f1bfc3ad180ea5a6a1e25cd92f2e14a2ab2a84ff0"
   },
   {
    "id": "ART-ANC-DEEP-ELF",
@@ -699,7 +715,8 @@
     2303,
     2303
    ],
-   "spec_sha256": "66870727e266c212c02aca7b70b83af2da74c5e88d00831af8676841d53b9bbd"
+   "direction": "A deep elf adventurer who has come to the surface: pale skin, a hood pulled against daylight, fine dark armour and a curved blade; an outcast hireling, not a warrior of the deep courts.",
+   "spec_sha256": "94073b9b1631ba9ac3ce1bc5f360549ff58099887f1701b8212b7396e8daaa6b"
   },
   {
    "id": "ART-ANC-DEMONBORN",
@@ -717,7 +734,8 @@
     2319,
     2319
    ],
-   "spec_sha256": "0f28a6559e43415e8437c8478b3f3e1c07a6e15d2c693c766adea64aa5c9a02b"
+   "direction": "A demonborn traveller with small horns, a tail and ember-like eyes, dressed in a plain pilgrim's cloak.",
+   "spec_sha256": "84e473707c7dbe46d712ffec981ae7be15853adb200707b3a367ce46f1688b02"
   },
   {
    "id": "ART-ANC-DRAKEBLOOD",
@@ -735,7 +753,8 @@
     2338,
     2338
    ],
-   "spec_sha256": "bd1742d522ebdea4a23c2461fe73f6043b67f7b580d645f0644a9b70482fc5c3"
+   "direction": "A drakeblood traveller with scaled skin along jaw and hands and a ridge of small horns, in a heavy cloak with a spear.",
+   "spec_sha256": "6fae373bcdb486756056bd834abd39d95c2beab519b92e79987ffff92b05c7d1"
   },
   {
    "id": "ART-BAC-FARMER",
@@ -1328,7 +1347,8 @@
     3399,
     3399
    ],
-   "spec_sha256": "e8f21c4834e2d333faa8771982031a3b1ed084b9964bb0dc94cefd51ef0e96d2"
+   "direction": "A still life of grim treasure: a rotted purse spilling tarnished coins beside a skeletal hand, a mud-caked crown, a cracked reliquary and a salt-crusted signet ring.",
+   "spec_sha256": "888949aa851b8e7f7b5fa12d1c3cfadd81362ec0644824c95e4bf6fda4739a6a"
   },
   {
    "id": "ART-ITE-7-8-MELEE-WEAPONS",
@@ -1345,7 +1365,8 @@
     3590,
     3590
    ],
-   "spec_sha256": "55d53f12f806e405f3d20c595610fc2dc8278d8787ea5f56d5028a4589e21ec9"
+   "direction": "A still life of salvaged arms laid on sacking: a long-bladed messer, a notched swordbreaker, a throwing cross, a bladed scourge, a weighted cord and a hook-and-chain.",
+   "spec_sha256": "7f34ed273c56804dd69d98152ede6a8a092066fa5d53beb0b2fcaa53d33de7c8"
   },
   {
    "id": "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
@@ -1363,7 +1384,8 @@
     5469,
     5469
    ],
-   "spec_sha256": "0e6fcd999b3b2ebf457b891089db4516d907601a3a418053edfc930830659843"
+   "direction": "A young apprentice at a scarred practice post conjuring a small flame in one hand while a shimmer of force bends the air before the other.",
+   "spec_sha256": "73cf8f77a82201ccfee1d1d100b01796afe0cdc49cf57e586a04334324bc8f59"
   },
   {
    "id": "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
@@ -1381,7 +1403,8 @@
     5604,
     5604
    ],
-   "spec_sha256": "7af23636c78be5ccc3394aa26d2a799c7a21dc83fcd4abae53d4113feae4c627"
+   "direction": "A wizard hurriedly copying a spell from a scorched tome by candlelight while the library behind them burns.",
+   "spec_sha256": "51360d9d5863e3dbc3af6045358d233d17e6b181d4a82aea12dab4ecc195d4a8"
   },
   {
    "id": "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
@@ -1399,7 +1422,8 @@
     5739,
     5739
    ],
-   "spec_sha256": "f3772cb633db983ff18643520a2e497f260b296bc90b6af9b3bce98bd471357a"
+   "direction": "A wizard sifting ash and cipher-scraps among robed corpses on the floor of a ruined tower, a sealed book clutched to their chest.",
+   "spec_sha256": "953b145254d445ed27260662025225ae7a83400be2a49d5e3b61276e8299a346"
   },
   {
    "id": "ART-TRA-TIER-1-DIVINE-PRAYERS-D20",
@@ -1417,7 +1441,8 @@
     5917,
     5917
    ],
-   "spec_sha256": "ae1528d8583b8b4761031ecd22f4a30b6e17a564b490e888a7246d79948e431e"
+   "direction": "A priest raising a lantern whose light falls on a wounded soldier, the wound visibly knitting closed.",
+   "spec_sha256": "6c9866bcfea0e14eb78fb95fd60000e9003d6d4e3b9b6d22db229c7850b7221a"
   },
   {
    "id": "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
@@ -1435,7 +1460,8 @@
     6040,
     6040
    ],
-   "spec_sha256": "dde4657f860d7083939d28ac8b9e9b574f61113fe5f4702d5dc041034aae61c5"
+   "direction": "A weary cleric kneeling at a cracked roadside shrine beside a ledger of offerings, candles guttering.",
+   "spec_sha256": "751127c5120921f8fc022d02ce10b64ee8bb1e5b917074f832ea6578ff2e8f75"
   },
   {
    "id": "ART-TRA-TIER-3-DIVINE-PRAYERS-D20",
@@ -1453,7 +1479,8 @@
     6165,
     6165
    ],
-   "spec_sha256": "da7e08b767f2ea03562ace34181f39795faa3e6d6af3a2166697a4cc1338e825"
+   "direction": "A priest with arms raised on a hilltop, demanding, as a vast ambiguous shape takes form in the storm clouds above.",
+   "spec_sha256": "32fefc7ad7d6b75390d926a06e4e62b9d066e8d27b5bd0c8aa67ba550d78c413"
   },
   {
    "id": "ART-TRA-TIER-1-SORCERIES-D20",
@@ -1471,7 +1498,8 @@
     6317,
     6317
    ],
-   "spec_sha256": "fff1a4e7dde12bd09184ee5bddea92c0b2d6b0a83c4443c62190cca8fb4cc371"
+   "direction": "A close view of a sorcerer's cut palm, drops of blood rising and twisting into a small crackling spark.",
+   "spec_sha256": "55376d9dafcf6ba8c73ba38fd452f92d552430f5f0cedc060a5108ccc40d69ef"
   },
   {
    "id": "ART-TRA-TIER-2-SORCERIES-D20",
@@ -1489,7 +1517,8 @@
     6441,
     6441
    ],
-   "spec_sha256": "386d3fe9975d282d130ef9cc7324829359c173f5ffd9b9f9c87d98240ad72636"
+   "direction": "A gaunt sorcerer with scar-laddered forearms channelling a crackling storm between their hands.",
+   "spec_sha256": "d800493f9555e9fd40532575a223753598b860b3b603f605e7239bab4d163754"
   },
   {
    "id": "ART-TRA-TIER-3-SORCERIES-D20",
@@ -1507,7 +1536,8 @@
     6567,
     6567
    ],
-   "spec_sha256": "c3166098281dbcc19b1df53dfd531d63d34a5fcd8ba1b45f5f0932dcee7feee9"
+   "direction": "A sorcerer half-consumed by their own working, a vortex of force tearing up the ground, villagers praying on their knees at a safe distance.",
+   "spec_sha256": "189ce9531d0e0c650f5636cc77ca2509f677358aa145545dbbaf7c76341c0f64"
   },
   {
    "id": "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
@@ -1525,7 +1555,8 @@
     6737,
     6737
    ],
-   "spec_sha256": "5f3dc237926d3bcd45568d4d209bed85c3f106a862ad5ad96d92102ee148b329"
+   "direction": "A druid kneeling with one palm pressed to an exposed root, a hare and a crow watching, rain beginning to fall.",
+   "spec_sha256": "245d954df00b31044515aba80911f0a9932f18559a6eef481bdbfa55105734f5"
   },
   {
    "id": "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20",
@@ -1543,7 +1574,8 @@
     6865,
     6865
    ],
-   "spec_sha256": "802d2f0e0a5db31b82dcd9e80c2afd7c398ee5b6709d9edd7ec951249e1470fb"
+   "direction": "A druid speaking aloud as the surrounding trees bend toward them and roots heave up out of the earth.",
+   "spec_sha256": "28602a51301a961550b42177b79ab7bc52459b5a09981d76364bc595294ea249"
   },
   {
    "id": "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
@@ -1561,7 +1593,8 @@
     6992,
     6992
    ],
-   "spec_sha256": "5476f259e10fe57bb6853e88814c31e10c769d0fd5a3234c73dce985717e0418"
+   "direction": "A druid half-merged with an ancient oak, bark creeping over their skin and branches rising like antlers from their head.",
+   "spec_sha256": "fdfb3d4b65d5934ff31c69c9d93d438c388173d9bc59172b345f36448da2cad4"
   },
   {
    "id": "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20",
@@ -1579,7 +1612,8 @@
     7140,
     7140
    ],
-   "spec_sha256": "bad5b50288490ac18b3d1267359a5a3792f5ca4d216fffe103977ae823141608"
+   "direction": "A psion seated with closed eyes, pebbles hovering in a slow ring around them and a candle flame standing perfectly still.",
+   "spec_sha256": "6f437e7f66bfeefb8cffba093f28c9c7c034f5cefa1e7ab9f79bee0f7d78de0a"
   },
   {
    "id": "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20",
@@ -1597,7 +1631,8 @@
     7262,
     7262
    ],
-   "spec_sha256": "93eaf2ef66562362868ed87fd0b279e7e0cb062bf14f426b8fca7ef7e3dedc36"
+   "direction": "A psion alone in a dark corridor, hiding a trembling hand, fine cracks of strain around their eyes.",
+   "spec_sha256": "37b583935b3e35035747d220661d3f947ce0017ed3551121264a768dd4f162c9"
   },
   {
    "id": "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20",
@@ -1615,7 +1650,8 @@
     7387,
     7387
    ],
-   "spec_sha256": "a4c51aca9f17b37a6eced1cb6d1bfd5c14e9a854582c62546ac821e075d23852"
+   "direction": "A psion on a battlefield where stone steps and a wall rise from nothing at their gaze, enemies stumbling as the ground obeys the psion's thought.",
+   "spec_sha256": "9b07291d864ccdea21cb8f88e8398942044aaf85216ec7540525e318c9da567e"
   },
   {
    "id": "ART-MON-GIANT-TARANTULA",
@@ -1657,7 +1693,8 @@
     7804,
     7804
    ],
-   "spec_sha256": "66dabb260e99baf5e89e4dc9740e7c0f520ebbf1b8c4a0834e6a5615fdbf8b63"
+   "direction": "A Greenmark goblin raider with a notched blade and river-stone sling, part of a mob; hunched and malicious.",
+   "spec_sha256": "4fd7298718844f43e09276b705ee4354b3eee8c63574672210fda6e7b0c677f7"
   },
   {
    "id": "ART-MON-BEASTMAN",
@@ -1783,7 +1820,8 @@
     7903,
     7903
    ],
-   "spec_sha256": "c82e59b70317e2e350c4aefafc569d4d191743e056c3cf9c329f9a8ba8cd4aeb"
+   "direction": "An orc raider of the Greenmark with crude trophies and a notched cleaver, mid-snarl, nothing like a sworn hireling.",
+   "spec_sha256": "4a30f77eb25121f6ed5602875fcd15e11442825adb427080a988512debd5e38e"
   },
   {
    "id": "ART-MON-BUGBEAR",
@@ -2035,7 +2073,8 @@
     8140,
     8140
    ],
-   "spec_sha256": "567bf18bbcf0549c24c560533bba33c66c34697014efede7da1488f451fe1747"
+   "direction": "A typical adult green dragon of its kind, alone, coiled on a mossy rock; no lair, no tribute.",
+   "spec_sha256": "b04794a155fe240ac4ef7393951bd933336ce59f2e2e27bd6782402e56e86a3a"
   },
   {
    "id": "ART-MON-UNDEAD-WARRIOR",
@@ -2056,7 +2095,8 @@
     8164,
     8164
    ],
-   "spec_sha256": "8d80a8939664721356b46b2a91abba85752bc1c48803b9a44fa0b1e402b28bb0"
+   "direction": "A half-rotted corpse, not a bare skeleton, in rusted imperial legion kit with a short sword and a rectangular shield, ash underfoot.",
+   "spec_sha256": "fc3428013d9614d73c21e1b446d9052c9b6a7badf47f48aa991e12ee1685a309"
   },
   {
    "id": "ART-MON-UNDEAD-CROSSBOWMAN",
@@ -2203,7 +2243,8 @@
     8290,
     8290
    ],
-   "spec_sha256": "867660926d1f6e7420216010a0d98853564a126056aba486e4edfbf04983c55e"
+   "direction": "A towering gaunt dead soldier planted in a broken gateway, rusted tower-shield grounded and reach-halberd raised.",
+   "spec_sha256": "738b7e42ca7579236fcfda0be2267690df77c3f44c13f9820f6620425729bd5a"
   },
   {
    "id": "ART-MON-UNDEAD-CHAMPION",
@@ -2728,7 +2769,8 @@
     8788,
     8788
    ],
-   "spec_sha256": "c63701dcf5e6833896255b382e93afdf9848c4af1682b7c2fb3501a63247cf62"
+   "direction": "A deep elf warrior of the deep courts in full dark ceremonial armour with a crescent glaive, in the Undermarches gloom.",
+   "spec_sha256": "b414eaa164bfedd70448026e46e2f87110ee8825206e8d280213b301a9093d1b"
   },
   {
    "id": "ART-MON-DEEP-ELF-PRIEST",
@@ -2749,7 +2791,8 @@
     8804,
     8804
    ],
-   "spec_sha256": "4bce4d6dd743375adad3a28818bba3a8c778f61c655726ef9d7fc30fbd343ff2"
+   "direction": "A deep elf priest in layered dark vestments raising a shadow-wreathed sigil staff.",
+   "spec_sha256": "3f37f648483af8e6488e9ea6b92d54f4bbf99b1c30a6dc8dd096bf02831c62f1"
   },
   {
    "id": "ART-MON-GLOOM-HULK",
@@ -2896,7 +2939,8 @@
     8944,
     8944
    ],
-   "spec_sha256": "7785f66a74f7ba5a85c112728b2419d175bd5e251182011479f3aa979de495f2"
+   "direction": "A frost-rimed skeleton with icicles hanging from its ribs and a sword frozen to its hand, snow drifted around its feet.",
+   "spec_sha256": "2d4507557b7c70d7d5fa92fcbc4a0e4b5b649348b709364fe901f66e06e41c3c"
   },
   {
    "id": "ART-MON-SNOW-GOBLIN",
@@ -3001,7 +3045,8 @@
     9033,
     9033
    ],
-   "spec_sha256": "b973b77fe2f7dc9a4fbad6223d76bf957d0f1ded10cc885ee98b18a9bdff1fcf"
+   "direction": "A frost-armoured noble corpse in ornate courtly armour and a frozen fur mantle, reach-halberd held at a ceremonial slant.",
+   "spec_sha256": "4dba599a702189157803a4732fa92d40244ab1829803f99077648989c315ad49"
   },
   {
    "id": "ART-MON-RATKIN-SEER",
@@ -3127,7 +3172,8 @@
     9139,
     9139
    ],
-   "spec_sha256": "f39a5409e6fc143e2fbb8f152641d6ab5148f4c51c88fb907fe14e7d5f8b72ad"
+   "direction": "A corpse-knight crouched behind an enormous greatshield, ornate visored helm, no polearm.",
+   "spec_sha256": "8209f976d0b656b451f308fa9f8f75acab77e12c983491489a245cd8c1e8069c"
   },
   {
    "id": "ART-MON-ICE-ELEMENTAL",
@@ -3211,7 +3257,8 @@
     9216,
     9216
    ],
-   "spec_sha256": "57deccf4b0ded7889312be3f498437806c24b8f2090b1e17a287ba2bf75130e8"
+   "direction": "A towering hooded headsman striding forward with a frost-rimed executioner's axe over one shoulder.",
+   "spec_sha256": "a30293c826a7506bfc70b08d5a4a24f2795cef62983a7fc20949d212d61c7be1"
   },
   {
    "id": "ART-MON-FROST-WYVERN",
@@ -3232,7 +3279,8 @@
     9237,
     9237
    ],
-   "spec_sha256": "d8f6bfe4ce498aace7746242dbc1bee04687800da61c55071cdcae604409182d"
+   "direction": "A frost wyvern on the wing, two-legged and lean, distinctly smaller and rangier than a dragon.",
+   "spec_sha256": "70b00bc220d85a0426486f72e9ced2f501de204af9f0d42e9f23dc3350366e56"
   },
   {
    "id": "ART-MON-GELID-FIEND",
@@ -3295,7 +3343,8 @@
     9299,
     9299
    ],
-   "spec_sha256": "2b35c691e7f26e30da74f518b77e87a8fd35448f929f551db6bb359e551977ec"
+   "direction": "A typical adult white dragon, alone on a jagged ice outcrop with wings half-raised; no spire, no city.",
+   "spec_sha256": "3b290c1930d5321dccfe424b5d51cd6e03c569137801641073e17cc3d6945ae0"
   },
   {
    "id": "ART-MON-FIRE-BEETLE",
@@ -3358,7 +3407,8 @@
     9360,
     9360
    ],
-   "spec_sha256": "99badff930e97d4edf59d6d0203731cfc195a8f28cfb9bba037cc5321baa3d86"
+   "direction": "A bare sun-bleached skeleton in corroded bronze scale and a crested bronze helm, holding a curved bronze blade, sand underfoot.",
+   "spec_sha256": "d5c9e0252290fb1a8e528ccbb9c4e2b88d98ddc47b0b55f1e8f4799b552f6fee"
   },
   {
    "id": "ART-MON-CORPSEHOUND",
@@ -3715,7 +3765,8 @@
     9688,
     9688
    ],
-   "spec_sha256": "b40e3bdfbc7ffc3039895a401bf37b503045ad4c33e0a75c61ef4f3c2c8a232b"
+   "direction": "A typical adult blue dragon bursting up out of a dune, sand cascading from its horns.",
+   "spec_sha256": "7278154e2c4596f7aaee1c0d60b200950ddd01464a277cba30fa7e5f404aefaf"
   },
   {
    "id": "ART-MON-BOGLING",
@@ -4114,7 +4165,8 @@
     10069,
     10069
    ],
-   "spec_sha256": "c70c1131f26a15a3fa16734a8b46d5942f2aa63f8105656fabae008b8c8d53d4"
+   "direction": "A typical Mire Titan alone, waist-deep in fen water, reeds and mud sliding from its body; no geodes or hunters.",
+   "spec_sha256": "695f3ad89a33f04116bc8448daf04f6e2af65310890fd8462546aa3616221185"
   },
   {
    "id": "ART-MON-BLACK-DRAGON",
@@ -4135,11 +4187,12 @@
     10091,
     10091
    ],
-   "spec_sha256": "8c3f31c98cec854a99067ca5cb6d8b7c68df04f4cce44a68eb62cd99dcac5179"
+   "direction": "A typical adult black dragon rising from open black water, acid dripping from its jaws; no ruin or architecture.",
+   "spec_sha256": "429d8e8d659977043d8a9b22dd2f414382076287a5632c935dbe5e5933747f3c"
   },
   {
    "id": "ART-MON-THE-ANCIENT-VOID-DRAGON",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-the-ancient-void-dragon-boss",
    "flavour_block": "B10141",
    "title": "The Ancient Void Dragon",
@@ -4156,11 +4209,12 @@
     10139,
     10139
    ],
-   "spec_sha256": "0720998bf64fa892a4f980b6aba08d50f0854faf335672d0717ae23dfeefb272"
+   "direction": "The Ancient Void Dragon drawn mostly as negative space: a wyrm-shaped absence edged by fine lines, stars dimming around it.",
+   "spec_sha256": "5cb4c7c316620492650980c2086d1e9e1c805be2323cf0850402472b07ac3de3"
   },
   {
    "id": "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-the-hollow-crown-of-the-ashlands-boss",
    "flavour_block": "B10165",
    "title": "The Hollow Crown of the Ashlands",
@@ -4177,11 +4231,12 @@
     10163,
     10163
    ],
-   "spec_sha256": "5705f642e07cb583676db4cb72335f4346c97c5c587ed4ac29dcbddc5b719aef"
+   "direction": "A black iron circlet floating above an empty regent's robe on a ruined throne, ranks of dead legionaries kneeling below.",
+   "spec_sha256": "bfc0b48f1e04a9761a104141ef3b0c6d9230c74190347ae28354b2ccda6320cd"
   },
   {
    "id": "ART-MON-THE-LAST-COLOSSUS",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-the-last-colossus-boss",
    "flavour_block": "B10187",
    "title": "The Last Colossus",
@@ -4198,11 +4253,12 @@
     10185,
     10185
    ],
-   "spec_sha256": "8aa858e93ce972b5e3704e57780410f1118130563cb4a8da066734bd431b175c"
+   "direction": "A riveted black-iron war-construct three times a man's height marching along a ruined imperial road, a small figure at its feet for scale.",
+   "spec_sha256": "39bc8d870612ef4ecd48f5bc5c43d057bced68e0a351617e5ccddfea19e15efe"
   },
   {
    "id": "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-avatar-of-the-old-growth-boss",
    "flavour_block": "B10210",
    "title": "Avatar of the Old Growth",
@@ -4219,11 +4275,12 @@
     10208,
     10208
    ],
-   "spec_sha256": "9606937faab87eb646c6044c37a38eb7d881a9f5e0b4e7db55dae4a8645e642c"
+   "direction": "A colossal walking tree-giant towering over the forest canopy, roots dragging behind it, its crown a tangle of antlered branches.",
+   "spec_sha256": "5c2dd457cc15705db06a6a0fafbdb90b10a4b898ef788e692c8b683682f5bcf6"
   },
   {
    "id": "ART-MON-THE-BROODMOTHER-PRIME",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-the-broodmother-prime-boss",
    "flavour_block": "B10233",
    "title": "The Broodmother Prime",
@@ -4240,11 +4297,12 @@
     10231,
     10231
    ],
-   "spec_sha256": "ed8778c76b3724a700375f1dec1e1073dc9c7ba35262359e0bae72f14b76a367"
+   "direction": "The Broodmother squatting in a vast webbed cavern, cottage-sized, egg-sacs trailing, cocooned victims hanging in the webs.",
+   "spec_sha256": "44985c12983077ac8c97645c76eaea911bd57c2b60fd9071f920ea1c2fdb2af0"
   },
   {
    "id": "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-captain-veyr-of-the-forsaken-boss",
    "flavour_block": "B10257",
    "title": "Captain Veyr of the Forsaken",
@@ -4261,11 +4319,12 @@
     10255,
     10255
    ],
-   "spec_sha256": "dc9c5034cdbff00bae9c5e2abe923437f3ecd2c307d7644b77084469d4ba8cad"
+   "direction": "Captain Veyr in spectral plate with paired blades raised, rallying a line of dead soldiers behind them.",
+   "spec_sha256": "2670e2f2e60029f9dd2abbdf8eba2869a36bcbb17ac4842609e4759607cdab4c"
   },
   {
    "id": "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-the-frost-bailiff-magistrate-boss",
    "flavour_block": "B10279",
    "title": "The Frost Bailiff Magistrate",
@@ -4282,11 +4341,12 @@
     10277,
     10277
    ],
-   "spec_sha256": "926fbc13f29c47cb067b3ed87a7ed5f24ffe6675a352a69904dbd62b651db3a0"
+   "direction": "The Frost Bailiff drifting down a frozen avenue in judicial robes, a figure freezing solid where they stand before it.",
+   "spec_sha256": "d0ab442021d622a80e7a8c5bc1a4b22020d978450684e051add4a619970fd08e"
   },
   {
    "id": "ART-MON-THE-SUN-CROWNED-PRINCE",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-the-sun-crowned-prince-boss",
    "flavour_block": "B10301",
    "title": "The Sun-Crowned Prince",
@@ -4303,11 +4363,12 @@
     10299,
     10299
    ],
-   "spec_sha256": "1d748a992b74766d6cf13050feb94ff2b8c911c21f416a2825870f0210cc1811"
+   "direction": "The Sun-Crowned Prince enthroned in a sealed tomb-court, a withered corpse in funeral linen beneath a bright crown of beaten gold.",
+   "spec_sha256": "f0821ffd827fd39f3449e934679f1e96b13c22a0c9466f6710903f482d762f44"
   },
   {
    "id": "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-the-antlered-warden-of-the-tithe-boss",
    "flavour_block": "B10323",
    "title": "The Antlered Warden of the Tithe",
@@ -4324,11 +4385,12 @@
     10321,
     10321
    ],
-   "spec_sha256": "419e4ce56f3159ce31ca8e87d95c35f246c4a57afaa5dbc44ec0b6487ed47f3a"
+   "direction": "A gaunt, man-sized-to-towering figure of bone-antler and living wood standing at Greythorn's west gate in winter snow, dragging a debtor by the collar.",
+   "spec_sha256": "b8194ed104bcb7ecb91d441c9a16ce37b0e7ece479277b61aca797c0acc150f9"
   },
   {
    "id": "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-the-voice-beneath-the-bells-boss",
    "flavour_block": "B10347",
    "title": "The Voice Beneath the Bells",
@@ -4345,11 +4407,12 @@
     10345,
     10345
    ],
-   "spec_sha256": "f9d95a3ba131e417468e7d113944f775b179b5f6937a264de2e28d11ad5d35ee"
+   "direction": "A small child-shaped figure at the edge of guttering torchlight in a flooded chapel, singing, the bells hanging silent above.",
+   "spec_sha256": "24131564c6ffef845c655b78aa97b1f78f427917156b466d78d730a3f22f7dda"
   },
   {
    "id": "ART-MON-MAELTHORN-THE-VERDANT",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-maelthorn-the-verdant-boss",
    "flavour_block": "B10370",
    "title": "Maelthorn the Verdant",
@@ -4366,11 +4429,12 @@
     10368,
     10368
    ],
-   "spec_sha256": "b2cc34a3da5d58a37cd0a1e8b61f2a1f3565f9f8a56f638252cf76ef766ddfa2"
+   "direction": "Maelthorn coiled in a forest clearing among Greythorn's autumn tithe offerings, moss and lichen furring its scales, poison fog spilling from its jaws.",
+   "spec_sha256": "36b3b0c4b4cfc85e51defe201eea1d60b268d3dd9382b4afc0a844fbd670ada9"
   },
   {
    "id": "ART-MON-SIRRACH-THE-BLACK",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-sirrach-the-black-boss",
    "flavour_block": "B10396",
    "title": "Sirrach the Black",
@@ -4387,11 +4451,12 @@
     10394,
     10394
    ],
-   "spec_sha256": "4147419364dd45c38afa1b291e004a60cb7bce9ece9b88fdaa341a0e74f3e536"
+   "direction": "Sirrach erupting out of solid stone in an unmapped gallery, the rock rippling like water around its black body.",
+   "spec_sha256": "64c7a2054fb148a8179ad08bc908975a66b19536ac9b65019a18c8fd182c2e49"
   },
   {
    "id": "ART-MON-VISATH-THE-WHITE",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-visath-the-white-boss",
    "flavour_block": "B10422",
    "title": "Visath the White",
@@ -4408,11 +4473,12 @@
     10420,
     10420
    ],
-   "spec_sha256": "3ef90bc3580af567edbbe0b7343d3154b193ec71bb394d7be8207a0e261ea45b"
+   "direction": "Visath perched atop the highest frozen spire of the Pale City, wings spread, victims locked mid-scream in the ice below.",
+   "spec_sha256": "6b47e7485567e50b2e9b08adfcf67109367a59bae62b33fdff2c1f2b997c05ce"
   },
   {
    "id": "ART-MON-KHORRUN-THE-DRACOLICH",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-khorrun-the-dracolich-boss",
    "flavour_block": "B10449",
    "title": "Khorrun the Dracolich",
@@ -4429,11 +4495,12 @@
     10447,
     10447
    ],
-   "spec_sha256": "f26427a376a6b6bcfc673dcf62b0f8aacc324f112855a8102b80193cc1f6b165"
+   "direction": "Khorrun's skeletal dragon body draped in tattered scale, coiled atop a hoard in a tomb gallery, ledgers stacked to the ceiling.",
+   "spec_sha256": "97ce3da3805886b0729c3a3665c642c0106a58047979787df774890a4a8fedf2"
   },
   {
    "id": "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
-   "family": "monster",
+   "family": "boss",
    "heading_id": "h-vossegar-of-the-flooded-cathedral-boss",
    "flavour_block": "B10475",
    "title": "Vossegar of the Flooded Cathedral",
@@ -4450,7 +4517,8 @@
     10473,
     10473
    ],
-   "spec_sha256": "b853850a219e3833213d8fd848cb1d65f8b4369fb2bdeef05984f7f6c56c1657"
+   "direction": "Vossegar coiled among submerged altars and broken pillars inside a drowned cathedral, black water rising around the nave.",
+   "spec_sha256": "a17eb94bc2ee6a25fc324ef49c3d15e1d646a3c78f259f072b8297e96942edc8"
   },
   {
    "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
@@ -5115,7 +5183,8 @@
     14987,
     14987
    ],
-   "spec_sha256": "58e71d443ef7e91d7655bd044be8d06c7dc19f48a870f54e21a3d6d778fe802e"
+   "direction": "A stronghold under construction from salvage: workers hauling shrine stones and broken bridge spans up a ramp, scaffolding around a half-built keep.",
+   "spec_sha256": "f3fe238aa1f8012a7db2035db7a07e73c53e8a8ee97ca32a44dea2748410816f"
   },
   {
    "id": "ART-CAM-THE-VAULT",
@@ -5133,7 +5202,8 @@
     15612,
     15612
    ],
-   "spec_sha256": "dc20b7d0b2bdbd23f83076a612b676faa859701617539968d253bba926311ecd"
+   "direction": "A low iron-bound vault room; a clerk dozing on a stool beside chests and coin scales while a second clerk counts by candle.",
+   "spec_sha256": "a513bf9927ec13f08c8bad0b9bbefaf532cf405d0c731ae7f83df0a6e6b0dab7"
   },
   {
    "id": "ART-CAM-THE-BARRACKS",
@@ -5151,7 +5221,8 @@
     15622,
     15622
    ],
-   "spec_sha256": "19254e62f1663356a1f092d6481c3ad9ab16e3f764bfd68e6f363fa858ea3c81"
+   "direction": "Rows of straw bunks under heavy beams carved with names; damp wool and boots hung to dry; one empty bunk with a helmet left on it.",
+   "spec_sha256": "b18433a928cd157597c66aac6fb8234490b4f6bdf66ec1f1198d970dc087ace3"
   },
   {
    "id": "ART-CAM-THE-ARMOURY",
@@ -5169,7 +5240,8 @@
     15632,
     15632
    ],
-   "spec_sha256": "7497a4037e51ad950e4be286e3e9db46a8e85618638f8b1ba1298143a8cd0d21"
+   "direction": "Racks of salvaged arms: blades from drowned shrines, a shield hammered flat by dragon-fire, ownerless helms on pegs, an oil-cloth bench.",
+   "spec_sha256": "c9166288ba54c883d4318f2d1b6f549271686fb9cdda1a96e58bfd4885a3e8a1"
   },
   {
    "id": "ART-CAM-THE-APOTHECARY",
@@ -5187,7 +5259,8 @@
     15642,
     15642
    ],
-   "spec_sha256": "dbc156736877c7c6decaaa6039a2acbb9a7df196d73cb2bebdc5954a18cbb3b1"
+   "direction": "A cramped workroom of glass alembics over a brazier, bone saws and knives on a cloth, shelves of labelled-less jars and hanging bitter herbs.",
+   "spec_sha256": "e51b49d4fac2bb2825fc7b5a3a38266d462811d56802d18bccd9d1801d51d59d"
   },
   {
    "id": "ART-CAM-THE-OUTER-WALLS",
@@ -5205,7 +5278,8 @@
     15652,
     15652
    ],
-   "spec_sha256": "c50419a0f6563ee4651c05a1dcaaba89f29a46b489058b87d623d518dbf8b257"
+   "direction": "The stronghold's ditch, spiked palisade and stone wall at night, warding nails driven into the timbers, a lone sentry with a torch on the walkway.",
+   "spec_sha256": "03f75099a3d81d1c3c6aaf51927223d2594f16ad100ba91bf337249ef0ae73fb"
   },
   {
    "id": "ART-CAM-THE-ARCANUM",
@@ -5223,7 +5297,8 @@
     15662,
     15662
    ],
-   "spec_sha256": "5a26b680894e314ba8f7c35fefd1cdbddd3bab10eb20f363615f94141243b4cb"
+   "direction": "A thin, too-tall tower against a night sky, upper windows burning, brass instruments on its roof turned toward a storm.",
+   "spec_sha256": "60585d88a77f87136ea684376f8e507a62a52ba408638adc5d0d8db65ee2e2f8"
   },
   {
    "id": "ART-CAM-THE-STRONGHOLD-CHAPEL",
@@ -5241,7 +5316,8 @@
     15672,
     15672
    ],
-   "spec_sha256": "f2147c06e3b46e13023e7982dd6ad826e242b41373b68e96ed11e6f22d47cdaa"
+   "direction": "A small cold chapel crowded with votive offerings, chipped saint statues and low candles, a single mourner kneeling.",
+   "spec_sha256": "a320e083a0464b8cdc67b9d8cd302c79fa7a77a8bc9d8ae77c2b257c4434293d"
   },
   {
    "id": "ART-CAM-THE-WAR-ROOM",
@@ -5259,7 +5335,8 @@
     15682,
     15682
    ],
-   "spec_sha256": "5a637ff60bdd931b59f0fe78022f56cda3080fbeb0fc550c0973e47d40d161c2"
+   "direction": "A heavy table under captured banners, stained maps pinned with knives, a contract and quill, a hearth burning behind.",
+   "spec_sha256": "e4fb83445d1b7eb9792732b699e3f7d12f92a92616165d7ec374294bc5fdf8d2"
   },
   {
    "id": "ART-CAM-THE-EXPEDITION-HALL",
@@ -5277,7 +5354,8 @@
     15692,
     15692
    ],
-   "spec_sha256": "0c11c404c761d926e1a2c692d762212d7605e711fa7deb9e82681be0c2b9465c"
+   "direction": "A packed-earth training yard inside split-post walls: a scarred veteran correcting a recruit's guard, blunted weapons on a rack, mud underfoot.",
+   "spec_sha256": "4bdf8d2a5db6580cd9c4bb94e8062dee1909d8262b6102a6fa5c0d594555f701"
   },
   {
    "id": "ART-CAM-THE-UNDERCROFT",
@@ -5295,7 +5373,8 @@
     15702,
     15702
    ],
-   "spec_sha256": "ff2c3ae4f85985b60ede1f2d54cbe7c23b71f5dea89141632e2c158d1192aa58"
+   "direction": "A vaulted cellar warren lit by one lantern, a hidden door ajar, a cloaked figure slipping into an older passage below.",
+   "spec_sha256": "7d0deea82935a1157dc451f9ded220402acb7ff0a9e4493ffe928b6289d7d9e8"
   },
   {
    "id": "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
