@@ -1,0 +1,2559 @@
+{
+ "audit_date": "2026-10-10",
+ "manuscript": "source/Heraldry_RC488.md (sha256 9394be77...; catalog source_sha256 matches)",
+ "repo_state": "main, clean working tree; no repository file was created, edited or committed",
+ "method": "Parsed RC488 stat blocks for all 135 monsters and bosses, compared attacks/abilities/Sz with every brief; read all 274 briefs and the owner prompt; regenerated all 275 prompts with prompt_for(e,True); scripted checks for flavour, Sz, wings/Fly, swim/burrow/climb, colour, lettering, measurements, scenery, duplicates; read tools and workflow.",
+ "coverage": {
+  "catalog_entries": 275,
+  "by_family": {
+   "cover": 1,
+   "chapter": 11,
+   "world": 8,
+   "climate": 6,
+   "bastion": 6,
+   "ancestry": 11,
+   "background": 20,
+   "class": 12,
+   "item": 2,
+   "tradition": 15,
+   "monster": 120,
+   "boss": 15,
+   "scenario": 37,
+   "campaign": 11
+  },
+  "briefs": {
+   "figures.json": 178,
+   "scenes.json": 96,
+   "owner_prompt": 1,
+   "entries_without_brief": [
+    "ART-BAS-GREYTHORN (owner prompt, expected)"
+   ]
+  },
+  "prompts_generated": 275,
+  "verbatim_flavour_in_prompt": "262 of 262 expected (275 minus cover, 11 chapters, Greythorn owner prompt); 0 missing",
+  "catalog_flavour_equals_RC488_text": "263 of 263 with flavour; 0 differences",
+  "stat_blocks_parsed_and_compared": "135 of 135 (120 monsters, 15 bosses); heading found and Sz equals catalog size_code in 135 of 135",
+  "scenarios_compared_with_manuscript_text": "37 of 37, plus all scenario-specific monster stat blocks",
+  "other_families_read_in_full": {
+   "cover": 1,
+   "chapter": 11,
+   "world": 8,
+   "climate": 6,
+   "bastion": 5,
+   "ancestry": 11,
+   "class": 12,
+   "background": 20,
+   "tradition": 15,
+   "item": 2,
+   "campaign": 11
+  },
+  "pipeline_files_read": [
+   "production/art/gpt/INSTRUCTIONS.md",
+   "QUEUE.json",
+   "QUEUE.md",
+   "RECEIPTS.jsonl",
+   "tools/art_gpt_pack.py",
+   "tools/art_intake.py",
+   "tools/art_generate.py",
+   "tools/art_catalog.py",
+   "tools/art_list.py",
+   "tools/art_ink.py (head)",
+   ".github/workflows/art-intake.yml",
+   ".gitattributes",
+   "docs/ART_AUTOMATION.md",
+   "production/art/SOURCE_NOTES.md"
+  ],
+  "not_read_line_by_line": [
+   "production/art/ILLUSTRATION_LIST.md (verified identical to a regenerated render instead)",
+   "PROMPTS.json, ART_MANIFEST.json, GENERATION_LEDGER.jsonl (legacy)"
+  ],
+  "images_inspected": "none; no GPT-route image exists yet (SELECTIONS: 5 superseded Gemini records, 1 received Greythorn JPEG). Only prompts and text were audited."
+ },
+ "summary": {
+  "findings_total": 24,
+  "wrong_or_misleading": 9,
+  "cosmetic": 15,
+  "pipeline_items": 9,
+  "priority_P1": [
+   "F01",
+   "F02",
+   "F03",
+   "P01"
+  ],
+  "fidelity_checks_passed": {
+   "owner_examples": "Undead Champion War Maul, Stone Sentinel Stone Greatsword, Orc Battleaxe + round shield + Shield Wall, White Court Guard Court Longsword + kite shield + Shield Wall: all correct in the briefs and stat blocks",
+   "wings_only_with_Fly": "0 creatures without Fly have wings (the one text hit, Gorebeak Bear, is its own \"no wings\" avoid). 29 of 135 creatures have Fly; 18 mention wings (some as \"no wings\"); the other 11 are incorporeal or floating (Ember Skull, Spectre, Lich, Ice Wraith, Wind Elemental, Banshee, Hollow Crown, Frost Bailiff, Voice Beneath the Bells) or the three wyrms in F13",
+   "swim_burrow_climb_cues": "present for every creature with those abilities except Fire Beetle burrow and Gloomspore Jelly climb (cosmetic)",
+   "mire_scenario_2": "Swamp Goblins present, Troglodytes only in an avoid line; Mire 5 Zombies/Boglings/Crocodiles match",
+   "climate_membership": "no creature in a scenario or climate brief belongs to another climate (Quickstart Dire Wolves x4 and 2 Heroes per side match A.4)",
+   "scenario_deployment_geometry": "only 6 leaks (F18)",
+   "lettering": "no brief asks for lettering or readable runes; the only rune/glyph mentions are \"abstract, no text\" or in avoid lines; Greythorn owner prompt asks for \"indistinct runes\" on standing stones (owner-authored, left as is)"
+  }
+ },
+ "findings": [
+  {
+   "fid": "F01",
+   "kind": "prompt_hygiene",
+   "severity": "wrong_or_misleading",
+   "priority": "P1",
+   "title": "Positive requirements are printed under the heading \"Specific pitfalls to avoid:\"",
+   "ids": [
+    "ART-MON-GIANT-TARANTULA",
+    "ART-MON-ORC",
+    "ART-MON-HARPY",
+    "ART-MON-UNDEAD-CHAMPION",
+    "ART-MON-GARGOYLE",
+    "ART-MON-FORSAKEN-ARCHER",
+    "ART-MON-BASILISK",
+    "ART-MON-GIANT-BAT",
+    "ART-MON-GIANT-BLACK-WIDOW",
+    "ART-MON-VAULT-OOZE",
+    "ART-MON-VRYMK",
+    "ART-MON-DEEP-ELF-WARRIOR",
+    "ART-MON-GLOOM-HULK",
+    "ART-MON-EVIL-EYE",
+    "ART-MON-THOUGHT-EATER",
+    "ART-MON-WEREBEAR",
+    "ART-MON-FROST-WYVERN",
+    "ART-MON-FIRE-BEETLE",
+    "ART-MON-GIANT-SCORPION",
+    "ART-MON-MANTICORE",
+    "ART-MON-STIRGE",
+    "ART-MON-CROCODILE",
+    "ART-MON-HYDRA",
+    "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
+    "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
+    "ART-MON-BLACKFIRE-HOUND",
+    "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY",
+    "ART-CH06-002"
+   ],
+   "quotes": [
+    {
+     "id": "ART-MON-GIANT-TARANTULA",
+     "field": "avoid",
+     "quote": "Spiders have exactly eight legs"
+    },
+    {
+     "id": "ART-MON-ORC",
+     "field": "avoid",
+     "quote": "One-handed battleaxe and a shield on the arm: no greataxe, no sword"
+    },
+    {
+     "id": "ART-MON-HARPY",
+     "field": "avoid",
+     "quote": "Keep hands human but with clawed nails; talons on feet"
+    },
+    {
+     "id": "ART-MON-UNDEAD-CHAMPION",
+     "field": "avoid",
+     "quote": "Weapon is a two-handed war maul of fused bone: no axe blade"
+    },
+    {
+     "id": "ART-MON-GARGOYLE",
+     "field": "avoid",
+     "quote": "Must have wings: it flies"
+    },
+    {
+     "id": "ART-MON-FORSAKEN-ARCHER",
+     "field": "avoid",
+     "quote": "Weapon is a longbow, not a shortbow"
+    },
+    {
+     "id": "ART-MON-BASILISK",
+     "field": "avoid",
+     "quote": "Exactly eight legs"
+    },
+    {
+     "id": "ART-MON-GIANT-BAT",
+     "field": "avoid",
+     "quote": "Wings are required: it flies"
+    },
+    {
+     "id": "ART-MON-GIANT-BLACK-WIDOW",
+     "field": "avoid",
+     "quote": "Spiders have exactly eight legs"
+    },
+    {
+     "id": "ART-MON-VAULT-OOZE",
+     "field": "avoid",
+     "quote": "Must be a cube"
+    },
+    {
+     "id": "ART-MON-VRYMK",
+     "field": "avoid",
+     "quote": "Beak is hooked"
+    },
+    {
+     "id": "ART-MON-DEEP-ELF-WARRIOR",
+     "field": "avoid",
+     "quote": "Weapons: crescent glaive plus hand-crossbow and shortsword (glaive is the featured weapon)"
+    },
+    {
+     "id": "ART-MON-GLOOM-HULK",
+     "field": "avoid",
+     "quote": "Exactly four eyes"
+    },
+    {
+     "id": "ART-MON-EVIL-EYE",
+     "field": "avoid",
+     "quote": "Must have exactly one central eye plus eyestalks"
+    },
+    {
+     "id": "ART-MON-THOUGHT-EATER",
+     "field": "avoid",
+     "quote": "Four tentacles only"
+    },
+    {
+     "id": "ART-MON-WEREBEAR",
+     "field": "avoid",
+     "quote": "Show it charging on all fours, never reared (the Dire Bear rears)"
+    },
+    {
+     "id": "ART-MON-FROST-WYVERN",
+     "field": "avoid",
+     "quote": "Exactly two legs: not a dragon"
+    },
+    {
+     "id": "ART-MON-FIRE-BEETLE",
+     "field": "avoid",
+     "quote": "Exactly six legs"
+    },
+    {
+     "id": "ART-MON-GIANT-SCORPION",
+     "field": "avoid",
+     "quote": "Exactly eight walking legs, two pincers, one tail"
+    },
+    {
+     "id": "ART-MON-MANTICORE",
+     "field": "avoid",
+     "quote": "Wings required: it flies"
+    },
+    {
+     "id": "ART-MON-STIRGE",
+     "field": "avoid",
+     "quote": "Six legs"
+    },
+    {
+     "id": "ART-MON-CROCODILE",
+     "field": "avoid",
+     "quote": "Four legs"
+    },
+    {
+     "id": "ART-MON-HYDRA",
+     "field": "avoid",
+     "quote": "Many heads: at least five necks"
+    },
+    {
+     "id": "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
+     "field": "avoid",
+     "quote": "Veyr has no gendered features, use they/them presentation"
+    },
+    {
+     "id": "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
+     "field": "avoid",
+     "quote": "Greythorn gate must be timber-walled"
+    },
+    {
+     "id": "ART-MON-BLACKFIRE-HOUND",
+     "field": "avoid",
+     "quote": "Flame must be black ink shapes, not glow"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY",
+     "field": "avoid",
+     "quote": "Emissary must look like a courier or diplomat, not an adventurer"
+    },
+    {
+     "id": "ART-CH06-002",
+     "field": "avoid",
+     "quote": "Ratkin must look like rat-folk, not rats, and not comic"
+    }
+   ],
+   "secondary_quotes_partial_visibility": [
+    {
+     "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+     "field": "avoid",
+     "quote": "Boar remains a barely seen shape, not a portrait; no tusks in close-up"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
+     "field": "avoid",
+     "quote": "The serpent itself unseen"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR",
+     "field": "avoid",
+     "quote": "The Sandwyrm not visible; only its trace"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
+     "field": "avoid",
+     "quote": "Wyrm only partially glimpsed"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-3-THE-QUAKE",
+     "field": "avoid",
+     "quote": "Guardian only as faint wall hints"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT",
+     "field": "avoid",
+     "quote": "Edrava's Shade and the reliquary stay unseen"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD",
+     "field": "avoid",
+     "quote": "Treant partial only"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR",
+     "field": "avoid",
+     "quote": "Cinder Lord only as silhouette in flames"
+    }
+   ],
+   "conflicting_source": "tools/art_generate.py prompt_for(): final = [\"Specific pitfalls to avoid:\"] + [\"* \" + x for x in b[\"avoid\"]]. Every brief \"avoid\" item is printed under that header. 106 of the 930 avoid items do not start with No/Not/Do not/Never/Avoid/Without; about 28 are anatomy or weapon REQUIREMENTS.",
+   "evidence": "Rendered prompt for the queued anchor ART-MON-UNDEAD-CHAMPION (production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt): \"Specific pitfalls to avoid: ... * Weapon is a two-handed war maul of fused bone: no axe blade.\" Read literally, the model is told to avoid the war maul. Same for Tarantula (queued anchor): \"* Spiders have exactly eight legs.\" Crocodile prints \"* Four legs.\" under the avoid header.",
+   "fix": "In prompt_for, route avoid items that do not match ^(no|not|do not|don't|never|avoid|without)\\b to a separate \"MUST KEEP:\" list printed before \"Specific pitfalls to avoid:\". Or rewrite the 28 briefs as negatives (\"Not seven or nine legs\", \"Not a greataxe\"). Regenerate the queue; the two queued anchors change hash."
+  },
+  {
+   "fid": "F02",
+   "kind": "format_conflict",
+   "severity": "wrong_or_misleading",
+   "priority": "P1",
+   "title": "All 15 tradition briefs are multi-figure or scenic compositions but get FORMAT AND ISOLATION, 1:1, printed 1.6 in",
+   "ids": [
+    "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-1-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-3-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-1-SORCERIES-D20",
+    "ART-TRA-TIER-2-SORCERIES-D20",
+    "ART-TRA-TIER-3-SORCERIES-D20",
+    "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20",
+    "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20",
+    "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20"
+   ],
+   "quotes": [
+    {
+     "id": "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
+     "field": "composition",
+     "quote": "A young apprentice at a scarred practice post, conjuring a small flame in one hand while a shimmer of force bends the air before the other hand; three-quarter view, mid-height."
+    },
+    {
+     "id": "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
+     "field": "composition",
+     "quote": "A wizard hurriedly copying a spell from a scorched tome by candlelight while the library behind burns; wide interior view, wizard in the foreground."
+    },
+    {
+     "id": "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
+     "field": "composition",
+     "quote": "A wizard sifting ash and cipher-scraps among robed corpses on the floor of a ruined tower, a sealed book clutched to their chest; high-angle view into the chamber."
+    },
+    {
+     "id": "ART-TRA-TIER-1-DIVINE-PRAYERS-D20",
+     "field": "composition",
+     "quote": "A priest raising a lantern whose light falls on a wounded soldier, the wound visibly knitting closed; mid-shot, both figures in a ruined chapel aisle."
+    },
+    {
+     "id": "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
+     "field": "composition",
+     "quote": "A weary cleric kneeling at a cracked roadside shrine beside a ledger of offerings, candles guttering; low side view."
+    },
+    {
+     "id": "ART-TRA-TIER-3-DIVINE-PRAYERS-D20",
+     "field": "composition",
+     "quote": "A priest with arms raised on a hilltop, demanding, as a vast ambiguous shape takes form in the storm clouds above; low angle looking up."
+    },
+    {
+     "id": "ART-TRA-TIER-1-SORCERIES-D20",
+     "field": "composition",
+     "quote": "A close view of a sorcerer's cut palm, drops of blood rising and twisting into a small crackling spark; close-up cropped to hand and forearm."
+    },
+    {
+     "id": "ART-TRA-TIER-2-SORCERIES-D20",
+     "field": "composition",
+     "quote": "A gaunt sorcerer with scar-laddered forearms channelling a crackling storm between their hands; three-quarter view, standing braced."
+    },
+    {
+     "id": "ART-TRA-TIER-3-SORCERIES-D20",
+     "field": "composition",
+     "quote": "A sorcerer half-consumed by their own working, a vortex of force tearing up the ground, villagers praying on their knees at a safe distance; wide view with the sorcerer centre."
+    },
+    {
+     "id": "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
+     "field": "composition",
+     "quote": "A druid kneeling with one palm pressed to an exposed root, a hare and a crow watching, rain beginning to fall; low view at root level."
+    },
+    {
+     "id": "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20",
+     "field": "composition",
+     "quote": "A druid speaking aloud as the surrounding trees bend toward them and roots heave up out of the earth; wide low view with the druid centre."
+    },
+    {
+     "id": "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
+     "field": "composition",
+     "quote": "A druid half-merged with an ancient oak, bark creeping over their skin and branches rising like antlers from their head; frontal-three-quarter figure growing out of the trunk."
+    },
+    {
+     "id": "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20",
+     "field": "composition",
+     "quote": "A psion seated cross-legged with closed eyes, pebbles hovering in a slow ring around them and a candle flame standing perfectly still; straight-on view, symmetrical."
+    },
+    {
+     "id": "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20",
+     "field": "composition",
+     "quote": "A psion alone in a dark corridor, hiding a trembling hand, fine cracks of strain around their eyes; mid-shot, leaning on the wall."
+    },
+    {
+     "id": "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20",
+     "field": "composition",
+     "quote": "A psion on a battlefield where stone steps and a wall rise from nothing at their gaze, enemies stumbling as the ground obeys the psion's thought; wide shot, psion centre-left."
+    }
+   ],
+   "conflicting_source": "config/art_style.json families.tradition: aspect \"1:1\", print_w_in 1.6, framing \"Small emblematic vignette of a caster mid-ritual ... Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.\" prompt_v2.format_figure: \"A single subject drawn whole ... No background scenery. ... nothing touches or is cropped by the image edge.\" art_generate.prompt_for treats tradition as kind \"figure\" (not in scene_families/still_families).",
+   "examples": [
+    "TIER-3-PSYCHIC: \"A psion on a battlefield ... enemies stumbling\" plus detail \"Enemy soldiers tripping and falling back\" and \"Banners limp in the distance\"",
+    "TIER-3-SORCERIES: \"villagers praying on their knees at a safe distance\" and \"A ruined farmstead edge\"",
+    "TIER-2-ARCANE: \"Tall bookshelves in the rear shown burning\" and \"Arched vaulted ceiling cracked\"",
+    "TIER-1-SORCERIES: \"close-up cropped to hand and forearm\" contradicts \"nothing ... is cropped by the image edge\""
+   ],
+   "fix": "Either (a) move family \"tradition\" to the scene list (3:2, 1536x1024, vignette format, print about 2.6 in) or (b) rewrite the 15 briefs as one caster plus one effect on a ground patch. Option (a) matches the briefs as written; the 1.6 in size cannot carry a battlefield."
+  },
+  {
+   "fid": "F03",
+   "kind": "format_conflict_anchor",
+   "severity": "wrong_or_misleading",
+   "priority": "P1",
+   "title": "The queued figure ANCHORS carry background scenery or extra subjects, and they become the style references for the whole batch",
+   "ids": [
+    "ART-MON-UNDEAD-CHAMPION",
+    "ART-CLA-FIGHTER",
+    "ART-ANC-DWARF",
+    "ART-MON-GIANT-TARANTULA"
+   ],
+   "quotes": [
+    {
+     "id": "ART-MON-UNDEAD-CHAMPION",
+     "field": "detail",
+     "quote": "Lesser dead trailing behind"
+    },
+    {
+     "id": "ART-CLA-FIGHTER",
+     "field": "composition",
+     "quote": "Full figure in three-quarter view braced low behind a small round targe at a ruined gate, shortsword held back over the hip, taking an unseen charge."
+    },
+    {
+     "id": "ART-CLA-FIGHTER",
+     "field": "detail",
+     "quote": "Scuffs and rust on mail, boots braced on cracked flagstones"
+    },
+    {
+     "id": "ART-ANC-DWARF",
+     "field": "composition",
+     "quote": "Full figure in three-quarter view, braced wide-stanced at the top of a descending stair, lantern held forward into the dark in one hand, shield and handaxe ready in the other."
+    },
+    {
+     "id": "ART-ANC-DWARF",
+     "field": "detail",
+     "quote": "Thick hobnailed boots planted on worn stone steps"
+    },
+    {
+     "id": "ART-MON-GIANT-TARANTULA",
+     "field": "detail",
+     "quote": "Leaf litter and a rusted iron helm for scale"
+    }
+   ],
+   "conflicting_source": "Same prompt, FORMAT AND ISOLATION: \"A single subject drawn whole ... No background scenery.\" For the Undead Champion the extra subject follows the manuscript flavour (RC488 line 8314: \"Where it walks, the lesser dead come on in its wake.\") but conflicts with the template. production/art/gpt/QUEUE.json phase \"anchors\" lists these four; An anchor that shows a gate, a stair or a crowd teaches that setting to every figure generated from it.",
+   "fix": "Before the anchors go to ChatGPT Work: delete \"Lesser dead trailing behind\" and replace the Fighter/Dwarf compositions with ground-only poses (\"braced low behind a small round targe\", \"braced wide-stanced, lantern held forward\"). Keep the Tarantula helm (a prop for scale, not scenery). Run art_gpt_pack.py; hashes change."
+  },
+  {
+   "fid": "F04",
+   "kind": "format_conflict",
+   "severity": "wrong_or_misleading",
+   "priority": "P2",
+   "title": "Figure-family briefs describe scenery, architecture or extra subjects that contradict FORMAT AND ISOLATION (\"No background scenery\")",
+   "counts": {
+    "monster": 108,
+    "ancestry": 11,
+    "class": 8,
+    "background_still_life": 12
+   },
+   "note": "Monster count is of 120 monster-family entries (108 flagged); class is 8 of 12; ancestry 11 of 11; 12 of 20 backgrounds have a backdrop item. Bosses are scene-family and are not counted. Every flagged line is in scenery_conflicts below. The strongest cases (scenery is the premise, so isolation cannot be honoured): ART-MON-SPECTRE (\"drifting out of a stone wall\"), ART-MON-VAULTFANG (\"clinging to the cavern roof\"), ART-MON-NOXCLOTH (\"half-peeled off the cavern ceiling ... over a torch-carrying figure\"), ART-MON-VAULT-OOZE (\"down a narrow stone corridor\"), ART-MON-WILL-O-WISP (\"Low view across dark water\"), ART-MON-STONE-SENTINEL (\"Ruined hall columns for scale\"), ART-MON-GIANT-SCORPION (\"Dune field behind\"), ART-MON-ELDER-VRYMK (victim plus smaller vrymk), ART-MON-GIANT-BLACK-WIDOW (web \"in a cavern\"), ART-MON-IRON-GOLEM (empty throne), ART-MON-SWAMP-HAG (punt, hut on stilts), ART-MON-TROGLODYTE (\"stepping out of a rock wall\"), ART-ANC-HALFLING (avoid line: \"Do not stand it beside nothing; the wall must show it is small\").",
+   "scenery_conflicts": {
+    "ART-MON-GOBLIN": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view, hunched and scuttling forward, notched blade out in front, with a few smaller silhouettes of its mob in the background."
+     },
+     {
+      "field": "detail",
+      "quote": "Background: ruined steading wall and two or three blurred mob silhouettes"
+     }
+    ],
+    "ART-MON-GOBLIN-SHAMAN": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view standing on a stump behind a mob, gnarled staff raised in one hand, other hand flinging a spit of dark hex-marks."
+     },
+     {
+      "field": "detail",
+      "quote": "Mob silhouettes lower in the background"
+     }
+    ],
+    "ART-MON-BANDIT": [
+     {
+      "field": "detail",
+      "quote": "Fallen log and ferns for cover"
+     }
+    ],
+    "ART-MON-BANDIT-CAPTAIN": [
+     {
+      "field": "detail",
+      "quote": "Battered wooden crate and two dim underling silhouettes behind"
+     }
+    ],
+    "ART-MON-SATYR-REVELER": [
+     {
+      "field": "detail",
+      "quote": "Firelight rim on one side and shallow grave mounds behind"
+     }
+    ],
+    "ART-MON-DIRE-WOLF": [
+     {
+      "field": "detail",
+      "quote": "Leaf litter and trees; a second blurry wolf shape behind"
+     }
+    ],
+    "ART-MON-ORC": [
+     {
+      "field": "detail",
+      "quote": "Burnt steading gate behind"
+     }
+    ],
+    "ART-MON-BUGBEAR": [
+     {
+      "field": "detail",
+      "quote": "Bracken and undergrowth parting around it"
+     }
+    ],
+    "ART-MON-HARPY": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view perched on a broken tower crenel, wings half-spread, head thrown back mid-song, one talon gripping stone and the other clawed forward."
+     },
+     {
+      "field": "detail",
+      "quote": "Broken tower masonry and a scatter of bones"
+     }
+    ],
+    "ART-MON-BLOOD-APE": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the ape swinging down from a thick branch by one long arm, other fist cocked back to pummel."
+     },
+     {
+      "field": "detail",
+      "quote": "Branches and hanging vines"
+     }
+    ],
+    "ART-MON-GOREBEAK-BEAR": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the creature charging low through the trees, head thrust forward, hooked beak open, foreclaws raking out."
+     }
+    ],
+    "ART-MON-OGRE": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view standing calf-deep in a ford, great club resting on the shoulder, one hand held out for a toll."
+     },
+     {
+      "field": "detail",
+      "quote": "Stream water around its shins"
+     }
+    ],
+    "ART-MON-DRYAD-GROVEWARDEN": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view stepping out of a hollow tree trunk as if through a doorway, staff extended, roots snaking from its feet."
+     },
+     {
+      "field": "detail",
+      "quote": "Tree trunk doorway behind with split bark"
+     }
+    ],
+    "ART-MON-FOREST-TROLL": [
+     {
+      "field": "detail",
+      "quote": "Boggy ground and rotting trunk"
+     }
+    ],
+    "ART-MON-WEREWOLF": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the beast striding upright out of the treeline, claws spread, torn villager's shirt still hanging."
+     },
+     {
+      "field": "detail",
+      "quote": "Trees behind with sparse moonlight lines"
+     }
+    ],
+    "ART-MON-UNDEAD-WARRIOR": [
+     {
+      "field": "detail",
+      "quote": "Another dim shape behind in a ragged rank"
+     }
+    ],
+    "ART-MON-UNDEAD-CROSSBOWMAN": [
+     {
+      "field": "detail",
+      "quote": "Rank of dim shapes ahead"
+     }
+    ],
+    "ART-MON-GHOUL": [
+     {
+      "field": "detail",
+      "quote": "Crypt floor with bones, tomb doorway behind"
+     }
+    ],
+    "ART-MON-EMBER-SKULL": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the skull drifting in the air above rubble, jaw open, a thin fire ray spitting from the mouth."
+     },
+     {
+      "field": "detail",
+      "quote": "Rubble below receiving sparse cast light"
+     }
+    ],
+    "ART-MON-WERERAT": [
+     {
+      "field": "detail",
+      "quote": "Sewer or undercroft arch with dripping water"
+     }
+    ],
+    "ART-MON-SPECTRE": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the spectre drifting out of a stone wall, one hand reaching forward to touch."
+     },
+     {
+      "field": "detail",
+      "quote": "Body half-embedded in the wall to show it passes through"
+     }
+    ],
+    "ART-MON-UNDEAD-SENTINEL": [
+     {
+      "field": "composition",
+      "quote": "Frontal three-quarter view of the sentinel planted in a broken gateway, rusted tower shield grounded to the left, reach-halberd raised in the right hand."
+     },
+     {
+      "field": "detail",
+      "quote": "Cracked gateway arch and rubble"
+     },
+     {
+      "field": "detail",
+      "quote": "Lesser dead dimly behind"
+     }
+    ],
+    "ART-MON-UNDEAD-CHAMPION": [
+     {
+      "field": "detail",
+      "quote": "Lesser dead trailing behind"
+     }
+    ],
+    "ART-MON-GARGOYLE": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the creature crouched on a broken cornice, wings half-open, one clawed hand gripping the edge and head turned down toward the viewer."
+     },
+     {
+      "field": "detail",
+      "quote": "Gothic ruin cornice with a broken tracery"
+     }
+    ],
+    "ART-MON-STONE-SENTINEL": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the sentinel striding forward through a ruined hall, a two-handed greatsword of carved stone raised in both blocky fists."
+     },
+     {
+      "field": "detail",
+      "quote": "Ruined hall columns for scale"
+     }
+    ],
+    "ART-MON-MINOTAUR": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the minotaur charging head-down through a narrow ruined street with greataxe trailing behind."
+     },
+     {
+      "field": "detail",
+      "quote": "Narrow canyon of ruined walls"
+     }
+    ],
+    "ART-MON-NIGHT-HAG": [
+     {
+      "field": "detail",
+      "quote": "Dark archway behind with crossed hatching"
+     }
+    ],
+    "ART-MON-FORSAKEN-ARCHER": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view at full draw on a ruined rampart, cursed longbow bent, barbed arrow aimed."
+     },
+     {
+      "field": "detail",
+      "quote": "Rampart parapet with a broken crenel"
+     }
+    ],
+    "ART-MON-FORSAKEN-KNIGHT": [
+     {
+      "field": "detail",
+      "quote": "Tattered banner on a pole behind with no readable emblem"
+     }
+    ],
+    "ART-MON-FORSAKEN-DUELIST": [
+     {
+      "field": "detail",
+      "quote": "Cracked marble floor"
+     }
+    ],
+    "ART-MON-BASILISK": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the basilisk dragging itself over rubble, head raised and turned toward the viewer with a fixed, unblinking petrifying stare, half-petrified statues behind."
+     },
+     {
+      "field": "detail",
+      "quote": "Statues of surprised people, caught mid-stride, scattered behind"
+     }
+    ],
+    "ART-MON-IRON-GOLEM": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the golem standing before an empty throne, both massive fists raised to slam down."
+     },
+     {
+      "field": "detail",
+      "quote": "Empty throne and dust on the steps"
+     }
+    ],
+    "ART-MON-LICH": [
+     {
+      "field": "detail",
+      "quote": "Dust and bone fragments, crumbling throne room"
+     }
+    ],
+    "ART-MON-KOBOLD": [
+     {
+      "field": "composition",
+      "quote": "Low three-quarter view of the kobold peering from a tunnel mouth, mining pick over its shoulder, sling in the other hand, others dimly behind."
+     },
+     {
+      "field": "detail",
+      "quote": "Tunnel timbers and a jury-rigged trap"
+     }
+    ],
+    "ART-MON-CAVE-GOBLIN": [
+     {
+      "field": "detail",
+      "quote": "Cave mouth behind with stalactites"
+     }
+    ],
+    "ART-MON-GIANT-BAT": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view from below of the bat in a swooping pass, wings spread wide, jaws open, a cavern roof of stalactites behind."
+     },
+     {
+      "field": "detail",
+      "quote": "Stalactites and a few other bat shapes hanging in the distance"
+     }
+    ],
+    "ART-MON-VAULTFANG": [
+     {
+      "field": "composition",
+      "quote": "Vertical composition looking up: the creature clinging to the cavern roof and starting to drop, single barbed point down, above a helmeted head."
+     },
+     {
+      "field": "detail",
+      "quote": "Real stalactites beside it for comparison"
+     },
+     {
+      "field": "detail",
+      "quote": "A helmed head and shoulders at the bottom edge for scale"
+     }
+    ],
+    "ART-MON-GIANT-CENTIPEDE": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the centipede pouring down a cave wall in a long sinuous curve, mandibles open and forward."
+     },
+     {
+      "field": "detail",
+      "quote": "Wall of wet rock"
+     }
+    ],
+    "ART-MON-NOXCLOTH": [
+     {
+      "field": "composition",
+      "quote": "Wide view from below: the flat cloak-like creature half-peeled off the cavern ceiling, edges billowing over a torch-carrying figure's silhouette beneath."
+     },
+     {
+      "field": "detail",
+      "quote": "Snuffed torch below with a thin smoke line"
+     },
+     {
+      "field": "detail",
+      "quote": "Rock ceiling folds that match the body"
+     }
+    ],
+    "ART-MON-TROGLODYTE": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the troglodyte stepping out of a rock wall with both claws spread, parts of its body fading to the wall's texture."
+     },
+     {
+      "field": "detail",
+      "quote": "Cave wall detail"
+     }
+    ],
+    "ART-MON-GIANT-BLACK-WIDOW": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view from the front of the spider hanging head-down at the centre of a huge web in a cavern, one foreleg pulling a strand."
+     },
+     {
+      "field": "detail",
+      "quote": "Cathedral of web strands spanning stalagmites"
+     },
+     {
+      "field": "detail",
+      "quote": "Cocooned bundle hanging off to one side"
+     }
+    ],
+    "ART-MON-GLOOMSPORE-JELLY": [
+     {
+      "field": "detail",
+      "quote": "Scoured, clean tunnel floor behind it"
+     }
+    ],
+    "ART-MON-TROGLODYTE-SHAMAN": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view crouched in a fungus-lit cave, bone club in one hand, other hand throwing hex-spit."
+     },
+     {
+      "field": "detail",
+      "quote": "Bracket fungi and stalagmites behind"
+     }
+    ],
+    "ART-MON-VAULT-OOZE": [
+     {
+      "field": "composition",
+      "quote": "Front view down a narrow stone corridor in which a clear cube-shaped mass fills the whole passage, a swallowed lantern and bones suspended within it."
+     },
+     {
+      "field": "detail",
+      "quote": "Corridor vanishing point"
+     }
+    ],
+    "ART-MON-VRYMK": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the creature clinging to a rock wall, camouflaged, with several tentacles lashing out and one pulling toward the beak."
+     }
+    ],
+    "ART-MON-DEEP-ELF-WARRIOR": [
+     {
+      "field": "detail",
+      "quote": "Stalagmites and glowing fungus lines"
+     }
+    ],
+    "ART-MON-DEEP-ELF-PRIEST": [
+     {
+      "field": "detail",
+      "quote": "Silhouette against a dark cavern wall"
+     }
+    ],
+    "ART-MON-GLOOM-HULK": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the hulk erupting from a rock wall in a rubble shower, claws raised and four eyes in a row on the face."
+     },
+     {
+      "field": "detail",
+      "quote": "Collapsing gallery supports"
+     }
+    ],
+    "ART-MON-CRYPTSTRANGLER": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of a cavern chamber where the stalagmite-like creature stands among real stalagmites, tendrils shooting out and a boot caught."
+     },
+     {
+      "field": "detail",
+      "quote": "Several real stalagmites around"
+     }
+    ],
+    "ART-MON-ELDER-VRYMK": [
+     {
+      "field": "composition",
+      "quote": "Wide three-quarter view of the elder filling a tunnel, tentacles thick as a man's leg dragging a small vrymk and a victim toward the beak."
+     },
+     {
+      "field": "detail",
+      "quote": "Smaller vrymk clustered on the tunnel walls"
+     }
+    ],
+    "ART-MON-EVIL-EYE": [
+     {
+      "field": "composition",
+      "quote": "Frontal three-quarter view of the orb drifting in a vaulted dark cavern, central eye wide open, eyestalks writhing."
+     },
+     {
+      "field": "detail",
+      "quote": "Cave ceiling with floating dust"
+     }
+    ],
+    "ART-MON-BURROWMAW": [
+     {
+      "field": "detail",
+      "quote": "Torn flagstones"
+     }
+    ],
+    "ART-MON-THOUGHT-EATER": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the creature standing in a dark chamber with a hand raised, tentacles flowing from its head."
+     },
+     {
+      "field": "detail",
+      "quote": "Dark vaulted chamber with scattered fallen helmets"
+     }
+    ],
+    "ART-MON-FROZEN-SKELETON": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the skeleton standing in drifted snow, sword frozen to its hand, icicles hanging from the ribs."
+     },
+     {
+      "field": "detail",
+      "quote": "Narrow empty avenue behind"
+     }
+    ],
+    "ART-MON-SNOW-GOBLIN": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the goblin rising from a snowdrift, frost knife in one hand, sling in the other, fur nearly the colour of the paper."
+     },
+     {
+      "field": "detail",
+      "quote": "Snowdrift and falling snow"
+     }
+    ],
+    "ART-MON-RATKIN-SCAVENGER": [
+     {
+      "field": "composition",
+      "quote": "Low three-quarter view of the scavenger darting across a frozen street, rusty knife held low, glancing back over its shoulder with a stolen scrap clutched in the other hand."
+     },
+     {
+      "field": "detail",
+      "quote": "Several smaller shapes scurrying in the background"
+     }
+    ],
+    "ART-MON-TUNDRA-WOLF": [
+     {
+      "field": "detail",
+      "quote": "A second wolf outline in the far distance"
+     }
+    ],
+    "ART-MON-RATKIN-WARRIOR": [
+     {
+      "field": "detail",
+      "quote": "Another spear tip and shield edge at the frame's edge"
+     }
+    ],
+    "ART-MON-WHITE-COURT-GUARD": [
+     {
+      "field": "composition",
+      "quote": "Frontal three-quarter view of the guard standing in drill position on a frozen avenue, kite shield braced forward, longsword held upright at the shoulder."
+     },
+     {
+      "field": "detail",
+      "quote": "Icy avenue and snow"
+     }
+    ],
+    "ART-MON-RATKIN-SEER": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the seer perched on a broken pillar, bone staff in one hand, other hand flinging frosty hex-flecks, mouth open."
+     },
+     {
+      "field": "detail",
+      "quote": "Warriors dimly below"
+     }
+    ],
+    "ART-MON-FROST-GHOUL": [
+     {
+      "field": "composition",
+      "quote": "Low three-quarter view of the ghoul crawling over a snowdrift, frost-sheathed claws forward, jaw open, a second shape dim behind."
+     },
+     {
+      "field": "detail",
+      "quote": "Ruined street with snow-choked doorway"
+     }
+    ],
+    "ART-MON-WHITE-COURT-ARCHER": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the archer standing on a frozen balcony, frostbow at full draw, quiver overflowing."
+     },
+     {
+      "field": "detail",
+      "quote": "Balcony balustrade glazed in ice"
+     }
+    ],
+    "ART-MON-ICE-WRAITH": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the wraith gliding down an icy avenue, one long arm reaching out with a frost-touch."
+     },
+     {
+      "field": "detail",
+      "quote": "Ice-lined avenue and snow"
+     }
+    ],
+    "ART-MON-ICE-ELEMENTAL": [
+     {
+      "field": "detail",
+      "quote": "Blizzard sky"
+     }
+    ],
+    "ART-MON-FALLEN-PALADIN": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the paladin kneeling then rising in a black chapel, defiled flamberge planted, head lifted."
+     },
+     {
+      "field": "detail",
+      "quote": "Broken chapel arch and shattered stained glass"
+     }
+    ],
+    "ART-MON-WHITE-COURT-EXECUTIONER": [
+     {
+      "field": "detail",
+      "quote": "Drifting snow and frozen gallows posts behind"
+     }
+    ],
+    "ART-MON-FROST-WYVERN": [
+     {
+      "field": "detail",
+      "quote": "Peaks and white sky with a few horizontal strokes"
+     }
+    ],
+    "ART-MON-GELID-FIEND": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the fiend holding an ice glaive with a tail curled behind, walls of ice rising at its sides."
+     },
+     {
+      "field": "detail",
+      "quote": "Walls of ice rising on either side"
+     }
+    ],
+    "ART-MON-FROST-GIANT": [
+     {
+      "field": "composition",
+      "quote": "Wide low-angle view of the giant striding down a snowy street, greataxe raised overhead, a tiny human figure at its feet for scale."
+     },
+     {
+      "field": "detail",
+      "quote": "Ruined oversized colonnade behind"
+     }
+    ],
+    "ART-MON-FIRE-BEETLE": [
+     {
+      "field": "detail",
+      "quote": "Tomb passage walls and sand"
+     },
+     {
+      "field": "detail",
+      "quote": "Dog-sized scale next to a broken urn"
+     }
+    ],
+    "ART-MON-IMP": [
+     {
+      "field": "detail",
+      "quote": "Tomb wall behind and heat shimmer"
+     }
+    ],
+    "ART-MON-SKELETON-WARRIOR": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the skeleton standing at its post in a sealed court, curved bronze blade held at the ready, sand drifted around its feet."
+     },
+     {
+      "field": "detail",
+      "quote": "Sand underfoot and a carved lintel behind"
+     }
+    ],
+    "ART-MON-CORPSEHOUND": [
+     {
+      "field": "detail",
+      "quote": "Dune crest and wind-blown sand"
+     }
+    ],
+    "ART-MON-GNOLL": [
+     {
+      "field": "detail",
+      "quote": "Sand and scattered bones"
+     }
+    ],
+    "ART-MON-GIANT-SCORPION": [
+     {
+      "field": "detail",
+      "quote": "Dune field behind"
+     },
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the scorpion erupting from a dune, pincers wide, tail arched forward over its back, sand cascading."
+     }
+    ],
+    "ART-MON-SKELETON-ARCHER": [
+     {
+      "field": "composition",
+      "quote": "Frontal three-quarter view of a skeleton standing in a carved niche loosing an arrow, the shape of the alcove fitted to it."
+     },
+     {
+      "field": "detail",
+      "quote": "Carved niche with hieroglyph-like motifs rendered as non-text patterns"
+     }
+    ],
+    "ART-MON-MUMMY": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the mummy stepping forward in a torch-lit tomb corridor, one arm raised in a cursing gesture, the other hanging with a fist."
+     },
+     {
+      "field": "detail",
+      "quote": "Sandy floor and sarcophagus behind"
+     }
+    ],
+    "ART-MON-WIND-ELEMENTAL": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of a funnel-shaped vortex tearing across dunes, defined by swirling sand lines, with a vague hollow face in the vortex."
+     },
+     {
+      "field": "detail",
+      "quote": "Dune surface scoured"
+     },
+     {
+      "field": "detail",
+      "quote": "Sky ruled with horizontal strokes"
+     }
+    ],
+    "ART-MON-DESERT-NAGA": [
+     {
+      "field": "detail",
+      "quote": "Toppled pillars and sand drifts"
+     }
+    ],
+    "ART-MON-FIRE-ELEMENTAL": [
+     {
+      "field": "detail",
+      "quote": "Tomb pillars blackened"
+     }
+    ],
+    "ART-MON-GIANT-SKELETON": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the colossus advancing through a tomb gallery, one massive fist raised to smash."
+     },
+     {
+      "field": "detail",
+      "quote": "Tomb carvings of kneeling figures behind (non-legible)"
+     }
+    ],
+    "ART-MON-MEDUSA": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the medusa standing among statues in a tomb gallery, shortsword in hand and serpent hair writhing."
+     },
+     {
+      "field": "detail",
+      "quote": "Surrounding statues of surprised petrified people caught mid-stride"
+     },
+     {
+      "field": "detail",
+      "quote": "Gilded tomb-gallery columns"
+     }
+    ],
+    "ART-MON-TOMB-NECROMANCER": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the necromancer on a dais holding a court staff, one hand gesturing to the ground where hands break through sand."
+     },
+     {
+      "field": "detail",
+      "quote": "Dim columns"
+     }
+    ],
+    "ART-MON-TOMB-GUARDIAN": [
+     {
+      "field": "composition",
+      "quote": "Frontal three-quarter view of the guardian planted in a tomb doorway, ceremonial glaive held upright with its blade high."
+     },
+     {
+      "field": "detail",
+      "quote": "Massive threshold with sealing stones"
+     }
+    ],
+    "ART-MON-BRASS-GOLEM": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the golem pounding both fists forward, heat shimmering around them, in front of a sealed treasure door."
+     },
+     {
+      "field": "detail",
+      "quote": "Sealed door with ornate bands"
+     }
+    ],
+    "ART-MON-MANTICORE": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the manticore crouched on a dune-road ridge, tail arched over its back with spikes fanned out, wings half open."
+     },
+     {
+      "field": "detail",
+      "quote": "Narrow dune-road below"
+     }
+    ],
+    "ART-MON-DEMON": [
+     {
+      "field": "composition",
+      "quote": "Wide low-angle view of the demon striding out of a breached ward in a tomb, hooked glaive in both hands, fire clinging to its shoulders."
+     },
+     {
+      "field": "detail",
+      "quote": "Cracked pillars"
+     }
+    ],
+    "ART-MON-BLUE-DRAGON": [
+     {
+      "field": "detail",
+      "quote": "Dune slopes collapsing"
+     }
+    ],
+    "ART-MON-BOGLING": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the bogling standing chest-deep in reed-choked shallows, spear raised and a mud-dart in the other hand."
+     },
+     {
+      "field": "detail",
+      "quote": "Reeds and lily pads, rippled water"
+     }
+    ],
+    "ART-MON-SWAMP-GOBLIN": [
+     {
+      "field": "composition",
+      "quote": "Low three-quarter view of the goblin crouched in a rough reed punt, blowpipe at its lips, bog knife at the belt."
+     },
+     {
+      "field": "detail",
+      "quote": "Crude dugout punt with a paddle"
+     }
+    ],
+    "ART-MON-ZOMBIE": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the zombie rising from black water beneath a rotting plank walkway, one arm reaching up through the gap."
+     },
+     {
+      "field": "detail",
+      "quote": "Broken plank walkway and ripple lines"
+     }
+    ],
+    "ART-MON-STIRGE": [
+     {
+      "field": "detail",
+      "quote": "Dusk air with reed stalks"
+     }
+    ],
+    "ART-MON-WILL-O-WISP": [
+     {
+      "field": "composition",
+      "quote": "Low view across dark water of a single glowing orb hanging motionless above the reeds like a lantern, with a hint of a path that vanishes into the mire."
+     },
+     {
+      "field": "detail",
+      "quote": "Reeds in silhouette"
+     },
+     {
+      "field": "detail",
+      "quote": "A narrow plank path leading toward it"
+     },
+     {
+      "field": "detail",
+      "quote": "A drowned traveller's lantern or boot at the bottom edge"
+     }
+    ],
+    "ART-MON-LIZARDFOLK-WARRIOR": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view on a rotting bank, the warrior stepping forward with a heavy club raised and a javelin held in the off hand."
+     },
+     {
+      "field": "detail",
+      "quote": "Reeds and mud banks"
+     }
+    ],
+    "ART-MON-LIZARDFOLK-HUNTER": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the hunter half-hidden in reeds, harpoon drawn back to throw, a coiled line trailing."
+     },
+     {
+      "field": "detail",
+      "quote": "Ripples and walkway timbers"
+     }
+    ],
+    "ART-MON-CROCODILE": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the crocodile surging half out of the water, jaws clamped on a plank walkway, spray flying."
+     },
+     {
+      "field": "detail",
+      "quote": "Plank walkway and reeds"
+     }
+    ],
+    "ART-MON-LIZARDFOLK-SHAMAN": [
+     {
+      "field": "detail",
+      "quote": "Reed banks and fog lines"
+     }
+    ],
+    "ART-MON-MIASMA-SERPENT": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the snake swimming through a channel with its head raised above the surface, haze rising from its open mouth."
+     },
+     {
+      "field": "detail",
+      "quote": "Reed stalks"
+     }
+    ],
+    "ART-MON-SWAMP-NAGA": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the naga coiled around a half-sunk column, hooded head raised and mouth spitting venom."
+     },
+     {
+      "field": "detail",
+      "quote": "Half-sunk drowned stonework"
+     }
+    ],
+    "ART-MON-GIANT-CONSTRICTOR": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the snake dropping from a low branch with loops already wrapping an empty rope-slung pack, head striking down."
+     },
+     {
+      "field": "detail",
+      "quote": "Low branch and Spanish-moss-like hanging weeds"
+     },
+     {
+      "field": "detail",
+      "quote": "Water below with ripples"
+     }
+    ],
+    "ART-MON-SHAMBLING-MOUND": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the mound lumbering through shallow fen, both vine-wrapped arms swinging in a slam."
+     }
+    ],
+    "ART-MON-SWAMP-HAG": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the hag standing on a small punt, poling it through fog, one clawed hand pointed in a curse."
+     },
+     {
+      "field": "detail",
+      "quote": "Fog and reed banks, lonely hut on stilts in the distance"
+     },
+     {
+      "field": "detail",
+      "quote": "Lantern hung on the punt"
+     }
+    ],
+    "ART-MON-BANSHEE": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the banshee drifting over fog-covered water, mouth open in a wail, long hair streaming upward."
+     },
+     {
+      "field": "detail",
+      "quote": "Fog and reeds"
+     }
+    ],
+    "ART-MON-SWAMP-TROLL": [
+     {
+      "field": "composition",
+      "quote": "Three-quarter view of the troll heaving itself forward on all fours through black water, one huge clawed arm reaching."
+     },
+     {
+      "field": "detail",
+      "quote": "Dark mire water to the shoulders"
+     }
+    ],
+    "ART-MON-HYDRA": [
+     {
+      "field": "composition",
+      "quote": "Wide three-quarter view of the hydra rearing from a black pool, five to seven serpent necks striking in different directions, with three clearly biting."
+     },
+     {
+      "field": "detail",
+      "quote": "Lily pads and bones in the water"
+     },
+     {
+      "field": "detail",
+      "quote": "Reed-choked banks"
+     }
+    ],
+    "ART-MON-BLACKWATER-WIGHT": [
+     {
+      "field": "detail",
+      "quote": "Other drowned figures rising dimly behind"
+     },
+     {
+      "field": "detail",
+      "quote": "Black water and mist"
+     }
+    ],
+    "ART-MON-MIRE-TITAN": [
+     {
+      "field": "composition",
+      "quote": "Wide low view of the titan standing waist-deep in fen water, reeds and mud sliding from its body, tentacles raised and mouth partly open."
+     }
+    ],
+    "ART-MON-BLACK-DRAGON": [
+     {
+      "field": "composition",
+      "quote": "Wide low-angle view of the dragon rising from open black water, acid dripping from its jaws, wings partly lifting."
+     }
+    ],
+    "ART-ANC-HUMAN": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view mid-stride along a rutted road, walking staff planted ahead, head turned back over the shoulder toward unseen pursuit."
+     }
+    ],
+    "ART-ANC-HALFLING": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view, crouched low behind a broken wall top, sling hand drawn back, eyes alert over the edge."
+     },
+     {
+      "field": "detail",
+      "quote": "Wall coursing and weeds that show the small scale"
+     }
+    ],
+    "ART-ANC-DWARF": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view, braced wide-stanced at the top of a descending stair, lantern held forward into the dark in one hand, shield and handaxe ready in the other."
+     },
+     {
+      "field": "detail",
+      "quote": "Thick hobnailed boots planted on worn stone steps"
+     }
+    ],
+    "ART-ANC-ELF": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view standing at ease at the edge of a wood, longbow lowered in one hand, head tilted as if listening, one hand resting on the quiver."
+     },
+     {
+      "field": "detail",
+      "quote": "Sparse leaf litter and a trunk behind to show the forest home"
+     }
+    ],
+    "ART-ANC-GNOME": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view kneeling at a stone door-plate or trap mechanism, eyepiece lens flipped down, probing it with a thin tool while a small crossbow hangs ready on the back."
+     },
+     {
+      "field": "detail",
+      "quote": "Mechanism with gears showing that it is a trap or lock"
+     }
+    ],
+    "ART-ANC-GOBLIN": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view slipping around a corner, lantern held out and low in one hand, short blade pointed back down the passage in the other, ready to dodge."
+     }
+    ],
+    "ART-ANC-ORC": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view standing composed and squared on a ridge road at rest, one hand on the haft of a greataxe slung over the back, gaze steady on the horizon."
+     }
+    ],
+    "ART-ANC-RATKIN": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view hunkered on a low brick ledge, one hand cradling a scavenged tool, head tilted with nose and whiskers working."
+     }
+    ],
+    "ART-ANC-DEEP-ELF": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view stepping out of a dark archway into daylight, one hand raised against the glare under a deep hood, curved blade held low in the other."
+     },
+     {
+      "field": "detail",
+      "quote": "Shadow cast long behind it, archway behind in solid black"
+     }
+    ],
+    "ART-ANC-DEMONBORN": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view standing before a barred wooden door, one hand lifting the latch, cloak parted behind to show a tail, face turned to the viewer."
+     },
+     {
+      "field": "detail",
+      "quote": "Door closed against them as a visual hint"
+     }
+    ],
+    "ART-ANC-DRAKEBLOOD": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view braced low in a gale, spear levelled forward, thick cloak whipped back to expose scaled hands and jaw."
+     },
+     {
+      "field": "detail",
+      "quote": "Scattered dry grass and blown cloak edge showing the wind"
+     }
+    ],
+    "ART-CLA-FIGHTER": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view braced low behind a small round targe at a ruined gate, shortsword held back over the hip, taking an unseen charge."
+     },
+     {
+      "field": "detail",
+      "quote": "Scuffs and rust on mail, boots braced on cracked flagstones"
+     }
+    ],
+    "ART-CLA-ROGUE": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view crouched at a barred door, lockpicks working in the keyhole, head turned over the shoulder to watch the corridor, rapier hilt at the hip."
+     }
+    ],
+    "ART-CLA-ASSASSIN": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view pressed against a broken pillar in dim light, dagger in reverse grip held low, head turned toward an unseen target."
+     }
+    ],
+    "ART-CLA-RANGER": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view standing tall at a forest edge, shortbow drawn to the cheek, eyes narrowed on a far target, cloak edge stirring."
+     },
+     {
+      "field": "detail",
+      "quote": "Trunks and ferns behind, depth by thinning lines"
+     }
+    ],
+    "ART-CLA-CLERIC": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view kneeling in prayer on one knee amid fallen masonry, mace laid across the thigh and head bowed."
+     },
+     {
+      "field": "detail",
+      "quote": "Rubble and a broken statue plinth behind"
+     }
+    ],
+    "ART-CLA-PALADIN": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view standing upright at a ruined chapel doorway, longsword planted point-down before the feet, both hands folded on the pommel, head bowed."
+     },
+     {
+      "field": "detail",
+      "quote": "Broken arch behind, rays of sparse horizontal sky lines"
+     }
+    ],
+    "ART-CLA-WIZARD": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view standing under a torch, one hand raising a small scroll to a magnifying glass held in the other, staff tucked under the arm."
+     }
+    ],
+    "ART-CLA-DRUID": [
+     {
+      "field": "composition",
+      "quote": "Full figure in three-quarter view standing barefoot in tall grass, staff planted in one hand and the other palm open and low, a crow perched on the staff head."
+     },
+     {
+      "field": "detail",
+      "quote": "Tall grass and distant trunks, rain lines"
+     }
+    ],
+    "ART-BAC-FARMER": [
+     {
+      "field": "detail",
+      "quote": "Wooden plank table with knots and scratches"
+     },
+     {
+      "field": "detail",
+      "quote": "Small iron-bound wooden bucket edge at the rear"
+     }
+    ],
+    "ART-BAC-SAILOR": [
+     {
+      "field": "composition",
+      "quote": "Still life on a wet plank deck section, a coiled rope in the foreground with a shortsword and a round buckler leaning on a belaying pin rail."
+     }
+    ],
+    "ART-BAC-PERFORMER": [
+     {
+      "field": "detail",
+      "quote": "Tattered curtain edge"
+     },
+     {
+      "field": "detail",
+      "quote": "Painted target board with knife marks behind"
+     }
+    ],
+    "ART-BAC-ARTISAN": [
+     {
+      "field": "detail",
+      "quote": "Leather apron hung on a peg"
+     }
+    ],
+    "ART-BAC-BELIEVER": [
+     {
+      "field": "detail",
+      "quote": "Shallow stone shelf in a niche"
+     }
+    ],
+    "ART-BAC-HERMIT": [
+     {
+      "field": "composition",
+      "quote": "Still life at a cave mouth or hut doorstep, a gnarled staff leaning beside a tin cup and a bowl, a single stool and a cold fire ring."
+     },
+     {
+      "field": "detail",
+      "quote": "Distant lone tree through a gap in the stones"
+     }
+    ],
+    "ART-BAC-SHEPHERD": [
+     {
+      "field": "detail",
+      "quote": "Wooden fence post and distant lone hill suggested"
+     }
+    ],
+    "ART-BAC-NOBLE": [
+     {
+      "field": "composition",
+      "quote": "Still life of a rapier laid across a faded velvet cushion on a carved table, a dusty signet ring and a threadbare banner edge hanging behind."
+     },
+     {
+      "field": "detail",
+      "quote": "Carved chair back with worn gilding"
+     }
+    ],
+    "ART-BAC-PAUPER": [
+     {
+      "field": "detail",
+      "quote": "Cobblestone gutter detail"
+     }
+    ],
+    "ART-BAC-VAGABOND": [
+     {
+      "field": "detail",
+      "quote": "Crossroads milestone worn blank"
+     },
+     {
+      "field": "composition",
+      "quote": "Still life on a roadside milestone, a bundle on a stick, a roll of bandages and a dice cup perched beside a half-burned stub of candle."
+     }
+    ],
+    "ART-BAC-MERCHANT": [
+     {
+      "field": "composition",
+      "quote": "Still life on a counting table, a sickle laid by an open coin ledger, a balance scale holding coins and a locked strongbox behind."
+     }
+    ],
+    "ART-BAC-SCHOLAR": [
+     {
+      "field": "composition",
+      "quote": "Still life of a leaning quarterstaff against a heavy reading desk covered with stacked books, loose diagrams and a spectacle case."
+     }
+    ]
+   },
+   "conflicting_source": "config/art_style.json prompt_v2.format_figure / format_still, families.monster.framing (\"Isolated on white paper with only a small patch of ground ... no background scenery\").",
+   "fix": "Per entry, drop the scenery line or turn it into a ground-level prop (stump, log, plinth, bones). Where the premise needs terrain (Spectre/wall, Vaultfang/ceiling, Noxcloth, Vault Ooze, Will-o-Wisp, Wind Elemental, Hydra, Mire Titan) move the entry to a scene-style format (3:2) or accept a cropped terrain fragment and add an explicit exception sentence to the brief so the prompt does not contradict itself. A cheaper global fix: add to format_figure \"A prop the creature stands on or holds is allowed; walls, rooms, horizons and other figures are not.\""
+  },
+  {
+   "fid": "F05",
+   "kind": "fidelity_weapon",
+   "severity": "wrong_or_misleading",
+   "priority": "P2",
+   "title": "Deep Elf Warrior is drawn with a crescent glaive that exists nowhere in the manuscript",
+   "ids": [
+    "ART-MON-DEEP-ELF-WARRIOR",
+    "ART-ANC-DEEP-ELF"
+   ],
+   "quotes": [
+    {
+     "id": "ART-MON-DEEP-ELF-WARRIOR",
+     "field": "identity",
+     "quote": "Deep Elf Warrior, Undermarches Skirmisher, medium: a coldly beautiful deep-court fighter of the deep courts, fighting with a poisoned hand-crossbow and shortsword; shown in full dark ceremonial armour carrying a crescent glaive."
+    },
+    {
+     "id": "ART-MON-DEEP-ELF-WARRIOR",
+     "field": "composition",
+     "quote": "Three-quarter view in cavern gloom, the warrior advancing with a crescent glaive held diagonally, hand-crossbow at the belt."
+    },
+    {
+     "id": "ART-MON-DEEP-ELF-WARRIOR",
+     "field": "avoid",
+     "quote": "Weapons: crescent glaive plus hand-crossbow and shortsword (glaive is the featured weapon)"
+    },
+    {
+     "id": "ART-MON-DEEP-ELF-WARRIOR",
+     "field": "direction",
+     "quote": "A deep elf warrior of the deep courts in full dark ceremonial armour with a crescent glaive, in the Undermarches gloom."
+    },
+    {
+     "id": "ART-ANC-DEEP-ELF",
+     "field": "avoid",
+     "quote": "Not the Deep Elf Warrior or Priest monster: no ceremonial armour, no crescent glaive, no sigil staff"
+    }
+   ],
+   "conflicting_source": "RC488 stat block (heading line 8789): Attacks \"Shortsword: 1d8 + 4 piercing damage.\" (line 8798) and \"Hand Crossbow: Ranged 8\" ... Poisoned\" (line 8799). Flavour (line 8791): \"A deep elf warrior fights with poisoned hand-crossbow and finesse blade\". \"glaive\" appears in RC488 only for the Ice Glaive (Gelid Fiend), Ceremonial Glaive (Tomb Guardian), Hooked Glaive (Demon), Gorgon's Glaive and the Glaive weapon row. SUBJECT_PLAN.json direction (line 117) is the origin; no owner record found in production/art/SOURCE_NOTES.md or docs.",
+   "note": "The identity line is also garbled: \"a coldly beautiful deep-court fighter of the deep courts\". The Shortsword is sheathed (\"Shortsword in a sheath\") although the flavour makes the blade the main weapon.",
+   "fix": "Change SUBJECT_PLAN direction and brief: \"advancing with a drawn finesse shortsword, hand-crossbow raised in the other hand\"; delete the glaive detail and the \"glaive is the featured weapon\" avoid; edit the ancestry avoid to \"no ceremonial armour, no sigil staff\". If the glaive was an owner request, record it in SOURCE_NOTES.md and ask for an RC revision adding it to the stat block."
+  },
+  {
+   "fid": "F06",
+   "kind": "fidelity_weapon",
+   "severity": "wrong_or_misleading",
+   "priority": "P3",
+   "title": "Deep Elf Priest holds a \"sigil staff\" that is not in the stat block",
+   "ids": [
+    "ART-MON-DEEP-ELF-PRIEST"
+   ],
+   "quotes": [
+    {
+     "id": "ART-MON-DEEP-ELF-PRIEST",
+     "field": "composition",
+     "quote": "Three-quarter view of the priest in layered dark vestments, shadow-wreathed sigil staff raised in one hand, a scourge coiled in the other."
+    },
+    {
+     "id": "ART-MON-DEEP-ELF-PRIEST",
+     "field": "detail",
+     "quote": "Staff topped with a spider-like sigil (abstract, no text) wrapped in black smoke"
+    },
+    {
+     "id": "ART-MON-DEEP-ELF-PRIEST",
+     "field": "direction",
+     "quote": "A deep elf priest in layered dark vestments raising a shadow-wreathed sigil staff."
+    }
+   ],
+   "conflicting_source": "RC488 line 8818: only Attack is \"Scourge: Reach, 1d8 + 3 slashing damage.\" Flavour line 8807: \"From the shadow it has made, scourge in hand, it drives the warriors forward.\"",
+   "fix": "Make the scourge the raised weapon; drop the staff or keep it as a plain walking staff. The avoid line on the Warrior already says \"no staff\"."
+  },
+  {
+   "fid": "F07",
+   "kind": "fidelity_weapon",
+   "severity": "wrong_or_misleading",
+   "priority": "P3",
+   "title": "Mire scenario 2: the Lizardfolk Scale-Shaman is shown with a staff; its attack is a Barbed Spear",
+   "ids": [
+    "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER"
+   ],
+   "quotes": [
+    {
+     "id": "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER",
+     "field": "detail",
+     "quote": "Lizardfolk Scale-Shaman with a feathered staff, with slime-streaked Swamp Goblins in reed canoes and on the walkways, small and furtive"
+    }
+   ],
+   "conflicting_source": "RC488 line 14313: \"Barbed Spear: Reach, 1d8 + APL/2 piercing damage.\" (the ordinary Lizardfolk Shaman, line ~9865, is the one with a Staff). Swamp Goblins with blowpipes ARE correct (line 14323, \"Swamp Goblins equal to 2 + APL/2\").",
+   "fix": "\"Lizardfolk Scale-Shaman with a feather-tied barbed spear\"."
+  },
+  {
+   "fid": "F08",
+   "kind": "fidelity_loadout",
+   "severity": "wrong_or_misleading",
+   "priority": "P2",
+   "title": "Front cover party kit contradicts the Recommended First Party (all Starting Package A)",
+   "ids": [
+    "ART-COVER-002"
+   ],
+   "quotes": [
+    {
+     "id": "ART-COVER-002",
+     "field": "detail",
+     "quote": "Human Fighter in worn mail with sword and shield at the front, Elf Ranger with longbow, Dwarf Cleric in plate with a holy symbol on a staff or mace, small Halfling Rogue slipping along the wall edge"
+    }
+   ],
+   "conflicting_source": "RC488 line 2631: \"build a Human Fighter (Soldier), an Elf Ranger (Scout), a Dwarf Cleric (Soldier), and a Halfling Rogue (Smuggler), each using Starting Package A.\" Ranger A (line 2868): \"Shortbow, Elven Dagger, Leather Coat.\" Cleric A (line 2906): \"Mace, Targe, Ring Shirt, 2 Bandages.\" Fighter A: Shortsword, Targe, Ring Shirt, Dagger. Rogue A: Rapier, 2 Daggers, Leather Coat.",
+   "note": "The brief says \"Dwarf Cleric in plate with a holy symbol on a staff or mace\": plate and staff are not in package A. The Ranger class brief itself uses a shortbow; the Elf ancestry brief also gives a longbow.",
+   "fix": "\"Elf Ranger with shortbow, Dwarf Cleric in a ring shirt with mace and targe\". Optionally change the Elf ancestry bow to match the Ranger."
+  },
+  {
+   "fid": "F09",
+   "kind": "size_cue",
+   "severity": "wrong_or_misleading",
+   "priority": "P2",
+   "title": "The appended \"Size:\" line contradicts the quoted flavour for three monsters",
+   "ids": [
+    "ART-MON-BRIARLING",
+    "ART-MON-BASILISK",
+    "ART-MON-GLOOMSPORE-JELLY"
+   ],
+   "quotes": [
+    {
+     "id": "ART-MON-BRIARLING",
+     "field": "identity",
+     "quote": "Briarling, Greenmark Minion, medium-sized: a hound-sized knot of animate thornwood on root-claws, a spent first line of the Antlered Warden's groves."
+    },
+    {
+     "id": "ART-MON-BASILISK",
+     "field": "identity",
+     "quote": "Basilisk, Ashlands Elite, medium: an ox-sized, heavy, eight-legged reptile whose gaze slowly turns flesh to stone."
+    },
+    {
+     "id": "ART-MON-GLOOMSPORE-JELLY",
+     "field": "identity",
+     "quote": "Gloomspore Jelly, Undermarches Brute, medium: a cart-sized translucent grey ooze that creeps and dissolves what it engulfs, leaving scoured tunnels."
+    }
+   ],
+   "conflicting_source": "Prompt line \"Size: Medium: about human-sized.\" (config size_words.M) against RC488 flavour: Briarling line 7871 \"the size of a hound\"; Basilisk line 8473 \"the size of an ox\" (and eight-legged); Gloomspore Jelly line 8708 \"the size of a cart\". All three are coded M in the stat block. SOURCE_NOTES.md lists only the Jelly as an open size mismatch; Briarling and Basilisk are not recorded.",
+   "fix": "Add an optional per-entry `size_note` to the catalog that REPLACES the generic Size line (\"Hound-sized, below human height\", \"Ox-sized and low, about a man's height at the shoulder\", \"A cart-sized mass\"). Record the Basilisk/Briarling mismatch in SOURCE_NOTES.md for the owner."
+  },
+  {
+   "fid": "F10",
+   "kind": "size_cue",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Generic Size line fights a \"towering\" or \"bridge a channel\" flavour on Medium monsters, and \"many times\" fights \"three times\"",
+   "ids": [
+    "ART-MON-UNDEAD-SENTINEL",
+    "ART-MON-WHITE-COURT-EXECUTIONER",
+    "ART-MON-TOMB-GUARDIAN",
+    "ART-MON-GIANT-CONSTRICTOR",
+    "ART-MON-THE-LAST-COLOSSUS"
+   ],
+   "quotes": [
+    {
+     "id": "ART-MON-UNDEAD-SENTINEL",
+     "field": "avoid",
+     "quote": "Not the Undead Warrior: far larger, with a halberd"
+    },
+    {
+     "id": "ART-MON-WHITE-COURT-EXECUTIONER",
+     "field": "detail",
+     "quote": "Towering broad frame"
+    },
+    {
+     "id": "ART-MON-GIANT-CONSTRICTOR",
+     "field": "identity",
+     "quote": "Giant Constrictor, Mire Skirmisher, medium: a snake long enough to bridge a channel that drops from overhanging branches to coil and crush."
+    },
+    {
+     "id": "ART-MON-THE-LAST-COLOSSUS",
+     "field": "avoid",
+     "quote": "Three times a man's height only, not a skyscraper"
+    }
+   ],
+   "conflicting_source": "Sz M for Undead Sentinel (flavour line 8293 \"towering dead men\"), White Court Executioner (line 9220 \"a towering headsman\"), Giant Constrictor (line 9928 \"Long enough to bridge a channel\"). Last Colossus is Sz H (config: \"Huge: towering many times a human's size\") but flavour line 10189 says \"three times a man's height\" and the brief avoid says \"Three times a man's height only, not a skyscraper\".",
+   "fix": "Use the same per-entry `size_note` override. For the Colossus: \"three times human height\"."
+  },
+  {
+   "fid": "F11",
+   "kind": "size_cue",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "26 of 33 Large/Huge monsters have no scale reference, so the Size line cannot be rendered in an isolated 1:1 figure",
+   "ids": [
+    "ART-MON-GOREBEAK-BEAR",
+    "ART-MON-FOREST-TROLL",
+    "ART-MON-GREEN-DRAGON",
+    "ART-MON-MINOTAUR",
+    "ART-MON-IRON-GOLEM",
+    "ART-MON-GLOOM-HULK",
+    "ART-MON-EVIL-EYE",
+    "ART-MON-BURROWMAW",
+    "ART-MON-ICE-ELEMENTAL",
+    "ART-MON-WEREBEAR",
+    "ART-MON-FROST-WYVERN",
+    "ART-MON-GELID-FIEND",
+    "ART-MON-WHITE-DRAGON",
+    "ART-MON-WIND-ELEMENTAL",
+    "ART-MON-DESERT-NAGA",
+    "ART-MON-FIRE-ELEMENTAL",
+    "ART-MON-MANTICORE",
+    "ART-MON-DEMON",
+    "ART-MON-BLUE-DRAGON",
+    "ART-MON-CROCODILE",
+    "ART-MON-SWAMP-NAGA",
+    "ART-MON-SHAMBLING-MOUND",
+    "ART-MON-SWAMP-TROLL",
+    "ART-MON-HYDRA",
+    "ART-MON-MIRE-TITAN",
+    "ART-MON-BLACK-DRAGON"
+   ],
+   "conflicting_source": "config/art_style.json families.monster.framing says \"a small human figure for scale only if the creature is Large or Huge\", but prompt_for uses family framing only when the brief has no composition, so the sentence never reaches the 120 monster prompts. Several briefs forbid scale: Green Dragon \"No lair, no hoard, no tribute or humans\", Blue Dragon \"No tomb or humans in the frame\", Mire Titan \"No geodes, no hunters or humans\".",
+   "fix": "For H monsters append \"Beside its foot a tiny human figure (or a dropped human-sized shield) gives scale.\" to the brief; for L, a prop (barrel, door, cart wheel). Remove the \"no humans\" avoids on dragons."
+  },
+  {
+   "fid": "F12",
+   "kind": "fidelity_attack_not_depicted",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Named weapon attacks of bosses are not shown",
+   "quotes": [
+    {
+     "id": "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
+     "field": "detail",
+     "quote": "Crown of black iron with spiked points hovering above an empty collar of an ermine-edged robe"
+    },
+    {
+     "id": "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
+     "field": "composition",
+     "quote": "Greythorn's timber west gate in winter snow at dusk; the towering Warden stands in the gateway dragging an indebted man by the collar, the town wall behind."
+    },
+    {
+     "id": "ART-MON-THE-LAST-COLOSSUS",
+     "field": "detail",
+     "quote": "Massive hands like siege mauls, banner-pole stump on shoulder with a tattered pennant"
+    },
+    {
+     "id": "ART-MON-KHORRUN-THE-DRACOLICH",
+     "field": "detail",
+     "quote": "Witchfire in empty sockets, drawn as tiny solid black points with fine lines"
+    },
+    {
+     "id": "ART-MON-THE-SUN-CROWNED-PRINCE",
+     "field": "detail",
+     "quote": "Corpse in funeral linen, leathery face and bone, hands on armrests"
+    }
+   ],
+   "conflicting_source": "RC488 attacks: Hollow Crown \"Withering Sceptre\" (line 10178); Antlered Warden \"Wild Staff\" (line 10337); Last Colossus \"Ruin Hammer\" (line 10200, Multi-Attack two Ruin Hammer); Khorrun \"Witchfire Lash\" (line 10464, flavour: \"lightning that pours from its jaws\"); Sun-Crowned Prince \"Sceptre of the Sealed Court\" (line 10314) and \"Sunfire Bolt\".",
+   "fix": "Add one detail line per boss: \"a black iron sceptre rests against the robe\", \"a gnarled staff of living wood\", \"a hammer-shaped fist/maul\", \"a lash of fine zigzag lines from the jaws\", \"a sceptre across the knees\"."
+  },
+  {
+   "fid": "F13",
+   "kind": "fidelity_flight_cue",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Three Fly-capable wyrm bosses have no wing or flight cue",
+   "ids": [
+    "ART-MON-MAELTHORN-THE-VERDANT",
+    "ART-MON-SIRRACH-THE-BLACK",
+    "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL"
+   ],
+   "quotes": [
+    {
+     "id": "ART-MON-MAELTHORN-THE-VERDANT",
+     "field": "detail",
+     "quote": "Coils like a fallen tree, blunt head with heavy brow ridges"
+    },
+    {
+     "id": "ART-MON-SIRRACH-THE-BLACK",
+     "field": "detail",
+     "quote": "Black body with a heavy jaw, spines and a glossy outline"
+    },
+    {
+     "id": "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
+     "field": "detail",
+     "quote": "Sleek black wyrm with a narrow head and slick scales"
+    }
+   ],
+   "conflicting_source": "RC488 Fly (12\") line 10388 (Maelthorn), Fly (12\") line 10414 (Sirrach), Fly (10\") line 10493 (Vossegar). No non-Fly creature has wings in any brief (script check: 0 violations; the one hit, Gorebeak Bear, is its own \"no wings\" avoid).",
+   "fix": "Add \"wings folded along the back\" to each. Sirrach also has Burrow (5\") and is correctly shown erupting from stone."
+  },
+  {
+   "fid": "F14",
+   "kind": "fidelity_count",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Counts that the manuscript leaves open are invented as specific numbers",
+   "quotes": [
+    {
+     "id": "ART-MON-EVIL-EYE",
+     "field": "detail",
+     "quote": "Crown of ten writhing eyestalks, each ending in a small eye"
+    },
+    {
+     "id": "ART-MON-EVIL-EYE",
+     "field": "detail",
+     "quote": "Large toothy mouth below the central eye"
+    },
+    {
+     "id": "ART-MON-EVIL-EYE",
+     "field": "avoid",
+     "quote": "Not a Beholder lookalike with a mouth too large"
+    },
+    {
+     "id": "ART-MON-VRYMK",
+     "field": "detail",
+     "quote": "Writhing mass of rubbery tentacles (six to eight) with suction marks"
+    },
+    {
+     "id": "ART-MON-BRIARLING",
+     "field": "detail",
+     "quote": "Four to six legs ending in root-claws"
+    },
+    {
+     "id": "ART-MON-MIRE-TITAN",
+     "field": "detail",
+     "quote": "Several thick lashing tentacles from the shoulders and jaw"
+    },
+    {
+     "id": "ART-MON-GLOOM-HULK",
+     "field": "detail",
+     "quote": "Six legs, short and thick"
+    }
+   ],
+   "conflicting_source": "Evil Eye flavour (line 8885) \"crowned with writhing eyestalks\"; Eye Rays table is 1d4 (line 8892), i.e. four rays. Mire Titan Multi-Attack is \"three Tentacle attacks and one Bite\" (stat block under line 10049). Hydra \"five to seven necks\" is already acknowledged in SOURCE_NOTES.md. Evil Eye brief also contradicts itself: a large toothy mouth against \"Not a Beholder lookalike with a mouth too large\".",
+   "fix": "Evil Eye: \"four eyestalks\"; Mire Titan: \"three thick tentacles\"; give single numbers for Vrymk/Briarling."
+  },
+  {
+   "fid": "F15",
+   "kind": "fidelity_pronoun",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Sun-Crowned Prince identity says \"his\", flavour says \"their\"",
+   "ids": [
+    "ART-MON-THE-SUN-CROWNED-PRINCE"
+   ],
+   "quotes": [
+    {
+     "id": "ART-MON-THE-SUN-CROWNED-PRINCE",
+     "field": "identity",
+     "quote": "The Sun-Crowned Prince, the greatest priest-king, who bound his soul into a crown of beaten gold and still rules his sealed tomb-court."
+    }
+   ],
+   "conflicting_source": "RC488 line 10303: \"refused to let their reign end and bound their soul into a crown of beaten gold ... rules their sealed tomb-court\". The brief also says \"Do not show a living prince\".",
+   "fix": "\"bound their soul ... rules their sealed tomb-court\"; \"no living ruler\"."
+  },
+  {
+   "fid": "F16",
+   "kind": "self_contradiction",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Briefs contradict themselves (detail vs avoid)",
+   "quotes": [
+    {
+     "id": "ART-MON-MANTICORE",
+     "field": "detail",
+     "quote": "Scorpion-like arched tail studded with iron spikes"
+    },
+    {
+     "id": "ART-MON-MANTICORE",
+     "field": "avoid",
+     "quote": "Tail is a spiked fan of iron barbs, not a scorpion sting"
+    },
+    {
+     "id": "ART-MON-WILL-O-WISP",
+     "field": "detail",
+     "quote": "A drowned traveller's lantern or boot at the bottom edge"
+    },
+    {
+     "id": "ART-MON-WILL-O-WISP",
+     "field": "avoid",
+     "quote": "Not a real lantern"
+    },
+    {
+     "id": "ART-MON-GIANT-CENTIPEDE",
+     "field": "detail",
+     "quote": "Many legs along each segment, hundreds suggested"
+    },
+    {
+     "id": "ART-MON-GIANT-CENTIPEDE",
+     "field": "avoid",
+     "quote": "Not a snake or caterpillar: armoured segments, one pair of legs per segment"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA",
+     "field": "detail",
+     "quote": "A glowing rune marker drawn as a carved circle on the back"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA",
+     "field": "avoid",
+     "quote": "No glow"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE",
+     "field": "composition",
+     "quote": "Dusk view across a ruined plaza with a low altar at the centre and three scorched pillars around it; the half-buried brass brazier glimpsed in rubble in the foreground."
+    },
+    {
+     "id": "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR",
+     "field": "avoid",
+     "quote": "Not the Lost Brazier plaza (daylight altar)"
+    },
+    {
+     "id": "ART-MON-DESERT-NAGA",
+     "field": "detail",
+     "quote": "Almost-human face with heavy-lidded eyes and a hood-like fold of skin"
+    }
+   ],
+   "conflicting_source": "Cursed Colossus \"Glowing Rune\" is a game marker (RC488 line ~14040 \"Place one 1\" Glowing Rune marker on its back\"), not a drawn glow. Desert Naga flavour (line 9508) is \"almost-human face\"; the \"hood\" belongs to the Swamp Naga (line 9908 \"hooded, watchful face\") and blurs the pair its own avoid line separates.",
+   "fix": "Edit each detail to agree with its avoid line (tail \"a fan of iron-spiked barbs\", \"no lantern, only a boot\", \"one pair of legs per segment\", \"a carved circle on its back\", \"pre-dawn view\", drop the hood)."
+  },
+  {
+   "fid": "F17",
+   "kind": "fidelity_state",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Scenario briefs show sleeping or frozen monsters that the scenario starts Awake",
+   "ids": [
+    "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
+    "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE"
+   ],
+   "quotes": [
+    {
+     "id": "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
+     "field": "composition",
+     "quote": "Low view from the tunnel mouth into a large ice cavern; a gleaming hoard mound at the centre, and only part of a sleeping coil and one wing edge seen beyond an ice pillar."
+    },
+    {
+     "id": "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE",
+     "field": "composition",
+     "quote": "Workshop interior; tables, pipework and conveyor with brass animal automata frozen mid-motion, a heap of dust and tinker's tools on a stool in the foreground."
+    }
+   ],
+   "conflicting_source": "RC488 line 13666 (Ice Wyrm): \"Boss Deployment: Starts Awake in the centre of the lair.\" Line 13601 (Clockwork Guardians): \"All 3 Clockwork Guardians start Awake.\" The Guardians carry Metal Claw, Whirring Blades and Heavy Piston (lines 13590-13592), not shown.",
+   "fix": "\"coiled and watchful\" / \"mid-step, gears bright\"; show a claw, a blade-wheel and a piston arm on the three automata."
+  },
+  {
+   "fid": "F18",
+   "kind": "measurement_leak",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Measurements or game-token vocabulary leak into scene briefs",
+   "quotes": [
+    {
+     "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+     "field": "detail",
+     "quote": "Game trail 1-2 inches wide in scale, a pale gap in dense trunks"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
+     "field": "composition",
+     "quote": "Night scene in a forest clearing seen from the tree edge; three tall standing stones in a rough triangle dominate the middle, small pale lights drifting between them, a loaf of bread on the nearest stone."
+    },
+    {
+     "id": "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING",
+     "field": "detail",
+     "quote": "Far side with a standing marker stone"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR",
+     "field": "composition",
+     "quote": "Wide shot of a sand basin from a rock shelf; a long furrow in the sand and a swirling shifting zone at the centre, the creature not seen."
+    },
+    {
+     "id": "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS",
+     "field": "detail",
+     "quote": "Oasis pool with a stone wellspring and three or four palms"
+    },
+    {
+     "id": "ART-BAS-REEDMARCH",
+     "field": "identity",
+     "quote": "Reedmarch, a stilt-town raised over log pilings on barges, ferry platforms and toll bridges; the only crossing for 30 miles, populated by ferrymen, smugglers, leech-tenders and corpse-haulers."
+    }
+   ],
+   "conflicting_source": "RC488 line 11996 (\"Game Trails (clear paths, 1-2\" wide)\"), the Standing Stones triangle (Whispering Grove Battlefield text), Oasis line 13793 (\"2-3 Palm Trees\"), Reedmarch line 317 (\"30 miles\"). None of these deployment figures should reach an image prompt; \"three or four palms\" also differs from the 2-3 in the scenario.",
+   "fix": "Delete the inch figure and \"in scale\"; \"game trail\" only; \"three standing stones\"; \"a few palms\"; drop \"30 miles\" from the identity line."
+  },
+  {
+   "fid": "F19",
+   "kind": "colour_words",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Colour words are given as appearance without a \"render in hatching\" note; the verbatim flavour also contains colours",
+   "quotes": [
+    {
+     "id": "ART-MON-ICE-ELEMENTAL",
+     "field": "detail",
+     "quote": "Humanoid made of jagged blue-white glacier blocks"
+    },
+    {
+     "id": "ART-MON-GELID-FIEND",
+     "field": "identity",
+     "quote": "Gelid Fiend, Pale City Brute, large: a towering devil of blue-white ice and cruel geometry, a bound advocate of the frozen law."
+    },
+    {
+     "id": "ART-MON-FROST-GHOUL",
+     "field": "detail",
+     "quote": "Grey-blue skin stretched on a gaunt body"
+    },
+    {
+     "id": "ART-MON-SWAMP-TROLL",
+     "field": "detail",
+     "quote": "Slime-green hulking giant on all fours"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT",
+     "field": "identity",
+     "quote": "The Icebound Court, a Pale City sanctum of blue glass and frozen banners where the Frost Bailiff Magistrate still sits and the Heartfrost Shard lies at the centre."
+    },
+    {
+     "id": "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
+     "field": "detail",
+     "quote": "Large ice pillars and blue-clear walls"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM",
+     "field": "detail",
+     "quote": "Stair cut through blue-clear ice"
+    },
+    {
+     "id": "ART-BAS-SALTSPIRE",
+     "field": "detail",
+     "quote": "Oasis palms and a green belt around the walls"
+    },
+    {
+     "id": "ART-MON-SKELETON-WARRIOR",
+     "field": "detail",
+     "quote": "Corroded bronze scale armour with green-black patina rendered as dense stipple"
+    }
+   ],
+   "conflicting_source": "Final requirements say \"colour\"/\"grey wash\" must be avoided and the format says \"Pure black ink\"; verbatim flavours add \"blue frost\" (Frozen Skeleton, line 8947), \"green flame\" (Ember Skull), \"crimson mark\" (Black Widow), \"slime-green\" (Swamp Troll). Entries that already add \"(rendered ... by hatching)\": Goblin, Blood Ape, Imp, Frost Giant, Black Widow, Skeleton Warrior.",
+   "fix": "One template line in format_figure/format_scene: \"Colour words in the source text describe tone only; render them in black ink density.\" Optionally edit the nine quoted lines."
+  },
+  {
+   "fid": "F20",
+   "kind": "near_duplicate",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Near-duplicate subjects across entries (TF-IDF screen found none above 0.36; these were found by reading)",
+   "quotes": [
+    {
+     "id": "ART-CH08-002",
+     "field": "subject",
+     "quote": "A lone caster standing in the burned shell of an academy library at night, pages and embers swirling upward around them as a ring of force flares from an outstretched hand"
+    },
+    {
+     "id": "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
+     "field": "direction",
+     "quote": "A wizard hurriedly copying a spell from a scorched tome by candlelight while the library behind them burns."
+    },
+    {
+     "id": "ART-CLA-CLERIC",
+     "field": "composition",
+     "quote": "Full figure in three-quarter view kneeling in prayer on one knee amid fallen masonry, mace laid across the thigh and head bowed."
+    },
+    {
+     "id": "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
+     "field": "composition",
+     "quote": "A weary cleric kneeling at a cracked roadside shrine beside a ledger of offerings, candles guttering; low side view."
+    },
+    {
+     "id": "ART-CAM-THE-STRONGHOLD-CHAPEL",
+     "field": "composition",
+     "quote": "Interior at eye level looking toward a small altar; chipped saint statues and votives crowd the walls, a single mourner kneels."
+    },
+    {
+     "id": "ART-MON-BASILISK",
+     "field": "detail",
+     "quote": "Statues of surprised people, caught mid-stride, scattered behind"
+    },
+    {
+     "id": "ART-MON-MEDUSA",
+     "field": "detail",
+     "quote": "Surrounding statues of surprised petrified people caught mid-stride"
+    },
+    {
+     "id": "ART-MON-DESERT-NAGA",
+     "field": "composition",
+     "quote": "Three-quarter view of the naga coiled around a toppled tomb pillar, torso raised with the almost-human face turned to the viewer, mouth parted to spit."
+    },
+    {
+     "id": "ART-MON-SWAMP-NAGA",
+     "field": "composition",
+     "quote": "Three-quarter view of the naga coiled around a half-sunk column, hooded head raised and mouth spitting venom."
+    },
+    {
+     "id": "ART-CH10-002",
+     "field": "composition",
+     "quote": "Waystone at the centre; six roads fan out from the crossroads toward six distant landscapes along the horizon, each distinguishable in miniature."
+    },
+    {
+     "id": "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
+     "field": "composition",
+     "quote": "A sweeping panorama from the spine of the broken mountains with all six climates under one sky: forest to the west, dead city to the east, ice to the north, dunes to the south and drowned fen to the south-east, with dark cavern mouths in the mountainside below; a lone surveyor with a staff stands in the foreground."
+    },
+    {
+     "id": "ART-CLI-THE-GREENMARK",
+     "field": "detail",
+     "quote": "Grove-circle of standing mossy stones with low mist and a patch of bare paper where snow has melted"
+    },
+    {
+     "id": "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
+     "field": "detail",
+     "quote": "Three mossy standing stones with spiral weathering, no letters"
+    },
+    {
+     "id": "ART-MON-MAELTHORN-THE-VERDANT",
+     "field": "detail",
+     "quote": "Mossy standing stones circling the clearing"
+    }
+   ],
+   "pairs": [
+    [
+     "ART-CH08-002",
+     "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
+     "lone caster in a burned library vs wizard copying a spell while the library burns"
+    ],
+    [
+     "ART-CLA-CLERIC",
+     "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
+     "kneeling cleric among ruined stone (a third: Campaign Stronghold Chapel mourner)"
+    ],
+    [
+     "ART-MON-BASILISK",
+     "ART-MON-MEDUSA",
+     "identical statues-of-the-surprised sentence"
+    ],
+    [
+     "ART-MON-DESERT-NAGA",
+     "ART-MON-SWAMP-NAGA",
+     "same coiled-on-a-column pose; without scenery only hood vs face differs"
+    ],
+    [
+     "ART-CH10-002",
+     "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
+     "both show all six climates on a horizon"
+    ],
+    [
+     "ART-CLI-THE-GREENMARK",
+     "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
+     "ART-MON-MAELTHORN-THE-VERDANT: three Greenmark images built on mossy standing stones"
+    ],
+    [
+     "ART-CLA-DRUID",
+     "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
+     "druid with crow in rain and a root"
+    ],
+    [
+     "Mire heron motif",
+     "ART-CLI-THE-MIRE, ART-SCE-SCENARIO-1/3 Mire, ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE",
+     "\"heron\" appears in 4 briefs, \"gibbet\" in 2, \"two tiny\" in 14 scenario briefs"
+    ]
+   ],
+   "fix": "Re-aim one of each pair: Tier 2 Arcane -> a lectern in an intact reading room with the fire only in a brazier; Tier 2 Divine -> a hand laying coins at a shrine (no kneeling cleric); Medusa -> keep statues, Basilisk -> one petrified hand/foot only; Swamp Naga -> coiled in water with no column; CH10 -> delete the six-landscape horizon or 1.3.2 -> a map-table still life; Maelthorn -> no standing stones."
+  },
+  {
+   "fid": "F21",
+   "kind": "prompt_hygiene",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "25 briefs cite other chapters or section numbers in the prompt (\"ch.7\", \"1.3.2\", \"Appendix A\")",
+   "ids": [
+    "ART-CH01-002",
+    "ART-CH02-002",
+    "ART-CH04-002",
+    "ART-CH05-002",
+    "ART-CH06-002",
+    "ART-CH10-002",
+    "ART-CH11-002",
+    "ART-WOR-1-2-THE-GRIM-WORLD",
+    "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
+    "ART-WOR-1-3-3-THE-SIX-BASTIONS",
+    "ART-BAS-DEEPWARDEN",
+    "ART-WOR-1-3-5-MONSTROUS-THREATS",
+    "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
+    "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+    "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
+    "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE",
+    "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING",
+    "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE",
+    "ART-CAM-11-1-CAMPAIGN-OVERVIEW",
+    "ART-CAM-THE-VAULT",
+    "ART-CAM-THE-ARMOURY",
+    "ART-CAM-THE-OUTER-WALLS",
+    "ART-CAM-THE-ARCANUM",
+    "ART-CAM-THE-WAR-ROOM",
+    "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI"
+   ],
+   "quotes": [
+    {
+     "id": "ART-CH01-002",
+     "field": "avoid",
+     "quote": "No panorama of all six climates (that is the 1.3.2 world image)"
+    },
+    {
+     "id": "ART-CAM-THE-ARMOURY",
+     "field": "avoid",
+     "quote": "Not the ch.7 Deepwarden forge (no smith, no anvil)"
+    },
+    {
+     "id": "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
+     "field": "identity",
+     "quote": "The Broken Courier, the Appendix A quickstart scenario in which a royal courier was cut down on the old road and two small parties race for the dispatch satchel before wolves or rivals claim it."
+    }
+   ],
+   "conflicting_source": "The image model has no access to the book; these are cross-reference notes for humans. They cost tokens and can prime numerals or lettering.",
+   "fix": "Strip with a regex in prompt_for or rewrite as the picture (\"not a forge interior\")."
+  },
+  {
+   "fid": "F22",
+   "kind": "prompt_hygiene",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "The scene is stated two or three times in 90 prompts (cover, 11 chapters, 78 entries with a `direction` and a brief composition)",
+   "note": "Cover/chapters print subject + plan composition + brief composition. For the 78 others, SUBJECT_PLAN direction repeats the brief composition (for example ART-WOR-1-2-THE-GRIM-WORLD). The two texts diverge for ART-MON-DEEP-ELF-WARRIOR/PRIEST (F05/F06) and ART-MON-UNDEAD-SENTINEL (\"towering\"). The cover also says \"open sky upper half\" while family framing says \"upper third\".",
+   "fix": "Print `direction` only when there is no brief composition, or delete duplicated directions from SUBJECT_PLAN.json."
+  },
+  {
+   "fid": "F23",
+   "kind": "aspect_size",
+   "severity": "cosmetic",
+   "priority": "P2",
+   "title": "Chapter opener family is 3:2 and 5.8 in, but the layout slot and the native pixel limit differ",
+   "quotes": [
+    {
+     "id": "config/art_style.json",
+     "field": "families.chapter",
+     "quote": "aspect \"3:2\", size \"2K\", print_w_in 5.8"
+    },
+    {
+     "id": "typst/content.typ",
+     "field": "chapter-opener art slot",
+     "quote": "art: (\"../assets/art/incoming/ART-CH01-001.png\", 5.827in, 3.000in)"
+    }
+   ],
+   "conflicting_source": "art_gpt_pack SIZES maps 3:2 to 1536x1024. At 300 ppi that is 5.12 in (docs/ART_AUTOMATION.md says \"chapter openers print about 5.1 in wide\"); 5.8 in would be 265 ppi. The existing masters are 1746x901 (1.94:1) and typst slots are about 5.82x3.00 in. tools/build_book.py lines 438-445 sizes an ART-CHnn-002 image at its width times its pixel aspect, so a 3:2 chapter image becomes about 5.1x3.4 in or 5.8x3.9 in: 0.4 to 0.9 in taller than today, which can repaginate every chapter opener and the keep-unit audit.",
+   "fix": "Either request chapter art at the slot aspect (about 2:1; ChatGPT cannot produce 1746x901, so use 1536x1024 and accept a cropped letterbox in the layout) or set print_w_in to 5.1 and re-run the pagination audit after the first chapter image lands. Cover is 1430x1100 today and also 3:2 in the plan."
+  },
+  {
+   "fid": "F24",
+   "kind": "aspect_size",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Boss lair scenes print at 2.6 in; scenarios (simpler) print at 3.3 in",
+   "ids": [
+    "ART-MON-THE-ANCIENT-VOID-DRAGON",
+    "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
+    "ART-MON-THE-LAST-COLOSSUS",
+    "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
+    "ART-MON-THE-BROODMOTHER-PRIME",
+    "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
+    "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
+    "ART-MON-THE-SUN-CROWNED-PRINCE",
+    "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
+    "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
+    "ART-MON-MAELTHORN-THE-VERDANT",
+    "ART-MON-SIRRACH-THE-BLACK",
+    "ART-MON-VISATH-THE-WHITE",
+    "ART-MON-KHORRUN-THE-DRACOLICH",
+    "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL"
+   ],
+   "conflicting_source": "config families.boss print_w_in 2.6 vs scenario 3.3, climate/bastion/world 3.3. Boss briefs hold the densest detail (Hollow Crown kneeling ranks, Frost Bailiff avenue with frozen citizens, Khorrun ledger towers).",
+   "fix": "Raise boss to 3.3 in or simplify the crowds. Monster 1:1 at 1.9 in and ancestry/class 2:3 at 1.9 in are sensible; background 1:1 at 1.6 in is fine for a still life."
+  }
+ ],
+ "pipeline": [
+  {
+   "pid": "P01",
+   "severity": "wrong_or_misleading",
+   "priority": "P1",
+   "title": "Batch-phase references are Git LFS PNGs and INSTRUCTIONS.md never says to fetch them",
+   "evidence": "art_gpt_pack batch: refs = ANCHORS.json references = assets/art/incoming/<anchor>.png (LFS, .gitattributes line 3) plus ART-BAS-GREYTHORN.jpg (plain blob). A clone without git-lfs holds 130-byte pointer files. The anchors-phase references (assets/art/style/*.jpg) are plain blobs and work. art_intake.py already raises \"LFS pointer; run git lfs pull first\" and the workflow runs git lfs pull.",
+   "fix": "Add to INSTRUCTIONS.md step 1: `git lfs install && git lfs pull --include=\"assets/art/incoming/*.png\" --exclude=\"\"`. Or store approved-anchor reference copies as plain JPEGs under assets/art/style/."
+  },
+  {
+   "pid": "P02",
+   "severity": "cosmetic",
+   "priority": "P2",
+   "title": "Batch references drop the three owner style samples",
+   "evidence": "art_gpt_pack: batch refs = anchors[\"references\"] only (6 images). art_generate.anchor_refs (the retired Gemini route) appends CFG[\"style_refs\"]; the GPT pack does not. INSTRUCTIONS says \"match the reference images\" and the owner samples define the hatching.",
+   "fix": "In art_gpt_pack batch branch use `anchors[\"references\"] + g.CFG[\"style_refs\"]` (9 images, or the 4 best + 3 samples if ChatGPT limits attachments)."
+  },
+  {
+   "pid": "P03",
+   "severity": "wrong_or_misleading",
+   "priority": "P2",
+   "title": "No `git pull --rebase` before push, but the intake workflow pushes to main after every image push",
+   "evidence": ".github/workflows/art-intake.yml commits \"art: intake of ChatGPT Work images\" to main; INSTRUCTIONS says \"Pull main\" once per session and \"Commit and push to main after every 5-10 images\". The second push will be rejected non-fast-forward; CLAUDE.md forbids force-push and branches.",
+   "fix": "Add: \"Before each push run `git pull --rebase origin main`; if the push is rejected, repeat. Never force-push.\""
+  },
+  {
+   "pid": "P04",
+   "severity": "wrong_or_misleading",
+   "priority": "P2",
+   "title": "LFS commit mechanics and file extension are unstated",
+   "evidence": ".gitattributes tracks assets/art/incoming/*.png as LFS only. If Work commits through the GitHub contents API or a client without git-lfs, PNGs enter history as raw blobs (intake still reads them, but `git lfs ls-files` and later checkouts warn). INSTRUCTIONS says save unmodified \"as assets/art/incoming/<ID>.png ... no format conversion\", yet the Greythorn render arrived as JPEG/WebP (RECEIPTS.jsonl line 1, SELECTIONS.json). art_intake.scan accepts .png .jpg .jpeg .webp and the queue always says .png.",
+   "fix": "State: \"If the download is not PNG, keep its true extension (.jpg/.webp); the intake accepts those but they are not LFS. Use a git client with git-lfs installed so PNGs become pointers (`git lfs ls-files` must list your file).\""
+  },
+  {
+   "pid": "P05",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Receipts: format matches the intake, but nothing checks the prompt hash or the aspect",
+   "evidence": "Receipt keys id, prompt_sha256, surface, model, notes are the ones art_intake.receipts() reads (match). QUEUE prompt_sha256 is the hash of the prompt text WITHOUT the trailing newline; the prompt file ends with \"\\n\", so sha256(file) differs (verified: hash of file.rstrip() equals the queue value for all 5 items). scan() never compares the receipt hash with the current prompt hash, so an image made from a stale prompt is accepted, and it records pixel size but does not flag an aspect that deviates from the family aspect.",
+   "fix": "Tell Work to copy the hash from QUEUE.json, never recompute (already implied). In scan(), warn when receipt sha != current prompt sha and when |w/h - family aspect| > 5 percent."
+  },
+  {
+   "pid": "P06",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "Pixel sizes cannot be set in the ChatGPT interface",
+   "evidence": "INSTRUCTIONS step 3: \"Generate at the item's size (1536x1024, 1024x1536 or 1024x1024)\". Aspect words are in every prompt (\"Wide 3:2 landscape\", \"Square 1:1\", \"Tall 2:3 portrait\"), and SIZES in art_gpt_pack is consistent with the family aspects.",
+   "fix": "Add: \"If the tool cannot fix pixels, request the aspect in words and keep the closest of 1536x1024 / 1024x1536 / 1024x1024.\""
+  },
+  {
+   "pid": "P07",
+   "severity": "cosmetic",
+   "priority": "P3",
+   "title": "docs and config disagree on chapter width; hash and list state",
+   "evidence": "docs/ART_AUTOMATION.md \"chapter openers print about 5.1 in wide\" vs config print_w_in 5.8 (see F23)."
+  },
+  {
+   "pid": "P08",
+   "severity": "info",
+   "priority": "P3",
+   "title": "Items that were checked and pass",
+   "evidence": "QUEUE.json phase \"anchors\", 5 items; ART-BAS-GREYTHORN is correctly absent because SELECTIONS status is \"received\" (route gpt), so the anchors queue contains no received item. All 3 reference files exist. Prompt files match prompt_for output byte for byte and the queue hashes match (5/5). ILLUSTRATION_LIST.md is identical to a fresh art_list.py render (480379 bytes, no write performed). ORDER in art_gpt_pack covers all 14 families. ANCHORS.json is still the retired Gemini \"proposed\" record (no route), so art_gpt_pack correctly stays in the anchors phase. approve-anchors requires all 6 gpt_anchor_ids to be route gpt: only Greythorn is, until the 5 arrive. Workflow pins pillow==12.3.0 which equals the local version; it needs only Pillow (art_ink imports PIL only)."
+  },
+  {
+   "pid": "P09",
+   "severity": "info",
+   "priority": "P3",
+   "title": "Not verifiable offline",
+   "evidence": "assets/art/ink/ART-BAS-GREYTHORN.png is a 132-byte LFS pointer in this checkout (`git lfs ls-files` shows \"-\"); whether the object exists on the LFS remote was not checked. Workflow execution, branch protection on main, ChatGPT Work behaviour with LFS and attachments, and image-size control are NOT TESTED."
+  }
+ ],
+ "not_tested": [
+  "ChatGPT Work behaviour (attachments, LFS, sizes, quality setting)",
+  "GitHub Actions run of art-intake.yml",
+  "LFS remote objects",
+  "any generated image quality",
+  "physical print"
+ ]
+}

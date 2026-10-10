@@ -1,0 +1,231 @@
+{
+ "batch": "RC489 proposals from the independent RC488 audit",
+ "status_note": "PROPOSED - awaiting owner approval; nothing applied",
+ "audit": "/tmp scratch audit-manuscript.json summarised in production/qa (to be archived)",
+ "patches": [
+  {
+   "id": "RC489-01",
+   "status": "proposed",
+   "issue": "Forsaken Duelist Attacks list matches its AI step and Counterthrust (and the 7.8 Rapier, piercing)",
+   "find": "- **Rapier:** 1d8 slashing damage.",
+   "replace": "- **Rapier:** 1d8 + 4 piercing damage.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-02",
+   "status": "proposed",
+   "issue": "Giant Scorpion has no Burrow: flavour no longer buries and erupts",
+   "find": "It buries itself in the dunes and erupts beneath whatever walks over it.",
+   "replace": "It lies half-buried in the dunes and lunges at whatever walks past.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-03",
+   "status": "proposed",
+   "issue": "Undead Sentinel: no shield rule and size M",
+   "find": "towering dead men in tower-shield and reach-halberd.",
+   "replace": "tall dead men in iron helm and reach-halberd.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-04",
+   "status": "proposed",
+   "issue": "Tomb Guardian flavour claims an aura it does not have",
+   "find": "lends its iron resolve to the dead around it,",
+   "replace": "cannot be hurried or frightened,",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-05",
+   "status": "proposed",
+   "issue": "Spectre: Silvered weapons are not magical (7.x Magical weapons)",
+   "find": "Steel finds nothing to bite; only silver and magic answer.",
+   "replace": "Steel finds nothing to bite; only magic answers.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-06",
+   "status": "proposed",
+   "issue": "Ice Wraith: Silvered weapons are not magical",
+   "find": "Steel passes clean through; only silver and magic bite.",
+   "replace": "Steel passes clean through; only magic bites.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-07",
+   "status": "proposed",
+   "issue": "Gloomspore Jelly: man-sized (coded M); no splitting or engulf rule",
+   "find": "A translucent grey ooze the size of a cart, the gloomspore jelly creeps over every surface and dissolves whatever it engulfs. Slashing only splits it, and it feels neither pain nor fear.",
+   "replace": "A translucent grey ooze the size of a man, the gloomspore jelly creeps over every surface and dissolves whatever it touches. It feels neither pain nor fear.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-08",
+   "status": "proposed",
+   "issue": "Noxcloth has no light-snuffing rule",
+   "find": "With a gout of unnatural gloom it can snuff a torch outright. ",
+   "replace": "",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-09",
+   "status": "proposed",
+   "issue": "Iron Golem resists blades (Immutable) but has no spell resistance",
+   "find": "it shrugs off blade and spell alike and answers with piledriver fists. Magic washes from its plates; edged steel skids away.",
+   "replace": "it shrugs off sword and spear alike and answers with piledriver fists. Edged steel skids from its plates.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-10",
+   "status": "proposed",
+   "issue": "Bandit: Dirty Fighting does not trigger on Bleeding",
+   "find": "they fight dirtiest against anything already bleeding.",
+   "replace": "they fight dirtiest against anything already down.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-11",
+   "status": "proposed",
+   "issue": "Elder Vrymk has no Reach attack",
+   "find": "then makes their attacks against the nearest enemy in **Reach**, if able.",
+   "replace": "then makes their attacks against the nearest enemy within the melee distance of their attacks, if able.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-12",
+   "status": "proposed",
+   "issue": "Pale City 3 spirits use the Pale City Ice Wraith",
+   "find": "Use the canonical **Spectre** profile with **LVL 3**",
+   "replace": "Use the canonical **Ice Wraith** profile with **LVL 3**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-13",
+   "status": "proposed",
+   "issue": "Greenmark objective: Greenmark creature",
+   "find": "Disturbs a Stirge nest. Place **1d3 Stirge** adjacent",
+   "replace": "Disturbs a Giant Tarantula nest. Place **1d3 Giant Tarantulas** adjacent",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-14",
+   "status": "proposed",
+   "issue": "Ashlands objectives: Ashlands Undead Warrior (same level and role as Skeleton Warrior)",
+   "find": "place **1d2 Skeleton Warriors** inside the chamber",
+   "replace": "place **1d2 Undead Warriors** inside the chamber",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-15",
+   "status": "proposed",
+   "issue": "Ashlands statue guardian: Undead Warrior",
+   "find": "place **1 Skeleton Warrior** if **APL** is **1–2**, **1 Stone Sentinel**",
+   "replace": "place **1 Undead Warrior** if **APL** is **1–2**, **1 Stone Sentinel**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-16",
+   "status": "proposed",
+   "issue": "Ashlands objective failure guardian: Undead Warrior",
+   "find": "Place **1 Skeleton Warrior** if **APL** is **1–2**, **1 Stone Sentinel**",
+   "replace": "Place **1 Undead Warrior** if **APL** is **1–2**, **1 Stone Sentinel**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-17",
+   "status": "proposed",
+   "issue": "Undermarches geode: Giant Centipede (Undermarches skirmisher)",
+   "find": "place **1 Giant Tarantula** if **APL** is **1–2**, or **1 Giant Black Widow**",
+   "replace": "place **1 Giant Centipede** if **APL** is **1–2**, or **1 Giant Black Widow**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-18",
+   "status": "proposed",
+   "issue": "Undermarches egg sacs: Black Widows only",
+   "find": "place **1d2 Giant Tarantulas** if **APL** is **1–2**, or **1d2 Giant Black Widows** if **APL** is **3+**",
+   "replace": "place **1 Giant Black Widow** if **APL** is **1–2**, or **1d2 Giant Black Widows** if **APL** is **3+**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-19",
+   "status": "proposed",
+   "issue": "Undermarches rock-formation guardians: stone-camouflaged Troglodytes and Vault Ooze",
+   "find": "Place **2 Fire Beetles** if **APL** is **1–2**, **3 Fire Beetles** if **APL** is **3–4**, or **1 Fire Elemental** if **APL** is **5+**",
+   "replace": "Place **1 Troglodyte** if **APL** is **1–2**, **2 Troglodytes** if **APL** is **3–4**, or **1 Vault Ooze** if **APL** is **5+**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-20",
+   "status": "proposed",
+   "issue": "Pale City statue guardian: Gelid Fiend (Pale City brute)",
+   "find": "**1 Ice Elemental** if **APL** is **3–5**, or **1 Iron Golem** if **APL** is **6+**, adjacent to the statue",
+   "replace": "**1 Ice Elemental** if **APL** is **3–5**, or **1 Gelid Fiend** if **APL** is **6+**, adjacent to the statue",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-21",
+   "status": "proposed",
+   "issue": "Pale City cave: Frost Ghoul at low APL",
+   "find": "Place **1 Spectre** if **APL** is **1–3**, or **1 Ice Wraith**",
+   "replace": "Place **1 Frost Ghoul** if **APL** is **1–3**, or **1 Ice Wraith**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-22",
+   "status": "proposed",
+   "issue": "Pale City den: Tundra Wolf Den",
+   "find": "**Setup:** Place a \"Dire Wolf Den\" (1\") near a battlefield edge.",
+   "replace": "**Setup:** Place a \"Tundra Wolf Den\" (1\") near a battlefield edge.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-23",
+   "status": "proposed",
+   "issue": "Pale City den pack: Tundra Wolves and Blackfire Hound",
+   "find": "Place one **Dire Wolf** if **APL** is **1–2**, or one **Tundra Wolf** if **APL** is **3+**, using the canonical bestiary entry. If **APL** is **5+**, also place **1d2 Dire Wolves**",
+   "replace": "Place one **Tundra Wolf** if **APL** is **1–2**, or one **Blackfire Hound** if **APL** is **3+**, using the canonical bestiary entry. If **APL** is **5+**, also place **1d2 Tundra Wolves**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-24",
+   "status": "proposed",
+   "issue": "Sun-Drowned ambush: Giant Scorpion and Desert Naga",
+   "find": "place **1 Crocodile** if **APL** is **1–2**, **1 Giant Constrictor** if **APL** is **3–4**, or **1d2 Giant Constrictors** if **APL** is **5+**",
+   "replace": "place **1 Giant Scorpion** if **APL** is **1–2**, **1 Desert Naga** if **APL** is **3–4**, or **1d2 Desert Nagas** if **APL** is **5+**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-25",
+   "status": "proposed",
+   "issue": "Sun-Drowned cairn: Giant Scorpion and Desert Naga",
+   "find": "place **1 Crocodile** if **APL** is **1–2**, or **1 Giant Constrictor** if **APL** is **3+**",
+   "replace": "place **1 Giant Scorpion** if **APL** is **1–2**, or **1 Desert Naga** if **APL** is **3+**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-26",
+   "status": "proposed",
+   "issue": "Sun-Drowned wind predator: Imp (flying Sun-Drowned skirmisher)",
+   "find": "place **1 Harpy** if **APL** is **1–2**, or **1 Wind Elemental**",
+   "replace": "place **1 Imp** if **APL** is **1–2**, or **1 Wind Elemental**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-27",
+   "status": "proposed",
+   "issue": "Mire objective: Stirges (Mire)",
+   "find": "Place **1d3 Giant Centipedes**, using the canonical bestiary entry. Their **Bite** also",
+   "replace": "Place **1d3 Stirges**, using the canonical bestiary entry. Their **Blood Drain** also",
+   "expected_count": 1
+  },
+  {
+   "id": "RC489-28",
+   "status": "proposed",
+   "issue": "Stray 'None.' bullet in populated Special Abilities (Desert Naga, Medusa)",
+   "find": "\n- None.\n",
+   "replace": "\n",
+   "expected_count": 2
+  }
+ ]
+}

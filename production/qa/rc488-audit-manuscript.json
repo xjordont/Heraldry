@@ -1,0 +1,399 @@
+{
+ "manuscript": "source/Heraldry_RC488.md sha256 9394be77c41ba1c325e84152609abe7d09522a4d9f641121611be8356b5d1305",
+ "mode": "read-only audit; nothing in the repository was edited",
+ "coverage": {
+  "bestiary_entries_read_in_full": 135,
+  "climate_entries": 120,
+  "boss_entries": 15,
+  "bestiary_scripted_checks": [
+   "Small SA present iff Sz S (135/135 ok)",
+   "flavour weapon vocabulary vs attack list for all 135",
+   "flavour size phrases vs Sz for all 135",
+   "fly/swim/burrow/climb vocabulary vs movement abilities for all 135",
+   "every AI/SA reference to a named attack resolves to a listed attack/ability for all 135"
+  ],
+  "core_scenarios_scanned": 36,
+  "secondary_objectives_scanned": 120,
+  "random_monster_table_cells": 1200,
+  "appendices_scanned": [
+   "A",
+   "B.5",
+   "C"
+  ],
+  "other_sections_scanned": [
+   "9.1-9.6",
+   "10.1",
+   "10.3",
+   "10.5-10.6",
+   "11 campaign tables (15800-15805)"
+  ],
+  "rc487_and_rc488_items_not_re_reported": true
+ },
+ "counts": {
+  "total_findings": 20,
+  "confirmed": 14,
+  "judgement": 6,
+  "verified_clean_checks": 3
+ },
+ "findings": [
+  {
+   "id": "B-01",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "rules-affecting",
+   "entry": "Forsaken Duelist (Ashlands)",
+   "source_lines": "8459-8468 (attack list 8463; AI 8459; Counterthrust 8468; Rapier item 3610)",
+   "quoted_text": [
+    "- **Rapier:** 1d8 slashing damage.",
+    "AI: \"attack that enemy with **Rapier** for 1d8 + 4 piercing damage.\"",
+    "Counterthrust: \"immediate **Rapier** attack ... for 1d8 + 4 piercing damage.\"",
+    "7.8: Rapier 1d8 (P)"
+   ],
+   "issue": "The listed Rapier attack is slashing, but the same entry restates the Rapier twice as piercing and the mundane Rapier is piercing. The damage type decides which Resistances, Vulnerabilities and AV rules apply. (Deep Elf Commander Poisoned Rapier at 13121 is piercing, consistent with 7.8.)",
+   "suggested_minimal_fix": "Change line 8463 to \"- **Rapier:** 1d8 piercing damage.\""
+  },
+  {
+   "id": "B-02",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "rules-affecting (ability missing)",
+   "entry": "Giant Scorpion (Sun-Drowned)",
+   "source_lines": "9413, 9424-9427",
+   "quoted_text": [
+    "*It buries itself in the dunes and erupts beneath whatever walks over it.*",
+    "Special Abilities list: Beast, Venom, Tremorsense (9\") only"
+   ],
+   "issue": "Flavour describes burrowing/ambush from under sand with no Burrow (or Earth Glide) ability. RC488-09 changed only the size sentence. The same sentence is also copied-in spirit by Sun-Drowned secondary objective 3 (11655).",
+   "suggested_minimal_fix": "Flavour-only: \"It lies half-buried in the dunes and lunges at whatever walks past.\" (Alternative, rules-changing: add Burrow (X\").)"
+  },
+  {
+   "id": "B-03",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "rules-affecting (shield with two-handed weapon; same pattern RC488-07/08 fixed)",
+   "entry": "Undead Sentinel (Ashlands)",
+   "source_lines": "8293, 8303 (Halberd 3629)",
+   "quoted_text": [
+    "towering dead men in tower-shield and reach-halberd",
+    "- **Tower Halberd:** **Reach**, 1d10 + 2 slashing damage."
+   ],
+   "issue": "A tower-shield is described but no shield rule exists (no Shield Wall or AV from it), and a Halberd is a 2-handed Reach weapon (7.8, Hands 2), so a shield-and-halberd loadout contradicts equipment rules - the exact reason RC488 retired the White Court Guard halberd. Also \"towering\" vs Sz M (see B-17). The same phrase is baked into art briefs: production/art/SPOT_CATALOG.json 5019-5031, ILLUSTRATION_LIST.md 3517-3532, SUBJECT_PLAN.json 124, briefs/figures.json 1886-1887.",
+   "suggested_minimal_fix": "Flavour: \"...dead men in iron helm and reach-halberd\" (drop tower-shield, change \"towering\" to \"tall\"), then refresh the art brief; or, if a shield is wanted, swap Tower Halberd for a 1-handed weapon plus Shield Wall as in RC488-06/08."
+  },
+  {
+   "id": "B-04",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "rules-affecting (missing rules support)",
+   "entry": "Tomb Guardian (Sun-Drowned)",
+   "source_lines": "9602, 9608-9620",
+   "quoted_text": [
+    "lends its iron resolve to the dead around it",
+    "abilities: Construct, Unyielding Form, Stalwart, Tireless, Immune: poison, Darkvision"
+   ],
+   "issue": "Flavour promises an aura-style buff to nearby dead, but the entry has no Guardian Stance (compare Undead Sentinel 8308 and White Court Sentinel 9159). Its AI only moves toward \"allied Undead\". \"iron\" also conflicts with \"gilded stone\".",
+   "suggested_minimal_fix": "Add the same Guardian Stance line (\"allied Undead within 3\" gain +1 AV while this Monster has not moved\") or reword to \"plants itself at a threshold and cannot be hurried or frightened\"."
+  },
+  {
+   "id": "B-05",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "flavour-only (misstates rules)",
+   "entry": "Spectre (Ashlands) and Ice Wraith (Pale City)",
+   "source_lines": "Spectre 8274; Ice Wraith 9124; 3366; 9.6 Incorporeal 7696",
+   "quoted_text": [
+    "Steel finds nothing to bite; only silver and magic answer.",
+    "Steel passes clean through; only silver and magic bite."
+   ],
+   "issue": "7.2 (line 3366) says Silvered does not make a weapon magical, and Incorporeal only halves non-magical weapon damage. Silver has a rule only against Lycanthropes. The Banshee (9988) correctly says \"only magic answers\".",
+   "suggested_minimal_fix": "Delete \"silver and\" in both; keep \"only magic answers\" (and \"halved\" if wanted)."
+  },
+  {
+   "id": "B-06",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "rules-affecting (size) + flavour (no rules support)",
+   "entry": "Gloomspore Jelly (Undermarches)",
+   "source_lines": "8708, 8712, 8714-8724",
+   "quoted_text": [
+    "A translucent grey ooze the size of a cart ... Slashing only splits it ... dissolves whatever it engulfs",
+    "| 26 | 2 | 3\" | 3 | 8c | M |"
+   ],
+   "issue": "\"Size of a cart\" with Sz M is the same defect RC488-09 fixed on the Giant Scorpion (already listed as \"Still open\" in production/art/SOURCE_NOTES.md). In addition \"slashing only splits it\" has no splitting or slash-resistance rule, and \"engulfs\" has no Engulf/Swallow (the Vault Ooze has Engulf; this Pseudopod is plain acid damage).",
+   "suggested_minimal_fix": "Change \"the size of a cart\" to \"the size of a man\"/\"a large dog\", and \"Slashing only splits it\" to something the sheet supports (e.g. remove); \"engulfs\" to \"touches\"."
+  },
+  {
+   "id": "B-07",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "flavour-only (but rules unsupported)",
+   "entry": "Noxcloth (Undermarches)",
+   "source_lines": "8647, 8654-8661",
+   "quoted_text": [
+    "With a gout of unnatural gloom it can snuff a torch outright."
+   ],
+   "issue": "No Darkness, Light-removal or ranged ability exists; abilities are Fly (6\") and Blindsight (9\") only, AI Smother only blinds.",
+   "suggested_minimal_fix": "Delete the sentence, or add a small Aura/AI step that places Darkness."
+  },
+  {
+   "id": "B-08",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "flavour-only (rules unsupported)",
+   "entry": "Iron Golem (Ashlands)",
+   "source_lines": "8515, 8525-8531",
+   "quoted_text": [
+    "it shrugs off blade and spell alike ... Magic washes from its plates; edged steel skids away."
+   ],
+   "issue": "Stat block has Immutable (Resistant slashing and piercing) and Immune poison/psychic but no arcane/magic resistance.",
+   "suggested_minimal_fix": "Add \"Resistant: arcane\" or change to \"shrugs off blades and answers with piledriver fists\"."
+  },
+  {
+   "id": "B-09",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "flavour-only",
+   "entry": "Bandit (Greenmark; Basic Mode Bandit 17042-17048 shares the rule)",
+   "source_lines": "7837, 7848",
+   "quoted_text": [
+    "they fight dirtiest against anything already bleeding",
+    "Dirty Fighting: ... +2 damage against Prone, Stunned, or Immobilized targets."
+   ],
+   "issue": "Bleeding is not a Dirty Fighting trigger.",
+   "suggested_minimal_fix": "Flavour: \"against anything already down\" (or add Bleeding to the trigger list)."
+  },
+  {
+   "id": "B-10",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "rules-affecting (internal inconsistency between near-duplicate entries)",
+   "entry": "Desert Naga (Sun-Drowned) vs Swamp Naga (Mire)",
+   "source_lines": "Desert Naga 9508, 9515; Swamp Naga 9908, 9915",
+   "quoted_text": [
+    "Desert: \"hexing the strong to leave them weak\" / Hexscale \"must pass a **SPI Check** or become **Sleeping**\"",
+    "Swamp: \"hexes the strong to sap their strength\" / Hexscale \"also becomes **Slowed** until the end of the round\" (no Check)"
+   ],
+   "issue": "Same flavour, different effects and different Check structure; Sleeping contradicts \"weak\" and is out of keeping with Slowed in the sibling entry. Probable copy error.",
+   "suggested_minimal_fix": "Make Desert Naga: \"...must pass a SPI Check or become Weakened until the end of the round\" (or mirror the Swamp Naga text)."
+  },
+  {
+   "id": "B-11",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "rules-affecting wording (same class as RC487 U05)",
+   "entry": "Elder Vrymk (Undermarches)",
+   "source_lines": "8869, 8872-8874",
+   "quoted_text": [
+    "makes their attacks against the nearest enemy in **Reach**, if able"
+   ],
+   "issue": "Elder Vrymk has no Reach attack; \"in Reach\" is a defined term (1460, 3555), and RC487 U05 removed this phrasing where the attack lacks Reach. Tomb Guardian 9609 and Undead Sentinel 8300 use it correctly (Reach attacks).",
+   "suggested_minimal_fix": "Replace with \"the nearest enemy within the melee distance of its attacks\" (as RC488-03 did)."
+  },
+  {
+   "id": "B-12",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "confirmed",
+   "severity": "editorial",
+   "entry": "Desert Naga and Medusa (Sun-Drowned)",
+   "source_lines": "9523, 9579",
+   "quoted_text": [
+    "- None.   (listed after Tremorsense (9\"))",
+    "- None.   (listed after Immune/Resistant lines)"
+   ],
+   "issue": "Stray placeholder bullet \"None.\" in a populated Special Abilities list.",
+   "suggested_minimal_fix": "Delete both lines."
+  },
+  {
+   "id": "B-13",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "judgement (burrow rules)",
+   "severity": "rules-affecting",
+   "entry": "Gloom Hulk, Burrowmaw (Undermarches) and Sirrach the Black (boss)",
+   "source_lines": "Hulk 8825/8840; Burrowmaw 8906/8919; Sirrach 10398/10415; 9.6 Burrow 7685, Earth Glide 7690",
+   "quoted_text": [
+    "burrows through solid rock",
+    "swims through solid stone",
+    "a black wyrm that swims through solid stone",
+    "Burrow: ...earth, soil, sand, mud, snow, or another terrain feature that explicitly permits Burrow"
+   ],
+   "issue": "Burrow does not name natural rock; passage through natural stone is the Earth Glide ability. Also the scenario monster Rock Elemental Guardian (13045) uses Burrow (3\") to erupt from walls. Stone Sentinel has Earth Glide (8371) with no burrowing in its flavour (and was not changed in RC488).",
+   "suggested_minimal_fix": "Either add \"natural stone\" to Burrow in 9.6/Undermarches terrain, or give these monsters Earth Glide; alternatively remove \"solid rock/stone\" from the flavour. For Stone Sentinel remove Earth Glide or add a flavour line."
+  },
+  {
+   "id": "B-14",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "judgement (weapon vs 7.8 table)",
+   "severity": "low rules / flavour",
+   "entry": "Several",
+   "source_lines": "Bugbear 7935-7936; Deep Elf Warrior 8798; Medusa 9573; Gelid Fiend 9275; Deep Elf Priest 8818",
+   "quoted_text": [
+    "Morningstar: 1d10 + 2 piercing (7.8 Morningstar 1d8 (B))",
+    "Shortsword: piercing (7.8 Shortsword (S)) in Deep Elf Warrior and Medusa; Elite Guard Shortsword at 13157 is slashing",
+    "Ice Glaive: piercing (Glaive (S))",
+    "Scourge: Reach (7.8 Scourge has no Reach)"
+   ],
+   "issue": "Monster weapon names reuse 7.8 weapons with a different damage type or trait. Plausible as \"spiked\", \"finesse blade\" or \"ice\" variants, but this is exactly the class of mismatch RC488 normalised (maul, greatsword).",
+   "suggested_minimal_fix": "Either align damage types with 7.8, or add a flavour cue (spiked morningstar already present for Bugbear; add \"finesse\" to Deep Elf Warrior only)."
+  },
+  {
+   "id": "B-15",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "judgement (size words)",
+   "severity": "flavour / art",
+   "entry": "Various",
+   "source_lines": "Briarling 7871 (hound, M) vs Giant Black Widow 8686 (war-hound, S); Basilisk 8473 (ox, M) vs Gloom Hulk 8825 (bull, L); Undead Sentinel 8293 and White Court Executioner 9220 (towering, M); Antlered Warden 10325 (towering, L) vs Avatar 10212 (towering, H); Fire Elemental 9527 (\"man-shape\", L) and Shambling Mound 9948 (\"man-shaped\", L); Dire Wolf 7887 (bigger than a pony, M); Giant Centipede 8629 (\"long as a spear\", S)",
+   "quoted_text": [
+    "a knot of animate thornwood the size of a hound  [Sz M]",
+    "the size of a war-hound [Sz S]",
+    "the size of an ox [Sz M]",
+    "the size of a bull [Sz L]",
+    "towering ... [Sz M]"
+   ],
+   "issue": "The ox/bull and hound/war-hound pairs are mutually inconsistent; \"towering\" on an M monster repeats the Frost Giant defect RC488-10 fixed. The others are length/shape descriptions, not necessarily size defects.",
+   "suggested_minimal_fix": "Briarling -> \"the size of a child\"; Basilisk -> \"the size of a boar\" (M) or set Sz L; Undead Sentinel/Executioner \"towering\" -> \"tall\"; leave the rest."
+  },
+  {
+   "id": "B-16",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "judgement (movement not reflected)",
+   "severity": "low",
+   "entry": "Giant Constrictor; Dryad Grovewarden; Fire Beetle; Fly/Swim without flavour",
+   "source_lines": "Constrictor 9928, 9932-9944; Dryad 8083; Fire Beetle 9327/9339; also Lich 8533/8549, Gargoyle 8332/8347, Wind Elemental 9490/9501, Stirge 9774/9786, Mire Hag 9967/9983, Swamp Troll 10010/10022",
+   "quoted_text": [
+    "drops from overhanging branches [no Climb or Fly]",
+    "It steps between trunks as though they were doorways [no teleport]",
+    "Fire beetle: Burrow (3\") but flavour never mentions digging"
+   ],
+   "issue": "Script scan of all 135 entries for fly/swim/burrow/climb vocabulary vs Fly/Swim/Burrow/Climb/Earth Glide/Wallcrawler found only the Scorpion (B-02) as a clear burrow gap; these are weaker. Dragons/Lich/Gargoyle Fly and Mire Swim are implied by creature type.",
+   "suggested_minimal_fix": "Optional: add a clause to flavour (Constrictor: \"drops from the branches\" is fine if movement abilities are not required for dropping; Fire Beetle: \"burrows ...\")."
+  },
+  {
+   "id": "B-17",
+   "category": "1 bestiary flavour vs stat block",
+   "kind": "judgement (flavour claims without rules)",
+   "severity": "flavour-only",
+   "entry": "Various (16 entries)",
+   "source_lines": "Harpy 7944; Satyr Reveler 7852; Briarling 7871; Lich 8537; Fire Elemental 9527; Gargoyle 8332; Shambling Mound 9948; Zombie 9757; Minotaur 8376; Ice Elemental 9163; Lizardfolk Shaman 9867; Troglodyte Shaman 8728; Frost Ghoul 9072; Fallen Paladin 9181; Ember Skull 8236; Werewolf 8120",
+   "quoted_text": [
+    "Harpy: \"The song is a lure that no resolve fully shakes\" (Diving Snatch is the only ability)",
+    "Satyr: floods a listener with \"borrowed terror\" (pipes only cause Sleeping); \"Satyrs were fey once\" but it has the Fey tag",
+    "Briarling: \"Fire is the only sure answer\" (no Vulnerable fire)",
+    "Lich: \"command the Ashlands' dead with a gesture\", re-forms with phylactery (no rule)",
+    "Fire Elemental: \"sets alight everything it touches\" (no Burning application)",
+    "Gargoyle: \"hide turns aside all but the heaviest blow\" (AV 2 only)",
+    "Shambling Mound: \"tireless\", \"blades vanish\" (no Tireless/resist)",
+    "Minotaur: \"gore and trample\" (no Trample)",
+    "Ice Elemental: \"freezes the ground it crosses\" (Ice Glide only)",
+    "Lizardfolk Shaman: \"the pack fights harder\" (no rule)",
+    "Frost Ghoul: \"It does not slow\" (no immunity)",
+    "Fallen Paladin: aura \"withers courage\" (applies Weakened, not Frightened)"
+   ],
+   "issue": "Signature traits described in prose with no mechanical counterpart. None contradicts a rule; they are expectation gaps.",
+   "suggested_minimal_fix": "Low priority. Where easy, reword to what the stat block does (e.g. Harpy: delete the lure sentence; Satyr: \"lulls a listener to sleep\"; Minotaur: delete \"and trample\")."
+  },
+  {
+   "id": "S-01",
+   "category": "2 scenario creature/climate fit",
+   "kind": "judgement (reward summon)",
+   "severity": "low",
+   "entry": "Undermarches 6: The Ritual of Shadow Binding",
+   "source_lines": "13353",
+   "quoted_text": [
+    "**Shadow Brand** ... may place **1 allied Spectre Summon**, using the canonical bestiary entry"
+   ],
+   "issue": "Spectre is an Ashlands creature; the Undermarches bestiary has no spirit and the text does not justify Spectre in this climate. It is an allied reward summon, not a deployed enemy.",
+   "suggested_minimal_fix": "Acceptable if intended as a reward; else name the scenario-specific Shadow Wisp (defined at 13310) or add \"bound spirits count as Spectres\"."
+  },
+  {
+   "id": "S-02",
+   "category": "2 scenario creature/climate fit",
+   "kind": "confirmed (unjustified cross-climate use)",
+   "severity": "medium",
+   "entry": "Pale City 3: The Haunted Mausoleum",
+   "source_lines": "13537",
+   "quoted_text": [
+    "**Restless Spirits:** ... Use the canonical **Spectre** profile with **LVL 3**, **HP 10 + (2 x APL)**"
+   ],
+   "issue": "Spectre is Ashlands. Pale City has the Ice Wraith (a spirit) in its own bestiary and the text gives no justification. Related: Pale City secondary objective 11 (11582) also places a Spectre at APL 1-3.",
+   "suggested_minimal_fix": "Use \"Ice Wraith\"-based profile (LVL 3 vs Ice Wraith LVL 4) or state that the sarcophagus spirits are imported from the Ashlands."
+  },
+  {
+   "id": "S-03",
+   "category": "2 scenario creature/climate fit",
+   "kind": "confirmed (unjustified cross-climate use)",
+   "severity": "medium (14 secondary-objective entries; rules-affecting which creature appears)",
+   "entry": "10.2 Secondary Objectives",
+   "source_lines": "see list",
+   "quoted_text": [
+    "Greenmark #7 (11195): Stirge [Mire]",
+    "Ashlands #2 (11283), #3 (11288), #17 (11376): Skeleton Warrior [Sun-Drowned; Ashlands has Undead Warrior]",
+    "Undermarches #2 (11408) and #3 (11415): Giant Tarantula [Greenmark] at APL 1-2 (Giant Black Widow [Undermarches] at 3+ is fine)",
+    "Undermarches #17 (11494): Fire Beetle / Fire Elemental [Sun-Drowned]",
+    "Pale City #3 (11530): Iron Golem [Ashlands] at APL 6+",
+    "Pale City #11 (11582): Spectre [Ashlands] at APL 1-3",
+    "Pale City #13 (11592, 11596): \"Dire Wolf Den\" places Dire Wolf [Greenmark] (Tundra Wolf [Pale City] also placed)",
+    "Sun-Drowned #8 (11691) and #10 (11700): Crocodile and Giant Constrictor [Mire]",
+    "Sun-Drowned #18 (11745): Harpy [Greenmark] at APL 1-2",
+    "Mire #6 (11795): Giant Centipede [Undermarches]"
+   ],
+   "issue": "RC488 made the 36 core Mire scenarios Mire-only but the secondary objectives still import creatures from other climates, none justified in the text. Oasis-adjacent Crocodile/Constrictor and the Dire Wolf Den may be deliberate. Mire #6 also says \"Their **Bite** also inflicts Poisoned [d4]\" but the centipede attack is \"Venomous Bite\" with Venom already (9.6 Venom).",
+   "suggested_minimal_fix": "Substitute same-role climate creatures, e.g. Greenmark #7 Stirge -> Goblin; Ashlands Skeleton Warrior -> Undead Warrior; Undermarches #2/#3 Giant Tarantula -> Giant Black Widow or Kobold; Undermarches #17 Fire Beetle -> Kobold, Fire Elemental -> Gloomspore Jelly; Pale City #3 Iron Golem -> Ice Elemental; #11 Spectre -> Ice Wraith; #13 Dire Wolf -> Tundra Wolf; Sun-Drowned #8/#10 -> Giant Scorpion/Skeletal Beast; #18 Harpy -> Wind Elemental/Corpsehound; Mire #6 Giant Centipede -> Miasma Serpent or Bogling. Or add one sentence of justification in each."
+  },
+  {
+   "id": "S-04",
+   "category": "2 scenario creature/climate fit",
+   "kind": "verified clean",
+   "severity": "none",
+   "entry": "Core scenarios, Appendix A, 9.8 tables, bosses, summons",
+   "source_lines": "--",
+   "quoted_text": [
+    "36 core scenarios scanned for all 135 bestiary names (regex with plurals), lines containing deployment keywords read; all other deployed creatures are defined in the scenario (Great Forest Boar, Toll Captain, Forest-Road Reeve, Broodmother Spider, Old Growth Treant, Observatory Sentinel, Guardian Construct, Libram Warden, Broken Saint Revenants, Vault Presence, Alpha Crystal Lurker, Chasm Stalkers, Rock Elemental Guardian, Outpost Commander (Deep Elf / Dwarf), Elite Guards, Guardian Shade, Shadow Caller + Shadow Wisp, Alchemical Golem, Pale Court Magistrate, Clockwork Guardians, Ice Wyrm, Frost Bailiff Magistrate + Ice Mephit, Raider Chieftain, Flame Guardians, Tomb Herald, Great Sandwyrm, Cursed Colossus, Bound Cinder Lord + Flame Mephit, Salttide's Shade + Giant Leech Swarm, Lizardfolk Scale-Shaman, Mire Titan (scenario), Blighted Treant Guardian + Thornling Sprout, Edrava Salttide, Great Swamp Serpent)"
+   ],
+   "issue": "Only creature-climate mismatches in core scenarios are the two Spectre uses above. Greenmark, Sun-Drowned and Mire core scenarios fully climate-consistent (Mire 2/5 confirmed Swamp Goblin/Zombie after RC488). Appendix A deploys 4 Dire Wolves (Greenmark) with a stated learn-to-play profile override (16165); Appendix B uses its own B.5 profiles (identical to bestiary stats). Minion tables 15800-15805 match each climate. Boss summon steps (Hollow Crown -> Forsaken Knight, Broodmother -> Giant Black Widow, Frost Bailiff -> White Court Guard, Sun-Crowned -> Skeleton Warrior, Antlered Warden/Avatar -> Briarling, Maelthorn -> Forest Troll, Khorrun -> Skeleton Warrior, Tomb Necromancer -> Skeleton Warrior, Blackwater Wight -> Zombie, Elder Vrymk -> Vrymk/Vaultfang) are all in-climate.",
+   "suggested_minimal_fix": "--"
+  },
+  {
+   "id": "S-05",
+   "category": "2 scenario creature/climate fit",
+   "kind": "verified clean",
+   "severity": "none",
+   "entry": "9.8 Random Monster Tables",
+   "source_lines": "10502-10975",
+   "quoted_text": [
+    "1200 cells parsed (6 climates x 5 APL bands x 10 rows x 4 party sizes); every \"N Name\" item resolved"
+   ],
+   "issue": "Every name appears in that climate's own bestiary; zero unparsed items, zero Boss entries, zero cross-climate entries; every one of the 20 entries per climate is used at least once.",
+   "suggested_minimal_fix": "--"
+  },
+  {
+   "id": "X-01",
+   "category": "3 cross-references to RC488 renamed/retired attacks",
+   "kind": "verified clean",
+   "severity": "none",
+   "entry": "Great-Axe, Giant Stone Sword, Court Halberd, Orc Greataxe",
+   "source_lines": "source/Heraldry_RC488.md; build/index.json; build/blocks.json; typst/content.typ; editorial/*",
+   "quoted_text": [
+    "grep -i \"Great-Axe|Giant Stone Sword|Court Halberd\" in RC488: 0 hits",
+    "Orc entry (7903-7921): only Battleaxe + Shield Wall; \"Greataxe\" remains only in 7.8 (3623), item tables, Minotaur (8386), Frost Giant (9291), Appendix B hero (16748), all legitimate",
+    "build/index.json: 0 occurrences of any renamed attack; monster index terms are names only",
+    "build/blocks.json and typst/content.typ: Stone Greatsword present, Giant Stone absent, built from source sha 9394be77... (matches current file)",
+    "Only remaining hits: editorial/history/RC488.json and editorial/proposals/rc488-bestiary-refinements.json (the find strings), production/art/SOURCE_NOTES.md (historical resolution table)"
+   ],
+   "issue": "No lingering source, example, table, AI-step, index, build or typeset reference. The \"Tower Halberd\" is a different Undead Sentinel weapon and is reported at B-03. White Court Guard art SUBJECT_PLAN 125 already shows longsword and kite shield; Orc 119 shows battleaxe and round shield.",
+   "suggested_minimal_fix": "--"
+  },
+  {
+   "id": "X-02",
+   "category": "3 cross-references to RC488 renamed/retired attacks",
+   "kind": "follow-up",
+   "severity": "low",
+   "entry": "Art/brief text derived from retired wording",
+   "source_lines": "production/art/SPOT_CATALOG.json 5019-5031, production/art/ILLUSTRATION_LIST.md 3517-3532, production/art/SUBJECT_PLAN.json 124, production/art/briefs/figures.json 1886-1887",
+   "quoted_text": [
+    "tower-shield and reach-halberd (Undead Sentinel)"
+   ],
+   "issue": "If B-03 is applied, the Undead Sentinel brief/prompt text must be regenerated; art for Undead Sentinel currently depicts the shield+halberd.",
+   "suggested_minimal_fix": "Re-run tools/art_gpt_pack.py for ART-MON-UNDEAD-SENTINEL after any manuscript change."
+  }
+ ]
+}
