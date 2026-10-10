@@ -17,7 +17,7 @@ You do not plan scenes or write prompts. The planning was done and audited for u
 
 1. Use each prompt file verbatim as the image prompt. Do not shorten, paraphrase, translate or "improve" it. The only permitted addition is up to two correction sentences on a retry (`references/REPAIR.md`), which you record in the receipt notes.
 2. Attach only the images in that item's `references` (at most three). Attach nothing else. Never attach the whole reference folder.
-3. Generate only IDs listed in `QUEUE.json`. An image is delivered once it is pushed. Never regenerate a delivered image unless `status` lists it as `redo` or the owner asks. Before the push you may regenerate freely, inside the item's attempt budget.
+3. Generate only IDs listed in `QUEUE.json`. An image is delivered once it is pushed. Never regenerate a delivered image unless `status` lists it as `redo` or the owner asks. A redo starts a fresh attempt budget, and `show` prints the reviewer's reason: base your correction sentence on it. Before the push you may regenerate freely, inside the item's attempt budget.
 4. Request the item's `size` exactly: 1536x1024 (wide 3:2), 1024x1536 (tall 2:3) or 1024x1024 (square), at the highest quality the tool offers. No upscaling and no print preparation: the repo's intake does that.
 5. Save the image exactly as the tool delivered it. No crop, resize, sharpen, retouch or format conversion.
 6. Change no file in the clone except `assets/art/incoming/<ID>.<ext>` and `production/art/gpt/RECEIPTS.jsonl`. Keep everything else you create (downloaded images, previews, contact sheets, bundles) in the scratch folder, outside the clone. `doctor` prints its location and the helper uses it by default. Do not edit the manuscript, queue, prompts, tools or this skill. No branches. No force-push.
@@ -36,7 +36,7 @@ python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py <co
 |---|---|
 | `doctor` | environment, repo, queue and reference checks; prints the scratch folder |
 | `status [--end]` | queue state and the single next action; `--end` at session end |
-| `next` | the next items to generate |
+| `next [--n N]` | the next items to generate (8 unless `--n`) |
 | `show ID` | references, size, size class, MUST BE SHOWN and DO NOT DRAW lists, verbatim prompt |
 | `check ID FILE` | tripwires for one generated image; counts it as an attempt; writes a print-size preview |
 | `save ID FILE ...` | check again, copy the bytes untouched, write the receipt |
@@ -67,9 +67,9 @@ If `doctor` lists reference images that are LFS pointers, run the single `git lf
 
 1. `show ID`. Read the MUST BE SHOWN and DO NOT DRAW lists before generating.
 2. Attach the listed references. Paste the whole prompt. Request the size. If the image tool cannot take reference images, or takes fewer than are listed, attach what it takes in the listed order, write `references attached: N of M` in `--notes` and in your report, and never imply references were used when they were not. If the tool shows you a revised prompt or shortens yours, note that too.
-3. Save the tool's image into the scratch folder, never inside the clone. Run `check ID FILE`. It counts the attempt (every distinct image you check is one; the count carries on through a redo before the push and starts afresh only after the image has been delivered and sent back), prints the tripwires, writes a print-size preview and lists the MUST and DO NOT DRAW lines again. Look at the image and at the preview and answer the ten questions below. Count the must-show items yourself: the tripwires cannot.
+3. Save the tool's image into the scratch folder, never inside the clone. Run `check ID FILE`. It counts the attempt (every distinct image you check is one; the count carries on through a redo before the push and starts afresh only after the image has been delivered and sent back), prints the tripwires, writes a print-size preview and lists the MUST and DO NOT DRAW lines again. Look at the image and at the preview and answer the ten questions below. Count the must-show items yourself: the tripwires cannot. Keep every attempt's file in the scratch folder until the item is saved, so you can go back to the best one; each attempt's preview is kept too. Some DO NOT DRAW lines name another entry ("Not the Undead Champion"): before you attest, open that entry's reference image (usually among your references) or its delivered image (`assets/art/incoming/<ID>.<ext>`) and compare it with your attempt.
 4. No hard fail: `save ID FILE --must "<what you counted or found>" --avoid-clear --model "<image model if shown>" --notes "<anything unusual, including any correction sentence you added>"`. Give exactly one `--must` for each MUST line, in order, each a real statement such as `"counted 8 legs, 4 a side"`; give none if the list is empty. `--avoid-clear` states that you looked and none of the DO NOT DRAW items is present. `save` checks again, copies the bytes untouched with the true extension, and appends the receipt with the attempts the helper counted, your statements and the attestation. Add `--redo` only when the owner asked you to replace an image that was already delivered; items that `status` lists as `redo` need no flag.
-5. Any hard fail: retry using `references/REPAIR.md`, up to the item's `max_attempts` (usually 3; cover and chapters 5). Stop at the first attempt with no hard fail. After the last allowed attempt, save the best attempt with `save ID FILE --accept-flags --notes "<what is still wrong>"`. The helper refuses `--accept-flags` until you have checked as many images as the budget allows, and it marks the receipt. It is for nothing else. Then move on.
+5. Any hard fail: retry using `references/REPAIR.md`, up to the item's `max_attempts` (usually 3; cover and chapters 5). Stop at the first attempt with no hard fail. After the last allowed attempt, save the best attempt with `save ID FILE --accept-flags --notes "<what is still wrong>"`. The best attempt is the one that breaks the fewest hard fails; if tied, the one whose subject is most accurate. It is never a byte copy of another image. The helper refuses `--accept-flags` until you have checked as many images as the budget allows, and it marks the receipt. It is for nothing else. If every attempt was a copy of a reference or of another image, save nothing: `refuse ID --reason "the tool keeps returning a copy of <path>"`. Then move on.
 
 ## Hard fails: reject the variant if any is true
 
@@ -84,7 +84,7 @@ If `doctor` lists reference images that are LFS pointers, run the single `git lf
 9. A human scale figure the prompt did not ask for, or a requested one missing. The prompt's `Size:` line is canonical.
 10. The subject is not unmistakable in the print-size preview.
 
-A must-show item and a do-not-draw line that look opposed are almost always about scale or focus. A required grove circle beside "do not repeat the grove scenario" means: draw the circle small, in the middle distance as the composition says, and do not make it the subject. Satisfy both the narrowest way and carry on. Only a prompt that cannot be satisfied at all is a problem to report (`references/REPAIR.md`).
+A must-show item and a do-not-draw line that look opposed are almost always about scale or focus. A required grove circle beside "do not repeat the grove scenario" means: draw the circle small, in the middle distance as the composition says, and do not make it the subject. Satisfy both the narrowest way and carry on. A prompt that cannot be satisfied at all is not for you to fix or to burn attempts on: `refuse ID --reason "prompt cannot be satisfied: <what clashes>"` and move on (`references/REPAIR.md`).
 
 Details, soft style checks and the batch drift review: `references/QA_CHECKLIST.md`. Style and the registers: `references/STYLE.md`. Family defaults: `references/FAMILIES.md`.
 
@@ -103,14 +103,16 @@ git pull --rebase origin main
 git push origin main
 ```
 
-`git lfs ls-files` lists staged PNGs, so run it before the commit: every new PNG must appear. If one does not, stop: git-lfs is not active and the PNG would be committed as an ordinary file. JPEG and WebP images are not stored with LFS. Refused IDs are not part of the message's range; their receipt lines go in with the batch. If the push is rejected, pull with rebase and push again.
+`git lfs ls-files` lists staged PNGs, so run it before the commit: every new PNG must appear. If one does not, stop: git-lfs is not active and the PNG would be committed as an ordinary file. JPEG and WebP images are not stored with LFS. Refused IDs are not part of the message's range; their receipt lines go in with the batch. A push that carries only receipts uses the message `art(gpt): receipts`. If the push is rejected, pull with rebase and push again.
 
-3. Style drift is a known risk in very long image threads. After about 20 items, suggest the owner start a fresh conversation and paste the resume prompt from `OPERATOR_CARD.md`.
+3. At the end of a session run `status --end`, do what it says, then write the report.
+4. Style drift is a known risk in very long image threads. After about 20 items, suggest the owner start a fresh conversation and paste the resume prompt from `OPERATOR_CARD.md`.
 
 ## Stop conditions
 
 - The anchors are done, or the queue is empty.
-- The image tool refuses an item. Do not reword the prompt to get around it. Record it with `refuse ID --reason "<the tool's message>"` (its receipt line goes in with the next batch), list it in your report, and continue with the next item.
+- The whole batch has drifted: the drift review shows the same fault in most of the images, not in one or two. Push what is good, stop, and tell the owner.
+- The image tool refuses an item. Do not reword the prompt to get around it. Record it with `refuse ID --reason "<the tool's message, or what happened if it gave none>"` (its receipt line goes in with the next batch), list it in your report, and continue with the next item.
 - Quota or rate limit. Push what is saved, report the counts and the next ID, and stop.
 - `doctor` says NOT READY (broken queue, prompts or references, or a branch other than main), a prompt does not match its queue hash after a pull, or the queue is schema 1. Report it and stop.
 - `doctor` says delivery by git is blocked (no git or git-lfs): keep generating and saving, and finish each batch with `bundle`; hand the zip to the owner. If you cannot run Python either, do the same steps by hand and deliver the images, named `<ID>.<ext>` with their true extension, with one receipt line each (`references/QA_CHECKLIST.md` shows the format).

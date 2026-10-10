@@ -5,7 +5,7 @@
 1. **ChatGPT Work** runs the `anchors` queue (5 images) and pushes. It stops.
 2. **You** tell Claude Code: "Review the anchors." Claude Code runs the intake, looks at them, approves or rejects them, and publishes the batch queue.
 3. **ChatGPT Work** runs the batch in order, pushing every 5 images (never more than 10 unsent) and at session end.
-4. **Claude Code** reviews each push. A rejected image goes back into the queue and shows as `redo`.
+4. **Claude Code** reviews each push. A rejected image goes back into the queue with the reviewer's reason and shows as `redo`.
 5. Repeat 3 and 4 until `status` reports nothing left.
 
 Claude Code owns the prompts, queue, references, review and approval. ChatGPT Work only generates and delivers.
@@ -26,7 +26,7 @@ Claude Code owns the prompts, queue, references, review and approval. ChatGPT Wo
 
 **Redo rejected images**
 
-> Use the heraldry-classic-ink-art skill. Claude Code rejected some images; they show as redo in status. Regenerate only those, within their attempt budget, and push.
+> Use the heraldry-classic-ink-art skill. Claude Code rejected some images; they show as redo in status. Regenerate only those, with a fresh attempt budget each and the reviewer's reason as the guide, and push.
 
 ## If something looks wrong
 

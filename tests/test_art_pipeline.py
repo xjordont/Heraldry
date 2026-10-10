@@ -47,6 +47,21 @@ class ArtPipeline(unittest.TestCase):
                     self.assertEqual(bool(by_id), approved)
                     self.assertEqual(bool(by_block), approved)
 
+    def test_reject_keeps_the_reviewers_reason_until_the_entry_is_approved(self):
+        import art_generate as g, art_intake
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as d:
+            sel = Path(d) / "SELECTIONS.json"
+            sel.write_text(json.dumps({"x": {"status": "received"}}))
+            with patch.object(g, "SELECTIONS", sel):
+                art_intake.set_status(["x"], "rejected", "six legs, not eight")
+                self.assertEqual(json.loads(sel.read_text())["x"]["rejected_reason"], "six legs, not eight")
+                art_intake.set_status(["x"], "rejected")
+                self.assertNotIn("rejected_reason", json.loads(sel.read_text())["x"])
+                art_intake.set_status(["x"], "rejected", "again")
+                art_intake.set_status(["x"], "approved")
+                self.assertNotIn("rejected_reason", json.loads(sel.read_text())["x"])
+
     def test_ink_prep_makes_transparent_black(self):
         from art_ink import prep
         with tempfile.TemporaryDirectory() as d:
