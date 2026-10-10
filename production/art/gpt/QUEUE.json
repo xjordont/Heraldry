@@ -1,6 +1,6 @@
 {
  "phase": "anchors",
- "generated_at": "2026-10-10T15:57:00+00:00",
+ "generated_at": "2026-10-10T17:35:44+00:00",
  "references": [
   "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
   "assets/art/style/STYLE-REF-02-panorama-line.jpg",
@@ -31,7 +31,7 @@
    "family": "monster",
    "title": "Undead Champion",
    "prompt": "production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt",
-   "prompt_sha256": "741d323781bea582ea37329ec5a544c0eb9dbb0c786b77866ecdcd8e3cfd88ca",
+   "prompt_sha256": "eda753f2885ed5d7def88a17623279e63703892d36c5c91fec71d7e8317bd134",
    "size": "1024x1024",
    "save_as": "assets/art/incoming/ART-MON-UNDEAD-CHAMPION.png"
   },

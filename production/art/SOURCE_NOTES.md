@@ -24,11 +24,15 @@ The owner's requested 8" cone Gaze was not applied. Owner decision, 2026-10-10: 
 
 The independent audit (production/qa/rc488-audit-manuscript.json): Forsaken Duelist; Giant Scorpion; Undead Sentinel; Tomb Guardian; Spectre and Ice Wraith; Gloomspore Jelly (now "the size of a man"); Noxcloth; Iron Golem; Bandit; Elder Vrymk; Pale City 3 and the secondary objectives; Deep Elf Priest and Scale-Shaman Quarterstaff.
 
-## Still open (owner decision)
+## Resolved in RC491 (owner decision 2026-10-10)
 
-- Desert Naga Hexscale applies Sleeping; its flavour says "leave them weak".
-- Undermarches 6 rewards an allied Spectre (Ashlands).
-- Judgement calls in the audit's B-13..B-17: burrowing through rock, weapon damage types that differ from table weapons of the same name, size words, and flavour traits with no rule.
+- The Desert Naga's flavour now reads "hexing the strong into an unnatural sleep", matching Hexscale.
+- Undermarches 6 Shadow Brand: the allied Spectre Summon becomes an allied **Noxcloth** Summon, a living shadow and the closest Undermarches match.
+- Size: owner ruling "Medium is ox-sized". Sizes are footprint categories; the art convention for M is human-sized up to ox-sized, so the Basilisk ("ox") and Briarling ("hound") stay M.
+
+## Left as written
+
+Judgement calls in the audit's B-13..B-17: burrowing through rock, weapon damage types that differ from table weapons of the same name, and flavour traits with no rule.
 
 ## Still open (art only)
 
