@@ -1,10 +1,11 @@
-# Release status — Heraldry Skirmish RC491
+# Release status — Heraldry Skirmish RC492
 
 Active revision and hashes: `source/versions.json`. Current build evidence: `production/build-provenance.json`, `production/qa/STATUS.json` and the scoped visual/figure ledgers. RC484–RC486 remain unchanged.
 
 | Area | Status | Evidence and scope |
 |---|---|---|
-| RC489/RC490 audit resolution | PASS | Independent RC488 manuscript and art audits resolved: RC489 (31 owner-approved patches) and RC490 (correction of a duplicated clause). Figure gate 57/57 with 0 open; every changed page inspected; 19/19 checks PASS on RC490. RC491 settled the Desert Naga flavour and the Undermarches 6 Noxcloth reward (owner); judgement-call wording left as written |
+| RC492 owner corrections | PASS | Basilisk coded L without the ox comparison; Undermarches 6 Shadow Brand reverted to the allied Spectre Summon; art size words reverted. Figure gate 57/57; pages 280 and 434 inspected; 19/19 checks PASS on RC492 |
+| RC489/RC490 audit resolution | PASS | Independent RC488 manuscript and art audits resolved: RC489 (31 owner-approved patches) and RC490 (correction of a duplicated clause). Figure gate 57/57 with 0 open; every changed page inspected; 19/19 checks PASS on RC490. RC491 settled the Desert Naga flavour (owner); its Noxcloth reward was reverted in RC492; judgement-call wording left as written |
 | RC488 owner refinements | PASS | 13 owner-instructed patches: Undead Champion War Maul; Stone Sentinel stone greatsword; Orc and White Court Guard one-handed weapon plus Shield Wall; Scorpion and Frost Giant descriptions; Noxcloth size M; Mire 2 and 5 deploy only Mire creatures. FIG-52 redrawn, independent figure gate 57/57 with 0 open. 597 interior pages, 11 changed pages inspected, 19/19 checks PASS. Basilisk/Medusa Petrifying Gaze kept unchanged (owner, 2026-10-10) |
 | Artwork route | ChatGPT Work (owner 2026-10-10) | Queue, prompts and intake workflow ready; 275 planned illustrations; 1 received (Greythorn), none approved or placed yet |
 | Manuscript repairs | COMPLETE | F01–F21 and U01–U06 resolved through one owner-authorized 48-patch batch; exact archived reconstruction and immutable parent hashes verified |

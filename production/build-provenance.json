@@ -1,19 +1,20 @@
 {
   "manuscript": {
-    "number": 491,
-    "path": "source/Heraldry_RC491.md",
-    "sha256": "545184806715afdcdaa79d98ee49d721c74ec944ff3511573a8ff32d75c46c4d",
-    "bytes": 1453501,
-    "parent_sha256": "38d3e0572b9a5551436ed4ab8cbc6249f085b2987036a36553bb0edb9903ac86",
-    "created_at": "2026-10-10T17:34:45.528038+00:00",
-    "reason": "Owner decisions on remaining RC488-audit items: Desert Naga flavour matches its Sleeping hex; Undermarches 6 Shadow Brand reward uses an Undermarches creature",
-    "authorization": "Owner instruction 2026-10-10 in Claude Code session: 'Change desert nagas flavour text to match. Undermarch Scenario 6 spectre reward should be changed to the closest thematic match within the undermarch bestiary. Medium is ox-sized.'",
+    "number": 492,
+    "path": "source/Heraldry_RC492.md",
+    "sha256": "a5ca7e72ad05a0cd69bb0bdca8238c10a635cf18345ae719c047c42fd3a8552a",
+    "bytes": 1453478,
+    "parent_sha256": "545184806715afdcdaa79d98ee49d721c74ec944ff3511573a8ff32d75c46c4d",
+    "created_at": "2026-10-10T17:51:54.023499+00:00",
+    "reason": "Basilisk is Large without the ox comparison; Undermarches 6 Shadow Brand reverts to the Spectre Summon",
+    "authorization": "Owner instruction 2026-10-10 (Claude Code session): 'I was wrong to say medium is an ox; please revert to previous size definitions. A briarling would be medium but a basilisk would be large. Remove the awkward ox-sized reference in the flavour text. ... We would either revert it to how it was before or rewrite it ...' Orchestrator chose the revert.",
     "patch_ids": [
-      "RC491-01",
-      "RC491-02"
+      "RC492-01",
+      "RC492-02",
+      "RC492-03"
     ],
-    "patch_file": "editorial/history/RC491.json",
-    "patch_sha256": "281367bb2bd7123c130d2159e5bb9ba0934402db34a3f8bb9bc4b94d1d68326f"
+    "patch_file": "editorial/history/RC492.json",
+    "patch_sha256": "163f52e16a2b6c303fcd2bfc5392e13b90c5d7d3c8a0f79a47a9389e8862da62"
   },
   "inputs": {
     "Makefile": "d581bbe593e44bccd7e95e17c8a7e2411bf90a13e6a49b2434e477c48a1cf979",
@@ -37,11 +38,11 @@
     "assets/art/ink/ART-CLI-THE-GREENMARK.png": "ee6d87696f2e4301d8186ecc82659e8512c2e8fe560fdfed38961717ad5fadc5",
     "assets/art/ink/ART-MON-GIANT-TARANTULA.png": "b85334b05c5a24f3bd389aa969e51c2f0ce29c201776481a7dede0718bf59333",
     "assets/art/ink/ART-MON-UNDEAD-CHAMPION.png": "29a877bcabbfafc81f9fdc78540f4608152fc816ab287f76a874806000355b70",
-    "config/art_style.json": "2c10c0f5084a1b70c969b7a7d6abc8abf8f5edc8b79eec65f615f5b908a35194",
+    "config/art_style.json": "f588655e2c5dd305c652aefbd362f1843f268bca793e9cb2be801bee80fffc4f",
     "config/content_anchors.json": "37e14d5dcf7fdbbdcf6e5acb9ab4cb6ee9e266e16497cd890b5664ec09da6c84",
     "config/design_tokens.json": "5cc40b8695ced6e7795edcd362ea760d5a07d43d5776e552d376bbb1f8ec9c06",
     "config/figure_dependencies.json": "9d2dff64918359de58e3de6c4ea9d68384f0a78ac4a44af9427543ab2bba0652",
-    "config/production.json": "f945765c0236444d631bb5fde2a124b237c82e2b047ab022ae88f4d9ff334fc9",
+    "config/production.json": "3ff051c793f079624313b4663f80dc9bac6ce6a07801453dc48599dbf63843ac",
     "docs/PRINT_INSTRUCTIONS_TEMPLATE.md": "3c05b96380931cf612a23453cc6b74b07cd29207a0dc119cda43493fa1a989b1",
     "editorial/history/RC485.json": "867bdc9a96592305905102b2bba247e9d32a1c7a9d29416f3cd3334b2bbb079f",
     "editorial/history/RC486.json": "f56dc517dbe879ef98f7e9afd4f9cfc8d8c19974685f97304d06c4cc27744b38",
@@ -50,6 +51,7 @@
     "editorial/history/RC489.json": "283349954125c0d97e23eb2ce87699cb84e653a944d29f7f65dfc2b16a8718ff",
     "editorial/history/RC490.json": "29c3a54a02fa640c8dc1d3e2fcecffff88eac0f4144ea1228ae4321362cedbb1",
     "editorial/history/RC491.json": "281367bb2bd7123c130d2159e5bb9ba0934402db34a3f8bb9bc4b94d1d68326f",
+    "editorial/history/RC492.json": "163f52e16a2b6c303fcd2bfc5392e13b90c5d7d3c8a0f79a47a9389e8862da62",
     "editorial/how_to_use.json": "a6b4151e7399896e49e356e486eba74db5f8ef04839494cc1defe1699d127f73",
     "editorial/patches.json": "4f07d2fd3fefa81aa101b2794112a30e7c21981c91cbe2795348c3b42bbdeb9a",
     "figures/manifest.json": "e13d82aa6f260aa82bae0ef03b197a8463c4454d5e33fa6d46d17229895a0e4e",
@@ -150,7 +152,7 @@
     "fonts/variable/SourceSerif4-Italic[opsz,wght].ttf": "15fbc7e4679489a501998c3669272637a6646388ef7e4bd77eebb5bf967a1f42",
     "fonts/variable/SourceSerif4[opsz,wght].ttf": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b",
     "production/art/SELECTIONS.json": "bf83fe8a7f9dd2d80133c6d616ecaee34b72ec6cba883d24229a0998fb35f8c7",
-    "production/art/SPOT_CATALOG.json": "5f14990960958b34e7fe84d9f5fc1661eb2d80d8deda926c523ba469c30d2c9f",
+    "production/art/SPOT_CATALOG.json": "189dffd72ec507c0dffbd7cfc1227c4aa556e7c0e3516bef79e33748ae670239",
     "requirements.lock": "fd96dab306e3b0fac5a4cbf9cb0c9a25c81215f6aacfc9378c14d755fde9f11f",
     "source/Heraldry_RC484.md": "2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3",
     "source/Heraldry_RC485.md": "fc6caeeedf1e8e2cce80ed469ef74fb3c196048563c6bfec65031f2b03c4bbbe",
@@ -160,8 +162,9 @@
     "source/Heraldry_RC489.md": "a28205099f18fe765445cc06f39dbf075c0f96c5511515216a699e88966be486",
     "source/Heraldry_RC490.md": "38d3e0572b9a5551436ed4ab8cbc6249f085b2987036a36553bb0edb9903ac86",
     "source/Heraldry_RC491.md": "545184806715afdcdaa79d98ee49d721c74ec944ff3511573a8ff32d75c46c4d",
+    "source/Heraldry_RC492.md": "a5ca7e72ad05a0cd69bb0bdca8238c10a635cf18345ae719c047c42fd3a8552a",
     "source/source_inventory.json": "fc9247aba50be34c0a3a2b4f00590ba2dcc3204b0fe98942c0000761d4075d02",
-    "source/versions.json": "66186926f9be51a8b71b52bfbc705a7d4c6e0385660034e291d50c105eef2aa4",
+    "source/versions.json": "488fec59ee939e09b93ce36de90a555f6431c2d0525e49fdae451b78876cc41f",
     "tools/art_catalog.py": "dfe5787048b22b4b42f2963a3efc3db57a163bb01f19d3be0e7ab96f27e24fea",
     "tools/art_generate.py": "8ab56aa2569b7182f405ceac8a18409a0460b410c1bb5455bf62aa9479f69e01",
     "tools/art_gpt_pack.py": "b14454c4b2e298d3e16e921fda31df911a9ad2284a0d9e50ac2f7aa2e0e9ade0",
@@ -207,19 +210,19 @@
     "typst/covers-main.typ": "3d9b9bfba5ab521a4010e227795129d459529aa12bc26b3d307a78b1ad64739c",
     "typst/frontmatter.typ": "7bd394358faae7f46ec3c27dbdf35f66b51e6c0567cfc12e2582df8412273057",
     "typst/heraldry.typ": "d6e3ce4c7278db8c7d96e7dc23a2d6abbcfca22915d22f048d85c0fbe69c17f1",
-    "typst/measure.typ": "f3520d5b7081a106da01991acd4bf59b569b51d3c79c5da3d48a2c102093a569"
+    "typst/measure.typ": "83fc38c4a2ebdcc0b2380cf5d2fb55e2d872cdfd262400fe9622bb0c80aec113"
   },
   "generated": {
-    "build/blocks.json": "d619b9aeabf2464b5721ef700e29328ca99811e844bbf4bf4410c68cd78e90d5",
+    "build/blocks.json": "20e44d2c3b7ec3462fd3d22bf2b908c1823bda1b5a40834220a455428d2e3078",
     "build/index.json": "543167d0cf5803031398a6fc018bcd8a483ab524afd5d7bb54d0b3dd9147eddf",
-    "typst/content.typ": "f5a08fd0e87bc0f94b65a12c37cb29e8698196af64461212c05c2cab9b5feabe"
+    "typst/content.typ": "872dbd3155e4e5beccf42230f8fd99a48a75d4b5a91f4c6fbb6a34ab8a49dfa9"
   },
   "pdfs": {
-    "dist/Heraldry_RC491_digital.pdf": "7e2f37c826e394830834d33fd96838d8a003356e77f2124bbad14c52d3313e81",
-    "dist/Heraldry_RC491_inkjet-borderless.pdf": "de199f5aad878c26fdda0a055c04083ce9d25e43f499f4dfd68efde4507d0f6d",
-    "dist/Heraldry_RC491_inkjet-borderless-white.pdf": "666fc645c7a8e4f13ee327e02bcf655ecb4a5ccc6734fd935044e5071c34ccdf",
-    "dist/Heraldry_RC491_covers-front-back.pdf": "f270f0cede31b6efc4307c8a2971d7d6e7ba46b67f89b2ad2cdce16df7edf29b",
-    "dist/Heraldry_RC491_covers-front-back-white.pdf": "9f285ef88b663016ac1ba0fba7caaf68b72a1d885520f69c936e3a2976ab864a",
-    "dist/Heraldry_RC491_inkjet-calibration.pdf": "2b66754ebe34387cd4f2eac5a9353a1e9fd5d1a4cdbd805bc64289969bcd325c"
+    "dist/Heraldry_RC492_digital.pdf": "4928d5df5ee9f7747b000dd9c06f30c4a82961f3fedfc3a4942609d0fe877f0d",
+    "dist/Heraldry_RC492_inkjet-borderless.pdf": "c42ff9afe8104247095b48c0a1cbda0b54a2c0b7c8d5f004bc1b8622e08b54e3",
+    "dist/Heraldry_RC492_inkjet-borderless-white.pdf": "c9a8c2d1ead3a377a46b199904eca2b933b212d5b5300329e347e69fe0903406",
+    "dist/Heraldry_RC492_covers-front-back.pdf": "73246e07b7106cc03a065a07b88188dacfcd34c02598950e32340f8f8af90e86",
+    "dist/Heraldry_RC492_covers-front-back-white.pdf": "4215c9477cef20dec6ff3d51e2f94cfb12ba570fc4289f97e7f637fa31dbfe77",
+    "dist/Heraldry_RC492_inkjet-calibration.pdf": "0723da20bc3f0cd13ef64623c73b7f82e2721f570d286e314ca918ba00b626e5"
   }
 }

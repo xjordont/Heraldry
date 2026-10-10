@@ -129,3 +129,9 @@ Mandatory: every complete fit-capable scenario, section/subsection, table, proce
   - Figure delta review recorded; gate 57/57.
   - Pages 304 and 434 inspected; 19/19 checks PASS; RC491 release ZIP built.
   - No open owner decisions remain from the RC488 audit; the judgement calls B-13..B-17 are left as written.
+- **RC492** (owner, 2026-10-10: "I was wrong to say medium is an ox; please revert to previous size definitions. A briarling would be medium but a basilisk would be large. Remove the awkward ox-sized reference in the flavour text. ... We would either revert it to how it was before or rewrite it ..."):
+  - The Basilisk is coded L, and its flavour drops "the size of an ox". The Briarling stays M.
+  - Undermarches 6 Shadow Brand reverts to the allied Spectre Summon. The orchestrator chose the revert because the bound spirit is a spectre-like undead.
+  - Art size words reverted: M is "about human-sized"; L is "roughly twice a human's height or bulk". The Basilisk brief is now Large.
+  - Figure delta review recorded; gate 57/57.
+  - Pages 280 and 434 inspected; 19/19 checks PASS; RC492 release ZIP built. Physical proof NOT TESTED.
