@@ -1439,7 +1439,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14270-14344; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "d4d0a4cc6d0dc583bd60dd1ba70c508acaaeabe070fef0185204a1c2714fc55d",
+    "svg_sha256": "79c93b404cbd974e8344e31da1da0f0dd0a47819d0b7b130e874255c836c5fd4",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },

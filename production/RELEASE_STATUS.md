@@ -1,9 +1,11 @@
-# Release status — Heraldry Skirmish RC487
+# Release status — Heraldry Skirmish RC488
 
 Active revision and hashes: `source/versions.json`. Current build evidence: `production/build-provenance.json`, `production/qa/STATUS.json` and the scoped visual/figure ledgers. RC484–RC486 remain unchanged.
 
 | Area | Status | Evidence and scope |
 |---|---|---|
+| RC488 owner refinements | PASS | 13 owner-instructed patches: Undead Champion War Maul; Stone Sentinel stone greatsword; Orc and White Court Guard one-handed weapon plus Shield Wall; Scorpion and Frost Giant descriptions; Noxcloth size M; Mire 2 and 5 deploy only Mire creatures. FIG-52 redrawn, independent figure gate 57/57 with 0 open. 597 interior pages, 11 changed pages inspected, 19/19 checks PASS. Basilisk/Medusa cone Gaze awaits an owner decision |
+| Artwork route | ChatGPT Work (owner 2026-10-10) | Queue, prompts and intake workflow ready; 275 planned illustrations; 1 received (Greythorn), none approved or placed yet |
 | Manuscript repairs | COMPLETE | F01–F21 and U01–U06 resolved through one owner-authorized 48-patch batch; exact archived reconstruction and immutable parent hashes verified |
 | Intentional item values | PRESERVED | All 835 printed Cost/Value cells unchanged; development pricing formula/multipliers and quality-table Value columns removed |
 | Repository tests | PASS | 17 regression tests; 8 source preflight checks; locked dependencies installed before CI tests |
