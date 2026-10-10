@@ -1,8 +1,8 @@
 {
   "zip": "dist/Heraldry_RC488_release.zip",
-  "bytes": 165608933,
+  "bytes": 167097635,
   "files": 299,
-  "sha256": "e6ccf86caf885b97d1762548d11acdc6d3cf565761c6948cbcc7b0b4bdf73957",
+  "sha256": "da9e3389feeb9975cc65d98c31319ae71b154137f98df3de7943ef07c818f427",
   "status": "PASS",
   "duplicate_entries": [],
   "checksums_verified": 298,
