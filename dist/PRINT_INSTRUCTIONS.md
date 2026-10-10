@@ -1,10 +1,10 @@
-# Printing HERALDRY SKIRMISH RC486 at home (borderless US Letter)
+# Printing HERALDRY SKIRMISH RC487 at home (borderless US Letter)
 
 Files
-* `Heraldry_RC486_inkjet-borderless.pdf` — interior, warm cream page tone to every edge.
-* `Heraldry_RC486_inkjet-borderless-white.pdf` — identical interior on paper white (use on cream stock or to save ink). Same pages, same page numbers.
-* `Heraldry_RC486_covers-front-back.pdf` (and `-white`) — front cover (page 1) and back cover (page 2), Letter portrait.
-* `Heraldry_RC486_inkjet-calibration.pdf` — one diagnostic sheet. Print it first.
+* `Heraldry_RC487_inkjet-borderless.pdf` — interior, warm cream page tone to every edge.
+* `Heraldry_RC487_inkjet-borderless-white.pdf` — identical interior on paper white (use on cream stock or to save ink). Same pages, same page numbers.
+* `Heraldry_RC487_covers-front-back.pdf` (and `-white`) — front cover (page 1) and back cover (page 2), Letter portrait.
+* `Heraldry_RC487_inkjet-calibration.pdf` — one diagnostic sheet. Print it first.
 
 Settings (application print dialog)
 1. Paper size **Letter**, orientation **portrait**, **one PDF page per sheet**.
