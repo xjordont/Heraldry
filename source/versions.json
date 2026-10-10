@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 488,
+  "current": 489,
   "revisions": [
     {
       "number": 484,
@@ -137,6 +137,51 @@
       ],
       "patch_file": "editorial/history/RC488.json",
       "patch_sha256": "b7b7e55496cd9ac6e2460566cb392089bc0ab1f0195120be811d754f593f6182"
+    },
+    {
+      "number": 489,
+      "path": "source/Heraldry_RC489.md",
+      "sha256": "a28205099f18fe765445cc06f39dbf075c0f96c5511515216a699e88966be486",
+      "bytes": 1453529,
+      "parent_sha256": "9394be77c41ba1c325e84152609abe7d09522a4d9f641121611be8356b5d1305",
+      "created_at": "2026-10-10T15:48:57.031259+00:00",
+      "reason": "Resolve the independent RC488 audit: Forsaken Duelist rapier, flavour/stat-block consistency (Giant Scorpion, Undead Sentinel, Tomb Guardian, Spectre, Ice Wraith, Gloomspore Jelly, Noxcloth, Iron Golem, Bandit), Elder Vrymk melee wording, in-climate creatures in Pale City 3 and 13 secondary objectives, stray None bullets; Deep Elf Priest and Mire 2 Scale-Shaman wield the mundane Quarterstaff",
+      "authorization": "Owner instruction 2026-10-10 in Claude Code session, answering 'Should I apply all 28 as RC489?': 'yes but replace staff with the mundane weapon quarterstaff'",
+      "patch_ids": [
+        "RC489-01",
+        "RC489-02",
+        "RC489-03",
+        "RC489-04",
+        "RC489-05",
+        "RC489-06",
+        "RC489-07",
+        "RC489-08",
+        "RC489-09",
+        "RC489-10",
+        "RC489-11",
+        "RC489-12",
+        "RC489-13",
+        "RC489-14",
+        "RC489-15",
+        "RC489-16",
+        "RC489-17",
+        "RC489-18",
+        "RC489-19",
+        "RC489-20",
+        "RC489-21",
+        "RC489-22",
+        "RC489-23",
+        "RC489-24",
+        "RC489-25",
+        "RC489-26",
+        "RC489-27",
+        "RC489-28",
+        "RC489-29",
+        "RC489-30",
+        "RC489-31"
+      ],
+      "patch_file": "editorial/history/RC489.json",
+      "patch_sha256": "283349954125c0d97e23eb2ce87699cb84e653a944d29f7f65dfc2b16a8718ff"
     }
   ]
 }
