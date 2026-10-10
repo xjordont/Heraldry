@@ -8,7 +8,7 @@ A skill for ChatGPT Work that produces the book's pen-and-ink illustrations from
 2. Paste a start prompt from `OPERATOR_CARD.md`.
 3. After the five anchors are pushed, tell Claude Code to review them and publish the batch queue.
 
-`python scripts/validate_skill.py --repo <clone>` confirms the skill and the repo still agree (reference images, families table, queue, prompt hashes).
+`python production/art/skill/heraldry-classic-ink-art/scripts/validate_skill.py --zip production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip` (run from the repo root) confirms the zip is intact and still agrees with the repo: reference images, families table, queue, prompt hashes.
 
 ## What changed from v3.1, and why
 
@@ -26,7 +26,7 @@ v3.1 is a careful, honest skill for making one illustration per conversation. v4
 | Replay registry | `approved_assets.json` and copy scripts. | Duplicates `SELECTIONS.json`. Its Greythorn JPEG is the same render as the repo's copy but different bytes. | Removed. The repo says what is done. |
 | Ink wording | Allows faint grey; says avoid a yellow cast. | The intake converts to pure ink on transparent, so grey wash is lost. The owner's prompts say warm ivory-white and the approved Greythorn paper is (248, 245, 237). | Ink marks only on flat near-white paper; warm ivory is fine. |
 | Process | One image, no gates. | No anchor gate, resume, commit protocol, receipts or failure handling. | `doctor`, `status`, the anchors stop, 5–10 image batches with receipts, and paths for refusal, quota and no git. |
-| Size | 8,971 words in 25 markdown files. | The rules were hard to find. | About 5,300 words in 8 markdown files. `SKILL.md` is 1,260 words against 1,865, and holds every rule. |
+| Size | 8,971 words in 25 markdown files. | The rules were spread across many files. | About 6,500 words in 8 markdown files. `SKILL.md` is about 2,000 words, slightly longer than v3.1's 1,865, but it is the whole procedure; the other files are reference. |
 
 ## Kept from v3.1
 
@@ -34,8 +34,8 @@ The honest statement of limits; the ink vocabulary (now in `references/STYLE.md`
 
 ## How it was tested
 
-- `tests/test_art_skill.py` runs in `make test`. It covers the tripwire classification on synthetic defects (grey wash, frame, crop, tint, blur, blank, tiny), parity of the colour, mid-tone and border measures with `tools/art_ink.py`, receipts, attempt counting, duplicate detection, the push cadence, the no-git fallback, and a real git state machine with a remote (pending, saved, pushed, redo, refused). It also fails if the zip is older than its sources or the repo's reference images.
-- An independent agent followed the documents literally, with no other knowledge, in a sandbox clone with a local remote and git-lfs. It ran a full anchors session including a retry, an exhausted budget and a refusal. It found 13 document problems and 8 command problems. The ones that mattered are fixed: the abbreviated commands failed from the repo root, `status` asked for a push after every image, a tripwire PASS could be saved without counting the must-show items, attempts were not counted, and previews shared one fixed temp folder.
+- `tests/test_art_skill.py` runs in `make test`. It covers the tripwire classification on synthetic defects (grey wash, frame, crop, tint, blur, blank, tiny), parity of the colour, mid-tone and border measures with `tools/art_ink.py`, receipts, attempt rounds and the budget, the `--accept-flags` rule, look-alike detection, the push cadence, the no-git fallback, a real git state machine with a remote (pending, saved, pushed, redo, refused), and a contract test that the helper's files and receipts are accepted by the real intake tool without warnings. It also fails if the zip is older than its sources or the repo's reference images.
+- An independent agent followed the documents literally, with no other knowledge, in a sandbox clone with a local remote and git-lfs: a full anchors session with a retry, an exhausted budget and a refusal. It found 13 document problems and 8 command problems. After the fixes the same agent re-checked its 27 findings (17 resolved, 9 partly, 1 not) and found 9 problems the fixes had introduced, such as `--accept-flags` working at attempt 1 and a save resetting the attempt count. Those are fixed too. A fresh agent then ran two sessions of the batch phase against a 269-item queue.
 - Nothing has been run against the real image tool yet. The first anchors run is the real test.
 
 ## Limits
@@ -44,6 +44,8 @@ The honest statement of limits; the ink vocabulary (now in `references/STYLE.md`
 - This package cannot confirm that the image tool honours attached references, or that it passes your prompt through unchanged.
 - It cannot confirm that ChatGPT Work has git, git-lfs or Python. `doctor` checks, and `bundle` is the fallback.
 - During the anchors phase the figure anchors have one reference (the owner's figure sample). The batch has up to three.
+- `save` insists on one real-looking statement per must-show line and an avoid-clear attestation, and records them. It cannot check that they are true. Claude Code's review is the check, and a receipt that claims a count the image does not show is itself a finding.
+- The helper cannot stop an operator from rewording a prompt the image tool refused, or from attaching other references. The rules forbid both.
 
 ## Layout
 

@@ -2,7 +2,7 @@
 
 ## Budget
 
-At most the item's `max_attempts` generations (the queue says; usually 3, cover and chapters 5). Never exceed it. The helper counts every distinct image you run through `check`, shows "attempt N of M", and fails an attempt beyond the budget. Stop at the first attempt with no hard fail. After the last allowed attempt save the best one with `--accept-flags` and say in `--notes` what is still wrong. The reviewer can send the item back; you do not need to keep trying.
+At most the item's `max_attempts` generations (the queue says; usually 3, cover and chapters 5). Never exceed it. The helper counts every distinct image you run through `check`, shows "attempt N of M", and fails an attempt beyond the budget. The count carries on through a redo before the push, so the budget covers every generation; it starts afresh only after the saved image has been delivered and sent back. Stop at the first attempt with no hard fail. After the last allowed attempt save the best one with `--accept-flags` and say in `--notes` what is still wrong. The helper refuses `--accept-flags` before that. The reviewer can send the item back; you do not need to keep trying.
 
 An edit through the image tool's own edit or regenerate control counts as an attempt. Never open an image in any other editor.
 

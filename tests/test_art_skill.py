@@ -1,5 +1,5 @@
 """Tests for the ChatGPT Work illustration skill (production/art/skill/heraldry-classic-ink-art)."""
-import contextlib, hashlib, io, json, os, shutil, subprocess, sys, tempfile, unittest, zipfile
+import contextlib, hashlib, io, json, os, shutil, subprocess, sys, tempfile, unittest, warnings, zipfile
 from pathlib import Path
 from unittest import mock
 
@@ -223,7 +223,7 @@ class Runner(Isolated):
         self.assertEqual(code, 0, err + out)
         self.assertEqual([f.name for f in (self.root / "assets/art/incoming").glob("ART-T-BEAST.*")], ["ART-T-BEAST.jpg"])
 
-    def test_save_demands_the_statements_and_accept_flags_demands_notes(self):
+    def test_save_demands_real_statements_one_per_must_line(self):
         img = self.image()
         code, out, err = run(self.root, "save", "ART-T-BEAST", str(img))
         self.assertEqual(code, 2)
@@ -233,19 +233,39 @@ class Runner(Isolated):
         code, out, err = run(self.root, "save", "ART-T-BEAST", str(img), "--must", "Exactly eight legs: counted 8")
         self.assertEqual(code, 2)
         self.assertIn("--avoid-clear", err)
-        self.assertNotIn("one --must", err)
+        self.assertNotIn("exactly one --must", err)
+        for bad in (["--must", ""], ["--must", "ok"], ["--must", "counted 8 legs, 4 a side", "--must", "and a second one that is not wanted"]):
+            code, out, err = run(self.root, "save", "ART-T-BEAST", str(img), *bad, "--avoid-clear")
+            self.assertEqual(code, 2, bad)
+            self.assertIn("--must", err)
         self.assertFalse((self.root / "assets/art/incoming/ART-T-BEAST.png").exists())
-        # an item with no lists needs no statements
+        # an item with no lists needs no statements, and refuses a --must it has no line for
         hero = self.tmp / "hero.png"
         figure_image((1024, 1536)).save(hero)
+        code, out, err = run(self.root, "save", "ART-T-HERO", str(hero), "--must", "counted something")
+        self.assertEqual(code, 2)
+        self.assertIn("no MUST lines", err)
         code, out, err = run(self.root, "save", "ART-T-HERO", str(hero))
         self.assertEqual(code, 0, err)
-        # --accept-flags skips the statements but needs notes
-        code, out, err = run(self.root, "save", "ART-T-BEAST", str(img), "--accept-flags")
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(img), "--must", "counted 8 legs, 4 a side", "--avoid-clear")
+        self.assertEqual(code, 0, err)
+
+    def test_accept_flags_is_only_for_the_last_allowed_attempt_and_marks_the_receipt(self):
+        imgs = [self.image(f"c{i}.png", scale=0.5 + 0.05 * i) for i in range(3)]
+        run(self.root, "check", "ART-T-BEAST", str(imgs[0]))
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(imgs[0]), "--accept-flags", "--notes", "cannot be bothered")
+        self.assertEqual(code, 2)
+        self.assertIn("only for the last allowed attempt", err)
+        self.assertIn("1 of 3", err)
+        for im in imgs[1:]:
+            run(self.root, "check", "ART-T-BEAST", str(im))
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(imgs[2]), "--accept-flags")
         self.assertEqual(code, 2)
         self.assertIn("needs --notes", err)
-        code, out, err = run(self.root, "save", "ART-T-BEAST", str(img), "--accept-flags", "--notes", "legs not countable")
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(imgs[2]), "--accept-flags", "--notes", "legs still not countable")
         self.assertEqual(code, 0, err)
+        rec = json.loads((self.root / "production/art/gpt/RECEIPTS.jsonl").read_text().splitlines()[-1])
+        self.assertEqual((rec["accepted_flags"], rec["accepted_at_attempt"], rec["variants_tried"]), (True, 3, 3))
 
     def test_save_refuses_mechanical_failures_and_unlisted_ids(self):
         bad = self.tmp / "bad.png"
@@ -254,6 +274,9 @@ class Runner(Isolated):
         self.assertEqual(code, 2)
         self.assertIn("mechanical failures", err)
         self.assertFalse((self.root / "assets/art/incoming/ART-T-BEAST.png").exists())
+        for k in (1, 2):                                                       # the budget is 3 attempts
+            Image.new("RGB", (1024, 1024), (250 - k, 248, 240)).save(self.tmp / f"bad{k}.png")
+            run(self.root, "check", "ART-T-BEAST", str(self.tmp / f"bad{k}.png"))
         code, out, err = run(self.root, "save", "ART-T-BEAST", str(bad), "--accept-flags", "--notes", "blank on every attempt")
         self.assertEqual(code, 0, err)
         rec = json.loads((self.root / "production/art/gpt/RECEIPTS.jsonl").read_text().splitlines()[-1])
@@ -281,9 +304,29 @@ class Runner(Isolated):
         code, out, err = run(self.root, "save", "ART-T-BEAST", str(imgs[3]), "--accept-flags", "--notes", "budget spent; best of four")
         self.assertEqual(code, 0, err)
         rec = json.loads((self.root / "production/art/gpt/RECEIPTS.jsonl").read_text().splitlines()[-1])
-        self.assertEqual(rec["variants_tried"], 4)
+        self.assertEqual((rec["variants_tried"], rec["accepted_at_attempt"]), (4, 4))
         self.assertTrue(any("budget" in t for t in rec["tripwires"]))
-        self.assertEqual(ha.attempts_of(self.root, "ART-T-BEAST"), [], "a save starts the item's count afresh")
+        self.assertEqual(len(ha.attempts_of(self.root, "ART-T-BEAST")), 4, "a save does not forget the attempts: the round ends at delivery")
+
+    def test_attempt_count_carries_through_a_redo_before_the_push_and_restarts_after_delivery(self):
+        a, b, c = (self.image(f"{n}.png", scale=s) for n, s in (("a", 0.55), ("b", 0.6), ("c", 0.65)))
+        self.assertIn("attempt 1 of 3", run(self.root, "check", "ART-T-BEAST", str(a))[1])
+        self.assertEqual(save(self.root, "ART-T-BEAST", a)[0], 0)
+        # a drift-review redo before the push is the same round: attempt 2, and the receipt says two generations
+        self.assertIn("attempt 2 of 3", run(self.root, "check", "ART-T-BEAST", str(b))[1])
+        self.assertEqual(save(self.root, "ART-T-BEAST", b)[0], 0)
+        rec = json.loads((self.root / "production/art/gpt/RECEIPTS.jsonl").read_text().splitlines()[-1])
+        self.assertEqual(rec["variants_tried"], 2)
+        self.assertIn("used so far: 2", run(self.root, "show", "ART-T-BEAST")[1])
+        # delivered (the intake recorded these bytes), then sent back: a new round
+        data = (self.root / "assets/art/incoming/ART-T-BEAST.png").read_bytes()
+        (self.root / "production/art").mkdir(parents=True, exist_ok=True)
+        sels = {"ART-T-BEAST": {"status": "received", "master": {"sha256": hashlib.sha256(data).hexdigest()}}}
+        (self.root / "production/art/SELECTIONS.json").write_text(json.dumps(sels))
+        self.assertIn("used so far: 0", run(self.root, "show", "ART-T-BEAST")[1])
+        sels["ART-T-BEAST"]["status"] = "rejected"
+        (self.root / "production/art/SELECTIONS.json").write_text(json.dumps(sels))
+        self.assertIn("attempt 1 of 3", run(self.root, "check", "ART-T-BEAST", str(c))[1])
 
     def test_a_copy_of_another_image_or_a_reference_is_not_a_new_generation(self):
         first = self.image("first.png")
@@ -293,6 +336,42 @@ class Runner(Isolated):
         ref = self.root / "assets/art/style/REF-0.jpg"
         code, out, err = run(self.root, "check", "ART-T-BEAST", str(ref), "--json")
         self.assertTrue(any("byte-identical to assets/art/style/REF-0.jpg" in f for f in json.loads(out)["fails"]))
+
+    def test_a_re_encoded_or_resized_copy_is_flagged_as_a_look_alike(self):
+        import io
+        first = self.image("first.png")
+        self.assertEqual(save(self.root, "ART-T-BEAST", first)[0], 0)
+        with Image.open(first) as im:
+            buf = io.BytesIO()
+            im.convert("RGB").resize((800, 800)).save(buf, "JPEG", quality=60)
+        copy = self.tmp / "copy.jpg"
+        copy.write_bytes(buf.getvalue())
+        hero = queue_item(self.root, "ART-T-HERO")
+        d, where = ha.look_alike(self.root, hero, copy)
+        self.assertLessEqual(d, ha.LOOKALIKE_MAX)
+        self.assertEqual(where, "assets/art/incoming/ART-T-BEAST.png")
+        code, out, err = run(self.root, "check", "ART-T-HERO", str(copy), "--json")
+        self.assertTrue(any("looks almost identical to assets/art/incoming/ART-T-BEAST.png" in w for w in json.loads(out)["warns"]))
+        self.assertIsNone(ha.look_alike(self.root, hero, self.image("scene.png", scene=True)))
+        self.assertIsNone(ha.look_alike(self.root, queue_item(self.root, "ART-T-BEAST"), copy), "an item is never its own look-alike")
+
+    def test_status_at_session_end_with_nothing_unsent_says_so(self):
+        out = run(self.root, "status", "--end")[1]
+        self.assertIn("SESSION END: nothing is unsent", out)
+        self.assertIn("Next session: GENERATE next", out)
+
+    def test_bundle_carries_refusals_and_works_with_only_refusals(self):
+        self.assertEqual(run(self.root, "refuse", "ART-T-HERO", "--reason", "policy")[0], 0)
+        code, out, err = run(self.root, "bundle")
+        self.assertEqual(code, 0, err)
+        z = next((self.tmp / "scratch").rglob("batch_refusals.zip"))
+        lines = zipfile.ZipFile(z).read("receipts_append.jsonl").decode().strip().splitlines()
+        self.assertEqual([(json.loads(x)["id"], json.loads(x).get("refused")) for x in lines], [("ART-T-HERO", True)])
+        self.assertEqual(save(self.root, "ART-T-BEAST", self.image())[0], 0)
+        run(self.root, "bundle")
+        z2 = next((self.tmp / "scratch").rglob("batch_ART-T-BEAST__ART-T-BEAST.zip"))
+        got = {json.loads(x)["id"] for x in zipfile.ZipFile(z2).read("receipts_append.jsonl").decode().strip().splitlines()}
+        self.assertEqual(got, {"ART-T-BEAST", "ART-T-HERO"})
 
     def test_check_repeats_the_lists_and_names_the_helper_in_messages(self):
         code, out, err = run(self.root, "check", "ART-T-BEAST", str(self.image()))
@@ -490,7 +569,8 @@ class GitStates(Isolated):
             self.assertIn("1 saved and not sent yet", one)
             self.assertNotIn("COMMIT AND PUSH", one)
             end = run(root, "status", "--end")[1]
-            self.assertIn("COMMIT AND PUSH", end)
+            self.assertIn("DRIFT REVIEW, THEN COMMIT AND PUSH", end)
+            self.assertIn("sheet --refs", end)
             self.assertIn("art(gpt): ART-T-SCENE .. ART-T-SCENE", end)
             self.assertIn("git lfs ls-files", end)
             self.assertEqual(save(root, "ART-T-BEAST", self._img())[0], 0)
@@ -514,6 +594,72 @@ class GitStates(Isolated):
         code, out, err = run(root, "bundle")
         self.assertEqual(code, 2)
         self.assertIn("nothing unsent", err)
+
+
+class IntakeContract(Isolated):
+    def test_helper_files_and_receipts_are_accepted_by_the_real_intake_without_warnings(self):
+        """What `save` writes must be exactly what tools/art_intake.py scan expects: a matching prompt hash, no warnings."""
+        import argparse
+        import art_generate as g, art_gpt_pack as pack, art_intake
+        root = self.tmp / "repo"
+        (root / "assets/art/incoming").mkdir(parents=True)
+        for refs in g.CFG["gpt_reference_sets"]["sets"].values():
+            for cand in refs:
+                if "/" in cand:
+                    (root / cand).parent.mkdir(parents=True, exist_ok=True)
+                    figure_image((600, 400)).save(root / cand)        # real images: the intake also processes incoming/ART-BAS-GREYTHORN.jpg
+        ents = {e["id"]: e for e in g.entries()}
+        queue, prompts = pack.build_queue("anchors", ents, {}, {}, root=root)
+        gpt = root / "production/art/gpt"
+        (gpt / "prompts").mkdir(parents=True)
+        for iid, text in prompts.items():
+            (gpt / "prompts" / f"{iid}.txt").write_text(text + "\n")
+        (gpt / "QUEUE.json").write_text(json.dumps(queue))
+        item = next(i for i in queue["items"] if i["id"] == "ART-MON-GIANT-TARANTULA")
+        img = self.tmp / "tarantula.png"
+        figure_image((1024, 1024)).save(img)
+        code, out, err = save(root, item["id"], img, "--model", "GPT Images 2.5")
+        self.assertEqual(code, 0, err + out)
+        self.assertEqual(run(root, "refuse", "ART-CLA-FIGHTER", "--reason", "policy")[0], 0)
+        with mock.patch.multiple(art_intake, ROOT=root, INCOMING=root / "assets/art/incoming", RECEIPTS=gpt / "RECEIPTS.jsonl",
+                                 REVIEW=root / "production/art/review"), \
+                mock.patch.multiple(g, INK=root / "assets/art/ink", SELECTIONS=root / "production/art/SELECTIONS.json"):
+            with contextlib.redirect_stdout(io.StringIO()), warnings.catch_warnings():
+                warnings.simplefilter("ignore", ResourceWarning)           # art_intake.scan leaves its own files open
+                art_intake.scan(argparse.Namespace())
+            sels = g.load(g.SELECTIONS, {})
+        s = sels[item["id"]]
+        self.assertEqual(s["status"], "received")
+        self.assertEqual(s["intake_warnings"], [], "the receipt hash and the aspect must satisfy the intake")
+        self.assertEqual(s["prompt_sha256"], item["prompt_sha256"])
+        self.assertEqual((s["surface"], s["model"]), ("ChatGPT Work", "GPT Images 2.5"))
+        self.assertNotIn("ART-CLA-FIGHTER", sels, "a refusal line is not an image")
+
+
+class ValidatorCli(unittest.TestCase):
+    ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip"
+    SCRIPT = SKILL / "scripts/validate_skill.py"
+
+    def run_cli(self, *args, cwd=ROOT):
+        r = subprocess.run([sys.executable, str(self.SCRIPT), *args], cwd=cwd, capture_output=True, text=True)
+        return r.returncode, json.loads(r.stdout)
+
+    def test_source_folder_is_explained_not_a_wall_of_errors(self):
+        code, out = self.run_cli()
+        self.assertEqual(code, 1)
+        self.assertEqual(len(out["errors"]), 1)
+        self.assertIn("skill source, not a built package", out["errors"][0])
+        self.assertEqual(out["repo_checks"], "skipped: not a built package")
+
+    @unittest.skipUnless(ZIP.is_file() and (ROOT / "assets/art/style").is_dir(), "needs the zip and the repo images")
+    def test_zip_validates_with_the_repo_found_automatically_or_skipped_outside_one(self):
+        code, out = self.run_cli("--zip", str(self.ZIP))
+        self.assertEqual((code, out["status"], out["repo_checks"]), (0, "PASS", "done"))
+        self.assertEqual(Path(out["repo"]), ROOT)
+        with tempfile.TemporaryDirectory() as tmp:
+            code, out = self.run_cli("--zip", str(self.ZIP), cwd=tmp)
+            self.assertEqual((code, out["status"], out["repo"]), (0, "PASS", None))
+            self.assertIn("skipped", out["repo_checks"])
 
 
 class SkillSources(unittest.TestCase):
