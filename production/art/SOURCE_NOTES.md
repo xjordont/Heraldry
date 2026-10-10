@@ -24,11 +24,11 @@ The owner's requested 8" cone Gaze was not applied. Owner decision, 2026-10-10: 
 
 The independent audit (production/qa/rc488-audit-manuscript.json): Forsaken Duelist; Giant Scorpion; Undead Sentinel; Tomb Guardian; Spectre and Ice Wraith; Gloomspore Jelly (now "the size of a man"); Noxcloth; Iron Golem; Bandit; Elder Vrymk; Pale City 3 and the secondary objectives; Deep Elf Priest and Scale-Shaman Quarterstaff.
 
-## Resolved in RC491 (owner decision 2026-10-10)
+## Resolved in RC491 and RC492 (owner decisions 2026-10-10)
 
-- The Desert Naga's flavour now reads "hexing the strong into an unnatural sleep", matching Hexscale.
-- Undermarches 6 Shadow Brand: the allied Spectre Summon becomes an allied **Noxcloth** Summon, a living shadow and the closest Undermarches match.
-- Size: owner ruling "Medium is ox-sized". Sizes are footprint categories; the art convention for M is human-sized up to ox-sized, so the Basilisk ("ox") and Briarling ("hound") stay M.
+- The Desert Naga's flavour now reads "hexing the strong into an unnatural sleep", matching Hexscale (RC491).
+- Undermarches 6 Shadow Brand: RC491 changed the allied Spectre Summon to a Noxcloth. The owner pointed out that this broke the scenario's sense: the bound spirit is a spectre-like undead. RC492 reverts it to **1 allied Spectre Summon**.
+- Size: the RC491 ruling "Medium is ox-sized" was withdrawn by the owner ("I was wrong to say medium is an ox"). The art size words are back to M "about human-sized" and L "roughly twice a human's height or bulk". In RC492 the Basilisk is coded **L** and its flavour drops "the size of an ox". The Briarling stays M.
 
 ## Left as written
 

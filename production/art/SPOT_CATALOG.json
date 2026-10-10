@@ -1,5 +1,5 @@
 {
- "source_sha256": "545184806715afdcdaa79d98ee49d721c74ec944ff3511573a8ff32d75c46c4d",
+ "source_sha256": "a5ca7e72ad05a0cd69bb0bdca8238c10a635cf18345ae719c047c42fd3a8552a",
  "counts": {
   "cover": 1,
   "chapter": 11,
@@ -5436,21 +5436,21 @@
     "9.7 The Bestiary",
     "Ashlands Bestiary"
    ],
-   "flavour": "Heavy and eight-legged and the size of an ox, the basilisk drags itself through the Ashlands' rubble behind a gaze that turns flesh slowly to stone. Meet its eyes and the stiffening starts, the limbs first, then the rest. Even its blood petrifies whatever it touches. The ruins are dotted with its leavings, statues of the surprised, caught mid-stride.",
+   "flavour": "Heavy and eight-legged, the basilisk drags itself through the Ashlands' rubble behind a gaze that turns flesh slowly to stone. Meet its eyes and the stiffening starts, the limbs first, then the rest. Even its blood petrifies whatever it touches. The ruins are dotted with its leavings, statues of the surprised, caught mid-stride.",
    "facts": {
     "role": "Elite",
-    "size_code": "M"
+    "size_code": "L"
    },
    "src_lines": [
     8471,
     8471
    ],
    "brief": {
-    "identity": "Basilisk, Ashlands Elite, medium: an ox-sized, heavy, eight-legged reptile whose gaze slowly turns flesh to stone.",
+    "identity": "Basilisk, Ashlands Elite, large: a heavy, eight-legged reptile roughly twice a human's bulk whose gaze slowly turns flesh to stone.",
     "composition": "Three-quarter view of the basilisk dragging itself forward over a little rubble, head raised and turned toward the viewer with a fixed, unblinking petrifying stare; beside its forefoot lies one stone foot and shin, broken off in mid-stride.",
     "details": [
      "Eight reptilian legs, four a side",
-     "Heavy lizard body the size of an ox",
+     "Heavy, low lizard body far bulkier than a man",
      "Wide blunt head with heavy brow and large, pale, unblinking eyes fixed in a petrifying stare",
      "Rough scaled hide with bony ridges",
      "Crawling pose with belly near the ground",
@@ -5471,7 +5471,7 @@
      "9.7 The Bestiary, Ashlands Bestiary: Basilisk [Elite] (Petrifying Gaze, AI Step 1)"
     ]
    },
-   "spec_sha256": "5064f2c3e2c0d347c864b2718d35cfe9e2b173fcf804b6106be713b4ff72cae9"
+   "spec_sha256": "c1b5b0133ce6d011443b07157a62e6aef18613eb363b413a8a6debf0acb99f21"
   },
   {
    "id": "ART-MON-ASHEN-REVENANT",

@@ -2787,7 +2787,7 @@ BEASTMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Beastman, Greenmark Minion, medium: a hunched man-shape topped with the head of a goat or boar, black claws, a forest-edge warband raider, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Full figure in three-quarter view, bent forward and running, both clawed hands spread wide, head low.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Goat head with swept-back horns, slotted pupils and a beard
 * Heavy shaggy fur over a hunched human frame
@@ -2815,7 +2815,7 @@ BANDIT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Bandit, Greenmark Soldier, medium: a deserter or broken tithe-collector turned forest raider, fighting with shortbow from cover and shortsword up close, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Full figure in three-quarter view crouched low on one knee, shortbow at half-draw, shortsword laid on the ground within reach.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Mismatched scavenged armour: a cracked leather jerkin, one iron pauldron
 * Shortbow at half-draw with an arrow nocked
@@ -2843,7 +2843,7 @@ SATYR REVELER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Satyr Reveler, Greenmark Controller, medium: a goat-legged laurel-crowned fey piper whose music floods listeners with terror or lulls them, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Full figure in three-quarter view capering on one hoof, pipes at the lips, curved knife thrust in the belt, firelight raking one side.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Goat legs with cloven hooves and shaggy thighs
 * Curled ram-like horns and pointed ears
@@ -2871,7 +2871,7 @@ BRIARLING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Briarling, Greenmark Minion, medium-sized: a hound-sized knot of animate thornwood on root-claws, a spent first line of the Antlered Warden's groves, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Low side view of the creature scuttling forward on root-claws with its barbed back bristling, head down.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Body of twisted tangled wood strands with barbs
 * Six spindly legs ending in root-claws
@@ -2899,7 +2899,7 @@ DIRE WOLF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Dire Wolf, Greenmark Skirmisher, medium: a pony-sized yellow-eyed pack hunter that cuts prey from the herd, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Low three-quarter view of the wolf stalking forward in a crouch, head lowered, hackles raised.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Shoulder as high as a pony, heavy powerful forequarters
 * Scarred hide with torn ear and a notch in the muzzle
@@ -2928,7 +2928,7 @@ ORC - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Orc, Greenmark Soldier, medium: a broad, disciplined, grey-skinned raider with lower tusks, armed with battleaxe and shield, a warband member that holds formation, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Full figure in three-quarter view mid-snarl, advancing with a heavy round shield raised on the forearm and a notched battleaxe raised in the other hand, trophies swinging from the belt.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Broad as a doorway, grey skin, heavy jaw, lower tusks jutting upward
 * One-handed battleaxe with a broad notched blade
@@ -2958,7 +2958,7 @@ BUGBEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Bugbear, Greenmark Soldier, medium: a seven-foot, shaggy, long-armed ambusher with a flat face and a spiked morningstar, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Full figure in three-quarter view rising out of bracken, long arm already swinging a spiked morningstar from arm's reach.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * A head and more taller than a man, arms reaching to the knees
 * Shaggy fur the colour of dead bracken, drawn in long hatch lines
@@ -2986,7 +2986,7 @@ HARPY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Full figure in three-quarter view crouched on a single fallen block of stone, wings half-spread, head thrown back mid-song, one talon gripping the stone and the other clawed forward.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Woman's torso and face with ragged hair, hollow cheeks
 * Large carrion-bird wings, ragged feathers, long primaries
@@ -3046,7 +3046,7 @@ BANDIT CAPTAIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Bandit Captain, Greenmark Elite, medium: a commissioned-or-claiming leader in looted mail wielding a longsword and a heavy crossbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Full figure in three-quarter view standing with longsword levelled forward to command, heavy crossbow slung at the hip, cloak hanging from the shoulders.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Looted mail hauberk with mismatched officer's pauldron
 * Longsword with a fine crossguard and a chipped blade
@@ -3075,7 +3075,7 @@ DIRE BEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Dire Bear, Greenmark Brute, large: a shaggy mountain of muscle twice a man's height, mauling with forepaws and a shield-splitting bite, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the bear reared on its hind legs, forepaws raised and swinging down, jaws open; a small human figure near its feet, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Twice a man's height when reared
 * Huge shaggy hide with matted fur strokes
@@ -3103,7 +3103,7 @@ BLOOD APE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Blood Ape, Greenmark Soldier, medium: a slab-shouldered crimson-furred canopy ape that drops onto prey and hammers with both fists, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the ape landing from a drop in a crouch on one knuckled fist, other fist cocked back to pummel.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Massive shoulders, long arms, short bowed legs
 * Dense dark fur (rendered with heavy hatching) streaked with red wounds shown as pale gaps
@@ -3131,7 +3131,7 @@ GOREBEAK BEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Gorebeak Bear, Greenmark Brute, large: a stitched-looking horror with a bear's body and a great owl's head and foreclaws, with a plate-punching hooked beak, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the creature charging low, head thrust forward, hooked beak open, foreclaws raking out; a small human figure near its forefoot, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Bear's heavy body and hind legs
 * Great owl's head with a facial disk, round eyes and a hooked beak
@@ -3159,7 +3159,7 @@ OGRE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Ogre, Greenmark Brute, large: a twice-man-height, slope-shouldered grey slab of muscle in stitched hides, claiming a ford with a tree-trunk great club, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view standing calf-deep in a small patch of ford water, great club resting on the shoulder, one hand held out for a toll; a small human figure at the water's edge, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Twice a man's height, slope-shouldered, with a heavy gut
 * Grey skin, bald head, small eyes, underbite
@@ -3187,7 +3187,7 @@ DRYAD GROVEWARDEN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Dryad Grovewarden, Greenmark Controller, medium: a bark-skinned fey tree-spirit crowned in living branches that binds intruders with roots, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Full figure in three-quarter view striding forward, staff extended, roots snaking from its feet into the ground.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Bark-textured skin and a woman-shaped body
 * Crown of living branches and leaves
@@ -3215,7 +3215,7 @@ FOREST TROLL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Forest Troll, Greenmark Brute, large: a gangling moss-slick bog-edge brute with reaching arms and broken tusks whose wounds knit shut, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the troll lurching forward with both long arms reaching, mouth agape; a small human figure near its feet, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Gangling build, long arms, hunched back
 * Moss patches clinging to slick skin
@@ -3243,7 +3243,7 @@ WEREWOLF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Werewolf, Greenmark Elite, medium: a haunted villager's cursed form, a hunched grey wolf-man killer that strikes from the treeline, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the beast striding upright, claws spread, torn villager's shirt still hanging.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Upright hunched wolf-man with a lupine head and long muzzle
 * Shaggy grey fur rendered with long hatch
@@ -3299,7 +3299,7 @@ UNDEAD WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Warrior, Ashlands Minion, medium: a half-rotted corpse in rusted old-empire kit holding its post in the ash, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the corpse standing at its post, rectangular shield forward and short sword at the ready, ash drifting at its feet.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Half-rotted corpse: leathery skin and exposed ribs, not a bare skeleton
 * Rusted imperial legion kit: segmental armour, plain helm
@@ -3327,7 +3327,7 @@ UNDEAD CROSSBOWMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Crossbowman, Ashlands Cannon, medium: a dead marksman cranking a warped windlass with fleshless fingers in the rear of a battle-line, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the figure with a boot in the stirrup, cranking the windlass, crossbow aimed at an unseen mark.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Fleshless skeletal fingers on the windlass handle
 * Crossbow with a warped stock and iron prod
@@ -3354,7 +3354,7 @@ GHOUL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Ghoul, Ashlands Minion, medium: a grey, gaunt, hook-clawed corpse-eater with a paralytic bite that hunts tombs in packs, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Low three-quarter view of the ghoul loping forward on two legs and one knuckled hand, head forward, jaws opened.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Grey stretched skin over visible ribs and spine
 * Long hook claws on each finger
@@ -3382,7 +3382,7 @@ POSSESSED CORPSE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Possessed Corpse, Ashlands Minion, medium: a body worn by something from the dark between worlds, lurching toward a jerking purpose, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Full figure in three-quarter view lurching forward with arms outstretched, head lolling to one side.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Body in a tattered shroud or peasant clothes
 * Head tilted at a wrong angle
@@ -3466,7 +3466,7 @@ SPECTRE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Spectre, Ashlands Controller, medium: grief and rage without a body, a flying incorporeal dead thing that drinks warmth and years by touch, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the spectre drifting forward in mid-air, one hand reaching forward to touch, its trailing edge thinning to nothing.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Burned-away body fading into long tapering hatch strokes
 * Burn-scorched shreds of a robe or cloak trailing
@@ -3494,7 +3494,7 @@ UNDEAD SENTINEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Sentinel, Ashlands Soldier, medium: a tall, gaunt dead gate-guard in iron helm with a reach-halberd, who holds a breach forever, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Frontal three-quarter view of the sentinel planted squarely on rubble-strewn ground, reach-halberd held upright in both hands, butt grounded.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Tall, gaunt dead soldier of human size
 * Halberd with a long haft and broad blade, held in both hands
@@ -3522,7 +3522,7 @@ UNDEAD CHAMPION - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Champion, Ashlands Soldier, medium: a slab of dead muscle raised from the largest corpses, swinging a two-handed war maul of fused bone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the champion trudging forward, the war maul hauled back over one shoulder in both hands, ready to fall with siege-engine weight.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Huge, bloated shoulders and a thick neck with dead pale skin
 * Two-handed war maul whose massive head is a knot of fused bone bound in iron bands on a long haft
@@ -3552,7 +3552,7 @@ GARGOYLE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Gargoyle, Ashlands Skirmisher, medium: a stone guardian that looks like statuary until prey strays beneath it; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the creature crouched on a single fallen cornice block, wings half-open, one clawed hand gripping its edge and head turned down toward the viewer.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Grey stone-textured skin with chisel marks
 * Bat-like stone wings
@@ -3581,7 +3581,7 @@ STONE SENTINEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Stone Sentinel, Ashlands Brute, medium: a faceless granite construct of the old empire that hews with a greatsword of carved stone and cannot be pushed, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the sentinel striding forward, a two-handed greatsword of carved stone raised in both blocky fists.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Blocky humanoid made of carved granite plates
 * Smooth faceless head with no features
@@ -3609,7 +3609,7 @@ MINOTAUR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Minotaur, Ashlands Elite, large: a bull-headed giant of labyrinthine ruins that charges head-down to gore then wades in with a greataxe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the minotaur charging head-down, horns lowered, greataxe swung low in one hand; a small human figure in its path, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Bull's head with large curved horns and a ring through the nose
 * Massive muscular human torso and thick bull neck
@@ -3637,7 +3637,7 @@ NIGHT HAG - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Night Hag, Ashlands Controller, medium: a withered crone of the between-places who curses the sleeping and steps half into the ether, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the hag stepping half out of the shadow, one claw extended, lower body dissolving into hatching.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Withered crone with sunken cheeks and a long nose
 * Long cursed claws on one hand
@@ -3665,7 +3665,7 @@ FORSAKEN ARCHER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Archer, Ashlands Cannon, medium: an oath-bound dead marksman of the empire's finest, drawing a cursed longbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view at full draw, cursed longbow bent, barbed arrow aimed, feet planted on a patch of broken paving.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Finest imperial gilt scale armour, rotted and tarnished
 * Plumed helm in decay, hollow face
@@ -3695,7 +3695,7 @@ FORSAKEN KNIGHT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Knight, Ashlands Soldier, medium: dead chivalry in spectral plate with a flamberge wreathed in grave-light, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the knight advancing through ash, flamberge held two-handed low, plate cloak in tatters.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Full gothic plate in ghostly worn pale tones
 * Flamberge: a long two-handed wavy-edged blade
@@ -3722,7 +3722,7 @@ FORSAKEN DUELIST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Duelist, Ashlands Skirmisher, medium: the empire's finest fencer, dead and tireless, with a single flashing rapier, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the duelist in an en garde stance, rapier extended, back arm raised for balance, slipping a blow.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Slender build with a fencer's stance
 * Single slender rapier with a swept hilt
@@ -3747,13 +3747,13 @@ Do not draw:
 
 ```text
 BASILISK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Basilisk, Ashlands Elite, medium: an ox-sized, heavy, eight-legged reptile whose gaze slowly turns flesh to stone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Basilisk, Ashlands Elite, large: a heavy, eight-legged reptile roughly twice a human's bulk whose gaze slowly turns flesh to stone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the basilisk dragging itself forward over a little rubble, head raised and turned toward the viewer with a fixed, unblinking petrifying stare; beside its forefoot lies one stone foot and shin, broken off in mid-stride.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Eight reptilian legs, four a side
-* Heavy lizard body the size of an ox
+* Heavy, low lizard body far bulkier than a man
 * Wide blunt head with heavy brow and large, pale, unblinking eyes fixed in a petrifying stare
 * Rough scaled hide with bony ridges
 * Crawling pose with belly near the ground
@@ -3763,7 +3763,7 @@ Must be shown exactly:
 * Exactly eight legs, four a side
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
-"Heavy and eight-legged and the size of an ox, the basilisk drags itself through the Ashlands' rubble behind a gaze that turns flesh slowly to stone. Meet its eyes and the stiffening starts, the limbs first, then the rest. Even its blood petrifies whatever it touches. The ruins are dotted with its leavings, statues of the surprised, caught mid-stride."
+"Heavy and eight-legged, the basilisk drags itself through the Ashlands' rubble behind a gaze that turns flesh slowly to stone. Meet its eyes and the stiffening starts, the limbs first, then the rest. Even its blood petrifies whatever it touches. The ruins are dotted with its leavings, statues of the surprised, caught mid-stride."
 Heavy, patient dread.
 Do not draw:
 * No statues or petrified figures beyond the single stone foot.
@@ -3781,7 +3781,7 @@ ASHEN REVENANT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Ashen Revenant, Ashlands Elite, medium: a corpse-warrior in fire-blackened plate driven by one grudge, clawing upright after being struck down, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the revenant rising from one knee, one fist on the ground, grave cleaver raised in the other hand.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Fire-blackened cracked plate armour
 * Heavy grave cleaver with a broad blade
@@ -3809,7 +3809,7 @@ IRON GOLEM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Iron Golem, Ashlands Brute, large: a towering automaton of riveted black iron with piledriver fists, still on guard for a long-dead king, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the golem looming with both massive fists raised to slam down; a small human figure before it, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Riveted black iron plates over a humanoid frame
 * Slit visor with no face
@@ -3838,7 +3838,7 @@ LICH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Lich, Ashlands Elite, medium: a desiccated sorcerer-king in mouldering finery who commands the dead and flies a little above the floor, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the lich hovering over the floor, one skeletal hand reaching forward to touch.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Desiccated body with leathery skin on a thin frame
 * Tarnished crown on a skull face
@@ -3923,7 +3923,7 @@ GIANT BAT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Bat, Undermarches Minion, large: a leathery-winged cave bat wider than a man is tall that swoops, bites and wheels away; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view from below of the bat in a swooping pass, wings spread wide, jaws open; a small human figure ducking on the ground below, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Wingspan wider than a man is tall: two long membrane wings with finger bones
 * Furred body, large ears, folded nose leaf
@@ -3953,7 +3953,7 @@ VAULTFANG - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Vaultfang, Undermarches Cannon, medium: a mottled stone-hard chitin cone that mimics a stalactite and drops once, point first, through helm and skull, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Vertical view of the creature in its drop: a single stone-like cone falling point first, tiny gripping claws still splayed at its top where it let go, a few flakes of rock falling with it, its narrow shadow on a small patch of cave floor below.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * A single cone-shaped body mottled like stone
 * Ridged chitin plates banding the cone
@@ -4009,7 +4009,7 @@ NOXCLOTH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Noxcloth, Undermarches Controller, medium: a fold of black leathery hide the size of a flung cloak that hangs from the cavern roof and drops to smother the head; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view from below of the flat cloak-like creature dropping through the air, edges billowing open to smother.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * A cloak-shaped fold of black leathery skin with a trailing hem
 * Ragged edges and a ridge of muscle
@@ -4037,7 +4037,7 @@ TROGLODYTE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Troglodyte, Undermarches Soldier, medium: a grey, crested reptilian cave-dweller whose skin shifts colour to vanish against stone, fighting claws first, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the troglodyte stalking forward with both claws spread, one flank of its hide fading into a stone-like mottle as it shifts colour.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Grey scaly hide, head crest, lizard muzzle
 * Two clawed hands, long and hooked
@@ -4095,7 +4095,7 @@ GLOOMSPORE JELLY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Gloomspore Jelly, Undermarches Brute, medium: a man-sized translucent grey ooze that creeps over every surface and dissolves what it touches, leaving scoured tunnels, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Low side view of the jelly creeping over a heap of bones and a rusted helm, a pseudopod reaching ahead.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Translucent grey mound, glistening
 * Pseudopod extended like a blunt arm
@@ -4124,7 +4124,7 @@ TROGLODYTE SHAMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Troglodyte Shaman, Undermarches Controller, medium: a grey crested cave reptile daubed in glowing fungus, hexing with a bone club, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Full figure in three-quarter view crouched low, bone club in one hand, other hand throwing hex-spit, fungus daubs on its hide.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Crested grey reptilian head and body
 * Fungus daubs on skin and a necklace of mushroom caps
@@ -4152,7 +4152,7 @@ VAULT OOZE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Vault Ooze, Undermarches Brute, medium: a near-invisible cube of acidic slime that fills a corridor wall to wall, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of a clear cube-shaped mass of slime resting on a small patch of flagstones, a swallowed lantern and bones suspended within it, a pseudopod pushing forward at one corner.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * A clear cube outlined by faint shimmering lines
 * Tall as a doorway and broad enough to fill a passage from side to side
@@ -4181,7 +4181,7 @@ VRYMK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Vrymk, Undermarches Skirmisher, medium: a stone-grey tangle of rubbery tentacles around a hooked beak, no broader than a crouching man, clinging to cavern walls, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the creature clinging to a single boulder, camouflaged against it, several tentacles lashing out and one pulling toward the beak.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Writhing mass of eight rubbery tentacles with suction marks
 * Central hooked beak, parrot-like
@@ -4211,7 +4211,7 @@ DEEP ELF WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Deep Elf Warrior, Undermarches Skirmisher, medium: a coldly beautiful, merciless deep elf raider who fights with a poisoned hand crossbow and a finesse shortsword and sees perfectly in the dark, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the warrior advancing in a low, poised step, drawn shortsword held forward in one hand and a small hand crossbow raised in the other.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Light, close-fitted dark armour of fine plates with a spidery decorative pattern
 * Slender finesse shortsword, drawn
@@ -4239,7 +4239,7 @@ DEEP ELF PRIEST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Deep Elf Priest, Undermarches Controller, medium: a black-silk-robed priest of the deep spider-gods who weaves darkness, bends wills with a spoken command and drives warriors on, armed with a plain quarterstaff, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the priest in layered dark vestments, a plain wooden quarterstaff gripped in both hands, mouth open in a spoken command, conjured darkness coiling around its feet.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Layered black silk vestments with bone fetishes
 * Plain wooden quarterstaff, a long two-handed fighting staff, iron-shod at most
@@ -4271,7 +4271,7 @@ GLOOM HULK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Gloom Hulk, Undermarches Brute, large: a bull-sized, beetle-backed digger with great scything claws and four eyes that scramble the mind, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the hulk heaving itself up out of broken ground in a shower of rubble, scything claws raised, four eyes in two pairs on the blunt face; a small human figure reeling before it, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Beetle shell back with segmented plates
 * Four eyes in two pairs on a blunt head
@@ -4300,7 +4300,7 @@ CRYPTSTRANGLER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Cryptstrangler, Undermarches Controller, large: a stalagmite-like stony predator taller than a man whose sticky tendrils fling across a chamber, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the stalagmite-like creature standing alone on a patch of cave floor, tendrils shooting out, one sticky strand wrapped round the ankle of a small human figure being reeled in, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Cone-shaped stony body taller than a man
 * Tendrils sprouting from its sides like long strands
@@ -4328,7 +4328,7 @@ ELDER VRYMK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Elder Vrymk, Undermarches Elite, large: the eldest of a vrymk brood, a monstrous knot of leg-thick stone-grey tentacles around a plate-shearing beak, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Wide three-quarter view of the elder squatting over a heap of clean bones, tentacles thick as a man's leg lashing out, one curling toward a small human figure at its edge, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Tentacles thick as a man's leg, ridged with suckers
 * Huge central beak that shears plate
@@ -4356,7 +4356,7 @@ EVIL EYE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Evil Eye, Undermarches Elite, large: a floating orb of leathery flesh with one great central eye and a crown of writhing eyestalks, with an antimagic aura; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Frontal three-quarter view of the orb drifting above a small patch of cave floor, central eye wide open, four eyestalks writhing; a small human figure below, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Round floating orb of leathery, wrinkled flesh
 * One great central eye with a solid black pupil
@@ -4385,7 +4385,7 @@ BURROWMAW - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Burrowmaw, Undermarches Brute, large: a wagon-sized armour-plated horror with a blunt head and a face-splitting maw that swims through stone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the burrowmaw erupting from a stone floor, jaws splitting its face open, rubble flying; a small human figure thrown off balance at the edge of the broken floor, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Wagon-sized armoured plated body
 * Blunt head with the whole face opening like a four-part maw
@@ -4413,7 +4413,7 @@ THOUGHT-EATER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Thought-Eater, Undermarches Elite, medium: a robed humanoid with an octopus head, four tentacles and white pupilless eyes that feeds on minds, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the creature standing upright, one webbed hand raised toward the viewer, tentacles flowing from its head.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Octopus-like head with four tentacles hanging
 * White pupilless eyes
@@ -4443,7 +4443,7 @@ FROZEN SKELETON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Frozen Skeleton, Pale City Minion, medium: a frost-rimed skeleton standing its post, sword welded to its hand by ice, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the skeleton standing in drifted snow, sword frozen to its hand, icicles hanging from the ribs.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Bare skeleton, not flesh
 * Frost rime on every bone shown with dense stipple and hatch
@@ -4526,7 +4526,7 @@ TUNDRA WOLF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Tundra Wolf, Pale City Skirmisher, medium: a white-coated wolf built for the killing cold that runs in herding packs over ice, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Side three-quarter view of the wolf padding across wind-scoured ice at a loping run, head level, breath trailing.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Thick white coat (rendered by leaving paper white with fine outlines and a few shadow lines)
 * Long legs and wide paws suited to ice
@@ -4582,7 +4582,7 @@ WHITE COURT GUARD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Guard, Pale City Soldier, medium: a frost-armoured noble corpse of the undead court's rank and file, bearing longsword and shield, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Frontal three-quarter view of the guard standing in drill position on a patch of packed snow, kite shield braced forward, longsword held upright at the shoulder.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Ornate courtly armour with engraved fluting and gilt scrolls, frosted
 * Frozen fur mantle over the shoulders
@@ -4639,7 +4639,7 @@ FROST GHOUL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Ghoul, Pale City Minion, medium: a ghoul frozen and reborn in the cold, claws sheathed in frost, hunting in packs through snow-choked streets, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Low three-quarter view of the ghoul crawling over a snowdrift, frost-sheathed claws forward, jaw open.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Pale grey skin stretched on a gaunt body
 * Claws encased in ice crystals
@@ -4668,7 +4668,7 @@ WHITE COURT ARCHER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Archer, Pale City Cannon, medium: a dead marksman of the frozen balconies loosing ice-fletched arrows from a frostbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the archer standing on a patch of ice-glazed paving, frostbow at full draw, quiver overflowing.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Courtly light armour with frost and engraved lines
 * Tall composite frostbow with icicle-like tips
@@ -4696,7 +4696,7 @@ BLACKFIRE HOUND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Blackfire Hound, Pale City Skirmisher, medium: a charred beast-shape with cold black flame guttering along its spine that leaves a trail of smouldering ash, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Side three-quarter view of the hound bounding over snow, black flame along the spine, a short line of smouldering ash marks at its heels.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Charred hound body, lean ribs showing
 * Flame rendered as black hatched tongues along the spine
@@ -4724,7 +4724,7 @@ ICE WRAITH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Ice Wraith, Pale City Cannon, medium: a knife-like translucent drifting spirit of someone who froze to death, hungry for warmth; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the wraith gliding forward in the air, one long arm reaching out with a frost-touch.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Body tapering to a knife-like point
 * Translucent shape drawn with open outlines and sparse lines
@@ -4752,7 +4752,7 @@ WHITE COURT SENTINEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Sentinel, Pale City Brute, medium: the dead nobility's corpse-knight bodyguard, crouched within an enormous greatshield, ornate visored helm, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the sentinel crouched low, an enormous greatshield covering most of its body, one visored eye slit peeking over the top.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Enormous greatshield, almost body-length, scarred with frost and old dents
 * Ornate visored helm with a high crest
@@ -4779,7 +4779,7 @@ ICE ELEMENTAL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Ice Elemental, Pale City Controller, large: a lurching jagged figure of living glacier that freezes the ground it crosses, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the elemental lurching forward with both fists raised to slam, frost spreading on the ground in feathery lines; a small human figure near its feet, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Humanoid made of jagged pale glacier blocks, rendered in hatching
 * Faceted blocky arms with crystal spikes
@@ -4806,7 +4806,7 @@ FALLEN PALADIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Fallen Paladin, Pale City Elite, medium: an undead knight in defiled plate whose despair aura withers courage, wielding a necrotic-chilled flamberge, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the paladin rising from one knee on a patch of frosted flagstones, defiled flamberge planted, head lifted.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Defiled plate with a broken holy sunburst on the breast, no readable lettering
 * Flamberge with a wavy blade
@@ -4834,7 +4834,7 @@ WEREBEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Werebear, Pale City Brute, large: a hulking white-furred man-beast built to maul, with strength that hurls men aside, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the werebear charging on all fours through churned snow, claws raking and jaws open; a small human figure ahead of it, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Hulking half-man half-bear with a bear head and human-like shoulders
 * White shaggy fur
@@ -4864,7 +4864,7 @@ WHITE COURT EXECUTIONER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Executioner, Pale City Elite, medium: a towering hooded headsman in frost carrying out centuries-old sentences with a headsman's axe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the executioner striding forward through snow with a frost-rimed headsman's axe resting over one shoulder.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Hood and cowl hiding the face with just two dark eye holes
 * Broad headsman's axe with a long haft, frosted
@@ -4892,7 +4892,7 @@ FROST WYVERN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Wyvern, Pale City Elite, large: a lean two-legged winged reptile the colour of dirty ice with a venom-and-frost tail stinger, smaller and rangier than a dragon; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Side three-quarter view of the wyvern on the wing in a stoop, tail stinger curled forward, its shadow falling on a small patch of snow where a small human figure stands, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Exactly two legs (taloned) and a pair of bat-like wings, wings double as forelimbs
 * Lean, long neck and rangy body
@@ -4921,7 +4921,7 @@ GELID FIEND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Gelid Fiend, Pale City Brute, large: a towering devil of blue-white ice and cruel geometry, a bound advocate of the frozen law, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the fiend levelling an ice glaive, spiked tail lashing, one jagged slab of conjured ice thrusting up from the ground beside it; a small human figure, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Tall devil with faceted carapace like cut ice crystals
 * Horns and a long jaw
@@ -5061,7 +5061,7 @@ SKELETON WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeleton Warrior, Sun-Drowned Minion, medium: a bare sun-bleached skeleton in corroded bronze scale, a priest-king's guard waiting centuries at its post, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the skeleton standing at its post, curved bronze blade held at the ready, sand drifted around its feet.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Bare bleached skeleton, no flesh
 * Corroded bronze scale armour with green-black patina rendered as dense stipple
@@ -5091,7 +5091,7 @@ CORPSEHOUND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Corpsehound, Sun-Drowned Skirmisher, medium: a jackal-headed, quick runner between man and beast that hunts caravans in loping packs with scimitar and jaws, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the corpsehound mid-lope over a patch of rippled sand, scimitar trailing in one hand, jaws open, laughing.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Jackal head with large upright ears and a long muzzle
 * Lean humanoid body with digitigrade legs
@@ -5119,7 +5119,7 @@ GNOLL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Gnoll, Sun-Drowned Soldier, medium: a hyena-headed, rangy, hunger-ruled raider armed with a throwing spear and a longbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the gnoll sprinting forward with a spear drawn back to throw, longbow slung across the back.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Hyena head with a heavy jaw, rounded ears and a ruff of mane
 * Rangy long-limbed body with sloping back
@@ -5147,7 +5147,7 @@ GIANT SCORPION - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Scorpion, Sun-Drowned Soldier, medium: a man-sized, banded chitin-plated desert scorpion with two crushing pincers and a venom-dripping sting arched over its back, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the scorpion lunging forward out of a shallow scrape in the sand where it lay half-buried, pincers wide, tail arched forward over its back.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Exactly eight legs plus two pincers
 * Segmented chitin plates banded across the body
@@ -5177,7 +5177,7 @@ SKELETON ARCHER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeleton Archer, Sun-Drowned Cannon, medium: a priest-king tomb skeleton set in a carved alcove centuries ago, its tomb bow still strung, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Frontal three-quarter view of the skeleton standing stiffly on a low carved stone plinth, loosing an arrow.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Bare bleached skeleton
 * Long recurved tomb bow, still strung
@@ -5205,7 +5205,7 @@ MUMMY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Mummy, Sun-Drowned Controller, medium: a priest-king's preserved corpse bound in resin-soaked wrappings, risen in wrath, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the mummy stepping forward, one arm raised in a cursing gesture, the other hanging with a fist.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Full wrapping of resin-soaked bandage strips, trailing loose ends
 * Gold burial collar and a broken funerary mask or bare face with black sockets
@@ -5233,7 +5233,7 @@ SKELETAL BEAST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeletal Beast, Sun-Drowned Skirmisher, medium: the bound remains of a great desert predator, a charging framework of fang and claw, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Side three-quarter view of the bone-framework beast at a full charge across open sand, jaws wide.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Four-legged bony skeleton of a lion-like predator
 * Long skull with large fangs
@@ -5261,7 +5261,7 @@ WIND ELEMENTAL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Wind Elemental, Sun-Drowned Skirmisher, large: a howling, near-invisible spiral of desert air that flings sand and bodies; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of a funnel-shaped vortex spinning over a small patch of scoured sand, defined by swirling sand lines, with a vague hollow face in the vortex; a small human figure staggering at its edge, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Spiral funnel outlined by curved parallel lines of sand grains
 * Dense stipple at the base of the vortex
@@ -5288,7 +5288,7 @@ DESERT NAGA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Desert Naga, Sun-Drowned Controller, large: a great serpent with an almost-human face, old and patient, a guardian of the tomb-pillars, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the naga reared up tall from its own coils on a patch of drifted sand, torso raised high with the almost-human face turned to the viewer, mouth parted to spit; a small human figure, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Long scaled serpent body in thick coils
 * Almost-human face with heavy-lidded eyes, smooth head
@@ -5317,7 +5317,7 @@ FIRE ELEMENTAL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Fire Elemental, Sun-Drowned Cannon, large: a roaring man-shape of living flame, white-hot at the core and shedding embers, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the elemental striding forward, both arms extended to touch, cinders smouldering in its footprints; a small human figure shielding its face, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Humanoid outline built from layered flame tongues
 * Solid white core with black flame hatching around it
@@ -5344,7 +5344,7 @@ GIANT SKELETON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Skeleton, Sun-Drowned Brute, large: a looming framework of fused bone twice a man's height with fists like falling masonry, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the colossus advancing with grinding steps, one massive fist raised to smash; a small human figure before it, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Twice a man's height skeleton of fused bone plates
 * Thick pillar-like limb bones
@@ -5371,7 +5371,7 @@ MEDUSA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Medusa, Sun-Drowned Elite, medium: a serpent-haired figure whose petrifying gaze fills the tomb-galleries with statues, fighting with shortsword and snake-hair, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the medusa advancing, shortsword in hand, serpent hair writhing, eyes fixed on the viewer; a toppled stone head of a petrified admirer lies at its feet.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Robed, human-shaped figure in a draped, weathered robe
 * Head of living snakes in place of hair
@@ -5400,7 +5400,7 @@ TOMB NECROMANCER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Tomb Necromancer, Sun-Drowned Controller, medium: a withered official in the faded regalia of a dead bureaucracy, raising the buried to enforce forgotten statutes, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the necromancer holding a court staff, one hand gesturing to the ground at its feet where skeletal hands break through the sand.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Withered face under a tall official's cap
 * Faded layered regalia with chains of office
@@ -5427,7 +5427,7 @@ TOMB GUARDIAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Tomb Guardian, Sun-Drowned Soldier, medium: a faceless construct of gilded stone and ritual standing at a threshold with a ceremonial glaive, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Frontal three-quarter view of the guardian planted squarely on a worn threshold slab, ceremonial glaive held upright with its blade high.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Faceless smooth head, gilded flecks
 * Humanoid body of carved stone plates with ritual motif bands
@@ -5455,7 +5455,7 @@ BRASS GOLEM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Brass Golem, Sun-Drowned Brute, medium: a burnished automaton holding trapped forge-heat that hammers with searing fists, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the golem pounding both fists forward, heat shimmering around them.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Burnished brass plates with rivet rows
 * Squat humanoid frame with thick limbs
@@ -5482,7 +5482,7 @@ MANTICORE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Manticore, Sun-Drowned Elite, large: a fusion of lion's body, bat's wings and a man's leering face that flicks volleys of iron spikes from its tail; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the manticore crouched on a patch of rippled sand, tail arched over its back with iron spikes fanned out, wings half open; a small human figure, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Lion's body with a thick mane
 * Bat wings half open
@@ -5619,7 +5619,7 @@ ZOMBIE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Zombie, Mire Minion, medium: a waterlogged corpse the Mire would not keep, lurching upright in tattered remains and reaching up from beneath walkways, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the zombie rising waist-deep from a patch of black water, one arm reaching up.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Bloated waterlogged corpse with sagging skin
 * Tattered clothing hanging in strands
@@ -5704,7 +5704,7 @@ LIZARDFOLK WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Warrior, Mire Soldier, medium: a scaled cold-eyed pack fighter with heavy club and javelin who defends its breeding-pools, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the warrior on a patch of mud bank, stepping forward with a heavy club raised and a javelin held in the off hand.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Scaled lizard head with a long snout and a ridge crest
 * Muscular humanoid body with a thick tail
@@ -5732,7 +5732,7 @@ LIZARDFOLK HUNTER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Hunter, Mire Cannon, medium: a patient silent lizard-man stalking the margins with a barbed harpoon, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the hunter crouched low among a few reeds at the water's edge, harpoon drawn back to throw, a coiled line trailing.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Scaled head with a long snout and slit-pupil eyes
 * Barbed harpoon with a coil of rope
@@ -5760,7 +5760,7 @@ CROCODILE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Crocodile, Mire Skirmisher, large: a monstrous-length log-still ambusher exploding from the murk to drag victims under in a death-roll, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the crocodile surging half out of the water, jaws gaping, spray flying; a small human figure on the bank, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Long armoured body with ridged osteoderms
 * Heavy jaws with interlocking teeth
@@ -5790,7 +5790,7 @@ LIZARDFOLK SHAMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Shaman, Mire Controller, medium: a reed-cloaked lizard-man who speaks for the swamp-spirits and heals its pack with a staff and spirit-bolts, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Full figure in three-quarter view standing knee-deep, staff raised, mouth open in a croaked invocation.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Scaled head with a fan-like frill
 * Cloak of dried reeds
@@ -5818,7 +5818,7 @@ MIASMA SERPENT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Miasma Serpent, Mire Skirmisher, medium: a bloated water-snake that exhales poison clouds as it swims, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the snake swimming in a small patch of still water with its head raised above the surface, haze rising from its open mouth.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Bloated thick water-snake body with diamond scale pattern
 * Swollen throat
@@ -5846,7 +5846,7 @@ SWAMP NAGA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Naga, Mire Controller, large: a great serpent with a hooded, watchful face from the drowned ruins, spitting venom and binding prey in its crushing length, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Low side view of the naga lying in loose coils in still black water, cobra-like hood flared wide, head raised and spitting venom; a small human figure on a patch of bank, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Great serpent body in coils
 * Hooded watchful face with a hood like a cobra
@@ -5874,7 +5874,7 @@ GIANT CONSTRICTOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Constrictor, Mire Skirmisher, medium: a snake long enough to bridge a channel that drops from overhanging branches to coil and crush, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the snake hanging in loops from a single short bough, coils wrapping an empty rope-slung pack, head striking down.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Very long muscular snake body hanging from a branch in loops
 * Triangular head with open jaws
@@ -5902,7 +5902,7 @@ SHAMBLING MOUND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Shambling Mound, Mire Brute, large: a heaving mass of animate rot and creeper-vine, roughly man-shaped and tireless, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the mound lumbering through a small patch of shallow fen water, both vine-wrapped arms swinging in a slam; a small human figure, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Roughly man-shaped heap of rotten vegetation, vines and mud
 * Creeper vines as thick cords
@@ -5930,7 +5930,7 @@ SWAMP HAG - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Hag, Mire Controller, medium: a warty, weed-haired crone who poles through the Mire cursing all they meet, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the hag standing ankle-deep in black water, leaning on a long punting pole, one clawed hand pointed in a curse.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Warty skin, long nose, sunken cheeks
 * Weed-haired scalp with dripping strands
@@ -5959,7 +5959,7 @@ BANSHEE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Banshee, Mire Controller, medium: the shrieking translucent spirit of a woman drowned in grief; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the banshee drifting over a small patch of fog-covered water, mouth open in a wail, long hair streaming upward.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Translucent woman-shaped figure drawn with open sparse lines
 * Long streaming hair and wet gown that trails into wisps
@@ -5987,7 +5987,7 @@ SWAMP TROLL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Troll, Mire Brute, large: a slime-green giant of reaching arms and a tusked maw that hauls itself on all fours through the Mire, regenerating wounds, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the troll heaving itself forward on all fours through a patch of black water, one huge clawed arm reaching; a small human figure, drawn small, light and secondary, for scale.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Slime-slick hulking giant on all fours
 * Long reaching arms with rending claws
@@ -6044,7 +6044,7 @@ BLACKWATER WIGHT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Blackwater Wight, Mire Elite, medium: a barnacled drowned corpse-warrior rising from black pools with a life-drinking drowned blade, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the wight wading up out of a black pool, drowned blade held low and water pouring from its armour.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Barnacled corroded armour and helm
 * Drowned blade with algae and a notched edge
@@ -6159,7 +6159,7 @@ THE HOLLOW CROWN OF THE ASHLANDS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of the Hollow Crown of the Ashlands, a black iron circlet that rules the dead empire's legions in place of its last emperor; its throne room is the whole of the ruined empire, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 A vast ruined hall open to a sooty sky; a black iron circlet hovers above an empty regent's robe on a ruined throne at the far end, ranks of dead legionaries kneeling in rows below it.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Crown of black iron with spiked points hovering above an empty collar of an ermine-edged robe
 * Throne of cracked stone on a stepped dais, partly collapsed
@@ -6286,7 +6286,7 @@ CAPTAIN VEYR OF THE FORSAKEN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Captain Veyr of the Forsaken, the empire's greatest captain, who swore the company would never break and holds them past death, a duelist with paired blades, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 A ruined road in a trampled battlefield at dusk; Veyr stands in the middle ground, spectral plate, paired blades raised, rallying a line of dead soldiers behind them, seen at a low angle.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Spectral plate with gothic fluting, drawn in thin broken lines, with solid black under the visor
 * Paired blades, one held high and one level
@@ -6320,7 +6320,7 @@ THE FROST BAILIFF MAGISTRATE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of the Frost Bailiff Magistrate, the Pale City court's undying enforcer who passes final judgement, freezing the guilty where they stand, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 A frozen avenue of the Pale City in perspective; the Magistrate drifts in judicial robes in the middle distance, a figure freezing solid before it in the foreground.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Judicial robes with a high collar and long sleeves, hem trailing, face hidden in a hood of ice
 * Gavel-like staff or a scroll of sentence with no readable text
@@ -6352,7 +6352,7 @@ THE SUN-CROWNED PRINCE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of the Sun-Crowned Prince, the greatest priest-king, who bound his soul into a crown of beaten gold and still rules his sealed tomb-court, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Sealed tomb-court in one-point perspective; the Prince sits enthroned at the far end, a withered corpse in funeral linen beneath a bright crown, skeletal subjects ranged along both sides.
-Size: Medium: from about human-sized up to about the size of an ox.
+Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Throne of carved stone with a tall back and a low dais
 * Corpse in funeral linen, leathery face and bone, hands on armrests
@@ -6383,7 +6383,7 @@ THE ANTLERED WARDEN OF THE TITHE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of the Antlered Warden of the Tithe, the antlered robed figure admitted at Greythorn's west gate each winter to collect the forest's due, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Greythorn's timber west gate in winter snow at dusk; the towering Warden stands in the gateway dragging an indebted man by the collar, the town wall behind.
-Size: Large: bigger than an ox, roughly twice a human's height or bulk.
+Size: Large: roughly twice a human's height or bulk.
 SUBJECT DETAILS
 * Bone-antler crown with many tines and living wood grown through it
 * Body of bark, living wood and moss with a ragged robe of grey moss
