@@ -1,8 +1,8 @@
 {
   "zip": "dist/Heraldry_RC491_release.zip",
-  "bytes": 166786712,
+  "bytes": 168275684,
   "files": 311,
-  "sha256": "f3abec9068b2c84338728d205af5ac0abaeada87aa53d69e7c6f4b3fd8de7b8b",
+  "sha256": "e186f64039aa42bfdda82f846f6d10d128a45957f911b986fc01cc0a381b317f",
   "status": "PASS",
   "duplicate_entries": [],
   "checksums_verified": 310,
