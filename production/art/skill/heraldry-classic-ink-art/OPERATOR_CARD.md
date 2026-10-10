@@ -32,5 +32,5 @@ Claude Code owns the prompts, queue, references, review and approval. ChatGPT Wo
 
 - `doctor` says NOT READY: read what it lists. Usually git-lfs is missing or the clone is stale.
 - A prompt does not match its hash: someone republished the queue. Pull again.
-- The images look drifted or all alike: stop the run, start a fresh conversation, and use the resume prompt.
+- The whole batch looks drifted or alike, not just one or two images (the runner redoes those itself): stop the run, start a fresh conversation, and use the resume prompt.
 - The tool refuses an item: the refusal is recorded in `RECEIPTS.jsonl`. Tell Claude Code; it owns the prompt.

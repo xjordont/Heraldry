@@ -2,7 +2,7 @@
 
 Two layers. The script catches mechanical problems. You catch everything else by looking.
 
-## 1. Mechanical tripwires (`scripts/heraldry_art.py check ID IMAGE`)
+## 1. Mechanical tripwires (the helper's `check ID FILE`; its full command is in SKILL.md)
 
 Calibrated on the approved Greythorn render, the three owner style samples and synthetic defects (grey wash, frame, crop, tint, grain, blur). They are tripwires, not a quality score: a PASS does not mean the art is good.
 
@@ -62,6 +62,6 @@ Redo the one or two worst if attempts remain. If the whole batch drifted, stop a
 {"id": "ART-MON-GOBLIN", "prompt_sha256": "<the item's prompt_sha256 from QUEUE.json>", "surface": "ChatGPT Work", "model": "<image model if shown, else not shown>", "date_utc": "2026-10-10", "variants_tried": 2, "notes": "<anything unusual, including any correction sentence added>", "must_checked": ["<what you counted for each MUST line>"], "avoid_clear": true}
 ```
 
-`variants_tried` is the total number of generations made for the item, the saved one included. `save` fills it from the images you checked. `must_checked`, `avoid_clear` and `tripwires` are optional extras the reviewer reads; a later receipt for the same ID replaces an earlier one.
+`variants_tried` is the total number of generations made for the item, the saved one included. `save` fills it from the images you checked. `must_checked`, `avoid_clear`, `tripwires`, `accepted_flags` and `accepted_at_attempt` are optional extras the reviewer reads; a later receipt for the same ID replaces an earlier one.
 
 A refusal: `{"id": "...", "refused": true, "reason": "<the tool's message>", "surface": "ChatGPT Work", "date_utc": "..."}`.

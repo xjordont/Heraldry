@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Validate the skill package, and optionally its agreement with a Heraldry repo checkout.
+"""Validate the built skill package, and its agreement with a Heraldry repo checkout.
 
-  python scripts/validate_skill.py                       the skill folder this script lives in
-  python scripts/validate_skill.py --zip skill.zip       an unextracted zip
-  python scripts/validate_skill.py --repo /path/to/repo  also check the reference images, families table and queue
+  python scripts/validate_skill.py --zip skill.zip                an unextracted zip (the normal case)
+  python scripts/validate_skill.py                                an extracted, built skill folder
+  python scripts/validate_skill.py --zip skill.zip --repo PATH    name the repo explicitly
 
+The repo is found by walking up from the current directory when --repo is not given. The skill source folder inside
+the repo has no manifest or reference images until tools/art_skill_build.py builds them, so validate the zip.
 Only reads files. Python files are compiled to check syntax, never run."""
 import argparse, hashlib, json, re, sys, tempfile, zipfile
 from pathlib import Path
@@ -23,6 +25,14 @@ REQUIRED = ["SKILL.md", "README.md", "OPERATOR_CARD.md", "manifest.json", "scrip
 
 def sha(b):
     return hashlib.sha256(b).hexdigest()
+
+
+def find_repo():
+    here = Path.cwd().resolve()
+    for d in [here, *here.parents]:
+        if (d / "production/art/gpt/QUEUE.json").is_file() and (d / "config/art_style.json").is_file():
+            return d
+    return None
 
 
 def check_package(base):
@@ -123,12 +133,20 @@ def main():
                 errors.append("SKILL.md is not at the zip root")
             z.extractall(tmp.name)
         base = Path(tmp.name)
-    pk, images = check_package(base)
-    errors += pk
-    if a.repo:
-        errors += check_repo(base, a.repo.resolve(), images)
-    print(json.dumps({"status": "PASS" if not errors else "FAIL", "checked": str(a.zip or base), "repo": str(a.repo) if a.repo else None,
-                      "errors": errors}, indent=1))
+    repo = a.repo.resolve() if a.repo else find_repo()
+    repo_checks = "skipped: no repo found; pass --repo <clone>"
+    if not a.zip and not (base / "manifest.json").is_file():
+        errors.append("this folder has no manifest.json: it is the skill source, not a built package. "
+                      "Build it with tools/art_skill_build.py, then validate the zip with --zip")
+        repo_checks = "skipped: not a built package"
+    else:
+        pk, images = check_package(base)
+        errors += pk
+        if repo:
+            errors += check_repo(base, repo, images)
+            repo_checks = "done"
+    print(json.dumps({"status": "PASS" if not errors else "FAIL", "checked": str(a.zip or base),
+                      "repo": str(repo) if repo else None, "repo_checks": repo_checks, "errors": errors}, indent=1))
     if tmp:
         tmp.cleanup()
     return 0 if not errors else 1
