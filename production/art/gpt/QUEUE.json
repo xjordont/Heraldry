@@ -1,0 +1,66 @@
+{
+ "phase": "anchors",
+ "generated_at": "2026-10-10T13:28:15+00:00",
+ "references": [
+  "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+  "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+  "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+ ],
+ "count": 6,
+ "items": [
+  {
+   "id": "ART-BAS-GREYTHORN",
+   "family": "bastion",
+   "title": "Greythorn",
+   "prompt": "production/art/gpt/prompts/ART-BAS-GREYTHORN.txt",
+   "prompt_sha256": "23b4e26998385f1be1b7f7679fde0739475879aa333a15b63c98272b69402e47",
+   "size": "1536x1024",
+   "save_as": "assets/art/incoming/ART-BAS-GREYTHORN.png"
+  },
+  {
+   "id": "ART-CLI-THE-GREENMARK",
+   "family": "climate",
+   "title": "The Greenmark",
+   "prompt": "production/art/gpt/prompts/ART-CLI-THE-GREENMARK.txt",
+   "prompt_sha256": "de8044ae3c7c1c98392b033864a4c7ab29973185fc5de725ade8de745df9eee0",
+   "size": "1536x1024",
+   "save_as": "assets/art/incoming/ART-CLI-THE-GREENMARK.png"
+  },
+  {
+   "id": "ART-MON-GIANT-TARANTULA",
+   "family": "monster",
+   "title": "Giant Tarantula",
+   "prompt": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
+   "prompt_sha256": "e71ef65f3695f3783a078933bcaf13f78c9ee44f7137e28ab9db2a915b5e0090",
+   "size": "1024x1024",
+   "save_as": "assets/art/incoming/ART-MON-GIANT-TARANTULA.png"
+  },
+  {
+   "id": "ART-MON-UNDEAD-CHAMPION",
+   "family": "monster",
+   "title": "Undead Champion",
+   "prompt": "production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt",
+   "prompt_sha256": "886d90ec3432bf55a3950c6c6724b8298a1fc319ce67e0bb471dd8980952346d",
+   "size": "1024x1024",
+   "save_as": "assets/art/incoming/ART-MON-UNDEAD-CHAMPION.png"
+  },
+  {
+   "id": "ART-CLA-FIGHTER",
+   "family": "class",
+   "title": "Fighter",
+   "prompt": "production/art/gpt/prompts/ART-CLA-FIGHTER.txt",
+   "prompt_sha256": "19d9152767b67b6dddf076371f6a9e35e6aae920226aa456233a5ef06005126b",
+   "size": "1024x1536",
+   "save_as": "assets/art/incoming/ART-CLA-FIGHTER.png"
+  },
+  {
+   "id": "ART-ANC-DWARF",
+   "family": "ancestry",
+   "title": "Dwarf",
+   "prompt": "production/art/gpt/prompts/ART-ANC-DWARF.txt",
+   "prompt_sha256": "51a575c077c8b73146443cdab7a47b00221783e45693839c3fd8f7fc842ac4bc",
+   "size": "1024x1536",
+   "save_as": "assets/art/incoming/ART-ANC-DWARF.png"
+  }
+ ]
+}

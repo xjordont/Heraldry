@@ -51,28 +51,64 @@ def sha(b):
 
 
 # ------------------------------------------------------------------ prompts
+OWNER_PROMPTS = ROOT / "production/art/OWNER_PROMPTS.json"
+ASPECT_WORDS = {"3:2": "Wide 3:2 landscape", "16:9": "Wide 16:9 landscape", "4:3": "4:3 landscape",
+                "1:1": "Square 1:1", "2:3": "Tall 2:3 portrait", "3:4": "3:4 portrait"}
+
+
+def label(e):
+    if e["family"] == "cover":
+        return "FRONT COVER"
+    if e["family"] == "chapter":
+        return "CHAPTER " + str(int(e["id"][6:8])) + " OPENER"
+    return e["title"].upper()
+
+
 def prompt_for(e, with_refs):
+    """Structured prompt (owner's Greythorn prompt is the model): title, intro, format and
+    vignette/isolation, composition, subject details, activity, verbatim source text, style and
+    atmosphere, final requirements. An owner-authored prompt overrides the whole entry."""
+    owner = load(OWNER_PROMPTS, {}).get(e["id"])
+    v2 = CFG["prompt_v2"]
+    if owner:
+        return owner + ("\n\nSTYLE REFERENCES\n" + v2["reference"] if with_refs else "")
     fam = CFG["families"][e["family"]]
-    parts = [CFG["style"]]
-    if with_refs:
-        parts.append(CFG["reference_instruction"])
-    parts.append(f"FORMAT: {fam['framing']} Aspect ratio {fam['aspect']}.")
+    b = e.get("brief") or {}
+    kind = "scene" if e["family"] in v2["scene_families"] else "still" if e["family"] in v2["still_families"] else "figure"
+    where = " / ".join(e.get("context", []))
+    identity = b.get("identity", "").rstrip(".") or (e.get("subject") or f"{e['title']} ({where})")
+    out = [label(e) + " - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION", v2["intro"].format(identity=identity[0].lower() + identity[1:] if identity[:2] in ("A ", "An") or identity[:4] == "The " else identity)]
+    aw = ASPECT_WORDS.get(fam["aspect"], fam["aspect"])
+    out.append(("FORMAT AND WHITE VIGNETTE" if kind == "scene" else "FORMAT AND ISOLATION") + "\n"
+               + "\n".join(x.format(aspect_words=aw) for x in v2["format_" + kind]))
+    comp = []
     if e["family"] in ("cover", "chapter"):
-        parts.append(f"SUBJECT: {e['subject']}. COMPOSITION: {e['composition']}.")
-    else:
-        where = " / ".join(e.get("context", []))
-        if e["family"] in ("monster", "boss"):
-            f = e.get("facts", {})
-            size = CFG["size_words"].get(f.get("size_code") or "", "")
-            parts.append(f"SUBJECT: the creature called \"{e['title']}\" ({where}). {('Size: ' + size + '.') if size else ''} "
-                         "Depict it faithfully from this description, inventing nothing that contradicts it:")
-        else:
-            parts.append(f"SUBJECT: \"{e['title']}\" ({where}). Depict this faithfully, inventing nothing that contradicts it:")
-        parts.append("\"" + e["flavour"] + "\"")
-        if e.get("direction"):
-            parts.append("IMAGE: " + e["direction"])
-    parts.append(CFG["exclusions"])
-    return "\n\n".join(parts)
+        comp.append(e["subject"].rstrip(".") + ".")
+        comp.append(e["composition"].rstrip(".") + ".")
+    if b.get("composition"):
+        comp.append(b["composition"])
+    if e.get("direction"):
+        comp.append(e["direction"])
+    comp.append(fam["framing"])
+    if e["family"] in ("monster", "boss"):
+        size = CFG["size_words"].get((e.get("facts") or {}).get("size_code") or "", "")
+        if size:
+            comp.append("Size: " + size + ".")
+    out.append("COMPOSITION\n" + "\n".join(comp))
+    if b.get("details"):
+        out.append("SUBJECT DETAILS\n" + "\n".join("* " + d for d in b["details"]))
+    if b.get("activity"):
+        out.append(("HUMAN ACTIVITY" if kind == "scene" else "ACTION") + "\n" + "\n".join("* " + d for d in b["activity"]))
+    if e.get("flavour"):
+        out.append("SOURCE TEXT\nDepict this faithfully and invent nothing that contradicts it:\n\"" + e["flavour"] + "\"")
+    atm = b.get("atmosphere", "The atmosphere is grounded, austere, mysterious and subtly ominous.")
+    out.append("ARTISTIC STYLE AND ATMOSPHERE\n" + atm + "\n" + v2["style_" + ("scene" if kind == "scene" else "figure")])
+    final = ["Avoid " + "; ".join(x.rstrip(".") for x in b["avoid"]) + "."] if b.get("avoid") else []
+    final.append(v2["final_" + ("scene" if kind == "scene" else "figure")])
+    out.append("FINAL VISUAL REQUIREMENTS\n" + "\n".join(final))
+    if with_refs:
+        out.append("STYLE REFERENCES\n" + v2["reference"])
+    return "\n\n".join(out)
 
 
 # ------------------------------------------------------------------ API

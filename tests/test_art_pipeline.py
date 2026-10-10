@@ -23,7 +23,8 @@ class ArtPipeline(unittest.TestCase):
         e = next(x for x in g.entries() if x["family"] == "monster")
         p = g.prompt_for(e, True)
         self.assertIn('"' + e["flavour"] + '"', p)
-        self.assertIn(g.CFG["exclusions"], p)
+        self.assertIn("FINAL VISUAL REQUIREMENTS", p)
+        self.assertTrue(p.startswith(e["title"].upper()))
 
     def test_publication_uses_only_approved_art_selections(self):
         from unittest.mock import patch
