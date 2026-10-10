@@ -95,7 +95,7 @@
       "scope": "full"
     }
   ],
-  "B11062": [
+  "B11064": [
     {
       "id": "FIG-13",
       "caption": "Deployment patterns used by the Core Scenarios, drawn on a 36\"×36\" battlefield: opposite long or short edges within 6\", a Setup Roll-off winner's choice of edge or 8\"×8\" corner, and opposite corner zones with alternating placement. Where a scenario is silent, the 10.1 step 11 default supplies the 6\" depth, the 8\"×8\" corner size and the placing order; key: FIG-20 (see 10.1 and each scenario's Party Deployment).",
@@ -115,7 +115,7 @@
       "scope": "full"
     }
   ],
-  "B12997": [
+  "B12999": [
     {
       "id": "FIG-15",
       "caption": "In The Chasm Crossing the Survey Map starts 3\" from the first ledge and must be placed adjacent to the Cartographer's Stone 3\" beyond the last ledge. Gaps of 1–2\" between ledges are crossed by Jump, and a failed Jump into the Chasm causes a Chasm Fall, with stated exceptions for Fly or Climb Speeds; key: FIG-20 (see 10.4).",
@@ -123,7 +123,7 @@
       "scope": "full"
     }
   ],
-  "B12100": [
+  "B12102": [
     {
       "id": "FIG-16",
       "caption": "In the Whispering Grove the Antlered Warden is placed adjacent to the first Standing Stone a Hero Interacts with, and its Target Priority is the valid Hero who most recently activated or attempted to activate a Stone, whichever party that Hero belongs to. Entangling Roots then applies if the target is within 8\"; key: FIG-20 (see 10.4).",
@@ -131,7 +131,7 @@
       "scope": "full"
     }
   ],
-  "B15198": [
+  "B15200": [
     {
       "id": "FIG-17",
       "caption": "Each adventure runs Expedition, Skirmish, Aftermath, then Town; Aftermath and Town follow every adventure, win or lose, unless a rule says otherwise. The Town Phase grants 4 TAP, or the Journey-modified amount, to spend at six locations (see 11.2).",
@@ -139,7 +139,7 @@
       "scope": "full"
     }
   ],
-  "B16371": [
+  "B16373": [
     {
       "id": "FIG-18",
       "caption": "Appendix A starting positions, with the Dispatch Satchel adjacent to the centre ruin, and Round 1 of the sample game. Edric ends the round with 16 − 5 = 11, 11 − 3 = 8 and 8 − 3 = 5 HP after Varek's attack and two Dire Wolf bites; key: FIG-20 (see A.11).",
@@ -147,7 +147,7 @@
       "scope": "full"
     }
   ],
-  "B17082": [
+  "B17084": [
     {
       "id": "FIG-19",
       "caption": "Basic Mode setup for The Courier's Strongbox on a 24\"×24\" battlefield, with one complete Monster group per Entry marker, assigned at random. Assumed example: carrying the Strongbox cuts Ironscar's SPD 4\" by 2\" to 2\" per Move; extracting it with 1 Satchel, having defeated 2 Goblins and 1 Bandit, scores 12 + 4 + 2 + 3 = 21c; key: FIG-20 (see B.6).",
@@ -155,7 +155,7 @@
       "scope": "full"
     }
   ],
-  "B11970": [
+  "B11972": [
     {
       "id": "FIG-20",
       "caption": "Key to the setup and deployment diagrams: symbols for Heroes, zones, markers, Monster Groups, terrain, distances, edges and not-placed elements, with the orientation, scale and grey-dashed conventions every such diagram follows (see 10.4).",
@@ -163,7 +163,7 @@
       "scope": "full"
     }
   ],
-  "B12025": [
+  "B12027": [
     {
       "id": "FIG-21",
       "caption": "Hunt the Wild Beast: parties deploy within 6\" of opposite long battlefield edges, and the Great Forest Boar starts within 2\" of the Mud Wallow near the centre; key: FIG-20 (see 10.4, Greenmark Scenario 1).",
@@ -171,7 +171,7 @@
       "scope": "column"
     }
   ],
-  "B12096": [
+  "B12098": [
     {
       "id": "FIG-22",
       "caption": "The Whispering Grove: parties deploy in opposite 8\"×8\" corners; three Standing Stones stand 6–8\" apart in a Central Clearing about 12–15\" across; key: FIG-20 (see 10.4, Greenmark Scenario 2).",
@@ -179,7 +179,7 @@
       "scope": "column"
     }
   ],
-  "B12170": [
+  "B12172": [
     {
       "id": "FIG-23",
       "caption": "The Bandit's Toll: parties deploy within 6\" of the opposite short edges where a Trail 3–4\" wide runs, with at least two Heroes, or the only Hero, of each party on the Trail; the Barricade and Wagon 2 stand at the midpoint; key: FIG-20 (see 10.4, Greenmark Scenario 3).",
@@ -187,7 +187,7 @@
       "scope": "column"
     }
   ],
-  "B12238": [
+  "B12240": [
     {
       "id": "FIG-24",
       "caption": "The Spider's Silk Route: parties deploy within 6\" of opposite short edges on higher ground, either side of a Ravine 6–8\" wide that cuts across the midpoint with the first Silk Bundle in the central Webbed Section and two others at least 4\" away; key: FIG-20 (see 10.4, Greenmark Scenario 4).",
@@ -195,7 +195,7 @@
       "scope": "column"
     }
   ],
-  "B12314": [
+  "B12316": [
     {
       "id": "FIG-25",
       "caption": "The Ambushed Emissary: parties deploy in opposite 8\"×8\" corners; the Bandit Camp lies in one quadrant at least 8\" from every edge, with four Clue markers at least 6\" from each other and the Camp; key: FIG-20 (see 10.4, Greenmark Scenario 5).",
@@ -203,7 +203,7 @@
       "scope": "column"
     }
   ],
-  "B12398": [
+  "B12400": [
     {
       "id": "FIG-26",
       "caption": "Ritual of the Old Growth: the Setup Roll-off winner picks a long edge and deploys within 6\"; the Mother Tree at the centre has a Sacred Grove within 6\" of it, with three Treasure Chests evenly spaced on its outer edge; key: FIG-20 (see 10.4, Greenmark Scenario 6).",
@@ -211,7 +211,7 @@
       "scope": "column"
     }
   ],
-  "B12481": [
+  "B12483": [
     {
       "id": "FIG-27",
       "caption": "The Fallen Observatory: parties deploy within 6\" of opposite long edges around a central 6\"×6\" Collapsed Dome holding the Star Lens, with two raised Platforms at least 10\" apart; key: FIG-20 (see 10.4, Ashlands Scenario 1).",
@@ -219,7 +219,7 @@
       "scope": "column"
     }
   ],
-  "B12546": [
+  "B12548": [
     {
       "id": "FIG-28",
       "caption": "The Guardian's Test: parties deploy within 6\" of opposite short edges, with the Sealed Gateway in one long edge and three Trial Pedestals at least 5\" apart in a Courtyard about 15\"×15\"; key: FIG-20 (see 10.4, Ashlands Scenario 2).",
@@ -227,7 +227,7 @@
       "scope": "column"
     }
   ],
-  "B12604": [
+  "B12606": [
     {
       "id": "FIG-29",
       "caption": "The Shifting Sands of Time: parties deploy in opposite 8\"×8\" corners around a 4\"×4\" Central Ruin with four 3\"×3\" Unstable Ground zones at least 6\" apart; carriers escape by the two edges not touching their corner; key: FIG-20 (see 10.4, Ashlands Scenario 3).",
@@ -235,7 +235,7 @@
       "scope": "column"
     }
   ],
-  "B12680": [
+  "B12682": [
     {
       "id": "FIG-30",
       "caption": "The Sealed Archive: parties deploy within 6\" of opposite short edges around an 8\"×4\" Archive Hall with the Codex on its lectern, two side chambers and Tablet Caches two in one chamber and one in the other; key: FIG-20 (see 10.4, Ashlands Scenario 4).",
@@ -243,7 +243,7 @@
       "scope": "column"
     }
   ],
-  "B12759": [
+  "B12761": [
     {
       "id": "FIG-31",
       "caption": "The Reliquary of Broken Saints: parties deploy within 6\" of opposite long edges around a long central nave with the Reliquary on its altar platform, Bone Fragments in the two side aisles; key: FIG-20 (see 10.4, Ashlands Scenario 5).",
@@ -251,7 +251,7 @@
       "scope": "column"
     }
   ],
-  "B12846": [
+  "B12848": [
     {
       "id": "FIG-32",
       "caption": "The Iron-Vein Vault: parties deploy within 6\" of opposite long edges around a central 6\"×6\" Chamber with an iron door whose hinges and lock carry the Binding Points, and the Vault Record 3\" beyond the door; key: FIG-20 (see 10.4, Ashlands Scenario 6).",
@@ -259,7 +259,7 @@
       "scope": "column"
     }
   ],
-  "B12929": [
+  "B12931": [
     {
       "id": "FIG-33",
       "caption": "The Crystal Harvest: parties deploy in opposite 8\"×8\" corners; two Main Caverns 8\"×8\" are linked by narrow passages, with a central Crystal Node midway between them; key: FIG-20 (see 10.4, Undermarches Scenario 1).",
@@ -267,7 +267,7 @@
       "scope": "column"
     }
   ],
-  "B12995": [
+  "B12997": [
     {
       "id": "FIG-34",
       "caption": "The Chasm Crossing: both parties deploy within 8\" of one short edge, no Heroes within 6\" of an opposing Hero; the Chasm 8\" wide bisects the battlefield, with the Survey Map and the Stone each 3\" from the end ledges; key: FIG-20 (see 10.4, Undermarches Scenario 2).",
@@ -275,7 +275,7 @@
       "scope": "column"
     }
   ],
-  "B13062": [
+  "B13064": [
     {
       "id": "FIG-35",
       "caption": "The Quake: both parties deploy inside a central 8\"×8\" Safe Zone, no Hero within 3\" of an opposing Hero; the Setup Roll-off winner designates the Main Exit and the two perpendicular edges are Collapsed Tunnels; key: FIG-20 (see 10.4, Undermarches Scenario 3).",
@@ -283,7 +283,7 @@
       "scope": "column"
     }
   ],
-  "B13166": [
+  "B13168": [
     {
       "id": "FIG-36",
       "caption": "The Undermarches Outpost Raid: parties deploy in opposite 8\"×8\" corners around an outpost with a central 3\"×3\" Command Tent holding the Battle Plans and 2–3 Guard Towers; key: FIG-20 (see 10.4, Undermarches Scenario 4).",
@@ -291,7 +291,7 @@
       "scope": "column"
     }
   ],
-  "B13239": [
+  "B13241": [
     {
       "id": "FIG-37",
       "caption": "The Shadowed Under Passage: Party A deploys within 6\" of the short edge farther from the Heart, Party B within 6\" of the opposite edge; a winding Under Passage runs between the two edges and the Heart lies at least 12\" from Party A's edge; key: FIG-20 (see 10.4, Undermarches Scenario 5).",
@@ -299,7 +299,7 @@
       "scope": "column"
     }
   ],
-  "B13318": [
+  "B13320": [
     {
       "id": "FIG-38",
       "caption": "The Ritual of Shadow Binding: Party A deploys within 6\" of one short edge and Party B within 6\" of the opposite one; three Shadow Orbs stand within 2\" of the 4\" Binding Circle at the centre of the central cavern; key: FIG-20 (see 10.4, Undermarches Scenario 6).",
@@ -307,7 +307,7 @@
       "scope": "column"
     }
   ],
-  "B13404": [
+  "B13406": [
     {
       "id": "FIG-39",
       "caption": "Plunder of the Frozen Ruins: parties deploy in opposite 8\"×8\" corners; the five Chests are placed alternately at least 6\" apart and at least 8\" from any deployment zone; key: FIG-20 (see 10.4, Pale City Scenario 1).",
@@ -315,7 +315,7 @@
       "scope": "column"
     }
   ],
-  "B13470": [
+  "B13472": [
     {
       "id": "FIG-40",
       "caption": "The Alchemist's Frozen Laboratory: parties deploy within 6\" of opposite short edges; the Laboratory, about 6\"×8\", holds three Reagent Chests and the Alchemical Golem; key: FIG-20 (see 10.4, Pale City Scenario 2).",
@@ -323,7 +323,7 @@
       "scope": "column"
     }
   ],
-  "B13541": [
+  "B13543": [
     {
       "id": "FIG-41",
       "caption": "The Haunted Mausoleum: parties deploy within 6\" of opposite short edges outside the mausoleum, which holds a Grand Hall, 3 Burial Crypts and exactly five Sarcophagi; key: FIG-20 (see 10.4, Pale City Scenario 3).",
@@ -331,7 +331,7 @@
       "scope": "column"
     }
   ],
-  "B13603": [
+  "B13605": [
     {
       "id": "FIG-42",
       "caption": "The Clockwork Menagerie: the Setup Roll-off winner picks any battlefield edge and deploys within 6\"; three Clockwork Guardians start Awake beside the Workbenches or within 3\" of the centre; key: FIG-20 (see 10.4, Pale City Scenario 4).",
@@ -339,7 +339,7 @@
       "scope": "column"
     }
   ],
-  "B13671": [
+  "B13673": [
     {
       "id": "FIG-43",
       "caption": "The Ice Wyrm's Hoard: parties deploy within 6\" of opposite edges where the frozen tunnels enter a central lair about 12\"×12\", with the Ice Wyrm at its centre and the Hoard within 2\" of it; key: FIG-20 (see 10.4, Pale City Scenario 5).",
@@ -347,7 +347,7 @@
       "scope": "column"
     }
   ],
-  "B13745": [
+  "B13747": [
     {
       "id": "FIG-44",
       "caption": "The Icebound Court: parties deploy within 6\" of opposite short edges around a central throne chamber where the Frost Bailiff Magistrate begins on the Ice Throne with Ice Mephit Bodyguards within 2\"; key: FIG-20 (see 10.4, Pale City Scenario 6).",
@@ -355,7 +355,7 @@
       "scope": "column"
     }
   ],
-  "B13819": [
+  "B13821": [
     {
       "id": "FIG-45",
       "caption": "The Oasis Raiders: parties deploy within 6\" of opposite long edges around a central Oasis about 8\"×8\" with the Wellspring, the Raider Chieftain starting within 2\" of it; key: FIG-20 (see 10.4, Sun-Drowned Scenario 1).",
@@ -363,7 +363,7 @@
       "scope": "column"
     }
   ],
-  "B13884": [
+  "B13886": [
     {
       "id": "FIG-46",
       "caption": "The Cinder Lord's Lost Brazier: parties deploy on opposite short edges converging on a plaza whose 2\"×2\" Altar has three Elemental Locus pillars 4–6\" from it; key: FIG-20 (see 10.4, Sun-Drowned Scenario 2).",
@@ -371,7 +371,7 @@
       "scope": "column"
     }
   ],
-  "B13955": [
+  "B13957": [
     {
       "id": "FIG-47",
       "caption": "Tomb of the Sunken Kings: parties deploy in opposite corner zones (8\"×8\" by the 10.1 default) breaching a tomb complex with a Grand Hall about 5\"×10\" and three Royal Sarcophagi in separate chambers; key: FIG-20 (see 10.4, Sun-Drowned Scenario 3).",
@@ -379,7 +379,7 @@
       "scope": "column"
     }
   ],
-  "B14018": [
+  "B14020": [
     {
       "id": "FIG-48",
       "caption": "The Sandwyrm's Lair: parties deploy within 6\" of opposite battlefield edges around a broad sand basin with a central Shifting Sands Zone where the burrowed Sandwyrm first appears; key: FIG-20 (see 10.4, Sun-Drowned Scenario 4).",
@@ -387,7 +387,7 @@
       "scope": "column"
     }
   ],
-  "B14089": [
+  "B14091": [
     {
       "id": "FIG-49",
       "caption": "The Cursed Colossus of the Waste: parties deploy within 6\" of opposite battlefield edges around a large central Colossus of Blocking Terrain bearing the Glowing Rune and holding the Heartstone; key: FIG-20 (see 10.4, Sun-Drowned Scenario 5).",
@@ -395,7 +395,7 @@
       "scope": "column"
     }
   ],
-  "B14168": [
+  "B14170": [
     {
       "id": "FIG-50",
       "caption": "The Cinder Lord's Obsidian Prison: parties deploy within 6\" of opposite short edges around a central Obsidian Dais with three Glyphic Stones evenly arranged around it; key: FIG-20 (see 10.4, Sun-Drowned Scenario 6).",
@@ -403,7 +403,7 @@
       "scope": "column"
     }
   ],
-  "B14254": [
+  "B14256": [
     {
       "id": "FIG-51",
       "caption": "The Reliquary of Edrava Salttide: parties deploy within 6\" of opposite short edges on the driest banks around a central Sunken Barrow whose flooded sanctum holds the Reliquary; key: FIG-20 (see 10.4, The Mire Scenario 1).",
@@ -411,7 +411,7 @@
       "scope": "column"
     }
   ],
-  "B14325": [
+  "B14327": [
     {
       "id": "FIG-52",
       "caption": "The Lizardfolk's Stolen Offerings: parties deploy within 6\" of opposite battlefield edges around a swamp encampment where three Offering Piles are placed alternately; key: FIG-20 (see 10.4, The Mire Scenario 2).",
@@ -419,7 +419,7 @@
       "scope": "column"
     }
   ],
-  "B14402": [
+  "B14404": [
     {
       "id": "FIG-53",
       "caption": "The Mire Titan's Fen: parties deploy in opposite corner zones on the outer banks (8\"×8\" by the 10.1 default), around a central Bubbling Fen where the Mire Titan starts Awake; key: FIG-20 (see 10.4, The Mire Scenario 3).",
@@ -427,7 +427,7 @@
       "scope": "column"
     }
   ],
-  "B14477": [
+  "B14479": [
     {
       "id": "FIG-54",
       "caption": "The Blighted Heartwood: parties deploy within 6\" of opposite short edges around a central Blighted Grove about 8\"×8\" of Thorny Vines with the Heartwood at its centre; key: FIG-20 (see 10.4, The Mire Scenario 4).",
@@ -435,7 +435,7 @@
       "scope": "column"
     }
   ],
-  "B14554": [
+  "B14556": [
     {
       "id": "FIG-55",
       "caption": "Salttide's Reckoning: parties deploy along the outer banks within 6\" of opposite long edges (6\" is the 10.1 default) around a central Ritual Island holding Edrava Salttide and three Cursed Effigies; key: FIG-20 (see 10.4, The Mire Scenario 5).",
@@ -443,7 +443,7 @@
       "scope": "column"
     }
   ],
-  "B14633": [
+  "B14635": [
     {
       "id": "FIG-56",
       "caption": "The Serpent's Sunken Hoard: parties deploy outside the Sinkhole area within 6\" of opposite short edges (6\" is the 10.1 default), around a central Deep Water Sinkhole Pool 10–12\" across holding three Hoard Chests; key: FIG-20 (see 10.4, The Mire Scenario 6).",

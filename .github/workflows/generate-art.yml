@@ -1,4 +1,5 @@
-name: Generate pen-and-ink artwork
+name: Generate pen-and-ink artwork (retired Gemini fallback)
+# RETIRED 2026-10-10: the owner made ChatGPT Work the official route. Run only on an explicit owner instruction.
 # Owner decision 2026-10-08: automated Gemini image generation for every catalog entry.
 # Requires the repository secret GEMINI_API_KEY. Spend is capped by config/art_style.json.
 on:

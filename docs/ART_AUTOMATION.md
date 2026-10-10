@@ -1,47 +1,79 @@
-# Artwork workflow — automated Gemini pen-and-ink pipeline
+# Artwork workflow — ChatGPT Work pen-and-ink route
 
-Owner decision, 2026-10-08 (Claude Code session): "I want to automate the entire process with as little effort as possible. While the existing art assets can serve as a generate inspiration I think it would be best to replace them as well to ensure consistency." This replaces the earlier ChatGPT Work route and the earlier rule against an external image API.
+Owner decision, 2026-10-10 (Claude Code session): "Yes make the chat gpt work the official image generation pathway." The owner reported that GPT Images gave better results and wanted generation covered by the ChatGPT subscription rather than pay-as-you-go API fees. This supersedes the 2026-10-08 Gemini API route. That pipeline (`tools/art_generate.py` and the manual-only `Generate pen-and-ink artwork` workflow) stays in the repository as a retired fallback and is not run without an owner instruction. Its six test drawings are superseded.
 
 ## Scope
 
-`tools/art_catalog.py` derives the catalog deterministically from the current manuscript: every heading whose first block is flavour text, plus the cover and 11 chapter openers. It writes `production/art/SPOT_CATALOG.json` with 275 entries: 135 monsters, 37 scenarios, 20 backgrounds, 15 tradition tiers, 12 classes, 11 ancestries, 11 campaign rooms, 8 world sections, 6 climates, 6 bastions, 2 equipment sections, 11 chapters and the cover. Flavour text is copied verbatim into prompts and never paraphrased.
+`tools/art_catalog.py` derives the catalog deterministically from the current manuscript. It covers every heading whose first block is flavour text, plus the cover and the 11 chapter openers. It writes `production/art/SPOT_CATALOG.json`.
 
-## Style
+There are 275 entries:
 
-`config/art_style.json` is the single style bible: one illustrator's dip-pen line, hatching and crosshatching, pure black ink on white, light from the upper left, and no text, frame, colour or grey wash. It also sets per-family aspect ratio, resolution and printed width, the model preference lists, the budget cap and the candidate counts.
+| Family | Count |
+|---|---|
+| Monsters | 120 |
+| Scenarios | 37 |
+| Backgrounds | 20 |
+| Bosses | 15 |
+| Tradition tiers | 15 |
+| Classes | 12 |
+| Ancestries | 11 |
+| Campaign rooms | 11 |
+| Chapter openers | 11 |
+| World sections | 8 |
+| Climates | 6 |
+| Bastions | 6 |
+| Equipment sections | 2 |
+| Cover | 1 |
 
-## Pipeline (`tools/art_generate.py`)
+Flavour text is quoted verbatim in every prompt.
 
-1. **anchors.** Generates four candidates each for six anchor subjects (a climate, a bastion, two monsters, a class and an ancestry). The original masters are attached only as inspiration. The judge picks one per subject, and `production/art/ANCHORS.json` becomes `proposed`.
-2. **approve-anchors.** The orchestrator inspects the anchor contact sheet and approves it, or rejects it and reruns. Approval is recorded with a timestamp.
-3. **batch.** For every pending entry, generates three candidates with the approved anchors attached as style references.
-   - An automated judge model scores each candidate for style match, subject fidelity and craft.
-   - Ink preparation rejects candidates with colour, a frame or box, or grey wash.
-   - Below the pass score, a second round runs. If that also fails, the best candidate is kept as `low-score-needs-review`.
-4. **ink.** Selection writes:
-   - the raw master to `assets/art/masters/<id>.png` (Git LFS; bound by SHA256);
-   - a pure-black-on-transparent derivative to `assets/art/ink/<id>.png` (Git LFS), which prints on both the cream and white editions;
-   - a record in `production/art/SELECTIONS.json`, with the prompt, model, judge scores, hashes, pixels and maximum print width at 300 ppi.
-5. **Ledger and budget.** Every API call is appended to `production/art/GENERATION_LEDGER.jsonl` with its token usage and an estimated cost. The run stops at `budget_usd`; Google's billing console is the authoritative cost.
-6. **Resuming.** The workflow commits progress every 10 entries and stops cleanly before the job time limit. Rerunning it continues from the pending entries.
+## Art direction and prompts
 
-Changing an entry's flavour text, its subject plan or its family changes its `spec_sha256`, which makes that entry pending again. Style-bible changes do not invalidate selected art automatically; regenerate the affected entries with `--ids`.
+These sources feed every prompt:
 
-**Uniqueness.** `production/art/SUBJECT_PLAN.json` holds the orchestrator's art direction: fresh chapter subjects and a concrete, distinct image for every entry whose flavour text is abstract or whose name collides with another entry. Named bosses form their own `boss` family (shown in their lair); scenarios show place and situation, with creatures small; backgrounds are still lifes of their trade. `tools/art_catalog.py` fails on a duplicate subject or an unseparated name collision. `tools/art_list.py` writes `production/art/ILLUSTRATION_LIST.md` with every entry's exact prompt.
+- **`config/art_style.json`**
+  - `prompt_v2` is the prompt template. Its structure follows the owner's Greythorn prompt: title, introduction, format and white vignette (scenes) or isolation (figures and still lifes), composition, subject details, activity, source text, style and atmosphere, final requirements, style references.
+  - `families` sets the aspect ratio and printed width for each family.
+- **`production/art/SUBJECT_PLAN.json`**
+  - Fresh chapter subjects.
+  - A distinct direction for any entry whose flavour text is abstract or whose name collides with another entry.
+- **`production/art/briefs/`** holds one brief per entry, written from the manuscript: identity, composition, details, activity, atmosphere, pitfalls and sources.
+- **`production/art/OWNER_PROMPTS.json`** holds owner-authored prompts, used verbatim. The first is Greythorn.
 
-## Running it
+`tools/art_catalog.py` builds each entry's `spec_sha256` from its flavour text, plan, brief and owner prompt. Changing any of these makes the entry pending again. The script also fails on a duplicate subject or an unseparated name collision.
 
-GitHub → Actions → **Generate pen-and-ink artwork** → Run workflow, with `phase` set to `plan`, `anchors` or `batch` (optional `family` and `limit`). It needs the repository secret `GEMINI_API_KEY`. Candidates and contact sheets are uploaded as a workflow artifact; rejected candidates are not committed.
+`tools/art_list.py` writes `production/art/ILLUSTRATION_LIST.md`, which lists every entry with its prompt.
+
+Manuscript issues found while briefing are recorded in `production/art/SOURCE_NOTES.md`. When the owner fixes them, the change becomes a new RC with `tools/revise_manuscript.py`, and the briefs follow.
+
+## Production loop
+
+1. **`python3 tools/art_gpt_pack.py`**
+   - Writes `production/art/gpt/QUEUE.json`, `QUEUE.md` and one prompt file per pending entry in `production/art/gpt/prompts/`.
+   - The anchors phase comes first and uses the owner's style samples as references. The batch phase uses the approved GPT anchors as references.
+2. **ChatGPT Work** follows `production/art/gpt/INSTRUCTIONS.md`.
+   - It pastes each prompt, attaches the references, keeps the best of up to three variants, and saves the image unmodified as `assets/art/incoming/<ID>.png`.
+   - It appends a receipt to `production/art/gpt/RECEIPTS.jsonl` and commits in batches.
+3. **The `Intake ChatGPT artwork` workflow** (on push to `assets/art/incoming/**`) runs `tools/art_intake.py scan`.
+   - It writes a transparent pure-black ink derivative to `assets/art/ink/<ID>.png` (Git LFS).
+   - It records the image as `received` in `production/art/SELECTIONS.json`, with hashes, pixels, flags and the receipt.
+   - It commits a review contact sheet to `production/art/review/`.
+4. **The orchestrator** reviews each sheet, plus enlarged crops where needed, and then runs one of:
+   - `tools/art_intake.py approve --ids ...`
+   - `reject --ids ...`, which returns the entry to the queue;
+   - `approve-anchors`, which makes the received anchors the references for the batch queue.
+
+Only `approved` and `anchor-approved` art is placed in the book.
 
 ## Layout
 
-- `tools/build_book.py` places the selected ink art above each entry's flavour text, inside that entry's keep unit, so the one-page-keep audit includes the image.
-- Each image is printed at its family width, never above native 300 ppi.
-- Chapter openers and the cover use `ART-CHnn-002` and `ART-COVER-002` when selected, and fall back to the original masters otherwise.
+- `tools/build_book.py` places approved ink art above each entry's flavour text, inside that entry's keep unit. The one-page-keep audit therefore includes the image.
+- Each image prints at its family width, never above native 300 ppi. GPT images are at most 1536 px on the long side, so chapter openers print about 5.1 in wide.
+- Chapter openers and the cover use `ART-CHnn-002` and `ART-COVER-002` once approved, and fall back to the original masters until then.
 - Artwork changes never change the manuscript RC number.
 
 ## Review and honesty
 
-- The orchestrator still reviews contact sheets and placed pages, and updates the hash-bound visual ledger before release.
-- Generated images are recorded as AI-generated, never described as hand-drawn.
+- The orchestrator reviews placed pages and updates the hash-bound visual ledger before release.
+- Generated images are recorded as AI-generated (ChatGPT Work), never as hand-drawn.
 - Rules and deployment diagrams remain source-faithful vector figures and are not generated.

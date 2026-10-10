@@ -2159,13 +2159,13 @@
    "Rope walkways slung between posts over shallow pools",
    "Overturned offering baskets, scattered coins and a smashed clay bowl",
    "Broad drag marks through the mud into tall reeds",
-   "Lizardfolk Scale-Shaman with a feathered staff and troglodyte guards with spears, reptilian crests and tails",
+   "Lizardfolk Scale-Shaman with a feathered staff, with slime-streaked Swamp Goblins in reed canoes and on the walkways, small and furtive",
    "Shallow pools with a few submerged snouts",
    "Fen mist and a pale line of dawn"
   ],
   "activity": [
    "The Scale-Shaman examines an empty plinth",
-   "Guards sniff and scan the reeds",
+   "Swamp goblins lurk among the reed screens with blowpipes",
    "Two tiny thieves hide in the reeds at the far edge"
   ],
   "atmosphere": "Furious, watchful silence before dawn.",
@@ -2173,11 +2173,13 @@
    "Lizardfolk drawn as grounded reptilian people, not cartoon",
    "Not the Titan fen or the barrow",
    "No readable idol markings",
-   "No glow around the amulet (absent)"
+   "No glow around the amulet (absent)",
+   "No troglodytes: only Mire creatures"
   ],
   "sources": [
    "10.4 Scenario 2: The Lizardfolk's Stolen Offerings (Mire)",
-   "1.3.5 The old peoples and border powers"
+   "1.3.5 The old peoples and border powers",
+   "RC488: Swamp Goblins replace Troglodytes"
   ]
  },
  "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN": {

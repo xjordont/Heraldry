@@ -1,0 +1,110 @@
+{
+ "batch": "RC488 owner bestiary and Mire refinements",
+ "owner_instruction": "2026-10-10 Claude Code session",
+ "patches": [
+  {
+   "id": "RC488-01",
+   "status": "approved",
+   "issue": "Undead Champion wields a maul (owner: use a mundane maul)",
+   "find": "- **Great-Axe:** 1d12 slashing damage.",
+   "replace": "- **War Maul:** 1d12 blunt damage.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-02",
+   "status": "approved",
+   "issue": "Stone Sentinel text: it attacks with a stone sword",
+   "find": "grinds forward on legs of carved granite and pounds with fists like falling masonry.",
+   "replace": "grinds forward on legs of carved granite and hews with a greatsword of carved stone.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-03",
+   "status": "approved",
+   "issue": "Stone Sentinel AI: melee distance of its sword (Reach weapon removed)",
+   "find": "and attack the nearest enemy in **Reach**. If no ally is on the battlefield, advance on the nearest visible enemy, then end the activation.",
+   "replace": "and attack the nearest enemy within the melee distance of **Stone Greatsword**. If no ally is on the battlefield, advance on the nearest visible enemy, then end the activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-04",
+   "status": "approved",
+   "issue": "Stone Sentinel attack uses the mundane greatsword (Claymore) damage",
+   "find": "- **Multi-Attack:** Makes two **Giant Stone Sword** attacks during their attack step.\n- **Giant Stone Sword:** **Reach**, 1d6 + 3 blunt damage.",
+   "replace": "- **Multi-Attack:** Makes two **Stone Greatsword** attacks during their attack step.\n- **Stone Greatsword:** 1d12 slashing damage.",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-05",
+   "status": "approved",
+   "issue": "Orc text: one-handed weapon and shield",
+   "find": "*Broad as a doorway and built around a greataxe, the orc",
+   "replace": "*Broad as a doorway and armed with battleaxe and shield, the orc",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-06",
+   "status": "approved",
+   "issue": "Orc attack: one-handed Battleaxe plus Shield Wall",
+   "find": "- **Greataxe:** 1d10 + 1 slashing damage.\n\n**Special Abilities**\n",
+   "replace": "- **Battleaxe:** 1d8 + 2 slashing damage.\n\n**Special Abilities**\n- **Shield Wall:** While adjacent to another allied Orc, this Monster has **+1 AV**.\n",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-07",
+   "status": "approved",
+   "issue": "White Court Guard text: longsword and shield",
+   "find": "a frost-armoured corpse bearing a reach-halberd,",
+   "replace": "a frost-armoured corpse bearing longsword and shield,",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-08",
+   "status": "approved",
+   "issue": "White Court Guard attack: one-handed Longsword plus Shield Wall",
+   "find": "- **Court Halberd:** **Reach**, 1d8 + 2 slashing damage.\n\n**Special Abilities**\n- **Undead:** **Immune** to **Poisoned [dX]**, **Bleeding**, **Frightened**, and **Sleeping**.\n",
+   "replace": "- **Court Longsword:** 1d8 + 2 slashing damage.\n\n**Special Abilities**\n- **Undead:** **Immune** to **Poisoned [dX]**, **Bleeding**, **Frightened**, and **Sleeping**.\n- **Shield Wall:** While adjacent to another allied White Court Monster, this Monster has **+1 AV**.\n",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-09",
+   "status": "approved",
+   "issue": "Giant Scorpion described as man-sized (stays Medium)",
+   "find": "*The size of a cart and banded in chitin plate,",
+   "replace": "*The size of a man and banded in chitin plate,",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-10",
+   "status": "approved",
+   "issue": "Frost Giant described as towering over humans, orcs and ogres (stays Huge)",
+   "find": "*Twice a man's height and blue-skinned, the frost giant goes",
+   "replace": "*Blue-skinned and towering over humans, orcs, and ogres alike, the frost giant goes",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-11",
+   "status": "approved",
+   "issue": "Noxcloth size code Medium",
+   "find": "| 15 | 1 | 3\" | 2 | 4c | L |",
+   "replace": "| 15 | 1 | 3\" | 2 | 4c | M |",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-12",
+   "status": "approved",
+   "issue": "The Mire 2 deploys only Mire creatures: Swamp Goblins replace Troglodytes",
+   "find": "accompanied by Troglodytes equal to **2 + APL/2**",
+   "replace": "accompanied by Swamp Goblins equal to **2 + APL/2**",
+   "expected_count": 1
+  },
+  {
+   "id": "RC488-13",
+   "status": "approved",
+   "issue": "The Mire 5 summons only Mire creatures: Zombies replace Troglodytes",
+   "find": "place **1d2 Boglings** or **1d2 Troglodytes** within",
+   "replace": "place **1d2 Boglings** or **1d2 Zombies** within",
+   "expected_count": 1
+  }
+ ]
+}

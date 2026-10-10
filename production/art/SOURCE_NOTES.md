@@ -1,19 +1,29 @@
 # Manuscript notes found while writing illustration briefs (2026-10-10)
 
-These are reported only; the manuscript was not changed. Each one is a candidate for the contradiction audit or an RC decision by the owner. Until then, the briefs follow the stat block and say so.
+## Resolved in RC488 (owner instruction 2026-10-10)
 
-| Entry | Note | What the art does now |
+| Entry | Issue | RC488 resolution |
 |---|---|---|
-| Undead Champion | The flavour says "maul of fused bone"; the attack is Great-Axe | A great-axe of fused bone; the prompt still quotes "maul" verbatim, so the image model sees both words |
-| Stone Sentinel | The flavour says "fists like falling masonry"; the attack is Giant Stone Sword (Reach) | A slab-blade sword in a block fist |
-| Orc (monster) | The flavour mentions a shield wall; the stat block has a Greataxe and no shield | A greataxe, with a shield slung on its back |
-| White Court Guard | The flavour says they "lock shields"; the stat block gives a halberd only | A halberd and no shield |
-| Basilisk | The flavour's defining trait is a petrifying gaze; the stat block has only Petrifying Blood | Pale eyes, with no gaze effect drawn |
-| Medusa | The stat block lists no gaze ability | Eyes hidden in hood shadow |
-| Giant Scorpion, Gloomspore Jelly | The flavour says "size of a cart"; the size code is M | The size code is followed, with the flavour's scale cues kept |
-| Dire Bear, Giant Skeleton | The flavour says "twice a man's height"; the size code is L | The size code is followed |
-| Frost Giant | The flavour says "twice a man's height"; the size code is H | The size code is followed |
-| Noxcloth | The flavour says "size of a flung cloak"; the size code is L | The size code is followed |
-| Hydra | No head count is given | Five to seven necks |
-| The Mire 2: The Lizardfolk's Stolen Offerings | It deploys Troglodytes, which are otherwise an Undermarches creature | Drawn as written |
-| Antlered Warden | The size code is L ("towering") | Drawn towering, but smaller than the gate |
+| Undead Champion | The flavour said "maul"; the attack was Great-Axe | The attack is now a **War Maul**, 1d12 blunt (the mundane War Maul's damage) |
+| Stone Sentinel | The flavour said "fists"; the attack was Giant Stone Sword with Reach | The flavour now reads "hews with a greatsword of carved stone". The attack is a **Stone Greatsword**: two attacks at 1d12 slashing, the Claymore's damage (the list's greatsword). The AI step now refers to the sword's melee distance |
+| Orc (monster) | Shield-wall flavour, but a greataxe | Now "armed with battleaxe and shield": a **Battleaxe** (1d8 + 2 slashing) and **Shield Wall** (+1 AV beside an allied Orc) |
+| White Court Guard | "Lock shields" flavour, but a halberd only | Now "bearing longsword and shield": a **Court Longsword** (1d8 + 2 slashing) and **Shield Wall** (+1 AV beside an allied White Court Monster) |
+| Giant Scorpion | "Size of a cart" but coded M | Now "The size of a man"; stays M |
+| Frost Giant | "Twice a man's height" but coded H | Now "towering over humans, orcs, and ogres alike"; stays H |
+| Noxcloth | "Size of a flung cloak" but coded L | Now coded M |
+| The Mire 2 | Deployed Troglodytes (an Undermarches creature) | Now **Swamp Goblins** (FIG-52 redrawn) |
+| The Mire 5 | Summon Bog Minions could place Troglodytes | Now **Zombies** |
+
+## Correction
+
+The Basilisk and Medusa already have **Petrifying Gaze (AI Step 1)**. In it, the nearest visible enemy within 6" must pass an SPI Check. On a failure it is Immobilized; on a Critical Failure it is Stunned, gains +4 AV and becomes immune to forced movement. The earlier note that they lacked a gaze was wrong.
+
+The owner's requested 8" cone Gaze (Stunned on a failed SPI Check) was not applied. Adding it would give each creature a second gaze step, so the owner needs to decide whether it should replace or modify Petrifying Gaze.
+
+## Still open
+
+| Entry | Note | What the art does |
+|---|---|---|
+| Giant Scorpion, Gloomspore Jelly | The Jelly is still "the size of a cart" but coded M | Follows the size code |
+| Dire Bear, Giant Skeleton | "Twice a man's height", coded L | Follows the size code |
+| Hydra | No head count is given | Draws five to seven necks |

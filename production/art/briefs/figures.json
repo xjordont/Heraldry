@@ -750,7 +750,7 @@
   "atmosphere": "Tense stealth, a thief moments from being caught.",
   "avoid": [
    "Not the Assassin: no bow, no venom, no ambush pose",
-   "No mask clich\u00e9s",
+   "No mask clichés",
    "Do not show the rapier drawn"
   ],
   "sources": [
@@ -1443,13 +1443,13 @@
   ]
  },
  "ART-MON-ORC": {
-  "identity": "Orc, Greenmark Soldier, medium: a broad, disciplined, grey-skinned raider with lower tusks and a greataxe, a warband member.",
-  "composition": "Full figure in three-quarter view mid-snarl, advancing with a heavy notched cleaver-like greataxe held across the body, trophies swinging from belt.",
+  "identity": "Orc, Greenmark Soldier, medium: a broad, disciplined, grey-skinned raider with lower tusks, armed with battleaxe and shield, a warband member that holds formation.",
+  "composition": "Full figure in three-quarter view mid-snarl, advancing behind a heavy round shield with a notched battleaxe raised in the other hand, trophies swinging from the belt.",
   "details": [
    "Broad as a doorway, grey skin, heavy jaw, lower tusks jutting upward",
-   "Greataxe with a broad, notched, cleaver-like blade",
+   "One-handed battleaxe with a broad notched blade",
    "Crude trophies: bone strings, a skull and teeth, tied at the belt and shoulder",
-   "Layered hide and iron plate scraps, battered shield strapped on back",
+   "Layered hide and iron plate scraps; a heavy iron-rimmed round shield on the forearm, battered and dented",
    "Scarred knuckles and brow",
    "Fierce open-mouthed snarl",
    "Burnt steading gate behind"
@@ -1458,10 +1458,10 @@
   "avoid": [
    "Not the Orc ancestry hero: no tabard, no composed bearing, no clean armour",
    "Not a Bugbear (shaggy, long-armed)",
-   "Weapon is a greataxe, not a sword"
+   "One-handed battleaxe and a shield on the arm: no greataxe, no sword"
   ],
   "sources": [
-   "9.7 The Bestiary, Greenmark Bestiary: Orc [Soldier]"
+   "9.7 The Bestiary, Greenmark Bestiary: Orc [Soldier] (RC488 Battleaxe, Shield Wall)"
   ]
  },
  "ART-MON-BUGBEAR": {
@@ -1905,11 +1905,11 @@
   ]
  },
  "ART-MON-UNDEAD-CHAMPION": {
-  "identity": "Undead Champion, Ashlands Soldier, medium: a slab of dead muscle raised from the largest corpses, wielding a heavy great-axe built of fused bone.",
-  "composition": "Three-quarter view of the champion trudging forward, great-axe dragging low and then rising across the body.",
+  "identity": "Undead Champion, Ashlands Soldier, medium: a slab of dead muscle raised from the largest corpses, swinging a two-handed war maul of fused bone.",
+  "composition": "Three-quarter view of the champion trudging forward, the war maul hauled back over one shoulder in both hands, ready to fall with siege-engine weight.",
   "details": [
    "Huge, bloated shoulders and a thick neck with dead pale skin",
-   "Great-axe with a head and haft built from fused bone and iron",
+   "Two-handed war maul whose massive head is a knot of fused bone bound in iron bands on a long haft",
    "Scraps of rusted plate on shoulders and forearms",
    "Bald scarred head with sunken eyes",
    "Chains and rusted rivets across the chest",
@@ -1920,10 +1920,10 @@
   "avoid": [
    "Not an Ogre or a living Fighter: it is dead, pale and plated in scraps",
    "Not a Giant Skeleton: this has flesh",
-   "Do not hold a maul or hammer: the stat block gives a great-axe"
+   "Weapon is a two-handed war maul of fused bone: no axe blade"
   ],
   "sources": [
-   "9.7 The Bestiary, Ashlands Bestiary: Undead Champion [Soldier]"
+   "9.7 The Bestiary, Ashlands Bestiary: Undead Champion [Soldier] (RC488 War Maul)"
   ]
  },
  "ART-MON-GARGOYLE": {
@@ -1949,12 +1949,12 @@
   ]
  },
  "ART-MON-STONE-SENTINEL": {
-  "identity": "Stone Sentinel, Ashlands Brute, medium: a faceless granite construct that grinds forward with a giant stone sword and cannot be pushed.",
-  "composition": "Three-quarter view of the sentinel striding forward through a ruined hall, giant stone blade slab swung low in one blocky fist.",
+  "identity": "Stone Sentinel, Ashlands Brute, medium: a faceless granite construct of the old empire that hews with a greatsword of carved stone and cannot be pushed.",
+  "composition": "Three-quarter view of the sentinel striding forward through a ruined hall, a two-handed greatsword of carved stone raised in both blocky fists.",
   "details": [
    "Blocky humanoid made of carved granite plates",
    "Smooth faceless head with no features",
-   "Giant stone sword: a slab blade carved of the same granite",
+   "Two-handed greatsword carved from the same granite, a long straight slab blade with a plain cross-guard",
    "Thick legs like pillars with chiselled seams",
    "Moss and chipped edges",
    "Dust trailing from joints",
@@ -1967,7 +1967,7 @@
    "No face or eyes"
   ],
   "sources": [
-   "9.7 The Bestiary, Ashlands Bestiary: Stone Sentinel [Brute]"
+   "9.7 The Bestiary, Ashlands Bestiary: Stone Sentinel [Brute] (RC488 Stone Greatsword)"
   ]
  },
  "ART-MON-MINOTAUR": {
@@ -2281,14 +2281,14 @@
   ]
  },
  "ART-MON-NOXCLOTH": {
-  "identity": "Noxcloth, Undermarches Controller, large: a fold of black leathery hide hanging from the cavern roof that drops to smother the head; it flies.",
+  "identity": "Noxcloth, Undermarches Controller, medium: a fold of black leathery hide the size of a flung cloak that hangs from the cavern roof and drops to smother the head; it flies.",
   "composition": "Wide view from below: the flat cloak-like creature half-peeled off the cavern ceiling, edges billowing over a torch-carrying figure's silhouette beneath.",
   "details": [
    "A cloak-shaped fold of black leathery skin with a trailing hem",
    "Ragged edges and a ridge of muscle",
    "Underside with faint ribs and a toothless slit",
    "No visible eyes",
-   "Extremely flat but wider than a man",
+   "Extremely flat, about the size of a flung cloak",
    "Snuffed torch below with a thin smoke line",
    "Rock ceiling folds that match the body"
   ],
@@ -2299,7 +2299,7 @@
    "Do not draw a face"
   ],
   "sources": [
-   "9.7 The Bestiary, Undermarches Bestiary: Noxcloth [Controller]"
+   "9.7 The Bestiary, Undermarches Bestiary: Noxcloth [Controller] (RC488 size M)"
   ]
  },
  "ART-MON-TROGLODYTE": {
@@ -2721,12 +2721,12 @@
   ]
  },
  "ART-MON-WHITE-COURT-GUARD": {
-  "identity": "White Court Guard, Pale City Soldier, medium: a frost-armoured noble corpse of the undead court's rank and file, holding a reach-halberd at a ceremonial slant.",
-  "composition": "Frontal three-quarter view of the guard standing at attention on a frozen avenue, halberd held at a ceremonial slant across the body.",
+  "identity": "White Court Guard, Pale City Soldier, medium: a frost-armoured noble corpse of the undead court's rank and file, bearing longsword and shield.",
+  "composition": "Frontal three-quarter view of the guard standing in drill position on a frozen avenue, kite shield braced forward, longsword held upright at the shoulder.",
   "details": [
    "Ornate courtly armour with engraved fluting and gilt scrolls, frosted",
    "Frozen fur mantle over the shoulders",
-   "Reach-halberd with a decorated blade and tasselled haft",
+   "Longsword with a frosted blade held upright, and a tall kite shield with a plain frosted face (no readable heraldry)",
    "Visor up on an open helm to show a frozen corpse face",
    "Rime on every plate",
    "Heavy plumed helm with a drooping plume",
@@ -2734,13 +2734,13 @@
   ],
   "atmosphere": "Cold ceremonial discipline.",
   "avoid": [
-   "Not the Sentinel (no greatshield)",
-   "Not the Undead Sentinel (rust, rubble)",
+   "Not the White Court Sentinel: an ordinary shield, not a greatshield, and a sword",
+   "Not the Undead Sentinel (rust, rubble, halberd)",
    "Not the Archer or Executioner",
-   "No actual shield"
+   "No polearm"
   ],
   "sources": [
-   "9.7 The Bestiary, Pale City Bestiary: White Court Guard [Soldier]"
+   "9.7 The Bestiary, Pale City Bestiary: White Court Guard [Soldier] (RC488 Court Longsword, Shield Wall)"
   ]
  },
  "ART-MON-RATKIN-SEER": {
@@ -2867,7 +2867,7 @@
   ],
   "atmosphere": "Immovable frozen loyalty.",
   "avoid": [
-   "No polearm or halberd: that is the Guard",
+   "No polearm; not the Guard's longsword and kite shield",
    "Not the Undead Sentinel (tower shield and halberd)",
    "Do not show it standing tall"
   ],
@@ -3008,10 +3008,10 @@
   ]
  },
  "ART-MON-FROST-GIANT": {
-  "identity": "Frost Giant, Pale City Elite, huge: a blue-skinned giant in glacier-ice armour wielding a greataxe, ruling the high drifts.",
-  "composition": "Wide low-angle view of the giant striding down a snowy street, greataxe raised overhead in two hands, boulder in the other arm's crook.",
+  "identity": "Frost Giant, Pale City Elite, huge: a blue-skinned giant that towers over humans, orcs and ogres alike, armoured in glacier-ice and wielding a greataxe.",
+  "composition": "Wide low-angle view of the giant striding down a snowy street, greataxe raised overhead, a tiny human figure at its feet for scale.",
   "details": [
-   "Twice a man's height, blue skin rendered by dense hatching",
+   "Towering far above humans, orcs and ogres; blue skin rendered by dense hatching",
    "Glacier-ice plate armour with jagged edges",
    "Greataxe with a crescent blade",
    "Boulder tucked under the arm",
@@ -3026,7 +3026,7 @@
    "No horns on the helm"
   ],
   "sources": [
-   "9.7 The Bestiary, Pale City Bestiary: Frost Giant [Elite]"
+   "9.7 The Bestiary, Pale City Bestiary: Frost Giant [Elite] (RC488 description)"
   ]
  },
  "ART-MON-WHITE-DRAGON": {
@@ -3163,7 +3163,7 @@
   ]
  },
  "ART-MON-GIANT-SCORPION": {
-  "identity": "Giant Scorpion, Sun-Drowned Soldier, medium: a banded chitin-plated desert scorpion with two crushing pincers and a venom-dripping sting arched over its back.",
+  "identity": "Giant Scorpion, Sun-Drowned Soldier, medium: a man-sized, banded chitin-plated desert scorpion with two crushing pincers and a venom-dripping sting arched over its back.",
   "composition": "Three-quarter view of the scorpion erupting from a dune, pincers wide, tail arched forward over its back, sand cascading.",
   "details": [
    "Exactly eight legs plus two pincers",
@@ -3172,7 +3172,8 @@
    "Tail curved over the back ending in a barbed sting with a venom drop",
    "Small eyes on the front of the head",
    "Sand cascading from the shell",
-   "Dune field behind"
+   "Dune field behind",
+   "About the size of a man: its arched sting rises to a man's head height"
   ],
   "atmosphere": "Sudden eruption from the sands.",
   "avoid": [
@@ -3181,7 +3182,7 @@
    "Do not draw wings"
   ],
   "sources": [
-   "9.7 The Bestiary, Sun-Drowned Bestiary: Giant Scorpion [Soldier]"
+   "9.7 The Bestiary, Sun-Drowned Bestiary: Giant Scorpion [Soldier] (RC488 'size of a man')"
   ]
  },
  "ART-MON-SKELETON-ARCHER": {
