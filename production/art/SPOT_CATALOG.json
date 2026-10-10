@@ -1,5 +1,5 @@
 {
- "source_sha256": "38d3e0572b9a5551436ed4ab8cbc6249f085b2987036a36553bb0edb9903ac86",
+ "source_sha256": "545184806715afdcdaa79d98ee49d721c74ec944ff3511573a8ff32d75c46c4d",
  "counts": {
   "cover": 1,
   "chapter": 11,
@@ -7808,7 +7808,7 @@
     "9.7 The Bestiary",
     "Sun-Drowned Bestiary"
    ],
-   "flavour": "A great serpent with an almost-human face and the patient cunning of something very old, the desert naga coils among the tomb-pillars. It spits venom from a distance and crushes what comes close, hexing the strong to leave them weak. The priest-kings kept them as guardians and oracles. They guard still. They no longer answer.",
+   "flavour": "A great serpent with an almost-human face and the patient cunning of something very old, the desert naga coils among the tomb-pillars. It spits venom from a distance and crushes what comes close, hexing the strong into an unnatural sleep. The priest-kings kept them as guardians and oracles. They guard still. They no longer answer.",
    "facts": {
     "role": "Controller",
     "size_code": "L"
@@ -7840,7 +7840,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Desert Naga [Controller]"
     ]
    },
-   "spec_sha256": "4df88828bc40dc41d86e78ac2de83c715e605305eaf2707cb8f6a6c0a7ca2fcc"
+   "spec_sha256": "e57d593dba7c57938314bb8622c8a50d343055026a2e92bab1bd029de1995455"
   },
   {
    "id": "ART-MON-FIRE-ELEMENTAL",
