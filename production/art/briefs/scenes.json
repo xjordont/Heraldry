@@ -1,0 +1,2602 @@
+{
+ "_meta": {
+  "author": "scene brief worker",
+  "source": "RC487"
+ },
+ "ART-COVER-002": {
+  "identity": "The Recommended First Party of Heraldry Skirmish (Human Fighter, Elf Ranger, Dwarf Cleric, Halfling Rogue), four Heroes on an expedition into the monster-haunted ruins of the Dying Lands while a rival party works the same ground.",
+  "composition": "Low three-quarter view from ground level; the four-Hero party is small in the lower third, advancing between rain-slick flagstones. A broken shrine arch frames the scene on one side and the upper half of the picture is open ruled sky, left empty for the typeset title.",
+  "details": [
+   "Broken gothic shrine arch with a missing keystone and a headless saint in a wall niche",
+   "Rain drawn as sparse fine diagonal strokes, puddles on the flagstones reflecting the arch",
+   "Human Fighter in worn mail with sword and shield at the front, Elf Ranger with longbow, Dwarf Cleric in plate with a holy symbol on a staff or mace, small Halfling Rogue slipping along the wall edge",
+   "A rival party's tattered banner on a pole planted across the rubble, no readable device",
+   "Fallen columns, toppled statue fragments and moss on the stones",
+   "Treeline at the far edge with one Monster silhouette standing between the trunks, shape only",
+   "Lantern hung on the Ranger's pack, soaked cloaks, packs and bedrolls"
+  ],
+  "activity": [
+   "The four Heroes advance in a loose staggered file, weapons half-drawn, looking toward the banner",
+   "Halfling Rogue crouches at the edge peering at the banner pole",
+   "Monster silhouette stands motionless in the trees, unseen by the party"
+  ],
+  "atmosphere": "Wary, rain-heavy and austere; adventurers small against withered grandeur.",
+  "avoid": [
+   "Do not render the title or any lettering on banners",
+   "Monster only a dark silhouette, not a detailed creature",
+   "Do not make the party large or heroic-posed; no sunburst or glow",
+   "Do not give the rival banner a heraldic device that reads as a symbol"
+  ],
+  "sources": [
+   "1.1 What is Heraldry Skirmish",
+   "1.2 The Grim World",
+   "Recommended First Party (6.x)"
+  ]
+ },
+ "ART-CH01-002": {
+  "identity": "The Dying Lands as a whole, seen from a broken mountain pass: forest on one flank, frozen peaks on the other, and the dead empire's ruined cities sprawled on the eastern horizon.",
+  "composition": "Wide vista from a high pass; a cracked imperial road winds down from the lower foreground toward the skeletal towers of a dead city on the horizon. A small party with a banner pauses at lower left, road leading the eye to the city.",
+  "details": [
+   "Straight, patient imperial road paved in broken slabs, with weeds and a leaning milestone half-swallowed by roots",
+   "Forest mass pressing in on one side, drawn as dense stippled and hatched canopy",
+   "Frozen peaks with fine sparse snow-line hatching on the other side",
+   "Distant dead city of snapped spires, collapsed domes and empty arches in thin fine lines",
+   "Fractured pass rocks and a cairn in the foreground",
+   "Wisps of smoke or ash thinly ruled over the far city",
+   "Sparse horizontal cloud strokes"
+  ],
+  "activity": [
+   "Party of four stands on the road at lower left, one holding a banner on a pole, looking down toward the city",
+   "No other figures"
+  ],
+  "atmosphere": "Vast, hushed and fatalistic; the world laid out like a wound.",
+  "avoid": [
+   "Do not repeat the cover composition or the Greythorn bastion portrait; no walled town visible",
+   "Party small, banner without legible device",
+   "Do not include any monsters or dragons in the sky",
+   "No panorama of all six climates (that is the 1.3.2 world image)"
+  ],
+  "sources": [
+   "1.3 The Dying Lands",
+   "1.3.2 The Six Climates of Ruin"
+  ]
+ },
+ "ART-CH02-002": {
+  "identity": "Two rival adventuring parties of the Dying Lands meeting in a monster-haunted ruin, each fighting for the same objective in a PvPvE skirmish.",
+  "composition": "Wide shot of a fog-filled valley of ruined walls at first light. One party crouches behind cover at lower left, the second is small at far right, a horizontal fog band crosses the middle and a monster silhouette moves in the mist between them.",
+  "details": [
+   "Low ruined walls, broken arches and collapsed cottages half-lost in fog",
+   "Fog shown by sparse fine horizontal lines and blank paper",
+   "First light as a few long shadows falling lower right",
+   "Left party behind a toppled wall section, shields and a crossbow barrel just visible",
+   "Right party behind a standing gable end, a banner pole barely visible",
+   "Monster as a large dark silhouette half-dissolved in the mist, ambiguous shape",
+   "Dead tree and a broken cart wheel for scale"
+  ],
+  "activity": [
+   "Each party of four crouches or kneels behind cover with weapons ready, watching the other",
+   "Monster slouches through the fog between them, neither party engaging it yet"
+  ],
+  "atmosphere": "Tense stillness before violence.",
+  "avoid": [
+   "Do not show combat actually happening; this is the moment of sighting",
+   "Monster remains a silhouette, not a detailed portrait",
+   "Keep it distinct from the cover (no rain, no shrine arch) and from ch.5 bridge melee",
+   "No gore"
+  ],
+  "sources": [
+   "2.7 example (line 804)",
+   "1.1 What is Heraldry Skirmish"
+  ]
+ },
+ "ART-CH03-002": {
+  "identity": "The turn structure of Heraldry Skirmish, the start of a new round of activations, imagined as the dawn of a new round in the field.",
+  "composition": "Wide shot with a low horizon; a weary party gathers behind a ruined wall at left and middle ground, while a lone chapel bell tower stands as a silhouette at right over a drowned field.",
+  "details": [
+   "Chapel bell tower with a cracked belfry and a rope-less bell, no cross or legible mark",
+   "Drowned field with standing water reflecting thin sky, fence posts and a half-sunken plough",
+   "Ruined wall with a broken top and fallen coping stones",
+   "Faint horizon glow suggested by blank paper above and sparse ruled strokes",
+   "Reeds and dead stalks stippled across the water",
+   "Party gear: bedrolls, shields stacked on the wall, a shared flask",
+   "A single crow on the wall top"
+  ],
+  "activity": [
+   "Four tired Heroes rise and stir behind the wall, one buckling armour, one tending a bandage, one scanning ahead, one asleep sitting up",
+   "All small, back or three-quarter view"
+  ],
+  "atmosphere": "Weary vigilance in the first grey light.",
+  "avoid": [
+   "Do not show the Heroes heroically posed; they are exhausted",
+   "Bell tower is rural chapel scale, not Sablekeep or any Bastion",
+   "Avoid glowing sun disk or rays",
+   "No monster in view"
+  ],
+  "sources": [
+   "3.x initiative example (line 1035)"
+  ]
+ },
+ "ART-CH04-002": {
+  "identity": "The movement chapter of Heraldry Skirmish, imagined as an expedition crossing a ruined imperial aqueduct over a gorge.",
+  "composition": "A strong diagonal of a broken aqueduct across the frame, deep gorge falling away beneath. Figures are caught mid-motion on different spans, with the drop dominating the lower half.",
+  "details": [
+   "Roman-like arched aqueduct with collapsed spans, exposed rubble core and broken parapets",
+   "Ivy and roots hanging from the arches",
+   "Gorge floor far below drawn in fine light lines, a thread of river",
+   "Rope tied off to an arch pier and hanging into a gap",
+   "Loose stones falling from a crumbling edge",
+   "Wind-bent dead trees on the gorge rim",
+   "Packs and a lantern slung on climbers"
+  ],
+  "activity": [
+   "One Hero climbs a rope up a broken span",
+   "One Hero leaps a gap between spans, cloak streaming",
+   "One Hero braces on a solid pier with hand outstretched to catch the others",
+   "A fourth waits further back on the intact section"
+  ],
+  "atmosphere": "Vertigo and strain; the world coming apart under their feet.",
+  "avoid": [
+   "Not the stone bridge of ch.5 and not the Chasm Crossing scenario ledges (this is an arched aqueduct in open air)",
+   "No monsters",
+   "Do not depict dimensions or jump distances",
+   "No lettering on any stones"
+  ],
+  "sources": [
+   "4.x forced movement example (line 1374)",
+   "4.4.9 Jump (as context)"
+  ]
+ },
+ "ART-CH05-002": {
+  "identity": "The reaction and melee rules of Heraldry Skirmish, imagined as a desperate fight against undead soldiers of the Ashlands.",
+  "composition": "Narrow stone bridge seen from a low three-quarter angle; the clash at centre, shield against shield. Ranks of undead recede into fog behind, the river far below.",
+  "details": [
+   "Narrow humped stone bridge with a cracked parapet and a missing section of coping",
+   "Undead soldiers in rusted helms, tattered surcoats and corroded mail, shields pocked and splintered",
+   "Adventurers in mismatched gear locking shields, one bracing a spear",
+   "One hero falling back wounded, supported by a comrade, dropped weapon at their feet",
+   "Fog bank swallowing the far end with more helmets and spear points",
+   "Dark river far below with a few bleak reeds",
+   "Broken arrows stuck in the bridge deck"
+  ],
+  "activity": [
+   "Three adventurers hold the line shield-to-shield",
+   "A wounded hero staggers back, clutching their side",
+   "Undead soldiers push forward in a disciplined rank, faces hollow"
+  ],
+  "atmosphere": "Grim last stand without gore.",
+  "avoid": [
+   "Do not repeat ch.2 (parties across a valley) or ch.4 (aqueduct climbing)",
+   "No gore or dismemberment",
+   "Undead are soldiers, not skeleton cartoons or a named boss",
+   "No lettering on shields"
+  ],
+  "sources": [
+   "5.x Reactions example (line 1428)",
+   "1.3.5 Monstrous Threats (Restless Dead)"
+  ]
+ },
+ "ART-CH06-002": {
+  "identity": "Party creation and the Town Phase, imagined as a crowded hiring hall in a Bastion where adventurers bargain over contracts.",
+  "composition": "Interior wide shot of a timbered hall; a contract nailed to a post at the focal centre, figures grouped around it beneath captured banners, a clerk at one side with a ledger and coin scales.",
+  "details": [
+   "Heavy timber hall with beams, a long bench, a hearth in the back wall and smoke-stained rafters",
+   "Captured banners hanging from the rafters, tattered and without legible devices",
+   "Contract sheet nailed to a post, seal dangling, no readable writing",
+   "Dwarf with braided beard and pack, elf in light armour, ratkin in scavenged scraps with a hunched posture, orc with tusks and heavy shoulders, halfling holding a tankard, human fighter in mail",
+   "Clerk behind a counter with a ledger, quill and a pair of coin scales",
+   "Stacked barrels, a notice board of pinned papers drawn as blank rectangles",
+   "Mud and straw on the floor, a dog or a rat under the bench"
+  ],
+  "activity": [
+   "Six adventurers of different ancestries cluster around the post, pointing and haggling",
+   "Clerk weighs coin on the scales, a hand pressed on the ledger",
+   "Others lounge at benches in the background"
+  ],
+  "atmosphere": "Mercenary bustle, tired and mercantile.",
+  "avoid": [
+   "Not the stronghold War Room (ch.11) - this is a public Bastion hall with many strangers",
+   "Do not show readable text on the contract",
+   "No Greythorn-specific features",
+   "Ratkin must look like rat-folk, not rats, and not comic"
+  ],
+  "sources": [
+   "Recommended First Party (line 2631)",
+   "6.9 Ancestries",
+   "6.13 Classes",
+   "1.3.3 The Six Bastions"
+  ]
+ },
+ "ART-CH07-002": {
+  "identity": "The equipment chapter, imagined as a Deepwarden forge cut into the rock, the best forges in the surviving world.",
+  "composition": "Interior of a carved rock forge; the smith at the focal centre quenching a glowing blade in a trough, steam rising; racks of finished mail, helms and axes framing both sides.",
+  "details": [
+   "Rough-hewn rock walls with tool marks and a chimney flue disappearing into the ceiling",
+   "Massive anvil, bellows, quench trough and tongs",
+   "Blade shown as a bright blank-paper shape with steam in fine lines",
+   "Racks of mail shirts, helms and axes along both walls",
+   "Smith in a leather apron with heavy forearms, a dwarf in a plain coif",
+   "Apprentice working the bellows at one side",
+   "Hanging lanterns and an ingot stack, coal bin and sparks as stippling"
+  ],
+  "activity": [
+   "Smith lowers a blade into the trough",
+   "Apprentice leans on the bellows handle",
+   "No other figures"
+  ],
+  "atmosphere": "Hard, honest labour in a stone-bound city.",
+  "avoid": [
+   "Not the Armoury (stronghold) - this is a master forge in Deepwarden",
+   "No fire glow effects, show fire with ink and blank paper",
+   "No readable maker's marks",
+   "Do not turn the Deepwarden bastion portrait into this - interior only"
+  ],
+  "sources": [
+   "7.6 example (Masterwork Longsword, Adamantine Buckler)",
+   "7.8 Melee Weapons",
+   "7.10 Armour",
+   "1.3.3 Deepwarden"
+  ]
+ },
+ "ART-CH08-002": {
+  "identity": "The magic chapter, imagined as a lone caster in the burned shell of an academy library, the arcane inheritance of broken empires.",
+  "composition": "Tall broken shelves frame a single figure at night; pages and embers swirl upward around them as a ring of force flares from an outstretched hand.",
+  "details": [
+   "Gutted gothic library hall with charred shelves rising out of frame and a roofless vault with stars through gaps",
+   "Burnt codices and scraps of paper whirling in a spiral, pages blank or with illegible scribble only",
+   "Ring of force drawn as concentric thin ink rings and radiating short lines from the hand",
+   "Caster in a scorched robe, hood back, staff or book at the belt",
+   "Collapsed ladder and fallen bookstands on the floor",
+   "Ash and ember stippling",
+   "A statue or bust with a broken face on a plinth"
+  ],
+  "activity": [
+   "The caster stands braced, arm outstretched, robes whipped upward by the rising pages",
+   "No one else present"
+  ],
+  "atmosphere": "Solitary, perilous, wonder tinged with ruin.",
+  "avoid": [
+   "No readable script on the pages",
+   "Not the Fallen Observatory scenario (this is a library, not a dome)",
+   "Avoid colour or glow effects; use line and solid black",
+   "Do not show a specific spell mechanic"
+  ],
+  "sources": [
+   "8.2 casting example (line 5417)",
+   "1.3.4 Magic in the Dying Lands (Arcane Spells)"
+  ]
+ },
+ "ART-CH09-002": {
+  "identity": "The Bestiary chapter, imagined as the aftermath of a hunt at the edge of the Greenmark, with a slain beast too large to drag home.",
+  "composition": "Carcass sprawled across the foreground, party standing in the middle ground, dark treeline behind with glinting eyes.",
+  "details": [
+   "Huge slain dire bear seen only in part - a shaggy flank, a slumped head and a great clawed paw - half covered by a cast net, too large to drag home",
+   "Spears and a broken net rope across the carcass",
+   "Crows landing and clustering on the carcass",
+   "Hunters with boar spears, hooded cloaks, a hand-axe, a lantern, one wiping a blade",
+   "Forest edge of tall oaks and undergrowth drawn as dense black hatching",
+   "Several pairs of small eyes glinting in the dark treeline",
+   "Trampled grass and a fallen bow"
+  ],
+  "activity": [
+   "Party of four stands over the beast in the middle ground, one kneeling to measure it, one scanning the treeline",
+   "Crows mob the carcass"
+  ],
+  "atmosphere": "Hard-won victory under watching eyes.",
+  "avoid": [
+   "Not the Hunt the Wild Beast scenario, the Giant Tarantula or the Broodmother; the bear is a partial carcass, never a portrait",
+   "No gore close-up; carcass drawn with restraint",
+   "Eyes in the treeline are tiny dots, not creatures",
+   "Not a trophy-pose heroic image"
+  ],
+  "sources": [
+   "1.3.5 Monstrous Threats",
+   "9.7 Greenmark Bestiary (Dire Bear)"
+  ]
+ },
+ "ART-CH10-002": {
+  "identity": "The Scenarios chapter, imagined as a party at a ruined crossroads choosing which of the six climates to enter.",
+  "composition": "Waystone at the centre; six roads fan out from the crossroads toward six distant landscapes along the horizon, each distinguishable in miniature.",
+  "details": [
+   "Weathered carved waystone with worn pictographs that read as shapes, not letters",
+   "Six roads, each with a different surface: root-split flagstones, soot-black pavement, a gaping cave road, snow-edged track, sand-drifted road, plank causeway",
+   "Horizon vignettes: forest line, ruined city skyline, cave mouths in mountains, ice-locked towers, dunes and tomb-teeth, fen with stilts",
+   "A gibbet or broken signpost stub and a milestone",
+   "Small party gathered close to the stone, one tracing its carving with a gloved finger",
+   "Dark clouds ruled lightly across the sky",
+   "Dried grass and thistle around the junction"
+  ],
+  "activity": [
+   "Four Heroes cluster at the waystone, reading and pointing down different roads",
+   "No other figures"
+  ],
+  "atmosphere": "Choice and foreboding at the edge of the known.",
+  "avoid": [
+   "Not the 1.3.2 mountain-spine panorama or the ch.1 pass vista",
+   "Do not letter the stone",
+   "Six landscapes must stay small and simple, no dragons"
+  ],
+  "sources": [
+   "10.4 Scenario 2: The Whispering Grove (line 12042)",
+   "1.3.2 The Six Climates of Ruin"
+  ]
+ },
+ "ART-CH11-002": {
+  "identity": "The Campaign chapter, imagined as a battered party returning to its Stronghold at dusk after an expedition.",
+  "composition": "Gate at right; a procession advances along a muddy track from the left toward a palisade gate, fen lanterns as focal points, watchers on the wall above.",
+  "details": [
+   "Palisade of sharpened timbers with a gatehouse and a small tower, ditch with spikes in front",
+   "Muddy rutted track with puddles reflecting lantern light",
+   "Lantern carried on a pole, hooked lantern hanging at the gate, as areas of untouched paper amid dense hatching",
+   "Litter made of two poles and a cloak carrying a wounded Hero",
+   "Reed clumps and a fen mist drawn sparsely",
+   "Watchers on the wall with torches and spears, silhouetted",
+   "Salvaged stonework patched into the palisade base"
+  ],
+  "activity": [
+   "Four to six figures trudge in single file, two carrying the litter",
+   "One watcher on the wall raises a hand",
+   "Gate half open"
+  ],
+  "atmosphere": "Exhausted homecoming, thin hope.",
+  "avoid": [
+   "Not a grand castle - a salvage-built palisade stronghold",
+   "Do not repeat the construction scene of 11.1 (no scaffolding)",
+   "No monster in view",
+   "Lanterns not glowing with rays"
+  ],
+  "sources": [
+   "11.x Journey Home example (line 15403)",
+   "11.3 Building the Stronghold",
+   "11.1 Campaign Overview"
+  ]
+ },
+ "ART-WOR-1-2-THE-GRIM-WORLD": {
+  "identity": "The Grim World: kings, bishops and warlords raise banners over land they can barely hold, and peasants bear the cost.",
+  "composition": "Mid-distance view of a burnt farmstead yard with two warlords' banners planted on opposite sides; the tax cart and armed men fill the yard while a peasant family flees down a lane to one side.",
+  "details": [
+   "Blackened timber farmhouse with a fallen roof and a standing chimney",
+   "Two tall banner poles on either side of the yard with tattered banners of different cut (no legible devices)",
+   "Tax collector's cart with strongbox, ledger and a seated clerk",
+   "Armed men in mismatched gear holding spears, one counting sacks",
+   "Burnt barn, scattered tools and a dead cow or ox",
+   "Fleeing peasant family on the lane with bundles, a child carried, a dog",
+   "Distant smoke column and trampled fields"
+  ],
+  "activity": [
+   "Armed men load the cart and loom over the yard",
+   "The family flees down the lane, looking back",
+   "Clerk records the taking"
+  ],
+  "atmosphere": "Bitter, mundane cruelty of petty war.",
+  "avoid": [
+   "No monsters; the cruelty here is human",
+   "Do not show violence against the family",
+   "Banners must not carry readable heraldry",
+   "Distinct from the 1.3.5 abandoned monster-held village street"
+  ],
+  "sources": [
+   "1.2 The Grim World",
+   "1.3.3 The Six Bastions (lesser lords)"
+  ]
+ },
+ "ART-WOR-1-3-1-THE-FALL": {
+  "identity": "The Fall, the unexplained end of the old empire: no one agrees what caused it, but the ruins of imperial power litter the land.",
+  "composition": "The colossal broken head of an imperial statue half-buried in a ploughed field fills the middle ground, with a farmer and ox tiny beside it.",
+  "details": [
+   "Giant stone head with a crowned brow, one cracked eye socket and half the face sunk in earth",
+   "Ploughed furrows curving around the head",
+   "Moss and crow-perched weeds on the cracks",
+   "Broken statue hand or sandal fragment elsewhere in the field",
+   "Distant ridge with a ruined colonnade",
+   "Low overcast sky with thin ruled strokes",
+   "Farmer's plough and a single ox, a crow on the ear"
+  ],
+  "activity": [
+   "A farmer stands with a goad stick beside the ox, looking up at the head",
+   "No other figures"
+  ],
+  "atmosphere": "Silent grandeur fallen to farm-field, unexplained.",
+  "avoid": [
+   "Not the Cursed Colossus of the Waste (that is in sand, a priest-king)",
+   "No inscription on the plinth",
+   "Do not suggest the cause of the Fall (no fire, no sky tear)"
+  ],
+  "sources": [
+   "1.3.1 The Fall"
+  ]
+ },
+ "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN": {
+  "identity": "The shape of the Dying Lands: broken mountains down the spine, the dead empire in the east, the great forest in the west, ice in the north, dunes in the south and swamps in the south-east.",
+  "composition": "A sweeping panorama from the spine of the broken mountains with all six climates under one sky: forest to the west, dead city to the east, ice to the north, dunes to the south and drowned fen to the south-east, with dark cavern mouths in the mountainside below; a lone surveyor with a staff stands in the foreground.",
+  "details": [
+   "Jagged mountain crest with a cairn and a rock ledge foreground",
+   "Western forest as dense hatched mass running to a pale coast",
+   "Eastern city skyline of snapped towers and domes in fine lines",
+   "Northern ice fields with glacial walls and thin hatching",
+   "Southern dunes with tomb-teeth along the horizon",
+   "South-eastern fen of reeds, black pools and drowned trees in sparse fine lines",
+   "Dark cavern mouths and old mine adits in the mountain flank below the ledge (the Undermarches)",
+   "Imperial roads as straight lines radiating from the east across the lands",
+   "Surveyor with a staff, a rolled map and a leather satchel"
+  ],
+  "activity": [
+   "The surveyor stands at the cairn looking across the lands, one hand raised to shade eyes"
+  ],
+  "atmosphere": "Immense, quiet and unsettled.",
+  "avoid": [
+   "Not the ch.1 pass vista (that has a party and a single road toward one city)",
+   "No dragons or creatures",
+   "No map lettering",
+   "No hard compass-rose graphic"
+  ],
+  "sources": [
+   "1.3.2 The Six Climates of Ruin"
+  ]
+ },
+ "ART-CLI-THE-GREENMARK": {
+  "identity": "The Greenmark, the great temperate forest of the surviving world, larger than the maps, where roots take roads and the forest does not recognize human law.",
+  "composition": "A forest road at ground level in deep woods, roots lifting the paving, trees seeming to lean in; a moss-warm grove circle opens in the middle distance.",
+  "details": [
+   "Ancient oaks with fluted trunks and heavy canopy",
+   "Road slabs broken and swallowed by roots, a milestone half-buried and tilted",
+   "Foresters' warning signs cut in bark as slashes and notches, not letters",
+   "Upright hound-like shapes between trunks, dark and indistinct",
+   "Grove-circle of standing mossy stones with low mist and a patch of bare paper where snow has melted",
+   "Fern, bracken, fallen logs, toadstools",
+   "Light shafts as blank paper between trunks"
+  ],
+  "activity": [],
+  "atmosphere": "Ancient, watchful and indifferent to humans.",
+  "avoid": [
+   "No people; the climate is the subject",
+   "Do not repeat the Whispering Grove scenario (that has humming standing stones in a clearing)",
+   "Hound shapes remain barely seen silhouettes",
+   "No letters in the bark signs"
+  ],
+  "sources": [
+   "1.3.2 The Greenmark"
+  ]
+ },
+ "ART-CLI-THE-ASHLANDS": {
+  "identity": "The Ashlands, the cities of the old empires after fire, law and death finished with them, where the city still knows how to count.",
+  "composition": "Street-level one-point perspective down a soot-black avenue between collapsed forums and leaning temples, with a lit shrine lamp in the near corner.",
+  "details": [
+   "Black-streaked pavement with ash drifts and cracked flagstones",
+   "Collapsed forum colonnade, columns snapped and lying across the street",
+   "Temple facade leaning over a plaza filled with soot",
+   "Shrine niche with a small lit lamp and no worshippers",
+   "Crypt entrance gaping where a forum floor gave way",
+   "Far end: an armoured patrol silhouette crossing an old boundary line",
+   "Ash stippling and thin falling flecks"
+  ],
+  "activity": [
+   "A small file of armoured dead patrols far down the street, tiny"
+  ],
+  "atmosphere": "Austere, ordered and dead.",
+  "avoid": [
+   "Not the Hollow Crown throne room or any scenario ruin",
+   "Patrol only as tiny silhouettes",
+   "No inscriptions",
+   "Not a sunny scene; heavy overcast"
+  ],
+  "sources": [
+   "1.3.2 The Ashlands"
+  ]
+ },
+ "ART-CLI-THE-UNDERMARCHES": {
+  "identity": "The Undermarches, the endless underworld beneath every foundation, deepest under the broken mountains, where deep elves keep their own law.",
+  "composition": "A cutaway view: a mine shaft or cellar above breaking through into a smooth round tunnel no pick made; a small surveyor with a lantern and an inconsistent map stands at the join.",
+  "details": [
+   "Cellar barrels and a staircase at the top of frame, timber props",
+   "Hole opening into an older, smooth-walled tunnel of precise masonry",
+   "Cave-breath mist rising from a cellar floor crack",
+   "Surveyor with lantern and a map spread on a rock, compass in hand",
+   "Stalactites, dripping water and a sour pool",
+   "Distant tunnel mouth with a faint far-off lamp",
+   "Cracked support beam and loose rubble"
+  ],
+  "activity": [
+   "Surveyor crouches, comparing the map to the tunnel, one hand shielding the lantern"
+  ],
+  "atmosphere": "Claustrophobic, uncanny, and too deep.",
+  "avoid": [
+   "Not the Chasm Crossing, Crystal Harvest or Quake scenes",
+   "No deep elves visible",
+   "No glowing crystals",
+   "No readable map lettering"
+  ],
+  "sources": [
+   "1.3.2 The Undermarches"
+  ]
+ },
+ "ART-CLI-THE-PALE-CITY": {
+  "identity": "The Pale City, the ice-locked northern cities where winter has become government and Hearthhold sends parties north with oil and fire-charms.",
+  "composition": "View from the northern road toward an ice-locked city gate frozen mid-closing, a small tribute cairn left at the road in the foreground.",
+  "details": [
+   "Gate leaves caught half shut, thick with ice",
+   "Towers cracked from the cold, icicles hanging from battlements",
+   "Frozen processional of citizens in the street seen as ice-glazed figures",
+   "Tribute cairn of offerings on the old road",
+   "Small party with oil flasks and fire-charms leaving offering, backs turned",
+   "Wind-sculpted snow drifts",
+   "Thin horizontal sky strokes"
+  ],
+  "activity": [
+   "Three small figures place an offering on the cairn",
+   "Frozen citizens stand still in the gate"
+  ],
+  "atmosphere": "Silent, bureaucratic cold.",
+  "avoid": [
+   "Not Visath's spire or the Frost Bailiff avenue (interior street) or Hearthhold",
+   "Citizens stay distant and static, no ghoulish detail",
+   "No dragons",
+   "No glow or aurora"
+  ],
+  "sources": [
+   "1.3.2 The Pale City"
+  ]
+ },
+ "ART-CLI-THE-SUN-DROWNED": {
+  "identity": "The Sun-Drowned, the southern dunes that have climbed over the richest realms, dotted with tomb-cities, salt flats and unburied dead.",
+  "composition": "Wide shot across a dune sea toward tomb-cities breaking the horizon like teeth; a half-uncovered enthroned corpse in the foreground, salt flats glittering where a harbour stood.",
+  "details": [
+   "Tomb-city pyramids and spires jutting from the horizon",
+   "Salt flat with stranded ship ribs where a harbour once stood",
+   "Half-buried throne with an armoured, embalmed corpse sitting upright, wind-scoured",
+   "Wind-ripples in dunes drawn as fine parallel lines",
+   "A few Saltspire guides and travellers in head-wraps leading pack animals (mules)",
+   "Bleached bones and broken statuary",
+   "Heat shimmer as sparse vertical lines"
+  ],
+  "activity": [
+   "Three small travellers trudge along a dune crest with a guide leading"
+  ],
+  "atmosphere": "Scorched and sepulchral.",
+  "avoid": [
+   "Not the Cursed Colossus, Sunken Kings tomb or Saltspire bastion",
+   "Do not draw glinting colour or sun-disc flares",
+   "No camels (not in source) - use mules or nothing",
+   "Dead remain objects, not reanimated"
+  ],
+  "sources": [
+   "1.3.2 The Sun-Drowned"
+  ]
+ },
+ "ART-CLI-THE-MIRE": {
+  "identity": "The Mire, the southeastern swamps where rivers give out, where bogs swallowed roads and the dead drift below the walkways.",
+  "composition": "Water-level view along a plank walkway through a drowned village; mangroves grow through the roofs of stilt-houses, pale shapes drift beneath the surface.",
+  "details": [
+   "Leaning stilt-houses over dark water",
+   "Mangrove roots bursting through a roof",
+   "Plank walkway with missing boards",
+   "Water that looks shallow but opens in a darker circle",
+   "Pale drifting shapes beneath the surface (faces, hands) in fine lines",
+   "Reeds, floating weed, hanging moss, a heron-like bird",
+   "A lantern on a pole, unlit"
+  ],
+  "activity": [
+   "A lone toll-ferryman poles a flat boat in the far distance, tiny"
+  ],
+  "atmosphere": "Damp, patient and quietly rising.",
+  "avoid": [
+   "Not Reedmarch itself (no barges, council hall or toll bridges) and not Vossegar's cathedral",
+   "Dead shapes ambiguous and faint, no horror close-ups",
+   "No lettering",
+   "Not the Blighted Heartwood or Titan fen scenes"
+  ],
+  "sources": [
+   "1.3.2 The Mire"
+  ]
+ },
+ "ART-WOR-1-3-3-THE-SIX-BASTIONS": {
+  "identity": "The six Bastions survived the Fall by closing the gate while neighbours screamed outside.",
+  "composition": "A great Bastion gate grinding shut at dusk, seen from the outside looking in at a low angle; guards strain at the windlass within while desperate figures reach for the closing gap.",
+  "details": [
+   "Massive double gate of iron-bound timber halfway closed",
+   "Gatehouse arch with a portcullis chain, a murder-hole above and a stone relief with no legible text",
+   "Windlass with spokes and a drum and chain, guards leaning on it",
+   "Pikemen at the gate with faces turned away",
+   "Outside crowd of refugees with bundles, a mother holding a child at arm's length through the gap",
+   "Wall-top watchers with torches, one lowering a rope",
+   "Dust and trampled mud at the threshold"
+  ],
+  "activity": [
+   "Four guards heave the windlass",
+   "Several refugees surge at the gap, reaching hands",
+   "A few pikemen hold them back with spear butts"
+  ],
+  "atmosphere": "Hard survival bought with others' lives.",
+  "avoid": [
+   "Not a specific Bastion's gate (no Deepwarden great gate, no Greythorn timber)",
+   "No monsters at the gate",
+   "Do not depict violence against the refugees",
+   "Distinct from the 1.3.6 postern departure"
+  ],
+  "sources": [
+   "1.3.3 The Six Bastions"
+  ]
+ },
+ "ART-BAS-SABLEKEEP": {
+  "identity": "Sablekeep, a fortified chapel-town built into the throat of a ruined imperial city where the Ashlands meet the eastern forest, ruled by the Sable Watch, which survives by burning.",
+  "composition": "View from the straight imperial road looking up at the chapel-town climbing terraces in the throat of the ruined city; braziers burning at every gate, bridge and chapel window.",
+  "details": [
+   "Terraced chapel-town in dark stone with narrow buttresses and a bell turret",
+   "Lower terraces resting on the bones of an older temple, some arches oddly shaped, almost rib-like, but not clearly bones",
+   "Consecrated braziers on iron stands at gates, bridges and windows, flames drawn as ink strokes",
+   "Ruined imperial city walls and colonnades rising behind",
+   "Eastern forest edge pressing on one flank",
+   "Gate with a bridge over a dry cut and warrior-priests in dark cloaks on watch",
+   "Smoke rising in thin lines"
+  ],
+  "activity": [
+   "Warrior-priests tend braziers at the gate, small",
+   "A column of travellers approaches on the road"
+  ],
+  "atmosphere": "Austere, fanatical vigilance against the dead city.",
+  "avoid": [
+   "Not a standard castle; a chapel-town crowded on terraces",
+   "Do not show readable emblems of the Watch",
+   "No Hearthhold-like central fire or Deepwarden gate",
+   "No bones shown explicitly as skeletons"
+  ],
+  "sources": [
+   "1.3.3 Sablekeep"
+  ]
+ },
+ "ART-BAS-DEEPWARDEN": {
+  "identity": "Deepwarden, a sealed mining city carved into the foothills of the broken mountains, which survived by closing its great gate and now lives in upper terraces above the Dark.",
+  "composition": "View from the upper terraces down over the sealed great gate and into a black void below, the Dark; forge smoke rising behind and lantern lights dotted across the terraces.",
+  "details": [
+   "Carved terraces and stairways cut into rock with stone balustrades",
+   "The great gate sealed, a vast iron-bound stone door set in a gorge",
+   "The Dark below as an abyss of solid black, with a few tiny lantern points",
+   "Forge chimneys and smoke columns",
+   "Lantern Council members with lanterns of consecrated flame on poles",
+   "Mining cranes, tram tracks and ore carts",
+   "Dwarven masonry with heavy lintels, no readable text"
+  ],
+  "activity": [
+   "Small figures with lanterns cross the terraces",
+   "A guard watches the sealed gate from a parapet"
+  ],
+  "atmosphere": "Austere, hard and shadowed.",
+  "avoid": [
+   "Not the ch.7 forge interior",
+   "No visible creatures in the Dark",
+   "Not a stone castle on a hill",
+   "Gate closed, not open or being closed"
+  ],
+  "sources": [
+   "1.3.3 Deepwarden"
+  ]
+ },
+ "ART-BAS-HEARTHHOLD": {
+  "identity": "Hearthhold, a walled town in the high north built around the Great Hearth that has burned unbroken since the Fall; the smallest, poorest and bravest Bastion.",
+  "composition": "Interior view across a snowy square toward the Great Hearth, a vast stone fire-pit and chimney with a side-chamber chapel; a ring of walls and training ground behind.",
+  "details": [
+   "Great Hearth: massive stone hearth under a tall chimney, flames drawn in ink",
+   "Fire-watchers in furs feeding it with logs and peat",
+   "A child handed a log to feed the flame",
+   "Side-chamber chapel with a small arched door",
+   "Snow-covered roofs, icicles and walls around, wall-top training ground",
+   "Stacked fuel, hand-carts and ladders",
+   "Banner of the Hearth Marshal without readable device"
+  ],
+  "activity": [
+   "Fire-watchers tend the Hearth in shifts",
+   "Children carry logs",
+   "A sentry walks the wall"
+  ],
+  "atmosphere": "Fragile warmth against the northern dark.",
+  "avoid": [
+   "Not the Pale City climate view",
+   "No glow rays from fire, use ink",
+   "Not a luxurious hall; poor and cramped",
+   "No lettering"
+  ],
+  "sources": [
+   "1.3.3 Hearthhold"
+  ]
+ },
+ "ART-BAS-SALTSPIRE": {
+  "identity": "Saltspire, a tower-city built around a deep sacred well at the centre of an oasis ringed by salt-pans and the bones of older cities; wealthy and hated.",
+  "composition": "Distant approach across salt-pans toward a cluster of tall towers around the oasis; caravans in the foreground, the sacred well-head at the heart.",
+  "details": [
+   "Slender tower-city of stacked towers with narrow windows around a central well-house",
+   "Oasis palms and a green belt around the walls",
+   "Salt-pans in geometric basins with raking crusts",
+   "Bones of older cities as broken columns on the plain",
+   "Mercenary and nomad guards on towers",
+   "Water-carrier lines and cistern tops",
+   "Caravan of mules and carts at the gate"
+  ],
+  "activity": [
+   "Caravan approaches the gate",
+   "Guards watch from towers",
+   "Water-bearers walk in a line"
+  ],
+  "atmosphere": "Wealthy, parched and resented.",
+  "avoid": [
+   "Not a bare small oasis camp (that is the Oasis Raiders scenario)",
+   "No visible dunes monsters",
+   "Do not depict the well being sounded",
+   "Not Reedmarch or Sablekeep silhouettes"
+  ],
+  "sources": [
+   "1.3.3 Saltspire",
+   "1.3.2 The Sun-Drowned"
+  ]
+ },
+ "ART-BAS-REEDMARCH": {
+  "identity": "Reedmarch, a stilt-town raised over log pilings on barges, ferry platforms and toll bridges; the only crossing for 30 miles, populated by ferrymen, smugglers, leech-tenders and corpse-haulers.",
+  "composition": "Water-level view from a ferry at the toll bridge, looking at the stilt-town with its patchwork of platforms and barges; a barge hall repositioned in the middle.",
+  "details": [
+   "Log pilings and plank platforms with huts and ladders",
+   "Toll bridges with a rope-and-pulley gate and chain",
+   "Barge carrying a hall with a shingled roof (Marsh Council hall)",
+   "Corpse-hauler barge with covered bundles",
+   "Leech tanks and apothecary stalls on platforms",
+   "Reeds, hanging nets and ferry ropes",
+   "Smugglers' skiff moored at pilings"
+  ],
+  "activity": [
+   "Ferrymen pole barges",
+   "A corpse-hauler unloads bundles",
+   "A toll-keeper counts coin on a bridge"
+  ],
+  "atmosphere": "Murky commerce above buried secrets.",
+  "avoid": [
+   "Not the Mire climate swamp scene (that is a drowned village, no town)",
+   "No clear view of what is under the floors",
+   "Not a stone town",
+   "No lettering"
+  ],
+  "sources": [
+   "1.3.3 Reedmarch"
+  ]
+ },
+ "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS": {
+  "identity": "The Five Traditions of magic (Arcane, Divine, Druidic, Sorcery, Psychic) all survived the Fall, none intact.",
+  "composition": "Still life on a cracked stone altar viewed at slight elevation; five damaged implements arranged in a rough arc, each broken in its own way.",
+  "details": [
+   "Scorched spellbook with a burnt corner and a warped clasp (Arcane)",
+   "Chipped holy symbol on a cracked chain (Divine)",
+   "Bloodied ritual knife with a notched blade (Sorcery)",
+   "Withered antler-and-holly charm on a frayed cord (Druidic)",
+   "Cracked crystal with a fracture across its facets (Psychic)",
+   "Cracked altar slab with dust, ash and a candle stub",
+   "Thin vine and moss creeping at one edge, a spider web in a corner"
+  ],
+  "activity": [],
+  "atmosphere": "Reverent, damaged and uneasy.",
+  "avoid": [
+   "No readable runes or glyph text on the book",
+   "Do not depict magic effects or glow",
+   "Not the Treasure Tables still life (these are tools, not coin)",
+   "Do not label which tradition is which"
+  ],
+  "sources": [
+   "1.3.4 Magic in the Dying Lands"
+  ]
+ },
+ "ART-WOR-1-3-5-MONSTROUS-THREATS": {
+  "identity": "Monsters hold the Dying Lands now; they close roads, empty fields and set up their own banners.",
+  "composition": "An abandoned village street seen from one end in perspective, the market cross at the centre carrying a crude monster banner.",
+  "details": [
+   "Claw-torn doors hanging from hinges and deep gouges in timber frames",
+   "Empty well with a broken windlass and a dropped bucket",
+   "Market cross with a crude banner of hide and bones stuck on top",
+   "Overgrown cobbles, a cart on its side, scattered pots",
+   "Cottages with open shutters and dark windows",
+   "A dog skeleton or a small crow flock on a roof",
+   "Totem-like markings of scratches, no letters"
+  ],
+  "activity": [],
+  "atmosphere": "Hollow, watched and recently emptied.",
+  "avoid": [
+   "No monsters visible in the frame",
+   "No corpses",
+   "Banner has no readable device",
+   "Distinct from the 1.2 burnt farmstead (human conflict) and from scenarios"
+  ],
+  "sources": [
+   "1.3.5 Monstrous Threats"
+  ]
+ },
+ "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD": {
+  "identity": "Adventurers exist because the Bastions need work done beyond the reach of soldiers; a party of four takes contracts through the gate.",
+  "composition": "A small party of four walks out of a Bastion's postern gate along a muddy road, seen from behind, past a gibbet and a weathered warning post, toward a dark forest edge.",
+  "details": [
+   "Small postern gate in a thick stone or timber wall with a guard looking down from a wall-top",
+   "Muddy road with ruts and puddles",
+   "Empty gibbet with a cage and chains",
+   "Weathered warning post with scratched marks (not letters)",
+   "Dark forest edge as dense hatching ahead",
+   "Party gear: packs, shields on backs, a spear, a hooded lantern",
+   "Dead-leaf and thistle roadside"
+  ],
+  "activity": [
+   "Four figures walk single file, one glancing back at the gate",
+   "A guard watches from the wall"
+  ],
+  "atmosphere": "Resigned departure into danger.",
+  "avoid": [
+   "Not a heroic departure; no banners flying",
+   "Not the Greythorn bastion portrait or the ch.1 vista",
+   "No readable text on the post",
+   "No monsters in sight"
+  ],
+  "sources": [
+   "1.3.6 Adventurers and the Road"
+  ]
+ },
+ "ART-WOR-1-3-7-LEGENDS-AND-ECHOES": {
+  "identity": "The Dying Lands remember: old battles and legends replay as echoes over the living ground.",
+  "composition": "A barrow field at dusk with low burial mounds in a wide meadow; faint ghostly warriors of an ancient battle re-enact their last charge through the grass, drawn only in sparse fine lines against solid living landscape.",
+  "details": [
+   "Grassy barrows with a standing stone and an old spear half-leaning",
+   "Living grass drawn in firm confident strokes while ghosts use broken thin outlines",
+   "Ghost cavalry and foot soldiers with antique helmets and round shields charging left to right",
+   "A ghostly banner without device",
+   "Dead tree and a crow",
+   "Low sun-hazed horizon with sparse horizontal strokes",
+   "A lone shepherd or traveller on a rise as the only solid figure"
+  ],
+  "activity": [
+   "Ghostly warriors charge across the field",
+   "A single traveller watches from a barrow, small"
+  ],
+  "atmosphere": "Haunted, wistful, unforgiving.",
+  "avoid": [
+   "Ghosts must be line-only, no gradient or glow",
+   "No gore, no skeletons",
+   "No named legend figures (Saint Cael, Ysolde Vane) depicted",
+   "Not the Haunted Mausoleum or crypt interiors"
+  ],
+  "sources": [
+   "1.3.7 Legends and Echoes"
+  ]
+ },
+ "ART-ITE-7-6-TREASURE-TABLES": {
+  "identity": "Treasure in the Dying Lands is never clean: coin and relics come from hoards, vaults and the dead.",
+  "composition": "Still life on a stone slab at slight elevation: a rotted purse spilling tarnished coins beside a skeletal hand, a mud-caked crown, a cracked reliquary and a salt-crusted signet ring.",
+  "details": [
+   "Rotted leather purse with a frayed drawstring spilling coins",
+   "Skeletal hand with finger bones curled near the coins",
+   "Mud-caked crown with dull gems and a bent circlet",
+   "Cracked reliquary box with a missing hinge",
+   "Salt-crusted signet ring on a stone",
+   "Coins stippled to feel dull, no readable stamps",
+   "Cobweb, grave dirt and a spilled bone button"
+  ],
+  "activity": [],
+  "atmosphere": "Greedy and grave-soiled.",
+  "avoid": [
+   "Not the Magic traditions still life or the melee weapon still life",
+   "No readable coin inscriptions",
+   "No glinting sparkle effects",
+   "No gore"
+  ],
+  "sources": [
+   "7.6 Treasure Tables"
+  ]
+ },
+ "ART-ITE-7-8-MELEE-WEAPONS": {
+  "identity": "Salvaged arms from an older wider world that reach the Dying Lands as trade goods through Saltspire and Reedmarch.",
+  "composition": "Still life laid out on a sacking cloth viewed from above at an angle: a long-bladed messer, notched swordbreaker, throwing cross, bladed scourge, weighted cord and hook-and-chain, spaced evenly.",
+  "details": [
+   "Langes messer: long single-edged blade with a nagel-style hilt",
+   "Swordbreaker with a notched back and a heavy guard",
+   "Throwing cross: four-armed bladed star-cross",
+   "Bladed scourge: multiple lashes ending in small blades",
+   "Weighted cord with a heavy ball at one end, coiled",
+   "Hook-and-chain: a long chain ending in a barbed hook",
+   "Burlap sack texture, a trader's tag as a blank rectangle, rope bindings"
+  ],
+  "activity": [],
+  "atmosphere": "Matter-of-fact salvage with dangerous elegance.",
+  "avoid": [
+   "Not the treasure still life",
+   "Only the six named weapons, no extras like swords of legend",
+   "No readable maker's marks",
+   "No gore or blood"
+  ],
+  "sources": [
+   "7.8 Melee Weapons"
+  ]
+ },
+ "ART-MON-THE-ANCIENT-VOID-DRAGON": {
+  "identity": "The Ancient Void Dragon, a boss wyrm older than the Fall and perhaps its cause, whose scales drink light and whose breath unmakes substance.",
+  "composition": "Night sky over a barren crag; the dragon is drawn mostly as negative space, a wyrm-shaped absence of untouched paper edged by fine contour lines, stars dimming around it. A broken watchtower stands small at the bottom for scale.",
+  "details": [
+   "Wyrm silhouette formed by blank paper bounded by thin broken contour lines",
+   "Stars as stippled points thinning and vanishing near its outline",
+   "Spreading wings and a long coiling neck implied by what the stars are missing",
+   "Where the breath passes, the landscape is erased to bare white with abrupt edges",
+   "Barren crag, snapped watchtower and a dry riverbed below",
+   "Solid black used as the surrounding night sky, hatching to form the void contrast",
+   "Peeling, fraying edges of substance along the breath"
+  ],
+  "activity": [],
+  "atmosphere": "Cosmic dread; a hole in the world.",
+  "avoid": [
+   "Not a normal rendered dragon with scales; absence is the subject",
+   "Not the Dracolich (bones) or Visath (ice)",
+   "No glow or lens flare",
+   "No figures except at most one tiny tower"
+  ],
+  "sources": [
+   "9.7 The Bestiary - The Ancient Void Dragon (boss)"
+  ]
+ },
+ "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS": {
+  "identity": "The Hollow Crown of the Ashlands, a black iron circlet that rules the dead empire's legions in place of its last emperor; its throne room is the whole of the ruined empire.",
+  "composition": "A vast ruined hall open to a sooty sky; a black iron circlet hovers above an empty regent's robe on a ruined throne at the far end, ranks of dead legionaries kneeling in rows below it.",
+  "details": [
+   "Crown of black iron with spiked points hovering above an empty collar of an ermine-edged robe",
+   "Throne of cracked stone on a stepped dais, partly collapsed",
+   "Giant broken colonnades rising to broken lintels and sky",
+   "Rows of kneeling legionaries in rusted segmented armour and crested helms",
+   "Banners of the empire hanging in rags without device",
+   "Soot and ash drifts across the floor",
+   "Statues of past emperors with faces chiselled away"
+  ],
+  "activity": [
+   "Dozens of dead legionaries kneel in rows, heads bowed, shields on arms",
+   "No living figures"
+  ],
+  "atmosphere": "Hollow, absolute authority.",
+  "avoid": [
+   "Do not show a face inside the robe; it is empty",
+   "Not the Ashlands climate street or Captain Veyr's company",
+   "No readable inscriptions",
+   "Keep legionaries as one disciplined mass, not a combat scene"
+  ],
+  "sources": [
+   "9.7 The Bestiary - The Hollow Crown of the Ashlands (boss)",
+   "1.3.2 The Ashlands"
+  ]
+ },
+ "ART-MON-THE-LAST-COLOSSUS": {
+  "identity": "The Last Colossus, a walking fortress of riveted black iron three times a man's height, the empire's last war-construct, marching the same patrol for centuries.",
+  "composition": "A cracked imperial road seen from a low angle; the Colossus marches toward the viewer, a small human figure at its feet for scale.",
+  "details": [
+   "Slab-sided torso of riveted black iron plates with seams and weld lines",
+   "Thick pillar legs with piston-like joints and a flared hip skirt",
+   "Joints groaning with steam and vented thunder drawn as short rays of lines",
+   "Head as a small armoured helm with a slit visor",
+   "Massive hands like siege mauls, banner-pole stump on shoulder with a tattered pennant",
+   "Cracked imperial road with milestones snapped off and fallen leaves",
+   "Dust cloud, ruined arch in the distance"
+  ],
+  "activity": [
+   "A single tiny human figure stands, shield raised, at its feet, dwarfed"
+  ],
+  "atmosphere": "Relentless, mournful obedience to a dead empire.",
+  "avoid": [
+   "Not the Cursed Colossus of the Waste (a broken sand statue) or the Guardian Construct",
+   "Not a cartoon robot or mecha",
+   "No glowing eyes",
+   "Three times a man's height only, not a skyscraper"
+  ],
+  "sources": [
+   "9.7 The Bestiary - The Last Colossus (boss)",
+   "1.3.5 Imperial constructs"
+  ]
+ },
+ "ART-MON-AVATAR-OF-THE-OLD-GROWTH": {
+  "identity": "The Avatar of the Old Growth, the will of the deep forest given a body: a towering shape of trunk and grasping root, bark-skinned, crowned with antlered branches.",
+  "composition": "Seen from the edge of a clearing at ground level; the tree-giant rises far above the canopy, roots dragging behind in furrows, its crown a tangle of antlered branches against the sky.",
+  "details": [
+   "Bark-skinned limbs and torso made of fused trunks",
+   "Crown of antlered branches, some tipped with leaf clusters",
+   "Roots dragging, tearing the earth into furrows",
+   "Smaller trees bending in its wake",
+   "Hollow knots forming a face as solid black shadows",
+   "Leaves, birds fleeing and loose bark in the air",
+   "Forest floor ferns and broken saplings"
+  ],
+  "activity": [
+   "A few tiny animals and one fleeing hare in the foreground; no humans"
+  ],
+  "atmosphere": "Ancient, implacable and awake.",
+  "avoid": [
+   "Not Maelthorn (a wyrm) and not the Old Growth Treant scenario with a ritual and Mother Tree",
+   "Not the Antlered Warden's bone-antler humanoid",
+   "No faces that look cartoon-friendly",
+   "No humans or party"
+  ],
+  "sources": [
+   "9.7 The Bestiary - Avatar of the Old Growth (boss)",
+   "1.3.2 The Greenmark"
+  ]
+ },
+ "ART-MON-THE-BROODMOTHER-PRIME": {
+  "identity": "The Broodmother Prime, mother of every giant spider in the deep, a bloated cottage-sized horror squatting in the deepest dark of the Undermarches.",
+  "composition": "A vast webbed cavern seen from a ledge; the Broodmother squats at the centre, egg-sacs trailing and twitching, cocooned victims hanging in the webs.",
+  "details": [
+   "Bloated abdomen the size of a cottage, with segmented legs gripping the web anchors",
+   "Egg-sacs trailing on silk threads, some bulging",
+   "Cocooned bodies hanging in the webs, faceless wrapped forms",
+   "Huge radial and sheet webs strung between stalactites",
+   "Cavern floor with bones and discarded gear",
+   "A cluster of small spider shapes at the edge of the web",
+   "Fangs and clustered eyes as solid black points"
+  ],
+  "activity": [
+   "No living humans except one tiny wrapped cocooned figure moving faintly"
+  ],
+  "atmosphere": "Nursery dread.",
+  "avoid": [
+   "Not the Spider's Silk Route ravine in the Greenmark",
+   "No gore; cocoons are wrapped shapes",
+   "Not a cartoon spider",
+   "No glowing eyes"
+  ],
+  "sources": [
+   "9.7 The Bestiary - The Broodmother Prime (boss)",
+   "1.3.2 The Undermarches"
+  ]
+ },
+ "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN": {
+  "identity": "Captain Veyr of the Forsaken, the empire's greatest captain, who swore the company would never break and holds them past death, a duelist with paired blades.",
+  "composition": "A ruined road in a trampled battlefield at dusk; Veyr stands in the middle ground, spectral plate, paired blades raised, rallying a line of dead soldiers behind them, seen at a low angle.",
+  "details": [
+   "Spectral plate with gothic fluting, drawn in thin broken lines, with solid black under the visor",
+   "Paired blades, one held high and one level",
+   "Line of dead soldiers in rusted armour with broken spears behind",
+   "Tattered company standard without device",
+   "Torn banners and broken stakes in the ground",
+   "Ruined stone breach in the wall behind",
+   "Trampled mud and fallen shields"
+  ],
+  "activity": [
+   "Veyr rallies, blades raised",
+   "The dead line braces shields and spears in formation"
+  ],
+  "atmosphere": "Doomed discipline, forgotten war.",
+  "avoid": [
+   "Not the Hollow Crown's kneeling legionaries",
+   "Veyr has no gendered features, use they/them presentation",
+   "Not a combat scene with living heroes",
+   "Do not draw an actual skull face; solid black visor slit"
+  ],
+  "sources": [
+   "9.7 The Bestiary - Captain Veyr of the Forsaken (boss)"
+  ]
+ },
+ "ART-MON-THE-FROST-BAILIFF-MAGISTRATE": {
+  "identity": "The Frost Bailiff Magistrate, the Pale City court's undying enforcer who passes final judgement, freezing the guilty where they stand.",
+  "composition": "A frozen avenue of the Pale City in perspective; the Magistrate drifts in judicial robes in the middle distance, a figure freezing solid before it in the foreground.",
+  "details": [
+   "Judicial robes with a high collar and long sleeves, hem trailing, face hidden in a hood of ice",
+   "Gavel-like staff or a scroll of sentence with no readable text",
+   "Frost crawling up the legs of the condemned figure, ice creeping across clothing",
+   "Ice-locked buildings with cracked facades flanking the avenue",
+   "Frost-furred lamp posts and snow-laden banners",
+   "Frozen citizens as background figures, stiff",
+   "Breath-mist drawn as fine curls"
+  ],
+  "activity": [
+   "The condemned figure freezes in mid-protest, hand raised",
+   "The Magistrate glides without footsteps"
+  ],
+  "atmosphere": "Cold legality; verdict without appeal.",
+  "avoid": [
+   "Not the Icebound Court throne scenario or the Pale City climate gate",
+   "No gore",
+   "No readable verdict text",
+   "Do not depict the White Court escort in detail"
+  ],
+  "sources": [
+   "9.7 The Bestiary - The Frost Bailiff Magistrate (boss)",
+   "1.3.2 The Pale City"
+  ]
+ },
+ "ART-MON-THE-SUN-CROWNED-PRINCE": {
+  "identity": "The Sun-Crowned Prince, the greatest priest-king, who bound his soul into a crown of beaten gold and still rules his sealed tomb-court.",
+  "composition": "Sealed tomb-court in one-point perspective; the Prince sits enthroned at the far end, a withered corpse in funeral linen beneath a bright crown, skeletal subjects ranged along both sides.",
+  "details": [
+   "Throne of carved stone with a tall back and a low dais",
+   "Corpse in funeral linen, leathery face and bone, hands on armrests",
+   "Crown of beaten gold rendered as clean blank paper with fine outline, the brightest thing in the picture",
+   "Rows of skeletal subjects in ceremonial wrappings and pointed hats",
+   "Painted walls carved with glyphs shown as repeating abstract patterns, not text",
+   "Braziers burning along the aisle",
+   "Sand drifted in the corners"
+  ],
+  "activity": [
+   "Skeletal courtiers stand in attendance, still"
+  ],
+  "atmosphere": "Stagnant majesty, absolute delusion.",
+  "avoid": [
+   "Not Khorrun's hoard gallery or the Sunken Kings tomb scenario (that has sarcophagi and pits)",
+   "No readable hieroglyphs",
+   "Face not cartoonish",
+   "Do not show a living prince"
+  ],
+  "sources": [
+   "9.7 The Bestiary - The Sun-Crowned Prince (boss)",
+   "1.3.2 The Sun-Drowned"
+  ]
+ },
+ "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE": {
+  "identity": "The Antlered Warden of the Tithe, the antlered robed figure admitted at Greythorn's west gate each winter to collect the forest's due.",
+  "composition": "Greythorn's timber west gate in winter snow at dusk; the towering Warden stands in the gateway dragging an indebted man by the collar, the town wall behind.",
+  "details": [
+   "Bone-antler crown with many tines and living wood grown through it",
+   "Body of bark, living wood and moss with a ragged robe of grey moss",
+   "Timber-walled gate with a heavy gatehouse and snow-laden palisade",
+   "Debtor on his knees with a torn coat",
+   "Torch-bearing gatekeepers retreating inside",
+   "Snow and ancient oaks crowding the wall",
+   "Tithe bundles scattered at the stones outside"
+  ],
+  "activity": [
+   "The Warden drags the debtor by the collar",
+   "Watchers on the wall look on, small and frozen in place"
+  ],
+  "atmosphere": "Ritual debt collection, inevitable.",
+  "avoid": [
+   "Not the Avatar of the Old Growth or the Whispering Grove Antlered Warden scenario",
+   "Not a friendly forest spirit",
+   "No gore",
+   "Greythorn gate must be timber-walled"
+  ],
+  "sources": [
+   "9.7 The Bestiary - The Antlered Warden of the Tithe (boss)",
+   "1.3.3 Greythorn"
+  ]
+ },
+ "ART-MON-THE-VOICE-BENEATH-THE-BELLS": {
+  "identity": "The Voice Beneath the Bells, a child-shaped figure of grief singing in a drowned chapel; its song hollows out all who hear.",
+  "composition": "Interior of a flooded chapel; a small child-shaped figure stands at the edge of guttering torchlight in knee-deep water, bells hanging silent above in the dark.",
+  "details": [
+   "Small robed figure with face turned partly away, hair hanging",
+   "Guttering torch on a bracket, flame drawn small",
+   "Dark water over the nave floor with ripples around the legs",
+   "Bells hanging in a broken belfry in the shadows, silent",
+   "Pews half-submerged and a broken altar",
+   "Ceiling arches vanishing in black",
+   "Floating candles or a drifted prayer book"
+  ],
+  "activity": [
+   "The child figure sings; no other people"
+  ],
+  "atmosphere": "Quiet sorrow edged with horror.",
+  "avoid": [
+   "Not Vossegar's cathedral (that is a huge drowned cathedral with a wyrm)",
+   "The figure is not gory or monstrous in detail",
+   "Do not show open mouth gore",
+   "No faces readable, shadow only"
+  ],
+  "sources": [
+   "9.7 The Bestiary - The Voice Beneath the Bells (boss)"
+  ]
+ },
+ "ART-MON-MAELTHORN-THE-VERDANT": {
+  "identity": "Maelthorn the Verdant, a vast wyrm the deep green of stagnant pondwater, furred with moss, to whom Greythorn sends its autumn tithe in place of a war party.",
+  "composition": "Forest clearing at ground level; Maelthorn coils among the tithe offerings, moss and lichen furring its scales, poison fog spilling from its jaws across the clearing.",
+  "details": [
+   "Overlapping scales furred with moss and lichen as stippled texture",
+   "Coils like a fallen tree, blunt head with heavy brow ridges",
+   "Poison fog rolling from its jaws, drawn as sparse curling lines, wilting grass and leaves",
+   "Tithe bundles of sacks, grain, barrels and wood piled at standing stones",
+   "Withered trees on the edge of the fog",
+   "Fleeing small beasts: deer, hares",
+   "Mossy standing stones circling the clearing"
+  ],
+  "activity": [
+   "Tiny forest beasts flee ahead of the fog",
+   "No humans"
+  ],
+  "atmosphere": "Slow, poisonous patience.",
+  "avoid": [
+   "Not Avatar of the Old Growth (a tree giant) or the Whispering Grove scenario",
+   "No heroes fighting",
+   "Fog is line-drawn, not a gradient",
+   "Not a cartoon dragon"
+  ],
+  "sources": [
+   "9.7 The Bestiary - Maelthorn the Verdant (boss)",
+   "1.3.3 Greythorn (tithe)",
+   "1.3.5 Dragons"
+  ]
+ },
+ "ART-MON-SIRRACH-THE-BLACK": {
+  "identity": "Sirrach the Black, the Undermarches' buried king, a black wyrm that swims through solid stone and surfaces only to feed.",
+  "composition": "An unmapped gallery of the Undermarches in profile; Sirrach erupts out of solid stone, the rock rippling like water around its black body.",
+  "details": [
+   "Rock face with concentric ripples around the emerging wyrm",
+   "Black body with a heavy jaw, spines and a glossy outline",
+   "Dust and rock fragments flying in fine stipple",
+   "Hoard glimpsed at the gallery's end: coins, crowns, chests",
+   "Cracked gallery floor with stalagmites",
+   "Withered remains: a shrunken miner's body or dropped pick",
+   "Hairline cracks radiating across the wall"
+  ],
+  "activity": [],
+  "atmosphere": "Geological menace.",
+  "avoid": [
+   "Not the Broodmother's webbed cavern or the Rock Elemental Guardian scenario",
+   "No glow",
+   "Do not show people being withered",
+   "Stone rippling must read as ink lines, not water"
+  ],
+  "sources": [
+   "9.7 The Bestiary - Sirrach the Black (boss)",
+   "1.3.2 The Undermarches"
+  ]
+ },
+ "ART-MON-VISATH-THE-WHITE": {
+  "identity": "Visath the White, the Pale City's eternal winter in the body of a wyrm, who rules from the highest spire.",
+  "composition": "Looking up at the highest frozen spire of the Pale City; Visath perches on its tip with wings spread, victims locked mid-scream in the ice below.",
+  "details": [
+   "Glacial wyrm with frost-ridged scales and icicle spines",
+   "Wings spread with ice-fringed membranes",
+   "Spire cracked and thick with ice, icicles hanging",
+   "Victims encased in ice, mid-scream, on spire walls and below",
+   "Snow falling harder near it, drawn as dense stippling",
+   "Lower city rooftops and towers in the distance",
+   "Sky ruled with heavy diagonal strokes"
+  ],
+  "activity": [],
+  "atmosphere": "Absolute winter, a sky bowing.",
+  "avoid": [
+   "Not the Frost Bailiff avenue or the Ice Wyrm scenario cavern",
+   "Victims are frozen shapes, not gore",
+   "No glow or aurora",
+   "No heroes"
+  ],
+  "sources": [
+   "9.7 The Bestiary - Visath the White (boss)",
+   "1.3.2 The Pale City"
+  ]
+ },
+ "ART-MON-KHORRUN-THE-DRACOLICH": {
+  "identity": "Khorrun the Dracolich, a dragon that has not drawn breath since the Fall, coiled on its hoard in the sealed tomb-galleries beneath the Sun-Drowned.",
+  "composition": "Tomb gallery interior in wide view; Khorrun's skeletal dragon body draped in tattered scale coils atop a hoard, ledgers stacked to the ceiling around it.",
+  "details": [
+   "Skeletal dragon with lightning-scorched ribs and tattered scale remnants",
+   "Witchfire in empty sockets, drawn as tiny solid black points with fine lines",
+   "Hoard of coins, crowns and bones",
+   "Ledgers stacked to the ceiling in toppling towers",
+   "Gallery walls with carved bas-reliefs in abstract patterns",
+   "Pillars cracked and sand-drifted",
+   "Torn wings draped like banners from the ceiling"
+  ],
+  "activity": [],
+  "atmosphere": "Cold avarice that outlasts life.",
+  "avoid": [
+   "Not the Sun-Crowned Prince's court or the Sunken Kings scenario",
+   "No readable ledger text",
+   "No glow effects",
+   "Not a living dragon"
+  ],
+  "sources": [
+   "9.7 The Bestiary - Khorrun the Dracolich (boss)",
+   "1.3.5 Dragons"
+  ]
+ },
+ "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL": {
+  "identity": "Vossegar of the Flooded Cathedral, a sleek black acid wyrm that lairs in a drowned cathedral at The Mire's heart and takes tribute from every settlement.",
+  "composition": "Looking down the nave of a drowned cathedral; Vossegar coils among submerged altars and broken pillars, black water rising around the nave.",
+  "details": [
+   "Sleek black wyrm with a narrow head and slick scales",
+   "Broken pillars and a collapsed rose window",
+   "Submerged altars with only their tops showing",
+   "Acid drips dissolving a pew rail in thin lines",
+   "Waterline mist and rising ripples",
+   "Bells hanging underwater as dark shapes",
+   "Frogless silent reeds and algae"
+  ],
+  "activity": [],
+  "atmosphere": "Drowned grandeur, patient hunger.",
+  "avoid": [
+   "Not the Voice Beneath the Bells chapel (a small chapel with a child figure)",
+   "No heroes",
+   "Acid rendered as lines, not glow",
+   "Not a swamp exterior"
+  ],
+  "sources": [
+   "9.7 The Bestiary - Vossegar of the Flooded Cathedral (boss)",
+   "1.3.2 The Mire"
+  ]
+ },
+ "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST": {
+  "identity": "Hunt the Wild Beast, a Greenmark scenario set in a Greythorn logging camp whose palisade timbers have been driven through and splintered by a Great Forest Boar that has made the deep wood its hunting ground.",
+  "composition": "Wide, slightly raised view of a smashed logging camp at early morning, a game trail leading from its ruined palisade into dense forest in the middle distance. The beast is only a vast dim hump among the trees far back.",
+  "details": [
+   "Palisade of oak timbers snapped and splintered outward, one trunk driven through a sawpit shed",
+   "Felled logs, stumps, an abandoned two-man saw and ox-yoke",
+   "Cloven hoof furrows and torn earth leading into the trees",
+   "A churned mud wallow glimpsed beyond the camp edge",
+   "Game trail 1-2 inches wide in scale, a pale gap in dense trunks",
+   "Dead dire wolf lying near the camp gate, not gored",
+   "Broken axe handles, a toppled log cart"
+  ],
+  "activity": [
+   "Two small hunters with spears and boar-spears crouch at the camp edge reading the tracks",
+   "One kneels to touch a splintered timber",
+   "A watching raven on the palisade"
+  ],
+  "atmosphere": "Brooding aftermath with the hunter still near.",
+  "avoid": [
+   "Boar remains a barely seen shape, not a portrait; no tusks in close-up",
+   "Not the ch.9 carcass scene or the Avatar",
+   "Not the Bandit's Toll (this is a camp, not a trail barricade)",
+   "No gore on the camp"
+  ],
+  "sources": [
+   "10.4 Scenario 1: Hunt the Wild Beast (Greenmark)",
+   "1.3.3 Greythorn"
+  ]
+ },
+ "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE": {
+  "identity": "The Whispering Grove, an ancient Greenmark clearing older than Greythorn, with humming standing stones where pale lights move on moonless nights and farmers leave bread as part of the tithe.",
+  "composition": "Night scene in a forest clearing seen from the tree edge; three tall standing stones in a rough triangle dominate the middle, small pale lights drifting between them, a loaf of bread on the nearest stone.",
+  "details": [
+   "Three mossy standing stones with spiral weathering, no letters",
+   "Tiny pale lights as untouched circles in dense black hatching",
+   "Loaf of bread and a cloth bundle at the foot of a stone",
+   "Ring of oaks and undergrowth around the clearing",
+   "Fine concentric ripples in the air around the stones to show the hum, drawn as thin rings",
+   "Frost-free moss circle in the grass",
+   "A lantern abandoned at the treeline"
+  ],
+  "activity": [
+   "A single farmer in a hooded cloak walks away from the grove without looking back, small, at the far edge"
+  ],
+  "atmosphere": "Hushed, reverent unease.",
+  "avoid": [
+   "No Antlered Warden or any creature visible (it appears only when a stone is touched)",
+   "Not the Greenmark climate image (this is a clearing at night with stones)",
+   "Not Maelthorn's offering clearing",
+   "No glow rays; lights are paper-white points"
+  ],
+  "sources": [
+   "10.4 Scenario 2: The Whispering Grove (Greenmark)",
+   "1.3.2 The Greenmark"
+  ]
+ },
+ "ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL": {
+  "identity": "The Bandit's Toll, a Greenmark scenario where a toll crew has claimed a bend of the western forest road, the artery carrying Deepwarden iron, Reedmarch salt and grain.",
+  "composition": "View along the forest trail toward a makeshift log barricade at a bend; waiting stolen wagons behind it and bandits lounging. The viewer stands on the road with a caravan queue behind, in the foreground, small.",
+  "details": [
+   "Barricade of logs, upturned carts and spikes across the trail",
+   "Prices nailed to the trees as crude boards smeared with dark marks, no letters",
+   "Palisade of caravans waiting far behind with wagons circled",
+   "Stolen wagons with broken barrels and iron ingots",
+   "Bandits: a scimitar-wielding captain on a wagon, archers in trees, hooded raiders with cudgels",
+   "Tall oaks hemming the trail and shafts of light",
+   "A ribbon of milestones and deep wheel ruts"
+  ],
+  "activity": [
+   "Three bandits loll or count coin at the barricade",
+   "A captain with a shortbow watches the road from a wagon",
+   "A caravan teamster waits with a mule team, tiny, at the near end"
+  ],
+  "atmosphere": "Menace and sullen commerce.",
+  "avoid": [
+   "Not the Spider Silk Route ravine or the Emissary ambush camp",
+   "Prices are marks only, no letters or numbers",
+   "No fighting in progress",
+   "Do not draw gore on boards (just dark marks)"
+  ],
+  "sources": [
+   "10.4 Scenario 3: The Bandit's Toll (Greenmark)",
+   "1.3.6 Adventurers and the Road"
+  ]
+ },
+ "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE": {
+  "identity": "The Spider's Silk Route, a hidden Greenmark ravine where the Broodmother's daughters spin webs that hold steel like thread and fetch absurd prices in Bastion markets.",
+  "composition": "View from the high thorny rim down into a ravine bridged and filled with web sheets; silk bundles hang in the webs and a few spiders lurk. Thorn brambles frame the foreground edge.",
+  "details": [
+   "Ravine walls with trees overhanging the edges",
+   "Large sheet webs strung between the rims, laden with dew-beaded strands",
+   "Bundles of spun silk wrapped like cocoons hanging at different heights",
+   "A dagger and a rusted sword held motionless in a web strand as if in rope",
+   "Brambles and thorny path through the foreground",
+   "Tarantula-sized spiders in the web, a larger spider back in shadow",
+   "A pair of tracks that fork on the path (two parties sold the same path)"
+  ],
+  "activity": [
+   "Two tiny scouts creep along the thorn path at the rim, one cutting a bramble"
+  ],
+  "atmosphere": "Greed lured by beauty and dread.",
+  "avoid": [
+   "Not the Broodmother Prime's cavern lair (this is a surface ravine under open sky)",
+   "Spiders stay small and partial",
+   "No human cocoons or gore",
+   "Do not draw the Broodmother in full"
+  ],
+  "sources": [
+   "10.4 Scenario 4: The Spider's Silk Route (Greenmark)",
+   "1.3.2 The Greenmark"
+  ]
+ },
+ "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY": {
+  "identity": "The Ambushed Emissary, a Greenmark scenario where an emissary carrying documents sealed under two rival Bastion laws vanished on the western forest road and is now held in a makeshift bandit camp deep in the wood.",
+  "composition": "Dusk view from behind a screen of roots and ferns looking across a small clearing at a makeshift bandit camp; the bound emissary sits by a post near a lean-to while a reeve stands guard. Dropped clues are strewn across the lower foreground.",
+  "details": [
+   "Makeshift camp of hide lean-tos, a smoking fire pit and a rough palisade of stakes (cover only, not a fort)",
+   "Emissary in fine but mud-stained robes, hands bound to a post, a satchel strap across their chest",
+   "Forest-road reeve in half-armour with a longsword at the hip and a hand crossbow",
+   "Clues in the foreground: a broken cart wheel, a snapped sealed document tube with no readable writing, torn cloth caught on a thorn, a cut rope hanging from a branch",
+   "Tall oaks with small clearings and patches of undergrowth",
+   "Dusk sky ruled lightly, crows returning to roost",
+   "Boot tracks and wagon ruts leading off toward the road"
+  ],
+  "activity": [
+   "Two bandits sit at the fire, one sharpening a blade",
+   "The reeve stands over the emissary, arms folded",
+   "Two tiny watchers crouch in the ferns at the bottom edge"
+  ],
+  "atmosphere": "Tense, furtive espionage in the dark wood.",
+  "avoid": [
+   "Not the Bandit's Toll barricade or the road ambush itself",
+   "No readable seals or documents",
+   "No violence against the emissary",
+   "Emissary must look like a courier or diplomat, not an adventurer"
+  ],
+  "sources": [
+   "10.4 Scenario 5: The Ambushed Emissary (Greenmark)",
+   "1.3.3 Greythorn (Hollow Quarter)"
+  ]
+ },
+ "ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH": {
+  "identity": "Ritual of the Old Growth, a Greenmark scenario in which an Old Growth Treant elder works slowly over a sickness in the roots beneath a Mother Tree, with a Heartwood Totem at the heart of the rite.",
+  "composition": "Low angle among great roots looking up the trunk of the Mother Tree; the Treant is a partial towering shape of bark and branches kneeling among roots, the carved Heartwood Totem standing between them.",
+  "details": [
+   "Vast trunk with buttress roots large as walls",
+   "Dark sickness-stained patches in the roots, vein-like and dry",
+   "Totem of carved heartwood, a spiral or face-like carving",
+   "Treant's gnarled limbs and a bark-skinned head partly seen",
+   "Sacred Grove ring of ferns and moss and small standing flowers",
+   "Canopy light falling in shafts through white paper gaps",
+   "Tiny offerings: seeds, antler tips and bundled herbs"
+  ],
+  "activity": [
+   "Two small intruders creep at the far edge of the grove, dwarfed by roots"
+  ],
+  "atmosphere": "Slow, sacred, watchful.",
+  "avoid": [
+   "Not the Avatar of the Old Growth boss (this Treant is kneeling and passive, seen only in part)",
+   "No combat, no fire",
+   "Not the Whispering Grove stones",
+   "No faces rendered cutely"
+  ],
+  "sources": [
+   "10.4 Scenario 6: Ritual of the Old Growth (Greenmark)",
+   "1.3.4 Druidic Rituals"
+  ]
+ },
+ "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY": {
+  "identity": "The Fallen Observatory, an Ashlands scenario in ruins once crowned by a star-engine, whose broken brass arms still turn when moonlight enters the cracked dome.",
+  "composition": "Interior of the cracked dome at night looking up past a central pedestal; brass arms of an orrery tilt through a broken opening where the moon shows, instruments scattered across shifting floors.",
+  "details": [
+   "Cracked masonry dome with a broad fissure showing a thin moon",
+   "Broken brass arms and rings of the star-engine, some still turned and bent",
+   "Star Lens on a central pedestal, a large round disc outlined with fine lines",
+   "Raised observation platforms at the edges",
+   "Floor with cracked, tilting slabs and rubble",
+   "Scattered astrolabes, lenses and brass sextants",
+   "An armoured construct sentinel, small, standing near the pedestal"
+  ],
+  "activity": [
+   "Two tiny robbers creep through the rubble toward the pedestal",
+   "Sentinel turns its head slowly toward them"
+  ],
+  "atmosphere": "Haunted precision.",
+  "avoid": [
+   "Not the burned library (ch.8) or the Arcanum tower",
+   "No readable star charts",
+   "Sentinel small and indistinct",
+   "No glow rays from the lens"
+  ],
+  "sources": [
+   "10.4 Scenario 1: The Fallen Observatory (Ashlands)",
+   "1.3.4 Arcane Spells"
+  ]
+ },
+ "ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST": {
+  "identity": "The Guardian's Test, an Ashlands scenario set in a courtyard dominated by a sealed gate black with soot and old prayers, beyond which a vault waits and worthiness is tested.",
+  "composition": "One-point perspective across a colonnaded courtyard toward the sealed gate in the far wall; three small trial pedestals ahead and a tiny party of heroes in the lower middle. Overcast daylight.",
+  "details": [
+   "Massive sealed gate with a pointed arch, blackened by soot, studded with sparse prayer-marks as indistinct scratches",
+   "Colonnade of free-standing pillars, some fallen",
+   "Three low pedestals each topped with a different shape: scroll, hammer, flame (no text)",
+   "Scattered rubble and fallen cornice blocks",
+   "Dead leaves and ash drifts",
+   "Rival party approaching from the opposite side carrying a plain banner",
+   "Guardian niche in the wall, empty and dark"
+  ],
+  "activity": [
+   "The first party stands at a pedestal, one reaching out",
+   "A rival party appears at the courtyard arch, distant"
+  ],
+  "atmosphere": "Ominous ceremony.",
+  "avoid": [
+   "No guardian construct visible yet (it appears after the first trial)",
+   "Not the Iron-Vein Vault interior or the Reliquary nave",
+   "No legible prayers",
+   "Not a combat scene"
+  ],
+  "sources": [
+   "10.4 Scenario 2: The Guardian's Test (Ashlands)",
+   "1.3.2 The Ashlands"
+  ]
+ },
+ "ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME": {
+  "identity": "The Shifting Sands of Time, an Ashlands ruin that does not keep time honestly: glyphs flare, soot drifts uphill and stone opens underfoot, while relics surface and sink.",
+  "composition": "Wide view of a ruined court from a rubble rise; the impossible behaviours are shown in the middle ground with a tiny traveller stepping onto a slab.",
+  "details": [
+   "Soot drifting upward along a wall in thin ribbons, like smoke in reverse",
+   "A paving slab splitting open beneath a stepping figure",
+   "A treasure chest half-emerging from one flagstone and another half-sinking elsewhere",
+   "Wall glyphs drawn as abstract flaring marks, not text",
+   "Staircase that ends in a wall, a doorway on its side",
+   "Shadows of two pillars falling in different directions",
+   "Ash stippling and cracked ground"
+  ],
+  "activity": [
+   "A single tiny traveller steps carefully across the court",
+   "A second figure watches from a ruined wall, crouching"
+  ],
+  "atmosphere": "Disorienting, slow dread.",
+  "avoid": [
+   "Not a desert; this is an Ashlands ruin, overcast and soot-dark",
+   "No clocks or hourglasses",
+   "Not the Fallen Observatory",
+   "No creature"
+  ],
+  "sources": [
+   "10.4 Scenario 3: The Shifting Sands of Time (Ashlands)"
+  ]
+ },
+ "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE": {
+  "identity": "The Sealed Archive, an Ashlands scenario under a fractured basilica containing tablets, scrolls, debt records and sermons the Sable Watch would rather burn, kept in order by something older.",
+  "composition": "One-point perspective down a dust-choked corridor of shelves toward a central hall with a lectern; newer shelves gnawed in the foreground, inner stacks orderly beyond.",
+  "details": [
+   "Vaulted stone corridor with a cracked basilica floor visible above through a fissure",
+   "Shelves heaped with tablets, scrolls and ledgers, newer ones gnawed by scavengers",
+   "Rats and scattered paper in the foreground",
+   "Dust shown as dense stipple",
+   "Lectern in the hall holding a closed codex, outlined with fine lines",
+   "A suspiciously neat pile of stacked books beside the lectern",
+   "Collapsed shelving and a sconce hanging crooked"
+  ],
+  "activity": [
+   "Two small intruders with a shuttered lantern edge along the corridor wall"
+  ],
+  "atmosphere": "Choked silence and watchful order.",
+  "avoid": [
+   "Not the burned academy library (ch.8: fire and a lone caster)",
+   "The book pile must read as books, with no creature shape",
+   "No readable writing on tablets or scrolls",
+   "No glow"
+  ],
+  "sources": [
+   "10.4 Scenario 4: The Sealed Archive (Ashlands)",
+   "1.3.3 Sablekeep"
+  ]
+ },
+ "ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT": {
+  "identity": "The Reliquary of Broken Saints, an Ashlands hall filled with broken statues and smashed reliquaries, its sanctified bone and silver guarded by dead who swore an oath.",
+  "composition": "View from the entrance down a long nave toward a raised altar platform; broken saint statues line the aisles, two armoured figures stand motionless by the altar.",
+  "details": [
+   "Long nave with fallen saint statues, severed hands and robed torsos on the floor",
+   "Statue bases with no figures left",
+   "Smashed reliquary cases with silver and bone glimpsed",
+   "Hanging curtains and screens in tatters",
+   "Raised altar platform with steps",
+   "Two still, rust-eaten armoured guardians adjacent to the altar, almost statues",
+   "Rubble fields and light through a broken clerestory"
+  ],
+  "activity": [
+   "A tiny robber party creeps along a side aisle with a sack"
+  ],
+  "atmosphere": "Sacred desecration.",
+  "avoid": [
+   "Revenants barely visible and still, not attacking",
+   "Not the Stronghold Chapel or Hollow Crown hall",
+   "No readable inscriptions",
+   "No glow around relics"
+  ],
+  "sources": [
+   "10.4 Scenario 5: The Reliquary of Broken Saints (Ashlands)",
+   "1.3.4 Divine Prayers"
+  ]
+ },
+ "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT": {
+  "identity": "The Iron-Vein Vault, an Ashlands vault sealed for two generations with Karnessa Iron-Vein's blood on its iron door, now cracked by tremors as something below pushes.",
+  "composition": "Central chamber seen from the entrance hall; the massive iron door fills the far wall, with a pressed handprint of old blood and three binding marks, hairline cracks and dark seepage around its frame.",
+  "details": [
+   "Massive iron door with great hinges and a central lock",
+   "Faded handprint seal on the iron, no letters",
+   "Hairline cracks in the vault walls leaking dark smoke-like seep",
+   "The door bulged slightly outward, rivets popping",
+   "Flanking corridors with collapsed walls",
+   "Dust sifting from the ceiling in stipple",
+   "Fresh scorch scratches on the floor leading to the door"
+  ],
+  "activity": [
+   "Two tiny figures approach the door, one with a pot or vial",
+   "A rival pair watches from a corridor"
+  ],
+  "atmosphere": "Held breath at the point of breaking.",
+  "avoid": [
+   "No creature visible yet (Vault Presence is not placed until the vault opens); only seepage",
+   "Not the Guardian's Test gate",
+   "No readable glyphs",
+   "No glow"
+  ],
+  "sources": [
+   "10.4 Scenario 6: The Iron-Vein Vault (Ashlands)"
+  ]
+ },
+ "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST": {
+  "identity": "The Crystal Harvest, an Undermarches scenario in a new cavern beneath the broken mountains whose crystal veins pulse with cold light and drag iron filings across the floor.",
+  "composition": "Wide cavern interior from a tunnel mouth; clusters of crystal in the middle ground, iron filings forming radial lines on the floor toward them, glowing fungi dots near the walls.",
+  "details": [
+   "Large crystal spires and clusters in a cavern, drawn as faceted forms with fine lines",
+   "Iron filings on the floor drawn as radial hatching toward the crystals",
+   "Stalagmite clusters and low cave walls",
+   "Glowing fungus patches as blank paper dots amid black",
+   "A crystal-camouflaged shape among the cluster, ambiguous",
+   "Prospectors' abandoned picks and a lamp",
+   "Narrow passage openings to other caverns"
+  ],
+  "activity": [
+   "A few tiny prospectors with picks and lanterns crouch near a crystal",
+   "One reaches toward a cluster"
+  ],
+  "atmosphere": "Cold lure, covetous.",
+  "avoid": [
+   "Not the Quake (gems in cracked beam tunnels) or the Chasm",
+   "Lurker only as faint shape",
+   "No glow rays",
+   "No lettering"
+  ],
+  "sources": [
+   "10.4 Scenario 1: The Crystal Harvest (Undermarches)",
+   "1.3.3 Deepwarden"
+  ]
+ },
+ "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING": {
+  "identity": "The Chasm Crossing, an Undermarches scenario where a chasm splits the caverns and is crossed only by narrow broken ledges, with things clinging to the stone below.",
+  "composition": "Looking along a line of broken stone ledges bridging a black chasm from near end, receding in perspective; lantern light at the near end only.",
+  "details": [
+   "Narrow ledges as slabs with gaps between",
+   "A cracked ledge crumbling, chips falling into the dark",
+   "Chasm walls with clinging shapes: long-limbed Chasm Stalkers, small and half-hidden",
+   "Black void below with faint spray",
+   "Far side with a standing marker stone",
+   "A rolled map clutched by the lead traveller",
+   "Rope and piton at the near end"
+  ],
+  "activity": [
+   "One tiny traveller crosses mid-way, arms out for balance",
+   "Others wait at the near end with a lantern"
+  ],
+  "atmosphere": "Vertiginous, hand-shaking dread.",
+  "avoid": [
+   "Not the ch.4 aqueduct (open-air arches); this is a dark cavern",
+   "Stalkers remain tiny, indistinct",
+   "No numbers or map writing",
+   "No explicit measurement of gaps"
+  ],
+  "sources": [
+   "10.4 Scenario 2: The Chasm Crossing (Undermarches)"
+  ]
+ },
+ "ART-SCE-SCENARIO-3-THE-QUAKE": {
+  "identity": "The Quake, an Undermarches scenario in old mining tunnels that shook themselves open before dawn, with gemstone veins glimmering where support beams snapped and the exits blocked.",
+  "composition": "Mid-collapse view down a mining gallery with falling dust; snapped timber props and rubble in the foreground, a gem vein glimmering in a broken wall.",
+  "details": [
+   "Snapped timber support beams leaning at angles",
+   "Falling rubble and dust clouds as dense stipple",
+   "Gem-studded rock wall freshly exposed, faceted forms",
+   "Lost strongbox half-buried under rubble",
+   "Cart rails twisted",
+   "A hint of a stone shape forming in the wall (Rock Elemental Guardian), very faint",
+   "Tunnel exits choked by fallen rock"
+  ],
+  "activity": [
+   "Three tiny miners/heroes scramble over rubble, one dragging a sack"
+  ],
+  "atmosphere": "Chaos and urgency.",
+  "avoid": [
+   "Not the Crystal Harvest (cold crystal cavern) or the Chasm",
+   "Guardian only as faint wall hints",
+   "No gore",
+   "No glow"
+  ],
+  "sources": [
+   "10.4 Scenario 3: The Quake (Undermarches)",
+   "1.3.3 Deepwarden"
+  ]
+ },
+ "ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID": {
+  "identity": "The Undermarches Outpost Raid, a scenario where an outpost lies below an old road shrine, holding plans for a surface incursion and the officer who drew them.",
+  "composition": "Looking down through a broken shrine floor opening into a lamp-lit underground outpost: guard towers, low walls and a central command tent; two scouts at the hole's edge.",
+  "details": [
+   "Ruined road shrine floor with a ragged hole and a ladder or rope",
+   "Underground outpost with two guard towers linked by low walls",
+   "Large command tent in the centre with open entrance",
+   "Sentries on towers with crossbows (silhouettes)",
+   "Hanging lamps and barrels",
+   "Banners hung but turned away so their device is unseen",
+   "Shrine altar fragments at the hole's edge"
+  ],
+  "activity": [
+   "Two small scouts crouch at the hole",
+   "Sentries pace the towers below, tiny"
+  ],
+  "atmosphere": "Cautious infiltration.",
+  "avoid": [
+   "Do not specify the faction (deep elf or dwarf randomly)",
+   "Not the stronghold Undercroft or hidden passage",
+   "No readable banners",
+   "No fight in progress"
+  ],
+  "sources": [
+   "10.4 Scenario 4: The Undermarches Outpost Raid (Undermarches)"
+  ]
+ },
+ "ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE": {
+  "identity": "The Shadowed Under Passage, an Undermarches passage touched by a colder dark than stone can explain, where shadows lie against the light and a Heart of Shadow waits below.",
+  "composition": "A winding narrow passage seen from a lantern-lit near end into a mostly black bend; the lantern's shadow lies toward the lamp instead of away.",
+  "details": [
+   "Narrow passage walls closing in, rough stone",
+   "Lantern held at the near end casting a shadow toward itself",
+   "Solid black pooling at the bend, with edges that curl against the light",
+   "An unlit font of light, a stone basin on a plinth",
+   "Breath mist drawn oddly sinking",
+   "Ghostly handhold marks on the walls",
+   "A faint shade-shape in the deep dark, barely suggested"
+  ],
+  "activity": [
+   "Two tiny figures advance with a lantern, one holding a hand to the wall"
+  ],
+  "atmosphere": "Wrongness of dark.",
+  "avoid": [
+   "Not the Ritual of Shadow Binding cavern; this is a passage",
+   "Shade only a hint",
+   "Shadows must be graphic solid shapes, not gradients",
+   "No glow"
+  ],
+  "sources": [
+   "10.4 Scenario 5: The Shadowed Under Passage (Undermarches)"
+  ]
+ },
+ "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING": {
+  "identity": "The Ritual of Shadow Binding, an Undermarches cavern without honest light where deep elf priests have drawn a binding circle around something answering from below the Dark.",
+  "composition": "Looking down from a ledge into a central cavern; a large binding circle on the floor ringed by three dark orbs, with robed priests around it and a tall Shadow Caller at its centre, small.",
+  "details": [
+   "Binding circle with abstract sigils, spirals and rings, no letters",
+   "Three dark spherical orbs in solid black around the circle",
+   "Deep elf priests with long ears, hooded robes and ritual knives",
+   "Cavern walls with stalagmites and side tunnels",
+   "Smoke of incense drawn as thin curling lines",
+   "Offering bowls and chains",
+   "Floor lines pulled inward, as if the circle draws the dark"
+  ],
+  "activity": [
+   "Priests chant in a ring, arms raised",
+   "Two tiny intruders watch from the ledge"
+  ],
+  "atmosphere": "Ritual dread.",
+  "avoid": [
+   "Not the Shadowed Under Passage",
+   "The bound thing must not be seen",
+   "No readable sigils",
+   "No glow"
+  ],
+  "sources": [
+   "10.4 Scenario 6: The Ritual of Shadow Binding (Undermarches)",
+   "1.3.2 The Undermarches"
+  ]
+ },
+ "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS": {
+  "identity": "Plunder of the Frozen Ruins, a Pale City scenario where a promising ruin has cracked open under the snow and Hearthhold parties raid the treasures of citizens who froze too fast to hide them.",
+  "composition": "Overhead three-quarter view into a crack in a snow-buried street revealing a frozen room with chests and frozen citizens; the party lowers a rope at the rim.",
+  "details": [
+   "Fissure in packed snow revealing a vaulted frozen room",
+   "Frozen citizens in mid-gesture inside, ice-glazed, some with faces turned to the hole",
+   "Arcane treasure chests with magical seals on shelves",
+   "Ice-draped walls, ruined buildings around",
+   "Snow banks and a broken lamp post",
+   "Party members with a rope and sled",
+   "Cold mist"
+  ],
+  "activity": [
+   "Three tiny looters at the crack lower a rope",
+   "One peers down"
+  ],
+  "atmosphere": "Greed amid frozen witnesses.",
+  "avoid": [
+   "Not the Mausoleum or Alchemist lab",
+   "Citizens are static, no gore",
+   "No readable seals",
+   "Do not show an explicit dimension"
+  ],
+  "sources": [
+   "10.4 Scenario 1: Plunder of the Frozen Ruins (Pale City)",
+   "1.3.2 The Pale City"
+  ]
+ },
+ "ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA": {
+  "identity": "The Alchemist's Frozen Laboratory, a Pale City scenario in the ice-locked Silent District where an alchemist's laboratory remains sealed under frost with benches, bottles and guardians preserved.",
+  "composition": "Interior at eye level; a frost-furred workbench of glassware in the foreground, a large alchemical golem standing in the shadow at the back, door ajar with daylight.",
+  "details": [
+   "Benches with retorts, flasks and alembics furred with hoarfrost",
+   "Frozen spill of liquid with icicles hanging from the edge",
+   "Shelves of bottles and reagent chests",
+   "Alchemical Golem of clay and glass, partial in the shadow",
+   "Ice on windows and the cracked door",
+   "Tools and notebooks frozen to the bench",
+   "Pipes and burners dead"
+  ],
+  "activity": [
+   "One tiny looter reaches toward a reagent chest"
+  ],
+  "atmosphere": "Preserved last mistakes.",
+  "avoid": [
+   "Not the stronghold Apothecary (that is warm); here everything is frost-bound",
+   "Golem small and partial",
+   "No readable labels",
+   "No explosion or glow"
+  ],
+  "sources": [
+   "10.4 Scenario 2: The Alchemist's Frozen Laboratory (Pale City)"
+  ]
+ },
+ "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM": {
+  "identity": "The Haunted Mausoleum, a Pale City scenario of a noble White Court family's mausoleum under the ice, doors still sealed, heirlooms polished by cold and watched by names too proud to fade.",
+  "composition": "Approach down a stair carved in ice to the mausoleum entrance; sealed bronze doors ahead, pale faces just visible in the ice walls.",
+  "details": [
+   "Stair cut through blue-clear ice",
+   "Mausoleum facade with columns, door sealed with frost-thick seams",
+   "Effigies of nobles flanking the door, faces worn",
+   "Pale spectral faces in the ice walls drawn in sparse fine lines",
+   "Names carved as blank bands and stylised crests",
+   "Frost flowers on the bronze",
+   "Lantern at the stair top"
+  ],
+  "activity": [
+   "Three tiny figures descend the stair with a lantern"
+  ],
+  "atmosphere": "Proud cold and quiet watchers.",
+  "avoid": [
+   "Not the Icebound Court or Pale City gate scene",
+   "No legible names",
+   "Spirits very faint, not cartoonish ghosts",
+   "No glow"
+  ],
+  "sources": [
+   "10.4 Scenario 3: The Haunted Mausoleum (Pale City)",
+   "1.3.2 The Pale City"
+  ]
+ },
+ "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE": {
+  "identity": "The Clockwork Menagerie, a Pale City scenario in a frozen Deepwarden tinker's workshop full of brass legs, biting gears and small minds wound tight around old orders.",
+  "composition": "Workshop interior; tables, pipework and conveyor with brass animal automata frozen mid-motion, a heap of dust and tinker's tools on a stool in the foreground.",
+  "details": [
+   "Brass automata: a stag, a hound and a heron-like machine with visible gears",
+   "Conveyors and pipes furred with frost",
+   "Sparking conduits drawn with thin zigzag lines",
+   "Workbench with half-assembled brass limbs and gear wheels",
+   "Raised platforms and a hanging chain",
+   "Dust-shape of a person on a stool with a hat and a tool belt left behind",
+   "Open notebooks with unreadable scribble"
+  ],
+  "activity": [
+   "Two tiny scavengers creep with a bag toward a workbench, one holding a pry bar"
+  ],
+  "atmosphere": "Mechanical menace.",
+  "avoid": [
+   "Not the Deepwarden forge of ch.7 or the Alchemist lab",
+   "Automata are not cute toys; no cartoon features",
+   "No readable notes",
+   "No humanoid robots"
+  ],
+  "sources": [
+   "10.4 Scenario 4: The Clockwork Menagerie (Pale City)",
+   "1.3.3 Deepwarden"
+  ]
+ },
+ "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD": {
+  "identity": "The Ice Wyrm's Hoard, a Pale City scenario of a frozen cavern beneath the north road out of Hearthhold holding jewels and gold with a wyrm coiled upon it.",
+  "composition": "Low view from the tunnel mouth into a large ice cavern; a gleaming hoard mound at the centre, and only part of a sleeping coil and one wing edge seen beyond an ice pillar.",
+  "details": [
+   "Large ice pillars and blue-clear walls",
+   "Mound of gold and jewels outlined with fine lines",
+   "Coil of an ice-scaled body behind a pillar, partial",
+   "A frozen armoured adventurer lying in front with frost on the helm (a past victim)",
+   "Icicles hanging from the ceiling",
+   "Slippery ice floor with scratches",
+   "Frost breath rime on the walls"
+  ],
+  "activity": [
+   "Two tiny hunters crouch at the tunnel mouth"
+  ],
+  "atmosphere": "Held-breath avarice.",
+  "avoid": [
+   "Not Visath the White (boss) on a spire",
+   "Wyrm only partially glimpsed",
+   "No gore on the victim",
+   "No glow"
+  ],
+  "sources": [
+   "10.4 Scenario 5: The Ice Wyrm's Hoard (Pale City)",
+   "1.3.3 Hearthhold"
+  ]
+ },
+ "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT": {
+  "identity": "The Icebound Court, a Pale City sanctum of blue glass and frozen banners where the Frost Bailiff Magistrate still sits and the Heartfrost Shard lies at the centre.",
+  "composition": "Looking down the sanctum from its entrance; frozen banners hang along walls of blue glass, carved ice servants line both sides, the Shard on a plinth mid-hall and an Ice Throne with a tiny seated Magistrate at the far end.",
+  "details": [
+   "Walls of blue glass-like ice with fine facets",
+   "Frozen banners stiff like boards",
+   "Ranks of carved ice servants",
+   "Heartfrost Shard on a pedestal, a jagged crystal outlined in fine lines",
+   "Ice Throne with a tall back",
+   "Bound spirits as faint swirls in the ice",
+   "Breath mist hanging in the air"
+  ],
+  "activity": [
+   "Two tiny intruders at the entrance step onto the slick floor"
+  ],
+  "atmosphere": "Court unadjourned.",
+  "avoid": [
+   "Magistrate small and distant, distinct from the Frost Bailiff avenue boss portrait",
+   "Not the Haunted Mausoleum",
+   "No glow rays",
+   "No readable banners"
+  ],
+  "sources": [
+   "10.4 Scenario 6: The Icebound Court (Pale City)"
+  ]
+ },
+ "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS": {
+  "identity": "The Oasis Raiders, a Sun-Drowned scenario in which raiders hold a vital oasis south of the mountain passes: its wells, its shade and the people too slow to flee.",
+  "composition": "From a dune crest looking down on an oasis pool with palms, raiders' camp in the shade, captives gathered, rocky outcrops and dunes beyond.",
+  "details": [
+   "Oasis pool with a stone wellspring and three or four palms",
+   "Raiders' tents of patched cloth, spears planted",
+   "Raider chieftain in loose robes on a rock",
+   "Captive villagers sitting roped together in shade",
+   "Dunes with ripples and rocky outcrops",
+   "Heat haze drawn as sparse vertical lines",
+   "Water skins and clay jars at the well"
+  ],
+  "activity": [
+   "Raiders lounge or draw water",
+   "Captives huddle",
+   "Two tiny scouts on the dune crest"
+  ],
+  "atmosphere": "Oppressive heat and captivity.",
+  "avoid": [
+   "Not Saltspire's tower-city or the Sandwyrm basin",
+   "No violence",
+   "No camels",
+   "No readable flags"
+  ],
+  "sources": [
+   "10.4 Scenario 1: The Oasis Raiders (Sun-Drowned)"
+  ]
+ },
+ "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE": {
+  "identity": "The Cinder Lord's Lost Brazier, a Sun-Drowned scenario in scorched ruins where a brass brazier holds the ember of a bound Cinder Lord, to be found through searching ancient pillars.",
+  "composition": "Dusk view across a ruined plaza with a low altar at the centre and three scorched pillars around it; the half-buried brass brazier glimpsed in rubble in the foreground.",
+  "details": [
+   "Scorched flagstones and jagged obsidian rubble",
+   "Three tall pillars with burn bands and carved elemental marks as abstract patterns",
+   "Low altar of binding at plaza centre",
+   "Brass brazier half-buried with a tiny ember",
+   "Fire-blasted wall sections",
+   "Dune sand drifting at the plaza edge",
+   "Heat shimmer"
+  ],
+  "activity": [
+   "One tiny searcher kneels at a pillar, brushing sand",
+   "Others wait at the plaza edge"
+  ],
+  "atmosphere": "Dry, infernal tension.",
+  "avoid": [
+   "Not the Obsidian Prison scenario (a burning dais)",
+   "No Flame Guardians visible",
+   "No glow",
+   "No readable binding text"
+  ],
+  "sources": [
+   "10.4 Scenario 2: The Cinder Lord's Lost Brazier (Sun-Drowned)",
+   "1.3.5 Demons, devils, cinder lords"
+  ]
+ },
+ "ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS": {
+  "identity": "Tomb of the Sunken Kings, a Sun-Drowned scenario in which the sand has drawn back from a priest-king tomb complex and gilded chambers show through the heat shimmer.",
+  "composition": "Looking down a sand-cut descent toward a tomb entrance of pillars and a gilded door; a tiny party at the top, a mummy figure in the doorway.",
+  "details": [
+   "Sand-banked descent with a stair",
+   "Fallen pillars and deep sand drifts",
+   "Tomb facade with a gilded door (blank paper with fine outline)",
+   "Hieroglyph-like patterns as abstract repeating ornament",
+   "Pressure plate square in the corridor, subtle",
+   "Mummy Herald in wrappings standing watch, small",
+   "Heat shimmer lines"
+  ],
+  "activity": [
+   "Three tiny grave-robbers at the stair top peer down",
+   "The mummy stands motionless"
+  ],
+  "atmosphere": "Patient danger.",
+  "avoid": [
+   "Not the Sun-Crowned Prince's throne court",
+   "Not Khorrun's hoard",
+   "No readable hieroglyphs",
+   "No glow"
+  ],
+  "sources": [
+   "10.4 Scenario 3: Tomb of the Sunken Kings (Sun-Drowned)",
+   "1.3.2 The Sun-Drowned"
+  ]
+ },
+ "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR": {
+  "identity": "The Sandwyrm's Lair, a Sun-Drowned scenario in a broad basin of loose sand south of the passes where nomad legend places a vast shape beneath the dunes.",
+  "composition": "Wide shot of a sand basin from a rock shelf; a long furrow in the sand and a swirling shifting zone at the centre, the creature not seen.",
+  "details": [
+   "Broad bowl of rippled sand with a central swirl",
+   "A long ridge of disturbed sand moving toward the dunes",
+   "Rock shelves and ruined stakes",
+   "Coins and gems dribbling from a sand fold",
+   "Dune ridges with fine wind lines",
+   "Bleached bones half-buried",
+   "A nomad campfire on the rim"
+  ],
+  "activity": [
+   "A few tiny hunters with ropes stand on the rock shelf",
+   "A nomad storyteller sits at the fire"
+  ],
+  "atmosphere": "Waiting and listening.",
+  "avoid": [
+   "The Sandwyrm not visible; only its trace",
+   "Not Oasis Raiders",
+   "No glow",
+   "No gore"
+  ],
+  "sources": [
+   "10.4 Scenario 4: The Sandwyrm's Lair (Sun-Drowned)"
+  ]
+ },
+ "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA": {
+  "identity": "The Cursed Colossus of the Waste, a Sun-Drowned scenario centred on a colossal priest-king statue broken at the waist, still angry, with a Heartstone lodged in its hollow chest.",
+  "composition": "Low view from a dune toward the colossal broken statue rising from the sand; the hollow chest cavity a black opening; broken statuary around the base.",
+  "details": [
+   "Priest-king statue broken at the waist, stern face under a headdress",
+   "Hollow chest cavity as solid black",
+   "Legs and shoulders climbable with ledges",
+   "Dune drifts and fallen statuary",
+   "A glowing rune marker drawn as a carved circle on the back",
+   "Skeleton warriors, tiny, at the base",
+   "Treasure chests half-buried"
+  ],
+  "activity": [
+   "Tiny climbers scale the legs with ropes"
+  ],
+  "atmosphere": "Colossal anger entombed in sand.",
+  "avoid": [
+   "Not the Last Colossus boss (iron) and not the Fall statue head (field)",
+   "No glow",
+   "Skeletons only tiny",
+   "No inscription"
+  ],
+  "sources": [
+   "10.4 Scenario 5: The Cursed Colossus of the Waste (Sun-Drowned)"
+  ]
+ },
+ "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR": {
+  "identity": "The Cinder Lord's Obsidian Prison, a Sun-Drowned scenario of an obsidian dais burning without fuel at the centre of a ruin, with a Cinder Lord straining against its binding.",
+  "composition": "Night scene looking up at a black obsidian dais with flames rising, three glyphic stones around it, and a vague silhouette within the fire; broken columns frame the view.",
+  "details": [
+   "Obsidian dais with climbable sides, polished and cracked",
+   "Flames rising without fuel drawn as ink strokes",
+   "Three glyphic stones with cracks, abstract carvings",
+   "Scorched flagstones and broken columns",
+   "Flame mephits small near the dais",
+   "Silhouette of horned figure within flame, vague",
+   "Night sky"
+  ],
+  "activity": [
+   "Two tiny figures at a stone, one touching it, one watching"
+  ],
+  "atmosphere": "Barely held binding.",
+  "avoid": [
+   "Not the Lost Brazier plaza (daylight altar)",
+   "Cinder Lord only as silhouette in flames",
+   "No glow",
+   "No readable glyphs"
+  ],
+  "sources": [
+   "10.4 Scenario 6: The Cinder Lord's Obsidian Prison (Sun-Drowned)",
+   "1.3.5 Cinder lords"
+  ]
+ },
+ "ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT": {
+  "identity": "The Reliquary of Edrava Salttide, a Mire scenario at a Sunken Barrow, a grave-house sealed for two hundred years until recent floods opened it, holding the reliquary of the salt-coast's last great toll-lord.",
+  "composition": "Dawn mist view from a reed-fringed bog island toward a mossy barrow mound with a low flooded entrance at its base; a party wades through shallows in the lower foreground, small. The mound dominates the centre.",
+  "details": [
+   "Rounded barrow mound with a heavy stone lintel carved with abstract ship and wave shapes (no letters)",
+   "Open entrance filled with black water, steps going down under the surface",
+   "White salt crust on the stones, odd this far from any sea",
+   "Bog islands, dense reeds and drifting water-weed",
+   "A toppled standing stone half-sunk at the barrow's foot",
+   "Faint ripples of leech swarms in the shallows",
+   "Rope and a pole lying on the bank, mist drawn as sparse horizontal lines"
+  ],
+  "activity": [
+   "Three tiny party members wade through reeds, one probing the water with a pole",
+   "A heron stands motionless on a hummock"
+  ],
+  "atmosphere": "Waterlogged, ancient and unwelcoming.",
+  "avoid": [
+   "Not the island ritual of Salttide's Reckoning or the Vossegar cathedral",
+   "Edrava's Shade and the reliquary stay unseen",
+   "No readable carvings",
+   "Not a stone castle; a flooded burial mound"
+  ],
+  "sources": [
+   "10.4 Scenario 1: The Reliquary of Edrava Salttide (Mire)",
+   "1.3.2 The Mire"
+  ]
+ },
+ "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER": {
+  "identity": "The Lizardfolk's Stolen Offerings, a Mire scenario at a deep-fen lizardfolk shrine encampment raided before dawn, its Sunstone Amulet and offering piles dragged off into the reeds.",
+  "composition": "Pre-dawn view across the raised-ground swamp encampment of rope walkways and reed screens; empty offering plinths in the foreground and a drag trail leading into the reeds, with lizardfolk temple-guards small and alert.",
+  "details": [
+   "Raised mud platform with reed-thatched shrine huts and woven screens",
+   "Rope walkways slung between posts over shallow pools",
+   "Overturned offering baskets, scattered coins and a smashed clay bowl",
+   "Broad drag marks through the mud into tall reeds",
+   "Lizardfolk Scale-Shaman with a feathered staff and troglodyte guards with spears, reptilian crests and tails",
+   "Shallow pools with a few submerged snouts",
+   "Fen mist and a pale line of dawn"
+  ],
+  "activity": [
+   "The Scale-Shaman examines an empty plinth",
+   "Guards sniff and scan the reeds",
+   "Two tiny thieves hide in the reeds at the far edge"
+  ],
+  "atmosphere": "Furious, watchful silence before dawn.",
+  "avoid": [
+   "Lizardfolk drawn as grounded reptilian people, not cartoon",
+   "Not the Titan fen or the barrow",
+   "No readable idol markings",
+   "No glow around the amulet (absent)"
+  ],
+  "sources": [
+   "10.4 Scenario 2: The Lizardfolk's Stolen Offerings (Mire)",
+   "1.3.5 The old peoples and border powers"
+  ]
+ },
+ "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN": {
+  "identity": "The Mire Titan's Fen, a Mire scenario of a bubbling fen where glimmering geodes lie scattered through a Mire Titan's territory like bait.",
+  "composition": "Wide view across the fen from a muddy bank; geodes glint on hummocks in the middle ground and a vast humped back breaks the pools far out. Razor reeds frame the left edge.",
+  "details": [
+   "Deep mud and shallow pools with rising gas bubbles drawn as small circles",
+   "Glimmering geodes as faceted shapes on small islands, outlined and left white",
+   "Razor reeds with serrated blades along the banks",
+   "Huge mud-caked hump of the Titan far out, partly submerged, barely resolved",
+   "Hooks, ropes and a boat pole on the bank",
+   "A heron-like bird fleeing",
+   "Low mist with sparse horizontal strokes"
+  ],
+  "activity": [
+   "Hunters with hooks and ropes stand on the bank, small",
+   "A lighter thief creeps out along a hummock chain"
+  ],
+  "atmosphere": "Baited, patient menace.",
+  "avoid": [
+   "Titan only a hump, not a portrait",
+   "Not the Serpent's sinkhole or the Blighted Heartwood",
+   "No glow from geodes",
+   "No gore"
+  ],
+  "sources": [
+   "10.4 Scenario 3: The Mire Titan's Fen (Mire)"
+  ]
+ },
+ "ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD": {
+  "identity": "The Blighted Heartwood, a Mire scenario in which blight has wrapped swamp growth around a pulsing Heartwood that beats under the bark like a buried organ.",
+  "composition": "Close, slightly low view at the edge of the Blighted Grove; a huge swamp tree with a swollen, vein-ridged bulge in its trunk fills the centre, thorny vines and muck pools around it, a treant guardian partly seen behind.",
+  "details": [
+   "Trunk bulge like a heart under split bark, with vein-like ridges",
+   "Thorny vines choking the grove",
+   "Corrupted muck pools with oily rings and dead reeds",
+   "A blighted treant guardian, bark-skinned, partly seen between trunks",
+   "Small thornling sprouts, twig-limbed, near the vines",
+   "Rot-furred branches and bracket fungus",
+   "Decaying boardwalk fragment at the edge"
+  ],
+  "activity": [
+   "Two tiny figures hesitate at the vine edge, one with an axe"
+  ],
+  "atmosphere": "Sickly, throbbing wrongness.",
+  "avoid": [
+   "Not the Old Growth ritual grove (which is healthy) and not the Avatar",
+   "No gore",
+   "No glowing pulse",
+   "Treant partial only"
+  ],
+  "sources": [
+   "10.4 Scenario 4: The Blighted Heartwood (Mire)",
+   "1.3.2 The Mire"
+  ]
+ },
+ "ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING": {
+  "identity": "Salttide's Reckoning, a Mire scenario of a sacred island cursed like oil on water, where Edrava Salttide has made a ritual of the place and turns it on the living who entered without paying the toll.",
+  "composition": "View across still oily water from the reed line toward a ritual island; reeds on both banks lean toward the island, three carved effigies stand on it with a robed figure among them.",
+  "details": [
+   "Reeds all bent toward the island as if drawn by wind",
+   "Concentric oily rings spreading over the water",
+   "Three carved driftwood effigies with crude faces",
+   "Robed toll-lord figure on the island with raised arms, ship-prow headdress",
+   "Crocodile snouts just breaking the surface",
+   "Muddy islets and dense reeds",
+   "White salt crust on the shore and a dead tree"
+  ],
+  "activity": [
+   "The robed figure performs the rite",
+   "Two tiny watchers crouch in the reeds"
+  ],
+  "atmosphere": "Brine-bitter curse in still air.",
+  "avoid": [
+   "Not the barrow entrance of Scenario 1",
+   "Salttide small, not a portrait",
+   "No readable markings",
+   "No glow"
+  ],
+  "sources": [
+   "10.4 Scenario 5: Salttide's Reckoning (Mire)"
+  ]
+ },
+ "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD": {
+  "identity": "The Serpent's Sunken Hoard, a Mire scenario of a flooded sinkhole opened in the black water, where something ancient coils below over a hoard.",
+  "composition": "High angle onto a circular sinkhole pool in black water with crumbling banks; hoard chests glimpsed deep below and a long coil shown only as ripples and a darker line under the surface.",
+  "details": [
+   "Circular pool of black water edged by slumping, crumbling banks",
+   "Chests glimpsed deep down as pale rectangles",
+   "Faint spiral ripples suggesting a coil below",
+   "Small islands, reeds and muddy approaches",
+   "A rope tied to a stake leading into the water",
+   "Floating debris and a drowned ferry hull",
+   "Mist"
+  ],
+  "activity": [
+   "One tiny diver with a rope descends a bank, three others hold the line"
+  ],
+  "atmosphere": "Black water, held breath.",
+  "avoid": [
+   "The serpent itself unseen",
+   "Not the Mire climate walkways or Vossegar's cathedral",
+   "No glow",
+   "No gore"
+  ],
+  "sources": [
+   "10.4 Scenario 6: The Serpent's Sunken Hoard (Mire)"
+  ]
+ },
+ "ART-CAM-11-1-CAMPAIGN-OVERVIEW": {
+  "identity": "A Stronghold, a claim driven into a dying world with coin, fear, salvage and stubborn labour, built of stones from ruined shrines, watch-keeps and broken bridges.",
+  "composition": "Three-quarter view of a stronghold under construction on a hill; workers haul shrine stones and broken bridge spans up a ramp, scaffolding around a half-built keep.",
+  "details": [
+   "Half-built keep with scaffolding and ropes",
+   "Reused masonry: a carved saint's head and a pier of a broken bridge span",
+   "Ramp with a sled and rollers dragging a block",
+   "Workers: debt-bound craftsmen, mules, a deserter soldier",
+   "Timber crane or windlass",
+   "Half-finished palisade and a ditch",
+   "Stacked salvaged blocks and a mason's hut"
+  ],
+  "activity": [
+   "A dozen workers haul stones up the ramp",
+   "Others on the scaffolding set stones",
+   "A guard stands on a wall section"
+  ],
+  "atmosphere": "Stubborn labour at the edge of ruin.",
+  "avoid": [
+   "Not the finished stronghold at dusk (ch.11 opener)",
+   "Not a noble castle",
+   "No monsters",
+   "No readable plans or text"
+  ],
+  "sources": [
+   "11.1 Campaign Overview"
+  ]
+ },
+ "ART-CAM-THE-VAULT": {
+  "identity": "The Vault, a Stronghold facility that is a sealed confession of greed, iron-bound and watched by clerks who sleep in shifts.",
+  "composition": "Low-ceilinged interior at eye level; a clerk dozes on a stool beside iron-bound chests and coin scales while a second clerk counts coins by candle.",
+  "details": [
+   "Iron-bound chests with heavy locks and chains",
+   "Coin scales and stacks of coins",
+   "Candle in a dish and low barrel-vaulted ceiling",
+   "Ledger on a slanted desk",
+   "Iron door ajar with thick bolts",
+   "Sacks and strongboxes stacked",
+   "A wall of pigeonholes stuffed with receipts"
+  ],
+  "activity": [
+   "One clerk dozes on a stool",
+   "One clerk counts coins with a quill beside"
+  ],
+  "atmosphere": "Claustrophobic, wary greed.",
+  "avoid": [
+   "Not the Khorrun hoard or the ch.6 hiring hall",
+   "No readable ledger text",
+   "No heaps of glittering treasure",
+   "Not a bank palace"
+  ],
+  "sources": [
+   "11.3 Building the Stronghold - The Vault"
+  ]
+ },
+ "ART-CAM-THE-BARRACKS": {
+  "identity": "The Barracks, a Stronghold dormitory smelling of straw, sweat, damp wool and boiled leather, with names carved into the beams.",
+  "composition": "Interior down the length of a long room under heavy beams; rows of straw bunks, one empty bunk in the foreground with a helmet left on it.",
+  "details": [
+   "Rows of straw bunks with rough blankets",
+   "Heavy beams carved with many names as scratches",
+   "Damp wool cloaks and boots hung to dry on lines",
+   "Small iron stove and a kettle",
+   "One empty bunk with a helmet resting",
+   "Shields stacked at the wall and a chest at each bed",
+   "Dust motes shown as stippling"
+  ],
+  "activity": [
+   "One or two recruits sleep curled on bunks, the rest empty"
+  ],
+  "atmosphere": "Weary, mournful, lived-in.",
+  "avoid": [
+   "Not the Expedition Hall yard or Armoury racks",
+   "Names must be scratches, not readable letters",
+   "No gore",
+   "Not a luxurious bedroom"
+  ],
+  "sources": [
+   "11.3 Building the Stronghold - The Barracks"
+  ]
+ },
+ "ART-CAM-THE-ARMOURY": {
+  "identity": "The Armoury, a Stronghold store of salvaged arms smelling of oil, wet leather, coal smoke and old violence.",
+  "composition": "Interior wall view; racks of salvaged arms behind a worn oil-cloth bench in the foreground.",
+  "details": [
+   "Racks of blades recovered from drowned shrines, rusted and barnacled",
+   "A shield hammered flat after dragon-fire",
+   "Ownerless helms on pegs, some dented",
+   "Oil-cloth bench with rags, an oil can and a whetstone",
+   "Spears and crossbows racked against the wall",
+   "Coal-smoke-stained beams and a coal brazier",
+   "Wet leather harnesses hanging"
+  ],
+  "activity": [],
+  "atmosphere": "Old violence stored carefully.",
+  "avoid": [
+   "Not the ch.7 Deepwarden forge (no smith, no anvil)",
+   "Not the melee weapons still life on sacking",
+   "No readable names on helms",
+   "No figures"
+  ],
+  "sources": [
+   "11.3 Building the Stronghold - The Armoury"
+  ]
+ },
+ "ART-CAM-THE-APOTHECARY": {
+  "identity": "The Apothecary, a Stronghold workroom built around heat, glass, knives, bone saws and bitter herbs, stocked with tinctures from The Mire and salts from the Sun-Drowned.",
+  "composition": "Cramped workroom interior at eye level; glass alembics over a brazier at the centre, shelves of jars behind.",
+  "details": [
+   "Glass alembics and retorts over a brazier",
+   "Bone saws and knives laid on a cloth",
+   "Shelves of jars with unmarked labels (blank paper tags)",
+   "Bunches of herbs hanging from the rafters",
+   "Mortar and pestle, scales and a dish of salts",
+   "Operating table with leather straps",
+   "A skull used as a candle holder"
+  ],
+  "activity": [
+   "Optional: a single apothecary's silhouette tending the brazier"
+  ],
+  "atmosphere": "Bitter, clinical and uneasy.",
+  "avoid": [
+   "Not the Alchemist's Frozen Laboratory scenario",
+   "No gore on the table",
+   "No readable labels",
+   "Not a pretty potion-shop"
+  ],
+  "sources": [
+   "11.3 Building the Stronghold - The Apothecary"
+  ]
+ },
+ "ART-CAM-THE-OUTER-WALLS": {
+  "identity": "The Outer Walls, the Stronghold's ditch, spiked palisade and stone wall that make the dark work harder.",
+  "composition": "Night view from outside the ditch looking up at the wall; warding nails driven into the timbers, a lone sentry with a torch on the walkway.",
+  "details": [
+   "Ditch with sharpened stakes",
+   "Spiked palisade of heavy timbers",
+   "Stone wall section with salvaged masonry",
+   "Warding nails hammered into timbers in patterns",
+   "Sentry walkway with a torch and a bell",
+   "Night sky ruled with heavy hatching",
+   "Dead trees beyond the ditch and distant eyes as tiny dots"
+  ],
+  "activity": [
+   "One sentry stands with a torch, small"
+  ],
+  "atmosphere": "Thin security.",
+  "avoid": [
+   "Not the ch.11 returning party scene (no procession, no gate focus)",
+   "No monsters visible",
+   "Not a grand castle wall",
+   "Torch not glowing"
+  ],
+  "sources": [
+   "11.3 Building the Stronghold - The Outer Walls"
+  ]
+ },
+ "ART-CAM-THE-ARCANUM": {
+  "identity": "The Arcanum, a Stronghold tower that rises too thin and too tall, windows burning at hours when honest fires should be dead.",
+  "composition": "Looking up at the tower against a night sky; upper windows burn and brass instruments on the roof turn toward a storm.",
+  "details": [
+   "Tall thin tower with crooked stonework",
+   "Windows drawn as solid black with a few open slits of paper",
+   "Brass instruments: armillary ring, telescope, weathervane",
+   "Storm clouds as dense diagonal hatching",
+   "Lightning thin as a fine zigzag",
+   "Stronghold wall and roofs low below",
+   "Ivy and crooked buttresses"
+  ],
+  "activity": [],
+  "atmosphere": "Uneasy ambition.",
+  "avoid": [
+   "Not the Fallen Observatory (ruined dome)",
+   "Not the burned library of ch.8",
+   "No glow rays",
+   "No figures"
+  ],
+  "sources": [
+   "11.3 Building the Stronghold - The Arcanum"
+  ]
+ },
+ "ART-CAM-THE-STRONGHOLD-CHAPEL": {
+  "identity": "The Stronghold Chapel, small, cold and crowded with votive offerings from those who survived by inches.",
+  "composition": "Interior at eye level looking toward a small altar; chipped saint statues and votives crowd the walls, a single mourner kneels.",
+  "details": [
+   "Chipped saint statues with worn faces",
+   "Votive offerings: small figures, broken weapons, locks of hair",
+   "Low candles guttering",
+   "Narrow arched windows with plain glass",
+   "Plain stone altar and a cracked cloth",
+   "Suspect relic in a reliquary box",
+   "Cold breath mist"
+  ],
+  "activity": [
+   "One mourner kneels at the altar, head bowed"
+  ],
+  "atmosphere": "Hushed grief.",
+  "avoid": [
+   "Not the Sablekeep bastion or Voice Beneath the Bells drowned chapel",
+   "No readable inscriptions",
+   "No glowing halo",
+   "Not ornate"
+  ],
+  "sources": [
+   "11.3 Building the Stronghold - The Stronghold Chapel"
+  ]
+ },
+ "ART-CAM-THE-WAR-ROOM": {
+  "identity": "The War Room, where contracts are signed, debts denied and maps stained, with a hearth beneath banners taken from ruins, enemies and dead patrons.",
+  "composition": "Interior across a heavy table toward the hearth; captured banners hang above, stained maps pinned with knives.",
+  "details": [
+   "Heavy table with stained maps pinned by knives",
+   "Contract and quill with an inkwell",
+   "Captured banners without device",
+   "Burning hearth in the back wall",
+   "Stools and a map chest",
+   "Candle stubs and a wine cup",
+   "Rough stone walls"
+  ],
+  "activity": [],
+  "atmosphere": "Calculating and weathered.",
+  "avoid": [
+   "Not the ch.6 hiring hall (crowded) or the Vault",
+   "No readable text on maps",
+   "No figures needed",
+   "Not luxurious"
+  ],
+  "sources": [
+   "11.3 Building the Stronghold - The War Room"
+  ]
+ },
+ "ART-CAM-THE-EXPEDITION-HALL": {
+  "identity": "The Expedition Hall, a packed-earth training yard with split-post walls where veterans correct recruits.",
+  "composition": "Three-quarter view of a training yard; a scarred veteran corrects a recruit's guard, blunted weapons on a rack, mud underfoot.",
+  "details": [
+   "Split-post walls and a roofed lean-to",
+   "Packed-earth floor with puddles",
+   "Rack of blunted swords and staves",
+   "Straw-stuffed training dummy with cuts",
+   "Scarred veteran with a bandaged hand",
+   "Recruit with an oversized shield",
+   "Mud smears and a bucket"
+  ],
+  "activity": [
+   "Veteran adjusts recruit's guard",
+   "Another recruit watches or spars in the background"
+  ],
+  "atmosphere": "Hard instruction and mud.",
+  "avoid": [
+   "Not Hearthhold's training ground on the wall",
+   "No blood",
+   "Not the Barracks interior",
+   "Not heroic poses"
+  ],
+  "sources": [
+   "11.3 Building the Stronghold - The Expedition Hall"
+  ]
+ },
+ "ART-CAM-THE-UNDERCROFT": {
+  "identity": "The Undercroft, a warren of cellars, sealed drains and hidden doors older than the Stronghold above.",
+  "composition": "Low-angle view in a vaulted cellar warren lit by a single lantern; a hidden door ajar, a cloaked figure slipping into an older passage below.",
+  "details": [
+   "Vaulted brick ceiling and arches",
+   "Single lantern on a hook",
+   "Hidden door ajar with a heavy bolt",
+   "Sealed drain grate",
+   "Older masonry in the lower passage, finer than above",
+   "Barrels, crates, cobwebs",
+   "Water drips and a shallow puddle"
+  ],
+  "activity": [
+   "A cloaked figure slips through the hidden door"
+  ],
+  "atmosphere": "Secretive and old.",
+  "avoid": [
+   "Not the Undermarches climate or the Sealed Archive scenario",
+   "Figure's face hidden",
+   "No monsters",
+   "No readable marks"
+  ],
+  "sources": [
+   "11.3 Building the Stronghold - The Undercroft"
+  ]
+ },
+ "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI": {
+  "identity": "The Broken Courier, the Appendix A quickstart scenario in which a royal courier was cut down on the old road and two small parties race for the dispatch satchel before wolves or rivals claim it.",
+  "composition": "Overcast morning view along an old road with a low ruined wall in the centre; the fallen courier and satchel lie beside the ruin, four wolves at the edge, tiny hero pairs at the far left and right.",
+  "details": [
+   "Old cobbled road with ruts and grass breaking through",
+   "Low ruined wall about knee height and a patch of rubble",
+   "Courier lying in a spread cloak, drawn with restraint, satchel beside",
+   "Small lockbox thrown into brush",
+   "Four dire wolves approaching low across the field",
+   "Scatter pieces: fallen stones and a broken cart axle",
+   "Thin overcast sky with sparse strokes"
+  ],
+  "activity": [
+   "Two heroes on each side advance warily from opposite edges",
+   "Wolves converge on the satchel"
+  ],
+  "atmosphere": "Brisk, grim race.",
+  "avoid": [
+   "No gore; courier clearly dead but not gruesome",
+   "Not the Bandit's Toll or ch.2",
+   "No readable seal on satchel",
+   "Wolves not detailed portraits"
+  ],
+  "sources": [
+   "A.4 Quickstart Scenario: The Broken Courier",
+   "A.2 What You Need for the First Game"
+  ]
+ }
+}
