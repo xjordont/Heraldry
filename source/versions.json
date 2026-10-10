@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 491,
+  "current": 492,
   "revisions": [
     {
       "number": 484,
@@ -213,6 +213,23 @@
       ],
       "patch_file": "editorial/history/RC491.json",
       "patch_sha256": "281367bb2bd7123c130d2159e5bb9ba0934402db34a3f8bb9bc4b94d1d68326f"
+    },
+    {
+      "number": 492,
+      "path": "source/Heraldry_RC492.md",
+      "sha256": "a5ca7e72ad05a0cd69bb0bdca8238c10a635cf18345ae719c047c42fd3a8552a",
+      "bytes": 1453478,
+      "parent_sha256": "545184806715afdcdaa79d98ee49d721c74ec944ff3511573a8ff32d75c46c4d",
+      "created_at": "2026-10-10T17:51:54.023499+00:00",
+      "reason": "Basilisk is Large without the ox comparison; Undermarches 6 Shadow Brand reverts to the Spectre Summon",
+      "authorization": "Owner instruction 2026-10-10 (Claude Code session): 'I was wrong to say medium is an ox; please revert to previous size definitions. A briarling would be medium but a basilisk would be large. Remove the awkward ox-sized reference in the flavour text. ... We would either revert it to how it was before or rewrite it ...' Orchestrator chose the revert.",
+      "patch_ids": [
+        "RC492-01",
+        "RC492-02",
+        "RC492-03"
+      ],
+      "patch_file": "editorial/history/RC492.json",
+      "patch_sha256": "163f52e16a2b6c303fcd2bfc5392e13b90c5d7d3c8a0f79a47a9389e8862da62"
     }
   ]
 }

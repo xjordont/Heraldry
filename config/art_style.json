@@ -125,8 +125,8 @@
  },
  "size_words": {
   "S": "Small: smaller than a human",
-  "M": "Medium: from about human-sized up to about the size of an ox",
-  "L": "Large: bigger than an ox, roughly twice a human's height or bulk",
+  "M": "Medium: about human-sized",
+  "L": "Large: roughly twice a human's height or bulk",
   "H": "Huge: towering many times a human's size"
  },
  "style_refs": [
