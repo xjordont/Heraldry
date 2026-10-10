@@ -361,7 +361,7 @@ class Runner(Isolated):
         self.assertIn("Next session: GENERATE next", out)
 
     def test_bundle_carries_refusals_and_works_with_only_refusals(self):
-        self.assertEqual(run(self.root, "refuse", "ART-T-HERO", "--reason", "policy")[0], 0)
+        self.assertEqual(run(self.root, "refuse", "ART-T-HERO", "--reason", "the tool declined the request")[0], 0)
         code, out, err = run(self.root, "bundle")
         self.assertEqual(code, 0, err)
         z = next((self.tmp / "scratch").rglob("batch_refusals.zip"))
@@ -385,6 +385,8 @@ class Runner(Isolated):
         self.assertIn("* Exactly eight legs", out)
         self.assertIn("* No scenery.", out)
         self.assertIn("Large: roughly twice", out)
+        self.assertIn("IMAGE SIZE: 1024x1024 pixels (square 1:1)", out)
+        self.assertIn("STATE: pending (nothing delivered yet)", out)
         (self.root / "production/art/gpt/prompts/ART-T-BEAST.txt").write_text("changed\n")
         code, out, err = run(self.root, "show", "ART-T-BEAST")
         self.assertEqual(code, 2)
@@ -495,8 +497,14 @@ class Runner(Isolated):
         self.assertIn("redo reason: six legs, not eight", run(self.root, "next")[1])
         for i in range(2):
             run(self.root, "check", "ART-T-BEAST", str(self.image(f"r{i}.png", scale=0.5 + 0.05 * i)))
-        previews = sorted(f.name for f in ha.scratch_dir(self.root).glob("ART-T-BEAST_attempt*_print_size.png"))
-        self.assertEqual(previews, ["ART-T-BEAST_attempt1_print_size.png", "ART-T-BEAST_attempt2_print_size.png"])
+        previews = sorted(f.name for f in ha.scratch_dir(self.root).glob("ART-T-BEAST_r*_print_size.png"))
+        self.assertEqual(previews, ["ART-T-BEAST_r1_attempt1_print_size.png", "ART-T-BEAST_r2_attempt1_print_size.png",
+                                    "ART-T-BEAST_r2_attempt2_print_size.png"], "a redo is a new round: it must not overwrite the earlier previews")
+        code, out, err = save(self.root, "ART-T-BEAST", self.tmp / "r1.png")
+        self.assertEqual(code, 0, err)
+        rec = json.loads((self.root / "production/art/gpt/RECEIPTS.jsonl").read_text().splitlines()[-1])
+        self.assertTrue(rec["redo"], "the receipt marks a redo")
+        self.assertEqual(rec["variants_tried"], 2)
 
     def test_doctor_creates_the_scratch_folder_and_the_helper_names_the_repos_own_copy(self):
         self.assertFalse(ha.scratch_dir(self.root).exists())
@@ -512,6 +520,68 @@ class Runner(Isolated):
         repo_copy.write_text(repo_copy.read_text() + "\n# newer\n")
         self.assertIn("WARNING: this helper differs from the repo's copy", run(self.root, "doctor")[1])
         self.assertIn("WARNING: this helper differs from the repo's copy", run(self.root, "status")[1])
+
+    def test_doctor_says_not_ready_yet_for_a_fixable_pointer_and_ready_once_fixed(self):
+        ref = self.root / "assets/art/style/REF-0.jpg"
+        good = ref.read_bytes()
+        ref.write_bytes(b"version https://git-lfs.github.com/spec/v1\noid sha256:" + b"0" * 64 + b"\nsize 1\n")
+        code, out, err = run(self.root, "doctor")
+        self.assertEqual(code, 1)
+        self.assertIn("NOT READY YET (one step)", out)
+        self.assertNotIn("NOT READY:", out)
+        self.assertIn('git lfs pull --include="assets/art/style/REF-0.jpg"', out)
+        ref.write_bytes(good)
+        code, out, err = run(self.root, "doctor")
+        self.assertEqual(code, 0, out)
+        self.assertIn("READY TO GENERATE", out)
+
+    def test_a_byte_copy_is_never_saved_even_with_accept_flags(self):
+        for k in range(2):
+            run(self.root, "check", "ART-T-BEAST", str(self.image(f"d{k}.png", scale=0.5 + 0.05 * k)))
+        copy = self.tmp / "copy.jpg"
+        copy.write_bytes((self.root / "assets/art/style/REF-0.jpg").read_bytes())            # a byte copy of the item's reference
+        code, out, err = run(self.root, "save", "ART-T-BEAST", str(copy), "--accept-flags", "--notes", "third attempt, the tool keeps copying")
+        self.assertEqual(code, 2)
+        self.assertIn("byte copy of assets/art/style/REF-0.jpg", err)
+        self.assertIn("refuse ART-T-BEAST", err)
+        self.assertFalse((self.root / "assets/art/incoming/ART-T-BEAST.jpg").exists())
+
+    def test_statements_that_admit_a_miss_are_not_accepted(self):
+        img = self.image()
+        for bad in ("2 arm lines, 0 wings drawn", "no gate is drawn so it could not be verified", "two legs missing", "wrong number of legs",
+                    "cannot count them", "talons not visible"):
+            code, out, err = run(self.root, "save", "ART-T-BEAST", str(img), "--must", bad, "--avoid-clear")
+            self.assertEqual(code, 2, bad)
+            self.assertIn("says the item is missing", err)
+        self.assertFalse((self.root / "assets/art/incoming/ART-T-BEAST.png").exists())
+        for good in ("counted 8 legs, 4 a side", "all eight legs present and attached", "eight jointed legs clearly visible"):
+            code, out, err = run(self.root, "save", "ART-T-BEAST", str(img), "--must", good, "--avoid-clear")
+            self.assertEqual(code, 0, good + err)
+            break
+
+    def test_refuse_needs_a_real_reason_and_does_not_apply_to_delivered_items(self):
+        self.assertEqual(run(self.root, "refuse", "ART-T-HERO", "--reason", "no")[0], 2)
+        self.assertEqual(run(self.root, "refuse", "ART-T-HERO", "--reason", "")[0], 2)
+        self.assertEqual(save(self.root, "ART-T-BEAST", self.image())[0], 0)
+        data = (self.root / "assets/art/incoming/ART-T-BEAST.png").read_bytes()
+        (self.root / "production/art").mkdir(parents=True, exist_ok=True)
+        (self.root / "production/art/SELECTIONS.json").write_text(json.dumps(
+            {"ART-T-BEAST": {"status": "received", "master": {"sha256": hashlib.sha256(data).hexdigest()}}}))
+        code, out, err = run(self.root, "refuse", "ART-T-BEAST", "--reason", "the tool declined the request")
+        self.assertEqual(code, 2)
+        self.assertIn("already delivered", err)
+        self.assertEqual(ha.states(self.root, self.q)["ART-T-BEAST"], "pushed", "a stray refusal must not flip a delivered item")
+
+    def test_a_redo_flag_is_marked_in_the_receipt(self):
+        self.assertEqual(save(self.root, "ART-T-BEAST", self.image(scale=0.6))[0], 0)
+        data = (self.root / "assets/art/incoming/ART-T-BEAST.png").read_bytes()
+        (self.root / "production/art").mkdir(parents=True, exist_ok=True)
+        (self.root / "production/art/SELECTIONS.json").write_text(json.dumps(
+            {"ART-T-BEAST": {"status": "received", "master": {"sha256": hashlib.sha256(data).hexdigest()}}}))
+        self.assertEqual(save(self.root, "ART-T-BEAST", self.image("again.png", scale=0.55))[0], 2, "delivered: needs --redo")
+        self.assertEqual(save(self.root, "ART-T-BEAST", self.image("again.png", scale=0.55), "--redo")[0], 0)
+        rec = json.loads((self.root / "production/art/gpt/RECEIPTS.jsonl").read_text().splitlines()[-1])
+        self.assertTrue(rec["redo"])
 
     def test_scratch_is_per_repository_and_overridable(self):
         other = self.tmp / "other"
@@ -564,8 +634,13 @@ class GitStates(Isolated):
         self.assertIn("ART-T-BEAST", run(root, "next")[1])
         code, out, err = save(root, "ART-T-SCENE", self.tmp / "ART-T-BEAST.png")
         self.assertEqual(code, 2, "a delivered, un-rejected item needs --redo")
-        # a refusal is its own state, is not offered again, and its receipt must be pushed
-        code, out, err = run(root, "refuse", "ART-T-HERO", "--reason", "policy")
+        # a refusal is its own state, is not offered again, and its receipt must be pushed. Only a redo can be refused:
+        hero_file = next((root / "assets/art/incoming").glob("ART-T-HERO.*"))
+        (root / "production/art/SELECTIONS.json").write_text(json.dumps({
+            "ART-T-BEAST": {"status": "rejected"},
+            "ART-T-HERO": {"status": "rejected", "master": {"sha256": ha.local_sha(hero_file)}}}))
+        self.assertEqual(ha.states(root, q)["ART-T-HERO"], "redo")
+        code, out, err = run(root, "refuse", "ART-T-HERO", "--reason", "the tool declined the request")
         self.assertEqual(code, 0, err)
         self.assertEqual(ha.states(root, q)["ART-T-HERO"], "refused")
         status = run(root, "status")[1]
@@ -603,7 +678,8 @@ class GitStates(Isolated):
             end = run(root, "status", "--end")[1]
             self.assertIn("DRIFT REVIEW, THEN COMMIT AND PUSH", end)
             self.assertIn("sheet --refs", end)
-            self.assertIn("art(gpt): ART-T-SCENE .. ART-T-SCENE", end)
+            self.assertIn('art(gpt): ART-T-SCENE"', end)
+            self.assertNotIn("ART-T-SCENE .. ART-T-SCENE", end)
             self.assertIn("git lfs ls-files", end)
             self.assertEqual(save(root, "ART-T-BEAST", self._img())[0], 0)
             two = run(root, "status")[1]
@@ -637,6 +713,40 @@ class GitStates(Isolated):
         # SELECTIONS.json still says rejected (the intake has not run), but a different image is now on the remote
         self.assertEqual(ha.states(root, q)["ART-T-BEAST"], "pushed")
         self.assertNotIn("GENERATE next: ART-T-BEAST", run(root, "status", "--end")[1])
+
+    def test_status_stops_for_stray_files_and_images_without_a_receipt(self):
+        root = self.make()
+        stray = root / "assets/art/incoming/notes.png"
+        figure_image().save(stray)
+        out = run(root, "status")[1]
+        self.assertIn("WARNING: not a queue item, but changed under assets/art/incoming: assets/art/incoming/notes.png", out)
+        self.assertIn("NEXT ACTION: STOP. The files above are not queue items", out)
+        stray.unlink()
+        figure_image(scale=0.6).save(root / "assets/art/incoming/ART-T-BEAST.png")          # placed by hand: no receipt from `save`
+        out = run(root, "status")[1]
+        self.assertIn("ART-T-BEAST has an image but no matching receipt", out)
+        self.assertIn("NEXT ACTION: STOP. ART-T-BEAST have no receipt from `save`", out)
+        (root / "assets/art/incoming/ART-T-BEAST.png").unlink()
+        self.assertNotIn("STOP", run(root, "status")[1])
+
+    def test_push_instruction_names_exact_pathspecs_that_also_stage_an_extension_swap(self):
+        root = self.make()
+        self.assertEqual(save(root, "ART-T-BEAST", self._img())[0], 0)
+        git(root, "add", "-A")
+        git(root, "commit", "-q", "-m", "png")
+        git(root, "push", "-q", "origin", "main")
+        jpg = self.tmp / "swap.jpg"
+        figure_image(scale=0.6).save(jpg, "JPEG")
+        self.assertEqual(save(root, "ART-T-BEAST", jpg, "--redo")[0], 0)                  # the PNG is replaced by a JPEG
+        end = run(root, "status", "--end")[1]
+        self.assertIn("art(gpt): ART-T-BEAST ;", end.replace('"', "") + " ;", "a single image names itself, with no range")
+        self.assertNotIn("..", end.split("NEXT ACTION:")[1])
+        self.assertIn("'assets/art/incoming/ART-T-BEAST.*'", end)
+        self.assertNotIn("git add assets/art/incoming ", end)
+        git(root, "add", "-A", "--", "assets/art/incoming/ART-T-BEAST.*", "production/art/gpt/RECEIPTS.jsonl")
+        out = subprocess.run(["git", "-C", str(root), "diff", "--cached", "--name-status"], capture_output=True, text=True).stdout
+        self.assertIn("D\tassets/art/incoming/ART-T-BEAST.png", out)
+        self.assertIn("A\tassets/art/incoming/ART-T-BEAST.jpg", out)
 
     def test_bundle_with_git_uses_unpushed_images(self):
         root = self.make()
@@ -676,7 +786,7 @@ class IntakeContract(Isolated):
         figure_image((1024, 1024)).save(img)
         code, out, err = save(root, item["id"], img, "--model", "GPT Images 2.5")
         self.assertEqual(code, 0, err + out)
-        self.assertEqual(run(root, "refuse", "ART-CLA-FIGHTER", "--reason", "policy")[0], 0)
+        self.assertEqual(run(root, "refuse", "ART-CLA-FIGHTER", "--reason", "the tool declined the request")[0], 0)
         with mock.patch.multiple(art_intake, ROOT=root, INCOMING=root / "assets/art/incoming", RECEIPTS=gpt / "RECEIPTS.jsonl",
                                  REVIEW=root / "production/art/review"), \
                 mock.patch.multiple(g, INK=root / "assets/art/ink", SELECTIONS=root / "production/art/SELECTIONS.json"):

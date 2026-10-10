@@ -27,7 +27,7 @@ References carry subjects that tend to leak into unrelated images. Reject any re
 
 ## Scale
 
-The prompt's `Size:` line is canonical.
+The prompt is canonical: a creature's `Size:` line, or what a scene says about its people.
 
 | Class | Meaning |
 |---|---|
