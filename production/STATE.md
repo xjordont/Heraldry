@@ -122,3 +122,10 @@ Mandatory: every complete fit-capable scenario, section/subsection, table, proce
   - All 274 briefs fixed (scenery-free figures, stat-block weapons, cover party per Package A, scale figures, de-duplication) and updated to RC489 text.
 - **Build:** 597 pages; every changed page inspected; 19/19 checks PASS; RC490 release ZIP built.
 - **Left open, not owner-approved:** Desert Naga Hexscale gives Sleeping where the flavour says weak; Undermarches 6 allied Spectre reward; judgement-call size and trait wording (production/art/SOURCE_NOTES.md). Physical proof NOT TESTED.
+- **RC491** (owner, 2026-10-10: "Change desert nagas flavour text to match. Undermarch Scenario 6 spectre reward should be changed to the closest thematic match within the undermarch bestiary. Medium is ox-sized."):
+  - Desert Naga flavour now reads "hexing the strong into an unnatural sleep".
+  - The Shadow Brand reward is an allied Noxcloth Summon.
+  - Art size words: M runs from human-sized up to ox-sized.
+  - Figure delta review recorded; gate 57/57.
+  - Pages 304 and 434 inspected; 19/19 checks PASS; RC491 release ZIP built.
+  - No open owner decisions remain from the RC488 audit; the judgement calls B-13..B-17 are left as written.
