@@ -1,3 +1,7 @@
+# Current editorial authority — RC487
+
+2026-10-09: `source/versions.json` selects immutable RC487. The owner authorized preserving printed item prices, removing development value formulas, and resolving all remaining RC486 audit items. `editorial/history/RC487.json` archives 48 approved exact replacements. The 21 findings and six questions are resolved in `production/qa/manuscript-contradiction-resolution.md` and its JSON ledger; 835 printed finished prices are unchanged. RC484–RC486 and their archived patches remain unchanged. Historical notes below describe their original builds; they are not the current source or audit status.
+
 # Editorial ledger — RC484 publication layer
 
 Canonical source: `source/Heraldry_RC484.md`, SHA-256 `2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3` (verified on every parse).

@@ -1,0 +1,440 @@
+{
+  "schema": 1,
+  "source_revision": 486,
+  "source_sha256": "5da05cec6153ac11865874a0da416c002ce90b2dc4936fc9ce50abca9d3dbbe5",
+  "authorization": "Owner instruction 2026-10-09: stated item values are intentional; remove development item-value formulas; fix all remaining audit issues in the least disruptive, most concise, elegant and consistent way possible.",
+  "patches": [
+    {
+      "id": "RC487-01",
+      "status": "approved",
+      "finding": "F01",
+      "issue": "Spot summaries omit the higher SPI option",
+      "find": "| **Spot** | 1 AP | Make an **INT Check** to reveal one eligible **Hidden** enemy combatant. |",
+      "replace": "| **Spot** | 1 AP | Make an **INT Check** or **SPI Check** against **12**, whichever is higher, to reveal one eligible **Hidden** enemy combatant. |",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-02",
+      "status": "approved",
+      "finding": "F01",
+      "issue": "Spot summaries omit the higher SPI option",
+      "find": "**Spot:** A universal action. Choose one **Hidden** enemy within **12\"** and **LOS**. **Spot** may choose a **Hidden** combatant despite the targeting restriction in **5.9**. Make an **INT Check** against **12**, with **Disadvantage** if that enemy has **Cover**. On success, that enemy loses **Hidden**. **Spot** does not remove **Invisible** unless a rule says otherwise.",
+      "replace": "**Spot:** A universal action. Choose one **Hidden** enemy within **12\"** and **LOS**. **Spot** may choose a **Hidden** combatant despite the targeting restriction in **5.9**. Make an **INT Check** or **SPI Check** against **12**, whichever is higher, with **Disadvantage** if that enemy has **Cover**. On success, that enemy loses **Hidden**. **Spot** does not remove **Invisible** unless a rule says otherwise.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-03",
+      "status": "approved",
+      "finding": "F02",
+      "issue": "DEX Pen glossary says damage is unaffected",
+      "find": "**DEX Pen:** The **DEX** penalty listed by a piece of armour or a shield. It applies to **DEX Checks** and to any rule that uses the **DEX** modifier, and it does not reduce damage. See **7.10**.",
+      "replace": "**DEX Pen:** The **DEX** penalty listed by a piece of armour or a shield. It applies to the result of the wearer's **DEX Checks**, including **Dodge**, and to any damage total or other value that adds the wearer's **DEX**. See **7.10**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-04",
+      "status": "approved",
+      "finding": "F03",
+      "issue": "Impassable Terrain summaries omit the Cover exception",
+      "find": "| **Impassable Terrain** | Cannot be entered, moved through, or ended in. Provides **Cover**. Does not block **LOS**. | **2.9.1** |",
+      "replace": "| **Impassable Terrain** | Cannot be entered, moved through, or ended in. Provides **Cover** unless its terrain entry says otherwise. Does not block **LOS**. | **2.9.1** |",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-05",
+      "status": "approved",
+      "finding": "F03",
+      "issue": "Impassable Terrain summaries omit the Cover exception",
+      "find": "**Impassable Terrain:** Terrain that cannot be entered, moved through, or ended in. It provides **Cover**. It does not block **LOS**.",
+      "replace": "**Impassable Terrain:** Terrain that cannot be entered, moved through, or ended in. It provides **Cover** unless its terrain entry says otherwise. It does not block **LOS**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-06",
+      "status": "approved",
+      "finding": "F04",
+      "issue": "9.5 allegiance summary omits same-Group allies",
+      "find": "- Unless a scenario says otherwise, neutral Monster Groups treat other neutral Monster Groups as allies and every party combatant as an enemy. A Monster that is **hostile to all** treats every other combatant as an enemy.",
+      "replace": "- Unless a scenario says otherwise, neutral Monster Groups treat other neutral Monster Groups as allies and every party combatant as an enemy. A Monster that is **hostile to all** treats every other combatant, including Monsters from other Groups, as an enemy. Monsters in the same Group remain allied to one another unless a rule explicitly says otherwise.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-07",
+      "status": "approved",
+      "finding": "F05",
+      "issue": "C.13 AI flow continues after a valid AI Step",
+      "find": "4. Evaluate numbered **AI Steps** in ascending order. For a step marked **on d6 N+**, roll **1d6** and require **N** or higher. Resolve the first valid step.",
+      "replace": "4. Evaluate numbered **AI Steps** in ascending order. For a step marked **on d6 N+**, roll **1d6** and require **N** or higher. Resolve the first valid step. Resolving a valid step ends the activation unless that step explicitly says it continues. If no step is valid, proceed to step 5.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-08",
+      "status": "approved",
+      "finding": "F13",
+      "issue": "Two solo objective fields use names absent from their scenario objects",
+      "find": "**Solo/Co-op Objective:** Extract the Central Lens, at least 1 Lesser Fragment, and at least half the party through any battlefield edge as defined in **10.6.10**.",
+      "replace": "**Solo/Co-op Objective:** Extract the Star Lens, at least 1 Bronze Orrery Fragment, and at least half the party through any battlefield edge as defined in **10.6.10**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-09",
+      "status": "approved",
+      "finding": "F13/U03",
+      "issue": "Two solo objective fields use names absent from their scenario objects",
+      "find": "**Solo/Co-op Objective:** Move the Cartographer's Map off the battlefield through the edge opposite its starting edge, then extract at least half the party through that edge as defined in **10.6.10**.",
+      "replace": "**Solo/Co-op Objective:** Carry the Survey Map off the battlefield through the short battlefield edge on the delivery side of the Chasm, then extract at least half the party through that edge as defined in **10.6.10**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-10",
+      "status": "approved",
+      "finding": "F06",
+      "issue": "Remove developmental value multipliers from material/craftsmanship traits; preserve their effects.",
+      "find": "#### Material and Craftsmanship Traits\n\n| Trait | Rule |\n| --- | --- |\n| **Adamantine** | Value **×4**, minimum **10c**. Attacks with this weapon ignore up to **2 AV**. |\n| **Cold Iron** | Value **×1.5**. Attacks with this weapon against a **Fey** ignore up to **2 AV** and deal an additional **2 damage of that attack's primary damage type**. |\n| **Elven** | Value **×2**. Reduce this weapon's **DEX requirement** by **1**. If this would reduce the requirement below **1**, the weapon has no **DEX Req**. This weapon does not count as metal for the restrictions in **8.2**. |\n| **Sacred** | Value **×2**. Attacks with this weapon against a **Fiend** deal an additional **1d4 holy damage**. |\n| **Masterwork** | Value **×1.5**. Once per round, reroll one retained natural **1** rolled by this item's base damage dice, or one natural **1** rolled by this item's **AD** or a **Check** its rule requires. Resolve this reroll before determining **Total Miss** or **Critical Hit**, and use the new result. |\n| **Palesteel** | Value **×2**. Reduce this weapon's **STR requirement** by **1**. If this would reduce the requirement below **1**, the weapon has no **STR Req**. |\n| **Silvered** | Value **×1.5**. Attacks with this weapon against a **Lycanthrope** ignore up to **2 AV** and deal an additional **2 damage of that attack's primary damage type**. |\n\n",
+      "replace": "#### Material and Craftsmanship Traits\n\n| Trait | Rule |\n| --- | --- |\n| **Adamantine** | Attacks with this weapon ignore up to **2 AV**. |\n| **Cold Iron** | Attacks with this weapon against a **Fey** ignore up to **2 AV** and deal an additional **2 damage of that attack's primary damage type**. |\n| **Elven** | Reduce this weapon's **DEX requirement** by **1**. If this would reduce the requirement below **1**, the weapon has no **DEX Req**. This weapon does not count as metal for the restrictions in **8.2**. |\n| **Sacred** | Attacks with this weapon against a **Fiend** deal an additional **1d4 holy damage**. |\n| **Masterwork** | Once per round, reroll one retained natural **1** rolled by this item's base damage dice, or one natural **1** rolled by this item's **AD** or a **Check** its rule requires. Resolve this reroll before determining **Total Miss** or **Critical Hit**, and use the new result. |\n| **Palesteel** | Reduce this weapon's **STR requirement** by **1**. If this would reduce the requirement below **1**, the weapon has no **STR Req**. |\n| **Silvered** | Attacks with this weapon against a **Lycanthrope** ignore up to **2 AV** and deal an additional **2 damage of that attack's primary damage type**. |\n\n",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-11",
+      "status": "approved",
+      "finding": "F06",
+      "issue": "Owner-selected fixed prices govern; remove the pricing formula and example. Unpriced granted qualities retain the existing value rather than generating a new price.",
+      "find": "Add the listed value adjustment to the base item's cost when crafting or purchasing it. After applying all multipliers and flat value adjustments, a finished enhanced weapon, **Chest** armour, or shield has a minimum value set by its quality: **3c** for **Masterwork**, **Silvered**, and **Cold Iron**; **5c** for **Elven**, **Sacred**, and **Palesteel**; and the minimum listed by **Adamantine**. A quality that sets a higher minimum uses that minimum instead. Treasure tables that reference an **Enhanced Weapon Table**, **Enhanced Armour Table**, or **Enhanced Shield Table** grant the finished item shown on that table.\n\n*Example, Enhanced Value:* *A **Masterwork** Longsword costs 12c × 1.5 = **18c**. An **Adamantine** Buckler costs 1c × 4 = 4c, which is below the **60c** Adamantine shield minimum, so its value is **60c**.*\n\n",
+      "replace": "Use the **Cost (c)** or **Value (c)** printed for the finished item. Item Qualities do not calculate a price. If a rule grants a quality to an item with no listed enhanced value, retain its value before the quality was granted. An enhanced item with no listed finished value cannot be purchased, commissioned, or upgraded unless a rule supplies its price. Treasure tables grant the finished item they list.\n\n",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-12",
+      "status": "approved",
+      "finding": "F06",
+      "issue": "Remove only the developmental Value column from the quality table; retain every quality effect.",
+      "find": "#### Weapon Qualities\n\nWeapon qualities that share a name with a weapon trait grant that exact trait from **Section 7.7**.\n\n| Quality | Value | Rule |\n| --- | ---: | --- |\n| **Masterwork** | ×1.5 base value, minimum 3c | This weapon gains the **Masterwork** trait. |\n| **Silvered** | ×1.5 base value, minimum 3c | This weapon gains the **Silvered** trait. |\n| **Cold Iron** | ×1.5 base value, minimum 3c | This weapon gains the **Cold Iron** trait. |\n| **Elven** | ×2 base value, minimum 5c | This weapon gains the **Elven** trait. |\n| **Sacred** | ×2 base value, minimum 5c | This weapon gains the **Sacred** trait. |\n| **Palesteel** | ×2 base value, minimum 5c | This weapon gains the **Palesteel** trait. |\n| **Adamantine** | ×4 base value, minimum 10c | This weapon gains the **Adamantine** trait. |\n| Enchanted +1 | +8c | This weapon deals an additional **1 damage of that attack's primary damage type**. |\n| Enchanted +2 | +16c | This weapon deals an additional **2 damage of that attack's primary damage type**. |\n| Enchanted +3 | +24c | This weapon deals an additional **3 damage of that attack's primary damage type**. |\n| Enchanted +4 | +36c | This weapon deals an additional **4 damage of that attack's primary damage type**. |\n| Enchanted +5 | +50c | This weapon deals an additional **5 damage of that attack's primary damage type**. |\n\n",
+      "replace": "#### Weapon Qualities\n\nWeapon qualities that share a name with a weapon trait grant that exact trait from **Section 7.7**.\n\n| Quality | Rule |\n| --- | --- |\n| **Masterwork** | This weapon gains the **Masterwork** trait. |\n| **Silvered** | This weapon gains the **Silvered** trait. |\n| **Cold Iron** | This weapon gains the **Cold Iron** trait. |\n| **Elven** | This weapon gains the **Elven** trait. |\n| **Sacred** | This weapon gains the **Sacred** trait. |\n| **Palesteel** | This weapon gains the **Palesteel** trait. |\n| **Adamantine** | This weapon gains the **Adamantine** trait. |\n| Enchanted +1 | This weapon deals an additional **1 damage of that attack's primary damage type**. |\n| Enchanted +2 | This weapon deals an additional **2 damage of that attack's primary damage type**. |\n| Enchanted +3 | This weapon deals an additional **3 damage of that attack's primary damage type**. |\n| Enchanted +4 | This weapon deals an additional **4 damage of that attack's primary damage type**. |\n| Enchanted +5 | This weapon deals an additional **5 damage of that attack's primary damage type**. |\n\n",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-13",
+      "status": "approved",
+      "finding": "F06",
+      "issue": "Remove only the developmental Value column from the quality table; retain every quality effect.",
+      "find": "#### Armour and Shield Qualities\n\nA shield cannot take an **Enchanted +X** quality. Use the named shields in **Special Armour and Shields** in **7.17** instead.\n\n| Quality | Value | Rule |\n| --- | ---: | --- |\n| **Masterwork** | ×1.5 base value, minimum 3c | **Chest or Shield:** Once per round, reroll one natural **1** when rolling this item's **AD**. A flat-AV shield instead gains **+1 AV** for one **Block** that round. |\n| **Silvered** | ×1.5 base value, minimum 3c | **Chest or Shield:** After a non-**Total Miss** melee attack made by a **Lycanthrope** against you resolves, the attacker suffers **1d6 holy damage**. |\n| **Cold Iron** | ×1.5 base value, minimum 3c | **Chest or Shield:** After a non-**Total Miss** melee attack made by a **Fey** against you resolves, the attacker suffers **1d6 fire damage**. |\n| **Elven** | ×2 base value, minimum 5c | **Metal only. Chest:** This item does not count as metal for the restrictions in **8.2**. |\n| **Sacred** | ×2 base value, minimum 5c | **Chest:** Add **+2** to **AD** rolls against attacks made by **Undead**, **Fiends**, and **Cursed** combatants. The wearer cannot become **Cursed**. **Shield:** Gain **+2 AV** when using **Block** against those attackers. |\n| **Palesteel** | ×2 base value, minimum 5c | **Metal only. Chest or Shield:** Reduce this item's **STR requirement** by **1**. If this would reduce the requirement below **1**, the item has no **STR Req**. |\n| Enchanted +1 | +7c | **Chest only:** Add **+1** to **AD** rolls. |\n| Enchanted +2 | +15c | **Chest only:** Add **+2** to **AD** rolls. |\n| Enchanted +3 | +24c | **Chest only:** Add **+3** to **AD** rolls. |\n| Enchanted +4 | +36c | **Chest only:** Add **+4** to **AD** rolls. |\n| Enchanted +5 | +48c | **Chest only:** Add **+5** to **AD** rolls. |\n| **Adamantine** | ×4 base value; minimum **60c** for Chest armour or a shield | **Metal only. Chest:** Add **+2** to **AD** rolls. When this item's **AD** is rolled against an attack, that attack cannot deal **Critical Hit** bonus damage or trigger **Critical Hit** effects against you. **Metal only. Shield:** Gain **+2 AV** when using **Block**. An attack modified by this **Block** cannot deal **Critical Hit** bonus damage or trigger **Critical Hit** effects against you. |\n\n",
+      "replace": "#### Armour and Shield Qualities\n\nA shield cannot take an **Enchanted +X** quality. Use the named shields in **Special Armour and Shields** in **7.17** instead.\n\n| Quality | Rule |\n| --- | --- |\n| **Masterwork** | **Chest or Shield:** Once per round, reroll one natural **1** when rolling this item's **AD**. A flat-AV shield instead gains **+1 AV** for one **Block** that round. |\n| **Silvered** | **Chest or Shield:** After a non-**Total Miss** melee attack made by a **Lycanthrope** against you resolves, the attacker suffers **1d6 holy damage**. |\n| **Cold Iron** | **Chest or Shield:** After a non-**Total Miss** melee attack made by a **Fey** against you resolves, the attacker suffers **1d6 fire damage**. |\n| **Elven** | **Metal only. Chest:** This item does not count as metal for the restrictions in **8.2**. |\n| **Sacred** | **Chest:** Add **+2** to **AD** rolls against attacks made by **Undead**, **Fiends**, and **Cursed** combatants. The wearer cannot become **Cursed**. **Shield:** Gain **+2 AV** when using **Block** against those attackers. |\n| **Palesteel** | **Metal only. Chest or Shield:** Reduce this item's **STR requirement** by **1**. If this would reduce the requirement below **1**, the item has no **STR Req**. |\n| Enchanted +1 | **Chest only:** Add **+1** to **AD** rolls. |\n| Enchanted +2 | **Chest only:** Add **+2** to **AD** rolls. |\n| Enchanted +3 | **Chest only:** Add **+3** to **AD** rolls. |\n| Enchanted +4 | **Chest only:** Add **+4** to **AD** rolls. |\n| Enchanted +5 | **Chest only:** Add **+5** to **AD** rolls. |\n| **Adamantine** | **Metal only. Chest:** Add **+2** to **AD** rolls. When this item's **AD** is rolled against an attack, that attack cannot deal **Critical Hit** bonus damage or trigger **Critical Hit** effects against you. **Metal only. Shield:** Gain **+2 AV** when using **Block**. An attack modified by this **Block** cannot deal **Critical Hit** bonus damage or trigger **Critical Hit** effects against you. |\n\n",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-14",
+      "status": "approved",
+      "finding": "F06",
+      "issue": "Align the equipment reference with fixed item values.",
+      "find": "| **Enhanced value** | Apply the quality's multiplier or flat adjustment to the mundane base value, then apply any stated minimum. Use the finished value printed on an Enhanced table when treasure grants that item. |",
+      "replace": "| **Item value** | Use the finished item's printed **Cost (c)** or **Value (c)**. A granted quality with no listed enhanced value leaves the item's existing value unchanged. |",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-15",
+      "status": "approved",
+      "finding": "F06",
+      "issue": "Define base value as the finished listed price; retain sale percentages, rounding and minimum.",
+      "find": "- **Sale value:** Unless a rule says otherwise, an item sells for **50%** of its base value. Round the sale value down to the nearest **1c**, minimum **0c**. An item with a final sale value below **1c** sells for **0c**.",
+      "replace": "- **Sale value:** Unless a rule says otherwise, an item's base value is its listed finished **Cost (c)** or **Value (c)**. It sells for **50%** of its base value. Round the sale value down to the nearest **1c**, minimum **0c**. An item with a final sale value below **1c** sells for **0c**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-16",
+      "status": "approved",
+      "finding": "F06",
+      "issue": "Use only stated Masterwork prices for upgrades; retain the existing cost difference, minimum and resale rule.",
+      "find": "- **Masterwork Upgrade [1 TAP]:** Upgrade up to **2** mundane weapons, Chest armour pieces, or shields that do not already have an Item Quality. Each upgraded item gains the **Masterwork** quality. Cost: pay the difference between the item's base value and its Masterwork value, minimum **1c**, per item upgraded. When sold, an item upgraded this way uses its value before the upgrade.",
+      "replace": "- **Masterwork Upgrade [1 TAP]:** Upgrade up to **2** mundane weapons, Chest armour pieces, or shields that do not already have an Item Quality and have a listed Masterwork value in **7.11**. Each upgraded item gains the **Masterwork** quality. Cost: pay the difference between the item's base value and its Masterwork value, minimum **1c**, per item upgraded. When sold, an item upgraded this way uses its value before the upgrade.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-17",
+      "status": "approved",
+      "finding": "F07",
+      "issue": "Inherit only missing handling/profile fields; preserve every printed cost, damage, trait and effect. Use the existing Thrown default, correcting the audit overstatement.",
+      "find": "When a named **Special Shield** includes a mundane shield type in its name or in parentheses, it uses that mundane shield's nonmagical rules in addition to the magical rule printed below unless a specific entry says otherwise.",
+      "replace": "When a named **Special Shield** includes a mundane shield type in its name or in parentheses, it uses that mundane shield's nonmagical rules in addition to the magical rule printed below unless a specific entry says otherwise.\n\nIn the following **Special Weapon** tables, the mundane weapon identified by the name or parentheses supplies **Hands**, **Range**, ability requirements, and equipment type. **Maul** means **War Maul**; **Dual Daggers** means two **Daggers**, subject to the printed matched-pair rule. The special entry's cost, damage, traits, and rules replace the mundane values. Apply listed quality effects normally; **Thrown** uses its normal **6\"** range unless another range is listed.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-18",
+      "status": "approved",
+      "finding": "F08",
+      "issue": "Maximize base dice only; retain normal explosions and Riposte instead of an undefined maximum whole roll.",
+      "find": "**Effect:** This weapon deals **holy** damage. While wielding Saint Cael's Burning Seal, once per adventure when you are within **2\"** of a scenario-marked threshold, bridge, ford, gate, or archway and you apply **AV** or use **Parry** against an **Undead** or **Fiend**, you may treat that roll as its maximum possible value without rolling. Additionally, **Undead** and **Fiends** that attack you while you are within **2\"** of such a threshold suffer **1d6 holy damage** after their attack resolves. While wielding Saint Cael's Burning Seal you may spend **[1 AP]** to end **Cursed** on yourself or one ally within **2\"**.",
+      "replace": "**Effect:** This weapon deals **holy** damage. While wielding Saint Cael's Burning Seal, once per adventure when you are within **2\"** of a scenario-marked threshold, bridge, ford, gate, or archway and you apply **AV** or use **Parry** against an **Undead** or **Fiend**, you may treat each **AD** die or retained **Parry** base die as its maximum natural result instead of rolling it. Roll any exploding **Parry** bonus dice and resolve **Riposte** normally. Additionally, **Undead** and **Fiends** that attack you while you are within **2\"** of such a threshold suffer **1d6 holy damage** after their attack resolves. While wielding Saint Cael's Burning Seal you may spend **[1 AP]** to end **Cursed** on yourself or one ally within **2\"**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-19",
+      "status": "approved",
+      "finding": "F09",
+      "issue": "The charge performs its named attack if engaged, then ends under normal AI-Step timing.",
+      "find": "- **Charging Gore (AI Step 1):** Moves their full Speed in a straight line toward the nearest visible enemy; if they end **Engaged**, their **Goring Beak** attack this activation deals an additional **1d8 piercing damage**.",
+      "replace": "- **Charging Gore (AI Step 1):** Moves their full Speed in a straight line toward the nearest visible enemy; if they end **Engaged**, they make one **Goring Beak** attack, dealing an additional **1d8 piercing damage**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-20",
+      "status": "approved",
+      "finding": "F09",
+      "issue": "Skeletal Beast performs the named charge attack without continuing the rest of AI.",
+      "find": "- **Run Down (AI Step 1):** Moves their full Speed in a straight line toward the nearest visible enemy; if they end **Engaged**, their **Bone Jaws** attack this activation rolls its base damage die with **Advantage**.",
+      "replace": "- **Run Down (AI Step 1):** Moves their full Speed in a straight line toward the nearest visible enemy; if they end **Engaged**, they make one **Bone Jaws** attack with **Advantage** on its base damage die.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-21",
+      "status": "approved",
+      "finding": "F10",
+      "issue": "Support one-Hero parties without changing deployment for larger parties.",
+      "find": "**Party Deployment:** Parties make a Setup Roll-off. The winner chooses one short battlefield edge (where the Trail enters). They deploy their party within **6\"** of that edge with at least two Heroes starting on the Trail. The other party deploys within **6\"** of the opposite short battlefield edge under the same conditions.",
+      "replace": "**Party Deployment:** Parties make a Setup Roll-off. The winner chooses one short battlefield edge (where the Trail enters). They deploy their party within **6\"** of that edge with at least two Heroes, or their only Hero, starting on the Trail. The other party deploys within **6\"** of the opposite short battlefield edge under the same conditions.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-22",
+      "status": "approved",
+      "finding": "F11",
+      "issue": "Use one of the existing Webbed Sections at the central Boss/Bundle location; add no terrain count.",
+      "find": "**Battlefield and Terrain (36\"×36\"):** A Ravine (6–8\" wide, 2\" deep) runs across the battlefield perpendicular to the long edges, dividing it at the midpoint. The Ravine floor is **Difficult Terrain**. Place 5–7 **Webbed Section** markers (2–3\" diameter, **Difficult Terrain**) within and at the edges of the Ravine. Place 4–6 Tree area terrain pieces along the ravine edges on higher ground.",
+      "replace": "**Battlefield and Terrain (36\"×36\"):** A Ravine (6–8\" wide, 2\" deep) runs across the battlefield perpendicular to the long edges, dividing it at the midpoint. The Ravine floor is **Difficult Terrain**. Place 5–7 **Webbed Section** markers (2–3\" diameter, **Difficult Terrain**) within and at the edges of the Ravine, including one at its centre. Place 4–6 Tree area terrain pieces along the ravine edges on higher ground.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-23",
+      "status": "approved",
+      "finding": "F11",
+      "issue": "Designate a central existing objective and retain it when scaling reduces the count; preserve the printed count of three.",
+      "find": "**Objective Placement:** Place 3 **Spider Silk Bundle** tokens, each inside a different Webbed Section within the Ravine, spaced at least 4\" apart. Place 2 Treasure Chests (**1 Treasure roll with Disadvantage** each) on higher ground overlooking the Ravine, at least 8\" from any battlefield edge.",
+      "replace": "**Objective Placement:** Determine the number of **Spider Silk Bundles** using **10.6.9**; the printed number is **3**. Place them inside different Webbed Sections within the Ravine, at least **4\"** apart. Place the first Bundle in the central Webbed Section; it is the **central Silk Bundle**. Place 2 Treasure Chests (**1 Treasure roll with Disadvantage** each) on higher ground overlooking the Ravine, at least 8\" from any battlefield edge.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-24",
+      "status": "approved",
+      "finding": "F11",
+      "issue": "Preserve the two resting tarantulas when one objective remains; use an existing peripheral Webbed Section.",
+      "find": "**Boss Deployment:** Starts **Awake** at the centre of the Ravine, within 1\" of the central Silk Bundle. Accompanied by 2 Giant Tarantulas (Awake) within 2\" of the Broodmother. An additional 2 Giant Tarantulas start Resting in a Webbed Section near a second Silk Bundle.",
+      "replace": "**Boss Deployment:** Starts **Awake** at the centre of the Ravine, within 1\" of the central Silk Bundle. Accompanied by 2 Giant Tarantulas (Awake) within 2\" of the Broodmother. An additional 2 Giant Tarantulas start Resting in a Webbed Section near a second Silk Bundle. If only one Bundle is placed, use the Webbed Section farthest from the central Bundle.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-25",
+      "status": "approved",
+      "finding": "F12",
+      "issue": "Retain the explicit six-inch distance and wake trigger; remove the incompatible Camp-perimeter requirement.",
+      "find": "- **Group 3:** Roll once on the Greenmark Random Monster Table. Place at the perimeter of the Bandit Camp, **6\"** from its centre. **Resting**. This group becomes **Awake** when combat occurs within the Camp or within 4\" of it.",
+      "replace": "- **Group 3:** Roll once on the Greenmark Random Monster Table. Place **6\"** from the centre of the Bandit Camp. **Resting**. This group becomes **Awake** when combat occurs within the Camp or within 4\" of it.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-26",
+      "status": "approved",
+      "finding": "F14",
+      "issue": "Count the two generated chests actually looted; do not create portable chests or new carrying rules.",
+      "find": "**Solo/Co-op Objective:** Extract at least 2 Chronal Chests and at least half the party through any battlefield edge as defined in **10.6.10**.",
+      "replace": "**Solo/Co-op Objective:** Loot at least **2 Treasure Chests**, then extract at least half the party through any battlefield edge as defined in **10.6.10**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-27",
+      "status": "approved",
+      "finding": "F15",
+      "issue": "A successful forcing Check breaks the Point through its existing zero-HP transition.",
+      "find": "**Breaking a Binding Point (Party B):** A Hero may attack a Binding Point normally, or use **Interact [2 AP]** and pass a **STR Check** to force it. When a Binding Point reaches **0 HP**, it becomes **Broken**. An **Unsealed** or **Sealed** Binding Point can be broken.",
+      "replace": "**Breaking a Binding Point (Party B):** A Hero may attack a Binding Point normally, or use **Interact [2 AP]** and make a **STR Check** to force it. On a success, reduce that Binding Point to **0 HP**. When a Binding Point reaches **0 HP**, it becomes **Broken**. An **Unsealed** or **Sealed** Binding Point can be broken.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-28",
+      "status": "approved",
+      "finding": "F16",
+      "issue": "Choose the existing damage type once per declared attack before Reactions, damage and mitigation.",
+      "find": "  - **Swirling Vials:** 1d8 + APL/2 damage. Each time this attack damages a target, roll **1d4** to determine the attack's damage type: **1** acid, **2** ice, **3** fire, **4** poison. On a **Critical Hit**, the target must also pass a **STR Check** or be **Pushed 1\"** directly away.",
+      "replace": "  - **Swirling Vials:** 1d8 + APL/2 damage. When declaring this attack, roll **1d4** to determine its damage type: **1** acid, **2** ice, **3** fire, **4** poison. On a **Critical Hit**, the target must also pass a **STR Check** or be **Pushed 1\"** directly away.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-29",
+      "status": "approved",
+      "finding": "F17",
+      "issue": "Retain the same-round contest and resolve it at round end. An opponent’s item does not satisfy the designated objective or end the game early.",
+      "find": "**Victory Conditions:** The adventure ends when the Frost Bailiff Magistrate is defeated and either item is escaped with, after Round 8, or when all Heroes are defeated.\n\n- The first party to escape with its designated item after the Frost Bailiff Magistrate is defeated wins and gains that item's Coin Value plus an additional **2 × (2 + (4 × APL)) Coins**.\n- If both parties escape with their designated items during the same round, the adventure ends at the end of that round. The party with the higher total Coin Value wins.\n- If neither designated item is escaped with, the party with the most total Coin Value wins.\n\n",
+      "replace": "**Victory Conditions:** The adventure ends at the end of the first round in which the Frost Bailiff Magistrate is defeated and at least one party has escaped with its designated item, after Round 8, or when all Heroes are defeated.\n\n- If only one party has escaped with its designated item, that party wins and gains that item's Coin Value plus an additional **2 × (2 + (4 × APL)) Coins**.\n- If both parties have escaped with their designated items, the party with the higher total Coin Value wins.\n- If neither party has escaped with its designated item, the party with the most total Coin Value wins.\n\n",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-30",
+      "status": "approved",
+      "finding": "F18",
+      "issue": "Move the defensive modifier to the existing hostile-source Check; Monsters still never roll Checks and gain no invented scores or immunity.",
+      "find": "- **Ritual Chant:** At the start of their activation, allied **Monsters** within **8\"** gain **Advantage** on **Checks** to resist Powers and magical item effects until the end of the round.",
+      "replace": "- **Ritual Chant:** At the start of their activation, allied **Monsters** within **8\"** gain protection until the end of the round: **Checks** made to affect them with enemy Powers or magical item effects have **Disadvantage**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-31",
+      "status": "approved",
+      "finding": "F19",
+      "issue": "Author an explicit illustrative armour roll of 2 and apply automatic AD; no observed roll is claimed.",
+      "find": "Because Senna makes a ranged attack while adjacent to Mara, Mara may declare **Reflex Attack [1 AP]**. Mara declares it before Senna rolls damage. Only 1 **Reaction** may respond to the same action, so Mara cannot also **Block** the shot. Senna rolls damage [**1d6 = 4, +3 DEX, total 7**], and Mara falls from **12 HP** to **5 HP**.",
+      "replace": "Because Senna makes a ranged attack while adjacent to Mara, Mara may declare **Reflex Attack [1 AP]**. Mara declares it before Senna rolls damage. Only 1 **Reaction** may respond to the same action, so Mara cannot also **Block** the shot. Senna rolls damage [**1d6 = 4, +3 DEX, total 7**]. Mara's **Gambeson AD** rolls automatically [**d3 = 2**], reducing the damage to **5**. Mara falls from **12 HP** to **7 HP**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-32",
+      "status": "approved",
+      "finding": "F19",
+      "issue": "Propagate Mara’s corrected HP through both remaining state summaries.",
+      "find": "Mara **5 HP, 0 AP**",
+      "replace": "Mara **7 HP, 0 AP**",
+      "expected_count": 2
+    },
+    {
+      "id": "RC487-33",
+      "status": "approved",
+      "finding": "F20",
+      "issue": "Retain the printed critical base roll; author a bonus 2 and apply piercing armour bypass, leaving Varek conscious at 1 HP.",
+      "find": "**Dire Wolf 2** is adjacent to Varek and Dire Wolf 1, so **Pack Tactics** applies. Varek is also **Prone**, but multiple instances of **Advantage** do not stack. Dire Wolf 2 rolls damage with **Advantage** [**1d8 = 3 and 8, keep 8, +1, total 9**]. Varek rolls **AD** [**d6 = 6**], reducing the damage to **3**. Varek falls from **12 HP** to **9 HP**. Because **Bite** dealt damage, Varek makes a **STR Check** [**1d20 = 16, +3 STR, total 19**] and remains **Prone** only from the earlier failed **Check**.",
+      "replace": "**Dire Wolf 2** is adjacent to Varek and Dire Wolf 1, so **Pack Tactics** applies. Varek is also **Prone**, but multiple instances of **Advantage** do not stack. Dire Wolf 2 rolls its base die with **Advantage** [**1d8 = 3 and 8, keep 8**], scoring a **Critical Hit**. The retained **8** explodes [**bonus d8 = 2**]. Add **+1** for **11 piercing damage**. The piercing **Critical Hit** ignores Varek's **AV**, including **AD**, so Varek falls from **12 HP** to **1 HP**. Because **Bite** dealt damage, Varek makes a **STR Check** [**1d20 = 16, +3 STR, total 19**] and remains **Prone** only from the earlier failed **Check**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-34",
+      "status": "approved",
+      "finding": "F20",
+      "issue": "Propagate the Critical Hit through the final teaching state.",
+      "find": "Varek **9 HP, 0 AP, Prone",
+      "replace": "Varek **1 HP, 0 AP, Prone",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-35",
+      "status": "approved",
+      "finding": "F21",
+      "issue": "Supply two extra blank tokens for the two extra markers, preserving the printed trap count.",
+      "find": "**Traps:** Each **Satchel** and the **Strongbox** is potentially trapped. During setup, prepare **4** face-down tokens for the default scenario: **1** marked **\"Trap\"** and **3** blank. If the **Advanced Ogre** variant is used, prepare **5** face-down tokens instead: **2** marked **\"Trap\"** and **3** blank. Place one token under each treasure marker without revealing it.",
+      "replace": "**Traps:** Each **Satchel** and the **Strongbox** is potentially trapped. During setup, prepare **4** face-down tokens for the default scenario: **1** marked **\"Trap\"** and **3** blank. If the **Advanced Ogre** variant is used, prepare **5** face-down tokens instead: **2** marked **\"Trap\"** and **3** blank. Place one token under each treasure marker without revealing it. If **Hidden Strongbox** is also used, add **2 blank tokens**, so every Strongbox marker receives a token; the number of Trap tokens is unchanged.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-36",
+      "status": "approved",
+      "finding": "F21",
+      "issue": "Identify one real Strongbox before pickup traps; discard fake tokens unseen, remove other fakes on success and retain real identity after a trapped pickup.",
+      "find": "**Hidden Strongbox:** Place **3 Strongbox** markers along the battlefield midline, each within **6\"** of at least one other Strongbox marker. Only one is real. The first time a combatant uses **Interact [1 AP]** while adjacent to a Strongbox marker and not **Engaged**, they make an **INT Check**. On a success, that marker is the real **Strongbox** and may be picked up by the same **Interact**. On a failure, remove that marker as a fake. If **2** fake Strongbox markers have been removed, the last remaining marker is the real **Strongbox**.",
+      "replace": "**Hidden Strongbox:** Place **3 Strongbox** markers along the battlefield midline, each within **6\"** of at least one other Strongbox marker. Only one is real.\n\n- **Interact [1 AP], Identify:** A combatant adjacent to an unidentified Strongbox marker and not **Engaged** makes an **INT Check**. On a success, that marker is the real **Strongbox** and may be picked up by the same **Interact**. On a failure, remove that marker as a fake. After **2** fakes are removed, the remaining marker is real and needs no Check.\n- When the real Strongbox is identified, remove all other Strongbox markers. Remove each fake's trap token, if any, without revealing it.\n- An unidentified Strongbox cannot be picked up. Resolve identification before any pickup-triggered trap. If a trap prevents pickup, the identified Strongbox remains real; later pickup needs no identification Check. Trap inspection and removal do not identify a Strongbox.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-37",
+      "status": "approved",
+      "finding": "U01",
+      "issue": "Bound the wall to an adjacent origin; use the existing Line width of 1 inch and preserve length, height, expiry and continuation.",
+      "find": "- **Wall of Ice (AI Step 1, on d6 5+):** If not **Engaged**, create a **6\"** wall of ice up to **3\"** high, positioned to separate the most enemy combatants from this Monster. It blocks movement and **LOS** until the end of the round. This Monster then continues their activation normally.",
+      "replace": "- **Wall of Ice (AI Step 1, on d6 5+):** If not **Engaged**, create a wall **6\"** long, **1\"** wide, and up to **3\"** high with one end adjacent to this Monster. Place its footprint in legal unoccupied space, positioned to separate the most enemy combatants from this Monster. The wall is **Blocking Terrain** until the end of the round. If no legal placement exists, do not create it. This Monster then continues their activation normally.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-38",
+      "status": "approved",
+      "finding": "U01",
+      "issue": "Make the terrain footprint, adjacent placement and attackable-object resolution explicit; preserve HP, AV and three-round lifespan.",
+      "find": "- **Wall of Ice (once per adventure):** At the start of their activation, the Magistrate creates a 6\"×3\" ice wall (HP 15, AV 2) that lasts 3 rounds.",
+      "replace": "- **Wall of Ice (once per adventure):** At the start of their activation, the Magistrate creates an ice wall **6\"** long, **1\"** wide, and **3\"** high with one end adjacent to them. Place its footprint in legal unoccupied space, positioned to separate the most enemy combatants from the Magistrate. It is **Blocking Terrain**, with **HP 15** and **AV 2**. Attacks and damaging Powers may target it; it automatically fails any required **Check**. Remove it at **0 HP** or at the end of the second round after its creation. If no legal placement exists, do not create it.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-39",
+      "status": "approved",
+      "finding": "U02",
+      "issue": "Assign the existing complex feature’s parts so its plans and Commander are legally accessible.",
+      "find": "**Battlefield and Terrain (36\"×36\"):** Create a small Undermarches outpost around the battlefield centre. Place 2–3 Guard Towers (2\" high, **Impassable Terrain**) connected by low defensive walls, with one central Command Tent (3\"×3\", **Blocking Terrain**). Scatter stalagmites and rubble around the outpost approaches.",
+      "replace": "**Battlefield and Terrain (36\"×36\"):** Create a small Undermarches outpost around the battlefield centre. Place 2–3 Guard Towers (2\" high, **Impassable Terrain**) connected by low defensive walls, with one central Command Tent (3\"×3\") with **Blocking Terrain** walls, an **Open Terrain** floor, and an open entrance. Scatter stalagmites and rubble around the outpost approaches.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-40",
+      "status": "approved",
+      "finding": "U02",
+      "issue": "Keep the Dais body impassable while identifying the intended legal upper surface for its Boss and hazard.",
+      "find": "**Battlefield and Terrain (36\"×36\"):** Place a central Obsidian Dais (**Impassable Terrain**) with 3 Glyphic Stones (**Impassable Terrain**) arranged evenly around it. Surround the dais with scorched flagstones, broken columns, and zones of heated ground (**Difficult Terrain**).",
+      "replace": "**Battlefield and Terrain (36\"×36\"):** Place a central Obsidian Dais with an **Impassable Terrain** body, climbable sides, and an **Open Terrain** upper surface with 3 Glyphic Stones (**Impassable Terrain**) arranged evenly around it. Surround the dais with scorched flagstones, broken columns, and zones of heated ground (**Difficult Terrain**).",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-41",
+      "status": "approved",
+      "finding": "U02",
+      "issue": "Separate the inaccessible mound exterior from its enterable flooded sanctum; add no depth, movement cost or new hazard.",
+      "find": "**Battlefield and Terrain (36\"×36\"):** Place a central Sunken Barrow mound (**Impassable Terrain**) with a flooded interior sanctum. Surround it with Bog Islands, Dense Reeds, and areas of **Shallow Water**.",
+      "replace": "**Battlefield and Terrain (36\"×36\"):** Place a central Sunken Barrow mound with an **Impassable Terrain** exterior and a flooded interior sanctum: **Open Terrain** tagged **Shallow Water**, accessible through an open entrance. Surround it with Bog Islands, Dense Reeds, and areas of **Shallow Water**.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-42",
+      "status": "approved",
+      "finding": "U04",
+      "issue": "Apply existing party Initiative bonuses in PvE, including War Room/Veteran and explicit PvE bonuses, without importing leader ability scores.",
+      "find": "#### 10.5.4 PvE Initiative\n\nAt the start of each round in **solo** and **cooperative** play, one allied player rolls **1d20**.\n\n- **12 or higher:** The Heroes seize the initiative. Resolve the **Party Phase**, then the **Monster Phase**.\n- **11 or lower:** The wilderness strikes. Resolve the **Monster Phase**, then the **Party Phase**.\n\nThis roll replaces competitive side-based Initiative in PvE play. The rolled phase order also sets simultaneous-effect priority under **3.6 Timing Rules**.\n\nAfter both phases have resolved, proceed to the **End of Round**.\n\n",
+      "replace": "#### 10.5.4 PvE Initiative\n\nAt the start of each round in **solo** and **cooperative** play, one allied player rolls **1d20**, adding bonuses granted to the party's Initiative roll. Do not add a Party Leader's **INT** or **SPI**.\n\n- **Total 12 or higher:** The Heroes seize the initiative. Resolve the **Party Phase**, then the **Monster Phase**.\n- **Total 11 or lower:** The wilderness strikes. Resolve the **Monster Phase**, then the **Party Phase**.\n\nThis roll replaces competitive side-based Initiative in PvE play. The rolled phase order also sets simultaneous-effect priority under **3.6 Timing Rules**.\n\nAfter both phases have resolved, proceed to the **End of Round**.\n\n",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-43",
+      "status": "approved",
+      "finding": "U05",
+      "issue": "Clarify the existing move-only fallback without adding an attack.",
+      "find": "- **Guard Post (AI Step 1):** Move to remain within **3\"** of the nearest allied Monster and attack the nearest enemy in **Reach**. If no ally is on the battlefield, advance on the nearest visible enemy.",
+      "replace": "- **Guard Post (AI Step 1):** Move to remain within **3\"** of the nearest allied Monster and attack the nearest enemy in **Reach**. If no ally is on the battlefield, advance on the nearest visible enemy, then end the activation.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-44",
+      "status": "approved",
+      "finding": "U05",
+      "issue": "Clarify the existing move-only fallback without adding an attack.",
+      "find": "- **Hold the Seal (AI Step 1):** Move to the nearest objective marker or allied Undead within **6\"** that can be reached, then attack the nearest enemy in **Reach**. If neither exists, advance on the nearest visible enemy.",
+      "replace": "- **Hold the Seal (AI Step 1):** Move to the nearest objective marker or allied Undead within **6\"** that can be reached, then attack the nearest enemy in **Reach**. If neither exists, advance on the nearest visible enemy, then end the activation.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-45",
+      "status": "approved",
+      "finding": "U05",
+      "issue": "Use the listed Bash’s ordinary melee distance, without granting Reach.",
+      "find": "- **Form the Line (AI Step 1):** If an allied White Court Monster is within **3\"**, skip movement and attack the nearest enemy in **Reach**. Otherwise, advance on the nearest visible enemy and attack.",
+      "replace": "- **Form the Line (AI Step 1):** If an allied White Court Monster is within **3\"**, skip movement and attack the nearest enemy within the melee distance of **Greatshield Bash**. Otherwise, advance on the nearest visible enemy and attack.",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-46",
+      "status": "approved",
+      "finding": "U06",
+      "issue": "Use an existing standard footprint in the multi-square LOS example.",
+      "find": "*A Ranger targets a two-square Monster in Grid Mode. Under **2.6**, test source-square and target-square pairs using one pair for range, **LOS**, and **Cover**. One pair has a sight line that touches the corner of a **Cover Terrain** square but does not pass through that square's interior and crosses no **Blocking Terrain**. That pair has **LOS**, and the touched terrain grants **Cover**. If another legal pair gives the target less Cover, use that pair instead; if Cover is tied, use the shortest range. If every possible pair is blocked by **Blocking Terrain**, a solid floor/roof/platform, or the interior of an intervening **Cover Terrain** square as described in **2.7.2**, the Ranger has no **LOS**.*",
+      "replace": "*A Ranger targets a **Large** Monster with a **2×2-square** footprint in Grid Mode. Under **2.6**, test source-square and target-square pairs using one pair for range, **LOS**, and **Cover**. One pair has a sight line that touches the corner of a **Cover Terrain** square but does not pass through that square's interior and crosses no **Blocking Terrain**. That pair has **LOS**, and the touched terrain grants **Cover**. If another legal pair gives the target less Cover, use that pair instead; if Cover is tied, use the shortest range. If every possible pair is blocked by **Blocking Terrain**, a solid floor/roof/platform, or the interior of an intervening **Cover Terrain** square as described in **2.7.2**, the Ranger has no **LOS**.*",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-47",
+      "status": "approved",
+      "finding": "U06",
+      "issue": "Order existing solo setup tasks so referenced terrain/objectives exist before dependent Monster deployment; keep eleven steps.",
+      "find": "6. **Deploy All Monster Groups.** Place every group. Random Monster Groups begin **Resting** unless a scenario-specific setup rule says otherwise.\n7. **Apply Scenario-Specific Waking Rules.** If the scenario says that one or more groups begin **Awake**, follow that scenario's instructions. If the scenario says to determine Awake groups randomly, randomly choose from among all legally deployed groups.\n8. **Place Objectives, Hazards, and Extraction Zones.** Resolve all remaining setup rules.\n",
+      "replace": "6. **Place Terrain, Objectives, Hazards, and Extraction Zones.** Resolve their setup rules before placing Monsters that depend on them.\n7. **Deploy All Monster Groups.** Place every group. Random Monster Groups begin **Resting** unless a scenario-specific setup rule says otherwise.\n8. **Apply Scenario-Specific Waking Rules.** If the scenario says that one or more groups begin **Awake**, follow that scenario's instructions. If the scenario says to determine Awake groups randomly, randomly choose from among all legally deployed groups.\n",
+      "expected_count": 1
+    },
+    {
+      "id": "RC487-48",
+      "status": "approved",
+      "finding": "U06",
+      "issue": "Match the solo setup example to the dependency order.",
+      "find": "*Example, Solo Setup:* *Marta begins a solo campaign with three Heroes at **APL 2**. They choose **The Mire** as the Climate, roll a Core Scenario within that Climate, then roll one swamp Secondary Objective and one swamp Weather result. Because three Heroes are in play, the adventure uses **4** Random Monster Groups. Marta deploys all four groups according to the scenario's Random Monster Setup. Each group begins **Resting** unless the scenario gives a specific waking rule. Only after all Monsters, hazards, and objectives are placed does Marta deploy their Heroes and begin Round 1.*",
+      "replace": "*Example, Solo Setup:* *Marta begins a solo campaign with three Heroes at **APL 2**. They choose **The Mire** as the Climate, roll a Core Scenario within that Climate, then roll one swamp Secondary Objective and one swamp Weather result. Because three Heroes are in play, the adventure uses **4** Random Monster Groups. After placing the terrain, objectives, hazards, and extraction zones, Marta deploys all four groups according to the scenario's Random Monster Setup. Each group begins **Resting** unless the scenario gives a specific waking rule. Only after all Monsters, hazards, and objectives are placed does Marta deploy their Heroes and begin Round 1.*",
+      "expected_count": 1
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "status": "PASS",
-  "pdf": "/home/runner/work/Heraldry/Heraldry/dist/Heraldry_RC486_inkjet-borderless.pdf",
-  "pages": 596,
-  "text_spans_checked": 88089,
+  "pdf": "/workspace/scratch/e8d5038dbdc2/Heraldry/dist/Heraldry_RC487_inkjet-borderless.pdf",
+  "pages": 597,
+  "text_spans_checked": 88188,
   "font_resources_checked": 11,
   "checks": [
     "Letter portrait boxes/rotation",

@@ -1,0 +1,548 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "source_sha256": "d77a72f9030061f76ea61e947bf520dcc81628bd653f61ba144f2a474a088254",
+  "active_revision": 487,
+  "exact_archived_patch_reconstruction": "PASS",
+  "printed_finished_price_cells_preserved": 835,
+  "tables_before": 332,
+  "tables_after": 332,
+  "special_weapon_base_mappings": [
+    {
+      "name": "Surestrike Sword (Longsword)",
+      "mundane": "Longsword",
+      "inherited": {
+        "Hands": "1/2",
+        "STR Req": "3",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Ember Dagger",
+      "mundane": "Dagger",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "-",
+        "DEX Req": "-",
+        "Range": "6\" (existing Thrown default)"
+      },
+      "pair": false
+    },
+    {
+      "name": "Guardian Mace",
+      "mundane": "Mace",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "2",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Rime Hatchet (Handaxe)",
+      "mundane": "Handaxe",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "1",
+        "DEX Req": "1",
+        "Range": "6\" (existing Thrown default)"
+      },
+      "pair": false
+    },
+    {
+      "name": "Trickster's Rapier",
+      "mundane": "Rapier",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "-",
+        "DEX Req": "3"
+      },
+      "pair": false
+    },
+    {
+      "name": "Sentinel Pike",
+      "mundane": "Pike",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "4",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Ironbane Maul",
+      "mundane": "War Maul",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "4",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Elven Bow (Longbow)",
+      "mundane": "Longbow",
+      "inherited": {
+        "Hands": "2",
+        "Range": "18\"",
+        "STR Req": "2",
+        "DEX Req": "3"
+      },
+      "pair": false
+    },
+    {
+      "name": "Crushing Flail",
+      "mundane": "Flail",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "3",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Bloodletter Sickle",
+      "mundane": "Sickle",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "-",
+        "DEX Req": "2"
+      },
+      "pair": false
+    },
+    {
+      "name": "Flametongue Shortsword",
+      "mundane": "Shortsword",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "2",
+        "DEX Req": "1"
+      },
+      "pair": false
+    },
+    {
+      "name": "Thunderous Greathammer",
+      "mundane": "Greathammer",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "5",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Vampiric Stiletto",
+      "mundane": "Stiletto",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "1",
+        "DEX Req": "2"
+      },
+      "pair": false
+    },
+    {
+      "name": "Phasing Rapier",
+      "mundane": "Rapier",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "-",
+        "DEX Req": "3"
+      },
+      "pair": false
+    },
+    {
+      "name": "Seeker Longbow",
+      "mundane": "Longbow",
+      "inherited": {
+        "Hands": "2",
+        "Range": "18\"",
+        "STR Req": "2",
+        "DEX Req": "3"
+      },
+      "pair": false
+    },
+    {
+      "name": "Gorgon's Glaive",
+      "mundane": "Glaive",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "3",
+        "DEX Req": "1"
+      },
+      "pair": false
+    },
+    {
+      "name": "Silvered Sabre",
+      "mundane": "Sabre",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "2",
+        "DEX Req": "4"
+      },
+      "pair": false
+    },
+    {
+      "name": "Magehunter Crossbow (Light Crossbow)",
+      "mundane": "Light Crossbow",
+      "inherited": {
+        "Hands": "2",
+        "Range": "18\"",
+        "STR Req": "2",
+        "DEX Req": "2"
+      },
+      "pair": false
+    },
+    {
+      "name": "Windcaller Spear",
+      "mundane": "Spear",
+      "inherited": {
+        "Hands": "1/2",
+        "STR Req": "1",
+        "DEX Req": "1",
+        "Range": "6\" (existing Thrown default)"
+      },
+      "pair": false
+    },
+    {
+      "name": "Stonebreaker Pick (War Pick)",
+      "mundane": "War Pick",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "2",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Sunblade (Bastard Sword)",
+      "mundane": "Bastard Sword",
+      "inherited": {
+        "Hands": "1/2",
+        "STR Req": "4",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Frostbrand Flamberge",
+      "mundane": "Flamberge",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "5",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Assassin's Hand Crossbow",
+      "mundane": "Hand Crossbow",
+      "inherited": {
+        "Hands": "1",
+        "Range": "12\"",
+        "STR Req": "-",
+        "DEX Req": "3"
+      },
+      "pair": false
+    },
+    {
+      "name": "Earthshaker Maul",
+      "mundane": "War Maul",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "4",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Serpent's Fangs (Dual Daggers)",
+      "mundane": "Dagger",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "-",
+        "DEX Req": "-"
+      },
+      "pair": true
+    },
+    {
+      "name": "Stormcaller Composite Bow",
+      "mundane": "Composite Bow",
+      "inherited": {
+        "Hands": "2",
+        "Range": "18\"",
+        "STR Req": "3",
+        "DEX Req": "4"
+      },
+      "pair": false
+    },
+    {
+      "name": "Soulstealer Scythe",
+      "mundane": "Scythe",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "3",
+        "DEX Req": "1"
+      },
+      "pair": false
+    },
+    {
+      "name": "Meteor Flail",
+      "mundane": "Flail",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "3",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Blink Dagger",
+      "mundane": "Dagger",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "-",
+        "DEX Req": "-",
+        "Range": "6\" (existing Thrown default)"
+      },
+      "pair": false
+    },
+    {
+      "name": "Warlord's Battleaxe",
+      "mundane": "Battleaxe",
+      "inherited": {
+        "Hands": "1/2",
+        "STR Req": "3",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Keening Rapier",
+      "mundane": "Rapier",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "-",
+        "DEX Req": "3"
+      },
+      "pair": false
+    },
+    {
+      "name": "Sacred Avenger (Zweihander)",
+      "mundane": "Zweihander",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "6",
+        "DEX Req": "1"
+      },
+      "pair": false
+    },
+    {
+      "name": "Shadow-Weaver Greatbow",
+      "mundane": "Greatbow",
+      "inherited": {
+        "Hands": "2",
+        "Range": "24\"",
+        "STR Req": "4",
+        "DEX Req": "5"
+      },
+      "pair": false
+    },
+    {
+      "name": "Leviathan Halberd",
+      "mundane": "Halberd",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "4",
+        "DEX Req": "1"
+      },
+      "pair": false
+    },
+    {
+      "name": "Volcanic Greathammer",
+      "mundane": "Greathammer",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "5",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Ghostblade (Estoc)",
+      "mundane": "Estoc",
+      "inherited": {
+        "Hands": "1/2",
+        "STR Req": "3",
+        "DEX Req": "2"
+      },
+      "pair": false
+    },
+    {
+      "name": "Time-Thief Baselard",
+      "mundane": "Baselard",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "2",
+        "DEX Req": "2"
+      },
+      "pair": false
+    },
+    {
+      "name": "Blood-Drinker Zweihander",
+      "mundane": "Zweihander",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "6",
+        "DEX Req": "1"
+      },
+      "pair": false
+    },
+    {
+      "name": "Sky-Splitter Pike",
+      "mundane": "Pike",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "4",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Thought-Eater Scourge",
+      "mundane": "Scourge",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "2",
+        "DEX Req": "3"
+      },
+      "pair": false
+    },
+    {
+      "name": "Sirrach's Tooth (Zweihander)",
+      "mundane": "Zweihander",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "6",
+        "DEX Req": "1"
+      },
+      "pair": false
+    },
+    {
+      "name": "Mordain's Hammer (War Maul)",
+      "mundane": "War Maul",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "4",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "The Sun-Eater (Greatbow)",
+      "mundane": "Greatbow",
+      "inherited": {
+        "Hands": "2",
+        "Range": "24\"",
+        "STR Req": "4",
+        "DEX Req": "5"
+      },
+      "pair": false
+    },
+    {
+      "name": "Whisper (Stiletto)",
+      "mundane": "Stiletto",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "1",
+        "DEX Req": "2"
+      },
+      "pair": false
+    },
+    {
+      "name": "The World-Breaker (Claymore)",
+      "mundane": "Claymore",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "5",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "The Returning Spear of Salttide (Spear)",
+      "mundane": "Spear",
+      "inherited": {
+        "Hands": "1/2",
+        "STR Req": "1",
+        "DEX Req": "1",
+        "Range": "6\" (existing Thrown default)"
+      },
+      "pair": false
+    },
+    {
+      "name": "Maelthorn's Chain (Hook-and-Chain)",
+      "mundane": "Hook-and-Chain",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "2",
+        "DEX Req": "4"
+      },
+      "pair": false
+    },
+    {
+      "name": "The Hollow Crown's Edge (Longsword)",
+      "mundane": "Longsword",
+      "inherited": {
+        "Hands": "1/2",
+        "STR Req": "3",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "Void-Weaver (Quarterstaff)",
+      "mundane": "Quarterstaff",
+      "inherited": {
+        "Hands": "2",
+        "STR Req": "-",
+        "DEX Req": "-"
+      },
+      "pair": false
+    },
+    {
+      "name": "The Sevenfold Star (Throwing Cross)",
+      "mundane": "Throwing Cross",
+      "inherited": {
+        "Hands": "1",
+        "STR Req": "-",
+        "DEX Req": "4",
+        "Range": "6\" (existing Thrown default)"
+      },
+      "pair": false
+    }
+  ],
+  "immutable_snapshots": [
+    {
+      "revision": 484,
+      "sha256": "2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3",
+      "status": "PASS"
+    },
+    {
+      "revision": 485,
+      "sha256": "fc6caeeedf1e8e2cce80ed469ef74fb3c196048563c6bfec65031f2b03c4bbbe",
+      "status": "PASS"
+    },
+    {
+      "revision": 486,
+      "sha256": "5da05cec6153ac11865874a0da416c002ce90b2dc4936fc9ce50abca9d3dbbe5",
+      "status": "PASS"
+    },
+    {
+      "revision": 487,
+      "sha256": "d77a72f9030061f76ea61e947bf520dcc81628bd653f61ba144f2a474a088254",
+      "status": "PASS"
+    }
+  ],
+  "limits": "These checks verify preservation, exact authorized edits, and available base profiles; human review resolves rules meaning. They do not simulate gameplay or certify future revisions."
+}

@@ -384,11 +384,11 @@ null
 ],
 "col_avg_chars": [
 10.1,
-93.2,
+95.4,
 6.8
 ],
 "row_lengths_ok": true,
-"cell_sha256": "46453c86cf66168af4f728ba2b7f83e0c7c65328ad5fd148fd3b1db9e4c6c1d0"
+"cell_sha256": "4f1bf222c4bfc15a4dec11a73515b3b82ecc5bd0c46a57222f32054f89da2f2c"
 },
 {
 "id": "T011",
@@ -425,10 +425,10 @@ null
 "col_avg_chars": [
 6.1,
 4.3,
-76.0
+79.3
 ],
 "row_lengths_ok": true,
-"cell_sha256": "fd3f6e0b290b675fbf7b124b3ae3c0984ae48a86388bdc6b73d35f1f123dc29f"
+"cell_sha256": "f4befa6d293d46ef9d7f36d17229a192a6fcbf711c3f2bd13d4127bba8869c1d"
 },
 {
 "id": "T012",
@@ -1314,17 +1314,17 @@ null,
 null
 ],
 "cells": 16,
-"max_cell_chars": 260,
+"max_cell_chars": 248,
 "col_max_chars": [
 10,
-260
+248
 ],
 "col_avg_chars": [
 8.1,
-144.4
+131.7
 ],
 "row_lengths_ok": true,
-"cell_sha256": "5c17748910ac26d02f7f1341a992ac6d238931a9c51a47f8bf5fbae62608e06b"
+"cell_sha256": "b456de0da750b1a1689d7e33385f6afa8c85b9c002078812851b4e434ec6294c"
 },
 {
 "id": "T034",
@@ -1501,8 +1501,8 @@ null
 {
 "id": "T037",
 "src": [
-3712,
-3725
+3710,
+3723
 ],
 "heading": "h-weapon-qualities",
 "heading_title": "Weapon Qualities",
@@ -1512,38 +1512,34 @@ null
 "7.11 Item Qualities",
 "Weapon Qualities"
 ],
-"columns": 3,
+"columns": 2,
 "rows": 12,
 "header": [
 "Quality",
-"Value",
 "Rule"
 ],
 "align": [
 null,
-"right",
 null
 ],
-"cells": 39,
+"cells": 26,
 "max_cell_chars": 78,
 "col_max_chars": [
 12,
-27,
 78
 ],
 "col_avg_chars": [
 9.8,
-16.8,
 54.2
 ],
 "row_lengths_ok": true,
-"cell_sha256": "13a7e6b5bee54d10f6f931424eeb176de80db5dbf9c6cd847ea6b43e2aab294f"
+"cell_sha256": "2cb9e4376d1ac095583844514c42c40295c4a4440aeed6f2c1e39ff1f310f010"
 },
 {
 "id": "T038",
 "src": [
-3731,
-3744
+3729,
+3742
 ],
 "heading": "h-armour-and-shield-qualities",
 "heading_title": "Armour and Shield Qualities",
@@ -1553,38 +1549,34 @@ null
 "7.11 Item Qualities",
 "Armour and Shield Qualities"
 ],
-"columns": 3,
+"columns": 2,
 "rows": 12,
 "header": [
 "Quality",
-"Value",
 "Rule"
 ],
 "align": [
 null,
-"right",
 null
 ],
-"cells": 39,
+"cells": 26,
 "max_cell_chars": 347,
 "col_max_chars": [
 12,
-55,
 347
 ],
 "col_avg_chars": [
 9.8,
-19.2,
 109.2
 ],
 "row_lengths_ok": true,
-"cell_sha256": "a76353e645e36ff452c0a7a301bf4f135405ec1bee1eaf6d344af93dcb3cb419"
+"cell_sha256": "0f5ebacada12b58683d722d2329ae9085a877dc4d7c84b47f60d0a2fe4f1f089"
 },
 {
 "id": "T039",
 "src": [
-3748,
-3769
+3746,
+3767
 ],
 "heading": "h-tier-1-enhanced-weapon-table-d20",
 "heading_title": "Tier 1 Enhanced Weapon Table (d20)",
@@ -1624,8 +1616,8 @@ null,
 {
 "id": "T040",
 "src": [
-3773,
-3794
+3771,
+3792
 ],
 "heading": "h-tier-1-enhanced-armour-table-d20",
 "heading_title": "Tier 1 Enhanced Armour Table (d20)",
@@ -1665,8 +1657,8 @@ null,
 {
 "id": "T041",
 "src": [
-3798,
-3819
+3796,
+3817
 ],
 "heading": "h-tier-1-enhanced-shield-table-d20",
 "heading_title": "Tier 1 Enhanced Shield Table (d20)",
@@ -1706,8 +1698,8 @@ null,
 {
 "id": "T042",
 "src": [
-3823,
-3844
+3821,
+3842
 ],
 "heading": "h-tier-2-enhanced-weapon-table-d20",
 "heading_title": "Tier 2 Enhanced Weapon Table (d20)",
@@ -1747,8 +1739,8 @@ null,
 {
 "id": "T043",
 "src": [
-3848,
-3869
+3846,
+3867
 ],
 "heading": "h-tier-2-enhanced-armour-table-d20",
 "heading_title": "Tier 2 Enhanced Armour Table (d20)",
@@ -1788,8 +1780,8 @@ null,
 {
 "id": "T044",
 "src": [
-3873,
-3894
+3871,
+3892
 ],
 "heading": "h-tier-2-enhanced-shield-table-d20",
 "heading_title": "Tier 2 Enhanced Shield Table (d20)",
@@ -1829,8 +1821,8 @@ null,
 {
 "id": "T045",
 "src": [
-3898,
-3919
+3896,
+3917
 ],
 "heading": "h-tier-3-enhanced-weapon-table-d20",
 "heading_title": "Tier 3 Enhanced Weapon Table (d20)",
@@ -1870,8 +1862,8 @@ null,
 {
 "id": "T046",
 "src": [
-3923,
-3944
+3921,
+3942
 ],
 "heading": "h-tier-3-enhanced-armour-table-d20",
 "heading_title": "Tier 3 Enhanced Armour Table (d20)",
@@ -1911,8 +1903,8 @@ null,
 {
 "id": "T047",
 "src": [
-3948,
-3969
+3946,
+3967
 ],
 "heading": "h-tier-3-enhanced-shield-table-d20",
 "heading_title": "Tier 3 Enhanced Shield Table (d20)",
@@ -1952,8 +1944,8 @@ null,
 {
 "id": "T048",
 "src": [
-3973,
-3994
+3971,
+3992
 ],
 "heading": "h-tier-4-enhanced-weapon-table-d20",
 "heading_title": "Tier 4 Enhanced Weapon Table (d20)",
@@ -1993,8 +1985,8 @@ null,
 {
 "id": "T049",
 "src": [
-3998,
-4019
+3996,
+4017
 ],
 "heading": "h-tier-4-enhanced-armour-table-d20",
 "heading_title": "Tier 4 Enhanced Armour Table (d20)",
@@ -2034,8 +2026,8 @@ null,
 {
 "id": "T050",
 "src": [
-4023,
-4038
+4021,
+4036
 ],
 "heading": "h-tier-4-enhanced-shield-table-d20",
 "heading_title": "Tier 4 Enhanced Shield Table (d20)",
@@ -2075,8 +2067,8 @@ null,
 {
 "id": "T051",
 "src": [
-4042,
-4063
+4040,
+4061
 ],
 "heading": "h-tier-5-enhanced-weapon-table-d20",
 "heading_title": "Tier 5 Enhanced Weapon Table (d20)",
@@ -2116,8 +2108,8 @@ null,
 {
 "id": "T052",
 "src": [
-4067,
-4088
+4065,
+4086
 ],
 "heading": "h-tier-5-enhanced-armour-table-d20",
 "heading_title": "Tier 5 Enhanced Armour Table (d20)",
@@ -2157,8 +2149,8 @@ null,
 {
 "id": "T053",
 "src": [
-4092,
-4109
+4090,
+4107
 ],
 "heading": "h-tier-5-enhanced-shield-table-d20",
 "heading_title": "Tier 5 Enhanced Shield Table (d20)",
@@ -2198,8 +2190,8 @@ null,
 {
 "id": "T054",
 "src": [
-4119,
-4131
+4117,
+4129
 ],
 "heading": "h-712-shields",
 "heading_title": "7.12 Shields",
@@ -2254,8 +2246,8 @@ null
 {
 "id": "T055",
 "src": [
-4148,
-4169
+4146,
+4167
 ],
 "heading": "h-tier-1-potions",
 "heading_title": "Tier 1 Potions",
@@ -2299,8 +2291,8 @@ null
 {
 "id": "T056",
 "src": [
-4173,
-4194
+4171,
+4192
 ],
 "heading": "h-tier-2-potions",
 "heading_title": "Tier 2 Potions",
@@ -2344,8 +2336,8 @@ null
 {
 "id": "T057",
 "src": [
-4198,
-4219
+4196,
+4217
 ],
 "heading": "h-tier-3-potions",
 "heading_title": "Tier 3 Potions",
@@ -2389,8 +2381,8 @@ null
 {
 "id": "T058",
 "src": [
-4223,
-4244
+4221,
+4242
 ],
 "heading": "h-tier-4-potions",
 "heading_title": "Tier 4 Potions",
@@ -2434,8 +2426,8 @@ null
 {
 "id": "T059",
 "src": [
-4248,
-4269
+4246,
+4267
 ],
 "heading": "h-tier-5-potions",
 "heading_title": "Tier 5 Potions",
@@ -2479,8 +2471,8 @@ null
 {
 "id": "T060",
 "src": [
-4291,
-4312
+4289,
+4310
 ],
 "heading": "h-tier-1-poisons",
 "heading_title": "Tier 1 Poisons",
@@ -2524,8 +2516,8 @@ null
 {
 "id": "T061",
 "src": [
-4316,
-4337
+4314,
+4335
 ],
 "heading": "h-tier-2-poisons",
 "heading_title": "Tier 2 Poisons",
@@ -2569,8 +2561,8 @@ null
 {
 "id": "T062",
 "src": [
-4341,
-4362
+4339,
+4360
 ],
 "heading": "h-tier-3-poisons",
 "heading_title": "Tier 3 Poisons",
@@ -2614,8 +2606,8 @@ null
 {
 "id": "T063",
 "src": [
-4366,
-4387
+4364,
+4385
 ],
 "heading": "h-tier-4-poisons",
 "heading_title": "Tier 4 Poisons",
@@ -2659,8 +2651,8 @@ null
 {
 "id": "T064",
 "src": [
-4391,
-4412
+4389,
+4410
 ],
 "heading": "h-tier-5-poisons",
 "heading_title": "Tier 5 Poisons",
@@ -2704,8 +2696,8 @@ null
 {
 "id": "T065",
 "src": [
-4448,
-4469
+4446,
+4467
 ],
 "heading": "h-tier-1-arcane-scrolls",
 "heading_title": "Tier 1 Arcane Scrolls",
@@ -2749,8 +2741,8 @@ null
 {
 "id": "T066",
 "src": [
-4473,
-4494
+4471,
+4492
 ],
 "heading": "h-tier-2-arcane-scrolls",
 "heading_title": "Tier 2 Arcane Scrolls",
@@ -2794,8 +2786,8 @@ null
 {
 "id": "T067",
 "src": [
-4498,
-4519
+4496,
+4517
 ],
 "heading": "h-tier-3-arcane-scrolls",
 "heading_title": "Tier 3 Arcane Scrolls",
@@ -2839,8 +2831,8 @@ null
 {
 "id": "T068",
 "src": [
-4523,
-4544
+4521,
+4542
 ],
 "heading": "h-tier-1-divine-scrolls",
 "heading_title": "Tier 1 Divine Scrolls",
@@ -2884,8 +2876,8 @@ null
 {
 "id": "T069",
 "src": [
-4548,
-4569
+4546,
+4567
 ],
 "heading": "h-tier-2-divine-scrolls",
 "heading_title": "Tier 2 Divine Scrolls",
@@ -2929,8 +2921,8 @@ null
 {
 "id": "T070",
 "src": [
-4573,
-4594
+4571,
+4592
 ],
 "heading": "h-tier-3-divine-scrolls",
 "heading_title": "Tier 3 Divine Scrolls",
@@ -2974,8 +2966,8 @@ null
 {
 "id": "T071",
 "src": [
-4600,
-4628
+4598,
+4626
 ],
 "heading": "h-716-adventuring-equipment",
 "heading_title": "7.16 Adventuring Equipment",
@@ -15993,8 +15985,8 @@ null
 {
 "id": "T323",
 "src": [
-17128,
-17142
+17132,
+17146
 ],
 "heading": "h-quick-reference-index",
 "heading_title": "Quick Reference Index",
@@ -16029,8 +16021,8 @@ null
 {
 "id": "T324",
 "src": [
-17197,
-17210
+17201,
+17214
 ],
 "heading": "h-c2-core-terms-and-abbreviations",
 "heading_title": "C.2 Core Terms and Abbreviations",
@@ -16065,8 +16057,8 @@ null
 {
 "id": "T325",
 "src": [
-17220,
-17238
+17224,
+17242
 ],
 "heading": "h-c3-conditions-summary",
 "heading_title": "C.3 Conditions Summary",
@@ -16105,8 +16097,8 @@ null
 {
 "id": "T326",
 "src": [
-17246,
-17261
+17250,
+17265
 ],
 "heading": "h-c4-actions-summary",
 "heading_title": "C.4 Actions Summary",
@@ -16145,8 +16137,8 @@ null
 {
 "id": "T327",
 "src": [
-17267,
-17272
+17271,
+17276
 ],
 "heading": "h-c5-reactions-summary",
 "heading_title": "C.5 Reactions Summary",
@@ -16189,8 +16181,8 @@ null
 {
 "id": "T328",
 "src": [
-17823,
-17828
+17827,
+17832
 ],
 "heading": "h-size-and-footprints-summary",
 "heading_title": "Size and Footprints Summary",
@@ -16226,8 +16218,8 @@ null
 {
 "id": "T329",
 "src": [
-17851,
-17863
+17855,
+17867
 ],
 "heading": "h-universal-actions",
 "heading_title": "Universal Actions",
@@ -16268,8 +16260,8 @@ null
 {
 "id": "T330",
 "src": [
-17881,
-17886
+17885,
+17890
 ],
 "heading": "h-combat-reactions",
 "heading_title": "Combat Reactions",
@@ -16314,8 +16306,8 @@ null
 {
 "id": "T331",
 "src": [
-17905,
-17922
+17909,
+17926
 ],
 "heading": "h-conditions",
 "heading_title": "Conditions",
@@ -16352,8 +16344,8 @@ null
 {
 "id": "T332",
 "src": [
-17954,
-17965
+17958,
+17969
 ],
 "heading": "h-c14-equipment-quick-reference",
 "heading_title": "C.14 Equipment Quick Reference",
@@ -16379,10 +16371,10 @@ null
 357
 ],
 "col_avg_chars": [
-13.2,
-205.2
+12.8,
+200.7
 ],
 "row_lengths_ok": true,
-"cell_sha256": "c9f7701d8c10a30d21aeed5ffc819126651ae7954d024e24d306c959736e04ae"
+"cell_sha256": "e2a1b68f566c1e6acf4123b2ccad20538e8f2b239c2f26ad0912140b9231cd66"
 }
 ]

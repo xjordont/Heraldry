@@ -1,6 +1,6 @@
 {
-  "reviewer": "figure-semantic-review: FIG-01..12, FIG-17, FIG-18 and FIG-57 carried forward (hashes unchanged); FIG-13..16, 19, 20 and FIG-21..56 independently re-reviewed against RC486 (P-08..P-12) by a reviewer who did not draw them",
-  "reviewed_at": "2026-10-07T11:10:00Z",
+  "reviewer": "Codex RC487 source/render review for FIG-02, FIG-11, FIG-12, FIG-13, FIG-14, FIG-15, FIG-16, FIG-17, FIG-18, FIG-19, FIG-20, FIG-21, FIG-22, FIG-23, FIG-24, FIG-25, FIG-26, FIG-27, FIG-28, FIG-29, FIG-30, FIG-31, FIG-32, FIG-33, FIG-34, FIG-35, FIG-36, FIG-37, FIG-38, FIG-39, FIG-40, FIG-41, FIG-42, FIG-43, FIG-44, FIG-45, FIG-46, FIG-47, FIG-48, FIG-49, FIG-50, FIG-51, FIG-52, FIG-53, FIG-54, FIG-55, FIG-56; prior reviews carried forward only where hashes are unchanged",
+  "reviewed_at": "2026-10-09",
   "figures": [
     {
       "id": "FIG-01",
@@ -38,7 +38,13 @@
           "fix": "None needed; verified in current SVG text and render."
         }
       ],
-      "rules_sha256": "fbd59fc5656526646fe120874331793c436722707f951b1808aeda3671f4b190"
+      "rules_sha256": "eefbd1c57c68122ffa07c1bee9165b66f1e24aa6adcdd3658607eb99d4e2e731",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Spot table amendment does not change the drawn Move/Attack/Block AP sequence; source comparison and rendered diagram remain consistent.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-03",
@@ -260,7 +266,13 @@
         "1113-1120"
       ],
       "findings": [],
-      "rules_sha256": "1534259aafaab4b1e571e823cbbfb5e70d73c460f949b6e54f5fdc5dcc005882"
+      "rules_sha256": "00c239576fd853dca920544d0d195be730841820fb5b05bdb9e17d70f352936e",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "AI first-valid-Step termination agrees with F09’s explicitly performed named charge attacks; same-Group alliance exception does not change this generic enemy-selection flow.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-12",
@@ -288,7 +300,13 @@
           "fix": "None. Triaged as A-15."
         }
       ],
-      "rules_sha256": "433b0affd47670e764c4ffd6e7657b1bfc721e4e2413820780611e25e05f6ca3"
+      "rules_sha256": "4b9a257a8b54903b267dfb6cc7e755329d966f6de895f6a02c1ac93a299dcfbb",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Generic Primary Target and movement priorities are unchanged; same-Group allies are excluded by governing allegiance.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-13",
@@ -373,8 +391,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-14",
@@ -418,8 +442,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "60a72e81078eddd4be7d95d9df8353896f6537692484ef0efc15aac54c44b678",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "63f14cac649e4026ace4bf5553644c63ffd82df7371aaa7b991d0b14461fd891",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Trail permits the only Hero of a one-Hero party. Diagram is explicitly the two-party schematic and depicts legal two-Hero deployment on the Trail.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-15",
@@ -468,8 +498,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "c66526f0a181e2d17e00ac1e71526e7cc4f4ba6725a9cab80d9bf6a2c920863d",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "21ed8533fe52269f3d0f967ac3dadf88ea018fe45484529f864fe70ab6eba4d7",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-16",
@@ -520,8 +556,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "78f702e3e45b205afcd7e9934c3b78532fa25bad31aed946ada5ee57dc93af23",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "7e8b5b106181a87981d293f866a2db489037c92d5290bbf89578d3694014291e",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-17",
@@ -543,7 +585,13 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "b1b5db799055ac4c3a0c031aa1cd7bcf30835fdfa90c9746a2f63478d9ca560c"
+      "rules_sha256": "cd934f28a5a2da349d0ac16c724ce2520adad6ba5321f38ee5f132e4dfe8b4ce",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-18",
@@ -587,7 +635,13 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "9bbb0b9a59a7e67dd419107ae7e7474a7407f27fc0d357e8da6da48682442c1a"
+      "rules_sha256": "0d21a2a30bec258e6f78ff0e324be2ed038d83119260de77875b14e0a8ea10d6",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Round 1 teaching figure is unchanged; the corrected Mara/Varek ledgers affect Round 2 only.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-19",
@@ -656,8 +710,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "17002c1770b12fc10565e4973020395819f8a09a293420473d626fd18a0b7646",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "197d272c16c30581b176d8feedc533aa05bdfe4138298a0abc5d73f8524987bd",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Default Basic Mode setup remains unchanged. Hidden Strongbox and Traps interaction is a separate variant not depicted.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-20",
@@ -713,8 +773,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "5dd84e28a5b03b19717cfb942592a44ca562abb434d4dbcaab3cd68defc07821",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "977f5eaee32e78ee8a7c1f33f0aff85416342c7756e4ee5d51ec0b2af4ca9699",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-57",
@@ -751,8 +817,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-22",
@@ -798,13 +870,19 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-23",
       "svg_sha256": "b7f5efdf485fe2f85df7b158ee09ee3f030823977303518840858817f87670d2",
-      "caption_sha256": "67d21a4b8596209ea89c44bb159acc2dcbddfc2e4eb50ad8c509efbe4ab1c14c",
+      "caption_sha256": "09fa3f984d5cabc6476a1102b4acbb2102cfceaf80f06e869dbb9ad0dd7d30c3",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12112-12188",
@@ -851,13 +929,19 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Caption now permits the only Hero in a one-Hero party; existing schematic positions satisfy normal two-party deployment.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-24",
-      "svg_sha256": "a23164922f64e64aac69ad7624fb31d41c891321a94f0c482a425e1f827768ee",
-      "caption_sha256": "5cf60e2da9c2829fd5aa3c7eed91ce90fb5987fc388e173c934966813dd58545",
+      "svg_sha256": "b1309e66fbae6893e5504e9b096b0f2cf96649abb81a767d7e73607cb29c2999",
+      "caption_sha256": "070284bf0c1b93210c8271212de40db49e6781bafdfe9eb2ce8f80c191e7bd90",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
         "12189-12259",
@@ -897,12 +981,18 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "0073337a475ec1e813cc4de8abff44b7e4086eeb904c94f00da55e8bf957c487",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Central Webbed Section and first retained Bundle are explicit. Bundle marker separated from the central Large Boss glyph; Boss footprint within 1 inch of Bundle. Other Bundles at least 4 inches apart. Resting spiders retain a legal peripheral existing Webbed Section; one-Bundle fallback stated in source.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-25",
-      "svg_sha256": "3162a747a3d0a3d434565093d58a0c4af763206d2523759e7e8d8dbb532d87a4",
+      "svg_sha256": "b4244a8f6cc1b6b70d366c6885cbd58d4b859e16bbdf81d4e528b412d91c4d62",
       "caption_sha256": "f8ed61a55822f6ba3ebb6b49e3ae9e289110a5e2c64fa8e1158864efa6437853",
       "verdict": "PASS",
       "checked_against_lines": [
@@ -944,8 +1034,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "The obsolete Camp-perimeter conflict note is removed. Group 3 is constrained to the literal 6-inch ring from the Camp centre; waking remains unchanged.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-26",
@@ -999,8 +1095,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "0073337a475ec1e813cc4de8abff44b7e4086eeb904c94f00da55e8bf957c487",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-27",
@@ -1047,8 +1149,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T11:10:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T11:10:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-28",
@@ -1095,8 +1203,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-29",
@@ -1142,8 +1256,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-30",
@@ -1187,8 +1307,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T11:10:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T11:10:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-31",
@@ -1226,8 +1352,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-32",
@@ -1265,8 +1397,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-33",
@@ -1311,8 +1449,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-34",
@@ -1355,8 +1499,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-35",
@@ -1387,12 +1537,18 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-36",
-      "svg_sha256": "542956e4bcafdff489231a0442393ae2844f7a8995b302e0c2f5f5d4de29c5dc",
+      "svg_sha256": "c6a3a8e84c861e2ee58e22f4573788b5a6aefb5f969787ca079e43c825dee9d1",
       "caption_sha256": "ac1bc8f01ad5029bbd8a9b4f22d099cc6bbd345554c44fcd5b796ed09c4ba0ba",
       "verdict": "PASS",
       "checked_against_lines": [
@@ -1442,8 +1598,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Tent floor drawn Open, with Blocking wall lines and a visibly open illustrative entrance; Plans and Commander remain inside. No new gameplay dimension supplied by diagram.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-37",
@@ -1495,8 +1657,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "a2b958b16d0e2e4a700c27a036a98ea152b0dcbc736e17a311558aa2551add4d",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "0073337a475ec1e813cc4de8abff44b7e4086eeb904c94f00da55e8bf957c487",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-38",
@@ -1533,8 +1701,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-39",
@@ -1581,8 +1755,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T11:10:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T11:10:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-40",
@@ -1619,8 +1799,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-41",
@@ -1657,8 +1843,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-42",
@@ -1710,8 +1902,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-43",
@@ -1748,8 +1946,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-44",
@@ -1793,8 +1997,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-45",
@@ -1833,8 +2043,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-46",
@@ -1872,8 +2088,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-47",
@@ -1920,8 +2142,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-48",
@@ -1974,8 +2202,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-49",
@@ -2027,12 +2261,18 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-50",
-      "svg_sha256": "a12c52e20aaab7213f7d7fd54106672fef29d6e3afa34e1bbdfcc50e267a0152",
+      "svg_sha256": "471b49328b6a953dfe67713a650fd067a9a64c5eaa5c1e930d321b8888a0a519",
       "caption_sha256": "67a4283af306188eee04688bb10c4ac0f60ba4ed0c4bce5dc33e42eaefd682ee",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -2065,12 +2305,18 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Dais upper surface drawn Open; footnote preserves Impassable body and climbable sides. The Bound Cinder Lord remains absent until prison breaking.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-51",
-      "svg_sha256": "8844d12d65b43fc0ba910cfbeae7d3d12cef0ec4ec829a099f094797e817ace9",
+      "svg_sha256": "ed537f31ac90ce29b6c4bec1d759f5e1264a3f6d2cf600592c31914f054681bf",
       "caption_sha256": "8ed4b790280f1a99b72e41841c37f130d4eb71445f8faf6816ce1ab290d5845e",
       "verdict": "PASS_WITH_NOTES",
       "checked_against_lines": [
@@ -2122,8 +2368,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Impassable exterior drawn around the Open/Shallow-Water flooded floor with an illustrative open entrance. Reliquary and Leeches remain within the flooded sanctum. Existing accepted outer-water placement note retained.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-52",
@@ -2170,8 +2422,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-53",
@@ -2211,8 +2469,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-54",
@@ -2258,8 +2522,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-55",
@@ -2315,8 +2585,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     },
     {
       "id": "FIG-56",
@@ -2356,8 +2632,14 @@
           "fix": "None."
         }
       ],
-      "rules_sha256": "bd39ae16dd65ef2b51eaf2c9efc0aec901335e0327b0c5130e6cce338d975b3b",
-      "reviewed_at": "2026-10-07T10:58:00Z"
+      "rules_sha256": "deef3114478159637f48c68e0a83d4cecd80351f83d5343dd1d356a7e720264f",
+      "reviewed_at": "2026-10-07T10:58:00Z",
+      "rc487_review": {
+        "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
+        "date": "2026-10-09",
+        "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
+        "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+      }
     }
   ],
   "summary": {
@@ -2522,5 +2804,7 @@
     "previously_open_minors": "29 previously open minors: 24 resolved; 4 accepted with reasons (FIG-19 '5-7\" label on ring', FIG-27 ruler across the Dome, FIG-29 label halo, FIG-51 Group 2 murky-water ambiguity); 1 still open (FIG-30 Hall label detached, which the illustrator counted as fixed). New open minors: FIG-27 Lens leader through hazard u3, FIG-39 Wall label detached from its wall (the earlier FIG-39 ruler item is resolved). Remaining open minors: FIG-27, FIG-30, FIG-39 (all minor, none affects a rule or number). Pass 2: FIG-27 Lens leader, FIG-30 Hall label and FIG-39 Wall label re-rendered and verified fixed; no open minors remain.",
     "method": "Specs and scenario text read side by side; every SVG rendered with figures/src/test/render.py at 200 ppi (equal to the 243 pt placed column width) and viewed; crops at 300-400 ppi for FIG-26, 27, 30, 39, 43; make_figures.py run in a scratch copy to confirm byte-identical SVGs and passing geometry assertions.",
     "not_checked": "Page-placed PDF, column balancing and physical print. Five maps (FIG-47, 52, 53, 54, 55) are 274.2 pt tall because of three-line foot notes; figures/README says maps stay at most about 260 pt, so the keep/pagination audit should confirm they place whole."
-  }
+  },
+  "prior_reviewer": "figure-semantic-review: FIG-01..12, FIG-17, FIG-18 and FIG-57 carried forward (hashes unchanged); FIG-13..16, 19, 20 and FIG-21..56 independently re-reviewed against RC486 (P-08..P-12) by a reviewer who did not draw them",
+  "current_review_limits": "Actual review by the same Codex author; do not describe it as an independent second reviewer. Historical independent reviewer findings and accepted minor notes remain recorded."
 }

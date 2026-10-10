@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-07",
-  "source": "source/Heraldry_RC486.md",
+  "generated": "2026-10-09",
+  "source": "source/Heraldry_RC487.md",
   "scenarios": [
     {
       "key": "Greenmark 1",
@@ -194,7 +194,7 @@
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 253.4
+        "height": 263.8
       },
       "review": {
         "figure": "FIG-24",
@@ -229,8 +229,8 @@
       ],
       "elements": {
         "mandatory": 1,
-        "constrained": 11,
-        "illustrative": 4,
+        "constrained": 12,
+        "illustrative": 3,
         "unresolved": 0
       },
       "undrawn_conditional": [
@@ -251,14 +251,12 @@
         }
       ],
       "unresolved_elements": [],
-      "ambiguities": [
-        "Group 3 (12312): 'at the perimeter of the Bandit Camp, 6\" from its centre' conflicts with a Camp 'about 4\"×4\"' (12280), whose perimeter lies about 2\" from its centre. The map draws the literal 6\" ring from the centre with Group 3 as an illustrative (grey dashed) marker and does not choose between the two readings."
-      ],
+      "ambiguities": [],
       "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 274.2
+        "height": 263.8
       },
       "review": {
         "figure": "FIG-25",
@@ -824,7 +822,7 @@
       "elements": {
         "mandatory": 1,
         "constrained": 10,
-        "illustrative": 9,
+        "illustrative": 12,
         "unresolved": 0
       },
       "undrawn_conditional": [],
@@ -836,7 +834,7 @@
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 253.4
+        "height": 263.8
       },
       "review": {
         "figure": "FIG-36",
@@ -1564,7 +1562,7 @@
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 253.4
+        "height": 263.8
       },
       "review": {
         "figure": "FIG-50",
@@ -1600,7 +1598,7 @@
       "elements": {
         "mandatory": 3,
         "constrained": 4,
-        "illustrative": 10,
+        "illustrative": 11,
         "unresolved": 0
       },
       "undrawn_conditional": [
@@ -1627,7 +1625,7 @@
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 253.4
+        "height": 263.8
       },
       "review": {
         "figure": "FIG-51",
@@ -2056,13 +2054,13 @@
     "template_figure": "FIG-57",
     "elements": {
       "mandatory": 71,
-      "constrained": 247,
-      "illustrative": 293,
+      "constrained": 248,
+      "illustrative": 296,
       "unresolved": 0
     },
     "iconography": "shared-v2",
     "glyph_registry": "figures/src/scenkit.py (REG); key FIG-20",
-    "ambiguities_logged": 10,
+    "ambiguities_logged": 9,
     "global_notes": [
       "Group placement constraints ('within 3\" of ...', 'at least 8\" from ...') are drawn for one marker per Monster Group; the text does not say whether every member of a multi-Monster group must satisfy them.",
       "Counts of scattered terrain are printed values; maps draw a few representative pieces and never resolve 10.6 scaling."

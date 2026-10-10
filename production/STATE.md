@@ -1,26 +1,24 @@
-# Production state — RC486, main
+# Production state — RC487, main
 
-Updated 2026-10-09. Working/delivery branch: **main**. No new branch without an explicit owner decision and recorded reason. `claude/heraldry-rc484-build` is a historical checkpoint.
+Updated 2026-10-10. Working/delivery branch: **main**.
 
 ## Active manuscript
 
-`source/versions.json` identifies `source/Heraldry_RC486.md`, SHA-256 `5da05cec6153ac11865874a0da416c002ce90b2dc4936fc9ce50abca9d3dbbe5`. It contains approved P-01–P-12. RC484 and RC485 remain unchanged. Exact patch histories are `editorial/history/RC485.json` and `editorial/history/RC486.json`. No build-only manuscript patch layer remains.
-
-Future text edits follow `docs/WORKFLOW.md` and promote an approved exact patch batch with `tools/revise_manuscript.py`; the next revision is RC487. Artwork, figures and layout use Git commits without an RC bump. Only the orchestrator promotes snapshots and integrates main commits.
+`source/versions.json` identifies `source/Heraldry_RC487.md`, SHA-256 `d77a72f9030061f76ea61e947bf520dcc81628bd653f61ba144f2a474a088254`. RC487 applies one owner-authorized batch of 48 exact repairs archived in `editorial/history/RC487.json`. RC484–RC486 and their archived history remain unchanged. Future text edits follow `docs/WORKFLOW.md` and promote a new snapshot; artwork/figure/layout edits use Git commits without an RC bump.
 
 ## Current delivery and verification
 
-Latest recorded RC486 digital PDF: 599 pages. Cream and white interiors: 596 pages each, identical pagination. No PDFs were rebuilt or reapproved during the 2026-10-09 manuscript audit. Current covers, calibration, print instructions, 13-page specimen and ZIP are under dist/. The calibration ruler stays within its column. PDF timestamps are pinned to the revision date.
+RC487 digital: 600 pages; cream and white interiors: 597 pages each. All 597 cream interior pages were inspected on contact sheets, with nineteen detailed pages, both cover variants, calibration and an overscan specimen. Visual/figure ledgers describe the actual review scope and current hashes. Current figure review is by the repair author; historical independent findings are retained.
 
-15 regression tests and 8 preflight baseline checks PASS on 2026-10-09. Historical release-gate evidence remains scoped to its recorded input/PDF hashes. 8,426 source text blocks in order; 332 tables / 10,341 cells; 57 figures with source-bound semantic reviews (current scenario-map run below). The latest recorded RC486 visual review covers all 596 interior pages at contact-sheet scale and selected detail reviews; exact hash/scope remains in the visual ledger. Not full glyph-level proofreading. The full mechanical contradiction audit is now complete with open findings; see the 2026-10-09 entry.
+17 regression tests and 8 source preflight checks pass. Reconciliation preserves 8,429 text blocks in order and all 332 tables / 10,315 current cells. All 835 printed item Cost/Value cells are unchanged; development price multipliers/formulas and quality-table Value columns are removed. All 50 special weapon base profiles resolve. 1,539 fit-capable units have no avoidable splits or missing coverage. All 57 figures pass the current source-bound review gate. The 19-check release gate and package audit are recorded in `production/qa/STATUS.json` and `production/qa/package-audit.json`.
 
-Clean repeated builds produced identical cream, white, digital and cover PDF bytes. Packaging verifies unique entries/checksums and includes all instructions, agents, reference metadata and fonts needed by a clean checkout. GitHub checks protect prior snapshots/records against the base commit. Extracted-package rebuild evidence is in production/qa/rebuild-audit.json.
+The contradiction audit is closed for F01–F21 and U01–U06 in `production/qa/manuscript-contradiction-resolution.md`; the original RC486 audit remains historical evidence. Owner-authorized completions and new illustrative dice results are explicit in the closure record. Exact reconstruction and immutable hashes are verified by `production/qa/manuscript-repair-verification.json`.
 
-## Remaining inputs and next run
+## Remaining inputs
 
-Atmospheric illustrations: 12 native ChatGPT Work masters integrated in the last recorded RC486 build. The replacement pen-and-ink pipeline is separate pending work; its current generation/approval status was not reverified by this manuscript audit. Physical inkjet proof: NOT TESTED. Manuscript contradiction audit: COMPLETE — OPEN FINDINGS (21 findings, 6 isolated uncertainties). Exact candidates remain proposed; no RC487 exists. Commercial wrap/PDF-X: NOT APPLICABLE. Author/publisher/copyright/ISBN details were not supplied.
+The original workflow email's three annotation texts remain unavailable through the plugin; cancelled browser sign-in supplied no further evidence. No conjectural mapping of annotations is claimed. Pen-and-ink candidate approval and physical inkjet proof remain separate outstanding work; no new artwork is approved by this manuscript repair. Physical proof: NOT TESTED. Author/publisher/copyright/ISBN details remain unset. Commercial wrap/PDF-X: NOT APPLICABLE.
 
-Resume requested component work; do not restart initial production. Run `make clean all`, inspect affected pages/repagination and update visual/figure evidence, then `make verify package`. Push verified work directly to main without force. If the platform blocks main writes, record the actual restriction and preserve work rather than silently making a branch.
+GitHub delivery rebuilding verifies the committed visual ledger before committing generated PDFs to main. Do not force-push or re-promote RC487. Historical checkpoints below retain their original scope.
 
 ## Run 2026-10-06 (scenario maps, layout)
 - Art: BLOCKED — no authorized image route at that historical checkpoint. 0/12 produced then; superseded by the supplied masters below.
