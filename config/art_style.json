@@ -180,5 +180,51 @@
   "ART-MON-UNDEAD-CHAMPION",
   "ART-CLA-FIGHTER",
   "ART-ANC-DWARF"
- ]
+ ],
+ "gpt_reference_sets": {
+  "note": "Each ChatGPT queue item carries at most max_refs reference images chosen for its register, so scenery never bleeds into isolated figures and no single subject dominates. A candidate is either a repo path (always used) or an anchor ID (used once that anchor is approved). The item's own ID is skipped. The first max_refs usable candidates win, in order.",
+  "max_refs": 3,
+  "register_of_family": {
+   "cover": "scene",
+   "chapter": "scene",
+   "world": "scene",
+   "climate": "scene",
+   "bastion": "scene",
+   "scenario": "scene",
+   "campaign": "scene",
+   "boss": "scene",
+   "tradition": "scene",
+   "monster": "creature",
+   "class": "person",
+   "ancestry": "person",
+   "background": "still",
+   "item": "still"
+  },
+  "sets": {
+   "scene": [
+    "assets/art/incoming/ART-BAS-GREYTHORN.jpg",
+    "ART-CLI-THE-GREENMARK",
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ],
+   "creature": [
+    "ART-MON-UNDEAD-CHAMPION",
+    "ART-MON-GIANT-TARANTULA",
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ],
+   "person": [
+    "ART-CLA-FIGHTER",
+    "ART-ANC-DWARF",
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ],
+   "still": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  }
+ },
+ "gpt_max_attempts": {
+  "default": 3,
+  "cover": 5,
+  "chapter": 5
+ }
 }

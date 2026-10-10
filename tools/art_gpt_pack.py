@@ -2,7 +2,11 @@
 """ChatGPT Work handoff pack: one ready-to-paste prompt file per pending illustration plus an
 ordered queue (production/art/gpt/QUEUE.json and QUEUE.md). The anchors phase runs first; the
 batch phase requires approved anchors. Prompts come from art_generate.prompt_for (owner prompts
-override). Regenerate after any catalog, brief or style change."""
+override). Regenerate after any catalog, brief or style change.
+
+Queue schema 2: every item carries its register, its own short list of reference images
+(config gpt_reference_sets, at most max_refs), its printed width, its attempt budget and the
+brief's must / avoid lists, so the runner never has to parse prompt text or attach every anchor."""
 import argparse, hashlib, json, sys
 from pathlib import Path
 
@@ -11,14 +15,88 @@ sys.path.insert(0, str(ROOT / "tools"))
 import art_generate as g  # noqa: E402
 
 GPT = ROOT / "production/art/gpt"
+SCHEMA = 2
 SIZES = {"3:2": "1536x1024", "2:3": "1024x1536", "1:1": "1024x1024"}
 ORDER = ["bastion", "climate", "monster", "class", "ancestry", "boss", "scenario", "world", "campaign",
          "tradition", "background", "item", "chapter", "cover"]
+IMAGE_SUFFIXES = (".jpg", ".jpeg", ".png", ".webp")
 
 
-def received():
-    sels = g.load(g.SELECTIONS, {})
+def received(sels=None):
+    sels = g.load(g.SELECTIONS, {}) if sels is None else sels
     return {k for k, v in sels.items() if v.get("route") == "gpt" and v.get("status") in ("received", "approved", "anchor-approved")}
+
+
+def references_for(e, sels, root=ROOT):
+    """Up to max_refs reference images for this entry's register: repo paths always (they must exist),
+    anchor IDs once approved. Never the entry itself."""
+    cfg = g.CFG["gpt_reference_sets"]
+    out = []
+    for cand in cfg["sets"][cfg["register_of_family"][e["family"]]]:
+        if cand.lower().endswith(IMAGE_SUFFIXES):
+            if not (root / cand).is_file():
+                raise SystemExit(f"reference image missing: {cand}")
+            out.append(cand)
+        elif cand != e["id"]:
+            s = sels.get(cand, {})
+            if s.get("route") == "gpt" and s.get("status") in ("approved", "anchor-approved"):
+                out.append(s["master"]["path"])
+        if len(out) >= cfg["max_refs"]:
+            break
+    return out
+
+
+def item_for(e, prompt, sels, root=ROOT):
+    fam = g.CFG["families"][e["family"]]
+    b = e.get("brief") or {}
+    att = g.CFG["gpt_max_attempts"]
+    size_code = (e.get("facts") or {}).get("size_code") or ""
+    return {"id": e["id"], "family": e["family"], "register": g.CFG["gpt_reference_sets"]["register_of_family"][e["family"]],
+            "title": e["title"], "prompt": f"production/art/gpt/prompts/{e['id']}.txt",
+            "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(), "size": SIZES.get(fam["aspect"], "1536x1024"),
+            "print_w_in": fam["print_w_in"], "references": references_for(e, sels, root),
+            "max_attempts": att.get(e["family"], att["default"]),
+            "size_class": g.CFG["size_words"].get(size_code, "") if e["family"] in ("monster", "boss") else "",
+            "must": list(b.get("must", [])), "avoid": [x.rstrip(".") + "." for x in b.get("avoid", [])],
+            "save_as": f"assets/art/incoming/{e['id']}.png"}
+
+
+def build_queue(phase, ents, sels, anchors, root=ROOT):
+    """Returns (queue dict, {id: prompt text}) without touching disk."""
+    done = received(sels)
+    if phase == "anchors":
+        ids = [i for i in g.CFG["gpt_anchor_ids"] if i not in done]
+    else:
+        if not (anchors.get("route") == "gpt" and anchors.get("status") == "approved"):
+            raise SystemExit("GPT anchors are not approved yet")
+        ids = sorted((i for i in ents if i not in done), key=lambda i: (ORDER.index(ents[i]["family"]), i))
+    prompts, items = {}, []
+    for i in ids:
+        prompts[i] = g.prompt_for(ents[i], True)
+        items.append(item_for(ents[i], prompts[i], sels, root))
+    union = []
+    for it in items:
+        for r in it["references"]:
+            if r not in union:
+                union.append(r)
+    return {"schema": SCHEMA, "phase": phase, "generated_at": g.now(), "max_references": g.CFG["gpt_reference_sets"]["max_refs"],
+            "references": union, "count": len(items), "items": items}, prompts
+
+
+def queue_markdown(q):
+    sets = []
+    for it in q["items"]:
+        if tuple(it["references"]) not in sets:
+            sets.append(tuple(it["references"]))
+    letter = lambda t: chr(65 + sets.index(t))  # noqa: E731
+    md = [f"# ChatGPT Work queue: {q['phase']} ({q['count']} images)", "",
+          "Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (its set below), never the whole list.", "",
+          "| Set | Reference images |", "|---|---|"]
+    md += [f"| {letter(t)} | " + "<br>".join(f"`{r}`" for r in t) + " |" for t in sets]
+    md += ["", "| # | ID | Subject | Size | Set | Tries | Prompt |", "|---|---|---|---|---|---|---|"]
+    md += [f"| {n} | `{x['id']}` | {x['title']} | {x['size']} | {letter(tuple(x['references']))} | {x['max_attempts']} | `{x['prompt']}` |"
+           for n, x in enumerate(q["items"], 1)]
+    return "\n".join(md) + "\n"
 
 
 def main():
@@ -28,38 +106,16 @@ def main():
     anchors = g.load(g.ANCHORS, {})
     gpt_anchor_ok = anchors.get("route") == "gpt" and anchors.get("status") == "approved"
     phase = a.phase or ("batch" if gpt_anchor_ok else "anchors")
-    done = received()
     ents = {e["id"]: e for e in g.entries()}
-    if phase == "anchors":
-        ids = [i for i in g.CFG["gpt_anchor_ids"] if i not in done]
-        refs = g.CFG["style_refs"]
-    else:
-        if not gpt_anchor_ok:
-            raise SystemExit("GPT anchors are not approved yet")
-        ids = sorted((i for i in ents if i not in done),
-                     key=lambda i: (ORDER.index(ents[i]["family"]), i))
-        refs = anchors["references"] + g.CFG["style_refs"]
+    q, prompts = build_queue(phase, ents, g.load(g.SELECTIONS, {}), anchors)
     (GPT / "prompts").mkdir(parents=True, exist_ok=True)
     for old in (GPT / "prompts").glob("*.txt"):
         old.unlink()
-    items = []
-    for i in ids:
-        e = ents[i]
-        p = g.prompt_for(e, True)
-        f = GPT / "prompts" / f"{i}.txt"
-        f.write_text(p + "\n")
-        aspect = g.CFG["families"][e["family"]]["aspect"]
-        items.append({"id": i, "family": e["family"], "title": e["title"], "prompt": str(f.relative_to(ROOT)),
-                      "prompt_sha256": hashlib.sha256(p.encode()).hexdigest(), "size": SIZES.get(aspect, "1536x1024"),
-                      "save_as": f"assets/art/incoming/{i}.png"})
-    q = {"phase": phase, "generated_at": g.now(), "references": refs, "count": len(items), "items": items}
+    for i, p in prompts.items():
+        (GPT / "prompts" / f"{i}.txt").write_text(p + "\n")
     g.save(GPT / "QUEUE.json", q)
-    md = [f"# ChatGPT Work queue: {phase} ({len(items)} images)", "",
-          "Follow `production/art/gpt/INSTRUCTIONS.md`. Attach these reference images to every generation:", ""]
-    md += [f"- `{r}`" for r in refs] + ["", "| # | ID | Subject | Size | Prompt |", "|---|---|---|---|---|"]
-    md += [f"| {n} | `{x['id']}` | {x['title']} | {x['size']} | `{x['prompt']}` |" for n, x in enumerate(items, 1)]
-    (GPT / "QUEUE.md").write_text("\n".join(md) + "\n")
-    print(json.dumps({"phase": phase, "count": len(items)}))
+    (GPT / "QUEUE.md").write_text(queue_markdown(q))
+    print(json.dumps({"phase": phase, "count": q["count"]}))
 
 
 if __name__ == "__main__":

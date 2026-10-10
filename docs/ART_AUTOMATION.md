@@ -49,11 +49,13 @@ Manuscript issues found while briefing are recorded in `production/art/SOURCE_NO
 ## Production loop
 
 1. **`python3 tools/art_gpt_pack.py`**
-   - Writes `production/art/gpt/QUEUE.json`, `QUEUE.md` and one prompt file per pending entry in `production/art/gpt/prompts/`.
-   - The anchors phase comes first and uses the owner's style samples as references. The batch phase uses the approved GPT anchors as references.
-2. **ChatGPT Work** follows `production/art/gpt/INSTRUCTIONS.md`.
-   - It pastes each prompt, attaches the references, keeps the best of up to three variants, and saves the image unmodified as `assets/art/incoming/<ID>.png`.
-   - It appends a receipt to `production/art/gpt/RECEIPTS.jsonl` and commits in batches.
+   - Writes `production/art/gpt/QUEUE.json` (schema 2), `QUEUE.md` and one prompt file per pending entry in `production/art/gpt/prompts/`.
+   - Each queue item carries its register, its own references (at most three, from `gpt_reference_sets` in `config/art_style.json`), its printed width, its attempt budget (`gpt_max_attempts`: 3, and 5 for the cover and chapters) and the brief's must and avoid lists.
+   - Registers keep scenery out of figures: `scene` (cover, chapter, world, climate, bastion, scenario, campaign, boss, tradition) gets Greythorn, the approved Greenmark anchor and an owner scene sample; `creature` (monster) and `person` (class, ancestry) get the owner's figure sample and their approved anchors; `still` (background, item) gets the figure sample.
+   - The anchors phase comes first and uses the owner's samples. Once anchors are approved, the batch phase adds them by register.
+2. **ChatGPT Work** follows `production/art/gpt/INSTRUCTIONS.md` and the `heraldry-classic-ink-art` skill (below).
+   - It pastes each prompt verbatim, attaches that item's references only, stops at the first attempt that passes the checks (never beyond the item's budget), and saves the image unmodified as `assets/art/incoming/<ID>.png`.
+   - It appends a receipt to `production/art/gpt/RECEIPTS.jsonl` and commits in batches. `heraldry_art.py save` does the check, copy and receipt in one step.
 3. **The `Intake ChatGPT artwork` workflow** (on push to `assets/art/incoming/**`) runs `tools/art_intake.py scan`.
    - It writes a transparent pure-black ink derivative to `assets/art/ink/<ID>.png` (Git LFS).
    - It records the image as `received` in `production/art/SELECTIONS.json`, with hashes, pixels, flags and the receipt.
@@ -77,3 +79,14 @@ Only `approved` and `anchor-approved` art is placed in the book.
 - The orchestrator reviews placed pages and updates the hash-bound visual ledger before release.
 - Generated images are recorded as AI-generated (ChatGPT Work), never as hand-drawn.
 - Rules and deployment diagrams remain source-faithful vector figures and are not generated.
+
+## The ChatGPT Work skill (v4)
+
+`production/art/skill/heraldry-classic-ink-art/` is the source of the skill ChatGPT Work runs, and `production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip` is the installable build. It replaces the owner's v3.1 draft, which planned one scene per conversation, used one style reference for every family, sized images from a preset table that disagreed with the layout slots, and had no queue, receipts or gates. The skill's README lists each change and why.
+
+- `SKILL.md` is the procedure: session start, phases, the per-item loop, ten hard fails, batches and commits, stop conditions.
+- `scripts/heraldry_art.py` has `doctor`, `status`, `next`, `show`, `check`, `save`, `refuse`, `sheet` and `bundle`. `check` reports mechanical tripwires calibrated on the approved Greythorn render, the three owner samples and synthetic defects. Its colour, mid-tone and border measures use the same formulas as `tools/art_ink.py`, and a test keeps them in step.
+- `tools/art_skill_build.py` writes `references/FAMILIES.md` from `config/art_style.json` and builds the zip deterministically, with byte-identical copies of the repo's reference images and a hash manifest. `scripts/validate_skill.py --repo .` checks the package and its agreement with the repo.
+- `tests/test_art_skill.py` fails if the zip is older than its sources or the reference images, if `FAMILIES.md` disagrees with the config, or if the queue schema changes under the helper. After any change to the skill sources, the reference sets or the reference images, run `python3 tools/art_skill_build.py` and commit the zip.
+
+Claude Code still owns the prompts, queue, references, review and approval. The skill only runs the queue and checks what it delivers.
