@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Reproduce bounded RC486 editorial checks; never mutate source or claim semantic PASS.
 
-Run python tools/parse_source.py first. Findings are expected on RC486; exit 0
+Historical findings are expected on RC486; exit 0
 means evidence reproduced, not that the manuscript is free of contradictions.
 """
 import argparse
@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'tools'))
 from manuscript import check
-from parse_source import plain
+from parse_source import plain, parse
 
 def run(root=ROOT):
     audit=json.loads((root/'production/qa/manuscript-contradiction-audit.json').read_text())
@@ -24,8 +24,7 @@ def run(root=ROOT):
     txt=raw.decode('utf-8'); lines=txt.splitlines()
     assert hashlib.sha256(raw).hexdigest()==audit['source']['sha256']==proposal['source_sha256']
     assert len(raw)==audit['source']['bytes'] and len(lines)==audit['source']['lines']
-    current=check(root)
-    assert current['number']==486 and current['sha256']==audit['source']['sha256']
+    check(root)  # Validate active history; reproduce this audit from its pinned snapshot.
     registry=json.loads((root/'source/versions.json').read_text())
     history=[]
     prior=None
@@ -47,11 +46,12 @@ def run(root=ROOT):
     table_blocks=[]
     def walk(bs):
         for b in bs:
-            if b['type']=='table': table_blocks.append(b)
+            if b['type']=='table':
+                b['id']=f'T{len(table_blocks)+1:03d}'
+                table_blocks.append(b)
             walk(b.get('blocks',[]))
             for i in b.get('items',[]):walk(i['blocks'])
-    model=json.loads((root/'build/blocks.json').read_text())
-    for c in model['chapters']:walk(c['blocks'])
+    walk(parse(txt))
     tables=[dict(id=b['id'],header=[plain(c) for c in b['header']],rows=[[plain(c) for c in r] for r in b['rows']]) for b in table_blocks]
     base={}
     for t in tables:
@@ -122,8 +122,8 @@ def run(root=ROOT):
     assert len(exact)==audit['counts']['exact_proposed_patches']
     ragged=[t['id'] for t in tables if any(len(r)!=len(t['header']) for r in t['rows'])]
     return {'schema':1,'source_sha256':audit['source']['sha256'],
-      'verification_status':'PASS','semantic_clearance':'OPEN_FINDINGS',
-      'meaning':'PASS verifies bounded calculations, evidence anchors, proposed matches and immutable history; it does not clear the manuscript.',
+      'verification_status':'PASS','semantic_clearance':'HISTORICAL_RC486_FINDINGS',
+      'meaning':'Historical RC486 evidence only. Price differences were intentional per owner; see the RC487 resolution ledger for current dispositions.',
       'history':history,'tables':{'count':len(tables),'cells':sum(len(t['header'])+sum(len(r) for r in t['rows']) for t in tables),'ragged':ragged},
       'enhanced_values':{'checked':checked,'unmapped':unmapped,'differences':differences},
       'direct_die_range_tables':{'checked':len(die_tables),'issues':range_issues,'scope':'Only direct dN-labelled tables whose first column is wholly numeric ranges; excludes narrative and multi-table outcome semantics.'},

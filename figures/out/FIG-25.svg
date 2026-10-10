@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="243pt" height="274.2pt" viewBox="0 0 243 274.2">
+<svg xmlns="http://www.w3.org/2000/svg" width="243pt" height="263.8pt" viewBox="0 0 243 263.8">
 <title>Greenmark Scenario 5: The Ambushed Emissary, deployment map</title>
 <desc>Column-width top-down map of the setup for Greenmark 5: battlefield, both deployment zones with depth, objectives and markers, required terrain, Monster placement and any entry or exit edges, using only values the scenario states and the shared symbols of FIG-20.</desc>
 <defs>
@@ -123,8 +123,8 @@
 <g data-glyph="mon">
 <polygon points="71.27,113 68.78,117.3 63.82,117.3 61.33,113 63.82,108.7 68.78,108.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
 </g>
-<g data-glyph="mon" data-state="illus">
-<polygon points="162.47,116 159.98,120.3 155.02,120.3 152.53,116 155.02,111.7 159.98,111.7" fill="url(#p-mon-l)" stroke="#777" stroke-width="1" stroke-linejoin="round"/>
+<g data-glyph="mon">
+<polygon points="162.47,116 159.98,120.3 155.02,120.3 152.53,116 155.02,111.7 159.98,111.7" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
 </g>
 <g data-glyph="arr-exit">
 <line x1="121.5" y1="29" x2="121.5" y2="21" stroke="#000" stroke-width="1.8" stroke-linecap="butt"/>
@@ -190,5 +190,4 @@
 <text x="233.5" y="239" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">S</text>
 <text x="6" y="241" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Schematic. Grey dashed = position not fixed by the rules.</text>
 <text x="6" y="251.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Roll-off winner chooses the Camp quadrant.</text>
-<text x="6" y="261.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">G3: the 6" ring conflicts with the Camp size.</text>
 </svg>

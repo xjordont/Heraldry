@@ -136,5 +136,7 @@
       "replace": "| d20 | Item | Value (c) |\n| ---: | --- | ---: |\n| 1 | Enchanted +4 Flamberge | 78 |\n| 2 | Enchanted +4 Zweihander | 84 |\n| 3 | Enchanted +4 Greathammer | 66 |\n| 4 | Enchanted +4 Greatscythe | 76 |\n| 5 | Enchanted +4 Repeating Crossbow | 58 |\n| 6 | Enchanted +4 Greatbow | 62 |\n| 7 | Enchanted +5 Battleaxe | 68 |\n| 8 | Enchanted +5 Longbow | 67 |\n| 9 | Enchanted +5 Greathammer | 80 |\n| 10 | Enchanted +5 Flamberge | 92 |\n| 11 | Enchanted +5 Greatbow | 76 |\n| 12 | Enchanted +5 Zweihander | 98 |\n| 13 | Enchanted +5 Greatscythe | 90 |\n| 14 | Enchanted +5 Repeating Crossbow | 72 |\n| 15 | Adamantine Battleaxe | 72 |\n| 16 | Adamantine War Maul | 96 |\n| 17 | Adamantine Poleaxe | 96 |\n| 18 | Adamantine Greathammer | 120 |\n| 19 | Adamantine Greatbow | 104 |\n| 20 | Adamantine Repeating Crossbow | 88 |",
       "expected_count": 1
     }
-  ]
+  ],
+  "superseded_by": "editorial/history/RC487.json",
+  "disposition": "Historical candidates retained verbatim. CA-01–CA-09 were incorporated/refined in the owner-authorized batch; CA-10–CA-13 are withdrawn because printed prices are intentional. Do not promote this historical batch."
 }

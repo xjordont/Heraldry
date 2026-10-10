@@ -29,10 +29,11 @@ def load_spot_art():
     by_block, by_id = {}, {}
     for aid, s in json.loads(ART_SEL.read_text()).items():
         f = ROOT / s["ink"]["path"]
-        if aid not in cat or s.get("status") == "rejected" or not f.exists() or s["spec_sha256"] != cat[aid]["spec_sha256"]:
+        if aid not in cat or s.get("status") not in {"anchor-approved", "auto-selected", "approved"} or not f.exists() or s["spec_sha256"] != cat[aid]["spec_sha256"]:
             continue
         from PIL import Image
-        wpx = Image.open(f).size[0]
+        with Image.open(f) as image:
+            wpx = image.size[0]
         w = min(fams[s["family"]]["print_w_in"], wpx / 300)
         rec = ("../" + s["ink"]["path"], w)
         by_id[aid] = rec

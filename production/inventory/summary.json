@@ -1,8 +1,8 @@
 {
- "sha256": "5da05cec6153ac11865874a0da416c002ce90b2dc4936fc9ce50abca9d3dbbe5",
- "bytes": 1451198,
- "lines": 17970,
- "words_whitespace": 241509,
+ "sha256": "d77a72f9030061f76ea61e947bf520dcc81628bd653f61ba144f2a474a088254",
+ "bytes": 1453448,
+ "lines": 17974,
+ "words_whitespace": 241838,
  "headings_by_level": {
   "1": 1,
   "2": 15,
@@ -16,14 +16,14 @@
  "tables_ragged_rows": [],
  "constructs": {
   "heading": 833,
-  "inline_text": 55729,
-  "para": 7743,
-  "inline_strong": 22800,
+  "inline_text": 55761,
+  "para": 7746,
+  "inline_strong": 22829,
   "hr": 42,
-  "list": 1518,
-  "list_item": 4185,
+  "list": 1519,
+  "list_item": 4188,
   "inline_link": 149,
-  "inline_em": 449,
+  "inline_em": 447,
   "table": 332,
   "inline_soft": 672,
   "quote": 1,
@@ -103,7 +103,7 @@
   {
    "id": "h-appendix-b-basic-mode",
    "title": "Appendix B. Basic Mode",
-   "blocks": 242
+   "blocks": 243
   },
   {
    "id": "h-appendix-c-rules-reference",

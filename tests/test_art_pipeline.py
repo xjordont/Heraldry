@@ -25,6 +25,27 @@ class ArtPipeline(unittest.TestCase):
         self.assertIn('"' + e["flavour"] + '"', p)
         self.assertIn(g.CFG["exclusions"], p)
 
+    def test_publication_uses_only_approved_art_selections(self):
+        from unittest.mock import patch
+        import build_book as book
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            (root / "production/art").mkdir(parents=True)
+            Image.new("LA", (600, 400)).save(root / "ink.png")
+            entries = [{"id": "a", "spec_sha256": "same", "flavour_block": "flavour"}]
+            (root / "production/art/SPOT_CATALOG.json").write_text(json.dumps({"entries": entries}))
+            style, selections = root / "style.json", root / "selections.json"
+            style.write_text(json.dumps({"families": {"monster": {"print_w_in": 2}}}))
+            for status in ("anchor-proposed", "low-score-needs-review", "rejected", "anchor-approved", "auto-selected"):
+                with self.subTest(status=status):
+                    selections.write_text(json.dumps({"a": {"family": "monster", "status": status,
+                        "spec_sha256": "same", "ink": {"path": "ink.png"}}}))
+                    with patch.multiple(book, ROOT=root, ART_SEL=selections, ART_STYLE=style):
+                        by_block, by_id = book.load_spot_art()
+                    approved = status in {"anchor-approved", "auto-selected"}
+                    self.assertEqual(bool(by_id), approved)
+                    self.assertEqual(bool(by_block), approved)
+
     def test_ink_prep_makes_transparent_black(self):
         from art_ink import prep
         with tempfile.TemporaryDirectory() as d:

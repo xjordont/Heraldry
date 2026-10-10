@@ -672,7 +672,7 @@
       "10.1 Preparation Steps, step 11 (11072)"
     ],
     "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 2 mandatory, 9 constrained and 4 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
-    "caption": "The Bandit's Toll: parties deploy within 6\" of the opposite short edges where a Trail 3–4\" wide runs, with at least two Heroes each on the Trail; the Barricade and Wagon 2 stand at the midpoint; key: FIG-20 (see 10.4, Greenmark Scenario 3).",
+    "caption": "The Bandit's Toll: parties deploy within 6\" of the opposite short edges where a Trail 3–4\" wide runs, with at least two Heroes, or the only Hero, of each party on the Trail; the Barricade and Wagon 2 stand at the midpoint; key: FIG-20 (see 10.4, Greenmark Scenario 3).",
     "insert_after": "B12170",
     "scope": "column",
     "schematic": true,
@@ -698,20 +698,20 @@
       "10.1 Preparation Steps (11060-11073)"
     ],
     "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 12 constrained and 7 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
-    "caption": "The Spider's Silk Route: parties deploy within 6\" of opposite short edges on higher ground, either side of a Ravine 6–8\" wide that cuts across the midpoint with a Silk Bundle in each of three Webbed Sections; key: FIG-20 (see 10.4, Greenmark Scenario 4).",
+    "caption": "The Spider's Silk Route: parties deploy within 6\" of opposite short edges on higher ground, either side of a Ravine 6–8\" wide that cuts across the midpoint with the first Silk Bundle in the central Webbed Section and two others at least 4\" away; key: FIG-20 (see 10.4, Greenmark Scenario 4).",
     "insert_after": "B12238",
     "scope": "column",
     "schematic": true,
     "file": "figures/out/FIG-24.svg",
     "size_pt": {
       "width": 243,
-      "height": 253.4
+      "height": 263.8
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12189-12259; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "a23164922f64e64aac69ad7624fb31d41c891321a94f0c482a425e1f827768ee",
+    "svg_sha256": "b1309e66fbae6893e5504e9b096b0f2cf96649abb81a767d7e73607cb29c2999",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -723,7 +723,7 @@
       "10.4 Greenmark Scenario 5: The Ambushed Emissary (source lines 12260-12337)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 11 constrained and 4 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 12 constrained and 3 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Ambushed Emissary: parties deploy in opposite 8\"×8\" corners; the Bandit Camp lies in one quadrant at least 8\" from every edge, with four Clue markers at least 6\" from each other and the Camp; key: FIG-20 (see 10.4, Greenmark Scenario 5).",
     "insert_after": "B12314",
     "scope": "column",
@@ -731,15 +731,15 @@
     "file": "figures/out/FIG-25.svg",
     "size_pt": {
       "width": 243,
-      "height": 274.2
+      "height": 263.8
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12260-12337; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "3162a747a3d0a3d434565093d58a0c4af763206d2523759e7e8d8dbb532d87a4",
+    "svg_sha256": "b4244a8f6cc1b6b70d366c6885cbd58d4b859e16bbdf81d4e528b412d91c4d62",
     "iconography": "shared-v2",
-    "ambiguity": "Group 3 (12312): 'at the perimeter of the Bandit Camp, 6\" from its centre' conflicts with a Camp 'about 4\"×4\"' (12280), whose perimeter lies about 2\" from its centre. The map draws the literal 6\" ring from the centre with Group 3 as an illustrative (grey dashed) marker and does not choose between the two readings."
+    "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
   {
     "id": "FIG-26",
@@ -1009,7 +1009,7 @@
       "10.4 Undermarches Scenario 4: The Undermarches Outpost Raid (source lines 13080-13186)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 10 constrained and 9 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 10 constrained and 12 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Undermarches Outpost Raid: parties deploy in opposite 8\"×8\" corners around an outpost with a central 3\"×3\" Command Tent holding the Battle Plans and 2–3 Guard Towers; key: FIG-20 (see 10.4, Undermarches Scenario 4).",
     "insert_after": "B13166",
     "scope": "column",
@@ -1017,13 +1017,13 @@
     "file": "figures/out/FIG-36.svg",
     "size_pt": {
       "width": 243,
-      "height": 253.4
+      "height": 263.8
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 13080-13186; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "542956e4bcafdff489231a0442393ae2844f7a8995b302e0c2f5f5d4de29c5dc",
+    "svg_sha256": "c6a3a8e84c861e2ee58e22f4573788b5a6aefb5f969787ca079e43c825dee9d1",
     "iconography": "shared-v2",
     "ambiguity": "Group 2 (13164): 'Place using normal alternating scenario placement' does not say who places the group or what limits apply; 10.1 step 7 and step 9 give an alternating rule only for terrain and weather markers. Group 2 is drawn as an unfixed (open) marker."
   },
@@ -1381,13 +1381,13 @@
     "file": "figures/out/FIG-50.svg",
     "size_pt": {
       "width": 243,
-      "height": 253.4
+      "height": 263.8
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 14108-14194; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "a12c52e20aaab7213f7d7fd54106672fef29d6e3afa34e1bbdfcc50e267a0152",
+    "svg_sha256": "471b49328b6a953dfe67713a650fd067a9a64c5eaa5c1e930d321b8888a0a519",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1399,7 +1399,7 @@
       "10.4 The Mire Scenario 1: The Reliquary of Edrava Salttide (source lines 14197-14267)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 4 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 4 constrained and 11 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Reliquary of Edrava Salttide: parties deploy within 6\" of opposite short edges on the driest banks around a central Sunken Barrow whose flooded sanctum holds the Reliquary; key: FIG-20 (see 10.4, The Mire Scenario 1).",
     "insert_after": "B14254",
     "scope": "column",
@@ -1407,13 +1407,13 @@
     "file": "figures/out/FIG-51.svg",
     "size_pt": {
       "width": 243,
-      "height": 253.4
+      "height": 263.8
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 14197-14267; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "8844d12d65b43fc0ba910cfbeae7d3d12cef0ec4ec829a099f094797e817ace9",
+    "svg_sha256": "ed537f31ac90ce29b6c4bec1d759f5e1264a3f6d2cf600592c31914f054681bf",
     "iconography": "shared-v2",
     "ambiguity": "Group 2 (14252): 'patrolling murky water' - the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258), while Group 2 patrols water outside the Barrow's sanctum; whether outer Shallow Water counts as murky is not stated. Group 2 is drawn as an illustrative marker in an outer Shallow patch."
   },
