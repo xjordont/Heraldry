@@ -2,14 +2,14 @@
 """Runner helpers for the Heraldry illustration queue (skill v4). Python 3.9+, Pillow only.
 
   doctor                         environment, repo, queue and reference checks (run first)
-  status                         queue state and the single next action
+  status [--end]                 queue state and the single next action (--end: session end, push anything unsent)
   next [--n 8]                   the next items to generate
   show ID                        one item: references, size, must / do-not-draw lists, verbatim prompt
-  check ID IMAGE                 mechanical tripwires for one generated image (not a quality score)
-  save ID IMAGE [--attempts N]   check, copy the image unmodified into assets/art/incoming, write the receipt
+  check ID IMAGE                 mechanical tripwires for one generated image; counts it as an attempt
+  save ID IMAGE --must ... --avoid-clear   check, copy the image unmodified into assets/art/incoming, write the receipt
   refuse ID --reason TEXT        record that the image tool refused an item (no image exists to save)
   sheet [ID ...]                 labelled contact sheet of saved images (default: all saved this session)
-  bundle --out FILE.zip          hand-off zip for when git push is impossible
+  bundle [--out FILE.zip]        hand-off zip for when git push is impossible (default: the scratch folder)
 
 The repository is found by walking up from the current directory (or --repo). The queue,
 prompts and receipts format belong to the repo (production/art/gpt/); this script only reads them.
@@ -31,6 +31,7 @@ INCOMING_REL = "assets/art/incoming"
 IMAGE_EXT = {"PNG": ".png", "JPEG": ".jpg", "WEBP": ".webp"}
 SIZES = {"1536x1024", "1024x1536", "1024x1024"}
 LFS_MAGIC = b"version https://git-lfs"
+BATCH_PUSH_AT = 5            # status asks for a push once this many saved images are unsent
 
 # Mechanical tripwires. "scene" = vignette register; "figure" = isolated creature, person or still life.
 T = {
@@ -320,8 +321,57 @@ def preview(path, item, outdir):
     return out
 
 
-def scratch_dir():
-    return Path(tempfile.gettempdir()) / "heraldry_art"
+def helper():
+    """A runnable command prefix for messages, relative to the current directory."""
+    try:
+        rel = os.path.relpath(__file__)
+    except ValueError:
+        rel = __file__
+    return f"python {rel}"
+
+
+def scratch_dir(repo):
+    """Per-repository scratch folder in the system temp directory (previews, sheets, bundles, attempt counts).
+    Set HERALDRY_SCRATCH to use another base folder, for example to start an item's attempt count afresh."""
+    base = Path(os.environ.get("HERALDRY_SCRATCH") or tempfile.gettempdir()) / "heraldry_art"
+    return base / hashlib.sha1(str(Path(repo).resolve()).encode()).hexdigest()[:8]
+
+
+def attempts_of(repo, iid):
+    return jload(scratch_dir(repo) / "attempts.json", {}).get(iid, [])
+
+
+def record_attempt(repo, iid, digest):
+    """Count one distinct generated image for this item; returns how many distinct images have been checked."""
+    f = scratch_dir(repo) / "attempts.json"
+    data = jload(f, {})
+    seen = data.setdefault(iid, [])
+    if digest not in seen:
+        seen.append(digest)
+    f.parent.mkdir(parents=True, exist_ok=True)
+    f.write_text(json.dumps(data))
+    return len(seen)
+
+
+def clear_attempts(repo, iid):
+    f = scratch_dir(repo) / "attempts.json"
+    data = jload(f, {})
+    if data.pop(iid, None) is not None:
+        f.write_text(json.dumps(data))
+
+
+def duplicate_of(repo, item, image, digest):
+    """Path of another delivered image or one of the item's references with exactly these bytes, if any."""
+    size = Path(image).stat().st_size
+    pool = [f for f in (repo / INCOMING_REL).glob("*") if f.is_file() and f.stem != item["id"]] if (repo / INCOMING_REL).is_dir() else []
+    pool += [repo / r for r in item["references"]]
+    for f in pool:
+        try:
+            if f.stat().st_size == size and file_sha(f) == digest:
+                return f.relative_to(repo).as_posix()
+        except OSError:
+            continue
+    return None
 
 
 # ------------------------------------------------------------------ commands
@@ -345,6 +395,7 @@ def cmd_doctor(a, repo):
         if rc == 0 and out.strip():
             notes.append("tracked files have uncommitted changes (fine if they are yours from this session)")
     bad_prompts = 0
+    pointers = []
     for it in q["items"]:
         try:
             if prompt_sha(prompt_text(repo, it)) != it["prompt_sha256"]:
@@ -355,12 +406,16 @@ def cmd_doctor(a, repo):
             f = repo / r
             if not f.is_file():
                 blockers.append(f"reference missing for {it['id']}: {r}")
-            elif f.read_bytes()[:len(LFS_MAGIC)] == LFS_MAGIC:
-                blockers.append(f"reference is an LFS pointer, not an image: {r} (git lfs pull --include={r})")
+            elif f.read_bytes()[:len(LFS_MAGIC)] == LFS_MAGIC and r not in pointers:
+                pointers.append(r)
+    if pointers:
+        blockers.append(f"{len(pointers)} reference image(s) are LFS pointers, not images. Fetch only these, then run doctor again: "
+                        f"git lfs pull --include=\"{','.join(pointers)}\"")
     if bad_prompts:
         blockers.append(f"{bad_prompts} prompt files are missing or no longer match the queue hashes: git pull --rebase origin main")
     blockers = list(dict.fromkeys(blockers))
     print(f"queue phase={q['phase']} items={q['count']} schema={q.get('schema')}")
+    print(f"scratch folder (previews, sheets, attempt counts; keep downloaded images here too): {scratch_dir(repo)}")
     for n in notes:
         print("note:", n)
     if blockers:
@@ -370,7 +425,7 @@ def cmd_doctor(a, repo):
         return 1
     if delivery:
         print("READY TO GENERATE. Delivery by git is blocked: " + "; ".join(delivery)
-              + ". Keep generating and saving, then finish each batch with `bundle --out batch.zip` and hand the zip to the owner.")
+              + f". Keep generating and saving, then finish each batch with `{helper()} bundle` and hand the zip to the owner.")
         return 0
     print("READY")
     return 0
@@ -381,22 +436,27 @@ def cmd_status(a, repo):
     st = states(repo, q)
     count = lambda s: sum(1 for v in st.values() if v == s)  # noqa: E731
     refused = [i for i, v in st.items() if v == "refused"]
+    saved = [it["id"] for it in q["items"] if st[it["id"]] == "saved"]
     print(f"phase={q['phase']} items={q['count']} generated_at={q['generated_at']}")
-    print(f"pending={count('pending')} redo={count('redo')} saved-not-pushed={count('saved')} pushed={count('pushed')} refused={len(refused)}")
+    print(f"pending={count('pending')} redo={count('redo')} saved-not-pushed={len(saved)} pushed={count('pushed')} refused={len(refused)}")
     if refused:
         print("refused by the image tool (Claude Code owns the prompt): " + ", ".join(refused))
     todo = [i for i, v in st.items() if v in ("redo", "pending")]
-    unpushed = count("saved") or receipts_unpushed(repo)
-    if count("saved") and not git_ok(repo):
-        action = "BUNDLE the saved images (python scripts/heraldry_art.py bundle --out batch.zip) and hand the zip to the owner: git is not available here."
-    elif unpushed:
-        action = ("COMMIT AND PUSH the saved images and RECEIPTS.jsonl "
-                  "(git add assets/art/incoming production/art/gpt/RECEIPTS.jsonl; commit; git pull --rebase origin main; git push origin main).")
+    unsent = bool(saved) or receipts_unpushed(repo)
+    due = len(saved) >= BATCH_PUSH_AT or (unsent and (not todo or a.end))
+    if due and not git_ok(repo):
+        action = (f"BUNDLE the saved images (`{helper()} bundle`) and hand the zip to the owner: git is not available here.")
+    elif due:
+        span = f"{saved[0]} .. {saved[-1]}" if saved else "receipts"
+        action = ("COMMIT AND PUSH. git add assets/art/incoming production/art/gpt/RECEIPTS.jsonl ; "
+                  "git lfs ls-files (every new PNG must be listed; stop if not) ; "
+                  f"git commit -m \"art(gpt): {span}\" ; git pull --rebase origin main ; git push origin main")
     elif todo:
-        action = f"GENERATE next: {', '.join(todo[:3])}{' ...' if len(todo) > 3 else ''}  (python scripts/heraldry_art.py next)"
+        note = (f" ({len(saved)} saved and not sent yet: send at {BATCH_PUSH_AT}, or run `status --end` at session end)" if unsent else "")
+        action = f"GENERATE next: {', '.join(todo[:3])}{' ...' if len(todo) > 3 else ''}  (`{helper()} next`){note}"
     elif q["phase"] == "anchors":
         action = ("STOP. The anchors are done"
-                  + (f" ({len(refused)} refused: {', '.join(refused)})" if refused else "")
+                  + (f" ({len(refused)} refused: {', '.join(refused)}; Claude Code decides what a refused anchor means for the batch)" if refused else "")
                   + ". Tell the owner: ask Claude Code to review the anchors and publish the batch queue. Do not start the batch.")
     else:
         action = ("NOTHING LEFT to generate in this queue"
@@ -424,8 +484,9 @@ def cmd_show(a, repo):
     text = prompt_text(repo, it)
     if prompt_sha(text) != it["prompt_sha256"]:
         raise Fatal(f"{it['prompt']} does not match the queue hash: git pull --rebase origin main, then retry")
+    used = len(attempts_of(repo, it["id"]))
     print(f"ID: {it['id']}\nTITLE: {it['title']}\nFAMILY/REGISTER: {it['family']}/{it['register']}")
-    print(f"SIZE: {it['size']}   PRINTED WIDTH: {it['print_w_in']} in   ATTEMPTS: at most {it['max_attempts']}")
+    print(f"SIZE: {it['size']}   PRINTED WIDTH: {it['print_w_in']} in   ATTEMPTS: at most {it['max_attempts']} (used so far: {used})")
     print("ATTACH THESE REFERENCES (and no others):")
     for r in it["references"]:
         print("  ", r)
@@ -453,20 +514,30 @@ def run_check(repo, q, iid, image):
     except Exception as e:                                     # undecodable or truncated image
         raise Fatal(f"{image}: not a readable image ({e})")
     fails, warns, infos = evaluate(m, it)
-    pv = preview(image, it, scratch_dir())
-    return it, m, fails, warns, infos, pv
+    digest = file_sha(image)
+    n = record_attempt(repo, it["id"], digest)
+    if n > it["max_attempts"]:
+        fails.append(f"attempt budget used up ({n} images checked, budget {it['max_attempts']}): do not generate again; "
+                     "save the best earlier attempt with --accept-flags")
+    dup = duplicate_of(repo, it, image, digest)
+    if dup:
+        fails.append(f"byte-identical to {dup}: not a new generation of this item")
+    if last_receipts(repo).get(it["id"], {}).get("refused"):
+        infos.append("this ID is recorded as refused; a successful save replaces the refusal")
+    return it, m, fails, warns, infos, preview(image, it, scratch_dir(repo)), n
 
 
 def cmd_check(a, repo):
     q = load_queue(repo)
-    it, m, fails, warns, infos, pv = run_check(repo, q, a.id, a.image)
+    it, m, fails, warns, infos, pv, n = run_check(repo, q, a.id, a.image)
     verdict = "FAIL" if fails else "WARN" if warns else "PASS"
     if a.json:
-        print(json.dumps({"id": it["id"], "result": verdict, "fails": fails, "warns": warns, "infos": infos,
+        print(json.dumps({"id": it["id"], "result": verdict, "attempt": n, "max_attempts": it["max_attempts"], "fails": fails, "warns": warns,
+                          "infos": infos, "must": it["must"], "avoid": it["avoid"],
                           "metrics": {k: (round(v, 4) if isinstance(v, float) else v) for k, v in m.items()},
                           "print_size_preview": str(pv)}, indent=1))
     else:
-        print(f"{it['id']}: {m['px'][0]}x{m['px'][1]} {m['format']} (queue size {it['size']})")
+        print(f"{it['id']}: {m['px'][0]}x{m['px'][1]} {m['format']} (queue size {it['size']})   attempt {n} of {it['max_attempts']}")
         for f in fails:
             print("FAIL", f)
         for w in warns:
@@ -474,7 +545,13 @@ def cmd_check(a, repo):
         for i in infos:
             print("info", i)
         print(f"RESULT: {verdict}   print-size preview ({it['print_w_in']} in wide): {pv}")
-        print("These are tripwires, not a quality score. Now run the visual checklist in references/QA_CHECKLIST.md.")
+        print("The tripwires cannot see what follows. LOOK at the image and the preview:")
+        for x in it["must"]:
+            print("  MUST BE SHOWN (count or find it):", x)
+        for x in it["avoid"]:
+            print("  DO NOT DRAW (confirm it is absent):", x)
+        print("  and the other hard fails: lettering, colour or grey wash, frame or crop, reference bleed, anatomy, scale, legibility "
+              "(references/QA_CHECKLIST.md)")
     return 1 if fails else 0
 
 
@@ -488,7 +565,7 @@ def append_receipt(repo, rec):
 
 def cmd_save(a, repo):
     q = load_queue(repo)
-    it, m, fails, warns, infos, pv = run_check(repo, q, a.id, a.image)
+    it, m, fails, warns, infos, pv, n = run_check(repo, q, a.id, a.image)
     text = prompt_text(repo, it)
     if prompt_sha(text) != it["prompt_sha256"]:
         raise Fatal(f"{it['prompt']} does not match the queue hash: git pull --rebase origin main, then regenerate from the current prompt")
@@ -498,10 +575,20 @@ def cmd_save(a, repo):
     if fails and not a.accept_flags:
         for f in fails:
             print("FAIL", f)
-        raise Fatal("mechanical failures: regenerate (attempts are limited to "
-                    f"{it['max_attempts']}), or pass --accept-flags if this is the best attempt after the last allowed one")
-    if a.attempts > it["max_attempts"]:
-        warns.append(f"{a.attempts} attempts exceeds the budget of {it['max_attempts']}")
+        raise Fatal("mechanical failures: regenerate (the budget is "
+                    f"{it['max_attempts']} attempts), or pass --accept-flags with --notes if this is the best attempt after the last allowed one")
+    if a.accept_flags:
+        if not a.notes:
+            raise Fatal("--accept-flags needs --notes saying what is still wrong")
+    else:
+        missing = []
+        if it["must"] and len(a.must) < len(it["must"]):
+            missing.append("one --must \"<what you counted or found>\" per line: " + "; ".join(it["must"]))
+        if it["avoid"] and not a.avoid_clear:
+            missing.append("--avoid-clear, meaning you looked and none of the DO NOT DRAW items is present")
+        if missing:
+            raise Fatal("look at the image, then state your checks. Missing: " + " | ".join(missing))
+    attempts = max(a.attempts or 0, n)
     ext = IMAGE_EXT[m["format"]]
     dest = repo / INCOMING_REL / (it["id"] + ext)
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -514,15 +601,20 @@ def cmd_save(a, repo):
             stale.unlink()
             print(f"removed the older {stale.name} (one file per ID)")
     rec = {"id": it["id"], "prompt_sha256": it["prompt_sha256"], "surface": "ChatGPT Work", "model": a.model or "not shown",
-           "date_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "variants_tried": a.attempts,
+           "date_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "variants_tried": attempts,
            "notes": a.notes or ""}
+    if a.must:
+        rec["must_checked"] = a.must
+    if a.avoid_clear:
+        rec["avoid_clear"] = True
     if fails or warns:
         rec["tripwires"] = fails + warns
     append_receipt(repo, rec)
-    print(f"saved {dest.relative_to(repo)} ({len(data)} bytes, unmodified) and wrote the receipt")
+    clear_attempts(repo, it["id"])
+    print(f"saved {dest.relative_to(repo)} ({len(data)} bytes, unmodified) after {attempts} attempt(s); receipt written")
     if fails:
         print("saved with FAIL tripwires recorded in the receipt: the reviewer will see them")
-    print("next: git add " + f"{dest.relative_to(repo)} {RECEIPTS_REL}")
+    print(f"next: run `{helper()} status` for the next action")
     return 0
 
 
@@ -540,33 +632,39 @@ def cmd_sheet(a, repo):
     st = states(repo, q)
     ids = a.ids or [i for i, v in st.items() if v == "saved"]
     if not ids:
-        raise Fatal("no saved images to put on a sheet")
+        raise Fatal(f"no saved, unpushed images. Name the IDs to put on a sheet: {helper()} sheet ID ID ... [--refs]")
     cell, cols = 360, 4
     items = [item_of(q, i) for i in ids]
-    files = []
+    files, labels = [], []
     for it in items:
         fl = local_files(repo, it["id"])
         if not fl:
             raise Fatal(f"{it['id']}: no saved image")
         files.append(fl[0])
+        labels.append(it["id"])
     if a.refs:
-        for r in items[0]["references"]:
+        seen = []
+        for it in items:
+            for r in it["references"]:
+                if r not in seen:
+                    seen.append(r)
+        for r in seen[:6]:
             files.append(repo / r)
-            items.append({"id": "REF " + Path(r).name[:22]})
+            labels.append("REF " + Path(r).name[:24])
     rows = (len(files) + cols - 1) // cols
     sheet = Image.new("RGB", (cols * cell, rows * (cell + 22)), "white")
     d = ImageDraw.Draw(sheet)
-    for n, (f, it) in enumerate(zip(files, items)):
+    for n, (f, label) in enumerate(zip(files, labels)):
         with Image.open(f) as src:
             im = _flat_rgb(src)
         im.thumbnail((cell - 8, cell - 8))
         x, y = (n % cols) * cell, (n // cols) * (cell + 22)
         sheet.paste(im, (x + (cell - im.width) // 2, y + 22))
-        d.text((x + 6, y + 5), it["id"], fill=(0, 0, 0))
-    out = Path(a.out) if a.out else scratch_dir() / "batch_sheet.jpg"
+        d.text((x + 6, y + 5), label, fill=(0, 0, 0))
+    out = Path(a.out) if a.out else scratch_dir(repo) / "batch_sheet.jpg"
     out.parent.mkdir(parents=True, exist_ok=True)
     sheet.save(out, quality=85)
-    print(f"contact sheet: {out}  ({len(ids)} images{', plus references' if a.refs else ''})")
+    print(f"contact sheet: {out}  ({len(ids)} images{', plus the references of every item on it' if a.refs else ''})")
     return 0
 
 
@@ -575,20 +673,19 @@ def cmd_bundle(a, repo):
     st = states(repo, q)
     ids = [i for i, v in st.items() if v == "saved"]
     if not ids:
-        raise Fatal("nothing saved to bundle")
-    receipts = {}
-    for line in (repo / RECEIPTS_REL).read_text(encoding="utf-8").splitlines() if (repo / RECEIPTS_REL).is_file() else []:
-        if line.strip():
-            r = json.loads(line)
-            receipts[r["id"]] = line
-    out = Path(a.out)
+        raise Fatal("nothing unsent to bundle: every saved image has already been pushed, or none was saved")
+    out = Path(a.out) if a.out else scratch_dir(repo) / f"batch_{ids[0]}__{ids[-1]}.zip"
+    if repo.resolve() in out.resolve().parents:
+        raise Fatal("write the bundle outside the repository clone (the skill changes no other repo file); omit --out for the scratch folder")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    receipts = {i: json.dumps(r, ensure_ascii=False) for i, r in last_receipts(repo).items()}
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
         for i in ids:
             for f in local_files(repo, i):
                 z.write(f, f.relative_to(repo).as_posix())
         z.writestr("receipts_append.jsonl", "\n".join(receipts[i] for i in ids if i in receipts) + "\n")
         z.writestr("HANDOFF.txt", "Unzip at the repository root. Append receipts_append.jsonl to production/art/gpt/RECEIPTS.jsonl.\n"
-                   "git lfs install; git add assets/art/incoming production/art/gpt/RECEIPTS.jsonl\n"
+                   "git lfs install; git add assets/art/incoming production/art/gpt/RECEIPTS.jsonl; git lfs ls-files\n"
                    f"git commit -m 'art(gpt): {ids[0]} .. {ids[-1]}'; git pull --rebase origin main; git push origin main\n")
     print(f"bundle: {out} ({len(ids)} images)")
     return 0
@@ -598,33 +695,37 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--repo", help="repository root (default: found above the current directory)")
     sub = ap.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("doctor")
-    sub.add_parser("status")
-    p = sub.add_parser("next")
+    sub.add_parser("doctor", help="environment, repo, queue and reference checks")
+    p = sub.add_parser("status", help="queue state and the single next action")
+    p.add_argument("--end", action="store_true", help="session end: ask for a push of anything unsent, even below the batch size")
+    p = sub.add_parser("next", help="the next items to generate")
     p.add_argument("--n", type=int, default=8)
-    p = sub.add_parser("show")
+    p = sub.add_parser("show", help="one item: references, size, must and do-not-draw lists, verbatim prompt")
     p.add_argument("id")
-    p = sub.add_parser("check")
+    p = sub.add_parser("check", help="mechanical tripwires for one generated image; counts it as an attempt")
     p.add_argument("id")
     p.add_argument("image")
     p.add_argument("--json", action="store_true")
-    p = sub.add_parser("save")
+    p = sub.add_parser("save", help="check, copy the image unmodified into assets/art/incoming, write the receipt")
     p.add_argument("id")
     p.add_argument("image")
-    p.add_argument("--attempts", type=int, default=1)
+    p.add_argument("--attempts", type=int, default=0,
+                   help="total generations made for this item, the saved one included (default: the distinct images you checked)")
     p.add_argument("--model", default="")
     p.add_argument("--notes", default="")
-    p.add_argument("--accept-flags", action="store_true")
-    p.add_argument("--redo", action="store_true")
-    p = sub.add_parser("refuse")
+    p.add_argument("--must", action="append", default=[], help="what you counted or found, once per MUST BE SHOWN line (repeat the flag)")
+    p.add_argument("--avoid-clear", action="store_true", help="you looked and none of the DO NOT DRAW items is present")
+    p.add_argument("--accept-flags", action="store_true", help="save despite FAIL tripwires after the last allowed attempt; needs --notes")
+    p.add_argument("--redo", action="store_true", help="replace an image that was already delivered (only when the owner asked)")
+    p = sub.add_parser("refuse", help="record that the image tool refused an item")
     p.add_argument("id")
     p.add_argument("--reason", required=True)
-    p = sub.add_parser("sheet")
+    p = sub.add_parser("sheet", help="labelled contact sheet of saved images")
     p.add_argument("ids", nargs="*")
     p.add_argument("--out")
-    p.add_argument("--refs", action="store_true")
-    p = sub.add_parser("bundle")
-    p.add_argument("--out", required=True)
+    p.add_argument("--refs", action="store_true", help="add the references of every item on the sheet, for style comparison")
+    p = sub.add_parser("bundle", help="hand-off zip for when git push is impossible")
+    p.add_argument("--out", help="default: the scratch folder; must be outside the repository clone")
     a = ap.parse_args(argv)
     try:
         repo = find_repo(a.repo)

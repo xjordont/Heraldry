@@ -30,7 +30,7 @@ Use exceptionally fine traditional pen-and-ink rendering, with varied line weigh
 FINAL VISUAL REQUIREMENTS
 Do not draw:
 * No people; the climate is the subject.
-* Do not repeat the Whispering Grove scenario (that has humming standing stones in a clearing).
+* Do not make the grove circle the focus: it is a small mossy ring of stones in the middle distance, so this is not the Whispering Grove scenario (standing stones in a clearing as the whole subject).
 * Do not detail the hound shapes: barely seen silhouettes only.
 * No letters in the bark signs.
 Avoid photorealism, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should be exceptionally detailed yet visually readable, with an organically fading white vignette suitable for seamless reproduction in a professionally printed fantasy rulebook.

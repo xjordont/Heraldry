@@ -6,7 +6,8 @@ override). Regenerate after any catalog, brief or style change.
 
 Queue schema 2: every item carries its register, its own short list of reference images
 (config gpt_reference_sets, at most max_refs), its printed width, its attempt budget and the
-brief's must / avoid lists, so the runner never has to parse prompt text or attach every anchor."""
+brief's must / avoid lists, so the runner never has to parse prompt text or attach every anchor.
+There is deliberately no queue-level list of references: only an item's own list is ever attached."""
 import argparse, hashlib, json, sys
 from pathlib import Path
 
@@ -74,13 +75,8 @@ def build_queue(phase, ents, sels, anchors, root=ROOT):
     for i in ids:
         prompts[i] = g.prompt_for(ents[i], True)
         items.append(item_for(ents[i], prompts[i], sels, root))
-    union = []
-    for it in items:
-        for r in it["references"]:
-            if r not in union:
-                union.append(r)
     return {"schema": SCHEMA, "phase": phase, "generated_at": g.now(), "max_references": g.CFG["gpt_reference_sets"]["max_refs"],
-            "references": union, "count": len(items), "items": items}, prompts
+            "count": len(items), "items": items}, prompts
 
 
 def queue_markdown(q):

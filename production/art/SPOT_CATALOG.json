@@ -703,7 +703,7 @@
     "atmosphere": "Ancient, watchful and indifferent to humans.",
     "avoid": [
      "No people; the climate is the subject",
-     "Do not repeat the Whispering Grove scenario (that has humming standing stones in a clearing)",
+     "Do not make the grove circle the focus: it is a small mossy ring of stones in the middle distance, so this is not the Whispering Grove scenario (standing stones in a clearing as the whole subject)",
      "Do not detail the hound shapes: barely seen silhouettes only",
      "No letters in the bark signs"
     ],
@@ -711,7 +711,7 @@
      "1.3.2 The Greenmark"
     ]
    },
-   "spec_sha256": "4e8eccb766cad4dbb9987480320e3568da64d1931f544cb094a48270f86edc9e"
+   "spec_sha256": "06acc0f3570bd7c61ff5709d3ceeffb4140c46bc4312719aa5d268986dea7f25"
   },
   {
    "id": "ART-CLI-THE-ASHLANDS",
@@ -1516,7 +1516,7 @@
     "identity": "A Dwarf adventurer, medium-sized but broad and heavy, from sealed stone halls and old craft traditions, shown as a hardened traveller in a Bastion's service.",
     "composition": "Full figure in three-quarter view, braced wide-stanced, lantern held forward in one hand with a round shield strapped on that forearm, handaxe ready in the other hand.",
     "details": [
-     "Very broad shoulders, short thick limbs, stocky frame, shorter than the Human but heavier",
+     "Very broad shoulders, short thick limbs, stocky frame, human-sized but far heavier in build",
      "Long braided beard with metal rings, heavy brow, deep-set eyes used to the dark",
      "Heavy mail or plated chest armour worn with ease, scuffed and re-riveted",
      "Round shield strapped on the lantern arm, handaxe in the other hand",
@@ -1532,13 +1532,13 @@
      "No stair, doorway or other scenery"
     ],
     "must": [
-     "Clearly shorter than an Elf or Orc, but broad and heavy"
+     "Broad and heavy build: shoulders very wide for the height, thick short limbs, no slender lines"
     ],
     "sources": [
      "6.9 Ancestries: Dwarf"
     ]
    },
-   "spec_sha256": "0368c1bab12264c1e86b903cf92d26e0e2f284a883e26beb9a1c0c8e834048d6"
+   "spec_sha256": "2f92a29ce28708e821d5ee92d8db216e17722f58c4632c5d65be7465c3d011ab"
   },
   {
    "id": "ART-ANC-ELF",

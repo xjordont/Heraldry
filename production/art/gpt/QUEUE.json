@@ -1,14 +1,8 @@
 {
  "schema": 2,
  "phase": "anchors",
- "generated_at": "2026-10-10T20:09:18+00:00",
+ "generated_at": "2026-10-10T20:41:26+00:00",
  "max_references": 3,
- "references": [
-  "assets/art/incoming/ART-BAS-GREYTHORN.jpg",
-  "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-  "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-  "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
- ],
  "count": 5,
  "items": [
   {
@@ -17,7 +11,7 @@
    "register": "scene",
    "title": "The Greenmark",
    "prompt": "production/art/gpt/prompts/ART-CLI-THE-GREENMARK.txt",
-   "prompt_sha256": "a5bdd19c85a4a3a53a6f9cea02d906f3b076a011dcdac3f197644a97a55ab9dc",
+   "prompt_sha256": "625734f3e40043ae20bf802b17b6db96a2eed2215694e4917f7e33455e6c18de",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
@@ -30,7 +24,7 @@
    "must": [],
    "avoid": [
     "No people; the climate is the subject.",
-    "Do not repeat the Whispering Grove scenario (that has humming standing stones in a clearing).",
+    "Do not make the grove circle the focus: it is a small mossy ring of stones in the middle distance, so this is not the Whispering Grove scenario (standing stones in a clearing as the whole subject).",
     "Do not detail the hound shapes: barely seen silhouettes only.",
     "No letters in the bark signs."
    ],
@@ -114,7 +108,7 @@
    "register": "person",
    "title": "Dwarf",
    "prompt": "production/art/gpt/prompts/ART-ANC-DWARF.txt",
-   "prompt_sha256": "7c491e2662f3579663f19007650a6413d8ef1faa343489dd51c03f71a4aeb5ea",
+   "prompt_sha256": "eb609e96f6a1bc2b337415ae6244c1acf1b858b34ce9b5c7623eff9c254f7571",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
@@ -123,7 +117,7 @@
    "max_attempts": 3,
    "size_class": "",
    "must": [
-    "Clearly shorter than an Elf or Orc, but broad and heavy"
+    "Broad and heavy build: shoulders very wide for the height, thick short limbs, no slender lines"
    ],
    "avoid": [
     "Not a comic dwarf: serious proportions, no oversized hat or cartoon nose.",
