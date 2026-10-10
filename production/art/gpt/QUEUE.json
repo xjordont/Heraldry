@@ -1,6 +1,6 @@
 {
  "phase": "anchors",
- "generated_at": "2026-10-10T14:55:51+00:00",
+ "generated_at": "2026-10-10T15:57:00+00:00",
  "references": [
   "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
   "assets/art/style/STYLE-REF-02-panorama-line.jpg",
@@ -13,7 +13,7 @@
    "family": "climate",
    "title": "The Greenmark",
    "prompt": "production/art/gpt/prompts/ART-CLI-THE-GREENMARK.txt",
-   "prompt_sha256": "e0d4781f9a8e727ed73d890efa872ee41ea58e8970f177cef67fa36fb4d188b8",
+   "prompt_sha256": "a5bdd19c85a4a3a53a6f9cea02d906f3b076a011dcdac3f197644a97a55ab9dc",
    "size": "1536x1024",
    "save_as": "assets/art/incoming/ART-CLI-THE-GREENMARK.png"
   },
@@ -22,7 +22,7 @@
    "family": "monster",
    "title": "Giant Tarantula",
    "prompt": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
-   "prompt_sha256": "457b730e0b64b481924e660224c9d7656122af41b74d38cf90947a3618a39333",
+   "prompt_sha256": "dec3c51a465b7b0bf7c0f31403fb86dc2dae39a592c6b6363ec2f04eac12f8bf",
    "size": "1024x1024",
    "save_as": "assets/art/incoming/ART-MON-GIANT-TARANTULA.png"
   },
@@ -31,7 +31,7 @@
    "family": "monster",
    "title": "Undead Champion",
    "prompt": "production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt",
-   "prompt_sha256": "f352d7915290e728d2855063e65b5d6f668aefb55b7736756c18fdee832c94fb",
+   "prompt_sha256": "741d323781bea582ea37329ec5a544c0eb9dbb0c786b77866ecdcd8e3cfd88ca",
    "size": "1024x1024",
    "save_as": "assets/art/incoming/ART-MON-UNDEAD-CHAMPION.png"
   },
@@ -40,7 +40,7 @@
    "family": "class",
    "title": "Fighter",
    "prompt": "production/art/gpt/prompts/ART-CLA-FIGHTER.txt",
-   "prompt_sha256": "ad695448e02ec1778ee9e719425db1cd18427d94899acd263edfa82cee2b4483",
+   "prompt_sha256": "659bf900ec0bf1cf2d59455dd676d4d0d4d9bee0b263343b98d743b021328baa",
    "size": "1024x1536",
    "save_as": "assets/art/incoming/ART-CLA-FIGHTER.png"
   },
@@ -49,7 +49,7 @@
    "family": "ancestry",
    "title": "Dwarf",
    "prompt": "production/art/gpt/prompts/ART-ANC-DWARF.txt",
-   "prompt_sha256": "ca2088606158314e60553accb40daf94cf405988c70a727fb4197214862be7bd",
+   "prompt_sha256": "7c491e2662f3579663f19007650a6413d8ef1faa343489dd51c03f71a4aeb5ea",
    "size": "1024x1536",
    "save_as": "assets/art/incoming/ART-ANC-DWARF.png"
   }

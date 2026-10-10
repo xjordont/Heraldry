@@ -9,7 +9,7 @@
   "details": [
    "Broken gothic shrine arch with a missing keystone and a headless saint in a wall niche",
    "Rain drawn as sparse fine diagonal strokes, puddles on the flagstones reflecting the arch",
-   "Human Fighter in worn mail with sword and shield at the front, Elf Ranger with longbow, Dwarf Cleric in plate with a holy symbol on a staff or mace, small Halfling Rogue slipping along the wall edge",
+   "Human Fighter in a ring shirt with shortsword and small round targe at the front, Elf Ranger in a leather coat with a shortbow, broad Dwarf Cleric in a ring shirt with a mace and small round targe, small Halfling Rogue in a leather coat with a rapier at the hip slipping along the wall edge",
    "A rival party's tattered banner on a pole planted across the rubble, no readable device",
    "Fallen columns, toppled statue fragments and moss on the stones",
    "Treeline at the far edge with one Monster silhouette standing between the trunks, shape only",
@@ -23,9 +23,10 @@
   "atmosphere": "Wary, rain-heavy and austere; adventurers small against withered grandeur.",
   "avoid": [
    "Do not render the title or any lettering on banners",
-   "Monster only a dark silhouette, not a detailed creature",
+   "Do not detail the Monster: a dark silhouette only",
    "Do not make the party large or heroic-posed; no sunburst or glow",
-   "Do not give the rival banner a heraldic device that reads as a symbol"
+   "Do not give the rival banner a heraldic device that reads as a symbol",
+   "No plate armour, longbow or staff on the four Heroes"
   ],
   "sources": [
    "1.1 What is Heraldry Skirmish",
@@ -52,9 +53,9 @@
   "atmosphere": "Vast, hushed and fatalistic; the world laid out like a wound.",
   "avoid": [
    "Do not repeat the cover composition or the Greythorn bastion portrait; no walled town visible",
-   "Party small, banner without legible device",
+   "No large heroic party and no legible device on the banner",
    "Do not include any monsters or dragons in the sky",
-   "No panorama of all six climates (that is the 1.3.2 world image)"
+   "No panorama of all six climates"
   ],
   "sources": [
    "1.3 The Dying Lands",
@@ -80,8 +81,8 @@
   "atmosphere": "Tense stillness before violence.",
   "avoid": [
    "Do not show combat actually happening; this is the moment of sighting",
-   "Monster remains a silhouette, not a detailed portrait",
-   "Keep it distinct from the cover (no rain, no shrine arch) and from ch.5 bridge melee",
+   "Do not detail the Monster: a silhouette only, not a portrait",
+   "Do not repeat the cover or a bridge melee: no rain, no shrine arch, no stone bridge",
    "No gore"
   ],
   "sources": [
@@ -108,8 +109,8 @@
   "atmosphere": "Weary vigilance in the first grey light.",
   "avoid": [
    "Do not show the Heroes heroically posed; they are exhausted",
-   "Bell tower is rural chapel scale, not Sablekeep or any Bastion",
-   "Avoid glowing sun disk or rays",
+   "No Bastion-scale bell tower: a rural chapel only",
+   "No glowing sun disk or rays",
    "No monster in view"
   ],
   "sources": [
@@ -136,7 +137,7 @@
   ],
   "atmosphere": "Vertigo and strain; the world coming apart under their feet.",
   "avoid": [
-   "Not the stone bridge of ch.5 and not the Chasm Crossing scenario ledges (this is an arched aqueduct in open air)",
+   "Not a stone bridge melee and not cavern ledges over a chasm: this is an arched aqueduct in open air",
    "No monsters",
    "Do not depict dimensions or jump distances",
    "No lettering on any stones"
@@ -165,9 +166,9 @@
   ],
   "atmosphere": "Grim last stand without gore.",
   "avoid": [
-   "Do not repeat ch.2 (parties across a valley) or ch.4 (aqueduct climbing)",
+   "Do not show parties facing across a valley or an aqueduct climb",
    "No gore or dismemberment",
-   "Undead are soldiers, not skeleton cartoons or a named boss",
+   "No skeleton cartoons or named boss: the undead are soldiers",
    "No lettering on shields"
   ],
   "sources": [
@@ -194,10 +195,13 @@
   ],
   "atmosphere": "Mercenary bustle, tired and mercantile.",
   "avoid": [
-   "Not the stronghold War Room (ch.11) - this is a public Bastion hall with many strangers",
+   "Not a private war room: this is a public Bastion hall with many strangers",
    "Do not show readable text on the contract",
    "No Greythorn-specific features",
-   "Ratkin must look like rat-folk, not rats, and not comic"
+   "Not rats and not comic"
+  ],
+  "must": [
+   "Ratkin read as upright rat-folk"
   ],
   "sources": [
    "Recommended First Party (line 2631)",
@@ -257,7 +261,7 @@
   "avoid": [
    "No readable script on the pages",
    "Not the Fallen Observatory scenario (this is a library, not a dome)",
-   "Avoid colour or glow effects; use line and solid black",
+   "No colour or glow effects; line and solid black only",
    "Do not show a specific spell mechanic"
   ],
   "sources": [
@@ -285,7 +289,7 @@
   "avoid": [
    "Not the Hunt the Wild Beast scenario, the Giant Tarantula or the Broodmother; the bear is a partial carcass, never a portrait",
    "No gore close-up; carcass drawn with restraint",
-   "Eyes in the treeline are tiny dots, not creatures",
+   "No visible creatures in the treeline: only tiny eye dots",
    "Not a trophy-pose heroic image"
   ],
   "sources": [
@@ -311,9 +315,9 @@
   ],
   "atmosphere": "Choice and foreboding at the edge of the known.",
   "avoid": [
-   "Not the 1.3.2 mountain-spine panorama or the ch.1 pass vista",
+   "No mountain-spine panorama and no mountain-pass vista",
    "Do not letter the stone",
-   "Six landscapes must stay small and simple, no dragons"
+   "No dragons and no detailed landscapes: the six stay small and simple"
   ],
   "sources": [
    "10.4 Scenario 2: The Whispering Grove (line 12042)",
@@ -340,9 +344,9 @@
   "atmosphere": "Exhausted homecoming, thin hope.",
   "avoid": [
    "Not a grand castle - a salvage-built palisade stronghold",
-   "Do not repeat the construction scene of 11.1 (no scaffolding)",
+   "No construction scene and no scaffolding",
    "No monster in view",
-   "Lanterns not glowing with rays"
+   "No glowing lantern rays"
   ],
   "sources": [
    "11.x Journey Home example (line 15403)",
@@ -371,8 +375,8 @@
   "avoid": [
    "No monsters; the cruelty here is human",
    "Do not show violence against the family",
-   "Banners must not carry readable heraldry",
-   "Distinct from the 1.3.5 abandoned monster-held village street"
+   "No readable heraldry on banners",
+   "Not an abandoned monster-held village street"
   ],
   "sources": [
    "1.2 The Grim World",
@@ -424,7 +428,7 @@
   ],
   "atmosphere": "Immense, quiet and unsettled.",
   "avoid": [
-   "Not the ch.1 pass vista (that has a party and a single road toward one city)",
+   "Not a mountain-pass vista with a party and a single road toward one city",
    "No dragons or creatures",
    "No map lettering",
    "No hard compass-rose graphic"
@@ -450,7 +454,7 @@
   "avoid": [
    "No people; the climate is the subject",
    "Do not repeat the Whispering Grove scenario (that has humming standing stones in a clearing)",
-   "Hound shapes remain barely seen silhouettes",
+   "Do not detail the hound shapes: barely seen silhouettes only",
    "No letters in the bark signs"
   ],
   "sources": [
@@ -475,7 +479,7 @@
   "atmosphere": "Austere, ordered and dead.",
   "avoid": [
    "Not the Hollow Crown throne room or any scenario ruin",
-   "Patrol only as tiny silhouettes",
+   "Do not detail the patrol: tiny silhouettes only",
    "No inscriptions",
    "Not a sunny scene; heavy overcast"
   ],
@@ -528,7 +532,7 @@
   "atmosphere": "Silent, bureaucratic cold.",
   "avoid": [
    "Not Visath's spire or the Frost Bailiff avenue (interior street) or Hearthhold",
-   "Citizens stay distant and static, no ghoulish detail",
+   "No ghoulish detail or movement on the citizens: distant and static",
    "No dragons",
    "No glow or aurora"
   ],
@@ -556,7 +560,7 @@
    "Not the Cursed Colossus, Sunken Kings tomb or Saltspire bastion",
    "Do not draw glinting colour or sun-disc flares",
    "No camels (not in source) - use mules or nothing",
-   "Dead remain objects, not reanimated"
+   "No reanimated dead: they remain objects"
   ],
   "sources": [
    "1.3.2 The Sun-Drowned"
@@ -580,7 +584,7 @@
   "atmosphere": "Damp, patient and quietly rising.",
   "avoid": [
    "Not Reedmarch itself (no barges, council hall or toll bridges) and not Vossegar's cathedral",
-   "Dead shapes ambiguous and faint, no horror close-ups",
+   "No horror close-ups: dead shapes stay ambiguous and faint",
    "No lettering",
    "Not the Blighted Heartwood or Titan fen scenes"
   ],
@@ -610,7 +614,7 @@
    "Not a specific Bastion's gate (no Deepwarden great gate, no Greythorn timber)",
    "No monsters at the gate",
    "Do not depict violence against the refugees",
-   "Distinct from the 1.3.6 postern departure"
+   "Not a postern-gate departure scene"
   ],
   "sources": [
    "1.3.3 The Six Bastions"
@@ -661,10 +665,13 @@
   ],
   "atmosphere": "Austere, hard and shadowed.",
   "avoid": [
-   "Not the ch.7 forge interior",
+   "Not a forge interior",
    "No visible creatures in the Dark",
    "Not a stone castle on a hill",
-   "Gate closed, not open or being closed"
+   "Do not show the gate open or being closed"
+  ],
+  "must": [
+   "The gate is closed"
   ],
   "sources": [
    "1.3.3 Deepwarden"
@@ -728,7 +735,7 @@
   ]
  },
  "ART-BAS-REEDMARCH": {
-  "identity": "Reedmarch, a stilt-town raised over log pilings on barges, ferry platforms and toll bridges; the only crossing for 30 miles, populated by ferrymen, smugglers, leech-tenders and corpse-haulers.",
+  "identity": "Reedmarch, a stilt-town raised over log pilings on barges, ferry platforms and toll bridges; the only crossing far and wide, populated by ferrymen, smugglers, leech-tenders and corpse-haulers.",
   "composition": "Water-level view from a ferry at the toll bridge, looking at the stilt-town with its patchwork of platforms and barges; a barge hall repositioned in the middle.",
   "details": [
    "Log pilings and plank platforms with huts and ladders",
@@ -796,8 +803,8 @@
   "avoid": [
    "No monsters visible in the frame",
    "No corpses",
-   "Banner has no readable device",
-   "Distinct from the 1.2 burnt farmstead (human conflict) and from scenarios"
+   "No readable device on the banner",
+   "Not a burnt farmstead of human conflict, and not a scenario battlefield"
   ],
   "sources": [
    "1.3.5 Monstrous Threats"
@@ -822,7 +829,7 @@
   "atmosphere": "Resigned departure into danger.",
   "avoid": [
    "Not a heroic departure; no banners flying",
-   "Not the Greythorn bastion portrait or the ch.1 vista",
+   "Not a Bastion portrait and not a mountain-pass vista",
    "No readable text on the post",
    "No monsters in sight"
   ],
@@ -848,7 +855,7 @@
   ],
   "atmosphere": "Haunted, wistful, unforgiving.",
   "avoid": [
-   "Ghosts must be line-only, no gradient or glow",
+   "No gradient or glow on the ghosts: line only",
    "No gore, no skeletons",
    "No named legend figures (Saint Cael, Ysolde Vane) depicted",
    "Not the Haunted Mausoleum or crypt interiors"
@@ -897,9 +904,12 @@
   "atmosphere": "Matter-of-fact salvage with dangerous elegance.",
   "avoid": [
    "Not the treasure still life",
-   "Only the six named weapons, no extras like swords of legend",
+   "No weapons beyond the six named, no swords of legend",
    "No readable maker's marks",
    "No gore or blood"
+  ],
+  "must": [
+   "Only the six named weapons"
   ],
   "sources": [
    "7.8 Melee Weapons"
@@ -950,7 +960,7 @@
    "Do not show a face inside the robe; it is empty",
    "Not the Ashlands climate street or Captain Veyr's company",
    "No readable inscriptions",
-   "Keep legionaries as one disciplined mass, not a combat scene"
+   "No combat scene: the legionaries stand as one disciplined mass"
   ],
   "sources": [
    "9.7 The Bestiary - The Hollow Crown of the Ashlands (boss)",
@@ -977,7 +987,10 @@
    "Not the Cursed Colossus of the Waste (a broken sand statue) or the Guardian Construct",
    "Not a cartoon robot or mecha",
    "No glowing eyes",
-   "Three times a man's height only, not a skyscraper"
+   "Not skyscraper-sized"
+  ],
+  "must": [
+   "Three times a man's height"
   ],
   "sources": [
    "9.7 The Bestiary - The Last Colossus (boss)",
@@ -1057,9 +1070,12 @@
   "atmosphere": "Doomed discipline, forgotten war.",
   "avoid": [
    "Not the Hollow Crown's kneeling legionaries",
-   "Veyr has no gendered features, use they/them presentation",
+   "No gendered features",
    "Not a combat scene with living heroes",
    "Do not draw an actual skull face; solid black visor slit"
+  ],
+  "must": [
+   "Androgynous presentation (they/them)"
   ],
   "sources": [
    "9.7 The Bestiary - Captain Veyr of the Forsaken (boss)"
@@ -1112,7 +1128,7 @@
   "avoid": [
    "Not Khorrun's hoard gallery or the Sunken Kings tomb scenario (that has sarcophagi and pits)",
    "No readable hieroglyphs",
-   "Face not cartoonish",
+   "No cartoonish face",
    "Do not show a living prince"
   ],
   "sources": [
@@ -1141,7 +1157,10 @@
    "Not the Avatar of the Old Growth or the Whispering Grove Antlered Warden scenario",
    "Not a friendly forest spirit",
    "No gore",
-   "Greythorn gate must be timber-walled"
+   "No stone gate or stone wall"
+  ],
+  "must": [
+   "The Greythorn gate is timber-walled"
   ],
   "sources": [
    "9.7 The Bestiary - The Antlered Warden of the Tithe (boss)",
@@ -1166,7 +1185,7 @@
   "atmosphere": "Quiet sorrow edged with horror.",
   "avoid": [
    "Not Vossegar's cathedral (that is a huge drowned cathedral with a wyrm)",
-   "The figure is not gory or monstrous in detail",
+   "No gory or monstrous detail on the figure",
    "Do not show open mouth gore",
    "No faces readable, shadow only"
   ],
@@ -1194,7 +1213,7 @@
   "avoid": [
    "Not Avatar of the Old Growth (a tree giant) or the Whispering Grove scenario",
    "No heroes fighting",
-   "Fog is line-drawn, not a gradient",
+   "No gradient fog: line-drawn only",
    "Not a cartoon dragon"
   ],
   "sources": [
@@ -1221,7 +1240,7 @@
    "Not the Broodmother's webbed cavern or the Rock Elemental Guardian scenario",
    "No glow",
    "Do not show people being withered",
-   "Stone rippling must read as ink lines, not water"
+   "Not water: the rippling stone reads as ink lines"
   ],
   "sources": [
    "9.7 The Bestiary - Sirrach the Black (boss)",
@@ -1244,7 +1263,7 @@
   "atmosphere": "Absolute winter, a sky bowing.",
   "avoid": [
    "Not the Frost Bailiff avenue or the Ice Wyrm scenario cavern",
-   "Victims are frozen shapes, not gore",
+   "No gore: the victims are frozen shapes",
    "No glow or aurora",
    "No heroes"
   ],
@@ -1295,7 +1314,7 @@
   "avoid": [
    "Not the Voice Beneath the Bells chapel (a small chapel with a child figure)",
    "No heroes",
-   "Acid rendered as lines, not glow",
+   "No glow on the acid: lines only",
    "Not a swamp exterior"
   ],
   "sources": [
@@ -1311,7 +1330,7 @@
    "Felled logs, stumps, an abandoned two-man saw and ox-yoke",
    "Cloven hoof furrows and torn earth leading into the trees",
    "A churned mud wallow glimpsed beyond the camp edge",
-   "Game trail 1-2 inches wide in scale, a pale gap in dense trunks",
+   "A narrow game trail, a pale gap in dense trunks",
    "Dead dire wolf lying near the camp gate, not gored",
    "Broken axe handles, a toppled log cart"
   ],
@@ -1322,8 +1341,8 @@
   ],
   "atmosphere": "Brooding aftermath with the hunter still near.",
   "avoid": [
-   "Boar remains a barely seen shape, not a portrait; no tusks in close-up",
-   "Not the ch.9 carcass scene or the Avatar",
+   "Do not portray the boar: a barely seen shape only, no tusks in close-up",
+   "No carcass and no giant forest Avatar",
    "Not the Bandit's Toll (this is a camp, not a trail barricade)",
    "No gore on the camp"
   ],
@@ -1334,7 +1353,7 @@
  },
  "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE": {
   "identity": "The Whispering Grove, an ancient Greenmark clearing older than Greythorn, with humming standing stones where pale lights move on moonless nights and farmers leave bread as part of the tithe.",
-  "composition": "Night scene in a forest clearing seen from the tree edge; three tall standing stones in a rough triangle dominate the middle, small pale lights drifting between them, a loaf of bread on the nearest stone.",
+  "composition": "Night scene in a forest clearing seen from the tree edge; three tall standing stones dominate the middle, small pale lights drifting between them, a loaf of bread on the nearest stone.",
   "details": [
    "Three mossy standing stones with spiral weathering, no letters",
    "Tiny pale lights as untouched circles in dense black hatching",
@@ -1379,7 +1398,7 @@
   "atmosphere": "Menace and sullen commerce.",
   "avoid": [
    "Not the Spider Silk Route ravine or the Emissary ambush camp",
-   "Prices are marks only, no letters or numbers",
+   "No letters or numbers in the prices: marks only",
    "No fighting in progress",
    "Do not draw gore on boards (just dark marks)"
   ],
@@ -1406,7 +1425,7 @@
   "atmosphere": "Greed lured by beauty and dread.",
   "avoid": [
    "Not the Broodmother Prime's cavern lair (this is a surface ravine under open sky)",
-   "Spiders stay small and partial",
+   "No large or whole spiders: small and partial only",
    "No human cocoons or gore",
    "Do not draw the Broodmother in full"
   ],
@@ -1437,7 +1456,10 @@
    "Not the Bandit's Toll barricade or the road ambush itself",
    "No readable seals or documents",
    "No violence against the emissary",
-   "Emissary must look like a courier or diplomat, not an adventurer"
+   "Not an adventurer: the emissary is a courier or diplomat"
+  ],
+  "must": [
+   "The emissary looks like a courier or diplomat"
   ],
   "sources": [
    "10.4 Scenario 5: The Ambushed Emissary (Greenmark)",
@@ -1489,9 +1511,9 @@
   ],
   "atmosphere": "Haunted precision.",
   "avoid": [
-   "Not the burned library (ch.8) or the Arcanum tower",
+   "Not a burned library or a wizard's tower room",
    "No readable star charts",
-   "Sentinel small and indistinct",
+   "Do not detail the Sentinel: small and indistinct",
    "No glow rays from the lens"
   ],
   "sources": [
@@ -1571,10 +1593,13 @@
   ],
   "atmosphere": "Choked silence and watchful order.",
   "avoid": [
-   "Not the burned academy library (ch.8: fire and a lone caster)",
-   "The book pile must read as books, with no creature shape",
+   "Not a burned academy library with fire and a lone caster",
+   "No creature shape in the book pile",
    "No readable writing on tablets or scrolls",
    "No glow"
+  ],
+  "must": [
+   "The book pile reads as books"
   ],
   "sources": [
    "10.4 Scenario 4: The Sealed Archive (Ashlands)",
@@ -1598,7 +1623,7 @@
   ],
   "atmosphere": "Sacred desecration.",
   "avoid": [
-   "Revenants barely visible and still, not attacking",
+   "No attacking revenants: barely visible and still",
    "Not the Stronghold Chapel or Hollow Crown hall",
    "No readable inscriptions",
    "No glow around relics"
@@ -1654,7 +1679,7 @@
   "atmosphere": "Cold lure, covetous.",
   "avoid": [
    "Not the Quake (gems in cracked beam tunnels) or the Chasm",
-   "Lurker only as faint shape",
+   "Do not detail the Lurker: a faint shape only",
    "No glow rays",
    "No lettering"
   ],
@@ -1671,7 +1696,7 @@
    "A cracked ledge crumbling, chips falling into the dark",
    "Chasm walls with clinging shapes: long-limbed Chasm Stalkers, small and half-hidden",
    "Black void below with faint spray",
-   "Far side with a standing marker stone",
+   "Far side fading into darkness",
    "A rolled map clutched by the lead traveller",
    "Rope and piton at the near end"
   ],
@@ -1681,8 +1706,8 @@
   ],
   "atmosphere": "Vertiginous, hand-shaking dread.",
   "avoid": [
-   "Not the ch.4 aqueduct (open-air arches); this is a dark cavern",
-   "Stalkers remain tiny, indistinct",
+   "Not an open-air aqueduct with arches: this is a dark cavern",
+   "Do not detail the Stalkers: tiny and indistinct",
    "No numbers or map writing",
    "No explicit measurement of gaps"
   ],
@@ -1708,7 +1733,7 @@
   "atmosphere": "Chaos and urgency.",
   "avoid": [
    "Not the Crystal Harvest (cold crystal cavern) or the Chasm",
-   "Guardian only as faint wall hints",
+   "Do not show the Guardian beyond faint hints in the wall",
    "No gore",
    "No glow"
   ],
@@ -1762,8 +1787,8 @@
   "atmosphere": "Wrongness of dark.",
   "avoid": [
    "Not the Ritual of Shadow Binding cavern; this is a passage",
-   "Shade only a hint",
-   "Shadows must be graphic solid shapes, not gradients",
+   "Do not show the Shade beyond a hint",
+   "No gradient shadows: graphic solid shapes only",
    "No glow"
   ],
   "sources": [
@@ -1789,7 +1814,7 @@
   "atmosphere": "Ritual dread.",
   "avoid": [
    "Not the Shadowed Under Passage",
-   "The bound thing must not be seen",
+   "Do not show the bound thing",
    "No readable sigils",
    "No glow"
   ],
@@ -1817,7 +1842,7 @@
   "atmosphere": "Greed amid frozen witnesses.",
   "avoid": [
    "Not the Mausoleum or Alchemist lab",
-   "Citizens are static, no gore",
+   "No gore and no moving citizens: they are static",
    "No readable seals",
    "Do not show an explicit dimension"
   ],
@@ -1844,7 +1869,7 @@
   "atmosphere": "Preserved last mistakes.",
   "avoid": [
    "Not the stronghold Apothecary (that is warm); here everything is frost-bound",
-   "Golem small and partial",
+   "Do not show the whole Golem: small and partial only",
    "No readable labels",
    "No explosion or glow"
   ],
@@ -1871,7 +1896,7 @@
   "avoid": [
    "Not the Icebound Court or Pale City gate scene",
    "No legible names",
-   "Spirits very faint, not cartoonish ghosts",
+   "No cartoonish ghosts: the spirits are very faint",
    "No glow"
   ],
   "sources": [
@@ -1881,9 +1906,9 @@
  },
  "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE": {
   "identity": "The Clockwork Menagerie, a Pale City scenario in a frozen Deepwarden tinker's workshop full of brass legs, biting gears and small minds wound tight around old orders.",
-  "composition": "Workshop interior; tables, pipework and conveyor with brass animal automata frozen mid-motion, a heap of dust and tinker's tools on a stool in the foreground.",
+  "composition": "Workshop interior; tables, pipework and conveyor, with three brass animal automata awake and mid-step, gears bright; a heap of dust and tinker's tools on a stool in the foreground.",
   "details": [
-   "Brass automata: a stag, a hound and a heron-like machine with visible gears",
+   "Three brass animal-shaped automata with visible gears: one raising a metal claw, one with a wheel of whirring blades, one driving a heavy piston arm",
    "Conveyors and pipes furred with frost",
    "Sparking conduits drawn with thin zigzag lines",
    "Workbench with half-assembled brass limbs and gear wheels",
@@ -1896,8 +1921,8 @@
   ],
   "atmosphere": "Mechanical menace.",
   "avoid": [
-   "Not the Deepwarden forge of ch.7 or the Alchemist lab",
-   "Automata are not cute toys; no cartoon features",
+   "Not a forge with a smith and anvil, and not an alchemist's lab",
+   "No cute toys or cartoon features on the automata",
    "No readable notes",
    "No humanoid robots"
   ],
@@ -1908,9 +1933,9 @@
  },
  "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD": {
   "identity": "The Ice Wyrm's Hoard, a Pale City scenario of a frozen cavern beneath the north road out of Hearthhold holding jewels and gold with a wyrm coiled upon it.",
-  "composition": "Low view from the tunnel mouth into a large ice cavern; a gleaming hoard mound at the centre, and only part of a sleeping coil and one wing edge seen beyond an ice pillar.",
+  "composition": "Low view from the tunnel mouth into a large ice cavern; a gleaming hoard mound at the centre, and only part of a coiled, watchful body with one open eye and one wing edge seen beyond an ice pillar.",
   "details": [
-   "Large ice pillars and blue-clear walls",
+   "Large ice pillars and clear ice walls",
    "Mound of gold and jewels outlined with fine lines",
    "Coil of an ice-scaled body behind a pillar, partial",
    "A frozen armoured adventurer lying in front with frost on the helm (a past victim)",
@@ -1924,7 +1949,7 @@
   "atmosphere": "Held-breath avarice.",
   "avoid": [
    "Not Visath the White (boss) on a spire",
-   "Wyrm only partially glimpsed",
+   "Do not show the whole wyrm: only part of it is glimpsed",
    "No gore on the victim",
    "No glow"
   ],
@@ -1950,7 +1975,7 @@
   ],
   "atmosphere": "Court unadjourned.",
   "avoid": [
-   "Magistrate small and distant, distinct from the Frost Bailiff avenue boss portrait",
+   "Do not make the Magistrate large or close: small and distant, unlike the Frost Bailiff avenue boss portrait",
    "Not the Haunted Mausoleum",
    "No glow rays",
    "No readable banners"
@@ -1963,7 +1988,7 @@
   "identity": "The Oasis Raiders, a Sun-Drowned scenario in which raiders hold a vital oasis south of the mountain passes: its wells, its shade and the people too slow to flee.",
   "composition": "From a dune crest looking down on an oasis pool with palms, raiders' camp in the shade, captives gathered, rocky outcrops and dunes beyond.",
   "details": [
-   "Oasis pool with a stone wellspring and three or four palms",
+   "Oasis pool with a stone wellspring and a few palms",
    "Raiders' tents of patched cloth, spears planted",
    "Raider chieftain in loose robes on a rock",
    "Captive villagers sitting roped together in shade",
@@ -2045,7 +2070,7 @@
  },
  "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR": {
   "identity": "The Sandwyrm's Lair, a Sun-Drowned scenario in a broad basin of loose sand south of the passes where nomad legend places a vast shape beneath the dunes.",
-  "composition": "Wide shot of a sand basin from a rock shelf; a long furrow in the sand and a swirling shifting zone at the centre, the creature not seen.",
+  "composition": "Wide shot of a sand basin from a rock shelf; a long furrow in the sand and a swirling patch of shifting sand at the centre, the creature not seen.",
   "details": [
    "Broad bowl of rippled sand with a central swirl",
    "A long ridge of disturbed sand moving toward the dunes",
@@ -2061,7 +2086,7 @@
   ],
   "atmosphere": "Waiting and listening.",
   "avoid": [
-   "The Sandwyrm not visible; only its trace",
+   "Do not show the Sandwyrm: only its trace",
    "Not Oasis Raiders",
    "No glow",
    "No gore"
@@ -2078,7 +2103,7 @@
    "Hollow chest cavity as solid black",
    "Legs and shoulders climbable with ledges",
    "Dune drifts and fallen statuary",
-   "A glowing rune marker drawn as a carved circle on the back",
+   "A carved circle on its back",
    "Skeleton warriors, tiny, at the base",
    "Treasure chests half-buried"
   ],
@@ -2089,7 +2114,7 @@
   "avoid": [
    "Not the Last Colossus boss (iron) and not the Fall statue head (field)",
    "No glow",
-   "Skeletons only tiny",
+   "No large skeletons: tiny only",
    "No inscription"
   ],
   "sources": [
@@ -2113,8 +2138,8 @@
   ],
   "atmosphere": "Barely held binding.",
   "avoid": [
-   "Not the Lost Brazier plaza (daylight altar)",
-   "Cinder Lord only as silhouette in flames",
+   "Not a dusk plaza with a low altar and three pillars",
+   "Do not detail the Cinder Lord: a silhouette in flames only",
    "No glow",
    "No readable glyphs"
   ],
@@ -2142,7 +2167,7 @@
   "atmosphere": "Waterlogged, ancient and unwelcoming.",
   "avoid": [
    "Not the island ritual of Salttide's Reckoning or the Vossegar cathedral",
-   "Edrava's Shade and the reliquary stay unseen",
+   "Do not show Edrava's Shade or the reliquary",
    "No readable carvings",
    "Not a stone castle; a flooded burial mound"
   ],
@@ -2159,7 +2184,7 @@
    "Rope walkways slung between posts over shallow pools",
    "Overturned offering baskets, scattered coins and a smashed clay bowl",
    "Broad drag marks through the mud into tall reeds",
-   "Lizardfolk Scale-Shaman with a feathered staff, with slime-streaked Swamp Goblins in reed canoes and on the walkways, small and furtive",
+   "Lizardfolk Scale-Shaman with a plain wooden quarterstaff, with slime-streaked Swamp Goblins in reed canoes and on the walkways, small and furtive",
    "Shallow pools with a few submerged snouts",
    "Fen mist and a pale line of dawn"
   ],
@@ -2170,11 +2195,12 @@
   ],
   "atmosphere": "Furious, watchful silence before dawn.",
   "avoid": [
-   "Lizardfolk drawn as grounded reptilian people, not cartoon",
+   "No cartoon lizardfolk: grounded reptilian people",
    "Not the Titan fen or the barrow",
    "No readable idol markings",
    "No glow around the amulet (absent)",
-   "No troglodytes: only Mire creatures"
+   "No troglodytes: only Mire creatures",
+   "No spear on the Scale-Shaman, and no feathers, fetishes or ornaments on its staff"
   ],
   "sources": [
    "10.4 Scenario 2: The Lizardfolk's Stolen Offerings (Mire)",
@@ -2200,7 +2226,7 @@
   ],
   "atmosphere": "Baited, patient menace.",
   "avoid": [
-   "Titan only a hump, not a portrait",
+   "Do not portray the Titan: a hump only",
    "Not the Serpent's sinkhole or the Blighted Heartwood",
    "No glow from geodes",
    "No gore"
@@ -2229,7 +2255,7 @@
    "Not the Old Growth ritual grove (which is healthy) and not the Avatar",
    "No gore",
    "No glowing pulse",
-   "Treant partial only"
+   "Do not show the whole Treant: partial only"
   ],
   "sources": [
    "10.4 Scenario 4: The Blighted Heartwood (Mire)",
@@ -2255,7 +2281,7 @@
   "atmosphere": "Brine-bitter curse in still air.",
   "avoid": [
    "Not the barrow entrance of Scenario 1",
-   "Salttide small, not a portrait",
+   "Do not portray Salttide: small only",
    "No readable markings",
    "No glow"
   ],
@@ -2280,7 +2306,7 @@
   ],
   "atmosphere": "Black water, held breath.",
   "avoid": [
-   "The serpent itself unseen",
+   "Do not show the serpent itself",
    "Not the Mire climate walkways or Vossegar's cathedral",
    "No glow",
    "No gore"
@@ -2308,7 +2334,7 @@
   ],
   "atmosphere": "Stubborn labour at the edge of ruin.",
   "avoid": [
-   "Not the finished stronghold at dusk (ch.11 opener)",
+   "Not a finished stronghold at dusk",
    "Not a noble castle",
    "No monsters",
    "No readable plans or text"
@@ -2335,7 +2361,7 @@
   ],
   "atmosphere": "Claustrophobic, wary greed.",
   "avoid": [
-   "Not the Khorrun hoard or the ch.6 hiring hall",
+   "Not a dragon's hoard or a crowded hiring hall",
    "No readable ledger text",
    "No heaps of glittering treasure",
    "Not a bank palace"
@@ -2362,7 +2388,7 @@
   "atmosphere": "Weary, mournful, lived-in.",
   "avoid": [
    "Not the Expedition Hall yard or Armoury racks",
-   "Names must be scratches, not readable letters",
+   "No readable letters in the names: scratches only",
    "No gore",
    "Not a luxurious bedroom"
   ],
@@ -2385,7 +2411,7 @@
   "activity": [],
   "atmosphere": "Old violence stored carefully.",
   "avoid": [
-   "Not the ch.7 Deepwarden forge (no smith, no anvil)",
+   "Not a forge: no smith, no anvil",
    "Not the melee weapons still life on sacking",
    "No readable names on helms",
    "No figures"
@@ -2437,10 +2463,10 @@
   ],
   "atmosphere": "Thin security.",
   "avoid": [
-   "Not the ch.11 returning party scene (no procession, no gate focus)",
+   "Not a returning party scene: no procession, no gate focus",
    "No monsters visible",
    "Not a grand castle wall",
-   "Torch not glowing"
+   "No glowing torch"
   ],
   "sources": [
    "11.3 Building the Stronghold - The Outer Walls"
@@ -2462,7 +2488,7 @@
   "atmosphere": "Uneasy ambition.",
   "avoid": [
    "Not the Fallen Observatory (ruined dome)",
-   "Not the burned library of ch.8",
+   "Not a burned library",
    "No glow rays",
    "No figures"
   ],
@@ -2472,7 +2498,7 @@
  },
  "ART-CAM-THE-STRONGHOLD-CHAPEL": {
   "identity": "The Stronghold Chapel, small, cold and crowded with votive offerings from those who survived by inches.",
-  "composition": "Interior at eye level looking toward a small altar; chipped saint statues and votives crowd the walls, a single mourner kneels.",
+  "composition": "Interior at eye level looking toward a small altar; chipped saint statues and votives crowd the walls, a single survivor stands at the altar lighting a votive candle.",
   "details": [
    "Chipped saint statues with worn faces",
    "Votive offerings: small figures, broken weapons, locks of hair",
@@ -2483,14 +2509,15 @@
    "Cold breath mist"
   ],
   "activity": [
-   "One mourner kneels at the altar, head bowed"
+   "One survivor stands at the altar lighting a votive candle, hood up"
   ],
   "atmosphere": "Hushed grief.",
   "avoid": [
    "Not the Sablekeep bastion or Voice Beneath the Bells drowned chapel",
    "No readable inscriptions",
    "No glowing halo",
-   "Not ornate"
+   "Not ornate",
+   "No kneeling figure"
   ],
   "sources": [
    "11.3 Building the Stronghold - The Stronghold Chapel"
@@ -2511,7 +2538,7 @@
   "activity": [],
   "atmosphere": "Calculating and weathered.",
   "avoid": [
-   "Not the ch.6 hiring hall (crowded) or the Vault",
+   "Not a crowded hiring hall or a treasure vault",
    "No readable text on maps",
    "No figures needed",
    "Not luxurious"
@@ -2565,7 +2592,7 @@
   "atmosphere": "Secretive and old.",
   "avoid": [
    "Not the Undermarches climate or the Sealed Archive scenario",
-   "Figure's face hidden",
+   "Do not show the figure's face",
    "No monsters",
    "No readable marks"
   ],
@@ -2574,7 +2601,7 @@
   ]
  },
  "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI": {
-  "identity": "The Broken Courier, the Appendix A quickstart scenario in which a royal courier was cut down on the old road and two small parties race for the dispatch satchel before wolves or rivals claim it.",
+  "identity": "The Broken Courier, the quickstart scenario in which a royal courier was cut down on the old road and two small parties race for the dispatch satchel before wolves or rivals claim it.",
   "composition": "Overcast morning view along an old road with a low ruined wall in the centre; the fallen courier and satchel lie beside the ruin, four wolves at the edge, tiny hero pairs at the far left and right.",
   "details": [
    "Old cobbled road with ruts and grass breaking through",
@@ -2592,9 +2619,9 @@
   "atmosphere": "Brisk, grim race.",
   "avoid": [
    "No gore; courier clearly dead but not gruesome",
-   "Not the Bandit's Toll or ch.2",
+   "Not a bandit roadblock and not two parties facing across a valley",
    "No readable seal on satchel",
-   "Wolves not detailed portraits"
+   "Do not detail the wolves: no portraits"
   ],
   "sources": [
    "A.4 Quickstart Scenario: The Broken Courier",

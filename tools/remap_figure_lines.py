@@ -6,7 +6,7 @@
 Builds an exact old->new line map from a diff of the two immutable snapshots (equal and
 same-length replaced runs only) and applies it to every line citation in
 figures/src/scenario_specs.json (keys lines, shared, spans, insert_after_line, board_line) and
-to 4-5 digit line numbers in figures/src/*.py. A citation whose line was deleted is a hard
+to 4-5 digit line numbers in figures/src/*.py and inside free-text spec notes. A citation whose line was deleted is a hard
 error: re-cite it by hand. Run `make figures` afterwards; its selfcheck verifies the cited text."""
 import argparse, difflib, json, re
 from pathlib import Path
@@ -47,6 +47,9 @@ def main():
                     o[k] = [[mp(x, where) for x in pr] for pr in v]
                 elif k in ("insert_after_line", "board_line") and isinstance(v, int):
                     o[k] = mp(v, where)
+                elif isinstance(v, str) and k not in ("id", "label", "kind", "glyph", "status"):
+                    o[k] = re.sub(r"\b\d{4,5}\b", lambda mo: str(m.get(int(mo.group(0)), int(mo.group(0))))
+                                  if int(mo.group(0)) <= n_old else mo.group(0), v)
                 else:
                     fix(v, o.get("id", where) if isinstance(o.get("id"), str) else where)
         elif isinstance(o, list):

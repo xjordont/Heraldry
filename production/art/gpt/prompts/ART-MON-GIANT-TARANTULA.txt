@@ -9,6 +9,7 @@ Leave at least 8% clean white margin on every side; nothing touches or is croppe
 
 COMPOSITION
 Low three-quarter ground view of the spider stalking across leaf litter on stilted, deliberate legs, forelegs raised, fangs lifted; a discarded war helm beside it for scale.
+Single creature, full body, three-quarter view, in a characteristic menacing pose; a small human figure for scale only if the creature is Large or Huge. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.
 Size: Small: smaller than a human.
 
 SUBJECT DETAILS
@@ -20,6 +21,8 @@ SUBJECT DETAILS
 * Palps in front of the fangs
 * Leaf litter and a rusted iron helm for scale
 * Gripping toe-pads suggesting it can climb walls
+Must be shown exactly:
+* Exactly eight legs
 
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
@@ -30,9 +33,8 @@ Patient, stilted menace in damp leaf litter.
 Use fine traditional pen-and-ink rendering: a confident, slightly heavier outer contour, crisp interior lines, crosshatching that follows the form, sparse stippling, and a few deliberate solid-black shapes for the deepest shadows. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn and weathered. The illustration must feel authentically hand-drawn rather than digitally rendered.
 
 FINAL VISUAL REQUIREMENTS
-Specific pitfalls to avoid:
-* Spiders have exactly eight legs.
-* It spins no snares: no web.
+Do not draw:
+* No web: it spins no snares.
 * Do not make it larger than a dog.
 * No human features.
 Avoid photorealism, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be detailed yet clean and readable at small size, suitable for seamless reproduction in a professionally printed fantasy rulebook.
