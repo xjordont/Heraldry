@@ -17,7 +17,8 @@ If a retry makes the image worse, go back to the better earlier one and use that
 | Failure | Add this sentence |
 |---|---|
 | Wrong count of limbs, eyes or heads | `Correction: exactly <N> <parts>, <layout>. Keep the pose and composition.` |
-| A must-show item missing or wrong | `Correction: <the item, as the prompt states it> must be clearly visible. Keep everything else.` |
+| Wrong subject (hard fail 1) | `Correction: this is <the subject exactly as the prompt's first line states it>, not <what the attempt shows>. Keep the format and the style.` |
+| A must-show item missing or wrong | `Correction: show <the item exactly as the prompt lists it>, clearly and unmistakably. Keep everything else.` |
 | A do-not-draw item present | `Correction: remove <the item>. Keep everything else.` |
 | Scenery behind a figure or still life | `Correction: no background. Only a small ground patch and cast shadow, pure white paper everywhere else.` |
 | Figure cropped or too close to the edge | `Correction: the whole subject fits inside the frame with at least 8% white margin on every side.` |
@@ -26,7 +27,7 @@ If a retry makes the image worse, go back to the better earlier one and use that
 | Lettering or runes | `Correction: no letters, runes, signs or writing anywhere.` |
 | Grey wash or soft shading | `Correction: no grey tone anywhere. Shade only with black ink hatching and stippling.` |
 | Colour | `Correction: black ink only, no colour at all.` |
-| Paper texture, stains or darkened corners | `Correction: perfectly flat, clean white paper with no texture or shading.` |
+| Paper texture, stains or darkened corners | `Correction: perfectly flat, even paper with no texture, stains or shading.` |
 | Reference bleed | `Correction: do not include <trees, standing stones, a palisade or a bridge>. The subject is only <the subject>.` |
 | A scale figure that was not asked for | `Correction: no human figure. Draw the creature at the stated size.` |
 | Missing scale figure that was asked for | `Correction: include one small human figure for scale, as described.` |

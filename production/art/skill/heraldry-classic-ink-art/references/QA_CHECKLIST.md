@@ -36,7 +36,7 @@ Run it on the image and on the print-size preview. `check` repeats the item's MU
 6. **Edges.** Scene: the drawing thins out to blank paper on all four sides, including the corners. Figure or still life: whole subject, about 8% white margin on every side, only a small ground patch and cast shadow, no box or frame.
 7. **Reference bleed.** The bleed list in `references/STYLE.md`.
 8. **Anatomy and construction.** Hands and grips. Every weapon is held or sheathed. Limbs attach. Armour has joints. Roofs, bridges and stairs connect to something. No repeated clones.
-9. **Scale.** Matches the `Size:` line. No scale figure unless asked.
+9. **Scale.** Matches the prompt: a creature's `Size:` line, or the people a scene says it has. No scale figure unless asked.
 10. **Print-size legibility.** In the preview the subject is one unmistakable silhouette.
 
 Any failure of 1–10 is a retry (`references/REPAIR.md`).

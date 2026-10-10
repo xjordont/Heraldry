@@ -35,6 +35,12 @@ HELPER_IN_REPO = "production/art/skill/heraldry-classic-ink-art/scripts/heraldry
 _REPO = None                 # set by main(): lets messages name the repo's own copy of this helper
 BATCH_PUSH_AT = 5            # status asks for a push once this many saved images are unsent
 ROUND_ENDS = ("redo", "pushed", "pending", "refused")
+STATE_WORDS = {"pending": "pending (nothing delivered yet)", "redo": "redo (the reviewer sent this image back)",
+               "saved": "saved here, not pushed yet", "pushed": "delivered (pushed); awaiting or past review",
+               "refused": "refused by the image tool (recorded)"}
+# statements that admit the must-show item is absent or could not be checked: that is a hard fail, not a pass
+ADMISSION = re.compile(r"(?<![a-z])(?:could ?n[o']t|couldn't|cannot|can't|can not|unable|not (?:drawn|shown|visible|present|depicted|verifiable|verified)"
+                       r"|missing|absent|fails?|failed|wrong|incorrect|zero)(?![a-z])|(?<![\d.])0 [a-z]", re.I)
 LOOKALIKE_MAX = 16           # of 256 difference bits: closer than this is warned as a re-encoded or resized copy
 
 # Mechanical tripwires. "scene" = vignette register; "figure" = isolated creature, person or still life.
@@ -135,18 +141,23 @@ def local_sha(path):
     return hashlib.sha256(data).hexdigest()
 
 
+def incoming_changes(repo):
+    """(have_git, changed, ahead): paths under assets/art/incoming that are uncommitted, or committed but not on origin/main."""
+    if not git_ok(repo):
+        return False, set(), set()
+    code, out = git(repo, "status", "--porcelain", "--untracked-files=all", "--", INCOMING_REL)
+    changed = {line[3:].strip().strip('"') for line in out.splitlines()} if code == 0 else set()
+    code, out = git(repo, "log", "origin/main..HEAD", "--name-only", "--pretty=format:", "--", INCOMING_REL)
+    ahead = {line.strip() for line in out.splitlines() if line.strip()} if code == 0 else set()
+    return True, changed, ahead
+
+
 def states(repo, q):
     """pending: no image; redo: image exists but the reviewer rejected it and it is not re-saved;
     saved: image exists and has not been sent (git: uncommitted or unpushed; no git: not yet recorded by the
     intake with the same bytes); pushed: image exists and was sent; refused: the latest receipt is a refusal."""
     sels = jload(repo / SELECTIONS_REL, {})
-    have_git = git_ok(repo)
-    changed, ahead = set(), set()
-    if have_git:
-        code, out = git(repo, "status", "--porcelain", "--untracked-files=all", "--", INCOMING_REL)
-        changed = {line[3:].strip().strip('"') for line in out.splitlines()} if code == 0 else set()
-        code, out = git(repo, "log", "origin/main..HEAD", "--name-only", "--pretty=format:", "--", INCOMING_REL)
-        ahead = {line.strip() for line in out.splitlines() if line.strip()} if code == 0 else set()
+    have_git, changed, ahead = incoming_changes(repo)
     refused = {i for i, r in last_receipts(repo).items() if r.get("refused")}
     res = {}
     for it in q["items"]:
@@ -331,13 +342,13 @@ def evaluate(m, item):
     return fails, warns, infos
 
 
-def preview(path, item, outdir, attempt=1):
+def preview(path, item, outdir, attempt=1, rnd=1):
     with Image.open(path) as src:
         im = _flat_rgb(src)
     width = max(200, int(item["print_w_in"] * 150))
     im = im.resize((width, max(1, round(width * im.height / im.width))), Image.LANCZOS)
     outdir.mkdir(parents=True, exist_ok=True)
-    out = outdir / f"{item['id']}_attempt{attempt}_print_size.png"
+    out = outdir / f"{item['id']}_r{rnd}_attempt{attempt}_print_size.png"
     im.save(out)
     return out
 
@@ -374,7 +385,9 @@ def _attempt_entry(data, iid):
     e = data.get(iid)
     if isinstance(e, list):                       # tolerate an older file format
         e = {"images": e, "closed": False}
-    return e or {"images": [], "closed": False}
+    e = dict(e or {"images": [], "closed": False})
+    e.setdefault("round", 1)
+    return e
 
 
 def attempts_of(repo, iid):
@@ -388,21 +401,21 @@ def attempts_used(repo, iid, state):
 
 
 def record_attempt(repo, iid, digest, state):
-    """Count one distinct generated image for this item and return the count for the current round.
+    """Count one distinct generated image for this item and return (count, round number) for the current round.
     A round ends when a saved image has been delivered, sent back or refused. Until then, for example in a
     drift-review redo before the push, the count carries on, so the budget really covers every generation."""
     f = scratch_dir(repo) / "attempts.json"
     data = jload(f, {})
     e = _attempt_entry(data, iid)
     if e["closed"] and state in ROUND_ENDS:
-        e = {"images": [], "closed": False}
+        e = {"images": [], "closed": False, "round": e["round"] + 1}
     e["closed"] = False
     if digest not in e["images"]:
         e["images"].append(digest)
     data[iid] = e
     f.parent.mkdir(parents=True, exist_ok=True)
     f.write_text(json.dumps(data))
-    return len(e["images"])
+    return len(e["images"]), e["round"]
 
 
 def close_attempts(repo, iid):
@@ -494,6 +507,7 @@ def cmd_doctor(a, repo):
         rc, out = git(repo, "status", "--porcelain", "--untracked-files=no")
         if rc == 0 and out.strip():
             notes.append("tracked files have uncommitted changes (fine if they are yours from this session)")
+    fixable = []
     bad_prompts = 0
     pointers = []
     for it in q["items"]:
@@ -509,8 +523,8 @@ def cmd_doctor(a, repo):
             elif f.read_bytes()[:len(LFS_MAGIC)] == LFS_MAGIC and r not in pointers:
                 pointers.append(r)
     if pointers:
-        blockers.append(f"{len(pointers)} reference image(s) are LFS pointers, not images. Fetch only these, then run doctor again: "
-                        f"git lfs pull --include=\"{','.join(pointers)}\"")
+        fixable.append(f"{len(pointers)} reference image(s) are LFS pointers, not images. Fetch only these, then run doctor again: "
+                       f"git lfs pull --include=\"{','.join(pointers)}\"")
     if bad_prompts:
         blockers.append(f"{bad_prompts} prompt files are missing or no longer match the queue hashes: git pull --rebase origin main")
     blockers = list(dict.fromkeys(blockers))
@@ -524,7 +538,12 @@ def cmd_doctor(a, repo):
         print("note:", n)
     if blockers:
         print("NOT READY:")
-        for b in blockers + delivery:
+        for b in blockers + fixable + delivery:
+            print(" -", b)
+        return 1
+    if fixable:
+        print("NOT READY YET (one step):")
+        for b in fixable:
             print(" -", b)
         return 1
     if delivery:
@@ -555,12 +574,31 @@ def cmd_status(a, repo):
     todo = [i for i, v in st.items() if v in ("redo", "pending")]
     unsent = bool(saved) or receipts_unpushed(repo)
     due = len(saved) >= BATCH_PUSH_AT or (unsent and (not todo or a.end))
-    if due and not git_ok(repo):
+    # what a push would sweep up: files that are not queue items, and images saved without a matching receipt
+    have_git, changed, ahead = incoming_changes(repo)
+    queue_ids = {it["id"] for it in q["items"]}
+    stray = sorted(p for p in (changed | ahead) if Path(p).stem not in queue_ids)
+    receipts = last_receipts(repo)
+    byid = {it["id"]: it for it in q["items"]}
+    no_receipt = [i for i in saved if not (receipts.get(i) and not receipts[i].get("refused")
+                                           and receipts[i].get("prompt_sha256") == byid[i]["prompt_sha256"])]
+    for p in stray:
+        print("WARNING: not a queue item, but changed under assets/art/incoming:", p)
+    for i in no_receipt:
+        print(f"WARNING: {i} has an image but no matching receipt, so it was not saved with `save`")
+    if stray:
+        action = ("STOP. The files above are not queue items. Remove them (git restore --staged --worktree, or delete) unless the owner "
+                  "put them there, then run status again.")
+    elif no_receipt:
+        action = (f"STOP. {', '.join(no_receipt)} have no receipt from `save` (placed by hand?). Delete the file, or run `save` on the image "
+                  "you generated.")
+    elif due and not git_ok(repo):
         action = (f"BUNDLE the saved images (`{helper()} bundle`) and hand the zip to the owner: git is not available here.")
     elif due:
-        span = f"{saved[0]} .. {saved[-1]}" if saved else "receipts"
+        span = ("receipts" if not saved else saved[0] if len(saved) == 1 else f"{saved[0]} .. {saved[-1]}")
+        paths = " ".join(f"'{INCOMING_REL}/{i}.*'" for i in saved)
         action = ("DRIFT REVIEW, THEN COMMIT AND PUSH. First `" + helper() + " sheet --refs` and redo the one or two worst inside their budgets. Then: "
-                  "git add assets/art/incoming production/art/gpt/RECEIPTS.jsonl ; "
+                  f"git add -A -- {paths} {RECEIPTS_REL} ; "
                   "git lfs ls-files (every new PNG must be listed; stop if not) ; "
                   f"git commit -m \"art(gpt): {span}\" ; git pull --rebase origin main ; git push origin main")
     elif todo:
@@ -574,7 +612,7 @@ def cmd_status(a, repo):
         action = ("NOTHING LEFT to generate in this queue"
                   + (f" ({len(refused)} refused: {', '.join(refused)}; tell Claude Code)" if refused else "")
                   + ". git pull origin main and run status again; a new queue means new work.")
-    if a.end and not due:
+    if a.end and not due and not stray and not no_receipt:
         action = "SESSION END: nothing is unsent. Write your report. Next session: " + action
     print("NEXT ACTION:", action)
     return 0
@@ -603,7 +641,10 @@ def cmd_show(a, repo):
     state = states(repo, q)[it["id"]]
     used = attempts_used(repo, it["id"], state)
     print(f"ID: {it['id']}\nTITLE: {it['title']}\nFAMILY/REGISTER: {it['family']}/{it['register']}")
-    print(f"SIZE: {it['size']}   PRINTED WIDTH: {it['print_w_in']} in   ATTEMPTS: at most {it['max_attempts']} (used so far: {used})")
+    w, h = (int(x) for x in it["size"].split("x"))
+    shape = "wide 3:2" if w > h else "tall 2:3" if h > w else "square 1:1"
+    print(f"IMAGE SIZE: {it['size']} pixels ({shape})   PRINTED WIDTH: {it['print_w_in']} in   ATTEMPTS: at most {it['max_attempts']} (used so far: {used})")
+    print("STATE:", STATE_WORDS[state])
     if state == "redo":
         why = jload(repo / SELECTIONS_REL, {}).get(it["id"], {}).get("rejected_reason")
         print("REDO: the reviewer sent this image back. Reason: " + (why or "none recorded") + "\n      A fresh attempt budget applies; "
@@ -636,7 +677,7 @@ def run_check(repo, q, iid, image):
         raise Fatal(f"{image}: not a readable image ({e})")
     fails, warns, infos = evaluate(m, it)
     digest = file_sha(image)
-    n = record_attempt(repo, it["id"], digest, states(repo, q)[it["id"]])
+    n, rnd = record_attempt(repo, it["id"], digest, states(repo, q)[it["id"]])
     if n > it["max_attempts"]:
         fails.append(f"attempt budget used up ({n} images checked, budget {it['max_attempts']}): do not generate again; "
                      "save the best earlier attempt with --accept-flags")
@@ -649,12 +690,12 @@ def run_check(repo, q, iid, image):
             warns.append(f"looks almost identical to {sim[1]} (difference {sim[0]} of 256): the same picture re-encoded or resized? Look before saving")
     if last_receipts(repo).get(it["id"], {}).get("refused"):
         infos.append("this ID is recorded as refused; a successful save replaces the refusal")
-    return it, m, fails, warns, infos, preview(image, it, scratch_dir(repo), n), n
+    return it, m, fails, warns, infos, preview(image, it, scratch_dir(repo), n, rnd), n, dup
 
 
 def cmd_check(a, repo):
     q = load_queue(repo)
-    it, m, fails, warns, infos, pv, n = run_check(repo, q, a.id, a.image)
+    it, m, fails, warns, infos, pv, n, dup = run_check(repo, q, a.id, a.image)
     verdict = "FAIL" if fails else "WARN" if warns else "PASS"
     if a.json:
         print(json.dumps({"id": it["id"], "result": verdict, "attempt": n, "max_attempts": it["max_attempts"], "fails": fails, "warns": warns,
@@ -690,10 +731,13 @@ def append_receipt(repo, rec):
 
 def cmd_save(a, repo):
     q = load_queue(repo)
-    it, m, fails, warns, infos, pv, n = run_check(repo, q, a.id, a.image)
+    it, m, fails, warns, infos, pv, n, dup = run_check(repo, q, a.id, a.image)
     text = prompt_text(repo, it)
     if prompt_sha(text) != it["prompt_sha256"]:
         raise Fatal(f"{it['prompt']} does not match the queue hash: git pull --rebase origin main, then regenerate from the current prompt")
+    if dup:
+        raise Fatal(f"this image is a byte copy of {dup}: never save a copy. If every attempt is a copy, record "
+                    f"`{helper()} refuse {it['id']} --reason \"the tool keeps returning a copy of {dup}\"` and move on")
     state = states(repo, q)[it["id"]]
     if state == "pushed" and not a.redo:
         raise Fatal(f"{it['id']} is already delivered and was not rejected: pass --redo only if the owner or Claude Code asked for a redo")
@@ -715,6 +759,12 @@ def cmd_save(a, repo):
                 missing.append(f"exactly one --must \"<what you counted or found>\" per MUST line ({len(it['must'])}): " + "; ".join(it["must"]))
             elif any(len(s.strip()) < 10 for s in a.must):
                 missing.append("each --must needs a real statement of 10 or more characters, such as \"counted 8 legs, 4 a side\"")
+            else:
+                for s in a.must:
+                    if ADMISSION.search(s):
+                        raise Fatal(f"the statement \"{s}\" says the item is missing, not drawn, wrong or could not be checked. That is a hard fail, "
+                                    "not a pass: retry (references/REPAIR.md). Only at the last allowed attempt may you save it, with --accept-flags "
+                                    "and --notes. If you meant the opposite, say it positively, for example \"all 8 legs present, 4 a side\"")
         elif a.must:
             raise Fatal("this item has no MUST lines: omit --must")
         if it["avoid"] and not a.avoid_clear:
@@ -740,6 +790,8 @@ def cmd_save(a, repo):
         rec["must_checked"] = a.must
     if a.avoid_clear:
         rec["avoid_clear"] = True
+    if a.redo or state == "redo":
+        rec["redo"] = True
     if a.accept_flags:
         rec["accepted_flags"] = True
         rec["accepted_at_attempt"] = n
@@ -757,7 +809,13 @@ def cmd_save(a, repo):
 def cmd_refuse(a, repo):
     q = load_queue(repo)
     it = item_of(q, a.id)
-    append_receipt(repo, {"id": it["id"], "refused": True, "reason": a.reason, "surface": "ChatGPT Work",
+    reason = (a.reason or "").strip()
+    if len(reason) < 10:
+        raise Fatal("--reason needs a real sentence of 10 or more characters: what the tool said, or what happened if it said nothing")
+    if states(repo, q)[it["id"]] == "pushed":
+        raise Fatal(f"{it['id']} is already delivered and is not a redo, so there is nothing to refuse. "
+                    "If a redo was refused it shows as redo in status; otherwise leave it alone")
+    append_receipt(repo, {"id": it["id"], "refused": True, "reason": reason, "surface": "ChatGPT Work",
                           "date_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d")})
     print(f"recorded the refusal of {it['id']} in {RECEIPTS_REL}: commit it with the next batch and name the item in your report")
     return 0
