@@ -41,6 +41,7 @@ def table_cell(blk, col):
 
 
 PLAN = ROOT / "production/art/SUBJECT_PLAN.json"
+OWNER = ROOT / "production/art/OWNER_PROMPTS.json"
 
 
 def audit(entries):
@@ -49,7 +50,7 @@ def audit(entries):
     separated by family framing or explicit direction; chapter subjects must not repeat an entry."""
     subj = {}
     for e in entries:
-        key = (e.get("subject") or "") + "|" + (e.get("direction") or "") + "|" + (e.get("flavour") or "")
+        key = (e.get("subject") or "") + "|" + (e.get("direction") or "") + "|" + (e.get("flavour") or "") + "|" + json.dumps(e.get("brief", {}).get("composition", ""))
         if key in subj:
             raise SystemExit(f"duplicate visual subject: {e['id']} and {subj[key]}")
         subj[key] = e["id"]
@@ -115,8 +116,18 @@ def main():
             e["family"] = "boss"
         if plan["direction"].get(e["id"]):
             e["direction"] = plan["direction"][e["id"]]
+    # per-entry briefs (orchestrator/worker art direction from the manuscript) and owner prompts
+    briefs = {}
+    for f in sorted((ROOT / "production/art/briefs").glob("*.json")):
+        briefs.update({k: v for k, v in json.loads(f.read_text()).items() if not k.startswith("_")})
+    owner = json.loads(OWNER.read_text()) if OWNER.exists() else {}
     for e in entries:
-        keys = ("family", "title", "subject", "composition", "flavour", "facts", "context") + (("direction",) if "direction" in e else ())
+        if e["id"] in briefs:
+            e["brief"] = briefs[e["id"]]
+        if e["id"] in owner:
+            e["owner_prompt_sha256"] = hashlib.sha256(owner[e["id"]].encode()).hexdigest()
+    for e in entries:
+        keys = ("family", "title", "subject", "composition", "flavour", "facts", "context") + tuple(k for k in ("direction", "brief", "owner_prompt_sha256") if k in e)
         e["spec_sha256"] = hashlib.sha256(json.dumps({k: e.get(k) for k in keys}, sort_keys=True).encode()).hexdigest()
     audit(entries)
     counts = {}

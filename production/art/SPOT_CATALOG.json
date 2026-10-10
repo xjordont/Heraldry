@@ -1,5 +1,5 @@
 {
- "source_sha256": "5da05cec6153ac11865874a0da416c002ce90b2dc4936fc9ce50abca9d3dbbe5",
+ "source_sha256": "d77a72f9030061f76ea61e947bf520dcc81628bd653f61ba144f2a474a088254",
  "counts": {
   "cover": 1,
   "chapter": 11,
@@ -380,7 +380,8 @@
     275,
     275
    ],
-   "spec_sha256": "31fe0e2edd06d54e58896813b8f9559471e5dfad7ea63c49a4f53d4edf5b67d5"
+   "owner_prompt_sha256": "9d137f8830443b3e1e85b43ff6f20eeb68cbcb887caaf50088e415579921534e",
+   "spec_sha256": "ec715ecb430476533435fb6602611bfeb3f87155d596793dc3f699176e787be0"
   },
   {
    "id": "ART-BAS-SABLEKEEP",

@@ -22,13 +22,13 @@
  "reference_instruction": "The attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.",
  "families": {
   "cover": {
-   "aspect": "4:3",
+   "aspect": "3:2",
    "size": "2K",
    "print_w_in": 4.8,
    "framing": "Cinematic establishing scene with one clear focal group; open white sky in the upper third reserved for the typeset title; strong black foreground framing. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
   },
   "chapter": {
-   "aspect": "16:9",
+   "aspect": "3:2",
    "size": "2K",
    "print_w_in": 5.8,
    "framing": "Wide establishing scene with a low horizon, black foreground framing and a lighter, finer-lined distance. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
@@ -52,7 +52,7 @@
    "framing": "The town or fortress seen from its approach road, with its defining feature unmistakable and tiny figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
   },
   "ancestry": {
-   "aspect": "3:4",
+   "aspect": "2:3",
    "size": "1K",
    "print_w_in": 1.9,
    "framing": "Single full-length adventurer of this ancestry in travel-worn gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery."
@@ -64,7 +64,7 @@
    "framing": "A small still life of the tools, garments and keepsakes of this background's trade; no figure, so it never resembles a class or ancestry portrait. Isolated on white paper; no background scenery."
   },
   "class": {
-   "aspect": "3:4",
+   "aspect": "2:3",
    "size": "1K",
    "print_w_in": 1.9,
    "framing": "Single full-length adventurer in an action-ready pose with class-typical arms and gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery."
@@ -100,7 +100,7 @@
    "framing": "Interior or architectural view of the described stronghold room. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
   },
   "boss": {
-   "aspect": "4:3",
+   "aspect": "3:2",
    "size": "1K",
    "print_w_in": 2.6,
    "framing": "The unique named boss shown with its distinguishing features in its own lair or setting, dramatic in scale; clearly an individual, not a typical member of a kind. Composition reads as a vignette that thins out into white paper toward irregular edges; no frame."
@@ -132,5 +132,51 @@
   "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
   "assets/art/style/STYLE-REF-02-panorama-line.jpg",
   "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+ ],
+ "prompt_v2": {
+  "note": "Prompt structure modelled on the owner's Greythorn prompt (2026-10-10). Sections are assembled by tools/art_generate.py prompt_for(); owner prompts in production/art/OWNER_PROMPTS.json override an entry entirely.",
+  "scene_families": [
+   "cover",
+   "chapter",
+   "world",
+   "climate",
+   "bastion",
+   "scenario",
+   "campaign",
+   "boss"
+  ],
+  "still_families": [
+   "background",
+   "item"
+  ],
+  "intro": "Create an exceptionally detailed black-and-white pen-and-ink illustration of {identity}, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.",
+  "format_scene": [
+   "{aspect_words} composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing.",
+   "The illustration must have a natural, irregular, hand-drawn white vignette around all four edges. The artwork gradually dissolves into blank ivory-white paper through increasingly sparse pen strokes, broken outlines, diminishing crosshatching, and scattered stippling.",
+   "Leave approximately 5-8% clean white margin around the perimeter, with an additional organic transition zone. Avoid digital blur, artificial feathering, or hard rectangular cropping. Preserve crisp detail and strong contrast throughout the central composition."
+  ],
+  "format_figure": [
+   "{aspect_words} composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing.",
+   "A single subject drawn whole, isolated on blank ivory-white paper: only a small patch of ground beneath it and its cast shadow, which fade out in sparse strokes and stippling. No background scenery.",
+   "Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide."
+  ],
+  "format_still": [
+   "{aspect_words} composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing.",
+   "A still-life arrangement isolated on blank ivory-white paper, resting on a small surface that fades out in sparse strokes and stippling. No figure and no background scenery.",
+   "Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge."
+  ],
+  "style_scene": "Use exceptionally fine traditional pen-and-ink rendering, with varied line weights, intricate crosshatching, stippling, textured bark and timber grain, irregular stonework and carefully constructed architecture. Strong foreground contrast and progressively lighter distant detail create atmospheric depth. Maintain accurate perspective, believable construction and coherent geography. The world shows withered beauty: once-grand things rusted, cracked, overgrown or hollowed by age. The illustration must feel authentically hand-drawn rather than digitally rendered.",
+  "style_figure": "Use fine traditional pen-and-ink rendering: a confident, slightly heavier outer contour, crisp interior lines, crosshatching that follows the form, sparse stippling, and a few deliberate solid-black shapes for the deepest shadows. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn and weathered. The illustration must feel authentically hand-drawn rather than digitally rendered.",
+  "final_scene": "Avoid photorealism, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should be exceptionally detailed yet visually readable, with an organically fading white vignette suitable for seamless reproduction in a professionally printed fantasy rulebook.",
+  "final_figure": "Avoid photorealism, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be detailed yet clean and readable at small size, suitable for seamless reproduction in a professionally printed fantasy rulebook.",
+  "reference": "If style reference images are attached, match their line weight, hatching density, contrast and finish exactly, but do not copy their subjects or compositions."
+ },
+ "gpt_anchor_ids": [
+  "ART-BAS-GREYTHORN",
+  "ART-CLI-THE-GREENMARK",
+  "ART-MON-GIANT-TARANTULA",
+  "ART-MON-UNDEAD-CHAMPION",
+  "ART-CLA-FIGHTER",
+  "ART-ANC-DWARF"
  ]
 }
