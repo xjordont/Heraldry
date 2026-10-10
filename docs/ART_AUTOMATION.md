@@ -62,7 +62,7 @@ Manuscript issues found while briefing are recorded in `production/art/SOURCE_NO
    - It commits a review contact sheet to `production/art/review/`.
 4. **The orchestrator** reviews each sheet, plus enlarged crops where needed, and then runs one of:
    - `tools/art_intake.py approve --ids ...`
-   - `reject --ids ...`, which returns the entry to the queue;
+   - `reject --ids ... --reason "..."`, which returns the entry to the queue; the reason is shown to the operator as a redo, so make it a sentence they can turn into a correction;
    - `approve-anchors`, which makes the received anchors the references for the batch queue.
 
 Only `approved` and `anchor-approved` art is placed in the book.

@@ -5,7 +5,7 @@
                      record it in SELECTIONS.json as status 'received' (route gpt) and write a review sheet
   approve --ids ...  orchestrator approval after visual review ('approved'; anchors: 'anchor-approved')
   approve-anchors    mark the received GPT anchors approved and make them the batch references
-  reject --ids ...   reject (the entry returns to the queue)
+  reject --ids ... [--reason TEXT]   reject (the entry returns to the queue; the reason is shown to the operator as a redo)
 
 Only 'approved'/'anchor-approved' art is placed in the book (tools/build_book.py)."""
 import argparse, hashlib, json, sys
@@ -83,13 +83,20 @@ def scan(a):
     print(json.dumps({"received": new}))
 
 
-def set_status(ids, status):
+def set_status(ids, status, reason=None):
     sels = g.load(g.SELECTIONS, {})
     for i in ids:
         if i not in sels:
             raise SystemExit(f"{i}: not received")
         sels[i]["status"] = status
         sels[i][status + "_at"] = g.now()
+        if status == "rejected":
+            if reason:
+                sels[i]["rejected_reason"] = reason
+            else:
+                sels[i].pop("rejected_reason", None)
+        else:
+            sels[i].pop("rejected_reason", None)
     g.save(g.SELECTIONS, sels)
 
 
@@ -109,13 +116,14 @@ def main():
     ap.add_argument("cmd", choices=["scan", "approve", "approve-anchors", "reject"])
     ap.add_argument("--ids", nargs="*", default=[])
     ap.add_argument("--by", default="orchestrator visual review")
+    ap.add_argument("--reason", default=None, help="with reject: why, in a sentence the operator can turn into a correction")
     a = ap.parse_args()
     if a.cmd == "scan":
         scan(a)
     elif a.cmd == "approve":
         set_status(a.ids, "approved")
     elif a.cmd == "reject":
-        set_status(a.ids, "rejected")
+        set_status(a.ids, "rejected", a.reason)
     else:
         approve_anchors(a)
 

@@ -33,10 +33,11 @@ If a retry makes the image worse, go back to the better earlier one and use that
 | Hands, grips or weapons wrong | `Correction: the <weapon> is held correctly in <both/one> hand<s>. Keep everything else.` |
 | Soft, blurry or hazy | `Correction: crisp, fine pen lines with sharp contrast and no haze.` |
 | Subject too small or too fine to read when printed small | `Correction: draw the subject larger, filling about 70% of the frame, with fewer and bolder forms.` |
+| The tool returned a reference or another item's image (`check` says byte-identical or looks almost identical) | `Correction: draw a new picture of <the subject>; it must not resemble any attached reference image or any other illustration.` |
 | Same pose or composition as a sibling | `Correction: <the pose or camera the prompt describes>, a different composition from the references.` |
 
 ## When a requirement seems to clash
 
 A must-show item that looks opposed to a do-not-draw line is almost always about scale or focus, not a contradiction. Satisfy both the narrowest way: draw the required item as small and incidental as the prompt's composition places it, and do not make it the subject. Do not stop, and do not use `--accept-flags`.
 
-If the prompt truly cannot be satisfied, or contradicts the rulebook text it quotes, do not fix it. Generate once as written, save with a note, and put the contradiction in your report. Claude Code owns the prompts.
+If the prompt truly cannot be satisfied, or contradicts the rulebook text it quotes, do not fix it and do not spend the budget on it. Record `refuse ID --reason "prompt cannot be satisfied: <what clashes>"`, list it in your report and move on. Claude Code owns the prompts and will republish it.

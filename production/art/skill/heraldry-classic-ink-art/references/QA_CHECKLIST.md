@@ -17,6 +17,8 @@ Calibrated on the approved Greythorn render, the three owner style samples and s
 | wash (figures, still lifes) | Heavy grey wash. | Possible grey wash or soft shading. |
 | edge (figures, still lifes) | Ink touches the image edge: a cropped limb, weapon, shadow or frame. | Stray marks at the edge, or the drawing enters the outer 6% margin. |
 | edge (scenes) | Ink runs to the edge: no vignette, or a frame or box. | Marks reach the outer 2%: check all four edges fade out. |
+| copy | Byte-identical to another delivered image or to one of the item's references. | Looks almost identical to one (a re-encoded or resized copy, within 16 of 256 difference bits): look before saving. |
+| budget | More images checked than the item's attempt budget. | |
 
 The intake's own flags (`colour`, `gray_wash`, `frame_or_box`) are printed as `info`. They go to the reviewer and do not reject anything. Dense, good scenes can approach them: the approved Greythorn render sits at 0.59 on a 0.60 grey-wash flag.
 

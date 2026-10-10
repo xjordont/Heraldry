@@ -8,7 +8,7 @@
   check ID IMAGE                 mechanical tripwires for one generated image; counts it as an attempt
   save ID IMAGE --must ... --avoid-clear   check, copy the image unmodified into assets/art/incoming, write the receipt
   refuse ID --reason TEXT        record that the image tool refused an item (no image exists to save)
-  sheet [ID ...]                 labelled contact sheet of saved images (default: all saved this session)
+  sheet [ID ...] [--refs]        labelled contact sheet (default: every saved image not yet pushed; name IDs for others)
   bundle [--out FILE.zip]        hand-off zip for when git push is impossible (default: the scratch folder)
 
 The repository is found by walking up from the current directory (or --repo). The queue,
@@ -31,6 +31,8 @@ INCOMING_REL = "assets/art/incoming"
 IMAGE_EXT = {"PNG": ".png", "JPEG": ".jpg", "WEBP": ".webp"}
 SIZES = {"1536x1024", "1024x1536", "1024x1024"}
 LFS_MAGIC = b"version https://git-lfs"
+HELPER_IN_REPO = "production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py"
+_REPO = None                 # set by main(): lets messages name the repo's own copy of this helper
 BATCH_PUSH_AT = 5            # status asks for a push once this many saved images are unsent
 ROUND_ENDS = ("redo", "pushed", "pending", "refused")
 LOOKALIKE_MAX = 16           # of 256 difference bits: closer than this is warned as a re-encoded or resized copy
@@ -63,7 +65,8 @@ def find_repo(start=None):
     for d in [p, *p.parents]:
         if (d / QUEUE_REL).is_file():
             return d
-    raise Fatal(f"{QUEUE_REL} not found above {p}: run inside the Heraldry repository clone, or pass --repo")
+    raise Fatal(f"{QUEUE_REL} not found above {p}: cd into the Heraldry repository clone and run the repo's own copy of the helper "
+                f"({HELPER_IN_REPO}), or pass --repo")
 
 
 def jload(path, default=None):
@@ -123,6 +126,15 @@ def file_sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def local_sha(path):
+    """sha256 of a delivered image. An LFS pointer file carries the real image's sha256 as its oid."""
+    data = Path(path).read_bytes()
+    if data[:len(LFS_MAGIC)] == LFS_MAGIC:
+        m = re.search(rb"oid sha256:([0-9a-f]{64})", data)
+        return m.group(1).decode() if m else None
+    return hashlib.sha256(data).hexdigest()
+
+
 def states(repo, q):
     """pending: no image; redo: image exists but the reviewer rejected it and it is not re-saved;
     saved: image exists and has not been sent (git: uncommitted or unpushed; no git: not yet recorded by the
@@ -144,13 +156,20 @@ def states(repo, q):
             res[it["id"]] = "refused"
         elif not files:
             res[it["id"]] = "pending"
-        elif (rels & (changed | ahead)) if have_git else sels.get(it["id"], {}).get("master", {}).get("sha256") != file_sha(files[0]):
+        elif (rels & (changed | ahead)) if have_git else sels.get(it["id"], {}).get("master", {}).get("sha256") != local_sha(files[0]):
             res[it["id"]] = "saved"
-        elif sels.get(it["id"], {}).get("status") == "rejected":
+        elif sels.get(it["id"], {}).get("status") == "rejected" and still_the_rejected_image(sels[it["id"]], files[0]):
             res[it["id"]] = "redo"
         else:
             res[it["id"]] = "pushed"
     return res
+
+
+def still_the_rejected_image(sel, file):
+    """A rejected item stays 'redo' only while the local file is still the image that was rejected. Once a different
+    image has been pushed it is awaiting the intake, whatever SELECTIONS.json still says."""
+    sha = (sel.get("master") or {}).get("sha256")
+    return not sha or local_sha(file) in (None, sha)
 
 
 def last_receipts(repo):
@@ -312,24 +331,36 @@ def evaluate(m, item):
     return fails, warns, infos
 
 
-def preview(path, item, outdir):
+def preview(path, item, outdir, attempt=1):
     with Image.open(path) as src:
         im = _flat_rgb(src)
     width = max(200, int(item["print_w_in"] * 150))
     im = im.resize((width, max(1, round(width * im.height / im.width))), Image.LANCZOS)
     outdir.mkdir(parents=True, exist_ok=True)
-    out = outdir / f"{item['id']}_print_size.png"
+    out = outdir / f"{item['id']}_attempt{attempt}_print_size.png"
     im.save(out)
     return out
 
 
 def helper():
-    """A runnable command prefix for messages, relative to the current directory."""
+    """A runnable command prefix for messages. Always the repo's own copy when there is one, so an installed copy
+    never sends the operator to itself."""
+    target = (_REPO / HELPER_IN_REPO) if _REPO and (_REPO / HELPER_IN_REPO).is_file() else Path(__file__)
     try:
-        rel = os.path.relpath(__file__)
+        rel = os.path.relpath(target)
     except ValueError:
-        rel = __file__
+        rel = str(target)
     return f"python {rel}"
+
+
+def copy_notice(repo):
+    """One line when this running file is not the repo's copy of the helper."""
+    mine, theirs = Path(__file__).resolve(), (repo / HELPER_IN_REPO).resolve()
+    if not theirs.is_file() or mine == theirs:
+        return None
+    if mine.read_bytes() == theirs.read_bytes():
+        return "helper: this is a copy of the repo's helper (identical); prefer the repo's own copy"
+    return f"WARNING: this helper differs from the repo's copy. Stop and run the repo's copy instead: {helper()} <command>"
 
 
 def scratch_dir(repo):
@@ -484,7 +515,11 @@ def cmd_doctor(a, repo):
         blockers.append(f"{bad_prompts} prompt files are missing or no longer match the queue hashes: git pull --rebase origin main")
     blockers = list(dict.fromkeys(blockers))
     print(f"queue phase={q['phase']} items={q['count']} schema={q.get('schema')}")
-    print(f"scratch folder (previews, sheets, attempt counts; keep downloaded images here too): {scratch_dir(repo)}")
+    scratch_dir(repo).mkdir(parents=True, exist_ok=True)
+    print(f"scratch folder (previews, sheets, attempt counts; keep every attempt's image here until the item is saved): {scratch_dir(repo)}")
+    note = copy_notice(repo)
+    if note:
+        print(note)
     for n in notes:
         print("note:", n)
     if blockers:
@@ -510,6 +545,13 @@ def cmd_status(a, repo):
     print(f"pending={count('pending')} redo={count('redo')} saved-not-pushed={len(saved)} pushed={count('pushed')} refused={len(refused)}")
     if refused:
         print("refused by the image tool (Claude Code owns the prompt): " + ", ".join(refused))
+    sels = jload(repo / SELECTIONS_REL, {})
+    for i, v in st.items():
+        if v == "redo":
+            print(f"redo {i}: " + (sels.get(i, {}).get("rejected_reason") or "no reason recorded; ask the owner if it is not obvious"))
+    note = copy_notice(repo)
+    if note and note.startswith("WARNING"):
+        print(note)
     todo = [i for i, v in st.items() if v in ("redo", "pending")]
     unsent = bool(saved) or receipts_unpushed(repo)
     due = len(saved) >= BATCH_PUSH_AT or (unsent and (not todo or a.end))
@@ -545,6 +587,8 @@ def cmd_next(a, repo):
     for it in todo[:a.n]:
         refs = ", ".join(Path(r).name for r in it["references"])
         print(f"{it['id']}  [{st[it['id']]}] {it['title']} | {it['size']} | {it['register']} | tries<={it['max_attempts']} | refs: {refs}")
+        if st[it["id"]] == "redo":
+            print("    redo reason: " + (jload(repo / SELECTIONS_REL, {}).get(it["id"], {}).get("rejected_reason") or "none recorded"))
     if not todo:
         print("nothing pending")
     return 0
@@ -556,9 +600,14 @@ def cmd_show(a, repo):
     text = prompt_text(repo, it)
     if prompt_sha(text) != it["prompt_sha256"]:
         raise Fatal(f"{it['prompt']} does not match the queue hash: git pull --rebase origin main, then retry")
-    used = attempts_used(repo, it["id"], states(repo, q)[it["id"]])
+    state = states(repo, q)[it["id"]]
+    used = attempts_used(repo, it["id"], state)
     print(f"ID: {it['id']}\nTITLE: {it['title']}\nFAMILY/REGISTER: {it['family']}/{it['register']}")
     print(f"SIZE: {it['size']}   PRINTED WIDTH: {it['print_w_in']} in   ATTEMPTS: at most {it['max_attempts']} (used so far: {used})")
+    if state == "redo":
+        why = jload(repo / SELECTIONS_REL, {}).get(it["id"], {}).get("rejected_reason")
+        print("REDO: the reviewer sent this image back. Reason: " + (why or "none recorded") + "\n      A fresh attempt budget applies; "
+              "base your correction sentence on the reason.")
     print("ATTACH THESE REFERENCES (and no others):")
     for r in it["references"]:
         print("  ", r)
@@ -600,7 +649,7 @@ def run_check(repo, q, iid, image):
             warns.append(f"looks almost identical to {sim[1]} (difference {sim[0]} of 256): the same picture re-encoded or resized? Look before saving")
     if last_receipts(repo).get(it["id"], {}).get("refused"):
         infos.append("this ID is recorded as refused; a successful save replaces the refusal")
-    return it, m, fails, warns, infos, preview(image, it, scratch_dir(repo)), n
+    return it, m, fails, warns, infos, preview(image, it, scratch_dir(repo), n), n
 
 
 def cmd_check(a, repo):
@@ -777,6 +826,8 @@ def cmd_bundle(a, repo):
                    "git lfs install; git add assets/art/incoming production/art/gpt/RECEIPTS.jsonl; git lfs ls-files\n"
                    f"git commit -m 'art(gpt): {ids[0] + ' .. ' + ids[-1] if ids else 'refusals'}'; git pull --rebase origin main; git push origin main\n")
     print(f"bundle: {out} ({len(ids)} images, {len(refused)} refusals)")
+    if git_ok(repo):
+        print("note: git is available here. Push instead of handing over a bundle, unless a push has failed.")
     return 0
 
 
@@ -787,7 +838,7 @@ def main(argv=None):
     sub.add_parser("doctor", help="environment, repo, queue and reference checks")
     p = sub.add_parser("status", help="queue state and the single next action")
     p.add_argument("--end", action="store_true", help="session end: ask for a push of anything unsent, even below the batch size")
-    p = sub.add_parser("next", help="the next items to generate")
+    p = sub.add_parser("next", help="the next items to generate (8 unless --n N)")
     p.add_argument("--n", type=int, default=8)
     p = sub.add_parser("show", help="one item: references, size, must and do-not-draw lists, verbatim prompt")
     p.add_argument("id")
@@ -819,8 +870,10 @@ def main(argv=None):
     p = sub.add_parser("bundle", help="hand-off zip for when git push is impossible")
     p.add_argument("--out", help="default: the scratch folder; must be outside the repository clone")
     a = ap.parse_args(argv)
+    global _REPO
     try:
         repo = find_repo(a.repo)
+        _REPO = repo
         return globals()["cmd_" + a.cmd](a, repo)
     except Fatal as e:
         print("ERROR:", e, file=sys.stderr)

@@ -481,6 +481,38 @@ class Runner(Isolated):
         code, out, err = save(self.root, "ART-T-BEAST", self.image("again.png", scale=0.62))
         self.assertEqual(code, 0, err)                                      # redo needs no --redo flag
 
+    def test_redo_shows_the_reviewers_reason_and_every_attempt_keeps_its_own_preview(self):
+        self.assertEqual(save(self.root, "ART-T-BEAST", self.image(scale=0.6))[0], 0)
+        data = (self.root / "assets/art/incoming/ART-T-BEAST.png").read_bytes()
+        (self.root / "production/art").mkdir(parents=True, exist_ok=True)
+        (self.root / "production/art/SELECTIONS.json").write_text(json.dumps({"ART-T-BEAST": {
+            "status": "rejected", "rejected_reason": "six legs, not eight", "master": {"sha256": hashlib.sha256(data).hexdigest()}}}))
+        status = run(self.root, "status")[1]
+        self.assertIn("redo ART-T-BEAST: six legs, not eight", status)
+        show = run(self.root, "show", "ART-T-BEAST")[1]
+        self.assertIn("REDO: the reviewer sent this image back. Reason: six legs, not eight", show)
+        self.assertIn("used so far: 0", show)
+        self.assertIn("redo reason: six legs, not eight", run(self.root, "next")[1])
+        for i in range(2):
+            run(self.root, "check", "ART-T-BEAST", str(self.image(f"r{i}.png", scale=0.5 + 0.05 * i)))
+        previews = sorted(f.name for f in ha.scratch_dir(self.root).glob("ART-T-BEAST_attempt*_print_size.png"))
+        self.assertEqual(previews, ["ART-T-BEAST_attempt1_print_size.png", "ART-T-BEAST_attempt2_print_size.png"])
+
+    def test_doctor_creates_the_scratch_folder_and_the_helper_names_the_repos_own_copy(self):
+        self.assertFalse(ha.scratch_dir(self.root).exists())
+        run(self.root, "doctor")
+        self.assertTrue(ha.scratch_dir(self.root).is_dir())
+        mine = Path(ha.__file__)
+        repo_copy = self.root / ha.HELPER_IN_REPO
+        repo_copy.parent.mkdir(parents=True)
+        repo_copy.write_bytes(mine.read_bytes())
+        out = run(self.root, "doctor")[1]
+        self.assertIn("identical", out)
+        self.assertIn(ha.HELPER_IN_REPO, run(self.root, "status")[1], "messages name the repo's copy")
+        repo_copy.write_text(repo_copy.read_text() + "\n# newer\n")
+        self.assertIn("WARNING: this helper differs from the repo's copy", run(self.root, "doctor")[1])
+        self.assertIn("WARNING: this helper differs from the repo's copy", run(self.root, "status")[1])
+
     def test_scratch_is_per_repository_and_overridable(self):
         other = self.tmp / "other"
         other.mkdir()
@@ -583,11 +615,35 @@ class GitStates(Isolated):
         (scene_image() if scene else figure_image(scale=0.55 + 0.02 * len(list(self.tmp.glob("img*"))))).save(p)
         return p
 
+    def test_a_redo_clears_once_a_different_image_is_pushed_even_before_the_intake_runs(self):
+        root = self.make()
+        q = ha.load_queue(root)
+        first = self._img()
+        self.assertEqual(save(root, "ART-T-BEAST", first)[0], 0)
+        git(root, "add", "-A")
+        git(root, "commit", "-q", "-m", "first")
+        git(root, "push", "-q", "origin", "main")
+        sel = {"ART-T-BEAST": {"status": "rejected", "rejected_reason": "legs wrong",
+                               "master": {"sha256": hashlib.sha256(first.read_bytes()).hexdigest()}}}
+        (root / "production/art").mkdir(exist_ok=True)
+        (root / "production/art/SELECTIONS.json").write_text(json.dumps(sel))
+        self.assertEqual(ha.states(root, q)["ART-T-BEAST"], "redo")
+        redo = self._img()
+        self.assertEqual(save(root, "ART-T-BEAST", redo)[0], 0, "a redo needs no --redo flag")
+        self.assertEqual(ha.states(root, q)["ART-T-BEAST"], "saved")
+        git(root, "add", "-A")
+        git(root, "commit", "-q", "-m", "redo")
+        git(root, "push", "-q", "origin", "main")
+        # SELECTIONS.json still says rejected (the intake has not run), but a different image is now on the remote
+        self.assertEqual(ha.states(root, q)["ART-T-BEAST"], "pushed")
+        self.assertNotIn("GENERATE next: ART-T-BEAST", run(root, "status", "--end")[1])
+
     def test_bundle_with_git_uses_unpushed_images(self):
         root = self.make()
         self.assertEqual(save(root, "ART-T-BEAST", self._img())[0], 0)
         code, out, err = run(root, "bundle")
         self.assertEqual(code, 0, err)
+        self.assertIn("git is available here", out)
         git(root, "add", "-A")
         git(root, "commit", "-q", "-m", "a")
         git(root, "push", "-q", "origin", "main")
@@ -634,6 +690,20 @@ class IntakeContract(Isolated):
         self.assertEqual(s["prompt_sha256"], item["prompt_sha256"])
         self.assertEqual((s["surface"], s["model"]), ("ChatGPT Work", "GPT Images 2.5"))
         self.assertNotIn("ART-CLA-FIGHTER", sels, "a refusal line is not an image")
+
+
+class PointerHashes(Isolated):
+    def test_an_lfs_pointer_carries_the_images_sha_so_a_skip_smudge_clone_still_knows_what_it_holds(self):
+        img = self.tmp / "a.png"
+        figure_image().save(img)
+        digest = hashlib.sha256(img.read_bytes()).hexdigest()
+        pointer = self.tmp / "pointer.png"
+        pointer.write_text(f"version https://git-lfs.github.com/spec/v1\noid sha256:{digest}\nsize {img.stat().st_size}\n")
+        self.assertEqual(ha.local_sha(img), digest)
+        self.assertEqual(ha.local_sha(pointer), digest)
+        self.assertTrue(ha.still_the_rejected_image({"master": {"sha256": digest}}, pointer))
+        self.assertFalse(ha.still_the_rejected_image({"master": {"sha256": "0" * 64}}, pointer), "a different image is not the rejected one")
+        self.assertTrue(ha.still_the_rejected_image({}, pointer), "no recorded hash: assume it is still the rejected image")
 
 
 class ValidatorCli(unittest.TestCase):
