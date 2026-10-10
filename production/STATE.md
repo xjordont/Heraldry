@@ -99,7 +99,7 @@ Mandatory: every complete fit-capable scenario, section/subsection, table, proce
   - Noxcloth: size M.
   - The Mire 2: Swamp Goblins replace Troglodytes.
   - The Mire 5: summons Zombies, not Troglodytes.
-- Not applied: the requested Basilisk/Medusa cone Gaze. Both already have Petrifying Gaze (AI Step 1), so this awaits an owner decision on replacing or modifying it (production/art/SOURCE_NOTES.md).
+- Basilisk/Medusa cone Gaze: not applied. Both already have Petrifying Gaze (AI Step 1); owner decision 2026-10-10 "Leave them as they are." Their briefs were corrected to show the gaze.
 - Figures: FIG-52 redrawn (Swamp Goblins; labels clear of all lines); 1,056 figure line citations remapped to RC488. An independent re-review gives gate PASS 57/57, 0 open.
 - Briefs, prompts, queue and ILLUSTRATION_LIST updated for the changed entries.
 - Clean build: 597 interior pages, identical pagination; 11 pages differ from RC487, all inspected. 19/19 checks PASS; release ZIP built. The RC486/RC487 dist PDFs are retired from dist/. Physical proof NOT TESTED.

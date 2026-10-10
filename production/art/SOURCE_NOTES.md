@@ -18,7 +18,7 @@
 
 The Basilisk and Medusa already have **Petrifying Gaze (AI Step 1)**. In it, the nearest visible enemy within 6" must pass an SPI Check. On a failure it is Immobilized; on a Critical Failure it is Stunned, gains +4 AV and becomes immune to forced movement. The earlier note that they lacked a gaze was wrong.
 
-The owner's requested 8" cone Gaze (Stunned on a failed SPI Check) was not applied. Adding it would give each creature a second gaze step, so the owner needs to decide whether it should replace or modify Petrifying Gaze.
+The owner's requested 8" cone Gaze was not applied. Owner decision, 2026-10-10: "Leave them as they are." Petrifying Gaze stays unchanged, and the Basilisk and Medusa briefs now depict the gaze.
 
 ## Still open
 

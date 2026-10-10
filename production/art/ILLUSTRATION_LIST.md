@@ -3769,12 +3769,12 @@ Specific pitfalls to avoid:
 BASILISK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create an exceptionally detailed black-and-white pen-and-ink illustration of Basilisk, Ashlands Elite, medium: an ox-sized, heavy, eight-legged reptile whose gaze slowly turns flesh to stone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
-Three-quarter view of the basilisk dragging itself over rubble with its head low and eyes pale, a half-petrified statue in the background.
+Three-quarter view of the basilisk dragging itself over rubble, head raised and turned toward the viewer with a fixed, unblinking petrifying stare, half-petrified statues behind.
 Size: Medium: about human-sized.
 SUBJECT DETAILS
 * Eight reptilian legs, four a side
 * Heavy lizard body the size of an ox
-* Wide blunt head with heavy brow and pale unblinking eyes
+* Wide blunt head with heavy brow and large, pale, unblinking eyes fixed in a petrifying stare
 * Rough scaled hide with bony ridges
 * Crawling pose with belly near the ground
 * Statues of surprised people, caught mid-stride, scattered behind
@@ -5377,15 +5377,15 @@ Specific pitfalls to avoid:
 
 ```text
 MEDUSA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Medusa, Sun-Drowned Elite, medium: a serpent-haired figure among statues that were once admirers, fighting with shortsword and snake-hair, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create an exceptionally detailed black-and-white pen-and-ink illustration of Medusa, Sun-Drowned Elite, medium: a serpent-haired figure whose petrifying gaze fills the tomb-galleries with statues, fighting with shortsword and snake-hair, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
 COMPOSITION
 Three-quarter view of the medusa standing among statues in a tomb gallery, shortsword in hand and serpent hair writhing.
 Size: Medium: about human-sized.
 SUBJECT DETAILS
-* Woman-shaped figure in a draped robe
+* Robed, human-shaped figure in a draped, weathered robe
 * Head of living snakes in place of hair
-* Eyes hidden in the shadow of a hood or blindfold so no gaze effect is drawn
-* Shortsword in right hand
+* Eyes open and fixed in a cold petrifying stare, drawn with small hard pupils (no glow)
+* Shortsword in the right hand
 * Surrounding statues of surprised petrified people caught mid-stride
 * Gilded tomb-gallery columns
 * Snake-hair biting forward
@@ -5396,6 +5396,7 @@ Elegant doom.
 Specific pitfalls to avoid:
 * Not the Night Hag or Harpy.
 * Snake hair, not tentacles.
+* No glowing eyes or beams: the gaze is shown by the stare and the statues.
 * No gore.
 ```
 
