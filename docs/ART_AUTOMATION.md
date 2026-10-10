@@ -25,7 +25,9 @@ Owner decision, 2026-10-08 (Claude Code session): "I want to automate the entire
 5. **Ledger and budget.** Every API call is appended to `production/art/GENERATION_LEDGER.jsonl` with its token usage and an estimated cost. The run stops at `budget_usd`; Google's billing console is the authoritative cost.
 6. **Resuming.** The workflow commits progress every 10 entries and stops cleanly before the job time limit. Rerunning it continues from the pending entries.
 
-Changing an entry's flavour text or the style bible changes its `spec_sha256`, which makes that entry pending again.
+Changing an entry's flavour text, its subject plan or its family changes its `spec_sha256`, which makes that entry pending again. Style-bible changes do not invalidate selected art automatically; regenerate the affected entries with `--ids`.
+
+**Uniqueness.** `production/art/SUBJECT_PLAN.json` holds the orchestrator's art direction: fresh chapter subjects and a concrete, distinct image for every entry whose flavour text is abstract or whose name collides with another entry. Named bosses form their own `boss` family (shown in their lair); scenarios show place and situation, with creatures small; backgrounds are still lifes of their trade. `tools/art_catalog.py` fails on a duplicate subject or an unseparated name collision. `tools/art_list.py` writes `production/art/ILLUSTRATION_LIST.md` with every entry's exact prompt.
 
 ## Running it
 
