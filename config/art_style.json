@@ -30,8 +30,9 @@
   "chapter": {
    "aspect": "3:2",
    "size": "2K",
-   "print_w_in": 5.8,
-   "framing": "Wide establishing scene with a low horizon, black foreground framing and a lighter, finer-lined distance. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame."
+   "print_w_in": 4.5,
+   "framing": "Wide establishing scene with a low horizon, black foreground framing and a lighter, finer-lined distance. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame.",
+   "note": "3:2 art at 4.5 in wide is 3.0 in tall, matching the chapter-opener art slot"
   },
   "world": {
    "aspect": "3:2",
@@ -82,10 +83,10 @@
    "framing": "Still-life arrangement of the described objects, worn and used. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery."
   },
   "tradition": {
-   "aspect": "1:1",
+   "aspect": "3:2",
    "size": "1K",
-   "print_w_in": 1.6,
-   "framing": "Small emblematic vignette of a caster mid-ritual or the visible effect of the magic, rendered in ink marks only. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery."
+   "print_w_in": 2.6,
+   "framing": "Small scene vignette of the tradition's magic at work, densest at the caster and thinning into white paper toward irregular edges; no frame."
   },
   "scenario": {
    "aspect": "3:2",
@@ -143,7 +144,8 @@
    "bastion",
    "scenario",
    "campaign",
-   "boss"
+   "boss",
+   "tradition"
   ],
   "still_families": [
    "background",

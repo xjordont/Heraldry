@@ -49,6 +49,14 @@ def scan(a):
         if s and s.get("master", {}).get("sha256") == h:
             continue
         e = ents[f.stem]
+        warn = []
+        qsha = queue.get(f.stem, {}).get("prompt_sha256")
+        if rec.get(f.stem, {}).get("prompt_sha256") and qsha and rec[f.stem]["prompt_sha256"] != qsha:
+            warn.append("receipt prompt hash differs from the queued prompt")
+        aw, ah = (int(x) for x in g.CFG["families"][e["family"]]["aspect"].split(":"))
+        with Image.open(f) as _im:
+            if abs(_im.width / _im.height - aw / ah) > 0.05 * aw / ah:
+                warn.append(f"aspect {_im.width}x{_im.height} differs from {aw}:{ah}")
         ink = g.INK / f"{f.stem}.png"
         info = prep(f, ink)
         im = Image.open(f)
@@ -57,7 +65,7 @@ def scan(a):
                         "spec_sha256": e["spec_sha256"], "prompt_sha256": r.get("prompt_sha256") or queue.get(f.stem, {}).get("prompt_sha256"),
                         "status": "received", "received_at": g.now(),
                         "surface": r.get("surface", "ChatGPT Work image generation"), "model": r.get("model", "not recorded"),
-                        "notes": r.get("notes", ""),
+                        "notes": r.get("notes", ""), "intake_warnings": warn,
                         "master": {"path": str(f.relative_to(ROOT)), "sha256": h, "px": list(im.size)},
                         "ink": {"path": info["dst"], "sha256": hashlib.sha256(ink.read_bytes()).hexdigest(), "px": info["ink_px"],
                                 "flags": info["flags"], "max_print_w_in_300ppi": info["max_print_w_in_300ppi"]},

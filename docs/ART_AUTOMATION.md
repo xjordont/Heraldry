@@ -68,7 +68,7 @@ Only `approved` and `anchor-approved` art is placed in the book.
 ## Layout
 
 - `tools/build_book.py` places approved ink art above each entry's flavour text, inside that entry's keep unit. The one-page-keep audit therefore includes the image.
-- Each image prints at its family width, never above native 300 ppi. GPT images are at most 1536 px on the long side, so chapter openers print about 5.1 in wide.
+- Each image prints at its family width, never above native 300 ppi. GPT images are at most 1536 px on the long side. Chapter openers are 3:2 at 4.5 in wide, 3.0 in tall, matching the chapter-opener art slot.
 - Chapter openers and the cover use `ART-CHnn-002` and `ART-COVER-002` once approved, and fall back to the original masters until then.
 - Artwork changes never change the manuscript RC number.
 
