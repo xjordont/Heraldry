@@ -38,7 +38,7 @@ def main():
             raise SystemExit("GPT anchors are not approved yet")
         ids = sorted((i for i in ents if i not in done),
                      key=lambda i: (ORDER.index(ents[i]["family"]), i))
-        refs = anchors["references"]
+        refs = anchors["references"] + g.CFG["style_refs"]
     (GPT / "prompts").mkdir(parents=True, exist_ok=True)
     for old in (GPT / "prompts").glob("*.txt"):
         old.unlink()

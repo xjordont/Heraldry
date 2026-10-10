@@ -89,22 +89,23 @@ def prompt_for(e, with_refs):
         comp.append(b["composition"])
     if e.get("direction"):
         comp.append(e["direction"])
-    if not b.get("composition"):
+    if kind != "scene" or not b.get("composition"):
         comp.append(fam["framing"])
     if e["family"] in ("monster", "boss"):
         size = CFG["size_words"].get((e.get("facts") or {}).get("size_code") or "", "")
         if size:
             comp.append("Size: " + size + ".")
     out.append("COMPOSITION\n" + "\n".join(comp))
-    if b.get("details"):
-        out.append("SUBJECT DETAILS\n" + "\n".join("* " + d for d in b["details"]))
+    if b.get("details") or b.get("must"):
+        out.append("SUBJECT DETAILS\n" + "\n".join("* " + d for d in b.get("details", []))
+                   + ("\nMust be shown exactly:\n" + "\n".join("* " + d for d in b["must"]) if b.get("must") else ""))
     if b.get("activity"):
         out.append(("HUMAN ACTIVITY" if kind == "scene" else "ACTION") + "\n" + "\n".join("* " + d for d in b["activity"]))
     if e.get("flavour"):
         out.append("SOURCE TEXT\nDepict this faithfully and invent nothing that contradicts it:\n\"" + e["flavour"] + "\"")
     atm = b.get("atmosphere", "The atmosphere is grounded, austere, mysterious and subtly ominous.")
     out.append("ARTISTIC STYLE AND ATMOSPHERE\n" + atm + "\n" + v2["style_" + ("scene" if kind == "scene" else "figure")])
-    final = ["Specific pitfalls to avoid:"] + ["* " + x.rstrip(".") + "." for x in b["avoid"]] if b.get("avoid") else []
+    final = ["Do not draw:"] + ["* " + x.rstrip(".") + "." for x in b["avoid"]] if b.get("avoid") else []
     final.append(v2["final_" + ("scene" if kind == "scene" else "figure")])
     out.append("FINAL VISUAL REQUIREMENTS\n" + "\n".join(final))
     if with_refs:
