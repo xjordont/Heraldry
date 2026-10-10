@@ -5415,11 +5415,11 @@
    ],
    "brief": {
     "identity": "Basilisk, Ashlands Elite, medium: an ox-sized, heavy, eight-legged reptile whose gaze slowly turns flesh to stone.",
-    "composition": "Three-quarter view of the basilisk dragging itself over rubble with its head low and eyes pale, a half-petrified statue in the background.",
+    "composition": "Three-quarter view of the basilisk dragging itself over rubble, head raised and turned toward the viewer with a fixed, unblinking petrifying stare, half-petrified statues behind.",
     "details": [
      "Eight reptilian legs, four a side",
      "Heavy lizard body the size of an ox",
-     "Wide blunt head with heavy brow and pale unblinking eyes",
+     "Wide blunt head with heavy brow and large, pale, unblinking eyes fixed in a petrifying stare",
      "Rough scaled hide with bony ridges",
      "Crawling pose with belly near the ground",
      "Statues of surprised people, caught mid-stride, scattered behind",
@@ -5433,10 +5433,10 @@
      "Do not show gore"
     ],
     "sources": [
-     "9.7 The Bestiary, Ashlands Bestiary: Basilisk [Elite]"
+     "9.7 The Bestiary, Ashlands Bestiary: Basilisk [Elite] (Petrifying Gaze, AI Step 1)"
     ]
    },
-   "spec_sha256": "2c5b2631d40f0effd2006343fd9d2498472518ae49c147074154aa1e7084e0ef"
+   "spec_sha256": "dd1747c41082531f8420b35d6fd2b8109d7b9e76f1882a311fdd79774e24c4e0"
   },
   {
    "id": "ART-MON-ASHEN-REVENANT",
@@ -7879,13 +7879,13 @@
     9560
    ],
    "brief": {
-    "identity": "Medusa, Sun-Drowned Elite, medium: a serpent-haired figure among statues that were once admirers, fighting with shortsword and snake-hair.",
+    "identity": "Medusa, Sun-Drowned Elite, medium: a serpent-haired figure whose petrifying gaze fills the tomb-galleries with statues, fighting with shortsword and snake-hair.",
     "composition": "Three-quarter view of the medusa standing among statues in a tomb gallery, shortsword in hand and serpent hair writhing.",
     "details": [
-     "Woman-shaped figure in a draped robe",
+     "Robed, human-shaped figure in a draped, weathered robe",
      "Head of living snakes in place of hair",
-     "Eyes hidden in the shadow of a hood or blindfold so no gaze effect is drawn",
-     "Shortsword in right hand",
+     "Eyes open and fixed in a cold petrifying stare, drawn with small hard pupils (no glow)",
+     "Shortsword in the right hand",
      "Surrounding statues of surprised petrified people caught mid-stride",
      "Gilded tomb-gallery columns",
      "Snake-hair biting forward"
@@ -7894,13 +7894,14 @@
     "avoid": [
      "Not the Night Hag or Harpy",
      "Snake hair, not tentacles",
+     "No glowing eyes or beams: the gaze is shown by the stare and the statues",
      "No gore"
     ],
     "sources": [
-     "9.7 The Bestiary, Sun-Drowned Bestiary: Medusa [Elite]"
+     "9.7 The Bestiary, Sun-Drowned Bestiary: Medusa [Elite] (Petrifying Gaze, AI Step 1)"
     ]
    },
-   "spec_sha256": "1582f60fdb2c1e167beb7caea21de19a2cd789967e45e9ef8644902bae8d21e6"
+   "spec_sha256": "08dfa67dbd570ab42e2305a9d316ddce6c377c4a7fdadc1738c1fd7b21ea17d3"
   },
   {
    "id": "ART-MON-TOMB-NECROMANCER",
