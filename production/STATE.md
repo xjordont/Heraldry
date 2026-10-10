@@ -135,3 +135,9 @@ Mandatory: every complete fit-capable scenario, section/subsection, table, proce
   - Art size words reverted: M is "about human-sized"; L is "roughly twice a human's height or bulk". The Basilisk brief is now Large.
   - Figure delta review recorded; gate 57/57.
   - Pages 280 and 434 inspected; 19/19 checks PASS; RC492 release ZIP built. Physical proof NOT TESTED.
+- **ChatGPT Work skill v4** (artwork track; no manuscript change, so no RC increment; owner asked 2026-10-10 to review the v3.1 skill zip and produce v4):
+  - Queue schema 2: each item has a register, at most three references chosen for that register, printed width, attempt budget and the brief's must and avoid lists. The old queue attached every reference to every item.
+  - New: `production/art/skill/heraldry-classic-ink-art/` (SKILL.md, references, `heraldry_art.py`, `validate_skill.py`), `tools/art_skill_build.py` and `production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip`. `production/art/gpt/INSTRUCTIONS.md` rewritten to match; `docs/ART_AUTOMATION.md` updated.
+  - Tests: `tests/test_art_skill.py` (helper classification calibrated on real and synthetic images, parity with `art_ink`, a real git state machine, package currency).
+  - Art generation still awaits the owner running ChatGPT Work on the anchors queue. No new images exist yet.
+
