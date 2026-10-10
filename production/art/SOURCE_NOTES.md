@@ -20,10 +20,19 @@ The Basilisk and Medusa already have **Petrifying Gaze (AI Step 1)**. In it, the
 
 The owner's requested 8" cone Gaze was not applied. Owner decision, 2026-10-10: "Leave them as they are." Petrifying Gaze stays unchanged, and the Basilisk and Medusa briefs now depict the gaze.
 
-## Still open
+## Resolved in RC489 and RC490
+
+The independent audit (production/qa/rc488-audit-manuscript.json): Forsaken Duelist; Giant Scorpion; Undead Sentinel; Tomb Guardian; Spectre and Ice Wraith; Gloomspore Jelly (now "the size of a man"); Noxcloth; Iron Golem; Bandit; Elder Vrymk; Pale City 3 and the secondary objectives; Deep Elf Priest and Scale-Shaman Quarterstaff.
+
+## Still open (owner decision)
+
+- Desert Naga Hexscale applies Sleeping; its flavour says "leave them weak".
+- Undermarches 6 rewards an allied Spectre (Ashlands).
+- Judgement calls in the audit's B-13..B-17: burrowing through rock, weapon damage types that differ from table weapons of the same name, size words, and flavour traits with no rule.
+
+## Still open (art only)
 
 | Entry | Note | What the art does |
 |---|---|---|
-| Giant Scorpion, Gloomspore Jelly | The Jelly is still "the size of a cart" but coded M | Follows the size code |
 | Dire Bear, Giant Skeleton | "Twice a man's height", coded L | Follows the size code |
 | Hydra | No head count is given | Draws five to seven necks |

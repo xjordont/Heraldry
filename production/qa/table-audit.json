@@ -4785,8 +4785,8 @@
   {
    "id": "T179",
    "src_lines": [
-    9529,
-    9531
+    9528,
+    9530
    ],
    "heading": "Fire Elemental [Cannon]",
    "columns": 6,
@@ -4811,8 +4811,8 @@
   {
    "id": "T180",
    "src_lines": [
-    9546,
-    9548
+    9545,
+    9547
    ],
    "heading": "Giant Skeleton [Brute]",
    "columns": 6,
@@ -4837,8 +4837,8 @@
   {
    "id": "T181",
    "src_lines": [
-    9564,
-    9566
+    9563,
+    9565
    ],
    "heading": "Medusa [Elite]",
    "columns": 6,
@@ -4863,8 +4863,8 @@
   {
    "id": "T182",
    "src_lines": [
-    9585,
-    9587
+    9583,
+    9585
    ],
    "heading": "Tomb Necromancer [Controller]",
    "columns": 6,
@@ -4889,8 +4889,8 @@
   {
    "id": "T183",
    "src_lines": [
-    9604,
-    9606
+    9602,
+    9604
    ],
    "heading": "Tomb Guardian [Soldier]",
    "columns": 6,
@@ -4915,8 +4915,8 @@
   {
    "id": "T184",
    "src_lines": [
-    9626,
-    9628
+    9624,
+    9626
    ],
    "heading": "Brass Golem [Brute]",
    "columns": 6,
@@ -4941,8 +4941,8 @@
   {
    "id": "T185",
    "src_lines": [
-    9648,
-    9650
+    9646,
+    9648
    ],
    "heading": "Manticore [Elite]",
    "columns": 6,
@@ -4967,8 +4967,8 @@
   {
    "id": "T186",
    "src_lines": [
-    9670,
-    9672
+    9668,
+    9670
    ],
    "heading": "Demon [Elite]",
    "columns": 6,
@@ -4993,8 +4993,8 @@
   {
    "id": "T187",
    "src_lines": [
-    9694,
-    9696
+    9692,
+    9694
    ],
    "heading": "Blue Dragon [Elite]",
    "columns": 6,
@@ -5019,8 +5019,8 @@
   {
    "id": "T188",
    "src_lines": [
-    9718,
-    9720
+    9716,
+    9718
    ],
    "heading": "Bogling [Minion]",
    "columns": 6,
@@ -5045,8 +5045,8 @@
   {
    "id": "T189",
    "src_lines": [
-    9737,
-    9739
+    9735,
+    9737
    ],
    "heading": "Swamp Goblin [Minion]",
    "columns": 6,
@@ -5071,8 +5071,8 @@
   {
    "id": "T190",
    "src_lines": [
-    9759,
-    9761
+    9757,
+    9759
    ],
    "heading": "Zombie [Minion]",
    "columns": 6,
@@ -5097,8 +5097,8 @@
   {
    "id": "T191",
    "src_lines": [
-    9776,
-    9778
+    9774,
+    9776
    ],
    "heading": "Stirge [Minion]",
    "columns": 6,
@@ -5123,8 +5123,8 @@
   {
    "id": "T192",
    "src_lines": [
-    9794,
-    9796
+    9792,
+    9794
    ],
    "heading": "Will-o'-Wisp [Cannon]",
    "columns": 6,
@@ -5149,8 +5149,8 @@
   {
    "id": "T193",
    "src_lines": [
-    9813,
-    9815
+    9811,
+    9813
    ],
    "heading": "Lizardfolk Warrior [Soldier]",
    "columns": 6,
@@ -5175,8 +5175,8 @@
   {
    "id": "T194",
    "src_lines": [
-    9831,
-    9833
+    9829,
+    9831
    ],
    "heading": "Lizardfolk Hunter [Cannon]",
    "columns": 6,
@@ -5201,8 +5201,8 @@
   {
    "id": "T195",
    "src_lines": [
-    9851,
-    9853
+    9849,
+    9851
    ],
    "heading": "Crocodile [Skirmisher]",
    "columns": 6,
@@ -5227,8 +5227,8 @@
   {
    "id": "T196",
    "src_lines": [
-    9869,
-    9871
+    9867,
+    9869
    ],
    "heading": "Lizardfolk Shaman [Controller]",
    "columns": 6,
@@ -5253,8 +5253,8 @@
   {
    "id": "T197",
    "src_lines": [
-    9888,
-    9890
+    9886,
+    9888
    ],
    "heading": "Miasma Serpent [Skirmisher]",
    "columns": 6,
@@ -5279,8 +5279,8 @@
   {
    "id": "T198",
    "src_lines": [
-    9910,
-    9912
+    9908,
+    9910
    ],
    "heading": "Swamp Naga [Controller]",
    "columns": 6,
@@ -5305,8 +5305,8 @@
   {
    "id": "T199",
    "src_lines": [
-    9930,
-    9932
+    9928,
+    9930
    ],
    "heading": "Giant Constrictor [Skirmisher]",
    "columns": 6,
@@ -5331,8 +5331,8 @@
   {
    "id": "T200",
    "src_lines": [
-    9950,
-    9952
+    9948,
+    9950
    ],
    "heading": "Shambling Mound [Brute]",
    "columns": 6,
@@ -5357,8 +5357,8 @@
   {
    "id": "T201",
    "src_lines": [
-    9971,
-    9973
+    9969,
+    9971
    ],
    "heading": "Swamp Hag [Controller]",
    "columns": 6,
@@ -5383,8 +5383,8 @@
   {
    "id": "T202",
    "src_lines": [
-    9990,
-    9992
+    9988,
+    9990
    ],
    "heading": "Banshee [Controller]",
    "columns": 6,
@@ -5409,8 +5409,8 @@
   {
    "id": "T203",
    "src_lines": [
-    10012,
-    10014
+    10010,
+    10012
    ],
    "heading": "Swamp Troll [Brute]",
    "columns": 6,
@@ -5435,8 +5435,8 @@
   {
    "id": "T204",
    "src_lines": [
-    10033,
-    10035
+    10031,
+    10033
    ],
    "heading": "Hydra [Elite]",
    "columns": 6,
@@ -5461,8 +5461,8 @@
   {
    "id": "T205",
    "src_lines": [
-    10053,
-    10055
+    10051,
+    10053
    ],
    "heading": "Blackwater Wight [Elite]",
    "columns": 6,
@@ -5487,8 +5487,8 @@
   {
    "id": "T206",
    "src_lines": [
-    10075,
-    10077
+    10073,
+    10075
    ],
    "heading": "Mire Titan [Brute]",
    "columns": 6,
@@ -5513,8 +5513,8 @@
   {
    "id": "T207",
    "src_lines": [
-    10097,
-    10099
+    10095,
+    10097
    ],
    "heading": "Black Dragon [Elite]",
    "columns": 6,
@@ -5539,8 +5539,8 @@
   {
    "id": "T208",
    "src_lines": [
-    10145,
-    10147
+    10143,
+    10145
    ],
    "heading": "The Ancient Void Dragon [Boss]",
    "columns": 6,
@@ -5572,8 +5572,8 @@
   {
    "id": "T209",
    "src_lines": [
-    10169,
-    10171
+    10167,
+    10169
    ],
    "heading": "The Hollow Crown of the Ashlands [Boss]",
    "columns": 6,
@@ -5605,8 +5605,8 @@
   {
    "id": "T210",
    "src_lines": [
-    10191,
-    10193
+    10189,
+    10191
    ],
    "heading": "The Last Colossus [Boss]",
    "columns": 6,
@@ -5638,8 +5638,8 @@
   {
    "id": "T211",
    "src_lines": [
-    10214,
-    10216
+    10212,
+    10214
    ],
    "heading": "Avatar of the Old Growth [Boss]",
    "columns": 6,
@@ -5671,8 +5671,8 @@
   {
    "id": "T212",
    "src_lines": [
-    10237,
-    10239
+    10235,
+    10237
    ],
    "heading": "The Broodmother Prime [Boss]",
    "columns": 6,
@@ -5704,8 +5704,8 @@
   {
    "id": "T213",
    "src_lines": [
-    10261,
-    10263
+    10259,
+    10261
    ],
    "heading": "Captain Veyr of the Forsaken [Boss]",
    "columns": 6,
@@ -5737,8 +5737,8 @@
   {
    "id": "T214",
    "src_lines": [
-    10283,
-    10285
+    10281,
+    10283
    ],
    "heading": "The Frost Bailiff Magistrate [Boss]",
    "columns": 6,
@@ -5770,8 +5770,8 @@
   {
    "id": "T215",
    "src_lines": [
-    10305,
-    10307
+    10303,
+    10305
    ],
    "heading": "The Sun-Crowned Prince [Boss]",
    "columns": 6,
@@ -5803,8 +5803,8 @@
   {
    "id": "T216",
    "src_lines": [
-    10327,
-    10329
+    10325,
+    10327
    ],
    "heading": "The Antlered Warden of the Tithe [Boss]",
    "columns": 6,
@@ -5836,8 +5836,8 @@
   {
    "id": "T217",
    "src_lines": [
-    10351,
-    10353
+    10349,
+    10351
    ],
    "heading": "The Voice Beneath the Bells [Boss]",
    "columns": 6,
@@ -5869,8 +5869,8 @@
   {
    "id": "T218",
    "src_lines": [
-    10374,
-    10376
+    10372,
+    10374
    ],
    "heading": "Maelthorn the Verdant [Boss]",
    "columns": 6,
@@ -5902,8 +5902,8 @@
   {
    "id": "T219",
    "src_lines": [
-    10400,
-    10402
+    10398,
+    10400
    ],
    "heading": "Sirrach the Black [Boss]",
    "columns": 6,
@@ -5935,8 +5935,8 @@
   {
    "id": "T220",
    "src_lines": [
-    10426,
-    10428
+    10424,
+    10426
    ],
    "heading": "Visath the White [Boss]",
    "columns": 6,
@@ -5968,8 +5968,8 @@
   {
    "id": "T221",
    "src_lines": [
-    10453,
-    10455
+    10451,
+    10453
    ],
    "heading": "Khorrun the Dracolich [Boss]",
    "columns": 6,
@@ -6001,8 +6001,8 @@
   {
    "id": "T222",
    "src_lines": [
-    10479,
-    10481
+    10477,
+    10479
    ],
    "heading": "Vossegar of the Flooded Cathedral [Boss]",
    "columns": 6,
@@ -6034,8 +6034,8 @@
   {
    "id": "T223",
    "src_lines": [
-    10518,
-    10529
+    10516,
+    10527
    ],
    "heading": "Greenmark Random Monster Table",
    "columns": 5,
@@ -6060,8 +6060,8 @@
   {
    "id": "T224",
    "src_lines": [
-    10533,
-    10544
+    10531,
+    10542
    ],
    "heading": "Greenmark Random Monster Table",
    "columns": 5,
@@ -6086,8 +6086,8 @@
   {
    "id": "T225",
    "src_lines": [
-    10548,
-    10559
+    10546,
+    10557
    ],
    "heading": "Greenmark Random Monster Table",
    "columns": 5,
@@ -6112,8 +6112,8 @@
   {
    "id": "T226",
    "src_lines": [
-    10563,
-    10574
+    10561,
+    10572
    ],
    "heading": "Greenmark Random Monster Table",
    "columns": 5,
@@ -6138,8 +6138,8 @@
   {
    "id": "T227",
    "src_lines": [
-    10578,
-    10589
+    10576,
+    10587
    ],
    "heading": "Greenmark Random Monster Table",
    "columns": 5,
@@ -6164,8 +6164,8 @@
   {
    "id": "T228",
    "src_lines": [
-    10595,
-    10606
+    10593,
+    10604
    ],
    "heading": "Ashlands Random Monster Table",
    "columns": 5,
@@ -6190,8 +6190,8 @@
   {
    "id": "T229",
    "src_lines": [
-    10610,
-    10621
+    10608,
+    10619
    ],
    "heading": "Ashlands Random Monster Table",
    "columns": 5,
@@ -6216,8 +6216,8 @@
   {
    "id": "T230",
    "src_lines": [
-    10625,
-    10636
+    10623,
+    10634
    ],
    "heading": "Ashlands Random Monster Table",
    "columns": 5,
@@ -6242,8 +6242,8 @@
   {
    "id": "T231",
    "src_lines": [
-    10640,
-    10651
+    10638,
+    10649
    ],
    "heading": "Ashlands Random Monster Table",
    "columns": 5,
@@ -6268,8 +6268,8 @@
   {
    "id": "T232",
    "src_lines": [
-    10655,
-    10666
+    10653,
+    10664
    ],
    "heading": "Ashlands Random Monster Table",
    "columns": 5,
@@ -6294,8 +6294,8 @@
   {
    "id": "T233",
    "src_lines": [
-    10672,
-    10683
+    10670,
+    10681
    ],
    "heading": "Undermarches Random Monster Table",
    "columns": 5,
@@ -6320,8 +6320,8 @@
   {
    "id": "T234",
    "src_lines": [
-    10687,
-    10698
+    10685,
+    10696
    ],
    "heading": "Undermarches Random Monster Table",
    "columns": 5,
@@ -6346,8 +6346,8 @@
   {
    "id": "T235",
    "src_lines": [
-    10702,
-    10713
+    10700,
+    10711
    ],
    "heading": "Undermarches Random Monster Table",
    "columns": 5,
@@ -6372,8 +6372,8 @@
   {
    "id": "T236",
    "src_lines": [
-    10717,
-    10728
+    10715,
+    10726
    ],
    "heading": "Undermarches Random Monster Table",
    "columns": 5,
@@ -6398,8 +6398,8 @@
   {
    "id": "T237",
    "src_lines": [
-    10732,
-    10743
+    10730,
+    10741
    ],
    "heading": "Undermarches Random Monster Table",
    "columns": 5,
@@ -6424,8 +6424,8 @@
   {
    "id": "T238",
    "src_lines": [
-    10749,
-    10760
+    10747,
+    10758
    ],
    "heading": "Pale City Random Monster Table",
    "columns": 5,
@@ -6450,8 +6450,8 @@
   {
    "id": "T239",
    "src_lines": [
-    10764,
-    10775
+    10762,
+    10773
    ],
    "heading": "Pale City Random Monster Table",
    "columns": 5,
@@ -6476,8 +6476,8 @@
   {
    "id": "T240",
    "src_lines": [
-    10779,
-    10790
+    10777,
+    10788
    ],
    "heading": "Pale City Random Monster Table",
    "columns": 5,
@@ -6502,8 +6502,8 @@
   {
    "id": "T241",
    "src_lines": [
-    10794,
-    10805
+    10792,
+    10803
    ],
    "heading": "Pale City Random Monster Table",
    "columns": 5,
@@ -6528,8 +6528,8 @@
   {
    "id": "T242",
    "src_lines": [
-    10809,
-    10820
+    10807,
+    10818
    ],
    "heading": "Pale City Random Monster Table",
    "columns": 5,
@@ -6554,8 +6554,8 @@
   {
    "id": "T243",
    "src_lines": [
-    10826,
-    10837
+    10824,
+    10835
    ],
    "heading": "Sun-Drowned Random Monster Table",
    "columns": 5,
@@ -6580,8 +6580,8 @@
   {
    "id": "T244",
    "src_lines": [
-    10841,
-    10852
+    10839,
+    10850
    ],
    "heading": "Sun-Drowned Random Monster Table",
    "columns": 5,
@@ -6606,8 +6606,8 @@
   {
    "id": "T245",
    "src_lines": [
-    10856,
-    10867
+    10854,
+    10865
    ],
    "heading": "Sun-Drowned Random Monster Table",
    "columns": 5,
@@ -6632,8 +6632,8 @@
   {
    "id": "T246",
    "src_lines": [
-    10871,
-    10882
+    10869,
+    10880
    ],
    "heading": "Sun-Drowned Random Monster Table",
    "columns": 5,
@@ -6658,8 +6658,8 @@
   {
    "id": "T247",
    "src_lines": [
-    10886,
-    10897
+    10884,
+    10895
    ],
    "heading": "Sun-Drowned Random Monster Table",
    "columns": 5,
@@ -6684,8 +6684,8 @@
   {
    "id": "T248",
    "src_lines": [
-    10903,
-    10914
+    10901,
+    10912
    ],
    "heading": "The Mire Random Monster Table",
    "columns": 5,
@@ -6710,8 +6710,8 @@
   {
    "id": "T249",
    "src_lines": [
-    10918,
-    10929
+    10916,
+    10927
    ],
    "heading": "The Mire Random Monster Table",
    "columns": 5,
@@ -6736,8 +6736,8 @@
   {
    "id": "T250",
    "src_lines": [
-    10933,
-    10944
+    10931,
+    10942
    ],
    "heading": "The Mire Random Monster Table",
    "columns": 5,
@@ -6762,8 +6762,8 @@
   {
    "id": "T251",
    "src_lines": [
-    10948,
-    10959
+    10946,
+    10957
    ],
    "heading": "The Mire Random Monster Table",
    "columns": 5,
@@ -6788,8 +6788,8 @@
   {
    "id": "T252",
    "src_lines": [
-    10963,
-    10974
+    10961,
+    10972
    ],
    "heading": "The Mire Random Monster Table",
    "columns": 5,
@@ -6814,8 +6814,8 @@
   {
    "id": "T253",
    "src_lines": [
-    11010,
-    11029
+    11008,
+    11027
    ],
    "heading": "Scenario Scaling Field Reference",
    "columns": 2,
@@ -6840,8 +6840,8 @@
   {
    "id": "T254",
    "src_lines": [
-    11047,
-    11056
+    11045,
+    11054
    ],
    "heading": "Random Direction",
    "columns": 2,
@@ -6866,8 +6866,8 @@
   {
    "id": "T255",
    "src_lines": [
-    11085,
-    11122
+    11083,
+    11120
    ],
    "heading": "10.1.1 Climate and Core Scenario Selection",
    "columns": 5,
@@ -6892,8 +6892,8 @@
   {
    "id": "T256",
    "src_lines": [
-    11898,
-    11905
+    11896,
+    11903
    ],
    "heading": "Climate 1: Greenmark Weather Table",
    "columns": 3,
@@ -6918,8 +6918,8 @@
   {
    "id": "T257",
    "src_lines": [
-    11909,
-    11916
+    11907,
+    11914
    ],
    "heading": "Climate 2: Ashlands Weather Table",
    "columns": 3,
@@ -6944,8 +6944,8 @@
   {
    "id": "T258",
    "src_lines": [
-    11922,
-    11929
+    11920,
+    11927
    ],
    "heading": "Climate 3: Undermarches Cavern Conditions Table",
    "columns": 3,
@@ -6970,8 +6970,8 @@
   {
    "id": "T259",
    "src_lines": [
-    11933,
-    11940
+    11931,
+    11938
    ],
    "heading": "Climate 4: Pale City Weather Table",
    "columns": 3,
@@ -6996,8 +6996,8 @@
   {
    "id": "T260",
    "src_lines": [
-    11944,
-    11951
+    11942,
+    11949
    ],
    "heading": "Climate 5: Sun-Drowned Weather Table",
    "columns": 3,
@@ -7022,8 +7022,8 @@
   {
    "id": "T261",
    "src_lines": [
-    11955,
-    11962
+    11953,
+    11960
    ],
    "heading": "Climate 6: The Mire Weather Table",
    "columns": 3,
@@ -7048,8 +7048,8 @@
   {
    "id": "T262",
    "src_lines": [
-    12002,
-    12004
+    12000,
+    12002
    ],
    "heading": "Scenario 1: Hunt the Wild Beast [Intro]",
    "columns": 6,
@@ -7081,8 +7081,8 @@
   {
    "id": "T263",
    "src_lines": [
-    12072,
-    12074
+    12070,
+    12072
    ],
    "heading": "Scenario 2: The Whispering Grove",
    "columns": 6,
@@ -7114,8 +7114,8 @@
   {
    "id": "T264",
    "src_lines": [
-    12150,
-    12152
+    12148,
+    12150
    ],
    "heading": "Scenario 3: The Bandit's Toll",
    "columns": 6,
@@ -7147,8 +7147,8 @@
   {
    "id": "T265",
    "src_lines": [
-    12217,
-    12219
+    12215,
+    12217
    ],
    "heading": "Scenario 4: The Spider's Silk Route",
    "columns": 6,
@@ -7180,8 +7180,8 @@
   {
    "id": "T266",
    "src_lines": [
-    12292,
-    12294
+    12290,
+    12292
    ],
    "heading": "Scenario 5: The Ambushed Emissary",
    "columns": 6,
@@ -7213,8 +7213,8 @@
   {
    "id": "T267",
    "src_lines": [
-    12371,
-    12373
+    12369,
+    12371
    ],
    "heading": "Scenario 6: Ritual of the Old Growth",
    "columns": 6,
@@ -7246,8 +7246,8 @@
   {
    "id": "T268",
    "src_lines": [
-    12459,
-    12461
+    12457,
+    12459
    ],
    "heading": "Scenario 1: The Fallen Observatory [Intro]",
    "columns": 6,
@@ -7279,8 +7279,8 @@
   {
    "id": "T269",
    "src_lines": [
-    12523,
-    12525
+    12521,
+    12523
    ],
    "heading": "Scenario 2: The Guardian's Test",
    "columns": 6,
@@ -7312,8 +7312,8 @@
   {
    "id": "T270",
    "src_lines": [
-    12656,
-    12658
+    12654,
+    12656
    ],
    "heading": "Scenario 4: The Sealed Archive",
    "columns": 6,
@@ -7345,8 +7345,8 @@
   {
    "id": "T271",
    "src_lines": [
-    12741,
-    12743
+    12739,
+    12741
    ],
    "heading": "Scenario 5: The Reliquary of Broken Saints",
    "columns": 6,
@@ -7378,8 +7378,8 @@
   {
    "id": "T272",
    "src_lines": [
-    12822,
-    12824
+    12820,
+    12822
    ],
    "heading": "Scenario 6: The Iron-Vein Vault",
    "columns": 6,
@@ -7411,8 +7411,8 @@
   {
    "id": "T273",
    "src_lines": [
-    12907,
-    12909
+    12905,
+    12907
    ],
    "heading": "Scenario 1: The Crystal Harvest [Intro]",
    "columns": 6,
@@ -7444,8 +7444,8 @@
   {
    "id": "T274",
    "src_lines": [
-    12975,
-    12977
+    12973,
+    12975
    ],
    "heading": "Scenario 2: The Chasm Crossing",
    "columns": 6,
@@ -7477,8 +7477,8 @@
   {
    "id": "T275",
    "src_lines": [
-    13043,
-    13045
+    13041,
+    13043
    ],
    "heading": "Scenario 3: The Quake",
    "columns": 6,
@@ -7510,8 +7510,8 @@
   {
    "id": "T276",
    "src_lines": [
-    13116,
-    13118
+    13114,
+    13116
    ],
    "heading": "Scenario 4: The Undermarches Outpost Raid",
    "columns": 6,
@@ -7543,8 +7543,8 @@
   {
    "id": "T277",
    "src_lines": [
-    13136,
-    13138
+    13134,
+    13136
    ],
    "heading": "Scenario 4: The Undermarches Outpost Raid",
    "columns": 6,
@@ -7576,8 +7576,8 @@
   {
    "id": "T278",
    "src_lines": [
-    13153,
-    13155
+    13151,
+    13153
    ],
    "heading": "Scenario 4: The Undermarches Outpost Raid",
    "columns": 6,
@@ -7609,8 +7609,8 @@
   {
    "id": "T279",
    "src_lines": [
-    13220,
-    13222
+    13218,
+    13220
    ],
    "heading": "Scenario 5: The Shadowed Under Passage",
    "columns": 6,
@@ -7642,8 +7642,8 @@
   {
    "id": "T280",
    "src_lines": [
-    13295,
-    13297
+    13293,
+    13295
    ],
    "heading": "Scenario 6: The Ritual of Shadow Binding",
    "columns": 6,
@@ -7675,8 +7675,8 @@
   {
    "id": "T281",
    "src_lines": [
-    13330,
-    13332
+    13328,
+    13330
    ],
    "heading": "Scenario 6: The Ritual of Shadow Binding",
    "columns": 6,
@@ -7708,8 +7708,8 @@
   {
    "id": "T282",
    "src_lines": [
-    13446,
-    13448
+    13444,
+    13446
    ],
    "heading": "Scenario 2: The Alchemist's Frozen Laboratory",
    "columns": 6,
@@ -7741,8 +7741,8 @@
   {
    "id": "T283",
    "src_lines": [
-    13516,
-    13518
+    13514,
+    13516
    ],
    "heading": "Scenario 3: The Haunted Mausoleum",
    "columns": 6,
@@ -7774,8 +7774,8 @@
   {
    "id": "T284",
    "src_lines": [
-    13585,
-    13587
+    13583,
+    13585
    ],
    "heading": "Scenario 4: The Clockwork Menagerie",
    "columns": 6,
@@ -7807,8 +7807,8 @@
   {
    "id": "T285",
    "src_lines": [
-    13645,
-    13647
+    13643,
+    13645
    ],
    "heading": "Scenario 5: The Ice Wyrm's Hoard",
    "columns": 6,
@@ -7840,8 +7840,8 @@
   {
    "id": "T286",
    "src_lines": [
-    13726,
-    13728
+    13724,
+    13726
    ],
    "heading": "Scenario 6: The Icebound Court",
    "columns": 6,
@@ -7873,8 +7873,8 @@
   {
    "id": "T287",
    "src_lines": [
-    13799,
-    13801
+    13797,
+    13799
    ],
    "heading": "Scenario 1: The Oasis Raiders [Intro]",
    "columns": 6,
@@ -7906,8 +7906,8 @@
   {
    "id": "T288",
    "src_lines": [
-    13866,
-    13868
+    13864,
+    13866
    ],
    "heading": "Scenario 2: The Cinder Lord's Lost Brazier",
    "columns": 6,
@@ -7939,8 +7939,8 @@
   {
    "id": "T289",
    "src_lines": [
-    13931,
-    13933
+    13929,
+    13931
    ],
    "heading": "Scenario 3: Tomb of the Sunken Kings",
    "columns": 6,
@@ -7972,8 +7972,8 @@
   {
    "id": "T290",
    "src_lines": [
-    13999,
-    14001
+    13997,
+    13999
    ],
    "heading": "Scenario 4: The Sandwyrm's Lair",
    "columns": 6,
@@ -8005,8 +8005,8 @@
   {
    "id": "T291",
    "src_lines": [
-    14063,
-    14065
+    14061,
+    14063
    ],
    "heading": "Scenario 5: The Cursed Colossus of the Waste",
    "columns": 6,
@@ -8038,8 +8038,8 @@
   {
    "id": "T292",
    "src_lines": [
-    14141,
-    14143
+    14139,
+    14141
    ],
    "heading": "Scenario 6: The Cinder Lord's Obsidian Prison",
    "columns": 6,
@@ -8071,8 +8071,8 @@
   {
    "id": "T293",
    "src_lines": [
-    14227,
-    14229
+    14225,
+    14227
    ],
    "heading": "Scenario 1: The Reliquary of Edrava Salttide [Intro]",
    "columns": 6,
@@ -8104,8 +8104,8 @@
   {
    "id": "T294",
    "src_lines": [
-    14304,
-    14306
+    14302,
+    14304
    ],
    "heading": "Scenario 2: The Lizardfolk's Stolen Offerings",
    "columns": 6,
@@ -8137,8 +8137,8 @@
   {
    "id": "T295",
    "src_lines": [
-    14376,
-    14378
+    14374,
+    14376
    ],
    "heading": "Scenario 3: The Mire Titan's Fen",
    "columns": 6,
@@ -8170,8 +8170,8 @@
   {
    "id": "T296",
    "src_lines": [
-    14451,
-    14453
+    14449,
+    14451
    ],
    "heading": "Scenario 4: The Blighted Heartwood",
    "columns": 6,
@@ -8203,8 +8203,8 @@
   {
    "id": "T297",
    "src_lines": [
-    14530,
-    14532
+    14528,
+    14530
    ],
    "heading": "Scenario 5: Salttide's Reckoning",
    "columns": 6,
@@ -8236,8 +8236,8 @@
   {
    "id": "T298",
    "src_lines": [
-    14607,
-    14609
+    14605,
+    14607
    ],
    "heading": "Scenario 6: The Serpent's Sunken Hoard",
    "columns": 6,
@@ -8269,8 +8269,8 @@
   {
    "id": "T299",
    "src_lines": [
-    14718,
-    14725
+    14716,
+    14723
    ],
    "heading": "10.5.5 Solo and Cooperative Scenario Conversion",
    "columns": 3,
@@ -8295,8 +8295,8 @@
   {
    "id": "T300",
    "src_lines": [
-    14745,
-    14750
+    14743,
+    14748
    ],
    "heading": "10.5.7 Pressure Clocks",
    "columns": 6,
@@ -8328,8 +8328,8 @@
   {
    "id": "T301",
    "src_lines": [
-    14876,
-    14882
+    14874,
+    14880
    ],
    "heading": "10.6.4 Final Random Monster Groups",
    "columns": 2,
@@ -8354,8 +8354,8 @@
   {
    "id": "T302",
    "src_lines": [
-    14890,
-    14895
+    14888,
+    14893
    ],
    "heading": "Scenario-Specific Monster Coin Value",
    "columns": 2,
@@ -8380,8 +8380,8 @@
   {
    "id": "T303",
    "src_lines": [
-    14958,
-    14963
+    14956,
+    14961
    ],
    "heading": "10.6.10 Extraction Clauses",
    "columns": 2,
@@ -8406,8 +8406,8 @@
   {
    "id": "T304",
    "src_lines": [
-    15003,
-    15009
+    15001,
+    15007
    ],
    "heading": "Campaign Reference",
    "columns": 3,
@@ -8432,8 +8432,8 @@
   {
    "id": "T305",
    "src_lines": [
-    15143,
-    15154
+    15141,
+    15152
    ],
    "heading": "Retirement Payout",
    "columns": 2,
@@ -8458,8 +8458,8 @@
   {
    "id": "T306",
    "src_lines": [
-    15206,
-    15217
+    15204,
+    15215
    ],
    "heading": "11.2.1 Phase 1: Expedition",
    "columns": 2,
@@ -8484,8 +8484,8 @@
   {
    "id": "T307",
    "src_lines": [
-    15257,
-    15278
+    15255,
+    15276
    ],
    "heading": "Climate 1: Greenmark Journey Table (1d20)",
    "columns": 2,
@@ -8510,8 +8510,8 @@
   {
    "id": "T308",
    "src_lines": [
-    15282,
-    15303
+    15280,
+    15301
    ],
    "heading": "Climate 2: Ashlands Journey Table (1d20)",
    "columns": 2,
@@ -8536,8 +8536,8 @@
   {
    "id": "T309",
    "src_lines": [
-    15307,
-    15328
+    15305,
+    15326
    ],
    "heading": "Climate 3: Undermarches Journey Table (1d20)",
    "columns": 2,
@@ -8562,8 +8562,8 @@
   {
    "id": "T310",
    "src_lines": [
-    15332,
-    15353
+    15330,
+    15351
    ],
    "heading": "Climate 4: Pale City Journey Table (1d20)",
    "columns": 2,
@@ -8588,8 +8588,8 @@
   {
    "id": "T311",
    "src_lines": [
-    15357,
-    15378
+    15355,
+    15376
    ],
    "heading": "Climate 5: Sun-Drowned Journey Table (1d20)",
    "columns": 2,
@@ -8614,8 +8614,8 @@
   {
    "id": "T312",
    "src_lines": [
-    15382,
-    15403
+    15380,
+    15401
    ],
    "heading": "Climate 6: The Mire Journey Table (1d20)",
    "columns": 2,
@@ -8640,8 +8640,8 @@
   {
    "id": "T313",
    "src_lines": [
-    15497,
-    15502
+    15495,
+    15500
    ],
    "heading": "Active Hirelings and Summon Limits",
    "columns": 3,
@@ -8666,8 +8666,8 @@
   {
    "id": "T314",
    "src_lines": [
-    15518,
-    15534
+    15516,
+    15532
    ],
    "heading": "Specialist Hireling Roster",
    "columns": 9,
@@ -8702,8 +8702,8 @@
   {
    "id": "T315",
    "src_lines": [
-    15570,
-    15582
+    15568,
+    15580
    ],
    "heading": "Animal Companion Roster",
    "columns": 9,
@@ -8738,8 +8738,8 @@
   {
    "id": "T316",
    "src_lines": [
-    15595,
-    15602
+    15593,
+    15600
    ],
    "heading": "11.3 Building the Stronghold",
    "columns": 2,
@@ -8764,8 +8764,8 @@
   {
    "id": "T317",
    "src_lines": [
-    15722,
-    15733
+    15720,
+    15731
    ],
    "heading": "11.4 Legendary Veterans",
    "columns": 2,
@@ -8790,8 +8790,8 @@
   {
    "id": "T318",
    "src_lines": [
-    15798,
-    15805
+    15796,
+    15803
    ],
    "heading": "Triumph Minions",
    "columns": 3,
@@ -8816,8 +8816,8 @@
   {
    "id": "T319",
    "src_lines": [
-    16051,
-    16068
+    16049,
+    16066
    ],
    "heading": "Triumph Boss Table",
    "columns": 2,
@@ -8842,8 +8842,8 @@
   {
    "id": "T320",
    "src_lines": [
-    16086,
-    16094
+    16084,
+    16092
    ],
    "heading": "A.1 Learn to Play At a Glance",
    "columns": 2,
@@ -8868,8 +8868,8 @@
   {
    "id": "T321",
    "src_lines": [
-    16358,
-    16369
+    16356,
+    16367
    ],
    "heading": "Initial Positions and Values",
    "columns": 2,
@@ -8894,8 +8894,8 @@
   {
    "id": "T322",
    "src_lines": [
-    16523,
-    16533
+    16521,
+    16531
    ],
    "heading": "B.1 Basic Mode At a Glance",
    "columns": 2,
@@ -8920,8 +8920,8 @@
   {
    "id": "T323",
    "src_lines": [
-    17134,
-    17148
+    17132,
+    17146
    ],
    "heading": "Quick Reference Index",
    "columns": 2,
@@ -8946,8 +8946,8 @@
   {
    "id": "T324",
    "src_lines": [
-    17203,
-    17216
+    17201,
+    17214
    ],
    "heading": "C.2 Core Terms and Abbreviations",
    "columns": 2,
@@ -8972,8 +8972,8 @@
   {
    "id": "T325",
    "src_lines": [
-    17226,
-    17244
+    17224,
+    17242
    ],
    "heading": "C.3 Conditions Summary",
    "columns": 3,
@@ -8998,8 +8998,8 @@
   {
    "id": "T326",
    "src_lines": [
-    17252,
-    17267
+    17250,
+    17265
    ],
    "heading": "C.4 Actions Summary",
    "columns": 3,
@@ -9024,8 +9024,8 @@
   {
    "id": "T327",
    "src_lines": [
-    17273,
-    17278
+    17271,
+    17276
    ],
    "heading": "C.5 Reactions Summary",
    "columns": 4,
@@ -9050,8 +9050,8 @@
   {
    "id": "T328",
    "src_lines": [
-    17829,
-    17834
+    17827,
+    17832
    ],
    "heading": "Size and Footprints Summary",
    "columns": 2,
@@ -9076,8 +9076,8 @@
   {
    "id": "T329",
    "src_lines": [
-    17857,
-    17869
+    17855,
+    17867
    ],
    "heading": "Universal Actions",
    "columns": 3,
@@ -9102,8 +9102,8 @@
   {
    "id": "T330",
    "src_lines": [
-    17887,
-    17892
+    17885,
+    17890
    ],
    "heading": "Combat Reactions",
    "columns": 4,
@@ -9128,8 +9128,8 @@
   {
    "id": "T331",
    "src_lines": [
-    17911,
-    17928
+    17909,
+    17926
    ],
    "heading": "Conditions",
    "columns": 2,
@@ -9154,8 +9154,8 @@
   {
    "id": "T332",
    "src_lines": [
-    17960,
-    17971
+    17958,
+    17969
    ],
    "heading": "C.14 Equipment Quick Reference",
    "columns": 2,
