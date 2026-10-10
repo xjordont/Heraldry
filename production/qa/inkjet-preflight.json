@@ -1,8 +1,8 @@
 {
   "status": "PASS",
-  "pdf": "/home/runner/work/Heraldry/Heraldry/dist/Heraldry_RC490_inkjet-borderless.pdf",
+  "pdf": "/home/user/Heraldry/dist/Heraldry_RC491_inkjet-borderless.pdf",
   "pages": 597,
-  "text_spans_checked": 88188,
+  "text_spans_checked": 88187,
   "font_resources_checked": 11,
   "checks": [
     "Letter portrait boxes/rotation",
@@ -18,6 +18,6 @@
   "limits": "Not source reconciliation, art/background/raster/mark inspection, all-page visual QA, or physical printer certification",
   "tool": {
     "PyMuPDF": "1.28.2",
-    "python": "3.12.15"
+    "python": "3.13.16"
   }
 }
