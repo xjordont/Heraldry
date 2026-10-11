@@ -36,7 +36,7 @@ This document summarises the project, its decisions and the illustration workflo
    - an offline input ZIP (`tools/art_work_package.py`) and a review-bundle ZIP were built;
    - the anchors were generated, reviewed and imported through `production/art/work/inbox/` and the `Import Work review bundle` workflow, then set back to redo after the direction change;
    - a GitHub-token route was rejected by ChatGPT as a leaked secret and withdrawn. Never put a credential in a chat.
-3. **Codex on the owner's Windows PC** (current, 2026-10-11): the owner's own Git login, LFS and Python. Codex clones, generates within the ChatGPT plan (no paid API) and pushes with the guarded delivery. No ZIP files change hands.
+3. **Codex on the owner's Windows PC** (current, 2026-10-11): the owner's own Git login, LFS and Python. Codex clones, generates within the ChatGPT plan (no paid API) and pushes with the guarded delivery. GitHub `main` is the primary source and guarded Git LFS delivery route; ZIPs remain a fallback if authenticated inputs or guarded delivery are unavailable.
 
 ## 3. The current workflow (Codex route)
 
@@ -50,7 +50,7 @@ This document summarises the project, its decisions and the illustration workflo
 4. **Claude Code** reviews every image visually and records the review (as in `production/art/review/ANCHOR_REVIEW_2026-10-11.md`). It runs `tools/art_intake.py approve-anchors`, `approve --ids` or `reject --ids --reason "..."`; a rejection becomes a redo with its reason. Once the anchors are approved, it publishes the batch queue with `tools/art_gpt_pack.py --phase batch`.
 5. Only approved art is placed in the book, at the next requested build.
 
-**Fallbacks:** ChatGPT Work with the offline input package (`production/art/gpt/WORK_PROMPT.md`, `production/art/work/Heraldry_Work_Input_anchors.zip`); a review bundle uploaded to `production/art/work/inbox/`, which imports itself.
+**Fallbacks:** `production/art/gpt/WORK_PROMPT.md` now routes ordinary sessions to the local Codex prompt and retains the explicitly selected offline Work procedure. Use its offline input package only when authenticated inputs are unavailable. If guarded delivery is blocked, preserve unsent work and create a review bundle for independent verification and import through `production/art/work/inbox/`. Never pull or rebase over unsent images or receipts.
 
 ## 4. The v6 skill (Codex follows it)
 
