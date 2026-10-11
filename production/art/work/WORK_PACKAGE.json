@@ -5,15 +5,15 @@
  "created_from": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "cbb87a582eacab2867c35155f9be1262ced7b08a",
-  "commit_date": "2026-10-11T13:22:09+00:00",
+  "commit": "3887ed6805fb948c574e7ac58779833ac28a455a",
+  "commit_date": "2026-10-11T14:04:51+00:00",
   "dirty": false
  },
  "source": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "cbb87a582eacab2867c35155f9be1262ced7b08a",
-  "commit_date": "2026-10-11T13:22:09+00:00"
+  "commit": "3887ed6805fb948c574e7ac58779833ac28a455a",
+  "commit_date": "2026-10-11T14:04:51+00:00"
  },
  "queue": {
   "path": "production/art/gpt/QUEUE.json",
@@ -126,7 +126,7 @@
  "files": [
   {
    "path": "START_HERE.md",
-   "sha256": "f2d7ee339fb9d8eea4869c059d96a5d2cb980d669815b0fcd5c9187a87473159",
+   "sha256": "ba3159fac5ee6210a6f3fc4c3fc55c30101a74b83e4a6e4069c716577dbb926a",
    "bytes": 5358,
    "role": "instructions"
   },
@@ -217,8 +217,8 @@
   },
   {
    "path": "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip",
-   "sha256": "ce5d49f5b8fd95a006c3fab8391236f2d2a0417ba2412d820236b2c1f90b716c",
-   "bytes": 5403554,
+   "sha256": "d36253ae06207e1f1bb4848fbc94fde71f6075273e7e1bc43bdfe426f8ba0506",
+   "bytes": 5404010,
    "role": "skill_zip"
   },
   {
@@ -313,8 +313,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py",
-   "sha256": "006d1404e11fbf07461b8f9d173b8692fb1154df82ff8ee0171dc0a9e4cdeb7d",
-   "bytes": 11394,
+   "sha256": "0573803bea0341a2829d6bf016c547a4460940a0aad2ea041375fa35d6f70297",
+   "bytes": 11537,
    "role": "skill"
   },
   {
@@ -355,14 +355,14 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/tests/test_v5_regression.py",
-   "sha256": "057fe55e9eb82d80493f2affcaa341a0c3306d30af6243cb4c0992ae17d88890",
-   "bytes": 11456,
+   "sha256": "669fde7866a69a51b9eeec657402349f8d885ddfa964526efead0194e753af39",
+   "bytes": 11478,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/tests/test_v6.py",
-   "sha256": "3461dd9b76736222e203831e4c13fd90a0fcf1e8925911c09a595710028438ec",
-   "bytes": 6800,
+   "sha256": "c2b5cce885d37461c893a807e9fd2070c0bd61aa8b1e8a0d393ebc3def9d17bf",
+   "bytes": 7796,
    "role": "skill"
   }
  ],
