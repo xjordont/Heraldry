@@ -24,6 +24,7 @@ IMAGES = {
     "references/images/STYLE-REF-07-drybrush-duel.jpg": ("assets/art/style/STYLE-REF-07-drybrush-duel.jpg", "scene; owner gritty sample"),
     "references/images/STYLE-REF-09-skeleton-melee-ink.jpg": ("assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg", "scene; owner gritty sample"),
     "references/images/STYLE-REF-10-undead-crowd-ink.jpg": ("assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg", "scene; owner gritty sample"),
+    "references/images/STYLE-REF-11-city-approach-ink.png": ("assets/art/style/STYLE-REF-11-city-approach-ink.png", "bastion and world scenes; owner-chosen city scene"),
 }
 ORDER = ["bastion", "climate", "monster", "class", "ancestry", "boss", "scenario", "world", "campaign",
          "tradition", "background", "item", "chapter", "cover"]

@@ -23,7 +23,7 @@ Figures print 1.6 to 1.9 inches wide, so the silhouette and the big black shapes
 
 Take from a reference: line weight, hatching density, contrast, finish. Take nothing else.
 
-References carry subjects that tend to leak into unrelated images. Reject any result that has them without the prompt asking: a skeleton king on a throne with a gargoyle-faced armrest, cobwebs, a slime-dripping cave grub, a goblin shaman with a skull staff, a hooded archer with a quiver, a zombie facing a cloaked swordsman, period fencers in ruffs and breeches, a full moon behind skeletons, a crowd of undead faces, a skeleton warrior with a shield. Each item has at most three references, chosen so that scenery never reaches figure items; do not add more.
+References carry subjects that tend to leak into unrelated images. Reject any result that has them without the prompt asking: a skeleton king on a throne with a gargoyle-faced armrest, cobwebs, a slime-dripping cave grub, a goblin shaman with a skull staff, a hooded archer with a quiver, a zombie facing a cloaked swordsman, period fencers in ruffs and breeches, a full moon behind skeletons, a crowd of undead faces, a skeleton warrior with a shield; and, from the city reference used for bastion and world scenes, framing oaks, standing stones with spirals, a timber palisade with twin gate towers, tree banners, a stone-pier bridge. Each item has at most three references, chosen so that scenery never reaches figure items; do not add more.
 
 ## Ink and paper
 

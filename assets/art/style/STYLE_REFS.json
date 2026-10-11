@@ -1,16 +1,6 @@
 {
- "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached.",
+ "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look.",
  "refs": [
-  {
-   "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-   "source": "owner-supplied sample, 2026-10-08 session (original bytes)",
-   "px": [
-    2576,
-    1438
-   ],
-   "sha256": "3c0bea9e732212ef9b338e652292bc443b8195a3d3f082460763f4513435e50d",
-   "use": "superseded 2026-10-11 by the gritty old-school set: kept for the record, no longer attached to generation; never placed or packaged"
-  },
   {
    "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
    "source": "owner-supplied sample, 2026-10-08 session (original bytes)",
@@ -107,6 +97,17 @@
    "sha256": "333021be2755c3993e009a240b07d016267472abb742ff3b1e9a0db65d22fba9",
    "use": "generation style reference only; never placed in the book or packaged",
    "role": "scene: classic 1980s undead crowd; bold contour, heavy blacks, crosshatching"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-11-city-approach-ink.png",
+   "source": "owner-supplied example, 2026-10-11 (original bytes); chosen by Claude as the best of four city scenes the owner attached",
+   "px": [
+    1581,
+    995
+   ],
+   "sha256": "c4421e981228f908033645b583258dffe1a6b5adad195a8cc7248f39e4cdb1f8",
+   "role": "scene: walled town seen from its approach road; bold contour, heavy blacks, open sky",
+   "use": "generation style reference for bastion and world scenes only; never placed in the book or packaged. Owner exception: likely machine-made, attached by owner instruction"
   }
  ],
  "inspiration_only": [

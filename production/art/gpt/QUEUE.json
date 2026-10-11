@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-11T15:16:10+00:00",
+ "generated_at": "2026-10-11T15:23:39+00:00",
  "max_references": 3,
  "push_every": 1,
  "review_every": 10,
@@ -17,8 +17,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -44,8 +44,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -69,8 +69,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -94,8 +94,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -119,8 +119,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -5033,8 +5033,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -5058,8 +5058,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -5082,8 +5082,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -5107,8 +5107,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -5132,8 +5132,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -5157,8 +5157,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -5182,8 +5182,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
@@ -5207,8 +5207,8 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,

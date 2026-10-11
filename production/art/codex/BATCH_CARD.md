@@ -5,7 +5,7 @@ Read this and `AGENTS.md` only. Open `SKILL.md` or `references/*.md` only when o
 ## Start of session
 1. `git status --short` must be empty, or show only your unsent `assets/art/incoming/*` and `RECEIPTS.jsonl`. If it is clean: `git pull --ff-only origin main`. If work is unsent, deliver it first (see Delivery).
 2. `H work_preflight.py --repo . --require-installed`, then `H heraldry_art.py status`. Stop on BLOCKED or NOT READY and quote the output.
-3. Look once at each reference this session: `assets/art/style/STYLE-REF-07*`, `-09*` and `-10*` for scenes; `-03*`, `-04*`, `-05*` and `-06*` for figures and still lifes. The target is gritty old-school ink: bold rough brush contours, heavy solid blacks, scratchy hatching and dry-brush, high contrast, pure black ink (no grey wash).
+3. Look once at each reference this session: `assets/art/style/STYLE-REF-07*`, `-09*` and `-10*` for scenes (`-11*` replaces `-10*` for bastion and world scenes); `-03*`, `-04*`, `-05*` and `-06*` for figures and still lifes. The target is gritty old-school ink: bold rough brush contours, heavy solid blacks, scratchy hatching and dry-brush, high contrast, pure black ink (no grey wash).
 
 ## Per item (repeat until status says NOTHING LEFT)
 1. `H heraldry_art.py status`, then `H heraldry_art.py show ID`. Redo items come first; `show` prints the reviewer's reason.
