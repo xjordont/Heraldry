@@ -137,3 +137,8 @@ The owner asked for an efficient, automated run of every planned image after one
   - `tools/art_intake.py pending` lists received images, flagged first.
   - Claude reviews from the intake contact sheets, and opens full size only the self-flagged images plus spot checks per family.
   - Approval and rejection run per family. Rejections become redos that the next Codex session picks up first.
+- **Cadence (owner, 2026-10-11):**
+  - Delivery after every saved image (`push_every: 1`), so a 5-hour or weekly usage limit never strands work.
+  - Drift review every 10 images (`review_every: 10`, `sheet --recent`, `style_audit --recent`).
+  - The intake fetches only new LFS images (`art_intake.py needs-pull`), so LFS bandwidth stays flat. Each push still triggers one intake run of about a minute of Actions time.
+

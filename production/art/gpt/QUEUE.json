@@ -1,9 +1,10 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-11T14:17:57+00:00",
+ "generated_at": "2026-10-11T14:34:58+00:00",
  "max_references": 3,
- "push_every": 10,
+ "push_every": 1,
+ "review_every": 10,
  "count": 270,
  "items": [
   {

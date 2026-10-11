@@ -96,3 +96,65 @@ class ShipSync(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+@unittest.skipUnless(HAVE, 'git required')
+class PerImageCadence(unittest.TestCase):
+    """push_every 1: deliver after each image; drift review only every review_every images."""
+    def setUp(self):
+        import heraldry_art as ha
+        self.ha = ha
+        self.tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.tmp, True)
+        self.repo = self.tmp / 'repo'
+        (self.repo / 'production/art/gpt/prompts').mkdir(parents=True)
+        (self.repo / 'assets/art/incoming').mkdir(parents=True)
+        ref = self.repo / 'assets/art/style/REF.jpg'
+        ref.parent.mkdir(parents=True)
+        Image.new('RGB', (64, 64), 'white').save(ref)
+        self.items = []
+        for n in range(4):
+            iid = f'ART-T{n}'
+            (self.repo / f'production/art/gpt/prompts/{iid}.txt').write_text(f'ink {n}\n')
+            self.items.append({'id': iid, 'title': iid, 'family': 'monster', 'register': 'creature', 'size': '1024x1024',
+                               'print_w_in': 1.9, 'max_attempts': 3, 'size_class': '', 'must': [], 'avoid': [],
+                               'prompt': f'production/art/gpt/prompts/{iid}.txt',
+                               'prompt_sha256': hashlib.sha256(f'ink {n}'.encode()).hexdigest(),
+                               'references': ['assets/art/style/REF.jpg']})
+        git(self.repo.parent, 'init', '-q', '-b', 'main', str(self.repo))
+
+    def queue(self, review_every):
+        (self.repo / 'production/art/gpt/QUEUE.json').write_text(json.dumps(
+            {'schema': 2, 'phase': 'batch', 'count': 4, 'push_every': 1, 'review_every': review_every,
+             'generated_at': '2026-10-11T00:00:00+00:00', 'items': self.items}))
+
+    def make(self, n):
+        it = self.items[n]
+        im = Image.new('RGB', (1024, 1024), 'white')
+        ImageDraw.Draw(im).ellipse((200 + 9 * n, 200, 800, 800 - 9 * n), outline='black', width=10)
+        im.save(self.repo / f"assets/art/incoming/{it['id']}.png")
+        with (self.repo / 'production/art/gpt/RECEIPTS.jsonl').open('a') as f:
+            f.write(json.dumps({'id': it['id'], 'prompt_sha256': it['prompt_sha256']}) + '\n')
+
+    def status(self):
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            self.ha.main(['--repo', str(self.repo), 'status'])
+        return buf.getvalue()
+
+    def test_deliver_each_image_and_review_every_third(self):
+        self.queue(3)
+        self.make(0); self.make(1)
+        git(self.repo, 'add', '-A'); git(self.repo, 'commit', '-qm', 'two delivered')
+        self.make(2)                                   # third image saved: crosses the review boundary
+        self.assertIn('DRIFT REVIEW', self.status())
+        git(self.repo, 'add', '-A'); git(self.repo, 'commit', '-qm', 'third delivered')
+        self.make(3)                                   # fourth: plain delivery, no review
+        out = self.status()
+        self.assertIn('DELIVER:', out)
+        self.assertNotIn('DRIFT REVIEW', out)
+        self.assertEqual(self.ha.recent_ids(self.repo, self.ha.load_queue(self.repo), 2), ['ART-T2', 'ART-T3'])
+        import style_audit as sa
+        rep = sa.build(self.repo, recent=3)
+        self.assertEqual([r['id'] for r in rep['items']], ['ART-T1', 'ART-T2', 'ART-T3'])

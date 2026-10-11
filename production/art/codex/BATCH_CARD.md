@@ -15,13 +15,15 @@ Read this and `AGENTS.md` only. Open `SKILL.md` or `references/*.md` only when o
 5. `H heraldry_art.py qa ID FILE`. Fill the draft it names: three true/false attestations, `register_compared`, and ten `{pass, evidence}` entries. Evidence is one concrete sentence of 15 or more characters about what you saw. Never pass something you did not check.
 6. `H heraldry_art.py save ID FILE --must "<what you counted>" ... --avoid-clear --model "<label shown, or not shown>"`. The draft is found automatically.
 
-## Delivery (when status says DELIVERY: every 10 saved images, and at the end)
-`H heraldry_art.py sheet --refs --out %HERALDRY_SCRATCH%\sheet.jpg`, then look at it for drift. `H style_audit.py --repo . --out %HERALDRY_SCRATCH%\style.json`. Then `H delivery_guard.py audit --repo .` and `H delivery_guard.py ship --execute --repo .`. `ship` fast-forwards over the intake bot's commits by itself and retries a lost race. If it says BLOCKED: `H heraldry_art.py bundle --evidence ...`, report the reason and stop. Never pull, rebase, force or commit by hand.
+## Delivery (after every saved image)
+Every image is delivered as soon as it is saved, so a usage limit never strands work.
+- **status says DELIVER:** `H delivery_guard.py audit --repo .`, then `H delivery_guard.py ship --execute --repo .`.
+- **status says DRIFT REVIEW (every 10 images):** first `H heraldry_art.py sheet --recent 10 --refs --out %HERALDRY_SCRATCH%\sheet.jpg` and `H style_audit.py --repo . --recent 10 --out %HERALDRY_SCRATCH%\style.json`, and look at the sheet once. Then audit and ship. `ship` fast-forwards over the intake bot's commits by itself and retries a lost race. If it says BLOCKED: `H heraldry_art.py bundle --evidence ...`, report the reason and stop. Never pull, rebase, force or commit by hand.
 
 ## Stop and report when
 - status says NOTHING LEFT;
 - the image tool cannot attach the listed references, or refuses (record `H heraldry_art.py refuse ID --reason "..."` and continue with the next item);
-- the plan's usage limit is reached (deliver what is saved with `status --end` and ship, then stop; the next session resumes from `status`);
+- the plan's usage limit is reached (anything saved is already delivered or is delivered by `status` first next time; the next session resumes from `status`);
 - two or more same-register images show the same drift on the contact sheet;
 - ship is BLOCKED.
 

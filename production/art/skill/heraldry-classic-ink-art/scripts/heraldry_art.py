@@ -605,6 +605,11 @@ def cmd_status(a, repo):
     unsent = bool(saved) or receipts_unpushed(repo)
     push_at = int(q.get("push_every") or BATCH_PUSH_AT)       # the queue sets the cadence for long runs
     due = len(saved) >= push_at or (unsent and (not todo or a.end))
+    # Drift review (contact sheet + style audit over the last N delivered) runs every `review_every` images,
+    # not every push: with push_every 1 that keeps the per-image token cost low.
+    review_at = int(q.get("review_every") or push_at)
+    pushed_n = sum(1 for v in st.values() if v == "pushed")
+    drift_due = (pushed_n + len(saved)) // review_at > pushed_n // review_at
     # what a push would sweep up: files that are not queue items, and images saved without a matching receipt
     have_git, changed, ahead = incoming_changes(repo)
     queue_ids = {it["id"] for it in q["items"]}
@@ -632,8 +637,13 @@ def cmd_status(a, repo):
     elif due and not git_ok(repo):
         action = (f"DRIFT REVIEW, THEN BUNDLE: `{helper()} sheet --refs`, then the style audit, then `{helper()} bundle --evidence SHEET "
                   "--evidence STYLE_JSON [--evidence SMOKE_JSON]` and hand the zip to the owner: git is not available here.")
+    elif due and not drift_due:
+        action = ("DELIVER: `python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py audit --repo .`, then "
+                  "`python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .`; "
+                  "on BLOCKED stop and use `" + helper() + " bundle`.")
     elif due:
-        action = ("DRIFT REVIEW, THEN GUARDED DELIVERY. First `" + helper() + " sheet --refs`; "
+        action = (f"DRIFT REVIEW, THEN GUARDED DELIVERY. First `{helper()} sheet --recent {review_at} --refs` and "
+                  f"`style_audit.py --recent {review_at}`; look for shared drift. Then `" + helper() + " sheet --refs`; "
                   "then `python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py audit --repo .` "
                   "and, only if it passes, `python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .`. "
                   "On any LFS/auth/conflict failure STOP and use `" + helper() + " bundle`. Never force-push or auto-rebase receipts.")
@@ -921,10 +931,31 @@ def cmd_refuse(a, repo):
     return 0
 
 
+def recent_ids(repo, q, n):
+    """The last n queue items saved here, newest last (receipt order), that still have an image."""
+    queued = {it["id"] for it in q["items"]}
+    order = []
+    f = repo / RECEIPTS_REL
+    for line in f.read_text(encoding="utf-8").splitlines() if f.is_file() else []:
+        try:
+            r = json.loads(line)
+        except ValueError:
+            continue
+        i = r.get("id") if isinstance(r, dict) else None
+        if i in queued and not r.get("refused") and local_files(repo, i):
+            if i in order:
+                order.remove(i)
+            order.append(i)
+    return order[-n:]
+
+
 def cmd_sheet(a, repo):
     q = load_queue(repo)
     st = states(repo, q)
-    ids = a.ids or [i for i, v in st.items() if v == "saved"]
+    if a.recent and not a.ids:
+        ids = recent_ids(repo, q, a.recent)
+    else:
+        ids = a.ids or [i for i, v in st.items() if v == "saved"]
     if not ids:
         raise Fatal(f"no saved, unpushed images. Name the IDs to put on a sheet: {helper()} sheet ID ID ... [--refs]")
     cell, cols = 360, 4
@@ -1080,6 +1111,7 @@ def main(argv=None):
     p.add_argument("ids", nargs="*")
     p.add_argument("--out")
     p.add_argument("--refs", action="store_true", help="add the references of every item on the sheet, for style comparison")
+    p.add_argument("--recent", type=int, default=0, help="the last N saved queue items (drift review), instead of unsent ones")
     p = sub.add_parser("bundle", help="review hand-off zip (images, receipts, QA reports, manifest) for when git push is impossible")
     p.add_argument("--out", help="default: the scratch folder; must be outside the repository clone")
     p.add_argument("--evidence", action="append", default=[],

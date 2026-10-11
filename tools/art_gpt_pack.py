@@ -76,7 +76,7 @@ def build_queue(phase, ents, sels, anchors, root=ROOT):
         prompts[i] = g.prompt_for(ents[i], True)
         items.append(item_for(ents[i], prompts[i], sels, root))
     return {"schema": SCHEMA, "phase": phase, "generated_at": g.now(), "max_references": g.CFG["gpt_reference_sets"]["max_refs"],
-            "push_every": g.CFG.get("gpt_push_every", 5),
+            "push_every": g.CFG.get("gpt_push_every", 5), "review_every": g.CFG.get("gpt_review_every", 10),
             "count": len(items), "items": items}, prompts
 
 
