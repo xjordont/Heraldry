@@ -46,6 +46,8 @@ class ShipSync(unittest.TestCase):
         self.work = self.tmp / 'work'
         subprocess.run(['git', 'clone', '-q', str(self.origin), str(self.work)], check=True, capture_output=True)
         git(self.work, 'lfs', 'install', '--local')
+        git(self.work, 'config', 'user.name', 'worker')          # CI runners have no global identity
+        git(self.work, 'config', 'user.email', 'worker@example.invalid')
         self.bot = self.tmp / 'bot'
         subprocess.run(['git', 'clone', '-q', str(self.origin), str(self.bot)], check=True, capture_output=True)
 
