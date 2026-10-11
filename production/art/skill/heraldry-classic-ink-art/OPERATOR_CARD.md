@@ -12,6 +12,8 @@ python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py doc
 python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py status
 ```
 
+No authenticated Git? Ask Claude Code for the offline Work input package (`tools/art_work_package.py`), unzip it into an empty folder, follow its `START_HERE.md`, and add `--offline-package` to the preflight. It must report READY, `delivery: bundle`, `remote_access: NOT_ATTEMPTED`. Deliver with `bundle --evidence ...` and say nothing was pushed.
+
 If Git LFS/authentication is unavailable, use the bundle fallback. Confirm through a real smoke test that the image tool accepts the queue's references and that the native image file is accessible. Do not claim this was verified from repository access alone.
 
 ## Per item

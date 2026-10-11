@@ -6,8 +6,8 @@ Use the installed `heraldry-classic-ink-art` v6 skill (source in `production/art
 
 ## Session start
 
-1. Obtain a clean local checkout of `main` with only queue-listed LFS references fetched. Never download the private PDFs by default.
-2. Run `scripts/work_preflight.py --repo . --require-installed`; if authentication/Git LFS is unavailable, choose bundle handoff.
+1. Obtain a clean local checkout of `main` with only queue-listed LFS references fetched. Never download the private PDFs by default. **If shell git cannot authenticate or the connector cannot fetch the binary references**, use the offline Work input package instead: `production/art/work/Heraldry_Work_Input_<phase>.zip`, or the copy the owner attaches. Unzip it into an empty folder, work only from there, and follow its `START_HERE.md`. Never `git init`, clone or pull inside it.
+2. Run `scripts/work_preflight.py --repo . --require-installed` (add `--offline-package` in the package folder). If authentication/Git LFS is unavailable, choose bundle handoff. The package route always delivers by bundle and reports remote access as NOT_ATTEMPTED.
 3. Run the queue runner `scripts/heraldry_art.py doctor`, `status` and `show ID`.
 4. Establish with a real smoke test that the image tool accepts the intended reference set and produces native image bytes accessible to Python. Do not assume @GitHub alone provides these capabilities.
 
@@ -28,7 +28,7 @@ Commands use the full path `python production/art/skill/heraldry-classic-ink-art
 
 After 5 images, or at session end, view a contact sheet alongside references. Compare like registers only; look for progressive greying, altered hatching, repeated posing, missing vignettes and reference subject bleed.
 
-Run `delivery_guard.py audit --repo .`, then `delivery_guard.py ship --execute --repo .` only if the audit passes and Git LFS and remote authentication are available. The guard stages ONLY queued incoming images and receipts, refuses unrelated worktree changes, checks LFS pointers, requires local HEAD equal origin/main, and never force-pushes or automatically merges a concurrent reviewer commit. If it stops or a tool is unavailable, run `heraldry_art.py bundle` outside the clone; deliver the ZIP without claiming a Git push.
+Run `delivery_guard.py audit --repo .`, then `delivery_guard.py ship --execute --repo .` only if the audit passes and Git LFS and remote authentication are available. The guard stages ONLY queued incoming images and receipts, refuses unrelated worktree changes, checks LFS pointers, requires local HEAD equal origin/main, and never force-pushes or automatically merges a concurrent reviewer commit. If it stops or a tool is unavailable, run `heraldry_art.py bundle --evidence <contact sheet> --evidence <style audit JSON> --evidence <smoke record>` outside the clone; deliver the ZIP as a downloadable file without claiming a Git push. In the offline package, `delivery_guard.py` refuses (no Git), so `bundle` is the only delivery; it applies the same receipt and QA hash gate first.
 
 The first queue phase (`anchors`) ends after delivery of its five items, until Claude Code reviews them and publishes a new queue. On rejection, use the recorded review reason and another attempt budget as permitted by the queue. Do not start a batch without an updated queue.
 

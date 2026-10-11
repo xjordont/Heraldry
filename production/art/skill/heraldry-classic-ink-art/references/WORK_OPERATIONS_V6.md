@@ -6,14 +6,27 @@ Repository/Claude Code owns canonical prose, prompt writing, uniqueness audit, q
 
 ## Smoke-test gate
 
-1. Obtain a clean authenticated checkout of the Heraldry repository; only checkout in an environment where Git, Git LFS and Python are available.
-2. Run `python production/art/skill/heraldry-classic-ink-art/scripts/work_preflight.py --repo . --require-installed` and the existing helper's `doctor` and `status`. If LFS/auth are not available, select the `bundle` fallback instead of claiming a push.
+1. Obtain a clean authenticated checkout of the Heraldry repository in an environment where Git, Git LFS and Python are available, or, without Git authentication, the offline input package (next section).
+2. Run `python production/art/skill/heraldry-classic-ink-art/scripts/work_preflight.py --repo . --require-installed` (add `--offline-package` for the package) and the existing helper's `doctor` and `status`. If LFS/auth are not available, select the `bundle` fallback instead of claiming a push.
 3. Pick a single queued item, open its prompt and load only its queue-listed references. Generate the image through the available image tool.
 4. Verify that the exact image bytes are accessible on the local filesystem, and that the listed visual references were actually attached. This is a manual tool-capability check; the preflight cannot inspect the image-tool UI.
 5. Only if all three conditions hold may the operator write a scratch JSON smoke record with `image_generated`, `all_queue_references_attached`, and `native_file_accessible` set to true. Rerun `work_preflight.py --smoke-file /scratch/smoke.json`.
 6. Run `check`, write a visual-QA JSON outside the clone, and `save` with `--qa-file`.
 7. Run `delivery_guard.py audit --repo .` then `delivery_guard.py ship --execute --repo .` if it passes. If anything blocks, use the helper's `bundle` and hand that ZIP to the reviewer with a clear note that no Git push occurred.
 8. Confirm the exact commit and its LFS content were received by GitHub and the intake; don't equate local `git commit` with delivery.
+
+## Offline input package route (no authenticated Git)
+
+When shell git cannot authenticate, or the GitHub connector cannot fetch binary references, Claude Code supplies a Work input ZIP built by `tools/art_work_package.py build` from a named commit. It holds only: the queue and its prompt files, every queue-listed reference as real image bytes, this complete skill (source folder and installable ZIP), `RECEIPTS.jsonl`, `SELECTIONS.json`, `config/art_style.json`, `START_HERE.md` and `WORK_PACKAGE.json` (source commit, every path with SHA-256 and size, prompt hashes, decoded reference formats and sizes). No other art and no private reference PDFs.
+
+1. Unzip into an empty folder; run every command from it. No `git init`, clone or pull.
+2. `python production/art/skill/heraldry-classic-ink-art/scripts/work_preflight.py --repo . --offline-package --require-installed`. READY requires every packaged file to match its hash (receipts may only grow), every prompt to match `QUEUE.json`, and every queue reference to decode as an image. It never runs git, reports `remote_access: NOT_ATTEMPTED` and `delivery: bundle`.
+3. The smoke test above (steps 3–5) still applies; the package cannot prove the image tool's reference attachment or native-file access.
+4. `check`, QA record, `save --qa-file` exactly as in a checkout. `save` keeps a copy of each QA report in the scratch folder.
+5. Batch end: `sheet --refs`, `style_audit.py`, then `heraldry_art.py bundle --evidence SHEET --evidence STYLE_JSON --evidence SMOKE_JSON`. Before writing, `bundle` applies the same receipt gate as `delivery_guard.py` (native SHA, prompt SHA, reference SHAs, ten QA criteria) and requires each saved QA report unchanged. The ZIP holds the native images, `receipts_append.jsonl`, `review_evidence/qa/<ID>.qa.json`, the extra evidence and `BUNDLE_MANIFEST.json` (`pushed_to_github: false`, not approved). `delivery_guard.py` refuses in a package folder: there is nothing to push with.
+6. Hand the bundle over as a downloadable file, say that nothing was pushed, and stop at the anchors gate. Claude Code checks it with `tools/art_work_package.py verify-bundle` before any visual review or intake.
+
+Authenticated Git/LFS delivery stays a separate capability: report it only after a real `delivery_guard.py ship --execute` succeeds from a real checkout.
 
 ## QA record protocol
 

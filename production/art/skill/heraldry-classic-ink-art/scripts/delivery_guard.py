@@ -112,6 +112,9 @@ def validate(repo, need_remote=True):
     queue_file = repo/'production/art/gpt/QUEUE.json'
     if not queue_file.is_file():
         raise Error('not a Heraldry queue checkout')
+    if (repo/'WORK_PACKAGE.json').is_file() and not (repo/'.git').exists():
+        raise Error('offline Work input package: there is no Git checkout or credential here, so nothing can be pushed. '
+                    'Run heraldry_art.py bundle and hand over the review ZIP')
     if cmd(repo, 'branch', '--show-current') != 'main':
         raise Error('not on main: current repo uses direct-main delivery')
     if not cmd(repo, 'lfs', 'version', check=False):

@@ -9,10 +9,12 @@
   save ID IMAGE --must ... --avoid-clear   check, copy the image unmodified into assets/art/incoming, write the receipt
   refuse ID --reason TEXT        record that the image tool refused an item (no image exists to save)
   sheet [ID ...] [--refs]        labelled contact sheet (default: every saved image not yet pushed; name IDs for others)
-  bundle [--out FILE.zip]        hand-off zip for when git push is impossible (default: the scratch folder)
+  bundle [--out FILE.zip] [--evidence FILE ...]   review hand-off zip when git push is impossible (default: the scratch folder)
 
 The repository is found by walking up from the current directory (or --repo). The queue,
 prompts and receipts format belong to the repo (production/art/gpt/); this script only reads them.
+An offline Work input package (WORK_PACKAGE.json at its root, no .git) works the same way, with git
+never used: images and receipts are saved inside it and delivered only by `bundle`.
 Check thresholds were calibrated on the approved Greythorn render, the three owner style samples
 and synthetic defects (wash, frame, crop, tint, grain, blur); see references/QA_CHECKLIST.md."""
 import argparse, hashlib, json, os, re, subprocess, sys, tempfile, zipfile
@@ -28,6 +30,7 @@ QUEUE_REL = "production/art/gpt/QUEUE.json"
 RECEIPTS_REL = "production/art/gpt/RECEIPTS.jsonl"
 SELECTIONS_REL = "production/art/SELECTIONS.json"
 INCOMING_REL = "assets/art/incoming"
+PACKAGE_REL = "WORK_PACKAGE.json"
 IMAGE_EXT = {"PNG": ".png", "JPEG": ".jpg", "WEBP": ".webp"}
 SIZES = {"1536x1024", "1024x1536", "1024x1024"}
 LFS_MAGIC = b"version https://git-lfs"
@@ -124,6 +127,9 @@ def local_files(repo, iid):
 
 
 def git_ok(repo):
+    """True only for a Git checkout rooted at repo. A folder unzipped inside some other checkout is not one."""
+    if not (Path(repo) / ".git").exists():
+        return False
     code, out = git(repo, "rev-parse", "--is-inside-work-tree")
     return code == 0 and out.strip() == "true"
 
@@ -181,6 +187,13 @@ def still_the_rejected_image(sel, file):
     image has been pushed it is awaiting the intake, whatever SELECTIONS.json still says."""
     sha = (sel.get("master") or {}).get("sha256")
     return not sha or local_sha(file) in (None, sha)
+
+
+def package_info(repo):
+    """The offline Work input package manifest, or None in a Git checkout."""
+    if (Path(repo) / ".git").exists():
+        return None
+    return jload(Path(repo) / PACKAGE_REL)
 
 
 def last_receipts(repo):
@@ -495,7 +508,13 @@ def cmd_doctor(a, repo):
     blockers, delivery, notes = [], [], []
     if sys.version_info < (3, 9):
         blockers.append("Python 3.9 or newer is required")
-    if not git_ok(repo):
+    pkg = package_info(repo)
+    if pkg:
+        src = pkg.get("source", {})
+        notes.append(f"offline Work input package from {src.get('repository')} commit {src.get('commit')}: git is not used and nothing is pushed "
+                     "from here. Verify it with work_preflight.py --offline-package; deliver with `bundle`")
+        delivery.append("this is an offline Work input package (no Git checkout, no remote credentials)")
+    elif not git_ok(repo):
         delivery.append("git is not available here")
     else:
         code, branch = git(repo, "rev-parse", "--abbrev-ref", "HEAD")
@@ -594,8 +613,15 @@ def cmd_status(a, repo):
     elif no_receipt:
         action = (f"STOP. {', '.join(no_receipt)} have no receipt from `save` (placed by hand?). Delete the file, or run `save` on the image "
                   "you generated.")
+    elif due and not git_ok(repo) and saved and all_bundled(repo, saved) and not todo:
+        b = jload(scratch_dir(repo) / "bundled.json", {})
+        action = (f"STOP. Every saved image is in the review bundle {b.get('bundle')} (sha256 {b.get('bundle_sha256')}). Hand that zip over as a "
+                  "downloadable file and say plainly that nothing was pushed to GitHub. "
+                  + ("The anchors are done: wait for Claude Code's independent review and a new queue. Do not start the batch."
+                     if q["phase"] == "anchors" else "Wait for the review and a new queue."))
     elif due and not git_ok(repo):
-        action = (f"BUNDLE the saved images (`{helper()} bundle`) and hand the zip to the owner: git is not available here.")
+        action = (f"DRIFT REVIEW, THEN BUNDLE: `{helper()} sheet --refs`, then the style audit, then `{helper()} bundle --evidence SHEET "
+                  "--evidence STYLE_JSON [--evidence SMOKE_JSON]` and hand the zip to the owner: git is not available here.")
     elif due:
         action = ("DRIFT REVIEW, THEN GUARDED DELIVERY. First `" + helper() + " sheet --refs`; "
                   "then `python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py audit --repo .` "
@@ -616,6 +642,16 @@ def cmd_status(a, repo):
         action = "SESSION END: nothing is unsent. Write your report. Next session: " + action
     print("NEXT ACTION:", action)
     return 0
+
+
+def all_bundled(repo, ids):
+    """True when the last bundle holds exactly the current bytes of every one of these saved images."""
+    done = jload(scratch_dir(repo) / "bundled.json", {}).get("images", {})
+    for i in ids:
+        files = local_files(repo, i)
+        if not files or done.get(i) != file_sha(files[0]):
+            return False
+    return True
 
 
 def cmd_next(a, repo):
@@ -825,6 +861,10 @@ def cmd_save(a, repo):
         rec["tripwires"] = fails + warns
     append_receipt(repo, rec)
     close_attempts(repo, it["id"])
+    # Keep the exact QA report beside the attempt counts: `bundle` ships it as review evidence.
+    qa_copy = scratch_dir(repo) / "qa" / f"{it['id']}.qa.json"
+    qa_copy.parent.mkdir(parents=True, exist_ok=True)
+    qa_copy.write_bytes(qa_path.read_bytes())
     print(f"saved {dest.relative_to(repo)} ({len(data)} bytes, unmodified) after {attempts} attempt(s); receipt written")
     if fails:
         print("saved with FAIL tripwires recorded in the receipt: the reviewer will see them")
@@ -889,6 +929,7 @@ def cmd_sheet(a, repo):
 
 
 def cmd_bundle(a, repo):
+    from delivery_guard import Error as GuardError, check_receipt
     q = load_queue(repo)
     st = states(repo, q)
     ids = [i for i, v in st.items() if v == "saved"]
@@ -899,17 +940,67 @@ def cmd_bundle(a, repo):
     out = Path(a.out) if a.out else scratch_dir(repo) / name
     if repo.resolve() in out.resolve().parents:
         raise Fatal("write the bundle outside the repository clone (the skill changes no other repo file); omit --out for the scratch folder")
+    receipts = last_receipts(repo)
+    byid = {it["id"]: it for it in q["items"]}
+    files, items = {}, []
+    for i in ids:
+        f = local_files(repo, i)[0]
+        rec = receipts.get(i)
+        try:                                   # the same byte, prompt, reference and QA gate as a guarded push
+            check_receipt(byid[i], f, rec)
+        except GuardError as e:
+            raise Fatal(f"not bundled: {e}")
+        qa = scratch_dir(repo) / "qa" / f"{i}.qa.json"
+        if not qa.is_file() or file_sha(qa) != rec.get("qa_report_sha256"):
+            raise Fatal(f"not bundled: the QA report saved with {i} is missing from {qa.parent} or changed since `save`. "
+                        "Re-create it for the same image and save again")
+        rel = f.relative_to(repo).as_posix()
+        files[rel] = f.read_bytes()
+        files[f"review_evidence/qa/{i}.qa.json"] = qa.read_bytes()
+        with Image.open(f) as im:
+            px = [im.width, im.height]
+        items.append({"id": i, "file": rel, "sha256": file_sha(f), "bytes": f.stat().st_size, "px": px, "queue_size": byid[i]["size"],
+                      "prompt_sha256": rec["prompt_sha256"], "reference_shas": rec["reference_shas"],
+                      "receipt_sha256": hashlib.sha256(json.dumps(rec, ensure_ascii=False).encode()).hexdigest(),
+                      "qa_report": f"review_evidence/qa/{i}.qa.json", "qa_report_sha256": rec["qa_report_sha256"],
+                      "qa_failed_criteria": rec.get("qa_failed_criteria", []), "accepted_flags": bool(rec.get("accepted_flags")),
+                      "variants_tried": rec.get("variants_tried")})
+    for e in a.evidence:
+        ef = Path(e)
+        if not ef.is_file():
+            raise Fatal(f"--evidence {e}: no such file")
+        files[f"review_evidence/{ef.name}"] = ef.read_bytes()
+    lines = [json.dumps(receipts[i], ensure_ascii=False) for i in ids + refused if i in receipts]
+    files["receipts_append.jsonl"] = ("\n".join(lines) + "\n").encode()
+    pkg = package_info(repo)
+    if pkg:
+        source = {"kind": "offline_package", **{k: pkg.get("source", {}).get(k) for k in ("repository", "branch", "commit")},
+                  "package_manifest_sha256": file_sha(repo / PACKAGE_REL)}
+    else:
+        code, head = git(repo, "rev-parse", "HEAD")
+        source = {"kind": "git_checkout" if git_ok(repo) else "folder", "commit": head.strip() if code == 0 else None}
+    span = ids[0] + " .. " + ids[-1] if ids else "refusals"
+    files["HANDOFF.txt"] = ("Heraldry ChatGPT Work review bundle. NOTHING IN IT WAS PUSHED TO GITHUB, AND NOTHING IN IT IS APPROVED.\n"
+                            "Claude Code reviews it independently: python3 tools/art_work_package.py verify-bundle THIS.zip\n"
+                            "Only after that review: copy assets/art/incoming/<ID>.* into the clone, append receipts_append.jsonl to\n"
+                            "production/art/gpt/RECEIPTS.jsonl, keep review_evidence/ outside the repository, then\n"
+                            "git lfs install; git add assets/art/incoming production/art/gpt/RECEIPTS.jsonl; git lfs ls-files\n"
+                            f"git commit -m 'art(gpt): {span}'; git pull --rebase origin main; git push origin main\n").encode()
+    manifest = {"schema": 1, "kind": "heraldry-work-review-bundle", "created_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "source": source, "queue": {"phase": q["phase"], "sha256": file_sha(repo / QUEUE_REL), "ids": [it["id"] for it in q["items"]]},
+                "delivery": "bundle", "pushed_to_github": False, "approval": "NOT APPROVED: independent Claude Code / owner review required",
+                "items": items, "refusals": refused,
+                "files": {k: {"sha256": hashlib.sha256(v).hexdigest(), "bytes": len(v)} for k, v in sorted(files.items())}}
     out.parent.mkdir(parents=True, exist_ok=True)
-    receipts = {i: json.dumps(r, ensure_ascii=False) for i, r in last_receipts(repo).items()}
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
-        for i in ids:
-            for f in local_files(repo, i):
-                z.write(f, f.relative_to(repo).as_posix())
-        z.writestr("receipts_append.jsonl", "\n".join(receipts[i] for i in ids + refused if i in receipts) + "\n")
-        z.writestr("HANDOFF.txt", "Unzip at the repository root. Append receipts_append.jsonl to production/art/gpt/RECEIPTS.jsonl.\n"
-                   "git lfs install; git add assets/art/incoming production/art/gpt/RECEIPTS.jsonl; git lfs ls-files\n"
-                   f"git commit -m 'art(gpt): {ids[0] + ' .. ' + ids[-1] if ids else 'refusals'}'; git pull --rebase origin main; git push origin main\n")
-    print(f"bundle: {out} ({len(ids)} images, {len(refused)} refusals)")
+        for k in sorted(files):
+            z.writestr(k, files[k])
+        z.writestr("BUNDLE_MANIFEST.json", json.dumps(manifest, indent=1, ensure_ascii=False) + "\n")
+    digest = file_sha(out)
+    (scratch_dir(repo) / "bundled.json").write_text(json.dumps({"bundle": str(out), "bundle_sha256": digest,
+                                                                 "images": {it["id"]: it["sha256"] for it in items}}))
+    print(f"bundle: {out} ({len(ids)} images, {len(refused)} refusals, {len(a.evidence)} extra evidence files)  sha256 {digest}")
+    print("Nothing was pushed. Hand this zip over as a downloadable file for independent review; it is not approved artwork.")
     if git_ok(repo):
         print("note: git is available here. Push instead of handing over a bundle, unless a push has failed.")
     return 0
@@ -952,8 +1043,10 @@ def main(argv=None):
     p.add_argument("ids", nargs="*")
     p.add_argument("--out")
     p.add_argument("--refs", action="store_true", help="add the references of every item on the sheet, for style comparison")
-    p = sub.add_parser("bundle", help="hand-off zip for when git push is impossible")
+    p = sub.add_parser("bundle", help="review hand-off zip (images, receipts, QA reports, manifest) for when git push is impossible")
     p.add_argument("--out", help="default: the scratch folder; must be outside the repository clone")
+    p.add_argument("--evidence", action="append", default=[],
+                   help="extra review evidence to include under review_evidence/: the contact sheet, style audit JSON, smoke record (repeat)")
     a = ap.parse_args(argv)
     global _REPO
     try:
