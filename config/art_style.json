@@ -181,7 +181,7 @@
   "ART-ANC-DWARF"
  ],
  "gpt_reference_sets": {
-  "note": "Each ChatGPT queue item carries at most max_refs reference images chosen for its register, so scenery never bleeds into isolated figures and no single subject dominates. A candidate is either a repo path (always used) or an anchor ID (used once that anchor is approved). The item's own ID is skipped. The first max_refs usable candidates win, in order. Owner direction 2026-10-11: only the owner's hand-inked samples are attached. Generated images, approved or not, are never style references, so model output cannot compound its own drift. Owner direction 2026-10-11 (later): the gritty old-school set (STYLE-REF-04..10, plus 03) replaces the clean engraved STYLE-REF-01/02; the ink-wash examples are never attached because grey tone cannot print. family_sets overrides the register set for the named families. Owner 2026-10-11: STYLE-REF-01 cut and replaced by the best attached city scene (STYLE-REF-11), used for bastion and world scenes only, so town features (palisade, gate towers, bridge, standing stones) do not bleed into other scenes. Owner exception to the no-generated-references rule: STYLE-REF-11 looks machine-made but was supplied and chosen by the owner's instruction.",
+  "note": "Each ChatGPT queue item carries at most max_refs reference images chosen for its register, so scenery never bleeds into isolated figures and no single subject dominates. A candidate is either a repo path (always used) or an anchor ID (used once that anchor is approved). The item's own ID is skipped. The first max_refs usable candidates win, in order. Owner direction 2026-10-11: only the owner's hand-inked samples are attached. Generated images, approved or not, are never style references, so model output cannot compound its own drift. Owner direction 2026-10-11 (later): the gritty old-school set (STYLE-REF-04..10, plus 03) replaces the clean engraved STYLE-REF-01/02; the ink-wash examples are never attached because grey tone cannot print. family_sets overrides the register set for the named families. Owner 2026-10-11: STYLE-REF-01 cut and replaced by the best attached city scene (STYLE-REF-11), used for bastion and world scenes only, so town features (palisade, gate towers, bridge, standing stones) do not bleed into other scenes. Owner exception to the no-generated-references rule: STYLE-REF-11 looks machine-made but was supplied and chosen by the owner's instruction. Owner 2026-10-11: promote STYLE-REF-08 (woodcut fencers) and STYLE-REF-02 (city panorama). 02 joins 11 and 09 for bastion and world scenes; 08 replaces 03 for persons (full-length human figures with woodcut silhouettes). 03 stays for creatures and still lifes.",
   "max_refs": 3,
   "register_of_family": {
    "cover": "scene",
@@ -213,7 +213,7 @@
    "person": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "still": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
@@ -223,13 +223,13 @@
   "family_sets": {
    "bastion": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "world": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   }
  },

@@ -116,11 +116,11 @@ class ArtPipeline(unittest.TestCase):
             self.assertTrue(1 <= len(refs) <= cfg["max_refs"], it["id"])
             self.assertEqual(len(refs), len(set(refs)), it["id"])
             self.assertNotIn(f"assets/art/incoming/{it['id']}.png", refs, "an entry never references itself")
-            self.assertFalse(set(refs) & {"assets/art/style/STYLE-REF-01-scene-hatching.jpg", "assets/art/style/STYLE-REF-02-panorama-line.jpg"},
-                             "the clean engraved samples were superseded by the gritty set (owner 2026-10-11)")
+            self.assertNotIn("assets/art/style/STYLE-REF-01-scene-hatching.jpg", refs, "cut by the owner 2026-10-11")
             self.assertFalse([r for r in refs if "/incoming/" in r], "generated images are never references")
             # the owner's city scene replaces the cut STYLE-REF-01 for town and world scenes only (owner 2026-10-11)
             self.assertEqual(city in refs, it["family"] in ("bastion", "world"), it["id"])
+            self.assertEqual("assets/art/style/STYLE-REF-08-woodcut-fencers.jpg" in refs, it["register"] == "person", it["id"])
             if it["register"] == "scene":
                 self.assertFalse(set(refs) & figure_only, it["id"])
             else:

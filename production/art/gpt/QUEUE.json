@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-11T15:23:39+00:00",
+ "generated_at": "2026-10-11T15:27:20+00:00",
  "max_references": 3,
  "push_every": 1,
  "review_every": 10,
@@ -18,8 +18,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -45,8 +45,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -70,8 +70,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -95,8 +95,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -120,8 +120,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3206,7 +3206,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3232,7 +3232,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3257,7 +3257,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3282,7 +3282,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3306,7 +3306,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3331,7 +3331,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3355,7 +3355,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3379,7 +3379,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3404,7 +3404,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3428,7 +3428,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3452,7 +3452,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3476,7 +3476,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3500,7 +3500,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3526,7 +3526,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3551,7 +3551,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3576,7 +3576,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3600,7 +3600,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3624,7 +3624,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3651,7 +3651,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3675,7 +3675,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3699,7 +3699,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5034,8 +5034,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5059,8 +5059,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5083,8 +5083,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5108,8 +5108,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5133,8 +5133,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5158,8 +5158,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5183,8 +5183,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5208,8 +5208,8 @@
    "print_w_in": 3.3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",

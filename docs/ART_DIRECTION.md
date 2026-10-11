@@ -20,13 +20,13 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   |---|---|
   | Scene | STYLE-REF-09 skeleton melee (comic-ink spot blacks), STYLE-REF-10 1980s undead crowd (bold contour, heavy blacks), STYLE-REF-07 dry-brush duel (vignette on open paper) |
   | Creature | STYLE-REF-04 enthroned skeleton king (heavy brush blacks), STYLE-REF-05 cave creature (scratchy pen texture), STYLE-REF-03 skeleton warrior |
-  | Person | STYLE-REF-04, STYLE-REF-06 hooded archer (loose brush sketch), STYLE-REF-03 |
+  | Person | STYLE-REF-04, STYLE-REF-06 hooded archer (loose brush sketch), STYLE-REF-08 period woodcut fencers (full-length silhouettes, gouged hatching) |
   | Still life | STYLE-REF-04, STYLE-REF-03 |
-  | Bastion and world scenes (`family_sets`) | STYLE-REF-11 walled town from its approach road (bold contour, heavy blacks, open sky), STYLE-REF-09, STYLE-REF-07 |
+  | Bastion and world scenes (`family_sets`) | STYLE-REF-11 walled town from its approach road (bold contour, heavy blacks, open sky), STYLE-REF-02 city panorama (line construction of a dense city), STYLE-REF-09 |
 
-  STYLE-REF-08 (period woodcut fencers) is in the library but not in a default set.
+  The owner promoted STYLE-REF-08 and STYLE-REF-02 back into use (2026-10-11). STYLE-REF-03 now serves creatures and still lifes only.
 - **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached, because their grey tone cannot print in black ink. Take from them only the dramatic black massing and composition.
-- **Cut and superseded:** the owner cut STYLE-REF-01 (the file is removed; it remains in git history). It was replaced by the best of four city scenes the owner attached: STYLE-REF-11, used only for bastion and world scenes so that town features do not bleed into other scenes. It is an owner exception to the rule against machine-made references. STYLE-REF-02 (clean panorama line) is kept for the record but not attached. The eleventh example was STYLE-REF-03 again (byte-identical), which stays.
+- **Cut and superseded:** the owner cut STYLE-REF-01 (the file is removed; it remains in git history). It was replaced by the best of four city scenes the owner attached: STYLE-REF-11, used only for bastion and world scenes so that town features do not bleed into other scenes. It is an owner exception to the rule against machine-made references. STYLE-REF-02 (clean panorama line) was later promoted back for bastion and world scenes. The eleventh example was STYLE-REF-03 again (byte-identical), which stays.
 - **Prompts:** `prompt_v2` (intro, `style_*`, `final_*`, `reference`) carries this wording. The queue was republished with new prompt hashes.
 - **Approved art:** Greythorn and the four hand-inked anchors (Greenmark, Undead Champion, Fighter, Dwarf) were approved under the cleaner direction and remain approved. Whether to redo them for consistency is an owner decision.
 

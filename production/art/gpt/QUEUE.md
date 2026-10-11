@@ -4,10 +4,10 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 
 | Set | Reference images |
 |---|---|
-| A | `assets/art/style/STYLE-REF-11-city-approach-ink.png`<br>`assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg`<br>`assets/art/style/STYLE-REF-07-drybrush-duel.jpg` |
+| A | `assets/art/style/STYLE-REF-11-city-approach-ink.png`<br>`assets/art/style/STYLE-REF-02-panorama-line.jpg`<br>`assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg` |
 | B | `assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg`<br>`assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg`<br>`assets/art/style/STYLE-REF-07-drybrush-duel.jpg` |
 | C | `assets/art/style/STYLE-REF-04-throne-brush-black.jpg`<br>`assets/art/style/STYLE-REF-05-cave-creature-pen.jpg`<br>`assets/art/style/STYLE-REF-03-figure-spotblack.jpg` |
-| D | `assets/art/style/STYLE-REF-04-throne-brush-black.jpg`<br>`assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg`<br>`assets/art/style/STYLE-REF-03-figure-spotblack.jpg` |
+| D | `assets/art/style/STYLE-REF-04-throne-brush-black.jpg`<br>`assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg`<br>`assets/art/style/STYLE-REF-08-woodcut-fencers.jpg` |
 | E | `assets/art/style/STYLE-REF-04-throne-brush-black.jpg`<br>`assets/art/style/STYLE-REF-03-figure-spotblack.jpg` |
 
 | # | ID | Subject | Size | Set | Tries | Prompt |
