@@ -15,7 +15,7 @@ No authenticated Git? Use the offline Work input package (`tools/art_work_packag
 2. Add `--offline-package` to the preflight. It must report READY, `delivery: bundle` and `remote_access: NOT_ATTEMPTED`.
 3. Deliver with `bundle --evidence ...` and say that nothing was pushed.
 
-Confirm with a real smoke test that the image tool accepts the queue's references and that the native image file is accessible. Repository access alone does not prove either.
+On the first item, confirm that the image tool accepts the listed references and that you can save the native file; if either fails, stop and report. Repository access alone does not prove either.
 
 ## Per item
 
@@ -29,9 +29,9 @@ Confirm with a real smoke test that the image tool accepts the queue's reference
 
 - **DELIVER** (after every save): `delivery_guard.py ship --execute --repo .`. It runs every delivery check itself; `audit` is the same check without the push, for diagnosis only.
 - **DRIFT REVIEW** (every tenth save):
-  1. Run `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10 --out <scratch>/style.json`.
-  2. Look at the sheet once. Stop if two or more images of the same register share a drift.
-  3. Deliver.
+  1. Run `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10` (both write to the scratch folder).
+  2. Look at the sheet once, then deliver in every case.
+  3. If two or more images of the same register share a drift, stop after delivering and report.
 - If `ship` says BLOCKED: run `bundle`, report it, and stop. Never pull, rebase or force.
 - Resume from `status`. Never regenerate a delivered item unless it is listed as a `redo`.
 

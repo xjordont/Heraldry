@@ -1,6 +1,6 @@
 # Heraldry Skirmish: project handoff (2026-10-11)
 
-This document summarises the project, its decisions and the illustration workflow for a new agent (Codex) or person. The repository `xjordont/Heraldry` (private, branch `main`) is the source of truth. Every file this handoff mentions lives there.
+This document summarises the project, its decisions and the illustration workflow for a new agent (Codex) or person. Sections 1 to 6 are the original handoff; the dated updates at the end supersede them where they differ (the current queue is the 270-item `batch` phase, delivered one image at a time). The repository `xjordont/Heraldry` (private, branch `main`) is the source of truth. Every file this handoff mentions lives there.
 
 ## 1. The project
 
@@ -93,7 +93,7 @@ The owner moved the art benchmark "closer to the more old school black and white
 - **Mood only:** three ink-wash examples are never attached, because grey cannot print.
 - **Prompts:** they ask for bold rough brush contours, heavy solid blacks, scratchy hatching and dry-brush, and high contrast, still in pure black ink.
 - **Queue:** the 270-item batch queue was republished with the new prompts and per-register reference sets. See `docs/ART_DIRECTION.md`.
-- **Next step:** the first Codex session after this change should stop after 5 images for a review (`CODEX_PROMPT.md`).
+- **Next step (superseded):** see the latest update below.
 
 ## Update: skill v7 (2026-10-11, latest)
 
@@ -102,4 +102,4 @@ Reference mapping v7 is in place:
 - owner samples plus four public-domain prints;
 - ten lead items, one per set, so the first drift review covers everything.
 
-All 270 prompts were audited and corrected. The skill is v7 (`Heraldry_Classic_Ink_Art_Skill_v7_0.zip`). Codex runs the full queue from `CODEX_PROMPT.md`; for a first check of the new mapping, add "Stop after 10 delivered images."
+All 270 prompts were audited and corrected. The skill is v7 (`Heraldry_Classic_Ink_Art_Skill_v7_0.zip`). Codex runs the full queue from `CODEX_PROMPT.md`; for a first check of the new mapping, add "Stop after 17 delivered images." (one of each reference set)

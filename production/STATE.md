@@ -262,3 +262,31 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
     - `status`, the batch card, the operator card, SKILL.md, the runbook and the instructions all say the same.
   - **Speed:** `work_preflight` decoded or fully read each reference once per queue item (810 times for 28 files). It now checks each file once: about 10 s down to about 0.7 s at every session start and in package verification. The repository tests drop by about 30 s.
   - **Dead code:** 23 permanently skipped v4 tests, the legacy `build_release.py` builder (duplicating `tools/art_skill_build.py`), the v4 skill ZIP, and unused imports and helpers.
+- **Prime-time debug and optimisation pass** (owner, 2026-10-11: "Please debug and optimize the repo, codebase, and gpt image generation skill one more time to make sure everything is ready for prime time!"). Two independent audits ran (worker docs versus scripts, and a simulated 25-image Codex run); each finding was verified before it was fixed.
+  - **Queue lead:** `gpt_lead_ids` now has seventeen items, one per reference set (it had ten, so seven sets were first seen only after the second drift review). The queue was republished; the prompts are unchanged.
+  - **Worker script fixes (`heraldry_art.py`):**
+    - `status` lists redos first, like `next`.
+    - The drift review count is monotonic, so a rejection no longer repeats a drift review.
+    - The DRIFT REVIEW message says to deliver in every case and prints the exact `style_audit` command.
+    - Helper commands print the running interpreter.
+    - Receipts name the real surface (Codex or ChatGPT Work).
+    - `sheet --out` inside the clone is refused.
+    - `check` says when an attempt was the last allowed one.
+    - LFS pointer files are skipped in the recent-image list.
+  - **Other scripts:**
+    - `style_audit` skips LFS pointers, defaults its report to the scratch folder and prints its advisories.
+    - `delivery_guard ship` no longer fetches twice per delivery.
+    - `art_intake needs-pull` ignores the 12 legacy non-catalog PNGs, which it had re-downloaded (about 37 MB) on every intake run.
+  - **Docs:**
+    - BATCH_CARD rewritten for PowerShell, with the exact QA-draft fields and `--must` rules and the LFS-pointer fix.
+    - The stale smoke-file gate, "stop after 5 anchors", `--out` and v4 ZIP wording were removed from SKILL.md, the operator card, the references, the runbook, INSTRUCTIONS, WORK_PROMPT and ART_AUTOMATION.
+    - The tarantula redo reason now uses the gritty-style wording.
+  - **Lint:** unused imports and dead assignments were removed across `tools/`.
+  - **Tests:** new regressions for the monotonic drift count, LFS pointers in `style_audit` and legacy pointers in `needs-pull`. The duplicate inherited cadence test runs were removed.
+  - **Left open:** the simulated run's minor items, not fixed:
+    - `save` reports the attempt number from the QA draft;
+    - review JPEGs in scratch grow over a long run;
+    - a mid-session rejection is seen only at the next pull.
+
+    The first real Codex delivery is still the first live test of intake.
+  - No manuscript change and no build; `dist/` still describes the last requested build.

@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-11T20:34:39+00:00",
+ "generated_at": "2026-10-11T21:16:51+00:00",
  "max_references": 3,
  "push_every": 1,
  "review_every": 10,
@@ -256,6 +256,187 @@
     "Not the melee weapons still life on sacking.",
     "No readable names on helms.",
     "No figures."
+   ]
+  },
+  {
+   "id": "ART-MON-GIANT-SCORPION",
+   "family": "monster",
+   "register": "creature",
+   "ref_set": "monster:vermin",
+   "title": "Giant Scorpion",
+   "prompt": "production/art/gpt/prompts/ART-MON-GIANT-SCORPION.txt",
+   "prompt_sha256": "481ba14be36c5a2ce78a27741f108ae9a03de1224ec6d9b3ab7adc0776b6f893",
+   "size": "1024x1024",
+   "print_w_in": 1.9,
+   "references": [
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+   ],
+   "max_attempts": 3,
+   "size_class": "Medium: about human-sized",
+   "must": [
+    "Exactly eight walking legs, two pincers and one tail"
+   ],
+   "avoid": [
+    "No wings, no extra tails.",
+    "Not the Giant Tarantula or Black Widow.",
+    "Do not draw wings."
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+   "family": "scenario",
+   "register": "scene",
+   "ref_set": "scenario",
+   "title": "Scenario 1: Hunt the Wild Beast",
+   "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST.txt",
+   "prompt_sha256": "2346e424e7f234ac06da33c4e5b1f62b493f24ad5d7e02c08f847c3700962240",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 3,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "Do not portray the boar: a barely seen shape only, no tusks in close-up.",
+    "No boar carcass and no giant forest Avatar.",
+    "Not the Bandit's Toll (this is a camp, not a trail barricade).",
+    "No gore on the camp."
+   ]
+  },
+  {
+   "id": "ART-MON-THE-LAST-COLOSSUS",
+   "family": "boss",
+   "register": "scene",
+   "ref_set": "boss",
+   "title": "The Last Colossus",
+   "prompt": "production/art/gpt/prompts/ART-MON-THE-LAST-COLOSSUS.txt",
+   "prompt_sha256": "4b1dab7ec5e198c513f2391f9f86730f4dae51dd815cf5a9b2f04ecbb1925b7b",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+   ],
+   "max_attempts": 3,
+   "size_class": "Huge: towering many times a human's size",
+   "must": [
+    "Three times a man's height"
+   ],
+   "avoid": [
+    "Not the Cursed Colossus of the Waste (a broken sand statue) or the Guardian Construct.",
+    "Not a cartoon robot or mecha.",
+    "No glowing eyes.",
+    "Not skyscraper-sized."
+   ]
+  },
+  {
+   "id": "ART-WOR-1-2-THE-GRIM-WORLD",
+   "family": "world",
+   "register": "scene",
+   "ref_set": "world",
+   "title": "1.2 The Grim World",
+   "prompt": "production/art/gpt/prompts/ART-WOR-1-2-THE-GRIM-WORLD.txt",
+   "prompt_sha256": "ef40846ec7ae82894ecb61f80805a413cff311f5ad0df4a166ee41e6bbe15c6e",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+   ],
+   "max_attempts": 3,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No monsters; the cruelty here is human.",
+    "Do not show violence against the family.",
+    "No readable heraldry on banners.",
+    "Not an abandoned monster-held village street."
+   ]
+  },
+  {
+   "id": "ART-ITE-7-8-MELEE-WEAPONS",
+   "family": "item",
+   "register": "still",
+   "ref_set": "item",
+   "title": "7.8 Melee Weapons",
+   "prompt": "production/art/gpt/prompts/ART-ITE-7-8-MELEE-WEAPONS.txt",
+   "prompt_sha256": "25ea06609f6443f13424fc603a236cde192305562e1e76ada0d2b2831c9c6aae",
+   "size": "1536x1024",
+   "print_w_in": 2.6,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
+   ],
+   "max_attempts": 3,
+   "size_class": "",
+   "must": [
+    "Only the six named weapons"
+   ],
+   "avoid": [
+    "Not the treasure still life.",
+    "No weapons beyond the six named, no swords of legend.",
+    "No readable maker's marks.",
+    "No gore or blood."
+   ]
+  },
+  {
+   "id": "ART-CH01-002",
+   "family": "chapter",
+   "register": "scene",
+   "ref_set": "chapter",
+   "title": "ART-CH01-001",
+   "prompt": "production/art/gpt/prompts/ART-CH01-002.txt",
+   "prompt_sha256": "6e4d45c7f2c97ed05531f712cd18192922e5ac633b0d558006e9f4e0c73907be",
+   "size": "1536x1024",
+   "print_w_in": 4.5,
+   "references": [
+    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "max_attempts": 5,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "Do not repeat the cover composition or the Greythorn bastion portrait; no walled town visible.",
+    "No large heroic party and no legible device on the banner.",
+    "Do not include any monsters or dragons in the sky.",
+    "No panorama of all six climates."
+   ]
+  },
+  {
+   "id": "ART-COVER-002",
+   "family": "cover",
+   "register": "scene",
+   "ref_set": "cover",
+   "title": "ART-COVER-001",
+   "prompt": "production/art/gpt/prompts/ART-COVER-002.txt",
+   "prompt_sha256": "76d8b65fe5b5dfa766507ff9315c74e56a43cdad7a08dab40fd91d564735ef99",
+   "size": "1536x1024",
+   "print_w_in": 4.8,
+   "references": [
+    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
+   ],
+   "max_attempts": 5,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "Do not render the title or any lettering on banners.",
+    "Do not detail the Monster: a dark silhouette only.",
+    "Do not make the party large or heroic-posed; no sunburst or glow.",
+    "Do not give the rival banner a heraldic device that reads as a symbol.",
+    "No plate armour, longbow or staff on the four Heroes."
    ]
   },
   {
@@ -1591,32 +1772,6 @@
     "Not the Miasma Serpent or naga.",
     "Do not show a victim.",
     "No venom drops."
-   ]
-  },
-  {
-   "id": "ART-MON-GIANT-SCORPION",
-   "family": "monster",
-   "register": "creature",
-   "ref_set": "monster:vermin",
-   "title": "Giant Scorpion",
-   "prompt": "production/art/gpt/prompts/ART-MON-GIANT-SCORPION.txt",
-   "prompt_sha256": "481ba14be36c5a2ce78a27741f108ae9a03de1224ec6d9b3ab7adc0776b6f893",
-   "size": "1024x1024",
-   "print_w_in": 1.9,
-   "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "Medium: about human-sized",
-   "must": [
-    "Exactly eight walking legs, two pincers and one tail"
-   ],
-   "avoid": [
-    "No wings, no extra tails.",
-    "Not the Giant Tarantula or Black Widow.",
-    "Do not draw wings."
    ]
   },
   {
@@ -4039,33 +4194,6 @@
    ]
   },
   {
-   "id": "ART-MON-THE-LAST-COLOSSUS",
-   "family": "boss",
-   "register": "scene",
-   "ref_set": "boss",
-   "title": "The Last Colossus",
-   "prompt": "production/art/gpt/prompts/ART-MON-THE-LAST-COLOSSUS.txt",
-   "prompt_sha256": "4b1dab7ec5e198c513f2391f9f86730f4dae51dd815cf5a9b2f04ecbb1925b7b",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "Huge: towering many times a human's size",
-   "must": [
-    "Three times a man's height"
-   ],
-   "avoid": [
-    "Not the Cursed Colossus of the Waste (a broken sand statue) or the Guardian Construct.",
-    "Not a cartoon robot or mecha.",
-    "No glowing eyes.",
-    "Not skyscraper-sized."
-   ]
-  },
-  {
    "id": "ART-MON-THE-SUN-CROWNED-PRINCE",
    "family": "boss",
    "register": "scene",
@@ -4188,31 +4316,6 @@
     "Not a bandit roadblock and not two parties facing across a valley.",
     "No readable seal on satchel.",
     "Do not detail the wolves: no portraits."
-   ]
-  },
-  {
-   "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
-   "family": "scenario",
-   "register": "scene",
-   "ref_set": "scenario",
-   "title": "Scenario 1: Hunt the Wild Beast",
-   "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST.txt",
-   "prompt_sha256": "2346e424e7f234ac06da33c4e5b1f62b493f24ad5d7e02c08f847c3700962240",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "Do not portray the boar: a barely seen shape only, no tusks in close-up.",
-    "No boar carcass and no giant forest Avatar.",
-    "Not the Bandit's Toll (this is a camp, not a trail barricade).",
-    "No gore on the camp."
    ]
   },
   {
@@ -5094,31 +5197,6 @@
     "Not the Mire climate walkways or Vossegar's cathedral.",
     "No glow.",
     "No gore."
-   ]
-  },
-  {
-   "id": "ART-WOR-1-2-THE-GRIM-WORLD",
-   "family": "world",
-   "register": "scene",
-   "ref_set": "world",
-   "title": "1.2 The Grim World",
-   "prompt": "production/art/gpt/prompts/ART-WOR-1-2-THE-GRIM-WORLD.txt",
-   "prompt_sha256": "ef40846ec7ae82894ecb61f80805a413cff311f5ad0df4a166ee41e6bbe15c6e",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "No monsters; the cruelty here is human.",
-    "Do not show violence against the family.",
-    "No readable heraldry on banners.",
-    "Not an abandoned monster-held village street."
    ]
   },
   {
@@ -6365,58 +6443,6 @@
    ]
   },
   {
-   "id": "ART-ITE-7-8-MELEE-WEAPONS",
-   "family": "item",
-   "register": "still",
-   "ref_set": "item",
-   "title": "7.8 Melee Weapons",
-   "prompt": "production/art/gpt/prompts/ART-ITE-7-8-MELEE-WEAPONS.txt",
-   "prompt_sha256": "25ea06609f6443f13424fc603a236cde192305562e1e76ada0d2b2831c9c6aae",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [
-    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
-    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
-    "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "",
-   "must": [
-    "Only the six named weapons"
-   ],
-   "avoid": [
-    "Not the treasure still life.",
-    "No weapons beyond the six named, no swords of legend.",
-    "No readable maker's marks.",
-    "No gore or blood."
-   ]
-  },
-  {
-   "id": "ART-CH01-002",
-   "family": "chapter",
-   "register": "scene",
-   "ref_set": "chapter",
-   "title": "ART-CH01-001",
-   "prompt": "production/art/gpt/prompts/ART-CH01-002.txt",
-   "prompt_sha256": "6e4d45c7f2c97ed05531f712cd18192922e5ac633b0d558006e9f4e0c73907be",
-   "size": "1536x1024",
-   "print_w_in": 4.5,
-   "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
-   ],
-   "max_attempts": 5,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "Do not repeat the cover composition or the Greythorn bastion portrait; no walled town visible.",
-    "No large heroic party and no legible device on the banner.",
-    "Do not include any monsters or dragons in the sky.",
-    "No panorama of all six climates."
-   ]
-  },
-  {
    "id": "ART-CH02-002",
    "family": "chapter",
    "register": "scene",
@@ -6665,32 +6691,6 @@
     "No construction scene and no scaffolding.",
     "No monster in view.",
     "No glowing lantern rays."
-   ]
-  },
-  {
-   "id": "ART-COVER-002",
-   "family": "cover",
-   "register": "scene",
-   "ref_set": "cover",
-   "title": "ART-COVER-001",
-   "prompt": "production/art/gpt/prompts/ART-COVER-002.txt",
-   "prompt_sha256": "76d8b65fe5b5dfa766507ff9315c74e56a43cdad7a08dab40fd91d564735ef99",
-   "size": "1536x1024",
-   "print_w_in": 4.8,
-   "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
-   ],
-   "max_attempts": 5,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "Do not render the title or any lettering on banners.",
-    "Do not detail the Monster: a dark silhouette only.",
-    "Do not make the party large or heroic-posed; no sunburst or glow.",
-    "Do not give the rival banner a heraldic device that reads as a symbol.",
-    "No plate armour, longbow or staff on the four Heroes."
    ]
   }
  ]

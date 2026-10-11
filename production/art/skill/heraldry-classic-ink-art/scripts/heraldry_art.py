@@ -213,6 +213,24 @@ def last_receipts(repo):
     return out
 
 
+def saved_receipt_lines(repo, q):
+    """Number of non-refusal receipt lines for queue items: a monotonic count of saved images (redos included)."""
+    queued = {it["id"] for it in q["items"]}
+    f, n = repo / RECEIPTS_REL, 0
+    for line in f.read_text(encoding="utf-8").splitlines() if f.is_file() else []:
+        try:
+            r = json.loads(line)
+        except ValueError:
+            continue
+        n += isinstance(r, dict) and r.get("id") in queued and not r.get("refused")
+    return n
+
+
+def surface(repo):
+    """Where the image was made, for the receipt: HERALDRY_SURFACE, else ChatGPT Work in an offline package, else Codex."""
+    return os.environ.get("HERALDRY_SURFACE") or ("ChatGPT Work" if package_info(repo) else "Codex")
+
+
 def receipts_unpushed(repo):
     """True when RECEIPTS.jsonl has uncommitted changes or commits that are not on origin/main."""
     code, out = git(repo, "status", "--porcelain", "--untracked-files=all", "--", RECEIPTS_REL)
@@ -379,7 +397,9 @@ def helper():
         rel = os.path.relpath(target)
     except ValueError:                       # another drive on Windows
         rel = str(target)
-    return f"python {Path(rel).as_posix()}"      # forward slashes work in every shell, Windows included
+    exe = Path(sys.executable or "python").as_posix()   # the interpreter actually running (the venv on Codex)
+    exe = f'"{exe}"' if " " in exe else exe
+    return f"{exe} {Path(rel).as_posix()}"      # forward slashes work in every shell, Windows included
 
 
 def copy_notice(repo):
@@ -617,7 +637,7 @@ def cmd_status(a, repo):
     note = copy_notice(repo)
     if note and note.startswith("WARNING"):
         print(note)
-    todo = [i for i, v in st.items() if v in ("redo", "pending")]
+    todo = [i for i, v in st.items() if v == "redo"] + [i for i, v in st.items() if v == "pending"]   # redos first, like `next`
     unsent = bool(saved) or receipts_unpushed(repo)
     push_at = int(q.get("push_every") or BATCH_PUSH_AT)       # the queue sets the cadence for long runs
     # Drift review (contact sheet + style audit over the last N delivered) runs every `review_every` images,
@@ -632,8 +652,8 @@ def cmd_status(a, repo):
         pending_send = [i for i in saved if not (local_files(repo, i) and done.get(i) == file_sha(local_files(repo, i)[0]))]
         unsent = bool(pending_send)
     due = len(pending_send) >= push_at or (unsent and (not todo or a.end))
-    pushed_n = sum(1 for v in st.values() if v == "pushed")
-    drift_due = (pushed_n + len(saved)) // review_at > pushed_n // review_at
+    made = saved_receipt_lines(repo, q)               # every save appends one line; it only ever grows
+    drift_due = made // review_at > (made - len(saved)) // review_at
     # what a push would sweep up: files that are not queue items, and images saved without a matching receipt
     have_git, changed, ahead = incoming_changes(repo)
     queue_ids = {it["id"] for it in q["items"]}
@@ -665,10 +685,13 @@ def cmd_status(a, repo):
         ship = ("`python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .` "
                 "(it runs every delivery check itself); on BLOCKED stop and use `" + helper() + " bundle`.")
         action = ("DELIVER: " + ship) if not drift_due else (
-            f"DRIFT REVIEW, THEN DELIVER. `{helper()} sheet --recent {review_at} --refs` and `style_audit.py --recent {review_at}`; "
-            "look for shared drift and redo the worst first. Then " + ship)
+            f"DRIFT REVIEW, THEN DELIVER. `{helper()} sheet --recent {review_at} --refs` and "
+            f"`{helper().replace('heraldry_art.py', 'style_audit.py')} --repo . --recent {review_at}`; "
+            "deliver in every case: one drifting image, name it in your report; two or more same-register images with the "
+            "same fault, deliver and then stop and report; nothing drifted, say so and continue. Then " + ship)
     elif todo:
-        note = (f" ({len(saved)} saved and not sent yet: send at {push_at}, or run `status --end` at session end)" if unsent else "")
+        note = (f" ({len(saved)} saved and not sent yet: send at {push_at}, or run `status --end` at session end)" if saved
+                else " (a refusal receipt is not sent yet: it goes with the next delivery, or `status --end`)" if unsent else "")
         action = f"GENERATE next: {', '.join(todo[:3])}{' ...' if len(todo) > 3 else ''}  (`{helper()} next`){note}"
     elif q["phase"] == "anchors":
         action = ("STOP. The anchors are done"
@@ -754,6 +777,9 @@ def run_check(repo, q, iid, image):
     fails, warns, infos = evaluate(m, it)
     digest = file_sha(image)
     n, rnd = record_attempt(repo, it["id"], digest, states(repo, q)[it["id"]])
+    if n == it["max_attempts"]:
+        infos.append(f"this was the last allowed attempt ({n} of {it['max_attempts']}): if it fails, save the best attempt with "
+                     "--accept-flags --notes \"<what is still wrong>\"; do not generate again")
     if n > it["max_attempts"]:
         fails.append(f"attempt budget used up ({n} images checked, budget {it['max_attempts']}): do not generate again; "
                      "save the best earlier attempt with --accept-flags")
@@ -859,8 +885,8 @@ def cmd_save(a, repo):
     if fails and not a.accept_flags:
         for f in fails:
             print("FAIL", f)
-        raise Fatal("mechanical failures: regenerate (the budget is "
-                    f"{it['max_attempts']} attempts), or pass --accept-flags with --notes if this is the best attempt after the last allowed one")
+        raise Fatal(("mechanical failures and the budget is used: save the best attempt with --accept-flags --notes \"<what is still wrong>\""
+                     if n >= it["max_attempts"] else f"mechanical failures: regenerate (attempt {n} of {it['max_attempts']}, references/REPAIR.md)"))
     if a.accept_flags:
         if n < it["max_attempts"]:
             raise Fatal(f"--accept-flags is only for the last allowed attempt: you have checked {n} of {it['max_attempts']} images. "
@@ -898,7 +924,7 @@ def cmd_save(a, repo):
         if stale != dest:
             stale.unlink()
             print(f"removed the older {stale.name} (one file per ID)")
-    rec = {"id": it["id"], "prompt_sha256": it["prompt_sha256"], "surface": "ChatGPT Work", "model": a.model or "not shown",
+    rec = {"id": it["id"], "prompt_sha256": it["prompt_sha256"], "surface": surface(repo), "model": a.model or "not shown",
            "date_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "variants_tried": attempts,
            "notes": a.notes or ""}
     if a.must:
@@ -945,9 +971,9 @@ def cmd_refuse(a, repo):
     if states(repo, q)[it["id"]] == "pushed":
         raise Fatal(f"{it['id']} is already delivered and is not a redo, so there is nothing to refuse. "
                     "If a redo was refused it shows as redo in status; otherwise leave it alone")
-    append_receipt(repo, {"id": it["id"], "refused": True, "reason": reason, "prompt_sha256": it["prompt_sha256"], "surface": "ChatGPT Work",
+    append_receipt(repo, {"id": it["id"], "refused": True, "reason": reason, "prompt_sha256": it["prompt_sha256"], "surface": surface(repo),
                           "date_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d")})
-    print(f"recorded the refusal of {it['id']} in {RECEIPTS_REL}: commit it with the next batch and name the item in your report")
+    print(f"recorded the refusal of {it['id']} in {RECEIPTS_REL}: it is delivered by the next ship (or `status --end`); name the item in your report")
     return 0
 
 
@@ -962,7 +988,8 @@ def recent_ids(repo, q, n):
         except ValueError:
             continue
         i = r.get("id") if isinstance(r, dict) else None
-        if i in queued and not r.get("refused") and local_files(repo, i):
+        files = local_files(repo, i) if i in queued and not r.get("refused") else []
+        if files and not _is_pointer(files[0]):           # a skip-smudge clone may hold others' images as pointers
             if i in order:
                 order.remove(i)
             order.append(i)
@@ -1007,9 +1034,11 @@ def cmd_sheet(a, repo):
         sheet.paste(im, (x + (cell - im.width) // 2, y + 22))
         d.text((x + 6, y + 5), label, fill=(0, 0, 0))
     out = Path(a.out) if a.out else scratch_dir(repo) / "batch_sheet.jpg"
+    if repo.resolve() in out.resolve().parents:
+        raise Fatal("write the contact sheet outside the repository clone (a file inside it blocks delivery); omit --out for the scratch folder")
     out.parent.mkdir(parents=True, exist_ok=True)
     sheet.save(out, quality=85)
-    print(f"contact sheet: {out}  ({len(ids)} images{', plus the references of every item on it' if a.refs else ''})")
+    print(f"contact sheet: {out}  ({len(ids)} images{', plus up to 6 of their references' if a.refs else ''})")
     return 0
 
 
@@ -1135,7 +1164,7 @@ def main(argv=None):
     p = sub.add_parser("bundle", help="review hand-off zip (images, receipts, QA reports, manifest) for when git push is impossible")
     p.add_argument("--out", help="default: the scratch folder; must be outside the repository clone")
     p.add_argument("--evidence", action="append", default=[],
-                   help="extra review evidence to include under review_evidence/: the contact sheet, style audit JSON, smoke record (repeat)")
+                   help="extra review evidence to include under review_evidence/: the contact sheet or style audit JSON (repeat)")
     a = ap.parse_args(argv)
     global _REPO
     try:

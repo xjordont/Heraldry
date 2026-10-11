@@ -234,7 +234,7 @@ def _same_as_upstream(repo, path):
     return bool(up) and cmd(repo, 'hash-object', '--path', path, '--', path) == up
 
 
-def fast_forward(repo, changed):
+def fast_forward(repo, changed, fetch=True):
     """Bring a clean-index main up to origin/main when upstream did not touch our paths.
 
     The intake workflow commits ink, selections and review sheets after every delivery, so a long
@@ -242,7 +242,8 @@ def fast_forward(repo, changed):
     unsent images and receipts is safe: git itself refuses if it would overwrite a local change.
     An overlap is accepted only when upstream already holds exactly our files (a push that timed out
     but landed). Anything else stops for the maintainer. Never a rebase or a merge commit."""
-    cmd(repo, 'fetch', 'origin', 'main')
+    if fetch:
+        cmd(repo, 'fetch', 'origin', 'main')
     head, upstream = cmd(repo, 'rev-parse', 'HEAD'), cmd(repo, 'rev-parse', 'origin/main')
     if head == upstream:
         return False
@@ -264,18 +265,18 @@ def fast_forward(repo, changed):
 
 def ship(repo, tries=3):
     repo = Path(repo).resolve()
-    recover_unpublished(repo)
+    recover_unpublished(repo)                          # fetches origin/main: that also proves remote access
     for attempt in range(1, tries + 1):
         try:
-            pre = validate(repo)
+            pre = validate(repo, need_remote=False)
         except Error as e:
             if attempt > 1 and str(e) == 'nothing to deliver':
                 # the previous push landed although git reported a failure; upstream now holds our files
                 return {'status': 'PUSHED', 'commit': cmd(repo, 'rev-parse', 'HEAD'), 'images': [], 'attempts': attempt}
             raise
-        if fast_forward(repo, pre['changed']):
+        if fast_forward(repo, pre['changed'], fetch=attempt > 1):   # the first pass reuses recover_unpublished's fetch
             try:
-                pre = validate(repo)                   # re-check against the updated main
+                pre = validate(repo, need_remote=False)   # re-check against the updated main
             except Error as e:
                 if str(e) == 'nothing to deliver':     # everything was already upstream
                     return {'status': 'PUSHED', 'commit': cmd(repo, 'rev-parse', 'HEAD'), 'images': [], 'attempts': attempt}

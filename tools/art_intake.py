@@ -43,9 +43,13 @@ def needs_pull():
     """Incoming images that are LFS pointers and not yet recorded with the same bytes. A pointer's oid is the
     image's SHA-256, so the intake fetches only new images instead of the whole growing set every run."""
     sels = g.load(g.SELECTIONS, {})
+    ents = {e["id"] for e in g.entries()}          # same filter as scan: legacy masters are never recorded, so never fetch them
     out = []
     for f in sorted(INCOMING.glob("*.png")):
-        data = f.read_bytes()[:300]
+        if f.stem not in ents:
+            continue
+        with f.open("rb") as fh:
+            data = fh.read(300)
         if data[:7] == b"version" and (sels.get(f.stem) or {}).get("master", {}).get("sha256") != pointer_oid(data):
             out.append(f.relative_to(ROOT).as_posix())
     return out
