@@ -148,7 +148,7 @@ class V6Test(unittest.TestCase):
 
     def test_delivery_guard_allowlist_and_lfs_policy(self):
         target,receipts=self._delivery_fixture()
-        def fake(repo,*args,check=True):
+        def fake(repo,*args,check=True,strip=True):
             if args[:3]==('diff','--cached','--name-only'):return ''
             if args[:2]==('branch','--show-current'):return 'main'
             if args[:2]==('lfs','version'):return 'git-lfs/3.0'
@@ -166,7 +166,7 @@ class V6Test(unittest.TestCase):
         self._delivery_fixture()
         check={'changed':['production/art/gpt/RECEIPTS.jsonl'],'images':[],'remote_head':'a'*40}
         commands=[]
-        def fake(repo,*parts,check=True):
+        def fake(repo,*parts,check=True,strip=True):
             commands.append(parts)
             if parts==('fetch','origin','main'):return ''
             if parts==('rev-parse','HEAD'):return 'a'*40

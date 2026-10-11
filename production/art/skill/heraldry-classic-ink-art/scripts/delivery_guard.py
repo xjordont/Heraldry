@@ -28,12 +28,13 @@ class Error(Exception):
     pass
 
 
-def cmd(repo, *parts, check=True):
+def cmd(repo, *parts, check=True, strip=True):
     proc = subprocess.run(['git', *parts], cwd=repo, stdout=subprocess.PIPE,
                           stderr=subprocess.PIPE, text=True, timeout=60)
     if check and proc.returncode:
         raise Error('git ' + ' '.join(parts) + ' failed: ' + proc.stderr.strip()[:350])
-    return proc.stdout.strip()
+    # Porcelain status lines start with a significant space (" M path"): never strip those.
+    return proc.stdout.strip() if strip else proc.stdout
 
 
 def sha_file(path):
@@ -127,7 +128,7 @@ def validate(repo, need_remote=True):
     if q.get('schema') != 2 or not isinstance(q.get('items'), list):
         raise Error('queue schema 2 required')
     known = {it['id']: it for it in q['items']}
-    raw = cmd(repo, 'status', '--porcelain', '--untracked-files=all')
+    raw = cmd(repo, 'status', '--porcelain', '--untracked-files=all', strip=False)
     changed = []
     for line in raw.splitlines():
         if not line.strip():

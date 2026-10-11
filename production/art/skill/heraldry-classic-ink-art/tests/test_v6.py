@@ -114,4 +114,17 @@ class V6SecurityTest(unittest.TestCase):
         if os.sep=='\\':
             self.assertNotIn('\\',__import__('heraldry_art').helper())
 
+    def test_porcelain_status_of_a_modified_tracked_image_keeps_its_path(self):
+        # A redo modifies an already tracked image: git prints " M assets/...". Stripping the whole
+        # output used to drop the first character of the first path ("ssets/...") and block delivery.
+        import subprocess, shutil
+        if not shutil.which('git'):
+            self.skipTest('git missing')
+        g=lambda *a: subprocess.run(['git','-C',str(self.repo),'-c','user.name=t','-c','user.email=t@t',*a],check=True,capture_output=True)
+        g('init','-q','-b','main'); g('add','-A'); g('commit','-qm','base')
+        Image.new('RGB',(1024,1024),'white').save(self.incoming)          # modify the tracked image
+        status=dg.cmd(self.repo,'status','--porcelain','--untracked-files=all',strip=False)
+        self.assertIn(' M assets/art/incoming/ART-TEST.png',status)
+        self.assertTrue(dg.cmd(self.repo,'status','--porcelain').startswith('M '),'stripped output is the old failure mode')
+
 if __name__=='__main__':unittest.main()
