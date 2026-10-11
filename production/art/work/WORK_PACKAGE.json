@@ -5,27 +5,906 @@
  "created_from": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "34a0e636cdca8b59f27f44d2b1c4abd455673f7f",
-  "commit_date": "2026-10-11T14:09:25+00:00",
+  "commit": "9321bda8c5dad397d7fb2689a1b30681d1c70386",
+  "commit_date": "2026-10-11T14:22:27+00:00",
   "dirty": false
  },
  "source": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "34a0e636cdca8b59f27f44d2b1c4abd455673f7f",
-  "commit_date": "2026-10-11T14:09:25+00:00"
+  "commit": "9321bda8c5dad397d7fb2689a1b30681d1c70386",
+  "commit_date": "2026-10-11T14:22:27+00:00"
  },
  "queue": {
   "path": "production/art/gpt/QUEUE.json",
-  "sha256": "4094817f6ce40bc129518ad946b3d79a7d4ca0bfacaeb0f8e4b020e69de8e5aa",
-  "phase": "anchors",
-  "count": 1,
+  "sha256": "ff47368ebb6cd2ee908fb359a7f222e5cb81e9abd6e71b1fab7e275728c4d31f",
+  "phase": "batch",
+  "count": 270,
   "ids": [
-   "ART-MON-GIANT-TARANTULA"
+   "ART-BAS-DEEPWARDEN",
+   "ART-BAS-HEARTHHOLD",
+   "ART-BAS-REEDMARCH",
+   "ART-BAS-SABLEKEEP",
+   "ART-BAS-SALTSPIRE",
+   "ART-CLI-THE-ASHLANDS",
+   "ART-CLI-THE-MIRE",
+   "ART-CLI-THE-PALE-CITY",
+   "ART-CLI-THE-SUN-DROWNED",
+   "ART-CLI-THE-UNDERMARCHES",
+   "ART-MON-ASHEN-REVENANT",
+   "ART-MON-BANDIT",
+   "ART-MON-BANDIT-CAPTAIN",
+   "ART-MON-BANSHEE",
+   "ART-MON-BASILISK",
+   "ART-MON-BEASTMAN",
+   "ART-MON-BLACK-DRAGON",
+   "ART-MON-BLACKFIRE-HOUND",
+   "ART-MON-BLACKWATER-WIGHT",
+   "ART-MON-BLOOD-APE",
+   "ART-MON-BLUE-DRAGON",
+   "ART-MON-BOGLING",
+   "ART-MON-BRASS-GOLEM",
+   "ART-MON-BRIARLING",
+   "ART-MON-BUGBEAR",
+   "ART-MON-BURROWMAW",
+   "ART-MON-CAVE-GOBLIN",
+   "ART-MON-CORPSEHOUND",
+   "ART-MON-CROCODILE",
+   "ART-MON-CRYPTSTRANGLER",
+   "ART-MON-DEEP-ELF-PRIEST",
+   "ART-MON-DEEP-ELF-WARRIOR",
+   "ART-MON-DEMON",
+   "ART-MON-DESERT-NAGA",
+   "ART-MON-DIRE-BEAR",
+   "ART-MON-DIRE-WOLF",
+   "ART-MON-DRYAD-GROVEWARDEN",
+   "ART-MON-ELDER-VRYMK",
+   "ART-MON-EMBER-SKULL",
+   "ART-MON-EVIL-EYE",
+   "ART-MON-FALLEN-PALADIN",
+   "ART-MON-FIRE-BEETLE",
+   "ART-MON-FIRE-ELEMENTAL",
+   "ART-MON-FOREST-TROLL",
+   "ART-MON-FORSAKEN-ARCHER",
+   "ART-MON-FORSAKEN-DUELIST",
+   "ART-MON-FORSAKEN-KNIGHT",
+   "ART-MON-FROST-GHOUL",
+   "ART-MON-FROST-GIANT",
+   "ART-MON-FROST-WYVERN",
+   "ART-MON-FROZEN-SKELETON",
+   "ART-MON-GARGOYLE",
+   "ART-MON-GELID-FIEND",
+   "ART-MON-GHOUL",
+   "ART-MON-GIANT-BAT",
+   "ART-MON-GIANT-BLACK-WIDOW",
+   "ART-MON-GIANT-CENTIPEDE",
+   "ART-MON-GIANT-CONSTRICTOR",
+   "ART-MON-GIANT-SCORPION",
+   "ART-MON-GIANT-SKELETON",
+   "ART-MON-GIANT-TARANTULA",
+   "ART-MON-GLOOM-HULK",
+   "ART-MON-GLOOMSPORE-JELLY",
+   "ART-MON-GNOLL",
+   "ART-MON-GOBLIN",
+   "ART-MON-GOBLIN-SHAMAN",
+   "ART-MON-GOREBEAK-BEAR",
+   "ART-MON-GREEN-DRAGON",
+   "ART-MON-HARPY",
+   "ART-MON-HYDRA",
+   "ART-MON-ICE-ELEMENTAL",
+   "ART-MON-ICE-WRAITH",
+   "ART-MON-IMP",
+   "ART-MON-IRON-GOLEM",
+   "ART-MON-KOBOLD",
+   "ART-MON-LICH",
+   "ART-MON-LIZARDFOLK-HUNTER",
+   "ART-MON-LIZARDFOLK-SHAMAN",
+   "ART-MON-LIZARDFOLK-WARRIOR",
+   "ART-MON-MANTICORE",
+   "ART-MON-MEDUSA",
+   "ART-MON-MIASMA-SERPENT",
+   "ART-MON-MINOTAUR",
+   "ART-MON-MIRE-TITAN",
+   "ART-MON-MUMMY",
+   "ART-MON-NIGHT-HAG",
+   "ART-MON-NOXCLOTH",
+   "ART-MON-OGRE",
+   "ART-MON-ORC",
+   "ART-MON-POSSESSED-CORPSE",
+   "ART-MON-RATKIN-SCAVENGER",
+   "ART-MON-RATKIN-SEER",
+   "ART-MON-RATKIN-WARRIOR",
+   "ART-MON-SATYR-REVELER",
+   "ART-MON-SHAMBLING-MOUND",
+   "ART-MON-SKELETAL-BEAST",
+   "ART-MON-SKELETON-ARCHER",
+   "ART-MON-SKELETON-WARRIOR",
+   "ART-MON-SNOW-GOBLIN",
+   "ART-MON-SPECTRE",
+   "ART-MON-STIRGE",
+   "ART-MON-STONE-SENTINEL",
+   "ART-MON-SWAMP-GOBLIN",
+   "ART-MON-SWAMP-HAG",
+   "ART-MON-SWAMP-NAGA",
+   "ART-MON-SWAMP-TROLL",
+   "ART-MON-THOUGHT-EATER",
+   "ART-MON-TOMB-GUARDIAN",
+   "ART-MON-TOMB-NECROMANCER",
+   "ART-MON-TROGLODYTE",
+   "ART-MON-TROGLODYTE-SHAMAN",
+   "ART-MON-TUNDRA-WOLF",
+   "ART-MON-UNDEAD-CROSSBOWMAN",
+   "ART-MON-UNDEAD-SENTINEL",
+   "ART-MON-UNDEAD-WARRIOR",
+   "ART-MON-VAULT-OOZE",
+   "ART-MON-VAULTFANG",
+   "ART-MON-VRYMK",
+   "ART-MON-WEREBEAR",
+   "ART-MON-WERERAT",
+   "ART-MON-WEREWOLF",
+   "ART-MON-WHITE-COURT-ARCHER",
+   "ART-MON-WHITE-COURT-EXECUTIONER",
+   "ART-MON-WHITE-COURT-GUARD",
+   "ART-MON-WHITE-COURT-SENTINEL",
+   "ART-MON-WHITE-DRAGON",
+   "ART-MON-WILL-O-WISP",
+   "ART-MON-WIND-ELEMENTAL",
+   "ART-MON-ZOMBIE",
+   "ART-CLA-ASSASSIN",
+   "ART-CLA-BERSERKER",
+   "ART-CLA-CLERIC",
+   "ART-CLA-DRUID",
+   "ART-CLA-PALADIN",
+   "ART-CLA-PSION",
+   "ART-CLA-RANGER",
+   "ART-CLA-ROGUE",
+   "ART-CLA-SORCERER",
+   "ART-CLA-TRICKSTER",
+   "ART-CLA-WIZARD",
+   "ART-ANC-DEEP-ELF",
+   "ART-ANC-DEMONBORN",
+   "ART-ANC-DRAKEBLOOD",
+   "ART-ANC-ELF",
+   "ART-ANC-GNOME",
+   "ART-ANC-GOBLIN",
+   "ART-ANC-HALFLING",
+   "ART-ANC-HUMAN",
+   "ART-ANC-ORC",
+   "ART-ANC-RATKIN",
+   "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
+   "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
+   "ART-MON-KHORRUN-THE-DRACOLICH",
+   "ART-MON-MAELTHORN-THE-VERDANT",
+   "ART-MON-SIRRACH-THE-BLACK",
+   "ART-MON-THE-ANCIENT-VOID-DRAGON",
+   "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
+   "ART-MON-THE-BROODMOTHER-PRIME",
+   "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
+   "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
+   "ART-MON-THE-LAST-COLOSSUS",
+   "ART-MON-THE-SUN-CROWNED-PRINCE",
+   "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
+   "ART-MON-VISATH-THE-WHITE",
+   "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
+   "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
+   "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+   "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
+   "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
+   "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
+   "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS",
+   "ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT",
+   "ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA",
+   "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING",
+   "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE",
+   "ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST",
+   "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER",
+   "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
+   "ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL",
+   "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM",
+   "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN",
+   "ART-SCE-SCENARIO-3-THE-QUAKE",
+   "ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME",
+   "ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS",
+   "ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD",
+   "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE",
+   "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR",
+   "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE",
+   "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE",
+   "ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID",
+   "ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING",
+   "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY",
+   "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA",
+   "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
+   "ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT",
+   "ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE",
+   "ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH",
+   "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR",
+   "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT",
+   "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
+   "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
+   "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
+   "ART-WOR-1-2-THE-GRIM-WORLD",
+   "ART-WOR-1-3-1-THE-FALL",
+   "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
+   "ART-WOR-1-3-3-THE-SIX-BASTIONS",
+   "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS",
+   "ART-WOR-1-3-5-MONSTROUS-THREATS",
+   "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
+   "ART-WOR-1-3-7-LEGENDS-AND-ECHOES",
+   "ART-CAM-11-1-CAMPAIGN-OVERVIEW",
+   "ART-CAM-THE-APOTHECARY",
+   "ART-CAM-THE-ARCANUM",
+   "ART-CAM-THE-ARMOURY",
+   "ART-CAM-THE-BARRACKS",
+   "ART-CAM-THE-EXPEDITION-HALL",
+   "ART-CAM-THE-OUTER-WALLS",
+   "ART-CAM-THE-STRONGHOLD-CHAPEL",
+   "ART-CAM-THE-UNDERCROFT",
+   "ART-CAM-THE-VAULT",
+   "ART-CAM-THE-WAR-ROOM",
+   "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
+   "ART-TRA-TIER-1-DIVINE-PRAYERS-D20",
+   "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
+   "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20",
+   "ART-TRA-TIER-1-SORCERIES-D20",
+   "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
+   "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
+   "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20",
+   "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20",
+   "ART-TRA-TIER-2-SORCERIES-D20",
+   "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
+   "ART-TRA-TIER-3-DIVINE-PRAYERS-D20",
+   "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
+   "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20",
+   "ART-TRA-TIER-3-SORCERIES-D20",
+   "ART-BAC-ALCHEMIST",
+   "ART-BAC-APPRENTICE",
+   "ART-BAC-ARTISAN",
+   "ART-BAC-BELIEVER",
+   "ART-BAC-COURIER",
+   "ART-BAC-CULTIST",
+   "ART-BAC-FARMER",
+   "ART-BAC-HERMIT",
+   "ART-BAC-MERCHANT",
+   "ART-BAC-NOBLE",
+   "ART-BAC-NOMAD",
+   "ART-BAC-PAUPER",
+   "ART-BAC-PERFORMER",
+   "ART-BAC-SAILOR",
+   "ART-BAC-SCHOLAR",
+   "ART-BAC-SCOUT",
+   "ART-BAC-SHEPHERD",
+   "ART-BAC-SMUGGLER",
+   "ART-BAC-SOLDIER",
+   "ART-BAC-VAGABOND",
+   "ART-ITE-7-6-TREASURE-TABLES",
+   "ART-ITE-7-8-MELEE-WEAPONS",
+   "ART-CH01-002",
+   "ART-CH02-002",
+   "ART-CH03-002",
+   "ART-CH04-002",
+   "ART-CH05-002",
+   "ART-CH06-002",
+   "ART-CH07-002",
+   "ART-CH08-002",
+   "ART-CH09-002",
+   "ART-CH10-002",
+   "ART-CH11-002",
+   "ART-COVER-002"
   ],
-  "generated_at": "2026-10-11T14:07:36+00:00"
+  "generated_at": "2026-10-11T14:17:57+00:00"
  },
  "prompts": [
+  {
+   "id": "ART-BAS-DEEPWARDEN",
+   "path": "production/art/gpt/prompts/ART-BAS-DEEPWARDEN.txt",
+   "prompt_sha256": "65839fce95be2ce640d050414e42cdd54bd16a965d24985e42347793938aa31c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAS-HEARTHHOLD",
+   "path": "production/art/gpt/prompts/ART-BAS-HEARTHHOLD.txt",
+   "prompt_sha256": "ce8bbe92dd96c0f0509397618cd88c7b92b6d16ad65edd1956123a812e83ca40",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAS-REEDMARCH",
+   "path": "production/art/gpt/prompts/ART-BAS-REEDMARCH.txt",
+   "prompt_sha256": "f05c962c278b96d280edf99f0bab7950f3707e19c5b4dcf526070b4351abe7f3",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAS-SABLEKEEP",
+   "path": "production/art/gpt/prompts/ART-BAS-SABLEKEEP.txt",
+   "prompt_sha256": "c9d38aaf0308fd128a3d3ba7d29336eab4cd74eff3c532a74c0d3c5e07d04383",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAS-SALTSPIRE",
+   "path": "production/art/gpt/prompts/ART-BAS-SALTSPIRE.txt",
+   "prompt_sha256": "0952f13db3cadeb66a564c65d0103631e0e39edcd96f4cc64260024462722b64",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLI-THE-ASHLANDS",
+   "path": "production/art/gpt/prompts/ART-CLI-THE-ASHLANDS.txt",
+   "prompt_sha256": "edb40bbedf95af61e7e26b5b4345d9a14f8c201d430ab80cb64186c595a5ac44",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLI-THE-MIRE",
+   "path": "production/art/gpt/prompts/ART-CLI-THE-MIRE.txt",
+   "prompt_sha256": "96f4c743d43d32ee30a6dc2e8658307acdc3b5d386d937dba5ca82389d580554",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLI-THE-PALE-CITY",
+   "path": "production/art/gpt/prompts/ART-CLI-THE-PALE-CITY.txt",
+   "prompt_sha256": "5a1d0320b9410389a7dce96d687fb5ac109f7cbc89d25d600b86a050bd3ff86f",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLI-THE-SUN-DROWNED",
+   "path": "production/art/gpt/prompts/ART-CLI-THE-SUN-DROWNED.txt",
+   "prompt_sha256": "854fb944eb48b46e4642926e45973e594d29fee5d471d381938939183629c5ac",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLI-THE-UNDERMARCHES",
+   "path": "production/art/gpt/prompts/ART-CLI-THE-UNDERMARCHES.txt",
+   "prompt_sha256": "236b4b24fb7f18a4604792aa219c96a0ced0d06c2561a80aa13cf8b4a4b93b6c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-ASHEN-REVENANT",
+   "path": "production/art/gpt/prompts/ART-MON-ASHEN-REVENANT.txt",
+   "prompt_sha256": "2cd06ccce626915ea9aa7e42b27cc9efa6f16096b206d80d8437d4cb4013ee2b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BANDIT",
+   "path": "production/art/gpt/prompts/ART-MON-BANDIT.txt",
+   "prompt_sha256": "d0ee8d8e18b307635e01b086682755173bb8bbf7fec6225c9d06fbab2e1d9c14",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BANDIT-CAPTAIN",
+   "path": "production/art/gpt/prompts/ART-MON-BANDIT-CAPTAIN.txt",
+   "prompt_sha256": "16b7dbaf5469c0d7ee3fcddd81dea5d71d3b676a0d06a5d624798a18ebf91912",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BANSHEE",
+   "path": "production/art/gpt/prompts/ART-MON-BANSHEE.txt",
+   "prompt_sha256": "457ed394a1024d9fabfb07a2f266f5e51e621dd3eac33d8edd49f3199b0c85c7",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BASILISK",
+   "path": "production/art/gpt/prompts/ART-MON-BASILISK.txt",
+   "prompt_sha256": "5518a358208f794355d078f03592a9f12d7f89061dbf12904350dc9c12b6c205",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BEASTMAN",
+   "path": "production/art/gpt/prompts/ART-MON-BEASTMAN.txt",
+   "prompt_sha256": "cba8a44a1faa5dfa303ce86d71e7cd34a566223fd04223bc7f2647c92d109461",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BLACK-DRAGON",
+   "path": "production/art/gpt/prompts/ART-MON-BLACK-DRAGON.txt",
+   "prompt_sha256": "3e3192420edbb06d0b28d5eff02dd27349950818eb5ded9dc3d548c477b27988",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BLACKFIRE-HOUND",
+   "path": "production/art/gpt/prompts/ART-MON-BLACKFIRE-HOUND.txt",
+   "prompt_sha256": "ae738afa08ef53ec19a2f8894ccd71e1597abe81ee741ebd3ce4ffdf56a2e243",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BLACKWATER-WIGHT",
+   "path": "production/art/gpt/prompts/ART-MON-BLACKWATER-WIGHT.txt",
+   "prompt_sha256": "6ebdf20026858894e8bd29082af1d67223a5db4eec415e8f50ed0e059c2feb3f",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BLOOD-APE",
+   "path": "production/art/gpt/prompts/ART-MON-BLOOD-APE.txt",
+   "prompt_sha256": "0bb1712ff184962c0130f62d2e93e7917553a0e08e97bdc616b4d100c3c7f7e1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BLUE-DRAGON",
+   "path": "production/art/gpt/prompts/ART-MON-BLUE-DRAGON.txt",
+   "prompt_sha256": "2893a136a1b81bb9a49965e689af556b80ab6aeda9dc82b0493af3df6df3430e",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BOGLING",
+   "path": "production/art/gpt/prompts/ART-MON-BOGLING.txt",
+   "prompt_sha256": "c91af22f06c5604fc53fee63884a96225c18f46754f5584c26324d4af77e9b9b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BRASS-GOLEM",
+   "path": "production/art/gpt/prompts/ART-MON-BRASS-GOLEM.txt",
+   "prompt_sha256": "cc2cf9266ef2317d915bafeaa6b7f11c3ade13513374034c95fce0121d3fa2b6",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BRIARLING",
+   "path": "production/art/gpt/prompts/ART-MON-BRIARLING.txt",
+   "prompt_sha256": "ae8d838bc96f2421f1229270abe0e6b1aa77538cd41ce00318018d4bc03f7e32",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BUGBEAR",
+   "path": "production/art/gpt/prompts/ART-MON-BUGBEAR.txt",
+   "prompt_sha256": "6943831314790161824f88c823ad3aa5e4350aa89d7b826680e82aaaf6864dfe",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-BURROWMAW",
+   "path": "production/art/gpt/prompts/ART-MON-BURROWMAW.txt",
+   "prompt_sha256": "01c2bd0fc831549279f3bf9b77ed0207de29261077fa75c2c75d958c32d753df",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-CAVE-GOBLIN",
+   "path": "production/art/gpt/prompts/ART-MON-CAVE-GOBLIN.txt",
+   "prompt_sha256": "abe917922f312f6b75ea8b49b58fb22c169cfb7021bb4c20db2339cf9a092bf5",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-CORPSEHOUND",
+   "path": "production/art/gpt/prompts/ART-MON-CORPSEHOUND.txt",
+   "prompt_sha256": "dc820b89b20ee190386c7168f4dcf08faac4e019b59c54686735fd121fa83728",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-CROCODILE",
+   "path": "production/art/gpt/prompts/ART-MON-CROCODILE.txt",
+   "prompt_sha256": "0c90de147dc712aa8c3ad299ebd9e44a463c7c2b39cd269e9b1d945258ee08ea",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-CRYPTSTRANGLER",
+   "path": "production/art/gpt/prompts/ART-MON-CRYPTSTRANGLER.txt",
+   "prompt_sha256": "6126fbeb0caacf9e507a25bbfbfd0b08f5f4a5b35e14ab38c6aac3d60445209b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-DEEP-ELF-PRIEST",
+   "path": "production/art/gpt/prompts/ART-MON-DEEP-ELF-PRIEST.txt",
+   "prompt_sha256": "3735690d2cc7e4408b82bdefc64e844177567f178cafa6057f220c3a87938d4d",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-DEEP-ELF-WARRIOR",
+   "path": "production/art/gpt/prompts/ART-MON-DEEP-ELF-WARRIOR.txt",
+   "prompt_sha256": "2c810b168d86694565cd6652a2281db8e6b4f80d8f740e8231fbd5cce9d267a3",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-DEMON",
+   "path": "production/art/gpt/prompts/ART-MON-DEMON.txt",
+   "prompt_sha256": "3ed417ad5634cbf37b622b951201a035fc57fe022f7a0e496fbd2e2a9f6e2413",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-DESERT-NAGA",
+   "path": "production/art/gpt/prompts/ART-MON-DESERT-NAGA.txt",
+   "prompt_sha256": "b00efc3ecaa7f5ff676372f0673cb1228d3b4709feabd98db4bb4e6cef572172",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-DIRE-BEAR",
+   "path": "production/art/gpt/prompts/ART-MON-DIRE-BEAR.txt",
+   "prompt_sha256": "acf54a67349d664db6e812d256da34fa678b5621301f006b58be7db49aa83d29",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-DIRE-WOLF",
+   "path": "production/art/gpt/prompts/ART-MON-DIRE-WOLF.txt",
+   "prompt_sha256": "6a4ac1bcf761f66c860d4e90a2243a2d789ff0e34d4a0be5aa905eb596547013",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-DRYAD-GROVEWARDEN",
+   "path": "production/art/gpt/prompts/ART-MON-DRYAD-GROVEWARDEN.txt",
+   "prompt_sha256": "7d67dd3a618c0f63364df90c1d45135e05055eecf66536367db6a363dacf2862",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-ELDER-VRYMK",
+   "path": "production/art/gpt/prompts/ART-MON-ELDER-VRYMK.txt",
+   "prompt_sha256": "8cfba05de49bd8aca6b268b3f7143f834a36a11338f9fc38d8ea8a57421622b1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-EMBER-SKULL",
+   "path": "production/art/gpt/prompts/ART-MON-EMBER-SKULL.txt",
+   "prompt_sha256": "1276d2c2a7ba172854a6a31a81fc76e50280dfa803da778f965da48de07313ef",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-EVIL-EYE",
+   "path": "production/art/gpt/prompts/ART-MON-EVIL-EYE.txt",
+   "prompt_sha256": "602980ec197c233b74b64d5068c9c9f4e1d3a67044ababeea01ca1898bd37b7d",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-FALLEN-PALADIN",
+   "path": "production/art/gpt/prompts/ART-MON-FALLEN-PALADIN.txt",
+   "prompt_sha256": "c2ae78c9c08649b5b898a41dbde26528737b1a4d115a664c16d7f724e484cba5",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-FIRE-BEETLE",
+   "path": "production/art/gpt/prompts/ART-MON-FIRE-BEETLE.txt",
+   "prompt_sha256": "69fdd29792cc7bf47e539947eb22dcd864de3fb02644e55c17a2f639822b86ad",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-FIRE-ELEMENTAL",
+   "path": "production/art/gpt/prompts/ART-MON-FIRE-ELEMENTAL.txt",
+   "prompt_sha256": "6ba7b8fc650256f99efed88eb4e4aa0c439970ff02c716916c961cc01c2fc068",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-FOREST-TROLL",
+   "path": "production/art/gpt/prompts/ART-MON-FOREST-TROLL.txt",
+   "prompt_sha256": "b8c3316425f579c249385f754de7b64dfb3cdaa66a096e71fe9d84f2a43843dd",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-FORSAKEN-ARCHER",
+   "path": "production/art/gpt/prompts/ART-MON-FORSAKEN-ARCHER.txt",
+   "prompt_sha256": "565f246e27f4040e6964f4bfaec1b69889feb53b3f478115a0b21b3f505d3719",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-FORSAKEN-DUELIST",
+   "path": "production/art/gpt/prompts/ART-MON-FORSAKEN-DUELIST.txt",
+   "prompt_sha256": "717b2b3836f1abdd198401887b7bef1643b618daca3b32a77c19aec5d6870fbc",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-FORSAKEN-KNIGHT",
+   "path": "production/art/gpt/prompts/ART-MON-FORSAKEN-KNIGHT.txt",
+   "prompt_sha256": "fd128609ab924df54fcd5b0fbe1360126af1b51ddc95e603f2b2c271c78d6017",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-FROST-GHOUL",
+   "path": "production/art/gpt/prompts/ART-MON-FROST-GHOUL.txt",
+   "prompt_sha256": "560370d388366d816b5a13bfcae03609b35803276544cc2b0b6da34b0bd5dcfa",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-FROST-GIANT",
+   "path": "production/art/gpt/prompts/ART-MON-FROST-GIANT.txt",
+   "prompt_sha256": "124514ad1f37ff3a2aad2389d1191fe800e29c2c6e1ee2aa983d07059ecd3fda",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-FROST-WYVERN",
+   "path": "production/art/gpt/prompts/ART-MON-FROST-WYVERN.txt",
+   "prompt_sha256": "be38e68b66c30dfe6a50920d173d323a7b712d65f4c2311147e87fbc26e9446f",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-FROZEN-SKELETON",
+   "path": "production/art/gpt/prompts/ART-MON-FROZEN-SKELETON.txt",
+   "prompt_sha256": "5da2b6794e25093c91f17043bc4509a9ef09d00cc149849bcb5af04aab4098e9",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GARGOYLE",
+   "path": "production/art/gpt/prompts/ART-MON-GARGOYLE.txt",
+   "prompt_sha256": "d96d7e53615f799e116894b123e7534bf55eae1917ff14165d7ae5b76bd4dae5",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GELID-FIEND",
+   "path": "production/art/gpt/prompts/ART-MON-GELID-FIEND.txt",
+   "prompt_sha256": "498b45b93b3673abe844911d16456f70af1b69f5a735ccc8b258ba1b04a5308f",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GHOUL",
+   "path": "production/art/gpt/prompts/ART-MON-GHOUL.txt",
+   "prompt_sha256": "80c38c670b431b6462881621571de00dc42576e54920f0955354623b47f2df24",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GIANT-BAT",
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-BAT.txt",
+   "prompt_sha256": "c5872e290b78a63cf4d5b217bbbdec109ed99ba445cb4742a848e64593abf95b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GIANT-BLACK-WIDOW",
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-BLACK-WIDOW.txt",
+   "prompt_sha256": "c873062ed29177c0008ba0c571608785254b2a95ded1ff9db959617f17ecb577",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GIANT-CENTIPEDE",
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-CENTIPEDE.txt",
+   "prompt_sha256": "fb835c5213682302621a4b8fe16bb0fe1b553acd86e26e78077187abbc702868",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GIANT-CONSTRICTOR",
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-CONSTRICTOR.txt",
+   "prompt_sha256": "372de0e30d0a7d122d95e588364ac95485a968d9e70755726d2775d254c74543",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GIANT-SCORPION",
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-SCORPION.txt",
+   "prompt_sha256": "10ad28695ab9932e279911c7fbaf1d145471b3b932684987afe9095272890856",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GIANT-SKELETON",
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-SKELETON.txt",
+   "prompt_sha256": "087350b5dcdb5f8092c517c8aa831d2e61c38a143ef9a7791a674187088e87ff",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
   {
    "id": "ART-MON-GIANT-TARANTULA",
    "path": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
@@ -35,9 +914,2435 @@
    "references": [
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ]
+  },
+  {
+   "id": "ART-MON-GLOOM-HULK",
+   "path": "production/art/gpt/prompts/ART-MON-GLOOM-HULK.txt",
+   "prompt_sha256": "ad6524cce56452db37e32dcd7925db7c71b7c72bc9a0b3dbe6ea0beac38bca7c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GLOOMSPORE-JELLY",
+   "path": "production/art/gpt/prompts/ART-MON-GLOOMSPORE-JELLY.txt",
+   "prompt_sha256": "baadfdac466eeb47a5bf36c022f66fd485d5441db16a4651dc73fd53ea734d67",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GNOLL",
+   "path": "production/art/gpt/prompts/ART-MON-GNOLL.txt",
+   "prompt_sha256": "8ae933222866528cbf14521fcd95a0a8eee1115aab6aa6bdd867adce2822f9e1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GOBLIN",
+   "path": "production/art/gpt/prompts/ART-MON-GOBLIN.txt",
+   "prompt_sha256": "e92c10569c0edd782be377a05ca43ae30f72dc13e89728c8af975a23bd7281cf",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GOBLIN-SHAMAN",
+   "path": "production/art/gpt/prompts/ART-MON-GOBLIN-SHAMAN.txt",
+   "prompt_sha256": "834645f99fbc24e943a4fe940577f167284e3d1e3175943507d2081892880746",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GOREBEAK-BEAR",
+   "path": "production/art/gpt/prompts/ART-MON-GOREBEAK-BEAR.txt",
+   "prompt_sha256": "7dd81cf129ae3d085c4ee289e6920bdbe86f0075972d459a933cb00ee1d431a9",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GREEN-DRAGON",
+   "path": "production/art/gpt/prompts/ART-MON-GREEN-DRAGON.txt",
+   "prompt_sha256": "ca26a2fc7e5917c9dae10d6239f46504ed766c012b0f9d87a2ca2eebbcd58f94",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-HARPY",
+   "path": "production/art/gpt/prompts/ART-MON-HARPY.txt",
+   "prompt_sha256": "0d9728a5db2bfe40b1d8351773426f7fb96c17f626b839f7f6ff4b49f73e0649",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-HYDRA",
+   "path": "production/art/gpt/prompts/ART-MON-HYDRA.txt",
+   "prompt_sha256": "8195e1fb3817d3144920e82957a36351e3d8669b1b4d90b2322ff4af800825ad",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-ICE-ELEMENTAL",
+   "path": "production/art/gpt/prompts/ART-MON-ICE-ELEMENTAL.txt",
+   "prompt_sha256": "0652bc88f9974b7ce649ff8dbe5da0672490634b862dcf159eb63d218caad32f",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-ICE-WRAITH",
+   "path": "production/art/gpt/prompts/ART-MON-ICE-WRAITH.txt",
+   "prompt_sha256": "ae5e1260d02a7a9f93a4a3e77e5ca3d11fc59cfc8de5245b37b956f25c042172",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-IMP",
+   "path": "production/art/gpt/prompts/ART-MON-IMP.txt",
+   "prompt_sha256": "7373a969378bc07e167bb275c4e5c8e284222f52e4aa03cec242df53ca83eb6c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-IRON-GOLEM",
+   "path": "production/art/gpt/prompts/ART-MON-IRON-GOLEM.txt",
+   "prompt_sha256": "04d4c89daa659cb890679efbb2e040c1e07fbf5c1ef46b8c92f293fbc56be6c0",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-KOBOLD",
+   "path": "production/art/gpt/prompts/ART-MON-KOBOLD.txt",
+   "prompt_sha256": "b82f96d55ab8c63981c3c165fe9de50add6cc411acb27b098aa104bd77d5539d",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-LICH",
+   "path": "production/art/gpt/prompts/ART-MON-LICH.txt",
+   "prompt_sha256": "9b803a9a414470764230e215a8e617fba908e8739f3d9619d7701d17e6715e41",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-LIZARDFOLK-HUNTER",
+   "path": "production/art/gpt/prompts/ART-MON-LIZARDFOLK-HUNTER.txt",
+   "prompt_sha256": "eb6acc29e9558fdfe67f2fc8a2106c2a1a9c2ef1371bfcc0e0052dc10f1a5ea8",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-LIZARDFOLK-SHAMAN",
+   "path": "production/art/gpt/prompts/ART-MON-LIZARDFOLK-SHAMAN.txt",
+   "prompt_sha256": "b74bed7c7cd1fbb011c753647683b381d6939a636cbe97d04593c70cae4163d0",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-LIZARDFOLK-WARRIOR",
+   "path": "production/art/gpt/prompts/ART-MON-LIZARDFOLK-WARRIOR.txt",
+   "prompt_sha256": "f6233468a875547ffda65ebe21e9a78fa7af35273954db13cfcfa44b4aae277b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-MANTICORE",
+   "path": "production/art/gpt/prompts/ART-MON-MANTICORE.txt",
+   "prompt_sha256": "eacb685325b5ec0030e7fc31d3fcc1e522d3a6823d2b5389d28be027faab1d0d",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-MEDUSA",
+   "path": "production/art/gpt/prompts/ART-MON-MEDUSA.txt",
+   "prompt_sha256": "361c66c9b101ffdcf456adaf191181cbda239530ff82adcfbda3c3960f75c8ef",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-MIASMA-SERPENT",
+   "path": "production/art/gpt/prompts/ART-MON-MIASMA-SERPENT.txt",
+   "prompt_sha256": "74ac8f3c9ec9ee3c8f8af3dd975b7ca9cb4b36054ef8ff61e1b27e61c6b4e7dd",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-MINOTAUR",
+   "path": "production/art/gpt/prompts/ART-MON-MINOTAUR.txt",
+   "prompt_sha256": "ede5b0befcba9235b1b5ec7054d95e2deb98b30698a10e0a1aa5b35614445e93",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-MIRE-TITAN",
+   "path": "production/art/gpt/prompts/ART-MON-MIRE-TITAN.txt",
+   "prompt_sha256": "249e59fa0fff39b1a39c52358b460203b38e3e0b18634a8e384a1043e8e6bce0",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-MUMMY",
+   "path": "production/art/gpt/prompts/ART-MON-MUMMY.txt",
+   "prompt_sha256": "03fdd60cac603b30f3062204b4e1169e8fc67f79d1f71da3a2e7e86ab1d37e6b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-NIGHT-HAG",
+   "path": "production/art/gpt/prompts/ART-MON-NIGHT-HAG.txt",
+   "prompt_sha256": "1698a7c6bbb8fbfa7c4815c24742c85b58ef8627b1c1d7ce07ae81ccdb797b70",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-NOXCLOTH",
+   "path": "production/art/gpt/prompts/ART-MON-NOXCLOTH.txt",
+   "prompt_sha256": "00abd71f6afaac2ef0b215972033f0bac4a82da16c4d0089b48d7758800937a7",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-OGRE",
+   "path": "production/art/gpt/prompts/ART-MON-OGRE.txt",
+   "prompt_sha256": "402c671acb4f215867034c2ac724c0a8298a0a506c8cc8668c6e96539bc335ab",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-ORC",
+   "path": "production/art/gpt/prompts/ART-MON-ORC.txt",
+   "prompt_sha256": "be688617d2c206142346bd728132771a98f634837f1a37dc71773ad2b6b1cdb2",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-POSSESSED-CORPSE",
+   "path": "production/art/gpt/prompts/ART-MON-POSSESSED-CORPSE.txt",
+   "prompt_sha256": "30b9f2bcef5cdb0c8a4a628e6b9540688b00533495b39d54ce8b413a28b0770c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-RATKIN-SCAVENGER",
+   "path": "production/art/gpt/prompts/ART-MON-RATKIN-SCAVENGER.txt",
+   "prompt_sha256": "1b52761243930846f15514aa95b2e6732d12551e660764c0a07753fb40892027",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-RATKIN-SEER",
+   "path": "production/art/gpt/prompts/ART-MON-RATKIN-SEER.txt",
+   "prompt_sha256": "9192734fbdd00020bdeebb99d2209241855418be7c49299ae7d1471a9e08ca39",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-RATKIN-WARRIOR",
+   "path": "production/art/gpt/prompts/ART-MON-RATKIN-WARRIOR.txt",
+   "prompt_sha256": "437d595761b2810711751d0ec062c6c1ac55baa5490db46cc036795bca2ee2c2",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SATYR-REVELER",
+   "path": "production/art/gpt/prompts/ART-MON-SATYR-REVELER.txt",
+   "prompt_sha256": "70f6f9b726e02ba5e5dd8e4424d3c9fa72daa609a4fa8a14b6feb9ffbadaebc5",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SHAMBLING-MOUND",
+   "path": "production/art/gpt/prompts/ART-MON-SHAMBLING-MOUND.txt",
+   "prompt_sha256": "51acc0bb1452e22d33111d252360bd52ff04756b2861f9e011fc41f0f61e3ea9",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SKELETAL-BEAST",
+   "path": "production/art/gpt/prompts/ART-MON-SKELETAL-BEAST.txt",
+   "prompt_sha256": "3cf29cec1833dd267e29ca24e5fce82e723cd117a634b317e0b000db0b06ebee",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SKELETON-ARCHER",
+   "path": "production/art/gpt/prompts/ART-MON-SKELETON-ARCHER.txt",
+   "prompt_sha256": "bae830f7976fbe72d7fd2677170060bb656ae46f67812fd614959012413704ec",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SKELETON-WARRIOR",
+   "path": "production/art/gpt/prompts/ART-MON-SKELETON-WARRIOR.txt",
+   "prompt_sha256": "9b7cf54d84736485216fa28efef1492c0c8acc5fddf7706df81a6c7b27611409",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SNOW-GOBLIN",
+   "path": "production/art/gpt/prompts/ART-MON-SNOW-GOBLIN.txt",
+   "prompt_sha256": "212f72b13fc489a3558c1f6bf2a72c7be3acff49fb5d054161acff0a966701c2",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SPECTRE",
+   "path": "production/art/gpt/prompts/ART-MON-SPECTRE.txt",
+   "prompt_sha256": "a72c3eb9357e0be5eece2a4fb44945613500372b2eba9ee74b52434f2e41dc3a",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-STIRGE",
+   "path": "production/art/gpt/prompts/ART-MON-STIRGE.txt",
+   "prompt_sha256": "8015ed805ee21a302026d31b6a8b04d423d0be3840eb9b23415dfd6d88bccc59",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-STONE-SENTINEL",
+   "path": "production/art/gpt/prompts/ART-MON-STONE-SENTINEL.txt",
+   "prompt_sha256": "98b8ae068066716498515cacd675720329220feccd1bf7bfd40c2cc630c97a41",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SWAMP-GOBLIN",
+   "path": "production/art/gpt/prompts/ART-MON-SWAMP-GOBLIN.txt",
+   "prompt_sha256": "ddf73c04d9e96046941b038327b5e1b2751b7e62364d7920346c9e95195024d4",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SWAMP-HAG",
+   "path": "production/art/gpt/prompts/ART-MON-SWAMP-HAG.txt",
+   "prompt_sha256": "d05dba7b9b6a368d04f40a7626a024e2425c06707330466c1bdbbfbf6206c655",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SWAMP-NAGA",
+   "path": "production/art/gpt/prompts/ART-MON-SWAMP-NAGA.txt",
+   "prompt_sha256": "bcad7905cdbecc0b6d4d2f23f30acb9e2b0767ff831ef2a8afef8d296d7be0bd",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SWAMP-TROLL",
+   "path": "production/art/gpt/prompts/ART-MON-SWAMP-TROLL.txt",
+   "prompt_sha256": "3a6790837170df100cea532eb18c0a03090feb7923602ab0e6dcb1f6ac6dcea8",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-THOUGHT-EATER",
+   "path": "production/art/gpt/prompts/ART-MON-THOUGHT-EATER.txt",
+   "prompt_sha256": "c3a5e3896c4be5f0c49db1621f80cc90cef233bf0133c5815013e4203df4278d",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-TOMB-GUARDIAN",
+   "path": "production/art/gpt/prompts/ART-MON-TOMB-GUARDIAN.txt",
+   "prompt_sha256": "f8fb9b8412a8839f5d82863bd7e024a8eadd918a49b6c0740196717ac92039b0",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-TOMB-NECROMANCER",
+   "path": "production/art/gpt/prompts/ART-MON-TOMB-NECROMANCER.txt",
+   "prompt_sha256": "6bd5ba50fdf268f214f546bea15a1f2a6d559f6478579ead4800e85178fceeb1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-TROGLODYTE",
+   "path": "production/art/gpt/prompts/ART-MON-TROGLODYTE.txt",
+   "prompt_sha256": "b656b61925de7e9d858eae2472e95e9120254fa5b03d00e299b35153c556d302",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-TROGLODYTE-SHAMAN",
+   "path": "production/art/gpt/prompts/ART-MON-TROGLODYTE-SHAMAN.txt",
+   "prompt_sha256": "dc382b62b4c538e502af32d91239100b993f9cf134b53a98b645c6cf54c06256",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-TUNDRA-WOLF",
+   "path": "production/art/gpt/prompts/ART-MON-TUNDRA-WOLF.txt",
+   "prompt_sha256": "5823a9be9cdeaf1894bb9096fb8beeb87abf0a2083cd5c2758269493be9ae0ee",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-UNDEAD-CROSSBOWMAN",
+   "path": "production/art/gpt/prompts/ART-MON-UNDEAD-CROSSBOWMAN.txt",
+   "prompt_sha256": "0733d635662ed0b0d42d10557bee1a4634237bc14f3c983432437e9ee64f13d1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-UNDEAD-SENTINEL",
+   "path": "production/art/gpt/prompts/ART-MON-UNDEAD-SENTINEL.txt",
+   "prompt_sha256": "5825cbf20fd00d09c5c30fdda82b01dd7bffa9a2cb16ac088a2c5c8542dfa2d0",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-UNDEAD-WARRIOR",
+   "path": "production/art/gpt/prompts/ART-MON-UNDEAD-WARRIOR.txt",
+   "prompt_sha256": "b72190a6293e539f71981e7ce2b7ba7cf8e7b7f757c0d07beb4272bcaabb0620",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-VAULT-OOZE",
+   "path": "production/art/gpt/prompts/ART-MON-VAULT-OOZE.txt",
+   "prompt_sha256": "6143486d500bea6be463729abc19d329e42e267f7f8a1c26d862cdad381d3c1b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-VAULTFANG",
+   "path": "production/art/gpt/prompts/ART-MON-VAULTFANG.txt",
+   "prompt_sha256": "48271339b899a797efba9726fcf5914fcdefee38aefde5ba46d32d50603311b4",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-VRYMK",
+   "path": "production/art/gpt/prompts/ART-MON-VRYMK.txt",
+   "prompt_sha256": "5acd4c85fbd148ebf3dc90974529f1ddd8f6ac670ed8e3db23ed337a38475156",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-WEREBEAR",
+   "path": "production/art/gpt/prompts/ART-MON-WEREBEAR.txt",
+   "prompt_sha256": "dcaaddc03f8241dc5db6f3006b61ab35a4d8074c729f1dde06c4adfe981ad7f3",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-WERERAT",
+   "path": "production/art/gpt/prompts/ART-MON-WERERAT.txt",
+   "prompt_sha256": "f998d4640e1dc88b995eebc5ff08ea17304d5478627a3014340d09326e6b0cca",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-WEREWOLF",
+   "path": "production/art/gpt/prompts/ART-MON-WEREWOLF.txt",
+   "prompt_sha256": "65cfd24f181ad13968921a918d3dc864321b361c4fe6730bfd2993c60cc1c5b4",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-WHITE-COURT-ARCHER",
+   "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-ARCHER.txt",
+   "prompt_sha256": "7f4c39ba6956538b5338f244437fa7563fc52bd950ba9c6b9d01dc6953fb77a3",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-WHITE-COURT-EXECUTIONER",
+   "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-EXECUTIONER.txt",
+   "prompt_sha256": "3fe976c5d2dee0f87efc3106766ac13a8e93b0cd408e1045ad83e8d0f8e9ab59",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-WHITE-COURT-GUARD",
+   "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-GUARD.txt",
+   "prompt_sha256": "81c02d2a432a717b205f7e882f69a9938b1c7317da0f1d248fa8a1134cde8d70",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-WHITE-COURT-SENTINEL",
+   "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-SENTINEL.txt",
+   "prompt_sha256": "f70b96b25dd4b16bb513e3cfceeff85437fdd2e27f2b51f44e2462ed90d51a8c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-WHITE-DRAGON",
+   "path": "production/art/gpt/prompts/ART-MON-WHITE-DRAGON.txt",
+   "prompt_sha256": "37579da5eaff88ab5f7a4c3302ef5c0121e3468e1f54506f364e152751fe6bd6",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-WILL-O-WISP",
+   "path": "production/art/gpt/prompts/ART-MON-WILL-O-WISP.txt",
+   "prompt_sha256": "1100a41061dd5e48f790325a1c50d47e1260d7e456f1e22b40d791151cdbe919",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-WIND-ELEMENTAL",
+   "path": "production/art/gpt/prompts/ART-MON-WIND-ELEMENTAL.txt",
+   "prompt_sha256": "47784263772c13aa60642151d774338c09283af47d8d510673b37076a17b4308",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-ZOMBIE",
+   "path": "production/art/gpt/prompts/ART-MON-ZOMBIE.txt",
+   "prompt_sha256": "791734dd83a277fa34a25d1ad57743850af668eb37fbf9e88ed2df1494129765",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-ASSASSIN",
+   "path": "production/art/gpt/prompts/ART-CLA-ASSASSIN.txt",
+   "prompt_sha256": "1c88ed8cc97ec7f66b57c6ee9134521f3a30f9c012f729d4f32b75241ada8323",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-BERSERKER",
+   "path": "production/art/gpt/prompts/ART-CLA-BERSERKER.txt",
+   "prompt_sha256": "21aed5877d31b2786e06d13982b5da3a6e797eb47f2857eafa0940e1eb1182cb",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-CLERIC",
+   "path": "production/art/gpt/prompts/ART-CLA-CLERIC.txt",
+   "prompt_sha256": "98d0f65db5fee5e23f013994a0e2b3360fa78b7c4dab6eef0df69ebbd26dcc48",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-DRUID",
+   "path": "production/art/gpt/prompts/ART-CLA-DRUID.txt",
+   "prompt_sha256": "18e6c2e0e9329365312a7ca0b6c305bedddc966ff690d963386595cfb61a72a3",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-PALADIN",
+   "path": "production/art/gpt/prompts/ART-CLA-PALADIN.txt",
+   "prompt_sha256": "af9d732ff9093d2569652202c0b0e84a19a5817d90d8809606f915000375712e",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-PSION",
+   "path": "production/art/gpt/prompts/ART-CLA-PSION.txt",
+   "prompt_sha256": "a17e6543719193ea4b2693414f9b82144415c1195fd20f4b4da070540210bd0f",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-RANGER",
+   "path": "production/art/gpt/prompts/ART-CLA-RANGER.txt",
+   "prompt_sha256": "2eb4785a87ccbbcf4f73758fe336dc67693b88a42d7a31a6757a2f9ce182a31c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-ROGUE",
+   "path": "production/art/gpt/prompts/ART-CLA-ROGUE.txt",
+   "prompt_sha256": "1b777292bfe92e36c17576abef181ed609ca5037c7686a5d48b0eff86c343965",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-SORCERER",
+   "path": "production/art/gpt/prompts/ART-CLA-SORCERER.txt",
+   "prompt_sha256": "12a89e10b27ef49fe037d263983c5ffca3da3f6f1186ee4823d5154b7fcc0ee9",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-TRICKSTER",
+   "path": "production/art/gpt/prompts/ART-CLA-TRICKSTER.txt",
+   "prompt_sha256": "f4678e98649691bc48e5db1f1a069950bcd06d8a0294a77506bfd1f4480cedc6",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-WIZARD",
+   "path": "production/art/gpt/prompts/ART-CLA-WIZARD.txt",
+   "prompt_sha256": "9774c6b3fe1d6dd93883cad49eef27b762993669d5dd867af534351aa2a2f923",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ANC-DEEP-ELF",
+   "path": "production/art/gpt/prompts/ART-ANC-DEEP-ELF.txt",
+   "prompt_sha256": "d1f037b50fa7c64514b22b760c0d34acde3a747b7b10009a67738b420c6ce376",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ANC-DEMONBORN",
+   "path": "production/art/gpt/prompts/ART-ANC-DEMONBORN.txt",
+   "prompt_sha256": "e976a3cb96e5d0a01e901dd5e032190ac3345456f0212bebedbd276a773a802d",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ANC-DRAKEBLOOD",
+   "path": "production/art/gpt/prompts/ART-ANC-DRAKEBLOOD.txt",
+   "prompt_sha256": "9c43b8f927dd58eca94b64c55d752629e75fc4542ba95a83714c30f65a98f006",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ANC-ELF",
+   "path": "production/art/gpt/prompts/ART-ANC-ELF.txt",
+   "prompt_sha256": "b4e5c5d9b597ef410361ea04a282ca2462ba14190e5806da0a362d405c2ab219",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ANC-GNOME",
+   "path": "production/art/gpt/prompts/ART-ANC-GNOME.txt",
+   "prompt_sha256": "a0f7efa6b53c26719fdaf9af4204ed8dc1d03d2fd1c1b74ae0171fd7c8a314f6",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ANC-GOBLIN",
+   "path": "production/art/gpt/prompts/ART-ANC-GOBLIN.txt",
+   "prompt_sha256": "f0258c3747f6f4af93141cabf189fa81b3b5a5b576f205ca8ea97e633091605a",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ANC-HALFLING",
+   "path": "production/art/gpt/prompts/ART-ANC-HALFLING.txt",
+   "prompt_sha256": "92fe1f7605cdb56f32d015e84a7e7509079d7395b01d89930f9f66ae1f3856a5",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ANC-HUMAN",
+   "path": "production/art/gpt/prompts/ART-ANC-HUMAN.txt",
+   "prompt_sha256": "c20a4f4c84c12f22d62622e38f93f4a7b5d80458fd614a1b6bf48a0ffa7bf51e",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ANC-ORC",
+   "path": "production/art/gpt/prompts/ART-ANC-ORC.txt",
+   "prompt_sha256": "a4a710c94240f60f541342d26dd492762af3135247de9af5b81c0d441ae9ab69",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ANC-RATKIN",
+   "path": "production/art/gpt/prompts/ART-ANC-RATKIN.txt",
+   "prompt_sha256": "3ede3562c165b33be6c374100e5c80e3425e2b76396951f3a81f95cf005f7f9c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
+   "path": "production/art/gpt/prompts/ART-MON-AVATAR-OF-THE-OLD-GROWTH.txt",
+   "prompt_sha256": "f7e4b16a521c29b5a3dc9a025945e41ed6904afadda514d758579c347b99e622",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
+   "path": "production/art/gpt/prompts/ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN.txt",
+   "prompt_sha256": "ff4af6fbd7704f48009c35f5489a4789131f9b1db17b86eda7307d67bad1f8c9",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-KHORRUN-THE-DRACOLICH",
+   "path": "production/art/gpt/prompts/ART-MON-KHORRUN-THE-DRACOLICH.txt",
+   "prompt_sha256": "a8d361d6ece96210f95073fc00f6c4dd523811da7640c586f7a723645068bf00",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-MAELTHORN-THE-VERDANT",
+   "path": "production/art/gpt/prompts/ART-MON-MAELTHORN-THE-VERDANT.txt",
+   "prompt_sha256": "e6971e0cc4e844888931a3123d2f7d2c8fdff54c67a698e629ae5872976a9f02",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-SIRRACH-THE-BLACK",
+   "path": "production/art/gpt/prompts/ART-MON-SIRRACH-THE-BLACK.txt",
+   "prompt_sha256": "45f0d69ba1dd51ad0791851834ac145e5940543d9107ea5d930b5a76b4fecd33",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-THE-ANCIENT-VOID-DRAGON",
+   "path": "production/art/gpt/prompts/ART-MON-THE-ANCIENT-VOID-DRAGON.txt",
+   "prompt_sha256": "7c1eb8d1c558766d4ae85ccdeaa5fa0e2a2fedaad5e08160ad9a269245222a01",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
+   "path": "production/art/gpt/prompts/ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE.txt",
+   "prompt_sha256": "eefd313de8a10054049136d516b4f2e10d11861a44269d90dd71796951ee2d69",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-THE-BROODMOTHER-PRIME",
+   "path": "production/art/gpt/prompts/ART-MON-THE-BROODMOTHER-PRIME.txt",
+   "prompt_sha256": "cf4cbe3b5a9062851b96da7bbb5cdf243603c5576e2c14d07040c3d9971493f0",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
+   "path": "production/art/gpt/prompts/ART-MON-THE-FROST-BAILIFF-MAGISTRATE.txt",
+   "prompt_sha256": "8e69d8f8703515ca78204757f3f32d70cd3da8cc17b81b4e5c31f903db0f6ff7",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
+   "path": "production/art/gpt/prompts/ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS.txt",
+   "prompt_sha256": "ffa455a14149c733ab08d544d90da0e5829ecb3882ad77c5033dc2002628d73c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-THE-LAST-COLOSSUS",
+   "path": "production/art/gpt/prompts/ART-MON-THE-LAST-COLOSSUS.txt",
+   "prompt_sha256": "1d8c2594423921afd26693afa88e9a068f63ad15022e35bf68399f22c126e2ac",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-THE-SUN-CROWNED-PRINCE",
+   "path": "production/art/gpt/prompts/ART-MON-THE-SUN-CROWNED-PRINCE.txt",
+   "prompt_sha256": "dc07a7bf7c559bf82d39f6004940dc6e4fab336f55e2c6b73c02dce18c05b60b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
+   "path": "production/art/gpt/prompts/ART-MON-THE-VOICE-BENEATH-THE-BELLS.txt",
+   "prompt_sha256": "b54a737e07e73fc378ef4ed75dce207d85fa77f66ebfe67c5cf658a84d244330",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-VISATH-THE-WHITE",
+   "path": "production/art/gpt/prompts/ART-MON-VISATH-THE-WHITE.txt",
+   "prompt_sha256": "80852f5f5ed0cd69c3b64082cad2b7f32b9d7b38d0439e70ca1c47a97e96b97a",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
+   "path": "production/art/gpt/prompts/ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL.txt",
+   "prompt_sha256": "7436a11591d45d5e352a72f0e79498d491adb4edaba00a407d1d91e7e0c1a383",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
+   "path": "production/art/gpt/prompts/ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI.txt",
+   "prompt_sha256": "4b233fa31c7818c887e1d3e89b8cf33bc031fb460eec9ac749c101d4b17eba97",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST.txt",
+   "prompt_sha256": "a3d5a1d13319e8314c6e44084fd913253f07350fc1cfcab7dcde15316c74c2c9",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS.txt",
+   "prompt_sha256": "ef42aa43d0c4a65b392a62ee86b42aeef61d94961d054a19a714302a3b9b2191",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST.txt",
+   "prompt_sha256": "ca918f633931d8060e959426844348807166a55b828bac8c7641e4598f53449f",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY.txt",
+   "prompt_sha256": "4bddaedf96748fba135110c5a36acf14d3bd59b75a66b120eba8e839513ba4ca",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS.txt",
+   "prompt_sha256": "75c00f82cded022811e36edc49c96aeebebe47d8ef924b023bf5394b3a9998eb",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT.txt",
+   "prompt_sha256": "4d25dd278d60ccd84144e5d5e06fd21f6eebf73e05851f8a70a0879f8590435b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA.txt",
+   "prompt_sha256": "66275df51c1786530f9250248839496a99aec764cc5a1d7f8d603b4b106c0895",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-CHASM-CROSSING.txt",
+   "prompt_sha256": "d5921231295eaf90e8b64f5cb25bbeffbe11ebacb5c89a14d89f56d01be573db",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE.txt",
+   "prompt_sha256": "6bad9372758e78ed1435b88719214faf0152ba10be0aa19d82fea31c57383e73",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST.txt",
+   "prompt_sha256": "3306cf0d7198fdbbcb68f4e52bc770fda7dad0bfde00957ae4ea3cac5476a7a1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER.txt",
+   "prompt_sha256": "f4ad795dd0801b9f7306010c044f2097aca16c311ee66ccd66b1e7b0dc6d4b1e",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE.txt",
+   "prompt_sha256": "c146e552225ebc8ba87cd4558633fda9ab00aed009745892717a688c394bbbc1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL.txt",
+   "prompt_sha256": "6551b4b69838bf9d8216702d365ff0f6bdb28db2dd4e49062670762d509f408a",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM.txt",
+   "prompt_sha256": "f763f6600450801eb3ae23266015223025c57be795b81194d6d95962002ac0f7",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN.txt",
+   "prompt_sha256": "6680192b9768a54c3d07e4d9a5c3073f9879c82b4f1457861f6dffaee94d6a63",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-3-THE-QUAKE",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-QUAKE.txt",
+   "prompt_sha256": "3b1966aad6857cab0199a878d90015a3cd0fbe9119c0018599d7deb75066ebbd",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME.txt",
+   "prompt_sha256": "1e16e812bdecd30b6ce37afdfbd78de4ee184afa0a83f453057f0c725d52a793",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS.txt",
+   "prompt_sha256": "12ee8692c9a723943c69aeee62dd1cd7f83db2adb091d08dd6bc562b07e2dc31",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD.txt",
+   "prompt_sha256": "8e744bfc7d949c07521e8dc757b8c015887f1fece085b694687e22672a668bb0",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE.txt",
+   "prompt_sha256": "4a0ae6f704599738513f360dd7acdf41595598f7bb6cbb4b46238f1422dd2caf",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR.txt",
+   "prompt_sha256": "bcb6e18c3e76ffe6bb3a7be42cef658d339ece6f1ea9218d234437c58a9171b9",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE.txt",
+   "prompt_sha256": "cb0c2092c9e570b4e4c3cdb3c3f70f5073798c170427d08a0ec7d325a1121d61",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE.txt",
+   "prompt_sha256": "9a1d5cdb4f2de48ce5d1fdad465bb5e7ad7e75f90f92d3332b48ac48c6935b30",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID.txt",
+   "prompt_sha256": "927bdf956601cf053e0e547dfce917110af8e77d036f547cdbf56e550a921fe1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING.txt",
+   "prompt_sha256": "601b2e3d03a720481c15ec6f7967a7e05d05a42709e9e80045d9a3975dbb4694",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY.txt",
+   "prompt_sha256": "a854e91b5d57da23761419d83b5ff39c5a158bd323621c7401e732244bec6327",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA.txt",
+   "prompt_sha256": "1eb6f6f69d5a7d65c30d512e61e72d5cd84e3ded2efbca180d532775c2a45c14",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD.txt",
+   "prompt_sha256": "2b77bd5e54c8489c3414a07a76437d808ce22fcc4094f97e8ea5b8bdc87c13ea",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT.txt",
+   "prompt_sha256": "0620bc20aa0f0a1ee3dbe4061be880f0af0381845eda6a71f210bdb312939f0b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE.txt",
+   "prompt_sha256": "492281bfdb995ace8dc324a5b8a7428b97e6ca665334d5b9926687ae2c25f94e",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH.txt",
+   "prompt_sha256": "16b8ac7a29b5668e6452220db6a2faff73eb12bceb074eabccbda7a29657e630",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR.txt",
+   "prompt_sha256": "4baec0e16e2798ff3bb6846db9a6ebd5c8eb20e786a752dae0f43a89e23b387c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT.txt",
+   "prompt_sha256": "c5bcce4ab963073b271274a7823a92e9f440c673574a91b5da40df2d7d1f2172",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT.txt",
+   "prompt_sha256": "a7323ec139980421a9e9ee6897b00619d31eafae51e6b9a42de7e728eec1eb74",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING.txt",
+   "prompt_sha256": "c2713e052f5d9850d3b3de6673eb7c5820c32056df1ccacea7004444f30a4988",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD.txt",
+   "prompt_sha256": "518c786d2f075ad117cb338f7c32395b070bb0e9707dbf6aa49ec11406ffd2c0",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-WOR-1-2-THE-GRIM-WORLD",
+   "path": "production/art/gpt/prompts/ART-WOR-1-2-THE-GRIM-WORLD.txt",
+   "prompt_sha256": "0bea960c7b6e496cde60c0bdf3fa0460471f8ef7f1d5d56f44ca859927bda06d",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-WOR-1-3-1-THE-FALL",
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-1-THE-FALL.txt",
+   "prompt_sha256": "0595941b2b06ca8b56829d4b650145d2f03b6ee7cb62890d0b0ca1b5a5fa084d",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN.txt",
+   "prompt_sha256": "31517e47bf1fb1870af6169e51aefd1cd5f4894f2a24ef81ce0962b0524ad1a0",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-WOR-1-3-3-THE-SIX-BASTIONS",
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-3-THE-SIX-BASTIONS.txt",
+   "prompt_sha256": "4d93ce47a7ed43f1b743029fcff1a09b4b0291c41dc2326ffa50180f97001679",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS",
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS.txt",
+   "prompt_sha256": "be07393f11271eb9341aec4335ed874d4d912df394e39be012f733e96941e9c1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-WOR-1-3-5-MONSTROUS-THREATS",
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-5-MONSTROUS-THREATS.txt",
+   "prompt_sha256": "8b2d439a2af8c3a6bbd8a234ef8c3a8647a1779ed4075ac27113db54b60e9545",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD.txt",
+   "prompt_sha256": "9d761e9975ef683d2633210f380bcf7f9a4a5837f5cf3b3f1000a9abb20ee08a",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-WOR-1-3-7-LEGENDS-AND-ECHOES",
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-7-LEGENDS-AND-ECHOES.txt",
+   "prompt_sha256": "d4f421fe82dd4d47bf5113190563f13e301ced605b3c1959911e33d2d36faeef",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CAM-11-1-CAMPAIGN-OVERVIEW",
+   "path": "production/art/gpt/prompts/ART-CAM-11-1-CAMPAIGN-OVERVIEW.txt",
+   "prompt_sha256": "a63a9f57e960901215e4e576bf322bef0a4d8597a75687c77fdfa85199d6284a",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CAM-THE-APOTHECARY",
+   "path": "production/art/gpt/prompts/ART-CAM-THE-APOTHECARY.txt",
+   "prompt_sha256": "249eadd8e86e2d785aebcf76648a6348827cf1d098e0bbce6d1579b699db9b4b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CAM-THE-ARCANUM",
+   "path": "production/art/gpt/prompts/ART-CAM-THE-ARCANUM.txt",
+   "prompt_sha256": "e756fedd6df2ff8a098788c2b543ce8845b18ff59059aaa3fc8864afea24bea0",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CAM-THE-ARMOURY",
+   "path": "production/art/gpt/prompts/ART-CAM-THE-ARMOURY.txt",
+   "prompt_sha256": "0d82a26a1f8cdefb79e4532abe73f05fde8551d502573908b4abdb92eebf8826",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CAM-THE-BARRACKS",
+   "path": "production/art/gpt/prompts/ART-CAM-THE-BARRACKS.txt",
+   "prompt_sha256": "19a9b4fe436091c20ae153ee919ca824f36dd20a0c00af41ba3543d5c8a62383",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CAM-THE-EXPEDITION-HALL",
+   "path": "production/art/gpt/prompts/ART-CAM-THE-EXPEDITION-HALL.txt",
+   "prompt_sha256": "32dcd6f9bbbc6ad0f88f2417657d02a7bed99f9f566b8c1da489bfd7da8dfc3e",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CAM-THE-OUTER-WALLS",
+   "path": "production/art/gpt/prompts/ART-CAM-THE-OUTER-WALLS.txt",
+   "prompt_sha256": "fd6ddfd153d358f2ed75d2ecf66aa2ab1c293c262de279739159a4e49792f800",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CAM-THE-STRONGHOLD-CHAPEL",
+   "path": "production/art/gpt/prompts/ART-CAM-THE-STRONGHOLD-CHAPEL.txt",
+   "prompt_sha256": "249aa45710a0604f3b4219a4d63934c844eaa1371689e5a109a706966c566ef6",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CAM-THE-UNDERCROFT",
+   "path": "production/art/gpt/prompts/ART-CAM-THE-UNDERCROFT.txt",
+   "prompt_sha256": "217e9bee4f5d0b53cee0aff2ee5247ca207d2585234e1c1657df4e180d7ee69d",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CAM-THE-VAULT",
+   "path": "production/art/gpt/prompts/ART-CAM-THE-VAULT.txt",
+   "prompt_sha256": "e4382193849e70eb0b6d49dc9be92b0fc7096e7c60ebc50fe73e14ad2330deeb",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CAM-THE-WAR-ROOM",
+   "path": "production/art/gpt/prompts/ART-CAM-THE-WAR-ROOM.txt",
+   "prompt_sha256": "4d673b3a4f98b90efddb92dab57a1cd417f3c2d7509c58afd879e498c47464eb",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-1-ARCANE-SPELLS-D20.txt",
+   "prompt_sha256": "5a93eda4562e7746244ffb2877c6eb1f7ec008edb1d2d59b7770e7042ebb8bce",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-1-DIVINE-PRAYERS-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-1-DIVINE-PRAYERS-D20.txt",
+   "prompt_sha256": "f7cfb313917203b5e9a03abaab887ca78e1bc8e1c1ed51757452c1c6de8f3c53",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-1-DRUIDIC-RITUALS-D20.txt",
+   "prompt_sha256": "bf0014be674b914694ae20d91306644d61e7de54c1caaae92d7415662a4afc56",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20.txt",
+   "prompt_sha256": "b20a3eba4fe7f4ceab922a30407abc8b9e705a968d624e27102a7a8bab538115",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-1-SORCERIES-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-1-SORCERIES-D20.txt",
+   "prompt_sha256": "8d65c1dbc0c8f8587909e57ada431cba35e5e45edc52c7d0e85fd1ddb196557f",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-2-ARCANE-SPELLS-D20.txt",
+   "prompt_sha256": "8cae6758dccfc1d1449b7bbd577fac972683b2785b5ab6a06e6546d51974f78a",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-2-DIVINE-PRAYERS-D20.txt",
+   "prompt_sha256": "886703037b6497990fbfaa6dbdbe22d32a3c67142dbaf8b27354550eff597527",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-2-DRUIDIC-RITUALS-D20.txt",
+   "prompt_sha256": "5efc8ed4a5df66e792153930c24dd8cbf5aa465922fb9bf692a9e33626d145b3",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20.txt",
+   "prompt_sha256": "9691de897d0eaf851bbdf248ff4b57f01000a191df2a41c2c3cbcfaffce544c1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-2-SORCERIES-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-2-SORCERIES-D20.txt",
+   "prompt_sha256": "e6ed2f1c8937847f441ddec886faf209e7d5b5ae467ec21e858f96561c964335",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-3-ARCANE-SPELLS-D20.txt",
+   "prompt_sha256": "1e4c5a050edea8889ccddf712d5657b0ddbaafd49ecfa55bc5ed75155cae4133",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-3-DIVINE-PRAYERS-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-3-DIVINE-PRAYERS-D20.txt",
+   "prompt_sha256": "6c20fbf8ddb1c1e08cd7b31aa40b04bb04e83e8915a91b3a55aea24e2004e4e9",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-3-DRUIDIC-RITUALS-D20.txt",
+   "prompt_sha256": "a6e596688de140892d89e18605d66f1bcb0e374e896d86550db5982e23abafbd",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20.txt",
+   "prompt_sha256": "c35f4d5f7c0b390c112dcb1867e9b43070945805d07da51d35f3ea678c7b5c40",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-TRA-TIER-3-SORCERIES-D20",
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-3-SORCERIES-D20.txt",
+   "prompt_sha256": "e6980271ebd4e45ced132efd9e90ee652f491eb0ab7b65c081b0f67c238e328c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-ALCHEMIST",
+   "path": "production/art/gpt/prompts/ART-BAC-ALCHEMIST.txt",
+   "prompt_sha256": "868a0a3b1dc812d5b68a19fe12fd660c8ef352cc0c9f404bce928b3456d63c8f",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-APPRENTICE",
+   "path": "production/art/gpt/prompts/ART-BAC-APPRENTICE.txt",
+   "prompt_sha256": "879dd8eae0711d86fcb269aa853fd8cdf899f3c23054afff1ed97748cdf9716b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-ARTISAN",
+   "path": "production/art/gpt/prompts/ART-BAC-ARTISAN.txt",
+   "prompt_sha256": "eb76b5596bf7812596559833212ff087b60041af323a239a491f4dc88b85f9ed",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-BELIEVER",
+   "path": "production/art/gpt/prompts/ART-BAC-BELIEVER.txt",
+   "prompt_sha256": "8ef99db3c869e209f7756d214324d9ba77396f9eb1d8358d0507cabd0ce166b6",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-COURIER",
+   "path": "production/art/gpt/prompts/ART-BAC-COURIER.txt",
+   "prompt_sha256": "8c1f65ddb117158e4ce55944cec53deed83957cf241f31dacfc9cd170719a88f",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-CULTIST",
+   "path": "production/art/gpt/prompts/ART-BAC-CULTIST.txt",
+   "prompt_sha256": "df5f999fee5d3f32cbfe8f7c0ace2188d5784e50f51775ff09ab15e94f425b28",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-FARMER",
+   "path": "production/art/gpt/prompts/ART-BAC-FARMER.txt",
+   "prompt_sha256": "8856dcb78722aebd3bf860e806a3ba79c7b6ab2224948e46c4717e1029d7654e",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-HERMIT",
+   "path": "production/art/gpt/prompts/ART-BAC-HERMIT.txt",
+   "prompt_sha256": "74106f0ececcc7ae54ff0373280d99e6ced4da6db30b5698ef0a3c81c1fd96a1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-MERCHANT",
+   "path": "production/art/gpt/prompts/ART-BAC-MERCHANT.txt",
+   "prompt_sha256": "34865216be50632edec2aadd4ee7539c65f432d65d9cddffc7287e2a28b343b4",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-NOBLE",
+   "path": "production/art/gpt/prompts/ART-BAC-NOBLE.txt",
+   "prompt_sha256": "34d09af52113ea413bbe667cf24945f592d6cb9ecb70393003e0825f2cb7996c",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-NOMAD",
+   "path": "production/art/gpt/prompts/ART-BAC-NOMAD.txt",
+   "prompt_sha256": "33656b10dfd825d5e9d5a9f88bb6d2e2609fbe722b7dc273c17440af14ec1d19",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-PAUPER",
+   "path": "production/art/gpt/prompts/ART-BAC-PAUPER.txt",
+   "prompt_sha256": "d4a62629740f1df304f237262dc402e2b6ab83645195f86c20832fc7cff9cbaf",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-PERFORMER",
+   "path": "production/art/gpt/prompts/ART-BAC-PERFORMER.txt",
+   "prompt_sha256": "9b6d342306086de58ed578485b7372d48173ed35bf6b8af967881c022096d65b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-SAILOR",
+   "path": "production/art/gpt/prompts/ART-BAC-SAILOR.txt",
+   "prompt_sha256": "c00e016ff78e0b16e24cd32c188d0836df3422c971c9aa5e9251fa3c39daf463",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-SCHOLAR",
+   "path": "production/art/gpt/prompts/ART-BAC-SCHOLAR.txt",
+   "prompt_sha256": "3df0ee56ebd5f9133db0fc5bb9695cf6ceb4206ca2d5a5f1276f2ea3977e8d13",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-SCOUT",
+   "path": "production/art/gpt/prompts/ART-BAC-SCOUT.txt",
+   "prompt_sha256": "6a772208af35fcceda8ace0dbc734580b6fd9c0404869618f857cde2e73f037b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-SHEPHERD",
+   "path": "production/art/gpt/prompts/ART-BAC-SHEPHERD.txt",
+   "prompt_sha256": "5e00cf991afe074f186be95271cd75a0c5aae45b4e79f910578acee1c31857d9",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-SMUGGLER",
+   "path": "production/art/gpt/prompts/ART-BAC-SMUGGLER.txt",
+   "prompt_sha256": "cb216046e6b8472587b12d344a469c9ca9184aaae7995bd8c22d1817f1ce9929",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-SOLDIER",
+   "path": "production/art/gpt/prompts/ART-BAC-SOLDIER.txt",
+   "prompt_sha256": "82fba31a762898a9b9203eda3e108ecea247605c0858dae15255a420ecc39de1",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-BAC-VAGABOND",
+   "path": "production/art/gpt/prompts/ART-BAC-VAGABOND.txt",
+   "prompt_sha256": "6cb6c728d64ff99b201157b50abe7212e54f07f156e11115bcee3ba87bff1364",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ITE-7-6-TREASURE-TABLES",
+   "path": "production/art/gpt/prompts/ART-ITE-7-6-TREASURE-TABLES.txt",
+   "prompt_sha256": "9c4b93e51245c071c97a1dda6a954e15b8a1d645c6c24c82469e098f7980e5ec",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ITE-7-8-MELEE-WEAPONS",
+   "path": "production/art/gpt/prompts/ART-ITE-7-8-MELEE-WEAPONS.txt",
+   "prompt_sha256": "6da61c3e1a65d7ab9a162c1fa4864eed88e741b9e11eae2490ba95a4db92c329",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH01-002",
+   "path": "production/art/gpt/prompts/ART-CH01-002.txt",
+   "prompt_sha256": "c3cf6216361cf53c03c9644a88ef4b93e033aa5be89c11bc7a2cb28934a611d0",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH02-002",
+   "path": "production/art/gpt/prompts/ART-CH02-002.txt",
+   "prompt_sha256": "77b63a468b376df471bb2961c4098fe5ba85595ef0c097b8fb76dc6037010cae",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH03-002",
+   "path": "production/art/gpt/prompts/ART-CH03-002.txt",
+   "prompt_sha256": "cecf0c70c55734fa53d050391fb3c21dde99c35e38c0bc4757710d584eb5e93f",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH04-002",
+   "path": "production/art/gpt/prompts/ART-CH04-002.txt",
+   "prompt_sha256": "6fe7fa2b69d282da09910a9001047a70b7d3c678a09e1c6ac6d48bff03c78494",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH05-002",
+   "path": "production/art/gpt/prompts/ART-CH05-002.txt",
+   "prompt_sha256": "88805c1d6ce05bceaf5aecd59cf20bc4bc1c0b6903820ae57ae2f1df8a5a0028",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH06-002",
+   "path": "production/art/gpt/prompts/ART-CH06-002.txt",
+   "prompt_sha256": "60f6d2c40ae7dcd3bb1ea8763b17bcbfb0eea70056a3bb2e05d706d12f41eb2f",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH07-002",
+   "path": "production/art/gpt/prompts/ART-CH07-002.txt",
+   "prompt_sha256": "8209c61175f96aeacd4047dbc5053f3789b2315d134b633a77dfbceaf82104cc",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH08-002",
+   "path": "production/art/gpt/prompts/ART-CH08-002.txt",
+   "prompt_sha256": "771b973d6b3f2b5c9dc7cd817c62fd3422aaeeba9598f5abdd7fe79c2b3ae5f0",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH09-002",
+   "path": "production/art/gpt/prompts/ART-CH09-002.txt",
+   "prompt_sha256": "b3443c668726602eab38c5b59a00723ea4aa1f1070bd2fe7e19d8f81820150fa",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH10-002",
+   "path": "production/art/gpt/prompts/ART-CH10-002.txt",
+   "prompt_sha256": "4bb5aef53bedc814c268cb0c53405a9eb618d37c334dfad415919bc334308ecd",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH11-002",
+   "path": "production/art/gpt/prompts/ART-CH11-002.txt",
+   "prompt_sha256": "0b60e1f6cea57cac60ed4e1bc37a015b21df6907ac1375c61c50d9a44e6d010f",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-COVER-002",
+   "path": "production/art/gpt/prompts/ART-COVER-002.txt",
+   "prompt_sha256": "691340569f98c92c6f8ee4f86d14967c8eb02fe73eea656414b2cbff5361f78e",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
   }
  ],
  "references": [
+  {
+   "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+   "sha256": "3c0bea9e732212ef9b338e652292bc443b8195a3d3f082460763f4513435e50d",
+   "format": "JPEG",
+   "px": [
+    2576,
+    1438
+   ],
+   "used_by": [
+    "ART-BAS-DEEPWARDEN",
+    "ART-BAS-HEARTHHOLD",
+    "ART-BAS-REEDMARCH",
+    "ART-BAS-SABLEKEEP",
+    "ART-BAS-SALTSPIRE",
+    "ART-CLI-THE-ASHLANDS",
+    "ART-CLI-THE-MIRE",
+    "ART-CLI-THE-PALE-CITY",
+    "ART-CLI-THE-SUN-DROWNED",
+    "ART-CLI-THE-UNDERMARCHES",
+    "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
+    "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
+    "ART-MON-KHORRUN-THE-DRACOLICH",
+    "ART-MON-MAELTHORN-THE-VERDANT",
+    "ART-MON-SIRRACH-THE-BLACK",
+    "ART-MON-THE-ANCIENT-VOID-DRAGON",
+    "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
+    "ART-MON-THE-BROODMOTHER-PRIME",
+    "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
+    "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
+    "ART-MON-THE-LAST-COLOSSUS",
+    "ART-MON-THE-SUN-CROWNED-PRINCE",
+    "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
+    "ART-MON-VISATH-THE-WHITE",
+    "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
+    "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
+    "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+    "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
+    "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
+    "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
+    "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS",
+    "ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT",
+    "ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA",
+    "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING",
+    "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE",
+    "ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST",
+    "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER",
+    "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
+    "ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL",
+    "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM",
+    "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN",
+    "ART-SCE-SCENARIO-3-THE-QUAKE",
+    "ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME",
+    "ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS",
+    "ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD",
+    "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE",
+    "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR",
+    "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE",
+    "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE",
+    "ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID",
+    "ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING",
+    "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY",
+    "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA",
+    "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
+    "ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT",
+    "ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE",
+    "ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH",
+    "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR",
+    "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT",
+    "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
+    "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
+    "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
+    "ART-WOR-1-2-THE-GRIM-WORLD",
+    "ART-WOR-1-3-1-THE-FALL",
+    "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
+    "ART-WOR-1-3-3-THE-SIX-BASTIONS",
+    "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS",
+    "ART-WOR-1-3-5-MONSTROUS-THREATS",
+    "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
+    "ART-WOR-1-3-7-LEGENDS-AND-ECHOES",
+    "ART-CAM-11-1-CAMPAIGN-OVERVIEW",
+    "ART-CAM-THE-APOTHECARY",
+    "ART-CAM-THE-ARCANUM",
+    "ART-CAM-THE-ARMOURY",
+    "ART-CAM-THE-BARRACKS",
+    "ART-CAM-THE-EXPEDITION-HALL",
+    "ART-CAM-THE-OUTER-WALLS",
+    "ART-CAM-THE-STRONGHOLD-CHAPEL",
+    "ART-CAM-THE-UNDERCROFT",
+    "ART-CAM-THE-VAULT",
+    "ART-CAM-THE-WAR-ROOM",
+    "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-1-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20",
+    "ART-TRA-TIER-1-SORCERIES-D20",
+    "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20",
+    "ART-TRA-TIER-2-SORCERIES-D20",
+    "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-3-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20",
+    "ART-TRA-TIER-3-SORCERIES-D20",
+    "ART-CH01-002",
+    "ART-CH02-002",
+    "ART-CH03-002",
+    "ART-CH04-002",
+    "ART-CH05-002",
+    "ART-CH06-002",
+    "ART-CH07-002",
+    "ART-CH08-002",
+    "ART-CH09-002",
+    "ART-CH10-002",
+    "ART-CH11-002",
+    "ART-COVER-002"
+   ]
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+   "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
+   "format": "JPEG",
+   "px": [
+    2400,
+    1792
+   ],
+   "used_by": [
+    "ART-BAS-DEEPWARDEN",
+    "ART-BAS-HEARTHHOLD",
+    "ART-BAS-REEDMARCH",
+    "ART-BAS-SABLEKEEP",
+    "ART-BAS-SALTSPIRE",
+    "ART-CLI-THE-ASHLANDS",
+    "ART-CLI-THE-MIRE",
+    "ART-CLI-THE-PALE-CITY",
+    "ART-CLI-THE-SUN-DROWNED",
+    "ART-CLI-THE-UNDERMARCHES",
+    "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
+    "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
+    "ART-MON-KHORRUN-THE-DRACOLICH",
+    "ART-MON-MAELTHORN-THE-VERDANT",
+    "ART-MON-SIRRACH-THE-BLACK",
+    "ART-MON-THE-ANCIENT-VOID-DRAGON",
+    "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
+    "ART-MON-THE-BROODMOTHER-PRIME",
+    "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
+    "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
+    "ART-MON-THE-LAST-COLOSSUS",
+    "ART-MON-THE-SUN-CROWNED-PRINCE",
+    "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
+    "ART-MON-VISATH-THE-WHITE",
+    "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
+    "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
+    "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+    "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
+    "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
+    "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
+    "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS",
+    "ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT",
+    "ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA",
+    "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING",
+    "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE",
+    "ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST",
+    "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER",
+    "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
+    "ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL",
+    "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM",
+    "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN",
+    "ART-SCE-SCENARIO-3-THE-QUAKE",
+    "ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME",
+    "ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS",
+    "ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD",
+    "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE",
+    "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR",
+    "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE",
+    "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE",
+    "ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID",
+    "ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING",
+    "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY",
+    "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA",
+    "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
+    "ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT",
+    "ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE",
+    "ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH",
+    "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR",
+    "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT",
+    "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
+    "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
+    "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
+    "ART-WOR-1-2-THE-GRIM-WORLD",
+    "ART-WOR-1-3-1-THE-FALL",
+    "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
+    "ART-WOR-1-3-3-THE-SIX-BASTIONS",
+    "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS",
+    "ART-WOR-1-3-5-MONSTROUS-THREATS",
+    "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
+    "ART-WOR-1-3-7-LEGENDS-AND-ECHOES",
+    "ART-CAM-11-1-CAMPAIGN-OVERVIEW",
+    "ART-CAM-THE-APOTHECARY",
+    "ART-CAM-THE-ARCANUM",
+    "ART-CAM-THE-ARMOURY",
+    "ART-CAM-THE-BARRACKS",
+    "ART-CAM-THE-EXPEDITION-HALL",
+    "ART-CAM-THE-OUTER-WALLS",
+    "ART-CAM-THE-STRONGHOLD-CHAPEL",
+    "ART-CAM-THE-UNDERCROFT",
+    "ART-CAM-THE-VAULT",
+    "ART-CAM-THE-WAR-ROOM",
+    "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-1-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20",
+    "ART-TRA-TIER-1-SORCERIES-D20",
+    "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20",
+    "ART-TRA-TIER-2-SORCERIES-D20",
+    "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-3-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20",
+    "ART-TRA-TIER-3-SORCERIES-D20",
+    "ART-CH01-002",
+    "ART-CH02-002",
+    "ART-CH03-002",
+    "ART-CH04-002",
+    "ART-CH05-002",
+    "ART-CH06-002",
+    "ART-CH07-002",
+    "ART-CH08-002",
+    "ART-CH09-002",
+    "ART-CH10-002",
+    "ART-CH11-002",
+    "ART-COVER-002"
+   ]
+  },
   {
    "path": "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
    "sha256": "d3834f414c62e8623c1c5f35afd6ed4da9edbaaf86e64ac4883763e92b7d61bf",
@@ -47,16 +3352,189 @@
     1438
    ],
    "used_by": [
-    "ART-MON-GIANT-TARANTULA"
+    "ART-MON-ASHEN-REVENANT",
+    "ART-MON-BANDIT",
+    "ART-MON-BANDIT-CAPTAIN",
+    "ART-MON-BANSHEE",
+    "ART-MON-BASILISK",
+    "ART-MON-BEASTMAN",
+    "ART-MON-BLACK-DRAGON",
+    "ART-MON-BLACKFIRE-HOUND",
+    "ART-MON-BLACKWATER-WIGHT",
+    "ART-MON-BLOOD-APE",
+    "ART-MON-BLUE-DRAGON",
+    "ART-MON-BOGLING",
+    "ART-MON-BRASS-GOLEM",
+    "ART-MON-BRIARLING",
+    "ART-MON-BUGBEAR",
+    "ART-MON-BURROWMAW",
+    "ART-MON-CAVE-GOBLIN",
+    "ART-MON-CORPSEHOUND",
+    "ART-MON-CROCODILE",
+    "ART-MON-CRYPTSTRANGLER",
+    "ART-MON-DEEP-ELF-PRIEST",
+    "ART-MON-DEEP-ELF-WARRIOR",
+    "ART-MON-DEMON",
+    "ART-MON-DESERT-NAGA",
+    "ART-MON-DIRE-BEAR",
+    "ART-MON-DIRE-WOLF",
+    "ART-MON-DRYAD-GROVEWARDEN",
+    "ART-MON-ELDER-VRYMK",
+    "ART-MON-EMBER-SKULL",
+    "ART-MON-EVIL-EYE",
+    "ART-MON-FALLEN-PALADIN",
+    "ART-MON-FIRE-BEETLE",
+    "ART-MON-FIRE-ELEMENTAL",
+    "ART-MON-FOREST-TROLL",
+    "ART-MON-FORSAKEN-ARCHER",
+    "ART-MON-FORSAKEN-DUELIST",
+    "ART-MON-FORSAKEN-KNIGHT",
+    "ART-MON-FROST-GHOUL",
+    "ART-MON-FROST-GIANT",
+    "ART-MON-FROST-WYVERN",
+    "ART-MON-FROZEN-SKELETON",
+    "ART-MON-GARGOYLE",
+    "ART-MON-GELID-FIEND",
+    "ART-MON-GHOUL",
+    "ART-MON-GIANT-BAT",
+    "ART-MON-GIANT-BLACK-WIDOW",
+    "ART-MON-GIANT-CENTIPEDE",
+    "ART-MON-GIANT-CONSTRICTOR",
+    "ART-MON-GIANT-SCORPION",
+    "ART-MON-GIANT-SKELETON",
+    "ART-MON-GIANT-TARANTULA",
+    "ART-MON-GLOOM-HULK",
+    "ART-MON-GLOOMSPORE-JELLY",
+    "ART-MON-GNOLL",
+    "ART-MON-GOBLIN",
+    "ART-MON-GOBLIN-SHAMAN",
+    "ART-MON-GOREBEAK-BEAR",
+    "ART-MON-GREEN-DRAGON",
+    "ART-MON-HARPY",
+    "ART-MON-HYDRA",
+    "ART-MON-ICE-ELEMENTAL",
+    "ART-MON-ICE-WRAITH",
+    "ART-MON-IMP",
+    "ART-MON-IRON-GOLEM",
+    "ART-MON-KOBOLD",
+    "ART-MON-LICH",
+    "ART-MON-LIZARDFOLK-HUNTER",
+    "ART-MON-LIZARDFOLK-SHAMAN",
+    "ART-MON-LIZARDFOLK-WARRIOR",
+    "ART-MON-MANTICORE",
+    "ART-MON-MEDUSA",
+    "ART-MON-MIASMA-SERPENT",
+    "ART-MON-MINOTAUR",
+    "ART-MON-MIRE-TITAN",
+    "ART-MON-MUMMY",
+    "ART-MON-NIGHT-HAG",
+    "ART-MON-NOXCLOTH",
+    "ART-MON-OGRE",
+    "ART-MON-ORC",
+    "ART-MON-POSSESSED-CORPSE",
+    "ART-MON-RATKIN-SCAVENGER",
+    "ART-MON-RATKIN-SEER",
+    "ART-MON-RATKIN-WARRIOR",
+    "ART-MON-SATYR-REVELER",
+    "ART-MON-SHAMBLING-MOUND",
+    "ART-MON-SKELETAL-BEAST",
+    "ART-MON-SKELETON-ARCHER",
+    "ART-MON-SKELETON-WARRIOR",
+    "ART-MON-SNOW-GOBLIN",
+    "ART-MON-SPECTRE",
+    "ART-MON-STIRGE",
+    "ART-MON-STONE-SENTINEL",
+    "ART-MON-SWAMP-GOBLIN",
+    "ART-MON-SWAMP-HAG",
+    "ART-MON-SWAMP-NAGA",
+    "ART-MON-SWAMP-TROLL",
+    "ART-MON-THOUGHT-EATER",
+    "ART-MON-TOMB-GUARDIAN",
+    "ART-MON-TOMB-NECROMANCER",
+    "ART-MON-TROGLODYTE",
+    "ART-MON-TROGLODYTE-SHAMAN",
+    "ART-MON-TUNDRA-WOLF",
+    "ART-MON-UNDEAD-CROSSBOWMAN",
+    "ART-MON-UNDEAD-SENTINEL",
+    "ART-MON-UNDEAD-WARRIOR",
+    "ART-MON-VAULT-OOZE",
+    "ART-MON-VAULTFANG",
+    "ART-MON-VRYMK",
+    "ART-MON-WEREBEAR",
+    "ART-MON-WERERAT",
+    "ART-MON-WEREWOLF",
+    "ART-MON-WHITE-COURT-ARCHER",
+    "ART-MON-WHITE-COURT-EXECUTIONER",
+    "ART-MON-WHITE-COURT-GUARD",
+    "ART-MON-WHITE-COURT-SENTINEL",
+    "ART-MON-WHITE-DRAGON",
+    "ART-MON-WILL-O-WISP",
+    "ART-MON-WIND-ELEMENTAL",
+    "ART-MON-ZOMBIE",
+    "ART-CLA-ASSASSIN",
+    "ART-CLA-BERSERKER",
+    "ART-CLA-CLERIC",
+    "ART-CLA-DRUID",
+    "ART-CLA-PALADIN",
+    "ART-CLA-PSION",
+    "ART-CLA-RANGER",
+    "ART-CLA-ROGUE",
+    "ART-CLA-SORCERER",
+    "ART-CLA-TRICKSTER",
+    "ART-CLA-WIZARD",
+    "ART-ANC-DEEP-ELF",
+    "ART-ANC-DEMONBORN",
+    "ART-ANC-DRAKEBLOOD",
+    "ART-ANC-ELF",
+    "ART-ANC-GNOME",
+    "ART-ANC-GOBLIN",
+    "ART-ANC-HALFLING",
+    "ART-ANC-HUMAN",
+    "ART-ANC-ORC",
+    "ART-ANC-RATKIN",
+    "ART-BAC-ALCHEMIST",
+    "ART-BAC-APPRENTICE",
+    "ART-BAC-ARTISAN",
+    "ART-BAC-BELIEVER",
+    "ART-BAC-COURIER",
+    "ART-BAC-CULTIST",
+    "ART-BAC-FARMER",
+    "ART-BAC-HERMIT",
+    "ART-BAC-MERCHANT",
+    "ART-BAC-NOBLE",
+    "ART-BAC-NOMAD",
+    "ART-BAC-PAUPER",
+    "ART-BAC-PERFORMER",
+    "ART-BAC-SAILOR",
+    "ART-BAC-SCHOLAR",
+    "ART-BAC-SCOUT",
+    "ART-BAC-SHEPHERD",
+    "ART-BAC-SMUGGLER",
+    "ART-BAC-SOLDIER",
+    "ART-BAC-VAGABOND",
+    "ART-ITE-7-6-TREASURE-TABLES",
+    "ART-ITE-7-8-MELEE-WEAPONS"
    ]
   }
  ],
  "files": [
   {
    "path": "START_HERE.md",
-   "sha256": "e95081a46846ad94ba8158553f7d9756c01a03bd66e4a905d199ce4cb82778c5",
-   "bytes": 4768,
+   "sha256": "b3332f799e8fe3acc01625ba62035c58399f04b6228d88e35cec8cbff5e05f4c",
+   "bytes": 48473,
    "role": "instructions"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+   "sha256": "3c0bea9e732212ef9b338e652292bc443b8195a3d3f082460763f4513435e50d",
+   "bytes": 2735665,
+   "role": "reference"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+   "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
+   "bytes": 1661394,
+   "role": "reference"
   },
   {
    "path": "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
@@ -66,32 +3544,32 @@
   },
   {
    "path": "config/art_style.json",
-   "sha256": "1c4f871631a2b4c03060a49d398e057df1741032c505968751f11cb492f6848b",
-   "bytes": 15806,
+   "sha256": "439746cb024eb678d9f734ea3c753fc0c2c7d56b0a2e93899d46de80372cdcbb",
+   "bytes": 16068,
    "role": "config"
   },
   {
    "path": "production/art/SELECTIONS.json",
-   "sha256": "8ca147ac1f3de58d583a5b07accd3850d825bfcfa08c67be357e49e2dab544f2",
-   "bytes": 9265,
+   "sha256": "bcb8e23a0e39d1069071e9de2aef6599cff437357664d3345ecee20e1c4d03e7",
+   "bytes": 9505,
    "role": "selections"
   },
   {
    "path": "production/art/gpt/INSTRUCTIONS.md",
-   "sha256": "0c58e3bf4d8ffae6b94232e03e5308c50280f93326a59c6b5e6b13f95f11862a",
-   "bytes": 6099,
+   "sha256": "96fc42f0196090eea947ae7c083d76ee32293875efc7ff0c6a2f6375c20a15d7",
+   "bytes": 6150,
    "role": "instructions"
   },
   {
    "path": "production/art/gpt/QUEUE.json",
-   "sha256": "4094817f6ce40bc129518ad946b3d79a7d4ca0bfacaeb0f8e4b020e69de8e5aa",
-   "bytes": 847,
+   "sha256": "ff47368ebb6cd2ee908fb359a7f222e5cb81e9abd6e71b1fab7e275728c4d31f",
+   "bytes": 202269,
    "role": "queue"
   },
   {
    "path": "production/art/gpt/QUEUE.md",
-   "sha256": "f76f9b85b23212085870ce5f402a80dc4bb099c80d51642fefcb59779442d588",
-   "bytes": 472,
+   "sha256": "6ffcb4a3d3c544767a3452db8114886430484d658ca826ff29d50f0fff94ab5a",
+   "bytes": 36786,
    "role": "queue"
   },
   {
@@ -102,21 +3580,1635 @@
    "mutable": "append_only"
   },
   {
+   "path": "production/art/gpt/prompts/ART-ANC-DEEP-ELF.txt",
+   "sha256": "6962f088c8434792c8065de58dffe61d0e68588b8f9ca0eaf06c2284df11992e",
+   "bytes": 3534,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ANC-DEMONBORN.txt",
+   "sha256": "f7da8a16f0a0925101d3871793bb35b872f6bf542655fb1abbda84637c33eb9a",
+   "bytes": 3485,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ANC-DRAKEBLOOD.txt",
+   "sha256": "5df7759c466f7ac2b603284edb984b5d1c251d00ef89df833b99e69f0aec7331",
+   "bytes": 3522,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ANC-ELF.txt",
+   "sha256": "37d0ad5c6a4423893fce968519ff59383119c329d6b6f9378441101768cec21f",
+   "bytes": 3550,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ANC-GNOME.txt",
+   "sha256": "66ec9eacc48289933fe13f21b7049a9d21763e9959e79e2f3184dedef432298f",
+   "bytes": 3594,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ANC-GOBLIN.txt",
+   "sha256": "acd60ab5dd1e88c7f9b338a4418a5d2b52f2ee332bab452598227b809eb433ae",
+   "bytes": 3515,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ANC-HALFLING.txt",
+   "sha256": "d9dd712e5d27aa0100404619e114a1f4142696d9cbf6ad03bbc16809826ce479",
+   "bytes": 3604,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ANC-HUMAN.txt",
+   "sha256": "cff635663d618f1e8d8c52c6b32191e1c4aa8661f1e30c587e0cdebd1030ecb5",
+   "bytes": 3608,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ANC-ORC.txt",
+   "sha256": "74d02bacfb303efc16e2673474db1a6bc4372c90a472dd4eb304b03af3927543",
+   "bytes": 3479,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ANC-RATKIN.txt",
+   "sha256": "69bebd4c5be38f76b69622bf90b608e3983b473ca260bd9673e5237ebf983e6e",
+   "bytes": 3465,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-ALCHEMIST.txt",
+   "sha256": "ef109ca7c757d77ebdac794975a3e406b412b55e1299c828d448812834effc49",
+   "bytes": 3131,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-APPRENTICE.txt",
+   "sha256": "9efa58768bc8b7ec37c232d7924e62db00afb1ebda8f5a132b804e2230ab6c31",
+   "bytes": 3214,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-ARTISAN.txt",
+   "sha256": "f2a373f585bc329c89b2a2bae28381c87dc5ab15b2097d89cdb74528d3583d2f",
+   "bytes": 3114,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-BELIEVER.txt",
+   "sha256": "ee69e3f98cb471bbcea6f3f913efa742e3e9815162cfead612a28a0161c11209",
+   "bytes": 3108,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-COURIER.txt",
+   "sha256": "d8bf5e059b35bab8a9a38140ad3edcf95fb6307e1b77bccf9aa0e21f916ee17a",
+   "bytes": 3178,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-CULTIST.txt",
+   "sha256": "f92058333b82c3c8ea17035f21012a2bde5d6408f4dce4c8c706fd7c434d9810",
+   "bytes": 3077,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-FARMER.txt",
+   "sha256": "b431d04964684fd17c96872197406e90335ab0559514f26bad5ab0f0b851cc38",
+   "bytes": 3192,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-HERMIT.txt",
+   "sha256": "c3343666b19c5716859d10200f53bc52fd31ce86d094f3e3d0dfaffff91d3117",
+   "bytes": 2966,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-MERCHANT.txt",
+   "sha256": "28657e92ada441c25fbf0d05a64c4ee3ff40e380899a8059ab81d156980ac376",
+   "bytes": 3085,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-NOBLE.txt",
+   "sha256": "3b1a57fcf0f07cd513886406a7aa25a9ff81b99e881bb80609bb0c8b00b2ef0a",
+   "bytes": 3025,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-NOMAD.txt",
+   "sha256": "2f25b35c3c285919ba31833c911a469e64de61277d6c6be0d8cb22e88e35b99c",
+   "bytes": 3117,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-PAUPER.txt",
+   "sha256": "149b54fa77582f6510bd6098391b651919db8d59b0b0bee0ddcfb70fc6443474",
+   "bytes": 2929,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-PERFORMER.txt",
+   "sha256": "852c6027e7bbd9bfbfe991fd0e09a5c471c6f7fe48ff33e6755c3b6c4440a063",
+   "bytes": 3083,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-SAILOR.txt",
+   "sha256": "a8460daabf69572488264714d30f54ea9fba63309cda971c0392e7f5d9cc4f4a",
+   "bytes": 3164,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-SCHOLAR.txt",
+   "sha256": "5a0e9691139ac126858604338c0f0ec760405dc8874bf5c1445e2862ddc3cb0b",
+   "bytes": 3107,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-SCOUT.txt",
+   "sha256": "c83f22d1b8259744fba29df717484ce59bb01642f040c23992f2ace226cadc34",
+   "bytes": 3178,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-SHEPHERD.txt",
+   "sha256": "1216fd60807213a9331122162d683821a26182de1952eda965d2b51542c3da66",
+   "bytes": 3084,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-SMUGGLER.txt",
+   "sha256": "85893a49b4993346b39d20ebbb19b9d1fae49c42c2e15e8125b32b9752aa00c4",
+   "bytes": 3182,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-SOLDIER.txt",
+   "sha256": "404c370c64457689ad92cf0e3ff0e158a725832daff7e41428f984cddbf9e60b",
+   "bytes": 3138,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAC-VAGABOND.txt",
+   "sha256": "9ea9c3cbf27df0099890a899dc7f42ceee9599f2fc434ac2d9bcbc2e858b605a",
+   "bytes": 3039,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAS-DEEPWARDEN.txt",
+   "sha256": "5ead7acc573e3f54d9a4b3e6a448dd927e0a61a1dfa7022f8e5de061944c45f7",
+   "bytes": 3969,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAS-HEARTHHOLD.txt",
+   "sha256": "95b4e0c3d20879fbdadc43aa353699c5e1099d2077d55a5ac5ff893bac384e2d",
+   "bytes": 3927,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAS-REEDMARCH.txt",
+   "sha256": "028da5aa655c5ef856818e55ce33c2a76ef9aea0b68cf2e75c70bb6c443daaaf",
+   "bytes": 3922,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAS-SABLEKEEP.txt",
+   "sha256": "ffc66498c40d6614fce5db58ca03c7d673ce1cf010668bd69d74d52bca84d039",
+   "bytes": 4257,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-BAS-SALTSPIRE.txt",
+   "sha256": "3fa96f41c661e3b8d8ae2f68be9468ea116aaef2ca94c8aa46e8171e2d7682a9",
+   "bytes": 3805,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CAM-11-1-CAMPAIGN-OVERVIEW.txt",
+   "sha256": "5cc85bf914e3674148ec4b39a11a620a1b2958d6511c60473683248c5223ed85",
+   "bytes": 3966,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CAM-THE-APOTHECARY.txt",
+   "sha256": "7d5f31c5ef8ff16c1e31b6c7e9bdb5bc6a5be2a3dfe2be07f9c7617185dedb7e",
+   "bytes": 3671,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CAM-THE-ARCANUM.txt",
+   "sha256": "6bb3eea391f813be03c3b1ce87cb445ad449b7b8835c304c061a1715e7be636e",
+   "bytes": 3470,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CAM-THE-ARMOURY.txt",
+   "sha256": "9106a4902cbae3cbb6b96f6f9694c25684b0bbaa76bdeffe12b79cbfe143bef2",
+   "bytes": 3510,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CAM-THE-BARRACKS.txt",
+   "sha256": "62f6bf6f8e550799935d0bd6319f23c2979998ec4c51f40647c5da3bbb5547b9",
+   "bytes": 3566,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CAM-THE-EXPEDITION-HALL.txt",
+   "sha256": "5221753e96d6e2e9b53de846a9694bc804151abc0487f992b9677307bea2c253",
+   "bytes": 3545,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CAM-THE-OUTER-WALLS.txt",
+   "sha256": "68091b12517be72efc46b5eba2d05e829faf79c65e62f7007a80a8d4d6ba01b0",
+   "bytes": 3604,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CAM-THE-STRONGHOLD-CHAPEL.txt",
+   "sha256": "38512606ed19ef9fc31fd441988f8d19d2ac368aaf22f19a375cd78a3a0dcf38",
+   "bytes": 3688,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CAM-THE-UNDERCROFT.txt",
+   "sha256": "6cd74ce6955f9984c98c0f1fc55f50041ba65d143081a77e092b707abe2d9a6b",
+   "bytes": 3492,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CAM-THE-VAULT.txt",
+   "sha256": "5ec28297b863b88961a9415d2af7f5928d31ee9da5940d43aede05d779fe0c4a",
+   "bytes": 3574,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CAM-THE-WAR-ROOM.txt",
+   "sha256": "a9546d0220f5b312ad8608f62ccc42c542f6f89f1ad579292f0da6ba279faf20",
+   "bytes": 3391,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CH01-002.txt",
+   "sha256": "2db267749190384e6b59370c61719b06c37a47d133d76e8d46b0749ed044fbec",
+   "bytes": 4236,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CH02-002.txt",
+   "sha256": "7acdefd1969421855a3ed3302a9399fc19cbd8bcd2fd1cc7facdfa6ea43660a4",
+   "bytes": 4149,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CH03-002.txt",
+   "sha256": "75f67ef1ed14220340b4fa7a1dd53df98d5a6bcd66ffd33ad09333f3c77984bb",
+   "bytes": 3891,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CH04-002.txt",
+   "sha256": "01383117bd61da47a203f16dfaf22c91bca0c512d54b21f3d326a74a606ff1c2",
+   "bytes": 3927,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CH05-002.txt",
+   "sha256": "34b1da3ca04df1bf3e0cf76be668ab2862f75525db579ac92fc17f82d4a991c7",
+   "bytes": 3978,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CH06-002.txt",
+   "sha256": "97e12cf1035ac631ffe5d2ae0c058e389d28fe0c6b14c3a6616ba8e6ae28a829",
+   "bytes": 4294,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CH07-002.txt",
+   "sha256": "3bc5a73562cb24daefb36f983048c80b55c0f25719f895f45f98f1f830631935",
+   "bytes": 3896,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CH08-002.txt",
+   "sha256": "b835fa9f71a1b89a1be9c7446f8bb39a314c7d6470899b42da3791a6a102b38b",
+   "bytes": 3932,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CH09-002.txt",
+   "sha256": "03c88ca86db736102176f5029630fd375845288de631dbe4e7072fecc282ed56",
+   "bytes": 3995,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CH10-002.txt",
+   "sha256": "51f122e84ed61b2bded59b6cbf04d938b81840409d919a1d1f48542bf60fb9f0",
+   "bytes": 3964,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CH11-002.txt",
+   "sha256": "39c8aeb1c2964a7de69f554db7b5a32e35804e4e136fee514362deb4b8b03286",
+   "bytes": 3850,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-ASSASSIN.txt",
+   "sha256": "af8837751968f1700f4f0e47b47240a192e30af6e8b00b78d6a775a5e3da956d",
+   "bytes": 3392,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-BERSERKER.txt",
+   "sha256": "f221c2b917b5ffca97fe6398b20aa98e32149fe23bd7f19757f951e5815762ab",
+   "bytes": 3395,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-CLERIC.txt",
+   "sha256": "7eac7779ebe205cbb781e9905a78f5c76c100f3b173e72dc611cf4351c8d8a14",
+   "bytes": 3381,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-DRUID.txt",
+   "sha256": "f1412a111cbb25ae95ec7082fc44abc8d4fe2a5e24255a140ba3ab87cdf0aaea",
+   "bytes": 3412,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-PALADIN.txt",
+   "sha256": "7e09f480ed50a7ff559937366b0af9909b909bc29802154fe6beb2b6b30b3e91",
+   "bytes": 3354,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-PSION.txt",
+   "sha256": "12d62ec490537c6a42df423c301a68308001f85a40e6998f5a1fd3b0d3df10c1",
+   "bytes": 3411,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-RANGER.txt",
+   "sha256": "f97d15bbf1f50a1dafb55eba7c1ac9f69c99cdd0d258b78007b9ae087c563303",
+   "bytes": 3384,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-ROGUE.txt",
+   "sha256": "cf85dca29214da37a746d8dbe686ccdcac9a39b7aeb80cad0a9c100898f75ac9",
+   "bytes": 3452,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-SORCERER.txt",
+   "sha256": "1d6cf23720bbaf3d85da48802a41c125eef0b2a16eacbe5b7f387c94f7730959",
+   "bytes": 3367,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-TRICKSTER.txt",
+   "sha256": "13d34a463130fdc771915c9ee4e93ede15a072e533f098a20b29ee0bb890457c",
+   "bytes": 3468,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-WIZARD.txt",
+   "sha256": "5994705f009e35e722fe963411e59c13e4371e6eb55d32cd44e0cfe909ae6e21",
+   "bytes": 3364,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLI-THE-ASHLANDS.txt",
+   "sha256": "bc68027cbd41b78c48272183a34e323f59dd32bdc958d7fb220fdc554002f935",
+   "bytes": 4218,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLI-THE-MIRE.txt",
+   "sha256": "816ac57f66b435268d5064a35a92c8e284bd20ee796c0ed7919d9d8913fe0899",
+   "bytes": 4105,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLI-THE-PALE-CITY.txt",
+   "sha256": "8fe78cc7ab220ec88770c1627789ae909170a82bcab27f75042c14b102528352",
+   "bytes": 4030,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLI-THE-SUN-DROWNED.txt",
+   "sha256": "d2aba15007424eaaa24c87987ca504f00616a5e20157f9db660aa9dfdb13503e",
+   "bytes": 4132,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLI-THE-UNDERMARCHES.txt",
+   "sha256": "6b73441b8c5a3244f4c681e493c195e51d74f6cfe593ded951091d14db68ab66",
+   "bytes": 4260,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-COVER-002.txt",
+   "sha256": "76f797a250e695fb8091c271081de1d1f48aece0123800c6ddfdbf2d830246e4",
+   "bytes": 4801,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ITE-7-6-TREASURE-TABLES.txt",
+   "sha256": "6abb1bacc04ff942520c2cc939e78c7362f7550329346574bcaa3e75f9d75d5c",
+   "bytes": 3480,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ITE-7-8-MELEE-WEAPONS.txt",
+   "sha256": "df4728abde538646ddc62ad2f206b4355a85159fb719903d9ab3ea1122c52972",
+   "bytes": 3721,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-ASHEN-REVENANT.txt",
+   "sha256": "02f4d9dfabe15dafa7f54f80155207029788134ae048e0f70cf306e61a954e85",
+   "bytes": 3434,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-AVATAR-OF-THE-OLD-GROWTH.txt",
+   "sha256": "0b53eb73642f74c5ba4c825cc257d56587f819890933049313de2e80e7a20230",
+   "bytes": 4035,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BANDIT-CAPTAIN.txt",
+   "sha256": "1d294b73e4de9e1c214dee0d207f1bddae3be9e76f0dc9837a3510d8976dd98a",
+   "bytes": 3711,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BANDIT.txt",
+   "sha256": "b621e6c28db7a1c12d5f09964be112ce4eda05177d0988e2e0d5b938d214bb0f",
+   "bytes": 3566,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BANSHEE.txt",
+   "sha256": "cc800de617bb80e7797d87164085a1a301aa3dc2a3be2f4075ed2e603939f550",
+   "bytes": 3472,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BASILISK.txt",
+   "sha256": "1e4926cd4dc2e12940d22fbedaaf82d64b844baa7d97848d9dc64b4d55f75f86",
+   "bytes": 3769,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BEASTMAN.txt",
+   "sha256": "b16abf6129e2dcfea6d816f6e820a3e3e042c1ecd6a1ec612bc8fafd50d6cfe7",
+   "bytes": 3554,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BLACK-DRAGON.txt",
+   "sha256": "4f007bea3f3af5e9dab29578087829a7aa3c1b64c9b286155848a8eeb6e15c0d",
+   "bytes": 3576,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BLACKFIRE-HOUND.txt",
+   "sha256": "44e9b96bb9703b1abf891f3681c554c35f4fcba55083545c858f119e278ac7aa",
+   "bytes": 3583,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BLACKWATER-WIGHT.txt",
+   "sha256": "b250bd4459f52834a9f5644faaea433f6ae681fcc1983dbe381dfddf4e9ed91c",
+   "bytes": 3464,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BLOOD-APE.txt",
+   "sha256": "a0c87508b8bdb30327302eb48c23c32bd8aa55661920ebafb62c9ce00531c946",
+   "bytes": 3476,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BLUE-DRAGON.txt",
+   "sha256": "e55a16d8aeda6717f479d44463ce5429c0f1a61ea21307139261d09074e03e7d",
+   "bytes": 3711,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BOGLING.txt",
+   "sha256": "9ee13888a0fe906a5f43daea03bf0b1b7a124789e9004724653f1bd88480fee0",
+   "bytes": 3402,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BRASS-GOLEM.txt",
+   "sha256": "57b056111e84e09d90e80169694296cc65cb58e6adbab457a680d41655db58b1",
+   "bytes": 3330,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BRIARLING.txt",
+   "sha256": "6769f6eb5471b3bb320340982066ad2e94a09d8950f17e67d71b611f6f8d6c0d",
+   "bytes": 3526,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BUGBEAR.txt",
+   "sha256": "904cbdf9e3ace7d8c1de99d9eed6cee3040db9c16858ee5b2440ecd27cc6bc56",
+   "bytes": 3608,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-BURROWMAW.txt",
+   "sha256": "7c939590fd0c2372f74d976635ee5331314b0afebe817ba049017bbc3ccd3e26",
+   "bytes": 3616,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN.txt",
+   "sha256": "c29924daf308cf5c285062d8d14c13c25654a8848636a8a92e2349a30e15e8cc",
+   "bytes": 4108,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-CAVE-GOBLIN.txt",
+   "sha256": "59457e270c055a2e4cf096e691b36067f669bef3dc29e5b6708af02bca917633",
+   "bytes": 3470,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-CORPSEHOUND.txt",
+   "sha256": "1a5eaf020d0de09047800e4d3847da6612109cbf45b78bb90f4edfcd1024adbc",
+   "bytes": 3515,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-CROCODILE.txt",
+   "sha256": "34cd599a73f2bec16a6448a4cef00d0e1047922adafebfde38fcec453bb58aee",
+   "bytes": 3491,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-CRYPTSTRANGLER.txt",
+   "sha256": "8e9909d7d4be3598236b48721ceb42d74841b15fc2ab4b248ad8a585445c778b",
+   "bytes": 3696,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-DEEP-ELF-PRIEST.txt",
+   "sha256": "3b715467550e2d1dd9d936e276e081047e9e2ad8211fea8f889628f09531435e",
+   "bytes": 3869,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-DEEP-ELF-WARRIOR.txt",
+   "sha256": "f4b6ceed40908226ce6b8b8de246980a1a1d24a8ac9a2c181a8fb8714bc94fdd",
+   "bytes": 3711,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-DEMON.txt",
+   "sha256": "89b7a1124097c96214976053f308380d62be6a286ac8ad73b35c358264f2318b",
+   "bytes": 3611,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-DESERT-NAGA.txt",
+   "sha256": "98b443565cdb93d0bfe7b3c0539425cb871a5cd4a92bafa16918c5e41a13cd36",
+   "bytes": 3626,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-DIRE-BEAR.txt",
+   "sha256": "744caf338e3f78b3cfb0b66470e08acd1acf181746c6e5f5c57b15608d8096d3",
+   "bytes": 3559,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-DIRE-WOLF.txt",
+   "sha256": "ba0c0efa7a4a975409976524f9f2e57a57d861c319ed3aa2d35158f6fd3addb6",
+   "bytes": 3545,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-DRYAD-GROVEWARDEN.txt",
+   "sha256": "547525664867c77a109be8fbb79c2e973733afbcbb95e824f653a0c22cf7a1d2",
+   "bytes": 3450,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-ELDER-VRYMK.txt",
+   "sha256": "024c57d490a996b492ab694ab845cc18afe6b6e1fc0a595f726810406cd6a5fc",
+   "bytes": 3587,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-EMBER-SKULL.txt",
+   "sha256": "92be013d16716d492f9b49201f1bf4c58f1c799f229d63811010e1dfb187125e",
+   "bytes": 3542,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-EVIL-EYE.txt",
+   "sha256": "c262bc6dbe80f6659176b513ecedefa523f7ebb37ce65d6300add86c360ad93f",
+   "bytes": 3792,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-FALLEN-PALADIN.txt",
+   "sha256": "37c845254302a0703325084887b409613a86b0fa5fffe79e88c5f0514c9ed06e",
+   "bytes": 3546,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-FIRE-BEETLE.txt",
+   "sha256": "cdffb8defed0299c4712072fa3d28adc010b49b6423659a8032fb6ba3b8c6242",
+   "bytes": 3455,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-FIRE-ELEMENTAL.txt",
+   "sha256": "66805906b73fe1dd22722aa5d98449fa001f91413cbad708032717c8373bf977",
+   "bytes": 3511,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-FOREST-TROLL.txt",
+   "sha256": "cea82a5cdc2997ebc7daccdbb980e8d42fe56d883e7dab36aea12e662fb018fa",
+   "bytes": 3528,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-FORSAKEN-ARCHER.txt",
+   "sha256": "96de656fdc208e2c1186ddc4249cb778746b96e2c88570f4a70a8a201c805260",
+   "bytes": 3561,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-FORSAKEN-DUELIST.txt",
+   "sha256": "62fef889dcf3569433d7b476b917daf48bb99d7f850ff94efcad5808183861e2",
+   "bytes": 3517,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-FORSAKEN-KNIGHT.txt",
+   "sha256": "811476c78bf32d27478911ea27d3ac86fe1332f1d5976ce31f094016369cc532",
+   "bytes": 3490,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-FROST-GHOUL.txt",
+   "sha256": "8e326108b3bc91c3101b274ffb40a53344ab55a6032899fc0cde801c20209c2b",
+   "bytes": 3479,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-FROST-GIANT.txt",
+   "sha256": "1dedcf5fd23f36833f669235eab21fb7cb523b25ada55e6a0783815e3fb10704",
+   "bytes": 3528,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-FROST-WYVERN.txt",
+   "sha256": "cdb5f78827b71319f5c4945198814f64020ddf98889b697c0041fc723a9b0c34",
+   "bytes": 3697,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-FROZEN-SKELETON.txt",
+   "sha256": "9c1ab9dcbacf3d592ebdc68eabe41111d28f5ddf7ab5475d0e70bbebfb0cd78f",
+   "bytes": 3476,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GARGOYLE.txt",
+   "sha256": "8ddeea47f93de747afe296b371646a6949d5408be5303a1c364637c08beda231",
+   "bytes": 3519,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GELID-FIEND.txt",
+   "sha256": "78e49b9f6ba45856423c4bb1e186661efb650426954f1219457a533e0f479ce9",
+   "bytes": 3614,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GHOUL.txt",
+   "sha256": "227dba5cbcd7b5943cdd555c4944edfed2797b8e7a78506b9745e80fdce01f9d",
+   "bytes": 3483,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-BAT.txt",
+   "sha256": "955ffa2aab74557597fcf7959f4750bcf4d98a20971fec23fe244ccbef93fa70",
+   "bytes": 3574,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-BLACK-WIDOW.txt",
+   "sha256": "475055878a3a596a4676eba893cb22fecda69ce30232b282531fe8029ed56fa2",
+   "bytes": 3665,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-CENTIPEDE.txt",
+   "sha256": "a0e865005a080e18ae0ad9a3c5dd98729acfb1e0a048128caa8fa614ff7ba1bd",
+   "bytes": 3500,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-CONSTRICTOR.txt",
+   "sha256": "c9355678ef504ad96ed3d9d60679500bb4caa029ffd6a652d5a18b2e75a43315",
+   "bytes": 3453,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-SCORPION.txt",
+   "sha256": "83041476709a9224c802903eae5e1b325de0cb3a7574acd13daab6aa6e9caf9b",
+   "bytes": 3698,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-SKELETON.txt",
+   "sha256": "8b0d58919836cf5e6457394e845973093660d10b6aee009cd28716103f2408dd",
+   "bytes": 3559,
+   "role": "prompt"
+  },
+  {
    "path": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
    "sha256": "b10940be2ed6666c9e4854ff0cc1cf0a423546dafee755d1c7629c2dcc5666c0",
    "bytes": 3921,
    "role": "prompt"
   },
   {
+   "path": "production/art/gpt/prompts/ART-MON-GLOOM-HULK.txt",
+   "sha256": "976d6a964fd8a99488972f196c0aa25b71a645e70f6aefda5d2ebbb63b3c4d25",
+   "bytes": 3621,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GLOOMSPORE-JELLY.txt",
+   "sha256": "0e61290eddba2e0ed40fd28fd95b6351fd27d8b30a40223e4ef6b2cf80c6929b",
+   "bytes": 3548,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GNOLL.txt",
+   "sha256": "c8157232064927ab161a15c190f4d8606f38d8393538a864453c62aad0d28361",
+   "bytes": 3458,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GOBLIN-SHAMAN.txt",
+   "sha256": "a7359270378fba7cb5e7add302f6ece411f61c5e4b73203e66d6779481897e48",
+   "bytes": 3589,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GOBLIN.txt",
+   "sha256": "6dd39b8659f59aa1369c8b8e032fed15b156e79732c5b8a468ed6817f623f4eb",
+   "bytes": 3765,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GOREBEAK-BEAR.txt",
+   "sha256": "95492540a557fbbd6a70506e596ed4d1c64a3c8eee58512fc6eda29f504bf796",
+   "bytes": 3641,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GREEN-DRAGON.txt",
+   "sha256": "47dd317823efecca506ef3a8a4f5009bb65a6deca93e5c558940fbeab9e7e4ff",
+   "bytes": 3705,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-HARPY.txt",
+   "sha256": "64a4570c7f43888db55363a5cd3e5ef95a9a7f6f67fc2562e34112752ae99780",
+   "bytes": 3652,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-HYDRA.txt",
+   "sha256": "9d5a231dd1a067cdc2b92decd5972e0da1ac2418ccfc3386d890b3b938ce3a1c",
+   "bytes": 3644,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-ICE-ELEMENTAL.txt",
+   "sha256": "ecf59c89149d7b36ba58385e1cd880253b8115d92cbd97b447f318ca6ae128aa",
+   "bytes": 3549,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-ICE-WRAITH.txt",
+   "sha256": "3dafeb34ef9cc9c6a61e8d3fe9e45e3ac492746164321bdf08594b42f71559a5",
+   "bytes": 3462,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-IMP.txt",
+   "sha256": "abb42106024ee943971792f8401f3252bbee354d8dc1bf6a878a57d0fb7eb052",
+   "bytes": 3371,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-IRON-GOLEM.txt",
+   "sha256": "0f25ec4194f056eb3e5b4c18c1e3c3627df997c5c486e8e3dfc3fcdb567db499",
+   "bytes": 3523,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-KHORRUN-THE-DRACOLICH.txt",
+   "sha256": "1679d7cbae2b3fd84a4f8dbeb849a493e2b43608554260220332db8d9d0f3e3c",
+   "bytes": 3978,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-KOBOLD.txt",
+   "sha256": "e925d3119b511fc59ac26b44404e1618a4f2eee509b972a1958c003bf3af9ce5",
+   "bytes": 3520,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-LICH.txt",
+   "sha256": "d6cca5fcb93666f209e442a8af6ce219edc2996628ef38aa593de39e2658cf89",
+   "bytes": 3493,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-LIZARDFOLK-HUNTER.txt",
+   "sha256": "edf0c89d49e566e04d15831ec73b9a9988d9a386376729eab5fc90315f94288b",
+   "bytes": 3423,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-LIZARDFOLK-SHAMAN.txt",
+   "sha256": "ca9968cb22a60f82bbc4589b99e9a6de29c2a9325b31ada22c8b059ca60b5647",
+   "bytes": 3409,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-LIZARDFOLK-WARRIOR.txt",
+   "sha256": "33d94083e814ed31b31e82113627480dbdd5d20804457d2a68c3c8bcd01a12f2",
+   "bytes": 3477,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-MAELTHORN-THE-VERDANT.txt",
+   "sha256": "fdfad2146cbca18f7a58d3eb4b329afd5f14d494bb0f4464a4761aa4ce289008",
+   "bytes": 4053,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-MANTICORE.txt",
+   "sha256": "41ecc5f9ef65c6c4bd6ca0db66bb29367e0d1b21f2e99186e882f41cafd6252c",
+   "bytes": 3540,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-MEDUSA.txt",
+   "sha256": "bcb63ef0c9668be9d31729ffd74eb73c88ee44377b7e29f31bf0d97cabd2370e",
+   "bytes": 3747,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-MIASMA-SERPENT.txt",
+   "sha256": "6c4179474ba38885f7744475e725b0083656bd75dea96d1f10235646cf1a9aff",
+   "bytes": 3385,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-MINOTAUR.txt",
+   "sha256": "90f9411b561a47ea775b9de28b22af1e0069dd65fb0c73c95a375c566959c8ff",
+   "bytes": 3574,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-MIRE-TITAN.txt",
+   "sha256": "51b904d8338e01847361639b713754b5834e95e2ae1f7534a6e375b3a8390f9d",
+   "bytes": 3589,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-MUMMY.txt",
+   "sha256": "07d3c5bd356b3a341081b318f96294c10e8126af82b5d76b61a731f5e2058a64",
+   "bytes": 3448,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-NIGHT-HAG.txt",
+   "sha256": "5dde5159e62caa1643b3a5ba4d2727b252a32a91e56f96c1b784391cfc9c4ceb",
+   "bytes": 3483,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-NOXCLOTH.txt",
+   "sha256": "c3ba2b45b867303d3e44fad4324d0883675246acdae859a2ca5deced8e7182e2",
+   "bytes": 3531,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-OGRE.txt",
+   "sha256": "ac4775f8b4e2d4feb518b998e20e0980250acc8404521548896853cbaaf67fcb",
+   "bytes": 3667,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-ORC.txt",
+   "sha256": "30b98c4e51b7f69a026885e257e9b8b94e4a147f5f629d388fa852b8dbd7425d",
+   "bytes": 3847,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-POSSESSED-CORPSE.txt",
+   "sha256": "c427931f9ea5cf4eb12f1af4aee3d76532e215f08198f6277f5e5bf751b86d47",
+   "bytes": 3466,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-RATKIN-SCAVENGER.txt",
+   "sha256": "a8ee5736366b2af3598027d9943c9b9d74cd6d5cb1c6c57da84f6ff228147478",
+   "bytes": 3607,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-RATKIN-SEER.txt",
+   "sha256": "f53a24893ffd9d260cb707da9022270f1e7b9253855157384fad41bc9a4370b1",
+   "bytes": 3429,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-RATKIN-WARRIOR.txt",
+   "sha256": "9f4ceaf6498b8654da47d0808ad654873f3c213223df969ed5839b32302292a5",
+   "bytes": 3483,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SATYR-REVELER.txt",
+   "sha256": "e6fc5804f61b2a7256c28a0a0522b95490416abc4d7ba337a434bf376ed56be4",
+   "bytes": 3572,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SHAMBLING-MOUND.txt",
+   "sha256": "6d25549778c3a4f139461718ddc783b6858d085a28e910d9fefd10a08d8c2f22",
+   "bytes": 3485,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SIRRACH-THE-BLACK.txt",
+   "sha256": "8ce652c33dc95e870fa609d4b45ba1eb0c106f13e4d45808419d6fd7ea2f1829",
+   "bytes": 3816,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SKELETAL-BEAST.txt",
+   "sha256": "dd2eb011bebbfddf144862d5b838db7dae02528f5d510aa146fde37e47f6391a",
+   "bytes": 3361,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SKELETON-ARCHER.txt",
+   "sha256": "72bef9dfc7e214412de5b8a8da27020a82112b3c405158b2ba7422c9693c76bc",
+   "bytes": 3433,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SKELETON-WARRIOR.txt",
+   "sha256": "57a908385e8281efd6792949e3f80746eae1878747babc8edabe023bb4efaf19",
+   "bytes": 3714,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SNOW-GOBLIN.txt",
+   "sha256": "40e8ba6b591aba5913b021f5552fe7df16fa5f775cf4ed46d2e98acbab5555d8",
+   "bytes": 3428,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SPECTRE.txt",
+   "sha256": "ad16bcfb50383082158d2a5d39f01829713e86a5d4c32bcbf35c8dae30f5c171",
+   "bytes": 3594,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-STIRGE.txt",
+   "sha256": "f02fefbb7a7271b317d8b099a970e1e36d89b02ea42b3a3900c17e4175a776d4",
+   "bytes": 3385,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-STONE-SENTINEL.txt",
+   "sha256": "2a905d4884f895192ddf6b06a7a889ea81b70172cdb352a8d2a3e5e582783d37",
+   "bytes": 3548,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SWAMP-GOBLIN.txt",
+   "sha256": "8c3b532d0b1b48822449ce3967a405063a2aa6c9726dd4b055c9aff38f170e4d",
+   "bytes": 3410,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SWAMP-HAG.txt",
+   "sha256": "9de6dacebf31b3324e9751034a2d1f39bc5da2105bcbfbe809b8f351a5cbca20",
+   "bytes": 3385,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SWAMP-NAGA.txt",
+   "sha256": "97e4d130e189acb7f3b3e4e118678f1e984612421076152c216e6d521c27d199",
+   "bytes": 3562,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-SWAMP-TROLL.txt",
+   "sha256": "8e04828c8414cf957acfa900bc652bdf1a9521deebb7442f0ee52cc802cd69c9",
+   "bytes": 3512,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-THE-ANCIENT-VOID-DRAGON.txt",
+   "sha256": "2da0e635702ab3a830c2fed6a26f26c5cc30ace72dbd8f215e92254f3db6131e",
+   "bytes": 4106,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE.txt",
+   "sha256": "41ac12e54b66e02ae4879c4a86664ac18df0753b15f950cac41354fa6ad22dc9",
+   "bytes": 4064,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-THE-BROODMOTHER-PRIME.txt",
+   "sha256": "deab63a4d00948281ff712f615d205bb525cf5d95424889bf72cff4ee0b138d9",
+   "bytes": 4026,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-THE-FROST-BAILIFF-MAGISTRATE.txt",
+   "sha256": "1d919ad0a367e2814cdeff2e873d4a9060159cf07b1bab9a917365d304166403",
+   "bytes": 4095,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS.txt",
+   "sha256": "15ff3da5a281536d293421d4de232f734bb126be33fe186c4a121ff6ebc14e74",
+   "bytes": 4168,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-THE-LAST-COLOSSUS.txt",
+   "sha256": "0325ccccaeb97dfd0ada98ffdef261614405c919f41f1c60f7cca8e1021592cc",
+   "bytes": 4159,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-THE-SUN-CROWNED-PRINCE.txt",
+   "sha256": "6bf7b61f6f54bc02b676a8ac9db4f4aa3265273273682d8cc5e02e75a19dfcc1",
+   "bytes": 4159,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-THE-VOICE-BENEATH-THE-BELLS.txt",
+   "sha256": "c61130129b35d1052f66a634614d3eab80911500ec25d5f92d57c70bda7fa78f",
+   "bytes": 3930,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-THOUGHT-EATER.txt",
+   "sha256": "3ba5828a9e8a5306b8c2d2dbdb987fd6f6638407c6faf30b06a0ca2947957bc3",
+   "bytes": 3514,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-TOMB-GUARDIAN.txt",
+   "sha256": "98f4987ed76131932d0d58c898e6f2c3495df8a54bd3fe23a46a1e6aebe3b22a",
+   "bytes": 3461,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-TOMB-NECROMANCER.txt",
+   "sha256": "e6261cc187f628156d06923f3347470ae206214723052866223b0b3c075c70f8",
+   "bytes": 3594,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-TROGLODYTE-SHAMAN.txt",
+   "sha256": "a47d51425ab6596c49d1b32c1d32b297d8d2b3b6b34b3ea9c47ad6c8e1cdf442",
+   "bytes": 3489,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-TROGLODYTE.txt",
+   "sha256": "502e4efcad8e03d30c2d5e968fd9388d4e259eeeba7857a6cc31474669065eff",
+   "bytes": 3574,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-TUNDRA-WOLF.txt",
+   "sha256": "d45f7c5c50a05072d5ddc1bf1f59749f2c1b84f3cab704a0c9e786c8c9bb9096",
+   "bytes": 3450,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-UNDEAD-CROSSBOWMAN.txt",
+   "sha256": "bb7892b42f6dfee1a436e388dccae3bae04e9a1316c50ee421da8fbc81ad19b7",
+   "bytes": 3511,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-UNDEAD-SENTINEL.txt",
+   "sha256": "074588f34d64203fbb7fcd12def5c40369a268a9438ec2e1dcf2eefb09f46830",
+   "bytes": 3544,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-UNDEAD-WARRIOR.txt",
+   "sha256": "5bf62a4a342760ec07bff572f24560d691d4fb383b11d9de6feebafaace7d346",
+   "bytes": 3549,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-VAULT-OOZE.txt",
+   "sha256": "824616286927eafaaa7491e1cb67f60b0f92afdd5436658051a7c2155e7b6afa",
+   "bytes": 3609,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-VAULTFANG.txt",
+   "sha256": "030b1e2f404c59cc63a2308b683a8d3bed6872175f789cd0d725bec5852cb3c7",
+   "bytes": 3666,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-VISATH-THE-WHITE.txt",
+   "sha256": "1e75091a3c0c613c5535ff533f17a2fb37eb87eaf0c283b0f4dc96ed9af465a5",
+   "bytes": 3794,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL.txt",
+   "sha256": "887a583b215f57998bbcd3838ccc57c696c6043605f82c50012130f5272ad4f9",
+   "bytes": 3866,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-VRYMK.txt",
+   "sha256": "bd2ff80163e2aba4714b548a6203acf2fc8b9d4bb90e37e735444f68691ba4a1",
+   "bytes": 3634,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-WEREBEAR.txt",
+   "sha256": "40e33738fde83108c13afdfb2ed820648d74045c9c0b2ab5a24c5e05f0e35bcb",
+   "bytes": 3541,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-WERERAT.txt",
+   "sha256": "abe2767dc82eae6c0cfff7dcabe0c85301913967d10a0115de8789f8bf911998",
+   "bytes": 3484,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-WEREWOLF.txt",
+   "sha256": "5ab769625c0d7a8df4aef9b8cc8b9f5140129dd91d83c43b31058c6e7ce38f33",
+   "bytes": 3460,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-ARCHER.txt",
+   "sha256": "5e428fd20faa6cc0fdda0f0ff13c3c895c364f06959c817a081ab567e43ddba6",
+   "bytes": 3424,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-EXECUTIONER.txt",
+   "sha256": "0c8f3b203f594b1c68fb5fa85d277b1bbb6db6b06c34554f7ba270097c86b12b",
+   "bytes": 3452,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-GUARD.txt",
+   "sha256": "a854079e7fde7f3945daa99498b96a0540faf877018e42c71c0f643103950e35",
+   "bytes": 3711,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-SENTINEL.txt",
+   "sha256": "312f1dde61941b35ba1fd0c6f51ad1dcca5a5e3bd41c03e21a33b22589a05d54",
+   "bytes": 3569,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-WHITE-DRAGON.txt",
+   "sha256": "c02ac2a61ff407acc8f9dbea6c8d79e2af28dba6d2775245c7b3667b370fc66e",
+   "bytes": 3579,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-WILL-O-WISP.txt",
+   "sha256": "4c61f55c183740dd02f3d9906b6de5b245c6b436febee13633c9304f3162b09a",
+   "bytes": 3491,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-WIND-ELEMENTAL.txt",
+   "sha256": "7ad4b4fec3cc769326c5186acbd8e7acf94adcbb86efed4e40b86d45cd77df43",
+   "bytes": 3627,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-ZOMBIE.txt",
+   "sha256": "ced8642c7ec729e6a03fcc14fe2e3777482acb3c0dc7954404968380a408988f",
+   "bytes": 3406,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI.txt",
+   "sha256": "21c2c8a380912caa0cb1a15c2577ad1748cc478c6b0d26010b302850efa9303d",
+   "bytes": 3922,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST.txt",
+   "sha256": "0d7ec7326619b37cacb419b1de7e8031f64313310be354b7c4f332cd073ccd6e",
+   "bytes": 4381,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS.txt",
+   "sha256": "cc2f208d9d9f98ee8fb2650fc521d4be3b7c63eebbc9ea74e1ea8a5f925cff33",
+   "bytes": 3945,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST.txt",
+   "sha256": "84018d34cfaadd850feb846cd99b68d3171366cd00c285c059e37e0915ee5700",
+   "bytes": 3993,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY.txt",
+   "sha256": "fa61f22d7d2e4b867a6bca12d8c2eb9b0e01296aabce7c72d437d2e6bff6e191",
+   "bytes": 4151,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS.txt",
+   "sha256": "deab25eeb5e8c56bcf37a6cf10f9bb48ce098a359f0d2e35957b0f86db2bfad2",
+   "bytes": 3845,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT.txt",
+   "sha256": "732ade9b855650cdcb25a3a7d365405f0126c946697629745e5c06f2bb5108e3",
+   "bytes": 4438,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA.txt",
+   "sha256": "fdef627625a015ab848c27930b2f4529c29efc73737d1e241b239f5c9c5924f1",
+   "bytes": 4001,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-CHASM-CROSSING.txt",
+   "sha256": "5b035d5f74f127ca56cfd597b056f0d582f7a399f0bf2d7f8de8c9347efffd5d",
+   "bytes": 3933,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE.txt",
+   "sha256": "3671daf60951fd7e4a9fb81efd7cd5c5100bdfc42bd8913f74215fe6659581e6",
+   "bytes": 3929,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST.txt",
+   "sha256": "0fbb96a73007f5f1231a7bf556f59090384e84cd4280e9a19adb6741b0d2cf1a",
+   "bytes": 4209,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER.txt",
+   "sha256": "a4014d0156a94b5fe8505bbbf819a53ceba1a17fd418bb56ad139d215da4a5d5",
+   "bytes": 4376,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE.txt",
+   "sha256": "6d2c775a31dd929dbe1c5548dafd70924c7b1e1220cb2d35cd4e8d1c4583a429",
+   "bytes": 4164,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL.txt",
+   "sha256": "80ca86b1e651b9470b5170c4607ea78b29e2408caec42f3a47005e8540052141",
+   "bytes": 4283,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM.txt",
+   "sha256": "f23695ae704087a99804a5b7330aea8f4480a1f19a89d6e24b5cb9b9ef7eddbd",
+   "bytes": 3834,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN.txt",
+   "sha256": "cbbafabd352ec0865a7cfb712b731589923bc380efef060f0b6177cf9064239b",
+   "bytes": 3985,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-QUAKE.txt",
+   "sha256": "51b6cc64f85292419602e35677d49d872bb5b17d065fecabbe388325a6a8c7d4",
+   "bytes": 3861,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME.txt",
+   "sha256": "9a0fcaf0884429199c8331186e288133af27244748dbd0850e6a285cce5f4c02",
+   "bytes": 4050,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS.txt",
+   "sha256": "1edd2eaad5ff4851a8e1418bf84bc032ae6bf0ef426a9239e12569f2696a4d77",
+   "bytes": 3847,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD.txt",
+   "sha256": "bad332ebed38cf28d3f15e6ae74bedc9f2fefd717468c7d5a9539778584baf23",
+   "bytes": 3996,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE.txt",
+   "sha256": "6bfbf2d7e2feb771730de31bf679e9f0dcfb2238836da707dcd482841028dd3d",
+   "bytes": 4111,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR.txt",
+   "sha256": "4cdb87389619693028d5e3bcf8ba4e62b33701e0a80d69733a2f530ad2ee7415",
+   "bytes": 3724,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE.txt",
+   "sha256": "5744f9f71db308b6b07d736b0e6e23dd63a4782f221e7e5e289fda39ff2bd7fc",
+   "bytes": 4119,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE.txt",
+   "sha256": "67eed0dd005436f33dce19619608d92820050385e3e95798704e6514b87f63b4",
+   "bytes": 4124,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID.txt",
+   "sha256": "553c54adfb2fb5f59d1b92697903e3a303fc812bcba6e916f8a407049cb0735b",
+   "bytes": 3952,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING.txt",
+   "sha256": "f8166bff406257c87a3a92ac3d9dfc94c788fc1a786cfb2903e9be72863a2763",
+   "bytes": 4060,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY.txt",
+   "sha256": "362ac37541db8967a6a1ef221239889d2d66e3a6ea00373925ab0665b8930ae0",
+   "bytes": 4505,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA.txt",
+   "sha256": "872d5212d7f1ec619faf960d93b39823c308dec53c40d67d2089655ea4528675",
+   "bytes": 3796,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD.txt",
+   "sha256": "0cc78436495b74f6b058a0d7ee11b92c8dccd26f6a0ba03fff394993b8319354",
+   "bytes": 3919,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT.txt",
+   "sha256": "f9b66e3de3dd0612ebb7eeb38ba1b19bc41cccf2bceaeddd9f0d8349956c01e0",
+   "bytes": 3984,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE.txt",
+   "sha256": "8c98bfdabbd4b97fd7d7c0e433a6fcc6fab4e8ac8cee25c5201b8090f0741285",
+   "bytes": 3945,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH.txt",
+   "sha256": "5af6f579e6c2c0d34ce00679a1c120242623e567934369433be94029a15ea580",
+   "bytes": 4123,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR.txt",
+   "sha256": "99bd98ca12dc7c3b85e65f639786776b41ebc09bb4e5626220118cf935411b6d",
+   "bytes": 3905,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT.txt",
+   "sha256": "b9173ae7e3d95d42c7d59d66196c90ec3d3f5ce34cb5a3efd39d7eb94f79111a",
+   "bytes": 4022,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT.txt",
+   "sha256": "6d523f06cc2143294f128c0af5ef11c2e83d1f2811d434b5edf74d4bf78dafdc",
+   "bytes": 4170,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING.txt",
+   "sha256": "92c9070e95d03869a0de6860496119c647c660cc74e4897ec53207786f6e744e",
+   "bytes": 4008,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD.txt",
+   "sha256": "7d9b913c017ca57b6c5b58432285439c5fd14631c794674ee533e49dd966eea4",
+   "bytes": 3897,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-1-ARCANE-SPELLS-D20.txt",
+   "sha256": "ca563778840bc41adc9cd8d03aa7d865d10038750759b7e304caa79e8f0c73d9",
+   "bytes": 3725,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-1-DIVINE-PRAYERS-D20.txt",
+   "sha256": "0dd532b2addfb2afca446102efb943fc816aeac85c8a31fd236c5accf5de5996",
+   "bytes": 3479,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-1-DRUIDIC-RITUALS-D20.txt",
+   "sha256": "43e9695dcf9668fe64627d469ce284fabb3c63ca2005035d8dd7e009ae03f0f6",
+   "bytes": 3524,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20.txt",
+   "sha256": "df89c383a56694e6eed4f6338dd31da5a9de8554438896981095f6780f43594c",
+   "bytes": 3477,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-1-SORCERIES-D20.txt",
+   "sha256": "b10adc11eef9e57f4ab1fe64b407e711c3b6493da097fdb81fadf26925c9bb4a",
+   "bytes": 3361,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-2-ARCANE-SPELLS-D20.txt",
+   "sha256": "0c92c66cae1b63098a0706070621e0cc7f2f09bca8228775a12ee03d68b3aa19",
+   "bytes": 3799,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-2-DIVINE-PRAYERS-D20.txt",
+   "sha256": "07d22bd2600f6c9867fe32b16167236af44cd3956f24f00c26f974afb9f9c3b8",
+   "bytes": 3666,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-2-DRUIDIC-RITUALS-D20.txt",
+   "sha256": "f12d2745afb189d80f041df0f2cd29266ca202b14bc54b25327a57570182fa6e",
+   "bytes": 3510,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20.txt",
+   "sha256": "2ce9288d319f341c60999b04ddc8071d23210d154642992ae23e3e91896c9aa9",
+   "bytes": 3532,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-2-SORCERIES-D20.txt",
+   "sha256": "f01af7fb21a36112904e94d0acc9fbf8bad3944ad203560bd145f9e92897e1bb",
+   "bytes": 3489,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-3-ARCANE-SPELLS-D20.txt",
+   "sha256": "5082f54495542e4ea73735a66eb4934257207766ad04ee67c3ae87d429c2f90f",
+   "bytes": 3695,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-3-DIVINE-PRAYERS-D20.txt",
+   "sha256": "d2cc601a3ff763e7082a5fcdfcbee0003dfe8b022d4b85dc8d9ee186627ef512",
+   "bytes": 3621,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-3-DRUIDIC-RITUALS-D20.txt",
+   "sha256": "ab66d307981469f1875c332ace84a29308dc5f46558ac2c12e28112d26aa2637",
+   "bytes": 3509,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20.txt",
+   "sha256": "cdf24a945ab9fb903edb146121d247850c5ce2af77b88679f24df0ef6727bc93",
+   "bytes": 3598,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-TRA-TIER-3-SORCERIES-D20.txt",
+   "sha256": "b20821d825f81903eb270f45eb3f540ec1b057629005e340444a10f946951d0e",
+   "bytes": 3603,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-WOR-1-2-THE-GRIM-WORLD.txt",
+   "sha256": "d6ce2a7ef6365dee802850aeb0f57e5fa468fa26640a8033128699a86426fe26",
+   "bytes": 4140,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-1-THE-FALL.txt",
+   "sha256": "193a2fdd00b4bb5783a320ac82cfaada70e0ba1d3d44fef6463c7a336a8b8581",
+   "bytes": 3674,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN.txt",
+   "sha256": "b3e6ef5193680d9f59670230ada3143e44bbc8603b4e655e116bba149ed1307b",
+   "bytes": 4849,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-3-THE-SIX-BASTIONS.txt",
+   "sha256": "a104040c6253356118dca1bfe6360fcd72fbbfd2b2adccbadff7a315be221436",
+   "bytes": 4088,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS.txt",
+   "sha256": "eda865d5f4a97bf4cd5ec65c3384b1b0f432768b1fe034df20d2e4325dd5945c",
+   "bytes": 3575,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-5-MONSTROUS-THREATS.txt",
+   "sha256": "7952b5b6a43be4b58161656ef7f8501bee7435c053309b7866e0c720f3edbf2d",
+   "bytes": 3733,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD.txt",
+   "sha256": "47e4ce478e44d760a3d12fbd55f13c51cd7ce1fcd4dd2a741c4930ec8b232ded",
+   "bytes": 3674,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-WOR-1-3-7-LEGENDS-AND-ECHOES.txt",
+   "sha256": "9f86f6013d30da9478f839bcbe042f180d952ebf93f8909ce90a6510723eb69a",
+   "bytes": 3727,
+   "role": "prompt"
+  },
+  {
    "path": "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip",
-   "sha256": "d36253ae06207e1f1bb4848fbc94fde71f6075273e7e1bc43bdfe426f8ba0506",
-   "bytes": 5404010,
+   "sha256": "4f7115460664821ddeaedc12b27c92196296310c8a44257be7a12e3b39d86b71",
+   "bytes": 5407895,
    "role": "skill_zip"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/OPERATOR_CARD.md",
-   "sha256": "6b098948c26e84e7c157a95d29163bb1e0eef22dcb7f8772ba25ed4531aa0d19",
-   "bytes": 3807,
+   "sha256": "62476b92eafbbcd03749c22fcf6356fb679e3f55756c8f5af1721674300e7660",
+   "bytes": 3845,
    "role": "skill"
   },
   {
@@ -127,8 +5219,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/SKILL.md",
-   "sha256": "28fe42b42967fe2c96a4202b386bceae75d9302f2eb2f8526351ac9cc04fd8b5",
-   "bytes": 20694,
+   "sha256": "7a9d47ccf1e7e05792eecb26cd93d536a149c144980d6cd91280234a71594ab2",
+   "bytes": 20847,
    "role": "skill"
   },
   {
@@ -205,8 +5297,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py",
-   "sha256": "0573803bea0341a2829d6bf016c547a4460940a0aad2ea041375fa35d6f70297",
-   "bytes": 11537,
+   "sha256": "ca9269517ad4fbe73e57acc7587b27562db4bd7092bc863b9fb434df09aeb28d",
+   "bytes": 13273,
    "role": "skill"
   },
   {
@@ -217,8 +5309,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py",
-   "sha256": "2284ea14d8fd554b31bdd9a573ac2e42a16d592acb424268bfc9a3c95e5d9bfb",
-   "bytes": 56025,
+   "sha256": "b3071086813318a3be1ea2b8595547228b89845ffb2541acffbc8d8bbff384e6",
+   "bytes": 57740,
    "role": "skill"
   },
   {
@@ -240,6 +5332,12 @@
    "role": "skill"
   },
   {
+   "path": "production/art/skill/heraldry-classic-ink-art/tests/test_delivery_sync.py",
+   "sha256": "2c3f1821e8d16fc4007d163b9703793af8f1e2d726a89d2ade1a15f20e54cdf2",
+   "bytes": 5364,
+   "role": "skill"
+  },
+  {
    "path": "production/art/skill/heraldry-classic-ink-art/tests/test_offline_package.py",
    "sha256": "db3ecdf591cad44507467af0be386b8bd1cafdff780f620a08e549d085ca69fd",
    "bytes": 4907,
@@ -247,8 +5345,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/tests/test_v5_regression.py",
-   "sha256": "669fde7866a69a51b9eeec657402349f8d885ddfa964526efead0194e753af39",
-   "bytes": 11478,
+   "sha256": "d6848aa48b7b1dc5a07406c8ee2ab22e709c65fcef68a8f3fb4ccdccd81d85c9",
+   "bytes": 14779,
    "role": "skill"
   },
   {
