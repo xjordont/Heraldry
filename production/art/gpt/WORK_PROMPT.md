@@ -1,41 +1,19 @@
-# Standing ChatGPT Work prompt (Git route, no ZIP files)
+# Standing ChatGPT Work prompt
 
-The owner pastes the text below into ChatGPT Work to start every art session. It never changes between batches: Work pulls the current queue, prompts and references from GitHub, and pushes the images back. Claude Code publishes each new queue to `main`.
+The owner pastes this into ChatGPT Work to start an art session, with the current input package attached (`production/art/work/Heraldry_Work_Input_<phase>.zip`, or the artifact from the `Export Work calibration inputs` workflow).
 
-One-time setup (owner): create a fine-grained GitHub token. In GitHub, go to Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token and choose:
-
-- **Repository access:** Only select repositories → `xjordont/Heraldry`
-- **Permissions:** Contents: Read and write (Metadata: Read is added automatically). Nothing else.
-- **Expiration:** 30 days. Revoke it whenever art work pauses.
-
-Give the token to Work once per session, as the prompt asks. It ends up in that Work conversation's history, which is why it is limited to this one repository's contents and expires.
-
----
+**No credentials ever go into a Work conversation.** An earlier draft (2026-10-11) had Work clone and push with a GitHub token. ChatGPT refused it and flagged the pasted token as a leaked secret, and it was right to: a credential pasted into a third-party chat is exposed. That route is withdrawn. Use only what is below. If a token was ever pasted, revoke it.
 
 ```text
-Run the Heraldry art queue from GitHub (xjordont/Heraldry, branch main) using the heraldry-classic-ink-art v6 skill in the repository. No ZIP files: you clone, generate and push.
+Use the attached Heraldry Work input package. Our GitHub repo is the source of truth, but you don't need Git or any credentials: everything is inside this ZIP.
 
-SETUP (never print, echo or log the token)
-1. I will give you a GitHub token. Save it with Python to /mnt/data/.heraldry_token (file mode 600) and never display it.
-2. Run in the shell:
-   git config --global credential.helper '!f(){ echo username=x-access-token; echo "password=$(cat /mnt/data/.heraldry_token)"; }; f'
-   git config --global user.name "ChatGPT Work"; git config --global user.email "chatgpt-work@users.noreply.github.com"
-   cd /mnt/data && rm -rf heraldry
-   GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --sparse https://github.com/xjordont/Heraldry.git heraldry
-   cd heraldry && git sparse-checkout set production/art/gpt production/art/skill assets/art/style assets/art/incoming config && git lfs install --local --skip-smudge
-3. Read production/art/gpt/INSTRUCTIONS.md and production/art/skill/heraldry-classic-ink-art/SKILL.md, then follow them exactly, from /mnt/data/heraldry. Keep scratch files in /mnt/data/heraldry_scratch (set HERALDRY_SCRATCH=/mnt/data/heraldry_scratch on every helper command).
-4. Run work_preflight.py --repo . --require-installed, then heraldry_art.py doctor and status. Show me the output. If anything says BLOCKED, stop and report it word for word.
-
-SMOKE TEST
-5. Confirm that your image tool accepts every reference image an item lists and that the generated file is on disk where Python can read it. Only if all three are true, write /mnt/data/heraldry_scratch/smoke.json and rerun the preflight with --smoke-file. If not, stop and report it.
-
-GENERATE
-6. Use the GPT Image 2.5 Sunburst model if your image tool offers it, otherwise the default. Request the largest size offered at each item's aspect. Generate only what `status` says, in queue order, following the per-item loop in SKILL.md: show ID, the exact prompt, only the listed references, check, inspect beside the references at print size, the ten-point QA file, then save with --qa-file. Art direction: hand-inked, economy of line, open white paper, like the owner's samples; no hyper-detail or stippling.
-
-DELIVER
-7. When status asks for delivery (every 5 images, at the end of the queue, or at session end): run sheet --refs and the style audit, then delivery_guard.py audit --repo . and, only if it passes, delivery_guard.py ship --execute --repo . Report the commit SHA it prints.
-8. If the push is refused for any reason, run heraldry_art.py bundle with the sheet, style audit and smoke record as --evidence, give me the review ZIP as a downloadable file, and say plainly that nothing was pushed.
-
-STOP
-9. Stop when status says STOP (for the anchors phase, after delivering all five). Report each ID, the image model name, the pixel size produced, attempts used, QA failures or accepted flags, and the commit SHA or bundle. Nothing you deliver is approved: Claude Code reviews it.
+1. Unzip it into a new empty folder, /mnt/data/heraldry_work. Open START_HERE.md and follow it exactly, running every command from that folder. Never run git init, clone or pull.
+2. Run the offline preflight, then the helper's doctor and status. Show me the output. If anything is BLOCKED, stop and report it word for word.
+3. Smoke test: confirm you can attach every reference image an item lists, and that the generated image is saved as a real file Python can open. Only if all three are true, write /mnt/data/heraldry_work_scratch/smoke.json and rerun the preflight with --smoke-file. If you cannot attach every reference, stop and tell me.
+4. Image model: use GPT Image 2.5 Sunburst if your image tool offers it, otherwise the default. Tell me the exact image model name you used.
+5. Generate only what status says, in queue order. For each item: use the exact prompt from show ID; attach only its listed references; request the largest size you offer at the listed aspect; keep the native file unchanged; run check; inspect the image and print-size preview beside the references; complete the ten-point QA report with real evidence; then save with --qa-file. Art direction: hand-inked, confident contours, economy of line, hatching only for form and shadow, open white paper, like the owner samples. No hyper-detail, stippling or noisy texture. Retry only within each item's attempt limit.
+6. When all items are saved, make the contact sheet and style audit, then bundle with those as evidence.
+7. Give me the review ZIP (/mnt/data/Heraldry_Work_Review_<phase>.zip) as a downloadable file, with a short report: each ID, the image model name, the pixel size produced, attempts used, any QA failures or accepted flags, and the bundle SHA-256. State plainly that nothing was pushed and nothing is approved. Then stop. Do not start any other batch.
 ```
+
+Returning the review ZIP: upload it unchanged to `production/art/work/inbox/` on GitHub (Add file, Upload files), or attach it to Claude Code. The `Import Work review bundle` workflow verifies it, commits the images through LFS and runs the intake.
