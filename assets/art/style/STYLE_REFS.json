@@ -1,5 +1,5 @@
 {
- "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example.",
+ "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration.",
  "refs": [
   {
    "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
@@ -30,6 +30,18 @@
    ],
    "sha256": "d3834f414c62e8623c1c5f35afd6ed4da9edbaaf86e64ac4883763e92b7d61bf",
    "use": "generation style reference only; never placed in the book or packaged"
+  }
+ ],
+ "inspiration_only": [
+  {
+   "path": "assets/art/style/STYLE-INSPIRATION-map-dying-lands.png",
+   "source": "owner-supplied example, 2026-10-11 session (original bytes)",
+   "px": [
+    1536,
+    1024
+   ],
+   "sha256": "3e86b5f85c5bb06f84ac199d539231d55cb3fff6c373619f276401380fdf82e1",
+   "use": "hand-drawn line inspiration only. It carries lettering, so it is never attached to image generation (the art must contain no lettering), never placed and never packaged"
   }
  ]
 }

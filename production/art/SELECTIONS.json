@@ -6,7 +6,7 @@
   "route": "gpt",
   "spec_sha256": "06acc0f3570bd7c61ff5709d3ceeffb4140c46bc4312719aa5d268986dea7f25",
   "prompt_sha256": "625734f3e40043ae20bf802b17b6db96a2eed2215694e4917f7e33455e6c18de",
-  "status": "anchor-approved",
+  "status": "rejected",
   "received_at": "2026-10-11T02:56:44+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -31,7 +31,9 @@
    "max_print_w_in_300ppi": 5.11
   },
   "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "anchor-approved_at": "2026-10-11T02:57:18+00:00"
+  "anchor-approved_at": "2026-10-11T02:57:18+00:00",
+  "rejected_at": "2026-10-11T03:42:11+00:00",
+  "rejected_reason": "Owner art direction 2026-10-11: too hyper-detailed and AI-like. Redraw a notch more hand-drawn: confident hand-inked contours, economy of line, hatching only for form and shadow, open white paper, no stipple fields or noisy texture; match the owner's style samples; largest size offered at the queue aspect."
  },
  "ART-BAS-GREYTHORN": {
   "family": "bastion",
@@ -73,7 +75,7 @@
   "route": "gpt",
   "spec_sha256": "2f92a29ce28708e821d5ee92d8db216e17722f58c4632c5d65be7465c3d011ab",
   "prompt_sha256": "eb609e96f6a1bc2b337415ae6244c1acf1b858b34ce9b5c7623eff9c254f7571",
-  "status": "anchor-approved",
+  "status": "rejected",
   "received_at": "2026-10-11T02:56:42+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -98,7 +100,9 @@
    "max_print_w_in_300ppi": 2.79
   },
   "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "anchor-approved_at": "2026-10-11T02:57:18+00:00"
+  "anchor-approved_at": "2026-10-11T02:57:18+00:00",
+  "rejected_at": "2026-10-11T03:42:11+00:00",
+  "rejected_reason": "Owner art direction 2026-10-11: too hyper-detailed and AI-like. Redraw a notch more hand-drawn: confident hand-inked contours, economy of line, hatching only for form and shadow, open white paper, no stipple fields or noisy texture; match the owner's style samples; largest size offered at the queue aspect."
  },
  "ART-CLA-FIGHTER": {
   "family": "class",
@@ -107,7 +111,7 @@
   "route": "gpt",
   "spec_sha256": "99a5d97686f6ca5f3d39049228e21890ff3bb26547991bbc102038400bc0975b",
   "prompt_sha256": "659bf900ec0bf1cf2d59455dd676d4d0d4d9bee0b263343b98d743b021328baa",
-  "status": "anchor-approved",
+  "status": "rejected",
   "received_at": "2026-10-11T02:56:43+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -132,7 +136,9 @@
    "max_print_w_in_300ppi": 2.817
   },
   "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "anchor-approved_at": "2026-10-11T02:57:18+00:00"
+  "anchor-approved_at": "2026-10-11T02:57:18+00:00",
+  "rejected_at": "2026-10-11T03:42:11+00:00",
+  "rejected_reason": "Owner art direction 2026-10-11: too hyper-detailed and AI-like. Redraw a notch more hand-drawn: confident hand-inked contours, economy of line, hatching only for form and shadow, open white paper, no stipple fields or noisy texture; match the owner's style samples; largest size offered at the queue aspect."
  },
  "ART-MON-GIANT-TARANTULA": {
   "family": "monster",
@@ -141,7 +147,7 @@
   "route": "gpt",
   "spec_sha256": "452aefc200486cb2188fbb1faf55a2d582256d412b2f13f58afcfd9ce938a0c6",
   "prompt_sha256": "dec3c51a465b7b0bf7c0f31403fb86dc2dae39a592c6b6363ec2f04eac12f8bf",
-  "status": "anchor-approved",
+  "status": "rejected",
   "received_at": "2026-10-11T02:56:45+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -166,7 +172,9 @@
    "max_print_w_in_300ppi": 3.913
   },
   "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "anchor-approved_at": "2026-10-11T02:57:18+00:00"
+  "anchor-approved_at": "2026-10-11T02:57:18+00:00",
+  "rejected_at": "2026-10-11T03:42:11+00:00",
+  "rejected_reason": "Owner art direction 2026-10-11: too hyper-detailed and AI-like. Redraw a notch more hand-drawn: confident hand-inked contours, economy of line, hatching only for form and shadow, open white paper, no stipple fields or noisy texture; match the owner's style samples; largest size offered at the queue aspect."
  },
  "ART-MON-UNDEAD-CHAMPION": {
   "family": "monster",
@@ -175,7 +183,7 @@
   "route": "gpt",
   "spec_sha256": "6450423260b7218005c888a9dcbcd4ad11ca24b9528ffa2ca3b071913ec933e3",
   "prompt_sha256": "741d323781bea582ea37329ec5a544c0eb9dbb0c786b77866ecdcd8e3cfd88ca",
-  "status": "anchor-approved",
+  "status": "rejected",
   "received_at": "2026-10-11T02:56:45+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -200,6 +208,8 @@
    "max_print_w_in_300ppi": 2.78
   },
   "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "anchor-approved_at": "2026-10-11T02:57:18+00:00"
+  "anchor-approved_at": "2026-10-11T02:57:18+00:00",
+  "rejected_at": "2026-10-11T03:42:11+00:00",
+  "rejected_reason": "Owner art direction 2026-10-11: too hyper-detailed and AI-like. Redraw a notch more hand-drawn: confident hand-inked contours, economy of line, hatching only for form and shadow, open white paper, no stipple fields or noisy texture; match the owner's style samples; largest size offered at the queue aspect."
  }
 }

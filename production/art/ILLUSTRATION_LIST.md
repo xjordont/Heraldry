@@ -18,23 +18,23 @@ Every prompt has these sections, in order:
 
 The lines below are shared. Each entry lists only its own lines.
 
-**Introduction:** Create an exceptionally detailed black-and-white pen-and-ink illustration of {identity}, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+**Introduction:** Create a hand-inked black-and-white illustration of {identity}, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 
-**Format, scenes:** {aspect_words} composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing. The illustration must have a natural, irregular, hand-drawn white vignette around all four edges. The artwork gradually dissolves into blank ivory-white paper through increasingly sparse pen strokes, broken outlines, diminishing crosshatching, and scattered stippling. Leave approximately 5-8% clean white margin around the perimeter, with an additional organic transition zone. Avoid digital blur, artificial feathering, or hard rectangular cropping. Preserve crisp detail and strong contrast throughout the central composition.
+**Format, scenes:** {aspect_words} composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing. The illustration must have a natural, irregular, hand-drawn white vignette around all four edges. The artwork gradually dissolves into blank ivory-white paper through increasingly sparse pen strokes, broken outlines and diminishing hatching. Leave approximately 5-8% clean white margin around the perimeter, with an additional organic transition zone. Avoid digital blur, artificial feathering, or hard rectangular cropping. Keep crisp line and strong contrast at the focal point.
 
-**Format, figures:** {aspect_words} composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing. A single subject drawn whole, isolated on blank ivory-white paper: only a small patch of ground beneath it and its cast shadow, which fade out in sparse strokes and stippling. No background scenery. Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
+**Format, figures:** {aspect_words} composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing. A single subject drawn whole, isolated on blank ivory-white paper: only a small patch of ground beneath it and its cast shadow, which fade out in a few sparse strokes. No background scenery. Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
 
-**Format, still lifes:** {aspect_words} composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing. A still-life arrangement isolated on blank ivory-white paper, resting on a small surface that fades out in sparse strokes and stippling. No figure and no background scenery. Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge.
+**Format, still lifes:** {aspect_words} composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing. A still-life arrangement isolated on blank ivory-white paper, resting on a small surface that fades out in a few sparse strokes. No figure and no background scenery. Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge.
 
-**Style, scenes:** Use exceptionally fine traditional pen-and-ink rendering, with varied line weights, intricate crosshatching, stippling, textured bark and timber grain, irregular stonework and carefully constructed architecture. Strong foreground contrast and progressively lighter distant detail create atmospheric depth. Maintain accurate perspective, believable construction and coherent geography. The world shows withered beauty: once-grand things rusted, cracked, overgrown or hollowed by age. The illustration must feel authentically hand-drawn rather than digitally rendered.
+**Style, scenes:** Draw it with confident hand-inked line: clean outlines of varied weight made with dip pen and brush, carrying the slight natural irregularity of a human hand. Build the picture from clearly drawn shapes, not surface texture. Use hatching and crosshatching selectively, only to model form and shadow, and keep generous areas of open white paper; let distance thin to simple, lighter outline. Put detail where the eye should land and suggest the rest with a few telling strokes. No stipple fields, no noise-like texture, no tonal haze, no over-rendered surfaces. Accurate perspective, believable construction and coherent geography; the world shows withered beauty: once-grand things rusted, cracked, overgrown or hollowed by age. It must look drawn by hand, not generated or rendered.
 
-**Style, figures and still lifes:** Use fine traditional pen-and-ink rendering: a confident, slightly heavier outer contour, crisp interior lines, crosshatching that follows the form, sparse stippling, and a few deliberate solid-black shapes for the deepest shadows. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn and weathered. The illustration must feel authentically hand-drawn rather than digitally rendered.
+**Style, figures and still lifes:** Ink it like classic rulebook monster and character art: a bold, confident outer contour, clean interior lines, hatching only where form turns into shadow, and a few solid-black spot shapes for the deepest darks. Large areas stay open white paper. Simple, readable shapes over surface texture: no stippled skin, no noise, no over-rendered detail. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn and weathered. It must look drawn by hand with pen, brush and ink, not generated or rendered.
 
-**Final, scenes:** Avoid photorealism, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should be exceptionally detailed yet visually readable, with an organically fading white vignette suitable for seamless reproduction in a professionally printed fantasy rulebook.
+**Final, scenes:** Avoid photorealism, digital-render polish, hyper-detail, uniform texture everywhere, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should read cleanly and print crisply, with an organically fading white vignette, like original ink art in a professionally printed fantasy rulebook.
 
-**Final, figures and still lifes:** Avoid photorealism, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be detailed yet clean and readable at small size, suitable for seamless reproduction in a professionally printed fantasy rulebook.
+**Final, figures and still lifes:** Avoid photorealism, digital-render polish, hyper-detail, stippled or noisy texture, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be clean, bold and readable at small size, like original ink art in a professionally printed fantasy rulebook.
 
-**References:** If style reference images are attached, match their line weight, hatching density, contrast and finish exactly, but do not copy their subjects or compositions.
+**References:** The attached reference images are hand-inked art by human illustrators. Match their line quality, economy of line, hatching density, amount of open white paper and finish, but do not copy their subjects or compositions.
 
 ## Cover (1)
 
@@ -46,7 +46,7 @@ Printed 4.8 in wide · aspect 3:2. Family framing: Cinematic establishing scene 
 
 ```text
 FRONT COVER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Recommended First Party of Heraldry Skirmish (Human Fighter, Elf Ranger, Dwarf Cleric, Halfling Rogue), four Heroes on an expedition into the monster-haunted ruins of the Dying Lands while a rival party works the same ground, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Recommended First Party of Heraldry Skirmish (Human Fighter, Elf Ranger, Dwarf Cleric, Halfling Rogue), four Heroes on an expedition into the monster-haunted ruins of the Dying Lands while a rival party works the same ground, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A four-Hero adventuring party — Human Fighter, Elf Ranger, Dwarf Cleric, Halfling Rogue — advancing through a rain-soaked ruined shrine; a rival party's banner across the ruin; a Monster silhouette in the treeline.
 Low three-quarter view; party small in the lower third; broken shrine arch as frame; open sky upper half reserved for typeset title.
@@ -82,7 +82,7 @@ Printed 4.5 in wide · aspect 3:2. Family framing: Wide establishing scene with 
 
 ```text
 CHAPTER 1 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Dying Lands as a whole, seen from a broken mountain pass: forest on one flank, frozen peaks on the other, and the dead empire's ruined cities sprawled on the eastern horizon, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Dying Lands as a whole, seen from a broken mountain pass: forest on one flank, frozen peaks on the other, and the dead empire's ruined cities sprawled on the eastern horizon, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 The Dying Lands seen from a broken mountain pass: a cracked imperial road winding down toward the skeletal towers of a dead city on the horizon, forest to one side and frozen peaks to the other; a small party with a banner pauses on the road in the foreground.
 Wide vista; party small at lower left; road leads the eye to the distant dead city.
@@ -112,7 +112,7 @@ Do not draw:
 
 ```text
 CHAPTER 2 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Two rival adventuring parties of the Dying Lands meeting in a monster-haunted ruin, each fighting for the same objective in a PvPvE skirmish, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Two rival adventuring parties of the Dying Lands meeting in a monster-haunted ruin, each fighting for the same objective in a PvPvE skirmish, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Two rival adventuring parties sighting each other across a fog-filled valley of ruined walls at first light, each crouched behind cover with weapons ready, a monster's silhouette moving in the mist between them.
 Wide shot; one party at lower left, the other small at far right; fog band across the middle.
@@ -142,7 +142,7 @@ Do not draw:
 
 ```text
 CHAPTER 3 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the turn structure of Heraldry Skirmish, the start of a new round of activations, imagined as the dawn of a new round in the field, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the turn structure of Heraldry Skirmish, the start of a new round of activations, imagined as the dawn of a new round in the field, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Dawn of a new round: a weary party gathering behind a ruined wall as a lone chapel bell tower stands over a drowned field.
 Wide shot, low horizon, bell tower silhouette at right.
@@ -172,7 +172,7 @@ Do not draw:
 
 ```text
 CHAPTER 4 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the movement chapter of Heraldry Skirmish, imagined as an expedition crossing a ruined imperial aqueduct over a gorge, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the movement chapter of Heraldry Skirmish, imagined as an expedition crossing a ruined imperial aqueduct over a gorge, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A party crossing the broken spans of a collapsed aqueduct: one climbs a rope, one leaps a gap, one braces to catch, the gorge falling away below.
 Strong diagonal of the broken aqueduct; figures mid-motion; deep drop beneath.
@@ -204,7 +204,7 @@ Do not draw:
 
 ```text
 CHAPTER 5 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the reaction and melee rules of Heraldry Skirmish, imagined as a desperate fight against undead soldiers of the Ashlands, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the reaction and melee rules of Heraldry Skirmish, imagined as a desperate fight against undead soldiers of the Ashlands, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A desperate melee on a narrow stone bridge: adventurers locked shield-to-shield against a press of undead soldiers, one hero falling back wounded, the river far below.
 Bridge seen from a low three-quarter angle; the clash at centre; ranks of undead receding into fog.
@@ -235,7 +235,7 @@ Do not draw:
 
 ```text
 CHAPTER 6 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Party creation and the Town Phase, imagined as a crowded hiring hall in a Bastion where adventurers bargain over contracts, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Party creation and the Town Phase, imagined as a crowded hiring hall in a Bastion where adventurers bargain over contracts, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A crowded hiring hall inside a Bastion: adventurers of many ancestries (dwarf, elf, ratkin, orc, halfling, human) bargaining over a contract nailed to a post beneath captured banners, a clerk with a ledger and coin scales.
 Interior wide shot; contract post at the focal centre; figures grouped around it.
@@ -268,7 +268,7 @@ Do not draw:
 
 ```text
 CHAPTER 7 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the equipment chapter, imagined as a Deepwarden forge cut into the rock, the best forges in the surviving world, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the equipment chapter, imagined as a Deepwarden forge cut into the rock, the best forges in the surviving world, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A Deepwarden forge cut into the rock: a smith quenching a glowing blade in a trough as steam rises, finished mail, helms and axes on racks, an apprentice working the bellows.
 Interior; smith at the focal centre; racks framing both sides.
@@ -299,7 +299,7 @@ Do not draw:
 
 ```text
 CHAPTER 8 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the magic chapter, imagined as a lone caster in the burned shell of an academy library, the arcane inheritance of broken empires, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the magic chapter, imagined as a lone caster in the burned shell of an academy library, the arcane inheritance of broken empires, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A lone caster standing in the burned shell of an academy library at night, pages and embers swirling upward around them as a ring of force flares from an outstretched hand.
 Tall broken shelves framing the figure; swirl of pages around the focal point.
@@ -329,7 +329,7 @@ Do not draw:
 
 ```text
 CHAPTER 9 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Bestiary chapter, imagined as the aftermath of a hunt at the edge of the Greenmark, with a slain beast too large to drag home, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Bestiary chapter, imagined as the aftermath of a hunt at the edge of the Greenmark, with a slain beast too large to drag home, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 The aftermath of a hunt at the forest's edge: a party standing over a slain beast too large to drag home, crows gathering on the carcass, eyes glinting in the treeline behind.
 Carcass across the foreground; party in the middle ground; treeline dark behind.
@@ -359,7 +359,7 @@ Do not draw:
 
 ```text
 CHAPTER 10 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Scenarios chapter, imagined as a party at a ruined crossroads choosing which of the six climates to enter, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Scenarios chapter, imagined as a party at a ruined crossroads choosing which of the six climates to enter, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A party at a ruined crossroads reading a weathered, carved waystone; six roads lead away, toward forest, ruined city, mountain caves, ice, desert and fen on the horizon.
 Waystone at centre; roads fanning out; six distant landscapes along the horizon.
@@ -388,7 +388,7 @@ Do not draw:
 
 ```text
 CHAPTER 11 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Campaign chapter, imagined as a battered party returning to its Stronghold at dusk after an expedition, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Campaign chapter, imagined as a battered party returning to its Stronghold at dusk after an expedition, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A battered party returning at dusk by fen-lantern light, carrying their wounded on a litter toward their stronghold's palisade gate, watchers on the wall above.
 Gate at right; procession along a muddy track from the left; lanterns as focal points.
@@ -423,7 +423,7 @@ Printed 3.3 in wide · aspect 3:2. Family framing: Small establishing scene that
 
 ```text
 1.2 THE GRIM WORLD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Grim World: kings, bishops and warlords raise banners over land they can barely hold, and peasants bear the cost, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Grim World: kings, bishops and warlords raise banners over land they can barely hold, and peasants bear the cost, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Mid-distance view of a burnt farmstead yard with two warlords' banners planted on opposite sides; the tax cart and armed men fill the yard while a peasant family flees down a lane to one side.
 SUBJECT DETAILS
@@ -455,7 +455,7 @@ Do not draw:
 
 ```text
 1.3.1 THE FALL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Fall, the unexplained end of the old empire: no one agrees what caused it, but the ruins of imperial power litter the land, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Fall, the unexplained end of the old empire: no one agrees what caused it, but the ruins of imperial power litter the land, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 The colossal broken head of an imperial statue half-buried in a ploughed field fills the middle ground, with a farmer and ox tiny beside it.
 SUBJECT DETAILS
@@ -485,7 +485,7 @@ Do not draw:
 
 ```text
 1.3.2 THE SIX CLIMATES OF RUIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the shape of the Dying Lands: broken mountains down the spine, the dead empire in the east, the great forest in the west, ice in the north, dunes in the south and swamps in the south-east, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the shape of the Dying Lands: broken mountains down the spine, the dead empire in the east, the great forest in the west, ice in the north, dunes in the south and swamps in the south-east, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A sweeping panorama from the spine of the broken mountains with all six climates under one sky: forest to the west, dead city to the east, ice to the north, dunes to the south and drowned fen to the south-east, with dark cavern mouths in the mountainside below; a lone surveyor with a staff stands in the foreground.
 SUBJECT DETAILS
@@ -517,7 +517,7 @@ Do not draw:
 
 ```text
 1.3.3 THE SIX BASTIONS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the six Bastions survived the Fall by closing the gate while neighbours screamed outside, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the six Bastions survived the Fall by closing the gate while neighbours screamed outside, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A great Bastion gate grinding shut at dusk, seen from the outside looking in at a low angle; guards strain at the windlass within while desperate figures reach for the closing gap.
 SUBJECT DETAILS
@@ -549,7 +549,7 @@ Do not draw:
 
 ```text
 1.3.4 MAGIC IN THE DYING LANDS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Five Traditions of magic (Arcane, Divine, Druidic, Sorcery, Psychic) all survived the Fall, none intact, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Five Traditions of magic (Arcane, Divine, Druidic, Sorcery, Psychic) all survived the Fall, none intact, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on a cracked stone altar viewed at slight elevation; five damaged implements arranged in a rough arc, each broken in its own way.
 SUBJECT DETAILS
@@ -577,7 +577,7 @@ Do not draw:
 
 ```text
 1.3.5 MONSTROUS THREATS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Monsters hold the Dying Lands now; they close roads, empty fields and set up their own banners, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Monsters hold the Dying Lands now; they close roads, empty fields and set up their own banners, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 An abandoned village street seen from one end in perspective, the market cross at the centre carrying a crude monster banner.
 SUBJECT DETAILS
@@ -605,7 +605,7 @@ Do not draw:
 
 ```text
 1.3.6 ADVENTURERS AND THE ROAD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Adventurers exist because the Bastions need work done beyond the reach of soldiers; a party of four takes contracts through the gate, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Adventurers exist because the Bastions need work done beyond the reach of soldiers; a party of four takes contracts through the gate, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A small party of four walks out of a Bastion's postern gate along a muddy road, seen from behind, past a gibbet and a weathered warning post, toward a dark forest edge.
 SUBJECT DETAILS
@@ -636,7 +636,7 @@ Do not draw:
 
 ```text
 1.3.7 LEGENDS AND ECHOES - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Dying Lands remember: old battles and legends replay as echoes over the living ground, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Dying Lands remember: old battles and legends replay as echoes over the living ground, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A barrow field at dusk with low burial mounds in a wide meadow; faint ghostly warriors of an ancient battle re-enact their last charge through the grass, drawn only in sparse fine lines against solid living landscape.
 SUBJECT DETAILS
@@ -671,7 +671,7 @@ Printed 3.3 in wide · aspect 3:2. Family framing: Landscape that captures the c
 
 ```text
 THE GREENMARK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Greenmark, the great temperate forest of the surviving world, larger than the maps, where roots take roads and the forest does not recognize human law, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Greenmark, the great temperate forest of the surviving world, larger than the maps, where roots take roads and the forest does not recognize human law, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A forest road at ground level in deep woods, roots lifting the paving, trees seeming to lean in; a moss-warm grove circle opens in the middle distance.
 SUBJECT DETAILS
@@ -699,7 +699,7 @@ Do not draw:
 
 ```text
 THE ASHLANDS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ashlands, the cities of the old empires after fire, law and death finished with them, where the city still knows how to count, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Ashlands, the cities of the old empires after fire, law and death finished with them, where the city still knows how to count, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Street-level one-point perspective down a soot-black avenue between collapsed forums and leaning temples, with a lit shrine lamp in the near corner.
 SUBJECT DETAILS
@@ -729,7 +729,7 @@ Do not draw:
 
 ```text
 THE UNDERMARCHES - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Undermarches, the endless underworld beneath every foundation, deepest under the broken mountains, where deep elves keep their own law, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Undermarches, the endless underworld beneath every foundation, deepest under the broken mountains, where deep elves keep their own law, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A cutaway view: a mine shaft or cellar above breaking through into a smooth round tunnel no pick made; a small surveyor with a lantern and an inconsistent map stands at the join.
 SUBJECT DETAILS
@@ -759,7 +759,7 @@ Do not draw:
 
 ```text
 THE PALE CITY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Pale City, the ice-locked northern cities where winter has become government and Hearthhold sends parties north with oil and fire-charms, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Pale City, the ice-locked northern cities where winter has become government and Hearthhold sends parties north with oil and fire-charms, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 View from the northern road toward an ice-locked city gate frozen mid-closing, a small tribute cairn left at the road in the foreground.
 SUBJECT DETAILS
@@ -790,7 +790,7 @@ Do not draw:
 
 ```text
 THE SUN-DROWNED - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Sun-Drowned, the southern dunes that have climbed over the richest realms, dotted with tomb-cities, salt flats and unburied dead, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Sun-Drowned, the southern dunes that have climbed over the richest realms, dotted with tomb-cities, salt flats and unburied dead, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide shot across a dune sea toward tomb-cities breaking the horizon like teeth; a half-uncovered enthroned corpse in the foreground, salt flats glittering where a harbour stood.
 SUBJECT DETAILS
@@ -820,7 +820,7 @@ Do not draw:
 
 ```text
 THE MIRE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Mire, the southeastern swamps where rivers give out, where bogs swallowed roads and the dead drift below the walkways, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Mire, the southeastern swamps where rivers give out, where bogs swallowed roads and the dead drift below the walkways, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Water-level view along a plank walkway through a drowned village; mangroves grow through the roofs of stilt-houses, pale shapes drift beneath the surface.
 SUBJECT DETAILS
@@ -848,7 +848,7 @@ Do not draw:
 
 Printed 3.3 in wide · aspect 3:2. Family framing: The town or fortress seen from its approach road, with its defining feature unmistakable and tiny figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame.
 
-### 1. Greythorn ◐ ★
+### 1. Greythorn ✓ ★
 
 `ART-BAS-GREYTHORN`
 
@@ -909,7 +909,7 @@ The finished artwork should be exceptionally detailed yet visually readable, wit
 
 ```text
 SABLEKEEP - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Sablekeep, a fortified chapel-town built into the throat of a ruined imperial city where the Ashlands meet the eastern forest, ruled by the Sable Watch, which survives by burning, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Sablekeep, a fortified chapel-town built into the throat of a ruined imperial city where the Ashlands meet the eastern forest, ruled by the Sable Watch, which survives by burning, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 View from the straight imperial road looking up at the chapel-town climbing terraces in the throat of the ruined city; braziers burning at every gate, bridge and chapel window.
 SUBJECT DETAILS
@@ -940,7 +940,7 @@ Do not draw:
 
 ```text
 DEEPWARDEN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Deepwarden, a sealed mining city carved into the foothills of the broken mountains, which survived by closing its great gate and now lives in upper terraces above the Dark, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Deepwarden, a sealed mining city carved into the foothills of the broken mountains, which survived by closing its great gate and now lives in upper terraces above the Dark, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 View from the upper terraces down over the sealed great gate and into a black void below, the Dark; forge smoke rising behind and lantern lights dotted across the terraces.
 SUBJECT DETAILS
@@ -973,7 +973,7 @@ Do not draw:
 
 ```text
 HEARTHHOLD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Hearthhold, a walled town in the high north built around the Great Hearth that has burned unbroken since the Fall; the smallest, poorest and bravest Bastion, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Hearthhold, a walled town in the high north built around the Great Hearth that has burned unbroken since the Fall; the smallest, poorest and bravest Bastion, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Interior view across a snowy square toward the Great Hearth, a vast stone fire-pit and chimney with a side-chamber chapel; a ring of walls and training ground behind.
 SUBJECT DETAILS
@@ -1005,7 +1005,7 @@ Do not draw:
 
 ```text
 SALTSPIRE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Saltspire, a tower-city built around a deep sacred well at the centre of an oasis ringed by salt-pans and the bones of older cities; wealthy and hated, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Saltspire, a tower-city built around a deep sacred well at the centre of an oasis ringed by salt-pans and the bones of older cities; wealthy and hated, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Distant approach across salt-pans toward a cluster of tall towers around the oasis; caravans in the foreground, the sacred well-head at the heart.
 SUBJECT DETAILS
@@ -1037,7 +1037,7 @@ Do not draw:
 
 ```text
 REEDMARCH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Reedmarch, a stilt-town raised over log pilings on barges, ferry platforms and toll bridges; the only crossing far and wide, populated by ferrymen, smugglers, leech-tenders and corpse-haulers, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Reedmarch, a stilt-town raised over log pilings on barges, ferry platforms and toll bridges; the only crossing far and wide, populated by ferrymen, smugglers, leech-tenders and corpse-haulers, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Water-level view from a ferry at the toll bridge, looking at the stilt-town with its patchwork of platforms and barges; a barge hall repositioned in the middle.
 SUBJECT DETAILS
@@ -1073,7 +1073,7 @@ Printed 1.9 in wide · aspect 2:3. Family framing: Single full-length adventurer
 
 ```text
 HUMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Human adventurer, medium-sized, the plain short-lived 'striver' people who persist where steadier peoples fail, shown as a traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Human adventurer, medium-sized, the plain short-lived 'striver' people who persist where steadier peoples fail, shown as a traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view mid-stride on a short patch of rutted track, walking staff planted ahead, head turned back over the shoulder toward unseen pursuit.
 SUBJECT DETAILS
@@ -1100,7 +1100,7 @@ Do not draw:
 
 ```text
 HALFLING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Halfling adventurer, small-sized, hearth-and-hidden-roads folk who survive by staying unseen, shown as a capable traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Halfling adventurer, small-sized, hearth-and-hidden-roads folk who survive by staying unseen, shown as a capable traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view, crouched low on one knee, sling hand drawn back, eyes alert and wary.
 SUBJECT DETAILS
@@ -1130,7 +1130,7 @@ Do not draw:
 
 ```text
 DWARF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Dwarf adventurer, medium-sized but broad and heavy, from sealed stone halls and old craft traditions, shown as a hardened traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Dwarf adventurer, medium-sized but broad and heavy, from sealed stone halls and old craft traditions, shown as a hardened traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view, braced wide-stanced, lantern held forward in one hand with a round shield strapped on that forearm, handaxe ready in the other hand.
 SUBJECT DETAILS
@@ -1160,7 +1160,7 @@ Do not draw:
 
 ```text
 ELF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of an Elf adventurer, medium-sized, tall and lean, a graceful, long-memoried traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of an Elf adventurer, medium-sized, tall and lean, a graceful, long-memoried traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing at ease on a patch of leaf litter, longbow lowered in one hand, head tilted as if listening, one hand resting on the quiver.
 SUBJECT DETAILS
@@ -1188,7 +1188,7 @@ Do not draw:
 
 ```text
 GNOME - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Gnome adventurer, small-sized, a clever, precise tinkerer drawn to dangerous devices, shown as a traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Gnome adventurer, small-sized, a clever, precise tinkerer drawn to dangerous devices, shown as a traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view kneeling over a small trap mechanism lying on the ground, eyepiece lens flipped down, probing it with a thin tool while a small crossbow hangs ready on the back.
 SUBJECT DETAILS
@@ -1215,7 +1215,7 @@ Do not draw:
 
 ```text
 GOBLIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Goblin adventurer, small-sized, quick of hand and foot, shown as a hired hero in a Bastion's employ (an ally, not a raider), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Goblin adventurer, small-sized, quick of hand and foot, shown as a hired hero in a Bastion's employ (an ally, not a raider), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view creeping forward, lantern held out and low in one hand, short blade held back ready in the other, poised to dodge.
 SUBJECT DETAILS
@@ -1242,7 +1242,7 @@ Do not draw:
 
 ```text
 ORC - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of an Orc adventurer, medium-sized and very powerfully built, shown as a sworn hireling in a Bastion's service (not a raider), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of an Orc adventurer, medium-sized and very powerfully built, shown as a sworn hireling in a Bastion's service (not a raider), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing composed and squared at rest, one hand on the haft of a greataxe slung over the back, gaze steady into the distance.
 SUBJECT DETAILS
@@ -1269,7 +1269,7 @@ Do not draw:
 
 ```text
 RATKIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Ratkin adventurer, small-sized, quick and swarming folk of refuse heaps and warrens, shown as a hired hero in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Ratkin adventurer, small-sized, quick and swarming folk of refuse heaps and warrens, shown as a hired hero in a Bastion's service, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view hunkered low on its haunches, one hand cradling a scavenged tool, head tilted with nose and whiskers working.
 SUBJECT DETAILS
@@ -1296,7 +1296,7 @@ Do not draw:
 
 ```text
 DEEP ELF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Deep Elf adventurer, medium-sized, an outcast of the cruel night-bred branch of the elder blood who has come to the surface as a hireling, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Deep Elf adventurer, medium-sized, an outcast of the cruel night-bred branch of the elder blood who has come to the surface as a hireling, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view stepping forward into daylight, one hand raised against the glare under a deep hood, curved blade held low in the other.
 SUBJECT DETAILS
@@ -1323,7 +1323,7 @@ Do not draw:
 
 ```text
 DEMONBORN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Demonborn adventurer, medium-sized, of infernal-stained blood, shown as a plain-cloaked pilgrim traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Demonborn adventurer, medium-sized, of infernal-stained blood, shown as a plain-cloaked pilgrim traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing still, one hand half-raised as if about to knock, cloak parted to show a tail, face turned to the viewer.
 SUBJECT DETAILS
@@ -1351,7 +1351,7 @@ Do not draw:
 
 ```text
 DRAKEBLOOD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Drakeblood adventurer, medium-sized, carrying the remnant of an older dragon majesty in the blood, shown as a heavily cloaked traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Drakeblood adventurer, medium-sized, carrying the remnant of an older dragon majesty in the blood, shown as a heavily cloaked traveller in a Bastion's service, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view braced low in a gale, spear levelled forward, thick cloak whipped back to expose scaled hands and jaw.
 SUBJECT DETAILS
@@ -1383,7 +1383,7 @@ Printed 1.6 in wide · aspect 1:1. Family framing: A small still life of the too
 
 ```text
 FARMER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Farmer background: callused, stubborn labour from hard ground; starting kit Sickle and Bandages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Farmer background: callused, stubborn labour from hard ground; starting kit Sickle and Bandages, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on a weathered plank, three-quarter overhead view, a sickle laid diagonally across a bundle of cut wheat beside a wad of linen bandages.
 SUBJECT DETAILS
@@ -1410,7 +1410,7 @@ Do not draw:
 
 ```text
 NOMAD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Nomad background: a crosser of hard country; starting kit Scimitar, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Nomad background: a crosser of hard country; starting kit Scimitar, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life against a dry ground, a scimitar propped in a rolled hide tent bundle beside a travel waterskin, seen from slightly above.
 SUBJECT DETAILS
@@ -1437,7 +1437,7 @@ Do not draw:
 
 ```text
 SAILOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Sailor background: balance on wet planks; starting kit Rope, Shortsword, Buckler, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Sailor background: balance on wet planks; starting kit Rope, Shortsword, Buckler, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on a wet plank deck section, a coiled rope in the foreground with a shortsword and a round buckler leaning on a belaying pin rail.
 SUBJECT DETAILS
@@ -1464,7 +1464,7 @@ Do not draw:
 
 ```text
 SOLDIER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Soldier background: discipline in war; starting kit Spear, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Soldier background: discipline in war; starting kit Spear, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life, a tall spear leaning against a battered kit chest, a folded surcoat and a dented cap of iron hanging on the spear shaft.
 SUBJECT DETAILS
@@ -1491,7 +1491,7 @@ Do not draw:
 
 ```text
 SMUGGLER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Smuggler background: false bottoms and whispered routes; starting kit Dagger and Lockpicks, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Smuggler background: false bottoms and whispered routes; starting kit Dagger and Lockpicks, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life of a barrel with a false lid half-lifted, a dagger and a roll of lockpicks laid across it, seen at a low angle.
 SUBJECT DETAILS
@@ -1518,7 +1518,7 @@ Do not draw:
 
 ```text
 COURIER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Courier background: speed over broken roads; starting kit Shortbow, +1 SPD, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Courier background: speed over broken roads; starting kit Shortbow, +1 SPD, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life, a shortbow with an unstrung loop leaning against a satchel and a sealed scroll case, mud-spattered boots beside.
 SUBJECT DETAILS
@@ -1545,7 +1545,7 @@ Do not draw:
 
 ```text
 SCOUT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Scout background: reading ground, distance and silence; starting kit Shortbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Scout background: reading ground, distance and silence; starting kit Shortbow, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on moss and leaf litter, a shortbow laid across a small bundle of tracking sign: a snapped twig, a clay-cast animal print, and a folded cloak.
 SUBJECT DETAILS
@@ -1572,7 +1572,7 @@ Do not draw:
 
 ```text
 PERFORMER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Performer background: crowd-turning wit; starting kit 3 Throwing Knives, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Performer background: crowd-turning wit; starting kit 3 Throwing Knives, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on a small trestle stage edge, three throwing knives fanned beside a battered mask and a pair of jingling bells.
 SUBJECT DETAILS
@@ -1598,7 +1598,7 @@ Do not draw:
 
 ```text
 ARTISAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of an Artisan background: patient craft; starting kit Hammer, Masterwork item, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of an Artisan background: patient craft; starting kit Hammer, Masterwork item, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life of a workbench corner, a hammer resting on an anvil face beside a half-finished shield boss and a tray of fine files.
 SUBJECT DETAILS
@@ -1625,7 +1625,7 @@ Do not draw:
 
 ```text
 SCHOLAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Scholar background: knowledge in a dying world; starting kit Quarterstaff, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Scholar background: knowledge in a dying world; starting kit Quarterstaff, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life of a leaning quarterstaff against a heavy reading desk covered with stacked books, loose diagrams and a spectacle case.
 SUBJECT DETAILS
@@ -1652,7 +1652,7 @@ Do not draw:
 
 ```text
 APPRENTICE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of an Apprentice background: scraps of craft from a harsh master; starting kit is only 1c (non-Martial classes gain Max NRG, Martial ones gain scrolls), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of an Apprentice background: scraps of craft from a harsh master; starting kit is only 1c (non-Martial classes gain Max NRG, Martial ones gain scrolls), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life of a wooden stool with a master's oversized coat hung over it, a scorched practice post stump, a small candle and a single copied page.
 SUBJECT DETAILS
@@ -1679,7 +1679,7 @@ Do not draw:
 
 ```text
 ALCHEMIST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of an Alchemist background: fire, acid and tincture; starting kit 2 Acid (Phosphoric), 2 Healing Potions, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of an Alchemist background: fire, acid and tincture; starting kit 2 Acid (Phosphoric), 2 Healing Potions, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on a stained bench, two small stoppered healing flasks and two clay acid vials in a wooden rack, a mortar and a brass scale beside.
 SUBJECT DETAILS
@@ -1706,7 +1706,7 @@ Do not draw:
 
 ```text
 BELIEVER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Believer background: faith kept in a hard age; starting kit 3 Holy Water, Lantern, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Believer background: faith kept in a hard age; starting kit 3 Holy Water, Lantern, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on a stone shelf, a lit lantern stands beside three small stoppered vials of holy water; a worn prayer cord hangs from the lantern.
 SUBJECT DETAILS
@@ -1733,7 +1733,7 @@ Do not draw:
 
 ```text
 HERMIT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Hermit background: solitary silence; starting kit Quarterstaff, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Hermit background: solitary silence; starting kit Quarterstaff, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on a flat stone, a gnarled staff lying beside a tin cup and a bowl, a single stool and a cold fire ring.
 SUBJECT DETAILS
@@ -1759,7 +1759,7 @@ Do not draw:
 
 ```text
 CULTIST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Cultist background: service at a darker altar; starting kit Dagger, Torch, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Cultist background: service at a darker altar; starting kit Dagger, Torch, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on a stained stone altar slab, a dagger laid across a torch with a tattered hooded robe hanging over the edge, candle stubs and a bowl.
 SUBJECT DETAILS
@@ -1786,7 +1786,7 @@ Do not draw:
 
 ```text
 SHEPHERD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Shepherd background: watching helpless things; starting kit Sling, Quarterstaff, Bandages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Shepherd background: watching helpless things; starting kit Sling, Quarterstaff, Bandages, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life laid across a short length of fence rail: a sling with stones, a crook-topped quarterstaff and a roll of bandages beside a bell.
 SUBJECT DETAILS
@@ -1813,7 +1813,7 @@ Do not draw:
 
 ```text
 MERCHANT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Merchant background: value and leverage; starting kit Sickle, increased Luck, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Merchant background: value and leverage; starting kit Sickle, increased Luck, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on a counting table, a sickle laid by an open coin ledger, a balance scale holding coins and a locked strongbox beside it.
 SUBJECT DETAILS
@@ -1840,7 +1840,7 @@ Do not draw:
 
 ```text
 NOBLE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Noble background: banners, debts and inherited expectation; starting kit Rapier, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Noble background: banners, debts and inherited expectation; starting kit Rapier, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life of a rapier laid across a faded velvet cushion on a carved table, a dusty signet ring and a folded threadbare banner beside it.
 SUBJECT DETAILS
@@ -1866,7 +1866,7 @@ Do not draw:
 
 ```text
 PAUPER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Pauper background: hunger and want; starting kit Club, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Pauper background: hunger and want; starting kit Club, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on bare ground, a crude knobbed club leaning on a cracked clay bowl beside a heel of bread and a ragged blanket.
 SUBJECT DETAILS
@@ -1893,7 +1893,7 @@ Do not draw:
 
 ```text
 VAGABOND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Vagabond background: road to road with no roots; starting kit Bandages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Vagabond background: road to road with no roots; starting kit Bandages, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on a roadside milestone, a bundle on a stick, a roll of bandages and a dice cup perched beside a half-burned stub of candle.
 SUBJECT DETAILS
@@ -1924,7 +1924,7 @@ Printed 1.9 in wide · aspect 2:3. Family framing: Single full-length adventurer
 
 ```text
 FIGHTER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Fighter, Martial class: drilled, line-holding soldier of fortune; packages of Shortsword, Targe, Ring Shirt, Dagger, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Fighter, Martial class: drilled, line-holding soldier of fortune; packages of Shortsword, Targe, Ring Shirt, Dagger, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view braced low with a small round targe held forward, shortsword drawn back over the hip, taking an unseen charge.
 SUBJECT DETAILS
@@ -1952,7 +1952,7 @@ Do not draw:
 
 ```text
 BERSERKER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Berserker, Martial class: pain-numbed frenzied fighter; packages of Morningstar, Hide Cuirass, Handaxe, Club, Targe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Berserker, Martial class: pain-numbed frenzied fighter; packages of Morningstar, Hide Cuirass, Handaxe, Club, Targe, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view mid-leap charge, mouth open in a roar, morningstar raised high overhead in one hand and handaxe in the other.
 SUBJECT DETAILS
@@ -1980,7 +1980,7 @@ Do not draw:
 
 ```text
 ROGUE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Rogue, Martial class: scarcity-bred taker of chances; packages of Rapier, Daggers, Shortbow, Lockpicks, Smokestick, Caltrops, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Rogue, Martial class: scarcity-bred taker of chances; packages of Rapier, Daggers, Shortbow, Lockpicks, Smokestick, Caltrops, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view crouched over a small iron-bound strongbox, lockpicks working in its keyhole, head turned over the shoulder to watch, rapier hilt at the hip.
 SUBJECT DETAILS
@@ -2008,7 +2008,7 @@ Do not draw:
 
 ```text
 ASSASSIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of an Assassin, Martial class: patient killer who waits for certainty; packages of Shortbow, Dagger, Rapier, Basic Venom, Smokestick, Grappling Hook, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of an Assassin, Martial class: patient killer who waits for certainty; packages of Shortbow, Dagger, Rapier, Basic Venom, Smokestick, Grappling Hook, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing very still in a half crouch, dagger in reverse grip held low, head turned toward an unseen target.
 SUBJECT DETAILS
@@ -2037,7 +2037,7 @@ Do not draw:
 
 ```text
 RANGER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Ranger, Hybrid class: ground-reader and strike-from-distance hunter; packages of Shortbow, Elven Dagger, Elven Spear, Hide Cuirass, Snares, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Ranger, Hybrid class: ground-reader and strike-from-distance hunter; packages of Shortbow, Elven Dagger, Elven Spear, Hide Cuirass, Snares, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing tall on a patch of leaf litter, shortbow drawn to the cheek, eyes narrowed on a far target, cloak edge stirring.
 SUBJECT DETAILS
@@ -2064,7 +2064,7 @@ Do not draw:
 
 ```text
 CLERIC - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Cleric, Caster class: faith kept in silence; packages of Mace, Targe, Ring Shirt, Quarterstaff, Holy Water, Bandages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Cleric, Caster class: faith kept in silence; packages of Mace, Targe, Ring Shirt, Quarterstaff, Holy Water, Bandages, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view kneeling in prayer on one knee on a small patch of bare flagstone, mace laid across the thigh, targe on the back, head bowed.
 SUBJECT DETAILS
@@ -2091,7 +2091,7 @@ Do not draw:
 
 ```text
 PALADIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Paladin, Hybrid class: bearer of an unbending oath; packages of Mace, Longsword, Targe, Ring Shirt, Quarterstaff, Gambeson, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Paladin, Hybrid class: bearer of an unbending oath; packages of Mace, Longsword, Targe, Ring Shirt, Quarterstaff, Gambeson, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing upright, longsword planted point-down before the feet, both hands folded on the pommel, head bowed.
 SUBJECT DETAILS
@@ -2118,7 +2118,7 @@ Do not draw:
 
 ```text
 WIZARD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Wizard, Caster class: scholar of rebuilt power; packages of Quarterstaff, Magnifying Glass, Torches, Elven Dagger, Sling, Scroll of Arcane Bolt, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Wizard, Caster class: scholar of rebuilt power; packages of Quarterstaff, Magnifying Glass, Torches, Elven Dagger, Sling, Scroll of Arcane Bolt, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing, one hand raising a small scroll to a magnifying glass held in the other, staff tucked under the arm.
 SUBJECT DETAILS
@@ -2145,7 +2145,7 @@ Do not draw:
 
 ```text
 PSION - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Psion, Caster class: thought sharpened into a weapon; packages of Dagger, Hide Cuirass, Targe, Throwing Knives, Gambeson, Quarterstaff, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Psion, Caster class: thought sharpened into a weapon; packages of Dagger, Hide Cuirass, Targe, Throwing Knives, Gambeson, Quarterstaff, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing very still with one hand extended, palm out, while three throwing knives hang in the air in front, points turned outward.
 SUBJECT DETAILS
@@ -2172,7 +2172,7 @@ Do not draw:
 
 ```text
 TRICKSTER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Trickster, Hybrid class: shaper of belief and illusion; packages of Elven Rapier, Shortbow, Elven Dagger, Smokestick, Caltrops, Lockpicks, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Trickster, Hybrid class: shaper of belief and illusion; packages of Elven Rapier, Shortbow, Elven Dagger, Smokestick, Caltrops, Lockpicks, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view sidestepping a blow with a flourish, rapier flicked out in a feint, trailing cloak flap, smoke curling at the feet.
 SUBJECT DETAILS
@@ -2199,7 +2199,7 @@ Do not draw:
 
 ```text
 SORCERER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Sorcerer, Caster class: carrier of unasked-for power; packages of Quarterstaff, Dagger, Sling, Gambeson, Bandages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Sorcerer, Caster class: carrier of unasked-for power; packages of Quarterstaff, Dagger, Sling, Gambeson, Bandages, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view bracing against its own power, one arm extended with a palm facing the viewer and a small crackling arc of ink-drawn lightning, the other hand clamping the bandaged forearm.
 SUBJECT DETAILS
@@ -2226,7 +2226,7 @@ Do not draw:
 
 ```text
 DRUID - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Druid, Caster class: servant of the world's slow reclamation; packages of Quarterstaff, Club, Wooden Shield, Sling, Elven Sickle, Leather Coat, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Druid, Caster class: servant of the world's slow reclamation; packages of Quarterstaff, Club, Wooden Shield, Sling, Elven Sickle, Leather Coat, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing barefoot in tall grass, staff planted in one hand and the other palm open and low, a crow perched on the staff head.
 SUBJECT DETAILS
@@ -2257,7 +2257,7 @@ Printed 2.6 in wide · aspect 3:2. Family framing: Still-life arrangement of the
 
 ```text
 7.6 TREASURE TABLES - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Treasure in the Dying Lands is never clean: coin and relics come from hoards, vaults and the dead, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Treasure in the Dying Lands is never clean: coin and relics come from hoards, vaults and the dead, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life on a stone slab at slight elevation: a rotted purse spilling tarnished coins beside a skeletal hand, a mud-caked crown, a cracked reliquary and a salt-crusted signet ring.
 SUBJECT DETAILS
@@ -2285,7 +2285,7 @@ Do not draw:
 
 ```text
 7.8 MELEE WEAPONS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Salvaged arms from an older wider world that reach the Dying Lands as trade goods through Saltspire and Reedmarch, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Salvaged arms from an older wider world that reach the Dying Lands as trade goods through Saltspire and Reedmarch, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Still life laid out on a sacking cloth viewed from above at an angle: a long-bladed messer, notched swordbreaker, throwing cross, bladed scourge, weighted cord and hook-and-chain, spaced evenly.
 SUBJECT DETAILS
@@ -2319,7 +2319,7 @@ Printed 2.6 in wide · aspect 3:2. Family framing: Small scene vignette of the t
 
 ```text
 TIER 1 ARCANE SPELLS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Arcane Spells: the first lessons of any surviving academy (Arcane Bolt, Burning Hands, Ice Ray, Force Push, Phase Step), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 1 Arcane Spells: the first lessons of any surviving academy (Arcane Bolt, Burning Hands, Ice Ray, Force Push, Phase Step), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A young apprentice in three-quarter view beside a scarred practice post, conjuring a small flame in one palm while a shimmer of force bends the air before the other hand; mid-height. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2346,7 +2346,7 @@ Do not draw:
 
 ```text
 TIER 2 ARCANE SPELLS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Arcane Spells: wartime spells copied from libraries since burned (Fireball, Haste, Blink, Sleep, Dispel), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 2 Arcane Spells: wartime spells copied from libraries since burned (Fireball, Haste, Blink, Sleep, Dispel), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A wizard seated at a small folding desk, copying from a single scorched, half-burned page onto a fresh sheet; above the fresh sheet the copied spell already stirs as a small sphere of ink flame hovering over the quill; three-quarter view. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2373,7 +2373,7 @@ Do not draw:
 
 ```text
 TIER 3 ARCANE SPELLS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Arcane Spells: the spells the towers killed to keep (Meteor Impact, Disintegrate, Time Break, Reality Warp), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 3 Arcane Spells: the spells the towers killed to keep (Meteor Impact, Disintegrate, Time Break, Reality Warp), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A wizard standing amid ash and cipher-scraps on a cracked mosaic floor, a sealed, chained book clutched to their chest while the scraps lift and turn slowly around it, two robed corpses sprawled at their feet; high-angle view. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2400,7 +2400,7 @@ Do not draw:
 
 ```text
 TIER 1 DIVINE PRAYERS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Divine Prayers: plain mercies (Sacred Flame, Guiding Light, Healing Touch, Blessing, Sanctuary), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 1 Divine Prayers: plain mercies (Sacred Flame, Guiding Light, Healing Touch, Blessing, Sanctuary), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A priest raising a lantern whose light falls on a wounded soldier seated at their feet, the wound visibly knitting closed; mid-shot. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2426,7 +2426,7 @@ Do not draw:
 
 ```text
 TIER 2 DIVINE PRAYERS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Divine Prayers: prayers answered less often and at greater cost (Radiant Burst, Circle of Protection, Guardian Angel, Benediction), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 2 Divine Prayers: prayers answered less often and at greater cost (Radiant Burst, Circle of Protection, Guardian Angel, Benediction), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A weary cleric standing at a cracked roadside shrine-stone, tipping coins one by one into an offering dish as a faint circle of protection rises around their feet; low side view. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2453,7 +2453,7 @@ Do not draw:
 
 ```text
 TIER 3 DIVINE PRAYERS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Divine Prayers: prayers demanded rather than asked (Divine Wrath, Heaven's Spear, Resurrection Light, Sunburst), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 3 Divine Prayers: prayers demanded rather than asked (Divine Wrath, Heaven's Spear, Resurrection Light, Sunburst), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A priest with arms raised on a bare hilltop, demanding, as a vast ambiguous shape takes form in the storm clouds above; low angle looking up. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2480,7 +2480,7 @@ Do not draw:
 
 ```text
 TIER 1 SORCERIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Sorceries: cheap blood workings that never fail (Chaos Bolt, Bloodspark, Scorch Step, Ember Net), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 1 Sorceries: cheap blood workings that never fail (Chaos Bolt, Bloodspark, Scorch Step, Ember Net), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A close view of a sorcerer's cut palm and forearm, drops of blood rising and twisting into a small crackling spark; the arm thins into white paper at the elbow.
 SUBJECT DETAILS
@@ -2506,7 +2506,7 @@ Do not draw:
 
 ```text
 TIER 2 SORCERIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Sorceries: the price climbs with the power (Volatile Fireball, Chain Shock, Stormskin, Shardstorm), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 2 Sorceries: the price climbs with the power (Volatile Fireball, Chain Shock, Stormskin, Shardstorm), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A gaunt sorcerer with scar-laddered forearms channelling a crackling storm between their hands; three-quarter view, standing braced. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2533,7 +2533,7 @@ Do not draw:
 
 ```text
 TIER 3 SORCERIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Sorceries: workings that do not care whether the caster survives (Catastrophe Sphere, Gravity Collapse, Ashen Vortex, Meteor Line), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 3 Sorceries: workings that do not care whether the caster survives (Catastrophe Sphere, Gravity Collapse, Ashen Vortex, Meteor Line), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A sorcerer half-consumed by their own working, a vortex of force tearing up the ground around them, two or three villagers praying on their knees, small and faint at a safe distance; the sorcerer centre. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2559,7 +2559,7 @@ Do not draw:
 
 ```text
 TIER 1 DRUIDIC RITUALS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Druidic Rituals: small agreements with root, weather and beast (Thorn Dart, Entangling Roots, Regrowth, Fog Bank), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 1 Druidic Rituals: small agreements with root, weather and beast (Thorn Dart, Entangling Roots, Regrowth, Fog Bank), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A druid kneeling with one palm pressed to an exposed root as thin roots curl up around the wrist and a low fog begins to gather, a hare watching; low view at root level. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2587,7 +2587,7 @@ Do not draw:
 
 ```text
 TIER 2 DRUIDIC RITUALS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Druidic Rituals: speaking the wild's language (Wall of Vines, Spike Growth, Summon Dire Wolf, Wild Dominion), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 2 Druidic Rituals: speaking the wild's language (Wall of Vines, Spike Growth, Summon Dire Wolf, Wild Dominion), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A druid speaking aloud as two or three trees at the vignette's edge bend toward them and roots heave up out of the earth; low view with the druid centre. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2614,7 +2614,7 @@ Do not draw:
 
 ```text
 TIER 3 DRUIDIC RITUALS (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Druidic Rituals: becoming a clause in the oldest contract (Avatar of the Wild, Verdant Dominion, Summon Treant, Maelstrom), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 3 Druidic Rituals: becoming a clause in the oldest contract (Avatar of the Wild, Verdant Dominion, Summon Treant, Maelstrom), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A druid half-merged with an ancient oak, bark creeping over their skin and branches rising like antlers from their head; frontal three-quarter figure growing out of the trunk. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2641,7 +2641,7 @@ Do not draw:
 
 ```text
 TIER 1 PSYCHIC ABILITIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 1 Psychic Abilities: the first disciplines of the unquiet mind (Telekinetic Push, Precognition, Psychic Veil, Mind Link), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 1 Psychic Abilities: the first disciplines of the unquiet mind (Telekinetic Push, Precognition, Psychic Veil, Mind Link), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A psion seated cross-legged with closed eyes, pebbles hovering in a slow ring around them and a candle flame standing perfectly still; straight-on view, symmetrical. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2667,7 +2667,7 @@ Do not draw:
 
 ```text
 TIER 2 PSYCHIC ABILITIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 2 Psychic Abilities: each ability leaves a mark the psion learns to hide (Psychic Lance, Mind Control, Temporal Skew, Psychic Renewal), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 2 Psychic Abilities: each ability leaves a mark the psion learns to hide (Psychic Lance, Mind Control, Temporal Skew, Psychic Renewal), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A psion alone, leaning one shoulder on a rough boulder, hiding a trembling hand from which the air ripples faintly, fine cracks of strain around their eyes; mid-shot. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2694,7 +2694,7 @@ Do not draw:
 
 ```text
 TIER 3 PSYCHIC ABILITIES (D20) - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tier 3 Psychic Abilities: thought and world merge (Gravity Singularity, Reality Shear, Telekinetic Crush, Mass Domination), in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tier 3 Psychic Abilities: thought and world merge (Gravity Singularity, Reality Shear, Telekinetic Crush, Mass Domination), in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A psion on open ground where stone steps and a wall rise from nothing at their gaze, two or three small enemy soldiers stumbling at the vignette's edge as the ground obeys the psion's thought; psion centre-left. Small vignette, densest at the caster and thinning into white paper.
 SUBJECT DETAILS
@@ -2724,14 +2724,14 @@ Printed 1.9 in wide · aspect 1:1. Family framing: Single creature, full body, t
 
 ```text
 GIANT TARANTULA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Tarantula, Greenmark Skirmisher, small: a hand-span of bristled legs around a body the size of a war helm, a forest-floor venomous hunter, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Giant Tarantula, Greenmark Skirmisher, small: a hand-span of bristled legs around a body the size of a war helm, a forest-floor venomous hunter, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low three-quarter ground view of the spider stalking across leaf litter on stilted, deliberate legs, forelegs raised, fangs lifted; a discarded war helm beside it for scale.
 Size: Small: smaller than a human.
 SUBJECT DETAILS
 * Exactly eight legs, jointed and tipped with small claws
 * Body the size of a war helm, hairy abdomen and cephalothorax
-* Dense bristle hairs rendered by short hatch flicks
+* Bristle hairs suggested by short hatch flicks along the contours, not covering every surface
 * Two large fangs with a bead of venom at the tips
 * Cluster of eight eyes on a small raised bump
 * Palps in front of the fangs
@@ -2755,7 +2755,7 @@ Do not draw:
 
 ```text
 GOBLIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Goblin, Greenmark Minion, small: a knee-high green-grey raider of ruined steadings that fights in chittering mobs, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Goblin, Greenmark Minion, small: a knee-high green-grey raider of ruined steadings that fights in chittering mobs, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view, hunched and scuttling forward, notched blade out in front, sling and stone pouch at the belt.
 Size: Small: smaller than a human.
@@ -2784,7 +2784,7 @@ Do not draw:
 
 ```text
 BEASTMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Beastman, Greenmark Minion, medium: a hunched man-shape topped with the head of a goat or boar, black claws, a forest-edge warband raider, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Beastman, Greenmark Minion, medium: a hunched man-shape topped with the head of a goat or boar, black claws, a forest-edge warband raider, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view, bent forward and running, both clawed hands spread wide, head low.
 Size: Medium: about human-sized.
@@ -2812,7 +2812,7 @@ Do not draw:
 
 ```text
 BANDIT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Bandit, Greenmark Soldier, medium: a deserter or broken tithe-collector turned forest raider, fighting with shortbow from cover and shortsword up close, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Bandit, Greenmark Soldier, medium: a deserter or broken tithe-collector turned forest raider, fighting with shortbow from cover and shortsword up close, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view crouched low on one knee, shortbow at half-draw, shortsword laid on the ground within reach.
 Size: Medium: about human-sized.
@@ -2840,7 +2840,7 @@ Do not draw:
 
 ```text
 SATYR REVELER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Satyr Reveler, Greenmark Controller, medium: a goat-legged laurel-crowned fey piper whose music floods listeners with terror or lulls them, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Satyr Reveler, Greenmark Controller, medium: a goat-legged laurel-crowned fey piper whose music floods listeners with terror or lulls them, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view capering on one hoof, pipes at the lips, curved knife thrust in the belt, firelight raking one side.
 Size: Medium: about human-sized.
@@ -2868,7 +2868,7 @@ Do not draw:
 
 ```text
 BRIARLING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Briarling, Greenmark Minion, medium-sized: a hound-sized knot of animate thornwood on root-claws, a spent first line of the Antlered Warden's groves, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Briarling, Greenmark Minion, medium-sized: a hound-sized knot of animate thornwood on root-claws, a spent first line of the Antlered Warden's groves, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low side view of the creature scuttling forward on root-claws with its barbed back bristling, head down.
 Size: Medium: about human-sized.
@@ -2896,7 +2896,7 @@ Do not draw:
 
 ```text
 DIRE WOLF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Dire Wolf, Greenmark Skirmisher, medium: a pony-sized yellow-eyed pack hunter that cuts prey from the herd, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Dire Wolf, Greenmark Skirmisher, medium: a pony-sized yellow-eyed pack hunter that cuts prey from the herd, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low three-quarter view of the wolf stalking forward in a crouch, head lowered, hackles raised.
 Size: Medium: about human-sized.
@@ -2925,7 +2925,7 @@ Do not draw:
 
 ```text
 ORC - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Orc, Greenmark Soldier, medium: a broad, disciplined, grey-skinned raider with lower tusks, armed with battleaxe and shield, a warband member that holds formation, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Orc, Greenmark Soldier, medium: a broad, disciplined, grey-skinned raider with lower tusks, armed with battleaxe and shield, a warband member that holds formation, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view mid-snarl, advancing with a heavy round shield raised on the forearm and a notched battleaxe raised in the other hand, trophies swinging from the belt.
 Size: Medium: about human-sized.
@@ -2955,7 +2955,7 @@ Do not draw:
 
 ```text
 BUGBEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Bugbear, Greenmark Soldier, medium: a seven-foot, shaggy, long-armed ambusher with a flat face and a spiked morningstar, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Bugbear, Greenmark Soldier, medium: a seven-foot, shaggy, long-armed ambusher with a flat face and a spiked morningstar, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view rising out of bracken, long arm already swinging a spiked morningstar from arm's reach.
 Size: Medium: about human-sized.
@@ -2983,7 +2983,7 @@ Do not draw:
 
 ```text
 HARPY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view crouched on a single fallen block of stone, wings half-spread, head thrown back mid-song, one talon gripping the stone and the other clawed forward.
 Size: Medium: about human-sized.
@@ -3013,7 +3013,7 @@ Do not draw:
 
 ```text
 GOBLIN SHAMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Goblin Shaman, Greenmark Controller, small: a goblin hung with bone and crow-feather fetishes who hangs behind the mob and spits hexes, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Goblin Shaman, Greenmark Controller, small: a goblin hung with bone and crow-feather fetishes who hangs behind the mob and spits hexes, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing on a low stump, gnarled staff raised in one hand, other hand flinging a spit of dark hex-marks.
 Size: Small: smaller than a human.
@@ -3043,7 +3043,7 @@ Do not draw:
 
 ```text
 BANDIT CAPTAIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Bandit Captain, Greenmark Elite, medium: a commissioned-or-claiming leader in looted mail wielding a longsword and a heavy crossbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Bandit Captain, Greenmark Elite, medium: a commissioned-or-claiming leader in looted mail wielding a longsword and a heavy crossbow, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing with longsword levelled forward to command, heavy crossbow slung at the hip, cloak hanging from the shoulders.
 Size: Medium: about human-sized.
@@ -3072,7 +3072,7 @@ Do not draw:
 
 ```text
 DIRE BEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Dire Bear, Greenmark Brute, large: a shaggy mountain of muscle twice a man's height, mauling with forepaws and a shield-splitting bite, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Dire Bear, Greenmark Brute, large: a shaggy mountain of muscle twice a man's height, mauling with forepaws and a shield-splitting bite, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the bear reared on its hind legs, forepaws raised and swinging down, jaws open; a small human figure near its feet, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -3100,7 +3100,7 @@ Do not draw:
 
 ```text
 BLOOD APE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Blood Ape, Greenmark Soldier, medium: a slab-shouldered crimson-furred canopy ape that drops onto prey and hammers with both fists, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Blood Ape, Greenmark Soldier, medium: a slab-shouldered crimson-furred canopy ape that drops onto prey and hammers with both fists, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the ape landing from a drop in a crouch on one knuckled fist, other fist cocked back to pummel.
 Size: Medium: about human-sized.
@@ -3128,7 +3128,7 @@ Do not draw:
 
 ```text
 GOREBEAK BEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gorebeak Bear, Greenmark Brute, large: a stitched-looking horror with a bear's body and a great owl's head and foreclaws, with a plate-punching hooked beak, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Gorebeak Bear, Greenmark Brute, large: a stitched-looking horror with a bear's body and a great owl's head and foreclaws, with a plate-punching hooked beak, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the creature charging low, head thrust forward, hooked beak open, foreclaws raking out; a small human figure near its forefoot, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -3156,7 +3156,7 @@ Do not draw:
 
 ```text
 OGRE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ogre, Greenmark Brute, large: a twice-man-height, slope-shouldered grey slab of muscle in stitched hides, claiming a ford with a tree-trunk great club, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Ogre, Greenmark Brute, large: a twice-man-height, slope-shouldered grey slab of muscle in stitched hides, claiming a ford with a tree-trunk great club, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view standing calf-deep in a small patch of ford water, great club resting on the shoulder, one hand held out for a toll; a small human figure at the water's edge, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -3184,7 +3184,7 @@ Do not draw:
 
 ```text
 DRYAD GROVEWARDEN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Dryad Grovewarden, Greenmark Controller, medium: a bark-skinned fey tree-spirit crowned in living branches that binds intruders with roots, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Dryad Grovewarden, Greenmark Controller, medium: a bark-skinned fey tree-spirit crowned in living branches that binds intruders with roots, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view striding forward, staff extended, roots snaking from its feet into the ground.
 Size: Medium: about human-sized.
@@ -3212,7 +3212,7 @@ Do not draw:
 
 ```text
 FOREST TROLL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Forest Troll, Greenmark Brute, large: a gangling moss-slick bog-edge brute with reaching arms and broken tusks whose wounds knit shut, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Forest Troll, Greenmark Brute, large: a gangling moss-slick bog-edge brute with reaching arms and broken tusks whose wounds knit shut, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the troll lurching forward with both long arms reaching, mouth agape; a small human figure near its feet, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -3240,7 +3240,7 @@ Do not draw:
 
 ```text
 WEREWOLF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Werewolf, Greenmark Elite, medium: a haunted villager's cursed form, a hunched grey wolf-man killer that strikes from the treeline, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Werewolf, Greenmark Elite, medium: a haunted villager's cursed form, a hunched grey wolf-man killer that strikes from the treeline, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the beast striding upright, claws spread, torn villager's shirt still hanging.
 Size: Medium: about human-sized.
@@ -3268,7 +3268,7 @@ Do not draw:
 
 ```text
 GREEN DRAGON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Green Dragon, Greenmark Elite, huge: a moss-coloured serpentine spine-crested tyrant with a corrosive breath; it flies. Typical adult, alone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Green Dragon, Greenmark Elite, huge: a moss-coloured serpentine spine-crested tyrant with a corrosive breath; it flies. Typical adult, alone, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide three-quarter view of the dragon coiled on a mossy rock with its long neck raised and head turned toward the viewer, wings folded; a tiny human figure beside the rock, drawn small, light and secondary, for scale.
 Size: Huge: towering many times a human's size.
@@ -3296,7 +3296,7 @@ Do not draw:
 
 ```text
 UNDEAD WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Warrior, Ashlands Minion, medium: a half-rotted corpse in rusted old-empire kit holding its post in the ash, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Undead Warrior, Ashlands Minion, medium: a half-rotted corpse in rusted old-empire kit holding its post in the ash, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the corpse standing at its post, rectangular shield forward and short sword at the ready, ash drifting at its feet.
 Size: Medium: about human-sized.
@@ -3324,7 +3324,7 @@ Do not draw:
 
 ```text
 UNDEAD CROSSBOWMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Crossbowman, Ashlands Cannon, medium: a dead marksman cranking a warped windlass with fleshless fingers in the rear of a battle-line, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Undead Crossbowman, Ashlands Cannon, medium: a dead marksman cranking a warped windlass with fleshless fingers in the rear of a battle-line, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the figure with a boot in the stirrup, cranking the windlass, crossbow aimed at an unseen mark.
 Size: Medium: about human-sized.
@@ -3351,7 +3351,7 @@ Do not draw:
 
 ```text
 GHOUL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ghoul, Ashlands Minion, medium: a grey, gaunt, hook-clawed corpse-eater with a paralytic bite that hunts tombs in packs, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Ghoul, Ashlands Minion, medium: a grey, gaunt, hook-clawed corpse-eater with a paralytic bite that hunts tombs in packs, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low three-quarter view of the ghoul loping forward on two legs and one knuckled hand, head forward, jaws opened.
 Size: Medium: about human-sized.
@@ -3379,7 +3379,7 @@ Do not draw:
 
 ```text
 POSSESSED CORPSE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Possessed Corpse, Ashlands Minion, medium: a body worn by something from the dark between worlds, lurching toward a jerking purpose, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Possessed Corpse, Ashlands Minion, medium: a body worn by something from the dark between worlds, lurching toward a jerking purpose, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view lurching forward with arms outstretched, head lolling to one side.
 Size: Medium: about human-sized.
@@ -3407,7 +3407,7 @@ Do not draw:
 
 ```text
 EMBER SKULL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ember Skull, Ashlands Cannon, small: a single charred head wreathed in flame that drifts on cold updrafts; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Ember Skull, Ashlands Cannon, small: a single charred head wreathed in flame that drifts on cold updrafts; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the skull drifting in the air above a small heap of rubble, jaw open, a thin fire ray spitting from the mouth.
 Size: Small: smaller than a human.
@@ -3435,7 +3435,7 @@ Do not draw:
 
 ```text
 WERERAT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Wererat, Ashlands Skirmisher, small: a hunched plague-grey shapeshifter between man and rat that bites and skitters back into the dark, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Wererat, Ashlands Skirmisher, small: a hunched plague-grey shapeshifter between man and rat that bites and skitters back into the dark, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low three-quarter view of the creature crouched and half-turned, rusted blade held low, preparing to skitter away.
 Size: Small: smaller than a human.
@@ -3463,7 +3463,7 @@ Do not draw:
 
 ```text
 SPECTRE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Spectre, Ashlands Controller, medium: grief and rage without a body, a flying incorporeal dead thing that drinks warmth and years by touch, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Spectre, Ashlands Controller, medium: grief and rage without a body, a flying incorporeal dead thing that drinks warmth and years by touch, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the spectre drifting forward in mid-air, one hand reaching forward to touch, its trailing edge thinning to nothing.
 Size: Medium: about human-sized.
@@ -3491,7 +3491,7 @@ Do not draw:
 
 ```text
 UNDEAD SENTINEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Sentinel, Ashlands Soldier, medium: a tall, gaunt dead gate-guard in iron helm with a reach-halberd, who holds a breach forever, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Undead Sentinel, Ashlands Soldier, medium: a tall, gaunt dead gate-guard in iron helm with a reach-halberd, who holds a breach forever, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Frontal three-quarter view of the sentinel planted squarely on rubble-strewn ground, reach-halberd held upright in both hands, butt grounded.
 Size: Medium: about human-sized.
@@ -3519,7 +3519,7 @@ Do not draw:
 
 ```text
 UNDEAD CHAMPION - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Undead Champion, Ashlands Soldier, medium: a slab of dead muscle raised from the largest corpses, swinging a two-handed war maul of fused bone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Undead Champion, Ashlands Soldier, medium: a slab of dead muscle raised from the largest corpses, swinging a two-handed war maul of fused bone, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the champion trudging forward, the war maul hauled back over one shoulder in both hands, ready to fall with siege-engine weight.
 Size: Medium: about human-sized.
@@ -3549,7 +3549,7 @@ Do not draw:
 
 ```text
 GARGOYLE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gargoyle, Ashlands Skirmisher, medium: a stone guardian that looks like statuary until prey strays beneath it; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Gargoyle, Ashlands Skirmisher, medium: a stone guardian that looks like statuary until prey strays beneath it; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the creature crouched on a single fallen cornice block, wings half-open, one clawed hand gripping its edge and head turned down toward the viewer.
 Size: Medium: about human-sized.
@@ -3578,7 +3578,7 @@ Do not draw:
 
 ```text
 STONE SENTINEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Stone Sentinel, Ashlands Brute, medium: a faceless granite construct of the old empire that hews with a greatsword of carved stone and cannot be pushed, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Stone Sentinel, Ashlands Brute, medium: a faceless granite construct of the old empire that hews with a greatsword of carved stone and cannot be pushed, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the sentinel striding forward, a two-handed greatsword of carved stone raised in both blocky fists.
 Size: Medium: about human-sized.
@@ -3606,7 +3606,7 @@ Do not draw:
 
 ```text
 MINOTAUR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Minotaur, Ashlands Elite, large: a bull-headed giant of labyrinthine ruins that charges head-down to gore then wades in with a greataxe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Minotaur, Ashlands Elite, large: a bull-headed giant of labyrinthine ruins that charges head-down to gore then wades in with a greataxe, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the minotaur charging head-down, horns lowered, greataxe swung low in one hand; a small human figure in its path, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -3634,7 +3634,7 @@ Do not draw:
 
 ```text
 NIGHT HAG - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Night Hag, Ashlands Controller, medium: a withered crone of the between-places who curses the sleeping and steps half into the ether, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Night Hag, Ashlands Controller, medium: a withered crone of the between-places who curses the sleeping and steps half into the ether, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the hag stepping half out of the shadow, one claw extended, lower body dissolving into hatching.
 Size: Medium: about human-sized.
@@ -3662,7 +3662,7 @@ Do not draw:
 
 ```text
 FORSAKEN ARCHER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Archer, Ashlands Cannon, medium: an oath-bound dead marksman of the empire's finest, drawing a cursed longbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Forsaken Archer, Ashlands Cannon, medium: an oath-bound dead marksman of the empire's finest, drawing a cursed longbow, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view at full draw, cursed longbow bent, barbed arrow aimed, feet planted on a patch of broken paving.
 Size: Medium: about human-sized.
@@ -3692,7 +3692,7 @@ Do not draw:
 
 ```text
 FORSAKEN KNIGHT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Knight, Ashlands Soldier, medium: dead chivalry in spectral plate with a flamberge wreathed in grave-light, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Forsaken Knight, Ashlands Soldier, medium: dead chivalry in spectral plate with a flamberge wreathed in grave-light, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the knight advancing through ash, flamberge held two-handed low, plate cloak in tatters.
 Size: Medium: about human-sized.
@@ -3719,7 +3719,7 @@ Do not draw:
 
 ```text
 FORSAKEN DUELIST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Forsaken Duelist, Ashlands Skirmisher, medium: the empire's finest fencer, dead and tireless, with a single flashing rapier, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Forsaken Duelist, Ashlands Skirmisher, medium: the empire's finest fencer, dead and tireless, with a single flashing rapier, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the duelist in an en garde stance, rapier extended, back arm raised for balance, slipping a blow.
 Size: Medium: about human-sized.
@@ -3747,7 +3747,7 @@ Do not draw:
 
 ```text
 BASILISK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Basilisk, Ashlands Elite, large: a heavy, eight-legged reptile roughly twice a human's bulk whose gaze slowly turns flesh to stone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Basilisk, Ashlands Elite, large: a heavy, eight-legged reptile roughly twice a human's bulk whose gaze slowly turns flesh to stone, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the basilisk dragging itself forward over a little rubble, head raised and turned toward the viewer with a fixed, unblinking petrifying stare; beside its forefoot lies one stone foot and shin, broken off in mid-stride.
 Size: Large: roughly twice a human's height or bulk.
@@ -3778,7 +3778,7 @@ Do not draw:
 
 ```text
 ASHEN REVENANT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ashen Revenant, Ashlands Elite, medium: a corpse-warrior in fire-blackened plate driven by one grudge, clawing upright after being struck down, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Ashen Revenant, Ashlands Elite, medium: a corpse-warrior in fire-blackened plate driven by one grudge, clawing upright after being struck down, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the revenant rising from one knee, one fist on the ground, grave cleaver raised in the other hand.
 Size: Medium: about human-sized.
@@ -3806,7 +3806,7 @@ Do not draw:
 
 ```text
 IRON GOLEM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Iron Golem, Ashlands Brute, large: a towering automaton of riveted black iron with piledriver fists, still on guard for a long-dead king, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Iron Golem, Ashlands Brute, large: a towering automaton of riveted black iron with piledriver fists, still on guard for a long-dead king, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the golem looming with both massive fists raised to slam down; a small human figure before it, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -3835,7 +3835,7 @@ Do not draw:
 
 ```text
 LICH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Lich, Ashlands Elite, medium: a desiccated sorcerer-king in mouldering finery who commands the dead and flies a little above the floor, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Lich, Ashlands Elite, medium: a desiccated sorcerer-king in mouldering finery who commands the dead and flies a little above the floor, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the lich hovering over the floor, one skeletal hand reaching forward to touch.
 Size: Medium: about human-sized.
@@ -3863,7 +3863,7 @@ Do not draw:
 
 ```text
 KOBOLD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Kobold, Undermarches Minion, small: a knee-high reptilian scavenger with dull scales and a dingy mining pick who fights in warren mobs, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Kobold, Undermarches Minion, small: a knee-high reptilian scavenger with dull scales and a dingy mining pick who fights in warren mobs, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low three-quarter view of the kobold creeping forward, mining pick over its shoulder, sling in the other hand, eyes darting.
 Size: Small: smaller than a human.
@@ -3892,7 +3892,7 @@ Do not draw:
 
 ```text
 CAVE GOBLIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Cave Goblin, Undermarches Minion, small: a pale, blinder goblin with wide black eyes, a jagged spear and an instinct to flee towards more of its kind, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Cave Goblin, Undermarches Minion, small: a pale, blinder goblin with wide black eyes, a jagged spear and an instinct to flee towards more of its kind, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low three-quarter view of the goblin shielding its eyes from a light, jagged spear trailing, half-turned to flee.
 Size: Small: smaller than a human.
@@ -3920,7 +3920,7 @@ Do not draw:
 
 ```text
 GIANT BAT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Bat, Undermarches Minion, large: a leathery-winged cave bat wider than a man is tall that swoops, bites and wheels away; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Giant Bat, Undermarches Minion, large: a leathery-winged cave bat wider than a man is tall that swoops, bites and wheels away; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view from below of the bat in a swooping pass, wings spread wide, jaws open; a small human figure ducking on the ground below, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -3950,7 +3950,7 @@ Do not draw:
 
 ```text
 VAULTFANG - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Vaultfang, Undermarches Cannon, medium: a mottled stone-hard chitin cone that mimics a stalactite and drops once, point first, through helm and skull, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Vaultfang, Undermarches Cannon, medium: a mottled stone-hard chitin cone that mimics a stalactite and drops once, point first, through helm and skull, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Vertical view of the creature in its drop: a single stone-like cone falling point first, tiny gripping claws still splayed at its top where it let go, a few flakes of rock falling with it, its narrow shadow on a small patch of cave floor below.
 Size: Medium: about human-sized.
@@ -3978,7 +3978,7 @@ Do not draw:
 
 ```text
 GIANT CENTIPEDE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Centipede, Undermarches Skirmisher, small: a spear-long, many-segmented, venomous cave predator that climbs walls on a hundred legs, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Giant Centipede, Undermarches Skirmisher, small: a spear-long, many-segmented, venomous cave predator that climbs walls on a hundred legs, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the centipede coiling over a low slab of wet rock in a long sinuous curve, front segments rearing over the edge, mandibles open and forward.
 Size: Small: smaller than a human.
@@ -4006,7 +4006,7 @@ Do not draw:
 
 ```text
 NOXCLOTH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Noxcloth, Undermarches Controller, medium: a fold of black leathery hide the size of a flung cloak that hangs from the cavern roof and drops to smother the head; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Noxcloth, Undermarches Controller, medium: a fold of black leathery hide the size of a flung cloak that hangs from the cavern roof and drops to smother the head; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view from below of the flat cloak-like creature dropping through the air, edges billowing open to smother.
 Size: Medium: about human-sized.
@@ -4034,7 +4034,7 @@ Do not draw:
 
 ```text
 TROGLODYTE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Troglodyte, Undermarches Soldier, medium: a grey, crested reptilian cave-dweller whose skin shifts colour to vanish against stone, fighting claws first, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Troglodyte, Undermarches Soldier, medium: a grey, crested reptilian cave-dweller whose skin shifts colour to vanish against stone, fighting claws first, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the troglodyte stalking forward with both claws spread, one flank of its hide fading into a stone-like mottle as it shifts colour.
 Size: Medium: about human-sized.
@@ -4062,7 +4062,7 @@ Do not draw:
 
 ```text
 GIANT BLACK WIDOW - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Black Widow, Undermarches Controller, small: a glossy-black war-hound-sized spider with a crimson hourglass mark, squatting in its own webbing, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Giant Black Widow, Undermarches Controller, small: a glossy-black war-hound-sized spider with a crimson hourglass mark, squatting in its own webbing, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view from the front of the spider hanging head-down on a short anchored span of its own web, one foreleg pulling a strand.
 Size: Small: smaller than a human.
@@ -4092,7 +4092,7 @@ Do not draw:
 
 ```text
 GLOOMSPORE JELLY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gloomspore Jelly, Undermarches Brute, medium: a man-sized translucent grey ooze that creeps over every surface and dissolves what it touches, leaving scoured tunnels, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Gloomspore Jelly, Undermarches Brute, medium: a man-sized translucent grey ooze that creeps over every surface and dissolves what it touches, leaving scoured tunnels, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low side view of the jelly creeping over a heap of bones and a rusted helm, a pseudopod reaching ahead.
 Size: Medium: about human-sized.
@@ -4121,7 +4121,7 @@ Do not draw:
 
 ```text
 TROGLODYTE SHAMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Troglodyte Shaman, Undermarches Controller, medium: a grey crested cave reptile daubed in glowing fungus, hexing with a bone club, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Troglodyte Shaman, Undermarches Controller, medium: a grey crested cave reptile daubed in glowing fungus, hexing with a bone club, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view crouched low, bone club in one hand, other hand throwing hex-spit, fungus daubs on its hide.
 Size: Medium: about human-sized.
@@ -4149,7 +4149,7 @@ Do not draw:
 
 ```text
 VAULT OOZE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Vault Ooze, Undermarches Brute, medium: a near-invisible cube of acidic slime that fills a corridor wall to wall, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Vault Ooze, Undermarches Brute, medium: a near-invisible cube of acidic slime that fills a corridor wall to wall, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of a clear cube-shaped mass of slime resting on a small patch of flagstones, a swallowed lantern and bones suspended within it, a pseudopod pushing forward at one corner.
 Size: Medium: about human-sized.
@@ -4178,7 +4178,7 @@ Do not draw:
 
 ```text
 VRYMK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Vrymk, Undermarches Skirmisher, medium: a stone-grey tangle of rubbery tentacles around a hooked beak, no broader than a crouching man, clinging to cavern walls, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Vrymk, Undermarches Skirmisher, medium: a stone-grey tangle of rubbery tentacles around a hooked beak, no broader than a crouching man, clinging to cavern walls, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the creature clinging to a single boulder, camouflaged against it, several tentacles lashing out and one pulling toward the beak.
 Size: Medium: about human-sized.
@@ -4208,7 +4208,7 @@ Do not draw:
 
 ```text
 DEEP ELF WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Deep Elf Warrior, Undermarches Skirmisher, medium: a coldly beautiful, merciless deep elf raider who fights with a poisoned hand crossbow and a finesse shortsword and sees perfectly in the dark, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Deep Elf Warrior, Undermarches Skirmisher, medium: a coldly beautiful, merciless deep elf raider who fights with a poisoned hand crossbow and a finesse shortsword and sees perfectly in the dark, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the warrior advancing in a low, poised step, drawn shortsword held forward in one hand and a small hand crossbow raised in the other.
 Size: Medium: about human-sized.
@@ -4236,7 +4236,7 @@ Do not draw:
 
 ```text
 DEEP ELF PRIEST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Deep Elf Priest, Undermarches Controller, medium: a black-silk-robed priest of the deep spider-gods who weaves darkness, bends wills with a spoken command and drives warriors on, armed with a plain quarterstaff, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Deep Elf Priest, Undermarches Controller, medium: a black-silk-robed priest of the deep spider-gods who weaves darkness, bends wills with a spoken command and drives warriors on, armed with a plain quarterstaff, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the priest in layered dark vestments, a plain wooden quarterstaff gripped in both hands, mouth open in a spoken command, conjured darkness coiling around its feet.
 Size: Medium: about human-sized.
@@ -4268,7 +4268,7 @@ Do not draw:
 
 ```text
 GLOOM HULK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gloom Hulk, Undermarches Brute, large: a bull-sized, beetle-backed digger with great scything claws and four eyes that scramble the mind, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Gloom Hulk, Undermarches Brute, large: a bull-sized, beetle-backed digger with great scything claws and four eyes that scramble the mind, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the hulk heaving itself up out of broken ground in a shower of rubble, scything claws raised, four eyes in two pairs on the blunt face; a small human figure reeling before it, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -4297,7 +4297,7 @@ Do not draw:
 
 ```text
 CRYPTSTRANGLER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Cryptstrangler, Undermarches Controller, large: a stalagmite-like stony predator taller than a man whose sticky tendrils fling across a chamber, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Cryptstrangler, Undermarches Controller, large: a stalagmite-like stony predator taller than a man whose sticky tendrils fling across a chamber, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the stalagmite-like creature standing alone on a patch of cave floor, tendrils shooting out, one sticky strand wrapped round the ankle of a small human figure being reeled in, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -4325,7 +4325,7 @@ Do not draw:
 
 ```text
 ELDER VRYMK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Elder Vrymk, Undermarches Elite, large: the eldest of a vrymk brood, a monstrous knot of leg-thick stone-grey tentacles around a plate-shearing beak, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Elder Vrymk, Undermarches Elite, large: the eldest of a vrymk brood, a monstrous knot of leg-thick stone-grey tentacles around a plate-shearing beak, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide three-quarter view of the elder squatting over a heap of clean bones, tentacles thick as a man's leg lashing out, one curling toward a small human figure at its edge, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -4353,7 +4353,7 @@ Do not draw:
 
 ```text
 EVIL EYE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Evil Eye, Undermarches Elite, large: a floating orb of leathery flesh with one great central eye and a crown of writhing eyestalks, with an antimagic aura; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Evil Eye, Undermarches Elite, large: a floating orb of leathery flesh with one great central eye and a crown of writhing eyestalks, with an antimagic aura; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Frontal three-quarter view of the orb drifting above a small patch of cave floor, central eye wide open, four eyestalks writhing; a small human figure below, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -4382,7 +4382,7 @@ Do not draw:
 
 ```text
 BURROWMAW - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Burrowmaw, Undermarches Brute, large: a wagon-sized armour-plated horror with a blunt head and a face-splitting maw that swims through stone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Burrowmaw, Undermarches Brute, large: a wagon-sized armour-plated horror with a blunt head and a face-splitting maw that swims through stone, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the burrowmaw erupting from a stone floor, jaws splitting its face open, rubble flying; a small human figure thrown off balance at the edge of the broken floor, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -4410,7 +4410,7 @@ Do not draw:
 
 ```text
 THOUGHT-EATER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Thought-Eater, Undermarches Elite, medium: a robed humanoid with an octopus head, four tentacles and white pupilless eyes that feeds on minds, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Thought-Eater, Undermarches Elite, medium: a robed humanoid with an octopus head, four tentacles and white pupilless eyes that feeds on minds, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the creature standing upright, one webbed hand raised toward the viewer, tentacles flowing from its head.
 Size: Medium: about human-sized.
@@ -4440,7 +4440,7 @@ Do not draw:
 
 ```text
 FROZEN SKELETON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Frozen Skeleton, Pale City Minion, medium: a frost-rimed skeleton standing its post, sword welded to its hand by ice, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Frozen Skeleton, Pale City Minion, medium: a frost-rimed skeleton standing its post, sword welded to its hand by ice, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the skeleton standing in drifted snow, sword frozen to its hand, icicles hanging from the ribs.
 Size: Medium: about human-sized.
@@ -4467,7 +4467,7 @@ Do not draw:
 
 ```text
 SNOW GOBLIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Snow Goblin, Pale City Minion, small: a gaunt white-furred goblin that ambushes out of the whiteout with frost-edged knives, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Snow Goblin, Pale City Minion, small: a gaunt white-furred goblin that ambushes out of the whiteout with frost-edged knives, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the goblin rising from a snowdrift, frost knife in one hand, sling in the other, fur nearly the colour of the paper.
 Size: Small: smaller than a human.
@@ -4495,7 +4495,7 @@ Do not draw:
 
 ```text
 RATKIN SCAVENGER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ratkin Scavenger, Pale City Minion, small: the lowest caste of verminous rat-folk, scrawny and twitching in matted grey fur, stripping ruins with a rusty knife, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Ratkin Scavenger, Pale City Minion, small: the lowest caste of verminous rat-folk, scrawny and twitching in matted grey fur, stripping ruins with a rusty knife, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low three-quarter view of the scavenger darting forward over packed snow, rusty knife held low, glancing back over its shoulder with a stolen scrap clutched in the other hand.
 Size: Small: smaller than a human.
@@ -4523,7 +4523,7 @@ Do not draw:
 
 ```text
 TUNDRA WOLF - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tundra Wolf, Pale City Skirmisher, medium: a white-coated wolf built for the killing cold that runs in herding packs over ice, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tundra Wolf, Pale City Skirmisher, medium: a white-coated wolf built for the killing cold that runs in herding packs over ice, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Side three-quarter view of the wolf padding across wind-scoured ice at a loping run, head level, breath trailing.
 Size: Medium: about human-sized.
@@ -4551,7 +4551,7 @@ Do not draw:
 
 ```text
 RATKIN WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ratkin Warrior, Pale City Soldier, small: a hunched spear-wielding rat-man in scavenged scraps of plate that fights in a bristling shield-rank, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Ratkin Warrior, Pale City Soldier, small: a hunched spear-wielding rat-man in scavenged scraps of plate that fights in a bristling shield-rank, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the warrior crouched low, patched shield raised and a notched spear levelled forward over its rim.
 Size: Small: smaller than a human.
@@ -4579,7 +4579,7 @@ Do not draw:
 
 ```text
 WHITE COURT GUARD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Guard, Pale City Soldier, medium: a frost-armoured noble corpse of the undead court's rank and file, bearing longsword and shield, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of White Court Guard, Pale City Soldier, medium: a frost-armoured noble corpse of the undead court's rank and file, bearing longsword and shield, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Frontal three-quarter view of the guard standing in drill position on a patch of packed snow, kite shield braced forward, longsword held upright at the shoulder.
 Size: Medium: about human-sized.
@@ -4608,7 +4608,7 @@ Do not draw:
 
 ```text
 RATKIN SEER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ratkin Seer, Pale City Controller, small: a half-mad rat-man draped in icicle-charms, spitting frost-hexes and croaking prophecy, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Ratkin Seer, Pale City Controller, small: a half-mad rat-man draped in icicle-charms, spitting frost-hexes and croaking prophecy, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the seer perched on a broken stone block, bone staff in one hand, other hand flinging frosty hex-flecks, mouth open.
 Size: Small: smaller than a human.
@@ -4636,7 +4636,7 @@ Do not draw:
 
 ```text
 FROST GHOUL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Ghoul, Pale City Minion, medium: a ghoul frozen and reborn in the cold, claws sheathed in frost, hunting in packs through snow-choked streets, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Frost Ghoul, Pale City Minion, medium: a ghoul frozen and reborn in the cold, claws sheathed in frost, hunting in packs through snow-choked streets, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low three-quarter view of the ghoul crawling over a snowdrift, frost-sheathed claws forward, jaw open.
 Size: Medium: about human-sized.
@@ -4665,7 +4665,7 @@ Do not draw:
 
 ```text
 WHITE COURT ARCHER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Archer, Pale City Cannon, medium: a dead marksman of the frozen balconies loosing ice-fletched arrows from a frostbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of White Court Archer, Pale City Cannon, medium: a dead marksman of the frozen balconies loosing ice-fletched arrows from a frostbow, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the archer standing on a patch of ice-glazed paving, frostbow at full draw, quiver overflowing.
 Size: Medium: about human-sized.
@@ -4693,7 +4693,7 @@ Do not draw:
 
 ```text
 BLACKFIRE HOUND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Blackfire Hound, Pale City Skirmisher, medium: a charred beast-shape with cold black flame guttering along its spine that leaves a trail of smouldering ash, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Blackfire Hound, Pale City Skirmisher, medium: a charred beast-shape with cold black flame guttering along its spine that leaves a trail of smouldering ash, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Side three-quarter view of the hound bounding over snow, black flame along the spine, a short line of smouldering ash marks at its heels.
 Size: Medium: about human-sized.
@@ -4721,7 +4721,7 @@ Do not draw:
 
 ```text
 ICE WRAITH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ice Wraith, Pale City Cannon, medium: a knife-like translucent drifting spirit of someone who froze to death, hungry for warmth; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Ice Wraith, Pale City Cannon, medium: a knife-like translucent drifting spirit of someone who froze to death, hungry for warmth; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the wraith gliding forward in the air, one long arm reaching out with a frost-touch.
 Size: Medium: about human-sized.
@@ -4749,7 +4749,7 @@ Do not draw:
 
 ```text
 WHITE COURT SENTINEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Sentinel, Pale City Brute, medium: the dead nobility's corpse-knight bodyguard, crouched within an enormous greatshield, ornate visored helm, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of White Court Sentinel, Pale City Brute, medium: the dead nobility's corpse-knight bodyguard, crouched within an enormous greatshield, ornate visored helm, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the sentinel crouched low, an enormous greatshield covering most of its body, one visored eye slit peeking over the top.
 Size: Medium: about human-sized.
@@ -4776,7 +4776,7 @@ Do not draw:
 
 ```text
 ICE ELEMENTAL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ice Elemental, Pale City Controller, large: a lurching jagged figure of living glacier that freezes the ground it crosses, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Ice Elemental, Pale City Controller, large: a lurching jagged figure of living glacier that freezes the ground it crosses, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the elemental lurching forward with both fists raised to slam, frost spreading on the ground in feathery lines; a small human figure near its feet, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -4803,7 +4803,7 @@ Do not draw:
 
 ```text
 FALLEN PALADIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Fallen Paladin, Pale City Elite, medium: an undead knight in defiled plate whose despair aura withers courage, wielding a necrotic-chilled flamberge, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Fallen Paladin, Pale City Elite, medium: an undead knight in defiled plate whose despair aura withers courage, wielding a necrotic-chilled flamberge, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the paladin rising from one knee on a patch of frosted flagstones, defiled flamberge planted, head lifted.
 Size: Medium: about human-sized.
@@ -4831,7 +4831,7 @@ Do not draw:
 
 ```text
 WEREBEAR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Werebear, Pale City Brute, large: a hulking white-furred man-beast built to maul, with strength that hurls men aside, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Werebear, Pale City Brute, large: a hulking white-furred man-beast built to maul, with strength that hurls men aside, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the werebear charging on all fours through churned snow, claws raking and jaws open; a small human figure ahead of it, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -4861,7 +4861,7 @@ Do not draw:
 
 ```text
 WHITE COURT EXECUTIONER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of White Court Executioner, Pale City Elite, medium: a towering hooded headsman in frost carrying out centuries-old sentences with a headsman's axe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of White Court Executioner, Pale City Elite, medium: a towering hooded headsman in frost carrying out centuries-old sentences with a headsman's axe, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the executioner striding forward through snow with a frost-rimed headsman's axe resting over one shoulder.
 Size: Medium: about human-sized.
@@ -4889,7 +4889,7 @@ Do not draw:
 
 ```text
 FROST WYVERN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Wyvern, Pale City Elite, large: a lean two-legged winged reptile the colour of dirty ice with a venom-and-frost tail stinger, smaller and rangier than a dragon; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Frost Wyvern, Pale City Elite, large: a lean two-legged winged reptile the colour of dirty ice with a venom-and-frost tail stinger, smaller and rangier than a dragon; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Side three-quarter view of the wyvern on the wing in a stoop, tail stinger curled forward, its shadow falling on a small patch of snow where a small human figure stands, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -4918,7 +4918,7 @@ Do not draw:
 
 ```text
 GELID FIEND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gelid Fiend, Pale City Brute, large: a towering devil of blue-white ice and cruel geometry, a bound advocate of the frozen law, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Gelid Fiend, Pale City Brute, large: a towering devil of blue-white ice and cruel geometry, a bound advocate of the frozen law, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the fiend levelling an ice glaive, spiked tail lashing, one jagged slab of conjured ice thrusting up from the ground beside it; a small human figure, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -4946,7 +4946,7 @@ Do not draw:
 
 ```text
 FROST GIANT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Frost Giant, Pale City Elite, huge: a blue-skinned giant that towers over humans, orcs and ogres alike, armoured in glacier-ice and wielding a greataxe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Frost Giant, Pale City Elite, huge: a blue-skinned giant that towers over humans, orcs and ogres alike, armoured in glacier-ice and wielding a greataxe, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide low-angle view of the giant striding through knee-deep drifts, greataxe raised overhead, a tiny human figure at its feet for scale, drawn small, light and secondary.
 Size: Huge: towering many times a human's size.
@@ -4973,7 +4973,7 @@ Do not draw:
 
 ```text
 WHITE DRAGON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of White Dragon, Pale City Elite, huge: a feral ice-crusted wyrm of pure predatory cold; it flies. Typical adult, alone, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of White Dragon, Pale City Elite, huge: a feral ice-crusted wyrm of pure predatory cold; it flies. Typical adult, alone, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide three-quarter view of the dragon perched on a jagged ice outcrop with wings half-raised, head lowered toward the viewer; a tiny human figure at the foot of the outcrop, drawn small, light and secondary, for scale.
 Size: Huge: towering many times a human's size.
@@ -5000,7 +5000,7 @@ Do not draw:
 
 ```text
 FIRE BEETLE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Fire Beetle, Sun-Drowned Minion, small: a dog-sized, hard-shelled beetle with a ruddy inner glow that lights tomb passages, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Fire Beetle, Sun-Drowned Minion, small: a dog-sized, hard-shelled beetle with a ruddy inner glow that lights tomb passages, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low side view of the beetle crawling over a small patch of sandy flagstones, mandibles open, light from its glands falling on the stone.
 Size: Small: smaller than a human.
@@ -5030,7 +5030,7 @@ Do not draw:
 
 ```text
 IMP - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Imp, Sun-Drowned Skirmisher, small: a knee-high bat-winged spiteful fiend with a barbed venomous tail that flits about tombs; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Imp, Sun-Drowned Skirmisher, small: a knee-high bat-winged spiteful fiend with a barbed venomous tail that flits about tombs; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the imp mid-flight, tail lashing forward, stinger raised, grinning.
 Size: Small: smaller than a human.
@@ -5058,7 +5058,7 @@ Do not draw:
 
 ```text
 SKELETON WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeleton Warrior, Sun-Drowned Minion, medium: a bare sun-bleached skeleton in corroded bronze scale, a priest-king's guard waiting centuries at its post, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Skeleton Warrior, Sun-Drowned Minion, medium: a bare sun-bleached skeleton in corroded bronze scale, a priest-king's guard waiting centuries at its post, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the skeleton standing at its post, curved bronze blade held at the ready, sand drifted around its feet.
 Size: Medium: about human-sized.
@@ -5088,7 +5088,7 @@ Do not draw:
 
 ```text
 CORPSEHOUND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Corpsehound, Sun-Drowned Skirmisher, medium: a jackal-headed, quick runner between man and beast that hunts caravans in loping packs with scimitar and jaws, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Corpsehound, Sun-Drowned Skirmisher, medium: a jackal-headed, quick runner between man and beast that hunts caravans in loping packs with scimitar and jaws, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the corpsehound mid-lope over a patch of rippled sand, scimitar trailing in one hand, jaws open, laughing.
 Size: Medium: about human-sized.
@@ -5116,7 +5116,7 @@ Do not draw:
 
 ```text
 GNOLL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Gnoll, Sun-Drowned Soldier, medium: a hyena-headed, rangy, hunger-ruled raider armed with a throwing spear and a longbow, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Gnoll, Sun-Drowned Soldier, medium: a hyena-headed, rangy, hunger-ruled raider armed with a throwing spear and a longbow, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the gnoll sprinting forward with a spear drawn back to throw, longbow slung across the back.
 Size: Medium: about human-sized.
@@ -5144,7 +5144,7 @@ Do not draw:
 
 ```text
 GIANT SCORPION - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Scorpion, Sun-Drowned Soldier, medium: a man-sized, banded chitin-plated desert scorpion with two crushing pincers and a venom-dripping sting arched over its back, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Giant Scorpion, Sun-Drowned Soldier, medium: a man-sized, banded chitin-plated desert scorpion with two crushing pincers and a venom-dripping sting arched over its back, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the scorpion lunging forward out of a shallow scrape in the sand where it lay half-buried, pincers wide, tail arched forward over its back.
 Size: Medium: about human-sized.
@@ -5174,7 +5174,7 @@ Do not draw:
 
 ```text
 SKELETON ARCHER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeleton Archer, Sun-Drowned Cannon, medium: a priest-king tomb skeleton set in a carved alcove centuries ago, its tomb bow still strung, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Skeleton Archer, Sun-Drowned Cannon, medium: a priest-king tomb skeleton set in a carved alcove centuries ago, its tomb bow still strung, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Frontal three-quarter view of the skeleton standing stiffly on a low carved stone plinth, loosing an arrow.
 Size: Medium: about human-sized.
@@ -5202,7 +5202,7 @@ Do not draw:
 
 ```text
 MUMMY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Mummy, Sun-Drowned Controller, medium: a priest-king's preserved corpse bound in resin-soaked wrappings, risen in wrath, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Mummy, Sun-Drowned Controller, medium: a priest-king's preserved corpse bound in resin-soaked wrappings, risen in wrath, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the mummy stepping forward, one arm raised in a cursing gesture, the other hanging with a fist.
 Size: Medium: about human-sized.
@@ -5230,7 +5230,7 @@ Do not draw:
 
 ```text
 SKELETAL BEAST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Skeletal Beast, Sun-Drowned Skirmisher, medium: the bound remains of a great desert predator, a charging framework of fang and claw, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Skeletal Beast, Sun-Drowned Skirmisher, medium: the bound remains of a great desert predator, a charging framework of fang and claw, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Side three-quarter view of the bone-framework beast at a full charge across open sand, jaws wide.
 Size: Medium: about human-sized.
@@ -5258,7 +5258,7 @@ Do not draw:
 
 ```text
 WIND ELEMENTAL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Wind Elemental, Sun-Drowned Skirmisher, large: a howling, near-invisible spiral of desert air that flings sand and bodies; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Wind Elemental, Sun-Drowned Skirmisher, large: a howling, near-invisible spiral of desert air that flings sand and bodies; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of a funnel-shaped vortex spinning over a small patch of scoured sand, defined by swirling sand lines, with a vague hollow face in the vortex; a small human figure staggering at its edge, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -5285,7 +5285,7 @@ Do not draw:
 
 ```text
 DESERT NAGA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Desert Naga, Sun-Drowned Controller, large: a great serpent with an almost-human face, old and patient, a guardian of the tomb-pillars, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Desert Naga, Sun-Drowned Controller, large: a great serpent with an almost-human face, old and patient, a guardian of the tomb-pillars, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the naga reared up tall from its own coils on a patch of drifted sand, torso raised high with the almost-human face turned to the viewer, mouth parted to spit; a small human figure, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -5314,7 +5314,7 @@ Do not draw:
 
 ```text
 FIRE ELEMENTAL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Fire Elemental, Sun-Drowned Cannon, large: a roaring man-shape of living flame, white-hot at the core and shedding embers, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Fire Elemental, Sun-Drowned Cannon, large: a roaring man-shape of living flame, white-hot at the core and shedding embers, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the elemental striding forward, both arms extended to touch, cinders smouldering in its footprints; a small human figure shielding its face, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -5341,7 +5341,7 @@ Do not draw:
 
 ```text
 GIANT SKELETON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Skeleton, Sun-Drowned Brute, large: a looming framework of fused bone twice a man's height with fists like falling masonry, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Giant Skeleton, Sun-Drowned Brute, large: a looming framework of fused bone twice a man's height with fists like falling masonry, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the colossus advancing with grinding steps, one massive fist raised to smash; a small human figure before it, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -5368,7 +5368,7 @@ Do not draw:
 
 ```text
 MEDUSA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Medusa, Sun-Drowned Elite, medium: a serpent-haired figure whose petrifying gaze fills the tomb-galleries with statues, fighting with shortsword and snake-hair, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Medusa, Sun-Drowned Elite, medium: a serpent-haired figure whose petrifying gaze fills the tomb-galleries with statues, fighting with shortsword and snake-hair, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the medusa advancing, shortsword in hand, serpent hair writhing, eyes fixed on the viewer; a toppled stone head of a petrified admirer lies at its feet.
 Size: Medium: about human-sized.
@@ -5397,7 +5397,7 @@ Do not draw:
 
 ```text
 TOMB NECROMANCER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tomb Necromancer, Sun-Drowned Controller, medium: a withered official in the faded regalia of a dead bureaucracy, raising the buried to enforce forgotten statutes, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tomb Necromancer, Sun-Drowned Controller, medium: a withered official in the faded regalia of a dead bureaucracy, raising the buried to enforce forgotten statutes, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the necromancer holding a court staff, one hand gesturing to the ground at its feet where skeletal hands break through the sand.
 Size: Medium: about human-sized.
@@ -5424,7 +5424,7 @@ Do not draw:
 
 ```text
 TOMB GUARDIAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tomb Guardian, Sun-Drowned Soldier, medium: a faceless construct of gilded stone and ritual standing at a threshold with a ceremonial glaive, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tomb Guardian, Sun-Drowned Soldier, medium: a faceless construct of gilded stone and ritual standing at a threshold with a ceremonial glaive, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Frontal three-quarter view of the guardian planted squarely on a worn threshold slab, ceremonial glaive held upright with its blade high.
 Size: Medium: about human-sized.
@@ -5452,7 +5452,7 @@ Do not draw:
 
 ```text
 BRASS GOLEM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Brass Golem, Sun-Drowned Brute, medium: a burnished automaton holding trapped forge-heat that hammers with searing fists, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Brass Golem, Sun-Drowned Brute, medium: a burnished automaton holding trapped forge-heat that hammers with searing fists, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the golem pounding both fists forward, heat shimmering around them.
 Size: Medium: about human-sized.
@@ -5479,7 +5479,7 @@ Do not draw:
 
 ```text
 MANTICORE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Manticore, Sun-Drowned Elite, large: a fusion of lion's body, bat's wings and a man's leering face that flicks volleys of iron spikes from its tail; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Manticore, Sun-Drowned Elite, large: a fusion of lion's body, bat's wings and a man's leering face that flicks volleys of iron spikes from its tail; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the manticore crouched on a patch of rippled sand, tail arched over its back with iron spikes fanned out, wings half open; a small human figure, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -5507,7 +5507,7 @@ Do not draw:
 
 ```text
 DEMON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Demon, Sun-Drowned Elite, huge: a horned iron-coloured fiend wreathed in clinging flame, wielding a hooked glaive, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Demon, Sun-Drowned Elite, huge: a horned iron-coloured fiend wreathed in clinging flame, wielding a hooked glaive, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide low-angle view of the demon striding out of a broken ward circle scratched on the ground, hooked glaive in both hands, fire clinging to its shoulders; a small human figure, drawn small, light and secondary, for scale.
 Size: Huge: towering many times a human's size.
@@ -5534,7 +5534,7 @@ Do not draw:
 
 ```text
 BLUE DRAGON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Blue Dragon, Sun-Drowned Elite, huge: a horned, sand-scaled wyrm that burrows beneath dunes and erupts in a lance of lightning; it flies and burrows. Typical adult, bursting from a dune, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Blue Dragon, Sun-Drowned Elite, huge: a horned, sand-scaled wyrm that burrows beneath dunes and erupts in a lance of lightning; it flies and burrows. Typical adult, bursting from a dune, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide low-angle view of the dragon bursting up out of a dune, sand cascading from its horns and shoulders, head thrown back; a tiny human figure on the sand, drawn small, light and secondary, for scale.
 Size: Huge: towering many times a human's size.
@@ -5561,7 +5561,7 @@ Do not draw:
 
 ```text
 BOGLING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Bogling, Mire Minion, small: a squat frog-mouthed swamp creature lurking chest-deep with a spear and mud-darts, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Bogling, Mire Minion, small: a squat frog-mouthed swamp creature lurking chest-deep with a spear and mud-darts, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the bogling standing chest-deep in reed-choked shallows, spear raised and a mud-dart in the other hand.
 Size: Small: smaller than a human.
@@ -5589,7 +5589,7 @@ Do not draw:
 
 ```text
 SWAMP GOBLIN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Goblin, Mire Minion, small: a slime-streaked goblin that paddles the Mire's channels and blows poisoned darts from the reeds, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Swamp Goblin, Mire Minion, small: a slime-streaked goblin that paddles the Mire's channels and blows poisoned darts from the reeds, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low three-quarter view of the goblin crouched knee-deep in shallow water among a few reeds, blowpipe at its lips, bog knife at the belt.
 Size: Small: smaller than a human.
@@ -5616,7 +5616,7 @@ Do not draw:
 
 ```text
 ZOMBIE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Zombie, Mire Minion, medium: a waterlogged corpse the Mire would not keep, lurching upright in tattered remains and reaching up from beneath walkways, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Zombie, Mire Minion, medium: a waterlogged corpse the Mire would not keep, lurching upright in tattered remains and reaching up from beneath walkways, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the zombie rising waist-deep from a patch of black water, one arm reaching up.
 Size: Medium: about human-sized.
@@ -5644,7 +5644,7 @@ Do not draw:
 
 ```text
 STIRGE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Stirge, Mire Minion, small: a cat-sized bloated mosquito-thing with a needle proboscis and a blood-swollen belly; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Stirge, Mire Minion, small: a cat-sized bloated mosquito-thing with a needle proboscis and a blood-swollen belly; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Close three-quarter view of the stirge mid-flight, proboscis lowered at an attack angle, wings a blur of lines.
 Size: Small: smaller than a human.
@@ -5674,7 +5674,7 @@ Do not draw:
 
 ```text
 WILL-O'-WISP - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Will-o'-Wisp, Mire Cannon, small: a drifting orb of pale corpse-light that lures travellers into the mire; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Will-o'-Wisp, Mire Cannon, small: a drifting orb of pale corpse-light that lures travellers into the mire; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A single orb of pale corpse-light hanging motionless above a few reed tips and a small patch of black water, like a false beacon.
 Size: Small: smaller than a human.
@@ -5701,7 +5701,7 @@ Do not draw:
 
 ```text
 LIZARDFOLK WARRIOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Warrior, Mire Soldier, medium: a scaled cold-eyed pack fighter with heavy club and javelin who defends its breeding-pools, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Lizardfolk Warrior, Mire Soldier, medium: a scaled cold-eyed pack fighter with heavy club and javelin who defends its breeding-pools, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the warrior on a patch of mud bank, stepping forward with a heavy club raised and a javelin held in the off hand.
 Size: Medium: about human-sized.
@@ -5729,7 +5729,7 @@ Do not draw:
 
 ```text
 LIZARDFOLK HUNTER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Hunter, Mire Cannon, medium: a patient silent lizard-man stalking the margins with a barbed harpoon, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Lizardfolk Hunter, Mire Cannon, medium: a patient silent lizard-man stalking the margins with a barbed harpoon, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the hunter crouched low among a few reeds at the water's edge, harpoon drawn back to throw, a coiled line trailing.
 Size: Medium: about human-sized.
@@ -5757,7 +5757,7 @@ Do not draw:
 
 ```text
 CROCODILE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Crocodile, Mire Skirmisher, large: a monstrous-length log-still ambusher exploding from the murk to drag victims under in a death-roll, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Crocodile, Mire Skirmisher, large: a monstrous-length log-still ambusher exploding from the murk to drag victims under in a death-roll, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the crocodile surging half out of the water, jaws gaping, spray flying; a small human figure on the bank, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -5787,7 +5787,7 @@ Do not draw:
 
 ```text
 LIZARDFOLK SHAMAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Lizardfolk Shaman, Mire Controller, medium: a reed-cloaked lizard-man who speaks for the swamp-spirits and heals its pack with a staff and spirit-bolts, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Lizardfolk Shaman, Mire Controller, medium: a reed-cloaked lizard-man who speaks for the swamp-spirits and heals its pack with a staff and spirit-bolts, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Full figure in three-quarter view standing knee-deep, staff raised, mouth open in a croaked invocation.
 Size: Medium: about human-sized.
@@ -5815,7 +5815,7 @@ Do not draw:
 
 ```text
 MIASMA SERPENT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Miasma Serpent, Mire Skirmisher, medium: a bloated water-snake that exhales poison clouds as it swims, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Miasma Serpent, Mire Skirmisher, medium: a bloated water-snake that exhales poison clouds as it swims, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the snake swimming in a small patch of still water with its head raised above the surface, haze rising from its open mouth.
 Size: Medium: about human-sized.
@@ -5843,7 +5843,7 @@ Do not draw:
 
 ```text
 SWAMP NAGA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Naga, Mire Controller, large: a great serpent with a hooded, watchful face from the drowned ruins, spitting venom and binding prey in its crushing length, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Swamp Naga, Mire Controller, large: a great serpent with a hooded, watchful face from the drowned ruins, spitting venom and binding prey in its crushing length, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low side view of the naga lying in loose coils in still black water, cobra-like hood flared wide, head raised and spitting venom; a small human figure on a patch of bank, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -5871,7 +5871,7 @@ Do not draw:
 
 ```text
 GIANT CONSTRICTOR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Giant Constrictor, Mire Skirmisher, medium: a snake long enough to bridge a channel that drops from overhanging branches to coil and crush, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Giant Constrictor, Mire Skirmisher, medium: a snake long enough to bridge a channel that drops from overhanging branches to coil and crush, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the snake hanging in loops from a single short bough, coils wrapping an empty rope-slung pack, head striking down.
 Size: Medium: about human-sized.
@@ -5899,7 +5899,7 @@ Do not draw:
 
 ```text
 SHAMBLING MOUND - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Shambling Mound, Mire Brute, large: a heaving mass of animate rot and creeper-vine, roughly man-shaped and tireless, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Shambling Mound, Mire Brute, large: a heaving mass of animate rot and creeper-vine, roughly man-shaped and tireless, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the mound lumbering through a small patch of shallow fen water, both vine-wrapped arms swinging in a slam; a small human figure, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -5927,7 +5927,7 @@ Do not draw:
 
 ```text
 SWAMP HAG - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Hag, Mire Controller, medium: a warty, weed-haired crone who poles through the Mire cursing all they meet, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Swamp Hag, Mire Controller, medium: a warty, weed-haired crone who poles through the Mire cursing all they meet, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the hag standing ankle-deep in black water, leaning on a long punting pole, one clawed hand pointed in a curse.
 Size: Medium: about human-sized.
@@ -5956,7 +5956,7 @@ Do not draw:
 
 ```text
 BANSHEE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Banshee, Mire Controller, medium: the shrieking translucent spirit of a woman drowned in grief; it flies, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Banshee, Mire Controller, medium: the shrieking translucent spirit of a woman drowned in grief; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the banshee drifting over a small patch of fog-covered water, mouth open in a wail, long hair streaming upward.
 Size: Medium: about human-sized.
@@ -5984,7 +5984,7 @@ Do not draw:
 
 ```text
 SWAMP TROLL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Swamp Troll, Mire Brute, large: a slime-green giant of reaching arms and a tusked maw that hauls itself on all fours through the Mire, regenerating wounds, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Swamp Troll, Mire Brute, large: a slime-green giant of reaching arms and a tusked maw that hauls itself on all fours through the Mire, regenerating wounds, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the troll heaving itself forward on all fours through a patch of black water, one huge clawed arm reaching; a small human figure, drawn small, light and secondary, for scale.
 Size: Large: roughly twice a human's height or bulk.
@@ -6012,7 +6012,7 @@ Do not draw:
 
 ```text
 HYDRA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Hydra, Mire Elite, huge: a many-headed reptilian horror wallowing in the Mire's deepest pools, each serpentine neck striking on its own, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Hydra, Mire Elite, huge: a many-headed reptilian horror wallowing in the Mire's deepest pools, each serpentine neck striking on its own, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide three-quarter view of the hydra rearing from a black pool, five to seven serpent necks striking in different directions, with three clearly biting; a small human figure at the pool's edge, drawn small, light and secondary, for scale.
 Size: Huge: towering many times a human's size.
@@ -6041,7 +6041,7 @@ Do not draw:
 
 ```text
 BLACKWATER WIGHT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Blackwater Wight, Mire Elite, medium: a barnacled drowned corpse-warrior rising from black pools with a life-drinking drowned blade, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Blackwater Wight, Mire Elite, medium: a barnacled drowned corpse-warrior rising from black pools with a life-drinking drowned blade, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of the wight wading up out of a black pool, drowned blade held low and water pouring from its armour.
 Size: Medium: about human-sized.
@@ -6069,7 +6069,7 @@ Do not draw:
 
 ```text
 MIRE TITAN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Mire Titan, Mire Brute, huge: a colossal froglike amphibian horror of warty hide and lashing tentacles with a vast distensible maw. Typical individual, alone, waist-deep in fen water, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Mire Titan, Mire Brute, huge: a colossal froglike amphibian horror of warty hide and lashing tentacles with a vast distensible maw. Typical individual, alone, waist-deep in fen water, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide low view of the titan standing waist-deep in fen water, reeds and mud sliding from its body, three tentacles raised and mouth partly open; a small human figure at a safe distance, drawn small, light and secondary, for scale.
 Size: Huge: towering many times a human's size.
@@ -6096,7 +6096,7 @@ Do not draw:
 
 ```text
 BLACK DRAGON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Black Dragon, Mire Elite, huge: a sleek horned wyrm the colour of stagnant water with an acid breath; it flies and swims. Typical adult, alone, rising from open black water, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Black Dragon, Mire Elite, huge: a sleek horned wyrm the colour of stagnant water with an acid breath; it flies and swims. Typical adult, alone, rising from open black water, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide low-angle view of the dragon rising from open black water, acid dripping from its jaws, wings partly lifting; a tiny human figure on the near bank, drawn small, light and secondary, for scale.
 Size: Huge: towering many times a human's size.
@@ -6127,7 +6127,7 @@ Printed 2.6 in wide · aspect 3:2. Family framing: The unique named boss shown w
 
 ```text
 THE ANCIENT VOID DRAGON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ancient Void Dragon, a boss wyrm older than the Fall and perhaps its cause, whose scales drink light and whose breath unmakes substance, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Ancient Void Dragon, a boss wyrm older than the Fall and perhaps its cause, whose scales drink light and whose breath unmakes substance, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Night sky over a barren crag; the dragon is drawn mostly as negative space, a wyrm-shaped absence of untouched paper edged by fine contour lines, stars dimming around it. A broken watchtower stands small at the bottom for scale.
 Size: Huge: towering many times a human's size.
@@ -6156,7 +6156,7 @@ Do not draw:
 
 ```text
 THE HOLLOW CROWN OF THE ASHLANDS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Hollow Crown of the Ashlands, a black iron circlet that rules the dead empire's legions in place of its last emperor; its throne room is the whole of the ruined empire, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Hollow Crown of the Ashlands, a black iron circlet that rules the dead empire's legions in place of its last emperor; its throne room is the whole of the ruined empire, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A vast ruined hall open to a sooty sky; a black iron circlet hovers above an empty regent's robe on a ruined throne at the far end, ranks of dead legionaries kneeling in rows below it.
 Size: Medium: about human-sized.
@@ -6188,7 +6188,7 @@ Do not draw:
 
 ```text
 THE LAST COLOSSUS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Last Colossus, a walking fortress of riveted black iron three times a man's height, the empire's last war-construct, marching the same patrol for centuries, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Last Colossus, a walking fortress of riveted black iron three times a man's height, the empire's last war-construct, marching the same patrol for centuries, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A cracked imperial road seen from a low angle; the Colossus marches toward the viewer, a small human figure at its feet for scale.
 Size: Huge: towering many times a human's size.
@@ -6221,7 +6221,7 @@ Do not draw:
 
 ```text
 AVATAR OF THE OLD GROWTH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Avatar of the Old Growth, the will of the deep forest given a body: a towering shape of trunk and grasping root, bark-skinned, crowned with antlered branches, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Avatar of the Old Growth, the will of the deep forest given a body: a towering shape of trunk and grasping root, bark-skinned, crowned with antlered branches, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Seen from the edge of a clearing at ground level; the tree-giant rises far above the canopy, roots dragging behind in furrows, its crown a tangle of antlered branches against the sky.
 Size: Huge: towering many times a human's size.
@@ -6252,7 +6252,7 @@ Do not draw:
 
 ```text
 THE BROODMOTHER PRIME - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Broodmother Prime, mother of every giant spider in the deep, a bloated cottage-sized horror squatting in the deepest dark of the Undermarches, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Broodmother Prime, mother of every giant spider in the deep, a bloated cottage-sized horror squatting in the deepest dark of the Undermarches, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A vast webbed cavern seen from a ledge; the Broodmother squats at the centre, egg-sacs trailing and twitching, cocooned victims hanging in the webs.
 Size: Huge: towering many times a human's size.
@@ -6283,7 +6283,7 @@ Do not draw:
 
 ```text
 CAPTAIN VEYR OF THE FORSAKEN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Captain Veyr of the Forsaken, the empire's greatest captain, who swore the company would never break and holds them past death, a duelist with paired blades, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Captain Veyr of the Forsaken, the empire's greatest captain, who swore the company would never break and holds them past death, a duelist with paired blades, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A ruined road in a trampled battlefield at dusk; Veyr stands in the middle ground, spectral plate, paired blades raised, rallying a line of dead soldiers behind them, seen at a low angle.
 Size: Medium: about human-sized.
@@ -6317,7 +6317,7 @@ Do not draw:
 
 ```text
 THE FROST BAILIFF MAGISTRATE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Frost Bailiff Magistrate, the Pale City court's undying enforcer who passes final judgement, freezing the guilty where they stand, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Frost Bailiff Magistrate, the Pale City court's undying enforcer who passes final judgement, freezing the guilty where they stand, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A frozen avenue of the Pale City in perspective; the Magistrate drifts in judicial robes in the middle distance, a figure freezing solid before it in the foreground.
 Size: Medium: about human-sized.
@@ -6349,7 +6349,7 @@ Do not draw:
 
 ```text
 THE SUN-CROWNED PRINCE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Sun-Crowned Prince, the greatest priest-king, who bound his soul into a crown of beaten gold and still rules his sealed tomb-court, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Sun-Crowned Prince, the greatest priest-king, who bound his soul into a crown of beaten gold and still rules his sealed tomb-court, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Sealed tomb-court in one-point perspective; the Prince sits enthroned at the far end, a withered corpse in funeral linen beneath a bright crown, skeletal subjects ranged along both sides.
 Size: Medium: about human-sized.
@@ -6380,7 +6380,7 @@ Do not draw:
 
 ```text
 THE ANTLERED WARDEN OF THE TITHE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Antlered Warden of the Tithe, the antlered robed figure admitted at Greythorn's west gate each winter to collect the forest's due, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Antlered Warden of the Tithe, the antlered robed figure admitted at Greythorn's west gate each winter to collect the forest's due, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Greythorn's timber west gate in winter snow at dusk; the towering Warden stands in the gateway dragging an indebted man by the collar, the town wall behind.
 Size: Large: roughly twice a human's height or bulk.
@@ -6414,7 +6414,7 @@ Do not draw:
 
 ```text
 THE VOICE BENEATH THE BELLS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Voice Beneath the Bells, a child-shaped figure of grief singing in a drowned chapel; its song hollows out all who hear, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Voice Beneath the Bells, a child-shaped figure of grief singing in a drowned chapel; its song hollows out all who hear, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Interior of a flooded chapel; a small child-shaped figure stands at the edge of guttering torchlight in knee-deep water, bells hanging silent above in the dark.
 Size: Small: smaller than a human.
@@ -6445,7 +6445,7 @@ Do not draw:
 
 ```text
 MAELTHORN THE VERDANT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Maelthorn the Verdant, a vast wyrm the deep green of stagnant pondwater, furred with moss, to whom Greythorn sends its autumn tithe in place of a war party, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Maelthorn the Verdant, a vast wyrm the deep green of stagnant pondwater, furred with moss, to whom Greythorn sends its autumn tithe in place of a war party, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Forest clearing at ground level; Maelthorn coils among the tithe offerings, moss and lichen furring its scales, poison fog spilling from its jaws across the clearing.
 Size: Huge: towering many times a human's size.
@@ -6477,7 +6477,7 @@ Do not draw:
 
 ```text
 SIRRACH THE BLACK - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Sirrach the Black, the Undermarches' buried king, a black wyrm that swims through solid stone and surfaces only to feed, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Sirrach the Black, the Undermarches' buried king, a black wyrm that swims through solid stone and surfaces only to feed, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 An unmapped gallery of the Undermarches in profile; Sirrach erupts out of solid stone, the rock rippling like water around its black body.
 Size: Huge: towering many times a human's size.
@@ -6506,7 +6506,7 @@ Do not draw:
 
 ```text
 VISATH THE WHITE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Visath the White, the Pale City's eternal winter in the body of a wyrm, who rules from the highest spire, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Visath the White, the Pale City's eternal winter in the body of a wyrm, who rules from the highest spire, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Looking up at the highest frozen spire of the Pale City; Visath perches on its tip with wings spread, victims locked mid-scream in the ice below.
 Size: Huge: towering many times a human's size.
@@ -6535,7 +6535,7 @@ Do not draw:
 
 ```text
 KHORRUN THE DRACOLICH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Khorrun the Dracolich, a dragon that has not drawn breath since the Fall, coiled on its hoard in the sealed tomb-galleries beneath the Sun-Drowned, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Khorrun the Dracolich, a dragon that has not drawn breath since the Fall, coiled on its hoard in the sealed tomb-galleries beneath the Sun-Drowned, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Tomb gallery interior in wide view; Khorrun's skeletal dragon body draped in tattered scale coils atop a hoard, ledgers stacked to the ceiling around it.
 Size: Huge: towering many times a human's size.
@@ -6564,7 +6564,7 @@ Do not draw:
 
 ```text
 VOSSEGAR OF THE FLOODED CATHEDRAL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Vossegar of the Flooded Cathedral, a sleek black acid wyrm that lairs in a drowned cathedral at The Mire's heart and takes tribute from every settlement, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Vossegar of the Flooded Cathedral, a sleek black acid wyrm that lairs in a drowned cathedral at The Mire's heart and takes tribute from every settlement, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Looking down the nave of a drowned cathedral; Vossegar coils among submerged altars and broken pillars, black water rising around the nave.
 Size: Huge: towering many times a human's size.
@@ -6597,7 +6597,7 @@ Printed 3.3 in wide · aspect 3:2. Family framing: The scenario's key place and 
 
 ```text
 SCENARIO 1: HUNT THE WILD BEAST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Hunt the Wild Beast, a Greenmark scenario set in a Greythorn logging camp whose palisade timbers have been driven through and splintered by a Great Forest Boar that has made the deep wood its hunting ground, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Hunt the Wild Beast, a Greenmark scenario set in a Greythorn logging camp whose palisade timbers have been driven through and splintered by a Great Forest Boar that has made the deep wood its hunting ground, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide, slightly raised view of a smashed logging camp at early morning, a game trail leading from its ruined palisade into dense forest in the middle distance. The beast is only a vast dim hump among the trees far back.
 SUBJECT DETAILS
@@ -6629,7 +6629,7 @@ Do not draw:
 
 ```text
 SCENARIO 2: THE WHISPERING GROVE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Whispering Grove, an ancient Greenmark clearing older than Greythorn, with humming standing stones where pale lights move on moonless nights and farmers leave bread as part of the tithe, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Whispering Grove, an ancient Greenmark clearing older than Greythorn, with humming standing stones where pale lights move on moonless nights and farmers leave bread as part of the tithe, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Night scene in a forest clearing seen from the tree edge; three tall standing stones dominate the middle, small pale lights drifting between them, a loaf of bread on the nearest stone.
 SUBJECT DETAILS
@@ -6659,7 +6659,7 @@ Do not draw:
 
 ```text
 SCENARIO 3: THE BANDIT'S TOLL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Bandit's Toll, a Greenmark scenario where a toll crew has claimed a bend of the western forest road, the artery carrying Deepwarden iron, Reedmarch salt and grain, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Bandit's Toll, a Greenmark scenario where a toll crew has claimed a bend of the western forest road, the artery carrying Deepwarden iron, Reedmarch salt and grain, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 View along the forest trail toward a makeshift log barricade at a bend; waiting stolen wagons behind it and bandits lounging. The viewer stands on the road with a caravan queue behind, in the foreground, small.
 SUBJECT DETAILS
@@ -6691,7 +6691,7 @@ Do not draw:
 
 ```text
 SCENARIO 4: THE SPIDER'S SILK ROUTE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Spider's Silk Route, a hidden Greenmark ravine where the Broodmother's daughters spin webs that hold steel like thread and fetch absurd prices in Bastion markets, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Spider's Silk Route, a hidden Greenmark ravine where the Broodmother's daughters spin webs that hold steel like thread and fetch absurd prices in Bastion markets, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 View from the high thorny rim down into a ravine bridged and filled with web sheets; silk bundles hang in the webs and a few spiders lurk. Thorn brambles frame the foreground edge.
 SUBJECT DETAILS
@@ -6721,7 +6721,7 @@ Do not draw:
 
 ```text
 SCENARIO 5: THE AMBUSHED EMISSARY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ambushed Emissary, a Greenmark scenario where an emissary carrying documents sealed under two rival Bastion laws vanished on the western forest road and is now held in a makeshift bandit camp deep in the wood, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Ambushed Emissary, a Greenmark scenario where an emissary carrying documents sealed under two rival Bastion laws vanished on the western forest road and is now held in a makeshift bandit camp deep in the wood, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Dusk view from behind a screen of roots and ferns looking across a small clearing at a makeshift bandit camp; the bound emissary sits by a post near a lean-to while a reeve stands guard. Dropped clues are strewn across the lower foreground.
 SUBJECT DETAILS
@@ -6755,7 +6755,7 @@ Do not draw:
 
 ```text
 SCENARIO 6: RITUAL OF THE OLD GROWTH - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Ritual of the Old Growth, a Greenmark scenario in which an Old Growth Treant elder works slowly over a sickness in the roots beneath a Mother Tree, with a Heartwood Totem at the heart of the rite, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Ritual of the Old Growth, a Greenmark scenario in which an Old Growth Treant elder works slowly over a sickness in the roots beneath a Mother Tree, with a Heartwood Totem at the heart of the rite, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low angle among great roots looking up the trunk of the Mother Tree; the Treant is a partial towering shape of bark and branches kneeling among roots, the carved Heartwood Totem standing between them.
 SUBJECT DETAILS
@@ -6785,7 +6785,7 @@ Do not draw:
 
 ```text
 SCENARIO 1: THE FALLEN OBSERVATORY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Fallen Observatory, an Ashlands scenario in ruins once crowned by a star-engine, whose broken brass arms still turn when moonlight enters the cracked dome, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Fallen Observatory, an Ashlands scenario in ruins once crowned by a star-engine, whose broken brass arms still turn when moonlight enters the cracked dome, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Interior of the cracked dome at night looking up past a central pedestal; brass arms of an orrery tilt through a broken opening where the moon shows, instruments scattered across shifting floors.
 SUBJECT DETAILS
@@ -6816,7 +6816,7 @@ Do not draw:
 
 ```text
 SCENARIO 2: THE GUARDIAN'S TEST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Guardian's Test, an Ashlands scenario set in a courtyard dominated by a sealed gate black with soot and old prayers, beyond which a vault waits and worthiness is tested, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Guardian's Test, an Ashlands scenario set in a courtyard dominated by a sealed gate black with soot and old prayers, beyond which a vault waits and worthiness is tested, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 One-point perspective across a colonnaded courtyard toward the sealed gate in the far wall; three small trial pedestals ahead and a tiny party of heroes in the lower middle. Overcast daylight.
 SUBJECT DETAILS
@@ -6847,7 +6847,7 @@ Do not draw:
 
 ```text
 SCENARIO 3: THE SHIFTING SANDS OF TIME - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Shifting Sands of Time, an Ashlands ruin that does not keep time honestly: glyphs flare, soot drifts uphill and stone opens underfoot, while relics surface and sink, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Shifting Sands of Time, an Ashlands ruin that does not keep time honestly: glyphs flare, soot drifts uphill and stone opens underfoot, while relics surface and sink, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide view of a ruined court from a rubble rise; the impossible behaviours are shown in the middle ground with a tiny traveller stepping onto a slab.
 SUBJECT DETAILS
@@ -6878,7 +6878,7 @@ Do not draw:
 
 ```text
 SCENARIO 4: THE SEALED ARCHIVE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Sealed Archive, an Ashlands scenario under a fractured basilica containing tablets, scrolls, debt records and sermons the Sable Watch would rather burn, kept in order by something older, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Sealed Archive, an Ashlands scenario under a fractured basilica containing tablets, scrolls, debt records and sermons the Sable Watch would rather burn, kept in order by something older, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 One-point perspective down a dust-choked corridor of shelves toward a central hall with a lectern; newer shelves gnawed in the foreground, inner stacks orderly beyond.
 SUBJECT DETAILS
@@ -6910,7 +6910,7 @@ Do not draw:
 
 ```text
 SCENARIO 5: THE RELIQUARY OF BROKEN SAINTS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Reliquary of Broken Saints, an Ashlands hall filled with broken statues and smashed reliquaries, its sanctified bone and silver guarded by dead who swore an oath, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Reliquary of Broken Saints, an Ashlands hall filled with broken statues and smashed reliquaries, its sanctified bone and silver guarded by dead who swore an oath, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 View from the entrance down a long nave toward a raised altar platform; broken saint statues line the aisles, two armoured figures stand motionless by the altar.
 SUBJECT DETAILS
@@ -6940,7 +6940,7 @@ Do not draw:
 
 ```text
 SCENARIO 6: THE IRON-VEIN VAULT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Iron-Vein Vault, an Ashlands vault sealed for two generations with Karnessa Iron-Vein's blood on its iron door, now cracked by tremors as something below pushes, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Iron-Vein Vault, an Ashlands vault sealed for two generations with Karnessa Iron-Vein's blood on its iron door, now cracked by tremors as something below pushes, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Central chamber seen from the entrance hall; the massive iron door fills the far wall, with a pressed handprint of old blood and three binding marks, hairline cracks and dark seepage around its frame.
 SUBJECT DETAILS
@@ -6971,7 +6971,7 @@ Do not draw:
 
 ```text
 SCENARIO 1: THE CRYSTAL HARVEST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Crystal Harvest, an Undermarches scenario in a new cavern beneath the broken mountains whose crystal veins pulse with cold light and drag iron filings across the floor, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Crystal Harvest, an Undermarches scenario in a new cavern beneath the broken mountains whose crystal veins pulse with cold light and drag iron filings across the floor, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide cavern interior from a tunnel mouth; clusters of crystal in the middle ground, iron filings forming radial lines on the floor toward them, glowing fungi dots near the walls.
 SUBJECT DETAILS
@@ -7002,7 +7002,7 @@ Do not draw:
 
 ```text
 SCENARIO 2: THE CHASM CROSSING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Chasm Crossing, an Undermarches scenario where a chasm splits the caverns and is crossed only by narrow broken ledges, with things clinging to the stone below, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Chasm Crossing, an Undermarches scenario where a chasm splits the caverns and is crossed only by narrow broken ledges, with things clinging to the stone below, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Looking along a line of broken stone ledges bridging a black chasm from near end, receding in perspective; lantern light at the near end only.
 SUBJECT DETAILS
@@ -7033,7 +7033,7 @@ Do not draw:
 
 ```text
 SCENARIO 3: THE QUAKE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Quake, an Undermarches scenario in old mining tunnels that shook themselves open before dawn, with gemstone veins glimmering where support beams snapped and the exits blocked, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Quake, an Undermarches scenario in old mining tunnels that shook themselves open before dawn, with gemstone veins glimmering where support beams snapped and the exits blocked, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Mid-collapse view down a mining gallery with falling dust; snapped timber props and rubble in the foreground, a gem vein glimmering in a broken wall.
 SUBJECT DETAILS
@@ -7063,7 +7063,7 @@ Do not draw:
 
 ```text
 SCENARIO 4: THE UNDERMARCHES OUTPOST RAID - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Undermarches Outpost Raid, a scenario where an outpost lies below an old road shrine, holding plans for a surface incursion and the officer who drew them, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Undermarches Outpost Raid, a scenario where an outpost lies below an old road shrine, holding plans for a surface incursion and the officer who drew them, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Looking down through a broken shrine floor opening into a lamp-lit underground outpost: guard towers, low walls and a central command tent; two scouts at the hole's edge.
 SUBJECT DETAILS
@@ -7094,7 +7094,7 @@ Do not draw:
 
 ```text
 SCENARIO 5: THE SHADOWED UNDER PASSAGE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Shadowed Under Passage, an Undermarches passage touched by a colder dark than stone can explain, where shadows lie against the light and a Heart of Shadow waits below, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Shadowed Under Passage, an Undermarches passage touched by a colder dark than stone can explain, where shadows lie against the light and a Heart of Shadow waits below, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 A winding narrow passage seen from a lantern-lit near end into a mostly black bend; the lantern's shadow lies toward the lamp instead of away.
 SUBJECT DETAILS
@@ -7124,7 +7124,7 @@ Do not draw:
 
 ```text
 SCENARIO 6: THE RITUAL OF SHADOW BINDING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ritual of Shadow Binding, an Undermarches cavern without honest light where deep elf priests have drawn a binding circle around something answering from below the Dark, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Ritual of Shadow Binding, an Undermarches cavern without honest light where deep elf priests have drawn a binding circle around something answering from below the Dark, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Looking down from a ledge into a central cavern; a large binding circle on the floor ringed by three dark orbs, with robed priests around it and a tall Shadow Caller at its centre, small.
 SUBJECT DETAILS
@@ -7155,7 +7155,7 @@ Do not draw:
 
 ```text
 SCENARIO 1: PLUNDER OF THE FROZEN RUINS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Plunder of the Frozen Ruins, a Pale City scenario where a promising ruin has cracked open under the snow and Hearthhold parties raid the treasures of citizens who froze too fast to hide them, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Plunder of the Frozen Ruins, a Pale City scenario where a promising ruin has cracked open under the snow and Hearthhold parties raid the treasures of citizens who froze too fast to hide them, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Overhead three-quarter view into a crack in a snow-buried street revealing a frozen room with chests and frozen citizens; the party lowers a rope at the rim.
 SUBJECT DETAILS
@@ -7186,7 +7186,7 @@ Do not draw:
 
 ```text
 SCENARIO 2: THE ALCHEMIST'S FROZEN LABORATORY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Alchemist's Frozen Laboratory, a Pale City scenario in the ice-locked Silent District where an alchemist's laboratory remains sealed under frost with benches, bottles and guardians preserved, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Alchemist's Frozen Laboratory, a Pale City scenario in the ice-locked Silent District where an alchemist's laboratory remains sealed under frost with benches, bottles and guardians preserved, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Interior at eye level; a frost-furred workbench of glassware in the foreground, a large alchemical golem standing in the shadow at the back, door ajar with daylight.
 SUBJECT DETAILS
@@ -7216,7 +7216,7 @@ Do not draw:
 
 ```text
 SCENARIO 3: THE HAUNTED MAUSOLEUM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Haunted Mausoleum, a Pale City scenario of a noble White Court family's mausoleum under the ice, doors still sealed, heirlooms polished by cold and watched by names too proud to fade, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Haunted Mausoleum, a Pale City scenario of a noble White Court family's mausoleum under the ice, doors still sealed, heirlooms polished by cold and watched by names too proud to fade, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Approach down a stair carved in ice to the mausoleum entrance; sealed bronze doors ahead, pale faces just visible in the ice walls.
 SUBJECT DETAILS
@@ -7246,7 +7246,7 @@ Do not draw:
 
 ```text
 SCENARIO 4: THE CLOCKWORK MENAGERIE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Clockwork Menagerie, a Pale City scenario in a frozen Deepwarden tinker's workshop full of brass legs, biting gears and small minds wound tight around old orders, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Clockwork Menagerie, a Pale City scenario in a frozen Deepwarden tinker's workshop full of brass legs, biting gears and small minds wound tight around old orders, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Workshop interior; tables, pipework and conveyor, with three brass animal automata awake and mid-step, gears bright; a heap of dust and tinker's tools on a stool in the foreground.
 SUBJECT DETAILS
@@ -7276,7 +7276,7 @@ Do not draw:
 
 ```text
 SCENARIO 5: THE ICE WYRM'S HOARD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Ice Wyrm's Hoard, a Pale City scenario of a frozen cavern beneath the north road out of Hearthhold holding jewels and gold with a wyrm coiled upon it, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Ice Wyrm's Hoard, a Pale City scenario of a frozen cavern beneath the north road out of Hearthhold holding jewels and gold with a wyrm coiled upon it, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low view from the tunnel mouth into a large ice cavern; a gleaming hoard mound at the centre, and only part of a coiled, watchful body with one open eye and one wing edge seen beyond an ice pillar.
 SUBJECT DETAILS
@@ -7306,7 +7306,7 @@ Do not draw:
 
 ```text
 SCENARIO 6: THE ICEBOUND COURT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Icebound Court, a Pale City sanctum of blue glass and frozen banners where the Frost Bailiff Magistrate still sits and the Heartfrost Shard lies at the centre, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Icebound Court, a Pale City sanctum of blue glass and frozen banners where the Frost Bailiff Magistrate still sits and the Heartfrost Shard lies at the centre, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Looking down the sanctum from its entrance; frozen banners hang along walls of blue glass, carved ice servants line both sides, the Shard on a plinth mid-hall and an Ice Throne with a tiny seated Magistrate at the far end.
 SUBJECT DETAILS
@@ -7336,7 +7336,7 @@ Do not draw:
 
 ```text
 SCENARIO 1: THE OASIS RAIDERS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Oasis Raiders, a Sun-Drowned scenario in which raiders hold a vital oasis south of the mountain passes: its wells, its shade and the people too slow to flee, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Oasis Raiders, a Sun-Drowned scenario in which raiders hold a vital oasis south of the mountain passes: its wells, its shade and the people too slow to flee, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 From a dune crest looking down on an oasis pool with palms, raiders' camp in the shade, captives gathered, rocky outcrops and dunes beyond.
 SUBJECT DETAILS
@@ -7368,7 +7368,7 @@ Do not draw:
 
 ```text
 SCENARIO 2: THE CINDER LORD'S LOST BRAZIER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Cinder Lord's Lost Brazier, a Sun-Drowned scenario in scorched ruins where a brass brazier holds the ember of a bound Cinder Lord, to be found through searching ancient pillars, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Cinder Lord's Lost Brazier, a Sun-Drowned scenario in scorched ruins where a brass brazier holds the ember of a bound Cinder Lord, to be found through searching ancient pillars, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Dusk view across a ruined plaza with a low altar at the centre and three scorched pillars around it; the half-buried brass brazier glimpsed in rubble in the foreground.
 SUBJECT DETAILS
@@ -7399,7 +7399,7 @@ Do not draw:
 
 ```text
 SCENARIO 3: TOMB OF THE SUNKEN KINGS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Tomb of the Sunken Kings, a Sun-Drowned scenario in which the sand has drawn back from a priest-king tomb complex and gilded chambers show through the heat shimmer, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Tomb of the Sunken Kings, a Sun-Drowned scenario in which the sand has drawn back from a priest-king tomb complex and gilded chambers show through the heat shimmer, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Looking down a sand-cut descent toward a tomb entrance of pillars and a gilded door; a tiny party at the top, a mummy figure in the doorway.
 SUBJECT DETAILS
@@ -7430,7 +7430,7 @@ Do not draw:
 
 ```text
 SCENARIO 4: THE SANDWYRM'S LAIR - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Sandwyrm's Lair, a Sun-Drowned scenario in a broad basin of loose sand south of the passes where nomad legend places a vast shape beneath the dunes, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Sandwyrm's Lair, a Sun-Drowned scenario in a broad basin of loose sand south of the passes where nomad legend places a vast shape beneath the dunes, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide shot of a sand basin from a rock shelf; a long furrow in the sand and a swirling patch of shifting sand at the centre, the creature not seen.
 SUBJECT DETAILS
@@ -7461,7 +7461,7 @@ Do not draw:
 
 ```text
 SCENARIO 5: THE CURSED COLOSSUS OF THE WASTE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Cursed Colossus of the Waste, a Sun-Drowned scenario centred on a colossal priest-king statue broken at the waist, still angry, with a Heartstone lodged in its hollow chest, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Cursed Colossus of the Waste, a Sun-Drowned scenario centred on a colossal priest-king statue broken at the waist, still angry, with a Heartstone lodged in its hollow chest, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low view from a dune toward the colossal broken statue rising from the sand; the hollow chest cavity a black opening; broken statuary around the base.
 SUBJECT DETAILS
@@ -7491,7 +7491,7 @@ Do not draw:
 
 ```text
 SCENARIO 6: THE CINDER LORD'S OBSIDIAN PRISON - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Cinder Lord's Obsidian Prison, a Sun-Drowned scenario of an obsidian dais burning without fuel at the centre of a ruin, with a Cinder Lord straining against its binding, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Cinder Lord's Obsidian Prison, a Sun-Drowned scenario of an obsidian dais burning without fuel at the centre of a ruin, with a Cinder Lord straining against its binding, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Night scene looking up at a black obsidian dais with flames rising, three glyphic stones around it, and a vague silhouette within the fire; broken columns frame the view.
 SUBJECT DETAILS
@@ -7521,7 +7521,7 @@ Do not draw:
 
 ```text
 SCENARIO 1: THE RELIQUARY OF EDRAVA SALTTIDE - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Reliquary of Edrava Salttide, a Mire scenario at a Sunken Barrow, a grave-house sealed for two hundred years until recent floods opened it, holding the reliquary of the salt-coast's last great toll-lord, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Reliquary of Edrava Salttide, a Mire scenario at a Sunken Barrow, a grave-house sealed for two hundred years until recent floods opened it, holding the reliquary of the salt-coast's last great toll-lord, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Dawn mist view from a reed-fringed bog island toward a mossy barrow mound with a low flooded entrance at its base; a party wades through shallows in the lower foreground, small. The mound dominates the centre.
 SUBJECT DETAILS
@@ -7552,7 +7552,7 @@ Do not draw:
 
 ```text
 SCENARIO 2: THE LIZARDFOLK'S STOLEN OFFERINGS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Lizardfolk's Stolen Offerings, a Mire scenario at a deep-fen lizardfolk shrine encampment raided before dawn, its Sunstone Amulet and offering piles dragged off into the reeds, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Lizardfolk's Stolen Offerings, a Mire scenario at a deep-fen lizardfolk shrine encampment raided before dawn, its Sunstone Amulet and offering piles dragged off into the reeds, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Pre-dawn view across the raised-ground swamp encampment of rope walkways and reed screens; empty offering plinths in the foreground and a drag trail leading into the reeds, with lizardfolk temple-guards small and alert.
 SUBJECT DETAILS
@@ -7586,7 +7586,7 @@ Do not draw:
 
 ```text
 SCENARIO 3: THE MIRE TITAN'S FEN - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Mire Titan's Fen, a Mire scenario of a bubbling fen where glimmering geodes lie scattered through a Mire Titan's territory like bait, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Mire Titan's Fen, a Mire scenario of a bubbling fen where glimmering geodes lie scattered through a Mire Titan's territory like bait, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Wide view across the fen from a muddy bank; geodes glint on hummocks in the middle ground and a vast humped back breaks the pools far out. Razor reeds frame the left edge.
 SUBJECT DETAILS
@@ -7617,7 +7617,7 @@ Do not draw:
 
 ```text
 SCENARIO 4: THE BLIGHTED HEARTWOOD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Blighted Heartwood, a Mire scenario in which blight has wrapped swamp growth around a pulsing Heartwood that beats under the bark like a buried organ, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Blighted Heartwood, a Mire scenario in which blight has wrapped swamp growth around a pulsing Heartwood that beats under the bark like a buried organ, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Close, slightly low view at the edge of the Blighted Grove; a huge swamp tree with a swollen, vein-ridged bulge in its trunk fills the centre, thorny vines and muck pools around it, a treant guardian partly seen behind.
 SUBJECT DETAILS
@@ -7647,7 +7647,7 @@ Do not draw:
 
 ```text
 SCENARIO 5: SALTTIDE'S RECKONING - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of Salttide's Reckoning, a Mire scenario of a sacred island cursed like oil on water, where Edrava Salttide has made a ritual of the place and turns it on the living who entered without paying the toll, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of Salttide's Reckoning, a Mire scenario of a sacred island cursed like oil on water, where Edrava Salttide has made a ritual of the place and turns it on the living who entered without paying the toll, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 View across still oily water from the reed line toward a ritual island; reeds on both banks lean toward the island, three carved effigies stand on it with a robed figure among them.
 SUBJECT DETAILS
@@ -7678,7 +7678,7 @@ Do not draw:
 
 ```text
 SCENARIO 6: THE SERPENT'S SUNKEN HOARD - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Serpent's Sunken Hoard, a Mire scenario of a flooded sinkhole opened in the black water, where something ancient coils below over a hoard, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Serpent's Sunken Hoard, a Mire scenario of a flooded sinkhole opened in the black water, where something ancient coils below over a hoard, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 High angle onto a circular sinkhole pool in black water with crumbling banks; hoard chests glimpsed deep below and a long coil shown only as ripples and a darker line under the surface.
 SUBJECT DETAILS
@@ -7708,7 +7708,7 @@ Do not draw:
 
 ```text
 A.4 QUICKSTART SCENARIO: THE BROKEN COURIER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Broken Courier, the quickstart scenario in which a royal courier was cut down on the old road and two small parties race for the dispatch satchel before wolves or rivals claim it, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Broken Courier, the quickstart scenario in which a royal courier was cut down on the old road and two small parties race for the dispatch satchel before wolves or rivals claim it, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Overcast morning view along an old road with a low ruined wall in the centre; the fallen courier and satchel lie beside the ruin, four wolves at the edge, tiny hero pairs at the far left and right.
 SUBJECT DETAILS
@@ -7743,7 +7743,7 @@ Printed 2.6 in wide · aspect 3:2. Family framing: Interior or architectural vie
 
 ```text
 11.1 CAMPAIGN OVERVIEW - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of a Stronghold, a claim driven into a dying world with coin, fear, salvage and stubborn labour, built of stones from ruined shrines, watch-keeps and broken bridges, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of a Stronghold, a claim driven into a dying world with coin, fear, salvage and stubborn labour, built of stones from ruined shrines, watch-keeps and broken bridges, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of a stronghold under construction on a hill; workers haul shrine stones and broken bridge spans up a ramp, scaffolding around a half-built keep.
 SUBJECT DETAILS
@@ -7775,7 +7775,7 @@ Do not draw:
 
 ```text
 THE VAULT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Vault, a Stronghold facility that is a sealed confession of greed, iron-bound and watched by clerks who sleep in shifts, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Vault, a Stronghold facility that is a sealed confession of greed, iron-bound and watched by clerks who sleep in shifts, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low-ceilinged interior at eye level; a clerk dozes on a stool beside iron-bound chests and coin scales while a second clerk counts coins by candle.
 SUBJECT DETAILS
@@ -7806,7 +7806,7 @@ Do not draw:
 
 ```text
 THE BARRACKS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Barracks, a Stronghold dormitory smelling of straw, sweat, damp wool and boiled leather, with names carved into the beams, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Barracks, a Stronghold dormitory smelling of straw, sweat, damp wool and boiled leather, with names carved into the beams, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Interior down the length of a long room under heavy beams; rows of straw bunks, one empty bunk in the foreground with a helmet left on it.
 SUBJECT DETAILS
@@ -7836,7 +7836,7 @@ Do not draw:
 
 ```text
 THE ARMOURY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Armoury, a Stronghold store of salvaged arms smelling of oil, wet leather, coal smoke and old violence, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Armoury, a Stronghold store of salvaged arms smelling of oil, wet leather, coal smoke and old violence, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Interior wall view; racks of salvaged arms behind a worn oil-cloth bench in the foreground.
 SUBJECT DETAILS
@@ -7864,7 +7864,7 @@ Do not draw:
 
 ```text
 THE APOTHECARY - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Apothecary, a Stronghold workroom built around heat, glass, knives, bone saws and bitter herbs, stocked with tinctures from The Mire and salts from the Sun-Drowned, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Apothecary, a Stronghold workroom built around heat, glass, knives, bone saws and bitter herbs, stocked with tinctures from The Mire and salts from the Sun-Drowned, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Cramped workroom interior at eye level; glass alembics over a brazier at the centre, shelves of jars behind.
 SUBJECT DETAILS
@@ -7894,7 +7894,7 @@ Do not draw:
 
 ```text
 THE OUTER WALLS - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Outer Walls, the Stronghold's ditch, spiked palisade and stone wall that make the dark work harder, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Outer Walls, the Stronghold's ditch, spiked palisade and stone wall that make the dark work harder, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Night view from outside the ditch looking up at the wall; warding nails driven into the timbers, a lone sentry with a torch on the walkway.
 SUBJECT DETAILS
@@ -7924,7 +7924,7 @@ Do not draw:
 
 ```text
 THE ARCANUM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Arcanum, a Stronghold tower that rises too thin and too tall, windows burning at hours when honest fires should be dead, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Arcanum, a Stronghold tower that rises too thin and too tall, windows burning at hours when honest fires should be dead, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Looking up at the tower against a night sky; upper windows burn and brass instruments on the roof turn toward a storm.
 SUBJECT DETAILS
@@ -7952,7 +7952,7 @@ Do not draw:
 
 ```text
 THE STRONGHOLD CHAPEL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Stronghold Chapel, small, cold and crowded with votive offerings from those who survived by inches, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Stronghold Chapel, small, cold and crowded with votive offerings from those who survived by inches, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Interior at eye level looking toward a small altar; chipped saint statues and votives crowd the walls, a single survivor stands at the altar lighting a votive candle.
 SUBJECT DETAILS
@@ -7983,7 +7983,7 @@ Do not draw:
 
 ```text
 THE WAR ROOM - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the War Room, where contracts are signed, debts denied and maps stained, with a hearth beneath banners taken from ruins, enemies and dead patrons, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the War Room, where contracts are signed, debts denied and maps stained, with a hearth beneath banners taken from ruins, enemies and dead patrons, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Interior across a heavy table toward the hearth; captured banners hang above, stained maps pinned with knives.
 SUBJECT DETAILS
@@ -8011,7 +8011,7 @@ Do not draw:
 
 ```text
 THE EXPEDITION HALL - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Expedition Hall, a packed-earth training yard with split-post walls where veterans correct recruits, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Expedition Hall, a packed-earth training yard with split-post walls where veterans correct recruits, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Three-quarter view of a training yard; a scarred veteran corrects a recruit's guard, blunted weapons on a rack, mud underfoot.
 SUBJECT DETAILS
@@ -8042,7 +8042,7 @@ Do not draw:
 
 ```text
 THE UNDERCROFT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
-Create an exceptionally detailed black-and-white pen-and-ink illustration of the Undercroft, a warren of cellars, sealed drains and hidden doors older than the Stronghold above, in the dark fantasy world of Heraldry Skirmish. The artwork should resemble a meticulously hand-drawn illustration from a classic 1970s-1990s fantasy tabletop roleplaying game rulebook.
+Create a hand-inked black-and-white illustration of the Undercroft, a warren of cellars, sealed drains and hidden doors older than the Stronghold above, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
 Low-angle view in a vaulted cellar warren lit by a single lantern; a hidden door ajar, a cloaked figure slipping into an older passage below.
 SUBJECT DETAILS

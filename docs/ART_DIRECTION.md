@@ -2,6 +2,16 @@
 
 This document governs atmospheric illustration and art planning. MASTER_PROMPT.md governs source fidelity, asset QA, and placement. The manuscript, not this brief, supplies setting facts.
 
+## Hand-inked direction (owner, 2026-10-11)
+
+The owner judged the first ChatGPT Work calibration images "too hyper detailed, AI-like, low-resolution". The target is "a notch more hand drawn and authentic human art-like". The examples are the owner's three samples (STYLE-REF-01, -02 and -03, below) plus a Dying Lands map kept as line inspiration (`assets/art/style/STYLE-INSPIRATION-map-dying-lands.png`; it carries lettering, so it is never attached). Consequences:
+
+- Prompts (`prompt_v2` in `config/art_style.json`) ask for confident hand-inked line with dip pen and brush, economy of line, selective hatching, generous open paper and detail only at the focus. They no longer ask for "exceptionally detailed", "intricate crosshatching" or stippling, wording that drove the hyper-detailed look.
+- Only the owner's samples are attached as references. Generated images, even approved ones, are never style references, so model output cannot compound its own drift.
+- Resolution: the queue size is the minimum at a fixed aspect, and Work requests the largest size offered.
+- Model: GPT Image 2.5 Sunburst if ChatGPT Work offers it; the model shown is recorded in each receipt.
+- The five calibration anchors of 2026-10-11 were set back to redo under this direction. Greythorn, the owner's own render from the owner's verbatim prompt, stays approved but is no longer a style reference.
+
 ## Shared style (owner-defined 2026-10-08)
 
 The operative wording is `style` in `config/art_style.json`. It was derived from three owner samples, kept privately in `assets/art/style/` and never packaged:

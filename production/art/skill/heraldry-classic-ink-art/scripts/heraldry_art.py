@@ -309,8 +309,10 @@ def evaluate(m, item):
     fails, warns, infos = [], [], []
     w, h = m["px"]
     ew, eh = (int(x) for x in item["size"].split("x"))
-    if (w, h) != (ew, eh):
-        fails.append(f"native dimensions {w}x{h} do not exactly match queue {ew}x{eh}: reviewer exception needed after attempt budget")
+    # The queue size is the minimum at a fixed aspect (owner 2026-10-11): larger native images at the same aspect pass.
+    if w < ew or h < eh or abs(w * eh - h * ew) > 0.01 * ew * h:
+        fails.append(f"native dimensions {w}x{h} are smaller than or not the aspect of the queue minimum {ew}x{eh}: "
+                     "request the largest size the tool offers at that aspect; reviewer exception needed after attempt budget")
     if m["format"] not in IMAGE_EXT:
         fails.append(f"format {m['format']}: the image must be PNG, JPEG or WEBP")
     if max(w, h) < T["min_long_side"]:
