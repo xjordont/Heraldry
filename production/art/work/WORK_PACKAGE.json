@@ -5,19 +5,19 @@
  "created_from": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "1125a8ccc6cd592e335bb21c8940e8e2a8eb19d4",
-  "commit_date": "2026-10-11T15:17:00+00:00",
+  "commit": "f923515cea4880e2a3c1957a0cac20f763124cb3",
+  "commit_date": "2026-10-11T15:23:58+00:00",
   "dirty": false
  },
  "source": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "1125a8ccc6cd592e335bb21c8940e8e2a8eb19d4",
-  "commit_date": "2026-10-11T15:17:00+00:00"
+  "commit": "f923515cea4880e2a3c1957a0cac20f763124cb3",
+  "commit_date": "2026-10-11T15:23:58+00:00"
  },
  "queue": {
   "path": "production/art/gpt/QUEUE.json",
-  "sha256": "0886da7a1d3cfc9c23a608df48d94da8d07373f9cd18237cc90d8ee3240fc2a2",
+  "sha256": "7cc21af511b1885d872bd1212bca5ada7465f4265a5fc8c2ed9030f1cee6ebd4",
   "phase": "batch",
   "count": 270,
   "ids": [
@@ -292,7 +292,7 @@
    "ART-CH11-002",
    "ART-COVER-002"
   ],
-  "generated_at": "2026-10-11T15:16:10+00:00"
+  "generated_at": "2026-10-11T15:23:39+00:00"
  },
  "prompts": [
   {
@@ -302,8 +302,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -314,8 +314,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -326,8 +326,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -338,8 +338,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -350,8 +350,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -2726,8 +2726,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -2738,8 +2738,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -2750,8 +2750,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -2762,8 +2762,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -2774,8 +2774,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -2786,8 +2786,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -2798,8 +2798,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -2810,8 +2810,8 @@
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ]
   },
@@ -3516,12 +3516,12 @@
  ],
  "references": [
   {
-   "path": "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-   "sha256": "8a797125940c3f7def70c80ab4b819812f54116a93daabc3acf89f7cc9e50cd8",
-   "format": "JPEG",
+   "path": "assets/art/style/STYLE-REF-11-city-approach-ink.png",
+   "sha256": "c4421e981228f908033645b583258dffe1a6b5adad195a8cc7248f39e4cdb1f8",
+   "format": "PNG",
    "px": [
-    1440,
-    732
+    1581,
+    995
    ],
    "used_by": [
     "ART-BAS-DEEPWARDEN",
@@ -3529,63 +3529,6 @@
     "ART-BAS-REEDMARCH",
     "ART-BAS-SABLEKEEP",
     "ART-BAS-SALTSPIRE",
-    "ART-CLI-THE-ASHLANDS",
-    "ART-CLI-THE-MIRE",
-    "ART-CLI-THE-PALE-CITY",
-    "ART-CLI-THE-SUN-DROWNED",
-    "ART-CLI-THE-UNDERMARCHES",
-    "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
-    "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
-    "ART-MON-KHORRUN-THE-DRACOLICH",
-    "ART-MON-MAELTHORN-THE-VERDANT",
-    "ART-MON-SIRRACH-THE-BLACK",
-    "ART-MON-THE-ANCIENT-VOID-DRAGON",
-    "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
-    "ART-MON-THE-BROODMOTHER-PRIME",
-    "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
-    "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
-    "ART-MON-THE-LAST-COLOSSUS",
-    "ART-MON-THE-SUN-CROWNED-PRINCE",
-    "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
-    "ART-MON-VISATH-THE-WHITE",
-    "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
-    "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
-    "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
-    "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
-    "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
-    "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
-    "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS",
-    "ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT",
-    "ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA",
-    "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING",
-    "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE",
-    "ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST",
-    "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER",
-    "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
-    "ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL",
-    "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM",
-    "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN",
-    "ART-SCE-SCENARIO-3-THE-QUAKE",
-    "ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME",
-    "ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS",
-    "ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD",
-    "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE",
-    "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR",
-    "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE",
-    "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE",
-    "ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID",
-    "ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING",
-    "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY",
-    "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA",
-    "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
-    "ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT",
-    "ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE",
-    "ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH",
-    "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR",
-    "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT",
-    "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
-    "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
-    "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
     "ART-WOR-1-2-THE-GRIM-WORLD",
     "ART-WOR-1-3-1-THE-FALL",
     "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
@@ -3593,54 +3536,16 @@
     "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS",
     "ART-WOR-1-3-5-MONSTROUS-THREATS",
     "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
-    "ART-WOR-1-3-7-LEGENDS-AND-ECHOES",
-    "ART-CAM-11-1-CAMPAIGN-OVERVIEW",
-    "ART-CAM-THE-APOTHECARY",
-    "ART-CAM-THE-ARCANUM",
-    "ART-CAM-THE-ARMOURY",
-    "ART-CAM-THE-BARRACKS",
-    "ART-CAM-THE-EXPEDITION-HALL",
-    "ART-CAM-THE-OUTER-WALLS",
-    "ART-CAM-THE-STRONGHOLD-CHAPEL",
-    "ART-CAM-THE-UNDERCROFT",
-    "ART-CAM-THE-VAULT",
-    "ART-CAM-THE-WAR-ROOM",
-    "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
-    "ART-TRA-TIER-1-DIVINE-PRAYERS-D20",
-    "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
-    "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20",
-    "ART-TRA-TIER-1-SORCERIES-D20",
-    "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
-    "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
-    "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20",
-    "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20",
-    "ART-TRA-TIER-2-SORCERIES-D20",
-    "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
-    "ART-TRA-TIER-3-DIVINE-PRAYERS-D20",
-    "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
-    "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20",
-    "ART-TRA-TIER-3-SORCERIES-D20",
-    "ART-CH01-002",
-    "ART-CH02-002",
-    "ART-CH03-002",
-    "ART-CH04-002",
-    "ART-CH05-002",
-    "ART-CH06-002",
-    "ART-CH07-002",
-    "ART-CH08-002",
-    "ART-CH09-002",
-    "ART-CH10-002",
-    "ART-CH11-002",
-    "ART-COVER-002"
+    "ART-WOR-1-3-7-LEGENDS-AND-ECHOES"
    ]
   },
   {
-   "path": "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-   "sha256": "333021be2755c3993e009a240b07d016267472abb742ff3b1e9a0db65d22fba9",
+   "path": "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+   "sha256": "8a797125940c3f7def70c80ab4b819812f54116a93daabc3acf89f7cc9e50cd8",
    "format": "JPEG",
    "px": [
-    1394,
-    875
+    1440,
+    732
    ],
    "used_by": [
     "ART-BAS-DEEPWARDEN",
@@ -3832,6 +3737,112 @@
     "ART-WOR-1-3-5-MONSTROUS-THREATS",
     "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
     "ART-WOR-1-3-7-LEGENDS-AND-ECHOES",
+    "ART-CAM-11-1-CAMPAIGN-OVERVIEW",
+    "ART-CAM-THE-APOTHECARY",
+    "ART-CAM-THE-ARCANUM",
+    "ART-CAM-THE-ARMOURY",
+    "ART-CAM-THE-BARRACKS",
+    "ART-CAM-THE-EXPEDITION-HALL",
+    "ART-CAM-THE-OUTER-WALLS",
+    "ART-CAM-THE-STRONGHOLD-CHAPEL",
+    "ART-CAM-THE-UNDERCROFT",
+    "ART-CAM-THE-VAULT",
+    "ART-CAM-THE-WAR-ROOM",
+    "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-1-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20",
+    "ART-TRA-TIER-1-SORCERIES-D20",
+    "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20",
+    "ART-TRA-TIER-2-SORCERIES-D20",
+    "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
+    "ART-TRA-TIER-3-DIVINE-PRAYERS-D20",
+    "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
+    "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20",
+    "ART-TRA-TIER-3-SORCERIES-D20",
+    "ART-CH01-002",
+    "ART-CH02-002",
+    "ART-CH03-002",
+    "ART-CH04-002",
+    "ART-CH05-002",
+    "ART-CH06-002",
+    "ART-CH07-002",
+    "ART-CH08-002",
+    "ART-CH09-002",
+    "ART-CH10-002",
+    "ART-CH11-002",
+    "ART-COVER-002"
+   ]
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+   "sha256": "333021be2755c3993e009a240b07d016267472abb742ff3b1e9a0db65d22fba9",
+   "format": "JPEG",
+   "px": [
+    1394,
+    875
+   ],
+   "used_by": [
+    "ART-CLI-THE-ASHLANDS",
+    "ART-CLI-THE-MIRE",
+    "ART-CLI-THE-PALE-CITY",
+    "ART-CLI-THE-SUN-DROWNED",
+    "ART-CLI-THE-UNDERMARCHES",
+    "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
+    "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
+    "ART-MON-KHORRUN-THE-DRACOLICH",
+    "ART-MON-MAELTHORN-THE-VERDANT",
+    "ART-MON-SIRRACH-THE-BLACK",
+    "ART-MON-THE-ANCIENT-VOID-DRAGON",
+    "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
+    "ART-MON-THE-BROODMOTHER-PRIME",
+    "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
+    "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
+    "ART-MON-THE-LAST-COLOSSUS",
+    "ART-MON-THE-SUN-CROWNED-PRINCE",
+    "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
+    "ART-MON-VISATH-THE-WHITE",
+    "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
+    "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
+    "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+    "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
+    "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
+    "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
+    "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS",
+    "ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT",
+    "ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA",
+    "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING",
+    "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE",
+    "ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST",
+    "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER",
+    "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
+    "ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL",
+    "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM",
+    "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN",
+    "ART-SCE-SCENARIO-3-THE-QUAKE",
+    "ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME",
+    "ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS",
+    "ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD",
+    "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE",
+    "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR",
+    "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE",
+    "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE",
+    "ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID",
+    "ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING",
+    "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY",
+    "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA",
+    "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
+    "ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT",
+    "ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE",
+    "ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH",
+    "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR",
+    "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT",
+    "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
+    "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
+    "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
     "ART-CAM-11-1-CAMPAIGN-OVERVIEW",
     "ART-CAM-THE-APOTHECARY",
     "ART-CAM-THE-ARCANUM",
@@ -4384,8 +4395,8 @@
  "files": [
   {
    "path": "START_HERE.md",
-   "sha256": "54d216181e6e13e65ab8bcd359aa84dfbc20fe5492a8a77a8309e309b5c172ea",
-   "bytes": 71588,
+   "sha256": "1490eae222956a417e6fc8fedff0a461ddce1abe5d4b78c987d2dc9ab0cce542",
+   "bytes": 71601,
    "role": "instructions"
   },
   {
@@ -4431,9 +4442,15 @@
    "role": "reference"
   },
   {
+   "path": "assets/art/style/STYLE-REF-11-city-approach-ink.png",
+   "sha256": "c4421e981228f908033645b583258dffe1a6b5adad195a8cc7248f39e4cdb1f8",
+   "bytes": 4639900,
+   "role": "reference"
+  },
+  {
    "path": "config/art_style.json",
-   "sha256": "d90fc66dd5df9de5580f674cc20ff8e6110036df37ed8435ad5b784806158033",
-   "bytes": 17658,
+   "sha256": "1218da9b3e1f86d67d89de14bcacede2e56d0a09866ad8728ffb380f1f4af178",
+   "bytes": 18510,
    "role": "config"
   },
   {
@@ -4450,14 +4467,14 @@
   },
   {
    "path": "production/art/gpt/QUEUE.json",
-   "sha256": "0886da7a1d3cfc9c23a608df48d94da8d07373f9cd18237cc90d8ee3240fc2a2",
-   "bytes": 227007,
+   "sha256": "7cc21af511b1885d872bd1212bca5ada7465f4265a5fc8c2ed9030f1cee6ebd4",
+   "bytes": 227020,
    "role": "queue"
   },
   {
    "path": "production/art/gpt/QUEUE.md",
-   "sha256": "1b90b8b3097a04e10194eaf17c0f71ee34828b68c25457066bab71427788d249",
-   "bytes": 37258,
+   "sha256": "db533dc15830f60797807a98cfa22a1ac62513d8461ec03d69c827f4abc99c20",
+   "bytes": 37431,
    "role": "queue"
   },
   {
@@ -6089,8 +6106,8 @@
   },
   {
    "path": "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip",
-   "sha256": "2ab97bfbb4a1238b384893bc066926836d19611d3bc07bd781b1b3d36a13f0c1",
-   "bytes": 3574006,
+   "sha256": "4743fb239a745c7f84f5c86afc971b33f3c030841080e3604ec10a3218990fa7",
+   "bytes": 7939030,
    "role": "skill_zip"
   },
   {
@@ -6155,8 +6172,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/references/STYLE.md",
-   "sha256": "eef887331adc24a2de7d7bb0f2fe1d7cdc23fa0ce83d7806533821aebd49d192",
-   "bytes": 4717,
+   "sha256": "57ff5d4bf8e5abdfd957f90d4a9e8cf8ed1ceddad28192a19e7e7baa316b4f4b",
+   "bytes": 4901,
    "role": "skill"
   },
   {
