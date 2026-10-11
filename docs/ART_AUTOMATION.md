@@ -82,11 +82,11 @@ Only `approved` and `anchor-approved` art is placed in the book.
 
 ## The ChatGPT Work skill (v4; superseded by v6 below)
 
-`production/art/skill/heraldry-classic-ink-art/` is the source of the skill ChatGPT Work runs, and `production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip` is the installable build. It replaces the owner's v3.1 draft, which planned one scene per conversation, used one style reference for every family, sized images from a preset table that disagreed with the layout slots, and had no queue, receipts or gates. The skill's README lists each change and why.
+`production/art/skill/heraldry-classic-ink-art/` is the source of the skill ChatGPT Work runs, and `production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip` is the installable build. It replaces the owner's v3.1 draft, which planned one scene per conversation, used one style reference for every family, sized images from a preset table that disagreed with the layout slots, and had no queue, receipts or gates. The skill's README lists each change and why.
 
 - `SKILL.md` is the procedure: session start, phases, the per-item loop, ten hard fails, batches and commits, stop conditions.
 - `scripts/heraldry_art.py` has `doctor`, `status`, `next`, `show`, `check`, `save`, `refuse`, `sheet` and `bundle`. `check` reports mechanical tripwires calibrated on the approved Greythorn render, the three owner samples and synthetic defects. Its colour, mid-tone and border measures use the same formulas as `tools/art_ink.py`, and a test keeps them in step.
-- `tools/art_skill_build.py` writes `references/FAMILIES.md` from `config/art_style.json` and builds the zip deterministically, with byte-identical copies of the repo's reference images and a hash manifest. `python production/art/skill/heraldry-classic-ink-art/scripts/validate_skill.py --zip production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip` (from the repo root) checks the zip and its agreement with the repo.
+- `tools/art_skill_build.py` writes `references/FAMILIES.md` from `config/art_style.json` and builds the zip deterministically, with byte-identical copies of the repo's reference images and a hash manifest. `python production/art/skill/heraldry-classic-ink-art/scripts/validate_skill.py --zip production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip` (from the repo root) checks the zip and its agreement with the repo.
 - `tests/test_art_skill.py` fails if the zip is older than its sources or the reference images, if `FAMILIES.md` disagrees with the config, or if the queue schema changes under the helper. After any change to the skill sources, the reference sets or the reference images, run `python3 tools/art_skill_build.py` and commit the zip.
 
 Claude Code still owns the prompts, queue, references, review and approval. The skill only runs the queue and checks what it delivers.
@@ -125,7 +125,7 @@ The owner set up Codex on a Windows PC with the owner's GitHub login, Git, Git L
 
 The owner asked for an efficient, automated run of every planned image after one go-ahead.
 
-- **Queue:** the batch is published with 270 items, every unapproved illustration including the Giant Tarantula redo. `push_every: 10`. Anchors are Greythorn plus the four approved hand-inked images; the tarantula left the anchor gate and is an ordinary redo.
+- **Queue:** the batch is published with 270 items, every unapproved illustration including the Giant Tarantula redo. `push_every: 10` (later 1, with a drift review every 10). Anchors are Greythorn plus the four approved hand-inked images; the tarantula left the anchor gate and is an ordinary redo.
 - **Unattended delivery:** `delivery_guard.py ship` fast-forwards over the intake bot's commits when they touch none of the delivered files, and retries a lost push race, undoing only its own unpublished commit. Before this, every delivery after the first stopped with "main advanced". Divergence or overlap still stops.
 - **Codex token budget:**
   - `production/art/codex/BATCH_CARD.md` is the whole contract on one page, replacing about 59 KB of per-session reading.
@@ -146,10 +146,10 @@ The owner asked for an efficient, automated run of every planned image after one
 ## Gritty old-school direction (owner, 2026-10-11, later)
 
 The art benchmark moved to gritty old-school black-and-white ink. `docs/ART_DIRECTION.md` has the details.
-- **References:** STYLE-REF-03 to STYLE-REF-10 are attached per register, at most 3 per item. The ink-wash examples are mood only, and STYLE-REF-01/02 are superseded.
+- **References** (later remapped in v7; see below): STYLE-REF-03 to STYLE-REF-10 are attached per register, at most 3 per item. The ink-wash examples are mood only, and STYLE-REF-01/02 are superseded.
 - **Prompts:** `prompt_v2` carries the new wording, and the batch queue was republished.
 - **Pipeline:** the checks are unchanged. Pure black ink only, and grey wash still fails.
-- **First run:** the first Codex run after the change should stop after 5 images for review.
+- **First run:** superseded by the v7 lead order (see the skill v7 section).
 
 ## Skill v7 and reference mapping v7 (owner, 2026-10-11)
 
@@ -169,4 +169,4 @@ The owner asked for the reference library to be completed and remapped, the prom
   - The reference docs have version-free names, and the obsolete v6 `deployment/` folder is removed.
   - `work_preflight --require-installed` checks for v7.
   - The ZIP carries every attachable reference.
-- **Run:** Codex uses `production/art/codex/CODEX_PROMPT.md` unchanged; the authorization line runs the whole queue. For a first look at the new mapping, add `Stop after 10 delivered images.`: the first ten cover every reference set.
+- **Run:** Codex uses `production/art/codex/CODEX_PROMPT.md` unchanged; the authorization line runs the whole queue. For a first look at the new mapping, add `Stop after 17 delivered images.`: the first seventeen cover every reference set.

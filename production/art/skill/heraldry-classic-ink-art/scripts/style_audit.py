@@ -29,6 +29,9 @@ def record(repo, item):
     if len(found)>1:
         raise ValueError(f'multiple native formats for {iid}')
     src=found[0]
+    with src.open('rb') as fh:
+        if fh.read(23)==b'version https://git-lfs':
+            return None                    # a skip-smudge clone holds others' images as pointers: nothing to measure
     with Image.open(src) as im:
         im.verify()
     d=diagnostics(src, [])['candidate']
@@ -90,9 +93,14 @@ def main(argv=None):
     ap.add_argument('--repo',default='.')
     ap.add_argument('--limit',type=int,default=10)
     ap.add_argument('--recent',type=int,default=0,help='the last N saved queue images (drift review window)')
-    ap.add_argument('--out',required=True)
+    ap.add_argument('--out',help='report path outside the clone (default: the helper scratch folder)')
     args=ap.parse_args(argv)
-    repo=Path(args.repo).resolve();out=Path(args.out).resolve()
+    repo=Path(args.repo).resolve()
+    if args.out:
+        out=Path(args.out).resolve()
+    else:
+        from heraldry_art import scratch_dir
+        out=scratch_dir(repo)/'style_audit.json'
     if args.limit<1 or out==repo or repo in out.parents:
         ap.error('positive --limit and an --out path outside the repository required')
     try:
@@ -101,8 +109,9 @@ def main(argv=None):
         out.write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     except (ValueError,OSError,KeyError) as e:
         print('ERROR: '+str(e),file=sys.stderr);return 2
-    print(json.dumps({'report':str(out),'images':report['total_saved_checked'],
-                      'advisories':len(report['warnings'])},indent=2))
+    print(f"style audit: {report['total_saved_checked']} images, {len(report['warnings'])} advisories (report: {out})")
+    for w in report['warnings']:
+        print(f"  {w['id']}: {w['advisory']}")
     return 0
 
 if __name__=='__main__':sys.exit(main())

@@ -156,9 +156,8 @@ if __name__ == '__main__':
     unittest.main()
 
 
-@unittest.skipUnless(HAVE, 'git required')
-class PerImageCadence(unittest.TestCase):
-    """push_every 1: deliver after each image; drift review only every review_every images."""
+class CadenceRepo(unittest.TestCase):
+    """Fixture only (no tests): a git repo with a four-item queue, for the status/cadence tests below."""
     def setUp(self):
         import heraldry_art as ha
         self.ha = ha
@@ -201,6 +200,11 @@ class PerImageCadence(unittest.TestCase):
             self.ha.main(['--repo', str(self.repo), 'status'])
         return buf.getvalue()
 
+
+
+@unittest.skipUnless(HAVE, 'git required')
+class PerImageCadence(CadenceRepo):
+    """push_every 1: deliver after each image; drift review only every review_every images."""
     def test_deliver_each_image_and_review_every_third(self):
         self.queue(3)
         self.make(0); self.make(1)
@@ -219,7 +223,7 @@ class PerImageCadence(unittest.TestCase):
 
 
 @unittest.skipUnless(HAVE, 'git required')
-class RefusalReopens(PerImageCadence):
+class RefusalReopens(CadenceRepo):
     """A refusal binds to the prompt it was made against; a republished prompt reopens the item."""
     def test_refusal_reopens_after_the_prompt_changes(self):
         self.queue(10)
@@ -231,3 +235,28 @@ class RefusalReopens(PerImageCadence):
         self.items[0]['prompt_sha256'] = hashlib.sha256(b'ink 0, fixed').hexdigest()
         self.queue(10)
         self.assertEqual(st(), 'pending')
+
+
+@unittest.skipUnless(HAVE, 'git required')
+class DriftCountIsMonotonic(CadenceRepo):
+    """A rejection turns a pushed item back into a redo; that must not re-trigger the drift review."""
+    def test_a_rejection_does_not_repeat_the_drift_review(self):
+        self.queue(3)
+        for n in range(3):
+            self.make(n)
+        git(self.repo, 'add', '-A'); git(self.repo, 'commit', '-qm', 'three delivered')    # review was due at 3
+        (self.repo / 'production/art/SELECTIONS.json').write_text(json.dumps(
+            {'ART-T0': {'status': 'rejected', 'rejected_reason': 'redo', 'master': {'sha256': None}}}))
+        self.make(3)                                   # the fourth save: plain delivery, not another review
+        out = self.status()
+        self.assertIn('DELIVER:', out)
+        self.assertNotIn('DRIFT REVIEW', out)
+
+    def test_style_audit_skips_images_held_as_lfs_pointers(self):
+        import style_audit as sa
+        self.queue(10)
+        self.make(0); self.make(1)
+        (self.repo / 'assets/art/incoming/ART-T1.png').write_bytes(b'version https://git-lfs.github.com/spec/v1\noid sha256:' + b'a' * 64 + b'\nsize 1\n')
+        rep = sa.build(self.repo, recent=10)
+        self.assertEqual([r['id'] for r in rep['items']], ['ART-T0'])
+        self.assertEqual(self.ha.recent_ids(self.repo, self.ha.load_queue(self.repo), 10), ['ART-T0'])

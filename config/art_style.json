@@ -473,7 +473,14 @@
   "ART-CLA-RANGER",
   "ART-BAC-SMUGGLER",
   "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
-  "ART-CAM-THE-ARMOURY"
+  "ART-CAM-THE-ARMOURY",
+  "ART-MON-GIANT-SCORPION",
+  "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+  "ART-MON-THE-LAST-COLOSSUS",
+  "ART-WOR-1-2-THE-GRIM-WORLD",
+  "ART-ITE-7-8-MELEE-WEAPONS",
+  "ART-CH01-002",
+  "ART-COVER-002"
  ],
- "gpt_lead_note": "Queue order v7: these ten go first (after any redo), one per reference set, so the first drift review after 10 images tests every set before the bulk of the run."
+ "gpt_lead_note": "Queue order: these seventeen go first (after any redo), one per reference set, so the first two drift reviews (images 10 and 20) cover every set before the bulk of the run."
 }

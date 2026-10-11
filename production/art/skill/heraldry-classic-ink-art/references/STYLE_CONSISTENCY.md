@@ -31,8 +31,8 @@ All comparison statistics are **advisory**; image contents and page density legi
 
 ## Anti-drift batch review
 
-Before each 5–10 image delivery, make a labelled contact sheet of originals with references and their actual print-size previews. Compare by register (scene with scene, creature/person with the figure reference, still life with still-life references). Look for creeping grey, heavier/fainter contours, cloned posing, lower contrast, inconsistent paper, or crowding. When at least two siblings show the same drift, STOP and report the trend to Claude Code; it should review the reference selection or prompt upstream.
+Every tenth saved image (`status` says DRIFT REVIEW), run `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10`. Compare by register (scene with scene, creature/person with the figure reference, still life with still-life references). Look for creeping grey, heavier/fainter contours, cloned posing, lower contrast, inconsistent paper, or crowding. Deliver in every case. When at least two siblings show the same drift, deliver, then STOP and report the trend to Claude Code; it reviews the reference selection or prompt upstream.
 
-## Anchor gate
+## Approval
 
-The initial five anchors are a calibration gate, not approval. Produce and deliver only those. Await independent review and an updated queue before generating the full catalogue. **Neither self-attested checks nor code metrics are editorial approval.**
+**Neither self-attested checks nor code metrics are editorial approval.** Claude Code reviews every delivered image; only an `anchors` phase, if one is ever published, stops for that review.

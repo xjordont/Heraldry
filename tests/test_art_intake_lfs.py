@@ -23,8 +23,11 @@ class NeedsPull(unittest.TestCase):
             (inc / "ART-OLD.png").write_bytes(pointer(old))
             (inc / "ART-NEW.png").write_bytes(pointer(new))
             (inc / "ART-CHG.png").write_bytes(pointer(changed))
+            (inc / "ART-CH01-001.png").write_bytes(pointer("e" * 64))     # a legacy master: not a catalog entry, never fetched
             sels = {"ART-OLD": {"master": {"sha256": old}}, "ART-CHG": {"master": {"sha256": "d" * 64}}}
+            ents = [{"id": i} for i in ("ART-OLD", "ART-NEW", "ART-CHG")]
             with mock.patch.object(ai, "ROOT", root), mock.patch.object(ai, "INCOMING", inc), \
+                 mock.patch.object(ai.g, "entries", return_value=ents), \
                  mock.patch.object(ai.g, "load", side_effect=lambda p, d=None: sels if "SELECTIONS" in str(p) else (d if d is not None else {})):
                 self.assertEqual(ai.needs_pull(), ["assets/art/incoming/ART-CHG.png", "assets/art/incoming/ART-NEW.png"])
                 self.assertEqual(ai.pointer_oid(pointer(old)), old)

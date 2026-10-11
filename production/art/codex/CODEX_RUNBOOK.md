@@ -58,11 +58,9 @@ $env:PYTHONUTF8 = "1"
 
 The preflight should say `READY` with `delivery: git_lfs`. Show the complete preflight, doctor, and status outputs. Stop on `BLOCKED` or `NOT READY`; report the output verbatim and repair setup before production. `status` prints the single next action. Obey it only within the owner's current authorization. A readiness-only request stops before generation, production receipts, or artwork delivery.
 
-### Counted smoke/pilot gate
+### Capability check
 
-Once production is authorized, use one queued attempt to prove actual image generation, attachment of every queue-listed reference in order and no extra references, and access to the original native file that Pillow opens. Tool exposure alone is insufficient. If any capability fails, stop and report it.
-
-Only after all three succeed, write a scratch JSON record with `image_generated`, `all_queue_references_attached`, and `native_file_accessible` set to true, then rerun `work_preflight.py --repo . --require-installed --smoke-file <scratch record>`. This generation counts toward the item's live attempt budget. Retain its exact prompt, reference, model, and native-byte provenance, and use the normal `check`, QA, and `save` procedure. Never reset attempt counters or create a free extra attempt.
+The first real item proves the capabilities: the image tool must accept every listed reference, in order, and give you the native file. If it cannot, stop and report it. No separate smoke file is needed; that attempt counts toward the item's budget like any other.
 
 ## Image generation
 
@@ -74,12 +72,14 @@ Only after all three succeed, write a scratch JSON record with `image_generated`
 
 ## Per item (from `SKILL.md`; the full contract is there)
 
-1. `heraldry_art.py show ID`: the verbatim prompt, references, size, MUST and DO NOT DRAW lists.
+`BATCH_CARD.md` is the working contract; in short:
+
+1. `heraldry_art.py next --n 1` (redos first), then `show ID`: the verbatim prompt, references, size, MUST and DO NOT DRAW lists.
 2. Generate with the verbatim prompt; at most two correction sentences on retries (`references/REPAIR.md`).
-3. Save the native file to `%HERALDRY_SCRATCH%`, then `heraldry_art.py check ID FILE`. Look at the image and the print-size preview beside the references.
-4. `fidelity_gate.py create ID FILE --prompt-sha <hash> --reference <each ref> --out %HERALDRY_SCRATCH%\ID.qa.json`, then fill all ten criteria with real, specific evidence (`references/QA_CHECKLIST.md`).
-5. `heraldry_art.py save ID FILE --qa-file ... --must "..." --avoid-clear --model "..."`.
-6. Stay within each item's attempt budget; `--accept-flags` only at the last attempt.
+3. Save the native file to `$env:HERALDRY_SCRATCH`, then `heraldry_art.py check ID FILE`. Look at the image and the print-size preview beside the references.
+4. `heraldry_art.py qa ID FILE` and complete the draft it names: the attestations, `register_compared` and all ten criteria with real, specific evidence.
+5. `heraldry_art.py save ID FILE --must "..." --avoid-clear --model "..."` (the draft is found automatically).
+6. Stay within each item's attempt budget; `--accept-flags --notes "..."` only after the last attempt.
 
 ## Primary delivery: guarded Git LFS to main
 
@@ -87,19 +87,19 @@ When `status` asks for delivery:
 
 ```powershell
 # every tenth image (status says DRIFT REVIEW), first:
-& $artPython production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py sheet --recent 10 --refs --out "$env:HERALDRY_SCRATCH\sheet.jpg"
-& $artPython production/art/skill/heraldry-classic-ink-art/scripts/style_audit.py --repo . --recent 10 --out "$env:HERALDRY_SCRATCH\style.json"
+& $artPython production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py sheet --recent 10 --refs
+& $artPython production/art/skill/heraldry-classic-ink-art/scripts/style_audit.py --repo . --recent 10
 # after every image:
 & $artPython production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .
 ```
 
 `ship` stages only queued images and receipts, verifies every receipt against the native bytes, prompt, references and QA, checks LFS, and pushes to `main` with no force. If `main` advanced only in paths you are not delivering (the intake bot's ink, selection and review commits after every push), `ship` fast-forwards by itself and retries a lost push race up to three times. It undoes only its own unpublished commit and never rebases, merges or forces. If `main` diverged, changed the same files, or the guard blocks on authentication, LFS, QA, or unexpected changes, stop before delivery. Do not force-push, auto-rebase, or pull over unsent artwork or receipts. Preserve the work, create the helper's review bundle, and ask the maintainer to reconcile the blocker. The push triggers the `Intake ChatGPT artwork` workflow.
 
-Then report: IDs, model name, pixel sizes, attempts, QA failures or accepted flags, and the commit SHA. Stop at the phase gate. For anchors, deliver all five and stop until Claude Code has reviewed them and published the next queue.
+Report one line per item (ID, attempts, flags) and the commit SHA of each delivery, and continue until NOTHING LEFT or a stop condition on `BATCH_CARD.md`.
 
 ## ZIP fallback
 
-If guarded Git/LFS delivery fails, use `heraldry_art.py bundle` outside the checkout, with the contact sheet, style audit, smoke record, and saved QA evidence. Report the bundle path and SHA-256 and state that no push succeeded. Bundle creation does not approve art. The independent reviewer verifies and imports it through the existing fallback procedure.
+If guarded Git/LFS delivery fails, use `heraldry_art.py bundle` outside the checkout, with the contact sheet, style audit and saved QA evidence. Report the bundle path and SHA-256 and state that no push succeeded. Bundle creation does not approve art. The independent reviewer verifies and imports it through the existing fallback procedure.
 
 If an authenticated checkout cannot be obtained, use the explicitly selected offline Work input package described in `production/art/gpt/WORK_PROMPT.md`. Follow `START_HERE.md`, use `--offline-package`, never run `git init`, clone, or pull inside the package, and deliver by bundle only with remote access `NOT_ATTEMPTED`.
 

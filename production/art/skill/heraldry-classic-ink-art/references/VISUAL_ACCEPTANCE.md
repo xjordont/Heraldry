@@ -23,7 +23,7 @@ This is a visual inspection rubric, not a numerical model of artistic merit. Do 
 
 ## Comparison log in QA report
 
-Before a passing `save`, complete `fidelity_gate.py create` record:
+Before a passing `save`, complete the QA draft that `qa ID FILE` writes for the exact file you will save:
 
 - Set `prompt_unchanged: true` only when the actual generation input was the queued prompt, apart from the allowed documented correction sentences.
 - Set `references_attached: true` only when all queue-listed assets were actually attached, in the listed order.
@@ -34,12 +34,12 @@ Before a passing `save`, complete `fidelity_gate.py create` record:
 
 ## Batch drift assessment
 
-After 5 saved images (or before any delivery):
+Every tenth saved image (`status` says DRIFT REVIEW):
 
-1. Run the existing `heraldry_art.py sheet --refs` contact sheet.
-2. Run `style_audit.py --repo . --limit 10 --out /scratch/batch_style.json` to get advisory tone and four-edge statistics by register.
+1. Run `heraldry_art.py sheet --recent 10 --refs`.
+2. Run `style_audit.py --repo . --recent 10` (report in the scratch folder) for advisory tone and four-edge statistics by register.
 3. Compare same-register siblings and references together. A single scene's greater ink coverage may be legitimate; the statistics never overrule artistic inspection.
-4. If **two or more** siblings show the same serious line/tonal or vignette drift, stop the batch and flag it for Claude Code. Do not keep generating hundreds of images with a common fault.
+4. Deliver in every case. If **two or more** siblings show the same serious line, tone or vignette drift, deliver, then stop and flag it for Claude Code. Do not keep generating hundreds of images with a common fault.
 5. Never add contact sheets, debug JSON, style reports or print proofs to the repository. Keep them outside the clone or package as explicit scratch handoffs.
 
 ## Final approval boundary
