@@ -173,8 +173,20 @@ class V6Test(unittest.TestCase):
         self.assertFalse(any(args[0] in ('add','commit','push') for args in commands))
 
     def test_original_reference_hashes_preserved(self):
-        src=json.loads((ROOT/'references/images/SOURCES.json').read_text())
-        for rec in src['images']:
-            self.assertEqual(fg.digest(ROOT/rec['file']),rec['sha256'])
+        # Installed ZIP contains reference bytes; repo source deliberately does not.
+        sources = ROOT / 'references/images/SOURCES.json'
+        if sources.is_file():
+            src = json.loads(sources.read_text())
+            for rec in src['images']:
+                self.assertEqual(fg.digest(ROOT / rec['file']), rec['sha256'])
+        else:
+            import zipfile
+            repo = ROOT.parents[3]
+            archive = repo / 'production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip'
+            self.assertTrue(archive.is_file(), 'build v6 ZIP before running source tests')
+            with zipfile.ZipFile(archive) as z:
+                src = json.loads(z.read('references/images/SOURCES.json'))
+                for rec in src['images']:
+                    self.assertEqual(hashlib.sha256(z.read(rec['file'])).hexdigest(), rec['sha256'])
 
 if __name__=='__main__':unittest.main()
