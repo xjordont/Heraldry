@@ -120,3 +120,20 @@ What works today: Work needs the input package once per phase, and returns the r
 ## Codex on the owner's PC: current route (owner, 2026-10-11)
 
 The owner set up Codex on a Windows PC with the owner's GitHub login, Git, Git LFS and Python, and moved image generation there. That removes the ZIP hand-offs: no credential ever enters a chat, and no paid API is used (image generation within the ChatGPT plan). Codex is an art worker with disjoint ownership (`AGENTS.md`). It clones `main`, runs the v6 skill, and delivers with `delivery_guard.py ship --execute`. That push triggers the intake workflow; Claude Code reviews and approves, then publishes the next queue. Runbook: `production/art/codex/CODEX_RUNBOOK.md`. Session prompt: `production/art/codex/CODEX_PROMPT.md`. `.gitattributes` pins the queue, prompts and skill to LF, because Windows checkouts may otherwise convert them. Not yet shown: whether Codex's image generation accepts reference images within the plan; the session prompt makes it check before generating.
+
+## One go-ahead, whole queue (2026-10-11)
+
+The owner asked for an efficient, automated run of every planned image after one go-ahead.
+
+- **Queue:** the batch is published with 270 items, every unapproved illustration including the Giant Tarantula redo. `push_every: 10`. Anchors are Greythorn plus the four approved hand-inked images; the tarantula left the anchor gate and is an ordinary redo.
+- **Unattended delivery:** `delivery_guard.py ship` fast-forwards over the intake bot's commits when they touch none of the delivered files, and retries a lost push race, undoing only its own unpublished commit. Before this, every delivery after the first stopped with "main advanced". Divergence or overlap still stops.
+- **Codex token budget:**
+  - `production/art/codex/BATCH_CARD.md` is the whole contract on one page, replacing about 59 KB of per-session reading.
+  - `heraldry_art.py qa ID IMAGE` pre-fills the QA draft (hashes, prompt, references), and `save` picks it up automatically.
+  - References are viewed once per session.
+  - Reports are one line per item.
+- **Resumable:** usage limits and session ends deliver what is saved; the next session's identical prompt resumes from `status`.
+- **Reviewer token budget:**
+  - `tools/art_intake.py pending` lists received images, flagged first.
+  - Claude reviews from the intake contact sheets, and opens full size only the self-flagged images plus spot checks per family.
+  - Approval and rejection run per family. Rejections become redos that the next Codex session picks up first.

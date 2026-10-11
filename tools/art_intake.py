@@ -6,6 +6,8 @@
   approve --ids ...  orchestrator approval after visual review ('approved'; anchors: 'anchor-approved')
   approve-anchors    mark the received GPT anchors approved and make them the batch references
   reject --ids ... [--reason TEXT]   reject (the entry returns to the queue; the reason is shown to the operator as a redo)
+  pending            received images awaiting review, flagged ones first (the reviewer opens those at full size and
+                     reviews the rest from the intake contact sheets)
 
 Only 'approved'/'anchor-approved' art is placed in the book (tools/build_book.py)."""
 import argparse, hashlib, json, sys
@@ -111,9 +113,35 @@ def approve_anchors(a):
                        "anchor_ids": ids, "references": [sels[i]["master"]["path"] for i in ids]})
 
 
+def pending(a):
+    """Compact review list: one line per received image, flagged first. Keeps the reviewer's token use low."""
+    sels = g.load(g.SELECTIONS, {})
+    rec = receipts()
+    rows = []
+    for i, v in sels.items():
+        if v.get("route") != "gpt" or v.get("status") != "received":
+            continue
+        r = rec.get(i, {})
+        flags = []
+        if r.get("accepted_flags"):
+            flags.append("ACCEPTED-FLAGS")
+        if r.get("qa_failed_criteria"):
+            flags.append("failed:" + ",".join(r["qa_failed_criteria"]))
+        if r.get("qa_unresolved"):
+            flags.append(f"{len(r['qa_unresolved'])} unresolved")
+        if r.get("tripwires"):
+            flags.append(f"{len(r['tripwires'])} tripwires")
+        if v.get("intake_warnings") or (v.get("ink") or {}).get("flags"):
+            flags.append("intake:" + ",".join((v.get("intake_warnings") or []) + ((v.get("ink") or {}).get("flags") or [])))
+        rows.append((0 if flags else 1, v.get("family", ""), i, r.get("variants_tried"), "; ".join(flags) or "clean"))
+    for _, fam, i, n, f in sorted(rows):
+        print(f"{i}\t{fam}\tattempts={n}\t{f}")
+    print(f"{len(rows)} received awaiting review ({sum(1 for r in rows if r[0] == 0)} flagged). Sheets: production/art/review/intake-*.jpg")
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["scan", "approve", "approve-anchors", "reject"])
+    ap.add_argument("cmd", choices=["scan", "approve", "approve-anchors", "reject", "pending"])
     ap.add_argument("--ids", nargs="*", default=[])
     ap.add_argument("--by", default="orchestrator visual review")
     ap.add_argument("--reason", default=None, help="with reject: why, in a sentence the operator can turn into a correction")
@@ -124,6 +152,8 @@ def main():
         set_status(a.ids, "approved")
     elif a.cmd == "reject":
         set_status(a.ids, "rejected", a.reason)
+    elif a.cmd == "pending":
+        pending(a)
     else:
         approve_anchors(a)
 

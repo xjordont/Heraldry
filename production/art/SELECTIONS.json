@@ -6,7 +6,7 @@
   "route": "gpt",
   "spec_sha256": "06acc0f3570bd7c61ff5709d3ceeffb4140c46bc4312719aa5d268986dea7f25",
   "prompt_sha256": "f59306517f59dc714262b562c2b2efbf75fdc7e6551460dbf5465171c21f70b6",
-  "status": "approved",
+  "status": "anchor-approved",
   "received_at": "2026-10-11T14:06:48+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -31,7 +31,8 @@
    "max_print_w_in_300ppi": 5.113
   },
   "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-11T14:07:35+00:00"
+  "approved_at": "2026-10-11T14:07:35+00:00",
+  "anchor-approved_at": "2026-10-11T14:17:57+00:00"
  },
  "ART-BAS-GREYTHORN": {
   "family": "bastion",
@@ -64,7 +65,7 @@
    "max_print_w_in_300ppi": 5.12
   },
   "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "anchor-approved_at": "2026-10-11T02:57:18+00:00"
+  "anchor-approved_at": "2026-10-11T14:17:57+00:00"
  },
  "ART-ANC-DWARF": {
   "family": "ancestry",
@@ -73,7 +74,7 @@
   "route": "gpt",
   "spec_sha256": "2f92a29ce28708e821d5ee92d8db216e17722f58c4632c5d65be7465c3d011ab",
   "prompt_sha256": "9bfcad1d4be9c29d4fa270c67447755130abe1d21368c72d26c5be9724656789",
-  "status": "approved",
+  "status": "anchor-approved",
   "received_at": "2026-10-11T14:06:46+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -98,7 +99,8 @@
    "max_print_w_in_300ppi": 2.817
   },
   "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-11T14:07:35+00:00"
+  "approved_at": "2026-10-11T14:07:35+00:00",
+  "anchor-approved_at": "2026-10-11T14:17:57+00:00"
  },
  "ART-CLA-FIGHTER": {
   "family": "class",
@@ -107,7 +109,7 @@
   "route": "gpt",
   "spec_sha256": "99a5d97686f6ca5f3d39049228e21890ff3bb26547991bbc102038400bc0975b",
   "prompt_sha256": "9e9cd8a65535fdbe4fe3890c34062301e3f9118d939a6c4b9be13c14fe539458",
-  "status": "approved",
+  "status": "anchor-approved",
   "received_at": "2026-10-11T14:06:47+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -132,7 +134,8 @@
    "max_print_w_in_300ppi": 2.907
   },
   "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-11T14:07:35+00:00"
+  "approved_at": "2026-10-11T14:07:35+00:00",
+  "anchor-approved_at": "2026-10-11T14:17:57+00:00"
  },
  "ART-MON-GIANT-TARANTULA": {
   "family": "monster",
@@ -176,7 +179,7 @@
   "route": "gpt",
   "spec_sha256": "6450423260b7218005c888a9dcbcd4ad11ca24b9528ffa2ca3b071913ec933e3",
   "prompt_sha256": "bdd422ee9e5a253b20712775b6a7c5cca98f0bc8fb87c1f41a8fdd1c45f479a5",
-  "status": "approved",
+  "status": "anchor-approved",
   "received_at": "2026-10-11T14:06:50+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -201,6 +204,7 @@
    "max_print_w_in_300ppi": 2.873
   },
   "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-11T14:07:35+00:00"
+  "approved_at": "2026-10-11T14:07:35+00:00",
+  "anchor-approved_at": "2026-10-11T14:17:57+00:00"
  }
 }

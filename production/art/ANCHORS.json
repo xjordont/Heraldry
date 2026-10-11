@@ -1,12 +1,11 @@
 {
  "route": "gpt",
- "status": "superseded",
- "approved_at": "2026-10-11T02:57:18+00:00",
- "approved_by": "Claude Code orchestrator visual review 2026-10-11 (production/art/review/ANCHOR_REVIEW_2026-10-11.md)",
+ "status": "approved",
+ "approved_at": "2026-10-11T14:17:57+00:00",
+ "approved_by": "Claude Code orchestrator visual review 2026-10-11 (ANCHOR_REVIEW_2026-10-11b.md); tarantula moved to the batch",
  "anchor_ids": [
   "ART-BAS-GREYTHORN",
   "ART-CLI-THE-GREENMARK",
-  "ART-MON-GIANT-TARANTULA",
   "ART-MON-UNDEAD-CHAMPION",
   "ART-CLA-FIGHTER",
   "ART-ANC-DWARF"
@@ -14,11 +13,8 @@
  "references": [
   "assets/art/incoming/ART-BAS-GREYTHORN.jpg",
   "assets/art/incoming/ART-CLI-THE-GREENMARK.png",
-  "assets/art/incoming/ART-MON-GIANT-TARANTULA.png",
   "assets/art/incoming/ART-MON-UNDEAD-CHAMPION.png",
   "assets/art/incoming/ART-CLA-FIGHTER.png",
   "assets/art/incoming/ART-ANC-DWARF.png"
- ],
- "superseded_at": "2026-10-11",
- "superseded_reason": "Owner art-direction change 2026-10-11 (too hyper-detailed, AI-like, low-resolution); the five ChatGPT Work anchors are set to redo under the hand-inked direction. References are now the owner's samples only (config gpt_reference_sets)."
+ ]
 }

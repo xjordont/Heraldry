@@ -179,34 +179,63 @@ def validate(repo, need_remote=True):
             'receipts_checked': len(image_files)}
 
 
-def ship(repo):
-    repo = Path(repo).resolve()
-    pre = validate(repo)
+def _rc(repo, *parts):
+    return subprocess.run(['git', *parts], cwd=repo, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                          text=True, timeout=300).returncode
+
+
+def fast_forward(repo, changed):
+    """Bring a clean-index main up to origin/main when upstream did not touch our paths.
+
+    The intake workflow commits ink, selections and review sheets after every delivery, so a long
+    run always finds main advanced. A pure fast-forward whose incoming files are disjoint from the
+    unsent images and receipts is safe: git itself refuses if it would overwrite a local change.
+    Anything else (divergence, overlap) stops for the maintainer. Never a rebase or a merge commit."""
     cmd(repo, 'fetch', 'origin', 'main')
-    head = cmd(repo, 'rev-parse', 'HEAD')
-    upstream = cmd(repo, 'rev-parse', 'origin/main')
-    if head != upstream or head != pre['remote_head']:
+    head, upstream = cmd(repo, 'rev-parse', 'HEAD'), cmd(repo, 'rev-parse', 'origin/main')
+    if head == upstream:
+        return False
+    if _rc(repo, 'merge-base', '--is-ancestor', head, upstream) != 0:
         raise Error('local HEAD diverges from origin/main; stop and ask maintainer to reconcile')
-    allowed = pre['changed']
-    cmd(repo, 'add', '--', *allowed)
-    staged = cmd(repo, 'diff', '--cached', '--name-only').splitlines()
-    if set(staged) != set(allowed):
-        raise Error('staged paths do not exactly match allowlisted paths')
-    for img in pre['images']:
-        if img.endswith('.png'):
-            if not cmd(repo, 'ls-files', '--stage', '--', img):
-                raise Error('PNG not staged: ' + img)
-            size = int(cmd(repo, 'cat-file', '-s', ':' + img))
-            if size > 2048 or not cmd(repo, 'show', ':' + img).startswith('version https://git-lfs'):
-                raise Error('PNG staged without Git LFS pointer: ' + img)
-    remote = cmd(repo, 'ls-remote', '--exit-code', 'origin', 'refs/heads/main').split()[0]
-    if remote != head:
-        raise Error('origin/main advanced before commit; no push attempted')
-    ids = [ALLOWED_IMAGE.fullmatch(x).group(1) for x in pre['images']]
-    span = f'{ids[0]} .. {ids[-1]}' if ids else 'refusals'
-    cmd(repo, 'commit', '-m', 'art(gpt): ' + span)
-    cmd(repo, 'push', 'origin', 'main')  # fast-forward only; no force flags
-    return {'status': 'PUSHED', 'commit': cmd(repo, 'rev-parse', 'HEAD'), 'images': pre['images']}
+    incoming = set(cmd(repo, 'diff', '--name-only', head, upstream).splitlines())
+    overlap = sorted(incoming & set(changed))
+    if overlap:
+        raise Error('origin/main changed the same files you are delivering (' + ', '.join(overlap) +
+                    '); stop and ask the maintainer to reconcile')
+    cmd(repo, 'merge', '--ff-only', 'origin/main')
+    return True
+
+
+def ship(repo, tries=3):
+    repo = Path(repo).resolve()
+    for attempt in range(1, tries + 1):
+        pre = validate(repo)
+        if fast_forward(repo, pre['changed']):
+            pre = validate(repo)                       # re-check against the updated main
+        head = cmd(repo, 'rev-parse', 'HEAD')
+        allowed = pre['changed']
+        cmd(repo, 'add', '--', *allowed)
+        staged = cmd(repo, 'diff', '--cached', '--name-only').splitlines()
+        if set(staged) != set(allowed):
+            raise Error('staged paths do not exactly match allowlisted paths')
+        for img in pre['images']:
+            if img.endswith('.png'):
+                if not cmd(repo, 'ls-files', '--stage', '--', img):
+                    raise Error('PNG not staged: ' + img)
+                size = int(cmd(repo, 'cat-file', '-s', ':' + img))
+                if size > 2048 or not cmd(repo, 'show', ':' + img).startswith('version https://git-lfs'):
+                    raise Error('PNG staged without Git LFS pointer: ' + img)
+        ids = [ALLOWED_IMAGE.fullmatch(x).group(1) for x in pre['images']]
+        span = f'{ids[0]} .. {ids[-1]}' if ids else 'refusals'
+        cmd(repo, 'commit', '-m', 'art(gpt): ' + span)
+        if _rc(repo, 'push', 'origin', 'main') == 0:     # fast-forward only; no force flags
+            return {'status': 'PUSHED', 'commit': cmd(repo, 'rev-parse', 'HEAD'), 'images': pre['images'],
+                    'attempts': attempt}
+        # Lost a race (usually the intake bot). The commit was never published, so undoing it is
+        # safe: files return to the working tree unstaged, and the next pass fast-forwards again.
+        cmd(repo, 'reset', '-q', head)
+    raise Error(f'origin/main kept advancing; no push succeeded after {tries} tries. '
+                'The images and receipts are preserved uncommitted; run ship again or use bundle')
 
 
 def main(argv=None):

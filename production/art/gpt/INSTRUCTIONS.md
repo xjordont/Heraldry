@@ -28,7 +28,7 @@ Commands use the full path `python production/art/skill/heraldry-classic-ink-art
 
 ## Batches and safe delivery
 
-After 5 images, or at session end, view a contact sheet alongside references. Compare like registers only; look for progressive greying, altered hatching, repeated posing, missing vignettes and reference subject bleed.
+When `status` asks for delivery (the queue's `push_every` images), or at session end, view a contact sheet alongside references. Compare like registers only; look for progressive greying, altered hatching, repeated posing, missing vignettes and reference subject bleed.
 
 Run `delivery_guard.py audit --repo .`, then `delivery_guard.py ship --execute --repo .` only if the audit passes and Git LFS and remote authentication are available. The guard stages ONLY queued incoming images and receipts, refuses unrelated worktree changes, checks LFS pointers, requires local HEAD equal origin/main, and never force-pushes or automatically merges a concurrent reviewer commit. If it stops or a tool is unavailable, run `heraldry_art.py bundle --evidence <contact sheet> --evidence <style audit JSON> --evidence <smoke record>` outside the clone; deliver the ZIP as a downloadable file without claiming a Git push. In the offline package, `delivery_guard.py` refuses (no Git), so `bundle` is the only delivery; it applies the same receipt and QA hash gate first.
 

@@ -135,7 +135,7 @@ native file is on disk where Python can read it. Only if all three are true, wri
 and rerun the preflight with `--smoke-file {s}/smoke.json`. If the tool cannot take every listed
 reference, STOP and report a capability blocker. Never generate without them.
 
-## 3. Generate the five calibration anchors only
+## 3. Generate the queued items ({q['phase']} phase, {q['count']} items)
 
 {ids}
 
@@ -155,16 +155,17 @@ byte-identical.
 ## 4. Deliver a review ZIP and stop
 
 ```
-{h} sheet --refs --out {s}/anchors_sheet.jpg
-python {SCRIPTS}/style_audit.py --repo . --limit 10 --out {s}/anchors_style.json
-{h} bundle --out /mnt/data/Heraldry_Work_Review_{q['phase']}.zip --evidence {s}/anchors_sheet.jpg --evidence {s}/anchors_style.json --evidence {s}/smoke.json
+{h} sheet --refs --out {s}/sheet.jpg
+python {SCRIPTS}/style_audit.py --repo . --limit 10 --out {s}/style.json
+{h} bundle --out /mnt/data/Heraldry_Work_Review_{q['phase']}.zip --evidence {s}/sheet.jpg --evidence {s}/style.json --evidence {s}/smoke.json
 {h} status
 ```
 
 `delivery_guard.py` does not apply here (it needs a Git checkout). The bundle carries the native images,
 `receipts_append.jsonl`, every QA report, your evidence and a hash manifest. Give it to the owner as a
-downloadable file and state plainly: nothing was pushed to GitHub; nothing is approved. Then STOP. Claude Code
-reviews the anchors independently and publishes the next queue and package.
+downloadable file and state plainly: nothing was pushed to GitHub; nothing is approved. Bundle at least every
+{q.get('push_every', 5)} saved images (the review bundle should stay under GitHub's 25 MB browser upload). Continue
+until `status` says NOTHING LEFT (anchors phase: stop after the anchors). Claude Code reviews independently.
 """
 
 

@@ -80,3 +80,8 @@ This document summarises the project, its decisions and the illustration workflo
 - Redo the five anchors under the hand-inked direction; then Claude Code reviews them, approves them and publishes the batch queue (about 270 illustrations).
 - Batch size per Codex session: currently delivery every 5 images (v6 rule). The owner may raise it.
 - The next requested build places the approved art and needs a visual delta review.
+
+## Update: batch ready (2026-10-11, later)
+
+The anchors are settled: Greythorn plus Greenmark, Undead Champion, Fighter and Dwarf are approved. The batch queue holds 270 items, including the Giant Tarantula redo. Codex runs it from `production/art/codex/CODEX_PROMPT.md` and `BATCH_CARD.md`, delivering every 10 images with the fast-forwarding `ship`, and resumes from `status` across sessions.
+

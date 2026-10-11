@@ -107,10 +107,14 @@ class OfflineRun(unittest.TestCase):
         h = f"{SCRIPTS}/heraldry_art.py"
         scratch = home / "work"
         scratch.mkdir()
-        for n, it in enumerate(QUEUE["items"]):
+        items = QUEUE["items"][:5]                               # a session's worth; the batch queue is long
+        for n, it in enumerate(items):
             w, hgt = (int(x) for x in it["size"].split("x"))
             img = scratch / f"{it['id']}.png"
-            (scene_image((w, hgt)) if it["register"] == "scene" else figure_image((w, hgt), scale=0.6 + 0.03 * n)).save(img)
+            im = scene_image((w, hgt)) if it["register"] == "scene" else figure_image((w, hgt), scale=0.6 + 0.03 * n)
+            from PIL import ImageDraw
+            ImageDraw.Draw(im).ellipse((w // 2 - 20 - 6 * n, hgt // 2 - 20, w // 2 + 20, hgt // 2 + 20 + 6 * n), outline=(0, 0, 0), width=4)
+            im.save(img)                                         # each stand-in unique: the copy check is real
             r = self.sh(pkg, env, h, "check", it["id"], str(img), "--json")
             self.assertIn(json.loads(r.stdout)["result"], ("PASS", "WARN"), r.stdout + r.stderr)
             qa = scratch / f"{it['id']}.qa.json"
@@ -127,7 +131,8 @@ class OfflineRun(unittest.TestCase):
             flags += ["--avoid-clear"] if it["avoid"] else []
             r = self.sh(pkg, env, h, "save", it["id"], str(img), "--qa-file", str(qa), *flags)
             self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
-        r = self.sh(pkg, env, h, "status")
+        whole = len(items) == len(QUEUE["items"])
+        r = self.sh(pkg, env, h, "status", *([] if whole else ["--end"]))   # session end asks to deliver what is saved
         self.assertIn("BUNDLE", r.stdout)
         self.assertEqual(self.sh(pkg, env, f"{SCRIPTS}/delivery_guard.py", "audit", "--repo", ".").returncode, 2)
         sheet = scratch / "sheet.jpg"
@@ -137,15 +142,18 @@ class OfflineRun(unittest.TestCase):
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         self.assertIn("Nothing was pushed", r.stdout)
         r = self.sh(pkg, env, h, "status")
-        self.assertIn("STOP", r.stdout)
-        self.assertIn("anchors are done", r.stdout)
+        if whole and QUEUE["phase"] == "anchors":
+            self.assertIn("STOP", r.stdout)
+            self.assertIn("anchors are done", r.stdout)
+        elif not whole:
+            self.assertIn("GENERATE", r.stdout)                  # the next session resumes from status
         # The package's own preflight still passes: only receipts grew, and saved images are expected extras.
         d = json.loads(self.sh(pkg, env, f"{SCRIPTS}/work_preflight.py", "--repo", ".", "--offline-package").stdout)
         self.assertEqual(d["status"], "READY", d)
         with zipfile.ZipFile(out) as z:
             names = set(z.namelist())
             man = json.loads(z.read("BUNDLE_MANIFEST.json"))
-        for it in QUEUE["items"]:
+        for it in items:
             self.assertIn(f"assets/art/incoming/{it['id']}.png", names)
             self.assertIn(f"review_evidence/qa/{it['id']}.qa.json", names)
         self.assertIn("review_evidence/sheet.jpg", names)
@@ -173,8 +181,8 @@ class OfflineRun(unittest.TestCase):
         before = (root / "production/art/gpt/RECEIPTS.jsonl").read_text()
         r = awp.import_bundle(out, root)
         self.assertEqual(r["status"], "PASS", r)
-        self.assertEqual(r["receipts_added"], len(QUEUE["items"]))
-        for it in QUEUE["items"]:
+        self.assertEqual(r["receipts_added"], len(items))
+        for it in items:
             self.assertEqual((root / f"assets/art/incoming/{it['id']}.png").read_bytes(), (pkg / f"assets/art/incoming/{it['id']}.png").read_bytes())
         self.assertTrue((root / "production/art/gpt/RECEIPTS.jsonl").read_text().startswith(before))
         self.assertEqual(awp.import_bundle(out, root)["receipts_added"], 0)          # idempotent
