@@ -1557,7 +1557,7 @@
    "Boots with spurs, belt of keys",
    "A battered wooden crate at its feet"
   ],
-  "atmosphere": "Hard command.",
+  "atmosphere": "Hard, practised command: a looted-mail leader who makes a rabble fight like soldiers and spends them to stay whole.",
   "avoid": [
    "Not the plain Bandit: higher status, upright, armoured",
    "No ornate royal gear",
@@ -2070,7 +2070,7 @@
    "Ash drifting around greaves",
    "Heavy steady stride"
   ],
-  "atmosphere": "Cursed honour.",
+  "atmosphere": "Cursed honour curdled into compulsion: dead chivalry advancing, tireless and impossible to turn aside.",
   "avoid": [
    "Not the Forsaken Duelist (light) or Archer",
    "Not the Fallen Paladin",
@@ -2602,7 +2602,7 @@
    "Dust motes drifting around it",
    "No wings, no limbs"
   ],
-  "atmosphere": "Cold regard.",
+  "atmosphere": "Cold, hostile regard: an alien intelligence that sees every other living thing as a rival to erase.",
   "avoid": [
    "No large toothy mouth: not a Beholder lookalike",
    "No extra eyes beyond the central eye and the four eyestalks",
@@ -2873,7 +2873,7 @@
    "Cracked smoking paws",
    "Snow melting in steam lines"
   ],
-  "atmosphere": "Hellish chase.",
+  "atmosphere": "A hellish chase across hissing snow: a pack hunter guttering with cold black flame.",
   "avoid": [
    "Not the Dire Wolf or Tundra Wolf (white fur)",
    "Not the Corpsehound (desert)",
@@ -3407,7 +3407,7 @@
    "A single toppled stone head at its feet, face frozen in surprise",
    "Snake-hair biting forward"
   ],
-  "atmosphere": "Elegant doom.",
+  "atmosphere": "Elegant, patient doom among the stone figures of its former admirers.",
   "avoid": [
    "Not the Night Hag or Harpy",
    "No tentacles: the hair is snakes",
@@ -3625,7 +3625,7 @@
    "Fine hairs",
    "A few reed tips below it"
   ],
-  "atmosphere": "Hungry itch.",
+  "atmosphere": "Hungry, darting menace: a blood-swollen pest out of the Mire's humming dusk.",
   "avoid": [
    "Not the Giant Bat (mammal)",
    "No more or fewer than six legs",
@@ -3873,7 +3873,7 @@
    "Lower body dissolving in mist",
    "Fog and reeds"
   ],
-  "atmosphere": "Keening grief.",
+  "atmosphere": "Keening grief and the plain certainty of death, drifting through cold fog.",
   "avoid": [
    "Not the Spectre (burnt) or Ice Wraith (icy)",
    "No gore",

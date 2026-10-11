@@ -391,8 +391,14 @@ def copy_notice(repo):
 
 def scratch_dir(repo):
     """Per-repository scratch folder in the system temp directory (previews, sheets, bundles, attempt counts).
-    HERALDRY_SCRATCH overrides the base folder; the owner sets it for tests and isolated sessions."""
-    base = Path(os.environ.get("HERALDRY_SCRATCH") or tempfile.gettempdir()) / "heraldry_art"
+    HERALDRY_SCRATCH overrides the base folder; the owner sets it for tests and isolated sessions. In an offline Work
+    input package the default is a sibling folder (<package>_scratch), so attempt counts, previews and QA copies stay
+    in one stable place the operator can see, outside the package, whatever the system temp folder does."""
+    env = os.environ.get("HERALDRY_SCRATCH")
+    if not env and (Path(repo) / PACKAGE_REL).is_file() and not (Path(repo) / ".git").exists():
+        repo = Path(repo).resolve()
+        return repo.parent / (repo.name + "_scratch")
+    base = Path(env or tempfile.gettempdir()) / "heraldry_art"
     return base / hashlib.sha1(str(Path(repo).resolve()).encode()).hexdigest()[:8]
 
 

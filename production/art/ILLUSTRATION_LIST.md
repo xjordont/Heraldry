@@ -3058,7 +3058,7 @@ SUBJECT DETAILS
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The bandit captain held a real commission once, or says so often enough to be believed. Armoured in looted mail and barking orders a crew will actually follow, they turn a rabble into something that fights like soldiers. They parry the first blow, answer the second, and spend their underlings freely to keep their own skin whole. Greythorn carries a standing bounty on three of them by name."
-Hard command.
+Hard, practised command: a looted-mail leader who makes a rabble fight like soldiers and spends them to stay whole.
 Do not draw:
 * Not the plain Bandit: higher status, upright, armoured.
 * No ornate royal gear.
@@ -3706,7 +3706,7 @@ SUBJECT DETAILS
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Dead chivalry in spectral plate, the forsaken knight advances through the ash with a flamberge wreathed in grave-light. It parries with a lifetime's drill written into bone and cannot be slowed or turned aside. Bound by an oath it can no longer recall, it follows Veyr's banner into every fight. Its honour has curdled into compulsion."
-Cursed honour.
+Cursed honour curdled into compulsion: dead chivalry advancing, tireless and impossible to turn aside.
 Do not draw:
 * Not the Forsaken Duelist (light) or Archer.
 * Not the Fallen Paladin.
@@ -4369,7 +4369,7 @@ Must be shown exactly:
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A floating orb of leathery flesh ruled by one great central eye and crowned with writhing eyestalks, the evil eye spits a different doom from each lesser eye. It drifts the deep wrapped in an aura that unmakes magic outright. No two of its glares do the same thing twice. It regards every other living thing as a competitor to be erased."
-Cold regard.
+Cold, hostile regard: an alien intelligence that sees every other living thing as a rival to erase.
 Do not draw:
 * No large toothy mouth: not a Beholder lookalike.
 * No extra eyes beyond the central eye and the four eyestalks.
@@ -4708,7 +4708,7 @@ SUBJECT DETAILS
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "Cold black flame guttering along its spine, the blackfire hound is a charred beast-shape that leaves a trail of smouldering ash across the snow. Its bite burns with a fire no ordinary frost-ward will stop. They course in packs through the Pale City's ruins, herding prey onto their own burning trails. The snow hisses where they pass."
-Hellish chase.
+A hellish chase across hissing snow: a pack hunter guttering with cold black flame.
 Do not draw:
 * Not the Dire Wolf or Tundra Wolf (white fur).
 * Not the Corpsehound (desert).
@@ -5382,7 +5382,7 @@ SUBJECT DETAILS
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A serpent-haired figure whose gaze turns the living slowly to stone, the medusa lurks among the statues that were once its admirers. It fights with blade and venomous snake-hair, but its eyes are what fill the tomb-galleries with permanent witnesses. The priest-kings cursed its kind, or rewarded them; the tales cannot agree. Their victims cannot say."
-Elegant doom.
+Elegant, patient doom among the stone figures of its former admirers.
 Do not draw:
 * Not the Night Hag or Harpy.
 * No tentacles: the hair is snakes.
@@ -5661,7 +5661,7 @@ Must be shown exactly:
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "A bloated mosquito-thing the size of a cat, the stirge carries a needle proboscis and a belly that swells red with stolen blood. It darts in, latches on, and drains until it is pried loose. The Mire's dusk air hums with them. One is an itch; a swarm is exsanguination."
-Hungry itch.
+Hungry, darting menace: a blood-swollen pest out of the Mire's humming dusk.
 Do not draw:
 * Not the Giant Bat (mammal).
 * No more or fewer than six legs.
@@ -5971,7 +5971,7 @@ SUBJECT DETAILS
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The shrieking spirit of a woman drowned in grief, the banshee is a translucent horror whose wail stops hearts and freezes the blood. It drifts The Mire's fog, and its keening carries the plain certainty of death. Steel passes through it; only magic answers. To hear the wail clearly is to be the one it has chosen."
-Keening grief.
+Keening grief and the plain certainty of death, drifting through cold fog.
 Do not draw:
 * Not the Spectre (burnt) or Ice Wraith (icy).
 * No gore.
@@ -6269,7 +6269,7 @@ HUMAN ACTIVITY
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "In the deepest dark of the Undermarches squats the mother of every giant spider that plagues the deep, a bloated horror the size of a cottage, egg-sacs trailing from it that twitch with the unborn. It floods the field with its brood and binds the survivors in webs for later. Its venom stops a heart in a single beat. The deep, in the end, is its nursery."
-Nursery dread.
+Nursery dread: a vast, bloated, patient horror at the heart of its twitching brood.
 Do not draw:
 * Not the Spider's Silk Route ravine in the Greenmark.
 * No gore; cocoons are wrapped shapes.
@@ -7141,7 +7141,7 @@ HUMAN ACTIVITY
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "In a cavern without honest light, deep elf priests have drawn a binding circle around something that answers from the dark below the Dark. One patron in Deepwarden wants the rite broken before it finishes. Another wants the circle lifted out intact, sigils and all, and will not say for whom. The thing inside the circle has not been consulted."
-Ritual dread.
+Ritual dread in a cavern without honest light, where something below the Dark answers the circle.
 Do not draw:
 * Not the Shadowed Under Passage.
 * Do not show the bound thing.
@@ -7910,7 +7910,7 @@ HUMAN ACTIVITY
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Outer Walls declare that the dark must work harder. Stone, timber, ditch, spike, and warding nail stand between the party's claim and the things that circle after sundown."
-Thin security.
+Thin security at nightfall: stone, timber, spikes and warding nails making the dark work harder.
 Do not draw:
 * Not a returning party scene: no procession, no gate focus.
 * No monsters visible.
@@ -7968,7 +7968,7 @@ HUMAN ACTIVITY
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
 "The Chapel is small, cold, and crowded with votive offerings from those who survived by inches. Its saints are chipped. Its relics are suspect. Its candles burn low even when no wind enters."
-Hushed grief.
+Hushed grief and uneasy faith: a cold, cramped chapel crowded with the offerings of those who survived by inches.
 Do not draw:
 * Not the Sablekeep bastion or Voice Beneath the Bells drowned chapel.
 * No readable inscriptions.

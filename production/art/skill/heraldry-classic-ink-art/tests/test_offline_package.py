@@ -88,4 +88,13 @@ class OfflinePackage(unittest.TestCase):
             self.assertFalse(ha.git_ok(self.repo))
             self.assertIsNotNone(ha.package_info(self.repo))
 
+    def test_scratch_defaults_beside_the_package(self):
+        import os
+        from unittest import mock
+        with mock.patch.dict(os.environ,{},clear=False):
+            os.environ.pop('HERALDRY_SCRATCH',None)
+            self.assertEqual(ha.scratch_dir(self.repo),self.repo.resolve().parent/'pkg_scratch')
+            os.environ['HERALDRY_SCRATCH']=str(Path(self.tmp.name)/'elsewhere')
+            self.assertEqual(ha.scratch_dir(self.repo).parent,Path(self.tmp.name)/'elsewhere'/'heraldry_art')
+
 if __name__=='__main__':unittest.main()
