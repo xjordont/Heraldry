@@ -1,0 +1,23 @@
+{
+ "purpose": "ChatGPT plugin transfer probes, 2026-10-11. Disposable.",
+ "files": {
+  "rand_300k.bin": {
+   "bytes": 300000,
+   "sha256": "6d1035b53465a52347ac4ee966d0a36fdd7456817da19ddfe3ac00cf03584362"
+  },
+  "rand_700k.bin": {
+   "bytes": 700000,
+   "sha256": "469bea70a42ed40d2f2a76cca32acc022d7749d069fe4219a3d40ff2064deeed"
+  },
+  "rand_1100k.bin": {
+   "bytes": 1100000,
+   "sha256": "c5bf70f4e8ce7bc77e7a4c394b4df815663a3ce18ab3718f9b63892e693b1564"
+  },
+  "STYLE-REF-02.jpg (reassemble the b64 parts in order, then decode)": {
+   "bytes": 1661394,
+   "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
+   "parts": 8,
+   "part_chars": 300000
+  }
+ }
+}
