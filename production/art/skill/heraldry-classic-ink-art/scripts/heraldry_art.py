@@ -604,10 +604,18 @@ def cmd_status(a, repo):
     todo = [i for i, v in st.items() if v in ("redo", "pending")]
     unsent = bool(saved) or receipts_unpushed(repo)
     push_at = int(q.get("push_every") or BATCH_PUSH_AT)       # the queue sets the cadence for long runs
-    due = len(saved) >= push_at or (unsent and (not todo or a.end))
     # Drift review (contact sheet + style audit over the last N delivered) runs every `review_every` images,
     # not every push: with push_every 1 that keeps the per-image token cost low.
     review_at = int(q.get("review_every") or push_at)
+    pending_send = saved
+    if not git_ok(repo):
+        # Without git, delivery is a review ZIP: one per image would be absurd, so bundle at the review cadence,
+        # and images already in a bundle no longer count as waiting.
+        push_at = max(push_at, review_at)
+        done = jload(scratch_dir(repo) / "bundled.json", {}).get("images", {})
+        pending_send = [i for i in saved if not (local_files(repo, i) and done.get(i) == file_sha(local_files(repo, i)[0]))]
+        unsent = bool(pending_send)
+    due = len(pending_send) >= push_at or (unsent and (not todo or a.end))
     pushed_n = sum(1 for v in st.values() if v == "pushed")
     drift_due = (pushed_n + len(saved)) // review_at > pushed_n // review_at
     # what a push would sweep up: files that are not queue items, and images saved without a matching receipt
@@ -628,7 +636,7 @@ def cmd_status(a, repo):
     elif no_receipt:
         action = (f"STOP. {', '.join(no_receipt)} have no receipt from `save` (placed by hand?). Delete the file, or run `save` on the image "
                   "you generated.")
-    elif due and not git_ok(repo) and saved and all_bundled(repo, saved) and not todo:
+    elif not git_ok(repo) and saved and all_bundled(repo, saved) and not todo:
         b = jload(scratch_dir(repo) / "bundled.json", {})
         action = (f"STOP. Every saved image is in the review bundle {b.get('bundle')} (sha256 {b.get('bundle_sha256')}). Hand that zip over as a "
                   "downloadable file and say plainly that nothing was pushed to GitHub. "
