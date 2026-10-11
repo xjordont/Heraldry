@@ -5,15 +5,15 @@
  "created_from": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "cdd189e524f8daa75754dee6582046a861e1ee4f",
-  "commit_date": "2026-10-11T00:59:39+00:00",
+  "commit": "93d001f4270423dc861ebcd93b3e775501cda847",
+  "commit_date": "2026-10-11T01:47:35+00:00",
   "dirty": false
  },
  "source": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "cdd189e524f8daa75754dee6582046a861e1ee4f",
-  "commit_date": "2026-10-11T00:59:39+00:00"
+  "commit": "93d001f4270423dc861ebcd93b3e775501cda847",
+  "commit_date": "2026-10-11T01:47:35+00:00"
  },
  "queue": {
   "path": "production/art/gpt/QUEUE.json",
@@ -139,8 +139,8 @@
  "files": [
   {
    "path": "START_HERE.md",
-   "sha256": "c9d92c793a2917dc288ea05ea0054417b5a19bb07a332d0f4fa660a61362d9b3",
-   "bytes": 4253,
+   "sha256": "1bc44728a3549f16c98eda5f3b5aa418343d830c98857cb561e33b6c06235ff8",
+   "bytes": 4835,
    "role": "instructions"
   },
   {
@@ -236,8 +236,8 @@
   },
   {
    "path": "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip",
-   "sha256": "a72d18aa53f39b620eb6c62067aa796dcab2312be39c228d85bc517ad5544241",
-   "bytes": 5402124,
+   "sha256": "315fa7ca3cf618127b519f9e00731531be498a38b99697511e04f11481a1836b",
+   "bytes": 5402403,
    "role": "skill_zip"
   },
   {
@@ -344,8 +344,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py",
-   "sha256": "e63ab3f8c4b5f08f47e48903d758e9fc97e6760f5a221f5add18c1133df38b51",
-   "bytes": 55112,
+   "sha256": "4f53cf99b3f319e04472de330fa47362cb81b90567fafa31fe54f906b6db938b",
+   "bytes": 55554,
    "role": "skill"
   },
   {
@@ -368,8 +368,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/tests/test_offline_package.py",
-   "sha256": "88b67f1b62d2b3a8a2cd679ac891932666322ca6ec550ef383302265d4889a2a",
-   "bytes": 4402,
+   "sha256": "db3ecdf591cad44507467af0be386b8bd1cafdff780f620a08e549d085ca69fd",
+   "bytes": 4907,
    "role": "skill"
   },
   {
