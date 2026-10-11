@@ -8,7 +8,7 @@ rendered as line breaks, table representations) are recorded in
 production/mappings/.
 """
 from __future__ import annotations
-import argparse, json, re, sys, time
+import argparse, json, re, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -209,7 +209,7 @@ class Book:
     def _classify_all(self):
         """Classify every table, then unify families (same header signature within the
         same H3 section) so that sibling tables share one representation and widths."""
-        from tables import measure_table, allocate, est_height
+        from tables import measure_table, allocate
         tabs = []
         def walk(bs, sec):
             for b in bs:
@@ -428,7 +428,6 @@ class Book:
             lead = self.em.inl(blocks[1]["c"])
             self.block_map.append((blocks[1]["id"], blocks[1]["src"], "chapter-lead", None))
             i = 2
-        first = ch is self.model["chapters"][2] if len(self.model["chapters"]) > 2 else False
         if num and num.startswith("1.") and title.startswith("1. "):
             self.out.append("#mainmatter()\n#set page(numbering: \"1\")\n#counter(page).update(1)\n")
         self.block_map.append((h["id"], h["src"], "chapter-opener", None))
@@ -530,7 +529,6 @@ class Book:
     @staticmethod
     def parts_typst(parts, strip=False):
         out = []
-        rigid = RIGID
         for kind, ss in parts:
             if kind == "c":
                 # prose-only runs may flow between columns; runs with rigid pieces use the whole-piece grid

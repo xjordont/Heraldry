@@ -1,7 +1,6 @@
 """Bind a build and its QA result to the exact current inputs and PDF bytes."""
 import json
-from pathlib import Path
-from manuscript import ROOT, active, sha256, version, check as check_source
+from manuscript import ROOT, sha256, version, check as check_source
 
 INPUTS = ["config", "source", "editorial/patches.json", "editorial/how_to_use.json", "editorial/history", "tools", "typst", "fonts", "figures/src", "figures/out",
           "figures/manifest.json", "figures/placements.json", "assets", "production/art/SELECTIONS.json", "production/art/SPOT_CATALOG.json",

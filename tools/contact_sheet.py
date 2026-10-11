@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Render PDF pages to contact sheets or single page PNGs for visual review (scratch output)."""
-import argparse, sys
+import argparse
 from pathlib import Path
 import pymupdf
 from PIL import Image

@@ -45,7 +45,6 @@ def main():
     a = ap.parse_args()
     doc = pymupdf.open(a.pdf)
     flags = []
-    stats = {"pages": len(doc)}
     for i, page in enumerate(doc):
         n = i + 1
         ls = lines_of(page)
@@ -69,10 +68,6 @@ def main():
         for t in stranded_headings(page):
             flags.append({"page": n, "code": "stranded_heading", "text": t})
         body = [r for r, t, s in ls if TOP - 2 < r.y0 and r.y1 < BOT + 2]
-        if body:
-            fill = max(r.y1 for r in body) - min(r.y0 for r in body)
-        else:
-            fill = 0
         if n >= a.first_body_page and len(body) < 6 and not page.get_images() and not page.get_drawings():
             flags.append({"page": n, "code": "near_empty", "lines": len(body)})
     codes = {}

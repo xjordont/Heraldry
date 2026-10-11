@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Measure every keep unit (sections, scenarios, tables, lists, examples, figures) in a fresh process.
 Writes build/unit_measure.json {id: {h1, h2}} in pt: h1 = single-column height, h2 = one-page composition height."""
-import json, sys, time
+import json, time
 from pathlib import Path
 import typst
 
