@@ -2,6 +2,33 @@
 
 This document governs atmospheric illustration and art planning. MASTER_PROMPT.md governs source fidelity, asset QA, and placement. The manuscript, not this brief, supplies setting facts.
 
+## Gritty old-school direction (owner, 2026-10-11, later; current)
+
+The owner asked to "redo the art inspiration a bit to move our current art benchmarks and inspiration to be closer to the more old school black and white gritty style artworks" and supplied eleven examples. This supersedes the "economy of line" wording below; the hand-inked rules (human marks, no AI polish, no stipple fields, only owner samples as references) still hold.
+
+- **Target:** gritty old-school black-and-white ink, as in late-1970s and 1980s rulebook and module art. That means:
+  - bold, rough brush contours of uneven weight;
+  - heavy solid-black shadow shapes;
+  - scratchy hatching and dry-brush drag where form turns;
+  - the bite of a woodcut;
+  - high contrast, with few in-between textures;
+  - visible human imperfection (broken lines, dry-brush streaks, an occasional ink fleck).
+- **Still forbidden:** grey wash or grey ink tone, stipple fields, uniform machine texture, clean vector-like line, digital polish and airbrush. The book prints pure black ink.
+- **References** (`assets/art/style/`, recorded in `STYLE_REFS.json`; never placed or packaged). At most 3 per item (`gpt_reference_sets`):
+
+  | Register | References |
+  |---|---|
+  | Scene | STYLE-REF-09 skeleton melee (comic-ink spot blacks), STYLE-REF-10 1980s undead crowd (bold contour, heavy blacks), STYLE-REF-07 dry-brush duel (vignette on open paper) |
+  | Creature | STYLE-REF-04 enthroned skeleton king (heavy brush blacks), STYLE-REF-05 cave creature (scratchy pen texture), STYLE-REF-03 skeleton warrior |
+  | Person | STYLE-REF-04, STYLE-REF-06 hooded archer (loose brush sketch), STYLE-REF-03 |
+  | Still life | STYLE-REF-04, STYLE-REF-03 |
+
+  STYLE-REF-08 (period woodcut fencers) is in the library but not in a default set.
+- **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached, because their grey tone cannot print in black ink. Take from them only the dramatic black massing and composition.
+- **Superseded:** STYLE-REF-01 and STYLE-REF-02 (clean, finely engraved line) are kept for the record but no longer attached. The eleventh example was STYLE-REF-03 again (byte-identical), which stays.
+- **Prompts:** `prompt_v2` (intro, `style_*`, `final_*`, `reference`) carries this wording. The queue was republished with new prompt hashes.
+- **Approved art:** Greythorn and the four hand-inked anchors (Greenmark, Undead Champion, Fighter, Dwarf) were approved under the cleaner direction and remain approved. Whether to redo them for consistency is an owner decision.
+
 ## Hand-inked direction (owner, 2026-10-11)
 
 The owner judged the first ChatGPT Work calibration images "too hyper detailed, AI-like, low-resolution". The target is "a notch more hand drawn and authentic human art-like". The examples are the owner's three samples (STYLE-REF-01, -02 and -03, below) plus a Dying Lands map kept as line inspiration (`assets/art/style/STYLE-INSPIRATION-map-dying-lands.png`; it carries lettering, so it is never attached). Consequences:

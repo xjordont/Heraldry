@@ -2,25 +2,28 @@
 
 The prompt already carries the style text. This page explains what the references are for and what the image has to survive afterwards.
 
-## Hand-inked direction (owner, 2026-10-11)
+## Gritty old-school direction (owner, 2026-10-11)
 
-The owner judged the first calibration images too hyper-detailed, AI-like and low-resolution. Aim a notch more hand-drawn: the look of human interior illustration inked with pen and brush, as in the owner's three samples (STYLE-REF-01 scene hatching, STYLE-REF-02 panorama line, STYLE-REF-03 figure spot-black). Economy of line, confident contours with a slight natural irregularity, selective hatching, open white paper. A result covered in uniform micro-detail, stipple fields, noisy texture or soft tonal haze fails `style_reference_match`, however impressive it looks. Only the owner's samples are attached as references: never an earlier generated image.
+The target is gritty, old-school black-and-white ink, like late-1970s and 1980s rulebook and module art. The references are the owner's samples STYLE-REF-03 to STYLE-REF-10.
+- Look for: bold, rough brush contours of uneven weight; heavy solid-black shadow shapes; scratchy hatching and dry-brush drag where form turns; the bite of a woodcut; high contrast with few in-between textures. Visible human marks (broken lines, dry-brush streaks, an occasional ink fleck) are welcome.
+- It still must look hand-made, not generated. A result covered in uniform micro-detail, stipple fields, machine-even texture, clean vector-like line, glossy rendering or soft tonal haze fails `style_reference_match`, however impressive it looks. Grey wash or grey ink tone fails, because the book prints pure black ink.
+- Only the owner's samples are attached as references, never an earlier generated image.
 
 ## Three registers
 
 | Register | Families | Look |
 |---|---|---|
-| scene | cover, chapter, world, climate, bastion, scenario, campaign, boss, tradition | Hand-inked dip-pen and brush work: clean outlines of varied weight, hatching only where form and shadow need it, generous open paper; distance by simpler, lighter outline, never haze. Detail gathers at the focus and the drawing dissolves into blank paper through broken strokes on all four sides. |
-| creature, person | monster; class, ancestry | One subject drawn whole, like classic rulebook monster art. A bold outer contour, clean interior lines, hatching only where form turns into shadow, a few solid-black spot shapes, large open white areas. Isolated on white with only a small patch of ground and a cast shadow. Light from the upper left. |
+| scene | cover, chapter, world, climate, bastion, scenario, campaign, boss, tradition | Gritty brush and pen work: rough contours of varied weight, big solid-black masses for shadow and depth, scratchy hatching and dry-brush where light turns; distance thins to simpler, lighter line, never haze. The deepest blacks and sharpest contrast gather at the focus, and the drawing dissolves into blank paper through broken strokes on all four sides. |
+| creature, person | monster; class, ancestry | One subject drawn whole, like old-school rulebook monster art: a bold rough contour, heavy solid-black shadow shapes, scratchy hatching or dry-brush where form turns, a strong silhouette first. Isolated on white with only a small patch of ground and a cast shadow. Light from the upper left. |
 | still | background, item | The figure look applied to a group of objects on a small surface. No figure, no scenery. |
 
-The two registers are different on purpose. Figures print 1.6–1.9 inches wide, so bold contour and simple tone survive; the dense scene texture does not. Do not let a figure drift toward scene texture, and do not let a scene drift toward clean figure line.
+Figures print 1.6 to 1.9 inches wide, so the silhouette and the big black shapes must read at that size; fine texture is lost. Do not let a figure pick up scene backgrounds, and do not let a scene lose its fading vignette.
 
 ## What the references give you, and what they must not
 
 Take from a reference: line weight, hatching density, contrast, finish. Take nothing else.
 
-References carry subjects that tend to leak into unrelated images. Reject any result that has them without the prompt asking: ancient oaks, standing stones tied with rope or carved with spirals, a timber palisade gate, a timber bridge over a stream, a watchtower with a banner, a skeleton warrior with a shield, a walled city seen from above. Each item has at most three references, chosen so that scenery never reaches figure items; do not add more.
+References carry subjects that tend to leak into unrelated images. Reject any result that has them without the prompt asking: a skeleton king on a throne with a gargoyle-faced armrest, cobwebs, a slime-dripping cave grub, a goblin shaman with a skull staff, a hooded archer with a quiver, a zombie facing a cloaked swordsman, period fencers in ruffs and breeches, a full moon behind skeletons, a crowd of undead faces, a skeleton warrior with a shield. Each item has at most three references, chosen so that scenery never reaches figure items; do not add more.
 
 ## Ink and paper
 

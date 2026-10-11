@@ -10,4 +10,6 @@ Production is authorized for the full batch queue: generate every item status gi
 Report one line per item and the commit SHA of each delivery. Nothing you make is approved: Claude Code reviews it.
 ```
 
+After an art-direction change, start with a short calibration run: add the line `Stop after 5 delivered images.` to the prompt, let Claude Code review those five, then run the full queue with the unchanged prompt.
+
 For a readiness check only, delete the "Production is authorized" paragraph: Codex then runs the card's start-of-session steps and stops.

@@ -25,14 +25,15 @@ If a retry makes the image worse, go back to the better earlier one and use that
 | Frame, border or box | `Correction: no border, frame or box of any kind.` |
 | Hard crop or no vignette on a scene | `Correction: the drawing dissolves into blank white paper at all four edges and corners.` |
 | Lettering or runes | `Correction: no letters, runes, signs or writing anywhere.` |
-| Grey wash or soft shading | `Correction: no grey tone anywhere. Shade only with black ink hatching and stippling.` |
+| Too clean, timid or finely engraved (unlike the gritty references) | `Correction: bolder, rougher brush contours, heavy solid-black shadows and scratchy hatching; less fine detail.` |
+| Grey wash or soft shading | `Correction: no grey tone anywhere. Shade only with solid black, black ink hatching and dry-brush.` |
 | Colour | `Correction: black ink only, no colour at all.` |
 | Paper texture, stains or darkened corners | `Correction: perfectly flat, even paper with no texture, stains or shading.` |
-| Reference bleed | `Correction: do not include <trees, standing stones, a palisade or a bridge>. The subject is only <the subject>.` |
+| Reference bleed | `Correction: do not include <the leaked reference subject, e.g. a throne, a moon or a crowd of skulls>. The subject is only <the subject>.` |
 | A scale figure that was not asked for | `Correction: no human figure. Draw the creature at the stated size.` |
 | Missing scale figure that was asked for | `Correction: include one small human figure for scale, as described.` |
 | Hands, grips or weapons wrong | `Correction: the <weapon> is held correctly in <both/one> hand<s>. Keep everything else.` |
-| Soft, blurry or hazy | `Correction: crisp, fine pen lines with sharp contrast and no haze.` |
+| Soft, blurry or hazy | `Correction: crisp, bold ink lines with sharp contrast and no haze.` |
 | Subject too small or too fine to read when printed small | `Correction: draw the subject larger, filling about 70% of the frame, with fewer and bolder forms.` |
 | The tool returned a reference or another item's image (`check` says byte-identical or looks almost identical) | `Correction: draw a new picture of <the subject>; it must not resemble any attached reference image or any other illustration.` |
 | Same pose or composition as a sibling | `Correction: <the pose or camera the prompt describes>, a different composition from the references.` |

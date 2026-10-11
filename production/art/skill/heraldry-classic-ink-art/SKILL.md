@@ -69,7 +69,7 @@ If `doctor` says NOT READY YET, run the single `git lfs pull --include="..."` co
 ## Phases
 
 - `anchors` (currently 5 images). Generate them, push, then stop. Tell the owner: "Anchors done. Ask Claude Code to review them and publish the batch queue." Do not start the batch. If an anchor was refused, say so; Claude Code decides what that means for the batch.
-- `batch`. Work through the queue in order and keep going between deliveries until `status` says NOTHING LEFT. References are only the owner's hand-inked samples; approved images are never references.
+- `batch`. Work through the queue in order and keep going between deliveries until `status` says NOTHING LEFT. References are only the owner's gritty ink samples; approved images are never references.
 
 ## For each item
 

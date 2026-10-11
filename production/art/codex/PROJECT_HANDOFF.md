@@ -85,3 +85,12 @@ This document summarises the project, its decisions and the illustration workflo
 
 The anchors are settled: Greythorn plus Greenmark, Undead Champion, Fighter and Dwarf are approved. The batch queue holds 270 items, including the Giant Tarantula redo. Codex runs it from `production/art/codex/CODEX_PROMPT.md` and `BATCH_CARD.md`, delivering every 10 images with the fast-forwarding `ship`, and resumes from `status` across sessions.
 
+
+## Update: gritty old-school direction (2026-10-11, later)
+
+The owner moved the art benchmark "closer to the more old school black and white gritty style" and supplied eleven examples:
+- **References:** STYLE-REF-04 to STYLE-REF-10 are new pure-ink samples. STYLE-REF-03 was re-supplied and stays. STYLE-REF-01/02 (clean engraved line) are superseded.
+- **Mood only:** three ink-wash examples are never attached, because grey cannot print.
+- **Prompts:** they ask for bold rough brush contours, heavy solid blacks, scratchy hatching and dry-brush, and high contrast, still in pure black ink.
+- **Queue:** the 270-item batch queue was republished with the new prompts and per-register reference sets. See `docs/ART_DIRECTION.md`.
+- **Next step:** the first Codex session after this change should stop after 5 images for a review (`CODEX_PROMPT.md`).

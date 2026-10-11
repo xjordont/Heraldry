@@ -4,8 +4,10 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 
 | Set | Reference images |
 |---|---|
-| A | `assets/art/style/STYLE-REF-01-scene-hatching.jpg`<br>`assets/art/style/STYLE-REF-02-panorama-line.jpg` |
-| B | `assets/art/style/STYLE-REF-03-figure-spotblack.jpg` |
+| A | `assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg`<br>`assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg`<br>`assets/art/style/STYLE-REF-07-drybrush-duel.jpg` |
+| B | `assets/art/style/STYLE-REF-04-throne-brush-black.jpg`<br>`assets/art/style/STYLE-REF-05-cave-creature-pen.jpg`<br>`assets/art/style/STYLE-REF-03-figure-spotblack.jpg` |
+| C | `assets/art/style/STYLE-REF-04-throne-brush-black.jpg`<br>`assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg`<br>`assets/art/style/STYLE-REF-03-figure-spotblack.jpg` |
+| D | `assets/art/style/STYLE-REF-04-throne-brush-black.jpg`<br>`assets/art/style/STYLE-REF-03-figure-spotblack.jpg` |
 
 | # | ID | Subject | Size | Set | Tries | Prompt |
 |---|---|---|---|---|---|---|
@@ -138,27 +140,27 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 | 127 | `ART-MON-WILL-O-WISP` | Will-o'-Wisp | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-MON-WILL-O-WISP.txt` |
 | 128 | `ART-MON-WIND-ELEMENTAL` | Wind Elemental | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-MON-WIND-ELEMENTAL.txt` |
 | 129 | `ART-MON-ZOMBIE` | Zombie | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-MON-ZOMBIE.txt` |
-| 130 | `ART-CLA-ASSASSIN` | Assassin | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-CLA-ASSASSIN.txt` |
-| 131 | `ART-CLA-BERSERKER` | Berserker | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-CLA-BERSERKER.txt` |
-| 132 | `ART-CLA-CLERIC` | Cleric | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-CLA-CLERIC.txt` |
-| 133 | `ART-CLA-DRUID` | Druid | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-CLA-DRUID.txt` |
-| 134 | `ART-CLA-PALADIN` | Paladin | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-CLA-PALADIN.txt` |
-| 135 | `ART-CLA-PSION` | Psion | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-CLA-PSION.txt` |
-| 136 | `ART-CLA-RANGER` | Ranger | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-CLA-RANGER.txt` |
-| 137 | `ART-CLA-ROGUE` | Rogue | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-CLA-ROGUE.txt` |
-| 138 | `ART-CLA-SORCERER` | Sorcerer | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-CLA-SORCERER.txt` |
-| 139 | `ART-CLA-TRICKSTER` | Trickster | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-CLA-TRICKSTER.txt` |
-| 140 | `ART-CLA-WIZARD` | Wizard | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-CLA-WIZARD.txt` |
-| 141 | `ART-ANC-DEEP-ELF` | Deep Elf | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-ANC-DEEP-ELF.txt` |
-| 142 | `ART-ANC-DEMONBORN` | Demonborn | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-ANC-DEMONBORN.txt` |
-| 143 | `ART-ANC-DRAKEBLOOD` | Drakeblood | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-ANC-DRAKEBLOOD.txt` |
-| 144 | `ART-ANC-ELF` | Elf | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-ANC-ELF.txt` |
-| 145 | `ART-ANC-GNOME` | Gnome | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-ANC-GNOME.txt` |
-| 146 | `ART-ANC-GOBLIN` | Goblin | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-ANC-GOBLIN.txt` |
-| 147 | `ART-ANC-HALFLING` | Halfling | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-ANC-HALFLING.txt` |
-| 148 | `ART-ANC-HUMAN` | Human | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-ANC-HUMAN.txt` |
-| 149 | `ART-ANC-ORC` | Orc | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-ANC-ORC.txt` |
-| 150 | `ART-ANC-RATKIN` | Ratkin | 1024x1536 | B | 3 | `production/art/gpt/prompts/ART-ANC-RATKIN.txt` |
+| 130 | `ART-CLA-ASSASSIN` | Assassin | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-CLA-ASSASSIN.txt` |
+| 131 | `ART-CLA-BERSERKER` | Berserker | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-CLA-BERSERKER.txt` |
+| 132 | `ART-CLA-CLERIC` | Cleric | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-CLA-CLERIC.txt` |
+| 133 | `ART-CLA-DRUID` | Druid | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-CLA-DRUID.txt` |
+| 134 | `ART-CLA-PALADIN` | Paladin | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-CLA-PALADIN.txt` |
+| 135 | `ART-CLA-PSION` | Psion | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-CLA-PSION.txt` |
+| 136 | `ART-CLA-RANGER` | Ranger | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-CLA-RANGER.txt` |
+| 137 | `ART-CLA-ROGUE` | Rogue | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-CLA-ROGUE.txt` |
+| 138 | `ART-CLA-SORCERER` | Sorcerer | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-CLA-SORCERER.txt` |
+| 139 | `ART-CLA-TRICKSTER` | Trickster | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-CLA-TRICKSTER.txt` |
+| 140 | `ART-CLA-WIZARD` | Wizard | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-CLA-WIZARD.txt` |
+| 141 | `ART-ANC-DEEP-ELF` | Deep Elf | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-ANC-DEEP-ELF.txt` |
+| 142 | `ART-ANC-DEMONBORN` | Demonborn | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-ANC-DEMONBORN.txt` |
+| 143 | `ART-ANC-DRAKEBLOOD` | Drakeblood | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-ANC-DRAKEBLOOD.txt` |
+| 144 | `ART-ANC-ELF` | Elf | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-ANC-ELF.txt` |
+| 145 | `ART-ANC-GNOME` | Gnome | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-ANC-GNOME.txt` |
+| 146 | `ART-ANC-GOBLIN` | Goblin | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-ANC-GOBLIN.txt` |
+| 147 | `ART-ANC-HALFLING` | Halfling | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-ANC-HALFLING.txt` |
+| 148 | `ART-ANC-HUMAN` | Human | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-ANC-HUMAN.txt` |
+| 149 | `ART-ANC-ORC` | Orc | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-ANC-ORC.txt` |
+| 150 | `ART-ANC-RATKIN` | Ratkin | 1024x1536 | C | 3 | `production/art/gpt/prompts/ART-ANC-RATKIN.txt` |
 | 151 | `ART-MON-AVATAR-OF-THE-OLD-GROWTH` | Avatar of the Old Growth | 1536x1024 | A | 3 | `production/art/gpt/prompts/ART-MON-AVATAR-OF-THE-OLD-GROWTH.txt` |
 | 152 | `ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN` | Captain Veyr of the Forsaken | 1536x1024 | A | 3 | `production/art/gpt/prompts/ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN.txt` |
 | 153 | `ART-MON-KHORRUN-THE-DRACOLICH` | Khorrun the Dracolich | 1536x1024 | A | 3 | `production/art/gpt/prompts/ART-MON-KHORRUN-THE-DRACOLICH.txt` |
@@ -245,28 +247,28 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 | 234 | `ART-TRA-TIER-3-DRUIDIC-RITUALS-D20` | Tier 3 Druidic Rituals (d20) | 1536x1024 | A | 3 | `production/art/gpt/prompts/ART-TRA-TIER-3-DRUIDIC-RITUALS-D20.txt` |
 | 235 | `ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20` | Tier 3 Psychic Abilities (d20) | 1536x1024 | A | 3 | `production/art/gpt/prompts/ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20.txt` |
 | 236 | `ART-TRA-TIER-3-SORCERIES-D20` | Tier 3 Sorceries (d20) | 1536x1024 | A | 3 | `production/art/gpt/prompts/ART-TRA-TIER-3-SORCERIES-D20.txt` |
-| 237 | `ART-BAC-ALCHEMIST` | Alchemist | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-ALCHEMIST.txt` |
-| 238 | `ART-BAC-APPRENTICE` | Apprentice | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-APPRENTICE.txt` |
-| 239 | `ART-BAC-ARTISAN` | Artisan | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-ARTISAN.txt` |
-| 240 | `ART-BAC-BELIEVER` | Believer | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-BELIEVER.txt` |
-| 241 | `ART-BAC-COURIER` | Courier | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-COURIER.txt` |
-| 242 | `ART-BAC-CULTIST` | Cultist | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-CULTIST.txt` |
-| 243 | `ART-BAC-FARMER` | Farmer | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-FARMER.txt` |
-| 244 | `ART-BAC-HERMIT` | Hermit | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-HERMIT.txt` |
-| 245 | `ART-BAC-MERCHANT` | Merchant | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-MERCHANT.txt` |
-| 246 | `ART-BAC-NOBLE` | Noble | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-NOBLE.txt` |
-| 247 | `ART-BAC-NOMAD` | Nomad | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-NOMAD.txt` |
-| 248 | `ART-BAC-PAUPER` | Pauper | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-PAUPER.txt` |
-| 249 | `ART-BAC-PERFORMER` | Performer | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-PERFORMER.txt` |
-| 250 | `ART-BAC-SAILOR` | Sailor | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-SAILOR.txt` |
-| 251 | `ART-BAC-SCHOLAR` | Scholar | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-SCHOLAR.txt` |
-| 252 | `ART-BAC-SCOUT` | Scout | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-SCOUT.txt` |
-| 253 | `ART-BAC-SHEPHERD` | Shepherd | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-SHEPHERD.txt` |
-| 254 | `ART-BAC-SMUGGLER` | Smuggler | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-SMUGGLER.txt` |
-| 255 | `ART-BAC-SOLDIER` | Soldier | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-SOLDIER.txt` |
-| 256 | `ART-BAC-VAGABOND` | Vagabond | 1024x1024 | B | 3 | `production/art/gpt/prompts/ART-BAC-VAGABOND.txt` |
-| 257 | `ART-ITE-7-6-TREASURE-TABLES` | 7.6 Treasure Tables | 1536x1024 | B | 3 | `production/art/gpt/prompts/ART-ITE-7-6-TREASURE-TABLES.txt` |
-| 258 | `ART-ITE-7-8-MELEE-WEAPONS` | 7.8 Melee Weapons | 1536x1024 | B | 3 | `production/art/gpt/prompts/ART-ITE-7-8-MELEE-WEAPONS.txt` |
+| 237 | `ART-BAC-ALCHEMIST` | Alchemist | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-ALCHEMIST.txt` |
+| 238 | `ART-BAC-APPRENTICE` | Apprentice | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-APPRENTICE.txt` |
+| 239 | `ART-BAC-ARTISAN` | Artisan | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-ARTISAN.txt` |
+| 240 | `ART-BAC-BELIEVER` | Believer | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-BELIEVER.txt` |
+| 241 | `ART-BAC-COURIER` | Courier | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-COURIER.txt` |
+| 242 | `ART-BAC-CULTIST` | Cultist | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-CULTIST.txt` |
+| 243 | `ART-BAC-FARMER` | Farmer | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-FARMER.txt` |
+| 244 | `ART-BAC-HERMIT` | Hermit | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-HERMIT.txt` |
+| 245 | `ART-BAC-MERCHANT` | Merchant | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-MERCHANT.txt` |
+| 246 | `ART-BAC-NOBLE` | Noble | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-NOBLE.txt` |
+| 247 | `ART-BAC-NOMAD` | Nomad | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-NOMAD.txt` |
+| 248 | `ART-BAC-PAUPER` | Pauper | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-PAUPER.txt` |
+| 249 | `ART-BAC-PERFORMER` | Performer | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-PERFORMER.txt` |
+| 250 | `ART-BAC-SAILOR` | Sailor | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-SAILOR.txt` |
+| 251 | `ART-BAC-SCHOLAR` | Scholar | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-SCHOLAR.txt` |
+| 252 | `ART-BAC-SCOUT` | Scout | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-SCOUT.txt` |
+| 253 | `ART-BAC-SHEPHERD` | Shepherd | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-SHEPHERD.txt` |
+| 254 | `ART-BAC-SMUGGLER` | Smuggler | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-SMUGGLER.txt` |
+| 255 | `ART-BAC-SOLDIER` | Soldier | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-SOLDIER.txt` |
+| 256 | `ART-BAC-VAGABOND` | Vagabond | 1024x1024 | D | 3 | `production/art/gpt/prompts/ART-BAC-VAGABOND.txt` |
+| 257 | `ART-ITE-7-6-TREASURE-TABLES` | 7.6 Treasure Tables | 1536x1024 | D | 3 | `production/art/gpt/prompts/ART-ITE-7-6-TREASURE-TABLES.txt` |
+| 258 | `ART-ITE-7-8-MELEE-WEAPONS` | 7.8 Melee Weapons | 1536x1024 | D | 3 | `production/art/gpt/prompts/ART-ITE-7-8-MELEE-WEAPONS.txt` |
 | 259 | `ART-CH01-002` | ART-CH01-001 | 1536x1024 | A | 5 | `production/art/gpt/prompts/ART-CH01-002.txt` |
 | 260 | `ART-CH02-002` | ART-CH02-001 | 1536x1024 | A | 5 | `production/art/gpt/prompts/ART-CH02-002.txt` |
 | 261 | `ART-CH03-002` | ART-CH03-001 | 1536x1024 | A | 5 | `production/art/gpt/prompts/ART-CH03-002.txt` |

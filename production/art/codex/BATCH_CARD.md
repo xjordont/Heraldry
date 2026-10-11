@@ -5,12 +5,12 @@ Read this and `AGENTS.md` only. Open `SKILL.md` or `references/*.md` only when o
 ## Start of session
 1. `git status --short` must be empty, or show only your unsent `assets/art/incoming/*` and `RECEIPTS.jsonl`. If it is clean: `git pull --ff-only origin main`. If work is unsent, deliver it first (see Delivery).
 2. `H work_preflight.py --repo . --require-installed`, then `H heraldry_art.py status`. Stop on BLOCKED or NOT READY and quote the output.
-3. Look once at each reference this session: `assets/art/style/STYLE-REF-01*` and `-02*` for scenes, `-03*` for figures and still lifes.
+3. Look once at each reference this session: `assets/art/style/STYLE-REF-07*`, `-09*` and `-10*` for scenes; `-03*`, `-04*`, `-05*` and `-06*` for figures and still lifes. The target is gritty old-school ink: bold rough brush contours, heavy solid blacks, scratchy hatching and dry-brush, high contrast, pure black ink (no grey wash).
 
 ## Per item (repeat until status says NOTHING LEFT)
 1. `H heraldry_art.py status`, then `H heraldry_art.py show ID`. Redo items come first; `show` prints the reviewer's reason.
 2. Generate with the prompt exactly as printed. Attach exactly the listed references, in order. Request the largest size and best quality offered at the listed aspect. Use GPT Image 2.5 Sunburst if the tool offers it; otherwise the default. No paid API. Save the native file unchanged to `%HERALDRY_SCRATCH%\ID_aN.png`.
-3. `H heraldry_art.py check ID FILE`. Look at the image and its print-size preview. Check every MUST line (count things), every DO NOT DRAW line, no lettering, black ink only, edges, and anatomy.
+3. `H heraldry_art.py check ID FILE`. Look at the image and its print-size preview. Check every MUST line (count things), every DO NOT DRAW line, no lettering, black ink only, edges, anatomy, and that it is as gritty and bold as the references (too clean or finely engraved is a style fail).
 4. On any hard fail: retry, adding at most two correction sentences (table in `references/REPAIR.md`). The budget is the item's attempts; stop at the first clean attempt. After the last attempt, save the best with `--accept-flags --notes "what is still wrong"`.
 5. `H heraldry_art.py qa ID FILE`. Fill the draft it names: three true/false attestations, `register_compared`, and ten `{pass, evidence}` entries. Evidence is one concrete sentence of 15 or more characters about what you saw. Never pass something you did not check.
 6. `H heraldry_art.py save ID FILE --must "<what you counted>" ... --avoid-clear --model "<label shown, or not shown>"`. The draft is found automatically.

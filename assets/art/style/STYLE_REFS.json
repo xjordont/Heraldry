@@ -1,5 +1,5 @@
 {
- "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration.",
+ "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached.",
  "refs": [
   {
    "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
@@ -9,7 +9,7 @@
     1438
    ],
    "sha256": "3c0bea9e732212ef9b338e652292bc443b8195a3d3f082460763f4513435e50d",
-   "use": "generation style reference only; never placed in the book or packaged"
+   "use": "superseded 2026-10-11 by the gritty old-school set: kept for the record, no longer attached to generation; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
@@ -19,7 +19,7 @@
     1792
    ],
    "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
-   "use": "generation style reference only; never placed in the book or packaged"
+   "use": "superseded 2026-10-11 by the gritty old-school set: kept for the record, no longer attached to generation; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
@@ -29,7 +29,84 @@
     1438
    ],
    "sha256": "d3834f414c62e8623c1c5f35afd6ed4da9edbaaf86e64ac4883763e92b7d61bf",
-   "use": "generation style reference only; never placed in the book or packaged"
+   "use": "generation style reference only; never placed in the book or packaged; the owner re-supplied it in the 2026-10-11 gritty set"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+   "source": "owner-supplied example, 2026-10-11 gritty old-school set (original bytes)",
+   "px": [
+    1384,
+    1945
+   ],
+   "sha256": "134078725385cca7220f9757f98672f27f3a26dfe31816e359a7ad59bc4f8d21",
+   "use": "generation style reference only; never placed in the book or packaged",
+   "role": "figure: enthroned skeleton king; heavy brush blacks, rough dry-brush contour"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+   "source": "owner-supplied example, 2026-10-11 gritty old-school set (original bytes)",
+   "px": [
+    1429,
+    1904
+   ],
+   "sha256": "9211539ee20f600aa0ba6ffd9de1dc51bfcf9dedb4136e1c25eecebcd40bbd8e",
+   "use": "generation style reference only; never placed in the book or packaged",
+   "role": "creature: cave slime beast and goblin shaman; scratchy pen texture, bold contour"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
+   "source": "owner-supplied example, 2026-10-11 gritty old-school set (original bytes)",
+   "px": [
+    491,
+    941
+   ],
+   "sha256": "885688a47450cfca9763b5ead5cb32ae8c34ca0fc72c677148497ace114fab55",
+   "use": "generation style reference only; never placed in the book or packaged",
+   "role": "person: hooded archer; loose brush-pen sketch, broken line"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-07-drybrush-duel.jpg",
+   "source": "owner-supplied example, 2026-10-11 gritty old-school set (original bytes)",
+   "px": [
+    1177,
+    767
+   ],
+   "sha256": "d0d69cbb5cdb5679e4ad4eb09d272b54de544b38337088158ec23a5d5fac4ff8",
+   "use": "generation style reference only; never placed in the book or packaged",
+   "role": "scene: zombie and cloaked swordsman; dry-brush blacks on open paper, grass vignette"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
+   "source": "owner-supplied example, 2026-10-11 gritty old-school set (original bytes)",
+   "px": [
+    943,
+    600
+   ],
+   "sha256": "76703e91b74e1823f275704fa200f551076b7d5fc367a407e92062ff60baaba5",
+   "use": "generation style reference only; never placed in the book or packaged",
+   "role": "scene: period woodcut of fencers; gouged hatching, strong silhouette"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+   "source": "owner-supplied example, 2026-10-11 gritty old-school set (original bytes)",
+   "px": [
+    1440,
+    732
+   ],
+   "sha256": "8a797125940c3f7def70c80ab4b819812f54116a93daabc3acf89f7cc9e50cd8",
+   "use": "generation style reference only; never placed in the book or packaged",
+   "role": "scene: skeleton melee; comic-ink spot blacks, scratchy action texture"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+   "source": "owner-supplied example, 2026-10-11 gritty old-school set (original bytes)",
+   "px": [
+    1394,
+    875
+   ],
+   "sha256": "333021be2755c3993e009a240b07d016267472abb742ff3b1e9a0db65d22fba9",
+   "use": "generation style reference only; never placed in the book or packaged",
+   "role": "scene: classic 1980s undead crowd; bold contour, heavy blacks, crosshatching"
   }
  ],
  "inspiration_only": [
@@ -42,6 +119,36 @@
    ],
    "sha256": "3e86b5f85c5bb06f84ac199d539231d55cb3fff6c373619f276401380fdf82e1",
    "use": "hand-drawn line inspiration only. It carries lettering, so it is never attached to image generation (the art must contain no lettering), never placed and never packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-INSPIRATION-wash-knight-arrows.jpg",
+   "source": "owner-supplied example, 2026-10-11 gritty old-school set (original bytes)",
+   "px": [
+    1125,
+    635
+   ],
+   "sha256": "4311279d72f828b900776f78e4c694069f326364c899d30e6cf3f491bef61a48",
+   "use": "ink wash and splatter mood only. Grey wash cannot print in the book's pure black ink, so it is never attached to generation, never placed and never packaged; take only its dramatic black massing and composition"
+  },
+  {
+   "path": "assets/art/style/STYLE-INSPIRATION-wash-three-soldiers.jpg",
+   "source": "owner-supplied example, 2026-10-11 gritty old-school set (original bytes)",
+   "px": [
+    1175,
+    733
+   ],
+   "sha256": "af9517e8f7ebb0dc40b2afd244ebb8b05ac57bd4accc86cce7e02e08b9c13109",
+   "use": "ink wash and splatter mood only. Grey wash cannot print in the book's pure black ink, so it is never attached to generation, never placed and never packaged; take only its dramatic black massing and composition"
+  },
+  {
+   "path": "assets/art/style/STYLE-INSPIRATION-wash-castle-hill.jpg",
+   "source": "owner-supplied example, 2026-10-11 gritty old-school set (original bytes)",
+   "px": [
+    1101,
+    440
+   ],
+   "sha256": "dfb7730904207f13bd221f4cfc2dd354c210158f9191fdcd62265ad03956c1d1",
+   "use": "ink wash and splatter mood only. Grey wash cannot print in the book's pure black ink, so it is never attached to generation, never placed and never packaged; take only its dramatic black massing and composition"
   }
  ]
 }

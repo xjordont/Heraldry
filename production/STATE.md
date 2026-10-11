@@ -184,3 +184,23 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - Fixed: the intake workflows downloaded every incoming LFS image on every run, which at one image per push would have used tens of GB of LFS bandwidth. `art_intake.py needs-pull` lists only pointers whose oid is not yet recorded, and scan skips recorded pointers (test added).
   - BATCH_CARD and CODEX_PROMPT were updated, and the batch queue was republished (270 items).
 
+- **Gritty old-school art direction** (owner, 2026-10-11, with eleven attached examples: "I want to redo the art inspiration a bit to move our current art benchmarks and inspiration to be closer to the more old school black and white gritty style artworks such as those attached").
+  - **References:** seven pure-black-ink examples became STYLE-REF-04 to STYLE-REF-10 (`assets/art/style/`, `STYLE_REFS.json`). One example was STYLE-REF-03 again (byte-identical) and stays.
+  - **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached. Grey wash cannot print in the book's pure black ink, and the pipeline still rejects it.
+  - **Superseded:** STYLE-REF-01/02 (clean engraved line) stay on file but are no longer attached.
+  - **Reference sets:**
+
+    | Register | References |
+    |---|---|
+    | Scene | 09, 10, 07 |
+    | Creature | 04, 05, 03 |
+    | Person | 04, 06, 03 |
+    | Still life | 04, 03 |
+
+  - **Prompts:** `prompt_v2` (intro, style, final and reference wording) now asks for bold rough brush contours, heavy solid blacks, scratchy hatching and dry-brush with woodcut bite, high contrast and visible human marks. It still forbids grey wash, stipple fields, machine-even texture and clean vector-like line.
+  - **Skill (v6, rebuilt):** `STYLE.md`, `STYLE_CONSISTENCY_V6.md`, `VISUAL_ACCEPTANCE_V6.md` and `REPAIR.md` follow the new direction. REPAIR.md has a new "too clean" correction. The ZIP now carries the new references.
+  - **Updated alongside:** the Codex BATCH_CARD, runbook, WORK_PROMPT and the fallback package text.
+  - **Queue:** the 270-item batch was republished with new prompt hashes. No images had been made from the old prompts.
+  - **Calibration:** CODEX_PROMPT recommends a first run that stops after 5 images for review.
+  - **Approved art:** Greythorn and the four hand-inked anchors remain approved; whether to redo them for consistency is for the owner to decide.
+  - No manuscript change and no build. `dist/` still predates this art.

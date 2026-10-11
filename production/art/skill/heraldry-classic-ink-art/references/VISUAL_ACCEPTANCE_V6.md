@@ -12,7 +12,7 @@ This is a visual inspection rubric, not a numerical model of artistic merit. Do 
 
 - **Material-specific lines:** Bark uses branching fissures and wrapped grain; timber follows beams and joins; stone respects courses and cracks; metal reflects through white reserve and sharply placed black shadows; cloth follows folds; skin, fur and scales have anatomical patterning.
 - **Hierarchical stroke weight:** Heavy outer and occlusion lines; delicate construction and texture marks; finer distant strokes. Avoid equal line weight across the image.
-- **Clear value organisation:** Confident deep blacks in selective recesses and an obvious white-paper reserve. Fine hatching and stipple produce the mid-values; airbrush-like greys do not.
+- **Clear value organisation:** Bold solid-black masses and an obvious white-paper reserve, high contrast. Scratchy hatching and dry-brush produce the few mid-values; stipple fields and airbrush-like greys do not.
 - **Light consistency:** One coherent upper-left light source unless the item explicitly specifies otherwise. Deep blacks should correspond to real recesses, occlusion, and cast shadow.
 - **Architectural coherence:** Fortifications have an intelligible defended perimeter; roads lead to gates; streets connect districts; bridges have realistic supports and destinations; buildings show believable roof structures. Cities require sufficient apparent density for their stated scale.
 - **Subject distinction:** Do not transplant distinctive Greythorn elements into other locales. Preserve biome identity (forest, urban ruin, caverns, ice, desert, mire) through material and construction, not atmospheric gradients.
