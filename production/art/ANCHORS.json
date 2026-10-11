@@ -1,25 +1,22 @@
 {
- "status": "proposed",
- "proposed_at": "2026-10-08T12:38:35+00:00",
+ "route": "gpt",
+ "status": "approved",
+ "approved_at": "2026-10-11T02:57:18+00:00",
+ "approved_by": "Claude Code orchestrator visual review 2026-10-11 (production/art/review/ANCHOR_REVIEW_2026-10-11.md)",
  "anchor_ids": [
-  "ART-CLI-THE-GREENMARK",
   "ART-BAS-GREYTHORN",
+  "ART-CLI-THE-GREENMARK",
   "ART-MON-GIANT-TARANTULA",
   "ART-MON-UNDEAD-CHAMPION",
   "ART-CLA-FIGHTER",
   "ART-ANC-DWARF"
  ],
  "references": [
-  "assets/art/masters/ART-CLI-THE-GREENMARK.png",
-  "assets/art/masters/ART-BAS-GREYTHORN.png",
-  "assets/art/masters/ART-MON-GIANT-TARANTULA.png",
-  "assets/art/masters/ART-MON-UNDEAD-CHAMPION.png",
-  "assets/art/masters/ART-CLA-FIGHTER.png",
-  "assets/art/masters/ART-ANC-DWARF.png"
- ],
- "inspiration": [
-  "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-  "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-  "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+  "assets/art/incoming/ART-BAS-GREYTHORN.jpg",
+  "assets/art/incoming/ART-CLI-THE-GREENMARK.png",
+  "assets/art/incoming/ART-MON-GIANT-TARANTULA.png",
+  "assets/art/incoming/ART-MON-UNDEAD-CHAMPION.png",
+  "assets/art/incoming/ART-CLA-FIGHTER.png",
+  "assets/art/incoming/ART-ANC-DWARF.png"
  ]
 }
