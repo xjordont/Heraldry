@@ -6,7 +6,7 @@
   "route": "gpt",
   "spec_sha256": "06acc0f3570bd7c61ff5709d3ceeffb4140c46bc4312719aa5d268986dea7f25",
   "prompt_sha256": "f59306517f59dc714262b562c2b2efbf75fdc7e6551460dbf5465171c21f70b6",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-11T14:06:48+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -30,7 +30,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.113
   },
-  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-11T14:07:35+00:00"
  },
  "ART-BAS-GREYTHORN": {
   "family": "bastion",
@@ -72,7 +73,7 @@
   "route": "gpt",
   "spec_sha256": "2f92a29ce28708e821d5ee92d8db216e17722f58c4632c5d65be7465c3d011ab",
   "prompt_sha256": "9bfcad1d4be9c29d4fa270c67447755130abe1d21368c72d26c5be9724656789",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-11T14:06:46+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -96,7 +97,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.817
   },
-  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-11T14:07:35+00:00"
  },
  "ART-CLA-FIGHTER": {
   "family": "class",
@@ -105,7 +107,7 @@
   "route": "gpt",
   "spec_sha256": "99a5d97686f6ca5f3d39049228e21890ff3bb26547991bbc102038400bc0975b",
   "prompt_sha256": "9e9cd8a65535fdbe4fe3890c34062301e3f9118d939a6c4b9be13c14fe539458",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-11T14:06:47+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -129,7 +131,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.907
   },
-  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-11T14:07:35+00:00"
  },
  "ART-MON-GIANT-TARANTULA": {
   "family": "monster",
@@ -138,7 +141,7 @@
   "route": "gpt",
   "spec_sha256": "b37b2dba2d188626466dcf40df4c824578a01add050150e56ec1dfcb69bc9459",
   "prompt_sha256": "a94bb9a9613bc8a46288920b1dc9db0ecf82f0a65e48f2bb1ce398a2a9fbb13b",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-11T14:06:49+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -162,7 +165,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.777
   },
-  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-11T14:07:35+00:00",
+  "rejected_reason": "Exactly eight legs must be countable, and two rounds have shown only seven feet (four left, three right) with the eighth hidden behind the helm. Redraw with four separate jointed legs on each side, every foot visible on the ground, and the helm lying apart so it covers no leg. Keep this round's bolder hand-inked look, with fewer fur strokes and more open white on the body."
  },
  "ART-MON-UNDEAD-CHAMPION": {
   "family": "monster",
@@ -171,7 +176,7 @@
   "route": "gpt",
   "spec_sha256": "6450423260b7218005c888a9dcbcd4ad11ca24b9528ffa2ca3b071913ec933e3",
   "prompt_sha256": "bdd422ee9e5a253b20712775b6a7c5cca98f0bc8fb87c1f41a8fdd1c45f479a5",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-11T14:06:50+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
@@ -195,6 +200,7 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.873
   },
-  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-11T14:07:35+00:00"
  }
 }

@@ -91,9 +91,9 @@ class OfflineRun(unittest.TestCase):
 
     def test_tampering_is_caught(self):
         pkg, home, env = self.unpack("tampered")
-        ref = QUEUE["items"][0]["references"][1]
+        ref = QUEUE["items"][0]["references"][-1]            # works for any queue size
         (pkg / ref).write_bytes(b"version https://git-lfs.github.com/spec/v1\noid sha256:" + b"0" * 64 + b"\nsize 1\n")
-        prompt = pkg / QUEUE["items"][1]["prompt"]
+        prompt = pkg / QUEUE["items"][-1]["prompt"]
         prompt.write_text(prompt.read_text() + "extra\n")
         r = self.sh(pkg, env, f"{SCRIPTS}/work_preflight.py", "--repo", ".", "--offline-package")
         d = json.loads(r.stdout)
@@ -155,12 +155,16 @@ class OfflineRun(unittest.TestCase):
         v = awp.verify_bundle(out)
         self.assertEqual(v["status"], "PASS", json.dumps(v, indent=1))
         # A swapped image is caught by the reviewer check.
+        first = QUEUE["items"][0]
+        fw, fh = (int(x) for x in first["size"].split("x"))
+        swap = scratch / "swap.png"
+        figure_image((fw, fh), scale=0.45).save(swap)
         bad = self.tmp / "bad.zip"
         with zipfile.ZipFile(out) as src, zipfile.ZipFile(bad, "w") as dst:
             for n in src.namelist():
                 data = src.read(n)
-                if n.endswith("ART-ANC-DWARF.png"):
-                    data = (scratch / "ART-CLA-FIGHTER.png").read_bytes()
+                if n.endswith(f"{first['id']}.png"):
+                    data = swap.read_bytes()
                 dst.writestr(n, data)
         self.assertEqual(awp.verify_bundle(bad)["status"], "FAIL")
         # The import workflow's step, against a fresh copy of the package standing in for the repository.
@@ -178,7 +182,7 @@ class OfflineRun(unittest.TestCase):
 
     def test_bundle_refuses_a_qa_report_changed_after_save(self):
         pkg, home, env = self.unpack("qa-changed")
-        it = QUEUE["items"][1]
+        it = next((i for i in QUEUE["items"] if i["register"] != "scene"), QUEUE["items"][0])
         w, hgt = (int(x) for x in it["size"].split("x"))
         img = home / "x.png"
         figure_image((w, hgt)).save(img)
@@ -191,8 +195,9 @@ class OfflineRun(unittest.TestCase):
             rec["checks"][k] = {"pass": True, "evidence": f"synthetic test stand-in, mechanics only: {k}"}
         qa.write_text(json.dumps(rec))
         self.sh(pkg, env, f"{SCRIPTS}/heraldry_art.py", "check", it["id"], str(img))
-        r = self.sh(pkg, env, f"{SCRIPTS}/heraldry_art.py", "save", it["id"], str(img), "--qa-file", str(qa),
-                    "--must", "test stand-in, counted eight legs", "--avoid-clear")
+        flags = sum((["--must", "test stand-in, counted as listed: " + m] for m in it["must"]), [])
+        flags += ["--avoid-clear"] if it["avoid"] else []
+        r = self.sh(pkg, env, f"{SCRIPTS}/heraldry_art.py", "save", it["id"], str(img), "--qa-file", str(qa), *flags)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         qa_copy = next((home / "scratch").rglob(f"qa/{it['id']}.qa.json"))
         qa_copy.write_text(qa_copy.read_text().replace("mechanics only", "edited later"))

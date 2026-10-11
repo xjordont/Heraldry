@@ -665,7 +665,7 @@ Do not draw:
 
 Printed 3.3 in wide · aspect 3:2. Family framing: Landscape that captures the climate's defining terrain, ruin and danger, with one or two tiny figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame.
 
-### 1. The Greenmark ◐
+### 1. The Greenmark ✓
 
 `ART-CLI-THE-GREENMARK`
 
@@ -1124,7 +1124,7 @@ Do not draw:
 * No sword: its kit is sling, pack and pot.
 ```
 
-### 3. Dwarf ◐
+### 3. Dwarf ✓
 
 `ART-ANC-DWARF`
 
@@ -1918,7 +1918,7 @@ Do not draw:
 
 Printed 1.9 in wide · aspect 2:3. Family framing: Single full-length adventurer in an action-ready pose with class-typical arms and gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.
 
-### 1. Fighter ◐
+### 1. Fighter ✓
 
 `ART-CLA-FIGHTER`
 
@@ -2726,7 +2726,7 @@ Printed 1.9 in wide · aspect 1:1. Family framing: Single creature, full body, t
 GIANT TARANTULA - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
 Create a hand-inked black-and-white illustration of Giant Tarantula, Greenmark Skirmisher, small: a hand-span of bristled legs around a body the size of a war helm, a forest-floor venomous hunter, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
 COMPOSITION
-Low three-quarter ground view of the spider stalking across leaf litter on stilted, deliberate legs, forelegs raised, fangs lifted; a discarded war helm beside it for scale.
+Low three-quarter ground view of the spider stalking across leaf litter on stilted, deliberate legs, forelegs raised, fangs lifted, all eight legs splayed clear of the body so each one can be counted; a discarded war helm lying a short distance to one side for scale, hiding no leg.
 Size: Small: smaller than a human.
 SUBJECT DETAILS
 * Exactly eight legs, jointed and tipped with small claws
@@ -3513,7 +3513,7 @@ Do not draw:
 * No gateway, arch or other undead.
 ```
 
-### 29. Undead Champion ◐
+### 29. Undead Champion ✓
 
 `ART-MON-UNDEAD-CHAMPION`
 

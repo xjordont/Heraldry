@@ -3872,7 +3872,7 @@
    ],
    "brief": {
     "identity": "Giant Tarantula, Greenmark Skirmisher, small: a hand-span of bristled legs around a body the size of a war helm, a forest-floor venomous hunter.",
-    "composition": "Low three-quarter ground view of the spider stalking across leaf litter on stilted, deliberate legs, forelegs raised, fangs lifted; a discarded war helm beside it for scale.",
+    "composition": "Low three-quarter ground view of the spider stalking across leaf litter on stilted, deliberate legs, forelegs raised, fangs lifted, all eight legs splayed clear of the body so each one can be counted; a discarded war helm lying a short distance to one side for scale, hiding no leg.",
     "details": [
      "Exactly eight legs, jointed and tipped with small claws",
      "Body the size of a war helm, hairy abdomen and cephalothorax",
@@ -3896,7 +3896,7 @@
      "9.7 The Bestiary, Greenmark Bestiary: Giant Tarantula [Skirmisher]"
     ]
    },
-   "spec_sha256": "b37b2dba2d188626466dcf40df4c824578a01add050150e56ec1dfcb69bc9459"
+   "spec_sha256": "f0824267d44aef1191545f0938394e570fe48e8444987c0b5638d5235b55c652"
   },
   {
    "id": "ART-MON-GOBLIN",
