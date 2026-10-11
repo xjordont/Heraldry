@@ -1,36 +1,35 @@
-# Operator card
+# Heraldry Skirmish art runner v6: operator card
 
-## The loop
+## Before generation
 
-1. **ChatGPT Work** runs the `anchors` queue (5 images) and pushes. It stops.
-2. **You** tell Claude Code: "Review the anchors." Claude Code runs the intake, looks at them, approves or rejects them, and publishes the batch queue.
-3. **ChatGPT Work** runs the batch in order, pushing every 5 images (never more than 10 unsent) and at session end.
-4. **Claude Code** reviews each push. A rejected image goes back into the queue with the reviewer's reason and shows as `redo`.
-5. Repeat 3 and 4 until `status` reports nothing left.
+Work with the `xjordont/Heraldry` repository, `main`, following `SKILL.md`. Claude Code owns prompts, queue, references and approvals. Work generates, checks and delivers unchanged native image files; never modify prompts, manuscript or queue.
 
-Claude Code owns the prompts, queue, references, review and approval. ChatGPT Work only generates and delivers.
+Run in the authenticated checkout:
 
-## Start prompts
+```
+python production/art/skill/heraldry-classic-ink-art/scripts/work_preflight.py --repo . --require-installed
+python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py doctor
+python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py status
+```
 
-**First run (anchors)**
+If Git LFS/authentication is unavailable, use the bundle fallback. Confirm through a real smoke test that the image tool accepts the queue's references and that the native image file is accessible. Do not claim this was verified from repository access alone.
 
-> Use the heraldry-classic-ink-art skill. Repo: xjordont/heraldry, branch main. Do the session start steps, then run the anchors queue exactly as the skill says. Push, then stop and tell me.
+## Per item
 
-**Batch run**
+1. `show ID`; paste the exact prompt and attach **only** the listed references (all of them).
+2. Generate the requested native pixel dimensions at the highest quality offered; keep original bytes in scratch.
+3. Run `check ID SCRATCH_IMAGE`; inspect original and print-size preview beside its references. Set `visual_review_at_print_size: true` and `register_compared` in the QA file **only after** this review.
+4. Create the image-bound QA report with `fidelity_gate.py create ... --out /scratch/ID.qa.json`, complete ten criteria with visible evidence, and run `save ID FILE --qa-file /scratch/ID.qa.json` plus the existing `--must` and `--avoid-clear` assertions. Never invent a pass.
+5. Retry narrowly within the queue budget; at exhaustion, use a flagged handoff with recorded failures, not a false approval.
 
-> Use the heraldry-classic-ink-art skill on xjordont/heraldry, main. Pull, run doctor and status, then work through the queue in order without asking me between items. Push every 5 images and at session end. Stop at a stop condition and give me the report.
+## Batch and stopping rules
 
-**Resume (new conversation)**
+- Review each batch with `sheet --refs` and `style_audit.py --repo . --limit 10 --out /scratch/batch_style.json`. Stop if two or more same-register siblings exhibit a common style drift.
+- After 5 images, or at session end, run `delivery_guard.py audit --repo .`; then `delivery_guard.py ship --execute --repo .` only when safe. Otherwise `bundle` and state delivery is pending.
+- **Anchors phase: generate exactly 5, deliver, STOP.** Wait for independent Claude Code review and republished queue.
+- Resume from `status`; never regenerate an approved/delivered item unless it is an explicit `redo`.
+- An @GitHub connection does not automatically launch Claude Code, supply Git LFS, or approve artwork.
 
-> Resume the Heraldry illustration queue with the heraldry-classic-ink-art skill. Pull main, run doctor and status, and continue from the next action it prints. The same rules apply.
+## Copy-and-use Work prompt
 
-**Redo rejected images**
-
-> Use the heraldry-classic-ink-art skill. Claude Code rejected some images; they show as redo in status. Regenerate only those, with a fresh attempt budget each and the reviewer's reason as the guide, and push.
-
-## If something looks wrong
-
-- `doctor` says NOT READY: read what it lists. Usually git-lfs is missing or the clone is stale.
-- A prompt does not match its hash: someone republished the queue. Pull again.
-- The whole batch looks drifted or alike, not just one or two images (the runner redoes those itself): stop the run, start a fresh conversation, and use the resume prompt.
-- The tool refuses an item: the refusal is recorded in `RECEIPTS.jsonl`. Tell Claude Code; it owns the prompt.
+> Use the Heraldry Skirmish Classic Ink Art v6 skill on xjordont/Heraldry, main. Perform the Work environment and image-reference smoke tests, run the queue doctor and status, then generate the queued illustrations in order using the exact repository prompts and item-specific references. For each native image, run mechanical checks, inspect the image and print-size proof, and complete the ten-criterion, byte-bound style-fidelity QA report with explicit print-size review. Audit cross-image drift and verify current image/reference hashes before delivery. Retry only within each item's budget; do not self-approve. Review batch-level artistic drift and deliver every 5 images through the guarded Git LFS process, or provide a clearly labelled fallback bundle. Stop after the five anchors, or at any hard blocker; report completed IDs, failures, receipt hashes, commit or bundle, and the next action. Never edit the queue, prompts, manuscript or code during generation.

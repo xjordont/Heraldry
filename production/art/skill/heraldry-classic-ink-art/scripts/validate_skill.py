@@ -20,7 +20,10 @@ HERE = Path(__file__).resolve().parents[1]
 SIZES = {"3:2": "1536x1024", "2:3": "1024x1536", "1:1": "1024x1024"}
 REQUIRED = ["SKILL.md", "README.md", "OPERATOR_CARD.md", "manifest.json", "scripts/heraldry_art.py", "scripts/validate_skill.py",
             "references/STYLE.md", "references/QA_CHECKLIST.md", "references/REPAIR.md", "references/FAMILIES.md",
-            "references/AD_HOC.md", "references/images/SOURCES.json"]
+            "references/AD_HOC.md", "references/images/SOURCES.json",
+            "references/STYLE_CONSISTENCY_V6.md", "references/WORK_OPERATIONS_V6.md",
+            "scripts/fidelity_gate.py", "scripts/work_preflight.py", "scripts/delivery_guard.py", "scripts/style_audit.py",
+            "deployment/REPOSITORY_UPGRADE.md", "deployment/INSTRUCTIONS_V6_REPLACEMENT.md", "references/VISUAL_ACCEPTANCE_V6.md", "VERIFICATION_REPORT.md"]
 
 
 def sha(b):
@@ -42,6 +45,8 @@ def check_package(base):
             errors.append(f"missing {rel}")
     mf = base / "manifest.json"
     manifest = json.loads(mf.read_text()) if mf.is_file() else {"files": {}}
+    if manifest.get("version") != "6.0.0":
+        errors.append("expected v6.0.0 manifest")
     on_disk = {p.relative_to(base).as_posix() for p in base.rglob("*") if p.is_file() and "__pycache__" not in p.parts} - {"manifest.json"}
     for rel, rec in manifest["files"].items():
         f = base / rel
@@ -127,6 +132,17 @@ def main():
     if a.zip:
         tmp = tempfile.TemporaryDirectory()
         with zipfile.ZipFile(a.zip) as z:
+            if len(z.namelist()) != len(set(z.namelist())):
+                errors.append("duplicate ZIP member names")
+            if any((x.external_attr >> 16) & 0o170000 == 0o120000 for x in z.infolist()):
+                errors.append("ZIP contains symlinks")
+            if any(n.startswith("/") or ".." in Path(n).parts or "\\" in n for n in z.namelist()):
+                errors.append("unsafe ZIP traversal path")
+                print(json.dumps({"status":"FAIL","errors":errors},indent=2))
+                return 1
+            if errors:
+                print(json.dumps({"status":"FAIL","errors":errors},indent=2))
+                return 1
             if z.testzip() is not None:
                 errors.append("zip CRC error")
             if "SKILL.md" not in z.namelist():
