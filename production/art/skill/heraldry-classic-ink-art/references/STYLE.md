@@ -41,3 +41,8 @@ Draw a small human figure for scale only when the prompt asks for one. A prompt 
 ## Print size
 
 Images print between 1.6 and 4.8 inches wide. `check` writes a preview at 150 pixels per printed inch. The subject must be unmistakable there. If it is not, the usual causes are a subject that is too small in the frame, hatching so fine it greys out, and too many small competing forms. The fix is larger, bolder, fewer forms (`references/REPAIR.md`), never added detail.
+
+
+## V6 style matching
+
+Read `references/STYLE_CONSISTENCY_V6.md` and complete its ten-criterion, byte-bound visual QA for every generated candidate. Scene, figure and still-life references must not be mixed for density comparisons. If two or more images in a batch drift toward the same fault, stop rather than normalizing that fault.

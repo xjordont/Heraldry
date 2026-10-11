@@ -1,31 +1,42 @@
-# ChatGPT Work: standing instructions for Heraldry illustrations
+# ChatGPT Work: standing instructions for Heraldry illustrations (v6 proposed)
 
-You generate the book's pen-and-ink illustrations with ChatGPT's image generation. Claude Code, in the same repository, writes the prompts, queue, references and reviews. You generate and deliver. You never plan scenes, edit prompts or approve images.
+The GitHub repository is the source of truth. Claude Code prepares prompts, queue, reference sets and review decisions. ChatGPT Work generates native images and returns exact bytes, receipts, and QA evidence. Work never edits prompts, queue, source rules, or other code while processing illustration batches.
 
-The method is the skill `heraldry-classic-ink-art`, v4. Its source is in this repo at `production/art/skill/heraldry-classic-ink-art/` and the installable zip is `production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip`. If the skill is installed, follow it. If it is not, follow `production/art/skill/heraldry-classic-ink-art/SKILL.md` directly and run its helper from the clone:
+Use the installed `heraldry-classic-ink-art` v6 skill (source in `production/art/skill/heraldry-classic-ink-art/`). If not installed, read `SKILL.md` from the checked-out repository. The queue remains `production/art/gpt/QUEUE.json`, schema 2; prompts and prompt_sha256 are immutable per item; each item lists its own references (at most 3), must-show and do-not-draw clauses, native size, and attempt budget.
 
-```
-python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py doctor
-python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py status
-```
+## Session start
 
-This file is the repo-side contract and the skill is the procedure. They say the same thing.
+1. Obtain a clean local checkout of `main` with only queue-listed LFS references fetched. Never download the private PDFs by default.
+2. Run `scripts/work_preflight.py --repo . --require-installed`; if authentication/Git LFS is unavailable, choose bundle handoff.
+3. Run the queue runner `scripts/heraldry_art.py doctor`, `status` and `show ID`.
+4. Establish with a real smoke test that the image tool accepts the intended reference set and produces native image bytes accessible to Python. Do not assume @GitHub alone provides these capabilities.
 
-## Contract
+Commands use the full path `python production/art/skill/heraldry-classic-ink-art/scripts/<script>.py` from the repo root.
 
-- The work list is `production/art/gpt/QUEUE.json` (schema 2; `QUEUE.md` shows it as a table). Each item has `id`, `size`, `references`, `max_attempts`, `must`, `avoid`, `prompt` and `prompt_sha256`.
-- Use each prompt file unchanged as the image prompt. On a retry you may add up to two correction sentences (see the skill's `references/REPAIR.md`) and must record them in the receipt notes.
-- Attach only the item's own `references` (at most three images). Do not attach the whole list.
-- Generate at the item's `size`, 1536x1024, 1024x1536 or 1024x1024, at the highest quality available. Stop at the first attempt that passes the skill's checks, and never exceed `max_attempts`.
-- Save the image unmodified, with no crop, resize, sharpening or format conversion, as `assets/art/incoming/<ID>.png`. If the tool delivers JPEG or WebP, keep the true extension (`.jpg` or `.webp`). The intake accepts all three, and there is one file per ID.
-- Append one line per image to `production/art/gpt/RECEIPTS.jsonl`: `{"id": "...", "prompt_sha256": "<from the queue>", "surface": "ChatGPT Work", "model": "<image model if shown>", "date_utc": "YYYY-MM-DD", "variants_tried": N, "notes": "<anything unusual>"}`. The helper's `save` command writes it. A refusal by the image tool is recorded with the helper's `refuse` command.
-- Change no other file. Never edit the manuscript, prompts, queue, tools or skill. No branches. No force-push.
-- Commit and push to `main` after every 5–10 images with the message `art(gpt): <first id> .. <last id>`. Run `git pull --rebase origin main` before each push, because the intake workflow commits to `main` after every push of yours. If a push is rejected, pull with rebase again and retry.
-- PNGs are stored with Git LFS: after `git add` and before `git commit`, `git lfs ls-files` must list each new PNG. Clone with `GIT_LFS_SKIP_SMUDGE=1`, run `git lfs install --local --skip-smudge`, and fetch only the reference images that `doctor` names. Do not download the private reference PDFs or every delivered PNG.
-- If the image tool cannot take the listed references, or takes fewer, say so in the receipt notes (`references attached: N of M`) and in your report. If it shows a revised prompt, note that too.
-- The anchors phase comes first. After you push the anchors, stop and wait: Claude Code reviews them and publishes the batch queue with the approved anchors in the reference sets.
-- Never describe these images as hand-drawn, and never mark one approved.
+## Per-item contract
 
-## What happens next
+- Use the exact queued prompt without paraphrasing, inserting new lore, or reconstructing prompts from the illustration list. Up to two targeted correction sentences may be added on a retry; record them.
+- Attach only the item references in order. If references are missing, stop; do not quietly generate an unanchored replacement. This is stricter than the v4 degraded-reference fallback and prevents art-style drift.
+- Generate at the exact requested size where supported. The v6 mechanical gate reports any pixel-size mismatch; only documented tool limitations permit a non-exact image to proceed to independent review.
+- Save the original native image to a scratch file; keep it byte-identical. Never alter or upscale it for delivery.
+- Run `heraldry_art.py check ID SCRATCH_IMAGE` and inspect its actual print-size preview and referenced images. The tripwires cannot judge artistic excellence.
+- Create a scratch QA JSON using `fidelity_gate.py create`, fill all ten visual checks with genuine image-specific evidence, and ensure image/reference/prompt hashes match. For a passing candidate, run `heraldry_art.py save ID IMAGE --qa-file /scratch/ID.qa.json [--must ...] [--avoid-clear]`. No QA report means no save.
+- Stop at the first clearly passing candidate, within the queue's `max_attempts`. At exhaustion only, the existing `--accept-flags` route may hand off a flagged result, with explicit unresolved issues. Work never approves publication art.
+- Record one `production/art/gpt/RECEIPTS.jsonl` line per save, preserving existing fields; the v6 helper embeds the ten evidence-backed QA decisions and adds native-image SHA metadata.
 
-A GitHub workflow converts each pushed image to print ink and posts a review sheet. Claude Code reviews it and approves or rejects each image. A rejected item returns to the queue and shows as `redo` in `status`.
+## Batches and safe delivery
+
+After 5 images, or at session end, view a contact sheet alongside references. Compare like registers only; look for progressive greying, altered hatching, repeated posing, missing vignettes and reference subject bleed.
+
+Run `delivery_guard.py audit --repo .`, then `delivery_guard.py ship --execute --repo .` only if the audit passes and Git LFS and remote authentication are available. The guard stages ONLY queued incoming images and receipts, refuses unrelated worktree changes, checks LFS pointers, requires local HEAD equal origin/main, and never force-pushes or automatically merges a concurrent reviewer commit. If it stops or a tool is unavailable, run `heraldry_art.py bundle` outside the clone; deliver the ZIP without claiming a Git push.
+
+The first queue phase (`anchors`) ends after delivery of its five items, until Claude Code reviews them and publishes a new queue. On rejection, use the recorded review reason and another attempt budget as permitted by the queue. Do not start a batch without an updated queue.
+
+## Authority and limitations
+
+1. Item prompt + must/avoid clauses govern depicted facts.
+2. `QUEUE.json` governs IDs, formats, reference sets, budgets and workflow.
+3. The v6 skill governs production and QA steps without overriding canonical subject facts.
+4. The manuscript and lore remain untouched by Work.
+
+This process improves consistency but cannot guarantee visually identical generation across all subjects. Exact replay of an already approved asset requires copying the approved bytes rather than regenerating it. Automated tests verify package integrity and mechanical gates, not final artistic quality. Claude Code/owner makes the final publishing decision.

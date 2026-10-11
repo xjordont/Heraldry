@@ -3,7 +3,7 @@ name: heraldry-classic-ink-art
 description: Runs the Heraldry Skirmish illustration queue from the GitHub repo xjordont/heraldry. For each queued item it generates one black pen-and-ink illustration from the repo's prepared prompt and that item's own short reference set, checks it against the prompt's must-show and do-not-draw lists, saves it unmodified to assets/art/incoming/<ID>.<ext>, logs a receipt and commits in small batches. Use when asked to generate, resume, redo or review Heraldry artwork. Never writes or edits prompts, the manuscript or tools.
 ---
 
-# Heraldry Skirmish illustration runner (v4)
+# Heraldry Skirmish illustration runner (v6)
 
 ## Who does what
 
@@ -43,15 +43,21 @@ python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py <co
 | `refuse ID --reason "..."` | record that the image tool refused an item |
 | `sheet [ID ...] [--refs]` | contact sheet of saved images; `--refs` adds their references |
 | `bundle` | hand-off zip when git cannot push |
+| `work_preflight.py` | read-only Python, LFS, queue, references, remote auth and model-smoke status |
+| `fidelity_gate.py` | create/verify byte-bound QA JSON (all ten criteria require visual evidence) |
+| `delivery_guard.py` | `audit`, `ship --execute`: verify native hashes, receipts, reference and prompt hashes, clean index, and Git LFS before delivery |
+| `style_audit.py` | advisory four-edge and same-register style drift report (scratch only); supplements the contact sheet |
 
 ## Session start
 
 First time only: clone `xjordont/heraldry` (a private repo; use the access the owner gave you) with `GIT_LFS_SKIP_SMUDGE=1` set, then run `git lfs install --local --skip-smudge` inside it. That keeps the private reference PDFs, and every other large file you do not need, from being downloaded now or by later pulls.
 
-Every session, from the repo root:
+Every session, from the repo root, first run `python production/art/skill/heraldry-classic-ink-art/scripts/work_preflight.py --repo . --require-installed` and follow `references/WORK_OPERATIONS_V6.md`. A GitHub connector without local Git LFS is not a substitute for a successful push. Then:
 
 ```
-git pull --rebase origin main
+# Only pull while the checkout is clean. If prior images/receipts are unsent,
+# use status and the guarded delivery/bundle procedure instead of rebasing.
+git pull --ff-only origin main
 python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py doctor
 python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py status
 ```
@@ -66,10 +72,10 @@ If `doctor` says NOT READY YET, run the single `git lfs pull --include="..."` co
 ## For each item
 
 1. `show ID`. Read the MUST BE SHOWN and DO NOT DRAW lists before generating.
-2. Attach the listed references. Paste the whole prompt. Request the size. If the image tool cannot take reference images, or takes fewer than are listed, attach what it takes in the listed order, write `references attached: N of M` in `--notes` and in your report, and never imply references were used when they were not. If the tool shows you a revised prompt or shortens yours, note that too.
+2. Attach the listed references. Paste the whole prompt. Request the size. If the image tool cannot accept every required reference, STOP and report a capability blocker; do not silently proceed with an unanchored image. If the tool shows you a revised prompt or shortens yours, report the deviation and do not attest that the queued prompt was unchanged.
 3. Save the tool's image into the scratch folder, never inside the clone. Run `check ID FILE`. It counts the attempt (every distinct image you check is one; the count carries on through a redo before the push and starts afresh only after the image has been delivered and sent back), prints the tripwires, writes a print-size preview and lists the MUST and DO NOT DRAW lines again. Look at the image and at the preview and check each of the ten hard fails below (each is true or false). Count the must-show items yourself: the tripwires cannot. Keep every attempt's file in the scratch folder until the item is saved, so you can go back to the best one; each attempt's preview is kept too. Some DO NOT DRAW lines name another entry ("Not the Undead Champion"): before you attest, open that entry's reference image if it is among your references, or its delivered image (`assets/art/incoming/<ID>.<ext>`); if neither exists, read what that entry's own prompt describes (`show` its ID) and make sure your attempt is not that.
-4. No hard fail: `save ID FILE --must "<what you counted or found>" --avoid-clear --model "<image model if shown>" --notes "<anything unusual, including any correction sentence you added>"`. Give exactly one `--must` for each MUST line, in order, each a real statement such as `"counted 8 legs, 4 a side"`; give none if the list is empty. `--avoid-clear` states that you looked and none of the DO NOT DRAW items is present. `save` checks again, copies the bytes untouched with the true extension, and appends the receipt with the attempts the helper counted, your statements and the attestation. Add `--redo` only when the owner asked you to replace an image that was already delivered; items that `status` lists as `redo` need no flag. `--attempts N` can only raise the count the helper recorded, for images you generated but did not check.
-5. Any hard fail: retry using `references/REPAIR.md`, up to the item's `max_attempts` (usually 3; cover and chapters 5). Stop at the first attempt with no hard fail. After the last allowed attempt, save the best attempt with `save ID FILE --accept-flags --notes "<what is still wrong>"`. The best attempt is the one that breaks the fewest hard fails; if tied, the one whose subject is most accurate. It is never a byte copy of another image. The helper refuses `--accept-flags` until you have checked as many images as the budget allows, and it marks the receipt. It is for nothing else. If every attempt was a copy of a reference or of another image, save nothing: `refuse ID --reason "the tool keeps returning a copy of <path>"`. Then move on.
+4. No hard fail: first create and finish a scratch visual QA JSON following `references/STYLE_CONSISTENCY_V6.md` and `references/WORK_OPERATIONS_V6.md`, set `visual_review_at_print_size: true` and `register_compared` accurately, then run `save ID FILE --qa-file /scratch/ID.qa.json --must "<what you counted or found>" --avoid-clear --model "<image model if shown>" --notes "<anything unusual, including any correction sentence you added>"`. Give exactly one `--must` for each MUST line, in order, each a real statement such as `"counted 8 legs, 4 a side"`; give none if the list is empty. `--avoid-clear` states that you looked and none of the DO NOT DRAW items is present. `save` checks again, copies the bytes untouched with the true extension, and appends the receipt with the attempts the helper counted, your statements and the attestation. Add `--redo` only when the owner asked you to replace an image that was already delivered; items that `status` lists as `redo` need no flag. `--attempts N` can only raise the count the helper recorded, for images you generated but did not check.
+5. Any hard fail: retry using `references/REPAIR.md`, up to the item's `max_attempts` (usually 3; cover and chapters 5). Stop at the first attempt with no hard fail. After the last allowed attempt, save the best attempt with `save ID FILE --qa-file /scratch/ID.qa.json --accept-flags --notes "<what is still wrong>"`. The best attempt is the one that breaks the fewest hard fails; if tied, the one whose subject is most accurate. It is never a byte copy of another image. The helper refuses `--accept-flags` until you have checked as many images as the budget allows, and it marks the receipt. It is for nothing else. If every attempt was a copy of a reference or of another image, save nothing: `refuse ID --reason "the tool keeps returning a copy of <path>"`. Then move on.
 
 ## Hard fails: reject the variant if any is true
 
@@ -92,20 +98,15 @@ Details, soft style checks and the batch drift review: `references/QA_CHECKLIST.
 
 `status` asks for a push when 5 images are saved and unsent, when nothing is left to generate, and at session end if you run `status --end`. Never hold more than 10 unsent.
 
-1. Drift review first: `sheet --refs` puts the saved, unpushed images beside the references of every item on the sheet. Look for drift (thicker or thinner line, grey tone, different finish), repeated poses or compositions, and scenery behind figures. Redo the one or two worst before you push; the attempt budget still counts every attempt.
-2. Commit and push:
+1. Drift review first: use `sheet --refs` **and** run `style_audit.py --repo . --limit 10 --out /scratch/batch_style.json` outside the clone. Read `references/VISUAL_ACCEPTANCE_V6.md`. The contact sheet puts the saved, unpushed images beside the references of every item on the sheet. Look for drift (thicker or thinner line, grey tone, different finish), repeated poses or compositions, and scenery behind figures. Redo the one or two worst before you push; the attempt budget still counts every attempt.
+2. After the drift review, use the v6 allowlist and LFS guard. This keeps the current single-producer `main` intake, but does not silently overwrite concurrent changes:
 
 ```
-git add -A -- 'assets/art/incoming/<ID>.*' ... production/art/gpt/RECEIPTS.jsonl
-git lfs ls-files
-git commit -m "art(gpt): <first saved id> .. <last saved id>"
-git pull --rebase origin main
-git push origin main
+python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py audit --repo .
+python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .
 ```
 
-Add exactly the saved IDs, which `status` prints as ready-made pathspecs. They also stage the deletion of an older file when an image changed extension. Never add the whole folder. `status` stops and names any other changed file under `assets/art/incoming`, and any image with no receipt from `save` (placed by hand).
-
-`git lfs ls-files` lists staged PNGs, so run it before the commit: every new PNG must appear. If one does not, stop: git-lfs is not active and the PNG would be committed as an ordinary file. JPEG and WebP images are not stored with LFS. Refused IDs are not part of the message's range; their receipt lines go in with the batch. A single image names itself with no range, and a push that carries only receipts uses the message `art(gpt): receipts`. If the push is rejected, pull with rebase and push again.
+If the guard blocks (remote advanced, unknown local modification, missing Git LFS, authentication, or rejected LFS staging), do **not** force push, auto-rebase, or assume successful delivery. Use `bundle`, report that no push occurred, and ask the repository maintainer to reconcile the changes. The guard commits only queue IDs under `assets/art/incoming` and the JSONL receipts. The receiver controls review, inking, proofs and approval.
 
 3. At the end of a session run `status --end`, do what it says, then write the report.
 4. Style drift is a known risk in very long image threads. After about 20 items, suggest the owner start a fresh conversation and paste the resume prompt from `OPERATOR_CARD.md`.
@@ -126,3 +127,22 @@ IDs saved and pushed, attempts used, items saved with `--accept-flags`, items re
 ## Not in the queue
 
 Do not generate it. Ask the owner to have Claude Code add it to the catalogue. For an explicit one-off outside the book, see `references/AD_HOC.md`.
+
+
+## V6 release gates and precedence clarification
+
+The exact queued prompt and its must/avoid clauses remain authoritative. The present skill adds **release-process** requirements, not new subject facts. These take precedence over v4-era delivery shorthand in the repository until the maintainer has installed the v6 replacement instructions. No visual QA record may override the prompt; if the prompt contradicts canonical lore, refuse and escalate for Claude Code to fix upstream.
+
+- **Mandatory Work capability smoke test:** `references/WORK_OPERATIONS_V6.md`, plus `scripts/work_preflight.py` for environment, reference and Git LFS checks. Work must actually demonstrate image-reference attachment and native file access; the script cannot discover those independently.
+- **Mandatory image-bound visual QA:** `scripts/fidelity_gate.py` creates a JSON report outside the clone. Complete all ten visible criteria, list concrete evidence, and save with `--qa-file`. The helper refuses incomplete or stale reports. A clean mechanical `check` does not substitute for human/visual review. See `references/STYLE_CONSISTENCY_V6.md`.
+- **Exact native dimensions:** request the queue size and document the pixel dimensions achieved. Intake continues to allow its legacy 5% aspect tolerance and 1000 px minimum, but for v6 a non-exact pixel size is a **recorded exception requiring reviewer approval**, not a silent successful native-resolution match.
+- **Git concurrency and LFS:** instead of manually following v4's `git add`/`commit`/`pull --rebase` sequence, use `scripts/delivery_guard.py audit --repo .` then `ship --execute --repo .`. It blocks on remote divergence, changes outside allowed paths and missing LFS, with no force-push. If blocked, use `bundle` and report that Git delivery did not occur. This preserves the current direct-to-main intake contract; switching to PRs requires a separate coordinated repo change.
+- **Independent review:** the five anchors are a mandatory stop after delivery. The repository reviewer or owner must approve them and publish a new queue. Work never self-approves based on a numerical score.
+- **Deployment:** this ZIP does not mutate GitHub. Before autonomous running, maintainer must install the skill, updated runner and repository standing instructions as set out in `deployment/REPOSITORY_UPGRADE.md`. Use the Work smoke-test phase first.
+
+## V6 additional safety gates
+
+- `delivery_guard.py audit` checks that each changed image matches the **latest** exact SHA-256 native-image receipt; that its reference files remain unchanged since review; that the current prompt matches the queued hash; and that all ten QA criteria contain evidence. The guard rejects a dirty staging index, unexpected paths, missing LFS, or remote divergence. Do not bypass this guard by direct `git add`/`push`.
+- Complete the explicit printed-width review and comparison-register fields in the QA record. Compare four-edge ink statistics with an actual visual inspection; a number is never proof of a successful vignette.
+- Run a register-specific batch drift report using `scripts/style_audit.py`, saved outside the checkout, alongside each contact sheet. When shared drift is present across two sibling images, stop and hand back the issue for upstream review.
+- Start only after `work_preflight.py --require-installed` confirms the live clone contains v6, then perform a **real** image-reference and native-file smoke test. Replacing only this ZIP without deploying the repository files is insufficient.
