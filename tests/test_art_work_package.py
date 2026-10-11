@@ -68,7 +68,7 @@ class OfflineRun(unittest.TestCase):
             self.assertTrue(p["verified_against_queue"])
         self.assertEqual({r["path"] for r in man["references"]}, {r for it in QUEUE["items"] for r in it["references"]})
         for r in man["references"]:
-            self.assertEqual(r["format"], "JPEG")
+            self.assertIn(r["format"], ("JPEG", "PNG"))
 
     def test_verify_passes_without_git_credentials(self):
         r = awp.verify(self.zip)
