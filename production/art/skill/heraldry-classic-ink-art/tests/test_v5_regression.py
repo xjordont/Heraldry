@@ -75,9 +75,13 @@ class V6Test(unittest.TestCase):
     def test_exact_dimension_gate(self):
         m={'px':[1019,1024],'format':'PNG','colour':0,'nonpaper':.3,'sharpness':1000,'paper_tone':255,'paper_grain':0,'midtone':0,'edge2':0,'edge6':0,'intake_border_ink':0}
         failures,_,_=ha.evaluate(m,self.it)
-        self.assertTrue(any('do not exactly match queue' in x for x in failures))
+        self.assertTrue(any('smaller than or not the aspect' in x for x in failures))
         m['px']=[1024,1024];failures,_,_=ha.evaluate(m,self.it)
-        self.assertFalse(any('do not exactly match queue' in x for x in failures))
+        self.assertFalse(any('smaller than or not the aspect' in x for x in failures))
+        m['px']=[1254,1254];failures,_,_=ha.evaluate(m,self.it)            # larger at the same aspect passes
+        self.assertFalse(any('smaller than or not the aspect' in x for x in failures))
+        m['px']=[1254,1200];failures,_,_=ha.evaluate(m,self.it)            # larger but off-aspect fails
+        self.assertTrue(any('smaller than or not the aspect' in x for x in failures))
 
     def test_work_preflight_without_git_lfs_is_fallback(self):
         q=self.repo/'production/art/gpt/QUEUE.json';q.parent.mkdir(parents=True)

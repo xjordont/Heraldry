@@ -17,7 +17,9 @@ Commands use the full path `python production/art/skill/heraldry-classic-ink-art
 
 - Use the exact queued prompt without paraphrasing, inserting new lore, or reconstructing prompts from the illustration list. Up to two targeted correction sentences may be added on a retry; record them.
 - Attach only the item references in order. If references are missing, stop; do not quietly generate an unanchored replacement. This is stricter than the v4 degraded-reference fallback and prevents art-style drift.
-- Generate at the exact requested size where supported. The v6 mechanical gate reports any pixel-size mismatch; only documented tool limitations permit a non-exact image to proceed to independent review.
+- Use the GPT Image 2.5 Sunburst model if the image tool offers it (owner request 2026-10-11); otherwise the default model. Record the model name shown (`save --model`).
+- The queue size is the minimum at a fixed aspect: request the largest size the tool offers at that aspect. The gate fails only a smaller or off-aspect image.
+- Art direction (owner 2026-10-11): a notch more hand-drawn than the first calibration. Economy of line, selective hatching and open white paper, like the owner's samples; no hyper-detail, stipple fields or noisy texture.
 - Save the original native image to a scratch file; keep it byte-identical. Never alter or upscale it for delivery.
 - Run `heraldry_art.py check ID SCRATCH_IMAGE` and inspect its actual print-size preview and referenced images. The tripwires cannot judge artistic excellence.
 - Create a scratch QA JSON using `fidelity_gate.py create`, fill all ten visual checks with genuine image-specific evidence, and ensure image/reference/prompt hashes match. For a passing candidate, run `heraldry_art.py save ID IMAGE --qa-file /scratch/ID.qa.json [--must ...] [--avoid-clear]`. No QA report means no save.

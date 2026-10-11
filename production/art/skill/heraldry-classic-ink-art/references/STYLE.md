@@ -2,12 +2,16 @@
 
 The prompt already carries the style text. This page explains what the references are for and what the image has to survive afterwards.
 
+## Hand-inked direction (owner, 2026-10-11)
+
+The owner judged the first calibration images too hyper-detailed, AI-like and low-resolution. Aim a notch more hand-drawn: the look of human interior illustration inked with pen and brush, as in the owner's three samples (STYLE-REF-01 scene hatching, STYLE-REF-02 panorama line, STYLE-REF-03 figure spot-black). Economy of line, confident contours with a slight natural irregularity, selective hatching, open white paper. A result covered in uniform micro-detail, stipple fields, noisy texture or soft tonal haze fails `style_reference_match`, however impressive it looks. Only the owner's samples are attached as references: never an earlier generated image.
+
 ## Three registers
 
 | Register | Families | Look |
 |---|---|---|
-| scene | cover, chapter, world, climate, bastion, scenario, campaign, boss, tradition | Dense dip-pen work: varied line weight, hatching, crosshatching and stippling; distance by finer, sparser marks, never haze. The drawing is densest at its focus and dissolves into blank paper through broken strokes on all four sides. |
-| creature, person | monster; class, ancestry | One subject drawn whole. A slightly heavier outer contour, crisp interior lines, form-following hatching, sparse stipple, a few solid-black shapes for the deepest shadows. Isolated on white with only a small patch of ground and a cast shadow. Light from the upper left. |
+| scene | cover, chapter, world, climate, bastion, scenario, campaign, boss, tradition | Hand-inked dip-pen and brush work: clean outlines of varied weight, hatching only where form and shadow need it, generous open paper; distance by simpler, lighter outline, never haze. Detail gathers at the focus and the drawing dissolves into blank paper through broken strokes on all four sides. |
+| creature, person | monster; class, ancestry | One subject drawn whole, like classic rulebook monster art. A bold outer contour, clean interior lines, hatching only where form turns into shadow, a few solid-black spot shapes, large open white areas. Isolated on white with only a small patch of ground and a cast shadow. Light from the upper left. |
 | still | background, item | The figure look applied to a group of objects on a small surface. No figure, no scenery. |
 
 The two registers are different on purpose. Figures print 1.6–1.9 inches wide, so bold contour and simple tone survive; the dense scene texture does not. Do not let a figure drift toward scene texture, and do not let a scene drift toward clean figure line.

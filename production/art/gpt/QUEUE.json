@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "anchors",
- "generated_at": "2026-10-10T20:41:26+00:00",
+ "generated_at": "2026-10-11T03:42:27+00:00",
  "max_references": 3,
  "count": 5,
  "items": [
@@ -11,11 +11,10 @@
    "register": "scene",
    "title": "The Greenmark",
    "prompt": "production/art/gpt/prompts/ART-CLI-THE-GREENMARK.txt",
-   "prompt_sha256": "625734f3e40043ae20bf802b17b6db96a2eed2215694e4917f7e33455e6c18de",
+   "prompt_sha256": "f59306517f59dc714262b562c2b2efbf75fdc7e6551460dbf5465171c21f70b6",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/incoming/ART-BAS-GREYTHORN.jpg",
     "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg"
    ],
@@ -36,7 +35,7 @@
    "register": "creature",
    "title": "Giant Tarantula",
    "prompt": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
-   "prompt_sha256": "dec3c51a465b7b0bf7c0f31403fb86dc2dae39a592c6b6363ec2f04eac12f8bf",
+   "prompt_sha256": "a94bb9a9613bc8a46288920b1dc9db0ecf82f0a65e48f2bb1ce398a2a9fbb13b",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -60,7 +59,7 @@
    "register": "creature",
    "title": "Undead Champion",
    "prompt": "production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt",
-   "prompt_sha256": "741d323781bea582ea37329ec5a544c0eb9dbb0c786b77866ecdcd8e3cfd88ca",
+   "prompt_sha256": "bdd422ee9e5a253b20712775b6a7c5cca98f0bc8fb87c1f41a8fdd1c45f479a5",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -85,7 +84,7 @@
    "register": "person",
    "title": "Fighter",
    "prompt": "production/art/gpt/prompts/ART-CLA-FIGHTER.txt",
-   "prompt_sha256": "659bf900ec0bf1cf2d59455dd676d4d0d4d9bee0b263343b98d743b021328baa",
+   "prompt_sha256": "9e9cd8a65535fdbe4fe3890c34062301e3f9118d939a6c4b9be13c14fe539458",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
@@ -108,7 +107,7 @@
    "register": "person",
    "title": "Dwarf",
    "prompt": "production/art/gpt/prompts/ART-ANC-DWARF.txt",
-   "prompt_sha256": "eb609e96f6a1bc2b337415ae6244c1acf1b858b34ce9b5c7623eff9c254f7571",
+   "prompt_sha256": "9bfcad1d4be9c29d4fa270c67447755130abe1d21368c72d26c5be9724656789",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [

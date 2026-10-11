@@ -97,14 +97,16 @@ def check_receipt(item, path, rec):
     with Image.open(path) as src:
         src.verify()
     with Image.open(path) as src:
-        exact = f'{src.width}x{src.height}' == item.get('size')
+        ew, eh = (int(x) for x in item.get('size', '0x0').split('x'))
+        # queue size is the minimum at a fixed aspect: larger native output at the same aspect is accepted
+        exact = src.width >= ew and src.height >= eh and abs(src.width * eh - src.height * ew) <= 0.01 * ew * src.height
         fmt = (src.format or '').lower()
     if fmt not in ('png', 'jpeg', 'webp'):
         raise Error(f'{iid}: unsupported encoded image format {fmt}')
     if path.suffix.lower() not in ('.'+fmt, '.jpg' if fmt=='jpeg' else '.invalid'):
         raise Error(f'{iid}: file extension does not match image contents')
     if not exact and not rec.get('accepted_flags'):
-        raise Error(f'{iid}: native dimensions differ from queue without recorded exception')
+        raise Error(f'{iid}: native dimensions are below the queue minimum or off its aspect without recorded exception')
 
 
 def validate(repo, need_remote=True):

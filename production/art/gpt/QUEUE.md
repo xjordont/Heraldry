@@ -4,7 +4,7 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 
 | Set | Reference images |
 |---|---|
-| A | `assets/art/incoming/ART-BAS-GREYTHORN.jpg`<br>`assets/art/style/STYLE-REF-01-scene-hatching.jpg`<br>`assets/art/style/STYLE-REF-02-panorama-line.jpg` |
+| A | `assets/art/style/STYLE-REF-01-scene-hatching.jpg`<br>`assets/art/style/STYLE-REF-02-panorama-line.jpg` |
 | B | `assets/art/style/STYLE-REF-03-figure-spotblack.jpg` |
 
 | # | ID | Subject | Size | Set | Tries | Prompt |

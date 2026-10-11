@@ -139,6 +139,12 @@ reference, STOP and report a capability blocker. Never generate without them.
 
 {ids}
 
+Image model: GPT Image 2.5 Sunburst if the image tool offers it (owner request), otherwise the default; record the
+exact model name shown with `save --model`. Size: the listed size is the minimum and fixes the aspect, so request
+the largest size the tool offers at that aspect. Art direction (owner, 2026-10-11): a notch more hand-drawn than the
+first calibration, with confident hand-inked contours, economy of line, hatching only for form and shadow and open
+white paper. No hyper-detail, stipple fields or noisy texture; the attached owner samples set the target.
+
 For each item follow `{SKILL_DIR}/SKILL.md` and `references/WORK_OPERATIONS_V6.md` exactly: `show ID`; the
 verbatim prompt; only the listed references; save the native file as `{s}/<ID>_aN.png`; `check ID FILE`;
 inspect the native image and print-size preview beside the references; `fidelity_gate.py create ... --out
@@ -434,6 +440,7 @@ def import_bundle(bpath, root=ROOT):
             if sha(data) != it["sha256"] or not it["file"].startswith("assets/art/incoming/"):
                 return {"status": "FAIL", "errors": [f"refusing {it['file']}"]}
             dest = root / it["file"]
+            dest.parent.mkdir(parents=True, exist_ok=True)
             for old in dest.parent.glob(it["id"] + ".*"):      # one file per ID
                 if old != dest:
                     old.unlink()
