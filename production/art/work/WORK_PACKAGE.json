@@ -5,19 +5,19 @@
  "created_from": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "f923515cea4880e2a3c1957a0cac20f763124cb3",
-  "commit_date": "2026-10-11T15:23:58+00:00",
+  "commit": "5c9f43f65682e3951402dc886463561872fbbce7",
+  "commit_date": "2026-10-11T15:27:21+00:00",
   "dirty": false
  },
  "source": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "f923515cea4880e2a3c1957a0cac20f763124cb3",
-  "commit_date": "2026-10-11T15:23:58+00:00"
+  "commit": "5c9f43f65682e3951402dc886463561872fbbce7",
+  "commit_date": "2026-10-11T15:27:21+00:00"
  },
  "queue": {
   "path": "production/art/gpt/QUEUE.json",
-  "sha256": "7cc21af511b1885d872bd1212bca5ada7465f4265a5fc8c2ed9030f1cee6ebd4",
+  "sha256": "7fc179d7e56cadb759280b46dc124e03995f73b316674d0bbcb9cf4f72daea96",
   "phase": "batch",
   "count": 270,
   "ids": [
@@ -292,7 +292,7 @@
    "ART-CH11-002",
    "ART-COVER-002"
   ],
-  "generated_at": "2026-10-11T15:23:39+00:00"
+  "generated_at": "2026-10-11T15:27:20+00:00"
  },
  "prompts": [
   {
@@ -303,8 +303,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -315,8 +315,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -327,8 +327,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -339,8 +339,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -351,8 +351,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -1852,7 +1852,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1864,7 +1864,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1876,7 +1876,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1888,7 +1888,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1900,7 +1900,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1912,7 +1912,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1924,7 +1924,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1936,7 +1936,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1948,7 +1948,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1960,7 +1960,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1972,7 +1972,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1984,7 +1984,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -1996,7 +1996,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -2008,7 +2008,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -2020,7 +2020,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -2032,7 +2032,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -2044,7 +2044,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -2056,7 +2056,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -2068,7 +2068,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -2080,7 +2080,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -2092,7 +2092,7 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
    ]
   },
   {
@@ -2727,8 +2727,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -2739,8 +2739,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -2751,8 +2751,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -2763,8 +2763,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -2775,8 +2775,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -2787,8 +2787,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -2799,8 +2799,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -2811,8 +2811,8 @@
    "max_attempts": 3,
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -3540,6 +3540,30 @@
    ]
   },
   {
+   "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+   "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
+   "format": "JPEG",
+   "px": [
+    2400,
+    1792
+   ],
+   "used_by": [
+    "ART-BAS-DEEPWARDEN",
+    "ART-BAS-HEARTHHOLD",
+    "ART-BAS-REEDMARCH",
+    "ART-BAS-SABLEKEEP",
+    "ART-BAS-SALTSPIRE",
+    "ART-WOR-1-2-THE-GRIM-WORLD",
+    "ART-WOR-1-3-1-THE-FALL",
+    "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
+    "ART-WOR-1-3-3-THE-SIX-BASTIONS",
+    "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS",
+    "ART-WOR-1-3-5-MONSTROUS-THREATS",
+    "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
+    "ART-WOR-1-3-7-LEGENDS-AND-ECHOES"
+   ]
+  },
+  {
    "path": "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
    "sha256": "8a797125940c3f7def70c80ab4b819812f54116a93daabc3acf89f7cc9e50cd8",
    "format": "JPEG",
@@ -3659,19 +3683,14 @@
    ]
   },
   {
-   "path": "assets/art/style/STYLE-REF-07-drybrush-duel.jpg",
-   "sha256": "d0d69cbb5cdb5679e4ad4eb09d272b54de544b38337088158ec23a5d5fac4ff8",
+   "path": "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+   "sha256": "333021be2755c3993e009a240b07d016267472abb742ff3b1e9a0db65d22fba9",
    "format": "JPEG",
    "px": [
-    1177,
-    767
+    1394,
+    875
    ],
    "used_by": [
-    "ART-BAS-DEEPWARDEN",
-    "ART-BAS-HEARTHHOLD",
-    "ART-BAS-REEDMARCH",
-    "ART-BAS-SABLEKEEP",
-    "ART-BAS-SALTSPIRE",
     "ART-CLI-THE-ASHLANDS",
     "ART-CLI-THE-MIRE",
     "ART-CLI-THE-PALE-CITY",
@@ -3729,14 +3748,6 @@
     "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
     "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
     "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
-    "ART-WOR-1-2-THE-GRIM-WORLD",
-    "ART-WOR-1-3-1-THE-FALL",
-    "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
-    "ART-WOR-1-3-3-THE-SIX-BASTIONS",
-    "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS",
-    "ART-WOR-1-3-5-MONSTROUS-THREATS",
-    "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
-    "ART-WOR-1-3-7-LEGENDS-AND-ECHOES",
     "ART-CAM-11-1-CAMPAIGN-OVERVIEW",
     "ART-CAM-THE-APOTHECARY",
     "ART-CAM-THE-ARCANUM",
@@ -3778,12 +3789,12 @@
    ]
   },
   {
-   "path": "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-   "sha256": "333021be2755c3993e009a240b07d016267472abb742ff3b1e9a0db65d22fba9",
+   "path": "assets/art/style/STYLE-REF-07-drybrush-duel.jpg",
+   "sha256": "d0d69cbb5cdb5679e4ad4eb09d272b54de544b38337088158ec23a5d5fac4ff8",
    "format": "JPEG",
    "px": [
-    1394,
-    875
+    1177,
+    767
    ],
    "used_by": [
     "ART-CLI-THE-ASHLANDS",
@@ -4314,27 +4325,6 @@
     "ART-MON-WILL-O-WISP",
     "ART-MON-WIND-ELEMENTAL",
     "ART-MON-ZOMBIE",
-    "ART-CLA-ASSASSIN",
-    "ART-CLA-BERSERKER",
-    "ART-CLA-CLERIC",
-    "ART-CLA-DRUID",
-    "ART-CLA-PALADIN",
-    "ART-CLA-PSION",
-    "ART-CLA-RANGER",
-    "ART-CLA-ROGUE",
-    "ART-CLA-SORCERER",
-    "ART-CLA-TRICKSTER",
-    "ART-CLA-WIZARD",
-    "ART-ANC-DEEP-ELF",
-    "ART-ANC-DEMONBORN",
-    "ART-ANC-DRAKEBLOOD",
-    "ART-ANC-ELF",
-    "ART-ANC-GNOME",
-    "ART-ANC-GOBLIN",
-    "ART-ANC-HALFLING",
-    "ART-ANC-HUMAN",
-    "ART-ANC-ORC",
-    "ART-ANC-RATKIN",
     "ART-BAC-ALCHEMIST",
     "ART-BAC-APPRENTICE",
     "ART-BAC-ARTISAN",
@@ -4390,14 +4380,52 @@
     "ART-ANC-ORC",
     "ART-ANC-RATKIN"
    ]
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
+   "sha256": "76703e91b74e1823f275704fa200f551076b7d5fc367a407e92062ff60baaba5",
+   "format": "JPEG",
+   "px": [
+    943,
+    600
+   ],
+   "used_by": [
+    "ART-CLA-ASSASSIN",
+    "ART-CLA-BERSERKER",
+    "ART-CLA-CLERIC",
+    "ART-CLA-DRUID",
+    "ART-CLA-PALADIN",
+    "ART-CLA-PSION",
+    "ART-CLA-RANGER",
+    "ART-CLA-ROGUE",
+    "ART-CLA-SORCERER",
+    "ART-CLA-TRICKSTER",
+    "ART-CLA-WIZARD",
+    "ART-ANC-DEEP-ELF",
+    "ART-ANC-DEMONBORN",
+    "ART-ANC-DRAKEBLOOD",
+    "ART-ANC-ELF",
+    "ART-ANC-GNOME",
+    "ART-ANC-GOBLIN",
+    "ART-ANC-HALFLING",
+    "ART-ANC-HUMAN",
+    "ART-ANC-ORC",
+    "ART-ANC-RATKIN"
+   ]
   }
  ],
  "files": [
   {
    "path": "START_HERE.md",
-   "sha256": "1490eae222956a417e6fc8fedff0a461ddce1abe5d4b78c987d2dc9ab0cce542",
-   "bytes": 71601,
+   "sha256": "ad5fbef7524f1073ef8b4410248c4255128be256e0cbf64c7cdcd976196ad119",
+   "bytes": 71580,
    "role": "instructions"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+   "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
+   "bytes": 1661394,
+   "role": "reference"
   },
   {
    "path": "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
@@ -4430,6 +4458,12 @@
    "role": "reference"
   },
   {
+   "path": "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
+   "sha256": "76703e91b74e1823f275704fa200f551076b7d5fc367a407e92062ff60baaba5",
+   "bytes": 176111,
+   "role": "reference"
+  },
+  {
    "path": "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
    "sha256": "8a797125940c3f7def70c80ab4b819812f54116a93daabc3acf89f7cc9e50cd8",
    "bytes": 388035,
@@ -4449,8 +4483,8 @@
   },
   {
    "path": "config/art_style.json",
-   "sha256": "1218da9b3e1f86d67d89de14bcacede2e56d0a09866ad8728ffb380f1f4af178",
-   "bytes": 18510,
+   "sha256": "8c26aed164fb20e01d441c92b8419971d19a63297e7ac632551ca18d5e0775fd",
+   "bytes": 18770,
    "role": "config"
   },
   {
@@ -4467,14 +4501,14 @@
   },
   {
    "path": "production/art/gpt/QUEUE.json",
-   "sha256": "7cc21af511b1885d872bd1212bca5ada7465f4265a5fc8c2ed9030f1cee6ebd4",
-   "bytes": 227020,
+   "sha256": "7fc179d7e56cadb759280b46dc124e03995f73b316674d0bbcb9cf4f72daea96",
+   "bytes": 226999,
    "role": "queue"
   },
   {
    "path": "production/art/gpt/QUEUE.md",
-   "sha256": "db533dc15830f60797807a98cfa22a1ac62513d8461ec03d69c827f4abc99c20",
-   "bytes": 37431,
+   "sha256": "800440adaf5150b871bb9ee73f806872a3bd883b9113fa03137b1ee711564a92",
+   "bytes": 37430,
    "role": "queue"
   },
   {
@@ -6106,8 +6140,8 @@
   },
   {
    "path": "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip",
-   "sha256": "4743fb239a745c7f84f5c86afc971b33f3c030841080e3604ec10a3218990fa7",
-   "bytes": 7939030,
+   "sha256": "657e18ed141bd1982da68b2d81c54584bc0e2bbd1e70ba76527776783f8dcbb0",
+   "bytes": 9770191,
    "role": "skill_zip"
   },
   {
@@ -6172,8 +6206,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/references/STYLE.md",
-   "sha256": "57ff5d4bf8e5abdfd957f90d4a9e8cf8ed1ceddad28192a19e7e7baa316b4f4b",
-   "bytes": 4901,
+   "sha256": "62a516658143792ba817929b5a7ad9ac576c244ad179e2392a6f7a52c64f133d",
+   "bytes": 4932,
    "role": "skill"
   },
   {
