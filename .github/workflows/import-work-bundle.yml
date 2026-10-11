@@ -1,0 +1,68 @@
+name: Import Work review bundle
+# ChatGPT Work (and this cloud container) cannot upload Git LFS objects. A Work review bundle committed to
+# production/art/work/inbox/ as an ordinary file is verified here, its native images are committed through
+# Git LFS, its receipts appended, and the intake runs. Nothing is approved: that stays with the orchestrator.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'production/art/work/inbox/*.zip'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: art-intake
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image library
+        run: python -m pip install pillow==12.3.0
+      - name: Fetch incoming images
+        run: |
+          git lfs install --local
+          git lfs pull --include="assets/art/incoming/*.png" --exclude=""
+      - name: Verify and import new bundles
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib, json, subprocess, sys
+          from pathlib import Path
+          log = Path('production/art/work/IMPORTED.json')
+          done = json.loads(log.read_text()) if log.is_file() else {}
+          for z in sorted(Path('production/art/work/inbox').glob('*.zip')):
+              h = hashlib.sha256(z.read_bytes()).hexdigest()
+              if h in done:
+                  continue
+              r = subprocess.run([sys.executable, 'tools/art_work_package.py', 'import-bundle', str(z)], capture_output=True, text=True)
+              print(r.stdout, r.stderr)
+              if r.returncode:
+                  sys.exit(f'{z}: bundle failed verification; nothing imported')
+              out = json.loads(r.stdout)
+              done[h] = {'bundle': z.as_posix(), 'items': out['items'], 'receipts_added': out['receipts_added'],
+                         'source': out['source'], 'imported': 'pending intake; not approved'}
+          log.write_text(json.dumps(done, indent=1) + '\n')
+          PY
+      - name: Ink-prepare and record new images
+        run: python tools/art_intake.py scan
+      - name: Commit import and intake results
+        run: |
+          git config user.name "heraldry-art-bot"
+          git config user.email "heraldry-art-bot@users.noreply.github.com"
+          git add assets/art/incoming assets/art/ink production/art/gpt/RECEIPTS.jsonl production/art/SELECTIONS.json production/art/review production/art/work/IMPORTED.json
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git lfs ls-files | grep incoming || true
+          git commit -m "art: import ChatGPT Work review bundle and intake"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((i * 3))
+          done
+          exit 1
