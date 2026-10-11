@@ -88,7 +88,7 @@ class V6Test(unittest.TestCase):
         prompt=self.repo/'production/art/gpt/prompts/test.txt';prompt.parent.mkdir(parents=True)
         prompt.write_text('an ink drawing\n')
         digest=hashlib.sha256(b'an ink drawing').hexdigest()
-        q.write_text(json.dumps({'schema':2,'items':[{'id':self.it['id'],'prompt':str(prompt.relative_to(self.repo)),'prompt_sha256':digest,'references':self.it['references']}]}))
+        q.write_text(json.dumps({'schema':2,'items':[{'id':self.it['id'],'prompt':prompt.relative_to(self.repo).as_posix(),'prompt_sha256':digest,'references':self.it['references']}]}))
         d=wp.run(self.repo)
         self.assertEqual(d['status'],'READY')
         self.assertEqual(d['delivery'],'bundle')
@@ -106,7 +106,7 @@ class V6Test(unittest.TestCase):
         pf.parent.mkdir(parents=True)
         pf.write_text(prompt+'\n')
         self.it['prompt_sha256']=hashlib.sha256(prompt.encode()).hexdigest()
-        self.it.update({'prompt':str(pf.relative_to(self.repo)),'family':'monster','title':'Test',
+        self.it.update({'prompt':pf.relative_to(self.repo).as_posix(),'family':'monster','title':'Test',
                         'print_w_in':1.9,'max_attempts':3,'size_class':'Medium','must':[], 'avoid':[]})
         q=self.repo/'production/art/gpt/QUEUE.json';q.write_text(json.dumps({'schema':2,'phase':'anchors','count':1,
                           'generated_at':'2026-10-10T00:00:00+00:00','items':[self.it]}))
@@ -134,7 +134,7 @@ class V6Test(unittest.TestCase):
         q=self.repo/'production/art/gpt/QUEUE.json';q.parent.mkdir(parents=True)
         pf=self.repo/'production/art/gpt/prompts/test.txt';pf.parent.mkdir(parents=True,exist_ok=True)
         pf.write_text('candidate test prompt\n')
-        self.it['prompt']=str(pf.relative_to(self.repo))
+        self.it['prompt']=pf.relative_to(self.repo).as_posix()
         self.it['prompt_sha256']=hashlib.sha256(b'candidate test prompt').hexdigest()
         q.write_text(json.dumps({'schema':2,'items':[self.it]}))
         target=self.repo/'assets/art/incoming/ART-MON-TEST.png';target.parent.mkdir(parents=True)

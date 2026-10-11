@@ -26,9 +26,9 @@ class V6SecurityTest(unittest.TestCase):
         im.save(self.incoming)
         self.prompt=self.repo/'production/art/gpt/prompts/ART-TEST.txt';self.prompt.parent.mkdir(parents=True)
         self.prompt.write_text('Example prompt\n',encoding='utf-8')
-        self.item={'id':'ART-TEST','prompt':str(self.prompt.relative_to(self.repo)),
+        self.item={'id':'ART-TEST','prompt':self.prompt.relative_to(self.repo).as_posix(),
                    'prompt_sha256':hashlib.sha256(b'Example prompt').hexdigest(),
-                   'references':[str(self.ref.relative_to(self.repo))],
+                   'references':[self.ref.relative_to(self.repo).as_posix()],
                    'register':'scene','size':'1024x1024'}
         self.queue=self.repo/'production/art/gpt/QUEUE.json'
         self.queue.write_text(json.dumps({'schema':2,'items':[self.item]}))
@@ -103,5 +103,15 @@ class V6SecurityTest(unittest.TestCase):
         self.receipt['refused']=True
         with self.assertRaisesRegex(dg.Error,'non-refusal'):
             dg.check_receipt(self.item,self.incoming,self.receipt)
+
+    def test_windows_separators_in_paths_are_tolerated(self):
+        # Codex runs on Windows: a queue or QA path written with backslashes must still match.
+        import os
+        record=fg.create(self.item['id'],self.incoming,self.item['prompt_sha256'],[str(self.ref)],Path(self.tmp.name)/'w.qa.json')
+        item=dict(self.item,references=[self.item['references'][0].replace('/','\\')])
+        errs=fg.verify_record(record,self.incoming,item,require_pass=False)
+        self.assertFalse([e for e in errs if 'wrong reference' in e],errs)
+        if os.sep=='\\':
+            self.assertNotIn('\\',__import__('heraldry_art').helper())
 
 if __name__=='__main__':unittest.main()
