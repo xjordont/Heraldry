@@ -1,12 +1,12 @@
 {
  "pdf": "dist/Heraldry_RC492_inkjet-borderless.pdf",
- "sha256": "c42ff9afe8104247095b48c0a1cbda0b54a2c0b7c8d5f004bc1b8622e08b54e3",
- "pages": 597,
+ "sha256": "1cef40dec973921fb75845e239ab90348def0e1fc78265928c9dec241230705f",
+ "pages": 598,
  "reviewer": "Claude Code orchestrator (actual image inspection in session)",
- "reviewed_at": "2026-10-10T17:57:46+00:00",
+ "reviewed_at": "2026-10-11T03:14:14+00:00",
  "all_page_contact_sheets": {
-  "pages_covered": "1-597 of this exact clean-build PDF",
-  "method": "Delta chain from the visually reviewed RC488 PDF, with per-page text and embedded-image signatures. RC489 vs RC488: 26 differing pages (1, 265, 275, 279, 281, 283, 285, 287, 289, 295, 301, 304-306, 364, 367, 369, 370, 372, 373, 375, 377, 379, 380, 439, 464), all rendered and inspected at 55 dpi. RC490 vs RC489: pages 1 and 306, with p.306 inspected at 70 dpi. Pagination is identical (597 pages); all other pages are text- and image-identical to reviewed pages. RC491 vs RC490: pages 1, 304 (Desert Naga) and 434 (Undermarches 6 reward) differ; 304 and 434 inspected at 70 dpi. RC492 vs RC491: 2 differing pages (280, 434), both inspected."
+  "pages_covered": "1-598 of this exact clean-build PDF",
+  "method": "Delta chain from the visually reviewed RC488 PDF, with per-page text and embedded-image signatures. RC489 vs RC488: 26 differing pages (1, 265, 275, 279, 281, 283, 285, 287, 289, 295, 301, 304-306, 364, 367, 369, 370, 372, 373, 375, 377, 379, 380, 439, 464), all rendered and inspected at 55 dpi. RC490 vs RC489: pages 1 and 306, with p.306 inspected at 70 dpi. Pagination is identical (597 pages); all other pages are text- and image-identical to reviewed pages. RC491 vs RC490: pages 1, 304 (Desert Naga) and 434 (Undermarches 6 reward) differ; 304 and 434 inspected at 70 dpi. RC492 vs RC491: 2 differing pages (280, 434), both inspected. Anchor art placement (2026-10-11) vs the reviewed RC492 PDF c42ff9af: pages aligned by digit-insensitive text and embedded-image signatures. 6.9 Ancestries gains one page (597 to 598). Changed pages: 4-5 (contents page numbers only), 11-14 (Greenmark art in 1.3.2; Sun-Drowned and Hearthhold reflow), 99-115 (Dwarf art p.100, Fighter art p.114 and the reflow between them; the Recommended First Party box keeps its pre-existing page, now p.111), 265 (Giant Tarantula art) and 277 (Undead Champion art). All rendered and inspected at 62 dpi; p.100 at 100 dpi. Every other page is text- and image-identical to a reviewed page, shifted by one after p.98."
  },
  "pages_reviewed": [
   1,
@@ -605,7 +605,8 @@
   594,
   595,
   596,
-  597
+  597,
+  598
  ],
  "detailed_pages_viewed_at_100dpi": [
   1,
@@ -653,9 +654,10 @@
   "p.306 Tomb Guardian (RC490 correction) at 70 dpi",
   "RC489 bestiary and 10.2/10.4 pages at 55 dpi",
   "p.304 Desert Naga and p.434 Undermarches 6 (RC491) at 70 dpi",
-  "p.280 Basilisk (RC492, Sz L, ox phrase removed) and p.434 Undermarches 6 Spectre reward (RC492) at 90 dpi"
+  "p.280 Basilisk (RC492, Sz L, ox phrase removed) and p.434 Undermarches 6 Spectre reward (RC492) at 90 dpi",
+  "Anchor art placement 2026-10-11: p.100 Dwarf at 100 dpi; pp.11-14, 99-115, 265, 277 at 62 dpi"
  ],
  "changes_this_run": [
-  "RC492 owner corrections: Basilisk Large without the ox comparison; Undermarches 6 reward reverted to the Spectre Summon"
+  "Six ChatGPT Work anchors approved (production/art/review/ANCHOR_REVIEW_2026-10-11.md); Greenmark, Dwarf, Fighter, Giant Tarantula and Undead Champion art placed; no manuscript change"
  ]
 }
