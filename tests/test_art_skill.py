@@ -817,7 +817,7 @@ class PointerHashes(Isolated):
 
 
 class ValidatorCli(unittest.TestCase):
-    ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip"
+    ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip"
     SCRIPT = SKILL / "scripts/validate_skill.py"
 
     def run_cli(self, *args, cwd=ROOT):
@@ -856,10 +856,10 @@ class SkillSources(unittest.TestCase):
         self.assertIn("python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py", skill)
 
 
-@unittest.skipUnless((ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip").is_file() and (ROOT / "assets/art/style").is_dir(),
+@unittest.skipUnless((ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip").is_file() and (ROOT / "assets/art/style").is_dir(),
                      "a release package ships neither the skill zip nor the owner's style samples")
 class SkillPackage(unittest.TestCase):
-    ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip"
+    ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip"
 
     def test_families_table_matches_config(self):
         import art_skill_build as b

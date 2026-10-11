@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Runner helpers for the Heraldry illustration queue (skill v4). Python 3.9+, Pillow only.
+"""Runner helpers for the Heraldry illustration queue (skill v6). Python 3.9+, Pillow only.
 
   doctor                         environment, repo, queue and reference checks (run first)
   status [--end]                 queue state and the single next action (--end: session end, push anything unsent)
@@ -296,6 +296,8 @@ def evaluate(m, item):
     fails, warns, infos = [], [], []
     w, h = m["px"]
     ew, eh = (int(x) for x in item["size"].split("x"))
+    if (w, h) != (ew, eh):
+        fails.append(f"native dimensions {w}x{h} do not exactly match queue {ew}x{eh}: reviewer exception needed after attempt budget")
     if m["format"] not in IMAGE_EXT:
         fails.append(f"format {m['format']}: the image must be PNG, JPEG or WEBP")
     if max(w, h) < T["min_long_side"]:
@@ -595,12 +597,10 @@ def cmd_status(a, repo):
     elif due and not git_ok(repo):
         action = (f"BUNDLE the saved images (`{helper()} bundle`) and hand the zip to the owner: git is not available here.")
     elif due:
-        span = ("receipts" if not saved else saved[0] if len(saved) == 1 else f"{saved[0]} .. {saved[-1]}")
-        paths = " ".join(f"'{INCOMING_REL}/{i}.*'" for i in saved)
-        action = ("DRIFT REVIEW, THEN COMMIT AND PUSH. First `" + helper() + " sheet --refs` and redo the one or two worst inside their budgets. Then: "
-                  f"git add -A -- {paths} {RECEIPTS_REL} ; "
-                  "git lfs ls-files (every new PNG must be listed; stop if not) ; "
-                  f"git commit -m \"art(gpt): {span}\" ; git pull --rebase origin main ; git push origin main")
+        action = ("DRIFT REVIEW, THEN GUARDED DELIVERY. First `" + helper() + " sheet --refs`; "
+                  "then `python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py audit --repo .` "
+                  "and, only if it passes, `python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .`. "
+                  "On any LFS/auth/conflict failure STOP and use `" + helper() + " bundle`. Never force-push or auto-rebase receipts.")
     elif todo:
         note = (f" ({len(saved)} saved and not sent yet: send at {BATCH_PUSH_AT}, or run `status --end` at session end)" if unsent else "")
         action = f"GENERATE next: {', '.join(todo[:3])}{' ...' if len(todo) > 3 else ''}  (`{helper()} next`){note}"
@@ -730,8 +730,23 @@ def append_receipt(repo, rec):
 
 
 def cmd_save(a, repo):
+    # v6: a standalone visual QA report binds the prompt, native image and attached references.
+    # The report lives OUTSIDE the checkout; only its summary is appended to the receipt.
+    from fidelity_gate import verify_record, CRITERIA
+    if not a.qa_file:
+        raise Fatal("v6 requires --qa-file PATH. Create it with scripts/fidelity_gate.py, inspect the original + print-size preview, and complete the checks.")
+    qa_path = Path(a.qa_file).resolve()
+    if not qa_path.is_file() or repo.resolve() in qa_path.parents:
+        raise Fatal("--qa-file must be an existing JSON report OUTSIDE the repository clone")
+    try:
+        qa = json.loads(qa_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as e:
+        raise Fatal(f"cannot read QA report: {e}")
     q = load_queue(repo)
     it, m, fails, warns, infos, pv, n, dup = run_check(repo, q, a.id, a.image)
+    errors = verify_record(qa, a.image, it, require_pass=not a.accept_flags)
+    if errors:
+        raise Fatal("visual QA record failed: " + "; ".join(errors))
     text = prompt_text(repo, it)
     if prompt_sha(text) != it["prompt_sha256"]:
         raise Fatal(f"{it['prompt']} does not match the queue hash: git pull --rebase origin main, then regenerate from the current prompt")
@@ -795,6 +810,17 @@ def cmd_save(a, repo):
     if a.accept_flags:
         rec["accepted_flags"] = True
         rec["accepted_at_attempt"] = n
+    rec["qa_schema"] = 1
+    # The external scratch report may not survive a Work session. Keep the full
+    # visual evidence with the in-repo receipt so Claude Code can audit it later.
+    rec["qa_review"] = qa["checks"]
+    rec["qa_register"] = qa.get("register_compared", "")
+    rec["qa_print_size_reviewed"] = qa.get("visual_review_at_print_size", False)
+    rec["qa_unresolved"] = qa.get("unresolved_issues", [])
+    rec["qa_report_sha256"] = hashlib.sha256(qa_path.read_bytes()).hexdigest()
+    rec["qa_failed_criteria"] = [name for name in CRITERIA if not qa["checks"][name]["pass"]]
+    rec["reference_shas"] = [r["sha256"] for r in qa.get("references_used", [])]
+    rec["native_sha256"] = hashlib.sha256(data).hexdigest()
     if fails or warns:
         rec["tripwires"] = fails + warns
     append_receipt(repo, rec)
@@ -911,6 +937,7 @@ def main(argv=None):
                    help="total generations made for this item, the saved one included. The helper counts the images you checked; "
                         "this can only raise that count, for images you generated but did not check")
     p.add_argument("--model", default="")
+    p.add_argument("--qa-file", help="v6 mandatory visual QA JSON outside the clone")
     p.add_argument("--notes", default="")
     p.add_argument("--must", action="append", default=[],
                    help="what you counted or found, exactly one per MUST BE SHOWN line, in order (repeat the flag)")

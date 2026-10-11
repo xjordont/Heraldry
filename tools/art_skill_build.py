@@ -12,8 +12,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "production/art/skill/heraldry-classic-ink-art"
-ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip"
-VERSION = "4.0.0"
+ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip"
+VERSION = "6.0.0"
 STAMP = (2026, 10, 10, 0, 0, 0)
 IMAGES = {
     "references/images/ART-BAS-GREYTHORN.jpg": ("assets/art/incoming/ART-BAS-GREYTHORN.jpg", "scene; the owner's approved ChatGPT render"),

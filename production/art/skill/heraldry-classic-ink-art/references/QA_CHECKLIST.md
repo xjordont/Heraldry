@@ -67,3 +67,8 @@ Redo the one or two worst if attempts remain. If the whole batch drifted, stop a
 `variants_tried` is the total number of generations made for the item, the saved one included. `save` fills it from the images you checked. `must_checked`, `avoid_clear`, `tripwires`, `accepted_flags` and `accepted_at_attempt` are optional extras the reviewer reads; a later receipt for the same ID replaces an earlier one.
 
 A refusal: `{"id": "...", "refused": true, "reason": "<the tool's message>", "surface": "ChatGPT Work", "date_utc": "..."}`.
+
+
+## V6 required review record
+
+The ten hard fails above must be checked by inspecting the native image plus the print-size preview. Before saving, create the byte-linked external JSON with `scripts/fidelity_gate.py`, then record all ten pass/fail results with specific evidence. Reference style-match, form-following hatching, paper flatness, four-edge vignette/isolation, and register-specific print legibility are release gates, not optional taste notes. Passing self-review is preliminary only: Claude Code separately approves for publication. See `references/STYLE_CONSISTENCY_V6.md`.
