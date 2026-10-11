@@ -163,6 +163,18 @@ class OfflineRun(unittest.TestCase):
                     data = (scratch / "ART-CLA-FIGHTER.png").read_bytes()
                 dst.writestr(n, data)
         self.assertEqual(awp.verify_bundle(bad)["status"], "FAIL")
+        # The import workflow's step, against a fresh copy of the package standing in for the repository.
+        root = self.tmp / "import-root"
+        awp.safe_extract(self.zip, root)
+        before = (root / "production/art/gpt/RECEIPTS.jsonl").read_text()
+        r = awp.import_bundle(out, root)
+        self.assertEqual(r["status"], "PASS", r)
+        self.assertEqual(r["receipts_added"], len(QUEUE["items"]))
+        for it in QUEUE["items"]:
+            self.assertEqual((root / f"assets/art/incoming/{it['id']}.png").read_bytes(), (pkg / f"assets/art/incoming/{it['id']}.png").read_bytes())
+        self.assertTrue((root / "production/art/gpt/RECEIPTS.jsonl").read_text().startswith(before))
+        self.assertEqual(awp.import_bundle(out, root)["receipts_added"], 0)          # idempotent
+        self.assertEqual(awp.import_bundle(bad, root)["status"], "FAIL")
 
     def test_bundle_refuses_a_qa_report_changed_after_save(self):
         pkg, home, env = self.unpack("qa-changed")

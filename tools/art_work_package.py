@@ -14,6 +14,11 @@
   python3 tools/art_work_package.py verify-bundle BUNDLE.zip
         Claude Code's first step on a Work review bundle: hashes, receipts, QA reports and references against this repo.
         It approves nothing.
+  python3 tools/art_work_package.py import-bundle BUNDLE.zip
+        verify-bundle, then copy the native images into assets/art/incoming and append receipts_append.jsonl to
+        RECEIPTS.jsonl (lines already present are skipped). Used by the 'Import Work review bundle' workflow on bundles
+        committed to production/art/work/inbox/, so no Git LFS upload is needed from the delivering machine. It approves
+        nothing: intake and orchestrator review follow.
 
 Work cannot authenticate shell git, and the GitHub connector cannot fetch large binary references, so the package is
 the delivery route for Work's inputs. It is built only from committed files: the manifest names the source commit.
@@ -327,8 +332,13 @@ def cmd_check(a):
             old = zf.read(rel)
             if rel.endswith("RECEIPTS.jsonl"):
                 ok = b.startswith(old)                      # receipts only grow after the package is built
-            elif rel.endswith("SELECTIONS.json"):           # approvals of other items do not affect this queue
-                ok = all(json.loads(old).get(i) == json.loads(b).get(i) for i in ids)
+            elif rel.endswith("SELECTIONS.json"):
+                # Intake and approvals do not change Work's job; a rejection (a redo and its reason) does.
+                def redo(d, i):
+                    e = json.loads(d).get(i) or {}
+                    return (e.get("status") == "rejected", e.get("rejected_reason"), (e.get("master") or {}).get("sha256")
+                            if e.get("status") == "rejected" else None)
+                ok = all(redo(old, i) == redo(b, i) for i in ids)
             else:
                 ok = old == b
             if not ok:
@@ -410,6 +420,39 @@ def verify_bundle(bpath, root=ROOT):
             "next": "Visually review every image before tools/art_intake.py; this check approves nothing."}
 
 
+def import_bundle(bpath, root=ROOT):
+    r = verify_bundle(bpath, root)
+    if r["status"] != "PASS":
+        return r
+    receipts = root / "production/art/gpt/RECEIPTS.jsonl"
+    have = set(receipts.read_text(encoding="utf-8").splitlines()) if receipts.is_file() else set()
+    with zipfile.ZipFile(bpath) as z:
+        man = json.loads(z.read("BUNDLE_MANIFEST.json"))
+        images = []
+        for it in man["items"]:
+            data = z.read(it["file"])
+            if sha(data) != it["sha256"] or not it["file"].startswith("assets/art/incoming/"):
+                return {"status": "FAIL", "errors": [f"refusing {it['file']}"]}
+            dest = root / it["file"]
+            for old in dest.parent.glob(it["id"] + ".*"):      # one file per ID
+                if old != dest:
+                    old.unlink()
+            dest.write_bytes(data)
+            images.append(it["file"])
+        new = [l for l in z.read("receipts_append.jsonl").decode("utf-8").splitlines() if l.strip() and l not in have]
+    if new:
+        text = receipts.read_text(encoding="utf-8") if receipts.is_file() else ""
+        receipts.write_text(text + ("" if not text or text.endswith("\n") else "\n") + "\n".join(new) + "\n", encoding="utf-8")
+    r.update(imported=images, receipts_added=len(new), bundle_sha256=sha(Path(bpath).read_bytes()))
+    return r
+
+
+def cmd_import_bundle(a):
+    r = import_bundle(a.bundle)
+    print(json.dumps(r, indent=1))
+    return 0 if r["status"] == "PASS" else 1
+
+
 def cmd_verify_bundle(a):
     r = verify_bundle(a.bundle)
     print(json.dumps(r, indent=1))
@@ -429,8 +472,11 @@ def main(argv=None):
     p.add_argument("zip", nargs="?")
     p = sub.add_parser("verify-bundle")
     p.add_argument("bundle")
+    p = sub.add_parser("import-bundle")
+    p.add_argument("bundle")
     a = ap.parse_args(argv)
-    return {"build": cmd_build, "verify": cmd_verify, "check": cmd_check, "verify-bundle": cmd_verify_bundle}[a.cmd](a)
+    return {"build": cmd_build, "verify": cmd_verify, "check": cmd_check, "verify-bundle": cmd_verify_bundle,
+            "import-bundle": cmd_import_bundle}[a.cmd](a)
 
 
 if __name__ == "__main__":
