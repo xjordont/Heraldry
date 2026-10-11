@@ -110,3 +110,13 @@ The package proves the inputs only. Two capabilities can be shown only by a real
 ### Delivering a Work review bundle without Git LFS
 
 Neither ChatGPT Work nor this cloud container can upload Git LFS objects: the container's network policy denies `lfs.github.com`. Instead, commit the review ZIP unchanged to `production/art/work/inbox/`. It is an ordinary Git file, and the owner can upload it through the GitHub web page. The `Import Work review bundle` workflow then runs `tools/art_work_package.py import-bundle`, which re-runs verify-bundle, copies the native images into `assets/art/incoming/` (committed through LFS by the Actions runner) and appends the receipts. The workflow then runs `art_intake.py scan` and records the bundle in `production/art/work/IMPORTED.json`. A bundle that fails verification imports nothing. Approval stays a separate orchestrator step.
+
+### Git route for ChatGPT Work: no ZIP files (owner, 2026-10-11)
+
+The owner asked to stop copying ZIP files between Claude and ChatGPT. Work's shell can reach GitHub but had no credentials, and its connector cannot fetch binary images. So the preferred route gives Work a fine-grained token, limited to `xjordont/Heraldry` contents read/write, expiring in 30 days, revocable. With it, Work clones and pushes itself.
+
+- `production/art/gpt/WORK_PROMPT.md` holds the one-time token setup and the standing prompt, which is the same for every batch. Work saves the token to a file and reads it through a git credential helper, so it is never in a remote URL, a log or a printed command.
+- The clone is shallow and sparse: `production/art/gpt`, `production/art/skill`, `assets/art/style`, `assets/art/incoming` and `config`, about 22 MB in 3 seconds. The private PDFs and build outputs are never fetched. Tested here: the v6 preflight reports READY with `delivery: git_lfs`, doctor and status work, and `delivery_guard.py audit` runs.
+- Delivery is the guarded `delivery_guard.py ship --execute`. The push triggers the `Intake ChatGPT artwork` workflow; Claude Code then reviews and approves, then republishes the queue on `main`, where Work picks it up next session.
+- If Work's push is refused (for example LFS uploads blocked in its sandbox), it falls back to the review bundle. Upload that to `production/art/work/inbox/` (the import workflow), or attach it to Claude.
+- The Claude Code container can now reach `lfs.github.com` (the owner opened web access), so Claude can also commit LFS images directly. The offline input package remains as a fallback only.
