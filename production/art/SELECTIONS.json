@@ -5,16 +5,16 @@
   "heading_id": "h-the-greenmark",
   "route": "gpt",
   "spec_sha256": "06acc0f3570bd7c61ff5709d3ceeffb4140c46bc4312719aa5d268986dea7f25",
-  "prompt_sha256": "625734f3e40043ae20bf802b17b6db96a2eed2215694e4917f7e33455e6c18de",
-  "status": "rejected",
-  "received_at": "2026-10-11T02:56:44+00:00",
+  "prompt_sha256": "f59306517f59dc714262b562c2b2efbf75fdc7e6551460dbf5465171c21f70b6",
+  "status": "received",
+  "received_at": "2026-10-11T14:06:48+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
-  "notes": "Attempt 3: warning cuts indistinct and upper margin narrow. Best native candidate; unapproved independent review.",
+  "notes": "Best attempt 2 after 3/3: fine ground texture excessive; clean margins below 5 percent. Unapproved flagged review. No size/quality/model selector exposed. Retry added: Reduce the forest to clear, confident contours and a few form-shadow hatches with broad open paper, removing all stipple, surface noise, coloured moss, and tonal haze while leaving 5-8% clean margins on all four sides. Make the grove ring a small secondary feature partly concealed between middle-distance trunks, keeping the root-lifted road as the focal subject.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-CLI-THE-GREENMARK.png",
-   "sha256": "50843fa32f9d13001e1d06091a3359cbac45a10557815e311a8cdb178e80e2bf",
+   "sha256": "3df2aad47199bc74de77a2357c21dcc7cc73c6a6c37916a04c818fa8491dbe53",
    "px": [
     1536,
     1024
@@ -22,18 +22,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-CLI-THE-GREENMARK.png",
-   "sha256": "9337cf054a209adf55590403ce6e40ce427bb34e12a0bdb0ff7b3bd2fe3d4f63",
+   "sha256": "143bb22234b2dfc4436f485bb76d6f20a318a4a7f82d14da25b5a2e9b96a4b6c",
    "px": [
-    1533,
-    1021
+    1534,
+    1017
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 5.11
+   "max_print_w_in_300ppi": 5.113
   },
-  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "anchor-approved_at": "2026-10-11T02:57:18+00:00",
-  "rejected_at": "2026-10-11T03:42:11+00:00",
-  "rejected_reason": "Owner art direction 2026-10-11: too hyper-detailed and AI-like. Redraw a notch more hand-drawn: confident hand-inked contours, economy of line, hatching only for form and shadow, open white paper, no stipple fields or noisy texture; match the owner's style samples; largest size offered at the queue aspect."
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
  },
  "ART-BAS-GREYTHORN": {
   "family": "bastion",
@@ -74,16 +71,16 @@
   "heading_id": "h-dwarf",
   "route": "gpt",
   "spec_sha256": "2f92a29ce28708e821d5ee92d8db216e17722f58c4632c5d65be7465c3d011ab",
-  "prompt_sha256": "eb609e96f6a1bc2b337415ae6244c1acf1b858b34ce9b5c7623eff9c254f7571",
-  "status": "rejected",
-  "received_at": "2026-10-11T02:56:42+00:00",
+  "prompt_sha256": "9bfcad1d4be9c29d4fa270c67447755130abe1d21368c72d26c5be9724656789",
+  "status": "received",
+  "received_at": "2026-10-11T14:06:46+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
-  "notes": "Attempt 2 selected after native/reference/print inspection; midtone warning resolves into hatches. Unapproved.",
+  "notes": "a3 passes production QA; unapproved. No model/size/quality selector. Correction: Draw the whole dwarf smaller on the tall sheet, with the axe tip at least 15% from the left edge and shield rim at least 15% from the right edge, and all ground marks inside the same blank margin. Preserve the very broad heavy shoulders, thick short limbs, lantern-arm shield and single handaxe, using plain faceted craftsmanship and economical form-shadow hatching.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-ANC-DWARF.png",
-   "sha256": "571922549d75d99dcbb803cd075990522d102386de265a3e7922bcf771a6cd17",
+   "sha256": "448ee103cfea7c1430b82c707b6aa76e8a3584b5b7efd1cc399dbc7e97eb183e",
    "px": [
     1024,
     1536
@@ -91,18 +88,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-ANC-DWARF.png",
-   "sha256": "600ca1e1207337158fb9839ac6ce6d9dc7b844f2078bff2c0aa8fffa028d50f2",
+   "sha256": "1df4db175de718e029550fbe84d2dd2a8436d9fea9ff23cb72849bc7ab42de1f",
    "px": [
-    837,
-    922
+    845,
+    930
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.79
+   "max_print_w_in_300ppi": 2.817
   },
-  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "anchor-approved_at": "2026-10-11T02:57:18+00:00",
-  "rejected_at": "2026-10-11T03:42:11+00:00",
-  "rejected_reason": "Owner art direction 2026-10-11: too hyper-detailed and AI-like. Redraw a notch more hand-drawn: confident hand-inked contours, economy of line, hatching only for form and shadow, open white paper, no stipple fields or noisy texture; match the owner's style samples; largest size offered at the queue aspect."
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
  },
  "ART-CLA-FIGHTER": {
   "family": "class",
@@ -110,16 +104,16 @@
   "heading_id": "h-fighter-15-complexity",
   "route": "gpt",
   "spec_sha256": "99a5d97686f6ca5f3d39049228e21890ff3bb26547991bbc102038400bc0975b",
-  "prompt_sha256": "659bf900ec0bf1cf2d59455dd676d4d0d4d9bee0b263343b98d743b021328baa",
-  "status": "rejected",
-  "received_at": "2026-10-11T02:56:43+00:00",
+  "prompt_sha256": "9e9cd8a65535fdbe4fe3890c34062301e3f9118d939a6c4b9be13c14fe539458",
+  "status": "received",
+  "received_at": "2026-10-11T14:06:47+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
-  "notes": "Attempt 2 selected: checked native and 1.9 inch preview; advisory midtones are hatch detail. Unapproved.",
+  "notes": "Best a3 after 3/3; left sword margin approximately seven percent below eight-percent requirement. Flagged, unapproved. No model/size/quality selector. Correction: Reduce the figure and ground patch enough that the entire sword tip, shield, boots and every ground stroke leave at least 10% completely blank paper at every image edge. Keep the sword drawn back low beside the hip, the small round targe forward and the body braced, with simple bold contours and selective shadow hatching.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-CLA-FIGHTER.png",
-   "sha256": "f14fe1e091e5698919424ed7e7cd85d8af9474650a9b5bb298ea2d6ccbd9fb86",
+   "sha256": "2f51796fd0007c1ce14ac49b490ab41eb411dde912c25721ae34777399cee3fd",
    "px": [
     1024,
     1536
@@ -127,35 +121,32 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-CLA-FIGHTER.png",
-   "sha256": "3feec600e4b044d325771c6772d2cec55409091f0d3e894eea86488adebf38d9",
+   "sha256": "dc81a7faa1419ca8f1ff7b63616829177b9ff9c7f8df3714dc8c0f23b3d6b9e1",
    "px": [
-    845,
-    1045
+    872,
+    1002
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.817
+   "max_print_w_in_300ppi": 2.907
   },
-  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "anchor-approved_at": "2026-10-11T02:57:18+00:00",
-  "rejected_at": "2026-10-11T03:42:11+00:00",
-  "rejected_reason": "Owner art direction 2026-10-11: too hyper-detailed and AI-like. Redraw a notch more hand-drawn: confident hand-inked contours, economy of line, hatching only for form and shadow, open white paper, no stipple fields or noisy texture; match the owner's style samples; largest size offered at the queue aspect."
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
  },
  "ART-MON-GIANT-TARANTULA": {
   "family": "monster",
   "title": "Giant Tarantula",
   "heading_id": "h-giant-tarantula-skirmisher",
   "route": "gpt",
-  "spec_sha256": "452aefc200486cb2188fbb1faf55a2d582256d412b2f13f58afcfd9ce938a0c6",
-  "prompt_sha256": "dec3c51a465b7b0bf7c0f31403fb86dc2dae39a592c6b6363ec2f04eac12f8bf",
-  "status": "rejected",
-  "received_at": "2026-10-11T02:56:45+00:00",
+  "spec_sha256": "b37b2dba2d188626466dcf40df4c824578a01add050150e56ec1dfcb69bc9459",
+  "prompt_sha256": "a94bb9a9613bc8a46288920b1dc9db0ecf82f0a65e48f2bb1ce398a2a9fbb13b",
+  "status": "received",
+  "received_at": "2026-10-11T14:06:49+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
-  "notes": "Attempt 3/3: native dimensions mismatch, ambiguous rear leg count and narrow left margin; unapproved flagged review.",
+  "notes": "Best a3 after 3/3: unresolved eight-leg count, dense fur/helmet texture, narrow ground margin. No model/size/quality selector. Corrections: Arrange the spider's eight walking legs as four fully visible, separated jointed chains on each side with every foot shown, and its eight eyes as two clear rows of four, keeping the short paired palps separate. Simplify the body to broad white reserves, bold hand-inked contour, a few bristle flicks and shadow hatches, with a tiny leaf patch entirely inside 8% blank margins.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-MON-GIANT-TARANTULA.png",
-   "sha256": "aa7145ca5b590023157521b32397d177304e523661520a849068a57387189151",
+   "sha256": "4da034c5b6435f56f99f8aec1abd7cb613df2f68aef0833b3a547822b459d665",
    "px": [
     1254,
     1254
@@ -163,18 +154,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-MON-GIANT-TARANTULA.png",
-   "sha256": "4542da281815445bf5c9a2ca14e526af890e513da04e6700ed84e54d29edb23e",
+   "sha256": "b9158e202d4959087afb13ac67c76a45eeac992cc58e301c2c35b6a2ac397b33",
    "px": [
-    1174,
-    798
+    1133,
+    758
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.913
+   "max_print_w_in_300ppi": 3.777
   },
-  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "anchor-approved_at": "2026-10-11T02:57:18+00:00",
-  "rejected_at": "2026-10-11T03:42:11+00:00",
-  "rejected_reason": "Owner art direction 2026-10-11: too hyper-detailed and AI-like. Redraw a notch more hand-drawn: confident hand-inked contours, economy of line, hatching only for form and shadow, open white paper, no stipple fields or noisy texture; match the owner's style samples; largest size offered at the queue aspect."
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
  },
  "ART-MON-UNDEAD-CHAMPION": {
   "family": "monster",
@@ -182,16 +170,16 @@
   "heading_id": "h-undead-champion-soldier",
   "route": "gpt",
   "spec_sha256": "6450423260b7218005c888a9dcbcd4ad11ca24b9528ffa2ca3b071913ec933e3",
-  "prompt_sha256": "741d323781bea582ea37329ec5a544c0eb9dbb0c786b77866ecdcd8e3cfd88ca",
-  "status": "rejected",
-  "received_at": "2026-10-11T02:56:45+00:00",
+  "prompt_sha256": "bdd422ee9e5a253b20712775b6a7c5cca98f0bc8fb87c1f41a8fdd1c45f479a5",
+  "status": "received",
+  "received_at": "2026-10-11T14:06:50+00:00",
   "surface": "ChatGPT Work",
   "model": "not shown",
-  "notes": "Selected a2 after 3 attempts: dimensions mismatch and narrow vertical margins; unapproved review.",
+  "notes": "a3 passes production QA, unapproved. No model/size/quality selector. Correction: Scale the entire drawn subject down within the square composition so the highest bone tip is at least 12% below the top and the lowest ground stroke is at least 12% above the bottom, retaining at least 8% empty paper on left and right. Preserve the two-handed fused-bone maul and dead flesh, but use a few confident contour and shadow lines instead of repeated skin, metal and fabric surface marks.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-MON-UNDEAD-CHAMPION.png",
-   "sha256": "9b8390d544529f575fe1a7af0e4270dd08023aca5d52f2a91bc43ead68cb529f",
+   "sha256": "6424779475b164fcf05438e5d3b31a1b33e758964db8b67783d3fddc945d1f41",
    "px": [
     1254,
     1254
@@ -199,17 +187,14 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-MON-UNDEAD-CHAMPION.png",
-   "sha256": "3206842d1d3db91002972511ec95acf69699f0fceca4037f37d82a4756899aad",
+   "sha256": "d3c0701d5fbda8d8e1991366fe15ce526a5fb96d93f01d0d6006de8526f34ba3",
    "px": [
-    834,
-    1218
+    862,
+    1037
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.78
+   "max_print_w_in_300ppi": 2.873
   },
-  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
-  "anchor-approved_at": "2026-10-11T02:57:18+00:00",
-  "rejected_at": "2026-10-11T03:42:11+00:00",
-  "rejected_reason": "Owner art direction 2026-10-11: too hyper-detailed and AI-like. Redraw a notch more hand-drawn: confident hand-inked contours, economy of line, hatching only for form and shadow, open white paper, no stipple fields or noisy texture; match the owner's style samples; largest size offered at the queue aspect."
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
  }
 }
