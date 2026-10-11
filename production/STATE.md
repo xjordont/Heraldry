@@ -210,3 +210,9 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Owner exception:** STYLE-REF-11 looks machine-made but is attached on the owner's instruction.
   - **Queue:** republished; the reference lists of 13 items changed, and the prompt text is unchanged.
   - **Updated alongside:** the skill ZIP, the fallback package and the tests (bastion and world items, and only those, carry STYLE-REF-11).
+- **References promoted** (owner, 2026-10-11: "Promote woodcut fencers and 02 city panorama"). Each item still carries at most 3 references, so:
+  - **Bastion and world scenes:** STYLE-REF-11, STYLE-REF-02 and STYLE-REF-09. The panorama is a city, so it joins the town set and replaces 07 there.
+  - **Persons (classes and ancestries):** STYLE-REF-04, STYLE-REF-06 and STYLE-REF-08. The woodcut fencers are full-length human figures with strong silhouettes, so they replace 03 there.
+  - **STYLE-REF-03:** kept for creatures and still lifes.
+  - **Queue:** republished; only reference lists changed, not prompt text.
+  - **Updated alongside:** the skill ZIP, the fallback package and the tests.

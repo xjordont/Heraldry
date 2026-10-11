@@ -17,11 +17,13 @@ VERSION = "6.0.0"
 STAMP = (2026, 10, 10, 0, 0, 0)
 IMAGES = {
     "references/images/ART-BAS-GREYTHORN.jpg": ("assets/art/incoming/ART-BAS-GREYTHORN.jpg", "scene; the owner's approved ChatGPT render"),
+    "references/images/STYLE-REF-02-panorama-line.jpg": ("assets/art/style/STYLE-REF-02-panorama-line.jpg", "bastion and world scenes; owner sample"),
     "references/images/STYLE-REF-03-figure-spotblack.jpg": ("assets/art/style/STYLE-REF-03-figure-spotblack.jpg", "figure and still life; owner sample"),
     "references/images/STYLE-REF-04-throne-brush-black.jpg": ("assets/art/style/STYLE-REF-04-throne-brush-black.jpg", "figure and still life; owner gritty sample"),
     "references/images/STYLE-REF-05-cave-creature-pen.jpg": ("assets/art/style/STYLE-REF-05-cave-creature-pen.jpg", "creature; owner gritty sample"),
     "references/images/STYLE-REF-06-hooded-figure-brush.jpg": ("assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg", "person; owner gritty sample"),
     "references/images/STYLE-REF-07-drybrush-duel.jpg": ("assets/art/style/STYLE-REF-07-drybrush-duel.jpg", "scene; owner gritty sample"),
+    "references/images/STYLE-REF-08-woodcut-fencers.jpg": ("assets/art/style/STYLE-REF-08-woodcut-fencers.jpg", "person; owner sample"),
     "references/images/STYLE-REF-09-skeleton-melee-ink.jpg": ("assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg", "scene; owner gritty sample"),
     "references/images/STYLE-REF-10-undead-crowd-ink.jpg": ("assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg", "scene; owner gritty sample"),
     "references/images/STYLE-REF-11-city-approach-ink.png": ("assets/art/style/STYLE-REF-11-city-approach-ink.png", "bastion and world scenes; owner-chosen city scene"),
