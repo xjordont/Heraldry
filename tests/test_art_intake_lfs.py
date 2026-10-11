@@ -1,6 +1,6 @@
 """The intake fetches only new images: an LFS pointer's oid is the image SHA-256, so images already recorded
 in SELECTIONS with the same bytes need no download (flat LFS bandwidth with one image per push)."""
-import hashlib, json, sys, tempfile, unittest
+import sys, tempfile, unittest
 from pathlib import Path
 from unittest import mock
 

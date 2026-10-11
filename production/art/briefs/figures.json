@@ -418,7 +418,7 @@
    "Half-face theatrical mask, cracked and mended",
    "Bells on a strap",
    "Folded motley cloth patchwork",
-   "Lute or flute with a broken string",
+   "Lute with a broken string",
    "A small round painted target board lying flat, knife-marked"
   ],
   "atmosphere": "Faded festivity, glamour gone threadbare.",
@@ -477,7 +477,7 @@
  },
  "ART-BAC-APPRENTICE": {
   "identity": "An Apprentice background: scraps of craft from a harsh master; starting kit is only 1c (non-Martial classes gain Max NRG, Martial ones gain scrolls).",
-  "composition": "Still life of a wooden stool with a master's oversized coat hung over it, a scorched practice post stump, a small candle and a single copied page.",
+  "composition": "Still life on a stone floor: a wooden stool with a master's oversized coat hung over it, a scorched practice wand, a small unlit candle in a clay dish and a scribbled scroll inside a chalk-drawn circle.",
   "details": [
    "Oversized worn coat sleeve hanging beyond the stool",
    "Practice wand or knotted twig, scorched at the tip",
@@ -503,7 +503,7 @@
   "details": [
    "Two round-bottomed glass flasks of healing tincture, corked",
    "Two ceramic stoppered acid pots with wax seals",
-   "Wooden rack with five slots",
+   "Wooden rack with four slots, one flask or pot in each",
    "Stone mortar and pestle with powder",
    "Small brass balance scale",
    "Leather satchel hanging open",
@@ -673,7 +673,7 @@
  },
  "ART-BAC-VAGABOND": {
   "identity": "A Vagabond background: road to road with no roots; starting kit Bandages.",
-  "composition": "Still life on a roadside milestone, a bundle on a stick, a roll of bandages and a dice cup perched beside a half-burned stub of candle.",
+  "composition": "Still life on a roadside milestone: a bundle on a stick, a roll of bandages and a dice cup perched beside a half-burned stub of candle.",
   "details": [
    "Bundle-on-a-stick with a knotted cloth",
    "Roll of bandages",
@@ -790,7 +790,7 @@
   "identity": "A Ranger, Hybrid class: ground-reader and strike-from-distance hunter; packages of Shortbow, Elven Dagger, Elven Spear, Hide Cuirass, Snares.",
   "composition": "Full figure in three-quarter view standing tall on a patch of leaf litter, shortbow drawn to the cheek, eyes narrowed on a far target, cloak edge stirring.",
   "details": [
-   "Leather coat with a hooded cloak and a green-grey faded tone suggested by hatching",
+   "Leather coat with a hooded cloak and weathered, faded leather",
    "Shortbow at full draw, arrow at the cheek",
    "Elven dagger at the belt",
    "Quiver on the hip, snares coiled at the belt",
@@ -911,7 +911,7 @@
   "atmosphere": "Poised mischief, the moment before everyone looks the wrong way.",
   "avoid": [
    "Not the Rogue: no lockpicking, no crouch",
-   "Do not draw two solid figures: the double must be pale line only",
+   "Do not draw two solid figures: the double must be a thin broken black outline only",
    "No jester costume or mask"
   ],
   "sources": [
@@ -994,7 +994,7 @@
    "A few sparks drifting up from the sphere as flicked ink flecks",
    "Spilled ink pot and loose pages",
    "A satchel of rescued scraps at the feet",
-   "Intent face lit from below by the small flame"
+   "Intent face, deep shadow under the brow"
   ],
   "atmosphere": "Careful, dangerous inheritance.",
   "avoid": [
@@ -1106,7 +1106,7 @@
   ],
   "atmosphere": "Hushed, intimate peril.",
   "avoid": [
-   "No gore pools or wound close-up detail",
+   "No gore pools; the cut is a single fine line",
    "No glowing wash",
    "Do not show a face fully"
   ],
@@ -1405,11 +1405,11 @@
  },
  "ART-MON-BRIARLING": {
   "identity": "Briarling, Greenmark Minion, medium-sized: a hound-sized knot of animate thornwood on root-claws, a spent first line of the Antlered Warden's groves.",
-  "composition": "Low side view of the creature scuttling forward on root-claws with its barbed back bristling, head down.",
+  "composition": "Low side view of a hound-sized creature, knee-high to a man (a dropped hand-axe lying beside it for scale), scuttling forward on root-claws with its barbed back bristling, head down.",
   "details": [
    "Body of twisted tangled wood strands with barbs",
    "Six spindly legs ending in root-claws",
-   "Hollow knothole eyes, no mouth or a split in the bark",
+   "Two hollow knotholes where eyes would be, no mouth, no face, no mouth or a split in the bark",
    "Thorn spines in long and short rows along its back",
    "A few withered leaves and moss tufts",
    "Splinters spraying from a cracked limb",
@@ -1475,7 +1475,7 @@
  },
  "ART-MON-BUGBEAR": {
   "identity": "Bugbear, Greenmark Soldier, medium: a seven-foot, shaggy, long-armed ambusher with a flat face and a spiked morningstar.",
-  "composition": "Full figure in three-quarter view rising out of bracken, long arm already swinging a spiked morningstar from arm's reach.",
+  "composition": "Full figure in three-quarter view rising out of bracken, long arm drawn back with the spiked morningstar about to swing from arm's reach.",
   "details": [
    "A head and more taller than a man, arms reaching to the knees",
    "Shaggy fur the colour of dead bracken, drawn in long hatch lines",
@@ -1497,7 +1497,7 @@
  },
  "ART-MON-HARPY": {
   "identity": "Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies.",
-  "composition": "Full figure in three-quarter view crouched on a single fallen block of stone, wings half-spread, head thrown back mid-song, one talon gripping the stone and the other clawed forward.",
+  "composition": "Full figure in three-quarter view swooping down on beating wings, both taloned feet thrust forward, head thrown back mid-song, over a small patch of bare ground.",
   "details": [
    "Woman's torso and face with ragged hair, hollow cheeks",
    "Large carrion-bird wings, ragged feathers, long primaries",
@@ -1505,7 +1505,7 @@
    "Tail of dirty feathers",
    "Open mouth mid-shriek, solid black",
    "Filth-streaked feathers",
-   "A scatter of bones at the foot of the block"
+   "A scatter of bones on the ground below"
   ],
   "atmosphere": "Beautiful and filthy.",
   "avoid": [
@@ -1724,7 +1724,7 @@
  },
  "ART-MON-GREEN-DRAGON": {
   "identity": "Green Dragon, Greenmark Elite, huge: a moss-coloured serpentine spine-crested tyrant with a corrosive breath; it flies. Typical adult, alone.",
-  "composition": "Wide three-quarter view of the dragon coiled on a mossy rock with its long neck raised and head turned toward the viewer, wings folded; a tiny human figure beside the rock, drawn small, light and secondary, for scale.",
+  "composition": "Three-quarter view of the dragon coiled on a mossy rock with its long neck raised and head turned toward the viewer, wings folded; a tiny human figure beside the rock, drawn small, light and secondary, for scale.",
   "details": [
    "Serpentine long body coiled on a rock",
    "Spine crest running from the head down the back",
@@ -1855,7 +1855,7 @@
  },
  "ART-MON-WERERAT": {
   "identity": "Wererat, Ashlands Skirmisher, small: a hunched plague-grey shapeshifter between man and rat that bites and skitters back into the dark.",
-  "composition": "Low three-quarter view of the creature crouched and half-turned, rusted blade held low, preparing to skitter away.",
+  "composition": "Low three-quarter view of the wererat caught mid-pounce, jaws wide, clawed hand with the rusted blade trailing behind.",
   "details": [
    "Hunched half-man half-rat form",
    "Long snout with chisel teeth, whiskers, naked tail",
@@ -1863,7 +1863,7 @@
    "Rusted blade gripped in a clawed hand",
    "Ragged clothes of sewer rags",
    "A wet patch of undercroft flagstone under its feet",
-   "Small size: knee-high to a man at an angle"
+   "Small, about the size of a crouching child"
   ],
   "atmosphere": "Skulking disease and stealth.",
   "avoid": [
@@ -1877,7 +1877,7 @@
  },
  "ART-MON-SPECTRE": {
   "identity": "Spectre, Ashlands Controller, medium: grief and rage without a body, a flying incorporeal dead thing that drinks warmth and years by touch.",
-  "composition": "Three-quarter view of the spectre drifting forward in mid-air, one hand reaching forward to touch, its trailing edge thinning to nothing.",
+  "composition": "Three-quarter view of the spectre risen upright and still in mid-air, both long hands pressed together at the chest in endless grief, head bowed, its trailing edge thinning to nothing.",
   "details": [
    "Burned-away body fading into long tapering hatch strokes",
    "Burn-scorched shreds of a robe or cloak trailing",
@@ -1899,7 +1899,7 @@
  },
  "ART-MON-UNDEAD-SENTINEL": {
   "identity": "Undead Sentinel, Ashlands Soldier, medium: a tall, gaunt dead gate-guard in iron helm with a reach-halberd, who holds a breach forever.",
-  "composition": "Frontal three-quarter view of the sentinel planted squarely on rubble-strewn ground, reach-halberd held upright in both hands, butt grounded.",
+  "composition": "Three-quarter view of the sentinel braced on rubble-strewn ground, reach-halberd held diagonally across the body at guard, head slightly lowered behind the narrow eye slit.",
   "details": [
    "Tall, gaunt dead soldier of human size",
    "Halberd with a long haft and broad blade, held in both hands",
@@ -2063,7 +2063,7 @@
   "identity": "Forsaken Knight, Ashlands Soldier, medium: dead chivalry in spectral plate with a flamberge wreathed in grave-light.",
   "composition": "Three-quarter view of the knight advancing through ash, flamberge held two-handed low, plate cloak in tatters.",
   "details": [
-   "Full gothic plate in ghostly worn pale tones",
+   "Full gothic plate in worn plate left mostly bare paper with thin broken contours and a few solid-black gaps",
    "Flamberge: a long two-handed wavy-edged blade",
    "Grave-light drawn as ink wavy flame lines around the blade",
    "Closed bascinet helm with dark eye slit",
@@ -2175,7 +2175,7 @@
  },
  "ART-MON-LICH": {
   "identity": "Lich, Ashlands Elite, medium: a desiccated sorcerer-king in mouldering finery who commands the dead and flies a little above the floor.",
-  "composition": "Three-quarter view of the lich hovering over the floor, one skeletal hand reaching forward to touch.",
+  "composition": "Three-quarter view of the lich hovering over the floor, one skeletal hand raised palm-out in command, the other gathering its mouldering robe.",
   "details": [
    "Desiccated body with leathery skin on a thin frame",
    "Tarnished crown on a skull face",
@@ -2220,7 +2220,7 @@
  },
  "ART-MON-CAVE-GOBLIN": {
   "identity": "Cave Goblin, Undermarches Minion, small: a pale, blinder goblin with wide black eyes, a jagged spear and an instinct to flee towards more of its kind.",
-  "composition": "Low three-quarter view of the goblin shielding its eyes from a light, jagged spear trailing, half-turned to flee.",
+  "composition": "Low three-quarter view of the goblin shielding its eyes with one hand from an unseen bright light, jagged spear trailing in the other, half-turned to flee.",
   "details": [
    "Pale skin and large black pool eyes",
    "Long ears and a thin frame",
@@ -2316,10 +2316,10 @@
   "details": [
    "A cloak-shaped fold of black leathery skin with a trailing hem",
    "Ragged edges and a ridge of muscle",
-   "Underside with faint ribs and a toothless slit",
+   "Underside with a toothless slit and a toothless slit",
    "No visible eyes",
    "Extremely flat, about the size of a flung cloak",
-   "Upper surface textured like folded cave rock"
+   "Upper surface of wrinkled black leather folds"
   ],
   "atmosphere": "Silent suffocating shadow.",
   "avoid": [
@@ -2525,7 +2525,7 @@
  },
  "ART-MON-GLOOM-HULK": {
   "identity": "Gloom Hulk, Undermarches Brute, large: a bull-sized, beetle-backed digger with great scything claws and four eyes that scramble the mind.",
-  "composition": "Three-quarter view of the hulk heaving itself up out of broken ground in a shower of rubble, scything claws raised, four eyes in two pairs on the blunt face; a small human figure reeling before it, drawn small, light and secondary, for scale.",
+  "composition": "Three-quarter view of the hulk charging sideways out of a collapsed tunnel mouth, scything claws raking low across the floor, four eyes in two pairs on the blunt face; a small human figure diving clear, drawn small, light and secondary, for scale.",
   "details": [
    "Beetle shell back with segmented plates",
    "Four eyes in two pairs on a blunt head",
@@ -2571,7 +2571,7 @@
  },
  "ART-MON-ELDER-VRYMK": {
   "identity": "Elder Vrymk, Undermarches Elite, large: the eldest of a vrymk brood, a monstrous knot of leg-thick stone-grey tentacles around a plate-shearing beak.",
-  "composition": "Wide three-quarter view of the elder squatting over a heap of clean bones, tentacles thick as a man's leg lashing out, one curling toward a small human figure at its edge, drawn small, light and secondary, for scale.",
+  "composition": "Three-quarter view of the elder squatting over a heap of clean bones, tentacles thick as a man's leg lashing out, one curling toward a small human figure at its edge, drawn small, light and secondary, for scale.",
   "details": [
    "Tentacles thick as a man's leg, ridged with suckers",
    "Huge central beak that shears plate",
@@ -2598,7 +2598,7 @@
    "Round floating orb of leathery, wrinkled flesh",
    "One great central eye with a solid black pupil",
    "Crown of four writhing eyestalks, each ending in a small eye",
-   "Fine radiating hatching around the body to suggest the antimagic aura",
+   "A ring of short broken concentric strokes around the body, not rays, to suggest the antimagic aura",
    "Dust motes drifting around it",
    "No wings, no limbs"
   ],
@@ -2685,12 +2685,12 @@
  },
  "ART-MON-SNOW-GOBLIN": {
   "identity": "Snow Goblin, Pale City Minion, small: a gaunt white-furred goblin that ambushes out of the whiteout with frost-edged knives.",
-  "composition": "Three-quarter view of the goblin rising from a snowdrift, frost knife in one hand, sling in the other, fur nearly the colour of the paper.",
+  "composition": "Three-quarter view of the goblin rising from a snowdrift, a frost-edged knife in each hand, fur nearly the colour of the paper.",
   "details": [
    "Gaunt body covered in white fur (kept pale by sparse strokes)",
    "Long pointed ears and a thin face",
    "Frost knife with an icy edge",
-   "Sling in the off-hand with a stone",
+   "Second frost-edged knife in the off-hand",
    "Rag and fur wrapping",
    "Crouched on its toes",
    "Snowdrift and falling snow"
@@ -2919,7 +2919,7 @@
   "atmosphere": "Immovable frozen loyalty.",
   "avoid": [
    "No polearm; not the Guard's longsword and kite shield",
-   "Not the Undead Sentinel (tower shield and halberd)",
+   "Not the Undead Sentinel (shieldless, with a halberd)",
    "Do not show it standing tall"
   ],
   "sources": [
@@ -2949,7 +2949,7 @@
  },
  "ART-MON-FALLEN-PALADIN": {
   "identity": "Fallen Paladin, Pale City Elite, medium: an undead knight in defiled plate whose despair aura withers courage, wielding a necrotic-chilled flamberge.",
-  "composition": "Three-quarter view of the paladin rising from one knee on a patch of frosted flagstones, defiled flamberge planted, head lifted.",
+  "composition": "Three-quarter view of the paladin standing braced on a patch of frosted flagstones, defiled flamberge planted point-down before the feet, both gauntlets on the cross-guard, head lifted.",
   "details": [
    "Defiled plate with a broken holy sunburst on the breast, no readable lettering",
    "Flamberge with a wavy blade",
@@ -2971,7 +2971,7 @@
  },
  "ART-MON-WEREBEAR": {
   "identity": "Werebear, Pale City Brute, large: a hulking white-furred man-beast built to maul, with strength that hurls men aside.",
-  "composition": "Three-quarter view of the werebear charging on all fours through churned snow, claws raking and jaws open; a small human figure ahead of it, drawn small, light and secondary, for scale.",
+  "composition": "Three-quarter view of the werebear mid-stride on all fours through churned snow, head up and jaws open, one great paw lifting to swat aside a small human figure, drawn small, light and secondary, for scale.",
   "details": [
    "Hulking half-man half-bear with a bear head and human-like shoulders",
    "White shaggy fur",
@@ -3002,7 +3002,7 @@
    "Broad headsman's axe with a long haft, frosted",
    "Leather apron over coarse mail and fur",
    "Heavy gauntlets",
-   "Towering broad frame",
+   "Broad, heavy-shouldered frame, a head taller than an ordinary man but plainly human in scale",
    "Frost on the shoulders",
    "Drifting snow at its feet"
   ],
@@ -3064,7 +3064,7 @@
  },
  "ART-MON-FROST-GIANT": {
   "identity": "Frost Giant, Pale City Elite, huge: a blue-skinned giant that towers over humans, orcs and ogres alike, armoured in glacier-ice and wielding a greataxe.",
-  "composition": "Wide low-angle view of the giant striding through knee-deep drifts, greataxe raised overhead, a tiny human figure at its feet for scale, drawn small, light and secondary.",
+  "composition": "Low-angle view of the giant striding through knee-deep drifts, greataxe raised overhead, a tiny human figure at its feet for scale, drawn small, light and secondary.",
   "details": [
    "Towering far above humans, orcs and ogres; blue skin rendered by dense hatching",
    "Glacier-ice plate armour with jagged edges",
@@ -3085,7 +3085,7 @@
  },
  "ART-MON-WHITE-DRAGON": {
   "identity": "White Dragon, Pale City Elite, huge: a feral ice-crusted wyrm of pure predatory cold; it flies. Typical adult, alone.",
-  "composition": "Wide three-quarter view of the dragon perched on a jagged ice outcrop with wings half-raised, head lowered toward the viewer; a tiny human figure at the foot of the outcrop, drawn small, light and secondary, for scale.",
+  "composition": "Three-quarter view of the dragon perched on a jagged ice outcrop with wings half-raised, head lowered toward the viewer; a tiny human figure at the foot of the outcrop, drawn small, light and secondary, for scale.",
   "details": [
    "Four legs and two large wings, half-raised",
    "Heavy ice-crusted scales",
@@ -3106,13 +3106,13 @@
  },
  "ART-MON-FIRE-BEETLE": {
   "identity": "Fire Beetle, Sun-Drowned Minion, small: a dog-sized, hard-shelled beetle with a ruddy inner glow that lights tomb passages.",
-  "composition": "Low side view of the beetle crawling over a small patch of sandy flagstones, mandibles open, light from its glands falling on the stone.",
+  "composition": "Low side view of the beetle crawling over a small patch of sandy flagstones, mandibles open, its two gland sacs drawn as bare-paper ovals.",
   "details": [
    "Hard-shelled domed carapace with ridges",
    "Six jointed legs",
    "Pair of snapping mandibles",
    "Antennae",
-   "Light from its glands shown as short rays on the stone",
+   "Gland sacs drawn as bare-paper ovals with a few short ink ticks beside them, no rays",
    "Sand and grit under its legs, rear legs half-dug in",
    "A broken urn beside it shows it is dog-sized"
   ],
@@ -3314,7 +3314,7 @@
   "identity": "Wind Elemental, Sun-Drowned Skirmisher, large: a howling, near-invisible spiral of desert air that flings sand and bodies; it flies.",
   "composition": "Three-quarter view of a funnel-shaped vortex spinning over a small patch of scoured sand, defined by swirling sand lines, with a vague hollow face in the vortex; a small human figure staggering at its edge, drawn small, light and secondary, for scale.",
   "details": [
-   "Spiral funnel outlined by curved parallel lines of sand grains",
+   "Spiral funnel outlined by curved parallel sweeping lines",
    "Dry-brush debris and flicked flecks at the base of the vortex",
    "Faint face with two hollow eyes in the vortex",
    "Debris flung outward: a spear, a cloak, a skull",
@@ -3508,7 +3508,7 @@
  },
  "ART-MON-DEMON": {
   "identity": "Demon, Sun-Drowned Elite, huge: a horned iron-coloured fiend wreathed in clinging flame, wielding a hooked glaive.",
-  "composition": "Wide low-angle view of the demon striding out of a broken ward circle scratched on the ground, hooked glaive in both hands, fire clinging to its shoulders; a small human figure, drawn small, light and secondary, for scale.",
+  "composition": "Low-angle view of the demon striding out of a broken ward circle scratched on the ground, hooked glaive in both hands, fire clinging to its shoulders; a small human figure, drawn small, light and secondary, for scale.",
   "details": [
    "Huge horned fiend, towering over a man",
    "Skin the colour of cooling iron, cracked like cooling metal",
@@ -3529,7 +3529,7 @@
  },
  "ART-MON-BLUE-DRAGON": {
   "identity": "Blue Dragon, Sun-Drowned Elite, huge: a horned, sand-scaled wyrm that burrows beneath dunes and erupts in a lance of lightning; it flies and burrows. Typical adult, bursting from a dune.",
-  "composition": "Wide low-angle view of the dragon bursting up out of a dune, sand cascading from its horns and shoulders, head thrown back; a tiny human figure on the sand, drawn small, light and secondary, for scale.",
+  "composition": "Low-angle view of the dragon bursting up out of a dune, sand cascading from its horns and shoulders, head thrown back; a tiny human figure on the sand, drawn small, light and secondary, for scale.",
   "details": [
    "Large horn crest on the head and along the jaw",
    "Sand-scaled hide with fine scale texture",
@@ -3907,7 +3907,7 @@
  },
  "ART-MON-HYDRA": {
   "identity": "Hydra, Mire Elite, huge: a many-headed reptilian horror wallowing in the Mire's deepest pools, each serpentine neck striking on its own.",
-  "composition": "Wide three-quarter view of the hydra rearing from a black pool, five to seven serpent necks striking in different directions, with three clearly biting; a small human figure at the pool's edge, drawn small, light and secondary, for scale.",
+  "composition": "Three-quarter view of the hydra rearing from a black pool, five to seven serpent necks striking in different directions, with three clearly biting; a small human figure at the pool's edge, drawn small, light and secondary, for scale.",
   "details": [
    "Five to seven long serpentine necks each with a head",
    "Heavy reptilian body half-submerged",
@@ -3953,10 +3953,10 @@
  },
  "ART-MON-MIRE-TITAN": {
   "identity": "Mire Titan, Mire Brute, huge: a colossal froglike amphibian horror of warty hide and lashing tentacles with a vast distensible maw. Typical individual, alone, waist-deep in fen water.",
-  "composition": "Wide low view of the titan standing waist-deep in fen water, reeds and mud sliding from its body, three tentacles raised and mouth partly open; a small human figure at a safe distance, drawn small, light and secondary, for scale.",
+  "composition": "Low view of the titan standing waist-deep in fen water, reeds and mud sliding from its body, three tentacles raised and mouth partly open; a small human figure at a safe distance, drawn small, light and secondary, for scale.",
   "details": [
    "Froglike bulk with warty hide",
-   "Three thick lashing tentacles from the shoulders",
+   "Three thick lashing tentacles from the shoulders that serve as its arms, one coiled around a struggling shape",
    "Vast distensible maw with a ridge of small teeth",
    "Wide flat head with small eyes",
    "Reeds and mud sliding from its flanks",
@@ -3974,7 +3974,7 @@
  },
  "ART-MON-BLACK-DRAGON": {
   "identity": "Black Dragon, Mire Elite, huge: a sleek horned wyrm the colour of stagnant water with an acid breath; it flies and swims. Typical adult, alone, rising from open black water.",
-  "composition": "Wide low-angle view of the dragon rising from open black water, acid dripping from its jaws, wings partly lifting; a tiny human figure on the near bank, drawn small, light and secondary, for scale.",
+  "composition": "Low-angle view of the dragon rising from open black water, acid dripping from its jaws, wings partly lifting; a tiny human figure on the near bank, drawn small, light and secondary, for scale.",
   "details": [
    "Sleek horned head with swept-back horns",
    "Gaunt skull-like jaw with dripping acid",

@@ -10,7 +10,7 @@ WORK_PACKAGE.json and no .git) is checked against its own manifest instead: ever
 queue and prompt hashes, and that every queue reference is a decodable image. Git is never run in
 package mode, remote access is reported as not attempted, and delivery is always the bundle.
 """
-import argparse, json, os, shutil, subprocess, sys, hashlib
+import argparse, json, shutil, subprocess, sys, hashlib
 from pathlib import Path
 try:
     import PIL
@@ -133,12 +133,12 @@ def run(repo,mode='auto',smoke_file=None,require_installed=False,offline_package
     if PIL is None:errors.append('Pillow missing')
     if not q.is_file():errors.append('Missing queue: must run in a Heraldry repository checkout')
     try:
-        data=json.loads(q.read_text())
+        data=json.loads(q.read_text(encoding="utf-8"))
         if data['schema']<2:errors.append('Queue schema must be 2+')
         for it in data['items']:
             p=repo/it['prompt']
             if not p.is_file():errors.append('missing prompt: '+it['prompt']);continue
-            b=p.read_text().removesuffix('\n').encode()
+            b=p.read_text(encoding="utf-8").removesuffix('\n').encode()
             if hashlib.sha256(b).hexdigest()!=it['prompt_sha256']:errors.append('prompt hash mismatch: '+it['id'])
             for ref in it['references']:
                 f=repo/ref
@@ -178,7 +178,7 @@ def run(repo,mode='auto',smoke_file=None,require_installed=False,offline_package
         p=Path(smoke_file)
         if p.is_file():
             try:
-                data=json.loads(p.read_text())
+                data=json.loads(p.read_text(encoding="utf-8"))
                 if data.get('image_generated') is True and data.get('all_queue_references_attached') is True and data.get('native_file_accessible') is True:
                     smoke='OPERATOR_RECORDED_PASS'
                 else:errors.append('smoke test record does not attest all 3 capabilities')

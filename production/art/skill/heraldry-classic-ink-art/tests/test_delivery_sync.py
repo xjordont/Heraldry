@@ -93,6 +93,64 @@ class ShipSync(unittest.TestCase):
         with self.assertRaisesRegex(dg.Error, 'diverges'):
             dg.ship(self.work)
 
+    def test_recovers_a_commit_that_was_never_pushed(self):
+        self.deliver_locally()
+        git(self.work, 'add', '-A'); git(self.work, 'commit', '-qm', 'art(gpt): ART-T .. ART-T')   # killed before push
+        self.bot_commits('production/art/SELECTIONS.json', '{"ART-X": {"status": "received"}}\n')
+        self.assertEqual(dg.ship(self.work)['status'], 'PUSHED')
+        self.assertEqual(git(self.work, 'log', '--format=%s', 'origin/main').splitlines()[:2], ['art(gpt): ART-T .. ART-T', 'art: intake'])
+
+    def test_a_push_that_landed_is_not_delivered_twice(self):
+        self.deliver_locally()
+        git(self.work, 'add', '-A'); git(self.work, 'commit', '-qm', 'art(gpt): ART-T .. ART-T')
+        git(self.work, 'push', '-q', 'origin', 'main')
+        git(self.work, 'reset', '-q', 'HEAD~1')          # the guard undid its commit after a push timeout
+        self.bot_commits('production/art/SELECTIONS.json', '{"ART-X": {"status": "received"}}\n')
+        out = dg.ship(self.work)
+        self.assertEqual(out['status'], 'PUSHED')
+        self.assertEqual(git(self.work, 'log', '--format=%s', 'origin/main').count('art(gpt): ART-T'), 1)
+        self.assertEqual(git(self.work, 'status', '--porcelain'), '')
+
+    def test_redo_in_another_format_replaces_the_old_file(self):
+        self.deliver_locally()
+        dg.ship(self.work)
+        old = self.work / 'assets/art/incoming/ART-T.jpg'
+        old.unlink()                                     # what save does when the redo is a different format
+        img = self.work / 'assets/art/incoming/ART-T.webp'
+        im = Image.new('RGB', (1024, 1024), 'white')
+        ImageDraw.Draw(im).rectangle((250, 250, 750, 750), outline='black', width=12)
+        im.save(img)
+        rec = {'id': 'ART-T', 'prompt_sha256': self.item['prompt_sha256'], 'native_sha256': dg.sha_file(img),
+               'reference_shas': [dg.sha_file(self.work / 'assets/art/style/REF.jpg')],
+               'qa_review': {k: {'pass': True, 'evidence': 'synthetic stand-in, mechanics only'} for k in fg.CRITERIA},
+               'qa_failed_criteria': [], 'qa_unresolved': []}
+        with (self.work / 'production/art/gpt/RECEIPTS.jsonl').open('a') as f:
+            f.write(json.dumps(rec) + '\n')
+        self.assertEqual(dg.ship(self.work)['status'], 'PUSHED')
+        tree = git(self.work, 'ls-tree', '-r', '--name-only', 'origin/main', 'assets/art/incoming')
+        self.assertIn('ART-T.webp', tree)
+        self.assertNotIn('ART-T.jpg', tree)
+
+    def test_a_deletion_without_replacement_is_refused(self):
+        self.deliver_locally()
+        dg.ship(self.work)
+        (self.work / 'assets/art/incoming/ART-T.jpg').unlink()
+        with (self.work / 'production/art/gpt/RECEIPTS.jsonl').open('a') as f:
+            f.write('{"id": "ART-T", "refused": true}\n')
+        with self.assertRaisesRegex(dg.Error, 'without a replacement'):
+            dg.validate(self.work, need_remote=False)
+
+    def test_a_failed_push_leaves_a_clean_index_and_the_files(self):
+        self.deliver_locally()
+        hook = self.work / '.git/hooks/pre-push'
+        hook.write_text('#!/bin/sh\necho "denied by policy" >&2\nexit 1\n'); hook.chmod(0o755)
+        head = git(self.work, 'rev-parse', 'HEAD')
+        with self.assertRaisesRegex(dg.Error, 'not a race'):
+            dg.ship(self.work)
+        self.assertEqual(git(self.work, 'rev-parse', 'HEAD'), head)
+        self.assertEqual(git(self.work, 'diff', '--cached', '--name-only'), '')
+        self.assertTrue((self.work / 'assets/art/incoming/ART-T.jpg').is_file())
+
 
 if __name__ == '__main__':
     unittest.main()
@@ -158,3 +216,18 @@ class PerImageCadence(unittest.TestCase):
         import style_audit as sa
         rep = sa.build(self.repo, recent=3)
         self.assertEqual([r['id'] for r in rep['items']], ['ART-T1', 'ART-T2', 'ART-T3'])
+
+
+@unittest.skipUnless(HAVE, 'git required')
+class RefusalReopens(PerImageCadence):
+    """A refusal binds to the prompt it was made against; a republished prompt reopens the item."""
+    def test_refusal_reopens_after_the_prompt_changes(self):
+        self.queue(10)
+        st = lambda: self.ha.states(self.repo, self.ha.load_queue(self.repo))['ART-T0']   # noqa: E731
+        with (self.repo / 'production/art/gpt/RECEIPTS.jsonl').open('a') as f:
+            f.write(json.dumps({'id': 'ART-T0', 'refused': True, 'prompt_sha256': self.items[0]['prompt_sha256']}) + '\n')
+        self.assertEqual(st(), 'refused')
+        (self.repo / 'production/art/gpt/prompts/ART-T0.txt').write_text('ink 0, fixed\n')
+        self.items[0]['prompt_sha256'] = hashlib.sha256(b'ink 0, fixed').hexdigest()
+        self.queue(10)
+        self.assertEqual(st(), 'pending')

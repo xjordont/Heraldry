@@ -77,7 +77,7 @@ def prompt_for(e, with_refs):
     kind = "scene" if e["family"] in v2["scene_families"] else "still" if e["family"] in v2["still_families"] else "figure"
     where = " / ".join(e.get("context", []))
     identity = b.get("identity", "").rstrip(".") or (e.get("subject") or f"{e['title']} ({where})")
-    out = [label(e) + " - GRITTY OLD-SCHOOL INK ILLUSTRATION", v2["intro"].format(identity=identity[0].lower() + identity[1:] if identity[:2] in ("A ", "An") or identity[:4] == "The " else identity)]
+    out = [label(e) + " - GRITTY OLD-SCHOOL INK ILLUSTRATION", v2["intro"].format(identity=identity[0].lower() + identity[1:] if identity[:2] == "A " or identity[:3] == "An " or identity[:4] == "The " else identity)]
     aw = ASPECT_WORDS.get(fam["aspect"], fam["aspect"])
     out.append(("FORMAT AND WHITE VIGNETTE" if kind == "scene" else "FORMAT AND ISOLATION") + "\n"
                + "\n".join(x.format(aspect_words=aw) for x in v2["format_" + kind]))

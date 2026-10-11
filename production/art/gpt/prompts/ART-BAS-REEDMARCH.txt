@@ -8,7 +8,7 @@ The illustration must have a natural, irregular, hand-drawn white vignette aroun
 Leave approximately 5-8% clean white margin around the perimeter, with an additional organic transition zone. Avoid digital blur, artificial feathering, or hard rectangular cropping. Keep crisp line and strong contrast at the focal point.
 
 COMPOSITION
-Water-level view from a ferry at the toll bridge, looking at the stilt-town with its patchwork of platforms and barges; a barge hall repositioned in the middle.
+Water-level view from a ferry at the toll bridge, looking at the stilt-town with its patchwork of platforms and barges; a barge carrying the Marsh Council hall moored in the middle.
 
 SUBJECT DETAILS
 * Log pilings and plank platforms with huts and ladders
@@ -34,7 +34,7 @@ Ink it gritty and bold, like old-school rulebook art: strong brush contours of u
 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
-* Not the Mire climate swamp scene (that is a drowned village, no town).
+* Not the Mire climate image (a drowned village, no town).
 * No clear view of what is under the floors.
 * Not a stone town.
 * No lettering.

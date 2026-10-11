@@ -88,8 +88,7 @@ def item_for(e, prompt, sels, root=ROOT):
             "print_w_in": fam["print_w_in"], "references": references_for(e, sels, root),
             "max_attempts": att.get(e["family"], att["default"]),
             "size_class": g.CFG["size_words"].get(size_code, "") if e["family"] in ("monster", "boss") else "",
-            "must": list(b.get("must", [])), "avoid": [x.rstrip(".") + "." for x in b.get("avoid", [])],
-            "save_as": f"assets/art/incoming/{e['id']}.png"}
+            "must": list(b.get("must", [])), "avoid": [x.rstrip(".") + "." for x in b.get("avoid", [])]}
 
 
 def build_queue(phase, ents, sels, anchors, root=ROOT):

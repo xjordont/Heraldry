@@ -8,7 +8,7 @@ A single subject drawn whole, isolated on blank ivory-white paper: only a small 
 Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
 
 COMPOSITION
-Low side view of the beetle crawling over a small patch of sandy flagstones, mandibles open, light from its glands falling on the stone.
+Low side view of the beetle crawling over a small patch of sandy flagstones, mandibles open, its two gland sacs drawn as bare-paper ovals.
 Single creature, full body, three-quarter view, in a characteristic menacing pose; a small human figure for scale only if the creature is Large or Huge. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.
 Size: Small: smaller than a human.
 
@@ -17,7 +17,7 @@ SUBJECT DETAILS
 * Six jointed legs
 * Pair of snapping mandibles
 * Antennae
-* Light from its glands shown as short rays on the stone
+* Gland sacs drawn as bare-paper ovals with a few short ink ticks beside them, no rays
 * Sand and grit under its legs, rear legs half-dug in
 * A broken urn beside it shows it is dog-sized
 Must be shown exactly:

@@ -37,7 +37,7 @@ Do not draw:
 * Do not show a face inside the robe; it is empty.
 * Not the Ashlands climate street or Captain Veyr's company.
 * No readable inscriptions.
-* No combat scene: the legionaries stand as one disciplined mass.
+* No combat scene: the kneeling legionaries form one disciplined mass.
 Avoid photorealism, digital-render polish, clean vector-like line, uniform machine texture, stipple fields, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should be gritty and high-contrast and print crisply in pure black ink, with an organically fading white vignette, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES

@@ -11,7 +11,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: art-intake
+  group: art-import
   cancel-in-progress: false
 jobs:
   import:
@@ -26,17 +26,10 @@ jobs:
           python-version: '3.12'
       - name: Install image library
         run: python -m pip install pillow==12.3.0
-      - name: Fetch incoming images
-        run: |
-          git lfs install --local
-          # Only new images: a pointer's oid is the image's SHA-256, so recorded ones need no download
-          # (keeps LFS bandwidth flat when images arrive one per push).
-          NEW="$(python tools/art_intake.py needs-pull)"
-          if [ -n "$NEW" ]; then git lfs pull --include="$NEW" --exclude=""; fi
-      - name: Verify and import new bundles
+      - name: Write the bundle importer
         shell: bash
         run: |
-          python - <<'PY'
+          cat > "$RUNNER_TEMP/import_bundles.py" <<'PY'
           import hashlib, json, subprocess, sys
           from pathlib import Path
           log = Path('production/art/work/IMPORTED.json')
@@ -54,18 +47,26 @@ jobs:
                          'source': out['source'], 'imported': 'pending intake; not approved'}
           log.write_text(json.dumps(done, indent=1) + '\n')
           PY
-      - name: Ink-prepare and record new images
-        run: python tools/art_intake.py scan
-      - name: Commit import and intake results
+      - name: Import, ink-prepare, record and commit
+        # Each attempt starts from the newest main (the intake bot and Codex also push), then redoes the work.
+        shell: bash
         run: |
+          export GIT_LFS_SKIP_SMUDGE=1   # resets must not download every LFS file; lfs pull fetches only new ones
+          git lfs install --local
           git config user.name "heraldry-art-bot"
           git config user.email "heraldry-art-bot@users.noreply.github.com"
-          git add assets/art/incoming assets/art/ink production/art/gpt/RECEIPTS.jsonl production/art/SELECTIONS.json production/art/review production/art/work/IMPORTED.json
-          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
-          git lfs ls-files | grep incoming || true
-          git commit -m "art: import ChatGPT Work review bundle and intake"
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            NEW="$(python tools/art_intake.py needs-pull)"
+            if [ -n "$NEW" ]; then git lfs pull --include="$NEW" --exclude=""; fi
+            python "$RUNNER_TEMP/import_bundles.py"
+            python tools/art_intake.py scan
+            git add assets/art/incoming assets/art/ink production/art/gpt/RECEIPTS.jsonl production/art/SELECTIONS.json production/art/review production/art/work/IMPORTED.json
+            if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+            git commit -q -m "art: import ChatGPT Work review bundle and intake"
+            if git push -q origin HEAD:main; then exit 0; fi
+            echo "main moved during import; retrying from the new head"
             sleep $((i * 3))
           done
           exit 1

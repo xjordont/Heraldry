@@ -31,7 +31,7 @@ Ink it like gritty old-school rulebook monster and character art: a bold, rough 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
 * No polearm; not the Guard's longsword and kite shield.
-* Not the Undead Sentinel (tower shield and halberd).
+* Not the Undead Sentinel (shieldless, with a halberd).
 * Do not show it standing tall.
 Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be gritty, bold and readable at small size and print crisply in pure black ink, like original ink art in an old-school fantasy rulebook.
 

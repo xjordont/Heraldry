@@ -17,7 +17,7 @@ VERSION = "7.0.0"
 STAMP = (2026, 10, 10, 0, 0, 0)
 def _images():
     """The approved Greythorn render plus every reference image any queue item can attach (config gpt_reference_sets)."""
-    rs = json.loads((ROOT / "config/art_style.json").read_text())["gpt_reference_sets"]
+    rs = json.loads((ROOT / "config/art_style.json").read_text(encoding="utf-8"))["gpt_reference_sets"]
     use = {}
     for name, refs in [*rs["sets"].items(), *rs.get("family_sets", {}).items(), *((k, v["refs"]) for k, v in rs.get("kind_sets", {}).items())]:
         for r in refs:
@@ -56,7 +56,7 @@ def sha(b):
 
 
 def families_markdown(cfg=None):
-    cfg = cfg or json.loads((ROOT / "config/art_style.json").read_text())
+    cfg = cfg or json.loads((ROOT / "config/art_style.json").read_text(encoding="utf-8"))
     reg = cfg["gpt_reference_sets"]["register_of_family"]
     att = cfg["gpt_max_attempts"]
     assert sorted(NOTES) == sorted(cfg["families"]) == sorted(ORDER), "family list changed: update NOTES and ORDER"
@@ -105,7 +105,7 @@ def main():
     ap.add_argument("--check", action="store_true")
     a = ap.parse_args()
     if a.check:
-        ok = (SRC / "references/FAMILIES.md").read_text() == families_markdown()
+        ok = (SRC / "references/FAMILIES.md").read_text(encoding="utf-8") == families_markdown()
         print("FAMILIES.md up to date" if ok else "FAMILIES.md is stale: run tools/art_skill_build.py")
         return 0 if ok else 1
     print(json.dumps(build(), indent=1))

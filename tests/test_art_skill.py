@@ -78,7 +78,7 @@ def make_repo(root, phase="anchors", items=None):
         text = f"{it['title'].upper()} - PROMPT\n\nMust be shown exactly:\n" + "\n".join("* " + m for m in it["must"])
         (root / "production/art/gpt/prompts" / f"{it['id']}.txt").write_text(text + "\n")
         it.update({"prompt": f"production/art/gpt/prompts/{it['id']}.txt", "prompt_sha256": hashlib.sha256(text.encode()).hexdigest(),
-                   "references": refs[1:] if it["id"] == "ART-T-HERO" else refs[:1], "save_as": f"assets/art/incoming/{it['id']}.png"})
+                   "references": refs[1:] if it["id"] == "ART-T-HERO" else refs[:1]})
     q = {"schema": 2, "phase": phase, "generated_at": "2026-10-10T00:00:00+00:00", "max_references": 3, "count": len(items), "items": items}
     (root / "production/art/gpt/QUEUE.json").write_text(json.dumps(q))
     return q
@@ -438,7 +438,10 @@ class Runner(Isolated):
         import art_intake
         with mock.patch.object(art_intake, "RECEIPTS", self.root / "production/art/gpt/RECEIPTS.jsonl"):
             r = art_intake.receipts()["ART-T-BEAST"]
-        self.assertIsNone(r.get("prompt_sha256"))                # a later real receipt for the same ID replaces it
+        queued = {it["id"]: it for it in json.loads((self.root / "production/art/gpt/QUEUE.json").read_text())["items"]}
+        # the refusal binds to the prompt it refused, so a republished (fixed) prompt reopens the item;
+        # a later real receipt for the same ID still replaces it
+        self.assertEqual(r.get("prompt_sha256"), queued["ART-T-BEAST"]["prompt_sha256"])
         code, out, err = run(self.root, "check", "ART-T-BEAST", str(self.image()))
         self.assertIn("recorded as refused", out)
         code, out, err = run(self.root, "refuse", "ART-NOT-QUEUED", "--reason", "x")

@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-11T18:25:09+00:00",
+ "generated_at": "2026-10-11T20:34:39+00:00",
  "max_references": 3,
  "push_every": 1,
  "review_every": 10,
@@ -32,8 +32,7 @@
     "No visible creatures in the Dark.",
     "Not a stone castle on a hill.",
     "Do not show the gate open or being closed."
-   ],
-   "save_as": "assets/art/incoming/ART-BAS-DEEPWARDEN.png"
+   ]
   },
   {
    "id": "ART-CLI-THE-ASHLANDS",
@@ -58,8 +57,7 @@
     "Do not detail the patrol: tiny silhouettes only.",
     "No inscriptions.",
     "Not a sunny scene; heavy overcast."
-   ],
-   "save_as": "assets/art/incoming/ART-CLI-THE-ASHLANDS.png"
+   ]
   },
   {
    "id": "ART-MON-SKELETON-WARRIOR",
@@ -85,8 +83,7 @@
     "Not the Skeleton Archer: no bow.",
     "No ice or ash.",
     "No other skeletons."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SKELETON-WARRIOR.png"
+   ]
   },
   {
    "id": "ART-MON-DIRE-WOLF",
@@ -111,8 +108,7 @@
     "Do not copy Tundra Wolf (white coat, snow) or Blackfire Hound (flame).",
     "No saddle.",
     "No other wolves."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-DIRE-WOLF.png"
+   ]
   },
   {
    "id": "ART-MON-ORC",
@@ -138,8 +134,7 @@
     "Not the Orc ancestry hero: no tabard, no composed bearing, no clean armour.",
     "Not a Bugbear (shaggy, long-armed).",
     "No greataxe and no sword."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-ORC.png"
+   ]
   },
   {
    "id": "ART-MON-GARGOYLE",
@@ -164,8 +159,7 @@
    "avoid": [
     "Not the Stone Sentinel (a humanoid construct).",
     "No fire or glowing eyes."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GARGOYLE.png"
+   ]
   },
   {
    "id": "ART-CLA-RANGER",
@@ -174,7 +168,7 @@
    "ref_set": "person",
    "title": "Ranger",
    "prompt": "production/art/gpt/prompts/ART-CLA-RANGER.txt",
-   "prompt_sha256": "93aff0bc0b6a1321aa4e8fa54b49a092e60d5b9e1f0a5365aee620fae82c9454",
+   "prompt_sha256": "57ee380f07fede9930963fff255801389467e1b01e7341088a9f9877cb20a022",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
@@ -189,8 +183,7 @@
     "Not the Assassin: no hooded crouch, no dagger-first pose.",
     "No animal companion.",
     "Do not give it a sword."
-   ],
-   "save_as": "assets/art/incoming/ART-CLA-RANGER.png"
+   ]
   },
   {
    "id": "ART-BAC-SMUGGLER",
@@ -214,8 +207,7 @@
     "No figure or hands, and no lettering.",
     "No coins spilled, keep it understated.",
     "Do not copy the Rogue's kit tableau."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-SMUGGLER.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
@@ -239,8 +231,7 @@
     "No lettering on tome pages or scrolls: marks only as abstract scribble.",
     "Not a grown Wizard: young, small and unsure.",
     "No big fireball or lightning."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-1-ARCANE-SPELLS-D20.png"
+   ]
   },
   {
    "id": "ART-CAM-THE-ARMOURY",
@@ -265,8 +256,7 @@
     "Not the melee weapons still life on sacking.",
     "No readable names on helms.",
     "No figures."
-   ],
-   "save_as": "assets/art/incoming/ART-CAM-THE-ARMOURY.png"
+   ]
   },
   {
    "id": "ART-BAS-HEARTHHOLD",
@@ -291,8 +281,7 @@
     "No glow rays from fire, use ink.",
     "Not a luxurious hall; poor and cramped.",
     "No lettering."
-   ],
-   "save_as": "assets/art/incoming/ART-BAS-HEARTHHOLD.png"
+   ]
   },
   {
    "id": "ART-BAS-REEDMARCH",
@@ -301,7 +290,7 @@
    "ref_set": "bastion",
    "title": "Reedmarch",
    "prompt": "production/art/gpt/prompts/ART-BAS-REEDMARCH.txt",
-   "prompt_sha256": "663043daea9bd18230bec8cc6072ff19167fdd622d7b7206eac6bb90e549d3b8",
+   "prompt_sha256": "53386db03f04a6e6abede9264831abe7f74a962aba8796510718d415baf4ec45",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
@@ -313,12 +302,11 @@
    "size_class": "",
    "must": [],
    "avoid": [
-    "Not the Mire climate swamp scene (that is a drowned village, no town).",
+    "Not the Mire climate image (a drowned village, no town).",
     "No clear view of what is under the floors.",
     "Not a stone town.",
     "No lettering."
-   ],
-   "save_as": "assets/art/incoming/ART-BAS-REEDMARCH.png"
+   ]
   },
   {
    "id": "ART-BAS-SABLEKEEP",
@@ -343,8 +331,7 @@
     "Do not show readable emblems of the Watch.",
     "No Hearthhold-like central fire or Deepwarden gate.",
     "No bones shown explicitly as skeletons."
-   ],
-   "save_as": "assets/art/incoming/ART-BAS-SABLEKEEP.png"
+   ]
   },
   {
    "id": "ART-BAS-SALTSPIRE",
@@ -369,8 +356,7 @@
     "No visible dunes monsters.",
     "Do not depict the well being sounded.",
     "Not Reedmarch or Sablekeep silhouettes."
-   ],
-   "save_as": "assets/art/incoming/ART-BAS-SALTSPIRE.png"
+   ]
   },
   {
    "id": "ART-CLI-THE-MIRE",
@@ -395,8 +381,7 @@
     "No horror close-ups: dead shapes stay ambiguous and faint.",
     "No lettering.",
     "Not the Blighted Heartwood or Titan fen scenes."
-   ],
-   "save_as": "assets/art/incoming/ART-CLI-THE-MIRE.png"
+   ]
   },
   {
    "id": "ART-CLI-THE-PALE-CITY",
@@ -421,8 +406,7 @@
     "No ghoulish detail or movement on the citizens: distant and static.",
     "No dragons.",
     "No glow or aurora."
-   ],
-   "save_as": "assets/art/incoming/ART-CLI-THE-PALE-CITY.png"
+   ]
   },
   {
    "id": "ART-CLI-THE-SUN-DROWNED",
@@ -447,8 +431,7 @@
     "Do not draw glinting colour or sun-disc flares.",
     "No camels (not in source) - use mules or nothing.",
     "No reanimated dead: they remain objects."
-   ],
-   "save_as": "assets/art/incoming/ART-CLI-THE-SUN-DROWNED.png"
+   ]
   },
   {
    "id": "ART-CLI-THE-UNDERMARCHES",
@@ -457,7 +440,7 @@
    "ref_set": "climate",
    "title": "The Undermarches",
    "prompt": "production/art/gpt/prompts/ART-CLI-THE-UNDERMARCHES.txt",
-   "prompt_sha256": "fa99deacdb2a6e5e7d236b91949666fdd8736daf1dc45cc435d56ca5c20d9df0",
+   "prompt_sha256": "142b0567486bd9d0889da2afbd3089303fed16be4e99e6ae01c84ab83e12e75e",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
@@ -473,8 +456,7 @@
     "No deep elves visible.",
     "No glowing crystals.",
     "No readable map lettering."
-   ],
-   "save_as": "assets/art/incoming/ART-CLI-THE-UNDERMARCHES.png"
+   ]
   },
   {
    "id": "ART-MON-ASHEN-REVENANT",
@@ -498,8 +480,7 @@
     "Not the Forsaken Knight (pale plate).",
     "Not the Undead Champion.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-ASHEN-REVENANT.png"
+   ]
   },
   {
    "id": "ART-MON-BANDIT",
@@ -523,8 +504,7 @@
     "Not the Bandit Captain: no officer's cloak, no heavy crossbow.",
     "Not an adventurer class: no clean kit.",
     "No cheerful rogue look."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BANDIT.png"
+   ]
   },
   {
    "id": "ART-MON-BANDIT-CAPTAIN",
@@ -549,8 +529,7 @@
     "No ornate royal gear.",
     "No horse.",
     "No underlings or other figures."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BANDIT-CAPTAIN.png"
+   ]
   },
   {
    "id": "ART-MON-BANSHEE",
@@ -574,8 +553,7 @@
     "Not the Spectre (burnt) or Ice Wraith (icy).",
     "No gore.",
     "Do not draw a classic sheet ghost."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BANSHEE.png"
+   ]
   },
   {
    "id": "ART-MON-BASILISK",
@@ -602,8 +580,7 @@
     "No wings or fire.",
     "Not a snake or dragon.",
     "Do not show gore."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BASILISK.png"
+   ]
   },
   {
    "id": "ART-MON-BEASTMAN",
@@ -627,8 +604,7 @@
     "No weapons: its attack is Claws.",
     "Do not copy the Satyr Reveler (laurel crown, pipes, playful stance).",
     "Do not make it a minotaur."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BEASTMAN.png"
+   ]
   },
   {
    "id": "ART-MON-BLACK-DRAGON",
@@ -637,7 +613,7 @@
    "ref_set": "monster:magical",
    "title": "Black Dragon",
    "prompt": "production/art/gpt/prompts/ART-MON-BLACK-DRAGON.txt",
-   "prompt_sha256": "e31899082ff45435c49f73a6fd996409bfd8e374a8547a61f5a1a65f907013c2",
+   "prompt_sha256": "63259e608f35922a2da626a936ee039a294450b15fe33ecab2d5e89333a065d2",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -652,8 +628,7 @@
     "No ruin or architecture.",
     "Not the Green, White or Blue Dragon: sleek, skull-like head.",
     "No breath cone."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BLACK-DRAGON.png"
+   ]
   },
   {
    "id": "ART-MON-BLACKFIRE-HOUND",
@@ -677,8 +652,7 @@
     "Not the Dire Wolf or Tundra Wolf (white fur).",
     "Not the Corpsehound (desert).",
     "No glow: the flame is drawn as black ink shapes."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BLACKFIRE-HOUND.png"
+   ]
   },
   {
    "id": "ART-MON-BLACKWATER-WIGHT",
@@ -703,8 +677,7 @@
     "Not a living sailor.",
     "No glow.",
     "No other drowned figures."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BLACKWATER-WIGHT.png"
+   ]
   },
   {
    "id": "ART-MON-BLOOD-APE",
@@ -728,8 +701,7 @@
     "Not a Beastman or Bugbear.",
     "No weapons: it uses fists.",
     "Do not draw gore."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BLOOD-APE.png"
+   ]
   },
   {
    "id": "ART-MON-BLUE-DRAGON",
@@ -738,7 +710,7 @@
    "ref_set": "monster:magical",
    "title": "Blue Dragon",
    "prompt": "production/art/gpt/prompts/ART-MON-BLUE-DRAGON.txt",
-   "prompt_sha256": "4fc8fc166511685a9e4fd64169c5e2d80810ba258e7a968cec7d7d66b85aa130",
+   "prompt_sha256": "18f77f2dccc1dc67c1a3cea057832c9a343b2555b820a5aeae7b3f9fd5847645",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -753,8 +725,7 @@
     "Not the Green, White or Black Dragon: horned and sand-scaled.",
     "No tomb or architecture.",
     "No glow on the lightning."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BLUE-DRAGON.png"
+   ]
   },
   {
    "id": "ART-MON-BOGLING",
@@ -778,8 +749,7 @@
     "Not the Swamp Goblin.",
     "Not the Lizardfolk.",
     "Do not draw it as a cute frog."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BOGLING.png"
+   ]
   },
   {
    "id": "ART-MON-BRASS-GOLEM",
@@ -803,8 +773,7 @@
     "Not the Iron Golem: smaller and brass, not black iron.",
     "Not the Fire Elemental.",
     "No flames."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BRASS-GOLEM.png"
+   ]
   },
   {
    "id": "ART-MON-BRIARLING",
@@ -813,7 +782,7 @@
    "ref_set": "monster:magical",
    "title": "Briarling",
    "prompt": "production/art/gpt/prompts/ART-MON-BRIARLING.txt",
-   "prompt_sha256": "0be3949af19f36150de7016a0d41b85f92583b53d7584ccc4728053a810bf601",
+   "prompt_sha256": "81c26f50a9180751ed814db7acb021d9e32865275f6f497f0fdde00fbed64796",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -828,8 +797,7 @@
     "Not a dryad or a treant: no humanoid body, no face.",
     "Not a real hound or animal: pure wood.",
     "Do not draw flame."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BRIARLING.png"
+   ]
   },
   {
    "id": "ART-MON-BUGBEAR",
@@ -838,7 +806,7 @@
    "ref_set": "monster:humanoid",
    "title": "Bugbear",
    "prompt": "production/art/gpt/prompts/ART-MON-BUGBEAR.txt",
-   "prompt_sha256": "1e3537eb19722400f4b6496b90076f3639ba6621e5a8d9ef2773698688691d04",
+   "prompt_sha256": "d94a860fbbb0825536ea1d4135755e276de6f4351c72dd7bad30ff165a6e2916",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -853,8 +821,7 @@
     "Not an Ogre: lean and long-limbed, not a hulking thing.",
     "Not a Beastman: no horns or hooves.",
     "Not a Blood Ape: no knuckle-walking."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BUGBEAR.png"
+   ]
   },
   {
    "id": "ART-MON-BURROWMAW",
@@ -878,8 +845,7 @@
     "Not the Giant Constrictor or any snake.",
     "Not the Gloom Hulk (no legs or claws).",
     "No eyes needed."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-BURROWMAW.png"
+   ]
   },
   {
    "id": "ART-MON-CAVE-GOBLIN",
@@ -888,7 +854,7 @@
    "ref_set": "monster:humanoid",
    "title": "Cave Goblin",
    "prompt": "production/art/gpt/prompts/ART-MON-CAVE-GOBLIN.txt",
-   "prompt_sha256": "955d876d25d4300293ce518d34fae24f65928fe6970839ff056d583352a1c711",
+   "prompt_sha256": "e3ac2267365da7500d8e1f8c4fee7f838a4f89df80974835078e50cf0838420c",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -903,8 +869,7 @@
     "Not the Greenmark Goblin: no sling, no notched blade.",
     "Not the Goblin ancestry hero.",
     "Do not draw a mob."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-CAVE-GOBLIN.png"
+   ]
   },
   {
    "id": "ART-MON-CORPSEHOUND",
@@ -928,8 +893,7 @@
     "Not a Gnoll (hyena-headed, spear/longbow).",
     "Not the Blackfire Hound or Dire Wolf.",
     "Do not draw four-legged."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-CORPSEHOUND.png"
+   ]
   },
   {
    "id": "ART-MON-CROCODILE",
@@ -955,8 +919,7 @@
     "No more or fewer than four legs.",
     "Not the Giant Constrictor or Swamp Naga.",
     "No wings or horns."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-CROCODILE.png"
+   ]
   },
   {
    "id": "ART-MON-CRYPTSTRANGLER",
@@ -981,8 +944,7 @@
     "Not the Vaultfang (ceiling) or Vrymk (tentacled ambusher on walls).",
     "No eyes.",
     "No other stalagmites or cave walls."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-CRYPTSTRANGLER.png"
+   ]
   },
   {
    "id": "ART-MON-DEEP-ELF-PRIEST",
@@ -1010,8 +972,7 @@
     "No readable symbols.",
     "No scourge or whip.",
     "No ornaments, sigils or crystals on the staff: not a magic wand or sceptre."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-DEEP-ELF-PRIEST.png"
+   ]
   },
   {
    "id": "ART-MON-DEEP-ELF-WARRIOR",
@@ -1037,8 +998,7 @@
     "Not the Deep Elf ancestry hero: no hood, no plain travel kit.",
     "Not the Deep Elf Priest: no staff, no robes.",
     "No glaive, polearm or staff."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-DEEP-ELF-WARRIOR.png"
+   ]
   },
   {
    "id": "ART-MON-DEMON",
@@ -1047,7 +1007,7 @@
    "ref_set": "monster:magical",
    "title": "Demon",
    "prompt": "production/art/gpt/prompts/ART-MON-DEMON.txt",
-   "prompt_sha256": "0a9820f582b68d6e62a71336e2c5c849098c21ad8df1f9ed87b9f50f35cee024",
+   "prompt_sha256": "5ecc52b024adb92952cb7f3c9184c1b52626782baac3bbd8a2fdc0bc50b26699",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1062,8 +1022,7 @@
     "Not the Imp (small, winged).",
     "Not the Gelid Fiend (ice).",
     "No bat wings: it does not fly."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-DEMON.png"
+   ]
   },
   {
    "id": "ART-MON-DESERT-NAGA",
@@ -1088,8 +1047,7 @@
     "Not the Medusa (hair snakes).",
     "No arms or hands.",
     "No pillar or column."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-DESERT-NAGA.png"
+   ]
   },
   {
    "id": "ART-MON-DIRE-BEAR",
@@ -1113,8 +1071,7 @@
     "Not the Gorebeak Bear: no beak or feathers.",
     "Not a Werebear.",
     "No malice-driven snarl: it is hungry, not evil."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-DIRE-BEAR.png"
+   ]
   },
   {
    "id": "ART-MON-DRYAD-GROVEWARDEN",
@@ -1138,8 +1095,7 @@
     "Not the Briarling: this is a humanoid.",
     "Not a Treant: only a person-sized figure.",
     "No nudity."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-DRYAD-GROVEWARDEN.png"
+   ]
   },
   {
    "id": "ART-MON-ELDER-VRYMK",
@@ -1148,7 +1104,7 @@
    "ref_set": "monster:vermin",
    "title": "Elder Vrymk",
    "prompt": "production/art/gpt/prompts/ART-MON-ELDER-VRYMK.txt",
-   "prompt_sha256": "95ab44702c8965c8ffdf795b390e294976213ea81bf14a6d0fb5008f332872c6",
+   "prompt_sha256": "d71f9e89d028b73565044139c89b346448dfcad571aee5735a3a07c971b356a7",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1165,8 +1121,7 @@
     "Do not give it a human head.",
     "No smaller vrymk.",
     "No tunnel walls or ceiling."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-ELDER-VRYMK.png"
+   ]
   },
   {
    "id": "ART-MON-EMBER-SKULL",
@@ -1190,8 +1145,7 @@
     "No body or wings (it flies without wings).",
     "Not glow: draw flames in line.",
     "Do not make it cute."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-EMBER-SKULL.png"
+   ]
   },
   {
    "id": "ART-MON-EVIL-EYE",
@@ -1200,7 +1154,7 @@
    "ref_set": "monster:vermin",
    "title": "Evil Eye",
    "prompt": "production/art/gpt/prompts/ART-MON-EVIL-EYE.txt",
-   "prompt_sha256": "b69b2f7b016701ff939246ab6365939a29786c83499f9b3ee965c5726fd3c962",
+   "prompt_sha256": "b23a6ce4963a64a884ce45d2873a04c87299833f37d743243b770fd4e8523ee5",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1217,8 +1171,7 @@
     "No large toothy mouth: not a Beholder lookalike.",
     "No extra eyes beyond the central eye and the four eyestalks.",
     "No glow rays."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-EVIL-EYE.png"
+   ]
   },
   {
    "id": "ART-MON-FALLEN-PALADIN",
@@ -1227,7 +1180,7 @@
    "ref_set": "monster:undead",
    "title": "Fallen Paladin",
    "prompt": "production/art/gpt/prompts/ART-MON-FALLEN-PALADIN.txt",
-   "prompt_sha256": "d1828c7a9cd4f8e657e96d0c5a5fd90fbe937957bb2810842a7a2e7b3db5b81d",
+   "prompt_sha256": "6f728b0aa518801999fe680c89e475da0d8569afde53051d3de8f3e4ad0f7efd",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1242,8 +1195,7 @@
     "Not the Forsaken Knight (Ashlands, grave-light).",
     "Not a living Paladin.",
     "No halo."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-FALLEN-PALADIN.png"
+   ]
   },
   {
    "id": "ART-MON-FIRE-BEETLE",
@@ -1252,7 +1204,7 @@
    "ref_set": "monster:vermin",
    "title": "Fire Beetle",
    "prompt": "production/art/gpt/prompts/ART-MON-FIRE-BEETLE.txt",
-   "prompt_sha256": "c06c8214b843b79c263de0834e6e1ad7b68d8cad537bbf22dd8ce3219c591a82",
+   "prompt_sha256": "72905ebe87bc2518c8cd5b60c38ef8fa788b1db0b8bd946ee72ebbfac3fb780b",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1269,8 +1221,7 @@
     "No more or fewer than six legs.",
     "Do not draw wings in flight.",
     "Not a scorpion."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-FIRE-BEETLE.png"
+   ]
   },
   {
    "id": "ART-MON-FIRE-ELEMENTAL",
@@ -1294,8 +1245,7 @@
     "Not the Brass Golem or Imp.",
     "Do not use glow, use ink flame shapes.",
     "No weapons."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-FIRE-ELEMENTAL.png"
+   ]
   },
   {
    "id": "ART-MON-FOREST-TROLL",
@@ -1319,8 +1269,7 @@
     "Not the Ogre: lankier, with claws.",
     "Not the Swamp Troll (different habitat, mire details).",
     "No fire or oil shown."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-FOREST-TROLL.png"
+   ]
   },
   {
    "id": "ART-MON-FORSAKEN-ARCHER",
@@ -1346,8 +1295,7 @@
     "Not the Skeleton Archer or Undead Crossbowman.",
     "Not a bare skeleton.",
     "Not a shortbow."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-FORSAKEN-ARCHER.png"
+   ]
   },
   {
    "id": "ART-MON-FORSAKEN-DUELIST",
@@ -1371,8 +1319,7 @@
     "No shield or buckler.",
     "Not the Forsaken Knight: unarmoured and light.",
     "Not the living Trickster or Rogue class."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-FORSAKEN-DUELIST.png"
+   ]
   },
   {
    "id": "ART-MON-FORSAKEN-KNIGHT",
@@ -1381,7 +1328,7 @@
    "ref_set": "monster:undead",
    "title": "Forsaken Knight",
    "prompt": "production/art/gpt/prompts/ART-MON-FORSAKEN-KNIGHT.txt",
-   "prompt_sha256": "5ee5e3dd36bad07bb1c906a83ef20722416a3064c205f82de5b762a0a1e35163",
+   "prompt_sha256": "6cc9385859165fd81d0a94abe57eb2578bef50b01b0f53ebefeafdda6b708ee7",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1396,8 +1343,7 @@
     "Not the Forsaken Duelist (light) or Archer.",
     "Not the Fallen Paladin.",
     "No shield."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-FORSAKEN-KNIGHT.png"
+   ]
   },
   {
    "id": "ART-MON-FROST-GHOUL",
@@ -1422,8 +1368,7 @@
     "Not the Frozen Skeleton (flesh, not bare bones).",
     "No clothes beyond rags.",
     "No other ghouls."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-FROST-GHOUL.png"
+   ]
   },
   {
    "id": "ART-MON-FROST-GIANT",
@@ -1432,7 +1377,7 @@
    "ref_set": "monster:humanoid",
    "title": "Frost Giant",
    "prompt": "production/art/gpt/prompts/ART-MON-FROST-GIANT.txt",
-   "prompt_sha256": "25fbc207995f078a57691980a564a6c07463d11a948a8aa276cc1778411c806c",
+   "prompt_sha256": "71a8f28e74993ac04c6c61913a7494e284c7963071e278f142a9eeecc3b2a02c",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1447,8 +1392,7 @@
     "Not the Orc or Ogre.",
     "Not the Ice Elemental.",
     "No horns on the helm."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-FROST-GIANT.png"
+   ]
   },
   {
    "id": "ART-MON-FROST-WYVERN",
@@ -1474,8 +1418,7 @@
     "Not a four-legged dragon.",
     "Not the White Dragon (heavier, four legs).",
     "No breath."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-FROST-WYVERN.png"
+   ]
   },
   {
    "id": "ART-MON-FROZEN-SKELETON",
@@ -1499,8 +1442,7 @@
     "Not the Skeleton Warrior (bronze, sand) or Undead Warrior (flesh, rust).",
     "Not the White Court Guard (armoured corpse).",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-FROZEN-SKELETON.png"
+   ]
   },
   {
    "id": "ART-MON-GELID-FIEND",
@@ -1524,8 +1466,7 @@
     "Not the Ice Elemental (no horns/lattice).",
     "Not the Demon.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GELID-FIEND.png"
+   ]
   },
   {
    "id": "ART-MON-GHOUL",
@@ -1549,8 +1490,7 @@
     "Not the Possessed Corpse: ghouls are agile and feral.",
     "Not the Frost Ghoul: no ice or frost.",
     "No weapons."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GHOUL.png"
+   ]
   },
   {
    "id": "ART-MON-GIANT-BAT",
@@ -1577,8 +1517,7 @@
     "Not the Stirge: bat anatomy, not mosquito.",
     "No glowing eyes.",
     "No other bats."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GIANT-BAT.png"
+   ]
   },
   {
    "id": "ART-MON-GIANT-BLACK-WIDOW",
@@ -1604,8 +1543,7 @@
     "No cavern or web-filled chamber.",
     "Not the Giant Tarantula (hairy, no web).",
     "Do not make it giant-scale: war-hound size."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GIANT-BLACK-WIDOW.png"
+   ]
   },
   {
    "id": "ART-MON-GIANT-CENTIPEDE",
@@ -1629,8 +1567,7 @@
     "Not a snake or caterpillar: armoured segments, one pair of legs per segment.",
     "Do not make it larger than a spear in length.",
     "No web."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GIANT-CENTIPEDE.png"
+   ]
   },
   {
    "id": "ART-MON-GIANT-CONSTRICTOR",
@@ -1654,8 +1591,7 @@
     "Not the Miasma Serpent or naga.",
     "Do not show a victim.",
     "No venom drops."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GIANT-CONSTRICTOR.png"
+   ]
   },
   {
    "id": "ART-MON-GIANT-SCORPION",
@@ -1681,8 +1617,7 @@
     "No wings, no extra tails.",
     "Not the Giant Tarantula or Black Widow.",
     "Do not draw wings."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GIANT-SCORPION.png"
+   ]
   },
   {
    "id": "ART-MON-GIANT-SKELETON",
@@ -1706,8 +1641,7 @@
     "Not the Skeleton Warrior scaled up: no armour.",
     "Not the Frozen Skeleton.",
     "No weapon besides fists."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GIANT-SKELETON.png"
+   ]
   },
   {
    "id": "ART-MON-GIANT-TARANTULA",
@@ -1733,8 +1667,7 @@
     "No web: it spins no snares.",
     "Do not make it larger than a dog.",
     "No human features."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GIANT-TARANTULA.png"
+   ]
   },
   {
    "id": "ART-MON-GLOOM-HULK",
@@ -1743,7 +1676,7 @@
    "ref_set": "monster:vermin",
    "title": "Gloom Hulk",
    "prompt": "production/art/gpt/prompts/ART-MON-GLOOM-HULK.txt",
-   "prompt_sha256": "ecc8b32b671025a09217a6fa598630ec6f7610a69b0eea31c4b997b383341acf",
+   "prompt_sha256": "5c6dde942d1c967b4b8e8eade35004772d9ca123f54dec4614e187facebcef2c",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1760,8 +1693,7 @@
     "No more or fewer than four eyes.",
     "Not a crab or scorpion.",
     "Not a Burrowmaw: has legs and claws."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GLOOM-HULK.png"
+   ]
   },
   {
    "id": "ART-MON-GLOOMSPORE-JELLY",
@@ -1785,8 +1717,7 @@
     "Not the Vault Ooze (a cube) or the Mire's Shambling Mound.",
     "No face or eyes.",
     "Do not show gore."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GLOOMSPORE-JELLY.png"
+   ]
   },
   {
    "id": "ART-MON-GNOLL",
@@ -1810,8 +1741,7 @@
     "Not the Corpsehound (jackal head, scimitar).",
     "Not the Beastman.",
     "Do not draw it with a scimitar."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GNOLL.png"
+   ]
   },
   {
    "id": "ART-MON-GOBLIN",
@@ -1836,8 +1766,7 @@
     "Not the Cave Goblin (blind black eyes) nor Snow Goblin (fur parka).",
     "Do not give a spear (that is the Cave Goblin).",
     "No other goblins or mob silhouettes."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GOBLIN.png"
+   ]
   },
   {
    "id": "ART-MON-GOBLIN-SHAMAN",
@@ -1863,8 +1792,7 @@
     "Not the plain Goblin: no sling.",
     "Do not draw glow.",
     "No other goblins."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GOBLIN-SHAMAN.png"
+   ]
   },
   {
    "id": "ART-MON-GOREBEAK-BEAR",
@@ -1888,8 +1816,7 @@
     "No wings: it does not fly.",
     "Not the Dire Bear: no reared pose, no bear head.",
     "Not an owlbear cartoon."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GOREBEAK-BEAR.png"
+   ]
   },
   {
    "id": "ART-MON-GREEN-DRAGON",
@@ -1898,7 +1825,7 @@
    "ref_set": "monster:magical",
    "title": "Green Dragon",
    "prompt": "production/art/gpt/prompts/ART-MON-GREEN-DRAGON.txt",
-   "prompt_sha256": "4441aec591a60e0cd8abb776c40b5f20681772f127b9ff81f29289c9a2c23851",
+   "prompt_sha256": "9de71ab6b9a4d983028e79385d4e8f0e0a532ef19cea67ca884e2cd758d12ebc",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1913,8 +1840,7 @@
     "No lair, no hoard and no tribute.",
     "Not a Frost Wyvern (two legs).",
     "Not the Black, Blue or White Dragon: moss/serpentine silhouette with a long neck."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-GREEN-DRAGON.png"
+   ]
   },
   {
    "id": "ART-MON-HARPY",
@@ -1923,7 +1849,7 @@
    "ref_set": "monster:humanoid",
    "title": "Harpy",
    "prompt": "production/art/gpt/prompts/ART-MON-HARPY.txt",
-   "prompt_sha256": "8f9b3b49ca744e891e8bc64bc9433d8ab75ec0fef4091acd548a9cd604a22a36",
+   "prompt_sha256": "1263a23bc0b608f06a2b285b2b6baca40a267bab4e1c6b96eaeb6ccca58f4635",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1940,8 +1866,7 @@
    "avoid": [
     "Not a siren or angel: ragged and foul.",
     "No wing-arms: the wings and the arms are separate limbs."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-HARPY.png"
+   ]
   },
   {
    "id": "ART-MON-HYDRA",
@@ -1950,7 +1875,7 @@
    "ref_set": "monster:magical",
    "title": "Hydra",
    "prompt": "production/art/gpt/prompts/ART-MON-HYDRA.txt",
-   "prompt_sha256": "08db7beb09f97ed2be18199501976f4921ca390091ff2b67a3b94eb2a4e04b8d",
+   "prompt_sha256": "1b484a9928a472c4ac2492480ce3f3f43ebbfb1ef1fdd7ba9d4bfe1b8b91732b",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1967,8 +1892,7 @@
     "Not a single-headed serpent.",
     "Not a dragon: no wings.",
     "Do not draw fire from the heads."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-HYDRA.png"
+   ]
   },
   {
    "id": "ART-MON-ICE-ELEMENTAL",
@@ -1992,8 +1916,7 @@
     "Not the Gelid Fiend (no devil horns or tail).",
     "Not the Frost Giant.",
     "No glowing."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-ICE-ELEMENTAL.png"
+   ]
   },
   {
    "id": "ART-MON-ICE-WRAITH",
@@ -2017,8 +1940,7 @@
     "Not the Spectre (scorched) or Banshee.",
     "Not made of solid ice like the Ice Elemental.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-ICE-WRAITH.png"
+   ]
   },
   {
    "id": "ART-MON-IMP",
@@ -2042,8 +1964,7 @@
     "Not the Demon (huge) or Demonborn ancestry.",
     "Do not give it a weapon.",
     "Not cute."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-IMP.png"
+   ]
   },
   {
    "id": "ART-MON-IRON-GOLEM",
@@ -2068,8 +1989,7 @@
     "No weapon, only fists.",
     "No steam or gears.",
     "No throne, dais or steps."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-IRON-GOLEM.png"
+   ]
   },
   {
    "id": "ART-MON-KOBOLD",
@@ -2094,8 +2014,7 @@
     "Not the Lizardfolk.",
     "Do not make it cute.",
     "No other kobolds."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-KOBOLD.png"
+   ]
   },
   {
    "id": "ART-MON-LICH",
@@ -2104,7 +2023,7 @@
    "ref_set": "monster:undead",
    "title": "Lich",
    "prompt": "production/art/gpt/prompts/ART-MON-LICH.txt",
-   "prompt_sha256": "5493e2439b014d0a78f3947f2d9af627b0879cc877b97fea856bc6bea7f2d370",
+   "prompt_sha256": "4b573ba16577600860913489a43c6d9f0aad2dcf9ef5645ab7826f8a25c6a666",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -2119,8 +2038,7 @@
     "No phylactery visible (it is hidden).",
     "Not the Tomb Necromancer or Mummy.",
     "No glowing eyes."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-LICH.png"
+   ]
   },
   {
    "id": "ART-MON-LIZARDFOLK-HUNTER",
@@ -2144,8 +2062,7 @@
     "Not the Warrior (club): this has a harpoon.",
     "Not a fisherman or human.",
     "No armour."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-LIZARDFOLK-HUNTER.png"
+   ]
   },
   {
    "id": "ART-MON-LIZARDFOLK-SHAMAN",
@@ -2169,8 +2086,7 @@
     "Not the Warrior or Hunter.",
     "Not the Troglodyte Shaman (fungus).",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-LIZARDFOLK-SHAMAN.png"
+   ]
   },
   {
    "id": "ART-MON-LIZARDFOLK-WARRIOR",
@@ -2194,8 +2110,7 @@
     "Not the Troglodyte or Kobold.",
     "Not the Drakeblood hero.",
     "No bow or harpoon."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-LIZARDFOLK-WARRIOR.png"
+   ]
   },
   {
    "id": "ART-MON-MANTICORE",
@@ -2220,8 +2135,7 @@
    "avoid": [
     "Not a sphinx.",
     "No scorpion sting: the tail ends in a fan of iron barbs."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-MANTICORE.png"
+   ]
   },
   {
    "id": "ART-MON-MEDUSA",
@@ -2247,8 +2161,7 @@
     "No glowing eyes or beams: the gaze is shown by the stare and the stone head.",
     "No gore.",
     "No standing statues or other figures."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-MEDUSA.png"
+   ]
   },
   {
    "id": "ART-MON-MIASMA-SERPENT",
@@ -2272,8 +2185,7 @@
     "Not the Swamp Naga (no human face, not huge).",
     "Not the Giant Constrictor (not climbing).",
     "No wings."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-MIASMA-SERPENT.png"
+   ]
   },
   {
    "id": "ART-MON-MINOTAUR",
@@ -2297,8 +2209,7 @@
     "Not a Beastman: far larger.",
     "Do not give a shield.",
     "Do not draw a labyrinth map."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-MINOTAUR.png"
+   ]
   },
   {
    "id": "ART-MON-MIRE-TITAN",
@@ -2307,7 +2218,7 @@
    "ref_set": "monster:magical",
    "title": "Mire Titan",
    "prompt": "production/art/gpt/prompts/ART-MON-MIRE-TITAN.txt",
-   "prompt_sha256": "0058ef6027fed706d16d716dbc838e3ae89f80dac89d06622c1ead191ce00620",
+   "prompt_sha256": "b2d2cceadbacca59ae8aafaaf3e925ff2fe98e55ef7a4090df5add245b36ac5e",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -2322,8 +2233,7 @@
     "No geodes.",
     "Not a Hydra or Crocodile.",
     "Do not show a victim."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-MIRE-TITAN.png"
+   ]
   },
   {
    "id": "ART-MON-MUMMY",
@@ -2347,8 +2257,7 @@
     "Not the Skeleton Warrior.",
     "Not a Lich.",
     "Do not add a staff."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-MUMMY.png"
+   ]
   },
   {
    "id": "ART-MON-NIGHT-HAG",
@@ -2372,8 +2281,7 @@
     "Not the Swamp Hag: no bog, no reeds.",
     "Not the Banshee.",
     "No broom or pointed hat."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-NIGHT-HAG.png"
+   ]
   },
   {
    "id": "ART-MON-NOXCLOTH",
@@ -2382,7 +2290,7 @@
    "ref_set": "monster:vermin",
    "title": "Noxcloth",
    "prompt": "production/art/gpt/prompts/ART-MON-NOXCLOTH.txt",
-   "prompt_sha256": "4218df1babd260d9980d231960ca4e73ed14c58211b85d20095c11250c7750f6",
+   "prompt_sha256": "529d35e8a2f6d3f394bfd26afe18e62cf8c3bed7582c7da6b4cd705f88b00383",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -2398,8 +2306,7 @@
     "Not a cloak worn by a person.",
     "Do not draw a face.",
     "No ceiling, cave or victim."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-NOXCLOTH.png"
+   ]
   },
   {
    "id": "ART-MON-OGRE",
@@ -2423,8 +2330,7 @@
     "Not a troll: no claws or regeneration.",
     "Not a Forest Troll's lanky build.",
     "Not a Gloom Hulk."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-OGRE.png"
+   ]
   },
   {
    "id": "ART-MON-POSSESSED-CORPSE",
@@ -2448,8 +2354,7 @@
     "Not a Zombie of the Mire: no water, no bog plants.",
     "Not a Ghoul: stiff, lurching, not feral.",
     "No weapon."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-POSSESSED-CORPSE.png"
+   ]
   },
   {
    "id": "ART-MON-RATKIN-SCAVENGER",
@@ -2474,8 +2379,7 @@
     "Not the Ratkin Warrior (no spear or plate scraps).",
     "Not a literal rat.",
     "No other ratkin."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-RATKIN-SCAVENGER.png"
+   ]
   },
   {
    "id": "ART-MON-RATKIN-SEER",
@@ -2500,8 +2404,7 @@
     "Not the ancestry hero.",
     "No glow.",
     "No other ratkin."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-RATKIN-SEER.png"
+   ]
   },
   {
    "id": "ART-MON-RATKIN-WARRIOR",
@@ -2526,8 +2429,7 @@
     "Not the Ratkin Seer (no staff or charms).",
     "Not the ancestry hero.",
     "No other ratkin or shield-rank."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-RATKIN-WARRIOR.png"
+   ]
   },
   {
    "id": "ART-MON-SATYR-REVELER",
@@ -2551,8 +2453,7 @@
     "Not the Beastman: no claws, no hunch, no snarl.",
     "Not cute: sour and haggard.",
     "No carved-wood pipes."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SATYR-REVELER.png"
+   ]
   },
   {
    "id": "ART-MON-SHAMBLING-MOUND",
@@ -2576,8 +2477,7 @@
     "Not a Briarling or Dryad (no bark skin).",
     "Not a Treant.",
     "No flowers or beauty."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SHAMBLING-MOUND.png"
+   ]
   },
   {
    "id": "ART-MON-SKELETAL-BEAST",
@@ -2601,8 +2501,7 @@
     "Not a living lion.",
     "Not the Corpsehound.",
     "No wings or flame."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SKELETAL-BEAST.png"
+   ]
   },
   {
    "id": "ART-MON-SKELETON-ARCHER",
@@ -2626,8 +2525,7 @@
     "Not the Skeleton Warrior: bow, no sword.",
     "Not the Undead Crossbowman.",
     "No lettering or legible hieroglyphs."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SKELETON-ARCHER.png"
+   ]
   },
   {
    "id": "ART-MON-SNOW-GOBLIN",
@@ -2636,7 +2534,7 @@
    "ref_set": "monster:humanoid",
    "title": "Snow Goblin",
    "prompt": "production/art/gpt/prompts/ART-MON-SNOW-GOBLIN.txt",
-   "prompt_sha256": "2c1f4ca4fb9f9b8220d4ad7542c983afe9ebc358559938bd51858aef30eaa5f0",
+   "prompt_sha256": "7a2a05a527a79b6654c8c07ecc70336897d3507c62068d4528e13c77da75552d",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -2651,8 +2549,7 @@
     "Not the Greenmark Goblin or Cave Goblin.",
     "Not a yeti.",
     "Do not make it cute."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SNOW-GOBLIN.png"
+   ]
   },
   {
    "id": "ART-MON-SPECTRE",
@@ -2661,7 +2558,7 @@
    "ref_set": "monster:undead",
    "title": "Spectre",
    "prompt": "production/art/gpt/prompts/ART-MON-SPECTRE.txt",
-   "prompt_sha256": "0403eccabf46d123bc1b8f0b33fa3fa19d08eabd896ecf704542020e8e9dbb4a",
+   "prompt_sha256": "bd469c49b43218cb2ed64d95cc1343b476d17e23d97955567aedc9774bb2f260",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -2676,8 +2573,7 @@
     "Not the Banshee (no wail, no hair) or Ice Wraith.",
     "No flames.",
     "Do not draw a classic sheet ghost."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SPECTRE.png"
+   ]
   },
   {
    "id": "ART-MON-STIRGE",
@@ -2703,8 +2599,7 @@
     "Not the Giant Bat (mammal).",
     "No more or fewer than six legs.",
     "Do not draw a human face."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-STIRGE.png"
+   ]
   },
   {
    "id": "ART-MON-STONE-SENTINEL",
@@ -2728,8 +2623,7 @@
     "Not the Iron Golem (no rivets or metal).",
     "Not the Gargoyle: no wings, no animal head.",
     "No face or eyes."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-STONE-SENTINEL.png"
+   ]
   },
   {
    "id": "ART-MON-SWAMP-GOBLIN",
@@ -2753,8 +2647,7 @@
     "Not the Greenmark Goblin (no sling, dry land) or Cave Goblin.",
     "Not the Bogling (frog mouth).",
     "No fire."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SWAMP-GOBLIN.png"
+   ]
   },
   {
    "id": "ART-MON-SWAMP-HAG",
@@ -2779,8 +2672,7 @@
     "Not the Banshee.",
     "No broom or hat.",
     "No hut, boat or punt."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SWAMP-HAG.png"
+   ]
   },
   {
    "id": "ART-MON-SWAMP-NAGA",
@@ -2805,8 +2697,7 @@
     "Not the Miasma Serpent.",
     "No arms.",
     "No column, pillar or stonework."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SWAMP-NAGA.png"
+   ]
   },
   {
    "id": "ART-MON-SWAMP-TROLL",
@@ -2830,8 +2721,7 @@
     "Not the Forest Troll (moss-slick, upright).",
     "Not the Ogre.",
     "No weapon."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SWAMP-TROLL.png"
+   ]
   },
   {
    "id": "ART-MON-THOUGHT-EATER",
@@ -2857,8 +2747,7 @@
     "Not the Vrymk or Elder Vrymk.",
     "No more than four face tentacles.",
     "No glow or beams."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-THOUGHT-EATER.png"
+   ]
   },
   {
    "id": "ART-MON-TOMB-GUARDIAN",
@@ -2883,8 +2772,7 @@
     "Not the Brass Golem.",
     "No face or eyes.",
     "No doorway or lintel."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-TOMB-GUARDIAN.png"
+   ]
   },
   {
    "id": "ART-MON-TOMB-NECROMANCER",
@@ -2908,8 +2796,7 @@
     "Not the Lich or Mummy.",
     "Not the Tomb Guardian.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-TOMB-NECROMANCER.png"
+   ]
   },
   {
    "id": "ART-MON-TROGLODYTE",
@@ -2933,8 +2820,7 @@
     "Not a Lizardfolk Warrior (no weapons or armour).",
     "Not a Kobold: bigger, crested.",
     "Do not draw a tail-stomping dinosaur."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-TROGLODYTE.png"
+   ]
   },
   {
    "id": "ART-MON-TROGLODYTE-SHAMAN",
@@ -2958,8 +2844,7 @@
     "Not the regular Troglodyte: robe of fungus, club, spells.",
     "Not the Lizardfolk Shaman.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-TROGLODYTE-SHAMAN.png"
+   ]
   },
   {
    "id": "ART-MON-TUNDRA-WOLF",
@@ -2984,8 +2869,7 @@
     "Do not make it a husky.",
     "No saddle.",
     "No other wolves."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-TUNDRA-WOLF.png"
+   ]
   },
   {
    "id": "ART-MON-UNDEAD-CROSSBOWMAN",
@@ -3009,8 +2893,7 @@
     "No shield: unlike the Undead Warrior.",
     "Not a Skeleton Archer: crossbow, not bow.",
     "Not a Forsaken Archer: tattered common kit."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-UNDEAD-CROSSBOWMAN.png"
+   ]
   },
   {
    "id": "ART-MON-UNDEAD-SENTINEL",
@@ -3019,7 +2902,7 @@
    "ref_set": "monster:undead",
    "title": "Undead Sentinel",
    "prompt": "production/art/gpt/prompts/ART-MON-UNDEAD-SENTINEL.txt",
-   "prompt_sha256": "7c5f0acceae158a5185d4c2946e5b526444cddf9f5d67d7082f373db92da3c81",
+   "prompt_sha256": "8be4b80bd91d45057d89f9efa1d09a54ff446a5ff7dced4bdbf2193ba8f04810",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -3036,8 +2919,7 @@
     "No shield of any kind.",
     "Do not show it walking.",
     "No gateway, arch or other undead."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-UNDEAD-SENTINEL.png"
+   ]
   },
   {
    "id": "ART-MON-UNDEAD-WARRIOR",
@@ -3062,8 +2944,7 @@
     "Not frosty: that is the Frozen Skeleton.",
     "Not ornate: that is the White Court Guard.",
     "No other undead in a rank."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-UNDEAD-WARRIOR.png"
+   ]
   },
   {
    "id": "ART-MON-VAULT-OOZE",
@@ -3089,8 +2970,7 @@
     "No corridor or room around it.",
     "Not the Gloomspore Jelly: that is a mound.",
     "Do not draw a face."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-VAULT-OOZE.png"
+   ]
   },
   {
    "id": "ART-MON-VAULTFANG",
@@ -3116,8 +2996,7 @@
     "Not a bat or spider.",
     "Do not draw legs or a face.",
     "No obvious monster features: at first glance it reads as stone."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-VAULTFANG.png"
+   ]
   },
   {
    "id": "ART-MON-VRYMK",
@@ -3143,8 +3022,7 @@
     "Not the Thought-Eater (no robe, no octopus head) or Elder Vrymk (smaller).",
     "Not an octopus underwater.",
     "No straight or duck-like beak."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-VRYMK.png"
+   ]
   },
   {
    "id": "ART-MON-WEREBEAR",
@@ -3153,7 +3031,7 @@
    "ref_set": "monster:humanoid",
    "title": "Werebear",
    "prompt": "production/art/gpt/prompts/ART-MON-WEREBEAR.txt",
-   "prompt_sha256": "2c6e51dd47482386785fb8455a78a7469bd12050b07b9cc6ba5de99a6f45cfdc",
+   "prompt_sha256": "cc24d20d921afcb44697f6ccc761e3535688b1078af369633ce827eaa76deb22",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -3170,8 +3048,7 @@
     "Not the Dire Bear or Gorebeak (pure animals).",
     "Not the Werewolf (wolf-headed).",
     "Never reared up on its hind legs (the Dire Bear rears)."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-WEREBEAR.png"
+   ]
   },
   {
    "id": "ART-MON-WERERAT",
@@ -3180,7 +3057,7 @@
    "ref_set": "monster:humanoid",
    "title": "Wererat",
    "prompt": "production/art/gpt/prompts/ART-MON-WERERAT.txt",
-   "prompt_sha256": "59542fb9f53f2662c66264ad24b2b9c8e5cc0b46aa7e7660f67ac3bbc7f2cd11",
+   "prompt_sha256": "61973cc8a7b9d52d20c30e58ec0853ab60807aa0ab5c292e5a579906f943c420",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -3195,8 +3072,7 @@
     "Not the Ratkin ancestry hero.",
     "Not the Ratkin Scavenger or Warrior.",
     "Do not draw it as a real rat only."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-WERERAT.png"
+   ]
   },
   {
    "id": "ART-MON-WEREWOLF",
@@ -3220,8 +3096,7 @@
     "Not the Dire Wolf: this walks upright.",
     "Do not show wounds.",
     "Not the Werebear or Wererat."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-WEREWOLF.png"
+   ]
   },
   {
    "id": "ART-MON-WHITE-COURT-ARCHER",
@@ -3245,8 +3120,7 @@
     "Not the Forsaken Archer (Ashlands) or Skeleton Archer.",
     "Not a living elf.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-WHITE-COURT-ARCHER.png"
+   ]
   },
   {
    "id": "ART-MON-WHITE-COURT-EXECUTIONER",
@@ -3255,7 +3129,7 @@
    "ref_set": "monster:undead",
    "title": "White Court Executioner",
    "prompt": "production/art/gpt/prompts/ART-MON-WHITE-COURT-EXECUTIONER.txt",
-   "prompt_sha256": "047afc373f6028863c411a56c84766b1a0bfe09ce49e4a850a6653e6cc2ae203",
+   "prompt_sha256": "1a4384072d7bcbff04cd00a9602dc1a97143242777d9547b8290056ba3859fed",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -3270,8 +3144,7 @@
     "Not the Guard (no armour finery).",
     "Not the Frost Giant or Ogre.",
     "No visible face."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-WHITE-COURT-EXECUTIONER.png"
+   ]
   },
   {
    "id": "ART-MON-WHITE-COURT-GUARD",
@@ -3296,8 +3169,7 @@
     "Not the Undead Sentinel (rust, rubble, halberd).",
     "Not the Archer or Executioner.",
     "No polearm."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-WHITE-COURT-GUARD.png"
+   ]
   },
   {
    "id": "ART-MON-WHITE-COURT-SENTINEL",
@@ -3306,7 +3178,7 @@
    "ref_set": "monster:undead",
    "title": "White Court Sentinel",
    "prompt": "production/art/gpt/prompts/ART-MON-WHITE-COURT-SENTINEL.txt",
-   "prompt_sha256": "ce0a4b21f8c949899ab15f31799ce95eb5b082ea9850980ef3b02337c29e73a8",
+   "prompt_sha256": "edbb83e812f075218318e2a08478c2fac539268f6d4e5f5393ac1a8764c4a690",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -3319,10 +3191,9 @@
    "must": [],
    "avoid": [
     "No polearm; not the Guard's longsword and kite shield.",
-    "Not the Undead Sentinel (tower shield and halberd).",
+    "Not the Undead Sentinel (shieldless, with a halberd).",
     "Do not show it standing tall."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-WHITE-COURT-SENTINEL.png"
+   ]
   },
   {
    "id": "ART-MON-WHITE-DRAGON",
@@ -3331,7 +3202,7 @@
    "ref_set": "monster:magical",
    "title": "White Dragon",
    "prompt": "production/art/gpt/prompts/ART-MON-WHITE-DRAGON.txt",
-   "prompt_sha256": "7c2bc2123220f42e3d55d80eea89538e5ad063cd83d082c96d8b77d0d2f7724e",
+   "prompt_sha256": "afe4c481e147292ada495f97f859c963b8a6461aedb51efcec713fd80438ebae",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -3346,8 +3217,7 @@
     "No city, spire or courtiers.",
     "Not the Frost Wyvern (two legs).",
     "Not the Green or Black Dragon: crusted ice and broad snout."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-WHITE-DRAGON.png"
+   ]
   },
   {
    "id": "ART-MON-WILL-O-WISP",
@@ -3371,8 +3241,7 @@
     "No face or body.",
     "Not an Ember Skull.",
     "Not a real lantern."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-WILL-O-WISP.png"
+   ]
   },
   {
    "id": "ART-MON-WIND-ELEMENTAL",
@@ -3381,7 +3250,7 @@
    "ref_set": "monster:magical",
    "title": "Wind Elemental",
    "prompt": "production/art/gpt/prompts/ART-MON-WIND-ELEMENTAL.txt",
-   "prompt_sha256": "112deb6254d1cb1dce00189a938bf20600e8b336ccef43dc1ef1032484961e3a",
+   "prompt_sha256": "4fdac1f67711d0e8935350f67b50a27988945b0f5d2f8382240b93462cd805e1",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -3396,8 +3265,7 @@
     "Do not draw a humanoid body.",
     "Not the Fire Elemental or a tornado cartoon.",
     "No lightning."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-WIND-ELEMENTAL.png"
+   ]
   },
   {
    "id": "ART-MON-ZOMBIE",
@@ -3421,8 +3289,7 @@
     "Not the Possessed Corpse (dry, vapour-wrapped).",
     "Not the Ghoul.",
     "No weapon."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-ZOMBIE.png"
+   ]
   },
   {
    "id": "ART-CLA-ASSASSIN",
@@ -3448,8 +3315,7 @@
     "No cape-flourish pose.",
     "No glowing poison.",
     "No pillar or wall."
-   ],
-   "save_as": "assets/art/incoming/ART-CLA-ASSASSIN.png"
+   ]
   },
   {
    "id": "ART-CLA-BERSERKER",
@@ -3474,8 +3340,7 @@
     "No gore.",
     "Not a monster: still human proportions.",
     "Do not make it a shield user."
-   ],
-   "save_as": "assets/art/incoming/ART-CLA-BERSERKER.png"
+   ]
   },
   {
    "id": "ART-CLA-CLERIC",
@@ -3500,8 +3365,7 @@
     "No glowing hands or halo.",
     "No book as primary prop.",
     "No shrine, altar, candles or masonry."
-   ],
-   "save_as": "assets/art/incoming/ART-CLA-CLERIC.png"
+   ]
   },
   {
    "id": "ART-CLA-DRUID",
@@ -3525,8 +3389,7 @@
     "Not the Tier 3 tradition image: no bark skin or antlers.",
     "No animal companion beyond the crow.",
     "No glowing magic."
-   ],
-   "save_as": "assets/art/incoming/ART-CLA-DRUID.png"
+   ]
   },
   {
    "id": "ART-CLA-PALADIN",
@@ -3551,8 +3414,7 @@
     "No glowing sword or wings.",
     "No full plate.",
     "No doorway, arch or chapel."
-   ],
-   "save_as": "assets/art/incoming/ART-CLA-PALADIN.png"
+   ]
   },
   {
    "id": "ART-CLA-PSION",
@@ -3576,8 +3438,7 @@
     "No glowing eyes or auras.",
     "Not the Wizard: no staff, no books.",
     "Do not draw telekinetic arcs or lines; just suspended knives."
-   ],
-   "save_as": "assets/art/incoming/ART-CLA-PSION.png"
+   ]
   },
   {
    "id": "ART-CLA-ROGUE",
@@ -3602,8 +3463,7 @@
     "No mask clichés.",
     "Do not show the rapier drawn.",
     "No door or corridor."
-   ],
-   "save_as": "assets/art/incoming/ART-CLA-ROGUE.png"
+   ]
   },
   {
    "id": "ART-CLA-SORCERER",
@@ -3627,8 +3487,7 @@
     "Not the Wizard: no scrolls, no magnifier, no staff pose.",
     "No glowing aura.",
     "No gore."
-   ],
-   "save_as": "assets/art/incoming/ART-CLA-SORCERER.png"
+   ]
   },
   {
    "id": "ART-CLA-TRICKSTER",
@@ -3637,7 +3496,7 @@
    "ref_set": "person",
    "title": "Trickster",
    "prompt": "production/art/gpt/prompts/ART-CLA-TRICKSTER.txt",
-   "prompt_sha256": "5802f97e1f8ff363f378b09baed9f051d3058665d55ea7476294a90778d7d89a",
+   "prompt_sha256": "8d2709e80274c2479ff12be1ad8cd1e28e2b563ffe5b71984ab33e7b50661a9b",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
@@ -3650,10 +3509,9 @@
    "must": [],
    "avoid": [
     "Not the Rogue: no lockpicking, no crouch.",
-    "Do not draw two solid figures: the double must be pale line only.",
+    "Do not draw two solid figures: the double must be a thin broken black outline only.",
     "No jester costume or mask."
-   ],
-   "save_as": "assets/art/incoming/ART-CLA-TRICKSTER.png"
+   ]
   },
   {
    "id": "ART-CLA-WIZARD",
@@ -3677,8 +3535,7 @@
     "Not the Sorcerer or Psion: no spell effects or levitation.",
     "No pointy star-covered hat.",
     "No glowing orbs."
-   ],
-   "save_as": "assets/art/incoming/ART-CLA-WIZARD.png"
+   ]
   },
   {
    "id": "ART-ANC-DEEP-ELF",
@@ -3702,8 +3559,7 @@
     "Not the Deep Elf Warrior or Priest monster: no ornate court armour, no hand crossbow, no quarterstaff.",
     "Not a light-cloaked surface Elf: keep dark gear and hood.",
     "No spider imagery."
-   ],
-   "save_as": "assets/art/incoming/ART-ANC-DEEP-ELF.png"
+   ]
   },
   {
    "id": "ART-ANC-DEMONBORN",
@@ -3729,8 +3585,7 @@
     "Do not give it a weapon raised or demonic pose.",
     "Not an Imp or Demon monster.",
     "No door, house or other scenery."
-   ],
-   "save_as": "assets/art/incoming/ART-ANC-DEMONBORN.png"
+   ]
   },
   {
    "id": "ART-ANC-DRAKEBLOOD",
@@ -3755,8 +3610,7 @@
     "No wings or full dragon head: person with draconic traits.",
     "Do not copy the Demonborn's horns-plus-tail look: use ridge horns and scales.",
     "Not a Lizardfolk monster."
-   ],
-   "save_as": "assets/art/incoming/ART-ANC-DRAKEBLOOD.png"
+   ]
   },
   {
    "id": "ART-ANC-ELF",
@@ -3781,8 +3635,7 @@
     "Do not pose it drawing the bow: it is at ease.",
     "No glowing or magical effects.",
     "No heavy armour."
-   ],
-   "save_as": "assets/art/incoming/ART-ANC-ELF.png"
+   ]
   },
   {
    "id": "ART-ANC-GNOME",
@@ -3806,8 +3659,7 @@
     "Do not turn it into a steampunk robot or give it huge goggles beyond one lens.",
     "Do not duplicate the Halfling's sling and cloak silhouette.",
     "Not toy-like: grounded proportions."
-   ],
-   "save_as": "assets/art/incoming/ART-ANC-GNOME.png"
+   ]
   },
   {
    "id": "ART-ANC-GOBLIN",
@@ -3831,8 +3683,7 @@
     "Not the Goblin monster: no notched blade, no sling of river stones, no mob, no crude trophies.",
     "No hunched malicious snarl.",
     "No rags: clean, repaired clothing."
-   ],
-   "save_as": "assets/art/incoming/ART-ANC-GOBLIN.png"
+   ]
   },
   {
    "id": "ART-ANC-HALFLING",
@@ -3859,8 +3710,7 @@
     "No pointed ears (that is Elf/Gnome territory).",
     "No wall, building or other figure.",
     "No sword: its kit is sling, pack and pot."
-   ],
-   "save_as": "assets/art/incoming/ART-ANC-HALFLING.png"
+   ]
   },
   {
    "id": "ART-ANC-HUMAN",
@@ -3884,8 +3734,7 @@
     "No exotic features: the Human must look unmarked beside the other ancestries.",
     "No armour plate or heroic pose: this is a traveller, not a Fighter.",
     "Do not copy the Elf's long cloak or the Halfling's hood."
-   ],
-   "save_as": "assets/art/incoming/ART-ANC-HUMAN.png"
+   ]
   },
   {
    "id": "ART-ANC-ORC",
@@ -3909,8 +3758,7 @@
     "Not the Orc monster: no snarl, no trophies, no cleaver, no shield wall.",
     "No ragged furs.",
     "Do not put the axe in a swinging pose."
-   ],
-   "save_as": "assets/art/incoming/ART-ANC-ORC.png"
+   ]
   },
   {
    "id": "ART-ANC-RATKIN",
@@ -3934,8 +3782,7 @@
     "Do not make it a plague-ridden scavenger or a monster Ratkin Warrior or Scavenger.",
     "No weapons raised: this is an alert hero, not an attack.",
     "Do not draw it as a literal rat: upright, humanoid, clothed."
-   ],
-   "save_as": "assets/art/incoming/ART-ANC-RATKIN.png"
+   ]
   },
   {
    "id": "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
@@ -3960,8 +3807,7 @@
     "Not the Antlered Warden's bone-antler humanoid.",
     "No faces that look cartoon-friendly.",
     "No humans or party."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-AVATAR-OF-THE-OLD-GROWTH.png"
+   ]
   },
   {
    "id": "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
@@ -3988,8 +3834,7 @@
     "No gendered features.",
     "Not a combat scene with living heroes.",
     "Do not draw an actual skull face; solid black visor slit."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN.png"
+   ]
   },
   {
    "id": "ART-MON-KHORRUN-THE-DRACOLICH",
@@ -4014,8 +3859,7 @@
     "No readable ledger text.",
     "No glow effects.",
     "Not a living dragon."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-KHORRUN-THE-DRACOLICH.png"
+   ]
   },
   {
    "id": "ART-MON-MAELTHORN-THE-VERDANT",
@@ -4040,8 +3884,7 @@
     "No heroes fighting.",
     "No gradient fog: line-drawn only.",
     "Not a cartoon dragon."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-MAELTHORN-THE-VERDANT.png"
+   ]
   },
   {
    "id": "ART-MON-SIRRACH-THE-BLACK",
@@ -4066,8 +3909,7 @@
     "No glow.",
     "Do not show people being withered.",
     "Not water: the rippling stone reads as ink lines."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-SIRRACH-THE-BLACK.png"
+   ]
   },
   {
    "id": "ART-MON-THE-ANCIENT-VOID-DRAGON",
@@ -4076,7 +3918,7 @@
    "ref_set": "boss",
    "title": "The Ancient Void Dragon",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-ANCIENT-VOID-DRAGON.txt",
-   "prompt_sha256": "24639150aae343ebd49638757a339826a3eb67097a32f83a4c40114bc8dfc711",
+   "prompt_sha256": "d0ba863f39267c5580f874f321489a753d5f3786e1241ea2525286b6f5d95861",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -4091,9 +3933,8 @@
     "Not a normal rendered dragon with scales; absence is the subject.",
     "Not the Dracolich (bones) or Visath (ice).",
     "No glow or lens flare.",
-    "No figures except at most one tiny tower."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-THE-ANCIENT-VOID-DRAGON.png"
+    "No figures; at most one tiny broken tower."
+   ]
   },
   {
    "id": "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
@@ -4102,7 +3943,7 @@
    "ref_set": "boss",
    "title": "The Antlered Warden of the Tithe",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE.txt",
-   "prompt_sha256": "944da68e761ef7db5d2dc1e49cf38bb26d72808fba46348d394531175ef593ee",
+   "prompt_sha256": "ae1ceedfb1e1fcdd9d06452855c1fe68035760283995e161ea867b2efea39670",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -4120,8 +3961,7 @@
     "Not a friendly forest spirit.",
     "No gore.",
     "No stone gate or stone wall."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE.png"
+   ]
   },
   {
    "id": "ART-MON-THE-BROODMOTHER-PRIME",
@@ -4146,8 +3986,7 @@
     "No gore; cocoons are wrapped shapes.",
     "Not a cartoon spider.",
     "No glowing eyes."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-THE-BROODMOTHER-PRIME.png"
+   ]
   },
   {
    "id": "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
@@ -4172,8 +4011,7 @@
     "No gore.",
     "No readable verdict text.",
     "Do not depict the White Court escort in detail."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-THE-FROST-BAILIFF-MAGISTRATE.png"
+   ]
   },
   {
    "id": "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
@@ -4182,7 +4020,7 @@
    "ref_set": "boss",
    "title": "The Hollow Crown of the Ashlands",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS.txt",
-   "prompt_sha256": "bef224bade1e5ead0fc59709897c8ba2205dae37d74cda47e351321c244ca58a",
+   "prompt_sha256": "dc0d1f11260c6cf632278ab5e00975c51e5906f44a98b091af49c055d6ea1fcf",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -4197,9 +4035,8 @@
     "Do not show a face inside the robe; it is empty.",
     "Not the Ashlands climate street or Captain Veyr's company.",
     "No readable inscriptions.",
-    "No combat scene: the legionaries stand as one disciplined mass."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS.png"
+    "No combat scene: the kneeling legionaries form one disciplined mass."
+   ]
   },
   {
    "id": "ART-MON-THE-LAST-COLOSSUS",
@@ -4208,7 +4045,7 @@
    "ref_set": "boss",
    "title": "The Last Colossus",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-LAST-COLOSSUS.txt",
-   "prompt_sha256": "003b5cc5e6c77e54408fdf96cba4a6c08bb03829c543c45816d76f99d76345d3",
+   "prompt_sha256": "4b1dab7ec5e198c513f2391f9f86730f4dae51dd815cf5a9b2f04ecbb1925b7b",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -4226,8 +4063,7 @@
     "Not a cartoon robot or mecha.",
     "No glowing eyes.",
     "Not skyscraper-sized."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-THE-LAST-COLOSSUS.png"
+   ]
   },
   {
    "id": "ART-MON-THE-SUN-CROWNED-PRINCE",
@@ -4236,7 +4072,7 @@
    "ref_set": "boss",
    "title": "The Sun-Crowned Prince",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-SUN-CROWNED-PRINCE.txt",
-   "prompt_sha256": "959b4c54ad2a27e5ebc286a57047ee24961ad8fd54ff768f241d030e451a5594",
+   "prompt_sha256": "f2774559ecc074d73f69d4079feee9f038914210abf6142330a0a27c6c0b7bc7",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -4252,8 +4088,7 @@
     "No readable hieroglyphs.",
     "No cartoonish face.",
     "Do not show a living prince."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-THE-SUN-CROWNED-PRINCE.png"
+   ]
   },
   {
    "id": "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
@@ -4278,8 +4113,7 @@
     "No gory or monstrous detail on the figure.",
     "Do not show open mouth gore.",
     "No faces readable, shadow only."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-THE-VOICE-BENEATH-THE-BELLS.png"
+   ]
   },
   {
    "id": "ART-MON-VISATH-THE-WHITE",
@@ -4304,8 +4138,7 @@
     "No gore: the victims are frozen shapes.",
     "No glow or aurora.",
     "No heroes."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-VISATH-THE-WHITE.png"
+   ]
   },
   {
    "id": "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
@@ -4314,7 +4147,7 @@
    "ref_set": "boss",
    "title": "Vossegar of the Flooded Cathedral",
    "prompt": "production/art/gpt/prompts/ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL.txt",
-   "prompt_sha256": "d61de1d649d01362753bf513cead3cb6b54290bdf39c725a767acce9f2afa146",
+   "prompt_sha256": "b537881bf1e509e221377a2910009985077fea25fa472aaf88006b81c4251235",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -4330,8 +4163,7 @@
     "No heroes.",
     "No glow on the acid: lines only.",
     "Not a swamp exterior."
-   ],
-   "save_as": "assets/art/incoming/ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL.png"
+   ]
   },
   {
    "id": "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
@@ -4356,8 +4188,7 @@
     "Not a bandit roadblock and not two parties facing across a valley.",
     "No readable seal on satchel.",
     "Do not detail the wolves: no portraits."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
@@ -4366,7 +4197,7 @@
    "ref_set": "scenario",
    "title": "Scenario 1: Hunt the Wild Beast",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST.txt",
-   "prompt_sha256": "9808ad9f357a10f7a69fbe2e63750753d84121919ef555f164584464486d5320",
+   "prompt_sha256": "2346e424e7f234ac06da33c4e5b1f62b493f24ad5d7e02c08f847c3700962240",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
@@ -4379,11 +4210,10 @@
    "must": [],
    "avoid": [
     "Do not portray the boar: a barely seen shape only, no tusks in close-up.",
-    "No carcass and no giant forest Avatar.",
+    "No boar carcass and no giant forest Avatar.",
     "Not the Bandit's Toll (this is a camp, not a trail barricade).",
     "No gore on the camp."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
@@ -4408,8 +4238,7 @@
     "No gore and no moving citizens: they are static.",
     "No readable seals.",
     "Do not show an explicit dimension."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
@@ -4434,8 +4263,7 @@
     "Do not detail the Lurker: a faint shape only.",
     "No glow rays.",
     "No lettering."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
@@ -4460,8 +4288,7 @@
     "No readable star charts.",
     "Do not detail the Sentinel: small and indistinct.",
     "No glow rays from the lens."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS",
@@ -4486,8 +4313,7 @@
     "No violence.",
     "No camels.",
     "No readable flags."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT",
@@ -4512,8 +4338,7 @@
     "Do not show Edrava's Shade or the reliquary.",
     "No readable carvings.",
     "Not a stone castle; a flooded burial mound."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA",
@@ -4538,8 +4363,7 @@
     "Do not show the whole Golem: small and partial only.",
     "No readable labels.",
     "No explosion or glow."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING",
@@ -4564,8 +4388,7 @@
     "Do not detail the Stalkers: tiny and indistinct.",
     "No numbers or map writing.",
     "No explicit measurement of gaps."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-2-THE-CHASM-CROSSING.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE",
@@ -4590,8 +4413,7 @@
     "No Flame Guardians visible.",
     "No glow.",
     "No readable binding text."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST",
@@ -4616,8 +4438,7 @@
     "Not the Iron-Vein Vault interior or the Reliquary nave.",
     "No legible prayers.",
     "Not a combat scene."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER",
@@ -4626,7 +4447,7 @@
    "ref_set": "scenario",
    "title": "Scenario 2: The Lizardfolk's Stolen Offerings",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER.txt",
-   "prompt_sha256": "38b034291231ac9e3ac7e3108b7f08fc37a78b308f560d1ab7b9d34c62d95e14",
+   "prompt_sha256": "61fa17938dce0377bfca666b362013263c264fb838989fa6673ab2db99abb1c4",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
@@ -4644,8 +4465,7 @@
     "No glow around the amulet (absent).",
     "No troglodytes: only Mire creatures.",
     "No spear on the Scale-Shaman, and no feathers, fetishes or ornaments on its staff."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
@@ -4670,8 +4490,7 @@
     "Not the Greenmark climate image (this is a clearing at night with stones).",
     "Not Maelthorn's offering clearing.",
     "No glow rays; lights are paper-white points."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL",
@@ -4680,7 +4499,7 @@
    "ref_set": "scenario",
    "title": "Scenario 3: The Bandit's Toll",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL.txt",
-   "prompt_sha256": "a3934a112dabadd782ecc6e84760b7163ab87d57fd3530aee71900db6bc4a882",
+   "prompt_sha256": "ab22f62d8b9c54d19c9e0e93f50a594386eda9e136b2c8be28501f61daf7f3ef",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
@@ -4696,8 +4515,7 @@
     "No letters or numbers in the prices: marks only.",
     "No fighting in progress.",
     "Do not draw gore on boards (just dark marks)."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM",
@@ -4722,8 +4540,7 @@
     "No legible names.",
     "No cartoonish ghosts: the spirits are very faint.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN",
@@ -4748,8 +4565,7 @@
     "Not the Serpent's sinkhole or the Blighted Heartwood.",
     "No glow from geodes.",
     "No gore."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-3-THE-QUAKE",
@@ -4774,8 +4590,7 @@
     "Do not show the Guardian beyond faint hints in the wall.",
     "No gore.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-3-THE-QUAKE.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME",
@@ -4800,8 +4615,7 @@
     "No clocks or hourglasses.",
     "Not the Fallen Observatory.",
     "No creature."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS",
@@ -4826,8 +4640,7 @@
     "Not Khorrun's hoard.",
     "No readable hieroglyphs.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD",
@@ -4852,8 +4665,7 @@
     "No gore.",
     "No glowing pulse.",
     "Do not show the whole Treant: partial only."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE",
@@ -4878,8 +4690,7 @@
     "No cute toys or cartoon features on the automata.",
     "No readable notes.",
     "No humanoid robots."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR",
@@ -4904,8 +4715,7 @@
     "Not Oasis Raiders.",
     "No glow.",
     "No gore."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE",
@@ -4932,8 +4742,7 @@
     "No creature shape in the book pile.",
     "No readable writing on tablets or scrolls.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE",
@@ -4942,7 +4751,7 @@
    "ref_set": "scenario",
    "title": "Scenario 4: The Spider's Silk Route",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE.txt",
-   "prompt_sha256": "e902a20dd36748dbc2ca048a8b632865dfb1663d74c82cc3042ef1eb5407b93f",
+   "prompt_sha256": "bb32ef4b445eb67dd0e9a01c4c3105ee174c84e98af0608bc4932791c474c6b9",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
@@ -4958,8 +4767,7 @@
     "No large or whole spiders: small and partial only.",
     "No human cocoons or gore.",
     "Do not draw the Broodmother in full."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID",
@@ -4968,7 +4776,7 @@
    "ref_set": "scenario",
    "title": "Scenario 4: The Undermarches Outpost Raid",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID.txt",
-   "prompt_sha256": "edb0322da460d6ad1babb017ae702b55788b9ef27017b4f945d79d4b0e3d7412",
+   "prompt_sha256": "a651ab7d08fc8449448985347e02913acd20c08c7ce877089995ec47764d5f63",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
@@ -4980,12 +4788,11 @@
    "size_class": "",
    "must": [],
    "avoid": [
-    "Do not specify the faction (deep elf or dwarf randomly).",
+    "Do not specify any faction: sentries are dark silhouettes only.",
     "Not the stronghold Undercroft or hidden passage.",
     "No readable banners.",
     "No fight in progress."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING",
@@ -5010,8 +4817,7 @@
     "Do not portray Salttide: small only.",
     "No readable markings.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY",
@@ -5038,8 +4844,7 @@
     "No readable seals or documents.",
     "No violence against the emissary.",
     "Not an adventurer: the emissary is a courier or diplomat."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA",
@@ -5064,8 +4869,7 @@
     "No glow.",
     "No large skeletons: tiny only.",
     "No inscription."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD",
@@ -5090,8 +4894,7 @@
     "Do not show the whole wyrm: only part of it is glimpsed.",
     "No gore on the victim.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT",
@@ -5116,8 +4919,7 @@
     "Not the Stronghold Chapel or Hollow Crown hall.",
     "No readable inscriptions.",
     "No glow around relics."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE",
@@ -5142,8 +4944,7 @@
     "Do not show the Shade beyond a hint.",
     "No gradient shadows: graphic solid shapes only.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH",
@@ -5168,8 +4969,7 @@
     "No combat, no fire.",
     "Not the Whispering Grove stones.",
     "No faces rendered cutely."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR",
@@ -5194,8 +4994,7 @@
     "Do not detail the Cinder Lord: a silhouette in flames only.",
     "No glow.",
     "No readable glyphs."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT",
@@ -5220,8 +5019,7 @@
     "Not the Haunted Mausoleum.",
     "No glow rays.",
     "No readable banners."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
@@ -5246,8 +5044,7 @@
     "Not the Guardian's Test gate.",
     "No readable glyphs.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
@@ -5256,7 +5053,7 @@
    "ref_set": "scenario",
    "title": "Scenario 6: The Ritual of Shadow Binding",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING.txt",
-   "prompt_sha256": "931bba4d3ecd524485fc26d8f8b537783ec4297f330a59c389973b2028f51a9f",
+   "prompt_sha256": "dac6c04cb0405bf5623296be0abe36d8a09234e39a7b3ded5b2ee0cd420c0d68",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
@@ -5272,8 +5069,7 @@
     "Do not show the bound thing.",
     "No readable sigils.",
     "No glow."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING.png"
+   ]
   },
   {
    "id": "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
@@ -5298,8 +5094,7 @@
     "Not the Mire climate walkways or Vossegar's cathedral.",
     "No glow.",
     "No gore."
-   ],
-   "save_as": "assets/art/incoming/ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD.png"
+   ]
   },
   {
    "id": "ART-WOR-1-2-THE-GRIM-WORLD",
@@ -5324,8 +5119,7 @@
     "Do not show violence against the family.",
     "No readable heraldry on banners.",
     "Not an abandoned monster-held village street."
-   ],
-   "save_as": "assets/art/incoming/ART-WOR-1-2-THE-GRIM-WORLD.png"
+   ]
   },
   {
    "id": "ART-WOR-1-3-1-THE-FALL",
@@ -5349,8 +5143,7 @@
     "Not the Cursed Colossus of the Waste (that is in sand, a priest-king).",
     "No inscription on the plinth.",
     "Do not suggest the cause of the Fall (no fire, no sky tear)."
-   ],
-   "save_as": "assets/art/incoming/ART-WOR-1-3-1-THE-FALL.png"
+   ]
   },
   {
    "id": "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
@@ -5375,8 +5168,7 @@
     "No dragons or creatures.",
     "No map lettering.",
     "No hard compass-rose graphic."
-   ],
-   "save_as": "assets/art/incoming/ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN.png"
+   ]
   },
   {
    "id": "ART-WOR-1-3-3-THE-SIX-BASTIONS",
@@ -5401,8 +5193,7 @@
     "No monsters at the gate.",
     "Do not depict violence against the refugees.",
     "Not a postern-gate departure scene."
-   ],
-   "save_as": "assets/art/incoming/ART-WOR-1-3-3-THE-SIX-BASTIONS.png"
+   ]
   },
   {
    "id": "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS",
@@ -5427,8 +5218,7 @@
     "Do not depict magic effects or glow.",
     "Not the Treasure Tables still life (these are tools, not coin).",
     "Do not label which tradition is which."
-   ],
-   "save_as": "assets/art/incoming/ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS.png"
+   ]
   },
   {
    "id": "ART-WOR-1-3-5-MONSTROUS-THREATS",
@@ -5437,7 +5227,7 @@
    "ref_set": "world",
    "title": "1.3.5 Monstrous Threats",
    "prompt": "production/art/gpt/prompts/ART-WOR-1-3-5-MONSTROUS-THREATS.txt",
-   "prompt_sha256": "11cb2b6af6e88940245072da63e2f1418afbcf709d7dcee61d5334bb8c8a1c4b",
+   "prompt_sha256": "83325b4fb5ccde2cbdb06caa2d73eebddb20a0ab4e92eb77bbe2a55999dcad30",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
@@ -5453,8 +5243,7 @@
     "No corpses.",
     "No readable device on the banner.",
     "Not a burnt farmstead of human conflict, and not a scenario battlefield."
-   ],
-   "save_as": "assets/art/incoming/ART-WOR-1-3-5-MONSTROUS-THREATS.png"
+   ]
   },
   {
    "id": "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
@@ -5479,8 +5268,7 @@
     "Not a Bastion portrait and not a mountain-pass vista.",
     "No readable text on the post.",
     "No monsters in sight."
-   ],
-   "save_as": "assets/art/incoming/ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD.png"
+   ]
   },
   {
    "id": "ART-WOR-1-3-7-LEGENDS-AND-ECHOES",
@@ -5505,8 +5293,7 @@
     "No gore, no skeletons.",
     "No named legend figures (Saint Cael, Ysolde Vane) depicted.",
     "Not the Haunted Mausoleum or crypt interiors."
-   ],
-   "save_as": "assets/art/incoming/ART-WOR-1-3-7-LEGENDS-AND-ECHOES.png"
+   ]
   },
   {
    "id": "ART-CAM-11-1-CAMPAIGN-OVERVIEW",
@@ -5531,8 +5318,7 @@
     "Not a noble castle.",
     "No monsters.",
     "No readable plans or text."
-   ],
-   "save_as": "assets/art/incoming/ART-CAM-11-1-CAMPAIGN-OVERVIEW.png"
+   ]
   },
   {
    "id": "ART-CAM-THE-APOTHECARY",
@@ -5557,8 +5343,7 @@
     "No gore on the table.",
     "No readable labels.",
     "Not a pretty potion-shop."
-   ],
-   "save_as": "assets/art/incoming/ART-CAM-THE-APOTHECARY.png"
+   ]
   },
   {
    "id": "ART-CAM-THE-ARCANUM",
@@ -5567,7 +5352,7 @@
    "ref_set": "campaign",
    "title": "The Arcanum",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-ARCANUM.txt",
-   "prompt_sha256": "ae1056e9ceffee41683172d714b958f65dcc67c76652ad6a303d77907cf54259",
+   "prompt_sha256": "702394aeb76042f46a1a361b4b17579aefc851af2917e1f5a42ba9eff942a555",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -5583,8 +5368,7 @@
     "Not a burned library.",
     "No glow rays.",
     "No figures."
-   ],
-   "save_as": "assets/art/incoming/ART-CAM-THE-ARCANUM.png"
+   ]
   },
   {
    "id": "ART-CAM-THE-BARRACKS",
@@ -5609,8 +5393,7 @@
     "No readable letters in the names: scratches only.",
     "No gore.",
     "Not a luxurious bedroom."
-   ],
-   "save_as": "assets/art/incoming/ART-CAM-THE-BARRACKS.png"
+   ]
   },
   {
    "id": "ART-CAM-THE-EXPEDITION-HALL",
@@ -5619,7 +5402,7 @@
    "ref_set": "campaign",
    "title": "The Expedition Hall",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-EXPEDITION-HALL.txt",
-   "prompt_sha256": "36c83d04dd089d4e9da4f266856d2619a662e2df94900348cfc4df43cdbd25cc",
+   "prompt_sha256": "50a1138a0c5da19b4170beccac1186472ef239a1839cc18ff5de4309ec8ee594",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -5632,11 +5415,10 @@
    "must": [],
    "avoid": [
     "Not Hearthhold's training ground on the wall.",
-    "No blood.",
+    "No visible blood or gore; mud only.",
     "Not the Barracks interior.",
     "Not heroic poses."
-   ],
-   "save_as": "assets/art/incoming/ART-CAM-THE-EXPEDITION-HALL.png"
+   ]
   },
   {
    "id": "ART-CAM-THE-OUTER-WALLS",
@@ -5645,7 +5427,7 @@
    "ref_set": "campaign",
    "title": "The Outer Walls",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-OUTER-WALLS.txt",
-   "prompt_sha256": "d80199a360b62ee763c032f11219dde762c9efa4f370c62d04ddef7e38e58f21",
+   "prompt_sha256": "6ed32379bc0a1789885634fbc3a12b5fa760a3db37af6ab98cc8f87b92fec969",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -5661,8 +5443,7 @@
     "No monsters visible.",
     "Not a grand castle wall.",
     "No glowing torch."
-   ],
-   "save_as": "assets/art/incoming/ART-CAM-THE-OUTER-WALLS.png"
+   ]
   },
   {
    "id": "ART-CAM-THE-STRONGHOLD-CHAPEL",
@@ -5688,8 +5469,7 @@
     "No glowing halo.",
     "Not ornate.",
     "No kneeling figure."
-   ],
-   "save_as": "assets/art/incoming/ART-CAM-THE-STRONGHOLD-CHAPEL.png"
+   ]
   },
   {
    "id": "ART-CAM-THE-UNDERCROFT",
@@ -5714,8 +5494,7 @@
     "Do not show the figure's face.",
     "No monsters.",
     "No readable marks."
-   ],
-   "save_as": "assets/art/incoming/ART-CAM-THE-UNDERCROFT.png"
+   ]
   },
   {
    "id": "ART-CAM-THE-VAULT",
@@ -5740,8 +5519,7 @@
     "No readable ledger text.",
     "No heaps of glittering treasure.",
     "Not a bank palace."
-   ],
-   "save_as": "assets/art/incoming/ART-CAM-THE-VAULT.png"
+   ]
   },
   {
    "id": "ART-CAM-THE-WAR-ROOM",
@@ -5766,8 +5544,7 @@
     "No readable text on maps.",
     "No figures needed.",
     "Not luxurious."
-   ],
-   "save_as": "assets/art/incoming/ART-CAM-THE-WAR-ROOM.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-1-DIVINE-PRAYERS-D20",
@@ -5791,8 +5568,7 @@
     "No halo or glow wash: light shown only with line and white space.",
     "No lettering on the lantern.",
     "No visible gore."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-1-DIVINE-PRAYERS-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
@@ -5817,8 +5593,7 @@
     "Do not show full transformation.",
     "No oversized or magical animals.",
     "No crow or other birds."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-1-DRUIDIC-RITUALS-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20",
@@ -5842,8 +5617,7 @@
     "No glowing aura.",
     "No lettering in the circle.",
     "Not the Psion class pose of hovering knives."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-1-SORCERIES-D20",
@@ -5852,7 +5626,7 @@
    "ref_set": "tradition",
    "title": "Tier 1 Sorceries (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-1-SORCERIES-D20.txt",
-   "prompt_sha256": "a469ce84a4b30d3c2e5e804ead7dbe481aabdbe050acfe9fb727f642b813b632",
+   "prompt_sha256": "b2997e385eabc0dfb8ac54af6d69906977c7a650e43c499a2d5f992b7c52f10c",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -5864,11 +5638,10 @@
    "size_class": "",
    "must": [],
    "avoid": [
-    "No gore pools or wound close-up detail.",
+    "No gore pools; the cut is a single fine line.",
     "No glowing wash.",
     "Do not show a face fully."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-1-SORCERIES-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
@@ -5877,7 +5650,7 @@
    "ref_set": "tradition",
    "title": "Tier 2 Arcane Spells (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-2-ARCANE-SPELLS-D20.txt",
-   "prompt_sha256": "9768fe1417ee2a2411ce20f90f860db19cfa22dc0814f1e28d77006d423d5e15",
+   "prompt_sha256": "cb6ee576b8587d55109f8dbcb1d9cf5521a351d0475b5aa4de926a2bcbe7a018",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -5892,8 +5665,7 @@
     "No lettering on tome pages or scrolls: marks only as abstract scribble.",
     "No bookshelves, library hall or burning building.",
     "No large explosion: the flame stays small."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-2-ARCANE-SPELLS-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-2-DIVINE-PRAYERS-D20",
@@ -5917,8 +5689,7 @@
     "No lettering on tome pages or scrolls: marks only as abstract scribble.",
     "No visible deity or angel.",
     "No kneeling figure."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-2-DIVINE-PRAYERS-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20",
@@ -5942,8 +5713,7 @@
     "Do not let the trees have faces.",
     "No glowing aura.",
     "Do not copy Tier 3's bark-skin."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-2-DRUIDIC-RITUALS-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20",
@@ -5967,8 +5737,7 @@
     "No glow.",
     "No thick or glowing cracks: thin lines only.",
     "Do not draw other characters."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-2-SORCERIES-D20",
@@ -5992,8 +5761,7 @@
     "No glow wash.",
     "Not a Tier 3 consumed look: body intact.",
     "Do not copy Tier 1's palm close-up."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-2-SORCERIES-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
@@ -6017,8 +5785,7 @@
     "No lettering on tome pages or scrolls: marks only as abstract scribble.",
     "No gore or visible wounds on the corpses.",
     "Do not make the wizard heroic."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-3-ARCANE-SPELLS-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-3-DIVINE-PRAYERS-D20",
@@ -6042,8 +5809,7 @@
     "Do not resolve the cloud shape into a clear god or angel.",
     "No lettering or symbol.",
     "Do not make the priest triumphant."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-3-DIVINE-PRAYERS-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
@@ -6067,8 +5833,7 @@
     "Not a Treant monster: a person fusing, not a giant.",
     "No glowing eyes.",
     "Do not make the face monstrous."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-3-DRUIDIC-RITUALS-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20",
@@ -6092,8 +5857,7 @@
     "No glow or beams.",
     "No monsters: the enemies are ordinary soldiers.",
     "Do not use the Tier 1 pebble ring."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20.png"
+   ]
   },
   {
    "id": "ART-TRA-TIER-3-SORCERIES-D20",
@@ -6117,8 +5881,7 @@
     "No gore.",
     "No fleeing or large villagers: they stay small and praying.",
     "No glow wash."
-   ],
-   "save_as": "assets/art/incoming/ART-TRA-TIER-3-SORCERIES-D20.png"
+   ]
   },
   {
    "id": "ART-BAC-ALCHEMIST",
@@ -6127,7 +5890,7 @@
    "ref_set": "background",
    "title": "Alchemist",
    "prompt": "production/art/gpt/prompts/ART-BAC-ALCHEMIST.txt",
-   "prompt_sha256": "7d1ea497b71ce13c7611ccfe50505993e126e4dc7f5a679f0a95cfa41266feec",
+   "prompt_sha256": "d8d16b4a817ccc669fd6733f29efb7db6ff00150c0105df20ecd69afeedbd0b0",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
@@ -6142,8 +5905,7 @@
     "No figure or hands, and no lettering.",
     "No bubbling glow or smoke.",
     "No poison skull symbols."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-ALCHEMIST.png"
+   ]
   },
   {
    "id": "ART-BAC-APPRENTICE",
@@ -6152,7 +5914,7 @@
    "ref_set": "background",
    "title": "Apprentice",
    "prompt": "production/art/gpt/prompts/ART-BAC-APPRENTICE.txt",
-   "prompt_sha256": "686efca6cb78d921a7950fb13c3dca12d329c525dbd6a34d987fb930c4a5f83c",
+   "prompt_sha256": "d5dfcfe6ad3f5e902ebb805fbd5c1866e3c5c320f05a1f410c4cb8649e374f52",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
@@ -6167,8 +5929,7 @@
     "No figure or hands, and no lettering.",
     "No glow.",
     "Do not make it a full spell effect."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-APPRENTICE.png"
+   ]
   },
   {
    "id": "ART-BAC-ARTISAN",
@@ -6192,8 +5953,7 @@
     "No figure or hands, and no lettering.",
     "No forge fire glow.",
     "Do not make it a full armoury."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-ARTISAN.png"
+   ]
   },
   {
    "id": "ART-BAC-BELIEVER",
@@ -6217,8 +5977,7 @@
     "No figure or hands, and no lettering.",
     "No halo glow beyond the lamp flame.",
     "No specific real-world religious symbols."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-BELIEVER.png"
+   ]
   },
   {
    "id": "ART-BAC-COURIER",
@@ -6242,8 +6001,7 @@
     "No figure or hands, and no lettering.",
     "No horse.",
     "Not identical in arrangement to the Scout still life: favour the satchel and boots."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-COURIER.png"
+   ]
   },
   {
    "id": "ART-BAC-CULTIST",
@@ -6267,8 +6025,7 @@
     "No figure or hands, and no lettering.",
     "No gore or blood pools.",
     "No skull pileup, no readable rune text."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-CULTIST.png"
+   ]
   },
   {
    "id": "ART-BAC-FARMER",
@@ -6292,8 +6049,7 @@
     "No figure or hands, and no lettering.",
     "No blood on the bandages.",
     "Not the Merchant's sickle with coin."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-FARMER.png"
+   ]
   },
   {
    "id": "ART-BAC-HERMIT",
@@ -6317,8 +6073,7 @@
     "No figure or hands, and no lettering.",
     "No companion animals.",
     "Do not add a hut interior full of clutter."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-HERMIT.png"
+   ]
   },
   {
    "id": "ART-BAC-MERCHANT",
@@ -6342,8 +6097,7 @@
     "No figure or hands, and no lettering.",
     "No ledger text.",
     "Not the Farmer's sickle arrangement."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-MERCHANT.png"
+   ]
   },
   {
    "id": "ART-BAC-NOBLE",
@@ -6367,8 +6121,7 @@
     "No figure or hands, and no lettering.",
     "No crown.",
     "No readable heraldry or text."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-NOBLE.png"
+   ]
   },
   {
    "id": "ART-BAC-NOMAD",
@@ -6392,8 +6145,7 @@
     "No figure or hands, and no lettering.",
     "No camels or horses.",
     "Do not make the sword ornate."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-NOMAD.png"
+   ]
   },
   {
    "id": "ART-BAC-PAUPER",
@@ -6417,8 +6169,7 @@
     "No figure or hands, and no lettering.",
     "No pity beggar poses.",
     "Do not add coins."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-PAUPER.png"
+   ]
   },
   {
    "id": "ART-BAC-PERFORMER",
@@ -6427,7 +6178,7 @@
    "ref_set": "background",
    "title": "Performer",
    "prompt": "production/art/gpt/prompts/ART-BAC-PERFORMER.txt",
-   "prompt_sha256": "6c8badaa90648e90b2a8d4caf12f3685aa75e4fb51ab246362db321b4dcf361f",
+   "prompt_sha256": "921633b066fe0b8d491016d5ca0df4e03eaeb66b83f71bfffdeb38fe7639c5ee",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
@@ -6442,8 +6193,7 @@
     "No figure or hands, and no lettering.",
     "No clown caricature.",
     "No printed expression text or letters on the mask."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-PERFORMER.png"
+   ]
   },
   {
    "id": "ART-BAC-SAILOR",
@@ -6467,8 +6217,7 @@
     "No figure or hands, and no lettering.",
     "No ships, no sea monster.",
     "Not a cutlass pirate cliche."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-SAILOR.png"
+   ]
   },
   {
    "id": "ART-BAC-SCHOLAR",
@@ -6492,8 +6241,7 @@
     "No figure or hands, and no lettering.",
     "No legible writing: marks must be scribbled lines.",
     "No spellcasting effects."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-SCHOLAR.png"
+   ]
   },
   {
    "id": "ART-BAC-SCOUT",
@@ -6517,8 +6265,7 @@
     "No figure or hands, and no lettering.",
     "Do not repeat the Courier's satchel and scroll tube.",
     "No animal in the picture."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-SCOUT.png"
+   ]
   },
   {
    "id": "ART-BAC-SHEPHERD",
@@ -6542,8 +6289,7 @@
     "No figure or hands, and no lettering.",
     "No sheep.",
     "Not identical to the Hermit's staff."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-SHEPHERD.png"
+   ]
   },
   {
    "id": "ART-BAC-SOLDIER",
@@ -6567,8 +6313,7 @@
     "No figure or hands, and no lettering.",
     "No banners with symbols.",
     "Not the Fighter class's kit."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-SOLDIER.png"
+   ]
   },
   {
    "id": "ART-BAC-VAGABOND",
@@ -6577,7 +6322,7 @@
    "ref_set": "background",
    "title": "Vagabond",
    "prompt": "production/art/gpt/prompts/ART-BAC-VAGABOND.txt",
-   "prompt_sha256": "9b1dbe9d48704b14df0690f15cad788d980c2825bb760b287ef3516a9464ecef",
+   "prompt_sha256": "314558c12e4f20341a0b1dd75ce74e06d632f44fed91e552e414d47dbc4856a1",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
@@ -6592,8 +6337,7 @@
     "No figure or hands, and no lettering.",
     "No signpost lettering.",
     "Do not duplicate Hermit/Pauper compositions."
-   ],
-   "save_as": "assets/art/incoming/ART-BAC-VAGABOND.png"
+   ]
   },
   {
    "id": "ART-ITE-7-6-TREASURE-TABLES",
@@ -6618,8 +6362,7 @@
     "No readable coin inscriptions.",
     "No glinting sparkle effects.",
     "No gore."
-   ],
-   "save_as": "assets/art/incoming/ART-ITE-7-6-TREASURE-TABLES.png"
+   ]
   },
   {
    "id": "ART-ITE-7-8-MELEE-WEAPONS",
@@ -6646,8 +6389,7 @@
     "No weapons beyond the six named, no swords of legend.",
     "No readable maker's marks.",
     "No gore or blood."
-   ],
-   "save_as": "assets/art/incoming/ART-ITE-7-8-MELEE-WEAPONS.png"
+   ]
   },
   {
    "id": "ART-CH01-002",
@@ -6672,8 +6414,7 @@
     "No large heroic party and no legible device on the banner.",
     "Do not include any monsters or dragons in the sky.",
     "No panorama of all six climates."
-   ],
-   "save_as": "assets/art/incoming/ART-CH01-002.png"
+   ]
   },
   {
    "id": "ART-CH02-002",
@@ -6698,8 +6439,7 @@
     "Do not detail the Monster: a silhouette only, not a portrait.",
     "Do not repeat the cover or a bridge melee: no rain, no shrine arch, no stone bridge.",
     "No gore."
-   ],
-   "save_as": "assets/art/incoming/ART-CH02-002.png"
+   ]
   },
   {
    "id": "ART-CH03-002",
@@ -6708,7 +6448,7 @@
    "ref_set": "chapter",
    "title": "ART-CH03-001",
    "prompt": "production/art/gpt/prompts/ART-CH03-002.txt",
-   "prompt_sha256": "12179907b2ca59ebf4fe7d574b2c22d10659b4169ecf720a4b8b35e1488011bf",
+   "prompt_sha256": "663307ba6af5ce84160a47f3f8086cfbafcd4494af2e77f70b4ea9b9aef626b5",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
@@ -6724,8 +6464,7 @@
     "No Bastion-scale bell tower: a rural chapel only.",
     "No glowing sun disk or rays.",
     "No monster in view."
-   ],
-   "save_as": "assets/art/incoming/ART-CH03-002.png"
+   ]
   },
   {
    "id": "ART-CH04-002",
@@ -6750,8 +6489,7 @@
     "No monsters.",
     "Do not depict dimensions or jump distances.",
     "No lettering on any stones."
-   ],
-   "save_as": "assets/art/incoming/ART-CH04-002.png"
+   ]
   },
   {
    "id": "ART-CH05-002",
@@ -6776,8 +6514,7 @@
     "No gore or dismemberment.",
     "No skeleton cartoons or named boss: the undead are soldiers.",
     "No lettering on shields."
-   ],
-   "save_as": "assets/art/incoming/ART-CH05-002.png"
+   ]
   },
   {
    "id": "ART-CH06-002",
@@ -6804,8 +6541,7 @@
     "Do not show readable text on the contract.",
     "No Greythorn-specific features.",
     "Not rats and not comic."
-   ],
-   "save_as": "assets/art/incoming/ART-CH06-002.png"
+   ]
   },
   {
    "id": "ART-CH07-002",
@@ -6814,7 +6550,7 @@
    "ref_set": "chapter",
    "title": "ART-CH07-001",
    "prompt": "production/art/gpt/prompts/ART-CH07-002.txt",
-   "prompt_sha256": "9d566964c1253464c7b879280994404b25c6ac6b9dd1600a4fcc5a46e5798580",
+   "prompt_sha256": "cc0c997255db6fb0e3c542990d8a6557467d6fa696e045d9eccb71cc521fc785",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
@@ -6830,8 +6566,7 @@
     "No fire glow effects, show fire with ink and blank paper.",
     "No readable maker's marks.",
     "Do not turn the Deepwarden bastion portrait into this - interior only."
-   ],
-   "save_as": "assets/art/incoming/ART-CH07-002.png"
+   ]
   },
   {
    "id": "ART-CH08-002",
@@ -6856,8 +6591,7 @@
     "Not the Fallen Observatory scenario (this is a library, not a dome).",
     "No colour or glow effects; line and solid black only.",
     "Do not show a specific spell mechanic."
-   ],
-   "save_as": "assets/art/incoming/ART-CH08-002.png"
+   ]
   },
   {
    "id": "ART-CH09-002",
@@ -6882,8 +6616,7 @@
     "No gore close-up; carcass drawn with restraint.",
     "No visible creatures in the treeline: only tiny eye dots.",
     "Not a trophy-pose heroic image."
-   ],
-   "save_as": "assets/art/incoming/ART-CH09-002.png"
+   ]
   },
   {
    "id": "ART-CH10-002",
@@ -6907,8 +6640,7 @@
     "No mountain-spine panorama and no mountain-pass vista.",
     "Do not letter the stone.",
     "No dragons and no detailed landscapes: the six stay small and simple."
-   ],
-   "save_as": "assets/art/incoming/ART-CH10-002.png"
+   ]
   },
   {
    "id": "ART-CH11-002",
@@ -6933,8 +6665,7 @@
     "No construction scene and no scaffolding.",
     "No monster in view.",
     "No glowing lantern rays."
-   ],
-   "save_as": "assets/art/incoming/ART-CH11-002.png"
+   ]
   },
   {
    "id": "ART-COVER-002",
@@ -6960,8 +6691,7 @@
     "Do not make the party large or heroic-posed; no sunburst or glow.",
     "Do not give the rival banner a heraldic device that reads as a symbol.",
     "No plate armour, longbow or staff on the four Heroes."
-   ],
-   "save_as": "assets/art/incoming/ART-COVER-002.png"
+   ]
   }
  ]
 }

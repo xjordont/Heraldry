@@ -13,7 +13,7 @@ Size: Huge: towering many times a human's size.
 
 SUBJECT DETAILS
 * Wyrm silhouette formed by blank paper bounded by thin broken contour lines
-* Stars as sparse ink points thinning and vanishing near its outline
+* Stars as small bare-paper specks in the black sky, thinning and vanishing near its outline
 * Spreading wings and a long coiling neck implied by what the stars are missing
 * Where the breath passes, the landscape is erased to bare white with abrupt edges
 * Barren crag, snapped watchtower and a dry riverbed below
@@ -33,7 +33,7 @@ Do not draw:
 * Not a normal rendered dragon with scales; absence is the subject.
 * Not the Dracolich (bones) or Visath (ice).
 * No glow or lens flare.
-* No figures except at most one tiny tower.
+* No figures; at most one tiny broken tower.
 Avoid photorealism, digital-render polish, clean vector-like line, uniform machine texture, stipple fields, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should be gritty and high-contrast and print crisply in pure black ink, with an organically fading white vignette, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES

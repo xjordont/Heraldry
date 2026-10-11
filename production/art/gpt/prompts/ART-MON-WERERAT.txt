@@ -8,7 +8,7 @@ A single subject drawn whole, isolated on blank ivory-white paper: only a small 
 Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
 
 COMPOSITION
-Low three-quarter view of the creature crouched and half-turned, rusted blade held low, preparing to skitter away.
+Low three-quarter view of the wererat caught mid-pounce, jaws wide, clawed hand with the rusted blade trailing behind.
 Single creature, full body, three-quarter view, in a characteristic menacing pose; a small human figure for scale only if the creature is Large or Huge. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.
 Size: Small: smaller than a human.
 
@@ -19,7 +19,7 @@ SUBJECT DETAILS
 * Rusted blade gripped in a clawed hand
 * Ragged clothes of sewer rags
 * A wet patch of undercroft flagstone under its feet
-* Small size: knee-high to a man at an angle
+* Small, about the size of a crouching child
 
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
