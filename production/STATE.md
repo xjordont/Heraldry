@@ -177,4 +177,10 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - The end-to-end tests no longer assume a 5-item queue.
 
   Batch opened: the tarantula moved from the anchor gate into the batch as a redo, `approve-anchors` set ANCHORS approved (Greythorn plus 4), and the batch queue was published with 270 items. New `production/art/codex/BATCH_CARD.md` (the one-page contract), a short `CODEX_PROMPT.md` (one go-ahead line; resumable), a slimmer `AGENTS.md`, and `art_intake.py pending` for compact review. Not yet shown: a real unattended Codex run of the batch, the ChatGPT plan's image limits, and the Windows test run.
+- **Per-image delivery** (owner, 2026-10-11: "do one image at a time then push it ... so we don't run into a block at the 5hr or weekly usage limits"). Interpreted as: deliver each image as soon as it passes Codex's checks. Claude's review stays asynchronous; waiting for Claude's approval of every image would stall the run. Changes:
+  - The queue now sets `push_every: 1` and `review_every: 10`.
+  - `status` says DELIVER after each save, and DRIFT REVIEW every 10th image, using the new `sheet --recent 10` and `style_audit.py --recent 10`.
+  - Tests cover the cadence.
+  - Fixed: the intake workflows downloaded every incoming LFS image on every run, which at one image per push would have used tens of GB of LFS bandwidth. `art_intake.py needs-pull` lists only pointers whose oid is not yet recorded, and scan skips recorded pointers (test added).
+  - BATCH_CARD and CODEX_PROMPT were updated, and the batch queue was republished (270 items).
 

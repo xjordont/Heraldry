@@ -37,11 +37,29 @@ def record(repo, item):
             'sha256':hashlib.sha256(src.read_bytes()).hexdigest(),
             'signature':d,'advisories':[]}
 
-def build(repo, limit=10):
+def recent_order(repo, q):
+    # queue IDs in receipt order, newest last: the drift window is the most recently made images
+    ids={it['id'] for it in q['items']};order=[]
+    f=repo/'production/art/gpt/RECEIPTS.jsonl'
+    for line in (f.read_text(encoding='utf-8').splitlines() if f.is_file() else []):
+        try:r=json.loads(line)
+        except ValueError:continue
+        i=r.get('id') if isinstance(r,dict) else None
+        if i in ids and not r.get('refused'):
+            if i in order:order.remove(i)
+            order.append(i)
+    return order
+
+def build(repo, limit=10, recent=0):
     repo=Path(repo).resolve()
     q=json.loads((repo/'production/art/gpt/QUEUE.json').read_text(encoding='utf-8'))
-    rows=[record(repo,it) for it in q['items']]
-    rows=[r for r in rows if r is not None][:limit]
+    items=q['items']
+    if recent:
+        by={it['id']:it for it in items}
+        items=[by[i] for i in recent_order(repo,q)]
+    rows=[record(repo,it) for it in items]
+    rows=[r for r in rows if r is not None]
+    rows=rows[-recent:] if recent else rows[:limit]
     groups={}
     for r in rows:
         groups.setdefault(r['register'],[]).append(r)
@@ -71,13 +89,14 @@ def main(argv=None):
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--repo',default='.')
     ap.add_argument('--limit',type=int,default=10)
+    ap.add_argument('--recent',type=int,default=0,help='the last N saved queue images (drift review window)')
     ap.add_argument('--out',required=True)
     args=ap.parse_args(argv)
     repo=Path(args.repo).resolve();out=Path(args.out).resolve()
     if args.limit<1 or out==repo or repo in out.parents:
         ap.error('positive --limit and an --out path outside the repository required')
     try:
-        report=build(repo,args.limit)
+        report=build(repo,args.limit,args.recent)
         out.parent.mkdir(parents=True,exist_ok=True)
         out.write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     except (ValueError,OSError,KeyError) as e:

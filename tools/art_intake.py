@@ -10,7 +10,7 @@
                      reviews the rest from the intake contact sheets)
 
 Only 'approved'/'anchor-approved' art is placed in the book (tools/build_book.py)."""
-import argparse, hashlib, json, sys
+import argparse, hashlib, json, re, sys
 from pathlib import Path
 from PIL import Image
 
@@ -34,6 +34,23 @@ def receipts():
     return out
 
 
+def pointer_oid(data):
+    m = re.search(rb"oid sha256:([0-9a-f]{64})", data[:300])
+    return m.group(1).decode() if m else None
+
+
+def needs_pull():
+    """Incoming images that are LFS pointers and not yet recorded with the same bytes. A pointer's oid is the
+    image's SHA-256, so the intake fetches only new images instead of the whole growing set every run."""
+    sels = g.load(g.SELECTIONS, {})
+    out = []
+    for f in sorted(INCOMING.glob("*.png")):
+        data = f.read_bytes()[:300]
+        if data[:7] == b"version" and (sels.get(f.stem) or {}).get("master", {}).get("sha256") != pointer_oid(data):
+            out.append(f.relative_to(ROOT).as_posix())
+    return out
+
+
 def scan(a):
     ents = {e["id"]: e for e in g.entries()}
     sels = g.load(g.SELECTIONS, {})
@@ -45,7 +62,10 @@ def scan(a):
             continue
         data = f.read_bytes()
         if data[:7] == b"version":   # Git LFS pointer, not the image
-            raise SystemExit(f"{f}: LFS pointer; run git lfs pull first")
+            oid = pointer_oid(data)
+            if oid and (sels.get(f.stem) or {}).get("master", {}).get("sha256") == oid:
+                continue             # already received with these exact bytes: no download needed
+            raise SystemExit(f"{f}: LFS pointer of a new image; fetch it first (tools/art_intake.py needs-pull)")
         h = hashlib.sha256(data).hexdigest()
         s = sels.get(f.stem)
         if s and s.get("master", {}).get("sha256") == h:
@@ -141,7 +161,7 @@ def pending(a):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["scan", "approve", "approve-anchors", "reject", "pending"])
+    ap.add_argument("cmd", choices=["scan", "approve", "approve-anchors", "reject", "pending", "needs-pull"])
     ap.add_argument("--ids", nargs="*", default=[])
     ap.add_argument("--by", default="orchestrator visual review")
     ap.add_argument("--reason", default=None, help="with reject: why, in a sentence the operator can turn into a correction")
@@ -154,6 +174,8 @@ def main():
         set_status(a.ids, "rejected", a.reason)
     elif a.cmd == "pending":
         pending(a)
+    elif a.cmd == "needs-pull":
+        print(",".join(needs_pull()))
     else:
         approve_anchors(a)
 

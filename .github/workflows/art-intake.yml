@@ -29,7 +29,10 @@ jobs:
       - name: Fetch incoming images
         run: |
           git lfs install --local
-          git lfs pull --include="assets/art/incoming/*.png" --exclude=""
+          # Only new images: a pointer's oid is the image's SHA-256, so recorded ones need no download
+          # (keeps LFS bandwidth flat when images arrive one per push).
+          NEW="$(python tools/art_intake.py needs-pull)"
+          if [ -n "$NEW" ]; then git lfs pull --include="$NEW" --exclude=""; fi
       - name: Ink-prepare and record new images
         run: python tools/art_intake.py scan
       - name: Commit intake results
