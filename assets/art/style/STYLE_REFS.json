@@ -1,5 +1,5 @@
 {
- "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses.",
+ "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses. A second batch added STYLE-REF-28..40 to the bank (one more image was STYLE-REF-26 again, byte-identical, and was not stored twice).",
  "refs": [
   {
    "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
@@ -359,6 +359,175 @@
    "category": "still life: item",
    "role": "Carved scroll case with stipple ground shadow",
    "caveat": "pseudo-script carved on it: lettering risk",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2567,
+    1925
+   ],
+   "sha256": "95d5c0c3cefaa02452704ca06d18fe9e20e33f03102bc66756e4794a1ebc200e",
+   "category": "magic (tradition) / creature",
+   "role": "Wizard blasting a flaming serpent-bodied fiend; magic as a spray of ink flecks on open white, ground shadows only",
+   "caveat": "",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2176,
+    1877
+   ],
+   "sha256": "0fda99606314a765a8c2d9f9cc1174ab9af307f91351f6a52e1f77f9130aea1d",
+   "category": "magic (divine) / scene",
+   "role": "Warrior-priest calling down fire on lizardfolk silhouettes; heavy black ground, open white sky",
+   "caveat": "",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2024,
+    1071
+   ],
+   "sha256": "4b84687f7dfcd9b79f57ffd0c9d2386b7e898458bb0bdc0c267c74c58e8328e7",
+   "category": "landscape: forest (climate)",
+   "role": "Conifer forest path; dense pen trees and grass",
+   "caveat": "stipple-dot sky and ground (the stipple-field look the prompts forbid)",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    1365,
+    2064
+   ],
+   "sha256": "4cc638c599386692a67010f6c57ebe927b97eda97a0180a787e70f662256b966",
+   "category": "interior / scene / magic",
+   "role": "Dungeon brawl with goblins, a magic bolt and eyes in the dark; bold line and solid blacks",
+   "caveat": "heavy dotwork stipple throughout; cropped composition",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    820,
+    1128
+   ],
+   "sha256": "524849d12f7e001b88321fff9d5cb6e85b2ee6879d677fd01f6a586a012ba7da",
+   "category": "person / creature (beastfolk)",
+   "role": "Goat-headed warrior with spear and belt pouches, isolated on white; loose line",
+   "caveat": "small (820 px wide); light, sketchy",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    717,
+    1086
+   ],
+   "sha256": "cb3da4dabe78e3cce5fa4ccd35eba41b5744a04a1dc735675fcb068504e813e5",
+   "category": "still life: item",
+   "role": "Rope-bound cross of bone or wood, isolated; scratchy hatching",
+   "caveat": "small (717 px wide); faint grey paper texture at the left edge",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2220,
+    1809
+   ],
+   "sha256": "bfad93b49b07ad62414e65f9ba1fde69ef1f9fabd23801d616d916cc956359c1",
+   "category": "still life: gear",
+   "role": "Backpack, rations, torch, rope, waterskin, candles, mortar, bedroll, daggers, herbs; scratchy pen",
+   "caveat": "grungy grey paper border",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    661,
+    800
+   ],
+   "sha256": "d22a9c410d16e5ee877d663584d83119b8e529979b1887e0871691a2c469caa6",
+   "category": "creature (insect)",
+   "role": "Antennaed grub creature with claws in rubble; clean bold line, isolated",
+   "caveat": "small (661 x 800)",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    1220,
+    1746
+   ],
+   "sha256": "7039e6d832f650c770ea12c6580625c598652724b61cf23e64b7e7268cdcb95e",
+   "category": "creature (insect)",
+   "role": "Crab-clawed insectoid humanoid, isolated on white; clean line with hatching",
+   "caveat": "",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    617,
+    1958
+   ],
+   "sha256": "ef6ff3208d5ef42137571c0572272f42d3488c7267ddcc9bba863512467e1c24",
+   "category": "interior / scene",
+   "role": "Knight with torch, kneeling elf and a halfling at dungeon pits; bold blacks, flagstones",
+   "caveat": "narrow (617 px wide)",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    1501,
+    1822
+   ],
+   "sha256": "525f6cfec1224afadb98f28f7f95a8bcf4066cb9d12404068eb23bf5b876892a",
+   "category": "creature (beastfolk)",
+   "role": "Hyena-man with spear and skull belt; bold scratchy hatching, isolated on white",
+   "caveat": "",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    552,
+    360
+   ],
+   "sha256": "7befb855c5bf0eecf096c31211bc4ff4a877ecb42a67a8b20ab62cde92719e41",
+   "category": "still life: item",
+   "role": "Coffin-shaped flask with skull; bold contour and hatching",
+   "caveat": "very small (552 x 360)",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    1267,
+    467
+   ],
+   "sha256": "c3aad378cd513536db2878b459b2cd55556acd223bdb7aea88526eb02fd21edc",
+   "category": "still life: equipment",
+   "role": "Crude scythe-pick with a rag-wrapped haft, isolated",
+   "caveat": "small (467 px tall)",
    "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
   }
  ]
