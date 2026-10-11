@@ -17,8 +17,8 @@ Read this and `AGENTS.md` only. Open `SKILL.md` or `references/*.md` only when o
 
 ## Delivery (after every saved image)
 Every image is delivered as soon as it is saved, so a usage limit never strands work.
-- **status says DELIVER:** `H delivery_guard.py audit --repo .`, then `H delivery_guard.py ship --execute --repo .`.
-- **status says DRIFT REVIEW (every 10 images):** first `H heraldry_art.py sheet --recent 10 --refs --out %HERALDRY_SCRATCH%\sheet.jpg` and `H style_audit.py --repo . --recent 10 --out %HERALDRY_SCRATCH%\style.json`, and look at the sheet once. Then audit and ship. `ship` fast-forwards over the intake bot's commits by itself and retries a lost race. If it says BLOCKED: `H heraldry_art.py bundle --evidence ...`, report the reason and stop. Never pull, rebase, force or commit by hand.
+- **status says DELIVER:** `H delivery_guard.py ship --execute --repo .` (it runs every delivery check itself).
+- **status says DRIFT REVIEW (every 10 images):** first `H heraldry_art.py sheet --recent 10 --refs --out %HERALDRY_SCRATCH%\sheet.jpg` and `H style_audit.py --repo . --recent 10 --out %HERALDRY_SCRATCH%\style.json`, and look at the sheet once. Then ship. `ship` fast-forwards over the intake bot's commits by itself and retries a lost race. If it says BLOCKED: `H heraldry_art.py bundle --evidence ...`, report the reason and stop. Never pull, rebase, force or commit by hand.
 
 ## Stop and report when
 - status says NOTHING LEFT;

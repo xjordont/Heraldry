@@ -251,3 +251,14 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
     - UTF-8 reads for Windows; `doctor` checks that LFS is installed in the clone; the dead aspect check is removed; `check` caches image hashes; `save_as` is removed from the queue; the illustration list marks redos; lint is clean.
     - Repository checks skip pure image deliveries.
   - **Tests:** six new real-git regression tests. Results are below.
+- **Efficiency tidy-up** (owner, 2026-10-11: "tidy everything up in the code base to ensure it is highly efficient, fast, and without redundancy"). Removed only what duplicated another check, never a safeguard:
+  - **CI workflows removed:**
+    - `art-skill-release.yml`: its build, validation and tests duplicated repository checks, and its auto-commit could never be needed because the tests already require a current committed ZIP.
+    - `work-calibration-inputs.yml`: the committed package is checked by the tests.
+  - **Repository checks:** no longer rebuild the skill ZIP before testing it (the rebuild masked a stale ZIP), and they skip pure image deliveries.
+  - **Worker steps:**
+    - Delivery is one `ship --execute`. The separate `audit` step repeated the validation `ship` runs anyway, and is kept for diagnosis only.
+    - The drift review no longer makes a second contact sheet.
+    - `status`, the batch card, the operator card, SKILL.md, the runbook and the instructions all say the same.
+  - **Speed:** `work_preflight` decoded or fully read each reference once per queue item (810 times for 28 files). It now checks each file once: about 10 s down to about 0.7 s at every session start and in package verification. The repository tests drop by about 30 s.
+  - **Dead code:** 23 permanently skipped v4 tests, the legacy `build_release.py` builder (duplicating `tools/art_skill_build.py`), the v4 skill ZIP, and unused imports and helpers.

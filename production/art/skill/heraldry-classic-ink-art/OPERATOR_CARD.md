@@ -27,7 +27,7 @@ Confirm with a real smoke test that the image tool accepts the queue's reference
 
 ## Delivery and stopping
 
-- **DELIVER** (after every save): `delivery_guard.py audit --repo .`, then `delivery_guard.py ship --execute --repo .`.
+- **DELIVER** (after every save): `delivery_guard.py ship --execute --repo .`. It runs every delivery check itself; `audit` is the same check without the push, for diagnosis only.
 - **DRIFT REVIEW** (every tenth save):
   1. Run `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10 --out <scratch>/style.json`.
   2. Look at the sheet once. Stop if two or more images of the same register share a drift.
