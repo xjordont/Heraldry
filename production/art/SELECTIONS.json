@@ -3,44 +3,34 @@
   "family": "climate",
   "title": "The Greenmark",
   "heading_id": "h-the-greenmark",
-  "replaces": null,
-  "spec_sha256": "51a918af38159abbb5bdcd015c3aecbb93a344d1a75a484adb76af8cce0b7225",
-  "prompt_sha256": "70cf22509916a7e1ae7eb1d4e5886ef052a0274421791ac6e7c279a8ec2fed1f",
-  "prompt": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.\n\nThe attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.\n\nFORMAT: Landscape that captures the climate's defining terrain, ruin and danger, with one or two tiny figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame. Aspect ratio 3:2.\n\nSUBJECT: \"The Greenmark\" (1.3 The Dying Lands / 1.3.2 The Six Climates of Ruin). Depict this faithfully, inventing nothing that contradicts it:\n\n\"The Greenmark is the great temperate forest of the surviving world. It is larger than the maps. Roots take a road within a season and make the mile-stones useless. Travellers report trees shifting at the edge of sight, upright hounds between trunks, and grove-circles where moss stays warm after snow. Foresters cut warning signs into bark for those who know how to read them. The most common sign means turn back even if the voice ahead is your own. The forest is no wilderness. It is a country that does not recognize human law.\"\n\nNo lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
-  "model": "gemini-nano-banana-2.1",
-  "judge_model": "gemini-3-flash-preview",
-  "round": 1,
-  "candidate": "r1c1.png",
-  "judge": {
-   "index": 1,
-   "style_match": 9,
-   "subject_fidelity": 9,
-   "craft": 9,
-   "defects": [],
-   "overall": 9.0
-  },
-  "status": "superseded",
-  "generated_at": "2026-10-08T12:28:55+00:00",
+  "route": "gpt",
+  "spec_sha256": "06acc0f3570bd7c61ff5709d3ceeffb4140c46bc4312719aa5d268986dea7f25",
+  "prompt_sha256": "625734f3e40043ae20bf802b17b6db96a2eed2215694e4917f7e33455e6c18de",
+  "status": "received",
+  "received_at": "2026-10-11T02:56:44+00:00",
+  "surface": "ChatGPT Work",
+  "model": "not shown",
+  "notes": "Attempt 3: warning cuts indistinct and upper margin narrow. Best native candidate; unapproved independent review.",
+  "intake_warnings": [],
   "master": {
-   "path": "assets/art/masters/ART-CLI-THE-GREENMARK.png",
-   "sha256": "e998f84194a6a154e373049adfd3a94383d4167b69815d3d27a86a9e8e55b9ec",
+   "path": "assets/art/incoming/ART-CLI-THE-GREENMARK.png",
+   "sha256": "50843fa32f9d13001e1d06091a3359cbac45a10557815e311a8cdb178e80e2bf",
    "px": [
-    1264,
-    848
+    1536,
+    1024
    ]
   },
   "ink": {
    "path": "assets/art/ink/ART-CLI-THE-GREENMARK.png",
-   "sha256": "ee6d87696f2e4301d8186ecc82659e8512c2e8fe560fdfed38961717ad5fadc5",
+   "sha256": "9337cf054a209adf55590403ce6e40ce427bb34e12a0bdb0ff7b3bd2fe3d4f63",
    "px": [
-    1207,
-    798
+    1533,
+    1021
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.023
+   "max_print_w_in_300ppi": 5.11
   },
-  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn.",
-  "superseded_note": "Gemini test drawing; route retired 2026-10-10 (owner chose ChatGPT Work)"
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
  },
  "ART-BAS-GREYTHORN": {
   "family": "bastion",
@@ -78,172 +68,132 @@
   "family": "ancestry",
   "title": "Dwarf",
   "heading_id": "h-dwarf",
-  "replaces": null,
-  "spec_sha256": "f724191edb841540c718dd594dc49ab61717d399b352cc2e2a226aefc9e8aaca",
-  "prompt_sha256": "d765682ebf770a775d15670bcced7759887f3bfc91ee7978b83a0f4b51585e4f",
-  "prompt": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.\n\nThe attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.\n\nFORMAT: Single full-length adventurer of this ancestry in travel-worn gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery. Aspect ratio 3:4.\n\nSUBJECT: \"Dwarf\" (6. Your Adventuring Party / 6.9 Ancestries). Depict this faithfully, inventing nothing that contradicts it:\n\n\"Dwarves are cut from sealed stone halls, old grudges, and craft traditions older than most fallen kingdoms. Hardship did not sour them so much as harden them, and little in this world meets one of them head-on and walks away whole.\"\n\nNo lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
-  "model": "gemini-nano-banana-2.1",
-  "judge_model": "gemini-3-flash-preview",
-  "round": 1,
-  "candidate": "r1c4.png",
-  "judge": {
-   "index": 4,
-   "style_match": 9,
-   "subject_fidelity": 10,
-   "craft": 9,
-   "defects": [],
-   "overall": 9
-  },
-  "status": "superseded",
-  "generated_at": "2026-10-08T12:33:41+00:00",
+  "route": "gpt",
+  "spec_sha256": "2f92a29ce28708e821d5ee92d8db216e17722f58c4632c5d65be7465c3d011ab",
+  "prompt_sha256": "eb609e96f6a1bc2b337415ae6244c1acf1b858b34ce9b5c7623eff9c254f7571",
+  "status": "received",
+  "received_at": "2026-10-11T02:56:42+00:00",
+  "surface": "ChatGPT Work",
+  "model": "not shown",
+  "notes": "Attempt 2 selected after native/reference/print inspection; midtone warning resolves into hatches. Unapproved.",
+  "intake_warnings": [],
   "master": {
-   "path": "assets/art/masters/ART-ANC-DWARF.png",
-   "sha256": "77742a0ba4f111614972c44f2d945914ef8568f6b8218c0c17b69a813082d092",
+   "path": "assets/art/incoming/ART-ANC-DWARF.png",
+   "sha256": "571922549d75d99dcbb803cd075990522d102386de265a3e7922bcf771a6cd17",
    "px": [
-    896,
-    1200
+    1024,
+    1536
    ]
   },
   "ink": {
    "path": "assets/art/ink/ART-ANC-DWARF.png",
-   "sha256": "ea9a05b477e01de2021ac397af4150ff8d969298da510c6a7c8a465cdfd5faee",
+   "sha256": "600ca1e1207337158fb9839ac6ce6d9dc7b844f2078bff2c0aa8fffa028d50f2",
    "px": [
-    811,
-    1058
+    837,
+    922
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.703
+   "max_print_w_in_300ppi": 2.79
   },
-  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn.",
-  "superseded_note": "Gemini test drawing; route retired 2026-10-10 (owner chose ChatGPT Work)"
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
  },
  "ART-CLA-FIGHTER": {
   "family": "class",
   "title": "Fighter",
   "heading_id": "h-fighter-15-complexity",
-  "replaces": null,
-  "spec_sha256": "cf59dd27dc7755ce1123649efb1443fc140738e4145f62fb708fe46800e80720",
-  "prompt_sha256": "fe0fc13ff56c417f897416cf40a779f75d99b6aae50168216fe3cbc44977545f",
-  "prompt": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.\n\nThe attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.\n\nFORMAT: Single full-length adventurer in an action-ready pose with class-typical arms and gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery. Aspect ratio 3:4.\n\nSUBJECT: \"Fighter\" (6. Your Adventuring Party / 6.13 Hero Classes). Depict this faithfully, inventing nothing that contradicts it:\n\n\"A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when holding it is the only thing that matters. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does.\"\n\nNo lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
-  "model": "gemini-nano-banana-2.1",
-  "judge_model": "gemini-3-flash-preview",
-  "round": 1,
-  "candidate": "r1c1.png",
-  "judge": {
-   "index": 1,
-   "style_match": 9,
-   "subject_fidelity": 10,
-   "craft": 9,
-   "defects": [],
-   "overall": 9
-  },
-  "status": "superseded",
-  "generated_at": "2026-10-08T12:34:22+00:00",
+  "route": "gpt",
+  "spec_sha256": "99a5d97686f6ca5f3d39049228e21890ff3bb26547991bbc102038400bc0975b",
+  "prompt_sha256": "659bf900ec0bf1cf2d59455dd676d4d0d4d9bee0b263343b98d743b021328baa",
+  "status": "received",
+  "received_at": "2026-10-11T02:56:43+00:00",
+  "surface": "ChatGPT Work",
+  "model": "not shown",
+  "notes": "Attempt 2 selected: checked native and 1.9 inch preview; advisory midtones are hatch detail. Unapproved.",
+  "intake_warnings": [],
   "master": {
-   "path": "assets/art/masters/ART-CLA-FIGHTER.png",
-   "sha256": "a44a5fe7267e4ba6c6ebe1d057289e367b71f0e1644df901f04122dc1917cf8e",
+   "path": "assets/art/incoming/ART-CLA-FIGHTER.png",
+   "sha256": "f14fe1e091e5698919424ed7e7cd85d8af9474650a9b5bb298ea2d6ccbd9fb86",
    "px": [
-    896,
-    1200
+    1024,
+    1536
    ]
   },
   "ink": {
    "path": "assets/art/ink/ART-CLA-FIGHTER.png",
-   "sha256": "856d6df2e17770a8325d92117b1b3d1394b275a559f1cbe7473bfb18e0c0ba74",
+   "sha256": "3feec600e4b044d325771c6772d2cec55409091f0d3e894eea86488adebf38d9",
    "px": [
-    822,
-    1068
+    845,
+    1045
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.74
+   "max_print_w_in_300ppi": 2.817
   },
-  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn.",
-  "superseded_note": "Gemini test drawing; route retired 2026-10-10 (owner chose ChatGPT Work)"
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
  },
  "ART-MON-GIANT-TARANTULA": {
   "family": "monster",
   "title": "Giant Tarantula",
   "heading_id": "h-giant-tarantula-skirmisher",
-  "replaces": null,
-  "spec_sha256": "8b17d0aa3d17ac154b0b4fa66d5a6e5c2adf085a7457ddb36449ae693d9e15f8",
-  "prompt_sha256": "1a420d9f24d30aafbf175f6e4e4d04d1bcc612723813bd2a2b8c29f49163855d",
-  "prompt": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.\n\nThe attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.\n\nFORMAT: Single creature, full body, three-quarter view, in a characteristic menacing pose; a small human figure for scale only if the creature is Large or Huge. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery. Aspect ratio 1:1.\n\nSUBJECT: the creature called \"Giant Tarantula\" (9.7 The Bestiary / Greenmark Bestiary). Size: Small: smaller than a human. Depict it faithfully from this description, inventing nothing that contradicts it:\n\n\"A hand-span of bristled legs around a body the size of a war helm, the giant tarantula stalks the Greenmark's leaf litter on stilted, deliberate steps. Its fangs weep a venom that turns a victim's muscles to wet rope. It spins no snares, preferring to run prey down and pin it where it falls. Foragers keep one eye on the canopy, because the largest specimens hunt from above and drop.\"\n\nNo lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
-  "model": "gemini-nano-banana-2.1",
-  "judge_model": "gemini-3-flash-preview",
-  "round": 1,
-  "candidate": "r1c2.png",
-  "judge": {
-   "index": 2,
-   "style_match": 7,
-   "subject_fidelity": 6,
-   "craft": 6,
-   "defects": [],
-   "overall": 7
-  },
-  "status": "superseded",
-  "generated_at": "2026-10-08T12:38:00+00:00",
+  "route": "gpt",
+  "spec_sha256": "452aefc200486cb2188fbb1faf55a2d582256d412b2f13f58afcfd9ce938a0c6",
+  "prompt_sha256": "dec3c51a465b7b0bf7c0f31403fb86dc2dae39a592c6b6363ec2f04eac12f8bf",
+  "status": "received",
+  "received_at": "2026-10-11T02:56:45+00:00",
+  "surface": "ChatGPT Work",
+  "model": "not shown",
+  "notes": "Attempt 3/3: native dimensions mismatch, ambiguous rear leg count and narrow left margin; unapproved flagged review.",
+  "intake_warnings": [],
   "master": {
-   "path": "assets/art/masters/ART-MON-GIANT-TARANTULA.png",
-   "sha256": "3cc02055aaa66d81b1139731a1fa6365d2a88b9a5840295f489fec0daab4038a",
+   "path": "assets/art/incoming/ART-MON-GIANT-TARANTULA.png",
+   "sha256": "aa7145ca5b590023157521b32397d177304e523661520a849068a57387189151",
    "px": [
-    1024,
-    1024
+    1254,
+    1254
    ]
   },
   "ink": {
    "path": "assets/art/ink/ART-MON-GIANT-TARANTULA.png",
-   "sha256": "b85334b05c5a24f3bd389aa969e51c2f0ce29c201776481a7dede0718bf59333",
+   "sha256": "4542da281815445bf5c9a2ca14e526af890e513da04e6700ed84e54d29edb23e",
    "px": [
-    1011,
-    875
+    1174,
+    798
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.37
+   "max_print_w_in_300ppi": 3.913
   },
-  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn.",
-  "superseded_note": "Gemini test drawing; route retired 2026-10-10 (owner chose ChatGPT Work)"
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
  },
  "ART-MON-UNDEAD-CHAMPION": {
   "family": "monster",
   "title": "Undead Champion",
   "heading_id": "h-undead-champion-soldier",
-  "replaces": null,
-  "spec_sha256": "7cbe8beb02fb8344d982302d3fdd311cecd95644ec86de3f7f1c060379aadfb2",
-  "prompt_sha256": "dc25ef5aebd52ee8fb83f6ce8a5e0d129e13de140e2f2350e5da9eed79e659df",
-  "prompt": "Original black-and-white pen-and-ink illustration for HERALDRY SKIRMISH: THE DYING LANDS, a grim medieval dark-fantasy tabletop rulebook. Every image is drawn by the same single illustrator with one technique: traditional dip pen and fine liner on bright white paper, in the manner of a classic black-and-white fantasy roleplaying-game interior illustration. LINE: a confident, slightly heavier outer contour around each main form; thinner interior lines; line weight thins with distance. TONE: built only from ink marks - parallel hatching that follows the form, crosshatching for deep shade, sparse stippling for grit, ash and dust - plus a few deliberate solid-black shapes (eye sockets, open mouths, doorways, cast shadows, the darkest folds). No grey wash, no gradients, no smudging. LIGHT: one cold overcast light from the upper left; shadows fall lower right. SPACE: generous untouched white paper; skies are white or lightly ruled with sparse horizontal strokes; distance and fog are shown by sparser, finer lines. MOOD: withered beauty and faded grandeur - once-fine armour, cloth, stone and banners now rusted, cracked, tattered, overgrown or hollowed by age; ruined gothic and Romanesque masonry at a scale that dwarfs the living; quiet dread rather than gore. CRAFT: believable anatomy, armour construction, weapon grips, timber framing and masonry coursing; a single readable silhouette that still reads when printed two inches wide; serious, grounded proportions, never cute or cartoonish.\n\nThe attached reference images show this illustrator's hand: copy their line weight, hatching density and direction, use of solid black and white paper, and level of finish. Do not copy their subjects, compositions or framing.\n\nFORMAT: Single creature, full body, three-quarter view, in a characteristic menacing pose; a small human figure for scale only if the creature is Large or Huge. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery. Aspect ratio 1:1.\n\nSUBJECT: the creature called \"Undead Champion\" (9.7 The Bestiary / Ashlands Bestiary). Size: Medium: about human-sized. Depict it faithfully from this description, inventing nothing that contradicts it:\n\n\"Raised from the largest corpses the Ashlands could muster, the undead champion is a slab of dead muscle swinging a maul of fused bone. Each blow lands with siege-engine weight and rattles whatever stands beside the thing it struck. It is slow, single-minded, and almost impossible to put off its feet. Where it walks, the lesser dead come on in its wake.\"\n\nNo lettering, captions, labels, numbers, runes that look like text, signature, logo, watermark, border, frame, panel box, colour, sepia, grey wash, airbrush or digital gradient, glow effects, photorealism, 3D render, anime, manga, cartoon or chibi proportions, comic-book speed lines, tiled pattern, faint grid, parchment or paper texture, torn-paper edges. Do not imitate any named artist, game or franchise; do not reproduce the reference images' subjects or compositions.",
-  "model": "gemini-nano-banana-2.1",
-  "judge_model": "gemini-3-flash-preview",
-  "round": 1,
-  "candidate": "r1c3.png",
-  "judge": {
-   "index": 3,
-   "style_match": 10,
-   "subject_fidelity": 10,
-   "craft": 10,
-   "defects": [],
-   "overall": 10
-  },
-  "status": "superseded",
-  "generated_at": "2026-10-08T12:38:35+00:00",
+  "route": "gpt",
+  "spec_sha256": "6450423260b7218005c888a9dcbcd4ad11ca24b9528ffa2ca3b071913ec933e3",
+  "prompt_sha256": "741d323781bea582ea37329ec5a544c0eb9dbb0c786b77866ecdcd8e3cfd88ca",
+  "status": "received",
+  "received_at": "2026-10-11T02:56:45+00:00",
+  "surface": "ChatGPT Work",
+  "model": "not shown",
+  "notes": "Selected a2 after 3 attempts: dimensions mismatch and narrow vertical margins; unapproved review.",
+  "intake_warnings": [],
   "master": {
-   "path": "assets/art/masters/ART-MON-UNDEAD-CHAMPION.png",
-   "sha256": "4e6e44b98a217b3a8a8a9f44503c7df4aa37a6a6243cf3aa944c514dd272e67c",
+   "path": "assets/art/incoming/ART-MON-UNDEAD-CHAMPION.png",
+   "sha256": "9b8390d544529f575fe1a7af0e4270dd08023aca5d52f2a91bc43ead68cb529f",
    "px": [
-    1024,
-    1024
+    1254,
+    1254
    ]
   },
   "ink": {
    "path": "assets/art/ink/ART-MON-UNDEAD-CHAMPION.png",
-   "sha256": "29a877bcabbfafc81f9fdc78540f4608152fc816ab287f76a874806000355b70",
+   "sha256": "3206842d1d3db91002972511ec95acf69699f0fceca4037f37d82a4756899aad",
    "px": [
-    929,
-    911
+    834,
+    1218
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.097
+   "max_print_w_in_300ppi": 2.78
   },
-  "provenance": "Generated with the Google Gemini API image model named above; automated judge selection; not hand-drawn.",
-  "superseded_note": "Gemini test drawing; route retired 2026-10-10 (owner chose ChatGPT Work)"
+  "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."
  }
 }
