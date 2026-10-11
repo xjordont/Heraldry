@@ -29,11 +29,12 @@ def received(sels=None):
 
 
 def references_for(e, sels, root=ROOT):
-    """Up to max_refs reference images for this entry's register: repo paths always (they must exist),
-    anchor IDs once approved. Never the entry itself."""
+    """Up to max_refs reference images for this entry's family (family_sets) or else its register: repo paths
+    always (they must exist), anchor IDs once approved. Never the entry itself."""
     cfg = g.CFG["gpt_reference_sets"]
     out = []
-    for cand in cfg["sets"][cfg["register_of_family"][e["family"]]]:
+    cands = cfg.get("family_sets", {}).get(e["family"]) or cfg["sets"][cfg["register_of_family"][e["family"]]]
+    for cand in cands:
         if cand.lower().endswith(IMAGE_SUFFIXES):
             if not (root / cand).is_file():
                 raise SystemExit(f"reference image missing: {cand}")

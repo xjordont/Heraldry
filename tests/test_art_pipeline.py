@@ -83,7 +83,8 @@ class ArtPipeline(unittest.TestCase):
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
         root = Path(tmp.name)
-        for sets in g.CFG["gpt_reference_sets"]["sets"].values():
+        rs = g.CFG["gpt_reference_sets"]
+        for sets in list(rs["sets"].values()) + list(rs.get("family_sets", {}).values()):
             for cand in sets:
                 if "/" in cand:
                     (root / cand).parent.mkdir(parents=True, exist_ok=True)
@@ -102,7 +103,9 @@ class ArtPipeline(unittest.TestCase):
     def test_gpt_queue_references_are_short_and_register_specific(self):
         pack, g, ents, (q, prompts) = self._batch_queue()
         cfg = g.CFG["gpt_reference_sets"]
-        scene_only = {c for c in cfg["sets"]["scene"]} | {"assets/art/incoming/ART-BAS-GREYTHORN.png"}
+        scene_only = {c for c in cfg["sets"]["scene"]} | {"assets/art/incoming/ART-BAS-GREYTHORN.png"} | {
+            c for fs in cfg.get("family_sets", {}).values() for c in fs}
+        city = "assets/art/style/STYLE-REF-11-city-approach-ink.png"
         figure_only = {r for s in ("creature", "person", "still") for r in cfg["sets"][s] if "/" in r} | {
             f"assets/art/incoming/{i}.png" for s in ("creature", "person") for i in cfg["sets"][s] if "/" not in i}
         self.assertFalse(scene_only & figure_only, "scene and figure reference sets are disjoint")
@@ -116,6 +119,8 @@ class ArtPipeline(unittest.TestCase):
             self.assertFalse(set(refs) & {"assets/art/style/STYLE-REF-01-scene-hatching.jpg", "assets/art/style/STYLE-REF-02-panorama-line.jpg"},
                              "the clean engraved samples were superseded by the gritty set (owner 2026-10-11)")
             self.assertFalse([r for r in refs if "/incoming/" in r], "generated images are never references")
+            # the owner's city scene replaces the cut STYLE-REF-01 for town and world scenes only (owner 2026-10-11)
+            self.assertEqual(city in refs, it["family"] in ("bastion", "world"), it["id"])
             if it["register"] == "scene":
                 self.assertFalse(set(refs) & figure_only, it["id"])
             else:

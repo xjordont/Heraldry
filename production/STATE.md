@@ -204,3 +204,9 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Calibration:** CODEX_PROMPT recommends a first run that stops after 5 images for review.
   - **Approved art:** Greythorn and the four hand-inked anchors remain approved; whether to redo them for consistency is for the owner to decide.
   - No manuscript change and no build. `dist/` still predates this art.
+- **Reference cut** (owner, 2026-10-11, after reviewing the reference sheets: "Cut 01 town scene and use the best of the attached city scenes instead"). STYLE-REF-01 is removed; it remains in git history.
+  - **Replacement:** of the four attached city scenes, two were near copies of the approved sepia Greythorn render, with grey tone, and one was very dense, close to the rejected hyper-detailed look. The chosen one is bold black-and-white with open sky and the lowest grey. It is now STYLE-REF-11.
+  - **Where it is attached:** a new `family_sets` override in `gpt_reference_sets` (honoured by `tools/art_gpt_pack.py`) gives bastion and world scenes 11, 09 and 07. All other scenes keep 09, 10 and 07, so town features do not bleed into them.
+  - **Owner exception:** STYLE-REF-11 looks machine-made but is attached on the owner's instruction.
+  - **Queue:** republished; the reference lists of 13 items changed, and the prompt text is unchanged.
+  - **Updated alongside:** the skill ZIP, the fallback package and the tests (bastion and world items, and only those, carry STYLE-REF-11).
