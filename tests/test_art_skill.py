@@ -63,7 +63,7 @@ def scene_image(size=(1536, 1024), vignette=True):
 def make_repo(root, phase="anchors", items=None):
     for d in ("production/art/gpt/prompts", "assets/art/incoming", "assets/art/style"):
         (root / d).mkdir(parents=True, exist_ok=True)
-    (root / ".gitattributes").write_text("assets/art/incoming/*.png filter=lfs diff=lfs merge=lfs -text\n")
+    (root / ".gitattributes").write_text("assets/art/incoming/*.png filter=lfs diff=lfs merge=lfs -text\nassets/art/incoming/*.jpg filter=lfs diff=lfs merge=lfs -text\nassets/art/incoming/*.webp filter=lfs diff=lfs merge=lfs -text\n")
     refs = []
     for n in range(2):
         p = f"assets/art/style/REF-{n}.jpg"

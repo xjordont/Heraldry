@@ -1,7 +1,8 @@
 name: Intake ChatGPT artwork
 # Runs when ChatGPT Work (or the owner) commits images to assets/art/incoming/.
 # Converts each new <catalog id> image to transparent black ink, records it as 'received' in
-# production/art/SELECTIONS.json and commits a review contact sheet. Approval stays with the orchestrator.
+# production/art/SELECTIONS.json. The reviewer makes contact sheets locally (`art_intake.py pending --sheet`), so none are
+# committed per run. Approval stays with the orchestrator.
 on:
   push:
     branches: [main]
@@ -41,7 +42,7 @@ jobs:
             NEW="$(python tools/art_intake.py needs-pull)"
             if [ -n "$NEW" ]; then git lfs pull --include="$NEW" --exclude=""; fi
             python tools/art_intake.py scan
-            git add assets/art/ink production/art/SELECTIONS.json production/art/review
+            git add assets/art/ink production/art/SELECTIONS.json
             if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
             git commit -q -m "art: intake of ChatGPT Work images"
             if git push -q origin HEAD:main; then exit 0; fi

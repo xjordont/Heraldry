@@ -121,6 +121,25 @@ def git(repo, *args):
         return 127, ""
 
 
+def refresh(repo):
+    """Fast-forward a clean clone to origin/main before choosing work, so a redo the reviewer sent back, or a republished
+    prompt, is seen now rather than one delivery later. Skipped while anything is unsent (ship brings that up to date),
+    in an offline package, and when HERALDRY_NO_REFRESH is set. A failure only prints a note: the local queue is used."""
+    if os.environ.get("HERALDRY_NO_REFRESH") or not (Path(repo) / ".git").exists():
+        return
+    rc, out = git(repo, "status", "--porcelain")
+    if rc or out.strip():
+        return
+    try:
+        r = subprocess.run(["git", "-C", str(repo), "pull", "--ff-only", "-q", "origin", "main"], capture_output=True, text=True,
+                           timeout=120, env={**os.environ, "GIT_TERMINAL_PROMPT": "0", "GCM_INTERACTIVE": "never"})
+        why = (r.stderr.strip().splitlines() or ["exit %d" % r.returncode])[-1] if r.returncode else ""
+    except (OSError, subprocess.SubprocessError) as e:
+        why = str(e)
+    if why:
+        print(f"note: could not refresh from origin/main ({why}); using the local queue", file=sys.stderr)
+
+
 def local_files(repo, iid):
     d = repo / INCOMING_REL
     return sorted(f for f in d.glob(iid + ".*") if f.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp")) if d.is_dir() else []
@@ -445,7 +464,8 @@ def attempts_used(repo, iid, state):
 
 
 def record_attempt(repo, iid, digest, state):
-    """Count one distinct generated image for this item and return (count, round number) for the current round.
+    """Count one distinct generated image for this item and return (its attempt number, images checked so far,
+    round number) for the current round. Re-checking an earlier image returns that image's own number.
     A round ends when a saved image has been delivered, sent back or refused. Until then, for example in a
     drift-review redo before the push, the count carries on, so the budget really covers every generation."""
     f = scratch_dir(repo) / "attempts.json"
@@ -459,7 +479,7 @@ def record_attempt(repo, iid, digest, state):
     data[iid] = e
     f.parent.mkdir(parents=True, exist_ok=True)
     f.write_text(json.dumps(data))
-    return len(e["images"]), e["round"]
+    return e["images"].index(digest) + 1, len(e["images"]), e["round"]
 
 
 def close_attempts(repo, iid):
@@ -564,12 +584,12 @@ def cmd_doctor(a, repo):
         if branch.strip() != "main":
             blockers.append(f"on branch {branch.strip()!r}: work on main only, never create branches")
         if git(repo, "lfs", "version")[0] != 0:
-            delivery.append("git-lfs is not installed (PNGs would be committed as ordinary files; the repo stores them with LFS)")
+            delivery.append("git-lfs is not installed (images would be committed as ordinary files; the repo stores them with LFS)")
         elif not git(repo, "config", "--get", "filter.lfs.clean")[1].strip():
-            delivery.append("git-lfs is not set up in this clone: run `git lfs install --local --skip-smudge` once, or ship refuses PNGs")
+            delivery.append("git-lfs is not set up in this clone: run `git lfs install --local --skip-smudge` once, or ship refuses images")
         attrs = (repo / ".gitattributes").read_text(encoding="utf-8") if (repo / ".gitattributes").is_file() else ""
-        if "assets/art/incoming/*.png" not in attrs:
-            blockers.append(".gitattributes lacks the assets/art/incoming/*.png LFS rule: git pull --rebase origin main")
+        if not all(f"assets/art/incoming/*.{x}" in attrs for x in ("png", "jpg", "webp")):
+            blockers.append(".gitattributes lacks the assets/art/incoming LFS rules for png, jpg and webp: git pull --ff-only origin main")
         rc, out = git(repo, "status", "--porcelain", "--untracked-files=no")
         if rc == 0 and out.strip():
             notes.append("tracked files have uncommitted changes (fine if they are yours from this session)")
@@ -621,6 +641,7 @@ def cmd_doctor(a, repo):
 
 
 def cmd_status(a, repo):
+    refresh(repo)
     q = load_queue(repo)
     st = states(repo, q)
     count = lambda s: sum(1 for v in st.values() if v == s)  # noqa: E731
@@ -718,6 +739,7 @@ def all_bundled(repo, ids):
 
 
 def cmd_next(a, repo):
+    refresh(repo)
     q = load_queue(repo)
     st = states(repo, q)
     todo = [it for it in q["items"] if st[it["id"]] == "redo"] + [it for it in q["items"] if st[it["id"]] == "pending"]
@@ -776,13 +798,15 @@ def run_check(repo, q, iid, image):
         raise Fatal(f"{image}: not a readable image ({e})")
     fails, warns, infos = evaluate(m, it)
     digest = file_sha(image)
-    n, rnd = record_attempt(repo, it["id"], digest, states(repo, q)[it["id"]])
-    if n == it["max_attempts"]:
+    n, checked, rnd = record_attempt(repo, it["id"], digest, states(repo, q)[it["id"]])
+    if n < checked:
+        infos.append(f"this is attempt {n} again ({checked} images checked for this item so far)")
+    elif n == it["max_attempts"]:
         infos.append(f"this was the last allowed attempt ({n} of {it['max_attempts']}): if it fails, save the best attempt with "
                      "--accept-flags --notes \"<what is still wrong>\"; do not generate again")
     if n > it["max_attempts"]:
-        fails.append(f"attempt budget used up ({n} images checked, budget {it['max_attempts']}): do not generate again; "
-                     "save the best earlier attempt with --accept-flags")
+        fails.append(f"generated beyond the attempt budget (attempt {n}, budget {it['max_attempts']}): do not generate again; "
+                     "save the best attempt within the budget with --accept-flags")
     dup = duplicate_of(repo, it, image, digest)
     if dup:
         fails.append(f"byte-identical to {dup}: not a new generation of this item")
@@ -792,12 +816,12 @@ def run_check(repo, q, iid, image):
             warns.append(f"looks almost identical to {sim[1]} (difference {sim[0]} of 256): the same picture re-encoded or resized? Look before saving")
     if last_receipts(repo).get(it["id"], {}).get("refused"):
         infos.append("this ID is recorded as refused; a successful save replaces the refusal")
-    return it, m, fails, warns, infos, preview(image, it, scratch_dir(repo), n, rnd), n, dup
+    return it, m, fails, warns, infos, preview(image, it, scratch_dir(repo), n, rnd), n, checked, dup
 
 
 def cmd_check(a, repo):
     q = load_queue(repo)
-    it, m, fails, warns, infos, pv, n, dup = run_check(repo, q, a.id, a.image)
+    it, m, fails, warns, infos, pv, n, _, dup = run_check(repo, q, a.id, a.image)
     verdict = "FAIL" if fails else "WARN" if warns else "PASS"
     if a.json:
         print(json.dumps({"id": it["id"], "result": verdict, "attempt": n, "max_attempts": it["max_attempts"], "fails": fails, "warns": warns,
@@ -869,7 +893,7 @@ def cmd_save(a, repo):
     except (OSError, ValueError) as e:
         raise Fatal(f"cannot read QA report: {e}")
     q = load_queue(repo)
-    it, m, fails, warns, infos, pv, n, dup = run_check(repo, q, a.id, a.image)
+    it, m, fails, warns, infos, pv, n, checked, dup = run_check(repo, q, a.id, a.image)
     errors = verify_record(qa, a.image, it, require_pass=not a.accept_flags)
     if errors:
         raise Fatal("visual QA record failed: " + "; ".join(errors))
@@ -886,10 +910,10 @@ def cmd_save(a, repo):
         for f in fails:
             print("FAIL", f)
         raise Fatal(("mechanical failures and the budget is used: save the best attempt with --accept-flags --notes \"<what is still wrong>\""
-                     if n >= it["max_attempts"] else f"mechanical failures: regenerate (attempt {n} of {it['max_attempts']}, references/REPAIR.md)"))
+                     if checked >= it["max_attempts"] else f"mechanical failures: regenerate (attempt {checked + 1} of {it['max_attempts']} next, references/REPAIR.md)"))
     if a.accept_flags:
-        if n < it["max_attempts"]:
-            raise Fatal(f"--accept-flags is only for the last allowed attempt: you have checked {n} of {it['max_attempts']} images. "
+        if checked < it["max_attempts"]:
+            raise Fatal(f"--accept-flags is only for the last allowed attempt: you have checked {checked} of {it['max_attempts']} images. "
                         "Regenerate (references/REPAIR.md). If the tool will not let you, stop and report instead")
         if not a.notes:
             raise Fatal("--accept-flags needs --notes saying what is still wrong")
@@ -912,7 +936,7 @@ def cmd_save(a, repo):
             missing.append("--avoid-clear, meaning you looked and none of the DO NOT DRAW items is present")
         if missing:
             raise Fatal("look at the image, then state your checks. Missing: " + " | ".join(missing))
-    attempts = max(a.attempts or 0, n)
+    attempts = max(a.attempts or 0, checked)
     ext = IMAGE_EXT[m["format"]]
     dest = repo / INCOMING_REL / (it["id"] + ext)
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -936,6 +960,7 @@ def cmd_save(a, repo):
     if a.accept_flags:
         rec["accepted_flags"] = True
         rec["accepted_at_attempt"] = n
+    rec["saved_attempt"] = n
     rec["qa_schema"] = 1
     # The external scratch report may not survive a Work session. Keep the full
     # visual evidence with the in-repo receipt so Claude Code can audit it later.
@@ -955,7 +980,7 @@ def cmd_save(a, repo):
     qa_copy = scratch_dir(repo) / "qa" / f"{it['id']}.qa.json"
     qa_copy.parent.mkdir(parents=True, exist_ok=True)
     qa_copy.write_bytes(qa_path_.read_bytes())
-    print(f"saved {dest.relative_to(repo).as_posix()} ({len(data)} bytes, unmodified) after {attempts} attempt(s); receipt written")
+    print(f"saved {dest.relative_to(repo).as_posix()} ({len(data)} bytes, unmodified): attempt {n}, {attempts} generated; receipt written")
     if fails:
         print("saved with FAIL tripwires recorded in the receipt: the reviewer will see them")
     print(f"next: run `{helper()} status` for the next action")

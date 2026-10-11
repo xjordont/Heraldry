@@ -46,7 +46,7 @@ This document summarises the project, its decisions and the illustration workflo
    - for each item: `show`, then generate with the verbatim prompt and listed references, then `check`, a visual inspection, the `fidelity_gate.py` ten-criterion QA record, and `save --qa-file --model`;
    - delivers each image with `delivery_guard.py ship --execute` (a validated push to `main` through LFS), with a contact sheet and style audit every ten images;
    - stops at the phase gate.
-3. **GitHub Actions:** `Intake ChatGPT artwork` ink-prepares the new images, records them as received in `production/art/SELECTIONS.json` and commits a review contact sheet.
+3. **GitHub Actions:** `Intake ChatGPT artwork` ink-prepares the new images, records them as received in `production/art/SELECTIONS.json` (no contact sheet is committed; Claude makes them locally with `tools/art_intake.py pending --sheet`).
 4. **Claude Code** reviews every image visually and records the review (as in `production/art/review/ANCHOR_REVIEW_2026-10-11.md`). It runs `tools/art_intake.py approve-anchors`, `approve --ids` or `reject --ids --reason "..."`; a rejection becomes a redo with its reason. Once the anchors are approved, it publishes the batch queue with `tools/art_gpt_pack.py --phase batch`.
 5. Only approved art is placed in the book, at the next requested build.
 

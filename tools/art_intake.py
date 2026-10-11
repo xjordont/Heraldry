@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 """Intake for ChatGPT Work artwork.
 
-  scan               ink-prepare every new image in assets/art/incoming/ named <catalog id>.png|.jpg|.webp,
-                     record it in SELECTIONS.json as status 'received' (route gpt) and write a review sheet
+  scan               ink-prepare every new image in assets/art/incoming/ named <catalog id>.png|.jpg|.webp and
+                     record it in SELECTIONS.json as status 'received' (route gpt)
   approve --ids ...  orchestrator approval after visual review ('approved'; anchors: 'anchor-approved')
   approve-anchors    mark the received GPT anchors approved and make them the batch references
   reject --ids ... [--reason TEXT]   reject (the entry returns to the queue; the reason is shown to the operator as a redo)
-  pending            received images awaiting review, flagged ones first (the reviewer opens those at full size and
-                     reviews the rest from the intake contact sheets)
+  pending [--sheet]  received images awaiting review, flagged ones first; --sheet also writes contact sheets of them
+                     to build/art/review/ (not committed; fetches their LFS ink files first). The reviewer opens flagged
+                     ones at full size and reviews the rest from the sheets
 
 Only 'approved'/'anchor-approved' art is placed in the book (tools/build_book.py)."""
-import argparse, hashlib, json, re, sys
+import argparse, hashlib, json, re, subprocess, sys
 from pathlib import Path
 from PIL import Image
 
@@ -21,7 +22,8 @@ from art_ink import prep  # noqa: E402
 
 INCOMING = ROOT / "assets/art/incoming"
 RECEIPTS = ROOT / "production/art/gpt/RECEIPTS.jsonl"
-REVIEW = ROOT / "production/art/review"
+REVIEW = ROOT / "build/art/review"      # local review sheets; never committed (one image per push would bloat history)
+IMAGE_SUFFIXES = (".png", ".jpg", ".jpeg", ".webp")
 
 
 def receipts():
@@ -45,8 +47,8 @@ def needs_pull():
     sels = g.load(g.SELECTIONS, {})
     ents = {e["id"] for e in g.entries()}          # same filter as scan: legacy masters are never recorded, so never fetch them
     out = []
-    for f in sorted(INCOMING.glob("*.png")):
-        if f.stem not in ents:
+    for f in sorted(INCOMING.iterdir()):
+        if f.suffix.lower() not in IMAGE_SUFFIXES or f.stem not in ents:
             continue
         with f.open("rb") as fh:
             data = fh.read(300)
@@ -62,7 +64,7 @@ def scan(a):
     queue = {x["id"]: x for x in g.load(ROOT / "production/art/gpt/QUEUE.json", {"items": []})["items"]}
     new = []
     for f in sorted(INCOMING.iterdir()):
-        if f.suffix.lower() not in (".png", ".jpg", ".jpeg", ".webp") or f.stem not in ents:
+        if f.suffix.lower() not in IMAGE_SUFFIXES or f.stem not in ents:
             continue
         data = f.read_bytes()
         if data[:7] == b"version":   # Git LFS pointer, not the image
@@ -87,26 +89,44 @@ def scan(a):
         info = prep(f, ink)
         im = Image.open(f)
         r = rec.get(f.stem, {})
+        made_in = r.get("surface") or "ChatGPT image generation"
         sels[f.stem] = {"family": e["family"], "title": e["title"], "heading_id": e.get("heading_id"), "route": "gpt",
                         "spec_sha256": e["spec_sha256"], "prompt_sha256": r.get("prompt_sha256") or queue.get(f.stem, {}).get("prompt_sha256"),
                         "status": "received", "received_at": g.now(),
-                        "surface": r.get("surface", "ChatGPT Work image generation"), "model": r.get("model", "not recorded"),
+                        "surface": made_in, "model": r.get("model", "not recorded"),
                         "notes": r.get("notes", ""), "intake_warnings": warn,
                         "master": {"path": str(f.relative_to(ROOT)), "sha256": h, "px": list(im.size)},
                         "ink": {"path": info["dst"], "sha256": hashlib.sha256(ink.read_bytes()).hexdigest(), "px": info["ink_px"],
                                 "flags": info["flags"], "max_print_w_in_300ppi": info["max_print_w_in_300ppi"]},
-                        "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn."}
+                        "provenance": f"AI-generated in {made_in} from the recorded prompt; not hand-drawn."}
         new.append(f.stem)
     g.save(g.SELECTIONS, sels)
-    if new:
-        REVIEW.mkdir(parents=True, exist_ok=True)
-        stamp = g.now()[:19].replace(":", "")
-        for k in range(0, len(new), 24):
-            g.sheet(new[k:k + 24], REVIEW / f"intake-{stamp}-{k // 24 + 1}.png", cell=420, cols=6)
-            p = REVIEW / f"intake-{stamp}-{k // 24 + 1}.png"
-            Image.open(p).convert("RGB").save(p.with_suffix(".jpg"), quality=82)
-            p.unlink()
     print(json.dumps({"received": new}))
+
+
+def review_sheets(ids):
+    """Contact sheets (24 per sheet) of received images, in build/art/review/. Ink files still held as LFS
+    pointers are fetched first, and only those."""
+    sels = g.load(g.SELECTIONS, {})
+    ptr = []
+    for i in ids:
+        p = sels[i]["ink"]["path"]
+        with (ROOT / p).open("rb") as fh:
+            if fh.read(7) == b"version":
+                ptr.append(p)
+    if ptr:
+        subprocess.run(["git", "-C", str(ROOT), "lfs", "pull", "--include", ",".join(ptr), "--exclude", ""], check=True)
+    REVIEW.mkdir(parents=True, exist_ok=True)
+    for old in REVIEW.glob("pending-*.jpg"):
+        old.unlink()
+    out = []
+    for k in range(0, len(ids), 24):
+        p = REVIEW / f"pending-{k // 24 + 1}.png"
+        g.sheet(ids[k:k + 24], p, cell=420, cols=6)
+        Image.open(p).convert("RGB").save(p.with_suffix(".jpg"), quality=82)
+        p.unlink()
+        out.append(p.with_suffix(".jpg").relative_to(ROOT).as_posix())
+    return out
 
 
 def set_status(ids, status, reason=None):
@@ -158,9 +178,14 @@ def pending(a):
         if v.get("intake_warnings") or (v.get("ink") or {}).get("flags"):
             flags.append("intake:" + ",".join((v.get("intake_warnings") or []) + ((v.get("ink") or {}).get("flags") or [])))
         rows.append((0 if flags else 1, v.get("family", ""), i, r.get("variants_tried"), "; ".join(flags) or "clean"))
-    for _, fam, i, n, f in sorted(rows):
+    rows.sort()
+    for _, fam, i, n, f in rows:
         print(f"{i}\t{fam}\tattempts={n}\t{f}")
-    print(f"{len(rows)} received awaiting review ({sum(1 for r in rows if r[0] == 0)} flagged). Sheets: production/art/review/intake-*.jpg")
+    print(f"{len(rows)} received awaiting review ({sum(1 for r in rows if r[0] == 0)} flagged).")
+    if a.sheet and rows:
+        print("Sheets, in the order above: " + ", ".join(review_sheets([r[2] for r in rows])))
+    elif rows:
+        print("Contact sheets: tools/art_intake.py pending --sheet")
 
 
 def main():
@@ -169,6 +194,7 @@ def main():
     ap.add_argument("--ids", nargs="*", default=[])
     ap.add_argument("--by", default="orchestrator visual review")
     ap.add_argument("--reason", default=None, help="with reject: why, in a sentence the operator can turn into a correction")
+    ap.add_argument("--sheet", action="store_true", help="with pending: also write contact sheets to build/art/review/")
     a = ap.parse_args()
     if a.cmd == "scan":
         scan(a)

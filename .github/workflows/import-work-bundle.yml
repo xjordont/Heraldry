@@ -62,7 +62,7 @@ jobs:
             if [ -n "$NEW" ]; then git lfs pull --include="$NEW" --exclude=""; fi
             python "$RUNNER_TEMP/import_bundles.py"
             python tools/art_intake.py scan
-            git add assets/art/incoming assets/art/ink production/art/gpt/RECEIPTS.jsonl production/art/SELECTIONS.json production/art/review production/art/work/IMPORTED.json
+            git add assets/art/incoming assets/art/ink production/art/gpt/RECEIPTS.jsonl production/art/SELECTIONS.json production/art/work/IMPORTED.json
             if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
             git commit -q -m "art: import ChatGPT Work review bundle and intake"
             if git push -q origin HEAD:main; then exit 0; fi
