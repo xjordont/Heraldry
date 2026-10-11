@@ -1,8 +1,8 @@
 {
   "zip": "dist/Heraldry_RC492_release.zip",
-  "bytes": 168781103,
+  "bytes": 168782683,
   "files": 345,
-  "sha256": "84bcb2b28b8229b351a8bfda6fac5d996b4d1354c7bd5f3cc970b62614222990",
+  "sha256": "405c1df4d6e69d1d3494be66a92fa1be2143379b5f192b1faffae3cbb8538ed0",
   "status": "PASS",
   "duplicate_entries": [],
   "checksums_verified": 344,
