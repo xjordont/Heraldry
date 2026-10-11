@@ -1,5 +1,7 @@
 # Release status — Heraldry Skirmish RC492
 
+Build policy (owner, 2026-10-11): PDFs are rebuilt only on request. `dist/` and the build evidence below describe the last requested build; when the source or art has moved past it, the table says so. Last build: 2026-10-11, RC492 with the six ChatGPT Work anchors placed (inkjet PDF 1cef40de, 598 interior pages).
+
 Active revision and hashes: `source/versions.json`. Current build evidence: `production/build-provenance.json`, `production/qa/STATUS.json` and the scoped visual/figure ledgers. RC484–RC486 remain unchanged.
 
 | Area | Status | Evidence and scope |
@@ -7,7 +9,7 @@ Active revision and hashes: `source/versions.json`. Current build evidence: `pro
 | RC492 owner corrections | PASS | Basilisk coded L without the ox comparison; Undermarches 6 Shadow Brand reverted to the allied Spectre Summon; art size words reverted. Figure gate 57/57; pages 280 and 434 inspected; 19/19 checks PASS on RC492 |
 | RC489/RC490 audit resolution | PASS | Independent RC488 manuscript and art audits resolved: RC489 (31 owner-approved patches) and RC490 (correction of a duplicated clause). Figure gate 57/57 with 0 open; every changed page inspected; 19/19 checks PASS on RC490. RC491 settled the Desert Naga flavour (owner); its Noxcloth reward was reverted in RC492; judgement-call wording left as written |
 | RC488 owner refinements | PASS | 13 owner-instructed patches: Undead Champion War Maul; Stone Sentinel stone greatsword; Orc and White Court Guard one-handed weapon plus Shield Wall; Scorpion and Frost Giant descriptions; Noxcloth size M; Mire 2 and 5 deploy only Mire creatures. FIG-52 redrawn, independent figure gate 57/57 with 0 open. 597 interior pages, 11 changed pages inspected, 19/19 checks PASS. Basilisk/Medusa Petrifying Gaze kept unchanged (owner, 2026-10-10) |
-| Artwork route | ChatGPT Work (owner 2026-10-10) | Queue, prompts and intake workflow ready; 275 planned illustrations; 1 received (Greythorn), none approved or placed yet |
+| Artwork route | ChatGPT Work (owner 2026-10-10) | 275 planned illustrations; 6 anchors approved (Greythorn plus 5 ChatGPT Work calibration images, `art/review/ANCHOR_REVIEW_2026-10-11.md`); 5 placed in the last build; the batch queue is not yet published |
 | Manuscript repairs | COMPLETE | F01–F21 and U01–U06 resolved through one owner-authorized 48-patch batch; exact archived reconstruction and immutable parent hashes verified |
 | Intentional item values | PRESERVED | All 835 printed Cost/Value cells unchanged; development pricing formula/multipliers and quality-table Value columns removed |
 | Repository tests | PASS | 17 regression tests; 8 source preflight checks; locked dependencies installed before CI tests |
@@ -16,7 +18,7 @@ Active revision and hashes: `source/versions.json`. Current build evidence: `pro
 | One-page keeps | PASS | 1,835 units audited, 1,539 fit-capable, no avoidable splits or missing coverage |
 | Navigation | PASS | Current index/bookmark/internal-link and section-reference audits pass |
 | Instructional figures | PASS (scoped) | 57 source-bound figures, no stale reviews or open major/minor findings; current review by repair author, historical independent review retained |
-| Visual QA | PASS (scoped) | All 597 cream interior pages at contact-sheet scale; nineteen detailed pages, inherited blank, covers, calibration and overscan specimen reviewed |
+| Visual QA | PASS (scoped) | Last build: 598 pages, delta-reviewed against the reviewed 597-page RC492 PDF (changed pages 4-5, 11-14, 99-115, 265 and 277 inspected); earlier: all 597 cream interior pages at contact-sheet scale; nineteen detailed pages, inherited blank, covers, calibration and overscan specimen reviewed |
 | Inkjet files | PASS (automated) | Cream/white Letter interiors, identical pagination, embedded fonts and safe essential text; calibration reviewed |
 | Package | PASS | Archive uniqueness, integrity and checksums verified by `qa/package-audit.json`; GitHub CI rebuilds delivery independently |
 | Artwork | Existing approved masters retained | Proposed replacement spot art is withheld; new candidate approval remains separate work |

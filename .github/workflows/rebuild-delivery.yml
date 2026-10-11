@@ -1,10 +1,6 @@
 name: Rebuild verified delivery
+# Build on request only (owner decision 2026-10-11): run this manually when the owner asks for a new PDF.
 on:
-  push:
-    branches: [main]
-    paths:
-      - production/build-provenance.json
-      - production/qa/visual-review.json
   workflow_dispatch:
 permissions:
   contents: read
