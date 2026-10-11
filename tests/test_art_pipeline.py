@@ -103,8 +103,9 @@ class ArtPipeline(unittest.TestCase):
         pack, g, ents, (q, prompts) = self._batch_queue()
         cfg = g.CFG["gpt_reference_sets"]
         scene_only = {c for c in cfg["sets"]["scene"]} | {"assets/art/incoming/ART-BAS-GREYTHORN.png"}
-        figure_only = {"assets/art/style/STYLE-REF-03-figure-spotblack.jpg"} | {
+        figure_only = {r for s in ("creature", "person", "still") for r in cfg["sets"][s] if "/" in r} | {
             f"assets/art/incoming/{i}.png" for s in ("creature", "person") for i in cfg["sets"][s] if "/" not in i}
+        self.assertFalse(scene_only & figure_only, "scene and figure reference sets are disjoint")
         self.assertEqual(q["schema"], 2)
         self.assertEqual(q["count"], len(ents) - len(g.CFG["gpt_anchor_ids"]))
         for it in q["items"]:
@@ -112,11 +113,13 @@ class ArtPipeline(unittest.TestCase):
             self.assertTrue(1 <= len(refs) <= cfg["max_refs"], it["id"])
             self.assertEqual(len(refs), len(set(refs)), it["id"])
             self.assertNotIn(f"assets/art/incoming/{it['id']}.png", refs, "an entry never references itself")
+            self.assertFalse(set(refs) & {"assets/art/style/STYLE-REF-01-scene-hatching.jpg", "assets/art/style/STYLE-REF-02-panorama-line.jpg"},
+                             "the clean engraved samples were superseded by the gritty set (owner 2026-10-11)")
+            self.assertFalse([r for r in refs if "/incoming/" in r], "generated images are never references")
             if it["register"] == "scene":
-                self.assertFalse(set(refs) & {r for r in figure_only if "STYLE-REF-03" in r or "MON-" in r or "CLA-" in r or "ANC-" in r}, it["id"])
+                self.assertFalse(set(refs) & figure_only, it["id"])
             else:
-                self.assertFalse(set(refs) & {"assets/art/style/STYLE-REF-01-scene-hatching.jpg", "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-                                              "assets/art/incoming/ART-BAS-GREYTHORN.jpg", "assets/art/incoming/ART-CLI-THE-GREENMARK.png"}, it["id"])
+                self.assertFalse(set(refs) & scene_only, it["id"])
             self.assertIn(it["size"], ("1536x1024", "1024x1536", "1024x1024"))
             self.assertEqual(it["print_w_in"], g.CFG["families"][it["family"]]["print_w_in"])
         self.assertEqual({it["max_attempts"] for it in q["items"] if it["family"] in ("cover", "chapter")}, {5})

@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-11T14:34:58+00:00",
+ "generated_at": "2026-10-11T15:16:10+00:00",
  "max_references": 3,
  "push_every": 1,
  "review_every": 10,
@@ -13,12 +13,13 @@
    "register": "scene",
    "title": "Deepwarden",
    "prompt": "production/art/gpt/prompts/ART-BAS-DEEPWARDEN.txt",
-   "prompt_sha256": "65839fce95be2ce640d050414e42cdd54bd16a965d24985e42347793938aa31c",
+   "prompt_sha256": "69202fa06a532cf077a467cf6416b48a73acd67632b7c0913d7a6fcfdc35babd",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -39,12 +40,13 @@
    "register": "scene",
    "title": "Hearthhold",
    "prompt": "production/art/gpt/prompts/ART-BAS-HEARTHHOLD.txt",
-   "prompt_sha256": "ce8bbe92dd96c0f0509397618cd88c7b92b6d16ad65edd1956123a812e83ca40",
+   "prompt_sha256": "1c1b541de07d24d632aa9d4a64f10b07a37375d1f4858ab66dc629c5a9c5e178",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -63,12 +65,13 @@
    "register": "scene",
    "title": "Reedmarch",
    "prompt": "production/art/gpt/prompts/ART-BAS-REEDMARCH.txt",
-   "prompt_sha256": "f05c962c278b96d280edf99f0bab7950f3707e19c5b4dcf526070b4351abe7f3",
+   "prompt_sha256": "8566758ed73101a04b1f411cd64b99022aa27148e0a0638822ece479e09b9de5",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -87,12 +90,13 @@
    "register": "scene",
    "title": "Sablekeep",
    "prompt": "production/art/gpt/prompts/ART-BAS-SABLEKEEP.txt",
-   "prompt_sha256": "c9d38aaf0308fd128a3d3ba7d29336eab4cd74eff3c532a74c0d3c5e07d04383",
+   "prompt_sha256": "b3465077ff6b0c647d199bdfcc22195c9eedef80c709dbe5dc30f82e43b5440d",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -111,12 +115,13 @@
    "register": "scene",
    "title": "Saltspire",
    "prompt": "production/art/gpt/prompts/ART-BAS-SALTSPIRE.txt",
-   "prompt_sha256": "0952f13db3cadeb66a564c65d0103631e0e39edcd96f4cc64260024462722b64",
+   "prompt_sha256": "d064d4056982dba69e6ef7f0c523c8251885726675cc7abf4c7a0f49e809a49c",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -135,12 +140,13 @@
    "register": "scene",
    "title": "The Ashlands",
    "prompt": "production/art/gpt/prompts/ART-CLI-THE-ASHLANDS.txt",
-   "prompt_sha256": "edb40bbedf95af61e7e26b5b4345d9a14f8c201d430ab80cb64186c595a5ac44",
+   "prompt_sha256": "616a30c9b9dc373796dd6cb6af91c56751226b589e8e05a572adb2e566f72308",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -159,12 +165,13 @@
    "register": "scene",
    "title": "The Mire",
    "prompt": "production/art/gpt/prompts/ART-CLI-THE-MIRE.txt",
-   "prompt_sha256": "96f4c743d43d32ee30a6dc2e8658307acdc3b5d386d937dba5ca82389d580554",
+   "prompt_sha256": "2c7a3d5e992eaf0215741b7dd947ee16611e05f760f21987a46728ea185cf833",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -183,12 +190,13 @@
    "register": "scene",
    "title": "The Pale City",
    "prompt": "production/art/gpt/prompts/ART-CLI-THE-PALE-CITY.txt",
-   "prompt_sha256": "5a1d0320b9410389a7dce96d687fb5ac109f7cbc89d25d600b86a050bd3ff86f",
+   "prompt_sha256": "95157d1a7c7779d7d2adb2d47f5d7833351981f40c4c4964e7d2f76a20b3b534",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -207,12 +215,13 @@
    "register": "scene",
    "title": "The Sun-Drowned",
    "prompt": "production/art/gpt/prompts/ART-CLI-THE-SUN-DROWNED.txt",
-   "prompt_sha256": "854fb944eb48b46e4642926e45973e594d29fee5d471d381938939183629c5ac",
+   "prompt_sha256": "bc0a4ef8b8697c780459355d0ca891851b0113d8041fd9c2984a6baf53f2d8a9",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -231,12 +240,13 @@
    "register": "scene",
    "title": "The Undermarches",
    "prompt": "production/art/gpt/prompts/ART-CLI-THE-UNDERMARCHES.txt",
-   "prompt_sha256": "236b4b24fb7f18a4604792aa219c96a0ced0d06c2561a80aa13cf8b4a4b93b6c",
+   "prompt_sha256": "b1622df34a9e7188f8687890508440d05652bed2753208d98778ba36a8ba9250",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -255,10 +265,12 @@
    "register": "creature",
    "title": "Ashen Revenant",
    "prompt": "production/art/gpt/prompts/ART-MON-ASHEN-REVENANT.txt",
-   "prompt_sha256": "2cd06ccce626915ea9aa7e42b27cc9efa6f16096b206d80d8437d4cb4013ee2b",
+   "prompt_sha256": "f40eff6a128fe70eea85002a0f53ada2eab1f3c48163ca0ae1534d5a68b45a64",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -277,10 +289,12 @@
    "register": "creature",
    "title": "Bandit",
    "prompt": "production/art/gpt/prompts/ART-MON-BANDIT.txt",
-   "prompt_sha256": "d0ee8d8e18b307635e01b086682755173bb8bbf7fec6225c9d06fbab2e1d9c14",
+   "prompt_sha256": "ec9ae8b80d123d677892bf2e55ec0d4a3a7b5c70f31e9bdbbfa8b3b5fe448329",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -299,10 +313,12 @@
    "register": "creature",
    "title": "Bandit Captain",
    "prompt": "production/art/gpt/prompts/ART-MON-BANDIT-CAPTAIN.txt",
-   "prompt_sha256": "16b7dbaf5469c0d7ee3fcddd81dea5d71d3b676a0d06a5d624798a18ebf91912",
+   "prompt_sha256": "6d112fb3f3f11da52be6df09eea52e39c0e344db7132b789bd2f0f760bd31fee",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -322,10 +338,12 @@
    "register": "creature",
    "title": "Banshee",
    "prompt": "production/art/gpt/prompts/ART-MON-BANSHEE.txt",
-   "prompt_sha256": "457ed394a1024d9fabfb07a2f266f5e51e621dd3eac33d8edd49f3199b0c85c7",
+   "prompt_sha256": "ec9ab4db95121fa0b9a9573b8db2e665eb3b22f4bcb9f2579f30c7497176e689",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -344,10 +362,12 @@
    "register": "creature",
    "title": "Basilisk",
    "prompt": "production/art/gpt/prompts/ART-MON-BASILISK.txt",
-   "prompt_sha256": "5518a358208f794355d078f03592a9f12d7f89061dbf12904350dc9c12b6c205",
+   "prompt_sha256": "36b45ecad51750c84cb70c78f3731a8dc4e3403d144a2598c3cbb38f3ed55389",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -369,10 +389,12 @@
    "register": "creature",
    "title": "Beastman",
    "prompt": "production/art/gpt/prompts/ART-MON-BEASTMAN.txt",
-   "prompt_sha256": "cba8a44a1faa5dfa303ce86d71e7cd34a566223fd04223bc7f2647c92d109461",
+   "prompt_sha256": "21466bdb72e66f15914fe08970a9e088e105ab18632f1bee4f05ac3059e16bb1",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -391,10 +413,12 @@
    "register": "creature",
    "title": "Black Dragon",
    "prompt": "production/art/gpt/prompts/ART-MON-BLACK-DRAGON.txt",
-   "prompt_sha256": "3e3192420edbb06d0b28d5eff02dd27349950818eb5ded9dc3d548c477b27988",
+   "prompt_sha256": "5e420797a0f70087f6101639fc09c6f893b7bf82c44fca95cc408a93f4508df8",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -413,10 +437,12 @@
    "register": "creature",
    "title": "Blackfire Hound",
    "prompt": "production/art/gpt/prompts/ART-MON-BLACKFIRE-HOUND.txt",
-   "prompt_sha256": "ae738afa08ef53ec19a2f8894ccd71e1597abe81ee741ebd3ce4ffdf56a2e243",
+   "prompt_sha256": "4910fdb8d00e8480673b33c6c41880d359361b235f43a1b6c157366c0b6828ac",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -435,10 +461,12 @@
    "register": "creature",
    "title": "Blackwater Wight",
    "prompt": "production/art/gpt/prompts/ART-MON-BLACKWATER-WIGHT.txt",
-   "prompt_sha256": "6ebdf20026858894e8bd29082af1d67223a5db4eec415e8f50ed0e059c2feb3f",
+   "prompt_sha256": "02c4de7662f7473d8c6eab2b28a1fa675eeaf5db621d8ff56b1806203aeff9f7",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -458,10 +486,12 @@
    "register": "creature",
    "title": "Blood Ape",
    "prompt": "production/art/gpt/prompts/ART-MON-BLOOD-APE.txt",
-   "prompt_sha256": "0bb1712ff184962c0130f62d2e93e7917553a0e08e97bdc616b4d100c3c7f7e1",
+   "prompt_sha256": "000f739f0c16f227ae83343e268b63ce9c6d7fc92d5b871852313eb9671aa6f1",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -480,10 +510,12 @@
    "register": "creature",
    "title": "Blue Dragon",
    "prompt": "production/art/gpt/prompts/ART-MON-BLUE-DRAGON.txt",
-   "prompt_sha256": "2893a136a1b81bb9a49965e689af556b80ab6aeda9dc82b0493af3df6df3430e",
+   "prompt_sha256": "5b99e92830f364b4bc6232c8c84bd6cf6876d09343b76cb36a1b1fc3cb4dc4a8",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -502,10 +534,12 @@
    "register": "creature",
    "title": "Bogling",
    "prompt": "production/art/gpt/prompts/ART-MON-BOGLING.txt",
-   "prompt_sha256": "c91af22f06c5604fc53fee63884a96225c18f46754f5584c26324d4af77e9b9b",
+   "prompt_sha256": "558285bf2398e672cc8839014d13adef11f8bde2d7cf462a4c6257af51717595",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -524,10 +558,12 @@
    "register": "creature",
    "title": "Brass Golem",
    "prompt": "production/art/gpt/prompts/ART-MON-BRASS-GOLEM.txt",
-   "prompt_sha256": "cc2cf9266ef2317d915bafeaa6b7f11c3ade13513374034c95fce0121d3fa2b6",
+   "prompt_sha256": "4e394a658320373a32666fe1d43e5c15d4aae3aa06570a5560828cbf11902bbb",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -546,10 +582,12 @@
    "register": "creature",
    "title": "Briarling",
    "prompt": "production/art/gpt/prompts/ART-MON-BRIARLING.txt",
-   "prompt_sha256": "ae8d838bc96f2421f1229270abe0e6b1aa77538cd41ce00318018d4bc03f7e32",
+   "prompt_sha256": "c148484eb8b53aa3943bba9a168a8ffe1346444ec1a6d9672c66672c54362ec3",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -568,10 +606,12 @@
    "register": "creature",
    "title": "Bugbear",
    "prompt": "production/art/gpt/prompts/ART-MON-BUGBEAR.txt",
-   "prompt_sha256": "6943831314790161824f88c823ad3aa5e4350aa89d7b826680e82aaaf6864dfe",
+   "prompt_sha256": "ee4f326768852a636db8778afb42bce7c9bb0f79dd2858548550cb0c1edf6343",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -590,10 +630,12 @@
    "register": "creature",
    "title": "Burrowmaw",
    "prompt": "production/art/gpt/prompts/ART-MON-BURROWMAW.txt",
-   "prompt_sha256": "01c2bd0fc831549279f3bf9b77ed0207de29261077fa75c2c75d958c32d753df",
+   "prompt_sha256": "2bdb045d305ae83de853a9fa08524da6bd0ebafadf2589383beaeb5c17438b1b",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -612,10 +654,12 @@
    "register": "creature",
    "title": "Cave Goblin",
    "prompt": "production/art/gpt/prompts/ART-MON-CAVE-GOBLIN.txt",
-   "prompt_sha256": "abe917922f312f6b75ea8b49b58fb22c169cfb7021bb4c20db2339cf9a092bf5",
+   "prompt_sha256": "3c5091dda6dc97f5d4c67c35952983a2c0fd406c7e706ed22ab84cd7aa5ebfe8",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -634,10 +678,12 @@
    "register": "creature",
    "title": "Corpsehound",
    "prompt": "production/art/gpt/prompts/ART-MON-CORPSEHOUND.txt",
-   "prompt_sha256": "dc820b89b20ee190386c7168f4dcf08faac4e019b59c54686735fd121fa83728",
+   "prompt_sha256": "99c3f26e0f938774d62cfd5dba5384ac495b72332703180257b0bcfd701f2476",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -656,10 +702,12 @@
    "register": "creature",
    "title": "Crocodile",
    "prompt": "production/art/gpt/prompts/ART-MON-CROCODILE.txt",
-   "prompt_sha256": "0c90de147dc712aa8c3ad299ebd9e44a463c7c2b39cd269e9b1d945258ee08ea",
+   "prompt_sha256": "9936d1ccf7b144aab69ed47fd0c87c35cf59d774961eae8b66d6e0d5feab849a",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -680,10 +728,12 @@
    "register": "creature",
    "title": "Cryptstrangler",
    "prompt": "production/art/gpt/prompts/ART-MON-CRYPTSTRANGLER.txt",
-   "prompt_sha256": "6126fbeb0caacf9e507a25bbfbfd0b08f5f4a5b35e14ab38c6aac3d60445209b",
+   "prompt_sha256": "b94f50de0da1ab93af984e72bdbc49e0b955dba26e5e7b34124edb2d8947d69f",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -703,10 +753,12 @@
    "register": "creature",
    "title": "Deep Elf Priest",
    "prompt": "production/art/gpt/prompts/ART-MON-DEEP-ELF-PRIEST.txt",
-   "prompt_sha256": "3735690d2cc7e4408b82bdefc64e844177567f178cafa6057f220c3a87938d4d",
+   "prompt_sha256": "81587bad1b7cca130b94e6837293a20f3677273890c03f8b41721ed016e98a69",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -729,10 +781,12 @@
    "register": "creature",
    "title": "Deep Elf Warrior",
    "prompt": "production/art/gpt/prompts/ART-MON-DEEP-ELF-WARRIOR.txt",
-   "prompt_sha256": "2c810b168d86694565cd6652a2281db8e6b4f80d8f740e8231fbd5cce9d267a3",
+   "prompt_sha256": "ec70f82a2fb4b1411d3b23a9436569dd88b070fa020b585c6023cbade61b74a3",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -753,10 +807,12 @@
    "register": "creature",
    "title": "Demon",
    "prompt": "production/art/gpt/prompts/ART-MON-DEMON.txt",
-   "prompt_sha256": "3ed417ad5634cbf37b622b951201a035fc57fe022f7a0e496fbd2e2a9f6e2413",
+   "prompt_sha256": "6f6184056be5195e76a018425e8fe2302334e6df94d34837277571cd2f3fefa3",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -775,10 +831,12 @@
    "register": "creature",
    "title": "Desert Naga",
    "prompt": "production/art/gpt/prompts/ART-MON-DESERT-NAGA.txt",
-   "prompt_sha256": "b00efc3ecaa7f5ff676372f0673cb1228d3b4709feabd98db4bb4e6cef572172",
+   "prompt_sha256": "057fa9f523bae10413f6c78865391881b4c3eff26d4325142b0e53f0c8059e61",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -798,10 +856,12 @@
    "register": "creature",
    "title": "Dire Bear",
    "prompt": "production/art/gpt/prompts/ART-MON-DIRE-BEAR.txt",
-   "prompt_sha256": "acf54a67349d664db6e812d256da34fa678b5621301f006b58be7db49aa83d29",
+   "prompt_sha256": "694464898895e01379d104a9546111762781e49ec18a9e6bb598ea9293948392",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -820,10 +880,12 @@
    "register": "creature",
    "title": "Dire Wolf",
    "prompt": "production/art/gpt/prompts/ART-MON-DIRE-WOLF.txt",
-   "prompt_sha256": "6a4ac1bcf761f66c860d4e90a2243a2d789ff0e34d4a0be5aa905eb596547013",
+   "prompt_sha256": "35d9413a7df71d9c7cee50f74a48e5819b6e06d56577e83b71c8a96fd5b06fb1",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -843,10 +905,12 @@
    "register": "creature",
    "title": "Dryad Grovewarden",
    "prompt": "production/art/gpt/prompts/ART-MON-DRYAD-GROVEWARDEN.txt",
-   "prompt_sha256": "7d67dd3a618c0f63364df90c1d45135e05055eecf66536367db6a363dacf2862",
+   "prompt_sha256": "c44e9f0b6895265ebc79df048bf17d44ea0bae96ca720d4aba93474a1757e7c1",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -865,10 +929,12 @@
    "register": "creature",
    "title": "Elder Vrymk",
    "prompt": "production/art/gpt/prompts/ART-MON-ELDER-VRYMK.txt",
-   "prompt_sha256": "8cfba05de49bd8aca6b268b3f7143f834a36a11338f9fc38d8ea8a57421622b1",
+   "prompt_sha256": "e869005b76bdc3e9757d7bb5fd2c0aa32ffbcc5acca9f00d7be9b0beeeaa5ddd",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -889,10 +955,12 @@
    "register": "creature",
    "title": "Ember Skull",
    "prompt": "production/art/gpt/prompts/ART-MON-EMBER-SKULL.txt",
-   "prompt_sha256": "1276d2c2a7ba172854a6a31a81fc76e50280dfa803da778f965da48de07313ef",
+   "prompt_sha256": "323e578c9c26567eb30e6d21805b5c51287a751addeccac618726a54f6f97fb7",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -911,10 +979,12 @@
    "register": "creature",
    "title": "Evil Eye",
    "prompt": "production/art/gpt/prompts/ART-MON-EVIL-EYE.txt",
-   "prompt_sha256": "602980ec197c233b74b64d5068c9c9f4e1d3a67044ababeea01ca1898bd37b7d",
+   "prompt_sha256": "dd1305d7b37862f496b227a32fb07ededec08dc783003047007d7afce974fb40",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -935,10 +1005,12 @@
    "register": "creature",
    "title": "Fallen Paladin",
    "prompt": "production/art/gpt/prompts/ART-MON-FALLEN-PALADIN.txt",
-   "prompt_sha256": "c2ae78c9c08649b5b898a41dbde26528737b1a4d115a664c16d7f724e484cba5",
+   "prompt_sha256": "cf143962a12c48a167bb0b70216aa3d226e8335117a56d5ea22f3075e482160d",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -957,10 +1029,12 @@
    "register": "creature",
    "title": "Fire Beetle",
    "prompt": "production/art/gpt/prompts/ART-MON-FIRE-BEETLE.txt",
-   "prompt_sha256": "69fdd29792cc7bf47e539947eb22dcd864de3fb02644e55c17a2f639822b86ad",
+   "prompt_sha256": "f886e05b16afde753eea0855a199437e97448a100e41d09f0e56b0d25a12dbaa",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -981,10 +1055,12 @@
    "register": "creature",
    "title": "Fire Elemental",
    "prompt": "production/art/gpt/prompts/ART-MON-FIRE-ELEMENTAL.txt",
-   "prompt_sha256": "6ba7b8fc650256f99efed88eb4e4aa0c439970ff02c716916c961cc01c2fc068",
+   "prompt_sha256": "00852f35a9514f31cfc0c7bb36e22a79bd8ef17c4f87984677f04757854cf12c",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1003,10 +1079,12 @@
    "register": "creature",
    "title": "Forest Troll",
    "prompt": "production/art/gpt/prompts/ART-MON-FOREST-TROLL.txt",
-   "prompt_sha256": "b8c3316425f579c249385f754de7b64dfb3cdaa66a096e71fe9d84f2a43843dd",
+   "prompt_sha256": "75b6969a5ffcce5cee44650050e06dadb897c581ffca216943118e36a5fda0e4",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1025,10 +1103,12 @@
    "register": "creature",
    "title": "Forsaken Archer",
    "prompt": "production/art/gpt/prompts/ART-MON-FORSAKEN-ARCHER.txt",
-   "prompt_sha256": "565f246e27f4040e6964f4bfaec1b69889feb53b3f478115a0b21b3f505d3719",
+   "prompt_sha256": "becc522abe58d4c2e731a4d3277614a792175da9f7b5dcbf66f98670553bed82",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1049,10 +1129,12 @@
    "register": "creature",
    "title": "Forsaken Duelist",
    "prompt": "production/art/gpt/prompts/ART-MON-FORSAKEN-DUELIST.txt",
-   "prompt_sha256": "717b2b3836f1abdd198401887b7bef1643b618daca3b32a77c19aec5d6870fbc",
+   "prompt_sha256": "61a9f6db4ce0b217c9b2f25328f9457befabdccc0ac1c48c6f782233fed6f1d9",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1071,10 +1153,12 @@
    "register": "creature",
    "title": "Forsaken Knight",
    "prompt": "production/art/gpt/prompts/ART-MON-FORSAKEN-KNIGHT.txt",
-   "prompt_sha256": "fd128609ab924df54fcd5b0fbe1360126af1b51ddc95e603f2b2c271c78d6017",
+   "prompt_sha256": "ccb9bf45b19b5076a221c241b6a80971e8a624e4eb7723c8b6028d97f2aee1a6",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1093,10 +1177,12 @@
    "register": "creature",
    "title": "Frost Ghoul",
    "prompt": "production/art/gpt/prompts/ART-MON-FROST-GHOUL.txt",
-   "prompt_sha256": "560370d388366d816b5a13bfcae03609b35803276544cc2b0b6da34b0bd5dcfa",
+   "prompt_sha256": "60ac2767351c876ed62b2f0d1d1b331e1abd7cad753e36a5217392bb63d2d3a3",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1116,10 +1202,12 @@
    "register": "creature",
    "title": "Frost Giant",
    "prompt": "production/art/gpt/prompts/ART-MON-FROST-GIANT.txt",
-   "prompt_sha256": "124514ad1f37ff3a2aad2389d1191fe800e29c2c6e1ee2aa983d07059ecd3fda",
+   "prompt_sha256": "9d6267901d126008d1361619d6553d61b28244bd88718812c64240fbe00cbc81",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1138,10 +1226,12 @@
    "register": "creature",
    "title": "Frost Wyvern",
    "prompt": "production/art/gpt/prompts/ART-MON-FROST-WYVERN.txt",
-   "prompt_sha256": "be38e68b66c30dfe6a50920d173d323a7b712d65f4c2311147e87fbc26e9446f",
+   "prompt_sha256": "788293b3a64fbe00e7565fd595ba6095701ac923c0ba154402409ca089da9812",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1162,10 +1252,12 @@
    "register": "creature",
    "title": "Frozen Skeleton",
    "prompt": "production/art/gpt/prompts/ART-MON-FROZEN-SKELETON.txt",
-   "prompt_sha256": "5da2b6794e25093c91f17043bc4509a9ef09d00cc149849bcb5af04aab4098e9",
+   "prompt_sha256": "dba3a1d56ab45a2cc433769b0689706f62c826abf9ac554dd0141a467083d17a",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1184,10 +1276,12 @@
    "register": "creature",
    "title": "Gargoyle",
    "prompt": "production/art/gpt/prompts/ART-MON-GARGOYLE.txt",
-   "prompt_sha256": "d96d7e53615f799e116894b123e7534bf55eae1917ff14165d7ae5b76bd4dae5",
+   "prompt_sha256": "a88e3cc107cebf5ffd394cff94fc6670218b9a7aa2b04e55a62024a4d58d578b",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1207,10 +1301,12 @@
    "register": "creature",
    "title": "Gelid Fiend",
    "prompt": "production/art/gpt/prompts/ART-MON-GELID-FIEND.txt",
-   "prompt_sha256": "498b45b93b3673abe844911d16456f70af1b69f5a735ccc8b258ba1b04a5308f",
+   "prompt_sha256": "eddf4b4c160902ef69b84ac8d63c993988a83f638f6db1d348ba243b8131c816",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1229,10 +1325,12 @@
    "register": "creature",
    "title": "Ghoul",
    "prompt": "production/art/gpt/prompts/ART-MON-GHOUL.txt",
-   "prompt_sha256": "80c38c670b431b6462881621571de00dc42576e54920f0955354623b47f2df24",
+   "prompt_sha256": "51f403070aac64b263c3fefa40c3dd1308155bb1bb0a227dd37f25a80bf21d69",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1251,10 +1349,12 @@
    "register": "creature",
    "title": "Giant Bat",
    "prompt": "production/art/gpt/prompts/ART-MON-GIANT-BAT.txt",
-   "prompt_sha256": "c5872e290b78a63cf4d5b217bbbdec109ed99ba445cb4742a848e64593abf95b",
+   "prompt_sha256": "6c2631e8ce0439d3844a6a6b56b92de3e9b8ce955b364afef0c259b30d5d960d",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1276,10 +1376,12 @@
    "register": "creature",
    "title": "Giant Black Widow",
    "prompt": "production/art/gpt/prompts/ART-MON-GIANT-BLACK-WIDOW.txt",
-   "prompt_sha256": "c873062ed29177c0008ba0c571608785254b2a95ded1ff9db959617f17ecb577",
+   "prompt_sha256": "12e38622c5b202d8abfb46fcd4e93f91781b8a57ee6b9eb48631c7e00e6235ad",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1300,10 +1402,12 @@
    "register": "creature",
    "title": "Giant Centipede",
    "prompt": "production/art/gpt/prompts/ART-MON-GIANT-CENTIPEDE.txt",
-   "prompt_sha256": "fb835c5213682302621a4b8fe16bb0fe1b553acd86e26e78077187abbc702868",
+   "prompt_sha256": "d2e949ac34765a90a95e58a2c0ddd6b31bf922f2b77572c016af30bd2024cdf9",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1322,10 +1426,12 @@
    "register": "creature",
    "title": "Giant Constrictor",
    "prompt": "production/art/gpt/prompts/ART-MON-GIANT-CONSTRICTOR.txt",
-   "prompt_sha256": "372de0e30d0a7d122d95e588364ac95485a968d9e70755726d2775d254c74543",
+   "prompt_sha256": "155de977cec250db004f2734eb8a27511b54d84e1cf3919840e8896058080bf0",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1344,10 +1450,12 @@
    "register": "creature",
    "title": "Giant Scorpion",
    "prompt": "production/art/gpt/prompts/ART-MON-GIANT-SCORPION.txt",
-   "prompt_sha256": "10ad28695ab9932e279911c7fbaf1d145471b3b932684987afe9095272890856",
+   "prompt_sha256": "9d1d9564a2e6e3e980a3ee63651c5898339c8611eff015ded6eb83067c52b5ff",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1368,10 +1476,12 @@
    "register": "creature",
    "title": "Giant Skeleton",
    "prompt": "production/art/gpt/prompts/ART-MON-GIANT-SKELETON.txt",
-   "prompt_sha256": "087350b5dcdb5f8092c517c8aa831d2e61c38a143ef9a7791a674187088e87ff",
+   "prompt_sha256": "cb2074342d2a4a8c9f59de069b0829036f5fd1494ca956571dc0a405c4aa6ea8",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1390,10 +1500,12 @@
    "register": "creature",
    "title": "Giant Tarantula",
    "prompt": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
-   "prompt_sha256": "d4517512fb4353e68d24ee8f059c65d104f4888235e4d12ae8e0ac2c14f2e8e7",
+   "prompt_sha256": "da32148d94384dd43c4036ca42c75eff1cc33d646c91e993267eecaaf05c4521",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1414,10 +1526,12 @@
    "register": "creature",
    "title": "Gloom Hulk",
    "prompt": "production/art/gpt/prompts/ART-MON-GLOOM-HULK.txt",
-   "prompt_sha256": "ad6524cce56452db37e32dcd7925db7c71b7c72bc9a0b3dbe6ea0beac38bca7c",
+   "prompt_sha256": "512e8bed4fb059043824f5f82ec4edd53899d80f120cd87b96646ffc36db3ed6",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1438,10 +1552,12 @@
    "register": "creature",
    "title": "Gloomspore Jelly",
    "prompt": "production/art/gpt/prompts/ART-MON-GLOOMSPORE-JELLY.txt",
-   "prompt_sha256": "baadfdac466eeb47a5bf36c022f66fd485d5441db16a4651dc73fd53ea734d67",
+   "prompt_sha256": "ab43fb1f9d23ca97a4d33b009dfd5d4883af98ec0f3afb641df97093bbb647d7",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1460,10 +1576,12 @@
    "register": "creature",
    "title": "Gnoll",
    "prompt": "production/art/gpt/prompts/ART-MON-GNOLL.txt",
-   "prompt_sha256": "8ae933222866528cbf14521fcd95a0a8eee1115aab6aa6bdd867adce2822f9e1",
+   "prompt_sha256": "2371cef5f6ead7a43f0a85eeabe6ecd99b6d291c051182ce5aa63164f93d90e7",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1482,10 +1600,12 @@
    "register": "creature",
    "title": "Goblin",
    "prompt": "production/art/gpt/prompts/ART-MON-GOBLIN.txt",
-   "prompt_sha256": "e92c10569c0edd782be377a05ca43ae30f72dc13e89728c8af975a23bd7281cf",
+   "prompt_sha256": "c29fbf4ce278b846600a5babef72b1ed879b187c371691fe4fa0fd9e41103471",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1505,10 +1625,12 @@
    "register": "creature",
    "title": "Goblin Shaman",
    "prompt": "production/art/gpt/prompts/ART-MON-GOBLIN-SHAMAN.txt",
-   "prompt_sha256": "834645f99fbc24e943a4fe940577f167284e3d1e3175943507d2081892880746",
+   "prompt_sha256": "1b17274ff277ee2b2dab6ac7cefe3c5843a39739daa8c505eee3afb419829d4f",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1529,10 +1651,12 @@
    "register": "creature",
    "title": "Gorebeak Bear",
    "prompt": "production/art/gpt/prompts/ART-MON-GOREBEAK-BEAR.txt",
-   "prompt_sha256": "7dd81cf129ae3d085c4ee289e6920bdbe86f0075972d459a933cb00ee1d431a9",
+   "prompt_sha256": "03f5c935ba642cc70d8699a3fa90ae83ad4dcdbc104762d6d0443f804ba4412b",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1551,10 +1675,12 @@
    "register": "creature",
    "title": "Green Dragon",
    "prompt": "production/art/gpt/prompts/ART-MON-GREEN-DRAGON.txt",
-   "prompt_sha256": "ca26a2fc7e5917c9dae10d6239f46504ed766c012b0f9d87a2ca2eebbcd58f94",
+   "prompt_sha256": "07d8bc668d9b033cdb2cc23e28c909c79a34f252dadb49911417dcc579e1840c",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1573,10 +1699,12 @@
    "register": "creature",
    "title": "Harpy",
    "prompt": "production/art/gpt/prompts/ART-MON-HARPY.txt",
-   "prompt_sha256": "0d9728a5db2bfe40b1d8351773426f7fb96c17f626b839f7f6ff4b49f73e0649",
+   "prompt_sha256": "9e759ef7c015d3376275c33022e7b37efa967698d52facbc3f4909493706e256",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1597,10 +1725,12 @@
    "register": "creature",
    "title": "Hydra",
    "prompt": "production/art/gpt/prompts/ART-MON-HYDRA.txt",
-   "prompt_sha256": "8195e1fb3817d3144920e82957a36351e3d8669b1b4d90b2322ff4af800825ad",
+   "prompt_sha256": "4fb8e9baec9a8e53c403b15c7a083c1df9326bdc85eb226df0fedf6c4d6348c4",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1621,10 +1751,12 @@
    "register": "creature",
    "title": "Ice Elemental",
    "prompt": "production/art/gpt/prompts/ART-MON-ICE-ELEMENTAL.txt",
-   "prompt_sha256": "0652bc88f9974b7ce649ff8dbe5da0672490634b862dcf159eb63d218caad32f",
+   "prompt_sha256": "81d7a7013f4483be5ed798ba6b0d75cd5bdeeb605d18f2d84392cc05e8ba20c0",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1643,10 +1775,12 @@
    "register": "creature",
    "title": "Ice Wraith",
    "prompt": "production/art/gpt/prompts/ART-MON-ICE-WRAITH.txt",
-   "prompt_sha256": "ae5e1260d02a7a9f93a4a3e77e5ca3d11fc59cfc8de5245b37b956f25c042172",
+   "prompt_sha256": "f4c82c6ae04de48fb0c28d27ee63f78979cfe6092c02b59ff39014ec4d734e6e",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1665,10 +1799,12 @@
    "register": "creature",
    "title": "Imp",
    "prompt": "production/art/gpt/prompts/ART-MON-IMP.txt",
-   "prompt_sha256": "7373a969378bc07e167bb275c4e5c8e284222f52e4aa03cec242df53ca83eb6c",
+   "prompt_sha256": "32326b177bd5b42a87998610ac6edb66d776419e5e6368205afe10f532306c08",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1687,10 +1823,12 @@
    "register": "creature",
    "title": "Iron Golem",
    "prompt": "production/art/gpt/prompts/ART-MON-IRON-GOLEM.txt",
-   "prompt_sha256": "04d4c89daa659cb890679efbb2e040c1e07fbf5c1ef46b8c92f293fbc56be6c0",
+   "prompt_sha256": "a62f0efe891b61e45d8c5ad034f8484a8e8ff23af3f0f24559c1a6df54f91df6",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1710,10 +1848,12 @@
    "register": "creature",
    "title": "Kobold",
    "prompt": "production/art/gpt/prompts/ART-MON-KOBOLD.txt",
-   "prompt_sha256": "b82f96d55ab8c63981c3c165fe9de50add6cc411acb27b098aa104bd77d5539d",
+   "prompt_sha256": "db877e47e3493919343f90bcf5877adff1e4847781d44841727a1acc9642be63",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1733,10 +1873,12 @@
    "register": "creature",
    "title": "Lich",
    "prompt": "production/art/gpt/prompts/ART-MON-LICH.txt",
-   "prompt_sha256": "9b803a9a414470764230e215a8e617fba908e8739f3d9619d7701d17e6715e41",
+   "prompt_sha256": "015eec0febf3ef16aef16b2f82c0bbbcfc60cf1e9df74e4dad71397f2156912f",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1755,10 +1897,12 @@
    "register": "creature",
    "title": "Lizardfolk Hunter",
    "prompt": "production/art/gpt/prompts/ART-MON-LIZARDFOLK-HUNTER.txt",
-   "prompt_sha256": "eb6acc29e9558fdfe67f2fc8a2106c2a1a9c2ef1371bfcc0e0052dc10f1a5ea8",
+   "prompt_sha256": "a0d984671ad9918a2710bb263da491b40f0dffc15c48aab44957fb26b81cdd8e",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1777,10 +1921,12 @@
    "register": "creature",
    "title": "Lizardfolk Shaman",
    "prompt": "production/art/gpt/prompts/ART-MON-LIZARDFOLK-SHAMAN.txt",
-   "prompt_sha256": "b74bed7c7cd1fbb011c753647683b381d6939a636cbe97d04593c70cae4163d0",
+   "prompt_sha256": "b52a5e8a1208be3b6ffd7278112dcbb4c7c9e1d30da331af259636aa945e453c",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1799,10 +1945,12 @@
    "register": "creature",
    "title": "Lizardfolk Warrior",
    "prompt": "production/art/gpt/prompts/ART-MON-LIZARDFOLK-WARRIOR.txt",
-   "prompt_sha256": "f6233468a875547ffda65ebe21e9a78fa7af35273954db13cfcfa44b4aae277b",
+   "prompt_sha256": "5f09fe984533ff0cae8997c228c31422b2e28e6634ed6129505c6417fddd9014",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1821,10 +1969,12 @@
    "register": "creature",
    "title": "Manticore",
    "prompt": "production/art/gpt/prompts/ART-MON-MANTICORE.txt",
-   "prompt_sha256": "eacb685325b5ec0030e7fc31d3fcc1e522d3a6823d2b5389d28be027faab1d0d",
+   "prompt_sha256": "4770771cc3011f7372781c8974989afeb97049931ac0894fec8024b2543b553e",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1844,10 +1994,12 @@
    "register": "creature",
    "title": "Medusa",
    "prompt": "production/art/gpt/prompts/ART-MON-MEDUSA.txt",
-   "prompt_sha256": "361c66c9b101ffdcf456adaf191181cbda239530ff82adcfbda3c3960f75c8ef",
+   "prompt_sha256": "45de33d7d70d8d19542cac50780c29385e930434c5794d4824b2ca60b0a8c147",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1868,10 +2020,12 @@
    "register": "creature",
    "title": "Miasma Serpent",
    "prompt": "production/art/gpt/prompts/ART-MON-MIASMA-SERPENT.txt",
-   "prompt_sha256": "74ac8f3c9ec9ee3c8f8af3dd975b7ca9cb4b36054ef8ff61e1b27e61c6b4e7dd",
+   "prompt_sha256": "f541012031aad92ad5c83a22f57a0a8f2fd7628daef1c62629488b02975a453c",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1890,10 +2044,12 @@
    "register": "creature",
    "title": "Minotaur",
    "prompt": "production/art/gpt/prompts/ART-MON-MINOTAUR.txt",
-   "prompt_sha256": "ede5b0befcba9235b1b5ec7054d95e2deb98b30698a10e0a1aa5b35614445e93",
+   "prompt_sha256": "6c3f7ad33a391b318387a917fba600b224bcd9ca8b4bb48a4351f74fb4237e52",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1912,10 +2068,12 @@
    "register": "creature",
    "title": "Mire Titan",
    "prompt": "production/art/gpt/prompts/ART-MON-MIRE-TITAN.txt",
-   "prompt_sha256": "249e59fa0fff39b1a39c52358b460203b38e3e0b18634a8e384a1043e8e6bce0",
+   "prompt_sha256": "ae3293638d8c717849cdb2401db8a25ea8fad5b6c69332c3a27fee710e38fa7f",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1934,10 +2092,12 @@
    "register": "creature",
    "title": "Mummy",
    "prompt": "production/art/gpt/prompts/ART-MON-MUMMY.txt",
-   "prompt_sha256": "03fdd60cac603b30f3062204b4e1169e8fc67f79d1f71da3a2e7e86ab1d37e6b",
+   "prompt_sha256": "742f95646ed96f86382f26995028c4e68501fde636d83528c6fd36a7d04e61a5",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1956,10 +2116,12 @@
    "register": "creature",
    "title": "Night Hag",
    "prompt": "production/art/gpt/prompts/ART-MON-NIGHT-HAG.txt",
-   "prompt_sha256": "1698a7c6bbb8fbfa7c4815c24742c85b58ef8627b1c1d7ce07ae81ccdb797b70",
+   "prompt_sha256": "aeaaae553434f37d096394fb9215199d0ab272d506f16728bb3ae7d0d25a2d35",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -1978,10 +2140,12 @@
    "register": "creature",
    "title": "Noxcloth",
    "prompt": "production/art/gpt/prompts/ART-MON-NOXCLOTH.txt",
-   "prompt_sha256": "00abd71f6afaac2ef0b215972033f0bac4a82da16c4d0089b48d7758800937a7",
+   "prompt_sha256": "708b318193f8f452f9a6cb764115174236e50e56ea941be881cfc17194aa437b",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2001,10 +2165,12 @@
    "register": "creature",
    "title": "Ogre",
    "prompt": "production/art/gpt/prompts/ART-MON-OGRE.txt",
-   "prompt_sha256": "402c671acb4f215867034c2ac724c0a8298a0a506c8cc8668c6e96539bc335ab",
+   "prompt_sha256": "1d6de9ea83b99ec9e4cb8826d3e60a2f88d16e8d53882e1bd238d7389e6fd719",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2023,10 +2189,12 @@
    "register": "creature",
    "title": "Orc",
    "prompt": "production/art/gpt/prompts/ART-MON-ORC.txt",
-   "prompt_sha256": "be688617d2c206142346bd728132771a98f634837f1a37dc71773ad2b6b1cdb2",
+   "prompt_sha256": "812e6f9210b57dbada2511a20235c4795d70515aab3ec62d07e1d570c7c1a31b",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2047,10 +2215,12 @@
    "register": "creature",
    "title": "Possessed Corpse",
    "prompt": "production/art/gpt/prompts/ART-MON-POSSESSED-CORPSE.txt",
-   "prompt_sha256": "30b9f2bcef5cdb0c8a4a628e6b9540688b00533495b39d54ce8b413a28b0770c",
+   "prompt_sha256": "ea35c8e69221d8a2801189f67e5978cd1562d81abac573321ba522dbd53006d9",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2069,10 +2239,12 @@
    "register": "creature",
    "title": "Ratkin Scavenger",
    "prompt": "production/art/gpt/prompts/ART-MON-RATKIN-SCAVENGER.txt",
-   "prompt_sha256": "1b52761243930846f15514aa95b2e6732d12551e660764c0a07753fb40892027",
+   "prompt_sha256": "f24eb54c6b922b0bd7bd2f56f723769bc5738649054cab094e9ac49d5e257c7c",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2092,10 +2264,12 @@
    "register": "creature",
    "title": "Ratkin Seer",
    "prompt": "production/art/gpt/prompts/ART-MON-RATKIN-SEER.txt",
-   "prompt_sha256": "9192734fbdd00020bdeebb99d2209241855418be7c49299ae7d1471a9e08ca39",
+   "prompt_sha256": "3aef3749749cb7d5a50e6bc5706223e45cf8724c05c64c6cda881bcfd17e02b3",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2115,10 +2289,12 @@
    "register": "creature",
    "title": "Ratkin Warrior",
    "prompt": "production/art/gpt/prompts/ART-MON-RATKIN-WARRIOR.txt",
-   "prompt_sha256": "437d595761b2810711751d0ec062c6c1ac55baa5490db46cc036795bca2ee2c2",
+   "prompt_sha256": "d7b288203a71b94b564557959ba14d4b30c887c51122daa06519aed5d9c1487b",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2138,10 +2314,12 @@
    "register": "creature",
    "title": "Satyr Reveler",
    "prompt": "production/art/gpt/prompts/ART-MON-SATYR-REVELER.txt",
-   "prompt_sha256": "70f6f9b726e02ba5e5dd8e4424d3c9fa72daa609a4fa8a14b6feb9ffbadaebc5",
+   "prompt_sha256": "eb00e19c181ae09b62a4f2245644735b68dd687cb64a78bda8fb8a785e7c828a",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2160,10 +2338,12 @@
    "register": "creature",
    "title": "Shambling Mound",
    "prompt": "production/art/gpt/prompts/ART-MON-SHAMBLING-MOUND.txt",
-   "prompt_sha256": "51acc0bb1452e22d33111d252360bd52ff04756b2861f9e011fc41f0f61e3ea9",
+   "prompt_sha256": "792b48b65d8781211ae99942ead42777e8f830f5fb54f921b882295903ddf5e0",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2182,10 +2362,12 @@
    "register": "creature",
    "title": "Skeletal Beast",
    "prompt": "production/art/gpt/prompts/ART-MON-SKELETAL-BEAST.txt",
-   "prompt_sha256": "3cf29cec1833dd267e29ca24e5fce82e723cd117a634b317e0b000db0b06ebee",
+   "prompt_sha256": "f3a6ab3d7fd6c9c3623be5282fbb7aa47abc087891d90c8ba35f1a7a9e35cb4e",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2204,10 +2386,12 @@
    "register": "creature",
    "title": "Skeleton Archer",
    "prompt": "production/art/gpt/prompts/ART-MON-SKELETON-ARCHER.txt",
-   "prompt_sha256": "bae830f7976fbe72d7fd2677170060bb656ae46f67812fd614959012413704ec",
+   "prompt_sha256": "a734cb6ec3fac9560e8c526c8fb7debfdacaa3969894f9684545dae58746990a",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2226,10 +2410,12 @@
    "register": "creature",
    "title": "Skeleton Warrior",
    "prompt": "production/art/gpt/prompts/ART-MON-SKELETON-WARRIOR.txt",
-   "prompt_sha256": "9b7cf54d84736485216fa28efef1492c0c8acc5fddf7706df81a6c7b27611409",
+   "prompt_sha256": "f8e241d5187a8e8c1123f073d1941f32f391d8d6b3125a99707b61e5282a0c44",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2250,10 +2436,12 @@
    "register": "creature",
    "title": "Snow Goblin",
    "prompt": "production/art/gpt/prompts/ART-MON-SNOW-GOBLIN.txt",
-   "prompt_sha256": "212f72b13fc489a3558c1f6bf2a72c7be3acff49fb5d054161acff0a966701c2",
+   "prompt_sha256": "cb75065c1ff461160ee0f35e0b4aed339fddb824513a89e67f234bb3cc12a766",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2272,10 +2460,12 @@
    "register": "creature",
    "title": "Spectre",
    "prompt": "production/art/gpt/prompts/ART-MON-SPECTRE.txt",
-   "prompt_sha256": "a72c3eb9357e0be5eece2a4fb44945613500372b2eba9ee74b52434f2e41dc3a",
+   "prompt_sha256": "d95221d455700cf70e6d548a8014f41fdd831db2ce2ae39e415197d9671c5f75",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2294,10 +2484,12 @@
    "register": "creature",
    "title": "Stirge",
    "prompt": "production/art/gpt/prompts/ART-MON-STIRGE.txt",
-   "prompt_sha256": "8015ed805ee21a302026d31b6a8b04d423d0be3840eb9b23415dfd6d88bccc59",
+   "prompt_sha256": "3d9379d7c8e0ae83f66b46c4182303321c711f31abd653da181643d6d644cfa1",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2318,10 +2510,12 @@
    "register": "creature",
    "title": "Stone Sentinel",
    "prompt": "production/art/gpt/prompts/ART-MON-STONE-SENTINEL.txt",
-   "prompt_sha256": "98b8ae068066716498515cacd675720329220feccd1bf7bfd40c2cc630c97a41",
+   "prompt_sha256": "47c51968338dbadba84c881b16f87fb2a02076625803cd9beb2563c9e602ba97",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2340,10 +2534,12 @@
    "register": "creature",
    "title": "Swamp Goblin",
    "prompt": "production/art/gpt/prompts/ART-MON-SWAMP-GOBLIN.txt",
-   "prompt_sha256": "ddf73c04d9e96046941b038327b5e1b2751b7e62364d7920346c9e95195024d4",
+   "prompt_sha256": "ecf274abf89814a0c1c6a3a8766630419fb019177f76bbaa7d08844aeae59959",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2362,10 +2558,12 @@
    "register": "creature",
    "title": "Swamp Hag",
    "prompt": "production/art/gpt/prompts/ART-MON-SWAMP-HAG.txt",
-   "prompt_sha256": "d05dba7b9b6a368d04f40a7626a024e2425c06707330466c1bdbbfbf6206c655",
+   "prompt_sha256": "2216d7828a10162ae2020e1e70c6052408d409c52f1270f819b780c56e689913",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2385,10 +2583,12 @@
    "register": "creature",
    "title": "Swamp Naga",
    "prompt": "production/art/gpt/prompts/ART-MON-SWAMP-NAGA.txt",
-   "prompt_sha256": "bcad7905cdbecc0b6d4d2f23f30acb9e2b0767ff831ef2a8afef8d296d7be0bd",
+   "prompt_sha256": "ca22241b3cd22116340cd59891868dab8f160972888b0f8ffc8ebae37b7f6769",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2408,10 +2608,12 @@
    "register": "creature",
    "title": "Swamp Troll",
    "prompt": "production/art/gpt/prompts/ART-MON-SWAMP-TROLL.txt",
-   "prompt_sha256": "3a6790837170df100cea532eb18c0a03090feb7923602ab0e6dcb1f6ac6dcea8",
+   "prompt_sha256": "6384e9257e97e3b524abee862c8fa8219410237b09415ff100845dc1e5a96d39",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2430,10 +2632,12 @@
    "register": "creature",
    "title": "Thought-Eater",
    "prompt": "production/art/gpt/prompts/ART-MON-THOUGHT-EATER.txt",
-   "prompt_sha256": "c3a5e3896c4be5f0c49db1621f80cc90cef233bf0133c5815013e4203df4278d",
+   "prompt_sha256": "4e3b4d382e63f9e1c581aa7bd662dc37afeaeab41c0c10bcc4f1e6792975c78d",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2454,10 +2658,12 @@
    "register": "creature",
    "title": "Tomb Guardian",
    "prompt": "production/art/gpt/prompts/ART-MON-TOMB-GUARDIAN.txt",
-   "prompt_sha256": "f8fb9b8412a8839f5d82863bd7e024a8eadd918a49b6c0740196717ac92039b0",
+   "prompt_sha256": "a13bc2b0d9b29a9abd72777de23a5698e91591e08a8092132721ebded21fb4af",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2477,10 +2683,12 @@
    "register": "creature",
    "title": "Tomb Necromancer",
    "prompt": "production/art/gpt/prompts/ART-MON-TOMB-NECROMANCER.txt",
-   "prompt_sha256": "6bd5ba50fdf268f214f546bea15a1f2a6d559f6478579ead4800e85178fceeb1",
+   "prompt_sha256": "a24cbaab23388697511f57b28cf62e8750736293b63c4584d64ace8f5007a8f9",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2499,10 +2707,12 @@
    "register": "creature",
    "title": "Troglodyte",
    "prompt": "production/art/gpt/prompts/ART-MON-TROGLODYTE.txt",
-   "prompt_sha256": "b656b61925de7e9d858eae2472e95e9120254fa5b03d00e299b35153c556d302",
+   "prompt_sha256": "ff595f6972b4a7fe208c6c3e8fc54599f07fe038dc559ceff91b55b394e26fd3",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2521,10 +2731,12 @@
    "register": "creature",
    "title": "Troglodyte Shaman",
    "prompt": "production/art/gpt/prompts/ART-MON-TROGLODYTE-SHAMAN.txt",
-   "prompt_sha256": "dc382b62b4c538e502af32d91239100b993f9cf134b53a98b645c6cf54c06256",
+   "prompt_sha256": "e4c56233b8f9df6f13c2431e88a48872a82345d900bfdc7b1af93148dad46b46",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2543,10 +2755,12 @@
    "register": "creature",
    "title": "Tundra Wolf",
    "prompt": "production/art/gpt/prompts/ART-MON-TUNDRA-WOLF.txt",
-   "prompt_sha256": "5823a9be9cdeaf1894bb9096fb8beeb87abf0a2083cd5c2758269493be9ae0ee",
+   "prompt_sha256": "ab627cfe680651c36ae7956fcb4446c1851465fe687a6e6a26bd9e6009559a16",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2566,10 +2780,12 @@
    "register": "creature",
    "title": "Undead Crossbowman",
    "prompt": "production/art/gpt/prompts/ART-MON-UNDEAD-CROSSBOWMAN.txt",
-   "prompt_sha256": "0733d635662ed0b0d42d10557bee1a4634237bc14f3c983432437e9ee64f13d1",
+   "prompt_sha256": "797007bdb4f2c06ff747c6fa14ea35dfb61b1ea1eacadc771d3273f741ad6597",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2588,10 +2804,12 @@
    "register": "creature",
    "title": "Undead Sentinel",
    "prompt": "production/art/gpt/prompts/ART-MON-UNDEAD-SENTINEL.txt",
-   "prompt_sha256": "5825cbf20fd00d09c5c30fdda82b01dd7bffa9a2cb16ac088a2c5c8542dfa2d0",
+   "prompt_sha256": "f3370c6aa6cfc3d0fb2d377dfedfc0ef9ed328c4fd5308cf48c3f768e5b8f53b",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2612,10 +2830,12 @@
    "register": "creature",
    "title": "Undead Warrior",
    "prompt": "production/art/gpt/prompts/ART-MON-UNDEAD-WARRIOR.txt",
-   "prompt_sha256": "b72190a6293e539f71981e7ce2b7ba7cf8e7b7f757c0d07beb4272bcaabb0620",
+   "prompt_sha256": "001f9d0227d2fd09bbff93afc47a04d1c9acc61d25a7f94e79d567b6b70b2181",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2635,10 +2855,12 @@
    "register": "creature",
    "title": "Vault Ooze",
    "prompt": "production/art/gpt/prompts/ART-MON-VAULT-OOZE.txt",
-   "prompt_sha256": "6143486d500bea6be463729abc19d329e42e267f7f8a1c26d862cdad381d3c1b",
+   "prompt_sha256": "7dd87996c20193aa4465e30f2e7b75a7bca2f907bb3a674932844a47371893ab",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2659,10 +2881,12 @@
    "register": "creature",
    "title": "Vaultfang",
    "prompt": "production/art/gpt/prompts/ART-MON-VAULTFANG.txt",
-   "prompt_sha256": "48271339b899a797efba9726fcf5914fcdefee38aefde5ba46d32d50603311b4",
+   "prompt_sha256": "401e18713ff2a1655e655e3b3a19a80312160b0bed07987fbac6387ba6e4401c",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2683,10 +2907,12 @@
    "register": "creature",
    "title": "Vrymk",
    "prompt": "production/art/gpt/prompts/ART-MON-VRYMK.txt",
-   "prompt_sha256": "5acd4c85fbd148ebf3dc90974529f1ddd8f6ac670ed8e3db23ed337a38475156",
+   "prompt_sha256": "cbdee48b51d0fbae588c15ff978112a7862acc3db4efbfc3ddd7b6fe746c9e87",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2707,10 +2933,12 @@
    "register": "creature",
    "title": "Werebear",
    "prompt": "production/art/gpt/prompts/ART-MON-WEREBEAR.txt",
-   "prompt_sha256": "dcaaddc03f8241dc5db6f3006b61ab35a4d8074c729f1dde06c4adfe981ad7f3",
+   "prompt_sha256": "2fb07e38a62655415262fbe04ac7f3676a6bed32b79d27283de51b58e010eaac",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2731,10 +2959,12 @@
    "register": "creature",
    "title": "Wererat",
    "prompt": "production/art/gpt/prompts/ART-MON-WERERAT.txt",
-   "prompt_sha256": "f998d4640e1dc88b995eebc5ff08ea17304d5478627a3014340d09326e6b0cca",
+   "prompt_sha256": "43f6b6f1b2d45c4190400ff44fe12aec04ab695d1d53228964d4ec832fa8801b",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2753,10 +2983,12 @@
    "register": "creature",
    "title": "Werewolf",
    "prompt": "production/art/gpt/prompts/ART-MON-WEREWOLF.txt",
-   "prompt_sha256": "65cfd24f181ad13968921a918d3dc864321b361c4fe6730bfd2993c60cc1c5b4",
+   "prompt_sha256": "49c3b6cf4f9dc2cb016e76dc8781cb935992ed408efb5d99bcdb265fe2ea8fa0",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2775,10 +3007,12 @@
    "register": "creature",
    "title": "White Court Archer",
    "prompt": "production/art/gpt/prompts/ART-MON-WHITE-COURT-ARCHER.txt",
-   "prompt_sha256": "7f4c39ba6956538b5338f244437fa7563fc52bd950ba9c6b9d01dc6953fb77a3",
+   "prompt_sha256": "7f3f7bf68d2f1ac103f8502c73b9f4899b17c56efc0c9e67dd52170361e41013",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2797,10 +3031,12 @@
    "register": "creature",
    "title": "White Court Executioner",
    "prompt": "production/art/gpt/prompts/ART-MON-WHITE-COURT-EXECUTIONER.txt",
-   "prompt_sha256": "3fe976c5d2dee0f87efc3106766ac13a8e93b0cd408e1045ad83e8d0f8e9ab59",
+   "prompt_sha256": "b444314781eb56bec049208e056bfbe178d0a7c3c6c62b0efebf75f6c7e237e4",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2819,10 +3055,12 @@
    "register": "creature",
    "title": "White Court Guard",
    "prompt": "production/art/gpt/prompts/ART-MON-WHITE-COURT-GUARD.txt",
-   "prompt_sha256": "81c02d2a432a717b205f7e882f69a9938b1c7317da0f1d248fa8a1134cde8d70",
+   "prompt_sha256": "75130153624237862f11dfb0e6d0f70fa44fe7d382fbec84af0722298622f0f4",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2842,10 +3080,12 @@
    "register": "creature",
    "title": "White Court Sentinel",
    "prompt": "production/art/gpt/prompts/ART-MON-WHITE-COURT-SENTINEL.txt",
-   "prompt_sha256": "f70b96b25dd4b16bb513e3cfceeff85437fdd2e27f2b51f44e2462ed90d51a8c",
+   "prompt_sha256": "6b53be8ac6359ac2663f26477409bc543c1680a8680a2a229cff00238fcca4ab",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2864,10 +3104,12 @@
    "register": "creature",
    "title": "White Dragon",
    "prompt": "production/art/gpt/prompts/ART-MON-WHITE-DRAGON.txt",
-   "prompt_sha256": "37579da5eaff88ab5f7a4c3302ef5c0121e3468e1f54506f364e152751fe6bd6",
+   "prompt_sha256": "e009012263f8e9fffa7a4fb87dd30eafd47a963aec1800a68b7ba9fcef496b10",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2886,10 +3128,12 @@
    "register": "creature",
    "title": "Will-o'-Wisp",
    "prompt": "production/art/gpt/prompts/ART-MON-WILL-O-WISP.txt",
-   "prompt_sha256": "1100a41061dd5e48f790325a1c50d47e1260d7e456f1e22b40d791151cdbe919",
+   "prompt_sha256": "2c66df5791b62fdcefa43420158d2470e4b8e8c0585e46155de3213a71055501",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2908,10 +3152,12 @@
    "register": "creature",
    "title": "Wind Elemental",
    "prompt": "production/art/gpt/prompts/ART-MON-WIND-ELEMENTAL.txt",
-   "prompt_sha256": "47784263772c13aa60642151d774338c09283af47d8d510673b37076a17b4308",
+   "prompt_sha256": "a5786e229bfc00b4a6d46c5ba1bbb3ce426a93a7155d0beb273cb1b4bac433ef",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2930,10 +3176,12 @@
    "register": "creature",
    "title": "Zombie",
    "prompt": "production/art/gpt/prompts/ART-MON-ZOMBIE.txt",
-   "prompt_sha256": "791734dd83a277fa34a25d1ad57743850af668eb37fbf9e88ed2df1494129765",
+   "prompt_sha256": "7943ce11cb77ffa52e12c0b68b70b82b7113bba4c2b4254ae40d1a9f1d75ccc7",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2952,10 +3200,12 @@
    "register": "person",
    "title": "Assassin",
    "prompt": "production/art/gpt/prompts/ART-CLA-ASSASSIN.txt",
-   "prompt_sha256": "1c88ed8cc97ec7f66b57c6ee9134521f3a30f9c012f729d4f32b75241ada8323",
+   "prompt_sha256": "11f4040e53060460512e8a53c3a5772ca4516df636a0488e889b9d4fd3bb5480",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2976,10 +3226,12 @@
    "register": "person",
    "title": "Berserker",
    "prompt": "production/art/gpt/prompts/ART-CLA-BERSERKER.txt",
-   "prompt_sha256": "21aed5877d31b2786e06d13982b5da3a6e797eb47f2857eafa0940e1eb1182cb",
+   "prompt_sha256": "42666d3dc935ec57085d224b207ae6923c699e75c8225d6c520077a8b868e8b7",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -2999,10 +3251,12 @@
    "register": "person",
    "title": "Cleric",
    "prompt": "production/art/gpt/prompts/ART-CLA-CLERIC.txt",
-   "prompt_sha256": "98d0f65db5fee5e23f013994a0e2b3360fa78b7c4dab6eef0df69ebbd26dcc48",
+   "prompt_sha256": "0acce450379fc5c610a3179c815052cd834d8fc82e10d4f291f99eb206a12c04",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3022,10 +3276,12 @@
    "register": "person",
    "title": "Druid",
    "prompt": "production/art/gpt/prompts/ART-CLA-DRUID.txt",
-   "prompt_sha256": "18e6c2e0e9329365312a7ca0b6c305bedddc966ff690d963386595cfb61a72a3",
+   "prompt_sha256": "6231f47107fc6deab7d70159bfedafba361ea3e3b2e926c85752fcc10e4b20e0",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3044,10 +3300,12 @@
    "register": "person",
    "title": "Paladin",
    "prompt": "production/art/gpt/prompts/ART-CLA-PALADIN.txt",
-   "prompt_sha256": "af9d732ff9093d2569652202c0b0e84a19a5817d90d8809606f915000375712e",
+   "prompt_sha256": "1749a5a644873bf8c63fa3f3d0614c2f116dd796e059447b18f33e1827c08791",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3067,10 +3325,12 @@
    "register": "person",
    "title": "Psion",
    "prompt": "production/art/gpt/prompts/ART-CLA-PSION.txt",
-   "prompt_sha256": "a17e6543719193ea4b2693414f9b82144415c1195fd20f4b4da070540210bd0f",
+   "prompt_sha256": "8cbb6dafac7af8030ea258982a75cd4f1ba085d79eb1de841b83baa466e0ce41",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3089,10 +3349,12 @@
    "register": "person",
    "title": "Ranger",
    "prompt": "production/art/gpt/prompts/ART-CLA-RANGER.txt",
-   "prompt_sha256": "2eb4785a87ccbbcf4f73758fe336dc67693b88a42d7a31a6757a2f9ce182a31c",
+   "prompt_sha256": "502876aa588992e0ee3d4c6f3aac6577ac0812767603126a0abf8ce87d27c7db",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3111,10 +3373,12 @@
    "register": "person",
    "title": "Rogue",
    "prompt": "production/art/gpt/prompts/ART-CLA-ROGUE.txt",
-   "prompt_sha256": "1b777292bfe92e36c17576abef181ed609ca5037c7686a5d48b0eff86c343965",
+   "prompt_sha256": "881cdbbb2bad3844a7ea540f5de4c6b1ccda7472889f4a0b084db82480ed6b9d",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3134,10 +3398,12 @@
    "register": "person",
    "title": "Sorcerer",
    "prompt": "production/art/gpt/prompts/ART-CLA-SORCERER.txt",
-   "prompt_sha256": "12a89e10b27ef49fe037d263983c5ffca3da3f6f1186ee4823d5154b7fcc0ee9",
+   "prompt_sha256": "fa5b502f2e5d727195c8e7c8b0c677631d2624da9cac7b38f06db551d2369d1b",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3156,10 +3422,12 @@
    "register": "person",
    "title": "Trickster",
    "prompt": "production/art/gpt/prompts/ART-CLA-TRICKSTER.txt",
-   "prompt_sha256": "f4678e98649691bc48e5db1f1a069950bcd06d8a0294a77506bfd1f4480cedc6",
+   "prompt_sha256": "111c3244dd48c8be97a2697e44cd9df3e987ca608ce71c14a28f9d55908601be",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3178,10 +3446,12 @@
    "register": "person",
    "title": "Wizard",
    "prompt": "production/art/gpt/prompts/ART-CLA-WIZARD.txt",
-   "prompt_sha256": "9774c6b3fe1d6dd93883cad49eef27b762993669d5dd867af534351aa2a2f923",
+   "prompt_sha256": "3bae6e03241b96c33f2899cb612d2c66c06536903dfa3e71e79cb1e62785546d",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3200,10 +3470,12 @@
    "register": "person",
    "title": "Deep Elf",
    "prompt": "production/art/gpt/prompts/ART-ANC-DEEP-ELF.txt",
-   "prompt_sha256": "d1f037b50fa7c64514b22b760c0d34acde3a747b7b10009a67738b420c6ce376",
+   "prompt_sha256": "04f2532606a296728840ed4b2c985038b74a26f382307acd3441f7bed0318d5a",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3222,10 +3494,12 @@
    "register": "person",
    "title": "Demonborn",
    "prompt": "production/art/gpt/prompts/ART-ANC-DEMONBORN.txt",
-   "prompt_sha256": "e976a3cb96e5d0a01e901dd5e032190ac3345456f0212bebedbd276a773a802d",
+   "prompt_sha256": "f26415771c46d54f84c947fe3ba6560c33d68af06d362881897093e14ecc5871",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3246,10 +3520,12 @@
    "register": "person",
    "title": "Drakeblood",
    "prompt": "production/art/gpt/prompts/ART-ANC-DRAKEBLOOD.txt",
-   "prompt_sha256": "9c43b8f927dd58eca94b64c55d752629e75fc4542ba95a83714c30f65a98f006",
+   "prompt_sha256": "d0835206e05f45e6a1f4d7bd67b0ab8229eafb4e8a555e258b187e5a9ffe2f04",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3269,10 +3545,12 @@
    "register": "person",
    "title": "Elf",
    "prompt": "production/art/gpt/prompts/ART-ANC-ELF.txt",
-   "prompt_sha256": "b4e5c5d9b597ef410361ea04a282ca2462ba14190e5806da0a362d405c2ab219",
+   "prompt_sha256": "3320948bdf50497b21b2caa8e0a184d4d4791c755cb78c9c4638b07a36b8a792",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3292,10 +3570,12 @@
    "register": "person",
    "title": "Gnome",
    "prompt": "production/art/gpt/prompts/ART-ANC-GNOME.txt",
-   "prompt_sha256": "a0f7efa6b53c26719fdaf9af4204ed8dc1d03d2fd1c1b74ae0171fd7c8a314f6",
+   "prompt_sha256": "dae11cc15c8c37bca0766620bd6530b623988d35c854d013b531875386d536ad",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3314,10 +3594,12 @@
    "register": "person",
    "title": "Goblin",
    "prompt": "production/art/gpt/prompts/ART-ANC-GOBLIN.txt",
-   "prompt_sha256": "f0258c3747f6f4af93141cabf189fa81b3b5a5b576f205ca8ea97e633091605a",
+   "prompt_sha256": "99f793e4ab89971a089bb052c5b582e27b4f18da1bcef8b5f05289c2cf402151",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3336,10 +3618,12 @@
    "register": "person",
    "title": "Halfling",
    "prompt": "production/art/gpt/prompts/ART-ANC-HALFLING.txt",
-   "prompt_sha256": "92fe1f7605cdb56f32d015e84a7e7509079d7395b01d89930f9f66ae1f3856a5",
+   "prompt_sha256": "fbe6f67cb397c1df5a8d3f15c8b282c7bdbb324b436571753e6c6f284664111b",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3361,10 +3645,12 @@
    "register": "person",
    "title": "Human",
    "prompt": "production/art/gpt/prompts/ART-ANC-HUMAN.txt",
-   "prompt_sha256": "c20a4f4c84c12f22d62622e38f93f4a7b5d80458fd614a1b6bf48a0ffa7bf51e",
+   "prompt_sha256": "ce804744720c7b99e061d7805a4ec334681b040e7ecad8dc193911a1d944da23",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3383,10 +3669,12 @@
    "register": "person",
    "title": "Orc",
    "prompt": "production/art/gpt/prompts/ART-ANC-ORC.txt",
-   "prompt_sha256": "a4a710c94240f60f541342d26dd492762af3135247de9af5b81c0d441ae9ab69",
+   "prompt_sha256": "4a2dfaebe41937f1b16e7a4770ee0a44249a175a87d8d0e3dc129af6e2b6e72e",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3405,10 +3693,12 @@
    "register": "person",
    "title": "Ratkin",
    "prompt": "production/art/gpt/prompts/ART-ANC-RATKIN.txt",
-   "prompt_sha256": "3ede3562c165b33be6c374100e5c80e3425e2b76396951f3a81f95cf005f7f9c",
+   "prompt_sha256": "6145d4a7e7497ad2581221c89c04a66aaa23192415f219dc75d77853acaaa17d",
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -3427,12 +3717,13 @@
    "register": "scene",
    "title": "Avatar of the Old Growth",
    "prompt": "production/art/gpt/prompts/ART-MON-AVATAR-OF-THE-OLD-GROWTH.txt",
-   "prompt_sha256": "f7e4b16a521c29b5a3dc9a025945e41ed6904afadda514d758579c347b99e622",
+   "prompt_sha256": "aadca979a9d3fa9647fd03700d5d2cf9f2eeabe4c725d0b70de71a9b931b969b",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Huge: towering many times a human's size",
@@ -3451,12 +3742,13 @@
    "register": "scene",
    "title": "Captain Veyr of the Forsaken",
    "prompt": "production/art/gpt/prompts/ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN.txt",
-   "prompt_sha256": "ff4af6fbd7704f48009c35f5489a4789131f9b1db17b86eda7307d67bad1f8c9",
+   "prompt_sha256": "518e5d0ba8a8ff8aa5be6accd87e80f70a590da29dc3c697fdf0e0f0399b4a25",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Medium: about human-sized",
@@ -3477,12 +3769,13 @@
    "register": "scene",
    "title": "Khorrun the Dracolich",
    "prompt": "production/art/gpt/prompts/ART-MON-KHORRUN-THE-DRACOLICH.txt",
-   "prompt_sha256": "a8d361d6ece96210f95073fc00f6c4dd523811da7640c586f7a723645068bf00",
+   "prompt_sha256": "4a627d3c22aa6a7babbd49480897873545a37ff0b9ce5c45ff17cb8fb151dd9c",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Huge: towering many times a human's size",
@@ -3501,12 +3794,13 @@
    "register": "scene",
    "title": "Maelthorn the Verdant",
    "prompt": "production/art/gpt/prompts/ART-MON-MAELTHORN-THE-VERDANT.txt",
-   "prompt_sha256": "e6971e0cc4e844888931a3123d2f7d2c8fdff54c67a698e629ae5872976a9f02",
+   "prompt_sha256": "c74b4ee327c3ceea752096c441bcf0d8fe9a24a0732e77ca5f5f23a34037b423",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Huge: towering many times a human's size",
@@ -3525,12 +3819,13 @@
    "register": "scene",
    "title": "Sirrach the Black",
    "prompt": "production/art/gpt/prompts/ART-MON-SIRRACH-THE-BLACK.txt",
-   "prompt_sha256": "45f0d69ba1dd51ad0791851834ac145e5940543d9107ea5d930b5a76b4fecd33",
+   "prompt_sha256": "81679ae4847b7ac1db8bbbcb0d625b531871b47ee0c9f6573780fa9139788c6e",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Huge: towering many times a human's size",
@@ -3549,12 +3844,13 @@
    "register": "scene",
    "title": "The Ancient Void Dragon",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-ANCIENT-VOID-DRAGON.txt",
-   "prompt_sha256": "7c1eb8d1c558766d4ae85ccdeaa5fa0e2a2fedaad5e08160ad9a269245222a01",
+   "prompt_sha256": "12f77ed886970b78babcbfe40bf674cd4cdf85a39665d6536b27bd57a24123eb",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Huge: towering many times a human's size",
@@ -3573,12 +3869,13 @@
    "register": "scene",
    "title": "The Antlered Warden of the Tithe",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE.txt",
-   "prompt_sha256": "eefd313de8a10054049136d516b4f2e10d11861a44269d90dd71796951ee2d69",
+   "prompt_sha256": "f32aa5cdc2ef21919a5011a1d01525d7e4ba575cca9ebec5de0c3fa7bb7bf46a",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -3599,12 +3896,13 @@
    "register": "scene",
    "title": "The Broodmother Prime",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-BROODMOTHER-PRIME.txt",
-   "prompt_sha256": "cf4cbe3b5a9062851b96da7bbb5cdf243603c5576e2c14d07040c3d9971493f0",
+   "prompt_sha256": "2a60de130b6f29f52b3fb3d13a169811258be58aebb1f4b02c4973099fcac8d5",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Huge: towering many times a human's size",
@@ -3623,12 +3921,13 @@
    "register": "scene",
    "title": "The Frost Bailiff Magistrate",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-FROST-BAILIFF-MAGISTRATE.txt",
-   "prompt_sha256": "8e69d8f8703515ca78204757f3f32d70cd3da8cc17b81b4e5c31f903db0f6ff7",
+   "prompt_sha256": "135b9bff0cc33b3d40a6160c5c0dd3f76d09ca5ae910d349dfa6968c0d048a57",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Medium: about human-sized",
@@ -3647,12 +3946,13 @@
    "register": "scene",
    "title": "The Hollow Crown of the Ashlands",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS.txt",
-   "prompt_sha256": "ffa455a14149c733ab08d544d90da0e5829ecb3882ad77c5033dc2002628d73c",
+   "prompt_sha256": "ff916d85d1d79d4200cb3e5bc84852879a17ed6a4359e2d278024b60d3171c13",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Medium: about human-sized",
@@ -3671,12 +3971,13 @@
    "register": "scene",
    "title": "The Last Colossus",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-LAST-COLOSSUS.txt",
-   "prompt_sha256": "1d8c2594423921afd26693afa88e9a068f63ad15022e35bf68399f22c126e2ac",
+   "prompt_sha256": "c5d5b6c2e02e57f979f79ebd468dd5a8dce114669aab5faca3e5c162742a25a5",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Huge: towering many times a human's size",
@@ -3697,12 +3998,13 @@
    "register": "scene",
    "title": "The Sun-Crowned Prince",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-SUN-CROWNED-PRINCE.txt",
-   "prompt_sha256": "dc07a7bf7c559bf82d39f6004940dc6e4fab336f55e2c6b73c02dce18c05b60b",
+   "prompt_sha256": "ee1a68287bd0c4ce6545411e615df8dd18a3f9335a43bee248bbd6adf0e141f8",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Medium: about human-sized",
@@ -3721,12 +4023,13 @@
    "register": "scene",
    "title": "The Voice Beneath the Bells",
    "prompt": "production/art/gpt/prompts/ART-MON-THE-VOICE-BENEATH-THE-BELLS.txt",
-   "prompt_sha256": "b54a737e07e73fc378ef4ed75dce207d85fa77f66ebfe67c5cf658a84d244330",
+   "prompt_sha256": "ea2c8325d426b6d0e42ab091f9157118e5177fb8d5fc940a659343eac994bef3",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Small: smaller than a human",
@@ -3745,12 +4048,13 @@
    "register": "scene",
    "title": "Visath the White",
    "prompt": "production/art/gpt/prompts/ART-MON-VISATH-THE-WHITE.txt",
-   "prompt_sha256": "80852f5f5ed0cd69c3b64082cad2b7f32b9d7b38d0439e70ca1c47a97e96b97a",
+   "prompt_sha256": "4751bd58bb25eab559124e31b0a1ee46b1e9b052f0b5c22d202ce988eb7d4210",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Huge: towering many times a human's size",
@@ -3769,12 +4073,13 @@
    "register": "scene",
    "title": "Vossegar of the Flooded Cathedral",
    "prompt": "production/art/gpt/prompts/ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL.txt",
-   "prompt_sha256": "7436a11591d45d5e352a72f0e79498d491adb4edaba00a407d1d91e7e0c1a383",
+   "prompt_sha256": "9a6241c85d29ed61810af6fddc7033d34740a4446fe07afe431f9e16642adebd",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "Huge: towering many times a human's size",
@@ -3793,12 +4098,13 @@
    "register": "scene",
    "title": "A.4 Quickstart Scenario: The Broken Courier",
    "prompt": "production/art/gpt/prompts/ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI.txt",
-   "prompt_sha256": "4b233fa31c7818c887e1d3e89b8cf33bc031fb460eec9ac749c101d4b17eba97",
+   "prompt_sha256": "4bea7adbe347831e38b6e272a2a3bf7901f274a65543544623a367d542339a84",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3817,12 +4123,13 @@
    "register": "scene",
    "title": "Scenario 1: Hunt the Wild Beast",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST.txt",
-   "prompt_sha256": "a3d5a1d13319e8314c6e44084fd913253f07350fc1cfcab7dcde15316c74c2c9",
+   "prompt_sha256": "783a8f0bf574bade6fdef9566d14083fe35e615df86fabd3f040df6de41a11ac",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3841,12 +4148,13 @@
    "register": "scene",
    "title": "Scenario 1: Plunder of the Frozen Ruins",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS.txt",
-   "prompt_sha256": "ef42aa43d0c4a65b392a62ee86b42aeef61d94961d054a19a714302a3b9b2191",
+   "prompt_sha256": "b28e2d5730b03054dede33e4823ec62d3de680030e0f659ea4134cee2bcd4068",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3865,12 +4173,13 @@
    "register": "scene",
    "title": "Scenario 1: The Crystal Harvest",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST.txt",
-   "prompt_sha256": "ca918f633931d8060e959426844348807166a55b828bac8c7641e4598f53449f",
+   "prompt_sha256": "cae73350afc4ca27f1518732fc25c9b06ff9ea130adffb4b25f6bb2a19e72cc0",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3889,12 +4198,13 @@
    "register": "scene",
    "title": "Scenario 1: The Fallen Observatory",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY.txt",
-   "prompt_sha256": "4bddaedf96748fba135110c5a36acf14d3bd59b75a66b120eba8e839513ba4ca",
+   "prompt_sha256": "11903f83ed78807ec29fa67809cf7d451a07a6e8f0f051896863277c1fef0aaf",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3913,12 +4223,13 @@
    "register": "scene",
    "title": "Scenario 1: The Oasis Raiders",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS.txt",
-   "prompt_sha256": "75c00f82cded022811e36edc49c96aeebebe47d8ef924b023bf5394b3a9998eb",
+   "prompt_sha256": "8d7351a1aa1c4453cb0260cdbbcf9fe73498b16cb97344e01315a653c62693f9",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3937,12 +4248,13 @@
    "register": "scene",
    "title": "Scenario 1: The Reliquary of Edrava Salttide",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT.txt",
-   "prompt_sha256": "4d25dd278d60ccd84144e5d5e06fd21f6eebf73e05851f8a70a0879f8590435b",
+   "prompt_sha256": "b0af5ac492dec60a43231fa1a4f0412e8794ef3143fea86a7f9329dd8ab68ff3",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3961,12 +4273,13 @@
    "register": "scene",
    "title": "Scenario 2: The Alchemist's Frozen Laboratory",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA.txt",
-   "prompt_sha256": "66275df51c1786530f9250248839496a99aec764cc5a1d7f8d603b4b106c0895",
+   "prompt_sha256": "aa2aa2f2d59c3eb4661a140729debb4f36a8cc9f4e4f7ca4871340aac13d8ca7",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -3985,12 +4298,13 @@
    "register": "scene",
    "title": "Scenario 2: The Chasm Crossing",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-CHASM-CROSSING.txt",
-   "prompt_sha256": "d5921231295eaf90e8b64f5cb25bbeffbe11ebacb5c89a14d89f56d01be573db",
+   "prompt_sha256": "00ea83f5653b72ba584b81ea7f0e33b7024ad56445963103020a7599b860c563",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4009,12 +4323,13 @@
    "register": "scene",
    "title": "Scenario 2: The Cinder Lord's Lost Brazier",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE.txt",
-   "prompt_sha256": "6bad9372758e78ed1435b88719214faf0152ba10be0aa19d82fea31c57383e73",
+   "prompt_sha256": "e8a97ce95e3cb87bafc44ba71392a2408ca572a81bac55a19fb383cf01cebcea",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4033,12 +4348,13 @@
    "register": "scene",
    "title": "Scenario 2: The Guardian's Test",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST.txt",
-   "prompt_sha256": "3306cf0d7198fdbbcb68f4e52bc770fda7dad0bfde00957ae4ea3cac5476a7a1",
+   "prompt_sha256": "3f52ed81d37ef634dc56c2b79e0cad5d633048a6b1b2b45d87b4ae76ad62c8be",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4057,12 +4373,13 @@
    "register": "scene",
    "title": "Scenario 2: The Lizardfolk's Stolen Offerings",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER.txt",
-   "prompt_sha256": "f4ad795dd0801b9f7306010c044f2097aca16c311ee66ccd66b1e7b0dc6d4b1e",
+   "prompt_sha256": "3087a2be6f35d5fe43bc819d28c05f118273a9e445339b0bd3247b09ab1973c6",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4083,12 +4400,13 @@
    "register": "scene",
    "title": "Scenario 2: The Whispering Grove",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE.txt",
-   "prompt_sha256": "c146e552225ebc8ba87cd4558633fda9ab00aed009745892717a688c394bbbc1",
+   "prompt_sha256": "33b67488eedf5091b8cd8205f8a620c40052b179958e5199c08dfa06a8e72c21",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4107,12 +4425,13 @@
    "register": "scene",
    "title": "Scenario 3: The Bandit's Toll",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL.txt",
-   "prompt_sha256": "6551b4b69838bf9d8216702d365ff0f6bdb28db2dd4e49062670762d509f408a",
+   "prompt_sha256": "2a8335025772c1eced202b8254a99f184d9abc5f8e934ed45d7385be3b5660ff",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4131,12 +4450,13 @@
    "register": "scene",
    "title": "Scenario 3: The Haunted Mausoleum",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM.txt",
-   "prompt_sha256": "f763f6600450801eb3ae23266015223025c57be795b81194d6d95962002ac0f7",
+   "prompt_sha256": "686ee7c66f0fefb73d282eb1a999d28eede55b454295ed45c1cafd0ddf526760",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4155,12 +4475,13 @@
    "register": "scene",
    "title": "Scenario 3: The Mire Titan's Fen",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN.txt",
-   "prompt_sha256": "6680192b9768a54c3d07e4d9a5c3073f9879c82b4f1457861f6dffaee94d6a63",
+   "prompt_sha256": "c85f7f47f03cd56be18ce9ea70cc0d4634c70bcde068106f88711d8ef6b254f3",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4179,12 +4500,13 @@
    "register": "scene",
    "title": "Scenario 3: The Quake",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-QUAKE.txt",
-   "prompt_sha256": "3b1966aad6857cab0199a878d90015a3cd0fbe9119c0018599d7deb75066ebbd",
+   "prompt_sha256": "a4934fa01617373132eaac8a4402e120dfca08d347ff805298d4f3e739751fbc",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4203,12 +4525,13 @@
    "register": "scene",
    "title": "Scenario 3: The Shifting Sands of Time",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME.txt",
-   "prompt_sha256": "1e16e812bdecd30b6ce37afdfbd78de4ee184afa0a83f453057f0c725d52a793",
+   "prompt_sha256": "9d32fc373b6d0c8bfbb861c14a7f7c16cc354469956e6e43fce0f6ffafb52e64",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4227,12 +4550,13 @@
    "register": "scene",
    "title": "Scenario 3: Tomb of the Sunken Kings",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS.txt",
-   "prompt_sha256": "12ee8692c9a723943c69aeee62dd1cd7f83db2adb091d08dd6bc562b07e2dc31",
+   "prompt_sha256": "dff093c29ee6bdfd644abb9fbf622a2c10d7d69efdef467e2f48d8c92146e30c",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4251,12 +4575,13 @@
    "register": "scene",
    "title": "Scenario 4: The Blighted Heartwood",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD.txt",
-   "prompt_sha256": "8e744bfc7d949c07521e8dc757b8c015887f1fece085b694687e22672a668bb0",
+   "prompt_sha256": "017bc477fb5f9f11040be7ead2836ca23e446224e44196781eaf386e5f290ac3",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4275,12 +4600,13 @@
    "register": "scene",
    "title": "Scenario 4: The Clockwork Menagerie",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE.txt",
-   "prompt_sha256": "4a0ae6f704599738513f360dd7acdf41595598f7bb6cbb4b46238f1422dd2caf",
+   "prompt_sha256": "f9b050c6793e20d85fd6bc9472dcf2ebbbce719e432fd11022d0287a37a7c7b3",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4299,12 +4625,13 @@
    "register": "scene",
    "title": "Scenario 4: The Sandwyrm's Lair",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR.txt",
-   "prompt_sha256": "bcb6e18c3e76ffe6bb3a7be42cef658d339ece6f1ea9218d234437c58a9171b9",
+   "prompt_sha256": "10844d0346a36b05a57dfd7443818c63b8de22c429500d535873d13365c99066",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4323,12 +4650,13 @@
    "register": "scene",
    "title": "Scenario 4: The Sealed Archive",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE.txt",
-   "prompt_sha256": "cb0c2092c9e570b4e4c3cdb3c3f70f5073798c170427d08a0ec7d325a1121d61",
+   "prompt_sha256": "45d32c8271631d5e3a0e7245dd538cc3f0657cc1925154ce4a2f1515a7dc925c",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4349,12 +4677,13 @@
    "register": "scene",
    "title": "Scenario 4: The Spider's Silk Route",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE.txt",
-   "prompt_sha256": "9a1d5cdb4f2de48ce5d1fdad465bb5e7ad7e75f90f92d3332b48ac48c6935b30",
+   "prompt_sha256": "99b43b65a8560427b2029494c8291c09273b181a4e7741bf3e4f886e8b7cc673",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4373,12 +4702,13 @@
    "register": "scene",
    "title": "Scenario 4: The Undermarches Outpost Raid",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID.txt",
-   "prompt_sha256": "927bdf956601cf053e0e547dfce917110af8e77d036f547cdbf56e550a921fe1",
+   "prompt_sha256": "72444549a0900d1c3ecd8235b729a21bc564667323e2d96e4031ad272d152fe0",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4397,12 +4727,13 @@
    "register": "scene",
    "title": "Scenario 5: Salttide's Reckoning",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING.txt",
-   "prompt_sha256": "601b2e3d03a720481c15ec6f7967a7e05d05a42709e9e80045d9a3975dbb4694",
+   "prompt_sha256": "ec44b87dc1b8533220b50c76a338421ebdf722ea342b0636f020ddcffa29578e",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4421,12 +4752,13 @@
    "register": "scene",
    "title": "Scenario 5: The Ambushed Emissary",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY.txt",
-   "prompt_sha256": "a854e91b5d57da23761419d83b5ff39c5a158bd323621c7401e732244bec6327",
+   "prompt_sha256": "df3cdf3ca63531cee50e1d5d7d95c4a287e6056c21bab62f57cac28998df6393",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4447,12 +4779,13 @@
    "register": "scene",
    "title": "Scenario 5: The Cursed Colossus of the Waste",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA.txt",
-   "prompt_sha256": "1eb6f6f69d5a7d65c30d512e61e72d5cd84e3ded2efbca180d532775c2a45c14",
+   "prompt_sha256": "3da2117613527b2e222d1e5b54eda95bad5c5ef1ae87a0499706b02a2309849b",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4471,12 +4804,13 @@
    "register": "scene",
    "title": "Scenario 5: The Ice Wyrm's Hoard",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD.txt",
-   "prompt_sha256": "2b77bd5e54c8489c3414a07a76437d808ce22fcc4094f97e8ea5b8bdc87c13ea",
+   "prompt_sha256": "8e7e196264d430aa44ccdea77bbc002cf06dcc6bd8be52a88e4a5e97f0467dd9",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4495,12 +4829,13 @@
    "register": "scene",
    "title": "Scenario 5: The Reliquary of Broken Saints",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT.txt",
-   "prompt_sha256": "0620bc20aa0f0a1ee3dbe4061be880f0af0381845eda6a71f210bdb312939f0b",
+   "prompt_sha256": "7e7adaf785be938f1fbcd1e49d8e2aec1091b30006fa7ca97a54e9f170410994",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4519,12 +4854,13 @@
    "register": "scene",
    "title": "Scenario 5: The Shadowed Under Passage",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE.txt",
-   "prompt_sha256": "492281bfdb995ace8dc324a5b8a7428b97e6ca665334d5b9926687ae2c25f94e",
+   "prompt_sha256": "561379e4a93ec521655625f27d470bb6dd70177f1147f56383f75c97933d22c8",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4543,12 +4879,13 @@
    "register": "scene",
    "title": "Scenario 6: Ritual of the Old Growth",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH.txt",
-   "prompt_sha256": "16b8ac7a29b5668e6452220db6a2faff73eb12bceb074eabccbda7a29657e630",
+   "prompt_sha256": "81c7b3e80a70ac1bb28aa231fba51c068dba5b73795e8a62042dd90bcc615d92",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4567,12 +4904,13 @@
    "register": "scene",
    "title": "Scenario 6: The Cinder Lord's Obsidian Prison",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR.txt",
-   "prompt_sha256": "4baec0e16e2798ff3bb6846db9a6ebd5c8eb20e786a752dae0f43a89e23b387c",
+   "prompt_sha256": "c30b5804e612663c33f7eb902f329d60f17bdc46e0008bec230bf79eaa342764",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4591,12 +4929,13 @@
    "register": "scene",
    "title": "Scenario 6: The Icebound Court",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT.txt",
-   "prompt_sha256": "c5bcce4ab963073b271274a7823a92e9f440c673574a91b5da40df2d7d1f2172",
+   "prompt_sha256": "fb2e904fa68bc18980803f079fedec4e716fe5da43f26e7c34c0baf24c1e398e",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4615,12 +4954,13 @@
    "register": "scene",
    "title": "Scenario 6: The Iron-Vein Vault",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT.txt",
-   "prompt_sha256": "a7323ec139980421a9e9ee6897b00619d31eafae51e6b9a42de7e728eec1eb74",
+   "prompt_sha256": "e40836004269833db303c9ce93fdaab06c909dd07f6b9e6085eb98d2cf401af3",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4639,12 +4979,13 @@
    "register": "scene",
    "title": "Scenario 6: The Ritual of Shadow Binding",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING.txt",
-   "prompt_sha256": "c2713e052f5d9850d3b3de6673eb7c5820c32056df1ccacea7004444f30a4988",
+   "prompt_sha256": "76516e695e36ff865411fb219e2517e9c21f99318010802417b5cf68157a980e",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4663,12 +5004,13 @@
    "register": "scene",
    "title": "Scenario 6: The Serpent's Sunken Hoard",
    "prompt": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD.txt",
-   "prompt_sha256": "518c786d2f075ad117cb338f7c32395b070bb0e9707dbf6aa49ec11406ffd2c0",
+   "prompt_sha256": "3d7d7262e5a24b23efd116371b6b675b455a396686aa381126fbf2fe68fffb89",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4687,12 +5029,13 @@
    "register": "scene",
    "title": "1.2 The Grim World",
    "prompt": "production/art/gpt/prompts/ART-WOR-1-2-THE-GRIM-WORLD.txt",
-   "prompt_sha256": "0bea960c7b6e496cde60c0bdf3fa0460471f8ef7f1d5d56f44ca859927bda06d",
+   "prompt_sha256": "3335f333579b4a7f5bbfd123230cab12441e551158819195d217b6dfac047838",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4711,12 +5054,13 @@
    "register": "scene",
    "title": "1.3.1 The Fall",
    "prompt": "production/art/gpt/prompts/ART-WOR-1-3-1-THE-FALL.txt",
-   "prompt_sha256": "0595941b2b06ca8b56829d4b650145d2f03b6ee7cb62890d0b0ca1b5a5fa084d",
+   "prompt_sha256": "675619a441ab9842e0d201771b6f98cd583b684cb74e1d0dcaeb0bee48e2f032",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4734,12 +5078,13 @@
    "register": "scene",
    "title": "1.3.2 The Six Climates of Ruin",
    "prompt": "production/art/gpt/prompts/ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN.txt",
-   "prompt_sha256": "31517e47bf1fb1870af6169e51aefd1cd5f4894f2a24ef81ce0962b0524ad1a0",
+   "prompt_sha256": "b5a6bca3cb89a2e9176c8772279b181cbdaddbd8b9fd2935f5e96ec50d0349e1",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4758,12 +5103,13 @@
    "register": "scene",
    "title": "1.3.3 The Six Bastions",
    "prompt": "production/art/gpt/prompts/ART-WOR-1-3-3-THE-SIX-BASTIONS.txt",
-   "prompt_sha256": "4d93ce47a7ed43f1b743029fcff1a09b4b0291c41dc2326ffa50180f97001679",
+   "prompt_sha256": "b33866fe21ab31e30ff05730228224c93cea8cf607a52cd561c92f4acb487131",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4782,12 +5128,13 @@
    "register": "scene",
    "title": "1.3.4 Magic in the Dying Lands",
    "prompt": "production/art/gpt/prompts/ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS.txt",
-   "prompt_sha256": "be07393f11271eb9341aec4335ed874d4d912df394e39be012f733e96941e9c1",
+   "prompt_sha256": "1111a3633e9b533aaf913fc3010781cdbb523a8588eda7406355fe18f2aae400",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4806,12 +5153,13 @@
    "register": "scene",
    "title": "1.3.5 Monstrous Threats",
    "prompt": "production/art/gpt/prompts/ART-WOR-1-3-5-MONSTROUS-THREATS.txt",
-   "prompt_sha256": "8b2d439a2af8c3a6bbd8a234ef8c3a8647a1779ed4075ac27113db54b60e9545",
+   "prompt_sha256": "f49b6c98e883adf0a0004952575a266841573afc2b5170f49519f6de95028772",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4830,12 +5178,13 @@
    "register": "scene",
    "title": "1.3.6 Adventurers and the Road",
    "prompt": "production/art/gpt/prompts/ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD.txt",
-   "prompt_sha256": "9d761e9975ef683d2633210f380bcf7f9a4a5837f5cf3b3f1000a9abb20ee08a",
+   "prompt_sha256": "52fbfcca99f56affac7d6ef4ed4c208a32813debc1f0e5477daa8451f695891e",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4854,12 +5203,13 @@
    "register": "scene",
    "title": "1.3.7 Legends and Echoes",
    "prompt": "production/art/gpt/prompts/ART-WOR-1-3-7-LEGENDS-AND-ECHOES.txt",
-   "prompt_sha256": "d4f421fe82dd4d47bf5113190563f13e301ced605b3c1959911e33d2d36faeef",
+   "prompt_sha256": "846085da4a033793ac088be1bcf904e9866b49682395bfe9146ca48b92ce85e5",
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4878,12 +5228,13 @@
    "register": "scene",
    "title": "11.1 Campaign Overview",
    "prompt": "production/art/gpt/prompts/ART-CAM-11-1-CAMPAIGN-OVERVIEW.txt",
-   "prompt_sha256": "a63a9f57e960901215e4e576bf322bef0a4d8597a75687c77fdfa85199d6284a",
+   "prompt_sha256": "0a086990d55eaca74d74b00567f49e65e13e99097b452f0f556742a8264557a8",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4902,12 +5253,13 @@
    "register": "scene",
    "title": "The Apothecary",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-APOTHECARY.txt",
-   "prompt_sha256": "249eadd8e86e2d785aebcf76648a6348827cf1d098e0bbce6d1579b699db9b4b",
+   "prompt_sha256": "0123a6b0dd73373c5e6e2c148b498aa46d450c7846d0e23eb04835f46a8f1ad5",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4926,12 +5278,13 @@
    "register": "scene",
    "title": "The Arcanum",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-ARCANUM.txt",
-   "prompt_sha256": "e756fedd6df2ff8a098788c2b543ce8845b18ff59059aaa3fc8864afea24bea0",
+   "prompt_sha256": "c0cb8dac069592dfce2a5622070d8f5c6161c87f4cce2e97ce1e2f134bd2dce9",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4950,12 +5303,13 @@
    "register": "scene",
    "title": "The Armoury",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-ARMOURY.txt",
-   "prompt_sha256": "0d82a26a1f8cdefb79e4532abe73f05fde8551d502573908b4abdb92eebf8826",
+   "prompt_sha256": "e345acec8827cd3f83c474f1fb45e174c88c3c92aeae34e8ca742fa4c1117f65",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4974,12 +5328,13 @@
    "register": "scene",
    "title": "The Barracks",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-BARRACKS.txt",
-   "prompt_sha256": "19a9b4fe436091c20ae153ee919ca824f36dd20a0c00af41ba3543d5c8a62383",
+   "prompt_sha256": "65d175d601574d9492b316ebc97bd7fc1b58c18186f8adcbd46d15bce0ad0677",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -4998,12 +5353,13 @@
    "register": "scene",
    "title": "The Expedition Hall",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-EXPEDITION-HALL.txt",
-   "prompt_sha256": "32dcd6f9bbbc6ad0f88f2417657d02a7bed99f9f566b8c1da489bfd7da8dfc3e",
+   "prompt_sha256": "c2be188217fa776e8efdcd0ad115e56cc3c3f9516391a004970c8908c7203a6b",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5022,12 +5378,13 @@
    "register": "scene",
    "title": "The Outer Walls",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-OUTER-WALLS.txt",
-   "prompt_sha256": "fd6ddfd153d358f2ed75d2ecf66aa2ab1c293c262de279739159a4e49792f800",
+   "prompt_sha256": "e6dbe46c29cd32e087b80825f7b2d3f00d16c804812b8195b10459ad2d91aafb",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5046,12 +5403,13 @@
    "register": "scene",
    "title": "The Stronghold Chapel",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-STRONGHOLD-CHAPEL.txt",
-   "prompt_sha256": "249aa45710a0604f3b4219a4d63934c844eaa1371689e5a109a706966c566ef6",
+   "prompt_sha256": "4c32172a0a2d6fbdc98d7e4a26b9de58c17b6d91d2c2bae4acc055651e665d6e",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5071,12 +5429,13 @@
    "register": "scene",
    "title": "The Undercroft",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-UNDERCROFT.txt",
-   "prompt_sha256": "217e9bee4f5d0b53cee0aff2ee5247ca207d2585234e1c1657df4e180d7ee69d",
+   "prompt_sha256": "8d2349a12afe23b1d116cecfa46b514776088c8b9478d0145ad4a888712562f9",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5095,12 +5454,13 @@
    "register": "scene",
    "title": "The Vault",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-VAULT.txt",
-   "prompt_sha256": "e4382193849e70eb0b6d49dc9be92b0fc7096e7c60ebc50fe73e14ad2330deeb",
+   "prompt_sha256": "a012533c7fd55868e77281db8cd5fcf4b49a6c64dbf030cc44f2d47b9a6165e6",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5119,12 +5479,13 @@
    "register": "scene",
    "title": "The War Room",
    "prompt": "production/art/gpt/prompts/ART-CAM-THE-WAR-ROOM.txt",
-   "prompt_sha256": "4d673b3a4f98b90efddb92dab57a1cd417f3c2d7509c58afd879e498c47464eb",
+   "prompt_sha256": "e6e0d85290a3ff70d3cb30e46be8159bb6eb1fe79754cd901b688ec16dcb7b99",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5143,12 +5504,13 @@
    "register": "scene",
    "title": "Tier 1 Arcane Spells (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-1-ARCANE-SPELLS-D20.txt",
-   "prompt_sha256": "5a93eda4562e7746244ffb2877c6eb1f7ec008edb1d2d59b7770e7042ebb8bce",
+   "prompt_sha256": "a549e4e58d8a4c059bc134bdd6b204533ca9d7fb4a2ca9abff5254bbabd2a0d1",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5166,12 +5528,13 @@
    "register": "scene",
    "title": "Tier 1 Divine Prayers (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-1-DIVINE-PRAYERS-D20.txt",
-   "prompt_sha256": "f7cfb313917203b5e9a03abaab887ca78e1bc8e1c1ed51757452c1c6de8f3c53",
+   "prompt_sha256": "505c640a2b8c5d80da621c73309c836468d41d87385d9b9395c80e3e3d137e6e",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5189,12 +5552,13 @@
    "register": "scene",
    "title": "Tier 1 Druidic Rituals (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-1-DRUIDIC-RITUALS-D20.txt",
-   "prompt_sha256": "bf0014be674b914694ae20d91306644d61e7de54c1caaae92d7415662a4afc56",
+   "prompt_sha256": "a11c34ffd6a525b291a64c3e27be4d0b33c643869d331aaf37b3f5e73bc85f17",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5213,12 +5577,13 @@
    "register": "scene",
    "title": "Tier 1 Psychic Abilities (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20.txt",
-   "prompt_sha256": "b20a3eba4fe7f4ceab922a30407abc8b9e705a968d624e27102a7a8bab538115",
+   "prompt_sha256": "172b3fb57825c60f2a6b668cd69951ba524b98b2737beeb02f08c9ab46501ed1",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5236,12 +5601,13 @@
    "register": "scene",
    "title": "Tier 1 Sorceries (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-1-SORCERIES-D20.txt",
-   "prompt_sha256": "8d65c1dbc0c8f8587909e57ada431cba35e5e45edc52c7d0e85fd1ddb196557f",
+   "prompt_sha256": "abbf998a64ed2b3b0fc02cc3bb5c54fc504d0d6a2872e5cfcb58680246b2c796",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5259,12 +5625,13 @@
    "register": "scene",
    "title": "Tier 2 Arcane Spells (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-2-ARCANE-SPELLS-D20.txt",
-   "prompt_sha256": "8cae6758dccfc1d1449b7bbd577fac972683b2785b5ab6a06e6546d51974f78a",
+   "prompt_sha256": "c231fae07b33700fba6c570407e9546abcc67f22ef029463db66bf304cb38f1f",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5282,12 +5649,13 @@
    "register": "scene",
    "title": "Tier 2 Divine Prayers (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-2-DIVINE-PRAYERS-D20.txt",
-   "prompt_sha256": "886703037b6497990fbfaa6dbdbe22d32a3c67142dbaf8b27354550eff597527",
+   "prompt_sha256": "645c6cdbd7352463fbccb2bb3f38b9bd3100d6819c3b5f20846de3bd80232e76",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5305,12 +5673,13 @@
    "register": "scene",
    "title": "Tier 2 Druidic Rituals (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-2-DRUIDIC-RITUALS-D20.txt",
-   "prompt_sha256": "5efc8ed4a5df66e792153930c24dd8cbf5aa465922fb9bf692a9e33626d145b3",
+   "prompt_sha256": "ff2ce293286d63bbc9ecbeb032a8aa57fb65792f7bffc652c01d8c60ff73a179",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5328,12 +5697,13 @@
    "register": "scene",
    "title": "Tier 2 Psychic Abilities (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-2-PSYCHIC-ABILITIES-D20.txt",
-   "prompt_sha256": "9691de897d0eaf851bbdf248ff4b57f01000a191df2a41c2c3cbcfaffce544c1",
+   "prompt_sha256": "f85c8870d77eb164d95ef025e2ce4fb76e69fcf9edd5b33f1ae27f0858c5184b",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5351,12 +5721,13 @@
    "register": "scene",
    "title": "Tier 2 Sorceries (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-2-SORCERIES-D20.txt",
-   "prompt_sha256": "e6ed2f1c8937847f441ddec886faf209e7d5b5ae467ec21e858f96561c964335",
+   "prompt_sha256": "8102618f4a8919937c84c99b6dfa31a495dbf7c286c91a1ed4179038d740e010",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5374,12 +5745,13 @@
    "register": "scene",
    "title": "Tier 3 Arcane Spells (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-3-ARCANE-SPELLS-D20.txt",
-   "prompt_sha256": "1e4c5a050edea8889ccddf712d5657b0ddbaafd49ecfa55bc5ed75155cae4133",
+   "prompt_sha256": "f1c309cad90d654dfa4de5566a245d70087fb61bc4417bf233de9dcf032fba95",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5397,12 +5769,13 @@
    "register": "scene",
    "title": "Tier 3 Divine Prayers (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-3-DIVINE-PRAYERS-D20.txt",
-   "prompt_sha256": "6c20fbf8ddb1c1e08cd7b31aa40b04bb04e83e8915a91b3a55aea24e2004e4e9",
+   "prompt_sha256": "c3ed44a03b967b70f2b80563ce11a89b6c7eeec6c3a542f7cfa7ca40c74575af",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5420,12 +5793,13 @@
    "register": "scene",
    "title": "Tier 3 Druidic Rituals (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-3-DRUIDIC-RITUALS-D20.txt",
-   "prompt_sha256": "a6e596688de140892d89e18605d66f1bcb0e374e896d86550db5982e23abafbd",
+   "prompt_sha256": "6d9f7b1b418263884492fe0122150a9a8c753723600ab1316b42f24c9674e1f4",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5443,12 +5817,13 @@
    "register": "scene",
    "title": "Tier 3 Psychic Abilities (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20.txt",
-   "prompt_sha256": "c35f4d5f7c0b390c112dcb1867e9b43070945805d07da51d35f3ea678c7b5c40",
+   "prompt_sha256": "5a008561949564261476dbc0bdf2f97532e51e9522d1c7d952a6a408852e0357",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5466,12 +5841,13 @@
    "register": "scene",
    "title": "Tier 3 Sorceries (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-3-SORCERIES-D20.txt",
-   "prompt_sha256": "e6980271ebd4e45ced132efd9e90ee652f491eb0ab7b65c081b0f67c238e328c",
+   "prompt_sha256": "840ba651335c173a5b31eaacd50145ba99fd95be1aefa5d95f337e9246b71d37",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 3,
    "size_class": "",
@@ -5489,10 +5865,11 @@
    "register": "still",
    "title": "Alchemist",
    "prompt": "production/art/gpt/prompts/ART-BAC-ALCHEMIST.txt",
-   "prompt_sha256": "868a0a3b1dc812d5b68a19fe12fd660c8ef352cc0c9f404bce928b3456d63c8f",
+   "prompt_sha256": "cb1543cca9c55a58be885ad36992a28de7efdbadf40f3a1753a382c7fba1cd5c",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5511,10 +5888,11 @@
    "register": "still",
    "title": "Apprentice",
    "prompt": "production/art/gpt/prompts/ART-BAC-APPRENTICE.txt",
-   "prompt_sha256": "879dd8eae0711d86fcb269aa853fd8cdf899f3c23054afff1ed97748cdf9716b",
+   "prompt_sha256": "5bc0a813cbcee4f44aaa428b12bcbce806e7c7b05a815a73db80073ae632a213",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5533,10 +5911,11 @@
    "register": "still",
    "title": "Artisan",
    "prompt": "production/art/gpt/prompts/ART-BAC-ARTISAN.txt",
-   "prompt_sha256": "eb76b5596bf7812596559833212ff087b60041af323a239a491f4dc88b85f9ed",
+   "prompt_sha256": "0ec6cd9eca29e0807606bb5a885d4f0cea052a5c4a861890baafb2ddd6a1549a",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5555,10 +5934,11 @@
    "register": "still",
    "title": "Believer",
    "prompt": "production/art/gpt/prompts/ART-BAC-BELIEVER.txt",
-   "prompt_sha256": "8ef99db3c869e209f7756d214324d9ba77396f9eb1d8358d0507cabd0ce166b6",
+   "prompt_sha256": "bf367b9808b2260419a8f27b64af24e1404f878d2c73336368ea80d85c873602",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5577,10 +5957,11 @@
    "register": "still",
    "title": "Courier",
    "prompt": "production/art/gpt/prompts/ART-BAC-COURIER.txt",
-   "prompt_sha256": "8c1f65ddb117158e4ce55944cec53deed83957cf241f31dacfc9cd170719a88f",
+   "prompt_sha256": "f8f3d87bd48de03ac95f3721ca708e5bc7b20969b7f999d6f84afb1e8a849bd3",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5599,10 +5980,11 @@
    "register": "still",
    "title": "Cultist",
    "prompt": "production/art/gpt/prompts/ART-BAC-CULTIST.txt",
-   "prompt_sha256": "df5f999fee5d3f32cbfe8f7c0ace2188d5784e50f51775ff09ab15e94f425b28",
+   "prompt_sha256": "07704262c032ab1c2429678fa7adf23f46262edcc79abdba0301e42c2c57ea25",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5621,10 +6003,11 @@
    "register": "still",
    "title": "Farmer",
    "prompt": "production/art/gpt/prompts/ART-BAC-FARMER.txt",
-   "prompt_sha256": "8856dcb78722aebd3bf860e806a3ba79c7b6ab2224948e46c4717e1029d7654e",
+   "prompt_sha256": "486d8e2495d283ec9ca9cbace245d273639461c579eb64b4ead10230c5def92e",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5643,10 +6026,11 @@
    "register": "still",
    "title": "Hermit",
    "prompt": "production/art/gpt/prompts/ART-BAC-HERMIT.txt",
-   "prompt_sha256": "74106f0ececcc7ae54ff0373280d99e6ced4da6db30b5698ef0a3c81c1fd96a1",
+   "prompt_sha256": "0448290da511d0a5e9c547fac47782e2cd914ed2010f272941a48ea1ed4ff84c",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5665,10 +6049,11 @@
    "register": "still",
    "title": "Merchant",
    "prompt": "production/art/gpt/prompts/ART-BAC-MERCHANT.txt",
-   "prompt_sha256": "34865216be50632edec2aadd4ee7539c65f432d65d9cddffc7287e2a28b343b4",
+   "prompt_sha256": "01a7b7269824cc5d46aa394033c605235035c57793e8fb1e6d6c90d064642361",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5687,10 +6072,11 @@
    "register": "still",
    "title": "Noble",
    "prompt": "production/art/gpt/prompts/ART-BAC-NOBLE.txt",
-   "prompt_sha256": "34d09af52113ea413bbe667cf24945f592d6cb9ecb70393003e0825f2cb7996c",
+   "prompt_sha256": "9e5c231c6028fe5301adfe7be8cb76e4ff5ae1edc92672cc1438fb328f071f95",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5709,10 +6095,11 @@
    "register": "still",
    "title": "Nomad",
    "prompt": "production/art/gpt/prompts/ART-BAC-NOMAD.txt",
-   "prompt_sha256": "33656b10dfd825d5e9d5a9f88bb6d2e2609fbe722b7dc273c17440af14ec1d19",
+   "prompt_sha256": "bee4a780943268d5c2317d5c674722dbe45b809b4b16da38346fe2ac201150db",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5731,10 +6118,11 @@
    "register": "still",
    "title": "Pauper",
    "prompt": "production/art/gpt/prompts/ART-BAC-PAUPER.txt",
-   "prompt_sha256": "d4a62629740f1df304f237262dc402e2b6ab83645195f86c20832fc7cff9cbaf",
+   "prompt_sha256": "9e706a954c05e481958279663555b4c835896b05e2284c734c74372475e1349a",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5753,10 +6141,11 @@
    "register": "still",
    "title": "Performer",
    "prompt": "production/art/gpt/prompts/ART-BAC-PERFORMER.txt",
-   "prompt_sha256": "9b6d342306086de58ed578485b7372d48173ed35bf6b8af967881c022096d65b",
+   "prompt_sha256": "93b5658248f3ad4779ac46d90b3bde9d452a25d48176289fd0fc8786af174c75",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5775,10 +6164,11 @@
    "register": "still",
    "title": "Sailor",
    "prompt": "production/art/gpt/prompts/ART-BAC-SAILOR.txt",
-   "prompt_sha256": "c00e016ff78e0b16e24cd32c188d0836df3422c971c9aa5e9251fa3c39daf463",
+   "prompt_sha256": "54c008f6277d3cd3c3a723fe573069e8bc94868cf8b4b7858733dd78c0c0894e",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5797,10 +6187,11 @@
    "register": "still",
    "title": "Scholar",
    "prompt": "production/art/gpt/prompts/ART-BAC-SCHOLAR.txt",
-   "prompt_sha256": "3df0ee56ebd5f9133db0fc5bb9695cf6ceb4206ca2d5a5f1276f2ea3977e8d13",
+   "prompt_sha256": "20f2e2672b4a341e06a95ba1e3f29538e2f04f6445b1399d0fa1b54f7229f800",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5819,10 +6210,11 @@
    "register": "still",
    "title": "Scout",
    "prompt": "production/art/gpt/prompts/ART-BAC-SCOUT.txt",
-   "prompt_sha256": "6a772208af35fcceda8ace0dbc734580b6fd9c0404869618f857cde2e73f037b",
+   "prompt_sha256": "cc100522b0e4472aac3d25dd6581c9b2411a6de857b9aafede3d397b53a8de08",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5841,10 +6233,11 @@
    "register": "still",
    "title": "Shepherd",
    "prompt": "production/art/gpt/prompts/ART-BAC-SHEPHERD.txt",
-   "prompt_sha256": "5e00cf991afe074f186be95271cd75a0c5aae45b4e79f910578acee1c31857d9",
+   "prompt_sha256": "882af7c8dd87cb1643e7b976e859428269cdfe702f48a48877b9f5f06bd63fdd",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5863,10 +6256,11 @@
    "register": "still",
    "title": "Smuggler",
    "prompt": "production/art/gpt/prompts/ART-BAC-SMUGGLER.txt",
-   "prompt_sha256": "cb216046e6b8472587b12d344a469c9ca9184aaae7995bd8c22d1817f1ce9929",
+   "prompt_sha256": "c0e5d733fda0fcce0a2bbfc3842a0bca2c71bd9856a55773eb2f866fdc85fdc8",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5885,10 +6279,11 @@
    "register": "still",
    "title": "Soldier",
    "prompt": "production/art/gpt/prompts/ART-BAC-SOLDIER.txt",
-   "prompt_sha256": "82fba31a762898a9b9203eda3e108ecea247605c0858dae15255a420ecc39de1",
+   "prompt_sha256": "324fb9c5821588205f6abb452dfb099767d9052a77782aa7f8ce086148ae90b7",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5907,10 +6302,11 @@
    "register": "still",
    "title": "Vagabond",
    "prompt": "production/art/gpt/prompts/ART-BAC-VAGABOND.txt",
-   "prompt_sha256": "6cb6c728d64ff99b201157b50abe7212e54f07f156e11115bcee3ba87bff1364",
+   "prompt_sha256": "d1c788344c1ba4afce4542618add4b9becfde5a2639e9f777035a15f7ef6abf3",
    "size": "1024x1024",
    "print_w_in": 1.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5929,10 +6325,11 @@
    "register": "still",
    "title": "7.6 Treasure Tables",
    "prompt": "production/art/gpt/prompts/ART-ITE-7-6-TREASURE-TABLES.txt",
-   "prompt_sha256": "9c4b93e51245c071c97a1dda6a954e15b8a1d645c6c24c82469e098f7980e5ec",
+   "prompt_sha256": "8d33d8e3846141724e9f1aeebb29e8b8cef2521b601fe0bb6f7f12532eb926bb",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5952,10 +6349,11 @@
    "register": "still",
    "title": "7.8 Melee Weapons",
    "prompt": "production/art/gpt/prompts/ART-ITE-7-8-MELEE-WEAPONS.txt",
-   "prompt_sha256": "6da61c3e1a65d7ab9a162c1fa4864eed88e741b9e11eae2490ba95a4db92c329",
+   "prompt_sha256": "213107b0a8af003469438969225b29fec16e0297be0209f5475dcda894a6e05d",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
    ],
    "max_attempts": 3,
@@ -5977,12 +6375,13 @@
    "register": "scene",
    "title": "ART-CH01-001",
    "prompt": "production/art/gpt/prompts/ART-CH01-002.txt",
-   "prompt_sha256": "c3cf6216361cf53c03c9644a88ef4b93e033aa5be89c11bc7a2cb28934a611d0",
+   "prompt_sha256": "348c1406ff3e564654d1f6465351dc898862dff58d9c3c5e050bca92392981be",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",
@@ -6001,12 +6400,13 @@
    "register": "scene",
    "title": "ART-CH02-001",
    "prompt": "production/art/gpt/prompts/ART-CH02-002.txt",
-   "prompt_sha256": "77b63a468b376df471bb2961c4098fe5ba85595ef0c097b8fb76dc6037010cae",
+   "prompt_sha256": "ca26a4765e0e7412acb0b4d6f249e6668ec69235dcc9cc2caf45df46dd9d1aed",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",
@@ -6025,12 +6425,13 @@
    "register": "scene",
    "title": "ART-CH03-001",
    "prompt": "production/art/gpt/prompts/ART-CH03-002.txt",
-   "prompt_sha256": "cecf0c70c55734fa53d050391fb3c21dde99c35e38c0bc4757710d584eb5e93f",
+   "prompt_sha256": "0a373642ce1076e5a25716692985c5237c06850207bde71a253c988c31fc0d4e",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",
@@ -6049,12 +6450,13 @@
    "register": "scene",
    "title": "ART-CH04-001",
    "prompt": "production/art/gpt/prompts/ART-CH04-002.txt",
-   "prompt_sha256": "6fe7fa2b69d282da09910a9001047a70b7d3c678a09e1c6ac6d48bff03c78494",
+   "prompt_sha256": "61014baffae27f6919e07249e2d2e4e5131af2a354badf95582f9876b7b42bc5",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",
@@ -6073,12 +6475,13 @@
    "register": "scene",
    "title": "ART-CH05-001",
    "prompt": "production/art/gpt/prompts/ART-CH05-002.txt",
-   "prompt_sha256": "88805c1d6ce05bceaf5aecd59cf20bc4bc1c0b6903820ae57ae2f1df8a5a0028",
+   "prompt_sha256": "62d9853de6346070d5dd867548119742b51f2a6ae5c6a75a1cf05a42c47e0672",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",
@@ -6097,12 +6500,13 @@
    "register": "scene",
    "title": "ART-CH06-001",
    "prompt": "production/art/gpt/prompts/ART-CH06-002.txt",
-   "prompt_sha256": "60f6d2c40ae7dcd3bb1ea8763b17bcbfb0eea70056a3bb2e05d706d12f41eb2f",
+   "prompt_sha256": "36559b491f833f8767b25d80773f6d21380732fc60f515ff4e840a129d683628",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",
@@ -6123,12 +6527,13 @@
    "register": "scene",
    "title": "ART-CH07-001",
    "prompt": "production/art/gpt/prompts/ART-CH07-002.txt",
-   "prompt_sha256": "8209c61175f96aeacd4047dbc5053f3789b2315d134b633a77dfbceaf82104cc",
+   "prompt_sha256": "a9208e61358b5783f2c10f3135a1979c94af389bb7d94e3db28bb8ef34675bab",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",
@@ -6147,12 +6552,13 @@
    "register": "scene",
    "title": "ART-CH08-001",
    "prompt": "production/art/gpt/prompts/ART-CH08-002.txt",
-   "prompt_sha256": "771b973d6b3f2b5c9dc7cd817c62fd3422aaeeba9598f5abdd7fe79c2b3ae5f0",
+   "prompt_sha256": "f262fe064a7533dadb7ade9b2f9024d730bdba6570ef1932972f19c1d1392ab4",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",
@@ -6171,12 +6577,13 @@
    "register": "scene",
    "title": "ART-CH09-001",
    "prompt": "production/art/gpt/prompts/ART-CH09-002.txt",
-   "prompt_sha256": "b3443c668726602eab38c5b59a00723ea4aa1f1070bd2fe7e19d8f81820150fa",
+   "prompt_sha256": "35f7a1a36af097d6fa082e746b961559c8146a265e419e63003d96654ccebffe",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",
@@ -6195,12 +6602,13 @@
    "register": "scene",
    "title": "ART-CH10-001",
    "prompt": "production/art/gpt/prompts/ART-CH10-002.txt",
-   "prompt_sha256": "4bb5aef53bedc814c268cb0c53405a9eb618d37c334dfad415919bc334308ecd",
+   "prompt_sha256": "8fb2808b4f7c4efeae23ac567d0232c28fbf5de9326a1bfc10d4223770deb71d",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",
@@ -6218,12 +6626,13 @@
    "register": "scene",
    "title": "ART-CH11-001",
    "prompt": "production/art/gpt/prompts/ART-CH11-002.txt",
-   "prompt_sha256": "0b60e1f6cea57cac60ed4e1bc37a015b21df6907ac1375c61c50d9a44e6d010f",
+   "prompt_sha256": "0ca5a61d91fdea1216356005897a21e0635fda84a40e7ee0d2d5b91583f628a8",
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",
@@ -6242,12 +6651,13 @@
    "register": "scene",
    "title": "ART-COVER-001",
    "prompt": "production/art/gpt/prompts/ART-COVER-002.txt",
-   "prompt_sha256": "691340569f98c92c6f8ee4f86d14967c8eb02fe73eea656414b2cbff5361f78e",
+   "prompt_sha256": "1558cf8d1a81c2d0e158a51663fc79a2ffb45b8e24f0bebb1ba68381a86d7cc3",
    "size": "1536x1024",
    "print_w_in": 4.8,
    "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "max_attempts": 5,
    "size_class": "",

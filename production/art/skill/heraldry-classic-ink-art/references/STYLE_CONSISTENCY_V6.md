@@ -4,13 +4,13 @@ The approved visual references govern style, not subject. Compare every candidat
 
 ## Fixed house signature
 
-1. **Medium:** black dip-pen/fineliner on near-white, even paper; tonal depth comes from contours, parallel hatching, crosshatching, stippling, and occasional solid-black recesses, never a grey wash.
+1. **Medium:** gritty old-school black ink (brush and dip pen) on near-white, even paper. Tonal depth comes from heavy solid-black shapes, rough contours, scratchy hatching, crosshatching and dry-brush drag; never a grey wash, stipple fields or machine-even texture.
 2. **Line hierarchy:** main forms have confident slightly heavier contours; interior structures have thinner marks; receding objects get narrower, more interrupted strokes.
 3. **Light:** one coherent upper-left light direction, with right/lower shadows unless the individual prompt explicitly overrides lighting.
 4. **Surface logic:** hatches wrap bark, timber, armour, stone, ice, cloth, or hide differently; marks describe material and construction, rather than applied generic noise.
-5. **Tonal hierarchy:** focal silhouettes read at actual print width. Rich blacks anchor the composition but do not fill the page. Preserve reserve paper around main forms.
+5. **Tonal hierarchy:** focal silhouettes read at actual print width. Heavy solid blacks carry the composition against open paper, with few in-between textures; keep enough reserve paper that the main forms read.
 6. **Scenic vignette:** scenes dissolve organically through increasingly sparse incomplete lines into flat blank paper at all 4 edges and corners. The transition should be visibly drawn, not feathered digitally. Isolated characters and objects instead need generous clear margins and only modest cast-ground shadows.
-7. **Architectural and environmental identity:** no Greythorn oaks, stone circles, bridge, palisade, banner, or gatehouse unless the queued subject asks for them. Desert, cave, swamp, ice, ruin, and forest scenes require different construction and weathering, even under the same house style.
+7. **Architectural and environmental identity:** no Greythorn oaks, stone circles, bridge, palisade, banner, or gatehouse, and no reference subjects (throne, cobwebs, cave grub, skull staff, crowd of undead faces, full moon) unless the queued subject asks for them. Desert, cave, swamp, ice, ruin, and forest scenes require different construction and weathering, even under the same house style.
 8. **No text:** no generated typography, pseudo-runes, visible words, signatures, watermarks, logos, borders, or accidental square grids.
 
 ## Side-by-side comparison protocol

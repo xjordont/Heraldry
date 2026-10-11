@@ -141,9 +141,10 @@ reference, STOP and report a capability blocker. Never generate without them.
 
 Image model: GPT Image 2.5 Sunburst if the image tool offers it (owner request), otherwise the default; record the
 exact model name shown with `save --model`. Size: the listed size is the minimum and fixes the aspect, so request
-the largest size the tool offers at that aspect. Art direction (owner, 2026-10-11): a notch more hand-drawn than the
-first calibration, with confident hand-inked contours, economy of line, hatching only for form and shadow and open
-white paper. No hyper-detail, stipple fields or noisy texture; the attached owner samples set the target.
+the largest size the tool offers at that aspect. Art direction (owner, 2026-10-11): gritty old-school black-and-white
+ink, with bold rough brush contours, heavy solid blacks, scratchy hatching and dry-brush texture, high contrast and
+visible human marks. Pure black ink only: no grey wash, stipple fields or uniform machine texture; the attached owner
+samples set the target.
 
 For each item follow `{SKILL_DIR}/SKILL.md` and `references/WORK_OPERATIONS_V6.md` exactly: `show ID`; the
 verbatim prompt; only the listed references; save the native file as `{s}/<ID>_aN.png`; `check ID FILE`;

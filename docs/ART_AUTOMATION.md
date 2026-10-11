@@ -142,3 +142,11 @@ The owner asked for an efficient, automated run of every planned image after one
   - Drift review every 10 images (`review_every: 10`, `sheet --recent`, `style_audit --recent`).
   - The intake fetches only new LFS images (`art_intake.py needs-pull`), so LFS bandwidth stays flat. Each push still triggers one intake run of about a minute of Actions time.
 
+
+## Gritty old-school direction (owner, 2026-10-11, later)
+
+The art benchmark moved to gritty old-school black-and-white ink. `docs/ART_DIRECTION.md` has the details.
+- **References:** STYLE-REF-03 to STYLE-REF-10 are attached per register, at most 3 per item. The ink-wash examples are mood only, and STYLE-REF-01/02 are superseded.
+- **Prompts:** `prompt_v2` carries the new wording, and the batch queue was republished.
+- **Pipeline:** the checks are unchanged. Pure black ink only, and grey wash still fails.
+- **First run:** the first Codex run after the change should stop after 5 images for review.
