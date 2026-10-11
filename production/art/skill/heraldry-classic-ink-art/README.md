@@ -37,6 +37,10 @@ python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py sta
 
 Complete a **real image-tool smoke test** with references and a native file on disk before accepting any image. The script alone cannot prove this.
 
+## Offline input package
+
+Where Work cannot authenticate shell git or fetch binary references through the connector, Claude Code builds a self-contained input ZIP with `tools/art_work_package.py build` (queue, prompts, queue-listed reference bytes, this skill, receipts, selections, hash manifest, source commit). `work_preflight.py --offline-package` verifies it without Git and reports delivery as bundle only; `bundle` adds the QA reports and a hash manifest; `tools/art_work_package.py verify-bundle` checks the returned ZIP. The Work smoke test is still required.
+
 ## Before each batch delivery
 
 1. Inspect image references, native assets and print-size previews and complete QA for every item.
@@ -60,7 +64,7 @@ Unit tests and image diagnostics do not measure artistic excellence. Real Work g
 - `references/STYLE.md`, `STYLE_CONSISTENCY_V6.md`, `VISUAL_ACCEPTANCE_V6.md`, `FAMILIES.md`, `QA_CHECKLIST.md`, `REPAIR.md`: art direction, QA, family framing and revision rules.
 - `references/images/`: byte-preserved approved Greythorn and three owner-approved reference JPEGs, with a SHA inventory.
 - `scripts/heraldry_art.py`, `fidelity_gate.py`, `style_audit.py`, `work_preflight.py`, `delivery_guard.py`, `validate_skill.py`, `build_release.py`.
-- `tests/test_v5_regression.py`, `tests/test_v6.py`: offline regression tests.
+- `tests/test_v5_regression.py`, `tests/test_v6.py`, `tests/test_offline_package.py`: offline regression tests.
 - `deployment/`: maintainer-only repository upgrade plan and proposed v6 standing instructions.
 
 The skill package does **not** incorporate the 275 individual prompts from the illustration catalogue.

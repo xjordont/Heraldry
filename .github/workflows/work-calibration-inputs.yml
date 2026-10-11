@@ -1,9 +1,15 @@
 name: Export Work calibration inputs
+# Builds the self-contained ChatGPT Work input package with tools/art_work_package.py (the same builder Claude Code
+# uses for the committed copy), verifies it offline with Git credentials stripped, and uploads it as an artifact.
 on:
   push:
     branches: [main]
     paths:
       - '.github/workflows/work-calibration-inputs.yml'
+      - 'tools/art_work_package.py'
+      - 'production/art/gpt/QUEUE.json'
+      - 'production/art/gpt/prompts/**'
+      - 'production/art/skill/**'
   workflow_dispatch:
 permissions:
   contents: read
@@ -13,18 +19,11 @@ concurrency:
 jobs:
   export:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           lfs: false
-          sparse-checkout: |
-            production/art/gpt
-            production/art/skill/heraldry-classic-ink-art
-            production/art/SELECTIONS.json
-            assets/art/style
-            assets/art/incoming/ART-BAS-GREYTHORN.jpg
-          sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -42,56 +41,22 @@ jobs:
               subprocess.run(['git', 'lfs', 'pull', '--include=' + ','.join(pointers), '--exclude='], check=True)
           PY
       - name: Install image decoding dependency
-        run: python -m pip install Pillow
-      - name: Validate and package exact inputs
+        run: python -m pip install pillow==12.3.0
+      - name: Build and verify the exact input package
         shell: bash
         run: |
-          python - <<'PY'
-          import hashlib, json, subprocess, zipfile
-          from pathlib import Path
-          from PIL import Image
-          root = Path('.')
-          queue = json.loads(Path('production/art/gpt/QUEUE.json').read_text())
-          assert queue['schema'] >= 2
-          files = set()
-          for directory in ('production/art/gpt', 'production/art/skill/heraldry-classic-ink-art'):
-              files.update(p for p in Path(directory).rglob('*') if p.is_file() and '__pycache__' not in p.parts)
-          for optional in ('.gitattributes', 'production/art/SELECTIONS.json'):
-              if Path(optional).is_file():
-                  files.add(Path(optional))
-          for item in queue['items']:
-              prompt = Path(item['prompt'])
-              text = prompt.read_text(encoding='utf-8').removesuffix('\n')
-              assert hashlib.sha256(text.encode()).hexdigest() == item['prompt_sha256'], item['id']
-              files.add(prompt)
-              for reference in item['references']:
-                  ref = Path(reference)
-                  assert ref.is_file(), reference
-                  assert not ref.read_bytes().startswith(b'version https://git-lfs'), reference
-                  with Image.open(ref) as image:
-                      image.verify()
-                  files.add(ref)
-          manifest = {
-              'schema': 1,
-              'repository': 'xjordont/Heraldry',
-              'source_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
-              'phase': queue['phase'],
-              'items': [i['id'] for i in queue['items']],
-              'delivery': 'offline_inputs_only',
-              'files': [{'path': p.as_posix(), 'bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(files)]
-          }
-          output = Path('work-export')
-          output.mkdir()
-          with zipfile.ZipFile(output / 'Heraldry_Work_Calibration_Inputs.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
-              for path in sorted(files):
-                  archive.write(path, path.as_posix())
-              archive.writestr('WORK_INPUT_MANIFEST.json', json.dumps(manifest, indent=2) + '\n')
-              archive.writestr('WORK_INPUT_README.txt', 'Exact calibration input snapshot, not a Git checkout. Verify WORK_INPUT_MANIFEST.json hashes before use. Use ZIP handoff for native outputs and QA receipts; do not claim authenticated Git delivery. Work must perform its own image-reference/native-file smoke test. Stop after calibration delivery for independent review.\n')
-          print(json.dumps({'validated': True, 'source_commit': manifest['source_commit'], 'phase': queue['phase'], 'items': manifest['items'], 'files': len(files)}))
-          PY
+          mkdir work-export
+          python tools/art_work_package.py build --out work-export/Heraldry_Work_Calibration_Inputs.zip
+          status=0
+          python tools/art_work_package.py verify work-export/Heraldry_Work_Calibration_Inputs.zip > work-export/VERIFY_REPORT.json || status=$?
+          cat work-export/VERIFY_REPORT.json
+          exit $status
       - uses: actions/upload-artifact@v4
         with:
           name: Heraldry-Work-Calibration-Inputs
-          path: work-export/Heraldry_Work_Calibration_Inputs.zip
+          path: |
+            work-export/Heraldry_Work_Calibration_Inputs.zip
+            work-export/WORK_PACKAGE.json
+            work-export/VERIFY_REPORT.json
           if-no-files-found: error
           retention-days: 14

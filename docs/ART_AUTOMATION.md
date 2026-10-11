@@ -80,7 +80,7 @@ Only `approved` and `anchor-approved` art is placed in the book.
 - Generated images are recorded as AI-generated (ChatGPT Work), never as hand-drawn.
 - Rules and deployment diagrams remain source-faithful vector figures and are not generated.
 
-## The ChatGPT Work skill (v4)
+## The ChatGPT Work skill (v4; superseded by v6 below)
 
 `production/art/skill/heraldry-classic-ink-art/` is the source of the skill ChatGPT Work runs, and `production/art/skill/Heraldry_Classic_Ink_Art_Skill_v4_0.zip` is the installable build. It replaces the owner's v3.1 draft, which planned one scene per conversation, used one style reference for every family, sized images from a preset table that disagreed with the layout slots, and had no queue, receipts or gates. The skill's README lists each change and why.
 
@@ -90,3 +90,19 @@ Only `approved` and `anchor-approved` art is placed in the book.
 - `tests/test_art_skill.py` fails if the zip is older than its sources or the reference images, if `FAMILIES.md` disagrees with the config, or if the queue schema changes under the helper. After any change to the skill sources, the reference sets or the reference images, run `python3 tools/art_skill_build.py` and commit the zip.
 
 Claude Code still owns the prompts, queue, references, review and approval. The skill only runs the queue and checks what it delivers.
+
+## Skill v6 and the offline Work input package
+
+The owner installed skill v6 on 2026-10-11 (`Heraldry_Classic_Ink_Art_Skill_v6_0.zip`, built by `tools/art_skill_build.py`). It is the working version. v6 adds byte-bound visual QA reports (`fidelity_gate.py`, `save --qa-file`), the guarded direct-main delivery (`delivery_guard.py`), a same-register drift report (`style_audit.py`) and `work_preflight.py`.
+
+ChatGPT Work's first v6 test run was blocked. Shell git could not authenticate, and the GitHub connector could not fetch the binary references STYLE-REF-01 and STYLE-REF-02. The input route that fixes this is `tools/art_work_package.py`:
+
+- `build` writes `production/art/work/Heraldry_Work_Input_<phase>.zip` and a copy of its `WORK_PACKAGE.json`. Inputs must be committed first, because the manifest names the source commit. The ZIP holds the exact queue, its prompt files, every queue-listed reference as real image bytes, the complete v6 skill (source and installable ZIP), receipts, selections, `config/art_style.json` and a generated `START_HERE.md`, each with SHA-256. Nothing else goes in: no other art and no private reference PDFs.
+- `verify ZIP` extracts the package into an empty folder and checks the manifest, prompt hashes and reference decoding. It then runs the packaged `work_preflight.py --offline-package`, `doctor`, `status` and `delivery_guard.py audit` with Git credentials stripped from the environment. The guard must refuse.
+- `check` is run by `tests/test_art_work_package.py`. It fails when the committed package no longer matches the queue, prompts, references or skill. Receipts may only have grown since the build, and only selection entries for queued IDs are compared. After republishing a queue or rebuilding the skill, commit, run `build`, and commit the package.
+- The owner's `Export Work calibration inputs` workflow (`.github/workflows/work-calibration-inputs.yml`; manual, or on queue, skill or builder changes) runs the same `build` and `verify` on GitHub Actions. It uploads the ZIP, `WORK_PACKAGE.json` and the verify report as a 14-day artifact. It is the same package format, so the offline preflight accepts it.
+- `verify-bundle BUNDLE.zip` is the first reviewer step on what Work returns. It checks the manifest hashes, receipts against the native bytes, prompt and reference hashes, and each QA report bound in its receipt (via `fidelity_gate.verify_record`). It approves nothing; visual review and `tools/art_intake.py` follow.
+
+In the package, `heraldry_art.py` never runs git. A folder counts as a checkout only when `.git` is at its root. Delivery is `bundle --evidence ...`, which first applies the guard's receipt gate. Its ZIP carries the native images, `receipts_append.jsonl`, `review_evidence/qa/<ID>.qa.json`, extra evidence and `BUNDLE_MANIFEST.json`, which records `pushed_to_github: false` and "not approved". Authenticated Git/LFS delivery is a separate capability and is never implied by the package.
+
+The package proves the inputs only. Two capabilities can be shown only by a real smoke test inside Work: that the image tool accepts every listed reference, and that the native output file is accessible.

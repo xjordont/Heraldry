@@ -42,15 +42,17 @@ python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py <co
 | `save ID FILE ...` | check again, copy the bytes untouched, write the receipt |
 | `refuse ID --reason "..."` | record that the image tool refused an item |
 | `sheet [ID ...] [--refs]` | contact sheet of saved images; `--refs` adds their references |
-| `bundle` | hand-off zip when git cannot push |
-| `work_preflight.py` | read-only Python, LFS, queue, references, remote auth and model-smoke status |
+| `bundle [--evidence FILE ...]` | review hand-off zip (native images, receipts, QA reports, hash manifest) when git cannot push |
+| `work_preflight.py` | read-only Python, LFS, queue, references, remote auth and model-smoke status; `--offline-package` verifies a Work input package without Git |
 | `fidelity_gate.py` | create/verify byte-bound QA JSON (all ten criteria require visual evidence) |
 | `delivery_guard.py` | `audit`, `ship --execute`: verify native hashes, receipts, reference and prompt hashes, clean index, and Git LFS before delivery |
 | `style_audit.py` | advisory four-edge and same-register style drift report (scratch only); supplements the contact sheet |
 
 ## Session start
 
-First time only: clone `xjordont/heraldry` (a private repo; use the access the owner gave you) with `GIT_LFS_SKIP_SMUDGE=1` set, then run `git lfs install --local --skip-smudge` inside it. That keeps the private reference PDFs, and every other large file you do not need, from being downloaded now or by later pulls.
+**Two input routes.** (a) An authenticated Git checkout, below. (b) An **offline Work input package**: a ZIP that Claude Code builds with `tools/art_work_package.py` from a named commit, holding the exact queue, its prompt files, every queue-listed reference as real image bytes, this complete skill, receipts and selection state, each with SHA-256 in `WORK_PACKAGE.json`. Use (b) when shell git cannot authenticate or the GitHub connector cannot fetch the binary references. Unzip it into an empty folder, treat that folder as the clone, and follow its `START_HERE.md`: `work_preflight.py --repo . --offline-package --require-installed` must say READY with `delivery: bundle` and `remote_access: NOT_ATTEMPTED`. Never `git init`, clone or pull there. Everything else in this skill applies unchanged except delivery: `delivery_guard.py` needs Git and refuses, so every batch ends with `bundle` and an explicit statement that nothing was pushed. The package proves only its inputs; the image-reference and native-file smoke test is still yours to do.
+
+Route (a), first time only: clone `xjordont/heraldry` (a private repo; use the access the owner gave you) with `GIT_LFS_SKIP_SMUDGE=1` set, then run `git lfs install --local --skip-smudge` inside it. That keeps the private reference PDFs, and every other large file you do not need, from being downloaded now or by later pulls.
 
 Every session, from the repo root, first run `python production/art/skill/heraldry-classic-ink-art/scripts/work_preflight.py --repo . --require-installed` and follow `references/WORK_OPERATIONS_V6.md`. A GitHub connector without local Git LFS is not a substitute for a successful push. Then:
 

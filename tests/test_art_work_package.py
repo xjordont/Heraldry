@@ -1,0 +1,193 @@
+"""The offline ChatGPT Work input package: build, verify, and the whole runner loop without Git credentials.
+
+The images here are synthetic stand-ins drawn by the test. They exercise the mechanics (hashes, QA binding,
+receipts, bundle, reviewer check) and say nothing about the image tool or artistic quality."""
+import json, os, subprocess, sys, tempfile, unittest, zipfile
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "tools"))
+sys.path.insert(0, str(ROOT / "tests"))
+import art_work_package as awp  # noqa: E402
+from test_art_skill import figure_image, scene_image  # noqa: E402
+
+SCRIPTS = awp.SCRIPTS
+QUEUE = json.loads((ROOT / awp.QUEUE).read_text())
+COMMITTED = ROOT / "production/art/work" / f"Heraldry_Work_Input_{QUEUE['phase']}.zip"
+
+
+class CommittedPackage(unittest.TestCase):
+    @unittest.skipUnless(COMMITTED.is_file(), "no committed Work input package for this phase")
+    def test_committed_package_matches_the_repository(self):
+        self.assertEqual(awp.main(["check", str(COMMITTED)]), 0, "rebuild with tools/art_work_package.py build after committing")
+
+    @unittest.skipUnless(COMMITTED.is_file(), "no committed Work input package for this phase")
+    def test_committed_package_lists_every_queue_reference_and_no_private_material(self):
+        with zipfile.ZipFile(COMMITTED) as z:
+            names = set(z.namelist())
+            man = json.loads(z.read("WORK_PACKAGE.json"))
+        for it in QUEUE["items"]:
+            self.assertIn(it["prompt"], names)
+            for r in it["references"]:
+                self.assertIn(r, names)
+        self.assertFalse([n for n in names if n.lower().endswith(".pdf") or n.startswith("references/")])
+        self.assertFalse([n for n in names if n.startswith("assets/") and n not in {r for it in QUEUE["items"] for r in it["references"]}])
+        self.assertEqual(len(man["source"]["commit"]), 40)
+        self.assertEqual(man["delivery"]["route"], "bundle")
+
+
+@unittest.skipUnless((ROOT / ".git").exists(), "needs the repository checkout")
+class OfflineRun(unittest.TestCase):
+    """Build a package, then play Work: unpack it in a folder with no Git and no credentials and run the loop."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls._tmp = tempfile.TemporaryDirectory()
+        cls.tmp = Path(cls._tmp.name)
+        cls.zip = cls.tmp / "input.zip"
+        with open(os.devnull, "w") as null:
+            import contextlib
+            with contextlib.redirect_stdout(null):
+                assert awp.main(["build", "--out", str(cls.zip), "--allow-dirty"]) == 0
+
+    @classmethod
+    def tearDownClass(cls):
+        cls._tmp.cleanup()
+
+    def test_build_is_deterministic_and_self_describing(self):
+        again = self.tmp / "again.zip"
+        import contextlib, io
+        with contextlib.redirect_stdout(io.StringIO()):
+            awp.main(["build", "--out", str(again), "--allow-dirty"])
+        self.assertEqual(again.read_bytes(), self.zip.read_bytes())
+        with zipfile.ZipFile(self.zip) as z:
+            man = json.loads(z.read("WORK_PACKAGE.json"))
+            self.assertIn("START_HERE.md", z.namelist())
+        self.assertEqual(man["queue"]["ids"], [i["id"] for i in QUEUE["items"]])
+        for p in man["prompts"]:
+            self.assertTrue(p["verified_against_queue"])
+        self.assertEqual({r["path"] for r in man["references"]}, {r for it in QUEUE["items"] for r in it["references"]})
+        for r in man["references"]:
+            self.assertEqual(r["format"], "JPEG")
+
+    def test_verify_passes_without_git_credentials(self):
+        r = awp.verify(self.zip)
+        self.assertEqual(r["status"], "PASS", json.dumps(r, indent=1))
+        pre = json.loads(r["tools"]["work_preflight --offline-package --require-installed"]["stdout"])
+        self.assertEqual((pre["source"]["kind"], pre["delivery"], pre["git"], pre["origin_main_access"]), ("offline_package", "bundle", False, False))
+        self.assertIn("NOT_ATTEMPTED", pre["remote_access"])
+        self.assertEqual(pre["image_and_reference_tool"], "UNVERIFIED")
+        self.assertIn("offline Work input package", r["tools"]["delivery_guard audit (must refuse: no Git)"]["stderr"])
+
+    def unpack(self, name):
+        d = self.tmp / name
+        awp.safe_extract(self.zip, d)
+        home = self.tmp / (name + "-home")
+        (home / "scratch").mkdir(parents=True)
+        return d, home, awp.offline_env(home)
+
+    def sh(self, pkg, env, *args):
+        return subprocess.run([sys.executable, *args], cwd=pkg, env=env, capture_output=True, text=True, timeout=300)
+
+    def test_tampering_is_caught(self):
+        pkg, home, env = self.unpack("tampered")
+        ref = QUEUE["items"][0]["references"][1]
+        (pkg / ref).write_bytes(b"version https://git-lfs.github.com/spec/v1\noid sha256:" + b"0" * 64 + b"\nsize 1\n")
+        prompt = pkg / QUEUE["items"][1]["prompt"]
+        prompt.write_text(prompt.read_text() + "extra\n")
+        r = self.sh(pkg, env, f"{SCRIPTS}/work_preflight.py", "--repo", ".", "--offline-package")
+        d = json.loads(r.stdout)
+        self.assertEqual(d["status"], "BLOCKED")
+        joined = " ".join(d["errors"])
+        self.assertIn(ref, joined)
+        self.assertIn("prompt hash mismatch", joined)
+
+    def test_five_anchors_check_save_bundle_and_review_check(self):
+        pkg, home, env = self.unpack("work")
+        h = f"{SCRIPTS}/heraldry_art.py"
+        scratch = home / "work"
+        scratch.mkdir()
+        for n, it in enumerate(QUEUE["items"]):
+            w, hgt = (int(x) for x in it["size"].split("x"))
+            img = scratch / f"{it['id']}.png"
+            (scene_image((w, hgt)) if it["register"] == "scene" else figure_image((w, hgt), scale=0.6 + 0.03 * n)).save(img)
+            r = self.sh(pkg, env, h, "check", it["id"], str(img), "--json")
+            self.assertIn(json.loads(r.stdout)["result"], ("PASS", "WARN"), r.stdout + r.stderr)
+            qa = scratch / f"{it['id']}.qa.json"
+            refs = sum((["--reference", x] for x in it["references"]), [])
+            r = self.sh(pkg, env, f"{SCRIPTS}/fidelity_gate.py", "create", it["id"], str(img), "--prompt-sha", it["prompt_sha256"], *refs, "--out", str(qa))
+            self.assertEqual(r.returncode, 0, r.stderr)
+            rec = json.loads(qa.read_text())
+            rec.update(prompt_unchanged=True, references_attached=True, visual_review_at_print_size=True,
+                       register_compared="scene" if it["register"] == "scene" else "figure")
+            for k in rec["checks"]:
+                rec["checks"][k] = {"pass": True, "evidence": f"synthetic test stand-in, mechanics only: {k}"}
+            qa.write_text(json.dumps(rec))
+            flags = sum((["--must", "test stand-in, counted as listed: " + m] for m in it["must"]), [])
+            flags += ["--avoid-clear"] if it["avoid"] else []
+            r = self.sh(pkg, env, h, "save", it["id"], str(img), "--qa-file", str(qa), *flags)
+            self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        r = self.sh(pkg, env, h, "status")
+        self.assertIn("BUNDLE", r.stdout)
+        self.assertEqual(self.sh(pkg, env, f"{SCRIPTS}/delivery_guard.py", "audit", "--repo", ".").returncode, 2)
+        sheet = scratch / "sheet.jpg"
+        self.assertEqual(self.sh(pkg, env, h, "sheet", "--refs", "--out", str(sheet)).returncode, 0)
+        out = self.tmp / "review.zip"
+        r = self.sh(pkg, env, h, "bundle", "--out", str(out), "--evidence", str(sheet))
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        self.assertIn("Nothing was pushed", r.stdout)
+        r = self.sh(pkg, env, h, "status")
+        self.assertIn("STOP", r.stdout)
+        self.assertIn("anchors are done", r.stdout)
+        # The package's own preflight still passes: only receipts grew, and saved images are expected extras.
+        d = json.loads(self.sh(pkg, env, f"{SCRIPTS}/work_preflight.py", "--repo", ".", "--offline-package").stdout)
+        self.assertEqual(d["status"], "READY", d)
+        with zipfile.ZipFile(out) as z:
+            names = set(z.namelist())
+            man = json.loads(z.read("BUNDLE_MANIFEST.json"))
+        for it in QUEUE["items"]:
+            self.assertIn(f"assets/art/incoming/{it['id']}.png", names)
+            self.assertIn(f"review_evidence/qa/{it['id']}.qa.json", names)
+        self.assertIn("review_evidence/sheet.jpg", names)
+        self.assertIs(man["pushed_to_github"], False)
+        self.assertEqual(man["source"]["kind"], "offline_package")
+        self.assertIn("NOT APPROVED", man["approval"])
+        v = awp.verify_bundle(out)
+        self.assertEqual(v["status"], "PASS", json.dumps(v, indent=1))
+        # A swapped image is caught by the reviewer check.
+        bad = self.tmp / "bad.zip"
+        with zipfile.ZipFile(out) as src, zipfile.ZipFile(bad, "w") as dst:
+            for n in src.namelist():
+                data = src.read(n)
+                if n.endswith("ART-ANC-DWARF.png"):
+                    data = (scratch / "ART-CLA-FIGHTER.png").read_bytes()
+                dst.writestr(n, data)
+        self.assertEqual(awp.verify_bundle(bad)["status"], "FAIL")
+
+    def test_bundle_refuses_a_qa_report_changed_after_save(self):
+        pkg, home, env = self.unpack("qa-changed")
+        it = QUEUE["items"][1]
+        w, hgt = (int(x) for x in it["size"].split("x"))
+        img = home / "x.png"
+        figure_image((w, hgt)).save(img)
+        qa = home / "x.qa.json"
+        self.sh(pkg, env, f"{SCRIPTS}/fidelity_gate.py", "create", it["id"], str(img), "--prompt-sha", it["prompt_sha256"],
+                *sum((["--reference", x] for x in it["references"]), []), "--out", str(qa))
+        rec = json.loads(qa.read_text())
+        rec.update(prompt_unchanged=True, references_attached=True, visual_review_at_print_size=True, register_compared="figure")
+        for k in rec["checks"]:
+            rec["checks"][k] = {"pass": True, "evidence": f"synthetic test stand-in, mechanics only: {k}"}
+        qa.write_text(json.dumps(rec))
+        self.sh(pkg, env, f"{SCRIPTS}/heraldry_art.py", "check", it["id"], str(img))
+        r = self.sh(pkg, env, f"{SCRIPTS}/heraldry_art.py", "save", it["id"], str(img), "--qa-file", str(qa),
+                    "--must", "test stand-in, counted eight legs", "--avoid-clear")
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        qa_copy = next((home / "scratch").rglob(f"qa/{it['id']}.qa.json"))
+        qa_copy.write_text(qa_copy.read_text().replace("mechanics only", "edited later"))
+        r = self.sh(pkg, env, f"{SCRIPTS}/heraldry_art.py", "bundle")
+        self.assertEqual(r.returncode, 2)
+        self.assertIn("changed since `save`", r.stderr)
+
+
+if __name__ == "__main__":
+    unittest.main()
