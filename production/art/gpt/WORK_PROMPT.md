@@ -12,7 +12,7 @@ Installing these instructions does not authorize image production. A readiness-o
 
 ## Offline Work fallback
 
-The owner pastes this into ChatGPT Work to start an art session, with the current input package attached (`production/art/work/Heraldry_Work_Input_<phase>.zip`, committed and kept current by the repository tests).
+The owner pastes this into ChatGPT Work to start an art session, with a freshly built input package attached (`Heraldry_Work_Input_<phase>.zip`: download it from a run of the `Build art packages` workflow, or ask Claude Code to build it; packages are not committed).
 
 **No credentials ever go into a Work conversation.** An earlier draft (2026-10-11) had Work clone and push with a GitHub token. ChatGPT refused it and flagged the pasted token as a leaked secret, and it was right to: a credential pasted into a third-party chat is exposed. That route is withdrawn. Use only what is below. If a token was ever pasted, revoke it.
 

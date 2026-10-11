@@ -948,6 +948,7 @@ def cmd_save(a, repo):
         if stale != dest:
             stale.unlink()
             print(f"removed the older {stale.name} (one file per ID)")
+    archive_copy(repo, dest.name, data)
     rec = {"id": it["id"], "prompt_sha256": it["prompt_sha256"], "surface": surface(repo), "model": a.model or "not shown",
            "date_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "variants_tried": attempts,
            "notes": a.notes or ""}
@@ -985,6 +986,23 @@ def cmd_save(a, repo):
         print("saved with FAIL tripwires recorded in the receipt: the reviewer will see them")
     print(f"next: run `{helper()} status` for the next action")
     return 0
+
+
+def archive_copy(repo, name, data):
+    """HERALDRY_ARCHIVE names a local folder outside the clone that keeps one copy of every saved image (the owner's
+    PC copy, made with no download: GitHub LFS stays the master). A redo replaces the item's earlier file."""
+    arch = os.environ.get("HERALDRY_ARCHIVE")
+    if not arch:
+        return
+    arch = Path(arch).resolve()
+    if arch == repo.resolve() or repo.resolve() in arch.parents:
+        raise Fatal("HERALDRY_ARCHIVE must be outside the repository clone")
+    arch.mkdir(parents=True, exist_ok=True)
+    stem = Path(name).stem
+    for old in arch.glob(stem + ".*"):
+        if old.name != name and old.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp"):
+            old.unlink()
+    (arch / name).write_bytes(data)
 
 
 def cmd_refuse(a, repo):

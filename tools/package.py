@@ -14,9 +14,18 @@ INCLUDE = ["Makefile", "requirements.lock", "README.md", "README_SETUP.md", "BUI
 # style = owner-supplied generation references (never packaged); masters = raw generated art (ink derivatives ship)
 EXCLUDE_PARTS = {"__pycache__", "test", "private", ".git", "build", "overscan", "style", "masters"}
 EXCLUDE_NAMES = {"content.typ", "SHA256SUMS.txt", "package-audit.json"}
+LFS_POINTER = b"version https://git-lfs"
+
+
+def generated_natives():
+    """Native generated images in assets/art/incoming (recorded in SELECTIONS.json): raw art like masters/, so only
+    their ink derivatives ship. The twelve legacy atmospheric masters are not in SELECTIONS and still ship."""
+    sels = ROOT / "production/art/SELECTIONS.json"
+    return set(json.loads(sels.read_text())) if sels.is_file() else set()
 
 
 def files():
+    natives = generated_natives()
     for top in INCLUDE:
         p = ROOT / top
         for f in ([p] if p.is_file() else sorted(p.rglob("*"))):
@@ -27,6 +36,11 @@ def files():
                 continue
             if rel.parts[0] == "dist" and f.name.startswith("Heraldry_") and not f.name.startswith(f"Heraldry_{version()}_"):
                 continue
+            if rel.parts[:3] == ("assets", "art", "incoming") and f.stem in natives:
+                continue
+            with f.open("rb") as fh:
+                if fh.read(len(LFS_POINTER)) == LFS_POINTER:
+                    raise SystemExit(f"{rel} is a Git LFS pointer: fetch it before packaging")
             yield f
 
 

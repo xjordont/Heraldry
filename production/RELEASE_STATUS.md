@@ -1,6 +1,6 @@
 # Release status — Heraldry Skirmish RC492
 
-Build policy (owner, 2026-10-11): PDFs are rebuilt only on request. `dist/` and the build evidence below describe the last requested build; when the source or art has moved past it, the table says so. Last build: 2026-10-11, RC492 with the six ChatGPT Work anchors placed (inkjet PDF 1cef40de, 598 interior pages).
+Build policy (owner, 2026-10-11): PDFs are rebuilt only on request. `dist/` and the build evidence below describe the last requested build; when the source or art has moved past it, the table says so. Last build: 2026-10-11, RC492 with the six ChatGPT Work anchors placed (inkjet PDF 1cef40de, 598 interior pages). Its PDFs predate the large-file policy (`docs/LARGE_FILES.md`): they are no longer in the working tree but remain in Git history at commit 3da756f; the next requested build is published as a GitHub Release.
 
 Active revision and hashes: `source/versions.json`. Current build evidence: `production/build-provenance.json`, `production/qa/STATUS.json` and the scoped visual/figure ledgers. RC484–RC486 remain unchanged.
 

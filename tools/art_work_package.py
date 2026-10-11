@@ -2,15 +2,13 @@
 """Self-contained ChatGPT Work input package for the current illustration queue, and its review-bundle check.
 
   python3 tools/art_work_package.py build [--out ZIP] [--allow-dirty]
-        Write the deterministic input ZIP (default production/art/work/Heraldry_Work_Input_<phase>.zip) and a copy of
-        its WORK_PACKAGE.json beside it. The ZIP holds the exact queue, its prompt files, every queue-listed reference
+        Write the deterministic input ZIP (default build/art/Heraldry_Work_Input_<phase>.zip; a build output, never
+        committed) and a copy of its WORK_PACKAGE.json beside it. The ZIP holds the exact queue, its prompt files, every queue-listed reference
         as real image bytes, the complete v7 skill (source folder and installable ZIP), current receipts, selection
         state and the style config the skill validator reads. Nothing else: no other art, no private reference PDFs.
   python3 tools/art_work_package.py verify ZIP [--no-run]
         Extract into an empty temporary folder and check the manifest, prompt hashes and reference decoding, then run
         the packaged work_preflight.py --offline-package and helper doctor/status with Git credentials unavailable.
-  python3 tools/art_work_package.py check [ZIP]
-        Fail if the committed package no longer matches the repository's queue, prompts, references, skill or receipts.
   python3 tools/art_work_package.py verify-bundle BUNDLE.zip
         Claude Code's first step on a Work review bundle: hashes, receipts, QA reports and references against this repo.
         It approves nothing.
@@ -39,9 +37,8 @@ FIXED = {  # path: role
     "production/art/gpt/RECEIPTS.jsonl": "receipts",
     "production/art/SELECTIONS.json": "selections",
     "config/art_style.json": "config",
-    SKILL_ZIP: "skill_zip",
 }
-OUT_DIR = ROOT / "production/art/work"
+OUT_DIR = ROOT / "build/art"
 STAMP = (2026, 10, 11, 0, 0, 0)
 KIND = "heraldry-work-input-package"
 LFS = b"version https://git-lfs"
@@ -189,10 +186,12 @@ def build_blobs(allow_dirty=False):
                 fmt, px = decode(files[r][0], r)
                 refs[r] = {"path": r, "sha256": sha(files[r][0]), "format": fmt, "px": px, "used_by": []}
             refs[r]["used_by"].append(it["id"])
+    import art_skill_build                                # the installable skill zip, built from the same commit
     blobs = {rel: b for rel, (b, _) in files.items()}
+    blobs[SKILL_ZIP] = art_skill_build.zip_bytes()
     blobs["START_HERE.md"] = start_here(q, src).encode()
     roles = {rel: role for rel, (_, role) in files.items()}
-    roles["START_HERE.md"] = "instructions"
+    roles.update({SKILL_ZIP: "skill_zip", "START_HERE.md": "instructions"})
     manifest = {
         "schema": 1, "kind": KIND, "skill_version": "7.0.0", "created_from": src,
         "source": {k: src[k] for k in ("repository", "branch", "commit", "commit_date")},
@@ -320,45 +319,6 @@ def cmd_verify(a):
     return 0 if r["status"] == "PASS" else 1
 
 
-def cmd_check(a):
-    z = Path(a.zip) if a.zip else None
-    if z is None:
-        q = json.loads((ROOT / QUEUE).read_text(encoding="utf-8"))
-        z = OUT_DIR / f"Heraldry_Work_Input_{q['phase']}.zip"
-    if not z.is_file():
-        print(f"{z} is missing: run python3 tools/art_work_package.py build")
-        return 1
-    q, files = contents()
-    stale = []
-    ids = {it["id"] for it in q["items"]}
-    with zipfile.ZipFile(z) as zf:
-        names = set(zf.namelist()) - {"WORK_PACKAGE.json", "START_HERE.md"}
-        for rel, (b, _) in files.items():
-            if rel not in names:
-                stale.append(rel)
-                continue
-            old = zf.read(rel)
-            if rel.endswith("RECEIPTS.jsonl"):
-                ok = b.startswith(old)                      # receipts only grow after the package is built
-            elif rel.endswith("SELECTIONS.json"):
-                # Intake and approvals do not change Work's job; a rejection (a redo and its reason) does.
-                def redo(d, i):
-                    e = json.loads(d).get(i) or {}
-                    return (e.get("status") == "rejected", e.get("rejected_reason"), (e.get("master") or {}).get("sha256")
-                            if e.get("status") == "rejected" else None)
-                ok = all(redo(old, i) == redo(b, i) for i in ids)
-            else:
-                ok = old == b
-            if not ok:
-                stale.append(rel)
-        stale += sorted(names - set(files))
-    if stale:
-        print(f"{z.name} is stale (rebuild with tools/art_work_package.py build after committing): " + ", ".join(stale))
-        return 1
-    print(f"{z.name} matches the repository's queue phase {q['phase']}, prompts, references, skill and receipts")
-    return 0
-
-
 def verify_bundle(bpath, root=ROOT):
     """Check a Work review bundle against this repository. Approves nothing."""
     sys.path.insert(0, str(root / SCRIPTS))
@@ -477,14 +437,12 @@ def main(argv=None):
     p = sub.add_parser("verify")
     p.add_argument("zip")
     p.add_argument("--no-run", action="store_true")
-    p = sub.add_parser("check")
-    p.add_argument("zip", nargs="?")
     p = sub.add_parser("verify-bundle")
     p.add_argument("bundle")
     p = sub.add_parser("import-bundle")
     p.add_argument("bundle")
     a = ap.parse_args(argv)
-    return {"build": cmd_build, "verify": cmd_verify, "check": cmd_check, "verify-bundle": cmd_verify_bundle,
+    return {"build": cmd_build, "verify": cmd_verify, "verify-bundle": cmd_verify_bundle,
             "import-bundle": cmd_import_bundle}[a.cmd](a)
 
 

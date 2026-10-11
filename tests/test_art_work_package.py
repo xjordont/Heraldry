@@ -13,27 +13,6 @@ from test_art_skill import figure_image, scene_image  # noqa: E402
 
 SCRIPTS = awp.SCRIPTS
 QUEUE = json.loads((ROOT / awp.QUEUE).read_text())
-COMMITTED = ROOT / "production/art/work" / f"Heraldry_Work_Input_{QUEUE['phase']}.zip"
-
-
-class CommittedPackage(unittest.TestCase):
-    @unittest.skipUnless(COMMITTED.is_file(), "no committed Work input package for this phase")
-    def test_committed_package_matches_the_repository(self):
-        self.assertEqual(awp.main(["check", str(COMMITTED)]), 0, "rebuild with tools/art_work_package.py build after committing")
-
-    @unittest.skipUnless(COMMITTED.is_file(), "no committed Work input package for this phase")
-    def test_committed_package_lists_every_queue_reference_and_no_private_material(self):
-        with zipfile.ZipFile(COMMITTED) as z:
-            names = set(z.namelist())
-            man = json.loads(z.read("WORK_PACKAGE.json"))
-        for it in QUEUE["items"]:
-            self.assertIn(it["prompt"], names)
-            for r in it["references"]:
-                self.assertIn(r, names)
-        self.assertFalse([n for n in names if n.lower().endswith(".pdf") or n.startswith("references/")])
-        self.assertFalse([n for n in names if n.startswith("assets/") and n not in {r for it in QUEUE["items"] for r in it["references"]}])
-        self.assertEqual(len(man["source"]["commit"]), 40)
-        self.assertEqual(man["delivery"]["route"], "bundle")
 
 
 @unittest.skipUnless((ROOT / ".git").exists(), "needs the repository checkout")
@@ -69,6 +48,20 @@ class OfflineRun(unittest.TestCase):
         self.assertEqual({r["path"] for r in man["references"]}, {r for it in QUEUE["items"] for r in it["references"]})
         for r in man["references"]:
             self.assertIn(r["format"], ("JPEG", "PNG"))
+
+    def test_package_lists_every_queue_reference_the_skill_zip_and_no_private_material(self):
+        with zipfile.ZipFile(self.zip) as z:
+            names = set(z.namelist())
+            man = json.loads(z.read("WORK_PACKAGE.json"))
+        for it in QUEUE["items"]:
+            self.assertIn(it["prompt"], names)
+            for r in it["references"]:
+                self.assertIn(r, names)
+        self.assertIn(awp.SKILL_ZIP, names)
+        self.assertFalse([n for n in names if n.lower().endswith(".pdf") or n.startswith("references/")])
+        self.assertFalse([n for n in names if n.startswith("assets/") and n not in {r for it in QUEUE["items"] for r in it["references"]}])
+        self.assertEqual(len(man["source"]["commit"]), 40)
+        self.assertEqual(man["delivery"]["route"], "bundle")
 
     def test_verify_passes_without_git_credentials(self):
         r = awp.verify(self.zip)

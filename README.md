@@ -20,7 +20,7 @@ make test
 make clean all verify package
 ```
 
-See [BUILD.md](BUILD.md) for commands and [RELEASE_STATUS.md](production/RELEASE_STATUS.md) for actual evidence and limitations. The earlier art-light PDFs are in [dist/](dist/). The prior release ZIP is withheld during this artwork/design iteration; rebuild and review before creating a new release archive. Automated checks bind results to current source, code, assets and PDF hashes; visual review and physical printing remain separate.
+See [BUILD.md](BUILD.md) for commands and [RELEASE_STATUS.md](production/RELEASE_STATUS.md) for actual evidence and limitations. Built PDFs are published as GitHub Releases, not committed ([docs/LARGE_FILES.md](docs/LARGE_FILES.md)); the RC492 PDFs built before that policy are in Git history (the link is in that document). The prior release ZIP is withheld during this artwork/design iteration; rebuild and review before creating a new release archive. Automated checks bind results to current source, code, assets and PDF hashes; visual review and physical printing remain separate.
 
 ## Design and components
 

@@ -354,8 +354,23 @@ class PointerHashes(Isolated):
         self.assertTrue(ha.still_the_rejected_image({}, pointer), "no recorded hash: assume it is still the rejected image")
 
 
+HAVE_IMAGES = (ROOT / "assets/art/style").is_dir()
+_BUILT = {}
+
+
+def built_zip():
+    """The skill zip, built once per test run into a temporary folder: it is a build output, never committed."""
+    if "zip" not in _BUILT:
+        import art_skill_build as b
+        tmp = tempfile.mkdtemp()
+        _BUILT["zip"] = Path(tmp) / "skill.zip"
+        _BUILT["zip"].write_bytes(b.zip_bytes())
+        import atexit
+        atexit.register(shutil.rmtree, tmp, True)
+    return _BUILT["zip"]
+
+
 class ValidatorCli(unittest.TestCase):
-    ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip"
     SCRIPT = SKILL / "scripts/validate_skill.py"
 
     def run_cli(self, *args, cwd=ROOT):
@@ -369,13 +384,13 @@ class ValidatorCli(unittest.TestCase):
         self.assertIn("skill source, not a built package", out["errors"][0])
         self.assertEqual(out["repo_checks"], "skipped: not a built package")
 
-    @unittest.skipUnless(ZIP.is_file() and (ROOT / "assets/art/style").is_dir(), "needs the zip and the repo images")
+    @unittest.skipUnless(HAVE_IMAGES, "needs the repo images")
     def test_zip_validates_with_the_repo_found_automatically_or_skipped_outside_one(self):
-        code, out = self.run_cli("--zip", str(self.ZIP))
+        code, out = self.run_cli("--zip", str(built_zip()))
         self.assertEqual((code, out["status"], out["repo_checks"]), (0, "PASS", "done"))
         self.assertEqual(Path(out["repo"]), ROOT)
         with tempfile.TemporaryDirectory() as tmp:
-            code, out = self.run_cli("--zip", str(self.ZIP), cwd=tmp)
+            code, out = self.run_cli("--zip", str(built_zip()), cwd=tmp)
             self.assertEqual((code, out["status"], out["repo"]), (0, "PASS", None))
             self.assertIn("skipped", out["repo_checks"])
 
@@ -394,25 +409,26 @@ class SkillSources(unittest.TestCase):
         self.assertIn("python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py", skill)
 
 
-@unittest.skipUnless((ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip").is_file() and (ROOT / "assets/art/style").is_dir(),
-                     "a release package ships neither the skill zip nor the owner's style samples")
+@unittest.skipUnless(HAVE_IMAGES, "a release package does not ship the owner's style samples")
 class SkillPackage(unittest.TestCase):
-    ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip"
+    @classmethod
+    def setUpClass(cls):
+        cls.ZIP = built_zip()
 
     def test_families_table_matches_config(self):
         import art_skill_build as b
         self.assertEqual((SKILL / "references/FAMILIES.md").read_text(), b.families_markdown(), "run tools/art_skill_build.py")
 
-    def test_zip_is_current_with_its_sources_and_the_repo_images(self):
+    def test_zip_holds_its_sources_and_the_repo_images_and_builds_reproducibly(self):
         import art_skill_build as b
-        self.assertTrue(self.ZIP.is_file(), "run tools/art_skill_build.py")
+        self.assertEqual(b.zip_bytes(), self.ZIP.read_bytes(), "the skill zip build is not deterministic")
         with zipfile.ZipFile(self.ZIP) as z:
             names = set(z.namelist())
             sources = {p.relative_to(SKILL).as_posix() for p in SKILL.rglob("*") if p.is_file() and "__pycache__" not in p.parts}
             self.assertEqual(names, sources | set(b.IMAGES) | {"references/images/SOURCES.json", "manifest.json"})
             self.assertIn("SKILL.md", names)
             for rel in sources:
-                self.assertEqual(z.read(rel), (SKILL / rel).read_bytes(), f"{rel} changed since the zip was built: run tools/art_skill_build.py")
+                self.assertEqual(z.read(rel), (SKILL / rel).read_bytes(), rel)
             for name, (repo_path, _role) in b.IMAGES.items():
                 self.assertEqual(z.read(name), (ROOT / repo_path).read_bytes(), name)
 
