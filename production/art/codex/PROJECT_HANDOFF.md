@@ -54,7 +54,7 @@ This document summarises the project, its decisions and the illustration workflo
 
 ## 4. The skill (v7; Codex follows it)
 
-`production/art/skill/heraldry-classic-ink-art/`, installable as `production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip` (built by `tools/art_skill_build.py`):
+`production/art/skill/heraldry-classic-ink-art/`, installable as `Heraldry_Classic_Ink_Art_Skill_v7_0.zip` (built on request into `build/art/` by `tools/art_skill_build.py`; never committed):
 
 - `SKILL.md`: hard rules (verbatim prompt, only the listed references, queued IDs only, no edits to images, change nothing but incoming images and receipts), the per-item loop, ten hard fails, budgets and stop conditions.
 - `references/`: `STYLE.md` (registers and the gritty old-school direction), `QA_CHECKLIST.md`, `REPAIR.md` (at most two correction sentences per retry), `STYLE_CONSISTENCY.md`, `VISUAL_ACCEPTANCE.md`, `WORK_OPERATIONS.md`, `FAMILIES.md`.

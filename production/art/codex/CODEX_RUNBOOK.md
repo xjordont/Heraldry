@@ -22,7 +22,7 @@ The configured PC already has this checkout and environment. If either path exis
 New-Item -ItemType Directory -Force C:\Heraldry | Out-Null
 git lfs install --skip-repo
 $env:GIT_LFS_SKIP_SMUDGE = "1"
-git clone -c core.autocrlf=false https://github.com/xjordont/Heraldry.git C:\Heraldry\art-producer
+git clone --filter=blob:none -c core.autocrlf=false https://github.com/xjordont/Heraldry.git C:\Heraldry\art-producer
 Remove-Item Env:GIT_LFS_SKIP_SMUDGE
 Set-Location C:\Heraldry\art-producer
 git lfs install --local --skip-smudge
@@ -30,14 +30,14 @@ py -3.12 -m venv C:\Heraldry\art-venv
 $artPython = "C:\Heraldry\art-venv\Scripts\python.exe"
 $pillowPin = (Select-String -Path requirements.lock -Pattern '^pillow==').Line
 & $artPython -m pip install $pillowPin
-New-Item -ItemType Directory -Force C:\Heraldry\art-scratch | Out-Null
+New-Item -ItemType Directory -Force C:\Heraldry\art-scratch, C:\Heraldry\art-archive | Out-Null
 ```
 
-`core.autocrlf=false` keeps checked-out text byte-exact; `.gitattributes` also pins prompts and the skill to LF. Set it locally in an existing checkout only after confirming its unchanged text matches the committed bytes. Never fetch `references/private/pdfs/` (owner reference books) for this work. Fetch only the exact queue-listed reference paths when required.
+`--filter=blob:none` downloads commits and trees but not the old PDFs and ZIPs in history; files are fetched when first needed (`docs/LARGE_FILES.md`). An existing full clone keeps working as it is. `core.autocrlf=false` keeps checked-out text byte-exact; `.gitattributes` also pins prompts and the skill to LF. Set it locally in an existing checkout only after confirming its unchanged text matches the committed bytes. Never fetch `references/private/pdfs/` (owner reference books) for this work. Fetch only the exact queue-listed reference paths when required.
 
 ## Every session
 
-Use the separate art checkout at `C:\Heraldry\art-producer`, `C:\Heraldry\art-venv\Scripts\python.exe` (Python 3.12 with the repository-pinned Pillow), and `C:\Heraldry\art-scratch` on the configured PC. Set `HERALDRY_SCRATCH` and `PYTHONUTF8=1` in every relevant subprocess. Use the selected art interpreter for every helper command.
+Use the separate art checkout at `C:\Heraldry\art-producer`, `C:\Heraldry\art-venv\Scripts\python.exe` (Python 3.12 with the repository-pinned Pillow), `C:\Heraldry\art-scratch` and `C:\Heraldry\art-archive` on the configured PC. Set `HERALDRY_SCRATCH`, `HERALDRY_ARCHIVE` and `PYTHONUTF8=1` in every relevant subprocess. The archive is the PC's own copy of every delivered image, written by `save` with no download; GitHub (Git LFS) stays the master. Delete the scratch folder once the run is finished and reviewed. Use the selected art interpreter for every helper command.
 
 Inspect the branch, worktree, index, and remote first. Run the update block only on a clean `main` checkout. If incoming images or receipts are unsent, skip the pull, run `status`, and follow guarded delivery or bundle procedures. Stop on unrelated edits or divergence. Never pull or rebase over unsent work.
 
@@ -49,7 +49,8 @@ git branch --show-current      # must be main
 git diff --cached --stat        # staging index must be clean
 git remote -v
 git pull --ff-only origin main
-$env:HERALDRY_SCRATCH = "C:\Heraldry\art-scratch"   # outside the repo
+$env:HERALDRY_SCRATCH = "C:\Heraldry\art-scratch"   # outside the repo: attempts, previews, attempt counts
+$env:HERALDRY_ARCHIVE = "C:\Heraldry\art-archive"   # outside the repo: save keeps one copy of each delivered image here
 $env:PYTHONUTF8 = "1"
 & $artPython production/art/skill/heraldry-classic-ink-art/scripts/work_preflight.py --repo . --require-installed
 & $artPython production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py doctor

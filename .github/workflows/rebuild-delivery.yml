@@ -1,5 +1,7 @@
 name: Rebuild verified delivery
 # Build on request only (owner decision 2026-10-11): run this manually when the owner asks for a new PDF.
+# The PDFs and the release ZIP are published as a GitHub Release, never committed; main receives only the small
+# verification ledgers and dist/RELEASE.json naming the release and its asset hashes (docs/LARGE_FILES.md).
 on:
   workflow_dispatch:
 permissions:
@@ -17,14 +19,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0          # check_history compares against the previous head
+          filter: blob:none       # history without old PDFs and ZIPs; blobs are fetched when needed
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: requirements.lock
-      - name: Fetch native atmospheric artwork
-        run: git lfs pull --include="assets/art/incoming/*.png,assets/art/ink/*.png" --exclude=""
+      - name: List the artwork the build places
+        # Only the twelve atmospheric masters and the ink derivatives: generated natives are not build inputs.
+        run: |
+          mkdir -p build      # gitignored; hashFiles only sees files inside the workspace
+          echo 'LFS_ART=assets/art/incoming/ART-CH*-001.png,assets/art/incoming/ART-COVER-001.png,assets/art/ink/*.png' >> "$GITHUB_ENV"
+          git lfs ls-files -l -I 'assets/art/incoming/ART-CH*-001.png,assets/art/incoming/ART-COVER-001.png,assets/art/ink/*.png' | cut -d' ' -f1 | sort > build/lfs-art.txt
+      - name: Reuse artwork fetched by earlier builds
+        uses: actions/cache@v4
+        with:
+          path: .git/lfs/objects
+          key: lfs-art-${{ hashFiles('build/lfs-art.txt') }}
+          restore-keys: lfs-art-
+      - name: Fetch that artwork (only objects not already cached)
+        run: git lfs pull --include="$LFS_ART" --exclude=""
       - name: Check reviewed artwork masters
         run: python tools/check_art.py
       - name: Install locked publishing dependencies
@@ -38,21 +53,36 @@ jobs:
           fi
       - name: Rebuild and verify against the committed review ledger
         run: make test clean all verify package
-      - name: Preserve downloadable build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: verified-delivery
-          path: dist/
-          retention-days: 30
-          if-no-files-found: error
-      - name: Commit generated delivery to main
+      - name: Publish the PDFs as a GitHub Release
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git fetch origin main
           if [ "$(git rev-parse origin/main)" != "${{ github.sha }}" ]; then
-            echo 'Main advanced during this build; artifacts retained, no stale commit pushed.'
+            echo 'Main advanced during this build; nothing published, no stale commit pushed.'
             exit 1
           fi
+          VERSION=$(python tools/manuscript.py --version)
+          TAG="$VERSION-build-$GITHUB_RUN_NUMBER"
+          shopt -s nullglob
+          ASSETS=(dist/Heraldry_"$VERSION"_*.pdf dist/specimen/Heraldry_"$VERSION"_*.pdf dist/Heraldry_"$VERSION"_release.zip dist/SHA256SUMS.txt dist/PRINT_INSTRUCTIONS.md)
+          gh release create "$TAG" "${ASSETS[@]}" --target "$GITHUB_SHA" --title "Heraldry $VERSION (build $GITHUB_RUN_NUMBER)" \
+            --notes "Verified build of $VERSION from $GITHUB_SHA. The verification ledgers on main are bound to these files' SHA-256 (dist/RELEASE.json). Physical printing: NOT TESTED until printed sheets are examined."
+          python - "$TAG" "${ASSETS[@]}" <<'PY'
+          import hashlib, json, os, sys
+          from pathlib import Path
+          tag, files = sys.argv[1], sys.argv[2:]
+          repo = os.environ["GITHUB_REPOSITORY"]
+          Path("dist/RELEASE.json").write_text(json.dumps({
+              "tag": tag, "url": f"https://github.com/{repo}/releases/tag/{tag}", "source_commit": os.environ["GITHUB_SHA"],
+              "assets": [{"name": Path(f).name, "bytes": Path(f).stat().st_size,
+                          "sha256": hashlib.sha256(Path(f).read_bytes()).hexdigest()} for f in files]}, indent=1) + "\n")
+          PY
+      - name: Commit the verification ledgers to main
+        shell: bash
+        run: |
+          # PDFs and ZIPs are gitignored: only ledgers, provenance and the release pointer are committed.
           git add dist/ production/inventory/ production/preflight.json production/build-provenance.json production/qa/
           if git diff --cached --quiet; then
             echo 'Verified delivery already matches main.'

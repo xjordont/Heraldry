@@ -1,7 +1,8 @@
 name: Import Work review bundle
 # ChatGPT Work (and this cloud container) cannot upload Git LFS objects. A Work review bundle committed to
 # production/art/work/inbox/ as an ordinary file is verified here, its native images are committed through
-# Git LFS, its receipts appended, and the intake runs. Nothing is approved: that stays with the orchestrator.
+# Git LFS, its receipts appended, and the intake runs. The imported ZIP is then removed from the inbox (its images
+# live in Git LFS; IMPORTED.json records its hash). Nothing is approved: that stays with the orchestrator.
 on:
   push:
     branches: [main]
@@ -21,6 +22,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          filter: blob:none
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -37,6 +39,7 @@ jobs:
           for z in sorted(Path('production/art/work/inbox').glob('*.zip')):
               h = hashlib.sha256(z.read_bytes()).hexdigest()
               if h in done:
+                  z.unlink()
                   continue
               r = subprocess.run([sys.executable, 'tools/art_work_package.py', 'import-bundle', str(z)], capture_output=True, text=True)
               print(r.stdout, r.stderr)
@@ -45,6 +48,7 @@ jobs:
               out = json.loads(r.stdout)
               done[h] = {'bundle': z.as_posix(), 'items': out['items'], 'receipts_added': out['receipts_added'],
                          'source': out['source'], 'imported': 'pending intake; not approved'}
+              z.unlink()          # its images are now in assets/art/incoming (LFS); the ZIP stays in history only
           log.write_text(json.dumps(done, indent=1) + '\n')
           PY
       - name: Import, ink-prepare, record and commit
@@ -62,7 +66,7 @@ jobs:
             if [ -n "$NEW" ]; then git lfs pull --include="$NEW" --exclude=""; fi
             python "$RUNNER_TEMP/import_bundles.py"
             python tools/art_intake.py scan
-            git add assets/art/incoming assets/art/ink production/art/gpt/RECEIPTS.jsonl production/art/SELECTIONS.json production/art/work/IMPORTED.json
+            git add -A assets/art/incoming assets/art/ink production/art/gpt/RECEIPTS.jsonl production/art/SELECTIONS.json production/art/work/IMPORTED.json production/art/work/inbox
             if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
             git commit -q -m "art: import ChatGPT Work review bundle and intake"
             if git push -q origin HEAD:main; then exit 0; fi

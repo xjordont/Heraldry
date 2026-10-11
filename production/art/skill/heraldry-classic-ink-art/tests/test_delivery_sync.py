@@ -264,6 +264,18 @@ class DriftCountIsMonotonic(CadenceRepo):
         self.assertIn('DELIVER:', out)
         self.assertNotIn('DRIFT REVIEW', out)
 
+    def test_archive_keeps_one_local_copy_per_item_outside_the_clone(self):
+        import os
+        from unittest import mock
+        arch = self.tmp / 'archive'
+        with mock.patch.dict(os.environ, {'HERALDRY_ARCHIVE': str(arch)}):
+            self.ha.archive_copy(self.repo, 'ART-T0.png', b'first')
+            self.ha.archive_copy(self.repo, 'ART-T0.jpg', b'redo')         # a redo in another format replaces it
+            self.assertEqual(sorted(p.name for p in arch.iterdir()), ['ART-T0.jpg'])
+        with mock.patch.dict(os.environ, {'HERALDRY_ARCHIVE': str(self.repo / 'keep')}):
+            with self.assertRaises(self.ha.Fatal):
+                self.ha.archive_copy(self.repo, 'ART-T0.png', b'x')
+
     def test_style_audit_skips_images_held_as_lfs_pointers(self):
         import style_audit as sa
         self.queue(10)

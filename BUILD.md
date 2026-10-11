@@ -29,6 +29,8 @@ Replace `RC###` with the active version; filenames are generated automatically.
 | specimen/Heraldry_RC###_specimen.pdf | Production sample extracted from the verified interior |
 | Heraldry_RC###_release.zip, SHA256SUMS.txt | Rebuildable delivery archive and checksums |
 
+These are build outputs and are gitignored. The `Rebuild verified delivery` workflow publishes them as a GitHub Release and commits `dist/RELEASE.json` (tag, URL and SHA-256 of each file) with the ledgers. See `docs/LARGE_FILES.md`.
+
 ## Iterations and review
 
 Use [WORKFLOW.md](docs/WORKFLOW.md) for source changes and main commits. `make test` protects revision sequencing, snapshot immutability, patch authorization/matches, figure dependency currency and failure gates. GitHub Actions runs these inexpensive repository checks on main pushes, pull requests and manual dispatches; the verified-delivery workflow also rebuilds full PDFs when build provenance or the visual ledger changes, or on manual dispatch. It uses locked dependencies and the committed review ledger, retains a downloadable artifact, and commits only generated delivery/evidence to main with a normal fast-forward push. It never performs or invents visual review: new PDF bytes must already have an actual review ledger. If main advances, it retains the artifact and fails instead of pushing stale work. Visual inspection runs in the publishing environment.

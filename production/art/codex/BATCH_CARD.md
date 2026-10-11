@@ -1,6 +1,6 @@
 # Codex batch card (the whole art-worker contract on one page)
 
-Read this and `AGENTS.md` only. Open `SKILL.md` or `references/*.md` only when one of them is named below for a specific case. Work in PowerShell from `C:\Heraldry\art-producer`, with `$env:HERALDRY_SCRATCH = "C:\Heraldry\art-scratch"` and `$env:PYTHONUTF8 = "1"`. `H <name>.py` stands for `& C:\Heraldry\art-venv\Scripts\python.exe production/art/skill/heraldry-classic-ink-art/scripts/<name>.py`. Keep every file you make in `$env:HERALDRY_SCRATCH`, never in the clone: a stray file there blocks delivery.
+Read this and `AGENTS.md` only. Open `SKILL.md` or `references/*.md` only when one of them is named below for a specific case. Work in PowerShell from `C:\Heraldry\art-producer`, with `$env:HERALDRY_SCRATCH = "C:\Heraldry\art-scratch"`, `$env:HERALDRY_ARCHIVE = "C:\Heraldry\art-archive"` (save keeps the PC's copy of each delivered image there) and `$env:PYTHONUTF8 = "1"`. `H <name>.py` stands for `& C:\Heraldry\art-venv\Scripts\python.exe production/art/skill/heraldry-classic-ink-art/scripts/<name>.py`. Keep every file you make in `$env:HERALDRY_SCRATCH`, never in the clone: a stray file there blocks delivery.
 
 ## Start of session
 1. `git status --short` must be empty, or show only your unsent `assets/art/incoming/*` and `RECEIPTS.jsonl`. If it is clean, `git pull --ff-only origin main`. If work is unsent, or that pull fails, run `H delivery_guard.py ship --execute --repo .` first (it recovers unsent and half-sent deliveries itself). Never resolve git by hand.

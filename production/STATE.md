@@ -296,3 +296,20 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
     - Intake provenance named "ChatGPT Work" for every image; it now names the surface the receipt records.
   - **Tests:** new regressions for the saved attempt number, the refresh (with and without unsent work), the WebP pointer fetch and the local review sheets. The delivery tests now use real Git LFS against a local remote.
   - No manuscript change and no build; `dist/` still describes the last requested build.
+- **Large-file workflow** (owner, 2026-10-11: "Use your best judgement and set up the leanest, most efficient, most logical high quality workflow for repeatedly dealing with large files and images for our project"). The policy is in `docs/LARGE_FILES.md`.
+  - **Why:** the repository had reached about 490 MB on GitHub in eleven days. Most of it was rebuilt files committed over and over: 94 PDF versions (1.46 GB uncompressed) and the skill ZIP plus Work package (61 MB per art change).
+  - **Built PDFs:**
+    - No longer committed. `Rebuild verified delivery` publishes each requested build as a GitHub Release (`RC###-build-N`) and commits only the ledgers and `dist/RELEASE.json` (tag, URL, asset SHA-256).
+    - Its checkout is a partial clone. It pulls only the LFS art the build places (the twelve masters and the ink derivatives, not the generated natives), through an `actions/cache`.
+    - The release ZIP now leaves out generated native images (their ink derivatives ship, as `masters/` already did) and refuses LFS pointers.
+    - The RC492 PDFs were removed from the working tree. They remain in Git history at 3da756f, and the link is in `docs/LARGE_FILES.md`.
+  - **Art ZIPs:** the skill ZIP and the offline Work package are built on request into `build/art/`:
+    - with `make art-packages` (about 5 s), or
+    - with the new manual `Build art packages` workflow (a 30-day download).
+
+    The tests build fresh copies and check that they are reproducible and valid. The `check` command and the committed copies are gone.
+  - **Clones:** every workflow checks out with `filter: blob:none`. The Codex runbook clones the same way. A partial clone of the old tip took 9 s and 146 MB; with this change the tip loses the PDFs and ZIPs as well.
+  - **PC copy of the images:** with `HERALDRY_ARCHIVE` set (`C:\Heraldry\art-archive`), `save` keeps one copy of each delivered image outside the clone, with no download; a redo replaces it.
+  - **Inbox:** the import workflow removes a Work review bundle once its images are in LFS. The already-imported anchors bundle was removed.
+  - **Not exercised:** the Release step runs only with the next requested build (build on request). It is checked for YAML and command syntax only.
+  - No manuscript change and no build.

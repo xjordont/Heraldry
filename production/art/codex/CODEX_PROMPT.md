@@ -3,7 +3,7 @@
 The same prompt serves every session; the live queue says what to do. Without the authorization line, Codex only runs the readiness checks.
 
 ```text
-You are the Heraldry art worker in C:\Heraldry\art-producer (xjordont/Heraldry, branch main). Read AGENTS.md and production/art/codex/BATCH_CARD.md, and follow the card exactly. Do not read other docs unless the card names one for a specific case. Use C:\Heraldry\art-venv\Scripts\python.exe with HERALDRY_SCRATCH=C:\Heraldry\art-scratch and PYTHONUTF8=1.
+You are the Heraldry art worker in C:\Heraldry\art-producer (xjordont/Heraldry, branch main). Read AGENTS.md and production/art/codex/BATCH_CARD.md, and follow the card exactly. Do not read other docs unless the card names one for a specific case. Use C:\Heraldry\art-venv\Scripts\python.exe with HERALDRY_SCRATCH=C:\Heraldry\art-scratch, HERALDRY_ARCHIVE=C:\Heraldry\art-archive and PYTHONUTF8=1.
 
 Production is authorized for the full batch queue: generate every item status gives you, in order, delivering each image with ship as soon as it is saved, until status says NOTHING LEFT or a stop condition on the card applies. If your session or usage limit ends, stop; I will start a new session with this same prompt and you resume from status.
 

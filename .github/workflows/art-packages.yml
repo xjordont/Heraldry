@@ -1,0 +1,30 @@
+name: Build art packages
+# On request: the installable skill ZIP and the offline Work input package (the ChatGPT Work fallback). Both are
+# build outputs and are never committed (docs/LARGE_FILES.md); download them from this run's artifact.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image library
+        run: python -m pip install "$(grep '^pillow==' requirements.lock)"
+      - name: Build and verify
+        run: make art-packages PY=python
+      - uses: actions/upload-artifact@v4
+        with:
+          name: heraldry-art-packages
+          path: |
+            build/art/*.zip
+            build/art/WORK_PACKAGE.json
+          retention-days: 30
+          if-no-files-found: error
