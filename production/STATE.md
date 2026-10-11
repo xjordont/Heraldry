@@ -157,3 +157,13 @@ Mandatory: every complete fit-capable scenario, section/subsection, table, proce
 \n
 - **Codex art route** (owner, 2026-10-11: "I got codex on my windows pc working with access to my computer GitHub, git, lfs, and python. I want to continue with image generation there"; earlier "within my chat gpt plus subscription without paying more for api"). New `AGENTS.md` (Codex reads it; CLAUDE.md governs; Codex writes only incoming images and receipts through `delivery_guard ship`), `production/art/codex/CODEX_RUNBOOK.md`, `CODEX_PROMPT.md` and `PROJECT_HANDOFF.md`. CLAUDE.md and ART_AUTOMATION.md now name the Codex route, with ChatGPT Work plus the offline package as fallback. `.gitattributes` pins the art queue, prompts and skill to LF for Windows. A handoff ZIP of the project, workflow and skill was given to the owner. Open: whether Codex's in-plan image generation accepts reference images; it checks before generating.
 
+
+
+## Local Codex and GitHub main instructions - 2026-10-11
+
+- Owner authorization: GitHub main should be the primary workflow; "Ok apply your proposals" authorizes this documentation maintenance change outside the art worker's normal incoming-image/receipt allowlist. Production ownership and its delivery guard remain unchanged.
+- Reconciled WORK_PROMPT.md, CODEX_PROMPT.md, CODEX_RUNBOOK.md, PROJECT_HANDOFF.md, and the artwork route in RELEASE_STATUS.md. GitHub main is authoritative; artwork uses guarded direct-to-main LFS delivery. ZIP input/review bundles remain fallback only.
+- Preserved exact queued prompts and listed references, original native bytes, counted smoke attempts, all ten QA criteria, attempt budgets, independent review, and the stop after five anchors. Explicitly prohibited pull/rebase over unsent artwork or receipts; blocked delivery goes to bundle and maintainer reconciliation.
+- Readiness-only work does not authorize generation. No artwork, production receipts, approvals, manuscript revisions, or PDFs were produced by this instruction update. Existing dist and build/visual evidence remain scoped to the last requested build.
+
+Validation: source preflight PASS (8 checks); art preflight READY; documentation links, fenced blocks, allowlist, preserved offline procedure, and git diff --check PASS. The repository suite ran 71 tests (1 Windows helper-path failure, 23 skipped); the v6 suite ran 32 tests (1 Windows reference-path failure). Tests, helpers, queued prompts, receipts, and packaged inputs were unchanged. Local CRLF conversion was disabled after restoring unchanged text to its exact committed LF bytes. These failures remain open; no production smoke or LFS artwork push was tested.
