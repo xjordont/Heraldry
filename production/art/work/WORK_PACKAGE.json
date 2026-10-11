@@ -5,15 +5,15 @@
  "created_from": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "9974b47864850e6cbc396df7755a6e43f25ea2e3",
-  "commit_date": "2026-10-11T03:44:02+00:00",
+  "commit": "e766996242c27dfb394d57d28d03469a3a07897b",
+  "commit_date": "2026-10-11T10:42:38+00:00",
   "dirty": false
  },
  "source": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "9974b47864850e6cbc396df7755a6e43f25ea2e3",
-  "commit_date": "2026-10-11T03:44:02+00:00"
+  "commit": "e766996242c27dfb394d57d28d03469a3a07897b",
+  "commit_date": "2026-10-11T10:42:38+00:00"
  },
  "queue": {
   "path": "production/art/gpt/QUEUE.json",
@@ -126,7 +126,7 @@
  "files": [
   {
    "path": "START_HERE.md",
-   "sha256": "db7ac0c587d5763b453a89aee3eb4a0b80b08218477b9c21fdb074a2d2412c13",
+   "sha256": "8499706be045a223ee33497a6f76162f0335c6dd73e6b69f901d329cf7d08b26",
    "bytes": 5358,
    "role": "instructions"
   },
@@ -162,8 +162,8 @@
   },
   {
    "path": "production/art/gpt/INSTRUCTIONS.md",
-   "sha256": "110b8c9a512332ca34939e955114021786f66c240477ff97bc0639145db6e716",
-   "bytes": 5975,
+   "sha256": "8dfd14a9e2e0dc7bdafcd3193ae013e41b7c2d94714fd17972c9424dc6c4c255",
+   "bytes": 6297,
    "role": "instructions"
   },
   {
