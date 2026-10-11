@@ -27,7 +27,7 @@ REVIEW = ROOT / "production/art/review"
 def receipts():
     out = {}
     if RECEIPTS.exists():
-        for line in RECEIPTS.read_text().splitlines():
+        for line in RECEIPTS.read_text(encoding="utf-8").splitlines():
             if line.strip():
                 r = json.loads(line)
                 out[r["id"]] = r

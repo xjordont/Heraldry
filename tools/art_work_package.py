@@ -261,7 +261,7 @@ def verify(zpath, run_tools=True):
         tmp = Path(tmp)
         pkg = tmp / "package"
         names = safe_extract(zpath, pkg)
-        man = json.loads((pkg / "WORK_PACKAGE.json").read_text())
+        man = json.loads((pkg / "WORK_PACKAGE.json").read_text(encoding="utf-8"))
         listed = {f["path"]: f for f in man["files"]}
         extra = sorted(set(names) - set(listed) - {"WORK_PACKAGE.json"})
         missing = sorted(set(listed) - set(names))
@@ -275,7 +275,7 @@ def verify(zpath, run_tools=True):
         if any(n.lower().endswith(".pdf") or n.startswith("references/") for n in names):
             report["errors"].append("private reference material present")
         report["checks"].append("no PDFs and no references/ material")
-        q = json.loads((pkg / QUEUE).read_text())
+        q = json.loads((pkg / QUEUE).read_text(encoding="utf-8"))
         if sha((pkg / QUEUE).read_bytes()) != man["queue"]["sha256"]:
             report["errors"].append("queue hash differs from manifest")
         for it in q["items"]:
@@ -323,7 +323,7 @@ def cmd_verify(a):
 def cmd_check(a):
     z = Path(a.zip) if a.zip else None
     if z is None:
-        q = json.loads((ROOT / QUEUE).read_text())
+        q = json.loads((ROOT / QUEUE).read_text(encoding="utf-8"))
         z = OUT_DIR / f"Heraldry_Work_Input_{q['phase']}.zip"
     if not z.is_file():
         print(f"{z} is missing: run python3 tools/art_work_package.py build")
@@ -364,7 +364,7 @@ def verify_bundle(bpath, root=ROOT):
     sys.path.insert(0, str(root / SCRIPTS))
     import fidelity_gate as fg
     errors, notes = [], []
-    q = json.loads((root / QUEUE).read_text())
+    q = json.loads((root / QUEUE).read_text(encoding="utf-8"))
     byid = {it["id"]: it for it in q["items"]}
     with zipfile.ZipFile(bpath) as z:
         names = set(z.namelist())

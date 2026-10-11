@@ -35,8 +35,6 @@ def diagnostics(path, refs):
             src.load()
             rgb = src.convert('RGB')
         g = ImageOps.grayscale(rgb)
-        hist = g.histogram()
-        n = sum(hist)
         w, h = rgb.size
         # Main area ignores the edge vignette and avoids penalizing deliberate blank paper.
         inner = g.crop((round(.1*w), round(.1*h), round(.9*w), round(.9*h)))
@@ -159,7 +157,7 @@ def main(argv=None):
             create(a.id,a.image,a.prompt_sha,a.reference,a.out)
             print(f'Created DRAFT QA report at {a.out}. Inspect image and print proof, complete every criterion, then verify.')
         else:
-            r=json.loads(Path(a.file).read_text());it=json.loads(Path(a.item_json).read_text())
+            r=json.loads(Path(a.file).read_text(encoding="utf-8"));it=json.loads(Path(a.item_json).read_text(encoding="utf-8"))
             errors=verify_record(r,a.image,it,not a.allow_fails)
             print(json.dumps({'status':'PASS' if not errors else 'FAIL','errors':errors},indent=2))
             return int(bool(errors))

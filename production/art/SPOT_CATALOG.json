@@ -164,7 +164,7 @@
      "Chapel bell tower with a cracked belfry and a rope-less bell, no cross or legible mark",
      "Drowned field with standing water reflecting thin sky, fence posts and a half-sunken plough",
      "Ruined wall with a broken top and fallen coping stones",
-     "Faint horizon glow suggested by blank paper above and sparse ruled strokes",
+     "Pale horizon left as blank paper above sparse ruled strokes",
      "Reeds and dead stalks scratched across the water",
      "Party gear: bedrolls, shields stacked on the wall, a shared flask",
      "A single crow on the wall top"
@@ -184,7 +184,7 @@
      "3.x initiative example (line 1035)"
     ]
    },
-   "spec_sha256": "5412ae9a4354d97e0e783a905a7b5d0c75b6e3b61c831a78691ea6f64e4a1b50"
+   "spec_sha256": "8ce0bb91049edcb83a6d509d4468013a159c31f2e07e177ca8b5bfa1e84f2e75"
   },
   {
    "id": "ART-CH04-002",
@@ -335,7 +335,7 @@
    "replaces": "ART-CH07-001",
    "brief": {
     "identity": "The equipment chapter, imagined as a Deepwarden forge cut into the rock, the best forges in the surviving world.",
-    "composition": "Interior of a carved rock forge; the smith at the focal centre quenching a glowing blade in a trough, steam rising; racks of finished mail, helms and axes framing both sides.",
+    "composition": "Interior of a carved rock forge; the smith at the focal centre quenching a hot blade, drawn as a bare-paper shape, in a trough, steam rising; racks of finished mail, helms and axes framing both sides.",
     "details": [
      "Rough-hewn rock walls with tool marks and a chimney flue disappearing into the ceiling",
      "Massive anvil, bellows, quench trough and tongs",
@@ -364,7 +364,7 @@
      "1.3.3 Deepwarden"
     ]
    },
-   "spec_sha256": "6318fc324ef0261dd70c05f9516aaca38bcb3636e3642ae3a56a82e4b1c3ba91"
+   "spec_sha256": "6832351522db751579f94ef433edabeec078e32fd0bce4e6b43c0ae5b4afae3d"
   },
   {
    "id": "ART-CH08-002",
@@ -775,7 +775,7 @@
    ],
    "brief": {
     "identity": "The Undermarches, the endless underworld beneath every foundation, deepest under the broken mountains, where deep elves keep their own law.",
-    "composition": "A cutaway view: a mine shaft or cellar above breaking through into a smooth round tunnel no pick made; a small surveyor with a lantern and an inconsistent map stands at the join.",
+    "composition": "A cutaway view: a mine shaft or cellar above breaking through into a smooth round tunnel no pick made; a small surveyor with a lantern and an inconsistent map crouches at the join.",
     "details": [
      "Cellar barrels and a staircase at the top of frame, timber props",
      "Hole opening into an older, smooth-walled tunnel of precise masonry",
@@ -799,7 +799,7 @@
      "1.3.2 The Undermarches"
     ]
    },
-   "spec_sha256": "94315648ae38ac16599f8f8c74e94c8763a7ac8a1a09bbd87413374dfe0ede44"
+   "spec_sha256": "560eadccbd7a3142eee6d2abe78c3d0572979985879c59b9b10e278d3676e54f"
   },
   {
    "id": "ART-CLI-THE-PALE-CITY",
@@ -1204,7 +1204,7 @@
    ],
    "brief": {
     "identity": "Reedmarch, a stilt-town raised over log pilings on barges, ferry platforms and toll bridges; the only crossing far and wide, populated by ferrymen, smugglers, leech-tenders and corpse-haulers.",
-    "composition": "Water-level view from a ferry at the toll bridge, looking at the stilt-town with its patchwork of platforms and barges; a barge hall repositioned in the middle.",
+    "composition": "Water-level view from a ferry at the toll bridge, looking at the stilt-town with its patchwork of platforms and barges; a barge carrying the Marsh Council hall moored in the middle.",
     "details": [
      "Log pilings and plank platforms with huts and ladders",
      "Toll bridges with a rope-and-pulley gate and chain",
@@ -1221,7 +1221,7 @@
     ],
     "atmosphere": "Murky commerce above buried secrets.",
     "avoid": [
-     "Not the Mire climate swamp scene (that is a drowned village, no town)",
+     "Not the Mire climate image (a drowned village, no town)",
      "No clear view of what is under the floors",
      "Not a stone town",
      "No lettering"
@@ -1230,7 +1230,7 @@
      "1.3.3 Reedmarch"
     ]
    },
-   "spec_sha256": "19526e6a6f1fd2f248cad9cf3a9c9650dcb577f3c770456ca29e71af98575d4c"
+   "spec_sha256": "38daef6436e91090108f33a279f85509234aa147cbf497825e6c55c851031086"
   },
   {
    "id": "ART-WOR-1-3-4-MAGIC-IN-THE-DYING-LANDS",
@@ -1301,7 +1301,7 @@
      "Market cross with a crude banner of hide and bones stuck on top",
      "Overgrown cobbles, a cart on its side, scattered pots",
      "Cottages with open shutters and dark windows",
-     "A dog skeleton or a small crow flock on a roof",
+     "A small crow flock on a roof",
      "Totem-like markings of scratches, no letters"
     ],
     "activity": [],
@@ -1316,7 +1316,7 @@
      "1.3.5 Monstrous Threats"
     ]
    },
-   "spec_sha256": "52ede013fbcc4876473f8940f9988bdc09b90785a4221c435ed376b621886815"
+   "spec_sha256": "03b959f31f5425e26b95434850bd228f22038b1751c1f5c27af1303115fcdd2d"
   },
   {
    "id": "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
@@ -2175,7 +2175,7 @@
      "Half-face theatrical mask, cracked and mended",
      "Bells on a strap",
      "Folded motley cloth patchwork",
-     "Lute or flute with a broken string",
+     "Lute with a broken string",
      "A small round painted target board lying flat, knife-marked"
     ],
     "atmosphere": "Faded festivity, glamour gone threadbare.",
@@ -2188,7 +2188,7 @@
      "6.10 Backgrounds: Performer"
     ]
    },
-   "spec_sha256": "ff9dba83245a8db3e056fe75d250eaf96b09485f80720e82e480a61a0de9078a"
+   "spec_sha256": "be08bb129aec894b8a7ba06e596e7bc41c4db644261476d19d8935f46d4dd2a9"
   },
   {
    "id": "ART-BAC-ARTISAN",
@@ -2288,7 +2288,7 @@
    ],
    "brief": {
     "identity": "An Apprentice background: scraps of craft from a harsh master; starting kit is only 1c (non-Martial classes gain Max NRG, Martial ones gain scrolls).",
-    "composition": "Still life of a wooden stool with a master's oversized coat hung over it, a scorched practice post stump, a small candle and a single copied page.",
+    "composition": "Still life on a stone floor: a wooden stool with a master's oversized coat hung over it, a scorched practice wand, a small unlit candle in a clay dish and a scribbled scroll inside a chalk-drawn circle.",
     "details": [
      "Oversized worn coat sleeve hanging beyond the stool",
      "Practice wand or knotted twig, scorched at the tip",
@@ -2308,7 +2308,7 @@
      "6.10 Backgrounds: Apprentice"
     ]
    },
-   "spec_sha256": "ff2154a0fd7a76f9cc352ec86e66dcec620a9871f4fb7e949613aaed0dbe1d18"
+   "spec_sha256": "88103ffc35473b07e58c3ce2ea631a21ecfe459c41d2823b66098aeee794a5b0"
   },
   {
    "id": "ART-BAC-ALCHEMIST",
@@ -2332,7 +2332,7 @@
     "details": [
      "Two round-bottomed glass flasks of healing tincture, corked",
      "Two ceramic stoppered acid pots with wax seals",
-     "Wooden rack with five slots",
+     "Wooden rack with four slots, one flask or pot in each",
      "Stone mortar and pestle with powder",
      "Small brass balance scale",
      "Leather satchel hanging open",
@@ -2348,7 +2348,7 @@
      "6.10 Backgrounds: Alchemist"
     ]
    },
-   "spec_sha256": "4ae29576f58b855e52b513103f915fa5027a9372abf8f33ade70dc0858268cff"
+   "spec_sha256": "131f607a863039022d2dcf38f649eb6d4438705832b1857f80f8fc2b1e2c1dea"
   },
   {
    "id": "ART-BAC-BELIEVER",
@@ -2646,7 +2646,7 @@
    ],
    "brief": {
     "identity": "A Vagabond background: road to road with no roots; starting kit Bandages.",
-    "composition": "Still life on a roadside milestone, a bundle on a stick, a roll of bandages and a dice cup perched beside a half-burned stub of candle.",
+    "composition": "Still life on a roadside milestone: a bundle on a stick, a roll of bandages and a dice cup perched beside a half-burned stub of candle.",
     "details": [
      "Bundle-on-a-stick with a knotted cloth",
      "Roll of bandages",
@@ -2666,7 +2666,7 @@
      "6.10 Backgrounds: Vagabond"
     ]
    },
-   "spec_sha256": "0e8cfdc638e52926ecd383668711f887a523e4a7b51867d504f652f5ab5e2c13"
+   "spec_sha256": "dda6cc28873595405a80e37ac019d78a38bd31c9e7ec98869c3e4111bbf20d1d"
   },
   {
    "id": "ART-CLA-FIGHTER",
@@ -2853,7 +2853,7 @@
     "identity": "A Ranger, Hybrid class: ground-reader and strike-from-distance hunter; packages of Shortbow, Elven Dagger, Elven Spear, Hide Cuirass, Snares.",
     "composition": "Full figure in three-quarter view standing tall on a patch of leaf litter, shortbow drawn to the cheek, eyes narrowed on a far target, cloak edge stirring.",
     "details": [
-     "Leather coat with a hooded cloak and a green-grey faded tone suggested by hatching",
+     "Leather coat with a hooded cloak and weathered, faded leather",
      "Shortbow at full draw, arrow at the cheek",
      "Elven dagger at the belt",
      "Quiver on the hip, snares coiled at the belt",
@@ -2871,7 +2871,7 @@
      "6.13 Hero Classes: Ranger"
     ]
    },
-   "spec_sha256": "2098c65106bf6a39b087d59f8c61f9621fec2ec998cfbc72f5e9d26c1864aa31"
+   "spec_sha256": "9f21f81c0d9c96bfe6f89234607c9e3c6a1ad8cfe2e4607fcc07d890381b608e"
   },
   {
    "id": "ART-CLA-CLERIC",
@@ -3064,14 +3064,14 @@
     "atmosphere": "Poised mischief, the moment before everyone looks the wrong way.",
     "avoid": [
      "Not the Rogue: no lockpicking, no crouch",
-     "Do not draw two solid figures: the double must be pale line only",
+     "Do not draw two solid figures: the double must be a thin broken black outline only",
      "No jester costume or mask"
     ],
     "sources": [
      "6.13 Hero Classes: Trickster"
     ]
    },
-   "spec_sha256": "1abb30ceb4cde8899c18722ce33ac56d60ce9000197877b2d8cfc37513f504a5"
+   "spec_sha256": "88b2047abd5f9868ab946efb742699036917297c051553ae91116855026d737a"
   },
   {
    "id": "ART-CLA-SORCERER",
@@ -3308,7 +3308,7 @@
      "A few sparks drifting up from the sphere as flicked ink flecks",
      "Spilled ink pot and loose pages",
      "A satchel of rescued scraps at the feet",
-     "Intent face lit from below by the small flame"
+     "Intent face, deep shadow under the brow"
     ],
     "atmosphere": "Careful, dangerous inheritance.",
     "avoid": [
@@ -3320,7 +3320,7 @@
      "8. Powers and Traditions: 8.3 Arcane Spells, Tier 2"
     ]
    },
-   "spec_sha256": "2733e5c8743b1e1b83a445a64f5767d4adc4f1316dba5953da41d9c443bbba55"
+   "spec_sha256": "d582c3ece23c38533dbd80c7c98f9cf8c2334beab20f3525d12cb863ac8112a2"
   },
   {
    "id": "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
@@ -3515,7 +3515,7 @@
     ],
     "atmosphere": "Hushed, intimate peril.",
     "avoid": [
-     "No gore pools or wound close-up detail",
+     "No gore pools; the cut is a single fine line",
      "No glowing wash",
      "Do not show a face fully"
     ],
@@ -3523,7 +3523,7 @@
      "8. Powers and Traditions: 8.5 Sorceries, Tier 1"
     ]
    },
-   "spec_sha256": "b418cc1e625514aa665e728e423ac5ce138ef84623cfabb3eba633f5a315549b"
+   "spec_sha256": "136ecd397845022ac2bb8737e227178a079a8827d3bf25e0e91c804c47661c91"
   },
   {
    "id": "ART-TRA-TIER-2-SORCERIES-D20",
@@ -4093,11 +4093,11 @@
    ],
    "brief": {
     "identity": "Briarling, Greenmark Minion, medium-sized: a hound-sized knot of animate thornwood on root-claws, a spent first line of the Antlered Warden's groves.",
-    "composition": "Low side view of the creature scuttling forward on root-claws with its barbed back bristling, head down.",
+    "composition": "Low side view of a hound-sized creature, knee-high to a man (a dropped hand-axe lying beside it for scale), scuttling forward on root-claws with its barbed back bristling, head down.",
     "details": [
      "Body of twisted tangled wood strands with barbs",
      "Six spindly legs ending in root-claws",
-     "Hollow knothole eyes, no mouth or a split in the bark",
+     "Two hollow knotholes where eyes would be, no mouth, no face, no mouth or a split in the bark",
      "Thorn spines in long and short rows along its back",
      "A few withered leaves and moss tufts",
      "Splinters spraying from a cracked limb",
@@ -4113,7 +4113,7 @@
      "9.7 The Bestiary, Greenmark Bestiary: Briarling [Minion]"
     ]
    },
-   "spec_sha256": "cf97a1888ce6f2d98d9a1d10c2bc9c9968ebe3e4ef3d95c8f6810abd25d02054"
+   "spec_sha256": "a38dc8c319ca3db0e2d7ecfbf4fe32764295dbb2baee39b91132ed01b9d99ca9"
   },
   {
    "id": "ART-MON-DIRE-WOLF",
@@ -4227,7 +4227,7 @@
    ],
    "brief": {
     "identity": "Bugbear, Greenmark Soldier, medium: a seven-foot, shaggy, long-armed ambusher with a flat face and a spiked morningstar.",
-    "composition": "Full figure in three-quarter view rising out of bracken, long arm already swinging a spiked morningstar from arm's reach.",
+    "composition": "Full figure in three-quarter view rising out of bracken, long arm drawn back with the spiked morningstar about to swing from arm's reach.",
     "details": [
      "A head and more taller than a man, arms reaching to the knees",
      "Shaggy fur the colour of dead bracken, drawn in long hatch lines",
@@ -4247,7 +4247,7 @@
      "9.7 The Bestiary, Greenmark Bestiary: Bugbear [Soldier]"
     ]
    },
-   "spec_sha256": "dc94519fbe2517af69615953bf2d60ed5de1f75fb557a3f38a2354e09bb3263d"
+   "spec_sha256": "0410ba32daa97dbdacf54439eaa634c17fbe9a59ab408f3932ce455b764c43f7"
   },
   {
    "id": "ART-MON-HARPY",
@@ -4270,7 +4270,7 @@
    ],
    "brief": {
     "identity": "Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies.",
-    "composition": "Full figure in three-quarter view crouched on a single fallen block of stone, wings half-spread, head thrown back mid-song, one talon gripping the stone and the other clawed forward.",
+    "composition": "Full figure in three-quarter view swooping down on beating wings, both taloned feet thrust forward, head thrown back mid-song, over a small patch of bare ground.",
     "details": [
      "Woman's torso and face with ragged hair, hollow cheeks",
      "Large carrion-bird wings, ragged feathers, long primaries",
@@ -4278,7 +4278,7 @@
      "Tail of dirty feathers",
      "Open mouth mid-shriek, solid black",
      "Filth-streaked feathers",
-     "A scatter of bones at the foot of the block"
+     "A scatter of bones on the ground below"
     ],
     "atmosphere": "Beautiful and filthy.",
     "avoid": [
@@ -4293,7 +4293,7 @@
      "9.7 The Bestiary, Greenmark Bestiary: Harpy [Cannon]"
     ]
    },
-   "spec_sha256": "007b4f01936d69917d0c7bd3d2a9bddb426d7a8b763a525b008501520a41ea5e"
+   "spec_sha256": "29e55e8cb204ae1d832c54f5acab02a80300c7ff2fde26ec7546c53b559e645b"
   },
   {
    "id": "ART-MON-GOBLIN-SHAMAN",
@@ -4708,7 +4708,7 @@
    "direction": "A typical adult green dragon of its kind, alone, coiled on a mossy rock; no lair, no tribute.",
    "brief": {
     "identity": "Green Dragon, Greenmark Elite, huge: a moss-coloured serpentine spine-crested tyrant with a corrosive breath; it flies. Typical adult, alone.",
-    "composition": "Wide three-quarter view of the dragon coiled on a mossy rock with its long neck raised and head turned toward the viewer, wings folded; a tiny human figure beside the rock, drawn small, light and secondary, for scale.",
+    "composition": "Three-quarter view of the dragon coiled on a mossy rock with its long neck raised and head turned toward the viewer, wings folded; a tiny human figure beside the rock, drawn small, light and secondary, for scale.",
     "details": [
      "Serpentine long body coiled on a rock",
      "Spine crest running from the head down the back",
@@ -4728,7 +4728,7 @@
      "9.7 The Bestiary, Greenmark Bestiary: Green Dragon [Elite]"
     ]
    },
-   "spec_sha256": "668865e4fe59ceafdd11a1d9ee14734e2503fc6f1ae6983c5372e835b43e817d"
+   "spec_sha256": "4a570edb6419c8119de98825f8f937ecb8a0e30904a71e5c784d3cf2218bbb58"
   },
   {
    "id": "ART-MON-UNDEAD-WARRIOR",
@@ -4966,7 +4966,7 @@
    ],
    "brief": {
     "identity": "Wererat, Ashlands Skirmisher, small: a hunched plague-grey shapeshifter between man and rat that bites and skitters back into the dark.",
-    "composition": "Low three-quarter view of the creature crouched and half-turned, rusted blade held low, preparing to skitter away.",
+    "composition": "Low three-quarter view of the wererat caught mid-pounce, jaws wide, clawed hand with the rusted blade trailing behind.",
     "details": [
      "Hunched half-man half-rat form",
      "Long snout with chisel teeth, whiskers, naked tail",
@@ -4974,7 +4974,7 @@
      "Rusted blade gripped in a clawed hand",
      "Ragged clothes of sewer rags",
      "A wet patch of undercroft flagstone under its feet",
-     "Small size: knee-high to a man at an angle"
+     "Small, about the size of a crouching child"
     ],
     "atmosphere": "Skulking disease and stealth.",
     "avoid": [
@@ -4986,7 +4986,7 @@
      "9.7 The Bestiary, Ashlands Bestiary: Wererat [Skirmisher]"
     ]
    },
-   "spec_sha256": "e55e4c55edee787f55350eff7710139bc7dde28f2a1c75e5eda209b849d6b0e6"
+   "spec_sha256": "eb4301807e3df58f56e694b8433e05c0921683aa137696a26578bb3e2734750c"
   },
   {
    "id": "ART-MON-SPECTRE",
@@ -5009,7 +5009,7 @@
    ],
    "brief": {
     "identity": "Spectre, Ashlands Controller, medium: grief and rage without a body, a flying incorporeal dead thing that drinks warmth and years by touch.",
-    "composition": "Three-quarter view of the spectre drifting forward in mid-air, one hand reaching forward to touch, its trailing edge thinning to nothing.",
+    "composition": "Three-quarter view of the spectre risen upright and still in mid-air, both long hands pressed together at the chest in endless grief, head bowed, its trailing edge thinning to nothing.",
     "details": [
      "Burned-away body fading into long tapering hatch strokes",
      "Burn-scorched shreds of a robe or cloak trailing",
@@ -5029,7 +5029,7 @@
      "9.7 The Bestiary, Ashlands Bestiary: Spectre [Controller]"
     ]
    },
-   "spec_sha256": "56f25f541486f513d10fa20427f4dcc9e42e5b4db82b358feb9f47168f973aab"
+   "spec_sha256": "dac7ef2a01a37c3bd5c2c8526168845c454b5c90ec42ac6a79156ad1eb98ba80"
   },
   {
    "id": "ART-MON-UNDEAD-SENTINEL",
@@ -5053,7 +5053,7 @@
    "direction": "A towering gaunt dead soldier planted in a broken gateway, rusted tower-shield grounded and reach-halberd raised.",
    "brief": {
     "identity": "Undead Sentinel, Ashlands Soldier, medium: a tall, gaunt dead gate-guard in iron helm with a reach-halberd, who holds a breach forever.",
-    "composition": "Frontal three-quarter view of the sentinel planted squarely on rubble-strewn ground, reach-halberd held upright in both hands, butt grounded.",
+    "composition": "Three-quarter view of the sentinel braced on rubble-strewn ground, reach-halberd held diagonally across the body at guard, head slightly lowered behind the narrow eye slit.",
     "details": [
      "Tall, gaunt dead soldier of human size",
      "Halberd with a long haft and broad blade, held in both hands",
@@ -5073,7 +5073,7 @@
      "9.7 The Bestiary, Ashlands Bestiary: Undead Sentinel [Soldier] (RC489 text)"
     ]
    },
-   "spec_sha256": "817cc7586881306b9887e13d6c052ab71ebf610a066b2e5b36cc395cbe8d2c92"
+   "spec_sha256": "d0b64b63bb388f5644bf4e2f7451628f3fb0c64b95208bc09b30f51c27e0e9e2"
   },
   {
    "id": "ART-MON-UNDEAD-CHAMPION",
@@ -5364,7 +5364,7 @@
     "identity": "Forsaken Knight, Ashlands Soldier, medium: dead chivalry in spectral plate with a flamberge wreathed in grave-light.",
     "composition": "Three-quarter view of the knight advancing through ash, flamberge held two-handed low, plate cloak in tatters.",
     "details": [
-     "Full gothic plate in ghostly worn pale tones",
+     "Full gothic plate in worn plate left mostly bare paper with thin broken contours and a few solid-black gaps",
      "Flamberge: a long two-handed wavy-edged blade",
      "Grave-light drawn as ink wavy flame lines around the blade",
      "Closed bascinet helm with dark eye slit",
@@ -5381,7 +5381,7 @@
      "9.7 The Bestiary, Ashlands Bestiary: Forsaken Knight [Soldier]"
     ]
    },
-   "spec_sha256": "8b3e42a46396c09d658cabfd54adf8aa6ed0e9c7695a17f7515c7576eb51dc8c"
+   "spec_sha256": "565fab370da53d97c4b100580978c94d43396fcd9d0a4bd7cb1f90f75e753c9b"
   },
   {
    "id": "ART-MON-FORSAKEN-DUELIST",
@@ -5581,7 +5581,7 @@
    ],
    "brief": {
     "identity": "Lich, Ashlands Elite, medium: a desiccated sorcerer-king in mouldering finery who commands the dead and flies a little above the floor.",
-    "composition": "Three-quarter view of the lich hovering over the floor, one skeletal hand reaching forward to touch.",
+    "composition": "Three-quarter view of the lich hovering over the floor, one skeletal hand raised palm-out in command, the other gathering its mouldering robe.",
     "details": [
      "Desiccated body with leathery skin on a thin frame",
      "Tarnished crown on a skull face",
@@ -5601,7 +5601,7 @@
      "9.7 The Bestiary, Ashlands Bestiary: Lich [Elite]"
     ]
    },
-   "spec_sha256": "17c63ba5ec2e52dfd00c223f57f9053159c815cb999a7d0db1f24e6118f86c3a"
+   "spec_sha256": "d8a55d4bd7ba27fc1bdf5c9681870b33e25df8ae2b7e3c2885a28d013f8c89dc"
   },
   {
    "id": "ART-MON-KOBOLD",
@@ -5668,7 +5668,7 @@
    ],
    "brief": {
     "identity": "Cave Goblin, Undermarches Minion, small: a pale, blinder goblin with wide black eyes, a jagged spear and an instinct to flee towards more of its kind.",
-    "composition": "Low three-quarter view of the goblin shielding its eyes from a light, jagged spear trailing, half-turned to flee.",
+    "composition": "Low three-quarter view of the goblin shielding its eyes with one hand from an unseen bright light, jagged spear trailing in the other, half-turned to flee.",
     "details": [
      "Pale skin and large black pool eyes",
      "Long ears and a thin frame",
@@ -5688,7 +5688,7 @@
      "9.7 The Bestiary, Undermarches Bestiary: Cave Goblin [Minion]"
     ]
    },
-   "spec_sha256": "aef5d9d5b8b331b9f6aac768b298a2d58aa4b6433c78c0f93f2dca96e412b7cd"
+   "spec_sha256": "978f955da2d582799fbde857154cd77099ba8cb037f40fff20a852815a1fcdab"
   },
   {
    "id": "ART-MON-GIANT-BAT",
@@ -5848,10 +5848,10 @@
     "details": [
      "A cloak-shaped fold of black leathery skin with a trailing hem",
      "Ragged edges and a ridge of muscle",
-     "Underside with faint ribs and a toothless slit",
+     "Underside with a toothless slit and a toothless slit",
      "No visible eyes",
      "Extremely flat, about the size of a flung cloak",
-     "Upper surface textured like folded cave rock"
+     "Upper surface of wrinkled black leather folds"
     ],
     "atmosphere": "Silent suffocating shadow.",
     "avoid": [
@@ -5864,7 +5864,7 @@
      "9.7 The Bestiary, Undermarches Bestiary: Noxcloth [Controller] (RC489 text)"
     ]
    },
-   "spec_sha256": "f533c3593bffaf8bd2c4811bb66288d2db7e5b5080f52428866d056c8edfd108"
+   "spec_sha256": "55760314a30293def055485eae1400e979104b81cde45fa20d4da85a5e1f9573"
   },
   {
    "id": "ART-MON-TROGLODYTE",
@@ -6248,7 +6248,7 @@
    ],
    "brief": {
     "identity": "Gloom Hulk, Undermarches Brute, large: a bull-sized, beetle-backed digger with great scything claws and four eyes that scramble the mind.",
-    "composition": "Three-quarter view of the hulk heaving itself up out of broken ground in a shower of rubble, scything claws raised, four eyes in two pairs on the blunt face; a small human figure reeling before it, drawn small, light and secondary, for scale.",
+    "composition": "Three-quarter view of the hulk charging sideways out of a collapsed tunnel mouth, scything claws raking low across the floor, four eyes in two pairs on the blunt face; a small human figure diving clear, drawn small, light and secondary, for scale.",
     "details": [
      "Beetle shell back with segmented plates",
      "Four eyes in two pairs on a blunt head",
@@ -6270,7 +6270,7 @@
      "9.7 The Bestiary, Undermarches Bestiary: Gloom Hulk [Brute]"
     ]
    },
-   "spec_sha256": "d2dccdc5f841554b72dc853175dfaa7a7aeed3ae5f0db1943adfd686b2c52b5d"
+   "spec_sha256": "4fcc37ad7f742c1db2b8a9fb0c8aeb357646640cad6447b07e5c2d3eb068b013"
   },
   {
    "id": "ART-MON-CRYPTSTRANGLER",
@@ -6336,7 +6336,7 @@
    ],
    "brief": {
     "identity": "Elder Vrymk, Undermarches Elite, large: the eldest of a vrymk brood, a monstrous knot of leg-thick stone-grey tentacles around a plate-shearing beak.",
-    "composition": "Wide three-quarter view of the elder squatting over a heap of clean bones, tentacles thick as a man's leg lashing out, one curling toward a small human figure at its edge, drawn small, light and secondary, for scale.",
+    "composition": "Three-quarter view of the elder squatting over a heap of clean bones, tentacles thick as a man's leg lashing out, one curling toward a small human figure at its edge, drawn small, light and secondary, for scale.",
     "details": [
      "Tentacles thick as a man's leg, ridged with suckers",
      "Huge central beak that shears plate",
@@ -6356,7 +6356,7 @@
      "9.7 The Bestiary, Undermarches Bestiary: Elder Vrymk [Elite]"
     ]
    },
-   "spec_sha256": "5de53c0590c0f09a2a65dac9d33d5f4757aabf61eff763dd1e081bfeb746824d"
+   "spec_sha256": "246f821d9aca88d3ab26e85c5636e4afbcd9f8ff521058fe22bff0825423b0e8"
   },
   {
    "id": "ART-MON-EVIL-EYE",
@@ -6384,7 +6384,7 @@
      "Round floating orb of leathery, wrinkled flesh",
      "One great central eye with a solid black pupil",
      "Crown of four writhing eyestalks, each ending in a small eye",
-     "Fine radiating hatching around the body to suggest the antimagic aura",
+     "A ring of short broken concentric strokes around the body, not rays, to suggest the antimagic aura",
      "Dust motes drifting around it",
      "No wings, no limbs"
     ],
@@ -6401,7 +6401,7 @@
      "9.7 The Bestiary, Undermarches Bestiary: Evil Eye [Elite]"
     ]
    },
-   "spec_sha256": "377509a1757f8a300a28a309b746ae027aca785c9c00c59f62c95836d954f9cb"
+   "spec_sha256": "c63a779a1267f5b8c6cb22874e4436dfa47cb66c0812f8d173bf1ee6d373f55b"
   },
   {
    "id": "ART-MON-BURROWMAW",
@@ -6556,12 +6556,12 @@
    ],
    "brief": {
     "identity": "Snow Goblin, Pale City Minion, small: a gaunt white-furred goblin that ambushes out of the whiteout with frost-edged knives.",
-    "composition": "Three-quarter view of the goblin rising from a snowdrift, frost knife in one hand, sling in the other, fur nearly the colour of the paper.",
+    "composition": "Three-quarter view of the goblin rising from a snowdrift, a frost-edged knife in each hand, fur nearly the colour of the paper.",
     "details": [
      "Gaunt body covered in white fur (kept pale by sparse strokes)",
      "Long pointed ears and a thin face",
      "Frost knife with an icy edge",
-     "Sling in the off-hand with a stone",
+     "Second frost-edged knife in the off-hand",
      "Rag and fur wrapping",
      "Crouched on its toes",
      "Snowdrift and falling snow"
@@ -6576,7 +6576,7 @@
      "9.7 The Bestiary, Pale City Bestiary: Snow Goblin [Minion]"
     ]
    },
-   "spec_sha256": "b6923afe6a4094bbb8dd1e838874ab84d99e645add4f6b3fa29bcb39fb81a15e"
+   "spec_sha256": "048faa399a333744a46b8b293f819b81e80c36f41f8118f843a0c8bdf2bbb88f"
   },
   {
    "id": "ART-MON-RATKIN-SCAVENGER",
@@ -7002,14 +7002,14 @@
     "atmosphere": "Immovable frozen loyalty.",
     "avoid": [
      "No polearm; not the Guard's longsword and kite shield",
-     "Not the Undead Sentinel (tower shield and halberd)",
+     "Not the Undead Sentinel (shieldless, with a halberd)",
      "Do not show it standing tall"
     ],
     "sources": [
      "9.7 The Bestiary, Pale City Bestiary: White Court Sentinel [Brute]"
     ]
    },
-   "spec_sha256": "99435fbdf4de63d2c23341e10d3eef36310b9c5a02fd4cbfccf874d343cb3116"
+   "spec_sha256": "c7e365f659045423be2c16dba67701397ed7c6cc255fe43651965c87487935ff"
   },
   {
    "id": "ART-MON-ICE-ELEMENTAL",
@@ -7074,7 +7074,7 @@
    ],
    "brief": {
     "identity": "Fallen Paladin, Pale City Elite, medium: an undead knight in defiled plate whose despair aura withers courage, wielding a necrotic-chilled flamberge.",
-    "composition": "Three-quarter view of the paladin rising from one knee on a patch of frosted flagstones, defiled flamberge planted, head lifted.",
+    "composition": "Three-quarter view of the paladin standing braced on a patch of frosted flagstones, defiled flamberge planted point-down before the feet, both gauntlets on the cross-guard, head lifted.",
     "details": [
      "Defiled plate with a broken holy sunburst on the breast, no readable lettering",
      "Flamberge with a wavy blade",
@@ -7094,7 +7094,7 @@
      "9.7 The Bestiary, Pale City Bestiary: Fallen Paladin [Elite]"
     ]
    },
-   "spec_sha256": "70e329b25bf3a75bc97a0cdce6209fec68e472a821d052e7d773a78a5d4f6bd2"
+   "spec_sha256": "4c18e30c34d8b7072df71dc2e01ee530b562dfa3ae4c9ef52ba68167a14c3de3"
   },
   {
    "id": "ART-MON-WEREBEAR",
@@ -7117,7 +7117,7 @@
    ],
    "brief": {
     "identity": "Werebear, Pale City Brute, large: a hulking white-furred man-beast built to maul, with strength that hurls men aside.",
-    "composition": "Three-quarter view of the werebear charging on all fours through churned snow, claws raking and jaws open; a small human figure ahead of it, drawn small, light and secondary, for scale.",
+    "composition": "Three-quarter view of the werebear mid-stride on all fours through churned snow, head up and jaws open, one great paw lifting to swat aside a small human figure, drawn small, light and secondary, for scale.",
     "details": [
      "Hulking half-man half-bear with a bear head and human-like shoulders",
      "White shaggy fur",
@@ -7140,7 +7140,7 @@
      "9.7 The Bestiary, Pale City Bestiary: Werebear [Brute]"
     ]
    },
-   "spec_sha256": "7c5c7decb7e277f7a9cd3ae60bf44cef8173e44471f99ae912a766721add8207"
+   "spec_sha256": "a8ef0fc0a3f228085232b1969a884ac2817d54894618df77661fb778a6c5533b"
   },
   {
    "id": "ART-MON-WHITE-COURT-EXECUTIONER",
@@ -7170,7 +7170,7 @@
      "Broad headsman's axe with a long haft, frosted",
      "Leather apron over coarse mail and fur",
      "Heavy gauntlets",
-     "Towering broad frame",
+     "Broad, heavy-shouldered frame, a head taller than an ordinary man but plainly human in scale",
      "Frost on the shoulders",
      "Drifting snow at its feet"
     ],
@@ -7184,7 +7184,7 @@
      "9.7 The Bestiary, Pale City Bestiary: White Court Executioner [Elite]"
     ]
    },
-   "spec_sha256": "2cc4f26baab1db483ddaeb3608517fe2c0eeef2d63d7886b07e620a3d51e4af0"
+   "spec_sha256": "33ee8f08ff8e653eebb8b6364cadeebb49fa6a38385e7600b870e50fc874d36b"
   },
   {
    "id": "ART-MON-FROST-WYVERN",
@@ -7296,7 +7296,7 @@
    ],
    "brief": {
     "identity": "Frost Giant, Pale City Elite, huge: a blue-skinned giant that towers over humans, orcs and ogres alike, armoured in glacier-ice and wielding a greataxe.",
-    "composition": "Wide low-angle view of the giant striding through knee-deep drifts, greataxe raised overhead, a tiny human figure at its feet for scale, drawn small, light and secondary.",
+    "composition": "Low-angle view of the giant striding through knee-deep drifts, greataxe raised overhead, a tiny human figure at its feet for scale, drawn small, light and secondary.",
     "details": [
      "Towering far above humans, orcs and ogres; blue skin rendered by dense hatching",
      "Glacier-ice plate armour with jagged edges",
@@ -7315,7 +7315,7 @@
      "9.7 The Bestiary, Pale City Bestiary: Frost Giant [Elite] (RC488 description)"
     ]
    },
-   "spec_sha256": "3b9de2322e62a78545fc0cdde7883c7278ecff1df98f39b2b4171ec4c00ed1af"
+   "spec_sha256": "b4deff544a6e6bb3b7c06b72b7847e0df87c175a3e9ac2b76c5bbc503ab047f8"
   },
   {
    "id": "ART-MON-WHITE-DRAGON",
@@ -7339,7 +7339,7 @@
    "direction": "A typical adult white dragon, alone on a jagged ice outcrop with wings half-raised; no spire, no city.",
    "brief": {
     "identity": "White Dragon, Pale City Elite, huge: a feral ice-crusted wyrm of pure predatory cold; it flies. Typical adult, alone.",
-    "composition": "Wide three-quarter view of the dragon perched on a jagged ice outcrop with wings half-raised, head lowered toward the viewer; a tiny human figure at the foot of the outcrop, drawn small, light and secondary, for scale.",
+    "composition": "Three-quarter view of the dragon perched on a jagged ice outcrop with wings half-raised, head lowered toward the viewer; a tiny human figure at the foot of the outcrop, drawn small, light and secondary, for scale.",
     "details": [
      "Four legs and two large wings, half-raised",
      "Heavy ice-crusted scales",
@@ -7358,7 +7358,7 @@
      "9.7 The Bestiary, Pale City Bestiary: White Dragon [Elite]"
     ]
    },
-   "spec_sha256": "90f2e80744746f63479ea479851d9368c0abb3146cabbed8e9485a1e133ddfc6"
+   "spec_sha256": "c4f26c906e745f72bb0aa7a17576382519c5a88ea00dc7ea9c21c3afec764888"
   },
   {
    "id": "ART-MON-FIRE-BEETLE",
@@ -7381,13 +7381,13 @@
    ],
    "brief": {
     "identity": "Fire Beetle, Sun-Drowned Minion, small: a dog-sized, hard-shelled beetle with a ruddy inner glow that lights tomb passages.",
-    "composition": "Low side view of the beetle crawling over a small patch of sandy flagstones, mandibles open, light from its glands falling on the stone.",
+    "composition": "Low side view of the beetle crawling over a small patch of sandy flagstones, mandibles open, its two gland sacs drawn as bare-paper ovals.",
     "details": [
      "Hard-shelled domed carapace with ridges",
      "Six jointed legs",
      "Pair of snapping mandibles",
      "Antennae",
-     "Light from its glands shown as short rays on the stone",
+     "Gland sacs drawn as bare-paper ovals with a few short ink ticks beside them, no rays",
      "Sand and grit under its legs, rear legs half-dug in",
      "A broken urn beside it shows it is dog-sized"
     ],
@@ -7404,7 +7404,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Fire Beetle [Minion]"
     ]
    },
-   "spec_sha256": "7bc3dfd738eb0c2e3d83232bc7c36fd95c6ca06c872d00881caa545eec949aab"
+   "spec_sha256": "8830937758c7f3a098db970bf171236a50d7d3c9818d90eb10047240bdfdd7b7"
   },
   {
    "id": "ART-MON-IMP",
@@ -7779,7 +7779,7 @@
     "identity": "Wind Elemental, Sun-Drowned Skirmisher, large: a howling, near-invisible spiral of desert air that flings sand and bodies; it flies.",
     "composition": "Three-quarter view of a funnel-shaped vortex spinning over a small patch of scoured sand, defined by swirling sand lines, with a vague hollow face in the vortex; a small human figure staggering at its edge, drawn small, light and secondary, for scale.",
     "details": [
-     "Spiral funnel outlined by curved parallel lines of sand grains",
+     "Spiral funnel outlined by curved parallel sweeping lines",
      "Dry-brush debris and flicked flecks at the base of the vortex",
      "Faint face with two hollow eyes in the vortex",
      "Debris flung outward: a spear, a cloak, a skull",
@@ -7796,7 +7796,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Wind Elemental [Skirmisher]"
     ]
    },
-   "spec_sha256": "8bba24e6b0e020f0e8306a99b8db685500b17a9fe059a1982463db29765910b2"
+   "spec_sha256": "cd79c88c1e4b2121c2a14d442604d4e08d67096dd8f7982bd445e7f703b40398"
   },
   {
    "id": "ART-MON-DESERT-NAGA",
@@ -8162,7 +8162,7 @@
    ],
    "brief": {
     "identity": "Demon, Sun-Drowned Elite, huge: a horned iron-coloured fiend wreathed in clinging flame, wielding a hooked glaive.",
-    "composition": "Wide low-angle view of the demon striding out of a broken ward circle scratched on the ground, hooked glaive in both hands, fire clinging to its shoulders; a small human figure, drawn small, light and secondary, for scale.",
+    "composition": "Low-angle view of the demon striding out of a broken ward circle scratched on the ground, hooked glaive in both hands, fire clinging to its shoulders; a small human figure, drawn small, light and secondary, for scale.",
     "details": [
      "Huge horned fiend, towering over a man",
      "Skin the colour of cooling iron, cracked like cooling metal",
@@ -8181,7 +8181,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Demon [Elite]"
     ]
    },
-   "spec_sha256": "5f725eb22da89da461c2991df058d8028f48d5f7ce71f9123ba97e0acb1a53df"
+   "spec_sha256": "e24f9fb17131d66af0e20eca51aeb416146f89a4ee65b89b7f077df77ab553f3"
   },
   {
    "id": "ART-MON-BLUE-DRAGON",
@@ -8205,7 +8205,7 @@
    "direction": "A typical adult blue dragon bursting up out of a dune, sand cascading from its horns.",
    "brief": {
     "identity": "Blue Dragon, Sun-Drowned Elite, huge: a horned, sand-scaled wyrm that burrows beneath dunes and erupts in a lance of lightning; it flies and burrows. Typical adult, bursting from a dune.",
-    "composition": "Wide low-angle view of the dragon bursting up out of a dune, sand cascading from its horns and shoulders, head thrown back; a tiny human figure on the sand, drawn small, light and secondary, for scale.",
+    "composition": "Low-angle view of the dragon bursting up out of a dune, sand cascading from its horns and shoulders, head thrown back; a tiny human figure on the sand, drawn small, light and secondary, for scale.",
     "details": [
      "Large horn crest on the head and along the jaw",
      "Sand-scaled hide with fine scale texture",
@@ -8224,7 +8224,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Blue Dragon [Elite]"
     ]
    },
-   "spec_sha256": "08b7ae7558495d9030b037a92b2face678c1bd634590139960c40dd094a9364d"
+   "spec_sha256": "c058b16fba44b9a0d01f7c77811d68ab91bb7ffb28929ea9e5476edc839d5306"
   },
   {
    "id": "ART-MON-BOGLING",
@@ -8940,7 +8940,7 @@
    ],
    "brief": {
     "identity": "Hydra, Mire Elite, huge: a many-headed reptilian horror wallowing in the Mire's deepest pools, each serpentine neck striking on its own.",
-    "composition": "Wide three-quarter view of the hydra rearing from a black pool, five to seven serpent necks striking in different directions, with three clearly biting; a small human figure at the pool's edge, drawn small, light and secondary, for scale.",
+    "composition": "Three-quarter view of the hydra rearing from a black pool, five to seven serpent necks striking in different directions, with three clearly biting; a small human figure at the pool's edge, drawn small, light and secondary, for scale.",
     "details": [
      "Five to seven long serpentine necks each with a head",
      "Heavy reptilian body half-submerged",
@@ -8962,7 +8962,7 @@
      "9.7 The Bestiary, The Mire Bestiary: Hydra [Elite]"
     ]
    },
-   "spec_sha256": "b24782d508ce236f0ac2c2aff26ced812f1170b509c9ae235576d69f05199803"
+   "spec_sha256": "cb096e48c8e342f4ae1a609d51027e024dadf4559529c7ccb1a23857fd110a39"
   },
   {
    "id": "ART-MON-BLACKWATER-WIGHT",
@@ -9029,10 +9029,10 @@
    "direction": "A typical Mire Titan alone, waist-deep in fen water, reeds and mud sliding from its body; no geodes or hunters.",
    "brief": {
     "identity": "Mire Titan, Mire Brute, huge: a colossal froglike amphibian horror of warty hide and lashing tentacles with a vast distensible maw. Typical individual, alone, waist-deep in fen water.",
-    "composition": "Wide low view of the titan standing waist-deep in fen water, reeds and mud sliding from its body, three tentacles raised and mouth partly open; a small human figure at a safe distance, drawn small, light and secondary, for scale.",
+    "composition": "Low view of the titan standing waist-deep in fen water, reeds and mud sliding from its body, three tentacles raised and mouth partly open; a small human figure at a safe distance, drawn small, light and secondary, for scale.",
     "details": [
      "Froglike bulk with warty hide",
-     "Three thick lashing tentacles from the shoulders",
+     "Three thick lashing tentacles from the shoulders that serve as its arms, one coiled around a struggling shape",
      "Vast distensible maw with a ridge of small teeth",
      "Wide flat head with small eyes",
      "Reeds and mud sliding from its flanks",
@@ -9048,7 +9048,7 @@
      "9.7 The Bestiary, The Mire Bestiary: Mire Titan [Brute]"
     ]
    },
-   "spec_sha256": "b8dec117875926475c62894bce5836dd6d89a07c022d07e9458faec0ace005ae"
+   "spec_sha256": "02ab9e9853f4b8f35e011e95efa54ca15b2ca8c13af83e7327e5e0c0ea3ec833"
   },
   {
    "id": "ART-MON-BLACK-DRAGON",
@@ -9072,7 +9072,7 @@
    "direction": "A typical adult black dragon rising from open black water, acid dripping from its jaws; no ruin or architecture.",
    "brief": {
     "identity": "Black Dragon, Mire Elite, huge: a sleek horned wyrm the colour of stagnant water with an acid breath; it flies and swims. Typical adult, alone, rising from open black water.",
-    "composition": "Wide low-angle view of the dragon rising from open black water, acid dripping from its jaws, wings partly lifting; a tiny human figure on the near bank, drawn small, light and secondary, for scale.",
+    "composition": "Low-angle view of the dragon rising from open black water, acid dripping from its jaws, wings partly lifting; a tiny human figure on the near bank, drawn small, light and secondary, for scale.",
     "details": [
      "Sleek horned head with swept-back horns",
      "Gaunt skull-like jaw with dripping acid",
@@ -9091,7 +9091,7 @@
      "9.7 The Bestiary, The Mire Bestiary: Black Dragon [Elite]"
     ]
    },
-   "spec_sha256": "7e031750d13b0d14aef0d1d87d969eaec6efd5b8c21f76e20a4723ee2a1a2f41"
+   "spec_sha256": "9341cffe5e2183d3049419c20c450f7cdfbe72bffb40f1ae5643b1a59075decf"
   },
   {
    "id": "ART-MON-THE-ANCIENT-VOID-DRAGON",
@@ -9118,7 +9118,7 @@
     "composition": "Night sky over a barren crag; the dragon is drawn mostly as negative space, a wyrm-shaped absence of untouched paper edged by fine contour lines, stars dimming around it. A broken watchtower stands small at the bottom for scale.",
     "details": [
      "Wyrm silhouette formed by blank paper bounded by thin broken contour lines",
-     "Stars as sparse ink points thinning and vanishing near its outline",
+     "Stars as small bare-paper specks in the black sky, thinning and vanishing near its outline",
      "Spreading wings and a long coiling neck implied by what the stars are missing",
      "Where the breath passes, the landscape is erased to bare white with abrupt edges",
      "Barren crag, snapped watchtower and a dry riverbed below",
@@ -9131,13 +9131,13 @@
      "Not a normal rendered dragon with scales; absence is the subject",
      "Not the Dracolich (bones) or Visath (ice)",
      "No glow or lens flare",
-     "No figures except at most one tiny tower"
+     "No figures; at most one tiny broken tower"
     ],
     "sources": [
      "9.7 The Bestiary - The Ancient Void Dragon (boss)"
     ]
    },
-   "spec_sha256": "69012e5ceb84a026e19fcc06c4ba98488f6c88d40223c1f9f90a0d2ed1069710"
+   "spec_sha256": "fd608a5f78e5e5ee7d606852a1034449660597f2aea0de3583352fa45d4a7cfb"
   },
   {
    "id": "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
@@ -9180,14 +9180,14 @@
      "Do not show a face inside the robe; it is empty",
      "Not the Ashlands climate street or Captain Veyr's company",
      "No readable inscriptions",
-     "No combat scene: the legionaries stand as one disciplined mass"
+     "No combat scene: the kneeling legionaries form one disciplined mass"
     ],
     "sources": [
      "9.7 The Bestiary - The Hollow Crown of the Ashlands (boss)",
      "1.3.2 The Ashlands"
     ]
    },
-   "spec_sha256": "bd27ed929cd1a2c79b0c389e40a36ef35840df2dbaeb56755acfe289a816c131"
+   "spec_sha256": "d6ef9f2ccd392d0eaffed36784b7a388d4c0d501dbd17c80d01afc065282b419"
   },
   {
    "id": "ART-MON-THE-LAST-COLOSSUS",
@@ -9211,11 +9211,11 @@
    "direction": "A riveted black-iron war-construct three times a man's height marching along a ruined imperial road, a small figure at its feet for scale.",
    "brief": {
     "identity": "The Last Colossus, a walking fortress of riveted black iron three times a man's height, the empire's last war-construct, marching the same patrol for centuries.",
-    "composition": "A cracked imperial road seen from a low angle; the Colossus marches toward the viewer, a small human figure at its feet for scale.",
+    "composition": "A cracked imperial road seen from a low angle; the Colossus marches toward the viewer, a small human figure at its feet for scale; the Colossus is exactly three times that figure's height, no taller.",
     "details": [
      "Slab-sided torso of riveted black iron plates with seams and weld lines",
      "Thick pillar legs with piston-like joints and a flared hip skirt",
-     "Joints groaning with steam and vented thunder drawn as short rays of lines",
+     "Joints groaning with steam and vented thunder drawn as short jagged strokes",
      "Head as a small armoured helm with a slit visor",
      "Massive hands like siege mauls, banner-pole stump on shoulder with a tattered pennant",
      "Cracked imperial road with milestones snapped off and fallen leaves",
@@ -9239,7 +9239,7 @@
      "1.3.5 Imperial constructs"
     ]
    },
-   "spec_sha256": "b737ab4de5dfb0ad7a858d4f709e0c7821aa2a21568dcc2d5149ac75b3d1dff1"
+   "spec_sha256": "be275483235c57575456d62216bfd0bd5ea9fe6961cb9459a338a654258faa5f"
   },
   {
    "id": "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
@@ -9469,7 +9469,7 @@
      "Corpse in funeral linen, leathery face and bone, hands on armrests",
      "Crown of beaten gold rendered as clean blank paper with fine outline, the brightest thing in the picture",
      "Rows of skeletal subjects in ceremonial wrappings and pointed hats",
-     "Painted walls carved with glyphs shown as repeating abstract patterns, not text",
+     "Walls carved with repeating abstract patterns, no text shown as repeating abstract patterns, not text",
      "Braziers burning along the aisle",
      "Sand drifted in the corners"
     ],
@@ -9488,7 +9488,7 @@
      "1.3.2 The Sun-Drowned"
     ]
    },
-   "spec_sha256": "f1f9dc21d5bb4cf2fe285c23e763c00400331aaed1d8e13df9618cf3c8890908"
+   "spec_sha256": "525e18139c309b8fb9355a3d97128dec745a0b9529e6dbd812443e9f3aa3d4ef"
   },
   {
    "id": "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
@@ -9518,7 +9518,7 @@
      "Body of bark, living wood and moss with a ragged robe of grey moss",
      "Timber-walled gate with a heavy gatehouse and snow-laden palisade",
      "Debtor on his knees with a torn coat",
-     "Torch-bearing gatekeepers retreating inside",
+     "Torch-bearing gatekeepers frozen at the gate",
      "Snow and ancient oaks crowding the wall",
      "Tithe bundles scattered at the stones outside"
     ],
@@ -9541,7 +9541,7 @@
      "1.3.3 Greythorn"
     ]
    },
-   "spec_sha256": "e054dd21b0921da13706ef32221331bc2519c1fbb95f35e5b792e38f2fec3ea3"
+   "spec_sha256": "48e9ba7f59ebc2af9fb5e1d1ae5f716965ebe8fb50351cfe778383ecf9bd0e64"
   },
   {
    "id": "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
@@ -9813,7 +9813,7 @@
      "Acid drips dissolving a pew rail in thin lines",
      "Waterline mist and rising ripples",
      "Bells hanging underwater as dark shapes",
-     "Frogless silent reeds and algae"
+     "Still reeds and algae"
     ],
     "activity": [],
     "atmosphere": "Drowned grandeur, patient hunger.",
@@ -9828,7 +9828,7 @@
      "1.3.2 The Mire"
     ]
    },
-   "spec_sha256": "6453f299708e2c56f1285cd91af8420a85657e1be1d6cc111df4d68ce4191d10"
+   "spec_sha256": "af254a12b92e58d080a6ddaf038b09790131e63942bb7b6f96d1797b9ff30e09"
   },
   {
    "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
@@ -9866,7 +9866,7 @@
     "atmosphere": "Brooding aftermath with the hunter still near.",
     "avoid": [
      "Do not portray the boar: a barely seen shape only, no tusks in close-up",
-     "No carcass and no giant forest Avatar",
+     "No boar carcass and no giant forest Avatar",
      "Not the Bandit's Toll (this is a camp, not a trail barricade)",
      "No gore on the camp"
     ],
@@ -9875,7 +9875,7 @@
      "1.3.3 Greythorn"
     ]
    },
-   "spec_sha256": "e67c0f1e4d58f507c3aedccec31c864a17fc498fe2185c9f6d03ec08278d84f3"
+   "spec_sha256": "680178edb44f2202b4f0c72f0cde17032943e169c2abd7b20e49966f2d74f1fc"
   },
   {
    "id": "ART-SCE-SCENARIO-2-THE-WHISPERING-GROVE",
@@ -9944,15 +9944,15 @@
     "details": [
      "Barricade of logs, upturned carts and spikes across the trail",
      "Prices nailed to the trees as crude boards smeared with dark marks, no letters",
-     "Palisade of caravans waiting far behind with wagons circled",
+     "Caravan wagons circled behind a makeshift palisade far back down the road",
      "Stolen wagons with broken barrels and iron ingots",
-     "Bandits: a scimitar-wielding captain on a wagon, archers in trees, hooded raiders with cudgels",
-     "Tall oaks hemming the trail and shafts of light",
+     "Bandits: a captain in looted mail with a longsword on a wagon, archers in trees, hooded raiders with cudgels",
+     "Tall oaks hemming the trail, gaps of bare paper between the trunks",
      "A ribbon of milestones and deep wheel ruts"
     ],
     "activity": [
      "Three bandits loll or count coin at the barricade",
-     "A captain with a shortbow watches the road from a wagon",
+     "A captain with a longsword at the hip watches the road from a wagon",
      "A caravan teamster waits with a mule team, tiny, at the near end"
     ],
     "atmosphere": "Menace and sullen commerce.",
@@ -9967,7 +9967,7 @@
      "1.3.6 Adventurers and the Road"
     ]
    },
-   "spec_sha256": "bc441d442f9152c395c7d31eeddde9122f3cdcd319aef8a60933feda54c69e4f"
+   "spec_sha256": "4a8976a6eaf756b0851066f298c8e43c86003b6e821984aa596f4147660ea65f"
   },
   {
    "id": "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE",
@@ -9994,7 +9994,7 @@
      "Bundles of spun silk wrapped like cocoons hanging at different heights",
      "A dagger and a rusted sword held motionless in a web strand as if in rope",
      "Brambles and thorny path through the foreground",
-     "Tarantula-sized spiders in the web, a larger spider back in shadow",
+     "Several tarantula-sized spiders half-hidden behind sheets of web, none shown larger or whole",
      "A pair of tracks that fork on the path (two parties sold the same path)"
     ],
     "activity": [
@@ -10012,7 +10012,7 @@
      "1.3.2 The Greenmark"
     ]
    },
-   "spec_sha256": "62620f383c78f71c814da16abffcab1339a6336fa0a496ce2d6fb28fbf884c28"
+   "spec_sha256": "f2ebe2c49d13ea3f775e94ebfaa699d26c90841cef8cfbe75e343aac9a57c80d"
   },
   {
    "id": "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY",
@@ -10554,7 +10554,7 @@
     ],
     "atmosphere": "Cautious infiltration.",
     "avoid": [
-     "Do not specify the faction (deep elf or dwarf randomly)",
+     "Do not specify any faction: sentries are dark silhouettes only",
      "Not the stronghold Undercroft or hidden passage",
      "No readable banners",
      "No fight in progress"
@@ -10563,7 +10563,7 @@
      "10.4 Scenario 4: The Undermarches Outpost Raid (Undermarches)"
     ]
    },
-   "spec_sha256": "8a35b90796ea04783b48c0ea048e2e5c7c496729839814f80619d409caf9a8d7"
+   "spec_sha256": "293721a4399e42906eda8d272e94d04c0b069a33a1b6fc9e7d78914e646a87ec"
   },
   {
    "id": "ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE",
@@ -10627,7 +10627,7 @@
    ],
    "brief": {
     "identity": "The Ritual of Shadow Binding, an Undermarches cavern without honest light where deep elf priests have drawn a binding circle around something answering from below the Dark.",
-    "composition": "Looking down from a ledge into a central cavern; a large binding circle on the floor ringed by three dark orbs, with robed priests around it and a tall Shadow Caller at its centre, small.",
+    "composition": "Looking down from a ledge into a central cavern; a large binding circle on the floor ringed by three dark orbs, with robed priests around it and the hooded Shadow Caller standing at its centre, drawn small at this distance.",
     "details": [
      "Binding circle with abstract sigils, spirals and rings, no letters",
      "Three dark spherical orbs in solid black around the circle",
@@ -10653,7 +10653,7 @@
      "1.3.2 The Undermarches"
     ]
    },
-   "spec_sha256": "c584e8d2fcf9c55e4bf5f1d0e020de531a4d4989138cf66fcbad0db7c0f5391a"
+   "spec_sha256": "084c749b4d531ebd80ebb134cecec0bc2204c39a387e7fd0625cb9ee628918b9"
   },
   {
    "id": "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
@@ -11266,7 +11266,7 @@
      "Rope walkways slung between posts over shallow pools",
      "Overturned offering baskets, scattered coins and a smashed clay bowl",
      "Broad drag marks through the mud into tall reeds",
-     "Lizardfolk Scale-Shaman with a plain wooden quarterstaff, with slime-streaked Swamp Goblins in reed canoes and on the walkways, small and furtive",
+     "Lizardfolk Scale-Shaman with a plain wooden quarterstaff; slime-streaked Swamp Goblins in reed canoes and on the walkways, small and furtive",
      "Shallow pools with a few submerged snouts",
      "Fen mist and a pale line of dawn"
     ],
@@ -11290,7 +11290,7 @@
      "RC488: Swamp Goblins replace Troglodytes"
     ]
    },
-   "spec_sha256": "b7a3179cd150dc90210fcecbe7987fb40e97e4dffcd143eaedd7134dbd2ae1a1"
+   "spec_sha256": "4c16f38d30121c260f9b3000782200306fa27b1e09ae2ea9cf115828f890d862"
   },
   {
    "id": "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN",
@@ -11723,7 +11723,7 @@
      "Warding nails hammered into timbers in patterns",
      "Sentry walkway with a torch and a bell",
      "Night sky ruled with heavy hatching",
-     "Dead trees beyond the ditch and distant eyes as tiny dots"
+     "Dead trees beyond the ditch, the dark between them empty"
     ],
     "activity": [
      "One sentry stands with a torch, small"
@@ -11739,7 +11739,7 @@
      "11.3 Building the Stronghold - The Outer Walls"
     ]
    },
-   "spec_sha256": "80dcc61002a69fcdd6b99bba4c0b747ed196d46ebe8d4391f6a34a9600b07349"
+   "spec_sha256": "cde95164692fc27f8a8b65afe56db6944a472edd74b7adba0be246deec11ba8b"
   },
   {
    "id": "ART-CAM-THE-ARCANUM",
@@ -11763,7 +11763,7 @@
     "composition": "Looking up at the tower against a night sky; upper windows burn and brass instruments on the roof turn toward a storm.",
     "details": [
      "Tall thin tower with crooked stonework",
-     "Windows drawn as solid black with a few open slits of paper",
+     "Upper windows as narrow bare-paper slits set in heavy black stonework so they read as lit, no rays",
      "Brass instruments: armillary ring, telescope, weathervane",
      "Storm clouds as dense diagonal hatching",
      "Lightning thin as a fine zigzag",
@@ -11782,7 +11782,7 @@
      "11.3 Building the Stronghold - The Arcanum"
     ]
    },
-   "spec_sha256": "e25d38dbdcbe643c1589a6bddbb96630498973a669d150d45c29e005cd6d0e05"
+   "spec_sha256": "7c1ea61479288b8366af16f390f279dc166bab1583ae10cf886c0f68691084c7"
   },
   {
    "id": "ART-CAM-THE-STRONGHOLD-CHAPEL",
@@ -11909,7 +11909,7 @@
     "atmosphere": "Hard instruction and mud.",
     "avoid": [
      "Not Hearthhold's training ground on the wall",
-     "No blood",
+     "No visible blood or gore; mud only",
      "Not the Barracks interior",
      "Not heroic poses"
     ],
@@ -11917,7 +11917,7 @@
      "11.3 Building the Stronghold - The Expedition Hall"
     ]
    },
-   "spec_sha256": "dd4fdd34ea3326a7043f39627d575301d5a7ccb2199fdc45a556e378b62491c2"
+   "spec_sha256": "58de161e3d4f72e988df57cd808d229a097f3250cf1b64e6e61c16e179907bcf"
   },
   {
    "id": "ART-CAM-THE-UNDERCROFT",

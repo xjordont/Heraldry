@@ -50,7 +50,6 @@ LOOKALIKE_MAX = 16           # of 256 difference bits: closer than this is warne
 # Mechanical tripwires. "scene" = vignette register; "figure" = isolated creature, person or still life.
 T = {
     "min_long_side": 1000,
-    "aspect_tol": 0.05,                                       # the intake warns at the same 5%
     "colour_warn": 0.10, "colour_fail": 0.25,                 # fraction of saturated pixels (art_ink's measure)
     "blank_fail": {"scene": 0.01, "figure": 0.003},           # non-paper fraction
     "sparse_warn": {"scene": 0.12, "figure": 0.02},
@@ -162,15 +161,18 @@ def incoming_changes(repo):
 def states(repo, q):
     """pending: no image; redo: image exists but the reviewer rejected it and it is not re-saved;
     saved: image exists and has not been sent (git: uncommitted or unpushed; no git: not yet recorded by the
-    intake with the same bytes); pushed: image exists and was sent; refused: the latest receipt is a refusal."""
+    intake with the same bytes); pushed: image exists and was sent; refused: the latest receipt is a refusal of the
+    current prompt."""
     sels = jload(repo / SELECTIONS_REL, {})
     have_git, changed, ahead = incoming_changes(repo)
-    refused = {i for i, r in last_receipts(repo).items() if r.get("refused")}
+    refusals = {i: r for i, r in last_receipts(repo).items() if r.get("refused")}
     res = {}
     for it in q["items"]:
         files = local_files(repo, it["id"])
         rels = {f.relative_to(repo).as_posix() for f in files}
-        if it["id"] in refused:
+        ref = refusals.get(it["id"])
+        # a refusal binds to the prompt it was made against: once Claude Code republishes a fixed prompt it reopens
+        if ref and ref.get("prompt_sha256", it["prompt_sha256"]) == it["prompt_sha256"]:
             res[it["id"]] = "refused"
         elif not files:
             res[it["id"]] = "pending"
@@ -318,8 +320,6 @@ def evaluate(m, item):
         fails.append(f"format {m['format']}: the image must be PNG, JPEG or WEBP")
     if max(w, h) < T["min_long_side"]:
         fails.append(f"only {max(w, h)} px on the long side (minimum {T['min_long_side']}): regenerate at the full size")
-    if abs((w / h) - (ew / eh)) / (ew / eh) > T["aspect_tol"]:
-        fails.append(f"aspect {w}x{h} is not {ew}x{eh}: regenerate wide 3:2, tall 2:3 or square 1:1 as the queue says")
     c = m["colour"]
     if c > T["colour_fail"]:
         fails.append(f"coloured image ({c:.0%} saturated pixels): pure black ink only")
@@ -496,18 +496,32 @@ def look_alike(repo, item, image):
     if mine is None:
         return None
     best = None
+    # Hashes of delivered images are cached in the scratch folder (keyed by path, size and mtime): without it
+    # every check would decode every delivered image, which grows to many seconds late in a long run.
+    cache_file = scratch_dir(repo) / "dhash_cache.json"
+    cache, dirty = jload(cache_file, {}), False
     for f in _pool(repo, item):
         try:
             if _is_pointer(f):
                 continue
+            st = f.stat()
         except OSError:
             continue
-        other = _dhash(f)
+        key = f"{f.relative_to(repo).as_posix()}|{st.st_size}|{st.st_mtime_ns}"
+        if key not in cache:
+            cache[key], dirty = _dhash(f), True
+        other = cache[key]
         if other is None:
             continue
         d = bin(mine ^ other).count("1")
         if d <= LOOKALIKE_MAX and (best is None or d < best[0]):
             best = (d, f.relative_to(repo).as_posix())
+    if dirty:
+        try:
+            cache_file.parent.mkdir(parents=True, exist_ok=True)
+            cache_file.write_text(json.dumps(cache), encoding="utf-8")
+        except OSError:
+            pass                                   # the cache is an optimisation only
     return best
 
 
@@ -531,7 +545,9 @@ def cmd_doctor(a, repo):
             blockers.append(f"on branch {branch.strip()!r}: work on main only, never create branches")
         if git(repo, "lfs", "version")[0] != 0:
             delivery.append("git-lfs is not installed (PNGs would be committed as ordinary files; the repo stores them with LFS)")
-        attrs = (repo / ".gitattributes").read_text() if (repo / ".gitattributes").is_file() else ""
+        elif not git(repo, "config", "--get", "filter.lfs.clean")[1].strip():
+            delivery.append("git-lfs is not set up in this clone: run `git lfs install --local --skip-smudge` once, or ship refuses PNGs")
+        attrs = (repo / ".gitattributes").read_text(encoding="utf-8") if (repo / ".gitattributes").is_file() else ""
         if "assets/art/incoming/*.png" not in attrs:
             blockers.append(".gitattributes lacks the assets/art/incoming/*.png LFS rule: git pull --rebase origin main")
         rc, out = git(repo, "status", "--porcelain", "--untracked-files=no")
@@ -933,7 +949,7 @@ def cmd_refuse(a, repo):
     if states(repo, q)[it["id"]] == "pushed":
         raise Fatal(f"{it['id']} is already delivered and is not a redo, so there is nothing to refuse. "
                     "If a redo was refused it shows as redo in status; otherwise leave it alone")
-    append_receipt(repo, {"id": it["id"], "refused": True, "reason": reason, "surface": "ChatGPT Work",
+    append_receipt(repo, {"id": it["id"], "refused": True, "reason": reason, "prompt_sha256": it["prompt_sha256"], "surface": "ChatGPT Work",
                           "date_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d")})
     print(f"recorded the refusal of {it['id']} in {RECEIPTS_REL}: commit it with the next batch and name the item in your report")
     return 0

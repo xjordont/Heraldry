@@ -33,7 +33,7 @@ Ink it gritty and bold, like old-school rulebook art: strong brush contours of u
 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
-* Do not specify the faction (deep elf or dwarf randomly).
+* Do not specify any faction: sentries are dark silhouettes only.
 * Not the stronghold Undercroft or hidden passage.
 * No readable banners.
 * No fight in progress.

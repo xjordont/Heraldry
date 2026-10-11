@@ -13,9 +13,33 @@
 5. **Delivery guard:** a safe fast-forward over intake commits, a retry after a lost push, and a stop on divergence or overlap. This was carried from v6 fixes made the same day.
 6. **Docs:** the reference docs have version-free names, the obsolete v6 `deployment/` folder is removed, and `work_preflight --require-installed` checks for v7.
 
+## Audit fixes (2026-10-11, second pass)
+
+- **delivery_guard `ship`:**
+  - A commit that was made but never pushed (timeout, killed session) is recovered on the next run instead of blocking forever.
+  - Any failure between staging and pushing rolls back to a clean index.
+  - Pushes cannot hang on a credential prompt.
+  - Authentication and LFS failures report their real cause.
+  - A push that timed out but landed is recognised and not delivered twice.
+  - A redo saved in a different file format is delivered as a replacement.
+- **Refusals:** a refusal now binds to the prompt it refused, so a republished prompt reopens the item.
+- **Robustness:** UTF-8 reads throughout the worker scripts (Windows). `doctor` reports a clone without `git lfs install`. The dead 5% aspect check is removed. `check` caches image hashes in scratch, so it no longer re-decodes every delivered image on every call.
+- **Workflows:**
+  - Intake and bundle import start every attempt from the newest main. Concurrent deliveries can no longer conflict over `SELECTIONS.json`, and resets no longer download every LFS file.
+  - The import has its own concurrency group.
+  - Repository checks skip pure image deliveries.
+- **Prompts:** a second, semantic audit of all 270 prompts fixed about 50 brief defects:
+  - contradictions with the source text (the toll-road bandit captain's weapon, the snow goblin's sling);
+  - internal contradictions (carcass, kneeling legionaries, stars on black, the spider sizes);
+  - scale conflicts (Briarling, Executioner, Last Colossus);
+  - near-duplicate poses (Harpy/Gargoyle, Gloom Hulk/Burrowmaw, Spectre/Lich/Ice Wraith, Fallen Paladin/Ashen Revenant, Undead Sentinel/Tomb Guardian, Wererat/Ratkin, Werebear/Gorebeak Bear);
+  - glow, ray and tone wording;
+  - garbled lines;
+  - "Wide" compositions in square monster prompts.
+
 ## Tests
 
-- Skill suite (`python -m unittest discover -s tests`, run from the skill folder): **39 tests passed**.
+- Skill suite (`python -m unittest discover -s tests`, run from the skill folder): **46 tests passed**, including new real-git tests for unpushed-commit recovery, a landed push, a format replacement, a refused deletion, a failed-push rollback, and a refusal reopening after a prompt fix.
 - `scripts/validate_skill.py --zip ... --repo .`: **PASS**. Package hashes, required files, reference images byte-identical to the repository, and FAMILIES.md current.
 - Repository pipeline tests: the reference mapping, kind coverage (a missing or duplicate kind fails), the lead order, and that no isolated figure receives a scenic reference.
 - Prompt audit across all 270 queue prompts: hashes, no placeholders, every must and avoid line present, vignettes on scenes, isolation on figures, source text, size class, and no stipple or detail-heavy wording in subject details. **0 issues.**

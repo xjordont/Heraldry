@@ -11,7 +11,7 @@ import json
 import statistics
 import sys
 from pathlib import Path
-from PIL import Image, ImageOps
+from PIL import Image
 
 try:
     from fidelity_gate import diagnostics

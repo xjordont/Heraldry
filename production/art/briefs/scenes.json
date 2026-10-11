@@ -97,7 +97,7 @@
    "Chapel bell tower with a cracked belfry and a rope-less bell, no cross or legible mark",
    "Drowned field with standing water reflecting thin sky, fence posts and a half-sunken plough",
    "Ruined wall with a broken top and fallen coping stones",
-   "Faint horizon glow suggested by blank paper above and sparse ruled strokes",
+   "Pale horizon left as blank paper above sparse ruled strokes",
    "Reeds and dead stalks scratched across the water",
    "Party gear: bedrolls, shields stacked on the wall, a shared flask",
    "A single crow on the wall top"
@@ -212,7 +212,7 @@
  },
  "ART-CH07-002": {
   "identity": "The equipment chapter, imagined as a Deepwarden forge cut into the rock, the best forges in the surviving world.",
-  "composition": "Interior of a carved rock forge; the smith at the focal centre quenching a glowing blade in a trough, steam rising; racks of finished mail, helms and axes framing both sides.",
+  "composition": "Interior of a carved rock forge; the smith at the focal centre quenching a hot blade, drawn as a bare-paper shape, in a trough, steam rising; racks of finished mail, helms and axes framing both sides.",
   "details": [
    "Rough-hewn rock walls with tool marks and a chimney flue disappearing into the ceiling",
    "Massive anvil, bellows, quench trough and tongs",
@@ -489,7 +489,7 @@
  },
  "ART-CLI-THE-UNDERMARCHES": {
   "identity": "The Undermarches, the endless underworld beneath every foundation, deepest under the broken mountains, where deep elves keep their own law.",
-  "composition": "A cutaway view: a mine shaft or cellar above breaking through into a smooth round tunnel no pick made; a small surveyor with a lantern and an inconsistent map stands at the join.",
+  "composition": "A cutaway view: a mine shaft or cellar above breaking through into a smooth round tunnel no pick made; a small surveyor with a lantern and an inconsistent map crouches at the join.",
   "details": [
    "Cellar barrels and a staircase at the top of frame, timber props",
    "Hole opening into an older, smooth-walled tunnel of precise masonry",
@@ -736,7 +736,7 @@
  },
  "ART-BAS-REEDMARCH": {
   "identity": "Reedmarch, a stilt-town raised over log pilings on barges, ferry platforms and toll bridges; the only crossing far and wide, populated by ferrymen, smugglers, leech-tenders and corpse-haulers.",
-  "composition": "Water-level view from a ferry at the toll bridge, looking at the stilt-town with its patchwork of platforms and barges; a barge hall repositioned in the middle.",
+  "composition": "Water-level view from a ferry at the toll bridge, looking at the stilt-town with its patchwork of platforms and barges; a barge carrying the Marsh Council hall moored in the middle.",
   "details": [
    "Log pilings and plank platforms with huts and ladders",
    "Toll bridges with a rope-and-pulley gate and chain",
@@ -753,7 +753,7 @@
   ],
   "atmosphere": "Murky commerce above buried secrets.",
   "avoid": [
-   "Not the Mire climate swamp scene (that is a drowned village, no town)",
+   "Not the Mire climate image (a drowned village, no town)",
    "No clear view of what is under the floors",
    "Not a stone town",
    "No lettering"
@@ -795,7 +795,7 @@
    "Market cross with a crude banner of hide and bones stuck on top",
    "Overgrown cobbles, a cart on its side, scattered pots",
    "Cottages with open shutters and dark windows",
-   "A dog skeleton or a small crow flock on a roof",
+   "A small crow flock on a roof",
    "Totem-like markings of scratches, no letters"
   ],
   "activity": [],
@@ -920,7 +920,7 @@
   "composition": "Night sky over a barren crag; the dragon is drawn mostly as negative space, a wyrm-shaped absence of untouched paper edged by fine contour lines, stars dimming around it. A broken watchtower stands small at the bottom for scale.",
   "details": [
    "Wyrm silhouette formed by blank paper bounded by thin broken contour lines",
-   "Stars as sparse ink points thinning and vanishing near its outline",
+   "Stars as small bare-paper specks in the black sky, thinning and vanishing near its outline",
    "Spreading wings and a long coiling neck implied by what the stars are missing",
    "Where the breath passes, the landscape is erased to bare white with abrupt edges",
    "Barren crag, snapped watchtower and a dry riverbed below",
@@ -933,7 +933,7 @@
    "Not a normal rendered dragon with scales; absence is the subject",
    "Not the Dracolich (bones) or Visath (ice)",
    "No glow or lens flare",
-   "No figures except at most one tiny tower"
+   "No figures; at most one tiny broken tower"
   ],
   "sources": [
    "9.7 The Bestiary - The Ancient Void Dragon (boss)"
@@ -960,7 +960,7 @@
    "Do not show a face inside the robe; it is empty",
    "Not the Ashlands climate street or Captain Veyr's company",
    "No readable inscriptions",
-   "No combat scene: the legionaries stand as one disciplined mass"
+   "No combat scene: the kneeling legionaries form one disciplined mass"
   ],
   "sources": [
    "9.7 The Bestiary - The Hollow Crown of the Ashlands (boss)",
@@ -969,11 +969,11 @@
  },
  "ART-MON-THE-LAST-COLOSSUS": {
   "identity": "The Last Colossus, a walking fortress of riveted black iron three times a man's height, the empire's last war-construct, marching the same patrol for centuries.",
-  "composition": "A cracked imperial road seen from a low angle; the Colossus marches toward the viewer, a small human figure at its feet for scale.",
+  "composition": "A cracked imperial road seen from a low angle; the Colossus marches toward the viewer, a small human figure at its feet for scale; the Colossus is exactly three times that figure's height, no taller.",
   "details": [
    "Slab-sided torso of riveted black iron plates with seams and weld lines",
    "Thick pillar legs with piston-like joints and a flared hip skirt",
-   "Joints groaning with steam and vented thunder drawn as short rays of lines",
+   "Joints groaning with steam and vented thunder drawn as short jagged strokes",
    "Head as a small armoured helm with a slit visor",
    "Massive hands like siege mauls, banner-pole stump on shoulder with a tattered pennant",
    "Cracked imperial road with milestones snapped off and fallen leaves",
@@ -1117,7 +1117,7 @@
    "Corpse in funeral linen, leathery face and bone, hands on armrests",
    "Crown of beaten gold rendered as clean blank paper with fine outline, the brightest thing in the picture",
    "Rows of skeletal subjects in ceremonial wrappings and pointed hats",
-   "Painted walls carved with glyphs shown as repeating abstract patterns, not text",
+   "Walls carved with repeating abstract patterns, no text shown as repeating abstract patterns, not text",
    "Braziers burning along the aisle",
    "Sand drifted in the corners"
   ],
@@ -1144,7 +1144,7 @@
    "Body of bark, living wood and moss with a ragged robe of grey moss",
    "Timber-walled gate with a heavy gatehouse and snow-laden palisade",
    "Debtor on his knees with a torn coat",
-   "Torch-bearing gatekeepers retreating inside",
+   "Torch-bearing gatekeepers frozen at the gate",
    "Snow and ancient oaks crowding the wall",
    "Tithe bundles scattered at the stones outside"
   ],
@@ -1307,7 +1307,7 @@
    "Acid drips dissolving a pew rail in thin lines",
    "Waterline mist and rising ripples",
    "Bells hanging underwater as dark shapes",
-   "Frogless silent reeds and algae"
+   "Still reeds and algae"
   ],
   "activity": [],
   "atmosphere": "Drowned grandeur, patient hunger.",
@@ -1342,7 +1342,7 @@
   "atmosphere": "Brooding aftermath with the hunter still near.",
   "avoid": [
    "Do not portray the boar: a barely seen shape only, no tusks in close-up",
-   "No carcass and no giant forest Avatar",
+   "No boar carcass and no giant forest Avatar",
    "Not the Bandit's Toll (this is a camp, not a trail barricade)",
    "No gore on the camp"
   ],
@@ -1384,15 +1384,15 @@
   "details": [
    "Barricade of logs, upturned carts and spikes across the trail",
    "Prices nailed to the trees as crude boards smeared with dark marks, no letters",
-   "Palisade of caravans waiting far behind with wagons circled",
+   "Caravan wagons circled behind a makeshift palisade far back down the road",
    "Stolen wagons with broken barrels and iron ingots",
-   "Bandits: a scimitar-wielding captain on a wagon, archers in trees, hooded raiders with cudgels",
-   "Tall oaks hemming the trail and shafts of light",
+   "Bandits: a captain in looted mail with a longsword on a wagon, archers in trees, hooded raiders with cudgels",
+   "Tall oaks hemming the trail, gaps of bare paper between the trunks",
    "A ribbon of milestones and deep wheel ruts"
   ],
   "activity": [
    "Three bandits loll or count coin at the barricade",
-   "A captain with a shortbow watches the road from a wagon",
+   "A captain with a longsword at the hip watches the road from a wagon",
    "A caravan teamster waits with a mule team, tiny, at the near end"
   ],
   "atmosphere": "Menace and sullen commerce.",
@@ -1416,7 +1416,7 @@
    "Bundles of spun silk wrapped like cocoons hanging at different heights",
    "A dagger and a rusted sword held motionless in a web strand as if in rope",
    "Brambles and thorny path through the foreground",
-   "Tarantula-sized spiders in the web, a larger spider back in shadow",
+   "Several tarantula-sized spiders half-hidden behind sheets of web, none shown larger or whole",
    "A pair of tracks that fork on the path (two parties sold the same path)"
   ],
   "activity": [
@@ -1760,7 +1760,7 @@
   ],
   "atmosphere": "Cautious infiltration.",
   "avoid": [
-   "Do not specify the faction (deep elf or dwarf randomly)",
+   "Do not specify any faction: sentries are dark silhouettes only",
    "Not the stronghold Undercroft or hidden passage",
    "No readable banners",
    "No fight in progress"
@@ -1797,7 +1797,7 @@
  },
  "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING": {
   "identity": "The Ritual of Shadow Binding, an Undermarches cavern without honest light where deep elf priests have drawn a binding circle around something answering from below the Dark.",
-  "composition": "Looking down from a ledge into a central cavern; a large binding circle on the floor ringed by three dark orbs, with robed priests around it and a tall Shadow Caller at its centre, small.",
+  "composition": "Looking down from a ledge into a central cavern; a large binding circle on the floor ringed by three dark orbs, with robed priests around it and the hooded Shadow Caller standing at its centre, drawn small at this distance.",
   "details": [
    "Binding circle with abstract sigils, spirals and rings, no letters",
    "Three dark spherical orbs in solid black around the circle",
@@ -2184,7 +2184,7 @@
    "Rope walkways slung between posts over shallow pools",
    "Overturned offering baskets, scattered coins and a smashed clay bowl",
    "Broad drag marks through the mud into tall reeds",
-   "Lizardfolk Scale-Shaman with a plain wooden quarterstaff, with slime-streaked Swamp Goblins in reed canoes and on the walkways, small and furtive",
+   "Lizardfolk Scale-Shaman with a plain wooden quarterstaff; slime-streaked Swamp Goblins in reed canoes and on the walkways, small and furtive",
    "Shallow pools with a few submerged snouts",
    "Fen mist and a pale line of dawn"
   ],
@@ -2456,7 +2456,7 @@
    "Warding nails hammered into timbers in patterns",
    "Sentry walkway with a torch and a bell",
    "Night sky ruled with heavy hatching",
-   "Dead trees beyond the ditch and distant eyes as tiny dots"
+   "Dead trees beyond the ditch, the dark between them empty"
   ],
   "activity": [
    "One sentry stands with a torch, small"
@@ -2477,7 +2477,7 @@
   "composition": "Looking up at the tower against a night sky; upper windows burn and brass instruments on the roof turn toward a storm.",
   "details": [
    "Tall thin tower with crooked stonework",
-   "Windows drawn as solid black with a few open slits of paper",
+   "Upper windows as narrow bare-paper slits set in heavy black stonework so they read as lit, no rays",
    "Brass instruments: armillary ring, telescope, weathervane",
    "Storm clouds as dense diagonal hatching",
    "Lightning thin as a fine zigzag",
@@ -2566,7 +2566,7 @@
   "atmosphere": "Hard instruction and mud.",
   "avoid": [
    "Not Hearthhold's training ground on the wall",
-   "No blood",
+   "No visible blood or gore; mud only",
    "Not the Barracks interior",
    "Not heroic poses"
   ],

@@ -235,3 +235,19 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Skill v7:** see `docs/ART_AUTOMATION.md`.
   - **Checks:** `make test`, the skill suite, the package verification and CI, recorded below.
   - No manuscript change and no build; `dist/` still predates this art.
+- **Second full audit and debug pass** (owner, 2026-10-11: "Double check everything again ... Ensure the repo is without bugs and fix any bugs ... Debug the codebase"). Two independent audits ran: a semantic read of all 270 prompts, and a code review of the pipeline. Every finding was verified against the text or code before it was fixed.
+  - **Prompts:**
+    - About 50 brief defects fixed: source contradictions, internal contradictions, scale conflicts, seven near-duplicate pose pairs, glow, ray and tone wording, garbled lines, and "Wide" in square monster prompts.
+    - Two auditor claims were rejected after checking: the Chapter 4 composition was already correct, and "Shadow Caller" is the rules' own name.
+  - **Code:**
+    - Intake and import workflows reset to the newest main on each attempt, with no full LFS smudge; the import has its own concurrency group.
+    - `delivery_guard ship`:
+      - recovers an unpushed commit;
+      - rolls back on any failure;
+      - pushes without credential prompts and reports real push errors;
+      - recognises a push that landed;
+      - accepts a format-change replacement.
+    - Refusals bind to the prompt hash.
+    - UTF-8 reads for Windows; `doctor` checks that LFS is installed in the clone; the dead aspect check is removed; `check` caches image hashes; `save_as` is removed from the queue; the illustration list marks redos; lint is clean.
+    - Repository checks skip pure image deliveries.
+  - **Tests:** six new real-git regression tests. Results are below.

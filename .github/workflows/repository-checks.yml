@@ -2,6 +2,10 @@ name: Repository checks
 on:
   push:
     branches: [main]
+    # a Codex delivery (one image and its receipt) changes no code: the intake workflow handles it
+    paths-ignore:
+      - 'assets/art/incoming/**'
+      - 'production/art/gpt/RECEIPTS.jsonl'
   pull_request:
   workflow_dispatch:
 permissions:

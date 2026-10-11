@@ -1,7 +1,7 @@
 """Offline regression suite: validates QA fidelity, failure gates, and capability fallbacks.
 Not a test of actual image-model art quality, Git LFS transport, or remote intake.
 """
-import hashlib, importlib.util, json, sys, tempfile, unittest
+import hashlib, json, sys, tempfile, unittest
 from unittest import mock
 from pathlib import Path
 from PIL import Image
@@ -213,6 +213,8 @@ class V6Test(unittest.TestCase):
             if parts==('fetch','origin','main'):return ''
             if parts==('rev-parse','HEAD'):return 'a'*40
             if parts==('rev-parse','origin/main'):return 'b'*40
+            if parts[0]=='merge-base':return 'c'*40
+            if parts[0] in ('log','diff'):return ''          # no unpublished delivery commits of ours: a real divergence
             raise AssertionError(parts)
         with mock.patch.object(dg,'validate',return_value=check),mock.patch.object(dg,'cmd',side_effect=fake):
             with self.assertRaisesRegex(dg.Error,'diverges'):dg.ship(self.repo)

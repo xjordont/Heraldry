@@ -44,7 +44,7 @@ def check_package(base):
         if not (base / rel).is_file():
             errors.append(f"missing {rel}")
     mf = base / "manifest.json"
-    manifest = json.loads(mf.read_text()) if mf.is_file() else {"files": {}}
+    manifest = json.loads(mf.read_text(encoding="utf-8")) if mf.is_file() else {"files": {}}
     if manifest.get("version") != "7.0.0":
         errors.append("expected v7.0.0 manifest")
     on_disk = {p.relative_to(base).as_posix() for p in base.rglob("*") if p.is_file() and "__pycache__" not in p.parts} - {"manifest.json"}
@@ -56,7 +56,7 @@ def check_package(base):
             errors.append(f"hash mismatch: {rel}")
     for rel in sorted(on_disk - set(manifest["files"])):
         errors.append(f"file not in manifest: {rel}")
-    skill = (base / "SKILL.md").read_text() if (base / "SKILL.md").is_file() else ""
+    skill = (base / "SKILL.md").read_text(encoding="utf-8") if (base / "SKILL.md").is_file() else ""
     m = re.match(r"---\nname: ([a-z0-9-]+)\ndescription: (.+)\n---\n", skill)
     if not m or m.group(1) != "heraldry-classic-ink-art":
         errors.append("SKILL.md front matter must be name then description, name heraldry-classic-ink-art")
@@ -67,11 +67,11 @@ def check_package(base):
             errors.append(f"SKILL.md names a missing file: {ref}")
     for py in (base / "scripts").glob("*.py"):
         try:
-            compile(py.read_text(), str(py), "exec")
+            compile(py.read_text(encoding="utf-8"), str(py), "exec")
         except SyntaxError as e:
             errors.append(f"{py.name}: {e}")
     src = base / "references/images/SOURCES.json"
-    images = json.loads(src.read_text())["images"] if src.is_file() else []
+    images = json.loads(src.read_text(encoding="utf-8"))["images"] if src.is_file() else []
     for rec in images:
         f = base / rec["file"]
         try:
@@ -92,9 +92,9 @@ def check_repo(base, repo, images):
             errors.append(f"repo file missing: {rec['repo_path']}")
         elif sha(f.read_bytes()) != rec["sha256"]:
             errors.append(f"{rec['repo_path']} differs from the copy in the skill: rebuild with tools/art_skill_build.py")
-    cfg = json.loads((repo / "config/art_style.json").read_text())
+    cfg = json.loads((repo / "config/art_style.json").read_text(encoding="utf-8"))
     rows = {}
-    for line in (base / "references/FAMILIES.md").read_text().splitlines():
+    for line in (base / "references/FAMILIES.md").read_text(encoding="utf-8").splitlines():
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
         if len(cells) >= 5 and cells[0] in cfg["families"]:
             rows[cells[0]] = cells
@@ -107,12 +107,12 @@ def check_repo(base, repo, images):
     if not qf.is_file():
         errors.append("QUEUE.json not found in the repo")
     else:
-        q = json.loads(qf.read_text())
+        q = json.loads(qf.read_text(encoding="utf-8"))
         if q.get("schema", 1) < 2:
             errors.append("QUEUE.json is schema 1")
         for it in q["items"]:
             pf = repo / it["prompt"]
-            text = pf.read_text() if pf.is_file() else None
+            text = pf.read_text(encoding="utf-8") if pf.is_file() else None
             if text is None or sha((text[:-1] if text.endswith("\n") else text).encode()) != it["prompt_sha256"]:
                 errors.append(f"{it['id']}: prompt file missing or not matching the queue hash")
             for r in it["references"]:

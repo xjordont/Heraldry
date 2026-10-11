@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build deterministic root-of-ZIP skill package with SHA256 inventory. Run outside GitHub production loop."""
-import hashlib,json,sys,zipfile
+import hashlib,json,zipfile
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -12,7 +12,7 @@ manifest={
   'release_notes':'V7: gritty old-school art direction, per-family and per-monster-kind reference sets, a mixed first ten, per-image delivery with drift review every ten, version-free reference docs.',
   'files': {p.relative_to(ROOT).as_posix():{'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size} for p in FILES},
 }
-(ROOT/'manifest.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
+(ROOT/'manifest.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 with zipfile.ZipFile(OUT,'w',zipfile.ZIP_DEFLATED,compresslevel=7) as z:
   for p in [*FILES,ROOT/'manifest.json']:
     rel=p.relative_to(ROOT).as_posix()
