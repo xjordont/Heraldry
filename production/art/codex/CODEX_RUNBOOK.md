@@ -2,7 +2,7 @@
 
 **For production sessions, `BATCH_CARD.md` is the operative one-page contract.** This runbook is background and first-time setup.
 
-Owner decision 2026-10-11: image generation continues in **Codex on the owner's Windows PC**, which has the owner's own GitHub login, Git, Git LFS and Python. GitHub `main` is the primary source and delivery route; ZIP hand-off is reserved for the v6 fallback when authenticated inputs or guarded delivery are unavailable. Codex clones `xjordont/Heraldry`, generates the queued images, and pushes them through LFS with the guarded delivery script. GitHub Actions ink-prepares them, and Claude Code reviews and approves them, then publishes the next queue.
+Owner decision 2026-10-11: image generation continues in **Codex on the owner's Windows PC**, which has the owner's own GitHub login, Git, Git LFS and Python. GitHub `main` is the primary source and delivery route; ZIP hand-off is reserved for the offline fallback when authenticated inputs or guarded delivery are unavailable. Codex clones `xjordont/Heraldry`, generates the queued images, and pushes them through LFS with the guarded delivery script. GitHub Actions ink-prepares them, and Claude Code reviews and approves them, then publishes the next queue.
 
 ## Roles
 

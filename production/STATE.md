@@ -223,3 +223,15 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Coverage:** magic in action, insect and beastfolk creatures, an adventuring-gear sheet, more items, a forest landscape and dungeon scenes.
   - **Caveats recorded:** stipple fields in 30 and 31, small images (32, 33, 35, 39, 40), a narrow image (37) and grey paper borders (33, 34).
   - **Not attached yet:** no reference set, prompt or queue changed.
+- **Reference completion, mapping v7, prompt audit and skill v7** (owner, 2026-10-11: "Search the internet for example art to fulfill your request ... continue with reanalysis of all of the art to ensure optimally mapped. Check the illustrations prompts to ensure they are correct. Update the gpt skill to v7 ... prepare gpt to run the system as originally planned so we can generate all the images autonomously").
+  - **Search:**
+    - Wikimedia rate-limited this connection.
+    - Gutenberg's Sime plates are halftone grey, and its Pyle plates carry lettering and frames.
+    - From Art Institute of Chicago CC0 prints, four were added as STYLE-REF-41 to 44: two Callot beggars, Piranesi's *The Drawbridge* and Haden's *Challow Farm*. Each was levelled to black on white, with the plate number or signature painted out; provenance is in `STYLE_REFS.json` under `public_domain`.
+    - Rejected: Bresdin (too dense, and black after levelling), Rembrandt's *Monk in the Cornfield* (subject unsuitable), and Doré paintings (grey).
+    - No usable gritty public-domain desert, ash or snow landscape was found; this is recorded as still open.
+  - **Mapping v7:** 17 reference sets, in `docs/ART_DIRECTION.md`. Five monster kinds are assigned by ID, with a coverage check; every other family has its own set. `ref_set` is recorded per item, and ten items, one per set, lead the queue.
+  - **Prompt audit:** all 270 prompts linted clean. Fixed: 32 dense-stipple brief details, the Elf longbow comparison, the chapter and cover composition duplication, the title line and the reference sentence. Still lifes have their own style line.
+  - **Skill v7:** see `docs/ART_AUTOMATION.md`.
+  - **Checks:** `make test`, the skill suite, the package verification and CI, recorded below.
+  - No manuscript change and no build; `dist/` still predates this art.

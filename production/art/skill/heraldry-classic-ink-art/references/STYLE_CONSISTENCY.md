@@ -1,4 +1,4 @@
-# V6 visual continuity: art direction and objective release gates
+# Visual continuity: art direction and objective release gates
 
 The approved visual references govern style, not subject. Compare every candidate side by side with its queue-provided references. The three production registers need different treatments. Do NOT compare a spot-ink character's density directly to Greythorn's panoramic town scene.
 

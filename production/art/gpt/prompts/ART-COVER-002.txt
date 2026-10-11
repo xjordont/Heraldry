@@ -1,4 +1,4 @@
-FRONT COVER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
+FRONT COVER - GRITTY OLD-SCHOOL INK ILLUSTRATION
 
 Create a gritty, old-school black-and-white ink illustration of the Recommended First Party of Heraldry Skirmish (Human Fighter, Elf Ranger, Dwarf Cleric, Halfling Rogue), four Heroes on an expedition into the monster-haunted ruins of the Dying Lands while a rival party works the same ground, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 
@@ -9,7 +9,6 @@ Leave approximately 5-8% clean white margin around the perimeter, with an additi
 
 COMPOSITION
 A four-Hero adventuring party — Human Fighter, Elf Ranger, Dwarf Cleric, Halfling Rogue — advancing through a rain-soaked ruined shrine; a rival party's banner across the ruin; a Monster silhouette in the treeline.
-Low three-quarter view; party small in the lower third; broken shrine arch as frame; open sky upper half reserved for typeset title.
 Low three-quarter view from ground level; the four-Hero party is small in the lower third, advancing between rain-slick flagstones. A broken shrine arch frames the scene on one side and the upper half of the picture is open ruled sky, left empty for the typeset title.
 
 SUBJECT DETAILS
@@ -40,4 +39,4 @@ Do not draw:
 Avoid photorealism, digital-render polish, clean vector-like line, uniform machine texture, stipple fields, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should be gritty and high-contrast and print crisply in pure black ink, with an organically fading white vignette, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
-The attached reference images are gritty, old-school ink art by human illustrators. Match their bold brush contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish, but do not copy their subjects or compositions, and draw in pure black ink only.
+The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.

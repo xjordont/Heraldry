@@ -28,13 +28,41 @@ def received(sels=None):
     return {k for k, v in sels.items() if v.get("route") == "gpt" and v.get("status") in ("received", "approved", "anchor-approved")}
 
 
+def ref_set(e):
+    """(name, candidates) for an entry: kind_sets (by ID) over family_sets (by family) over the register set."""
+    cfg = g.CFG["gpt_reference_sets"]
+    for kind, spec in cfg.get("kind_sets", {}).items():
+        if e["id"] in spec["ids"]:
+            return f"{e['family']}:{kind}", spec["refs"]
+    if e["family"] in cfg.get("family_sets", {}):
+        return e["family"], cfg["family_sets"][e["family"]]
+    reg = cfg["register_of_family"][e["family"]]
+    return reg, cfg["sets"][reg]
+
+
+def check_kinds(ents):
+    """Every queued monster belongs to exactly one kind, and every kinded ID is a real monster."""
+    kinds = g.CFG["gpt_reference_sets"].get("kind_sets", {})
+    seen = {}
+    for kind, spec in kinds.items():
+        for i in spec["ids"]:
+            if i in seen:
+                raise SystemExit(f"{i} is in kind_sets {seen[i]} and {kind}")
+            if i not in ents or ents[i]["family"] != "monster":
+                raise SystemExit(f"kind_sets {kind}: {i} is not a monster entry")
+            seen[i] = kind
+    if kinds:
+        missing = sorted(i for i, e in ents.items() if e["family"] == "monster" and i not in seen)
+        if missing:
+            raise SystemExit("monsters without a kind in kind_sets: " + ", ".join(missing))
+
+
 def references_for(e, sels, root=ROOT):
     """Up to max_refs reference images for this entry's family (family_sets) or else its register: repo paths
     always (they must exist), anchor IDs once approved. Never the entry itself."""
     cfg = g.CFG["gpt_reference_sets"]
     out = []
-    cands = cfg.get("family_sets", {}).get(e["family"]) or cfg["sets"][cfg["register_of_family"][e["family"]]]
-    for cand in cands:
+    for cand in ref_set(e)[1]:
         if cand.lower().endswith(IMAGE_SUFFIXES):
             if not (root / cand).is_file():
                 raise SystemExit(f"reference image missing: {cand}")
@@ -54,6 +82,7 @@ def item_for(e, prompt, sels, root=ROOT):
     att = g.CFG["gpt_max_attempts"]
     size_code = (e.get("facts") or {}).get("size_code") or ""
     return {"id": e["id"], "family": e["family"], "register": g.CFG["gpt_reference_sets"]["register_of_family"][e["family"]],
+            "ref_set": ref_set(e)[0],
             "title": e["title"], "prompt": f"production/art/gpt/prompts/{e['id']}.txt",
             "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(), "size": SIZES.get(fam["aspect"], "1536x1024"),
             "print_w_in": fam["print_w_in"], "references": references_for(e, sels, root),
@@ -71,7 +100,9 @@ def build_queue(phase, ents, sels, anchors, root=ROOT):
     else:
         if not (anchors.get("route") == "gpt" and anchors.get("status") == "approved"):
             raise SystemExit("GPT anchors are not approved yet")
-        ids = sorted((i for i in ents if i not in done), key=lambda i: (ORDER.index(ents[i]["family"]), i))
+        check_kinds(ents)
+        lead = [i for i in g.CFG.get("gpt_lead_ids", []) if i in ents and i not in done]
+        ids = lead + sorted((i for i in ents if i not in done and i not in lead), key=lambda i: (ORDER.index(ents[i]["family"]), i))
     prompts, items = {}, []
     for i in ids:
         prompts[i] = g.prompt_for(ents[i], True)

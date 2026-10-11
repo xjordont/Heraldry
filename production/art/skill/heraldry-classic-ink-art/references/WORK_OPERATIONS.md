@@ -1,4 +1,4 @@
-# V6 Work operations and handoff
+# Work operations and handoff
 
 ## Responsibility boundary
 
@@ -34,7 +34,7 @@ Create a draft file via `fidelity_gate.py create ID /scratch/IMG.png --prompt-sh
 
 ## Delivery safety
 
-Current live repository contract is direct-to-main, not branch/PR. The v6 guard uses exact allowed paths, queue ID validation, SHA-bound receipts, LFS filter checks and main-head equality. It never performs automatic rebase, force push or overwrite on conflict; if the intake advanced main in the meantime it stops. This is intentionally narrower than a branch/PR redesign and preserves intake compatibility.
+Current live repository contract is direct-to-main, not branch/PR. The guard uses exact allowed paths, queue ID validation, SHA-bound receipts, LFS filter checks and main-head equality. It never performs automatic rebase, force push or overwrite on conflict; if the intake advanced main in the meantime it stops. This is intentionally narrower than a branch/PR redesign and preserves intake compatibility.
 
 For a later branch/PR workflow, Claude Code would need to update its intake workflow, protected branch policy and review procedure first. Do not unilaterally switch to PRs in Work. A single producer should hold the writing lease; if multiple workers operate, partition the queue by unique ID and commit separately with coordination.
 

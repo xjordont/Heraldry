@@ -150,3 +150,23 @@ The art benchmark moved to gritty old-school black-and-white ink. `docs/ART_DIRE
 - **Prompts:** `prompt_v2` carries the new wording, and the batch queue was republished.
 - **Pipeline:** the checks are unchanged. Pure black ink only, and grey wash still fails.
 - **First run:** the first Codex run after the change should stop after 5 images for review.
+
+## Skill v7 and reference mapping v7 (owner, 2026-10-11)
+
+The owner asked for the reference library to be completed and remapped, the prompts checked, the skill raised to v7, and everything prepared for the autonomous run.
+
+- **References:** four public-domain prints fill the gaps: Callot figures, the Piranesi drawbridge and the Haden vignette, from Art Institute of Chicago CC0 images. The mapping now works at three levels, in order of precedence:
+  - `kind_sets`: five monster kinds, by ID; `tools/art_gpt_pack.py` fails if a monster has no kind or two;
+  - `family_sets`: every other family;
+  - the register `sets`.
+
+  Each queue item records its `ref_set`, and `show` prints it.
+- **Queue order:** `gpt_lead_ids` puts ten items first, one per reference set, so the first drift review at image 10 tests every set. Redos still come first.
+- **Prompt audit:** all 270 prompts were linted. Checks: hash, placeholders, must and avoid lines present, vignette on scenes, isolation on figures, source text, size class, and no detail-heavy wording.
+  - Fixed: 32 brief details that asked for dense stipple, a stray Halfling comparison in the Elf brief, the duplicated plan composition in chapter and cover prompts, the title line, and the reference sentence (which no longer claims every reference is by a human illustrator).
+  - Still lifes now have their own style line.
+- **Skill v7:** `Heraldry_Classic_Ink_Art_Skill_v7_0.zip`.
+  - The reference docs have version-free names, and the obsolete v6 `deployment/` folder is removed.
+  - `work_preflight --require-installed` checks for v7.
+  - The ZIP carries every attachable reference.
+- **Run:** Codex uses `production/art/codex/CODEX_PROMPT.md` unchanged; the authorization line runs the whole queue. For a first look at the new mapping, add `Stop after 10 delivered images.`: the first ten cover every reference set.

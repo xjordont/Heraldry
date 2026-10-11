@@ -1,5 +1,5 @@
 {
- "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses. A second batch added STYLE-REF-28..40 to the bank (one more image was STYLE-REF-26 again, byte-identical, and was not stored twice).",
+ "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses. A second batch added STYLE-REF-28..40 to the bank (one more image was STYLE-REF-26 again, byte-identical, and was not stored twice). 2026-10-11: on owner instruction Claude searched for public-domain examples to fill the remaining gaps and added STYLE-REF-41..44 (Callot, Piranesi, Haden; Art Institute of Chicago CC0). Their scans were levelled and plate numbers or signatures removed.",
  "refs": [
   {
    "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
@@ -529,6 +529,60 @@
    "role": "Crude scythe-pick with a rag-wrapped haft, isolated",
    "caveat": "small (467 px tall)",
    "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  }
+ ],
+ "public_domain": [
+  {
+   "path": "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+   "category": "person: isolated full-length figure",
+   "role": "Jacques Callot, Beggar without Hat or Shoes (The Beggars, plate 12), etching, c. 1622: bold swelling contour, ragged cloth, small ground patch on open paper",
+   "px": [
+    1480,
+    2522
+   ],
+   "sha256": "e6231f466212226380803ae95a46a75c42821fd6272460c0a8617207c5bb61a4",
+   "source": "Art Institute of Chicago, artwork 18054 ('Beggar without Hat or Shoes, plate twelve from The Beggars', Jacques Callot), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
+   "processing": "levelled to black ink on white paper, cropped to the image, plate signature or number painted out",
+   "use": "generation style reference (public domain, sourced by Claude on owner instruction 2026-10-11); never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg",
+   "category": "person: isolated full-length figure, back view",
+   "role": "Jacques Callot, Beggar on Crutches Wearing a Hat, Seen from Back (The Beggars, plate 5), etching, c. 1622",
+   "px": [
+    1581,
+    2496
+   ],
+   "sha256": "0cf0d51ab14e774a689e94b669b6e6e1508be837d168404b4028bb6a543da180",
+   "source": "Art Institute of Chicago, artwork 18026 ('Beggar on Crutches and Wearing a Hat, seen from Back, plate five from The Beggars', Jacques Callot), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
+   "processing": "levelled to black ink on white paper, cropped to the image, plate signature or number painted out",
+   "use": "generation style reference (public domain, sourced by Claude on owner instruction 2026-10-11); never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
+   "category": "ruins and interiors at colossal scale (chapters, campaign)",
+   "role": "Giovanni Battista Piranesi, The Drawbridge, plate 7 from Imaginary Prisons, etching, 1761: crushing scale, heavy etched blacks",
+   "px": [
+    1177,
+    1579
+   ],
+   "sha256": "e9e860585ceca7c3aca82a132b846ea2e6c2a03377c986d0cdc8180a0b8f7c5b",
+   "source": "Art Institute of Chicago, artwork 7358 ('The Drawbridge, plate 7 from Imaginary Prisons', Giovanni Battista Piranesi), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
+   "processing": "levelled to black ink on white paper, cropped to the image",
+   "use": "generation style reference (public domain, sourced by Claude on owner instruction 2026-10-11); never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+   "category": "scene format: vignette fading to white paper",
+   "role": "Francis Seymour Haden, Challow Farm, etching, 1877: landscape that dissolves into open paper, solid-black focal figure",
+   "px": [
+    1146,
+    759
+   ],
+   "sha256": "2dce2fcd003736f981b5f7372d275441cb71e198c2f19ad982d771d1ddd5e630",
+   "source": "Art Institute of Chicago, artwork 7707 ('Challow Farm', Francis Seymour Haden), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
+   "processing": "levelled to black ink on white paper, cropped to the image, plate signature or number painted out",
+   "use": "generation style reference (public domain, sourced by Claude on owner instruction 2026-10-11); never placed or packaged"
   }
  ]
 }

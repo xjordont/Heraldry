@@ -1,4 +1,4 @@
-SCENARIO 6: THE IRON-VEIN VAULT - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
+SCENARIO 6: THE IRON-VEIN VAULT - GRITTY OLD-SCHOOL INK ILLUSTRATION
 
 Create a gritty, old-school black-and-white ink illustration of the Iron-Vein Vault, an Ashlands vault sealed for two generations with Karnessa Iron-Vein's blood on its iron door, now cracked by tremors as something below pushes, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 
@@ -16,7 +16,7 @@ SUBJECT DETAILS
 * Hairline cracks in the vault walls leaking dark smoke-like seep
 * The door bulged slightly outward, rivets popping
 * Flanking corridors with collapsed walls
-* Dust sifting from the ceiling in stipple
+* Dust sifting from the ceiling as a few ink flecks
 * Fresh scorch scratches on the floor leading to the door
 
 HUMAN ACTIVITY
@@ -40,4 +40,4 @@ Do not draw:
 Avoid photorealism, digital-render polish, clean vector-like line, uniform machine texture, stipple fields, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should be gritty and high-contrast and print crisply in pure black ink, with an organically fading white vignette, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
-The attached reference images are gritty, old-school ink art by human illustrators. Match their bold brush contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish, but do not copy their subjects or compositions, and draw in pure black ink only.
+The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.

@@ -1,10 +1,8 @@
-# Heraldry Skirmish art runner v6: operator card
+# Heraldry Skirmish art runner v7: operator card
 
 ## Before generation
 
-Work with the `xjordont/Heraldry` repository, `main`, following `SKILL.md`. Claude Code owns prompts, queue, references and approvals. Work generates, checks and delivers unchanged native image files; never modify prompts, manuscript or queue.
-
-Run in the authenticated checkout:
+Work in the `xjordont/Heraldry` repository on `main`, following `SKILL.md`. On Codex, `production/art/codex/BATCH_CARD.md` is the one-page contract. Claude Code owns the prompts, queue, references and approvals. You generate, check and deliver unchanged native image files. Never modify the prompts, manuscript or queue.
 
 ```
 python production/art/skill/heraldry-classic-ink-art/scripts/work_preflight.py --repo . --require-installed
@@ -12,26 +10,33 @@ python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py doc
 python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py status
 ```
 
-No authenticated Git? Ask Claude Code for the offline Work input package (`tools/art_work_package.py`), unzip it into an empty folder, follow its `START_HERE.md`, and add `--offline-package` to the preflight. It must report READY, `delivery: bundle`, `remote_access: NOT_ATTEMPTED`. Deliver with `bundle --evidence ...` and say nothing was pushed.
+No authenticated Git? Use the offline Work input package (`tools/art_work_package.py`):
+1. Unzip it into an empty folder and follow its `START_HERE.md`.
+2. Add `--offline-package` to the preflight. It must report READY, `delivery: bundle` and `remote_access: NOT_ATTEMPTED`.
+3. Deliver with `bundle --evidence ...` and say that nothing was pushed.
 
-If Git LFS/authentication is unavailable, use the bundle fallback. Confirm through a real smoke test that the image tool accepts the queue's references and that the native image file is accessible. Do not claim this was verified from repository access alone.
+Confirm with a real smoke test that the image tool accepts the queue's references and that the native image file is accessible. Repository access alone does not prove either.
 
 ## Per item
 
-1. `show ID`; paste the exact prompt and attach **only** the listed references (all of them).
-2. Generate the requested native pixel dimensions at the highest quality offered; keep original bytes in scratch.
-3. Run `check ID SCRATCH_IMAGE`; inspect original and print-size preview beside its references. Set `visual_review_at_print_size: true` and `register_compared` in the QA file **only after** this review.
-4. Create the image-bound QA report with `fidelity_gate.py create ... --out /scratch/ID.qa.json`, complete ten criteria with visible evidence, and run `save ID FILE --qa-file /scratch/ID.qa.json` plus the existing `--must` and `--avoid-clear` assertions. Never invent a pass.
-5. Retry narrowly within the queue budget; at exhaustion, use a flagged handoff with recorded failures, not a false approval.
+1. `show ID`. Paste the exact prompt and attach **only** the listed references, all of them. Look at a reference set's images once, the first time its `ref_set` appears in the session.
+2. Request the largest size and best quality offered at the listed aspect. Keep the original bytes in the scratch folder.
+3. `check ID FILE`. Inspect the original and the print-size preview beside the references, including whether the image is as gritty and bold as they are.
+4. `qa ID FILE`: complete the ten criteria with visible evidence. Then `save ID FILE --must ... --avoid-clear --model "..."`. Never invent a pass.
+5. Retry narrowly within the item's budget (`references/REPAIR.md`). When the budget runs out, save the best attempt with `--accept-flags` and record what is still wrong. That is never an approval.
 
-## Batch and stopping rules
+## Delivery and stopping
 
-- Review each batch with `sheet --refs` and `style_audit.py --repo . --limit 10 --out /scratch/batch_style.json`. Stop if two or more same-register siblings exhibit a common style drift.
-- When `status` asks (the queue's `push_every` images), or at session end, run `delivery_guard.py audit --repo .`; then `delivery_guard.py ship --execute --repo .` only when safe. Otherwise `bundle` and state delivery is pending.
-- **Anchors phase: generate exactly 5, deliver, STOP.** Wait for independent Claude Code review and republished queue.
-- Resume from `status`; never regenerate an approved/delivered item unless it is an explicit `redo`.
-- An @GitHub connection does not automatically launch Claude Code, supply Git LFS, or approve artwork.
+- **DELIVER** (after every save): `delivery_guard.py audit --repo .`, then `delivery_guard.py ship --execute --repo .`.
+- **DRIFT REVIEW** (every tenth save):
+  1. Run `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10 --out <scratch>/style.json`.
+  2. Look at the sheet once. Stop if two or more images of the same register share a drift.
+  3. Deliver.
+- If `ship` says BLOCKED: run `bundle`, report it, and stop. Never pull, rebase or force.
+- Resume from `status`. Never regenerate a delivered item unless it is listed as a `redo`.
 
-## Copy-and-use Work prompt
+## Session prompt
 
-> Use the Heraldry Skirmish Classic Ink Art v6 skill on xjordont/Heraldry, main. Perform the Work environment and image-reference smoke tests, run the queue doctor and status, then generate the queued illustrations in order using the exact repository prompts and item-specific references. For each native image, run mechanical checks, inspect the image and print-size proof, and complete the ten-criterion, byte-bound style-fidelity QA report with explicit print-size review. Audit cross-image drift and verify current image/reference hashes before delivery. Retry only within each item's budget; do not self-approve. Review batch-level artistic drift and deliver every 5 images through the guarded Git LFS process, or provide a clearly labelled fallback bundle. Stop after the five anchors, or at any hard blocker; report completed IDs, failures, receipt hashes, commit or bundle, and the next action. Never edit the queue, prompts, manuscript or code during generation.
+Codex uses `production/art/codex/CODEX_PROMPT.md`. For ChatGPT Work:
+
+> Use the Heraldry Skirmish Classic Ink Art v7 skill on xjordont/Heraldry, main. Run the preflight, doctor and status, then generate the queued illustrations in order using the exact repository prompts and each item's listed references. For each native image run check, inspect the image and its print-size preview, complete the ten-criterion QA record, and save. Deliver each image through the guarded process (or a labelled bundle), with a drift review every ten images. Retry only within each item's budget, never self-approve, and stop at NOTHING LEFT or any hard blocker. Report completed IDs, failures, commits or bundles, and the next ID. Never edit the queue, prompts, manuscript or code.

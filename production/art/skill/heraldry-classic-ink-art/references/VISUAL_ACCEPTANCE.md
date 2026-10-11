@@ -1,4 +1,4 @@
-# V6 visual acceptance and artistic consistency protocol
+# Visual acceptance and artistic consistency protocol
 
 This is a visual inspection rubric, not a numerical model of artistic merit. Do not claim the automatic diagnostics prove style match or aesthetic quality. The image generation operator submits an evidence-backed native-image review; the independent reviewer approves final artwork.
 

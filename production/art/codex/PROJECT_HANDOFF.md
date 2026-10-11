@@ -52,12 +52,12 @@ This document summarises the project, its decisions and the illustration workflo
 
 **Fallbacks:** `production/art/gpt/WORK_PROMPT.md` now routes ordinary sessions to the local Codex prompt and retains the explicitly selected offline Work procedure. Use its offline input package only when authenticated inputs are unavailable. If guarded delivery is blocked, preserve unsent work and create a review bundle for independent verification and import through `production/art/work/inbox/`. Never pull or rebase over unsent images or receipts.
 
-## 4. The v6 skill (Codex follows it)
+## 4. The skill (v7; Codex follows it)
 
-`production/art/skill/heraldry-classic-ink-art/`, installable as `production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip` (built by `tools/art_skill_build.py`):
+`production/art/skill/heraldry-classic-ink-art/`, installable as `production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip` (built by `tools/art_skill_build.py`):
 
 - `SKILL.md`: hard rules (verbatim prompt, only the listed references, queued IDs only, no edits to images, change nothing but incoming images and receipts), the per-item loop, ten hard fails, budgets and stop conditions.
-- `references/`: `STYLE.md` (registers and the hand-inked direction), `QA_CHECKLIST.md`, `REPAIR.md` (at most two correction sentences per retry), `STYLE_CONSISTENCY_V6.md`, `VISUAL_ACCEPTANCE_V6.md`, `WORK_OPERATIONS_V6.md`, `FAMILIES.md`.
+- `references/`: `STYLE.md` (registers and the gritty old-school direction), `QA_CHECKLIST.md`, `REPAIR.md` (at most two correction sentences per retry), `STYLE_CONSISTENCY.md`, `VISUAL_ACCEPTANCE.md`, `WORK_OPERATIONS.md`, `FAMILIES.md`.
 - `scripts/`:
   - `heraldry_art.py`: doctor, status, next, show, check, save, refuse, sheet, bundle.
   - `fidelity_gate.py`: a byte-bound QA record.
@@ -78,7 +78,7 @@ This document summarises the project, its decisions and the illustration workflo
 
 - Whether Codex's in-plan image generation accepts reference images and exposes Sunburst. Its first session checks before generating.
 - Redo the five anchors under the hand-inked direction; then Claude Code reviews them, approves them and publishes the batch queue (about 270 illustrations).
-- Batch size per Codex session: currently delivery every 5 images (v6 rule). The owner may raise it.
+- Cadence: every image is delivered as soon as it is saved, with a drift review every 10 (owner 2026-10-11).
 - The next requested build places the approved art and needs a visual delta review.
 
 ## Update: batch ready (2026-10-11, later)
@@ -94,3 +94,12 @@ The owner moved the art benchmark "closer to the more old school black and white
 - **Prompts:** they ask for bold rough brush contours, heavy solid blacks, scratchy hatching and dry-brush, and high contrast, still in pure black ink.
 - **Queue:** the 270-item batch queue was republished with the new prompts and per-register reference sets. See `docs/ART_DIRECTION.md`.
 - **Next step:** the first Codex session after this change should stop after 5 images for a review (`CODEX_PROMPT.md`).
+
+## Update: skill v7 (2026-10-11, latest)
+
+Reference mapping v7 is in place:
+- 17 sets: five monster kinds, plus one set per family;
+- owner samples plus four public-domain prints;
+- ten lead items, one per set, so the first drift review covers everything.
+
+All 270 prompts were audited and corrected. The skill is v7 (`Heraldry_Classic_Ink_Art_Skill_v7_0.zip`). Codex runs the full queue from `CODEX_PROMPT.md`; for a first check of the new mapping, add "Stop after 10 delivered images."

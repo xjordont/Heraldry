@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Runner helpers for the Heraldry illustration queue (skill v6). Python 3.9+, Pillow only.
+"""Runner helpers for the Heraldry illustration queue (skill v7). Python 3.9+, Pillow only.
 
   doctor                         environment, repo, queue and reference checks (run first)
   status [--end]                 queue state and the single next action (--end: session end, push anything unsent)
@@ -713,7 +713,7 @@ def cmd_show(a, repo):
         why = jload(repo / SELECTIONS_REL, {}).get(it["id"], {}).get("rejected_reason")
         print("REDO: the reviewer sent this image back. Reason: " + (why or "none recorded") + "\n      A fresh attempt budget applies; "
               "base your correction sentence on the reason.")
-    print("ATTACH THESE REFERENCES (and no others):")
+    print("ATTACH THESE REFERENCES (and no others)" + (f", reference set {it['ref_set']}:" if it.get("ref_set") else ":"))
     for r in it["references"]:
         print("  ", r)
     if it["size_class"]:
@@ -815,13 +815,13 @@ def append_receipt(repo, rec):
 
 
 def cmd_save(a, repo):
-    # v6: a standalone visual QA report binds the prompt, native image and attached references.
+    # A standalone visual QA report binds the prompt, native image and attached references.
     # The report lives OUTSIDE the checkout; only its summary is appended to the receipt.
     from fidelity_gate import verify_record, CRITERIA
     if not a.qa_file and qa_path(repo, a.id).is_file():
         a.qa_file = str(qa_path(repo, a.id))              # the draft written by `qa ID IMAGE`
     if not a.qa_file:
-        raise Fatal("v6 requires a QA record: run `qa ID IMAGE`, inspect the original + print-size preview, complete the checks, "
+        raise Fatal("A QA record is required: run `qa ID IMAGE`, inspect the original + print-size preview, complete the checks, "
                     "then save again (or pass --qa-file PATH)")
     qa_path_ = Path(a.qa_file).resolve()
     if not qa_path_.is_file() or repo.resolve() in qa_path_.parents:
@@ -1104,7 +1104,7 @@ def main(argv=None):
                    help="total generations made for this item, the saved one included. The helper counts the images you checked; "
                         "this can only raise that count, for images you generated but did not check")
     p.add_argument("--model", default="")
-    p.add_argument("--qa-file", help="v6 mandatory visual QA JSON outside the clone")
+    p.add_argument("--qa-file", help="mandatory visual QA JSON outside the clone")
     p.add_argument("--notes", default="")
     p.add_argument("--must", action="append", default=[],
                    help="what you counted or found, exactly one per MUST BE SHOWN line, in order (repeat the flag)")

@@ -171,7 +171,8 @@
   "style_figure": "Ink it like gritty old-school rulebook monster and character art: a bold, rough brush contour of uneven weight, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag where form turns from light into shadow. High contrast, with few in-between textures; small human imperfections such as broken lines and dry-brush streaks are welcome. It reads as a strong silhouette first and detail second: no stippled skin, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn, scarred and weathered. It must look drawn by hand with brush, pen and ink, not generated or rendered.",
   "final_scene": "Avoid photorealism, digital-render polish, clean vector-like line, uniform machine texture, stipple fields, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should be gritty and high-contrast and print crisply in pure black ink, with an organically fading white vignette, like original ink art in an old-school fantasy rulebook.",
   "final_figure": "Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be gritty, bold and readable at small size and print crisply in pure black ink, like original ink art in an old-school fantasy rulebook.",
-  "reference": "The attached reference images are gritty, old-school ink art by human illustrators. Match their bold brush contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish, but do not copy their subjects or compositions, and draw in pure black ink only."
+  "reference": "The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.",
+  "style_still": "Ink it like old-school rulebook equipment art: a bold, rough contour of uneven weight around each object, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag that follows each material: grain on wood, dents and pits on metal, folds and wear on leather and cloth. High contrast, with few in-between textures. Each object reads as a clear silhouette first and detail second: no stipple fields, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable construction, worn and used. It must look drawn by hand with brush, pen and ink, not generated or rendered."
  },
  "gpt_anchor_ids": [
   "ART-BAS-GREYTHORN",
@@ -181,7 +182,7 @@
   "ART-ANC-DWARF"
  ],
  "gpt_reference_sets": {
-  "note": "Each ChatGPT queue item carries at most max_refs reference images chosen for its register, so scenery never bleeds into isolated figures and no single subject dominates. A candidate is either a repo path (always used) or an anchor ID (used once that anchor is approved). The item's own ID is skipped. The first max_refs usable candidates win, in order. Owner direction 2026-10-11: only the owner's hand-inked samples are attached. Generated images, approved or not, are never style references, so model output cannot compound its own drift. Owner direction 2026-10-11 (later): the gritty old-school set (STYLE-REF-04..10, plus 03) replaces the clean engraved STYLE-REF-01/02; the ink-wash examples are never attached because grey tone cannot print. family_sets overrides the register set for the named families. Owner 2026-10-11: STYLE-REF-01 cut and replaced by the best attached city scene (STYLE-REF-11), used for bastion and world scenes only, so town features (palisade, gate towers, bridge, standing stones) do not bleed into other scenes. Owner exception to the no-generated-references rule: STYLE-REF-11 looks machine-made but was supplied and chosen by the owner's instruction. Owner 2026-10-11: promote STYLE-REF-08 (woodcut fencers) and STYLE-REF-02 (city panorama). 02 joins 11 and 09 for bastion and world scenes; 08 replaces 03 for persons (full-length human figures with woodcut silhouettes). 03 stays for creatures and still lifes.",
+  "note": "Each queue item carries at most max_refs reference images. Precedence: kind_sets (monsters, by ID) over family_sets (by family) over sets (by register). A candidate is a repo path (must exist) or an anchor ID (used once approved); the item's own ID is skipped. Only owner samples and public-domain prints are attached, never generated images. Mapping v7 (owner instruction 2026-10-11: reanalyse all references and map them optimally): every set draws on the gritty core (bold rough contours, heavy blacks, scratchy hatching); clean-line pieces appear only where their subject is unmatched (36 insect anatomy, 20 armoury, 15 weapons, 02 city); pieces with grey tone, screen tone, stipple fields, lettering or tiny size are banked but not attached.",
   "max_refs": 3,
   "register_of_family": {
    "cover": "scene",
@@ -206,31 +207,244 @@
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
    "creature": [
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
    "person": [
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg"
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
    "still": [
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ]
   },
   "family_sets": {
+   "cover": [
+    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
+   ],
+   "chapter": [
+    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "world": [
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+   ],
+   "climate": [
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+   ],
    "bastion": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "world": [
-    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+   "scenario": [
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ],
+   "campaign": [
+    "assets/art/style/STYLE-REF-20-armoury-interior.jpg",
+    "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
+   ],
+   "boss": [
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+   ],
+   "tradition": [
+    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
+    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
+   ],
+   "background": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
+   ],
+   "item": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ]
+  },
+  "kind_sets": {
+   "undead": {
+    "refs": [
+     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
+     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    ],
+    "ids": [
+     "ART-MON-ASHEN-REVENANT",
+     "ART-MON-BANSHEE",
+     "ART-MON-BLACKWATER-WIGHT",
+     "ART-MON-CORPSEHOUND",
+     "ART-MON-EMBER-SKULL",
+     "ART-MON-FALLEN-PALADIN",
+     "ART-MON-FORSAKEN-ARCHER",
+     "ART-MON-FORSAKEN-DUELIST",
+     "ART-MON-FORSAKEN-KNIGHT",
+     "ART-MON-FROST-GHOUL",
+     "ART-MON-FROZEN-SKELETON",
+     "ART-MON-GHOUL",
+     "ART-MON-GIANT-SKELETON",
+     "ART-MON-ICE-WRAITH",
+     "ART-MON-LICH",
+     "ART-MON-MUMMY",
+     "ART-MON-POSSESSED-CORPSE",
+     "ART-MON-SKELETAL-BEAST",
+     "ART-MON-SKELETON-ARCHER",
+     "ART-MON-SKELETON-WARRIOR",
+     "ART-MON-SPECTRE",
+     "ART-MON-UNDEAD-CHAMPION",
+     "ART-MON-UNDEAD-CROSSBOWMAN",
+     "ART-MON-UNDEAD-SENTINEL",
+     "ART-MON-UNDEAD-WARRIOR",
+     "ART-MON-WHITE-COURT-ARCHER",
+     "ART-MON-WHITE-COURT-EXECUTIONER",
+     "ART-MON-WHITE-COURT-GUARD",
+     "ART-MON-WHITE-COURT-SENTINEL",
+     "ART-MON-ZOMBIE"
+    ]
+   },
+   "beast": {
+    "refs": [
+     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
+     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    ],
+    "ids": [
+     "ART-MON-BASILISK",
+     "ART-MON-BLACKFIRE-HOUND",
+     "ART-MON-BLOOD-APE",
+     "ART-MON-CROCODILE",
+     "ART-MON-DIRE-BEAR",
+     "ART-MON-DIRE-WOLF",
+     "ART-MON-GIANT-BAT",
+     "ART-MON-GIANT-CONSTRICTOR",
+     "ART-MON-GOREBEAK-BEAR",
+     "ART-MON-MIASMA-SERPENT",
+     "ART-MON-STIRGE",
+     "ART-MON-TUNDRA-WOLF"
+    ]
+   },
+   "vermin": {
+    "refs": [
+     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
+     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    ],
+    "ids": [
+     "ART-MON-BURROWMAW",
+     "ART-MON-CRYPTSTRANGLER",
+     "ART-MON-ELDER-VRYMK",
+     "ART-MON-EVIL-EYE",
+     "ART-MON-FIRE-BEETLE",
+     "ART-MON-GIANT-BLACK-WIDOW",
+     "ART-MON-GIANT-CENTIPEDE",
+     "ART-MON-GIANT-SCORPION",
+     "ART-MON-GIANT-TARANTULA",
+     "ART-MON-GLOOM-HULK",
+     "ART-MON-GLOOMSPORE-JELLY",
+     "ART-MON-NOXCLOTH",
+     "ART-MON-SHAMBLING-MOUND",
+     "ART-MON-THOUGHT-EATER",
+     "ART-MON-VAULT-OOZE",
+     "ART-MON-VAULTFANG",
+     "ART-MON-VRYMK"
+    ]
+   },
+   "humanoid": {
+    "refs": [
+     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
+     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
+    ],
+    "ids": [
+     "ART-MON-BANDIT",
+     "ART-MON-BANDIT-CAPTAIN",
+     "ART-MON-BEASTMAN",
+     "ART-MON-BOGLING",
+     "ART-MON-BUGBEAR",
+     "ART-MON-CAVE-GOBLIN",
+     "ART-MON-DEEP-ELF-PRIEST",
+     "ART-MON-DEEP-ELF-WARRIOR",
+     "ART-MON-DESERT-NAGA",
+     "ART-MON-FOREST-TROLL",
+     "ART-MON-FROST-GIANT",
+     "ART-MON-GNOLL",
+     "ART-MON-GOBLIN",
+     "ART-MON-GOBLIN-SHAMAN",
+     "ART-MON-HARPY",
+     "ART-MON-KOBOLD",
+     "ART-MON-LIZARDFOLK-HUNTER",
+     "ART-MON-LIZARDFOLK-SHAMAN",
+     "ART-MON-LIZARDFOLK-WARRIOR",
+     "ART-MON-MEDUSA",
+     "ART-MON-MINOTAUR",
+     "ART-MON-NIGHT-HAG",
+     "ART-MON-OGRE",
+     "ART-MON-ORC",
+     "ART-MON-RATKIN-SCAVENGER",
+     "ART-MON-RATKIN-SEER",
+     "ART-MON-RATKIN-WARRIOR",
+     "ART-MON-SATYR-REVELER",
+     "ART-MON-SNOW-GOBLIN",
+     "ART-MON-SWAMP-GOBLIN",
+     "ART-MON-SWAMP-HAG",
+     "ART-MON-SWAMP-NAGA",
+     "ART-MON-SWAMP-TROLL",
+     "ART-MON-TOMB-NECROMANCER",
+     "ART-MON-TROGLODYTE",
+     "ART-MON-TROGLODYTE-SHAMAN",
+     "ART-MON-WEREBEAR",
+     "ART-MON-WERERAT",
+     "ART-MON-WEREWOLF"
+    ]
+   },
+   "magical": {
+    "refs": [
+     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
+     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    ],
+    "ids": [
+     "ART-MON-BLACK-DRAGON",
+     "ART-MON-BLUE-DRAGON",
+     "ART-MON-BRASS-GOLEM",
+     "ART-MON-BRIARLING",
+     "ART-MON-DEMON",
+     "ART-MON-DRYAD-GROVEWARDEN",
+     "ART-MON-FIRE-ELEMENTAL",
+     "ART-MON-FROST-WYVERN",
+     "ART-MON-GARGOYLE",
+     "ART-MON-GELID-FIEND",
+     "ART-MON-GREEN-DRAGON",
+     "ART-MON-HYDRA",
+     "ART-MON-ICE-ELEMENTAL",
+     "ART-MON-IMP",
+     "ART-MON-IRON-GOLEM",
+     "ART-MON-MANTICORE",
+     "ART-MON-MIRE-TITAN",
+     "ART-MON-STONE-SENTINEL",
+     "ART-MON-TOMB-GUARDIAN",
+     "ART-MON-WHITE-DRAGON",
+     "ART-MON-WILL-O-WISP",
+     "ART-MON-WIND-ELEMENTAL"
+    ]
+   }
   }
  },
  "gpt_anchor_note": "Owner art direction 2026-10-11 calibrated on Greythorn plus four hand-inked anchors. ART-MON-GIANT-TARANTULA (rejected twice for its leg count) moved from the anchor gate into the batch as an ordinary redo, so one go-ahead runs the whole queue.",
@@ -248,5 +462,18 @@
  },
  "gpt_image_size": {
   "rule": "The queue size is the minimum and fixes the aspect. Request the largest size the tool offers at that aspect (owner 2026-10-11: avoid low-resolution art). Larger native images at the same aspect pass without an exception."
- }
+ },
+ "gpt_lead_ids": [
+  "ART-BAS-DEEPWARDEN",
+  "ART-CLI-THE-ASHLANDS",
+  "ART-MON-SKELETON-WARRIOR",
+  "ART-MON-DIRE-WOLF",
+  "ART-MON-ORC",
+  "ART-MON-GARGOYLE",
+  "ART-CLA-RANGER",
+  "ART-BAC-SMUGGLER",
+  "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
+  "ART-CAM-THE-ARMOURY"
+ ],
+ "gpt_lead_note": "Queue order v7: these ten go first (after any redo), one per reference set, so the first drift review after 10 images tests every set before the bulk of the run."
 }

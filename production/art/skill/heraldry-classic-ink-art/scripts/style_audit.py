@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""V6 advisory batch drift report. No automated aesthetic approval.
+"""Advisory batch drift report. No automated aesthetic approval.
 
 Read queued saved images, compare only within the same visual register, detect
 exact duplicates and obvious cross-image/edge anomalies. Writes JSON only to a

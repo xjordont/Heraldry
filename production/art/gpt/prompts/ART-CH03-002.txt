@@ -1,4 +1,4 @@
-CHAPTER 3 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
+CHAPTER 3 OPENER - GRITTY OLD-SCHOOL INK ILLUSTRATION
 
 Create a gritty, old-school black-and-white ink illustration of the turn structure of Heraldry Skirmish, the start of a new round of activations, imagined as the dawn of a new round in the field, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 
@@ -9,7 +9,6 @@ Leave approximately 5-8% clean white margin around the perimeter, with an additi
 
 COMPOSITION
 Dawn of a new round: a weary party gathering behind a ruined wall as a lone chapel bell tower stands over a drowned field.
-Wide shot, low horizon, bell tower silhouette at right.
 Wide shot with a low horizon; a weary party gathers behind a ruined wall at left and middle ground, while a lone chapel bell tower stands as a silhouette at right over a drowned field.
 
 SUBJECT DETAILS
@@ -17,7 +16,7 @@ SUBJECT DETAILS
 * Drowned field with standing water reflecting thin sky, fence posts and a half-sunken plough
 * Ruined wall with a broken top and fallen coping stones
 * Faint horizon glow suggested by blank paper above and sparse ruled strokes
-* Reeds and dead stalks stippled across the water
+* Reeds and dead stalks scratched across the water
 * Party gear: bedrolls, shields stacked on the wall, a shared flask
 * A single crow on the wall top
 
@@ -38,4 +37,4 @@ Do not draw:
 Avoid photorealism, digital-render polish, clean vector-like line, uniform machine texture, stipple fields, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should be gritty and high-contrast and print crisply in pure black ink, with an organically fading white vignette, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
-The attached reference images are gritty, old-school ink art by human illustrators. Match their bold brush contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish, but do not copy their subjects or compositions, and draw in pure black ink only.
+The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.
