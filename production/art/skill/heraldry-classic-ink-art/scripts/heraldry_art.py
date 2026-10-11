@@ -376,9 +376,9 @@ def helper():
     target = (_REPO / HELPER_IN_REPO) if _REPO and (_REPO / HELPER_IN_REPO).is_file() else Path(__file__)
     try:
         rel = os.path.relpath(target)
-    except ValueError:
+    except ValueError:                       # another drive on Windows
         rel = str(target)
-    return f"python {rel}"
+    return f"python {Path(rel).as_posix()}"      # forward slashes work in every shell, Windows included
 
 
 def copy_notice(repo):
@@ -769,7 +769,7 @@ def append_receipt(repo, rec):
     f = repo / RECEIPTS_REL
     f.parent.mkdir(parents=True, exist_ok=True)
     prefix = "\n" if f.exists() and f.stat().st_size and not f.read_bytes().endswith(b"\n") else ""
-    with f.open("a", encoding="utf-8") as fh:
+    with f.open("a", encoding="utf-8", newline="\n") as fh:     # LF on every platform (the file is LF-pinned)
         fh.write(prefix + json.dumps(rec, ensure_ascii=False) + "\n")
 
 
@@ -873,7 +873,7 @@ def cmd_save(a, repo):
     qa_copy = scratch_dir(repo) / "qa" / f"{it['id']}.qa.json"
     qa_copy.parent.mkdir(parents=True, exist_ok=True)
     qa_copy.write_bytes(qa_path.read_bytes())
-    print(f"saved {dest.relative_to(repo)} ({len(data)} bytes, unmodified) after {attempts} attempt(s); receipt written")
+    print(f"saved {dest.relative_to(repo).as_posix()} ({len(data)} bytes, unmodified) after {attempts} attempt(s); receipt written")
     if fails:
         print("saved with FAIL tripwires recorded in the receipt: the reviewer will see them")
     print(f"next: run `{helper()} status` for the next action")

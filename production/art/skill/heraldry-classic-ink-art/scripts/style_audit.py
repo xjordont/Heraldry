@@ -33,7 +33,7 @@ def record(repo, item):
         im.verify()
     d=diagnostics(src, [])['candidate']
     return {'id':iid,'register':item.get('register','unspecified'),
-            'size':item.get('size'),'source':str(src.relative_to(repo)),
+            'size':item.get('size'),'source':src.relative_to(repo).as_posix(),
             'sha256':hashlib.sha256(src.read_bytes()).hexdigest(),
             'signature':d,'advisories':[]}
 

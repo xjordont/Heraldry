@@ -125,7 +125,10 @@ def verify_record(record, image, item, require_pass=True):
     for i,r in enumerate(refs):
         p=Path(r.get('path',''))
         expected=item.get('references',[])[i] if i<len(item.get('references',[])) else ''
-        if not (p.as_posix()==expected or p.as_posix().endswith('/'+expected)):
+        # queue paths are POSIX; tolerate Windows separators on either side, on any platform
+        expected=expected.replace('\\','/')
+        got=str(r.get('path','')).replace('\\','/')
+        if not (got==expected or got.endswith('/'+expected)):
             errors.append(f'wrong reference at position {i+1}: expected {expected}, got {p}')
         if not p.is_file() or digest(p)!=r.get('sha256'):
             errors.append(f"reference missing/changed: {r.get('path')}")
