@@ -5,76 +5,31 @@
  "created_from": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "3887ed6805fb948c574e7ac58779833ac28a455a",
-  "commit_date": "2026-10-11T14:04:51+00:00",
+  "commit": "34a0e636cdca8b59f27f44d2b1c4abd455673f7f",
+  "commit_date": "2026-10-11T14:09:25+00:00",
   "dirty": false
  },
  "source": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "3887ed6805fb948c574e7ac58779833ac28a455a",
-  "commit_date": "2026-10-11T14:04:51+00:00"
+  "commit": "34a0e636cdca8b59f27f44d2b1c4abd455673f7f",
+  "commit_date": "2026-10-11T14:09:25+00:00"
  },
  "queue": {
   "path": "production/art/gpt/QUEUE.json",
-  "sha256": "9b8979f8d0fbad9db133378180f6787e4d1f948f042d879d0f60e7dc31e0b9da",
+  "sha256": "4094817f6ce40bc129518ad946b3d79a7d4ca0bfacaeb0f8e4b020e69de8e5aa",
   "phase": "anchors",
-  "count": 5,
+  "count": 1,
   "ids": [
-   "ART-CLI-THE-GREENMARK",
-   "ART-MON-GIANT-TARANTULA",
-   "ART-MON-UNDEAD-CHAMPION",
-   "ART-CLA-FIGHTER",
-   "ART-ANC-DWARF"
+   "ART-MON-GIANT-TARANTULA"
   ],
-  "generated_at": "2026-10-11T03:42:27+00:00"
+  "generated_at": "2026-10-11T14:07:36+00:00"
  },
  "prompts": [
   {
-   "id": "ART-CLI-THE-GREENMARK",
-   "path": "production/art/gpt/prompts/ART-CLI-THE-GREENMARK.txt",
-   "prompt_sha256": "f59306517f59dc714262b562c2b2efbf75fdc7e6551460dbf5465171c21f70b6",
-   "verified_against_queue": true,
-   "max_attempts": 3,
-   "references": [
-    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
-   ]
-  },
-  {
    "id": "ART-MON-GIANT-TARANTULA",
    "path": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
-   "prompt_sha256": "a94bb9a9613bc8a46288920b1dc9db0ecf82f0a65e48f2bb1ce398a2a9fbb13b",
-   "verified_against_queue": true,
-   "max_attempts": 3,
-   "references": [
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
-   ]
-  },
-  {
-   "id": "ART-MON-UNDEAD-CHAMPION",
-   "path": "production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt",
-   "prompt_sha256": "bdd422ee9e5a253b20712775b6a7c5cca98f0bc8fb87c1f41a8fdd1c45f479a5",
-   "verified_against_queue": true,
-   "max_attempts": 3,
-   "references": [
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
-   ]
-  },
-  {
-   "id": "ART-CLA-FIGHTER",
-   "path": "production/art/gpt/prompts/ART-CLA-FIGHTER.txt",
-   "prompt_sha256": "9e9cd8a65535fdbe4fe3890c34062301e3f9118d939a6c4b9be13c14fe539458",
-   "verified_against_queue": true,
-   "max_attempts": 3,
-   "references": [
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
-   ]
-  },
-  {
-   "id": "ART-ANC-DWARF",
-   "path": "production/art/gpt/prompts/ART-ANC-DWARF.txt",
-   "prompt_sha256": "9bfcad1d4be9c29d4fa270c67447755130abe1d21368c72d26c5be9724656789",
+   "prompt_sha256": "d4517512fb4353e68d24ee8f059c65d104f4888235e4d12ae8e0ac2c14f2e8e7",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -84,30 +39,6 @@
  ],
  "references": [
   {
-   "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-   "sha256": "3c0bea9e732212ef9b338e652292bc443b8195a3d3f082460763f4513435e50d",
-   "format": "JPEG",
-   "px": [
-    2576,
-    1438
-   ],
-   "used_by": [
-    "ART-CLI-THE-GREENMARK"
-   ]
-  },
-  {
-   "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-   "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
-   "format": "JPEG",
-   "px": [
-    2400,
-    1792
-   ],
-   "used_by": [
-    "ART-CLI-THE-GREENMARK"
-   ]
-  },
-  {
    "path": "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
    "sha256": "d3834f414c62e8623c1c5f35afd6ed4da9edbaaf86e64ac4883763e92b7d61bf",
    "format": "JPEG",
@@ -116,31 +47,16 @@
     1438
    ],
    "used_by": [
-    "ART-MON-GIANT-TARANTULA",
-    "ART-MON-UNDEAD-CHAMPION",
-    "ART-CLA-FIGHTER",
-    "ART-ANC-DWARF"
+    "ART-MON-GIANT-TARANTULA"
    ]
   }
  ],
  "files": [
   {
    "path": "START_HERE.md",
-   "sha256": "ba3159fac5ee6210a6f3fc4c3fc55c30101a74b83e4a6e4069c716577dbb926a",
-   "bytes": 5358,
+   "sha256": "e95081a46846ad94ba8158553f7d9756c01a03bd66e4a905d199ce4cb82778c5",
+   "bytes": 4768,
    "role": "instructions"
-  },
-  {
-   "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
-   "sha256": "3c0bea9e732212ef9b338e652292bc443b8195a3d3f082460763f4513435e50d",
-   "bytes": 2735665,
-   "role": "reference"
-  },
-  {
-   "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-   "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
-   "bytes": 1661394,
-   "role": "reference"
   },
   {
    "path": "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
@@ -156,8 +72,8 @@
   },
   {
    "path": "production/art/SELECTIONS.json",
-   "sha256": "32b7c85f4e56305c8abbef1d6918e7ad3a9834ebdba0864fc77f71128e5136ae",
-   "bytes": 8867,
+   "sha256": "8ca147ac1f3de58d583a5b07accd3850d825bfcfa08c67be357e49e2dab544f2",
+   "bytes": 9265,
    "role": "selections"
   },
   {
@@ -168,51 +84,27 @@
   },
   {
    "path": "production/art/gpt/QUEUE.json",
-   "sha256": "9b8979f8d0fbad9db133378180f6787e4d1f948f042d879d0f60e7dc31e0b9da",
-   "bytes": 4161,
+   "sha256": "4094817f6ce40bc129518ad946b3d79a7d4ca0bfacaeb0f8e4b020e69de8e5aa",
+   "bytes": 847,
    "role": "queue"
   },
   {
    "path": "production/art/gpt/QUEUE.md",
-   "sha256": "7ab6265685c22abf3ee41b5852123dd00d92659910786ade92fd1b3c69d47aef",
-   "bytes": 1048,
+   "sha256": "f76f9b85b23212085870ce5f402a80dc4bb099c80d51642fefcb59779442d588",
+   "bytes": 472,
    "role": "queue"
   },
   {
    "path": "production/art/gpt/RECEIPTS.jsonl",
-   "sha256": "7bb6874adf3af5daa43d13d5abda8e4a7046e470952d2c8529414d2e4a04dbbc",
-   "bytes": 14809,
+   "sha256": "ca80c19ad1c080cd990aba4d37952eefd03fe4b4f023f01465cbb22a3dd3b233",
+   "bytes": 29508,
    "role": "receipts",
    "mutable": "append_only"
   },
   {
-   "path": "production/art/gpt/prompts/ART-ANC-DWARF.txt",
-   "sha256": "15815a34582d4c1997fbcfed2bfaab2a3837f47c1778f1fbb6a76ce78f654731",
-   "bytes": 3816,
-   "role": "prompt"
-  },
-  {
-   "path": "production/art/gpt/prompts/ART-CLA-FIGHTER.txt",
-   "sha256": "c2bd6133873a14fa67803120cb805e5be17c43492504ad9ff7448039ee395016",
-   "bytes": 3559,
-   "role": "prompt"
-  },
-  {
-   "path": "production/art/gpt/prompts/ART-CLI-THE-GREENMARK.txt",
-   "sha256": "bfe8aab5f80991263bf2bf2a1810858fec7db2f0ebde1978c98030e12b19ce75",
-   "bytes": 4279,
-   "role": "prompt"
-  },
-  {
    "path": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
-   "sha256": "67428b01d4e8f76597ed6bc3e3b767101e5992c4155082a0c4575fb976471267",
-   "bytes": 3812,
-   "role": "prompt"
-  },
-  {
-   "path": "production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt",
-   "sha256": "13d62371719142b32e4ad8f89d53164029bbbd367a96d30bf21927c4c4159bd8",
-   "bytes": 3711,
+   "sha256": "b10940be2ed6666c9e4854ff0cc1cf0a423546dafee755d1c7629c2dcc5666c0",
+   "bytes": 3921,
    "role": "prompt"
   },
   {
