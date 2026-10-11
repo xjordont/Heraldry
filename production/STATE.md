@@ -219,3 +219,7 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
 - **Reference bank** (owner, 2026-10-11, sixteen examples: "Bank these example art pieces I'm going to send more"). They are stored as STYLE-REF-12 to STYLE-REF-27 in `assets/art/style/` and recorded under `banked` in `STYLE_REFS.json`, each with a category and any caveat (grey tone, screen tone, monogram or pseudo-writing).
   - **Coverage:** still lifes and equipment, non-undead beasts, cavern and swamp landscapes, interiors, and magic.
   - **Not attached yet:** no reference set, prompt or queue changed. The sets will be revised once the owner has sent the rest.
+- **Reference bank, second batch** (owner, 2026-10-11, fourteen more examples). Thirteen are banked as STYLE-REF-28 to STYLE-REF-40. The fourteenth was STYLE-REF-26 again (byte-identical) and was not stored twice.
+  - **Coverage:** magic in action, insect and beastfolk creatures, an adventuring-gear sheet, more items, a forest landscape and dungeon scenes.
+  - **Caveats recorded:** stipple fields in 30 and 31, small images (32, 33, 35, 39, 40), a narrow image (37) and grey paper borders (33, 34).
+  - **Not attached yet:** no reference set, prompt or queue changed.
