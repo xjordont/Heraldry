@@ -5,19 +5,19 @@
  "created_from": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "48982dcabcb2eb9d51e12333132fa2590a86b7d9",
-  "commit_date": "2026-10-11T21:02:12+00:00",
+  "commit": "25349682f2e173a8b4f4c87b220762918d1ee083",
+  "commit_date": "2026-10-11T21:27:23+00:00",
   "dirty": false
  },
  "source": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "48982dcabcb2eb9d51e12333132fa2590a86b7d9",
-  "commit_date": "2026-10-11T21:02:12+00:00"
+  "commit": "25349682f2e173a8b4f4c87b220762918d1ee083",
+  "commit_date": "2026-10-11T21:27:23+00:00"
  },
  "queue": {
   "path": "production/art/gpt/QUEUE.json",
-  "sha256": "b3a5a0c9f1fe07c3b6da5564086d6326b273ac2249c3a355560f45a75f518925",
+  "sha256": "1997199d5d64787ef47d043e08dacac2683fc7d7ad1f7e371fcadfe16bd60359",
   "phase": "batch",
   "count": 270,
   "ids": [
@@ -31,6 +31,13 @@
    "ART-BAC-SMUGGLER",
    "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
    "ART-CAM-THE-ARMOURY",
+   "ART-MON-GIANT-SCORPION",
+   "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+   "ART-MON-THE-LAST-COLOSSUS",
+   "ART-WOR-1-2-THE-GRIM-WORLD",
+   "ART-ITE-7-8-MELEE-WEAPONS",
+   "ART-CH01-002",
+   "ART-COVER-002",
    "ART-BAS-HEARTHHOLD",
    "ART-BAS-REEDMARCH",
    "ART-BAS-SABLEKEEP",
@@ -85,7 +92,6 @@
    "ART-MON-GIANT-BLACK-WIDOW",
    "ART-MON-GIANT-CENTIPEDE",
    "ART-MON-GIANT-CONSTRICTOR",
-   "ART-MON-GIANT-SCORPION",
    "ART-MON-GIANT-SKELETON",
    "ART-MON-GIANT-TARANTULA",
    "ART-MON-GLOOM-HULK",
@@ -184,13 +190,11 @@
    "ART-MON-THE-BROODMOTHER-PRIME",
    "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
    "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
-   "ART-MON-THE-LAST-COLOSSUS",
    "ART-MON-THE-SUN-CROWNED-PRINCE",
    "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
    "ART-MON-VISATH-THE-WHITE",
    "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
    "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
-   "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
    "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
    "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
    "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
@@ -226,7 +230,6 @@
    "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
    "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
    "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
-   "ART-WOR-1-2-THE-GRIM-WORLD",
    "ART-WOR-1-3-1-THE-FALL",
    "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
    "ART-WOR-1-3-3-THE-SIX-BASTIONS",
@@ -278,8 +281,6 @@
    "ART-BAC-SOLDIER",
    "ART-BAC-VAGABOND",
    "ART-ITE-7-6-TREASURE-TABLES",
-   "ART-ITE-7-8-MELEE-WEAPONS",
-   "ART-CH01-002",
    "ART-CH02-002",
    "ART-CH03-002",
    "ART-CH04-002",
@@ -289,10 +290,9 @@
    "ART-CH08-002",
    "ART-CH09-002",
    "ART-CH10-002",
-   "ART-CH11-002",
-   "ART-COVER-002"
+   "ART-CH11-002"
   ],
-  "generated_at": "2026-10-11T20:34:39+00:00"
+  "generated_at": "2026-10-11T21:16:51+00:00"
  },
  "prompts": [
   {
@@ -412,6 +412,90 @@
    "references": [
     "assets/art/style/STYLE-REF-20-armoury-interior.jpg",
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GIANT-SCORPION",
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-SCORPION.txt",
+   "prompt_sha256": "481ba14be36c5a2ce78a27741f108ae9a03de1224ec6d9b3ab7adc0776b6f893",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+   ]
+  },
+  {
+   "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST.txt",
+   "prompt_sha256": "2346e424e7f234ac06da33c4e5b1f62b493f24ad5d7e02c08f847c3700962240",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-THE-LAST-COLOSSUS",
+   "path": "production/art/gpt/prompts/ART-MON-THE-LAST-COLOSSUS.txt",
+   "prompt_sha256": "4b1dab7ec5e198c513f2391f9f86730f4dae51dd815cf5a9b2f04ecbb1925b7b",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+   ]
+  },
+  {
+   "id": "ART-WOR-1-2-THE-GRIM-WORLD",
+   "path": "production/art/gpt/prompts/ART-WOR-1-2-THE-GRIM-WORLD.txt",
+   "prompt_sha256": "ef40846ec7ae82894ecb61f80805a413cff311f5ad0df4a166ee41e6bbe15c6e",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+   ]
+  },
+  {
+   "id": "ART-ITE-7-8-MELEE-WEAPONS",
+   "path": "production/art/gpt/prompts/ART-ITE-7-8-MELEE-WEAPONS.txt",
+   "prompt_sha256": "25ea06609f6443f13424fc603a236cde192305562e1e76ada0d2b2831c9c6aae",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
+   ]
+  },
+  {
+   "id": "ART-CH01-002",
+   "path": "production/art/gpt/prompts/ART-CH01-002.txt",
+   "prompt_sha256": "6e4d45c7f2c97ed05531f712cd18192922e5ac633b0d558006e9f4e0c73907be",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+   ]
+  },
+  {
+   "id": "ART-COVER-002",
+   "path": "production/art/gpt/prompts/ART-COVER-002.txt",
+   "prompt_sha256": "76d8b65fe5b5dfa766507ff9315c74e56a43cdad7a08dab40fd91d564735ef99",
+   "verified_against_queue": true,
+   "max_attempts": 5,
+   "references": [
+    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ]
   },
@@ -1061,18 +1145,6 @@
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
-   ]
-  },
-  {
-   "id": "ART-MON-GIANT-SCORPION",
-   "path": "production/art/gpt/prompts/ART-MON-GIANT-SCORPION.txt",
-   "prompt_sha256": "481ba14be36c5a2ce78a27741f108ae9a03de1224ec6d9b3ab7adc0776b6f893",
-   "verified_against_queue": true,
-   "max_attempts": 3,
-   "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ]
   },
   {
@@ -2252,18 +2324,6 @@
    ]
   },
   {
-   "id": "ART-MON-THE-LAST-COLOSSUS",
-   "path": "production/art/gpt/prompts/ART-MON-THE-LAST-COLOSSUS.txt",
-   "prompt_sha256": "4b1dab7ec5e198c513f2391f9f86730f4dae51dd815cf5a9b2f04ecbb1925b7b",
-   "verified_against_queue": true,
-   "max_attempts": 3,
-   "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
-   ]
-  },
-  {
    "id": "ART-MON-THE-SUN-CROWNED-PRINCE",
    "path": "production/art/gpt/prompts/ART-MON-THE-SUN-CROWNED-PRINCE.txt",
    "prompt_sha256": "f2774559ecc074d73f69d4079feee9f038914210abf6142330a0a27c6c0b7bc7",
@@ -2315,18 +2375,6 @@
    "id": "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
    "path": "production/art/gpt/prompts/ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI.txt",
    "prompt_sha256": "8ee200e2d6b39aa1750a9a4b55bedb287a3672b61cce186aa00f73a327f1c942",
-   "verified_against_queue": true,
-   "max_attempts": 3,
-   "references": [
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
-   ]
-  },
-  {
-   "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
-   "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST.txt",
-   "prompt_sha256": "2346e424e7f234ac06da33c4e5b1f62b493f24ad5d7e02c08f847c3700962240",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2753,18 +2801,6 @@
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
-   ]
-  },
-  {
-   "id": "ART-WOR-1-2-THE-GRIM-WORLD",
-   "path": "production/art/gpt/prompts/ART-WOR-1-2-THE-GRIM-WORLD.txt",
-   "prompt_sha256": "ef40846ec7ae82894ecb61f80805a413cff311f5ad0df4a166ee41e6bbe15c6e",
-   "verified_against_queue": true,
-   "max_attempts": 3,
-   "references": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ]
   },
   {
@@ -3380,30 +3416,6 @@
    ]
   },
   {
-   "id": "ART-ITE-7-8-MELEE-WEAPONS",
-   "path": "production/art/gpt/prompts/ART-ITE-7-8-MELEE-WEAPONS.txt",
-   "prompt_sha256": "25ea06609f6443f13424fc603a236cde192305562e1e76ada0d2b2831c9c6aae",
-   "verified_against_queue": true,
-   "max_attempts": 3,
-   "references": [
-    "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
-    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
-    "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
-   ]
-  },
-  {
-   "id": "ART-CH01-002",
-   "path": "production/art/gpt/prompts/ART-CH01-002.txt",
-   "prompt_sha256": "6e4d45c7f2c97ed05531f712cd18192922e5ac633b0d558006e9f4e0c73907be",
-   "verified_against_queue": true,
-   "max_attempts": 5,
-   "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
-   ]
-  },
-  {
    "id": "ART-CH02-002",
    "path": "production/art/gpt/prompts/ART-CH02-002.txt",
    "prompt_sha256": "08e3b6fcdf588fccbb89b998c2a83c4ea7110a8260e16e7714e46f439cd3c830",
@@ -3522,18 +3534,6 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ]
-  },
-  {
-   "id": "ART-COVER-002",
-   "path": "production/art/gpt/prompts/ART-COVER-002.txt",
-   "prompt_sha256": "76d8b65fe5b5dfa766507ff9315c74e56a43cdad7a08dab40fd91d564735ef99",
-   "verified_against_queue": true,
-   "max_attempts": 5,
-   "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
-   ]
   }
  ],
  "references": [
@@ -3547,11 +3547,11 @@
    ],
    "used_by": [
     "ART-BAS-DEEPWARDEN",
+    "ART-COVER-002",
     "ART-BAS-HEARTHHOLD",
     "ART-BAS-REEDMARCH",
     "ART-BAS-SABLEKEEP",
-    "ART-BAS-SALTSPIRE",
-    "ART-COVER-002"
+    "ART-BAS-SALTSPIRE"
    ]
   },
   {
@@ -3580,12 +3580,13 @@
    ],
    "used_by": [
     "ART-BAS-DEEPWARDEN",
+    "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+    "ART-WOR-1-2-THE-GRIM-WORLD",
     "ART-BAS-HEARTHHOLD",
     "ART-BAS-REEDMARCH",
     "ART-BAS-SABLEKEEP",
     "ART-BAS-SALTSPIRE",
     "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
-    "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
     "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
     "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
     "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
@@ -3621,7 +3622,6 @@
     "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
     "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
     "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
-    "ART-WOR-1-2-THE-GRIM-WORLD",
     "ART-WOR-1-3-1-THE-FALL",
     "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
     "ART-WOR-1-3-3-THE-SIX-BASTIONS",
@@ -3641,12 +3641,14 @@
    ],
    "used_by": [
     "ART-CLI-THE-ASHLANDS",
+    "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+    "ART-WOR-1-2-THE-GRIM-WORLD",
+    "ART-CH01-002",
     "ART-CLI-THE-MIRE",
     "ART-CLI-THE-PALE-CITY",
     "ART-CLI-THE-SUN-DROWNED",
     "ART-CLI-THE-UNDERMARCHES",
     "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
-    "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
     "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
     "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
     "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
@@ -3682,7 +3684,6 @@
     "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT",
     "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
     "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD",
-    "ART-WOR-1-2-THE-GRIM-WORLD",
     "ART-WOR-1-3-1-THE-FALL",
     "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
     "ART-WOR-1-3-3-THE-SIX-BASTIONS",
@@ -3690,7 +3691,6 @@
     "ART-WOR-1-3-5-MONSTROUS-THREATS",
     "ART-WOR-1-3-6-ADVENTURERS-AND-THE-ROAD",
     "ART-WOR-1-3-7-LEGENDS-AND-ECHOES",
-    "ART-CH01-002",
     "ART-CH02-002",
     "ART-CH03-002",
     "ART-CH04-002",
@@ -3956,6 +3956,7 @@
    "used_by": [
     "ART-MON-DIRE-WOLF",
     "ART-MON-GARGOYLE",
+    "ART-MON-GIANT-SCORPION",
     "ART-MON-BASILISK",
     "ART-MON-BLACK-DRAGON",
     "ART-MON-BLACKFIRE-HOUND",
@@ -3979,7 +3980,6 @@
     "ART-MON-GIANT-BLACK-WIDOW",
     "ART-MON-GIANT-CENTIPEDE",
     "ART-MON-GIANT-CONSTRICTOR",
-    "ART-MON-GIANT-SCORPION",
     "ART-MON-GIANT-TARANTULA",
     "ART-MON-GLOOM-HULK",
     "ART-MON-GLOOMSPORE-JELLY",
@@ -4018,6 +4018,8 @@
    "used_by": [
     "ART-MON-DIRE-WOLF",
     "ART-MON-GARGOYLE",
+    "ART-MON-GIANT-SCORPION",
+    "ART-MON-THE-LAST-COLOSSUS",
     "ART-MON-BASILISK",
     "ART-MON-BLACK-DRAGON",
     "ART-MON-BLACKFIRE-HOUND",
@@ -4041,7 +4043,6 @@
     "ART-MON-GIANT-BLACK-WIDOW",
     "ART-MON-GIANT-CENTIPEDE",
     "ART-MON-GIANT-CONSTRICTOR",
-    "ART-MON-GIANT-SCORPION",
     "ART-MON-GIANT-TARANTULA",
     "ART-MON-GLOOM-HULK",
     "ART-MON-GLOOMSPORE-JELLY",
@@ -4077,7 +4078,6 @@
     "ART-MON-THE-BROODMOTHER-PRIME",
     "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
     "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
-    "ART-MON-THE-LAST-COLOSSUS",
     "ART-MON-THE-SUN-CROWNED-PRINCE",
     "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
     "ART-MON-VISATH-THE-WHITE",
@@ -4277,6 +4277,7 @@
    ],
    "used_by": [
     "ART-BAC-SMUGGLER",
+    "ART-ITE-7-8-MELEE-WEAPONS",
     "ART-BAC-ALCHEMIST",
     "ART-BAC-APPRENTICE",
     "ART-BAC-ARTISAN",
@@ -4296,8 +4297,7 @@
     "ART-BAC-SHEPHERD",
     "ART-BAC-SOLDIER",
     "ART-BAC-VAGABOND",
-    "ART-ITE-7-6-TREASURE-TABLES",
-    "ART-ITE-7-8-MELEE-WEAPONS"
+    "ART-ITE-7-6-TREASURE-TABLES"
    ]
   },
   {
@@ -4341,6 +4341,7 @@
    ],
    "used_by": [
     "ART-BAC-SMUGGLER",
+    "ART-ITE-7-8-MELEE-WEAPONS",
     "ART-BAC-ALCHEMIST",
     "ART-BAC-APPRENTICE",
     "ART-BAC-ARTISAN",
@@ -4360,8 +4361,7 @@
     "ART-BAC-SHEPHERD",
     "ART-BAC-SOLDIER",
     "ART-BAC-VAGABOND",
-    "ART-ITE-7-6-TREASURE-TABLES",
-    "ART-ITE-7-8-MELEE-WEAPONS"
+    "ART-ITE-7-6-TREASURE-TABLES"
    ]
   },
   {
@@ -4374,6 +4374,8 @@
    ],
    "used_by": [
     "ART-TRA-TIER-1-ARCANE-SPELLS-D20",
+    "ART-CH01-002",
+    "ART-COVER-002",
     "ART-TRA-TIER-1-DIVINE-PRAYERS-D20",
     "ART-TRA-TIER-1-DRUIDIC-RITUALS-D20",
     "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20",
@@ -4388,7 +4390,6 @@
     "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
     "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20",
     "ART-TRA-TIER-3-SORCERIES-D20",
-    "ART-CH01-002",
     "ART-CH02-002",
     "ART-CH03-002",
     "ART-CH04-002",
@@ -4398,8 +4399,7 @@
     "ART-CH08-002",
     "ART-CH09-002",
     "ART-CH10-002",
-    "ART-CH11-002",
-    "ART-COVER-002"
+    "ART-CH11-002"
    ]
   },
   {
@@ -4483,6 +4483,8 @@
    "used_by": [
     "ART-CAM-THE-ARMOURY",
     "ART-WOR-1-2-THE-GRIM-WORLD",
+    "ART-CH01-002",
+    "ART-COVER-002",
     "ART-WOR-1-3-1-THE-FALL",
     "ART-WOR-1-3-2-THE-SIX-CLIMATES-OF-RUIN",
     "ART-WOR-1-3-3-THE-SIX-BASTIONS",
@@ -4500,7 +4502,6 @@
     "ART-CAM-THE-UNDERCROFT",
     "ART-CAM-THE-VAULT",
     "ART-CAM-THE-WAR-ROOM",
-    "ART-CH01-002",
     "ART-CH02-002",
     "ART-CH03-002",
     "ART-CH04-002",
@@ -4510,8 +4511,7 @@
     "ART-CH08-002",
     "ART-CH09-002",
     "ART-CH10-002",
-    "ART-CH11-002",
-    "ART-COVER-002"
+    "ART-CH11-002"
    ]
   },
   {
@@ -4523,6 +4523,7 @@
     1746
    ],
    "used_by": [
+    "ART-MON-GIANT-SCORPION",
     "ART-MON-BURROWMAW",
     "ART-MON-CRYPTSTRANGLER",
     "ART-MON-ELDER-VRYMK",
@@ -4530,7 +4531,6 @@
     "ART-MON-FIRE-BEETLE",
     "ART-MON-GIANT-BLACK-WIDOW",
     "ART-MON-GIANT-CENTIPEDE",
-    "ART-MON-GIANT-SCORPION",
     "ART-MON-GIANT-TARANTULA",
     "ART-MON-GLOOM-HULK",
     "ART-MON-GLOOMSPORE-JELLY",
@@ -4543,58 +4543,6 @@
    ]
   },
   {
-   "path": "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-   "sha256": "333021be2755c3993e009a240b07d016267472abb742ff3b1e9a0db65d22fba9",
-   "format": "JPEG",
-   "px": [
-    1394,
-    875
-   ],
-   "used_by": [
-    "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
-    "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
-    "ART-MON-KHORRUN-THE-DRACOLICH",
-    "ART-MON-MAELTHORN-THE-VERDANT",
-    "ART-MON-SIRRACH-THE-BLACK",
-    "ART-MON-THE-ANCIENT-VOID-DRAGON",
-    "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
-    "ART-MON-THE-BROODMOTHER-PRIME",
-    "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
-    "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
-    "ART-MON-THE-LAST-COLOSSUS",
-    "ART-MON-THE-SUN-CROWNED-PRINCE",
-    "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
-    "ART-MON-VISATH-THE-WHITE",
-    "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL"
-   ]
-  },
-  {
-   "path": "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-   "sha256": "9211539ee20f600aa0ba6ffd9de1dc51bfcf9dedb4136e1c25eecebcd40bbd8e",
-   "format": "JPEG",
-   "px": [
-    1429,
-    1904
-   ],
-   "used_by": [
-    "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
-    "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
-    "ART-MON-KHORRUN-THE-DRACOLICH",
-    "ART-MON-MAELTHORN-THE-VERDANT",
-    "ART-MON-SIRRACH-THE-BLACK",
-    "ART-MON-THE-ANCIENT-VOID-DRAGON",
-    "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
-    "ART-MON-THE-BROODMOTHER-PRIME",
-    "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
-    "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
-    "ART-MON-THE-LAST-COLOSSUS",
-    "ART-MON-THE-SUN-CROWNED-PRINCE",
-    "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
-    "ART-MON-VISATH-THE-WHITE",
-    "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL"
-   ]
-  },
-  {
    "path": "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
    "sha256": "30010c3bd9d25145f104e9964ead9913b86a1090f2cf3bbd0bc9a21ba33f4b59",
    "format": "JPEG",
@@ -4603,8 +4551,8 @@
     1157
    ],
    "used_by": [
-    "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
     "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
+    "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI",
     "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
     "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST",
     "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY",
@@ -4643,6 +4591,58 @@
    ]
   },
   {
+   "path": "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
+   "sha256": "333021be2755c3993e009a240b07d016267472abb742ff3b1e9a0db65d22fba9",
+   "format": "JPEG",
+   "px": [
+    1394,
+    875
+   ],
+   "used_by": [
+    "ART-MON-THE-LAST-COLOSSUS",
+    "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
+    "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
+    "ART-MON-KHORRUN-THE-DRACOLICH",
+    "ART-MON-MAELTHORN-THE-VERDANT",
+    "ART-MON-SIRRACH-THE-BLACK",
+    "ART-MON-THE-ANCIENT-VOID-DRAGON",
+    "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
+    "ART-MON-THE-BROODMOTHER-PRIME",
+    "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
+    "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
+    "ART-MON-THE-SUN-CROWNED-PRINCE",
+    "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
+    "ART-MON-VISATH-THE-WHITE",
+    "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL"
+   ]
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+   "sha256": "9211539ee20f600aa0ba6ffd9de1dc51bfcf9dedb4136e1c25eecebcd40bbd8e",
+   "format": "JPEG",
+   "px": [
+    1429,
+    1904
+   ],
+   "used_by": [
+    "ART-MON-THE-LAST-COLOSSUS",
+    "ART-MON-AVATAR-OF-THE-OLD-GROWTH",
+    "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
+    "ART-MON-KHORRUN-THE-DRACOLICH",
+    "ART-MON-MAELTHORN-THE-VERDANT",
+    "ART-MON-SIRRACH-THE-BLACK",
+    "ART-MON-THE-ANCIENT-VOID-DRAGON",
+    "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
+    "ART-MON-THE-BROODMOTHER-PRIME",
+    "ART-MON-THE-FROST-BAILIFF-MAGISTRATE",
+    "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
+    "ART-MON-THE-SUN-CROWNED-PRINCE",
+    "ART-MON-THE-VOICE-BENEATH-THE-BELLS",
+    "ART-MON-VISATH-THE-WHITE",
+    "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL"
+   ]
+  },
+  {
    "path": "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
    "sha256": "c0b2f4a441a343f13d5fb1a74ee1e7690910d10f93f0e22f640d2299d7023712",
    "format": "JPEG",
@@ -4651,15 +4651,15 @@
     542
    ],
    "used_by": [
-    "ART-ITE-7-6-TREASURE-TABLES",
-    "ART-ITE-7-8-MELEE-WEAPONS"
+    "ART-ITE-7-8-MELEE-WEAPONS",
+    "ART-ITE-7-6-TREASURE-TABLES"
    ]
   }
  ],
  "files": [
   {
    "path": "START_HERE.md",
-   "sha256": "342b7eb0b3b5cccd50ba321378a66025c742e7444c0f265bead8a42f0707e76d",
+   "sha256": "b981516929a9ec7463e5a16bfdcbaaba1b5428647bd77f7b968fd03fa287fbb7",
    "bytes": 73817,
    "role": "instructions"
   },
@@ -4833,31 +4833,31 @@
   },
   {
    "path": "config/art_style.json",
-   "sha256": "c2d08899ef379c27d6fea74d716452131caf4c35dab5024c136a76995406dc8d",
-   "bytes": 25736,
+   "sha256": "d08cf0ce47d6474c50de07502ccd4a87f32a3cbe4dd0002913f4e71d936f5ced",
+   "bytes": 25950,
    "role": "config"
   },
   {
    "path": "production/art/SELECTIONS.json",
-   "sha256": "bcb8e23a0e39d1069071e9de2aef6599cff437357664d3345ecee20e1c4d03e7",
-   "bytes": 9505,
+   "sha256": "0acb9754a151853a6d8442c419c083e7a7768789570f952bc3a3ec2d20d549d8",
+   "bytes": 9549,
    "role": "selections"
   },
   {
    "path": "production/art/gpt/INSTRUCTIONS.md",
-   "sha256": "c61020d0e97c924dc8ee34789deee7e0442feb75e48f9d7b10a90a3b82b08f14",
-   "bytes": 6343,
+   "sha256": "8c5557e353056abb67bb86392ea79e35cf700ce758c557d3549c1a421b0ebd55",
+   "bytes": 6360,
    "role": "instructions"
   },
   {
    "path": "production/art/gpt/QUEUE.json",
-   "sha256": "b3a5a0c9f1fe07c3b6da5564086d6326b273ac2249c3a355560f45a75f518925",
+   "sha256": "1997199d5d64787ef47d043e08dacac2683fc7d7ad1f7e371fcadfe16bd60359",
    "bytes": 219437,
    "role": "queue"
   },
   {
    "path": "production/art/gpt/QUEUE.md",
-   "sha256": "3d16196c6242a9284808deda4c9764c84892096b76d09f41969dc75313e59349",
+   "sha256": "89a4638f6e03f833269fb129a534e8d30afde9e96cb8ac2d33f752f3e520cf37",
    "bytes": 39625,
    "role": "queue"
   },
@@ -6490,32 +6490,32 @@
   },
   {
    "path": "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip",
-   "sha256": "cb17cc7f199353db31c71e96c598ae99bae0a4ab8771b7af61a7c7a668a1bfb6",
-   "bytes": 20474175,
+   "sha256": "469fba804b7e4f9a575c8c429551392d9956b61261f04ce6ca8a70afb68e0315",
+   "bytes": 20475605,
    "role": "skill_zip"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/OPERATOR_CARD.md",
-   "sha256": "4ece8d7f3d0fa6edbf421e9defd8ad6a6a8bbc4ad41635e04f4bb71c1a55fa54",
-   "bytes": 3449,
+   "sha256": "60932913e8f3a8eedc0adcbc05a1631cdd38a22b5aaadf6af76e609042439e62",
+   "bytes": 3527,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/README.md",
-   "sha256": "a855894497f0c6f32b497bd447ce792dbf6b524cab29dd35a7b00fedcf7c64c3",
-   "bytes": 4561,
+   "sha256": "f0a95044a3a0706f439659fc64b9af54064f5102e28494d3f492c0dd8628bf50",
+   "bytes": 4594,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/SKILL.md",
-   "sha256": "d1b184479626392af674bb00a33a09064943349edaa35b0cce6e9abe8d96a758",
-   "bytes": 19493,
+   "sha256": "c22fb41f69249e6987f6190e63b98c749ac97fd43f9b67a722c6fb074687a63e",
+   "bytes": 19783,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/VERIFICATION_REPORT.md",
-   "sha256": "93d69451759a27a4758f0392b985bed8c341a37300554c1f7e2fa5c72695e188",
-   "bytes": 4385,
+   "sha256": "6c3c9737e9295f6b9a178c7c9827724465f727b907134a0cb4d4674cded2b410",
+   "bytes": 5167,
    "role": "skill"
   },
   {
@@ -6544,32 +6544,32 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/references/STYLE.md",
-   "sha256": "a9cfeb2e6d3de3e67d0133046e3d3a7a3aba825ad568467205706f3447bdf5b2",
-   "bytes": 5437,
+   "sha256": "b10fc2d5d9a8ee4be1952a3a003dae748398c0fb26e49622592ea268054b4fa4",
+   "bytes": 5587,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/references/STYLE_CONSISTENCY.md",
-   "sha256": "72ef16b28739c81664ddde13abde756016973a5f948f27a561d9a84b7de81930",
-   "bytes": 4201,
+   "sha256": "f3cd50d5015dd60182f60e9d70abf2dd0b74c49b8b866fd1427972fb718b20d0",
+   "bytes": 4163,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/references/VISUAL_ACCEPTANCE.md",
-   "sha256": "056568d3e39d6b4a32a87a7be7a3f2ca773a63afb91c74d42d0c589bae9814ee",
-   "bytes": 5564,
+   "sha256": "a8c3c01eece8c6d30806a372a5c28f7a2831ec05551faecaaa3604393c94d6ed",
+   "bytes": 5618,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/references/WORK_OPERATIONS.md",
-   "sha256": "d9ad8f9dc61b8f99acc37b94c4d9a2cce81ba8bbb9095c4b8ddb9286df411d57",
-   "bytes": 6744,
+   "sha256": "02b22a9f8d84f0915edeba1187fd83b7661c7c306a3baa0d4cda619e750e1602",
+   "bytes": 5994,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py",
-   "sha256": "cbac7bb4c306eed0a8ef1bc6f7ed65e3bd3915545ca79d9f334a11421e3a02db",
-   "bytes": 17448,
+   "sha256": "47323f708e9090dbe6f96525d4279b7b08db1000126fca236465ffac145c4e3c",
+   "bytes": 17652,
    "role": "skill"
   },
   {
@@ -6580,14 +6580,14 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py",
-   "sha256": "46116dc2c3a63fa965bb5579b52d110ccc353f7d10fc8063a9e421994d63f3ca",
-   "bytes": 60553,
+   "sha256": "31ec1cc87867aeb9d1debe6aebdfa7f21e8d94ccabb20ec664a40d09e29fdec3",
+   "bytes": 62556,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/style_audit.py",
-   "sha256": "7a2ed2a97dd1e779ade0cd1562bd326235f32adfbc68b85c03336a7c4c28217a",
-   "bytes": 4846,
+   "sha256": "05c8196f87ac3cfffdeac26b0e8fbc45154372c0cfee59e98bc0aee1e120bc92",
+   "bytes": 5285,
    "role": "skill"
   },
   {
@@ -6604,8 +6604,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/tests/test_delivery_sync.py",
-   "sha256": "768adccf6a7b17d2b3d43f08e41b30bf0f09d8713ab6191670b832baa7a4960d",
-   "bytes": 13256,
+   "sha256": "2fe373c1bc994e97bf04b740c866aad75d793efb4eaf195b173968d98f1d9567",
+   "bytes": 14769,
    "role": "skill"
   },
   {
