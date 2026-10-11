@@ -1,0 +1,403 @@
+{
+ "schema": 1,
+ "kind": "heraldry-work-input-package",
+ "skill_version": "6.0.0",
+ "created_from": {
+  "repository": "xjordont/Heraldry",
+  "branch": "main",
+  "commit": "cdd189e524f8daa75754dee6582046a861e1ee4f",
+  "commit_date": "2026-10-11T00:59:39+00:00",
+  "dirty": false
+ },
+ "source": {
+  "repository": "xjordont/Heraldry",
+  "branch": "main",
+  "commit": "cdd189e524f8daa75754dee6582046a861e1ee4f",
+  "commit_date": "2026-10-11T00:59:39+00:00"
+ },
+ "queue": {
+  "path": "production/art/gpt/QUEUE.json",
+  "sha256": "0a6df592bfc5a6b8edd48857416491f1b29e6150ce018870a44705ed2a9205e3",
+  "phase": "anchors",
+  "count": 5,
+  "ids": [
+   "ART-CLI-THE-GREENMARK",
+   "ART-MON-GIANT-TARANTULA",
+   "ART-MON-UNDEAD-CHAMPION",
+   "ART-CLA-FIGHTER",
+   "ART-ANC-DWARF"
+  ],
+  "generated_at": "2026-10-10T20:41:26+00:00"
+ },
+ "prompts": [
+  {
+   "id": "ART-CLI-THE-GREENMARK",
+   "path": "production/art/gpt/prompts/ART-CLI-THE-GREENMARK.txt",
+   "prompt_sha256": "625734f3e40043ae20bf802b17b6db96a2eed2215694e4917f7e33455e6c18de",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/incoming/ART-BAS-GREYTHORN.jpg",
+    "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-GIANT-TARANTULA",
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
+   "prompt_sha256": "dec3c51a465b7b0bf7c0f31403fb86dc2dae39a592c6b6363ec2f04eac12f8bf",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-MON-UNDEAD-CHAMPION",
+   "path": "production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt",
+   "prompt_sha256": "741d323781bea582ea37329ec5a544c0eb9dbb0c786b77866ecdcd8e3cfd88ca",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-CLA-FIGHTER",
+   "path": "production/art/gpt/prompts/ART-CLA-FIGHTER.txt",
+   "prompt_sha256": "659bf900ec0bf1cf2d59455dd676d4d0d4d9bee0b263343b98d743b021328baa",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  },
+  {
+   "id": "ART-ANC-DWARF",
+   "path": "production/art/gpt/prompts/ART-ANC-DWARF.txt",
+   "prompt_sha256": "eb609e96f6a1bc2b337415ae6244c1acf1b858b34ce9b5c7623eff9c254f7571",
+   "verified_against_queue": true,
+   "max_attempts": 3,
+   "references": [
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg"
+   ]
+  }
+ ],
+ "references": [
+  {
+   "path": "assets/art/incoming/ART-BAS-GREYTHORN.jpg",
+   "sha256": "4c1f6a5aab33607ed2314801f81d4727d309b274453d05a3d4bc690613459646",
+   "format": "JPEG",
+   "px": [
+    1536,
+    1024
+   ],
+   "used_by": [
+    "ART-CLI-THE-GREENMARK"
+   ]
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+   "sha256": "3c0bea9e732212ef9b338e652292bc443b8195a3d3f082460763f4513435e50d",
+   "format": "JPEG",
+   "px": [
+    2576,
+    1438
+   ],
+   "used_by": [
+    "ART-CLI-THE-GREENMARK"
+   ]
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+   "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
+   "format": "JPEG",
+   "px": [
+    2400,
+    1792
+   ],
+   "used_by": [
+    "ART-CLI-THE-GREENMARK"
+   ]
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
+   "sha256": "d3834f414c62e8623c1c5f35afd6ed4da9edbaaf86e64ac4883763e92b7d61bf",
+   "format": "JPEG",
+   "px": [
+    2576,
+    1438
+   ],
+   "used_by": [
+    "ART-MON-GIANT-TARANTULA",
+    "ART-MON-UNDEAD-CHAMPION",
+    "ART-CLA-FIGHTER",
+    "ART-ANC-DWARF"
+   ]
+  }
+ ],
+ "files": [
+  {
+   "path": "START_HERE.md",
+   "sha256": "c9d92c793a2917dc288ea05ea0054417b5a19bb07a332d0f4fa660a61362d9b3",
+   "bytes": 4253,
+   "role": "instructions"
+  },
+  {
+   "path": "assets/art/incoming/ART-BAS-GREYTHORN.jpg",
+   "sha256": "4c1f6a5aab33607ed2314801f81d4727d309b274453d05a3d4bc690613459646",
+   "bytes": 497929,
+   "role": "reference"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
+   "sha256": "3c0bea9e732212ef9b338e652292bc443b8195a3d3f082460763f4513435e50d",
+   "bytes": 2735665,
+   "role": "reference"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+   "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
+   "bytes": 1661394,
+   "role": "reference"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
+   "sha256": "d3834f414c62e8623c1c5f35afd6ed4da9edbaaf86e64ac4883763e92b7d61bf",
+   "bytes": 471227,
+   "role": "reference"
+  },
+  {
+   "path": "config/art_style.json",
+   "sha256": "c39146cd195917a472009f71bfa8e8ce49f6d14a775f014a47fdd06deb338af2",
+   "bytes": 14665,
+   "role": "config"
+  },
+  {
+   "path": "production/art/SELECTIONS.json",
+   "sha256": "bf83fe8a7f9dd2d80133c6d616ecaee34b72ec6cba883d24229a0998fb35f8c7",
+   "bytes": 22701,
+   "role": "selections"
+  },
+  {
+   "path": "production/art/gpt/INSTRUCTIONS.md",
+   "sha256": "008cf79c3e23388dcbaaec2ffb0e9ded90de03483a67166bd7998c656669520a",
+   "bytes": 5628,
+   "role": "instructions"
+  },
+  {
+   "path": "production/art/gpt/QUEUE.json",
+   "sha256": "0a6df592bfc5a6b8edd48857416491f1b29e6150ce018870a44705ed2a9205e3",
+   "bytes": 4210,
+   "role": "queue"
+  },
+  {
+   "path": "production/art/gpt/QUEUE.md",
+   "sha256": "f147c4bbde2d5cd8ebf602365ba509d1a9f570c0d00b1684b1d58812e5dd2def",
+   "bytes": 1095,
+   "role": "queue"
+  },
+  {
+   "path": "production/art/gpt/RECEIPTS.jsonl",
+   "sha256": "0e6157a40043d50c6a28b3e79447822367e09aaebbd9a6e1f2666717283bfc86",
+   "bytes": 445,
+   "role": "receipts",
+   "mutable": "append_only"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-ANC-DWARF.txt",
+   "sha256": "b235f33b7e9d3a650839da09c4a318c047a6e9ae0bbdcc6258327810a1b16dad",
+   "bytes": 3600,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLA-FIGHTER.txt",
+   "sha256": "40a358889b2deccd8932b8b5c0406a5fa246a087a22a102a517b005fdda847b2",
+   "bytes": 3343,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-CLI-THE-GREENMARK.txt",
+   "sha256": "dbd2d3a4d42392175d7424795e8bd6629fc5450ab2edf5d297734ea3ae0363f5",
+   "bytes": 4005,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
+   "sha256": "c1fb8ce659325a05a5f079ce4310107e65aba5724857a7a73631f1d4369c3440",
+   "bytes": 3554,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt",
+   "sha256": "c5b56753d421fb9b5eee100e1fe316c1c65e59fb8980e88967915af7a8b979e1",
+   "bytes": 3495,
+   "role": "prompt"
+  },
+  {
+   "path": "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip",
+   "sha256": "a72d18aa53f39b620eb6c62067aa796dcab2312be39c228d85bc517ad5544241",
+   "bytes": 5402124,
+   "role": "skill_zip"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/OPERATOR_CARD.md",
+   "sha256": "6b098948c26e84e7c157a95d29163bb1e0eef22dcb7f8772ba25ed4531aa0d19",
+   "bytes": 3807,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/README.md",
+   "sha256": "ebccea7bf73fab8294e33fe285c590b4175d7a196508315e330a7e57025acc8d",
+   "bytes": 6012,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/SKILL.md",
+   "sha256": "091de74a8c1d3025a3129f38c89f302791d82df405a0a42a058dac83122e3669",
+   "bytes": 20465,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/VERIFICATION_REPORT.md",
+   "sha256": "20d5bedd5739e62614caf1660ad8b2bf1a42665df43617ee40a6cba180275c65",
+   "bytes": 3671,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/deployment/INSTRUCTIONS_V6_REPLACEMENT.md",
+   "sha256": "ff5f59d5df95e75158d7040b49f1403a878314333966a01be9dc8cf2e4669383",
+   "bytes": 4889,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/deployment/REPOSITORY_UPGRADE.md",
+   "sha256": "41b94eb88c46e19b34e62878579767d780b6ac1d57d8ed0809c5204bcaae2532",
+   "bytes": 2931,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/references/AD_HOC.md",
+   "sha256": "5462fa436e50a6c2ee499ff6e96b55bdb6c70a806e1a44e65ff08e98c815cb42",
+   "bytes": 1818,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/references/FAMILIES.md",
+   "sha256": "70006870bd2f8c0b5ebf874b6b2e940a1618cc35c90496f3a97f5cf03349e118",
+   "bytes": 3426,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/references/QA_CHECKLIST.md",
+   "sha256": "432b38daf175ee9f2b30331e99c21aaf46492e4a84582b33338bac499f468ba7",
+   "bytes": 6177,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/references/REPAIR.md",
+   "sha256": "f639dbe77f4522aa5bb859f87bfa39992a6c03e45ce536d5ad0296728890ac20",
+   "bytes": 4709,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/references/STYLE.md",
+   "sha256": "e703d6c09f0c6f8b1fc72965f90974ec583a3be1b0da9e5f29bb88375276bb6c",
+   "bytes": 3558,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/references/STYLE_CONSISTENCY_V6.md",
+   "sha256": "b75afac345e2914fc1c4fc353b07361a67869b57a5dcfb2ed6f80b1815981f9f",
+   "bytes": 3994,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/references/VISUAL_ACCEPTANCE_V6.md",
+   "sha256": "64b0115aafb6ce252f4e10a9d5ce305e44ce68d55ea698215a9cf2b6ce58a4c1",
+   "bytes": 5543,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/references/WORK_OPERATIONS_V6.md",
+   "sha256": "8cbe54366c4ac8d178989a3ce6d8d3efdf10951ef93778a483cdc0b8140602a2",
+   "bytes": 6771,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/scripts/build_release.py",
+   "sha256": "25962ea5c3b4fd35113805eb920bc00ef9faca33f6754dfa611275e164d495ed",
+   "bytes": 1576,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py",
+   "sha256": "565572301aeb7be4792db0ef50a8fd5c36b64aecf32c6f171f9b0aedc52c6d39",
+   "bytes": 11132,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/scripts/fidelity_gate.py",
+   "sha256": "ceacd7be4435e2120aaf372a3051e7a1f856164376d9cf0666b32309dfead0a0",
+   "bytes": 8361,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py",
+   "sha256": "e63ab3f8c4b5f08f47e48903d758e9fc97e6760f5a221f5add18c1133df38b51",
+   "bytes": 55112,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/scripts/style_audit.py",
+   "sha256": "585d4dd56d6638c071d1552d35c875f0dc7ab8221dc5cb30757314591b84d9e6",
+   "bytes": 3994,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/scripts/validate_skill.py",
+   "sha256": "082bef81396140bde788e06c2eb9c505a10ce6cc9288a414b8f944942e43748e",
+   "bytes": 8371,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/scripts/work_preflight.py",
+   "sha256": "f3fde2113f092351bb3c6e54ac04096e5fde0c65bed9ae5ef89745cd2439c09f",
+   "bytes": 11413,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/tests/test_offline_package.py",
+   "sha256": "88b67f1b62d2b3a8a2cd679ac891932666322ca6ec550ef383302265d4889a2a",
+   "bytes": 4402,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/tests/test_v5_regression.py",
+   "sha256": "b315344dcd40d41d7f019f8bb679208495d7e646dff97cfbaf9c8199b3d53141",
+   "bytes": 11042,
+   "role": "skill"
+  },
+  {
+   "path": "production/art/skill/heraldry-classic-ink-art/tests/test_v6.py",
+   "sha256": "5846ca5aa3840c612a2d2cc228ea214dd974c124cf5a18cb58617fee857b0817",
+   "bytes": 6147,
+   "role": "skill"
+  }
+ ],
+ "excluded": [
+  "references/private/** (owner reference PDFs and every other book)",
+  "all art not listed by the queue",
+  "manuscript, layout, figures and build outputs"
+ ],
+ "delivery": {
+  "route": "bundle",
+  "git_remote_access": "not provided: the package carries no credentials and cannot push",
+  "authenticated_git_lfs": "separate capability: only a real authenticated checkout can use delivery_guard.py ship"
+ },
+ "not_certified": [
+  "image tool accepts every listed reference as an attached image (Work smoke test)",
+  "native output file accessible to Python inside Work (Work smoke test)",
+  "artistic quality: independent review"
+ ]
+}
