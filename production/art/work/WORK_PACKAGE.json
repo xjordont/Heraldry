@@ -5,19 +5,19 @@
  "created_from": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "93d001f4270423dc861ebcd93b3e775501cda847",
-  "commit_date": "2026-10-11T01:47:35+00:00",
+  "commit": "9974b47864850e6cbc396df7755a6e43f25ea2e3",
+  "commit_date": "2026-10-11T03:44:02+00:00",
   "dirty": false
  },
  "source": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "93d001f4270423dc861ebcd93b3e775501cda847",
-  "commit_date": "2026-10-11T01:47:35+00:00"
+  "commit": "9974b47864850e6cbc396df7755a6e43f25ea2e3",
+  "commit_date": "2026-10-11T03:44:02+00:00"
  },
  "queue": {
   "path": "production/art/gpt/QUEUE.json",
-  "sha256": "0a6df592bfc5a6b8edd48857416491f1b29e6150ce018870a44705ed2a9205e3",
+  "sha256": "9b8979f8d0fbad9db133378180f6787e4d1f948f042d879d0f60e7dc31e0b9da",
   "phase": "anchors",
   "count": 5,
   "ids": [
@@ -27,17 +27,16 @@
    "ART-CLA-FIGHTER",
    "ART-ANC-DWARF"
   ],
-  "generated_at": "2026-10-10T20:41:26+00:00"
+  "generated_at": "2026-10-11T03:42:27+00:00"
  },
  "prompts": [
   {
    "id": "ART-CLI-THE-GREENMARK",
    "path": "production/art/gpt/prompts/ART-CLI-THE-GREENMARK.txt",
-   "prompt_sha256": "625734f3e40043ae20bf802b17b6db96a2eed2215694e4917f7e33455e6c18de",
+   "prompt_sha256": "f59306517f59dc714262b562c2b2efbf75fdc7e6551460dbf5465171c21f70b6",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
-    "assets/art/incoming/ART-BAS-GREYTHORN.jpg",
     "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg"
    ]
@@ -45,7 +44,7 @@
   {
    "id": "ART-MON-GIANT-TARANTULA",
    "path": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
-   "prompt_sha256": "dec3c51a465b7b0bf7c0f31403fb86dc2dae39a592c6b6363ec2f04eac12f8bf",
+   "prompt_sha256": "a94bb9a9613bc8a46288920b1dc9db0ecf82f0a65e48f2bb1ce398a2a9fbb13b",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -55,7 +54,7 @@
   {
    "id": "ART-MON-UNDEAD-CHAMPION",
    "path": "production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt",
-   "prompt_sha256": "741d323781bea582ea37329ec5a544c0eb9dbb0c786b77866ecdcd8e3cfd88ca",
+   "prompt_sha256": "bdd422ee9e5a253b20712775b6a7c5cca98f0bc8fb87c1f41a8fdd1c45f479a5",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -65,7 +64,7 @@
   {
    "id": "ART-CLA-FIGHTER",
    "path": "production/art/gpt/prompts/ART-CLA-FIGHTER.txt",
-   "prompt_sha256": "659bf900ec0bf1cf2d59455dd676d4d0d4d9bee0b263343b98d743b021328baa",
+   "prompt_sha256": "9e9cd8a65535fdbe4fe3890c34062301e3f9118d939a6c4b9be13c14fe539458",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -75,7 +74,7 @@
   {
    "id": "ART-ANC-DWARF",
    "path": "production/art/gpt/prompts/ART-ANC-DWARF.txt",
-   "prompt_sha256": "eb609e96f6a1bc2b337415ae6244c1acf1b858b34ce9b5c7623eff9c254f7571",
+   "prompt_sha256": "9bfcad1d4be9c29d4fa270c67447755130abe1d21368c72d26c5be9724656789",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -84,18 +83,6 @@
   }
  ],
  "references": [
-  {
-   "path": "assets/art/incoming/ART-BAS-GREYTHORN.jpg",
-   "sha256": "4c1f6a5aab33607ed2314801f81d4727d309b274453d05a3d4bc690613459646",
-   "format": "JPEG",
-   "px": [
-    1536,
-    1024
-   ],
-   "used_by": [
-    "ART-CLI-THE-GREENMARK"
-   ]
-  },
   {
    "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
    "sha256": "3c0bea9e732212ef9b338e652292bc443b8195a3d3f082460763f4513435e50d",
@@ -139,15 +126,9 @@
  "files": [
   {
    "path": "START_HERE.md",
-   "sha256": "1bc44728a3549f16c98eda5f3b5aa418343d830c98857cb561e33b6c06235ff8",
-   "bytes": 4835,
+   "sha256": "db7ac0c587d5763b453a89aee3eb4a0b80b08218477b9c21fdb074a2d2412c13",
+   "bytes": 5358,
    "role": "instructions"
-  },
-  {
-   "path": "assets/art/incoming/ART-BAS-GREYTHORN.jpg",
-   "sha256": "4c1f6a5aab33607ed2314801f81d4727d309b274453d05a3d4bc690613459646",
-   "bytes": 497929,
-   "role": "reference"
   },
   {
    "path": "assets/art/style/STYLE-REF-01-scene-hatching.jpg",
@@ -169,75 +150,75 @@
   },
   {
    "path": "config/art_style.json",
-   "sha256": "c39146cd195917a472009f71bfa8e8ce49f6d14a775f014a47fdd06deb338af2",
-   "bytes": 14665,
+   "sha256": "1c4f871631a2b4c03060a49d398e057df1741032c505968751f11cb492f6848b",
+   "bytes": 15806,
    "role": "config"
   },
   {
    "path": "production/art/SELECTIONS.json",
-   "sha256": "bf83fe8a7f9dd2d80133c6d616ecaee34b72ec6cba883d24229a0998fb35f8c7",
-   "bytes": 22701,
+   "sha256": "32b7c85f4e56305c8abbef1d6918e7ad3a9834ebdba0864fc77f71128e5136ae",
+   "bytes": 8867,
    "role": "selections"
   },
   {
    "path": "production/art/gpt/INSTRUCTIONS.md",
-   "sha256": "008cf79c3e23388dcbaaec2ffb0e9ded90de03483a67166bd7998c656669520a",
-   "bytes": 5628,
+   "sha256": "110b8c9a512332ca34939e955114021786f66c240477ff97bc0639145db6e716",
+   "bytes": 5975,
    "role": "instructions"
   },
   {
    "path": "production/art/gpt/QUEUE.json",
-   "sha256": "0a6df592bfc5a6b8edd48857416491f1b29e6150ce018870a44705ed2a9205e3",
-   "bytes": 4210,
+   "sha256": "9b8979f8d0fbad9db133378180f6787e4d1f948f042d879d0f60e7dc31e0b9da",
+   "bytes": 4161,
    "role": "queue"
   },
   {
    "path": "production/art/gpt/QUEUE.md",
-   "sha256": "f147c4bbde2d5cd8ebf602365ba509d1a9f570c0d00b1684b1d58812e5dd2def",
-   "bytes": 1095,
+   "sha256": "7ab6265685c22abf3ee41b5852123dd00d92659910786ade92fd1b3c69d47aef",
+   "bytes": 1048,
    "role": "queue"
   },
   {
    "path": "production/art/gpt/RECEIPTS.jsonl",
-   "sha256": "0e6157a40043d50c6a28b3e79447822367e09aaebbd9a6e1f2666717283bfc86",
-   "bytes": 445,
+   "sha256": "7bb6874adf3af5daa43d13d5abda8e4a7046e470952d2c8529414d2e4a04dbbc",
+   "bytes": 14809,
    "role": "receipts",
    "mutable": "append_only"
   },
   {
    "path": "production/art/gpt/prompts/ART-ANC-DWARF.txt",
-   "sha256": "b235f33b7e9d3a650839da09c4a318c047a6e9ae0bbdcc6258327810a1b16dad",
-   "bytes": 3600,
+   "sha256": "15815a34582d4c1997fbcfed2bfaab2a3837f47c1778f1fbb6a76ce78f654731",
+   "bytes": 3816,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-CLA-FIGHTER.txt",
-   "sha256": "40a358889b2deccd8932b8b5c0406a5fa246a087a22a102a517b005fdda847b2",
-   "bytes": 3343,
+   "sha256": "c2bd6133873a14fa67803120cb805e5be17c43492504ad9ff7448039ee395016",
+   "bytes": 3559,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-CLI-THE-GREENMARK.txt",
-   "sha256": "dbd2d3a4d42392175d7424795e8bd6629fc5450ab2edf5d297734ea3ae0363f5",
-   "bytes": 4005,
+   "sha256": "bfe8aab5f80991263bf2bf2a1810858fec7db2f0ebde1978c98030e12b19ce75",
+   "bytes": 4279,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
-   "sha256": "c1fb8ce659325a05a5f079ce4310107e65aba5724857a7a73631f1d4369c3440",
-   "bytes": 3554,
+   "sha256": "67428b01d4e8f76597ed6bc3e3b767101e5992c4155082a0c4575fb976471267",
+   "bytes": 3812,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt",
-   "sha256": "c5b56753d421fb9b5eee100e1fe316c1c65e59fb8980e88967915af7a8b979e1",
-   "bytes": 3495,
+   "sha256": "13d62371719142b32e4ad8f89d53164029bbbd367a96d30bf21927c4c4159bd8",
+   "bytes": 3711,
    "role": "prompt"
   },
   {
    "path": "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip",
-   "sha256": "315fa7ca3cf618127b519f9e00731531be498a38b99697511e04f11481a1836b",
-   "bytes": 5402403,
+   "sha256": "d6c1f1d90e1074343cb64c3b7d66c40561cb5db1b6ce24d94f1ee96814fe58a0",
+   "bytes": 5403131,
    "role": "skill_zip"
   },
   {
@@ -254,8 +235,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/SKILL.md",
-   "sha256": "091de74a8c1d3025a3129f38c89f302791d82df405a0a42a058dac83122e3669",
-   "bytes": 20465,
+   "sha256": "28fe42b42967fe2c96a4202b386bceae75d9302f2eb2f8526351ac9cc04fd8b5",
+   "bytes": 20694,
    "role": "skill"
   },
   {
@@ -302,8 +283,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/references/STYLE.md",
-   "sha256": "e703d6c09f0c6f8b1fc72965f90974ec583a3be1b0da9e5f29bb88375276bb6c",
-   "bytes": 3558,
+   "sha256": "8b22a53e173aa47baa56c46f240104c57b7205897fe2ed6465b5d4963d55cb16",
+   "bytes": 4358,
    "role": "skill"
   },
   {
@@ -332,8 +313,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py",
-   "sha256": "565572301aeb7be4792db0ef50a8fd5c36b64aecf32c6f171f9b0aedc52c6d39",
-   "bytes": 11132,
+   "sha256": "006d1404e11fbf07461b8f9d173b8692fb1154df82ff8ee0171dc0a9e4cdeb7d",
+   "bytes": 11394,
    "role": "skill"
   },
   {
@@ -344,8 +325,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py",
-   "sha256": "4f53cf99b3f319e04472de330fa47362cb81b90567fafa31fe54f906b6db938b",
-   "bytes": 55554,
+   "sha256": "d4e7d109527b8044bc965f55ebd877712b07e5ac22a3fcc83f66067cf7955aaa",
+   "bytes": 55822,
    "role": "skill"
   },
   {
@@ -374,8 +355,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/tests/test_v5_regression.py",
-   "sha256": "b315344dcd40d41d7f019f8bb679208495d7e646dff97cfbaf9c8199b3d53141",
-   "bytes": 11042,
+   "sha256": "d004dc580be6f99b737501f966a0d7975b40eabe1bf927e9fe1d2d3976ae3d76",
+   "bytes": 11438,
    "role": "skill"
   },
   {
