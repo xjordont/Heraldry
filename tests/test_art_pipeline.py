@@ -84,7 +84,7 @@ class ArtPipeline(unittest.TestCase):
         self.addCleanup(tmp.cleanup)
         root = Path(tmp.name)
         rs = g.CFG["gpt_reference_sets"]
-        for sets in list(rs["sets"].values()) + list(rs.get("family_sets", {}).values()):
+        for sets in list(rs["sets"].values()) + list(rs.get("family_sets", {}).values()) + [k["refs"] for k in rs.get("kind_sets", {}).values()]:
             for cand in sets:
                 if "/" in cand:
                     (root / cand).parent.mkdir(parents=True, exist_ok=True)
@@ -103,32 +103,49 @@ class ArtPipeline(unittest.TestCase):
     def test_gpt_queue_references_are_short_and_register_specific(self):
         pack, g, ents, (q, prompts) = self._batch_queue()
         cfg = g.CFG["gpt_reference_sets"]
-        scene_only = {c for c in cfg["sets"]["scene"]} | {"assets/art/incoming/ART-BAS-GREYTHORN.png"} | {
-            c for fs in cfg.get("family_sets", {}).values() for c in fs}
-        city = "assets/art/style/STYLE-REF-11-city-approach-ink.png"
-        figure_only = {r for s in ("creature", "person", "still") for r in cfg["sets"][s] if "/" in r} | {
-            f"assets/art/incoming/{i}.png" for s in ("creature", "person") for i in cfg["sets"][s] if "/" not in i}
-        self.assertFalse(scene_only & figure_only, "scene and figure reference sets are disjoint")
+        style = "assets/art/style/"
+        # scenery-carrying references never reach an isolated figure or still life
+        scenic = {style + n for n in ("STYLE-REF-02-panorama-line.jpg", "STYLE-REF-07-drybrush-duel.jpg", "STYLE-REF-09-skeleton-melee-ink.jpg",
+                                      "STYLE-REF-10-undead-crowd-ink.jpg", "STYLE-REF-11-city-approach-ink.png", "STYLE-REF-13-cave-river-pen.jpg",
+                                      "STYLE-REF-21-adventuring-party-forest.jpg", "STYLE-REF-43-piranesi-drawbridge.jpg",
+                                      "STYLE-REF-44-haden-vignette-farm.jpg")}
+        city = style + "STYLE-REF-11-city-approach-ink.png"
         self.assertEqual(q["schema"], 2)
         self.assertEqual(q["count"], len(ents) - len(g.CFG["gpt_anchor_ids"]))
+        lead = [i for i in g.CFG["gpt_lead_ids"] if i in {x["id"] for x in q["items"]}]
+        self.assertEqual([x["id"] for x in q["items"][:len(lead)]], lead, "the mixed lead goes first")
+        self.assertEqual(len({x["ref_set"] for x in q["items"][:len(lead)]}), len(lead), "one lead item per reference set")
         for it in q["items"]:
             refs = it["references"]
             self.assertTrue(1 <= len(refs) <= cfg["max_refs"], it["id"])
             self.assertEqual(len(refs), len(set(refs)), it["id"])
             self.assertNotIn(f"assets/art/incoming/{it['id']}.png", refs, "an entry never references itself")
-            self.assertNotIn("assets/art/style/STYLE-REF-01-scene-hatching.jpg", refs, "cut by the owner 2026-10-11")
+            self.assertNotIn(style + "STYLE-REF-01-scene-hatching.jpg", refs, "cut by the owner 2026-10-11")
             self.assertFalse([r for r in refs if "/incoming/" in r], "generated images are never references")
-            # the owner's city scene replaces the cut STYLE-REF-01 for town and world scenes only (owner 2026-10-11)
-            self.assertEqual(city in refs, it["family"] in ("bastion", "world"), it["id"])
-            self.assertEqual("assets/art/style/STYLE-REF-08-woodcut-fencers.jpg" in refs, it["register"] == "person", it["id"])
-            if it["register"] == "scene":
-                self.assertFalse(set(refs) & figure_only, it["id"])
-            else:
-                self.assertFalse(set(refs) & scene_only, it["id"])
+            self.assertEqual(city in refs, it["family"] in ("bastion", "cover"), it["id"])
+            if it["register"] != "scene":
+                self.assertFalse(set(refs) & scenic, it["id"])
+            if it["family"] == "monster":
+                self.assertTrue(it["ref_set"].startswith("monster:"), it["id"])
             self.assertIn(it["size"], ("1536x1024", "1024x1536", "1024x1024"))
             self.assertEqual(it["print_w_in"], g.CFG["families"][it["family"]]["print_w_in"])
         self.assertEqual({it["max_attempts"] for it in q["items"] if it["family"] in ("cover", "chapter")}, {5})
         self.assertEqual({it["max_attempts"] for it in q["items"] if it["family"] == "monster"}, {3})
+
+    def test_every_monster_has_exactly_one_kind(self):
+        import copy
+        pack, g, ents, _ = self._batch_queue()
+        pack.check_kinds(ents)                                   # the live config covers every monster once
+        saved = copy.deepcopy(g.CFG["gpt_reference_sets"]["kind_sets"])
+        try:
+            g.CFG["gpt_reference_sets"]["kind_sets"]["beast"]["ids"].remove("ART-MON-DIRE-WOLF")
+            with self.assertRaisesRegex(SystemExit, "without a kind"):
+                pack.check_kinds(ents)
+            g.CFG["gpt_reference_sets"]["kind_sets"]["beast"]["ids"] += ["ART-MON-DIRE-WOLF", "ART-MON-ORC"]
+            with self.assertRaisesRegex(SystemExit, "is in kind_sets"):
+                pack.check_kinds(ents)
+        finally:
+            g.CFG["gpt_reference_sets"]["kind_sets"] = saved
 
     def test_gpt_queue_must_and_avoid_lists_appear_in_the_prompt_text(self):
         pack, g, ents, (q, prompts) = self._batch_queue()

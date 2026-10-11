@@ -39,7 +39,7 @@
   "composition": "Wide vista from a high pass; a cracked imperial road winds down from the lower foreground toward the skeletal towers of a dead city on the horizon. A small party with a banner pauses at lower left, road leading the eye to the city.",
   "details": [
    "Straight, patient imperial road paved in broken slabs, with weeds and a leaning milestone half-swallowed by roots",
-   "Forest mass pressing in on one side, drawn as dense stippled and hatched canopy",
+   "Forest mass pressing in on one side, drawn as a dense hatched canopy with solid-black depths",
    "Frozen peaks with fine sparse snow-line hatching on the other side",
    "Distant dead city of snapped spires, collapsed domes and empty arches in thin fine lines",
    "Fractured pass rocks and a cairn in the foreground",
@@ -98,7 +98,7 @@
    "Drowned field with standing water reflecting thin sky, fence posts and a half-sunken plough",
    "Ruined wall with a broken top and fallen coping stones",
    "Faint horizon glow suggested by blank paper above and sparse ruled strokes",
-   "Reeds and dead stalks stippled across the water",
+   "Reeds and dead stalks scratched across the water",
    "Party gear: bedrolls, shields stacked on the wall, a shared flask",
    "A single crow on the wall top"
   ],
@@ -220,7 +220,7 @@
    "Racks of mail shirts, helms and axes along both walls",
    "Smith in a leather apron with heavy forearms, a dwarf in a plain coif",
    "Apprentice working the bellows at one side",
-   "Hanging lanterns and an ingot stack, coal bin and sparks as stippling"
+   "Hanging lanterns and an ingot stack, coal bin and sparks as a few flicked ink flecks"
   ],
   "activity": [
    "Smith lowers a blade into the trough",
@@ -250,7 +250,7 @@
    "Ring of force drawn as concentric thin ink rings and radiating short lines from the hand",
    "Caster in a scorched robe, hood back, staff or book at the belt",
    "Collapsed ladder and fallen bookstands on the floor",
-   "Ash and ember stippling",
+   "Ash and embers as scattered ink flecks",
    "A statue or bust with a broken face on a plinth"
   ],
   "activity": [
@@ -471,7 +471,7 @@
    "Shrine niche with a small lit lamp and no worshippers",
    "Crypt entrance gaping where a forum floor gave way",
    "Far end: an armoured patrol silhouette crossing an old boundary line",
-   "Ash stippling and thin falling flecks"
+   "Ash drifts and thin falling flecks"
   ],
   "activity": [
    "A small file of armoured dead patrols far down the street, tiny"
@@ -873,7 +873,7 @@
    "Mud-caked crown with dull gems and a bent circlet",
    "Cracked reliquary box with a missing hinge",
    "Salt-crusted signet ring on a stone",
-   "Coins stippled to feel dull, no readable stamps",
+   "Coins hatched to feel dull, no readable stamps",
    "Cobweb, grave dirt and a spilled bone button"
   ],
   "activity": [],
@@ -920,7 +920,7 @@
   "composition": "Night sky over a barren crag; the dragon is drawn mostly as negative space, a wyrm-shaped absence of untouched paper edged by fine contour lines, stars dimming around it. A broken watchtower stands small at the bottom for scale.",
   "details": [
    "Wyrm silhouette formed by blank paper bounded by thin broken contour lines",
-   "Stars as stippled points thinning and vanishing near its outline",
+   "Stars as sparse ink points thinning and vanishing near its outline",
    "Spreading wings and a long coiling neck implied by what the stars are missing",
    "Where the breath passes, the landscape is erased to bare white with abrupt edges",
    "Barren crag, snapped watchtower and a dry riverbed below",
@@ -1197,7 +1197,7 @@
   "identity": "Maelthorn the Verdant, a vast wyrm the deep green of stagnant pondwater, furred with moss, to whom Greythorn sends its autumn tithe in place of a war party.",
   "composition": "Forest clearing at ground level; Maelthorn coils among the tithe offerings, moss and lichen furring its scales, poison fog spilling from its jaws across the clearing.",
   "details": [
-   "Overlapping scales furred with moss and lichen as stippled texture",
+   "Overlapping scales furred with moss and lichen as scratchy broken texture",
    "Coils like a fallen tree, blunt head with heavy brow ridges",
    "Poison fog rolling from its jaws, drawn as sparse curling lines, wilting grass and leaves",
    "Tithe bundles of sacks, grain, barrels and wood piled at standing stones",
@@ -1228,7 +1228,7 @@
   "details": [
    "Rock face with concentric ripples around the emerging wyrm",
    "Black body with a heavy jaw, spines and a glossy outline",
-   "Dust and rock fragments flying in fine stipple",
+   "Dust and rock fragments flying as flicked ink flecks",
    "Hoard glimpsed at the gallery's end: coins, crowns, chests",
    "Cracked gallery floor with stalagmites",
    "Withered remains: a shrunken miner's body or dropped pick",
@@ -1255,7 +1255,7 @@
    "Wings spread with ice-fringed membranes",
    "Spire cracked and thick with ice, icicles hanging",
    "Victims encased in ice, mid-scream, on spire walls and below",
-   "Snow falling harder near it, drawn as dense stippling",
+   "Snow falling harder near it, drawn as flicked white gaps and short broken strokes",
    "Lower city rooftops and towers in the distance",
    "Sky ruled with heavy diagonal strokes"
   ],
@@ -1559,7 +1559,7 @@
    "Wall glyphs drawn as abstract flaring marks, not text",
    "Staircase that ends in a wall, a doorway on its side",
    "Shadows of two pillars falling in different directions",
-   "Ash stippling and cracked ground"
+   "Ash drifts and cracked ground"
   ],
   "activity": [
    "A single tiny traveller steps carefully across the court",
@@ -1583,7 +1583,7 @@
    "Vaulted stone corridor with a cracked basilica floor visible above through a fissure",
    "Shelves heaped with tablets, scrolls and ledgers, newer ones gnawed by scavengers",
    "Rats and scattered paper in the foreground",
-   "Dust shown as dense stipple",
+   "Dust shown as dry-brush drag and ink flecks",
    "Lectern in the hall holding a closed codex, outlined with fine lines",
    "A suspiciously neat pile of stacked books beside the lectern",
    "Collapsed shelving and a sconce hanging crooked"
@@ -1642,7 +1642,7 @@
    "Hairline cracks in the vault walls leaking dark smoke-like seep",
    "The door bulged slightly outward, rivets popping",
    "Flanking corridors with collapsed walls",
-   "Dust sifting from the ceiling in stipple",
+   "Dust sifting from the ceiling as a few ink flecks",
    "Fresh scorch scratches on the floor leading to the door"
   ],
   "activity": [
@@ -1720,7 +1720,7 @@
   "composition": "Mid-collapse view down a mining gallery with falling dust; snapped timber props and rubble in the foreground, a gem vein glimmering in a broken wall.",
   "details": [
    "Snapped timber support beams leaning at angles",
-   "Falling rubble and dust clouds as dense stipple",
+   "Falling rubble and dust as dry-brush drag and flicked flecks",
    "Gem-studded rock wall freshly exposed, faceted forms",
    "Lost strongbox half-buried under rubble",
    "Cart rails twisted",
@@ -2380,7 +2380,7 @@
    "Small iron stove and a kettle",
    "One empty bunk with a helmet resting",
    "Shields stacked at the wall and a chest at each bed",
-   "Dust motes shown as stippling"
+   "A few dust motes as flicked ink flecks"
   ],
   "activity": [
    "One or two recruits sleep curled on bunks, the rest empty"

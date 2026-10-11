@@ -7,9 +7,9 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT.parent/(ROOT.name+'.zip')
 FILES=sorted((p for p in ROOT.rglob('*') if p.is_file() and p.name != 'manifest.json' and '__pycache__' not in p.parts and p.suffix != '.pyc'),key=lambda p:p.relative_to(ROOT).as_posix())
 manifest={
-  'skill':'heraldry-classic-ink-art','version':'6.0.0',
+  'skill':'heraldry-classic-ink-art','version':'7.0.0',
   'repo_contract':{'queue_schema':2,'queue':'production/art/gpt/QUEUE.json','receipts':'production/art/gpt/RECEIPTS.jsonl', 'images':'assets/art/incoming/<ID>.png|jpg|webp','min_python':'3.9'},
-  'release_notes':'V6 adds native-image/receipt/reference hash validation at delivery, clean-index and remote conflict checks, four-sided ink diagnostics, comparative batch drift audit and adversarial regression tests.',
+  'release_notes':'V7: gritty old-school art direction, per-family and per-monster-kind reference sets, a mixed first ten, per-image delivery with drift review every ten, version-free reference docs.',
   'files': {p.relative_to(ROOT).as_posix():{'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size} for p in FILES},
 }
 (ROOT/'manifest.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')

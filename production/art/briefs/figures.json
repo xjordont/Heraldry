@@ -84,7 +84,7 @@
    "Tall, lean build with long limbs and a long neck",
    "Long pointed ears swept back, high cheekbones, calm eyes that notice much",
    "Long weathered travelling cloak, faded and mended, pinned at one shoulder",
-   "Longbow taller than the Halfling's whole body, quiver of fletched arrows",
+   "A tall longbow nearly the elf's own height, quiver of fletched arrows",
    "Soft boots and bracers; light, unfussy kit",
    "Fine, sparse hair loose or in a narrow braid",
    "Sparse leaf litter at its feet"
@@ -637,7 +637,7 @@
    "Signet ring with a blank face",
    "Folded tattered family banner with a plain stripe, no readable device",
    "Cracked wine goblet",
-   "Dust motes via fine stipple"
+   "A few dust motes as flicked ink flecks"
   ],
   "atmosphere": "Faded grandeur, once-fine things in decay.",
   "avoid": [
@@ -991,7 +991,7 @@
    "Hunched wizard on a camp stool at a folding desk, quill in hand",
    "One scorched loose page with charred edges and unreadable marks, the only remnant of a burned library",
    "A small sphere of flame drawn as clean ink tongues hovering above the fresh sheet",
-   "A few sparks drifting up from the sphere as stipple",
+   "A few sparks drifting up from the sphere as flicked ink flecks",
    "Spilled ink pot and loose pages",
    "A satchel of rescued scraps at the feet",
    "Intent face lit from below by the small flame"
@@ -1036,7 +1036,7 @@
    "Soldier seated on the ground, bandaged arm in lantern light",
    "Wound drawn as a long line fading to fine hairlines",
    "Cone of light drawn with sparse straight radiating strokes",
-   "Dust motes as stippling",
+   "A few dust motes as flicked ink flecks",
    "Weary but tender expressions"
   ],
   "atmosphere": "Small hard-won mercy.",
@@ -1187,7 +1187,7 @@
    "Druid standing with open mouth, arms spread palm-down",
    "Two or three trees leaning inward with branches reaching like fingers",
    "Roots heaving up from broken ground",
-   "Falling leaf scatter and flung soil in stipple",
+   "Falling leaf scatter and flung soil as flicked ink flecks",
    "Ferns flattening in a ring of wind",
    "Cloak flaring",
    "Staff in one hand"
@@ -1211,7 +1211,7 @@
    "Branches forming antlers from the head",
    "Face still human, eyes calm",
    "Roots spreading across the ground",
-   "Leaves in sparse stipple",
+   "Leaves as a few sparse ink flecks",
    "Dark hollow in the trunk beside"
   ],
   "atmosphere": "Reverent, uncanny, solemn.",
@@ -1275,7 +1275,7 @@
    "Rising stone steps and a wall emerging from the ground in stacked blocks",
    "Ground cracks and floating debris fragments",
    "Two or three small enemy soldiers tripping and falling back",
-   "Dust drawn as stipple",
+   "Dust drawn as dry-brush drag and a few ink flecks",
    "Tattered coat edges lifting"
   ],
   "atmosphere": "Terrifying calm control.",
@@ -1731,7 +1731,7 @@
    "Four legs and a pair of folded wings",
    "Horned head with narrow eyes",
    "Moss-textured scales drawn as fine overlapping arcs",
-   "Long forked tongue or a slight wisp of breath shown as stipple",
+   "Long forked tongue or a slight wisp of breath shown with a few broken strokes",
    "Mossy boulder and bare ground with no treasure"
   ],
   "atmosphere": "Cunning, ancient patience.",
@@ -2389,7 +2389,7 @@
    "Surface bubbles and skin film",
    "A scoured clean patch of stone where it has passed",
    "Faint trail on the stone",
-   "Spores shown as sparse stipple only",
+   "Spores shown as a few sparse ink flecks only",
    "Its leading edge creeping up over a low stone, clinging as it climbs"
   ],
   "atmosphere": "Slow, soundless dissolving hunger.",
@@ -2667,7 +2667,7 @@
   "composition": "Three-quarter view of the skeleton standing in drifted snow, sword frozen to its hand, icicles hanging from the ribs.",
   "details": [
    "Bare skeleton, not flesh",
-   "Frost rime on every bone shown with dense stipple and hatch",
+   "Frost rime on every bone shown with scratchy hatching and white paper left bare",
    "Icicles hanging from ribs and arm bones",
    "Sword bonded by an ice lump to the hand",
    "Snow drifted around the feet",
@@ -3090,7 +3090,7 @@
    "Four legs and two large wings, half-raised",
    "Heavy ice-crusted scales",
    "Head with swept-back horns and a broad snout",
-   "Frozen breath wisps drawn as light stipple",
+   "Frozen breath wisps drawn as a few broken strokes",
    "Long spiky tail curled",
    "Jagged ice outcrop under claws"
   ],
@@ -3156,7 +3156,7 @@
   "composition": "Three-quarter view of the skeleton standing at its post, curved bronze blade held at the ready, sand drifted around its feet.",
   "details": [
    "Bare bleached skeleton, no flesh",
-   "Corroded bronze scale armour with green-black patina rendered as dense stipple",
+   "Corroded bronze scale armour with a black patina rendered as scratchy hatching and solid-black pits",
    "Crested bronze helm with a horsehair plume rotted to strands",
    "Curved bronze blade, notched",
    "Left hand empty or holding a small round bronze buckler, no tall shield",
@@ -3183,7 +3183,7 @@
    "Lean humanoid body with digitigrade legs",
    "Scimitar in the right hand",
    "Scraps of cloth wrapping and a leather harness",
-   "Mangy short fur rendered with stipple",
+   "Mangy short fur rendered with short scratchy strokes",
    "Tail held low",
    "Wind-blown sand at its feet"
   ],
@@ -3205,7 +3205,7 @@
    "Rangy long-limbed body with sloping back",
    "Throwing spear in the throwing hand",
    "Longbow and quiver on the back",
-   "Spotted fur rendered as short stipple spots",
+   "Spotted fur rendered as bold irregular black spots",
    "Scrap of cloth loincloth and bone jewellery",
    "Sand and scattered bones"
   ],
@@ -3315,7 +3315,7 @@
   "composition": "Three-quarter view of a funnel-shaped vortex spinning over a small patch of scoured sand, defined by swirling sand lines, with a vague hollow face in the vortex; a small human figure staggering at its edge, drawn small, light and secondary, for scale.",
   "details": [
    "Spiral funnel outlined by curved parallel lines of sand grains",
-   "Dense stipple at the base of the vortex",
+   "Dry-brush debris and flicked flecks at the base of the vortex",
    "Faint face with two hollow eyes in the vortex",
    "Debris flung outward: a spear, a cloak, a skull",
    "Sparse lines for the invisible centre",
@@ -3556,7 +3556,7 @@
    "Bulging eyes set on top of the head",
    "Spear with a stone head and long haft",
    "Mud dart ready in the throwing hand",
-   "Warty damp skin rendered with stipple",
+   "Warty damp skin rendered with small black warts and broken hatching",
    "A few reeds and rippled water around its chest",
    "Webbed fingers"
   ],
@@ -3691,7 +3691,7 @@
    "Low crouched posture",
    "Clawed webbed toes in the shallows",
    "Ripples around its feet",
-   "Camouflage stipple"
+   "Camouflage mottling in bold broken black patches"
   ],
   "atmosphere": "Unseen until the line snaps taut.",
   "avoid": [
@@ -3757,7 +3757,7 @@
    "Bloated thick water-snake body with diamond scale pattern",
    "Swollen throat",
    "Open mouth with fangs and a forked tongue",
-   "Rendered haze as dense fine stipple around the head",
+   "Haze suggested by sparse broken lines around the head, never a dot field",
    "Ripple lines on the water",
    "Reed stalks",
    "No legs, no hood"

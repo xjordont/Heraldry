@@ -1,4 +1,4 @@
-"""Offline v6 regression suite: validates QA fidelity, failure gates, and capability fallbacks.
+"""Offline regression suite: validates QA fidelity, failure gates, and capability fallbacks.
 Not a test of actual image-model art quality, Git LFS transport, or remote intake.
 """
 import hashlib, importlib.util, json, sys, tempfile, unittest
@@ -99,7 +99,7 @@ class V6Test(unittest.TestCase):
         with self.assertRaises(dg.Error):dg.validate(self.repo,need_remote=False)
 
     def test_complete_qa_to_native_save_to_receipt(self):
-        # Exercise the real v6 runner against a synthetic queue checkout; no network or image model.
+        # Exercise the real runner against a synthetic queue checkout; no network or image model.
         from PIL import ImageDraw
         prompt='Traditional monochrome ink adventurer portrait'
         pf=self.repo/'production/art/gpt/prompts/ART-MON-TEST.txt'
@@ -228,8 +228,8 @@ class V6Test(unittest.TestCase):
         else:
             import zipfile
             repo = ROOT.parents[3]
-            archive = repo / 'production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip'
-            self.assertTrue(archive.is_file(), 'build v6 ZIP before running source tests')
+            archive = repo / 'production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip'
+            self.assertTrue(archive.is_file(), 'build the v7 ZIP before running source tests')
             with zipfile.ZipFile(archive) as z:
                 src = json.loads(z.read('references/images/SOURCES.json'))
                 for rec in src['images']:

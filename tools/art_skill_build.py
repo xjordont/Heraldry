@@ -12,22 +12,24 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "production/art/skill/heraldry-classic-ink-art"
-ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip"
-VERSION = "6.0.0"
+ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip"
+VERSION = "7.0.0"
 STAMP = (2026, 10, 10, 0, 0, 0)
-IMAGES = {
-    "references/images/ART-BAS-GREYTHORN.jpg": ("assets/art/incoming/ART-BAS-GREYTHORN.jpg", "scene; the owner's approved ChatGPT render"),
-    "references/images/STYLE-REF-02-panorama-line.jpg": ("assets/art/style/STYLE-REF-02-panorama-line.jpg", "bastion and world scenes; owner sample"),
-    "references/images/STYLE-REF-03-figure-spotblack.jpg": ("assets/art/style/STYLE-REF-03-figure-spotblack.jpg", "figure and still life; owner sample"),
-    "references/images/STYLE-REF-04-throne-brush-black.jpg": ("assets/art/style/STYLE-REF-04-throne-brush-black.jpg", "figure and still life; owner gritty sample"),
-    "references/images/STYLE-REF-05-cave-creature-pen.jpg": ("assets/art/style/STYLE-REF-05-cave-creature-pen.jpg", "creature; owner gritty sample"),
-    "references/images/STYLE-REF-06-hooded-figure-brush.jpg": ("assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg", "person; owner gritty sample"),
-    "references/images/STYLE-REF-07-drybrush-duel.jpg": ("assets/art/style/STYLE-REF-07-drybrush-duel.jpg", "scene; owner gritty sample"),
-    "references/images/STYLE-REF-08-woodcut-fencers.jpg": ("assets/art/style/STYLE-REF-08-woodcut-fencers.jpg", "person; owner sample"),
-    "references/images/STYLE-REF-09-skeleton-melee-ink.jpg": ("assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg", "scene; owner gritty sample"),
-    "references/images/STYLE-REF-10-undead-crowd-ink.jpg": ("assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg", "scene; owner gritty sample"),
-    "references/images/STYLE-REF-11-city-approach-ink.png": ("assets/art/style/STYLE-REF-11-city-approach-ink.png", "bastion and world scenes; owner-chosen city scene"),
-}
+def _images():
+    """The approved Greythorn render plus every reference image any queue item can attach (config gpt_reference_sets)."""
+    rs = json.loads((ROOT / "config/art_style.json").read_text())["gpt_reference_sets"]
+    use = {}
+    for name, refs in [*rs["sets"].items(), *rs.get("family_sets", {}).items(), *((k, v["refs"]) for k, v in rs.get("kind_sets", {}).items())]:
+        for r in refs:
+            if "/" in r:
+                use.setdefault(r, []).append(name)
+    out = {"references/images/ART-BAS-GREYTHORN.jpg": ("assets/art/incoming/ART-BAS-GREYTHORN.jpg", "scene; the owner's approved ChatGPT render")}
+    for r in sorted(use):
+        out["references/images/" + Path(r).name] = (r, "reference for: " + ", ".join(sorted(set(use[r]))))
+    return out
+
+
+IMAGES = _images()
 ORDER = ["bastion", "climate", "monster", "class", "ancestry", "boss", "scenario", "world", "campaign",
          "tradition", "background", "item", "chapter", "cover"]
 SIZES = {"3:2": "1536x1024", "2:3": "1024x1536", "1:1": "1024x1024"}

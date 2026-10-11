@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""V6 guarded direct-main art delivery; read-only audit and explicit ship.
+"""Guarded direct-main art delivery; read-only audit and explicit ship.
 
 Requires a clean index, a non-divergent origin/main, queued incoming images, full
-prompt- and native-byte-bound v6/v6 receipts, and Git LFS for PNG. Never force,
+prompt- and native-byte-bound receipts, and Git LFS for PNG. Never force,
 rebase, merge, change unrelated paths, or silently accept old receipts.
 """
 import argparse
@@ -123,7 +123,7 @@ def validate(repo, need_remote=True):
     if not cmd(repo, 'lfs', 'version', check=False):
         raise Error('git lfs unavailable; use helper bundle fallback')
     if cmd(repo, 'diff', '--cached', '--name-only'):
-        raise Error('index already contains staged files; inspect and clear it before v6 ship')
+        raise Error('index already contains staged files; inspect and clear it before ship')
     q = json.loads(queue_file.read_text(encoding='utf-8'))
     if q.get('schema') != 2 or not isinstance(q.get('items'), list):
         raise Error('queue schema 2 required')

@@ -21,9 +21,9 @@ SIZES = {"3:2": "1536x1024", "2:3": "1024x1536", "1:1": "1024x1024"}
 REQUIRED = ["SKILL.md", "README.md", "OPERATOR_CARD.md", "manifest.json", "scripts/heraldry_art.py", "scripts/validate_skill.py",
             "references/STYLE.md", "references/QA_CHECKLIST.md", "references/REPAIR.md", "references/FAMILIES.md",
             "references/AD_HOC.md", "references/images/SOURCES.json",
-            "references/STYLE_CONSISTENCY_V6.md", "references/WORK_OPERATIONS_V6.md",
+            "references/STYLE_CONSISTENCY.md", "references/WORK_OPERATIONS.md",
             "scripts/fidelity_gate.py", "scripts/work_preflight.py", "scripts/delivery_guard.py", "scripts/style_audit.py",
-            "deployment/REPOSITORY_UPGRADE.md", "deployment/INSTRUCTIONS_V6_REPLACEMENT.md", "references/VISUAL_ACCEPTANCE_V6.md", "VERIFICATION_REPORT.md"]
+            "references/VISUAL_ACCEPTANCE.md", "VERIFICATION_REPORT.md"]
 
 
 def sha(b):
@@ -45,8 +45,8 @@ def check_package(base):
             errors.append(f"missing {rel}")
     mf = base / "manifest.json"
     manifest = json.loads(mf.read_text()) if mf.is_file() else {"files": {}}
-    if manifest.get("version") != "6.0.0":
-        errors.append("expected v6.0.0 manifest")
+    if manifest.get("version") != "7.0.0":
+        errors.append("expected v7.0.0 manifest")
     on_disk = {p.relative_to(base).as_posix() for p in base.rglob("*") if p.is_file() and "__pycache__" not in p.parts} - {"manifest.json"}
     for rel, rec in manifest["files"].items():
         f = base / rel

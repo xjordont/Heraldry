@@ -12,8 +12,8 @@ sys.path.insert(0, str(ROOT / "tools"))
 import heraldry_art as ha  # noqa: E402
 
 # Legacy v4 tests below remain in source to document the former unaudited save/push interface.
-# V6 requires evidence-backed --qa-file and guarded delivery; that contract is tested in
-# production/art/skill/heraldry-classic-ink-art/tests/test_v5_regression.py and test_v6.py.
+# The skill requires evidence-backed --qa-file and guarded delivery; that contract is tested in
+# production/art/skill/heraldry-classic-ink-art/tests/test_v5_regression.py and test_v6.py (file names kept from v6).
 
 HAVE_GIT = shutil.which("git") is not None
 
@@ -206,7 +206,7 @@ class Runner(Isolated):
         (scene_image() if scene else figure_image(scale=scale)).save(p, format=fmt)
         return p
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_save_keeps_bytes_uses_true_extension_and_writes_receipt(self):
         src = self.image("looks_like.jpg", fmt="PNG")                    # PNG content under a .jpg name
         code, out, err = run(self.root, "save", "ART-T-BEAST", str(src), "--attempts", "2", "--model", "GPT Images 2.5", "--notes", "first pass clean",
@@ -228,7 +228,7 @@ class Runner(Isolated):
         self.assertEqual(code, 0, err + out)
         self.assertEqual([f.name for f in (self.root / "assets/art/incoming").glob("ART-T-BEAST.*")], ["ART-T-BEAST.jpg"])
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_save_demands_real_statements_one_per_must_line(self):
         img = self.image()
         code, out, err = run(self.root, "save", "ART-T-BEAST", str(img))
@@ -256,7 +256,7 @@ class Runner(Isolated):
         code, out, err = run(self.root, "save", "ART-T-BEAST", str(img), "--must", "counted 8 legs, 4 a side", "--avoid-clear")
         self.assertEqual(code, 0, err)
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_accept_flags_is_only_for_the_last_allowed_attempt_and_marks_the_receipt(self):
         imgs = [self.image(f"c{i}.png", scale=0.5 + 0.05 * i) for i in range(3)]
         run(self.root, "check", "ART-T-BEAST", str(imgs[0]))
@@ -274,7 +274,7 @@ class Runner(Isolated):
         rec = json.loads((self.root / "production/art/gpt/RECEIPTS.jsonl").read_text().splitlines()[-1])
         self.assertEqual((rec["accepted_flags"], rec["accepted_at_attempt"], rec["variants_tried"]), (True, 3, 3))
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_save_refuses_mechanical_failures_and_unlisted_ids(self):
         bad = self.tmp / "bad.png"
         Image.new("RGB", (1024, 1024), (250, 248, 240)).save(bad)
@@ -294,7 +294,7 @@ class Runner(Isolated):
         self.assertEqual(code, 2)
         self.assertIn("never generate an ID the queue does not list", err)
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_attempts_are_counted_by_distinct_image_and_the_budget_is_enforced(self):
         imgs = [self.image(f"a{i}.png", scale=0.5 + 0.05 * i) for i in range(4)]
         for i in range(3):
@@ -317,7 +317,7 @@ class Runner(Isolated):
         self.assertTrue(any("budget" in t for t in rec["tripwires"]))
         self.assertEqual(len(ha.attempts_of(self.root, "ART-T-BEAST")), 4, "a save does not forget the attempts: the round ends at delivery")
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_attempt_count_carries_through_a_redo_before_the_push_and_restarts_after_delivery(self):
         a, b, c = (self.image(f"{n}.png", scale=s) for n, s in (("a", 0.55), ("b", 0.6), ("c", 0.65)))
         self.assertIn("attempt 1 of 3", run(self.root, "check", "ART-T-BEAST", str(a))[1])
@@ -338,7 +338,7 @@ class Runner(Isolated):
         (self.root / "production/art/SELECTIONS.json").write_text(json.dumps(sels))
         self.assertIn("attempt 1 of 3", run(self.root, "check", "ART-T-BEAST", str(c))[1])
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_a_copy_of_another_image_or_a_reference_is_not_a_new_generation(self):
         first = self.image("first.png")
         self.assertEqual(save(self.root, "ART-T-BEAST", first)[0], 0)
@@ -348,7 +348,7 @@ class Runner(Isolated):
         code, out, err = run(self.root, "check", "ART-T-BEAST", str(ref), "--json")
         self.assertTrue(any("byte-identical to assets/art/style/REF-0.jpg" in f for f in json.loads(out)["fails"]))
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_a_re_encoded_or_resized_copy_is_flagged_as_a_look_alike(self):
         import io
         first = self.image("first.png")
@@ -372,7 +372,7 @@ class Runner(Isolated):
         self.assertIn("SESSION END: nothing is unsent", out)
         self.assertIn("Next session: GENERATE next", out)
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_bundle_carries_refusals_and_works_with_only_refusals(self):
         self.assertEqual(run(self.root, "refuse", "ART-T-HERO", "--reason", "the tool declined the request")[0], 0)
         code, out, err = run(self.root, "bundle")
@@ -444,7 +444,7 @@ class Runner(Isolated):
         code, out, err = run(self.root, "refuse", "ART-NOT-QUEUED", "--reason", "x")
         self.assertEqual(code, 2)
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_sheet_adds_the_references_of_every_item_on_it(self):
         for iid, kw in (("ART-T-BEAST", {}), ("ART-T-SCENE", {"scene": True})):
             self.assertEqual(save(self.root, iid, self.image(f"{iid}.png", **kw))[0], 0)
@@ -466,7 +466,7 @@ class Runner(Isolated):
         self.assertEqual(code, 2)
         self.assertIn("Name the IDs", err)
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_bundle_without_git_defaults_to_scratch_and_refuses_the_clone(self):
         for iid in ("ART-T-BEAST", "ART-T-SCENE"):
             self.assertEqual(save(self.root, iid, self.image(f"{iid}.png", scene=iid == "ART-T-SCENE"))[0], 0)
@@ -483,7 +483,7 @@ class Runner(Isolated):
         lines = zipfile.ZipFile(z).read("receipts_append.jsonl").decode().strip().splitlines()
         self.assertEqual({json.loads(x)["id"] for x in lines}, {"ART-T-BEAST", "ART-T-SCENE"})
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_without_git_an_image_the_intake_has_recorded_counts_as_sent(self):
         code, out, err = save(self.root, "ART-T-BEAST", self.image())
         self.assertEqual(code, 0, err)
@@ -499,7 +499,7 @@ class Runner(Isolated):
         code, out, err = save(self.root, "ART-T-BEAST", self.image("again.png", scale=0.62))
         self.assertEqual(code, 0, err)                                      # redo needs no --redo flag
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_redo_shows_the_reviewers_reason_and_every_attempt_keeps_its_own_preview(self):
         self.assertEqual(save(self.root, "ART-T-BEAST", self.image(scale=0.6))[0], 0)
         data = (self.root / "assets/art/incoming/ART-T-BEAST.png").read_bytes()
@@ -552,7 +552,7 @@ class Runner(Isolated):
         self.assertEqual(code, 0, out)
         self.assertIn("READY TO GENERATE", out)
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_a_byte_copy_is_never_saved_even_with_accept_flags(self):
         for k in range(2):
             run(self.root, "check", "ART-T-BEAST", str(self.image(f"d{k}.png", scale=0.5 + 0.05 * k)))
@@ -564,7 +564,7 @@ class Runner(Isolated):
         self.assertIn("refuse ART-T-BEAST", err)
         self.assertFalse((self.root / "assets/art/incoming/ART-T-BEAST.jpg").exists())
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_statements_that_admit_a_miss_are_not_accepted(self):
         img = self.image()
         for bad in ("2 arm lines, 0 wings drawn", "no gate is drawn so it could not be verified", "two legs missing", "wrong number of legs",
@@ -578,7 +578,7 @@ class Runner(Isolated):
             self.assertEqual(code, 0, good + err)
             break
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_refuse_needs_a_real_reason_and_does_not_apply_to_delivered_items(self):
         self.assertEqual(run(self.root, "refuse", "ART-T-HERO", "--reason", "no")[0], 2)
         self.assertEqual(run(self.root, "refuse", "ART-T-HERO", "--reason", "")[0], 2)
@@ -592,7 +592,7 @@ class Runner(Isolated):
         self.assertIn("already delivered", err)
         self.assertEqual(ha.states(self.root, self.q)["ART-T-BEAST"], "pushed", "a stray refusal must not flip a delivered item")
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_a_redo_flag_is_marked_in_the_receipt(self):
         self.assertEqual(save(self.root, "ART-T-BEAST", self.image(scale=0.6))[0], 0)
         data = (self.root / "assets/art/incoming/ART-T-BEAST.png").read_bytes()
@@ -627,7 +627,7 @@ class GitStates(Isolated):
         git(root, "push", "-q", "-u", "origin", "main")
         return root
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_item_states_follow_git_history_and_next_action(self):
         root = self.make()
         q = ha.load_queue(root)
@@ -689,7 +689,7 @@ class GitStates(Isolated):
         (root / "production/art/gpt/QUEUE.json").write_text(json.dumps(q2))
         self.assertIn("NOTHING LEFT", run(root, "status")[1])
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_status_waits_for_a_batch_before_asking_for_a_push(self):
         root = self.make()
         with mock.patch.object(ha, "BATCH_PUSH_AT", 2):
@@ -714,7 +714,7 @@ class GitStates(Isolated):
         (scene_image() if scene else figure_image(scale=0.55 + 0.02 * len(list(self.tmp.glob("img*"))))).save(p)
         return p
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_a_redo_clears_once_a_different_image_is_pushed_even_before_the_intake_runs(self):
         root = self.make()
         q = ha.load_queue(root)
@@ -753,7 +753,7 @@ class GitStates(Isolated):
         (root / "assets/art/incoming/ART-T-BEAST.png").unlink()
         self.assertNotIn("STOP", run(root, "status")[1])
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_push_instruction_names_exact_pathspecs_that_also_stage_an_extension_swap(self):
         root = self.make()
         self.assertEqual(save(root, "ART-T-BEAST", self._img())[0], 0)
@@ -773,7 +773,7 @@ class GitStates(Isolated):
         self.assertIn("D\tassets/art/incoming/ART-T-BEAST.png", out)
         self.assertIn("A\tassets/art/incoming/ART-T-BEAST.jpg", out)
 
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_bundle_with_git_uses_unpushed_images(self):
         root = self.make()
         self.assertEqual(save(root, "ART-T-BEAST", self._img())[0], 0)
@@ -789,7 +789,7 @@ class GitStates(Isolated):
 
 
 class IntakeContract(Isolated):
-    @unittest.skip("Superseded v4 unaudited save/delivery contract; see active v6 QA and delivery tests")
+    @unittest.skip("Superseded v4 unaudited save/delivery contract; see the active QA and delivery tests")
     def test_helper_files_and_receipts_are_accepted_by_the_real_intake_without_warnings(self):
         """What `save` writes must be exactly what tools/art_intake.py scan expects: a matching prompt hash, no warnings."""
         import argparse
@@ -844,7 +844,7 @@ class PointerHashes(Isolated):
 
 
 class ValidatorCli(unittest.TestCase):
-    ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip"
+    ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip"
     SCRIPT = SKILL / "scripts/validate_skill.py"
 
     def run_cli(self, *args, cwd=ROOT):
@@ -883,10 +883,10 @@ class SkillSources(unittest.TestCase):
         self.assertIn("python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py", skill)
 
 
-@unittest.skipUnless((ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip").is_file() and (ROOT / "assets/art/style").is_dir(),
+@unittest.skipUnless((ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip").is_file() and (ROOT / "assets/art/style").is_dir(),
                      "a release package ships neither the skill zip nor the owner's style samples")
 class SkillPackage(unittest.TestCase):
-    ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip"
+    ZIP = ROOT / "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip"
 
     def test_families_table_matches_config(self):
         import art_skill_build as b

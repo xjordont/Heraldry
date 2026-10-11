@@ -1,4 +1,4 @@
-CHAPTER 1 OPENER - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
+CHAPTER 1 OPENER - GRITTY OLD-SCHOOL INK ILLUSTRATION
 
 Create a gritty, old-school black-and-white ink illustration of the Dying Lands as a whole, seen from a broken mountain pass: forest on one flank, frozen peaks on the other, and the dead empire's ruined cities sprawled on the eastern horizon, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 
@@ -9,12 +9,11 @@ Leave approximately 5-8% clean white margin around the perimeter, with an additi
 
 COMPOSITION
 The Dying Lands seen from a broken mountain pass: a cracked imperial road winding down toward the skeletal towers of a dead city on the horizon, forest to one side and frozen peaks to the other; a small party with a banner pauses on the road in the foreground.
-Wide vista; party small at lower left; road leads the eye to the distant dead city.
 Wide vista from a high pass; a cracked imperial road winds down from the lower foreground toward the skeletal towers of a dead city on the horizon. A small party with a banner pauses at lower left, road leading the eye to the city.
 
 SUBJECT DETAILS
 * Straight, patient imperial road paved in broken slabs, with weeds and a leaning milestone half-swallowed by roots
-* Forest mass pressing in on one side, drawn as dense stippled and hatched canopy
+* Forest mass pressing in on one side, drawn as a dense hatched canopy with solid-black depths
 * Frozen peaks with fine sparse snow-line hatching on the other side
 * Distant dead city of snapped spires, collapsed domes and empty arches in thin fine lines
 * Fractured pass rocks and a cairn in the foreground
@@ -38,4 +37,4 @@ Do not draw:
 Avoid photorealism, digital-render polish, clean vector-like line, uniform machine texture, stipple fields, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should be gritty and high-contrast and print crisply in pure black ink, with an organically fading white vignette, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
-The attached reference images are gritty, old-school ink art by human illustrators. Match their bold brush contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish, but do not copy their subjects or compositions, and draw in pure black ink only.
+The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.

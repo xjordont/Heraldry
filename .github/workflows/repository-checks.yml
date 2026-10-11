@@ -18,12 +18,12 @@ jobs:
           python-version: '3.12'
       - name: Install locked dependencies
         run: python -m pip install -r requirements.lock
-      - name: Build v6 artwork skill release for verification
+      - name: Build v7 artwork skill release for verification
         run: |
           python tools/art_skill_build.py --check
           python tools/art_skill_build.py
-          python production/art/skill/heraldry-classic-ink-art/scripts/validate_skill.py --zip production/art/skill/Heraldry_Classic_Ink_Art_Skill_v6_0.zip --repo .
-      - name: Test v6 artwork skill guards
+          python production/art/skill/heraldry-classic-ink-art/scripts/validate_skill.py --zip production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip --repo .
+      - name: Test v7 artwork skill guards
         run: python -m unittest discover -s production/art/skill/heraldry-classic-ink-art/tests -p 'test_*.py' -v
       - name: Check immutable manuscript chain and production contracts
         run: python tools/preflight.py --baseline

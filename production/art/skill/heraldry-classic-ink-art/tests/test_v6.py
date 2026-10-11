@@ -1,4 +1,4 @@
-"""Adversarial tests for v6 artifact integrity, QA, and delivery guards."""
+"""Adversarial tests for artifact integrity, QA, and delivery guards."""
 import hashlib
 import json
 import tempfile
@@ -91,7 +91,7 @@ class V6SecurityTest(unittest.TestCase):
         report=sa.build(self.repo)
         self.assertEqual(report['total_saved_checked'],1)
         self.assertEqual(report['by_register']['scene'],1)
-    def test_work_preflight_requires_deployed_v6(self):
+    def test_work_preflight_requires_deployed_skill(self):
         out=wp.run(self.repo,require_installed=True)
         self.assertEqual(out['status'],'BLOCKED')
         self.assertIn('not installed',out['errors'][0])

@@ -1,4 +1,4 @@
-CULTIST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
+CULTIST - GRITTY OLD-SCHOOL INK ILLUSTRATION
 
 Create a gritty, old-school black-and-white ink illustration of a Cultist background: service at a darker altar; starting kit Dagger, Torch, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 
@@ -26,7 +26,7 @@ Depict this faithfully and invent nothing that contradicts it:
 
 ARTISTIC STYLE AND ATMOSPHERE
 Lingering unease and shame.
-Ink it like gritty old-school rulebook monster and character art: a bold, rough brush contour of uneven weight, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag where form turns from light into shadow. High contrast, with few in-between textures; small human imperfections such as broken lines and dry-brush streaks are welcome. It reads as a strong silhouette first and detail second: no stippled skin, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn, scarred and weathered. It must look drawn by hand with brush, pen and ink, not generated or rendered.
+Ink it like old-school rulebook equipment art: a bold, rough contour of uneven weight around each object, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag that follows each material: grain on wood, dents and pits on metal, folds and wear on leather and cloth. High contrast, with few in-between textures. Each object reads as a clear silhouette first and detail second: no stipple fields, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable construction, worn and used. It must look drawn by hand with brush, pen and ink, not generated or rendered.
 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
@@ -36,4 +36,4 @@ Do not draw:
 Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be gritty, bold and readable at small size and print crisply in pure black ink, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
-The attached reference images are gritty, old-school ink art by human illustrators. Match their bold brush contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish, but do not copy their subjects or compositions, and draw in pure black ink only.
+The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.

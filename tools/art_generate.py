@@ -77,14 +77,15 @@ def prompt_for(e, with_refs):
     kind = "scene" if e["family"] in v2["scene_families"] else "still" if e["family"] in v2["still_families"] else "figure"
     where = " / ".join(e.get("context", []))
     identity = b.get("identity", "").rstrip(".") or (e.get("subject") or f"{e['title']} ({where})")
-    out = [label(e) + " - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION", v2["intro"].format(identity=identity[0].lower() + identity[1:] if identity[:2] in ("A ", "An") or identity[:4] == "The " else identity)]
+    out = [label(e) + " - GRITTY OLD-SCHOOL INK ILLUSTRATION", v2["intro"].format(identity=identity[0].lower() + identity[1:] if identity[:2] in ("A ", "An") or identity[:4] == "The " else identity)]
     aw = ASPECT_WORDS.get(fam["aspect"], fam["aspect"])
     out.append(("FORMAT AND WHITE VIGNETTE" if kind == "scene" else "FORMAT AND ISOLATION") + "\n"
                + "\n".join(x.format(aspect_words=aw) for x in v2["format_" + kind]))
     comp = []
     if e["family"] in ("cover", "chapter"):
         comp.append(e["subject"].rstrip(".") + ".")
-        comp.append(e["composition"].rstrip(".") + ".")
+        if not b.get("composition"):   # the brief's composition restates and supersedes the plan's
+            comp.append(e["composition"].rstrip(".") + ".")
     if b.get("composition"):
         comp.append(b["composition"])
     if e.get("direction") and not b.get("composition"):
@@ -104,7 +105,7 @@ def prompt_for(e, with_refs):
     if e.get("flavour"):
         out.append("SOURCE TEXT\nDepict this faithfully and invent nothing that contradicts it:\n\"" + e["flavour"] + "\"")
     atm = b.get("atmosphere", "The atmosphere is grounded, austere, mysterious and subtly ominous.")
-    out.append("ARTISTIC STYLE AND ATMOSPHERE\n" + atm + "\n" + v2["style_" + ("scene" if kind == "scene" else "figure")])
+    out.append("ARTISTIC STYLE AND ATMOSPHERE\n" + atm + "\n" + v2.get("style_" + kind, v2["style_figure"]))
     final = ["Do not draw:"] + ["* " + x.rstrip(".") + "." for x in b["avoid"]] if b.get("avoid") else []
     final.append(v2["final_" + ("scene" if kind == "scene" else "figure")])
     out.append("FINAL VISUAL REQUIREMENTS\n" + "\n".join(final))

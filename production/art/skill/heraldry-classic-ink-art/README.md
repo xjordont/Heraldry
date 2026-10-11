@@ -1,33 +1,36 @@
-# Heraldry Skirmish: Classic Fantasy Ink Art Skill v6.0
+# Heraldry Skirmish: Classic Ink Art Skill v7.0
 
-**A source-faithful, reviewable, queue-driven image-generation skill for ChatGPT Work, with the Heraldry GitHub repository as its source of truth and independent Claude Code/owner artwork approval.**
+**A source-faithful, queue-driven image-generation skill. The Heraldry GitHub repository is the source of truth; Claude Code and the owner approve the artwork independently.**
 
-V6 strengthens v5's engineering quality and artistic-continuity audit. It **does not** claim to guarantee pixel-identical generated artwork, superior images from untested models, unattended orchestration of a separate Claude Code process, or Git LFS support merely because @GitHub is connected.
+The skill runs on Codex on the owner's PC (the current route), or in ChatGPT Work with the offline input package as the fallback. It does not claim to guarantee identical generated images or a successful run of an untested image tool. Unit tests and image diagnostics never measure artistic quality.
 
-## Changes since v5
+## Changes since v6
 
-| System | V6 enhancement |
+| Area | v7 |
 |---|---|
-| Delivery provenance | `delivery_guard.py` verifies each *changed* incoming image's exact SHA-256 against its latest receipt, the queued prompt SHA, all reference SHA values, the native dimensions, and all ten visual QA decisions before staging |
-| Concurrent writes | Enforces an initially clean Git index, checks `main` against the remote twice, and never rebases, force-pushes or silently overwrites other work; uses a bundle handoff if blocked |
-| Style observability | `fidelity_gate.py` reports separate top/bottom/left/right outer ink fractions plus a central-to-edge ratio; checks remain advisory, not an artificial artistic score |
-| Family drift | `style_audit.py` compares *same-register* saved images, detects exact cross-image copies and suspicious tonal and edge outliers; must accompany visual contact sheet inspection |
-| QA evidence | A visual record must explicitly attest inspection at actual print width, identify the comparison register, bind every reference and the native bytes, and provide concrete evidence for each criterion |
-| Deployment | `work_preflight.py --require-installed` blocks claiming the old repository skill as a v6 runtime; external image/reference and local-file smoke tests remain mandatory |
-| Regression | Expanded offline unit suite tests altered images, altered reference assets, stale receipts, missing QA evidence, dimension exceptions, refusal records, incomplete style context, and fallback conditions |
-| Package | Versioned manifest with SHA-256 of all files, safe ZIP checks and byte-verification of four unchanged approved style references |
+| Art direction | Gritty old-school black-and-white ink (owner, 2026-10-11): bold rough contours, heavy solid blacks, scratchy hatching and dry-brush, high contrast. Still pure black ink: no grey wash, no stipple fields, no clean vector-like line |
+| References | Owner samples plus four public-domain prints (Callot, Piranesi, Haden) chosen for the same look. Sets are chosen per family and per monster kind (undead, beast, vermin, humanoid, magical), at most three per item. Each queue item names its `ref_set` |
+| Queue order | The first ten items cover one of each reference set, so the first drift review tests every set |
+| Cadence | Each image is delivered as soon as it is saved (`push_every: 1`), with a drift review every tenth image (`review_every: 10`, `sheet --recent`, `style_audit --recent`) |
+| Delivery | `delivery_guard ship` fast-forwards safely over the intake bot's commits and retries a lost push; divergence or overlap still stops |
+| Docs | Reference documents have version-free names (`STYLE_CONSISTENCY.md`, `VISUAL_ACCEPTANCE.md`, `WORK_OPERATIONS.md`). The v6 deployment folder is retired because v6 and v7 are installed in the repository |
+
+The v6 integrity guarantees carry over unchanged:
+- byte-bound QA records, with ten criteria that each need visual evidence;
+- native-hash receipts;
+- prompt and reference hash checks at delivery;
+- a clean index and no force-push.
 
 ## Production boundary
 
-- **Claude Code and the repository**: own canonical prompts, queue, references, approval decisions, the final print intake and publication.
-- **ChatGPT Work**: follows the exact item prompt, attaches only listed references, generates an image, checks the native file and print-size preview, records evidence, and delivers in guarded batches.
-- **GitHub**: stores the queue, receipts and submitted image bytes via Git LFS when the *local Work environment* actually supports it. Otherwise a labelled handoff ZIP is required.
+- **Claude Code and the repository** own the prompts, queue, references, approval decisions, the print intake and publication.
+- **The art worker** (Codex, or ChatGPT Work as the fallback):
+  - follows each item's exact prompt and attaches only the listed references;
+  - generates, checks the native file and print-size preview, and records evidence;
+  - delivers through the guard.
+- **GitHub** stores the queue, receipts and the delivered image bytes through Git LFS.
 
-## Install
-
-This ZIP is a **candidate release, not an installed repository upgrade**. Follow `deployment/REPOSITORY_UPGRADE.md` and reconcile `deployment/INSTRUCTIONS_V6_REPLACEMENT.md` with the repository's latest `production/art/gpt/INSTRUCTIONS.md` before allowing an autonomous Work run. Upgrade the repository helper, additional scripts, skill documents, tests and installable ZIP together. Do not mix a v6 `SKILL.md` with a v4/v5 repo helper.
-
-The runtime must pass:
+## Run
 
 ```sh
 python production/art/skill/heraldry-classic-ink-art/scripts/work_preflight.py --repo . --require-installed
@@ -35,36 +38,34 @@ python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py doc
 python production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py status
 ```
 
-Complete a **real image-tool smoke test** with references and a native file on disk before accepting any image. The script alone cannot prove this.
+On Codex, `production/art/codex/BATCH_CARD.md` is the whole working contract on one page. The image tool must actually accept the listed reference images: the scripts cannot prove that.
 
 ## Offline input package
 
-Where Work cannot authenticate shell git or fetch binary references through the connector, Claude Code builds a self-contained input ZIP with `tools/art_work_package.py build` (queue, prompts, queue-listed reference bytes, this skill, receipts, selections, hash manifest, source commit). `work_preflight.py --offline-package` verifies it without Git and reports delivery as bundle only; `bundle` adds the QA reports and a hash manifest; `tools/art_work_package.py verify-bundle` checks the returned ZIP. The Work smoke test is still required.
-
-## Before each batch delivery
-
-1. Inspect image references, native assets and print-size previews and complete QA for every item.
-2. Run `heraldry_art.py sheet --refs` and `style_audit.py` (report outside the repository).
-3. Run `delivery_guard.py audit --repo .`; then `ship --execute` only if it passes.
-4. If Git LFS or remote push fails, make a helper `bundle` and **do not claim delivery succeeded**.
-5. **Stop after the five calibration anchors**, pending independent review and a new queue.
+Where the worker cannot authenticate git, Claude Code builds a self-contained input ZIP with `tools/art_work_package.py build`. It holds the queue, prompts, reference bytes, this skill, receipts, selections, a hash manifest and the source commit.
+- `work_preflight.py --offline-package` verifies it without Git.
+- Delivery is by `bundle` only.
+- `tools/art_work_package.py verify-bundle` checks the returned ZIP.
 
 ## Offline verification
 
 ```sh
 python -m unittest discover -s tests -v
-python scripts/validate_skill.py --zip /path/to/Heraldry_Classic_Ink_Art_Skill_v6_0.zip
+python scripts/validate_skill.py --zip /path/to/Heraldry_Classic_Ink_Art_Skill_v7_0.zip --repo /path/to/repo
 ```
-
-Unit tests and image diagnostics do not measure artistic excellence. Real Work generation, native-file transfer, Git LFS upload, reviewer intake, and consistent style across multiple unillustrated subject families require a separate pilot.
 
 ## Included files
 
-- `SKILL.md`, `OPERATOR_CARD.md`: full procedure and concise starting instructions.
-- `references/STYLE.md`, `STYLE_CONSISTENCY_V6.md`, `VISUAL_ACCEPTANCE_V6.md`, `FAMILIES.md`, `QA_CHECKLIST.md`, `REPAIR.md`: art direction, QA, family framing and revision rules.
-- `references/images/`: byte-preserved approved Greythorn and three owner-approved reference JPEGs, with a SHA inventory.
-- `scripts/heraldry_art.py`, `fidelity_gate.py`, `style_audit.py`, `work_preflight.py`, `delivery_guard.py`, `validate_skill.py`, `build_release.py`.
-- `tests/test_v5_regression.py`, `tests/test_v6.py`, `tests/test_offline_package.py`: offline regression tests.
-- `deployment/`: maintainer-only repository upgrade plan and proposed v6 standing instructions.
+- `SKILL.md`, `OPERATOR_CARD.md`: the full procedure and a short starting card.
+- `references/`:
+  - `STYLE.md`, `STYLE_CONSISTENCY.md`, `VISUAL_ACCEPTANCE.md`: art direction.
+  - `QA_CHECKLIST.md`: checks.
+  - `REPAIR.md`: retry corrections.
+  - `FAMILIES.md`: family defaults.
+  - `WORK_OPERATIONS.md`: operations.
+  - `AD_HOC.md`: one-off requests.
+- `references/images/`: byte-identical copies of every reference image any queue item can attach, plus the approved Greythorn render, with a SHA inventory. The queue's own reference paths are authoritative.
+- `scripts/`: `heraldry_art.py`, `fidelity_gate.py`, `style_audit.py`, `work_preflight.py`, `delivery_guard.py`, `validate_skill.py`, `build_release.py`.
+- `tests/`: offline regression tests. The `test_v5_regression.py` and `test_v6.py` file names are historical.
 
-The skill package does **not** incorporate the 275 individual prompts from the illustration catalogue.
+The skill package does not contain the 270 queued prompts; they live in the repository queue.
