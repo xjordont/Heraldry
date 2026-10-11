@@ -1,5 +1,7 @@
 # Codex runbook: Heraldry illustration generation (local Windows PC)
 
+**For production sessions, `BATCH_CARD.md` is the operative one-page contract.** This runbook is background and first-time setup.
+
 Owner decision 2026-10-11: image generation continues in **Codex on the owner's Windows PC**, which has the owner's own GitHub login, Git, Git LFS and Python. GitHub `main` is the primary source and delivery route; ZIP hand-off is reserved for the v6 fallback when authenticated inputs or guarded delivery are unavailable. Codex clones `xjordont/Heraldry`, generates the queued images, and pushes them through LFS with the guarded delivery script. GitHub Actions ink-prepares them, and Claude Code reviews and approves them, then publishes the next queue.
 
 ## Roles
@@ -90,7 +92,7 @@ When `status` asks for delivery:
 & $artPython production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .
 ```
 
-`ship` stages only queued images and receipts, verifies every receipt against the native bytes, prompt, references and QA, checks LFS, and pushes to `main` with no force. If `main` advanced or the guard blocks on authentication, LFS, QA, or unexpected changes, stop before delivery. Do not force-push, auto-rebase, or pull over unsent artwork or receipts. Preserve the work, create the helper's review bundle, and ask the maintainer to reconcile the blocker. After reconciliation, update only a clean checkout by fast-forward, then rerun the guard. The push triggers the `Intake ChatGPT artwork` workflow.
+`ship` stages only queued images and receipts, verifies every receipt against the native bytes, prompt, references and QA, checks LFS, and pushes to `main` with no force. If `main` advanced only in paths you are not delivering (the intake bot's ink, selection and review commits after every push), `ship` fast-forwards by itself and retries a lost push race up to three times. It undoes only its own unpublished commit and never rebases, merges or forces. If `main` diverged, changed the same files, or the guard blocks on authentication, LFS, QA, or unexpected changes, stop before delivery. Do not force-push, auto-rebase, or pull over unsent artwork or receipts. Preserve the work, create the helper's review bundle, and ask the maintainer to reconcile the blocker. The push triggers the `Intake ChatGPT artwork` workflow.
 
 Then report: IDs, model name, pixel sizes, attempts, QA failures or accepted flags, and the commit SHA. Stop at the phase gate. For anchors, deliver all five and stop until Claude Code has reviewed them and published the next queue.
 

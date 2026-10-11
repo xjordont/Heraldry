@@ -1,0 +1,43 @@
+SCENARIO 1: THE CRYSTAL HARVEST - CLASSIC FANTASY PEN-AND-INK ILLUSTRATION
+
+Create a hand-inked black-and-white illustration of the Crystal Harvest, an Undermarches scenario in a new cavern beneath the broken mountains whose crystal veins pulse with cold light and drag iron filings across the floor, in the dark fantasy world of Heraldry Skirmish, drawn the way a skilled human illustrator inked the interior art of a classic 1970s-1990s fantasy tabletop roleplaying game rulebook: dip pen, brush and India ink on paper.
+
+FORMAT AND WHITE VIGNETTE
+Wide 3:2 landscape composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing.
+The illustration must have a natural, irregular, hand-drawn white vignette around all four edges. The artwork gradually dissolves into blank ivory-white paper through increasingly sparse pen strokes, broken outlines and diminishing hatching.
+Leave approximately 5-8% clean white margin around the perimeter, with an additional organic transition zone. Avoid digital blur, artificial feathering, or hard rectangular cropping. Keep crisp line and strong contrast at the focal point.
+
+COMPOSITION
+Wide cavern interior from a tunnel mouth; clusters of crystal in the middle ground, iron filings forming radial lines on the floor toward them, glowing fungi dots near the walls.
+
+SUBJECT DETAILS
+* Large crystal spires and clusters in a cavern, drawn as faceted forms with fine lines
+* Iron filings on the floor drawn as radial hatching toward the crystals
+* Stalagmite clusters and low cave walls
+* Glowing fungus patches as blank paper dots amid black
+* A crystal-camouflaged shape among the cluster, ambiguous
+* Prospectors' abandoned picks and a lamp
+* Narrow passage openings to other caverns
+
+HUMAN ACTIVITY
+* A few tiny prospectors with picks and lanterns crouch near a crystal
+* One reaches toward a cluster
+
+SOURCE TEXT
+Depict this faithfully and invent nothing that contradicts it:
+"A new cavern has opened beneath the broken mountains, and its crystal veins pulse with cold light and drag iron filings across the floor. Deepwarden's forges would trade a season of grain for a vein this clean. The prospectors who found it have already lied about its location, and both parties arrive before the lie can harden into a map."
+
+ARTISTIC STYLE AND ATMOSPHERE
+Cold lure, covetous.
+Draw it with confident hand-inked line: clean outlines of varied weight made with dip pen and brush, carrying the slight natural irregularity of a human hand. Build the picture from clearly drawn shapes, not surface texture. Use hatching and crosshatching selectively, only to model form and shadow, and keep generous areas of open white paper; let distance thin to simple, lighter outline. Put detail where the eye should land and suggest the rest with a few telling strokes. No stipple fields, no noise-like texture, no tonal haze, no over-rendered surfaces. Accurate perspective, believable construction and coherent geography; the world shows withered beauty: once-grand things rusted, cracked, overgrown or hollowed by age. It must look drawn by hand, not generated or rendered.
+
+FINAL VISUAL REQUIREMENTS
+Do not draw:
+* Not the Quake (gems in cracked beam tunnels) or the Chasm.
+* Do not detail the Lurker: a faint shape only.
+* No glow rays.
+* No lettering.
+Avoid photorealism, digital-render polish, hyper-detail, uniform texture everywhere, painterly shading, smooth gradients, grey wash, colour, typography, readable runes, watermarks, signatures, modern objects, artificial symmetry and competing focal points. The finished artwork should read cleanly and print crisply, with an organically fading white vignette, like original ink art in a professionally printed fantasy rulebook.
+
+STYLE REFERENCES
+The attached reference images are hand-inked art by human illustrators. Match their line quality, economy of line, hatching density, amount of open white paper and finish, but do not copy their subjects or compositions.

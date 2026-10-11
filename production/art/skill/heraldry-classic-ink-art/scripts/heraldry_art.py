@@ -6,6 +6,7 @@
   next [--n 8]                   the next items to generate
   show ID                        one item: references, size, must / do-not-draw lists, verbatim prompt
   check ID IMAGE                 mechanical tripwires for one generated image; counts it as an attempt
+  qa ID IMAGE                    pre-filled QA draft (hashes, prompt, references); fill verdicts and evidence
   save ID IMAGE --must ... --avoid-clear   check, copy the image unmodified into assets/art/incoming, write the receipt
   refuse ID --reason TEXT        record that the image tool refused an item (no image exists to save)
   sheet [ID ...] [--refs]        labelled contact sheet (default: every saved image not yet pushed; name IDs for others)
@@ -602,7 +603,8 @@ def cmd_status(a, repo):
         print(note)
     todo = [i for i, v in st.items() if v in ("redo", "pending")]
     unsent = bool(saved) or receipts_unpushed(repo)
-    due = len(saved) >= BATCH_PUSH_AT or (unsent and (not todo or a.end))
+    push_at = int(q.get("push_every") or BATCH_PUSH_AT)       # the queue sets the cadence for long runs
+    due = len(saved) >= push_at or (unsent and (not todo or a.end))
     # what a push would sweep up: files that are not queue items, and images saved without a matching receipt
     have_git, changed, ahead = incoming_changes(repo)
     queue_ids = {it["id"] for it in q["items"]}
@@ -636,7 +638,7 @@ def cmd_status(a, repo):
                   "and, only if it passes, `python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .`. "
                   "On any LFS/auth/conflict failure STOP and use `" + helper() + " bundle`. Never force-push or auto-rebase receipts.")
     elif todo:
-        note = (f" ({len(saved)} saved and not sent yet: send at {BATCH_PUSH_AT}, or run `status --end` at session end)" if unsent else "")
+        note = (f" ({len(saved)} saved and not sent yet: send at {push_at}, or run `status --end` at session end)" if unsent else "")
         action = f"GENERATE next: {', '.join(todo[:3])}{' ...' if len(todo) > 3 else ''}  (`{helper()} next`){note}"
     elif q["phase"] == "anchors":
         action = ("STOP. The anchors are done"
@@ -765,6 +767,27 @@ def cmd_check(a, repo):
     return 1 if fails else 0
 
 
+def qa_path(repo, iid):
+    return scratch_dir(repo) / "qa_drafts" / f"{iid}.qa.json"
+
+
+def cmd_qa(a, repo):
+    """Pre-filled QA draft for one image: hashes, prompt and the item's references in order are filled in,
+    so the operator only answers the attestations and the ten criteria. Prints the file and what to fill."""
+    from fidelity_gate import create, CRITERIA
+    q = load_queue(repo)
+    it = item_of(q, a.id)
+    out = qa_path(repo, it["id"])
+    out.parent.mkdir(parents=True, exist_ok=True)
+    create(it["id"], a.image, it["prompt_sha256"], [str(repo / r) for r in it["references"]], out)
+    reg = "scene" if it["register"] == "scene" else "still_life" if it["register"] == "still" else "figure"
+    print(f"QA draft: {out}")
+    print(f"set: prompt_unchanged, references_attached, visual_review_at_print_size = true (only if true); register_compared = \"{reg}\"")
+    print("fill checks.<criterion> = {pass: true|false, evidence: >=15 chars of what you saw} for: " + ", ".join(CRITERIA))
+    print(f"then: save {it['id']} IMAGE (the draft is used automatically) with the --must/--avoid-clear statements")
+    return 0
+
+
 def append_receipt(repo, rec):
     f = repo / RECEIPTS_REL
     f.parent.mkdir(parents=True, exist_ok=True)
@@ -777,13 +800,16 @@ def cmd_save(a, repo):
     # v6: a standalone visual QA report binds the prompt, native image and attached references.
     # The report lives OUTSIDE the checkout; only its summary is appended to the receipt.
     from fidelity_gate import verify_record, CRITERIA
+    if not a.qa_file and qa_path(repo, a.id).is_file():
+        a.qa_file = str(qa_path(repo, a.id))              # the draft written by `qa ID IMAGE`
     if not a.qa_file:
-        raise Fatal("v6 requires --qa-file PATH. Create it with scripts/fidelity_gate.py, inspect the original + print-size preview, and complete the checks.")
-    qa_path = Path(a.qa_file).resolve()
-    if not qa_path.is_file() or repo.resolve() in qa_path.parents:
+        raise Fatal("v6 requires a QA record: run `qa ID IMAGE`, inspect the original + print-size preview, complete the checks, "
+                    "then save again (or pass --qa-file PATH)")
+    qa_path_ = Path(a.qa_file).resolve()
+    if not qa_path_.is_file() or repo.resolve() in qa_path_.parents:
         raise Fatal("--qa-file must be an existing JSON report OUTSIDE the repository clone")
     try:
-        qa = json.loads(qa_path.read_text(encoding="utf-8"))
+        qa = json.loads(qa_path_.read_text(encoding="utf-8"))
     except (OSError, ValueError) as e:
         raise Fatal(f"cannot read QA report: {e}")
     q = load_queue(repo)
@@ -861,7 +887,7 @@ def cmd_save(a, repo):
     rec["qa_register"] = qa.get("register_compared", "")
     rec["qa_print_size_reviewed"] = qa.get("visual_review_at_print_size", False)
     rec["qa_unresolved"] = qa.get("unresolved_issues", [])
-    rec["qa_report_sha256"] = hashlib.sha256(qa_path.read_bytes()).hexdigest()
+    rec["qa_report_sha256"] = hashlib.sha256(qa_path_.read_bytes()).hexdigest()
     rec["qa_failed_criteria"] = [name for name in CRITERIA if not qa["checks"][name]["pass"]]
     rec["reference_shas"] = [r["sha256"] for r in qa.get("references_used", [])]
     rec["native_sha256"] = hashlib.sha256(data).hexdigest()
@@ -872,7 +898,7 @@ def cmd_save(a, repo):
     # Keep the exact QA report beside the attempt counts: `bundle` ships it as review evidence.
     qa_copy = scratch_dir(repo) / "qa" / f"{it['id']}.qa.json"
     qa_copy.parent.mkdir(parents=True, exist_ok=True)
-    qa_copy.write_bytes(qa_path.read_bytes())
+    qa_copy.write_bytes(qa_path_.read_bytes())
     print(f"saved {dest.relative_to(repo).as_posix()} ({len(data)} bytes, unmodified) after {attempts} attempt(s); receipt written")
     if fails:
         print("saved with FAIL tripwires recorded in the receipt: the reviewer will see them")
@@ -1029,6 +1055,9 @@ def main(argv=None):
     p.add_argument("id")
     p.add_argument("image")
     p.add_argument("--json", action="store_true")
+    p = sub.add_parser("qa", help="pre-filled QA draft for one image (hashes, prompt, references); fill verdicts and evidence")
+    p.add_argument("id")
+    p.add_argument("image")
     p = sub.add_parser("save", help="check, copy the image unmodified into assets/art/incoming, write the receipt")
     p.add_argument("id")
     p.add_argument("image")

@@ -130,6 +130,48 @@ class V6Test(unittest.TestCase):
         self.assertEqual(len(rec['qa_review']),10)
         self.assertEqual(rec['qa_failed_criteria'],[])
 
+    def test_qa_draft_then_save_without_qa_file_and_queue_push_cadence(self):
+        # `qa ID IMAGE` pre-fills hashes and references; `save` then finds the draft by itself.
+        import os
+        from PIL import ImageDraw
+        prompt='Traditional monochrome ink creature'
+        pf=self.repo/'production/art/gpt/prompts/ART-MON-TEST.txt';pf.parent.mkdir(parents=True);pf.write_text(prompt+'\n')
+        self.it.update({'prompt':pf.relative_to(self.repo).as_posix(),'prompt_sha256':hashlib.sha256(prompt.encode()).hexdigest(),
+                        'family':'monster','title':'Test','print_w_in':1.9,'max_attempts':3,'size_class':'Medium','must':[],'avoid':[]})
+        (self.repo/'production/art/gpt/QUEUE.json').write_text(json.dumps({'schema':2,'phase':'batch','count':1,'push_every':7,
+                          'generated_at':'2026-10-10T00:00:00+00:00','items':[self.it]}))
+        im=Image.new('RGB',(1024,1024),'white');d=ImageDraw.Draw(im);d.ellipse((180,150,840,890),outline='black',width=18)
+        for n in range(200,810,16): d.line((n,350,n+35,690),fill='black',width=2)
+        im.save(self.native)
+        old=os.environ.get('HERALDRY_SCRATCH');os.environ['HERALDRY_SCRATCH']=str(self.p/'scratch')
+        try:
+            self.assertEqual(ha.main(['--repo',str(self.repo),'check',self.it['id'],str(self.native)]),0)
+            self.assertEqual(ha.main(['--repo',str(self.repo),'qa',self.it['id'],str(self.native)]),0)
+            draft=ha.qa_path(self.repo,self.it['id'])
+            rec=json.loads(draft.read_text())
+            self.assertEqual(len(rec['references_used']),1)
+            self.assertEqual(rec['prompt_sha256'],self.it['prompt_sha256'])
+            self.assertEqual(ha.main(['--repo',str(self.repo),'save',self.it['id'],str(self.native)]),2)   # unfilled draft refused
+            rec.update(prompt_unchanged=True,references_attached=True,visual_review_at_print_size=True,register_compared='figure')
+            for k in rec['checks']: rec['checks'][k]={'pass':True,'evidence':'Inspected the native image and print preview: '+k}
+            draft.write_text(json.dumps(rec))
+            self.assertEqual(ha.main(['--repo',str(self.repo),'save',self.it['id'],str(self.native)]),0)
+            # cadence comes from the queue: with a second, still-pending item, one saved image is not yet due
+            import io,contextlib
+            two=dict(self.it,id='ART-MON-TEST2')
+            (self.repo/'production/art/gpt/prompts/ART-MON-TEST2.txt').write_text(prompt+'\n')
+            two['prompt']='production/art/gpt/prompts/ART-MON-TEST2.txt'
+            (self.repo/'production/art/gpt/QUEUE.json').write_text(json.dumps({'schema':2,'phase':'batch','count':2,'push_every':7,
+                              'generated_at':'2026-10-10T00:00:00+00:00','items':[self.it,two]}))
+            buf=io.StringIO()
+            with contextlib.redirect_stdout(buf):ha.main(['--repo',str(self.repo),'status'])
+            self.assertIn('send at 7',buf.getvalue())
+        finally:
+            if old is None:os.environ.pop('HERALDRY_SCRATCH',None)
+            else:os.environ['HERALDRY_SCRATCH']=old
+        last=json.loads((self.repo/'production/art/gpt/RECEIPTS.jsonl').read_text().splitlines()[-1])
+        self.assertEqual(last['native_sha256'],fg.digest(self.native))
+
     def _delivery_fixture(self):
         q=self.repo/'production/art/gpt/QUEUE.json';q.parent.mkdir(parents=True)
         pf=self.repo/'production/art/gpt/prompts/test.txt';pf.parent.mkdir(parents=True,exist_ok=True)

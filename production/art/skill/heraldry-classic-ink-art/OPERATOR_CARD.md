@@ -27,7 +27,7 @@ If Git LFS/authentication is unavailable, use the bundle fallback. Confirm throu
 ## Batch and stopping rules
 
 - Review each batch with `sheet --refs` and `style_audit.py --repo . --limit 10 --out /scratch/batch_style.json`. Stop if two or more same-register siblings exhibit a common style drift.
-- After 5 images, or at session end, run `delivery_guard.py audit --repo .`; then `delivery_guard.py ship --execute --repo .` only when safe. Otherwise `bundle` and state delivery is pending.
+- When `status` asks (the queue's `push_every` images), or at session end, run `delivery_guard.py audit --repo .`; then `delivery_guard.py ship --execute --repo .` only when safe. Otherwise `bundle` and state delivery is pending.
 - **Anchors phase: generate exactly 5, deliver, STOP.** Wait for independent Claude Code review and republished queue.
 - Resume from `status`; never regenerate an approved/delivered item unless it is an explicit `redo`.
 - An @GitHub connection does not automatically launch Claude Code, supply Git LFS, or approve artwork.

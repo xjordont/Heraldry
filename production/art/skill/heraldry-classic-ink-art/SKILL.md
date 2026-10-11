@@ -69,7 +69,7 @@ If `doctor` says NOT READY YET, run the single `git lfs pull --include="..."` co
 ## Phases
 
 - `anchors` (currently 5 images). Generate them, push, then stop. Tell the owner: "Anchors done. Ask Claude Code to review them and publish the batch queue." Do not start the batch. If an anchor was refused, say so; Claude Code decides what that means for the batch.
-- `batch`. Work through the queue in order. Anchor images are already approved and appear in the items' references.
+- `batch`. Work through the queue in order and keep going between deliveries until `status` says NOTHING LEFT. References are only the owner's hand-inked samples; approved images are never references.
 
 ## For each item
 
@@ -98,7 +98,7 @@ Details, soft style checks and the batch drift review: `references/QA_CHECKLIST.
 
 ## Batches and pushes
 
-`status` asks for a push when 5 images are saved and unsent, when nothing is left to generate, and at session end if you run `status --end`. Never hold more than 10 unsent.
+`status` asks for a push when the queue's `push_every` images (default 5; the batch queue sets 10) are saved and unsent, when nothing is left to generate, and at session end if you run `status --end`. Never hold more than twice that unsent.
 
 1. Drift review first: use `sheet --refs` **and** run `style_audit.py --repo . --limit 10 --out /scratch/batch_style.json` outside the clone. Read `references/VISUAL_ACCEPTANCE_V6.md`. The contact sheet puts the saved, unpushed images beside the references of every item on the sheet. Look for drift (thicker or thinner line, grey tone, different finish), repeated poses or compositions, and scenery behind figures. Redo the one or two worst before you push; the attempt budget still counts every attempt.
 2. After the drift review, use the v6 allowlist and LFS guard. This keeps the current single-producer `main` intake, but does not silently overwrite concurrent changes:
