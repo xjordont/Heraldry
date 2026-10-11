@@ -5,19 +5,19 @@
  "created_from": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "d1b8ae2df9038c58370f7302a7d4c724386c374f",
-  "commit_date": "2026-10-11T18:26:44+00:00",
+  "commit": "0a98f704b73bbd2a544813ae31030c2ef5fe3694",
+  "commit_date": "2026-10-11T20:37:27+00:00",
   "dirty": false
  },
  "source": {
   "repository": "xjordont/Heraldry",
   "branch": "main",
-  "commit": "d1b8ae2df9038c58370f7302a7d4c724386c374f",
-  "commit_date": "2026-10-11T18:26:44+00:00"
+  "commit": "0a98f704b73bbd2a544813ae31030c2ef5fe3694",
+  "commit_date": "2026-10-11T20:37:27+00:00"
  },
  "queue": {
   "path": "production/art/gpt/QUEUE.json",
-  "sha256": "b3eb3d338e1054d083be70291e5e7f18fa73fbe12f20c5397efa7fcce0ee3ea5",
+  "sha256": "b3a5a0c9f1fe07c3b6da5564086d6326b273ac2249c3a355560f45a75f518925",
   "phase": "batch",
   "count": 270,
   "ids": [
@@ -292,7 +292,7 @@
    "ART-CH11-002",
    "ART-COVER-002"
   ],
-  "generated_at": "2026-10-11T18:25:09+00:00"
+  "generated_at": "2026-10-11T20:34:39+00:00"
  },
  "prompts": [
   {
@@ -370,7 +370,7 @@
   {
    "id": "ART-CLA-RANGER",
    "path": "production/art/gpt/prompts/ART-CLA-RANGER.txt",
-   "prompt_sha256": "93aff0bc0b6a1321aa4e8fa54b49a092e60d5b9e1f0a5365aee620fae82c9454",
+   "prompt_sha256": "57ee380f07fede9930963fff255801389467e1b01e7341088a9f9877cb20a022",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -430,7 +430,7 @@
   {
    "id": "ART-BAS-REEDMARCH",
    "path": "production/art/gpt/prompts/ART-BAS-REEDMARCH.txt",
-   "prompt_sha256": "663043daea9bd18230bec8cc6072ff19167fdd622d7b7206eac6bb90e549d3b8",
+   "prompt_sha256": "53386db03f04a6e6abede9264831abe7f74a962aba8796510718d415baf4ec45",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -502,7 +502,7 @@
   {
    "id": "ART-CLI-THE-UNDERMARCHES",
    "path": "production/art/gpt/prompts/ART-CLI-THE-UNDERMARCHES.txt",
-   "prompt_sha256": "fa99deacdb2a6e5e7d236b91949666fdd8736daf1dc45cc435d56ca5c20d9df0",
+   "prompt_sha256": "142b0567486bd9d0889da2afbd3089303fed16be4e99e6ae01c84ab83e12e75e",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -586,7 +586,7 @@
   {
    "id": "ART-MON-BLACK-DRAGON",
    "path": "production/art/gpt/prompts/ART-MON-BLACK-DRAGON.txt",
-   "prompt_sha256": "e31899082ff45435c49f73a6fd996409bfd8e374a8547a61f5a1a65f907013c2",
+   "prompt_sha256": "63259e608f35922a2da626a936ee039a294450b15fe33ecab2d5e89333a065d2",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -634,7 +634,7 @@
   {
    "id": "ART-MON-BLUE-DRAGON",
    "path": "production/art/gpt/prompts/ART-MON-BLUE-DRAGON.txt",
-   "prompt_sha256": "4fc8fc166511685a9e4fd64169c5e2d80810ba258e7a968cec7d7d66b85aa130",
+   "prompt_sha256": "18f77f2dccc1dc67c1a3cea057832c9a343b2555b820a5aeae7b3f9fd5847645",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -670,7 +670,7 @@
   {
    "id": "ART-MON-BRIARLING",
    "path": "production/art/gpt/prompts/ART-MON-BRIARLING.txt",
-   "prompt_sha256": "0be3949af19f36150de7016a0d41b85f92583b53d7584ccc4728053a810bf601",
+   "prompt_sha256": "81c26f50a9180751ed814db7acb021d9e32865275f6f497f0fdde00fbed64796",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -682,7 +682,7 @@
   {
    "id": "ART-MON-BUGBEAR",
    "path": "production/art/gpt/prompts/ART-MON-BUGBEAR.txt",
-   "prompt_sha256": "1e3537eb19722400f4b6496b90076f3639ba6621e5a8d9ef2773698688691d04",
+   "prompt_sha256": "d94a860fbbb0825536ea1d4135755e276de6f4351c72dd7bad30ff165a6e2916",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -706,7 +706,7 @@
   {
    "id": "ART-MON-CAVE-GOBLIN",
    "path": "production/art/gpt/prompts/ART-MON-CAVE-GOBLIN.txt",
-   "prompt_sha256": "955d876d25d4300293ce518d34fae24f65928fe6970839ff056d583352a1c711",
+   "prompt_sha256": "e3ac2267365da7500d8e1f8c4fee7f838a4f89df80974835078e50cf0838420c",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -778,7 +778,7 @@
   {
    "id": "ART-MON-DEMON",
    "path": "production/art/gpt/prompts/ART-MON-DEMON.txt",
-   "prompt_sha256": "0a9820f582b68d6e62a71336e2c5c849098c21ad8df1f9ed87b9f50f35cee024",
+   "prompt_sha256": "5ecc52b024adb92952cb7f3c9184c1b52626782baac3bbd8a2fdc0bc50b26699",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -826,7 +826,7 @@
   {
    "id": "ART-MON-ELDER-VRYMK",
    "path": "production/art/gpt/prompts/ART-MON-ELDER-VRYMK.txt",
-   "prompt_sha256": "95ab44702c8965c8ffdf795b390e294976213ea81bf14a6d0fb5008f332872c6",
+   "prompt_sha256": "d71f9e89d028b73565044139c89b346448dfcad571aee5735a3a07c971b356a7",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -850,7 +850,7 @@
   {
    "id": "ART-MON-EVIL-EYE",
    "path": "production/art/gpt/prompts/ART-MON-EVIL-EYE.txt",
-   "prompt_sha256": "b69b2f7b016701ff939246ab6365939a29786c83499f9b3ee965c5726fd3c962",
+   "prompt_sha256": "b23a6ce4963a64a884ce45d2873a04c87299833f37d743243b770fd4e8523ee5",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -862,7 +862,7 @@
   {
    "id": "ART-MON-FALLEN-PALADIN",
    "path": "production/art/gpt/prompts/ART-MON-FALLEN-PALADIN.txt",
-   "prompt_sha256": "d1828c7a9cd4f8e657e96d0c5a5fd90fbe937957bb2810842a7a2e7b3db5b81d",
+   "prompt_sha256": "6f728b0aa518801999fe680c89e475da0d8569afde53051d3de8f3e4ad0f7efd",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -874,7 +874,7 @@
   {
    "id": "ART-MON-FIRE-BEETLE",
    "path": "production/art/gpt/prompts/ART-MON-FIRE-BEETLE.txt",
-   "prompt_sha256": "c06c8214b843b79c263de0834e6e1ad7b68d8cad537bbf22dd8ce3219c591a82",
+   "prompt_sha256": "72905ebe87bc2518c8cd5b60c38ef8fa788b1db0b8bd946ee72ebbfac3fb780b",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -934,7 +934,7 @@
   {
    "id": "ART-MON-FORSAKEN-KNIGHT",
    "path": "production/art/gpt/prompts/ART-MON-FORSAKEN-KNIGHT.txt",
-   "prompt_sha256": "5ee5e3dd36bad07bb1c906a83ef20722416a3064c205f82de5b762a0a1e35163",
+   "prompt_sha256": "6cc9385859165fd81d0a94abe57eb2578bef50b01b0f53ebefeafdda6b708ee7",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -958,7 +958,7 @@
   {
    "id": "ART-MON-FROST-GIANT",
    "path": "production/art/gpt/prompts/ART-MON-FROST-GIANT.txt",
-   "prompt_sha256": "25fbc207995f078a57691980a564a6c07463d11a948a8aa276cc1778411c806c",
+   "prompt_sha256": "71a8f28e74993ac04c6c61913a7494e284c7963071e278f142a9eeecc3b2a02c",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1102,7 +1102,7 @@
   {
    "id": "ART-MON-GLOOM-HULK",
    "path": "production/art/gpt/prompts/ART-MON-GLOOM-HULK.txt",
-   "prompt_sha256": "ecc8b32b671025a09217a6fa598630ec6f7610a69b0eea31c4b997b383341acf",
+   "prompt_sha256": "5c6dde942d1c967b4b8e8eade35004772d9ca123f54dec4614e187facebcef2c",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1174,7 +1174,7 @@
   {
    "id": "ART-MON-GREEN-DRAGON",
    "path": "production/art/gpt/prompts/ART-MON-GREEN-DRAGON.txt",
-   "prompt_sha256": "4441aec591a60e0cd8abb776c40b5f20681772f127b9ff81f29289c9a2c23851",
+   "prompt_sha256": "9de71ab6b9a4d983028e79385d4e8f0e0a532ef19cea67ca884e2cd758d12ebc",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1186,7 +1186,7 @@
   {
    "id": "ART-MON-HARPY",
    "path": "production/art/gpt/prompts/ART-MON-HARPY.txt",
-   "prompt_sha256": "8f9b3b49ca744e891e8bc64bc9433d8ab75ec0fef4091acd548a9cd604a22a36",
+   "prompt_sha256": "1263a23bc0b608f06a2b285b2b6baca40a267bab4e1c6b96eaeb6ccca58f4635",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1198,7 +1198,7 @@
   {
    "id": "ART-MON-HYDRA",
    "path": "production/art/gpt/prompts/ART-MON-HYDRA.txt",
-   "prompt_sha256": "08db7beb09f97ed2be18199501976f4921ca390091ff2b67a3b94eb2a4e04b8d",
+   "prompt_sha256": "1b484a9928a472c4ac2492480ce3f3f43ebbfb1ef1fdd7ba9d4bfe1b8b91732b",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1270,7 +1270,7 @@
   {
    "id": "ART-MON-LICH",
    "path": "production/art/gpt/prompts/ART-MON-LICH.txt",
-   "prompt_sha256": "5493e2439b014d0a78f3947f2d9af627b0879cc877b97fea856bc6bea7f2d370",
+   "prompt_sha256": "4b573ba16577600860913489a43c6d9f0aad2dcf9ef5645ab7826f8a25c6a666",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1366,7 +1366,7 @@
   {
    "id": "ART-MON-MIRE-TITAN",
    "path": "production/art/gpt/prompts/ART-MON-MIRE-TITAN.txt",
-   "prompt_sha256": "0058ef6027fed706d16d716dbc838e3ae89f80dac89d06622c1ead191ce00620",
+   "prompt_sha256": "b2d2cceadbacca59ae8aafaaf3e925ff2fe98e55ef7a4090df5add245b36ac5e",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1402,7 +1402,7 @@
   {
    "id": "ART-MON-NOXCLOTH",
    "path": "production/art/gpt/prompts/ART-MON-NOXCLOTH.txt",
-   "prompt_sha256": "4218df1babd260d9980d231960ca4e73ed14c58211b85d20095c11250c7750f6",
+   "prompt_sha256": "529d35e8a2f6d3f394bfd26afe18e62cf8c3bed7582c7da6b4cd705f88b00383",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1522,7 +1522,7 @@
   {
    "id": "ART-MON-SNOW-GOBLIN",
    "path": "production/art/gpt/prompts/ART-MON-SNOW-GOBLIN.txt",
-   "prompt_sha256": "2c1f4ca4fb9f9b8220d4ad7542c983afe9ebc358559938bd51858aef30eaa5f0",
+   "prompt_sha256": "7a2a05a527a79b6654c8c07ecc70336897d3507c62068d4528e13c77da75552d",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1534,7 +1534,7 @@
   {
    "id": "ART-MON-SPECTRE",
    "path": "production/art/gpt/prompts/ART-MON-SPECTRE.txt",
-   "prompt_sha256": "0403eccabf46d123bc1b8f0b33fa3fa19d08eabd896ecf704542020e8e9dbb4a",
+   "prompt_sha256": "bd469c49b43218cb2ed64d95cc1343b476d17e23d97955567aedc9774bb2f260",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1702,7 +1702,7 @@
   {
    "id": "ART-MON-UNDEAD-SENTINEL",
    "path": "production/art/gpt/prompts/ART-MON-UNDEAD-SENTINEL.txt",
-   "prompt_sha256": "7c5f0acceae158a5185d4c2946e5b526444cddf9f5d67d7082f373db92da3c81",
+   "prompt_sha256": "8be4b80bd91d45057d89f9efa1d09a54ff446a5ff7dced4bdbf2193ba8f04810",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1762,7 +1762,7 @@
   {
    "id": "ART-MON-WEREBEAR",
    "path": "production/art/gpt/prompts/ART-MON-WEREBEAR.txt",
-   "prompt_sha256": "2c6e51dd47482386785fb8455a78a7469bd12050b07b9cc6ba5de99a6f45cfdc",
+   "prompt_sha256": "cc24d20d921afcb44697f6ccc761e3535688b1078af369633ce827eaa76deb22",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1774,7 +1774,7 @@
   {
    "id": "ART-MON-WERERAT",
    "path": "production/art/gpt/prompts/ART-MON-WERERAT.txt",
-   "prompt_sha256": "59542fb9f53f2662c66264ad24b2b9c8e5cc0b46aa7e7660f67ac3bbc7f2cd11",
+   "prompt_sha256": "61973cc8a7b9d52d20c30e58ec0853ab60807aa0ab5c292e5a579906f943c420",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1810,7 +1810,7 @@
   {
    "id": "ART-MON-WHITE-COURT-EXECUTIONER",
    "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-EXECUTIONER.txt",
-   "prompt_sha256": "047afc373f6028863c411a56c84766b1a0bfe09ce49e4a850a6653e6cc2ae203",
+   "prompt_sha256": "1a4384072d7bcbff04cd00a9602dc1a97143242777d9547b8290056ba3859fed",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1834,7 +1834,7 @@
   {
    "id": "ART-MON-WHITE-COURT-SENTINEL",
    "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-SENTINEL.txt",
-   "prompt_sha256": "ce0a4b21f8c949899ab15f31799ce95eb5b082ea9850980ef3b02337c29e73a8",
+   "prompt_sha256": "edbb83e812f075218318e2a08478c2fac539268f6d4e5f5393ac1a8764c4a690",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1846,7 +1846,7 @@
   {
    "id": "ART-MON-WHITE-DRAGON",
    "path": "production/art/gpt/prompts/ART-MON-WHITE-DRAGON.txt",
-   "prompt_sha256": "7c2bc2123220f42e3d55d80eea89538e5ad063cd83d082c96d8b77d0d2f7724e",
+   "prompt_sha256": "afe4c481e147292ada495f97f859c963b8a6461aedb51efcec713fd80438ebae",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1870,7 +1870,7 @@
   {
    "id": "ART-MON-WIND-ELEMENTAL",
    "path": "production/art/gpt/prompts/ART-MON-WIND-ELEMENTAL.txt",
-   "prompt_sha256": "112deb6254d1cb1dce00189a938bf20600e8b336ccef43dc1ef1032484961e3a",
+   "prompt_sha256": "4fdac1f67711d0e8935350f67b50a27988945b0f5d2f8382240b93462cd805e1",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -1990,7 +1990,7 @@
   {
    "id": "ART-CLA-TRICKSTER",
    "path": "production/art/gpt/prompts/ART-CLA-TRICKSTER.txt",
-   "prompt_sha256": "5802f97e1f8ff363f378b09baed9f051d3058665d55ea7476294a90778d7d89a",
+   "prompt_sha256": "8d2709e80274c2479ff12be1ad8cd1e28e2b563ffe5b71984ab33e7b50661a9b",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2194,7 +2194,7 @@
   {
    "id": "ART-MON-THE-ANCIENT-VOID-DRAGON",
    "path": "production/art/gpt/prompts/ART-MON-THE-ANCIENT-VOID-DRAGON.txt",
-   "prompt_sha256": "24639150aae343ebd49638757a339826a3eb67097a32f83a4c40114bc8dfc711",
+   "prompt_sha256": "d0ba863f39267c5580f874f321489a753d5f3786e1241ea2525286b6f5d95861",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2206,7 +2206,7 @@
   {
    "id": "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE",
    "path": "production/art/gpt/prompts/ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE.txt",
-   "prompt_sha256": "944da68e761ef7db5d2dc1e49cf38bb26d72808fba46348d394531175ef593ee",
+   "prompt_sha256": "ae1ceedfb1e1fcdd9d06452855c1fe68035760283995e161ea867b2efea39670",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2242,7 +2242,7 @@
   {
    "id": "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS",
    "path": "production/art/gpt/prompts/ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS.txt",
-   "prompt_sha256": "bef224bade1e5ead0fc59709897c8ba2205dae37d74cda47e351321c244ca58a",
+   "prompt_sha256": "dc0d1f11260c6cf632278ab5e00975c51e5906f44a98b091af49c055d6ea1fcf",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2254,7 +2254,7 @@
   {
    "id": "ART-MON-THE-LAST-COLOSSUS",
    "path": "production/art/gpt/prompts/ART-MON-THE-LAST-COLOSSUS.txt",
-   "prompt_sha256": "003b5cc5e6c77e54408fdf96cba4a6c08bb03829c543c45816d76f99d76345d3",
+   "prompt_sha256": "4b1dab7ec5e198c513f2391f9f86730f4dae51dd815cf5a9b2f04ecbb1925b7b",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2266,7 +2266,7 @@
   {
    "id": "ART-MON-THE-SUN-CROWNED-PRINCE",
    "path": "production/art/gpt/prompts/ART-MON-THE-SUN-CROWNED-PRINCE.txt",
-   "prompt_sha256": "959b4c54ad2a27e5ebc286a57047ee24961ad8fd54ff768f241d030e451a5594",
+   "prompt_sha256": "f2774559ecc074d73f69d4079feee9f038914210abf6142330a0a27c6c0b7bc7",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2302,7 +2302,7 @@
   {
    "id": "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL",
    "path": "production/art/gpt/prompts/ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL.txt",
-   "prompt_sha256": "d61de1d649d01362753bf513cead3cb6b54290bdf39c725a767acce9f2afa146",
+   "prompt_sha256": "b537881bf1e509e221377a2910009985077fea25fa472aaf88006b81c4251235",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2326,7 +2326,7 @@
   {
    "id": "ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST",
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST.txt",
-   "prompt_sha256": "9808ad9f357a10f7a69fbe2e63750753d84121919ef555f164584464486d5320",
+   "prompt_sha256": "2346e424e7f234ac06da33c4e5b1f62b493f24ad5d7e02c08f847c3700962240",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2446,7 +2446,7 @@
   {
    "id": "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER",
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER.txt",
-   "prompt_sha256": "38b034291231ac9e3ac7e3108b7f08fc37a78b308f560d1ab7b9d34c62d95e14",
+   "prompt_sha256": "61fa17938dce0377bfca666b362013263c264fb838989fa6673ab2db99abb1c4",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2470,7 +2470,7 @@
   {
    "id": "ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL",
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL.txt",
-   "prompt_sha256": "a3934a112dabadd782ecc6e84760b7163ab87d57fd3530aee71900db6bc4a882",
+   "prompt_sha256": "ab22f62d8b9c54d19c9e0e93f50a594386eda9e136b2c8be28501f61daf7f3ef",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2590,7 +2590,7 @@
   {
    "id": "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE",
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE.txt",
-   "prompt_sha256": "e902a20dd36748dbc2ca048a8b632865dfb1663d74c82cc3042ef1eb5407b93f",
+   "prompt_sha256": "bb32ef4b445eb67dd0e9a01c4c3105ee174c84e98af0608bc4932791c474c6b9",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2602,7 +2602,7 @@
   {
    "id": "ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID",
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID.txt",
-   "prompt_sha256": "edb0322da460d6ad1babb017ae702b55788b9ef27017b4f945d79d4b0e3d7412",
+   "prompt_sha256": "a651ab7d08fc8449448985347e02913acd20c08c7ce877089995ec47764d5f63",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2734,7 +2734,7 @@
   {
    "id": "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING",
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING.txt",
-   "prompt_sha256": "931bba4d3ecd524485fc26d8f8b537783ec4297f330a59c389973b2028f51a9f",
+   "prompt_sha256": "dac6c04cb0405bf5623296be0abe36d8a09234e39a7b3ded5b2ee0cd420c0d68",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2818,7 +2818,7 @@
   {
    "id": "ART-WOR-1-3-5-MONSTROUS-THREATS",
    "path": "production/art/gpt/prompts/ART-WOR-1-3-5-MONSTROUS-THREATS.txt",
-   "prompt_sha256": "11cb2b6af6e88940245072da63e2f1418afbcf709d7dcee61d5334bb8c8a1c4b",
+   "prompt_sha256": "83325b4fb5ccde2cbdb06caa2d73eebddb20a0ab4e92eb77bbe2a55999dcad30",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2878,7 +2878,7 @@
   {
    "id": "ART-CAM-THE-ARCANUM",
    "path": "production/art/gpt/prompts/ART-CAM-THE-ARCANUM.txt",
-   "prompt_sha256": "ae1056e9ceffee41683172d714b958f65dcc67c76652ad6a303d77907cf54259",
+   "prompt_sha256": "702394aeb76042f46a1a361b4b17579aefc851af2917e1f5a42ba9eff942a555",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2902,7 +2902,7 @@
   {
    "id": "ART-CAM-THE-EXPEDITION-HALL",
    "path": "production/art/gpt/prompts/ART-CAM-THE-EXPEDITION-HALL.txt",
-   "prompt_sha256": "36c83d04dd089d4e9da4f266856d2619a662e2df94900348cfc4df43cdbd25cc",
+   "prompt_sha256": "50a1138a0c5da19b4170beccac1186472ef239a1839cc18ff5de4309ec8ee594",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -2914,7 +2914,7 @@
   {
    "id": "ART-CAM-THE-OUTER-WALLS",
    "path": "production/art/gpt/prompts/ART-CAM-THE-OUTER-WALLS.txt",
-   "prompt_sha256": "d80199a360b62ee763c032f11219dde762c9efa4f370c62d04ddef7e38e58f21",
+   "prompt_sha256": "6ed32379bc0a1789885634fbc3a12b5fa760a3db37af6ab98cc8f87b92fec969",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -3010,7 +3010,7 @@
   {
    "id": "ART-TRA-TIER-1-SORCERIES-D20",
    "path": "production/art/gpt/prompts/ART-TRA-TIER-1-SORCERIES-D20.txt",
-   "prompt_sha256": "a469ce84a4b30d3c2e5e804ead7dbe481aabdbe050acfe9fb727f642b813b632",
+   "prompt_sha256": "b2997e385eabc0dfb8ac54af6d69906977c7a650e43c499a2d5f992b7c52f10c",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -3022,7 +3022,7 @@
   {
    "id": "ART-TRA-TIER-2-ARCANE-SPELLS-D20",
    "path": "production/art/gpt/prompts/ART-TRA-TIER-2-ARCANE-SPELLS-D20.txt",
-   "prompt_sha256": "9768fe1417ee2a2411ce20f90f860db19cfa22dc0814f1e28d77006d423d5e15",
+   "prompt_sha256": "cb6ee576b8587d55109f8dbcb1d9cf5521a351d0475b5aa4de926a2bcbe7a018",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -3142,7 +3142,7 @@
   {
    "id": "ART-BAC-ALCHEMIST",
    "path": "production/art/gpt/prompts/ART-BAC-ALCHEMIST.txt",
-   "prompt_sha256": "7d1ea497b71ce13c7611ccfe50505993e126e4dc7f5a679f0a95cfa41266feec",
+   "prompt_sha256": "d8d16b4a817ccc669fd6733f29efb7db6ff00150c0105df20ecd69afeedbd0b0",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -3154,7 +3154,7 @@
   {
    "id": "ART-BAC-APPRENTICE",
    "path": "production/art/gpt/prompts/ART-BAC-APPRENTICE.txt",
-   "prompt_sha256": "686efca6cb78d921a7950fb13c3dca12d329c525dbd6a34d987fb930c4a5f83c",
+   "prompt_sha256": "d5dfcfe6ad3f5e902ebb805fbd5c1866e3c5c320f05a1f410c4cb8649e374f52",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -3286,7 +3286,7 @@
   {
    "id": "ART-BAC-PERFORMER",
    "path": "production/art/gpt/prompts/ART-BAC-PERFORMER.txt",
-   "prompt_sha256": "6c8badaa90648e90b2a8d4caf12f3685aa75e4fb51ab246362db321b4dcf361f",
+   "prompt_sha256": "921633b066fe0b8d491016d5ca0df4e03eaeb66b83f71bfffdeb38fe7639c5ee",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -3358,7 +3358,7 @@
   {
    "id": "ART-BAC-VAGABOND",
    "path": "production/art/gpt/prompts/ART-BAC-VAGABOND.txt",
-   "prompt_sha256": "9b1dbe9d48704b14df0690f15cad788d980c2825bb760b287ef3516a9464ecef",
+   "prompt_sha256": "314558c12e4f20341a0b1dd75ce74e06d632f44fed91e552e414d47dbc4856a1",
    "verified_against_queue": true,
    "max_attempts": 3,
    "references": [
@@ -3418,7 +3418,7 @@
   {
    "id": "ART-CH03-002",
    "path": "production/art/gpt/prompts/ART-CH03-002.txt",
-   "prompt_sha256": "12179907b2ca59ebf4fe7d574b2c22d10659b4169ecf720a4b8b35e1488011bf",
+   "prompt_sha256": "663307ba6af5ce84160a47f3f8086cfbafcd4494af2e77f70b4ea9b9aef626b5",
    "verified_against_queue": true,
    "max_attempts": 5,
    "references": [
@@ -3466,7 +3466,7 @@
   {
    "id": "ART-CH07-002",
    "path": "production/art/gpt/prompts/ART-CH07-002.txt",
-   "prompt_sha256": "9d566964c1253464c7b879280994404b25c6ac6b9dd1600a4fcc5a46e5798580",
+   "prompt_sha256": "cc0c997255db6fb0e3c542990d8a6557467d6fa696e045d9eccb71cc521fc785",
    "verified_against_queue": true,
    "max_attempts": 5,
    "references": [
@@ -4659,7 +4659,7 @@
  "files": [
   {
    "path": "START_HERE.md",
-   "sha256": "1bd5fa7cd406793f4cdf3bb148c946226bf6c416db704634a809caca791e3833",
+   "sha256": "1817380de75f065cb0460d52c302df16e45cb6263056db65ae1f859d7d80aa7c",
    "bytes": 73817,
    "role": "instructions"
   },
@@ -4851,8 +4851,8 @@
   },
   {
    "path": "production/art/gpt/QUEUE.json",
-   "sha256": "b3eb3d338e1054d083be70291e5e7f18fa73fbe12f20c5397efa7fcce0ee3ea5",
-   "bytes": 237046,
+   "sha256": "b3a5a0c9f1fe07c3b6da5564086d6326b273ac2249c3a355560f45a75f518925",
+   "bytes": 219437,
    "role": "queue"
   },
   {
@@ -4930,14 +4930,14 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-BAC-ALCHEMIST.txt",
-   "sha256": "ebe127ef51bd7c5fb434e835275ff3c8046f5fcd01b76bad9f4b1df76bbd16e7",
-   "bytes": 3427,
+   "sha256": "9d7461162b74b7f42a64c93b239dae769406fd3ab807f8667d359246f451d25c",
+   "bytes": 3453,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-BAC-APPRENTICE.txt",
-   "sha256": "1f6be688377061b8c1ee20961841373da053af622c23cd5d66fd8a639322aaeb",
-   "bytes": 3510,
+   "sha256": "48297b414b314bd88feb5ea6de0eeca51dede4ec35ee1c1017b34ad032b7e60c",
+   "bytes": 3566,
    "role": "prompt"
   },
   {
@@ -5002,8 +5002,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-BAC-PERFORMER.txt",
-   "sha256": "0bd8dbb1ec4e40d70b82a8c9a727e9edadd0f3a47b67dbc5da01155e18d36064",
-   "bytes": 3379,
+   "sha256": "c2b6a555bb2c40ec92e19e8a9d66f5a3717540fd35ea40791aab1c8602d365e5",
+   "bytes": 3370,
    "role": "prompt"
   },
   {
@@ -5044,7 +5044,7 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-BAC-VAGABOND.txt",
-   "sha256": "add3da4472bcdc4e10b38d8ba0b4cf60a9a35ccaf18664c87d095a5ecb091346",
+   "sha256": "62b515dc1f3c0979fedaf5309be2145878ba3c39791ab7e7f99d4343cb520e31",
    "bytes": 3335,
    "role": "prompt"
   },
@@ -5062,8 +5062,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-BAS-REEDMARCH.txt",
-   "sha256": "a1440797e6bd24376af8122129790b3b700e0dea6fe0001ee432aff3847b6cd3",
-   "bytes": 4268,
+   "sha256": "f47730e84e00b06fa83dac2af0b55519879adb42fc6297c06ada9019685847e3",
+   "bytes": 4275,
    "role": "prompt"
   },
   {
@@ -5092,8 +5092,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-CAM-THE-ARCANUM.txt",
-   "sha256": "9e81a73691d8c0db6a3cbe7486b260dfdbc0dac636571bc6d2ebbc185dc6a150",
-   "bytes": 3816,
+   "sha256": "49e7e5e3d457d76c00ac006c2924d29a31bb418a6b5b7c8e3e13503b6f4331ba",
+   "bytes": 3855,
    "role": "prompt"
   },
   {
@@ -5110,14 +5110,14 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-CAM-THE-EXPEDITION-HALL.txt",
-   "sha256": "478cd86e85fc562759dbfc41815e72b3440b189fe108ffb1f277075a68a38a02",
-   "bytes": 3891,
+   "sha256": "fce9b68e56c86fe009c445ca387e9a08fcb93247550a1d3f0c328d6ec62e77b1",
+   "bytes": 3917,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-CAM-THE-OUTER-WALLS.txt",
-   "sha256": "7dfd400f682b37b9634b3e4f3d15021e4e548905ac18cf5e91e5c7aa14ebde6d",
-   "bytes": 3950,
+   "sha256": "45d9a3f3ccc3337e9c91abc4b62132dbc2035d87049593557af135294293829c",
+   "bytes": 3949,
    "role": "prompt"
   },
   {
@@ -5158,8 +5158,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-CH03-002.txt",
-   "sha256": "e1039a6c81d34881ac25726bc8d1982f0cbca2ffe50b0623d80e63d625ccb4a1",
-   "bytes": 4182,
+   "sha256": "f1c38f2879a1b9fd33aaf59b6d849c13575e308d69b6f7ef4bb3db9816bfdb7f",
+   "bytes": 4167,
    "role": "prompt"
   },
   {
@@ -5182,8 +5182,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-CH07-002.txt",
-   "sha256": "95a7c6e766d44978d0eb549862e2ddd8597cd756d6755de2e5448fc5a8cf8c31",
-   "bytes": 4194,
+   "sha256": "ebd551a928ea8a9a1a2fd1962bd0064d5f1121b1bd0a651f33c4355ae96c7018",
+   "bytes": 4220,
    "role": "prompt"
   },
   {
@@ -5248,8 +5248,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-CLA-RANGER.txt",
-   "sha256": "1201e0fe6b03581c1719286725a202a8412fafd554f0b6868fe182af205b8f54",
-   "bytes": 3753,
+   "sha256": "0cbe13b0f24e8d38dc185f9b38c6fe99d8c32ce64b78d21f73eed440d537f035",
+   "bytes": 3732,
    "role": "prompt"
   },
   {
@@ -5266,8 +5266,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-CLA-TRICKSTER.txt",
-   "sha256": "9dfe672cebe871502da5fb061655901e4659f09d7248832db3d6f7dacc3a8c40",
-   "bytes": 3837,
+   "sha256": "507459f8bafd4b70105b70db7447b132e6f9d69e31cd40124f42a8b43704b38e",
+   "bytes": 3855,
    "role": "prompt"
   },
   {
@@ -5302,8 +5302,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-CLI-THE-UNDERMARCHES.txt",
-   "sha256": "2ab37cce9152566577a37cdddb450b5fc8d301a491cc2c01b561b99a2a25b4f6",
-   "bytes": 4606,
+   "sha256": "9cb6abc787313ceea2c79289e2c1b5c408030cdef309e768e49c5b59a7f1f076",
+   "bytes": 4608,
    "role": "prompt"
   },
   {
@@ -5368,8 +5368,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-BLACK-DRAGON.txt",
-   "sha256": "7ad9030116405784bde3f2f5e6e26421dbd7e95316ae17444867a2beaffab39e",
-   "bytes": 3945,
+   "sha256": "45b74668f6531aff5a2bb76ec8258a1ae51f49bbdec3c091b2a67514d36b1d09",
+   "bytes": 3940,
    "role": "prompt"
   },
   {
@@ -5392,8 +5392,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-BLUE-DRAGON.txt",
-   "sha256": "2ad8212c590bf042a33b5125c21b46d9b35826158bb10074e00f694076ef11a7",
-   "bytes": 4080,
+   "sha256": "251ce3485451d1ba5fa1a4d228ab727908efc5b9973b5ee36d9c5f43945d5d25",
+   "bytes": 4075,
    "role": "prompt"
   },
   {
@@ -5410,14 +5410,14 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-BRIARLING.txt",
-   "sha256": "7f6e675ce9cd0ca389d570d53ab9ce345af5d0cd7ef66a340669664e2f34be7b",
-   "bytes": 3895,
+   "sha256": "b27c08bed4606fd7e786ce0cbe2e326afb87906fef95505b7d8e24fdc1730ee7",
+   "bytes": 4012,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-BUGBEAR.txt",
-   "sha256": "c2401ea9894d7710c2ae8dedb3b36d8af2c82d2c8aee8c0b27a606e6227f095f",
-   "bytes": 3977,
+   "sha256": "15c262c2610dab8c857f4db58842e0e72a8f644d825167b2c220b6f9cd9fcbf7",
+   "bytes": 3993,
    "role": "prompt"
   },
   {
@@ -5434,8 +5434,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-CAVE-GOBLIN.txt",
-   "sha256": "49523873b15d040add8302fc43166808997dcbaa6576146ac9594cc7079c7471",
-   "bytes": 3839,
+   "sha256": "b408175fce56d82b1aa1345abe7add54d8e56e49c24dcd2bc2a00c0672cde583",
+   "bytes": 3881,
    "role": "prompt"
   },
   {
@@ -5470,8 +5470,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-DEMON.txt",
-   "sha256": "e89bbf17a7c8e7ff5436e5b95e8cd4d1dd6e8fa50b260ad82b67c8558279fe06",
-   "bytes": 3980,
+   "sha256": "44b9a25f057718c7ca676d7c61221d8bd22114b1046cbff15bf0f94a5736cc4b",
+   "bytes": 3975,
    "role": "prompt"
   },
   {
@@ -5500,8 +5500,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-ELDER-VRYMK.txt",
-   "sha256": "70cfc434dd8ce2aeefbe003c1f3a9778d8b15c7149282132a1927efb58ef6a00",
-   "bytes": 3956,
+   "sha256": "2041bf75106aba03fa9bc137be0fe58f7f3c13a56ad6b0df00fa8cb07377a7ae",
+   "bytes": 3951,
    "role": "prompt"
   },
   {
@@ -5512,20 +5512,20 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-EVIL-EYE.txt",
-   "sha256": "0d064c83c3bea3569b1be668b50e140b42c5abd1731f3d488aeae5cf7ca6ba68",
-   "bytes": 4161,
+   "sha256": "258bddf5569c1013595eb6abd66ffdbc074ec412e8b08879e44f5d11becbe989",
+   "bytes": 4190,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-FALLEN-PALADIN.txt",
-   "sha256": "23d92f372a393c1c5695fe1b21f26deb07d78b6101c141da1f613a56a1fed921",
-   "bytes": 3915,
+   "sha256": "cf959d8789c3e508ce1799809c780f060207a5204a7d93417fe976091e39ae27",
+   "bytes": 3972,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-FIRE-BEETLE.txt",
-   "sha256": "08c10151c098f9d1dbab22fd0a3b2bfabfab0969ca374f3a8d31391d6607b891",
-   "bytes": 3824,
+   "sha256": "7984bf45d0b75624f1fc0e83633c1cf453cdd68b2aaec9495e68bc00287c5a1c",
+   "bytes": 3856,
    "role": "prompt"
   },
   {
@@ -5554,8 +5554,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-FORSAKEN-KNIGHT.txt",
-   "sha256": "30f8ff313ed9938448544179ca36d9fa6101b5e2fd05dffac503223255b686a0",
-   "bytes": 3859,
+   "sha256": "eb8bf775d6ed64374eca1ddc8b778aad511f77b76e084d37c80f11677c4b122a",
+   "bytes": 3922,
    "role": "prompt"
   },
   {
@@ -5566,8 +5566,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-FROST-GIANT.txt",
-   "sha256": "894cb38a35d8101b009da043f4b312880fc09b7ae8489a667aa6ecd0a2175a3a",
-   "bytes": 3897,
+   "sha256": "d5928242661ab5bdfb756d4ad22a30356addf155c8b650b5d857b31e559c3f7c",
+   "bytes": 3892,
    "role": "prompt"
   },
   {
@@ -5644,8 +5644,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-GLOOM-HULK.txt",
-   "sha256": "43c73887babb7dbf1c2d04f7f9ee8ef1da32c097661ff7a202c51c6c2fd5c7aa",
-   "bytes": 3990,
+   "sha256": "368fea29ed1059e44e0bd1f9d2c242aced00acc42e5fee8754e677d2631acac5",
+   "bytes": 3995,
    "role": "prompt"
   },
   {
@@ -5680,20 +5680,20 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-GREEN-DRAGON.txt",
-   "sha256": "4e5d1834b717ce6356a3a7689bf72ab89d2d5074eb1cee2238dc49e2be849641",
-   "bytes": 4089,
+   "sha256": "bc6e60d6bca46f4aa163ae645d181e95a72288ed34ca6d20cf4faa79ee34479b",
+   "bytes": 4084,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-HARPY.txt",
-   "sha256": "f202e5b1a87fa5720c429ce743dd1ccc9ee96187435f1ed779f473b28a257bb2",
-   "bytes": 4021,
+   "sha256": "66e83836671feb683ee435b1635f37a4b776b7f4e9117899a57dd8fc0d312543",
+   "bytes": 3995,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-HYDRA.txt",
-   "sha256": "a7696c1a80fa203c03caa2338fa948e24970e8af4fe8a61a50dfc303cbe0f5b9",
-   "bytes": 4013,
+   "sha256": "4a28a161a376d81dd1d217a7ad8c0363ebfd6243d8b0f691569962e33eaeaa02",
+   "bytes": 4008,
    "role": "prompt"
   },
   {
@@ -5734,8 +5734,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-LICH.txt",
-   "sha256": "aa29f309a553e86248f28076bdeb9b03dddbeec761928df8993637ff5e4a3331",
-   "bytes": 3862,
+   "sha256": "19c0946c4acdd108e1debd69df6aa8d5819a5d2e9780780d4db5b3ea487d4640",
+   "bytes": 3904,
    "role": "prompt"
   },
   {
@@ -5788,8 +5788,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-MIRE-TITAN.txt",
-   "sha256": "e1dda88eeb18ac024e61449eb36e943a3bf71439bfed85540276c25f7e193d3e",
-   "bytes": 3958,
+   "sha256": "97d1ab514a51d195e35708b5ac4c0efb7ccf83aa7e10fee74e9b695a5d156a10",
+   "bytes": 4014,
    "role": "prompt"
   },
   {
@@ -5806,8 +5806,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-NOXCLOTH.txt",
-   "sha256": "62c90469b3c0b381528b169a79f4208c885edafb438074a5f8d0e1beb48a2d38",
-   "bytes": 3900,
+   "sha256": "23b98e7c49fdbe84622a5183a7afe770016c47b79f8b77f777e6e0c3687e5b7b",
+   "bytes": 3907,
    "role": "prompt"
   },
   {
@@ -5884,14 +5884,14 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-SNOW-GOBLIN.txt",
-   "sha256": "e8e29ac99482ea2f827e7d6193a7e3e4757154b7ee166aa5d2a95898faa6bd97",
-   "bytes": 3797,
+   "sha256": "13ab7f59a07c78a098d8b8afc47bf94c49a5062026b2e4fed82b1d280c3815be",
+   "bytes": 3792,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-SPECTRE.txt",
-   "sha256": "51ef329a8a65b3377f79536d19c882ffa9c45cc5e499904735913407bc4de1a9",
-   "bytes": 3963,
+   "sha256": "bc604b2811ce74ec105a9b66023f404f78e086f93810516e67ff0616faa9c70a",
+   "bytes": 4010,
    "role": "prompt"
   },
   {
@@ -5932,14 +5932,14 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-THE-ANCIENT-VOID-DRAGON.txt",
-   "sha256": "f22142f8797fa34d11ae06e64d1ee903ff397957d34cd49b66b0bc825d828bc4",
-   "bytes": 4454,
+   "sha256": "ff5c94cc84e6cad92067b3090cf794759bf82caf517661db7ae0dcfc2e7d0dee",
+   "bytes": 4479,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE.txt",
-   "sha256": "bd2a205112b1f03d0f5edf98cddaec190f1b379a4dc63a169708c6ae58bd4d48",
-   "bytes": 4410,
+   "sha256": "30530100c256e51ee4f3970ccf126dfb6c5fa152388c27edcd5ad00560226527",
+   "bytes": 4411,
    "role": "prompt"
   },
   {
@@ -5956,20 +5956,20 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS.txt",
-   "sha256": "59a837c3b944646c3436c5b13cb2000ef47d7068cc6349303923c41465fa210e",
-   "bytes": 4514,
+   "sha256": "9cfdfe2efa2e9f07554d68f3fea6d851e1042e53fe9e307dde7048d40eb73f21",
+   "bytes": 4519,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-THE-LAST-COLOSSUS.txt",
-   "sha256": "f067477f8b7e58acb4cfc24add7ff62da5ec59e6b96235131f3143f1f2dbb432",
-   "bytes": 4505,
+   "sha256": "0c1a13295f76cd641be4aae7ca745dc7fe7f0e4c14932fbc0ba9ac540ab8bf50",
+   "bytes": 4575,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-THE-SUN-CROWNED-PRINCE.txt",
-   "sha256": "11708ae0fb9e79e10381d37b82e5b9be002607f8266f55f3ee31431cf4facb59",
-   "bytes": 4505,
+   "sha256": "8725e4f69571a504c3560f41a4e2d304427f55afbcd12a31be50772296b48633",
+   "bytes": 4527,
    "role": "prompt"
   },
   {
@@ -6022,8 +6022,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-UNDEAD-SENTINEL.txt",
-   "sha256": "08af9a157162afe4ce395f60149f3f1a19f7ee21b3cd0af3b88d795a80b37182",
-   "bytes": 3913,
+   "sha256": "dd444d3346a5f6789d5d1abe0237ce7270b9fc9066f6309364a3865d7f4145f0",
+   "bytes": 3944,
    "role": "prompt"
   },
   {
@@ -6052,8 +6052,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL.txt",
-   "sha256": "15603a4d193dcbecc060a333b63bb24b6fc7ae3389abf8f276c4f3af02021660",
-   "bytes": 4212,
+   "sha256": "69413f2a894a5a81c47669f07c6a54b1263d726031b15d8f9cc0d790425b7ce2",
+   "bytes": 4202,
    "role": "prompt"
   },
   {
@@ -6064,14 +6064,14 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-WEREBEAR.txt",
-   "sha256": "1b9b874ed85abe8694ba1f7cb40490bafd7df1fea92f40b5b059f1e80f12f03c",
-   "bytes": 3910,
+   "sha256": "4c5f4d54c0998e38c541ad060dc0374efa5499bc7a7251cd49a4f09e79d54e60",
+   "bytes": 3931,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-WERERAT.txt",
-   "sha256": "b16a9dc960a81fdf29331fa20e46ab57f832636a4302cb3bec63b4f07974c39d",
-   "bytes": 3853,
+   "sha256": "67d0fa1282b7b1e911c82a5aacad5affcc793034836b730f2897984200f94daf",
+   "bytes": 3857,
    "role": "prompt"
   },
   {
@@ -6088,8 +6088,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-EXECUTIONER.txt",
-   "sha256": "868dca340ed4eee2a4eeb22569e8a9fd50b302f9c9083ee7b67fd25054061775",
-   "bytes": 3821,
+   "sha256": "0f1319c7b3255390934460ee38578f76a4be46e17aecfbc43b760f21f1a829b3",
+   "bytes": 3893,
    "role": "prompt"
   },
   {
@@ -6100,14 +6100,14 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-WHITE-COURT-SENTINEL.txt",
-   "sha256": "2c778b61aa050bc4be757ad019a73a3ef86c3123eb4d90c3e50d51559b34c15b",
-   "bytes": 3938,
+   "sha256": "b0da6255a2520b16aa1ece3322b5705f58818adc9d62d894a8eb13e321cc1ff0",
+   "bytes": 3940,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-WHITE-DRAGON.txt",
-   "sha256": "b14ea51d8e64143d8eb7c5dfedaecd78b4be3c0a94d3548febf6dc17ab5efe43",
-   "bytes": 3955,
+   "sha256": "730299f7a2a0ed9a301f0edffed2833418492c36e534630d00c117eda9164f14",
+   "bytes": 3950,
    "role": "prompt"
   },
   {
@@ -6118,8 +6118,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-MON-WIND-ELEMENTAL.txt",
-   "sha256": "cb5986bd6eaa5b51255e775350d04f79ea19e96b193bbb564bd029e1f1ada4c0",
-   "bytes": 4018,
+   "sha256": "4462baa65f788a92c68b60c81084fc2a79ac985d5e85c9b9b86e12f905a42772",
+   "bytes": 4012,
    "role": "prompt"
   },
   {
@@ -6136,8 +6136,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-1-HUNT-THE-WILD-BEAST.txt",
-   "sha256": "97bac6e7ae232d65ebe16d74728b2a54c65c4730b7252b5583a8fc2f13cbefd7",
-   "bytes": 4727,
+   "sha256": "ae97ac005e722981d01b90398ded3b6dc3fd5dfae41aad424a24052190f45f4a",
+   "bytes": 4732,
    "role": "prompt"
   },
   {
@@ -6196,8 +6196,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER.txt",
-   "sha256": "9175e37e12b19b07af908d16c3e2ae05d08c5e9d4783265fd29a3f6ecbf261d7",
-   "bytes": 4722,
+   "sha256": "1deea3ac16f2a0beb3360cbbb1b0d3c92c003ab0284cfbc97ac98b44a5b74b94",
+   "bytes": 4717,
    "role": "prompt"
   },
   {
@@ -6208,8 +6208,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL.txt",
-   "sha256": "b35eaf2c58093700de73d856c676b38fa350126e6a9e09a7de6b0a52341f5b97",
-   "bytes": 4629,
+   "sha256": "e231788003025e9a7a1453c98b80f715598786f2d029e86dd67fe5cb30561852",
+   "bytes": 4688,
    "role": "prompt"
   },
   {
@@ -6268,14 +6268,14 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE.txt",
-   "sha256": "f03725254f169e427eedf39854111824fbfdedb8d8c28b520bfd970b790e338a",
-   "bytes": 4470,
+   "sha256": "97c8167830ac0d0b15ba854cbe1ac7f944bcaa38134a5a8c65470cbfc70af667",
+   "bytes": 4496,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-4-THE-UNDERMARCHES-OUTPOST-RAID.txt",
-   "sha256": "b9ecc9295fffdccb852df0568cdfc42d04d4dcf3fc5157dae8efd3039d3128c9",
-   "bytes": 4298,
+   "sha256": "bd2986b0c17c2924d9d05c75e6ed7d5bd911f16222bd3271491c04cd27ed5218",
+   "bytes": 4305,
    "role": "prompt"
   },
   {
@@ -6340,8 +6340,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING.txt",
-   "sha256": "7932c4c0fc9208a15ee62c404346c303b56bf4fab972a5a681376e64b213ff4b",
-   "bytes": 4354,
+   "sha256": "3710dfe1e04455035bab7ff0175039d44a8d804f989431559f1f2806c7a25609",
+   "bytes": 4390,
    "role": "prompt"
   },
   {
@@ -6376,14 +6376,14 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-TRA-TIER-1-SORCERIES-D20.txt",
-   "sha256": "cb39beca27787ec14f16437bb20ba19d6fb6dfe3b519d6e7ff4e8347e146fca8",
-   "bytes": 3707,
+   "sha256": "e594b344e5b9c0815b45e277c7645e7e216010a16ff265246c2e61d1f0890e12",
+   "bytes": 3713,
    "role": "prompt"
   },
   {
    "path": "production/art/gpt/prompts/ART-TRA-TIER-2-ARCANE-SPELLS-D20.txt",
-   "sha256": "b260b7ae2b84cb9e84b2307f645fc08c6810cc7e62f8203345739b08ddbad509",
-   "bytes": 4156,
+   "sha256": "9baac467cc809e62a158b8b6da909e77fc11e901c632a641776de91f7504433f",
+   "bytes": 4150,
    "role": "prompt"
   },
   {
@@ -6472,8 +6472,8 @@
   },
   {
    "path": "production/art/gpt/prompts/ART-WOR-1-3-5-MONSTROUS-THREATS.txt",
-   "sha256": "4c5f0881ac347c1881dffff030885c6844c5271c8fb2217a8386ef5d25949ae8",
-   "bytes": 4079,
+   "sha256": "b6bc0ba595a58414968cddff118ff765d5449bd3f565cc6f4ceaa850ba6ac3ea",
+   "bytes": 4061,
    "role": "prompt"
   },
   {
@@ -6490,8 +6490,8 @@
   },
   {
    "path": "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip",
-   "sha256": "cfd3969a46002982c83d02c64b3540caba8897590c30e7bc37135822eb6220d7",
-   "bytes": 20471889,
+   "sha256": "24859e7cdad67e5e528f2d70c0c15e747621868fe53828ee31e4c769a54068e7",
+   "bytes": 20475128,
    "role": "skill_zip"
   },
   {
@@ -6514,8 +6514,8 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/VERIFICATION_REPORT.md",
-   "sha256": "4e6761c51f5e94e92fc82b740584056dbab5730908cbacb44b795b81915612d9",
-   "bytes": 2357,
+   "sha256": "93d69451759a27a4758f0392b985bed8c341a37300554c1f7e2fa5c72695e188",
+   "bytes": 4385,
    "role": "skill"
   },
   {
@@ -6568,50 +6568,50 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/build_release.py",
-   "sha256": "970299109183f04b130455d785d496a56c65563de9a92a5aac95c5863266b0f0",
-   "bytes": 1557,
+   "sha256": "a1c8ca6a16cb1c566ffa46d8d7dcc7fddba9416f79f808ef51a186e88c0a06f0",
+   "bytes": 1570,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py",
-   "sha256": "e4441aacd1d8c26de0a099abc6770f09b07eecb1c256266c08ad4edd325c7654",
-   "bytes": 13261,
+   "sha256": "cbac7bb4c306eed0a8ef1bc6f7ed65e3bd3915545ca79d9f334a11421e3a02db",
+   "bytes": 17448,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/fidelity_gate.py",
-   "sha256": "880c0e2213d9bcbd5e653188fca2bb6f7ffe207e0f4c861703ed290e644550db",
-   "bytes": 8532,
+   "sha256": "1cc51197c5f9473318f518c3d8a1a998d7e5c5ed12d31b6a07271a5a4f51bdaf",
+   "bytes": 8513,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py",
-   "sha256": "b2dd371a91c9e70bc9a6eff75a4a75bff52d1ed378fd6cc01f962078ddc97dab",
-   "bytes": 60052,
+   "sha256": "2b4c06def8108b12ce888254417b0f9c6748a697fd14235fbe0424a22def9011",
+   "bytes": 61058,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/style_audit.py",
-   "sha256": "c343e0fc5b8e28b5dd48ab0c70a5a7e417b94a47e47c8c20e97f8caa58bb49b3",
-   "bytes": 4856,
+   "sha256": "7a2ed2a97dd1e779ade0cd1562bd326235f32adfbc68b85c03336a7c4c28217a",
+   "bytes": 4846,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/validate_skill.py",
-   "sha256": "ceb3787224d72ee223375a6bb42615afd996bbe109ade1fe7876906fe23c0e9e",
-   "bytes": 8281,
+   "sha256": "93db43d1ba874ace3f72e83794a037e1c428abb4eca94970e7df94cd07d576df",
+   "bytes": 8409,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/scripts/work_preflight.py",
-   "sha256": "bbfc11955680e58fb72bad94ab58528ee87ea6824b88fc52deefc03a69b7867f",
-   "bytes": 11413,
+   "sha256": "086e92cb29f7cefa1196daf24d15f2f24c59a0ba4640402706a8fa90ea4b48fc",
+   "bytes": 11457,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/tests/test_delivery_sync.py",
-   "sha256": "576be049958dc783b77c3af259d605a55ddca1b67fcd0a45dd545f6ba7563030",
-   "bytes": 8846,
+   "sha256": "768adccf6a7b17d2b3d43f08e41b30bf0f09d8713ab6191670b832baa7a4960d",
+   "bytes": 13256,
    "role": "skill"
   },
   {
@@ -6622,14 +6622,14 @@
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/tests/test_v5_regression.py",
-   "sha256": "fe45e2126db833e2008bba4f174c2a90432ea76b440ba407b91f9d4a982f5a76",
-   "bytes": 14777,
+   "sha256": "1e055d7bc4483e59d2a386afb5b5308256b46eb6940b55d163138f9b3d67b137",
+   "bytes": 14935,
    "role": "skill"
   },
   {
    "path": "production/art/skill/heraldry-classic-ink-art/tests/test_v6.py",
-   "sha256": "1ff30d9819a6a9f04d7b20766910f7da914160aa1ffdf0ec44de056d1347fb90",
-   "bytes": 7796,
+   "sha256": "ac3049e23520db992a606cbc98359ce30efb7adfff71b8c104a1a8716731f97d",
+   "bytes": 7770,
    "role": "skill"
   }
  ],
