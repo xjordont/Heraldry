@@ -9,7 +9,7 @@ markdown-it produced from the protected source; the source hash is checked first
 Unsupported Markdown constructs raise instead of being dropped.
 """
 from __future__ import annotations
-import hashlib, json, re, sys, unicodedata
+import hashlib, json, re
 from pathlib import Path
 from markdown_it import MarkdownIt
 
@@ -183,7 +183,6 @@ def main():
     pub = text
     applied = []  # text patches belong to immutable manuscript revisions
     blocks = parse(pub)
-    lines = pub.split("\n")
 
     # ---- assign stable ids, chapters, anchors --------------------------------
     slugs = {}

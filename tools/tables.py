@@ -105,7 +105,6 @@ def allocate(mins, maxs, total):
                 w[i] = maxs[i]; done.append(i)
             else:
                 w[i] += give
-        used = sum(w) - (total - slack)
         slack = total - sum(w)
         if not done:
             break

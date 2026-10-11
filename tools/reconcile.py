@@ -36,7 +36,6 @@ def pdf_stream(pdf, skip_covers=False):
     doc = pymupdf.open(pdf)
     parts = []
     bold, ital = [], []
-    pos = 0
     global fonts
     fonts = set()
     for i, page in enumerate(doc):
@@ -48,7 +47,6 @@ def pdf_stream(pdf, skip_covers=False):
                 y0, y1 = l["bbox"][1], l["bbox"][3]
                 if y1 < TOP or y0 > BOT:
                     continue
-                prev_b = prev_i = False
                 for sp in l["spans"]:
                     t = sp["text"]
                     fn = sp["font"]

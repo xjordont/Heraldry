@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Extract the representative stress specimen (production material, not the book)
 from the cream interior by locating actual-content anchors, plus overscan stress renders."""
-import json, sys
+import json
 from pathlib import Path
 import pymupdf
 

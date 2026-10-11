@@ -59,7 +59,7 @@ def main() -> int:
         return f'{len(REQUIRED)} required files present'
 
     def source_integrity():
-        config = json.loads((root / 'config/production.json').read_text())
+        json.loads((root / 'config/production.json').read_text())
         from manuscript import check
         current = check(root)
         return {"sha256": current["sha256"], "bytes": current["bytes"], "version": f"RC{current['number']}"}
