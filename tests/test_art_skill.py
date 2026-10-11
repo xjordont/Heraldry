@@ -14,7 +14,8 @@ import heraldry_art as ha  # noqa: E402
 # Legacy v4 tests below remain in source to document the former unaudited save/push interface.
 # V6 requires evidence-backed --qa-file and guarded delivery; that contract is tested in
 # production/art/skill/heraldry-classic-ink-art/tests/test_v5_regression.py and test_v6.py.
-\nHAVE_GIT = shutil.which("git") is not None
+
+HAVE_GIT = shutil.which("git") is not None
 
 
 def figure_image(size=(1024, 1024), scale=0.7, offset=(0, 0)):
