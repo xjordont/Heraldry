@@ -1,6 +1,6 @@
 """delivery_guard.ship in a long unattended run: the intake bot commits to main after every
 delivery, so the next ship must fast-forward safely (disjoint paths) and stop on any overlap or
-divergence. Real git against a local bare remote; JPEG images avoid needing an LFS server."""
+divergence. Real git and Git LFS against a local bare remote."""
 import hashlib, json, shutil, subprocess, sys, tempfile, unittest
 from pathlib import Path
 from PIL import Image, ImageDraw
@@ -41,7 +41,7 @@ class ShipSync(unittest.TestCase):
         (seed / 'production/art/gpt/QUEUE.json').write_text(json.dumps({'schema': 2, 'items': [self.item]}))
         (seed / 'production/art/gpt/RECEIPTS.jsonl').write_text('{"id": "ART-OLD"}\n')
         (seed / 'production/art/SELECTIONS.json').write_text('{}\n')
-        (seed / '.gitattributes').write_text('assets/art/incoming/*.png filter=lfs diff=lfs merge=lfs -text\n')
+        (seed / '.gitattributes').write_text('assets/art/incoming/*.png filter=lfs diff=lfs merge=lfs -text\nassets/art/incoming/*.jpg filter=lfs diff=lfs merge=lfs -text\nassets/art/incoming/*.webp filter=lfs diff=lfs merge=lfs -text\n')
         git(seed, 'add', '-A'); git(seed, 'commit', '-qm', 'seed'); git(seed, 'push', '-q', 'origin', 'main')
         self.work = self.tmp / 'work'
         subprocess.run(['git', 'clone', '-q', str(self.origin), str(self.work)], check=True, capture_output=True)
@@ -152,6 +152,18 @@ class ShipSync(unittest.TestCase):
         self.assertTrue((self.work / 'assets/art/incoming/ART-T.jpg').is_file())
 
 
+    def test_next_fast_forwards_a_clean_clone_but_not_one_with_unsent_work(self):
+        import heraldry_art as ha
+        self.bot_commits('production/art/SELECTIONS.json', '{"ART-T": {"status": "rejected"}}\n')
+        up = git(self.origin, 'rev-parse', 'main').strip()
+        self.deliver_locally()                       # unsent work: never pulled over
+        ha.refresh(self.work)
+        self.assertNotEqual(git(self.work, 'rev-parse', 'HEAD').strip(), up)
+        git(self.work, 'checkout', '-q', '--', '.'); git(self.work, 'clean', '-qfd')
+        ha.refresh(self.work)                        # clean: the reviewer's rejection is seen now
+        self.assertEqual(git(self.work, 'rev-parse', 'HEAD').strip(), up)
+
+
 if __name__ == '__main__':
     unittest.main()
 
@@ -260,3 +272,27 @@ class DriftCountIsMonotonic(CadenceRepo):
         rep = sa.build(self.repo, recent=10)
         self.assertEqual([r['id'] for r in rep['items']], ['ART-T0'])
         self.assertEqual(self.ha.recent_ids(self.repo, self.ha.load_queue(self.repo), 10), ['ART-T0'])
+
+
+@unittest.skipUnless(HAVE, 'git required')
+class AttemptNumbering(CadenceRepo):
+    """Re-checking an earlier attempt (to save it) reports that attempt, not the number of images checked."""
+    def test_saving_an_earlier_attempt_records_that_attempt(self):
+        import os
+        from unittest import mock
+        with mock.patch.dict(os.environ, {'HERALDRY_SCRATCH': str(self.tmp / 'scratch')}):
+            self.queue(10)
+            q = self.ha.load_queue(self.repo)
+            files = []
+            for k in range(4):                       # budget 3, one generation too many
+                f = self.tmp / f'a{k}.png'
+                im = Image.new('RGB', (1024, 1024), 'white')
+                ImageDraw.Draw(im).rectangle((100 + 40 * k, 100, 900, 900 - 40 * k), outline='black', width=12)
+                im.save(f)
+                files.append(f)
+                *_, fails, warns, infos, pv, n, checked, dup = self.ha.run_check(self.repo, q, 'ART-T0', f)
+                self.assertEqual((n, checked), (k + 1, k + 1))
+            self.assertTrue(any('beyond the attempt budget' in x for x in fails))
+            *_, fails, warns, infos, pv, n, checked, dup = self.ha.run_check(self.repo, q, 'ART-T0', files[2])
+            self.assertEqual((n, checked), (3, 4))
+            self.assertFalse(any('budget' in x for x in fails))

@@ -45,10 +45,13 @@
 - `style_audit` and the recent-image list skip LFS pointers. `style_audit` defaults its report to scratch and prints its advisories.
 - `delivery_guard ship` fetches once per delivery, not twice.
 - The stale smoke-file gate and `--out` wording were removed from every worker document.
+- Re-checking an earlier attempt reports that attempt; receipts record `saved_attempt` beside `variants_tried`.
+- `next` and `status` fast-forward a clean clone first, so a mid-session redo shows at once.
+- Every incoming image format goes through Git LFS, enforced by `ship` and `doctor`.
 
 ## Tests
 
-- Skill suite (`python -m unittest discover -s tests`, run from the skill folder): **47 tests passed**, including new real-git tests for unpushed-commit recovery, a landed push, a format replacement, a refused deletion, a failed-push rollback, and a refusal reopening after a prompt fix.
+- Skill suite (`python -m unittest discover -s tests`, run from the skill folder): **49 tests passed**, including new real-git tests for unpushed-commit recovery, a landed push, a format replacement, a refused deletion, a failed-push rollback, and a refusal reopening after a prompt fix.
 - `scripts/validate_skill.py --zip ... --repo .`: **PASS**. Package hashes, required files, reference images byte-identical to the repository, and FAMILIES.md current.
 - Repository pipeline tests: the reference mapping, kind coverage (a missing or duplicate kind fails), the lead order, and that no isolated figure receives a scenic reference.
 - Prompt audit across all 270 queue prompts: hashes, no placeholders, every must and avoid line present, vignettes on scenes, isolation on figures, source text, size class, and no stipple or detail-heavy wording in subject details. **0 issues.**

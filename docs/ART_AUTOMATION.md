@@ -53,14 +53,15 @@ Manuscript issues found while briefing are recorded in `production/art/SOURCE_NO
    - Each queue item carries its register, its own references (at most three, from `gpt_reference_sets` in `config/art_style.json`), its printed width, its attempt budget (`gpt_max_attempts`: 3, and 5 for the cover and chapters) and the brief's must and avoid lists.
    - Registers keep scenery out of figures: `scene` (cover, chapter, world, climate, bastion, scenario, campaign, boss, tradition) gets Greythorn, the approved Greenmark anchor and an owner scene sample; `creature` (monster) and `person` (class, ancestry) get the owner's figure sample and their approved anchors; `still` (background, item) gets the figure sample.
    - The anchors phase comes first and uses the owner's samples. Once anchors are approved, the batch phase adds them by register.
-2. **ChatGPT Work** follows `production/art/gpt/INSTRUCTIONS.md` and the `heraldry-classic-ink-art` skill (below).
-   - It pastes each prompt verbatim, attaches that item's references only, stops at the first attempt that passes the checks (never beyond the item's budget), and saves the image unmodified as `assets/art/incoming/<ID>.png`.
-   - It appends a receipt to `production/art/gpt/RECEIPTS.jsonl` and commits in batches. `heraldry_art.py save` does the check, copy and receipt in one step.
+2. **The art worker** (Codex on the owner's PC; ChatGPT Work as the fallback) follows `production/art/codex/BATCH_CARD.md` (or `production/art/gpt/INSTRUCTIONS.md`) and the `heraldry-classic-ink-art` skill (below).
+   - It pastes each prompt verbatim, attaches that item's references only, stops at the first attempt that passes the checks (never beyond the item's budget), and saves the native image unmodified as `assets/art/incoming/<ID>.<png|jpg|webp>` (all Git LFS).
+   - `heraldry_art.py save` does the check, copy and receipt (`production/art/gpt/RECEIPTS.jsonl`, recording the saved attempt and how many were generated) in one step, and `delivery_guard.py ship` pushes each image as soon as it is saved.
+   - `next` and `status` first fast-forward a clean clone, so a rejection sent back mid-session appears as a redo at once.
 3. **The `Intake ChatGPT artwork` workflow** (on push to `assets/art/incoming/**`) runs `tools/art_intake.py scan`.
    - It writes a transparent pure-black ink derivative to `assets/art/ink/<ID>.png` (Git LFS).
    - It records the image as `received` in `production/art/SELECTIONS.json`, with hashes, pixels, flags and the receipt.
-   - It commits a review contact sheet to `production/art/review/`.
-4. **The orchestrator** reviews each sheet, plus enlarged crops where needed, and then runs one of:
+   - It commits no contact sheet (at one image per push that would add about 30 MB of history).
+4. **The orchestrator** runs `tools/art_intake.py pending --sheet` (flagged images first; it fetches just those ink files and writes local sheets to `build/art/review/`), reviews the sheets, plus the full-size image where needed, and then runs one of:
    - `tools/art_intake.py approve --ids ...`
    - `reject --ids ... --reason "..."`, which returns the entry to the queue; the reason is shown to the operator as a redo, so make it a sentence they can turn into a correction;
    - `approve-anchors`, which makes the received anchors the references for the batch queue.

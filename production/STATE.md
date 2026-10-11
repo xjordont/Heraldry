@@ -283,10 +283,16 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
     - The tarantula redo reason now uses the gritty-style wording.
   - **Lint:** unused imports and dead assignments were removed across `tools/`.
   - **Tests:** new regressions for the monotonic drift count, LFS pointers in `style_audit` and legacy pointers in `needs-pull`. The duplicate inherited cadence test runs were removed.
-  - **Left open:** the simulated run's minor items, not fixed:
-    - `save` reports the attempt number from the QA draft;
-    - review JPEGs in scratch grow over a long run;
-    - a mid-session rejection is seen only at the next pull.
-
-    The first real Codex delivery is still the first live test of intake.
+  - **Left open at that point:** three minor items from the simulated run, all fixed in the next pass. The first real Codex delivery is still the first live test of intake.
+  - No manuscript change and no build; `dist/` still describes the last requested build.
+- **Remaining issues fixed** (owner, 2026-10-11: "Fix all remaining issues first").
+  - **Attempt numbering:** re-checking an earlier attempt to save it now reports that attempt's own number. The receipt records `saved_attempt` beside `variants_tried`, and the "beyond the budget" tripwire applies only to an image generated past the budget. Before, saving attempt 3 after a 4th was checked recorded attempt 4 and blamed the saved image.
+  - **Review-sheet growth:** the intake bot no longer commits a contact-sheet JPEG on every run (about 30 MB of history over 270 one-image pushes). `tools/art_intake.py pending --sheet` fetches only the pending ink files and writes the sheets locally to `build/art/review/` (gitignored). The three sheets already committed stay.
+  - **Mid-session rejections:** `next` and `status` first fast-forward a clean clone (`git pull --ff-only`, no prompts, 120 s timeout; skipped with unsent work or in the offline package; a failure only prints a note). A redo sent back during a run now shows on the next item instead of one delivery later, or not at all at the end of the queue.
+  - **Found while fixing these:**
+    - JPEG and WebP deliveries would have bypassed Git LFS. `.gitattributes` now LFS-tracks every incoming image format; the older plain-git Greythorn JPEG is exempted, so it shows no change.
+    - `ship` and `doctor` enforce the LFS rule for every format.
+    - The intake's `needs-pull` only looked at PNGs, so a JPEG or WebP pointer would never have been fetched.
+    - Intake provenance named "ChatGPT Work" for every image; it now names the surface the receipt records.
+  - **Tests:** new regressions for the saved attempt number, the refresh (with and without unsent work), the WebP pointer fetch and the local review sheets. The delivery tests now use real Git LFS against a local remote.
   - No manuscript change and no build; `dist/` still describes the last requested build.

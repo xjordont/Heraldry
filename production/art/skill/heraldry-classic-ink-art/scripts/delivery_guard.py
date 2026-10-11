@@ -2,7 +2,7 @@
 """Guarded direct-main art delivery; read-only audit and explicit ship.
 
 Requires a clean index, a non-divergent origin/main, queued incoming images, full
-prompt- and native-byte-bound receipts, and Git LFS for PNG. Never force,
+prompt- and native-byte-bound receipts, and Git LFS for every incoming image. Never force,
 rebase, merge, change unrelated paths, or silently accept old receipts.
 """
 import argparse
@@ -147,8 +147,8 @@ def validate(repo, need_remote=True):
         if path != ALLOWED_RECEIPTS and (not match or match.group(1) not in known):
             raise Error('unrelated or unqueued working-tree change: ' + path)
         if match:
-            if path.endswith('.png') and not cmd(repo, 'check-attr', 'filter', '--', path).endswith(': lfs'):
-                raise Error('PNG missing LFS filter: ' + path)
+            if not cmd(repo, 'check-attr', 'filter', '--', path).endswith(': lfs'):
+                raise Error('image missing the LFS filter (pull the current .gitattributes): ' + path)
             img_path = repo/path
             if img_path.is_symlink() or not img_path.is_file():
                 raise Error('incoming image missing or symlink: ' + path)
@@ -289,12 +289,11 @@ def ship(repo, tries=3):
             if set(staged) != set(allowed):
                 raise Error('staged paths do not exactly match allowlisted paths')
             for img in pre['images']:
-                if img.endswith('.png'):
-                    if not cmd(repo, 'ls-files', '--stage', '--', img):
-                        raise Error('PNG not staged: ' + img)
-                    size = int(cmd(repo, 'cat-file', '-s', ':' + img))
-                    if size > 2048 or not cmd(repo, 'show', ':' + img).startswith('version https://git-lfs'):
-                        raise Error('PNG staged without a Git LFS pointer (run `git lfs install --local` in the clone): ' + img)
+                if not cmd(repo, 'ls-files', '--stage', '--', img):
+                    raise Error('image not staged: ' + img)
+                size = int(cmd(repo, 'cat-file', '-s', ':' + img))
+                if size > 2048 or not cmd(repo, 'show', ':' + img).startswith('version https://git-lfs'):
+                    raise Error('image staged without a Git LFS pointer (run `git lfs install --local` in the clone): ' + img)
             ids = [ALLOWED_IMAGE.fullmatch(x).group(1) for x in pre['images']]
             span = f'{ids[0]} .. {ids[-1]}' if ids else 'refusals'
             cmd(repo, 'commit', '-m', 'art(gpt): ' + span)
