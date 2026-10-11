@@ -4372,7 +4372,7 @@
      "Boots with spurs, belt of keys",
      "A battered wooden crate at its feet"
     ],
-    "atmosphere": "Hard command.",
+    "atmosphere": "Hard, practised command: a looted-mail leader who makes a rabble fight like soldiers and spends them to stay whole.",
     "avoid": [
      "Not the plain Bandit: higher status, upright, armoured",
      "No ornate royal gear",
@@ -4383,7 +4383,7 @@
      "9.7 The Bestiary, Greenmark Bestiary: Bandit Captain [Elite]"
     ]
    },
-   "spec_sha256": "3c864a9da4afd29d3f8fa8e238bd0a5d2b5f8dc7f47a705d584239a7c6cb6681"
+   "spec_sha256": "6f6c145ace2f62d80b367fc8ddc421d2ed46f3d864b5c6f6b455f3965176285e"
   },
   {
    "id": "ART-MON-DIRE-BEAR",
@@ -5371,7 +5371,7 @@
      "Ash drifting around greaves",
      "Heavy steady stride"
     ],
-    "atmosphere": "Cursed honour.",
+    "atmosphere": "Cursed honour curdled into compulsion: dead chivalry advancing, tireless and impossible to turn aside.",
     "avoid": [
      "Not the Forsaken Duelist (light) or Archer",
      "Not the Fallen Paladin",
@@ -5381,7 +5381,7 @@
      "9.7 The Bestiary, Ashlands Bestiary: Forsaken Knight [Soldier]"
     ]
    },
-   "spec_sha256": "a1727e81a1dbc3fc2fd93f5ab239a15b14746539b916434f74f92c0183e4fbc1"
+   "spec_sha256": "8b3e42a46396c09d658cabfd54adf8aa6ed0e9c7695a17f7515c7576eb51dc8c"
   },
   {
    "id": "ART-MON-FORSAKEN-DUELIST",
@@ -6388,7 +6388,7 @@
      "Dust motes drifting around it",
      "No wings, no limbs"
     ],
-    "atmosphere": "Cold regard.",
+    "atmosphere": "Cold, hostile regard: an alien intelligence that sees every other living thing as a rival to erase.",
     "avoid": [
      "No large toothy mouth: not a Beholder lookalike",
      "No extra eyes beyond the central eye and the four eyestalks",
@@ -6401,7 +6401,7 @@
      "9.7 The Bestiary, Undermarches Bestiary: Evil Eye [Elite]"
     ]
    },
-   "spec_sha256": "18508e4ee0d7205f29e6a0a64f528a510bc1c75d381f6ca224a7bad91cba59f8"
+   "spec_sha256": "377509a1757f8a300a28a309b746ae027aca785c9c00c59f62c95836d954f9cb"
   },
   {
    "id": "ART-MON-BURROWMAW",
@@ -6913,7 +6913,7 @@
      "Cracked smoking paws",
      "Snow melting in steam lines"
     ],
-    "atmosphere": "Hellish chase.",
+    "atmosphere": "A hellish chase across hissing snow: a pack hunter guttering with cold black flame.",
     "avoid": [
      "Not the Dire Wolf or Tundra Wolf (white fur)",
      "Not the Corpsehound (desert)",
@@ -6923,7 +6923,7 @@
      "9.7 The Bestiary, Pale City Bestiary: Blackfire Hound [Skirmisher]"
     ]
    },
-   "spec_sha256": "a7854162fee00620bd2ddd5ba1729b2370af623d79df6690250b625db5ed0796"
+   "spec_sha256": "33f59e26fdac1dce201b36a512b5469930fe6f9508ab8357aff1f7e7e344acff"
   },
   {
    "id": "ART-MON-ICE-WRAITH",
@@ -7956,7 +7956,7 @@
      "A single toppled stone head at its feet, face frozen in surprise",
      "Snake-hair biting forward"
     ],
-    "atmosphere": "Elegant doom.",
+    "atmosphere": "Elegant, patient doom among the stone figures of its former admirers.",
     "avoid": [
      "Not the Night Hag or Harpy",
      "No tentacles: the hair is snakes",
@@ -7968,7 +7968,7 @@
      "9.7 The Bestiary, Sun-Drowned Bestiary: Medusa [Elite] (Petrifying Gaze, AI Step 1)"
     ]
    },
-   "spec_sha256": "b097f898edd237138899abfd2d6756c3e0365a2e673dfcec467e37cc827d02b3"
+   "spec_sha256": "ebd576e0a4a0a4b4dad80b916f8d3891033cdbe1a60b9a66c2f2e8b4c9bbecce"
   },
   {
    "id": "ART-MON-TOMB-NECROMANCER",
@@ -8385,7 +8385,7 @@
      "Fine hairs",
      "A few reed tips below it"
     ],
-    "atmosphere": "Hungry itch.",
+    "atmosphere": "Hungry, darting menace: a blood-swollen pest out of the Mire's humming dusk.",
     "avoid": [
      "Not the Giant Bat (mammal)",
      "No more or fewer than six legs",
@@ -8398,7 +8398,7 @@
      "9.7 The Bestiary, The Mire Bestiary: Stirge [Minion]"
     ]
    },
-   "spec_sha256": "ca97817618608d2019a2953114cbd17bb41c208a45c166a36984a411a46d783c"
+   "spec_sha256": "4c45e8ab0a567bc4c2a0079392bfbe41cf093b8adba4b7b55f5241c3a06404fa"
   },
   {
    "id": "ART-MON-WILL-O-WISP",
@@ -8864,7 +8864,7 @@
      "Lower body dissolving in mist",
      "Fog and reeds"
     ],
-    "atmosphere": "Keening grief.",
+    "atmosphere": "Keening grief and the plain certainty of death, drifting through cold fog.",
     "avoid": [
      "Not the Spectre (burnt) or Ice Wraith (icy)",
      "No gore",
@@ -8874,7 +8874,7 @@
      "9.7 The Bestiary, The Mire Bestiary: Banshee [Controller]"
     ]
    },
-   "spec_sha256": "c94b89e416f7f04c6ede4a0fdc08bb114d53f6eb4045394fa5e73b9700109dea"
+   "spec_sha256": "9d1ab4b11065f12cda95c45d6c9ed5893223f1f7a8d9cf2d4aed5b8b78a1cbed"
   },
   {
    "id": "ART-MON-SWAMP-TROLL",
@@ -9325,7 +9325,7 @@
     "activity": [
      "No living humans except one tiny wrapped cocooned figure moving faintly"
     ],
-    "atmosphere": "Nursery dread.",
+    "atmosphere": "Nursery dread: a vast, bloated, patient horror at the heart of its twitching brood.",
     "avoid": [
      "Not the Spider's Silk Route ravine in the Greenmark",
      "No gore; cocoons are wrapped shapes",
@@ -9337,7 +9337,7 @@
      "1.3.2 The Undermarches"
     ]
    },
-   "spec_sha256": "a398208b6480d32fa8fd958826bb33c0d6417eeac2b56d280d1616020bba3a8d"
+   "spec_sha256": "e4e1b8e15cc97acec5c88dab49858da0e0faf28dd07e9328cad80af1701bade2"
   },
   {
    "id": "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN",
@@ -10641,7 +10641,7 @@
      "Priests chant in a ring, arms raised",
      "Two tiny intruders watch from the ledge"
     ],
-    "atmosphere": "Ritual dread.",
+    "atmosphere": "Ritual dread in a cavern without honest light, where something below the Dark answers the circle.",
     "avoid": [
      "Not the Shadowed Under Passage",
      "Do not show the bound thing",
@@ -10653,7 +10653,7 @@
      "1.3.2 The Undermarches"
     ]
    },
-   "spec_sha256": "7352c6b00aa26c97559492bb3d5bf6a52876acd00b67c0521c543c14410e1c5c"
+   "spec_sha256": "c584e8d2fcf9c55e4bf5f1d0e020de531a4d4989138cf66fcbad0db7c0f5391a"
   },
   {
    "id": "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS",
@@ -11728,7 +11728,7 @@
     "activity": [
      "One sentry stands with a torch, small"
     ],
-    "atmosphere": "Thin security.",
+    "atmosphere": "Thin security at nightfall: stone, timber, spikes and warding nails making the dark work harder.",
     "avoid": [
      "Not a returning party scene: no procession, no gate focus",
      "No monsters visible",
@@ -11739,7 +11739,7 @@
      "11.3 Building the Stronghold - The Outer Walls"
     ]
    },
-   "spec_sha256": "2461efe96625d0b376c68a740bc2e01ee1ad62bdce859ee5883bf19af6f02bdf"
+   "spec_sha256": "80dcc61002a69fcdd6b99bba4c0b747ed196d46ebe8d4391f6a34a9600b07349"
   },
   {
    "id": "ART-CAM-THE-ARCANUM",
@@ -11816,7 +11816,7 @@
     "activity": [
      "One survivor stands at the altar lighting a votive candle, hood up"
     ],
-    "atmosphere": "Hushed grief.",
+    "atmosphere": "Hushed grief and uneasy faith: a cold, cramped chapel crowded with the offerings of those who survived by inches.",
     "avoid": [
      "Not the Sablekeep bastion or Voice Beneath the Bells drowned chapel",
      "No readable inscriptions",
@@ -11828,7 +11828,7 @@
      "11.3 Building the Stronghold - The Stronghold Chapel"
     ]
    },
-   "spec_sha256": "236f776b39bc04bb53db067cb57dd77638cd8d70fa496cdac2b84fc81aabe8d4"
+   "spec_sha256": "bf73ce354d70b55d7df1958e75dc89007a162c1d90252aa890d5cc509f7cdc8d"
   },
   {
    "id": "ART-CAM-THE-WAR-ROOM",

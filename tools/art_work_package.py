@@ -96,6 +96,7 @@ def start_here(q, src):
     ids = "\n".join(f"{n}. `{it['id']}` ({it['register']}, {it['size']}, at most {it['max_attempts']} attempts) "
                     f"- attach exactly: {', '.join('`' + r + '`' for r in it['references'])}" for n, it in enumerate(q["items"], 1))
     h = f"python {SCRIPTS}/heraldry_art.py"
+    s = "/mnt/data/heraldry_work_scratch"
     return f"""# Heraldry ChatGPT Work input package: START HERE
 
 Source: `{src['repository']}` `{src['branch']}` commit `{src['commit']}`. Queue phase `{q['phase']}`, {q['count']} items.
@@ -105,9 +106,13 @@ in `WORK_PACKAGE.json`. It cannot push anything to GitHub, and it approves nothi
 
 ## 1. Unpack and verify (no Git, no credentials)
 
-Unzip into a new empty folder and work from that folder. Do not run `git init`, `git clone` or `git pull` here.
+Unzip into the new empty folder `/mnt/data/heraldry_work` (any empty folder works; these paths assume this one) and
+run every command from inside it. Do not run `git init`, `git clone` or `git pull` here. The helper keeps attempt
+counts, print-size previews and QA copies in the sibling folder `{s}`; put your own scratch files
+(native images, QA JSON, smoke record) there too, never inside the package folder.
 
 ```
+cd /mnt/data/heraldry_work
 python {SCRIPTS}/work_preflight.py --repo . --offline-package --require-installed
 {h} doctor
 {h} status
@@ -120,9 +125,9 @@ packaged file; the preflight rejects any change (receipts may only grow).
 ## 2. Smoke test inside Work (required; no script can do it)
 
 Confirm that the image tool accepts every reference of an item as an attached image and that the generated
-native file is on disk where Python can read it. Only if all three are true, write `/mnt/data/scratch/smoke.json`:
+native file is on disk where Python can read it. Only if all three are true, write `{s}/smoke.json`:
 `{{"image_generated": true, "all_queue_references_attached": true, "native_file_accessible": true, "note": "..."}}`
-and rerun the preflight with `--smoke-file /mnt/data/scratch/smoke.json`. If the tool cannot take every listed
+and rerun the preflight with `--smoke-file {s}/smoke.json`. If the tool cannot take every listed
 reference, STOP and report a capability blocker. Never generate without them.
 
 ## 3. Generate the five calibration anchors only
@@ -130,17 +135,18 @@ reference, STOP and report a capability blocker. Never generate without them.
 {ids}
 
 For each item follow `{SKILL_DIR}/SKILL.md` and `references/WORK_OPERATIONS_V6.md` exactly: `show ID`; the
-verbatim prompt; only the listed references; `check ID IMAGE`; inspect the native image and print-size preview
-beside the references; `fidelity_gate.py create` into scratch (outside this folder); complete all ten criteria with
-real evidence; `save ID IMAGE --qa-file ... --must ... --avoid-clear`. Retries follow `references/REPAIR.md`
-within the attempt budget. Keep every native file byte-identical.
+verbatim prompt; only the listed references; save the native file as `{s}/<ID>_aN.png`; `check ID FILE`;
+inspect the native image and print-size preview beside the references; `fidelity_gate.py create ... --out
+{s}/<ID>.qa.json`; complete all ten criteria with real evidence; `save ID FILE --qa-file {s}/<ID>.qa.json
+--must ... --avoid-clear`. Retries follow `references/REPAIR.md` within the attempt budget. Keep every native file
+byte-identical.
 
 ## 4. Deliver a review ZIP and stop
 
 ```
-{h} sheet --refs --out /mnt/data/scratch/anchors_sheet.jpg
-python {SCRIPTS}/style_audit.py --repo . --limit 10 --out /mnt/data/scratch/anchors_style.json
-{h} bundle --out /mnt/data/Heraldry_Work_Review_{q['phase']}.zip --evidence /mnt/data/scratch/anchors_sheet.jpg --evidence /mnt/data/scratch/anchors_style.json --evidence /mnt/data/scratch/smoke.json
+{h} sheet --refs --out {s}/anchors_sheet.jpg
+python {SCRIPTS}/style_audit.py --repo . --limit 10 --out {s}/anchors_style.json
+{h} bundle --out /mnt/data/Heraldry_Work_Review_{q['phase']}.zip --evidence {s}/anchors_sheet.jpg --evidence {s}/anchors_style.json --evidence {s}/smoke.json
 {h} status
 ```
 
