@@ -661,16 +661,12 @@ def cmd_status(a, repo):
     elif due and not git_ok(repo):
         action = (f"DRIFT REVIEW, THEN BUNDLE: `{helper()} sheet --refs`, then the style audit, then `{helper()} bundle --evidence SHEET "
                   "--evidence STYLE_JSON [--evidence SMOKE_JSON]` and hand the zip to the owner: git is not available here.")
-    elif due and not drift_due:
-        action = ("DELIVER: `python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py audit --repo .`, then "
-                  "`python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .`; "
-                  "on BLOCKED stop and use `" + helper() + " bundle`.")
     elif due:
-        action = (f"DRIFT REVIEW, THEN GUARDED DELIVERY. First `{helper()} sheet --recent {review_at} --refs` and "
-                  f"`style_audit.py --recent {review_at}`; look for shared drift. Then `" + helper() + " sheet --refs`; "
-                  "then `python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py audit --repo .` "
-                  "and, only if it passes, `python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .`. "
-                  "On any LFS/auth/conflict failure STOP and use `" + helper() + " bundle`. Never force-push or auto-rebase receipts.")
+        ship = ("`python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .` "
+                "(it runs every delivery check itself); on BLOCKED stop and use `" + helper() + " bundle`.")
+        action = ("DELIVER: " + ship) if not drift_due else (
+            f"DRIFT REVIEW, THEN DELIVER. `{helper()} sheet --recent {review_at} --refs` and `style_audit.py --recent {review_at}`; "
+            "look for shared drift and redo the worst first. Then " + ship)
     elif todo:
         note = (f" ({len(saved)} saved and not sent yet: send at {push_at}, or run `status --end` at session end)" if unsent else "")
         action = f"GENERATE next: {', '.join(todo[:3])}{' ...' if len(todo) > 3 else ''}  (`{helper()} next`){note}"

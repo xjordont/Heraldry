@@ -46,9 +46,7 @@ def decode_image(path):
     if data[:len(LFS_MAGIC)]==LFS_MAGIC:
         raise ValueError('Git LFS pointer, not image bytes')
     with Image.open(path) as im:
-        im.verify()
-    with Image.open(path) as im:
-        im.load()
+        im.load()                                    # a full decode also catches what verify() would
         return im.format, [im.width, im.height]
 
 
@@ -90,9 +88,12 @@ def check_package(repo):
         data=json.loads((repo/'production/art/gpt/QUEUE.json').read_text(encoding='utf-8'))
         ids=[it['id'] for it in data['items']]
         if qrec.get('ids')!=ids:errors.append('package manifest item IDs differ from QUEUE.json')
+        checked=set()                                # each reference is shared by many items: decode it once
         for it in data['items']:
             if it['prompt'] not in listed:errors.append('prompt not listed in package manifest: '+it['prompt'])
             for ref in it['references']:
+                if ref in checked:continue
+                checked.add(ref)
                 if ref not in listed:errors.append('queue reference not packaged: '+ref);continue
                 f=repo/ref
                 if not f.is_file():continue
@@ -135,15 +136,16 @@ def run(repo,mode='auto',smoke_file=None,require_installed=False,offline_package
     try:
         data=json.loads(q.read_text(encoding="utf-8"))
         if data['schema']<2:errors.append('Queue schema must be 2+')
+        for ref in sorted({r for it in data['items'] for r in it['references']}):   # shared by many items: once each
+            f=repo/ref
+            if not f.is_file():errors.append('missing reference: '+ref);continue
+            with f.open('rb') as fh:
+                if fh.read(len(LFS_MAGIC))==LFS_MAGIC:errors.append('LFS pointer, fetch before generation: '+ref)
         for it in data['items']:
             p=repo/it['prompt']
             if not p.is_file():errors.append('missing prompt: '+it['prompt']);continue
             b=p.read_text(encoding="utf-8").removesuffix('\n').encode()
             if hashlib.sha256(b).hexdigest()!=it['prompt_sha256']:errors.append('prompt hash mismatch: '+it['id'])
-            for ref in it['references']:
-                f=repo/ref
-                if not f.is_file():errors.append('missing reference: '+ref)
-                elif f.read_bytes()[:32].startswith(b'version https://git-lfs'):errors.append('LFS pointer, fetch before generation: '+ref)
     except (OSError,ValueError,KeyError,TypeError) as e:errors.append('Bad queue: '+str(e))
     git=shutil.which('git');lfs=False;remote_ok=False
     source={'kind':'git_checkout'}

@@ -65,7 +65,7 @@ python scripts/validate_skill.py --zip /path/to/Heraldry_Classic_Ink_Art_Skill_v
   - `WORK_OPERATIONS.md`: operations.
   - `AD_HOC.md`: one-off requests.
 - `references/images/`: byte-identical copies of every reference image any queue item can attach, plus the approved Greythorn render, with a SHA inventory. The queue's own reference paths are authoritative.
-- `scripts/`: `heraldry_art.py`, `fidelity_gate.py`, `style_audit.py`, `work_preflight.py`, `delivery_guard.py`, `validate_skill.py`, `build_release.py`.
+- `scripts/`: `heraldry_art.py`, `fidelity_gate.py`, `style_audit.py`, `work_preflight.py`, `delivery_guard.py`, `validate_skill.py`. The ZIP is built by `tools/art_skill_build.py` in the repository.
 - `tests/`: offline regression tests. The `test_v5_regression.py` and `test_v6.py` file names are historical.
 
 The skill package does not contain the 270 queued prompts; they live in the repository queue.

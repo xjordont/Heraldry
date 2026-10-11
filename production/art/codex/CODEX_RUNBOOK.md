@@ -86,9 +86,10 @@ Only after all three succeed, write a scratch JSON record with `image_generated`
 When `status` asks for delivery:
 
 ```powershell
-& $artPython production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py sheet --refs --out "$env:HERALDRY_SCRATCH\sheet.jpg"
-& $artPython production/art/skill/heraldry-classic-ink-art/scripts/style_audit.py --repo . --out "$env:HERALDRY_SCRATCH\style.json"
-& $artPython production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py audit --repo .
+# every tenth image (status says DRIFT REVIEW), first:
+& $artPython production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py sheet --recent 10 --refs --out "$env:HERALDRY_SCRATCH\sheet.jpg"
+& $artPython production/art/skill/heraldry-classic-ink-art/scripts/style_audit.py --repo . --recent 10 --out "$env:HERALDRY_SCRATCH\style.json"
+# after every image:
 & $artPython production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .
 ```
 

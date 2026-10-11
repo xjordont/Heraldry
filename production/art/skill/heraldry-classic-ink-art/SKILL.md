@@ -104,8 +104,7 @@ The batch queue sets `push_every: 1` and `review_every: 10` (owner 2026-10-11): 
 2. **DRIFT REVIEW** (every tenth save): first `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10 --out <scratch>/style.json`, and read `references/VISUAL_ACCEPTANCE.md`. Look for drift (thicker or thinner line, grey tone, a cleaner or softer finish than the references), repeated poses or compositions, and scenery behind figures. Redo the worst before delivering; the attempt budget still counts every attempt. Then deliver.
 
 ```
-python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py audit --repo .
-python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .
+python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .   # validates, then commits and pushes
 ```
 
 `ship` fast-forwards over the intake bot's commits when they touch none of the delivered files, and retries a lost push once more. If the guard blocks (divergence, an overlap, an unknown local change, missing Git LFS, authentication), do **not** force-push, rebase or assume delivery. Use `bundle`, report that no push occurred, and stop. The guard commits only queue IDs under `assets/art/incoming` and the JSONL receipts. Claude Code controls review, inking, proofs and approval.
@@ -138,7 +137,7 @@ The exact queued prompt and its must and do-not-draw clauses remain authoritativ
 - **Capability smoke test:** `references/WORK_OPERATIONS.md` and `scripts/work_preflight.py` check the environment, references and Git LFS. The image tool must actually accept the listed reference images; the script cannot discover that.
 - **Image-bound visual QA:** `qa ID IMAGE` writes the `fidelity_gate.py` draft outside the clone. Complete all ten criteria with concrete evidence; `save` finds the draft. The helper refuses incomplete or stale reports, and a clean `check` never substitutes for looking. See `references/STYLE_CONSISTENCY.md`.
 - **Native dimensions (owner 2026-10-11):** the queue size is the minimum at a fixed aspect. Request the largest size offered at that aspect. A smaller or off-aspect image is a recorded exception that needs reviewer approval.
-- **Delivery:** only through `delivery_guard.py audit` then `ship --execute`. It verifies each image against its latest native-hash receipt, the prompt hash, unchanged references and all ten QA entries, and blocks on a dirty index, unexpected paths, missing LFS or divergence. Never bypass it with a direct `git add` or push.
+- **Delivery:** only through `delivery_guard.py ship --execute`, which validates first (`audit` runs the same validation alone, for diagnosis). It verifies each image against its latest native-hash receipt, the prompt hash, unchanged references and all ten QA entries, and blocks on a dirty index, unexpected paths, missing LFS or divergence. Never bypass it with a direct `git add` or push.
 - **Drift:** compare four-edge ink statistics with an actual look; a number never proves a vignette. When two sibling images share the same drift, stop and report it.
 - **Independent review:** Claude Code reviews every delivered image. You never approve, and a numerical score is never approval.
 - **Installed version:** `work_preflight.py --require-installed` confirms the clone carries this v7 skill before production.

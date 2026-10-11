@@ -4,7 +4,7 @@
 
 Use Codex on the owner's Windows PC with the authenticated `xjordont/Heraldry` checkout on `main`. GitHub holds the authoritative prompts, queue, references, artwork, receipts, and review decisions. The separate art checkout provides local file bytes and Git LFS transport.
 
-Start with [CODEX_PROMPT.md](../codex/CODEX_PROMPT.md), which follows [CODEX_RUNBOOK.md](../codex/CODEX_RUNBOOK.md), `INSTRUCTIONS.md`, and the deployed v7 skill. Deliver production artwork through `delivery_guard.py audit` and `ship --execute` to GitHub `main`. Keep native attempts, smoke evidence, QA reports, previews, and contact sheets outside the checkout.
+Start with [CODEX_PROMPT.md](../codex/CODEX_PROMPT.md), which follows [CODEX_RUNBOOK.md](../codex/CODEX_RUNBOOK.md), `INSTRUCTIONS.md`, and the deployed v7 skill. Deliver production artwork through `delivery_guard.py ship --execute` to GitHub `main`. Keep native attempts, smoke evidence, QA reports, previews, and contact sheets outside the checkout.
 
 If guarded delivery fails, preserve the work and create the review bundle. Report that delivery remains pending; do not force-push, auto-rebase, or pull over unsent artwork or receipts. ZIP transfer is a fallback, rather than the primary workflow. Independent review and the stop after the five anchors still apply.
 
@@ -12,7 +12,7 @@ Installing these instructions does not authorize image production. A readiness-o
 
 ## Offline Work fallback
 
-The owner pastes this into ChatGPT Work to start an art session, with the current input package attached (`production/art/work/Heraldry_Work_Input_<phase>.zip`, or the artifact from the `Export Work calibration inputs` workflow).
+The owner pastes this into ChatGPT Work to start an art session, with the current input package attached (`production/art/work/Heraldry_Work_Input_<phase>.zip`, committed and kept current by the repository tests).
 
 **No credentials ever go into a Work conversation.** An earlier draft (2026-10-11) had Work clone and push with a GitHub token. ChatGPT refused it and flagged the pasted token as a leaked secret, and it was right to: a credential pasted into a third-party chat is exposed. That route is withdrawn. Use only what is below. If a token was ever pasted, revoke it.
 

@@ -22,17 +22,13 @@ jobs:
           python-version: '3.12'
       - name: Install locked dependencies
         run: python -m pip install -r requirements.lock
-      - name: Build v7 artwork skill release for verification
-        run: |
-          python tools/art_skill_build.py --check
-          python tools/art_skill_build.py
-          python production/art/skill/heraldry-classic-ink-art/scripts/validate_skill.py --zip production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip --repo .
-      - name: Test v7 artwork skill guards
-        run: python -m unittest discover -s production/art/skill/heraldry-classic-ink-art/tests -p 'test_*.py' -v
+      - name: Test the artwork skill
+        # the committed skill ZIP and the offline package are checked for currency by the repository tests below
+        run: python -m unittest discover -s production/art/skill/heraldry-classic-ink-art/tests -p 'test_*.py'
       - name: Check immutable manuscript chain and production contracts
         run: python tools/preflight.py --baseline
       - name: Check revision and failure gates
-        run: python -m unittest discover -s tests -v
+        run: python -m unittest discover -s tests
       - name: Protect prior snapshots and revision records
         env:
           BASE_REF: ${{ github.event.before || github.event.pull_request.base.sha }}

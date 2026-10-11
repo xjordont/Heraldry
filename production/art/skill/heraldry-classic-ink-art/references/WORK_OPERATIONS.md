@@ -12,7 +12,7 @@ Repository/Claude Code owns canonical prose, prompt writing, uniqueness audit, q
 4. Verify that the exact image bytes are accessible on the local filesystem, and that the listed visual references were actually attached. This is a manual tool-capability check; the preflight cannot inspect the image-tool UI.
 5. Only if all three conditions hold may the operator write a scratch JSON smoke record with `image_generated`, `all_queue_references_attached`, and `native_file_accessible` set to true. Rerun `work_preflight.py --smoke-file /scratch/smoke.json`.
 6. Run `check`, write a visual-QA JSON outside the clone, and `save` with `--qa-file`.
-7. Run `delivery_guard.py audit --repo .` then `delivery_guard.py ship --execute --repo .` if it passes. If anything blocks, use the helper's `bundle` and hand that ZIP to the reviewer with a clear note that no Git push occurred.
+7. Run `delivery_guard.py ship --execute --repo .`; it validates before it commits. If anything blocks, use the helper's `bundle` and hand that ZIP to the reviewer with a clear note that no Git push occurred.
 8. Confirm the exact commit and its LFS content were received by GitHub and the intake; don't equate local `git commit` with delivery.
 
 ## Offline input package route (no authenticated Git)
