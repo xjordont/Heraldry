@@ -216,3 +216,6 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **STYLE-REF-03:** kept for creatures and still lifes.
   - **Queue:** republished; only reference lists changed, not prompt text.
   - **Updated alongside:** the skill ZIP, the fallback package and the tests.
+- **Reference bank** (owner, 2026-10-11, sixteen examples: "Bank these example art pieces I'm going to send more"). They are stored as STYLE-REF-12 to STYLE-REF-27 in `assets/art/style/` and recorded under `banked` in `STYLE_REFS.json`, each with a category and any caveat (grey tone, screen tone, monogram or pseudo-writing).
+  - **Coverage:** still lifes and equipment, non-undead beasts, cavern and swamp landscapes, interiors, and magic.
+  - **Not attached yet:** no reference set, prompt or queue changed. The sets will be revised once the owner has sent the rest.

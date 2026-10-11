@@ -25,6 +25,7 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   | Bastion and world scenes (`family_sets`) | STYLE-REF-11 walled town from its approach road (bold contour, heavy blacks, open sky), STYLE-REF-02 city panorama (line construction of a dense city), STYLE-REF-09 |
 
   The owner promoted STYLE-REF-08 and STYLE-REF-02 back into use (2026-10-11). STYLE-REF-03 now serves creatures and still lifes only.
+- **Bank:** STYLE-REF-12 to STYLE-REF-27 (owner, 2026-10-11) are on file but not attached until the owner chooses. They cover still lifes, beasts, wilderness, interiors and magic; see `banked` in `STYLE_REFS.json` for each one's category and caveats.
 - **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached, because their grey tone cannot print in black ink. Take from them only the dramatic black massing and composition.
 - **Cut and superseded:** the owner cut STYLE-REF-01 (the file is removed; it remains in git history). It was replaced by the best of four city scenes the owner attached: STYLE-REF-11, used only for bastion and world scenes so that town features do not bleed into other scenes. It is an owner exception to the rule against machine-made references. STYLE-REF-02 (clean panorama line) was later promoted back for bastion and world scenes. The eleventh example was STYLE-REF-03 again (byte-identical), which stays.
 - **Prompts:** `prompt_v2` (intro, `style_*`, `final_*`, `reference`) carries this wording. The queue was republished with new prompt hashes.

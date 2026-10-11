@@ -1,5 +1,5 @@
 {
- "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets.",
+ "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses.",
  "refs": [
   {
    "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
@@ -150,6 +150,216 @@
    ],
    "sha256": "dfb7730904207f13bd221f4cfc2dd354c210158f9191fdcd62265ad03956c1d1",
    "use": "ink wash and splatter mood only. Grey wash cannot print in the book's pure black ink, so it is never attached to generation, never placed and never packaged; take only its dramatic black massing and composition"
+  }
+ ],
+ "banked": [
+  {
+   "path": "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2095,
+    1278
+   ],
+   "sha256": "c5737c4513206c9a537ec8bc66b5cf3e480982003c71e70b5bb45d2af80f66ca",
+   "category": "magic (tradition)",
+   "role": "Two figures watching a spell storm over hills; magic drawn as ink bands and cloud line",
+   "caveat": "grey screen tone in the sky; would need the tone ignored",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    768,
+    1950
+   ],
+   "sha256": "ca8ffbb44c549e49814f7d9a47a5d9be51a937360bbb64f829a47fcf52fc58f7",
+   "category": "landscape: caverns (climate)",
+   "role": "Underground river with stalactites; scratchy pen water and rock",
+   "caveat": "narrow (768 px wide)",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-14-skull-serpent-engraving.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2576,
+    1474
+   ],
+   "sha256": "1cbb223223a33e61886f34b637109523f0b727d428b4cb6512134a4cc74d8c9e",
+   "category": "still life",
+   "role": "Engraved skull, serpent, broken sword and beads on a vignette ground",
+   "caveat": "signed monogram lower left: crop before use",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2402,
+    542
+   ],
+   "sha256": "c0b2f4a441a343f13d5fb1a74ee1e7690910d10f93f0e22f640d2299d7023712",
+   "category": "still life: equipment",
+   "role": "Sword and morning star, isolated on white, bold contour",
+   "caveat": "",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2050,
+    1671
+   ],
+   "sha256": "bf541cf5db6d0a9885875bcd8228d7316ea28c570d9e06874dac763d74ff2e9f",
+   "category": "creature (non-undead)",
+   "role": "Winged armoured dragon-man on a rock; heavy spot blacks, isolated on white",
+   "caveat": "",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2576,
+    1413
+   ],
+   "sha256": "810ca2251898af3c22e446c18d4c124b5ef4b91b4ca579634c5dfbcb1cffe30d",
+   "category": "landscape: swamp (climate)",
+   "role": "Hag's hut in a mire, skull posts; heavy brush blacks, dry-brush frame",
+   "caveat": "grey paper tone and soft grey water",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    1627,
+    1709
+   ],
+   "sha256": "cd2e51604499f97122295a4b2c170bab0ad744ad3f73be1257bfaaea9d52484c",
+   "category": "creature (beast)",
+   "role": "Roaring bear, isolated on white; scratchy fur hatching into solid black",
+   "caveat": "",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2352,
+    685
+   ],
+   "sha256": "f877cb4daeadb1cde2ed648cb0205e27871db079b85019f34295da7683e049e3",
+   "category": "still life: gear",
+   "role": "Pack, coiled rope and lantern on a ground line; scratchy pen hatching",
+   "caveat": "",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-20-armoury-interior.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    1083,
+    1467
+   ],
+   "sha256": "7f79d0695139e98bdd743feb20d57758f4892287a36458113a59dfe842e6b6e0",
+   "category": "interior (campaign room)",
+   "role": "Armour on stands, crossbow on a table, stone wall; clean bold line with spot blacks",
+   "caveat": "",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2356,
+    1157
+   ],
+   "sha256": "30010c3bd9d25145f104e9964ead9913b86a1090f2cf3bbd0bc9a21ba33f4b59",
+   "category": "scene / persons",
+   "role": "Warrior, archer, dwarf, halfling and wizard on a forest path; brush ink",
+   "caveat": "wizard's hat carries star and moon symbols",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2410,
+    1199
+   ],
+   "sha256": "89be4f1b7207b0db9747a6145ba13dbefc9a8ef69441454b145c89390a70f610",
+   "category": "creature (beast) / scene",
+   "role": "Wolf pack running through a forest; brush and scratchy hatching",
+   "caveat": "",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-23-dungeon-arches-screentone.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    1826,
+    1522
+   ],
+   "sha256": "d17195a706e6701d51948f514bf35ce3ace964c5089e9729170b2304d7f62829",
+   "category": "interior (dungeon)",
+   "role": "Vaulted dungeon corridor with torches",
+   "caveat": "mechanical dot screen tone and a monogram 'R' (lower right): structure reference only",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-24-flanged-mace-line.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2576,
+    1932
+   ],
+   "sha256": "2fa676ff85da3290cbc6175763c5b866bcdb75ebf07595b8d21fa4f0c250feae",
+   "category": "still life: equipment",
+   "role": "Single flanged mace, clean line, isolated",
+   "caveat": "very clean and light, closer to the old style",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2576,
+    1932
+   ],
+   "sha256": "f0ec56c473e347f176863339f1070416e77959b38b6a59bbd1c9eda97acae74f",
+   "category": "still life: equipment",
+   "role": "Pair of bracers, heavy blacks, stipple cast shadow",
+   "caveat": "grey gradient background and a stipple shadow",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2023,
+    1861
+   ],
+   "sha256": "e29e982182b957c785650d3bde89731ec2b68b206d7975ad577e9f9288d8a4bf",
+   "category": "magic (tradition) / interior",
+   "role": "Wizard summoning a furred winged beast; magic as white light carved from black",
+   "caveat": "open book with pseudo-writing",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+   "source": "owner-supplied example, 2026-10-11 (original bytes)",
+   "px": [
+    2409,
+    732
+   ],
+   "sha256": "0737e6ba2c146f52e1614be74942564034e4008977dbedf6da3e1e14f4506ebb",
+   "category": "still life: item",
+   "role": "Carved scroll case with stipple ground shadow",
+   "caveat": "pseudo-script carved on it: lettering risk",
+   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
   }
  ]
 }
