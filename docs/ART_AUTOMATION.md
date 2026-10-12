@@ -56,7 +56,7 @@ Manuscript issues found while briefing are recorded in `production/art/SOURCE_NO
 1. **`python3 tools/art_gpt_pack.py`**
    - Writes `production/art/gpt/QUEUE.json` (schema 2), `QUEUE.md` and one prompt file per pending entry in `production/art/gpt/prompts/`.
    - Each queue item carries its register, its own references (at most six, from `gpt_reference_sets` in `config/art_style.json`), its printed width, its attempt budget (`gpt_max_attempts`: 1, one generation per item, owner 2026-10-12) and the brief's must and avoid lists.
-   - References come from `gpt_reference_sets` (mapping v7, 17 sets; see `docs/ART_DIRECTION.md`). Precedence:
+   - References come from `gpt_reference_sets` (mapping v8, 17 sets of up to six; see `docs/ART_DIRECTION.md`). Precedence:
      1. `kind_sets`: five monster kinds, by ID; the pack fails if a monster has no kind or two.
      2. `family_sets`.
      3. The register `sets`.
@@ -91,9 +91,9 @@ Only `approved` and `anchor-approved` art is placed in the book.
 - Generated images are recorded as AI-generated, naming the surface the receipt records (Codex or ChatGPT Work), never as hand-drawn.
 - Rules and deployment diagrams remain source-faithful vector figures and are not generated.
 
-## The skill (v7)
+## The skill (v8)
 
-`production/art/skill/heraldry-classic-ink-art/` is the skill source, and Codex runs it straight from the clone. The installable ZIP (`Heraldry_Classic_Ink_Art_Skill_v7_0.zip`) is built only when ChatGPT Work needs it: `make art-packages`, or the `Build art packages` workflow (`docs/LARGE_FILES.md`).
+`production/art/skill/heraldry-classic-ink-art/` is the skill source, and Codex runs it straight from the clone. The installable ZIP (`Heraldry_Classic_Ink_Art_Skill_v8_0.zip`) is built only when ChatGPT Work needs it: `make art-packages`, or the `Build art packages` workflow (`docs/LARGE_FILES.md`).
 
 - **`SKILL.md`** is the procedure: session start, the per-item loop, ten hard fails, delivery and drift reviews, stop conditions. `BATCH_CARD.md` is the same contract on one page for Codex.
 - **`scripts/heraldry_art.py`**: `doctor`, `status`, `next`, `show`, `check`, `qa`, `save`, `refuse`, `sheet` and `bundle`.

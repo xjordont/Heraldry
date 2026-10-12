@@ -3,7 +3,7 @@ name: heraldry-classic-ink-art
 description: Runs the Heraldry Skirmish illustration queue from the GitHub repo xjordont/heraldry. For each queued item it generates one black pen-and-ink illustration from the repo's prepared prompt and that item's own short reference set, checks it against the prompt's must-show and do-not-draw lists, saves it unmodified to assets/art/incoming/<ID>.<ext>, logs a receipt and delivers each image to main with a guarded push. Use when asked to generate, resume, redo or review Heraldry artwork. Never writes or edits prompts, the manuscript or tools.
 ---
 
-# Heraldry Skirmish illustration runner (v7)
+# Heraldry Skirmish illustration runner (v8)
 
 ## Who does what
 
@@ -130,7 +130,7 @@ IDs saved and pushed, attempts used, items saved with `--accept-flags`, items re
 Do not generate it. Ask the owner to have Claude Code add it to the catalogue. For an explicit one-off outside the book, see `references/AD_HOC.md`.
 
 
-## Release gates (v7)
+## Release gates (v8)
 
 The exact queued prompt and its must and do-not-draw clauses remain authoritative. These gates add release-process requirements, not subject facts. No visual QA record overrides the prompt; if a prompt contradicts the rulebook, refuse and escalate for Claude Code to fix upstream.
 
@@ -140,4 +140,4 @@ The exact queued prompt and its must and do-not-draw clauses remain authoritativ
 - **Delivery:** only through `delivery_guard.py ship --execute`, which validates first (`audit` runs the same validation alone, for diagnosis). It verifies each image against its latest native-hash receipt, the prompt hash, unchanged references and all ten QA entries, and blocks on a dirty index, unexpected paths, missing LFS or divergence. Never bypass it with a direct `git add` or push.
 - **Drift:** compare four-edge ink statistics with an actual look; a number never proves a vignette. When two sibling images share the same drift, stop and report it.
 - **Independent review:** Claude Code reviews every delivered image. You never approve, and a numerical score is never approval.
-- **Installed version:** `work_preflight.py --require-installed` confirms the clone carries this v7 skill before production.
+- **Installed version:** `work_preflight.py --require-installed` confirms the clone carries this v8 skill before production.

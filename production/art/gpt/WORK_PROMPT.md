@@ -4,7 +4,7 @@
 
 Use Codex on the owner's Windows PC with the authenticated `xjordont/Heraldry` checkout on `main`. GitHub holds the authoritative prompts, queue, references, artwork, receipts, and review decisions. The separate art checkout provides local file bytes and Git LFS transport.
 
-Start with [CODEX_PROMPT.md](../codex/CODEX_PROMPT.md), which follows [CODEX_RUNBOOK.md](../codex/CODEX_RUNBOOK.md), `INSTRUCTIONS.md`, and the deployed v7 skill. Deliver production artwork through `delivery_guard.py ship --execute` to GitHub `main`. Keep native attempts, QA reports, previews, and contact sheets outside the checkout.
+Start with [CODEX_PROMPT.md](../codex/CODEX_PROMPT.md), which follows [CODEX_RUNBOOK.md](../codex/CODEX_RUNBOOK.md), `INSTRUCTIONS.md`, and the deployed v8 skill. Deliver production artwork through `delivery_guard.py ship --execute` to GitHub `main`. Keep native attempts, QA reports, previews, and contact sheets outside the checkout.
 
 If guarded delivery fails, preserve the work and create the review bundle. Report that delivery remains pending; do not force-push, auto-rebase, or pull over unsent artwork or receipts. ZIP transfer is a fallback, rather than the primary workflow. Independent review and the stop after the five anchors still apply.
 

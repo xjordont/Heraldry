@@ -45,8 +45,8 @@ def check_package(base):
             errors.append(f"missing {rel}")
     mf = base / "manifest.json"
     manifest = json.loads(mf.read_text(encoding="utf-8")) if mf.is_file() else {"files": {}}
-    if manifest.get("version") != "7.0.0":
-        errors.append("expected v7.0.0 manifest")
+    if manifest.get("version") != "8.0.0":
+        errors.append("expected v8.0.0 manifest")
     on_disk = {p.relative_to(base).as_posix() for p in base.rglob("*") if p.is_file() and "__pycache__" not in p.parts} - {"manifest.json"}
     for rel, rec in manifest["files"].items():
         f = base / rel

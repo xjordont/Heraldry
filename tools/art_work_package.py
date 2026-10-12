@@ -4,7 +4,7 @@
   python3 tools/art_work_package.py build [--out ZIP] [--allow-dirty]
         Write the deterministic input ZIP (default build/art/Heraldry_Work_Input_<phase>.zip; a build output, never
         committed) and a copy of its WORK_PACKAGE.json beside it. The ZIP holds the exact queue, its prompt files, every queue-listed reference
-        as real image bytes, the complete v7 skill (source folder and installable ZIP), current receipts, selection
+        as real image bytes, the complete v8 skill (source folder and installable ZIP), current receipts, selection
         state and the style config the skill validator reads. Nothing else: no other art, no private reference PDFs.
   python3 tools/art_work_package.py verify ZIP [--no-run]
         Extract into an empty temporary folder and check the manifest, prompt hashes and reference decoding, then run
@@ -29,7 +29,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE = "production/art/gpt/QUEUE.json"
 SKILL_DIR = "production/art/skill/heraldry-classic-ink-art"
-SKILL_ZIP = "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v7_0.zip"
+SKILL_ZIP = "production/art/skill/Heraldry_Classic_Ink_Art_Skill_v8_0.zip"
 FIXED = {  # path: role
     QUEUE: "queue",
     "production/art/gpt/QUEUE.md": "queue",
@@ -103,7 +103,7 @@ def start_here(q, src):
 
 Source: `{src['repository']}` `{src['branch']}` commit `{src['commit']}`. Queue phase `{q['phase']}`, {q['count']} items.
 This package replaces the authenticated Git checkout for **inputs only**. It holds the exact queue, prompts,
-references (real image bytes), the complete v7 skill, receipts and selection state, with SHA-256 for every file
+references (real image bytes), the complete v8 skill, receipts and selection state, with SHA-256 for every file
 in `WORK_PACKAGE.json`. It cannot push anything to GitHub, and it approves nothing.
 
 ## 1. Unpack and verify (no Git, no credentials)
@@ -193,7 +193,7 @@ def build_blobs(allow_dirty=False):
     roles = {rel: role for rel, (_, role) in files.items()}
     roles.update({SKILL_ZIP: "skill_zip", "START_HERE.md": "instructions"})
     manifest = {
-        "schema": 1, "kind": KIND, "skill_version": "7.0.0", "created_from": src,
+        "schema": 1, "kind": KIND, "skill_version": "8.0.0", "created_from": src,
         "source": {k: src[k] for k in ("repository", "branch", "commit", "commit_date")},
         "queue": {"path": QUEUE, "sha256": sha(blobs[QUEUE]), "phase": q["phase"], "count": q["count"], "ids": [i["id"] for i in q["items"]],
                   "generated_at": q["generated_at"]},
