@@ -416,15 +416,15 @@
   "route": "gpt",
   "spec_sha256": "b6d0c1db7e394bab27a63cc3c4c3684d076eedcdcdab12b1b6e8b23a40625636",
   "prompt_sha256": "2611867ae22cd1817c17d515c403c757651361ce69a4511a4ba4d1fde49d6363",
-  "status": "rejected",
-  "received_at": "2026-10-12T16:15:36+00:00",
+  "status": "received",
+  "received_at": "2026-10-12T17:20:51+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Correction: show a side-on, eye-level view, with the mans head level with the Colossuss knee, and generate at the maximum available resolution for this 3:2 aspect. Correction: keep both on the same road surface and the Colossus exactly three times the mans height. Remaining flags: low-angle perspective still exaggerates scale; the edge vignette is incomplete.",
+  "notes": "Man enlarged beside the Colossus and head aligned to knee to honor exact three-times-height card prompt; reviewer hip-level request conflicts with card. Camera remains low and perimeter vignette lacks clean margins.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-MON-THE-LAST-COLOSSUS.png",
-   "sha256": "64af17aaadce7c4b670f3c3f2b5510912d01f2b8ea52f007f2d95360b9a13b1c",
+   "sha256": "94fd1fc7eb658a1de29a4d8a71b108a0953b21b7dbe61633d1fcbaa13a40e03f",
    "px": [
     1536,
     1024
@@ -432,17 +432,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-MON-THE-LAST-COLOSSUS.png",
-   "sha256": "040dbb3409d653469b841975f529df6382410eb92759a4aeca34264381e8d662",
+   "sha256": "02d38ba1bbc6a49f4f3d4046f62b3ceb90b23e7e250a8bdef92f44313d94c29f",
    "px": [
-    1517,
-    1019
+    1533,
+    1021
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 5.057
+   "max_print_w_in_300ppi": 5.11
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-12T17:10:42+00:00",
-  "rejected_reason": "Side-on view is right but it is still about five times the man's height; make the man much bigger and closer, his head reaching the Colossus's hip joint, standing right beside its leg."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-WOR-1-2-THE-GRIM-WORLD": {
   "family": "world",
