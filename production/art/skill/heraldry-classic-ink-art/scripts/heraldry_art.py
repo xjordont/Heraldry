@@ -23,7 +23,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 try:
-    from PIL import Image, ImageDraw, ImageFilter, ImageOps, ImageStat
+    from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageOps, ImageStat
 except ImportError:                                           # pragma: no cover
     sys.exit("Pillow is required: pip install pillow")
 
@@ -286,6 +286,17 @@ def _bands(w, h, frac):
     return ((0, 0, w, by), (0, h - by, w, h), (0, 0, bx, h), (w - bx, 0, w, h))
 
 
+def _colour_mask(im):
+    """Pixels that read as colour: HSV saturation over 60 and a channel spread over 24 levels. The spread test keeps
+    near-black ink with a faint warm tint (a few levels, but a high HSV saturation) from counting as colour.
+    tools/art_ink.py uses the same formula."""
+    r, g, b = im.split()
+    spread = ImageChops.subtract(ImageChops.lighter(ImageChops.lighter(r, g), b),
+                                 ImageChops.darker(ImageChops.darker(r, g), b))
+    sat = im.convert("HSV").getchannel("S").point([255 if v > 60 else 0 for v in range(256)])
+    return ImageChops.multiply(sat, spread.point([255 if v > 24 else 0 for v in range(256)]))
+
+
 def measure(path):
     with Image.open(path) as src:
         fmt = src.format
@@ -304,7 +315,7 @@ def measure(path):
         cnt = sum(dark.crop(b).histogram()[255] for b in boxes)
         return cnt / sum((b[2] - b[0]) * (b[3] - b[1]) for b in boxes)
 
-    sat = im.convert("HSV").getchannel("S").point([255 if v > 60 else 0 for v in range(256)])
+    sat = _colour_mask(im)
     # paper tone and noise in the outer 3% band, from histograms (no per-pixel loops)
     band_hist = [0] * 256
     for b in _bands(w, h, 0.03):

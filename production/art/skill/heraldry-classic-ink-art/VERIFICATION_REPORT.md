@@ -32,6 +32,12 @@
 
 The v7 changes (gritty direction, per-family and per-kind sets, lead order, per-image cadence, guarded fast-forward `ship`) and the v6 integrity guarantees (byte-bound QA records with ten evidenced criteria, native-hash receipts, prompt and reference hash checks at delivery, a clean index, no force-push) carry over unchanged.
 
+## First-run fixes (2026-10-12, after the first Codex delivery)
+
+- **Repeated ship.** A ship whose output was lost to a tool timeout had landed; re-running it reported `BLOCKED: nothing to deliver`, a stop condition. It now reports `UP-TO-DATE` (exit 0) when nothing is unsent and the clone is level with `origin/main`. `audit` is unchanged. Ship also prints a progress line before the LFS push and flushes its result.
+- **Colour false alarm.** HSV saturation alone counted near-black ink with a faint warm tint as colour (14% on Deepwarden, whose real channel spread is about 5 levels). A pixel now counts as colour only with saturation over 60 and a channel spread over 24 levels, in both the helper and `tools/art_ink.py`. Deepwarden now reads 0%; a red patch still reads as colour.
+- **Image call with no image.** The card and `SKILL.md` now say to take the file the tool saved instead of calling again.
+
 ## Tests
 
 - **Skill suite** (`python -m unittest discover -s tests`, run from the skill folder): passes. Real-git and LFS regressions cover:

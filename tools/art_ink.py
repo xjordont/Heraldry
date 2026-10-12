@@ -6,7 +6,7 @@ Never upscales; reports the native print width at 300 ppi and simple defect flag
 (colour, gray wash, ink touching the image border, which suggests a frame or box)."""
 import argparse, json
 from pathlib import Path
-from PIL import Image, ImageOps
+from PIL import Image, ImageChops, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -18,8 +18,13 @@ def prep(src: Path, dst: Path, margin_px: int = 12) -> dict:
         bg = Image.new("RGBA", im.size, (255, 255, 255, 255))
         im = Image.alpha_composite(bg, im)
     im = im.convert("RGB")
-    hsv = im.convert("HSV")
-    sat = hsv.getchannel("S").point(lambda v: 255 if v > 60 else 0)
+    # colour = HSV saturation over 60 and a channel spread over 24 levels (the skill helper uses the same formula),
+    # so near-black ink with a faint warm tint does not count as colour
+    r, gch, b = im.split()
+    spread = ImageChops.subtract(ImageChops.lighter(ImageChops.lighter(r, gch), b),
+                                 ImageChops.darker(ImageChops.darker(r, gch), b))
+    sat = ImageChops.multiply(im.convert("HSV").getchannel("S").point(lambda v: 255 if v > 60 else 0),
+                              spread.point(lambda v: 255 if v > 24 else 0))
     colour_frac = sum(sat.histogram()[255:]) / (im.width * im.height)
     g = ImageOps.grayscale(im)
     hist = g.histogram()

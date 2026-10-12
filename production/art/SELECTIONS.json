@@ -6,7 +6,7 @@
   "route": "gpt",
   "spec_sha256": "b27130b10e640c836d0e99191e90649ea38e66779e3d7f64ebe1d15468952f99",
   "prompt_sha256": "46ba9622b890d074b4a681b705af7dd49a1ea6bfb0f6b35cab32b6e4327e7280",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T04:31:46+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -32,6 +32,7 @@
    ],
    "max_print_w_in_300ppi": 5.09
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T04:35:40+00:00"
  }
 }

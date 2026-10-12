@@ -111,6 +111,17 @@ class ShipSync(unittest.TestCase):
         self.assertEqual(git(self.work, 'log', '--format=%s', 'origin/main').count('art(gpt): ART-T'), 1)
         self.assertEqual(git(self.work, 'status', '--porcelain'), '')
 
+    def test_a_repeated_ship_after_a_landed_delivery_is_not_blocked(self):
+        # Codex's tool can time out while a push lands; a second ship must not read as BLOCKED (a stop condition).
+        self.deliver_locally()
+        self.assertEqual(dg.ship(self.work)['status'], 'PUSHED')
+        out = dg.ship(self.work)
+        self.assertEqual(out['status'], 'UP-TO-DATE')
+        self.assertEqual(out['commit'], git(self.work, 'rev-parse', 'origin/main').strip())
+        self.assertEqual(dg.main(['ship', '--execute', '--repo', str(self.work)]), 0)
+        with self.assertRaisesRegex(dg.Error, 'nothing to deliver'):
+            dg.validate(self.work)                       # audit still says there is nothing to deliver
+
     def test_redo_in_another_format_replaces_the_old_file(self):
         self.deliver_locally()
         dg.ship(self.work)
