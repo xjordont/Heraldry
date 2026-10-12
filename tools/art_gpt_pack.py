@@ -91,6 +91,11 @@ def item_for(e, prompt, sels, root=ROOT):
             "must": list(b.get("must", [])), "avoid": [x.rstrip(".") + "." for x in b.get("avoid", [])]}
 
 
+def receipt_lines(root=ROOT):
+    f = root / "production/art/gpt/RECEIPTS.jsonl"
+    return sum(1 for line in f.read_text(encoding="utf-8").splitlines() if line.strip()) if f.is_file() else 0
+
+
 def build_queue(phase, ents, sels, anchors, root=ROOT):
     """Returns (queue dict, {id: prompt text}) without touching disk."""
     done = received(sels)
@@ -108,6 +113,8 @@ def build_queue(phase, ents, sels, anchors, root=ROOT):
         items.append(item_for(ents[i], prompts[i], sels, root))
     return {"schema": SCHEMA, "phase": phase, "generated_at": g.now(), "max_references": g.CFG["gpt_reference_sets"]["max_refs"],
             "push_every": g.CFG.get("gpt_push_every", 5), "review_every": g.CFG.get("gpt_review_every", 10),
+            # drift reviews count only receipts written after this queue was published (the log itself is append-only)
+            "receipts_base": receipt_lines(root),
             "count": len(items), "items": items}, prompts
 
 

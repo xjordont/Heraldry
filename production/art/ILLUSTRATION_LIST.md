@@ -653,7 +653,7 @@ Do not draw:
 
 Printed 3.3 in wide · aspect 3:2. Family framing: Landscape that captures the climate's defining terrain, ruin and danger, with one or two tiny figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame.
 
-### 1. The Greenmark ✓
+### 1. The Greenmark
 
 `ART-CLI-THE-GREENMARK`
 
@@ -681,7 +681,7 @@ Do not draw:
 * No letters in the bark signs.
 ```
 
-### 2. The Ashlands ✓
+### 2. The Ashlands
 
 `ART-CLI-THE-ASHLANDS`
 
@@ -836,7 +836,7 @@ Do not draw:
 
 Printed 3.3 in wide · aspect 3:2. Family framing: The town or fortress seen from its approach road, with its defining feature unmistakable and tiny figures for scale. Composition reads as a vignette: the drawing is densest at its focal point and thins out into white paper toward irregular edges; no rectangular edge, no frame.
 
-### 1. Greythorn ✓ ★
+### 1. Greythorn ★
 
 `ART-BAS-GREYTHORN`
 
@@ -922,7 +922,7 @@ Do not draw:
 * No bones shown explicitly as skeletons.
 ```
 
-### 3. Deepwarden ✓
+### 3. Deepwarden
 
 `ART-BAS-DEEPWARDEN`
 
@@ -1112,7 +1112,7 @@ Do not draw:
 * No sword: its kit is sling, pack and pot.
 ```
 
-### 3. Dwarf ✓
+### 3. Dwarf
 
 `ART-ANC-DWARF`
 
@@ -1926,7 +1926,7 @@ Do not draw:
 
 Printed 1.9 in wide · aspect 2:3. Family framing: Single full-length adventurer in an action-ready pose with class-typical arms and gear, three-quarter view. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.
 
-### 1. Fighter ✓
+### 1. Fighter
 
 `ART-CLA-FIGHTER`
 
@@ -2039,7 +2039,7 @@ Do not draw:
 * No pillar or wall.
 ```
 
-### 5. Ranger ✓
+### 5. Ranger
 
 `ART-CLA-RANGER`
 
@@ -2728,7 +2728,7 @@ Do not draw:
 
 Printed 1.9 in wide · aspect 1:1. Family framing: Single creature, full body, three-quarter view, in a characteristic menacing pose; a small human figure for scale only if the creature is Large or Huge. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.
 
-### 1. Giant Tarantula ✗
+### 1. Giant Tarantula
 
 `ART-MON-GIANT-TARANTULA`
 
@@ -2900,7 +2900,7 @@ Do not draw:
 * Do not draw flame.
 ```
 
-### 7. Dire Wolf ✓
+### 7. Dire Wolf
 
 `ART-MON-DIRE-WOLF`
 
@@ -2929,7 +2929,7 @@ Do not draw:
 * No other wolves.
 ```
 
-### 8. Orc ✓
+### 8. Orc
 
 `ART-MON-ORC`
 
@@ -3523,7 +3523,7 @@ Do not draw:
 * No gateway, arch or other undead.
 ```
 
-### 29. Undead Champion ✓
+### 29. Undead Champion
 
 `ART-MON-UNDEAD-CHAMPION`
 
@@ -3553,7 +3553,7 @@ Do not draw:
 * No other undead.
 ```
 
-### 30. Gargoyle ✓
+### 30. Gargoyle
 
 `ART-MON-GARGOYLE`
 
@@ -5062,7 +5062,7 @@ Do not draw:
 * Not cute.
 ```
 
-### 83. Skeleton Warrior ✓
+### 83. Skeleton Warrior
 
 `ART-MON-SKELETON-WARRIOR`
 

@@ -10,6 +10,6 @@ Production is authorized for the full batch queue: generate every item status gi
 Report one line per item and the commit SHA of each delivery. Nothing you make is approved: Claude Code reviews it.
 ```
 
-Optional first check of a new art direction or reference mapping: add a line `Stop after N delivered images.` Current value: 11 (2026-10-12: the Giant Tarantula redo, then ten items covering the reference sets not yet tested). Redos always come first, and the lead order covers one item per reference set. Then run the full queue with the unchanged prompt.
+Optional first check of a new art direction or reference mapping: add a line `Stop after N delivered images.` Current value: 17 (2026-10-12, fresh start: the seventeen lead items cover one of each reference set). Redos always come first, and the lead order covers one item per reference set. Then run the full queue with the unchanged prompt.
 
 For a readiness check only, delete the "Production is authorized" paragraph: Codex then runs the card's start-of-session steps and stops.

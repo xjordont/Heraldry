@@ -1,12 +1,191 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-12T01:30:55+00:00",
+ "generated_at": "2026-10-12T01:41:22+00:00",
  "max_references": 3,
  "push_every": 1,
  "review_every": 10,
- "count": 263,
+ "receipts_base": 19,
+ "count": 275,
  "items": [
+  {
+   "id": "ART-BAS-DEEPWARDEN",
+   "family": "bastion",
+   "register": "scene",
+   "ref_set": "bastion",
+   "title": "Deepwarden",
+   "prompt": "production/art/gpt/prompts/ART-BAS-DEEPWARDEN.txt",
+   "prompt_sha256": "46ba9622b890d074b4a681b705af7dd49a1ea6bfb0f6b35cab32b6e4327e7280",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "The gate is closed"
+   ],
+   "avoid": [
+    "Not a forge interior.",
+    "No visible creatures in the Dark.",
+    "Not a stone castle on a hill.",
+    "Do not show the gate open or being closed."
+   ]
+  },
+  {
+   "id": "ART-CLI-THE-ASHLANDS",
+   "family": "climate",
+   "register": "scene",
+   "ref_set": "climate",
+   "title": "The Ashlands",
+   "prompt": "production/art/gpt/prompts/ART-CLI-THE-ASHLANDS.txt",
+   "prompt_sha256": "acc27bad4bc4f1b80511d5c6f0a10296e219d4a5b51044ffb929406878124597",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "Not the Hollow Crown throne room or any scenario ruin.",
+    "Do not detail the patrol: tiny silhouettes only.",
+    "No inscriptions.",
+    "Not a sunny scene; heavy overcast."
+   ]
+  },
+  {
+   "id": "ART-MON-SKELETON-WARRIOR",
+   "family": "monster",
+   "register": "creature",
+   "ref_set": "monster:undead",
+   "title": "Skeleton Warrior",
+   "prompt": "production/art/gpt/prompts/ART-MON-SKELETON-WARRIOR.txt",
+   "prompt_sha256": "3aeb9fc2b93240aed54e2603cedf6869eedfc29b7b3a4fd2062d45502c107369",
+   "size": "1024x1024",
+   "print_w_in": 1.9,
+   "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
+    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "Medium: about human-sized",
+   "must": [],
+   "avoid": [
+    "Not the Undead Warrior (flesh, rust, ash, rectangular shield).",
+    "Not the Frozen Skeleton (frost).",
+    "Not the Skeleton Archer: no bow.",
+    "No ice or ash.",
+    "No other skeletons."
+   ]
+  },
+  {
+   "id": "ART-MON-DIRE-WOLF",
+   "family": "monster",
+   "register": "creature",
+   "ref_set": "monster:beast",
+   "title": "Dire Wolf",
+   "prompt": "production/art/gpt/prompts/ART-MON-DIRE-WOLF.txt",
+   "prompt_sha256": "5a64acc2ba28e5806ed14e3abb0173c2be80ef42619df88c1763958130b00ef3",
+   "size": "1024x1024",
+   "print_w_in": 1.9,
+   "references": [
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "Medium: about human-sized",
+   "must": [],
+   "avoid": [
+    "Do not make it a werewolf (no upright stance).",
+    "Do not copy Tundra Wolf (white coat, snow) or Blackfire Hound (flame).",
+    "No saddle.",
+    "No other wolves."
+   ]
+  },
+  {
+   "id": "ART-MON-ORC",
+   "family": "monster",
+   "register": "creature",
+   "ref_set": "monster:humanoid",
+   "title": "Orc",
+   "prompt": "production/art/gpt/prompts/ART-MON-ORC.txt",
+   "prompt_sha256": "b97cbf5864880e238dc0ddc245d6c1a82dbe40d71795cbecaffcd259caaff060",
+   "size": "1024x1024",
+   "print_w_in": 1.9,
+   "references": [
+    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "Medium: about human-sized",
+   "must": [
+    "One-handed battleaxe in one hand, round shield on the other forearm"
+   ],
+   "avoid": [
+    "Not the Orc ancestry hero: no tabard, no composed bearing, no clean armour.",
+    "Not a Bugbear (shaggy, long-armed).",
+    "No greataxe and no sword."
+   ]
+  },
+  {
+   "id": "ART-MON-GARGOYLE",
+   "family": "monster",
+   "register": "creature",
+   "ref_set": "monster:magical",
+   "title": "Gargoyle",
+   "prompt": "production/art/gpt/prompts/ART-MON-GARGOYLE.txt",
+   "prompt_sha256": "4738ef0fd0199628b2719ac0a104b399ea475cd375ff3b9fa485b9d1f59db7eb",
+   "size": "1024x1024",
+   "print_w_in": 1.9,
+   "references": [
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "Medium: about human-sized",
+   "must": [
+    "Stone wings: it flies"
+   ],
+   "avoid": [
+    "Not the Stone Sentinel (a humanoid construct).",
+    "No fire or glowing eyes."
+   ]
+  },
+  {
+   "id": "ART-CLA-RANGER",
+   "family": "class",
+   "register": "person",
+   "ref_set": "person",
+   "title": "Ranger",
+   "prompt": "production/art/gpt/prompts/ART-CLA-RANGER.txt",
+   "prompt_sha256": "57ee380f07fede9930963fff255801389467e1b01e7341088a9f9877cb20a022",
+   "size": "1024x1536",
+   "print_w_in": 1.9,
+   "references": [
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "Not the Assassin: no hooded crouch, no dagger-first pose.",
+    "No animal companion.",
+    "Do not give it a sword."
+   ]
+  },
   {
    "id": "ART-BAC-SMUGGLER",
    "family": "background",
@@ -262,6 +441,26 @@
    ]
   },
   {
+   "id": "ART-BAS-GREYTHORN",
+   "family": "bastion",
+   "register": "scene",
+   "ref_set": "bastion",
+   "title": "Greythorn",
+   "prompt": "production/art/gpt/prompts/ART-BAS-GREYTHORN.txt",
+   "prompt_sha256": "d5b79f1107ff3ecb65ca2c39b95548cf08e42a3591d2fe1a882095369d64ac68",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
+    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": []
+  },
+  {
    "id": "ART-BAS-HEARTHHOLD",
    "family": "bastion",
    "register": "scene",
@@ -359,6 +558,31 @@
     "No visible dunes monsters.",
     "Do not depict the well being sounded.",
     "Not Reedmarch or Sablekeep silhouettes."
+   ]
+  },
+  {
+   "id": "ART-CLI-THE-GREENMARK",
+   "family": "climate",
+   "register": "scene",
+   "ref_set": "climate",
+   "title": "The Greenmark",
+   "prompt": "production/art/gpt/prompts/ART-CLI-THE-GREENMARK.txt",
+   "prompt_sha256": "83115823020828f3aed3ac6b70ca2ee69a15bd940788a12bdab45faff8200029",
+   "size": "1536x1024",
+   "print_w_in": 3.3,
+   "references": [
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No people; the climate is the subject.",
+    "Do not make the grove circle the focus: it is a small mossy ring of stones in the middle distance, so this is not the Whispering Grove scenario (standing stones in a clearing as the whole subject).",
+    "Do not detail the hound shapes: barely seen silhouettes only.",
+    "No letters in the bark signs."
    ]
   },
   {
@@ -2849,6 +3073,33 @@
    ]
   },
   {
+   "id": "ART-MON-UNDEAD-CHAMPION",
+   "family": "monster",
+   "register": "creature",
+   "ref_set": "monster:undead",
+   "title": "Undead Champion",
+   "prompt": "production/art/gpt/prompts/ART-MON-UNDEAD-CHAMPION.txt",
+   "prompt_sha256": "17926ad0a885ff36caf79527850b410ea5c1d889547986df7230bb32ecee3789",
+   "size": "1024x1024",
+   "print_w_in": 1.9,
+   "references": [
+    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
+    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "Medium: about human-sized",
+   "must": [
+    "Two-handed war maul with a head of fused bone"
+   ],
+   "avoid": [
+    "Not an Ogre or a living Fighter: it is dead, pale and plated in scraps.",
+    "Not a Giant Skeleton: this has flesh.",
+    "No axe blade.",
+    "No other undead."
+   ]
+  },
+  {
    "id": "ART-MON-UNDEAD-CROSSBOWMAN",
    "family": "monster",
    "register": "creature",
@@ -3369,6 +3620,31 @@
    ]
   },
   {
+   "id": "ART-CLA-FIGHTER",
+   "family": "class",
+   "register": "person",
+   "ref_set": "person",
+   "title": "Fighter",
+   "prompt": "production/art/gpt/prompts/ART-CLA-FIGHTER.txt",
+   "prompt_sha256": "f65f8db93e9fcd6fd21bf91bd4719a2754afbd553b83b1205d9f1c52cdea95ff",
+   "size": "1024x1536",
+   "print_w_in": 1.9,
+   "references": [
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "Not heavy plate: ring shirt only.",
+    "Do not give it a two-handed weapon (that is the Berserker or Ravager package).",
+    "No flourish or duel pose.",
+    "No gate, wall or other scenery."
+   ]
+  },
+  {
    "id": "ART-CLA-PALADIN",
    "family": "class",
    "register": "person",
@@ -3587,6 +3863,33 @@
     "No wings or full dragon head: person with draconic traits.",
     "Do not copy the Demonborn's horns-plus-tail look: use ridge horns and scales.",
     "Not a Lizardfolk monster."
+   ]
+  },
+  {
+   "id": "ART-ANC-DWARF",
+   "family": "ancestry",
+   "register": "person",
+   "ref_set": "person",
+   "title": "Dwarf",
+   "prompt": "production/art/gpt/prompts/ART-ANC-DWARF.txt",
+   "prompt_sha256": "1d597a4d8d6f8cbdd437226a30a51dc50a03daaf44c6a9b795a9263bedbc6dbd",
+   "size": "1024x1536",
+   "print_w_in": 1.9,
+   "references": [
+    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [
+    "Broad and heavy build: shoulders very wide for the height, thick short limbs, no slender lines"
+   ],
+   "avoid": [
+    "Not a comic dwarf: serious proportions, no oversized hat or cartoon nose.",
+    "No horned helmet.",
+    "Do not give it a greataxe (that is the Orc adventurer's kit).",
+    "No stair, doorway or other scenery."
    ]
   },
   {
