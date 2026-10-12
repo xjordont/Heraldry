@@ -1,1 +1,37 @@
-{}
+{
+ "ART-BAS-DEEPWARDEN": {
+  "family": "bastion",
+  "title": "Deepwarden",
+  "heading_id": "h-deepwarden",
+  "route": "gpt",
+  "spec_sha256": "b27130b10e640c836d0e99191e90649ea38e66779e3d7f64ebe1d15468952f99",
+  "prompt_sha256": "46ba9622b890d074b4a681b705af7dd49a1ea6bfb0f6b35cab32b6e4327e7280",
+  "status": "received",
+  "received_at": "2026-10-12T04:31:46+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Automated color diagnostic reports 14% saturated pixels; the image is visibly black ink on ivory at print size. Accidental duplicate generation exceeded the one-generation budget.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAS-DEEPWARDEN.png",
+   "sha256": "e7f0552c9b6779b1e185fbbf3273ebb8310a268fcd1c28b928e4c4982283899d",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAS-DEEPWARDEN.png",
+   "sha256": "7542221f04d6303078a3d33748972661148abbeab3e12abd411310e98a3c4bf0",
+   "px": [
+    1527,
+    1022
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.09
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ }
+}
