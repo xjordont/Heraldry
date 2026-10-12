@@ -755,15 +755,15 @@
   "route": "gpt",
   "spec_sha256": "dd3c3a548ebe274d3c17cb633ca45798e7b1c98d8d5781a3de25887cd247d06a",
   "prompt_sha256": "7e61c4d50c3830a292094ec5a91b1afcff154656d7838d23516d449570640342",
-  "status": "rejected",
-  "received_at": "2026-10-12T06:12:36+00:00",
+  "status": "received",
+  "received_at": "2026-10-12T12:36:04+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Submerged dead forms include clear skull and face detail, violating ambiguous and faint requirement.",
+  "notes": "Correction: keep drowned dead as faint pale ambiguous shapes beneath the water, with no skull, face, or hand readable. Keep the water-level village composition and gritty ink style.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-CLI-THE-MIRE.png",
-   "sha256": "da6eb8ac6cb7e03927a2f06b50ccb3810f005afb0105aa322da30f3b9095ca62",
+   "sha256": "1d6e919341fa2f94c82da162838c2aada7bd9bae6c53216b7b334f5a11cde43f",
    "px": [
     1536,
     1024
@@ -771,17 +771,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-CLI-THE-MIRE.png",
-   "sha256": "dfd150d513563341defc9f46897802b45535cb3865f20d83a4389d63baab911f",
+   "sha256": "fb2b064f5da05defd497036a157bd13a43acfe2815708061a5837c69385c5ca2",
    "px": [
-    1522,
-    1008
+    1536,
+    1022
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 5.073
+   "max_print_w_in_300ppi": 5.12
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-12T12:11:24+00:00",
-  "rejected_reason": "The drowned dead are drawn as clear skulls and reaching hands; keep them as faint pale ambiguous shapes under the water, with no skull, face or hand readable."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-CLI-THE-PALE-CITY": {
   "family": "climate",
