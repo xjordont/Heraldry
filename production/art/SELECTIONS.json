@@ -5488,5 +5488,38 @@
    "max_print_w_in_300ppi": 2.97
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-ORC": {
+  "family": "ancestry",
+  "title": "Orc",
+  "heading_id": "h-orc",
+  "route": "gpt",
+  "spec_sha256": "b4bfdfe7cbda595c931b760827fadbf6773ad7a5445e0ee1989adef38911987a",
+  "prompt_sha256": "220dab7688262af60d32cc1aac871b059ff233e9c5af3ed46c5e1cff95375417",
+  "status": "received",
+  "received_at": "2026-10-12T18:13:36+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-ORC.png",
+   "sha256": "fda3d42bb7716812e0030e59711ca0175560bc7a914a76d8de3019f87d966901",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-ORC.png",
+   "sha256": "143799c60d5b4bc5409af6ac879fc50900667ac297cc9f81c3d0f92a83dfc6e1",
+   "px": [
+    877,
+    1485
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.923
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
