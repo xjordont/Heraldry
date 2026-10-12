@@ -126,7 +126,7 @@
     line(length: 100%, stroke: 0.5pt + ink)))
 
 // Banner tag: a short black strap with a pointed right end.
-#let tag(body, size: 7pt) = box(baseline: 22%, {
+#let tag(body, size: 7pt) = box({
   let t = text(font: sans, weight: 700, size: size, tracking: 0.16em, fill: paper, upper(body))
   context {
     let m = measure(t)
@@ -287,21 +287,29 @@
 #let runin(label, body) = par[#text(weight: 700, label)#h(0.3em)#body]
 
 // ================================================================ text components
-// Flavour: IM FELL roman, near-black; an old-print voice beside the clean rules serif.
-#let flavour(body, size: 10.6pt) = block(above: 4pt, below: 8pt, {
-  set par(justify: false, leading: 4pt)
-  text(font: fell, size: size, fill: ink2, body)
-})
+// Flavour: one size and one set of rules everywhere (owner 2026-10-12): IM FELL roman 12 pt,
+// near-black, paragraphs separated by a clear space. Section-level flavour (`lead-block`) sits in
+// a single column of 80% measure; entry flavour (`flavour`) fills its column. Both are justified
+// (a soft, book-like block) unless the specimens are rendered with --input lead=center.
+#let flav-size = 12pt
+#let lead-mode = sys.inputs.at("lead", default: "justify")
+#let flavour-set(body) = {
+  set par(justify: lead-mode == "justify", leading: 4.1pt, spacing: 9pt,
+    justification-limits: (spacing: (min: 80% - 0.0em, max: 140%), tracking: (min: -0.012em, max: 0.025em)))
+  set text(font: fell, size: flav-size, fill: ink2, hyphenate: lead-mode == "justify")
+  body
+}
+#let flavour(body, size: none) = block(above: 5pt, below: 9pt, flavour-set(body))
+#let lead-block(body, size: none, width: 80%) = block(width: 100%, above: 7pt, below: 11pt,
+  align(center, block(width: width, align(if lead-mode == "justify" { left } else { center }, flavour-set(body)))))
 
-// Lead: the one treatment for section-level flavour (owner 2026-10-12): chapter leads, section
-// flavour, place lore and scenario flavour are all a centred single column of IM FELL roman.
-// Entry flavour inside a column (monsters, classes) keeps `flavour`: same face, left-aligned.
-#let lead-block(body, size: 11.4pt, width: 80%) = block(width: 100%, above: 6pt, below: 10pt,
-  align(center, block(width: width, {
-    set par(justify: false, leading: 4.3pt, spacing: 7.5pt)
-    set text(font: fell, size: size, fill: ink2, hyphenate: false)
-    body
-  })))
+// Entry title: the banner tag always stands directly above its title, aligned as the title is,
+// 5 pt clear of the title's cap height; the title box is cut to cap height and baseline so the
+// spacing is exact for every face and size.
+#let entry-title(name, tag-text, size: 21pt, al: left, tag-size: 6.8pt) = block(width: 100%, above: 0pt, below: 4pt, sticky: true,
+  align(al, stack(dir: ttb, spacing: 5pt,
+    tag(tag-text, size: tag-size),
+    text(font: goth, weight: 600, size: size, hyphenate: false, top-edge: "cap-height", bottom-edge: "baseline", name))))
 
 // Worked example: tinted field on a black spine, a banner tag.
 #let example(title: none, body) = block(width: 100%, above: 10pt, below: 11pt, breakable: false,
@@ -433,11 +441,9 @@
 // Monster entry = portrait, name + role, flavour, stat bar, labelled anatomy. One keep unit.
 #let monster(name, role, art: none, art-width: 80%, flavour-text, header, values, sections) = block(width: 100%, breakable: false, above: 0pt, below: 14pt)[
   #if art != none { block(width: 100%, height: 2.5in, spacing: 0pt, align(center + bottom, image(art, height: 100%, width: art-width, fit: "contain"))); v(3pt) }
-  #block(below: 3pt, sticky: true)[
-    #set par(justify: false)
-    #text(font: goth, weight: 600, size: 21pt, name)#h(7pt)#role-tag(role)
-  ]
-  #flavour(flavour-text, size: 10.2pt)
+  #entry-title(name, role, size: 21pt)
+  #v(2pt)
+  #flavour(flavour-text)
   #stat-strip(header, values)
   #anatomy(sections)
 ]
@@ -446,10 +452,8 @@
 #let character-entry(name, kicker, tag-text, art: none, flavour-text, facts, body) = block(width: 100%, breakable: true, above: 0pt)[
   #grid(columns: (1fr, 2.15in), column-gutter: gap, align: top,
     [
-      #text(font: sans, weight: 700, size: 8pt, tracking: 0.3em, upper(kicker))
-      #v(-6pt)
-      #text(font: goth, weight: 600, size: 36pt, name)#h(8pt)#role-tag(tag-text)
-      #v(-4pt)
+      #entry-title(name, [#kicker #h(2pt)·#h(2pt) #tag-text], size: 36pt)
+      #v(3pt)
       #brush(weight: 2.2pt, seed: 4)
       #v(4pt)
       #flavour(flavour-text)
@@ -506,18 +510,14 @@
     #v(-8pt)
     #flourish(len: 90pt)
   ]
-  #if lead != none { lead-block(lead, size: 12.2pt, width: 82%) }
+  #if lead != none { lead-block(lead, width: 82%) }
 ]
 
 // ================================================================ scenario
 #let scenario-head(num, title, flavour-text, art: none) = block(width: 100%, below: 8pt, breakable: false)[
   #if art != none { align(center, image(art, width: 60%)); v(-2pt) }
-  #align(center)[
-    #tag([Scenario #h(2pt) #num], size: 7.6pt)
-    #v(-3pt)
-    #text(font: goth, weight: 600, size: 32pt, hyphenate: false, title)
-  ]
-  #v(-6pt)
+  #entry-title(title, [Scenario #h(2pt) #num], size: 32pt, al: center)
+  #v(4pt)
   #lead-block(flavour-text)
   #brush(weight: 2.2pt, seed: 8)
 ]
@@ -574,8 +574,8 @@
 // ================================================================ gazetteer (places of the world)
 #let gazetteer(name, kicker, art: none, body) = block(width: 100%, breakable: false, above: 0pt, below: 16pt)[
   #if art != none { align(center, image(art, width: 100%)); v(-2pt) }
-  #align(center)[#text(font: goth, weight: 600, size: 30pt, name)#h(9pt)#role-tag(kicker)]
-  #v(-8pt)
-  #align(center, box(width: 46%, brush(weight: 2pt, seed: 10)))
+  #entry-title(name, kicker, size: 30pt, al: center)
+  #v(4pt)
+  #align(center, block(width: 46%, brush(weight: 2pt, seed: 10)))
   #lead-block(body)
 ]
