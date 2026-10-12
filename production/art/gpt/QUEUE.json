@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-12T03:40:55+00:00",
+ "generated_at": "2026-10-12T03:52:03+00:00",
  "max_references": 6,
  "push_every": 1,
  "review_every": 10,
@@ -101,9 +101,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -154,9 +154,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -280,10 +280,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -827,9 +827,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -880,9 +880,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -905,9 +905,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -956,9 +956,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -981,9 +981,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -1031,9 +1031,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1056,9 +1056,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1105,10 +1105,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1181,9 +1181,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1207,10 +1207,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1290,9 +1290,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -1341,9 +1341,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1366,9 +1366,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1390,10 +1390,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1442,10 +1442,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1494,10 +1494,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -1522,9 +1522,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1700,9 +1700,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1752,9 +1752,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1802,9 +1802,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1829,10 +1829,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -1856,10 +1856,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -1882,9 +1882,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1931,10 +1931,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -1958,10 +1958,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1985,10 +1985,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2089,9 +2089,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2114,9 +2114,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -2166,9 +2166,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -2193,9 +2193,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2243,9 +2243,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2268,9 +2268,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2420,9 +2420,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2473,9 +2473,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2523,9 +2523,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -2597,10 +2597,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2776,10 +2776,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2902,9 +2902,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2929,9 +2929,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3055,10 +3055,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3083,9 +3083,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3184,9 +3184,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
+    "assets/art/style/STYLE-REF-70-chimera.jpg",
+    "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3315,10 +3315,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3342,10 +3342,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3369,10 +3369,10 @@
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
+    "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
+    "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+    "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3575,9 +3575,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -3600,9 +3600,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -3625,9 +3625,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
+    "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+    "assets/art/style/STYLE-REF-73-manticore.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",

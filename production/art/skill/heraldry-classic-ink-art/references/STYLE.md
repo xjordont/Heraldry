@@ -4,7 +4,7 @@ The prompt already carries the style text. This page explains what the reference
 
 ## Gritty old-school direction (owner, 2026-10-11)
 
-The target is gritty, old-school black-and-white ink, like late-1970s and 1980s rulebook and module art. The references are drawn from STYLE-REF-02 to STYLE-REF-67 in `assets/art/style/` (owner samples plus four public-domain prints), up to three per item.
+The target is gritty, old-school black-and-white ink, like late-1970s and 1980s rulebook and module art. The references are drawn from STYLE-REF-02 to STYLE-REF-74 in `assets/art/style/` (owner samples plus four public-domain prints), up to three per item.
 - Look for: bold, rough brush contours of uneven weight; heavy solid-black shadow shapes; scratchy hatching and dry-brush drag where form turns; the bite of a woodcut; high contrast with few in-between textures. Visible human marks (broken lines, dry-brush streaks, an occasional ink fleck) are welcome.
 - It still must look hand-made, not generated. A result covered in uniform micro-detail, stipple fields, machine-even texture, clean vector-like line, glossy rendering or soft tonal haze fails `style_reference_match`, however impressive it looks. Grey wash or grey ink tone fails, because the book prints pure black ink.
 - References are the owner's samples plus four public-domain prints (41 to 44), chosen per family and monster kind; a generated image is never a reference.
