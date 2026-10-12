@@ -3675,5 +3675,38 @@
    "max_print_w_in_300ppi": 3.883
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-SPECTRE": {
+  "family": "monster",
+  "title": "Spectre",
+  "heading_id": "h-spectre-controller",
+  "route": "gpt",
+  "spec_sha256": "dac7ef2a01a37c3bd5c2c8526168845c454b5c90ec42ac6a79156ad1eb98ba80",
+  "prompt_sha256": "bd469c49b43218cb2ed64d95cc1343b476d17e23d97955567aedc9774bb2f260",
+  "status": "received",
+  "received_at": "2026-10-12T14:28:07+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Hood leaves less than 8% clean margin at top.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-SPECTRE.png",
+   "sha256": "bb1837e8858b0032708f41008f3b316b16e78ab059024065134a195b5cbc04b1",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-SPECTRE.png",
+   "sha256": "73ca7f1442535fdb9006d70e45d5e69cc04b457854bb821c136e7c705a8d934d",
+   "px": [
+    748,
+    1227
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.493
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
