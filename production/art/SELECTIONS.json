@@ -4813,5 +4813,38 @@
    "max_print_w_in_300ppi": 3.603
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-ASSASSIN": {
+  "family": "class",
+  "title": "Assassin",
+  "heading_id": "h-assassin-35-complexity",
+  "route": "gpt",
+  "spec_sha256": "74dcc1e43f4c4f843755baff5f0b6315cd55e939dc265165fc2fb2679a716136",
+  "prompt_sha256": "4b034e725424026329f61a5f0b61587826731aa189a5ee1d0079f28b0e115643",
+  "status": "received",
+  "received_at": "2026-10-12T17:03:35+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-ASSASSIN.png",
+   "sha256": "d0deb678937ea45b4a55421da305e67c2e512a2bbef0118113a83fa16bb980e6",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-ASSASSIN.png",
+   "sha256": "0a1032bdfb5b18a3bbfd705c61dffcda2a431df4b8c39e26b32a6db356abfd31",
+   "px": [
+    765,
+    1474
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.55
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
