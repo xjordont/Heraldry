@@ -39,7 +39,7 @@ Every tenth saved image (`status` says DRIFT REVIEW):
 1. Run `heraldry_art.py sheet --recent 10 --refs`.
 2. Run `style_audit.py --repo . --recent 10` (report in the scratch folder) for advisory tone and four-edge statistics by register.
 3. Compare same-register siblings and references together. A single scene's greater ink coverage may be legitimate; the statistics never overrule artistic inspection.
-4. Deliver in every case. If **two or more** siblings show the same serious line, tone or vignette drift, deliver, then stop and flag it for Claude Code. Do not keep generating hundreds of images with a common fault.
+4. Deliver in every case and continue. If **two or more** siblings show the same serious line, tone or vignette drift, flag it in your report for Claude Code, which reviews the references or prompts upstream and sends redos.
 5. Never add contact sheets, debug JSON, style reports or print proofs to the repository. Keep them outside the clone or package as explicit scratch handoffs.
 
 ## Final approval boundary

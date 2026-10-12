@@ -450,3 +450,8 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
     - 66 distinct references are in use; `max_attempts` is 1; `receipts_base` is 19.
   - **Version 8.0.0:** `SKILL.md`, the operator card, the helper docstring, `work_preflight --require-installed` (now requires v8), `validate_skill.py`, `tools/art_skill_build.py` (`Heraldry_Classic_Ink_Art_Skill_v8_0.zip`, 43.6 MB, built on request), `tools/art_work_package.py`, INSTRUCTIONS, WORK_PROMPT, AGENTS, README, RELEASE_STATUS and ART_AUTOMATION.
   - **Records:** the skill README has a "Changes since v7" table, and `VERIFICATION_REPORT.md` is rewritten for v8.
+- **Full-list run** (owner, 2026-10-12: "Codex will accept 6 reference images. I'm on chat gpt plus so the usage limit resets every 5 hours. I want the skill to run through the entire list, not just the first 17 images").
+  - `CODEX_PROMPT.md` now authorizes the entire queue in one prompt; Codex stops only at NOTHING LEFT, a usage limit, a reference-attachment refusal or ship BLOCKED.
+  - Drift reviews (every 10 images) are reported and the run continues; Claude Code reviews and sends redos. The "whole batch has drifted" stop is removed from `SKILL.md`, the helper message, BATCH_CARD, OPERATOR_CARD, VISUAL_ACCEPTANCE and STYLE_CONSISTENCY.
+  - Usage limit: every saved image is already delivered, so the owner pastes the same prompt after the 5-hour reset and `next` resumes, redos first.
+  - The six-reference limit is now owner-confirmed (`VERIFICATION_REPORT.md`). Skill suite, `make test` and preflight pass; no build was run.

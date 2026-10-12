@@ -101,7 +101,7 @@ Details, soft style checks and the batch drift review: `references/QA_CHECKLIST.
 The batch queue sets `push_every: 1` and `review_every: 10` (owner 2026-10-11): every image is delivered as soon as it is saved, so a usage limit never strands work, and every tenth image triggers a drift review. `status` says which.
 
 1. **DELIVER** (after each save): run the guarded delivery below.
-2. **DRIFT REVIEW** (every tenth save): first `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10` (both write to the scratch folder), and read `references/VISUAL_ACCEPTANCE.md`. Look for drift (thicker or thinner line, grey tone, a cleaner or softer finish than the references), repeated poses or compositions, and scenery behind figures. Deliver in every case: one drifting image, name it in your report; two or more same-register images with the same fault, deliver and then stop and report; nothing drifted, say so and continue.
+2. **DRIFT REVIEW** (every tenth save): first `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10` (both write to the scratch folder), and read `references/VISUAL_ACCEPTANCE.md`. Look for drift (thicker or thinner line, grey tone, a cleaner or softer finish than the references), repeated poses or compositions, and scenery behind figures. Deliver in every case and keep going (owner 2026-10-12: run the whole list): name any drifting image, and any fault shared by two or more same-register images, in your report; Claude Code reviews and sends redos. Nothing drifted: say so.
 
 ```
 python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .   # validates, then commits and pushes
@@ -115,9 +115,8 @@ python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py s
 ## Stop conditions
 
 - The queue is empty (or, in an `anchors` phase, the anchors are done).
-- The whole batch has drifted: the drift review shows the same fault in most of the images, not in one or two. Push what is good, stop, and tell the owner.
 - The image tool refuses an item. Do not reword the prompt to get around it. Record it with `refuse ID --reason "<the tool's message, or what happened if it gave none>"` (its receipt line is delivered by the next ship), list it in your report, and continue with the next item.
-- Quota or rate limit, or the tool stops returning images without refusing (two attempts in a row with no image). Push what is saved, report the counts and the next ID, and stop. Nothing is recorded for an item you did not finish.
+- Usage limit (ChatGPT Plus resets every 5 hours), rate limit, or the tool stops returning images without refusing (two requests in a row with no image). Everything saved is already delivered; report the counts and the next ID, and stop. The owner restarts the same prompt after the reset, and `next` resumes. Nothing is recorded for an item you did not finish.
 - `doctor` says NOT READY (not "NOT READY YET", which has its own one-step fix): a broken queue, prompts or references, or a branch other than main. Also a prompt that does not match its queue hash after a pull, or a queue that is schema 1. Report it and stop.
 - `doctor` says delivery by git is blocked (no git or git-lfs): keep generating and saving, and finish each batch with `bundle`; hand the zip to the owner. If you cannot run Python either, do the same steps by hand and deliver the images, named `<ID>.<ext>` with their true extension, with one receipt line each (`references/QA_CHECKLIST.md` shows the format).
 
@@ -138,6 +137,6 @@ The exact queued prompt and its must and do-not-draw clauses remain authoritativ
 - **Image-bound visual QA:** `qa ID IMAGE` writes the `fidelity_gate.py` draft outside the clone. Complete all ten criteria with concrete evidence; `save` finds the draft. The helper refuses incomplete or stale reports, and a clean `check` never substitutes for looking. See `references/STYLE_CONSISTENCY.md`.
 - **Native dimensions (owner 2026-10-11):** the queue size is the minimum at a fixed aspect. Request the largest size offered at that aspect. A smaller or off-aspect image is a recorded exception that needs reviewer approval.
 - **Delivery:** only through `delivery_guard.py ship --execute`, which validates first (`audit` runs the same validation alone, for diagnosis). It verifies each image against its latest native-hash receipt, the prompt hash, unchanged references and all ten QA entries, and blocks on a dirty index, unexpected paths, missing LFS or divergence. Never bypass it with a direct `git add` or push.
-- **Drift:** compare four-edge ink statistics with an actual look; a number never proves a vignette. When two sibling images share the same drift, stop and report it.
+- **Drift:** compare four-edge ink statistics with an actual look; a number never proves a vignette. When two sibling images share the same drift, report it and continue; Claude Code reviews and sends redos.
 - **Independent review:** Claude Code reviews every delivered image. You never approve, and a numerical score is never approval.
 - **Installed version:** `work_preflight.py --require-installed` confirms the clone carries this v8 skill before production.

@@ -50,6 +50,6 @@ The v7 changes (gritty direction, per-family and per-kind sets, lead order, per-
 
 ## Not verified offline
 
-- Whether the worker's image tool accepts the listed reference images (now up to six), and what model or size it offers. The first real item is the proof.
+- What model and size the worker's image tool offers. The owner confirmed on 2026-10-12 that Codex accepts six reference images.
 - Real image quality and style consistency across sets. The drift reviews at images 10 and 20 are the first evidence.
-- Git LFS delivery from the worker's PC over a long unattended run, and the ChatGPT plan's usage limits.
+- Git LFS delivery from the worker's PC over a long unattended run. ChatGPT Plus usage resets every 5 hours; each session ends at the limit and the same prompt resumes.

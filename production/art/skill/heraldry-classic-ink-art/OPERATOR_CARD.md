@@ -31,7 +31,7 @@ On the first item, confirm that the image tool accepts the listed references and
 - **DRIFT REVIEW** (every tenth save):
   1. Run `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10` (both write to the scratch folder).
   2. Look at the sheet once, then deliver in every case.
-  3. If two or more images of the same register share a drift, stop after delivering and report.
+  3. If two or more images of the same register share a drift, report it and continue.
 - If `ship` says BLOCKED: run `bundle`, report it, and stop. Never pull, rebase or force.
 - Resume from `status`. Never regenerate a delivered item unless it is listed as a `redo`.
 
