@@ -237,5 +237,38 @@
    "max_print_w_in_300ppi": 4.723
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLI-THE-ASHLANDS": {
+  "family": "climate",
+  "title": "The Ashlands",
+  "heading_id": "h-the-ashlands",
+  "route": "gpt",
+  "spec_sha256": "742f79f873697ead030177db2203aff2a91be13452ec148b48b169db64686868",
+  "prompt_sha256": "acc27bad4bc4f1b80511d5c6f0a10296e219d4a5b51044ffb929406878124597",
+  "status": "received",
+  "received_at": "2026-10-12T01:00:29+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Correction: contain all ink inside the central 80% of the canvas, leaving 10% entirely blank white margin on every side and an irregular hand-drawn fade within that area; keep the street perspective, shrine lamp and tiny patrol. Correction: strictly neutral black ink on perfectly flat white paper with no tint, texture, stains or grey wash, preserving rough brush contours and heavy solid-black shadows.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLI-THE-ASHLANDS.png",
+   "sha256": "8ca9eb31eac81830be8bbc9266e5ddf50deab92403d516d3fe8ff775552df57e",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLI-THE-ASHLANDS.png",
+   "sha256": "a084ab125c0c0f2f124a4be858bb7a76fc7261822d815103eebdea074f6f42ff",
+   "px": [
+    1410,
+    862
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.7
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
