@@ -5719,5 +5719,38 @@
    "max_print_w_in_300ppi": 5.05
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-THE-ANCIENT-VOID-DRAGON": {
+  "family": "boss",
+  "title": "The Ancient Void Dragon",
+  "heading_id": "h-the-ancient-void-dragon-boss",
+  "route": "gpt",
+  "spec_sha256": "fd608a5f78e5e5ee7d606852a1034449660597f2aea0de3583352fa45d4a7cfb",
+  "prompt_sha256": "d0ba863f39267c5580f874f321489a753d5f3786e1241ea2525286b6f5d95861",
+  "status": "received",
+  "received_at": "2026-10-12T18:41:52+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Void-as-negative-space concept and no-glow/no-figure constraints are met; organic white vignette margin is missing at the perimeter.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-THE-ANCIENT-VOID-DRAGON.png",
+   "sha256": "34bbc1cbcdb7476033ccbf17abb81ea970a766166b6b6cf6d6a56235a68ef926",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-THE-ANCIENT-VOID-DRAGON.png",
+   "sha256": "2e3e84b9d0af6a6ef6baa578fc0da9bc49a41c83895024051b38317ecfdf81b0",
+   "px": [
+    1527,
+    1003
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.09
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
