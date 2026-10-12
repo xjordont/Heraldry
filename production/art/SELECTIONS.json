@@ -5653,5 +5653,137 @@
    "max_print_w_in_300ppi": 5.107
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-MAELTHORN-THE-VERDANT": {
+  "family": "boss",
+  "title": "Maelthorn the Verdant",
+  "heading_id": "h-maelthorn-the-verdant-boss",
+  "route": "gpt",
+  "spec_sha256": "b348e710eea9e8b4009219fe37884e78b1a1dbf7cd3fd10b41fdfdfaa6f38480",
+  "prompt_sha256": "6fb2b2ba410c98470544fb29482959038036b95b93f332702047e91a312cb22f",
+  "status": "received",
+  "received_at": "2026-10-12T18:33:20+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Subject, line-drawn fog, animals, and offerings match; perimeter lacks required clean 5-8 percent margin.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-MAELTHORN-THE-VERDANT.png",
+   "sha256": "59dbe5f25e2f792b0b01dcfd19f247bb302c90c2ae66ff734f69d57263c8f329",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-MAELTHORN-THE-VERDANT.png",
+   "sha256": "e4e0129c55f42b557a808198a770d5ee969ab404a25247ded4e8a140e4507203",
+   "px": [
+    1534,
+    990
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.113
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-SIRRACH-THE-BLACK": {
+  "family": "boss",
+  "title": "Sirrach the Black",
+  "heading_id": "h-sirrach-the-black-boss",
+  "route": "gpt",
+  "spec_sha256": "91ac76f3d0d1845d822938d69ae4db4fd9b87ab7e65e4a1de1bce7f3ee6274c3",
+  "prompt_sha256": "482ee9b4a8864ea728017e4612cd11210622134157e12f01777efc92cb61f99e",
+  "status": "received",
+  "received_at": "2026-10-12T18:37:42+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Subject, stone ripples, hoard, and no-glow requirements read correctly; organic vignette with clean 5-8 percent margin is missing.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-SIRRACH-THE-BLACK.png",
+   "sha256": "918f61af0fb0c06371a5698dd0b4b7f210fb486fdcb09386f2547d1cff1ec30a",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-SIRRACH-THE-BLACK.png",
+   "sha256": "5442119439d1e9eff97e53cfecede8117b19fc8034b5ab566f9e286287b5a9d7",
+   "px": [
+    1515,
+    1010
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.05
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-THE-ANCIENT-VOID-DRAGON": {
+  "family": "boss",
+  "title": "The Ancient Void Dragon",
+  "heading_id": "h-the-ancient-void-dragon-boss",
+  "route": "gpt",
+  "spec_sha256": "fd608a5f78e5e5ee7d606852a1034449660597f2aea0de3583352fa45d4a7cfb",
+  "prompt_sha256": "d0ba863f39267c5580f874f321489a753d5f3786e1241ea2525286b6f5d95861",
+  "status": "received",
+  "received_at": "2026-10-12T18:41:52+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Void-as-negative-space concept and no-glow/no-figure constraints are met; organic white vignette margin is missing at the perimeter.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-THE-ANCIENT-VOID-DRAGON.png",
+   "sha256": "34bbc1cbcdb7476033ccbf17abb81ea970a766166b6b6cf6d6a56235a68ef926",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-THE-ANCIENT-VOID-DRAGON.png",
+   "sha256": "2e3e84b9d0af6a6ef6baa578fc0da9bc49a41c83895024051b38317ecfdf81b0",
+   "px": [
+    1527,
+    1003
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.09
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE": {
+  "family": "boss",
+  "title": "The Antlered Warden of the Tithe",
+  "heading_id": "h-the-antlered-warden-of-the-tithe-boss",
+  "route": "gpt",
+  "spec_sha256": "48e9ba7f59ebc2af9fb5e1d1ae5f716965ebe8fb50351cfe778383ecf9bd0e64",
+  "prompt_sha256": "ae1ceedfb1e1fcdd9d06452855c1fe68035760283995e161ea867b2efea39670",
+  "status": "received",
+  "received_at": "2026-10-12T18:49:07+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "One generation; image has detailed linework near perimeter, weakening the required 5-8% clean vignette; correction sentences were appended.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE.png",
+   "sha256": "b28d90ad4c27845242ae6c480f8126a6f7933489ed65513a8b58a9c0d0a514c0",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE.png",
+   "sha256": "23b15dbc05bb8d7f8d78a05a245755ad88a2ca707d884253af7bc7309c3d83f2",
+   "px": [
+    1527,
+    1023
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.09
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
