@@ -4801,15 +4801,15 @@
   "route": "gpt",
   "spec_sha256": "e136020372028394ff0bebe835c9e3bc1d9486d4e4a4688854558dc8ba5b091c",
   "prompt_sha256": "fc17ebe6a11217eeb338f64227971697798debfc5fa1b43178a0c6d0e7dac73d",
-  "status": "rejected",
-  "received_at": "2026-10-12T16:58:15+00:00",
+  "status": "received",
+  "received_at": "2026-10-12T17:22:47+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Flag: the corpse reads gaunt and skeletal rather than bloated with sagging waterlogged skin. All other reviewed constraints pass.",
+  "notes": "The torso is bloated, but the face still reads as an exposed skull rather than a fat drowned face with puffy sagging skin; no further attempt available.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-MON-ZOMBIE.png",
-   "sha256": "33c9595b5d0666fabf3385c0e620857c611c8970ba6f0a932b770c9d9f1b523f",
+   "sha256": "d833d6dfa288f6d88dc83f085f2b8782d8e7b8482469037c025f739a625ccd4f",
    "px": [
     1254,
     1254
@@ -4817,17 +4817,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-MON-ZOMBIE.png",
-   "sha256": "601fa1db235a9189ead349cba178d8b31e24a977fe343d5a83df43961108ed0b",
+   "sha256": "979d3acc1f2adca45ff2ec4e2140feb421162482f0d6c50fa87cb0751ec05dc1",
    "px": [
-    1081,
-    1166
+    1085,
+    1085
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.603
+   "max_print_w_in_300ppi": 3.617
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-12T17:10:42+00:00",
-  "rejected_reason": "It reads gaunt and skeletal like the Possessed Corpse; draw a bloated, swollen, waterlogged corpse with puffy sagging skin and a fat drowned face, no bare skull."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-CLA-ASSASSIN": {
   "family": "class",
