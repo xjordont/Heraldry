@@ -2113,5 +2113,38 @@
    "max_print_w_in_300ppi": 3.557
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-FROST-WYVERN": {
+  "family": "monster",
+  "title": "Frost Wyvern",
+  "heading_id": "h-frost-wyvern-elite",
+  "route": "gpt",
+  "spec_sha256": "3cf559baa9e8897f2ece0c8592219152904e3cf86f4444f98d336ab8aff52d1e",
+  "prompt_sha256": "99b16077dc156802725f8f9185a7d6cd128343100f99130e012c7a9b9139759b",
+  "status": "received",
+  "received_at": "2026-10-12T08:39:18+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "1254x1254 vs 1024x1024 target; larger than roughly twice-human scale, edge marks 0.28%, narrow margin. Two legs confirmed, no breath.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-FROST-WYVERN.png",
+   "sha256": "6bdedbea54d2c6717f0e65c95690de48bd63e3d5805be9edd15a090354edfc4c",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-FROST-WYVERN.png",
+   "sha256": "ede5e2c24eb0c133c7e6a0a4050c4bc63c87fd0bbaf7c34e433c93be718664c2",
+   "px": [
+    1235,
+    1235
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.117
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
