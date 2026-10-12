@@ -273,6 +273,10 @@ def ship(repo, tries=3):
             if attempt > 1 and str(e) == 'nothing to deliver':
                 # the previous push landed although git reported a failure; upstream now holds our files
                 return {'status': 'PUSHED', 'commit': cmd(repo, 'rev-parse', 'HEAD'), 'images': [], 'attempts': attempt}
+            if str(e) == 'nothing to deliver' and _rc(repo, 'merge-base', '--is-ancestor', 'HEAD', 'origin/main') == 0:
+                # A repeated ship after a delivery that landed (its output lost to a tool timeout): not a fault.
+                return {'status': 'UP-TO-DATE', 'commit': cmd(repo, 'rev-parse', 'origin/main'), 'images': [],
+                        'note': 'nothing unsent: every saved image is already on origin/main; continue with next'}
             raise
         if fast_forward(repo, pre['changed'], fetch=attempt > 1):   # the first pass reuses recover_unpublished's fetch
             try:
@@ -297,6 +301,8 @@ def ship(repo, tries=3):
             ids = [ALLOWED_IMAGE.fullmatch(x).group(1) for x in pre['images']]
             span = f'{ids[0]} .. {ids[-1]}' if ids else 'refusals'
             cmd(repo, 'commit', '-m', 'art(gpt): ' + span)
+            print(f'ship: pushing {len(ids)} image(s) to origin/main (Git LFS upload; allow a few minutes)...',
+                  file=sys.stderr, flush=True)
             push = _git(repo, 'push', 'origin', 'main')     # fast-forward only; no force flags
         except BaseException:
             # Nothing was published: unstage and undo our own commit, keeping the files in the working tree.
@@ -324,7 +330,7 @@ def main(argv=None):
         if a.command == 'ship' and not a.execute:
             raise Error('ship requires --execute; run audit and use bundle fallback if blocked')
         result = ship(a.repo) if a.command == 'ship' else validate(a.repo)
-        print(json.dumps({'status':'PUSHED' if a.command == 'ship' else 'PASS', **result}, indent=2))
+        print(json.dumps({'status':'PUSHED' if a.command == 'ship' else 'PASS', **result}, indent=2), flush=True)
         return 0
     except (Error, OSError, ValueError, KeyError, TypeError, subprocess.TimeoutExpired) as e:
         print(json.dumps({'status':'BLOCKED','reason':str(e)}, indent=2), file=sys.stderr)
