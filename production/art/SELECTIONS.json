@@ -4898,5 +4898,38 @@
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
   "approved_at": "2026-10-12T17:10:42+00:00"
+ },
+ "ART-CLA-CLERIC": {
+  "family": "class",
+  "title": "Cleric",
+  "heading_id": "h-cleric-35-complexity",
+  "route": "gpt",
+  "spec_sha256": "975f016331dc4d3f708621666496d3d08c3012a4b2a641b155168ff5e42fabca",
+  "prompt_sha256": "dafb7eccfadf4a33c431bf8989e4c8dbb447964821a7eb718fc8d8bca95950fb",
+  "status": "received",
+  "received_at": "2026-10-12T17:12:23+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-CLERIC.png",
+   "sha256": "e7f99a2346b268ba243efc096fbc61804a3a40c04fe2d4911c573195ab8d5068",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-CLERIC.png",
+   "sha256": "f813cca6340288dfd83139f0000ae86395fb65d7e95ad5c3833fb1fc7b3e1cdf",
+   "px": [
+    970,
+    1332
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.233
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
