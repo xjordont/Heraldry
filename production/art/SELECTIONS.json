@@ -4384,5 +4384,38 @@
    "max_print_w_in_300ppi": 3.827
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ITE-7-8-MELEE-WEAPONS": {
+  "family": "item",
+  "title": "7.8 Melee Weapons",
+  "heading_id": "h-78-melee-weapons",
+  "route": "gpt",
+  "spec_sha256": "83e6f983533177ad4c07d18593d27eb85cb96da48233815ae547552067eebf63",
+  "prompt_sha256": "25ea06609f6443f13424fc603a236cde192305562e1e76ada0d2b2831c9c6aae",
+  "status": "received",
+  "received_at": "2026-10-12T16:18:29+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flag: the frayed sacking touches the left and right image edges; all six weapons are fully visible. Midtone warning visually reads as ink hatching.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ITE-7-8-MELEE-WEAPONS.png",
+   "sha256": "7f57d8fe62973cb0e7139d7687c93195869244e877502fe30d85812abe93d2e0",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ITE-7-8-MELEE-WEAPONS.png",
+   "sha256": "d858442c7e8a22a88eee82cae96898f94655fb294a6db3e08ad83d9c7eed2cb9",
+   "px": [
+    1535,
+    995
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.117
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
