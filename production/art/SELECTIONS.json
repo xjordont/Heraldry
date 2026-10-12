@@ -4582,5 +4582,38 @@
    "max_print_w_in_300ppi": 3.427
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-WHITE-COURT-EXECUTIONER": {
+  "family": "monster",
+  "title": "White Court Executioner",
+  "heading_id": "h-white-court-executioner-elite",
+  "route": "gpt",
+  "spec_sha256": "33ee8f08ff8e653eebb8b6364cadeebb49fa6a38385e7600b870e50fc874d36b",
+  "prompt_sha256": "1a4384072d7bcbff04cd00a9602dc1a97143242777d9547b8290056ba3859fed",
+  "status": "received",
+  "received_at": "2026-10-12T16:35:41+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-WHITE-COURT-EXECUTIONER.png",
+   "sha256": "c5bae14c1e04b573b9951f2a9790180e8a33e234d85590c6ad73e473eb2c0070",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-WHITE-COURT-EXECUTIONER.png",
+   "sha256": "2573e12db1fbd2636b7bbd628960d77d5d134f868fee113179feca6c4abc1d32",
+   "px": [
+    815,
+    1219
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.717
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
