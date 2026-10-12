@@ -133,5 +133,38 @@
    "max_print_w_in_300ppi": 4.047
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-ORC": {
+  "family": "monster",
+  "title": "Orc",
+  "heading_id": "h-orc-soldier",
+  "route": "gpt",
+  "spec_sha256": "86a860fa50a78d64bde733a2f063281c3f2f2cb6c25ddd1f25b3ca8c9747d61a",
+  "prompt_sha256": "b97cbf5864880e238dc0ddc245d6c1a82dbe40d71795cbecaffcd259caaff060",
+  "status": "received",
+  "received_at": "2026-10-12T04:46:33+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-ORC.png",
+   "sha256": "32ebc67c736307100a373bd8ed03ace6acea19a0a09fb5bdc874b36a970aa9d0",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-ORC.png",
+   "sha256": "9e20765b27afa34c865e2812d443c3d191467b585b35f0ee842ed6749adbfcda",
+   "px": [
+    1019,
+    1225
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.397
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
