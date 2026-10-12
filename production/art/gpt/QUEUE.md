@@ -5,14 +5,14 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 | Set | Reference images |
 |---|---|
 | A | `assets/art/style/STYLE-REF-11-city-approach-ink.png`<br>`assets/art/style/STYLE-REF-02-panorama-line.jpg`<br>`assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg`<br>`assets/art/style/STYLE-REF-53-frost-harbour-city.png` |
-| B | `assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg`<br>`assets/art/style/STYLE-REF-13-cave-river-pen.jpg`<br>`assets/art/style/STYLE-REF-07-drybrush-duel.jpg`<br>`assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg` |
+| B | `assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg`<br>`assets/art/style/STYLE-REF-13-cave-river-pen.jpg`<br>`assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg`<br>`assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg` |
 | C | `assets/art/style/STYLE-REF-04-throne-brush-black.jpg`<br>`assets/art/style/STYLE-REF-03-figure-spotblack.jpg`<br>`assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg`<br>`assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg` |
 | D | `assets/art/style/STYLE-REF-18-roaring-bear.jpg`<br>`assets/art/style/STYLE-REF-38-gnoll-spearman.jpg`<br>`assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg`<br>`assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg` |
 | E | `assets/art/style/STYLE-REF-38-gnoll-spearman.jpg`<br>`assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg`<br>`assets/art/style/STYLE-REF-62-ratman-warrior.jpg`<br>`assets/art/style/STYLE-REF-66-troll-pair-spear.jpg` |
 | F | `assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg`<br>`assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg`<br>`assets/art/style/STYLE-REF-18-roaring-bear.jpg`<br>`assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg` |
-| G | `assets/art/style/STYLE-REF-08-woodcut-fencers.jpg`<br>`assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg`<br>`assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg`<br>`assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg` |
+| G | `assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg`<br>`assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg`<br>`assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg`<br>`assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg` |
 | H | `assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg`<br>`assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg`<br>`assets/art/style/STYLE-REF-25-bracers-pair.jpg`<br>`assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg` |
-| I | `assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg`<br>`assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg`<br>`assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg`<br>`assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg` |
+| I | `assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg`<br>`assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg`<br>`assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg`<br>`assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg` |
 | J | `assets/art/style/STYLE-REF-20-armoury-interior.jpg`<br>`assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg`<br>`assets/art/style/STYLE-REF-23-dungeon-arches-screentone.jpg` |
 | K | `assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg`<br>`assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg`<br>`assets/art/style/STYLE-REF-18-roaring-bear.jpg`<br>`assets/art/style/STYLE-REF-35-grub-beast-line.jpg` |
 | L | `assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg`<br>`assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg`<br>`assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg`<br>`assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg` |
@@ -20,7 +20,7 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 | N | `assets/art/style/STYLE-REF-30-forest-path-stipple.jpg`<br>`assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg`<br>`assets/art/style/STYLE-REF-55-siege-wall-climb.jpg`<br>`assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg` |
 | O | `assets/art/style/STYLE-REF-15-sword-mace-items.jpg`<br>`assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg`<br>`assets/art/style/STYLE-REF-27-carved-scroll-case.jpg`<br>`assets/art/style/STYLE-REF-33-bound-bone-cross.jpg` |
 | P | `assets/art/style/STYLE-REF-46-round-tower-riders.jpg`<br>`assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg`<br>`assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg` |
-| Q | `assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg`<br>`assets/art/style/STYLE-REF-11-city-approach-ink.png`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg`<br>`assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg` |
+| Q | `assets/art/style/STYLE-REF-11-city-approach-ink.png`<br>`assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg`<br>`assets/art/style/STYLE-REF-46-round-tower-riders.jpg`<br>`assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg` |
 
 | # | ID | Subject | Size | Set | Tries | Prompt |
 |---|---|---|---|---|---|---|

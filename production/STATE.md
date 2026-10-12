@@ -409,3 +409,11 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Caveats:** grey tone in 55, 58, 59 and 62; a dark backdrop on 62; a monogram on 65.
   - **Result:** 57 distinct images in use. Still shared: cover (29, 11, 43), chapter (43), world (44), beast (38, 16), vermin (16, 18), magical (28, 18). Eleven more images give every set four unique images.
   - Scenic references were added to the figure test. The queue was republished, with prompts unchanged.
+- **Reference review** (owner, 2026-10-12: "Review every reference art piece and every reference category to ensure optimal and best assignments"). All 66 references were viewed on labelled contact sheets and checked against each set's subjects.
+  - **Changes:**
+    - classes and ancestries: 54 dwarf and 57 swordswoman replace 08 fencers and 42 Callot crutches;
+    - spell tiers: 63 wizard casting replaces 28, which stays in magical;
+    - cover: 46 tower and 65 coast replace 29 and 43;
+    - climates: 47 barrow replaces 07.
+  - **Kept on purpose:** vermin and magical keep 18 bear and 16 dragon-man as their weakest members, because the only alternatives (05 cave, 26 study) are scenes and must not reach isolated figures. The owner's item set (15, 40, 27, 33) is unchanged; 56 weapons sheet and 64 armour sheet are recommended alternatives.
+  - **Result:** 57 distinct images in use. The queue was republished, with prompts unchanged.
