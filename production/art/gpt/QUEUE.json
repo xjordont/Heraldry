@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-12T03:04:16+00:00",
+ "generated_at": "2026-10-12T03:05:43+00:00",
  "max_references": 4,
  "push_every": 1,
  "review_every": 10,
@@ -388,9 +388,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
-    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
-    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
-    "assets/art/style/STYLE-REF-24-flanged-mace-line.jpg"
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6818,9 +6818,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
-    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
-    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
-    "assets/art/style/STYLE-REF-24-flanged-mace-line.jpg"
+    "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
+    "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",

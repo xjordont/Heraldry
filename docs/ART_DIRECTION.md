@@ -26,7 +26,7 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   | Bosses | 16, 10 undead crowd, 05 cave creature, 49 swordsman on a mountain pass |
   | Classes and ancestries | 08 woodcut fencers, 41 Callot beggar, 06 hooded archer, 42 Callot beggar on crutches |
   | Backgrounds | 19 pack, rope and lantern; 34 gear sheet; 25 bracers; 39 poison flask |
-  | Items | 15 sword and mace, 19, 25, 24 flanged mace |
+  | Items | 15 sword and mace, 40 rag-wrapped scythe, 27 carved scroll case (pseudo-writing risk), 33 bone cross |
   | Spell tiers | 29 holy fire, 28 wizard vs fiend, 26 summoning, 12 wizard storm |
   | Stronghold rooms | 20 armoury, 37 dungeon pits, 43 Piranesi drawbridge, 23 dungeon arches |
   | Climates | 44 Haden vignette, 13 cave river, 07 dry-brush duel, 17 swamp hut |
@@ -44,7 +44,7 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   - 12 and 17 carry grey tone, 23 screen tone, and 30 and 31 stipple fields: the generator may copy the tone, which the checks still reject.
   - 32, 35 and 39 are small; 24 is cleaner than the core.
 - **Owner samples 45 to 52** (2026-10-12): see the table. 52 lich and 51 mummy replace 38 gnoll in the undead set (38 stays in beasts and humanoids). The owner removed 22 wolf pack the same day, then restored it to beasts.
-- **Still on file, not attached:** 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life), 27 (pseudo-script), 33 bone cross and 40 scythe (small still lifes; no slot left).
+- **Still on file, not attached:** 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life); 24 flanged mace (the cleanest still life, replaced in items by the owner's choice of 40, 27 and 33).
 - **Still open:** no gritty desert, ash-waste or snow landscape example exists in the public domain at usable quality. Those climates rely on their prompts plus the general landscape references 44, 13 and 07.
 - **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached, because grey tone cannot print in black ink.
 - **Cut and superseded:** the owner cut STYLE-REF-01 (it remains in git history) and replaced it with STYLE-REF-11, an owner exception to the rule against machine-made references.

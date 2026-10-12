@@ -18,7 +18,7 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 | L | `assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg`<br>`assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg`<br>`assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg`<br>`assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg` |
 | M | `assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg`<br>`assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg`<br>`assets/art/style/STYLE-REF-05-cave-creature-pen.jpg`<br>`assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg` |
 | N | `assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg`<br>`assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg`<br>`assets/art/style/STYLE-REF-30-forest-path-stipple.jpg` |
-| O | `assets/art/style/STYLE-REF-15-sword-mace-items.jpg`<br>`assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg`<br>`assets/art/style/STYLE-REF-25-bracers-pair.jpg`<br>`assets/art/style/STYLE-REF-24-flanged-mace-line.jpg` |
+| O | `assets/art/style/STYLE-REF-15-sword-mace-items.jpg`<br>`assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg`<br>`assets/art/style/STYLE-REF-27-carved-scroll-case.jpg`<br>`assets/art/style/STYLE-REF-33-bound-bone-cross.jpg` |
 | P | `assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg`<br>`assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg`<br>`assets/art/style/STYLE-REF-46-round-tower-riders.jpg` |
 | Q | `assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg`<br>`assets/art/style/STYLE-REF-11-city-approach-ink.png`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg`<br>`assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg` |
 
