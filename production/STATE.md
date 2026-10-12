@@ -318,3 +318,15 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
     - `claude/heraldry-rc484-build` has no commits that `main` lacks. It is the RC484 checkpoint, now recorded by commit `3818324466aec2d3ab0515f48f93c7c498a0a6ab` in CLAUDE.md.
     - `art/upgrade-classic-ink-v6` ends in a tree byte-identical to `924bb3c`, its squash merge, which is already in `main` and since superseded by v7. Merging it would only re-apply v6 files.
   - Deleting both remote branches is for the owner: this session's tools refused the tag push and the branch deletion.
+- **Sync and stale-file sweep; new README** (owner, 2026-10-12: "make sure everything on your side and GitHub's side are all UpToDate and in synchrony with no dead/stale files (delete if found). Then update the repo's main branch readme").
+  - **Sync:** local `main` equals `origin/main`, and `main` is GitHub's only branch.
+  - **Removed:**
+    - the four committed review images (`production/art/review/intake-*.jpg`, `anchors-proposed.png`), superseded by local sheets;
+    - `tools/art_package.py`, a separate packager for the 12 masters written while their placement in the PDF was pending; the release ZIP covers them;
+    - `production/art/codex/PROJECT_HANDOFF.md`, superseded by the batch card, runbook and `docs/ART_AUTOMATION.md`;
+    - `README_SETUP.md`, a stale duplicate of README and CLAUDE.md (dropped from the preflight's required list and the package list).
+  - **Moved:** the dated 2026-10-06 audit to `docs/history/`.
+  - **Rewritten:**
+    - `docs/ART_AUTOMATION.md` describes the current state only (v4/v6 history removed; it is here and in git);
+    - `README.md` covers the current state, the tracks, how to work on the project, checks, builds on request and large files.
+  - A reference scan found no other unreferenced files apart from workflows, tests, revision proposals and inspection records, which are kept. `tools/contact_sheet.py` is a live review tool and is now named in the README.

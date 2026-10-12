@@ -1,34 +1,65 @@
-# Heraldry Skirmish publication project
+# Heraldry Skirmish
 
-[source/versions.json](source/versions.json) identifies the active manuscript. [RC485](source/Heraldry_RC485.md) was created to contain the seven approved clarifications previously applied during the RC484 build. The [original RC484](source/Heraldry_RC484.md) remains unchanged. All snapshots and their exact approved patch evidence remain available.
+The publication repository for the Heraldry Skirmish rulebook. It holds the manuscript, the Typst book build, 57 editable rules figures, and the pen-and-ink illustration pipeline that produces a borderless US Letter PDF edition in a clean dark-fantasy style.
 
-All future iterations use **main** unless the owner explicitly decides otherwise. Manuscript text-patch batches advance the RC number once; artwork, figure and layout changes use ordinary Git commits. Read [WORKFLOW.md](docs/WORKFLOW.md) for the exact revision command and review requirements.
+## Current state
 
-## Continue with Claude Code
+- **Manuscript:** RC492 (`source/versions.json`). Earlier snapshots, from the original RC484 onwards, are immutable.
+- **Last requested build:** RC492, 598 interior pages, with the six anchor illustrations of that time placed (the Giant Tarantula has since been sent back for a redo). Evidence and limits are in [production/RELEASE_STATUS.md](production/RELEASE_STATUS.md). Builds happen only when the owner asks.
+- **Illustrations:** 275 planned.
+  - Approved: Greythorn and four hand-inked anchors.
+  - Queued for generation: 270 (gritty old-school black ink; skill v7).
+- **Physical printing:** NOT TESTED until real sheets are examined.
 
-Select this repository and main, then provide your requested change with:
+Running log: [production/STATE.md](production/STATE.md).
 
-> Read CLAUDE.md, docs/WORKFLOW.md and production/STATE.md. Implement the requested iteration on main using the active manuscript in source/versions.json. Preserve earlier snapshots. Advance the RC number once if manuscript text changes. Follow MASTER_PROMPT.md, rebuild, verify, inspect and package the result, update the ledgers, and push verified work to main. Do not create a branch unless I explicitly decide to use one.
+## How the project runs
 
-The project already has a working Typst build, 57 editable rules figures and twelve ChatGPT-generated atmospheric masters. [MASTER_PROMPT.md](MASTER_PROMPT.md) is its standing design/production contract. Resume the existing work; do not restart it.
+| Track | Where | Rule |
+|---|---|---|
+| Manuscript | `source/`, `editorial/history/` | Each approved text-patch batch creates exactly one new RC with `tools/revise_manuscript.py`. Snapshots are never edited. Prose is never regenerated |
+| Illustrations | `production/art/`, `assets/art/` | Prompts and queue come from the manuscript (`tools/art_gpt_pack.py`). Codex generates within the owner's ChatGPT plan and delivers each image. Claude Code reviews and approves. Only approved art is placed. Art changes never change the RC |
+| Rules figures | `figures/src/`, `figures/out/` | Source-faithful vector diagrams with a semantic review ledger |
+| Layout | `typst/`, `config/design_tokens.json` | Whole sections stay on one page when they fit (mandatory pagination audit) |
 
-## Build
+- `main` is the only branch.
+- Large build outputs (PDFs, ZIP packages) are never committed. Each requested build is published as a GitHub Release. See [docs/LARGE_FILES.md](docs/LARGE_FILES.md).
+
+## Working on it
+
+**With Claude Code:** select this repository on `main` and describe the change. [CLAUDE.md](CLAUDE.md) is the governing contract. Claude reads it with [docs/WORKFLOW.md](docs/WORKFLOW.md) and `production/STATE.md`, then resumes the existing work. [MASTER_PROMPT.md](MASTER_PROMPT.md) is the standing design and production contract, not a restart instruction.
+
+**Illustrations with Codex** (on the owner's PC): give Codex the line in [production/art/codex/CODEX_PROMPT.md](production/art/codex/CODEX_PROMPT.md). Its one-page contract is [BATCH_CARD.md](production/art/codex/BATCH_CARD.md); setup is in [CODEX_RUNBOOK.md](production/art/codex/CODEX_RUNBOOK.md). The pipeline is described in [docs/ART_AUTOMATION.md](docs/ART_AUTOMATION.md).
+
+**Checks** (every change):
 
 ```sh
 python3 -m pip install -r requirements.lock
+python3 tools/preflight.py --baseline --report production/preflight.json
 make test
+```
+
+**Build** (only when the owner asks for a PDF):
+
+```sh
 make clean all verify package
 ```
 
-See [BUILD.md](BUILD.md) for commands and [RELEASE_STATUS.md](production/RELEASE_STATUS.md) for actual evidence and limitations. Built PDFs are published as GitHub Releases, not committed ([docs/LARGE_FILES.md](docs/LARGE_FILES.md)); the RC492 PDFs built before that policy are in Git history (the link is in that document). The prior release ZIP is withheld during this artwork/design iteration; rebuild and review before creating a new release archive. Automated checks bind results to current source, code, assets and PDF hashes; visual review and physical printing remain separate.
+Then inspect the pages and record the visual review, and run the `Rebuild verified delivery` workflow to publish the Release. Outputs and commands are in [BUILD.md](BUILD.md). Page contact sheets for review come from `tools/contact_sheet.py`.
 
-## Design and components
+**On request:** `make art-packages`, or the `Build art packages` workflow, builds the installable skill ZIP and the offline ChatGPT Work package.
 
-- [Design specification](docs/DESIGN_SPEC.md), [art direction](docs/ART_DIRECTION.md), [visual QA](docs/VISUAL_QA.md) and [inkjet profile](docs/INKJET_PRINT.md).
-- Manuscript snapshots and approved patch history: `source/` and `editorial/history/`.
-- Original atmospheric assets and prompts: `assets/art/incoming/` and `production/art/`.
-- Rules figure sources, SVGs and reviewed placement: `figures/`.
-- Typesetting and build tools: `typst/`, `tools/` and `config/`.
-- [Native Claude agents](.claude/agents/) and [reference analysis](docs/REFERENCE_ANALYSIS.md).
+## Design references
 
-The design is clean dark fantasy on cream or white, borderless portrait US Letter, with essential content protected inside the printer overscan area. Reference books provide visual inspiration only; the active Heraldry manuscript is the rules authority. Commercial PDFs are not bundled. The twelve native atmospheric masters are supplied in assets/art/incoming/; read [artwork handoff](production/art/HANDOFF.md) for exact prompts, native placement limits and the required integration/review pass. InDesign export is on hold. Physical printer proof remains NOT TESTED.
+- [Design specification](docs/DESIGN_SPEC.md) and [design refinement](docs/DESIGN_REFINEMENT.md).
+- [Art direction](docs/ART_DIRECTION.md).
+- [Visual QA](docs/VISUAL_QA.md) and [inkjet print profile](docs/INKJET_PRINT.md).
+- [Reference analysis](docs/REFERENCE_ANALYSIS.md).
+
+The owner's ten reference books are private, kept in Git LFS under `references/private/`, and never packaged (see [references/README.md](references/README.md)). They are visual inspiration only; the active manuscript is the rules authority. InDesign export is on hold.
+
+## Environment notes
+
+- Cloud settings and network policies apply regardless of repository instructions. If the platform blocks a write, a model or a dependency, record the actual restriction; never claim a push that did not happen.
+- Never print or commit credentials.
+- `.claude/settings.json` selects the configured Opus model for orchestration, and the native agents in `.claude/agents/` use the configured Sonnet model for bulk work, at most two at a time.

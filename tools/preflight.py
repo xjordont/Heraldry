@@ -16,7 +16,7 @@ SOURCE_HASH = '2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3'
 AGENTS = {'book-designer': 'medium', 'publication-engineer': 'high',
           'publication-auditor': 'high', 'rules-illustrator': 'high',
           'mechanical-assistant': None}
-REQUIRED = ['MASTER_PROMPT.md', 'CLAUDE.md', 'README.md', 'README_SETUP.md',
+REQUIRED = ['MASTER_PROMPT.md', 'CLAUDE.md', 'README.md',
             'docs/DESIGN_SPEC.md', 'docs/ART_DIRECTION.md', 'docs/REFERENCE_ANALYSIS.md',
             'docs/LAUNCH_CHECKLIST.md', 'source/source_inventory.json',
             'references/reference_manifest.json', 'references/README.md',

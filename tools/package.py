@@ -8,7 +8,7 @@ from manuscript import ROOT, check, version
 from provenance import check as check_build
 
 DIST = ROOT / "dist"
-INCLUDE = ["Makefile", "requirements.lock", "README.md", "README_SETUP.md", "BUILD.md", "CLAUDE.md",
+INCLUDE = ["Makefile", "requirements.lock", "README.md", "BUILD.md", "CLAUDE.md",
            "MASTER_PROMPT.md", ".gitignore", ".claude", ".github", "tests", "references",
            "source", "editorial", "typst", "tools", "figures", "fonts", "config", "docs", "assets", "production", "dist"]
 # style = owner-supplied generation references (never packaged); masters = raw generated art (ink derivatives ship)

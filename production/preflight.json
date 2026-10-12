@@ -5,7 +5,7 @@
     {
       "check": "required_files",
       "status": "PASS",
-      "detail": "19 required files present"
+      "detail": "18 required files present"
     },
     {
       "check": "source_integrity",
