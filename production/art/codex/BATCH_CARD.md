@@ -22,15 +22,17 @@ Read this and `AGENTS.md` only. Open `SKILL.md` or `references/*.md` only when o
 
 ## Stop and report when
 - `next` says nothing pending and status says NOTHING LEFT;
-- the image tool cannot attach the listed references (if it refuses one item, `H heraldry_art.py refuse ID --reason "<what it said>"`, deliver, and continue);
+- the image tool cannot attach reference images at all.
+
+Not a stop: the image tool refusing one item (a safety or content refusal). Run `H heraldry_art.py refuse ID --reason "<what it said>"`, deliver with ship, and continue with `next`; Claude Code rewrites that prompt.
 - the plan's usage limit is reached (ChatGPT Plus: it resets every 5 hours; everything saved is already delivered, and the owner restarts the same prompt, which resumes from `next`);
 - ship is BLOCKED.
 
-Do not stop for drift, flagged images or a long queue: the owner wants the whole list run (2026-10-12).
+Do not stop for drift, flagged images, a refused item or a long queue: the owner wants the whole list run (2026-10-12).
 
 ## Keep it lean
 - Don't re-read docs between items, don't print JSON you don't need, don't cat receipts.
-- Report one line per item (ID, attempts, flags) plus the commit SHA of each delivery.
+- Report one line per item (ID, attempts, flags) plus the commit SHA of each delivery. An image larger than the queue size at the same aspect (for example 1254x1254 for 1024x1024) is correct: do not list it as a flag or an unresolved issue.
 
 ## Never
 - Edit prompts, the queue, the manuscript, tools, config or the skill.

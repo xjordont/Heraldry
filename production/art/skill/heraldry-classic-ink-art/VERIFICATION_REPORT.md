@@ -35,7 +35,7 @@ The v7 changes (gritty direction, per-family and per-kind sets, lead order, per-
 ## First-run fixes (2026-10-12, after the first Codex delivery)
 
 - **Repeated ship.** A ship whose output was lost to a tool timeout had landed; re-running it reported `BLOCKED: nothing to deliver`, a stop condition. It now reports `UP-TO-DATE` (exit 0) when nothing is unsent and the clone is level with `origin/main`. `audit` is unchanged. Ship also prints a progress line before the LFS push and flushes its result.
-- **Colour false alarm.** HSV saturation alone counted near-black ink with a faint warm tint as colour (14% on Deepwarden, whose real channel spread is about 5 levels). A pixel now counts as colour only with saturation over 60 and a channel spread over 24 levels, in both the helper and `tools/art_ink.py`. Deepwarden now reads 0%; a red patch still reads as colour.
+- **Colour false alarm.** HSV saturation alone counted near-black ink with a faint warm tint as colour (14% on Deepwarden, whose real channel spread is about 5 levels). The measure is now tinted ink: a pixel darker than paper whose channels differ by more than 12 levels (warn above 3%, fail above 10%), in both the helper and `tools/art_ink.py`. Calibrated on the first 81 deliveries: Deepwarden reads 1%, the red-brown Blood Ape 13% and the gold Brass Golem 10%.
 - **Image call with no image.** The card and `SKILL.md` now say to take the file the tool saved instead of calling again.
 
 ## Tests

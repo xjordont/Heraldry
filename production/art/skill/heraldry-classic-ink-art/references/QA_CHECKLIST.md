@@ -9,7 +9,7 @@ Calibrated on the approved Greythorn render, the three owner style samples and s
 | Tripwire | FAIL means | WARN means |
 |---|---|---|
 | aspect, size, format | The image is not the queue's size ratio (5% tolerance), is under 1000 px on the long side, or is not PNG, JPEG or WEBP. Regenerate. | |
-| colour | More than 25% saturated pixels: a coloured image. | More than 10%: tinted ink or coloured accents. Look closely. Dark brown-black ink is fine. |
+| colour | More than 10% tinted-ink pixels (ink whose colour channels differ by more than 12 levels; paper tone is ignored): a coloured image. | More than 3%: tinted ink or coloured accents. Look closely. A faint warm cast on black ink is fine. |
 | blank, sparse | Almost no ink. | Very little ink: the subject may be tiny or faint at print size. |
 | soft | | Blurry linework. Pen lines should be crisp. |
 | paper | Dark or tinted background. | Paper not clean white: stains, darkened vignette, or a grey wash. |

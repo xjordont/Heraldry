@@ -156,18 +156,18 @@ class ArtPipeline(unittest.TestCase):
 
     def test_gpt_queue_must_and_avoid_lists_appear_in_the_prompt_text(self):
         pack, g, ents, (q, prompts) = self._batch_queue()
-        seen_must = 0
         for it in q["items"]:
             text = prompts[it["id"]]
+            self.assertEqual(it["must"], list((ents[it["id"]].get("brief") or {}).get("must", [])), it["id"])
             for m in it["must"]:
-                seen_must += 1
                 self.assertIn("* " + m, text, it["id"])
             for a in it["avoid"]:
                 self.assertIn("* " + a, text, it["id"])
             if it["family"] in ("monster", "boss"):
                 self.assertEqual(bool(it["size_class"]), True, it["id"])
                 self.assertIn("Size: " + it["size_class"], text, it["id"])
-        self.assertGreater(seen_must, 20)
+        # the catalogue, not the shrinking queue: approvals remove items from the queue as production goes on
+        self.assertGreater(sum(len((e.get("brief") or {}).get("must", [])) for e in ents.values()), 20)
         md = pack.queue_markdown(q)
         self.assertIn("| Set | Reference images |", md)
 
