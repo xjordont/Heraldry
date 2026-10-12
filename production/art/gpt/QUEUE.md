@@ -4,7 +4,7 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 
 | Set | Reference images |
 |---|---|
-| A | `assets/art/style/STYLE-REF-11-city-approach-ink.png`<br>`assets/art/style/STYLE-REF-02-panorama-line.jpg`<br>`assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg`<br>`assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg` |
+| A | `assets/art/style/STYLE-REF-11-city-approach-ink.png`<br>`assets/art/style/STYLE-REF-02-panorama-line.jpg`<br>`assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg`<br>`assets/art/style/STYLE-REF-53-frost-harbour-city.png` |
 | B | `assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg`<br>`assets/art/style/STYLE-REF-13-cave-river-pen.jpg`<br>`assets/art/style/STYLE-REF-07-drybrush-duel.jpg`<br>`assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg` |
 | C | `assets/art/style/STYLE-REF-04-throne-brush-black.jpg`<br>`assets/art/style/STYLE-REF-03-figure-spotblack.jpg`<br>`assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg`<br>`assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg` |
 | D | `assets/art/style/STYLE-REF-18-roaring-bear.jpg`<br>`assets/art/style/STYLE-REF-38-gnoll-spearman.jpg`<br>`assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg` |

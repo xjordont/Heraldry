@@ -84,7 +84,7 @@
     732
    ],
    "sha256": "8a797125940c3f7def70c80ab4b819812f54116a93daabc3acf89f7cc9e50cd8",
-   "use": "attached to reference sets: bastion, scenario, scene, world; never placed or packaged",
+   "use": "attached to reference sets: scenario, scene, world; never placed or packaged",
    "role": "scene: skeleton melee; comic-ink spot blacks, scratchy action texture"
   },
   {
@@ -199,6 +199,19 @@
    "role": "Crowned skull-faced lich in robes, bold brush blacks",
    "caveat": "small (576 px wide); cropped at the bottom edge",
    "use": "attached to reference sets: monster:undead; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-53-frost-harbour-city.png",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1536,
+    1024
+   ],
+   "sha256": "f7c0c8ca90d58e686cbd116a4b369a5865ab6682205b29bb9e2021309bd93225",
+   "category": "bastion: walled harbour city",
+   "role": "Frozen harbour city on cliffs: walls, castle, bridges, ships in ice, dense crowds",
+   "caveat": "appears machine-made and very dense (close to the rejected hyper-detailed look), with some grey tone; attached on the owner's instruction like STYLE-REF-11",
+   "use": "attached to reference sets: bastion; never placed or packaged"
   }
  ],
  "inspiration_only": [

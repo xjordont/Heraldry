@@ -182,7 +182,7 @@
   "ART-ANC-DWARF"
  ],
  "gpt_reference_sets": {
-  "note": "Each queue item carries at most max_refs reference images. Precedence: kind_sets (monsters, by ID) over family_sets (by family) over sets (by register). A candidate is a repo path (must exist) or an anchor ID (used once approved); the item's own ID is skipped. Only owner samples and public-domain prints are attached, never generated images. Mapping v7 (owner instruction 2026-10-11: reanalyse all references and map them optimally): every set draws on the gritty core (bold rough contours, heavy blacks, scratchy hatching); clean-line pieces appear only where their subject is unmatched (36 insect anatomy, 20 armoury, 15 weapons, 02 city); pieces with grey tone, screen tone, stipple fields, lettering or tiny size are banked but not attached. Owner 2026-10-12 (\"promote them if there is room ... include risky\"): max_refs raised to 4 and one banked image added to its most relevant set, including pieces with screen tone, stipple, grey paper tone or a monogram, accepting that risk; the grey-wash mood pieces and the map stay unattached. Owner 2026-10-12 (later): 22 wolf pack removed from the beast set; eight new owner samples added as STYLE-REF-45..52 (52 lich and 51 mummy replace 38 gnoll in undead, which stays in beast and humanoid; 50 to magical; 45 bastion; 46 chapter; 47 cover; 49 boss); 48 is banked (no slot, and its black box background could teach a frame).",
+  "note": "Each queue item carries at most max_refs reference images. Precedence: kind_sets (monsters, by ID) over family_sets (by family) over sets (by register). A candidate is a repo path (must exist) or an anchor ID (used once approved); the item's own ID is skipped. Only owner samples and public-domain prints are attached, never generated images. Mapping v7 (owner instruction 2026-10-11: reanalyse all references and map them optimally): every set draws on the gritty core (bold rough contours, heavy blacks, scratchy hatching); clean-line pieces appear only where their subject is unmatched (36 insect anatomy, 20 armoury, 15 weapons, 02 city); pieces with grey tone, screen tone, stipple fields, lettering or tiny size are banked but not attached. Owner 2026-10-12 (\"promote them if there is room ... include risky\"): max_refs raised to 4 and one banked image added to its most relevant set, including pieces with screen tone, stipple, grey paper tone or a monogram, accepting that risk; the grey-wash mood pieces and the map stay unattached. Owner 2026-10-12 (later): 22 wolf pack removed from the beast set; eight new owner samples added as STYLE-REF-45..52 (52 lich and 51 mummy replace 38 gnoll in undead, which stays in beast and humanoid; 50 to magical; 45 bastion; 46 chapter; 47 cover; 49 boss); 48 is banked (no slot, and its black box background could teach a frame). Owner 2026-10-12 (later): STYLE-REF-53 frost harbour city replaces 09 in bastions, so the bastion set is four images used nowhere else.",
   "max_refs": 4,
   "register_of_family": {
    "cover": "scene",
@@ -251,8 +251,8 @@
    "bastion": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg",
+    "assets/art/style/STYLE-REF-53-frost-harbour-city.png"
    ],
    "scenario": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",

@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-12T02:52:24+00:00",
+ "generated_at": "2026-10-12T03:02:52+00:00",
  "max_references": 4,
  "push_every": 1,
  "review_every": 10,
@@ -21,8 +21,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg",
+    "assets/art/style/STYLE-REF-53-frost-harbour-city.png"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -469,8 +469,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg",
+    "assets/art/style/STYLE-REF-53-frost-harbour-city.png"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -490,8 +490,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg",
+    "assets/art/style/STYLE-REF-53-frost-harbour-city.png"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -516,8 +516,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg",
+    "assets/art/style/STYLE-REF-53-frost-harbour-city.png"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -542,8 +542,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg",
+    "assets/art/style/STYLE-REF-53-frost-harbour-city.png"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -568,8 +568,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg",
+    "assets/art/style/STYLE-REF-53-frost-harbour-city.png"
    ],
    "max_attempts": 1,
    "size_class": "",

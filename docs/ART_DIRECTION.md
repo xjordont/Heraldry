@@ -32,7 +32,7 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   | Climates | 44 Haden vignette, 13 cave river, 07 dry-brush duel, 17 swamp hut |
   | Scenarios | 09 skeleton melee, 21 party on a forest path, 44, 31 dungeon melee |
   | World sections | 44, 43, 09, 30 forest path |
-  | Bastions | 11 city approach, 02 city panorama, 09, 45 cathedral facade |
+  | Bastions | 11 city approach, 02 city panorama, 45 cathedral facade, 53 frost harbour city |
   | Chapters | 29, 43, 44, 46 round tower |
   | Cover | 29, 11, 43, 47 barrow and dolmen |
 

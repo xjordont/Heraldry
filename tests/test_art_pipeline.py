@@ -110,7 +110,7 @@ class ArtPipeline(unittest.TestCase):
                                       "STYLE-REF-21-adventuring-party-forest.jpg", "STYLE-REF-43-piranesi-drawbridge.jpg",
                                       "STYLE-REF-44-haden-vignette-farm.jpg", "STYLE-REF-22-wolf-pack-forest.jpg",
                                       "STYLE-REF-46-round-tower-riders.jpg", "STYLE-REF-47-barrow-dolmen-moor.jpg",
-                                      "STYLE-REF-49-swordsman-mountain-pass.jpg")}
+                                      "STYLE-REF-49-swordsman-mountain-pass.jpg", "STYLE-REF-53-frost-harbour-city.png")}
         city = style + "STYLE-REF-11-city-approach-ink.png"
         self.assertEqual(q["schema"], 2)
         done = {i for i, v in g.load(g.SELECTIONS, {}).items() if v.get("status") in ("approved", "anchor-approved")}
