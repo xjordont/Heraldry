@@ -43,7 +43,7 @@ Four families are used, all under the OFL, with licences in `fonts/licences/`. E
 
 | Role | Face | Size / leading | Notes |
 |---|---|---|---|
-| Rules text | Source Serif 4 | 10.25 / 13.3 pt, justified within limits | Hyphenation discouraged but allowed (en-CA) |
+| Rules text | Source Serif 4 | 11 / about 15 pt, justified within limits (owner lock 2026-10-12) | Hyphenation discouraged but allowed (en-CA) |
 | Flavour, leads, lore | IM FELL English (roman) | 10.2 to 12.4 pt, near-black (84%), leading about 14.5 pt | Owner 2026-10-12: easier to read than the italic, and plainly a different voice from the rules |
 | Chapter title | Grenze Gotisch SemiBold | 50 pt | Centred under the opener art and the chapter's arms |
 | Section (x.y) | Grenze Gotisch SemiBold | 24 pt | Number in an engraved black shield; brush rule beneath |
@@ -61,7 +61,7 @@ The minimum essential size is 8.6 pt for captions and 8.8 pt for dense reference
 
 **One treatment for flavour (owner 2026-10-12, revised the same day):** all flavour text is IM FELL roman at one size, 12 pt on about 16 pt, justified and hyphenated, with 9 pt of space between paragraphs (no first-line indents). Justification uses Typst `justification-limits` (word space 80–140%, letter spacing −1.2% to +2.5% of the em) so even the 3.5 in monster columns set without rivers. Section-level flavour (chapter leads, the flavour under a section title, place lore, scenario flavour) is the `lead-block` component: a centred measure 80% of the frame wide (82% for chapter leads), with the text justified inside it. Entry flavour inside a column (monsters, classes, backgrounds) is the `flavour` component: the same face, size, colour and spacing at full column width. Justified was chosen over centred after a side-by-side on the Deepwarden page: centred multi-paragraph lore leaves ragged edges on both sides; justified reads as one quiet block. The specimen renderer can still show the centred variant with `tools/render_template_specimens.py --lead center` for comparison.
 
-**Why rules text is not 12 pt:** flavour is 12 pt because it is a different voice read once; rules text is reference text read and re-read at the table. At 10.25 pt the 3.48 in columns carry about 55 characters a line, close to the ideal. At 12 pt they would carry about 47, and the text pages would grow by about a third (37% more area per line of text), adding well over a hundred pages to a book of about 560, against the owner's no-bloat rule. The ten reference books set body at 9.5 to 10 pt. The size step between flavour and rules is also what tells the reader which is which.
+**Rules text locked at 11 pt (owner 2026-10-12: "Let's lock rules at 11pt"):** Claude Code advised against 12 pt (about 47 characters a line in the 3.48 in columns and a third more text pages); the owner chose 11 pt. At 11 pt the columns carry about 51 characters a line, and the text pages grow by about 15% over 10.25 pt. Secondary text scales with it: examples, rules notes, entry anatomy and power effects 10.5 pt; setup dossiers 9.9 pt. Flavour stays 12 pt, so the size step still separates story from rules. Tables, captions and stat strips keep their own data sizes.
 
 **Banner tags on titles:** every banner tag that labels a title (monster role, BASTION, HERO CLASS, scenario number) is set by the `entry-title` component: the tag sits on its own line directly above the title, 5 pt above the cap height, always at the title's top-left corner, whether the title is set left or centred (owner 2026-10-12: "The black tags should consistently be aligned to the top left of the text they reference; not centred above it"). The tag never shares a line with the title and never floats against its baseline.
 
@@ -184,7 +184,7 @@ As in section 5. The contents takes two pages, facing if possible.
 - **Example:**
   - a 5.5% tinted field with a 2.4 pt black left rule and the tag "EXAMPLE";
   - an optional title after a middle dot;
-  - 9.8 pt text.
+  - 10.5 pt text.
   - Where an example walks through a figure, its steps are numbered to match the figure labels (TNA lesson: 1.1, 1.2...).
 - **Rules note:** a panel held by four corner irons, with a centred banner tag ("RULES NOTE", "CLARIFICATION" or "DESIGN NOTE"). It is used only where the manuscript sets a note apart. The book never invents notes.
 
@@ -402,7 +402,7 @@ The generator (`tools/build_book.py`) already emits semantic component calls (`c
 
 - **Claude Code, 2026-10-12, within the owner's request for a design plan:**
   - display faces: Grenze Gotisch (titles and names) and IM FELL italic (flavour) replace Cinzel;
-  - ragged-right body (superseded the same day: the owner asked whether all body text should be justified, and a side-by-side on the 2.6 and Fighter pages showed justified-within-limits sets evenly and saves lines; body is now justified at 10.25 pt);
+  - ragged-right body (superseded the same day: the owner asked whether all body text should be justified, and a side-by-side on the 2.6 and Fighter pages showed justified-within-limits sets evenly and saves lines; body is now justified, and the owner then locked it at 11 pt);
   - black-bar table headers;
   - one monster per column;
   - caption bars.
@@ -441,7 +441,7 @@ The owner directed on 2026-10-12: "take it further ... more decorations, symbols
 Owner 2026-10-12: "We should be very careful of how we set up policy and procedure for typesetting and text layout to be easy to read, avoid page bloat, and avoid having to read sections/paragraphs across pages." These rules bind the build, alongside the mandatory one-page keep contract in DESIGN_REFINEMENT.md.
 
 **Paragraphs**
-1. Justified within limits: word space 80–140% and letter spacing −1.2% to +2.5% of the em (Typst `justification-limits`), shared by rules text and flavour, so no line opens rivers. Table cells, captions, stat blocks, sidebars of data and headings stay unjustified. Hyphenation is allowed in the 3.48 in columns but discouraged (cost 140%); no hyphen in headings, names or table cells.
+1. Justified within limits: word space 80–140% and letter spacing −1.2% to +2.5% of the em (Typst `justification-limits`), shared by rules text and flavour, so no line opens rivers. Table cells, captions, stat blocks, sidebars of data and headings stay unjustified. Hyphenation is allowed in the 3.48 in columns but allowed at normal cost (100%; raised from 140% so justified lines in narrow list items stay even); no hyphen in headings, names or table cells.
 2. No widows or orphans: a paragraph never leaves one line alone at the top or foot of a column (widow and orphan costs at the maximum).
 3. No runts: a paragraph's last line carries at least two words where possible (runt cost 160%).
 4. A paragraph that fits a column never splits across a page turn. When a paragraph must split, it splits within a spread (verso to recto), never recto to verso, wherever the layout engine can achieve that by moving a whole unit.

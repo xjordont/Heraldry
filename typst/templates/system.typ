@@ -32,8 +32,11 @@
 #let col-w = (frame-w - gap) / 2
 #let edge-safe = 0.375in
 
-#let body-size = 10.25pt
-#let body-lead = 3.3pt                // line pitch about 13.3pt
+#let body-size = 11pt                 // owner 2026-10-12: "Let's lock rules at 11pt"
+#let body-lead = 3.55pt               // same proportion as the 10.25 pt setting
+#let aside-size = 10.5pt              // examples, notes, entry anatomy, power effects
+#let aside-lead = 3.3pt
+#let dossier-size = 9.9pt
 
 // ================================================================ the armoury (original vector marks)
 #let mark(name) = "marks/" + substrate-name + "/" + name + ".svg"
@@ -247,7 +250,7 @@
 #let base(body) = {
   set text(font: serif, size: body-size, lang: "en", region: "CA", fill: ink, hyphenate: true,
     top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining",
-    costs: (hyphenation: 140%, runt: 160%, widow: 1000%, orphan: 1000%))
+    costs: (hyphenation: 100%, runt: 160%, widow: 1000%, orphan: 1000%))
   set par(leading: body-lead, spacing: 6.5pt, justify: sys.inputs.at("body", default: "justify") == "justify", first-line-indent: 0pt,
     justification-limits: (spacing: (min: 80%, max: 140%), tracking: (min: -0.012em, max: 0.025em)))
   set strong(delta: 200)
@@ -258,11 +261,17 @@
 
 // Balanced columns: two columns of equal depth. Used wherever a run ends on the page (a section's
 // close, an excerpt, lore), so no column stands half empty beside a full one.
+// The depth is half the single-column depth plus one line of allowance. When the page has less room
+// than that but still more than half the depth plus a quarter line, the block takes exactly the room
+// left, so a near-full page never pushes an empty frame onto the next page.
 #let balanced(body, gutter: gap, slack: 2pt) = layout(size => {
   let w = (size.width - gutter) / 2
   let h = measure(block(width: w, body)).height
-  let target = h / 2 + body-size + body-lead + slack
-  block(width: 100%, height: target, columns(2, gutter: gutter, body))
+  let pitch = body-size * 1.05 + body-lead
+  let target = h / 2 + pitch + slack
+  let room = page.height - m-bot - here().position().y
+  let depth = if target > room and room >= h / 2 + pitch / 4 { room } else { target }
+  block(width: 100%, height: depth, columns(2, gutter: gutter, body))
 })
 
 // ================================================================ headings
@@ -318,14 +327,14 @@
   fill: tint, stroke: (left: 2.6pt + ink), inset: (left: 11pt, right: 9pt, top: 7pt, bottom: 9pt))[
   #tag([Example#if title != none [ #h(2pt)·#h(2pt) #title]])
   #v(3pt)
-  #set text(size: 9.8pt)
-  #set par(leading: 3.1pt)
+  #set text(size: aside-size)
+  #set par(leading: aside-lead)
   #body
 ]
 
 // Rules note: corner flourishes and a centred banner tag.
 #let note-box(tag-text: "Rules Note", body) = block(width: 100%, above: 13pt, below: 12pt, breakable: false)[
-  #cornered(inset: (x: 13pt, top: 15pt, bottom: 11pt), s: 14pt)[#set text(size: 9.8pt); #set par(leading: 3.1pt); #body]
+  #cornered(inset: (x: 13pt, top: 15pt, bottom: 11pt), s: 14pt)[#set text(size: aside-size); #set par(leading: aside-lead); #body]
   #place(top + center, dy: -6pt, box(fill: paper, inset: (x: 4pt), tag(tag-text)))
 ]
 
@@ -433,7 +442,7 @@
   brush(weight: 2pt, seed: 9)
 })
 
-#let anatomy(sections, size: 9.8pt) = for (label, items) in sections {
+#let anatomy(sections, size: aside-size) = for (label, items) in sections {
   label-rule(label)
   set text(size: size)
   set par(leading: 3pt, justify: false)
@@ -483,7 +492,7 @@
   #block(inset: (left: 21pt), {
     text(font: sans, size: 8.4pt, fill: ink2, fields.map(((k, v)) => [#text(weight: 700)[#k] #emph(v)]).join(h(4pt) + sym.dot.c + h(4pt)))
     v(2pt)
-    set text(size: 9.8pt)
+    set text(size: aside-size)
     effect
   })
 ]
@@ -526,8 +535,8 @@
 
 // Setup dossier: the source's labelled setup fields in a tinted, corner-flourished panel.
 #let dossier(fields) = block(width: 100%, above: 10pt, breakable: false, cornered(fill: tint, inset: (x: 13pt, y: 12pt))[
-  #set text(size: 9.2pt)
-  #set par(leading: 2.8pt, justify: false, spacing: 5pt)
+  #set text(size: dossier-size)
+  #set par(leading: 2.9pt, justify: false, spacing: 5pt)
   #for (k, v) in fields { block(below: 5.5pt, [#text(font: sans, weight: 700, size: 7.2pt, tracking: 0.12em, upper(k))\ #v]) }
 ])
 
