@@ -331,5 +331,38 @@
    "max_print_w_in_300ppi": 5.1
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-GIANT-SCORPION": {
+  "family": "monster",
+  "title": "Giant Scorpion",
+  "heading_id": "h-giant-scorpion-soldier",
+  "route": "gpt",
+  "spec_sha256": "cdac724b69225f17ffbab49f53cfb85a8ffa4a4cc187ae9758e8ff1c87eb5d67",
+  "prompt_sha256": "481ba14be36c5a2ce78a27741f108ae9a03de1224ec6d9b3ab7adc0776b6f893",
+  "status": "received",
+  "received_at": "2026-10-12T05:06:57+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "At print size, overlapping appendages prevent verification of exactly eight walking legs. Automated check reports 10% mid-tones and a narrow margin; no subject appears cropped.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-GIANT-SCORPION.png",
+   "sha256": "581f5d36c8efa356bf91d654fbbe8117e57e2850c434d70161f74b5e781be317",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-GIANT-SCORPION.png",
+   "sha256": "e47ac4352a96bbbe5724115e818595663f6d9e91ba2dceec96562fcb2f63c585",
+   "px": [
+    1222,
+    1213
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.073
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
