@@ -1496,27 +1496,26 @@
   ]
  },
  "ART-MON-HARPY": {
-  "identity": "Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies.",
+  "identity": "Harpy, Greenmark Cannon, medium: a carrion-bird monster the size of a man, with a vulture's body and a withered, hag-like head, nesting in broken towers and luring travellers into its talons with its song; it flies.",
   "composition": "Full figure in three-quarter view swooping down on beating wings, both taloned feet thrust forward, gaunt head jutting forward mid-shriek, over a small patch of bare ground.",
   "details": [
-   "Gaunt, hag-like human face with ragged matted hair and hollow cheeks",
-   "Body covered in filthy, matted carrion-bird feathers from the neck down, hung with torn rags",
+   "A vulture's body, covered entirely in filthy, matted feathers from the neck down",
+   "A withered, hag-like head with a hooked nose, ragged matted hair and hollow cheeks",
    "Large carrion-bird wings, ragged feathers, long primaries",
+   "Two scrawny, sinewy arms below the wings, ending in hooked claws",
    "Legs of a bird of prey with hooked talons",
-   "Tail of dirty feathers",
    "Open mouth mid-shriek, solid black",
-   "Filth-streaked feathers",
    "A scatter of bones on the ground below"
   ],
   "atmosphere": "Foul, starved and ravenous.",
   "avoid": [
    "Not a siren or angel: ragged and foul",
-   "No bare skin on the torso: feathers and rags cover the body",
-   "No wing-arms: the wings and the arms are separate limbs"
+   "No wing-arms: the wings and the arms are separate limbs",
+   "No bare skin on the body: feathers cover it"
   ],
   "must": [
-   "Human hands with clawed nails; bird talons on the feet",
-   "Wings and human arms both visible"
+   "Clawed hands on the arms; bird talons on the feet",
+   "Wings and arms both visible"
   ],
   "sources": [
    "9.7 The Bestiary, Greenmark Bestiary: Harpy [Cannon]"

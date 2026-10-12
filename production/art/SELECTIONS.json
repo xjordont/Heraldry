@@ -416,7 +416,7 @@
   "route": "gpt",
   "spec_sha256": "be275483235c57575456d62216bfd0bd5ea9fe6961cb9459a338a654258faa5f",
   "prompt_sha256": "4b1dab7ec5e198c513f2391f9f86730f4dae51dd815cf5a9b2f04ecbb1925b7b",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-12T15:30:27+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -440,7 +440,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.037
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-12T15:57:37+00:00",
+  "rejected_reason": "Still about six times the man's height: the low angle exaggerates it. The composition is now side-on at eye level; keep the man's head level with the Colossus's knee."
  },
  "ART-WOR-1-2-THE-GRIM-WORLD": {
   "family": "world",
@@ -4189,7 +4191,7 @@
   "route": "gpt",
   "spec_sha256": "b20a256f2a1f92a282865d1377c0dcc0b9e366264f4066311d7fbec10caa624d",
   "prompt_sha256": "cbe035212bf165dbcd1ec5869f2a34f4152c5a365a0b65fe36821d8dffd86f1c",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T15:33:46+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -4213,7 +4215,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.703
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T15:57:37+00:00"
  },
  "ART-MON-UNDEAD-SENTINEL": {
   "family": "monster",
@@ -4256,7 +4259,7 @@
   "route": "gpt",
   "spec_sha256": "59c941d1eae53b954411029af609b59ff20c77c3d56dd2c37ca349f8f5334356",
   "prompt_sha256": "c07b40b0f85dcfda25ef5575243cf886d63123d67046a97099c5d7e020838b3d",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T15:37:33+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -4280,7 +4283,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.477
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T15:57:37+00:00"
  },
  "ART-MON-VAULT-OOZE": {
   "family": "monster",
@@ -4289,7 +4293,7 @@
   "route": "gpt",
   "spec_sha256": "6a807251e7b339aff08ddbcc1b8c06f8703b1601a6419d05bf1b463972e2e907",
   "prompt_sha256": "8f05b412a741452256cee3b8a1135f4fe89993d76e066a38f23012090e29207c",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T15:25:29+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -4313,7 +4317,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.043
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T15:57:37+00:00"
  },
  "ART-MON-VAULTFANG": {
   "family": "monster",
@@ -4322,7 +4327,7 @@
   "route": "gpt",
   "spec_sha256": "1f3ff7f8557e6aa73bb575a5cd54a9abf735c4b401efde933a562558b731ef3b",
   "prompt_sha256": "48d7804f4195ce10c64e61e6c5e6edca962947e4514f7b01ecf17e0d71fedff5",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T15:42:35+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -4346,6 +4351,7 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.25
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T15:57:37+00:00"
  }
 }

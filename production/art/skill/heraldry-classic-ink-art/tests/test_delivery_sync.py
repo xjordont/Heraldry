@@ -203,10 +203,10 @@ class CadenceRepo(unittest.TestCase):
                                'references': ['assets/art/style/REF.jpg']})
         git(self.repo.parent, 'init', '-q', '-b', 'main', str(self.repo))
 
-    def queue(self, review_every):
+    def queue(self, review_every, receipts_base=0):
         (self.repo / 'production/art/gpt/QUEUE.json').write_text(json.dumps(
             {'schema': 2, 'phase': 'batch', 'count': 4, 'push_every': 1, 'review_every': review_every,
-             'generated_at': '2026-10-11T00:00:00+00:00', 'items': self.items}))
+             'receipts_base': receipts_base, 'generated_at': '2026-10-11T00:00:00+00:00', 'items': self.items}))
 
     def make(self, n):
         it = self.items[n]
@@ -257,6 +257,18 @@ class RefusalReopens(CadenceRepo):
         (self.repo / 'production/art/gpt/prompts/ART-T0.txt').write_text('ink 0, fixed\n')
         self.items[0]['prompt_sha256'] = hashlib.sha256(b'ink 0, fixed').hexdigest()
         self.queue(10)
+        self.assertEqual(st(), 'pending')
+
+    def test_a_republished_queue_reopens_an_earlier_refusal_with_the_same_prompt(self):
+        # e.g. the tool refused six references; Claude Code republishes with five and an unchanged prompt
+        self.queue(10)
+        st = lambda: self.ha.states(self.repo, self.ha.load_queue(self.repo))['ART-T0']   # noqa: E731
+        rec = self.repo / 'production/art/gpt/RECEIPTS.jsonl'
+        with rec.open('a') as f:
+            f.write(json.dumps({'id': 'ART-T0', 'refused': True, 'prompt_sha256': self.items[0]['prompt_sha256']}) + '\n')
+        self.assertEqual(st(), 'refused')                      # refused during this queue's run: stays refused
+        lines = sum(1 for x in rec.read_text().splitlines() if x.strip())
+        self.queue(10, receipts_base=lines)                    # republished after the refusal
         self.assertEqual(st(), 'pending')
 
 
