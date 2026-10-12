@@ -1618,5 +1618,38 @@
    "max_print_w_in_300ppi": 4.03
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-DESERT-NAGA": {
+  "family": "monster",
+  "title": "Desert Naga",
+  "heading_id": "h-desert-naga-controller",
+  "route": "gpt",
+  "spec_sha256": "e57d593dba7c57938314bb8622c8a50d343055026a2e92bab1bd029de1995455",
+  "prompt_sha256": "30a073b564a98968460792bbc54d93d98278eda930cc93395ad4c0c31142be5c",
+  "status": "received",
+  "received_at": "2026-10-12T07:54:29+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "1254x1254 output vs 1024x1024 queue target; visual checks pass for creature details and prohibited elements.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-DESERT-NAGA.png",
+   "sha256": "88a86cdce53498e76fd29983fa2e919f2bec828530bdaa6c707e66c8784d1265",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-DESERT-NAGA.png",
+   "sha256": "35aa26da949dee13c6f7f335869854e34c9b27fd7ae0415e34636af2b960ce36",
+   "px": [
+    1228,
+    1177
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.093
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
