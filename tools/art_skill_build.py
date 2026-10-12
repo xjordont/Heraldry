@@ -2,7 +2,7 @@
 """Build the ChatGPT Work illustration skill zip.
 
   python3 tools/art_skill_build.py [--out ZIP]   write references/FAMILIES.md and build the zip
-                                                (default build/art/Heraldry_Classic_Ink_Art_Skill_v7_0.zip)
+                                                (default build/art/Heraldry_Classic_Ink_Art_Skill_v8_0.zip)
   python3 tools/art_skill_build.py --check        fail if FAMILIES.md is out of date with config/art_style.json
 
 Source: production/art/skill/heraldry-classic-ink-art/. The build adds the reference images (byte-identical
@@ -15,8 +15,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "production/art/skill/heraldry-classic-ink-art"
-ZIP = ROOT / "build/art/Heraldry_Classic_Ink_Art_Skill_v7_0.zip"
-VERSION = "7.0.0"
+ZIP = ROOT / "build/art/Heraldry_Classic_Ink_Art_Skill_v8_0.zip"
+VERSION = "8.0.0"
 STAMP = (2026, 10, 10, 0, 0, 0)
 def _images():
     """Every reference image any queue item can attach (config gpt_reference_sets)."""

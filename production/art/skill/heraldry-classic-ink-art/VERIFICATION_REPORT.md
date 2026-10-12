@@ -1,63 +1,55 @@
-# Heraldry Skirmish Classic Ink Art Skill v7.0: release verification
+# Heraldry Skirmish Classic Ink Art Skill v8.0: release verification
 
 ## Outcome
 
-**Offline release validated (2026-10-11).** This is not a claim of production-tested image generation or guaranteed artistic quality.
+**Offline release validated (2026-10-12).** This does not claim that image generation has been tested in production, or that artistic quality is guaranteed.
 
-## What changed from v6
+## What changed from v7
 
-1. **Art direction:** gritty old-school black-and-white ink. The prompts, `STYLE.md`, `STYLE_CONSISTENCY.md`, `VISUAL_ACCEPTANCE.md` and `REPAIR.md` were updated, including a new "too clean" correction.
-2. **Reference mapping v7:** 17 sets, made of five monster kinds (by ID, with a coverage check) and one set per family. Each queue item records its `ref_set`, and `show` prints it. The ZIP carries every attachable reference, derived from `config/art_style.json`.
-3. **Queue order:** after any redos, seventeen lead items come first, one per set, so the first two drift reviews (images 10 and 20) cover every set.
-4. **Cadence:** each image is delivered when it is saved, with a drift review every tenth image (`sheet --recent`, `style_audit --recent`).
-5. **Delivery guard:** a safe fast-forward over intake commits, a retry after a lost push, and a stop on divergence or overlap. This was carried from v6 fixes made the same day.
-6. **Docs:** the reference docs have version-free names, the obsolete v6 `deployment/` folder is removed, and `work_preflight --require-installed` checks for v7.
+1. **One generation per item.** Owner decision, 2026-10-12, after the first eight batch images: "the first image generated for each prompt is far superior to any further attempts".
+   - `max_attempts` is 1 for every item, generated in a fresh context.
+   - A defect is saved with `--accept-flags --notes`, and Claude Code decides on a redo.
+   - A redo is one fresh generation with at most two correction sentences. `REPAIR.md` now covers redos only.
+2. **Edges.** Only a cropped subject, or one touching an edge, is a hard fail. A narrow margin is advisory, because the layout trims it; the old 8% rule had forced retries.
+3. **Reference mapping v8.**
+   - Up to six references per item (`max_refs` 6), drawn from 66 distinct images: the owner's samples, including STYLE-REF-45 to 74, plus four public-domain prints.
+   - Every figure set (the five monster kinds, classes and ancestries, backgrounds, items) uses images found in no other set.
+   - Scenery never reaches an isolated figure, except the owner-approved wolf pack in the beast set.
+   - Two full reviews of every reference against every set are recorded in `docs/ART_DIRECTION.md`.
+4. **Fresh start.**
+   - The owner cleared all earlier approvals, so all 275 items are pending.
+   - The queue records `receipts_base`, so drift reviews count only receipts written after publication.
+   - The Giant Tarantula brief was recomposed: a view from above with the eight legs radiating evenly.
+5. **Helper (`heraldry_art.py`).**
+   - `next` and `status` fast-forward a clean clone first, so a mid-session redo shows at once.
+   - `check` and `save` report the saved attempt's own number, and receipts record `saved_attempt`.
+   - `save` keeps a local copy in `HERALDRY_ARCHIVE`.
+   - Commands in messages name the running interpreter, and the retired smoke-file hints are gone.
+6. **Delivery.** PNG, JPEG and WebP all go through Git LFS, enforced by `ship` and `doctor`.
+7. **Packaging and intake.**
+   - The installable ZIP and the offline package are built on request (`make art-packages`, or the `Build art packages` workflow), never committed.
+   - The intake fetches non-PNG pointers too, names the recorded surface in provenance, and commits no contact sheets; the reviewer uses `art_intake.py pending --sheet`.
 
-## Audit fixes (2026-10-11, second pass)
-
-- **delivery_guard `ship`:**
-  - A commit that was made but never pushed (timeout, killed session) is recovered on the next run instead of blocking forever.
-  - Any failure between staging and pushing rolls back to a clean index.
-  - Pushes cannot hang on a credential prompt.
-  - Authentication and LFS failures report their real cause.
-  - A push that timed out but landed is recognised and not delivered twice.
-  - A redo saved in a different file format is delivered as a replacement.
-- **Refusals:** a refusal now binds to the prompt it refused, so a republished prompt reopens the item.
-- **Robustness:** UTF-8 reads throughout the worker scripts (Windows). `doctor` reports a clone without `git lfs install`. The dead 5% aspect check is removed. `check` caches image hashes in scratch, so it no longer re-decodes every delivered image on every call.
-- **Workflows:**
-  - Intake and bundle import start every attempt from the newest main. Concurrent deliveries can no longer conflict over `SELECTIONS.json`, and resets no longer download every LFS file.
-  - The import has its own concurrency group.
-  - Repository checks skip pure image deliveries.
-- **Prompts:** a second, semantic audit of all 270 prompts fixed about 50 brief defects:
-  - contradictions with the source text (the toll-road bandit captain's weapon, the snow goblin's sling);
-  - internal contradictions (carcass, kneeling legionaries, stars on black, the spider sizes);
-  - scale conflicts (Briarling, Executioner, Last Colossus);
-  - near-duplicate poses (Harpy/Gargoyle, Gloom Hulk/Burrowmaw, Spectre/Lich/Ice Wraith, Fallen Paladin/Ashen Revenant, Undead Sentinel/Tomb Guardian, Wererat/Ratkin, Werebear/Gorebeak Bear);
-  - glow, ray and tone wording;
-  - garbled lines;
-  - "Wide" compositions in square monster prompts.
-
-## Prime-time pass (2026-10-11, third pass)
-
-- `status` lists redos first, like `next`. The drift-review count is monotonic, so a rejection cannot repeat a review. The DRIFT REVIEW message prints the exact `style_audit` command and says to deliver in every case.
-- Helper commands print the running interpreter, and receipts name the real surface.
-- `sheet --out` inside the clone is refused, and `check` says when an attempt was the last allowed one.
-- `style_audit` and the recent-image list skip LFS pointers. `style_audit` defaults its report to scratch and prints its advisories.
-- `delivery_guard ship` fetches once per delivery, not twice.
-- The stale smoke-file gate and `--out` wording were removed from every worker document.
-- Re-checking an earlier attempt reports that attempt; receipts record `saved_attempt` beside `variants_tried`.
-- `next` and `status` fast-forward a clean clone first, so a mid-session redo shows at once.
-- Every incoming image format goes through Git LFS, enforced by `ship` and `doctor`.
+The v7 changes (gritty direction, per-family and per-kind sets, lead order, per-image cadence, guarded fast-forward `ship`) and the v6 integrity guarantees (byte-bound QA records with ten evidenced criteria, native-hash receipts, prompt and reference hash checks at delivery, a clean index, no force-push) carry over unchanged.
 
 ## Tests
 
-- Skill suite (`python -m unittest discover -s tests`, run from the skill folder): **49 tests passed**, including new real-git tests for unpushed-commit recovery, a landed push, a format replacement, a refused deletion, a failed-push rollback, and a refusal reopening after a prompt fix.
-- `scripts/validate_skill.py --zip ... --repo .`: **PASS**. Package hashes, required files, reference images byte-identical to the repository, and FAMILIES.md current.
-- Repository pipeline tests: the reference mapping, kind coverage (a missing or duplicate kind fails), the lead order, and that no isolated figure receives a scenic reference.
-- Prompt audit across all 270 queue prompts: hashes, no placeholders, every must and avoid line present, vignettes on scenes, isolation on figures, source text, size class, and no stipple or detail-heavy wording in subject details. **0 issues.**
+- **Skill suite** (`python -m unittest discover -s tests`, run from the skill folder): passes. Real-git and LFS regressions cover:
+  - unpushed-commit recovery, a landed push, a format replacement, a refused deletion and a failed-push rollback;
+  - a refusal reopening after a prompt fix;
+  - the monotonic drift count, and receipts before `receipts_base`;
+  - the refresh with and without unsent work;
+  - the saved attempt number;
+  - the archive copy;
+  - LFS pointers in `style_audit` and in the recent-image list.
+- **Repository suite** (`make test`): passes. It builds a fresh skill ZIP and offline package, and checks:
+  - that both builds are reproducible;
+  - the validator and its tamper detection;
+  - the reference mapping, kind coverage, the lead order, one generation per item, and that no isolated figure receives a scenic reference.
+- **Fresh-clone rehearsal of Codex's routine:** a partial clone of `main` with LFS skip-smudge, then the preflight, `doctor`, `status`, `next` and one full delivery (check, qa, save, ship to a local remote). All passed. See `production/STATE.md`.
 
 ## Not verified offline
 
-- Whether the worker's image tool accepts the listed reference images, and what model or size it offers.
-- Real image quality and style consistency across families. The first drift review at image 10 is the first evidence.
-- Git LFS delivery from the worker's machine over a long unattended run, and the ChatGPT plan's usage limits.
+- Whether the worker's image tool accepts the listed reference images (now up to six), and what model or size it offers. The first real item is the proof.
+- Real image quality and style consistency across sets. The drift reviews at images 10 and 20 are the first evidence.
+- Git LFS delivery from the worker's PC over a long unattended run, and the ChatGPT plan's usage limits.

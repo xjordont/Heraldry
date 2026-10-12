@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Runner helpers for the Heraldry illustration queue (skill v7). Python 3.9+, Pillow only.
+"""Runner helpers for the Heraldry illustration queue (skill v8). Python 3.9+, Pillow only.
 
   doctor                         environment, repo, queue and reference checks (run first)
   status [--end]                 queue state and the single next action (--end: session end, push anything unsent)

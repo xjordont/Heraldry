@@ -1,8 +1,8 @@
-# Standing instructions for Heraldry illustrations (skill v7)
+# Standing instructions for Heraldry illustrations (skill v8)
 
 The GitHub repository is the source of truth. Claude Code prepares prompts, queue, reference sets and review decisions. The art worker (Codex on the owner's PC; ChatGPT Work as the fallback) generates native images and returns exact bytes, receipts, and QA evidence. Work never edits prompts, queue, source rules, or other code while processing illustration batches.
 
-Use the installed `heraldry-classic-ink-art` v7 skill (source in `production/art/skill/heraldry-classic-ink-art/`). If not installed, read `SKILL.md` from the checked-out repository. The queue remains `production/art/gpt/QUEUE.json`, schema 2; prompts and prompt_sha256 are immutable per item; each item lists its own references (at most 6), must-show and do-not-draw clauses, native size, and attempt budget.
+Use the installed `heraldry-classic-ink-art` v8 skill (source in `production/art/skill/heraldry-classic-ink-art/`). If not installed, read `SKILL.md` from the checked-out repository. The queue remains `production/art/gpt/QUEUE.json`, schema 2; prompts and prompt_sha256 are immutable per item; each item lists its own references (at most 6), must-show and do-not-draw clauses, native size, and attempt budget.
 
 ## Session start
 
@@ -38,7 +38,7 @@ An `anchors` phase, when one is published, ends after delivery of its items unti
 
 1. Item prompt + must/avoid clauses govern depicted facts.
 2. `QUEUE.json` governs IDs, formats, reference sets, budgets and workflow.
-3. The v7 skill governs production and QA steps without overriding canonical subject facts.
+3. The v8 skill governs production and QA steps without overriding canonical subject facts.
 4. The manuscript and lore remain untouched by Work.
 
 This process improves consistency but cannot guarantee visually identical generation across all subjects. Exact replay of an already approved asset requires copying the approved bytes rather than regenerating it. Automated tests verify package integrity and mechanical gates, not final artistic quality. Claude Code/owner makes the final publishing decision.

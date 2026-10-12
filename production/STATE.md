@@ -443,3 +443,10 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
     - 07 dry-brush duel to scenarios (core gritty brushwork; combatants in a landscape suit scenarios, though not terrain sets).
   - **Not promoted, with reasons:** 08 and 42 (period costume bleed), 12 (screen tone), 14 (monogram, fine engraving; items full), 24 (too clean), 48 (black box frame), 62 (dark backdrop).
   - Scenarios and classes and ancestries now carry 5 references, items 6, and all others 4. The queue was republished, with prompts unchanged.
+- **Skill v8** (owner, 2026-10-12: "Double check everything from these reference changes are incorporated into the plan and upgrade the gpt skill to v8 ... Then double check everything again").
+  - **Reference consistency verified:**
+    - all 275 queue items carry exactly their set's references (up to 6) and `ref_set`;
+    - every style file is catalogued in `STYLE_REFS.json` with a correct usage field;
+    - 66 distinct references are in use; `max_attempts` is 1; `receipts_base` is 19.
+  - **Version 8.0.0:** `SKILL.md`, the operator card, the helper docstring, `work_preflight --require-installed` (now requires v8), `validate_skill.py`, `tools/art_skill_build.py` (`Heraldry_Classic_Ink_Art_Skill_v8_0.zip`, 43.6 MB, built on request), `tools/art_work_package.py`, INSTRUCTIONS, WORK_PROMPT, AGENTS, README, RELEASE_STATUS and ART_AUTOMATION.
+  - **Records:** the skill README has a "Changes since v7" table, and `VERIFICATION_REPORT.md` is rewritten for v8.

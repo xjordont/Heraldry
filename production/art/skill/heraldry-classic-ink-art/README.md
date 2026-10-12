@@ -1,25 +1,22 @@
-# Heraldry Skirmish: Classic Ink Art Skill v7.0
+# Heraldry Skirmish: Classic Ink Art Skill v8.0
 
 **A source-faithful, queue-driven image-generation skill. The Heraldry GitHub repository is the source of truth; Claude Code and the owner approve the artwork independently.**
 
 The skill runs on Codex on the owner's PC (the current route), or in ChatGPT Work with the offline input package as the fallback. It does not claim to guarantee identical generated images or a successful run of an untested image tool. Unit tests and image diagnostics never measure artistic quality.
 
-## Changes since v6
+## Changes since v7
 
-| Area | v7 |
+| Area | v8 |
 |---|---|
-| Art direction | Gritty old-school black-and-white ink (owner, 2026-10-11): bold rough contours, heavy solid blacks, scratchy hatching and dry-brush, high contrast. Still pure black ink: no grey wash, no stipple fields, no clean vector-like line |
-| References | Owner samples plus four public-domain prints (Callot, Piranesi, Haden) chosen for the same look. Sets are chosen per family and per monster kind (undead, beast, vermin, humanoid, magical), at most six per item. Each queue item names its `ref_set` |
-| Queue order | Redos first, then seventeen lead items, one per reference set, so the first two drift reviews (images 10 and 20) test every set |
-| Cadence | Each image is delivered as soon as it is saved (`push_every: 1`), with a drift review every tenth image (`review_every: 10`, `sheet --recent`, `style_audit --recent`) |
-| Delivery | `delivery_guard ship` fast-forwards safely over the intake bot's commits and retries a lost push; divergence or overlap still stops |
-| Docs | Reference documents have version-free names (`STYLE_CONSISTENCY.md`, `VISUAL_ACCEPTANCE.md`, `WORK_OPERATIONS.md`). The v6 deployment folder is retired because v6 and v7 are installed in the repository |
+| Generation | **One generation per item** (`max_attempts` 1; owner 2026-10-12: first generations beat retries), in a fresh context. A defect is saved with `--accept-flags --notes`; the reviewer decides on a redo, which is again a single generation with at most two correction sentences (`references/REPAIR.md`) |
+| Edges | Only a cropped subject, or one touching an edge, is a hard fail; a narrow margin is advisory (the layout trims margins) |
+| References | Mapping v8: up to six per item, 66 distinct images (owner samples, including STYLE-REF-45 to 74, plus four public-domain prints). Every figure set (monster kinds, classes and ancestries, backgrounds, items) uses images found in no other set; no scenery reaches an isolated figure except the owner-approved wolf pack |
+| Fresh start | All 275 items are pending (owner 2026-10-12). The queue records `receipts_base`, so drift reviews count only new receipts |
+| Helper | `next` and `status` fast-forward a clean clone, so mid-session redos show at once; `check` and `save` report the saved attempt's own number; `save` keeps a local copy in `HERALDRY_ARCHIVE`; messages name the running interpreter |
+| Delivery | Every incoming image format (PNG, JPEG, WebP) goes through Git LFS, enforced by `ship` and `doctor` |
+| Packaging | The installable ZIP and the offline package are built on request (`make art-packages` or the `Build art packages` workflow), never committed |
 
-The v6 integrity guarantees carry over unchanged:
-- byte-bound QA records, with ten criteria that each need visual evidence;
-- native-hash receipts;
-- prompt and reference hash checks at delivery;
-- a clean index and no force-push.
+Carried over from v7: the gritty old-school direction, per-family and per-kind reference sets with `ref_set` on each item, redos first then one lead item per set, delivery after every image with a drift review every tenth, and the guarded fast-forwarding `ship`. Carried over from v6: byte-bound QA records with ten evidenced criteria, native-hash receipts, prompt and reference hash checks at delivery, a clean index and no force-push.
 
 ## Production boundary
 
@@ -51,7 +48,7 @@ Where the worker cannot authenticate git, Claude Code builds a self-contained in
 
 ```sh
 python -m unittest discover -s tests -v
-python scripts/validate_skill.py --zip /path/to/Heraldry_Classic_Ink_Art_Skill_v7_0.zip --repo /path/to/repo
+python scripts/validate_skill.py --zip /path/to/Heraldry_Classic_Ink_Art_Skill_v8_0.zip --repo /path/to/repo
 ```
 
 ## Included files

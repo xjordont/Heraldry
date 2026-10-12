@@ -1,4 +1,4 @@
-# Heraldry Skirmish art runner v7: operator card
+# Heraldry Skirmish art runner v8: operator card
 
 ## Before generation
 
@@ -39,4 +39,4 @@ On the first item, confirm that the image tool accepts the listed references and
 
 Codex uses `production/art/codex/CODEX_PROMPT.md`. For ChatGPT Work:
 
-> Use the Heraldry Skirmish Classic Ink Art v7 skill on xjordont/Heraldry, main. Run the preflight, doctor and status, then generate the queued illustrations in order using the exact repository prompts and each item's listed references. For each native image run check, inspect the image and its print-size preview, complete the ten-criterion QA record, and save. Deliver each image through the guarded process (or a labelled bundle), with a drift review every ten images. Generate once per item, never self-approve, and stop at NOTHING LEFT or any hard blocker. Report completed IDs, failures, commits or bundles, and the next ID. Never edit the queue, prompts, manuscript or code.
+> Use the Heraldry Skirmish Classic Ink Art v8 skill on xjordont/Heraldry, main. Run the preflight, doctor and status, then generate the queued illustrations in order using the exact repository prompts and each item's listed references. For each native image run check, inspect the image and its print-size preview, complete the ten-criterion QA record, and save. Deliver each image through the guarded process (or a labelled bundle), with a drift review every ten images. Generate once per item, never self-approve, and stop at NOTHING LEFT or any hard blocker. Report completed IDs, failures, commits or bundles, and the next ID. Never edit the queue, prompts, manuscript or code.

@@ -1,6 +1,6 @@
 # Agents working in this repository (Codex and others)
 
-`CLAUDE.md` is the governing contract for this repository and applies to every agent. Codex's role (owner decision 2026-10-11) is **art worker**. Its complete working contract is `production/art/codex/BATCH_CARD.md`; read that, not the long docs. Background, only if needed: `production/art/codex/CODEX_RUNBOOK.md` and the v7 skill `production/art/skill/heraldry-classic-ink-art/SKILL.md`.
+`CLAUDE.md` is the governing contract for this repository and applies to every agent. Codex's role (owner decision 2026-10-11) is **art worker**. Its complete working contract is `production/art/codex/BATCH_CARD.md`; read that, not the long docs. Background, only if needed: `production/art/codex/CODEX_RUNBOOK.md` and the v8 skill `production/art/skill/heraldry-classic-ink-art/SKILL.md`.
 
 Hard limits:
 

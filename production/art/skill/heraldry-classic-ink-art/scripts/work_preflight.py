@@ -123,9 +123,9 @@ def run(repo,mode='auto',smoke_file=None,require_installed=False,offline_package
     installed=repo/'production/art/skill/heraldry-classic-ink-art/SKILL.md'
     skill_version='NOT_INSTALLED'
     if installed.is_file():
-        skill_version='v7' if '(v7)' in installed.read_text(encoding='utf-8') else 'NOT_V7'
-    if require_installed and skill_version!='v7':
-        errors_preinstall=['Repository v7 skill not installed; upgrade before autonomous production']
+        skill_version='v8' if '(v8)' in installed.read_text(encoding='utf-8') else 'NOT_V8'
+    if require_installed and skill_version!='v8':
+        errors_preinstall=['Repository v8 skill not installed; upgrade before autonomous production']
     else:
         errors_preinstall=[]
     errors=list(errors_preinstall);warnings=[]
@@ -200,7 +200,7 @@ def main(argv=None):
     ap.add_argument('--repo',default='.')
     ap.add_argument('--mode',choices=['auto','git_lfs','bundle'],default='auto')
     ap.add_argument('--smoke-file')
-    ap.add_argument('--require-installed',action='store_true',help='block production until v7 is deployed into the repository')
+    ap.add_argument('--require-installed',action='store_true',help='block production until v8 is deployed into the repository')
     ap.add_argument('--offline-package',action='store_true',help='validate an unzipped Work input package (WORK_PACKAGE.json) without Git; '
                     'chosen automatically when the manifest is present and there is no .git')
     a=ap.parse_args(argv);d=run(a.repo,a.mode,a.smoke_file,a.require_installed,a.offline_package)
