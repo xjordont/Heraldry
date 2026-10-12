@@ -19,10 +19,10 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   | Images | References |
   |---|---|
   | Monsters: undead (30) | 04 skeleton king, 03 skeleton warrior, 52 crowned lich, 51 bandaged mummy |
-  | Monsters: beasts (12) | 18 bear, 38 gnoll, 16 dragon-man, 22 wolf pack (owner-approved scenery risk) |
-  | Monsters: vermin and aberrations (17) | 16 dragon-man, 36 crab insectoid, 18 bear, 35 grub beast |
+  | Monsters: beasts (12) | 18 bear, 22 wolf pack (owner-approved scenery risk), 70 chimera, 74 winged reptile |
+  | Monsters: vermin and aberrations (17) | 36 crab insectoid, 35 grub beast, 72 mantis insectoid, 71 tree creature |
   | Monsters: humanoids and beastfolk (39) | 38 gnoll, 32 goat-folk spearman, 62 ratman warrior, 66 troll pair |
-  | Monsters: dragons, demons, elementals, constructs (22) | 16 dragon-man, 28 wizard vs fiend, 18 bear, 50 flame-sword elf |
+  | Monsters: dragons, demons, elementals, constructs (22) | 16 dragon-man, 68 coiled dragon, 73 manticore, 28 wizard vs fiend |
   | Bosses | 10 undead crowd, 05 cave creature, 49 swordsman on a mountain pass, 60 skeletal standard-bearer |
   | Classes and ancestries | 06 hooded archer, 41 Callot beggar, 54 dwarf warrior, 57 armoured swordswoman |
   | Backgrounds | 19 pack, rope and lantern; 34 gear sheet; 25 bracers; 39 poison flask |
@@ -46,7 +46,8 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
 - **Owner samples 45 to 52** (2026-10-12): see the table. 52 lich and 51 mummy replace 38 gnoll in the undead set (38 stays in beasts and humanoids). The owner removed 22 wolf pack the same day, then restored it to beasts.
 - **Owner samples 54 to 67** (2026-10-12): placed as in the table, replacing shared images toward four unique per set. Caveats: grey tone in 55, 58, 59 and 62; a dark backdrop behind the 62 figure; a monogram on 65.
 - **Review 2026-10-12** (owner: review every reference and category): 54 and 57 replace 08 and 42 in classes and ancestries (period costume and a beggar are poor adventurer models); 63 replaces 28 in spell tiers (28 stays in magical); 46 and 65 replace 29 and 43 on the cover (establishing scenes with sky); 47 replaces 07 in climates (no figures in a terrain set). Vermin and magical keep 18 and 16 as their weakest members: the only alternatives (05, 26) are scenes, which must not reach isolated figures.
-- **Still on file, not attached:** 07 duel, 08 fencers, 42 Callot beggar on crutches, 61 herbalist; 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life); 24 flanged mace (the cleanest still life, replaced in items by the owner's choice of 40, 27 and 33).
+- **Creature samples 68 to 74** (2026-10-12): beasts, vermin and magical monsters now use only images of their own kind; 16, 18 and 38 each belong to one set. Caveats: 71 has grey-looking dense hatching; 70 and 73 are composite or human-faced creatures that must not be copied onto other subjects.
+- **Still on file, not attached:** 69 hydra (no free slot), 50 flame-sword elf, 07 duel, 08 fencers, 42 Callot beggar on crutches, 61 herbalist; 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life); 24 flanged mace (the cleanest still life, replaced in items by the owner's choice of 40, 27 and 33).
 - **Still open:** no gritty desert, ash-waste or snow landscape example exists in the public domain at usable quality. Those climates rely on their prompts plus the general landscape references 44, 13 and 07.
 - **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached, because grey tone cannot print in black ink.
 - **Cut and superseded:** the owner cut STYLE-REF-01 (it remains in git history) and replaced it with STYLE-REF-11, an owner exception to the rule against machine-made references.

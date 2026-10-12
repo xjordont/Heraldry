@@ -1,5 +1,5 @@
 {
- "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses. A second batch added STYLE-REF-28..40 to the bank (one more image was STYLE-REF-26 again, byte-identical, and was not stored twice). 2026-10-11: on owner instruction Claude searched for public-domain examples to fill the remaining gaps and added STYLE-REF-41..44 (Callot, Piranesi, Haden; Art Institute of Chicago CC0). Their scans were levelled and plate numbers or signatures removed. 2026-10-12: the owner promoted most of the bank (max four references per item); each entry's 'use' now states the sets it is attached to, generated from config/art_style.json. 2026-10-12 (later): STYLE-REF-22 removed from the beast set by the owner; eight more owner samples added as STYLE-REF-45..52. 2026-10-12 (later): fourteen more owner samples added as STYLE-REF-54..67 (a fifteenth was STYLE-REF-53 again, byte-identical, and was not stored twice).",
+ "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses. A second batch added STYLE-REF-28..40 to the bank (one more image was STYLE-REF-26 again, byte-identical, and was not stored twice). 2026-10-11: on owner instruction Claude searched for public-domain examples to fill the remaining gaps and added STYLE-REF-41..44 (Callot, Piranesi, Haden; Art Institute of Chicago CC0). Their scans were levelled and plate numbers or signatures removed. 2026-10-12: the owner promoted most of the bank (max four references per item); each entry's 'use' now states the sets it is attached to, generated from config/art_style.json. 2026-10-12 (later): STYLE-REF-22 removed from the beast set by the owner; eight more owner samples added as STYLE-REF-45..52. 2026-10-12 (later): fourteen more owner samples added as STYLE-REF-54..67 (a fifteenth was STYLE-REF-53 again, byte-identical, and was not stored twice). 2026-10-12 (later): seven creature samples added as STYLE-REF-68..74 (four further images repeated STYLE-REF-54, 55, 65 and 66 and were not stored twice).",
  "refs": [
   {
    "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
@@ -172,7 +172,7 @@
    "category": "creature: fey or fiendish warrior (magical)",
    "role": "Gaunt elf warrior in studded armour with a flaming sword",
    "caveat": "small (435 px wide); dotwork texture",
-   "use": "attached to reference sets: monster:magical; never placed or packaged"
+   "use": "on file, not attached to any generation set; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg",
@@ -316,6 +316,84 @@
    "role": "Slime-dripping hooded ghoul meets a soldier on a sewer ledge, dense pen",
    "caveat": "dense texture",
    "use": "attached to reference sets: scenario; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1274,
+    1725
+   ],
+   "sha256": "cf9d975bfdab03c6d24ec30203f97d73e245194b144d52f8d37b9055226bc7a3",
+   "category": "creature: dragon (magical)",
+   "role": "Coiled serpentine dragon, isolated, bold contour and black shadow",
+   "caveat": "none noted",
+   "use": "attached to reference sets: monster:magical; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-70-chimera.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1210,
+    1333
+   ],
+   "sha256": "7bff20c6cdf8f4f89ae43d5ba023e0c52b8421b773334822982b209a308dc94c",
+   "category": "creature: chimera (beast)",
+   "role": "Lion-goat-serpent chimera roaring, isolated on a small ground patch",
+   "caveat": "composite anatomy: never copy onto other beasts",
+   "use": "attached to reference sets: monster:beast; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-71-tree-creature-briar.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1566,
+    2242
+   ],
+   "sha256": "43cf834db99d83d7758fbd90467031040ff3200080deaa7bbe796ba6b55faf6e",
+   "category": "creature: tree creature (vermin: shambling mound, gloom hulk)",
+   "role": "Gnarled bark-and-root creature with horns, dense pen hatching",
+   "caveat": "grey-looking dense hatching (32% mid-tones)",
+   "use": "attached to reference sets: monster:vermin; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-72-mantis-insectoid.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1838,
+    2225
+   ],
+   "sha256": "9940aa007c446c19bb69a318526ce52e643bc6d3716668c6ddd0d8fe785c0101",
+   "category": "creature: mantis insectoid (vermin)",
+   "role": "Upright insect with mantis forelimbs and a beetle abdomen, isolated",
+   "caveat": "none noted",
+   "use": "attached to reference sets: monster:vermin; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-73-manticore.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    2064,
+    2380
+   ],
+   "sha256": "4dab2905daf41890f50585b35ee3979aefd73841c1aebdb2ceaff0344b3ef393",
+   "category": "creature: manticore (magical)",
+   "role": "Bearded human-faced lion with a spiked tail",
+   "caveat": "human face: never copy onto other creatures",
+   "use": "attached to reference sets: monster:magical; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-74-winged-reptile-wyvern.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1581,
+    1817
+   ],
+   "sha256": "4c76cbdddc5d0f474b33fbfe25c536f5742edd6c9b364cddbdcf68df9cf7fa33",
+   "category": "creature: winged reptile (beast: bats, stirges; wyvern)",
+   "role": "Pterosaur-like flier with membrane wings, solid black wing shading",
+   "caveat": "none noted",
+   "use": "attached to reference sets: monster:beast; never placed or packaged"
   }
  ],
  "inspiration_only": [
@@ -424,7 +502,7 @@
    "category": "creature (non-undead)",
    "role": "Winged armoured dragon-man on a rock; heavy spot blacks, isolated on white",
    "caveat": "",
-   "use": "attached to reference sets: creature, monster:beast, monster:magical, monster:vermin; never placed or packaged"
+   "use": "attached to reference sets: creature, monster:magical; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg",
@@ -450,7 +528,7 @@
    "category": "creature (beast)",
    "role": "Roaring bear, isolated on white; scratchy fur hatching into solid black",
    "caveat": "",
-   "use": "attached to reference sets: creature, monster:beast, monster:magical, monster:vermin; never placed or packaged"
+   "use": "attached to reference sets: creature, monster:beast; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
@@ -710,7 +788,7 @@
    "category": "creature (beastfolk)",
    "role": "Hyena-man with spear and skull belt; bold scratchy hatching, isolated on white",
    "caveat": "",
-   "use": "attached to reference sets: monster:beast, monster:humanoid; never placed or packaged"
+   "use": "attached to reference sets: monster:humanoid; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
@@ -828,6 +906,19 @@
    "role": "Helmets, gambeson, brigandine, mail with tabard and plate cuirass",
    "caveat": "sheet layout: never copy the grid",
    "use": "attached to reference sets: item; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    2008,
+    2226
+   ],
+   "sha256": "215e018f6007f32e04cfdb0986fb62b7cf70371f39ea2ef6c48492a3718ac225",
+   "category": "creature: hydra",
+   "role": "Three-headed hydra crouched, isolated, brush blacks",
+   "caveat": "on file: no free slot; a strong alternative for magical",
+   "use": "on file, not attached to any generation set; never placed or packaged"
   }
  ],
  "public_domain": [

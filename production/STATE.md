@@ -418,3 +418,12 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Kept on purpose:** vermin and magical keep 18 bear and 16 dragon-man as their weakest members, because the only alternatives (05 cave, 26 study) are scenes and must not reach isolated figures. The owner's item set (15, 40, 27, 33) is unchanged; 56 weapons sheet and 64 armour sheet are recommended alternatives.
   - **Result:** 57 distinct images in use. The queue was republished, with prompts unchanged.
 - **Equipment extras** (owner, 2026-10-12: "Attach weapon and armour sheet. They can be extra"). 56 weapons sheet and 64 armour sheet join the item set as a fifth and sixth reference. The new `max_refs_by_set` setting (`item: 6`) lets that set exceed the general limit of 4, honoured by `tools/art_gpt_pack.py` and the pipeline test. Both item illustrations now carry six references, and every other set is unchanged. The queue was republished, with prompts unchanged.
+- **Creature references** (owner, 2026-10-12: eleven images, no text; four repeated STYLE-REF-54, 55, 65 and 66 pixel for pixel and were skipped).
+  - Seven new creature samples were stored unchanged as STYLE-REF-68 to 74 and placed by monster kind:
+    - beast: 70 chimera and 74 winged reptile;
+    - vermin: 72 mantis insectoid and 71 tree creature;
+    - magical: 68 coiled dragon and 73 manticore.
+  - **On file:** 69 hydra (no free slot) and 50 flame-sword elf.
+  - **Result:** every figure set (all monster kinds, classes and ancestries, backgrounds, items) now holds images used nowhere else, 64 distinct in use. The only images still shared sit among scene sets: cover with chapter, climate and bastion; 43 between chapter and campaign; 44 between world and climate.
+  - **Caveats:** 71 has grey-looking dense hatching; the composite chimera and the human-faced manticore must not be copied onto other creatures.
+  - The queue was republished, with prompts unchanged.
