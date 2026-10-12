@@ -21,19 +21,19 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   | Monsters: undead (30) | 04 skeleton king, 03 skeleton warrior, 52 crowned lich, 51 bandaged mummy |
   | Monsters: beasts (12) | 18 bear, 38 gnoll, 16 dragon-man, 22 wolf pack (owner-approved scenery risk) |
   | Monsters: vermin and aberrations (17) | 16 dragon-man, 36 crab insectoid, 18 bear, 35 grub beast |
-  | Monsters: humanoids and beastfolk (39) | 38 gnoll, 41 Callot beggar, 04 skeleton king, 32 goat-folk spearman |
+  | Monsters: humanoids and beastfolk (39) | 38 gnoll, 32 goat-folk spearman, 62 ratman warrior, 66 troll pair |
   | Monsters: dragons, demons, elementals, constructs (22) | 16 dragon-man, 28 wizard vs fiend, 18 bear, 50 flame-sword elf |
-  | Bosses | 16, 10 undead crowd, 05 cave creature, 49 swordsman on a mountain pass |
+  | Bosses | 10 undead crowd, 05 cave creature, 49 swordsman on a mountain pass, 60 skeletal standard-bearer |
   | Classes and ancestries | 08 woodcut fencers, 41 Callot beggar, 06 hooded archer, 42 Callot beggar on crutches |
   | Backgrounds | 19 pack, rope and lantern; 34 gear sheet; 25 bracers; 39 poison flask |
   | Items | 15 sword and mace, 40 rag-wrapped scythe, 27 carved scroll case (pseudo-writing risk), 33 bone cross |
   | Spell tiers | 29 holy fire, 28 wizard vs fiend, 26 summoning, 12 wizard storm |
   | Stronghold rooms | 20 armoury, 37 dungeon pits, 43 Piranesi drawbridge, 23 dungeon arches |
   | Climates | 44 Haden vignette, 13 cave river, 07 dry-brush duel, 17 swamp hut |
-  | Scenarios | 09 skeleton melee, 21 party on a forest path, 44, 31 dungeon melee |
-  | World sections | 44, 43, 09, 30 forest path |
+  | Scenarios | 09 skeleton melee, 21 party on a forest path, 31 dungeon melee, 67 sewer ghoul ambush |
+  | World sections | 30 forest path, 58 flight from collapsing ruins, 55 siege wall-climb, 44 |
   | Bastions | 11 city approach, 02 city panorama, 45 cathedral facade, 53 frost harbour city |
-  | Chapters | 29, 43, 44, 46 round tower |
+  | Chapters | 46 round tower, 65 ship and dead tree, 59 harbour wharf, 43 |
   | Cover | 29, 11, 43, 47 barrow and dolmen |
 
 - **Public-domain additions** (Claude sourced these on owner instruction to fill the gaps, from the Art Institute of Chicago's CC0 images; each scan was levelled to black on white and its plate number or signature painted out):
@@ -44,7 +44,8 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   - 12 and 17 carry grey tone, 23 screen tone, and 30 and 31 stipple fields: the generator may copy the tone, which the checks still reject.
   - 32, 35 and 39 are small; 24 is cleaner than the core.
 - **Owner samples 45 to 52** (2026-10-12): see the table. 52 lich and 51 mummy replace 38 gnoll in the undead set (38 stays in beasts and humanoids). The owner removed 22 wolf pack the same day, then restored it to beasts.
-- **Still on file, not attached:** 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life); 24 flanged mace (the cleanest still life, replaced in items by the owner's choice of 40, 27 and 33).
+- **Owner samples 54 to 67** (2026-10-12): placed as in the table, replacing shared images toward four unique per set. Caveats: grey tone in 55, 58, 59 and 62; a dark backdrop behind the 62 figure; a monogram on 65.
+- **Still on file, not attached:** 54 dwarf, 57 swordswoman (signed), 61 herbalist, 63 wizard, 56 weapons sheet and 64 armour sheet (their sets, person, tradition and item, are full); 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life); 24 flanged mace (the cleanest still life, replaced in items by the owner's choice of 40, 27 and 33).
 - **Still open:** no gritty desert, ash-waste or snow landscape example exists in the public domain at usable quality. Those climates rely on their prompts plus the general landscape references 44, 13 and 07.
 - **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached, because grey tone cannot print in black ink.
 - **Cut and superseded:** the owner cut STYLE-REF-01 (it remains in git history) and replaced it with STYLE-REF-11, an owner exception to the rule against machine-made references.
