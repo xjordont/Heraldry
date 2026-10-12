@@ -416,15 +416,15 @@
   "route": "gpt",
   "spec_sha256": "be275483235c57575456d62216bfd0bd5ea9fe6961cb9459a338a654258faa5f",
   "prompt_sha256": "4b1dab7ec5e198c513f2391f9f86730f4dae51dd815cf5a9b2f04ecbb1925b7b",
-  "status": "rejected",
-  "received_at": "2026-10-12T12:31:43+00:00",
+  "status": "received",
+  "received_at": "2026-10-12T15:30:27+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Correction: make the Colossus exactly three times the small human figure's height, no taller, with the man standing at its feet. Keep the cracked imperial road composition and the gritty ink style.",
+  "notes": "Redo correction applied: human head is intended level with the Colossus knee, both on the same road; visually the human remains far shorter, and the vignette marks reach the perimeter.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-MON-THE-LAST-COLOSSUS.png",
-   "sha256": "12f6ab91f5d499eac7060192a83ad4cf778e350d7c87b4f2076dad7a18194e45",
+   "sha256": "997468e7f9c9b187466eb217e584a4687a9d98a3509257d7ac3c0418b47924bb",
    "px": [
     1536,
     1024
@@ -432,17 +432,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-MON-THE-LAST-COLOSSUS.png",
-   "sha256": "6900ab6530392d1be032c1e071aa381641b6a474c505de6258d293ecb04d6f62",
+   "sha256": "1a33c342dc25d1bde7066aca507feab419e91c1a1cfd4c1e6e3862d2daadf0f7",
    "px": [
-    1513,
-    1019
+    1511,
+    1008
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 5.043
+   "max_print_w_in_300ppi": 5.037
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-12T15:24:33+00:00",
-  "rejected_reason": "Still about six times the man's height; draw the man's head level with the Colossus's knee, so the Colossus is only three times his height, both standing on the same road surface close together."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-WOR-1-2-THE-GRIM-WORLD": {
   "family": "world",
