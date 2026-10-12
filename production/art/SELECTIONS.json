@@ -4137,5 +4137,38 @@
    "max_print_w_in_300ppi": 3.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-UNDEAD-CROSSBOWMAN": {
+  "family": "monster",
+  "title": "Undead Crossbowman",
+  "heading_id": "h-undead-crossbowman-cannon",
+  "route": "gpt",
+  "spec_sha256": "b20a256f2a1f92a282865d1377c0dcc0b9e366264f4066311d7fbec10caa624d",
+  "prompt_sha256": "cbe035212bf165dbcd1ec5869f2a34f4152c5a365a0b65fe36821d8dffd86f1c",
+  "status": "received",
+  "received_at": "2026-10-12T15:14:44+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "The crossbow is mounted on a tripod rather than a boot-in-stirrup personal stance.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-UNDEAD-CROSSBOWMAN.png",
+   "sha256": "2989098fd749733bfc1b1e75749f2a12ce2051e09341b31c9f522cfc7670d893",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-UNDEAD-CROSSBOWMAN.png",
+   "sha256": "a2c05d62619c974492ed52d77a0abe7aa4ef8ec4f31773361007dc4f40e3cd96",
+   "px": [
+    1099,
+    1162
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.663
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
