@@ -5356,5 +5356,38 @@
    "max_print_w_in_300ppi": 2.807
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-GNOME": {
+  "family": "ancestry",
+  "title": "Gnome",
+  "heading_id": "h-gnome",
+  "route": "gpt",
+  "spec_sha256": "310c64342f573e6b8d624655942dc5e4715734aa028735ca5b4a95298e8c1614",
+  "prompt_sha256": "a8340c264dc5133d599bae163112c99a5e8051f4d553d45ffafbb03abd9922b1",
+  "status": "received",
+  "received_at": "2026-10-12T18:01:42+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-GNOME.png",
+   "sha256": "c48b5f840251a81b5b89e0b2157b9c1464d694481bd7a30730ff25df58fde1c0",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-GNOME.png",
+   "sha256": "65de9eb727a1f0418d40386dac4034224a199c697886306300f8b42849000104",
+   "px": [
+    1001,
+    1377
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.337
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
