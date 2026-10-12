@@ -1288,5 +1288,38 @@
    "max_print_w_in_300ppi": 3.783
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-BRIARLING": {
+  "family": "monster",
+  "title": "Briarling",
+  "heading_id": "h-briarling-minion",
+  "route": "gpt",
+  "spec_sha256": "a38dc8c319ca3db0e2d7ecfbf4fe32764295dbb2baee39b91132ed01b9d99ca9",
+  "prompt_sha256": "81c26f50a9180751ed814db7acb021d9e32865275f6f497f0fdde00fbed64796",
+  "status": "received",
+  "received_at": "2026-10-12T07:10:35+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Dropped hand-axe scale cue is absent; 11 percent mid-tones; image is 1254 square vs 1024 target.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-BRIARLING.png",
+   "sha256": "8cea3f90400be34210e0bb5293d8f3c2391db5c053a5a85f6205d2f60ce59b77",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-BRIARLING.png",
+   "sha256": "2ce459f02d8f6459a1d1600804469e3b3580dcc32e81e83046d4d126d1bafa4a",
+   "px": [
+    1212,
+    1046
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.04
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
