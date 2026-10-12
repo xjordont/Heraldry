@@ -3312,5 +3312,38 @@
    "max_print_w_in_300ppi": 3.42
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-NOXCLOTH": {
+  "family": "monster",
+  "title": "Noxcloth",
+  "heading_id": "h-noxcloth-controller",
+  "route": "gpt",
+  "spec_sha256": "55760314a30293def055485eae1400e979104b81cde45fa20d4da85a5e1f9573",
+  "prompt_sha256": "529d35e8a2f6d3f394bfd26afe18e62cf8c3bed7582c7da6b4cd705f88b00383",
+  "status": "received",
+  "received_at": "2026-10-12T13:35:18+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Creature edges approach the canvas, leaving less than 8% clean margin. Checker warns 12% mid-tones; visual review finds ink hatching, not grey wash.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-NOXCLOTH.png",
+   "sha256": "d8fe5e2ad5d9e0a8a052bc774cf909fd80e2675f1305e6edad7cd38a520479d8",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-NOXCLOTH.png",
+   "sha256": "e7c025362d420ec1dbae515887580e458138c922d4842dba30368aa2291d63e9",
+   "px": [
+    1212,
+    1156
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.04
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
