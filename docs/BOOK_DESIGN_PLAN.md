@@ -59,6 +59,8 @@ Four families are used, all under the OFL, with licences in `fonts/licences/`. E
 
 The minimum essential size is 8.6 pt for captions and 8.8 pt for dense reference tables. The DESIGN_SPEC floor of 9 pt for running text still applies to body copy.
 
+**One treatment for flavour (owner 2026-10-12):** all section-level flavour is a centred single column of IM FELL roman, 80% of the frame wide, 11.4 pt on about 15.7 pt (12.2 pt for chapter leads). That covers chapter leads, the flavour under a section title, place lore (Bastions, Climates, strongholds) and scenario flavour. It is the `lead-block` component, and the gazetteer and scenario heads are centred above it to match. Entry flavour inside a column (monsters, classes, backgrounds) uses the same face, size and colour, left-aligned, because centred text in a 3.5 in column reads poorly.
+
 **Blackletter for character, not for reading:** Grenze Gotisch carries titles, names and tab keywords only. It is never set in all capitals, and never used for running text, table cells or numbers.
 
 ## 4. Ink, tone and ornament

@@ -293,6 +293,16 @@
   text(font: fell, size: size, fill: ink2, body)
 })
 
+// Lead: the one treatment for section-level flavour (owner 2026-10-12): chapter leads, section
+// flavour, place lore and scenario flavour are all a centred single column of IM FELL roman.
+// Entry flavour inside a column (monsters, classes) keeps `flavour`: same face, left-aligned.
+#let lead-block(body, size: 11.4pt, width: 80%) = block(width: 100%, above: 6pt, below: 10pt,
+  align(center, block(width: width, {
+    set par(justify: false, leading: 4.3pt, spacing: 7.5pt)
+    set text(font: fell, size: size, fill: ink2, hyphenate: false)
+    body
+  })))
+
 // Worked example: tinted field on a black spine, a banner tag.
 #let example(title: none, body) = block(width: 100%, above: 10pt, below: 11pt, breakable: false,
   fill: tint, stroke: (left: 2.6pt + ink), inset: (left: 11pt, right: 9pt, top: 7pt, bottom: 9pt))[
@@ -496,26 +506,19 @@
     #v(-8pt)
     #flourish(len: 90pt)
   ]
-  #if lead != none {
-    v(4pt)
-    align(center, block(width: 82%, {
-      set par(justify: false, leading: 4.4pt)
-      set text(font: fell, size: 12.4pt, fill: ink2)
-      lead
-    }))
-  }
+  #if lead != none { lead-block(lead, size: 12.2pt, width: 82%) }
 ]
 
 // ================================================================ scenario
 #let scenario-head(num, title, flavour-text, art: none) = block(width: 100%, below: 8pt, breakable: false)[
-  #grid(columns: if art != none { (1fr, 1.7in) } else { (1fr,) }, column-gutter: 12pt, align: bottom,
-    [
-      #tag([Scenario #h(2pt) #num], size: 7.6pt)
-      #v(-3pt)
-      #text(font: goth, weight: 600, size: 32pt, hyphenate: false, title)
-      #block(width: 86%, flavour(flavour-text, size: 10.8pt))
-    ],
-    ..if art != none { (image(art, width: 100%),) })
+  #if art != none { align(center, image(art, width: 60%)); v(-2pt) }
+  #align(center)[
+    #tag([Scenario #h(2pt) #num], size: 7.6pt)
+    #v(-3pt)
+    #text(font: goth, weight: 600, size: 32pt, hyphenate: false, title)
+  ]
+  #v(-6pt)
+  #lead-block(flavour-text)
   #brush(weight: 2.2pt, seed: 8)
 ]
 
@@ -571,14 +574,8 @@
 // ================================================================ gazetteer (places of the world)
 #let gazetteer(name, kicker, art: none, body) = block(width: 100%, breakable: false, above: 0pt, below: 16pt)[
   #if art != none { align(center, image(art, width: 100%)); v(-2pt) }
-  #grid(columns: (auto, auto, 1fr), column-gutter: 9pt, align: horizon,
-    text(font: goth, weight: 600, size: 28pt, name), role-tag(kicker), [])
-  #v(-2pt)
-  #brush(weight: 2pt, seed: 10)
-  #v(5pt)
-  #{
-    set text(font: fell, size: 10.6pt, fill: ink2)
-    set par(leading: 4pt, spacing: 8pt)
-    balanced(body)
-  }
+  #align(center)[#text(font: goth, weight: 600, size: 30pt, name)#h(9pt)#role-tag(kicker)]
+  #v(-8pt)
+  #align(center, box(width: 46%, brush(weight: 2pt, seed: 10)))
+  #lead-block(body)
 ]
