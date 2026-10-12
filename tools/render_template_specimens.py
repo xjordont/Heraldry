@@ -19,6 +19,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--ppi", type=float, default=110)
     ap.add_argument("--substrate", choices=("cream", "white"), default="cream")
+    ap.add_argument("--lead", choices=("justify", "center"), default="justify", help="flavour alignment (justify is the design)")
     ap.add_argument("--sheet", action="store_true", help="also write a contact sheet of all pages")
     a = ap.parse_args()
     import typst
@@ -26,7 +27,7 @@ def main():
     for old in OUT.glob(f"specimen-{a.substrate}-*.png"):
         old.unlink()
     pages = typst.compile(str(SRC), root=str(ROOT), format="png", ppi=a.ppi, font_paths=FONTS,
-                          sys_inputs={"substrate": a.substrate})
+                          sys_inputs={"substrate": a.substrate, "lead": a.lead})
     pages = pages if isinstance(pages, list) else [pages]
     files = []
     for i, data in enumerate(pages, 1):
