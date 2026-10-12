@@ -1057,5 +1057,38 @@
    "max_print_w_in_300ppi": 3.74
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-BLACK-DRAGON": {
+  "family": "monster",
+  "title": "Black Dragon",
+  "heading_id": "h-black-dragon-elite",
+  "route": "gpt",
+  "spec_sha256": "9341cffe5e2183d3049419c20c450f7cdfbe72bffb40f1ae5643b1a59075decf",
+  "prompt_sha256": "63259e608f35922a2da626a936ee039a294450b15fe33ecab2d5e89333a065d2",
+  "status": "received",
+  "received_at": "2026-10-12T06:44:07+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Tripwire warns 13 percent mid-tones and narrow margin; image is 1254 square vs 1024 target.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-BLACK-DRAGON.png",
+   "sha256": "b1dac7973f30187912246ddb0588cd3a36fc25e59931c48dfcd2823d000e2611",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-BLACK-DRAGON.png",
+   "sha256": "7317554d33607aea48f53d6b97788ec194398430e970ae127d55a792454d34c2",
+   "px": [
+    1213,
+    1196
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.043
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
