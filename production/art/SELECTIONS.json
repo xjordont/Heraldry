@@ -34,5 +34,38 @@
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
   "approved_at": "2026-10-12T04:35:40+00:00"
+ },
+ "ART-CLI-THE-ASHLANDS": {
+  "family": "climate",
+  "title": "The Ashlands",
+  "heading_id": "h-the-ashlands",
+  "route": "gpt",
+  "spec_sha256": "742f79f873697ead030177db2203aff2a91be13452ec148b48b169db64686868",
+  "prompt_sha256": "acc27bad4bc4f1b80511d5c6f0a10296e219d4a5b51044ffb929406878124597",
+  "status": "received",
+  "received_at": "2026-10-12T04:40:49+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLI-THE-ASHLANDS.png",
+   "sha256": "dc1a611245fb2fb602b831df810efc0496fbffad1c46e355fc356e2f502c5a76",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLI-THE-ASHLANDS.png",
+   "sha256": "d403a7258116b658052aeb3b78757805391c4c74e0e27899de8aa71c2f54e61a",
+   "px": [
+    1525,
+    1023
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.083
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
