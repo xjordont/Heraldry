@@ -298,5 +298,38 @@
    "max_print_w_in_300ppi": 4.987
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CAM-THE-ARMOURY": {
+  "family": "campaign",
+  "title": "The Armoury",
+  "heading_id": "h-the-armoury",
+  "route": "gpt",
+  "spec_sha256": "af94927586afbcaa22b084056df4d6dad149b33eee1de9bec8829e77805046d7",
+  "prompt_sha256": "2e3c96740da52a25169ae434fd627fc1b493a48bb2dfcb1d5809ee070923d70f",
+  "status": "received",
+  "received_at": "2026-10-12T05:03:11+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CAM-THE-ARMOURY.png",
+   "sha256": "819f8e9cb79800ead34b93dc37befbe29577356b929b768becdf8d89aa3ef079",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CAM-THE-ARMOURY.png",
+   "sha256": "13586f1f27a42b4d1ce73048d639ff7255f06790a21eb89fbb93dda40f652f85",
+   "px": [
+    1530,
+    1024
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.1
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
