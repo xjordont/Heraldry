@@ -1783,5 +1783,38 @@
    "max_print_w_in_300ppi": 3.647
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-EVIL-EYE": {
+  "family": "monster",
+  "title": "Evil Eye",
+  "heading_id": "h-evil-eye-elite",
+  "route": "gpt",
+  "spec_sha256": "c63a779a1267f5b8c6cb22874e4436dfa47cb66c0812f8d173bf1ee6d373f55b",
+  "prompt_sha256": "b23a6ce4963a64a884ce45d2873a04c87299833f37d743243b770fd4e8523ee5",
+  "status": "received",
+  "received_at": "2026-10-12T08:05:50+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "1254x1254 output vs 1024x1024 queue target. Visual eye count and exclusions pass.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-EVIL-EYE.png",
+   "sha256": "da38f4cb49cd92bd17b6712386850778874c7d121672c75b5e8a6cf60e6a635c",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-EVIL-EYE.png",
+   "sha256": "52dc6bfb64d8d9246d42a89fdea49bf57420d97e14815e7b83202fa4f146e307",
+   "px": [
+    1163,
+    1176
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.877
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
