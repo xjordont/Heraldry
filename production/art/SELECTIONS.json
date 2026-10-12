@@ -3741,5 +3741,38 @@
    "max_print_w_in_300ppi": 3.633
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-STONE-SENTINEL": {
+  "family": "monster",
+  "title": "Stone Sentinel",
+  "heading_id": "h-stone-sentinel-brute",
+  "route": "gpt",
+  "spec_sha256": "fe392cd7d292028945eb283a77a34cfd04a54ea1761892f7809243672a85ef8c",
+  "prompt_sha256": "5a1a50f71f460da47a41c851ab9dee5f2f5d4eec6d59c33470cc61b179388ded",
+  "status": "received",
+  "received_at": "2026-10-12T14:38:57+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Sword tip approaches the upper-left canvas edge, leaving less than 8% clean margin. Checker midtones are ink hatching.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-STONE-SENTINEL.png",
+   "sha256": "cf9dbf21ed48410c99f50b06df392fee49f49d8fe05ecbc4125d3b82d2239fc7",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-STONE-SENTINEL.png",
+   "sha256": "73bc8b04a283756bda7062fdbb936f402f98aff014fb22f1207de7d40ecaa33a",
+   "px": [
+    1013,
+    1220
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.377
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
