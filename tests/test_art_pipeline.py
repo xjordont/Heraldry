@@ -111,7 +111,9 @@ class ArtPipeline(unittest.TestCase):
                                       "STYLE-REF-44-haden-vignette-farm.jpg")}
         city = style + "STYLE-REF-11-city-approach-ink.png"
         self.assertEqual(q["schema"], 2)
-        self.assertEqual(q["count"], len(ents) - len(g.CFG["gpt_anchor_ids"]))
+        done = {i for i, v in g.load(g.SELECTIONS, {}).items() if v.get("status") in ("approved", "anchor-approved")}
+        done |= set(g.CFG["gpt_anchor_ids"])
+        self.assertEqual(q["count"], len([i for i in ents if i not in done]), "every entry not yet approved is queued")
         lead = [i for i in g.CFG["gpt_lead_ids"] if i in {x["id"] for x in q["items"]}]
         self.assertEqual([x["id"] for x in q["items"][:len(lead)]], lead, "the mixed lead goes first")
         self.assertEqual(len({x["ref_set"] for x in q["items"][:len(lead)]}), len(lead), "one lead item per reference set")
@@ -129,8 +131,7 @@ class ArtPipeline(unittest.TestCase):
                 self.assertTrue(it["ref_set"].startswith("monster:"), it["id"])
             self.assertIn(it["size"], ("1536x1024", "1024x1536", "1024x1024"))
             self.assertEqual(it["print_w_in"], g.CFG["families"][it["family"]]["print_w_in"])
-        self.assertEqual({it["max_attempts"] for it in q["items"] if it["family"] in ("cover", "chapter")}, {5})
-        self.assertEqual({it["max_attempts"] for it in q["items"] if it["family"] == "monster"}, {3})
+        self.assertEqual({it["max_attempts"] for it in q["items"]}, {1})       # one generation per item (owner 2026-10-12)
 
     def test_every_monster_has_exactly_one_kind(self):
         import copy

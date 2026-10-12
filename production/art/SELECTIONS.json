@@ -144,7 +144,7 @@
   "route": "gpt",
   "spec_sha256": "f0824267d44aef1191545f0938394e570fe48e8444987c0b5638d5235b55c652",
   "prompt_sha256": "970726d2a0f88993c0c4b566ae5c601cc73f45d121f2a656dbee5e009d186a6e",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-12T00:52:21+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -168,7 +168,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.907
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-12T01:30:44+00:00",
+  "rejected_reason": "Third round with only seven feet countable (four left, three right, plus the two short palps); the low front view hides the rear legs. The prompt now asks for a high view from above with the eight legs radiating evenly, four a side, every foot on the ground and none raised or hidden. Follow that composition exactly; the gritty ink itself was good."
  },
  "ART-MON-UNDEAD-CHAMPION": {
   "family": "monster",
@@ -212,7 +214,7 @@
   "route": "gpt",
   "spec_sha256": "b27130b10e640c836d0e99191e90649ea38e66779e3d7f64ebe1d15468952f99",
   "prompt_sha256": "46ba9622b890d074b4a681b705af7dd49a1ea6bfb0f6b35cab32b6e4327e7280",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T00:57:31+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -236,7 +238,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.723
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T01:30:44+00:00"
  },
  "ART-CLI-THE-ASHLANDS": {
   "family": "climate",
@@ -245,7 +248,7 @@
   "route": "gpt",
   "spec_sha256": "742f79f873697ead030177db2203aff2a91be13452ec148b48b169db64686868",
   "prompt_sha256": "acc27bad4bc4f1b80511d5c6f0a10296e219d4a5b51044ffb929406878124597",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T01:00:29+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -269,7 +272,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.7
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T01:30:44+00:00"
  },
  "ART-MON-SKELETON-WARRIOR": {
   "family": "monster",
@@ -278,7 +282,7 @@
   "route": "gpt",
   "spec_sha256": "394b849d6fd798d8857726955c97cd4e95ffce429a193b394598d2096237cec0",
   "prompt_sha256": "3aeb9fc2b93240aed54e2603cedf6869eedfc29b7b3a4fd2062d45502c107369",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T01:03:52+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -302,7 +306,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.037
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T01:30:44+00:00"
  },
  "ART-MON-DIRE-WOLF": {
   "family": "monster",
@@ -311,7 +316,7 @@
   "route": "gpt",
   "spec_sha256": "988967f069e910d5be6c9354ed6cd14ca0eb94b6f4960caeca0e9feb9e3ce5db",
   "prompt_sha256": "5a64acc2ba28e5806ed14e3abb0173c2be80ef42619df88c1763958130b00ef3",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T01:07:51+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -335,7 +340,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.273
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T01:30:44+00:00"
  },
  "ART-MON-ORC": {
   "family": "monster",
@@ -344,7 +350,7 @@
   "route": "gpt",
   "spec_sha256": "86a860fa50a78d64bde733a2f063281c3f2f2cb6c25ddd1f25b3ca8c9747d61a",
   "prompt_sha256": "b97cbf5864880e238dc0ddc245d6c1a82dbe40d71795cbecaffcd259caaff060",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T01:11:42+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -368,7 +374,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.837
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T01:30:44+00:00"
  },
  "ART-MON-GARGOYLE": {
   "family": "monster",
@@ -377,7 +384,7 @@
   "route": "gpt",
   "spec_sha256": "0c25595efed661104f38ca4142324b62006d9ffe728ad74014a4ca25f44d613c",
   "prompt_sha256": "4738ef0fd0199628b2719ac0a104b399ea475cd375ff3b9fa485b9d1f59db7eb",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T01:14:48+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -401,7 +408,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.71
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T01:30:44+00:00"
  },
  "ART-CLA-RANGER": {
   "family": "class",
@@ -410,7 +418,7 @@
   "route": "gpt",
   "spec_sha256": "9f21f81c0d9c96bfe6f89234607c9e3c6a1ad8cfe2e4607fcc07d890381b608e",
   "prompt_sha256": "57ee380f07fede9930963fff255801389467e1b01e7341088a9f9877cb20a022",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T01:17:35+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -434,6 +442,7 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.55
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-12T01:30:44+00:00"
  }
 }

@@ -55,7 +55,7 @@ Manuscript issues found while briefing are recorded in `production/art/SOURCE_NO
 
 1. **`python3 tools/art_gpt_pack.py`**
    - Writes `production/art/gpt/QUEUE.json` (schema 2), `QUEUE.md` and one prompt file per pending entry in `production/art/gpt/prompts/`.
-   - Each queue item carries its register, its own references (at most three, from `gpt_reference_sets` in `config/art_style.json`), its printed width, its attempt budget (`gpt_max_attempts`: 3, and 5 for the cover and chapters) and the brief's must and avoid lists.
+   - Each queue item carries its register, its own references (at most three, from `gpt_reference_sets` in `config/art_style.json`), its printed width, its attempt budget (`gpt_max_attempts`: 1, one generation per item, owner 2026-10-12) and the brief's must and avoid lists.
    - References come from `gpt_reference_sets` (mapping v7, 17 sets; see `docs/ART_DIRECTION.md`). Precedence:
      1. `kind_sets`: five monster kinds, by ID; the pack fails if a monster has no kind or two.
      2. `family_sets`.
@@ -64,7 +64,7 @@ Manuscript issues found while briefing are recorded in `production/art/SOURCE_NO
      Each item records its `ref_set`. References are the owner's gritty ink samples and four public-domain prints; generated images are never references, and no isolated figure receives a scenic reference.
    - Order: redos first, then `gpt_lead_ids` (seventeen items, one per set, so the drift reviews at images 10 and 20 test every set), then the rest. The batch phase follows the approved anchors (Greythorn plus four hand-inked images).
 2. **The art worker** (Codex on the owner's PC; ChatGPT Work as the fallback) follows `production/art/codex/BATCH_CARD.md` (or `production/art/gpt/INSTRUCTIONS.md`) and the `heraldry-classic-ink-art` skill (below).
-   - It pastes each prompt verbatim, attaches that item's references only, stops at the first attempt that passes the checks (never beyond the item's budget), and saves the native image unmodified as `assets/art/incoming/<ID>.<png|jpg|webp>` (all Git LFS).
+   - It pastes each prompt verbatim, attaches that item's references only, generates once in a fresh context (never a retry: a defect is saved flagged, and the reviewer decides on a redo), and saves the native image unmodified as `assets/art/incoming/<ID>.<png|jpg|webp>` (all Git LFS).
    - `heraldry_art.py save` does the check, copy and receipt (`production/art/gpt/RECEIPTS.jsonl`, recording the saved attempt and how many were generated) in one step, and `delivery_guard.py ship` pushes each image as soon as it is saved.
    - `next` and `status` first fast-forward a clean clone, so a rejection sent back mid-session appears as a redo at once.
 3. **The `Intake ChatGPT artwork` workflow** (on push to `assets/art/incoming/**`) runs `tools/art_intake.py scan`.

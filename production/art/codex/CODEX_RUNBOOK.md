@@ -61,7 +61,7 @@ The preflight should say `READY` with `delivery: git_lfs`. Show the complete pre
 
 ### Capability check
 
-The first real item proves the capabilities: the image tool must accept every listed reference, in order, and give you the native file. If it cannot, stop and report it. No separate smoke file is needed; that attempt counts toward the item's budget like any other.
+The first real item proves the capabilities: the image tool must accept every listed reference, in order, and give you the native file. If it cannot, stop and report it. No separate smoke file is needed.
 
 ## Image generation
 
@@ -80,7 +80,7 @@ The first real item proves the capabilities: the image tool must accept every li
 3. Save the native file to `$env:HERALDRY_SCRATCH`, then `heraldry_art.py check ID FILE`. Look at the image and the print-size preview beside the references.
 4. `heraldry_art.py qa ID FILE` and complete the draft it names: the attestations, `register_compared` and all ten criteria with real, specific evidence.
 5. `heraldry_art.py save ID FILE --must "..." --avoid-clear --model "..."` (the draft is found automatically).
-6. Stay within each item's attempt budget; `--accept-flags --notes "..."` only after the last attempt.
+6. One generation per item, in a fresh context, never a retry; a hard fail is saved with `--accept-flags --notes "..."` and Claude Code decides on a redo.
 
 ## Primary delivery: guarded Git LFS to main
 

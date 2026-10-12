@@ -23,7 +23,7 @@ On the first item, confirm that the image tool accepts the listed references and
 2. Request the largest size and best quality offered at the listed aspect. Keep the original bytes in the scratch folder.
 3. `check ID FILE`. Inspect the original and the print-size preview beside the references, including whether the image is as gritty and bold as they are.
 4. `qa ID FILE`: complete the ten criteria with visible evidence. Then `save ID FILE --must ... --avoid-clear --model "..."`. Never invent a pass.
-5. Retry narrowly within the item's budget (`references/REPAIR.md`). When the budget runs out, save the best attempt with `--accept-flags` and record what is still wrong. That is never an approval.
+5. One generation per item, in a fresh context; never retry. A hard fail is saved with `--accept-flags --notes "<what is wrong>"` (never an approval); the reviewer decides on a redo, which gets its own single generation with correction sentences (`references/REPAIR.md`).
 
 ## Delivery and stopping
 
@@ -39,4 +39,4 @@ On the first item, confirm that the image tool accepts the listed references and
 
 Codex uses `production/art/codex/CODEX_PROMPT.md`. For ChatGPT Work:
 
-> Use the Heraldry Skirmish Classic Ink Art v7 skill on xjordont/Heraldry, main. Run the preflight, doctor and status, then generate the queued illustrations in order using the exact repository prompts and each item's listed references. For each native image run check, inspect the image and its print-size preview, complete the ten-criterion QA record, and save. Deliver each image through the guarded process (or a labelled bundle), with a drift review every ten images. Retry only within each item's budget, never self-approve, and stop at NOTHING LEFT or any hard blocker. Report completed IDs, failures, commits or bundles, and the next ID. Never edit the queue, prompts, manuscript or code.
+> Use the Heraldry Skirmish Classic Ink Art v7 skill on xjordont/Heraldry, main. Run the preflight, doctor and status, then generate the queued illustrations in order using the exact repository prompts and each item's listed references. For each native image run check, inspect the image and its print-size preview, complete the ten-criterion QA record, and save. Deliver each image through the guarded process (or a labelled bundle), with a drift review every ten images. Generate once per item, never self-approve, and stop at NOTHING LEFT or any hard blocker. Report completed IDs, failures, commits or bundles, and the next ID. Never edit the queue, prompts, manuscript or code.

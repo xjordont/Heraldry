@@ -330,3 +330,16 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
     - `docs/ART_AUTOMATION.md` describes the current state only (v4/v6 history removed; it is here and in git);
     - `README.md` covers the current state, the tracks, how to work on the project, checks, builds on request and large files.
   - A reference scan found no other unreferenced files apart from workflows, tests, revision proposals and inspection records, which are kept. `tools/contact_sheet.py` is a live review tool and is now named in the README.
+- **First Codex batch round reviewed; one generation per item** (2026-10-12).
+  - **Delivery:** Codex delivered 8 images, each through `ship` and the intake, then stopped on a drift review because two images had narrow margins.
+  - **Review** (Claude Code, full-size natives):
+    - APPROVED: Deepwarden, The Ashlands, Skeleton Warrior, Dire Wolf, Orc, Gargoyle and Ranger. All are gritty bold black ink, true to their briefs and their must and avoid lines.
+    - Giant Tarantula sent back for the third time: seven feet countable plus the palps. Its brief's composition is now a high view from above, the eight legs radiating evenly, four a side, every foot on the ground. The low front view, with forelegs raised, was hiding legs.
+  - **Owner decision** ("the first image generated for each prompt is far superior to any further attempts ... change our approach to a single image generation per prompt"):
+    - `gpt_max_attempts` is 1 for every item. Generate once in a fresh context; never retry.
+    - A hard fail is saved with `--accept-flags --notes`, and the reviewer decides on a redo. A redo gets one fresh generation with at most two correction sentences.
+    - Updated: the batch card, SKILL.md, `REPAIR.md` (now corrections for redos only), the operator card, the runbook, `VISUAL_ACCEPTANCE.md` and `docs/ART_AUTOMATION.md`.
+  - **Margins:** the 8% figure-margin rule was forcing retries for no layout benefit, because the ink derivative is trimmed. A hard fail is now only a cropped subject or one touching an edge; `check` reports a narrow margin as an advisory only. A drift-review stop needs a shared style drift, not margins.
+  - **Queue:** republished with 263 items, the tarantula redo first. Only the tarantula prompt changed. The queue-count test now allows for batch approvals.
+  - **Next session:** stop after 11 images, which covers the ten reference sets not yet tested.
+  - Codex's Ranger delivery went out before its drift review; the review was done right after it and found only the margin note. No build; `dist/` still describes the RC492 build.

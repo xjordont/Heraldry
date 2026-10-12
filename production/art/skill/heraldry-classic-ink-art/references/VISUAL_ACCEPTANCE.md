@@ -30,7 +30,7 @@ Before a passing `save`, complete the QA draft that `qa ID FILE` writes for the 
 - Set `visual_review_at_print_size: true` only after inspecting the physical print-width preview.
 - Set `register_compared` to `scene`, `figure`, `still_life`, `portrait`, `creature`, `interior`, or `other` according to the artwork.
 - Complete all ten `checks` with a true/false decision and specific visible evidence. Avoid boilerplate, vague praise, or generic identical explanations.
-- Record genuine failures in `unresolved_issues`; a failed visual criterion can be shipped only as a flagged *unapproved* attempt after the queue's full retry budget.
+- Record genuine failures in `unresolved_issues`; a failed visual criterion is shipped as a flagged, *unapproved* image (`--accept-flags`), never retried; the reviewer decides on a redo.
 
 ## Batch drift assessment
 

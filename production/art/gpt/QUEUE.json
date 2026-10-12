@@ -1,190 +1,12 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-11T21:16:51+00:00",
+ "generated_at": "2026-10-12T01:30:55+00:00",
  "max_references": 3,
  "push_every": 1,
  "review_every": 10,
- "count": 270,
+ "count": 263,
  "items": [
-  {
-   "id": "ART-BAS-DEEPWARDEN",
-   "family": "bastion",
-   "register": "scene",
-   "ref_set": "bastion",
-   "title": "Deepwarden",
-   "prompt": "production/art/gpt/prompts/ART-BAS-DEEPWARDEN.txt",
-   "prompt_sha256": "46ba9622b890d074b4a681b705af7dd49a1ea6bfb0f6b35cab32b6e4327e7280",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [
-    "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "",
-   "must": [
-    "The gate is closed"
-   ],
-   "avoid": [
-    "Not a forge interior.",
-    "No visible creatures in the Dark.",
-    "Not a stone castle on a hill.",
-    "Do not show the gate open or being closed."
-   ]
-  },
-  {
-   "id": "ART-CLI-THE-ASHLANDS",
-   "family": "climate",
-   "register": "scene",
-   "ref_set": "climate",
-   "title": "The Ashlands",
-   "prompt": "production/art/gpt/prompts/ART-CLI-THE-ASHLANDS.txt",
-   "prompt_sha256": "acc27bad4bc4f1b80511d5c6f0a10296e219d4a5b51044ffb929406878124597",
-   "size": "1536x1024",
-   "print_w_in": 3.3,
-   "references": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "Not the Hollow Crown throne room or any scenario ruin.",
-    "Do not detail the patrol: tiny silhouettes only.",
-    "No inscriptions.",
-    "Not a sunny scene; heavy overcast."
-   ]
-  },
-  {
-   "id": "ART-MON-SKELETON-WARRIOR",
-   "family": "monster",
-   "register": "creature",
-   "ref_set": "monster:undead",
-   "title": "Skeleton Warrior",
-   "prompt": "production/art/gpt/prompts/ART-MON-SKELETON-WARRIOR.txt",
-   "prompt_sha256": "3aeb9fc2b93240aed54e2603cedf6869eedfc29b7b3a4fd2062d45502c107369",
-   "size": "1024x1024",
-   "print_w_in": 1.9,
-   "references": [
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "Medium: about human-sized",
-   "must": [],
-   "avoid": [
-    "Not the Undead Warrior (flesh, rust, ash, rectangular shield).",
-    "Not the Frozen Skeleton (frost).",
-    "Not the Skeleton Archer: no bow.",
-    "No ice or ash.",
-    "No other skeletons."
-   ]
-  },
-  {
-   "id": "ART-MON-DIRE-WOLF",
-   "family": "monster",
-   "register": "creature",
-   "ref_set": "monster:beast",
-   "title": "Dire Wolf",
-   "prompt": "production/art/gpt/prompts/ART-MON-DIRE-WOLF.txt",
-   "prompt_sha256": "5a64acc2ba28e5806ed14e3abb0173c2be80ef42619df88c1763958130b00ef3",
-   "size": "1024x1024",
-   "print_w_in": 1.9,
-   "references": [
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "Medium: about human-sized",
-   "must": [],
-   "avoid": [
-    "Do not make it a werewolf (no upright stance).",
-    "Do not copy Tundra Wolf (white coat, snow) or Blackfire Hound (flame).",
-    "No saddle.",
-    "No other wolves."
-   ]
-  },
-  {
-   "id": "ART-MON-ORC",
-   "family": "monster",
-   "register": "creature",
-   "ref_set": "monster:humanoid",
-   "title": "Orc",
-   "prompt": "production/art/gpt/prompts/ART-MON-ORC.txt",
-   "prompt_sha256": "b97cbf5864880e238dc0ddc245d6c1a82dbe40d71795cbecaffcd259caaff060",
-   "size": "1024x1024",
-   "print_w_in": 1.9,
-   "references": [
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "Medium: about human-sized",
-   "must": [
-    "One-handed battleaxe in one hand, round shield on the other forearm"
-   ],
-   "avoid": [
-    "Not the Orc ancestry hero: no tabard, no composed bearing, no clean armour.",
-    "Not a Bugbear (shaggy, long-armed).",
-    "No greataxe and no sword."
-   ]
-  },
-  {
-   "id": "ART-MON-GARGOYLE",
-   "family": "monster",
-   "register": "creature",
-   "ref_set": "monster:magical",
-   "title": "Gargoyle",
-   "prompt": "production/art/gpt/prompts/ART-MON-GARGOYLE.txt",
-   "prompt_sha256": "4738ef0fd0199628b2719ac0a104b399ea475cd375ff3b9fa485b9d1f59db7eb",
-   "size": "1024x1024",
-   "print_w_in": 1.9,
-   "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "Medium: about human-sized",
-   "must": [
-    "Stone wings: it flies"
-   ],
-   "avoid": [
-    "Not the Stone Sentinel (a humanoid construct).",
-    "No fire or glowing eyes."
-   ]
-  },
-  {
-   "id": "ART-CLA-RANGER",
-   "family": "class",
-   "register": "person",
-   "ref_set": "person",
-   "title": "Ranger",
-   "prompt": "production/art/gpt/prompts/ART-CLA-RANGER.txt",
-   "prompt_sha256": "57ee380f07fede9930963fff255801389467e1b01e7341088a9f9877cb20a022",
-   "size": "1024x1536",
-   "print_w_in": 1.9,
-   "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
-   ],
-   "max_attempts": 3,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "Not the Assassin: no hooded crouch, no dagger-first pose.",
-    "No animal companion.",
-    "Do not give it a sword."
-   ]
-  },
   {
    "id": "ART-BAC-SMUGGLER",
    "family": "background",
@@ -200,7 +22,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -224,7 +46,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -248,7 +70,7 @@
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -273,7 +95,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [
     "Exactly eight walking legs, two pincers and one tail"
@@ -299,7 +121,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -324,7 +146,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [
     "Three times a man's height"
@@ -351,7 +173,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -376,7 +198,7 @@
     "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [
     "Only the six named weapons"
@@ -403,7 +225,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -428,7 +250,7 @@
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -454,7 +276,7 @@
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -479,7 +301,7 @@
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -504,7 +326,7 @@
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -529,7 +351,7 @@
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -554,7 +376,7 @@
     "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -579,7 +401,7 @@
     "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -604,7 +426,7 @@
     "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -629,7 +451,7 @@
     "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
     "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -654,7 +476,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -678,7 +500,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -702,7 +524,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -727,7 +549,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -751,7 +573,7 @@
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [
     "Exactly eight legs, four a side"
@@ -778,7 +600,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -802,7 +624,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -826,7 +648,7 @@
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -850,7 +672,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -875,7 +697,7 @@
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -899,7 +721,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -923,7 +745,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -947,7 +769,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -971,7 +793,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -995,7 +817,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1019,7 +841,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -1043,7 +865,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -1067,7 +889,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1091,7 +913,7 @@
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [
     "Four legs"
@@ -1117,7 +939,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -1142,7 +964,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [
     "A plain wooden quarterstaff is its only weapon"
@@ -1170,7 +992,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [
     "Two weapons only: a drawn shortsword and a hand crossbow"
@@ -1196,7 +1018,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -1220,7 +1042,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -1245,7 +1067,7 @@
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -1269,7 +1091,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1293,7 +1115,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -1319,7 +1141,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -1343,7 +1165,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [
     "Exactly one central eye and four eyestalks"
@@ -1369,7 +1191,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1393,7 +1215,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [
     "Exactly six legs"
@@ -1419,7 +1241,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -1443,7 +1265,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -1467,7 +1289,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [
     "A longbow taller than the archer"
@@ -1493,7 +1315,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1517,7 +1339,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1541,7 +1363,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1566,7 +1388,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -1590,7 +1412,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [
     "Exactly two legs; the wings double as forelimbs"
@@ -1616,7 +1438,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1640,7 +1462,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -1664,7 +1486,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1688,7 +1510,7 @@
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [
     "Two membrane wings spread: it flies"
@@ -1715,7 +1537,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [
     "Exactly eight legs"
@@ -1741,7 +1563,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -1765,7 +1587,7 @@
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1789,7 +1611,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -1805,7 +1627,7 @@
    "ref_set": "monster:vermin",
    "title": "Giant Tarantula",
    "prompt": "production/art/gpt/prompts/ART-MON-GIANT-TARANTULA.txt",
-   "prompt_sha256": "970726d2a0f88993c0c4b566ae5c601cc73f45d121f2a656dbee5e009d186a6e",
+   "prompt_sha256": "93f0fa234f4424331338914ba32091547681e581c7bcb80bfdcff85fafd8f5b7",
    "size": "1024x1024",
    "print_w_in": 1.9,
    "references": [
@@ -1813,7 +1635,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [
     "Exactly eight legs"
@@ -1839,7 +1661,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [
     "Exactly four eyes, in two pairs"
@@ -1865,7 +1687,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1889,7 +1711,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -1913,7 +1735,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -1938,7 +1760,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [
     "Small and knee-high, with gnarled staff and fetishes"
@@ -1964,7 +1786,7 @@
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -1988,7 +1810,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -2012,7 +1834,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [
     "Human hands with clawed nails; bird talons on the feet",
@@ -2038,7 +1860,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [
     "At least five necks, each with a head"
@@ -2064,7 +1886,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -2088,7 +1910,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2112,7 +1934,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -2136,7 +1958,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -2161,7 +1983,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -2186,7 +2008,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2210,7 +2032,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2234,7 +2056,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2258,7 +2080,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2282,7 +2104,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [
     "Bat wings: it flies"
@@ -2307,7 +2129,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2333,7 +2155,7 @@
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2357,7 +2179,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -2381,7 +2203,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -2405,7 +2227,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2429,7 +2251,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2453,7 +2275,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2478,7 +2300,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -2502,7 +2324,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2526,7 +2348,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -2551,7 +2373,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -2576,7 +2398,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -2601,7 +2423,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2625,7 +2447,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -2649,7 +2471,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2673,7 +2495,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2697,7 +2519,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -2721,7 +2543,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2745,7 +2567,7 @@
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [
     "Six thin legs"
@@ -2771,7 +2593,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2795,7 +2617,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -2819,7 +2641,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2844,7 +2666,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -2869,7 +2691,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -2893,7 +2715,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [
     "Exactly four face tentacles"
@@ -2919,7 +2741,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2944,7 +2766,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2968,7 +2790,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -2992,7 +2814,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -3016,7 +2838,7 @@
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -3041,7 +2863,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -3065,7 +2887,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -3091,7 +2913,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -3116,7 +2938,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [
     "A cube shape with flat faces"
@@ -3142,7 +2964,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [
     "Looks like a stalactite at first glance"
@@ -3168,7 +2990,7 @@
     "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [
     "A hooked beak"
@@ -3194,7 +3016,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [
     "Charging on all fours"
@@ -3220,7 +3042,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -3244,7 +3066,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -3268,7 +3090,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -3292,7 +3114,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -3316,7 +3138,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -3341,7 +3163,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -3365,7 +3187,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -3389,7 +3211,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -3413,7 +3235,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [],
    "avoid": [
@@ -3437,7 +3259,7 @@
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -3461,7 +3283,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3487,7 +3309,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3512,7 +3334,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3537,7 +3359,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3561,7 +3383,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3586,7 +3408,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3610,7 +3432,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3635,7 +3457,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3659,7 +3481,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3683,7 +3505,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3707,7 +3529,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3731,7 +3553,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3757,7 +3579,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3782,7 +3604,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3807,7 +3629,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3831,7 +3653,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3855,7 +3677,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [
     "Small, about child height, with adult proportions"
@@ -3882,7 +3704,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3906,7 +3728,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3930,7 +3752,7 @@
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -3954,7 +3776,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -3979,7 +3801,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [
     "Androgynous presentation (they/them)"
@@ -4006,7 +3828,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -4031,7 +3853,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -4056,7 +3878,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -4081,7 +3903,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -4106,7 +3928,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
    "must": [
     "The Greythorn gate is timber-walled"
@@ -4133,7 +3955,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -4158,7 +3980,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -4183,7 +4005,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -4208,7 +4030,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Medium: about human-sized",
    "must": [],
    "avoid": [
@@ -4233,7 +4055,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Small: smaller than a human",
    "must": [],
    "avoid": [
@@ -4258,7 +4080,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -4283,7 +4105,7 @@
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
    "must": [],
    "avoid": [
@@ -4308,7 +4130,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4333,7 +4155,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4358,7 +4180,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4383,7 +4205,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4408,7 +4230,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4433,7 +4255,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4458,7 +4280,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4483,7 +4305,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4508,7 +4330,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4533,7 +4355,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4558,7 +4380,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4585,7 +4407,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4610,7 +4432,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4635,7 +4457,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4660,7 +4482,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4685,7 +4507,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4710,7 +4532,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4735,7 +4557,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4760,7 +4582,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4785,7 +4607,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4810,7 +4632,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4835,7 +4657,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [
     "The book pile reads as books"
@@ -4862,7 +4684,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4887,7 +4709,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4912,7 +4734,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4937,7 +4759,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [
     "The emissary looks like a courier or diplomat"
@@ -4964,7 +4786,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -4989,7 +4811,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5014,7 +4836,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5039,7 +4861,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5064,7 +4886,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5089,7 +4911,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5114,7 +4936,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5139,7 +4961,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5164,7 +4986,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5189,7 +5011,7 @@
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5214,7 +5036,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5238,7 +5060,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5263,7 +5085,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5288,7 +5110,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5313,7 +5135,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5338,7 +5160,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5363,7 +5185,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5388,7 +5210,7 @@
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5413,7 +5235,7 @@
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5438,7 +5260,7 @@
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5463,7 +5285,7 @@
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5488,7 +5310,7 @@
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5513,7 +5335,7 @@
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5538,7 +5360,7 @@
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5564,7 +5386,7 @@
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5589,7 +5411,7 @@
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5614,7 +5436,7 @@
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5639,7 +5461,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5663,7 +5485,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5688,7 +5510,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5712,7 +5534,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5736,7 +5558,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5760,7 +5582,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5784,7 +5606,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5808,7 +5630,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5832,7 +5654,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5856,7 +5678,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5880,7 +5702,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5904,7 +5726,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5928,7 +5750,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5952,7 +5774,7 @@
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -5976,7 +5798,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6000,7 +5822,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6024,7 +5846,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6048,7 +5870,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6072,7 +5894,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6096,7 +5918,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6120,7 +5942,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6144,7 +5966,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6168,7 +5990,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6192,7 +6014,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6216,7 +6038,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6240,7 +6062,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6264,7 +6086,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6288,7 +6110,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6312,7 +6134,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6336,7 +6158,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6360,7 +6182,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6384,7 +6206,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6408,7 +6230,7 @@
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6432,7 +6254,7 @@
     "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
     "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
    ],
-   "max_attempts": 3,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6457,7 +6279,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6482,7 +6304,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6507,7 +6329,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6532,7 +6354,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6557,7 +6379,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [
     "Ratkin read as upright rat-folk"
@@ -6584,7 +6406,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6609,7 +6431,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6634,7 +6456,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6659,7 +6481,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
@@ -6683,7 +6505,7 @@
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
-   "max_attempts": 5,
+   "max_attempts": 1,
    "size_class": "",
    "must": [],
    "avoid": [
