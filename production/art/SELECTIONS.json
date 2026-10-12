@@ -1024,5 +1024,38 @@
    "max_print_w_in_300ppi": 4.177
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-BEASTMAN": {
+  "family": "monster",
+  "title": "Beastman",
+  "heading_id": "h-beastman-minion",
+  "route": "gpt",
+  "spec_sha256": "d6355f0c64ad9a44fa8c812081ab4570f19bd5947f6a8d51f5f64d01e7c2a583",
+  "prompt_sha256": "dd439dc28b08edbb1319b7fe550e7b89d6c918e3d39df6152fcbf18d6071893e",
+  "status": "received",
+  "received_at": "2026-10-12T06:40:52+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Tripwire warns 11 percent mid-tones; image is 1254 square vs 1024 target.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-BEASTMAN.png",
+   "sha256": "9890d6e4221e8475fde0b73f2a523e9a9d27bc1aeee0fb372413c962da73633b",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-BEASTMAN.png",
+   "sha256": "27eab9b0aeec9eb4572132a987833c79be59c4b007cf8abc983d0c7da3b60155",
+   "px": [
+    1122,
+    1191
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.74
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
