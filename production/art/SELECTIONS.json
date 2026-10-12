@@ -6016,5 +6016,38 @@
    "max_print_w_in_300ppi": 5.093
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI": {
+  "family": "scenario",
+  "title": "A.4 Quickstart Scenario: The Broken Courier",
+  "heading_id": "h-a4-quickstart-scenario-the-broken-courier",
+  "route": "gpt",
+  "spec_sha256": "f91ea09b51a04d69e88cdf5ec41a4c63c3b5e38b6e4b2a4393648e98cfcc0616",
+  "prompt_sha256": "8ee200e2d6b39aa1750a9a4b55bedb287a3672b61cce186aa00f73a327f1c942",
+  "status": "received",
+  "received_at": "2026-10-12T22:36:24+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "The broken cart wheel is cropped at left and roadside marks crowd the perimeter.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI.png",
+   "sha256": "fb76f84f27be372450bf081e3bf366c1ccabdddbf6ff46c5318f5f45d5f1794e",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI.png",
+   "sha256": "a33140c84d7d21ace58d589d66b095d30c9cc691f4f17920b14c9db4379e0b95",
+   "px": [
+    1503,
+    960
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.01
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
