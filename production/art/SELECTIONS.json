@@ -166,5 +166,38 @@
    "max_print_w_in_300ppi": 3.397
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-GARGOYLE": {
+  "family": "monster",
+  "title": "Gargoyle",
+  "heading_id": "h-gargoyle-skirmisher",
+  "route": "gpt",
+  "spec_sha256": "0c25595efed661104f38ca4142324b62006d9ffe728ad74014a4ca25f44d613c",
+  "prompt_sha256": "4738ef0fd0199628b2719ac0a104b399ea475cd375ff3b9fa485b9d1f59db7eb",
+  "status": "received",
+  "received_at": "2026-10-12T04:48:35+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-GARGOYLE.png",
+   "sha256": "3b6714b8b22a26ee3644e35aed31754260ecb9eee266c70567bb07142789d4cb",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-GARGOYLE.png",
+   "sha256": "58c43b227fedf41cdd712613bb87e2ba45dca67a8bb76e600a69ece858c794e9",
+   "px": [
+    1178,
+    1202
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.927
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
