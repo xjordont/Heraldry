@@ -3939,5 +3939,38 @@
    "max_print_w_in_300ppi": 3.21
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-TOMB-GUARDIAN": {
+  "family": "monster",
+  "title": "Tomb Guardian",
+  "heading_id": "h-tomb-guardian-soldier",
+  "route": "gpt",
+  "spec_sha256": "00e0e84d8f5bc00405ca9c8cdfc7d9cc65597fa2048b68330609e3ab4f43191d",
+  "prompt_sha256": "d912d4d5875766c50313757790a5b0bef0ada83136120c0cd257e4cc584a4ad1",
+  "status": "received",
+  "received_at": "2026-10-12T14:57:27+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Checker detected stray edge marks (0.10%); the figure is not cropped and does not touch an edge.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-TOMB-GUARDIAN.png",
+   "sha256": "ff89946b49ce211cf9971ca477924ddcf22c62f5e411aeed51dabfe50ec91f75",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-TOMB-GUARDIAN.png",
+   "sha256": "35829d0ffb9f45e85488005169b5c9c2712c99109e604923a73b54659c21768f",
+   "px": [
+    818,
+    1241
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.727
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
