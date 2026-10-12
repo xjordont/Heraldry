@@ -5323,5 +5323,38 @@
    "max_print_w_in_300ppi": 3.263
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-ELF": {
+  "family": "ancestry",
+  "title": "Elf",
+  "heading_id": "h-elf",
+  "route": "gpt",
+  "spec_sha256": "6294e35ae144a386e4ac442c437997596aef468e74a78e9bcdc2f4af7f22c42b",
+  "prompt_sha256": "68c319f4e0af1cd8b0dca8c30dafeaa4f0a1abef390e14b7ea0087f3c9d519a1",
+  "status": "received",
+  "received_at": "2026-10-12T17:58:30+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-ELF.png",
+   "sha256": "c09afc302a6086352c8c89bb0c3ea7af792326ed94731b93f5d36c15bb3ae89b",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-ELF.png",
+   "sha256": "aaa4d898e491f7346974de46b909557cb9b64bf9d6ce284d846f3ac5e4aaa372",
+   "px": [
+    842,
+    1466
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.807
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
