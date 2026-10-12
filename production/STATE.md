@@ -398,3 +398,14 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - 24 flanged mace is unattached: the cap of 4 forced one out, and it is the cleanest still life.
   - 27 carries a pseudo-writing risk, accepted by the owner. The queue was republished, with prompts unchanged.
   - Remaining for four unique images in every set: cover, chapter and world 3 each; vermin, humanoid and magical 2 each; beast 2; scenario 1; boss 1.
+- **Fourteen more owner references** (owner, 2026-10-12: fifteen images, no text; the fifteenth was STYLE-REF-53 again, byte-identical, and was skipped).
+  - Stored unchanged as STYLE-REF-54 to 67, all distinct by perceptual hash. Placed toward four unique images per set:
+    - humanoid: 62 ratman and 66 trolls;
+    - boss: 60 skeletal standard-bearer;
+    - scenario: 67 sewer ghoul;
+    - world: 58 waterfall ruins and 55 siege wall-climb;
+    - chapter: 65 ship and dead tree and 59 harbour wharf.
+  - **Banked:** 54 dwarf, 57 swordswoman (signed), 61 herbalist, 63 wizard, 56 weapons sheet and 64 armour sheet. Their sets (person, tradition, item) are full.
+  - **Caveats:** grey tone in 55, 58, 59 and 62; a dark backdrop on 62; a monogram on 65.
+  - **Result:** 57 distinct images in use. Still shared: cover (29, 11, 43), chapter (43), world (44), beast (38, 16), vermin (16, 18), magical (28, 18). Eleven more images give every set four unique images.
+  - Scenic references were added to the figure test. The queue was republished, with prompts unchanged.

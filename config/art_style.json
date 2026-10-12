@@ -182,7 +182,7 @@
   "ART-ANC-DWARF"
  ],
  "gpt_reference_sets": {
-  "note": "Each queue item carries at most max_refs reference images. Precedence: kind_sets (monsters, by ID) over family_sets (by family) over sets (by register). A candidate is a repo path (must exist) or an anchor ID (used once approved); the item's own ID is skipped. Only owner samples and public-domain prints are attached, never generated images. Mapping v7 (owner instruction 2026-10-11: reanalyse all references and map them optimally): every set draws on the gritty core (bold rough contours, heavy blacks, scratchy hatching); clean-line pieces appear only where their subject is unmatched (36 insect anatomy, 20 armoury, 15 weapons, 02 city); pieces with grey tone, screen tone, stipple fields, lettering or tiny size are banked but not attached. Owner 2026-10-12 (\"promote them if there is room ... include risky\"): max_refs raised to 4 and one banked image added to its most relevant set, including pieces with screen tone, stipple, grey paper tone or a monogram, accepting that risk; the grey-wash mood pieces and the map stay unattached. Owner 2026-10-12 (later): 22 wolf pack removed from the beast set; eight new owner samples added as STYLE-REF-45..52 (52 lich and 51 mummy replace 38 gnoll in undead, which stays in beast and humanoid; 50 to magical; 45 bastion; 46 chapter; 47 cover; 49 boss); 48 is banked (no slot, and its black box background could teach a frame). Owner 2026-10-12 (later): STYLE-REF-53 frost harbour city replaces 09 in bastions, so the bastion set is four images used nowhere else. Owner 2026-10-12 (later): 22 wolf pack restored to the beast set (accepted scenery risk). Owner 2026-10-12 (later): 40 scythe, 27 scroll case and 33 bone cross join items; the item set becomes 15, 40, 27, 33 (19 and 25 stay in background, which is now unique; 24 flanged mace is unattached as the cleanest still life).",
+  "note": "Each queue item carries at most max_refs reference images. Precedence: kind_sets (monsters, by ID) over family_sets (by family) over sets (by register). A candidate is a repo path (must exist) or an anchor ID (used once approved); the item's own ID is skipped. Only owner samples and public-domain prints are attached, never generated images. Mapping v7 (owner instruction 2026-10-11: reanalyse all references and map them optimally): every set draws on the gritty core (bold rough contours, heavy blacks, scratchy hatching); clean-line pieces appear only where their subject is unmatched (36 insect anatomy, 20 armoury, 15 weapons, 02 city); pieces with grey tone, screen tone, stipple fields, lettering or tiny size are banked but not attached. Owner 2026-10-12 (\"promote them if there is room ... include risky\"): max_refs raised to 4 and one banked image added to its most relevant set, including pieces with screen tone, stipple, grey paper tone or a monogram, accepting that risk; the grey-wash mood pieces and the map stay unattached. Owner 2026-10-12 (later): 22 wolf pack removed from the beast set; eight new owner samples added as STYLE-REF-45..52 (52 lich and 51 mummy replace 38 gnoll in undead, which stays in beast and humanoid; 50 to magical; 45 bastion; 46 chapter; 47 cover; 49 boss); 48 is banked (no slot, and its black box background could teach a frame). Owner 2026-10-12 (later): STYLE-REF-53 frost harbour city replaces 09 in bastions, so the bastion set is four images used nowhere else. Owner 2026-10-12 (later): 22 wolf pack restored to the beast set (accepted scenery risk). Owner 2026-10-12 (later): 40 scythe, 27 scroll case and 33 bone cross join items; the item set becomes 15, 40, 27, 33 (19 and 25 stay in background, which is now unique; 24 flanged mace is unattached as the cleanest still life). Owner 2026-10-12 (later): fourteen more owner samples, STYLE-REF-54..67. Placed toward four unique images per set: humanoid 62 ratman and 66 trolls (replacing 41 and 04, which stay in person and undead); boss 60 skeleton standard-bearer (replacing 16, which stays in magical); scenario 67 sewer ghoul (replacing 44); world 58 waterfall ruins and 55 siege wall-climb (replacing 43 and 09); chapter 65 ship and dead tree and 59 harbour wharf (replacing 29 and 44). Banked: 54 dwarf, 57 swordswoman (signed), 61 herbalist, 63 wizard, 56 weapons sheet and 64 armour sheet (no free slot in person, tradition or item).",
   "max_refs": 4,
   "register_of_family": {
    "cover": "scene",
@@ -231,16 +231,16 @@
     "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg"
    ],
    "chapter": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "world": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg"
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
    "climate": [
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
@@ -257,8 +257,8 @@
    "scenario": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "campaign": [
     "assets/art/style/STYLE-REF-20-armoury-interior.jpg",
@@ -267,10 +267,10 @@
     "assets/art/style/STYLE-REF-23-dungeon-arches-screentone.jpg"
    ],
    "boss": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "tradition": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
@@ -384,9 +384,9 @@
    "humanoid": {
     "refs": [
      "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+     "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
     ],
     "ids": [
      "ART-MON-BANDIT",

@@ -1,5 +1,5 @@
 {
- "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses. A second batch added STYLE-REF-28..40 to the bank (one more image was STYLE-REF-26 again, byte-identical, and was not stored twice). 2026-10-11: on owner instruction Claude searched for public-domain examples to fill the remaining gaps and added STYLE-REF-41..44 (Callot, Piranesi, Haden; Art Institute of Chicago CC0). Their scans were levelled and plate numbers or signatures removed. 2026-10-12: the owner promoted most of the bank (max four references per item); each entry's 'use' now states the sets it is attached to, generated from config/art_style.json. 2026-10-12 (later): STYLE-REF-22 removed from the beast set by the owner; eight more owner samples added as STYLE-REF-45..52.",
+ "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses. A second batch added STYLE-REF-28..40 to the bank (one more image was STYLE-REF-26 again, byte-identical, and was not stored twice). 2026-10-11: on owner instruction Claude searched for public-domain examples to fill the remaining gaps and added STYLE-REF-41..44 (Callot, Piranesi, Haden; Art Institute of Chicago CC0). Their scans were levelled and plate numbers or signatures removed. 2026-10-12: the owner promoted most of the bank (max four references per item); each entry's 'use' now states the sets it is attached to, generated from config/art_style.json. 2026-10-12 (later): STYLE-REF-22 removed from the beast set by the owner; eight more owner samples added as STYLE-REF-45..52. 2026-10-12 (later): fourteen more owner samples added as STYLE-REF-54..67 (a fifteenth was STYLE-REF-53 again, byte-identical, and was not stored twice).",
  "refs": [
   {
    "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
@@ -29,7 +29,7 @@
     1945
    ],
    "sha256": "134078725385cca7220f9757f98672f27f3a26dfe31816e359a7ad59bc4f8d21",
-   "use": "attached to reference sets: creature, monster:humanoid, monster:undead; never placed or packaged",
+   "use": "attached to reference sets: creature, monster:undead; never placed or packaged",
    "role": "figure: enthroned skeleton king; heavy brush blacks, rough dry-brush contour"
   },
   {
@@ -84,7 +84,7 @@
     732
    ],
    "sha256": "8a797125940c3f7def70c80ab4b819812f54116a93daabc3acf89f7cc9e50cd8",
-   "use": "attached to reference sets: scenario, scene, world; never placed or packaged",
+   "use": "attached to reference sets: scenario, scene; never placed or packaged",
    "role": "scene: skeleton melee; comic-ink spot blacks, scratchy action texture"
   },
   {
@@ -212,6 +212,110 @@
    "role": "Frozen harbour city on cliffs: walls, castle, bridges, ships in ice, dense crowds",
    "caveat": "appears machine-made and very dense (close to the rejected hyper-detailed look), with some grey tone; attached on the owner's instruction like STYLE-REF-11",
    "use": "attached to reference sets: bastion; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1685,
+    1371
+   ],
+   "sha256": "eb7d06f58c059953aeeeed8722d78f8846b9b7eca3b3405edd2fd98ddec08fd7",
+   "category": "scene: siege, soldiers scaling a wall (world)",
+   "role": "Soldiers climbing a battlement under defenders",
+   "caveat": "grey tone fills and a machine-made look",
+   "use": "attached to reference sets: world; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1431,
+    2164
+   ],
+   "sha256": "6394a9fe84f465a8229c13d0745f7fbb72d41404945424061c9bdace5898af11",
+   "category": "scene: flight from collapsing ruins (world)",
+   "role": "Group fleeing beneath falling masonry and spray, heavy blacks",
+   "caveat": "very dark and dense, grey tone (27% mid-tones)",
+   "use": "attached to reference sets: world; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1716,
+    1274
+   ],
+   "sha256": "8c43be322bac1b3a3162341cfbcbb03631bd1ff4770601d1a4270b7383fd2c7d",
+   "category": "scene: harbour wharf (chapter)",
+   "role": "Timber warehouses, cranes, moored ships and gulls, etched crosshatching",
+   "caveat": "greyish crosshatch (26% mid-tones)",
+   "use": "attached to reference sets: chapter; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    689,
+    1865
+   ],
+   "sha256": "115dcc477630e782e900c9339ec490b22e3768242544ca84bb7499635edb959b",
+   "category": "scene: skeletal standard-bearer leading an undead host (boss)",
+   "role": "Skeleton lord with banner and sword at the head of helmeted undead",
+   "caveat": "old-school line; narrow tall format",
+   "use": "attached to reference sets: boss; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1171,
+    1776
+   ],
+   "sha256": "7db47d7bcb045cfd2032e2cbdbb98f55df5ccabfff23c9cdccc3c78e70d8f669",
+   "category": "creature: ratman warrior (humanoid)",
+   "role": "Armoured rat-folk soldier with sword and shield before a dark crowd",
+   "caveat": "dark backdrop with silhouettes behind a figure; grey tone (29% mid-tones)",
+   "use": "attached to reference sets: monster:humanoid; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1935,
+    1439
+   ],
+   "sha256": "1d3666f702d917be7174b9fcffd05444e2f31b1efc47fad6b01780c2caf52132",
+   "category": "scene: ship off a rocky coast (chapter)",
+   "role": "Sailing ship framed by a dead tree and black foreground rocks",
+   "caveat": "monogram and date lower left (lettering risk)",
+   "use": "attached to reference sets: chapter; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1489,
+    1509
+   ],
+   "sha256": "bbe46169e310eb560364e638e6c6f0c543e638f03c310318b62336272b71691e",
+   "category": "creature: troll pair (humanoid)",
+   "role": "Two hulking trolls with club and spear, isolated, flies and stink lines",
+   "caveat": "none noted",
+   "use": "attached to reference sets: monster:humanoid; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1748,
+    1142
+   ],
+   "sha256": "cc06b23a210606e4aa14735495395b98c3bf2c95219f29fe0c144b43f566d25b",
+   "category": "scene: sewer ambush (scenario)",
+   "role": "Slime-dripping hooded ghoul meets a soldier on a sewer ledge, dense pen",
+   "caveat": "dense texture",
+   "use": "attached to reference sets: scenario; never placed or packaged"
   }
  ],
  "inspiration_only": [
@@ -320,7 +424,7 @@
    "category": "creature (non-undead)",
    "role": "Winged armoured dragon-man on a rock; heavy spot blacks, isolated on white",
    "caveat": "",
-   "use": "attached to reference sets: boss, creature, monster:beast, monster:magical, monster:vermin; never placed or packaged"
+   "use": "attached to reference sets: creature, monster:beast, monster:magical, monster:vermin; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg",
@@ -489,7 +593,7 @@
    "category": "magic (divine) / scene",
    "role": "Warrior-priest calling down fire on lizardfolk silhouettes; heavy black ground, open white sky",
    "caveat": "",
-   "use": "attached to reference sets: chapter, cover, tradition; never placed or packaged"
+   "use": "attached to reference sets: cover, tradition; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
@@ -646,6 +750,84 @@
    "role": "Bearded warrior with a dagger against a black night with snow",
    "caveat": "black rectangular background box: could teach a frame; a bust, not full length",
    "use": "on file, not attached to any generation set; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1170,
+    1723
+   ],
+   "sha256": "273d8259de760222c0638827413a4a8a16d20eac6da8be69cdf635205b3c2b75",
+   "category": "person: dwarf warrior",
+   "role": "Bald bearded dwarf with round shield and ornate axe, isolated",
+   "caveat": "loose sketchy line, slight blur",
+   "use": "on file, not attached to any generation set; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-56-weapons-sheet.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1835,
+    2287
+   ],
+   "sha256": "fe12cd0b5738b918bca0bd8c143b5b184686034f7954f5f98abc1537f15fdfb3",
+   "category": "still life: weapons sheet",
+   "role": "Swords, daggers, axes, flail, maces and hammers in rows, bold ink",
+   "caveat": "sheet layout: never copy the grid",
+   "use": "on file, not attached to any generation set; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    862,
+    2222
+   ],
+   "sha256": "8dced2e530eaba3e5bf119c9f22996a64f8cba377b0239ca9bc3d2f00456ff88",
+   "category": "person: armoured swordswoman",
+   "role": "Woman in ornate scrollwork armour resting on a sword",
+   "caveat": "signature lower right (lettering risk)",
+   "use": "on file, not attached to any generation set; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-61-herbalist-kneeling.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1972,
+    1506
+   ],
+   "sha256": "d6897980106d529daf0ec29857571e10148a664e6be62136b7efc982ac378adc",
+   "category": "person: herbalist kneeling",
+   "role": "Bearded man kneeling to pick a plant in long grass, bold black shading",
+   "caveat": "none noted",
+   "use": "on file, not attached to any generation set; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1492,
+    1580
+   ],
+   "sha256": "baac1f865e60eb4fdaca8be57b05fde26f47d24d2b4860fdde7da9f9cd48bb46",
+   "category": "person: wizard casting",
+   "role": "Robed wizard with conical hat, flame in his hand, line-ruled background",
+   "caveat": "ruled-line background",
+   "use": "on file, not attached to any generation set; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-64-armour-sheet.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1898,
+    1324
+   ],
+   "sha256": "bf76668d71d2390cd09709f3d3d4431753640e30ce4f1a4836dd1d843214bcec",
+   "category": "still life: armour sheet",
+   "role": "Helmets, gambeson, brigandine, mail with tabard and plate cuirass",
+   "caveat": "sheet layout: never copy the grid",
+   "use": "on file, not attached to any generation set; never placed or packaged"
   }
  ],
  "public_domain": [
@@ -660,7 +842,7 @@
    "sha256": "e6231f466212226380803ae95a46a75c42821fd6272460c0a8617207c5bb61a4",
    "source": "Art Institute of Chicago, artwork 18054 ('Beggar without Hat or Shoes, plate twelve from The Beggars', Jacques Callot), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
    "processing": "levelled to black ink on white paper, cropped to the image, plate signature or number painted out",
-   "use": "attached to reference sets: monster:humanoid, person; never placed or packaged"
+   "use": "attached to reference sets: person; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg",
@@ -686,7 +868,7 @@
    "sha256": "e9e860585ceca7c3aca82a132b846ea2e6c2a03377c986d0cdc8180a0b8f7c5b",
    "source": "Art Institute of Chicago, artwork 7358 ('The Drawbridge, plate 7 from Imaginary Prisons', Giovanni Battista Piranesi), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
    "processing": "levelled to black ink on white paper, cropped to the image",
-   "use": "attached to reference sets: campaign, chapter, cover, world; never placed or packaged"
+   "use": "attached to reference sets: campaign, chapter, cover; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
@@ -699,7 +881,7 @@
    "sha256": "2dce2fcd003736f981b5f7372d275441cb71e198c2f19ad982d771d1ddd5e630",
    "source": "Art Institute of Chicago, artwork 7707 ('Challow Farm', Francis Seymour Haden), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
    "processing": "levelled to black ink on white paper, cropped to the image, plate signature or number painted out",
-   "use": "attached to reference sets: chapter, climate, scenario, world; never placed or packaged"
+   "use": "attached to reference sets: climate, world; never placed or packaged"
   }
  ]
 }

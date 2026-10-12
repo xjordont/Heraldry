@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-12T03:05:43+00:00",
+ "generated_at": "2026-10-12T03:31:06+00:00",
  "max_references": 4,
  "push_every": 1,
  "review_every": 10,
@@ -127,9 +127,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -309,8 +309,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -333,10 +333,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -361,10 +361,10 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg"
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -415,10 +415,10 @@
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -749,9 +749,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -774,9 +774,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -853,9 +853,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1004,9 +1004,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -1079,9 +1079,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1129,9 +1129,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -1232,9 +1232,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1261,9 +1261,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1313,9 +1313,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1545,9 +1545,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1673,9 +1673,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -2009,9 +2009,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2034,9 +2034,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2060,9 +2060,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2137,9 +2137,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2292,9 +2292,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2343,9 +2343,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2368,9 +2368,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2393,9 +2393,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2444,9 +2444,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2496,9 +2496,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2571,9 +2571,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2622,9 +2622,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2672,9 +2672,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2698,9 +2698,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2724,9 +2724,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2750,9 +2750,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2850,9 +2850,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2952,9 +2952,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2977,9 +2977,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3003,9 +3003,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -3029,9 +3029,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -3107,9 +3107,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3132,9 +3132,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3157,9 +3157,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3395,9 +3395,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -3422,9 +3422,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -3447,9 +3447,9 @@
    "print_w_in": 1.9,
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
-    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
+    "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
+    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -4239,10 +4239,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4265,10 +4265,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -4293,10 +4293,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4319,10 +4319,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4345,10 +4345,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4371,10 +4371,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4397,10 +4397,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -4425,10 +4425,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4451,10 +4451,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -4477,10 +4477,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -4503,10 +4503,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -4529,10 +4529,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -4555,10 +4555,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4581,10 +4581,10 @@
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
     "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
-    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+    "assets/art/style/STYLE-REF-60-skeleton-standard-bearer.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4609,8 +4609,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4635,8 +4635,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4661,8 +4661,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4687,8 +4687,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4713,8 +4713,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4739,8 +4739,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4765,8 +4765,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4791,8 +4791,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4817,8 +4817,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4843,8 +4843,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4869,8 +4869,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4897,8 +4897,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4923,8 +4923,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4949,8 +4949,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4975,8 +4975,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5001,8 +5001,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5027,8 +5027,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5053,8 +5053,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5079,8 +5079,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5105,8 +5105,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5131,8 +5131,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5157,8 +5157,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5185,8 +5185,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5211,8 +5211,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5237,8 +5237,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5263,8 +5263,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5291,8 +5291,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5317,8 +5317,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5343,8 +5343,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5369,8 +5369,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5395,8 +5395,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5421,8 +5421,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5447,8 +5447,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5473,8 +5473,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5499,8 +5499,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5525,8 +5525,8 @@
    "references": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
+    "assets/art/style/STYLE-REF-67-ghoul-sewer-ambush.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5549,10 +5549,10 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg"
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5574,10 +5574,10 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg"
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5600,10 +5600,10 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg"
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5626,10 +5626,10 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg"
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5652,10 +5652,10 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg"
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5678,10 +5678,10 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg"
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5704,10 +5704,10 @@
    "size": "1536x1024",
    "print_w_in": 3.3,
    "references": [
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
-    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg"
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
+    "assets/art/style/STYLE-REF-58-waterfall-ruins-flight.jpg",
+    "assets/art/style/STYLE-REF-55-siege-wall-climb.jpg",
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6843,10 +6843,10 @@
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6869,10 +6869,10 @@
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6895,10 +6895,10 @@
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6921,10 +6921,10 @@
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6947,10 +6947,10 @@
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6975,10 +6975,10 @@
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -7001,10 +7001,10 @@
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -7027,10 +7027,10 @@
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -7053,10 +7053,10 @@
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -7078,10 +7078,10 @@
    "size": "1536x1024",
    "print_w_in": 4.5,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
-    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
+    "assets/art/style/STYLE-REF-59-harbour-wharf-etching.jpg",
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
