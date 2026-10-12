@@ -9,3 +9,4 @@ assets/art/ink/*.png filter=lfs diff=lfs merge=lfs -text
 # Art queue, prompts and skill are hashed as LF text: keep LF on every platform (Windows/Codex checkouts).
 production/art/gpt/** text eol=lf
 production/art/skill/heraldry-classic-ink-art/** text eol=lf
+assets/art/marks/**/*.png filter=lfs diff=lfs merge=lfs -text
