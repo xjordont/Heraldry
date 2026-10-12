@@ -3807,5 +3807,38 @@
    "max_print_w_in_300ppi": 3.827
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-SWAMP-HAG": {
+  "family": "monster",
+  "title": "Swamp Hag",
+  "heading_id": "h-swamp-hag-controller",
+  "route": "gpt",
+  "spec_sha256": "915e2ee467bf48632e8cad8ab97e5c46dcc86d2f0c028c25592d995844359d8b",
+  "prompt_sha256": "2173f4a4cd6e587771703c66e3444cdd2f52afe23ed8768ef0c73d8cac562ae4",
+  "status": "received",
+  "received_at": "2026-10-12T14:46:56+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-SWAMP-HAG.png",
+   "sha256": "b0039621c621bc3d9714e7dcf58a1783196486a0e5fdb6feba5dd25ccb99128d",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-SWAMP-HAG.png",
+   "sha256": "6fa178a92a311f446568e3522ae76d8d4de7a115a96a6cbf416f0743138c1c58",
+   "px": [
+    1129,
+    1230
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.763
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
