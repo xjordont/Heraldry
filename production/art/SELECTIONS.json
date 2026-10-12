@@ -5224,5 +5224,38 @@
    "max_print_w_in_300ppi": 2.72
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-DEMONBORN": {
+  "family": "ancestry",
+  "title": "Demonborn",
+  "heading_id": "h-demonborn",
+  "route": "gpt",
+  "spec_sha256": "cef104f0eed10c0ca129f0b49f7c66654177d42dad1792f5473f05c631465a9d",
+  "prompt_sha256": "3108534c14f34a1820856a2b3ee5377ffefe3b0c814f1acab4bbb2da05e72764",
+  "status": "received",
+  "received_at": "2026-10-12T17:51:07+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-DEMONBORN.png",
+   "sha256": "d73b5d565caee3d84f4738020347a17f93a411e014daf71718840df51f5de301",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-DEMONBORN.png",
+   "sha256": "4f83a872b41e264a50b3b58172a932bc2c3b58fc07b6c2404e00d7eec4f8df89",
+   "px": [
+    734,
+    1501
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.447
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
