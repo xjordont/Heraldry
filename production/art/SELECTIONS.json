@@ -727,5 +727,38 @@
    "max_print_w_in_300ppi": 5.087
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLI-THE-MIRE": {
+  "family": "climate",
+  "title": "The Mire",
+  "heading_id": "h-the-mire",
+  "route": "gpt",
+  "spec_sha256": "dd3c3a548ebe274d3c17cb633ca45798e7b1c98d8d5781a3de25887cd247d06a",
+  "prompt_sha256": "7e61c4d50c3830a292094ec5a91b1afcff154656d7838d23516d449570640342",
+  "status": "received",
+  "received_at": "2026-10-12T06:12:36+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Submerged dead forms include clear skull and face detail, violating ambiguous and faint requirement.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLI-THE-MIRE.png",
+   "sha256": "da6eb8ac6cb7e03927a2f06b50ccb3810f005afb0105aa322da30f3b9095ca62",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLI-THE-MIRE.png",
+   "sha256": "dfd150d513563341defc9f46897802b45535cb3865f20d83a4389d63baab911f",
+   "px": [
+    1522,
+    1008
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.073
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
