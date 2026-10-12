@@ -88,7 +88,7 @@
   #chapter-opener("One", "The World of Heraldry", n: 1, art: art("ART-CH01-002"),
     lead: [Banners rot in the rain. Shrines sink into the mud. Oaths are broken, kings are buried, and the roads between settlements grow more dangerous with each passing season. Yet the ruins of the world still glitter with coin, relics, and forgotten power, and the desperate, the devout, the greedy, and the doomed continue to march into darkness to claim them.])
   #section("1.1", "What is Heraldry Skirmish?")
-  #columns(2, gutter: gap)[
+  #balanced[
     #dropcap[*Heraldry Skirmish* is a competitive GM-less PvPvE fantasy tabletop miniatures game of desperate expeditions, brutal clashes, and hard-won survival. Most battles pit two rival adventuring parties against one another as they race through monster-haunted ruins, damned wilderness, and blood-soaked strongholds in search of treasure, glory, and escape.]
 
     A standard competitive game uses *4 Heroes per side* on a *36"×36"* battlefield. It is usually played by *2 players*, but supports *2–8 players* by dividing control of each side's Heroes among allied players.
@@ -98,7 +98,7 @@
 // ================================================================ 4. ordinary rules (verso)
 #shell(28, chapter: "Core Mechanics", section: "2.6 Measurement", tab: 2)[
   #section("2.6", "Measurement, Size, Distances, and Rounding")
-  #columns(2, gutter: gap)[
+  #balanced[
     You may measure any distance or check *LOS* at any time.
 
     Heraldry Skirmish is played on a *36"×36"* battlefield unless a scenario says otherwise.
@@ -156,7 +156,7 @@
     ([6], [*Dappled Sunlight*], [Shifting light and shade play across the forest floor. No adverse weather effects apply. Standard conditions apply.]),
   ))
   #ref-table((1fr, 0.62in, 0.55in, 0.6in, 0.6in, 0.95in, 1.65in), ("key", "c", "c", "c", "c", "c", "text"),
-    ("Weapon", [COST #coin(s: 7pt, fill: paper)], "Hands", "STR Req", "DEX Req", "Damage", "Traits"),
+    ("Weapon", [COST #coin(s: 8.6pt, fill: paper)], "Hands", "STR Req", "DEX Req", "Damage", "Traits"),
     title: "7.8 Melee Weapons (excerpt)", (
     ([Unarmed Combat], [0], [2], [-], [-], [1 (B)], [*Trip*]),
     ([Club], [0], [1], [-], [-], [1d4 (B)], [-]),
@@ -179,7 +179,7 @@
     [A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when holding it is the only thing that matters. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does.],
     (("Archetype", [Martial]), ("Class Modifiers", [STR +2, DEX +1, INT 0, SPI -1]), ("Starting HP Bonus", [+5]),
      ("Max HP Gained per Level", [+3]), ("Primary Casting Score", [None]), ("NRG Pool", [None])))[
-    #columns(2, gutter: gap)[
+    #balanced[
       #label-rule("Starting Packages")
       - *A. Vanguard (Defensive):* Shortsword, Targe, Ring Shirt, Dagger.
       - *B. Ravager (Offensive):* Great Falchion, Ring Shirt, Javelin, Bandages.
@@ -188,7 +188,6 @@
       - *Combat Mastery:* Your second weapon attack during your activation does not suffer *Disadvantage* from the *Multiple Attacks* rule. Later attacks resolve normally.
       - *Shield Drill:* While you are equipped with a shield, you gain *+1 AV* against melee weapon attacks.
       - *Duelist's Riposte:* When you declare *Parry*, you may spend *1 additional AP*. If the *Parry* succeeds, make one melee weapon attack against the attacker after resolving any normal *Riposte*. This attack does not count toward the multi-attack *Disadvantage* chain.
-      #colbreak()
       #minor("Adept Fighter Talents")
       - *Guard Break:* Reduce the *AV* an enemy applies against your melee weapon attack by *1*. When an enemy uses *Parry* against your melee weapon attack, reduce their parry total by *1*.
       - *Relentless:* When you succeed on *Push* or *Trip*, you may make one melee weapon attack against the same target for *0 AP*. The bonus attack counts toward the multi-attack *Disadvantage* chain.
@@ -203,7 +202,7 @@
 // ================================================================ 8. powers (verso)
 #shell(216, chapter: "Powers and Traditions", section: "8.3 Arcane Spells", tab: 8)[
   #section("8.3", "Arcane Spells")
-  #columns(2, gutter: gap)[
+  #balanced[
     Arcane Core Rules:
     - Arcane Spells follow *8.2 Casting Powers*.
     - Arcane Spells may use their printed *Empower* options.
@@ -214,7 +213,6 @@
       [*Effect:* *Interact* with the target within *8"*. This can open or close an unlocked door, pull a lever, lift or place one unsecured object, or perform a similar *Interact* effect at range. This can never deal damage, make an attack, or complete an objective unless that objective explicitly allows *Mage Hand*.])
     #power(3, "Spark Ward", "1 AP · 0 NRG", (("Range", [Self]), ("Target", [Self])),
       [*Effect:* Add *+3 AV* the next time you apply *AV* this round.])
-    #colbreak()
     #tier-head("Tier 0 Arcane Cantrips: Trickster")
     #power(1, "Glamour Shard", "1 AP · 0 NRG", (("Range", [2"]), ("Target", [1 combatant])),
       [*Effect:* Deal *1d6 + INT arcane damage* and then *Shift 2"*.])
@@ -230,7 +228,7 @@
   #columns(2, gutter: gap)[
     #monster("Fallen Paladin", "Elite", art: art("ART-MON-FALLEN-PALADIN"),
       [Holy oath turned to grave-frost, the fallen paladin is an undead knight in defiled plate, radiating an aura that withers the courage of all who come near. Its flamberge carries a necrotic chill, and despair leaks off it the way cold leaks off ice. It guards the Pale City's blackest chapels. Whatever vow it broke in life, it keeps a darker one now.],
-      ("HP", "AV", "SPD", "LVL", "CV", "Sz"), ("45", "3", "5\"", "6", [36#h(1.5pt)#coin(s: 8pt)], "M"),
+      ("HP", "AV", "SPD", "LVL", "CV", "Sz"), ("45", "3", "5\"", "6", [36#h(1.5pt)#coin(s: 9pt)], "M"),
       (("AI Steps", ([*Oathbreaker's Charge (AI Step 1):* Moves their full Speed toward the nearest visible enemy, then attacks; the *Aura of Despair* affects every enemy they pass within *4"* of during this move.],)),
        ("Attacks", ([*Defiled Flamberge:* 1d12 + 5 slashing damage + 1d6 necrotic damage.],)),
        ("Special Abilities", (
@@ -242,7 +240,7 @@
     #colbreak()
     #monster("Werebear", "Brute", art: art("ART-MON-WEREBEAR"),
       [In the Pale City's frozen wilds prowls the werebear, a hulking man-beast of white fur and ruinous strength, damned kin to the werewolf but built to maul rather than skirmish. It strikes with both paws and a bone-cracking bite, and hurls grown men aside. Mundane weapons barely part its hide. A single one can break a war-band.],
-      ("HP", "AV", "SPD", "LVL", "CV", "Sz"), ("40", "3", "6\"", "6", [31#h(1.5pt)#coin(s: 8pt)], "L"),
+      ("HP", "AV", "SPD", "LVL", "CV", "Sz"), ("40", "3", "6\"", "6", [31#h(1.5pt)#coin(s: 9pt)], "L"),
       (("Attacks", (
          [*Multi-Attack:* Makes two *Claws* attacks and one *Bite* attack during their attack step.],
          [*Claws:* 1d10 slashing damage.],
@@ -372,15 +370,23 @@
 #shell(601, furniture: false, folio-on: false)[
   #align(center)[#text(font: goth, weight: 600, size: 34pt)[The Armoury] #v(-10pt) #flourish(len: 70pt)]
   #v(8pt)
-  #text(font: sans, weight: 700, size: 7.4pt, tracking: 0.16em)[THE ARMS OF THE FIFTEEN PARTS · ONE HERALDIC ORDINARY EACH]
+  #text(font: sans, weight: 700, size: 7.4pt, tracking: 0.16em)[THE ARMS OF THE FIFTEEN PARTS · A THEMED CHARGE ON A HATCHED HERALDIC FIELD]
   #v(4pt)
-  #grid(columns: (1fr,) * 5, row-gutter: 14pt, column-gutter: 8pt,
-    ..range(1, 16).map(i => align(center)[#arms(i, w: 34pt)#v(-2pt)#text(font: goth, weight: 600, size: 12pt, tab-keys.at(i - 1))\ #text(font: sans, size: 7pt, fill: ink3, ("Per pale", "Fess", "Bend", "Chevron", "Saltire", "Cross", "Pale", "Pile", "Per saltire", "Chief", "Bordure", "Quarterly", "Per bend", "Per fess", "Lozenge").at(i - 1))]))
-  #v(14pt)
-  #grid(columns: (1fr, 1fr, 1fr, 1fr), column-gutter: 10pt, align: center + bottom,
-    [#crown(s: 46pt)\ #text(font: sans, size: 7.4pt)[Broken crown: the book's signature]],
-    [#coin(s: 30pt)\ #text(font: sans, size: 7.4pt)[Coin: replaces the source's "c"]],
-    [#shield(w: 30pt, inner: true, body: text(font: sans, weight: 700, size: 10pt, fill: paper)[2.6])\ #text(font: sans, size: 7.4pt)[Engraved shield: numbers]],
+  #grid(columns: (1fr,) * 5, row-gutter: 12pt, column-gutter: 8pt,
+    ..range(1, 16).map(i => align(center)[#arms(i, w: 40pt)#v(-1pt)#text(font: goth, weight: 600, size: 12pt, tab-keys.at(i - 1))\ #text(font: sans, size: 7pt, fill: ink3, ("Orb and cross", "Die", "Hourglass", "Spurred boot", "Swords in saltire", "War banner", "Great helm", "Flame in a brazier", "Wyvern's head", "Ruined arch", "Castle", "Key", "Lantern", "Open book", "Quill").at(i - 1))]))
+  #v(12pt)
+  #text(font: sans, weight: 700, size: 7.4pt, tracking: 0.16em)[SIGNATURE MARK · SIX CANDIDATES FOR THE OWNER TO CHOOSE]
+  #v(4pt)
+  #grid(columns: (1fr,) * 6, column-gutter: 6pt, align: center + bottom,
+    ..(("broken-crown", "The Broken Crown", "kings are buried"), ("crown-pierced", "The Pierced Crown", "an oath broken by the sword"),
+       ("tattered-banner", "The Rotting Banner", "banners rot in the rain"), ("broken-sword", "The Broken Oath", "oaths are broken"),
+       ("black-rose", "The Black Rose", "withered beauty"), ("raven", "The Carrion Raven", "the roads grow dark")).enumerate().map(((i, (k, t, q))) => [
+      #image(mark("sig-" + k), width: 42pt)
+      #text(font: goth, weight: 600, size: 10.5pt, [#str(i + 1). #t])\ #text(font: fell, size: 8.4pt, fill: ink2, q)]))
+  #v(12pt)
+  #grid(columns: (1fr, 1fr, 1fr), column-gutter: 10pt, align: center + bottom,
+    [#coin(s: 34pt)\ #text(font: sans, size: 7.4pt)[Coin: a long-cross penny; replaces the source's "c"]],
+    [#text(font: sans, weight: 600, size: 12pt)[36#h(1.5pt)#coin(s: 8.6pt) #h(10pt) 120#h(1.5pt)#coin(s: 8.6pt)]\ #text(font: sans, size: 7.4pt)[In use: sits on the baseline]],
     [#box(width: 44pt, height: 44pt, corner("tl", s: 44pt))\ #text(font: sans, size: 7.4pt)[Corner flourish: panels]],
   )
   #v(14pt)

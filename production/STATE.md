@@ -505,3 +505,8 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Layout:** margins 0.75 / 0.55 / 0.68 / 0.7 in (about 6% more text per page). Flavour in IM FELL roman at 84% black. Widow, orphan and runt costs set in `base`.
   - **Docs:** `docs/BOOK_DESIGN_PLAN.md` v4 rewrites sections 2 to 5, 6.10, 11 and 12, and adds section 13 (typesetting and layout policy).
   - **Specimens:** 15 pages including "The Armoury" design sheet; PNG only, no build.
+- **Design v4.1** (owner, 2026-10-12: themed, more ornate arms; at least five signature options; a clearer medieval coin raised onto the baseline; keep a fresh page per section; reflow awkward typesetting such as the Deepwarden introduction).
+  - **Arms:** themed chapter arms drawn as SVG by `tools/make_heraldry_marks.py` (cream and white variants in `typst/templates/marks/`). Each has hatched heraldic tinctures, an engraved double-bordered shield and a fimbriated charge.
+  - **Signature:** six candidate marks (crown, pierced crown, rotting banner, broken sword, black rose, raven), shown on specimen 15; the choice is pending.
+  - **Coin:** a long-cross penny sitting on the baseline.
+  - **Typesetting:** balanced two-column runs at run ends; gazetteer lore in balanced full-width columns; examples unbreakable. Policy updated in BOOK_DESIGN_PLAN section 13: fresh page per numbered section kept, and balanced columns added.

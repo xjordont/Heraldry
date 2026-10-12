@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 132" width="112pt" height="132pt">
+<defs><clipPath id="s"><path d="M0,0 H100 V50 C100,94 62,108 50,120 C38,108 0,94 0,50 Z"/></clipPath></defs>
+<g transform="translate(6,6)">
+<path d="M0,0 H100 V50 C100,94 62,108 50,120 C38,108 0,94 0,50 Z" fill="#FFFFFF"/>
+<g clip-path="url(#s)"><path d="M3,0 V120 M9,0 V120 M15,0 V120 M21,0 V120 M27,0 V120 M33,0 V120 M39,0 V120 M45,0 V120 M51,0 V120 M57,0 V120 M63,0 V120 M69,0 V120 M75,0 V120 M81,0 V120 M87,0 V120 M93,0 V120 M99,0 V120" stroke="#000" stroke-width="0.9"/><g fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"><g transform="rotate(-33 50 58)">
+  <path d="M45,78 L45,20 L50,8 L55,20 L55,78 Z"/>
+  <path d="M50,20 V74" stroke="#FFFFFF" stroke-width="1.4"/>
+  <path d="M31,77 Q50,72 69,77 L69,84 Q50,79 31,84 Z"/>
+  <rect x="46.8" y="84" width="6.4" height="14" rx="1.2"/>
+  <path d="M47,88 L53,90 M47,93 L53,95" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="50" cy="102" r="5"/>
+</g><g transform="rotate(33 50 58)">
+  <path d="M45,78 L45,20 L50,8 L55,20 L55,78 Z"/>
+  <path d="M50,20 V74" stroke="#FFFFFF" stroke-width="1.4"/>
+  <path d="M31,77 Q50,72 69,77 L69,84 Q50,79 31,84 Z"/>
+  <rect x="46.8" y="84" width="6.4" height="14" rx="1.2"/>
+  <path d="M47,88 L53,90 M47,93 L53,95" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="50" cy="102" r="5"/>
+</g></g><g fill="#000"><g transform="rotate(-33 50 58)">
+  <path d="M45,78 L45,20 L50,8 L55,20 L55,78 Z"/>
+  <path d="M50,20 V74" stroke="#FFFFFF" stroke-width="1.4"/>
+  <path d="M31,77 Q50,72 69,77 L69,84 Q50,79 31,84 Z"/>
+  <rect x="46.8" y="84" width="6.4" height="14" rx="1.2"/>
+  <path d="M47,88 L53,90 M47,93 L53,95" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="50" cy="102" r="5"/>
+</g><g transform="rotate(33 50 58)">
+  <path d="M45,78 L45,20 L50,8 L55,20 L55,78 Z"/>
+  <path d="M50,20 V74" stroke="#FFFFFF" stroke-width="1.4"/>
+  <path d="M31,77 Q50,72 69,77 L69,84 Q50,79 31,84 Z"/>
+  <rect x="46.8" y="84" width="6.4" height="14" rx="1.2"/>
+  <path d="M47,88 L53,90 M47,93 L53,95" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="50" cy="102" r="5"/>
+</g></g></g>
+<path d="M0,0 H100 V50 C100,94 62,108 50,120 C38,108 0,94 0,50 Z" fill="none" stroke="#000" stroke-width="5"/>
+<path d="M6,6 H94 V50 C94,88 60,100 50,111 C40,100 6,88 6,50 Z" fill="none" stroke="#000" stroke-width="1.2"/>
+</g>
+</svg>
