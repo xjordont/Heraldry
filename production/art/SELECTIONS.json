@@ -5026,5 +5026,38 @@
    "max_print_w_in_300ppi": 2.673
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-PSION": {
+  "family": "class",
+  "title": "Psion",
+  "heading_id": "h-psion-45-complexity",
+  "route": "gpt",
+  "spec_sha256": "cbb5c1c560e170271a8617f667999b223567f2fae1b61c7ceb5ee0b97e1ee753",
+  "prompt_sha256": "6e2825b6d39f1d918e26484ee6de2abd44949e1acf489b89af51bd31d886b1b9",
+  "status": "received",
+  "received_at": "2026-10-12T17:33:52+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-PSION.png",
+   "sha256": "05e7ca609c05d857f28754a96e7bd5732718461e4d3501f13e9a3b4c1e53113f",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-PSION.png",
+   "sha256": "b00e8139a7b0b6f00de4116fc4b3572fa537ae3943e67f1806a9125abbba8b89",
+   "px": [
+    954,
+    1488
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.18
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
