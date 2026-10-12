@@ -4960,5 +4960,38 @@
    "max_print_w_in_300ppi": 3.17
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-FIGHTER": {
+  "family": "class",
+  "title": "Fighter",
+  "heading_id": "h-fighter-15-complexity",
+  "route": "gpt",
+  "spec_sha256": "99a5d97686f6ca5f3d39049228e21890ff3bb26547991bbc102038400bc0975b",
+  "prompt_sha256": "f65f8db93e9fcd6fd21bf91bd4719a2754afbd553b83b1205d9f1c52cdea95ff",
+  "status": "received",
+  "received_at": "2026-10-12T17:27:42+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-FIGHTER.png",
+   "sha256": "12a91be4cea8659b1cc9a9bae9e1f9d737543dfd338d57ffdbb2e15bff6893fb",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-FIGHTER.png",
+   "sha256": "bbb47b8e8d0d343b4c1064f409e2991ca3d0eecf02e31f91829e5ba92d2e623e",
+   "px": [
+    943,
+    1400
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.143
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
