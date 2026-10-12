@@ -793,5 +793,38 @@
    "max_print_w_in_300ppi": 5.11
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLI-THE-SUN-DROWNED": {
+  "family": "climate",
+  "title": "The Sun-Drowned",
+  "heading_id": "h-the-sun-drowned",
+  "route": "gpt",
+  "spec_sha256": "75b28bfdcc511a4ca1cac029ca3e245fec9c3f839458d30b7f703523568f51a9",
+  "prompt_sha256": "e46ce11e7c4427dcfe8b1b9680939e863938886055ab13844daf5f9080ea8dd2",
+  "status": "received",
+  "received_at": "2026-10-12T06:17:57+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLI-THE-SUN-DROWNED.png",
+   "sha256": "46baa060f307155f2923ceb3c8b9c1230f0f1b772368255ae37720cd0604f83a",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLI-THE-SUN-DROWNED.png",
+   "sha256": "1f19e1cfd65f12fe8f4816b9f0b083c1288436d7e7e8c0f0acc71f493413a07f",
+   "px": [
+    1524,
+    983
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.08
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
