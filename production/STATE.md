@@ -498,3 +498,10 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Armoury:** briar rules, rivets, iron rules, iron bands, shields, banner tags, corner irons, skull, ornate opener frame, blackletter drop capital.
   - **Ledger tables:** black header band with rivets, bold key column, 6% banding, faint column guides, side frame, shield roll numbers, iron close.
   - **Docs:** `docs/BOOK_DESIGN_PLAN.md` sections 3, 4, 5, 6.10, 11 and 12 rewritten; specimens re-rendered (PNG only, cream and white). No build.
+- **Design system v4** (owner, 2026-10-12: take it further with tasteful decoration; bolder centred tab font; tables look amateur, so centre values and use a coin for "(c)"; skulls cheesy; rules crowded; narrower margins; typesetting policy against bloat and split paragraphs; easier flavour font; polish to award-winning standard).
+  - **Marks:** chapter arms (15 heraldic ordinaries), a broken crown as the signature, a brush rule, engraved shields, corner flourishes, banner tags and the coin. Skulls and thorn rules are retired.
+  - **Tabs:** bold Grenze Gotisch keywords, auto-fitted, reversed and centred.
+  - **Ledger tables:** values centred under centred headers, bold left key column, header band, 5% banding, hairlines, brush strokes top and bottom, no vertical rules; the coin replaces "c" (typographic mapping recorded for reconciliation).
+  - **Layout:** margins 0.75 / 0.55 / 0.68 / 0.7 in (about 6% more text per page). Flavour in IM FELL roman at 84% black. Widow, orphan and runt costs set in `base`.
+  - **Docs:** `docs/BOOK_DESIGN_PLAN.md` v4 rewrites sections 2 to 5, 6.10, 11 and 12, and adds section 13 (typesetting and layout policy).
+  - **Specimens:** 15 pages including "The Armoury" design sheet; PNG only, no build.

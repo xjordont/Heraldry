@@ -22,7 +22,7 @@
     #v(10pt)
     #image(art("ART-COVER-002"), width: 100%)
     #v(12pt)
-    #text(font: fell, style: "italic", size: 13pt, fill: ink2)[Rules for desperate expeditions, brutal clashes, and hard-won survival]
+    #text(font: fell, size: 13pt, fill: ink2)[Rules for desperate expeditions, brutal clashes, and hard-won survival]
     #v(1fr)
     #text(font: sans, weight: 600, size: 8pt, tracking: 0.3em, fill: ink2)[RULEBOOK · RELEASE CANDIDATE 492]
   ]
@@ -33,14 +33,14 @@
   #align(center)[#text(font: goth, weight: 600, size: 42pt)[Contents] #v(-12pt) #flourish(len: 80pt)]
   #v(14pt)
   #columns(2, gutter: gap)[
-    #toc-chapter("1", "The World of Heraldry", 9)
+    #toc-chapter("1", "The World of Heraldry", 9, n: 1)
     #toc-line("1.1", "What is Heraldry Skirmish?", 9)
     #toc-line("1.2", "The Grim World", 11)
     #toc-line("1.3", "The Dying Lands", 13)
     #toc-line("1.4", "What You Need to Play", 17)
     #toc-line("1.5", "Goals of the Game", 18)
     #toc-line("1.6", "Rules Hierarchy and Precedence", 19)
-    #toc-chapter("2", "Core Mechanics", 21)
+    #toc-chapter("2", "Core Mechanics", 21, n: 2)
     #toc-line("2.1", "Core Terms", 21)
     #toc-line("2.2", "Ability Scores", 23)
     #toc-line("2.3", "Ability Checks", 24)
@@ -51,7 +51,7 @@
     #toc-line("2.8", "Cover, Light, Hidden, and Visibility", 35)
     #toc-line("2.9", "Terrain", 38)
     #toc-line("2.10", "Luck Points", 42)
-    #toc-chapter("3", "The Game Round", 45)
+    #toc-chapter("3", "The Game Round", 45, n: 3)
     #toc-line("3.1", "Overview of a Round", 45)
     #toc-line("3.2", "Initiative Phase", 46)
     #toc-line("3.3", "Party Phase", 48)
@@ -59,7 +59,7 @@
     #toc-line("3.5", "End of Round", 51)
     #toc-line("3.6", "Timing Rules", 52)
     #colbreak()
-    #toc-chapter("9", "Monsters", 287)
+    #toc-chapter("9", "Monsters", 287, n: 9)
     #toc-line("9.1", "Monster Stat Profile", 287)
     #toc-line("9.2", "Determining Monsters for an Adventure", 289)
     #toc-line("9.3", "Monster Placement and Initial State", 291)
@@ -68,16 +68,16 @@
     #toc-line("9.6", "Universal Special Abilities (SA) List", 299)
     #toc-line("9.7", "The Bestiary", 303)
     #toc-line("9.8", "Random Monster Generation Tables", 363)
-    #toc-chapter("10", "Scenarios", 371)
+    #toc-chapter("10", "Scenarios", 371, n: 10)
     #toc-line("10.1", "Adventure Preparation Sequence", 373)
     #toc-line("10.2", "Secondary Objectives by Climate", 379)
     #toc-line("10.3", "Weather Tables by Climate", 385)
     #toc-line("10.4", "Core Scenario Outlines", 389)
     #toc-line("10.5", "Solo and Cooperative Play", 463)
     #toc-line("10.6", "Dynamic Party and Scenario Scaling", 467)
-    #toc-chapter("A", "Learn to Play", 521)
-    #toc-chapter("B", "Basic Mode", 545)
-    #toc-chapter("C", "Rules Reference", 561)
+    #toc-chapter("A", "Learn to Play", 521, n: 12)
+    #toc-chapter("B", "Basic Mode", 545, n: 13)
+    #toc-chapter("C", "Rules Reference", 561, n: 14)
     #v(8pt)
     #text(font: sans, size: 7.6pt, fill: ink3)[Specimen: page numbers are placeholders until the book is paginated.]
   ]
@@ -85,7 +85,7 @@
 
 // ================================================================ 3. chapter opener (recto)
 #shell(9, tab: 1, furniture: false, frame: true)[
-  #chapter-opener("One", "The World of Heraldry", art: art("ART-CH01-002"),
+  #chapter-opener("One", "The World of Heraldry", n: 1, art: art("ART-CH01-002"),
     lead: [Banners rot in the rain. Shrines sink into the mud. Oaths are broken, kings are buried, and the roads between settlements grow more dangerous with each passing season. Yet the ruins of the world still glitter with coin, relics, and forgotten power, and the desperate, the devout, the greedy, and the doomed continue to march into darkness to claim them.])
   #section("1.1", "What is Heraldry Skirmish?")
   #columns(2, gutter: gap)[
@@ -146,7 +146,7 @@
 
 // ================================================================ 6. tables (verso)
 #shell(386, chapter: "Scenarios", section: "10.3 Weather Tables by Climate", tab: 10)[
-  #ref-table((26pt, 1.25in, 1fr), (center, left, left), ("1d6", "Weather Condition", "Effect"), roll: true,
+  #ref-table((0.42in, 1.35in, 1fr), ("roll", "key", "text"), ("1d6", "Weather Condition", "Effect"),
     title: "Climate 1: Greenmark Weather Table", (
     ([1], [*Blackwater Deluge*], [*LOS* is reduced to 6". Every area of *Open Terrain* and *Cover Terrain* that is not explicitly "Indoors" or "Rocky" becomes *Difficult Terrain*; *Impassable Terrain* and *Blocking Terrain* are unchanged. At the end of their activation, each combatant that is not in *Cover* must pass a *STR Check* or suffer *1 HP loss*.]),
     ([2], [*Heavy Rain and Mud*], [Every area of *Open Terrain* and *Cover Terrain* that is not explicitly "Indoors" or "Rocky" becomes *Difficult Terrain*; *Impassable Terrain* and *Blocking Terrain* are unchanged. Ranged attacks targeting beyond 10" roll their base damage dice with *Disadvantage*.]),
@@ -155,8 +155,8 @@
     ([5], [*Intermittent Showers*], [At the start of each round, roll 1d6. On a 1–2, the Heavy Rain and Mud effects apply for this round. On a 3–6, no adverse weather effect applies this round.]),
     ([6], [*Dappled Sunlight*], [Shifting light and shade play across the forest floor. No adverse weather effects apply. Standard conditions apply.]),
   ))
-  #ref-table((1fr, 0.5in, 0.45in, 0.5in, 0.5in, 0.85in, 1.45in), (left, right, right, right, right, left, left),
-    ("Weapon", "Cost (c)", "Hands", "STR Req", "DEX Req", "Damage", "Traits"),
+  #ref-table((1fr, 0.62in, 0.55in, 0.6in, 0.6in, 0.95in, 1.65in), ("key", "c", "c", "c", "c", "c", "text"),
+    ("Weapon", [COST #coin(s: 7pt, fill: paper)], "Hands", "STR Req", "DEX Req", "Damage", "Traits"),
     title: "7.8 Melee Weapons (excerpt)", (
     ([Unarmed Combat], [0], [2], [-], [-], [1 (B)], [*Trip*]),
     ([Club], [0], [1], [-], [-], [1d4 (B)], [-]),
@@ -230,7 +230,7 @@
   #columns(2, gutter: gap)[
     #monster("Fallen Paladin", "Elite", art: art("ART-MON-FALLEN-PALADIN"),
       [Holy oath turned to grave-frost, the fallen paladin is an undead knight in defiled plate, radiating an aura that withers the courage of all who come near. Its flamberge carries a necrotic chill, and despair leaks off it the way cold leaks off ice. It guards the Pale City's blackest chapels. Whatever vow it broke in life, it keeps a darker one now.],
-      ("HP", "AV", "SPD", "LVL", "CV", "Sz"), ("45", "3", "5\"", "6", "36c", "M"),
+      ("HP", "AV", "SPD", "LVL", "CV", "Sz"), ("45", "3", "5\"", "6", [36#h(1.5pt)#coin(s: 8pt)], "M"),
       (("AI Steps", ([*Oathbreaker's Charge (AI Step 1):* Moves their full Speed toward the nearest visible enemy, then attacks; the *Aura of Despair* affects every enemy they pass within *4"* of during this move.],)),
        ("Attacks", ([*Defiled Flamberge:* 1d12 + 5 slashing damage + 1d6 necrotic damage.],)),
        ("Special Abilities", (
@@ -242,7 +242,7 @@
     #colbreak()
     #monster("Werebear", "Brute", art: art("ART-MON-WEREBEAR"),
       [In the Pale City's frozen wilds prowls the werebear, a hulking man-beast of white fur and ruinous strength, damned kin to the werewolf but built to maul rather than skirmish. It strikes with both paws and a bone-cracking bite, and hurls grown men aside. Mundane weapons barely part its hide. A single one can break a war-band.],
-      ("HP", "AV", "SPD", "LVL", "CV", "Sz"), ("40", "3", "6\"", "6", "31c", "L"),
+      ("HP", "AV", "SPD", "LVL", "CV", "Sz"), ("40", "3", "6\"", "6", [31#h(1.5pt)#coin(s: 8pt)], "L"),
       (("Attacks", (
          [*Multi-Attack:* Makes two *Claws* attacks and one *Bite* attack during their attack step.],
          [*Claws:* 1d10 slashing damage.],
@@ -291,7 +291,7 @@
 // ================================================================ 11. quick reference (verso)
 #shell(566, chapter: "Rules Reference", section: "C.3 Conditions Summary", tab: 14)[
   #qref-head("C.3", "Conditions Summary")
-  #ref-table((0.95in, 1fr, 1.9in), (left, left, left), ("Condition", "Effect", "Ends When"), band: true, size: 8.8pt, (
+  #ref-table((1in, 1fr, 2in), ("key", "text", "text"), ("Condition", "Effect", "Ends When"), size: 8.8pt, (
     ([*Bleeding*], [At the end of their activation, the combatant loses *2 HP*. This HP loss cannot be reduced by *AV*, *AD*, *Resistance*, or *Immune*.], [The combatant regains HP, receives successful *Bandages*, or a rule removes it.]),
     ([*Blinded*], [Cannot draw *LOS* beyond *2"*. Attack damage rolls and sight-based *Checks* are made with *Disadvantage*.], [End of the affected combatant's next activation, or when a rule removes it.]),
     ([*Burning*], [Suffers *1 fire damage* at the end of each round.], [During their activation, the combatant spends *1 AP* to extinguish it; they enter water; or a rule removes it.]),
@@ -357,7 +357,7 @@
     #v(16pt)
     #block(width: 78%)[
       #set par(leading: 5pt, justify: false)
-      #text(font: fell, style: "italic", size: 15pt)[Banners rot in the rain. Shrines sink into the mud. Oaths are broken, kings are buried, and the roads between settlements grow more dangerous with each passing season.]
+      #text(font: fell, size: 15pt)[Banners rot in the rain. Shrines sink into the mud. Oaths are broken, kings are buried, and the roads between settlements grow more dangerous with each passing season.]
     ]
     #v(18pt)
     #image(art("ART-MON-LICH"), width: 34%)
@@ -366,4 +366,26 @@
     #v(-8pt)
     #text(font: sans, weight: 600, size: 7.6pt, tracking: 0.3em, fill: ink2)[A SKIRMISH GAME OF THE DYING LANDS]
   ]
+]
+
+// ================================================================ 15. the armoury (design sheet)
+#shell(601, furniture: false, folio-on: false)[
+  #align(center)[#text(font: goth, weight: 600, size: 34pt)[The Armoury] #v(-10pt) #flourish(len: 70pt)]
+  #v(8pt)
+  #text(font: sans, weight: 700, size: 7.4pt, tracking: 0.16em)[THE ARMS OF THE FIFTEEN PARTS · ONE HERALDIC ORDINARY EACH]
+  #v(4pt)
+  #grid(columns: (1fr,) * 5, row-gutter: 14pt, column-gutter: 8pt,
+    ..range(1, 16).map(i => align(center)[#arms(i, w: 34pt)#v(-2pt)#text(font: goth, weight: 600, size: 12pt, tab-keys.at(i - 1))\ #text(font: sans, size: 7pt, fill: ink3, ("Per pale", "Fess", "Bend", "Chevron", "Saltire", "Cross", "Pale", "Pile", "Per saltire", "Chief", "Bordure", "Quarterly", "Per bend", "Per fess", "Lozenge").at(i - 1))]))
+  #v(14pt)
+  #grid(columns: (1fr, 1fr, 1fr, 1fr), column-gutter: 10pt, align: center + bottom,
+    [#crown(s: 46pt)\ #text(font: sans, size: 7.4pt)[Broken crown: the book's signature]],
+    [#coin(s: 30pt)\ #text(font: sans, size: 7.4pt)[Coin: replaces the source's "c"]],
+    [#shield(w: 30pt, inner: true, body: text(font: sans, weight: 700, size: 10pt, fill: paper)[2.6])\ #text(font: sans, size: 7.4pt)[Engraved shield: numbers]],
+    [#box(width: 44pt, height: 44pt, corner("tl", s: 44pt))\ #text(font: sans, size: 7.4pt)[Corner flourish: panels]],
+  )
+  #v(14pt)
+  #grid(columns: (1fr, 1fr), column-gutter: 20pt, row-gutter: 8pt,
+    brush(weight: 2.4pt, seed: 3), text(font: sans, size: 7.4pt)[Brush rule: hand-inked, tapered; tables, sections, stat bars],
+    tag[Example], text(font: sans, size: 7.4pt)[Banner tag: examples, notes, roles, scenarios],
+  )
 ]
