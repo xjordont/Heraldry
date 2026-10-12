@@ -402,5 +402,38 @@
    "max_print_w_in_300ppi": 2.71
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-RANGER": {
+  "family": "class",
+  "title": "Ranger",
+  "heading_id": "h-ranger-35-complexity",
+  "route": "gpt",
+  "spec_sha256": "9f21f81c0d9c96bfe6f89234607c9e3c6a1ad8cfe2e4607fcc07d890381b608e",
+  "prompt_sha256": "57ee380f07fede9930963fff255801389467e1b01e7341088a9f9877cb20a022",
+  "status": "received",
+  "received_at": "2026-10-12T01:17:35+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Correction: the entire ranger, both tips of the shortbow, arrow and ground patch fit within the middle 70% of the portrait canvas with at least 12% completely blank white margin on every side; keep the standing three-quarter full-draw pose. Correction: show a compact shortbow drawn correctly, with the arrow nock and pulling fingers meeting the taut bowstring at the cheek, keeping the bold rough black ink and gear.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-RANGER.png",
+   "sha256": "1fb4c6cd8ff154abf7c310c2e39e3eb02b6a553769d85dd1e4022605f9ab7ba9",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-RANGER.png",
+   "sha256": "0abdacb43acef75f9294f1b89740f33d7337ecfaf61cee53437716c4ba506d98",
+   "px": [
+    765,
+    1306
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.55
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
