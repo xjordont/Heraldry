@@ -6082,5 +6082,38 @@
    "max_print_w_in_300ppi": 5.027
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST": {
+  "family": "scenario",
+  "title": "Scenario 1: The Crystal Harvest",
+  "heading_id": "h-scenario-1-the-crystal-harvest-intro",
+  "route": "gpt",
+  "spec_sha256": "76d6772304b2ab3156af4be8e90a4a54f800f82f3fff5033b3bfa87b0a90fd1b",
+  "prompt_sha256": "f40ff155d914b85586441ca5ffa5c1ec80bdeafd759b1d9f86228e22fc17b7c1",
+  "status": "received",
+  "received_at": "2026-10-12T22:46:19+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "The Lurker is detailed rather than faint; cavern ink also crowds the perimeter.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST.png",
+   "sha256": "ceb3009edd9b39aa9514c2309465aa700b219b52ec2c1971e0ed6809016201d8",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST.png",
+   "sha256": "5fc0cbe15bf9b3ff06742cfd955019c242560ccd8525e2296e6bf6ef88b51cc0",
+   "px": [
+    1531,
+    1024
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.103
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
