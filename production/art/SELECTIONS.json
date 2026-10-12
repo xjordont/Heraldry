@@ -3246,5 +3246,38 @@
    "max_print_w_in_300ppi": 4.03
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-MUMMY": {
+  "family": "monster",
+  "title": "Mummy",
+  "heading_id": "h-mummy-controller",
+  "route": "gpt",
+  "spec_sha256": "896ff1f53e3e7d48fc343b84ee0baf605f91815d1228f3304269972e42da418e",
+  "prompt_sha256": "4ea39e5b60a6b30041da3c86baedc24ad94fbebd8b332cbe30e6e761f2509741",
+  "status": "received",
+  "received_at": "2026-10-12T13:28:06+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Top of head and feet leave less than 8% clean margin, though the figure is not cropped.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-MUMMY.png",
+   "sha256": "a3bfbde61a74eafa325109522831cc210196da376fddedaea47395dde78198aa",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-MUMMY.png",
+   "sha256": "5be8e9d605fa256dc6ffe8890a261c8f5195de2f304247f2b9bc2c6df5d14ccf",
+   "px": [
+    749,
+    1218
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.497
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
