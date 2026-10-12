@@ -18,13 +18,12 @@ def prep(src: Path, dst: Path, margin_px: int = 12) -> dict:
         bg = Image.new("RGBA", im.size, (255, 255, 255, 255))
         im = Image.alpha_composite(bg, im)
     im = im.convert("RGB")
-    # colour = HSV saturation over 60 and a channel spread over 24 levels (the skill helper uses the same formula),
-    # so near-black ink with a faint warm tint does not count as colour
+    # colour = tinted ink: darker than paper (brightest channel under 230) with channels more than 12 levels apart;
+    # the skill helper uses the same formula, so paper tone and a faint warm cast on black ink do not count
     r, gch, b = im.split()
-    spread = ImageChops.subtract(ImageChops.lighter(ImageChops.lighter(r, gch), b),
-                                 ImageChops.darker(ImageChops.darker(r, gch), b))
-    sat = ImageChops.multiply(im.convert("HSV").getchannel("S").point(lambda v: 255 if v > 60 else 0),
-                              spread.point(lambda v: 255 if v > 24 else 0))
+    hi = ImageChops.lighter(ImageChops.lighter(r, gch), b)
+    spread = ImageChops.subtract(hi, ImageChops.darker(ImageChops.darker(r, gch), b))
+    sat = ImageChops.multiply(spread.point(lambda v: 255 if v > 12 else 0), hi.point(lambda v: 255 if v < 230 else 0))
     colour_frac = sum(sat.histogram()[255:]) / (im.width * im.height)
     g = ImageOps.grayscale(im)
     hist = g.histogram()

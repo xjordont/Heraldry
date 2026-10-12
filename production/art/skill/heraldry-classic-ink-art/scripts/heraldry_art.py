@@ -50,7 +50,7 @@ LOOKALIKE_MAX = 16           # of 256 difference bits: closer than this is warne
 # Mechanical tripwires. "scene" = vignette register; "figure" = isolated creature, person or still life.
 T = {
     "min_long_side": 1000,
-    "colour_warn": 0.10, "colour_fail": 0.25,                 # fraction of saturated pixels (art_ink's measure)
+    "colour_warn": 0.03, "colour_fail": 0.10,                 # fraction of tinted-ink pixels (art_ink's measure)
     "blank_fail": {"scene": 0.01, "figure": 0.003},           # non-paper fraction
     "sparse_warn": {"scene": 0.12, "figure": 0.02},
     "soft_warn": {"scene": 1500.0, "figure": 400.0},          # Laplacian variance at <=1280 px
@@ -287,14 +287,14 @@ def _bands(w, h, frac):
 
 
 def _colour_mask(im):
-    """Pixels that read as colour: HSV saturation over 60 and a channel spread over 24 levels. The spread test keeps
-    near-black ink with a faint warm tint (a few levels, but a high HSV saturation) from counting as colour.
-    tools/art_ink.py uses the same formula."""
+    """Tinted ink: a pixel darker than paper (brightest channel under 230) whose channels differ by more than 12
+    levels. Paper tone is ignored (the intake removes it); a faint warm cast on black ink stays under 12 levels,
+    while red, gold or green rendering does not. tools/art_ink.py uses the same formula."""
     r, g, b = im.split()
-    spread = ImageChops.subtract(ImageChops.lighter(ImageChops.lighter(r, g), b),
-                                 ImageChops.darker(ImageChops.darker(r, g), b))
-    sat = im.convert("HSV").getchannel("S").point([255 if v > 60 else 0 for v in range(256)])
-    return ImageChops.multiply(sat, spread.point([255 if v > 24 else 0 for v in range(256)]))
+    hi = ImageChops.lighter(ImageChops.lighter(r, g), b)
+    spread = ImageChops.subtract(hi, ImageChops.darker(ImageChops.darker(r, g), b))
+    return ImageChops.multiply(spread.point([255 if v > 12 else 0 for v in range(256)]),
+                               hi.point([255 if v < 230 else 0 for v in range(256)]))
 
 
 def measure(path):
@@ -372,9 +372,9 @@ def evaluate(m, item):
         fails.append(f"only {max(w, h)} px on the long side (minimum {T['min_long_side']}): regenerate at the full size")
     c = m["colour"]
     if c > T["colour_fail"]:
-        fails.append(f"coloured image ({c:.0%} saturated pixels): pure black ink only")
+        fails.append(f"coloured image ({c:.0%} tinted-ink pixels): pure black ink only")
     elif c > T["colour_warn"]:
-        warns.append(f"tinted ink or coloured accents ({c:.0%} saturated pixels): look closely; the book prints black ink only")
+        warns.append(f"tinted ink or coloured accents ({c:.0%} tinted-ink pixels): look closely; the book prints black ink only")
     if m["nonpaper"] < T["blank_fail"][reg]:
         fails.append(f"almost no ink ({m['nonpaper']:.1%}): blank or failed generation")
     elif m["nonpaper"] < T["sparse_warn"][reg]:

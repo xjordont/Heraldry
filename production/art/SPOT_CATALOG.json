@@ -4270,9 +4270,10 @@
    ],
    "brief": {
     "identity": "Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies.",
-    "composition": "Full figure in three-quarter view swooping down on beating wings, both taloned feet thrust forward, head thrown back mid-song, over a small patch of bare ground.",
+    "composition": "Full figure in three-quarter view swooping down on beating wings, both taloned feet thrust forward, gaunt head jutting forward mid-shriek, over a small patch of bare ground.",
     "details": [
-     "Woman's torso and face with ragged hair, hollow cheeks",
+     "Gaunt, hag-like human face with ragged matted hair and hollow cheeks",
+     "Body covered in filthy, matted carrion-bird feathers from the neck down, hung with torn rags",
      "Large carrion-bird wings, ragged feathers, long primaries",
      "Legs of a bird of prey with hooked talons",
      "Tail of dirty feathers",
@@ -4280,9 +4281,10 @@
      "Filth-streaked feathers",
      "A scatter of bones on the ground below"
     ],
-    "atmosphere": "Beautiful and filthy.",
+    "atmosphere": "Foul, starved and ravenous.",
     "avoid": [
      "Not a siren or angel: ragged and foul",
+     "No bare skin on the torso: feathers and rags cover the body",
      "No wing-arms: the wings and the arms are separate limbs"
     ],
     "must": [
@@ -4293,7 +4295,7 @@
      "9.7 The Bestiary, Greenmark Bestiary: Harpy [Cannon]"
     ]
    },
-   "spec_sha256": "29e55e8cb204ae1d832c54f5acab02a80300c7ff2fde26ec7546c53b559e645b"
+   "spec_sha256": "5e3866cf6e885903461596c68bd5a3fa5bd6e2f3efd7d5027702560f740d7b1f"
   },
   {
    "id": "ART-MON-GOBLIN-SHAMAN",
@@ -4580,7 +4582,7 @@
     "identity": "Dryad Grovewarden, Greenmark Controller, medium: a bark-skinned fey tree-spirit crowned in living branches that binds intruders with roots.",
     "composition": "Full figure in three-quarter view striding forward, staff extended, roots snaking from its feet into the ground.",
     "details": [
-     "Bark-textured skin and a woman-shaped body",
+     "Bark-textured skin on a tall, slender figure clothed from neck to knee in overlapping leaves and bark plates",
      "Crown of living branches and leaves",
      "Long hair of vines",
      "Entangling staff of twisted wood",
@@ -4598,7 +4600,7 @@
      "9.7 The Bestiary, Greenmark Bestiary: Dryad Grovewarden [Controller]"
     ]
    },
-   "spec_sha256": "a1f97bba65b1f0c4c2884d8291af701e4d5a3f182d161b460cc2b8cda4e52e51"
+   "spec_sha256": "33d86390a154143bf0534d32d4e4ef49910593e8c69f5af3b8dd0cd9c321111d"
   },
   {
    "id": "ART-MON-FOREST-TROLL",
@@ -5892,7 +5894,7 @@
      "Grey scaly hide, head crest, lizard muzzle",
      "Two clawed hands, long and hooked",
      "Hide on one side mottled like bare stone",
-     "Naked body with a simple rag belt",
+     "Scaly reptilian hide, wearing only a rag loincloth on a rope belt",
      "Hunched predator stance",
      "Sickly fume lines from the body to show the stench",
      "A low lump of rock at its feet that its mottled hide matches"
@@ -5907,7 +5909,7 @@
      "9.7 The Bestiary, Undermarches Bestiary: Troglodyte [Soldier]"
     ]
    },
-   "spec_sha256": "ad2125208adc716bf4cbd7aeabad8ca53346cb87421746f60c72cce98cf49e32"
+   "spec_sha256": "c727571b703cbbcc49e0ce9aec96048697f415c13c5616d72264258ce0db0615"
   },
   {
    "id": "ART-MON-GIANT-BLACK-WIDOW",
