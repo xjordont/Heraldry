@@ -529,5 +529,38 @@
    "max_print_w_in_300ppi": 5.103
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAS-GREYTHORN": {
+  "family": "bastion",
+  "title": "Greythorn",
+  "heading_id": "h-greythorn",
+  "route": "gpt",
+  "spec_sha256": "ec715ecb430476533435fb6602611bfeb3f87155d596793dc3f699176e787be0",
+  "prompt_sha256": "d5b79f1107ff3ecb65ca2c39b95548cf08e42a3591d2fe1a882095369d64ac68",
+  "status": "received",
+  "received_at": "2026-10-12T05:42:46+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Tree canopy, trunks and roots touch the frame; white vignette is incomplete. Linework is unusually fine and engraved for the batch grit target.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAS-GREYTHORN.png",
+   "sha256": "666b6dde804935ac1002bb832142e9b52155b26b7cb3727155339e2e381e21e5",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAS-GREYTHORN.png",
+   "sha256": "be6abaafd12527d3e3be5fdf432db14a8c7997a953a545ce8bf54ecf00fc9c6f",
+   "px": [
+    1536,
+    1024
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.12
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
