@@ -4993,5 +4993,38 @@
    "max_print_w_in_300ppi": 3.143
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-PALADIN": {
+  "family": "class",
+  "title": "Paladin",
+  "heading_id": "h-paladin-45-complexity",
+  "route": "gpt",
+  "spec_sha256": "2e51dc82ec1c3b08ad78ca2f054fcacb07ebc24ef1e4f0ead8e1079a243ef4e7",
+  "prompt_sha256": "b277dd06f97c1d2b837938e78eb67e530b504e6a9a31444b228b3eab29f71cbc",
+  "status": "received",
+  "received_at": "2026-10-12T17:29:39+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-PALADIN.png",
+   "sha256": "3062678ea7b43ced3c94939c70f410c616c6128a574ab9d4d929be5318fb18d8",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-PALADIN.png",
+   "sha256": "20905b4c777c04dff6a962194260a5082ff1794a565fcbfe2ceb4b4753ecda04",
+   "px": [
+    802,
+    1497
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.673
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
