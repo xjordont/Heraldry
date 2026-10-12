@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-12T03:52:03+00:00",
+ "generated_at": "2026-10-12T03:54:25+00:00",
  "max_references": 6,
  "push_every": 1,
  "review_every": 10,
@@ -128,7 +128,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -156,7 +156,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -231,7 +231,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -752,7 +752,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -777,7 +777,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -856,7 +856,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -882,7 +882,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -983,7 +983,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -1007,7 +1007,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -1033,7 +1033,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1058,7 +1058,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1082,7 +1082,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -1132,7 +1132,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -1235,7 +1235,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -1264,7 +1264,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -1292,7 +1292,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -1316,7 +1316,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -1368,7 +1368,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1524,7 +1524,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1548,7 +1548,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -1676,7 +1676,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -1702,7 +1702,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1754,7 +1754,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2012,7 +2012,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2037,7 +2037,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2063,7 +2063,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2116,7 +2116,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -2140,7 +2140,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2168,7 +2168,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -2195,7 +2195,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2245,7 +2245,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2270,7 +2270,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2295,7 +2295,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2346,7 +2346,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2371,7 +2371,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2396,7 +2396,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2422,7 +2422,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2447,7 +2447,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2499,7 +2499,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2525,7 +2525,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -2574,7 +2574,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2625,7 +2625,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2675,7 +2675,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2701,7 +2701,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2727,7 +2727,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2753,7 +2753,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2853,7 +2853,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2931,7 +2931,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2955,7 +2955,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -2980,7 +2980,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -3006,7 +3006,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -3032,7 +3032,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -3085,7 +3085,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3110,7 +3110,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -3135,7 +3135,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -3160,7 +3160,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -3398,7 +3398,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -3425,7 +3425,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -3450,7 +3450,7 @@
    "references": [
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
-    "assets/art/style/STYLE-REF-62-ratman-warrior.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
     "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg"
    ],
    "max_attempts": 1,
@@ -3577,7 +3577,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -3602,7 +3602,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -3627,7 +3627,7 @@
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-68-coiled-serpent-dragon.jpg",
     "assets/art/style/STYLE-REF-73-manticore.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg"
+    "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -5995,7 +5995,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6020,7 +6020,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6046,7 +6046,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6071,7 +6071,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6096,7 +6096,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6121,7 +6121,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6146,7 +6146,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6171,7 +6171,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6196,7 +6196,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6221,7 +6221,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6246,7 +6246,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6271,7 +6271,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6296,7 +6296,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
@@ -6321,7 +6321,7 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
