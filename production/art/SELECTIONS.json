@@ -5158,5 +5158,38 @@
    "max_print_w_in_300ppi": 3.227
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-WIZARD": {
+  "family": "class",
+  "title": "Wizard",
+  "heading_id": "h-wizard-45-complexity",
+  "route": "gpt",
+  "spec_sha256": "6d0567e4e2aec2da3d2281687e93036c63bcb6eab3502955d1753ace86eaacd1",
+  "prompt_sha256": "01f1c05f80c6f3eefb69e88dfb7faf7ce1490a52d91d0e9aa6cb1362044ab34b",
+  "status": "received",
+  "received_at": "2026-10-12T17:45:42+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-WIZARD.png",
+   "sha256": "89b6c7e7e9d003146cab431b55a8fa3efe15e0f2b63dbed90b2de8a221fa6c41",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-WIZARD.png",
+   "sha256": "2759141f6f983cb5827a7ad232181dcf849515139b6bbd9a855c19d99c05a44d",
+   "px": [
+    1015,
+    1502
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.383
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
