@@ -136,3 +136,7 @@ Work cannot authenticate git, and a credential must never be pasted into a chat 
   - runs the intake;
   - records the bundle in `IMPORTED.json` and removes the ZIP.
 - **Limits:** ChatGPT's GitHub plugin passes file contents only as inline text (about 1 MB at most), so it cannot carry images or bundles. Whether the image tool accepts the listed references can only be shown by the first real item.
+
+## Heraldic marks (owner 2026-10-12)
+
+The logo and the fifteen chapter arms are generated with the Gemini image API on an explicit owner instruction. Prompts are in `production/art/marks/PROMPTS.json`; generation runs through `tools/mark_generate.py` in the manual "Generate heraldic marks" workflow. It shares the budget cap and the ledger. Candidates land in `assets/art/marks/candidates/` for review. The book illustrations still go through Codex.
