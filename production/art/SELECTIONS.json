@@ -5290,5 +5290,368 @@
    "max_print_w_in_300ppi": 3.35
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-DWARF": {
+  "family": "ancestry",
+  "title": "Dwarf",
+  "heading_id": "h-dwarf",
+  "route": "gpt",
+  "spec_sha256": "2f92a29ce28708e821d5ee92d8db216e17722f58c4632c5d65be7465c3d011ab",
+  "prompt_sha256": "1d597a4d8d6f8cbdd437226a30a51dc50a03daaf44c6a9b795a9263bedbc6dbd",
+  "status": "received",
+  "received_at": "2026-10-12T17:55:59+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-DWARF.png",
+   "sha256": "c55829a2feffc0c596e14883cb8626b53c8911981b0aa547548003b19bcf999e",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-DWARF.png",
+   "sha256": "3e9cf7fb71acddfda798554c2fa9f75835e8811d10ea85f17b4ffa68e4f9fb6c",
+   "px": [
+    979,
+    1400
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.263
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-ELF": {
+  "family": "ancestry",
+  "title": "Elf",
+  "heading_id": "h-elf",
+  "route": "gpt",
+  "spec_sha256": "6294e35ae144a386e4ac442c437997596aef468e74a78e9bcdc2f4af7f22c42b",
+  "prompt_sha256": "68c319f4e0af1cd8b0dca8c30dafeaa4f0a1abef390e14b7ea0087f3c9d519a1",
+  "status": "received",
+  "received_at": "2026-10-12T17:58:30+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-ELF.png",
+   "sha256": "c09afc302a6086352c8c89bb0c3ea7af792326ed94731b93f5d36c15bb3ae89b",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-ELF.png",
+   "sha256": "aaa4d898e491f7346974de46b909557cb9b64bf9d6ce284d846f3ac5e4aaa372",
+   "px": [
+    842,
+    1466
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.807
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-GNOME": {
+  "family": "ancestry",
+  "title": "Gnome",
+  "heading_id": "h-gnome",
+  "route": "gpt",
+  "spec_sha256": "310c64342f573e6b8d624655942dc5e4715734aa028735ca5b4a95298e8c1614",
+  "prompt_sha256": "a8340c264dc5133d599bae163112c99a5e8051f4d553d45ffafbb03abd9922b1",
+  "status": "received",
+  "received_at": "2026-10-12T18:01:42+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-GNOME.png",
+   "sha256": "c48b5f840251a81b5b89e0b2157b9c1464d694481bd7a30730ff25df58fde1c0",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-GNOME.png",
+   "sha256": "65de9eb727a1f0418d40386dac4034224a199c697886306300f8b42849000104",
+   "px": [
+    1001,
+    1377
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.337
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-GOBLIN": {
+  "family": "ancestry",
+  "title": "Goblin",
+  "heading_id": "h-goblin",
+  "route": "gpt",
+  "spec_sha256": "b746adae5a00181766c13491cc6930ef09c464dfd1522bba29932c075b8e5727",
+  "prompt_sha256": "3e3559d04efd52bbd19b9279e3a60db638d7d090e4918becb4d6402ebb520a4f",
+  "status": "received",
+  "received_at": "2026-10-12T18:04:37+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-GOBLIN.png",
+   "sha256": "f01c574e69f85b47cf47dfb884cb9e68ab167ad08e528eb1da9e8dd69d6a9ffe",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-GOBLIN.png",
+   "sha256": "8c042f6144646665fd22ddc50ec2b7b3c1bb528ac8ecf40110754dcfc94474d3",
+   "px": [
+    979,
+    1474
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.263
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-HALFLING": {
+  "family": "ancestry",
+  "title": "Halfling",
+  "heading_id": "h-halfling",
+  "route": "gpt",
+  "spec_sha256": "041591bec59557adac15c65e62de127a3022c6211915295d9d516c1031fde03d",
+  "prompt_sha256": "150a11d11727432db03cf9714d9c5639a8c8dff8eac3e2ef1675bf7770e7d911",
+  "status": "received",
+  "received_at": "2026-10-12T18:07:44+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-HALFLING.png",
+   "sha256": "79b6e558bb859a9ecc522992d91ee899ec095bc4d8f3e971ed87bd65550ff704",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-HALFLING.png",
+   "sha256": "dc9afd04a90e69a28a6b165ed45263c002ebb0809191e961050b6f2afed2af5e",
+   "px": [
+    996,
+    1255
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.32
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-HUMAN": {
+  "family": "ancestry",
+  "title": "Human",
+  "heading_id": "h-human",
+  "route": "gpt",
+  "spec_sha256": "a9f6f4cdfec3502416d34c1bc5ec18f68903c3adf7713e657f15bad8970a0175",
+  "prompt_sha256": "e332707f796ed742e5abfc64216cb7b0cd5156bc722af79a458eea47d37063fb",
+  "status": "received",
+  "received_at": "2026-10-12T18:10:31+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Long trailing cloak echoes the Elf's prohibited silhouette; no exotic traits or plate. Midtone is ink hatch.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-HUMAN.png",
+   "sha256": "7b13f56b724f9d7b95f0ae61ee70d98079065d79e738af5f573586eda966e01c",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-HUMAN.png",
+   "sha256": "aefd1018bdc93bf5c71f91ff70e339baa59a10b3e626ce89dcbc1f958cfc1a52",
+   "px": [
+    891,
+    1471
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.97
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-ORC": {
+  "family": "ancestry",
+  "title": "Orc",
+  "heading_id": "h-orc",
+  "route": "gpt",
+  "spec_sha256": "b4bfdfe7cbda595c931b760827fadbf6773ad7a5445e0ee1989adef38911987a",
+  "prompt_sha256": "220dab7688262af60d32cc1aac871b059ff233e9c5af3ed46c5e1cff95375417",
+  "status": "received",
+  "received_at": "2026-10-12T18:13:36+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-ORC.png",
+   "sha256": "fda3d42bb7716812e0030e59711ca0175560bc7a914a76d8de3019f87d966901",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-ORC.png",
+   "sha256": "143799c60d5b4bc5409af6ac879fc50900667ac297cc9f81c3d0f92a83dfc6e1",
+   "px": [
+    877,
+    1485
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.923
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-RATKIN": {
+  "family": "ancestry",
+  "title": "Ratkin",
+  "heading_id": "h-ratkin",
+  "route": "gpt",
+  "spec_sha256": "ba13ea12b512c7b93d4811fcadce23d9a16249b710ea7bd95a1033e60be30e22",
+  "prompt_sha256": "86fd1044108229845f02b259451e6cc026349508594ce4e3f2faaac0ef63a2c7",
+  "status": "received",
+  "received_at": "2026-10-12T18:16:30+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-RATKIN.png",
+   "sha256": "dae9f04f1f5f340b359d69aa2d4ed4c9a279636fa2cde110febac8ce8273e9bc",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-RATKIN.png",
+   "sha256": "a5262b538e8e6f4a2f395de9693c7fe0aa7273e47904ad769828a32d04926f9e",
+   "px": [
+    864,
+    1442
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.88
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-AVATAR-OF-THE-OLD-GROWTH": {
+  "family": "boss",
+  "title": "Avatar of the Old Growth",
+  "heading_id": "h-avatar-of-the-old-growth-boss",
+  "route": "gpt",
+  "spec_sha256": "6894b209b0ebb165516df774fffac91a908bf5adec2949642d9e9ff7c874a05d",
+  "prompt_sha256": "b936c30f647e3318bb22af32308d560cbe05bb4611fd0971491e364365950ad0",
+  "status": "received",
+  "received_at": "2026-10-12T18:20:23+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Organic subject readable and correct; required 5-8 percent white vignette margin is missing, with trees and ground detail at the edges.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-AVATAR-OF-THE-OLD-GROWTH.png",
+   "sha256": "8226abb8ed6cda3cce1a5cb8ced9d7948da984becb5750c82fb8a9f6483e427d",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-AVATAR-OF-THE-OLD-GROWTH.png",
+   "sha256": "fdc383a84e980bbd9510f3b9b9ae71e9d2ff47b1634e2286de019692a54c05ce",
+   "px": [
+    1512,
+    1022
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.04
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN": {
+  "family": "boss",
+  "title": "Captain Veyr of the Forsaken",
+  "heading_id": "h-captain-veyr-of-the-forsaken-boss",
+  "route": "gpt",
+  "spec_sha256": "4750aca558270fdc25f306ca8ff35463c4d124d6b3177a26e7d331c34e0ad5bd",
+  "prompt_sha256": "e999c44912fcf435a1b890518f3acc220ef1b6e6580a1266e7858b94720d73ce",
+  "status": "received",
+  "received_at": "2026-10-12T18:24:08+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Veyr's gender-neutral armored figure and solid black visor slit are clear. Battlefield has no required organic 5-8 percent white vignette margin.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN.png",
+   "sha256": "d31cca351d840c28998eb31ece9a362a4d1882b1b83baadd3434b57f468b1fdf",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN.png",
+   "sha256": "373b033daed3338df1f1b4c4a51c56016ed6173d5c4cc3f1c6f05b100ce19b93",
+   "px": [
+    1512,
+    1001
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.04
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-KHORRUN-THE-DRACOLICH": {
+  "family": "boss",
+  "title": "Khorrun the Dracolich",
+  "heading_id": "h-khorrun-the-dracolich-boss",
+  "route": "gpt",
+  "spec_sha256": "6d24dabc0c45583c2e21925a4001ae7c754aae3a4a7e896bc3ec4bc426ab9ed3",
+  "prompt_sha256": "860f17e03c396273984fa240b3fbf44b3f1e4973be3a8752b8216cb68dd40741",
+  "status": "received",
+  "received_at": "2026-10-12T18:28:34+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Subject, unlit sockets, and unreadable ledgers are correct; required 5-8 percent organic white vignette is missing, with architecture at the image edges.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-KHORRUN-THE-DRACOLICH.png",
+   "sha256": "2fe579a5f647c7a8d8398a91c4206b1199a781dc101c91c35489a4f54e0daef7",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-KHORRUN-THE-DRACOLICH.png",
+   "sha256": "9f77f8f45ca8a27252e7a904650d1f7e92d532472541d047fc081aa5976448cc",
+   "px": [
+    1532,
+    999
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.107
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
