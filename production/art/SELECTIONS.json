@@ -5752,5 +5752,38 @@
    "max_print_w_in_300ppi": 5.09
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE": {
+  "family": "boss",
+  "title": "The Antlered Warden of the Tithe",
+  "heading_id": "h-the-antlered-warden-of-the-tithe-boss",
+  "route": "gpt",
+  "spec_sha256": "48e9ba7f59ebc2af9fb5e1d1ae5f716965ebe8fb50351cfe778383ecf9bd0e64",
+  "prompt_sha256": "ae1ceedfb1e1fcdd9d06452855c1fe68035760283995e161ea867b2efea39670",
+  "status": "received",
+  "received_at": "2026-10-12T18:49:07+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "One generation; image has detailed linework near perimeter, weakening the required 5-8% clean vignette; correction sentences were appended.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE.png",
+   "sha256": "b28d90ad4c27845242ae6c480f8126a6f7933489ed65513a8b58a9c0d0a514c0",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE.png",
+   "sha256": "23b15dbc05bb8d7f8d78a05a245755ad88a2ca707d884253af7bc7309c3d83f2",
+   "px": [
+    1527,
+    1023
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.09
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
