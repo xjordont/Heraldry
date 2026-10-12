@@ -393,3 +393,8 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Caveat recorded:** it looks machine-made and very dense, with noticeable grey (43% mid-tones). Like STYLE-REF-11, it is attached on the owner's instruction.
   - The figure test lists it as scenic. The queue was republished, with prompts unchanged.
 - **Wolf pack restored** (owner, 2026-10-12: "22 wolf pack for beasts"). STYLE-REF-22 is back in the beast set, which now holds 4. All 275 items carry 4 references. The figure test records 22 as the one owner-approved exception to its no-scenery rule. The queue was republished, with prompts unchanged.
+- **Item references** (owner, 2026-10-12: "40 scythe for item; 27 scroll case for item, bone cross for item (not background)").
+  - The item set is now 15 sword and mace, 40 scythe, 27 scroll case and 33 bone cross. 19 and 25 left items and stay in background, which is now four images used nowhere else.
+  - 24 flanged mace is unattached: the cap of 4 forced one out, and it is the cleanest still life.
+  - 27 carries a pseudo-writing risk, accepted by the owner. The queue was republished, with prompts unchanged.
+  - Remaining for four unique images in every set: cover, chapter and world 3 each; vermin, humanoid and magical 2 each; beast 2; scenario 1; boss 1.

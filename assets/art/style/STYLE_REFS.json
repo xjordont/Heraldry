@@ -359,7 +359,7 @@
    "category": "still life: gear",
    "role": "Pack, coiled rope and lantern on a ground line; scratchy pen hatching",
    "caveat": "",
-   "use": "attached to reference sets: background, item, still; never placed or packaged"
+   "use": "attached to reference sets: background, still; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-20-armoury-interior.jpg",
@@ -424,7 +424,7 @@
    "category": "still life: equipment",
    "role": "Single flanged mace, clean line, isolated",
    "caveat": "very clean and light, closer to the old style",
-   "use": "attached to reference sets: item; never placed or packaged"
+   "use": "on file, not attached to any generation set; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
@@ -437,7 +437,7 @@
    "category": "still life: equipment",
    "role": "Pair of bracers, heavy blacks, stipple cast shadow",
    "caveat": "grey gradient background and a stipple shadow",
-   "use": "attached to reference sets: background, item, still; never placed or packaged"
+   "use": "attached to reference sets: background, still; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
@@ -463,7 +463,7 @@
    "category": "still life: item",
    "role": "Carved scroll case with stipple ground shadow",
    "caveat": "pseudo-script carved on it: lettering risk",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: item; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
@@ -541,7 +541,7 @@
    "category": "still life: item",
    "role": "Rope-bound cross of bone or wood, isolated; scratchy hatching",
    "caveat": "small (717 px wide); faint grey paper texture at the left edge",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: item; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
@@ -632,7 +632,7 @@
    "category": "still life: equipment",
    "role": "Crude scythe-pick with a rag-wrapped haft, isolated",
    "caveat": "small (467 px tall)",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: item; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-48-bearded-warrior-snow.jpg",
