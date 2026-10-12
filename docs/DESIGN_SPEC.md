@@ -1,5 +1,7 @@
 # Heraldry publication design specification
 
+> **2026-10-12:** `docs/BOOK_DESIGN_PLAN.md` (design system v2, "Ink and Iron") supersedes this document's visual identity: display face, heading, furniture and component styling, and the page-type templates. Grid, print, source-fidelity and pagination rules here and in DESIGN_REFINEMENT.md remain in force.
+
 Status: implementation brief, distilled from the ten owner-selected visual references. `docs/DESIGN_REFINEMENT.md` supplies the latest owner-requested iteration and overrides the earlier specimen freeze. These specifications guide the first stress specimen. Tune optical details once after rendering, then apply the resulting system consistently. MASTER_PROMPT.md governs source preservation and completion. The manuscript governs all mechanics and terminology.
 
 ## 1. Visual identity
