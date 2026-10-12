@@ -343,3 +343,15 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Queue:** republished with 263 items, the tarantula redo first. Only the tarantula prompt changed. The queue-count test now allows for batch approvals.
   - **Next session:** stop after 11 images, which covers the ten reference sets not yet tested.
   - Codex's Ranger delivery went out before its drift review; the review was done right after it and found only the margin note. No build; `dist/` still describes the RC492 build.
+- **Fresh start for all artwork** (owner, 2026-10-12: "clear the previously approved images so we can start fresh from the first image on our next run"; scope chosen: all 12).
+  - **Cleared:** Greythorn, the four hand-inked anchors, the seven batch images just approved, and the rejected Giant Tarantula. Their native images and ink derivatives are removed from the working tree (they stay in Git history and LFS), and their SELECTIONS entries are deleted, so every item is pending again rather than a redo.
+  - **Kept:**
+    - the twelve original atmospheric masters, the build's chapter and cover fallback;
+    - the owner-authored Greythorn prompt (`OWNER_PROMPTS.json`), still used verbatim;
+    - `RECEIPTS.jsonl`, which is append-only.
+  - **Queue:** republished with all 275 items, the seventeen lead items first (one per reference set). It records `receipts_base` (19 lines), and `heraldry_art` counts drift reviews only from receipts written after that, so the first review falls at image 10 (test added).
+  - **Also:**
+    - the skill ZIP no longer carries the Greythorn render as a bonus reference (generated images are never references);
+    - `.gitattributes` drops the Greythorn exemption;
+    - `assets/art/ink/README.md` keeps the folder present for the intake's `git add`.
+  - **Next Codex run:** stop after 17. No build; `dist/` still describes the RC492 build, which contains the six earlier anchors.

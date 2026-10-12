@@ -19,14 +19,14 @@ ZIP = ROOT / "build/art/Heraldry_Classic_Ink_Art_Skill_v7_0.zip"
 VERSION = "7.0.0"
 STAMP = (2026, 10, 10, 0, 0, 0)
 def _images():
-    """The approved Greythorn render plus every reference image any queue item can attach (config gpt_reference_sets)."""
+    """Every reference image any queue item can attach (config gpt_reference_sets)."""
     rs = json.loads((ROOT / "config/art_style.json").read_text(encoding="utf-8"))["gpt_reference_sets"]
     use = {}
     for name, refs in [*rs["sets"].items(), *rs.get("family_sets", {}).items(), *((k, v["refs"]) for k, v in rs.get("kind_sets", {}).items())]:
         for r in refs:
             if "/" in r:
                 use.setdefault(r, []).append(name)
-    out = {"references/images/ART-BAS-GREYTHORN.jpg": ("assets/art/incoming/ART-BAS-GREYTHORN.jpg", "scene; the owner's approved ChatGPT render")}
+    out = {}
     for r in sorted(use):
         out["references/images/" + Path(r).name] = (r, "reference for: " + ", ".join(sorted(set(use[r]))))
     return out

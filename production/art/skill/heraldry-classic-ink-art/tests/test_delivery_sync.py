@@ -276,6 +276,15 @@ class DriftCountIsMonotonic(CadenceRepo):
             with self.assertRaises(self.ha.Fatal):
                 self.ha.archive_copy(self.repo, 'ART-T0.png', b'x')
 
+    def test_receipts_from_before_the_queue_do_not_count_toward_drift_reviews(self):
+        self.queue(3)
+        for n in range(3):
+            self.make(n)                               # three old receipts, as after a reset
+        q = json.loads((self.repo / 'production/art/gpt/QUEUE.json').read_text())
+        self.assertEqual(self.ha.saved_receipt_lines(self.repo, q), 3)
+        q['receipts_base'] = 3                         # the queue was republished after them
+        self.assertEqual(self.ha.saved_receipt_lines(self.repo, q), 0)
+
     def test_style_audit_skips_images_held_as_lfs_pointers(self):
         import style_audit as sa
         self.queue(10)

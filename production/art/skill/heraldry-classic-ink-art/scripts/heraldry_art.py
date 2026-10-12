@@ -233,10 +233,12 @@ def last_receipts(repo):
 
 
 def saved_receipt_lines(repo, q):
-    """Number of non-refusal receipt lines for queue items: a monotonic count of saved images (redos included)."""
+    """Number of non-refusal receipt lines for queue items written since the queue was published (its receipts_base):
+    a monotonic count of saved images, redos included."""
     queued = {it["id"] for it in q["items"]}
     f, n = repo / RECEIPTS_REL, 0
-    for line in f.read_text(encoding="utf-8").splitlines() if f.is_file() else []:
+    lines = [x for x in f.read_text(encoding="utf-8").splitlines() if x.strip()] if f.is_file() else []
+    for line in lines[int(q.get("receipts_base") or 0):]:
         try:
             r = json.loads(line)
         except ValueError:
