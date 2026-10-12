@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-12T03:02:52+00:00",
+ "generated_at": "2026-10-12T03:04:16+00:00",
  "max_references": 4,
  "push_every": 1,
  "review_every": 10,
@@ -102,7 +102,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -825,7 +826,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -902,7 +904,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -952,7 +955,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1176,7 +1180,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1335,7 +1340,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1795,7 +1801,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1874,7 +1881,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2080,7 +2088,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2463,7 +2472,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2891,7 +2901,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -3172,7 +3183,8 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",

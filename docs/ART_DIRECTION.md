@@ -19,7 +19,7 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   | Images | References |
   |---|---|
   | Monsters: undead (30) | 04 skeleton king, 03 skeleton warrior, 52 crowned lich, 51 bandaged mummy |
-  | Monsters: beasts (12) | 18 bear, 38 gnoll, 16 dragon-man |
+  | Monsters: beasts (12) | 18 bear, 38 gnoll, 16 dragon-man, 22 wolf pack (owner-approved scenery risk) |
   | Monsters: vermin and aberrations (17) | 16 dragon-man, 36 crab insectoid, 18 bear, 35 grub beast |
   | Monsters: humanoids and beastfolk (39) | 38 gnoll, 41 Callot beggar, 04 skeleton king, 32 goat-folk spearman |
   | Monsters: dragons, demons, elementals, constructs (22) | 16 dragon-man, 28 wizard vs fiend, 18 bear, 50 flame-sword elf |
@@ -43,8 +43,8 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
 - **Bank promoted** (owner, 2026-10-12: "promote them if there is room ... include risky"): one banked image joined each set it fits best, shown in the table above. The owner accepted these risks:
   - 12 and 17 carry grey tone, 23 screen tone, and 30 and 31 stipple fields: the generator may copy the tone, which the checks still reject.
   - 32, 35 and 39 are small; 24 is cleaner than the core.
-- **Owner samples 45 to 52** (2026-10-12): see the table. 52 lich and 51 mummy replace 38 gnoll in the undead set (38 stays in beasts and humanoids). The owner removed 22 wolf pack the same day.
-- **Still on file, not attached:** 22 wolf pack (removed by the owner); 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life), 27 (pseudo-script), 33 bone cross and 40 scythe (small still lifes; no slot left).
+- **Owner samples 45 to 52** (2026-10-12): see the table. 52 lich and 51 mummy replace 38 gnoll in the undead set (38 stays in beasts and humanoids). The owner removed 22 wolf pack the same day, then restored it to beasts.
+- **Still on file, not attached:** 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life), 27 (pseudo-script), 33 bone cross and 40 scythe (small still lifes; no slot left).
 - **Still open:** no gritty desert, ash-waste or snow landscape example exists in the public domain at usable quality. Those climates rely on their prompts plus the general landscape references 44, 13 and 07.
 - **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached, because grey tone cannot print in black ink.
 - **Cut and superseded:** the owner cut STYLE-REF-01 (it remains in git history) and replaced it with STYLE-REF-11, an owner exception to the rule against machine-made references.
