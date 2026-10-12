@@ -5125,5 +5125,38 @@
    "max_print_w_in_300ppi": 3.383
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-TRICKSTER": {
+  "family": "class",
+  "title": "Trickster",
+  "heading_id": "h-trickster-55-complexity",
+  "route": "gpt",
+  "spec_sha256": "88b2047abd5f9868ab946efb742699036917297c051553ae91116855026d737a",
+  "prompt_sha256": "8d2709e80274c2479ff12be1ad8cd1e28e2b563ffe5b71984ab33e7b50661a9b",
+  "status": "received",
+  "received_at": "2026-10-12T17:42:55+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Contradictory card: composition requires rapier flicked out, final prohibition says do not draw it. Image follows composition, so rapier is drawn. No mask, crouch, or lockpicking.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-TRICKSTER.png",
+   "sha256": "4cbd6ed66e79b657e1286a9d35d3ab870bcc2880fb0b8276e37452add9d6f0e1",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-TRICKSTER.png",
+   "sha256": "e5f812a731783d027b942e38aae5b2b70c29cc34b0c5b6a4f0da59110e00ec54",
+   "px": [
+    968,
+    1495
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.227
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
