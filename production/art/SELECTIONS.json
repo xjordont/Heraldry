@@ -414,17 +414,17 @@
   "title": "The Last Colossus",
   "heading_id": "h-the-last-colossus-boss",
   "route": "gpt",
-  "spec_sha256": "be275483235c57575456d62216bfd0bd5ea9fe6961cb9459a338a654258faa5f",
-  "prompt_sha256": "4b1dab7ec5e198c513f2391f9f86730f4dae51dd815cf5a9b2f04ecbb1925b7b",
-  "status": "rejected",
-  "received_at": "2026-10-12T15:30:27+00:00",
+  "spec_sha256": "b6d0c1db7e394bab27a63cc3c4c3684d076eedcdcdab12b1b6e8b23a40625636",
+  "prompt_sha256": "2611867ae22cd1817c17d515c403c757651361ce69a4511a4ba4d1fde49d6363",
+  "status": "received",
+  "received_at": "2026-10-12T16:15:36+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Redo correction applied: human head is intended level with the Colossus knee, both on the same road; visually the human remains far shorter, and the vignette marks reach the perimeter.",
+  "notes": "Correction: show a side-on, eye-level view, with the mans head level with the Colossuss knee, and generate at the maximum available resolution for this 3:2 aspect. Correction: keep both on the same road surface and the Colossus exactly three times the mans height. Remaining flags: low-angle perspective still exaggerates scale; the edge vignette is incomplete.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-MON-THE-LAST-COLOSSUS.png",
-   "sha256": "997468e7f9c9b187466eb217e584a4687a9d98a3509257d7ac3c0418b47924bb",
+   "sha256": "64af17aaadce7c4b670f3c3f2b5510912d01f2b8ea52f007f2d95360b9a13b1c",
    "px": [
     1536,
     1024
@@ -432,17 +432,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-MON-THE-LAST-COLOSSUS.png",
-   "sha256": "1a33c342dc25d1bde7066aca507feab419e91c1a1cfd4c1e6e3862d2daadf0f7",
+   "sha256": "040dbb3409d653469b841975f529df6382410eb92759a4aeca34264381e8d662",
    "px": [
-    1511,
-    1008
+    1517,
+    1019
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 5.037
+   "max_print_w_in_300ppi": 5.057
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-12T15:57:37+00:00",
-  "rejected_reason": "Still about six times the man's height: the low angle exaggerates it. The composition is now side-on at eye level; keep the man's head level with the Colossus's knee."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-WOR-1-2-THE-GRIM-WORLD": {
   "family": "world",
