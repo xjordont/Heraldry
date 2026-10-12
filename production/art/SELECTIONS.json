@@ -694,5 +694,38 @@
    "max_print_w_in_300ppi": 5.103
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLI-THE-GREENMARK": {
+  "family": "climate",
+  "title": "The Greenmark",
+  "heading_id": "h-the-greenmark",
+  "route": "gpt",
+  "spec_sha256": "06acc0f3570bd7c61ff5709d3ceeffb4140c46bc4312719aa5d268986dea7f25",
+  "prompt_sha256": "83115823020828f3aed3ac6b70ca2ee69a15bd940788a12bdab45faff8200029",
+  "status": "received",
+  "received_at": "2026-10-12T06:10:22+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Hound-like forms are too legible as animals rather than barely seen silhouettes; grove ring is prominent.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLI-THE-GREENMARK.png",
+   "sha256": "adca39650c5981f1b1d3b527cfa05b1dd2b641954142fd4a7eba3418a3946c63",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLI-THE-GREENMARK.png",
+   "sha256": "ae8997dea9c82b5d8f7d079dce2275e7cf892d6ac056f5d2c48d25094df622e0",
+   "px": [
+    1526,
+    1016
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.087
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
