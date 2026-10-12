@@ -5092,5 +5092,38 @@
    "max_print_w_in_300ppi": 3.3
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-SORCERER": {
+  "family": "class",
+  "title": "Sorcerer",
+  "heading_id": "h-sorcerer-55-complexity",
+  "route": "gpt",
+  "spec_sha256": "11e1bd96fa02809f2f13bb84080168fb17c3ccca3e3b85cfec5661e677cbcd29",
+  "prompt_sha256": "913b1713048568d7b986361f85a830599f2a1d62f41a1ff26011ffaa87ab6ab3",
+  "status": "received",
+  "received_at": "2026-10-12T17:40:19+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Black lightning extends beyond the right edge, failing the clear white margin; no glow, scrolls, magnifier, staff pose, or gore.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-SORCERER.png",
+   "sha256": "cb8a07b272099d1da08e7271e05b3ab11c591de32185f02940c63fc6060148b5",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-SORCERER.png",
+   "sha256": "6a55d16f13a3c53cd5440548f93b26069b52d48e32e58f7911f5e7b26fc47198",
+   "px": [
+    1015,
+    1439
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.383
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
