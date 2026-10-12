@@ -242,12 +242,14 @@
 
 // ================================================================ base text and typesetting policy
 // Paragraph policy (docs/BOOK_DESIGN_PLAN.md section 13): no widows or orphans, no one-word last
-// lines ("runts"), hyphenation discouraged but allowed in narrow columns, ragged right.
+// lines ("runts"), hyphenation discouraged but allowed in narrow columns. Body text is justified
+// within limits (owner 2026-10-12); --body rag in the specimen renderer shows the ragged alternative.
 #let base(body) = {
   set text(font: serif, size: body-size, lang: "en", region: "CA", fill: ink, hyphenate: true,
     top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining",
     costs: (hyphenation: 140%, runt: 160%, widow: 1000%, orphan: 1000%))
-  set par(leading: body-lead, spacing: 6.5pt, justify: false, first-line-indent: 0pt)
+  set par(leading: body-lead, spacing: 6.5pt, justify: sys.inputs.at("body", default: "justify") == "justify", first-line-indent: 0pt,
+    justification-limits: (spacing: (min: 80%, max: 140%), tracking: (min: -0.012em, max: 0.025em)))
   set strong(delta: 200)
   set list(marker: (box(baseline: -1.2pt, lozenge(size: 4.4pt)), [–]), indent: 1pt, body-indent: 6pt, spacing: 4.5pt)
   set enum(indent: 1pt, body-indent: 6pt, spacing: 4.5pt, numbering: n => text(font: sans, weight: 700, size: 9pt)[#n.])
@@ -303,13 +305,13 @@
 #let lead-block(body, size: none, width: 80%) = block(width: 100%, above: 7pt, below: 11pt,
   align(center, block(width: width, align(if lead-mode == "justify" { left } else { center }, flavour-set(body)))))
 
-// Entry title: the banner tag always stands directly above its title, aligned as the title is,
-// 5 pt clear of the title's cap height; the title box is cut to cap height and baseline so the
-// spacing is exact for every face and size.
+// Entry title: the banner tag always stands directly above the top-left corner of its title,
+// 5 pt clear of the title's cap height, whether the title is set left or centred (owner 2026-10-12).
+// The title box is cut to cap height and baseline so the spacing is exact for every face and size.
 #let entry-title(name, tag-text, size: 21pt, al: left, tag-size: 6.8pt) = block(width: 100%, above: 0pt, below: 4pt, sticky: true,
-  align(al, stack(dir: ttb, spacing: 5pt,
-    tag(tag-text, size: tag-size),
-    text(font: goth, weight: 600, size: size, hyphenate: false, top-edge: "cap-height", bottom-edge: "baseline", name))))
+  align(al, box(stack(dir: ttb, spacing: 5pt,
+    align(left, tag(tag-text, size: tag-size)),
+    text(font: goth, weight: 600, size: size, hyphenate: false, top-edge: "cap-height", bottom-edge: "baseline", name)))))
 
 // Worked example: tinted field on a black spine, a banner tag.
 #let example(title: none, body) = block(width: 100%, above: 10pt, below: 11pt, breakable: false,
