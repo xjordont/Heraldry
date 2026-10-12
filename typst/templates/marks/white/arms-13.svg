@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 132" width="112pt" height="132pt">
+<defs><clipPath id="s"><path d="M0,0 H100 V50 C100,94 62,108 50,120 C38,108 0,94 0,50 Z"/></clipPath></defs>
+<g transform="translate(6,6)">
+<path d="M0,0 H100 V50 C100,94 62,108 50,120 C38,108 0,94 0,50 Z" fill="#FFFFFF"/>
+<g clip-path="url(#s)"><g fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"><circle cx="50" cy="17" r="4.5" fill="none" stroke="#000" stroke-width="2.4"/>
+<path d="M36,32 L50,21 L64,32 Z"/><rect x="34" y="32" width="32" height="4"/>
+<rect x="36" y="36" width="28" height="44"/>
+<rect x="39.5" y="39" width="9" height="38" fill="#FFFFFF"/><rect x="51.5" y="39" width="9" height="38" fill="#FFFFFF"/>
+<path d="M50,52 C53,58 55,62 53,67 C52,70 48,70 47,67 C45,62 48,58 50,52 Z"/>
+<rect x="32" y="80" width="36" height="5"/><rect x="36" y="85" width="5" height="6"/><rect x="59" y="85" width="5" height="6"/></g><g fill="#000"><circle cx="50" cy="17" r="4.5" fill="none" stroke="#000" stroke-width="2.4"/>
+<path d="M36,32 L50,21 L64,32 Z"/><rect x="34" y="32" width="32" height="4"/>
+<rect x="36" y="36" width="28" height="44"/>
+<rect x="39.5" y="39" width="9" height="38" fill="#FFFFFF"/><rect x="51.5" y="39" width="9" height="38" fill="#FFFFFF"/>
+<path d="M50,52 C53,58 55,62 53,67 C52,70 48,70 47,67 C45,62 48,58 50,52 Z"/>
+<rect x="32" y="80" width="36" height="5"/><rect x="36" y="85" width="5" height="6"/><rect x="59" y="85" width="5" height="6"/></g></g>
+<path d="M0,0 H100 V50 C100,94 62,108 50,120 C38,108 0,94 0,50 Z" fill="none" stroke="#000" stroke-width="5"/>
+<path d="M6,6 H94 V50 C94,88 60,100 50,111 C40,100 6,88 6,50 Z" fill="none" stroke="#000" stroke-width="1.2"/>
+</g>
+</svg>

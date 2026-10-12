@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 132" width="112pt" height="132pt">
+<defs><clipPath id="s"><path d="M0,0 H100 V50 C100,94 62,108 50,120 C38,108 0,94 0,50 Z"/></clipPath></defs>
+<g transform="translate(6,6)">
+<path d="M0,0 H100 V50 C100,94 62,108 50,120 C38,108 0,94 0,50 Z" fill="#FCFAF5"/>
+<g clip-path="url(#s)"><path d="M-120,0 L0,120 M-112,0 L8,120 M-104,0 L16,120 M-96,0 L24,120 M-88,0 L32,120 M-80,0 L40,120 M-72,0 L48,120 M-64,0 L56,120 M-56,0 L64,120 M-48,0 L72,120 M-40,0 L80,120 M-32,0 L88,120 M-24,0 L96,120 M-16,0 L104,120 M-8,0 L112,120 M0,0 L120,120 M8,0 L128,120 M16,0 L136,120 M24,0 L144,120 M32,0 L152,120 M40,0 L160,120 M48,0 L168,120 M56,0 L176,120 M64,0 L184,120 M72,0 L192,120 M80,0 L200,120 M88,0 L208,120 M96,0 L216,120" stroke="#000" stroke-width="0.9"/><g fill="#FCFAF5" stroke="#FCFAF5" stroke-width="5" stroke-linejoin="round"><path d="M30,100 L34,93 L28,88 L35,82 L29,76 L36,71 C36,57 40,46 47,38 L40,20 L53,33 C59,30 65,32 70,37 L86,46 L89,52 L76,55 L86,62 L84,65 L72,66 C64,70 59,76 56,84 L54,100 Z"/>
+<path d="M47,38 L44,30 L50,35 Z M53,33 L55,25 L58,32 Z" fill="#FCFAF5"/>
+<path d="M60,41 C64,38 68,40 69,43 C66,45 62,45 60,41 Z" fill="#FCFAF5"/><circle cx="66" cy="42.4" r="1.2"/>
+<circle cx="84" cy="49" r="1.3" fill="#FCFAF5"/>
+<path d="M76,55 L78,58.5 L80,55.4 L82,59 L84,56 Z M74,62 L76,59 L78,62.4 L80,59.6 L82,62.6 Z" fill="#FCFAF5"/>
+<path d="M42,52 L36,56 L43,57 L38,62 L45,61" stroke="#FCFAF5" stroke-width="1.3" fill="none"/></g><g fill="#000"><path d="M30,100 L34,93 L28,88 L35,82 L29,76 L36,71 C36,57 40,46 47,38 L40,20 L53,33 C59,30 65,32 70,37 L86,46 L89,52 L76,55 L86,62 L84,65 L72,66 C64,70 59,76 56,84 L54,100 Z"/>
+<path d="M47,38 L44,30 L50,35 Z M53,33 L55,25 L58,32 Z" fill="#FCFAF5"/>
+<path d="M60,41 C64,38 68,40 69,43 C66,45 62,45 60,41 Z" fill="#FCFAF5"/><circle cx="66" cy="42.4" r="1.2"/>
+<circle cx="84" cy="49" r="1.3" fill="#FCFAF5"/>
+<path d="M76,55 L78,58.5 L80,55.4 L82,59 L84,56 Z M74,62 L76,59 L78,62.4 L80,59.6 L82,62.6 Z" fill="#FCFAF5"/>
+<path d="M42,52 L36,56 L43,57 L38,62 L45,61" stroke="#FCFAF5" stroke-width="1.3" fill="none"/></g></g>
+<path d="M0,0 H100 V50 C100,94 62,108 50,120 C38,108 0,94 0,50 Z" fill="none" stroke="#000" stroke-width="5"/>
+<path d="M6,6 H94 V50 C94,88 60,100 50,111 C40,100 6,88 6,50 Z" fill="none" stroke="#000" stroke-width="1.2"/>
+</g>
+</svg>

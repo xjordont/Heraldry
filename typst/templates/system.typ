@@ -36,6 +36,7 @@
 #let body-lead = 3.3pt                // line pitch about 13.3pt
 
 // ================================================================ the armoury (original vector marks)
+#let mark(name) = "marks/" + substrate-name + "/" + name + ".svg"
 #let lozenge(size: 6pt, fill: ink) = box(width: size, height: size, baseline: 0.05em,
   polygon(fill: fill, (size / 2, 0pt), (size, size / 2), (size / 2, size), (0pt, size / 2)))
 
@@ -59,32 +60,9 @@
   box(width: w, height: 2 * weight, polygon(fill: ink, ..top, ..bot.rev()))
 })
 
-// Broken crown: the book's signature mark ("kings are buried"); five points, the fourth snapped.
-#let crown(s: 12pt, fill: ink) = box(width: s, height: s * 0.78, baseline: 15%, {
-  let g = if fill == ink { paper } else { ink }
-  let h = s * 0.78
-  place(dy: h * 0.62, rect(width: s, height: h * 0.3, fill: fill))
-  for (i, x) in (0.06, 0.28, 0.5, 0.72, 0.94).enumerate() {
-    let top = if i == 2 { 0.0 } else if i == 3 { 0.36 } else { 0.14 }
-    if i == 3 {
-      // snapped point: a jagged stump
-      place(polygon(fill: fill, (s * (x - 0.09), h * 0.63), (s * (x - 0.07), h * 0.4), (s * (x - 0.01), h * 0.46),
-        (s * (x + 0.03), h * 0.34), (s * (x + 0.09), h * 0.63)))
-    } else {
-      place(polygon(fill: fill, (s * (x - 0.09), h * 0.63), (s * x, h * (top + 0.1)), (s * (x + 0.09), h * 0.63)))
-      place(dx: s * x - s * 0.055, dy: h * top, polygon(fill: fill, (s * 0.055, 0pt), (s * 0.11, s * 0.055), (s * 0.055, s * 0.11), (0pt, s * 0.055)))
-    }
-  }
-  for x in (0.2, 0.5, 0.8) { place(dx: s * x - s * 0.04, dy: h * 0.72, circle(radius: s * 0.04, fill: g)) }
-})
-
-// Coin: a struck disc with a beaded rim and a lozenge stamp; stands for the source's "c".
-#let coin(s: 7pt, fill: ink) = box(width: s, height: s, baseline: 12%, {
-  let g = if fill == ink { paper } else { ink }
-  place(circle(radius: s / 2, fill: fill))
-  place(dx: s * 0.14, dy: s * 0.14, circle(radius: s * 0.36, stroke: (s * 0.07) + g))
-  place(dx: s * 0.36, dy: s * 0.36, polygon(fill: g, (s * 0.14, 0pt), (s * 0.28, s * 0.14), (s * 0.14, s * 0.28), (0pt, s * 0.14)))
-})
+// Coin: a medieval long-cross penny (beaded rim, voided long cross, a pellet in each angle); stands
+// for the source's "c". It sits on the baseline so it aligns with the figures beside it.
+#let coin(s: 7pt, fill: ink) = box(baseline: 0pt, image(mark(if fill == ink { "coin" } else { "coin-reversed" }), width: s))
 
 // Heater shield outline as a curve (w x h at dx, dy).
 #let shield-curve(w, h, dx: 0pt, dy: 0pt, fill: none, stroke: none) = place(dx: dx, dy: dy, curve(fill: fill, stroke: stroke,
@@ -100,47 +78,18 @@
   if body != none { place(center + top, dy: h * 0.15, box(width: w, align(center, body))) }
 })
 
-// Chapter arms: every part of the book bears its own coat of arms, a classic heraldic ordinary in
-// sable on argent. 1 per pale, 2 fess, 3 bend, 4 chevron, 5 saltire, 6 cross, 7 pale, 8 pile,
-// 9 per saltire, 10 chief, 11 bordure, 12 quarterly, 13 per bend, 14 per fess, 15 a lozenge.
-#let arms(n, w: 16pt, line: auto) = box(width: w, height: w * 1.2, baseline: 22%, {
-  let h = w * 1.2
-  let lw = if line == auto { calc.max(0.6pt, w * 0.045) } else { line }
-  let P(x, y) = (w * x, h * y)
-  let shapes = (
-    (P(0, 0), P(0.5, 0), P(0.5, 1), P(0, 1)),
-    (P(0, 0.34), P(1, 0.34), P(1, 0.58), P(0, 0.58)),
-    (P(-0.1, 0.12), P(0.14, -0.08), P(1.1, 0.86), P(0.86, 1.06)),
-    (P(0, 0.72), P(0.5, 0.26), P(1, 0.72), P(1, 0.98), P(0.5, 0.52), P(0, 0.98)),
-    none, none,
-    (P(0.36, 0), P(0.64, 0), P(0.64, 1), P(0.36, 1)),
-    (P(0, 0), P(1, 0), P(0.5, 0.86)),
-    none,
-    (P(0, 0), P(1, 0), P(1, 0.32), P(0, 0.32)),
-    none, none,
-    (P(0, 0), P(1, 0), P(1, 1)),
-    (P(0, 0.5), P(1, 0.5), P(1, 1), P(0, 1)),
-    (P(0.5, 0.18), P(0.8, 0.48), P(0.5, 0.78), P(0.2, 0.48)),
-  )
-  shield-curve(w, h, fill: paper)
-  if n == 11 {
-    shield-curve(w, h, fill: ink)
-    shield-curve(w * 0.7, h * 0.72, dx: w * 0.15, dy: h * 0.13, fill: paper)
-  } else {
-    place(box(width: w, height: h, clip: true, {
-      let polys = if n == 5 { ((P(-0.1, 0.1), P(0.1, -0.1), P(1.1, 0.9), P(0.9, 1.1)), (P(0.9, -0.1), P(1.1, 0.1), P(0.1, 1.1), P(-0.1, 0.9))) }
-        else if n == 6 { ((P(0.39, 0), P(0.61, 0), P(0.61, 1), P(0.39, 1)), (P(0, 0.3), P(1, 0.3), P(1, 0.5), P(0, 0.5))) }
-        else if n == 9 { ((P(0, 0), P(1, 0), P(0.5, 0.48)), (P(0, 1.2), P(1, 1.2), P(0.5, 0.48))) }
-        else if n == 12 { ((P(0, 0), P(0.5, 0), P(0.5, 0.45), P(0, 0.45)), (P(0.5, 0.45), P(1, 0.45), P(1, 1), P(0.5, 1))) }
-        else { (shapes.at(n - 1),) }
-      for p in polys { place(polygon(fill: ink, ..p)) }
-    }))
-    // mask outside the shield's lower curves
-    place(curve(fill: paper, curve.move((-1pt, h * 0.42)), curve.line((0pt, h * 0.42)), curve.cubic((0pt, h * 0.78), (w * 0.38, h * 0.9), (w * 0.5, h)), curve.line((w * 0.5, h + 1pt)), curve.line((-1pt, h + 1pt)), curve.close()))
-    place(curve(fill: paper, curve.move((w + 1pt, h * 0.42)), curve.line((w, h * 0.42)), curve.cubic((w, h * 0.78), (w * 0.62, h * 0.9), (w * 0.5, h)), curve.line((w * 0.5, h + 1pt)), curve.line((w + 1pt, h + 1pt)), curve.close()))
-  }
-  shield-curve(w, h, stroke: lw + ink)
-})
+// Chapter arms: every part of the book bears its own coat of arms, a themed charge on a hatched
+// heraldic field inside an engraved double-bordered shield (drawn by tools/make_heraldry_marks.py):
+// 1 orb, 2 die, 3 hourglass, 4 spurred boot, 5 swords in saltire, 6 war banner, 7 great helm,
+// 8 flame in a brazier, 9 wyvern's head, 10 ruined arch, 11 castle, 12 key, 13 lantern,
+// 14 open book, 15 quill.
+#let arms(n, w: 16pt) = box(baseline: 22%, image(mark("arms-" + (if n < 10 { "0" } else { "" }) + str(n)), width: w))
+
+// Signature mark: chosen from the candidates in marks/ (sig-*.svg). Specimens can switch it with
+// --input signature=<key>; the default stays until the owner chooses.
+#let signature-key = sys.inputs.at("signature", default: "broken-crown")
+#let signature(s: 14pt) = box(baseline: 15%, image(mark("sig-" + signature-key), width: s))
+#let crown(s: 12pt, fill: ink) = signature(s: s)
 
 // Corner flourish: a fine L with an inner hairline and a lozenge finial at each arm and the angle.
 #let corner(which, s: 15pt) = box(width: s, height: s, {
@@ -305,6 +254,15 @@
   body
 }
 
+// Balanced columns: two columns of equal depth. Used wherever a run ends on the page (a section's
+// close, an excerpt, lore), so no column stands half empty beside a full one.
+#let balanced(body, gutter: gap, slack: 2pt) = layout(size => {
+  let w = (size.width - gutter) / 2
+  let h = measure(block(width: w, body)).height
+  let target = h / 2 + body-size + body-lead + slack
+  block(width: 100%, height: target, columns(2, gutter: gutter, body))
+})
+
 // ================================================================ headings
 // Numbered section (x.y): number in an engraved shield, blackletter title, brush rule beneath.
 #let section(num, title) = block(above: 6pt, below: 12pt, sticky: true, width: 100%, breakable: false)[
@@ -336,7 +294,7 @@
 })
 
 // Worked example: tinted field on a black spine, a banner tag.
-#let example(title: none, body) = block(width: 100%, above: 10pt, below: 11pt, breakable: true,
+#let example(title: none, body) = block(width: 100%, above: 10pt, below: 11pt, breakable: false,
   fill: tint, stroke: (left: 2.6pt + ink), inset: (left: 11pt, right: 9pt, top: 7pt, bottom: 9pt))[
   #tag([Example#if title != none [ #h(2pt)·#h(2pt) #title]])
   #v(3pt)
@@ -618,9 +576,9 @@
   #v(-2pt)
   #brush(weight: 2pt, seed: 10)
   #v(5pt)
-  #block(width: 80%, {
+  #{
     set text(font: fell, size: 10.6pt, fill: ink2)
     set par(leading: 4pt, spacing: 8pt)
-    body
-  })
+    balanced(body)
+  }
 ]

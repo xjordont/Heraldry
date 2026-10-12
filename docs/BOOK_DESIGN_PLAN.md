@@ -413,13 +413,13 @@ The owner directed on 2026-10-12: "take it further ... more decorations, symbols
 
 | Mark | Form | Where |
 |---|---|---|
-| **Chapter arms** | Each of the 15 parts bears its own coat of arms: a classic heraldic ordinary in black on paper. World per pale, Mechanics fess, Round bend, Actions chevron, Combat saltire, Party cross, Equipment pale, Powers pile, Monsters per saltire, Scenarios chief, Campaign bordure, Learn quarterly, Basic per bend, Reference per fess, Index a lozenge | Chapter opener (26 pt), running head (8.5 pt), contents rows (15 pt) |
-| **Broken crown** | Five points, the fourth snapped to a jagged stump: a dead dynasty, "kings are buried" | Signature mark: opener-frame head, flourishes, title page, back cover |
+| **Chapter arms** | Each of the 15 parts bears its own coat of arms (owner 2026-10-12: "more ornate, detailed and representative of the chapter theme"). The shield is engraved with a double border. The field is hatched in the traditional engravers' system (horizontal for azure, vertical for gules, diagonal for vert and purpure, plain for argent). The themed charge is outlined in paper so it stays crisp. World: orb and cross. Mechanics: die. Round: hourglass. Actions: spurred boot. Combat: swords in saltire. Party: war banner. Equipment: great helm. Powers: flame in a brazier. Monsters: wyvern's head erased. Scenarios: ruined arch. Campaign: castle. Learn: key. Basic: lantern. Reference: open book. Index: quill. All are drawn as SVG by `tools/make_heraldry_marks.py`, with cream and white variants | Chapter opener (26 pt), running head (8.5 pt), contents rows (15 pt) |
+| **Signature mark** (choice pending) | Six candidates on specimen 15 (owner 2026-10-12: "run some alternative options, at least 5, before committing"): 1 the Broken Crown (kings are buried), 2 the Pierced Crown (an oath broken by the sword), 3 the Rotting Banner (banners rot in the rain), 4 the Broken Oath (a snapped sword), 5 the Black Rose (withered beauty), 6 the Carrion Raven (the roads grow dark). The broken crown is the working default until the owner chooses | Opener-frame head, flourishes, title page, back cover |
 | **Brush rule** | A hand-inked stroke with tapered ends and a slightly uneven edge, drawn the same way every printing | Section titles, table edges, stat bars, entry names, folios |
 | **Engraved shield** | A heater shield with a paper inner line, carrying a number | Section numbers, folios, procedure steps, power numbers |
 | **Corner flourish** | A fine L with an inner hairline and lozenge finials | Rules notes, scenario dossiers and outcome frames; chapter-opener frame |
 | **Banner tag** | A black strap with a pointed end | EXAMPLE, RULES NOTE, monster roles, scenario number, place kicker |
-| **Coin** | A struck disc with a ring and a lozenge stamp | Stands for the source's "c" in tables and stat bars |
+| **Coin** | A medieval long-cross penny: a beaded rim, a voided long cross and a pellet in each angle. It sits on the baseline so it aligns with the figures beside it (owner 2026-10-12: it was "low like a subscript") | Stands for the source's "c" in tables and stat bars |
 | **Opener frame** | Thick-and-thin border, corner flourishes, the broken crown at the head, the folio shield at the foot | Chapter openers only |
 | **Drop capital** | Blackletter initial reversed in an engraved black block | First paragraph after a chapter opener (vendored droplet 0.3.1, MIT) |
 
@@ -440,13 +440,15 @@ Owner 2026-10-12: "We should be very careful of how we set up policy and procedu
 3. No runts: a paragraph's last line carries at least two words where possible (runt cost 160%).
 4. A paragraph that fits a column never splits across a page turn. When a paragraph must split, it splits within a spread (verso to recto), never recto to verso, wherever the layout engine can achieve that by moving a whole unit.
 
+12a. **Balanced columns.** Wherever a two-column run ends on a page (a section close, lore, a chapter opener's first section), the two columns are balanced to equal depth (`balanced` in `system.typ`), so no column stands half empty beside a full one. Lore and gazetteer text fills the full frame in two balanced columns, never a narrow single measure with a blank margin (owner 2026-10-12: the Deepwarden introduction).
+
 **Units (what reads as one thing stays on one page)**
 5. Every heading keeps its first full paragraph, or its first two list items, on the same page and column (sticky headings).
 6. Examples, rules notes, procedures, stat profiles, monster, power, class and place entries, short tables and figures with captions are unbreakable keep units.
 7. A fit-capable section or subsection moves whole to the next column or page rather than splitting (DESIGN_REFINEMENT). Only over-height units continue, with repeated headers or "(continued)".
 
 **Avoiding page bloat**
-8. Numbered sections start on a fresh page only where the policy requires it (DESIGN_REFINEMENT). A short section that ends early leaves its remaining space to the next same-chapter keep unit that fits it whole, before any page break is forced. This is never unrelated content and never a split unit.
+8. Every numbered section starts on a fresh page (owner 2026-10-12: "Keep the page breaks so each section starts on a fresh page"). Space left at the end of a short section is never given to the next section; it is handled by rule 9. To keep this from bloating the book, a section is composed to finish cleanly: its two columns are balanced (12a), and its own figures and tables are placed so its last page is as full as the keep rules allow.
 9. Space left at a section end is filled in this order:
    - the section's own spot art, if approved;
    - a relevant example or table from that section, if the source places it there;
