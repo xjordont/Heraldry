@@ -5290,5 +5290,38 @@
    "max_print_w_in_300ppi": 3.35
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-DWARF": {
+  "family": "ancestry",
+  "title": "Dwarf",
+  "heading_id": "h-dwarf",
+  "route": "gpt",
+  "spec_sha256": "2f92a29ce28708e821d5ee92d8db216e17722f58c4632c5d65be7465c3d011ab",
+  "prompt_sha256": "1d597a4d8d6f8cbdd437226a30a51dc50a03daaf44c6a9b795a9263bedbc6dbd",
+  "status": "received",
+  "received_at": "2026-10-12T17:55:59+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-DWARF.png",
+   "sha256": "c55829a2feffc0c596e14883cb8626b53c8911981b0aa547548003b19bcf999e",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-DWARF.png",
+   "sha256": "3e9cf7fb71acddfda798554c2fa9f75835e8811d10ea85f17b4ffa68e4f9fb6c",
+   "px": [
+    979,
+    1400
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.263
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
