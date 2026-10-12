@@ -68,7 +68,7 @@ The first real item proves the capabilities: the image tool must accept every li
 - Use the image generation available in Codex under the owner's ChatGPT plan. **Do not use a paid OpenAI API key** (owner: no extra spending beyond ChatGPT Plus). If Codex cannot generate images within the plan, stop and say so.
 - Preferred model: **GPT Image 2.5 Sunburst** (`gpt-image-2.5-sunburst`) if offered, otherwise the default image model. Record the exact model label actually shown with `save --model`, or "not shown". Do not infer the active model from an old prompt. Report unavailable size, quality, or model controls.
 - Attach **every** reference listed for the item, and nothing else: the owner's gritty ink samples in `assets/art/style/`. If the tool cannot take reference images, stop and report it: never generate unanchored.
-- Size: the queue size is the minimum and fixes the aspect. Request the largest size offered at that aspect.
+- Size: the queue size is the minimum and fixes the aspect. Target the maximum output resolution (owner 2026-10-12): the largest size and highest quality offered at that aspect, never the default; `check` warns below the queue's `target_pixels`.
 - Art direction (owner, 2026-10-11, later): "closer to the more old school black and white gritty style". That means bold, rough brush contours, heavy solid blacks, scratchy hatching and dry-brush, high contrast and visible human marks, like the samples, in pure black ink. No grey wash, stipple fields, machine-even texture, clean vector-like line or rendered polish. Details are in `production/art/skill/heraldry-classic-ink-art/references/STYLE.md` and `docs/ART_DIRECTION.md`.
 
 ## Per item (from `SKILL.md`; the full contract is there)

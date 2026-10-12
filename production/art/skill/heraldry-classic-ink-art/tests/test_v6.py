@@ -127,3 +127,18 @@ class V6SecurityTest(unittest.TestCase):
         self.assertTrue(dg.cmd(self.repo,'status','--porcelain').startswith('M '),'stripped output is the old failure mode')
 
 if __name__=='__main__':unittest.main()
+
+
+class MaximumResolution(unittest.TestCase):
+    """Owner 2026-10-12: target the maximum output resolution; check warns below the queue's target_pixels."""
+    def test_warns_below_target_and_not_at_it(self):
+        import heraldry_art as h
+        item = {'register': 'creature', 'size': '1024x1024'}
+        base = {'format': 'PNG', 'colour': 0.0, 'nonpaper': 0.3, 'midtone': 0.0, 'intake_border_ink': 0.0,
+                'sharpness': 500, 'paper_tone': 250, 'paper_grain': 1, 'edge2': 0, 'edge6': 0}
+        _, warns, _ = h.evaluate({**base, 'px': [1024, 1024]}, item, 1572864)
+        self.assertTrue(any('maximum-resolution target' in w for w in warns))
+        _, warns, _ = h.evaluate({**base, 'px': [1254, 1254]}, item, 1572864)
+        self.assertFalse(any('maximum-resolution target' in w for w in warns))
+        _, warns, _ = h.evaluate({**base, 'px': [1024, 1024]}, item)
+        self.assertFalse(any('maximum-resolution target' in w for w in warns))

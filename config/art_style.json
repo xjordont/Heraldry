@@ -469,6 +469,8 @@
   }
  },
  "gpt_anchor_note": "Owner art direction 2026-10-11 calibrated on Greythorn plus four hand-inked anchors. ART-MON-GIANT-TARANTULA (rejected twice for its leg count) moved from the anchor gate into the batch as an ordinary redo, so one go-ahead runs the whole queue.",
+ "gpt_target_pixels": 1572864,
+ "gpt_target_pixels_note": "Owner 2026-10-12: target the maximum output resolution. 1572864 px (1536x1024, 1024x1536, 1254x1254) is the largest the Codex image tool has delivered; the worker reports the size options its tool offers, and this rises if a larger one exists. The queue size stays the minimum and fixes the aspect.",
  "gpt_push_every": 1,
  "gpt_review_every": 10,
  "gpt_cadence_note": "Owner 2026-10-11: deliver each image as soon as it passes the worker's checks, so a 5-hour or weekly usage limit never strands work; drift review (contact sheet + style audit over the last 10) every 10 images.",

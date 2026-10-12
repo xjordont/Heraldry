@@ -20,7 +20,7 @@ On the first item, confirm that the image tool accepts the listed references and
 ## Per item
 
 1. `show ID`. Paste the exact prompt and attach **only** the listed references, all of them. Look at a reference set's images once, the first time its `ref_set` appears in the session.
-2. Request the largest size and best quality offered at the listed aspect. Keep the original bytes in the scratch folder.
+2. Target the maximum output resolution: the largest size and highest quality offered at the listed aspect, never the default (owner 2026-10-12). Keep the original bytes in the scratch folder.
 3. `check ID FILE`. Inspect the original and the print-size preview beside the references, including whether the image is as gritty and bold as they are.
 4. `qa ID FILE`: complete the ten criteria with visible evidence. Then `save ID FILE --must ... --avoid-clear --model "..."`. Never invent a pass.
 5. One generation per item, in a fresh context; never retry. A hard fail is saved with `--accept-flags --notes "<what is wrong>"` (never an approval); the reviewer decides on a redo, which gets its own single generation with correction sentences (`references/REPAIR.md`).
