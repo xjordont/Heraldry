@@ -5455,5 +5455,38 @@
    "max_print_w_in_300ppi": 3.32
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-HUMAN": {
+  "family": "ancestry",
+  "title": "Human",
+  "heading_id": "h-human",
+  "route": "gpt",
+  "spec_sha256": "a9f6f4cdfec3502416d34c1bc5ec18f68903c3adf7713e657f15bad8970a0175",
+  "prompt_sha256": "e332707f796ed742e5abfc64216cb7b0cd5156bc722af79a458eea47d37063fb",
+  "status": "received",
+  "received_at": "2026-10-12T18:10:31+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Long trailing cloak echoes the Elf's prohibited silhouette; no exotic traits or plate. Midtone is ink hatch.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-HUMAN.png",
+   "sha256": "7b13f56b724f9d7b95f0ae61ee70d98079065d79e738af5f573586eda966e01c",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-HUMAN.png",
+   "sha256": "aefd1018bdc93bf5c71f91ff70e339baa59a10b3e626ce89dcbc1f958cfc1a52",
+   "px": [
+    891,
+    1471
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.97
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
