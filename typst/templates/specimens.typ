@@ -14,9 +14,9 @@
   #align(center)[
     #text(font: sans, weight: 700, size: 9pt, tracking: 0.5em)[A SKIRMISH GAME OF THE DYING LANDS]
     #v(10pt)
-    #text(font: fellsc, size: 62pt)[Heraldry]
+    #text(font: goth, weight: 700, size: 72pt)[Heraldry]
     #v(-30pt)
-    #text(font: fellsc, size: 27pt, tracking: 0.12em)[Skirmish]
+    #text(font: goth, weight: 500, size: 30pt)[Skirmish]
     #v(-6pt)
     #flourish(len: 110pt)
     #v(10pt)
@@ -30,7 +30,7 @@
 
 // ================================================================ 2. contents (verso iv)
 #shell(4, furniture: false)[
-  #align(center)[#text(font: fellsc, size: 36pt)[Contents] #v(-12pt) #flourish(len: 80pt)]
+  #align(center)[#text(font: goth, weight: 600, size: 42pt)[Contents] #v(-12pt) #flourish(len: 80pt)]
   #v(14pt)
   #columns(2, gutter: gap)[
     #toc-chapter("1", "The World of Heraldry", 9)
@@ -84,7 +84,7 @@
 ]
 
 // ================================================================ 3. chapter opener (recto)
-#shell(9, tab: 1, furniture: false)[
+#shell(9, tab: 1, furniture: false, frame: true)[
   #chapter-opener("One", "The World of Heraldry", art: art("ART-CH01-002"),
     lead: [Banners rot in the rain. Shrines sink into the mud. Oaths are broken, kings are buried, and the roads between settlements grow more dangerous with each passing season. Yet the ruins of the world still glitter with coin, relics, and forgotten power, and the desperate, the devout, the greedy, and the doomed continue to march into darkness to claim them.])
   #section("1.1", "What is Heraldry Skirmish?")
@@ -156,8 +156,8 @@
     ([6], [*Dappled Sunlight*], [Shifting light and shade play across the forest floor. No adverse weather effects apply. Standard conditions apply.]),
   ))
   #ref-table((1fr, 0.5in, 0.45in, 0.5in, 0.5in, 0.85in, 1.45in), (left, right, right, right, right, left, left),
-    ("Weapon", "Cost (c)", "Hands", "STR Req", "DEX Req", "Damage", "Traits"), band: true,
-    title: "7.8 Melee Weapons (excerpt, showing the equipment-table family)", (
+    ("Weapon", "Cost (c)", "Hands", "STR Req", "DEX Req", "Damage", "Traits"),
+    title: "7.8 Melee Weapons (excerpt)", (
     ([Unarmed Combat], [0], [2], [-], [-], [1 (B)], [*Trip*]),
     ([Club], [0], [1], [-], [-], [1d4 (B)], [-]),
     ([Mace], [2], [1], [2], [-], [1d6 (B)], [*Parrying*]),
@@ -171,12 +171,11 @@
     ([Rapier], [8], [1], [-], [3], [1d8 (P)], [*Agile*, *Finesse*, *Parrying*]),
     ([Estoc], [19], [1/2], [3], [2], [1d8/1d10 (P)], [*Fatal*, *Finesse*, *Versatile*]),
   ))
-  #place(bottom + right, image(art("ART-ITE-7-8-MELEE-WEAPONS"), width: 44%))
 ]
 
 // ================================================================ 7. hero class (recto)
 #shell(155, chapter: "Your Adventuring Party", section: "6.13 Hero Classes", tab: 6)[
-  #character-entry("Fighter", "1/5 Complexity", art: art("ART-CLA-FIGHTER"),
+  #character-entry("Fighter", "Hero Class", "1/5 Complexity", art: art("ART-CLA-FIGHTER"),
     [A Fighter is forged in places where hesitation gets people killed. Drill, repetition, and hard lessons carve in the instinct to hold ground when holding it is the only thing that matters. They have watched lines collapse, and they know to the heartbeat how long one can stand before it does.],
     (("Archetype", [Martial]), ("Class Modifiers", [STR +2, DEX +1, INT 0, SPI -1]), ("Starting HP Bonus", [+5]),
      ("Max HP Gained per Level", [+3]), ("Primary Casting Score", [None]), ("NRG Pool", [None])))[
@@ -272,7 +271,7 @@
     #colbreak()
     #figure-block("FIG-40", "Deployment map", fig("FIG-40"),
       [The Alchemist's Frozen Laboratory: parties deploy within 6" of opposite short edges; the Laboratory, about 6"×8", holds three Reagent Chests and the Alchemical Golem; key: FIG-20 (see 10.4, Pale City Scenario 2).])
-    #block(above: 4pt, below: 0pt)[#text(font: fellsc, size: 13pt)[Scenario-Specific Monster: Alchemical Golem]]
+    #block(above: 4pt, below: 0pt)[#text(font: goth, weight: 600, size: 15pt)[Scenario-Specific Monster: Alchemical Golem]]
     #stat-card(("HP", "AV", "SPD", "LVL", "CV", "Sz"),
       ([(5 × Party Size × (4 + (1 × APL))) / 8], [2 + (APL/3, rounded down)], [4"], [APL + 1 (min 3, max 7)], [2 × (2 + (4 × APL)) Coins], [M]))
   ]
@@ -290,7 +289,7 @@
 ]
 
 // ================================================================ 11. quick reference (verso)
-#shell(566, chapter: "Rules Reference", section: "C.3 Conditions Summary", tab: 13, tab-label: "C")[
+#shell(566, chapter: "Rules Reference", section: "C.3 Conditions Summary", tab: 14)[
   #qref-head("C.3", "Conditions Summary")
   #ref-table((0.95in, 1fr, 1.9in), (left, left, left), ("Condition", "Effect", "Ends When"), band: true, size: 8.8pt, (
     ([*Bleeding*], [At the end of their activation, the combatant loses *2 HP*. This HP loss cannot be reduced by *AV*, *AD*, *Resistance*, or *Immune*.], [The combatant regains HP, receives successful *Bandages*, or a rule removes it.]),
@@ -307,8 +306,8 @@
 ]
 
 // ================================================================ 12. index (recto)
-#shell(597, chapter: "Index", section: "Index", tab: 14, tab-label: "Ix")[
-  #align(center)[#text(font: fellsc, size: 30pt)[Index] #v(-10pt) #flourish(len: 60pt)]
+#shell(597, chapter: "Index", section: "Index", tab: 15)[
+  #align(center)[#text(font: goth, weight: 600, size: 38pt)[Index] #v(-10pt) #flourish(len: 60pt)]
   #v(6pt)
   #columns(3, gutter: 0.2in)[
     #index-letter("A")
@@ -363,7 +362,7 @@
     #v(18pt)
     #image(art("ART-MON-LICH"), width: 34%)
     #v(1fr)
-    #text(font: fellsc, size: 22pt)[Heraldry Skirmish]
+    #text(font: goth, weight: 600, size: 26pt)[Heraldry Skirmish]
     #v(-8pt)
     #text(font: sans, weight: 600, size: 7.6pt, tracking: 0.3em, fill: ink2)[A SKIRMISH GAME OF THE DYING LANDS]
   ]
