@@ -6049,5 +6049,38 @@
    "max_print_w_in_300ppi": 5.01
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS": {
+  "family": "scenario",
+  "title": "Scenario 1: Plunder of the Frozen Ruins",
+  "heading_id": "h-scenario-1-plunder-of-the-frozen-ruins-intro",
+  "route": "gpt",
+  "spec_sha256": "36bfb049b9887f921030fcd7bb9b2d4df3dab2cb1167fa7325a6cd69fecde86b",
+  "prompt_sha256": "f2af03f67f6c4cea11038d834687d4f6a4537fa33fdb915711f6e0e3f6fc8c4d",
+  "status": "received",
+  "received_at": "2026-10-12T22:41:44+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "There appear to be three looters at the rim plus one additional looter descending the rope, exceeding the stated three.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS.png",
+   "sha256": "469aad8b33168f1900a5df43869717cd1cb2037efad0962bdd6fdc53d1ce972f",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS.png",
+   "sha256": "e6be38c10dd2e6eb343ffaf3d2c2ba1cbd7c96afb0f0f88d31049edd798df66b",
+   "px": [
+    1508,
+    1013
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.027
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
