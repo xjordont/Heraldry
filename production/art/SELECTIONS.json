@@ -5521,5 +5521,38 @@
    "max_print_w_in_300ppi": 2.923
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-RATKIN": {
+  "family": "ancestry",
+  "title": "Ratkin",
+  "heading_id": "h-ratkin",
+  "route": "gpt",
+  "spec_sha256": "ba13ea12b512c7b93d4811fcadce23d9a16249b710ea7bd95a1033e60be30e22",
+  "prompt_sha256": "86fd1044108229845f02b259451e6cc026349508594ce4e3f2faaac0ef63a2c7",
+  "status": "received",
+  "received_at": "2026-10-12T18:16:30+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-RATKIN.png",
+   "sha256": "dae9f04f1f5f340b359d69aa2d4ed4c9a279636fa2cde110febac8ce8273e9bc",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-RATKIN.png",
+   "sha256": "a5262b538e8e6f4a2f395de9693c7fe0aa7273e47904ad769828a32d04926f9e",
+   "px": [
+    864,
+    1442
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.88
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
