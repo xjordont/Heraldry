@@ -2817,5 +2817,38 @@
    "max_print_w_in_300ppi": 3.98
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-ICE-WRAITH": {
+  "family": "monster",
+  "title": "Ice Wraith",
+  "heading_id": "h-ice-wraith-cannon",
+  "route": "gpt",
+  "spec_sha256": "cd38363e09b650c214bf0351d207e75b57dcb6d024b5a1cb6adb84f56251f054",
+  "prompt_sha256": "fe48d9d5794aa327cb10b1835e9680a0c68bec905fcad085da4e088a2beae672",
+  "status": "received",
+  "received_at": "2026-10-12T12:49:20+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-ICE-WRAITH.png",
+   "sha256": "c52773ba18cb3628fc8305b5fc542f6dd9af84a15076e7efa30877e2395ba2ba",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-ICE-WRAITH.png",
+   "sha256": "a244c3cc790cd94fc8c1443b839879c7d45dc3304d0bd73aaa08872dc3c9fcfb",
+   "px": [
+    1147,
+    1207
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.823
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
