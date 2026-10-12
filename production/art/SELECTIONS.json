@@ -2751,5 +2751,38 @@
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
   "approved_at": "2026-10-12T12:11:24+00:00"
+ },
+ "ART-MON-HYDRA": {
+  "family": "monster",
+  "title": "Hydra",
+  "heading_id": "h-hydra-elite",
+  "route": "gpt",
+  "spec_sha256": "cb096e48c8e342f4ae1a609d51027e024dadf4559529c7ccb1a23857fd110a39",
+  "prompt_sha256": "1b484a9928a472c4ac2492480ce3f3f43ebbfb1ef1fdd7ba9d4bfe1b8b91732b",
+  "status": "received",
+  "received_at": "2026-10-12T12:43:34+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-HYDRA.png",
+   "sha256": "0b9a3837df78c90b625f41a77a985315f070d1fa1f403e8320a04181448a51fc",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-HYDRA.png",
+   "sha256": "ca3131036c762283b2e30d612a06072d79c18845b8e29489bdef233c74d1bb6b",
+   "px": [
+    1228,
+    1173
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.093
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
