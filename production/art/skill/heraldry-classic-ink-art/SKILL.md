@@ -16,7 +16,7 @@ You do not plan scenes or write prompts. The planning was done and audited for u
 ## Hard rules
 
 1. Use each prompt file verbatim as the image prompt. Do not shorten, paraphrase, translate or "improve" it. The only permitted addition is up to two correction sentences on a redo (`references/REPAIR.md`), which you record in the receipt notes.
-2. Attach only the images in that item's `references` (at most four; six for the two equipment items). Attach nothing else. Never attach the whole reference folder.
+2. Attach only the images in that item's `references` (at most six). Attach nothing else. Never attach the whole reference folder.
 3. Generate only IDs listed in `QUEUE.json`. An image is delivered once it is pushed. Never regenerate a delivered image unless `status` lists it as `redo` or the owner asks. A redo starts a fresh attempt budget, and `show` prints the reviewer's reason: base your correction sentence on it. If the reason conflicts with the prompt's must or do-not-draw lines, the prompt wins; say so in your report. Before the push you may regenerate freely, inside the item's attempt budget.
 4. The item's `size` is the minimum and fixes the aspect: wide 3:2 (1536x1024), tall 2:3 (1024x1536) or square 1:1 (1024x1024). Request the largest size and highest quality the tool offers at that aspect; a larger native image at the same aspect passes. Use the GPT Image 2.5 Sunburst model if the tool offers it (owner request), otherwise the default image model, and record the exact model name shown with `save --model`. No upscaling and no print preparation: the repo's intake does that.
 5. Save the image exactly as the tool delivered it. No crop, resize, sharpen, retouch or format conversion.

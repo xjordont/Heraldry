@@ -125,7 +125,7 @@ class ArtPipeline(unittest.TestCase):
         self.assertEqual(len({x["ref_set"] for x in q["items"][:len(lead)]}), len(lead), "one lead item per reference set")
         for it in q["items"]:
             refs = it["references"]
-            self.assertTrue(1 <= len(refs) <= cfg.get("max_refs_by_set", {}).get(it["ref_set"], cfg["max_refs"]), it["id"])
+            self.assertTrue(1 <= len(refs) <= cfg["max_refs"], it["id"])
             self.assertEqual(len(refs), len(set(refs)), it["id"])
             self.assertNotIn(f"assets/art/incoming/{it['id']}.png", refs, "an entry never references itself")
             self.assertNotIn(style + "STYLE-REF-01-scene-hatching.jpg", refs, "cut by the owner 2026-10-11")

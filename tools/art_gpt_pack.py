@@ -61,10 +61,8 @@ def references_for(e, sels, root=ROOT):
     """Up to max_refs reference images for this entry's family (family_sets) or else its register: repo paths
     always (they must exist), anchor IDs once approved. Never the entry itself."""
     cfg = g.CFG["gpt_reference_sets"]
-    name, cands = ref_set(e)
-    cap = cfg.get("max_refs_by_set", {}).get(name, cfg["max_refs"])   # a set may carry owner-approved extras
     out = []
-    for cand in cands:
+    for cand in ref_set(e)[1]:
         if cand.lower().endswith(IMAGE_SUFFIXES):
             if not (root / cand).is_file():
                 raise SystemExit(f"reference image missing: {cand}")
@@ -73,7 +71,7 @@ def references_for(e, sels, root=ROOT):
             s = sels.get(cand, {})
             if s.get("route") == "gpt" and s.get("status") in ("approved", "anchor-approved"):
                 out.append(s["master"]["path"])
-        if len(out) >= cap:
+        if len(out) >= cfg["max_refs"]:
             break
     return out
 
@@ -113,7 +111,7 @@ def build_queue(phase, ents, sels, anchors, root=ROOT):
     for i in ids:
         prompts[i] = g.prompt_for(ents[i], True)
         items.append(item_for(ents[i], prompts[i], sels, root))
-    return {"schema": SCHEMA, "phase": phase, "generated_at": g.now(), "max_references": max([g.CFG["gpt_reference_sets"]["max_refs"], *g.CFG["gpt_reference_sets"].get("max_refs_by_set", {}).values()]),
+    return {"schema": SCHEMA, "phase": phase, "generated_at": g.now(), "max_references": g.CFG["gpt_reference_sets"]["max_refs"],
             "push_every": g.CFG.get("gpt_push_every", 5), "review_every": g.CFG.get("gpt_review_every", 10),
             # drift reviews count only receipts written after this queue was published (the log itself is append-only)
             "receipts_base": receipt_lines(root),

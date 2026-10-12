@@ -62,7 +62,7 @@
     767
    ],
    "sha256": "d0d69cbb5cdb5679e4ad4eb09d272b54de544b38337088158ec23a5d5fac4ff8",
-   "use": "attached to reference sets: scene; never placed or packaged",
+   "use": "attached to reference sets: scenario, scene; never placed or packaged",
    "role": "scene: zombie and cloaked swordsman; dry-brush blacks on open paper, grass vignette"
   },
   {
@@ -879,7 +879,7 @@
    "category": "person: herbalist kneeling",
    "role": "Bearded man kneeling to pick a plant in long grass, bold black shading",
    "caveat": "none noted",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: person; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg",
