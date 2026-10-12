@@ -60,6 +60,86 @@
     text(font: sans, weight: 700, size: size, tracking: 0.14em, upper(body)),
     line(length: 100%, stroke: 0.4pt + hair)))
 
+// ================================================================ heraldic armoury (v2.1 flavour)
+// Original vector marks that give tables, tabs and headings their character. All are small, black,
+// structural and legible on cream or white; none carries a rules meaning.
+
+// Heater shield, w wide (height 1.18 w); the body is placed centred inside it.
+#let shield(w: 14pt, fill: ink, stroke: none, body: none) = box(width: w, height: w * 1.18, baseline: 20%, {
+  let h = w * 1.18
+  place(curve(fill: fill, stroke: stroke,
+    curve.move((0pt, 0pt)), curve.line((w, 0pt)), curve.line((w, h * 0.42)),
+    curve.cubic((w, h * 0.78), (w * 0.62, h * 0.9), (w * 0.5, h)),
+    curve.cubic((w * 0.38, h * 0.9), (0pt, h * 0.78), (0pt, h * 0.42)), curve.close()))
+  if body != none { place(center + top, dy: h * 0.14, box(width: w, align(center, body))) }
+})
+
+// Cross pattée fleuron: four flared arms round a voided lozenge; the section terminal.
+#let fleuron(size: 9pt) = box(width: size, height: size, baseline: 15%, {
+  let s = size
+  let c = s / 2
+  for (dx, dy) in ((0, -1), (1, 0), (0, 1), (-1, 0)) {
+    let tip = (c + dx * c, c + dy * c)
+    let a = (c + dx * c * 0.95 - dy * s * 0.2, c + dy * c * 0.95 + dx * s * 0.2)
+    let b = (c + dx * c * 0.95 + dy * s * 0.2, c + dy * c * 0.95 - dx * s * 0.2)
+    place(polygon(fill: ink, (c, c), a, b))
+  }
+  place(dx: c - s * 0.12, dy: c - s * 0.12, polygon(fill: paper, (s * 0.12, 0pt), (s * 0.24, s * 0.12), (s * 0.12, s * 0.24), (0pt, s * 0.12)))
+})
+
+// Terminal rule: closes tables and sections; a heavy rule broken by a fleuron, hairline beneath.
+#let terminal(heavy: 1.3pt) = block(width: 100%, above: 0pt, below: 0pt, {
+  grid(columns: (1fr, auto, 1fr), column-gutter: 4pt, align: horizon,
+    line(length: 100%, stroke: heavy + ink), fleuron(size: 8pt), line(length: 100%, stroke: heavy + ink))
+})
+
+// Plate: a black bar with clipped (chamfered) corners, like a forged iron strap. `notch` cuts a
+// swallowtail into the right end instead (a pennant).
+#let plate(body, inset: (x: 6pt, y: 3.4pt), chamfer: 3.2pt, notch: false, width: auto) = box(width: width, {
+  let content = box(fill: ink, inset: if notch { (left: inset.x, right: inset.x + 6pt, y: inset.y) } else { inset }, width: width, body)
+  context {
+    let m = measure(content)
+    let w = m.width
+    let h = m.height
+    content
+    // clipped corners (paper triangles over the bar)
+    let c = chamfer
+    place(top + left, polygon(fill: paper, (0pt, 0pt), (c, 0pt), (0pt, c)))
+    place(bottom + left, dy: 0pt, polygon(fill: paper, (0pt, 0pt), (c, c), (0pt, c)))
+    if notch {
+      place(top + left, dx: w - 6pt, polygon(fill: paper, (6pt, 0pt), (0pt, h / 2), (6pt, h)))
+    } else {
+      place(top + right, polygon(fill: paper, (0pt, 0pt), (c, 0pt), (c, c)))
+      place(bottom + right, polygon(fill: paper, (c, 0pt), (c, c), (0pt, c)))
+    }
+  }
+})
+
+// Engraved corner brackets round a block: short L-rules with a lozenge in each corner.
+#let bracketed(body, arm: 14pt, inset: (x: 9pt, y: 8pt), weight: 1pt) = block(width: 100%, breakable: false, {
+  let b = block(width: 100%, inset: inset, body)
+  b
+  let corner(hx, vy) = {
+    let l = (left: 0pt, right: 0pt)
+    place(if vy == top { top } else { bottom } + if hx == left { left } else { right },
+      box(width: arm, height: arm, {
+        let x0 = if hx == left { 0pt } else { arm }
+        let y0 = if vy == top { 0pt } else { arm }
+        place(line(start: (x0, y0), end: (if hx == left { arm } else { 0pt }, y0), stroke: weight + ink))
+        place(line(start: (x0, y0), end: (x0, if vy == top { arm } else { 0pt }), stroke: weight + ink))
+        place(dx: x0 - 2.6pt, dy: y0 - 2.6pt, lozenge(size: 5.2pt))
+      }))
+  }
+  corner(left, top); corner(right, top); corner(left, bottom); corner(right, bottom)
+})
+
+// Drop capital: the initial reversed in a black square, three lines deep, text wrapping beside it
+// (vendored droplet 0.3.1, MIT, typst/vendor/). Used on the first paragraph after a chapter opener.
+#import "../vendor/droplet-0.3.1/src/lib.typ": dropcap as _dropcap
+#let dropcap(body, lines: 3) = _dropcap(height: lines, gap: 5pt, hanging-indent: 0pt,
+  transform: letter => box(fill: ink, inset: (x: 5pt, top: 3pt, bottom: 3pt),
+    text(font: fellsc, fill: paper, letter)), body)
+
 // ================================================================ running furniture
 // Chapter thumb tabs bleed off the outer edge in a fixed slot per part, so the closed book shows an
 // index. They are navigation only: the running head names the chapter too. Numbers sit 0.22in in.
@@ -67,29 +147,37 @@
 #let thumb-tab(n, recto, label: none) = {
   let slot-h = (page-h - 2 * 1.15in) / tab-slots
   let y = 1.15in + slot-h * (n - 1)
-  let w = 0.42in
-  let x = if recto { page-w - w } else { 0pt }
-  place(top + left, dx: x, dy: y,
-    block(width: w, height: slot-h - 4pt, fill: ink,
-      inset: if recto { (right: 0.12in) } else { (left: 0.12in) },
-      align(center + horizon, text(font: sans, weight: 700, size: 10pt, fill: paper,
-        if label != none { label } else { str(n) }))))
+  let w = 0.5in
+  let h = slot-h - 5pt
+  let k = 7pt                                  // swallowtail depth
+  let lab = text(font: sans, weight: 700, size: 10pt, fill: paper, if label != none { label } else { str(n) })
+  // pennant hangs from the edge; its swallowtail points into the page
+  let pts = if recto { ((w, 0pt), (0pt, 0pt), (k, h / 2), (0pt, h), (w, h)) }
+            else { ((0pt, 0pt), (w, 0pt), (w - k, h / 2), (w, h), (0pt, h)) }
+  let inner = if recto { ((w, 2.2pt), (3.6pt, 2.2pt), (k + 2.4pt, h / 2), (3.6pt, h - 2.2pt), (w, h - 2.2pt)) }
+              else { ((0pt, 2.2pt), (w - 3.6pt, 2.2pt), (w - k - 2.4pt, h / 2), (w - 3.6pt, h - 2.2pt), (0pt, h - 2.2pt)) }
+  place(top + left, dx: if recto { page-w - w } else { 0pt }, dy: y, box(width: w, height: h, {
+    place(polygon(fill: ink, ..pts))
+    place(polygon(fill: none, stroke: 0.5pt + paper, ..inner))
+    place(horizon + left, dx: if recto { k + 0.04in } else { 0.1in }, box(width: w - k - 0.14in, align(center, lab)))
+  }))
 }
 
 #let running-head(left-text, right-text, recto, mark: none) = {
   set text(font: sans, size: 7.4pt, weight: 600, tracking: 0.16em, fill: ink2)
-  let m = if mark != none { mark } else { lozenge(size: 4.2pt) }
+  let m = if mark != none { shield(w: 9pt, body: text(size: 5.6pt, weight: 700, tracking: 0em, fill: paper, mark)) } else { lozenge(size: 4.2pt) }
   block(width: 100%, below: 0pt, {
     if recto [#h(1fr)#upper(right-text)#h(6pt)#m] else [#m#h(6pt)#upper(left-text)#h(1fr)]
-    v(3pt)
+    v(2pt)
     double-rule(heavy: 0.9pt, light: 0.3pt, spread: 1.3pt)
   })
 }
 
 #let folio(n, recto) = {
-  set text(font: fellsc, size: 11pt, fill: ink)
-  if recto { align(right)[#taper(len: 22pt, weight: 0.9pt, dir: -1)#h(5pt)#str(n)] }
-  else { align(left)[#str(n)#h(5pt)#taper(len: 22pt, weight: 0.9pt)] }
+  let sh = shield(w: 19pt, fill: none, stroke: 0.7pt + ink,
+    body: text(font: sans, size: 7.6pt, weight: 700, number-type: "lining", str(n)))
+  let rule = box(width: 34pt, baseline: -6pt, line(length: 100%, stroke: 0.45pt + ink))
+  if recto { align(right)[#rule#h(4pt)#sh] } else { align(left)[#sh#h(4pt)#rule] }
 }
 
 // A page shell for specimens: furniture comes from explicit arguments (the book derives it).
@@ -98,7 +186,7 @@
   set page(width: page-w, height: page-h, fill: paper,
     margin: if recto { (left: m-in, right: m-out, top: m-top, bottom: m-bot) }
             else { (left: m-out, right: m-in, top: m-top, bottom: m-bot) },
-    header: if furniture { running-head(chapter, section, recto) },
+    header: if furniture { running-head(chapter, section, recto, mark: if tab != none { if tab-label != none { tab-label } else { str(tab) } }) },
     header-ascent: 16pt,
     footer: if furniture or folio-on { if folio-on { folio(n, recto) } },
     footer-descent: 18pt,
@@ -124,8 +212,7 @@
 #let section(num, title) = block(above: 4pt, below: 11pt, sticky: true, width: 100%, breakable: false)[
   #set par(justify: false)
   #grid(columns: (auto, 1fr), column-gutter: 9pt, align: bottom,
-    box(fill: ink, inset: (x: 5pt, top: 4.5pt, bottom: 3.5pt),
-      text(font: sans, weight: 700, size: 10pt, fill: paper, tracking: 0.04em, num)),
+    plate(notch: true, inset: (x: 5pt, y: 4pt), text(font: sans, weight: 700, size: 10pt, fill: paper, tracking: 0.04em, num)),
     text(font: fellsc, size: 21pt, hyphenate: false, title))
   #v(4pt)
   #double-rule()
@@ -151,10 +238,12 @@
 
 // Worked example: tinted field, heavy left rule, small caps tag. Numbered steps (1.1, 1.2...) match
 // the labels in the figure they explain.
-#let example(title: none, body) = block(width: 100%, above: 9pt, below: 11pt, breakable: true,
-  fill: tint, stroke: (left: 2.4pt + ink), inset: (left: 10pt, right: 9pt, top: 7pt, bottom: 8pt))[
-  #text(font: sans, weight: 700, size: 7.4pt, tracking: 0.16em)[EXAMPLE#if title != none [ #h(3pt)·#h(3pt) #upper(title)]]
-  #v(2pt)
+#let example(title: none, body) = block(width: 100%, above: 10pt, below: 11pt, breakable: true,
+  fill: tint, stroke: (left: 2.4pt + ink), inset: (left: 10pt, right: 9pt, top: 0pt, bottom: 8pt))[
+  #place(top + left, dx: -10pt - 3.3pt, dy: -3.3pt, lozenge(size: 9pt))
+  #v(-1pt)
+  #plate(notch: true, inset: (x: 5pt, y: 2.6pt), text(font: sans, weight: 700, size: 7pt, tracking: 0.16em, fill: paper)[EXAMPLE#if title != none [ #h(2pt)·#h(2pt) #upper(title)]])
+  #v(3pt)
   #set text(size: 9.8pt)
   #set par(leading: 3.1pt)
   #body
@@ -162,12 +251,9 @@
 
 // Rules note / clarification: open box between rules, centred tag in the top rule.
 #let note-box(tag: "Rules Note", body) = block(width: 100%, above: 12pt, below: 12pt, breakable: false)[
-  #grid(columns: (1fr, auto, 1fr), column-gutter: 6pt, align: horizon,
-    line(length: 100%, stroke: 1pt + ink),
-    text(font: sans, weight: 700, size: 7.4pt, tracking: 0.16em)[#mascle(size: 6pt)#h(4pt)#upper(tag)#h(4pt)#mascle(size: 6pt)],
-    line(length: 100%, stroke: 1pt + ink))
-  #block(inset: (x: 4pt, top: 3pt, bottom: 6pt))[#set text(size: 9.8pt); #set par(leading: 3.1pt); #body]
-  #line(length: 100%, stroke: 0.45pt + ink)
+  #bracketed(inset: (x: 10pt, top: 13pt, bottom: 9pt))[#set text(size: 9.8pt); #set par(leading: 3.1pt); #body]
+  #place(top + center, dy: -5pt, plate(inset: (x: 6pt, y: 2.6pt),
+    text(font: sans, weight: 700, size: 7pt, tracking: 0.16em, fill: paper)[#upper(tag)]))
 ]
 
 // Procedure: numbered steps with large display numerals hanging at the left.
@@ -185,31 +271,44 @@
 // Reference table: black header bar with reversed small caps, hairline rows, closing heavy rule.
 // `band` adds light banding for long tables; `roll` tints the first (die) column; `notes` gives
 // a row a spanning second line for long text (the Traits line of an equipment row, say).
+#let table-title(body) = block(below: 5pt, sticky: true, width: 100%,
+  grid(columns: (auto, auto, 1fr), column-gutter: 6pt, align: horizon,
+    shield(w: 9pt), text(font: fellsc, size: 13pt, body), taper(len: 100%, weight: 1.2pt, dir: 1)))
+
 #let ref-table(widths, aligns, header, rows, title: none, roll: false, band: false, notes: none, size: 9.2pt) = {
   set text(font: sans, size: size, number-type: "lining", number-width: "tabular", hyphenate: false)
   set par(leading: 2.6pt, spacing: 4pt, justify: false)
   let n = header.len()
+  let ix = 5pt
+  let iy = 3.4pt
   let cells = ()
   for (i, r) in rows.enumerate() {
-    cells += r.map(c => table.cell(c))
+    cells += r.enumerate().map(((x, c)) => table.cell(
+      if roll and x == 0 { shield(w: 15pt, body: text(weight: 700, size: 8.2pt, fill: paper, c)) } else { c }))
     if notes != none and notes.at(i, default: none) != none {
       cells.push(table.cell(colspan: n, inset: (left: 14pt, right: 5pt, top: 0pt, bottom: 4pt),
         text(size: size - 0.6pt, fill: ink2, notes.at(i))))
     }
   }
-  block(width: 100%, above: 9pt, below: 11pt, breakable: true)[
-    #if title != none { block(below: 4pt, sticky: true, text(font: fellsc, size: 12.5pt, title)) }
+  let c = 4pt
+  let head = header.enumerate().map(((i, h)) => table.cell({
+    if i == 0 { place(top + left, dx: -ix, dy: -iy, polygon(fill: paper, (0pt, 0pt), (c, 0pt), (0pt, c))) }
+    if i == n - 1 { place(top + right, dx: ix, dy: -iy, polygon(fill: paper, (0pt, 0pt), (c, 0pt), (c, c))) }
+    text(weight: 700, size: 7.6pt, tracking: 0.12em, fill: paper, upper(h))
+  }))
+  block(width: 100%, above: 10pt, below: 12pt, breakable: true)[
+    #if title != none { table-title(title) }
     #table(
       columns: widths,
       align: (x, y) => aligns.at(x, default: left) + horizon,
-      inset: (x: 5pt, y: 3.4pt),
-      fill: (x, y) => if y == 0 { ink } else if roll and x == 0 { tint2 } else if band and calc.even(y) { tint } else { none },
-      stroke: (x, y) => (bottom: if y == 0 { none } else { 0.3pt + hair }),
-      table.header(repeat: true, ..header.map(h => text(weight: 700, size: 7.6pt, tracking: 0.12em, fill: paper, upper(h)))),
+      inset: (x: ix, y: iy),
+      fill: (x, y) => if y == 0 { ink } else if band and calc.even(y) { tint } else { none },
+      stroke: (x, y) => (bottom: if y == 0 { 1.4pt + paper } else { 0.3pt + hair }),
+      table.header(repeat: true, ..head),
       ..cells,
     )
-    #v(-4.5pt)
-    #line(length: 100%, stroke: 1.3pt + ink)
+    #v(-1.5pt)
+    #terminal()
   ]
 }
 
@@ -219,8 +318,12 @@
 #let figure-block(id, title, file, caption, width: 100%) = block(width: 100%, above: 10pt, below: 12pt, breakable: false)[
   #align(center, image(file, width: width))
   #v(4pt)
-  #block(width: 100%, fill: ink, inset: (x: 6pt, y: 3.6pt), spacing: 0pt,
-    text(font: sans, size: 7.8pt, weight: 700, tracking: 0.1em, fill: paper)[#id #h(5pt) #upper(title)])
+  #block(width: 100%, spacing: 0pt, {
+    block(width: 100%, fill: ink, inset: (x: 7pt, y: 3.6pt), spacing: 0pt,
+      text(font: sans, size: 7.8pt, weight: 700, tracking: 0.1em, fill: paper)[#id #h(4pt)#lozenge(size: 4pt, fill: paper)#h(4pt) #upper(title)])
+    place(top + left, polygon(fill: paper, (0pt, 0pt), (4pt, 0pt), (0pt, 4pt)))
+    place(top + right, polygon(fill: paper, (0pt, 0pt), (4pt, 0pt), (4pt, 4pt)))
+  })
   #block(width: 100%, inset: (x: 6pt, top: 4pt, bottom: 5pt), stroke: (bottom: 0.45pt + ink), spacing: 0pt, {
     set text(font: sans, size: 8.6pt)
     set par(leading: 2.5pt, justify: false)
@@ -249,8 +352,11 @@
     ..values.enumerate().map(((i, v)) => block(width: 100%, inset: (x: 2pt, top: 3.6pt, bottom: 3.8pt),
       stroke: if i > 0 { (left: 0.4pt + hair) } else { none },
       align(center, text(size: size, weight: 600, v)))))
+  // clipped strap corners, drawn over the black label row
+  place(top + left, polygon(fill: paper, (0pt, 0pt), (3.5pt, 0pt), (0pt, 3.5pt)))
+  place(top + right, polygon(fill: paper, (0pt, 0pt), (3.5pt, 0pt), (3.5pt, 3.5pt)))
   v(-1pt)
-  line(length: 100%, stroke: 1.3pt + ink)
+  terminal(heavy: 1.1pt)
 })
 
 // Formula profile (scenario-scaled monsters): label column tinted, values in prose.
@@ -373,12 +479,11 @@
   #double-rule()
 ]
 
-#let dossier(fields) = block(width: 100%, fill: tint, inset: (x: 9pt, y: 8pt), breakable: false,
-  stroke: (top: 1.5pt + ink, bottom: 0.45pt + ink))[
+#let dossier(fields) = block(width: 100%, above: 10pt, fill: tint, breakable: false, bracketed(inset: (x: 10pt, y: 10pt))[
   #set text(size: 9.2pt)
   #set par(leading: 2.8pt, justify: false, spacing: 5pt)
   #for (k, v) in fields { block(below: 5pt, [#text(font: sans, weight: 700, size: 7.2pt, tracking: 0.12em, upper(k))\ #v]) }
-]
+])
 
 // Closing frame for the victory and tiebreak fields of a scenario.
 #let outcome(fields) = block(width: 100%, above: 10pt, breakable: false, inset: (x: 8pt, y: 7pt),
@@ -389,13 +494,19 @@
 ]
 
 // ================================================================ quick reference (Appendix C)
-#let qref-head(code, title) = block(width: 100%, above: 0pt, below: 6pt, fill: ink, inset: (x: 7pt, y: 5pt),
-  text(fill: paper)[#text(font: sans, weight: 700, size: 9pt, tracking: 0.1em, code)#h(8pt)#text(font: fellsc, size: 15pt, title)])
+#let qref-head(code, title) = block(width: 100%, above: 0pt, below: 6pt, {
+  block(width: 100%, fill: ink, inset: (x: 8pt, y: 5pt), spacing: 0pt,
+    text(fill: paper)[#shield(w: 13pt, fill: paper, body: text(font: sans, weight: 700, size: 6.4pt, fill: ink, code))#h(8pt)#text(font: fellsc, size: 15pt, title)#h(1fr)#text(font: sans, weight: 700, size: 7pt, tracking: 0.2em)[RULES REFERENCE]])
+  place(top + left, polygon(fill: paper, (0pt, 0pt), (5pt, 0pt), (0pt, 5pt)))
+  place(top + right, polygon(fill: paper, (0pt, 0pt), (5pt, 0pt), (5pt, 5pt)))
+  place(bottom + left, polygon(fill: paper, (0pt, 0pt), (5pt, 5pt), (0pt, 5pt)))
+  place(bottom + right, polygon(fill: paper, (5pt, 0pt), (5pt, 5pt), (0pt, 5pt)))
+})
 
 // ================================================================ contents and index
 #let toc-chapter(num, title, page) = block(above: 9pt, below: 3pt, breakable: false, width: 100%)[
   #grid(columns: (22pt, 1fr, auto), column-gutter: 6pt, align: bottom,
-    text(font: fellsc, size: 18pt, num), text(font: fellsc, size: 14pt, title),
+    shield(w: 17pt, body: text(font: sans, weight: 700, size: 8.6pt, fill: paper, num)), text(font: fellsc, size: 14pt, title),
     text(font: fellsc, size: 12pt, str(page)))
   #v(-3pt)
   #line(length: 100%, stroke: 0.8pt + ink)
@@ -410,7 +521,7 @@
 
 #let index-letter(l) = block(above: 9pt, below: 3pt, sticky: true,
   grid(columns: (auto, 1fr), column-gutter: 5pt, align: horizon,
-    text(font: fellsc, size: 22pt, l), line(length: 100%, stroke: 0.5pt + ink)))
+    text(font: fellsc, size: 22pt, l), grid(columns: (1fr, auto), column-gutter: 3pt, align: horizon, line(length: 100%, stroke: 0.5pt + ink), lozenge(size: 4pt))))
 #let index-entry(term, pages, sub: false) = block(above: 1.4pt, below: 1.4pt, {
   set text(font: sans, size: 8.6pt)
   set par(hanging-indent: 10pt, justify: false, leading: 2.3pt)
