@@ -4927,5 +4927,38 @@
    "max_print_w_in_300ppi": 3.233
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-DRUID": {
+  "family": "class",
+  "title": "Druid",
+  "heading_id": "h-druid-55-complexity",
+  "route": "gpt",
+  "spec_sha256": "1ed1285e0ed5021d63d968293d123e15ff200b3381a40ac48e8cef225e08b26d",
+  "prompt_sha256": "cc7bca0abe5523f00c871e99f63024a41d36fbb335e2d2d1ba63d92a9df8af13",
+  "status": "received",
+  "received_at": "2026-10-12T17:25:14+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-DRUID.png",
+   "sha256": "3dd1f523455163a345e29d43afa5e2bee6ce3c43fafdf80a4f9b678728891959",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-DRUID.png",
+   "sha256": "f11f28687ed60bbe7ad83f99a1e50d82d791a5dc6a27360131aa86f3cedf47ae",
+   "px": [
+    951,
+    1521
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.17
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
