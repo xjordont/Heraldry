@@ -34,9 +34,10 @@
 
 #let body-size = 11pt                 // owner 2026-10-12: "Let's lock rules at 11pt"
 #let body-lead = 3.55pt               // same proportion as the 10.25 pt setting
-#let aside-size = 10.5pt              // examples, notes, entry anatomy, power effects
-#let aside-lead = 3.3pt
-#let dossier-size = 9.9pt
+// Owner 2026-10-12: all body text, flavour and rules alike, is one size (11 pt).
+#let aside-size = body-size           // examples, notes, entry anatomy, power effects
+#let aside-lead = body-lead
+#let dossier-size = body-size
 
 // ================================================================ the armoury (original vector marks)
 #let mark(name) = "marks/" + substrate-name + "/" + name + ".svg"
@@ -252,10 +253,13 @@
     top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining",
     costs: (hyphenation: 100%, runt: 160%, widow: 1000%, orphan: 1000%))
   set par(leading: body-lead, spacing: 6.5pt, justify: sys.inputs.at("body", default: "justify") == "justify", first-line-indent: 0pt,
-    justification-limits: (spacing: (min: 80%, max: 140%), tracking: (min: -0.012em, max: 0.025em)))
+    justification-limits: (spacing: (min: 90%, max: 140%), tracking: (min: -0.005em, max: 0.02em)))
   set strong(delta: 200)
   set list(marker: (box(baseline: -1.2pt, lozenge(size: 4.4pt)), [–]), indent: 1pt, body-indent: 6pt, spacing: 4.5pt)
   set enum(indent: 1pt, body-indent: 6pt, spacing: 4.5pt, numbering: n => text(font: sans, weight: 700, size: 9pt)[#n.])
+  // A list item (a talent, a package, a step) is a reference entry: it never splits across a column or page.
+  show list.item: it => block(breakable: false, it)
+  show enum.item: it => block(breakable: false, it)
   body
 }
 
@@ -302,11 +306,11 @@
 // near-black, paragraphs separated by a clear space. Section-level flavour (`lead-block`) sits in
 // a single column of 80% measure; entry flavour (`flavour`) fills its column. Both are justified
 // (a soft, book-like block) unless the specimens are rendered with --input lead=center.
-#let flav-size = 12pt
+#let flav-size = body-size
 #let lead-mode = sys.inputs.at("lead", default: "justify")
 #let flavour-set(body) = {
   set par(justify: lead-mode == "justify", leading: 4.1pt, spacing: 9pt,
-    justification-limits: (spacing: (min: 80% - 0.0em, max: 140%), tracking: (min: -0.012em, max: 0.025em)))
+    justification-limits: (spacing: (min: 90%, max: 140%), tracking: (min: -0.005em, max: 0.02em)))
   set text(font: fell, size: flav-size, fill: ink2, hyphenate: lead-mode == "justify")
   body
 }
@@ -322,21 +326,19 @@
     align(left, tag(tag-text, size: tag-size)),
     text(font: goth, weight: 600, size: size, hyphenate: false, top-edge: "cap-height", bottom-edge: "baseline", name)))))
 
-// Worked example: tinted field on a black spine, a banner tag.
-#let example(title: none, body) = block(width: 100%, above: 10pt, below: 11pt, breakable: false,
+// Set-apart panel shared by worked examples and rules notes (owner 2026-10-12): tinted field on a
+// black spine, the banner tag at the top left, body text at the running size.
+#let panel(label, body) = block(width: 100%, above: 10pt, below: 11pt, breakable: false,
   fill: tint, stroke: (left: 2.6pt + ink), inset: (left: 11pt, right: 9pt, top: 7pt, bottom: 9pt))[
-  #tag([Example#if title != none [ #h(2pt)·#h(2pt) #title]])
+  #tag(label)
   #v(3pt)
   #set text(size: aside-size)
   #set par(leading: aside-lead)
   #body
 ]
-
-// Rules note: corner flourishes and a centred banner tag.
-#let note-box(tag-text: "Rules Note", body) = block(width: 100%, above: 13pt, below: 12pt, breakable: false)[
-  #cornered(inset: (x: 13pt, top: 15pt, bottom: 11pt), s: 14pt)[#set text(size: aside-size); #set par(leading: aside-lead); #body]
-  #place(top + center, dy: -6pt, box(fill: paper, inset: (x: 4pt), tag(tag-text)))
-]
+#let example(title: none, body) = panel([Example#if title != none [ #h(2pt)·#h(2pt) #title]], body)
+// Rules note: the example panel with its own tag ("RULES NOTE", "CLARIFICATION", "DESIGN NOTE").
+#let note-box(tag-text: "Rules Note", body) = panel(tag-text, body)
 
 // Procedure: numbered steps on small black shields.
 #let procedure(title: none, steps) = block(width: 100%, above: 9pt, below: 10pt, breakable: true)[
