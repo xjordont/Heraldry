@@ -4287,5 +4287,38 @@
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
   "rejected_at": "2026-10-12T15:24:33+00:00",
   "rejected_reason": "It reads as a bare skeleton; draw a half-rotted corpse with leathery dried skin stretched over the skull and limbs, only a few ribs showing through torn skin."
+ },
+ "ART-MON-VAULT-OOZE": {
+  "family": "monster",
+  "title": "Vault Ooze",
+  "heading_id": "h-vault-ooze-brute",
+  "route": "gpt",
+  "spec_sha256": "6a807251e7b339aff08ddbcc1b8c06f8703b1601a6419d05bf1b463972e2e907",
+  "prompt_sha256": "8f05b412a741452256cee3b8a1135f4fe89993d76e066a38f23012090e29207c",
+  "status": "received",
+  "received_at": "2026-10-12T15:25:29+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Checker midtone advisory appears to be dense hand-ink hatching on close inspection.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-VAULT-OOZE.png",
+   "sha256": "7605b5a2e9168590277c8d840024238d75f43a30116f7716ae30b2bd438eced9",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-VAULT-OOZE.png",
+   "sha256": "f3c0a696ea61868ad01e5a1d4a26b2b6ce17d1b239c0099eec33ab004e1b9236",
+   "px": [
+    1213,
+    1052
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.043
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
