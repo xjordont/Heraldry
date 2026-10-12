@@ -4353,5 +4353,38 @@
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
   "approved_at": "2026-10-12T15:57:37+00:00"
+ },
+ "ART-MON-VRYMK": {
+  "family": "monster",
+  "title": "Vrymk",
+  "heading_id": "h-vrymk-skirmisher",
+  "route": "gpt",
+  "spec_sha256": "9e8a859fc6ed7d5dcfb3368505b34d9a5cceb2900828c1fe7a6ae522a12ac060",
+  "prompt_sha256": "9d1d91910a5795a2b1cb0c77f4c3ac087dda93c2840f7f4ee89ea6496328ce79",
+  "status": "received",
+  "received_at": "2026-10-12T16:12:02+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flag: prominent round eye and bulbous head read as an octopus head despite the card prohibition; the creature and boulder also appear broader than the required crouched-man scale. The midtone warning visually reads as ink hatching.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-VRYMK.png",
+   "sha256": "859c012f7a171f9dad5d6f2cc1485b2414c2d280492b538ade80d42a31bacf8d",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-VRYMK.png",
+   "sha256": "b5370e6319505e2c2c90240ba3bd3226acde7fc8e2a16504bac5e3086911d4d8",
+   "px": [
+    1148,
+    1155
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.827
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
