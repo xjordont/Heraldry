@@ -3510,5 +3510,38 @@
    "max_print_w_in_300ppi": 4.013
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-SATYR-REVELER": {
+  "family": "monster",
+  "title": "Satyr Reveler",
+  "heading_id": "h-satyr-reveler-controller",
+  "route": "gpt",
+  "spec_sha256": "70b41feda2b3d7109d7e8d24eac0e2d0313bc3df53224a5db0f989c97c6d53f9",
+  "prompt_sha256": "e31bd3e38a8688c5a674a30eac08a327ef6a21331eeb7139572431f0a655c8ca",
+  "status": "received",
+  "received_at": "2026-10-12T14:00:49+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Horn and laurel silhouette leave less than 8% clean margin at top.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-SATYR-REVELER.png",
+   "sha256": "e4a26bb4d58ffc944e140487978a2d5574c493e80ef289a8e51eecc4e4aac734",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-SATYR-REVELER.png",
+   "sha256": "74395bee8bdd0b48017aa58960233659efab3b419bc93539841719253519ca61",
+   "px": [
+    773,
+    1238
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.577
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
