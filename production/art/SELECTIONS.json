@@ -5059,5 +5059,38 @@
    "max_print_w_in_300ppi": 3.18
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-ROGUE": {
+  "family": "class",
+  "title": "Rogue",
+  "heading_id": "h-rogue-25-complexity",
+  "route": "gpt",
+  "spec_sha256": "54bc1200ef85be5885e54d24b2ebddb19d927a3bc7b7bc7a9f69459b12297e44",
+  "prompt_sha256": "bac1ae0ff69159f6e98d3570d3d0c5ee03220554c8296c0c72052b5c0736ca60",
+  "status": "received",
+  "received_at": "2026-10-12T17:37:08+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Strongbox right edge is cropped, violating the clear margin requirement; otherwise no prohibited Assassin pose or drawn rapier.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-ROGUE.png",
+   "sha256": "aeb720e31f9420b351c43cc4a95375b90b3beb51106b116ad179287999e1d3ef",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-ROGUE.png",
+   "sha256": "5c58367e9fbec01561fea0a1b6dc9a8baaf56db7002e787ab67ee6f3c7158ca4",
+   "px": [
+    990,
+    1317
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.3
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
