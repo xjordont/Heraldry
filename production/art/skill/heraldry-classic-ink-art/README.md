@@ -60,7 +60,7 @@ python scripts/validate_skill.py --zip /path/to/Heraldry_Classic_Ink_Art_Skill_v
 - `references/`:
   - `STYLE.md`, `STYLE_CONSISTENCY.md`, `VISUAL_ACCEPTANCE.md`: art direction.
   - `QA_CHECKLIST.md`: checks.
-  - `REPAIR.md`: retry corrections.
+  - `REPAIR.md`: correction sentences for redos (one generation per item).
   - `FAMILIES.md`: family defaults.
   - `WORK_OPERATIONS.md`: operations.
   - `AD_HOC.md`: one-off requests.

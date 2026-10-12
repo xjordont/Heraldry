@@ -452,10 +452,9 @@
  "gpt_review_every": 10,
  "gpt_cadence_note": "Owner 2026-10-11: deliver each image as soon as it passes the worker's checks, so a 5-hour or weekly usage limit never strands work; drift review (contact sheet + style audit over the last 10) every 10 images.",
  "gpt_max_attempts": {
-  "default": 3,
-  "cover": 5,
-  "chapter": 5
+  "default": 1
  },
+ "gpt_attempts_note": "Owner 2026-10-12, after the first 8 batch images: the first generation for each prompt was far better than any retry, so every item gets exactly one generation. A defect is recorded with save --accept-flags --notes, and the reviewer sends the item back as a redo (a fresh generation, in a fresh context, with the correction) when it matters.",
  "gpt_image_model": {
   "preferred": "GPT Image 2.5 Sunburst",
   "rule": "Owner request 2026-10-11: use this model if the ChatGPT Work image tool offers it; otherwise use the default image model. Record the exact model name shown in every receipt (save --model)."

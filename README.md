@@ -7,8 +7,8 @@ The publication repository for the Heraldry Skirmish rulebook. It holds the manu
 - **Manuscript:** RC492 (`source/versions.json`). Earlier snapshots, from the original RC484 onwards, are immutable.
 - **Last requested build:** RC492, 598 interior pages, with the six anchor illustrations of that time placed (the Giant Tarantula has since been sent back for a redo). Evidence and limits are in [production/RELEASE_STATUS.md](production/RELEASE_STATUS.md). Builds happen only when the owner asks.
 - **Illustrations:** 275 planned.
-  - Approved: Greythorn and four hand-inked anchors.
-  - Queued for generation: 270 (gritty old-school black ink; skill v7).
+  - Approved: 12 (Greythorn, four hand-inked anchors and the first seven Codex batch images).
+  - Queued for generation: 263, one generation per item (gritty old-school black ink; skill v7).
 - **Physical printing:** NOT TESTED until real sheets are examined.
 
 Running log: [production/STATE.md](production/STATE.md).

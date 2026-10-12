@@ -681,7 +681,7 @@ Do not draw:
 * No letters in the bark signs.
 ```
 
-### 2. The Ashlands
+### 2. The Ashlands ✓
 
 `ART-CLI-THE-ASHLANDS`
 
@@ -922,7 +922,7 @@ Do not draw:
 * No bones shown explicitly as skeletons.
 ```
 
-### 3. Deepwarden
+### 3. Deepwarden ✓
 
 `ART-BAS-DEEPWARDEN`
 
@@ -2039,7 +2039,7 @@ Do not draw:
 * No pillar or wall.
 ```
 
-### 5. Ranger
+### 5. Ranger ✓
 
 `ART-CLA-RANGER`
 
@@ -2736,7 +2736,7 @@ Printed 1.9 in wide · aspect 1:1. Family framing: Single creature, full body, t
 GIANT TARANTULA - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Giant Tarantula, Greenmark Skirmisher, small: a hand-span of bristled legs around a body the size of a war helm, a forest-floor venomous hunter, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Low three-quarter ground view of the spider stalking across leaf litter on stilted, deliberate legs, forelegs raised, fangs lifted, all eight legs splayed clear of the body so each one can be counted; a discarded war helm lying a short distance to one side for scale, hiding no leg.
+High three-quarter view from above, looking down on the spider as it stands still on bare packed earth: the body in the centre and all eight legs radiating evenly around it like the spokes of a wheel, four on each side, every leg drawn whole from body to clawed foot and every foot planted on the ground, no leg raised, crossed, overlapping another or hidden by the body; fangs lowered; a discarded war helm lying well apart to one side for scale, touching no leg.
 Size: Small: smaller than a human.
 SUBJECT DETAILS
 * Exactly eight legs, jointed and tipped with small claws
@@ -2745,8 +2745,8 @@ SUBJECT DETAILS
 * Two large fangs with a bead of venom at the tips
 * Cluster of eight eyes on a small raised bump
 * Palps in front of the fangs
-* Leaf litter and a rusted iron helm for scale
 * Gripping toe-pads suggesting it can climb walls
+* A rusted iron helm lying apart for scale
 Must be shown exactly:
 * Exactly eight legs
 SOURCE TEXT
@@ -2900,7 +2900,7 @@ Do not draw:
 * Do not draw flame.
 ```
 
-### 7. Dire Wolf
+### 7. Dire Wolf ✓
 
 `ART-MON-DIRE-WOLF`
 
@@ -2929,7 +2929,7 @@ Do not draw:
 * No other wolves.
 ```
 
-### 8. Orc
+### 8. Orc ✓
 
 `ART-MON-ORC`
 
@@ -3553,7 +3553,7 @@ Do not draw:
 * No other undead.
 ```
 
-### 30. Gargoyle
+### 30. Gargoyle ✓
 
 `ART-MON-GARGOYLE`
 
@@ -5062,7 +5062,7 @@ Do not draw:
 * Not cute.
 ```
 
-### 83. Skeleton Warrior
+### 83. Skeleton Warrior ✓
 
 `ART-MON-SKELETON-WARRIOR`
 

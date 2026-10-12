@@ -384,7 +384,7 @@ def evaluate(m, item):
         elif m["edge2"] > T["edge_warn"]["figure"]:
             warns.append(f"stray marks reach the image edge ({m['edge2']:.2%}): check nothing is cropped")
         if m["edge6"] > T["margin_warn"]:
-            warns.append(f"the drawing enters the outer 6% margin ({m['edge6']:.1%}): 8% clean margin is requested")
+            warns.append(f"narrow margin ({m['edge6']:.1%} of the outer 6% band is inked): fine unless the subject is cropped or touches an edge")
     else:
         if m["edge2"] > T["edge_fail"]["scene"]:
             fails.append(f"ink runs to the image edge ({m['edge2']:.0%} of the outer band): no white vignette, or a frame or box")

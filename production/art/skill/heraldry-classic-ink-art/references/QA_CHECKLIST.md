@@ -15,7 +15,7 @@ Calibrated on the approved Greythorn render, the three owner style samples and s
 | paper | Dark or tinted background. | Paper not clean white: stains, darkened vignette, or a grey wash. |
 | grain (figures, still lifes) | | Noise in the margin. The background must be flat. |
 | wash (figures, still lifes) | Heavy grey wash. | Possible grey wash or soft shading. |
-| edge (figures, still lifes) | Ink touches the image edge: a cropped limb, weapon, shadow or frame. | Stray marks at the edge, or the drawing enters the outer 6% margin. |
+| edge (figures, still lifes) | Ink touches the image edge: a cropped limb, weapon, shadow or frame. | Stray marks at the edge, or a narrow outer margin: fine if nothing is cropped (the layout trims margins). |
 | edge (scenes) | Ink runs to the edge: no vignette, or a frame or box. | Marks reach the outer 2%: check all four edges fade out. |
 | copy | Byte-identical to another delivered image or to one of the item's references. | Looks almost identical to one (a re-encoded or resized copy, within 16 of 256 difference bits): look before saving. |
 | budget | More images checked than the item's attempt budget. | |
@@ -33,7 +33,7 @@ Run it on the image and on the print-size preview. `check` repeats the item's MU
 3. **Do-not-draw list.** Take each line and confirm it is absent. Check scenario and boss images especially: named creatures, rival entries and "no people" lines are easy to break.
 4. **Lettering.** Scan signs, banners, shields, books, bark, stonework, hilts, belts and the margins for letter-like marks.
 5. **Pure ink.** No colour, grey wash, gradients, paper texture or soft shadows.
-6. **Edges.** Scene: the drawing thins out to blank paper on all four sides, including the corners. Figure or still life: whole subject, about 8% white margin on every side, only a small ground patch and cast shadow, no box or frame.
+6. **Edges.** Scene: the drawing thins out to blank paper on all four sides, including the corners. Figure or still life: whole subject with nothing touching an edge (a narrow margin is fine), only a small ground patch and cast shadow, no box or frame.
 7. **Reference bleed.** The bleed list in `references/STYLE.md`.
 8. **Anatomy and construction.** Hands and grips. Every weapon is held or sheathed. Limbs attach. Armour has joints. Roofs, bridges and stairs connect to something. No repeated clones.
 9. **Scale.** Matches the prompt: a creature's `Size:` line, or the people a scene says it has. No scale figure unless asked.

@@ -8,7 +8,7 @@ A single subject drawn whole, isolated on blank ivory-white paper: only a small 
 Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
 
 COMPOSITION
-Low three-quarter ground view of the spider stalking across leaf litter on stilted, deliberate legs, forelegs raised, fangs lifted, all eight legs splayed clear of the body so each one can be counted; a discarded war helm lying a short distance to one side for scale, hiding no leg.
+High three-quarter view from above, looking down on the spider as it stands still on bare packed earth: the body in the centre and all eight legs radiating evenly around it like the spokes of a wheel, four on each side, every leg drawn whole from body to clawed foot and every foot planted on the ground, no leg raised, crossed, overlapping another or hidden by the body; fangs lowered; a discarded war helm lying well apart to one side for scale, touching no leg.
 Single creature, full body, three-quarter view, in a characteristic menacing pose; a small human figure for scale only if the creature is Large or Huge. Isolated on white paper with only a small patch of ground and its cast shadow; no background scenery.
 Size: Small: smaller than a human.
 
@@ -19,8 +19,8 @@ SUBJECT DETAILS
 * Two large fangs with a bead of venom at the tips
 * Cluster of eight eyes on a small raised bump
 * Palps in front of the fangs
-* Leaf litter and a rusted iron helm for scale
 * Gripping toe-pads suggesting it can climb walls
+* A rusted iron helm lying apart for scale
 Must be shown exactly:
 * Exactly eight legs
 
