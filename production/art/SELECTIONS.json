@@ -1915,5 +1915,38 @@
    "max_print_w_in_300ppi": 3.823
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-FOREST-TROLL": {
+  "family": "monster",
+  "title": "Forest Troll",
+  "heading_id": "h-forest-troll-brute",
+  "route": "gpt",
+  "spec_sha256": "d5fc81804a082332832d65c9517ca4b403b54a8f8872c8300519513788d28798",
+  "prompt_sha256": "9e2393365fb122424d3a57c4abc5cb46071b1f4d7d2895625f1189323ff4787b",
+  "status": "received",
+  "received_at": "2026-10-12T08:18:17+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "1254x1254 vs 1024x1024 target; visible green moss and reddish wound marks violate pure black ink. Ground reads as wet mire with puddles/reeds; scale large; 13% mid-tones.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-FOREST-TROLL.png",
+   "sha256": "96c3e65a164464622a107575abf554ee632f578caaa6424f5c80a1a31b32e79c",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-FOREST-TROLL.png",
+   "sha256": "a7068e0633930eb1776995917d0f9628467b4e5d3ff1463d26cebb942945e680",
+   "px": [
+    1226,
+    1184
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.087
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
