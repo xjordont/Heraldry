@@ -6148,5 +6148,38 @@
    "max_print_w_in_300ppi": 5.07
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS": {
+  "family": "scenario",
+  "title": "Scenario 1: The Oasis Raiders",
+  "heading_id": "h-scenario-1-the-oasis-raiders-intro",
+  "route": "gpt",
+  "spec_sha256": "98c41954163070b474011bff5f22d1dedd848f34e9076c0519195e64d8b01c26",
+  "prompt_sha256": "d711d6ecefc4dc7dc0f6c9f6b3aaffac9f0820a7111d540e2694b2ffaac65ec3",
+  "status": "received",
+  "received_at": "2026-10-12T22:56:45+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Dune scouts are prominent rather than tiny; foreground scout and right guard crop at edges.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS.png",
+   "sha256": "b95122a36e7e0c85df81aa3be15621302fc0956b79915b53e37d49fe6fb86019",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS.png",
+   "sha256": "4d20a28b726ebbc38badfebd8aaf2449feaba33aa868345f130039878096fdd1",
+   "px": [
+    1522,
+    996
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.073
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
