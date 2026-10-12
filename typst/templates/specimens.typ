@@ -89,7 +89,7 @@
     lead: [Banners rot in the rain. Shrines sink into the mud. Oaths are broken, kings are buried, and the roads between settlements grow more dangerous with each passing season. Yet the ruins of the world still glitter with coin, relics, and forgotten power, and the desperate, the devout, the greedy, and the doomed continue to march into darkness to claim them.])
   #section("1.1", "What is Heraldry Skirmish?")
   #columns(2, gutter: gap)[
-    *Heraldry Skirmish* is a competitive GM-less PvPvE fantasy tabletop miniatures game of desperate expeditions, brutal clashes, and hard-won survival. Most battles pit two rival adventuring parties against one another as they race through monster-haunted ruins, damned wilderness, and blood-soaked strongholds in search of treasure, glory, and escape.
+    #dropcap[*Heraldry Skirmish* is a competitive GM-less PvPvE fantasy tabletop miniatures game of desperate expeditions, brutal clashes, and hard-won survival. Most battles pit two rival adventuring parties against one another as they race through monster-haunted ruins, damned wilderness, and blood-soaked strongholds in search of treasure, glory, and escape.]
 
     A standard competitive game uses *4 Heroes per side* on a *36"×36"* battlefield. It is usually played by *2 players*, but supports *2–8 players* by dividing control of each side's Heroes among allied players.
   ]

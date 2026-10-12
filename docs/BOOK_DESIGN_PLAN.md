@@ -100,7 +100,7 @@ Cinzel is retired. It is common in fantasy games and lacks the press texture of 
   - A thick-and-thin rule sits beneath.
   - Heads are suppressed on chapter openers, scenario openers, the title page, contents and full-art pages.
 - **Folios:** at the outer bottom corner, with a taper toward the gutter.
-- **Thumb tabs:** black tabs bleed off the outer edge. There are 14 fixed slots: chapters 1 to 11, and appendices A, B and C, labelled "A", "B" and "C". The index uses the last slot, labelled "Ix". The closed book shows a stepped index. The chapter number is reversed in Source Sans 3 Bold, centred about 0.27 in from the trim. Tabs are navigation only: the running head always names the chapter, so a trimmed tab loses nothing.
+- **Thumb tabs:** black swallowtail pennants (owner 2026-10-12: keep the tabs, made more artful) hang from the outer edge, each with an engraved inner line; the swallowtail points into the page. There are 14 fixed slots: chapters 1 to 11, and appendices A, B and C, labelled "A", "B" and "C". The index uses the last slot, labelled "Ix". The closed book shows a stepped index. The chapter number is reversed in Source Sans 3 Bold, centred about 0.27 in from the trim. Tabs are navigation only: the running head always names the chapter, so a trimmed tab loses nothing.
 - **Contents:** two columns. Each chapter row has a display numeral and title over a rule, with its page. Each section line has a sans number, a serif title and dot leaders to the page. The contents is two levels deep; deeper levels live in the PDF bookmarks.
 - **Index:** three columns, large display initials over a rule, sans 8.6 pt entries with hanging indents and grey page numbers.
 - **Digital:** linked contents and index, PDF bookmarks, and clickable cross references ("see 10.6.4"). These are built from the existing anchors.
@@ -335,7 +335,7 @@ DESIGN_REFINEMENT's policy stands. This plan adds these rules:
 - **Ink coverage:** solid black is limited to small structural marks. Large black slabs are used only in the art.
 - **Hairlines:** none is thinner than 0.3 pt; the 28% grey hairlines hold on inkjet.
 - **Tints:** transparent black works on cream and white alike; check banding on the physical proof.
-- **Thumb tabs:** they bleed 0.42 in. At the 1.03 overscan test, the number stays fully visible; a tab trimmed by borderless overscan still reads.
+- **Thumb tabs:** they bleed 0.5 in. At the 1.03 overscan test, the number stays fully visible; a tab trimmed by borderless overscan still reads.
 - **Specimens:** `tools/render_template_specimens.py --substrate white` renders the white companion for comparison.
 - Physical printing remains NOT TESTED until real sheets are examined.
 
@@ -371,16 +371,44 @@ The generator (`tools/build_book.py`) already emits semantic component calls (`c
    - specimen pages are re-rendered at each step.
 5. **Release:** `make clean all verify package` and the visual ledger, as BUILD.md describes.
 
-## 11. Decisions recorded and open questions
+## 11. Decisions recorded
 
-- **Recorded (Claude Code, 2026-10-12, within the owner's request for a design plan):**
+- **Claude Code, 2026-10-12, within the owner's request for a design plan:**
   - display face IM FELL replaces Cinzel;
   - ragged-right body;
   - black-bar table headers;
   - one monster per column;
-  - thumb tabs;
   - caption bars.
-- **Open for the owner:**
-  1. Thumb tabs bleed and use ink. They can be removed without other changes if you prefer a cleaner edge.
-  2. The 1.2 in typographic drop for chapters whose art is not yet approved. The alternative is to hold the layout until all chapter art exists.
-  3. Whether C.13 should also be produced as a separate one-page play aid.
+- **Owner, 2026-10-12:**
+  1. Keep the thumb tabs, "or something more artful that serves the same purpose": they are now swallowtail pennants (section 12).
+  2. Chapters whose art is not yet approved use the typographic opener (a 1.2 in drop, type alone), so layout never waits for art.
+  3. C.13, the single-sheet rules summary, is also produced as a separate one-page play aid. It is built from the same source and template as the C.13 page, as its own file, whenever the book is built; no PDF is produced before a build is requested.
+  4. "Add some more flavour than the plain layout ... better graphic design to the tables and elsewhere": section 12.
+
+## 12. Heraldic graphic design (v2.1)
+
+A small armoury of original vector marks gives the working pages their character. They follow four rules:
+
+- they mark structure, never decoration;
+- they are all black on the transparent ground;
+- none carries a rules meaning;
+- none sits behind text.
+
+| Mark | Form | Where |
+|---|---|---|
+| **Shield** | A heater shield with a value set inside it | Roll numbers in lookup tables (d6 and d66 results, reversed), folios (outlined), the chapter mark in the running head, the chapter numerals in the contents, the code in the Appendix C reference head, and the table-title mark |
+| **Pennant plate** | A black strap with a swallowtail end | Section numbers, the EXAMPLE tag, thumb tabs |
+| **Strap** | A black bar with clipped (forged-iron) corners | Table header bars, monster stat bars, figure caption bars, Appendix C reference heads |
+| **Fleuron terminal** | A heavy rule broken by an original cross pattée with a voided centre | The close of every table and stat bar |
+| **Corner brackets** | Engraved L-rules with lozenge corners | Rules notes (with a centred tag plate), scenario setup dossiers |
+| **Drop capital** | The initial reversed in a black square, three lines deep | The first paragraph after a chapter opener (vendored droplet 0.3.1, MIT, `typst/vendor/`) |
+| **Table title** | A shield, the title in display small caps, and a tapered rule running to the margin | Every titled table |
+
+**Ink budget:** an ordinary page still carries only small solid areas. The largest are the table header strap and the thumb tab.
+
+**Restraint rules:**
+- One shield per table row at most.
+- No mark repeats more than about a dozen times on a page.
+- The display flourish stays reserved for openers, title, contents, index and back cover.
+
+All of these are implemented in `typst/templates/system.typ` and shown on the specimen pages.
