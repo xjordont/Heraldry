@@ -3411,5 +3411,38 @@
    "max_print_w_in_300ppi": 3.177
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-RATKIN-SCAVENGER": {
+  "family": "monster",
+  "title": "Ratkin Scavenger",
+  "heading_id": "h-ratkin-scavenger-minion",
+  "route": "gpt",
+  "spec_sha256": "a8c26bf8c45aeafe27bf14f8a4b58fea03a96b9975034b2e74f52415e5d83023",
+  "prompt_sha256": "3c5e5b46ee1c68564fa6a5e158a503bfc7086dac1c01672715871a2db155868a",
+  "status": "received",
+  "received_at": "2026-10-12T13:48:02+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Figure is muscular rather than scrawny, and the knife tip leaves less than 8% clean margin.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-RATKIN-SCAVENGER.png",
+   "sha256": "6963b82cf4b7d81fa7dab3a3b0d1be3ea6f9b6ff4d2b627a654d15fabbfa85ae",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-RATKIN-SCAVENGER.png",
+   "sha256": "006b89544738469c3f193d52c52568b7b6a1e301f95355eb9d956f4926217196",
+   "px": [
+    1122,
+    1076
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.74
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
