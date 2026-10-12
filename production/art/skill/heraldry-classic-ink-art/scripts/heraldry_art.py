@@ -356,7 +356,7 @@ def measure(path):
             "edge2": dark_frac(0.02), "edge6": dark_frac(0.06)}
 
 
-def evaluate(m, item):
+def evaluate(m, item, target_pixels=0):
     """Return (fails, warns, infos) for the measurements of one image against its queue item."""
     reg = "scene" if item["register"] == "scene" else "figure"
     fails, warns, infos = [], [], []
@@ -368,6 +368,9 @@ def evaluate(m, item):
                      "request the largest size the tool offers at that aspect; reviewer exception needed after attempt budget")
     if m["format"] not in IMAGE_EXT:
         fails.append(f"format {m['format']}: the image must be PNG, JPEG or WEBP")
+    if target_pixels and w * h < 0.97 * target_pixels:
+        warns.append(f"{w}x{h} is {w * h / 1e6:.2f} MP, under the queue's maximum-resolution target of {target_pixels / 1e6:.2f} MP: "
+                     "request the largest size and highest quality the image tool offers at this aspect")
     if max(w, h) < T["min_long_side"]:
         fails.append(f"only {max(w, h)} px on the long side (minimum {T['min_long_side']}): regenerate at the full size")
     c = m["colour"]
@@ -809,7 +812,7 @@ def run_check(repo, q, iid, image):
         m = measure(image)
     except Exception as e:                                     # undecodable or truncated image
         raise Fatal(f"{image}: not a readable image ({e})")
-    fails, warns, infos = evaluate(m, it)
+    fails, warns, infos = evaluate(m, it, q.get("target_pixels") or 0)
     digest = file_sha(image)
     n, checked, rnd = record_attempt(repo, it["id"], digest, states(repo, q)[it["id"]])
     if n < checked:
@@ -975,6 +978,7 @@ def cmd_save(a, repo):
         rec["accepted_flags"] = True
         rec["accepted_at_attempt"] = n
     rec["saved_attempt"] = n
+    rec["native_px"] = list(m["px"])                    # the delivered resolution, for the maximum-resolution target
     rec["qa_schema"] = 1
     # The external scratch report may not survive a Work session. Keep the full
     # visual evidence with the in-repo receipt so Claude Code can audit it later.

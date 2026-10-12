@@ -18,7 +18,7 @@ Commands use the full path `python production/art/skill/heraldry-classic-ink-art
 - Use the exact queued prompt without paraphrasing, inserting new lore, or reconstructing prompts from the illustration list. Up to two targeted correction sentences may be added on a retry; record them.
 - Attach only the item references in order. If references are missing, stop; do not quietly generate an unanchored replacement. This prevents art-style drift.
 - Use the GPT Image 2.5 Sunburst model if the image tool offers it (owner request 2026-10-11); otherwise the default model. Record the model name shown (`save --model`).
-- The queue size is the minimum at a fixed aspect: request the largest size the tool offers at that aspect. The gate fails only a smaller or off-aspect image.
+- The queue size is the minimum at a fixed aspect. Target the maximum output resolution (owner 2026-10-12): choose the largest size and highest quality the tool offers at that aspect, never the default. `check` warns below the queue's `target_pixels`; the gate fails only a smaller or off-aspect image.
 - Art direction (owner 2026-10-11): gritty old-school black-and-white ink. Bold rough contours, heavy solid blacks, scratchy hatching and dry-brush, high contrast, like the item's references. Pure black ink: no grey wash, stipple fields, machine-even texture or clean vector-like line.
 - Save the original native image to a scratch file; keep it byte-identical. Never alter or upscale it for delivery.
 - Run `heraldry_art.py check ID SCRATCH_IMAGE` and inspect its actual print-size preview and referenced images. The tripwires cannot judge artistic excellence.

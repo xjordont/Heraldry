@@ -115,6 +115,8 @@ def build_queue(phase, ents, sels, anchors, root=ROOT):
             "push_every": g.CFG.get("gpt_push_every", 5), "review_every": g.CFG.get("gpt_review_every", 10),
             # drift reviews count only receipts written after this queue was published (the log itself is append-only)
             "receipts_base": receipt_lines(root),
+            # maximum-resolution target: the largest pixel count the worker's image tool has delivered (owner 2026-10-12)
+            "target_pixels": g.CFG.get("gpt_target_pixels", 0),
             "count": len(items), "items": items}, prompts
 
 
