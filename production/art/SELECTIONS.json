@@ -3576,5 +3576,38 @@
    "max_print_w_in_300ppi": 3.953
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-SKELETAL-BEAST": {
+  "family": "monster",
+  "title": "Skeletal Beast",
+  "heading_id": "h-skeletal-beast-skirmisher",
+  "route": "gpt",
+  "spec_sha256": "2c0216d72a373618855271ea6619df86b0769221139d0c10b4dff014a0874123",
+  "prompt_sha256": "5dd0f99c035d4f9946508e7fd70b09833976a7d6b5db44b0f24b18481c59d42d",
+  "status": "received",
+  "received_at": "2026-10-12T14:10:29+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Muzzle and front paw leave less than 8% clean margin at left.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-SKELETAL-BEAST.png",
+   "sha256": "94f0d52e7c220b46cd6b7232657c1c51049fcbd4ab8a94f382b314fc2b237f22",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-SKELETAL-BEAST.png",
+   "sha256": "f7c655871e87a6a2e2fc2e947694b9c447b8c982b07975e90d06ee8c13e6f5a8",
+   "px": [
+    1159,
+    968
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.863
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
