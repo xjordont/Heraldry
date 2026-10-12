@@ -1387,5 +1387,38 @@
    "max_print_w_in_300ppi": 4.077
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-CAVE-GOBLIN": {
+  "family": "monster",
+  "title": "Cave Goblin",
+  "heading_id": "h-cave-goblin-minion",
+  "route": "gpt",
+  "spec_sha256": "978f955da2d582799fbde857154cd77099ba8cb037f40fff20a852815a1fcdab",
+  "prompt_sha256": "e3ac2267365da7500d8e1f8c4fee7f838a4f89df80974835078e50cf0838420c",
+  "status": "received",
+  "received_at": "2026-10-12T07:24:46+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Generated image is 1254 square vs 1024 target; retained unmodified.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-CAVE-GOBLIN.png",
+   "sha256": "b4f14f32ecaa7ba0a42a117bad173b8cdaf0b0f072721c54d22197d790b27ceb",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-CAVE-GOBLIN.png",
+   "sha256": "95edb16cb1575cc893be1c5bdfc20c4281f040556c11eac929d3c165630769c5",
+   "px": [
+    1049,
+    1028
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.497
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
