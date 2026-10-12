@@ -4314,5 +4314,38 @@
    "max_print_w_in_300ppi": 4.043
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-VAULTFANG": {
+  "family": "monster",
+  "title": "Vaultfang",
+  "heading_id": "h-vaultfang-cannon",
+  "route": "gpt",
+  "spec_sha256": "1f3ff7f8557e6aa73bb575a5cd54a9abf735c4b401efde933a562558b731ef3b",
+  "prompt_sha256": "48d7804f4195ce10c64e61e6c5e6edca962947e4514f7b01ecf17e0d71fedff5",
+  "status": "received",
+  "received_at": "2026-10-12T15:42:35+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flag: the top gripping claws are prominent and read as an obvious creature feature, weakening the first-glance stalactite read.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-VAULTFANG.png",
+   "sha256": "2e44fe14f078a5afd73aeee204121c1808f4c71505aa1db90f3679b5701ee773",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-VAULTFANG.png",
+   "sha256": "a98adb2a135bff3cc3bc1f4e423e81b13c320ee04dbbc8e76acd7b2e971817c3",
+   "px": [
+    675,
+    1219
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.25
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
