@@ -232,5 +232,38 @@
    "max_print_w_in_300ppi": 3.237
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-SMUGGLER": {
+  "family": "background",
+  "title": "Smuggler",
+  "heading_id": "h-smuggler",
+  "route": "gpt",
+  "spec_sha256": "9da741bea612eb6cb4ca8411c2f1334542d01ae07e26331f3c82d550ec03b912",
+  "prompt_sha256": "31be2e519c44cd1325b1198cca79cb72b0da185542ce9aa97f84d8728faf22c6",
+  "status": "received",
+  "received_at": "2026-10-12T04:54:48+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-SMUGGLER.png",
+   "sha256": "4eaf830185ee2f5b5f3d78fb0b4253ae8948716a1d23c0ef8ab9544d226f99d7",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-SMUGGLER.png",
+   "sha256": "5c84666067939ec3ab05271af9f830f94834828c5024ba863544e36d80bda512",
+   "px": [
+    1253,
+    1084
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.177
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
