@@ -355,3 +355,24 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
     - `.gitattributes` drops the Greythorn exemption;
     - `assets/art/ink/README.md` keeps the folder present for the intake's `git add`.
   - **Next Codex run:** stop after 17. No build; `dist/` still describes the RC492 build, which contains the six earlier anchors.
+- **Reference bank promoted** (owner, 2026-10-12: "Promote them if there is room in their most relevant category (3 images per category)"). Every set was already full at 3, so the owner chose to raise the limit to 4 per item and include the risky pieces.
+  - **One banked image joined each set it fits best:**
+    - beast: 22 wolf pack;
+    - vermin: 35 grub beast;
+    - humanoid: 32 goat-folk;
+    - classes and ancestries: 42 Callot beggar on crutches;
+    - background: 39 poison flask;
+    - item: 24 flanged mace;
+    - tradition: 12 wizard storm;
+    - climate: 17 swamp hut;
+    - world: 30 forest path;
+    - campaign: 23 dungeon arches;
+    - scenario: 31 dungeon melee.
+  - **Unchanged:** undead, magical, boss, bastion, chapter and cover had no matching banked image, so they keep 3. 190 items now carry 4 references and 85 carry 3.
+  - **Still unattached:** 14, 27, 33 and 40 (still lifes, with no slot left), plus the grey-wash mood pieces and the map.
+  - **Accepted risks** (recorded in `docs/ART_DIRECTION.md`):
+    - screen tone, stipple and grey tone in 12, 17, 23, 30 and 31;
+    - a forest scene in the beast set (22), the one exception to the figure test's no-scenery rule.
+  - **Housekeeping:**
+    - The queue was republished; prompts are unchanged and only reference lists changed.
+    - `STYLE_REFS.json` usage fields are now generated from the config; 13 of them had wrongly said "not attached" since mapping v7.

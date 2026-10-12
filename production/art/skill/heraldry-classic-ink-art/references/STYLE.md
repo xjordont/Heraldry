@@ -28,7 +28,7 @@ References carry subjects that tend to leak into unrelated images. Reject any re
 - **Scenes:** a full moon behind skeletons, a crowd of undead faces, a zombie facing a cloaked swordsman, a warrior-priest calling down fire on lizard silhouettes, a wizard in a pointed hat, an adventuring party on a forest path, a donkey under trees, prison chains, wheels and drawbridges, armour on mannequin stands, dungeon pits.
 - **Towns** (the city references used for bastion and world scenes): framing oaks, standing stones with spirals, a timber palisade with twin gate towers, tree banners, a stone-pier bridge, a walled city seen from above.
 
-Each item has at most three references, chosen per family (and per monster kind) so that scenery never reaches figure items; do not add more. A few references are centuries-old etchings or woodcuts: take their line, blacks and finish, never their period costume.
+Each item has at most four references, chosen per family (and per monster kind) so that scenery never reaches figure items; do not add more. A few references are centuries-old etchings or woodcuts: take their line, blacks and finish, never their period costume.
 
 ## Ink and paper
 

@@ -1,5 +1,5 @@
 {
- "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses. A second batch added STYLE-REF-28..40 to the bank (one more image was STYLE-REF-26 again, byte-identical, and was not stored twice). 2026-10-11: on owner instruction Claude searched for public-domain examples to fill the remaining gaps and added STYLE-REF-41..44 (Callot, Piranesi, Haden; Art Institute of Chicago CC0). Their scans were levelled and plate numbers or signatures removed.",
+ "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses. A second batch added STYLE-REF-28..40 to the bank (one more image was STYLE-REF-26 again, byte-identical, and was not stored twice). 2026-10-11: on owner instruction Claude searched for public-domain examples to fill the remaining gaps and added STYLE-REF-41..44 (Callot, Piranesi, Haden; Art Institute of Chicago CC0). Their scans were levelled and plate numbers or signatures removed. 2026-10-12: the owner promoted most of the bank (max four references per item); each entry's 'use' now states the sets it is attached to, generated from config/art_style.json.",
  "refs": [
   {
    "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
@@ -9,7 +9,7 @@
     1792
    ],
    "sha256": "29364cc766db9549391119316240448270abc2ed0cbc5ef94ca8fdeac04e7bdb",
-   "use": "generation style reference for bastion and world scenes (promoted by the owner 2026-10-11); never placed or packaged"
+   "use": "attached to reference sets: bastion; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
@@ -19,7 +19,7 @@
     1438
    ],
    "sha256": "d3834f414c62e8623c1c5f35afd6ed4da9edbaaf86e64ac4883763e92b7d61bf",
-   "use": "generation style reference only; never placed in the book or packaged; the owner re-supplied it in the 2026-10-11 gritty set"
+   "use": "attached to reference sets: monster:undead; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
@@ -29,7 +29,7 @@
     1945
    ],
    "sha256": "134078725385cca7220f9757f98672f27f3a26dfe31816e359a7ad59bc4f8d21",
-   "use": "generation style reference only; never placed in the book or packaged",
+   "use": "attached to reference sets: creature, monster:humanoid, monster:undead; never placed or packaged",
    "role": "figure: enthroned skeleton king; heavy brush blacks, rough dry-brush contour"
   },
   {
@@ -40,7 +40,7 @@
     1904
    ],
    "sha256": "9211539ee20f600aa0ba6ffd9de1dc51bfcf9dedb4136e1c25eecebcd40bbd8e",
-   "use": "generation style reference only; never placed in the book or packaged",
+   "use": "attached to reference sets: boss; never placed or packaged",
    "role": "creature: cave slime beast and goblin shaman; scratchy pen texture, bold contour"
   },
   {
@@ -51,7 +51,7 @@
     941
    ],
    "sha256": "885688a47450cfca9763b5ead5cb32ae8c34ca0fc72c677148497ace114fab55",
-   "use": "generation style reference only; never placed in the book or packaged",
+   "use": "attached to reference sets: person; never placed or packaged",
    "role": "person: hooded archer; loose brush-pen sketch, broken line"
   },
   {
@@ -62,7 +62,7 @@
     767
    ],
    "sha256": "d0d69cbb5cdb5679e4ad4eb09d272b54de544b38337088158ec23a5d5fac4ff8",
-   "use": "generation style reference only; never placed in the book or packaged",
+   "use": "attached to reference sets: climate, scene; never placed or packaged",
    "role": "scene: zombie and cloaked swordsman; dry-brush blacks on open paper, grass vignette"
   },
   {
@@ -73,7 +73,7 @@
     600
    ],
    "sha256": "76703e91b74e1823f275704fa200f551076b7d5fc367a407e92062ff60baaba5",
-   "use": "generation style reference for persons, i.e. classes and ancestries (promoted by the owner 2026-10-11); never placed or packaged",
+   "use": "attached to reference sets: person; never placed or packaged",
    "role": "scene: period woodcut of fencers; gouged hatching, strong silhouette"
   },
   {
@@ -84,7 +84,7 @@
     732
    ],
    "sha256": "8a797125940c3f7def70c80ab4b819812f54116a93daabc3acf89f7cc9e50cd8",
-   "use": "generation style reference only; never placed in the book or packaged",
+   "use": "attached to reference sets: bastion, scenario, scene, world; never placed or packaged",
    "role": "scene: skeleton melee; comic-ink spot blacks, scratchy action texture"
   },
   {
@@ -95,7 +95,7 @@
     875
    ],
    "sha256": "333021be2755c3993e009a240b07d016267472abb742ff3b1e9a0db65d22fba9",
-   "use": "generation style reference only; never placed in the book or packaged",
+   "use": "attached to reference sets: boss, scene; never placed or packaged",
    "role": "scene: classic 1980s undead crowd; bold contour, heavy blacks, crosshatching"
   },
   {
@@ -107,7 +107,7 @@
    ],
    "sha256": "c4421e981228f908033645b583258dffe1a6b5adad195a8cc7248f39e4cdb1f8",
    "role": "scene: walled town seen from its approach road; bold contour, heavy blacks, open sky",
-   "use": "generation style reference for bastion and world scenes only; never placed in the book or packaged. Owner exception: likely machine-made, attached by owner instruction"
+   "use": "attached to reference sets: bastion, cover; never placed or packaged"
   }
  ],
  "inspiration_only": [
@@ -164,7 +164,7 @@
    "category": "magic (tradition)",
    "role": "Two figures watching a spell storm over hills; magic drawn as ink bands and cloud line",
    "caveat": "grey screen tone in the sky; would need the tone ignored",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: tradition; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
@@ -177,7 +177,7 @@
    "category": "landscape: caverns (climate)",
    "role": "Underground river with stalactites; scratchy pen water and rock",
    "caveat": "narrow (768 px wide)",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: climate; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-14-skull-serpent-engraving.jpg",
@@ -190,7 +190,7 @@
    "category": "still life",
    "role": "Engraved skull, serpent, broken sword and beads on a vignette ground",
    "caveat": "signed monogram lower left: crop before use",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "on file, not attached to any generation set; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
@@ -203,7 +203,7 @@
    "category": "still life: equipment",
    "role": "Sword and morning star, isolated on white, bold contour",
    "caveat": "",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: item; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
@@ -216,7 +216,7 @@
    "category": "creature (non-undead)",
    "role": "Winged armoured dragon-man on a rock; heavy spot blacks, isolated on white",
    "caveat": "",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: boss, creature, monster:beast, monster:magical, monster:vermin; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg",
@@ -229,7 +229,7 @@
    "category": "landscape: swamp (climate)",
    "role": "Hag's hut in a mire, skull posts; heavy brush blacks, dry-brush frame",
    "caveat": "grey paper tone and soft grey water",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: climate; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
@@ -242,7 +242,7 @@
    "category": "creature (beast)",
    "role": "Roaring bear, isolated on white; scratchy fur hatching into solid black",
    "caveat": "",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: creature, monster:beast, monster:magical, monster:vermin; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
@@ -255,7 +255,7 @@
    "category": "still life: gear",
    "role": "Pack, coiled rope and lantern on a ground line; scratchy pen hatching",
    "caveat": "",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: background, item, still; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-20-armoury-interior.jpg",
@@ -268,7 +268,7 @@
    "category": "interior (campaign room)",
    "role": "Armour on stands, crossbow on a table, stone wall; clean bold line with spot blacks",
    "caveat": "",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: campaign; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
@@ -281,7 +281,7 @@
    "category": "scene / persons",
    "role": "Warrior, archer, dwarf, halfling and wizard on a forest path; brush ink",
    "caveat": "wizard's hat carries star and moon symbols",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: scenario; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg",
@@ -294,7 +294,7 @@
    "category": "creature (beast) / scene",
    "role": "Wolf pack running through a forest; brush and scratchy hatching",
    "caveat": "",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: monster:beast; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-23-dungeon-arches-screentone.jpg",
@@ -307,7 +307,7 @@
    "category": "interior (dungeon)",
    "role": "Vaulted dungeon corridor with torches",
    "caveat": "mechanical dot screen tone and a monogram 'R' (lower right): structure reference only",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: campaign; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-24-flanged-mace-line.jpg",
@@ -320,7 +320,7 @@
    "category": "still life: equipment",
    "role": "Single flanged mace, clean line, isolated",
    "caveat": "very clean and light, closer to the old style",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: item; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
@@ -333,7 +333,7 @@
    "category": "still life: equipment",
    "role": "Pair of bracers, heavy blacks, stipple cast shadow",
    "caveat": "grey gradient background and a stipple shadow",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: background, item, still; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
@@ -346,7 +346,7 @@
    "category": "magic (tradition) / interior",
    "role": "Wizard summoning a furred winged beast; magic as white light carved from black",
    "caveat": "open book with pseudo-writing",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: tradition; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
@@ -359,7 +359,7 @@
    "category": "still life: item",
    "role": "Carved scroll case with stipple ground shadow",
    "caveat": "pseudo-script carved on it: lettering risk",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "on file, not attached to any generation set; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
@@ -372,7 +372,7 @@
    "category": "magic (tradition) / creature",
    "role": "Wizard blasting a flaming serpent-bodied fiend; magic as a spray of ink flecks on open white, ground shadows only",
    "caveat": "",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: monster:magical, tradition; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
@@ -385,7 +385,7 @@
    "category": "magic (divine) / scene",
    "role": "Warrior-priest calling down fire on lizardfolk silhouettes; heavy black ground, open white sky",
    "caveat": "",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: chapter, cover, tradition; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
@@ -398,7 +398,7 @@
    "category": "landscape: forest (climate)",
    "role": "Conifer forest path; dense pen trees and grass",
    "caveat": "stipple-dot sky and ground (the stipple-field look the prompts forbid)",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: world; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg",
@@ -411,7 +411,7 @@
    "category": "interior / scene / magic",
    "role": "Dungeon brawl with goblins, a magic bolt and eyes in the dark; bold line and solid blacks",
    "caveat": "heavy dotwork stipple throughout; cropped composition",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: scenario; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg",
@@ -424,7 +424,7 @@
    "category": "person / creature (beastfolk)",
    "role": "Goat-headed warrior with spear and belt pouches, isolated on white; loose line",
    "caveat": "small (820 px wide); light, sketchy",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: monster:humanoid; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
@@ -437,7 +437,7 @@
    "category": "still life: item",
    "role": "Rope-bound cross of bone or wood, isolated; scratchy hatching",
    "caveat": "small (717 px wide); faint grey paper texture at the left edge",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "on file, not attached to any generation set; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
@@ -450,7 +450,7 @@
    "category": "still life: gear",
    "role": "Backpack, rations, torch, rope, waterskin, candles, mortar, bedroll, daggers, herbs; scratchy pen",
    "caveat": "grungy grey paper border",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: background, still; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-35-grub-beast-line.jpg",
@@ -463,7 +463,7 @@
    "category": "creature (insect)",
    "role": "Antennaed grub creature with claws in rubble; clean bold line, isolated",
    "caveat": "small (661 x 800)",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: monster:vermin; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
@@ -476,7 +476,7 @@
    "category": "creature (insect)",
    "role": "Crab-clawed insectoid humanoid, isolated on white; clean line with hatching",
    "caveat": "",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: monster:vermin; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
@@ -489,7 +489,7 @@
    "category": "interior / scene",
    "role": "Knight with torch, kneeling elf and a halfling at dungeon pits; bold blacks, flagstones",
    "caveat": "narrow (617 px wide)",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: campaign; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
@@ -502,7 +502,7 @@
    "category": "creature (beastfolk)",
    "role": "Hyena-man with spear and skull belt; bold scratchy hatching, isolated on white",
    "caveat": "",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: monster:beast, monster:humanoid, monster:undead; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
@@ -515,7 +515,7 @@
    "category": "still life: item",
    "role": "Coffin-shaped flask with skull; bold contour and hatching",
    "caveat": "very small (552 x 360)",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "attached to reference sets: background; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
@@ -528,7 +528,7 @@
    "category": "still life: equipment",
    "role": "Crude scythe-pick with a rag-wrapped haft, isolated",
    "caveat": "small (467 px tall)",
-   "use": "banked by owner instruction: on file, not attached to any generation set until the owner decides; never placed or packaged"
+   "use": "on file, not attached to any generation set; never placed or packaged"
   }
  ],
  "public_domain": [
@@ -543,7 +543,7 @@
    "sha256": "e6231f466212226380803ae95a46a75c42821fd6272460c0a8617207c5bb61a4",
    "source": "Art Institute of Chicago, artwork 18054 ('Beggar without Hat or Shoes, plate twelve from The Beggars', Jacques Callot), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
    "processing": "levelled to black ink on white paper, cropped to the image, plate signature or number painted out",
-   "use": "generation style reference (public domain, sourced by Claude on owner instruction 2026-10-11); never placed or packaged"
+   "use": "attached to reference sets: monster:humanoid, person; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg",
@@ -556,7 +556,7 @@
    "sha256": "0cf0d51ab14e774a689e94b669b6e6e1508be837d168404b4028bb6a543da180",
    "source": "Art Institute of Chicago, artwork 18026 ('Beggar on Crutches and Wearing a Hat, seen from Back, plate five from The Beggars', Jacques Callot), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
    "processing": "levelled to black ink on white paper, cropped to the image, plate signature or number painted out",
-   "use": "generation style reference (public domain, sourced by Claude on owner instruction 2026-10-11); never placed or packaged"
+   "use": "attached to reference sets: person; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
@@ -569,7 +569,7 @@
    "sha256": "e9e860585ceca7c3aca82a132b846ea2e6c2a03377c986d0cdc8180a0b8f7c5b",
    "source": "Art Institute of Chicago, artwork 7358 ('The Drawbridge, plate 7 from Imaginary Prisons', Giovanni Battista Piranesi), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
    "processing": "levelled to black ink on white paper, cropped to the image",
-   "use": "generation style reference (public domain, sourced by Claude on owner instruction 2026-10-11); never placed or packaged"
+   "use": "attached to reference sets: campaign, chapter, cover, world; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
@@ -582,7 +582,7 @@
    "sha256": "2dce2fcd003736f981b5f7372d275441cb71e198c2f19ad982d771d1ddd5e630",
    "source": "Art Institute of Chicago, artwork 7707 ('Challow Farm', Francis Seymour Haden), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
    "processing": "levelled to black ink on white paper, cropped to the image, plate signature or number painted out",
-   "use": "generation style reference (public domain, sourced by Claude on owner instruction 2026-10-11); never placed or packaged"
+   "use": "attached to reference sets: chapter, climate, scenario, world; never placed or packaged"
   }
  ]
 }

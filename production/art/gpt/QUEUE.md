@@ -5,20 +5,20 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 | Set | Reference images |
 |---|---|
 | A | `assets/art/style/STYLE-REF-11-city-approach-ink.png`<br>`assets/art/style/STYLE-REF-02-panorama-line.jpg`<br>`assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg` |
-| B | `assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg`<br>`assets/art/style/STYLE-REF-13-cave-river-pen.jpg`<br>`assets/art/style/STYLE-REF-07-drybrush-duel.jpg` |
+| B | `assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg`<br>`assets/art/style/STYLE-REF-13-cave-river-pen.jpg`<br>`assets/art/style/STYLE-REF-07-drybrush-duel.jpg`<br>`assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg` |
 | C | `assets/art/style/STYLE-REF-04-throne-brush-black.jpg`<br>`assets/art/style/STYLE-REF-03-figure-spotblack.jpg`<br>`assets/art/style/STYLE-REF-38-gnoll-spearman.jpg` |
-| D | `assets/art/style/STYLE-REF-18-roaring-bear.jpg`<br>`assets/art/style/STYLE-REF-38-gnoll-spearman.jpg`<br>`assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg` |
-| E | `assets/art/style/STYLE-REF-38-gnoll-spearman.jpg`<br>`assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg`<br>`assets/art/style/STYLE-REF-04-throne-brush-black.jpg` |
+| D | `assets/art/style/STYLE-REF-18-roaring-bear.jpg`<br>`assets/art/style/STYLE-REF-38-gnoll-spearman.jpg`<br>`assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg`<br>`assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg` |
+| E | `assets/art/style/STYLE-REF-38-gnoll-spearman.jpg`<br>`assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg`<br>`assets/art/style/STYLE-REF-04-throne-brush-black.jpg`<br>`assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg` |
 | F | `assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg`<br>`assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg`<br>`assets/art/style/STYLE-REF-18-roaring-bear.jpg` |
-| G | `assets/art/style/STYLE-REF-08-woodcut-fencers.jpg`<br>`assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg`<br>`assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg` |
-| H | `assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg`<br>`assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg`<br>`assets/art/style/STYLE-REF-25-bracers-pair.jpg` |
-| I | `assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg`<br>`assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg`<br>`assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg` |
-| J | `assets/art/style/STYLE-REF-20-armoury-interior.jpg`<br>`assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg` |
-| K | `assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg`<br>`assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg`<br>`assets/art/style/STYLE-REF-18-roaring-bear.jpg` |
-| L | `assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg`<br>`assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg`<br>`assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg` |
+| G | `assets/art/style/STYLE-REF-08-woodcut-fencers.jpg`<br>`assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg`<br>`assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg`<br>`assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg` |
+| H | `assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg`<br>`assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg`<br>`assets/art/style/STYLE-REF-25-bracers-pair.jpg`<br>`assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg` |
+| I | `assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg`<br>`assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg`<br>`assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg`<br>`assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg` |
+| J | `assets/art/style/STYLE-REF-20-armoury-interior.jpg`<br>`assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg`<br>`assets/art/style/STYLE-REF-23-dungeon-arches-screentone.jpg` |
+| K | `assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg`<br>`assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg`<br>`assets/art/style/STYLE-REF-18-roaring-bear.jpg`<br>`assets/art/style/STYLE-REF-35-grub-beast-line.jpg` |
+| L | `assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg`<br>`assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg`<br>`assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg`<br>`assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg` |
 | M | `assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg`<br>`assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg`<br>`assets/art/style/STYLE-REF-05-cave-creature-pen.jpg` |
-| N | `assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg`<br>`assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg` |
-| O | `assets/art/style/STYLE-REF-15-sword-mace-items.jpg`<br>`assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg`<br>`assets/art/style/STYLE-REF-25-bracers-pair.jpg` |
+| N | `assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg`<br>`assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg`<br>`assets/art/style/STYLE-REF-30-forest-path-stipple.jpg` |
+| O | `assets/art/style/STYLE-REF-15-sword-mace-items.jpg`<br>`assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg`<br>`assets/art/style/STYLE-REF-25-bracers-pair.jpg`<br>`assets/art/style/STYLE-REF-24-flanged-mace-line.jpg` |
 | P | `assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg`<br>`assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg` |
 | Q | `assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg`<br>`assets/art/style/STYLE-REF-11-city-approach-ink.png`<br>`assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg` |
 
