@@ -117,9 +117,10 @@ class ArtPipeline(unittest.TestCase):
                                       "STYLE-REF-65-ship-dead-tree-coast.jpg", "STYLE-REF-67-ghoul-sewer-ambush.jpg")}
         city = style + "STYLE-REF-11-city-approach-ink.png"
         self.assertEqual(q["schema"], 2)
-        done = {i for i, v in g.load(g.SELECTIONS, {}).items() if v.get("status") in ("approved", "anchor-approved")}
+        # received images await review and are not re-queued; rejected ones are (as redos)
+        done = {i for i, v in g.load(g.SELECTIONS, {}).items() if v.get("status") in ("received", "approved", "anchor-approved")}
         done |= set(g.CFG["gpt_anchor_ids"])
-        self.assertEqual(q["count"], len([i for i in ents if i not in done]), "every entry not yet approved is queued")
+        self.assertEqual(q["count"], len([i for i in ents if i not in done]), "every entry neither approved nor awaiting review is queued")
         lead = [i for i in g.CFG["gpt_lead_ids"] if i in {x["id"] for x in q["items"]}]
         self.assertEqual([x["id"] for x in q["items"][:len(lead)]], lead, "the mixed lead goes first")
         self.assertEqual(len({x["ref_set"] for x in q["items"][:len(lead)]}), len(lead), "one lead item per reference set")
