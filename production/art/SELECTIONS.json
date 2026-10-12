@@ -5422,5 +5422,38 @@
    "max_print_w_in_300ppi": 3.263
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ANC-HALFLING": {
+  "family": "ancestry",
+  "title": "Halfling",
+  "heading_id": "h-halfling",
+  "route": "gpt",
+  "spec_sha256": "041591bec59557adac15c65e62de127a3022c6211915295d9d516c1031fde03d",
+  "prompt_sha256": "150a11d11727432db03cf9714d9c5639a8c8dff8eac3e2ef1675bf7770e7d911",
+  "status": "received",
+  "received_at": "2026-10-12T18:07:44+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ANC-HALFLING.png",
+   "sha256": "79b6e558bb859a9ecc522992d91ee899ec095bc4d8f3e971ed87bd65550ff704",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ANC-HALFLING.png",
+   "sha256": "dc9afd04a90e69a28a6b165ed45263c002ebb0809191e961050b6f2afed2af5e",
+   "px": [
+    996,
+    1255
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.32
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
