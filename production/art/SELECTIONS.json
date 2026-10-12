@@ -6115,5 +6115,38 @@
    "max_print_w_in_300ppi": 5.103
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY": {
+  "family": "scenario",
+  "title": "Scenario 1: The Fallen Observatory",
+  "heading_id": "h-scenario-1-the-fallen-observatory-intro",
+  "route": "gpt",
+  "spec_sha256": "3af32c7492e8c4ed5f358a83d6cfa7d0d120ce0e2f24663d82f5f3a0573383ab",
+  "prompt_sha256": "ca7f147270b87eb2ce2312be565b89c9fc2cab4688b31c26004d06f9ff6e135a",
+  "status": "received",
+  "received_at": "2026-10-12T22:51:23+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Sentinel is detailed and prominent, and a robber is cropped at left and bottom.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY.png",
+   "sha256": "fd924d1ce9dab888c82e71d667e7003501b8e535035a23d6b0aa2a5637346453",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY.png",
+   "sha256": "928e05b4b8d94c1aab5e54d624e75fde717b520c32c9e4ef95207dab779b1148",
+   "px": [
+    1521,
+    1010
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.07
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
