@@ -172,7 +172,7 @@
    "category": "creature: fey or fiendish warrior (magical)",
    "role": "Gaunt elf warrior in studded armour with a flaming sword",
    "caveat": "small (435 px wide); dotwork texture",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: monster:humanoid; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg",
@@ -276,7 +276,7 @@
    "category": "creature: ratman warrior (humanoid)",
    "role": "Armoured rat-folk soldier with sword and shield before a dark crowd",
    "caveat": "dark backdrop with silhouettes behind a figure; grey tone (29% mid-tones)",
-   "use": "attached to reference sets: monster:humanoid; never placed or packaged"
+   "use": "on file, not attached to any generation set; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg",
@@ -450,7 +450,7 @@
    "category": "magic (tradition)",
    "role": "Two figures watching a spell storm over hills; magic drawn as ink bands and cloud line",
    "caveat": "grey screen tone in the sky; would need the tone ignored",
-   "use": "attached to reference sets: tradition; never placed or packaged"
+   "use": "on file, not attached to any generation set; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
@@ -658,7 +658,7 @@
    "category": "magic (tradition) / creature",
    "role": "Wizard blasting a flaming serpent-bodied fiend; magic as a spray of ink flecks on open white, ground shadows only",
    "caveat": "",
-   "use": "attached to reference sets: monster:magical; never placed or packaged"
+   "use": "attached to reference sets: tradition; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
@@ -918,7 +918,7 @@
    "category": "creature: hydra",
    "role": "Three-headed hydra crouched, isolated, brush blacks",
    "caveat": "on file: no free slot; a strong alternative for magical",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: monster:magical; never placed or packaged"
   }
  ],
  "public_domain": [

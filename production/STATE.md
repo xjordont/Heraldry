@@ -427,3 +427,12 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Result:** every figure set (all monster kinds, classes and ancestries, backgrounds, items) now holds images used nowhere else, 64 distinct in use. The only images still shared sit among scene sets: cover with chapter, climate and bastion; 43 between chapter and campaign; 44 between world and climate.
   - **Caveats:** 71 has grey-looking dense hatching; the composite chimera and the human-faced manticore must not be copied onto other creatures.
   - The queue was republished, with prompts unchanged.
+- **Second reference review** (owner, 2026-10-12, same request again after the creature samples).
+  - **Changes:**
+    - humanoid: 50 flame-sword elf replaces 62 ratman, whose dark crowd backdrop sat in an isolated-figure set;
+    - magical: 69 hydra replaces 28 wizard vs fiend, so no human figure is in a creature set;
+    - spell tiers: 28 replaces 12 wizard storm, which had grey screen tone.
+  - **Kept, with reasons recorded in `docs/ART_DIRECTION.md`:** undead 04 and 03 (bleed-list subjects, but used only for undead, and the approved Skeleton Warrior came from them); the owner's 22 wolf pack and item set.
+  - **Result:** 64 distinct images in use. Every figure set is unique, and sharing remains only among scene sets.
+  - **Unattached:** 07, 08, 12, 14, 24, 42, 48, 61, 62.
+  - The queue was republished, with prompts unchanged.
