@@ -55,7 +55,7 @@ Manuscript issues found while briefing are recorded in `production/art/SOURCE_NO
 
 1. **`python3 tools/art_gpt_pack.py`**
    - Writes `production/art/gpt/QUEUE.json` (schema 2), `QUEUE.md` and one prompt file per pending entry in `production/art/gpt/prompts/`.
-   - Each queue item carries its register, its own references (at most three, from `gpt_reference_sets` in `config/art_style.json`), its printed width, its attempt budget (`gpt_max_attempts`: 1, one generation per item, owner 2026-10-12) and the brief's must and avoid lists.
+   - Each queue item carries its register, its own references (at most four, from `gpt_reference_sets` in `config/art_style.json`), its printed width, its attempt budget (`gpt_max_attempts`: 1, one generation per item, owner 2026-10-12) and the brief's must and avoid lists.
    - References come from `gpt_reference_sets` (mapping v7, 17 sets; see `docs/ART_DIRECTION.md`). Precedence:
      1. `kind_sets`: five monster kinds, by ID; the pack fails if a monster has no kind or two.
      2. `family_sets`.

@@ -104,7 +104,8 @@ class ArtPipeline(unittest.TestCase):
         pack, g, ents, (q, prompts) = self._batch_queue()
         cfg = g.CFG["gpt_reference_sets"]
         style = "assets/art/style/"
-        # scenery-carrying references never reach an isolated figure or still life
+        # scenery-carrying references never reach an isolated figure or still life (one accepted exception:
+        # STYLE-REF-22, the wolf pack in a forest, in the beast set; owner 2026-10-12 "include risky")
         scenic = {style + n for n in ("STYLE-REF-02-panorama-line.jpg", "STYLE-REF-07-drybrush-duel.jpg", "STYLE-REF-09-skeleton-melee-ink.jpg",
                                       "STYLE-REF-10-undead-crowd-ink.jpg", "STYLE-REF-11-city-approach-ink.png", "STYLE-REF-13-cave-river-pen.jpg",
                                       "STYLE-REF-21-adventuring-party-forest.jpg", "STYLE-REF-43-piranesi-drawbridge.jpg",

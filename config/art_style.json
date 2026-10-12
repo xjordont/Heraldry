@@ -182,8 +182,8 @@
   "ART-ANC-DWARF"
  ],
  "gpt_reference_sets": {
-  "note": "Each queue item carries at most max_refs reference images. Precedence: kind_sets (monsters, by ID) over family_sets (by family) over sets (by register). A candidate is a repo path (must exist) or an anchor ID (used once approved); the item's own ID is skipped. Only owner samples and public-domain prints are attached, never generated images. Mapping v7 (owner instruction 2026-10-11: reanalyse all references and map them optimally): every set draws on the gritty core (bold rough contours, heavy blacks, scratchy hatching); clean-line pieces appear only where their subject is unmatched (36 insect anatomy, 20 armoury, 15 weapons, 02 city); pieces with grey tone, screen tone, stipple fields, lettering or tiny size are banked but not attached.",
-  "max_refs": 3,
+  "note": "Each queue item carries at most max_refs reference images. Precedence: kind_sets (monsters, by ID) over family_sets (by family) over sets (by register). A candidate is a repo path (must exist) or an anchor ID (used once approved); the item's own ID is skipped. Only owner samples and public-domain prints are attached, never generated images. Mapping v7 (owner instruction 2026-10-11: reanalyse all references and map them optimally): every set draws on the gritty core (bold rough contours, heavy blacks, scratchy hatching); clean-line pieces appear only where their subject is unmatched (36 insect anatomy, 20 armoury, 15 weapons, 02 city); pieces with grey tone, screen tone, stipple fields, lettering or tiny size are banked but not attached. Owner 2026-10-12 (\"promote them if there is room ... include risky\"): max_refs raised to 4 and one banked image added to its most relevant set, including pieces with screen tone, stipple, grey paper tone or a monogram, accepting that risk; the grey-wash mood pieces and the map stay unattached.",
+  "max_refs": 4,
   "register_of_family": {
    "cover": "scene",
    "chapter": "scene",
@@ -214,7 +214,8 @@
    "person": [
     "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
     "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg"
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
+    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
    ],
    "still": [
     "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
@@ -236,12 +237,14 @@
    "world": [
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg"
    ],
    "climate": [
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
     "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg"
+    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg",
+    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg"
    ],
    "bastion": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
@@ -251,12 +254,14 @@
    "scenario": [
     "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
     "assets/art/style/STYLE-REF-21-adventuring-party-forest.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-31-dungeon-melee-dotwork.jpg"
    ],
    "campaign": [
     "assets/art/style/STYLE-REF-20-armoury-interior.jpg",
     "assets/art/style/STYLE-REF-37-dungeon-pit-party.jpg",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
+    "assets/art/style/STYLE-REF-23-dungeon-arches-screentone.jpg"
    ],
    "boss": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
@@ -266,17 +271,20 @@
    "tradition": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg"
+    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
    ],
    "background": [
     "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
     "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
-    "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg"
    ],
    "item": [
     "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
     "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
-    "assets/art/style/STYLE-REF-25-bracers-pair.jpg"
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-24-flanged-mace-line.jpg"
    ]
   },
   "kind_sets": {
@@ -323,7 +331,8 @@
     "refs": [
      "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
      "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
+     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
+     "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
     ],
     "ids": [
      "ART-MON-BASILISK",
@@ -344,7 +353,8 @@
     "refs": [
      "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
      "assets/art/style/STYLE-REF-36-crab-claw-insectoid.jpg",
-     "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+     "assets/art/style/STYLE-REF-35-grub-beast-line.jpg"
     ],
     "ids": [
      "ART-MON-BURROWMAW",
@@ -370,7 +380,8 @@
     "refs": [
      "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
      "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
-     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg"
+     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
+     "assets/art/style/STYLE-REF-32-goat-folk-spearman.jpg"
     ],
     "ids": [
      "ART-MON-BANDIT",

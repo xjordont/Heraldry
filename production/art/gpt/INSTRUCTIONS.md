@@ -2,7 +2,7 @@
 
 The GitHub repository is the source of truth. Claude Code prepares prompts, queue, reference sets and review decisions. The art worker (Codex on the owner's PC; ChatGPT Work as the fallback) generates native images and returns exact bytes, receipts, and QA evidence. Work never edits prompts, queue, source rules, or other code while processing illustration batches.
 
-Use the installed `heraldry-classic-ink-art` v7 skill (source in `production/art/skill/heraldry-classic-ink-art/`). If not installed, read `SKILL.md` from the checked-out repository. The queue remains `production/art/gpt/QUEUE.json`, schema 2; prompts and prompt_sha256 are immutable per item; each item lists its own references (at most 3), must-show and do-not-draw clauses, native size, and attempt budget.
+Use the installed `heraldry-classic-ink-art` v7 skill (source in `production/art/skill/heraldry-classic-ink-art/`). If not installed, read `SKILL.md` from the checked-out repository. The queue remains `production/art/gpt/QUEUE.json`, schema 2; prompts and prompt_sha256 are immutable per item; each item lists its own references (at most 4), must-show and do-not-draw clauses, native size, and attempt budget.
 
 ## Session start
 

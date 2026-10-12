@@ -14,46 +14,42 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   - high contrast, with few in-between textures;
   - visible human imperfection (broken lines, dry-brush streaks, an occasional ink fleck).
 - **Still forbidden:** grey wash or grey ink tone, stipple fields, uniform machine texture, clean vector-like line, digital polish and airbrush. The book prints pure black ink.
-- **References, mapping v7** (owner instruction 2026-10-11: reanalyse every reference and map it optimally). Files are in `assets/art/style/`, recorded in `STYLE_REFS.json`, and never placed or packaged. Each item gets at most 3, chosen in `gpt_reference_sets` in this order of precedence: `kind_sets` (monsters, by ID), then `family_sets`, then the register `sets`. Every set draws on the gritty core. Clean-line pieces appear only where their subject has no gritty match (36 insect anatomy, 20 armoury, 15 weapons, 02 city).
+- **References, mapping v7** (owner instruction 2026-10-11: reanalyse every reference and map it optimally). Files are in `assets/art/style/`, recorded in `STYLE_REFS.json`, and never placed or packaged. Each item gets at most 4 (raised from 3 by the owner on 2026-10-12, when the bank was promoted), chosen in `gpt_reference_sets` in this order of precedence: `kind_sets` (monsters, by ID), then `family_sets`, then the register `sets`. Every set draws on the gritty core. Clean-line pieces appear only where their subject has no gritty match (36 insect anatomy, 20 armoury, 15 weapons, 02 city).
 
   | Images | References |
   |---|---|
   | Monsters: undead (30) | 04 skeleton king, 03 skeleton warrior, 38 gnoll |
-  | Monsters: beasts (12) | 18 bear, 38 gnoll, 16 dragon-man |
-  | Monsters: vermin and aberrations (17) | 16 dragon-man, 36 crab insectoid, 18 bear |
-  | Monsters: humanoids and beastfolk (39) | 38 gnoll, 41 Callot beggar, 04 skeleton king |
+  | Monsters: beasts (12) | 18 bear, 38 gnoll, 16 dragon-man, 22 wolf pack |
+  | Monsters: vermin and aberrations (17) | 16 dragon-man, 36 crab insectoid, 18 bear, 35 grub beast |
+  | Monsters: humanoids and beastfolk (39) | 38 gnoll, 41 Callot beggar, 04 skeleton king, 32 goat-folk spearman |
   | Monsters: dragons, demons, elementals, constructs (22) | 16 dragon-man, 28 wizard vs fiend, 18 bear |
   | Bosses | 16, 10 undead crowd, 05 cave creature |
-  | Classes and ancestries | 08 woodcut fencers, 41 Callot beggar, 06 hooded archer |
-  | Backgrounds | 19 pack, rope and lantern; 34 gear sheet; 25 bracers |
-  | Items | 15 sword and mace, 19, 25 |
-  | Spell tiers | 29 holy fire, 28 wizard vs fiend, 26 summoning |
-  | Stronghold rooms | 20 armoury, 37 dungeon pits, 43 Piranesi drawbridge |
-  | Climates | 44 Haden vignette, 13 cave river, 07 dry-brush duel |
-  | Scenarios | 09 skeleton melee, 21 party on a forest path, 44 |
-  | World sections | 44, 43, 09 |
+  | Classes and ancestries | 08 woodcut fencers, 41 Callot beggar, 06 hooded archer, 42 Callot beggar on crutches |
+  | Backgrounds | 19 pack, rope and lantern; 34 gear sheet; 25 bracers; 39 poison flask |
+  | Items | 15 sword and mace, 19, 25, 24 flanged mace |
+  | Spell tiers | 29 holy fire, 28 wizard vs fiend, 26 summoning, 12 wizard storm |
+  | Stronghold rooms | 20 armoury, 37 dungeon pits, 43 Piranesi drawbridge, 23 dungeon arches |
+  | Climates | 44 Haden vignette, 13 cave river, 07 dry-brush duel, 17 swamp hut |
+  | Scenarios | 09 skeleton melee, 21 party on a forest path, 44, 31 dungeon melee |
+  | World sections | 44, 43, 09, 30 forest path |
   | Bastions | 11 city approach, 02 city panorama, 09 |
   | Chapters | 29, 43, 44 |
   | Cover | 29, 11, 43 |
 
 - **Public-domain additions** (Claude sourced these on owner instruction to fill the gaps, from the Art Institute of Chicago's CC0 images; each scan was levelled to black on white and its plate number or signature painted out):
-  - 41 and 42: Callot beggars. Isolated full-length figures with bold swelling line. 42 is on file as an alternate.
+  - 41 and 42: Callot beggars. Isolated full-length figures with bold swelling line.
   - 43: Piranesi, *The Drawbridge*. Colossal architecture and heavy etched blacks.
   - 44: Haden, *Challow Farm*. A landscape vignette that dissolves into paper.
-- **Bank** (on file, not attached):
-  - 12 and 17: grey tone.
-  - 14: signed.
-  - 23: screen tone.
-  - 24: too clean.
-  - 27: pseudo-script.
-  - 30 and 31: stipple fields.
-  - 32, 33, 35, 39 and 40: small.
-  - 22: wolf pack. Strong, but a scene; it may join a beast set later.
+- **Bank promoted** (owner, 2026-10-12: "promote them if there is room ... include risky"): one banked image joined each set it fits best, shown in the table above. The owner accepted these risks:
+  - 12 and 17 carry grey tone, 23 screen tone, and 30 and 31 stipple fields: the generator may copy the tone, which the checks still reject.
+  - 22 is a forest scene in an isolated-figure set: watch for scenery behind beasts.
+  - 32, 35 and 39 are small; 24 is cleaner than the core.
+- **Still on file, not attached** (no slot left in a matching set): 14 (signed still life), 27 (pseudo-script), 33 bone cross and 40 scythe (small still lifes).
 - **Still open:** no gritty desert, ash-waste or snow landscape example exists in the public domain at usable quality. Those climates rely on their prompts plus the general landscape references 44, 13 and 07.
 - **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached, because grey tone cannot print in black ink.
 - **Cut and superseded:** the owner cut STYLE-REF-01 (it remains in git history) and replaced it with STYLE-REF-11, an owner exception to the rule against machine-made references.
 - **Prompts:** `prompt_v2` (intro, `style_scene`, `style_figure`, `style_still`, `final_*` and `reference`) carries this wording. The v7 audit replaced 32 brief details that asked for dense stipple with ink flecks, dry-brush or hatching, and gave still lifes their own equipment-art style line. The queue was republished.
-- **Approved art:** Greythorn and the four hand-inked anchors (Greenmark, Undead Champion, Fighter, Dwarf) were approved under the cleaner direction and remain approved. Whether to redo them for consistency is an owner decision.
+- **Approved art:** none. The owner cleared every earlier approval on 2026-10-12, so all 275 illustrations are made under this direction.
 
 ## Hand-inked direction (owner, 2026-10-11)
 
