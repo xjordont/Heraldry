@@ -4846,5 +4846,38 @@
    "max_print_w_in_300ppi": 2.55
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-BERSERKER": {
+  "family": "class",
+  "title": "Berserker",
+  "heading_id": "h-berserker-25-complexity",
+  "route": "gpt",
+  "spec_sha256": "ba054707f9eecdec8cbb3b526b76b3f46ec70b79f72bcc3a4a97016ed8c118b9",
+  "prompt_sha256": "5387d1a9aca112bb6df923d36a4193182515f7412cbfa85062b9281bfa3650c6",
+  "status": "received",
+  "received_at": "2026-10-12T17:07:38+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-BERSERKER.png",
+   "sha256": "3d0e6904bcc30a1f7b8f9153b8ac449bfd985826a1ab0d397d45a14f8e8ee265",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-BERSERKER.png",
+   "sha256": "d6a186e33fa3a834dc642690edae00b56a26ad42e82378a3c3408ee4b07dfc92",
+   "px": [
+    970,
+    1504
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.233
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
