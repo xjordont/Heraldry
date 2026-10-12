@@ -3114,5 +3114,38 @@
    "max_print_w_in_300ppi": 4.07
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-MEDUSA": {
+  "family": "monster",
+  "title": "Medusa",
+  "heading_id": "h-medusa-elite",
+  "route": "gpt",
+  "spec_sha256": "ebd576e0a4a0a4b4dad80b916f8d3891033cdbe1a60b9a66c2f2e8b4c9bbecce",
+  "prompt_sha256": "97d18857963f6166782977c39af4fbcdc00ca895f17694b7ca20ea95dc2cbf58",
+  "status": "received",
+  "received_at": "2026-10-12T13:16:01+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Snake hair approaches the top edge, leaving less than 8% clean margin.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-MEDUSA.png",
+   "sha256": "bca64f2a68d1c2c9d04255fa4955ab465e5aed63e36567784dc322e942e74776",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-MEDUSA.png",
+   "sha256": "5de209ca1e3102438b3f38990b70d854783206db578a328db118d134d7344773",
+   "px": [
+    963,
+    1218
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.21
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
