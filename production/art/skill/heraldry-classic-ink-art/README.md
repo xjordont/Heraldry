@@ -10,7 +10,7 @@ The skill runs on Codex on the owner's PC (the current route), or in ChatGPT Wor
 |---|---|
 | Generation | **One generation per item** (`max_attempts` 1; owner 2026-10-12: first generations beat retries), in a fresh context. A defect is saved with `--accept-flags --notes`; the reviewer decides on a redo, which is again a single generation with at most two correction sentences (`references/REPAIR.md`) |
 | Edges | Only a cropped subject, or one touching an edge, is a hard fail; a narrow margin is advisory (the layout trims margins) |
-| References | Mapping v8: up to six per item, 66 distinct images (owner samples, including STYLE-REF-45 to 74, plus four public-domain prints). Every figure set (monster kinds, classes and ancestries, backgrounds, items) uses images found in no other set; no scenery reaches an isolated figure except the owner-approved wolf pack |
+| References | Mapping v8: up to five per item (the image tool's limit), 66 distinct images (owner samples, including STYLE-REF-45 to 74, plus four public-domain prints). Every figure set (monster kinds, classes and ancestries, backgrounds, items) uses images found in no other set; no scenery reaches an isolated figure except the owner-approved wolf pack |
 | Fresh start | All 275 items are pending (owner 2026-10-12). The queue records `receipts_base`, so drift reviews count only new receipts |
 | Helper | `next` and `status` fast-forward a clean clone, so mid-session redos show at once; `check` and `save` report the saved attempt's own number; `save` keeps a local copy in `HERALDRY_ARCHIVE`; messages name the running interpreter |
 | Delivery | Every incoming image format (PNG, JPEG, WebP) goes through Git LFS, enforced by `ship` and `doctor` |

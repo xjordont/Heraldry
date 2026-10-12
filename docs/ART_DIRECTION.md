@@ -14,7 +14,7 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   - high contrast, with few in-between textures;
   - visible human imperfection (broken lines, dry-brush streaks, an occasional ink fleck).
 - **Still forbidden:** grey wash or grey ink tone, stipple fields, uniform machine texture, clean vector-like line, digital polish and airbrush. The book prints pure black ink.
-- **References, mapping v7** (owner instruction 2026-10-11: reanalyse every reference and map it optimally). Files are in `assets/art/style/`, recorded in `STYLE_REFS.json`, and never placed or packaged. Each item gets at most 6 (owner 2026-10-12: up to six for high-quality, well-matched images), chosen in `gpt_reference_sets` in this order of precedence: `kind_sets` (monsters, by ID), then `family_sets`, then the register `sets`. Every set draws on the gritty core. Clean-line pieces appear only where their subject has no gritty match (36 insect anatomy, 20 armoury, 15 weapons, 02 city).
+- **References, mapping v7** (owner instruction 2026-10-11: reanalyse every reference and map it optimally). Files are in `assets/art/style/`, recorded in `STYLE_REFS.json`, and never placed or packaged. Each item gets at most 5 (owner 2026-10-12 asked for up to six; the Codex image tool accepts at most five, so the cap is 5 and 64 armour sheet left the item set), chosen in `gpt_reference_sets` in this order of precedence: `kind_sets` (monsters, by ID), then `family_sets`, then the register `sets`. Every set draws on the gritty core. Clean-line pieces appear only where their subject has no gritty match (36 insect anatomy, 20 armoury, 15 weapons, 02 city).
 
   | Images | References |
   |---|---|

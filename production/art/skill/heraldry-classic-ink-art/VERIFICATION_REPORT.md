@@ -12,7 +12,7 @@
    - A redo is one fresh generation with at most two correction sentences. `REPAIR.md` now covers redos only.
 2. **Edges.** Only a cropped subject, or one touching an edge, is a hard fail. A narrow margin is advisory, because the layout trims it; the old 8% rule had forced retries.
 3. **Reference mapping v8.**
-   - Up to six references per item (`max_refs` 6), drawn from 66 distinct images: the owner's samples, including STYLE-REF-45 to 74, plus four public-domain prints.
+   - Up to five references per item (`max_refs` 5, the Codex image tool's limit: "referenced_image_paths must contain at most 5 paths"), drawn from 66 distinct images: the owner's samples, including STYLE-REF-45 to 74, plus four public-domain prints.
    - Every figure set (the five monster kinds, classes and ancestries, backgrounds, items) uses images found in no other set.
    - Scenery never reaches an isolated figure, except the owner-approved wolf pack in the beast set.
    - Two full reviews of every reference against every set are recorded in `docs/ART_DIRECTION.md`.
@@ -56,6 +56,6 @@ The v7 changes (gritty direction, per-family and per-kind sets, lead order, per-
 
 ## Not verified offline
 
-- What model and size the worker's image tool offers. The owner confirmed on 2026-10-12 that Codex accepts six reference images.
+- What model and size the worker's image tool offers. The Codex image tool accepts at most five reference images (its refusal message, 2026-10-12).
 - Real image quality and style consistency across sets. The drift reviews at images 10 and 20 are the first evidence.
 - Git LFS delivery from the worker's PC over a long unattended run. ChatGPT Plus usage resets every 5 hours; each session ends at the limit and the same prompt resumes.

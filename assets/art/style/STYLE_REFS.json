@@ -905,7 +905,7 @@
    "category": "still life: armour sheet",
    "role": "Helmets, gambeson, brigandine, mail with tabard and plate cuirass",
    "caveat": "sheet layout: never copy the grid",
-   "use": "attached to reference sets: item; never placed or packaged"
+   "use": "on file, not attached to any generation set (the image tool takes at most five references; no item shows armour); never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-69-three-headed-hydra.jpg",

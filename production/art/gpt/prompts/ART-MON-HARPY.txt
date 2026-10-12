@@ -1,6 +1,6 @@
 HARPY - GRITTY OLD-SCHOOL INK ILLUSTRATION
 
-Create a gritty, old-school black-and-white ink illustration of Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Harpy, Greenmark Cannon, medium: a carrion-bird monster the size of a man, with a vulture's body and a withered, hag-like head, nesting in broken towers and luring travellers into its talons with its song; it flies, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 
 FORMAT AND ISOLATION
 Square 1:1 composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing.
@@ -13,17 +13,16 @@ Single creature, full body, three-quarter view, in a characteristic menacing pos
 Size: Medium: about human-sized.
 
 SUBJECT DETAILS
-* Gaunt, hag-like human face with ragged matted hair and hollow cheeks
-* Body covered in filthy, matted carrion-bird feathers from the neck down, hung with torn rags
+* A vulture's body, covered entirely in filthy, matted feathers from the neck down
+* A withered, hag-like head with a hooked nose, ragged matted hair and hollow cheeks
 * Large carrion-bird wings, ragged feathers, long primaries
+* Two scrawny, sinewy arms below the wings, ending in hooked claws
 * Legs of a bird of prey with hooked talons
-* Tail of dirty feathers
 * Open mouth mid-shriek, solid black
-* Filth-streaked feathers
 * A scatter of bones on the ground below
 Must be shown exactly:
-* Human hands with clawed nails; bird talons on the feet
-* Wings and human arms both visible
+* Clawed hands on the arms; bird talons on the feet
+* Wings and arms both visible
 
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
@@ -36,8 +35,8 @@ Ink it like gritty old-school rulebook monster and character art: a bold, rough 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
 * Not a siren or angel: ragged and foul.
-* No bare skin on the torso: feathers and rags cover the body.
 * No wing-arms: the wings and the arms are separate limbs.
+* No bare skin on the body: feathers cover it.
 Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be gritty, bold and readable at small size and print crisply in pure black ink, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES

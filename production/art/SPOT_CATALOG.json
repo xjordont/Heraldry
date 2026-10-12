@@ -4269,33 +4269,32 @@
     7942
    ],
    "brief": {
-    "identity": "Harpy, Greenmark Cannon, medium: half-mortal, half-carrion-bird, nesting in broken towers and singing travellers into its talons; it flies.",
+    "identity": "Harpy, Greenmark Cannon, medium: a carrion-bird monster the size of a man, with a vulture's body and a withered, hag-like head, nesting in broken towers and luring travellers into its talons with its song; it flies.",
     "composition": "Full figure in three-quarter view swooping down on beating wings, both taloned feet thrust forward, gaunt head jutting forward mid-shriek, over a small patch of bare ground.",
     "details": [
-     "Gaunt, hag-like human face with ragged matted hair and hollow cheeks",
-     "Body covered in filthy, matted carrion-bird feathers from the neck down, hung with torn rags",
+     "A vulture's body, covered entirely in filthy, matted feathers from the neck down",
+     "A withered, hag-like head with a hooked nose, ragged matted hair and hollow cheeks",
      "Large carrion-bird wings, ragged feathers, long primaries",
+     "Two scrawny, sinewy arms below the wings, ending in hooked claws",
      "Legs of a bird of prey with hooked talons",
-     "Tail of dirty feathers",
      "Open mouth mid-shriek, solid black",
-     "Filth-streaked feathers",
      "A scatter of bones on the ground below"
     ],
     "atmosphere": "Foul, starved and ravenous.",
     "avoid": [
      "Not a siren or angel: ragged and foul",
-     "No bare skin on the torso: feathers and rags cover the body",
-     "No wing-arms: the wings and the arms are separate limbs"
+     "No wing-arms: the wings and the arms are separate limbs",
+     "No bare skin on the body: feathers cover it"
     ],
     "must": [
-     "Human hands with clawed nails; bird talons on the feet",
-     "Wings and human arms both visible"
+     "Clawed hands on the arms; bird talons on the feet",
+     "Wings and arms both visible"
     ],
     "sources": [
      "9.7 The Bestiary, Greenmark Bestiary: Harpy [Cannon]"
     ]
    },
-   "spec_sha256": "5e3866cf6e885903461596c68bd5a3fa5bd6e2f3efd7d5027702560f740d7b1f"
+   "spec_sha256": "4bda9dd7832fc15fd77c661edb8c600af231058257273b57f4900b4f5c154269"
   },
   {
    "id": "ART-MON-GOBLIN-SHAMAN",
@@ -9213,7 +9212,7 @@
    "direction": "A riveted black-iron war-construct three times a man's height marching along a ruined imperial road, a small figure at its feet for scale.",
    "brief": {
     "identity": "The Last Colossus, a walking fortress of riveted black iron three times a man's height, the empire's last war-construct, marching the same patrol for centuries.",
-    "composition": "A cracked imperial road seen from a low angle; the Colossus marches toward the viewer, a small human figure at its feet for scale; the Colossus is exactly three times that figure's height, no taller.",
+    "composition": "A cracked imperial road seen side-on at eye level, the camera level with a man's chest; the Colossus strides across the picture from left to right with a man standing on the road right beside its leg, the top of the man's head level with the Colossus's knee, so the Colossus is exactly three times his height, no taller; both fill the middle of the frame, with the ruins small behind them.",
     "details": [
      "Slab-sided torso of riveted black iron plates with seams and weld lines",
      "Thick pillar legs with piston-like joints and a flared hip skirt",
@@ -9241,7 +9240,7 @@
      "1.3.5 Imperial constructs"
     ]
    },
-   "spec_sha256": "be275483235c57575456d62216bfd0bd5ea9fe6961cb9459a338a654258faa5f"
+   "spec_sha256": "b6d0c1db7e394bab27a63cc3c4c3684d076eedcdcdab12b1b6e8b23a40625636"
   },
   {
    "id": "ART-MON-AVATAR-OF-THE-OLD-GROWTH",

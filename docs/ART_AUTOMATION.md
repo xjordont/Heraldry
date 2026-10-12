@@ -56,7 +56,7 @@ Manuscript issues found while briefing are recorded in `production/art/SOURCE_NO
 1. **`python3 tools/art_gpt_pack.py`**
    - Writes `production/art/gpt/QUEUE.json` (schema 2), `QUEUE.md` and one prompt file per pending entry in `production/art/gpt/prompts/`.
    - Each queue item carries its register, its own references (at most six, from `gpt_reference_sets` in `config/art_style.json`), its printed width, its attempt budget (`gpt_max_attempts`: 1, one generation per item, owner 2026-10-12) and the brief's must and avoid lists.
-   - References come from `gpt_reference_sets` (mapping v8, 17 sets of up to six; see `docs/ART_DIRECTION.md`). Precedence:
+   - References come from `gpt_reference_sets` (mapping v8, 17 sets of up to five, the image tool's limit; see `docs/ART_DIRECTION.md`). Precedence:
      1. `kind_sets`: five monster kinds, by ID; the pack fails if a monster has no kind or two.
      2. `family_sets`.
      3. The register `sets`.
@@ -114,7 +114,7 @@ Claude Code owns the prompts, queue, references, review and approval. The skill 
 
 - **Per image:** `push_every: 1`, so each saved image is delivered at once, and a 5-hour or weekly usage limit never strands work.
 - **Every tenth image:** a drift review (`sheet --recent 10 --refs`, `style_audit.py --recent 10`). Codex reports drift and keeps going (owner 2026-10-12: run the whole list); Claude Code reviews and sends redos.
-- **Usage:** ChatGPT Plus resets every 5 hours. Codex stops at the limit with everything delivered, and the same prompt resumes. The owner confirmed that Codex accepts six reference images.
+- **Usage:** ChatGPT Plus resets every 5 hours. Codex stops at the limit with everything delivered, and the same prompt resumes. Codex's image tool accepts at most five reference images (it refused six on 2026-10-12).
 - **Resumable:** the next session's identical prompt (`CODEX_PROMPT.md`) resumes from `next`.
 - **Lean token use:**
   - The batch card replaces the long docs.

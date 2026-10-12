@@ -184,7 +184,11 @@ def states(repo, q):
     current prompt."""
     sels = jload(repo / SELECTIONS_REL, {})
     have_git, changed, ahead = incoming_changes(repo)
-    refusals = {i: r for i, r in last_receipts(repo).items() if r.get("refused")}
+    # A refusal binds to the prompt it was made against and to the queue it was made under: a refusal written before
+    # this queue was published (its receipts_base) reopens, because republishing is Claude Code's decision to retry
+    # (a rewritten prompt, fewer references); one written during this queue's run stays refused.
+    base = int(q.get("receipts_base") or 0)
+    refusals = {i: r for i, (r, n) in last_receipts(repo, with_line=True).items() if r.get("refused") and n >= base}
     res = {}
     for it in q["items"]:
         files = local_files(repo, it["id"])
@@ -218,17 +222,19 @@ def package_info(repo):
     return jload(Path(repo) / PACKAGE_REL)
 
 
-def last_receipts(repo):
-    """The most recent receipt line per ID (a later save replaces an earlier refusal)."""
+def last_receipts(repo, with_line=False):
+    """The most recent receipt line per ID (a later save replaces an earlier refusal). With with_line, each value is
+    (receipt, index among non-empty lines), the numbering the queue's receipts_base uses."""
     out = {}
     f = repo / RECEIPTS_REL
-    for line in f.read_text(encoding="utf-8").splitlines() if f.is_file() else []:
+    lines = [x for x in f.read_text(encoding="utf-8").splitlines() if x.strip()] if f.is_file() else []
+    for n, line in enumerate(lines):
         try:
             r = json.loads(line)
         except ValueError:
             continue
         if isinstance(r, dict) and "id" in r:
-            out[r["id"]] = r
+            out[r["id"]] = (r, n) if with_line else r
     return out
 
 
