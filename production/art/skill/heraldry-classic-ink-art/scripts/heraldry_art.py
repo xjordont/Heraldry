@@ -701,9 +701,9 @@ def cmd_status(a, repo):
                      if q["phase"] == "anchors" else "Wait for the review and a new queue."))
     elif due and not git_ok(repo):
         action = (f"DRIFT REVIEW, THEN BUNDLE: `{helper()} sheet --refs`, then the style audit, then `{helper()} bundle --evidence SHEET "
-                  "--evidence STYLE_JSON [--evidence SMOKE_JSON]` and hand the zip to the owner: git is not available here.")
+                  "--evidence STYLE_JSON` and hand the zip to the owner: git is not available here.")
     elif due:
-        ship = ("`python production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py ship --execute --repo .` "
+        ship = (f"`{helper().replace('heraldry_art.py', 'delivery_guard.py')} ship --execute --repo .` "
                 "(it runs every delivery check itself); on BLOCKED stop and use `" + helper() + " bundle`.")
         action = ("DELIVER: " + ship) if not drift_due else (
             f"DRIFT REVIEW, THEN DELIVER. `{helper()} sheet --recent {review_at} --refs` and "
