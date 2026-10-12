@@ -2949,5 +2949,38 @@
    "max_print_w_in_300ppi": 3.767
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-LICH": {
+  "family": "monster",
+  "title": "Lich",
+  "heading_id": "h-lich-elite",
+  "route": "gpt",
+  "spec_sha256": "d8a55d4bd7ba27fc1bdf5c9681870b33e25df8ae2b7e3c2885a28d013f8c89dc",
+  "prompt_sha256": "4b573ba16577600860913489a43c6d9f0aad2dcf9ef5645ab7826f8a25c6a666",
+  "status": "received",
+  "received_at": "2026-10-12T13:03:23+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-LICH.png",
+   "sha256": "24532f7f7cff7fd8ae7705db76e4d8f541c4c87572d26c390a5f6d238c2f4f76",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-LICH.png",
+   "sha256": "b3aa9c082d017b7945f3938befb5b5d34e826de133ebddea72be5f2b134c3a51",
+   "px": [
+    836,
+    1236
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.787
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
