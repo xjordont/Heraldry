@@ -9,7 +9,7 @@ The skill runs on Codex on the owner's PC (the current route), or in ChatGPT Wor
 | Area | v7 |
 |---|---|
 | Art direction | Gritty old-school black-and-white ink (owner, 2026-10-11): bold rough contours, heavy solid blacks, scratchy hatching and dry-brush, high contrast. Still pure black ink: no grey wash, no stipple fields, no clean vector-like line |
-| References | Owner samples plus four public-domain prints (Callot, Piranesi, Haden) chosen for the same look. Sets are chosen per family and per monster kind (undead, beast, vermin, humanoid, magical), at most four per item. Each queue item names its `ref_set` |
+| References | Owner samples plus four public-domain prints (Callot, Piranesi, Haden) chosen for the same look. Sets are chosen per family and per monster kind (undead, beast, vermin, humanoid, magical), at most four per item (six for the equipment items). Each queue item names its `ref_set` |
 | Queue order | Redos first, then seventeen lead items, one per reference set, so the first two drift reviews (images 10 and 20) test every set |
 | Cadence | Each image is delivered as soon as it is saved (`push_every: 1`), with a drift review every tenth image (`review_every: 10`, `sheet --recent`, `style_audit --recent`) |
 | Delivery | `delivery_guard ship` fast-forwards safely over the intake bot's commits and retries a lost push; divergence or overlap still stops |

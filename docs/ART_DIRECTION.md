@@ -26,7 +26,7 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   | Bosses | 10 undead crowd, 05 cave creature, 49 swordsman on a mountain pass, 60 skeletal standard-bearer |
   | Classes and ancestries | 06 hooded archer, 41 Callot beggar, 54 dwarf warrior, 57 armoured swordswoman |
   | Backgrounds | 19 pack, rope and lantern; 34 gear sheet; 25 bracers; 39 poison flask |
-  | Items | 15 sword and mace, 40 rag-wrapped scythe, 27 carved scroll case (pseudo-writing risk), 33 bone cross |
+  | Items | 15 sword and mace, 40 rag-wrapped scythe, 27 carved scroll case (pseudo-writing risk), 33 bone cross, plus extras 56 weapons sheet and 64 armour sheet (the item set may carry 6) |
   | Spell tiers | 29 holy fire, 26 summoning, 12 wizard storm, 63 wizard casting flame |
   | Stronghold rooms | 20 armoury, 37 dungeon pits, 43 Piranesi drawbridge, 23 dungeon arches |
   | Climates | 44 Haden vignette, 13 cave river, 17 swamp hut, 47 barrow on the moor |
@@ -46,7 +46,7 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
 - **Owner samples 45 to 52** (2026-10-12): see the table. 52 lich and 51 mummy replace 38 gnoll in the undead set (38 stays in beasts and humanoids). The owner removed 22 wolf pack the same day, then restored it to beasts.
 - **Owner samples 54 to 67** (2026-10-12): placed as in the table, replacing shared images toward four unique per set. Caveats: grey tone in 55, 58, 59 and 62; a dark backdrop behind the 62 figure; a monogram on 65.
 - **Review 2026-10-12** (owner: review every reference and category): 54 and 57 replace 08 and 42 in classes and ancestries (period costume and a beggar are poor adventurer models); 63 replaces 28 in spell tiers (28 stays in magical); 46 and 65 replace 29 and 43 on the cover (establishing scenes with sky); 47 replaces 07 in climates (no figures in a terrain set). Vermin and magical keep 18 and 16 as their weakest members: the only alternatives (05, 26) are scenes, which must not reach isolated figures.
-- **Still on file, not attached:** 07 duel, 08 fencers, 42 Callot beggar on crutches, 61 herbalist, 56 weapons sheet and 64 armour sheet (the item set holds the owner's choices); 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life); 24 flanged mace (the cleanest still life, replaced in items by the owner's choice of 40, 27 and 33).
+- **Still on file, not attached:** 07 duel, 08 fencers, 42 Callot beggar on crutches, 61 herbalist; 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life); 24 flanged mace (the cleanest still life, replaced in items by the owner's choice of 40, 27 and 33).
 - **Still open:** no gritty desert, ash-waste or snow landscape example exists in the public domain at usable quality. Those climates rely on their prompts plus the general landscape references 44, 13 and 07.
 - **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached, because grey tone cannot print in black ink.
 - **Cut and superseded:** the owner cut STYLE-REF-01 (it remains in git history) and replaced it with STYLE-REF-11, an owner exception to the rule against machine-made references.
