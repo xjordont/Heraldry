@@ -826,5 +826,38 @@
    "max_print_w_in_300ppi": 5.08
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLI-THE-UNDERMARCHES": {
+  "family": "climate",
+  "title": "The Undermarches",
+  "heading_id": "h-the-undermarches",
+  "route": "gpt",
+  "spec_sha256": "560eadccbd7a3142eee6d2abe78c3d0572979985879c59b9b10e278d3676e54f",
+  "prompt_sha256": "142b0567486bd9d0889da2afbd3089303fed16be4e99e6ae01c84ab83e12e75e",
+  "status": "received",
+  "received_at": "2026-10-12T06:20:39+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLI-THE-UNDERMARCHES.png",
+   "sha256": "7fa6752d3b46f9eefce72a12d6553517bf6788adc8f62737d8b996a82a29470c",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLI-THE-UNDERMARCHES.png",
+   "sha256": "bf603a9b5a96742bc1da4f467596ba7bfa4b6e61569f167f4a4bc73690b79a91",
+   "px": [
+    1526,
+    1011
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.087
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
