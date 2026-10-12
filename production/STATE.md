@@ -392,3 +392,4 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - Stored unchanged as STYLE-REF-53 (frost harbour city, 1536x1024 PNG, 4.3 MB, plain Git like the other style files). It replaces 09 in the bastion set; 09 stays in scenarios and world. The bastion set is now four images used nowhere else: 11, 02, 45 and 53.
   - **Caveat recorded:** it looks machine-made and very dense, with noticeable grey (43% mid-tones). Like STYLE-REF-11, it is attached on the owner's instruction.
   - The figure test lists it as scenic. The queue was republished, with prompts unchanged.
+- **Wolf pack restored** (owner, 2026-10-12: "22 wolf pack for beasts"). STYLE-REF-22 is back in the beast set, which now holds 4. All 275 items carry 4 references. The figure test records 22 as the one owner-approved exception to its no-scenery rule. The queue was republished, with prompts unchanged.

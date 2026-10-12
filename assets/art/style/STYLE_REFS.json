@@ -398,7 +398,7 @@
    "category": "creature (beast) / scene",
    "role": "Wolf pack running through a forest; brush and scratchy hatching",
    "caveat": "",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: monster:beast; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-23-dungeon-arches-screentone.jpg",
