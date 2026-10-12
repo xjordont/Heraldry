@@ -14,7 +14,7 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   - high contrast, with few in-between textures;
   - visible human imperfection (broken lines, dry-brush streaks, an occasional ink fleck).
 - **Still forbidden:** grey wash or grey ink tone, stipple fields, uniform machine texture, clean vector-like line, digital polish and airbrush. The book prints pure black ink.
-- **References, mapping v7** (owner instruction 2026-10-11: reanalyse every reference and map it optimally). Files are in `assets/art/style/`, recorded in `STYLE_REFS.json`, and never placed or packaged. Each item gets at most 4 (raised from 3 by the owner on 2026-10-12, when the bank was promoted), chosen in `gpt_reference_sets` in this order of precedence: `kind_sets` (monsters, by ID), then `family_sets`, then the register `sets`. Every set draws on the gritty core. Clean-line pieces appear only where their subject has no gritty match (36 insect anatomy, 20 armoury, 15 weapons, 02 city).
+- **References, mapping v7** (owner instruction 2026-10-11: reanalyse every reference and map it optimally). Files are in `assets/art/style/`, recorded in `STYLE_REFS.json`, and never placed or packaged. Each item gets at most 6 (owner 2026-10-12: up to six for high-quality, well-matched images), chosen in `gpt_reference_sets` in this order of precedence: `kind_sets` (monsters, by ID), then `family_sets`, then the register `sets`. Every set draws on the gritty core. Clean-line pieces appear only where their subject has no gritty match (36 insect anatomy, 20 armoury, 15 weapons, 02 city).
 
   | Images | References |
   |---|---|
@@ -24,13 +24,13 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   | Monsters: humanoids and beastfolk (39) | 38 gnoll, 32 goat-folk spearman, 50 flame-sword elf, 66 troll pair |
   | Monsters: dragons, demons, elementals, constructs (22) | 16 dragon-man, 68 coiled dragon, 73 manticore, 69 hydra |
   | Bosses | 10 undead crowd, 05 cave creature, 49 swordsman on a mountain pass, 60 skeletal standard-bearer |
-  | Classes and ancestries | 06 hooded archer, 41 Callot beggar, 54 dwarf warrior, 57 armoured swordswoman |
+  | Classes and ancestries | 06 hooded archer, 41 Callot beggar, 54 dwarf warrior, 57 armoured swordswoman, 61 herbalist |
   | Backgrounds | 19 pack, rope and lantern; 34 gear sheet; 25 bracers; 39 poison flask |
-  | Items | 15 sword and mace, 40 rag-wrapped scythe, 27 carved scroll case (pseudo-writing risk), 33 bone cross, plus extras 56 weapons sheet and 64 armour sheet (the item set may carry 6) |
+  | Items | 15 sword and mace, 40 rag-wrapped scythe, 27 carved scroll case (pseudo-writing risk), 33 bone cross, plus extras 56 weapons sheet and 64 armour sheet  |
   | Spell tiers | 29 holy fire, 26 summoning, 63 wizard casting flame, 28 wizard vs fiend |
   | Stronghold rooms | 20 armoury, 37 dungeon pits, 43 Piranesi drawbridge, 23 dungeon arches |
   | Climates | 44 Haden vignette, 13 cave river, 17 swamp hut, 47 barrow on the moor |
-  | Scenarios | 09 skeleton melee, 21 party on a forest path, 31 dungeon melee, 67 sewer ghoul ambush |
+  | Scenarios | 09 skeleton melee, 21 party on a forest path, 31 dungeon melee, 67 sewer ghoul ambush, 07 dry-brush duel |
   | World sections | 30 forest path, 58 flight from collapsing ruins, 55 siege wall-climb, 44 |
   | Bastions | 11 city approach, 02 city panorama, 45 cathedral facade, 53 frost harbour city |
   | Chapters | 46 round tower, 65 ship and dead tree, 59 harbour wharf, 43 |
@@ -48,7 +48,8 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
 - **Review 2026-10-12** (owner: review every reference and category): 54 and 57 replace 08 and 42 in classes and ancestries (period costume and a beggar are poor adventurer models); 63 replaces 28 in spell tiers (28 stays in magical); 46 and 65 replace 29 and 43 on the cover (establishing scenes with sky); 47 replaces 07 in climates (no figures in a terrain set). Vermin and magical keep 18 and 16 as their weakest members: the only alternatives (05, 26) are scenes, which must not reach isolated figures.
 - **Creature samples 68 to 74** (2026-10-12): beasts, vermin and magical monsters now use only images of their own kind; 16, 18 and 38 each belong to one set. Caveats: 71 has grey-looking dense hatching; 70 and 73 are composite or human-faced creatures that must not be copied onto other subjects.
 - **Second review 2026-10-12:** 50 replaces 62 in humanoids (no backdrop behind isolated figures); 69 hydra replaces 28 in magical (no human figure in a creature set); 28 replaces 12 in spell tiers (no grey screen tone).
-- **Still on file, not attached:** 62 ratman (dark backdrop), 12 wizard storm (screen tone), 07 duel, 08 fencers, 42 Callot beggar on crutches, 61 herbalist; 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life); 24 flanged mace (the cleanest still life, replaced in items by the owner's choice of 40, 27 and 33).
+- **Promoted to six-per-set limit 2026-10-12:** 61 herbalist (classes and ancestries) and 07 dry-brush duel (scenarios).
+- **Still on file, not attached:** 62 ratman (dark backdrop), 12 wizard storm (screen tone), 08 fencers and 42 Callot beggar on crutches (period costume); 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life); 24 flanged mace (the cleanest still life, replaced in items by the owner's choice of 40, 27 and 33).
 - **Still open:** no gritty desert, ash-waste or snow landscape example exists in the public domain at usable quality. Those climates rely on their prompts plus the general landscape references 44, 13 and 07.
 - **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached, because grey tone cannot print in black ink.
 - **Cut and superseded:** the owner cut STYLE-REF-01 (it remains in git history) and replaced it with STYLE-REF-11, an owner exception to the rule against machine-made references.

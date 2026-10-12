@@ -436,3 +436,10 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Result:** 64 distinct images in use. Every figure set is unique, and sharing remains only among scene sets.
   - **Unattached:** 07, 08, 12, 14, 24, 42, 48, 61, 62.
   - The queue was republished, with prompts unchanged.
+- **Six references per set** (owner, 2026-10-12: "Are there any unused references that should be promoted? If they are high quality and match a category well we could accommodate up to 6 reference images per category").
+  - `max_refs` is now 6, and the per-set override added for items is removed as redundant.
+  - **Promoted:**
+    - 61 herbalist to classes and ancestries (bold blacks, a quiet non-combat pose);
+    - 07 dry-brush duel to scenarios (core gritty brushwork; combatants in a landscape suit scenarios, though not terrain sets).
+  - **Not promoted, with reasons:** 08 and 42 (period costume bleed), 12 (screen tone), 14 (monogram, fine engraving; items full), 24 (too clean), 48 (black box frame), 62 (dark backdrop).
+  - Scenarios and classes and ancestries now carry 5 references, items 6, and all others 4. The queue was republished, with prompts unchanged.
