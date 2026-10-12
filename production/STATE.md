@@ -313,3 +313,8 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Inbox:** the import workflow removes a Work review bundle once its images are in LFS. The already-imported anchors bundle was removed.
   - **Not exercised:** the Release step runs only with the next requested build (build on request). It is checked for YAML and command syntax only.
   - No manuscript change and no build.
+- **Single branch** (owner, 2026-10-11: "Can we safely merge all branches into main? ..." then "I want a single branch at all times if possible").
+  - Nothing needed merging:
+    - `claude/heraldry-rc484-build` has no commits that `main` lacks. It is the RC484 checkpoint, now recorded by commit `3818324466aec2d3ab0515f48f93c7c498a0a6ab` in CLAUDE.md.
+    - `art/upgrade-classic-ink-v6` ends in a tree byte-identical to `924bb3c`, its squash merge, which is already in `main` and since superseded by v7. Merging it would only re-apply v6 files.
+  - Deleting both remote branches is for the owner: this session's tools refused the tag push and the branch deletion.
