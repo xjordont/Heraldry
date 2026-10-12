@@ -1,8 +1,8 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-12T03:34:51+00:00",
- "max_references": 4,
+ "generated_at": "2026-10-12T03:40:55+00:00",
+ "max_references": 6,
  "push_every": 1,
  "review_every": 10,
  "receipts_base": 19,
@@ -390,7 +390,9 @@
     "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
     "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
     "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
-    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg"
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg",
+    "assets/art/style/STYLE-REF-64-armour-sheet.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6820,7 +6822,9 @@
     "assets/art/style/STYLE-REF-15-sword-mace-items.jpg",
     "assets/art/style/STYLE-REF-40-rag-wrapped-scythe.jpg",
     "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
-    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg"
+    "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
+    "assets/art/style/STYLE-REF-56-weapons-sheet.jpg",
+    "assets/art/style/STYLE-REF-64-armour-sheet.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",

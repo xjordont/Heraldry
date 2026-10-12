@@ -775,7 +775,7 @@
    "category": "still life: weapons sheet",
    "role": "Swords, daggers, axes, flail, maces and hammers in rows, bold ink",
    "caveat": "sheet layout: never copy the grid",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: item; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg",
@@ -827,7 +827,7 @@
    "category": "still life: armour sheet",
    "role": "Helmets, gambeson, brigandine, mail with tabard and plate cuirass",
    "caveat": "sheet layout: never copy the grid",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: item; never placed or packaged"
   }
  ],
  "public_domain": [
