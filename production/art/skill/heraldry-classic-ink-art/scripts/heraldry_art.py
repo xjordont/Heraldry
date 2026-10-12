@@ -710,8 +710,8 @@ def cmd_status(a, repo):
         action = ("DELIVER: " + ship) if not drift_due else (
             f"DRIFT REVIEW, THEN DELIVER. `{helper()} sheet --recent {review_at} --refs` and "
             f"`{helper().replace('heraldry_art.py', 'style_audit.py')} --repo . --recent {review_at}`; "
-            "deliver in every case: one drifting image, name it in your report; two or more same-register images with the "
-            "same fault, deliver and then stop and report; nothing drifted, say so and continue. Then " + ship)
+            "deliver in every case and keep going: name any drifting image, and any fault shared by two or more same-register "
+            "images, in your report (Claude Code reviews and sends redos); nothing drifted, say so. Then " + ship)
     elif todo:
         note = (f" ({len(saved)} saved and not sent yet: send at {push_at}, or run `status --end` at session end)" if saved
                 else " (a refusal receipt is not sent yet: it goes with the next delivery, or `status --end`)" if unsent else "")

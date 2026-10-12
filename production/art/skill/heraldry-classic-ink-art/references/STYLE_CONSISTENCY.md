@@ -31,7 +31,7 @@ All comparison statistics are **advisory**; image contents and page density legi
 
 ## Anti-drift batch review
 
-Every tenth saved image (`status` says DRIFT REVIEW), run `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10`. Compare by register (scene with scene, creature/person with the figure reference, still life with still-life references). Look for creeping grey, heavier/fainter contours, cloned posing, lower contrast, inconsistent paper, or crowding. Deliver in every case. When at least two siblings show the same drift, deliver, then STOP and report the trend to Claude Code; it reviews the reference selection or prompt upstream.
+Every tenth saved image (`status` says DRIFT REVIEW), run `sheet --recent 10 --refs` and `style_audit.py --repo . --recent 10`. Compare by register (scene with scene, creature/person with the figure reference, still life with still-life references). Look for creeping grey, heavier/fainter contours, cloned posing, lower contrast, inconsistent paper, or crowding. Deliver in every case and continue. When at least two siblings show the same drift, report the trend to Claude Code; it reviews the reference selection or prompt upstream and sends redos.
 
 ## Approval
 

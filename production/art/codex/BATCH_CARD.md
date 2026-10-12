@@ -17,14 +17,16 @@ Read this and `AGENTS.md` only. Open `SKILL.md` or `references/*.md` only when o
 
 ## Delivery (after every saved image; then `H heraldry_art.py status`)
 - **status says DELIVER:** `H delivery_guard.py ship --execute --repo .` (it runs every delivery check, fast-forwards over the intake bot's commits and retries a lost race).
-- **status says DRIFT REVIEW** (every 10 images): `H heraldry_art.py sheet --recent 10 --refs` and `H style_audit.py --repo . --recent 10` (both write to the scratch folder; the audit prints any advisories); look at the sheet once. Then ship in every case. One image drifted: name it in your report. Two or more same-register images share a style drift (line weight, grey tone, too clean, scenery behind figures; not margins): ship, then stop and report. Nothing drifted: say so and continue.
+- **status says DRIFT REVIEW** (every 10 images): `H heraldry_art.py sheet --recent 10 --refs` and `H style_audit.py --repo . --recent 10` (both write to the scratch folder; the audit prints any advisories); look at the sheet once. Then ship in every case. One image drifted: name it in your report. Two or more same-register images share a style drift (line weight, grey tone, too clean, scenery behind figures; not margins): name it in your report and keep going (Claude Code reviews and sends redos). Nothing drifted: say so.
 - **ship says BLOCKED:** `H heraldry_art.py bundle`, report the reason and stop. Never pull, rebase, force or commit by hand.
 
 ## Stop and report when
 - `next` says nothing pending and status says NOTHING LEFT;
 - the image tool cannot attach the listed references (if it refuses one item, `H heraldry_art.py refuse ID --reason "<what it said>"`, deliver, and continue);
-- the plan's usage limit is reached (everything saved is already delivered; the next session resumes from `next`);
-- a drift review finds a shared style drift, or ship is BLOCKED.
+- the plan's usage limit is reached (ChatGPT Plus: it resets every 5 hours; everything saved is already delivered, and the owner restarts the same prompt, which resumes from `next`);
+- ship is BLOCKED.
+
+Do not stop for drift, flagged images or a long queue: the owner wants the whole list run (2026-10-12).
 
 ## Keep it lean
 - Don't re-read docs between items, don't print JSON you don't need, don't cat receipts.

@@ -113,7 +113,8 @@ Claude Code owns the prompts, queue, references, review and approval. The skill 
 ## Codex cadence
 
 - **Per image:** `push_every: 1`, so each saved image is delivered at once, and a 5-hour or weekly usage limit never strands work.
-- **Every tenth image:** a drift review (`sheet --recent 10 --refs`, `style_audit.py --recent 10`).
+- **Every tenth image:** a drift review (`sheet --recent 10 --refs`, `style_audit.py --recent 10`). Codex reports drift and keeps going (owner 2026-10-12: run the whole list); Claude Code reviews and sends redos.
+- **Usage:** ChatGPT Plus resets every 5 hours. Codex stops at the limit with everything delivered, and the same prompt resumes. The owner confirmed that Codex accepts six reference images.
 - **Resumable:** the next session's identical prompt (`CODEX_PROMPT.md`) resumes from `next`.
 - **Lean token use:**
   - The batch card replaces the long docs.
