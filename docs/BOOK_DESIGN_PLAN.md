@@ -1,4 +1,4 @@
-# Book design plan: "Grim Heraldry" (design system v3)
+# Book design plan: "Grim Heraldry" (design system v4)
 
 Status: owner-requested design pass (2026-10-12), rebuilt as v3 at the owner's direction: "add much more character and rebuild the whole graphic design moving in a more ornate grim dark direction while focusing on clarity and ease of use. Ensure the tables are not only beautiful but also very easy to read." The templates are implemented as Typst components in `typst/templates/system.typ` and shown on fourteen specimen pages in `typst/templates/specimens.typ`. These are set with real RC492 text, approved art and the real vector figures, and rendered to PNG by `tools/render_template_specimens.py`. No book PDF was produced.
 
@@ -29,13 +29,13 @@ The ordinary rules page is the product. The cover and chapter openers set the mo
 | Element | Value |
 |---|---|
 | Trim | US Letter portrait, 612 × 792 pt, borderless inkjet; cream `#FCFAF5` and a white companion with identical pagination |
-| Margins | inside (binding) 0.875 in, outside 0.6 in, top 0.8 in, bottom 0.8 in |
-| Text frame | 7.025 × 9.4 in; two columns of 3.39 in with a 0.25 in gutter |
+| Margins | inside (binding) 0.75 in, outside 0.55 in, top 0.68 in, bottom 0.7 in (owner 2026-10-12: narrower) |
+| Text frame | 7.2 × 9.62 in; two columns of 3.48 in with a 0.24 in gutter (about 6% more text per page than v3) |
 | Edge safety | essential content at least 0.375 in from every edge (thumb tabs are navigation, not essential) |
 | Full-width regions | section titles, chapter openers, wide tables, wide figures, scenario heads |
 | Column regions | prose, examples, notes, monster entries, powers, dossiers |
 
-The 0.82 in top margin leaves room for the running head and its briar rule; the outer margin carries the thumb tabs.
+The outer margin carries the 0.32 in thumb tabs with 0.23 in clear space before the text.
 
 ## 3. Type
 
@@ -43,62 +43,57 @@ Four families are used, all under the OFL, with licences in `fonts/licences/`. E
 
 | Role | Face | Size / leading | Notes |
 |---|---|---|---|
-| Body | Source Serif 4 | 10.25 / 13.4 pt, ragged right | Hyphenation on (en-CA). Ragged right avoids the rivers that justification opens in 3.4 in columns |
-| Chapter title | Grenze Gotisch SemiBold | 50 pt | Centred under the opener art |
-| Section (x.y) | Grenze Gotisch SemiBold | 24 pt | Number on a black shield; briar rule beneath |
-| Subsection (x.y.z) | Source Serif 4 Bold | 12.5 pt | Rivet, then a quiet number in Source Sans 3 Bold 9.5 pt, 45% grey |
-| Minor named heading | Grenze Gotisch Medium | 14 pt | Named rules and talent tiers |
-| Entry names | Grenze Gotisch SemiBold | 15.5 to 36 pt | Power 15.5, table title 15, monster 21, place 28, scenario 32, class 36 |
-| Flavour and leads | IM FELL English Italic | 10.6 to 13 pt | Short passages only. Long lore uses Source Serif 4 Italic |
-| Labels and tags | Source Sans 3 Bold | 6.6 to 7.8 pt caps, +0.1 to 0.16 em tracking | Entry anatomy, dossier fields, banner tags, tab keywords |
-| Tables | Source Sans 3 | 9.3 pt (8.8 pt in Appendix C) / about 12 pt | Tabular lining figures. Header caps 7.8 pt reversed |
-| Captions | Source Sans 3 | 8.6 pt | Number and title in the iron caption band |
+| Rules text | Source Serif 4 | 10.25 / 13.3 pt, ragged right | Hyphenation discouraged but allowed (en-CA) |
+| Flavour, leads, lore | IM FELL English (roman) | 10.2 to 12.4 pt, near-black (84%), leading about 14.5 pt | Owner 2026-10-12: easier to read than the italic, and plainly a different voice from the rules |
+| Chapter title | Grenze Gotisch SemiBold | 50 pt | Centred under the opener art and the chapter's arms |
+| Section (x.y) | Grenze Gotisch SemiBold | 24 pt | Number in an engraved black shield; brush rule beneath |
+| Subsection (x.y.z) | Source Serif 4 Bold | 12.5 pt | Lozenge, then a quiet number in Source Sans 3 Bold 9.5 pt, 42% grey |
+| Minor named heading, table titles | Grenze Gotisch SemiBold | 14 to 15.5 pt | |
+| Entry names | Grenze Gotisch SemiBold | 15.5 to 36 pt | Power 15.5, monster 21, place 28, scenario 32, class 36 |
+| Tab keywords | Grenze Gotisch Bold | up to 12 pt, auto-fitted | Reversed, centred, rotated to run along the edge |
+| Labels and tags | Source Sans 3 Bold | 6.6 to 7.8 pt caps, +0.09 to 0.16 em tracking | Entry anatomy, dossier fields, banner tags, table headers |
+| Tables | Source Sans 3 | 9.3 pt (8.8 pt in Appendix C) / about 12 pt | Tabular lining figures |
+| Captions | Source Sans 3 | 8.6 pt | Number and title in the black caption band |
 | Running head | Source Sans 3 SemiBold | 7.4 pt caps, +0.16 em | |
-| Folio | Source Sans 3 Bold | 7.8 pt | Reversed in a black shield |
+| Folio | Source Sans 3 Bold | 7.6 pt | Reversed in an engraved shield |
 
-The minimum essential size is 8.6 pt for captions and 8.8 pt for dense reference tables. The DESIGN_SPEC floor of 9 pt for running text still applies to body copy. Tab keywords at 6.9 pt are navigation, not essential text.
+The minimum essential size is 8.6 pt for captions and 8.8 pt for dense reference tables. The DESIGN_SPEC floor of 9 pt for running text still applies to body copy.
 
-**Blackletter for character, not for reading:**
-- Grenze Gotisch is a readable modern blackletter. It carries titles and names only.
-- It is never set in all capitals.
-- It is never used for running text, table cells or numbers.
-
-Cinzel is retired. IM FELL is kept only for its italic, which carries flavour and leads.
+**Blackletter for character, not for reading:** Grenze Gotisch carries titles, names and tab keywords only. It is never set in all capitals, and never used for running text, table cells or numbers.
 
 ## 4. Ink, tone and ornament
 
 - **Ink:** black only.
-  - Secondary text is 22% grey.
-  - Furniture labels and quiet numbers are 45% grey.
-  - Hairlines are 26% black.
-  - Tints are transparent black: 6% for banding, examples and panels; 11% for the key column of a roll table.
-  - Transparent tints sit correctly on both the cream and white substrates.
-- **Ornament:** the "armoury" in section 12. It is ornate and grim (briar thorns, riveted iron, corner plates, skulls) but lives only at boundaries:
+  - Flavour text is 84% black.
+  - Labels are 58%; hairlines are 24%.
+  - Tints are transparent black: 5% for banding, examples and panels; 9% for the die column.
+- **Ornament** is the armoury of section 12: chapter arms, the broken crown, brush rules, engraved shields, corner flourishes, banner tags and the coin. It is medieval heraldry rather than horror props. The skulls of v3 are retired (owner 2026-10-12: "a bit cheesy").
+- **Ornament lives only at boundaries:**
   - running heads and folios;
-  - section and entry titles;
-  - table headers and closes;
+  - titles;
+  - table edges;
   - panel corners;
   - tabs;
   - chapter-opener frames.
-- **The reading field stays plain:** body text, table cells and captions carry no ornament, texture or tint beyond row banding.
+
+  Nothing ornamental sits inside the reading field, a table cell or behind art.
+- **Rules are calm:** one brush stroke under a section title; a thick-and-thin pair under the running head; brush strokes only at the top and bottom of a table. The v3 thorn rules are retired (owner 2026-10-12: "some of the rule lines are crowded").
 - **Not used:**
   - parchment texture, stains or burned edges;
   - drop shadows or gradients;
   - icons that would need a legend;
   - colour.
 
-  Full ornate frames appear only on chapter openers.
-
 ## 5. Navigation
 
 - **Running heads:**
   - The verso carries the chapter name; the recto carries the current section.
-  - Each sits at the outer end with a rivet, over a briar rule.
+  - Each sits at the outer end beside the chapter's arms, over a thick-and-thin rule.
   - Heads are suppressed on chapter openers, scenario openers, the title page and contents.
-- **Folios:** the page number reversed in a black shield at the outer bottom corner, with a short briar rule toward the gutter. On framed opener pages the shield sits in the frame's bottom centre.
+- **Folios:** the page number reversed in an engraved shield at the outer bottom corner, with a short brush stroke toward the gutter. On framed opener pages the shield sits in the frame's bottom centre.
 - **Thumb tabs (owner 2026-10-12):**
-  - Tall black pennants hang from the outer edge, each with an engraved inner line and a pointed inner end.
-  - Each carries its part's keyword, rotated to run along the edge. It reads top to bottom on the right edge and bottom to top on the left.
+  - Tall black pennants hang from the outer edge, 0.32 in wide, each with an engraved inner line and bevelled inner corners.
+  - Each carries its part's keyword in bold blackletter, reversed and centred. The keyword is auto-fitted up to 12 pt and rotated to run along the edge: top to bottom on the right edge, bottom to top on the left.
   - There are 15 fixed slots, so the closed book shows a stepped index:
 
   | Slot | Part | Keyword |
@@ -120,8 +115,8 @@ Cinzel is retired. IM FELL is kept only for its italic, which carries flavour an
   | 15 | Index | Index |
 
   Tabs are navigation only. The running head always names the chapter, so a tab trimmed by overscan loses nothing.
-- **Contents:** two columns. Each chapter row has a shield numeral, the title in blackletter and its page, over a briar rule. Each section line has a sans number, a serif title and dot leaders to the page. The contents is two levels deep; deeper levels live in the PDF bookmarks.
-- **Index:** three columns. Each initial is reversed in an engraved black block with a briar rule. Entries are sans 8.6 pt with hanging indents and grey page numbers.
+- **Contents:** two columns. Each chapter row has the chapter's arms, its number, the title in blackletter and its page, over a rule. Each section line has a sans number, a serif title and dot leaders to the page. The contents is two levels deep; deeper levels live in the PDF bookmarks.
+- **Index:** three columns. Each initial is reversed in an engraved black block followed by a rule. Entries are sans 8.6 pt with hanging indents and grey page numbers.
 - **Digital:** linked contents and index, PDF bookmarks, and clickable cross references ("see 10.6.4"). These are built from the existing anchors.
 
 ## 6. Page-type catalogue
@@ -160,11 +155,11 @@ As in section 5. The contents takes two pages, facing if possible.
 ### 6.5 Chapter opener (specimen 3; 11 chapters and 3 appendices)
 
 - **Order on the page:**
-  1. Chapter art at full frame width from the top of the frame, rising 0.3 in into the top margin. It is a 3:2 wide scene and takes about 45% of the page.
+  1. Chapter art at full frame width from the top of the frame, within the opener frame. It is a 3:2 wide scene and takes about 45% of the page.
   2. "CHAPTER ONE" in tracked sans caps.
-  3. The title in 50 pt blackletter, inside the ornate opener frame (corner irons, skull at the head).
+  3. The chapter's arms, then the title in 50 pt blackletter, inside the ornate opener frame (corner flourishes, the broken crown at the head).
   4. A flourish.
-  5. The source's italic lead, centred, 13 pt display italic at 80% width.
+  5. The source's lead, centred, 12.4 pt IM FELL roman at 82% width.
   6. The first numbered section, starting on the same page in two columns.
 - **No running head.** The thumb tab starts here.
 - **Art rule:** the chapter's approved scene, ART-CHxx, with each chapter's own subject. Until a chapter's art is approved, the opener drops 1.2 in and the type carries the page (the art-light edition). The page never uses another chapter's art.
@@ -202,26 +197,28 @@ As in section 5. The contents takes two pages, facing if possible.
 
 ### 6.10 Tables: the ledger (specimen 6)
 
-There is one grammar for all 332 tables, designed for reading first and ornament second.
+Owner 2026-10-12: "The tables look amateur. We should be centring values in cells ... changing (c) to a symbol for a coin." There is one grammar for all 332 tables, built on the Deth Wizards (page 22) and Black Death City (page 66) lessons: centred values, calm rules and no boxes.
 
-1. **Title**, when the source gives one: a small black shield, the title in blackletter 15 pt, and a briar rule running to the margin. The table and its title never separate.
-2. **Header band:** solid black with reversed 7.8 pt bold caps, a paper rivet at each end, and extra padding so labels never touch a rivet. It repeats on every continuation page.
-3. **Rows** are built for scanning:
-   - 4.1 pt vertical padding and 9.3 pt sans;
-   - alternate rows banded at 6%;
-   - faint 0.3 pt column guides;
-   - a 0.8 pt ink frame down both sides.
-4. **Key column** (the item, condition or result name) is bold, so the eye finds a row by its name.
-5. **Roll tables:** the die result sits reversed in a black shield, on an 11% tinted column.
-6. **Numbers** are tabular and right-aligned; text is left-aligned. Long text in a row may move to a spanning second line (the Five Leagues lesson).
-7. **Close:** a heavy iron rule ending in rivets. A titled table carries a small skull at its centre; an untitled one carries a lozenge.
+1. **Title**, when the source gives one: blackletter 15.5 pt directly above the table. They never separate.
+2. **Edges:** a hand-inked brush stroke above the header and another below the last row. There are no vertical rules and no side frame.
+3. **Header band:** solid black, reversed 7.6 pt bold caps. Each label is aligned like its column: centred over centred values, left over left. The band repeats on every continuation page.
+4. **Column alignment** is set per column type:
+   - **key**: bold, left;
+   - **text**: left;
+   - **value**: centred (numbers, dice, damage, short codes);
+   - **roll**: centred bold on a 9% tinted column.
+5. **Rows:** 4.2 pt vertical padding, 9.3 pt sans, alternate rows banded at 5%, hairlines at 24% between rows. A long text in a row may move to a spanning second line.
+6. **The coin:** the source's "c" for coins is set as the coin mark.
+   - In a header, "Cost (c)" becomes "COST" followed by a paper coin.
+   - In a value, "36c" becomes "36" followed by the coin.
+   - The mapping is purely typographic and recorded for reconciliation: coin mark = "c".
 
 | Family | Treatment |
 |---|---|
-| Roll / lookup (1d6, d66 ...) | Shield die column, bold result name, wide effect column, banding |
-| Equipment / numeric | Bold name, right-aligned numbers, traits last, banding, column guides |
+| Roll / lookup (1d6, d66 ...) | Roll column, bold key, wide effect column |
+| Equipment / numeric | Bold key, centred values, traits left and last |
 | Prose-heavy (5+ columns of sentences) | Full width, or the existing `cards` transformation where width cannot be found |
-| Reference summaries (Appendix C) | 8.8 pt, banded, full width under the iron reference band |
+| Reference summaries (Appendix C) | 8.8 pt, full width under the black reference head |
 
 Short tables are mandatory keeps. Long tables continue with the repeated header band and "(continued)" in the title line.
 
@@ -230,13 +227,13 @@ Short tables are mandatory keeps. Long tables continue with the repeated header 
 - Used for the Bastions and Climates in 1.3, and the strongholds in 11.3 where the source is lore prose.
 - Wide 3:2 art at full frame width.
 - The place name in 28 pt blackletter with a banner tag kicker ("BASTION", "CLIMATE").
-- A briar rule.
+- A brush rule.
 - The lore in Source Serif 4 Italic, as the source sets it, at 10.5 pt in a 78% measure.
 - Two places per page where both fit. A place never splits.
 
 ### 6.12 Hero class, ancestry and background (specimen 7)
 
-- **Head, full width:** a kicker (HERO CLASS, ANCESTRY or BACKGROUND), the name in 36 pt blackletter and a banner tag ("1/5 Complexity"), then a briar rule.
+- **Head, full width:** a kicker (HERO CLASS, ANCESTRY or BACKGROUND), the name in 36 pt blackletter and a banner tag ("1/5 Complexity"), then a brush rule.
 - **Beside the head:** the italic flavour, then a fact table of the source's labelled fields in source order.
 - **Outer column:** a 2:3 portrait, 2.15 in wide.
 - **Below:** the talent tiers in two columns, with label-rules and blackletter minor heads.
@@ -266,7 +263,7 @@ Short tables are mandatory keeps. Long tables continue with the repeated header 
 - **One monster per column; every bestiary page shows two complete creatures.**
 - **Each entry:**
   - a fixed 2.55 in portrait box, so the names align across the page;
-  - the name in 21 pt blackletter with a banner role tag ([Elite], [Brute]...) over a briar rule;
+  - the name in 21 pt blackletter with a banner role tag ([Elite], [Brute]...);
   - the italic flavour;
   - the black stat bar (HP · AV · SPD · LVL · CV · Sz) with values in 11.5 pt sans;
   - the source's AI Steps, Attacks and Special Abilities under label-rules, in source order.
@@ -285,7 +282,7 @@ Every named scenario starts a fresh page.
   - the 32 pt blackletter title, under a banner tag carrying the scenario number;
   - the flavour in display italic at 82% measure;
   - optional scenario art (ART-SCE-*) at the right of the head;
-  - a briar rule.
+  - a brush rule.
 - **Left column:** the setup dossier, a 5.5% tinted panel under a 1.5 pt rule. It holds the source's labelled setup fields in source order with their exact labels (Primary Objective, Final Random Monster Groups, Awake Groups, Minion Swarm, Objective Scaling, Pressure Clock, Party Deployment ...). The remaining setup prose follows below it.
 - **Right column:**
   - the deployment map with its caption bar;
@@ -408,27 +405,60 @@ The generator (`tools/build_book.py`) already emits semantic component calls (`c
   2. Chapters whose art is not yet approved use the typographic opener (a 1.2 in drop, type alone), so layout never waits for art.
   3. C.13, the single-sheet rules summary, is also produced as a separate one-page play aid. It is built from the same source and template as the C.13 page, as its own file, whenever the book is built; no PDF is produced before a build is requested.
   4. "Add some more flavour than the plain layout ... better graphic design to the tables and elsewhere", then "add much more character and rebuild the whole graphic design moving in a more ornate grim dark direction while focusing on clarity and ease of uses. Ensure the tables are not only beautiful but also very easy to read": sections 3, 4, 6.10 and 12 (design system v3).
+  5. v4 (later 2026-10-12): bolder, centred blackletter tab keywords; ledger tables with centred values and the coin mark for "c"; skulls replaced by chapter arms and the broken crown; calmer rules; narrower margins; IM FELL roman for flavour; the typesetting policy of section 13.
 
-## 12. The armoury: grim heraldic graphic design (v3)
+## 12. The armoury: grim medieval heraldry (v4)
 
-The owner directed on 2026-10-12: "Add much more character and rebuild the whole graphic design moving in a more ornate grim dark direction while focusing on clarity and ease of uses." It replaces v2.1. Every mark is an original vector drawn in `typst/templates/system.typ`.
+The owner directed on 2026-10-12: "take it further ... more decorations, symbols, ornaments but keep it tasteful without distracting from the text or art ... the skulls are a bit cheesy ... design something better grim dark medieval heraldry that's not so on the nose ... some of the rule lines are crowded." Every mark is an original vector drawn in `typst/templates/system.typ` and shown on specimen 15, "The Armoury".
 
 | Mark | Form | Where |
 |---|---|---|
-| **Briar rule** | A stem with alternating hooked thorns | Under running heads, section titles, entry names, table titles, contents rows, index initials, folio rules |
-| **Rivet** | An iron stud with a struck highlight (paper stud on black bands) | Running-head ends, subsection markers, header-band ends, example spine, iron rules |
-| **Iron rule** | A heavy bar ending in rivets, with a centrepiece | The close of every table, stat bar, fact table and formula card |
-| **Iron band** | A black strap with an engraved inner line and riveted ends | Figure caption bars, power tier heads, Appendix C reference heads |
-| **Shield** | A heater shield, solid or with an engraved inner line | Section numbers, folios, roll results, procedure steps, power numbers, contents numerals, table titles, Appendix C codes |
-| **Banner tag** | A short black strap with a pointed end | EXAMPLE, RULES NOTE, monster roles, scenario number, place kicker |
-| **Corner iron** | A forged L-bracket with a riveted boss and an inward thorn spike | Rules notes, scenario dossiers and outcome frames; chapter-opener frames |
-| **Skull** | Cranium, sockets, nasal cavity, teeth | Opener frame head, opener flourish, centre of titled-table closes, cover and back cover |
-| **Opener frame** | A double-ruled border with corner irons, a skull at the head and the folio shield at the foot | Chapter openers only |
-| **Drop capital** | The blackletter initial reversed in an engraved black block, three lines deep | First paragraph after a chapter opener (vendored droplet 0.3.1, MIT) |
+| **Chapter arms** | Each of the 15 parts bears its own coat of arms: a classic heraldic ordinary in black on paper. World per pale, Mechanics fess, Round bend, Actions chevron, Combat saltire, Party cross, Equipment pale, Powers pile, Monsters per saltire, Scenarios chief, Campaign bordure, Learn quarterly, Basic per bend, Reference per fess, Index a lozenge | Chapter opener (26 pt), running head (8.5 pt), contents rows (15 pt) |
+| **Broken crown** | Five points, the fourth snapped to a jagged stump: a dead dynasty, "kings are buried" | Signature mark: opener-frame head, flourishes, title page, back cover |
+| **Brush rule** | A hand-inked stroke with tapered ends and a slightly uneven edge, drawn the same way every printing | Section titles, table edges, stat bars, entry names, folios |
+| **Engraved shield** | A heater shield with a paper inner line, carrying a number | Section numbers, folios, procedure steps, power numbers |
+| **Corner flourish** | A fine L with an inner hairline and lozenge finials | Rules notes, scenario dossiers and outcome frames; chapter-opener frame |
+| **Banner tag** | A black strap with a pointed end | EXAMPLE, RULES NOTE, monster roles, scenario number, place kicker |
+| **Coin** | A struck disc with a ring and a lozenge stamp | Stands for the source's "c" in tables and stat bars |
+| **Opener frame** | Thick-and-thin border, corner flourishes, the broken crown at the head, the folio shield at the foot | Chapter openers only |
+| **Drop capital** | Blackletter initial reversed in an engraved black block | First paragraph after a chapter opener (vendored droplet 0.3.1, MIT) |
 
-**Restraint rules (clarity first):**
-1. No ornament inside the reading field or table cells.
-2. Skulls appear at most twice on an ordinary page, and never as bullets or markers.
-3. Briar rules are drawn at 0.7 to 1.3 pt, so they read as rules at a glance and as thorns up close.
-4. Every reversed label is at least 6.6 pt bold with tracking, on solid black.
-5. Black areas stay small and structural. The largest on an ordinary page are a table header band and the tab.
+**Restraint rules:**
+1. Nothing ornamental inside text, table cells or art.
+2. At most one ornamental mark per heading or table edge.
+3. Rules are one brush stroke or one thick-and-thin pair, never stacked.
+4. Every reversed label is at least 6.6 pt bold, on solid black.
+5. Black areas stay small and structural.
+
+## 13. Typesetting and layout policy
+
+Owner 2026-10-12: "We should be very careful of how we set up policy and procedure for typesetting and text layout to be easy to read, avoid page bloat, and avoid having to read sections/paragraphs across pages." These rules bind the build, alongside the mandatory one-page keep contract in DESIGN_REFINEMENT.md.
+
+**Paragraphs**
+1. Ragged right, so word spacing never stretches. Hyphenation is allowed in the 3.48 in columns but discouraged (cost 140%); no hyphen in headings, names or table cells.
+2. No widows or orphans: a paragraph never leaves one line alone at the top or foot of a column (widow and orphan costs at the maximum).
+3. No runts: a paragraph's last line carries at least two words where possible (runt cost 160%).
+4. A paragraph that fits a column never splits across a page turn. When a paragraph must split, it splits within a spread (verso to recto), never recto to verso, wherever the layout engine can achieve that by moving a whole unit.
+
+**Units (what reads as one thing stays on one page)**
+5. Every heading keeps its first full paragraph, or its first two list items, on the same page and column (sticky headings).
+6. Examples, rules notes, procedures, stat profiles, monster, power, class and place entries, short tables and figures with captions are unbreakable keep units.
+7. A fit-capable section or subsection moves whole to the next column or page rather than splitting (DESIGN_REFINEMENT). Only over-height units continue, with repeated headers or "(continued)".
+
+**Avoiding page bloat**
+8. Numbered sections start on a fresh page only where the policy requires it (DESIGN_REFINEMENT). A short section that ends early leaves its remaining space to the next same-chapter keep unit that fits it whole, before any page break is forced. This is never unrelated content and never a split unit.
+9. Space left at a section end is filled in this order:
+   - the section's own spot art, if approved;
+   - a relevant example or table from that section, if the source places it there;
+   - otherwise intentional white space.
+
+   Never stretch spacing or enlarge type to fill a page.
+10. Column balance: two-column runs balance on their last page, but a keep unit is never broken to balance.
+11. The narrower v4 margins give about 6% more text per page. Tables use full width whenever their columns would otherwise wrap a header or a short value.
+
+**Measure and rhythm**
+12. All vertical spacing is a multiple of the 3.3 pt half-line, so text in facing columns lines up.
+13. Long prose cells (over about 25 words) in tables move to a spanning second line or a `cards` transformation instead of shrinking type.
+14. Type never shrinks below the section 3 minimums to make something fit. Content is never omitted.
+
+**Verification** (each build): the existing reconciliation, the one-page-unit audit and layout QA, plus a widow, orphan and split-paragraph report by stable block ID. Every exception must be reviewed.
