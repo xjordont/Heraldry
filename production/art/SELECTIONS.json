@@ -4747,5 +4747,38 @@
    "max_print_w_in_300ppi": 2.853
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-WIND-ELEMENTAL": {
+  "family": "monster",
+  "title": "Wind Elemental",
+  "heading_id": "h-wind-elemental-skirmisher",
+  "route": "gpt",
+  "spec_sha256": "cd79c88c1e4b2121c2a14d442604d4e08d67096dd8f7982bd445e7f703b40398",
+  "prompt_sha256": "4fdac1f67711d0e8935350f67b50a27988945b0f5d2f8382240b93462cd805e1",
+  "status": "received",
+  "received_at": "2026-10-12T16:54:09+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flag: no faint face with two hollow eyes is visible in the vortex at print size. Midtone diagnostic appears to reflect ink hatching.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-WIND-ELEMENTAL.png",
+   "sha256": "bec5bf5fefd39ec5d9e031fde3ba4ec1b6792702ee932ba19f718ea0c5f98e34",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-WIND-ELEMENTAL.png",
+   "sha256": "500a5005c8113271ba24855a28f0814ec80d57f0a7289e0a03684bd1d22e4983",
+   "px": [
+    1156,
+    1193
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.853
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
