@@ -204,5 +204,38 @@
   "provenance": "AI-generated in ChatGPT Work from the recorded prompt; not hand-drawn.",
   "approved_at": "2026-10-11T14:07:35+00:00",
   "anchor-approved_at": "2026-10-11T14:17:57+00:00"
+ },
+ "ART-BAS-DEEPWARDEN": {
+  "family": "bastion",
+  "title": "Deepwarden",
+  "heading_id": "h-deepwarden",
+  "route": "gpt",
+  "spec_sha256": "b27130b10e640c836d0e99191e90649ea38e66779e3d7f64ebe1d15468952f99",
+  "prompt_sha256": "46ba9622b890d074b4a681b705af7dd49a1ea6bfb0f6b35cab32b6e4327e7280",
+  "status": "received",
+  "received_at": "2026-10-12T00:57:31+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Correction: fit the entire city vignette inside the central 80% of the canvas, leaving a broad completely blank white border occupying 10% of each side, with every mountain and brush stroke contained inside that area; keep the gate closed and the abyss black. Correction: use strictly neutral black ink on flat white paper with no sepia, tinted marks, stains or paper texture, keeping bold rough contours and large solid-black shadows.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAS-DEEPWARDEN.png",
+   "sha256": "1f63d8361ed4174c7d513730271f595391df651f178c8d701f2676d94cbea680",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAS-DEEPWARDEN.png",
+   "sha256": "53adebc65c7737f2ebdf9a745f03efe4d61afb6c614a53bfe7665b3e475dead7",
+   "px": [
+    1417,
+    926
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.723
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
