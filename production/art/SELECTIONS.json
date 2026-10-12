@@ -661,5 +661,38 @@
    "max_print_w_in_300ppi": 5.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAS-SALTSPIRE": {
+  "family": "bastion",
+  "title": "Saltspire",
+  "heading_id": "h-saltspire",
+  "route": "gpt",
+  "spec_sha256": "3cea81c0a77c0012205377cecb26157da6480f8623fd5e6b6e5fbe2eebc8b5c8",
+  "prompt_sha256": "753ac8f1335d1c18efbd671a66d1685fcbf583ab8e85909881aa5a43745a1726",
+  "status": "received",
+  "received_at": "2026-10-12T06:08:10+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAS-SALTSPIRE.png",
+   "sha256": "1186521f995bf97772a597a5e01e94502dda46a08cdde9231769f78a0cee2856",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAS-SALTSPIRE.png",
+   "sha256": "291f4d1ae72faf63b4fa616e4a0a3385e0ceb41f1ced4679319445f876fcb5ff",
+   "px": [
+    1531,
+    999
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.103
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
