@@ -199,5 +199,38 @@
    "max_print_w_in_300ppi": 3.927
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CLA-RANGER": {
+  "family": "class",
+  "title": "Ranger",
+  "heading_id": "h-ranger-35-complexity",
+  "route": "gpt",
+  "spec_sha256": "9f21f81c0d9c96bfe6f89234607c9e3c6a1ad8cfe2e4607fcc07d890381b608e",
+  "prompt_sha256": "57ee380f07fede9930963fff255801389467e1b01e7341088a9f9877cb20a022",
+  "status": "received",
+  "received_at": "2026-10-12T04:50:39+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "A sheathed sword is visibly carried at the belt, contrary to the prohibition. Check also reported 11% mid-tones and 0.14% stray edge marks; print review showed no cropped limb.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CLA-RANGER.png",
+   "sha256": "f24fa2383eaa6b3ae2aa02df15798f225857fc64b325d3221ef5a3cc7bc5988f",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CLA-RANGER.png",
+   "sha256": "6ff31957911d21fecc805899566f0dc140ec0900342255c72864206b6934a78a",
+   "px": [
+    971,
+    1496
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.237
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
