@@ -104,12 +104,13 @@ class ArtPipeline(unittest.TestCase):
         pack, g, ents, (q, prompts) = self._batch_queue()
         cfg = g.CFG["gpt_reference_sets"]
         style = "assets/art/style/"
-        # scenery-carrying references never reach an isolated figure or still life (one accepted exception:
-        # STYLE-REF-22, the wolf pack in a forest, in the beast set; owner 2026-10-12 "include risky")
+        # scenery-carrying references never reach an isolated figure or still life
         scenic = {style + n for n in ("STYLE-REF-02-panorama-line.jpg", "STYLE-REF-07-drybrush-duel.jpg", "STYLE-REF-09-skeleton-melee-ink.jpg",
                                       "STYLE-REF-10-undead-crowd-ink.jpg", "STYLE-REF-11-city-approach-ink.png", "STYLE-REF-13-cave-river-pen.jpg",
                                       "STYLE-REF-21-adventuring-party-forest.jpg", "STYLE-REF-43-piranesi-drawbridge.jpg",
-                                      "STYLE-REF-44-haden-vignette-farm.jpg")}
+                                      "STYLE-REF-44-haden-vignette-farm.jpg", "STYLE-REF-22-wolf-pack-forest.jpg",
+                                      "STYLE-REF-46-round-tower-riders.jpg", "STYLE-REF-47-barrow-dolmen-moor.jpg",
+                                      "STYLE-REF-49-swordsman-mountain-pass.jpg")}
         city = style + "STYLE-REF-11-city-approach-ink.png"
         self.assertEqual(q["schema"], 2)
         done = {i for i, v in g.load(g.SELECTIONS, {}).items() if v.get("status") in ("approved", "anchor-approved")}

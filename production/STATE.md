@@ -376,3 +376,15 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
   - **Housekeeping:**
     - The queue was republished; prompts are unchanged and only reference lists changed.
     - `STYLE_REFS.json` usage fields are now generated from the config; 13 of them had wrongly said "not attached" since mapping v7.
+- **References adjusted** (owner, 2026-10-12: "22 wolf pack should be removed. Add the attached files", eight images).
+  - **Removed:** 22 from the beast set (it stays on file).
+  - **Added:** the eight images, stored unchanged as STYLE-REF-45 to 52 (all distinct from existing references by perceptual hash) and slotted where they fit and there was room:
+    - 45 cathedral facade to bastions;
+    - 46 round tower to chapters;
+    - 47 barrow and dolmen to the cover;
+    - 49 mountain-pass swordsman to bosses;
+    - 50 flame-sword elf to magical monsters;
+    - 52 crowned lich and 51 bandaged mummy to undead, replacing 38 gnoll there (38 stays in beasts and humanoids).
+  - **Banked:** 48 bearded warrior, a bust with a black box background that could teach a frame, and no slot left.
+  - **Result:** 263 items carry 4 references and the 12 beasts carry 3. The figure test lists the new scenic references (46, 47, 49) and 22, so none can reach an isolated figure.
+  - **Housekeeping:** `STYLE_REFS.json`, `docs/ART_DIRECTION.md` and `STYLE.md` updated. The queue was republished, with prompts unchanged.

@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-12T01:56:43+00:00",
+ "generated_at": "2026-10-12T02:52:24+00:00",
  "max_references": 4,
  "push_every": 1,
  "review_every": 10,
@@ -21,7 +21,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -74,7 +75,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -100,8 +102,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -153,7 +154,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -332,7 +334,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -413,7 +416,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -438,7 +442,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg"
+    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
+    "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -464,7 +469,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -484,7 +490,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -509,7 +516,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -534,7 +542,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -559,7 +568,8 @@
    "references": [
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
     "assets/art/style/STYLE-REF-02-panorama-line.jpg",
-    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg"
+    "assets/art/style/STYLE-REF-09-skeleton-melee-ink.jpg",
+    "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -714,7 +724,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -789,7 +800,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -813,8 +825,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -866,7 +877,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -890,8 +902,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -915,7 +926,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -940,8 +952,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -965,7 +976,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -1014,7 +1026,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1038,7 +1051,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1137,7 +1151,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1161,8 +1176,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1270,7 +1284,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -1320,8 +1335,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1345,7 +1359,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1396,7 +1411,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -1447,7 +1463,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1498,7 +1515,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1547,7 +1565,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1573,7 +1592,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1597,7 +1617,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1621,7 +1642,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1671,7 +1693,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1697,7 +1720,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1721,7 +1745,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1745,7 +1770,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1769,8 +1795,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -1849,8 +1874,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -1874,7 +1898,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2055,8 +2080,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2080,7 +2104,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -2131,7 +2156,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -2157,7 +2183,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2181,7 +2208,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2205,7 +2233,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2229,7 +2258,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2280,7 +2310,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2379,7 +2410,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -2431,8 +2463,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2481,7 +2512,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -2505,7 +2537,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2605,7 +2638,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2757,7 +2791,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2781,7 +2816,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2830,7 +2866,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -2854,8 +2891,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -2881,7 +2917,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3034,7 +3071,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3134,8 +3172,7 @@
    "references": [
     "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
     "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg",
-    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
-    "assets/art/style/STYLE-REF-22-wolf-pack-forest.jpg"
+    "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3160,7 +3197,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3187,7 +3225,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3211,7 +3250,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3237,7 +3277,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3420,7 +3461,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3444,7 +3486,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3468,7 +3511,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3493,7 +3537,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -3517,7 +3562,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -3541,7 +3587,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -3565,7 +3612,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-18-roaring-bear.jpg"
+    "assets/art/style/STYLE-REF-18-roaring-bear.jpg",
+    "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -3589,7 +3637,8 @@
    "references": [
     "assets/art/style/STYLE-REF-04-throne-brush-black.jpg",
     "assets/art/style/STYLE-REF-03-figure-spotblack.jpg",
-    "assets/art/style/STYLE-REF-38-gnoll-spearman.jpg"
+    "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+    "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -4180,7 +4229,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4205,7 +4255,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -4232,7 +4283,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4257,7 +4309,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4282,7 +4335,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4307,7 +4361,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4332,7 +4387,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Large: roughly twice a human's height or bulk",
@@ -4359,7 +4415,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4384,7 +4441,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -4409,7 +4467,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -4434,7 +4493,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Medium: about human-sized",
@@ -4459,7 +4519,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Small: smaller than a human",
@@ -4484,7 +4545,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -4509,7 +4571,8 @@
    "references": [
     "assets/art/style/STYLE-REF-16-armoured-dragon-demon.jpg",
     "assets/art/style/STYLE-REF-10-undead-crowd-ink.jpg",
-    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg"
+    "assets/art/style/STYLE-REF-05-cave-creature-pen.jpg",
+    "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg"
    ],
    "max_attempts": 1,
    "size_class": "Huge: towering many times a human's size",
@@ -6770,7 +6833,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6795,7 +6859,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6820,7 +6885,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6845,7 +6911,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6870,7 +6937,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6897,7 +6965,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6922,7 +6991,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6947,7 +7017,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6972,7 +7043,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6996,7 +7068,8 @@
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg"
+    "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",

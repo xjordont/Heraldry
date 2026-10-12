@@ -1,5 +1,5 @@
 {
- "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses. A second batch added STYLE-REF-28..40 to the bank (one more image was STYLE-REF-26 again, byte-identical, and was not stored twice). 2026-10-11: on owner instruction Claude searched for public-domain examples to fill the remaining gaps and added STYLE-REF-41..44 (Callot, Piranesi, Haden; Art Institute of Chicago CC0). Their scans were levelled and plate numbers or signatures removed. 2026-10-12: the owner promoted most of the bank (max four references per item); each entry's 'use' now states the sets it is attached to, generated from config/art_style.json.",
+ "note": "Owner-supplied style samples (2026-10-08). Stored as plain git blobs (cloud session cannot upload LFS). The fourth sample was the existing ART-CH01-001 master, retained as the density counter-example. 2026-10-11: the owner re-supplied STYLE-REF-01/02/03 as the art-direction examples (byte-identical by perceptual hash) and added a Dying Lands map as inspiration. 2026-10-11 (later): the owner moved the benchmark to 'old school black and white gritty' art with ten more examples. Seven pure-black-ink examples became STYLE-REF-04..10; three ink-wash examples are inspiration only (grey tone cannot print); the eleventh was STYLE-REF-03 again (byte-identical). STYLE-REF-01/02 (clean engraved line) are superseded and no longer attached. 2026-10-11 (later still): the owner cut STYLE-REF-01 (file removed; it remains in git history) and asked for the best of four attached city scenes instead. STYLE-REF-11 is the bold black-and-white one; two of the others were near copies of the approved sepia Greythorn render and the fourth was denser, closer to the rejected hyper-detailed look. 2026-10-11: the owner promoted STYLE-REF-02 and STYLE-REF-08 back into the attached sets. 2026-10-11: the owner banked sixteen more examples (STYLE-REF-12..27) covering still lifes, beasts, wilderness, interiors and magic, with more to come. They are recorded under 'banked' and are not attached until the owner chooses. A second batch added STYLE-REF-28..40 to the bank (one more image was STYLE-REF-26 again, byte-identical, and was not stored twice). 2026-10-11: on owner instruction Claude searched for public-domain examples to fill the remaining gaps and added STYLE-REF-41..44 (Callot, Piranesi, Haden; Art Institute of Chicago CC0). Their scans were levelled and plate numbers or signatures removed. 2026-10-12: the owner promoted most of the bank (max four references per item); each entry's 'use' now states the sets it is attached to, generated from config/art_style.json. 2026-10-12 (later): STYLE-REF-22 removed from the beast set by the owner; eight more owner samples added as STYLE-REF-45..52.",
  "refs": [
   {
    "path": "assets/art/style/STYLE-REF-02-panorama-line.jpg",
@@ -108,6 +108,97 @@
    "sha256": "c4421e981228f908033645b583258dffe1a6b5adad195a8cc7248f39e4cdb1f8",
    "role": "scene: walled town seen from its approach road; bold contour, heavy blacks, open sky",
    "use": "attached to reference sets: bastion, cover; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-45-cathedral-facade-pen.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    827,
+    1118
+   ],
+   "sha256": "5e9e558bae53fdce133f917c9c3b09c3f506cc3f8456341a9376ac50b542857d",
+   "category": "architecture (bastion)",
+   "role": "Gothic cathedral facade, pen line with heavy black openings and hatching",
+   "caveat": "fairly clean line; a real landmark: never copy its features",
+   "use": "attached to reference sets: bastion; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    671,
+    900
+   ],
+   "sha256": "991f13f6e2401c395fe46849c265edb476b58a48929d5e93888b7975b2e8058c",
+   "category": "scene: tower in a landscape (chapter)",
+   "role": "Ruined round tower on a hill, two travellers with horses, open sky and fields",
+   "caveat": "lighter line than the core; birds and clouds as simple strokes",
+   "use": "attached to reference sets: chapter; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    900,
+    658
+   ],
+   "sha256": "842aa760ee4224c0c610bedf21d1df026be11a61d29cb8e687a723dad1de25fd",
+   "category": "landscape: barrow on a moor (cover)",
+   "role": "Grassy barrow with a dolmen doorway under a wide streaked sky",
+   "caveat": "loose pen; no figures",
+   "use": "attached to reference sets: cover; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1280,
+    1816
+   ],
+   "sha256": "a64f304aae90846d3ce5d8a001dde82f9a8744df3a1040e1c75b83528181d0e4",
+   "category": "person in a setting (boss)",
+   "role": "Long-coated swordsman braced on a mountain pass, ruined wall, pines",
+   "caveat": "modern touches (spectacles, thigh straps): take the inking, not the costume",
+   "use": "attached to reference sets: boss; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-50-elf-flame-sword-dotwork.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    435,
+    618
+   ],
+   "sha256": "0f182b3539f5eafcb5e1c253deb798eb3d96b8bf380851817107ab2794f22ce1",
+   "category": "creature: fey or fiendish warrior (magical)",
+   "role": "Gaunt elf warrior in studded armour with a flaming sword",
+   "caveat": "small (435 px wide); dotwork texture",
+   "use": "attached to reference sets: monster:magical; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-51-bandaged-mummy-skeleton.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    1773,
+    2089
+   ],
+   "sha256": "4ee650e9e446fe31810285e3cf7a999c111fe88e5d8528ea97dafc3d270f1586",
+   "category": "creature: undead (mummy)",
+   "role": "Skeleton bound in loose bandages, reaching",
+   "caveat": "fine mechanical hatching tone on the wrappings",
+   "use": "attached to reference sets: monster:undead; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-52-crowned-lich-brush.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    576,
+    927
+   ],
+   "sha256": "d67209f47eeca0e94f11469ea34dd0003dbacf0f25d7769119c30c4bf8c1bdf7",
+   "category": "creature: undead (lich king)",
+   "role": "Crowned skull-faced lich in robes, bold brush blacks",
+   "caveat": "small (576 px wide); cropped at the bottom edge",
+   "use": "attached to reference sets: monster:undead; never placed or packaged"
   }
  ],
  "inspiration_only": [
@@ -294,7 +385,7 @@
    "category": "creature (beast) / scene",
    "role": "Wolf pack running through a forest; brush and scratchy hatching",
    "caveat": "",
-   "use": "attached to reference sets: monster:beast; never placed or packaged"
+   "use": "on file, not attached to any generation set; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-23-dungeon-arches-screentone.jpg",
@@ -502,7 +593,7 @@
    "category": "creature (beastfolk)",
    "role": "Hyena-man with spear and skull belt; bold scratchy hatching, isolated on white",
    "caveat": "",
-   "use": "attached to reference sets: monster:beast, monster:humanoid, monster:undead; never placed or packaged"
+   "use": "attached to reference sets: monster:beast, monster:humanoid; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
@@ -528,6 +619,19 @@
    "category": "still life: equipment",
    "role": "Crude scythe-pick with a rag-wrapped haft, isolated",
    "caveat": "small (467 px tall)",
+   "use": "on file, not attached to any generation set; never placed or packaged"
+  },
+  {
+   "path": "assets/art/style/STYLE-REF-48-bearded-warrior-snow.jpg",
+   "source": "owner-supplied example, 2026-10-12 (original bytes)",
+   "px": [
+    693,
+    950
+   ],
+   "sha256": "c32d6e8cf32e0eb4fdca78725b2d70de18fcc5b3a90060effe2e2dd022ca9425",
+   "category": "person: bust portrait",
+   "role": "Bearded warrior with a dagger against a black night with snow",
+   "caveat": "black rectangular background box: could teach a frame; a bust, not full length",
    "use": "on file, not attached to any generation set; never placed or packaged"
   }
  ],

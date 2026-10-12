@@ -18,12 +18,12 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
 
   | Images | References |
   |---|---|
-  | Monsters: undead (30) | 04 skeleton king, 03 skeleton warrior, 38 gnoll |
-  | Monsters: beasts (12) | 18 bear, 38 gnoll, 16 dragon-man, 22 wolf pack |
+  | Monsters: undead (30) | 04 skeleton king, 03 skeleton warrior, 52 crowned lich, 51 bandaged mummy |
+  | Monsters: beasts (12) | 18 bear, 38 gnoll, 16 dragon-man |
   | Monsters: vermin and aberrations (17) | 16 dragon-man, 36 crab insectoid, 18 bear, 35 grub beast |
   | Monsters: humanoids and beastfolk (39) | 38 gnoll, 41 Callot beggar, 04 skeleton king, 32 goat-folk spearman |
-  | Monsters: dragons, demons, elementals, constructs (22) | 16 dragon-man, 28 wizard vs fiend, 18 bear |
-  | Bosses | 16, 10 undead crowd, 05 cave creature |
+  | Monsters: dragons, demons, elementals, constructs (22) | 16 dragon-man, 28 wizard vs fiend, 18 bear, 50 flame-sword elf |
+  | Bosses | 16, 10 undead crowd, 05 cave creature, 49 swordsman on a mountain pass |
   | Classes and ancestries | 08 woodcut fencers, 41 Callot beggar, 06 hooded archer, 42 Callot beggar on crutches |
   | Backgrounds | 19 pack, rope and lantern; 34 gear sheet; 25 bracers; 39 poison flask |
   | Items | 15 sword and mace, 19, 25, 24 flanged mace |
@@ -32,9 +32,9 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   | Climates | 44 Haden vignette, 13 cave river, 07 dry-brush duel, 17 swamp hut |
   | Scenarios | 09 skeleton melee, 21 party on a forest path, 44, 31 dungeon melee |
   | World sections | 44, 43, 09, 30 forest path |
-  | Bastions | 11 city approach, 02 city panorama, 09 |
-  | Chapters | 29, 43, 44 |
-  | Cover | 29, 11, 43 |
+  | Bastions | 11 city approach, 02 city panorama, 09, 45 cathedral facade |
+  | Chapters | 29, 43, 44, 46 round tower |
+  | Cover | 29, 11, 43, 47 barrow and dolmen |
 
 - **Public-domain additions** (Claude sourced these on owner instruction to fill the gaps, from the Art Institute of Chicago's CC0 images; each scan was levelled to black on white and its plate number or signature painted out):
   - 41 and 42: Callot beggars. Isolated full-length figures with bold swelling line.
@@ -42,9 +42,9 @@ The owner asked to "redo the art inspiration a bit to move our current art bench
   - 44: Haden, *Challow Farm*. A landscape vignette that dissolves into paper.
 - **Bank promoted** (owner, 2026-10-12: "promote them if there is room ... include risky"): one banked image joined each set it fits best, shown in the table above. The owner accepted these risks:
   - 12 and 17 carry grey tone, 23 screen tone, and 30 and 31 stipple fields: the generator may copy the tone, which the checks still reject.
-  - 22 is a forest scene in an isolated-figure set: watch for scenery behind beasts.
   - 32, 35 and 39 are small; 24 is cleaner than the core.
-- **Still on file, not attached** (no slot left in a matching set): 14 (signed still life), 27 (pseudo-script), 33 bone cross and 40 scythe (small still lifes).
+- **Owner samples 45 to 52** (2026-10-12): see the table. 52 lich and 51 mummy replace 38 gnoll in the undead set (38 stays in beasts and humanoids). The owner removed 22 wolf pack the same day.
+- **Still on file, not attached:** 22 wolf pack (removed by the owner); 48 bearded warrior (no slot, and its black box background could teach a frame); 14 (signed still life), 27 (pseudo-script), 33 bone cross and 40 scythe (small still lifes; no slot left).
 - **Still open:** no gritty desert, ash-waste or snow landscape example exists in the public domain at usable quality. Those climates rely on their prompts plus the general landscape references 44, 13 and 07.
 - **Mood only:** three ink-wash examples (`STYLE-INSPIRATION-wash-*`) are never attached, because grey tone cannot print in black ink.
 - **Cut and superseded:** the owner cut STYLE-REF-01 (it remains in git history) and replaced it with STYLE-REF-11, an owner exception to the rule against machine-made references.
