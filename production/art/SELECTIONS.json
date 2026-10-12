@@ -4203,5 +4203,38 @@
    "max_print_w_in_300ppi": 3.677
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-UNDEAD-WARRIOR": {
+  "family": "monster",
+  "title": "Undead Warrior",
+  "heading_id": "h-undead-warrior-minion",
+  "route": "gpt",
+  "spec_sha256": "59c941d1eae53b954411029af609b59ff20c77c3d56dd2c37ca349f8f5334356",
+  "prompt_sha256": "c07b40b0f85dcfda25ef5575243cf886d63123d67046a97099c5d7e020838b3d",
+  "status": "received",
+  "received_at": "2026-10-12T15:22:08+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "The figure reads predominantly as a bare skeleton rather than the required half-rotted corpse.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-UNDEAD-WARRIOR.png",
+   "sha256": "97055b3a29bac7ab6db80e700f3838422c02568b6ada886d8b68cda37ecd03b9",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-UNDEAD-WARRIOR.png",
+   "sha256": "b6a9526d00ff4a1f607dd4e67787c476b39c37068b751039ccb61b59eae5739b",
+   "px": [
+    1130,
+    1190
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.767
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
