@@ -1,7 +1,7 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-12T03:31:06+00:00",
+ "generated_at": "2026-10-12T03:34:51+00:00",
  "max_references": 4,
  "push_every": 1,
  "review_every": 10,
@@ -49,8 +49,8 @@
    "references": [
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
     "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg",
-    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg"
+    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg",
+    "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -179,10 +179,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -230,9 +230,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -441,10 +441,10 @@
    "size": "1536x1024",
    "print_w_in": 4.8,
    "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
     "assets/art/style/STYLE-REF-11-city-approach-ink.png",
-    "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
-    "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg"
+    "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg",
+    "assets/art/style/STYLE-REF-46-round-tower-riders.jpg",
+    "assets/art/style/STYLE-REF-65-ship-dead-tree-coast.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -595,8 +595,8 @@
    "references": [
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
     "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg",
-    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg"
+    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg",
+    "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -621,8 +621,8 @@
    "references": [
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
     "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg",
-    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg"
+    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg",
+    "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -647,8 +647,8 @@
    "references": [
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
     "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg",
-    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg"
+    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg",
+    "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -673,8 +673,8 @@
    "references": [
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
     "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg",
-    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg"
+    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg",
+    "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -699,8 +699,8 @@
    "references": [
     "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
     "assets/art/style/STYLE-REF-13-cave-river-pen.jpg",
-    "assets/art/style/STYLE-REF-07-drybrush-duel.jpg",
-    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg"
+    "assets/art/style/STYLE-REF-17-swamp-hut-brush.jpg",
+    "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3672,10 +3672,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3699,10 +3699,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3725,10 +3725,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3751,10 +3751,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3776,10 +3776,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3802,10 +3802,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3828,10 +3828,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3853,10 +3853,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3879,10 +3879,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3904,10 +3904,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3929,10 +3929,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3954,10 +3954,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -3979,10 +3979,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4006,10 +4006,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4032,10 +4032,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4060,10 +4060,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4086,10 +4086,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4111,10 +4111,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4136,10 +4136,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4164,10 +4164,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4189,10 +4189,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -4214,10 +4214,10 @@
    "size": "1024x1536",
    "print_w_in": 1.9,
    "references": [
-    "assets/art/style/STYLE-REF-08-woodcut-fencers.jpg",
-    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
     "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
-    "assets/art/style/STYLE-REF-42-callot-beggar-crutches.jpg"
+    "assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -5992,9 +5992,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6017,9 +6017,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6043,9 +6043,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6068,9 +6068,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6093,9 +6093,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6118,9 +6118,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6143,9 +6143,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6168,9 +6168,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6193,9 +6193,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6218,9 +6218,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6243,9 +6243,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6268,9 +6268,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6293,9 +6293,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",
@@ -6318,9 +6318,9 @@
    "print_w_in": 2.6,
    "references": [
     "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
     "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg"
+    "assets/art/style/STYLE-REF-12-wizard-storm-hilltop.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ],
    "max_attempts": 1,
    "size_class": "",

@@ -62,7 +62,7 @@
     767
    ],
    "sha256": "d0d69cbb5cdb5679e4ad4eb09d272b54de544b38337088158ec23a5d5fac4ff8",
-   "use": "attached to reference sets: climate, scene; never placed or packaged",
+   "use": "attached to reference sets: scene; never placed or packaged",
    "role": "scene: zombie and cloaked swordsman; dry-brush blacks on open paper, grass vignette"
   },
   {
@@ -73,7 +73,7 @@
     600
    ],
    "sha256": "76703e91b74e1823f275704fa200f551076b7d5fc367a407e92062ff60baaba5",
-   "use": "attached to reference sets: person; never placed or packaged",
+   "use": "on file, not attached to any generation set; never placed or packaged",
    "role": "scene: period woodcut of fencers; gouged hatching, strong silhouette"
   },
   {
@@ -133,7 +133,7 @@
    "category": "scene: tower in a landscape (chapter)",
    "role": "Ruined round tower on a hill, two travellers with horses, open sky and fields",
    "caveat": "lighter line than the core; birds and clouds as simple strokes",
-   "use": "attached to reference sets: chapter; never placed or packaged"
+   "use": "attached to reference sets: chapter, cover; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-47-barrow-dolmen-moor.jpg",
@@ -146,7 +146,7 @@
    "category": "landscape: barrow on a moor (cover)",
    "role": "Grassy barrow with a dolmen doorway under a wide streaked sky",
    "caveat": "loose pen; no figures",
-   "use": "attached to reference sets: cover; never placed or packaged"
+   "use": "attached to reference sets: climate, cover; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-49-swordsman-mountain-pass.jpg",
@@ -289,7 +289,7 @@
    "category": "scene: ship off a rocky coast (chapter)",
    "role": "Sailing ship framed by a dead tree and black foreground rocks",
    "caveat": "monogram and date lower left (lettering risk)",
-   "use": "attached to reference sets: chapter; never placed or packaged"
+   "use": "attached to reference sets: chapter, cover; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-66-troll-pair-spear.jpg",
@@ -580,7 +580,7 @@
    "category": "magic (tradition) / creature",
    "role": "Wizard blasting a flaming serpent-bodied fiend; magic as a spray of ink flecks on open white, ground shadows only",
    "caveat": "",
-   "use": "attached to reference sets: monster:magical, tradition; never placed or packaged"
+   "use": "attached to reference sets: monster:magical; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
@@ -593,7 +593,7 @@
    "category": "magic (divine) / scene",
    "role": "Warrior-priest calling down fire on lizardfolk silhouettes; heavy black ground, open white sky",
    "caveat": "",
-   "use": "attached to reference sets: cover, tradition; never placed or packaged"
+   "use": "attached to reference sets: tradition; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-30-forest-path-stipple.jpg",
@@ -762,7 +762,7 @@
    "category": "person: dwarf warrior",
    "role": "Bald bearded dwarf with round shield and ornate axe, isolated",
    "caveat": "loose sketchy line, slight blur",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: person; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-56-weapons-sheet.jpg",
@@ -788,7 +788,7 @@
    "category": "person: armoured swordswoman",
    "role": "Woman in ornate scrollwork armour resting on a sword",
    "caveat": "signature lower right (lettering risk)",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: person; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-61-herbalist-kneeling.jpg",
@@ -814,7 +814,7 @@
    "category": "person: wizard casting",
    "role": "Robed wizard with conical hat, flame in his hand, line-ruled background",
    "caveat": "ruled-line background",
-   "use": "on file, not attached to any generation set; never placed or packaged"
+   "use": "attached to reference sets: tradition; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-64-armour-sheet.jpg",
@@ -855,7 +855,7 @@
    "sha256": "0cf0d51ab14e774a689e94b669b6e6e1508be837d168404b4028bb6a543da180",
    "source": "Art Institute of Chicago, artwork 18026 ('Beggar on Crutches and Wearing a Hat, seen from Back, plate five from The Beggars', Jacques Callot), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
    "processing": "levelled to black ink on white paper, cropped to the image, plate signature or number painted out",
-   "use": "attached to reference sets: person; never placed or packaged"
+   "use": "on file, not attached to any generation set; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-43-piranesi-drawbridge.jpg",
@@ -868,7 +868,7 @@
    "sha256": "e9e860585ceca7c3aca82a132b846ea2e6c2a03377c986d0cdc8180a0b8f7c5b",
    "source": "Art Institute of Chicago, artwork 7358 ('The Drawbridge, plate 7 from Imaginary Prisons', Giovanni Battista Piranesi), public domain (CC0 image), IIIF 1686 px, fetched 2026-10-11",
    "processing": "levelled to black ink on white paper, cropped to the image",
-   "use": "attached to reference sets: campaign, chapter, cover; never placed or packaged"
+   "use": "attached to reference sets: campaign, chapter; never placed or packaged"
   },
   {
    "path": "assets/art/style/STYLE-REF-44-haden-vignette-farm.jpg",
