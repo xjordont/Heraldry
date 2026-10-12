@@ -5884,5 +5884,38 @@
    "max_print_w_in_300ppi": 5.033
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-THE-SUN-CROWNED-PRINCE": {
+  "family": "boss",
+  "title": "The Sun-Crowned Prince",
+  "heading_id": "h-the-sun-crowned-prince-boss",
+  "route": "gpt",
+  "spec_sha256": "525e18139c309b8fb9355a3d97128dec745a0b9529e6dbd812443e9f3aa3d4ef",
+  "prompt_sha256": "f2774559ecc074d73f69d4079feee9f038914210abf6142330a0a27c6c0b7bc7",
+  "status": "received",
+  "received_at": "2026-10-12T22:19:40+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Skeletal courtiers are cropped at left and right edges, weakening the requested white vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-THE-SUN-CROWNED-PRINCE.png",
+   "sha256": "b8dffb90697e340dcb8224a22839d6f0c0222ed39ad5ab54af3f30c619ed61e7",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-THE-SUN-CROWNED-PRINCE.png",
+   "sha256": "99c6966eb10be0d8bf583e3821b0238d6f341466f86f94c706fed2c44a5230ca",
+   "px": [
+    1536,
+    1022
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.12
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
