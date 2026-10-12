@@ -4,7 +4,7 @@
 Owner instruction 2026-10-12 (production/art/marks/PROMPTS.json). Runs only in the manual
 'Generate heraldic marks' workflow, which holds GEMINI_API_KEY as a secret; the key is never printed.
 Shares tools/art_generate.py's key handling, model resolution, budget cap and cost ledger.
-Candidates go to assets/art/marks/candidates/<ID>-v<n>.png; nothing is placed until approved.
+Candidates go to assets/art/marks/candidates/<ID>-v<n>.png (round 1) or <ID>-r<round>-v<n>.png; nothing is placed until approved.
 
     python3 tools/mark_generate.py prompts            # print the assembled prompts (no API call)
     python3 tools/mark_generate.py run [--ids ...]    # generate the variants and commit them
@@ -42,6 +42,8 @@ def run(ids):
     print(f"image model: {model}; budget used so far ${g.spent():.2f} of ${g.CFG['budget_usd']:.2f}")
     OUT.mkdir(parents=True, exist_ok=True)
     made = 0
+    rnd = spec.get("round", 1)
+    tag = f"-r{rnd}" if rnd > 1 else ""
     for it in items:
         for v in range(1, it["variants"] + 1):
             if g.spent() >= g.CFG["budget_usd"]:
@@ -63,13 +65,13 @@ def run(ids):
                     d = p.get("inlineData") or p.get("inline_data")
                     if d and d.get("data"):
                         img = base64.b64decode(d["data"])
-            g.ledger({"t": g.now(), "kind": "mark", "id": it["id"], "variant": v, "model": model, "usage": u,
+            g.ledger({"t": g.now(), "kind": "mark", "id": it["id"], "round": rnd, "variant": v, "model": model, "usage": u,
                       "usd_est": round(g.usd(u, "image"), 5), "ok": img is not None,
                       "prompt_sha256": g.sha(texts[it["id"]].encode())})
             if img is None:
                 print(f"{it['id']} v{v}: no image ({(r.get('candidates') or [{}])[0].get('finishReason')})")
                 continue
-            Image.open(io.BytesIO(img)).save(OUT / f"{it['id']}-v{v}.png")
+            Image.open(io.BytesIO(img)).save(OUT / f"{it['id']}{tag}-v{v}.png")
             made += 1
             print(f"{it['id']} v{v}: saved")
     return made
