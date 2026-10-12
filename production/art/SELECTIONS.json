@@ -3213,5 +3213,38 @@
    "max_print_w_in_300ppi": 3.99
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-MON-MIRE-TITAN": {
+  "family": "monster",
+  "title": "Mire Titan",
+  "heading_id": "h-mire-titan-brute",
+  "route": "gpt",
+  "spec_sha256": "02ab9e9853f4b8f35e011e95efa54ca15b2ca8c13af83e7327e5e0c0ea3ec833",
+  "prompt_sha256": "b2d2cceadbacca59ae8aafaaf3e925ff2fe98e55ef7a4090df5add245b36ac5e",
+  "status": "received",
+  "received_at": "2026-10-12T13:24:40+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Tentacles, reeds, and water approach canvas edges, leaving less than 8% clean margin. Checker warns 16% mid-tones; visual review sees ink texture, not grey wash.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-MON-MIRE-TITAN.png",
+   "sha256": "f523c31d85d868171148fad2dfd80043fb7e21d88232610d9d1650d4abaa95bf",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-MON-MIRE-TITAN.png",
+   "sha256": "23c93285265e862f1650b225ede962be66cd632a493d8550461b38a02e16b4a3",
+   "px": [
+    1209,
+    1205
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.03
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
