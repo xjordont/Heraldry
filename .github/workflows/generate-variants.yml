@@ -1,0 +1,60 @@
+name: Generate art variants
+# Owner instruction 2026-10-13: rebuild the 20 background illustrations through Nano Banana 2.1 so every version of each
+# can be compared side by side. Manual only. Requires the repository secret GEMINI_API_KEY; spend shares the cap in
+# config/art_style.json and the ledger. Writes raw candidates to assets/art/variants/ (Git LFS); it never changes
+# SELECTIONS.json, incoming art or any approval (tools/art_variants.py).
+on:
+  workflow_dispatch:
+    inputs:
+      family:
+        description: 'Catalogue family to generate (default: background)'
+        required: false
+        default: 'background'
+      ids:
+        description: 'Optional space-separated IDs (overrides family)'
+        required: false
+        default: ''
+      n:
+        description: 'Versions per illustration'
+        required: false
+        default: '3'
+permissions:
+  contents: write
+concurrency:
+  group: generate-variants
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image library
+        run: python -m pip install pillow==12.3.0
+      - name: Fetch only the reference images the prompts attach
+        env:
+          FAMILY: ${{ inputs.family }}
+          IDS: ${{ inputs.ids }}
+        run: |
+          git lfs install --local
+          REFS=$(python tools/art_variants.py refs ${IDS:+--ids $IDS} ${IDS:---family $FAMILY})
+          git lfs pull --include="$REFS" --exclude=""
+      - name: Generate
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FAMILY: ${{ inputs.family }}
+          IDS: ${{ inputs.ids }}
+          N: ${{ inputs.n }}
+        run: python tools/art_variants.py run --n "$N" ${IDS:+--ids $IDS} ${IDS:---family $FAMILY}
+      - name: Commit candidates
+        run: |
+          git config user.name "heraldry-art-bot"
+          git config user.email "heraldry-art-bot@users.noreply.github.com"
+          git add assets/art/variants production/art/GENERATION_LEDGER.jsonl
+          git diff --cached --quiet && { echo "nothing generated"; exit 0; }
+          git commit -qm "art: Nano Banana 2.1 variants for comparison"
+          for k in 1 2 3 4 5; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep $((k*3)); done
+          exit 1
