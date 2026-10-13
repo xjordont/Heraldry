@@ -8226,5 +8226,38 @@
    "max_print_w_in_300ppi": 5.037
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20": {
+  "family": "tradition",
+  "title": "Tier 3 Druidic Rituals (d20)",
+  "heading_id": "h-tier-3-druidic-rituals-d20",
+  "route": "gpt",
+  "spec_sha256": "5324fae66652ecf027b80c137a337f9d1bedf94679b295adfc607644b0f4ad7c",
+  "prompt_sha256": "c1e25acc3da89fae82ce40055d34886892773c66828ce82f5f9d8de3b986d823",
+  "status": "received",
+  "received_at": "2026-10-13T13:15:40+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "At 2.6 inches, the figure-tree fusion reads giant and Treant-like. Checker reports 4% tinted pixels. No regeneration under one-attempt limit.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-TRA-TIER-3-DRUIDIC-RITUALS-D20.png",
+   "sha256": "6d0561f63c1371e63f7da8cd51c04bccf9320b671fc1b3828685730c532e7d0c",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-TRA-TIER-3-DRUIDIC-RITUALS-D20.png",
+   "sha256": "0835bd3e5483ca8ef972b37e38c7d1e84808b784a6d1ef5f395a0f7d73b6d755",
+   "px": [
+    1492,
+    1000
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.973
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
