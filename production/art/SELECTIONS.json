@@ -6784,5 +6784,38 @@
    "max_print_w_in_300ppi": 5.077
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE": {
+  "family": "scenario",
+  "title": "Scenario 4: The Spider's Silk Route",
+  "heading_id": "h-scenario-4-the-spiders-silk-route",
+  "route": "gpt",
+  "spec_sha256": "f2ebe2c49d13ea3f775e94ebfaa699d26c90841cef8cfbe75e343aac9a57c80d",
+  "prompt_sha256": "bb32ef4b445eb67dd0e9a01c4c3105ee174c84e98af0608bc4932791c474c6b9",
+  "status": "received",
+  "received_at": "2026-10-13T09:09:33+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Apparent large spider-like form at lower right may violate small-and-partial-only restriction; scouts are prominent and dark edge hatching weakens the required white vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE.png",
+   "sha256": "5bc57620b0bf46295a8736df612149676e46a613463616add0d065e49818ac5e",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-4-THE-SPIDER-S-SILK-ROUTE.png",
+   "sha256": "1fb5cdf9e0081f98c7d626ad9868be1ac047015524b4b711d0eff38a1cc44455",
+   "px": [
+    1536,
+    1024
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.12
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
