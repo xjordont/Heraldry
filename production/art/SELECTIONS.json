@@ -8721,5 +8721,38 @@
    "max_print_w_in_300ppi": 4.13
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-PERFORMER": {
+  "family": "background",
+  "title": "Performer",
+  "heading_id": "h-performer",
+  "route": "gpt",
+  "spec_sha256": "be08bb129aec894b8a7ba06e596e7bc41c4db644261476d19d8935f46d4dd2a9",
+  "prompt_sha256": "921633b066fe0b8d491016d5ca0df4e03eaeb66b83f71bfffdeb38fe7639c5ee",
+  "status": "received",
+  "received_at": "2026-10-13T14:21:58+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (14% mid-tones) and narrow margin (2.3% outer-band ink); print-size props remain identifiable.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-PERFORMER.png",
+   "sha256": "6df8bf2bbb81b7b2754c0b820fa3db97b9ff36f9bd981b303a6f27514f055083",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-PERFORMER.png",
+   "sha256": "b4e55e82d4bc731cd68895fde7c7c03ce2cccf99347d230a4a394a9b8bec9742",
+   "px": [
+    1235,
+    1067
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.117
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
