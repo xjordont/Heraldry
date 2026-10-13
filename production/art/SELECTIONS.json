@@ -8568,17 +8568,17 @@
   "title": "Hermit",
   "heading_id": "h-hermit",
   "route": "gpt",
-  "spec_sha256": "738bbc701f77529ed17c9403ac2102d13ac4ac155c8e401e991444c89119a7d4",
-  "prompt_sha256": "c3cdd00053c1dbb8864001c4c0801132a952b0f2a2a0088ca5f07b72acd54594",
-  "status": "rejected",
-  "received_at": "2026-10-13T13:57:38+00:00",
+  "spec_sha256": "7017e4b4fc5163dc92b8a480d3175c4d791002b9157547047bdf4e2e84448514",
+  "prompt_sha256": "9441dc6a1a78aefabf53465db6baa9d29ae41714fd3af90b845c3320b011e9bc",
+  "status": "received",
+  "received_at": "2026-10-13T20:49:35+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker warns possible soft shading (14% mid-tones); print preview appears crosshatched and readable.",
+  "notes": "Correction: Every object rests on the flat stone or leans against a visible support; the dried herbs hang from a taut visible line and the robe drapes downward over its stump. Checker warnings reviewed: mid-tones are ink hatching; no crop or edge contact.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-HERMIT.png",
-   "sha256": "844b2dc600e531e4d416117a138015f823b7a392a970ea0c8a8e45bb950b8500",
+   "sha256": "9f57216f2147c67865ddeebfd1335e59f95e885dddba55079e502867081929e2",
    "px": [
     1254,
     1254
@@ -8586,18 +8586,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-HERMIT.png",
-   "sha256": "f944f88118906637a8bd81478b37abf949fb0c49433a2e872d19f867abea93a4",
+   "sha256": "635b5d4a97cc436a87ea3ea87eff1940537daee8379cbcb9bc16aa52bc3a521e",
    "px": [
-    1218,
-    1090
+    1212,
+    1190
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.06
+   "max_print_w_in_300ppi": 4.04
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-MERCHANT": {
   "family": "background",
