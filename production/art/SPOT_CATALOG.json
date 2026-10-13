@@ -1897,19 +1897,21 @@
      "Cracked leather work glove, worn thin",
      "Clod of earth and a few stray stalks",
      "Wooden plank table with knots and scratches",
-     "Small iron-bound wooden bucket edge at the rear"
+     "Small iron-bound wooden bucket edge at the rear",
+     "Sickle with its sharp edge on the inside of the curve"
     ],
     "atmosphere": "Humble labour, quiet and hard.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No blood on the bandages",
-     "Not the Merchant's sickle with coin"
+     "Not the Merchant's sickle with coin",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Farmer"
     ]
    },
-   "spec_sha256": "5e0bcd4b6a855441ac2c6dce98c449d7ca0b24c9831b3390a1078b79c5f957a5"
+   "spec_sha256": "ebc8bba202a61bab7475e8de5eedc9bdfde2a084185b9716cbb77204d318dc94"
   },
   {
    "id": "ART-BAC-NOMAD",
@@ -1933,23 +1935,25 @@
     "details": [
      "Curved scimitar in a plain worn scabbard, half-drawn",
      "Rolled felt or hide shelter bundle bound with cords",
-     "Cracked leather waterskin with a wooden stopper",
+     "Cracked leather waterskin slumped on its side, wooden stopper in the neck",
      "Wind-worn cloak or scarf folded on top",
      "Small bronze cooking pot with a handle",
      "Dry grass tuft and a cracked flat stone for ground",
-     "Short walking stick lashed beside"
+     "Short walking stick lying on the ground beside it",
+     "Sheathed scimitar with its scabbard tip on the ground and the upper part leaning on the bedroll"
     ],
     "atmosphere": "Windswept self-reliance.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No camels or horses",
-     "Do not make the sword ornate"
+     "Do not make the sword ornate",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Nomad"
     ]
    },
-   "spec_sha256": "aa36217fc81e80c4cb57c7b7ac39afd07067a610338a2312345886b1f5ae630f"
+   "spec_sha256": "d6e9f8fe00ea8a7645b90709a3cf63a4b848fa1e6ac6fe0ca009bcb2ee0d7371"
   },
   {
    "id": "ART-BAC-SAILOR",
@@ -1977,19 +1981,21 @@
      "Wooden belaying pin rail with a second rope hanging",
      "Puddle drips and wet plank grain",
      "Barnacle or salt crust on the iron",
-     "Knotted rope with a marlinspike nearby"
+     "Knotted rope with a marlinspike nearby",
+     "Round buckler leaning at the foot of the rail post with its lower rim on the deck"
     ],
     "atmosphere": "Salt-stained seasoned tension.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No ships, no sea monster",
-     "Not a cutlass pirate cliche"
+     "Not a cutlass pirate cliche",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Sailor"
     ]
    },
-   "spec_sha256": "43711281fccdc7738c06215aed8463a0d3aa5775f0d91b2aeb41dc6ef3ccb2af"
+   "spec_sha256": "637399bbda267ff588bef49e6bd428a30266f60d4443ce9f0841f7df274a8e74"
   },
   {
    "id": "ART-BAC-SOLDIER",
@@ -2009,10 +2015,10 @@
    ],
    "brief": {
     "identity": "A Soldier background: discipline in war; starting kit Spear.",
-    "composition": "Still life, a tall spear leaning against a battered kit chest, a folded surcoat and a dented cap of iron hanging on the spear shaft.",
+    "composition": "Still life, a tall spear leaning against the corner of a battered kit chest, its butt on the floor, a folded surcoat over the chest and a dented iron cap sitting on the lid.",
     "details": [
      "Spear with a leaf-shaped head and a worn ash shaft",
-     "Dented open kettle helm hung on the shaft",
+     "Dented open kettle helm resting upright on the kit-chest lid beside the whetstone",
      "Folded plain surcoat with no heraldry",
      "Iron-bound kit chest with a worn lock",
      "Hobnailed boots set neatly beside",
@@ -2023,13 +2029,15 @@
     "avoid": [
      "No figure or hands, and no lettering",
      "No banners with symbols",
-     "Not the Fighter class's kit"
+     "Not the Fighter class's kit",
+     "Nothing hangs from the spear shaft except the leaning contact with the chest",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Soldier"
     ]
    },
-   "spec_sha256": "9df49544071c40260868b02c466248fc360ad56600d96ef77a0d1fde30822f0d"
+   "spec_sha256": "1db4f2f8e30e9eccfd09588ddb44c362b864e8c53bb764737a963d2479aea5b2"
   },
   {
    "id": "ART-BAC-SMUGGLER",
@@ -2051,7 +2059,7 @@
     "identity": "A Smuggler background: false bottoms and whispered routes; starting kit Dagger and Lockpicks.",
     "composition": "Still life of a barrel with a false lid half-lifted, a dagger and a roll of lockpicks laid across it, seen at a low angle.",
     "details": [
-     "Small barrel with a hinged hidden compartment lid open and a rolled pouch inside",
+     "Small barrel with a false lid on a visible iron hinge, propped open on a short stay, a rolled pouch inside",
      "Slender dagger with a plain grip",
      "Roll of lockpicks unrolled showing thin hooks and tension wrenches",
      "Lantern shuttered to a slit",
@@ -2063,13 +2071,14 @@
     "avoid": [
      "No figure or hands, and no lettering",
      "No coins spilled, keep it understated",
-     "Do not copy the Rogue's kit tableau"
+     "Do not copy the Rogue's kit tableau",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Smuggler"
     ]
    },
-   "spec_sha256": "9da741bea612eb6cb4ca8411c2f1334542d01ae07e26331f3c82d550ec03b912"
+   "spec_sha256": "1f44d76121b53f2a504999f741ab0cad98a07c0d595c01b4e9af0573b9f9de05"
   },
   {
    "id": "ART-BAC-COURIER",
@@ -2096,20 +2105,22 @@
      "Waxed message tube with a sealed cap",
      "Mud-spattered light boots, laced high",
      "Worn cloak folded and pinned",
-     "Quiver of a few arrows",
-     "Horseshoe nail or milestone fragment"
+     "Quiver of a few arrows standing upright on the ground beside the satchel",
+     "Horseshoe nail or milestone fragment",
+     "Shortbow with its lower tip on the ground and the upper limb leaning against the satchel"
     ],
     "atmosphere": "Hurried urgency held still.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No horse",
-     "Not identical in arrangement to the Scout still life: favour the satchel and boots"
+     "Not identical in arrangement to the Scout still life: favour the satchel and boots",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Courier"
     ]
    },
-   "spec_sha256": "4b3dca10329d28b7d6ac426c0df9b41f19b1dbc011a33c7ea642ead01a30cd73"
+   "spec_sha256": "acadcc1e4b8a4db689a9127001457905f8c1837da4faf40fe4c5d1f2aaa7f48c"
   },
   {
    "id": "ART-BAC-SCOUT",
@@ -2134,8 +2145,8 @@
      "Shortbow with a leather grip, resting on leaf litter",
      "Snapped branch tip and bent grass blades",
      "Plaster-pressed animal paw print on a flat stone",
-     "Camouflage hood and cloak folded",
-     "Small hand-compass or horn spyglass",
+     "Camouflage hood and cloak folded flat in a low pile",
+     "Small lodestone-needle compass in a round wooden box",
      "Bone-handled sheath knife",
      "Tiny dried herb bundle on a thong"
     ],
@@ -2143,13 +2154,15 @@
     "avoid": [
      "No figure or hands, and no lettering",
      "Do not repeat the Courier's satchel and scroll tube",
-     "No animal in the picture"
+     "No animal in the picture",
+     "No telescope or spyglass",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Scout"
     ]
    },
-   "spec_sha256": "51f5009e2b937c539149629b514bc01fa122181582d6e566fd536ea231cbb608"
+   "spec_sha256": "c981240625aa67bba11cc363495cd732926f092b42fa5bf349aca87051e2ff6e"
   },
   {
    "id": "ART-BAC-PERFORMER",
@@ -2171,24 +2184,27 @@
     "identity": "A Performer background: crowd-turning wit; starting kit 3 Throwing Knives.",
     "composition": "Still life on a small trestle stage edge, three throwing knives fanned beside a battered mask and a pair of jingling bells.",
     "details": [
-     "Three slim throwing knives fanned with points outward",
-     "Half-face theatrical mask, cracked and mended",
+     "Three plain medieval throwing knives with straight tapered double-edged blades and short leather-wrapped grips, fanned on the boards",
+     "Half-face theatrical mask covering only the eyes and nose, cracked and mended, with tie strings",
      "Bells on a strap",
      "Folded motley cloth patchwork",
-     "Lute with a broken string",
+     "Lute with a broken string, lying with its body and neck resting on the stage boards",
      "A small round painted target board lying flat, knife-marked"
     ],
     "atmosphere": "Faded festivity, glamour gone threadbare.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No clown caricature",
-     "No printed expression text or letters on the mask"
+     "No printed expression text or letters on the mask",
+     "No ring-pommel or leaf-bladed knives (no kunai or shuriken)",
+     "No full-face mask",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Performer"
     ]
    },
-   "spec_sha256": "be08bb129aec894b8a7ba06e596e7bc41c4db644261476d19d8935f46d4dd2a9"
+   "spec_sha256": "69964343c96dfbec853339d203b776ffe3c46b34895672f079adeef345ec7870"
   },
   {
    "id": "ART-BAC-ARTISAN",
@@ -2210,8 +2226,8 @@
     "identity": "An Artisan background: patient craft; starting kit Hammer, Masterwork item.",
     "composition": "Still life of a workbench corner, a hammer resting on an anvil face beside a half-finished shield boss and a tray of fine files.",
     "details": [
-     "Smith's hammer with a worn haft",
-     "Small anvil with a bright polished face",
+     "Smith's hammer lying flat on the anvil face, head and haft both resting on it",
+     "Small horned anvil standing on a heavy wooden block, its face bright and polished",
      "Half-finished iron shield boss on the bench",
      "Tray of files, punches and chisels",
      "Leather apron folded on the bench",
@@ -2222,13 +2238,15 @@
     "avoid": [
      "No figure or hands, and no lettering",
      "No forge fire glow",
-     "Do not make it a full armoury"
+     "Do not make it a full armoury",
+     "The hammer never sticks up in the air: it lies flat",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Artisan"
     ]
    },
-   "spec_sha256": "b3690a87f9275f796833d25b5c60654dd7be6ef92b1f587522669cdef60fbaea"
+   "spec_sha256": "7d65187d50f15fa9e0dee2130eafdf8849a5bf5a936675a2071081e9ad1e267c"
   },
   {
    "id": "ART-BAC-SCHOLAR",
@@ -2256,19 +2274,21 @@
      "Candle stub in a brass holder",
      "Quill and inkpot",
      "Rolled map held by a weight",
-     "Spectacles folded on a book"
+     "Spectacles folded on a book",
+     "Quarterstaff leaning against the desk's side with its foot on the floor"
     ],
     "atmosphere": "Quiet obsessive study among ruins.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No legible writing: marks must be scribbled lines",
-     "No spellcasting effects"
+     "No spellcasting effects",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Scholar"
     ]
    },
-   "spec_sha256": "8f72ffeab03bf994b682d860ca71c9aa0802631842a01e262661c1f9f75bd860"
+   "spec_sha256": "91d4672666f08d52ca0d81ea6f61c71389089231ccb34a0dcded1433b0342f92"
   },
   {
    "id": "ART-BAC-APPRENTICE",
@@ -2290,7 +2310,7 @@
     "identity": "An Apprentice background: scraps of craft from a harsh master; starting kit is only 1c (non-Martial classes gain Max NRG, Martial ones gain scrolls).",
     "composition": "Still life on a stone floor: a wooden stool with a master's oversized coat hung over it, a scorched practice wand, a small unlit candle in a clay dish and a scribbled scroll inside a chalk-drawn circle.",
     "details": [
-     "Oversized worn coat sleeve hanging beyond the stool",
+     "Oversized worn coat hung over the stool's back and seat, its sleeves hanging straight down to the floor in heavy folds",
      "Practice wand or knotted twig, scorched at the tip",
      "Small candle in a clay dish, unlit",
      "Simple scroll with scribbled marks no letters",
@@ -2302,13 +2322,15 @@
     "avoid": [
      "No figure or hands, and no lettering",
      "No glow",
-     "Do not make it a full spell effect"
+     "Do not make it a full spell effect",
+     "No sleeve or cloth sticking out sideways: cloth hangs and pools by gravity",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Apprentice"
     ]
    },
-   "spec_sha256": "88103ffc35473b07e58c3ce2ea631a21ecfe459c41d2823b66098aeee794a5b0"
+   "spec_sha256": "011607774c655ecb8b1c47a33f16a0695278524f580c401a28ab7d59ee472aed"
   },
   {
    "id": "ART-BAC-ALCHEMIST",
@@ -2336,19 +2358,21 @@
      "Stone mortar and pestle with powder",
      "Small brass balance scale",
      "Leather satchel hanging open",
-     "Burn and acid pits scarring the bench"
+     "Burn and acid pits scarring the bench",
+     "Flasks and pots standing upright in their rack slots"
     ],
     "atmosphere": "Cautious chemical menace, copper and ash.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No bubbling glow or smoke",
-     "No poison skull symbols"
+     "No poison skull symbols",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Alchemist"
     ]
    },
-   "spec_sha256": "131f607a863039022d2dcf38f649eb6d4438705832b1857f80f8fc2b1e2c1dea"
+   "spec_sha256": "76d522cca5126877d29e7af52a6d23d640834002e1a6e9111eaf6cf02b227a68"
   },
   {
    "id": "ART-BAC-BELIEVER",
@@ -2376,19 +2400,21 @@
      "Small plain devotional shape (a bare sun-disc) scratched, no text",
      "Shallow stone shelf",
      "Candle drips",
-     "Folded cloth"
+     "Folded cloth",
+     "Candle wax pooling only inside the lantern base or on the shelf, never outside closed glass"
     ],
     "atmosphere": "Quiet steady hope.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No halo glow beyond the lamp flame",
-     "No specific real-world religious symbols"
+     "No specific real-world religious symbols",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Believer"
     ]
    },
-   "spec_sha256": "1635bd670ad90befb815f76e11bec5bb8a4029d76f3a50bdd96cab1543d8b75b"
+   "spec_sha256": "3b8b03fa8c13f0ba5e6b62da2da9f478a0198873abdea1816287f1d66eaf55bd"
   },
   {
    "id": "ART-BAC-HERMIT",
@@ -2415,19 +2441,21 @@
      "Cold ring of fire stones",
      "Rough threadbare robe over a stump",
      "Dried herbs strung on a line",
-     "Single stool, worn smooth"
+     "Single stool, worn smooth",
+     "The robe hangs from a rough sawn log stump"
     ],
     "atmosphere": "Utter solitude, bare and silent.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No companion animals",
-     "Do not add a hut interior full of clutter"
+     "Do not add a hut interior full of clutter",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Hermit"
     ]
    },
-   "spec_sha256": "738bbc701f77529ed17c9403ac2102d13ac4ac155c8e401e991444c89119a7d4"
+   "spec_sha256": "7017e4b4fc5163dc92b8a480d3175c4d791002b9157547047bdf4e2e84448514"
   },
   {
    "id": "ART-BAC-CULTIST",
@@ -2454,20 +2482,22 @@
      "Tattered hooded robe with a rope belt",
      "Empty shallow bowl with dark residue",
      "Candle stubs melted into the slab",
-     "Abstract scratched circle sigil, no letters",
+     "Abstract scratched ring with a simple spiral inside, no letters and no star or pentagram",
      "Chain with a broken pendant"
     ],
     "atmosphere": "Lingering unease and shame.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No gore or blood pools",
-     "No skull pileup, no readable rune text"
+     "No skull pileup, no readable rune text",
+     "No pentagram, no inverted crosses or other real occult symbols",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Cultist"
     ]
    },
-   "spec_sha256": "03129e1f1a311df0ab392217d390b57f26c18986209a1ee41ed64fb9d4698c17"
+   "spec_sha256": "d4a05a0c73c05b3c05331ccc65af1826e2b513a8e025bd90a3ebf0b6d3c052c5"
   },
   {
    "id": "ART-BAC-SHEPHERD",
@@ -2495,19 +2525,21 @@
      "Small iron sheep bell on a strap",
      "Pile of smooth river stones",
      "Wool tuft caught on the fence",
-     "A single wooden fence post"
+     "A single wooden fence post",
+     "The sheep bell hangs straight down by its strap from the top of the fence post"
     ],
     "atmosphere": "Patient pastoral calm with an edge of wariness.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No sheep",
-     "Not identical to the Hermit's staff"
+     "Not identical to the Hermit's staff",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Shepherd"
     ]
    },
-   "spec_sha256": "5f769829cd9ea2cf1c60ccd331e34b4d2929f604813b4bb9bdd2ceed24cf82d1"
+   "spec_sha256": "16300574571fe3c333fcedcc1279db9bfe8bfe6faa127ad39f0833fdce38f42a"
   },
   {
    "id": "ART-BAC-MERCHANT",
@@ -2530,24 +2562,27 @@
     "composition": "Still life on a counting table, a sickle laid by an open coin ledger, a balance scale holding coins and a locked strongbox beside it.",
     "details": [
      "Small sickle with a polished blade",
-     "Brass balance scale with coin in one pan",
+     "Brass balance scale whose beam tips down toward the pan holding the coins, the empty pan riding high on the other side",
      "Small stack of coins, plain discs",
      "Iron-bound strongbox with a heavy lock",
      "Open ledger with abstract ruled lines, no letters",
-     "Wax seal and a pen",
+     "Wax seal on a cord and a goose-feather quill",
      "Drawn purse strings"
     ],
     "atmosphere": "Calculated mercantile caution.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No ledger text",
-     "Not the Farmer's sickle arrangement"
+     "Not the Farmer's sickle arrangement",
+     "The scale beam must never tip toward the empty pan",
+     "No fountain pen or metal-nib pen",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Merchant"
     ]
    },
-   "spec_sha256": "c7802fba0fd0de404cc7cdfacfcfb72543a486749a908e48ac965eb444f266bc"
+   "spec_sha256": "4a264a85e7100b4cf433581b53751f91e9fe6ba20985ff347bff10d669917863"
   },
   {
    "id": "ART-BAC-NOBLE",
@@ -2567,12 +2602,12 @@
    ],
    "brief": {
     "identity": "A Noble background: banners, debts and inherited expectation; starting kit Rapier.",
-    "composition": "Still life of a rapier laid across a faded velvet cushion on a carved table, a dusty signet ring and a folded threadbare banner beside it.",
+    "composition": "Still life of a rapier lying fully on a carved table beside a faded velvet cushion, a dusty signet ring and a folded threadbare banner, a cracked goblet at the near edge.",
     "details": [
-     "Slender rapier with a swept hilt",
-     "Faded velvet cushion with moth holes",
+     "Slender rapier with a swept hilt, lying flat along the tabletop with its whole blade and tip on the table, well inside the table's edge",
+     "Faded velvet cushion with a few small ragged moth holes",
      "Signet ring with a blank face",
-     "Folded tattered family banner with a plain stripe, no readable device",
+     "Folded tattered banner with plain bands, laid flat on the table with its rod beside it",
      "Cracked wine goblet",
      "A few dust motes as flicked ink flecks"
     ],
@@ -2580,13 +2615,16 @@
     "avoid": [
      "No figure or hands, and no lettering",
      "No crown",
-     "No readable heraldry or text"
+     "No readable heraldry or text",
+     "No star shapes anywhere: moth holes are small ragged round tears",
+     "No part of the rapier overhangs the table edge",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Noble"
     ]
    },
-   "spec_sha256": "4dfc138efd12eea3c76760122e9e4c637620be26f556b81df866ce160a463195"
+   "spec_sha256": "e07b70492cd7f2165bedbeedf104a8f85c9971050eb8c49fce7248937cd1c146"
   },
   {
    "id": "ART-BAC-PAUPER",
@@ -2614,19 +2652,21 @@
      "Single worn shoe",
      "Rusty tin cup",
      "A few cobblestones under the bowl",
-     "Rope-belted sack"
+     "Rope-belted sack",
+     "Club leaning against the sack with its lower end on the ground"
     ],
     "atmosphere": "Bare want and stubborn survival.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No pity beggar poses",
-     "Do not add coins"
+     "Do not add coins",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Pauper"
     ]
    },
-   "spec_sha256": "abe9940629b6901b10c64488ceabdca35b0be4ba94b808b0296fad0dffee49dc"
+   "spec_sha256": "72dd4f7202153f9aa1dab4bcb8a36da8a725ddc741986802ff01b313ba959ffb"
   },
   {
    "id": "ART-BAC-VAGABOND",
@@ -2654,19 +2694,20 @@
      "Patched cloak thrown over the stone",
      "Boot with a flapping sole",
      "Wild hare snare loop of cord",
-     "The milestone worn blank"
+     "The milestone a low squared road marker with a rounded top, worn blank, not shaped like a gravestone"
     ],
     "atmosphere": "Rootless drift and ruined luck.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No signpost lettering",
-     "Do not duplicate Hermit/Pauper compositions"
+     "Do not duplicate Hermit/Pauper compositions",
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
     ],
     "sources": [
      "6.10 Backgrounds: Vagabond"
     ]
    },
-   "spec_sha256": "dda6cc28873595405a80e37ac019d78a38bd31c9e7ec98869c3e4111bbf20d1d"
+   "spec_sha256": "8812b1cec8f9a606d51f6e962e413d90e17317a837315628dd793cba66c82307"
   },
   {
    "id": "ART-CLA-FIGHTER",

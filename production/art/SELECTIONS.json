@@ -246,7 +246,7 @@
   "route": "gpt",
   "spec_sha256": "9da741bea612eb6cb4ca8411c2f1334542d01ae07e26331f3c82d550ec03b912",
   "prompt_sha256": "31be2e519c44cd1325b1198cca79cb72b0da185542ce9aa97f84d8728faf22c6",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-12T04:54:48+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -271,7 +271,9 @@
    "max_print_w_in_300ppi": 4.177
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-12T12:11:24+00:00"
+  "approved_at": "2026-10-12T12:11:24+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-TRA-TIER-1-ARCANE-SPELLS-D20": {
   "family": "tradition",
@@ -8340,7 +8342,7 @@
   "route": "gpt",
   "spec_sha256": "131f607a863039022d2dcf38f649eb6d4438705832b1857f80f8fc2b1e2c1dea",
   "prompt_sha256": "d8d16b4a817ccc669fd6733f29efb7db6ff00150c0105df20ecd69afeedbd0b0",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T13:28:35+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8365,7 +8367,9 @@
    "max_print_w_in_300ppi": 4.137
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-APPRENTICE": {
   "family": "background",
@@ -8374,7 +8378,7 @@
   "route": "gpt",
   "spec_sha256": "88103ffc35473b07e58c3ce2ea631a21ecfe459c41d2823b66098aeee794a5b0",
   "prompt_sha256": "d5dfcfe6ad3f5e902ebb805fbd5c1866e3c5c320f05a1f410c4cb8649e374f52",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T13:31:47+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8399,7 +8403,9 @@
    "max_print_w_in_300ppi": 4.13
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-ARTISAN": {
   "family": "background",
@@ -8408,7 +8414,7 @@
   "route": "gpt",
   "spec_sha256": "b3690a87f9275f796833d25b5c60654dd7be6ef92b1f587522669cdef60fbaea",
   "prompt_sha256": "34766086524bf1047e363aeef25a1adf5f58c3d5e25b9fb1593629dae8d8f504",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T13:39:41+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8433,7 +8439,9 @@
    "max_print_w_in_300ppi": 4.16
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-BELIEVER": {
   "family": "background",
@@ -8442,7 +8450,7 @@
   "route": "gpt",
   "spec_sha256": "1635bd670ad90befb815f76e11bec5bb8a4029d76f3a50bdd96cab1543d8b75b",
   "prompt_sha256": "8d67dfcf5544f3996811cc2851c976668e6af6825a86ed24e56a01539adf0803",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T13:43:22+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8467,7 +8475,9 @@
    "max_print_w_in_300ppi": 4.097
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-COURIER": {
   "family": "background",
@@ -8476,7 +8486,7 @@
   "route": "gpt",
   "spec_sha256": "4b3dca10329d28b7d6ac426c0df9b41f19b1dbc011a33c7ea642ead01a30cd73",
   "prompt_sha256": "1a56e2deba4180aa58f97db56d823267dacad2b3aa431e85587150a17b58d19b",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T13:46:55+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8501,7 +8511,9 @@
    "max_print_w_in_300ppi": 4.143
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-CULTIST": {
   "family": "background",
@@ -8510,7 +8522,7 @@
   "route": "gpt",
   "spec_sha256": "03129e1f1a311df0ab392217d390b57f26c18986209a1ee41ed64fb9d4698c17",
   "prompt_sha256": "3cbd00ee3143db1542ccb381c3d5a8800dc594f7f0ec5e2805dc3c325b56c889",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T13:50:24+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8535,7 +8547,9 @@
    "max_print_w_in_300ppi": 4.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-FARMER": {
   "family": "background",
@@ -8544,7 +8558,7 @@
   "route": "gpt",
   "spec_sha256": "5e0bcd4b6a855441ac2c6dce98c449d7ca0b24c9831b3390a1078b79c5f957a5",
   "prompt_sha256": "75ffe7d2294d0c4179f723a51441ea9c9f24abe0e638bb0a34c9e2e6bc0bfab1",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T13:53:45+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8569,7 +8583,9 @@
    "max_print_w_in_300ppi": 4.117
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-HERMIT": {
   "family": "background",
@@ -8578,7 +8594,7 @@
   "route": "gpt",
   "spec_sha256": "738bbc701f77529ed17c9403ac2102d13ac4ac155c8e401e991444c89119a7d4",
   "prompt_sha256": "c3cdd00053c1dbb8864001c4c0801132a952b0f2a2a0088ca5f07b72acd54594",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T13:57:38+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8603,7 +8619,9 @@
    "max_print_w_in_300ppi": 4.06
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-MERCHANT": {
   "family": "background",
@@ -8612,7 +8630,7 @@
   "route": "gpt",
   "spec_sha256": "c7802fba0fd0de404cc7cdfacfcfb72543a486749a908e48ac965eb444f266bc",
   "prompt_sha256": "19fc49d95e5c84615c3b0db5c774b9cf6ee6c3d540bf543a79d0c0283e6aba9c",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T14:02:15+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8637,7 +8655,9 @@
    "max_print_w_in_300ppi": 4.173
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-NOBLE": {
   "family": "background",
@@ -8646,7 +8666,7 @@
   "route": "gpt",
   "spec_sha256": "4dfc138efd12eea3c76760122e9e4c637620be26f556b81df866ce160a463195",
   "prompt_sha256": "c42838eab52d4af82b13134e1f76e6c655c5bf8f598f4cb3f07d731fe14c6717",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T14:08:14+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8671,7 +8691,9 @@
    "max_print_w_in_300ppi": 4.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-NOMAD": {
   "family": "background",
@@ -8680,7 +8702,7 @@
   "route": "gpt",
   "spec_sha256": "aa36217fc81e80c4cb57c7b7ac39afd07067a610338a2312345886b1f5ae630f",
   "prompt_sha256": "9d5efe51223b9250b7d9d145ec4636d1a257b93934fb639c63b075d31e551373",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T14:13:02+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8705,7 +8727,9 @@
    "max_print_w_in_300ppi": 4.137
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-PAUPER": {
   "family": "background",
@@ -8714,7 +8738,7 @@
   "route": "gpt",
   "spec_sha256": "abe9940629b6901b10c64488ceabdca35b0be4ba94b808b0296fad0dffee49dc",
   "prompt_sha256": "928fff2c91a22c1f0e8a6041ef9c653f0d46859652659b2932bb36eb483033d0",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T14:17:30+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8739,7 +8763,9 @@
    "max_print_w_in_300ppi": 4.13
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-PERFORMER": {
   "family": "background",
@@ -8748,7 +8774,7 @@
   "route": "gpt",
   "spec_sha256": "be08bb129aec894b8a7ba06e596e7bc41c4db644261476d19d8935f46d4dd2a9",
   "prompt_sha256": "921633b066fe0b8d491016d5ca0df4e03eaeb66b83f71bfffdeb38fe7639c5ee",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T14:21:58+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8773,7 +8799,9 @@
    "max_print_w_in_300ppi": 4.117
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-SAILOR": {
   "family": "background",
@@ -8782,7 +8810,7 @@
   "route": "gpt",
   "spec_sha256": "43711281fccdc7738c06215aed8463a0d3aa5775f0d91b2aeb41dc6ef3ccb2af",
   "prompt_sha256": "6300cb56f4369b20b3138070d8d1514f8a2e57683556a02e785bc2f1cf45c5fa",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T14:26:32+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8807,7 +8835,9 @@
    "max_print_w_in_300ppi": 4.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-SCHOLAR": {
   "family": "background",
@@ -8816,7 +8846,7 @@
   "route": "gpt",
   "spec_sha256": "8f72ffeab03bf994b682d860ca71c9aa0802631842a01e262661c1f9f75bd860",
   "prompt_sha256": "0add97881b507cda5a55a1eaa6b34b9773547be4c74c9891c690cf1066413505",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T14:32:16+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8841,7 +8871,9 @@
    "max_print_w_in_300ppi": 4.077
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-SCOUT": {
   "family": "background",
@@ -8850,7 +8882,7 @@
   "route": "gpt",
   "spec_sha256": "51f5009e2b937c539149629b514bc01fa122181582d6e566fd536ea231cbb608",
   "prompt_sha256": "89128bd512a258ed447987ff9db238f8fcf31d8000ffce37846a437fb818c213",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T14:38:26+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8875,7 +8907,9 @@
    "max_print_w_in_300ppi": 4.097
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-SHEPHERD": {
   "family": "background",
@@ -8884,7 +8918,7 @@
   "route": "gpt",
   "spec_sha256": "5f769829cd9ea2cf1c60ccd331e34b4d2929f604813b4bb9bdd2ceed24cf82d1",
   "prompt_sha256": "2ead4463dd752015c6e2c759ff6ee3355656be47d3fe3b99c938e7bfb79459a6",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T14:43:44+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8909,7 +8943,9 @@
    "max_print_w_in_300ppi": 4.12
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-SOLDIER": {
   "family": "background",
@@ -8918,7 +8954,7 @@
   "route": "gpt",
   "spec_sha256": "9df49544071c40260868b02c466248fc360ad56600d96ef77a0d1fde30822f0d",
   "prompt_sha256": "125b07e8eb9a5a6de8ba43c9e9d921cd0b0691a568d0488970a5969598f3ae49",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T14:49:18+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8943,7 +8979,9 @@
    "max_print_w_in_300ppi": 4.07
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-BAC-VAGABOND": {
   "family": "background",
@@ -8952,7 +8990,7 @@
   "route": "gpt",
   "spec_sha256": "dda6cc28873595405a80e37ac019d78a38bd31c9e7ec98869c3e4111bbf20d1d",
   "prompt_sha256": "314558c12e4f20341a0b1dd75ce74e06d632f44fed91e552e414d47dbc4856a1",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T14:55:48+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8977,7 +9015,9 @@
    "max_print_w_in_300ppi": 4.177
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00"
+  "approved_at": "2026-10-13T17:19:59+00:00",
+  "rejected_at": "2026-10-13T19:13:39+00:00",
+  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
  },
  "ART-ITE-7-6-TREASURE-TABLES": {
   "family": "item",
