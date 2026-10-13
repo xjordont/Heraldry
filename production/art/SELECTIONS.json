@@ -8898,17 +8898,17 @@
   "title": "Soldier",
   "heading_id": "h-soldier",
   "route": "gpt",
-  "spec_sha256": "9df49544071c40260868b02c466248fc360ad56600d96ef77a0d1fde30822f0d",
-  "prompt_sha256": "125b07e8eb9a5a6de8ba43c9e9d921cd0b0691a568d0488970a5969598f3ae49",
-  "status": "rejected",
-  "received_at": "2026-10-13T14:49:18+00:00",
+  "spec_sha256": "1db4f2f8e30e9eccfd09588ddb44c362b864e8c53bb764737a963d2479aea5b2",
+  "prompt_sha256": "f8027686fcca7bd515bbd7885720ffcba7f20e4b1f6c4426ab4548da15ca63a9",
+  "status": "received",
+  "received_at": "2026-10-13T21:20:45+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker warns possible soft shading (10% mid-tones) and narrow margin (2.6% outer-band ink); all major kit remains legible.",
+  "notes": "Correction: Rest the spear butt on the floor and lean its shaft against the kit chest; keep the helm, whetstone, folded surcoat, boots, and empty scabbard loop on visible supports with nothing attached to the spear. Checker warns of sparse edge marks and hatching; no object is cropped or edge-touching.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SOLDIER.png",
-   "sha256": "d69dafa8f45781f1adfe54cd17dfab62100f2e5d22669881b7a76f8ebda54dad",
+   "sha256": "9c4b368dc851f864b6d97d0b3fe7440ad9b0c3dbebaaae933746c1117682a896",
    "px": [
     1254,
     1254
@@ -8916,18 +8916,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SOLDIER.png",
-   "sha256": "c3081e4896ba5c30eeaf31e9a1529ba25b9508e735320a973ce0b33ed8b4aeca",
+   "sha256": "8fde4f99bcbd7edaa3f3a0c7077e57f8071fb2627a09b9e0bddaef8bce3a015c",
    "px": [
-    1221,
-    1218
+    1248,
+    1230
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.07
+   "max_print_w_in_300ppi": 4.16
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-VAGABOND": {
   "family": "background",
