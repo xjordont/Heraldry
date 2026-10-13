@@ -8601,17 +8601,17 @@
   "title": "Merchant",
   "heading_id": "h-merchant",
   "route": "gpt",
-  "spec_sha256": "c7802fba0fd0de404cc7cdfacfcfb72543a486749a908e48ac965eb444f266bc",
-  "prompt_sha256": "19fc49d95e5c84615c3b0db5c774b9cf6ee6c3d540bf543a79d0c0283e6aba9c",
-  "status": "rejected",
-  "received_at": "2026-10-13T14:02:15+00:00",
+  "spec_sha256": "4a264a85e7100b4cf433581b53751f91e9fe6ba20985ff347bff10d669917863",
+  "prompt_sha256": "d37cf548bb45e5a29f495b3aabbfc603cc451dbaacb3dc4a075b247f83388f6d",
+  "status": "received",
+  "received_at": "2026-10-13T20:52:37+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker FAIL: ink touches edge (0.44% outer band) with 6.0% outer-band ink; also warns possible soft shading (13% mid-tones). Save best single attempt.",
+  "notes": "Correction: Balance the scale beam down toward the coin-weighted pan and keep the empty pan raised; rest the sickle, strongbox, ledger, quill, and purse fully on the counting table. Checker flags: tabletop ink reaches the lower image edge; mid-tones are hatching.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-MERCHANT.png",
-   "sha256": "53a53a0ca342a880bb4a00eaaa2bac109006026a52877d9f11afda454887f585",
+   "sha256": "66ddf8bad121be051a5325fb22aabffa1420b535956a3948d36413108ddb37c1",
    "px": [
     1254,
     1254
@@ -8619,18 +8619,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-MERCHANT.png",
-   "sha256": "ea24ec0773c537c8f1ff8523c03313e1b1c8f5e34445f7aa061d62c174736a13",
+   "sha256": "f5389cb82201135c99b933eb7d9e6bc6d402865c8eba2fe3273747d5f6cbd1bb",
    "px": [
     1252,
-    1111
+    1175
    ],
    "flags": [],
    "max_print_w_in_300ppi": 4.173
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-NOBLE": {
   "family": "background",
