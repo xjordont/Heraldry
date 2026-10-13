@@ -9249,5 +9249,38 @@
    "max_print_w_in_300ppi": 5.083
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CH10-002": {
+  "family": "chapter",
+  "title": "ART-CH10-001",
+  "heading_id": null,
+  "route": "gpt",
+  "spec_sha256": "81a3f4beeb28f5ae55dada165f5c1908e7eb88c1f13def4cb0ae0965132b39bc",
+  "prompt_sha256": "d3d1d483d0a4d0ae959bbc9af717d9832dffc72a768b9969c58f49bd1d9ce9d1",
+  "status": "received",
+  "received_at": "2026-10-13T15:53:16+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Print-size review: central mountain ridge reads as a panorama contrary to the brief, and climate vignettes are more detailed than requested. Other major composition elements are present.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CH10-002.png",
+   "sha256": "7e03e173a38291a4aad2bb2bbabcd10a7bdd74b32456bbbb8264f23632527f8a",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CH10-002.png",
+   "sha256": "ade11a9a1700fa50d600742a891503c05e6da71073c74dd85e556608d50521ce",
+   "px": [
+    1512,
+    986
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.04
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
