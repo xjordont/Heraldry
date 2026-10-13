@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "note": "Owner approval 2026-10-13: \"Approved. Make sure they are big enough to see.\" Choices made over rounds 3 to 7 (production/STATE.md). tools/prepare_marks.py sets each charge in the shared shield of shield_template and traces the marks to typst/templates/marks/.",
+  "candidates": "assets/art/marks/candidates",
+  "shield_template": "MARK-ARMS-02-r3-v1.png",
+  "arms": {
+    "1": "MARK-ARMS-01B-EDIT-r7-v2.png",
+    "2": "MARK-ARMS-02-r3-v1.png",
+    "3": "MARK-ARMS-03-r3-v2.png",
+    "4": "MARK-ARMS-04-r4-v2-solid.png",
+    "5": "MARK-ARMS-05-r4-v2.png",
+    "6": "MARK-ARMS-06-r3-v2.png",
+    "7": "MARK-ARMS-07-r3-v1.png",
+    "8": "MARK-ARMS-08A-r4-v1.png",
+    "9": "MARK-ARMS-09-r3-v2.png",
+    "10": "MARK-ARMS-10-r3-v1.png",
+    "11": "MARK-ARMS-11-r3-v1.png",
+    "12": "MARK-ARMS-12-r3-v1.png",
+    "13": "MARK-ARMS-13-r3-v2.png",
+    "14": "MARK-ARMS-14-r3-v1.png",
+    "15": "MARK-ARMS-15-r3-v1.png"
+  },
+  "logo": "MARK-LOGO-r3-v3.png"
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Draw the book's original heraldic marks as SVG: the fifteen chapter arms, the signature-mark
-candidates and the coin. Deterministic; writes cream and white variants (the paper colour shows
+"""Draw the coin mark as SVG. (The hand-drawn chapter arms and signature candidates below are retired;
+the approved arms and logo are made by tools/prepare_marks.py.) Deterministic; writes cream and white variants (the paper colour shows
 inside the marks) to typst/templates/marks/<substrate>/.
 
     python3 tools/make_heraldry_marks.py
@@ -198,16 +198,14 @@ def main():
     for sub, paper in PAPER.items():
         d = OUT / sub
         d.mkdir(parents=True, exist_ok=True)
-        for n in CHARGES:
-            (d / f"arms-{n:02d}.svg").write_text(arms_svg(n, paper))
-        for key, (_, _, body) in SIGNATURES.items():
-            (d / f"sig-{key}.svg").write_text(svg(100, 100, f'<g fill="#000">{body.replace(chr(34) + "P" + chr(34), chr(34) + paper + chr(34))}</g>'))
+        # The hand-drawn arms and signature candidates are retired (owner approval 2026-10-13): the
+        # chapter arms and the logo now come from tools/prepare_marks.py. Only the coin is drawn here.
         coin = COIN.format(beads=beads).replace('"P"', f'"{paper}"')
         (d / "coin.svg").write_text(svg(100, 100, f'<g fill="#000">{coin}</g>'))
         rev = coin.replace(f'"{paper}"', '"#TMP"').replace('"#000"', f'"{paper}"').replace('<circle cx="50" cy="50" r="48"/>', f'<circle cx="50" cy="50" r="48" fill="{paper}"/>')
         rev = rev.replace('"#TMP"', '"#000"')
         (d / "coin-reversed.svg").write_text(svg(100, 100, f'<g fill="{paper}">{rev}</g>'))
-    print(f"wrote {len(CHARGES)} arms, {len(SIGNATURES)} signatures and the coin to {OUT.relative_to(ROOT)}")
+    print(f"wrote the coin to {OUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

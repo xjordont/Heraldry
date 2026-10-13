@@ -87,12 +87,12 @@
 // 1 orb, 2 die, 3 hourglass, 4 spurred boot, 5 swords in saltire, 6 war banner, 7 great helm,
 // 8 flame in a brazier, 9 wyvern's head, 10 ruined arch, 11 castle, 12 key, 13 lantern,
 // 14 open book, 15 quill.
+// Chapter arms and the logo: the owner-approved marks (production/art/marks/APPROVED.json), traced by
+// tools/prepare_marks.py onto one shared shield. Owner 2026-10-13: "Make sure they are big enough to see."
 #let arms(n, w: 16pt) = box(baseline: 22%, image(mark("arms-" + (if n < 10 { "0" } else { "" }) + str(n)), width: w))
 
-// Signature mark: chosen from the candidates in marks/ (sig-*.svg). Specimens can switch it with
-// --input signature=<key>; the default stays until the owner chooses.
-#let signature-key = sys.inputs.at("signature", default: "broken-crown")
-#let signature(s: 14pt) = box(baseline: 15%, image(mark("sig-" + signature-key), width: s))
+// Signature mark: the book's logo, the broken shield bearing a castle (owner-approved 2026-10-13).
+#let signature(s: 14pt) = box(baseline: 15%, image(mark("logo"), width: s))
 #let crown(s: 12pt, fill: ink) = signature(s: s)
 
 // Corner flourish: a fine L with an inner hairline and a lozenge finial at each arm and the angle.
@@ -121,7 +121,7 @@
 // Ornamental break: brush — crown — brush. Ends a chapter's last section, opens title pages.
 #let flourish(len: 70pt) = box(baseline: 30%,
   grid(columns: (len, auto, len), column-gutter: 6pt, align: horizon,
-    brush(weight: 1.6pt, seed: 1), crown(s: 14pt), brush(weight: 1.6pt, seed: 2)))
+    brush(weight: 1.6pt, seed: 1), crown(s: 22pt), brush(weight: 1.6pt, seed: 2)))
 
 // Label with a fine rule running to the margin: the entry-anatomy separator.
 #let label-rule(body, size: 7.4pt) = block(above: 8pt, below: 3.5pt, sticky: true, width: 100%,
@@ -187,7 +187,7 @@
 // Running head: label at the outer end with the chapter's arms; a thick-and-thin rule.
 #let running-head(left-text, right-text, recto, tab: none) = {
   set text(font: sans, size: 7.4pt, weight: 600, tracking: 0.16em, fill: ink2)
-  let a = if tab != none { arms(tab, w: 8.5pt) } else { lozenge(size: 4.4pt) }
+  let a = if tab != none { box(baseline: 30%, arms(tab, w: 15pt)) } else { lozenge(size: 4.4pt) }
   block(width: 100%, below: 0pt, {
     if recto [#h(1fr)#upper(right-text)#h(6pt)#a] else [#a#h(6pt)#upper(left-text)#h(1fr)]
     v(2.5pt)
@@ -218,7 +218,7 @@
     place(top + right, dx: -7pt, dy: 7pt, corner("tr", s: 26pt))
     place(bottom + left, dx: 7pt, dy: -7pt, corner("bl", s: 26pt))
     place(bottom + right, dx: -7pt, dy: -7pt, corner("br", s: 26pt))
-    place(top + center, dy: -6pt, box(fill: paper, inset: (x: 6pt), crown(s: 18pt)))
+    place(top + center, dy: -15pt, box(fill: paper, inset: (x: 6pt), crown(s: 30pt)))
     if n != none {
       place(bottom + center, dy: 12pt, box(fill: paper, inset: (x: 5pt),
         shield(w: 19pt, inner: true, body: text(font: sans, size: 7.6pt, weight: 700, fill: paper, str(n)))))
@@ -511,11 +511,11 @@
 #let chapter-opener(word, title, n: 1, art: none, lead: none) = block(width: 100%, breakable: false, above: 0pt, below: 12pt)[
   #if art != none {
     v(-0.05in)
-    align(center, image(art, width: 94%))
+    align(center, image(art, width: 86%))
     v(-10pt)
   } else { v(1.2in) }
   #align(center)[
-    #arms(n, w: 26pt)
+    #arms(n, w: 52pt)
     #v(-2pt)
     #text(font: sans, weight: 700, size: 8.2pt, tracking: 0.42em, upper[Chapter #word])
     #v(-6pt)
@@ -559,7 +559,7 @@
 // ================================================================ contents and index
 #let toc-chapter(num, title, page, n: none) = block(above: 10pt, below: 3pt, breakable: false, width: 100%)[
   #grid(columns: (20pt, 1fr, auto), column-gutter: 7pt, align: horizon,
-    if n != none { arms(n, w: 15pt) } else { shield(w: 15pt, body: text(font: sans, weight: 700, size: 7.4pt, fill: paper, num)) },
+    if n != none { arms(n, w: 22pt) } else { shield(w: 15pt, body: text(font: sans, weight: 700, size: 7.4pt, fill: paper, num)) },
     [#text(font: sans, weight: 700, size: 8pt, fill: ink3, num)#h(5pt)#text(font: goth, weight: 600, size: 16pt, title)],
     text(font: sans, weight: 700, size: 10pt, str(page)))
   #v(-4pt)

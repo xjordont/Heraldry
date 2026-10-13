@@ -370,19 +370,15 @@
 #shell(601, furniture: false, folio-on: false)[
   #align(center)[#text(font: goth, weight: 600, size: 34pt)[The Armoury] #v(-10pt) #flourish(len: 70pt)]
   #v(8pt)
-  #text(font: sans, weight: 700, size: 7.4pt, tracking: 0.16em)[THE ARMS OF THE FIFTEEN PARTS · A THEMED CHARGE ON A HATCHED HERALDIC FIELD]
+  #text(font: sans, weight: 700, size: 7.4pt, tracking: 0.16em)[THE ARMS OF THE FIFTEEN PARTS · OWNER-APPROVED CHARGES ON ONE SHARED SHIELD]
   #v(4pt)
-  #grid(columns: (1fr,) * 5, row-gutter: 12pt, column-gutter: 8pt,
-    ..range(1, 16).map(i => align(center)[#arms(i, w: 40pt)#v(-1pt)#text(font: goth, weight: 600, size: 12pt, tab-keys.at(i - 1))\ #text(font: sans, size: 7pt, fill: ink3, ("Orb and cross", "Die", "Hourglass", "Spurred boot", "Swords in saltire", "War banner", "Great helm", "Flame in a brazier", "Wyvern's head", "Ruined arch", "Castle", "Key", "Lantern", "Open book", "Quill").at(i - 1))]))
-  #v(12pt)
-  #text(font: sans, weight: 700, size: 7.4pt, tracking: 0.16em)[SIGNATURE MARK · SIX CANDIDATES FOR THE OWNER TO CHOOSE]
-  #v(4pt)
-  #grid(columns: (1fr,) * 6, column-gutter: 6pt, align: center + bottom,
-    ..(("broken-crown", "The Broken Crown", "kings are buried"), ("crown-pierced", "The Pierced Crown", "an oath broken by the sword"),
-       ("tattered-banner", "The Rotting Banner", "banners rot in the rain"), ("broken-sword", "The Broken Oath", "oaths are broken"),
-       ("black-rose", "The Black Rose", "withered beauty"), ("raven", "The Carrion Raven", "the roads grow dark")).enumerate().map(((i, (k, t, q))) => [
-      #image(mark("sig-" + k), width: 42pt)
-      #text(font: goth, weight: 600, size: 10.5pt, [#str(i + 1). #t])\ #text(font: fell, size: 8.4pt, fill: ink2, q)]))
+  #grid(columns: (1fr,) * 5, row-gutter: 10pt, column-gutter: 8pt,
+    ..range(1, 16).map(i => align(center)[#arms(i, w: 52pt)#v(-1pt)#text(font: goth, weight: 600, size: 12pt, tab-keys.at(i - 1))\ #text(font: sans, size: 7pt, fill: ink3, ("Raven on a broken crown", "Die", "Hourglass", "Three arrows", "Axe and sword", "War banner", "Great helm", "Hand and eye", "Wyvern's head", "Ruined arch", "War pavilion", "Key", "Lantern", "Open book", "Quill and ink").at(i - 1))]))
+  #v(10pt)
+  #grid(columns: (auto, 1fr), column-gutter: 16pt, align: horizon,
+    signature(s: 92pt),
+    [#text(font: sans, weight: 700, size: 7.4pt, tracking: 0.16em)[THE LOGO · THE ARMS OF A FALLEN REALM]\
+     #text(font: fell, size: 11pt, fill: ink2)[A broken heater shield bearing a castle, cracked through its gate. It heads the chapter-opener frame, divides the flourish and signs the covers.]])
   #v(12pt)
   #grid(columns: (1fr, 1fr, 1fr), column-gutter: 10pt, align: center + bottom,
     [#coin(s: 34pt)\ #text(font: sans, size: 7.4pt)[Coin: a long-cross penny; replaces the source's "c"]],

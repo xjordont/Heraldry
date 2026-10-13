@@ -73,7 +73,7 @@ The minimum essential size is 8.6 pt for captions and 8.8 pt for dense reference
   - Flavour text is 84% black.
   - Labels are 58%; hairlines are 24%.
   - Tints are transparent black: 5% for banding, examples and panels; 9% for the die column.
-- **Ornament** is the armoury of section 12: chapter arms, the broken crown, brush rules, engraved shields, corner flourishes, banner tags and the coin. It is medieval heraldry rather than horror props. The skulls of v3 are retired (owner 2026-10-12: "a bit cheesy").
+- **Ornament** is the armoury of section 12: chapter arms, the castle logo, brush rules, engraved shields, corner flourishes, banner tags and the coin. It is medieval heraldry rather than horror props. The skulls of v3 are retired (owner 2026-10-12: "a bit cheesy").
 - **Ornament lives only at boundaries:**
   - running heads and folios;
   - titles;
@@ -163,7 +163,7 @@ As in section 5. The contents takes two pages, facing if possible.
 - **Order on the page:**
   1. Chapter art at full frame width from the top of the frame, within the opener frame. It is a 3:2 wide scene and takes about 45% of the page.
   2. "CHAPTER ONE" in tracked sans caps.
-  3. The chapter's arms, then the title in 50 pt blackletter, inside the ornate opener frame (corner flourishes, the broken crown at the head).
+  3. The chapter's arms, then the title in 50 pt blackletter, inside the ornate opener frame (corner flourishes, the castle logo at the head).
   4. A flourish.
   5. The source's lead, centred, 12.4 pt IM FELL roman at 82% width.
   6. The first numbered section, starting on the same page in two columns.
@@ -419,14 +419,14 @@ The owner directed on 2026-10-12: "take it further ... more decorations, symbols
 
 | Mark | Form | Where |
 |---|---|---|
-| **Chapter arms** | Each of the 15 parts bears its own coat of arms (owner 2026-10-12: "more ornate, detailed and representative of the chapter theme"). The shield is engraved with a double border. The field is hatched in the traditional engravers' system (horizontal for azure, vertical for gules, diagonal for vert and purpure, plain for argent). The themed charge is outlined in paper so it stays crisp. World: orb and cross. Mechanics: die. Round: hourglass. Actions: spurred boot. Combat: swords in saltire. Party: war banner. Equipment: great helm. Powers: flame in a brazier. Monsters: wyvern's head erased. Scenarios: ruined arch. Campaign: castle. Learn: key. Basic: lantern. Reference: open book. Index: quill. All are drawn as SVG by `tools/make_heraldry_marks.py`, with cream and white variants | Chapter opener (26 pt), running head (8.5 pt), contents rows (15 pt) |
-| **Signature mark** (choice pending) | Six candidates on specimen 15 (owner 2026-10-12: "run some alternative options, at least 5, before committing"): 1 the Broken Crown (kings are buried), 2 the Pierced Crown (an oath broken by the sword), 3 the Rotting Banner (banners rot in the rain), 4 the Broken Oath (a snapped sword), 5 the Black Rose (withered beauty), 6 the Carrion Raven (the roads grow dark). The broken crown is the working default until the owner chooses | Opener-frame head, flourishes, title page, back cover |
+| **Chapter arms** | Owner-approved 2026-10-13 ("Approved. Make sure they are big enough to see."), chosen over five Nano Banana 2.1 rounds (`production/art/marks/APPROVED.json`). Flat black ink on a plain field, with bold interior detail and no grey. Each charge is set by `tools/prepare_marks.py` inside one shared double-rimmed heater shield (the Mechanics candidate's rim) and traced to vector SVG in cream and white variants. World/Lore: raven on a crown broken in two. Mechanics: die. Round: hourglass. Actions: three arrows points down. Combat: bearded axe and notched sword. Party: tattered banner. Equipment: great helm. Powers: open hand with an eye. Monsters: horned wyvern's head. Scenarios: ruined arch. Campaign: war pavilion. Learn: key. Basic: lantern. Reference: open book. Index: quill and ink pot | Chapter opener (52 pt, about 0.72 in), contents rows (22 pt), running head (15 pt), armoury sheet (52 pt). Never below 15 pt |
+| **Logo / signature mark** | Owner-approved 2026-10-13: a broken heater shield bearing a three-towered castle, cracked through its portcullis gate, with fragments falling away; "the arms of a fallen realm". It replaces the six earlier signature candidates, which are retired | Opener-frame head (30 pt), flourish centre (22 pt), title page, back cover, armoury sheet (92 pt) |
 | **Brush rule** | A hand-inked stroke with tapered ends and a slightly uneven edge, drawn the same way every printing | Section titles, table edges, stat bars, entry names, folios |
 | **Engraved shield** | A heater shield with a paper inner line, carrying a number | Section numbers, folios, procedure steps, power numbers |
 | **Corner flourish** | A fine L with an inner hairline and lozenge finials | Scenario dossiers and outcome frames; chapter-opener frame |
 | **Banner tag** | A black strap with a pointed end | EXAMPLE, RULES NOTE, monster roles, scenario number, place kicker |
 | **Coin** | A medieval long-cross penny: a beaded rim, a voided long cross and a pellet in each angle. It sits on the baseline so it aligns with the figures beside it (owner 2026-10-12: it was "low like a subscript") | Stands for the source's "c" in tables and stat bars |
-| **Opener frame** | Thick-and-thin border, corner flourishes, the broken crown at the head, the folio shield at the foot | Chapter openers only |
+| **Opener frame** | Thick-and-thin border, corner flourishes, the castle logo at the head, the folio shield at the foot | Chapter openers only |
 | **Drop capital** | Blackletter initial reversed in an engraved black block | First paragraph after a chapter opener (vendored droplet 0.3.1, MIT) |
 
 **Restraint rules:**
