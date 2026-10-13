@@ -7048,5 +7048,38 @@
    "max_print_w_in_300ppi": 5.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH": {
+  "family": "scenario",
+  "title": "Scenario 6: Ritual of the Old Growth",
+  "heading_id": "h-scenario-6-ritual-of-the-old-growth",
+  "route": "gpt",
+  "spec_sha256": "ddc9337ae4c00810156d68d8df55070dd4c07fc5ce2a1d163516c9f7fde050c2",
+  "prompt_sha256": "58727e48d6b37d0d8bf05aa5b67f891cb9b06d16c7fb64ae77203b76f957479b",
+  "status": "received",
+  "received_at": "2026-10-13T09:45:23+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH.png",
+   "sha256": "f70b4b74bb60daca9abe62152bfeabb1090f1a08ed8c7f5a4a03d33969607929",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-6-RITUAL-OF-THE-OLD-GROWTH.png",
+   "sha256": "2022056cbd65772c11059156ab2313d1b2f5942ffe40d1e022207642ef910898",
+   "px": [
+    1524,
+    1020
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.08
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
