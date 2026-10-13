@@ -8535,17 +8535,17 @@
   "title": "Farmer",
   "heading_id": "h-farmer",
   "route": "gpt",
-  "spec_sha256": "5e0bcd4b6a855441ac2c6dce98c449d7ca0b24c9831b3390a1078b79c5f957a5",
-  "prompt_sha256": "75ffe7d2294d0c4179f723a51441ea9c9f24abe0e638bb0a34c9e2e6bc0bfab1",
-  "status": "rejected",
-  "received_at": "2026-10-13T13:53:45+00:00",
+  "spec_sha256": "ebc8bba202a61bab7475e8de5eedc9bdfde2a084185b9716cbb77204d318dc94",
+  "prompt_sha256": "ce891f421a38772c3167094b53c4efecac85396b6d930203bea3f759919e374e",
+  "status": "received",
+  "received_at": "2026-10-13T20:45:05+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker warns possible soft shading (20% mid-tones) and narrow margin (3.6% outer-band ink); required objects remain legible at print size.",
+  "notes": "Correction: Keep the sickle lying across the supported sheaf with its cutting edge inside the curve; keep the farmer tools and still-life composition resting on the plank.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-FARMER.png",
-   "sha256": "edbc77706194f040cf0dbf66a3f7df6a5222f7316de4b7603cbcddad8d550d4c",
+   "sha256": "45ea3eb8e3eab08ac51f64ad0ff60f46562583b0a0019433fcaf89d7fd1f842e",
    "px": [
     1254,
     1254
@@ -8553,18 +8553,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-FARMER.png",
-   "sha256": "8c3d3e5503a5ff296e1183bf16882c08fc11bdee1bdc8065c3e7d24dfebe0226",
+   "sha256": "9e8d89dfb6ddfb1748c73f8fe806353fc592da9de92bb04371839cae088558e0",
    "px": [
-    1235,
-    1129
+    1209,
+    1027
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.117
+   "max_print_w_in_300ppi": 4.03
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-HERMIT": {
   "family": "background",
