@@ -7741,5 +7741,38 @@
    "max_print_w_in_300ppi": 5.097
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CAM-THE-VAULT": {
+  "family": "campaign",
+  "title": "The Vault",
+  "heading_id": "h-the-vault",
+  "route": "gpt",
+  "spec_sha256": "87be7dc487fbcf62abdb7897ae8f60e4d54f0a7be4c3910513872abf42740d42",
+  "prompt_sha256": "13b6e5d7ddc5879c01aca197c9b9f90801dd226bd4e701dd691e48a3528fc9ba",
+  "status": "received",
+  "received_at": "2026-10-13T11:53:10+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CAM-THE-VAULT.png",
+   "sha256": "2ac368e099e0bccbc27728067363c6b14c6622935b82535412404d34a413bad3",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CAM-THE-VAULT.png",
+   "sha256": "d770c33cdb70cb31973cd92d101d2e29e245ca599a43cccea3b04b3abdc8adba",
+   "px": [
+    1526,
+    1023
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.087
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
