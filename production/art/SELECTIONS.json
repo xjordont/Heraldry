@@ -6652,5 +6652,38 @@
    "max_print_w_in_300ppi": 5.03
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD": {
+  "family": "scenario",
+  "title": "Scenario 4: The Blighted Heartwood",
+  "heading_id": "h-scenario-4-the-blighted-heartwood",
+  "route": "gpt",
+  "spec_sha256": "4bf4564c2a25ff26da8b33e4da612193491d14727c8697e70abeb2ce0ee2b2ea",
+  "prompt_sha256": "c002f8b2d8d7ae1ed419de8069b6553ef2e075fa3a7de9486526b83d1ef7fba6",
+  "status": "received",
+  "received_at": "2026-10-13T08:41:25+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD.png",
+   "sha256": "9859b4294316bb5b96dffafc31ebdbe530cc91e38d6bf2ecdf2cca9eba0eb90a",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-4-THE-BLIGHTED-HEARTWOOD.png",
+   "sha256": "facc486233482b7167f94c4a4c488e0fcdc3d786d8698621ec3f3d617bbf3bba",
+   "px": [
+    1523,
+    1020
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.077
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
