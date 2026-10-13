@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "note": "Owner approval 2026-10-13: \"Approved. Make sure they are big enough to see.\" Choices made over rounds 3 to 7 (production/STATE.md). tools/prepare_marks.py sets each charge in the shared shield of shield_template and traces the marks to typst/templates/marks/.",
+  "note": "Owner approval 2026-10-13: \"Approved. Make sure they are big enough to see.\" Choices made over rounds 3 to 7 (production/STATE.md). tools/prepare_marks.py sets each charge in the shared shield of shield_template and traces the marks to typst/templates/marks/. Coin (owner 2026-10-13: \"Yes to v2 but take the notch out of the border\"): r8 v2 with the notch closed by the round 9 edit v1.",
   "candidates": "assets/art/marks/candidates",
   "shield_template": "MARK-ARMS-02-r3-v1.png",
   "arms": {
@@ -20,5 +20,6 @@
     "14": "MARK-ARMS-14-r3-v1.png",
     "15": "MARK-ARMS-15-r3-v1.png"
   },
-  "logo": "MARK-LOGO-r3-v3.png"
+  "logo": "MARK-LOGO-r3-v3.png",
+  "coin": "MARK-COIN-EDIT-r9-v1.png"
 }
