@@ -8490,5 +8490,38 @@
    "max_print_w_in_300ppi": 4.143
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-CULTIST": {
+  "family": "background",
+  "title": "Cultist",
+  "heading_id": "h-cultist",
+  "route": "gpt",
+  "spec_sha256": "03129e1f1a311df0ab392217d390b57f26c18986209a1ee41ed64fb9d4698c17",
+  "prompt_sha256": "3cbd00ee3143db1542ccb381c3d5a8800dc594f7f0ec5e2805dc3c325b56c889",
+  "status": "received",
+  "received_at": "2026-10-13T13:50:24+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft grey shading (17% mid-tones) and narrow margin (2.9% outer-band ink); print preview retains readable objects.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-CULTIST.png",
+   "sha256": "c4fe3328dc1417cbb05baa29f60cc79cb7aa1db185c79f193b17e49f62e55243",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-CULTIST.png",
+   "sha256": "fbd5e20a2dafd2402319489fb1c6d9a5a5d9bb9c0fe15f40ca4d5ad8f1cde354",
+   "px": [
+    1220,
+    1101
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.067
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
