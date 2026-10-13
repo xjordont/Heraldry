@@ -26,7 +26,7 @@ def prompts(spec):
     out = {}
     for it in spec["items"]:
         parts = [it["subject"], spec["style"]]
-        if it["kind"] == "arms":
+        if it["kind"] == "arms" and not it.get("edit_from"):
             parts.append(spec["series"])
         out[it["id"]] = "\n\n".join(parts)
     return out
@@ -50,7 +50,11 @@ def run(ids):
                 print("budget cap reached; stopping")
                 return made
             cfg = {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": it["aspect"], "imageSize": it["size"]}}
-            body = {"contents": [{"role": "user", "parts": [{"text": texts[it["id"]]}]}], "generationConfig": cfg}
+            parts = [{"text": texts[it["id"]]}]
+            if it.get("edit_from"):  # an image edit: the base candidate goes in first, then the instruction
+                raw = (ROOT / it["edit_from"]).read_bytes()
+                parts.insert(0, {"inlineData": {"mimeType": "image/png", "data": base64.b64encode(raw).decode()}})
+            body = {"contents": [{"role": "user", "parts": parts}], "generationConfig": cfg}
             try:
                 r = g.call("POST", f"models/{model}:generateContent", body)
             except RuntimeError as ex:
