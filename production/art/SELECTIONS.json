@@ -6718,5 +6718,38 @@
    "max_print_w_in_300ppi": 5.09
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR": {
+  "family": "scenario",
+  "title": "Scenario 4: The Sandwyrm's Lair",
+  "heading_id": "h-scenario-4-the-sandwyrms-lair",
+  "route": "gpt",
+  "spec_sha256": "edad176384025f19f312977fdebba67d760729ee48fbfd8085765abb90b4aef0",
+  "prompt_sha256": "2cd198c4a4fdb3de7fa41179b478c141daaa9b7f1edd21a2cb3bd117787e158e",
+  "status": "received",
+  "received_at": "2026-10-13T08:54:44+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: large ribbed body and skull explicitly show the Sandwyrm; foreground elements also crowd lower/right edges.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR.png",
+   "sha256": "79290e09fbda778c98e9dc41b647e9c7f43f6ab27725f9f61f6582c1d588c09c",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-4-THE-SANDWYRM-S-LAIR.png",
+   "sha256": "755dea8210199aaa5db10aa062048bd95c226fce09229d44c0b0553034b71e61",
+   "px": [
+    1521,
+    992
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.07
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
