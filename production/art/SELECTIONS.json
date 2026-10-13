@@ -6850,5 +6850,38 @@
    "max_print_w_in_300ppi": 5.11
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING": {
+  "family": "scenario",
+  "title": "Scenario 5: Salttide's Reckoning",
+  "heading_id": "h-scenario-5-salttides-reckoning",
+  "route": "gpt",
+  "spec_sha256": "2a49ff82739faa9c035cb901aa9202e32dc3161b907a498a653e5955568dc280",
+  "prompt_sha256": "f96cce8f39d14cc991e5a5f80ccc83cf63186664cabe778f9e5bdf9a97228f33",
+  "status": "received",
+  "received_at": "2026-10-13T09:17:14+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Foreground watchers are too prominent for tiny watchers; dense perimeter ink weakens the white vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING.png",
+   "sha256": "ac20946c2b43c732eedad6e3d9a70f796ae9b3cfb8def1969407e4b5dd16a6d5",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-5-SALTTIDE-S-RECKONING.png",
+   "sha256": "a777a5c877e19a1ed666010a595515c71095ae539f113be71f909ae627ba5c85",
+   "px": [
+    1530,
+    1018
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.1
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
