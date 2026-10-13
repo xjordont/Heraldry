@@ -8667,17 +8667,17 @@
   "title": "Nomad",
   "heading_id": "h-nomad",
   "route": "gpt",
-  "spec_sha256": "aa36217fc81e80c4cb57c7b7ac39afd07067a610338a2312345886b1f5ae630f",
-  "prompt_sha256": "9d5efe51223b9250b7d9d145ec4636d1a257b93934fb639c63b075d31e551373",
-  "status": "rejected",
-  "received_at": "2026-10-13T14:13:02+00:00",
+  "spec_sha256": "d6e9f8fe00ea8a7645b90709a3cf63a4b848fa1e6ac6fe0ca009bcb2ee0d7371",
+  "prompt_sha256": "f74828d826feb88a1c70759f58bef49115e99e65a6b778ec0388e0224e89d6c1",
+  "status": "received",
+  "received_at": "2026-10-13T20:58:25+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker warns possible soft shading (14% mid-tones), stray edge marks (0.20%), and narrow margin (3.5% outer-band ink); small preview remains legible.",
+  "notes": "Correction: Rest the sheathed scimitar tip on the ground with its upper length leaning securely against the bound bedroll; keep the waterskin, pot, cloak, and walking stick supported on the ground or bundle.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-NOMAD.png",
-   "sha256": "226290f5b941584a28750dd50b049b9a0766b11744aad89fcb79c712a39ef19d",
+   "sha256": "8aa2ec13ceb589402941cb4c477b5262375854479e518d7fe3dec3dda793b0b3",
    "px": [
     1254,
     1254
@@ -8685,18 +8685,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-NOMAD.png",
-   "sha256": "d4f6ed183cd23d1d1bdecf0c9dbdcb42d408d86240260627adcd2932e3f6fcd2",
+   "sha256": "3b5a69ae9f1f28f4e2dbb2dbe8f1a62e3a90e5c74877478a5959fb52bee43dd6",
    "px": [
-    1241,
-    1117
+    1235,
+    1078
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.137
+   "max_print_w_in_300ppi": 4.117
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-PAUPER": {
   "family": "background",
