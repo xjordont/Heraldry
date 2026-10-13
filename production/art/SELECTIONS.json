@@ -9282,5 +9282,38 @@
    "max_print_w_in_300ppi": 5.04
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CH11-002": {
+  "family": "chapter",
+  "title": "ART-CH11-001",
+  "heading_id": null,
+  "route": "gpt",
+  "spec_sha256": "2a178aaa7dd0b0d5e99a1e764aba76d1308cc91eccd9c2596ab06ede0a1e25c3",
+  "prompt_sha256": "8cda7cdb115029d59e5a053b15ecebcf534bb27ad4e2f533a351f0b020e4fb84",
+  "status": "received",
+  "received_at": "2026-10-13T15:57:32+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CH11-002.png",
+   "sha256": "ccd6a7fc42135336779ec0d00f9e2d62dc30b49ec6110948664eb710c906617f",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CH11-002.png",
+   "sha256": "69ae20deb57838438db4e025d164007322ac27afca2deb3e672a3c12a65af7e0",
+   "px": [
+    1520,
+    1011
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.067
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
