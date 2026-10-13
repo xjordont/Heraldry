@@ -8337,17 +8337,17 @@
   "title": "Alchemist",
   "heading_id": "h-alchemist",
   "route": "gpt",
-  "spec_sha256": "131f607a863039022d2dcf38f649eb6d4438705832b1857f80f8fc2b1e2c1dea",
-  "prompt_sha256": "d8d16b4a817ccc669fd6733f29efb7db6ff00150c0105df20ecd69afeedbd0b0",
-  "status": "rejected",
-  "received_at": "2026-10-13T13:28:35+00:00",
+  "spec_sha256": "76d522cca5126877d29e7af52a6d23d640834002e1a6e9111eaf6cf02b227a68",
+  "prompt_sha256": "6dc9be0bf0c576a1472c8c0ec0de6ef1e0d3134c14a170547a3d52745d8f636d",
+  "status": "received",
+  "received_at": "2026-10-13T20:01:58+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker flags possible soft grey shading (17% mid-tones) and a tight 5.3% outer band with sparse bench marks touching the bottom edge; print preview remains identifiable.",
+  "notes": "Correction: Every object rests on, leans against, or hangs from a visible support; keep the named alchemist's kit and composition.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-ALCHEMIST.png",
-   "sha256": "6c5d144ac64bd9c97658347e4ac1642b422079e2690c81339d865b6e3877349d",
+   "sha256": "4cbc3053b365a3b88dd0264341256fc86d72798efb7e1b7657eaf5a236fc0954",
    "px": [
     1254,
     1254
@@ -8355,18 +8355,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-ALCHEMIST.png",
-   "sha256": "c5e3b018b29997a2972b10fe4f565485cd9ece5332199fc04fe1d32217ce3fb4",
+   "sha256": "d4f04ac5ad70e84047902fce46651e405f513b9d4b2a48bb527601449a410439",
    "px": [
-    1241,
-    1032
+    1235,
+    1020
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.137
+   "max_print_w_in_300ppi": 4.117
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-APPRENTICE": {
   "family": "background",
