@@ -1,0 +1,57 @@
+{
+ "tag": "RC492-build-24",
+ "url": "https://github.com/xjordont/Heraldry/releases/tag/RC492-build-24",
+ "source_commit": "e5041dba38f549d10b25b7c8c45719305700002d",
+ "assets": [
+  {
+   "name": "Heraldry_RC492_covers-front-back-white.pdf",
+   "bytes": 805656,
+   "sha256": "dd2d266b334dc0da8cc480d2ded6f1af7f3432847b8ece3de27960157abf1874"
+  },
+  {
+   "name": "Heraldry_RC492_covers-front-back.pdf",
+   "bytes": 805737,
+   "sha256": "d94fecc375b5eced411ab44835d616002d17dcd0b602e6abb04c056b807c82f9"
+  },
+  {
+   "name": "Heraldry_RC492_digital.pdf",
+   "bytes": 132554849,
+   "sha256": "266238300f2eb561944208a3148b5f6e2d2562367fb6ce9e8674b89414cfb432"
+  },
+  {
+   "name": "Heraldry_RC492_inkjet-borderless-white.pdf",
+   "bytes": 131737598,
+   "sha256": "abd25c7e202e6c2efdb91ad1fd31b9a76b98a776655910da1f4c47de3f8b2e0c"
+  },
+  {
+   "name": "Heraldry_RC492_inkjet-borderless.pdf",
+   "bytes": 131777609,
+   "sha256": "e5dfc3c632ad27fa28148564c575c94c23066a74a52b07d08d1f58798428b4d2"
+  },
+  {
+   "name": "Heraldry_RC492_inkjet-calibration.pdf",
+   "bytes": 40596,
+   "sha256": "708a8ea248284c7568e30b01deaf2a27e28113c9b8427ccdd9ad055fe2697748"
+  },
+  {
+   "name": "Heraldry_RC492_specimen.pdf",
+   "bytes": 2719237,
+   "sha256": "72ab3d6df199257eed62382db9fae71de714dcf259e4581d9e595edc98666e29"
+  },
+  {
+   "name": "Heraldry_RC492_release.zip",
+   "bytes": 500396848,
+   "sha256": "7cffed38e119ebac09661f6cc0aeef24213a842d4b6f26e1c56eb3bc127444e6"
+  },
+  {
+   "name": "SHA256SUMS.txt",
+   "bytes": 70265,
+   "sha256": "1dad81d9988d4f96937bdab135f841326d39aa48a8bfc59a7b2bb06cc689f043"
+  },
+  {
+   "name": "PRINT_INSTRUCTIONS.md",
+   "bytes": 2491,
+   "sha256": "eb257f0518317fe3273e34d72a21c49019b4331b6dc5fba4303a4167f6a420db"
+  }
+ ]
+}
