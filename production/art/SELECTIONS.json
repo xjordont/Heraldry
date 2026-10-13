@@ -7609,5 +7609,38 @@
    "max_print_w_in_300ppi": 5.097
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CAM-THE-EXPEDITION-HALL": {
+  "family": "campaign",
+  "title": "The Expedition Hall",
+  "heading_id": "h-the-expedition-hall",
+  "route": "gpt",
+  "spec_sha256": "58de161e3d4f72e988df57cd808d229a097f3250cf1b64e6e61c16e179907bcf",
+  "prompt_sha256": "50a1138a0c5da19b4170beccac1186472ef239a1839cc18ff5de4309ec8ee594",
+  "status": "received",
+  "received_at": "2026-10-13T11:38:51+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CAM-THE-EXPEDITION-HALL.png",
+   "sha256": "0404d1340dc3f0f69ce92f26c934f57a3073f50a18b5b520ee6f7b4f2056acde",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CAM-THE-EXPEDITION-HALL.png",
+   "sha256": "4a9e48229907024263c4c4587ca5fa5f21ffee521ab09f94661b131defa6f4fc",
+   "px": [
+    1531,
+    1024
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.103
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
