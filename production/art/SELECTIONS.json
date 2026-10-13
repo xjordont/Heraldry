@@ -7213,5 +7213,38 @@
    "max_print_w_in_300ppi": 5.107
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD": {
+  "family": "scenario",
+  "title": "Scenario 6: The Serpent's Sunken Hoard",
+  "heading_id": "h-scenario-6-the-serpents-sunken-hoard",
+  "route": "gpt",
+  "spec_sha256": "7a033584a07affccb9fa21a49f1b18aa6c292f8e3cd9ef8254056221eefe932d",
+  "prompt_sha256": "30217de446c92df89c71f58a24a4d4f0d56b8441dd06e43d78241e6cd02cf64b",
+  "status": "received",
+  "received_at": "2026-10-13T10:20:57+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Large scaled serpent coil is visible beneath the water despite the instruction not to show the serpent.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD.png",
+   "sha256": "c568daefeb0e317dc6811e119d46f688c7db7221b995e1d2e8a37982c8400d21",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-6-THE-SERPENT-S-SUNKEN-HOARD.png",
+   "sha256": "5662fca2dceb1ddef3ac8c74d8e00c2c8f0bbc0e056540d718205709f36f75cb",
+   "px": [
+    1512,
+    1001
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.04
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
