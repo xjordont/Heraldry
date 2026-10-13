@@ -7081,5 +7081,38 @@
    "max_print_w_in_300ppi": 5.08
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR": {
+  "family": "scenario",
+  "title": "Scenario 6: The Cinder Lord's Obsidian Prison",
+  "heading_id": "h-scenario-6-the-cinder-lords-obsidian-prison",
+  "route": "gpt",
+  "spec_sha256": "fc397da05d82faf7a58ce2bf71206cdefe8f61cb0f2a1fa5e3193db76ee93d32",
+  "prompt_sha256": "212ac0973dc24d7da1536572b7274da188ed00823420c59e9ed34d1eb653a55f",
+  "status": "received",
+  "received_at": "2026-10-13T09:51:59+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Cinder Lord silhouette is more defined than required; prominent moon reads as a glowing orb despite the no-glow instruction.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR.png",
+   "sha256": "46c24449263a78ead515f9e3c1b461a647c9634d9ed7531ef4e763422014d1c7",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-6-THE-CINDER-LORD-S-OBSIDIAN-PR.png",
+   "sha256": "87658bfa6d554bca91dda2c3ca7bf7037529141769f20c7651537c1600a5b03b",
+   "px": [
+    1506,
+    1013
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.02
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
