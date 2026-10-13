@@ -8403,17 +8403,17 @@
   "title": "Artisan",
   "heading_id": "h-artisan",
   "route": "gpt",
-  "spec_sha256": "b3690a87f9275f796833d25b5c60654dd7be6ef92b1f587522669cdef60fbaea",
-  "prompt_sha256": "34766086524bf1047e363aeef25a1adf5f58c3d5e25b9fb1593629dae8d8f504",
-  "status": "rejected",
-  "received_at": "2026-10-13T13:39:41+00:00",
+  "spec_sha256": "7d65187d50f15fa9e0dee2130eafdf8849a5bf5a936675a2071081e9ad1e267c",
+  "prompt_sha256": "1faa0bc6a0935a989ea71c68db52b9899e3a72b54391a2246b6f8f355283d3d5",
+  "status": "received",
+  "received_at": "2026-10-13T20:15:31+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker FAIL: ink touches edge (0.52% of outer band) and warns possible soft grey shading (19% mid-tones); image saved as the best single attempt.",
+  "notes": "Correction: The hammer lies flat on the anvil with both head and haft fully resting; keep the artisan workbench still life and composition.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-ARTISAN.png",
-   "sha256": "45b2fcdf6a6092552eb05457d6228794907c61018cbac298fad2856cd2977509",
+   "sha256": "14f594f95036c636c58b0f9e6b5d8eee0a723059a730666571007c46232c0c86",
    "px": [
     1254,
     1254
@@ -8421,18 +8421,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-ARTISAN.png",
-   "sha256": "a7a2c197abf3c3f5948112e2dffa3c5147cd513f92b5f5972608b60397c58a37",
+   "sha256": "e74a0b415f85424b2d193b24077c46c529c1654acf6f4a0b64661d3bb5cd3dc8",
    "px": [
-    1248,
-    1094
+    1220,
+    1112
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.16
+   "max_print_w_in_300ppi": 4.067
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-BELIEVER": {
   "family": "background",
