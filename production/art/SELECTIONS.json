@@ -8853,5 +8853,38 @@
    "max_print_w_in_300ppi": 4.097
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-SHEPHERD": {
+  "family": "background",
+  "title": "Shepherd",
+  "heading_id": "h-shepherd",
+  "route": "gpt",
+  "spec_sha256": "5f769829cd9ea2cf1c60ccd331e34b4d2929f604813b4bb9bdd2ceed24cf82d1",
+  "prompt_sha256": "2ead4463dd752015c6e2c759ff6ee3355656be47d3fe3b99c938e7bfb79459a6",
+  "status": "received",
+  "received_at": "2026-10-13T14:43:44+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (13% mid-tones); print-size preview reads as etched ink marks.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-SHEPHERD.png",
+   "sha256": "8313f0e681e438fd3f1e965c382cfbb17a933cb64d55a8d1927d3b1a0a4529bd",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-SHEPHERD.png",
+   "sha256": "ee48a4bde84cc3b01a4bf43bf03eb55992f81de2d0195dbf82e57f2f53644d61",
+   "px": [
+    1236,
+    1068
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.12
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
