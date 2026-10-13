@@ -6289,5 +6289,38 @@
    "max_print_w_in_300ppi": 5.043
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-2-THE-CHASM-CROSSING": {
+  "family": "scenario",
+  "title": "Scenario 2: The Chasm Crossing",
+  "heading_id": "h-scenario-2-the-chasm-crossing",
+  "route": "gpt",
+  "spec_sha256": "c8bca743d444d1fb02de88e8b0d145a88a3ae9292b8592ffe895576d8229ce4d",
+  "prompt_sha256": "620742fb3fda5795d6aa7c2ac50bfa53a5a3f6bc94020dfc5d4b7d0e92141c05",
+  "status": "received",
+  "received_at": "2026-10-13T07:48:05+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: wall Stalkers are too defined for tiny indistinct shapes, and dense cave ink touches the top edge.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-2-THE-CHASM-CROSSING.png",
+   "sha256": "42bbc64ea79d94e63c47db1819379685bed4a5e5ecf6861415d8dc7e9384c3be",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-2-THE-CHASM-CROSSING.png",
+   "sha256": "b8fb3e22b68b456169d0c0b3a4069d5f1bd0735e2174c84d26a189af8caef2c5",
+   "px": [
+    1534,
+    1017
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.113
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
