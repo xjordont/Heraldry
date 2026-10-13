@@ -8733,17 +8733,17 @@
   "title": "Performer",
   "heading_id": "h-performer",
   "route": "gpt",
-  "spec_sha256": "be08bb129aec894b8a7ba06e596e7bc41c4db644261476d19d8935f46d4dd2a9",
-  "prompt_sha256": "921633b066fe0b8d491016d5ca0df4e03eaeb66b83f71bfffdeb38fe7639c5ee",
-  "status": "rejected",
-  "received_at": "2026-10-13T14:21:58+00:00",
+  "spec_sha256": "69964343c96dfbec853339d203b776ffe3c46b34895672f079adeef345ec7870",
+  "prompt_sha256": "5226aef95f65c34956f3063ffe2aacc977ac151073bedbb1f6644be44b6e6113",
+  "status": "received",
+  "received_at": "2026-10-13T21:04:02+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker warns possible soft shading (14% mid-tones) and narrow margin (2.3% outer-band ink); print-size props remain identifiable.",
+  "notes": "Correction: Show exactly three straight-bladed, tapered medieval throwing knives with short wrapped grips, fanned on the boards; keep the half-mask and lute resting on the supported stage and the bell strap settled flat. Checker flags: stage marks touch the image edge; mid-tones are ink hatching.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-PERFORMER.png",
-   "sha256": "6df8bf2bbb81b7b2754c0b820fa3db97b9ff36f9bd981b303a6f27514f055083",
+   "sha256": "a4b2ddbcc9bde9d9f2963384f5d3b9f80c5ee0c18c201f7219129f63c4273a13",
    "px": [
     1254,
     1254
@@ -8751,18 +8751,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-PERFORMER.png",
-   "sha256": "b4e55e82d4bc731cd68895fde7c7c03ce2cccf99347d230a4a394a9b8bec9742",
+   "sha256": "6164f5fac0865ddabc9e236ae371e0d9f1f8535244fdf66509324eb783b71d71",
    "px": [
-    1235,
-    1067
+    1254,
+    1038
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.117
+   "max_print_w_in_300ppi": 4.18
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-SAILOR": {
   "family": "background",
