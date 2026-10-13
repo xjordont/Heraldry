@@ -7576,5 +7576,38 @@
    "max_print_w_in_300ppi": 5.107
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CAM-THE-BARRACKS": {
+  "family": "campaign",
+  "title": "The Barracks",
+  "heading_id": "h-the-barracks",
+  "route": "gpt",
+  "spec_sha256": "6bbbd0ce908878066c023eb47ba3384a0310b09f580ad3090f68ce6b7d3bf968",
+  "prompt_sha256": "080ee91790b1bc8c26b97b7419672c6104976f2b31746396fa96bac890e261c1",
+  "status": "received",
+  "received_at": "2026-10-13T11:35:36+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Checker flags 4% tinted-ink pixels; the print-size image appears monochrome. Sleeping recruits are not clearly distinguishable under blankets. One-attempt limit reached.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CAM-THE-BARRACKS.png",
+   "sha256": "2dcea3486df6b54dab6905bef48a52a57dbf3f2b18e165c1322c7496a2db8622",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CAM-THE-BARRACKS.png",
+   "sha256": "0f07b7f1d27644f8bcfbd6b840bb4e305ba2e77916ae60dfbe21939e86e13dfd",
+   "px": [
+    1529,
+    1021
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.097
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
