@@ -8,7 +8,7 @@ A still-life arrangement isolated on blank ivory-white paper, resting on a small
 Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge.
 
 COMPOSITION
-Still life on a roadside milestone: a bundle on a stick, a roll of bandages and a dice cup perched beside a half-burned stub of candle.
+Still life on bare roadside ground against a squat milestone: a bundle on a stick leaning against it, a roll of bandages and a tipped dice cup with spilled dice beside a half-burned stub of candle.
 A small still life of the tools, garments and keepsakes of this background's trade; no figure, so it never resembles a class or ancestry portrait. Isolated on white paper; no background scenery. PHYSICAL PLAUSIBILITY (owner review 2026-10-13): every object rests on a surface, leans against a visible support, or hangs from a visible hook, strap, peg or nail, and it obeys gravity: nothing floats or juts out unsupported, cloth and rope hang downward, heavy things sit low, a balance scale tips toward its heavier pan. Each object is the true medieval European form of the thing named, drawn correctly: no modern items (fountain pens, wristwatches, zippers) and no East Asian weapons (no kunai, shuriken or ninja gear).
 
 SUBJECT DETAILS
@@ -18,7 +18,7 @@ SUBJECT DETAILS
 * Patched cloak thrown over the stone
 * Boot with a flapping sole
 * Wild hare snare loop of cord
-* The milestone a low squared road marker with a rounded top, worn blank, not shaped like a gravestone
+* The milestone is a squat, knee-high block of rough stone, wider than it is tall, flat on top with chipped corners and half sunk in the earth, worn blank, plainly a roadside marker
 
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
@@ -34,6 +34,7 @@ Do not draw:
 * No signpost lettering.
 * Do not duplicate Hermit/Pauper compositions.
 * Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support.
+* The milestone is NOT a tall upright slab and has no rounded top: nothing that resembles a gravestone or tombstone.
 Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be gritty, bold and readable at small size and print crisply in pure black ink, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
