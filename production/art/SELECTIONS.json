@@ -7180,5 +7180,38 @@
    "max_print_w_in_300ppi": 5.097
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING": {
+  "family": "scenario",
+  "title": "Scenario 6: The Ritual of Shadow Binding",
+  "heading_id": "h-scenario-6-the-ritual-of-shadow-binding",
+  "route": "gpt",
+  "spec_sha256": "084c749b4d531ebd80ebb134cecec0bc2204c39a387e7fd0625cb9ee628918b9",
+  "prompt_sha256": "dac6c04cb0405bf5623296be0abe36d8a09234e39a7b3ded5b2ee0cd420c0d68",
+  "status": "received",
+  "received_at": "2026-10-13T10:15:09+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Foreground intruders are too large for tiny watchers; cavern ink weakens the white vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING.png",
+   "sha256": "614a789432425e39e779a93771daf01e7a57b79986f51ba4640eca32006a0575",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-6-THE-RITUAL-OF-SHADOW-BINDING.png",
+   "sha256": "e957ccde6813e360e2d8d4f14b433017fa441c9f7341fe5888d4d81b7f041d04",
+   "px": [
+    1532,
+    1015
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.107
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
