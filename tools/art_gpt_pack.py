@@ -57,7 +57,7 @@ def check_kinds(ents):
             raise SystemExit("monsters without a kind in kind_sets: " + ", ".join(missing))
 
 
-def references_for(e, sels, root=ROOT):
+def references_for(e, sels, root=ROOT, guided=True):
     """Up to max_refs reference images for this entry's family (family_sets) or else its register: repo paths
     always (they must exist), anchor IDs once approved. Never the entry itself."""
     cfg = g.CFG["gpt_reference_sets"]
@@ -73,6 +73,11 @@ def references_for(e, sels, root=ROOT):
                 out.append(s["master"]["path"])
         if len(out) >= cfg["max_refs"]:
             break
+    guide = g.guide_path(e["id"]) if guided else None
+    if guide:
+        if not (root / guide).is_file():
+            raise SystemExit(f"composition guide missing: {guide} (python3 tools/art_composition.py build)")
+        out = out[:cfg["max_refs"] - 1] + [guide]    # the guide is always the last reference
     return out
 
 
@@ -109,7 +114,7 @@ def build_queue(phase, ents, sels, anchors, root=ROOT):
         ids = lead + sorted((i for i in ents if i not in done and i not in lead), key=lambda i: (ORDER.index(ents[i]["family"]), i))
     prompts, items = {}, []
     for i in ids:
-        prompts[i] = g.prompt_for(ents[i], True)
+        prompts[i] = g.prompt_for(ents[i], True, guided=True)
         items.append(item_for(ents[i], prompts[i], sels, root))
     return {"schema": SCHEMA, "phase": phase, "generated_at": g.now(), "max_references": g.CFG["gpt_reference_sets"]["max_refs"],
             "push_every": g.CFG.get("gpt_push_every", 5), "review_every": g.CFG.get("gpt_review_every", 10),

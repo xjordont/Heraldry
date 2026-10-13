@@ -64,7 +64,22 @@ def label(e):
     return e["title"].upper()
 
 
-def prompt_for(e, with_refs):
+GUIDE_TEXT = ("COMPOSITION GUIDE (the LAST attached image)\n"
+              "The last attached image is a rough composition guide, not a style reference. Copy its arrangement: which objects appear, "
+              "where each one sits, what it rests on, leans against or hangs from, the camera angle and the relative sizes. Keep its "
+              "gravity and layout exactly. Do NOT copy its rendering: draw every object in the line character of the first style "
+              "references (bold rough contours, heavy solid blacks, dense scratchy hatching and dry-brush), pure black ink on pure white, "
+              "no cream tone, no grey wash, no soft or thin line. The subject is isolated on white with the usual white vignette, not cropped by the frame. "
+              "If the guide and the written brief disagree about an object's form, the written brief wins.")
+
+
+def guide_path(i):
+    """Repo-relative composition guide for an entry (production/art/composition), or None."""
+    import art_composition
+    return art_composition.guide_path(i)
+
+
+def prompt_for(e, with_refs, guided=False):
     """Structured prompt (owner's Greythorn prompt is the model): title, intro, format and
     vignette/isolation, composition, subject details, activity, verbatim source text, style and
     atmosphere, final requirements. An owner-authored prompt overrides the whole entry."""
@@ -111,6 +126,8 @@ def prompt_for(e, with_refs):
     out.append("FINAL VISUAL REQUIREMENTS\n" + "\n".join(final))
     if with_refs:
         out.append("STYLE REFERENCES\n" + v2["reference"])
+        if guided and guide_path(e["id"]):
+            out.append(GUIDE_TEXT)
     return "\n\n".join(out)
 
 

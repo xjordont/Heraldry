@@ -41,7 +41,7 @@ def one(g, pack, e, n, model):
     from PIL import Image
     fam = g.CFG["families"][e["family"]]
     prompt = g.prompt_for(e, True)
-    refs = [ROOT / r for r in pack.references_for(e, {})]
+    refs = [ROOT / r for r in pack.references_for(e, {}, guided=False)]
     parts = [g.b64img(r) for r in refs] + [{"text": prompt}]
     cfg = {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": fam["aspect"], "imageSize": SIZE}}
     body = {"contents": [{"role": "user", "parts": parts}], "generationConfig": cfg}
@@ -88,7 +88,7 @@ def main():
             print(f"=== {e['id']}\n{g.prompt_for(e, True)}\n")
         return
     if a.cmd == "refs":
-        print(",".join(sorted({r for e in ents for r in pack.references_for(e, {})})))
+        print(",".join(sorted({r for e in ents for r in pack.references_for(e, {}, guided=False)})))
         return
     model = g.resolve("image")
     print(f"image model: {model}; budget used so far ${g.spent():.2f} of ${g.CFG['budget_usd']:.2f}")

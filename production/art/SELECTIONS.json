@@ -246,7 +246,7 @@
   "route": "gpt",
   "spec_sha256": "da3731453000ec000f24b17648cc437bccf94c9656f693107a773007617ea247",
   "prompt_sha256": "2c62a09758ec3c0ca439a8596391c287732c79cf0581c16d4dbf25fe024e8694",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T22:04:55+00:00",
   "surface": "Codex",
   "model": "ChatGPT image generation (model label not shown)",
@@ -271,7 +271,9 @@
    "max_print_w_in_300ppi": 4.18
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T22:09:16+00:00"
+  "approved_at": "2026-10-13T22:09:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-TRA-TIER-1-ARCANE-SPELLS-D20": {
   "family": "tradition",
@@ -8340,7 +8342,7 @@
   "route": "gpt",
   "spec_sha256": "76d522cca5126877d29e7af52a6d23d640834002e1a6e9111eaf6cf02b227a68",
   "prompt_sha256": "6dc9be0bf0c576a1472c8c0ec0de6ef1e0d3134c14a170547a3d52745d8f636d",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T20:01:58+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8365,7 +8367,9 @@
    "max_print_w_in_300ppi": 4.117
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-APPRENTICE": {
   "family": "background",
@@ -8374,7 +8378,7 @@
   "route": "gpt",
   "spec_sha256": "011607774c655ecb8b1c47a33f16a0695278524f580c401a28ab7d59ee472aed",
   "prompt_sha256": "451e0c45405fa1f27c972c9859edc237388da68b2830f92a5abd943c5886d60b",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T20:09:38+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8399,7 +8403,9 @@
    "max_print_w_in_300ppi": 4.037
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-ARTISAN": {
   "family": "background",
@@ -8408,7 +8414,7 @@
   "route": "gpt",
   "spec_sha256": "7d65187d50f15fa9e0dee2130eafdf8849a5bf5a936675a2071081e9ad1e267c",
   "prompt_sha256": "1faa0bc6a0935a989ea71c68db52b9899e3a72b54391a2246b6f8f355283d3d5",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T20:15:31+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8433,7 +8439,9 @@
    "max_print_w_in_300ppi": 4.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-BELIEVER": {
   "family": "background",
@@ -8442,7 +8450,7 @@
   "route": "gpt",
   "spec_sha256": "3b8b03fa8c13f0ba5e6b62da2da9f478a0198873abdea1816287f1d66eaf55bd",
   "prompt_sha256": "ab08b33d120ab2ebd4fc989d65b0841324a16940c74ee6e8cc0115c25146d53e",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T20:23:12+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8467,7 +8475,9 @@
    "max_print_w_in_300ppi": 4.05
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-COURIER": {
   "family": "background",
@@ -8476,7 +8486,7 @@
   "route": "gpt",
   "spec_sha256": "acadcc1e4b8a4db689a9127001457905f8c1837da4faf40fe4c5d1f2aaa7f48c",
   "prompt_sha256": "770371bb90b46e37f4f5fe1b0d780581ff992016f7c188410d8220fabdffdb79",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T20:30:12+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8501,7 +8511,9 @@
    "max_print_w_in_300ppi": 4.077
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-CULTIST": {
   "family": "background",
@@ -8510,7 +8522,7 @@
   "route": "gpt",
   "spec_sha256": "d4a05a0c73c05b3c05331ccc65af1826e2b513a8e025bd90a3ebf0b6d3c052c5",
   "prompt_sha256": "2fdf0c9d7d427ad1fe5e4f0295d8a325ad162afbad1f390cf7563d13448f6405",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T20:36:43+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8535,7 +8547,9 @@
    "max_print_w_in_300ppi": 4.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-FARMER": {
   "family": "background",
@@ -8544,7 +8558,7 @@
   "route": "gpt",
   "spec_sha256": "ebc8bba202a61bab7475e8de5eedc9bdfde2a084185b9716cbb77204d318dc94",
   "prompt_sha256": "ce891f421a38772c3167094b53c4efecac85396b6d930203bea3f759919e374e",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T20:45:05+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8569,7 +8583,9 @@
    "max_print_w_in_300ppi": 4.03
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-HERMIT": {
   "family": "background",
@@ -8578,7 +8594,7 @@
   "route": "gpt",
   "spec_sha256": "7017e4b4fc5163dc92b8a480d3175c4d791002b9157547047bdf4e2e84448514",
   "prompt_sha256": "9441dc6a1a78aefabf53465db6baa9d29ae41714fd3af90b845c3320b011e9bc",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T20:49:35+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8603,7 +8619,9 @@
    "max_print_w_in_300ppi": 4.04
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-MERCHANT": {
   "family": "background",
@@ -8612,7 +8630,7 @@
   "route": "gpt",
   "spec_sha256": "4a264a85e7100b4cf433581b53751f91e9fe6ba20985ff347bff10d669917863",
   "prompt_sha256": "d37cf548bb45e5a29f495b3aabbfc603cc451dbaacb3dc4a075b247f83388f6d",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T20:52:37+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8637,7 +8655,9 @@
    "max_print_w_in_300ppi": 4.173
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-NOBLE": {
   "family": "background",
@@ -8646,7 +8666,7 @@
   "route": "gpt",
   "spec_sha256": "e07b70492cd7f2165bedbeedf104a8f85c9971050eb8c49fce7248937cd1c146",
   "prompt_sha256": "56df74322bb2a824bf38d408a22b3b83563f2dd18447ef7d8d259c87dc4be2cc",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T20:55:29+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8671,7 +8691,9 @@
    "max_print_w_in_300ppi": 4.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-NOMAD": {
   "family": "background",
@@ -8714,7 +8736,7 @@
   "route": "gpt",
   "spec_sha256": "72dd4f7202153f9aa1dab4bcb8a36da8a725ddc741986802ff01b313ba959ffb",
   "prompt_sha256": "1a63d07a771c3c904b69406c73ff94f0330b980d625aa3d120a6e5339a47e191",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T21:00:55+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8739,7 +8761,9 @@
    "max_print_w_in_300ppi": 4.093
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-PERFORMER": {
   "family": "background",
@@ -8748,7 +8772,7 @@
   "route": "gpt",
   "spec_sha256": "69964343c96dfbec853339d203b776ffe3c46b34895672f079adeef345ec7870",
   "prompt_sha256": "5226aef95f65c34956f3063ffe2aacc977ac151073bedbb1f6644be44b6e6113",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T21:04:02+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8773,7 +8797,9 @@
    "max_print_w_in_300ppi": 4.18
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-SAILOR": {
   "family": "background",
@@ -8782,7 +8808,7 @@
   "route": "gpt",
   "spec_sha256": "637399bbda267ff588bef49e6bd428a30266f60d4443ce9f0841f7df274a8e74",
   "prompt_sha256": "b0a3837dbe515cc6867ed2d8c6e7df3683200474f8e491c060beab015ea6545b",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T21:07:07+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8807,7 +8833,9 @@
    "max_print_w_in_300ppi": 4.11
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-SCHOLAR": {
   "family": "background",
@@ -8816,7 +8844,7 @@
   "route": "gpt",
   "spec_sha256": "91d4672666f08d52ca0d81ea6f61c71389089231ccb34a0dcded1433b0342f92",
   "prompt_sha256": "50ead0011c7b2d87147531d09e864d9cbef448e6e7d33327f5faac8268bcf70d",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T21:10:46+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8841,7 +8869,9 @@
    "max_print_w_in_300ppi": 3.97
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-SCOUT": {
   "family": "background",
@@ -8850,7 +8880,7 @@
   "route": "gpt",
   "spec_sha256": "c981240625aa67bba11cc363495cd732926f092b42fa5bf349aca87051e2ff6e",
   "prompt_sha256": "1833ccf92036ff0c1962775a5a74776ade9eaf1c4455ee374dc40eda66980999",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T21:13:44+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8875,7 +8905,9 @@
    "max_print_w_in_300ppi": 4.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-SHEPHERD": {
   "family": "background",
@@ -8884,7 +8916,7 @@
   "route": "gpt",
   "spec_sha256": "16300574571fe3c333fcedcc1279db9bfe8bfe6faa127ad39f0833fdce38f42a",
   "prompt_sha256": "c1142d94601dff94ae17c38be0b13c643a1538265e3b28c73afa369d7686bb94",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T21:17:28+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8909,7 +8941,9 @@
    "max_print_w_in_300ppi": 3.98
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-SOLDIER": {
   "family": "background",
@@ -8918,7 +8952,7 @@
   "route": "gpt",
   "spec_sha256": "1db4f2f8e30e9eccfd09588ddb44c362b864e8c53bb764737a963d2479aea5b2",
   "prompt_sha256": "f8027686fcca7bd515bbd7885720ffcba7f20e4b1f6c4426ab4548da15ca63a9",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T21:20:45+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8943,7 +8977,9 @@
    "max_print_w_in_300ppi": 4.16
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-BAC-VAGABOND": {
   "family": "background",
@@ -8952,7 +8988,7 @@
   "route": "gpt",
   "spec_sha256": "6388101beb5d8d5412d89952f000e1942194b2f0440c393fef390f633b9c9198",
   "prompt_sha256": "22a150d2585abd6e557fad3192b65283c4330215feefede7f849239b10874c32",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T22:07:06+00:00",
   "surface": "Codex",
   "model": "ChatGPT image generation (model label not shown)",
@@ -8977,7 +9013,9 @@
    "max_print_w_in_300ppi": 4.157
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T22:09:16+00:00"
+  "approved_at": "2026-10-13T22:09:16+00:00",
+  "rejected_at": "2026-10-13T23:36:27+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
  },
  "ART-ITE-7-6-TREASURE-TABLES": {
   "family": "item",
