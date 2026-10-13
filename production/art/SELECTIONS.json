@@ -7774,5 +7774,40 @@
    "max_print_w_in_300ppi": 5.087
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CAM-THE-WAR-ROOM": {
+  "family": "campaign",
+  "title": "The War Room",
+  "heading_id": "h-the-war-room",
+  "route": "gpt",
+  "spec_sha256": "abb844a29068d6fff7217821c8debfb4a4fe4afeee3301951cf99008689d3cd8",
+  "prompt_sha256": "1fa5d7121e653d993d877018704287e6c937cbb1dc77eb4f07932521ef5923e7",
+  "status": "received",
+  "received_at": "2026-10-13T11:57:38+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Checker reports FAIL: 11% tinted-ink pixels, although visual print-size review appears monochrome. No regeneration under one-attempt limit.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CAM-THE-WAR-ROOM.png",
+   "sha256": "1c2c1c46f07f08af60ee2dca1f2c0c923259f2ba138b7f8d66f8c24573b6109b",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CAM-THE-WAR-ROOM.png",
+   "sha256": "2e880d8f3fc7cc00b69254a8dd11b25b8825387368bf2e3c53488d2cea3b585e",
+   "px": [
+    1531,
+    1021
+   ],
+   "flags": [
+    "colour"
+   ],
+   "max_print_w_in_300ppi": 5.103
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
