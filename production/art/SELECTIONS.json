@@ -6487,5 +6487,38 @@
    "max_print_w_in_300ppi": 5.1
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM": {
+  "family": "scenario",
+  "title": "Scenario 3: The Haunted Mausoleum",
+  "heading_id": "h-scenario-3-the-haunted-mausoleum",
+  "route": "gpt",
+  "spec_sha256": "594624afd90ed00c0bfc6e18617ff7bc00671cafb6dbe3e859e980be87180d08",
+  "prompt_sha256": "064c23558d78855e2e77fb05628e9a44b3efffdde8297267ca5d5f9dfffc0f5d",
+  "status": "received",
+  "received_at": "2026-10-13T08:13:21+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM.png",
+   "sha256": "94e4cd5ad877bd5ba06d2ddf3028cc4c43776e45d406a17fe3f8b7830ab183c5",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM.png",
+   "sha256": "b2de0b39a1be53231f3c9e81e97f91fcb4287109c90afaa7b820acec96130d32",
+   "px": [
+    1525,
+    1023
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.083
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
