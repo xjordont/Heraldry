@@ -8370,17 +8370,17 @@
   "title": "Apprentice",
   "heading_id": "h-apprentice",
   "route": "gpt",
-  "spec_sha256": "88103ffc35473b07e58c3ce2ea631a21ecfe459c41d2823b66098aeee794a5b0",
-  "prompt_sha256": "d5dfcfe6ad3f5e902ebb805fbd5c1866e3c5c320f05a1f410c4cb8649e374f52",
-  "status": "rejected",
-  "received_at": "2026-10-13T13:31:47+00:00",
+  "spec_sha256": "011607774c655ecb8b1c47a33f16a0695278524f580c401a28ab7d59ee472aed",
+  "prompt_sha256": "451e0c45405fa1f27c972c9859edc237388da68b2830f92a5abd943c5886d60b",
+  "status": "received",
+  "received_at": "2026-10-13T20:09:38+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker flags possible soft grey shading (19% mid-tones) and sparse marks at the edge (2.7% outer-band ink); print preview remains legible.",
+  "notes": "Correction: The coat hangs from the stool with both sleeves falling straight down and pooling on the floor; keep the named apprentice still life and composition.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-APPRENTICE.png",
-   "sha256": "a44d79f1966daf867d9427939a3a5dfb786ec68e5f58d1b5b726210a5948c042",
+   "sha256": "cc448f1ab30fc6879b9b415b535e4c5f250e5193f497b932649abd70fc45504b",
    "px": [
     1254,
     1254
@@ -8388,18 +8388,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-APPRENTICE.png",
-   "sha256": "de65d3690c128adbbbee90555ff405070947328476636adbb491e81532b503fe",
+   "sha256": "40c26b086ee9321c65b1c86612b07e4b756fe22642f1b59c93067a8768b6b9dd",
    "px": [
-    1239,
-    1150
+    1211,
+    1184
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.13
+   "max_print_w_in_300ppi": 4.037
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-ARTISAN": {
   "family": "background",
