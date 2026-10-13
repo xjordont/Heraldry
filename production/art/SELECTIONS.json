@@ -6355,5 +6355,38 @@
    "max_print_w_in_300ppi": 5.097
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST": {
+  "family": "scenario",
+  "title": "Scenario 2: The Guardian's Test",
+  "heading_id": "h-scenario-2-the-guardians-test",
+  "route": "gpt",
+  "spec_sha256": "98271f5d2ed03be3c2e549f8a26088b2336a5967ee1a535eb9845d51e10b06f7",
+  "prompt_sha256": "410fe7ea93dda8e64f4c2cff9e1692f8c0fab4b2285ea280c5b32f046c2d132d",
+  "status": "received",
+  "received_at": "2026-10-13T07:54:53+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: humanoid figure visible in the right guardian niche despite the instruction that the niche is empty.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST.png",
+   "sha256": "f31e4f21ae663fe2bd830530902668a53c7af3051f001b299b1d6a3c1b3b67ab",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-2-THE-GUARDIAN-S-TEST.png",
+   "sha256": "94eda67fec769f21c686f15de3391d3820cd497bf62de918ed8d303cddd0ea12",
+   "px": [
+    1520,
+    1017
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.067
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
