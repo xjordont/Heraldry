@@ -8424,5 +8424,38 @@
    "max_print_w_in_300ppi": 4.16
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-BELIEVER": {
+  "family": "background",
+  "title": "Believer",
+  "heading_id": "h-believer",
+  "route": "gpt",
+  "spec_sha256": "1635bd670ad90befb815f76e11bec5bb8a4029d76f3a50bdd96cab1543d8b75b",
+  "prompt_sha256": "8d67dfcf5544f3996811cc2851c976668e6af6825a86ed24e56a01539adf0803",
+  "status": "received",
+  "received_at": "2026-10-13T13:43:22+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft grey shading (12% mid-tones); print preview remains readable and appears primarily line-based.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-BELIEVER.png",
+   "sha256": "fcc74ec318f2cdef49b0dcb0d4d2da23f78fb8540283e71cac01c24017524094",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-BELIEVER.png",
+   "sha256": "f67f1749f1087e8383d7b40e3b24d7a32a5736c94e887f44969efbd1d3a60c4f",
+   "px": [
+    1229,
+    1157
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.097
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
