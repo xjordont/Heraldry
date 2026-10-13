@@ -9051,5 +9051,38 @@
    "max_print_w_in_300ppi": 5.093
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CH04-002": {
+  "family": "chapter",
+  "title": "ART-CH04-001",
+  "heading_id": null,
+  "route": "gpt",
+  "spec_sha256": "9669c29737b981ed3c83240aa3ceb60af526931f13e5b83c258e1cb9e37a5e41",
+  "prompt_sha256": "b837b384577c203da5f6997c574a1384873ea84b6f7524201295ad7d919cdc92",
+  "status": "received",
+  "received_at": "2026-10-13T15:29:28+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Print-size review: image appears to show five figures on the aqueduct crossing, but the brief requires exactly four Heroes. Other scene requirements are visible.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CH04-002.png",
+   "sha256": "1b4e23fe8259965b9a3eade5eac70f47827f90ce2a06bfcc189e219db06ccb7e",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CH04-002.png",
+   "sha256": "d01d2db2a717482758a1079f74b25a4fe0d3d1633867534ddb49a1fadce77f59",
+   "px": [
+    1518,
+    1004
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.06
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
