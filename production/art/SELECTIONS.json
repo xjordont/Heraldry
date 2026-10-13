@@ -8949,17 +8949,17 @@
   "title": "Vagabond",
   "heading_id": "h-vagabond",
   "route": "gpt",
-  "spec_sha256": "8812b1cec8f9a606d51f6e962e413d90e17317a837315628dd793cba66c82307",
-  "prompt_sha256": "8cd089ac4245d8cae7770bda2a2109aa1ab4e9f7fe4e9b64fd77857116539c45",
-  "status": "rejected",
-  "received_at": "2026-10-13T21:24:47+00:00",
+  "spec_sha256": "6388101beb5d8d5412d89952f000e1942194b2f0440c393fef390f633b9c9198",
+  "prompt_sha256": "22a150d2585abd6e557fad3192b65283c4330215feefede7f849239b10874c32",
+  "status": "received",
+  "received_at": "2026-10-13T22:07:06+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Lean the bundle stick against the low rounded milestone, with its foot on the ground; keep the dice cup, bandages, cloak, boot, candle, and snare loop resting on visible supports. Review flag: the central rounded stone reads too much like a gravestone.",
+  "model": "ChatGPT image generation (model label not shown)",
+  "notes": "Correction: the milestone is a squat, knee-high block, wider than tall, flat on top, chipped, and half sunk in the earth, not a rounded upright slab. Keep the still life and ink style.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-VAGABOND.png",
-   "sha256": "577edd5bef6c0faf636f0d2572b6d38bdb685cb45edaa2d60e649a936b77446f",
+   "sha256": "97000dc49e4736ec4be0d9be62f61a8e829a98a22405fbd197b399283a76262b",
    "px": [
     1254,
     1254
@@ -8967,17 +8967,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-VAGABOND.png",
-   "sha256": "3211f845681baa95f05a4ad33338200098dec2fc58b3ad137d665ea46c5a0899",
+   "sha256": "eab54fd65e25ffce68243854c0f92a70a45237681e8d4b7b8ee6429d595401bc",
    "px": [
-    1224,
-    1159
+    1247,
+    1188
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.08
+   "max_print_w_in_300ppi": 4.157
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-13T21:33:16+00:00",
-  "rejected_reason": "Smuggler: the purse hangs from a knotted cord attached to nothing and the chalk route mark is missing. Vagabond: the milestone is still a tall rounded slab like a gravestone. Redo with the clarified brief."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-ITE-7-6-TREASURE-TABLES": {
   "family": "item",
