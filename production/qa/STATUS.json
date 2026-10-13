@@ -705,7 +705,7 @@
    "tools/mark_generate.py": "9b0d9c5aa70f87bc89ff0937bce42422911a37593a1ad3766366685e774ceb9d",
    "tools/measure_units.py": "47bc6b9c860cc7ba7054796b0aef37200b113f4666a7dc4a8b77461db1081db0",
    "tools/metrics.py": "25b04ad21a70fb83b2d115db36ee25cf529b6c867ef993d934a0e8639d4d880b",
-   "tools/package.py": "3746a85783c147688eeca3c9b91fdd244da36235afe71b5ed452682f0bfbf8c1",
+   "tools/package.py": "510f3973acab03bf9ab59fb6e3342f9d40fc841bc04428f88bdc303ed2bcfd49",
    "tools/parse_source.py": "348a882acaaa87aa5228375ecbf785c6880cd3e64ec36323d7929a5833237222",
    "tools/preflight.py": "9fd27951c0791b1bdbfa616cba5f80de09a1cf591c27729e12582264434e491e",
    "tools/prepare_marks.py": "5140c02d0e86e6d66e5a9cf62f4c02187c0075c472e33b281bf266810f46b54e",
