@@ -9117,5 +9117,38 @@
    "max_print_w_in_300ppi": 5.087
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CH06-002": {
+  "family": "chapter",
+  "title": "ART-CH06-001",
+  "heading_id": null,
+  "route": "gpt",
+  "spec_sha256": "34261699ce5a85f053ad1ff3fc29bcfd285e9a0223dbbfb8d4a2ed23528fdff6",
+  "prompt_sha256": "010ce2fb0ffa3302bd68ca44712fa1e3a7c03ec23b74c641fec584d13e84fb7f",
+  "status": "received",
+  "received_at": "2026-10-13T15:37:30+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Print-size review: image satisfies the public hiring hall and upright ratkin requirements; marks approach the top outer edge, consistent with checker warning. Contract contains no readable words.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CH06-002.png",
+   "sha256": "c41db82dccfef1ef4bf7dd62e281fc41803e360e80f20e6e9cf918e3032f0faa",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CH06-002.png",
+   "sha256": "bcef644875b3109eed85504dd6c56badf881f4fef9b1eea520e35f8c39acba2f",
+   "px": [
+    1536,
+    1017
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.12
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
