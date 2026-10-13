@@ -17,8 +17,8 @@ SUBJECT DETAILS
 * Roll of lockpicks unrolled showing thin hooks and tension wrenches
 * Lantern shuttered to a slit
 * Rope-bound crate corner and sacking
-* Chalk mark of a route on the wood, no lettering
-* Knotted purse hung in shadow
+* Chalk arrow and three tally strokes on the side of the barrel, no letters
+* Knotted purse lying flat on top of the rope-bound crate, its drawstring slack on the crate lid
 
 SOURCE TEXT
 Depict this faithfully and invent nothing that contradicts it:
@@ -34,6 +34,8 @@ Do not draw:
 * No coins spilled, keep it understated.
 * Do not copy the Rogue's kit tableau.
 * Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support.
+* No purse or bag hanging in the air: every bag lies or sits on a surface or hangs from a visible iron hook.
+* No hook-less hanging cords.
 Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be gritty, bold and readable at small size and print crisply in pure black ink, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES

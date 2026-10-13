@@ -246,7 +246,7 @@
   "route": "gpt",
   "spec_sha256": "1f44d76121b53f2a504999f741ab0cad98a07c0d595c01b4e9af0573b9f9de05",
   "prompt_sha256": "bb7c5889cdf3502e88b45bfba869354683b09935f554a17156299a9c185e66a6",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-13T19:55:54+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -270,7 +270,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.173
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-13T21:33:16+00:00",
+  "rejected_reason": "Smuggler: the purse hangs from a knotted cord attached to nothing and the chalk route mark is missing. Vagabond: the milestone is still a tall rounded slab like a gravestone. Redo with the clarified brief."
  },
  "ART-TRA-TIER-1-ARCANE-SPELLS-D20": {
   "family": "tradition",
@@ -8339,7 +8341,7 @@
   "route": "gpt",
   "spec_sha256": "76d522cca5126877d29e7af52a6d23d640834002e1a6e9111eaf6cf02b227a68",
   "prompt_sha256": "6dc9be0bf0c576a1472c8c0ec0de6ef1e0d3134c14a170547a3d52745d8f636d",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T20:01:58+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8363,7 +8365,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.117
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-APPRENTICE": {
   "family": "background",
@@ -8372,7 +8375,7 @@
   "route": "gpt",
   "spec_sha256": "011607774c655ecb8b1c47a33f16a0695278524f580c401a28ab7d59ee472aed",
   "prompt_sha256": "451e0c45405fa1f27c972c9859edc237388da68b2830f92a5abd943c5886d60b",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T20:09:38+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8396,7 +8399,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.037
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-ARTISAN": {
   "family": "background",
@@ -8405,7 +8409,7 @@
   "route": "gpt",
   "spec_sha256": "7d65187d50f15fa9e0dee2130eafdf8849a5bf5a936675a2071081e9ad1e267c",
   "prompt_sha256": "1faa0bc6a0935a989ea71c68db52b9899e3a72b54391a2246b6f8f355283d3d5",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T20:15:31+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8429,7 +8433,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.067
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-BELIEVER": {
   "family": "background",
@@ -8438,7 +8443,7 @@
   "route": "gpt",
   "spec_sha256": "3b8b03fa8c13f0ba5e6b62da2da9f478a0198873abdea1816287f1d66eaf55bd",
   "prompt_sha256": "ab08b33d120ab2ebd4fc989d65b0841324a16940c74ee6e8cc0115c25146d53e",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T20:23:12+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8462,7 +8467,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.05
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-COURIER": {
   "family": "background",
@@ -8471,7 +8477,7 @@
   "route": "gpt",
   "spec_sha256": "acadcc1e4b8a4db689a9127001457905f8c1837da4faf40fe4c5d1f2aaa7f48c",
   "prompt_sha256": "770371bb90b46e37f4f5fe1b0d780581ff992016f7c188410d8220fabdffdb79",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T20:30:12+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8495,7 +8501,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.077
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-CULTIST": {
   "family": "background",
@@ -8504,7 +8511,7 @@
   "route": "gpt",
   "spec_sha256": "d4a05a0c73c05b3c05331ccc65af1826e2b513a8e025bd90a3ebf0b6d3c052c5",
   "prompt_sha256": "2fdf0c9d7d427ad1fe5e4f0295d8a325ad162afbad1f390cf7563d13448f6405",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T20:36:43+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8528,7 +8535,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.067
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-FARMER": {
   "family": "background",
@@ -8537,7 +8545,7 @@
   "route": "gpt",
   "spec_sha256": "ebc8bba202a61bab7475e8de5eedc9bdfde2a084185b9716cbb77204d318dc94",
   "prompt_sha256": "ce891f421a38772c3167094b53c4efecac85396b6d930203bea3f759919e374e",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T20:45:05+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8561,7 +8569,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.03
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-HERMIT": {
   "family": "background",
@@ -8570,7 +8579,7 @@
   "route": "gpt",
   "spec_sha256": "7017e4b4fc5163dc92b8a480d3175c4d791002b9157547047bdf4e2e84448514",
   "prompt_sha256": "9441dc6a1a78aefabf53465db6baa9d29ae41714fd3af90b845c3320b011e9bc",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T20:49:35+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8594,7 +8603,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.04
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-MERCHANT": {
   "family": "background",
@@ -8603,7 +8613,7 @@
   "route": "gpt",
   "spec_sha256": "4a264a85e7100b4cf433581b53751f91e9fe6ba20985ff347bff10d669917863",
   "prompt_sha256": "d37cf548bb45e5a29f495b3aabbfc603cc451dbaacb3dc4a075b247f83388f6d",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T20:52:37+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8627,7 +8637,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.173
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-NOBLE": {
   "family": "background",
@@ -8636,7 +8647,7 @@
   "route": "gpt",
   "spec_sha256": "e07b70492cd7f2165bedbeedf104a8f85c9971050eb8c49fce7248937cd1c146",
   "prompt_sha256": "56df74322bb2a824bf38d408a22b3b83563f2dd18447ef7d8d259c87dc4be2cc",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T20:55:29+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8660,7 +8671,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.113
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-NOMAD": {
   "family": "background",
@@ -8669,7 +8681,7 @@
   "route": "gpt",
   "spec_sha256": "d6e9f8fe00ea8a7645b90709a3cf63a4b848fa1e6ac6fe0ca009bcb2ee0d7371",
   "prompt_sha256": "f74828d826feb88a1c70759f58bef49115e99e65a6b778ec0388e0224e89d6c1",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T20:58:25+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8693,7 +8705,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.117
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-PAUPER": {
   "family": "background",
@@ -8702,7 +8715,7 @@
   "route": "gpt",
   "spec_sha256": "72dd4f7202153f9aa1dab4bcb8a36da8a725ddc741986802ff01b313ba959ffb",
   "prompt_sha256": "1a63d07a771c3c904b69406c73ff94f0330b980d625aa3d120a6e5339a47e191",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T21:00:55+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8726,7 +8739,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.093
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-PERFORMER": {
   "family": "background",
@@ -8735,7 +8749,7 @@
   "route": "gpt",
   "spec_sha256": "69964343c96dfbec853339d203b776ffe3c46b34895672f079adeef345ec7870",
   "prompt_sha256": "5226aef95f65c34956f3063ffe2aacc977ac151073bedbb1f6644be44b6e6113",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T21:04:02+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8759,7 +8773,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.18
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-SAILOR": {
   "family": "background",
@@ -8768,7 +8783,7 @@
   "route": "gpt",
   "spec_sha256": "637399bbda267ff588bef49e6bd428a30266f60d4443ce9f0841f7df274a8e74",
   "prompt_sha256": "b0a3837dbe515cc6867ed2d8c6e7df3683200474f8e491c060beab015ea6545b",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T21:07:07+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8792,7 +8807,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.11
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-SCHOLAR": {
   "family": "background",
@@ -8801,7 +8817,7 @@
   "route": "gpt",
   "spec_sha256": "91d4672666f08d52ca0d81ea6f61c71389089231ccb34a0dcded1433b0342f92",
   "prompt_sha256": "50ead0011c7b2d87147531d09e864d9cbef448e6e7d33327f5faac8268bcf70d",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T21:10:46+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8825,7 +8841,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.97
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-SCOUT": {
   "family": "background",
@@ -8834,7 +8851,7 @@
   "route": "gpt",
   "spec_sha256": "c981240625aa67bba11cc363495cd732926f092b42fa5bf349aca87051e2ff6e",
   "prompt_sha256": "1833ccf92036ff0c1962775a5a74776ade9eaf1c4455ee374dc40eda66980999",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T21:13:44+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8858,7 +8875,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.113
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-SHEPHERD": {
   "family": "background",
@@ -8867,7 +8885,7 @@
   "route": "gpt",
   "spec_sha256": "16300574571fe3c333fcedcc1279db9bfe8bfe6faa127ad39f0833fdce38f42a",
   "prompt_sha256": "c1142d94601dff94ae17c38be0b13c643a1538265e3b28c73afa369d7686bb94",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T21:17:28+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8891,7 +8909,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.98
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-SOLDIER": {
   "family": "background",
@@ -8900,7 +8919,7 @@
   "route": "gpt",
   "spec_sha256": "1db4f2f8e30e9eccfd09588ddb44c362b864e8c53bb764737a963d2479aea5b2",
   "prompt_sha256": "f8027686fcca7bd515bbd7885720ffcba7f20e4b1f6c4426ab4548da15ca63a9",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T21:20:45+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8924,7 +8943,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.16
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-VAGABOND": {
   "family": "background",
@@ -8933,7 +8953,7 @@
   "route": "gpt",
   "spec_sha256": "8812b1cec8f9a606d51f6e962e413d90e17317a837315628dd793cba66c82307",
   "prompt_sha256": "8cd089ac4245d8cae7770bda2a2109aa1ab4e9f7fe4e9b64fd77857116539c45",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-13T21:24:47+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8957,7 +8977,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.08
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-13T21:33:16+00:00",
+  "rejected_reason": "Smuggler: the purse hangs from a knotted cord attached to nothing and the chalk route mark is missing. Vagabond: the milestone is still a tall rounded slab like a gravestone. Redo with the clarified brief."
  },
  "ART-ITE-7-6-TREASURE-TABLES": {
   "family": "item",

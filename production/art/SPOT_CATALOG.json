@@ -2064,21 +2064,23 @@
      "Roll of lockpicks unrolled showing thin hooks and tension wrenches",
      "Lantern shuttered to a slit",
      "Rope-bound crate corner and sacking",
-     "Chalk mark of a route on the wood, no lettering",
-     "Knotted purse hung in shadow"
+     "Chalk arrow and three tally strokes on the side of the barrel, no letters",
+     "Knotted purse lying flat on top of the rope-bound crate, its drawstring slack on the crate lid"
     ],
     "atmosphere": "Furtive and well-practised.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No coins spilled, keep it understated",
      "Do not copy the Rogue's kit tableau",
-     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support",
+     "No purse or bag hanging in the air: every bag lies or sits on a surface or hangs from a visible iron hook",
+     "No hook-less hanging cords"
     ],
     "sources": [
      "6.10 Backgrounds: Smuggler"
     ]
    },
-   "spec_sha256": "1f44d76121b53f2a504999f741ab0cad98a07c0d595c01b4e9af0573b9f9de05"
+   "spec_sha256": "da3731453000ec000f24b17648cc437bccf94c9656f693107a773007617ea247"
   },
   {
    "id": "ART-BAC-COURIER",
@@ -2686,7 +2688,7 @@
    ],
    "brief": {
     "identity": "A Vagabond background: road to road with no roots; starting kit Bandages.",
-    "composition": "Still life on a roadside milestone: a bundle on a stick, a roll of bandages and a dice cup perched beside a half-burned stub of candle.",
+    "composition": "Still life on bare roadside ground against a squat milestone: a bundle on a stick leaning against it, a roll of bandages and a tipped dice cup with spilled dice beside a half-burned stub of candle.",
     "details": [
      "Bundle-on-a-stick with a knotted cloth",
      "Roll of bandages",
@@ -2694,20 +2696,21 @@
      "Patched cloak thrown over the stone",
      "Boot with a flapping sole",
      "Wild hare snare loop of cord",
-     "The milestone a low squared road marker with a rounded top, worn blank, not shaped like a gravestone"
+     "The milestone is a squat, knee-high block of rough stone, wider than it is tall, flat on top with chipped corners and half sunk in the earth, worn blank, plainly a roadside marker"
     ],
     "atmosphere": "Rootless drift and ruined luck.",
     "avoid": [
      "No figure or hands, and no lettering",
      "No signpost lettering",
      "Do not duplicate Hermit/Pauper compositions",
-     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support"
+     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support",
+     "The milestone is NOT a tall upright slab and has no rounded top: nothing that resembles a gravestone or tombstone"
     ],
     "sources": [
      "6.10 Backgrounds: Vagabond"
     ]
    },
-   "spec_sha256": "8812b1cec8f9a606d51f6e962e413d90e17317a837315628dd793cba66c82307"
+   "spec_sha256": "6388101beb5d8d5412d89952f000e1942194b2f0440c393fef390f633b9c9198"
   },
   {
    "id": "ART-CLA-FIGHTER",
