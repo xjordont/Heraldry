@@ -20,6 +20,8 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: true   # image edits read a committed candidate (edit_from)
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
