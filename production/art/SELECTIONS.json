@@ -8360,5 +8360,38 @@
    "max_print_w_in_300ppi": 4.137
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-APPRENTICE": {
+  "family": "background",
+  "title": "Apprentice",
+  "heading_id": "h-apprentice",
+  "route": "gpt",
+  "spec_sha256": "88103ffc35473b07e58c3ce2ea631a21ecfe459c41d2823b66098aeee794a5b0",
+  "prompt_sha256": "d5dfcfe6ad3f5e902ebb805fbd5c1866e3c5c320f05a1f410c4cb8649e374f52",
+  "status": "received",
+  "received_at": "2026-10-13T13:31:47+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker flags possible soft grey shading (19% mid-tones) and sparse marks at the edge (2.7% outer-band ink); print preview remains legible.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-APPRENTICE.png",
+   "sha256": "a44d79f1966daf867d9427939a3a5dfb786ec68e5f58d1b5b726210a5948c042",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-APPRENTICE.png",
+   "sha256": "de65d3690c128adbbbee90555ff405070947328476636adbb491e81532b503fe",
+   "px": [
+    1239,
+    1150
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.13
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
