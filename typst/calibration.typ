@@ -38,7 +38,7 @@
       #text(font: serif, size: 10.5pt)[10.5 pt Source Serif 4 — body text size] \
       #text(font: sans, size: 9pt)[9 pt Source Sans 3 — table minimum 0123456789] \
       #text(font: sans, size: 9.5pt)[9.5 pt Source Sans 3 — table text 0123456789] \
-      #text(font: display, size: 14.5pt, weight: 600)[14.5 pt Cinzel section heading]
+      #text(font: display, size: 21pt, weight: 600)[21 pt Grenze Gotisch section heading]
       #v(10pt)
       *Rule weights* \
       #for w in (0.3pt, 0.45pt, 0.6pt, 0.75pt, 1pt) [

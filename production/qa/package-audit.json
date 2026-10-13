@@ -1,10 +1,10 @@
 {
   "zip": "dist/Heraldry_RC492_release.zip",
-  "bytes": 192213059,
-  "files": 354,
-  "sha256": "7df830f6aae596f7693c0535514d45d8d7fb084a569031935c365deaae968b39",
+  "bytes": 572046904,
+  "files": 818,
+  "sha256": "26c8150d442c330f5f38de7be89280ea0bc940affb006bbb55e3e97db1a8f33d",
   "status": "PASS",
   "duplicate_entries": [],
-  "checksums_verified": 353,
+  "checksums_verified": 817,
   "note": "This audit is external to the ZIP to avoid self-reference; PDFs are verified files, visual and physical proof statuses remain separately qualified."
 }

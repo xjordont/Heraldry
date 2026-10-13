@@ -7,9 +7,9 @@ PT = 9.5            # table body size
 LEAD = 12.0         # table leading
 PAD = 4.0           # horizontal cell padding (each side)
 VPAD = 3.0
-COL_W = 243.0       # one text column (3.375 in)
-FULL_W = 504.0      # full text frame (7 in)
-BODY_H = 792 - 0.65 * 72 - 0.7 * 72   # 691.2 pt text frame height
+COL_W = 250.5       # one text column (design v4: (7.2 in - 0.24 in) / 2)
+FULL_W = 518.4      # full text frame (design v4: 8.5 in - 0.75 in - 0.55 in = 7.2 in)
+BODY_H = 792 - 0.68 * 72 - 0.7 * 72   # 688.6 pt text frame height (design v4)
 
 
 def runs(nodes, bold=False, ital=False):

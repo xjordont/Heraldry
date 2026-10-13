@@ -8,49 +8,59 @@
 
 #let title-page(title, subtitle, version) = page(header: none, footer: none, margin: (x: 0.9in, y: 0.9in))[
   #metadata("title") <frontmatter-start>
-  #v(1.3in)
+  #v(0.55in)
   #align(center)[
-    #motif(len: 110pt)
-    #v(26pt)
-    #set par(leading: 10pt)
-    #text(font: display, weight: 700, size: 40pt, tracking: 0.03em, hyphenate: false, title.at(0))
-    #v(4pt)
-    #text(font: display, weight: 600, size: 20pt, tracking: 0.12em, title.at(1))
+    #signature(s: 1.7in)
     #v(22pt)
-    #line(length: 40%, stroke: 0.7pt + ink)
-    #v(18pt)
-    #block(width: 80%)[#set par(leading: 5pt); #set text(size: 12pt, style: "italic"); #subtitle]
+    #set par(leading: 10pt, justify: false)
+    #text(font: serif, weight: 700, size: 34pt, tracking: 0.12em, hyphenate: false, title.at(0))
+    #v(6pt)
+    #text(font: serif, weight: 600, size: 15pt, tracking: 0.32em, title.at(1))
+    #v(14pt)
+    #flourish(len: 96pt)
+    #v(16pt)
+    #block(width: 80%)[#set par(leading: 5pt, justify: false); #set text(font: fell, size: 13pt); #show emph: it => it.body; #subtitle]
     #v(1fr)
   ]
   #place(bottom + center, dy: -0.4in)[
-    #set text(font: sans, size: 10pt, tracking: 0.1em)
+    #set text(font: sans, size: 9pt, weight: 600)
     #version
   ]
 ]
 
+// Contents: each chapter row carries its arms; sections beneath with dotted leaders.
+#let toc-tab(loc) = {
+  let os = query(<chapter-opener>).filter(m => m.location().page() == loc.page())
+  if os.len() == 0 { none } else { opener-tab(os.first().value) }
+}
 #let toc-page() = {
   pagebreak(weak: true)
-  block(width: 100%)[
+  block(width: 100%, below: 10pt)[
     #align(center)[
-      #v(0.2in)
-      #motif(len: 60pt)
-      #v(6pt)
-      #text(font: display, weight: 600, size: 22pt)[Contents]
-      #v(4pt)
+      #v(0.1in)
+      #text(font: goth, weight: 600, size: 34pt)[Contents]
+      #v(-6pt)
+      #flourish(len: 70pt)
     ]
   ]
   set text(size: 10pt)
+  set par(justify: false)
   show outline.entry.where(level: 1): it => {
-    v(9pt, weak: true)
-    block(sticky: true)[
-      #set text(font: display, weight: 600, size: 11pt)
-      #link(it.element.location())[#it.element.body #box(width: 1fr, repeat(text(fill: rule-ink)[.#h(3pt)])) #text(font: sans, weight: 600, size: 10pt, it.page())]
+    v(11pt, weak: true)
+    block(sticky: true, below: 4pt)[
+      #let n = toc-tab(it.element.location())
+      #link(it.element.location())[#grid(columns: (22pt, 1fr, auto), column-gutter: 7pt, align: horizon,
+        if n != none { arms(n, w: 20pt) } else { [] },
+        text(font: goth, weight: 600, size: 14pt, it.element.body),
+        text(font: sans, weight: 700, size: 10pt, it.page()))]
+      #v(-3pt)
+      #line(length: 100%, stroke: 0.6pt + ink)
     ]
   }
   show outline.entry.where(level: 2): it => {
-    block(above: 3pt, below: 0pt, inset: (left: 10pt))[
+    block(above: 3pt, below: 0pt, inset: (left: 29pt))[
       #set text(size: 9.5pt)
-      #link(it.element.location())[#it.element.body #box(width: 1fr, repeat(text(fill: rule-ink)[.#h(3pt)])) #text(font: sans, size: 9.5pt, it.page())]
+      #link(it.element.location())[#it.element.body #box(width: 1fr, repeat(text(fill: ink3)[.#h(3pt)])) #text(font: sans, size: 9.5pt, it.page())]
     ]
   }
   columns(2, gutter: gap, outline(title: none, depth: 2, indent: 0pt))
@@ -76,7 +86,7 @@
   ]
   // How to use this book
   pagebreak(weak: true)
-  align(center)[#v(0.2in) #motif(len: 60pt) #v(6pt) #text(font: display, weight: 600, size: 22pt, how-to-use.title) #v(10pt)]
+  align(center)[#v(0.1in) #text(font: goth, weight: 600, size: 34pt, how-to-use.title) #v(-6pt) #flourish(len: 70pt) #v(10pt)]
   columns(2, gutter: gap)[
     #for s in how-to-use.sections [
       #heading(level: 4, outlined: false, bookmarked: false, s.heading)
@@ -96,19 +106,19 @@
   pagebreak(weak: true)
   block(width: 100%, below: 14pt)[
     #metadata("index") <chapter-opener>
-    #v(0.35in)
+    #v(0.1in)
     #align(center)[
-      #motif(len: 80pt)
-      #v(10pt)
+      #arms(15, w: 40pt)
+      #v(-2pt)
       #heading(level: 1, outlined: true, bookmarked: true, "Index") <index>
+      #v(-6pt)
+      #flourish(len: 70pt)
       #v(8pt)
-      #line(length: 36%, stroke: 0.6pt + ink)
-      #v(8pt)
-      #block(width: 80%)[#set text(size: 9.5pt, style: "italic"); #index-data.note]
+      #block(width: 80%)[#set text(font: fell, size: 11pt); #set par(justify: false); #index-data.note]
     ]
   ]
   set text(font: sans, size: 9.5pt)
-  set par(leading: 2.4pt, spacing: 2pt, hanging-indent: 10pt)
+  set par(leading: 2.4pt, spacing: 2pt, hanging-indent: 10pt, justify: false)
   let pages-for(key) = {
     let hits = query(label("ix-" + key)).map(h => h.location())
     for hid in index-data.at("heads", default: (:)).at(key, default: ()) {
@@ -129,7 +139,8 @@
       let l = upper(e.term.first())
       if l != letter {
         letter = l
-        block(above: 9pt, below: 4pt, sticky: true, text(font: display, weight: 700, size: 11pt, l))
+        block(above: 10pt, below: 4pt, sticky: true, grid(columns: (auto, 1fr), column-gutter: 5pt, align: horizon,
+          box(fill: ink, inset: (x: 4pt, y: 2.5pt), text(font: goth, weight: 600, size: 13pt, fill: paper, l)), line(length: 100%, stroke: 0.4pt + ink3)))
       }
       block(above: 2.5pt, below: 0pt, breakable: false)[
         #text(weight: 600, e.term)#if e.keys.len() > 0 [, #context e.keys.map(k => pages-for(k)).join(", ")]#if e.at("see", default: none) != none [. #emph[See] #e.see]#if e.at("also", default: none) != none [. #emph[See also] #e.also]

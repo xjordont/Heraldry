@@ -775,8 +775,8 @@ def compile_book(variant="cream", out=None, query=True, edition="print"):
 
 
 STRADDLE_MAX = 250
-TOP_Y = 0.65 * 72
-FRAME_H = 792 - 0.65 * 72 - 0.7 * 72      # usable frame of an empty page (pt)
+TOP_Y = 0.68 * 72
+FRAME_H = 792 - 0.68 * 72 - 0.7 * 72      # usable frame of an empty page (pt; design v4 margins)
 FRAME_FIT = FRAME_H - 24                  # conservative fitting tolerance (block spacing, sticky headings)
 BODY_BOTTOM = 792 - 0.7 * 72
 
