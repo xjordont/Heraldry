@@ -6388,5 +6388,38 @@
    "max_print_w_in_300ppi": 5.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER": {
+  "family": "scenario",
+  "title": "Scenario 2: The Lizardfolk's Stolen Offerings",
+  "heading_id": "h-scenario-2-the-lizardfolks-stolen-offerings",
+  "route": "gpt",
+  "spec_sha256": "4c16f38d30121c260f9b3000782200306fa27b1e09ae2ea9cf115828f890d862",
+  "prompt_sha256": "61fa17938dce0377bfca666b362013263c264fb838989fa6673ab2db99abb1c4",
+  "status": "received",
+  "received_at": "2026-10-13T07:58:33+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: Scale-Shaman too prominent and carries pointed, ornamented staff; thatch ink also touches top-left edge.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER.png",
+   "sha256": "00679063081219045b6d3b375a3c9a2bc37d0c459b3245239b354534fad9ba5b",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-2-THE-LIZARDFOLK-S-STOLEN-OFFER.png",
+   "sha256": "b5401c72dca4f95136fecff291fe335694339e9a1013b169ded5d6ffb12faa1f",
+   "px": [
+    1524,
+    1013
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.08
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
