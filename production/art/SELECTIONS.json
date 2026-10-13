@@ -244,17 +244,17 @@
   "title": "Smuggler",
   "heading_id": "h-smuggler",
   "route": "gpt",
-  "spec_sha256": "1f44d76121b53f2a504999f741ab0cad98a07c0d595c01b4e9af0573b9f9de05",
-  "prompt_sha256": "bb7c5889cdf3502e88b45bfba869354683b09935f554a17156299a9c185e66a6",
-  "status": "rejected",
-  "received_at": "2026-10-13T19:55:54+00:00",
+  "spec_sha256": "da3731453000ec000f24b17648cc437bccf94c9656f693107a773007617ea247",
+  "prompt_sha256": "2c62a09758ec3c0ca439a8596391c287732c79cf0581c16d4dbf25fe024e8694",
+  "status": "received",
+  "received_at": "2026-10-13T22:04:55+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Every object rests on, leans against, or hangs from a visible support; keep the named smuggler's kit and composition.",
+  "model": "ChatGPT image generation (model label not shown)",
+  "notes": "Correction: show the chalk route mark clearly on the barrel, and place the knotted purse flat on the crate with its drawstring slack against the crate lid. Keep the still life, objects, and ink style.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SMUGGLER.png",
-   "sha256": "a79b390375d9ac09d6e4e917203ed6f9a595ed685ec4947c071106c8e7bec04d",
+   "sha256": "fbb028ae9bead9cd6daee73bb6ecbfa55120608620e71250c7833ddfab96332f",
    "px": [
     1254,
     1254
@@ -262,17 +262,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SMUGGLER.png",
-   "sha256": "94160860f4fbe8ba1c35db3a20d7ccce6a81d8d7c3a084e50cdd9a2b75e90031",
+   "sha256": "7363d18deaa5a032eca2d430d11c1d91d8f679d5f1297cac0599527d22a45d18",
    "px": [
-    1252,
-    1127
+    1254,
+    1186
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.173
+   "max_print_w_in_300ppi": 4.18
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-13T21:33:16+00:00",
-  "rejected_reason": "Smuggler: the purse hangs from a knotted cord attached to nothing and the chalk route mark is missing. Vagabond: the milestone is still a tall rounded slab like a gravestone. Redo with the clarified brief."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-TRA-TIER-1-ARCANE-SPELLS-D20": {
   "family": "tradition",
