@@ -7642,5 +7642,38 @@
    "max_print_w_in_300ppi": 5.103
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CAM-THE-OUTER-WALLS": {
+  "family": "campaign",
+  "title": "The Outer Walls",
+  "heading_id": "h-the-outer-walls",
+  "route": "gpt",
+  "spec_sha256": "cde95164692fc27f8a8b65afe56db6944a472edd74b7adba0be246deec11ba8b",
+  "prompt_sha256": "6ed32379bc0a1789885634fbc3a12b5fa760a3db37af6ab98cc8f87b92fec969",
+  "status": "received",
+  "received_at": "2026-10-13T11:41:50+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "A visible torch flame conflicts with the card exclusion No glowing torch, although the scene prompt requests a torch. Recorded without regeneration.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CAM-THE-OUTER-WALLS.png",
+   "sha256": "81723b61ae4d1533eba671aeeafbb98d6e9c3f1e297c0a9ab00791b385c555da",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CAM-THE-OUTER-WALLS.png",
+   "sha256": "fcc2a8959dfbc5f41d59c1537fde84164c51100b8f27f225fd974ccaea80da54",
+   "px": [
+    1533,
+    1021
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.11
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
