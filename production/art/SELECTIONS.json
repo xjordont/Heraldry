@@ -6322,5 +6322,38 @@
    "max_print_w_in_300ppi": 5.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE": {
+  "family": "scenario",
+  "title": "Scenario 2: The Cinder Lord's Lost Brazier",
+  "heading_id": "h-scenario-2-the-cinder-lords-lost-brazier",
+  "route": "gpt",
+  "spec_sha256": "1f752c4858bcfa635b9146f948016cd01ed341fb41928ef98e9e921cc83bb423",
+  "prompt_sha256": "2afb755a3bdf7dd4cf5517c7cd2018bbed1ec507d8949db998191d9add32ac5a",
+  "status": "received",
+  "received_at": "2026-10-13T07:51:13+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: foreground brazier dominates the composition instead of appearing as a half-buried glimpse.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE.png",
+   "sha256": "d57af641aa07d56f2ecf9d9f9c276a70e50f617830b0be867150f65f3857b8d2",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-2-THE-CINDER-LORD-S-LOST-BRAZIE.png",
+   "sha256": "c9681bae154cd6bce92d6ca45d410d5cbd6a3bbe3feeab4a017a08519eb7a04c",
+   "px": [
+    1529,
+    1003
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.097
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
