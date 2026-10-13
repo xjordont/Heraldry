@@ -6685,5 +6685,38 @@
    "max_print_w_in_300ppi": 5.077
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE": {
+  "family": "scenario",
+  "title": "Scenario 4: The Clockwork Menagerie",
+  "heading_id": "h-scenario-4-the-clockwork-menagerie",
+  "route": "gpt",
+  "spec_sha256": "bc2480cf98a97cd917535244a1afa62bd47103b64ab1969cee7549c6b63a6864",
+  "prompt_sha256": "02986e80283f75f1351e052b7a8af12e34061f95eda7cbe68e8154e5d807bb98",
+  "status": "received",
+  "received_at": "2026-10-13T08:48:34+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: right-side piston automaton reads as humanoid, and roof ink crowds the upper edge; 3 percent tinted-ink advisory not visibly coloured.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE.png",
+   "sha256": "b6edb1a5a078423d4e8463f8f1b9790b5e902671f0e8a0d6cf789ff6bc2a008a",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-4-THE-CLOCKWORK-MENAGERIE.png",
+   "sha256": "d0ba0cf5712774560ae018d7fd02f18fac3b42d269efdfea4934a9cd243d0953",
+   "px": [
+    1527,
+    1019
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.09
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
