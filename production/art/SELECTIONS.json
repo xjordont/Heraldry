@@ -6619,5 +6619,38 @@
    "max_print_w_in_300ppi": 5.063
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS": {
+  "family": "scenario",
+  "title": "Scenario 3: Tomb of the Sunken Kings",
+  "heading_id": "h-scenario-3-tomb-of-the-sunken-kings",
+  "route": "gpt",
+  "spec_sha256": "b8f3acc0dd2de7d64dadda73e629c5f0e144e0e62b3d733ef5561d780bba81d9",
+  "prompt_sha256": "e88fe2d4e5b04772321d7be92c4e7219a7b251bc85a01703463fe40f225ca60b",
+  "status": "received",
+  "received_at": "2026-10-13T08:35:21+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: foreground grave-robbers are too large for the requested tiny party.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS.png",
+   "sha256": "28127c1b6372badb68bd3bcef9e77e8836a5cfe1ac10000d6800d512926e4d80",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-3-TOMB-OF-THE-SUNKEN-KINGS.png",
+   "sha256": "fd1f368715bb66aa60618a90b6bfab508f4b5b3c8ba61cbe0e0cdf10c0f17679",
+   "px": [
+    1509,
+    1014
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.03
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
