@@ -416,7 +416,7 @@
   "route": "gpt",
   "spec_sha256": "b6d0c1db7e394bab27a63cc3c4c3684d076eedcdcdab12b1b6e8b23a40625636",
   "prompt_sha256": "2611867ae22cd1817c17d515c403c757651361ce69a4511a4ba4d1fde49d6363",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:20:51+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -440,7 +440,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.11
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-WOR-1-2-THE-GRIM-WORLD": {
   "family": "world",
@@ -4801,7 +4802,7 @@
   "route": "gpt",
   "spec_sha256": "e136020372028394ff0bebe835c9e3bc1d9486d4e4a4688854558dc8ba5b091c",
   "prompt_sha256": "fc17ebe6a11217eeb338f64227971697798debfc5fa1b43178a0c6d0e7dac73d",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:22:47+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -4825,7 +4826,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.617
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-CLA-ASSASSIN": {
   "family": "class",
@@ -4902,7 +4904,7 @@
   "route": "gpt",
   "spec_sha256": "975f016331dc4d3f708621666496d3d08c3012a4b2a641b155168ff5e42fabca",
   "prompt_sha256": "dafb7eccfadf4a33c431bf8989e4c8dbb447964821a7eb718fc8d8bca95950fb",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:12:23+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -4926,7 +4928,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.233
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-CLA-DRUID": {
   "family": "class",
@@ -4935,7 +4938,7 @@
   "route": "gpt",
   "spec_sha256": "1ed1285e0ed5021d63d968293d123e15ff200b3381a40ac48e8cef225e08b26d",
   "prompt_sha256": "cc7bca0abe5523f00c871e99f63024a41d36fbb335e2d2d1ba63d92a9df8af13",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:25:14+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -4959,7 +4962,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.17
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-CLA-FIGHTER": {
   "family": "class",
@@ -4968,7 +4972,7 @@
   "route": "gpt",
   "spec_sha256": "99a5d97686f6ca5f3d39049228e21890ff3bb26547991bbc102038400bc0975b",
   "prompt_sha256": "f65f8db93e9fcd6fd21bf91bd4719a2754afbd553b83b1205d9f1c52cdea95ff",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:27:42+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -4992,7 +4996,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.143
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-CLA-PALADIN": {
   "family": "class",
@@ -5001,7 +5006,7 @@
   "route": "gpt",
   "spec_sha256": "2e51dc82ec1c3b08ad78ca2f054fcacb07ebc24ef1e4f0ead8e1079a243ef4e7",
   "prompt_sha256": "b277dd06f97c1d2b837938e78eb67e530b504e6a9a31444b228b3eab29f71cbc",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:29:39+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5025,7 +5030,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.673
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-CLA-PSION": {
   "family": "class",
@@ -5034,7 +5040,7 @@
   "route": "gpt",
   "spec_sha256": "cbb5c1c560e170271a8617f667999b223567f2fae1b61c7ceb5ee0b97e1ee753",
   "prompt_sha256": "6e2825b6d39f1d918e26484ee6de2abd44949e1acf489b89af51bd31d886b1b9",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:33:52+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5058,7 +5064,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.18
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-CLA-ROGUE": {
   "family": "class",
@@ -5067,7 +5074,7 @@
   "route": "gpt",
   "spec_sha256": "54bc1200ef85be5885e54d24b2ebddb19d927a3bc7b7bc7a9f69459b12297e44",
   "prompt_sha256": "bac1ae0ff69159f6e98d3570d3d0c5ee03220554c8296c0c72052b5c0736ca60",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:37:08+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5091,7 +5098,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.3
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-CLA-SORCERER": {
   "family": "class",
@@ -5100,7 +5108,7 @@
   "route": "gpt",
   "spec_sha256": "11e1bd96fa02809f2f13bb84080168fb17c3ccca3e3b85cfec5661e677cbcd29",
   "prompt_sha256": "913b1713048568d7b986361f85a830599f2a1d62f41a1ff26011ffaa87ab6ab3",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:40:19+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5124,7 +5132,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.383
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-CLA-TRICKSTER": {
   "family": "class",
@@ -5133,7 +5142,7 @@
   "route": "gpt",
   "spec_sha256": "88b2047abd5f9868ab946efb742699036917297c051553ae91116855026d737a",
   "prompt_sha256": "8d2709e80274c2479ff12be1ad8cd1e28e2b563ffe5b71984ab33e7b50661a9b",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:42:55+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5157,7 +5166,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.227
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-CLA-WIZARD": {
   "family": "class",
@@ -5166,7 +5176,7 @@
   "route": "gpt",
   "spec_sha256": "6d0567e4e2aec2da3d2281687e93036c63bcb6eab3502955d1753ace86eaacd1",
   "prompt_sha256": "01f1c05f80c6f3eefb69e88dfb7faf7ce1490a52d91d0e9aa6cb1362044ab34b",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:45:42+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5190,7 +5200,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.383
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-ANC-DEEP-ELF": {
   "family": "ancestry",
@@ -5199,7 +5210,7 @@
   "route": "gpt",
   "spec_sha256": "7b26de522ff71076d207557580558f7412cf2d09217038d4b9acdcea508eaffd",
   "prompt_sha256": "b9ae9cd8613f2a24d3efe780f215fd91af0c27b2852db3ab8404f7f1774fb216",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:48:23+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5223,7 +5234,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.72
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-ANC-DEMONBORN": {
   "family": "ancestry",
@@ -5232,7 +5244,7 @@
   "route": "gpt",
   "spec_sha256": "cef104f0eed10c0ca129f0b49f7c66654177d42dad1792f5473f05c631465a9d",
   "prompt_sha256": "3108534c14f34a1820856a2b3ee5377ffefe3b0c814f1acab4bbb2da05e72764",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:51:07+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5256,7 +5268,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.447
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-ANC-DRAKEBLOOD": {
   "family": "ancestry",
@@ -5265,7 +5278,7 @@
   "route": "gpt",
   "spec_sha256": "d872a11209fa5b8e7a376f35cc825239fba308e9dc817a7a2a4374991b9e6d92",
   "prompt_sha256": "1336863133b0864fed5bdcc38e6a3535fc23920681ca83de8a3ac83bb8eacc4b",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:53:08+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5289,7 +5302,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.35
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-ANC-DWARF": {
   "family": "ancestry",
@@ -5298,7 +5312,7 @@
   "route": "gpt",
   "spec_sha256": "2f92a29ce28708e821d5ee92d8db216e17722f58c4632c5d65be7465c3d011ab",
   "prompt_sha256": "1d597a4d8d6f8cbdd437226a30a51dc50a03daaf44c6a9b795a9263bedbc6dbd",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:55:59+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5322,7 +5336,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.263
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-ANC-ELF": {
   "family": "ancestry",
@@ -5331,7 +5346,7 @@
   "route": "gpt",
   "spec_sha256": "6294e35ae144a386e4ac442c437997596aef468e74a78e9bcdc2f4af7f22c42b",
   "prompt_sha256": "68c319f4e0af1cd8b0dca8c30dafeaa4f0a1abef390e14b7ea0087f3c9d519a1",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T17:58:30+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5355,7 +5370,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.807
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-ANC-GNOME": {
   "family": "ancestry",
@@ -5364,7 +5380,7 @@
   "route": "gpt",
   "spec_sha256": "310c64342f573e6b8d624655942dc5e4715734aa028735ca5b4a95298e8c1614",
   "prompt_sha256": "a8340c264dc5133d599bae163112c99a5e8051f4d553d45ffafbb03abd9922b1",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:01:42+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5388,7 +5404,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.337
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-ANC-GOBLIN": {
   "family": "ancestry",
@@ -5397,7 +5414,7 @@
   "route": "gpt",
   "spec_sha256": "b746adae5a00181766c13491cc6930ef09c464dfd1522bba29932c075b8e5727",
   "prompt_sha256": "3e3559d04efd52bbd19b9279e3a60db638d7d090e4918becb4d6402ebb520a4f",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:04:37+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5421,7 +5438,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.263
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-ANC-HALFLING": {
   "family": "ancestry",
@@ -5430,7 +5448,7 @@
   "route": "gpt",
   "spec_sha256": "041591bec59557adac15c65e62de127a3022c6211915295d9d516c1031fde03d",
   "prompt_sha256": "150a11d11727432db03cf9714d9c5639a8c8dff8eac3e2ef1675bf7770e7d911",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:07:44+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5454,7 +5472,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.32
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-ANC-HUMAN": {
   "family": "ancestry",
@@ -5463,7 +5482,7 @@
   "route": "gpt",
   "spec_sha256": "a9f6f4cdfec3502416d34c1bc5ec18f68903c3adf7713e657f15bad8970a0175",
   "prompt_sha256": "e332707f796ed742e5abfc64216cb7b0cd5156bc722af79a458eea47d37063fb",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:10:31+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5487,7 +5506,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.97
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-ANC-ORC": {
   "family": "ancestry",
@@ -5496,7 +5516,7 @@
   "route": "gpt",
   "spec_sha256": "b4bfdfe7cbda595c931b760827fadbf6773ad7a5445e0ee1989adef38911987a",
   "prompt_sha256": "220dab7688262af60d32cc1aac871b059ff233e9c5af3ed46c5e1cff95375417",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:13:36+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5520,7 +5540,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.923
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-ANC-RATKIN": {
   "family": "ancestry",
@@ -5529,7 +5550,7 @@
   "route": "gpt",
   "spec_sha256": "ba13ea12b512c7b93d4811fcadce23d9a16249b710ea7bd95a1033e60be30e22",
   "prompt_sha256": "86fd1044108229845f02b259451e6cc026349508594ce4e3f2faaac0ef63a2c7",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:16:30+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5553,7 +5574,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.88
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-AVATAR-OF-THE-OLD-GROWTH": {
   "family": "boss",
@@ -5562,7 +5584,7 @@
   "route": "gpt",
   "spec_sha256": "6894b209b0ebb165516df774fffac91a908bf5adec2949642d9e9ff7c874a05d",
   "prompt_sha256": "b936c30f647e3318bb22af32308d560cbe05bb4611fd0971491e364365950ad0",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:20:23+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5586,7 +5608,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.04
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-CAPTAIN-VEYR-OF-THE-FORSAKEN": {
   "family": "boss",
@@ -5595,7 +5618,7 @@
   "route": "gpt",
   "spec_sha256": "4750aca558270fdc25f306ca8ff35463c4d124d6b3177a26e7d331c34e0ad5bd",
   "prompt_sha256": "e999c44912fcf435a1b890518f3acc220ef1b6e6580a1266e7858b94720d73ce",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:24:08+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5619,7 +5642,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.04
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-KHORRUN-THE-DRACOLICH": {
   "family": "boss",
@@ -5628,7 +5652,7 @@
   "route": "gpt",
   "spec_sha256": "6d24dabc0c45583c2e21925a4001ae7c754aae3a4a7e896bc3ec4bc426ab9ed3",
   "prompt_sha256": "860f17e03c396273984fa240b3fbf44b3f1e4973be3a8752b8216cb68dd40741",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:28:34+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5652,7 +5676,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.107
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-MAELTHORN-THE-VERDANT": {
   "family": "boss",
@@ -5661,7 +5686,7 @@
   "route": "gpt",
   "spec_sha256": "b348e710eea9e8b4009219fe37884e78b1a1dbf7cd3fd10b41fdfdfaa6f38480",
   "prompt_sha256": "6fb2b2ba410c98470544fb29482959038036b95b93f332702047e91a312cb22f",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:33:20+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5685,7 +5710,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.113
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-SIRRACH-THE-BLACK": {
   "family": "boss",
@@ -5694,7 +5720,7 @@
   "route": "gpt",
   "spec_sha256": "91ac76f3d0d1845d822938d69ae4db4fd9b87ab7e65e4a1de1bce7f3ee6274c3",
   "prompt_sha256": "482ee9b4a8864ea728017e4612cd11210622134157e12f01777efc92cb61f99e",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:37:42+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5718,7 +5744,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.05
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-THE-ANCIENT-VOID-DRAGON": {
   "family": "boss",
@@ -5727,7 +5754,7 @@
   "route": "gpt",
   "spec_sha256": "fd608a5f78e5e5ee7d606852a1034449660597f2aea0de3583352fa45d4a7cfb",
   "prompt_sha256": "d0ba863f39267c5580f874f321489a753d5f3786e1241ea2525286b6f5d95861",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:41:52+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5751,7 +5778,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.09
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-THE-ANTLERED-WARDEN-OF-THE-TITHE": {
   "family": "boss",
@@ -5760,7 +5788,7 @@
   "route": "gpt",
   "spec_sha256": "48e9ba7f59ebc2af9fb5e1d1ae5f716965ebe8fb50351cfe778383ecf9bd0e64",
   "prompt_sha256": "ae1ceedfb1e1fcdd9d06452855c1fe68035760283995e161ea867b2efea39670",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T18:49:07+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5784,7 +5812,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.09
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-THE-BROODMOTHER-PRIME": {
   "family": "boss",
@@ -5793,7 +5822,7 @@
   "route": "gpt",
   "spec_sha256": "e4e1b8e15cc97acec5c88dab49858da0e0faf28dd07e9328cad80af1701bade2",
   "prompt_sha256": "667d79ed2354128b4f0e4f8191d15f3fcb28b2bb6624c01bc4a4f98be5acdb07",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:08:15+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5817,7 +5846,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.117
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-THE-FROST-BAILIFF-MAGISTRATE": {
   "family": "boss",
@@ -5826,7 +5856,7 @@
   "route": "gpt",
   "spec_sha256": "82219337332a43ed2f4813413cc65e49c4d5a000788c73c6e0be7ebf98876610",
   "prompt_sha256": "6b6f10703fd6341ae10b01fb7611f66fcf103206ef72b72b56a34a4d5a7065c3",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:11:47+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5850,7 +5880,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.073
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-THE-HOLLOW-CROWN-OF-THE-ASHLANDS": {
   "family": "boss",
@@ -5859,7 +5890,7 @@
   "route": "gpt",
   "spec_sha256": "d6ef9f2ccd392d0eaffed36784b7a388d4c0d501dbd17c80d01afc065282b419",
   "prompt_sha256": "dc0d1f11260c6cf632278ab5e00975c51e5906f44a98b091af49c055d6ea1fcf",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:16:00+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5883,7 +5914,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.033
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-THE-SUN-CROWNED-PRINCE": {
   "family": "boss",
@@ -5892,7 +5924,7 @@
   "route": "gpt",
   "spec_sha256": "525e18139c309b8fb9355a3d97128dec745a0b9529e6dbd812443e9f3aa3d4ef",
   "prompt_sha256": "f2774559ecc074d73f69d4079feee9f038914210abf6142330a0a27c6c0b7bc7",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:19:40+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5916,7 +5948,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.12
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-THE-VOICE-BENEATH-THE-BELLS": {
   "family": "boss",
@@ -5925,7 +5958,7 @@
   "route": "gpt",
   "spec_sha256": "42e36ee4ce493024bdfa9a25551046521f9d08c2e8a5a214f7261bbd4e8d5b42",
   "prompt_sha256": "22b758fca45a49c9556639c15243f4621b6417c7d99206f0b1bfedf4d8e2b892",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:23:52+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5949,7 +5982,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.097
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-VISATH-THE-WHITE": {
   "family": "boss",
@@ -5958,7 +5992,7 @@
   "route": "gpt",
   "spec_sha256": "6293c783ba1eb27a98cd2e3c4c1831e49b8142f1e040c52c370fb63d54e9550f",
   "prompt_sha256": "b44f2190e9496270e9da4b517a6ed613f8cf6d31132c7b61eb049e7888d43bdb",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:28:10+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -5982,7 +6016,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.093
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-MON-VOSSEGAR-OF-THE-FLOODED-CATHEDRAL": {
   "family": "boss",
@@ -5991,7 +6026,7 @@
   "route": "gpt",
   "spec_sha256": "af254a12b92e58d080a6ddaf038b09790131e63942bb7b6f96d1797b9ff30e09",
   "prompt_sha256": "b537881bf1e509e221377a2910009985077fea25fa472aaf88006b81c4251235",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:31:53+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -6015,7 +6050,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.093
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-SCE-A-4-QUICKSTART-SCENARIO-THE-BROKEN-COURI": {
   "family": "scenario",
@@ -6024,7 +6060,7 @@
   "route": "gpt",
   "spec_sha256": "f91ea09b51a04d69e88cdf5ec41a4c63c3b5e38b6e4b2a4393648e98cfcc0616",
   "prompt_sha256": "8ee200e2d6b39aa1750a9a4b55bedb287a3672b61cce186aa00f73a327f1c942",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:36:24+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -6048,7 +6084,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.01
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-SCE-SCENARIO-1-PLUNDER-OF-THE-FROZEN-RUINS": {
   "family": "scenario",
@@ -6057,7 +6094,7 @@
   "route": "gpt",
   "spec_sha256": "36bfb049b9887f921030fcd7bb9b2d4df3dab2cb1167fa7325a6cd69fecde86b",
   "prompt_sha256": "f2af03f67f6c4cea11038d834687d4f6a4537fa33fdb915711f6e0e3f6fc8c4d",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:41:44+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -6081,7 +6118,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.027
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-SCE-SCENARIO-1-THE-CRYSTAL-HARVEST": {
   "family": "scenario",
@@ -6090,7 +6128,7 @@
   "route": "gpt",
   "spec_sha256": "76d6772304b2ab3156af4be8e90a4a54f800f82f3fff5033b3bfa87b0a90fd1b",
   "prompt_sha256": "f40ff155d914b85586441ca5ffa5c1ec80bdeafd759b1d9f86228e22fc17b7c1",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:46:19+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -6114,7 +6152,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.103
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-SCE-SCENARIO-1-THE-FALLEN-OBSERVATORY": {
   "family": "scenario",
@@ -6123,7 +6162,7 @@
   "route": "gpt",
   "spec_sha256": "3af32c7492e8c4ed5f358a83d6cfa7d0d120ce0e2f24663d82f5f3a0573383ab",
   "prompt_sha256": "ca7f147270b87eb2ce2312be565b89c9fc2cab4688b31c26004d06f9ff6e135a",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:51:23+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -6147,7 +6186,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.07
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-SCE-SCENARIO-1-THE-OASIS-RAIDERS": {
   "family": "scenario",
@@ -6156,7 +6196,7 @@
   "route": "gpt",
   "spec_sha256": "98c41954163070b474011bff5f22d1dedd848f34e9076c0519195e64d8b01c26",
   "prompt_sha256": "d711d6ecefc4dc7dc0f6c9f6b3aaffac9f0820a7111d540e2694b2ffaac65ec3",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T22:56:45+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -6180,7 +6220,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.073
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  },
  "ART-SCE-SCENARIO-1-THE-RELIQUARY-OF-EDRAVA-SALTT": {
   "family": "scenario",
@@ -6189,7 +6230,7 @@
   "route": "gpt",
   "spec_sha256": "c570dfb5060558440fffa3e12d46e93a5936cf5d7b549d4efe470bdcedf0975a",
   "prompt_sha256": "4c126d0e8557e1accab2da41418d210aa5e2033a2ce7db905f0ad7670218ce3e",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-12T23:02:12+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -6213,6 +6254,7 @@
    "flags": [],
    "max_print_w_in_300ppi": 5.09
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T02:18:39+00:00"
  }
 }
