@@ -7312,5 +7312,38 @@
    "max_print_w_in_300ppi": 5.12
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-WOR-1-3-3-THE-SIX-BASTIONS": {
+  "family": "world",
+  "title": "1.3.3 The Six Bastions",
+  "heading_id": "h-133-the-six-bastions",
+  "route": "gpt",
+  "spec_sha256": "3f8d3716a9ca397011bdc5c34c8ac3fcbb673fc484467ddfae66535d1c9a7183",
+  "prompt_sha256": "a3fd70bfa948d2b89b9452ade131bf04b6698562fd3656a9fbee04e80c1f9e91",
+  "status": "received",
+  "received_at": "2026-10-13T10:40:32+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Pikes point into the reaching crowd, implying threat of violence; edge hatching weakens the vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-WOR-1-3-3-THE-SIX-BASTIONS.png",
+   "sha256": "0da078852f754b6a679b944dca2b773b9e63817d9bf36cf585e112984617a95e",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-WOR-1-3-3-THE-SIX-BASTIONS.png",
+   "sha256": "6ca3ade4c45379c5f9949cd91187c464b43a88d557684ef16e90e2aa94e7ce6e",
+   "px": [
+    1536,
+    1024
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.12
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
