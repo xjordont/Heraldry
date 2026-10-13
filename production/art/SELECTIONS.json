@@ -8952,5 +8952,38 @@
    "max_print_w_in_300ppi": 4.177
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-ITE-7-6-TREASURE-TABLES": {
+  "family": "item",
+  "title": "7.6 Treasure Tables",
+  "heading_id": "h-76-treasure-tables",
+  "route": "gpt",
+  "spec_sha256": "2f56b7c19af6f1fb2763a7cde63bbdcd4d547a2d44607811407ee23196f476d5",
+  "prompt_sha256": "be1ad41ad358f425206011effe81c74db9dfcf64fff1692343a0f36f3dbdb1e5",
+  "status": "received",
+  "received_at": "2026-10-13T15:03:10+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (16% mid-tones), sparse edge marks (0.07%), and narrow margin (2.4% outer-band ink); print preview remains readable.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-ITE-7-6-TREASURE-TABLES.png",
+   "sha256": "fb20e31c0826281ce1b603fbd3c2c22df2e413f75d03d6312027d909dae91ff6",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-ITE-7-6-TREASURE-TABLES.png",
+   "sha256": "a3a45ebb6cb73d4d4f7a2e949c15563b0507dc4970e56f6571bdbfe8fb3bb735",
+   "px": [
+    1519,
+    861
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.063
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
