@@ -8919,5 +8919,38 @@
    "max_print_w_in_300ppi": 4.07
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-VAGABOND": {
+  "family": "background",
+  "title": "Vagabond",
+  "heading_id": "h-vagabond",
+  "route": "gpt",
+  "spec_sha256": "dda6cc28873595405a80e37ac019d78a38bd31c9e7ec98869c3e4111bbf20d1d",
+  "prompt_sha256": "314558c12e4f20341a0b1dd75ce74e06d632f44fed91e552e414d47dbc4856a1",
+  "status": "received",
+  "received_at": "2026-10-13T14:55:48+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (13% mid-tones) and sparse edge marks (0.06%); milestone remains blank and image readable.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-VAGABOND.png",
+   "sha256": "179d222b4ff6ce5800c38abd050f0f85fb7f9dd74cb7181417b2bc585668dc24",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-VAGABOND.png",
+   "sha256": "04263f71c2939442e4ffd4815c62b0b0fdcb8397cbd18ecae15ca016af0e240e",
+   "px": [
+    1253,
+    1190
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.177
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
