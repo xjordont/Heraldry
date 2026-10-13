@@ -7675,5 +7675,38 @@
    "max_print_w_in_300ppi": 5.11
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CAM-THE-STRONGHOLD-CHAPEL": {
+  "family": "campaign",
+  "title": "The Stronghold Chapel",
+  "heading_id": "h-the-stronghold-chapel",
+  "route": "gpt",
+  "spec_sha256": "bf73ce354d70b55d7df1958e75dc89007a162c1d90252aa890d5cc509f7cdc8d",
+  "prompt_sha256": "88182b40539a2e7445f9cfbe99e477be98f216cc0e3a8e3351715e1bc1d15781",
+  "status": "received",
+  "received_at": "2026-10-13T11:45:20+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Print-size review shows ornate altar and chapel architecture contrary to Not ornate. Checker flags 5% tinted pixels. No regeneration under one-attempt limit.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CAM-THE-STRONGHOLD-CHAPEL.png",
+   "sha256": "db51f9c33686ff30c58fb1c7998d06ffa54c53a78146c1c1530be3382b6b1512",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CAM-THE-STRONGHOLD-CHAPEL.png",
+   "sha256": "b54c43b871171dbf149e9bdc97e5f1d095062e19323b3d1116e297741505e35d",
+   "px": [
+    1534,
+    1024
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.113
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
