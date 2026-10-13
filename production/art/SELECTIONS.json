@@ -8232,17 +8232,17 @@
   "title": "Tier 3 Druidic Rituals (d20)",
   "heading_id": "h-tier-3-druidic-rituals-d20",
   "route": "gpt",
-  "spec_sha256": "5324fae66652ecf027b80c137a337f9d1bedf94679b295adfc607644b0f4ad7c",
-  "prompt_sha256": "c1e25acc3da89fae82ce40055d34886892773c66828ce82f5f9d8de3b986d823",
-  "status": "rejected",
-  "received_at": "2026-10-13T13:15:40+00:00",
+  "spec_sha256": "c578412882ee51d6f18bd5e66eec07ea86e4a02bde4e4ecb1279fd52550315db",
+  "prompt_sha256": "651ef56440fbc9d8f72cc3e58f5b18e48c84e9fff40480bb6c3e7168fc108fab",
+  "status": "received",
+  "received_at": "2026-10-13T13:35:49+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "At 2.6 inches, the figure-tree fusion reads giant and Treant-like. Checker reports 4% tinted pixels. No regeneration under one-attempt limit.",
+  "model": "image_gen",
+  "notes": "",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-TRA-TIER-3-DRUIDIC-RITUALS-D20.png",
-   "sha256": "6d0561f63c1371e63f7da8cd51c04bccf9320b671fc1b3828685730c532e7d0c",
+   "sha256": "84ba79ed4ebb4e1e50d0f902faba6271a377723524707b40efb88da365c9ab65",
    "px": [
     1536,
     1024
@@ -8250,17 +8250,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-TRA-TIER-3-DRUIDIC-RITUALS-D20.png",
-   "sha256": "0835bd3e5483ca8ef972b37e38c7d1e84808b784a6d1ef5f395a0f7d73b6d755",
+   "sha256": "087d534448957e11553f7f5b21af006001028a0b3f755b51b8dbdb021c2d8466",
    "px": [
-    1492,
-    1000
+    1532,
+    1011
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.973
+   "max_print_w_in_300ppi": 5.107
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-13T13:27:53+00:00",
-  "rejected_reason": "Owner rejected: a big black hole in the tree trunk and the wrong subject. Redo as a colossal storm driving over a mountain with a small druid on a ridge (Maelstrom, weather control)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20": {
   "family": "tradition",
