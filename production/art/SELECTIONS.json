@@ -8865,17 +8865,17 @@
   "title": "Shepherd",
   "heading_id": "h-shepherd",
   "route": "gpt",
-  "spec_sha256": "5f769829cd9ea2cf1c60ccd331e34b4d2929f604813b4bb9bdd2ceed24cf82d1",
-  "prompt_sha256": "2ead4463dd752015c6e2c759ff6ee3355656be47d3fe3b99c938e7bfb79459a6",
-  "status": "rejected",
-  "received_at": "2026-10-13T14:43:44+00:00",
+  "spec_sha256": "16300574571fe3c333fcedcc1279db9bfe8bfe6faa127ad39f0833fdce38f42a",
+  "prompt_sha256": "c1142d94601dff94ae17c38be0b13c643a1538265e3b28c73afa369d7686bb94",
+  "status": "received",
+  "received_at": "2026-10-13T21:17:28+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker warns possible soft shading (13% mid-tones); print-size preview reads as etched ink marks.",
+  "notes": "Correction: Hang the sheep bell straight down by its strap from the fence-post top; rest the crook staff, sling, bandage roll, and stones on or against visible supports.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SHEPHERD.png",
-   "sha256": "8313f0e681e438fd3f1e965c382cfbb17a933cb64d55a8d1927d3b1a0a4529bd",
+   "sha256": "0fa116942e618de9f714b39411a69cb96cd14fecd0838ae3c008362206bd81fc",
    "px": [
     1254,
     1254
@@ -8883,18 +8883,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SHEPHERD.png",
-   "sha256": "ee48a4bde84cc3b01a4bf43bf03eb55992f81de2d0195dbf82e57f2f53644d61",
+   "sha256": "e8c99589d94179cc5af9b53378c04778b6c8ebb00063306b1377b0abc771d51c",
    "px": [
-    1236,
-    1068
+    1194,
+    1190
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.12
+   "max_print_w_in_300ppi": 3.98
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-SOLDIER": {
   "family": "background",
