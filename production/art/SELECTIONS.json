@@ -6586,5 +6586,38 @@
    "max_print_w_in_300ppi": 5.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME": {
+  "family": "scenario",
+  "title": "Scenario 3: The Shifting Sands of Time",
+  "heading_id": "h-scenario-3-the-shifting-sands-of-time",
+  "route": "gpt",
+  "spec_sha256": "265d68f3cb779f0b02d4dbe82c8b8205824c0b2b9c87a5fc12a2e61dd20cd840",
+  "prompt_sha256": "aa8370897c2675ccb470dbcf03961768ca12a15da2e2240f8bdd795300821ff1",
+  "status": "received",
+  "received_at": "2026-10-13T08:30:07+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: lower-left rubble shadow reaches the image edge and weakens the white vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME.png",
+   "sha256": "abcf9cfe30141423c78a51401924452a6f0d40922224d1fe1290e5a4abc743d7",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-3-THE-SHIFTING-SANDS-OF-TIME.png",
+   "sha256": "f47163399f8b7b0cf6b64f24b1f5770d61001f35f0f52847df102cb58ec9e20d",
+   "px": [
+    1519,
+    1019
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.063
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
