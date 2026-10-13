@@ -8820,5 +8820,38 @@
    "max_print_w_in_300ppi": 4.077
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-SCOUT": {
+  "family": "background",
+  "title": "Scout",
+  "heading_id": "h-scout",
+  "route": "gpt",
+  "spec_sha256": "51f5009e2b937c539149629b514bc01fa122181582d6e566fd536ea231cbb608",
+  "prompt_sha256": "89128bd512a258ed447987ff9db238f8fcf31d8000ffce37846a437fb818c213",
+  "status": "received",
+  "received_at": "2026-10-13T14:38:26+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (17% mid-tones) and narrow margin (2.1% outer band); required tracking props remain legible.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-SCOUT.png",
+   "sha256": "7e1ace4bbcc128554114c403076b9ff4313bcf09029366ee7a372725a391cf4c",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-SCOUT.png",
+   "sha256": "621e499e34f6d464676424bed3d7c1e6e346771a57c38664156dfa1e8e65572b",
+   "px": [
+    1229,
+    1141
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.097
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
