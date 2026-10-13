@@ -8688,5 +8688,38 @@
    "max_print_w_in_300ppi": 4.137
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-PAUPER": {
+  "family": "background",
+  "title": "Pauper",
+  "heading_id": "h-pauper",
+  "route": "gpt",
+  "spec_sha256": "abe9940629b6901b10c64488ceabdca35b0be4ba94b808b0296fad0dffee49dc",
+  "prompt_sha256": "928fff2c91a22c1f0e8a6041ef9c653f0d46859652659b2932bb36eb483033d0",
+  "status": "received",
+  "received_at": "2026-10-13T14:17:30+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (12% mid-tones) and detects sparse edge marks (0.05%); print-size objects remain legible.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-PAUPER.png",
+   "sha256": "4eb1949a53ec10d566aafa8f86b013cd9c5e3ad739ccbb92fb5c4b07301982cc",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-PAUPER.png",
+   "sha256": "0b9241e83af947c7f78422bf28d9d304cf6882aeedec94c373f70e48a4138229",
+   "px": [
+    1239,
+    1028
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.13
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
