@@ -8787,5 +8787,38 @@
    "max_print_w_in_300ppi": 4.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-SCHOLAR": {
+  "family": "background",
+  "title": "Scholar",
+  "heading_id": "h-scholar",
+  "route": "gpt",
+  "spec_sha256": "8f72ffeab03bf994b682d860ca71c9aa0802631842a01e262661c1f9f75bd860",
+  "prompt_sha256": "0add97881b507cda5a55a1eaa6b34b9773547be4c74c9891c690cf1066413505",
+  "status": "received",
+  "received_at": "2026-10-13T14:32:16+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (15% mid-tones) and a narrow 5.8% outer-band margin; diagram marks remain scribbled and unreadable.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-SCHOLAR.png",
+   "sha256": "8eb627b65ccf7bf49612b4c4fdc2062d15de75c20af56a3255e81ddbc8ef4a8e",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-SCHOLAR.png",
+   "sha256": "340fb8ac4f521ce48ac9e6869b7fd884b78d4b1d8e84046bc9ce0ea96b07a198",
+   "px": [
+    1223,
+    1213
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.077
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
