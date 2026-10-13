@@ -8234,7 +8234,7 @@
   "route": "gpt",
   "spec_sha256": "5324fae66652ecf027b80c137a337f9d1bedf94679b295adfc607644b0f4ad7c",
   "prompt_sha256": "c1e25acc3da89fae82ce40055d34886892773c66828ce82f5f9d8de3b986d823",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-13T13:15:40+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8258,7 +8258,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.973
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-13T13:27:53+00:00",
+  "rejected_reason": "Owner rejected: a big black hole in the tree trunk and the wrong subject. Redo as a colossal storm driving over a mountain with a small druid on a ridge (Maelstrom, weather control)."
  },
  "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20": {
   "family": "tradition",

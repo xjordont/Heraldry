@@ -1203,25 +1203,26 @@
   ]
  },
  "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20": {
-  "identity": "Tier 3 Druidic Rituals: becoming a clause in the oldest contract (Avatar of the Wild, Verdant Dominion, Summon Treant, Maelstrom).",
-  "composition": "A druid half-merged with an ancient oak, bark creeping over their skin and branches rising like antlers from their head; frontal three-quarter figure growing out of the trunk. Small vignette, densest at the caster and thinning into white paper.",
+  "identity": "Tier 3 Druidic Rituals: becoming a clause in the oldest contract, with weather as the druid's weapon (Avatar of the Wild, Verdant Dominion, Summon Treant, Maelstrom).",
+  "composition": "A low wide view up a storm-lashed ridge: a lone druid stands small on a rocky outcrop in the lower left, arms spread, cloak and hair torn sideways by the wind. A colossal storm front, a towering wall of churning cloud with a funnel of wind turning at its heart, rises over the whole upper half of the picture and drives against a great mountain on the right; the mountain's flank is breaking away, a landslide of rock and uprooted pines sliding down. Small vignette, densest at the druid and the storm's heart, thinning into white paper.",
   "details": [
-   "Lower body fused with the oak trunk",
-   "Bark texture climbing arms and chest",
-   "Branches forming antlers from the head",
-   "Face still human, eyes calm",
-   "Roots spreading across the ground",
-   "Leaves as a few sparse ink flecks",
-   "Dark hollow in the trunk beside"
+   "Small druid in a weathered hooded cloak on a rock outcrop, arms raised and spread, back mostly to the viewer, no face detail needed",
+   "Cloak, hair and a staff's trailing cords streaming flat in the wind",
+   "Towering storm front drawn as huge rolling cloud masses in bold dark shapes, with rain curtains as long fine diagonal strokes",
+   "A tightening funnel of wind and cloud above the mountain, ringed by torn trees and flung debris",
+   "Great mountain with a cracking flank: boulders and a slab of rock tumbling, pines uprooted and sliding with the slide",
+   "Trees on the ridge bent flat in one direction, a few leaves and branches flying",
+   "Lightning as a single jagged branching bolt, drawn as a thin white-and-black fork, never a glow"
   ],
-  "atmosphere": "Reverent, uncanny, solemn.",
+  "atmosphere": "Awe and dread: nature unleashed and obeying one small figure. Epic scale, with the druid tiny against the weather.",
   "avoid": [
-   "Not a Treant monster: a person fusing, not a giant",
-   "No glowing eyes",
-   "Do not make the face monstrous"
+   "No hollow, hole or cave in any tree or mountain",
+   "Not a Treant monster and no giant tree-person",
+   "No glowing eyes, glow, halos or radiating light rays",
+   "No lettering or readable runes"
   ],
   "sources": [
-   "8. Powers and Traditions: 8.6 Druidic Rituals, Tier 3"
+   "8. Powers and Traditions: 8.6 Druidic Rituals, Tier 3 (Maelstrom, Avatar of the Wild)"
   ]
  },
  "ART-TRA-TIER-1-PSYCHIC-ABILITIES-D20": {

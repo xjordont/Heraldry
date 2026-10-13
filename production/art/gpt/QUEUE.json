@@ -1,114 +1,14 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-13T12:42:49+00:00",
+ "generated_at": "2026-10-13T13:27:59+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
- "receipts_base": 270,
+ "receipts_base": 277,
  "target_pixels": 1572864,
- "count": 37,
+ "count": 31,
  "items": [
-  {
-   "id": "ART-TRA-TIER-2-DRUIDIC-RITUALS-D20",
-   "family": "tradition",
-   "register": "scene",
-   "ref_set": "tradition",
-   "title": "Tier 2 Druidic Rituals (d20)",
-   "prompt": "production/art/gpt/prompts/ART-TRA-TIER-2-DRUIDIC-RITUALS-D20.txt",
-   "prompt_sha256": "9107013e64a6e97e9f1e32faeffc4bb8c1d6d637ba8b29043bcc6bd2c76bb6f5",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
-   ],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "Do not let the trees have faces.",
-    "No glowing aura.",
-    "Do not copy Tier 3's bark-skin."
-   ]
-  },
-  {
-   "id": "ART-TRA-TIER-2-SORCERIES-D20",
-   "family": "tradition",
-   "register": "scene",
-   "ref_set": "tradition",
-   "title": "Tier 2 Sorceries (d20)",
-   "prompt": "production/art/gpt/prompts/ART-TRA-TIER-2-SORCERIES-D20.txt",
-   "prompt_sha256": "022e41cb2f19e82cc6bc8377e38c32af462f7ccd07b33dd1ec791e6fcdbf0faf",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
-   ],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "No glow wash.",
-    "Not a Tier 3 consumed look: body intact.",
-    "Do not copy Tier 1's palm close-up."
-   ]
-  },
-  {
-   "id": "ART-TRA-TIER-3-ARCANE-SPELLS-D20",
-   "family": "tradition",
-   "register": "scene",
-   "ref_set": "tradition",
-   "title": "Tier 3 Arcane Spells (d20)",
-   "prompt": "production/art/gpt/prompts/ART-TRA-TIER-3-ARCANE-SPELLS-D20.txt",
-   "prompt_sha256": "b0bceeadbdb67b86e81a03c42355c7e3562c7b36a1e94b423383e4e514b95df5",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
-   ],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "No lettering on tome pages or scrolls: marks only as abstract scribble.",
-    "No gore or visible wounds on the corpses.",
-    "Do not make the wizard heroic."
-   ]
-  },
-  {
-   "id": "ART-TRA-TIER-3-DIVINE-PRAYERS-D20",
-   "family": "tradition",
-   "register": "scene",
-   "ref_set": "tradition",
-   "title": "Tier 3 Divine Prayers (d20)",
-   "prompt": "production/art/gpt/prompts/ART-TRA-TIER-3-DIVINE-PRAYERS-D20.txt",
-   "prompt_sha256": "0de7f8335fec253a7d7c7049d9422e581257b2ba783a6f9c57f362f3cc4f0ab5",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
-   ],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "Do not resolve the cloud shape into a clear god or angel.",
-    "No lettering or symbol.",
-    "Do not make the priest triumphant."
-   ]
-  },
   {
    "id": "ART-TRA-TIER-3-DRUIDIC-RITUALS-D20",
    "family": "tradition",
@@ -116,7 +16,7 @@
    "ref_set": "tradition",
    "title": "Tier 3 Druidic Rituals (d20)",
    "prompt": "production/art/gpt/prompts/ART-TRA-TIER-3-DRUIDIC-RITUALS-D20.txt",
-   "prompt_sha256": "c1e25acc3da89fae82ce40055d34886892773c66828ce82f5f9d8de3b986d823",
+   "prompt_sha256": "651ef56440fbc9d8f72cc3e58f5b18e48c84e9fff40480bb6c3e7168fc108fab",
    "size": "1536x1024",
    "print_w_in": 2.6,
    "references": [
@@ -129,59 +29,10 @@
    "size_class": "",
    "must": [],
    "avoid": [
-    "Not a Treant monster: a person fusing, not a giant.",
-    "No glowing eyes.",
-    "Do not make the face monstrous."
-   ]
-  },
-  {
-   "id": "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20",
-   "family": "tradition",
-   "register": "scene",
-   "ref_set": "tradition",
-   "title": "Tier 3 Psychic Abilities (d20)",
-   "prompt": "production/art/gpt/prompts/ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20.txt",
-   "prompt_sha256": "00e57b9f315fe1804765d90be143098b1984a598bf7702e816dee40c36417472",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
-   ],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "No glow or beams.",
-    "No monsters: the enemies are ordinary soldiers.",
-    "Do not use the Tier 1 pebble ring."
-   ]
-  },
-  {
-   "id": "ART-TRA-TIER-3-SORCERIES-D20",
-   "family": "tradition",
-   "register": "scene",
-   "ref_set": "tradition",
-   "title": "Tier 3 Sorceries (d20)",
-   "prompt": "production/art/gpt/prompts/ART-TRA-TIER-3-SORCERIES-D20.txt",
-   "prompt_sha256": "7bff6cc76d485e7aba9a1c497baae5dac0e136fdaf4ff58c78436da4657dd290",
-   "size": "1536x1024",
-   "print_w_in": 2.6,
-   "references": [
-    "assets/art/style/STYLE-REF-29-cleric-holy-fire.jpg",
-    "assets/art/style/STYLE-REF-26-wizard-summoning-beast.jpg",
-    "assets/art/style/STYLE-REF-28-wizard-vs-serpent-fiend.jpg",
-    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
-   ],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "No gore.",
-    "No fleeing or large villagers: they stay small and praying.",
-    "No glow wash."
+    "No hollow, hole or cave in any tree or mountain.",
+    "Not a Treant monster and no giant tree-person.",
+    "No glowing eyes, glow, halos or radiating light rays.",
+    "No lettering or readable runes."
    ]
   },
   {
