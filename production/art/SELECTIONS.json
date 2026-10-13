@@ -7543,5 +7543,38 @@
    "max_print_w_in_300ppi": 5.11
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CAM-THE-ARCANUM": {
+  "family": "campaign",
+  "title": "The Arcanum",
+  "heading_id": "h-the-arcanum",
+  "route": "gpt",
+  "spec_sha256": "7c1ea61479288b8366af16f390f279dc166bab1583ae10cf886c0f68691084c7",
+  "prompt_sha256": "702394aeb76042f46a1a361b4b17579aefc851af2917e1f5a42ba9eff942a555",
+  "status": "received",
+  "received_at": "2026-10-13T11:32:27+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CAM-THE-ARCANUM.png",
+   "sha256": "3b74c954d78a4e3fd9de4ca75de86e326c8b3b681f27498b2194b6652214dd7d",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CAM-THE-ARCANUM.png",
+   "sha256": "d58359c799a2cbcdabd27ee56d1141c0b41fa08358247d419ed5f30587aefa7f",
+   "px": [
+    1532,
+    1021
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.107
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
