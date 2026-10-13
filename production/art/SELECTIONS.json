@@ -8766,17 +8766,17 @@
   "title": "Sailor",
   "heading_id": "h-sailor",
   "route": "gpt",
-  "spec_sha256": "43711281fccdc7738c06215aed8463a0d3aa5775f0d91b2aeb41dc6ef3ccb2af",
-  "prompt_sha256": "6300cb56f4369b20b3138070d8d1514f8a2e57683556a02e785bc2f1cf45c5fa",
-  "status": "rejected",
-  "received_at": "2026-10-13T14:26:32+00:00",
+  "spec_sha256": "637399bbda267ff588bef49e6bd428a30266f60d4443ce9f0841f7df274a8e74",
+  "prompt_sha256": "b0a3837dbe515cc6867ed2d8c6e7df3683200474f8e491c060beab015ea6545b",
+  "status": "received",
+  "received_at": "2026-10-13T21:07:07+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker warns possible soft shading (18% mid-tones) and narrow margin (3.8% outer-band ink); print view remains readable.",
+  "notes": "Correction: Set the buckler lower rim on the deck while its face leans against a visible rail post; rest the shortsword, rope coil, marlinspike, and hanging rope securely on their supports.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SAILOR.png",
-   "sha256": "d5ec57ba3c74bb3324f646075773afdf38b3129fe90c9e8eb73e62e1d45ffd4c",
+   "sha256": "78417a42ee1a6f1adba39da4139f1bd3912570bcdb3b5a74ea9b808f552108ee",
    "px": [
     1254,
     1254
@@ -8784,18 +8784,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SAILOR.png",
-   "sha256": "e8f2e570bf030d61ac91b21dddf6f6ca8baa52e231065b883d75baafafc81374",
+   "sha256": "c697ea18dfc1f4a1b1b15ca5a9507e94ef1f9a839b3fc2e9d6ec5f584b7083cf",
    "px": [
-    1220,
-    1149
+    1233,
+    1063
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.067
+   "max_print_w_in_300ppi": 4.11
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-SCHOLAR": {
   "family": "background",
