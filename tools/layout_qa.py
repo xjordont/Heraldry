@@ -8,7 +8,8 @@ import pymupdf
 
 W, H = 612, 792
 SAFE = 27
-TOP, BOT = 0.65 * 72, 792 - 0.7 * 72
+TOP, BOT = 0.68 * 72, 792 - 0.7 * 72
+TAB = 0.42 * 72   # design v4 thumb-tab strip
 
 
 def lines_of(page, fonts=False):
@@ -29,7 +30,7 @@ def stranded_headings(page):
     ls = lines_of(page, fonts=True)
     hits = []
     for r, t, sz, f in ls:
-        is_head = ("Cinzel" in f and sz > 12) or ("Serif4-Semibold" in f and sz > 12) or ("Serif4-Bold" in f and sz > 10.8)
+        is_head = ("Grenze" in f and sz > 12) or ("Serif4-Semibold" in f and sz > 12) or ("Serif4-Bold" in f and sz > 10.8)
         if is_head and r.y1 > BOT - 60 and r.y0 > 200:
             below = [x for x in ls if x[0].y0 > r.y1 and abs(x[0].x0 - r.x0) < 60]
             if len(below) < 2:
@@ -58,6 +59,8 @@ def main():
                     if inter.get_area() > 6:
                         flags.append({"page": n, "code": "text_overlap", "a": boxes[x][1][:50], "b": boxes[y][1][:50]})
         for r, t, s in ls:
+            if r.x1 < TAB or r.x0 > W - TAB:
+                continue   # thumb tab: rotated chapter keyword in the outer strip (navigation furniture, bleeds by design)
             if min(r.x0, r.y0, W - r.x1, H - r.y1) < SAFE - 0.1:
                 flags.append({"page": n, "code": "unsafe_edge", "text": t[:50]})
             if s < 8.9:
@@ -67,8 +70,14 @@ def main():
                 flags.append({"page": n, "code": "outside_body_frame", "text": t[:50], "bbox": [round(v) for v in r]})
         for t in stranded_headings(page):
             flags.append({"page": n, "code": "stranded_heading", "text": t})
-        body = [r for r, t, s in ls if TOP - 2 < r.y0 and r.y1 < BOT + 2]
-        if n >= a.first_body_page and len(body) < 6 and not page.get_images() and not page.get_drawings():
+        body = [r for r, t, s in ls if TOP - 2 < r.y0 and r.y1 < BOT + 2 and TAB < r.x0 < W - TAB]
+        # furniture (running-head rules, folio shield, tab) draws on every page, so only art or drawings
+        # inside the body frame count as content
+        body_art = [im for im in page.get_image_info() if im["bbox"][1] > TOP and im["bbox"][3] - im["bbox"][1] > 40]
+        body_drw = [dr for dr in page.get_drawings() if dr["rect"].y0 > TOP + 4 and dr["rect"].y1 < BOT - 4 and TAB < dr["rect"].x0 < W - TAB]
+        # a deliberate blank verso before a chapter opener (Chapter 1 starts on a recto) is book convention
+        blank_verso = not body and n % 2 == 0 and n < len(doc) and "Chapter " in doc[n].get_text()[:400]
+        if n >= a.first_body_page and len(body) < 6 and not body_art and not body_drw and not blank_verso:
             flags.append({"page": n, "code": "near_empty", "lines": len(body)})
     codes = {}
     for f in flags:

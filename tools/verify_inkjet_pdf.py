@@ -49,7 +49,11 @@ def inspect(pdf: Path, config: dict) -> dict:
                         x0, y0, x1, y1 = span['bbox']
                         if span['size'] < minimum - 0.1:
                             fail('small_type', n, {'size_pt': span['size'], 'text': span['text'][:80]})
-                        if min(x0, y0, width - x1, height - y1) < safe - 0.1:
+                        # Thumb tab (design v4): the rotated chapter keyword in the outer 0.42 in strip is
+                        # redundant navigation (the running head names the chapter), so it is exempt from the
+                        # essential-content edge rule; it must still survive the overscan test below.
+                        tab = x1 < 0.42 * 72 or x0 > width - 0.42 * 72
+                        if not tab and min(x0, y0, width - x1, height - y1) < safe - 0.1:
                             fail('unsafe_text', n, {'bbox': span['bbox'], 'text': span['text'][:80]})
                         grown = [(x0 - width/2)*scale + width/2,
                                  (y0 - height/2)*scale + height/2,

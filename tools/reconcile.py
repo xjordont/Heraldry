@@ -7,9 +7,13 @@ appears in the PDF text layer, and that bold/italic runs are rendered in bold/
 italic faces. Normalisation rules (documented in production/qa/RECONCILIATION.md):
   * whitespace runs (incl. U+00A0 no-break spaces and line breaks) → one space
   * U+00AD discretionary hyphens inserted by line breaking are removed
-  * running heads/folios outside the body frame are excluded
+  * running heads/folios outside the body frame are excluded, and so are the thumb tabs
+    (design v4: rotated chapter keywords in the outer 0.42 in strip, navigation furniture)
   * the manual Markdown TOC is replaced by the generated contents (not searched)
   * front-title split: H1 "A: B" is rendered as two display lines "A" / "B"
+  * flavour face (owner, design v4, 2026-10-12): the source's emphasised flavour, chapter leads and
+    lore are set in IM FELL English roman; that face counts as the rendering of emphasis, as an
+    italic face does. Every other emphasised run must still be in an italic face.
 """
 from __future__ import annotations
 import argparse, json, re, sys
@@ -20,7 +24,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from parse_source import plain  # noqa: E402
 
-TOP, BOT = 0.65 * 72 - 4, 792 - 0.7 * 72 + 4
+TOP, BOT = 0.68 * 72 - 4, 792 - 0.7 * 72 + 4
+TAB = 0.42 * 72          # thumb-tab strip at the outer edge (furniture, never body text)
 
 
 def norm(s: str) -> str:
@@ -47,12 +52,14 @@ def pdf_stream(pdf, skip_covers=False):
                 y0, y1 = l["bbox"][1], l["bbox"][3]
                 if y1 < TOP or y0 > BOT:
                     continue
+                if l["bbox"][2] < TAB or l["bbox"][0] > 612 - TAB:
+                    continue
                 for sp in l["spans"]:
                     t = sp["text"]
                     fn = sp["font"]
                     fonts.add(fn.split("+")[-1])
                     is_b = any(k in fn for k in ("Bold", "Semibold", "SemiBold", "Black"))
-                    is_i = "Ita" in fn
+                    is_i = "Ita" in fn or "IM_FELL" in fn
                     # concatenate adjacent spans of the same class; break with "|" otherwise
                     bold.append(t if is_b else "|")
                     ital.append(t if is_i else "|")
@@ -192,7 +199,9 @@ def main():
     res["units"] = len(units)
     res["status"] = "PASS" if not res["duplicated_blocks"] and not res["out_of_order"] and not res["missing"] and not res["table_cells_missing"] and not res["strong_missing"] and not res["em_missing"] else "FAIL"
     res["pdf_pages"] = npages
-    allowed = {"SourceSerif4", "SourceSans3", "Cinzel"}
+    # design v4 faces (owner-approved 2026-10-12): Grenze Gotisch (titles) and IM FELL English (flavour);
+    # Cinzel is retired.
+    allowed = {"SourceSerif4", "SourceSans3", "GrenzeGotisch", "IM_FELL_English_Roman"}
     res["fonts"] = sorted(fonts)
     res["unexpected_fonts"] = sorted(f for f in fonts if f.split("-")[0] not in allowed)
     if res["unexpected_fonts"]:

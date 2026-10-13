@@ -1,7 +1,7 @@
 {
  "pages": {
-  "cream": 598,
-  "white": 598
+  "cream": 656,
+  "white": 656
  },
  "substrate_edges": {
   "cream": [],
@@ -11,7 +11,7 @@
  "page_text_differences": [],
  "links": {
   "cream": {
-   "internal_links": 1257,
+   "internal_links": 1220,
    "unresolved_links": 0,
    "examples": [],
    "bookmarks": 551,
@@ -23,7 +23,7 @@
    "bookmarks_bad_target": 0
   },
   "white": {
-   "internal_links": 1257,
+   "internal_links": 1220,
    "unresolved_links": 0,
    "examples": [],
    "bookmarks": 551,
@@ -38,33 +38,20 @@
  "rasters": [
   {
    "page": 7,
-   "xref": 63479,
+   "xref": 66220,
    "px": [
-    1748,
-    900
+    1527,
+    1001
    ],
    "placed_in": [
-    5.83,
-    3.0
+    4.5,
+    2.95
    ],
-   "effective_ppi": 300
+   "effective_ppi": 339
   },
   {
-   "page": 11,
-   "xref": 63481,
-   "px": [
-    1533,
-    1021
-   ],
-   "placed_in": [
-    3.3,
-    2.2
-   ],
-   "effective_ppi": 465
-  },
-  {
-   "page": 13,
-   "xref": 63483,
+   "page": 9,
+   "xref": 66222,
    "px": [
     1536,
     1024
@@ -76,8 +63,164 @@
    "effective_ppi": 465
   },
   {
-   "page": 22,
-   "xref": 63485,
+   "page": 11,
+   "xref": 66224,
+   "px": [
+    1526,
+    1016
+   ],
+   "placed_in": [
+    3.3,
+    2.2
+   ],
+   "effective_ppi": 462
+  },
+  {
+   "page": 11,
+   "xref": 66226,
+   "px": [
+    1525,
+    1023
+   ],
+   "placed_in": [
+    3.3,
+    2.21
+   ],
+   "effective_ppi": 462
+  },
+  {
+   "page": 12,
+   "xref": 66228,
+   "px": [
+    1526,
+    1011
+   ],
+   "placed_in": [
+    3.3,
+    2.19
+   ],
+   "effective_ppi": 462
+  },
+  {
+   "page": 12,
+   "xref": 66230,
+   "px": [
+    1533,
+    1020
+   ],
+   "placed_in": [
+    3.3,
+    2.2
+   ],
+   "effective_ppi": 465
+  },
+  {
+   "page": 12,
+   "xref": 66232,
+   "px": [
+    1524,
+    983
+   ],
+   "placed_in": [
+    3.3,
+    2.13
+   ],
+   "effective_ppi": 462
+  },
+  {
+   "page": 13,
+   "xref": 66234,
+   "px": [
+    1536,
+    1022
+   ],
+   "placed_in": [
+    3.3,
+    2.2
+   ],
+   "effective_ppi": 465
+  },
+  {
+   "page": 14,
+   "xref": 66236,
+   "px": [
+    1536,
+    1024
+   ],
+   "placed_in": [
+    3.3,
+    2.2
+   ],
+   "effective_ppi": 465
+  },
+  {
+   "page": 14,
+   "xref": 66238,
+   "px": [
+    1534,
+    1015
+   ],
+   "placed_in": [
+    3.3,
+    2.18
+   ],
+   "effective_ppi": 465
+  },
+  {
+   "page": 15,
+   "xref": 66240,
+   "px": [
+    1527,
+    1022
+   ],
+   "placed_in": [
+    3.3,
+    2.21
+   ],
+   "effective_ppi": 463
+  },
+  {
+   "page": 15,
+   "xref": 66242,
+   "px": [
+    1532,
+    1011
+   ],
+   "placed_in": [
+    3.3,
+    2.18
+   ],
+   "effective_ppi": 464
+  },
+  {
+   "page": 16,
+   "xref": 66244,
+   "px": [
+    1531,
+    999
+   ],
+   "placed_in": [
+    3.3,
+    2.15
+   ],
+   "effective_ppi": 464
+  },
+  {
+   "page": 16,
+   "xref": 66246,
+   "px": [
+    1524,
+    1002
+   ],
+   "placed_in": [
+    3.3,
+    2.17
+   ],
+   "effective_ppi": 462
+  },
+  {
+   "page": 24,
+   "xref": 66248,
    "px": [
     1747,
     900
@@ -89,8 +232,8 @@
    "effective_ppi": 300
   },
   {
-   "page": 46,
-   "xref": 63487,
+   "page": 48,
+   "xref": 66250,
    "px": [
     1746,
     901
@@ -102,8 +245,8 @@
    "effective_ppi": 300
   },
   {
-   "page": 55,
-   "xref": 63489,
+   "page": 57,
+   "xref": 66252,
    "px": [
     1746,
     901
@@ -115,8 +258,8 @@
    "effective_ppi": 300
   },
   {
-   "page": 70,
-   "xref": 63491,
+   "page": 72,
+   "xref": 66254,
    "px": [
     1746,
     901
@@ -128,8 +271,8 @@
    "effective_ppi": 300
   },
   {
-   "page": 90,
-   "xref": 63493,
+   "page": 93,
+   "xref": 66256,
    "px": [
     1746,
     901
@@ -141,99 +284,2140 @@
    "effective_ppi": 300
   },
   {
-   "page": 100,
-   "xref": 63495,
+   "page": 103,
+   "xref": 66258,
    "px": [
-    837,
-    922
+    891,
+    1471
+   ],
+   "placed_in": [
+    1.9,
+    3.14
+   ],
+   "effective_ppi": 469
+  },
+  {
+   "page": 103,
+   "xref": 66260,
+   "px": [
+    996,
+    1255
+   ],
+   "placed_in": [
+    1.9,
+    2.39
+   ],
+   "effective_ppi": 524
+  },
+  {
+   "page": 104,
+   "xref": 66262,
+   "px": [
+    979,
+    1400
+   ],
+   "placed_in": [
+    1.9,
+    2.72
+   ],
+   "effective_ppi": 515
+  },
+  {
+   "page": 104,
+   "xref": 66264,
+   "px": [
+    842,
+    1466
+   ],
+   "placed_in": [
+    1.9,
+    3.31
+   ],
+   "effective_ppi": 443
+  },
+  {
+   "page": 105,
+   "xref": 66266,
+   "px": [
+    1001,
+    1377
+   ],
+   "placed_in": [
+    1.9,
+    2.61
+   ],
+   "effective_ppi": 527
+  },
+  {
+   "page": 105,
+   "xref": 66268,
+   "px": [
+    979,
+    1474
+   ],
+   "placed_in": [
+    1.9,
+    2.86
+   ],
+   "effective_ppi": 515
+  },
+  {
+   "page": 106,
+   "xref": 66270,
+   "px": [
+    877,
+    1485
+   ],
+   "placed_in": [
+    1.9,
+    3.22
+   ],
+   "effective_ppi": 462
+  },
+  {
+   "page": 106,
+   "xref": 66272,
+   "px": [
+    864,
+    1442
+   ],
+   "placed_in": [
+    1.9,
+    3.17
+   ],
+   "effective_ppi": 455
+  },
+  {
+   "page": 107,
+   "xref": 66274,
+   "px": [
+    816,
+    1467
+   ],
+   "placed_in": [
+    1.9,
+    3.42
+   ],
+   "effective_ppi": 429
+  },
+  {
+   "page": 107,
+   "xref": 66276,
+   "px": [
+    734,
+    1501
+   ],
+   "placed_in": [
+    1.9,
+    3.89
+   ],
+   "effective_ppi": 386
+  },
+  {
+   "page": 108,
+   "xref": 66278,
+   "px": [
+    1005,
+    1405
+   ],
+   "placed_in": [
+    1.9,
+    2.66
+   ],
+   "effective_ppi": 529
+  },
+  {
+   "page": 110,
+   "xref": 66280,
+   "px": [
+    1253,
+    1084
+   ],
+   "placed_in": [
+    1.6,
+    1.38
+   ],
+   "effective_ppi": 783
+  },
+  {
+   "page": 121,
+   "xref": 66282,
+   "px": [
+    943,
+    1400
+   ],
+   "placed_in": [
+    1.9,
+    2.82
+   ],
+   "effective_ppi": 496
+  },
+  {
+   "page": 122,
+   "xref": 66284,
+   "px": [
+    970,
+    1504
+   ],
+   "placed_in": [
+    1.9,
+    2.95
+   ],
+   "effective_ppi": 511
+  },
+  {
+   "page": 123,
+   "xref": 66286,
+   "px": [
+    990,
+    1317
+   ],
+   "placed_in": [
+    1.9,
+    2.53
+   ],
+   "effective_ppi": 521
+  },
+  {
+   "page": 125,
+   "xref": 66288,
+   "px": [
+    765,
+    1474
+   ],
+   "placed_in": [
+    1.9,
+    3.66
+   ],
+   "effective_ppi": 403
+  },
+  {
+   "page": 126,
+   "xref": 66290,
+   "px": [
+    971,
+    1496
+   ],
+   "placed_in": [
+    1.9,
+    2.93
+   ],
+   "effective_ppi": 511
+  },
+  {
+   "page": 128,
+   "xref": 66292,
+   "px": [
+    970,
+    1332
+   ],
+   "placed_in": [
+    1.9,
+    2.61
+   ],
+   "effective_ppi": 511
+  },
+  {
+   "page": 129,
+   "xref": 66294,
+   "px": [
+    802,
+    1497
+   ],
+   "placed_in": [
+    1.9,
+    3.55
+   ],
+   "effective_ppi": 422
+  },
+  {
+   "page": 130,
+   "xref": 66296,
+   "px": [
+    1015,
+    1502
+   ],
+   "placed_in": [
+    1.9,
+    2.81
+   ],
+   "effective_ppi": 534
+  },
+  {
+   "page": 132,
+   "xref": 66298,
+   "px": [
+    954,
+    1488
+   ],
+   "placed_in": [
+    1.9,
+    2.96
+   ],
+   "effective_ppi": 502
+  },
+  {
+   "page": 133,
+   "xref": 66300,
+   "px": [
+    968,
+    1495
+   ],
+   "placed_in": [
+    1.9,
+    2.93
+   ],
+   "effective_ppi": 509
+  },
+  {
+   "page": 135,
+   "xref": 66302,
+   "px": [
+    1015,
+    1439
+   ],
+   "placed_in": [
+    1.9,
+    2.69
+   ],
+   "effective_ppi": 534
+  },
+  {
+   "page": 137,
+   "xref": 66304,
+   "px": [
+    951,
+    1521
+   ],
+   "placed_in": [
+    1.9,
+    3.04
+   ],
+   "effective_ppi": 501
+  },
+  {
+   "page": 144,
+   "xref": 66306,
+   "px": [
+    1746,
+    901
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 159,
+   "xref": 66308,
+   "px": [
+    1535,
+    995
+   ],
+   "placed_in": [
+    2.6,
+    1.69
+   ],
+   "effective_ppi": 590
+  },
+  {
+   "page": 220,
+   "xref": 66310,
+   "px": [
+    1746,
+    901
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 233,
+   "xref": 66312,
+   "px": [
+    1496,
+    980
+   ],
+   "placed_in": [
+    2.6,
+    1.7
+   ],
+   "effective_ppi": 575
+  },
+  {
+   "page": 268,
+   "xref": 66314,
+   "px": [
+    1747,
+    900
+   ],
+   "placed_in": [
+    5.82,
+    3.0
+   ],
+   "effective_ppi": 300
+  },
+  {
+   "page": 284,
+   "xref": 66316,
+   "px": [
+    1215,
+    1012
+   ],
+   "placed_in": [
+    1.9,
+    1.58
+   ],
+   "effective_ppi": 639
+  },
+  {
+   "page": 285,
+   "xref": 66318,
+   "px": [
+    1180,
+    1074
+   ],
+   "placed_in": [
+    1.9,
+    1.73
+   ],
+   "effective_ppi": 621
+  },
+  {
+   "page": 285,
+   "xref": 66320,
+   "px": [
+    1122,
+    1191
+   ],
+   "placed_in": [
+    1.9,
+    2.02
+   ],
+   "effective_ppi": 591
+  },
+  {
+   "page": 286,
+   "xref": 66322,
+   "px": [
+    1175,
+    1175
+   ],
+   "placed_in": [
+    1.9,
+    1.9
+   ],
+   "effective_ppi": 618
+  },
+  {
+   "page": 286,
+   "xref": 66324,
+   "px": [
+    773,
+    1238
+   ],
+   "placed_in": [
+    1.9,
+    3.04
+   ],
+   "effective_ppi": 407
+  },
+  {
+   "page": 287,
+   "xref": 66326,
+   "px": [
+    1212,
+    1046
+   ],
+   "placed_in": [
+    1.9,
+    1.64
+   ],
+   "effective_ppi": 638
+  },
+  {
+   "page": 287,
+   "xref": 66328,
+   "px": [
+    1214,
+    1103
+   ],
+   "placed_in": [
+    1.9,
+    1.73
+   ],
+   "effective_ppi": 639
+  },
+  {
+   "page": 288,
+   "xref": 66330,
+   "px": [
+    1019,
+    1225
+   ],
+   "placed_in": [
+    1.9,
+    2.28
+   ],
+   "effective_ppi": 536
+  },
+  {
+   "page": 289,
+   "xref": 66332,
+   "px": [
+    1146,
+    1200
+   ],
+   "placed_in": [
+    1.9,
+    1.99
+   ],
+   "effective_ppi": 603
+  },
+  {
+   "page": 289,
+   "xref": 66334,
+   "px": [
+    1221,
+    1217
+   ],
+   "placed_in": [
+    1.9,
+    1.89
+   ],
+   "effective_ppi": 643
+  },
+  {
+   "page": 290,
+   "xref": 66336,
+   "px": [
+    1201,
+    1235
+   ],
+   "placed_in": [
+    1.9,
+    1.95
+   ],
+   "effective_ppi": 632
+  },
+  {
+   "page": 290,
+   "xref": 66338,
+   "px": [
+    1154,
+    1183
+   ],
+   "placed_in": [
+    1.9,
+    1.95
+   ],
+   "effective_ppi": 607
+  },
+  {
+   "page": 291,
+   "xref": 66340,
+   "px": [
+    1201,
+    1201
+   ],
+   "placed_in": [
+    1.9,
+    1.9
+   ],
+   "effective_ppi": 632
+  },
+  {
+   "page": 291,
+   "xref": 66342,
+   "px": [
+    1208,
+    1198
+   ],
+   "placed_in": [
+    1.9,
+    1.88
+   ],
+   "effective_ppi": 636
+  },
+  {
+   "page": 292,
+   "xref": 66344,
+   "px": [
+    1254,
+    1106
+   ],
+   "placed_in": [
+    1.9,
+    1.68
+   ],
+   "effective_ppi": 660
+  },
+  {
+   "page": 293,
+   "xref": 66346,
+   "px": [
+    1208,
+    1254
+   ],
+   "placed_in": [
+    1.9,
+    1.97
+   ],
+   "effective_ppi": 636
+  },
+  {
+   "page": 294,
+   "xref": 66348,
+   "px": [
+    1013,
+    1250
+   ],
+   "placed_in": [
+    1.9,
+    2.34
+   ],
+   "effective_ppi": 533
+  },
+  {
+   "page": 295,
+   "xref": 66350,
+   "px": [
+    1226,
+    1184
+   ],
+   "placed_in": [
+    1.9,
+    1.83
+   ],
+   "effective_ppi": 645
+  },
+  {
+   "page": 296,
+   "xref": 66352,
+   "px": [
+    904,
+    1221
+   ],
+   "placed_in": [
+    1.9,
+    2.57
+   ],
+   "effective_ppi": 476
+  },
+  {
+   "page": 297,
+   "xref": 66354,
+   "px": [
+    1227,
+    1234
+   ],
+   "placed_in": [
+    1.9,
+    1.91
+   ],
+   "effective_ppi": 646
+  },
+  {
+   "page": 298,
+   "xref": 66356,
+   "px": [
+    1043,
+    1215
+   ],
+   "placed_in": [
+    1.9,
+    2.21
+   ],
+   "effective_ppi": 549
+  },
+  {
+   "page": 298,
+   "xref": 66358,
+   "px": [
+    1111,
+    1208
+   ],
+   "placed_in": [
+    1.9,
+    2.07
+   ],
+   "effective_ppi": 585
+  },
+  {
+   "page": 299,
+   "xref": 66360,
+   "px": [
+    1081,
+    1106
+   ],
+   "placed_in": [
+    1.9,
+    1.94
+   ],
+   "effective_ppi": 569
+  },
+  {
+   "page": 299,
+   "xref": 66362,
+   "px": [
+    953,
+    1234
+   ],
+   "placed_in": [
+    1.9,
+    2.46
+   ],
+   "effective_ppi": 502
+  },
+  {
+   "page": 300,
+   "xref": 66364,
+   "px": [
+    1094,
+    1205
    ],
    "placed_in": [
     1.9,
     2.09
    ],
-   "effective_ppi": 441
+   "effective_ppi": 576
   },
   {
-   "page": 114,
-   "xref": 63497,
+   "page": 300,
+   "xref": 66366,
    "px": [
-    845,
-    1045
+    1186,
+    982
    ],
    "placed_in": [
     1.9,
-    2.35
+    1.57
    ],
-   "effective_ppi": 445
+   "effective_ppi": 624
   },
   {
-   "page": 134,
-   "xref": 63499,
+   "page": 301,
+   "xref": 66368,
    "px": [
-    1746,
-    901
-   ],
-   "placed_in": [
-    5.82,
-    3.0
-   ],
-   "effective_ppi": 300
-  },
-  {
-   "page": 206,
-   "xref": 63501,
-   "px": [
-    1746,
-    901
-   ],
-   "placed_in": [
-    5.82,
-    3.0
-   ],
-   "effective_ppi": 300
-  },
-  {
-   "page": 249,
-   "xref": 63503,
-   "px": [
-    1747,
-    900
-   ],
-   "placed_in": [
-    5.82,
-    3.0
-   ],
-   "effective_ppi": 300
-  },
-  {
-   "page": 265,
-   "xref": 63505,
-   "px": [
-    1174,
-    798
+    748,
+    1227
    ],
    "placed_in": [
     1.9,
-    1.29
+    3.12
    ],
-   "effective_ppi": 618
+   "effective_ppi": 394
   },
   {
-   "page": 277,
-   "xref": 63507,
+   "page": 302,
+   "xref": 66370,
    "px": [
-    834,
+    1103,
+    1215
+   ],
+   "placed_in": [
+    1.9,
+    2.09
+   ],
+   "effective_ppi": 581
+  },
+  {
+   "page": 302,
+   "xref": 66372,
+   "px": [
+    920,
+    1228
+   ],
+   "placed_in": [
+    1.9,
+    2.54
+   ],
+   "effective_ppi": 484
+  },
+  {
+   "page": 303,
+   "xref": 66374,
+   "px": [
+    1178,
+    1202
+   ],
+   "placed_in": [
+    1.9,
+    1.94
+   ],
+   "effective_ppi": 620
+  },
+  {
+   "page": 304,
+   "xref": 66376,
+   "px": [
+    1013,
+    1220
+   ],
+   "placed_in": [
+    1.9,
+    2.29
+   ],
+   "effective_ppi": 533
+  },
+  {
+   "page": 305,
+   "xref": 66378,
+   "px": [
+    1197,
+    1139
+   ],
+   "placed_in": [
+    1.9,
+    1.81
+   ],
+   "effective_ppi": 630
+  },
+  {
+   "page": 305,
+   "xref": 66380,
+   "px": [
+    1026,
+    1213
+   ],
+   "placed_in": [
+    1.9,
+    2.25
+   ],
+   "effective_ppi": 540
+  },
+  {
+   "page": 306,
+   "xref": 66382,
+   "px": [
+    1089,
+    1248
+   ],
+   "placed_in": [
+    1.9,
+    2.18
+   ],
+   "effective_ppi": 573
+  },
+  {
+   "page": 306,
+   "xref": 66384,
+   "px": [
+    1180,
+    1197
+   ],
+   "placed_in": [
+    1.9,
+    1.93
+   ],
+   "effective_ppi": 621
+  },
+  {
+   "page": 307,
+   "xref": 66386,
+   "px": [
+    1157,
+    1143
+   ],
+   "placed_in": [
+    1.9,
+    1.88
+   ],
+   "effective_ppi": 609
+  },
+  {
+   "page": 307,
+   "xref": 66388,
+   "px": [
+    1253,
+    995
+   ],
+   "placed_in": [
+    1.9,
+    1.51
+   ],
+   "effective_ppi": 659
+  },
+  {
+   "page": 308,
+   "xref": 66390,
+   "px": [
+    1165,
+    1225
+   ],
+   "placed_in": [
+    1.9,
+    2.0
+   ],
+   "effective_ppi": 613
+  },
+  {
+   "page": 308,
+   "xref": 66392,
+   "px": [
+    1172,
+    1184
+   ],
+   "placed_in": [
+    1.9,
+    1.92
+   ],
+   "effective_ppi": 617
+  },
+  {
+   "page": 309,
+   "xref": 66394,
+   "px": [
+    836,
+    1236
+   ],
+   "placed_in": [
+    1.9,
+    2.81
+   ],
+   "effective_ppi": 440
+  },
+  {
+   "page": 310,
+   "xref": 66396,
+   "px": [
+    1130,
+    1208
+   ],
+   "placed_in": [
+    1.9,
+    2.03
+   ],
+   "effective_ppi": 595
+  },
+  {
+   "page": 310,
+   "xref": 66398,
+   "px": [
+    1049,
+    1028
+   ],
+   "placed_in": [
+    1.9,
+    1.86
+   ],
+   "effective_ppi": 552
+  },
+  {
+   "page": 311,
+   "xref": 66400,
+   "px": [
+    1234,
+    1221
+   ],
+   "placed_in": [
+    1.9,
+    1.88
+   ],
+   "effective_ppi": 649
+  },
+  {
+   "page": 312,
+   "xref": 66402,
+   "px": [
+    675,
+    1219
+   ],
+   "placed_in": [
+    1.9,
+    3.43
+   ],
+   "effective_ppi": 355
+  },
+  {
+   "page": 313,
+   "xref": 66404,
+   "px": [
+    1203,
+    1147
+   ],
+   "placed_in": [
+    1.9,
+    1.81
+   ],
+   "effective_ppi": 633
+  },
+  {
+   "page": 313,
+   "xref": 66406,
+   "px": [
+    1212,
+    1156
+   ],
+   "placed_in": [
+    1.9,
+    1.81
+   ],
+   "effective_ppi": 638
+  },
+  {
+   "page": 314,
+   "xref": 66408,
+   "px": [
+    1094,
+    1224
+   ],
+   "placed_in": [
+    1.9,
+    2.13
+   ],
+   "effective_ppi": 576
+  },
+  {
+   "page": 314,
+   "xref": 66410,
+   "px": [
+    1182,
+    1027
+   ],
+   "placed_in": [
+    1.9,
+    1.65
+   ],
+   "effective_ppi": 622
+  },
+  {
+   "page": 315,
+   "xref": 66412,
+   "px": [
+    1227,
+    966
+   ],
+   "placed_in": [
+    1.9,
+    1.5
+   ],
+   "effective_ppi": 646
+  },
+  {
+   "page": 315,
+   "xref": 66414,
+   "px": [
+    1177,
+    1199
+   ],
+   "placed_in": [
+    1.9,
+    1.94
+   ],
+   "effective_ppi": 619
+  },
+  {
+   "page": 316,
+   "xref": 66416,
+   "px": [
+    1213,
+    1052
+   ],
+   "placed_in": [
+    1.9,
+    1.65
+   ],
+   "effective_ppi": 638
+  },
+  {
+   "page": 317,
+   "xref": 66418,
+   "px": [
+    1148,
+    1155
+   ],
+   "placed_in": [
+    1.9,
+    1.91
+   ],
+   "effective_ppi": 604
+  },
+  {
+   "page": 317,
+   "xref": 66420,
+   "px": [
+    1074,
+    1226
+   ],
+   "placed_in": [
+    1.9,
+    2.17
+   ],
+   "effective_ppi": 565
+  },
+  {
+   "page": 318,
+   "xref": 66422,
+   "px": [
+    1046,
+    1239
+   ],
+   "placed_in": [
+    1.9,
+    2.25
+   ],
+   "effective_ppi": 551
+  },
+  {
+   "page": 318,
+   "xref": 66424,
+   "px": [
+    1230,
+    1103
+   ],
+   "placed_in": [
+    1.9,
+    1.7
+   ],
+   "effective_ppi": 647
+  },
+  {
+   "page": 319,
+   "xref": 66426,
+   "px": [
+    1157,
+    1194
+   ],
+   "placed_in": [
+    1.9,
+    1.96
+   ],
+   "effective_ppi": 609
+  },
+  {
+   "page": 320,
+   "xref": 66428,
+   "px": [
+    1235,
+    1146
+   ],
+   "placed_in": [
+    1.9,
+    1.76
+   ],
+   "effective_ppi": 650
+  },
+  {
+   "page": 321,
+   "xref": 66430,
+   "px": [
+    1163,
+    1176
+   ],
+   "placed_in": [
+    1.9,
+    1.92
+   ],
+   "effective_ppi": 612
+  },
+  {
+   "page": 322,
+   "xref": 66432,
+   "px": [
+    1223,
+    1146
+   ],
+   "placed_in": [
+    1.9,
+    1.78
+   ],
+   "effective_ppi": 644
+  },
+  {
+   "page": 323,
+   "xref": 66434,
+   "px": [
+    963,
+    1220
+   ],
+   "placed_in": [
+    1.9,
+    2.41
+   ],
+   "effective_ppi": 507
+  },
+  {
+   "page": 324,
+   "xref": 66436,
+   "px": [
+    1023,
+    1229
+   ],
+   "placed_in": [
+    1.9,
+    2.28
+   ],
+   "effective_ppi": 538
+  },
+  {
+   "page": 324,
+   "xref": 66438,
+   "px": [
+    1165,
+    1040
+   ],
+   "placed_in": [
+    1.9,
+    1.7
+   ],
+   "effective_ppi": 613
+  },
+  {
+   "page": 325,
+   "xref": 66440,
+   "px": [
+    1122,
+    1076
+   ],
+   "placed_in": [
+    1.9,
+    1.82
+   ],
+   "effective_ppi": 591
+  },
+  {
+   "page": 325,
+   "xref": 66442,
+   "px": [
+    1222,
+    1054
+   ],
+   "placed_in": [
+    1.9,
+    1.64
+   ],
+   "effective_ppi": 643
+  },
+  {
+   "page": 326,
+   "xref": 66444,
+   "px": [
+    1204,
+    879
+   ],
+   "placed_in": [
+    1.9,
+    1.39
+   ],
+   "effective_ppi": 634
+  },
+  {
+   "page": 326,
+   "xref": 66446,
+   "px": [
+    804,
+    1226
+   ],
+   "placed_in": [
+    1.9,
+    2.9
+   ],
+   "effective_ppi": 423
+  },
+  {
+   "page": 327,
+   "xref": 66448,
+   "px": [
+    1139,
+    1181
+   ],
+   "placed_in": [
+    1.9,
+    1.97
+   ],
+   "effective_ppi": 599
+  },
+  {
+   "page": 327,
+   "xref": 66450,
+   "px": [
+    1186,
+    1174
+   ],
+   "placed_in": [
+    1.9,
+    1.88
+   ],
+   "effective_ppi": 624
+  },
+  {
+   "page": 328,
+   "xref": 66452,
+   "px": [
+    1028,
+    1241
+   ],
+   "placed_in": [
+    1.9,
+    2.29
+   ],
+   "effective_ppi": 541
+  },
+  {
+   "page": 328,
+   "xref": 66454,
+   "px": [
+    1195,
+    1084
+   ],
+   "placed_in": [
+    1.9,
+    1.72
+   ],
+   "effective_ppi": 629
+  },
+  {
+   "page": 329,
+   "xref": 66456,
+   "px": [
+    1147,
+    1207
+   ],
+   "placed_in": [
+    1.9,
+    2.0
+   ],
+   "effective_ppi": 604
+  },
+  {
+   "page": 330,
+   "xref": 66458,
+   "px": [
+    1142,
+    1237
+   ],
+   "placed_in": [
+    1.9,
+    2.06
+   ],
+   "effective_ppi": 601
+  },
+  {
+   "page": 331,
+   "xref": 66460,
+   "px": [
+    1194,
+    1204
+   ],
+   "placed_in": [
+    1.9,
+    1.92
+   ],
+   "effective_ppi": 628
+  },
+  {
+   "page": 332,
+   "xref": 66462,
+   "px": [
+    1048,
+    1251
+   ],
+   "placed_in": [
+    1.9,
+    2.27
+   ],
+   "effective_ppi": 552
+  },
+  {
+   "page": 333,
+   "xref": 66464,
+   "px": [
+    1217,
+    985
+   ],
+   "placed_in": [
+    1.9,
+    1.54
+   ],
+   "effective_ppi": 641
+  },
+  {
+   "page": 334,
+   "xref": 66466,
+   "px": [
+    815,
+    1219
+   ],
+   "placed_in": [
+    1.9,
+    2.84
+   ],
+   "effective_ppi": 429
+  },
+  {
+   "page": 335,
+   "xref": 66468,
+   "px": [
+    1235,
+    1235
+   ],
+   "placed_in": [
+    1.9,
+    1.9
+   ],
+   "effective_ppi": 650
+  },
+  {
+   "page": 336,
+   "xref": 66470,
+   "px": [
+    1211,
+    1195
+   ],
+   "placed_in": [
+    1.9,
+    1.87
+   ],
+   "effective_ppi": 637
+  },
+  {
+   "page": 337,
+   "xref": 66472,
+   "px": [
+    1067,
+    1220
+   ],
+   "placed_in": [
+    1.9,
+    2.17
+   ],
+   "effective_ppi": 562
+  },
+  {
+   "page": 337,
+   "xref": 66474,
+   "px": [
+    1186,
+    1198
+   ],
+   "placed_in": [
+    1.9,
+    1.92
+   ],
+   "effective_ppi": 624
+  },
+  {
+   "page": 338,
+   "xref": 66476,
+   "px": [
+    1229,
+    953
+   ],
+   "placed_in": [
+    1.9,
+    1.47
+   ],
+   "effective_ppi": 647
+  },
+  {
+   "page": 338,
+   "xref": 66478,
+   "px": [
+    1183,
+    1211
+   ],
+   "placed_in": [
+    1.9,
+    1.94
+   ],
+   "effective_ppi": 623
+  },
+  {
+   "page": 339,
+   "xref": 66480,
+   "px": [
+    1164,
+    1231
+   ],
+   "placed_in": [
+    1.9,
+    2.01
+   ],
+   "effective_ppi": 613
+  },
+  {
+   "page": 339,
+   "xref": 66482,
+   "px": [
+    1044,
+    1215
+   ],
+   "placed_in": [
+    1.9,
+    2.21
+   ],
+   "effective_ppi": 549
+  },
+  {
+   "page": 340,
+   "xref": 66484,
+   "px": [
+    1171,
+    1242
+   ],
+   "placed_in": [
+    1.9,
+    2.02
+   ],
+   "effective_ppi": 616
+  },
+  {
+   "page": 340,
+   "xref": 66486,
+   "px": [
+    1222,
+    1213
+   ],
+   "placed_in": [
+    1.9,
+    1.89
+   ],
+   "effective_ppi": 643
+  },
+  {
+   "page": 341,
+   "xref": 66488,
+   "px": [
+    967,
+    1247
+   ],
+   "placed_in": [
+    1.9,
+    2.45
+   ],
+   "effective_ppi": 509
+  },
+  {
+   "page": 341,
+   "xref": 66490,
+   "px": [
+    749,
     1218
    ],
    "placed_in": [
     1.9,
-    2.77
+    3.09
    ],
-   "effective_ppi": 439
+   "effective_ppi": 394
+  },
+  {
+   "page": 342,
+   "xref": 66492,
+   "px": [
+    1159,
+    968
+   ],
+   "placed_in": [
+    1.9,
+    1.59
+   ],
+   "effective_ppi": 610
+  },
+  {
+   "page": 342,
+   "xref": 66494,
+   "px": [
+    1156,
+    1193
+   ],
+   "placed_in": [
+    1.9,
+    1.96
+   ],
+   "effective_ppi": 608
+  },
+  {
+   "page": 343,
+   "xref": 66496,
+   "px": [
+    1228,
+    1177
+   ],
+   "placed_in": [
+    1.9,
+    1.82
+   ],
+   "effective_ppi": 646
+  },
+  {
+   "page": 343,
+   "xref": 66498,
+   "px": [
+    1147,
+    1231
+   ],
+   "placed_in": [
+    1.9,
+    2.04
+   ],
+   "effective_ppi": 604
+  },
+  {
+   "page": 344,
+   "xref": 66500,
+   "px": [
+    1106,
+    1182
+   ],
+   "placed_in": [
+    1.9,
+    2.03
+   ],
+   "effective_ppi": 582
+  },
+  {
+   "page": 345,
+   "xref": 66502,
+   "px": [
+    963,
+    1218
+   ],
+   "placed_in": [
+    1.9,
+    2.4
+   ],
+   "effective_ppi": 507
+  },
+  {
+   "page": 346,
+   "xref": 66504,
+   "px": [
+    1098,
+    1229
+   ],
+   "placed_in": [
+    1.9,
+    2.13
+   ],
+   "effective_ppi": 578
+  },
+  {
+   "page": 347,
+   "xref": 66506,
+   "px": [
+    818,
+    1241
+   ],
+   "placed_in": [
+    1.9,
+    2.88
+   ],
+   "effective_ppi": 431
+  },
+  {
+   "page": 348,
+   "xref": 66508,
+   "px": [
+    1135,
+    1155
+   ],
+   "placed_in": [
+    1.9,
+    1.93
+   ],
+   "effective_ppi": 597
+  },
+  {
+   "page": 348,
+   "xref": 66510,
+   "px": [
+    1221,
+    1189
+   ],
+   "placed_in": [
+    1.9,
+    1.85
+   ],
+   "effective_ppi": 643
+  },
+  {
+   "page": 349,
+   "xref": 66512,
+   "px": [
+    1209,
+    1222
+   ],
+   "placed_in": [
+    1.9,
+    1.92
+   ],
+   "effective_ppi": 636
+  },
+  {
+   "page": 350,
+   "xref": 66514,
+   "px": [
+    1235,
+    1165
+   ],
+   "placed_in": [
+    1.9,
+    1.79
+   ],
+   "effective_ppi": 650
+  },
+  {
+   "page": 350,
+   "xref": 66516,
+   "px": [
+    1196,
+    1186
+   ],
+   "placed_in": [
+    1.9,
+    1.88
+   ],
+   "effective_ppi": 629
+  },
+  {
+   "page": 351,
+   "xref": 66518,
+   "px": [
+    1148,
+    1152
+   ],
+   "placed_in": [
+    1.9,
+    1.91
+   ],
+   "effective_ppi": 604
+  },
+  {
+   "page": 352,
+   "xref": 66520,
+   "px": [
+    1085,
+    1085
+   ],
+   "placed_in": [
+    1.9,
+    1.9
+   ],
+   "effective_ppi": 571
+  },
+  {
+   "page": 352,
+   "xref": 66522,
+   "px": [
+    1090,
+    1208
+   ],
+   "placed_in": [
+    1.9,
+    2.11
+   ],
+   "effective_ppi": 574
   },
   {
    "page": 353,
-   "xref": 63509,
+   "xref": 66524,
+   "px": [
+    856,
+    1186
+   ],
+   "placed_in": [
+    1.9,
+    2.63
+   ],
+   "effective_ppi": 451
+  },
+  {
+   "page": 354,
+   "xref": 66526,
+   "px": [
+    1175,
+    1241
+   ],
+   "placed_in": [
+    1.9,
+    2.01
+   ],
+   "effective_ppi": 618
+  },
+  {
+   "page": 355,
+   "xref": 66528,
+   "px": [
+    1207,
+    1222
+   ],
+   "placed_in": [
+    1.9,
+    1.92
+   ],
+   "effective_ppi": 635
+  },
+  {
+   "page": 356,
+   "xref": 66530,
+   "px": [
+    1238,
+    1007
+   ],
+   "placed_in": [
+    1.9,
+    1.55
+   ],
+   "effective_ppi": 652
+  },
+  {
+   "page": 356,
+   "xref": 66532,
+   "px": [
+    1179,
+    1236
+   ],
+   "placed_in": [
+    1.9,
+    1.99
+   ],
+   "effective_ppi": 621
+  },
+  {
+   "page": 357,
+   "xref": 66534,
+   "px": [
+    1247,
+    1128
+   ],
+   "placed_in": [
+    1.9,
+    1.72
+   ],
+   "effective_ppi": 656
+  },
+  {
+   "page": 357,
+   "xref": 66536,
+   "px": [
+    1233,
+    1130
+   ],
+   "placed_in": [
+    1.9,
+    1.74
+   ],
+   "effective_ppi": 649
+  },
+  {
+   "page": 358,
+   "xref": 66538,
+   "px": [
+    1122,
+    1248
+   ],
+   "placed_in": [
+    1.9,
+    2.11
+   ],
+   "effective_ppi": 591
+  },
+  {
+   "page": 358,
+   "xref": 66540,
+   "px": [
+    1186,
+    1206
+   ],
+   "placed_in": [
+    1.9,
+    1.93
+   ],
+   "effective_ppi": 624
+  },
+  {
+   "page": 359,
+   "xref": 66542,
+   "px": [
+    1129,
+    1230
+   ],
+   "placed_in": [
+    1.9,
+    2.07
+   ],
+   "effective_ppi": 594
+  },
+  {
+   "page": 360,
+   "xref": 66544,
+   "px": [
+    968,
+    1217
+   ],
+   "placed_in": [
+    1.9,
+    2.39
+   ],
+   "effective_ppi": 509
+  },
+  {
+   "page": 361,
+   "xref": 66546,
+   "px": [
+    1242,
+    1105
+   ],
+   "placed_in": [
+    1.9,
+    1.69
+   ],
+   "effective_ppi": 654
+  },
+  {
+   "page": 361,
+   "xref": 66548,
+   "px": [
+    1228,
+    1173
+   ],
+   "placed_in": [
+    1.9,
+    1.81
+   ],
+   "effective_ppi": 646
+  },
+  {
+   "page": 362,
+   "xref": 66550,
+   "px": [
+    1158,
+    1183
+   ],
+   "placed_in": [
+    1.9,
+    1.94
+   ],
+   "effective_ppi": 609
+  },
+  {
+   "page": 363,
+   "xref": 66552,
+   "px": [
+    1209,
+    1205
+   ],
+   "placed_in": [
+    1.9,
+    1.89
+   ],
+   "effective_ppi": 636
+  },
+  {
+   "page": 364,
+   "xref": 66554,
+   "px": [
+    1213,
+    1196
+   ],
+   "placed_in": [
+    1.9,
+    1.87
+   ],
+   "effective_ppi": 638
+  },
+  {
+   "page": 366,
+   "xref": 66556,
+   "px": [
+    1527,
+    1003
+   ],
+   "placed_in": [
+    2.6,
+    1.71
+   ],
+   "effective_ppi": 587
+  },
+  {
+   "page": 367,
+   "xref": 66558,
+   "px": [
+    1510,
+    1009
+   ],
+   "placed_in": [
+    2.6,
+    1.74
+   ],
+   "effective_ppi": 581
+  },
+  {
+   "page": 368,
+   "xref": 66560,
+   "px": [
+    1533,
+    1021
+   ],
+   "placed_in": [
+    2.6,
+    1.73
+   ],
+   "effective_ppi": 590
+  },
+  {
+   "page": 369,
+   "xref": 66562,
+   "px": [
+    1512,
+    1022
+   ],
+   "placed_in": [
+    2.6,
+    1.76
+   ],
+   "effective_ppi": 582
+  },
+  {
+   "page": 370,
+   "xref": 66564,
+   "px": [
+    1535,
+    1019
+   ],
+   "placed_in": [
+    2.6,
+    1.73
+   ],
+   "effective_ppi": 590
+  },
+  {
+   "page": 371,
+   "xref": 66566,
+   "px": [
+    1512,
+    1001
+   ],
+   "placed_in": [
+    2.6,
+    1.72
+   ],
+   "effective_ppi": 582
+  },
+  {
+   "page": 372,
+   "xref": 66568,
+   "px": [
+    1522,
+    1022
+   ],
+   "placed_in": [
+    2.6,
+    1.75
+   ],
+   "effective_ppi": 585
+  },
+  {
+   "page": 373,
+   "xref": 66570,
+   "px": [
+    1536,
+    1022
+   ],
+   "placed_in": [
+    2.6,
+    1.73
+   ],
+   "effective_ppi": 591
+  },
+  {
+   "page": 374,
+   "xref": 66572,
+   "px": [
+    1527,
+    1023
+   ],
+   "placed_in": [
+    2.6,
+    1.74
+   ],
+   "effective_ppi": 587
+  },
+  {
+   "page": 375,
+   "xref": 66574,
+   "px": [
+    1529,
+    1012
+   ],
+   "placed_in": [
+    2.6,
+    1.72
+   ],
+   "effective_ppi": 588
+  },
+  {
+   "page": 376,
+   "xref": 66576,
+   "px": [
+    1534,
+    990
+   ],
+   "placed_in": [
+    2.6,
+    1.68
+   ],
+   "effective_ppi": 590
+  },
+  {
+   "page": 377,
+   "xref": 66578,
+   "px": [
+    1515,
+    1010
+   ],
+   "placed_in": [
+    2.6,
+    1.73
+   ],
+   "effective_ppi": 583
+  },
+  {
+   "page": 378,
+   "xref": 66580,
+   "px": [
+    1528,
+    1024
+   ],
+   "placed_in": [
+    2.6,
+    1.74
+   ],
+   "effective_ppi": 588
+  },
+  {
+   "page": 379,
+   "xref": 66582,
+   "px": [
+    1532,
+    999
+   ],
+   "placed_in": [
+    2.6,
+    1.7
+   ],
+   "effective_ppi": 589
+  },
+  {
+   "page": 380,
+   "xref": 66584,
+   "px": [
+    1528,
+    1012
+   ],
+   "placed_in": [
+    2.6,
+    1.72
+   ],
+   "effective_ppi": 588
+  },
+  {
+   "page": 399,
+   "xref": 66586,
    "px": [
     1746,
     901
@@ -245,8 +2429,86 @@
    "effective_ppi": 300
   },
   {
-   "page": 486,
-   "xref": 63511,
+   "page": 438,
+   "xref": 66588,
+   "px": [
+    1533,
+    1018
+   ],
+   "placed_in": [
+    3.3,
+    2.19
+   ],
+   "effective_ppi": 465
+  },
+  {
+   "page": 455,
+   "xref": 66590,
+   "px": [
+    1521,
+    1010
+   ],
+   "placed_in": [
+    3.3,
+    2.19
+   ],
+   "effective_ppi": 461
+  },
+  {
+   "page": 468,
+   "xref": 66592,
+   "px": [
+    1531,
+    1024
+   ],
+   "placed_in": [
+    3.3,
+    2.21
+   ],
+   "effective_ppi": 464
+  },
+  {
+   "page": 484,
+   "xref": 66594,
+   "px": [
+    1508,
+    1013
+   ],
+   "placed_in": [
+    3.3,
+    2.22
+   ],
+   "effective_ppi": 457
+  },
+  {
+   "page": 497,
+   "xref": 66596,
+   "px": [
+    1522,
+    996
+   ],
+   "placed_in": [
+    3.3,
+    2.16
+   ],
+   "effective_ppi": 461
+  },
+  {
+   "page": 512,
+   "xref": 66598,
+   "px": [
+    1527,
+    1022
+   ],
+   "placed_in": [
+    3.3,
+    2.21
+   ],
+   "effective_ppi": 463
+  },
+  {
+   "page": 537,
+   "xref": 66600,
    "px": [
     1746,
     901
@@ -256,12 +2518,38 @@
     3.0
    ],
    "effective_ppi": 300
+  },
+  {
+   "page": 562,
+   "xref": 66602,
+   "px": [
+    1530,
+    1024
+   ],
+   "placed_in": [
+    2.6,
+    1.74
+   ],
+   "effective_ppi": 588
+  },
+  {
+   "page": 577,
+   "xref": 66604,
+   "px": [
+    1503,
+    960
+   ],
+   "placed_in": [
+    3.3,
+    2.11
+   ],
+   "effective_ppi": 455
   }
  ],
  "page_labels_sample": [
   "ageLabeli",
-  "ageLabel294",
-  "ageLabel592"
+  "ageLabel323",
+  "ageLabel650"
  ],
  "status": "PASS"
 }

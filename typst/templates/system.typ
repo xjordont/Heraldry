@@ -159,7 +159,7 @@
   let top0 = 0.4in
   let slot-h = (page-h - 2 * top0) / tab-keys.len()
   let y = top0 + slot-h * (n - 1)
-  let w = 0.32in
+  let w = 0.42in                               // keyword clears the 3% borderless overscan
   let h = slot-h - 3pt
   let k = 4.5pt                                 // bevelled inner corners
   let pts = if recto { ((w, 0pt), (k, 0pt), (0pt, k), (0pt, h - k), (k, h), (w, h)) }
@@ -174,7 +174,7 @@
     text(font: goth, weight: 700, size: s, fill: paper, tab-keys.at(n - 1))
   }
   // the visible face is the part inside the trim's 0.04in overscan allowance
-  let face = w - 0.04in
+  let face = w - 0.14in                        // keyword set on the inner part, clear of the 3% overscan
   place(top + left, dx: if recto { page-w - w } else { 0pt }, dy: y, box(width: w, height: h, {
     place(polygon(fill: ink, ..pts))
     place(polygon(fill: none, stroke: 0.45pt + paper, ..inner))
@@ -184,7 +184,7 @@
   }))
   // The chapter's arms as a medallion beside the keyword, straddling the tab's inner edge
   // (owner 2026-10-13: "Maybe beside the keyword on the tab"); the keyword keeps its full length.
-  let aw = 15pt
+  let aw = 13pt
   let ax = if recto { page-w - w - aw / 2 } else { w - aw / 2 }
   place(top + left, dx: ax, dy: y + h / 2 - aw * 0.57, arms(n, w: aw))
 }
@@ -226,7 +226,7 @@
     place(top + center, dy: -15pt, box(fill: paper, inset: (x: 6pt), crown(s: 30pt)))
     if n != none {
       place(bottom + center, dy: 12pt, box(fill: paper, inset: (x: 5pt),
-        shield(w: 19pt, inner: true, body: text(font: sans, size: 7.6pt, weight: 700, fill: paper, str(n)))))
+        shield(w: 23pt, inner: true, body: text(font: sans, size: 9pt, weight: 700, fill: paper, str(n)))))
     }
   }))
 }

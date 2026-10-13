@@ -44,11 +44,6 @@
       "check": "script_syntax",
       "status": "PASS",
       "detail": "Python scripts parse successfully"
-    },
-    {
-      "check": "shipped_baseline",
-      "status": "PASS",
-      "detail": "Archived RC484 baseline hash verified; historical launch-kit checksums are in docs/history/launch-kit/"
     }
   ],
   "runtime_observed": {
