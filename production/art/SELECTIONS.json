@@ -6883,5 +6883,38 @@
    "max_print_w_in_300ppi": 5.1
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY": {
+  "family": "scenario",
+  "title": "Scenario 5: The Ambushed Emissary",
+  "heading_id": "h-scenario-5-the-ambushed-emissary",
+  "route": "gpt",
+  "spec_sha256": "9301c4758947cd77d085107c9b058fb6d13725c1ad37f098a3c4ea86a50382cb",
+  "prompt_sha256": "176600e261d3b0f7327c4bb8a070f32af0249d20cb0d10d447196edfa5e68bcf",
+  "status": "received",
+  "received_at": "2026-10-13T09:21:38+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Foreground watchers are too large for tiny watchers; tree and fern ink weakens the required white vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY.png",
+   "sha256": "8ecc2ea8e98bef327fe9b751f736a5d9ddabff3992219e8f02c292de6ba0e7aa",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-5-THE-AMBUSHED-EMISSARY.png",
+   "sha256": "77b2f7ac6cde9210a721ee6d608ba3321bb246086efc5f11e0e5d94e2163311b",
+   "px": [
+    1536,
+    1024
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.12
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
