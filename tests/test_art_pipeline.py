@@ -94,7 +94,9 @@ class ArtPipeline(unittest.TestCase):
     def _batch_queue(self):
         import art_gpt_pack as pack, art_generate as g
         ents = {e["id"]: e for e in g.entries()}
-        sels = dict(g.load(g.SELECTIONS, {}))
+        # The full queue as it stood before any approvals: the live selections are all "approved" once the
+        # illustrations are complete, which would leave the queue (and so this check) empty.
+        sels = {}
         for i in g.CFG["gpt_anchor_ids"]:
             sels[i] = {"route": "gpt", "status": "anchor-approved", "master": {"path": f"assets/art/incoming/{i}.png"}}
         anchors = {"route": "gpt", "status": "approved"}
@@ -118,8 +120,7 @@ class ArtPipeline(unittest.TestCase):
         city = style + "STYLE-REF-11-city-approach-ink.png"
         self.assertEqual(q["schema"], 2)
         # received images await review and are not re-queued; rejected ones are (as redos)
-        done = {i for i, v in g.load(g.SELECTIONS, {}).items() if v.get("status") in ("received", "approved", "anchor-approved")}
-        done |= set(g.CFG["gpt_anchor_ids"])
+        done = set(g.CFG["gpt_anchor_ids"])        # the queue here is built with no selections beyond the anchors
         self.assertEqual(q["count"], len([i for i in ents if i not in done]), "every entry neither approved nor awaiting review is queued")
         lead = [i for i in g.CFG["gpt_lead_ids"] if i in {x["id"] for x in q["items"]}]
         self.assertEqual([x["id"] for x in q["items"][:len(lead)]], lead, "the mixed lead goes first")
