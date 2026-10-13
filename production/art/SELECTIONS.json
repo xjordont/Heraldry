@@ -8886,5 +8886,38 @@
    "max_print_w_in_300ppi": 4.12
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-SOLDIER": {
+  "family": "background",
+  "title": "Soldier",
+  "heading_id": "h-soldier",
+  "route": "gpt",
+  "spec_sha256": "9df49544071c40260868b02c466248fc360ad56600d96ef77a0d1fde30822f0d",
+  "prompt_sha256": "125b07e8eb9a5a6de8ba43c9e9d921cd0b0691a568d0488970a5969598f3ae49",
+  "status": "received",
+  "received_at": "2026-10-13T14:49:18+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (10% mid-tones) and narrow margin (2.6% outer-band ink); all major kit remains legible.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-SOLDIER.png",
+   "sha256": "d69dafa8f45781f1adfe54cd17dfab62100f2e5d22669881b7a76f8ebda54dad",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-SOLDIER.png",
+   "sha256": "c3081e4896ba5c30eeaf31e9a1529ba25b9508e735320a973ce0b33ed8b4aeca",
+   "px": [
+    1221,
+    1218
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.07
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
