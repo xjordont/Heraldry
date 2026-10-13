@@ -1,68 +1,12 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-13T21:33:16+00:00",
+ "generated_at": "2026-10-13T22:09:16+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
- "receipts_base": 328,
+ "receipts_base": 330,
  "target_pixels": 1572864,
- "count": 2,
- "items": [
-  {
-   "id": "ART-BAC-SMUGGLER",
-   "family": "background",
-   "register": "still",
-   "ref_set": "background",
-   "title": "Smuggler",
-   "prompt": "production/art/gpt/prompts/ART-BAC-SMUGGLER.txt",
-   "prompt_sha256": "2c62a09758ec3c0ca439a8596391c287732c79cf0581c16d4dbf25fe024e8694",
-   "size": "1024x1024",
-   "print_w_in": 1.6,
-   "references": [
-    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
-    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
-    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
-    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg"
-   ],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "No figure or hands, and no lettering.",
-    "No coins spilled, keep it understated.",
-    "Do not copy the Rogue's kit tableau.",
-    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support.",
-    "No purse or bag hanging in the air: every bag lies or sits on a surface or hangs from a visible iron hook.",
-    "No hook-less hanging cords."
-   ]
-  },
-  {
-   "id": "ART-BAC-VAGABOND",
-   "family": "background",
-   "register": "still",
-   "ref_set": "background",
-   "title": "Vagabond",
-   "prompt": "production/art/gpt/prompts/ART-BAC-VAGABOND.txt",
-   "prompt_sha256": "22a150d2585abd6e557fad3192b65283c4330215feefede7f849239b10874c32",
-   "size": "1024x1024",
-   "print_w_in": 1.6,
-   "references": [
-    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
-    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
-    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
-    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg"
-   ],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "No figure or hands, and no lettering.",
-    "No signpost lettering.",
-    "Do not duplicate Hermit/Pauper compositions.",
-    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support.",
-    "The milestone is NOT a tall upright slab and has no rounded top: nothing that resembles a gravestone or tombstone."
-   ]
-  }
- ]
+ "count": 0,
+ "items": []
 }

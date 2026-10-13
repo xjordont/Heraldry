@@ -246,7 +246,7 @@
   "route": "gpt",
   "spec_sha256": "da3731453000ec000f24b17648cc437bccf94c9656f693107a773007617ea247",
   "prompt_sha256": "2c62a09758ec3c0ca439a8596391c287732c79cf0581c16d4dbf25fe024e8694",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T22:04:55+00:00",
   "surface": "Codex",
   "model": "ChatGPT image generation (model label not shown)",
@@ -270,7 +270,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.18
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T22:09:16+00:00"
  },
  "ART-TRA-TIER-1-ARCANE-SPELLS-D20": {
   "family": "tradition",
@@ -8951,7 +8952,7 @@
   "route": "gpt",
   "spec_sha256": "6388101beb5d8d5412d89952f000e1942194b2f0440c393fef390f633b9c9198",
   "prompt_sha256": "22a150d2585abd6e557fad3192b65283c4330215feefede7f849239b10874c32",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-13T22:07:06+00:00",
   "surface": "Codex",
   "model": "ChatGPT image generation (model label not shown)",
@@ -8975,7 +8976,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.157
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-13T22:09:16+00:00"
  },
  "ART-ITE-7-6-TREASURE-TABLES": {
   "family": "item",
