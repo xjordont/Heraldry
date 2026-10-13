@@ -7908,5 +7908,38 @@
    "max_print_w_in_300ppi": 4.967
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-TRA-TIER-1-SORCERIES-D20": {
+  "family": "tradition",
+  "title": "Tier 1 Sorceries (d20)",
+  "heading_id": "h-tier-1-sorceries-d20",
+  "route": "gpt",
+  "spec_sha256": "136ecd397845022ac2bb8737e227178a079a8827d3bf25e0e91c804c47661c91",
+  "prompt_sha256": "b2997e385eabc0dfb8ac54af6d69906977c7a650e43c499a2d5f992b7c52f10c",
+  "status": "received",
+  "received_at": "2026-10-13T12:16:40+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Print-size spark is surrounded by radiating marks that read as a glow wash, contrary to exclusion. Logged; no regeneration permitted.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-TRA-TIER-1-SORCERIES-D20.png",
+   "sha256": "38ca0051b20319b0fbf893613df532e54bac954d05e48c98eb685b8b75a7be66",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-TRA-TIER-1-SORCERIES-D20.png",
+   "sha256": "aa662ab6ab797fea371ccc3e44e565322dd4b51e70124a52c61da340bcf99062",
+   "px": [
+    1511,
+    989
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.037
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
