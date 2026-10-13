@@ -8094,5 +8094,38 @@
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
   "approved_at": "2026-10-13T12:42:49+00:00"
+ },
+ "ART-TRA-TIER-2-SORCERIES-D20": {
+  "family": "tradition",
+  "title": "Tier 2 Sorceries (d20)",
+  "heading_id": "h-tier-2-sorceries-d20",
+  "route": "gpt",
+  "spec_sha256": "dc3426256f11bf22d9dd0b70d9e88098cd68e93c8a5dcec9e491fc69b14539b6",
+  "prompt_sha256": "022e41cb2f19e82cc6bc8377e38c32af462f7ccd07b33dd1ec791e6fcdbf0faf",
+  "status": "received",
+  "received_at": "2026-10-13T12:45:39+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-TRA-TIER-2-SORCERIES-D20.png",
+   "sha256": "7b7710e880ab0d7c58be40b15607c9846c8f3e2942cb6e06e80bc9d71ead9bee",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-TRA-TIER-2-SORCERIES-D20.png",
+   "sha256": "9bde98610a6855f770553bd942b8261646950a088ebb09b77f3d57ff91b60062",
+   "px": [
+    1487,
+    986
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.957
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
