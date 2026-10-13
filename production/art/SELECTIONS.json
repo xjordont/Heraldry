@@ -7477,5 +7477,38 @@
    "max_print_w_in_300ppi": 5.1
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CAM-11-1-CAMPAIGN-OVERVIEW": {
+  "family": "campaign",
+  "title": "11.1 Campaign Overview",
+  "heading_id": "h-111-campaign-overview",
+  "route": "gpt",
+  "spec_sha256": "a96d30103ef63b5a2b6c7e00ed9ea2e1e9eba6d79a979a11a030656f5effc601",
+  "prompt_sha256": "0809feab0d249e860f92f7ab7d729f0ea096e949d70fdc77be526250271bb7d9",
+  "status": "received",
+  "received_at": "2026-10-13T11:22:13+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CAM-11-1-CAMPAIGN-OVERVIEW.png",
+   "sha256": "6e5458ea25008db785e238164efc4cb18e5d8383237ef9e40f2214737bb2b83f",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CAM-11-1-CAMPAIGN-OVERVIEW.png",
+   "sha256": "256dfda114929f52b5c225d30b94b3cdf785b5511f5f9829e73575b17ac0cb9c",
+   "px": [
+    1518,
+    1015
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.06
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
