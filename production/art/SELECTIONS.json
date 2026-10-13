@@ -7708,5 +7708,38 @@
    "max_print_w_in_300ppi": 5.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CAM-THE-UNDERCROFT": {
+  "family": "campaign",
+  "title": "The Undercroft",
+  "heading_id": "h-the-undercroft",
+  "route": "gpt",
+  "spec_sha256": "ae702b72a35afcd40d790790acd2e9062cc7ebcf1dd3883aedc0f6996e895497",
+  "prompt_sha256": "7efa69266b285490472fca6e0ed28a2824e6175127a43ce83f1591df77e21fe6",
+  "status": "received",
+  "received_at": "2026-10-13T11:49:22+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CAM-THE-UNDERCROFT.png",
+   "sha256": "a5f1eaeb86407ce86f00475ffddf95c67b9082db68de48474f18560286208a24",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CAM-THE-UNDERCROFT.png",
+   "sha256": "d974ebddd29d1e6825c652a2da86dd2ffc6dd4416194e4af8a841959d025c218",
+   "px": [
+    1529,
+    1018
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.097
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
