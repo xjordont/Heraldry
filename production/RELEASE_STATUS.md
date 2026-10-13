@@ -1,6 +1,6 @@
 # Release status — Heraldry Skirmish RC492
 
-Build policy (owner, 2026-10-11): PDFs are rebuilt only on request. `dist/` and the build evidence below describe the last requested build; when the source or art has moved past it, the table says so. Last build: 2026-10-13, RC492 in design v4 "Grim Heraldry" (owner request 2026-10-13: step 2, adopt the design into the book with a build), inkjet PDF 5858350d, 656 interior pages (digital 659). It places the art approved at that time (184 of 275); the PDFs are published as a GitHub Release by the `Rebuild verified delivery` workflow, never committed.
+Build policy (owner, 2026-10-11): PDFs are rebuilt only on request. `dist/` and the build evidence below describe the last requested build; when the source or art has moved past it, the table says so. Last build: 2026-10-13, RC492 in design v4 "Grim Heraldry" (owner request 2026-10-13: step 2, adopt the design into the book with a build), inkjet PDF e5dfc3c6 (clean build), 656 interior pages (digital 659). It places the art approved at that time (184 of 275); the PDFs are published as a GitHub Release by the `Rebuild verified delivery` workflow, never committed.
 
 Active revision and hashes: `source/versions.json`. Current build evidence: `production/build-provenance.json`, `production/qa/STATUS.json` and the scoped visual/figure ledgers. RC484–RC486 remain unchanged.
 

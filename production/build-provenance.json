@@ -779,12 +779,12 @@
   "generated": {
     "build/blocks.json": "20e44d2c3b7ec3462fd3d22bf2b908c1823bda1b5a40834220a455428d2e3078",
     "build/index.json": "543167d0cf5803031398a6fc018bcd8a483ab524afd5d7bb54d0b3dd9147eddf",
-    "typst/content.typ": "a0ccbe3e6fcb8ccb7514ddb36dc81157ec6b3a72263140ddc6e3a7447600dcaa"
+    "typst/content.typ": "203bd214c782a40913566881ae37b576a7708a97e7ab65d2f9e08007389facac"
   },
   "pdfs": {
-    "dist/Heraldry_RC492_digital.pdf": "a80031b74174fdc681d1a522aee58a7cd1c21f90c16d13998f5f64d9a98f5c93",
-    "dist/Heraldry_RC492_inkjet-borderless.pdf": "5858350d34f948d161bd2ef8e560a3b6ea233675952141ae1b74cd376b63a9d0",
-    "dist/Heraldry_RC492_inkjet-borderless-white.pdf": "3eeeb4ab1aed2543ec339c48e6602aada9969c3586eb72967b84c4620d941540",
+    "dist/Heraldry_RC492_digital.pdf": "266238300f2eb561944208a3148b5f6e2d2562367fb6ce9e8674b89414cfb432",
+    "dist/Heraldry_RC492_inkjet-borderless.pdf": "e5dfc3c632ad27fa28148564c575c94c23066a74a52b07d08d1f58798428b4d2",
+    "dist/Heraldry_RC492_inkjet-borderless-white.pdf": "abd25c7e202e6c2efdb91ad1fd31b9a76b98a776655910da1f4c47de3f8b2e0c",
     "dist/Heraldry_RC492_covers-front-back.pdf": "d94fecc375b5eced411ab44835d616002d17dcd0b602e6abb04c056b807c82f9",
     "dist/Heraldry_RC492_covers-front-back-white.pdf": "dd2d266b334dc0da8cc480d2ded6f1af7f3432847b8ece3de27960157abf1874",
     "dist/Heraldry_RC492_inkjet-calibration.pdf": "708a8ea248284c7568e30b01deaf2a27e28113c9b8427ccdd9ad055fe2697748"

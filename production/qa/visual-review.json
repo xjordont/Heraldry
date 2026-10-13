@@ -1,13 +1,13 @@
 {
  "pdf": "dist/Heraldry_RC492_inkjet-borderless.pdf",
- "sha256": "5858350d34f948d161bd2ef8e560a3b6ea233675952141ae1b74cd376b63a9d0",
+ "sha256": "e5dfc3c632ad27fa28148564c575c94c23066a74a52b07d08d1f58798428b4d2",
  "pages": 656,
  "reviewer": "Claude Code orchestrator (actual image inspection in session)",
- "reviewed_at": "2026-10-13T03:41:18+00:00",
+ "reviewed_at": "2026-10-13T04:28:13+00:00",
  "all_page_contact_sheets": {
   "scale": "20-24 dpi, 60-80 pages per sheet",
   "sheets": 9,
-  "note": "every page of this exact PDF viewed; an earlier 659-page iteration was also viewed in full and led to the fixes listed below"
+  "note": "every page of this exact PDF (clean `make clean all` build, reproduced twice) viewed on 9 contact sheets; an earlier incremental build (5858350d, same 656 pages, one balancing choice different) and a 659-page iteration were also viewed in full"
  },
  "pages_reviewed": [
   1,
@@ -691,7 +691,8 @@
   "Six table headings stranded at column feet: table and card openings are kept with their heading",
   "Chapter-opener art upscaled below 300 ppi: capped at native size",
   "Tab keywords inside the 3% overscan: tab widened to 0.42 in and keyword set on the inner part",
-  "Letter-spaced and upper-cased labels broke text-layer matching: small caps without tracking on source text"
+  "Letter-spaced and upper-cased labels broke text-layer matching: small caps without tracking on source text",
+  "Release reproducibility: the ledger is bound to a clean build, since incremental builds reuse the balance cache and differ by one balancing choice"
  ],
  "accepted_layout_notes": [
   "Page 6 is the deliberate blank verso before Chapter 1 (recto start)",
