@@ -7015,5 +7015,38 @@
    "max_print_w_in_300ppi": 5.117
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE": {
+  "family": "scenario",
+  "title": "Scenario 5: The Shadowed Under Passage",
+  "heading_id": "h-scenario-5-the-shadowed-under-passage",
+  "route": "gpt",
+  "spec_sha256": "ba98079abe604fefbf01dd547c08e8c16d1b971095858869ca4e109f8646960c",
+  "prompt_sha256": "254c4ef7d88e3a0510bc67602eee4b73572d4d37c0f5507343df2f281d59f19b",
+  "status": "received",
+  "received_at": "2026-10-13T09:37:14+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Lantern bearers are too large for tiny figures; stonework crowds and weakens the vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE.png",
+   "sha256": "7f6cd138bd4860de4a6e0e2cc02446fb84ddaf3a00d2dd151c953d7cbf1d3664",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-5-THE-SHADOWED-UNDER-PASSAGE.png",
+   "sha256": "9b5525445a0db17f2dfcf182956177e95f9310d06c68012664597af25b892e5e",
+   "px": [
+    1520,
+    1023
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.067
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
