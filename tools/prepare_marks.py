@@ -183,9 +183,11 @@ def main():
     SHEET.mkdir(parents=True, exist_ok=True)
     previews = []
     jobs = [(f"arms-{int(k):02d}", v) for k, v in spec["arms"].items()] + [("logo", spec["logo"])]
+    if spec.get("coin"):
+        jobs.append(("coin", spec["coin"]))
     traced = {}
     for name, src in jobs:
-        if name == "logo":
+        if name in ("logo", "coin"):
             ink = binary(cand / src)
             shield = ~outside(ink)
         else:
@@ -198,6 +200,11 @@ def main():
         for name, (ink, shield) in traced.items():
             text, crop = svg(ink, shield, paper)
             (d / f"{name}.svg").write_text(text)
+            if name == "coin":
+                # reversed coin for black header bands: the ink in paper colour, the field left open
+                rev = text.replace(f'<path fill="{paper}" fill-rule="evenodd"', '<path fill="none" fill-rule="evenodd"', 1)
+                rev = rev.replace('<path fill="#000"', f'<path fill="{paper}"')
+                (d / "coin-reversed.svg").write_text(rev)
             if sub == "cream":
                 previews.append((name, crop))
     cell = 220
