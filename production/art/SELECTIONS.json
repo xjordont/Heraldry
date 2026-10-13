@@ -8655,5 +8655,38 @@
    "max_print_w_in_300ppi": 4.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-NOMAD": {
+  "family": "background",
+  "title": "Nomad",
+  "heading_id": "h-nomad",
+  "route": "gpt",
+  "spec_sha256": "aa36217fc81e80c4cb57c7b7ac39afd07067a610338a2312345886b1f5ae630f",
+  "prompt_sha256": "9d5efe51223b9250b7d9d145ec4636d1a257b93934fb639c63b075d31e551373",
+  "status": "received",
+  "received_at": "2026-10-13T14:13:02+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (14% mid-tones), stray edge marks (0.20%), and narrow margin (3.5% outer-band ink); small preview remains legible.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-NOMAD.png",
+   "sha256": "226290f5b941584a28750dd50b049b9a0766b11744aad89fcb79c712a39ef19d",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-NOMAD.png",
+   "sha256": "d4f6ed183cd23d1d1bdecf0c9dbdcb42d408d86240260627adcd2932e3f6fcd2",
+   "px": [
+    1241,
+    1117
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.137
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
