@@ -8259,5 +8259,38 @@
    "max_print_w_in_300ppi": 4.973
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20": {
+  "family": "tradition",
+  "title": "Tier 3 Psychic Abilities (d20)",
+  "heading_id": "h-tier-3-psychic-abilities-d20",
+  "route": "gpt",
+  "spec_sha256": "357df3af0426fbce8f70aba8dae8587fb670ed385e18b21b9e93a43592cff14e",
+  "prompt_sha256": "00e57b9f315fe1804765d90be143098b1984a598bf7702e816dee40c36417472",
+  "status": "received",
+  "received_at": "2026-10-13T13:23:39+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20.png",
+   "sha256": "177b7ea8b7938d254c5d3555d53dac4d57bf85d2652600968920780ee318fbf4",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-TRA-TIER-3-PSYCHIC-ABILITIES-D20.png",
+   "sha256": "51cac606b88787cd77773cfd90cd010a9ecfe93e35265db102eda8f98d42e1b5",
+   "px": [
+    1512,
+    996
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.04
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
