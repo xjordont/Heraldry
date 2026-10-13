@@ -192,7 +192,11 @@ def arms_svg(n, paper):
 
 
 def main():
+    import json
     import math
+    if json.loads((ROOT / "production/art/marks/APPROVED.json").read_text()).get("coin"):
+        print("the coin is now an approved traced mark (tools/prepare_marks.py); nothing to draw")
+        return
     beads = "\n".join(f'<circle cx="{50 + 42 * math.cos(a):.2f}" cy="{50 + 42 * math.sin(a):.2f}" r="2.6" fill="P"/>'
                       for a in (i * math.pi / 15 for i in range(30)))
     for sub, paper in PAPER.items():
