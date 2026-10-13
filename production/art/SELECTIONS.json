@@ -6949,5 +6949,38 @@
    "max_print_w_in_300ppi": 5.093
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD": {
+  "family": "scenario",
+  "title": "Scenario 5: The Ice Wyrm's Hoard",
+  "heading_id": "h-scenario-5-the-ice-wyrms-hoard",
+  "route": "gpt",
+  "spec_sha256": "09c61920ca8f2610ebb0ed555f21b7b1e84c4e360f809d766602279346c748f9",
+  "prompt_sha256": "eca9395651724a8dd448daf744d96258ba1d7d6d54fb8865b2696be0f3cc6821",
+  "status": "received",
+  "received_at": "2026-10-13T09:28:19+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "The wyrm head and broad coiled body are too prominent for only a partial glimpse; dark cave strokes weaken the vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD.png",
+   "sha256": "d609db6638bd974681758e14f16aae125ec3f1a05a8887213a229e76088ed490",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-5-THE-ICE-WYRM-S-HOARD.png",
+   "sha256": "e69caeae95fac826757bfba50ecc3b716bea3bd007f96deb796a53f3cefdf526",
+   "px": [
+    1520,
+    1019
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.067
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
