@@ -6520,5 +6520,38 @@
    "max_print_w_in_300ppi": 5.083
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN": {
+  "family": "scenario",
+  "title": "Scenario 3: The Mire Titan's Fen",
+  "heading_id": "h-scenario-3-the-mire-titans-fen",
+  "route": "gpt",
+  "spec_sha256": "c51c8169e049f1a83dda1c5133c33f2aa9c7b9682435da41a70b44f8db3c9e55",
+  "prompt_sha256": "86499778a81485f2bcc36f753db93cc7af1363d765ec9c57d3cbfc56204207c5",
+  "status": "received",
+  "received_at": "2026-10-13T08:17:23+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: visible signature at lower right and edge ink at left/bottom.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN.png",
+   "sha256": "05b61dd668b0fa8da39889afdd44b81bbe32678ce2c903f208c8e73988d70879",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-3-THE-MIRE-TITAN-S-FEN.png",
+   "sha256": "c74043f3481a7259cd63526aa0dd688d7baa373e0695737ceaa7bcb1e8796842",
+   "px": [
+    1533,
+    1006
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.11
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
