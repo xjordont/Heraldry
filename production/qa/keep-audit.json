@@ -1,7 +1,7 @@
 {
- "content_sha256": "a0ccbe3e6fcb8ccb7514ddb36dc81157ec6b3a72263140ddc6e3a7447600dcaa",
+ "content_sha256": "203bd214c782a40913566881ae37b576a7708a97e7ab65d2f9e08007389facac",
  "pdf": "/home/user/Heraldry/dist/Heraldry_RC492_inkjet-borderless.pdf",
- "pdf_sha256": "5858350d34f948d161bd2ef8e560a3b6ea233675952141ae1b74cd376b63a9d0",
+ "pdf_sha256": "e5dfc3c632ad27fa28148564c575c94c23066a74a52b07d08d1f58798428b4d2",
  "frame_fit_pt": 668.64,
  "units": 1857,
  "audited": 1857,
@@ -18840,7 +18840,7 @@
    "h2_pt": 348.7,
    "fit_capable": true,
    "pages": [
-    442
+    443
    ]
   },
   {
