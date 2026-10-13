@@ -8622,5 +8622,38 @@
    "max_print_w_in_300ppi": 4.173
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-NOBLE": {
+  "family": "background",
+  "title": "Noble",
+  "heading_id": "h-noble",
+  "route": "gpt",
+  "spec_sha256": "4dfc138efd12eea3c76760122e9e4c637620be26f556b81df866ce160a463195",
+  "prompt_sha256": "c42838eab52d4af82b13134e1f76e6c655c5bf8f598f4cb3f07d731fe14c6717",
+  "status": "received",
+  "received_at": "2026-10-13T14:08:14+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Banner has star motifs rather than the specified plain stripe; checker also warns mid-tones (14%) and narrow margin (3.6%).",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-NOBLE.png",
+   "sha256": "b4e8af558b50813c87c715f8b0b53f6743ea3e03f204cbfdd9e783f0d26f2336",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-NOBLE.png",
+   "sha256": "138f953261bb5daecefa711384d6db7b7a43aa8f1e86373d5f8b8ef0db47a44e",
+   "px": [
+    1234,
+    1007
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.113
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
