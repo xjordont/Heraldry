@@ -8457,5 +8457,38 @@
    "max_print_w_in_300ppi": 4.097
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-COURIER": {
+  "family": "background",
+  "title": "Courier",
+  "heading_id": "h-courier",
+  "route": "gpt",
+  "spec_sha256": "4b3dca10329d28b7d6ac426c0df9b41f19b1dbc011a33c7ea642ead01a30cd73",
+  "prompt_sha256": "1a56e2deba4180aa58f97db56d823267dacad2b3aa431e85587150a17b58d19b",
+  "status": "received",
+  "received_at": "2026-10-13T13:46:55+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (13% mid-tones) and narrow margin (2.6% outer-band ink); image remains readable.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-COURIER.png",
+   "sha256": "838777494d68055e584441880b8ac259be89451ebeacf3d7ad5aeea65e956127",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-COURIER.png",
+   "sha256": "593a5df20a1144b4e5cf1e67f90a48fbb8e006da9952f8f951a3517f7dffde55",
+   "px": [
+    1243,
+    1148
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.143
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
