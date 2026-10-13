@@ -6553,5 +6553,38 @@
    "max_print_w_in_300ppi": 5.11
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-3-THE-QUAKE": {
+  "family": "scenario",
+  "title": "Scenario 3: The Quake",
+  "heading_id": "h-scenario-3-the-quake",
+  "route": "gpt",
+  "spec_sha256": "c473b9f4ca8aaead2961d15bce2bc076c3147b89636d03a942d47a57272a7688",
+  "prompt_sha256": "b511c38c66c1570b6b04bc5a046eaa155a336757ce3f992f7d630daf074cb809",
+  "status": "received",
+  "received_at": "2026-10-13T08:22:38+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: guardian face is too distinct and edge hatching reaches the perimeter.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-3-THE-QUAKE.png",
+   "sha256": "936a9c72dfd4fd9c58f2e937dd229330798ced277fda0938609f12e01c46f727",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-3-THE-QUAKE.png",
+   "sha256": "f7866bdddf18abc71851b8254ffce02d19f0e82aa1937f2566f7913301079b6a",
+   "px": [
+    1534,
+    1016
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.113
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
