@@ -12,7 +12,8 @@ INCLUDE = ["Makefile", "requirements.lock", "README.md", "BUILD.md", "CLAUDE.md"
            "MASTER_PROMPT.md", ".gitignore", ".claude", ".github", "tests", "references",
            "source", "editorial", "typst", "tools", "figures", "fonts", "config", "docs", "assets", "production", "dist"]
 # style = owner-supplied generation references (never packaged); masters = raw generated art (ink derivatives ship)
-EXCLUDE_PARTS = {"__pycache__", "test", "private", ".git", "build", "overscan", "style", "masters"}
+EXCLUDE_PARTS = {"__pycache__", "test", "private", ".git", "build", "overscan", "style", "masters",
+                 "candidates"}   # heraldic-mark design candidates (LFS working files; the approved marks ship as SVG)
 EXCLUDE_NAMES = {"content.typ", "SHA256SUMS.txt", "package-audit.json"}
 LFS_POINTER = b"version https://git-lfs"
 
