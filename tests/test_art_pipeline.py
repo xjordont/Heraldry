@@ -89,6 +89,10 @@ class ArtPipeline(unittest.TestCase):
                 if "/" in cand:
                     (root / cand).parent.mkdir(parents=True, exist_ok=True)
                     (root / cand).write_bytes(b"stand-in")
+        import art_composition
+        for i in art_composition.guides():
+            (root / art_composition.guide_path(i)).parent.mkdir(parents=True, exist_ok=True)
+            (root / art_composition.guide_path(i)).write_bytes(b"stand-in")
         return root
 
     def _batch_queue(self):

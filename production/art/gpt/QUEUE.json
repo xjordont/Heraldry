@@ -1,12 +1,540 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-13T22:09:16+00:00",
+ "generated_at": "2026-10-13T23:36:27+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
  "receipts_base": 330,
  "target_pixels": 1572864,
- "count": 0,
- "items": []
+ "count": 19,
+ "items": [
+  {
+   "id": "ART-BAC-SMUGGLER",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Smuggler",
+   "prompt": "production/art/gpt/prompts/ART-BAC-SMUGGLER.txt",
+   "prompt_sha256": "be41919c47475edb64e739aa142fa45dbcb1918a082102f45ea007d25d4c5d4a",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-SMUGGLER.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No coins spilled, keep it understated.",
+    "Do not copy the Rogue's kit tableau.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support.",
+    "No purse or bag hanging in the air: every bag lies or sits on a surface or hangs from a visible iron hook.",
+    "No hook-less hanging cords."
+   ]
+  },
+  {
+   "id": "ART-BAC-ALCHEMIST",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Alchemist",
+   "prompt": "production/art/gpt/prompts/ART-BAC-ALCHEMIST.txt",
+   "prompt_sha256": "47f78df0fa984ce792c87681d16435dc46674c9fca45a6f01d040a45cbb51b95",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-ALCHEMIST.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No bubbling glow or smoke.",
+    "No poison skull symbols.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-APPRENTICE",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Apprentice",
+   "prompt": "production/art/gpt/prompts/ART-BAC-APPRENTICE.txt",
+   "prompt_sha256": "012ffd4223cb2fee41b149fa86ebc9cf7aea21c4212050ddd56d572cab8fae94",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-APPRENTICE.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No glow.",
+    "Do not make it a full spell effect.",
+    "No sleeve or cloth sticking out sideways: cloth hangs and pools by gravity.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-ARTISAN",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Artisan",
+   "prompt": "production/art/gpt/prompts/ART-BAC-ARTISAN.txt",
+   "prompt_sha256": "40372db81c3542ed2638fd735d3cd8e3ef9fa5ec507b1811c8dee03660bfdd5f",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-ARTISAN.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No forge fire glow.",
+    "Do not make it a full armoury.",
+    "The hammer never sticks up in the air: it lies flat.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-BELIEVER",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Believer",
+   "prompt": "production/art/gpt/prompts/ART-BAC-BELIEVER.txt",
+   "prompt_sha256": "9b0cadddde662eb3dbee6162e58071f6c645f213c142e8344059d8bf94b4cc90",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-BELIEVER.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No halo glow beyond the lamp flame.",
+    "No specific real-world religious symbols.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-COURIER",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Courier",
+   "prompt": "production/art/gpt/prompts/ART-BAC-COURIER.txt",
+   "prompt_sha256": "efa81e0526287c3464311b5448416093792732c744e9210d182066e957f34e8e",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-COURIER.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No horse.",
+    "Not identical in arrangement to the Scout still life: favour the satchel and boots.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-CULTIST",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Cultist",
+   "prompt": "production/art/gpt/prompts/ART-BAC-CULTIST.txt",
+   "prompt_sha256": "25028deed1db87d1b7d0575726b1875ec8a50233a8a9fa1922cf9c9a1ce704c2",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-CULTIST.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No gore or blood pools.",
+    "No skull pileup, no readable rune text.",
+    "No pentagram, no inverted crosses or other real occult symbols.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-FARMER",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Farmer",
+   "prompt": "production/art/gpt/prompts/ART-BAC-FARMER.txt",
+   "prompt_sha256": "49052975eaa4d8ddc468c3d7ffeabc000971c7bbf9a8cde4b4020600e4c01b83",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-FARMER.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No blood on the bandages.",
+    "Not the Merchant's sickle with coin.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-HERMIT",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Hermit",
+   "prompt": "production/art/gpt/prompts/ART-BAC-HERMIT.txt",
+   "prompt_sha256": "f065916403e259a00a2f3dcd94cfefe2fc377c7fda9079945263569c3d99cb25",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-HERMIT.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No companion animals.",
+    "Do not add a hut interior full of clutter.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-MERCHANT",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Merchant",
+   "prompt": "production/art/gpt/prompts/ART-BAC-MERCHANT.txt",
+   "prompt_sha256": "2ba1c7b423e89a44707679fe44f08cb4e163b9304d9ae4af98eb2a77ecc186a9",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-MERCHANT.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No ledger text.",
+    "Not the Farmer's sickle arrangement.",
+    "The scale beam must never tip toward the empty pan.",
+    "No fountain pen or metal-nib pen.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-NOBLE",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Noble",
+   "prompt": "production/art/gpt/prompts/ART-BAC-NOBLE.txt",
+   "prompt_sha256": "df3bff0cc390834b1cb0fac17675af9a8ce09073776a6b61d789df5356fe3b1a",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-NOBLE.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No crown.",
+    "No readable heraldry or text.",
+    "No star shapes anywhere: moth holes are small ragged round tears.",
+    "No part of the rapier overhangs the table edge.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-PAUPER",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Pauper",
+   "prompt": "production/art/gpt/prompts/ART-BAC-PAUPER.txt",
+   "prompt_sha256": "0a01a905cfee08ac4390bcc85419cddb767c401c606e99c6a6ef543f2692f82e",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-PAUPER.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No pity beggar poses.",
+    "Do not add coins.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-PERFORMER",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Performer",
+   "prompt": "production/art/gpt/prompts/ART-BAC-PERFORMER.txt",
+   "prompt_sha256": "3deab3f752afd67e6adbb75a41ab18a02fdcf19e3a205c90fd646572c04e45f5",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-PERFORMER.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No clown caricature.",
+    "No printed expression text or letters on the mask.",
+    "No ring-pommel or leaf-bladed knives (no kunai or shuriken).",
+    "No full-face mask.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-SAILOR",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Sailor",
+   "prompt": "production/art/gpt/prompts/ART-BAC-SAILOR.txt",
+   "prompt_sha256": "91043accaf81a28e8b2d84f26a3f0bb0a2ab98a792a8059b123fa2d2b1252851",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-SAILOR.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No ships, no sea monster.",
+    "Not a cutlass pirate cliche.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-SCHOLAR",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Scholar",
+   "prompt": "production/art/gpt/prompts/ART-BAC-SCHOLAR.txt",
+   "prompt_sha256": "b8dfa689cb0d0feae0d990a28c0272ea52acb6f9a08c693949efaf174271d839",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-SCHOLAR.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No legible writing: marks must be scribbled lines.",
+    "No spellcasting effects.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-SCOUT",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Scout",
+   "prompt": "production/art/gpt/prompts/ART-BAC-SCOUT.txt",
+   "prompt_sha256": "e67d7bcb67cfb191ff2a3e5b5ef591ddf689a52ccf7338de1642f6e16247b217",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-SCOUT.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "Do not repeat the Courier's satchel and scroll tube.",
+    "No animal in the picture.",
+    "No telescope or spyglass.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-SHEPHERD",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Shepherd",
+   "prompt": "production/art/gpt/prompts/ART-BAC-SHEPHERD.txt",
+   "prompt_sha256": "409501146a517f25bbba15ea574aad5bf6da1c94ef7232cf2a4a4cc5856d59cb",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-SHEPHERD.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No sheep.",
+    "Not identical to the Hermit's staff.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-SOLDIER",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Soldier",
+   "prompt": "production/art/gpt/prompts/ART-BAC-SOLDIER.txt",
+   "prompt_sha256": "a30ff858fe631e7becf31881727d7a7ba1f632a17ad7d17a60cdfa104250844b",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-SOLDIER.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No banners with symbols.",
+    "Not the Fighter class's kit.",
+    "Nothing hangs from the spear shaft except the leaning contact with the chest.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
+   ]
+  },
+  {
+   "id": "ART-BAC-VAGABOND",
+   "family": "background",
+   "register": "still",
+   "ref_set": "background",
+   "title": "Vagabond",
+   "prompt": "production/art/gpt/prompts/ART-BAC-VAGABOND.txt",
+   "prompt_sha256": "e9def2263535a114080b9e3323e46e32c3a3ee6e4fd24003fb88ee1b75a01a2e",
+   "size": "1024x1024",
+   "print_w_in": 1.6,
+   "references": [
+    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
+    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
+    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
+    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
+    "production/art/composition/ART-BAC-VAGABOND.jpg"
+   ],
+   "max_attempts": 1,
+   "size_class": "",
+   "must": [],
+   "avoid": [
+    "No figure or hands, and no lettering.",
+    "No signpost lettering.",
+    "Do not duplicate Hermit/Pauper compositions.",
+    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support.",
+    "The milestone is NOT a tall upright slab and has no rounded top: nothing that resembles a gravestone or tombstone."
+   ]
+  }
+ ]
 }
