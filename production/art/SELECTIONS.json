@@ -6256,5 +6256,38 @@
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
   "approved_at": "2026-10-13T02:18:39+00:00"
+ },
+ "ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA": {
+  "family": "scenario",
+  "title": "Scenario 2: The Alchemist's Frozen Laboratory",
+  "heading_id": "h-scenario-2-the-alchemists-frozen-laboratory",
+  "route": "gpt",
+  "spec_sha256": "22ebb18727f2783ac58c0fb3d40dab7de69278d285dbb37ec67ee648b04e70f5",
+  "prompt_sha256": "92e1578b88cbfd80cfacc6beba2d56190fba2fbe6ed9cf287632a1d76fdecd9c",
+  "status": "received",
+  "received_at": "2026-10-13T07:44:19+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: partial golem reads too prominent for small-partial requirement; top-center ceiling ink reaches the edge and weakens the vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA.png",
+   "sha256": "6187969e29eeca3190c9fe8e04318c572ac5ffcff6ef91d2e3dd0631b78d1d21",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-2-THE-ALCHEMIST-S-FROZEN-LABORA.png",
+   "sha256": "69c9d11c76287e3e5d4310946f66976f00b563858ca0b8acaeb9cfb42b50bd94",
+   "px": [
+    1513,
+    1021
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.043
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
