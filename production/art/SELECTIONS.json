@@ -7147,5 +7147,38 @@
    "max_print_w_in_300ppi": 5.107
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT": {
+  "family": "scenario",
+  "title": "Scenario 6: The Iron-Vein Vault",
+  "heading_id": "h-scenario-6-the-iron-vein-vault",
+  "route": "gpt",
+  "spec_sha256": "dee2808a1a8656dac9481e99a61439a469ac7d04d408506a4398697ea2600bd7",
+  "prompt_sha256": "f0a2e6968b92787b0cc62e3622d672aa1a19623e33fe85264160cc43f1e69397",
+  "status": "received",
+  "received_at": "2026-10-13T10:06:32+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Foreground approachers are too large for tiny figures; dark perimeter architecture weakens vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT.png",
+   "sha256": "a080a04c999cc6a24c39d2ea86beb6c6dbf66dacb063508c8b2f63b0b23a811b",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-6-THE-IRON-VEIN-VAULT.png",
+   "sha256": "274d8587d93b73f227b237f2ebfcaa80381c9e56fc53ce2c29498380d11315ee",
+   "px": [
+    1529,
+    1024
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.097
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
