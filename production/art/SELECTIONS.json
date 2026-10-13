@@ -6982,5 +6982,38 @@
    "max_print_w_in_300ppi": 5.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT": {
+  "family": "scenario",
+  "title": "Scenario 5: The Reliquary of Broken Saints",
+  "heading_id": "h-scenario-5-the-reliquary-of-broken-saints",
+  "route": "gpt",
+  "spec_sha256": "639bc13a58952a85efe01b5f5732fb606e77cb2f7805d0eadededf8cbcc06ac1",
+  "prompt_sha256": "da54dbc6b9f3160714cbd43fc6e39c71d0568089005da58cc2b443b0c825117d",
+  "status": "received",
+  "received_at": "2026-10-13T09:32:13+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Strong chapel resemblance; foreground robbers and guardians are too prominent; edge architecture weakens vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT.png",
+   "sha256": "ac4671de9f64ed07bb39eda3f71baa3098d9dcd048ac5bdfabce4ab02293b0e3",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-5-THE-RELIQUARY-OF-BROKEN-SAINT.png",
+   "sha256": "39bb57d9a12bc97942511d26219e456943a3a723cf851d7a569fca07291d0442",
+   "px": [
+    1535,
+    1022
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.117
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
