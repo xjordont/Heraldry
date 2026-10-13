@@ -7114,5 +7114,38 @@
    "max_print_w_in_300ppi": 5.02
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT": {
+  "family": "scenario",
+  "title": "Scenario 6: The Icebound Court",
+  "heading_id": "h-scenario-6-the-icebound-court",
+  "route": "gpt",
+  "spec_sha256": "9900e4fbbcf7dc5fe2ce193bd8ba6b6a459e1f47030d2de06d7a03d52e8ccae6",
+  "prompt_sha256": "c65fe12405f2f17005975001f9c724ab3293e506b260987622bfb1a4e411bd97",
+  "status": "received",
+  "received_at": "2026-10-13T09:59:04+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Bright reflections read as glow rays; possible cool tint in ice; dense edge marks weaken vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT.png",
+   "sha256": "95891b87852b2b3f191613f2e1859a43eec0a0caacc6ec7b357c746d0f872aed",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-6-THE-ICEBOUND-COURT.png",
+   "sha256": "cd41d4381f568c1f2e7a79f0e3c15865bb3c962062480db60e26a208855b93d9",
+   "px": [
+    1532,
+    1023
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.107
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
