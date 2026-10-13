@@ -8391,5 +8391,38 @@
    "max_print_w_in_300ppi": 4.13
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-ARTISAN": {
+  "family": "background",
+  "title": "Artisan",
+  "heading_id": "h-artisan",
+  "route": "gpt",
+  "spec_sha256": "b3690a87f9275f796833d25b5c60654dd7be6ef92b1f587522669cdef60fbaea",
+  "prompt_sha256": "34766086524bf1047e363aeef25a1adf5f58c3d5e25b9fb1593629dae8d8f504",
+  "status": "received",
+  "received_at": "2026-10-13T13:39:41+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker FAIL: ink touches edge (0.52% of outer band) and warns possible soft grey shading (19% mid-tones); image saved as the best single attempt.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-ARTISAN.png",
+   "sha256": "45b2fcdf6a6092552eb05457d6228794907c61018cbac298fad2856cd2977509",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-ARTISAN.png",
+   "sha256": "a7a2c197abf3c3f5948112e2dffa3c5147cd513f92b5f5972608b60397c58a37",
+   "px": [
+    1248,
+    1094
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.16
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
