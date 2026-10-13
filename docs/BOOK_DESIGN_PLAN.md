@@ -425,7 +425,7 @@ The owner directed on 2026-10-12: "take it further ... more decorations, symbols
 | **Engraved shield** | A heater shield with a paper inner line, carrying a number | Section numbers, folios, procedure steps, power numbers |
 | **Corner flourish** | A fine L with an inner hairline and lozenge finials | Scenario dossiers and outcome frames; chapter-opener frame |
 | **Banner tag** | A black strap with a pointed end | EXAMPLE, RULES NOTE, monster roles, scenario number, place kicker |
-| **Coin** | A medieval long-cross penny: a beaded rim, a voided long cross and a pellet in each angle. It sits on the baseline so it aligns with the figures beside it (owner 2026-10-12: it was "low like a subscript") | Stands for the source's "c" in tables and stat bars |
+| **Coin** | Owner-approved 2026-10-13 ("Yes to v2 but take the notch out of the border"): a hammered medieval long-cross penny in heavy black ink, with a bold rim, a beaded border, a solid cross and four pellets in each quarter. It is heavy enough to match bold figures at text size. Generated with Nano Banana 2.1, the notch closed by an image edit, and traced by `tools/prepare_marks.py`. `coin-reversed.svg` (ink in paper colour) serves black header bands. It sits on the baseline beside its figures | Stands for the source's "c" in tables and stat bars |
 | **Opener frame** | Thick-and-thin border, corner flourishes, the castle logo at the head, the folio shield at the foot | Chapter openers only |
 | **Drop capital** | Blackletter initial reversed in an engraved black block | First paragraph after a chapter opener (vendored droplet 0.3.1, MIT) |
 
