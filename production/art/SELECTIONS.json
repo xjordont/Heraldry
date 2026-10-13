@@ -8754,5 +8754,38 @@
    "max_print_w_in_300ppi": 4.117
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-SAILOR": {
+  "family": "background",
+  "title": "Sailor",
+  "heading_id": "h-sailor",
+  "route": "gpt",
+  "spec_sha256": "43711281fccdc7738c06215aed8463a0d3aa5775f0d91b2aeb41dc6ef3ccb2af",
+  "prompt_sha256": "6300cb56f4369b20b3138070d8d1514f8a2e57683556a02e785bc2f1cf45c5fa",
+  "status": "received",
+  "received_at": "2026-10-13T14:26:32+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (18% mid-tones) and narrow margin (3.8% outer-band ink); print view remains readable.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-SAILOR.png",
+   "sha256": "d5ec57ba3c74bb3324f646075773afdf38b3129fe90c9e8eb73e62e1d45ffd4c",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-SAILOR.png",
+   "sha256": "e8f2e570bf030d61ac91b21dddf6f6ca8baa52e231065b883d75baafafc81374",
+   "px": [
+    1220,
+    1149
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.067
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
