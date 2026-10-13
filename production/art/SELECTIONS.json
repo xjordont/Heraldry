@@ -8523,5 +8523,38 @@
    "max_print_w_in_300ppi": 4.067
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-FARMER": {
+  "family": "background",
+  "title": "Farmer",
+  "heading_id": "h-farmer",
+  "route": "gpt",
+  "spec_sha256": "5e0bcd4b6a855441ac2c6dce98c449d7ca0b24c9831b3390a1078b79c5f957a5",
+  "prompt_sha256": "75ffe7d2294d0c4179f723a51441ea9c9f24abe0e638bb0a34c9e2e6bc0bfab1",
+  "status": "received",
+  "received_at": "2026-10-13T13:53:45+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (20% mid-tones) and narrow margin (3.6% outer-band ink); required objects remain legible at print size.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-FARMER.png",
+   "sha256": "edbc77706194f040cf0dbf66a3f7df6a5222f7316de4b7603cbcddad8d550d4c",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-FARMER.png",
+   "sha256": "8c3d3e5503a5ff296e1183bf16882c08fc11bdee1bdc8065c3e7d24dfebe0226",
+   "px": [
+    1235,
+    1129
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.117
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
