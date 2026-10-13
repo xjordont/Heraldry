@@ -6751,5 +6751,38 @@
    "max_print_w_in_300ppi": 5.07
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE": {
+  "family": "scenario",
+  "title": "Scenario 4: The Sealed Archive",
+  "heading_id": "h-scenario-4-the-sealed-archive",
+  "route": "gpt",
+  "spec_sha256": "9dac6ce3357de7a83e1f94144ec0ffe6e9234917c624d811d9a69e067ac32862",
+  "prompt_sha256": "74115583a9f7ed4fd100b660b48f59bcbae925d28db33ab1d15a1d82749dfc2d",
+  "status": "received",
+  "received_at": "2026-10-13T09:01:14+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: intruders are too large in the foreground and dark shelving/debris reach several edges.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE.png",
+   "sha256": "c1963759d435ff6c4a90c1d79cf0570a0a77d0e64a70ce50b327cef5161f04d7",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-4-THE-SEALED-ARCHIVE.png",
+   "sha256": "731cdc4d6cc32d7df1f87befa8622ffa7d5816f97bf9ebab1dcba168a6b4ed92",
+   "px": [
+    1523,
+    1015
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.077
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
