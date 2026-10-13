@@ -8589,5 +8589,38 @@
    "max_print_w_in_300ppi": 4.06
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-MERCHANT": {
+  "family": "background",
+  "title": "Merchant",
+  "heading_id": "h-merchant",
+  "route": "gpt",
+  "spec_sha256": "c7802fba0fd0de404cc7cdfacfcfb72543a486749a908e48ac965eb444f266bc",
+  "prompt_sha256": "19fc49d95e5c84615c3b0db5c774b9cf6ee6c3d540bf543a79d0c0283e6aba9c",
+  "status": "received",
+  "received_at": "2026-10-13T14:02:15+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker FAIL: ink touches edge (0.44% outer band) with 6.0% outer-band ink; also warns possible soft shading (13% mid-tones). Save best single attempt.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-MERCHANT.png",
+   "sha256": "53a53a0ca342a880bb4a00eaaa2bac109006026a52877d9f11afda454887f585",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-MERCHANT.png",
+   "sha256": "ea24ec0773c537c8f1ff8523c03313e1b1c8f5e34445f7aa061d62c174736a13",
+   "px": [
+    1252,
+    1111
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.173
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
