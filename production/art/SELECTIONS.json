@@ -6454,5 +6454,38 @@
    "max_print_w_in_300ppi": 5.06
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL": {
+  "family": "scenario",
+  "title": "Scenario 3: The Bandit's Toll",
+  "heading_id": "h-scenario-3-the-bandits-toll",
+  "route": "gpt",
+  "spec_sha256": "4a8976a6eaf756b0851066f298c8e43c86003b6e821984aa596f4147660ea65f",
+  "prompt_sha256": "ab22f62d8b9c54d19c9e0e93f50a594386eda9e136b2c8be28501f61daf7f3ef",
+  "status": "received",
+  "received_at": "2026-10-13T08:06:20+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Flagged: dense tree-canopy ink reaches both upper corners and weakens the vignette.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL.png",
+   "sha256": "e1e8404147c889b57a3c6c02469211fd1370b7099d27dfc5aed2a62d7920a719",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-3-THE-BANDIT-S-TOLL.png",
+   "sha256": "cf1f753020151ea056140fe8dd28deb2f577ef4ee30f1ee03e970bcb67fade86",
+   "px": [
+    1530,
+    1023
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.1
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
