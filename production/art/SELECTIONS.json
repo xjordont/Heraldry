@@ -9183,5 +9183,38 @@
    "max_print_w_in_300ppi": 5.087
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-CH08-002": {
+  "family": "chapter",
+  "title": "ART-CH08-001",
+  "heading_id": null,
+  "route": "gpt",
+  "spec_sha256": "6b89c7fc2b685d205a75ceca007a3085cc2fc188ce0c39ad0e26193cdf831d3f",
+  "prompt_sha256": "f3cb33c6ff9c29da694cb7a24af932d41bfe3d879c569b2afd86dee24b6cef2e",
+  "status": "received",
+  "received_at": "2026-10-13T15:44:31+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker detected 3% tinted-ink pixels; print-size preview appears monochrome, pages contain no readable words, and scene is a library rather than an observatory.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-CH08-002.png",
+   "sha256": "f8c808151b3acebcb57a6e865142e89f02e106b669d2427812350490e551bd37",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-CH08-002.png",
+   "sha256": "59cfdd786ea6be06edb1881aebc99c49dcab0da5e2185d76823d3696b8aacef7",
+   "px": [
+    1519,
+    1006
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.063
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
