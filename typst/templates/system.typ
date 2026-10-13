@@ -182,6 +182,11 @@
       align(center + horizon, rotate(if recto { 90deg } else { -90deg }, reflow: true,
         box(width: h, align(center, word))))))
   }))
+  // The chapter's arms as a medallion beside the keyword, straddling the tab's inner edge
+  // (owner 2026-10-13: "Maybe beside the keyword on the tab"); the keyword keeps its full length.
+  let aw = 15pt
+  let ax = if recto { page-w - w - aw / 2 } else { w - aw / 2 }
+  place(top + left, dx: ax, dy: y + h / 2 - aw * 0.57, arms(n, w: aw))
 }
 
 // Running head: label at the outer end with the chapter's arms; a thick-and-thin rule.
