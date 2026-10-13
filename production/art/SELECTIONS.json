@@ -8931,17 +8931,17 @@
   "title": "Vagabond",
   "heading_id": "h-vagabond",
   "route": "gpt",
-  "spec_sha256": "dda6cc28873595405a80e37ac019d78a38bd31c9e7ec98869c3e4111bbf20d1d",
-  "prompt_sha256": "314558c12e4f20341a0b1dd75ce74e06d632f44fed91e552e414d47dbc4856a1",
-  "status": "rejected",
-  "received_at": "2026-10-13T14:55:48+00:00",
+  "spec_sha256": "8812b1cec8f9a606d51f6e962e413d90e17317a837315628dd793cba66c82307",
+  "prompt_sha256": "8cd089ac4245d8cae7770bda2a2109aa1ab4e9f7fe4e9b64fd77857116539c45",
+  "status": "received",
+  "received_at": "2026-10-13T21:24:47+00:00",
   "surface": "Codex",
   "model": "image_gen",
-  "notes": "Checker warns possible soft shading (13% mid-tones) and sparse edge marks (0.06%); milestone remains blank and image readable.",
+  "notes": "Correction: Lean the bundle stick against the low rounded milestone, with its foot on the ground; keep the dice cup, bandages, cloak, boot, candle, and snare loop resting on visible supports. Review flag: the central rounded stone reads too much like a gravestone.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-VAGABOND.png",
-   "sha256": "179d222b4ff6ce5800c38abd050f0f85fb7f9dd74cb7181417b2bc585668dc24",
+   "sha256": "577edd5bef6c0faf636f0d2572b6d38bdb685cb45edaa2d60e649a936b77446f",
    "px": [
     1254,
     1254
@@ -8949,18 +8949,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-VAGABOND.png",
-   "sha256": "04263f71c2939442e4ffd4815c62b0b0fdcb8397cbd18ecae15ca016af0e240e",
+   "sha256": "3211f845681baa95f05a4ad33338200098dec2fc58b3ad137d665ea46c5a0899",
    "px": [
-    1253,
-    1190
+    1224,
+    1159
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.177
+   "max_print_w_in_300ppi": 4.08
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T17:19:59+00:00",
-  "rejected_at": "2026-10-13T19:13:39+00:00",
-  "rejected_reason": "Owner review: some objects are inaccurate or defy gravity (Merchant scale tips toward the empty pan, Noble rapier overhangs the table, Apprentice sleeve juts out, Performer knives are kunai, others). Redo all 20 with the physical-plausibility rule."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-ITE-7-6-TREASURE-TABLES": {
   "family": "item",
