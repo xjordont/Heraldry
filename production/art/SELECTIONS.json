@@ -6916,5 +6916,38 @@
    "max_print_w_in_300ppi": 5.12
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA": {
+  "family": "scenario",
+  "title": "Scenario 5: The Cursed Colossus of the Waste",
+  "heading_id": "h-scenario-5-the-cursed-colossus-of-the-waste",
+  "route": "gpt",
+  "spec_sha256": "8bde30b4ecc32e980b36b1c77e0d6e809b66de563de602ceac3f56502329901d",
+  "prompt_sha256": "996a69a24c5e5e876284974ff6e48ab8f88f9e4558007b7fc6b4eebe70ab353e",
+  "status": "received",
+  "received_at": "2026-10-13T09:25:03+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "The carved circle on the statue back is not visible from this frontal composition.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA.png",
+   "sha256": "4e20c581d5e832391e85b86fd2923ca45a466c5b505ad9e44cb59642fe50d1a6",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-SCE-SCENARIO-5-THE-CURSED-COLOSSUS-OF-THE-WA.png",
+   "sha256": "05321fb8bad206ae980b3d9cd016a829f42feba214c889d949cd3457145fc119",
+   "px": [
+    1528,
+    1024
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 5.093
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
