@@ -7809,5 +7809,38 @@
    "max_print_w_in_300ppi": 5.103
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-TRA-TIER-1-DIVINE-PRAYERS-D20": {
+  "family": "tradition",
+  "title": "Tier 1 Divine Prayers (d20)",
+  "heading_id": "h-tier-1-divine-prayers-d20",
+  "route": "gpt",
+  "spec_sha256": "d127ecd1ddcb9b541663da227fcf816e6f5cdbb964a2deeff138a855638b41c9",
+  "prompt_sha256": "3dc3990e5a97f14b1346e122c408501efb3c31c70327609090955841fdef3a84",
+  "status": "received",
+  "received_at": "2026-10-13T12:01:33+00:00",
+  "surface": "Codex",
+  "model": "not shown",
+  "notes": "Broad radiating line cone reads as a glow wash despite the no-glow-wash restriction; documented from print-size inspection.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-TRA-TIER-1-DIVINE-PRAYERS-D20.png",
+   "sha256": "d7536793dbeebe5de18f68906727ae30281d26034713c1d5708ef75080238c5f",
+   "px": [
+    1536,
+    1024
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-TRA-TIER-1-DIVINE-PRAYERS-D20.png",
+   "sha256": "7826bcd99066299c5dfdc87cab1eeccae9ebdc32ecca09604a9de08a82f4b1ab",
+   "px": [
+    1491,
+    977
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.97
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
