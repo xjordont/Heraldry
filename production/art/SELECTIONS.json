@@ -8556,5 +8556,38 @@
    "max_print_w_in_300ppi": 4.117
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-BAC-HERMIT": {
+  "family": "background",
+  "title": "Hermit",
+  "heading_id": "h-hermit",
+  "route": "gpt",
+  "spec_sha256": "738bbc701f77529ed17c9403ac2102d13ac4ac155c8e401e991444c89119a7d4",
+  "prompt_sha256": "c3cdd00053c1dbb8864001c4c0801132a952b0f2a2a0088ca5f07b72acd54594",
+  "status": "received",
+  "received_at": "2026-10-13T13:57:38+00:00",
+  "surface": "Codex",
+  "model": "image_gen",
+  "notes": "Checker warns possible soft shading (14% mid-tones); print preview appears crosshatched and readable.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-BAC-HERMIT.png",
+   "sha256": "844b2dc600e531e4d416117a138015f823b7a392a970ea0c8a8e45bb950b8500",
+   "px": [
+    1254,
+    1254
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-BAC-HERMIT.png",
+   "sha256": "f944f88118906637a8bd81478b37abf949fb0c49433a2e872d19f867abea93a4",
+   "px": [
+    1218,
+    1090
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 4.06
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
