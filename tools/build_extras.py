@@ -11,9 +11,15 @@ from parse_source import plain  # noqa: E402
 
 
 def cover_art():
-    """Generated ink cover art when selected, else the original master; fits 4.8 x 3.67 in at <= native 300 ppi."""
+    """Owner-supplied full-page front cover when present (assets/art/cover/front.png, from tools/prepare_cover.py):
+    fitted inside the 0.375 in safe edge of US Letter. Otherwise generated ink cover art when selected, else the original master; fits 4.8 x 3.67 in at <= native 300 ppi."""
     from PIL import Image
     from build_book import load_spot_art
+    full = ROOT / "assets/art/cover/front.png"
+    if full.is_file():
+        wpx, hpx = Image.open(full).size
+        w = min(8.5 - 2 * 0.375, (11 - 2 * 0.375) * wpx / hpx)
+        return {"path": "../assets/art/cover/front.png", "w_in": round(w, 3), "h_in": round(w * hpx / wpx, 3), "full_page": True}
     _, ids = load_spot_art()
     if "ART-COVER-002" in ids:
         rel, w = ids["ART-COVER-002"]
