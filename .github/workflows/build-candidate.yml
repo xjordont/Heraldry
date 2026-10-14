@@ -92,5 +92,5 @@ jobs:
           git add production/BUILD_STATUS.json
           git add -A production/qa/review
           git commit -m "Build candidate status ($RID)" || exit 0
-          for i in 1 2 3 4; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep $((i * 5)); done
+          for i in 1 2 3 4; do git push origin HEAD:main && exit 0; git pull --rebase --autostash origin main; sleep $((i * 5)); done
           exit 1

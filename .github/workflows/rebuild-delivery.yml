@@ -115,5 +115,5 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add production/RELEASE_RESULT.json
           git commit -m "Release result for $GITHUB_SHA" || exit 0
-          for i in 1 2 3 4; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep $((i * 5)); done
+          for i in 1 2 3 4; do git push origin HEAD:main && exit 0; git pull --rebase --autostash origin main; sleep $((i * 5)); done
           exit 1
