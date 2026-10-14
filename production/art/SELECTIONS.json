@@ -8470,16 +8470,16 @@
   "heading_id": "h-courier",
   "route": "gpt",
   "spec_sha256": "acadcc1e4b8a4db689a9127001457905f8c1837da4faf40fe4c5d1f2aaa7f48c",
-  "prompt_sha256": "770371bb90b46e37f4f5fe1b0d780581ff992016f7c188410d8220fabdffdb79",
-  "status": "rejected",
-  "received_at": "2026-10-13T20:30:12+00:00",
+  "prompt_sha256": "efa81e0526287c3464311b5448416093792732c744e9210d182066e957f34e8e",
+  "status": "received",
+  "received_at": "2026-10-14T00:17:29+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: The shortbow rests with its lower tip on the ground and upper limb leaning against the satchel; keep each item supported and the Courier kit composition.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-COURIER.png",
-   "sha256": "a1ad08d2e34908085f16d868f90a7fbb742765237977b0bd567f23a6a0e31f9a",
+   "sha256": "2892bf15b5419293bcb133e14bcdb82a22eef381ba2c189ee5eb886e4c542477",
    "px": [
     1254,
     1254
@@ -8487,18 +8487,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-COURIER.png",
-   "sha256": "cd39bb5ad179d1dd9c2be4d647a6c1612046dbf83fd2137ebeb00b455ef8b8d9",
+   "sha256": "2fd2495b159448d63a5a9d69d6693f0ad1c90d1ec79f811e734fff335e0d2ac8",
    "px": [
-    1223,
-    1073
+    1235,
+    1164
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.077
+   "max_print_w_in_300ppi": 4.117
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-CULTIST": {
   "family": "background",
