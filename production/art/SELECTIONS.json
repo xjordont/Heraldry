@@ -8441,16 +8441,16 @@
   "heading_id": "h-believer",
   "route": "gpt",
   "spec_sha256": "3b8b03fa8c13f0ba5e6b62da2da9f478a0198873abdea1816287f1d66eaf55bd",
-  "prompt_sha256": "9b0cadddde662eb3dbee6162e58071f6c645f213c142e8344059d8bf94b4cc90",
+  "prompt_sha256": "ab08b33d120ab2ebd4fc989d65b0841324a16940c74ee6e8cc0115c25146d53e",
   "status": "approved",
-  "received_at": "2026-10-14T00:15:28+00:00",
+  "received_at": "2026-10-13T20:23:12+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
+  "model": "image_gen",
+  "notes": "Correction: Keep the lantern, vials, cord, cloth and devotional object on visible supports or hooks; keep the Believer still life and composition.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-BELIEVER.png",
-   "sha256": "3b9ce20556269e59094c6bbae6e17ba1f9fd1ac887e7878a9ce471403a267134",
+   "sha256": "20cf918f2e670157cdb76e563e6cc21195c668035eb910394976427ad2ad2b10",
    "px": [
     1254,
     1254
@@ -8458,16 +8458,16 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-BELIEVER.png",
-   "sha256": "2406d7c42d84e59fe77a3864ad07c08c746f970bf2a0386024352fa6834a992c",
+   "sha256": "b06bd2e432920a1100e96230334686f97949a728fb5489092135f9c22af4ba28",
    "px": [
-    1236,
-    1064
+    1215,
+    1181
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.12
+   "max_print_w_in_300ppi": 4.05
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-14T02:17:05+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-COURIER": {
   "family": "background",
@@ -8611,16 +8611,16 @@
   "heading_id": "h-merchant",
   "route": "gpt",
   "spec_sha256": "4a264a85e7100b4cf433581b53751f91e9fe6ba20985ff347bff10d669917863",
-  "prompt_sha256": "2ba1c7b423e89a44707679fe44f08cb4e163b9304d9ae4af98eb2a77ecc186a9",
+  "prompt_sha256": "d37cf548bb45e5a29f495b3aabbfc603cc451dbaacb3dc4a075b247f83388f6d",
   "status": "approved",
-  "received_at": "2026-10-14T00:39:03+00:00",
+  "received_at": "2026-10-13T20:52:37+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
+  "model": "image_gen",
+  "notes": "Correction: Balance the scale beam down toward the coin-weighted pan and keep the empty pan raised; rest the sickle, strongbox, ledger, quill, and purse fully on the counting table. Checker flags: tabletop ink reaches the lower image edge; mid-tones are hatching.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-MERCHANT.png",
-   "sha256": "047a2e4cb7d4bcb1cf7e4a901b21a6e18c70017e433d6e2b2d01400f76efabe6",
+   "sha256": "66ddf8bad121be051a5325fb22aabffa1420b535956a3948d36413108ddb37c1",
    "px": [
     1254,
     1254
@@ -8628,16 +8628,16 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-MERCHANT.png",
-   "sha256": "52ae6b625224e94de79a0e26c7dba2c075f2dceebe4044449d003172da2b3357",
+   "sha256": "f5389cb82201135c99b933eb7d9e6bc6d402865c8eba2fe3273747d5f6cbd1bb",
    "px": [
-    1242,
-    1131
+    1252,
+    1175
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.14
+   "max_print_w_in_300ppi": 4.173
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-14T02:17:05+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-NOBLE": {
   "family": "background",
@@ -8645,16 +8645,16 @@
   "heading_id": "h-noble",
   "route": "gpt",
   "spec_sha256": "e07b70492cd7f2165bedbeedf104a8f85c9971050eb8c49fce7248937cd1c146",
-  "prompt_sha256": "df3bff0cc390834b1cb0fac17675af9a8ce09073776a6b61d789df5356fe3b1a",
+  "prompt_sha256": "56df74322bb2a824bf38d408a22b3b83563f2dd18447ef7d8d259c87dc4be2cc",
   "status": "approved",
-  "received_at": "2026-10-14T03:15:13+00:00",
+  "received_at": "2026-10-13T20:55:29+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Correction: widen the tabletop so the rapier guard, pommel, blade, and point rest fully on it with clear space inside every edge; keep the still life, guide arrangement, and gritty ink style. Remaining defects: hilt still overhangs, frame-touching marks, star-shaped moth holes, banner draped without a separate rod, 15 percent mid-tone warning.",
+  "model": "image_gen",
+  "notes": "Correction: Keep the entire rapier flat on the tabletop with generous space between its tip and the table edge; lay the folded banner and rod flat with cloth hanging only where supported. Checker flags: stray marks reach image edge; mid-tones are hatching.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-NOBLE.png",
-   "sha256": "1a864ccd9cc2b540df50ff65b5f38574335932de04c8c2483eafcf9a7ad2dfb5",
+   "sha256": "88a66066e0ef463e66a07000db1b7af1183b15c1dfbd0a65e05aa063a624c385",
    "px": [
     1254,
     1254
@@ -8662,16 +8662,16 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-NOBLE.png",
-   "sha256": "4a44e5d938f7cea74411dd5faef65ff02691b4c3ac9c1dd947ae97a54bf8e153",
+   "sha256": "cb96ea8293ac701b74e1eaf2e085a3b8c1e2f6b96b802b9ddaf4169d81b0cc75",
    "px": [
-    1253,
-    1015
+    1234,
+    927
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.177
+   "max_print_w_in_300ppi": 4.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-14T03:19:43+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-NOMAD": {
   "family": "background",
@@ -8815,16 +8815,16 @@
   "heading_id": "h-scholar",
   "route": "gpt",
   "spec_sha256": "91d4672666f08d52ca0d81ea6f61c71389089231ccb34a0dcded1433b0342f92",
-  "prompt_sha256": "b8dfa689cb0d0feae0d990a28c0272ea52acb6f9a08c693949efaf174271d839",
+  "prompt_sha256": "50ead0011c7b2d87147531d09e864d9cbef448e6e7d33327f5faac8268bcf70d",
   "status": "approved",
-  "received_at": "2026-10-14T01:15:59+00:00",
+  "received_at": "2026-10-13T21:10:46+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
+  "model": "image_gen",
+  "notes": "Correction: Lean the quarterstaff securely against the desk with its foot on the floor; keep books, sheets, map, quill, inkpot, candle, and spectacles resting on the desk or weighted flat.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SCHOLAR.png",
-   "sha256": "7db1349afb3a0608505cd3e804da82d8ac571e8c4de2ba5af7e8080d7af04b73",
+   "sha256": "c2108ca0fcea946fb7827522041c992a1fabfb5ff89c648a37081393f089614f",
    "px": [
     1254,
     1254
@@ -8832,16 +8832,16 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SCHOLAR.png",
-   "sha256": "28bc73ea541036258b42a790f6d946b6325e01bb649338392eac6a493dcdbcbe",
+   "sha256": "1f4db436bf0f6253dea2f7258aa39f72112dac29bff261418e03f3ebf685b1d5",
    "px": [
-    1165,
-    1143
+    1191,
+    1171
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.883
+   "max_print_w_in_300ppi": 3.97
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-14T02:17:05+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-SCOUT": {
   "family": "background",
@@ -8849,16 +8849,16 @@
   "heading_id": "h-scout",
   "route": "gpt",
   "spec_sha256": "c981240625aa67bba11cc363495cd732926f092b42fa5bf349aca87051e2ff6e",
-  "prompt_sha256": "e67d7bcb67cfb191ff2a3e5b5ef591ddf689a52ccf7338de1642f6e16247b217",
+  "prompt_sha256": "1833ccf92036ff0c1962775a5a74776ade9eaf1c4455ee374dc40eda66980999",
   "status": "approved",
-  "received_at": "2026-10-14T02:33:31+00:00",
+  "received_at": "2026-10-13T21:13:44+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Correction: cloak is plain coarse wool with no camouflage blotch pattern; keep it folded flat in the guide layout and retain the gritty ink style.",
+  "model": "image_gen",
+  "notes": "Correction: Rest the shortbow, cloak, knife, compass, snapped twig, and herb bundle fully on the leaf-litter surface; the only paw print is a plaster impression in the flat stone, with no animal present. Checker warns of an edge fleck and mid-tones; visual review finds no cropped subject and ink hatching only.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SCOUT.png",
-   "sha256": "bbbf8ff267288d3f7a9674e104ecf9a7e50cc8ec4d2ff3f667868aae897e019b",
+   "sha256": "2e017a75ddc059512ecec56a1cc5c4af245bb1923c4dbf10e19aac6389af548a",
    "px": [
     1254,
     1254
@@ -8866,16 +8866,16 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SCOUT.png",
-   "sha256": "d0d2d378aa3ac571a8d1ebe1f93305f5b9c9a25797e296b9bb89042eeacb96c4",
+   "sha256": "39129d1bc2850ca98129b2dcd1c98c76d37d5ec001cb091f843f0018e03c6da1",
    "px": [
-    1229,
-    1042
+    1234,
+    976
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.097
+   "max_print_w_in_300ppi": 4.113
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-14T03:07:13+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-SHEPHERD": {
   "family": "background",
@@ -8917,16 +8917,16 @@
   "heading_id": "h-soldier",
   "route": "gpt",
   "spec_sha256": "1db4f2f8e30e9eccfd09588ddb44c362b864e8c53bb764737a963d2479aea5b2",
-  "prompt_sha256": "a30ff858fe631e7becf31881727d7a7ba1f632a17ad7d17a60cdfa104250844b",
+  "prompt_sha256": "f8027686fcca7bd515bbd7885720ffcba7f20e4b1f6c4426ab4548da15ca63a9",
   "status": "approved",
-  "received_at": "2026-10-14T01:28:25+00:00",
+  "received_at": "2026-10-13T21:20:45+00:00",
   "surface": "Codex",
-  "model": "not shown",
-  "notes": "Guide layout and support are followed. Spear tip at top and right boot are inside the canvas but sit within roughly 4% of the edge, short of requested 8% white margin. No crop. Mid-tone warning is hatching.",
+  "model": "image_gen",
+  "notes": "Correction: Rest the spear butt on the floor and lean its shaft against the kit chest; keep the helm, whetstone, folded surcoat, boots, and empty scabbard loop on visible supports with nothing attached to the spear. Checker warns of sparse edge marks and hatching; no object is cropped or edge-touching.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SOLDIER.png",
-   "sha256": "5afc76f09775cc418ab875b96492bd47ef026b5dbd8e3ff0dbf1cb05f9f6a4b4",
+   "sha256": "9c4b368dc851f864b6d97d0b3fe7440ad9b0c3dbebaaae933746c1117682a896",
    "px": [
     1254,
     1254
@@ -8934,16 +8934,16 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SOLDIER.png",
-   "sha256": "d34ccb8a55757823228bd3dec268a6cb3b4d134bcd7affa0c55075cd8cf93ca9",
+   "sha256": "8fde4f99bcbd7edaa3f3a0c7077e57f8071fb2627a09b9e0bddaef8bce3a015c",
    "px": [
-    1197,
-    1165
+    1248,
+    1230
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.99
+   "max_print_w_in_300ppi": 4.16
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-14T02:17:05+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00"
  },
  "ART-BAC-VAGABOND": {
   "family": "background",
