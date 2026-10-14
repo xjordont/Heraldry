@@ -8834,16 +8834,16 @@
   "heading_id": "h-scout",
   "route": "gpt",
   "spec_sha256": "c981240625aa67bba11cc363495cd732926f092b42fa5bf349aca87051e2ff6e",
-  "prompt_sha256": "1833ccf92036ff0c1962775a5a74776ade9eaf1c4455ee374dc40eda66980999",
-  "status": "rejected",
-  "received_at": "2026-10-13T21:13:44+00:00",
+  "prompt_sha256": "e67d7bcb67cfb191ff2a3e5b5ef591ddf689a52ccf7338de1642f6e16247b217",
+  "status": "received",
+  "received_at": "2026-10-14T01:24:19+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Rest the shortbow, cloak, knife, compass, snapped twig, and herb bundle fully on the leaf-litter surface; the only paw print is a plaster impression in the flat stone, with no animal present. Checker warns of an edge fleck and mid-tones; visual review finds no cropped subject and ink hatching only.",
+  "model": "not shown",
+  "notes": "The composition follows the attached guide. The lower-left bow tip is inside the canvas but misses the requested 8% white margin; visual review found no crop. Slight edge fleck noted.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SCOUT.png",
-   "sha256": "2e017a75ddc059512ecec56a1cc5c4af245bb1923c4dbf10e19aac6389af548a",
+   "sha256": "131bc1621df44510b6782ae139df6a4847dd53f8ea0875bd8824e7c41feb326a",
    "px": [
     1254,
     1254
@@ -8851,18 +8851,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SCOUT.png",
-   "sha256": "39129d1bc2850ca98129b2dcd1c98c76d37d5ec001cb091f843f0018e03c6da1",
+   "sha256": "052c857a848530628073cde7ab6a83f05df3047a6c9c22f746d89d84a45353c6",
    "px": [
     1234,
-    976
+    1108
    ],
    "flags": [],
    "max_print_w_in_300ppi": 4.113
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-SHEPHERD": {
   "family": "background",
