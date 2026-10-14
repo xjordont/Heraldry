@@ -8569,16 +8569,16 @@
   "heading_id": "h-hermit",
   "route": "gpt",
   "spec_sha256": "7017e4b4fc5163dc92b8a480d3175c4d791002b9157547047bdf4e2e84448514",
-  "prompt_sha256": "9441dc6a1a78aefabf53465db6baa9d29ae41714fd3af90b845c3320b011e9bc",
-  "status": "rejected",
-  "received_at": "2026-10-13T20:49:35+00:00",
+  "prompt_sha256": "f065916403e259a00a2f3dcd94cfefe2fc377c7fda9079945263569c3d99cb25",
+  "status": "received",
+  "received_at": "2026-10-14T00:32:25+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Every object rests on the flat stone or leans against a visible support; the dried herbs hang from a taut visible line and the robe drapes downward over its stump. Checker warnings reviewed: mid-tones are ink hatching; no crop or edge contact.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-HERMIT.png",
-   "sha256": "9f57216f2147c67865ddeebfd1335e59f95e885dddba55079e502867081929e2",
+   "sha256": "e436024e403ebd2199cca8e24efa7cbe14ef56fabd169ce135d670c101215f35",
    "px": [
     1254,
     1254
@@ -8586,18 +8586,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-HERMIT.png",
-   "sha256": "635b5d4a97cc436a87ea3ea87eff1940537daee8379cbcb9bc16aa52bc3a521e",
+   "sha256": "bd3ff99304a895e1b92a2534c36468b0793b63a5d1b7cfca890b3980b874d2fa",
    "px": [
-    1212,
-    1190
+    1237,
+    989
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.04
+   "max_print_w_in_300ppi": 4.123
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-MERCHANT": {
   "family": "background",
