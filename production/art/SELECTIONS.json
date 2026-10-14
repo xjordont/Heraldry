@@ -8338,16 +8338,16 @@
   "heading_id": "h-alchemist",
   "route": "gpt",
   "spec_sha256": "76d522cca5126877d29e7af52a6d23d640834002e1a6e9111eaf6cf02b227a68",
-  "prompt_sha256": "6dc9be0bf0c576a1472c8c0ec0de6ef1e0d3134c14a170547a3d52745d8f636d",
-  "status": "rejected",
-  "received_at": "2026-10-13T20:01:58+00:00",
+  "prompt_sha256": "47f78df0fa984ce792c87681d16435dc46674c9fca45a6f01d040a45cbb51b95",
+  "status": "received",
+  "received_at": "2026-10-14T00:08:14+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Every object rests on, leans against, or hangs from a visible support; keep the named alchemist's kit and composition.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms. Visual flag: bench reaches the side edges and its lower legs are cropped.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-ALCHEMIST.png",
-   "sha256": "4cbc3053b365a3b88dd0264341256fc86d72798efb7e1b7657eaf5a236fc0954",
+   "sha256": "a791375b56610be303864b292f4a705028421de54f1d124d57f795fc32921680",
    "px": [
     1254,
     1254
@@ -8355,18 +8355,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-ALCHEMIST.png",
-   "sha256": "d4f04ac5ad70e84047902fce46651e405f513b9d4b2a48bb527601449a410439",
+   "sha256": "6829d432f79fdff6cc8a9da86e653640a427f2181f04e2ce977c8d6c5fb127f2",
    "px": [
-    1235,
+    1254,
     1020
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.117
+   "max_print_w_in_300ppi": 4.18
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-APPRENTICE": {
   "family": "background",
