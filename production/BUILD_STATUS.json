@@ -1,13 +1,13 @@
 {
- "request_id": "20261014T170730Z",
+ "request_id": "20261014T211936Z",
  "result": "CANDIDATE_READY",
  "note": "all automated checks pass; the all-page visual review of this exact PDF is still pending",
  "failed_checks": [
   "visual_review_currency"
  ],
- "source_commit": "ab8eca32d3a4b3280d6e6c92b375ffb7eac19840",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/38603990628",
- "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC492-candidate-3",
+ "source_commit": "47355f984e8211ca2936c878a169f33909df3ebb",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/38639402967",
+ "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC492-candidate-4",
  "pdfs": {
   "Heraldry_RC492_covers-front-back-white.pdf": {
    "bytes": 4246081,
@@ -18,16 +18,16 @@
    "sha256": "f496c129176ee3d543100347e64b028e7fc7c530c0e6a05ff20178a6cab087a9"
   },
   "Heraldry_RC492_digital.pdf": {
-   "bytes": 152970365,
-   "sha256": "2db6b0d72fa510079b3d0953c99d7d9f9281c371d76b4be8479fef3acee071ea"
+   "bytes": 152931880,
+   "sha256": "bc53109ef539e3ac21c8bd37f342ca1abb01b28a6544909f0f22fb5373ee879b"
   },
   "Heraldry_RC492_inkjet-borderless-white.pdf": {
-   "bytes": 148719111,
-   "sha256": "fb68a2b1951a5ed92654d419b5779b67c32fc0f5ae0816a6825fc61e334beb20"
+   "bytes": 148680881,
+   "sha256": "53885dc43b4bbbad156910fc985f6487aee938c3bef683c9f58921094658ceb9"
   },
   "Heraldry_RC492_inkjet-borderless.pdf": {
-   "bytes": 148749172,
-   "sha256": "3adb75051c641d988ea7b4d0d1057d5417118b791f75815a1e1d21403be05d57"
+   "bytes": 148711078,
+   "sha256": "10e4f8bea8cff69404a6ee1385077e0533b767ff1815714cd0b2532e245a8e78"
   },
   "Heraldry_RC492_inkjet-calibration.pdf": {
    "bytes": 40596,
