@@ -37,7 +37,7 @@ reproducible (proved on RC492).
 | `tools/visual_review_bind.py` | validates Codex's review record and writes the ledger (`--push` commits and pushes it) |
 | `.github/workflows/rebuild-delivery.yml` | the release; also starts when `production/qa/visual-review.json` is pushed to main; writes `RELEASE_RESULT.json` |
 | `tools/release_result.py` | `RELEASED` or `FAILED` for a ledger commit |
-| `production/build/CODEX_BUILD_CARD.md`, `CODEX_BUILD_PROMPT.md` | Codex's contract and the prompt to paste |
+| `production/codex-build/CODEX_BUILD_CARD.md`, `CODEX_BUILD_PROMPT.md` | Codex's contract and the prompt to paste |
 
 `build_request.py check` refuses unless: on main, tree clean, local main equals origin/main, every illustration approved, art queue empty, and
 `tools/preflight.py` passes. Codex never fixes a failing build; it reports the failed step and stops.
