@@ -8635,16 +8635,16 @@
   "heading_id": "h-noble",
   "route": "gpt",
   "spec_sha256": "e07b70492cd7f2165bedbeedf104a8f85c9971050eb8c49fce7248937cd1c146",
-  "prompt_sha256": "56df74322bb2a824bf38d408a22b3b83563f2dd18447ef7d8d259c87dc4be2cc",
-  "status": "rejected",
-  "received_at": "2026-10-13T20:55:29+00:00",
+  "prompt_sha256": "df3bff0cc390834b1cb0fac17675af9a8ce09073776a6b61d789df5356fe3b1a",
+  "status": "received",
+  "received_at": "2026-10-14T00:45:21+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Keep the entire rapier flat on the tabletop with generous space between its tip and the table edge; lay the folded banner and rod flat with cloth hanging only where supported. Checker flags: stray marks reach image edge; mid-tones are hatching.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms. Visual flags: cushion holes are star-shaped; rapier tip reaches the table edge.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-NOBLE.png",
-   "sha256": "88a66066e0ef463e66a07000db1b7af1183b15c1dfbd0a65e05aa063a624c385",
+   "sha256": "c0fca912c992d07bc8255c55d0572999a7cc576779d81cf35cb809044513a926",
    "px": [
     1254,
     1254
@@ -8652,18 +8652,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-NOBLE.png",
-   "sha256": "cb96ea8293ac701b74e1eaf2e085a3b8c1e2f6b96b802b9ddaf4169d81b0cc75",
+   "sha256": "a386d54e2618e952e448bb979bc3f6fe96fc9d2bbf09d53155d96f23523edc7e",
    "px": [
-    1234,
-    927
+    1233,
+    1034
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.113
+   "max_print_w_in_300ppi": 4.11
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-NOMAD": {
   "family": "background",
