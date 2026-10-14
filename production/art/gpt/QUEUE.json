@@ -1,42 +1,12 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-14T03:07:13+00:00",
+ "generated_at": "2026-10-14T03:19:44+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
- "receipts_base": 352,
+ "receipts_base": 353,
  "target_pixels": 1572864,
- "count": 1,
- "items": [
-  {
-   "id": "ART-BAC-NOBLE",
-   "family": "background",
-   "register": "still",
-   "ref_set": "background",
-   "title": "Noble",
-   "prompt": "production/art/gpt/prompts/ART-BAC-NOBLE.txt",
-   "prompt_sha256": "df3bff0cc390834b1cb0fac17675af9a8ce09073776a6b61d789df5356fe3b1a",
-   "size": "1024x1024",
-   "print_w_in": 1.6,
-   "references": [
-    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
-    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
-    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
-    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
-    "production/art/composition/ART-BAC-NOBLE.jpg"
-   ],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "No figure or hands, and no lettering.",
-    "No crown.",
-    "No readable heraldry or text.",
-    "No star shapes anywhere: moth holes are small ragged round tears.",
-    "No part of the rapier overhangs the table edge.",
-    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
-   ]
-  }
- ]
+ "count": 0,
+ "items": []
 }

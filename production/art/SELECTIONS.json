@@ -8646,7 +8646,7 @@
   "route": "gpt",
   "spec_sha256": "e07b70492cd7f2165bedbeedf104a8f85c9971050eb8c49fce7248937cd1c146",
   "prompt_sha256": "df3bff0cc390834b1cb0fac17675af9a8ce09073776a6b61d789df5356fe3b1a",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T03:15:13+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8670,7 +8670,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.177
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T03:19:43+00:00"
  },
  "ART-BAC-NOMAD": {
   "family": "background",
