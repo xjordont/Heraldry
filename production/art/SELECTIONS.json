@@ -8678,16 +8678,16 @@
   "heading_id": "h-nomad",
   "route": "gpt",
   "spec_sha256": "d6e9f8fe00ea8a7645b90709a3cf63a4b848fa1e6ac6fe0ca009bcb2ee0d7371",
-  "prompt_sha256": "f74828d826feb88a1c70759f58bef49115e99e65a6b778ec0388e0224e89d6c1",
-  "status": "rejected",
-  "received_at": "2026-10-13T20:58:25+00:00",
+  "prompt_sha256": "d4d3a5ec92800aede6ff19bc146a10d66847bb0e21220467c57887b98954509c",
+  "status": "received",
+  "received_at": "2026-10-14T02:30:42+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Rest the sheathed scimitar tip on the ground with its upper length leaning securely against the bound bedroll; keep the waterskin, pot, cloak, and walking stick supported on the ground or bundle.",
+  "model": "not shown",
+  "notes": "Correction: show the bedroll as a soft, flexible felt or hide bundle, not as stone; keep the guide layout, gravity, and gritty ink style. Remaining defects: scimitar does not clearly read as curved and half-drawn; automated 15 percent mid-tone warning.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-NOMAD.png",
-   "sha256": "8aa2ec13ceb589402941cb4c477b5262375854479e518d7fe3dec3dda793b0b3",
+   "sha256": "ce1d311b477c4be792c4840e7b9a5b8917e90dfc6b954a78dc8c4234f0b0c603",
    "px": [
     1254,
     1254
@@ -8695,18 +8695,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-NOMAD.png",
-   "sha256": "3b5a69ae9f1f28f4e2dbb2dbe8f1a62e3a90e5c74877478a5959fb52bee43dd6",
+   "sha256": "8707145c292e27d8d0308dd96b0f23c1b5e2df506da1e552b2d921e6d582b9a2",
    "px": [
-    1235,
-    1078
+    1254,
+    1007
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.117
+   "max_print_w_in_300ppi": 4.18
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-14T02:15:34+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity; the bedroll is soft felt, not stone (owner 2026-10-14)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-PAUPER": {
   "family": "background",
