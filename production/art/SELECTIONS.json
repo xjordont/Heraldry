@@ -8503,16 +8503,16 @@
   "heading_id": "h-cultist",
   "route": "gpt",
   "spec_sha256": "d4a05a0c73c05b3c05331ccc65af1826e2b513a8e025bd90a3ebf0b6d3c052c5",
-  "prompt_sha256": "2fdf0c9d7d427ad1fe5e4f0295d8a325ad162afbad1f390cf7563d13448f6405",
-  "status": "rejected",
-  "received_at": "2026-10-13T20:36:43+00:00",
+  "prompt_sha256": "25028deed1db87d1b7d0575726b1875ec8a50233a8a9fa1922cf9c9a1ce704c2",
+  "status": "received",
+  "received_at": "2026-10-14T00:22:08+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: The dagger lies flat across the supported torch and the robe hangs over the slab edge; keep each object physically supported and preserve the Cultist still life.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-CULTIST.png",
-   "sha256": "9f28e698979651afcda52eb7a4ac914cb8ad994d11e2fe03ff82a934962e23cb",
+   "sha256": "c4d969f85248516604ff1010402087ad600de307c2a565169cf16d9a3021a7bd",
    "px": [
     1254,
     1254
@@ -8520,18 +8520,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-CULTIST.png",
-   "sha256": "ff8124ddb72ef1891a65c2f2638a48c818ec677b1fcd83b58accbdab3291d6c1",
+   "sha256": "d174f6b52852979407694fd33f332fcc16556abe5d90c3df0e427b333d0859a9",
    "px": [
-    1220,
-    1110
+    1216,
+    1146
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.067
+   "max_print_w_in_300ppi": 4.053
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-FARMER": {
   "family": "background",
