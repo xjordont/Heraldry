@@ -8867,16 +8867,16 @@
   "heading_id": "h-shepherd",
   "route": "gpt",
   "spec_sha256": "16300574571fe3c333fcedcc1279db9bfe8bfe6faa127ad39f0833fdce38f42a",
-  "prompt_sha256": "c1142d94601dff94ae17c38be0b13c643a1538265e3b28c73afa369d7686bb94",
-  "status": "rejected",
-  "received_at": "2026-10-13T21:17:28+00:00",
+  "prompt_sha256": "409501146a517f25bbba15ea574aad5bf6da1c94ef7232cf2a4a4cc5856d59cb",
+  "status": "received",
+  "received_at": "2026-10-14T01:26:20+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Hang the sheep bell straight down by its strap from the fence-post top; rest the crook staff, sling, bandage roll, and stones on or against visible supports.",
+  "model": "not shown",
+  "notes": "No visible defects after print-size review; the mid-tone warning is hatching and antialiasing.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SHEPHERD.png",
-   "sha256": "0fa116942e618de9f714b39411a69cb96cd14fecd0838ae3c008362206bd81fc",
+   "sha256": "d4f00eddc9b38c701f5cdf7b417c753000b6ecab4057f64e4c61f9c599f85e5f",
    "px": [
     1254,
     1254
@@ -8884,18 +8884,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SHEPHERD.png",
-   "sha256": "e8c99589d94179cc5af9b53378c04778b6c8ebb00063306b1377b0abc771d51c",
+   "sha256": "9cab31f901c036ce454fd90c06ec9e406972938d51d3c7787bb2def77759b2e4",
    "px": [
-    1194,
-    1190
+    1086,
+    1195
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.98
+   "max_print_w_in_300ppi": 3.62
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-SOLDIER": {
   "family": "background",
