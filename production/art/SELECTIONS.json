@@ -8602,16 +8602,16 @@
   "heading_id": "h-merchant",
   "route": "gpt",
   "spec_sha256": "4a264a85e7100b4cf433581b53751f91e9fe6ba20985ff347bff10d669917863",
-  "prompt_sha256": "d37cf548bb45e5a29f495b3aabbfc603cc451dbaacb3dc4a075b247f83388f6d",
-  "status": "rejected",
-  "received_at": "2026-10-13T20:52:37+00:00",
+  "prompt_sha256": "2ba1c7b423e89a44707679fe44f08cb4e163b9304d9ae4af98eb2a77ecc186a9",
+  "status": "received",
+  "received_at": "2026-10-14T00:39:03+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Balance the scale beam down toward the coin-weighted pan and keep the empty pan raised; rest the sickle, strongbox, ledger, quill, and purse fully on the counting table. Checker flags: tabletop ink reaches the lower image edge; mid-tones are hatching.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-MERCHANT.png",
-   "sha256": "66ddf8bad121be051a5325fb22aabffa1420b535956a3948d36413108ddb37c1",
+   "sha256": "047a2e4cb7d4bcb1cf7e4a901b21a6e18c70017e433d6e2b2d01400f76efabe6",
    "px": [
     1254,
     1254
@@ -8619,18 +8619,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-MERCHANT.png",
-   "sha256": "f5389cb82201135c99b933eb7d9e6bc6d402865c8eba2fe3273747d5f6cbd1bb",
+   "sha256": "52ae6b625224e94de79a0e26c7dba2c075f2dceebe4044449d003172da2b3357",
    "px": [
-    1252,
-    1175
+    1242,
+    1131
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.173
+   "max_print_w_in_300ppi": 4.14
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-NOBLE": {
   "family": "background",
