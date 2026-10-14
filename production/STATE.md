@@ -574,3 +574,5 @@ Owner: keep the Codex ink style for visual cohesion, but try the Nano Banana 2.1
 ## 2026-10-14: guided backgrounds reviewed
 
 Codex delivered 19 guided backgrounds. Full-size review: 17 approved (Alchemist, Apprentice, Artisan, Believer, Courier, Cultist, Farmer, Hermit, Merchant, Pauper, Performer, Sailor, Scholar, Shepherd, Smuggler, Soldier, Vagabond): grounded layouts, Codex ink style kept. Rejected back to the queue: Noble (rapier hilt and point overhang the table; brief now says the whole sword lies on the tabletop) and Scout (cloak read as modern camouflage; brief now says plain wool). Nomad (guide nb-2) was added after the owner noted all 20 should be redone; it is queued too. Queue: Nomad, Noble, Scout. Build still on hold.
+
+Review 2026-10-14 (later): Nomad (felt bedroll, curved sheathed scimitar) and Scout (plain wool cloth) approved. Noble rejected a second time: the guard still overhangs the tabletop's far edge; the brief now asks for a wider table and a sword well inside it. Queue: Noble only. 19 of 20 guided backgrounds approved (Nomad, Scout included).

@@ -1,13 +1,13 @@
 {
  "schema": 2,
  "phase": "batch",
- "generated_at": "2026-10-14T02:17:05+00:00",
+ "generated_at": "2026-10-14T03:07:13+00:00",
  "max_references": 5,
  "push_every": 1,
  "review_every": 10,
- "receipts_base": 349,
+ "receipts_base": 352,
  "target_pixels": 1572864,
- "count": 3,
+ "count": 1,
  "items": [
   {
    "id": "ART-BAC-NOBLE",
@@ -35,61 +35,6 @@
     "No readable heraldry or text.",
     "No star shapes anywhere: moth holes are small ragged round tears.",
     "No part of the rapier overhangs the table edge.",
-    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
-   ]
-  },
-  {
-   "id": "ART-BAC-NOMAD",
-   "family": "background",
-   "register": "still",
-   "ref_set": "background",
-   "title": "Nomad",
-   "prompt": "production/art/gpt/prompts/ART-BAC-NOMAD.txt",
-   "prompt_sha256": "d4d3a5ec92800aede6ff19bc146a10d66847bb0e21220467c57887b98954509c",
-   "size": "1024x1024",
-   "print_w_in": 1.6,
-   "references": [
-    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
-    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
-    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
-    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
-    "production/art/composition/ART-BAC-NOMAD.jpg"
-   ],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "No figure or hands, and no lettering.",
-    "No camels or horses.",
-    "Do not make the sword ornate.",
-    "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
-   ]
-  },
-  {
-   "id": "ART-BAC-SCOUT",
-   "family": "background",
-   "register": "still",
-   "ref_set": "background",
-   "title": "Scout",
-   "prompt": "production/art/gpt/prompts/ART-BAC-SCOUT.txt",
-   "prompt_sha256": "e67d7bcb67cfb191ff2a3e5b5ef591ddf689a52ccf7338de1642f6e16247b217",
-   "size": "1024x1024",
-   "print_w_in": 1.6,
-   "references": [
-    "assets/art/style/STYLE-REF-19-pack-rope-lantern.jpg",
-    "assets/art/style/STYLE-REF-34-adventuring-gear-sheet.jpg",
-    "assets/art/style/STYLE-REF-25-bracers-pair.jpg",
-    "assets/art/style/STYLE-REF-39-poison-coffin-flask.jpg",
-    "production/art/composition/ART-BAC-SCOUT.jpg"
-   ],
-   "max_attempts": 1,
-   "size_class": "",
-   "must": [],
-   "avoid": [
-    "No figure or hands, and no lettering.",
-    "Do not repeat the Courier's satchel and scroll tube.",
-    "No animal in the picture.",
-    "No telescope or spyglass.",
     "Nothing floats or juts out unsupported; every object rests, leans or hangs from a visible support."
    ]
   }
