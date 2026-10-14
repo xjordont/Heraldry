@@ -8702,16 +8702,16 @@
   "heading_id": "h-pauper",
   "route": "gpt",
   "spec_sha256": "72dd4f7202153f9aa1dab4bcb8a36da8a725ddc741986802ff01b313ba959ffb",
-  "prompt_sha256": "1a63d07a771c3c904b69406c73ff94f0330b980d625aa3d120a6e5339a47e191",
-  "status": "rejected",
-  "received_at": "2026-10-13T21:00:55+00:00",
+  "prompt_sha256": "0a01a905cfee08ac4390bcc85419cddb767c401c606e99c6a6ef543f2692f82e",
+  "status": "received",
+  "received_at": "2026-10-14T00:51:42+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Lean the club against the tied sack with its lower end planted on the ground; keep the bowl, cup, shoe, bread, and blanket resting on the ground, with no coins.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-PAUPER.png",
-   "sha256": "e4470231af7f4b78552789c01f6e2216138f5228dddbc2bffd0b4aaf5dceafd2",
+   "sha256": "de046822c783d7bc8f7eb4a5a142bb2aba6e347ec59f005c8894e261be46a3f8",
    "px": [
     1254,
     1254
@@ -8719,18 +8719,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-PAUPER.png",
-   "sha256": "356e6cd6640d6a298987c8992adee21e4df05d2b227d211f9306018aab82ab20",
+   "sha256": "8c4882311667749b78a582072d01a3309c73177dae0c7013726e91bcfb17b173",
    "px": [
-    1228,
-    1124
+    1245,
+    1045
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.093
+   "max_print_w_in_300ppi": 4.15
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-PERFORMER": {
   "family": "background",
