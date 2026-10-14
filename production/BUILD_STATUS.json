@@ -1,14 +1,13 @@
 {
- "request_id": "20261014T140033Z",
- "result": "FAILED",
- "note": "mandatory checks failed: visual_review_currency, layout_detectors",
+ "request_id": "20261014T170730Z",
+ "result": "CANDIDATE_READY",
+ "note": "all automated checks pass; the all-page visual review of this exact PDF is still pending",
  "failed_checks": [
-  "visual_review_currency",
-  "layout_detectors"
+  "visual_review_currency"
  ],
- "source_commit": "3ee81716ac8624674d25cda2ae29f4549794b97c",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/38576717372",
- "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC492-candidate-2",
+ "source_commit": "ab8eca32d3a4b3280d6e6c92b375ffb7eac19840",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/38603990628",
+ "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC492-candidate-3",
  "pdfs": {
   "Heraldry_RC492_covers-front-back-white.pdf": {
    "bytes": 4246081,
@@ -19,16 +18,16 @@
    "sha256": "f496c129176ee3d543100347e64b028e7fc7c530c0e6a05ff20178a6cab087a9"
   },
   "Heraldry_RC492_digital.pdf": {
-   "bytes": 152989849,
-   "sha256": "4f292943f42eea892153fe0f74a124079a28de47f4a35532028fae2dd71a9bad"
+   "bytes": 152970365,
+   "sha256": "2db6b0d72fa510079b3d0953c99d7d9f9281c371d76b4be8479fef3acee071ea"
   },
   "Heraldry_RC492_inkjet-borderless-white.pdf": {
-   "bytes": 148738382,
-   "sha256": "a8ca5fed3d35d68ab9c6256b708aa137d2a594aa69295951dc83449a1a423937"
+   "bytes": 148719111,
+   "sha256": "fb68a2b1951a5ed92654d419b5779b67c32fc0f5ae0816a6825fc61e334beb20"
   },
   "Heraldry_RC492_inkjet-borderless.pdf": {
-   "bytes": 148768514,
-   "sha256": "89470a51e5b5928cc68ff95102fa88543a6ae9fad5c2da61a321fbf52ba92f88"
+   "bytes": 148749172,
+   "sha256": "3adb75051c641d988ea7b4d0d1057d5417118b791f75815a1e1d21403be05d57"
   },
   "Heraldry_RC492_inkjet-calibration.pdf": {
    "bytes": 40596,
@@ -36,5 +35,5 @@
   }
  },
  "physical_print": "NOT TESTED",
- "next": "Fix the failure; do not release."
+ "next": "Claude Code reproduces this build, reviews every page and binds the visual ledger; pushing production/qa/visual-review.json then releases."
 }
