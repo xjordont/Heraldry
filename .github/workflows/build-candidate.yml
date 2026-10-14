@@ -64,7 +64,7 @@ jobs:
         if: steps.build.outcome == 'success'
         run: |
           V=$(python tools/manuscript.py --version)
-          python tools/review_aids.py build --pdf dist/Heraldry_"$V"_inkjet-borderless.pdf --calibration dist/Heraldry_"$V"_inkjet-calibration.pdf
+          python tools/review_aids.py build --pdf dist/Heraldry_"$V"_inkjet-borderless.pdf --calibration dist/Heraldry_"$V"_inkjet-calibration.pdf --covers dist/Heraldry_"$V"_covers-front-back.pdf
       - name: Publish a pre-release
         id: release
         if: steps.build.outcome == 'success'

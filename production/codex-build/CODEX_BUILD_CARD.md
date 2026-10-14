@@ -17,16 +17,18 @@ force-push, or touch credentials. The only files you write are your review recor
 
 ## 2. Review every page (this is the release gate: do it honestly)
 5. `git pull --ff-only origin main` then `git lfs pull --include="production/qa/review/*"`. Read `production/qa/review/manifest.json`:
-   it lists every contact sheet (`sheet-NN.jpg`, 24 pages each, all pages covered), the detail pages (`page-NNNN.jpg`, 100 dpi: both covers,
-   every chapter opener, every 50th page) and `calibration.jpg`.
+   it lists every contact sheet (`sheet-NN.jpg`, 24 pages each, all pages covered), the detail pages (`page-NNNN.jpg`, 100 dpi: first and last page,
+   every chapter opener, every 50th page), the two covers (`cover-front.jpg`, `cover-back.jpg`, from the separate covers PDF) and `calibration.jpg`.
+   The inkjet book itself has no covers inside it: its page 1 is the title page and its last page is the end of the index. That is correct, not a defect.
 6. Open and look at EVERY image listed, one at a time, in order. For each, write what you actually saw. Look for: an unintended blank page
    (page 6 is a deliberate blank verso before Chapter 1), overlapping or clipped text, text or art outside the safe edge, missing or wrong
    art (an empty slot, a stub, a white rectangle on the cream), a table or figure broken or stranded from its heading, wrong page order,
-   a cover that is not the owner's picture, a heading alone at the bottom of a page, a page of art with no text where text is expected.
-   The front cover is the owner-supplied picture (HERALDRY, skull-and-thorn frame); the back cover has the castle logo.
+   a heading alone at the bottom of a column, an entry name alone at the bottom of a column with its fields on the next page, a page of art with
+   no text where text is expected. In `cover-front.jpg` the front cover must be the owner-supplied picture (HERALDRY, skull-and-thorn frame,
+   dragon skeleton); `cover-back.jpg` must be the back cover with the castle logo. If either is not, that is a major finding.
 7. Write the review record to `$env:HERALDRY_SCRATCH\review.json` (schema: `tools/visual_review_bind.py` docstring): one `sheets` entry per
    sheet (observations of at least 60 characters, and `findings` with `page`, `severity` = `minor` or `major`, `text`), one `details` entry per
-   detail page, `calibration.observations`, your `reviewer` name ("Codex (OpenAI model, image inspection)") and a short `summary`.
+   detail page, one `covers` entry per cover image, `calibration.observations`, your `reviewer` name ("Codex (OpenAI model, image inspection)") and a short `summary`.
    Severity `major` = anything a reader would call a defect. Never mark a real defect minor to get a release; never invent observations.
 8. `PY tools/visual_review_bind.py bind --review $env:HERALDRY_SCRATCH\review.json --push`.
    - `REFUSED`: fix the record (missing entries, short observations, LFS stubs) and run it again; do not weaken the check.

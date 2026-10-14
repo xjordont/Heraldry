@@ -4,7 +4,10 @@
 Written into production/qa/review/ (Git LFS; replaced on every build, so main holds only the latest). A reviewer views every
 file and records what was seen. Deterministic for a given PDF. Producing these aids changes no gate and no ledger.
 
-    python tools/review_aids.py build --pdf dist/X_inkjet-borderless.pdf --calibration dist/X_inkjet-calibration.pdf [--out DIR]
+    python tools/review_aids.py build --pdf dist/X_inkjet-borderless.pdf --calibration dist/X_inkjet-calibration.pdf --covers dist/X_covers-front-back.pdf [--out DIR]
+
+The inkjet edition has no covers inside it (they are the separate covers PDF: page 1 is the title page and the last page is the end of the
+index), so the covers get their own images, cover-front.jpg and cover-back.jpg.
 """
 import argparse
 import hashlib
@@ -28,9 +31,9 @@ def render(doc, i, dpi):
 
 
 def detail_pages(doc):
-    """(page, reason): both covers, every chapter opener (outline level 1), and every EVERY-th page."""
+    """(page, reason): first and last page, every chapter opener (outline level 1), and every EVERY-th page."""
     n = len(doc)
-    pick = {1: "front cover", n: "back cover"}
+    pick = {1: "first page (title page; the covers are in the covers PDF)", n: "last page"}
     for lvl, title, page in doc.get_toc():
         if lvl == 1 and 1 <= page <= n:
             pick.setdefault(page, f"chapter opener: {title[:60]}")
@@ -39,7 +42,7 @@ def detail_pages(doc):
     return sorted(pick.items())
 
 
-def build(pdf, calibration, out):
+def build(pdf, calibration, covers, out):
     out.mkdir(parents=True, exist_ok=True)
     for old in list(out.glob("*.jpg")) + list(out.glob("manifest.json")):
         old.unlink()
@@ -67,10 +70,16 @@ def build(pdf, calibration, out):
         render(doc, p - 1, DETAIL_DPI).save(f, quality=80)
         details.append({"file": f.name, "page": p, "reason": why, "sha256": sha(f)})
     cal = pymupdf.open(calibration)
-    f = out / "calibration.jpg"
-    render(cal, 0, 60).save(f, quality=80)
-    man = {"pdf": Path(pdf).name, "pdf_sha256": sha(pdf), "pages": n, "sheets": sheets, "details": details,
-           "calibration": {"file": f.name, "sha256": sha(f)},
+    cal_file = out / "calibration.jpg"
+    render(cal, 0, 60).save(cal_file, quality=80)
+    cov = pymupdf.open(covers)
+    cover_items = []
+    for role, idx in (("front", 0), ("back", len(cov) - 1)):
+        f = out / f"cover-{role}.jpg"
+        render(cov, idx, DETAIL_DPI).save(f, quality=80)
+        cover_items.append({"file": f.name, "role": role, "sha256": sha(f)})
+    man = {"pdf": Path(pdf).name, "covers": cover_items, "pdf_sha256": sha(pdf), "pages": n, "sheets": sheets, "details": details,
+           "calibration": {"file": cal_file.name, "sha256": sha(cal_file)},
            "note": f"{len(sheets)} contact sheets of {PER_SHEET} pages at {SHEET_DPI} dpi cover every page; {len(details)} detail pages at {DETAIL_DPI} dpi."}
     (out / "manifest.json").write_text(json.dumps(man, indent=1) + "\n")
     print(f"{len(sheets)} sheets, {len(details)} detail pages, calibration -> {out}")
@@ -81,9 +90,10 @@ def main():
     ap.add_argument("cmd", choices=["build"])
     ap.add_argument("--pdf", required=True)
     ap.add_argument("--calibration", required=True)
+    ap.add_argument("--covers", required=True)
     ap.add_argument("--out", default=str(ROOT / "production/qa/review"))
     a = ap.parse_args()
-    build(a.pdf, a.calibration, Path(a.out))
+    build(a.pdf, a.calibration, a.covers, Path(a.out))
 
 
 if __name__ == "__main__":
