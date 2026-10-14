@@ -1,43 +1,46 @@
-# Unattended build chain (owner request 2026-10-14)
+# Unattended build and release chain (owner decisions 2026-10-14)
 
-Goal: a full build and release prepared overnight with Codex as orchestrator and GitHub as the only channel. No token, no
-local PDF build, no API call: Codex uses the Git login it already has.
+Codex orchestrates the whole build and release overnight, including the all-page visual review that gates it ("Hand it all over to codex";
+"I want Codex to have full rights to release like you do"). GitHub is the only channel: no token, no API call, no local PDF build. Codex uses
+the Git login it already has.
 
 ```
-Codex (Windows PC)                      GitHub Actions                              Claude Code (next session)
-tools/build_request.py request  --push-->  Build candidate (build-candidate.yml)
-  writes production/build-request.json      make test clean all; verify; pre-release
-tools/build_request.py wait     <--git---   commits production/BUILD_STATUS.json
-  reports CANDIDATE_READY | FAILED                                                   reproduces the build (same PDF hashes),
-                                                                                     reviews every page, binds
-                                                                                     production/qa/visual-review.json, pushes
-                                            Rebuild verified delivery (rebuild-delivery.yml)  <--push of that ledger--
-                                              make test clean all verify package; GitHub Release; ledgers on main
+Codex (Windows PC)                       GitHub Actions
+build_request.py request  --push-->      Build candidate (build-candidate.yml)
+                                           make test clean all; verify; review aids; pre-release
+build_request.py wait     <--git---      commits production/BUILD_STATUS.json + production/qa/review/ (LFS)
+git lfs pull; view every image
+visual_review_bind.py bind --push -->    Rebuild verified delivery (rebuild-delivery.yml), started by the ledger push
+                                           make test clean all verify package; GitHub Release; ledgers on main
+build_request.py release-wait <--git--   commits production/RELEASE_RESULT.json
 ```
 
-## Why the last step needs Claude Code
+## The review gate stays real
 
-`tools/verify.py` makes `visual_review_currency` a mandatory check: `production/qa/visual-review.json` must be bound to the
-SHA-256 of the exact cream PDF and record that every page was inspected. That inspection is human/Claude work (docs/VISUAL_QA.md:
-automated checks do not replace visual inspection), so an unattended run stops at a **pre-release candidate** named
-`<RC>-candidate-<n>` ("visual review pending"). A clean build is reproducible, so Claude Code rebuilds the same PDF, reviews it,
-and compares hashes with the candidate's `SHA256SUMS-candidate.txt` before binding the ledger.
+`tools/verify.py` still requires `production/qa/visual-review.json` bound to the SHA-256 of the exact cream PDF with every page recorded.
+The review is now by Codex, from images, and the ledger says so (reviewer name, `limits`: not glyph-level proofreading, not an independent second review,
+not a physical proof). `tools/visual_review_bind.py` keeps it honest: it refuses unless the candidate is `CANDIDATE_READY` and matches the manifest
+PDF hash, every contact sheet, detail page and the calibration sheet has real observations (60+ characters), the image files on disk match the manifest
+hashes (no LFS stubs), a reviewer is named, and no finding is `major`. A major finding blocks the release and is reported. The release workflow
+rebuilds the PDF from scratch and `verify` checks the ledger hash again, so a ledger for a different PDF fails the release. A clean build is
+reproducible (proved on RC492).
 
 ## Pieces
 
 | File | Role |
 |---|---|
-| `tools/build_request.py` | stdlib only. `check` (main ready?), `request` (writes and pushes the request), `wait` (polls `origin/main` for the status) |
+| `tools/build_request.py` | stdlib only. `check`, `request`, `wait`, `release-wait` |
 | `production/build-request.json` | the trigger: `request_id`, time, base commit |
-| `.github/workflows/build-candidate.yml` | starts on a push of the request file (or by hand); builds, verifies, publishes the pre-release, commits `production/BUILD_STATUS.json` (also on failure, with the failed step) |
-| `tools/build_status.py` | decides `CANDIDATE_READY` (only `visual_review_currency` failing) or `FAILED`; records PDF hashes |
-| `production/BUILD_STATUS.json` | the answer Codex reads |
-| `.github/workflows/rebuild-delivery.yml` | the release; also starts when `production/qa/visual-review.json` is pushed to main |
+| `.github/workflows/build-candidate.yml` | starts on a push of the request file (or by hand); builds, verifies, makes the review aids, publishes the pre-release, commits `BUILD_STATUS.json` (also on failure) and `production/qa/review/` |
+| `tools/build_status.py` | `CANDIDATE_READY` (only `visual_review_currency` failing) or `FAILED`; PDF hashes |
+| `tools/review_aids.py` | 24-page contact sheets (all pages), 100 dpi detail pages (covers, chapter openers, every 50th page), calibration, `manifest.json` |
+| `tools/visual_review_bind.py` | validates Codex's review record and writes the ledger (`--push` commits and pushes it) |
+| `.github/workflows/rebuild-delivery.yml` | the release; also starts when `production/qa/visual-review.json` is pushed to main; writes `RELEASE_RESULT.json` |
+| `tools/release_result.py` | `RELEASED` or `FAILED` for a ledger commit |
 | `production/build/CODEX_BUILD_CARD.md`, `CODEX_BUILD_PROMPT.md` | Codex's contract and the prompt to paste |
 
-`build_request.py check` refuses to request unless: on main, tree clean, local main equals origin/main, every illustration
-approved, art queue empty, and `tools/preflight.py` passes. Codex never edits tools, config, source, art or ledgers; it never
-fixes a failing build: it reports the failed step and stops.
+`build_request.py check` refuses unless: on main, tree clean, local main equals origin/main, every illustration approved, art queue empty, and
+`tools/preflight.py` passes. Codex never fixes a failing build; it reports the failed step and stops.
 
-Rules kept: PDFs and ZIPs are never committed (releases only); the ledgers on main describe the last verified release;
-physical printing stays NOT TESTED.
+Rules kept: PDFs and ZIPs are never committed (releases only; review images are JPEGs in LFS, replaced each build); ledgers on main describe the last
+verified release; physical printing stays NOT TESTED.

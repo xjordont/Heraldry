@@ -13,3 +13,4 @@ assets/art/marks/**/*.png filter=lfs diff=lfs merge=lfs -text
 assets/art/variants/**/*.png filter=lfs diff=lfs merge=lfs -text
 assets/art/cover/*.png filter=lfs diff=lfs merge=lfs -text
 assets/art/cover/*.jpg filter=lfs diff=lfs merge=lfs -text
+production/qa/review/*.jpg filter=lfs diff=lfs merge=lfs -text

@@ -8,6 +8,7 @@ The workflow answers by committing production/BUILD_STATUS.json, which `wait` re
     python tools/build_request.py check                    # is main ready to build? (read-only)
     python tools/build_request.py request                  # check, write and push the request; prints the request id
     python tools/build_request.py wait --id ID [--timeout-min 100] [--interval-sec 240]
+    python tools/build_request.py release-wait --ledger-commit SHA [--timeout-min 60] [--interval-sec 240]   # after the review is bound and pushed
 
 Exit codes: 0 ok / candidate ready, 2 not ready or build failed, 3 timed out.
 """
@@ -101,6 +102,21 @@ def cmd_wait(a):
     return 3
 
 
+def cmd_release_wait(a):
+    end = time.time() + a.timeout_min * 60
+    while time.time() < end:
+        git("fetch", "origin", "main")
+        r = subprocess.run(["git", "show", "origin/main:production/RELEASE_RESULT.json"], cwd=ROOT, capture_output=True, text=True)
+        s = json.loads(r.stdout) if r.returncode == 0 and r.stdout.strip() else None
+        if s and s.get("ledger_commit") == a.ledger_commit:
+            print(json.dumps(s, indent=1))
+            return 0 if s.get("result") == "RELEASED" else 2
+        print(f"waiting for the release of ledger commit {a.ledger_commit[:10]} ...", flush=True)
+        time.sleep(a.interval_sec)
+    print("timed out without a release result")
+    return 3
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -111,6 +127,11 @@ def main():
     w.add_argument("--timeout-min", type=int, default=100)
     w.add_argument("--interval-sec", type=int, default=240)
     w.set_defaults(f=cmd_wait)
+    rw = sub.add_parser("release-wait")
+    rw.add_argument("--ledger-commit", required=True)
+    rw.add_argument("--timeout-min", type=int, default=60)
+    rw.add_argument("--interval-sec", type=int, default=240)
+    rw.set_defaults(f=cmd_release_wait)
     a = ap.parse_args()
     sys.exit(a.f(a))
 

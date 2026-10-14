@@ -59,6 +59,12 @@ jobs:
         id: verify
         continue-on-error: true
         run: python tools/verify.py
+      - name: Page-review aids (contact sheets, detail pages, calibration)
+        id: aids
+        if: steps.build.outcome == 'success'
+        run: |
+          V=$(python tools/manuscript.py --version)
+          python tools/review_aids.py build --pdf dist/Heraldry_"$V"_inkjet-borderless.pdf --calibration dist/Heraldry_"$V"_inkjet-calibration.pdf
       - name: Publish a pre-release
         id: release
         if: steps.build.outcome == 'success'
@@ -76,7 +82,7 @@ jobs:
       - name: Record the result on main
         if: always()
         env:
-          FAILED_STEP: ${{ steps.lfs.outcome == 'failure' && 'fetch artwork' || steps.art.outcome == 'failure' && 'check artwork' || steps.deps.outcome == 'failure' && 'install dependencies' || steps.build.outcome == 'failure' && 'tests and clean build' || steps.release.outcome == 'failure' && 'publish pre-release' || '' }}
+          FAILED_STEP: ${{ steps.lfs.outcome == 'failure' && 'fetch artwork' || steps.art.outcome == 'failure' && 'check artwork' || steps.deps.outcome == 'failure' && 'install dependencies' || steps.build.outcome == 'failure' && 'tests and clean build' || steps.aids.outcome == 'failure' && 'review aids' || steps.release.outcome == 'failure' && 'publish pre-release' || '' }}
         run: |
           RID=$(python -c "import json;print(json.load(open('production/build-request.json'))['request_id'])" 2>/dev/null || echo "manual-$GITHUB_RUN_ID")
           python tools/build_status.py --request-id "$RID" --failed-step "$FAILED_STEP" --source-commit "$GITHUB_SHA" \
@@ -84,6 +90,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add production/BUILD_STATUS.json
+          git add -A production/qa/review
           git commit -m "Build candidate status ($RID)" || exit 0
           for i in 1 2 3 4; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep $((i * 5)); done
           exit 1

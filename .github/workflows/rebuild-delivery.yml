@@ -4,6 +4,11 @@ name: Rebuild verified delivery
 # verification ledgers and dist/RELEASE.json naming the release and its asset hashes (docs/LARGE_FILES.md).
 on:
   workflow_dispatch:
+  # The release follows the visual review: the reviewer (owner decision 2026-10-14: Codex) pushes production/qa/visual-review.json
+  # bound to a candidate's exact PDF (docs/BUILD_AUTOMATION.md). The bot's own commits use GITHUB_TOKEN and never start this again.
+  push:
+    branches: [main]
+    paths: ['production/qa/visual-review.json']
   # The release follows the visual review: Claude Code pushes production/qa/visual-review.json bound to a candidate's exact
   # PDF (docs/BUILD_AUTOMATION.md). The bot's own ledger commits use GITHUB_TOKEN and never start this workflow again.
   push:
@@ -57,8 +62,10 @@ jobs:
             python tools/check_history.py --base "$BASE_REF"
           fi
       - name: Rebuild and verify against the committed review ledger
+        id: build
         run: make test clean all verify package
       - name: Publish the PDFs as a GitHub Release
+        id: release
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -98,3 +105,15 @@ jobs:
           VERSION=$(python tools/manuscript.py --version)
           git commit -m "Rebuild verified $VERSION delivery"
           git push origin HEAD:main
+      - name: Record the release result on main
+        if: always() && github.event_name == 'push'
+        run: |
+          python tools/release_result.py --ledger-commit "$GITHUB_SHA" \
+            --failed-step "${{ steps.build.outcome == 'failure' && 'tests, clean build, verify or package (the visual ledger must match this exact PDF)' || steps.release.outcome == 'failure' && 'publish release' || '' }}" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add production/RELEASE_RESULT.json
+          git commit -m "Release result for $GITHUB_SHA" || exit 0
+          for i in 1 2 3 4; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep $((i * 5)); done
+          exit 1
