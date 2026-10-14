@@ -8371,16 +8371,16 @@
   "heading_id": "h-apprentice",
   "route": "gpt",
   "spec_sha256": "011607774c655ecb8b1c47a33f16a0695278524f580c401a28ab7d59ee472aed",
-  "prompt_sha256": "451e0c45405fa1f27c972c9859edc237388da68b2830f92a5abd943c5886d60b",
-  "status": "rejected",
-  "received_at": "2026-10-13T20:09:38+00:00",
+  "prompt_sha256": "012ffd4223cb2fee41b149fa86ebc9cf7aea21c4212050ddd56d572cab8fae94",
+  "status": "received",
+  "received_at": "2026-10-14T00:10:17+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: The coat hangs from the stool with both sleeves falling straight down and pooling on the floor; keep the named apprentice still life and composition.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms. Visual flag: scroll marks resemble pseudo-lettering.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-APPRENTICE.png",
-   "sha256": "cc448f1ab30fc6879b9b415b535e4c5f250e5193f497b932649abd70fc45504b",
+   "sha256": "b2b261f6177a19587b52feb902e3572c2820da92518d6af71363303f7c3eab8b",
    "px": [
     1254,
     1254
@@ -8388,18 +8388,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-APPRENTICE.png",
-   "sha256": "40c26b086ee9321c65b1c86612b07e4b756fe22642f1b59c93067a8768b6b9dd",
+   "sha256": "172907a39efa784ff739444c4657e346bc372a7f1ee9b9c27638c5fb8e354227",
    "px": [
-    1211,
-    1184
+    1233,
+    1186
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.037
+   "max_print_w_in_300ppi": 4.11
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-ARTISAN": {
   "family": "background",
