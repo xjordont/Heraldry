@@ -8848,15 +8848,15 @@
   "route": "gpt",
   "spec_sha256": "c981240625aa67bba11cc363495cd732926f092b42fa5bf349aca87051e2ff6e",
   "prompt_sha256": "e67d7bcb67cfb191ff2a3e5b5ef591ddf689a52ccf7338de1642f6e16247b217",
-  "status": "rejected",
-  "received_at": "2026-10-14T01:24:19+00:00",
+  "status": "received",
+  "received_at": "2026-10-14T02:33:31+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "The composition follows the attached guide. The lower-left bow tip is inside the canvas but misses the requested 8% white margin; visual review found no crop. Slight edge fleck noted.",
+  "notes": "Correction: cloak is plain coarse wool with no camouflage blotch pattern; keep it folded flat in the guide layout and retain the gritty ink style.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SCOUT.png",
-   "sha256": "131bc1621df44510b6782ae139df6a4847dd53f8ea0875bd8824e7c41feb326a",
+   "sha256": "bbbf8ff267288d3f7a9674e104ecf9a7e50cc8ec4d2ff3f667868aae897e019b",
    "px": [
     1254,
     1254
@@ -8864,17 +8864,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SCOUT.png",
-   "sha256": "052c857a848530628073cde7ab6a83f05df3047a6c9c22f746d89d84a45353c6",
+   "sha256": "d0d2d378aa3ac571a8d1ebe1f93305f5b9c9a25797e296b9bb89042eeacb96c4",
    "px": [
-    1234,
-    1108
+    1229,
+    1042
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.113
+   "max_print_w_in_300ppi": 4.097
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-14T02:17:05+00:00",
-  "rejected_reason": "Cloak shows a modern camouflage blotch pattern; redo with plain coarse wool (owner 2026-10-14)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-SHEPHERD": {
   "family": "background",
