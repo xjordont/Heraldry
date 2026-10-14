@@ -8669,7 +8669,7 @@
   "route": "gpt",
   "spec_sha256": "d6e9f8fe00ea8a7645b90709a3cf63a4b848fa1e6ac6fe0ca009bcb2ee0d7371",
   "prompt_sha256": "f74828d826feb88a1c70759f58bef49115e99e65a6b778ec0388e0224e89d6c1",
-  "status": "approved",
+  "status": "rejected",
   "received_at": "2026-10-13T20:58:25+00:00",
   "surface": "Codex",
   "model": "image_gen",
@@ -8694,7 +8694,9 @@
    "max_print_w_in_300ppi": 4.117
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00"
+  "approved_at": "2026-10-13T21:33:16+00:00",
+  "rejected_at": "2026-10-14T02:15:34+00:00",
+  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity; the bedroll is soft felt, not stone (owner 2026-10-14)."
  },
  "ART-BAC-PAUPER": {
   "family": "background",
