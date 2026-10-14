@@ -476,6 +476,12 @@ class Book:
             typ = b["type"]
             if typ == "para" and r.startswith("#example["):
                 typ = "example"
+            if (typ == "list" and not b["ordered"] and items and items[-1]["typ"] == "list" and items[-1]["kind"] == "c"
+                    and items[-1]["b"].get("ordered") and len(items[-1]["b"]["items"]) == 1 and items[-1]["s"].startswith("#enum(")):
+                # an entry's numbered title ("2. Heaven's Spear [3 AP, 10 NRG]") never splits from its Range/Area/Effect lines
+                title = items.pop()
+                self.block_map.append((title["id"], title["b"]["src"], "title-with-list", None))
+                r = f"#keep[{title['s'].rstrip()}{r.rstrip()}]\n"
             if typ in ("list", "quote") and items and items[-1]["s"].startswith("#runin[") and items[-1]["kind"] == "c":
                 # a bold run-in label ("Attacks", "Adept Assassin Talents") travels with the list it introduces
                 lab = items.pop()

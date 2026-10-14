@@ -12,6 +12,7 @@ Review record:
   {"reviewer": "Codex (OpenAI model, image inspection)",
    "sheets":  [{"file": "sheet-01.jpg", "observations": "...", "findings": [{"page": 12, "severity": "minor|major", "text": "..."}]}, ...],
    "details": [{"file": "page-0001.jpg", "observations": "..."}, ...],
+   "covers": [{"file": "cover-front.jpg", "observations": "..."}, {"file": "cover-back.jpg", "observations": "..."}],
    "calibration": {"observations": "..."},
    "summary": "..."}
 Severity major = unintended blank page, overlapping or clipped text, missing or wrong art, broken table, content running past the
@@ -53,7 +54,7 @@ def main():
     cream = next((v for k, v in st.get("pdfs", {}).items() if k.endswith("_inkjet-borderless.pdf")), None)
     if st.get("result") != "CANDIDATE_READY" or not cream or cream["sha256"] != man["pdf_sha256"]:
         fail("BUILD_STATUS.json does not describe a ready candidate of the PDF these review files belong to")
-    for item in man["sheets"] + man["details"] + [man["calibration"]]:
+    for item in man["sheets"] + man["details"] + man["covers"] + [man["calibration"]]:
         f = REVIEW / item["file"]
         if not f.is_file() or sha(f) != item["sha256"]:
             fail(f"{item['file']} is missing or is a stub (run git lfs pull --include 'production/qa/review/*')")
@@ -67,6 +68,7 @@ def main():
         return got
     sheets = entries("sheets", man["sheets"])
     entries("details", man["details"])
+    entries("covers", man["covers"])
     if len(str(rv.get("calibration", {}).get("observations", "")).strip()) < MIN_OBS:
         fail("no real observations recorded for the calibration sheet")
     major, minor = [], []
@@ -85,7 +87,7 @@ def main():
                                     "note": "every page of this exact PDF (the candidate build; the release build reproduces it) viewed on contact sheets"},
         "pages_reviewed": list(range(1, man["pages"] + 1)),
         "detailed_pages_viewed_at_100dpi": [d["page"] for d in man["details"]],
-        "covers_viewed": True, "calibration_viewed": True,
+        "covers_viewed": [c["file"] for c in man["covers"]], "calibration_viewed": True,
         "findings_repaired": [], "accepted_layout_notes": minor + ([rv["summary"]] if rv.get("summary") else []),
         "limits": "Contact-sheet review of every page and 100 dpi detail review of the listed pages, by the named reviewer from images; not glyph-level proofreading, not an independent second review, not a physical printer proof.",
         "status": "PASS (all-page contact-sheet review of this exact PDF by an automated vision reviewer; not glyph-level proofreading)",

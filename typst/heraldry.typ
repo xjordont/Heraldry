@@ -410,8 +410,19 @@
   block(width: 100%, above: 10pt, below: 12pt, breakable: true)[
     #pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")
     // the opening (rule, header band and about two rows) never splits from the heading above it
-    #block(breakable: false, height: 64pt, above: 0pt, below: 0pt, brush(weight: 2.2pt, seed: 3))
-    #v(-64pt + 2.2pt - 2.2pt)
+    // the reserve is the measured height of the header band plus the first row (never less than 64 pt), so a
+    // table with a tall first row cannot leave its heading and rule alone at the bottom of a column
+    #context {
+      let probe = coin-text(table(
+        columns: widths.map(w => w * 1pt),
+        inset: (x: 5pt, y: 4pt),
+        table.header(..header.enumerate().map(((x, h)) => table.cell(head-cell(h)))),
+        ..rows.slice(0, calc.min(1, rows.len())).map(r => r.enumerate().map(((x, c)) => if x == 0 and aligns.at(0) == left { strong(c) } else { c })).flatten(),
+      ))
+      let reserve = calc.min(calc.max(measure(probe).height, 64pt), 150pt)
+      block(breakable: false, height: reserve, above: 0pt, below: 0pt, brush(weight: 2.2pt, seed: 3))
+      v(-reserve)
+    }
     #coin-text(table(
       columns: widths.map(w => w * 1pt),
       align: (x, y) => al(x) + horizon,
