@@ -1,0 +1,420 @@
+{
+ "pdf": "Heraldry_RC492_inkjet-borderless.pdf",
+ "pdf_sha256": "89470a51e5b5928cc68ff95102fa88543a6ae9fad5c2da61a321fbf52ba92f88",
+ "pages": 674,
+ "sheets": [
+  {
+   "file": "sheet-01.jpg",
+   "pages": [
+    1,
+    24
+   ],
+   "sha256": "80b7cf3e1002f85b42439634f004f62c19d6df2f799c97bae4e808b472718c26"
+  },
+  {
+   "file": "sheet-02.jpg",
+   "pages": [
+    25,
+    48
+   ],
+   "sha256": "cf22d20c36a5856a5e09f8c3af26c2fd30fd435c9f3e7a69ebb70a6a606b5b5a"
+  },
+  {
+   "file": "sheet-03.jpg",
+   "pages": [
+    49,
+    72
+   ],
+   "sha256": "d7afc084e623c8aef8a13d96e8734dd9896fc35e8cd18ab19ef01bafd134e366"
+  },
+  {
+   "file": "sheet-04.jpg",
+   "pages": [
+    73,
+    96
+   ],
+   "sha256": "2fea597575f23bca7ebd60f3c21edcd247cbc75d2ccc04718020a465093a21ee"
+  },
+  {
+   "file": "sheet-05.jpg",
+   "pages": [
+    97,
+    120
+   ],
+   "sha256": "1ce389a73ab2811a693dc94f6a9ced1d5975109492801f57f9217ca5a9d98739"
+  },
+  {
+   "file": "sheet-06.jpg",
+   "pages": [
+    121,
+    144
+   ],
+   "sha256": "467ef0e0efa9eae0d2691071097e3b6a399b7f06cc06e90848d9c81d39a6b487"
+  },
+  {
+   "file": "sheet-07.jpg",
+   "pages": [
+    145,
+    168
+   ],
+   "sha256": "48eaadfebdf145f11697ec8a04fba44018470ac72a489f72fa5547e152adb797"
+  },
+  {
+   "file": "sheet-08.jpg",
+   "pages": [
+    169,
+    192
+   ],
+   "sha256": "b51708a225085951ac94314a7547e9bcb82b3f8e1d4f2612720007abbe6b2342"
+  },
+  {
+   "file": "sheet-09.jpg",
+   "pages": [
+    193,
+    216
+   ],
+   "sha256": "a5c088ce17f586e87c45e044cd91c8dbe521cb77710aaca39c90abf996063e4e"
+  },
+  {
+   "file": "sheet-10.jpg",
+   "pages": [
+    217,
+    240
+   ],
+   "sha256": "705992534e0c79eb64511a4303004a3fc7971d4b208b647fa6c85b3454403c24"
+  },
+  {
+   "file": "sheet-11.jpg",
+   "pages": [
+    241,
+    264
+   ],
+   "sha256": "82994db497f90e876671b0e2a52f5f0c6dbeecb1102a3b4a96dd067662eaa725"
+  },
+  {
+   "file": "sheet-12.jpg",
+   "pages": [
+    265,
+    288
+   ],
+   "sha256": "73df1eb39978bad4713e4555004619861f82abfc5ad50e51a9cdeb6f4d1ac26d"
+  },
+  {
+   "file": "sheet-13.jpg",
+   "pages": [
+    289,
+    312
+   ],
+   "sha256": "88893202d488c118437379a22b96c3dee12d114df2e714a0c82326d08c0b18c0"
+  },
+  {
+   "file": "sheet-14.jpg",
+   "pages": [
+    313,
+    336
+   ],
+   "sha256": "4f2aa3991ab37942fd00843e1381b9421c956795d22ee3d53858b9a7db9d36ed"
+  },
+  {
+   "file": "sheet-15.jpg",
+   "pages": [
+    337,
+    360
+   ],
+   "sha256": "2e91093d25fee911c44f3e3093eed7c848abb5ea4ad07aa9b3126374cf05a583"
+  },
+  {
+   "file": "sheet-16.jpg",
+   "pages": [
+    361,
+    384
+   ],
+   "sha256": "ac2a5157f04dd9fdbef1fd97a04e31431c20baf908618ae8b44bd895094dc222"
+  },
+  {
+   "file": "sheet-17.jpg",
+   "pages": [
+    385,
+    408
+   ],
+   "sha256": "51650782507e0b2256ea1df5a06e72d38e8b36166ed378c7af84a30089f3452f"
+  },
+  {
+   "file": "sheet-18.jpg",
+   "pages": [
+    409,
+    432
+   ],
+   "sha256": "78e4dd5368edcf8e9fb61f070e0cab53d930ffef868c2f143117243758660ac4"
+  },
+  {
+   "file": "sheet-19.jpg",
+   "pages": [
+    433,
+    456
+   ],
+   "sha256": "1fdb51adadbce1b632b2804b111475a706f7ef71fa37c9e98a4ef1a3740e93fb"
+  },
+  {
+   "file": "sheet-20.jpg",
+   "pages": [
+    457,
+    480
+   ],
+   "sha256": "2818a5f9b1618386e25f1d2888108f5015394f28a250ae9532bb81b11d73cf29"
+  },
+  {
+   "file": "sheet-21.jpg",
+   "pages": [
+    481,
+    504
+   ],
+   "sha256": "6bf064bad1ccfdbf98520734218a46ef8582cdd404345330bc17f83ba3cf8049"
+  },
+  {
+   "file": "sheet-22.jpg",
+   "pages": [
+    505,
+    528
+   ],
+   "sha256": "6107bed4cb473d625a26815261c8cc663fb7bd23f08831ff54899748bedee77f"
+  },
+  {
+   "file": "sheet-23.jpg",
+   "pages": [
+    529,
+    552
+   ],
+   "sha256": "fad8a0086b9b0ec156c0ba3ef084f8fb72999bcbba6d93326900b7cb3bb6cf4e"
+  },
+  {
+   "file": "sheet-24.jpg",
+   "pages": [
+    553,
+    576
+   ],
+   "sha256": "f100c951f781a25ce1ee016f6a724fc4c7159aba66f41f9596f86ffba7c0ae58"
+  },
+  {
+   "file": "sheet-25.jpg",
+   "pages": [
+    577,
+    600
+   ],
+   "sha256": "b458ace5eeb2bb020c466b12faf106458bf0d10b1361c395518f813e127a5d8f"
+  },
+  {
+   "file": "sheet-26.jpg",
+   "pages": [
+    601,
+    624
+   ],
+   "sha256": "5566b1af2b12c1fd31620ef29e3316e11a0085def7eb91dcc5b5447d5c205dfc"
+  },
+  {
+   "file": "sheet-27.jpg",
+   "pages": [
+    625,
+    648
+   ],
+   "sha256": "9c943d4265c0d213c0eb010423c8f67d73592d31298ebc8afabdbd4e595df8c3"
+  },
+  {
+   "file": "sheet-28.jpg",
+   "pages": [
+    649,
+    672
+   ],
+   "sha256": "4e264ce4bab6f3a5903dcad44c5501e4485c66c54f55b5fdc5275025767e235f"
+  },
+  {
+   "file": "sheet-29.jpg",
+   "pages": [
+    673,
+    674
+   ],
+   "sha256": "406eb4cb4a5e265d6cd01896e7438ef1084af535521b8c33b9c2729813b1e2cf"
+  }
+ ],
+ "details": [
+  {
+   "file": "page-0001.jpg",
+   "page": 1,
+   "reason": "front cover",
+   "sha256": "a23fec4c953f0ebf1cbe515ac2b29c8a4d25b6383d4972f698bd9a920336eb33"
+  },
+  {
+   "file": "page-0007.jpg",
+   "page": 7,
+   "reason": "chapter opener: The World of Heraldry",
+   "sha256": "b2b62dac703477928afcd61327cbb89adf2b4804c13fcc1c4f61df74ba6c2ee7"
+  },
+  {
+   "file": "page-0028.jpg",
+   "page": 28,
+   "reason": "chapter opener: Core Mechanics",
+   "sha256": "b117ce2efc2a221d0d40edf537ae913092a65baef515e591c62d4fd8212acc98"
+  },
+  {
+   "file": "page-0050.jpg",
+   "page": 50,
+   "reason": "every 50th page",
+   "sha256": "5ac72c9991e9bee35be345848259873999b3dce25a4c45664e484e20d9643696"
+  },
+  {
+   "file": "page-0052.jpg",
+   "page": 52,
+   "reason": "chapter opener: The Game Round",
+   "sha256": "855969ab99006c90bb9df8065cfcfae4bb4736c524e649fd75efef391bc7b632"
+  },
+  {
+   "file": "page-0061.jpg",
+   "page": 61,
+   "reason": "chapter opener: Actions and Movement",
+   "sha256": "59cb0c012d44f820bdc4a826613d7911995bd766da05fca22b85edcc94a5c973"
+  },
+  {
+   "file": "page-0076.jpg",
+   "page": 76,
+   "reason": "chapter opener: Combat",
+   "sha256": "e7d2d09e4d34c1ac4a62a5fbd89cd70de3f9bfb93c7bf7e3607cd0d9f9a931d5"
+  },
+  {
+   "file": "page-0097.jpg",
+   "page": 97,
+   "reason": "chapter opener: Your Adventuring Party",
+   "sha256": "ef94eafd533dd4198fd3b75f881e569aa11fc0e14ed7658e621981568736bd8e"
+  },
+  {
+   "file": "page-0100.jpg",
+   "page": 100,
+   "reason": "every 50th page",
+   "sha256": "f3fa245ee89139d4d2b7ad78e54efada3994f22d5429a1b9d54bddaf41fc8262"
+  },
+  {
+   "file": "page-0150.jpg",
+   "page": 150,
+   "reason": "chapter opener: Equipment and Items",
+   "sha256": "e5fa742e5159da763d81b0f8a0d1ab053c145a95e013b90777ba96c5b32a94f2"
+  },
+  {
+   "file": "page-0200.jpg",
+   "page": 200,
+   "reason": "every 50th page",
+   "sha256": "75270a9e120e8f797b6401f9951ebb23f2a96307f0e88d447370d7d8a5459d7f"
+  },
+  {
+   "file": "page-0226.jpg",
+   "page": 226,
+   "reason": "chapter opener: Powers and Traditions",
+   "sha256": "3574a5e007e045b2d8b6f318677b84528f52cebf089f0ca6791bbe0ee573d6ea"
+  },
+  {
+   "file": "page-0250.jpg",
+   "page": 250,
+   "reason": "every 50th page",
+   "sha256": "60fb5bde7900e9ecebc9b00947ebc7f6eaee653b5fb8371014951ba7ec29c6b7"
+  },
+  {
+   "file": "page-0275.jpg",
+   "page": 275,
+   "reason": "chapter opener: Monsters",
+   "sha256": "0f70c92b16fbdfb8ce449b1e5b8c6ea63bce7fa5be1296c163012e4c781e03cf"
+  },
+  {
+   "file": "page-0300.jpg",
+   "page": 300,
+   "reason": "every 50th page",
+   "sha256": "b71c612eb8a7350475fe56b3d852aa30dc6ac1a2320b488d29f7fd86cd0937e5"
+  },
+  {
+   "file": "page-0350.jpg",
+   "page": 350,
+   "reason": "every 50th page",
+   "sha256": "4978261eedcfd0f9b61b39625098ec4aa32faff7ebe6dc40f8c1d97a093efe45"
+  },
+  {
+   "file": "page-0400.jpg",
+   "page": 400,
+   "reason": "every 50th page",
+   "sha256": "61653d02410eece18857750d05dd40fcdb8cd742ef3871197a8cc99ec7e6bc76"
+  },
+  {
+   "file": "page-0406.jpg",
+   "page": 406,
+   "reason": "chapter opener: Scenarios",
+   "sha256": "6c009ec5711e13af4596496b6819b4d8d8a7303eaadf49d567c8190d9909d72f"
+  },
+  {
+   "file": "page-0450.jpg",
+   "page": 450,
+   "reason": "every 50th page",
+   "sha256": "f5679a31fa7bd281c9d0970ec4da5109087d61862acc3b8590a12e5b96ae4e4b"
+  },
+  {
+   "file": "page-0500.jpg",
+   "page": 500,
+   "reason": "every 50th page",
+   "sha256": "db9de0e03ef9da60a1edc78193d217ccbc01118fe09bf8da5b4fefce34171638"
+  },
+  {
+   "file": "page-0550.jpg",
+   "page": 550,
+   "reason": "every 50th page",
+   "sha256": "99dddd6acbdb78181c257deff5c9768d6eab8505d50bf27845ce3624cd9a2f08"
+  },
+  {
+   "file": "page-0553.jpg",
+   "page": 553,
+   "reason": "chapter opener: Campaign Play",
+   "sha256": "e2117b26302ed27d1236662311599f2921259d92f69276497d7618b14f9c92bc"
+  },
+  {
+   "file": "page-0591.jpg",
+   "page": 591,
+   "reason": "chapter opener: Learn to Play",
+   "sha256": "5cefd63301b6e0aa7470871fd8f73b58e5ae44492e4463c580b7689ea7d32c18"
+  },
+  {
+   "file": "page-0600.jpg",
+   "page": 600,
+   "reason": "every 50th page",
+   "sha256": "f36b9c12a696f3588d2970663ff8b481ef5848c5a6d37edea6bd18cbe76c1033"
+  },
+  {
+   "file": "page-0609.jpg",
+   "page": 609,
+   "reason": "chapter opener: Basic Mode",
+   "sha256": "7ac489ca3240ed5d9fd1d2ca53971981a18d7e16ff1c92f5f1594cfd19f7cae7"
+  },
+  {
+   "file": "page-0632.jpg",
+   "page": 632,
+   "reason": "chapter opener: Rules Reference",
+   "sha256": "a49612f7a27d33881b2b9292d3a40ad71cc1a6399e77e185f6e4cd0ec6f05618"
+  },
+  {
+   "file": "page-0650.jpg",
+   "page": 650,
+   "reason": "every 50th page",
+   "sha256": "c69f54de1cc28c22d8db88dbc7f8c1739a96abdecb68ed2adee9e2780f6dc171"
+  },
+  {
+   "file": "page-0671.jpg",
+   "page": 671,
+   "reason": "chapter opener: Index",
+   "sha256": "59f9d1264d5354729ec580f018a18034f45a6533d1b636034d9b00b2caf5b284"
+  },
+  {
+   "file": "page-0674.jpg",
+   "page": 674,
+   "reason": "back cover",
+   "sha256": "6355f5eea5a81594ff3ad27df42250e851978a9a90b3b0ae53a58da6a8423fd3"
+  }
+ ],
+ "calibration": {
+  "file": "calibration.jpg",
+  "sha256": "eb8b5e6b5ce7d3b4715a2934ca1283107c7599e7eadc9441c77caaf5ab94c164"
+ },
+ "note": "29 contact sheets of 24 pages at 34 dpi cover every page; 29 detail pages at 100 dpi."
+}
