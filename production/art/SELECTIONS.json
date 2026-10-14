@@ -246,7 +246,7 @@
   "route": "gpt",
   "spec_sha256": "da3731453000ec000f24b17648cc437bccf94c9656f693107a773007617ea247",
   "prompt_sha256": "be41919c47475edb64e739aa142fa45dbcb1918a082102f45ea007d25d4c5d4a",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:05:43+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -270,7 +270,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.173
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-TRA-TIER-1-ARCANE-SPELLS-D20": {
   "family": "tradition",
@@ -8339,7 +8340,7 @@
   "route": "gpt",
   "spec_sha256": "76d522cca5126877d29e7af52a6d23d640834002e1a6e9111eaf6cf02b227a68",
   "prompt_sha256": "47f78df0fa984ce792c87681d16435dc46674c9fca45a6f01d040a45cbb51b95",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:08:14+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8363,7 +8364,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.18
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-APPRENTICE": {
   "family": "background",
@@ -8372,7 +8374,7 @@
   "route": "gpt",
   "spec_sha256": "011607774c655ecb8b1c47a33f16a0695278524f580c401a28ab7d59ee472aed",
   "prompt_sha256": "012ffd4223cb2fee41b149fa86ebc9cf7aea21c4212050ddd56d572cab8fae94",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:10:17+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8396,7 +8398,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.11
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-ARTISAN": {
   "family": "background",
@@ -8405,7 +8408,7 @@
   "route": "gpt",
   "spec_sha256": "7d65187d50f15fa9e0dee2130eafdf8849a5bf5a936675a2071081e9ad1e267c",
   "prompt_sha256": "40372db81c3542ed2638fd735d3cd8e3ef9fa5ec507b1811c8dee03660bfdd5f",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:12:52+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8429,7 +8432,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.03
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-BELIEVER": {
   "family": "background",
@@ -8438,7 +8442,7 @@
   "route": "gpt",
   "spec_sha256": "3b8b03fa8c13f0ba5e6b62da2da9f478a0198873abdea1816287f1d66eaf55bd",
   "prompt_sha256": "9b0cadddde662eb3dbee6162e58071f6c645f213c142e8344059d8bf94b4cc90",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:15:28+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8462,7 +8466,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.12
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-COURIER": {
   "family": "background",
@@ -8471,7 +8476,7 @@
   "route": "gpt",
   "spec_sha256": "acadcc1e4b8a4db689a9127001457905f8c1837da4faf40fe4c5d1f2aaa7f48c",
   "prompt_sha256": "efa81e0526287c3464311b5448416093792732c744e9210d182066e957f34e8e",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:17:29+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8495,7 +8500,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.117
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-CULTIST": {
   "family": "background",
@@ -8504,7 +8510,7 @@
   "route": "gpt",
   "spec_sha256": "d4a05a0c73c05b3c05331ccc65af1826e2b513a8e025bd90a3ebf0b6d3c052c5",
   "prompt_sha256": "25028deed1db87d1b7d0575726b1875ec8a50233a8a9fa1922cf9c9a1ce704c2",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:22:08+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8528,7 +8534,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.053
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-FARMER": {
   "family": "background",
@@ -8537,7 +8544,7 @@
   "route": "gpt",
   "spec_sha256": "ebc8bba202a61bab7475e8de5eedc9bdfde2a084185b9716cbb77204d318dc94",
   "prompt_sha256": "49052975eaa4d8ddc468c3d7ffeabc000971c7bbf9a8cde4b4020600e4c01b83",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:26:48+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8561,7 +8568,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.09
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-HERMIT": {
   "family": "background",
@@ -8570,7 +8578,7 @@
   "route": "gpt",
   "spec_sha256": "7017e4b4fc5163dc92b8a480d3175c4d791002b9157547047bdf4e2e84448514",
   "prompt_sha256": "f065916403e259a00a2f3dcd94cfefe2fc377c7fda9079945263569c3d99cb25",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:32:25+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8594,7 +8602,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.123
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-MERCHANT": {
   "family": "background",
@@ -8603,7 +8612,7 @@
   "route": "gpt",
   "spec_sha256": "4a264a85e7100b4cf433581b53751f91e9fe6ba20985ff347bff10d669917863",
   "prompt_sha256": "2ba1c7b423e89a44707679fe44f08cb4e163b9304d9ae4af98eb2a77ecc186a9",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:39:03+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8627,7 +8636,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.14
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-NOBLE": {
   "family": "background",
@@ -8636,7 +8646,7 @@
   "route": "gpt",
   "spec_sha256": "e07b70492cd7f2165bedbeedf104a8f85c9971050eb8c49fce7248937cd1c146",
   "prompt_sha256": "df3bff0cc390834b1cb0fac17675af9a8ce09073776a6b61d789df5356fe3b1a",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-14T00:45:21+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8660,7 +8670,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.11
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-14T02:17:05+00:00",
+  "rejected_reason": "Rapier hilt and point overhang the table edges; redo with the whole rapier lying on the tabletop (owner 2026-10-14)."
  },
  "ART-BAC-NOMAD": {
   "family": "background",
@@ -8705,7 +8717,7 @@
   "route": "gpt",
   "spec_sha256": "72dd4f7202153f9aa1dab4bcb8a36da8a725ddc741986802ff01b313ba959ffb",
   "prompt_sha256": "0a01a905cfee08ac4390bcc85419cddb767c401c606e99c6a6ef543f2692f82e",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:51:42+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8729,7 +8741,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.15
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-PERFORMER": {
   "family": "background",
@@ -8738,7 +8751,7 @@
   "route": "gpt",
   "spec_sha256": "69964343c96dfbec853339d203b776ffe3c46b34895672f079adeef345ec7870",
   "prompt_sha256": "3deab3f752afd67e6adbb75a41ab18a02fdcf19e3a205c90fd646572c04e45f5",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T00:58:41+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8762,7 +8775,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.14
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-SAILOR": {
   "family": "background",
@@ -8771,7 +8785,7 @@
   "route": "gpt",
   "spec_sha256": "637399bbda267ff588bef49e6bd428a30266f60d4443ce9f0841f7df274a8e74",
   "prompt_sha256": "91043accaf81a28e8b2d84f26a3f0bb0a2ab98a792a8059b123fa2d2b1252851",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T01:06:21+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8795,7 +8809,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.043
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-SCHOLAR": {
   "family": "background",
@@ -8804,7 +8819,7 @@
   "route": "gpt",
   "spec_sha256": "91d4672666f08d52ca0d81ea6f61c71389089231ccb34a0dcded1433b0342f92",
   "prompt_sha256": "b8dfa689cb0d0feae0d990a28c0272ea52acb6f9a08c693949efaf174271d839",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T01:15:59+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8828,7 +8843,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.883
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-SCOUT": {
   "family": "background",
@@ -8837,7 +8853,7 @@
   "route": "gpt",
   "spec_sha256": "c981240625aa67bba11cc363495cd732926f092b42fa5bf349aca87051e2ff6e",
   "prompt_sha256": "e67d7bcb67cfb191ff2a3e5b5ef591ddf689a52ccf7338de1642f6e16247b217",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-14T01:24:19+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8861,7 +8877,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.113
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-14T02:17:05+00:00",
+  "rejected_reason": "Cloak shows a modern camouflage blotch pattern; redo with plain coarse wool (owner 2026-10-14)."
  },
  "ART-BAC-SHEPHERD": {
   "family": "background",
@@ -8870,7 +8888,7 @@
   "route": "gpt",
   "spec_sha256": "16300574571fe3c333fcedcc1279db9bfe8bfe6faa127ad39f0833fdce38f42a",
   "prompt_sha256": "409501146a517f25bbba15ea574aad5bf6da1c94ef7232cf2a4a4cc5856d59cb",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T01:26:20+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8894,7 +8912,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.62
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-SOLDIER": {
   "family": "background",
@@ -8903,7 +8922,7 @@
   "route": "gpt",
   "spec_sha256": "1db4f2f8e30e9eccfd09588ddb44c362b864e8c53bb764737a963d2479aea5b2",
   "prompt_sha256": "a30ff858fe631e7becf31881727d7a7ba1f632a17ad7d17a60cdfa104250844b",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T01:28:25+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8927,7 +8946,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.99
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-BAC-VAGABOND": {
   "family": "background",
@@ -8936,7 +8956,7 @@
   "route": "gpt",
   "spec_sha256": "6388101beb5d8d5412d89952f000e1942194b2f0440c393fef390f633b9c9198",
   "prompt_sha256": "e9def2263535a114080b9e3323e46e32c3a3ee6e4fd24003fb88ee1b75a01a2e",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T01:30:41+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8960,7 +8980,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.113
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T02:17:05+00:00"
  },
  "ART-ITE-7-6-TREASURE-TABLES": {
   "family": "item",
