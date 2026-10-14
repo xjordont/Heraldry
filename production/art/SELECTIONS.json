@@ -8768,16 +8768,16 @@
   "heading_id": "h-sailor",
   "route": "gpt",
   "spec_sha256": "637399bbda267ff588bef49e6bd428a30266f60d4443ce9f0841f7df274a8e74",
-  "prompt_sha256": "b0a3837dbe515cc6867ed2d8c6e7df3683200474f8e491c060beab015ea6545b",
-  "status": "rejected",
-  "received_at": "2026-10-13T21:07:07+00:00",
+  "prompt_sha256": "91043accaf81a28e8b2d84f26a3f0bb0a2ab98a792a8059b123fa2d2b1252851",
+  "status": "received",
+  "received_at": "2026-10-14T01:06:21+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Set the buckler lower rim on the deck while its face leans against a visible rail post; rest the shortsword, rope coil, marlinspike, and hanging rope securely on their supports.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SAILOR.png",
-   "sha256": "78417a42ee1a6f1adba39da4139f1bd3912570bcdb3b5a74ea9b808f552108ee",
+   "sha256": "10a74ff97e083b08eafebd903bc9250096b350e845500ead05c85290e74c44e6",
    "px": [
     1254,
     1254
@@ -8785,18 +8785,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SAILOR.png",
-   "sha256": "c697ea18dfc1f4a1b1b15ca5a9507e94ef1f9a839b3fc2e9d6ec5f584b7083cf",
+   "sha256": "756d1529e370ece3a772c25a63375aaf8dd5f6484c824b5a4bb55f90591e1972",
    "px": [
-    1233,
-    1063
+    1213,
+    1138
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.11
+   "max_print_w_in_300ppi": 4.043
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-SCHOLAR": {
   "family": "background",
