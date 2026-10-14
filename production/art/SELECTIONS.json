@@ -8646,15 +8646,15 @@
   "route": "gpt",
   "spec_sha256": "e07b70492cd7f2165bedbeedf104a8f85c9971050eb8c49fce7248937cd1c146",
   "prompt_sha256": "df3bff0cc390834b1cb0fac17675af9a8ce09073776a6b61d789df5356fe3b1a",
-  "status": "rejected",
-  "received_at": "2026-10-14T02:28:31+00:00",
+  "status": "received",
+  "received_at": "2026-10-14T03:15:13+00:00",
   "surface": "Codex",
   "model": "not shown",
-  "notes": "Correction: keep the entire rapier, including its hilt and point, fully on the tabletop and well inside the table edges; keep the rest of the still life and its composition. Remaining defects: rapier still extends beyond table, star-shaped moth holes, banner is draped without a separate rod, automated 13 percent mid-tone warning.",
+  "notes": "Correction: widen the tabletop so the rapier guard, pommel, blade, and point rest fully on it with clear space inside every edge; keep the still life, guide arrangement, and gritty ink style. Remaining defects: hilt still overhangs, frame-touching marks, star-shaped moth holes, banner draped without a separate rod, 15 percent mid-tone warning.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-NOBLE.png",
-   "sha256": "c85241916fa2ba5d4b96632a770d3019c16b89af7e5c3f2f77c687139b87c938",
+   "sha256": "1a864ccd9cc2b540df50ff65b5f38574335932de04c8c2483eafcf9a7ad2dfb5",
    "px": [
     1254,
     1254
@@ -8662,17 +8662,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-NOBLE.png",
-   "sha256": "859b985d5e3ee11f623bdeb002142dcdcc624c6556a43eec79e4610315da14d0",
+   "sha256": "4a44e5d938f7cea74411dd5faef65ff02691b4c3ac9c1dd947ae97a54bf8e153",
    "px": [
-    1234,
-    967
+    1253,
+    1015
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.113
+   "max_print_w_in_300ppi": 4.177
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-14T03:07:13+00:00",
-  "rejected_reason": "Rapier guard and pommel still sit beyond the tabletop's far-left edge, over empty space; redo with a wider table and the sword well inside it (owner 2026-10-14)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-NOMAD": {
   "family": "background",
