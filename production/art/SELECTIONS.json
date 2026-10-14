@@ -8933,16 +8933,16 @@
   "heading_id": "h-vagabond",
   "route": "gpt",
   "spec_sha256": "6388101beb5d8d5412d89952f000e1942194b2f0440c393fef390f633b9c9198",
-  "prompt_sha256": "22a150d2585abd6e557fad3192b65283c4330215feefede7f849239b10874c32",
-  "status": "rejected",
-  "received_at": "2026-10-13T22:07:06+00:00",
+  "prompt_sha256": "e9def2263535a114080b9e3323e46e32c3a3ee6e4fd24003fb88ee1b75a01a2e",
+  "status": "received",
+  "received_at": "2026-10-14T01:30:41+00:00",
   "surface": "Codex",
-  "model": "ChatGPT image generation (model label not shown)",
-  "notes": "Correction: the milestone is a squat, knee-high block, wider than tall, flat on top, chipped, and half sunk in the earth, not a rounded upright slab. Keep the still life and ink style.",
+  "model": "not shown",
+  "notes": "The marker has a flat chipped top and is not rounded, but reads nearly square instead of clearly wider than tall. Bundle-stick top is within about 4% of the frame, below the requested 8% margin; no crop. Mid-tone warning is hatch.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-VAGABOND.png",
-   "sha256": "97000dc49e4736ec4be0d9be62f61a8e829a98a22405fbd197b399283a76262b",
+   "sha256": "f94a53a26ca95cddca0073b383fa456233745a997af14fba69bb86e57ac8301d",
    "px": [
     1254,
     1254
@@ -8950,18 +8950,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-VAGABOND.png",
-   "sha256": "eab54fd65e25ffce68243854c0f92a70a45237681e8d4b7b8ee6429d595401bc",
+   "sha256": "3a928af6b25ded75617179d717f07347d81c226dcf8be28ac9231cd83e63b47f",
    "px": [
-    1247,
-    1188
+    1234,
+    1169
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.157
+   "max_print_w_in_300ppi": 4.113
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T22:09:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-ITE-7-6-TREASURE-TABLES": {
   "family": "item",
