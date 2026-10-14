@@ -4,7 +4,7 @@
 
 #let cover-page(body) = page(width: page-w, height: page-h, fill: substrate, margin: 0pt, header: none, footer: none, numbering: none, body)
 
-#let front-cover(title, subtitle, version) = cover-page[
+#let front-cover-classic(title, subtitle, version) = cover-page[
   // thin inset frame at a safe distance (decorative, inside the 0.375 in safe edge)
   #frame-border(true)
   #place(top + center, dy: 0.95in)[
@@ -26,6 +26,12 @@
     #text(font: sans, size: 11pt, weight: 600, tracking: 0.12em, version)
   ]
 ]
+
+#let front-cover(title, subtitle, version) = if json("../build/cover.json").art.at("full_page", default: false) {
+  // owner-supplied cover picture with its own lettering (2026-10-14): the whole front cover, inside the safe edge
+  let cart = json("../build/cover.json").art
+  cover-page[#place(center + horizon, image(cart.path, width: cart.w_in * 1in, height: cart.h_in * 1in))]
+} else [#front-cover-classic(title, subtitle, version)]
 
 #let back-cover(copy, version) = cover-page[
   #frame-border(false)
