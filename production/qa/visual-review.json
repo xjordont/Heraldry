@@ -1,13 +1,13 @@
 {
  "pdf": "dist/Heraldry_RC492_inkjet-borderless.pdf",
- "sha256": "e5dfc3c632ad27fa28148564c575c94c23066a74a52b07d08d1f58798428b4d2",
- "pages": 656,
- "reviewer": "Claude Code orchestrator (actual image inspection in session)",
- "reviewed_at": "2026-10-13T04:28:13+00:00",
+ "sha256": "10e4f8bea8cff69404a6ee1385077e0533b767ff1815714cd0b2532e245a8e78",
+ "pages": 672,
+ "reviewer": "Codex (OpenAI model, image inspection)",
+ "reviewed_at": "2026-10-14T21:39:51+00:00",
  "all_page_contact_sheets": {
-  "scale": "20-24 dpi, 60-80 pages per sheet",
-  "sheets": 9,
-  "note": "every page of this exact PDF (clean `make clean all` build, reproduced twice) viewed on 9 contact sheets; an earlier incremental build (5858350d, same 656 pages, one balancing choice different) and a 659-page iteration were also viewed in full"
+  "scale": "34 dpi, up to 24 pages per sheet",
+  "sheets": 28,
+  "note": "every page of this exact PDF (the candidate build; the release build reproduces it) viewed on contact sheets"
  },
  "pages_reviewed": [
   1,
@@ -665,43 +665,72 @@
   653,
   654,
   655,
-  656
+  656,
+  657,
+  658,
+  659,
+  660,
+  661,
+  662,
+  663,
+  664,
+  665,
+  666,
+  667,
+  668,
+  669,
+  670,
+  671,
+  672
  ],
  "detailed_pages_viewed_at_100dpi": [
   1,
-  4,
   7,
-  8,
-  42,
-  139,
-  172,
-  326,
-  330,
-  403,
-  606,
+  28,
+  50,
+  52,
+  61,
+  76,
+  97,
+  100,
+  150,
+  200,
+  226,
+  250,
+  274,
+  300,
+  350,
+  400,
+  405,
+  450,
+  500,
+  550,
+  551,
+  589,
+  600,
   607,
-  608,
-  652
+  630,
+  650,
+  669,
+  672
  ],
- "covers_viewed": true,
+ "covers_viewed": [
+  "cover-front.jpg",
+  "cover-back.jpg"
+ ],
  "calibration_viewed": true,
- "findings_repaired": [
-  "Two blank pages (empty flow run before a section page break): flowcols with no visible content now takes no space",
-  "Basic Scenario B.6 spilled one paragraph onto a third page: FIG-19 anchored after the scenario's last paragraph (config/content_anchors.json)",
-  "Six table headings stranded at column feet: table and card openings are kept with their heading",
-  "Chapter-opener art upscaled below 300 ppi: capped at native size",
-  "Tab keywords inside the 3% overscan: tab widened to 0.42 in and keyword set on the inner part",
-  "Letter-spaced and upper-cased labels broke text-layer matching: small caps without tracking on source text",
-  "Release reproducibility: the ledger is bound to a clean build, since incremental builds reuse the balance cache and differ by one balancing choice"
- ],
+ "findings_repaired": [],
  "accepted_layout_notes": [
-  "Page 6 is the deliberate blank verso before Chapter 1 (recto start)",
-  "Bestiary sets one monster per page where the entry exceeds half a page; two complete monsters per page otherwise",
-  "Design v4 (owner-approved specimens 2026-10-12/13) applied book-wide; page count 598 -> 656 from the 11 pt body"
+  "p92: A short continuation example occupies the top of an otherwise sparse page; cosmetic whitespace only.",
+  "p123: Short boxed build note leaves most of the page unused; cosmetic whitespace.",
+  "p162: A short example occupies the top of a largely unused page; cosmetic whitespace.",
+  "p187: The final two potion rows leave a large unused area; table remains legible at review scale.",
+  "p249: The left column is unused while Divine entries continue in the right column; cosmetic whitespace.",
+  "Inspected all 28 contact sheets covering 672 pages, all 29 supplied detail pages, both separate covers, and calibration. No major visual defect observed at the supplied scales. Five minor notes concern sparse continuation pages or unused column space. Page 6 is the deliberate blank verso, page 1 is the title page, and page 672 ends the index. Physical print: NOT TESTED. Review was a contact-sheet and detail inspection by Codex, not glyph-level proofreading and not an independent second review."
  ],
- "limits": "All interior pages reviewed at contact-sheet scale and fourteen pages plus covers and calibration in detail. Not glyph-level proofreading of every page, independent second review, or physical printer proof.",
- "status": "PASS (all-page contact-sheet review of this exact PDF; not glyph-level proofreading)",
+ "limits": "Contact-sheet review of every page and 100 dpi detail review of the listed pages, by the named reviewer from images; not glyph-level proofreading, not an independent second review, not a physical printer proof.",
+ "status": "PASS (all-page contact-sheet review of this exact PDF by an automated vision reviewer; not glyph-level proofreading)",
  "changes_this_run": [
-  "Design v4 adoption into the book build (owner, 2026-10-13: 'Sure' to step 2)"
+  "candidate build 20261014T211936Z from 47355f984e8211ca2936c878a169f33909df3ebb"
  ]
 }
