@@ -8646,7 +8646,7 @@
   "route": "gpt",
   "spec_sha256": "e07b70492cd7f2165bedbeedf104a8f85c9971050eb8c49fce7248937cd1c146",
   "prompt_sha256": "df3bff0cc390834b1cb0fac17675af9a8ce09073776a6b61d789df5356fe3b1a",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-14T02:28:31+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8670,7 +8670,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.113
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-14T03:07:13+00:00",
+  "rejected_reason": "Rapier guard and pommel still sit beyond the tabletop's far-left edge, over empty space; redo with a wider table and the sword well inside it (owner 2026-10-14)."
  },
  "ART-BAC-NOMAD": {
   "family": "background",
@@ -8679,7 +8681,7 @@
   "route": "gpt",
   "spec_sha256": "d6e9f8fe00ea8a7645b90709a3cf63a4b848fa1e6ac6fe0ca009bcb2ee0d7371",
   "prompt_sha256": "d4d3a5ec92800aede6ff19bc146a10d66847bb0e21220467c57887b98954509c",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T02:30:42+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8703,7 +8705,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.18
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T03:07:13+00:00"
  },
  "ART-BAC-PAUPER": {
   "family": "background",
@@ -8848,7 +8851,7 @@
   "route": "gpt",
   "spec_sha256": "c981240625aa67bba11cc363495cd732926f092b42fa5bf349aca87051e2ff6e",
   "prompt_sha256": "e67d7bcb67cfb191ff2a3e5b5ef591ddf689a52ccf7338de1642f6e16247b217",
-  "status": "received",
+  "status": "approved",
   "received_at": "2026-10-14T02:33:31+00:00",
   "surface": "Codex",
   "model": "not shown",
@@ -8872,7 +8875,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 4.097
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "approved_at": "2026-10-14T03:07:13+00:00"
  },
  "ART-BAC-SHEPHERD": {
   "family": "background",
