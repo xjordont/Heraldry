@@ -8536,16 +8536,16 @@
   "heading_id": "h-farmer",
   "route": "gpt",
   "spec_sha256": "ebc8bba202a61bab7475e8de5eedc9bdfde2a084185b9716cbb77204d318dc94",
-  "prompt_sha256": "ce891f421a38772c3167094b53c4efecac85396b6d930203bea3f759919e374e",
-  "status": "rejected",
-  "received_at": "2026-10-13T20:45:05+00:00",
+  "prompt_sha256": "49052975eaa4d8ddc468c3d7ffeabc000971c7bbf9a8cde4b4020600e4c01b83",
+  "status": "received",
+  "received_at": "2026-10-14T00:26:48+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Keep the sickle lying across the supported sheaf with its cutting edge inside the curve; keep the farmer tools and still-life composition resting on the plank.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-FARMER.png",
-   "sha256": "45ea3eb8e3eab08ac51f64ad0ff60f46562583b0a0019433fcaf89d7fd1f842e",
+   "sha256": "6be677f9e31dc558282b6706a76770d872c145a94864ad0a8eac09a9710ec8dd",
    "px": [
     1254,
     1254
@@ -8553,18 +8553,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-FARMER.png",
-   "sha256": "9e8d89dfb6ddfb1748c73f8fe806353fc592da9de92bb04371839cae088558e0",
+   "sha256": "f52fde1e3ec3948d55988007121d8f09baffc5722a5f0f0c7bf50eb23761afa1",
    "px": [
-    1209,
-    1027
+    1227,
+    1180
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.03
+   "max_print_w_in_300ppi": 4.09
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-HERMIT": {
   "family": "background",
