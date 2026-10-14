@@ -1,24 +1,18 @@
 {
- "note": "Owner decision 2026-10-13: keep the Codex ink style, but take the composition and layout from the Nano Banana 2.1 comparison versions. Each entry names the Nano Banana version (assets/art/variants/<ID>/nb-<n>.png) whose arrangement Codex must follow. tools/art_composition.py writes the guide image production/art/composition/<ID>.jpg (greyscale, paper tone removed); it is attached as the last reference of the item and is never a style reference. Nomad (guide nb-2) was added last, so all 20 backgrounds are guided.",
+ "note": "Owner decision 2026-10-13: keep the Codex ink style, but take the composition and layout from the Nano Banana 2.1 comparison versions. Each entry names the Nano Banana version (assets/art/variants/<ID>/nb-<n>.png) whose arrangement Codex must follow. tools/art_composition.py writes the guide image production/art/composition/<ID>.jpg (greyscale, paper tone removed); it is attached as the last reference of the item and is never a style reference. Nomad (guide nb-2) was added last, so all 20 backgrounds are guided. Owner 2026-10-14: Believer, Merchant, Noble, Scholar, Soldier and Scout reverted to their earlier Codex images (richer and denser than the guided versions); their guided images are kept as assets/art/variants/<ID>/guided-codex.png and their guides are retired.",
  "guides": {
   "ART-BAC-ALCHEMIST": 1,
   "ART-BAC-APPRENTICE": 3,
   "ART-BAC-ARTISAN": 3,
-  "ART-BAC-BELIEVER": 3,
   "ART-BAC-COURIER": 3,
   "ART-BAC-CULTIST": 3,
   "ART-BAC-FARMER": 1,
   "ART-BAC-HERMIT": 1,
-  "ART-BAC-MERCHANT": 3,
-  "ART-BAC-NOBLE": 3,
   "ART-BAC-PAUPER": 2,
   "ART-BAC-PERFORMER": 3,
   "ART-BAC-SAILOR": 3,
-  "ART-BAC-SCHOLAR": 2,
-  "ART-BAC-SCOUT": 3,
   "ART-BAC-SHEPHERD": 2,
   "ART-BAC-SMUGGLER": 3,
-  "ART-BAC-SOLDIER": 3,
   "ART-BAC-VAGABOND": 2,
   "ART-BAC-NOMAD": 2
  }
