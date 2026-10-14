@@ -8900,16 +8900,16 @@
   "heading_id": "h-soldier",
   "route": "gpt",
   "spec_sha256": "1db4f2f8e30e9eccfd09588ddb44c362b864e8c53bb764737a963d2479aea5b2",
-  "prompt_sha256": "f8027686fcca7bd515bbd7885720ffcba7f20e4b1f6c4426ab4548da15ca63a9",
-  "status": "rejected",
-  "received_at": "2026-10-13T21:20:45+00:00",
+  "prompt_sha256": "a30ff858fe631e7becf31881727d7a7ba1f632a17ad7d17a60cdfa104250844b",
+  "status": "received",
+  "received_at": "2026-10-14T01:28:25+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Rest the spear butt on the floor and lean its shaft against the kit chest; keep the helm, whetstone, folded surcoat, boots, and empty scabbard loop on visible supports with nothing attached to the spear. Checker warns of sparse edge marks and hatching; no object is cropped or edge-touching.",
+  "model": "not shown",
+  "notes": "Guide layout and support are followed. Spear tip at top and right boot are inside the canvas but sit within roughly 4% of the edge, short of requested 8% white margin. No crop. Mid-tone warning is hatching.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SOLDIER.png",
-   "sha256": "9c4b368dc851f864b6d97d0b3fe7440ad9b0c3dbebaaae933746c1117682a896",
+   "sha256": "5afc76f09775cc418ab875b96492bd47ef026b5dbd8e3ff0dbf1cb05f9f6a4b4",
    "px": [
     1254,
     1254
@@ -8917,18 +8917,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SOLDIER.png",
-   "sha256": "8fde4f99bcbd7edaa3f3a0c7077e57f8071fb2627a09b9e0bddaef8bce3a015c",
+   "sha256": "d34ccb8a55757823228bd3dec268a6cb3b4d134bcd7affa0c55075cd8cf93ca9",
    "px": [
-    1248,
-    1230
+    1197,
+    1165
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.16
+   "max_print_w_in_300ppi": 3.99
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-VAGABOND": {
   "family": "background",
