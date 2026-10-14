@@ -503,5 +503,9 @@
   "ART-CH01-002",
   "ART-COVER-002"
  ],
- "gpt_lead_note": "Queue order: these seventeen go first (after any redo), one per reference set, so the first two drift reviews (images 10 and 20) cover every set before the bulk of the run."
+ "gpt_lead_note": "Queue order: these seventeen go first (after any redo), one per reference set, so the first two drift reviews (images 10 and 20) cover every set before the bulk of the run.",
+ "art_width_overrides": {
+  "_note": "Owner-authorized layout fix (2026-10-14): print width in inches for one placed illustration, applied by tools/build_book.load_spot_art (never above the family width or native 300 ppi). Used to keep a scenario from spilling a few lines onto an otherwise empty page.",
+  "ART-SCE-SCENARIO-3-THE-HAUNTED-MAUSOLEUM": 1.9
+ }
 }

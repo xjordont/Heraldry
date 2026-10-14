@@ -24,7 +24,9 @@ def load_spot_art():
     Width = family print width, never above native 300 ppi."""
     if not ART_SEL.exists():
         return {}, {}
-    fams = json.loads(ART_STYLE.read_text())["families"]
+    style = json.loads(ART_STYLE.read_text())
+    fams = style["families"]
+    overrides = {k: v for k, v in style.get("art_width_overrides", {}).items() if not k.startswith("_")}
     cat = {e["id"]: e for e in json.loads((ROOT / "production/art/SPOT_CATALOG.json").read_text())["entries"]}
     by_block, by_id = {}, {}
     for aid, s in json.loads(ART_SEL.read_text()).items():
@@ -34,7 +36,7 @@ def load_spot_art():
         from PIL import Image
         with Image.open(f) as image:
             wpx = image.size[0]
-        w = min(fams[s["family"]]["print_w_in"], wpx / 300)
+        w = min(fams[s["family"]]["print_w_in"], wpx / 300, overrides.get(aid, 99))
         rec = ("../" + s["ink"]["path"], w)
         by_id[aid] = rec
         if cat[aid].get("flavour_block"):
