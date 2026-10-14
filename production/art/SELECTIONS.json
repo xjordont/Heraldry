@@ -8735,16 +8735,16 @@
   "heading_id": "h-performer",
   "route": "gpt",
   "spec_sha256": "69964343c96dfbec853339d203b776ffe3c46b34895672f079adeef345ec7870",
-  "prompt_sha256": "5226aef95f65c34956f3063ffe2aacc977ac151073bedbb1f6644be44b6e6113",
-  "status": "rejected",
-  "received_at": "2026-10-13T21:04:02+00:00",
+  "prompt_sha256": "3deab3f752afd67e6adbb75a41ab18a02fdcf19e3a205c90fd646572c04e45f5",
+  "status": "received",
+  "received_at": "2026-10-14T00:58:41+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Show exactly three straight-bladed, tapered medieval throwing knives with short wrapped grips, fanned on the boards; keep the half-mask and lute resting on the supported stage and the bell strap settled flat. Checker flags: stage marks touch the image edge; mid-tones are ink hatching.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-PERFORMER.png",
-   "sha256": "a4b2ddbcc9bde9d9f2963384f5d3b9f80c5ee0c18c201f7219129f63c4273a13",
+   "sha256": "9e0c04624cfbebab0574ee50bf1a529c662e1d48410636809a376ad6a73ddf16",
    "px": [
     1254,
     1254
@@ -8752,18 +8752,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-PERFORMER.png",
-   "sha256": "6164f5fac0865ddabc9e236ae371e0d9f1f8535244fdf66509324eb783b71d71",
+   "sha256": "adb9eeedbdf4b63f7338a0128bea186f40fe1f3e7d47e9165475726fc03dfbf8",
    "px": [
-    1254,
-    1038
+    1242,
+    1123
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.18
+   "max_print_w_in_300ppi": 4.14
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-SAILOR": {
   "family": "background",
