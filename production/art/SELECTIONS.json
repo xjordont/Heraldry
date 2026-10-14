@@ -8437,16 +8437,16 @@
   "heading_id": "h-believer",
   "route": "gpt",
   "spec_sha256": "3b8b03fa8c13f0ba5e6b62da2da9f478a0198873abdea1816287f1d66eaf55bd",
-  "prompt_sha256": "ab08b33d120ab2ebd4fc989d65b0841324a16940c74ee6e8cc0115c25146d53e",
-  "status": "rejected",
-  "received_at": "2026-10-13T20:23:12+00:00",
+  "prompt_sha256": "9b0cadddde662eb3dbee6162e58071f6c645f213c142e8344059d8bf94b4cc90",
+  "status": "received",
+  "received_at": "2026-10-14T00:15:28+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Keep the lantern, vials, cord, cloth and devotional object on visible supports or hooks; keep the Believer still life and composition.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-BELIEVER.png",
-   "sha256": "20cf918f2e670157cdb76e563e6cc21195c668035eb910394976427ad2ad2b10",
+   "sha256": "3b9ce20556269e59094c6bbae6e17ba1f9fd1ac887e7878a9ce471403a267134",
    "px": [
     1254,
     1254
@@ -8454,18 +8454,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-BELIEVER.png",
-   "sha256": "b06bd2e432920a1100e96230334686f97949a728fb5489092135f9c22af4ba28",
+   "sha256": "2406d7c42d84e59fe77a3864ad07c08c746f970bf2a0386024352fa6834a992c",
    "px": [
-    1215,
-    1181
+    1236,
+    1064
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.05
+   "max_print_w_in_300ppi": 4.12
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-COURIER": {
   "family": "background",
