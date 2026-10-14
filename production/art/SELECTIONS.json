@@ -8404,16 +8404,16 @@
   "heading_id": "h-artisan",
   "route": "gpt",
   "spec_sha256": "7d65187d50f15fa9e0dee2130eafdf8849a5bf5a936675a2071081e9ad1e267c",
-  "prompt_sha256": "1faa0bc6a0935a989ea71c68db52b9899e3a72b54391a2246b6f8f355283d3d5",
-  "status": "rejected",
-  "received_at": "2026-10-13T20:15:31+00:00",
+  "prompt_sha256": "40372db81c3542ed2638fd735d3cd8e3ef9fa5ec507b1811c8dee03660bfdd5f",
+  "status": "received",
+  "received_at": "2026-10-14T00:12:52+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: The hammer lies flat on the anvil with both head and haft fully resting; keep the artisan workbench still life and composition.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-ARTISAN.png",
-   "sha256": "14f594f95036c636c58b0f9e6b5d8eee0a723059a730666571007c46232c0c86",
+   "sha256": "7878b94d3ae14e86bf7aff2d3a387a50c8453ed4991f59239c8be30fccc03e29",
    "px": [
     1254,
     1254
@@ -8421,18 +8421,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-ARTISAN.png",
-   "sha256": "e74a0b415f85424b2d193b24077c46c529c1654acf6f4a0b64661d3bb5cd3dc8",
+   "sha256": "879874696fc121347a3225fe0c487ef0f18a55c974f0bbc75dd0c3ad603197b7",
    "px": [
-    1220,
-    1112
+    1209,
+    1129
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 4.067
+   "max_print_w_in_300ppi": 4.03
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-BELIEVER": {
   "family": "background",
