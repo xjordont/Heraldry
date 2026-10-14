@@ -8801,16 +8801,16 @@
   "heading_id": "h-scholar",
   "route": "gpt",
   "spec_sha256": "91d4672666f08d52ca0d81ea6f61c71389089231ccb34a0dcded1433b0342f92",
-  "prompt_sha256": "50ead0011c7b2d87147531d09e864d9cbef448e6e7d33327f5faac8268bcf70d",
-  "status": "rejected",
-  "received_at": "2026-10-13T21:10:46+00:00",
+  "prompt_sha256": "b8dfa689cb0d0feae0d990a28c0272ea52acb6f9a08c693949efaf174271d839",
+  "status": "received",
+  "received_at": "2026-10-14T01:15:59+00:00",
   "surface": "Codex",
-  "model": "image_gen",
-  "notes": "Correction: Lean the quarterstaff securely against the desk with its foot on the floor; keep books, sheets, map, quill, inkpot, candle, and spectacles resting on the desk or weighted flat.",
+  "model": "not shown",
+  "notes": "Correction: copy the composition guide's object placement and relative sizes, keeping every object supported by a visible surface, support, or hook. Keep the Codex ink style and written forms.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-BAC-SCHOLAR.png",
-   "sha256": "c2108ca0fcea946fb7827522041c992a1fabfb5ff89c648a37081393f089614f",
+   "sha256": "7db1349afb3a0608505cd3e804da82d8ac571e8c4de2ba5af7e8080d7af04b73",
    "px": [
     1254,
     1254
@@ -8818,18 +8818,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-BAC-SCHOLAR.png",
-   "sha256": "1f4db436bf0f6253dea2f7258aa39f72112dac29bff261418e03f3ebf685b1d5",
+   "sha256": "28bc73ea541036258b42a790f6d946b6325e01bb649338392eac6a493dcdbcbe",
    "px": [
-    1191,
-    1171
+    1165,
+    1143
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.97
+   "max_print_w_in_300ppi": 3.883
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "approved_at": "2026-10-13T21:33:16+00:00",
-  "rejected_at": "2026-10-13T23:36:27+00:00",
-  "rejected_reason": "Redo with the composition guide (last attached image): keep the Codex ink style, copy the guide's layout and gravity (owner 2026-10-13)."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-BAC-SCOUT": {
   "family": "background",
