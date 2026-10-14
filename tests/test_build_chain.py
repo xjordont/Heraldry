@@ -22,6 +22,8 @@ class BuildChain(unittest.TestCase):
         self.assertIn("production/build-request.json", cand)
         self.assertIn("--prerelease", cand)
         self.assertIn("production/qa/visual-review.json", rel)
+        self.assertIn("tools/review_aids.py", cand)
+        self.assertIn("tools/release_result.py", rel)
         for wf in (cand, rel):
             self.assertIn("assets/art/cover/front.png", wf, "the cover is an LFS file the build places")
 
