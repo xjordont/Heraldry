@@ -34,7 +34,7 @@ jobs:
       - name: List the artwork the build places
         run: |
           mkdir -p build
-          L='assets/art/incoming/ART-CH*-001.png,assets/art/incoming/ART-COVER-001.png,assets/art/ink/*.png,assets/art/cover/front.png'
+          L='assets/art/incoming/ART-CH*-001.png,assets/art/incoming/ART-COVER-001.png,assets/art/ink/*.png,assets/art/cover/front.png,assets/art/cover/front-owner.jpg'
           echo "LFS_ART=$L" >> "$GITHUB_ENV"
           git lfs ls-files -l -I "$L" | cut -d' ' -f1 | sort > build/lfs-art.txt
       - name: Reuse artwork fetched by earlier builds
