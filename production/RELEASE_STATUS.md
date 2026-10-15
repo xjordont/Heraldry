@@ -1,5 +1,22 @@
 # Release status — Heraldry Skirmish RC492
 
+## Current delivery - 2026-10-15 handoff
+
+Latest requested delivery: [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), built from `5eebea0ac89a0d0f10728c8e0c19d78e6db38fe0`. `production/RELEASE_RESULT.json` records RELEASED; `dist/RELEASE.json` lists all 10 assets and SHA-256 hashes. The release contains six edition/cover/calibration PDFs, the specimen PDF, release ZIP, SHA256SUMS, and print instructions. Interiors: 672 pages each; digital: 675 pages. All 275 illustrations are approved and the art queue is empty. This documentation handoff does not rebuild or change the manuscript, artwork, layout, or released files.
+
+| Area | Current release evidence |
+|---|---|
+| Automated release gate | 19/19 PASS in `production/qa/STATUS.json` |
+| Visual review | PASS for cream PDF SHA-256 `10e4f8bea8cff69404a6ee1385077e0533b767ff1815714cd0b2532e245a8e78`; recorded inspection of 28 contact sheets covering all 672 pages, 29 detail pages, both covers, and calibration. Minor whitespace accepted on pages 92, 123, 162, 187, and 249; no major findings. Not glyph-level proofreading or an independent second review |
+| One-page keeps | 1,557 units audited, 1,250 fit-capable, no avoidable splits or missing coverage; visual review remains the backstop |
+| Package | PASS: 705 entries, 704 checksums verified, no duplicate entries; ZIP SHA-256 `3b29c62cb1ddc72888da05a22e3750fd7fcaafe57a22fca9ea64559f14ed924d` |
+| Cover | Owner picture is the whole front cover. Title/subtitle alignment with the title page and back cover awaits owner decision; source resolution is 912x1168 pixels (about 118 ppi at print size) |
+| Physical printer proof | **NOT TESTED**: no printed sheets examined |
+
+The records below are historical status for the 2026-10-13 build and earlier work. Their page counts, art counts, test counts, and review scope do not describe build 37. Current release evidence remains bound to build 37; the later handoff documentation is not part of its ZIP. See `production/STATE.md` for the reconciled handoff and open owner items.
+
+## Historical status - 2026-10-13 and earlier
+
 Build policy (owner, 2026-10-11): PDFs are rebuilt only on request. `dist/` and the build evidence below describe the last requested build; when the source or art has moved past it, the table says so. Last build: 2026-10-13, RC492 in design v4 "Grim Heraldry" (owner request 2026-10-13: step 2, adopt the design into the book with a build), inkjet PDF e5dfc3c6 (clean build), 656 interior pages (digital 659). It places the art approved at that time (184 of 275); the PDFs are published as a GitHub Release by the `Rebuild verified delivery` workflow, never committed.
 
 Active revision and hashes: `source/versions.json`. Current build evidence: `production/build-provenance.json`, `production/qa/STATUS.json` and the scoped visual/figure ledgers. RC484–RC486 remain unchanged.

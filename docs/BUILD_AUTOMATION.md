@@ -40,7 +40,7 @@ reproducible (proved on RC492).
 | `production/codex-build/CODEX_BUILD_CARD.md`, `CODEX_BUILD_PROMPT.md` | Codex's contract and the prompt to paste |
 
 `build_request.py check` refuses unless: on main, tree clean, local main equals origin/main, every illustration approved, art queue empty, and
-`tools/preflight.py` passes. Codex never fixes a failing build; it reports the failed step and stops.
+`tools/preflight.py` passes. Under the owner's 2026-10-15 primary-developer handoff, Codex reads the failed job log, repairs the cause, runs the required tests, pushes to main, and re-dispatches the requested release workflow. This supersedes the former stop-only build-worker restriction; a new, unrelated build still requires an owner request.
 
 Rules kept: PDFs and ZIPs are never committed (releases only; review images are JPEGs in LFS, replaced each build); ledgers on main describe the last
 verified release; physical printing stays NOT TESTED.
