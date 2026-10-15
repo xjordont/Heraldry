@@ -50,6 +50,8 @@ The RC492 PDFs built before this policy are no longer in the working tree. They 
 
 ## Quotas to watch
 
+Optional InDesign exports go to a new external editing directory or disposable `build/indesign/`, never Git. The manual-only export workflow makes a downloadable project artifact with IDML, linked approved graphics, fonts and licences; it does not publish a release. Native INDD requires the packaged finishing script in installed InDesign. Keep all linked assets with the document. See [INDESIGN_EXPORT.md](INDESIGN_EXPORT.md).
+
 - GitHub meters Git LFS storage and bandwidth per account. The owner should check the current allowance under GitHub → Settings → Billing before the full art run.
 - The full art set is expected to be under 1 GB, at about 3 MB per native image plus small ink files, and each image is downloaded about once: by the intake.
 - Release assets do not count toward the repository's size.

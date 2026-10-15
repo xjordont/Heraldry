@@ -6,6 +6,8 @@ Ordinary development starts with `python tools/dev.py check`; `doctor` checks th
 
 Owner-supplied full manuscript updates use [docs/MANUSCRIPT_UPDATES.md](docs/MANUSCRIPT_UPDATES.md): prepare an exact review with `python tools/dev.py manuscript prepare --input <file.md>`, then apply the explicitly approved batch through the revision engine. Review affected anchors/figures and commit any bound companion configuration with the new RC. A manuscript update does not request a publication build.
 
+InDesign is an optional, explicitly invoked export ([docs/INDESIGN_EXPORT.md](docs/INDESIGN_EXPORT.md)). Use `python tools/dev.py indesign export --output <new-folder>` or the manual-only workflow. Never attach it to ordinary checks, manuscript promotion, artwork intake, or PDF builds. Native INDD composition requires installed InDesign; keep structural validation, native composition, visual review, and physical proof statuses separate. Linked SVG originals remain editable source graphics; do not claim native InDesign paths or a PDF-identical layout.
+
 ## Codex role (owner handoff, 2026-10-15)
 
 Codex is the primary developer and integration owner across manuscript tooling, artwork, figures, layout, tests, documentation, and releases. This supersedes the former art-worker-only role and restricted build-orchestrator carve-out. Continue authorized work and repair build failures within the governing contract; substantive rules ambiguities still require an owner decision.
