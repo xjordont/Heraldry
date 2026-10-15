@@ -73,6 +73,7 @@ jobs:
         run: |
           VERSION=$(python tools/manuscript.py --version)
           TAG="$VERSION-candidate-$GITHUB_RUN_NUMBER"
+          if [ "${GITHUB_RUN_ATTEMPT:-1}" != "1" ]; then TAG="$TAG-attempt-$GITHUB_RUN_ATTEMPT"; fi
           shopt -s nullglob
           (cd dist && sha256sum Heraldry_"$VERSION"_*.pdf > SHA256SUMS-candidate.txt)
           gh release create "$TAG" dist/Heraldry_"$VERSION"_*.pdf dist/SHA256SUMS-candidate.txt --prerelease --target "$GITHUB_SHA" \

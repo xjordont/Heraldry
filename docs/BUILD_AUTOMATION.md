@@ -44,3 +44,11 @@ reproducible (proved on RC492).
 
 Rules kept: PDFs and ZIPs are never committed (releases only; review images are JPEGs in LFS, replaced each build); ledgers on main describe the last
 verified release; physical printing stays NOT TESTED.
+
+## Failure and review safeguards
+
+The visual-review binder requires contact-sheet ranges covering every PDF page exactly once, first/last detail images, both covers, and calibration. Major findings on any reviewed image block binding; unknown severities also refuse. Minor notes from every image are retained. Figure semantic reviews require a named reviewer, a review date, and current SVG, caption, and manuscript-dependency hashes.
+
+The release workflow passes its preceding job status to `release_result.py --job-status`, including a failed verification-ledger commit or push. A published asset alone does not produce a RELEASED result. `release_result.py --push` appends only the result record to freshly fetched main using a temporary index. It retries a concurrent main update without rebasing a pending verification-ledger commit onto newer inputs. It preserves all other files on remote main and leaves the runner's dirty build checkout intact.
+
+First-attempt tags retain `<RC>-candidate-<run>` and `<RC>-build-<run>`. Workflow reruns append `-attempt-<attempt>` so a successful earlier publication does not cause a tag collision or require overwriting a release.

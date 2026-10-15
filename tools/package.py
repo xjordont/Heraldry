@@ -24,7 +24,7 @@ def generated_natives():
     """Native generated images in assets/art/incoming (recorded in SELECTIONS.json): raw art like masters/, so only
     their ink derivatives ship. The twelve legacy atmospheric masters are not in SELECTIONS and still ship."""
     sels = ROOT / "production/art/SELECTIONS.json"
-    return set(json.loads(sels.read_text())) if sels.is_file() else set()
+    return set(json.loads(sels.read_text(encoding="utf-8"))) if sels.is_file() else set()
 
 
 def files():
@@ -50,30 +50,30 @@ def files():
 def main():
     check()
     provenance = check_build()
-    status = json.loads((ROOT / "production/qa/STATUS.json").read_text())
+    status = json.loads((ROOT / "production/qa/STATUS.json").read_text(encoding="utf-8"))
     if status.get("release_gate") != "PASS" or status.get("provenance") != provenance:
         raise SystemExit("Current build has no matching passing verification; run make verify")
     archive = DIST / f"Heraldry_{version()}_release.zip"
     prefix = Path(f"Heraldry_{version()}")
     fl = list(files())
-    sums = "\n".join(f"{hashlib.sha256(f.read_bytes()).hexdigest()}  {f.relative_to(ROOT)}" for f in fl) + "\n"
-    (DIST / "SHA256SUMS.txt").write_text(sums)
+    sums = "\n".join(f"{hashlib.sha256(f.read_bytes()).hexdigest()}  {f.relative_to(ROOT).as_posix()}" for f in fl) + "\n"
+    (DIST / "SHA256SUMS.txt").write_text(sums, encoding="utf-8", newline="\n")
     with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
         for f in fl:
-            z.write(f, prefix / f.relative_to(ROOT))
-        z.writestr(str(prefix / "SHA256SUMS.txt"), sums)
+            z.write(f, (prefix / f.relative_to(ROOT)).as_posix())
+        z.writestr((prefix / "SHA256SUMS.txt").as_posix(), sums)
     with zipfile.ZipFile(archive) as z:
         names = z.namelist()
         if len(names) != len(set(names)) or z.testzip():
             raise SystemExit("Duplicate or corrupt ZIP entry")
         for f in fl:
-            if z.read(str(prefix / f.relative_to(ROOT))) != f.read_bytes():
+            if z.read((prefix / f.relative_to(ROOT)).as_posix()) != f.read_bytes():
                 raise SystemExit(f"Archive content mismatch: {f}")
-    rep = {"zip": str(archive.relative_to(ROOT)), "bytes": archive.stat().st_size,
+    rep = {"zip": archive.relative_to(ROOT).as_posix(), "bytes": archive.stat().st_size,
            "files": len(names), "sha256": hashlib.sha256(archive.read_bytes()).hexdigest(),
            "status": "PASS", "duplicate_entries": [], "checksums_verified": len(fl),
            "note": "This audit is external to the ZIP to avoid self-reference; PDFs are verified files, visual and physical proof statuses remain separately qualified."}
-    (ROOT / "production/qa/package-audit.json").write_text(json.dumps(rep, indent=2) + "\n")
+    (ROOT / "production/qa/package-audit.json").write_text(json.dumps(rep, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(rep))
 
 

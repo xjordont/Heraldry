@@ -62,7 +62,7 @@ def revise(root, patch_path, reason, authorization):
               "patch_ids": list(p["id"] for p in patches),
               "patch_file": evidence.relative_to(root).as_posix(),
               "patch_sha256": hashlib.sha256(raw).hexdigest()}
-    config = json.loads((root / "config/production.json").read_text())
+    config = json.loads((root / "config/production.json").read_text(encoding="utf-8"))
     config["source"] = record["path"]
     config["source_authority"] = "Active immutable snapshot in source/versions.json; prior snapshots retained"
     config["verified_publication_metadata"]["version"] = f"Release Candidate {number} (RC{number})"

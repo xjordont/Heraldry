@@ -20,7 +20,7 @@ def hashes(root=ROOT):
     for k, (start, level, number) in enumerate(headings):
         end = next((i for i, depth, _ in headings[k+1:] if depth <= level), len(lines))
         sections[number] = "".join(lines[start:end])
-    deps = json.loads((root / "config/figure_dependencies.json").read_text())
+    deps = json.loads((root / "config/figure_dependencies.json").read_text(encoding="utf-8"))
     result = {}
     for fid, numbers in deps.items():
         if not numbers or any(n not in sections for n in numbers):

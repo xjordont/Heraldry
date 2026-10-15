@@ -2,6 +2,8 @@
 
 ## Current delivery - 2026-10-15 handoff
 
+Tooling update, 2026-10-15: manuscript/preflight UTF-8 handling, review gates, Windows ZIP paths, and release-result reporting have changed since build 37. The PDFs, package, and hash-bound ledgers below remain evidence for that last requested release. These code repairs have not been exercised in a new publication build; the manuscript remains RC492. Physical print remains **NOT TESTED**.
+
 Latest requested delivery: [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), built from `5eebea0ac89a0d0f10728c8e0c19d78e6db38fe0`. `production/RELEASE_RESULT.json` records RELEASED; `dist/RELEASE.json` lists all 10 assets and SHA-256 hashes. The release contains six edition/cover/calibration PDFs, the specimen PDF, release ZIP, SHA256SUMS, and print instructions. Interiors: 672 pages each; digital: 675 pages. All 275 illustrations are approved and the art queue is empty. This documentation handoff does not rebuild or change the manuscript, artwork, layout, or released files.
 
 | Area | Current release evidence |

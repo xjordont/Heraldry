@@ -59,14 +59,14 @@ def main() -> int:
         return f'{len(REQUIRED)} required files present'
 
     def source_integrity():
-        json.loads((root / 'config/production.json').read_text())
+        json.loads((root / 'config/production.json').read_text(encoding='utf-8'))
         from manuscript import check
         current = check(root)
         return {"sha256": current["sha256"], "bytes": current["bytes"], "version": f"RC{current['number']}"}
 
     def configuration():
-        c = json.loads((root / 'config/production.json').read_text())
-        s = json.loads((root / '.claude/settings.json').read_text())
+        c = json.loads((root / 'config/production.json').read_text(encoding='utf-8'))
+        s = json.loads((root / '.claude/settings.json').read_text(encoding='utf-8'))
         require(s['model'] == c['models']['orchestrator'], 'Orchestrator settings/config differ')
         require(s['effortLevel'] == c['models']['orchestrator_effort'], 'Orchestrator effort differs')
         require(c['models']['max_concurrent_subagents'] == 2, 'Concurrency differs from reviewed limit')
@@ -81,8 +81,8 @@ def main() -> int:
         return 'Configuration reconciles; runtime model access requires live checks'
 
     def design_print_contract():
-        c = json.loads((root / 'config/production.json').read_text())
-        t = json.loads((root / 'config/design_tokens.json').read_text())
+        c = json.loads((root / 'config/production.json').read_text(encoding='utf-8'))
+        t = json.loads((root / 'config/design_tokens.json').read_text(encoding='utf-8'))
         p = c['inkjet']
         require(c['format']['orientation'] == 'portrait', 'Primary orientation changed')
         require(p['borderless'] and not p['crop_marks'] and p['external_bleed_inches'] == 0, 'Borderless sheet contract changed')
@@ -101,7 +101,7 @@ def main() -> int:
 
     def agent_contracts():
         for name, effort in AGENTS.items():
-            text = (root / '.claude/agents' / (name + '.md')).read_text()
+            text = (root / '.claude/agents' / (name + '.md')).read_text(encoding='utf-8')
             parts = text.split('---', 2)
             require(len(parts) == 3 and not parts[0].strip(), f'{name}: missing frontmatter')
             fields = {}
@@ -112,7 +112,7 @@ def main() -> int:
                 fields[match[1]] = match[2]
             require(fields.get('name') == name, f'{name}: name mismatch')
             require(bool(fields.get('description')), f'{name}: missing description')
-            config = json.loads((root / 'config/production.json').read_text())
+            config = json.loads((root / 'config/production.json').read_text(encoding='utf-8'))
             model = config['models']['mechanical_work' if name == 'mechanical-assistant' else 'bulk_work']
             require(fields.get('model') == model, f'{name}: model/config mismatch')
             require(fields.get('effort') == effort, f'{name}: effort mismatch')
@@ -121,7 +121,7 @@ def main() -> int:
         return 'Five bounded model/effort/tool definitions validated; runtime resolution is separate'
 
     def references():
-        m = json.loads((root / 'references/reference_manifest.json').read_text())
+        m = json.loads((root / 'references/reference_manifest.json').read_text(encoding='utf-8'))
         refs = m['references']
         require(len({x['id'] for x in refs}) == len(refs), 'Duplicate reference IDs')
         require(len({x['sha256'] for x in refs}) == len(refs), 'Duplicate selected books')
@@ -135,7 +135,7 @@ def main() -> int:
 
     def scripts():
         for p in sorted((root / 'tools').glob('*.py')):
-            ast.parse(p.read_text(), filename=str(p))
+            ast.parse(p.read_text(encoding='utf-8'), filename=str(p))
         return 'Python scripts parse successfully'
 
     def baseline():
@@ -165,7 +165,7 @@ def main() -> int:
               'missing_tools_policy': 'Provision during the capability milestone; availability is not kit integrity'}
     if args.report:
         args.report.parent.mkdir(parents=True, exist_ok=True)
-        args.report.write_text(json.dumps(result, indent=2) + '\n')
+        args.report.write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(result, indent=2))
     return 0 if result['kit_status'] == 'PASS' else 1
 
