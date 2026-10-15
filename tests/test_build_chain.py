@@ -28,25 +28,41 @@ class BuildChain(unittest.TestCase):
             self.assertIn("assets/art/cover/front.png", wf, "the cover is an LFS file the build places")
 
     def test_workflows_have_no_duplicate_keys(self):
-        """GitHub rejects a workflow with a duplicated mapping key (PyYAML silently keeps the last), so no run ever starts."""
-        import yaml
-        from yaml.constructor import ConstructorError
-
-        class Strict(yaml.SafeLoader):
-            pass
-
-        def no_dup(loader, node, deep=False):
-            seen = set()
-            for k, _ in node.value:
-                key = loader.construct_object(k, deep=deep)
-                if key in seen:
-                    raise ConstructorError(None, None, f"duplicate key {key!r}", k.start_mark)
-                seen.add(key)
-            return yaml.SafeLoader.construct_mapping(loader, node, deep)
-        Strict.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, no_dup)
+        """GitHub rejects a workflow with a duplicated mapping key (PyYAML silently keeps the last), so no run ever starts.
+        Standard library only: a small indentation-aware scan of the mapping keys, skipping block scalars (run: |)."""
+        import re
         for wf in sorted((ROOT / ".github/workflows").glob("*.yml")):
             with self.subTest(wf=wf.name):
-                yaml.load(wf.read_text(), Loader=Strict)
+                stack = []          # (indent, set of keys seen at that indent)
+                block_indent = None
+                for n, raw in enumerate(wf.read_text().splitlines(), 1):
+                    if not raw.strip() or raw.lstrip().startswith("#"):
+                        continue
+                    ind = len(raw) - len(raw.lstrip())
+                    if block_indent is not None:
+                        if ind > block_indent:
+                            continue
+                        block_indent = None
+                    line = raw.lstrip()
+                    new_item = line.startswith("- ")
+                    if new_item:
+                        ind += 2
+                        line = line[2:].lstrip()
+                    while stack and stack[-1][0] > ind:
+                        stack.pop()
+                    if new_item:
+                        while stack and stack[-1][0] >= ind:
+                            stack.pop()
+                    m = re.match(r"([A-Za-z_][\w.-]*|'[^']*'|\"[^\"]*\"):(\s|$)", line)
+                    if not m:
+                        continue
+                    if not stack or stack[-1][0] < ind:
+                        stack.append((ind, set()))
+                    key = m.group(1)
+                    self.assertNotIn(key, stack[-1][1], f"{wf.name}:{n}: duplicate key {key!r}")
+                    stack[-1][1].add(key)
+                    if re.search(r":\s*[|>][+-]?\s*$", line):
+                        block_indent = ind - (2 if new_item else 0)
 
     def test_request_tool_is_stdlib_only(self):
         import ast
