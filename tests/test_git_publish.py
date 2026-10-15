@@ -103,6 +103,19 @@ class GitPublication(unittest.TestCase):
             publish.require_clean_main(self.root)
         self.assertEqual(self.git("rev-parse", "HEAD"), self.base)
 
+    def test_current_main_allows_only_explicit_companion_edits(self):
+        target = self.root / "other.txt"
+        target.write_bytes(b"Reviewed companion edit\n")
+        self.assertEqual(publish.require_current_main(self.root, ["other.txt"]), self.base)
+        self.git("add", "other.txt")
+        self.assertEqual(publish.require_current_main(self.root, ["other.txt"]), self.base)
+        self.write_payload()
+        before = self.git("status", "--porcelain")
+        with self.assertRaises(publish.PublishError):
+            publish.require_current_main(self.root, ["other.txt"])
+        self.assertEqual(self.git("status", "--porcelain"), before)
+        self.assertEqual(target.read_bytes(), b"Reviewed companion edit\n")
+
     def test_local_ahead_commit_is_preserved_and_not_pushed(self):
         self.git("commit", "--allow-empty", "-m", "unsent owner work")
         local = self.git("rev-parse", "HEAD")

@@ -17,8 +17,13 @@ def text_of(block):
 
 
 def resolve(root=ROOT):
-    definitions = json.loads((root / "config/content_anchors.json").read_text())
-    model = json.loads((root / "build/blocks.json").read_text())
+    definitions = json.loads((root / "config/content_anchors.json").read_text(encoding="utf-8"))
+    model = json.loads((root / "build/blocks.json").read_text(encoding="utf-8"))
+    return resolve_model(definitions, model)
+
+
+def resolve_model(definitions, model):
+    """Resolve sidecar anchors against an in-memory parsed manuscript."""
     candidates = []
     section = None
     for ch in model["chapters"]:

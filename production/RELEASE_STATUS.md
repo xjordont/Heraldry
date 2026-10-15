@@ -10,6 +10,8 @@ Workflow refinement, 2026-10-15: developer checks now use `python tools/dev.py c
 
 Repository cleanup, 2026-10-15: removed exact duplicate applied proposals, a retired mark generator, a redundant ignore file, and unused Typst definitions; current artwork/figure sources and all immutable history/review evidence remain. The removal inventory is `production/cleanup/2026-10-15.json`. No new PDF build was requested; the production records below remain bound to build 37.
 
+Manuscript workflow, 2026-10-15: full UTF-8 Markdown updates now have a deterministic prepare/review/apply path, documented in `docs/MANUSCRIPT_UPDATES.md`. It checks exact hashes, anchors, affected figures, and current main before promoting an approved batch through the revision engine, with rollback for ordinary write failures. No real manuscript update was supplied or promoted; RC492 and all build 37 PDF/review evidence remain unchanged. This tooling has not been exercised in a new publication build.
+
 Latest requested delivery: [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), built from `5eebea0ac89a0d0f10728c8e0c19d78e6db38fe0`. `production/RELEASE_RESULT.json` records RELEASED; `dist/RELEASE.json` lists all 10 assets and SHA-256 hashes. The release contains six edition/cover/calibration PDFs, the specimen PDF, release ZIP, SHA256SUMS, and print instructions. Interiors: 672 pages each; digital: 675 pages. All 275 illustrations are approved and the art queue is empty. This documentation handoff does not rebuild or change the manuscript, artwork, layout, or released files.
 
 | Area | Current release evidence |

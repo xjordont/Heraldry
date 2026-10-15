@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One entry point for non-building local doctor, check, and status commands."""
+"""One entry point for local checks, status, and reviewed manuscript updates."""
 import argparse
 import json
 import os
@@ -52,13 +52,22 @@ def status():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=("doctor", "check", "status"))
+    parser.add_argument("command", choices=("doctor", "check", "status", "manuscript"))
     parser.add_argument("--python", help="override automatic .venv / Heraldry environment selection")
     parser.add_argument("--base", default="origin/main", help="snapshot history reference for check (local tracking ref)")
-    args = parser.parse_args()
+    # Hand the manuscript command its own help/options and the selected runtime.
+    argv = sys.argv[1:]
+    if "manuscript" in argv:
+        position = argv.index("manuscript")
+        args = parser.parse_args(argv[:position + 1])
+        manuscript_args = argv[position + 1:]
+    else:
+        args = parser.parse_args(argv)
     try:
         python = select_python(override=args.python)
         print("Python: " + python, flush=True)
+        if args.command == "manuscript":
+            return run(python, "tools/update_manuscript.py", *manuscript_args)
         if args.command == "status":
             return status()
         report = ROOT / "build/checks"

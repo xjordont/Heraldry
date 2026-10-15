@@ -4,6 +4,8 @@
 
 Ordinary development starts with `python tools/dev.py check`; `doctor` checks the installed environment, and `status` reports Git and last-release state. These commands do not build the book or publish. Use the current build card only when the owner requests a build.
 
+Owner-supplied full manuscript updates use [docs/MANUSCRIPT_UPDATES.md](docs/MANUSCRIPT_UPDATES.md): prepare an exact review with `python tools/dev.py manuscript prepare --input <file.md>`, then apply the explicitly approved batch through the revision engine. Review affected anchors/figures and commit any bound companion configuration with the new RC. A manuscript update does not request a publication build.
+
 ## Codex role (owner handoff, 2026-10-15)
 
 Codex is the primary developer and integration owner across manuscript tooling, artwork, figures, layout, tests, documentation, and releases. This supersedes the former art-worker-only role and restricted build-orchestrator carve-out. Continue authorized work and repair build failures within the governing contract; substantive rules ambiguities still require an owner decision.
