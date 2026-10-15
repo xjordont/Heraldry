@@ -1,0 +1,9 @@
+{
+ "ledger_commit": "3d8b87cbe05d88ecd298b2163c4772e2e64f2952",
+ "result": "FAILED",
+ "note": "step failed: tests, clean build, verify or package (the visual ledger must match this exact PDF)",
+ "release_url": "",
+ "tag": "",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/38660675981",
+ "physical_print": "NOT TESTED"
+}
