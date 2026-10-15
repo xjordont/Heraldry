@@ -2,6 +2,12 @@
 // Its edge markers intentionally sit inside the 0.375 in safe zone.
 #import "heraldry.typ": *
 #let revision = json("../source/versions.json").current
+#let pt-label(value) = str(value / 1pt) + " pt"
+#let minimum-size = publication.format.minimum_essential_text_pt * 1pt
+// A real, unchanged paragraph from the active snapshot, not generated example prose.
+#let source-lines = read("../" + publication.source).split("\n").map(line => line.trim())
+#let body-samples = source-lines.filter(line => line.starts-with("The battlefield is never passive."))
+#assert(body-samples.len() == 1, message: "Calibration source sample must resolve exactly once in the active manuscript.")
 #set page(width: page-w, height: page-h, fill: substrate, margin: 0pt)
 #set text(font: sans, size: 9.5pt, fill: ink)
 
@@ -35,10 +41,17 @@
       *Type sizes* \
       #text(font: serif, size: 9pt)[9 pt Source Serif 4 — 1d6 + APL/2 [1 AP] 36"×36" ±−×] \
       #text(font: serif, size: 9.5pt)[9.5 pt Source Serif 4 — Advantage, Cover, Engaged] \
-      #text(font: serif, size: 10.5pt)[10.5 pt Source Serif 4 — body text size] \
-      #text(font: sans, size: 9pt)[9 pt Source Sans 3 — table minimum 0123456789] \
-      #text(font: sans, size: 9.5pt)[9.5 pt Source Sans 3 — table text 0123456789] \
+      #text(font: serif, size: body-size)[#pt-label(body-size) #serif - body text size] \
+      #text(font: sans, size: minimum-size)[#pt-label(minimum-size) #sans - essential minimum 0123456789] \
+      #text(font: sans, size: table-size)[#pt-label(table-size) #sans - table text 0123456789] \
       #text(font: display, size: 21pt, weight: 600)[21 pt Grenze Gotisch section heading]
+      #v(10pt)
+      *Current source sample (1.1)* \
+      #block({
+        set text(font: serif, size: body-size, lang: "en", region: "CA", hyphenate: true)
+        set par(leading: body-lead, justify: true)
+        text(body-samples.first())
+      })
       #v(10pt)
       *Rule weights* \
       #for w in (0.3pt, 0.45pt, 0.6pt, 0.75pt, 1pt) [
@@ -48,9 +61,15 @@
     [
       *Table bands* \
       #v(4pt)
-      #table(columns: (0.5in, 1fr), inset: 4pt, stroke: (x, y) => (bottom: 0.3pt + rgb(0,0,0,22%)),
+      #block({
+      set text(font: sans, size: table-size)
+      set par(leading: table-lead)
+      table(columns: (0.5in, 1fr), inset: 4pt, stroke: (x, y) => (bottom: 0.3pt + rgb(0,0,0,22%)),
         fill: (x, y) => if calc.even(y) { band } else { none },
-        [*d6*], [*Result (6% band on even rows)*], [1], [Row text at 9.5 pt], [2], [Banded row], [3], [Row text], [4], [Banded row])
+        [*d6*], [*Result (active table band)*], [1], [Row text at #pt-label(table-size)], [2], [Banded row], [3], [Row text], [4], [Banded row])
+      })
+      #v(4pt)
+      #block(fill: ink, inset: 4pt, head-cell([Current table header]))
       #v(10pt)
       *Substrate comparison* \
       #v(4pt)

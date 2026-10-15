@@ -2,6 +2,8 @@
 
 ## Current delivery - 2026-10-15 handoff
 
+Publication improvement first pass, 2026-10-15: the calibration source now derives its body/table/minimum labels from active values and includes current source/header samples; both cream/white PNG diagnostics passed scoped review. Authority conflicts were traced to supplied RC484, a bounded second model source proof produced seven findings/ten exact draft replacements, and reader/accessibility/physical protocols were prepared. All manuscript replacements remain proposed; owner canon dispositions are pending. No new PDF, human copyedit, reader study, screen-reader result, or physical proof is claimed. Build-37 files/ledgers remain unchanged; corrected calibration awaits the next requested build. Details: [first-pass record](qa/publication-first-pass.md) and [protocol](../docs/PUBLICATION_CHECKS.md). Physical print remains **NOT TESTED**.
+
 Tooling update, 2026-10-15: manuscript/preflight UTF-8 handling, review gates, Windows ZIP paths, and release-result reporting have changed since build 37. The PDFs, package, and hash-bound ledgers below remain evidence for that last requested release. These code repairs have not been exercised in a new publication build; the manuscript remains RC492. Physical print remains **NOT TESTED**.
 
 Dependency audit, 2026-10-15: the Windows virtual environment matches all 9 locked packages, including newly declared cover/mark authoring dependencies NumPy and potracer. Runtime smoke checks pass; `BUILD.md` records the explicit Windows commands. This lock update has not triggered a publication build or replaced build 37's evidence.

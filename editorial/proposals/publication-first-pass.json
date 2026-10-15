@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "status": "proposed",
+  "source_revision": 492,
+  "base_sha256": "a5ca7e72ad05a0cd69bb0bdca8238c10a635cf18345ae719c047c42fd3a8552a",
+  "scope": "Bounded source proof: seven findings, ten exact draft replacements. No manuscript or PDF changed.",
+  "authorization": "Proposal only. User authorized the improvement review; these exact text edits and the tutorial activation interpretation await owner approval. Not authorized for promotion.",
+  "patches": [
+    {
+      "id": "PUB-E01",
+      "status": "proposed",
+      "finding": "E01",
+      "decision_class": "requires_owner_decision",
+      "source_line": 16323,
+      "find": "1. If the Dire Wolf is **Engaged**, they attack an **Engaged** non-**Knocked Out** Hero. If more than one **Engaged** Hero is legal, choose the Hero carrying the **Dispatch Satchel**, then the Hero with lower current **HP**, then use **Random Determination** among the tied Heroes.\n2. If the Dire Wolf is not **Engaged**, choose their **Primary Target** using the learn-to-play target priority below.\n3. The Dire Wolf moves up to **8\"** toward their **Primary Target** by the shortest legal route.\n4. If the Dire Wolf ends **Engaged** with a Hero, they make one **Bite** attack.\n5. If at least one other Dire Wolf is within the **Bite** attack's melee distance of the target, apply **Pack Tactics** to the **Bite** damage roll.\n6. If **Bite** deals damage, the target makes a **STR Check**. On a failure, the target becomes **Prone**.",
+      "replace": "1. If the Dire Wolf is **Engaged**, select an **Engaged** non-**Knocked Out** Hero as its target. If more than one **Engaged** Hero is legal, choose the Hero carrying the **Dispatch Satchel**, then the Hero with lower current **HP**, then use **Random Determination** among the tied Heroes. Skip steps 2–3 and proceed to step 4.\n2. If the Dire Wolf is not **Engaged**, choose its **Primary Target** using the learn-to-play target priority below.\n3. The Dire Wolf moves up to **8\"** toward its **Primary Target** by the shortest legal route.\n4. If the Dire Wolf is **Engaged** with a Hero, declare one **Bite** attack. Otherwise, end its activation.\n5. Before rolling the **Bite** attack's base damage dice, apply **Pack Tactics** if at least one other Dire Wolf is within the attack's melee distance of the target. Resolve the **Bite** attack using the **Attack Sequence** in **5.2**.\n6. If **Bite** deals damage, the target makes a **STR Check**. On a failure, the target becomes **Prone**. The Dire Wolf's activation then ends.",
+      "expected_count": 1
+    },
+    {
+      "id": "PUB-E02",
+      "status": "proposed",
+      "finding": "E02",
+      "decision_class": "main_rule_alignment_for_owner_review",
+      "source_line": 17938,
+      "find": "7. Otherwise move toward the scenario objective, Guard Point, or patrol route.",
+      "replace": "7. **Search:** If no enemy is visible but a **Hidden** enemy is within **12\"** and **LOS** of the **Monster**, that enemy's controller makes a **DEX Check**. On a failure, that enemy loses **Hidden**. If more than one **Hidden** enemy is within **12\"** and **LOS**, apply this to the nearest, resolving ties by **Target Priorities and Tie-Breakers**. The **Monster's** activation then ends.\n8. Otherwise move toward the scenario objective, Guard Point, or patrol route.",
+      "expected_count": 1
+    },
+    {
+      "id": "PUB-E03",
+      "status": "proposed",
+      "finding": "E03",
+      "decision_class": "example_profile_choice_requires_owner_review",
+      "source_line": 1675,
+      "find": "*Example: A Guard is targeted by a melee attack that deals **5 slashing** and **2 fire** damage, **7** in total, and spends **1 AP** to **Parry** with a shortsword. The Guard rolls the shortsword's d6 and gets a **6**, rolls an exploding d6 for **2**, then adds **DEX +1** for a parry total of **9**. The **Parry** succeeds, so the Guard suffers none of the attack's damage. Because the retained parry base die showed its maximum value, the attacker suffers **9 Riposte damage** and applies **AV** against it normally.*",
+      "replace": "*Example: A Guard is targeted by a melee attack that deals **5 slashing** and **2 fire** damage, **7** in total, and spends **1 AP** to **Parry** with a shortsword. The Guard rolls the shortsword's d6 and gets a **6**, rolls an exploding d6 for **2**, then adds **STR +2** for a parry total of **10**. The **Parry** succeeds, so the Guard suffers none of the attack's damage. Because the retained parry base die showed its maximum value, the attacker suffers **10 Riposte damage** and applies **AV** against it normally.*",
+      "expected_count": 1
+    },
+    {
+      "id": "PUB-E04",
+      "status": "proposed",
+      "finding": "E04",
+      "decision_class": "main_rule_timing_alignment_for_owner_review",
+      "source_line": 16309,
+      "find": "**Block Example:** Dire Wolf 1 bites Edric for **7 piercing damage**. Edric's Brigandine **AD d8** rolls automatically for **5**. Edric spends **1 AP** to Block, adding a Heater Shield **AD d8** roll of **3**, for **8 AV** in total. Edric suffers **0 damage**.",
+      "replace": "**Block Example:** Dire Wolf 1 targets Edric with **Bite**. Edric declares **Block [1 AP]** before damage is rolled. The Bite deals **7 piercing damage**. Edric's Brigandine **AD d8** rolls automatically for **5**. Edric's Heater Shield **AD d8** rolls **3**, for **8 AV** in total. Edric suffers **0 damage**.",
+      "expected_count": 1
+    },
+    {
+      "id": "PUB-E05",
+      "status": "proposed",
+      "finding": "E05",
+      "decision_class": "teaching_copy_alignment",
+      "source_line": 16455,
+      "find": "Because Senna makes a ranged attack while adjacent to Mara, Mara may declare **Reflex Attack [1 AP]**. Mara declares it before Senna rolls damage. Only 1 **Reaction** may respond to the same action, so Mara cannot also **Block** the shot. Senna rolls damage [**1d6 = 4, +3 DEX, total 7**]. Mara's **Gambeson AD** rolls automatically [**d3 = 2**], reducing the damage to **5**. Mara falls from **12 HP** to **7 HP**.",
+      "replace": "Because Senna makes a ranged attack while adjacent to Mara, Mara may declare **Reflex Attack [1 AP]**. Mara declares it before Senna rolls damage. Only 1 **Reaction** may respond to the same action, so Mara cannot also **Dodge** the shot. Senna rolls damage [**1d6 = 4, +3 DEX, total 7**]. Mara's **Gambeson AD** rolls automatically [**d3 = 2**], reducing the damage to **5**. Mara falls from **12 HP** to **7 HP**.",
+      "expected_count": 1
+    },
+    {
+      "id": "PUB-E06a",
+      "status": "proposed",
+      "finding": "E06",
+      "decision_class": "contextual_copy_only",
+      "source_line": 187,
+      "find": "A **Hero** is a player-controlled adventurer and the main unit of campaign progression. A **Hireling** is an allied non-Hero combatant controlled by a party. A **Monster** is a neutral or hostile non-party combatant controlled by Monster AI. A **Summon** is a temporary combatant that their creating rule identifies as a Summon.",
+      "replace": "A **Hero** is a player-controlled adventurer and the main unit of campaign progression. A **Hireling** is an allied non-Hero combatant controlled by a party. A **Monster** is a neutral or hostile non-party combatant controlled by Monster AI. A **Summon** is a temporary combatant that its creating rule identifies as a Summon.",
+      "expected_count": 1
+    },
+    {
+      "id": "PUB-E06b",
+      "status": "proposed",
+      "finding": "E06",
+      "decision_class": "contextual_copy_only",
+      "source_line": 1456,
+      "find": "A combatant is **Engaged** if they are adjacent to at least one enemy.",
+      "replace": "A combatant is **Engaged** if it is adjacent to at least one enemy.",
+      "expected_count": 1
+    },
+    {
+      "id": "PUB-E06c",
+      "status": "proposed",
+      "finding": "E06",
+      "decision_class": "contextual_copy_only",
+      "source_line": 7628,
+      "find": "When a monster activates, first determine their **Primary Target**, applying any **Target Priority** printed in a Scenario-Specific Monster's **AI Steps** before the normal target priorities. Then evaluate the following instructions in order. Re-determine the **Primary Target** if it ceases to be legal. The **Monster** executes the **first valid instruction** and ignores the rest unless a rule explicitly says they continue.",
+      "replace": "When a monster activates, first determine its **Primary Target**, applying any **Target Priority** printed in a Scenario-Specific Monster's **AI Steps** before the normal target priorities. Then evaluate the following instructions in order. Re-determine the **Primary Target** if it ceases to be legal. The **Monster** executes the **first valid instruction** and ignores the rest unless a rule explicitly says it continues.",
+      "expected_count": 1
+    },
+    {
+      "id": "PUB-E07a",
+      "status": "proposed",
+      "finding": "E07",
+      "decision_class": "existing_requirement_reference_alignment",
+      "source_line": 16555,
+      "find": "- **3 Satchel** markers",
+      "replace": "- **3 Satchel** markers or **4** for the **Advanced Ogre** variant",
+      "expected_count": 1
+    },
+    {
+      "id": "PUB-E07b",
+      "status": "proposed",
+      "finding": "E07",
+      "decision_class": "existing_requirement_reference_alignment",
+      "source_line": 16556,
+      "find": "- **3 Monster Entry** markers",
+      "replace": "- **3 Monster Entry** markers or **4** for the **Advanced Ogre** variant",
+      "expected_count": 1
+    }
+  ]
+}
