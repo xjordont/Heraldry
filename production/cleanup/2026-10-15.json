@@ -1,0 +1,86 @@
+{
+  "base_commit": "dbe4701d29cbe2d5c83c3cb41cb28e46c7c17bf8",
+  "authorization": "Owner request 2026-10-15: tidy the repo and delete orphaned or unnecessary parts",
+  "removed_files": [
+    {
+      "path": "editorial/proposals/rc486-scenario-placements.json",
+      "sha256": "f56dc517dbe879ef98f7e9afd4f9cfc8d8c19974685f97304d06c4cc27744b38",
+      "bytes": 1856,
+      "canonical_copy": "editorial/history/RC486.json",
+      "reason": "byte-identical applied proposal already preserved in immutable revision history"
+    },
+    {
+      "path": "editorial/proposals/rc487-audit-repairs.json",
+      "sha256": "aa60bcf36af8d4947689a10ff6acbb9e0f5f91f40c71c286dc32eed487c6e2d2",
+      "bytes": 52940,
+      "canonical_copy": "editorial/history/RC487.json",
+      "reason": "byte-identical applied proposal already preserved in immutable revision history"
+    },
+    {
+      "path": "editorial/proposals/rc488-bestiary-refinements.json",
+      "sha256": "b7b7e55496cd9ac6e2460566cb392089bc0ab1f0195120be811d754f593f6182",
+      "bytes": 4727,
+      "canonical_copy": "editorial/history/RC488.json",
+      "reason": "byte-identical applied proposal already preserved in immutable revision history"
+    },
+    {
+      "path": "editorial/proposals/rc489-audit-proposals.json",
+      "sha256": "283349954125c0d97e23eb2ce87699cb84e653a944d29f7f65dfc2b16a8718ff",
+      "bytes": 10689,
+      "canonical_copy": "editorial/history/RC489.json",
+      "reason": "byte-identical applied proposal already preserved in immutable revision history"
+    },
+    {
+      "path": "editorial/proposals/rc490-tomb-guardian-correction.json",
+      "sha256": "29c3a54a02fa640c8dc1d3e2fcecffff88eac0f4144ea1228ae4321362cedbb1",
+      "bytes": 539,
+      "canonical_copy": "editorial/history/RC490.json",
+      "reason": "byte-identical applied proposal already preserved in immutable revision history"
+    },
+    {
+      "path": "editorial/proposals/rc491-owner-decisions.json",
+      "sha256": "281367bb2bd7123c130d2159e5bb9ba0934402db34a3f8bb9bc4b94d1d68326f",
+      "bytes": 670,
+      "canonical_copy": "editorial/history/RC491.json",
+      "reason": "byte-identical applied proposal already preserved in immutable revision history"
+    },
+    {
+      "path": "editorial/proposals/rc492-owner-decisions.json",
+      "sha256": "163f52e16a2b6c303fcd2bfc5392e13b90c5d7d3c8a0f79a47a9389e8862da62",
+      "bytes": 1048,
+      "canonical_copy": "editorial/history/RC492.json",
+      "reason": "byte-identical applied proposal already preserved in immutable revision history"
+    },
+    {
+      "path": "tools/make_heraldry_marks.py",
+      "sha256": "3124bac0769377ac7dc711320aff972375cddf12c7f2f54c1e47298acfcde662",
+      "bytes": 15207,
+      "reason": "retired hand-drawn marks/coin generator; approved marks use tools/prepare_marks.py"
+    },
+    {
+      "path": "figures/src/.gitignore",
+      "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "bytes": 13,
+      "reason": "root .gitignore already ignores __pycache__ throughout the repository"
+    }
+  ],
+  "unused_typst_definitions": [
+    "heraldry.typ:rule-ink",
+    "heraldry.typ:ring",
+    "heraldry.typ:taper",
+    "heraldry.typ:nb",
+    "heraldry.typ:furniture-font",
+    "heraldry.typ:seg-gap",
+    "heraldry.typ:frame-h",
+    "heraldry.typ:tcell",
+    "templates/system.typ:edge-safe",
+    "templates/system.typ:role-tag"
+  ],
+  "preserved": "All manuscript snapshots, archived patches, unique contradiction proposal, review/release/provenance ledgers, retained artwork/variants/references, and vendored drop-cap code",
+  "local_cache_cleanup": "Not performed: automatic approval review blocked both recursive and nonrecursive bytecode removal; caches retained.",
+  "validation": {
+    "development_check": "PASS: 100 tests, 3 skipped; dependencies, baseline, history, whitespace pass",
+    "removed_file_hashes": "9 base-commit hashes match; 7 canonical archives identical",
+    "publication_build": "not requested or run"
+  }
+}

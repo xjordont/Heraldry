@@ -1,4 +1,4 @@
-# Rules diagrams (RC486)
+# Rules diagrams
 
 Fifty-seven editable SVG diagrams for the Heraldry Skirmish rulebook, generated deterministically from code (stdlib only): FIG-01 to FIG-19 rules diagrams, and FIG-20 to FIG-57 the scenario deployment maps (legend, 36 Core Scenario maps, 10.1 procedural template).
 
@@ -17,7 +17,7 @@ Files
 
 Checks run by `make_figures.py`: geometry and arithmetic assertions behind the manifest's semantic checks, SVG validation (grayscale colours, font size >= 9, stroke >= 0.5, no images or hrefs, widths), and placement validation (block exists in `build/blocks.json`, is a top-level paragraph or list, is not in Appendix C, caption ends with a section reference and has at most 3 sentences).
 
-Visual inspection: `python3 figures/src/test/render.py FIG-01 FIG-02 ...` renders PNGs through Typst into `figures/src/test/` (git-ignored; safe to delete).
+For an owner-requested build, inspect figure placement in the candidate images listed by `production/qa/review/manifest.json` and record actual review under `docs/BUILD_AUTOMATION.md`. Source/SVG/caption semantic-review currency is checked separately by `python tools/figure_review_gate.py --report build/checks/figure-review.json`; this command does not render or approve a figure.
 
 Visual grammar of the rules diagrams FIG-01 to FIG-12 and FIG-17: Party A = black circle; Party B = white circle with centre dot; Monster = hatched hexagon (hatched square for Large); Blocking = solid dark gray; Cover = cross-hatch; Difficult = dot stipple; Impassable = dense diagonal hatch; solid arrow = movement or permitted; dashed = line of sight; dotted = forced movement; arrow ending in X = not permitted; numbered black circles = steps. Diagrams that are not to scale carry "Schematic — not to scale"; inch values shown are only values the source states.
 
