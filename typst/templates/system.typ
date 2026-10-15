@@ -30,7 +30,6 @@
 #let gap = 0.24in
 #let frame-w = page-w - m-in - m-out
 #let col-w = (frame-w - gap) / 2
-#let edge-safe = 0.375in
 
 #let body-size = 11pt                 // owner 2026-10-12: "Let's lock rules at 11pt"
 #let body-lead = 3.55pt               // same proportion as the 10.25 pt setting
@@ -82,11 +81,6 @@
   if body != none { place(center + top, dy: h * 0.15, box(width: w, align(center, body))) }
 })
 
-// Chapter arms: every part of the book bears its own coat of arms, a themed charge on a hatched
-// heraldic field inside an engraved double-bordered shield (drawn by tools/make_heraldry_marks.py):
-// 1 orb, 2 die, 3 hourglass, 4 spurred boot, 5 swords in saltire, 6 war banner, 7 great helm,
-// 8 flame in a brazier, 9 wyvern's head, 10 ruined arch, 11 castle, 12 key, 13 lantern,
-// 14 open book, 15 quill.
 // Chapter arms and the logo: the owner-approved marks (production/art/marks/APPROVED.json), traced by
 // tools/prepare_marks.py onto one shared shield. Owner 2026-10-13: "Make sure they are big enough to see."
 #let arms(n, w: 16pt) = box(baseline: 22%, image(mark("arms-" + (if n < 10 { "0" } else { "" }) + str(n)), width: w))
@@ -415,7 +409,6 @@
   align(center, image(file, width: width)))
 
 // ================================================================ profiles and entries
-#let role-tag(role) = tag(role, size: 6.6pt)
 #let cost-tag(body) = box(fill: ink, inset: (x: 4pt, top: 2.4pt, bottom: 1.8pt), baseline: 0.15em,
   text(font: sans, weight: 700, size: 7.2pt, tracking: 0.08em, fill: paper, body))
 

@@ -49,14 +49,10 @@
 
 // Names kept for the front matter, covers and calibration sheet.
 #let display = goth
-#let rule-ink = ink3
 #let band = tint
-#let ring(size: 7pt, stroke: 0.7pt) = lozenge(size: size * 0.8)
-#let taper(len: 60pt, weight: 1.6pt, dir: 1) = box(width: len, brush(weight: weight, seed: if dir == 1 { 1 } else { 2 }))
 #let motif(len: 54pt) = flourish(len: len)
 
 // ---------------------------------------------------------------- inline helpers
-#let nb(s) = s   // placeholder (no-break handled in generator via U+00A0)
 // Capitals on source text are small caps (smallcaps(all: true)), never upper(): the text layer keeps
 // the source's letters, so reconciliation still matches. The coin mark replaces the source's "c" in tables; the letter stays in the text layer, invisibly,
 // so reconciliation still finds every source cell (a typographic mapping, not a text change).
@@ -101,7 +97,6 @@
 
 // ---------------------------------------------------------------- running furniture
 #let chapter-pages = state("chapter-pages", ())
-#let furniture-font = (font: sans, size: 7.4pt, fill: ink2, tracking: 0.16em)
 
 #let current-heading(level) = {
   // Heading active at top of page; if a heading of that level starts on this page use it.
@@ -265,7 +260,6 @@
 }
 
 // ---------------------------------------------------------------- segments
-#let seg-gap = gap
 #let pm(seg, piece, edge) = context [#metadata((seg: seg, piece: piece, edge: edge, page: here().page(), y: here().position().y.pt(), x: here().position().x.pt())) <pm>]
 
 #let pmx(..args) = none
@@ -281,8 +275,6 @@
 // Height = min over split points k of max(stack(0..k), stack(k..n)): a guaranteed fit,
 // after which Typst's own column flow balances further at line level.
 // ---------------------------------------------------------------- keep units (one-page rule)
-// Usable frame height of an empty page; units no taller than this must stay on one physical page.
-#let frame-h = body-bottom - m-top
 #let umark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), y: here().position().y.pt())) <um-pos>]
 // Column-fit unit: unbreakable inside the two-column flow.
 #let keepcol(body) = {
@@ -395,9 +387,6 @@
 #let hr-ornament(pre: none) = align(center, block(above: 10pt, below: 10pt)[#pre#flourish(len: 40pt)])
 
 // ---------------------------------------------------------------- tables: the ledger
-#let tcell(body, header: false) = {
-  if header { text(font: sans, weight: 700, size: 9.3pt, fill: paper, body) } else { body }
-}
 #let head-cell(h) = text(font: sans, weight: 700, size: 9.3pt, fill: paper,
   coin-text(smallcaps(all: true, h), s: 1.05em, fill: paper))
 

@@ -1,5 +1,7 @@
 # Heraldry atmospheric artwork handoff
 
+Historical handoff, 2026-10-07. The RC485 next-iteration and cover instructions below describe that earlier delivery and are superseded. For current work, read `CLAUDE.md`, `production/STATE.md`, `production/art/SELECTIONS.json`, and `docs/BUILD_AUTOMATION.md`. Preserve this record as provenance for the original twelve masters; do not resume its old task list.
+
 The twelve required native PNG masters were generated and visually reviewed in ChatGPT Work on 2026-10-07 UTC. ART-CH01-001 (Greythorn) is the shared linework anchor. ART-CH04-001 is the correction of the exact owner-selected skeleton image: the third arm was removed.
 
 The master files are in `assets/art/incoming/`. Exact prompts are in `PROMPTS.json`; source lore, hashes, dimensions, alpha information and placement limits are in `ART_MANIFEST.json`. Keep native masters unchanged and make any necessary production derivatives separately.

@@ -29,10 +29,10 @@ Report `inkjet_file_preflight` independently from `physical_inkjet_proof`. The f
 After installing and locking PyMuPDF, run:
 
 ```sh
-python3 tools/verify_inkjet_pdf.py dist/Heraldry_RC###_inkjet-borderless.pdf --report production/inkjet-preflight.json
+python3 tools/verify_inkjet_pdf.py dist/Heraldry_RC###_inkjet-borderless.pdf --report build/checks/inkjet-preflight.json
 ```
 
-The checker covers portrait geometry/boxes, referenced font embedding, minimum type size, text edge safety, and simulated text overscan. Its PASS does not certify source fidelity, background paint, vector-only figures, raster resolution, artwork, all-page visual quality, print marks, or the physical printer. Those require the production evidence and visual gates in MASTER_PROMPT.md. No PDF of the book has been produced by this preparation task.
+The checker covers portrait geometry/boxes, referenced font embedding, minimum type size, text edge safety, and simulated text overscan. Its PASS does not certify source fidelity, background paint, vector-only figures, raster resolution, artwork, all-page visual quality, print marks, or the physical printer. Those require the production evidence and visual gates. The standalone command writes an ignored local report; the requested release pipeline writes its bound report to `production/qa/inkjet-preflight.json`.
 
 Official references checked 2026-10-06:
 
