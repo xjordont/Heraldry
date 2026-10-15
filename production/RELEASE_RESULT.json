@@ -1,9 +1,9 @@
 {
- "ledger_commit": "e74bd8da8d8b7f8c0172db8859b3dc8089b32148",
- "result": "FAILED",
- "note": "step failed: tests, clean build, verify or package (the visual ledger must match this exact PDF)",
- "release_url": "",
- "tag": "",
- "run_url": "https://github.com/xjordont/Heraldry/actions/runs/38661411019",
+ "ledger_commit": "5eebea0ac89a0d0f10728c8e0c19d78e6db38fe0",
+ "result": "RELEASED",
+ "note": "released and verified",
+ "release_url": "https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37",
+ "tag": "RC492-build-37",
+ "run_url": "https://github.com/xjordont/Heraldry/actions/runs/38679644320",
  "physical_print": "NOT TESTED"
 }
