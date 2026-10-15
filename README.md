@@ -5,10 +5,8 @@ The publication repository for the Heraldry Skirmish rulebook. It holds the manu
 ## Current state
 
 - **Manuscript:** RC492 (`source/versions.json`). Earlier snapshots, from the original RC484 onwards, are immutable.
-- **Last requested build:** RC492, 598 interior pages, with the six anchor illustrations of that time placed (the Giant Tarantula has since been sent back for a redo). Evidence and limits are in [production/RELEASE_STATUS.md](production/RELEASE_STATUS.md). Builds happen only when the owner asks.
-- **Illustrations:** 275 planned.
-  - Approved: 142. All earlier images were cleared on 2026-10-12 so every illustration is made the same way.
-  - Queued for generation: 148 of 275 (1 redo first), one generation per item (gritty old-school black ink; skill v8).
+- **Last requested build:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages and 675 digital pages. Later code/workflow changes await the next requested build. Evidence and limits are in [production/RELEASE_STATUS.md](production/RELEASE_STATUS.md).
+- **Illustrations:** all 275 approved; the generation queue is empty.
 - **Physical printing:** NOT TESTED until real sheets are examined.
 
 Running log: [production/STATE.md](production/STATE.md).
@@ -27,16 +25,16 @@ Running log: [production/STATE.md](production/STATE.md).
 
 ## Working on it
 
-**With Claude Code:** select this repository on `main` and describe the change. [CLAUDE.md](CLAUDE.md) is the governing contract. Claude reads it with [docs/WORKFLOW.md](docs/WORKFLOW.md) and `production/STATE.md`, then resumes the existing work. [MASTER_PROMPT.md](MASTER_PROMPT.md) is the standing design and production contract, not a restart instruction.
+**With Codex or Claude Code:** select this repository on `main` and describe the change. Codex is the primary developer and integration owner. [CLAUDE.md](CLAUDE.md) is the governing contract; read it with [docs/WORKFLOW.md](docs/WORKFLOW.md) and `production/STATE.md`, then resume the existing work. [MASTER_PROMPT.md](MASTER_PROMPT.md) is the standing design and production contract, not a restart instruction.
+
+**New manuscript:** supply the complete updated UTF-8 Markdown file. Run `python tools/dev.py manuscript prepare --input "path/to/update.md"`, review its exact diff and affected figures, then explicitly approve its `apply` command. It creates one next RC while retaining every prior version. See [the manuscript update guide](docs/MANUSCRIPT_UPDATES.md). PDF builds remain a separate owner request.
 
 **Illustrations with Codex** (on the owner's PC): give Codex the line in [production/art/codex/CODEX_PROMPT.md](production/art/codex/CODEX_PROMPT.md). Its one-page contract is [BATCH_CARD.md](production/art/codex/BATCH_CARD.md); setup is in [CODEX_RUNBOOK.md](production/art/codex/CODEX_RUNBOOK.md). The pipeline is described in [docs/ART_AUTOMATION.md](docs/ART_AUTOMATION.md).
 
 **Checks** (every change):
 
 ```sh
-python3 -m pip install -r requirements.lock
-python3 tools/preflight.py --baseline --report production/preflight.json
-make test
+python tools/dev.py check
 ```
 
 **Build** (only when the owner asks for a PDF):

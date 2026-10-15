@@ -46,13 +46,18 @@ def _main_commit(root: Path) -> str:
     return head
 
 
-def require_clean_main(root: Path) -> str:
-    """Refuse before file mutation unless main is clean and equals fetched origin/main."""
+def require_current_main(root: Path, allowed_changes=()) -> str:
+    """Require fetched current main; optionally admit explicitly bound companion edits."""
     root = Path(root).resolve()
     head = _main_commit(root)
-    if _changed_paths(root):
-        raise PublishError("publication requires a clean working tree and index; preserve or finish existing work first")
+    if _changed_paths(root) - set(allowed_changes):
+        raise PublishError("publication requires a clean working tree and index outside its allowed companion files; preserve or finish existing work first")
     return head
+
+
+def require_clean_main(root: Path) -> str:
+    """Refuse before file mutation unless main is clean and equals fetched origin/main."""
+    return require_current_main(root)
 
 
 def find_make(root: Path) -> str:
