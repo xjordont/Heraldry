@@ -9,11 +9,6 @@ on:
   push:
     branches: [main]
     paths: ['production/qa/visual-review.json']
-  # The release follows the visual review: Claude Code pushes production/qa/visual-review.json bound to a candidate's exact
-  # PDF (docs/BUILD_AUTOMATION.md). The bot's own ledger commits use GITHUB_TOKEN and never start this workflow again.
-  push:
-    branches: [main]
-    paths: ['production/qa/visual-review.json']
 permissions:
   contents: read
 concurrency:
@@ -106,7 +101,7 @@ jobs:
           git commit -m "Rebuild verified $VERSION delivery"
           git push origin HEAD:main
       - name: Record the release result on main
-        if: always() && github.event_name == 'push'
+        if: always()
         run: |
           python tools/release_result.py --ledger-commit "$GITHUB_SHA" \
             --failed-step "${{ steps.build.outcome == 'failure' && 'tests, clean build, verify or package (the visual ledger must match this exact PDF)' || steps.release.outcome == 'failure' && 'publish release' || '' }}" \
