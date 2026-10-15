@@ -2,6 +2,8 @@
 
 `CLAUDE.md` is the governing contract for every agent. Read it, `production/STATE.md`, `docs/WORKFLOW.md`, and `docs/BUILD_AUTOMATION.md` before continuing work.
 
+Ordinary development starts with `python tools/dev.py check`; `doctor` checks the installed environment, and `status` reports Git and last-release state. These commands do not build the book or publish. Use the current build card only when the owner requests a build.
+
 ## Codex role (owner handoff, 2026-10-15)
 
 Codex is the primary developer and integration owner across manuscript tooling, artwork, figures, layout, tests, documentation, and releases. This supersedes the former art-worker-only role and restricted build-orchestrator carve-out. Continue authorized work and repair build failures within the governing contract; substantive rules ambiguities still require an owner decision.

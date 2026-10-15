@@ -20,13 +20,15 @@ import sys
 import time
 from pathlib import Path
 
+from git_publish import PublishError, publish_files, require_clean_main
+
 ROOT = Path(__file__).resolve().parents[1]
 REQUEST = "production/build-request.json"
 STATUS = "production/BUILD_STATUS.json"
 
 
 def git(*a, check=True):
-    r = subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True)
+    r = subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if check and r.returncode:
         raise SystemExit(f"git {' '.join(a)} failed: {(r.stderr or r.stdout).strip()}")
     return r.stdout.strip()
@@ -35,13 +37,10 @@ def git(*a, check=True):
 def problems():
     """Reasons main is not ready for a candidate build (empty list when ready)."""
     out = []
-    if git("rev-parse", "--abbrev-ref", "HEAD") != "main":
-        out.append("not on main")
-    if git("status", "--porcelain"):
-        out.append("working tree is not clean")
-    git("fetch", "origin", "main")
-    if git("rev-parse", "HEAD") != git("rev-parse", "origin/main"):
-        out.append("local main differs from origin/main (pull --ff-only first, or ship unsent work)")
+    try:
+        require_clean_main(ROOT)
+    except PublishError as exc:
+        out.append(str(exc))
     sels = json.loads((ROOT / "production/art/SELECTIONS.json").read_text(encoding="utf-8"))
     not_ok = sorted(k for k, v in sels.items() if v.get("status") not in ("approved", "anchor-approved"))
     if not_ok:
@@ -49,7 +48,8 @@ def problems():
     queue = json.loads((ROOT / "production/art/gpt/QUEUE.json").read_text(encoding="utf-8"))
     if queue.get("count"):
         out.append(f"the art queue still holds {queue['count']} items")
-    r = subprocess.run([sys.executable, "tools/preflight.py"], cwd=ROOT, capture_output=True, text=True)
+    r = subprocess.run([sys.executable, "tools/preflight.py"], cwd=ROOT, capture_output=True,
+                       text=True, encoding="utf-8", errors="replace")
     if r.returncode:
         out.append("tools/preflight.py failed: " + (r.stdout + r.stderr).strip().splitlines()[-1][:200])
     return out
@@ -66,21 +66,19 @@ def cmd_request(a):
     if p:
         print("NOT READY:\n- " + "\n- ".join(p))
         return 2
-    now = datetime.datetime.now(datetime.timezone.utc)
-    rid = now.strftime("%Y%m%dT%H%M%SZ")
-    (ROOT / REQUEST).write_text(json.dumps({"request_id": rid, "requested_at": now.isoformat(timespec="seconds"),
-                                            "requested_by": "codex", "base_commit": git("rev-parse", "HEAD")}, indent=1) + "\n")
-    git("add", REQUEST)
-    git("commit", "-m", f"build: request candidate build {rid}")
-    for wait in (0, 3, 6, 12):
-        time.sleep(wait)
-        r = subprocess.run(["git", "push", "origin", "main"], cwd=ROOT, capture_output=True, text=True)
-        if r.returncode == 0:
-            print(f"request {rid} pushed at {git('rev-parse', 'HEAD')}")
-            return 0
-        git("pull", "--rebase", "origin", "main", check=False)
-    print("push failed: " + r.stderr.strip())
-    return 2
+    try:
+        base = require_clean_main(ROOT)
+        now = datetime.datetime.now(datetime.timezone.utc)
+        rid = now.strftime("%Y%m%dT%H%M%SZ")
+        (ROOT / REQUEST).write_text(json.dumps({"request_id": rid, "requested_at": now.isoformat(timespec="seconds"),
+                                                "requested_by": "codex", "base_commit": base}, indent=1) + "\n",
+                                    encoding="utf-8")
+        commit = publish_files(ROOT, [REQUEST], f"build: request candidate build {rid}", base)
+    except PublishError as exc:
+        print("REFUSED: " + str(exc))
+        return 2
+    print(f"request {rid} pushed at {commit}")
+    return 0
 
 
 def read_status():

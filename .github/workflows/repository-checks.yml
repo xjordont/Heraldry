@@ -10,9 +10,18 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: repository-checks-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+env:
+  PYTHONUTF8: '1'
 jobs:
   manuscript-and-workflow:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -21,8 +30,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.lock
       - name: Install locked dependencies
         run: python -m pip install -r requirements.lock
+      - name: Check locked dependencies and native imports
+        run: python tools/check_dependencies.py --ci
       - name: Test the artwork skill
         # the skill ZIP and the offline package are build outputs: the repository tests build and validate fresh copies
         run: python -m unittest discover -s production/art/skill/heraldry-classic-ink-art/tests -p 'test_*.py'
@@ -31,6 +44,7 @@ jobs:
       - name: Check revision and failure gates
         run: python -m unittest discover -s tests
       - name: Protect prior snapshots and revision records
+        shell: bash
         env:
           BASE_REF: ${{ github.event.before || github.event.pull_request.base.sha }}
         run: |

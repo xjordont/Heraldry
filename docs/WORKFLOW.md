@@ -4,6 +4,12 @@
 
 Before editing, inspect `git status`, the current branch, and the remote main head. Bring an untouched checkout up to date with `git fetch origin` and `git switch main`, then `git pull --ff-only`. Preserve unrelated local work and inspect divergence rather than force-pushing or resetting it. Claude cloud may impose its own branch restrictions; report an actual restriction if encountered. Do not invent an exception to this policy or change account settings.
 
+## Routine development
+
+Run `python tools/dev.py check` after syncing and before publishing an ordinary iteration. It selects the project Python environment, checks every locked version and import, runs baseline preflight and snapshot-history protection against the local `origin/main` tracking ref, checks whitespace, and runs `make test`. Use `--base <commit>` when a different confirmed history boundary is required. `doctor` checks only the environment; `status` shows local Git state and the last requested release. These commands do not fetch, build the book, edit release ledgers, commit, or push. Their reports live in ignored `build/checks/`.
+
+The build-request and visual-review publishing helpers require a clean, current main before writing. They rerun `make test`, recheck main and the exact allowed files, and commit only their own request or ledger. Keep review records outside the checkout, such as `C:/Heraldry/art-scratch/review.json`. A rejected push preserves the local commit and stops for inspection; no automatic pull, rebase, reset, or force-push occurs.
+
 ## Four work tracks
 
 | Track | Authoritative files | Version and review |
@@ -47,7 +53,7 @@ Example patch:
 
 ## Build and evidence
 
-**Build on request only** (owner decision 2026-10-11). A change does not trigger a new layout or PDF. Commit it with `make test` and its own track's checks: revision tool, art intake and approval, figure semantic review, skill and package tests. The PDFs in `dist/`, `production/qa/` and the visual ledger stay bound to the last requested build. Reports and `production/RELEASE_STATUS.md` must say when the source has moved past that build, and must never present those PDFs as current. The `Rebuild verified delivery` workflow is manual (workflow_dispatch) and runs only on an owner request. Work in the book's own build pipeline, such as typst, layout or pagination repairs, may of course build and inspect locally while doing that requested work.
+**Build on request only** (owner decision 2026-10-11). A change does not trigger a new layout or PDF. Commit it with `make test` and its own track's checks: revision tool, art intake and approval, figure semantic review, skill and package tests. The PDFs in `dist/`, `production/qa/` and the visual ledger stay bound to the last requested build. Reports and `production/RELEASE_STATUS.md` must say when the source has moved past that build, and must never present those PDFs as current. The candidate starts from an owner-requested `production/build-request.json` push; `Rebuild verified delivery` follows a bound visual-review push or an owner-requested manual dispatch. Work in the book's own build pipeline, such as typst, layout or pagination repairs, may build and inspect locally while doing that requested work; the standard Codex route uses GitHub.
 
 When the owner asks for a build, a new PDF or a layout pass: run `make test`, then `make clean all verify package`. A new PDF deliberately fails the visual-review currency gate until the actual page inspection is recorded; inspect it, update the ledger, then run `make verify package` again. `make all` builds and exports the six current PDFs; verification uses fresh reports, isolated Typst queries and a fingerprint of source, fonts, code, templates and assets. `make package` requires matching passing checks and creates the specimen from the current table page map before packing.
 

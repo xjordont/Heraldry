@@ -6,6 +6,8 @@ Tooling update, 2026-10-15: manuscript/preflight UTF-8 handling, review gates, W
 
 Dependency audit, 2026-10-15: the Windows virtual environment matches all 9 locked packages, including newly declared cover/mark authoring dependencies NumPy and potracer. Runtime smoke checks pass; `BUILD.md` records the explicit Windows commands. This lock update has not triggered a publication build or replaced build 37's evidence.
 
+Workflow refinement, 2026-10-15: developer checks now use `python tools/dev.py check` and write only ignored local diagnostics. CI adds Windows coverage, dependency checks/caching, a shared publishing queue, strict candidate gating, and compact failure artifacts. Request/review helpers test and scope their commits without automatic rebasing. Production build/QA records below still describe build 37; no new publication build was requested for these changes.
+
 Latest requested delivery: [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), built from `5eebea0ac89a0d0f10728c8e0c19d78e6db38fe0`. `production/RELEASE_RESULT.json` records RELEASED; `dist/RELEASE.json` lists all 10 assets and SHA-256 hashes. The release contains six edition/cover/calibration PDFs, the specimen PDF, release ZIP, SHA256SUMS, and print instructions. Interiors: 672 pages each; digital: 675 pages. All 275 illustrations are approved and the art queue is empty. This documentation handoff does not rebuild or change the manuscript, artwork, layout, or released files.
 
 | Area | Current release evidence |

@@ -12,8 +12,10 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: verified-delivery-main
+  group: publication-main
   cancel-in-progress: false
+env:
+  PYTHONUTF8: '1'
 jobs:
   rebuild:
     if: github.ref == 'refs/heads/main'
@@ -48,7 +50,9 @@ jobs:
       - name: Check reviewed artwork masters
         run: python tools/check_art.py
       - name: Install locked publishing dependencies
-        run: python -m pip install -r requirements.lock
+        run: |
+          python -m pip install -r requirements.lock
+          python tools/check_dependencies.py --publish
       - name: Protect prior manuscript snapshots and evidence
         env:
           BASE_REF: ${{ github.event.before }}
@@ -58,7 +62,7 @@ jobs:
           fi
       - name: Rebuild and verify against the committed review ledger
         id: build
-        run: make test clean all verify package
+        run: make PY=python test clean all verify package
       - name: Publish the PDFs as a GitHub Release
         id: release
         shell: bash
@@ -111,3 +115,22 @@ jobs:
             --job-status "${{ job.status }}" \
             --failed-step "${{ steps.build.outcome == 'failure' && 'tests, clean build, verify or package (the visual ledger must match this exact PDF)' || steps.release.outcome == 'failure' && 'publish release' || steps.ledgers.outcome == 'failure' && 'commit verification ledgers' || '' }}" \
             --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" --push
+      - name: Preserve compact delivery diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: delivery-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 14
+          if-no-files-found: warn
+          # Explicit ledger snapshots only; a failed early step can leave a previous committed ledger.
+          # The job outcome and RELEASE_RESULT identify this run. Never upload private references or PDF/image bytes.
+          path: |
+            production/RELEASE_RESULT.json
+            dist/RELEASE.json
+            production/preflight.json
+            production/build-provenance.json
+            production/qa/STATUS.json
+            production/qa/keep-audit.json
+            production/qa/layout.json
+            production/qa/figure-review-gate.json
+            production/qa/package-audit.json

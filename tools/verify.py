@@ -11,6 +11,7 @@ DIST = ROOT / "dist"
 PY = sys.executable
 from manuscript import version
 from provenance import check as check_provenance
+from qa_contract import MANDATORY_CHECKS
 QUERY_CACHE = None
 
 
@@ -179,10 +180,7 @@ def main():
     applied = load_json(ROOT / "build/blocks.json") or {}
     st["editorial_patches"] = "PASS" if declared == applied.get("patches_applied", []) else "FAIL"
 
-    mandatory = ["one_page_keeps", "visual_review_currency", "monster_references", "build_provenance", "editorial_patches", "source_preflight", "source_integrity", "reconciliation", "reconciliation_digital",
-                 "layout_detectors", "inkjet_checker_cream", "inkjet_checker_white", "print_supplementary", "no_duplicate_tables_figures", "xref_audit", "table_audit", "index_audit", "figures_placed",
-                 "figure_semantic_review"]
-    failed = [k for k in mandatory if st.get(k) != "PASS"]
+    failed = [k for k in MANDATORY_CHECKS if st.get(k) != "PASS"]
     out = {"provenance": provenance, "checks": st, "mandatory_failed": failed, "release_gate": "PASS" if not failed else "FAIL",
            "not_covered_here": ["all-page visual inspection (production/qa/visual-review.json)",
                                "diagram semantic correctness beyond the hash-bound review record (production/qa/figure-semantic-review.json)",

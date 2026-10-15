@@ -5,11 +5,13 @@ DIST := dist
 B := build
 
 .NOTPARALLEL:
-.PHONY: all deps fonts parse figures book release-files print print-white digital covers calibration specimen verify package clean test art-packages
+.PHONY: all deps doctor check status fonts parse figures book release-files print print-white digital covers calibration specimen verify package clean test art-packages
 all: release-files
 
 deps:
 	$(PY) -m pip install -r requirements.lock
+doctor check status:
+	$(PY) tools/dev.py $@ --python $(PY)
 fonts:
 	$(PY) tools/make_fonts.py
 parse:
