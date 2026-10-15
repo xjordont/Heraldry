@@ -1,32 +1,32 @@
 {
- "tag": "RC492-build-24",
- "url": "https://github.com/xjordont/Heraldry/releases/tag/RC492-build-24",
- "source_commit": "e5041dba38f549d10b25b7c8c45719305700002d",
+ "tag": "RC492-build-37",
+ "url": "https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37",
+ "source_commit": "5eebea0ac89a0d0f10728c8e0c19d78e6db38fe0",
  "assets": [
   {
    "name": "Heraldry_RC492_covers-front-back-white.pdf",
-   "bytes": 805656,
-   "sha256": "dd2d266b334dc0da8cc480d2ded6f1af7f3432847b8ece3de27960157abf1874"
+   "bytes": 4246081,
+   "sha256": "a3fa906543dba5da083dfb68fd33b897ac82a90ce641801626fb9f64999103a0"
   },
   {
    "name": "Heraldry_RC492_covers-front-back.pdf",
-   "bytes": 805737,
-   "sha256": "d94fecc375b5eced411ab44835d616002d17dcd0b602e6abb04c056b807c82f9"
+   "bytes": 4246146,
+   "sha256": "f496c129176ee3d543100347e64b028e7fc7c530c0e6a05ff20178a6cab087a9"
   },
   {
    "name": "Heraldry_RC492_digital.pdf",
-   "bytes": 132554849,
-   "sha256": "266238300f2eb561944208a3148b5f6e2d2562367fb6ce9e8674b89414cfb432"
+   "bytes": 152931880,
+   "sha256": "bc53109ef539e3ac21c8bd37f342ca1abb01b28a6544909f0f22fb5373ee879b"
   },
   {
    "name": "Heraldry_RC492_inkjet-borderless-white.pdf",
-   "bytes": 131737598,
-   "sha256": "abd25c7e202e6c2efdb91ad1fd31b9a76b98a776655910da1f4c47de3f8b2e0c"
+   "bytes": 148680881,
+   "sha256": "53885dc43b4bbbad156910fc985f6487aee938c3bef683c9f58921094658ceb9"
   },
   {
    "name": "Heraldry_RC492_inkjet-borderless.pdf",
-   "bytes": 131777609,
-   "sha256": "e5dfc3c632ad27fa28148564c575c94c23066a74a52b07d08d1f58798428b4d2"
+   "bytes": 148711078,
+   "sha256": "10e4f8bea8cff69404a6ee1385077e0533b767ff1815714cd0b2532e245a8e78"
   },
   {
    "name": "Heraldry_RC492_inkjet-calibration.pdf",
@@ -35,18 +35,18 @@
   },
   {
    "name": "Heraldry_RC492_specimen.pdf",
-   "bytes": 2719237,
-   "sha256": "72ab3d6df199257eed62382db9fae71de714dcf259e4581d9e595edc98666e29"
+   "bytes": 4054703,
+   "sha256": "1f59211a05e39cb52fffe47c36a400c5cd506952eaf773ab95fad6a8a9861a69"
   },
   {
    "name": "Heraldry_RC492_release.zip",
-   "bytes": 500396848,
-   "sha256": "7cffed38e119ebac09661f6cc0aeef24213a842d4b6f26e1c56eb3bc127444e6"
+   "bytes": 633046670,
+   "sha256": "3b29c62cb1ddc72888da05a22e3750fd7fcaafe57a22fca9ea64559f14ed924d"
   },
   {
    "name": "SHA256SUMS.txt",
-   "bytes": 70265,
-   "sha256": "1dad81d9988d4f96937bdab135f841326d39aa48a8bfc59a7b2bb06cc689f043"
+   "bytes": 72524,
+   "sha256": "c2a31ae9874ad674e8211232e16850ea02428c3a0a1d80e8684492e8c77cbaa1"
   },
   {
    "name": "PRINT_INSTRUCTIONS.md",

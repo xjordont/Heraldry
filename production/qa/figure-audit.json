@@ -2,343 +2,343 @@
  {
   "id": "FIG-01",
   "placed": true,
-  "folio": "43",
+  "folio": "47",
   "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
  },
  {
   "id": "FIG-02",
   "placed": true,
-  "folio": "46",
+  "folio": "50",
   "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
  },
  {
   "id": "FIG-03",
   "placed": true,
-  "folio": "71",
+  "folio": "75",
   "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
  },
  {
   "id": "FIG-04",
   "placed": true,
-  "folio": "25",
+  "folio": "29",
   "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
  },
  {
   "id": "FIG-05",
   "placed": true,
-  "folio": "59",
+  "folio": "63",
   "semantic_status": "revised after audit: major fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
  },
  {
   "id": "FIG-06",
   "placed": true,
-  "folio": "67",
+  "folio": "71",
   "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
  },
  {
   "id": "FIG-07",
   "placed": true,
-  "folio": "34",
+  "folio": "38",
   "semantic_status": "aligned to editorial patches 2026-10-06"
  },
  {
   "id": "FIG-08",
   "placed": true,
-  "folio": "31",
+  "folio": "35",
   "semantic_status": "aligned to editorial patches 2026-10-06"
  },
  {
   "id": "FIG-09",
   "placed": true,
-  "folio": "61",
+  "folio": "65",
   "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
  },
  {
   "id": "FIG-10",
   "placed": true,
-  "folio": "269",
+  "folio": "275",
   "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
  },
  {
   "id": "FIG-11",
   "placed": true,
-  "folio": "272",
+  "folio": "278",
   "semantic_status": "semantic review complete (author); visual inspection of rendered PNG done"
  },
  {
   "id": "FIG-12",
   "placed": true,
-  "folio": "274",
+  "folio": "280",
   "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
  },
  {
   "id": "FIG-13",
   "placed": true,
-  "folio": "401",
+  "folio": "407",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-14",
   "placed": true,
-  "folio": "402",
+  "folio": "408",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-15",
   "placed": true,
-  "folio": "469",
+  "folio": "477",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-16",
   "placed": true,
-  "folio": "440",
+  "folio": "446",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-17",
   "placed": true,
-  "folio": "543",
+  "folio": "557",
   "semantic_status": "revised after audit: minor fixed; independent audit findings addressed; geometry/arithmetic selfcheck and render re-run"
  },
  {
   "id": "FIG-18",
   "placed": true,
-  "folio": "582",
+  "folio": "598",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-19",
   "placed": true,
-  "folio": "607",
+  "folio": "623",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-20",
   "placed": true,
-  "folio": "435",
+  "folio": "441",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-21",
   "placed": true,
-  "folio": "437",
+  "folio": "443",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-22",
   "placed": true,
-  "folio": "439",
+  "folio": "445",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-23",
   "placed": true,
-  "folio": "442",
+  "folio": "448",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-24",
   "placed": true,
-  "folio": "445",
+  "folio": "451",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-25",
   "placed": true,
-  "folio": "447",
+  "folio": "454",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-26",
   "placed": true,
-  "folio": "450",
+  "folio": "457",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-27",
   "placed": true,
-  "folio": "453",
+  "folio": "460",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-28",
   "placed": true,
-  "folio": "455",
+  "folio": "462",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-29",
   "placed": true,
-  "folio": "456",
+  "folio": "465",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-30",
   "placed": true,
-  "folio": "459",
+  "folio": "467",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-31",
   "placed": true,
-  "folio": "461",
+  "folio": "469",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-32",
   "placed": true,
-  "folio": "463",
+  "folio": "472",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-33",
   "placed": true,
-  "folio": "466",
+  "folio": "474",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-34",
   "placed": true,
-  "folio": "468",
+  "folio": "476",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-35",
   "placed": true,
-  "folio": "472",
+  "folio": "480",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-36",
   "placed": true,
-  "folio": "475",
+  "folio": "483",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-37",
   "placed": true,
-  "folio": "477",
+  "folio": "485",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-38",
   "placed": true,
-  "folio": "479",
+  "folio": "488",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-39",
   "placed": true,
-  "folio": "482",
+  "folio": "491",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-40",
   "placed": true,
-  "folio": "484",
+  "folio": "493",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-41",
   "placed": true,
-  "folio": "486",
+  "folio": "495",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-42",
   "placed": true,
-  "folio": "488",
+  "folio": "497",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-43",
   "placed": true,
-  "folio": "490",
+  "folio": "500",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-44",
   "placed": true,
-  "folio": "492",
+  "folio": "503",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-45",
   "placed": true,
-  "folio": "494",
+  "folio": "505",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-46",
   "placed": true,
-  "folio": "497",
+  "folio": "508",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-47",
   "placed": true,
-  "folio": "499",
+  "folio": "510",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-48",
   "placed": true,
-  "folio": "501",
+  "folio": "512",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-49",
   "placed": true,
-  "folio": "504",
+  "folio": "515",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-50",
   "placed": true,
-  "folio": "507",
+  "folio": "518",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-51",
   "placed": true,
-  "folio": "510",
+  "folio": "521",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-52",
   "placed": true,
-  "folio": "512",
+  "folio": "523",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-53",
   "placed": true,
-  "folio": "514",
+  "folio": "526",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-54",
   "placed": true,
-  "folio": "516",
+  "folio": "529",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  },
  {
   "id": "FIG-55",
   "placed": true,
-  "folio": "518",
+  "folio": "532",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-56",
   "placed": true,
-  "folio": "521",
+  "folio": "535",
   "semantic_status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review"
  },
  {
   "id": "FIG-57",
   "placed": true,
-  "folio": "403",
+  "folio": "409",
   "semantic_status": "unified iconography 2026-10-07, pending independent review"
  }
 ]
