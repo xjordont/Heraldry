@@ -72,6 +72,7 @@ jobs:
           fi
           VERSION=$(python tools/manuscript.py --version)
           TAG="$VERSION-build-$GITHUB_RUN_NUMBER"
+          if [ "${GITHUB_RUN_ATTEMPT:-1}" != "1" ]; then TAG="$TAG-attempt-$GITHUB_RUN_ATTEMPT"; fi
           shopt -s nullglob
           ASSETS=(dist/Heraldry_"$VERSION"_*.pdf dist/specimen/Heraldry_"$VERSION"_*.pdf dist/Heraldry_"$VERSION"_release.zip dist/SHA256SUMS.txt dist/PRINT_INSTRUCTIONS.md)
           gh release create "$TAG" "${ASSETS[@]}" --target "$GITHUB_SHA" --title "Heraldry $VERSION (build $GITHUB_RUN_NUMBER)" \
@@ -87,6 +88,7 @@ jobs:
                           "sha256": hashlib.sha256(Path(f).read_bytes()).hexdigest()} for f in files]}, indent=1) + "\n")
           PY
       - name: Commit the verification ledgers to main
+        id: ledgers
         shell: bash
         run: |
           # PDFs and ZIPs are gitignored: only ledgers, provenance and the release pointer are committed.
@@ -103,12 +105,9 @@ jobs:
       - name: Record the release result on main
         if: always()
         run: |
-          python tools/release_result.py --ledger-commit "$GITHUB_SHA" \
-            --failed-step "${{ steps.build.outcome == 'failure' && 'tests, clean build, verify or package (the visual ledger must match this exact PDF)' || steps.release.outcome == 'failure' && 'publish release' || '' }}" \
-            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add production/RELEASE_RESULT.json
-          git commit -m "Release result for $GITHUB_SHA" || exit 0
-          for i in 1 2 3 4; do git push origin HEAD:main && exit 0; git pull --rebase --autostash origin main; sleep $((i * 5)); done
-          exit 1
+          python tools/release_result.py --ledger-commit "$GITHUB_SHA" \
+            --job-status "${{ job.status }}" \
+            --failed-step "${{ steps.build.outcome == 'failure' && 'tests, clean build, verify or package (the visual ledger must match this exact PDF)' || steps.release.outcome == 'failure' && 'publish release' || steps.ledgers.outcome == 'failure' && 'commit verification ledgers' || '' }}" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" --push

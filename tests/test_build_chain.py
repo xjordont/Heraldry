@@ -1,4 +1,8 @@
 import json, sys, tempfile, unittest
+import os
+import re
+import shutil
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -68,6 +72,28 @@ class BuildChain(unittest.TestCase):
         import ast
         mods = {n.names[0].name.split(".")[0] for n in ast.walk(ast.parse((ROOT / "tools/build_request.py").read_text())) if isinstance(n, ast.Import)}
         self.assertLessEqual(mods, set(sys.stdlib_module_names))
+
+    def test_workflow_reruns_use_distinct_release_tags(self):
+        bash = shutil.which("bash")
+        if not bash and os.name == "nt":
+            candidate = Path(os.environ.get("ProgramFiles", "C:/Program Files")) / "Git/bin/bash.exe"
+            bash = str(candidate) if candidate.is_file() else None
+        if not bash:
+            self.skipTest("Bash is needed to exercise the workflows' release tag commands")
+        for filename, kind in (("build-candidate.yml", "candidate"), ("rebuild-delivery.yml", "build")):
+            workflow = (ROOT / ".github/workflows" / filename).read_text(encoding="utf-8")
+            script = re.search(r"(?ms)^          (TAG=.*?)^          shopt", workflow).group(1)
+            tags = []
+            for attempt in (1, 2, 3):
+                with self.subTest(workflow=filename, attempt=attempt):
+                    env = dict(os.environ, VERSION="RC492", GITHUB_RUN_NUMBER="37", GITHUB_RUN_ATTEMPT=str(attempt))
+                    result = subprocess.run([bash, "-c", 'set -eu\n' + script + '\nprintf "%s" "$TAG"'],
+                                            env=env, capture_output=True, text=True, encoding="utf-8")
+                    self.assertEqual(result.returncode, 0, result.stderr)
+                    tags.append(result.stdout)
+            self.assertEqual(tags[0], f"RC492-{kind}-37")
+            self.assertEqual(tags[1:], [f"RC492-{kind}-37-attempt-2", f"RC492-{kind}-37-attempt-3"])
+            self.assertEqual(len(set(tags)), 3)
 
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ def sha256(path):
 
 
 def load(root=ROOT):
-    return json.loads((Path(root) / "source/versions.json").read_text())
+    return json.loads((Path(root) / "source/versions.json").read_text(encoding="utf-8"))
 
 
 def active(root=ROOT):
@@ -53,7 +53,7 @@ def check(root=ROOT):
         if previous:
             parent_text = (root / previous["path"]).read_text(encoding="utf-8")
             rebuilt = parent_text
-            evidence = json.loads((root / r["patch_file"]).read_text())
+            evidence = json.loads((root / r["patch_file"]).read_text(encoding="utf-8"))
             patches = evidence["patches"]
             if [p["id"] for p in patches] != r["patch_ids"] or not patches:
                 raise ValueError("Revision patch IDs differ from its evidence")
@@ -73,10 +73,10 @@ def check(root=ROOT):
     current = revisions[-1]
     if m["current"] != current["number"]:
         raise ValueError("Current revision is not the newest snapshot")
-    c = json.loads((root / "config/production.json").read_text())
+    c = json.loads((root / "config/production.json").read_text(encoding="utf-8"))
     if c["source"] != current["path"] or c["verified_publication_metadata"]["version"] != f"Release Candidate {current['number']} (RC{current['number']})":
         raise ValueError("Production configuration differs from revision registry")
-    patches = json.loads((root / "editorial/patches.json").read_text())
+    patches = json.loads((root / "editorial/patches.json").read_text(encoding="utf-8"))
     if patches.get("patches"):
         raise ValueError("Publication-only text patches are disabled; promote them to a new manuscript revision")
     return current
