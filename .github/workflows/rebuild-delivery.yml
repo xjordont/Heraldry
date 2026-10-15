@@ -35,8 +35,8 @@ jobs:
         # Only the twelve atmospheric masters and the ink derivatives: generated natives are not build inputs.
         run: |
           mkdir -p build      # gitignored; hashFiles only sees files inside the workspace
-          echo 'LFS_ART=assets/art/incoming/ART-CH*-001.png,assets/art/incoming/ART-COVER-001.png,assets/art/ink/*.png,assets/art/cover/front.png' >> "$GITHUB_ENV"
-          git lfs ls-files -l -I 'assets/art/incoming/ART-CH*-001.png,assets/art/incoming/ART-COVER-001.png,assets/art/ink/*.png,assets/art/cover/front.png' | cut -d' ' -f1 | sort > build/lfs-art.txt
+          echo 'LFS_ART=assets/art/incoming/ART-CH*-001.png,assets/art/incoming/ART-COVER-001.png,assets/art/ink/*.png,assets/art/cover/front.png,assets/art/cover/front-owner.jpg' >> "$GITHUB_ENV"
+          git lfs ls-files -l -I 'assets/art/incoming/ART-CH*-001.png,assets/art/incoming/ART-COVER-001.png,assets/art/ink/*.png,assets/art/cover/front.png,assets/art/cover/front-owner.jpg' | cut -d' ' -f1 | sort > build/lfs-art.txt
       - name: Reuse artwork fetched by earlier builds
         uses: actions/cache@v4
         with:
