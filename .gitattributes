@@ -1,4 +1,7 @@
 # Owner-authorized originals use Git LFS.
+# Immutable manuscript bytes and archived patch evidence must survive every checkout unchanged.
+source/*.md -text
+editorial/history/*.json -text
 references/private/pdfs/*.pdf filter=lfs diff=lfs merge=lfs -text
 assets/art/incoming/*.png filter=lfs diff=lfs merge=lfs -text
 assets/art/incoming/*.jpg filter=lfs diff=lfs merge=lfs -text

@@ -24,9 +24,10 @@ import argparse
 import datetime
 import hashlib
 import json
-import subprocess
 import sys
 from pathlib import Path
+
+from git_publish import PublishError, publish_files, require_clean_main
 
 ROOT = Path(__file__).resolve().parents[1]
 REVIEW = ROOT / "production/qa/review"
@@ -168,21 +169,21 @@ def main():
         "status": "PASS (all-page contact-sheet review of this exact PDF by an automated vision reviewer; not glyph-level proofreading)",
         "changes_this_run": [f"candidate build {st.get('request_id')} from {st.get('source_commit')}"],
     }
+    base = None
+    if a.push:
+        try:
+            base = require_clean_main(ROOT)
+        except PublishError as exc:
+            fail(str(exc))
     (ROOT / "production/qa/visual-review.json").write_text(json.dumps(ledger, indent=1) + "\n", encoding="utf-8")
     print(f"bound: {man['pdf']} sha256 {man['pdf_sha256'][:12]}..., {man['pages']} pages, {len(minor)} minor notes")
     if a.push:
-        def git(*x):
-            return subprocess.run(["git", *x], cwd=ROOT, capture_output=True, text=True)
-        git("add", "production/qa/visual-review.json")
-        r = git("commit", "-m", f"review: bind the all-page visual review for candidate {st.get('request_id')}")
-        if r.returncode:
-            fail("commit failed: " + r.stderr.strip())
-        for _ in range(4):
-            if git("push", "origin", "main").returncode == 0:
-                print("ledger commit " + git("rev-parse", "HEAD").stdout.strip())
-                return
-            git("pull", "--rebase", "origin", "main")
-        fail("push failed")
+        try:
+            commit = publish_files(ROOT, ["production/qa/visual-review.json"],
+                                   f"review: bind the all-page visual review for candidate {st.get('request_id')}", base)
+        except PublishError as exc:
+            fail(str(exc))
+        print("ledger commit " + commit)
 
 
 if __name__ == "__main__":

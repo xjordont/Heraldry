@@ -8,21 +8,41 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 import build_status  # noqa: E402
+from qa_contract import MANDATORY_CHECKS  # noqa: E402
+
+
+def verification_status(*failed):
+    return {
+        "checks": {name: "FAIL" if name in failed else "PASS" for name in MANDATORY_CHECKS},
+        "mandatory_failed": list(failed),
+        "release_gate": "FAIL" if failed else "PASS",
+    }
+
+
+def workflow(name):
+    return (ROOT / ".github/workflows" / name).read_text(encoding="utf-8")
+
+
+def step_with_id(text, step_id):
+    for step in re.split(r"(?m)^      - ", text)[1:]:
+        if re.search(rf"(?m)^        id: {re.escape(step_id)}$", step):
+            return step
+    raise AssertionError(f"workflow step {step_id!r} not found")
 
 
 class BuildChain(unittest.TestCase):
     def test_visual_review_alone_makes_a_candidate(self):
-        r, failed, _ = build_status.evaluate({"mandatory_failed": ["visual_review_currency"]}, "")
+        r, failed, _ = build_status.evaluate(verification_status("visual_review_currency"), "")
         self.assertEqual((r, failed), ("CANDIDATE_READY", ["visual_review_currency"]))
 
     def test_any_other_failure_or_failed_step_fails(self):
-        self.assertEqual(build_status.evaluate({"mandatory_failed": ["visual_review_currency", "one_page_keeps"]}, "")[0], "FAILED")
-        self.assertEqual(build_status.evaluate({"mandatory_failed": []}, "tests and clean build")[0], "FAILED")
+        self.assertEqual(build_status.evaluate(verification_status("visual_review_currency", "one_page_keeps"), "")[0], "FAILED")
+        self.assertEqual(build_status.evaluate(verification_status(), "tests and clean build")[0], "FAILED")
         self.assertEqual(build_status.evaluate(None, "")[0], "FAILED")
 
     def test_workflows_wired(self):
-        cand = (ROOT / ".github/workflows/build-candidate.yml").read_text()
-        rel = (ROOT / ".github/workflows/rebuild-delivery.yml").read_text()
+        cand = workflow("build-candidate.yml")
+        rel = workflow("rebuild-delivery.yml")
         self.assertIn("production/build-request.json", cand)
         self.assertIn("--prerelease", cand)
         self.assertIn("production/qa/visual-review.json", rel)
@@ -30,6 +50,71 @@ class BuildChain(unittest.TestCase):
         self.assertIn("tools/release_result.py", rel)
         for wf in (cand, rel):
             self.assertIn("assets/art/cover/front.png", wf, "the cover is an LFS file the build places")
+
+    def test_candidate_publication_requires_fresh_automated_verification(self):
+        cand = workflow("build-candidate.yml")
+        verify = step_with_id(cand, "verify")
+        self.assertLess(verify.index("rm -f production/qa/STATUS.json"), verify.index("python tools/verify.py"))
+        self.assertIn("continue-on-error: true", verify, "pending visual review may fail verify")
+        gate = step_with_id(cand, "gate")
+        self.assertIn("python tools/build_status.py --check-candidate", gate)
+        self.assertNotIn("continue-on-error", gate)
+        for step_id in ("aids", "release"):
+            self.assertIn("if: steps.gate.outcome == 'success'", step_with_id(cand, step_id))
+        self.assertLess(cand.index("id: verify"), cand.index("id: gate"))
+        self.assertLess(cand.index("id: gate"), cand.index("id: release"))
+        self.assertIn("steps.gate.outcome != 'success'", cand, "failure/skipping cannot record READY")
+        self.assertIn("steps.release.outcome != 'success'", cand, "missing candidate publication is a failure")
+
+    def test_repository_checks_cover_windows_and_linux_without_building(self):
+        checks = workflow("repository-checks.yml")
+        self.assertIn("os: [ubuntu-latest, windows-latest]", checks)
+        self.assertIn("runs-on: ${{ matrix.os }}", checks)
+        self.assertIn("fail-fast: false", checks)
+        self.assertIn("python tools/check_dependencies.py --ci", checks)
+        self.assertIn("python -m unittest discover -s tests", checks)
+        self.assertNotRegex(checks, r"(?m)^\s+run:.*\b(make|build_book\.py|verify\.py)\b")
+        for name in ("repository-checks.yml", "build-candidate.yml", "rebuild-delivery.yml"):
+            text = workflow(name)
+            self.assertIn("cache: pip", text)
+            self.assertIn("cache-dependency-path: requirements.lock", text)
+            self.assertIn("PYTHONUTF8: '1'", text)
+        for name in ("build-candidate.yml", "rebuild-delivery.yml"):
+            self.assertIn("make PY=python test clean all", workflow(name))
+            self.assertIn("python tools/check_dependencies.py --publish", workflow(name))
+
+    def test_only_superseded_checks_are_cancelled_and_publication_is_serialized(self):
+        groups = []
+        for name in ("build-candidate.yml", "rebuild-delivery.yml"):
+            text = workflow(name)
+            concurrency = re.search(r"(?m)^concurrency:\n  group: ([^\n]+)\n  cancel-in-progress: ([^\n]+)", text)
+            self.assertIsNotNone(concurrency, name)
+            groups.append(concurrency.group(1))
+            self.assertEqual(concurrency.group(2), "false", name)
+        self.assertEqual(groups[0], groups[1], "candidate and release both write publication ledgers")
+        checks = workflow("repository-checks.yml")
+        self.assertIn("cancel-in-progress: true", checks)
+        self.assertIn("github.event.pull_request.number || github.ref", checks)
+
+    def test_publication_diagnostics_are_always_preserved_and_explicitly_scoped(self):
+        for name, expected in (("build-candidate.yml", "production/BUILD_STATUS.json"),
+                               ("rebuild-delivery.yml", "production/RELEASE_RESULT.json")):
+            with self.subTest(workflow=name):
+                text = workflow(name)
+                steps = [step for step in re.split(r"(?m)^      - ", text)[1:]
+                         if "uses: actions/upload-artifact@v4" in step]
+                self.assertEqual(len(steps), 1)
+                artifact = steps[0]
+                self.assertIn("if: always()", artifact)
+                self.assertIn("retention-days: 14", artifact)
+                paths = re.search(r"(?ms)^          path: \|\n(.*)", artifact).group(1).splitlines()
+                paths = [path.strip() for path in paths if path.strip()]
+                self.assertIn(expected, paths)
+                self.assertIn("production/qa/STATUS.json", paths)
+                for path in paths:
+                    self.assertRegex(path, r"^(production|dist)/[A-Za-z0-9_./-]+\.json$")
+                    self.assertNotIn("..", Path(path).parts)
+                    self.assertNotIn("references", Path(path).parts)
 
     def test_workflows_have_no_duplicate_keys(self):
         """GitHub rejects a workflow with a duplicated mapping key (PyYAML silently keeps the last), so no run ever starts.
@@ -39,7 +124,7 @@ class BuildChain(unittest.TestCase):
             with self.subTest(wf=wf.name):
                 stack = []          # (indent, set of keys seen at that indent)
                 block_indent = None
-                for n, raw in enumerate(wf.read_text().splitlines(), 1):
+                for n, raw in enumerate(wf.read_text(encoding="utf-8").splitlines(), 1):
                     if not raw.strip() or raw.lstrip().startswith("#"):
                         continue
                     ind = len(raw) - len(raw.lstrip())

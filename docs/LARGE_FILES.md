@@ -37,7 +37,7 @@ Git history is permanent: earlier commits still hold old PDFs and ZIPs (about 49
 
 ## Builds and delivery
 
-When the owner asks for a build, Claude Code builds locally (`make clean all verify package`), inspects the pages and updates the hash-bound visual ledger as before. The PDFs are gitignored, so only the ledgers are committed.
+When the owner asks for a build, Codex uses the GitHub candidate/review/delivery chain in `docs/BUILD_AUTOMATION.md`. GitHub builds the candidate and review aids; Codex inspects every supplied image and binds the exact PDF. PDFs and ZIPs remain gitignored, so only ledgers and LFS review JPEGs are committed.
 
 Delivery is the `Rebuild verified delivery` workflow:
 1. It rebuilds from that commit and verifies the result against the committed ledgers (which proves the build is reproducible).
@@ -46,7 +46,7 @@ Delivery is the `Rebuild verified delivery` workflow:
 
 The release ZIP is the rebuildable source package. Following its own rule that raw generated art never ships, it carries the ink derivatives, not the generated native images. It refuses to pack any file that is still an LFS pointer.
 
-The RC492 PDFs built before this policy are no longer in the working tree. They remain in Git history at commit `3da756f1f1da85b1bbc9dd4a26478ebcbd9c1053` (for example `https://github.com/xjordont/Heraldry/blob/3da756f1f1da85b1bbc9dd4a26478ebcbd9c1053/dist/Heraldry_RC492_digital.pdf`, then Download). The next requested build publishes the first Release.
+The RC492 PDFs built before this policy are no longer in the working tree. They remain in Git history at commit `3da756f1f1da85b1bbc9dd4a26478ebcbd9c1053` (for example `https://github.com/xjordont/Heraldry/blob/3da756f1f1da85b1bbc9dd4a26478ebcbd9c1053/dist/Heraldry_RC492_digital.pdf`, then Download). Current delivery is identified by `dist/RELEASE.json` and `production/RELEASE_RESULT.json`; do not infer it from historical files or this document's date.
 
 ## Quotas to watch
 

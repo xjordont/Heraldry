@@ -47,7 +47,13 @@ verified release; physical printing stays NOT TESTED.
 
 ## Failure and review safeguards
 
+Routine local checks use `python tools/dev.py check`; they do not request a build or overwrite release ledgers. Exact dependencies and required imports/tools are checked locally and in CI. Repository CI covers Ubuntu and Windows, caches downloads by `requirements.lock`, and cancels only superseded repository checks. Candidate and delivery jobs share the non-cancelling `publication-main` queue, preventing them from writing main concurrently.
+
+Candidate verification deletes the prior STATUS report before running, then requires complete results for the shared mandatory-check list. Only a valid report with all nonvisual checks passing may produce review aids or a candidate pre-release. Missing or inconsistent summaries fail. Both publishing jobs retain explicitly listed JSON diagnostics as 14-day artifacts even on failure; early failure may leave older committed snapshots, so use the run's result/outcome to interpret them.
+
 The visual-review binder requires contact-sheet ranges covering every PDF page exactly once, first/last detail images, both covers, and calibration. Major findings on any reviewed image block binding; unknown severities also refuse. Minor notes from every image are retained. Figure semantic reviews require a named reviewer, a review date, and current SVG, caption, and manuscript-dependency hashes.
+
+The Windows request/review helpers require clean, fetched, current main before mutation. They run `make test`, recheck main and their exact file scope, then commit and push only their own file. Test failures preserve generated files; rejected pushes preserve the local commit and stop. They never automatically pull, reset, or rebase. Keep the review JSON in the external scratch folder.
 
 The release workflow passes its preceding job status to `release_result.py --job-status`, including a failed verification-ledger commit or push. A published asset alone does not produce a RELEASED result. `release_result.py --push` appends only the result record to freshly fetched main using a temporary index. It retries a concurrent main update without rebasing a pending verification-ledger commit onto newer inputs. It preserves all other files on remote main and leaves the runner's dirty build checkout intact.
 
