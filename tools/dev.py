@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One entry point for local checks, status, and reviewed manuscript updates."""
+"""Local checks, status, reviewed manuscript updates, and explicit InDesign export."""
 import argparse
 import json
 import os
@@ -52,22 +52,24 @@ def status():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=("doctor", "check", "status", "manuscript"))
+    parser.add_argument("command", choices=("doctor", "check", "status", "manuscript", "indesign"))
     parser.add_argument("--python", help="override automatic .venv / Heraldry environment selection")
     parser.add_argument("--base", default="origin/main", help="snapshot history reference for check (local tracking ref)")
-    # Hand the manuscript command its own help/options and the selected runtime.
+    # Delegate optional commands' help/options to their selected-runtime tools.
     argv = sys.argv[1:]
-    if "manuscript" in argv:
-        position = argv.index("manuscript")
+    delegated = next((name for name in argv if name in {"manuscript", "indesign"}), None)
+    if delegated:
+        position = argv.index(delegated)
         args = parser.parse_args(argv[:position + 1])
-        manuscript_args = argv[position + 1:]
+        delegated_args = argv[position + 1:]
     else:
         args = parser.parse_args(argv)
     try:
         python = select_python(override=args.python)
         print("Python: " + python, flush=True)
-        if args.command == "manuscript":
-            return run(python, "tools/update_manuscript.py", *manuscript_args)
+        if args.command in {"manuscript", "indesign"}:
+            script = "tools/update_manuscript.py" if args.command == "manuscript" else "tools/export_indesign.py"
+            return run(python, script, *delegated_args)
         if args.command == "status":
             return status()
         report = ROOT / "build/checks"

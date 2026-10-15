@@ -186,7 +186,7 @@ Implement sensible commands such as `make specimen`, `make digital`, `make print
 
 At final acceptance, Opus performs a bounded review of the final reports, source exceptions, representative difficult pages, every unresolved finding, and delivery completeness. Fix any remaining actionable defect, rebuild, and recheck before responding. Give a concise final report with file paths, actual page/figure/table counts, build commands, status evidence, source changes, and any narrowly specified remaining external input. Do not finish with “shall I continue?” or a list of tasks you could have completed within the authorized session.
 
-**Resume the current project, implement the requested iteration, and complete all applicable build, verification, inspection and packaging gates. Do not restart completed work. InDesign export is on hold; complete the PDF edition.**
+**Resume the current project, implement the requested iteration, and complete all applicable build, verification, inspection and packaging gates. Do not restart completed work. PDF production remains the normal delivery path. InDesign export is optional and runs only on an explicit invocation; see docs/INDESIGN_EXPORT.md (owner decision, 2026-10-15).**
 
 ## Mandatory owner clarification: one-page units
 

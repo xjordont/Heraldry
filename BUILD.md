@@ -4,6 +4,8 @@ Pipeline: active immutable Markdown snapshot â†’ markdown-it-py semantic model â
 
 ## Requirements
 
+The optional editable InDesign route is documented separately in [docs/INDESIGN_EXPORT.md](docs/INDESIGN_EXPORT.md). Run `python tools/dev.py indesign export --output <new-folder>` only when explicitly requested; no normal Make target or PDF build invokes it. Installed InDesign is required to compose and save native INDD. This does not replace the PDF release or its review gates.
+
 Python 3.12+ (tested here with 3.12.14; prior build used 3.13.16), pinned dependencies in `requirements.lock`, bundled OFL fonts. Use a virtual environment if required by your Python installation. System fonts are excluded. `make fonts` optionally regenerates the bundled static instances from the supplied variable fonts; ordinary builds use the already bundled static fonts.
 
 For routine development, run `python tools/dev.py check`. It selects `.venv` if present, otherwise the owner's adjacent `art-venv` on Windows, otherwise the invoking Python. Override with `--python <executable>`. It checks dependencies, baseline contracts, prior snapshot history, whitespace, and `make test`, without building PDFs. `python tools/dev.py doctor` checks just the environment; `python tools/dev.py status` shows local Git and last-release state. Reports are written under ignored `build/checks/`, preserving production release evidence. `make doctor`, `make check`, and `make status` are equivalent convenience targets when Make/Python are already configured.

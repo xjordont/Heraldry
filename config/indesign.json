@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "dom_version": "16.0",
+  "minimum_indesign": "16.0 (IDML DOM version); use a current supported release",
+  "invocation": "Explicit indesign export/compose commands or the manual workflow only",
+  "page": {"width": 612, "height": 792, "inside": 54, "outside": 39.6, "top": 48.96, "bottom": 50.4, "columns": 2, "gutter": 17.28},
+  "type": {"body_family": "Source Serif 4", "label_family": "Source Sans 3", "display_family": "Grenze Gotisch", "body_size": 11, "body_leading": 15.1, "table_size": 9.5, "table_leading": 12, "caption_size": 9.5, "heading_sizes": [32, 28, 17, 13, 11, 11]},
+  "paper_rgb": [252, 250, 245],
+  "maximum_pages": 4096,
+  "figure_editing": "Linked editable SVG originals in Links; InDesign frames are native. SVG paths/labels are edited in the source, not converted into native InDesign page items.",
+  "layout": "Editable InDesign composition with native tables, threaded chapter stories, master furniture and anchored art; pagination is recomposed by InDesign and is not the approved Typst PDF pagination."
+}

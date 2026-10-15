@@ -68,6 +68,6 @@
     "working_branch": "main",
     "new_branch_policy": "explicit owner decision with recorded reason",
     "manuscript_version_policy": "one increment per approved text-patch batch; immutable prior snapshots",
-    "indesign_export": "ON HOLD — owner decision 2026-10-06; continue PDF production"
+    "indesign_export": "OPTIONAL, EXPLICIT INVOCATION ONLY - owner decision 2026-10-15; separate editable IDML/INDD project, never an automatic PDF/build dependency"
   }
 }

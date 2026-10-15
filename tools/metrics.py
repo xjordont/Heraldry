@@ -9,12 +9,12 @@ FONTS = Path(__file__).resolve().parents[1] / "fonts/static"
 
 class Face:
     def __init__(self, file: str):
-        f = TTFont(FONTS / file, lazy=True)
-        self.upem = f["head"].unitsPerEm
-        cmap = f.getBestCmap()
-        hmtx = f["hmtx"].metrics
-        self.adv = {cp: hmtx[g][0] for cp, g in cmap.items()}
-        self.default = hmtx[cmap.get(ord("n"))][0]
+        with TTFont(FONTS / file, lazy=True) as f:
+            self.upem = f["head"].unitsPerEm
+            cmap = f.getBestCmap()
+            hmtx = f["hmtx"].metrics
+            self.adv = {cp: hmtx[g][0] for cp, g in cmap.items()}
+            self.default = hmtx[cmap.get(ord("n"))][0]
 
     def width(self, s: str, size: float) -> float:
         return sum(self.adv.get(ord(ch), self.default) for ch in s) * size / self.upem
