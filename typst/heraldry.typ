@@ -28,6 +28,8 @@
 #let col-w = v4.col-w
 #let body-size = v4.body-size
 #let body-lead = v4.body-lead
+#let table-size = 9.3pt
+#let table-lead = 2.7pt
 #let brush = v4.brush
 #let shield = v4.shield
 #let arms = v4.arms
@@ -387,12 +389,12 @@
 #let hr-ornament(pre: none) = align(center, block(above: 10pt, below: 10pt)[#pre#flourish(len: 40pt)])
 
 // ---------------------------------------------------------------- tables: the ledger
-#let head-cell(h) = text(font: sans, weight: 700, size: 9.3pt, fill: paper,
+#let head-cell(h) = text(font: sans, weight: 700, size: table-size, fill: paper,
   coin-text(smallcaps(all: true, h), s: 1.05em, fill: paper))
 
 #let htable(id, widths, aligns, header, rows, kind: "table", title: none, pre: none) = {
-  set text(font: sans, size: 9.3pt, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining", number-width: "tabular", hyphenate: false)
-  set par(leading: 2.7pt, spacing: 4pt, justify: false)
+  set text(font: sans, size: table-size, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining", number-width: "tabular", hyphenate: false)
+  set par(leading: table-lead, spacing: 4pt, justify: false)
   set strong(delta: 200)
   let al(x) = { let a = aligns.at(x); if a == left { left } else { center } }
   set table.cell(breakable: false)   // keep ordinary rows intact
@@ -448,7 +450,7 @@
 
 // Labelled key/value profile (stat tables whose cells hold formulas): reversed key column.
 #let statcard(id, header, values, pre: none) = {
-  set text(font: sans, size: 9.3pt, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining")
+  set text(font: sans, size: table-size, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining")
   set par(justify: false)
   block(width: 100%, above: 7pt, below: 8pt, breakable: false)[
     #pre#pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")#tmark(id, "e")
@@ -479,11 +481,11 @@
           #e.title
         ]
         #if e.fields.len() > 0 {
-          set text(font: sans, size: 9.3pt, number-type: "lining")
-          block(below: 3pt, e.fields.map(((k, v)) => box[#text(weight: 700, size: 9.3pt, fill: ink3, smallcaps(all: true, k))#h(3pt)#v]).join(h(9pt, weak: true)))
+          set text(font: sans, size: table-size, number-type: "lining")
+          block(below: 3pt, e.fields.map(((k, v)) => box[#text(weight: 700, size: table-size, fill: ink3, smallcaps(all: true, k))#h(3pt)#v]).join(h(9pt, weak: true)))
         }
         #for (k, v) in e.desc {
-          block(below: 2pt)[#text(font: sans, size: 9.3pt, weight: 700, fill: ink3, smallcaps(all: true, k)) #h(2pt) #text(size: 10pt, v)]
+          block(below: 2pt)[#text(font: sans, size: table-size, weight: 700, fill: ink3, smallcaps(all: true, k)) #h(2pt) #text(size: 10pt, v)]
         }
       ]
     })

@@ -11,6 +11,8 @@ The publication repository for the Heraldry Skirmish rulebook. It holds the manu
 
 Running log: [production/STATE.md](production/STATE.md).
 
+Targeted editorial, reader, accessibility, and physical-proof checks: [publication protocol](docs/PUBLICATION_CHECKS.md) and [current first-pass findings](production/qa/publication-first-pass.md). These are separate from the last release's scoped PASS evidence.
+
 ## How the project runs
 
 | Track | Where | Rule |
