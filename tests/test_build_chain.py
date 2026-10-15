@@ -27,6 +27,27 @@ class BuildChain(unittest.TestCase):
         for wf in (cand, rel):
             self.assertIn("assets/art/cover/front.png", wf, "the cover is an LFS file the build places")
 
+    def test_workflows_have_no_duplicate_keys(self):
+        """GitHub rejects a workflow with a duplicated mapping key (PyYAML silently keeps the last), so no run ever starts."""
+        import yaml
+        from yaml.constructor import ConstructorError
+
+        class Strict(yaml.SafeLoader):
+            pass
+
+        def no_dup(loader, node, deep=False):
+            seen = set()
+            for k, _ in node.value:
+                key = loader.construct_object(k, deep=deep)
+                if key in seen:
+                    raise ConstructorError(None, None, f"duplicate key {key!r}", k.start_mark)
+                seen.add(key)
+            return yaml.SafeLoader.construct_mapping(loader, node, deep)
+        Strict.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, no_dup)
+        for wf in sorted((ROOT / ".github/workflows").glob("*.yml")):
+            with self.subTest(wf=wf.name):
+                yaml.load(wf.read_text(), Loader=Strict)
+
     def test_request_tool_is_stdlib_only(self):
         import ast
         mods = {n.names[0].name.split(".")[0] for n in ast.walk(ast.parse((ROOT / "tools/build_request.py").read_text())) if isinstance(n, ast.Import)}
