@@ -66,7 +66,7 @@ class ManuscriptUpdates(unittest.TestCase):
         before = self.snapshot()
         path, report = self.prepare()
         self.assertEqual(self.snapshot(), before)
-        self.assertEqual(path, self.bundle)
+        self.assertEqual(path, self.bundle.resolve())
         self.assertEqual(report["impact"]["affected_figures"], ["FIG-02"])
         self.assertEqual(report["impact"]["blockers"], [])
         batch = json.loads((path / "proposed-patches.json").read_text(encoding="utf-8"))

@@ -1,17 +1,38 @@
 # Heraldry Skirmish
 
-The publication repository for the Heraldry Skirmish rulebook. It holds the manuscript, the Typst book build, 57 editable rules figures, and the pen-and-ink illustration pipeline that produces a borderless US Letter PDF edition in a clean dark-fantasy style.
+The publication repository for the Heraldry Skirmish rulebook. It holds the manuscript, the Typst book build, editable rules figures, and the pen-and-ink illustration pipeline that produces a borderless US Letter PDF edition in a clean dark-fantasy style.
 
 ## Current state
 
-- **Manuscript:** RC493 (`source/versions.json`). Earlier snapshots, from the original RC484 onwards, are immutable.
-- **Last requested build:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages and 675 digital pages. RC493 manuscript corrections and later source/tooling changes await the next requested build. Evidence and limits are in [production/RELEASE_STATUS.md](production/RELEASE_STATUS.md).
-- **Illustrations:** all 275 approved; the generation queue is empty.
-- **Physical printing:** NOT TESTED until real sheets are examined.
+<!-- BEGIN AUTO:status -->
+
+- **Manuscript:** [RC493](source/Heraldry_RC493.md) (`source/versions.json`). Earlier snapshots are immutable.
+- **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC493 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
+- **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
+- **Illustration records:** 275 approved of 275; 0 generation-queue items.
+- **Rules figures:** 57; 57/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
+- **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
+
+<!-- END AUTO:status -->
 
 Running log: [production/STATE.md](production/STATE.md).
 
 Targeted editorial, reader, accessibility, and physical-proof checks: [publication protocol](docs/PUBLICATION_CHECKS.md) and [current first-pass findings](production/qa/publication-first-pass.md). These are separate from the last release's scoped PASS evidence.
+
+## Recent changes
+
+<!-- BEGIN AUTO:recent -->
+
+- [`c1e48475`](https://github.com/xjordont/Heraldry/commit/c1e48475b59166039fcc871c6af7c18722dc0dd9) figures: preserve existing scenario specification formatting
+- [`d2d4d211`](https://github.com/xjordont/Heraldry/commit/d2d4d21145ffd80f0a3ebc40a8b25776dd5ca0be) figures: review all 57 and repair clarity, accuracy and design
+- [`39fcc4cb`](https://github.com/xjordont/Heraldry/commit/39fcc4cbdcf4e0213c9f199e8ade03d6d03dacaa) text(RC493): apply approved editorial fixes and canon alignment
+- [`bb0e4b30`](https://github.com/xjordont/Heraldry/commit/bb0e4b308479efad703088dc078b85574c1ae201) publication: correct calibration and prepare editorial checks
+- [`1a890818`](https://github.com/xjordont/Heraldry/commit/1a890818694fd03f6f2d44e6508e787b6879280c) export: add explicit editable InDesign project workflow
+- [`b54ddb8c`](https://github.com/xjordont/Heraldry/commit/b54ddb8c5bc7beed17b62f16fec3de80fd8eb3a6) workflow: add reviewed full-manuscript updates
+
+<!-- END AUTO:recent -->
+
+Status and recent changes refresh automatically after pushes to `main` and completed repository workflows, including bot updates. `python tools/dev.py check` also refreshes them locally. Edit the surrounding guidance normally; the marked blocks come from repository records and Git history. [Maintenance details](docs/README_AUTOMATION.md).
 
 ## How the project runs
 

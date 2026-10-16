@@ -47,6 +47,8 @@ verified release; physical printing stays NOT TESTED.
 
 ## Failure and review safeguards
 
+README maintenance shares `publication-main` with `queue: max` on all three workflows. It defers for queued publication work and refreshes after workflow completion. Ordinary checks refresh its generated blocks locally; no PDF build is involved. See [README automation](README_AUTOMATION.md).
+
 Routine local checks use `python tools/dev.py check`; they do not request a build or overwrite release ledgers. Exact dependencies and required imports/tools are checked locally and in CI. Repository CI covers Ubuntu and Windows, caches downloads by `requirements.lock`, and cancels only superseded repository checks. Candidate and delivery jobs share the non-cancelling `publication-main` queue, preventing them from writing main concurrently.
 
 Candidate verification deletes the prior STATUS report before running, then requires complete results for the shared mandatory-check list. Only a valid report with all nonvisual checks passing may produce review aids or a candidate pre-release. Missing or inconsistent summaries fail. Both publishing jobs retain explicitly listed JSON diagnostics as 14-day artifacts even on failure; early failure may leave older committed snapshots, so use the run's result/outcome to interpret them.

@@ -1,5 +1,7 @@
 # Heraldry publication repository
 
+README maintenance: ordinary `python tools/dev.py check` refreshes its generated status/recent-change blocks. Include the refresh in checked commits. GitHub also refreshes after main pushes and completed repository workflows, with publication deferral. Preserve hand-written guidance outside the marked blocks. See [docs/README_AUTOMATION.md](docs/README_AUTOMATION.md).
+
 Read [docs/CANON_AUTHORITY.md](docs/CANON_AUTHORITY.md) before rules or editorial work. It records the owner's 2026-10-15 approval of five current-source conventions and supersedes conflicting older imported briefs for those points. Resolve the current manuscript through `source/versions.json`; do not treat a historical review's RC number as the active version.
 
 Work on `main`. Commit and push verified iterations directly to `main`; do not create or continue a task/feature branch unless the owner explicitly decides to use one and its reason is recorded in `production/STATE.md`. Keep `main` as the only branch (owner, 2026-10-11: "I want a single branch at all times if possible"). The historical RC484 checkpoint is commit `3818324466aec2d3ab0515f48f93c7c498a0a6ab` (formerly branch `claude/heraldry-rc484-build`, fully contained in `main`). Read `docs/WORKFLOW.md` before changes. Check the current branch and remote head; never force-push, discard unrelated edits, or override platform permissions. If the cloud platform prevents main writes, report the concrete restriction and preserve the work; a repository instruction cannot override that restriction.

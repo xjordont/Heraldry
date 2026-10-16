@@ -14,6 +14,7 @@ permissions:
 concurrency:
   group: publication-main
   cancel-in-progress: false
+  queue: max
 env:
   PYTHONUTF8: '1'
 jobs:
