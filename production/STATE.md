@@ -2,6 +2,12 @@
 
 Updated 2026-10-16. Working/delivery branch: **main**.
 
+## PDF layout and density review - 2026-10-16
+
+Review/proposals only: the exact RC492-build-37 cream interior (SHA-256 `10e4f8bea8cff69404a6ee1385077e0533b767ff1815714cd0b2532e245a8e78`) received an all-672-page geometry census and direct visual inspection of 25 distinct pages. All ten private reference books were hash verified and 24 selected viewer pages directly inspected. Live RC493 pipeline code and primary-source design guidance informed [the detailed report](../reports/Rulebook%20layout%20and%20density%20review.md).
+
+Highest-priority finding: a hash-bound QA page map disagrees with the serialized PDF's C.5/T327 locations; cause unresolved, without a claim of missing content or an actual forbidden split. Proposed sequence: repair measurement/coverage, centralize intended style values, fix alignment/continuation/marker defects, then compare spacing/table-inset specimens with 11 pt body and current margins retained. Preserve complete-unit keeps and the accepted p6 blank verso. Baseline: 203 tests PASS, 3 expected skips. No manuscript/layout implementation, full PDF build, release, ledger rebinding, new visual approval, or physical proof occurred. Page savings remain unmeasured; proposals await owner review.
+
 ## README automation - 2026-10-16
 
 Validation: baseline 190 tests and final 203 tests PASS (3 expected skips); all 13 README regressions PASS. Dependencies, baseline preflight, immutable history, and whitespace PASS. Corrected two existing Windows CI assertions to compare resolved temporary paths; both focused checks PASS. Hosted activation is checked after pushing this implementation; see GitHub's `Update GitHub README` run and its README-only bot commit for current execution evidence.
