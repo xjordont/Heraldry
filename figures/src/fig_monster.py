@@ -33,7 +33,7 @@ def fig10():
         "A scenario rule wakes it.",
     ]
     y = step_list(s, 0, y, trig, aw, gap=3.5)
-    h = box(s, 0, y + 2, aw, "A **Hidden** enemy trips the 6\" trigger only while within its Hide distance of the group (2\" unless a rule changes it) and does not wake a Resting group through the 12\" LOS trigger.",
+    h = box(s, 0, y + 2, aw, "A **Hidden** enemy trips the 6\" trigger only within its Hide distance (normally 2\") and remains Hidden unless revealed. Hidden or Invisible enemies do not wake a Resting group through the 12\" LOS trigger unless a rule makes them visible to the group.",
             anchor="start", fill=PALE, sw=0.7, pad=5)
     ya = y + 2 + h
     # ---------------- Panel B: spatial ----------------
@@ -81,7 +81,7 @@ def fig10():
         callout(s, bx + 7, ytext + 6, n, 6.0)
         ytext = s.para(bx + 18, ytext + 9, t, FULL_W - bx - 18, 9, lead=10.6) + 3
     s.text(bx, ytext + 7, "× on a sight line: LOS blocked. Third enemy: outside 6\", no LOS.", 9)
-    s.text(bx, ytext + 19, "Schematic — not to scale", 9, 600, "start", "#333")
+    s.text(bx, ytext + 19, "Schematic - not to scale", 9, 600, "start", "#333")
     yb = ytext + 22
     y = max(ya, yb) + 6
     y = legend(s, [("M", "Monster Group"), ("A", "Party A enemy"), ("B", "Party B enemy"), ("blocking", "Blocking Terrain"), ("los", "sight line"), ("move", "enemy movement")], 0, y, FULL_W)
@@ -93,7 +93,7 @@ def fig11():
     lw, rw = 196, 262
     gap = 46
     rx = lw + gap
-    h0 = box(s, 0, 0, FULL_W, "**Before the steps:** determine the Primary Target, applying any Target Priority printed in a Scenario-Specific Monster's AI Steps first; otherwise it is the nearest visible enemy (9.5 E). Re-determine it if it ceases to be legal. The Monster executes the **first valid instruction** and ignores the rest unless a rule says they continue. Monsters do not use AP.",
+    h0 = box(s, 0, 0, FULL_W, "**Before the steps:** determine the Primary Target, applying any Target Priority printed in a Scenario-Specific Monster's AI Steps first; otherwise it is the nearest visible enemy (9.5 E). Re-determine it if it ceases to be legal. The Monster executes the **first valid instruction** and ignores the rest unless a rule says it continues. Monsters do not use AP.",
              anchor="start", fill=PALE, sw=0.7, pad=5)
     y = h0 + 12
     rows = [
@@ -104,7 +104,7 @@ def fig11():
         ("Visible Target", "Not Engaged, but is an enemy visible?",
          "Move toward the Primary Target; if Engaged by that movement, attack as in step 2. If it has a ranged attack and can attack without becoming Engaged, it instead moves to the nearest legal firing position and attacks."),
         ("Search", "No enemy visible, but is a Hidden enemy within 12\" and LOS?",
-         "That enemy's controller makes a DEX Check; on a failure it loses Hidden. If several, the nearest. The activation then ends."),
+         "That enemy's controller makes a DEX Check; on a failure that enemy loses Hidden. If several, choose the nearest, using 9.5 E for ties. The activation then ends."),
         ("No Visible Target", "None of the above applies.",
          "Move toward the Guard Point, objective, patrol route or scenario-directed destination by Movement Priorities (9.5 F)."),
     ]
@@ -164,7 +164,7 @@ def fig12():
     callout(s, E1[0] + 13, E1[1] - 9, 1, 6.0)
     pill(s, E2[0], E2[1] + 17, "farther", 9, 600)
     yy = s.para(0, oy + 126, "**1 Primary Target:** the nearest visible enemy. The Hidden enemy is nearer but is not a visible enemy, so it is not chosen. Monsters follow priority alone and never favour one player over another (9.5 A).", PW, 9, lead=10.6)
-    s.text(0, yy + 4, "Schematic — not to scale", 9, 600, "start", "#333")
+    s.text(0, yy + 4, "Schematic - not to scale", 9, 600, "start", "#333")
     ya = yy + 6
     # ---------------- Panel B: ties ----------------
     bx = PW + gap
@@ -189,7 +189,7 @@ def fig12():
            ("3", "Random Determination", "among the tied targets (2.6.3)")]
     for i, (n, t, d) in enumerate(lad):
         hh = box(s, bx, yy, PW, [d], anchor="start", fill=WHITE, sw=0.9, pad=4, head=None) if False else 0
-        lines = wrap("**%s** %s" % (t, "— " + d), PW - 24, 9)
+        lines = wrap("**%s** %s" % (t, "- " + d), PW - 24, 9)
         hh = len(lines) * 10.6 + 6
         s.rect(bx, yy, PW, hh, fill=WHITE, stroke=INK, sw=0.9, rx=2.5)
         callout(s, bx + 11, yy + hh / 2, n, 6.0)

@@ -211,13 +211,13 @@ def fig14():
     s.add_def('<clipPath id="qclip"><rect x="%s" y="%s" width="%s" height="%s"/></clipPath>' % (f1(2 * 126 + 4), f1(22), f1(BS), f1(BS)))
     ys = []
     kw = dict(cols=4, row_pitch=0, pitch_x=126, cap_w=119)
-    ys.append(deploy_panel(0, s, "A", "Trail", "The Setup Roll-off winner chooses the short edge where the Trail enters and deploys within 6\" of it with at least two Heroes on the Trail. The other party does the same at the opposite short edge. The Trail is 3–4\" wide and runs the full length.", d_trail, **kw))
+    ys.append(deploy_panel(0, s, "A", "Trail", "The Setup Roll-off winner chooses the short edge where the Trail enters and deploys within 6\" of it with at least two Heroes, or its only Hero, on the Trail. The other party does the same at the opposite short edge. The Trail is 3–4\" wide and runs the full length.", d_trail, **kw))
     ys.append(deploy_panel(1, s, "B", "One shared edge", "Both parties deploy along the same short edge (the start side of the Chasm) within 8\" of it, placing Heroes alternately starting with the party that lost the Setup Roll-off. No Hero is placed within 6\" of an opposing Hero.", d_chasm, **kw))
     ys.append(deploy_panel(2, s, "C", "Central Safe Zone", "Both parties deploy inside a central 8\"×8\" Safe Zone (shown enlarged: detail of the centre, 6.6 pt per inch), placing Heroes alternately starting with the party that lost the Setup Roll-off. No Hero is placed within 3\" of an opposing Hero.", d_quake, frame=True, **kw))
     ys.append(deploy_panel(3, s, "D", "Across a Ravine", "Opposite short edges, within 6\" of the edge, on higher ground outside the Ravine (6–8\" wide, perpendicular to the long edges).", d_ravine, **kw))
     y = max(ys) + 6
     y = K.strip_for(s, 0, y, FULL_W, {"hero-A": "Party A Heroes (enlarged)", "hero-B": "Party B Heroes (enlarged)", "ter-chasm": "Chasm", "ter-difficult": "Ravine floor (Difficult Terrain)"}, title="Key (full key: FIG-20)")
-    yy = s.para(0, y + 4, "Zones, the Trail, the Chasm and the Ravine are drawn to scale on a 36\"×36\" battlefield (3.3 pt per inch); Hero markers are enlarged. Zone-depth dimensions show the stated limits. In panels B and C no Hero is placed within the stated distance of an opposing Hero: the ring (B, 6\", from a Party A Hero’s edge; C, 3\") marks that distance, and the dimension line between the nearest opposing Heroes runs between their closest edges (2.6), 7\" in B and 4\" in C, both outside the limit. Panel B is measured between drawn marker edges; panel C markers are drawn at their true 1\" size. Where the source gives a range (Trail 3–4\", Ravine 6–8\"), a value inside the range is drawn and its position is schematic.", FULL_W, 9, lead=10.4)
+    yy = s.para(0, y + 4, "Zones, the Trail, the Chasm and the Ravine are drawn to scale on a 36\"×36\" battlefield (3.3 pt per inch); Hero markers are enlarged. Zone-depth dimensions show the stated limits. In panels B and C no Hero is placed within the stated distance of an opposing Hero: the ring (B, 6\", from a Party A Hero's edge; C, 3\") marks that distance, and the dimension line between the nearest opposing Heroes runs between their closest edges (2.6), 7\" in B and 4\" in C, both outside the limit. Panel B is measured between drawn marker edges; panel C markers are drawn at their true 1\" size. Where the source gives a range (Trail 3–4\", Ravine 6–8\"), a value inside the range is drawn and its position is schematic.", FULL_W, 9, lead=10.4)
     return s, yy + 2
 
 
@@ -260,7 +260,7 @@ def fig15():
     K.dim_labeled(s, lx - 14, by + 22 * k, lx - 14, sy_, "3\"", 2.5, off=9)
     K.pill_label(s, bx + side - 4, by + 6.3 * k + 6, "start side", 9, 600, "end")
     K.pill_label(s, bx + side - 4, by + 31 * k, "delivery side", 9, 600, "end")
-    s.htext(bx + side, by + side + 12, "Schematic — not to scale", 9, 600, "end", "#333")
+    s.htext(bx + side, by + side + 12, "Schematic - not to scale", 9, 600, "end", "#333")
     # ---------------- right: placement notes ----------------
     rx = side + 26
     rw = FULL_W - rx
@@ -283,8 +283,8 @@ def fig15():
     y += 22
     falls = [
         "**Chasm Fall:** a combatant Pushed off a Ledge into the Chasm, or that fails a Crumbling Ledge Check and falls, is immediately removed from play. A Hero is Defeated and makes a normal Injuries Roll. A non-Hero is resolved as though reduced to 0 HP. This replaces the normal Falling rule. Any carried items, including the Survey Map, fall into the Chasm and are lost.",
-        "**Hero or Hireling with a Fly or Climb Speed** that would fall may immediately spend 1 unspent AP, including AP reserved for Reactions, to catch themselves. Place them Prone in the nearest legal space on a Ledge, and end their current movement. If they cannot spend the AP, resolve the Chasm Fall normally.",
-        "**Monster with a Fly or Climb Speed** that would fall is placed Prone in the nearest legal space on a Ledge, and their activation ends.",
+        "**Hero or Hireling with a Fly or Climb Speed** that would fall may immediately spend 1 unspent AP, including AP reserved for Reactions, to catch itself. Place it Prone in the nearest legal space on a Ledge, and end its current movement. If it cannot spend the AP, resolve the Chasm Fall normally.",
+        "**Monster with a Fly or Climb Speed** that would fall is placed Prone in the nearest legal space on a Ledge, and its activation ends.",
     ]
     for i, st in enumerate(falls, 6):
         lines = wrap(st, FULL_W - 2 * 6.6 - 6, 9)
@@ -341,7 +341,7 @@ def fig16():
     notes = [
         "**Activate a Stone (10.4):** a Hero adjacent to a Standing Stone uses Interact [2 AP] and makes a SPI Check. A stone is claimed by only one party. Here a Party A Hero Interacts with a Stone first.",
         "**Rival attempt:** a Party B Hero later attempts to activate another Stone.",
-        "**Antlered Warden:** not placed at setup. When a Hero first Interacts with a Standing Stone, it is placed adjacent to that Stone (here, the Party A Hero’s Stone) and is Awake when placed.",
+        "**Antlered Warden:** not placed at setup. When a Hero first Interacts with a Standing Stone, it is placed adjacent to that Stone (here, the Party A Hero's Stone) and is Awake when placed.",
         "**Monster Phase:** the Warden's Target Priority is the valid Hero who most recently activated or attempted to activate a Standing Stone, here the Party B Hero. If no listed target is valid, the normal Monster target priorities apply (9.5 E).",
         "**AI Step 1, Entangling Roots:** if the Primary Target is within 8\" and not Immobilized, it must pass a DEX Check or become Immobilized. The activation then ends.",
         "**Random Monster Group 2:** placed inside the Central Clearing, 4\" from its edge, Resting. Groups 1 and 3 (near a Stone and a Treasure Chest) are not drawn.",

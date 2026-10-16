@@ -46,7 +46,7 @@
 <line x1="229.5" y1="213.56" x2="229.5" y2="219.56" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 </g>
 <g data-glyph="ter-open">
-<rect x="112.5" y="113" width="18" height="18" fill="none" stroke="#000" stroke-width="0.9"/>
+<rect x="112.5" y="113" width="18" height="18" fill="none"/>
 </g>
 <g data-glyph="line-wall">
 <polyline points="112.5,131 112.5,113 130.5,113 130.5,131" fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="butt" stroke-linejoin="round"/>

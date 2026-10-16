@@ -70,9 +70,13 @@
 <rect x="145.5" y="146" width="12" height="12" fill="none" stroke="#000" stroke-width="0.9"/>
 </g>
 <g data-glyph="dim">
-<line x1="97.5" y1="98" x2="139.93" y2="140.43" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="99.34" y1="96.16" x2="95.66" y2="99.84" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="141.76" y1="138.59" x2="138.09" y2="142.26" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="97.5" y1="98" x2="116.59" y2="78.91" stroke="#000" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="139.93" y1="140.43" x2="159.02" y2="121.33" stroke="#000" stroke-width="0.5" stroke-linecap="butt"/>
+</g>
+<g data-glyph="dim">
+<line x1="116.59" y1="78.91" x2="159.02" y2="121.33" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="118.43" y1="77.07" x2="114.75" y2="80.75" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="160.86" y1="119.5" x2="157.18" y2="123.17" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 </g>
 <g data-glyph="ring">
 <g clip-path="url(#bclip)">
@@ -167,24 +171,24 @@
 </g>
 <text x="27.02" y="81.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
 <text x="207.02" y="81.6" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">6"</text>
-<text x="145.65" y="125.82" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
+<text x="145.19" y="132.3" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">2"</text>
 <g data-glyph="leader">
-<line x1="121.5" y1="103.5" x2="121.5" y2="83.44" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="115.89" y1="123.01" x2="87.2" y2="128.2" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>
-<text x="116.35" y="80.44" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Dome 6"×6"</text>
+<text x="67.5" y="136.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Lens</text>
+<g data-glyph="leader">
+<line x1="121.5" y1="103.5" x2="121.5" y2="76.05" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+</g>
+<text x="119.41" y="73.05" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Dome 6"×6"</text>
 <text x="68.58" y="80.4" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Wall</text>
 <text x="178.7" y="100.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Rubble</text>
 <text x="47.99" y="94.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Platform</text>
-<g data-glyph="leader">
-<line x1="118.71" y1="116.21" x2="118.71" y2="101.71" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
-</g>
-<text x="103.53" y="98.71" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">min 10"</text>
-<g data-glyph="leader">
-<line x1="115.8" y1="122" x2="101.3" y2="122" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
-</g>
-<text x="81.6" y="124.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Lens</text>
+<text x="102.47" y="94.57" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">min 10"</text>
 <text x="34.5" y="110.34" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Orrery</text>
-<text x="144.73" y="140.52" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Sentinel·A</text>
+<g data-glyph="leader">
+<line x1="140.86" y1="125.6" x2="163.36" y2="125.6" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
+</g>
+<text x="165.06" y="128.4" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">Sentinel·A</text>
 <g data-glyph="leader">
 <line x1="168.81" y1="102.66" x2="176.97" y2="105.23" stroke="#555" stroke-width="0.6" stroke-linecap="butt"/>
 </g>

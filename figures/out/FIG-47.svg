@@ -163,6 +163,6 @@
 <text x="233.5" y="125.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">E</text>
 <text x="233.5" y="239" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">S</text>
 <text x="6" y="241" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Schematic. Grey dashed = position not fixed by the rules.</text>
-<text x="6" y="251.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Herald drawn beside the Sarcophagus nearest the centre;</text>
-<text x="6" y="261.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the chamber layout is open.</text>
+<text x="6" y="251.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Herald guards the Sarcophagus nearest the centre.</text>
+<text x="6" y="261.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Place Pressure Plates before deployment (not drawn).</text>
 </svg>

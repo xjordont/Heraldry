@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="336.1pt" viewBox="0 0 504 336.1">
 <title>Standard Monster AI Script</title>
-<desc>Show the five-instruction decision procedure: first valid instruction executes and the activation ends.</desc>
+<desc>Show the five-instruction decision procedure: first valid instruction executes and the activation ends unless a rule explicitly says it continues.</desc>
 <defs>
 <pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
 <pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
@@ -11,7 +11,7 @@
 <rect x="0" y="0" width="504" height="40.9" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
 <text x="5" y="12.38" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Before the steps:</tspan><tspan font-weight="400"> determine the Primary Target, applying any Target Priority printed in a Scenario-Specific Monster's AI Steps first;</tspan></text>
 <text x="5" y="23.18" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">otherwise it is the nearest visible enemy (9.5 E). Re-determine it if it ceases to be legal. The Monster executes the </tspan><tspan font-weight="700">first valid</tspan></text>
-<text x="5" y="33.98" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">instruction</tspan><tspan font-weight="400"> and ignores the rest unless a rule says they continue. Monsters do not use AP.</tspan></text>
+<text x="5" y="33.98" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">instruction</tspan><tspan font-weight="400"> and ignores the rest unless a rule says it continues. Monsters do not use AP.</tspan></text>
 <rect x="0" y="52.9" width="196" height="43.2" fill="#fff" stroke="#000" stroke-width="1" rx="2.5"/>
 <circle cx="13" cy="65.9" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="13" y="69.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
@@ -67,8 +67,9 @@
 <text x="5" y="265.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">No enemy visible, but is a Hidden enemy within</text>
 <text x="5" y="276.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">12" and LOS?</text>
 <rect x="242" y="238.9" width="262" height="43.2" fill="#f0f0f0" stroke="#000" stroke-width="0.8" rx="2.5"/>
-<text x="247" y="250.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">That enemy's controller makes a DEX Check; on a failure it loses</text>
-<text x="247" y="261.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hidden. If several, the nearest. The activation then ends.</text>
+<text x="247" y="250.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">That enemy's controller makes a DEX Check; on a failure that</text>
+<text x="247" y="261.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">enemy loses Hidden. If several, choose the nearest, using 9.5 E for</text>
+<text x="247" y="272.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">ties. The activation then ends.</text>
 <line x1="198" y1="251.9" x2="235" y2="251.9" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
 <polygon points="241,251.9 234,248.7 234,255.1" fill="#000"/>
 <text x="220" y="248.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">yes</text>

@@ -1,10 +1,10 @@
 {
- "reviewer": "Codex RC493 delta reviewers for FIG-06/11/12/16/18/19; 51 unchanged entries carried forward from recorded prior reviewers",
- "reviewed_at": "2026-10-15",
+ "reviewer": "Codex integration owner and two delegated figure reviewers; all 57 freshly inspected; repair authors, not an independent human review",
+ "reviewed_at": "2026-10-16",
  "figures": [
   {
    "id": "FIG-01",
-   "svg_sha256": "1a7289ab44110c2ee0eecad78db26907c95b3049f76c47db758f0e01d1f2d0c1",
+   "svg_sha256": "ef4dcbe2044bb1a18ed96591f7b16a779948a153fc244ad8a3e9fa605975a71c",
    "caption_sha256": "52861a6881d4605007bb65dbf1b5fdc4e48ae089709972c007b9e373633557d6",
    "verdict": "PASS",
    "checked_against_lines": [
@@ -14,14 +14,44 @@
     "1091-1120",
     "1121-1131"
    ],
-   "findings": [],
-   "rules_sha256": "d1a72d227329f5931d351c9692f4eb8f098c34e88c637edf11242d8d97943548"
+   "findings": [
+    {
+     "id": "RC493-FIG-01-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Checked-in phase badges had duplicated overdraw.",
+     "fix": "Regenerated from existing generator to restore a single white badge with black numeral.",
+     "review_report": "production/qa/figure-review-core-rc493.md"
+    }
+   ],
+   "rules_sha256": "d1a72d227329f5931d351c9692f4eb8f098c34e88c637edf11242d8d97943548",
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "3.1-3.5",
+    "observations": "Four phase cards, intervening arrows, next-round loop, and reversed Party/Monster exception are readable. Regeneration removed duplicated badge overdraw in the checked-in SVG, restoring one white circle and black numeral per phase with better contrast. Phase timing is unchanged.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-01.png",
+     "png_sha256": "3aa5d7ea53913263b54b0dd4bc5446895e9c05ad24cd57450bf7e257c1509ffa",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
+   }
   },
   {
    "id": "FIG-02",
-   "svg_sha256": "9c9314e179a9aa1321c0539d4a835e5f7e70cc5de3630834b565a558c2ae7c35",
+   "svg_sha256": "e01dc73c3a8e2a05b4e2af34a17ee1a33b24f49b3944f6e326f0c1f390b878e8",
    "caption_sha256": "ed4ed4f46d21fef9323d26e776d16e5dec23538dd2debe48cc8b8963d4e216ab",
-   "verdict": "PASS_WITH_NOTES",
+   "verdict": "PASS",
    "checked_against_lines": [
     "564-571",
     "1055-1080",
@@ -36,21 +66,50 @@
      "issue": "Earlier note: Monster Phase row lacked the Block trigger damage type. Current SVG reads 'A Monster's slashing attack would damage the Hero'.",
      "evidence_source_line": "1623-1626 (5.5.1 Trigger)",
      "fix": "None needed; verified in current SVG text and render."
+    },
+    {
+     "id": "RC493-FIG-02-FULL",
+     "severity": "major",
+     "status": "resolved",
+     "issue": "Activation summary omitted the Stunned/Sleeping 0 AP exception and unable-to-act branch.",
+     "fix": "Restored existing source exceptions, qualified below-1-AP reminder, and re-inspected both columns.",
+     "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "eefbd1c57c68122ffa07c1bee9165b66f1e24aa6adcdd3658607eb99d4e2e731",
+   "rules_sha256": "b736ff7957a6700b34ce2588199ac3299cdfb6764f9e0b8cc5ddfd67193698cf",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
     "note": "Spot table amendment does not change the drawn Move/Attack/Block AP sequence; source comparison and rendered diagram remain consistent.",
     "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "2.5; 3.3-3.3.2; 4.2; 4.5; 5.5.1",
+    "observations": "Added the existing Stunned/Sleeping 0 AP activation exception and the cannot-perform-an-action branch. Qualified the below-1-AP reminder so it does not contradict that exception. Preserved the 3 AP example, shield assumption, slashing Block trigger, and spent/unspent squares. Cost chips now use bracket notation. Both columns remain readable without overlap.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-02.png",
+     "png_sha256": "b071692a3506b636eea866fa3d6ce67dc1b826d24c8a7509c62c69fb123fb742",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-03",
-   "svg_sha256": "37d280f1068d619b18ab4238014731f5a183aebbf932a90a9baf4f493ba8aad6",
-   "caption_sha256": "09631197450cead2e57a066925946b5f44b24d6a6ea541cb5a6e6fa1a9e289b3",
-   "verdict": "PASS_WITH_NOTES",
+   "svg_sha256": "2d23e5cd3f5a4066a986ec6000e71779a3c5a749633c06eb7a6ba2b665c6f123",
+   "caption_sha256": "6d55c01c7630a81e9ac7634f63590cd13bbe3e5abba7626d0f4280f37c6f985f",
+   "verdict": "PASS",
    "checked_against_lines": [
     "1486-1501",
     "1511-1522",
@@ -60,17 +119,47 @@
    "findings": [
     {
      "severity": "minor",
-     "status": "accepted",
+     "status": "resolved",
      "issue": "Panel B step 1 summarises 5.1.1 step 1 without the words 'together with any flat mitigation' or the multi-type reduction order. Nothing invented; both worked examples reproduce the source numbers exactly (6-5+4=5; 9-3=6; 9-(3+2)=4).",
      "evidence_source_line": "1488-1490",
-     "fix": "Optional: append 'with any flat mitigation' to step 1. Accepted: summary is faithful and the examples do not depend on it."
+     "fix": "Optional: append 'with any flat mitigation' to step 1. Accepted: summary is faithful and the examples do not depend on it.",
+     "re_review_note": "2026-10-15 full review: Flat mitigation and shared multi-type reduction order now printed and actually viewed."
+    },
+    {
+     "id": "RC493-FIG-03-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Mitigation summary omitted flat mitigation and shared multi-type reduction order.",
+     "fix": "Restored source order and standardised non-applicable AV notation.",
+     "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "a3ed7f5a303b089a293b4971c9b47e41dbabd4381b7906d7f63bd756bc802ce9"
+   "rules_sha256": "a3ed7f5a303b089a293b4971c9b47e41dbabd4381b7906d7f63bd756bc802ce9",
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "5.1.1; 5.2; 5.3; 5.4.3",
+    "observations": "Mitigation now includes flat mitigation and reduction in the source's listed type order. The worked 6 slashing/4 fire and 9 slashing cases retain all source numbers and results. Replaced the non-applicable fire AV dash with None and normalised minus signs. The five attack stages, Total Miss note, tables, and captions are readable.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-03.png",
+     "png_sha256": "9db377f26f6317527f3012830c41053401aa23591648587d3ca83968882ef8f4",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
+   }
   },
   {
    "id": "FIG-04",
-   "svg_sha256": "9b096e37ee0f9c9fa71bb557dc3608a31c76042b8495b26c3b6abd2bdc32aea1",
+   "svg_sha256": "ed49b1efbbfa1023ba875ae753aaa1861632a43e768c153bf8f8a3a72d854c68",
    "caption_sha256": "af0a2348990a339cb58f9c310a312c21d2bf0509ff7c0827544a8671fe2c7a82",
    "verdict": "PASS",
    "checked_against_lines": [
@@ -78,7 +167,28 @@
     "629-647"
    ],
    "findings": [],
-   "rules_sha256": "f8ca9f36f833cd713aff701a69e1dd72987d11fb52905b708d378c8b57dedbe5"
+   "rules_sha256": "f8ca9f36f833cd713aff701a69e1dd72987d11fb52905b708d378c8b57dedbe5",
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "2.6; 2.6.1",
+    "observations": "Closest-point Tabletop measurement, Grid 1.5 + 1.5 + 1 = 4 inches, S/M/L/H footprints, and the Declare/Verify/Move/Declared State sequence agree with the source. Corrected singular combatant pronouns and schematic punctuation. No geometry change was required.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-04.png",
+     "png_sha256": "37604b37492d214e240c61e9e83e5a1937a281beff638ae2e087680c8a89e960",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
+   }
   },
   {
    "id": "FIG-05",
@@ -107,7 +217,28 @@
      "fix": "Optional: use a neutral hatch. Accepted."
     }
    ],
-   "rules_sha256": "420b6f83c7b85679fb2c60c75e6be4b3db5d3df2e986bfb14a32b03754c87c2d"
+   "rules_sha256": "420b6f83c7b85679fb2c60c75e6be4b3db5d3df2e986bfb14a32b03754c87c2d",
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "2.6; 2.9.3; 4.4.3; 4.4.7",
+    "observations": "Running totals 1, 2.5, 4, 5, and forbidden 5.5 are legible. The forbidden corner example has both orthogonal intermediate cells blocked; the permitted case leaves one open. Difficult Terrain costs and the Large-footprint destination cost remain correct.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-05.png",
+     "png_sha256": "1ef5d919e046562f255c1d759b18eb4d6515824fb495c1733db8d09103f0825b",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
+   }
   },
   {
    "id": "FIG-06",
@@ -145,11 +276,32 @@
     "previous_rules_sha256": "0fb4f27e637f8249d86a04ddd32eed46e0832a8971fb9ddb7b8ece48635e6902",
     "evidence": "production/qa/rc493-figure-review-ai.md",
     "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "2.6.1; 4.4.4; 5.1; 5.5.4",
+    "observations": "Adjacent and Reach rings retain numeric labels, correct enemy relationships, and the Move/Shift contrast. The text states 1 AP, Disadvantage, and before-leaving timing. No semantic or geometry repair was required.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-06.png",
+     "png_sha256": "529e9a150b5f2ae98762382d5827fb2b0e451c0631a027dcf2b474fc9ad5f523",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-07",
-   "svg_sha256": "3c498cd01aacd8209db2fc410a87d0e44595c43a9df01c6f19fd20a26dc8c87a",
+   "svg_sha256": "320291b49379e64cbe7a944816cf56fdcaecf9bd761fb35a76cd2cd5a627ed79",
    "caption_sha256": "9aace777a0ef13cc944e5a164ff9619a7904b7c507c45bd82647ac80cf90ba82",
    "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
@@ -181,15 +333,44 @@
      "issue": "P-02 (2.9.1 Impassable Terrain provides Cover unless its terrain entry says otherwise). Panel F now reads \"A generic Impassable feature provides Cover unless its terrain entry says otherwise (chasms and pits provide none), and does not block LOS (2.9.1, 2.8.4)\"; caption carries the same qualifier. Both match patched line 838 and the terrain-table row at 872 (\"Chasms and pits ... They provide no Cover\"). Panel F still draws a generic Impassable feature with clear LOS; nothing else in the figure changed meaning. Re-rendered and re-read every text node (panels A-F, footer, key) against 2.7.2 and 2.8.4; LOS-blocked/clear outcomes and Cover outcomes unchanged.",
      "evidence_source_line": "838; 872; 804-805",
      "fix": "None; P-02 verified depicted faithfully. Triaged as A-19."
+    },
+    {
+     "id": "RC493-FIG-07-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Cover summary omitted the explicit rule-based exception for Areas of Effect and hazards.",
+     "fix": "Restored exception from 2.8.4.",
+     "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "2c44cf737fb0cff529cfeef78a0cd24cd33a076e26a8b02d9ff4587f580f7ba0"
+   "rules_sha256": "2c44cf737fb0cff529cfeef78a0cd24cd33a076e26a8b02d9ff4587f580f7ba0",
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "2.7.1; 2.7.2; 2.8.4; 2.9.1",
+    "observations": "All six LOS/Cover panels remain readable: blocking interior, shared Blocking corner, Cover interior, touched corner, intervening combatant, and Impassable feature. Restored the explicit Areas of Effect/hazard Cover exception in the footer. The post-Shift line clears the intervening combatant.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-07.png",
+     "png_sha256": "9b8585d92047de9963836c217a4e3dba4c527136e638ec168703753059e92e60",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
+   }
   },
   {
    "id": "FIG-08",
-   "svg_sha256": "e13c38904a9db3e3cff11ea37fb61466567743c251e915052f54bee33929cabe",
-   "caption_sha256": "2720a0ef5102c9927f3631a14d2138988e77cf96cf8cbb92988104b9e235e040",
-   "verdict": "PASS_WITH_NOTES",
+   "svg_sha256": "f3e1e73b91362f56c1964b3dcfd0bdbfa9c42d547d914d41bf05f6761ac86148",
+   "caption_sha256": "ea71fbfe0c101eb942d0c1165c467baf33266a6fc2d671a7c30a04cf45650c47",
+   "verdict": "PASS",
    "checked_against_lines": [
     "698-747",
     "727",
@@ -218,9 +399,38 @@
      "evidence_source_line": "727-728; 741",
      "fix": "Panel C: replace \"The origin square (the source) is not affected.\" with \"The combatant the cone originates from is not affected.\" Caption: replace \"affects 7 squares and not its origin square, because a cone or line does not affect the combatant it originates from\" with \"affects 7 squares beyond its origin square, and never affects the combatant it originates from\". Optional: prefix panel A sentence with \"Unless a rule says otherwise,\". Does not affect the gate.",
      "resolution": "Re-review after wording fix: panel C now reads 'The combatant the cone originates from is not affected', panel A restores 'Unless a rule says otherwise', and the caption reads '7 squares beyond its origin square, and never affects the combatant it originates from' (caption omits the qualifier but matches P-01's meaning for the normal case). Matches patched 2.7.3 (does not affect the combatant it originates from); no claim about the origin square as a square. Cone geometry and counts (13, 7) unchanged in render."
+    },
+    {
+     "id": "RC493-FIG-08-FULL",
+     "severity": "major",
+     "status": "resolved",
+     "issue": "Aura source extent and shared mitigation order could be read as universal point measurement and an incorrect reduction sequence.",
+     "fix": "Qualified single source square/point source versus combatant footprint, preserved originating-combatant exception, and printed exact shared mitigation order.",
+     "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "21a93b363f7429179b99d2d01229ee8524458d968cfc75f1d680900bb42881a5"
+   "rules_sha256": "79254c859187a2e1710e07bad7ca841c517644403f4f15f649022374b66ce2c9",
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "2.7.3; 5.1.1; 5.4.3",
+    "observations": "Retained the 13-square single-source Aura and 7-square cone counts and the blocked-square example. Added the originating-combatant exception qualifier and a full-width Aura-source note distinguishing point sources from combatant footprints/every occupied source square. The shared-roll flow now explicitly orders Reaction, AV determination including applicable AD, AV/flat mitigation, then Immune/Resistant/Vulnerable. The longer final box remains readable at 9 pt. Shared caption now qualifies the single source square.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-08.png",
+     "png_sha256": "fede2b14df8c3ad2a757239d2b89fbeb69702fd83c5e1daa70dd5de0f8284717",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
+   }
   },
   {
    "id": "FIG-09",
@@ -241,13 +451,34 @@
      "fix": "None. Triaged as A-14."
     }
    ],
-   "rules_sha256": "4c471b73102a7d7e73c9004f4d9ed3eee84faadb73471c5d67dce44359abf2ad"
+   "rules_sha256": "4c471b73102a7d7e73c9004f4d9ed3eee84faadb73471c5d67dce44359abf2ad",
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "4.4.6; 4.4.7; 5.6.1",
+    "observations": "Push/Pull/Slide direction examples, stopping before solid obstructions, no automatic Collision damage, and the 3-inch push/2-inch ledge example agree with the source. Fall damage is not invented. No repair was required.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-09.png",
+     "png_sha256": "bbe112659d11f1bd6a8ddeba55c136b72a84d525573c8fd01a160a43aebc290d",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
+   }
   },
   {
    "id": "FIG-10",
-   "svg_sha256": "44446a9b431e175b9024f6b76a79703d6cb42b2283b3c54fb1c466482a0d515d",
+   "svg_sha256": "38d5f9c1879deda527706abbf229630d9273d9adaaef694011ae6a9c8208932a",
    "caption_sha256": "4839eb469dc7059f722eddbb959d8140ea89a8c3e1e8c69be21a6d1102f90ab8",
-   "verdict": "PASS_WITH_NOTES",
+   "verdict": "PASS",
    "checked_against_lines": [
     "7551-7572",
     "7573-7590",
@@ -256,19 +487,49 @@
    "findings": [
     {
      "severity": "minor",
-     "status": "accepted",
+     "status": "resolved",
      "issue": "Hidden note omits the clause 'unless a rule makes that enemy visible to the group' and that the enemy remains Hidden after the group wakes. Not an invented mechanic; the figure heading already says triggers apply 'unless a scenario or stat block says otherwise'.",
      "evidence_source_line": "7588",
-     "fix": "Optional: add the 'unless a rule makes that enemy visible' clause. Accepted."
+     "fix": "Optional: add the 'unless a rule makes that enemy visible' clause. Accepted.",
+     "re_review_note": "2026-10-15 full review: Hidden retention and explicit rule-based visibility exception now printed and actually viewed."
+    },
+    {
+     "id": "RC493-FIG-10-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Hidden/visibility note omitted source qualifiers.",
+     "fix": "Restored retained Hidden and explicit visibility exception for Hidden/Invisible enemies.",
+     "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "81d4f7ac6034183ba29085355d20a3fa2d779d93d62b3d310727be7d646a2e3e"
+   "rules_sha256": "81d4f7ac6034183ba29085355d20a3fa2d779d93d62b3d310727be7d646a2e3e",
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "9.3; 9.4; Hide distance in 5.9",
+    "observations": "Added the omitted Hidden-retention rule and the explicit rule-based visibility exception for Hidden/Invisible enemies. Resting/Awake state transition, the five wake triggers, and blocked-LOS/distance examples remain readable and correct.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-10.png",
+     "png_sha256": "ab4d10405e6fba39f300a8c95d5931ccf58491b1ee6805c7a51b8e30f2f8ae13",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
+   }
   },
   {
    "id": "FIG-11",
-   "svg_sha256": "1e5f3f6044822265041b4b981aa80478f44121742703d6a8d498837e929fe930",
-   "caption_sha256": "8da7d89daaa60fbf9f01e91971cfa7dafd10c016db63e670bc9fd22b6ce3ae01",
-   "verdict": "PASS_WITH_NOTES",
+   "svg_sha256": "56173aa391ae8f4243f4c9e179a5eb1361bdf931643636f403e994dd9491dd09",
+   "caption_sha256": "600f954dc6577dfeec6d79eb5a3a19037f9cd56134184df898933b8b5144b980",
+   "verdict": "PASS",
    "checked_against_lines": [
     "7626-7637",
     "7638-7641",
@@ -278,16 +539,26 @@
     {
      "id": "RC493-F11-M01",
      "severity": "minor",
-     "status": "open",
+     "status": "resolved",
      "issue": "SVG preface retains the singular Monster pronoun \"they continue\"; current 9.5 uses \"it continues\". Proposed figure-copy follow-up, not applied.",
-     "evidence": "production/qa/rc493-figure-review-ai.md: FIG-11"
+     "evidence": "production/qa/rc493-figure-review-ai.md: FIG-11",
+     "resolution": "2026-10-15: authorized figure repairs applied, regenerated and actually re-inspected; see full review."
     },
     {
      "id": "RC493-F11-M02",
      "severity": "minor",
-     "status": "open",
+     "status": "resolved",
      "issue": "Caption states activation ending without the explicit continuation exception. The SVG itself prints the exception. Proposed caption alignment remains unapplied.",
-     "evidence": "production/qa/rc493-figure-review-ai.md: FIG-11"
+     "evidence": "production/qa/rc493-figure-review-ai.md: FIG-11",
+     "resolution": "2026-10-15: authorized figure repairs applied, regenerated and actually re-inspected; see full review."
+    },
+    {
+     "id": "RC493-FIG-11-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Continuation copy and Search antecedent/tie reference needed precision.",
+     "fix": "Fixed Monster pronoun, caption exception, named enemy and 9.5 E tie reference.",
+     "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
    "rules_sha256": "f9d695a6b8ceb164269fee683d9b62b9426d4d322693aa0511d7f5b752e879fe",
@@ -305,12 +576,33 @@
     "previous_rules_sha256": "00c239576fd853dca920544d0d195be730841820fb5b05bdb9e17d70f352936e",
     "evidence": "production/qa/rc493-figure-review-ai.md",
     "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "3.4.3; 9.5 C-F",
+    "observations": "Corrected the singular Monster continuation pronoun. Search now explicitly says that enemy loses Hidden, and refers to 9.5 E for equal-distance ties. Root corrected the caption's continuation exception. All five yes/no branches, controller DEX Check, and no-AP instruction remain legible.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-11.png",
+     "png_sha256": "c534cebd497bfd4a53c39b428bdcbbf58594a980f408bee6c1792768a2f685b7",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-12",
-   "svg_sha256": "4e71c511ba9a4939192f2e7f50ffe9cbea30b36f65edf35351ac6aea66925395",
-   "caption_sha256": "945896acf9d3b54252f47c392792c1f06dae616e04a3d44d2f388600297b457d",
+   "svg_sha256": "676089746c0d33ee1b2604dfda6db5eee97e0877677d41704c9e60e131580cda",
+   "caption_sha256": "716f96cb579ece9398a8ceeaf468786df9db73bec39f5f066ebdf4166b0c356d",
    "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
     "7605-7614",
@@ -335,12 +627,21 @@
     {
      "id": "RC493-F12-M01",
      "severity": "minor",
-     "status": "open",
+     "status": "resolved",
      "issue": "Four U+2014 em dashes in SVG prose violate the typography lock. Proposed generator/SVG copy substitutions remain unapplied.",
-     "evidence": "production/qa/rc493-figure-review-ai.md: FIG-12"
+     "evidence": "production/qa/rc493-figure-review-ai.md: FIG-12",
+     "resolution": "2026-10-15: authorized figure repairs applied, regenerated and actually re-inspected; see full review."
+    },
+    {
+     "id": "RC493-FIG-12-FULL",
+     "severity": "major",
+     "status": "resolved",
+     "issue": "Blocked Route caption did not retain the this-activation legal attack-position condition.",
+     "fix": "Aligned caption to 9.5 F, retained explicit melee schematic and removed four em dashes.",
+     "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "2eee4832b5377f529b7c048e4ee932be50481c22deb1a42bec3d18fa316aef91",
+   "rules_sha256": "ab68a132ff34338f113ad9641cee4dfc263dba9944a375d27fb282aca10cbe38",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -355,6 +656,27 @@
     "previous_rules_sha256": "4b9a257a8b54903b267dfb6cc7e755329d966f6de895f6a02c1ac93a299dcfbb",
     "evidence": "production/qa/rc493-figure-review-ai.md",
     "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "9.5 A, C, E, F",
+    "observations": "Removed four em dashes. Nearest-visible selection excludes the nearer Hidden enemy; HP 4/HP 7 are labelled examples; Most Recent Attacker includes HP loss. The blocked route is explicitly a melee case. Root aligned the caption to the this-activation attack-position condition.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-12.png",
+     "png_sha256": "89c10cc6de20d1c2049b271b4c3c209e8be365d375d234b2561239f120cf9918",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -481,12 +803,33 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "10.1; all 36 Party Deployment paragraphs in 10.4",
+    "observations": "Re-read all 36 deployment paragraphs and the default procedure. The five illustrated edge/corner patterns, 6-inch depths, 8-by-8-inch corners, and placing-order explanation agree with current source. Boards and labels remain readable. No geometry change was required.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-13.png",
+     "png_sha256": "52578cc6300e583acfd45d27a976ffe1511983f46e174cc14c114fe129ed0427",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-14",
-   "svg_sha256": "f083e99959602cb73d0320e933c4ff2606fced992f288988289eacfbe192b4f4",
-   "caption_sha256": "e8df7abbe9f5ebe6f622b24f93949e75aa83e20727227341f48972cb11c483ce",
+   "svg_sha256": "e070b9a30feaf25f60dcdd9eae8625216091ac5abd6518bc97c12478b321c65a",
+   "caption_sha256": "f4a27a1a867587d4f23c9c616c7132e09202d2a769b7ac8147afd47a1e0a1eca",
    "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
     "12132-12170",
@@ -523,6 +866,14 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Panels re-read against 12132-12170 (Greenmark 3), 12209-12238 (Greenmark 4), 12965-12997 (Undermarches 2) and 13035-13062 (Undermarches 3); none of these lines changed in RC486. SVG and caption unchanged. SVG unchanged since the previous review; carried forward after re-reading against RC486.",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-14-FULL",
+     "severity": "major",
+     "status": "resolved",
+     "issue": "Trail summary omitted the party-only-Hero exception.",
+     "fix": "Restored existing exception in panel and caption.",
+     "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
    "rules_sha256": "3f6184820c510f013384079d0a3acd3b43b6458efb99f98f9e7762731ae7a77c",
@@ -566,11 +917,32 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "3f6184820c510f013384079d0a3acd3b43b6458efb99f98f9e7762731ae7a77c",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "Bandit's Toll 12132-12170; Chasm Crossing 12965-12997; Quake 13035-13062; Spider's Silk Route 12209-12238",
+    "observations": "Added the source's only-Hero exception to the Trail panel; root added it to the caption. Retained 8-inch shared-edge deployment, 6-inch opposing-Hero separation, 8-by-8-inch Safe Zone with 3-inch separation, and Ravine deployment. Normalised the apostrophe. Dimensions and centre-detail labelling remain readable.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-14.png",
+     "png_sha256": "a11dda4623d30e95216eb662273b21aa1c94148372b8a97d8be2f189bdd73bb6",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-15",
-   "svg_sha256": "4b0ace584a52b631868ef8a9a58cce079fda1d7a078615ff3c18deea4042c17a",
+   "svg_sha256": "ee1ee3774b499b8941b28a99c1c640960c22431a66522412ed6d1bfce70c2010",
    "caption_sha256": "9ad7ddf4dd7899960895ce2aa3af130450d8492101c1d158ed0e0fdf0187977e",
    "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
@@ -656,11 +1028,32 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "164cb74b8b1ca488a72cc943a36ddb1364923af4072ad6635a3f8f416cafdea1",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "Chasm Crossing 12945-13014; Jump 4.4.9",
+    "observations": "Survey Map/Stone placement, Speed penalty, ledge/gap ranges, failed Jump reference, Chasm Fall, and Fly/Climb exceptions agree with the scenario. Corrected singular pronouns and schematic punctuation. The scenario-specific removal/recovery procedure remains distinct from generic Falling.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-15.png",
+     "png_sha256": "4154b3c737979555ba91f78a22f8ee75b6f1691a7529f42e8815558c36aafb0d",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-16",
-   "svg_sha256": "ee2d73d64f4e2c1396530cc69b2c044f987907991e2927475703211d76d835c8",
+   "svg_sha256": "aab154537f89f6da5f7acd26079f3486769e5e8e7e4b7fd41b37201ca343578b",
    "caption_sha256": "ae5fde33740332bc58851e5f222f4cb7d6a742c0b0bcd7b59081340c117c55d7",
    "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
@@ -757,13 +1150,34 @@
     "previous_rules_sha256": "54c56a5dba42f519233901490946ae25742afff4b2b77b4c443115e3e7861384",
     "evidence": "production/qa/rc493-figure-review-setup.md",
     "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "Whispering Grove 12042-12111; 9.5 E",
+    "observations": "Warden appears beside the first interacted Stone and targets the latest valid interacting Hero. Roots still checks the 8-inch range and not-Immobilized condition. Group 2 is inside the Clearing, 4 inches from its edge. Corrected the printed apostrophe; no encounter or position rule was changed.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-16.png",
+     "png_sha256": "c6d31c2b38bf77bf966823dc90c0b2ae361bacc59212ddf867a5f71859b10ed2",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-17",
    "svg_sha256": "c2d2eaae5ed8a465b4b5f92d4e9d92298827624fd8f4c3d24fb395d504d91087",
    "caption_sha256": "9bbff0ec3080c708ed8841aacc21de7f3ab9e2b3496f5307f163a768e14c3b43",
-   "verdict": "PASS_WITH_NOTES",
+   "verdict": "PASS",
    "checked_against_lines": [
     "15189-15199",
     "15200-15216",
@@ -785,12 +1199,33 @@
     "date": "2026-10-09",
     "note": "Drawn geometry and caption are unchanged. Compared the RC487 batch against the diagram’s depicted setup/procedure: new objective, timing, ability or terrain clarifications do not change this depiction. Rebased scenario element citations pass active-source spans, distance/containment, terrain-type and glyph-registry checks. Actual rendered diagram inspected on contact sheet.",
     "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "11.2; 11.2.1; 11.2.3; 11.2.4",
+    "observations": "Campaign phases, return Journey timing, Town checklist, six locations, default 4 TAP, Journey modification, and unless-stated-otherwise qualification agree with current authority. All phase cards and location rows are legible. No repair was required.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-17.png",
+     "png_sha256": "db76de9950a2252acdb5403fb585f4f2cdf913481fc521396bf59e83b757c68e",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-18",
-   "svg_sha256": "2627c83d32b5c91333b6ebb22a1166756bd5a2f28733b836890785ef3a92b686",
-   "caption_sha256": "0e28e0e58ebb9a1ac43821294569d5aad172d5cc1dccd85a98f16cafc7337d9d",
+   "svg_sha256": "c16005bf9982073175e5dbf726e357ae3f73320f586bc953eb931485252ce045",
+   "caption_sha256": "bb91f97acb9764f77c17c65ad3005629e883300ccf5fdc36cff09fb3149593d2",
    "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
     "16082-16208",
@@ -809,11 +1244,12 @@
     },
     {
      "severity": "minor",
-     "status": "accepted",
+     "status": "resolved",
      "issue": "Geometry re-measured (7 pt/in; board 168 pt = 24\"): deployment bands 28 pt = 4\" from the short edges; Edric and Varek on the centre line 4\" from their edges; Mara and Senna 6\" east of it (Senna drawn on the east side as north-facing view); ruin 21 pt = 3\" at the centre; Treasure Chest 35 pt = 5\" east of the centre and outside both zones and the ruin ring. The label \"Satchel: adjacent to ruin\" sits north of the ruin outline, which could be read as a side; the figure states the side is unstated. Optionally move the label beside the ring with a leader.",
      "evidence_source_line": "16160-16210; 16348-16380",
      "fix": "None required.",
-     "rc493_observation": "Historical location wording retained as provenance: the current viewed PNG places the label south/below the Satchel and states one legal arrangement; do not repeat north-of-ruin as a current observation."
+     "rc493_observation": "Historical location wording retained as provenance: the current viewed PNG places the label south/below the Satchel and states one legal arrangement; do not repeat north-of-ruin as a current observation.",
+     "re_review_note": "Historical scale/label-location observation superseded. Current board is at 7.5 pt/in and Satchel label is below the Satchel; unfixed side is expressly qualified. Current render directly inspected."
     },
     {
      "severity": "minor",
@@ -832,9 +1268,18 @@
     {
      "id": "RC493-F18-M01",
      "severity": "minor",
-     "status": "open",
+     "status": "resolved",
      "issue": "Compact Senna/Dodge outcome row prints the fixed damage result before \"Mara declares Dodge\"; it does not explicitly grant a late choice, but adding declaration-before-damage wording would avoid teaching ambiguity. Proposed figure-copy follow-up remains unapplied.",
-     "evidence": "production/qa/rc493-figure-review-setup.md: FIG-18"
+     "evidence": "production/qa/rc493-figure-review-setup.md: FIG-18",
+     "resolution": "2026-10-15: authorized figure repairs applied, regenerated and actually re-inspected; see full review."
+    },
+    {
+     "id": "RC493-FIG-18-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Dodge summary presented damage before declaration.",
+     "fix": "Printed Dodge declaration before damage while preserving rolls, AP and HP; decoded Awake suffix.",
+     "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
    "rules_sha256": "894d234f58ca960a33618502f6786a4149c7f08d74b6ea8e705996527fadfd86",
@@ -852,11 +1297,32 @@
     "previous_rules_sha256": "0d21a2a30bec258e6f78ff0e324be2ed038d83119260de77875b14e0a8ea10d6",
     "evidence": "production/qa/rc493-figure-review-setup.md",
     "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "A.1-A.4; A.7-A.9; A.11",
+    "observations": "Reordered Senna's row so Mara declares Dodge before damage generation. Preserved every fixed die, modifier, AP square, and HP result. Corrected Edric/Mara pronouns and minus signs. Expanded the compact key to A = Awake, without shrinking type. The board/inset distinction and unspecified-position notice remain explicit.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-18.png",
+     "png_sha256": "befc0afb40d8f275f59143f3269746de43b27b65a7ae88642d8dc90f15c77b7e",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-19",
-   "svg_sha256": "fb50d064c7ce685f410f6188688a8e37abac0de8eafba61eaefc0d83f2d9226c",
+   "svg_sha256": "2d4fef806b68e888b092a93dda9865836aed8621943664671ca1a340df14aa55",
    "caption_sha256": "fe49806f43a98b023b889e149ab5d124fada5cd1ddb23fceae5a6a02f9988d64",
    "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
@@ -892,11 +1358,12 @@
     },
     {
      "severity": "minor",
-     "status": "accepted",
+     "status": "resolved",
      "issue": "Label 'Group·R' is drawn on top of the Cart-or-wall hatch piece (it hides part of the piece and reads as labelling it); its leader runs a long way to the east group. The '5-7\"' label also sits on the outer dashed ring.",
      "evidence_source_line": "17076; 17080",
      "fix": "Move the 'Group·R' label to a clear spot beside the east group (lp 'b' on m1) and the '5-7\"' label off the ring line.",
-     "resolution": "RC486 re-review: the 'Group·R' label no longer covers the Cart-or-wall piece (piece moved, label beside the east group with a short leader). The '5-7\"' label still sits on the outer dashed ring behind its white halo, which is the map convention elsewhere and stays legible."
+     "resolution": "RC486 re-review: the 'Group·R' label no longer covers the Cart-or-wall piece (piece moved, label beside the east group with a short leader). The '5-7\"' label still sits on the outer dashed ring behind its white halo, which is the map convention elsewhere and stays legible.",
+     "re_review_note": "2026-10-15 full review: Historical Group-label location is superseded: current label sits in open space; state key is expanded and band dimension remains legible."
     },
     {
      "severity": "minor",
@@ -919,6 +1386,14 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. SVG changed by the illustrator: the Cart-or-wall piece moved off the Group label (still within 4\" of the centre, 17076) and both exit arrows are now solid (17090: each side leaves by its own deployment edge). Panel B text, Treasure arithmetic (12+4+2+3 = 21c) and Monster Entry geometry unchanged and match B.6 (17074-17090). SVG changed since the previous review (hash updated).",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-19-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Resting suffix was not decoded in local key.",
+     "fix": "Expanded local key; normalised minus signs without altering arithmetic.",
+     "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
    "rules_sha256": "385bbb51aec6acc3852dac54d683b0f646971a86a1aaf77bdd19d650bd6be153",
@@ -937,13 +1412,34 @@
     "previous_rules_sha256": "197d272c16c30581b176d8feedc533aa05bdfe4138298a0abc5d73f8524987bd",
     "evidence": "production/qa/rc493-figure-review-setup.md",
     "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex core figure reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "B.1; B.4 Ironscar; B.5; B.6",
+    "observations": "Default 3-group random assignment, 5-7-inch entry band, 4-inch deployment, Strongbox/Satchel values, Speed reduction, pickup AP, and 21c assumed example agree with source. Expanded the key to R = Resting. The Group label is on open space with a leader, not on the cart hatch.",
+    "report": "production/qa/figure-review-core-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/RC493/core-final-FIG-19.png",
+     "png_sha256": "b3cfbe69ae4cd316e16caabfa870aef9dbc412da2b5178f2968167d6f8027e32",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-20",
-   "svg_sha256": "1d66a838af5dd263e854c2cf79dc4a414bfe6ec7fa8512e448624982dca2418a",
-   "caption_sha256": "4e7a4b0ea5e8e47438461bfdc1de9f61bd20db112177c4a0652b7b15ee284b2b",
-   "verdict": "PASS",
+   "svg_sha256": "c8ecb0336f3d4f2d80f612122f18e3d348bf5ab89da1fb8930ece2d39f7c8edd",
+   "caption_sha256": "a63ce41dec67f78d599463298aaaf0171c81b80d91fa13fc1c61ba164b3c07b5",
+   "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
     "11068-11072",
     "10962-10990",
@@ -991,6 +1487,14 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Key redrawn without the 'not placed by the text' swatch: no scenario map uses it any more (checked: no data-glyph=unres in any SVG). 'Arrival edge (R3 = Round 3)' swatch matches the maps (FIG-23, 29, 33, 36, 55). Orientation text matches 11056-11058, scale text 594, Large/Huge 618-619, step 11 default 11072, terrain swatches the 2.9.1 table (845-873). SVG changed since the previous review (hash updated).",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-20-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Key swatches touched; measurement was unqualified; caption named a removed symbol.",
+     "fix": "Separated Large/Huge rows, added Tabletop/Grid measurement and state/arrival labels, removed stale caption claim.",
+     "review_report": "production/qa/figure-review-key-template-rc493.md"
     }
    ],
    "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
@@ -1034,13 +1538,34 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex integration owner",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "2.6; 2.9.1; 10.1; shared glyph registry",
+    "observations": "Directly viewed all four key columns and final caption. Large/Huge swatches are separated; group, state and arrival suffixes are decoded. Tabletop closest-point measurement and Grid occupied-square/distance rules are explicit. Removed stale not-placed caption claim. Grayscale glyphs, rulers and labels are distinct and unclipped.",
+    "report": "production/qa/figure-review-key-template-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-20.png",
+     "png_sha256": "ba0f84a89337e0b60bdb69eb18b3be21cf9b9a76ce0243994724b0f9d9072f5a",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-57",
-   "svg_sha256": "85ebef91750f0f0e8f550841f60d08275c8b7813347f8921793d38b2e16d2c01",
-   "caption_sha256": "e78b962bc8252bc7cc96bc30ae8ac636038f51ed0a357b7c7585979ade6d91b5",
-   "verdict": "PASS",
+   "svg_sha256": "83321f5649c26b2063765aee63e366ee3febe834db8e4e48f48f4da930a2b8ee",
+   "caption_sha256": "df2b40190ea6c76019c3af4c7ba9fee6eb359dad06eccfe97eef0063a908fd06",
+   "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
     "11068-11072",
     "10962-10990",
@@ -1048,8 +1573,38 @@
     "11060-11073",
     "592"
    ],
-   "findings": [],
-   "rules_sha256": "4180613dd50441150a67913ed7da29ae376fb3cc30afabf7a10917721d984311"
+   "findings": [
+    {
+     "id": "RC493-FIG-57-FULL",
+     "severity": "major",
+     "status": "resolved",
+     "issue": "White deployment zones appeared to permit excluded terrain; measurement note conflated edge and zone margins and lacked Grid qualification.",
+     "fix": "Preserved exclusion hatch in zones, printed exact source prohibition, separated clearances and qualified Tabletop versus Grid.",
+     "review_report": "production/qa/figure-review-key-template-rc493.md"
+    }
+   ],
+   "rules_sha256": "4180613dd50441150a67913ed7da29ae376fb3cc30afabf7a10917721d984311",
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex integration owner",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "2.6; 10.1 Preparation Steps",
+    "observations": "Directly viewed both boards, all twelve numbered steps, key, notes and final caption. Exclusion hatch remains visible inside deployment zones; the terrain prohibition and scenario exception match source. Edge and zone measurements are separated. Rounded clearance is explicitly Tabletop; Grid uses 2.6 at 1 inch orthogonal and 1.5 inches diagonal. No clipping or label collision observed.",
+    "report": "production/qa/figure-review-key-template-rc493.md",
+    "render": {
+     "width_pt": 504,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-57.png",
+     "png_sha256": "ab85ec5cd0e4511bf15b46525f9658b38ff550e181ea2d3f2567845a6f71aa18",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ]
+   }
   },
   {
    "id": "FIG-21",
@@ -1071,7 +1626,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1111,6 +1666,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "11974-12041",
+    "observations": "Opposite 6\" long-edge zones; Boar/Wallow 2\" relation; trail/chest separation and G2 exclusion distances remain legible. No repair needed.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-21.png",
+     "png_sha256": "c70450d2faf3d575b98105d87ae67bee8cd8e2926d3262a8180bcdce00f16e43",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-21",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-21.png",
+     "png_sha256": "f3f854f4ee09c28297f53ebe60783cafe6d04c9aed43666cd8f572615efa1023",
+     "caption_sha256": "24e3de61ebae16efb499c45473c6d3e9c9ddbce16f7b430265f1800c74a005c0",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Boar/Wallow deployment caption and full key/section reference read clearly.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -1157,7 +1746,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1197,6 +1786,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12042-12111",
+    "observations": "Opposite corners, three Stones 6-8\" apart, clearing and three Resting groups match. Warden correctly absent at setup. Source calls one Stone outer without defining a special outer Stone; one legal choice remains schematic.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-22.png",
+     "png_sha256": "5a8d492c7607ab2d982ef398dcefb76365a61f899b7dbe20b01c30105094a4f7",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-22",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-22.png",
+     "png_sha256": "daf9d3f78f60368cafa0077e54ebe6db0d325908b797bb6b70d74076003f3177",
+     "caption_sha256": "a088dc773ba845429fdf518e08da129cc8186ac21979a0622bbcfb4863acd8e1",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Stone spacing and clearing dimensions remain legible in the wrapped caption.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -1236,10 +1859,11 @@
     },
     {
      "severity": "minor",
-     "status": "accepted",
+     "status": "resolved",
      "issue": "The map draws the printed 3 Wagons; if scaling places fewer (12136-12138) W1/W3 disappear but the Group 1/2 rings (12166-12167: 'whether or not Wagon 1 is placed') stay. Not stated on the map.",
      "evidence_source_line": "12134-12138; 12166-12167",
-     "fix": "Optional foot note 'Wagons 1 and 3 appear only if scaling places them'."
+     "fix": "Optional foot note 'Wagons 1 and 3 appear only if scaling places them'.",
+     "re_review_note": "2026-10-15 full review: Existing footer explicitly retains W1/W3 scaling; the old claim that the map omitted it is superseded by actual reinspection."
     },
     {
      "severity": "minor",
@@ -1249,7 +1873,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1289,13 +1913,47 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12112-12188",
+    "observations": "Trail and midpoint Barricade/W2 remain distinct; R3 entry and nearest-Captain rule remain explicit. Existing W1/W3 scaling footer already resolves the old claim that their scaling was unstated on the map.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-23.png",
+     "png_sha256": "6bc11126aed81b5b937d6270eed115e186f2e5757cae7445661efd888609e4a1",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-23",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-23.png",
+     "png_sha256": "708299ca953f43b5c1aa99bdf8a26dc67c407ae09104b7408ced31f279a2818d",
+     "caption_sha256": "09fa3f984d5cabc6476a1102b4acbb2102cfceaf80f06e869dbb9ad0dd7d30c3",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Caption retains the only-Hero exception and midpoint W2/Barricade relation.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
    "id": "FIG-24",
-   "svg_sha256": "b1309e66fbae6893e5504e9b096b0f2cf96649abb81a767d7e73607cb29c2999",
+   "svg_sha256": "0d413e1f05a548f6e624f9a3b1eb5f17a59a67103d9021093494bb39c42ff2c7",
    "caption_sha256": "070284bf0c1b93210c8271212de40db49e6781bafdfe9eb2ce8f80c191e7bd90",
-   "verdict": "PASS_WITH_NOTES",
+   "verdict": "PASS",
    "checked_against_lines": [
     "12189-12259",
     "11068-11072",
@@ -1321,10 +1979,11 @@
     },
     {
      "severity": "minor",
-     "status": "accepted",
+     "status": "resolved",
      "issue": "The two Resting Tarantulas are drawn overlapping inside a ghosted Webbed Section (illustrative).",
      "evidence_source_line": "12232",
-     "fix": "None."
+     "fix": "None.",
+     "re_review_note": "2026-10-15 full review: Resting Tarantulas separated and dense central labels/dimension moved; inspected at native width."
     },
     {
      "severity": "minor",
@@ -1332,9 +1991,17 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: ravine label moved so the Tarantula leader no longer crosses it. Ravine 7\" wide (6-8\"), bundles at least 4\" apart, Broodmother within 1\" of the central bundle, Tarantulas within 2\", two Resting Tarantulas in a Webbed Section, chests at least 8\" from an edge. SVG changed since the previous review (hash updated).",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-24-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Central monster glyphs and labels were crowded.",
+     "fix": "Separated illustrative Tarantulas and moved labels/dimension with leaders.",
+     "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "f9595e2b7b8f224c9d77243ca639f21381a1d8a8cbd37d1b4650421210518e2a",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1374,6 +2041,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "f9595e2b7b8f224c9d77243ca639f21381a1d8a8cbd37d1b4650421210518e2a",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12189-12259",
+    "observations": "Moved three monster labels and Central Bundle clear of the crowded Ravine; offset bundle-separation ruler; separated the two Resting Tarantula glyphs within the same Webbed Section. One Broodmother, two Awake and two Resting Tarantulas remain represented, with unchanged printed distances.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-24.png",
+     "png_sha256": "37829ef84ccbe70ed1eae55f506fcb6131d90496ccdf74547808e74db5675972",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-24",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-24.png",
+     "png_sha256": "00b1e8bb86a0d3f97d05d46803213c56bb48d799222ac42c3c0d78bf09da689b",
+     "caption_sha256": "070284bf0c1b93210c8271212de40db49e6781bafdfe9eb2ce8f80c191e7bd90",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Ravine, central Bundle and two outer Bundles are clear in the complete caption.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -1420,7 +2121,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1460,6 +2161,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12260-12337",
+    "observations": "Four Clues, Camp quadrant, 6\" separation and 8\" edge limits, three Resting groups, and hidden Reeve/Emissary omission match the setup. No hidden Clue contents revealed.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-25.png",
+     "png_sha256": "c07c6595a4da6347ade7ddc9f1c5f3a836308f9b2b28fb484e65a7a8472b44c5",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-25",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-25.png",
+     "png_sha256": "2a0d503c4d75805a7b6e290b4c24b4cf0122799b0a944e026f9e85dd6a7aeb31",
+     "caption_sha256": "f8ed61a55822f6ba3ebb6b49e3ae9e289110a5e2c64fa8e1158864efa6437853",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Camp quadrant and four-Clue separation wording fit without clipping.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -1514,7 +2249,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "f9595e2b7b8f224c9d77243ca639f21381a1d8a8cbd37d1b4650421210518e2a",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1554,13 +2289,47 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "f9595e2b7b8f224c9d77243ca639f21381a1d8a8cbd37d1b4650421210518e2a",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12338-12424",
+    "observations": "Mother Tree, 6\" Grove from its footprint, three evenly spaced outer Chests, adjacent Totem/Treant and outside-Grove group remain readable. Difficulty qualification is in the footer.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-26.png",
+     "png_sha256": "02495e37a8e88dc2f2fde876d8b641f5e03c63ed7e77ce1069412a0b4920310b",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-26",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-26.png",
+     "png_sha256": "9bc5b353a03ef593a1a4bf7eedbba13f25012ba69a6bcc49fdefe1f125e411ee",
+     "caption_sha256": "5a88723a16616abb589343f0598bba92a24c6db77fccd13db59578f6b1f9830e",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Mother Tree, Grove and three outer-edge Chests retain a readable caption.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
    "id": "FIG-27",
-   "svg_sha256": "79224bd940b155188f1ec1bf2c185041d55c517f5f7c5c072960998aacf40606",
+   "svg_sha256": "f36d6379f1a3e1ccfa8a372d1dd8e6885818f0dc4aba3cc8afc8d3e2a86ea012",
    "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
-   "verdict": "PASS_WITH_NOTES",
+   "verdict": "PASS",
    "checked_against_lines": [
     "12427-12494",
     "11068-11072",
@@ -1571,11 +2340,12 @@
    "findings": [
     {
      "severity": "minor",
-     "status": "accepted",
+     "status": "resolved",
      "issue": "Dense centre: earlier crowding note persists. 'Orrery' sits next to the G2 hexagon (the Orrery diamond is 3\" lower) and 'G2·R' sits beside the Platform, so labels read against the wrong symbols; 'Wall' floats about 3\" above its piece without a leader; the min-10\" ruler crosses the Dome and Lens.",
      "evidence_source_line": "12447; 12452; 12479",
      "fix": "Add leaders for 'Orrery' and 'G2·R', put 'Wall' under its piece (lp 'b'), and draw the ruler between the Platforms' nearest corners only.",
-     "resolution": "RC486 re-review: Orrery, G2 and Wall labels fixed; the ruler now runs between the nearest Platform corners (11.3\", minimum 10\"). It still crosses the Dome because the Platforms stand at opposite corners of it; no shorter legal depiction exists, and the Lens and Hazard markers stay legible at 400 ppi. A new minor is recorded for the Lens leader."
+     "resolution": "RC486 re-review: Orrery, G2 and Wall labels fixed; the ruler now runs between the nearest Platform corners (11.3\", minimum 10\"). It still crosses the Dome because the Platforms stand at opposite corners of it; no shorter legal depiction exists, and the Lens and Hazard markers stay legible at 400 ppi. A new minor is recorded for the Lens leader.",
+     "re_review_note": "2026-10-15 full review: Lens/Orrery/group labels and platform ruler are separated, with leaders; inspected at native width."
     },
     {
      "severity": "minor",
@@ -1599,9 +2369,17 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Wall label beside its wall, Orrery and G2 labels adjacent to their symbols, G2 moved out of the Platform area. Ruler between the Platforms now runs between nearest corners (11.3\" for the 10\" minimum). Residual: the ruler crosses the Dome. SVG changed since the previous review (hash updated).",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-27-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Platform ruler and labels crowded the Dome/hazards.",
+     "fix": "Moved ruler and labels clear without changing rules geometry.",
+     "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1641,6 +2419,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12427-12494",
+    "observations": "Platform ruler now uses an offset outside the Dome while retaining the same actual endpoints and min 10\" rule. Lens label/leader moved clear of hazards. Dome, Orreries, Sentinel and three internal hazards remain distinct; old ruler-through-Dome residual resolved.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-27.png",
+     "png_sha256": "412b8c793c5085a2c7a18e41ea42e8b97aa45879058ec8870ab936fb96b4c341",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-27",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-27.png",
+     "png_sha256": "e35705966ea35b7a92bb879c8f51f66e6ad010a8ec01eb09304b8eb0fa70a782",
+     "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Dome and Platform distances remain readable with the repaired label leaders.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -1688,7 +2500,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1728,13 +2540,47 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12495-12568",
+    "observations": "Gateway includes its open arch, Courtyard has all three named Pedestals and min 5\" relation. G2 R3 arrives on non-deployment edges; Guardian correctly absent until awakened.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-28.png",
+     "png_sha256": "c1a076e017dd4090910bc80d985db479ab95ea2beb8bb814b4fe77e36bf96ed3",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-28",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-28.png",
+     "png_sha256": "7cfda827800b69c31493ce1c8a80e64ba07f47afeba03f050ac7c568f0be25cf",
+     "caption_sha256": "03d2bafaaa4596a0d5bef8ae1efc15497c01b0a48341eb2d8ae7698e19725dee",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Gateway, Courtyard and three Trial Pedestals have a clear complete caption.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
    "id": "FIG-29",
-   "svg_sha256": "2d12ad7322b8894cd23897a2842b9162bec67f83164a35e13a0e40a3ab893f36",
+   "svg_sha256": "d4bdc696311efe1b7f7ecfd5d4c910eff0eba384ee1e34c668f509a64a30e3c1",
    "caption_sha256": "ce89ad7247593b2f87859ece91d6e5809d444e310e809d1aa02cc291758d495e",
-   "verdict": "PASS_WITH_NOTES",
+   "verdict": "PASS",
    "checked_against_lines": [
     "12569-12623",
     "11068-11072",
@@ -1752,11 +2598,12 @@
     },
     {
      "severity": "minor",
-     "status": "accepted",
+     "status": "resolved",
      "issue": "'Unstable 3\"x3\"' label crosses Group 1's 4\" ring outline.",
      "evidence_source_line": "12589; 12599",
      "fix": "Move the label above the zone (lp 't').",
-     "resolution": "RC486 re-review: SVG unchanged (the label already sits left of and below its zone). The Group 1 4\" ring outline passes behind the label's white halo; the label and the ring both read, and no value or relation is obscured. Accepted as a cosmetic residual."
+     "resolution": "RC486 re-review: SVG unchanged (the label already sits left of and below its zone). The Group 1 4\" ring outline passes behind the label's white halo; the label and the ring both read, and no value or relation is obscured. Accepted as a cosmetic residual.",
+     "re_review_note": "2026-10-15 full review: Unstable label moved off Group 1 ring; inspected at native width."
     },
     {
      "severity": "minor",
@@ -1772,9 +2619,17 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. SVG unchanged by the label move (same auto-placement). Opposite 8\"x8\" corners, four 3\"x3\" zones at least 6\" apart, Group 4 arrival on a random edge (open arrows), exits by the two edges not touching each corner (12618). Residual: the Group 1 4\" ring outline passes behind the 'Unstable 3\"x3\"' label. SVG unchanged since the previous review; carried forward after re-reading against RC486.",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-29-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Unstable label crossed a group-distance ring.",
+     "fix": "Moved label to clear space.",
+     "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1814,6 +2669,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12569-12623",
+    "observations": "Moved Unstable 3\"x3\" label off the Group 1 ring. Four zones, 6\" separation, Central Ruin, R2 reinforcement options and party-specific extraction arrows remain unchanged. Old halo/ring residual resolved.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-29.png",
+     "png_sha256": "5b6f3d121eeac9e65a72718b607b487cd26e8e6b23f40fa05e5dd2dbf13d6bfc",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-29",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-29.png",
+     "png_sha256": "09dfe326d47af2cd73515208da4914c5a358492f644daff20d0363a2b783581e",
+     "caption_sha256": "ce89ad7247593b2f87859ece91d6e5809d444e310e809d1aa02cc291758d495e",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Corner deployment, four Unstable zones and two escape edges fit the caption.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -1858,7 +2747,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1898,6 +2787,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12624-12703",
+    "observations": "Hall, chambers, three Dust markers, Codex, Resting Warden, and 2/1 face-down Cache split remain legible. Cache identities stay concealed; this is a source-limited schematic, not a contents reveal.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-30.png",
+     "png_sha256": "d75abbce21183a5b32d99fe02f393b605edfb87235b2c33b1af95374f14371fa",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-30",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-30.png",
+     "png_sha256": "e706fd554c8c5a6567276c8c15205c626f42efcda61165a25eedf7e30d17a7c6",
+     "caption_sha256": "8a22d6432a10ba1a6487af97cd7728fbf46551ac2d9fb5f2b05271016f2cc002",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Hall/chamber layout and concealed Cache split remain readable.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -1936,7 +2859,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1976,11 +2899,45 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12704-12777",
+    "observations": "Altar Reliquary and two Resting Revenants; one Bone in each side aisle; two rear Chests. Left/right viewpoint is not fixed by the source; one group is drawn in each aisle without imposing a new viewpoint.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-31.png",
+     "png_sha256": "dfe72339c4327e5f6d26e5340e71bc12cbe3f992966dcee3b53fc32d96bc22f9",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-31",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-31.png",
+     "png_sha256": "d9a8d2ceaf0fab73b3df9b646d323ededfce60ca9af30d32feb1926f1d6299e5",
+     "caption_sha256": "8b8db7c5a96a1eae9ac8785598503f7e2e33e077ccd7897def5f0e7d8e65120e",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Nave, altar and aisle Bone Fragments remain clearly associated with the map.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
    "id": "FIG-32",
-   "svg_sha256": "a1c14185b5723555f90ae393cf0f1670366e5aaa4866d96095cf8ae608c4faa9",
+   "svg_sha256": "738a9d75221fd0b54ca067bcb5a1e8a55e0f375f33afbd4b0633152a156057f6",
    "caption_sha256": "299cb39bb185df20d39b5f3cf92925614e623ab5c63502c070b309ab61220a9a",
    "verdict": "PASS",
    "checked_against_lines": [
@@ -2012,9 +2969,17 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. No change since the last review; Binding Points on the door, Record 3\" beyond the door (12811), Group 3 adjacent to the door Awake (12844), Vault Presence not drawn (12838). SVG unchanged since the previous review; carried forward after re-reading against RC486.",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-32-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Door marker cluster did not identify its three Binding Points.",
+     "fix": "Added hinges/lock explanation.",
+     "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2054,6 +3019,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12778-12876",
+    "observations": "Added explicit Binding Points explanation so the three door tokens read as hinges/lock rather than three doors. Record remains 3\" beyond the door; delayed Vault Presence is not drawn.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-32.png",
+     "png_sha256": "1406b4f328f9030d54eb74eefd221e30892cf1236fa3db8ffdfa26a86e753cc9",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-32",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-32.png",
+     "png_sha256": "37c91c16b0cfc3d9a73827913a05c34257cc1ac66fce5a0a861a2f7b31d206e7",
+     "caption_sha256": "299cb39bb185df20d39b5f3cf92925614e623ab5c63502c070b309ab61220a9a",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Door hinges/lock Binding Points and Vault Record distance read clearly.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -2099,7 +3098,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2139,6 +3138,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12879-12944",
+    "observations": "Two Caverns, linking passage, five Nodes, fungi radii and three group instructions match. R3 midpoint arrival arrows remain separated from any-edge extraction arrows; grey pieces do not become fixed positions.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-33.png",
+     "png_sha256": "e34e90d5474d2433207dc8d565433ef6225e670b8982d4dea14d8130e22d6663",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-33",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-33.png",
+     "png_sha256": "54934287a12b05409bd0b6d833e167a72c8a1496c8c72fa2d53f83a137b4ecc7",
+     "caption_sha256": "9a4a3e0acc9d93714ef2a566f9e884ac4fdadba6e33a9e750341742f9d12eb51",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Two Caverns and midway Node caption remains readable below arrival/exit notes.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -2182,7 +3215,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2222,6 +3255,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "12945-13014",
+    "observations": "Single shared 8\" start-edge deployment band and min 6\" opposing-Hero separation; 8\" Chasm, ledges, numbered hidden-wall markers and 3\" Map/Stone relations remain legible. Start edge is a schematic choice; small ledges remain readable in the native-width render.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-34.png",
+     "png_sha256": "29621fbc2b7804e09738dcc37a534460b9b5f9849cfb89f18f41dcc59834e5fd",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-34",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-34.png",
+     "png_sha256": "5eca7055ccf58a159a2ce3bb375a29cc6c9c0685961a2ac3f3ae8011a873a649",
+     "caption_sha256": "870bd56f84aef729295144d8af56822901b3e84bc15c9185a541368b709cdbd6",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Shared-edge deployment and Map/Stone distances fit below the Chasm diagram.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -2253,7 +3320,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2293,11 +3360,45 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13015-13079",
+    "observations": "Central 8\"x8\" Safe Zone, min 3\" opposing-Hero separation, perpendicular collapsed edges, selectable Main Exit, and three Veins match. Delayed Guardian remains undrawn.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-35.png",
+     "png_sha256": "f9a95d458744e9e155b2fb0cf34ab49983a63ec902e07680dad30ec710705c46",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-35",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-35.png",
+     "png_sha256": "67215d174d9aebf59256069627db38e55fdda60fc2e703621d82127943c14322",
+     "caption_sha256": "22bd865dbd2cb161ee661022be8f4bbb937a72445eae74b03172d96f7a665c23",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Safe Zone, opposing-Hero separation and Main Exit procedure wrap clearly.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
    "id": "FIG-36",
-   "svg_sha256": "c6a3a8e84c861e2ee58e22f4573788b5a6aefb5f969787ca079e43c825dee9d1",
+   "svg_sha256": "a1c6fef9e3f68fba63b93e467864b0f20bf669b92dd13bbe35293acfdf22e23e",
    "caption_sha256": "ac1bc8f01ad5029bbd8a9b4f22d099cc6bbd345554c44fcd5b796ed09c4ba0ba",
    "verdict": "PASS",
    "checked_against_lines": [
@@ -2345,9 +3446,17 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Low wall label beside lw2 with leader, Guard offset from the Chest in its Tower. Towers 3\", Tent 3\"x3\", Plans inside the Tent, two Guards on two different Towers, R4 arrival (random edge, open arrows) and exit all edges (13174, 13176). SVG changed since the previous review (hash updated).",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-36-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Redundant floor outline visually closed an Open tent entrance.",
+     "fix": "Removed outline; retained Blocking walls and Open entrance.",
+     "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2387,6 +3496,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13080-13186",
+    "observations": "Removed redundant complete floor rectangle outline so the separate Blocking wall strokes leave the Command Tent entrance visibly open. Plans, Commander, two tower Guards, Chests and R4 arrival remain unchanged; footer distinguishes walls/floor/entrance.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-36.png",
+     "png_sha256": "682a9a2862cc84a7bdc19f511fce8aa710ca94427291b59ff777d5f018c449e1",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-36",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-36.png",
+     "png_sha256": "449de6acc38608753ef654c4f721cfecb061f751eb8febcb1d9fb4b354749c57",
+     "caption_sha256": "ac1bc8f01ad5029bbd8a9b4f22d099cc6bbd345554c44fcd5b796ed09c4ba0ba",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Command Tent/Plans caption matches the visibly open tent entrance.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -2439,7 +3582,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "f9595e2b7b8f224c9d77243ca639f21381a1d8a8cbd37d1b4650421210518e2a",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2479,6 +3622,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "f9595e2b7b8f224c9d77243ca639f21381a1d8a8cbd37d1b4650421210518e2a",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13187-13259",
+    "observations": "Deep Shadow passage and 6\" opposing short-edge zones, Fonts, Heart and min 12\" relation remain legible. Source tension between about 18\" passage length and edge-to-edge connection remains; no exact passage length is printed or invented.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-37.png",
+     "png_sha256": "701c823378deec7e390aa1de4166c09a512286a50098b1d41e7c764afa8ebc29",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-37",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-37.png",
+     "png_sha256": "17027b2769953086b877a3304e19b31e98b0596ef1af69b5f74404cac844c8bb",
+     "caption_sha256": "13cbf14c7b47fb52d82cf76cec9f9e75d7accc5e4e00765079f665baafed8050",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Asymmetric edge assignment and Heart distance are readable; no passage length is invented.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -2516,7 +3693,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2556,13 +3733,47 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13260-13363",
+    "observations": "Three evenly spaced Orbs, 4\" Binding Circle, Caller Awake, G1 Awake within 3\", G2 Resting in an approach, and shared darkness treatment remain consistent.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-38.png",
+     "png_sha256": "6441b467b7bf2731e13586634d408c3044e51175b1282c9cc35bac784456c837",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-38",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-38.png",
+     "png_sha256": "3f4250d955fcd3bb5c5fedecf18c52007cc963bc3cbc63ef1661643dc43219db",
+     "caption_sha256": "3cbe27fbfab686100e750213d176449b681abb3e56937651555a25acd81cb30d",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Opposite-edge deployment and three Orb distances are clear below Darkness note.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
    "id": "FIG-39",
    "svg_sha256": "d908d658eaee9c31b61f3a10ae83b7b9a5c6452e0549ee98e92a10a72f0194a3",
    "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
-   "verdict": "PASS",
+   "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
     "13366-13417",
     "11068-11072",
@@ -2603,7 +3814,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2643,6 +3854,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13366-13417",
+    "observations": "Five identical Chests preserve hidden contents; 6\" chest separation and 8\" deployment-zone exclusion are shown. Two representative Resting groups remain qualified by the group-count footer.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-39.png",
+     "png_sha256": "3fcf5a52e7a53e5869c23bbf534321055d5f7df3f8f03800e60c8c7041484b40",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-39",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-39.png",
+     "png_sha256": "98abb389258e11c9d7e93d9808ed6ed3465eda01158aaa02dbccb5f2b8562109",
+     "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Caption keeps five Chests and placement exclusions distinct from representative group count.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -2680,7 +3925,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2720,6 +3965,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13418-13487",
+    "observations": "Three Reagent Chests and Awake Golem inside Laboratory, separate ordinary Chest, Resting groups, Ice Barricades and debris remain clear. Slippery exposed ground is stated rather than disguised by the room outlines.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-40.png",
+     "png_sha256": "25c780bd68e5db70cf6fd53894ce430fa3089c31527728d0d194326c901375ab",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-40",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-40.png",
+     "png_sha256": "4f8bcdd0a7589a76a80922a25a327a118924e5a7e7e634a29d3770e5b12f8c67",
+     "caption_sha256": "e8be7e6d362e7365c34f59828aae77aa3ec01578618e731161d65f110755230c",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Three Reagents and Golem-in-Lab caption is complete and legible.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -2757,7 +4036,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2798,6 +4077,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13488-13556",
+    "observations": "Three Crypts including the larger Grand Crypt, Grand Hall, exactly five Sarcophagi and one Hall Chest are visible. Hidden Heirlooms and delayed Magistrate correctly absent; full terrain extent remains schematic.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-41.png",
+     "png_sha256": "31e395c8eb7a8c75570f48398c8445b4d29946eb80ce4f0eb2bcb95d79611fa6",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-41",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-41.png",
+     "png_sha256": "74209b4d9778792f13eeb93ca08bf5e90c7d5cbbef155bfb31cd5a7e19b3f55e",
+     "caption_sha256": "6907dc8ea9a1e2bd22bc70c530f9681ab771df1bd34b463d7b1b9fd86338c613",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Mausoleum, three Crypts and five Sarcophagi caption fits clearly.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -2850,7 +4163,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2890,6 +4203,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13557-13616",
+    "observations": "Three Awake Guardians: two adjacent to two Workbenches, remaining Guardian within central 3\" ring. Four Conduits and three Chests remain shown. Footer explicitly qualifies two of the permitted 2-3 Workbenches.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-42.png",
+     "png_sha256": "b673e6b90619acdc143a25c50a1a69575aaaedecda021855a2096794be285f21",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-42",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-42.png",
+     "png_sha256": "e16b6e0328be3a3d09fe6f00911a1cf5bdbaab83d425c9206f4e30d143573547",
+     "caption_sha256": "08b85b987ca1b35e5c4a428829cd4d195e12fa27a85be74bd92d7549f9ad93be",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Guardian placement caption and permitted Workbench-count note remain readable.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -2927,7 +4274,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2967,6 +4314,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13617-13692",
+    "observations": "12\"x12\" Slippery Lair, central Wyrm, Hoard within 2\", two side Chests, and tunnel groups remain legible. Long-edge choice stays expressly illustrative because the source states only opposite edges.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-43.png",
+     "png_sha256": "3e531a71b3c745571ea856553a44b470cd4422f2ab6ba7ec81718d2db3e2e82c",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-43",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-43.png",
+     "png_sha256": "4e89df4b36669ec9342842ee3b56f740786c112c100a59b9e9bc610c5224d900",
+     "caption_sha256": "696980c4a640dc106f7560f39ad9ff073034130aa1d42026b0947bdd26ff0622",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Lair dimensions, centre Wyrm and Hoard distance read clearly beside edge qualification.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -3011,7 +4392,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3051,6 +4432,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13693-13768",
+    "observations": "Bailiff on Throne, one representative Mephit within 2\", side Chests, corridor group and Slippery ground match. Footer preserves representative Mephit count; the full corridor network is schematic.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-44.png",
+     "png_sha256": "c8991d93c99d7c62870fdd0bddaa175cdfe1fecf9ee008e50cc93cb3fa52c2c7",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-44",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-44.png",
+     "png_sha256": "4805508234a1556d8289d07a36859a8015d1e794388f8c1438ddb0a72ec7a0e4",
+     "caption_sha256": "a5cafdb87a508cd6d929132674b0e028c6598d957cc8b2156efe33fe0625005d",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Bailiff/Throne and bodyguard-distance caption remains clear with representative-count note.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -3090,7 +4505,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3130,6 +4545,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13771-13837",
+    "observations": "8\"x8\" Oasis, Wellspring, Chieftain within 2\", Awake G1 within 3\", two other Resting groups and surrounding dune/outcrop types match. No numerical or positional change needed.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-45.png",
+     "png_sha256": "4e216648601bf1a55d77645151190d914a8c1901dd354b9008a557c42f28fb77",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-45",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-45.png",
+     "png_sha256": "6052fd4f46fe7e526c0a31ac80cd167519d2ec0a74c5a8c6d45b40ebe9c7bbad",
+     "caption_sha256": "544c8db44d30d68a170e82b87f93e59acd8c613cd1a78241cdd5b6da180b07fa",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Oasis size and Chieftain/Wellspring distance fit a complete caption.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -3168,7 +4617,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3208,11 +4657,45 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13838-13902",
+    "observations": "Altar, three Impassable Loci 4-6\" away, Resting G1 within 4\" of its chosen Locus, outer group and default 6\" zones remain clear. Search-spawned Flame Guardians remain absent at setup.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-46.png",
+     "png_sha256": "97956ab0d1ad06f2298b66bf7c1207a1c2c61c8dc349ed3d53e95b76ed03e0ac",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-46",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-46.png",
+     "png_sha256": "4916b85805769c2772e6ca3a350c368b992073a3b1f4b389eb06f0d461935d4d",
+     "caption_sha256": "fb6594f930d50d81cbc37664daf0cca076daedeef6d97a663abf493565575591",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Altar/Locus range caption is legible with default deployment called out in the map.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
    "id": "FIG-47",
-   "svg_sha256": "ae44621033fdcf16aeec9c5b72aea6274f531cfd94027a21efcddfb2212df6fe",
+   "svg_sha256": "3a6635ac7af17cb2df678833f66ca4fd9437d3815ef2457f4252272ce8451768",
    "caption_sha256": "8f66e4b11b21a3e9422a15715b49fb82e77c071d1d8c7709f1ded3a47ff2719c",
    "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
@@ -3253,9 +4736,17 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. RC486 element: 'Starts Awake guarding the Royal Sarcophagus nearest the battlefield centre' (13948). Herald drawn beside sa3, which is nearest the centre (distances 8.2\", 9.9\", 10.7\" from (18,18)); drawn grey dashed (position not fixed beyond 'guarding'), foot note states the layout is open, and check_one asserts the guarded item is the nearest. Matches the patched text; the three Sarcophagi stay in separate chambers (13925); no new rule implied. Hall about 5\"x10\", zones 8\"x8\" default (11072). SVG changed since the previous review (hash updated).",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-47-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Variable Pressure Plate setup omission was not explicit.",
+     "fix": "Added reminder; positions remain assigned by source procedure.",
+     "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3295,6 +4786,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13903-13970",
+    "observations": "Kept Herald beside nearest-centre Sarcophagus. Added explicit reminder to place Pressure Plates before deployment and that they are not drawn; variable 1d3 placement is preserved in the full source. This resolves an unqualified diagram omission without choosing its roll or positions.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-47.png",
+     "png_sha256": "6e8c34a3bf9c2c76283b79900374208f838d42270c3b7bbec2bed4e587f7e793",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-47",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-47.png",
+     "png_sha256": "76e1bfd5ddb7a0cec82c99668ae0c45b0f60e48584cc8e51823346d0a8250acf",
+     "caption_sha256": "8f66e4b11b21a3e9422a15715b49fb82e77c071d1d8c7709f1ded3a47ff2719c",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Tomb/three Sarcophagi caption remains clear below the undrawn Pressure Plate reminder.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -3348,7 +4873,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3388,6 +4913,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "13971-14032",
+    "observations": "Shifting Sands Zone, approach groups and Chests remain legible. Sandwyrm and Hoard correctly absent at setup; long-edge illustration stays qualified and does not override the source edge choice.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-48.png",
+     "png_sha256": "eb4f96a068bffd7da2f69d51d6a07b1e8f87f879af1dda2adf9e908dccf6ff1e",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-48",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-48.png",
+     "png_sha256": "ae61fdfa667a0b9ac2151c8af18dc6c41e60e1223439ebbe5457ed7235201986",
+     "caption_sha256": "54ef4455882afc5eabba98a2e45bf7c2492e506a281d52828d5c07adde12f0dc",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Shifting Sands and first appearance wording fit clearly with the edge-choice note.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -3420,10 +4979,11 @@
     },
     {
      "severity": "minor",
-     "status": "accepted",
+     "status": "resolved",
      "issue": "'broken statuary' has no listed terrain type; drawn Cover (illustrative).",
      "evidence_source_line": "14053",
-     "fix": "None."
+     "fix": "None.",
+     "re_review_note": "Superseded historical type: current statuary uses Impassable; qualified source inference retained in the following accepted note."
     },
     {
      "severity": "minor",
@@ -3440,7 +5000,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3480,6 +5040,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "14033-14107",
+    "observations": "Inert Colossus is Blocking terrain with Rune/Heartstone markers, not an Awake Monster glyph. Two surrounding Chests/groups remain clear; broken-statuary classification follows the existing illustrative default and is not changed.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-49.png",
+     "png_sha256": "a12aa614b5b0389151002c99984c1aa351110ac21a8e669b40d4e945b5687506",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-49",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-49.png",
+     "png_sha256": "f3a931f3100eac2d2e3f8bb295b224c93b4890fa8c13eda27bbc697db12fdd96",
+     "caption_sha256": "752bf3f58b809e97a2d9d3982846f343def50359b09e0b623af8afcf7f886514",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Colossus, Glowing Rune and Heartstone caption is legible; statuary note remains source-limited.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -3517,7 +5111,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3557,11 +5151,45 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "14108-14194",
+    "observations": "Three Impassable Glyphic Stones, two Awake Mephits, two Resting groups and Chests remain distinct. Cinder Lord correctly absent until prison breaks; footer distinguishes Impassable Dais body, climbable sides and Open top.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-50.png",
+     "png_sha256": "10f439c4d657d14a72ebe77c1decd6b083becb243529106b75f4d934fbf5fcd5",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-50",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-50.png",
+     "png_sha256": "cf7ac8943265d01fea3e062e0e26186b87c2af526b6606fda0866226a49498ae",
+     "caption_sha256": "67a4283af306188eee04688bb10c4ac0f60ba4ed0c4bce5dc33e42eaefd682ee",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Dais and three Glyphic Stones caption remains distinct from the surface-type note.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
    "id": "FIG-51",
-   "svg_sha256": "ed537f31ac90ce29b6c4bec1d759f5e1264a3f6d2cf600592c31914f054681bf",
+   "svg_sha256": "52e6fc49b19529a7d0277e0c4793c660f2c6dcc2e2f70c6c732af31c387ecb8c",
    "caption_sha256": "8ed4b790280f1a99b72e41841c37f130d4eb71445f8faf6816ce1ab290d5845e",
    "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
@@ -3591,11 +5219,12 @@
     },
     {
      "severity": "minor",
-     "status": "accepted",
+     "status": "resolved",
      "issue": "Group 2 'patrolling murky water' is drawn in an outer Shallow patch; the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258). Possible unlogged ambiguity. Sanctum label sits over the Sanctum water.",
      "evidence_source_line": "14252; 14258",
      "fix": "Log in ambiguity-triage or draw Group 2 in the Barrow water.",
-     "resolution": "RC486 re-review: genuine ambiguity, not an invention: the only defined Murky Water is 'within the Sunken Barrow mound' (14258) while Group 2 'patrols murky water' (14252) outside it. The map draws an illustrative grey marker in an outer Shallow patch and logs the ambiguity in scenario_specs.json and scenario-coverage.json. Follow-up for the orchestrator: add it to ambiguity-triage.json."
+     "resolution": "RC486 re-review: genuine ambiguity, not an invention: the only defined Murky Water is 'within the Sunken Barrow mound' (14258) while Group 2 'patrols murky water' (14252) outside it. The map draws an illustrative grey marker in an outer Shallow patch and logs the ambiguity in scenario_specs.json and scenario-coverage.json. Follow-up for the orchestrator: add it to ambiguity-triage.json.",
+     "re_review_note": "2026-10-15 full review: Unsupported outer-water G2 glyph removed; footer preserves Resting/patrol instruction and explicitly leaves area undefined."
     },
     {
      "severity": "minor",
@@ -3611,9 +5240,17 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: G1 offset from the Chest on the enlarged Bog Island (radius 2.5\"). Group 2 is still drawn in an outer Shallow patch; the Murky Water rule covers only the Barrow (14258) so 'patrolling murky water' (14252) is a genuine ambiguity, logged in the spec and coverage but not yet in ambiguity-triage.json. SVG changed since the previous review (hash updated).",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-51-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Spatial G2 marker asserted an unsupported outer-water patrol position.",
+     "fix": "Removed spatial glyph and retained required Resting patrol instruction in qualified footer.",
+     "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3653,13 +5290,47 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "14197-14267",
+    "observations": "Removed G2 spatial glyph from unsupported outer Shallow Water; retained G2 Resting/patrol requirement and explicit undelimited area in the footer and undrawn list. Barrow exterior, entrance, flooded Sanctum, Reliquary, one Awake Leech Swarm and G1 island remain clear. Patrol-area ambiguity is a source limit, not resolved mechanics.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-51.png",
+     "png_sha256": "716bb4325be5b745a98f11131cbd74831778b6b970256da18f62cb7252088c53",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-51",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-51.png",
+     "png_sha256": "3ac5ac0ba75449450dbde64367019bdaf36f2ac9c730bca47a76af27279ad5a6",
+     "caption_sha256": "8ed4b790280f1a99b72e41841c37f130d4eb71445f8faf6816ce1ab290d5845e",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Caption stays complete beneath the explicit undelimited G2 patrol-area reminder.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
    "id": "FIG-52",
    "svg_sha256": "79c93b404cbd974e8344e31da1da0f0dd0a47819d0b7b130e874255c836c5fd4",
    "caption_sha256": "6622d45c42690e499c14e13929ac78d0df19fabfc16359fbed143a1c2e24970a",
-   "verdict": "PASS_WITH_NOTES",
+   "verdict": "PASS",
    "checked_against_lines": [
     "14268-14342",
     "11068-11072",
@@ -3724,7 +5395,7 @@
      "resolution": "RC488 second follow-up re-review 2026-10-10 (SVG sha256 79c93b40..., stable across two reads one minute apart while make clean all ran): sgo moved to (13.4,21.9), both labels (Shaman·A at x121.6,y171.3; Swamp Goblins·A at x94.9,y183.0) now sit below the encampment, each on its own vertical leader (x=121.5 and x=93.9) that exits only through the encampment bottom edge (y=158). Checked in SVG coordinates and in the Typst render: no label or leader crosses any text, glyph, Party zone boundary (x=49.5 / 193.5), Shallow Water box dashed edge, Encampment edge (other than the leaders exiting the bottom) or the two labels each other. Goblin hex (x 88.9-98.9, y 141.1-149.7) and Shaman hex are inside Encampment rect x 85.5-157.5, y 86-158. Clearances are tight but positive: goblin leader is 2.4 units right of the lower-left Shallow box edge (x=91.5) and the goblin label starts 3.4 units right of it; the label ends ~162 vs lower-right Shallow box at x=169.5."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3771,11 +5442,45 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "14268-14342",
+    "observations": "Three indistinguishable Offering Piles preserve hidden contents. Shaman and representative Awake Swamp Goblin, off-board G1 reeds marker and source-qualified companion count remain consistent; no invented early Monster placement.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-52.png",
+     "png_sha256": "33aa3f3eb4702d11efcb18d1711c2c6240bd34c4d6736b144c46654b09c97f86",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-52",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-52.png",
+     "png_sha256": "ab65d9e9c0a822722956d7198718d1dda17a4be3656b4d6da646dd4bc6eb8caa",
+     "caption_sha256": "6622d45c42690e499c14e13929ac78d0df19fabfc16359fbed143a1c2e24970a",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Three Offering Piles and alternate placement caption remain legible beneath group-count note.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
    "id": "FIG-53",
-   "svg_sha256": "7e0ae35e86dae55209bdb00bd78e7539d2514280924b72d266481bcd2cfb1816",
+   "svg_sha256": "85790209e40af8ebb28655d33c0622bef3402f5be1e512474ac020b6bc75895f",
    "caption_sha256": "a265935108bb677a0691bdbdc83c6734d8a6df1a7cd0d7d27c840dd94b11e62f",
    "verdict": "PASS",
    "checked_against_lines": [
@@ -3809,9 +5514,17 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. Fixed: Fen is ILLUSTRATIVE with the foot note 'deep mud (Difficult) and shallow pools'. Corner zones 8\"x8\" default, Titan Awake in the Fen, numbered Razor Reeds marker with 6\" ring near a Geode (14399), exit for The Heist only. SVG changed since the previous review (hash updated).",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-53-FULL",
+     "severity": "major",
+     "status": "resolved",
+     "issue": "Waves implied the entire mixed mud-and-pool Fen was water; water hatch crossed raised land.",
+     "fix": "Rendered Difficult mud with illustrative Shallow Water pools and white hummocks, preserving positions and distances.",
+     "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3851,6 +5564,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "14343-14417",
+    "observations": "Corrected the prior uniform water hatch: Difficult deep-mud base plus three illustrative Shallow Water patches now show the source's mixed Fen. Raised Hummocks remain clear white land. Titan, three Geodes, deployment, off-board Reeds 1 trigger and 6\" range are unchanged. Source evidence: 14368; 2.9.1 rows 852/855 and 2.9.6 at 915. Actually re-viewed the revised native-width PNG; no overlap warnings.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-53.png",
+     "png_sha256": "c872e82df8456c00491e89ccd6dbe8c9d6ff34684c373cf5cd321f5accafcf47",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-53",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-53.png",
+     "png_sha256": "1a5831ed4deff6dfd19b744d8181719da7e7ed5c87d3f951bdec2eba7ab7153c",
+     "caption_sha256": "a265935108bb677a0691bdbdc83c6734d8a6df1a7cd0d7d27c840dd94b11e62f",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Final mixed-terrain map shows dotted mud, separate wave-filled pools and clear hummocks; caption is complete.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -3897,7 +5644,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3937,12 +5684,46 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "14418-14496",
+    "observations": "Central 8\"x8\" Cover/Difficult/Dangerous Vine area, Heartwood, Awake Thornlings, numbered off-board group trigger at 6\", Treant, and Chests remain readable; footer retains 1 piercing entry damage.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-54.png",
+     "png_sha256": "40b7e60122250a39406ca453fa3adef02407d27cf2603dc0fca4d99407013671",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-54",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-54.png",
+     "png_sha256": "49d81fbef9bc02f486e948b96d9bd6aa44d1ec2a1ad26b25fdae90de895d107d",
+     "caption_sha256": "bc8d245f6f693cc8f28fb4b08d44d4032834a8e7a37efd79b06bd4c090d36c07",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Thorny Vines/Heartwood caption and hazard note are legible and distinct.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
    "id": "FIG-55",
-   "svg_sha256": "c215176a27c3d5039c3654ce67e2b0de7adf8eaa689cc974d8ce23d96e594a75",
-   "caption_sha256": "301f619dd66ddace585da3361de4e88462ad56df541343ea6d8c1028d94c379d",
+   "svg_sha256": "f82588a455a03295a45d52c3ad21edc37dd260fdb1366db375118ffdc09c13ef",
+   "caption_sha256": "2d3dd4cf3017961e8caf998ac733a6ad8d279f3a4fe0ab5d16dd863b46745eef",
    "verdict": "PASS",
    "checked_against_lines": [
     "14497-14578",
@@ -3991,9 +5772,17 @@
      "issue": "RC486 re-review: RC486 re-review (independent). Section 10.4 changed (P-08..P-12), so the dependent rules hash is stale for every figure. P-08..P-12 each replace one line, so line numbers are unchanged from RC485 (diff of source/Heraldry_RC485.md and Heraldry_RC486.md shows only lines 5, 12927, 13948, 14333, 14552, 14568 differ); every cited line number still points at the intended text (all element line citations checked by script against the scenario span and heading type, then by eye). Scenario text (Battlefield and Terrain, Objective Placement, Boss Deployment, Random Monster Setup, Party Deployment, Special Rules, Escape Conditions) read against every spec element and the rendered map (typst, 200 ppi = placed 243 pt width, PNG viewed). make_figures.py run in a scratch copy reproduces all 57 SVGs, manifest.json, placements.json and the coverage matrix byte-identically; selfcheck (distance/containment assertions, printed inch values found in cited lines, glyph registry vs FIG-20) and validation OK. RC486 elements: (a) Group 1 'enters at the midpoint of a random short battlefield edge at the start of Round 3' (14552): arrival arrows at the N and S midpoints only (N and S are the short edges, 11058), solid, labelled 'G1 R3 random short edge'; (b) 'Escape via any battlefield edge' (14568): exit arrows on all four edges, offset (N/S pos 10, W/E pos 14) with a foot note. Matches the patched text exactly; no new rule implied. Also fixed: island drawn dashed (radius not stated), Chests on islets. SVG changed since the previous review (hash updated).",
      "evidence_source_line": "see checked_against_lines",
      "fix": "None."
+    },
+    {
+     "id": "RC493-FIG-55-FULL",
+     "severity": "minor",
+     "status": "resolved",
+     "issue": "Water hatch crossed Ritual Island and raised islets.",
+     "fix": "Added explicit land knockouts and Ritual Island label.",
+     "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4034,6 +5823,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "14497-14578",
+    "observations": "White land knockouts now visibly separate Ritual Island and muddy chest-islets from surrounding Shallow Water; added Ritual Island label. Salttide and three Effigies are on land, two Crocodiles in adjacent water. R3 random short-edge arrival and separate escape arrows unchanged.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-55.png",
+     "png_sha256": "57c92d50c3fbf1ab207c40da3e09220811e51eb116bbf77abd083f683f952f54",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-55",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-55.png",
+     "png_sha256": "8cdd50497d1bdfa48b5cb8fee2bc9b32cafa12b3f3e64f10816c2e274be59b8b",
+     "caption_sha256": "2d3dd4cf3017961e8caf998ac733a6ad8d279f3a4fe0ab5d16dd863b46745eef",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Shortened repeated default parenthesis; final caption has no isolated final reference fragment.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   },
   {
@@ -4074,7 +5897,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4114,6 +5937,40 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_full_review": {
+    "reviewed_at": "2026-10-16",
+    "reviewer": "Codex scenario-map reviewer",
+    "source": "source/Heraldry_RC493.md",
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "checked_source_passages": "14579-14648",
+    "observations": "10-12\" Deep Water Sinkhole and three Hoard Chests, outer Bog Island group, muddy-bank group, delayed Serpent omission and default 6\" deployment zones match. Crumbling Banks remain qualified in footer.",
+    "report": "production/qa/figure-review-maps-rc493.md",
+    "render": {
+     "width_pt": 243,
+     "ppi": 144,
+     "png": "build/checks/RC493/maps/FIG-56.png",
+     "png_sha256": "3c2cd9d780a9c318047cc3d2426c317501a8a9286261176e9f93d0e8ee023535",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figure and source review; final PDF placement untested.",
+     "Repair-author/model review, not independent human proof.",
+     "Physical print NOT TESTED."
+    ],
+    "caption_render_review": {
+     "id": "FIG-56",
+     "width_pt": 243,
+     "ppi": 200,
+     "png": "build/checks/figure-review-all/FIG-56.png",
+     "png_sha256": "b27ae42ed2fdf242685b83a65b8eec25ad53897ac200c6e0abf79206bdf39948",
+     "caption_sha256": "d99b1e8d5a335dc3f1b5f629a6ab67b2e4552d378a98b9facd1468da3dc015ea",
+     "reviewer": "Codex integration owner",
+     "reviewed_at": "2026-10-16",
+     "observations": "Deep Water Sinkhole size and default edge deployment caption remain readable.",
+     "verdict": "PASS",
+     "report": "production/qa/figure-review-map-captions-rc493.md"
+    }
    }
   }
  ],
@@ -4533,5 +6390,35 @@
   "svg_and_caption_bytes_unchanged": true,
   "unaffected_51_entries_unchanged": true
  },
- "rc493_review_limits": "Source/figure delta and standalone PNG review only; not human independence, final book placement, full proofreading, accessibility, or physical print."
+ "rc493_review_limits": "Source/figure delta and standalone PNG review only; not human independence, final book placement, full proofreading, accessibility, or physical print.",
+ "rc493_full_review": {
+  "source": "source/Heraldry_RC493.md",
+  "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+  "figures_reviewed": 57,
+  "reports": [
+   "production/qa/figure-review-core-rc493.md",
+   "production/qa/figure-review-maps-rc493.md",
+   "production/qa/figure-review-key-template-rc493.md",
+   "production/qa/figure-review-map-captions-rc493.md"
+  ],
+  "previous_four_open_copy_findings": "resolved after authorized repair and actual rendered inspection",
+  "final_book_placement": "NOT TESTED",
+  "physical_print": "NOT TESTED",
+  "validation": {
+   "development_check": "PASS",
+   "tests_run": 190,
+   "expected_skips": 3,
+   "figure_gate": "PASS: 57/57; zero stale/open findings",
+   "fresh_generation": "PASS: 57 SVGs and two metadata files byte-identical",
+   "inspected_image_reproduction": "PASS: 57/57",
+   "native_preview_width_pt": {
+    "full": 504,
+    "column": 243
+   },
+   "current_template_frame_width_pt": {
+    "full": 518.4,
+    "column": 250.56
+   }
+  }
+ }
 }

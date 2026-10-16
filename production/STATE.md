@@ -1,12 +1,14 @@
 # Production state - RC493 source, main
 
-Updated 2026-10-15. Working/delivery branch: **main**.
+Updated 2026-10-16. Working/delivery branch: **main**.
 
 ## Active manuscript
 
 `source/versions.json` identifies `source/Heraldry_RC493.md`, SHA-256 `c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd`. The owner approved all ten publication editorial replacements and five canon alignments on 2026-10-15. Exact applied evidence is `editorial/history/RC493.json`; prior snapshots and archives remain unchanged. `docs/CANON_AUTHORITY.md` records the approved working conventions.
 
 Last PDF delivery remains **RC492-build-37**, 672 interior / 675 digital pages, and predates RC493. No RC493 PDF or full-format/physical approval is claimed. See `production/RELEASE_STATUS.md` and the latest checkpoint below.
+
+All-figure pass completed 2026-10-16: all 57 figures freshly compared with RC493 and directly reviewed as standalone renders; 25 SVGs and 9 captions improved. The four open copy follow-ups are resolved. Current figure gate PASS 57/57, no stale entries or open findings. Actual review scope, source qualifications, and image evidence: `production/qa/figure-review-all-rc493.md`. This does not replace the last release's PDF or physical-proof evidence.
 
 ## Historical RC487 checkpoint - 2026-10-10
 
@@ -719,3 +721,14 @@ Owner instructions: "Approve all as proposed." and "Continue". Promoted the ten 
 - Canonical approved evidence is `editorial/history/RC493.json`, SHA-256 `a9303b69f0b167350d87b83dd2ec2cb7c1baa5f8f2cb1300205dd48eaccca1dc`. Removed its applied proposal duplicate only after recording byte identity and archive hash; the earlier proposed form remains in Git history. See `production/qa/rc493-editorial-verification.json` and `rc493-editorial-application.md`.
 
 Validation: baseline and post-integration `python tools/dev.py check` PASS (190 tests each, 3 expected empty-queue skips; exact dependencies, pip consistency, 8 baseline contracts, 17 prior protected source/archive files, and whitespace). Source reconstruction and preserved table/anchor evidence PASS; actual scoped figure review and currency gate PASS with 4 open minors. No additional unit tests, production PDF build, hosted publication run, full-format/human proof, reader study, or screen-reader session was performed. Last delivered PDFs and their release/visual/package/gate records remain RC492-build-37 and predate RC493. Physical print **NOT TESTED**.
+
+
+## 2026-10-16: complete figure review and authorized repairs
+
+Owner instruction: "Ok just review and apply the figure fixes. Review all figures to ensure they are well designed and accurate. Make changes as needed to ensure their readability, clarity, accuracy, and excellence in design." Completed a fresh semantic and rendered review of all 57 figures. Two delegated reviewers covered instructional diagrams/scenario maps; the integration owner reviewed the key/template, changed details, and every map-caption specimen. Review authorship and source limitations are explicit in `production/qa/figure-review-all-rc493.md` and its companion records.
+
+Improved 25 SVGs and 9 captions: activation/mitigation/visibility/Aura/AI/deployment exceptions, reaction timing, typography, local keys, spatial labels/rulers, terrain layers, mixed Fen mud/pools, and paired Tabletop/Grid measurement. Removed an unsupported spatial patrol position while preserving its required setup instruction in a qualified note. All four earlier open copy findings are resolved. Expanded missing rule dependencies, bound scenario coverage to current source, and made generated line endings deterministic. No manuscript revision or mechanics changed.
+
+Baseline and final `python tools/dev.py check` PASS: 190 tests run each, 3 expected empty-queue skips, exact dependencies, baseline contracts, immutable snapshot/history and whitespace. Full figure generation/selfchecks and the semantic gate PASS 57/57 with zero stale or open findings. Fresh scratch generation reproduces 57 SVGs and both metadata files exactly, and current inputs reproduce all 57 inspected figure PNGs; all 36 final map captions were additionally viewed at native width. Minimum essential label size remains 9 pt. Native previews are slightly smaller than the current v4 frames.
+
+Last PDF delivery and its hash-bound visual/release/package/gate evidence remain RC492-build-37. No new book build or publication occurred. Final PDF placement/pagination and accessibility are not tested by this standalone review. Physical print **NOT TESTED**.

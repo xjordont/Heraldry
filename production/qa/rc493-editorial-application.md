@@ -1,5 +1,7 @@
 # RC493 approved editorial application
 
+Follow-up, 2026-10-16: the owner subsequently authorized all figure repairs. All 57 figures received fresh review; the four figure-copy proposals recorded below are now resolved. See [all-figure review](figure-review-all-rc493.md). The original source application evidence below remains historical.
+
 Owner instruction, 2026-10-15: **"Approve all as proposed."** This approves the ten exact manuscript replacements and five future-work canon alignments presented after commit `bb0e4b30`. The subsequent instruction **"Continue"** confirms continuation of this integration. No new publication build was requested.
 
 ## Applied source

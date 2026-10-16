@@ -121,7 +121,7 @@
 </g>
 <text x="241.2" y="92.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Antlered Warden:</tspan><tspan font-weight="400"> not placed at setup. When a Hero first Interacts</tspan></text>
 <text x="241.2" y="103" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">with a Standing Stone, it is placed adjacent to that Stone (here, the</text>
-<text x="241.2" y="113.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A Hero’s Stone) and is Awake when placed.</text>
+<text x="241.2" y="113.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A Hero's Stone) and is Awake when placed.</text>
 <g data-glyph="step">
 <circle cx="228.6" cy="128" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="228.6" y="131.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="352.8pt" viewBox="0 0 504 352.8">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="373.5pt" viewBox="0 0 504 373.5">
 <title>Monster Group states and wake-up triggers</title>
 <desc>Show Resting/Awake transitions with the five wake-up triggers and how 6" movement, 12" LOS and blocked LOS differ.</desc>
 <defs>
@@ -42,10 +42,12 @@
 <circle cx="6.6" cy="254.3" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="6.6" y="257.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
 <text x="19.2" y="255.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A scenario rule wakes it.</text>
-<rect x="0" y="268" width="236" height="40.9" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
-<text x="5" y="280.38" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">A </tspan><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> enemy trips the 6" trigger only while within its</tspan></text>
-<text x="5" y="291.18" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hide distance of the group (2" unless a rule changes it) and</text>
-<text x="5" y="301.98" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">does not wake a Resting group through the 12" LOS trigger.</text>
+<rect x="0" y="268" width="236" height="62.5" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="5" y="280.38" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">A </tspan><tspan font-weight="700">Hidden</tspan><tspan font-weight="400"> enemy trips the 6" trigger only within its Hide</tspan></text>
+<text x="5" y="291.18" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">distance (normally 2") and remains Hidden unless revealed.</text>
+<text x="5" y="301.98" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hidden or Invisible enemies do not wake a Resting group</text>
+<text x="5" y="312.78" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">through the 12" LOS trigger unless a rule makes them visible</text>
+<text x="5" y="323.58" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">to the group.</text>
 <rect x="262" y="0" width="13" height="13" fill="#000"/>
 <text x="268.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
 <text x="280" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Wake-up by distance and LOS (9.4)</text>
@@ -90,22 +92,22 @@
 <text x="269" y="274.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
 <text x="280" y="274.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">visible, within 12" with LOS: wakes</text>
 <text x="262" y="294.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">× on a sight line: LOS blocked. Third enemy: outside 6", no LOS.</text>
-<text x="262" y="306.8" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#333">Schematic — not to scale</text>
-<text x="0" y="323.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
-<polygon points="38.36,323.8 35.12,329.41 28.64,329.41 25.4,323.8 28.64,318.19 35.12,318.19" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
-<text x="48.88" y="326.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster Group</text>
-<circle cx="123.87" cy="323.8" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
-<text x="140.87" y="326.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A enemy</text>
-<circle cx="213.87" cy="323.8" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
-<circle cx="213.87" cy="323.8" r="1.68" fill="#000"/>
-<text x="230.87" y="326.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B enemy</text>
-<rect x="297.27" y="318.3" width="16" height="11" fill="#4a4a4a" stroke="#000" stroke-width="0.8"/>
-<text x="321.27" y="326.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking Terrain</text>
-<line x1="393.98" y1="323.8" x2="411.98" y2="323.8" stroke="#000" stroke-width="1.1" stroke-linecap="butt" stroke-dasharray="4.5 2.8"/>
-<circle cx="393.98" cy="323.8" r="1.9" fill="#000"/>
-<circle cx="411.98" cy="323.8" r="1.9" fill="#000"/>
-<text x="418.98" y="326.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">sight line</text>
-<line x1="0" y1="338.8" x2="13" y2="338.8" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
-<polygon points="20,338.8 13,342.2 13,335.4" fill="#000"/>
-<text x="26" y="341.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">enemy movement</text>
+<text x="262" y="306.8" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#333">Schematic - not to scale</text>
+<text x="0" y="344.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
+<polygon points="38.36,344.5 35.12,350.11 28.64,350.11 25.4,344.5 28.64,338.89 35.12,338.89" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<text x="48.88" y="347.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster Group</text>
+<circle cx="123.87" cy="344.5" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="140.87" y="347.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A enemy</text>
+<circle cx="213.87" cy="344.5" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="213.87" cy="344.5" r="1.68" fill="#000"/>
+<text x="230.87" y="347.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B enemy</text>
+<rect x="297.27" y="339" width="16" height="11" fill="#4a4a4a" stroke="#000" stroke-width="0.8"/>
+<text x="321.27" y="347.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking Terrain</text>
+<line x1="393.98" y1="344.5" x2="411.98" y2="344.5" stroke="#000" stroke-width="1.1" stroke-linecap="butt" stroke-dasharray="4.5 2.8"/>
+<circle cx="393.98" cy="344.5" r="1.9" fill="#000"/>
+<circle cx="411.98" cy="344.5" r="1.9" fill="#000"/>
+<text x="418.98" y="347.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">sight line</text>
+<line x1="0" y1="359.5" x2="13" y2="359.5" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="20,359.5 13,362.9 13,356.1" fill="#000"/>
+<text x="26" y="362.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">enemy movement</text>
 </svg>

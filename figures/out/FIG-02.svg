@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="305.1pt" viewBox="0 0 504 305.1">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="320.7pt" viewBox="0 0 504 320.7">
 <title>Activation, AP and Reaction timing</title>
 <desc>Show the activation procedure and where AP and Reactions fall in a round, using a Hero's 3 AP.</desc>
 <defs>
@@ -20,30 +20,35 @@
 <text x="12" y="60.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">has not already activated this round</text>
 <text x="4" y="70.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
 <text x="12" y="70.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">not prevented by another rule</text>
-<circle cx="6.6" cy="84.4" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="6.6" y="87.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
-<text x="19.2" y="85.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Choose one eligible allied combatant.</text>
-<circle cx="6.6" cy="102.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="6.6" y="105.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
-<text x="19.2" y="103.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve effects that occur at the start of that</text>
-<text x="19.2" y="114.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant's activation.</text>
-<circle cx="6.6" cy="128.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="6.6" y="131.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
-<text x="19.2" y="129.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Spend at least 1 AP on actions, in any order the rules</text>
-<text x="19.2" y="140.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">allow. Further AP may be spent in the same activation.</text>
-<circle cx="6.6" cy="154.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="6.6" y="157.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
-<text x="19.2" y="155.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve effects that occur at the end of that combatant's</text>
-<text x="19.2" y="166.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">activation.</text>
-<circle cx="6.6" cy="180.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="6.6" y="183.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
-<text x="19.2" y="181.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Mark the combatant as having activated this round.</text>
-<rect x="0" y="194.8" width="232" height="62.5" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
-<text x="5" y="207.18" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Reactions</tspan><tspan font-weight="400"> (4.5): taken when a rule's trigger occurs, usually</tspan></text>
-<text x="5" y="217.98" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">outside the reacting combatant's activation. Taking one</text>
-<text x="5" y="228.78" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">does not begin or end an activation. Only 1 Reaction may</text>
-<text x="5" y="239.58" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">modify the same action or effect against a given</text>
-<text x="5" y="250.38" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant.</text>
+<rect x="0" y="75.4" width="232" height="40.9" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="5" y="87.78" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Exception (3.3):</tspan><tspan font-weight="400"> Stunned or Sleeping combatants remain</tspan></text>
+<text x="5" y="98.58" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">eligible with 0 AP to end the condition if every other</text>
+<text x="5" y="109.38" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">requirement is met. They take no actions and spend no AP.</text>
+<circle cx="6.6" cy="133.3" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="6.6" y="136.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<text x="19.2" y="134.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Choose one eligible allied combatant.</text>
+<circle cx="6.6" cy="151.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="6.6" y="154.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="19.2" y="152.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve effects that occur at the start of that</text>
+<text x="19.2" y="163" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant's activation.</text>
+<circle cx="6.6" cy="177.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="6.6" y="180.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="19.2" y="178.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Spend at least 1 AP on legal actions. Further AP may be</text>
+<text x="19.2" y="189" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">spent in the same activation. If unable to perform any</text>
+<text x="19.2" y="199.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">action, spend no AP and proceed to step 4.</text>
+<circle cx="6.6" cy="214" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="6.6" y="217.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+<text x="19.2" y="215" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve effects that occur at the end of that combatant's</text>
+<text x="19.2" y="225.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">activation.</text>
+<circle cx="6.6" cy="240" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="6.6" y="243.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
+<text x="19.2" y="241" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Mark the combatant as having activated this round.</text>
+<rect x="0" y="254.2" width="232" height="62.5" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="5" y="266.58" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Reactions</tspan><tspan font-weight="400"> (4.5): taken when a rule's trigger occurs, usually</tspan></text>
+<text x="5" y="277.38" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">outside the reacting combatant's activation. Taking one</text>
+<text x="5" y="288.18" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">does not begin or end an activation. Only 1 Reaction may</text>
+<text x="5" y="298.98" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">modify the same action or effect against a given</text>
+<text x="5" y="309.78" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant.</text>
 <rect x="250" y="0" width="13" height="13" fill="#000"/>
 <text x="256.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
 <text x="268" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">One Hero's AP through a round (example)</text>
@@ -64,20 +69,20 @@
 <rect x="282" y="78.2" width="11" height="11" fill="#000" stroke="#000" stroke-width="0.8"/>
 <text x="304" y="87.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Refresh to 3 AP.</text>
 <rect x="250" y="99.2" width="254" height="14" fill="#000" stroke="#000" stroke-width="0.8" rx="2"/>
-<text x="255" y="109.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Party Phase — this Hero's one activation</text>
+<text x="255" y="109.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Party Phase - this Hero's one activation</text>
 <text x="499" y="109.6" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">3.3</text>
-<rect x="254" y="116.2" width="55.26" height="14" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
-<text x="281.63" y="126.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Move – 1 AP</text>
-<rect x="315.26" y="116.2" width="59.62" height="14" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
-<text x="345.07" y="126.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Attack – 1 AP</text>
-<text x="382.88" y="126.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">→</text>
-<rect x="394.88" y="117.7" width="11" height="11" fill="#fff" stroke="#000" stroke-width="1"/>
-<line x1="396.88" y1="119.7" x2="403.88" y2="126.7" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
-<line x1="396.88" y1="126.7" x2="403.88" y2="119.7" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
-<rect x="408.88" y="117.7" width="11" height="11" fill="#fff" stroke="#000" stroke-width="1"/>
-<line x1="410.88" y1="119.7" x2="417.88" y2="126.7" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
-<line x1="410.88" y1="126.7" x2="417.88" y2="119.7" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
-<rect x="422.88" y="117.7" width="11" height="11" fill="#000" stroke="#000" stroke-width="0.8"/>
+<rect x="254" y="116.2" width="54.97" height="14" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
+<text x="281.49" y="126.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Move [1 AP]</text>
+<rect x="314.97" y="116.2" width="59.33" height="14" fill="#fff" stroke="#000" stroke-width="0.8" rx="2"/>
+<text x="344.64" y="126.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">Attack [1 AP]</text>
+<text x="382.3" y="126.2" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">→</text>
+<rect x="394.3" y="117.7" width="11" height="11" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="396.3" y1="119.7" x2="403.3" y2="126.7" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="396.3" y1="126.7" x2="403.3" y2="119.7" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="408.3" y="117.7" width="11" height="11" fill="#fff" stroke="#000" stroke-width="1"/>
+<line x1="410.3" y1="119.7" x2="417.3" y2="126.7" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<line x1="410.3" y1="126.7" x2="417.3" y2="119.7" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
+<rect x="422.3" y="117.7" width="11" height="11" fill="#000" stroke="#000" stroke-width="0.8"/>
 <text x="254" y="141.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Move (4.2) and Attack (4.2, 5.1) cost 1 AP each. The activation ends</text>
 <text x="254" y="151.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">with 1 AP unspent; unspent AP may be kept for Reactions (3.3.2).</text>
 <rect x="250" y="163.4" width="254" height="14" fill="#000" stroke="#000" stroke-width="0.8" rx="2"/>
@@ -99,8 +104,9 @@
 <text x="255" y="233.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">End of Round</text>
 <text x="499" y="233.6" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">3.5</text>
 <text x="254" y="250.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">No AP is carried into the next round (3.3.2).</text>
-<rect x="250" y="260.2" width="254" height="40.9" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
-<text x="255" y="272.58" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">If no Reaction is taken, the 1 unspent AP is simply removed at</text>
-<text x="255" y="283.38" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">End of Round. A combatant reduced below 1 AP by Reactions is</text>
-<text x="255" y="294.18" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">no longer eligible to activate (3.3.2).</text>
+<rect x="250" y="260.2" width="254" height="51.7" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="255" y="272.58" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">If no Reaction is taken, the 1 unspent AP is removed at End of</text>
+<text x="255" y="283.38" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Round. Below 1 AP, a combatant cannot activate unless a</text>
+<text x="255" y="294.18" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">specific rule allows it; see the Stunned/Sleeping exception at left</text>
+<text x="255" y="304.98" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(3.3).</text>
 </svg>

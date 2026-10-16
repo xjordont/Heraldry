@@ -9,11 +9,8 @@
 <pattern id="p-aoe" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="4" height="4" fill="#fff"/><path d="M0.5 0V4" stroke="#777" stroke-width="1.4" fill="none"/></pattern>
 </defs>
 <rect x="0" y="4" width="114" height="22" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="12" cy="15" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="12" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
-<rect x="5.4" y="8.4" width="13.2" height="13.2" fill="#fff"/>
-<circle cx="12" cy="15" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="12" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
+<circle cx="12" cy="15" r="6.6" fill="#fff"/>
+<text x="12" y="18.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">1</text>
 <text x="22" y="19" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Initiative Phase</text>
 <text x="5" y="40" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
 <text x="12" y="40" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Refresh AP for each</text>
@@ -33,11 +30,8 @@
 <text x="12" y="167.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">effects.</text>
 <text x="110" y="19" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">3.2</text>
 <rect x="130" y="4" width="114" height="22" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="142" cy="15" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="142" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
-<rect x="135.4" y="8.4" width="13.2" height="13.2" fill="#fff"/>
-<circle cx="142" cy="15" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="142" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<circle cx="142" cy="15" r="6.6" fill="#fff"/>
+<text x="142" y="18.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">2</text>
 <text x="152" y="19" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Party Phase</text>
 <text x="135" y="40" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
 <text x="142" y="40" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Sides alternate activating</text>
@@ -55,11 +49,8 @@
 <text x="142" y="145.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">sides have Passed.</text>
 <text x="240" y="19" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">3.3</text>
 <rect x="260" y="4" width="114" height="22" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="272" cy="15" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="272" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
-<rect x="265.4" y="8.4" width="13.2" height="13.2" fill="#fff"/>
-<circle cx="272" cy="15" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="272" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<circle cx="272" cy="15" r="6.6" fill="#fff"/>
+<text x="272" y="18.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">3</text>
 <text x="282" y="19" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">Monster Phase</text>
 <text x="265" y="40" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
 <text x="272" y="40" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve Monster waking</text>
@@ -75,11 +66,8 @@
 <text x="272" y="131.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">not use AP.</text>
 <text x="370" y="19" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">3.4</text>
 <rect x="390" y="4" width="114" height="22" fill="#000" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="402" cy="15" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="402" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
-<rect x="395.4" y="8.4" width="13.2" height="13.2" fill="#fff"/>
-<circle cx="402" cy="15" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="402" y="18.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+<circle cx="402" cy="15" r="6.6" fill="#fff"/>
+<text x="402" y="18.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">4</text>
 <text x="412" y="19" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#fff">End of Round</text>
 <text x="395" y="40" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">•</text>
 <text x="402" y="40" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve end-of-round</text>

@@ -31,7 +31,7 @@ def fig18():
     K.dim_labeled(s, ix, iy + 32, ix + 2 * k, iy + 32, '2"', 2.6, off=9)
     yt = s.para(ix + 54, iy - 22, "W1 to W4 are Dire Wolves 1 to 4: 2\" south, east, west and north of the Satchel (A.11). On the board, the ruin leaves no space for W3 and W4 beside Edric.", LEFT_W - ix - 54, 9, lead=10.4)
     y = max(iy + 46, yt) + 2
-    labels18 = {"hero-A": "Road Wardens (Party A)", "hero-B": "Black Briar Raiders (Party B)", "mon": "Dire Wolf", "obj": "Dispatch Satchel",
+    labels18 = {"hero-A": "Road Wardens (Party A)", "hero-B": "Black Briar Raiders (Party B)", "mon": "Dire Wolf (A = Awake)", "obj": "Dispatch Satchel",
               "zone-A": "Party A zone", "zone-B": "Party B zone", "ter-impassable": "Low wall", "ter-blocking": "Centre ruin",
               "ter-coverdiff": "Rubble", "ter-cover": "Cover piece", "range": "Range", "dim": "Distance"}
     yl = y
@@ -43,10 +43,10 @@ def fig18():
     hh = box(s, rx, y, rw, "**Initiative:** Road Wardens 1d20 = 13, +0 INT, +1 SPI = **14**. Black Briar Raiders 1d20 = 10, +0, +0 = **10**. The Road Wardens win and choose to act first. All Heroes refresh to 3 AP.", anchor="start", fill=PALE, sw=0.7, pad=4)
     y += hh + 5
     rows = [
-        ("1 Edric", (False, False, False), "Move, Move, Interact: picks up the Dispatch Satchel. With 0 AP left he cannot take Reactions this round."),
-        ("2 Varek", (False, False, False), "Move, Move (Engaged with Edric), Attack with Battleaxe: 1d8 = 6, +3 STR = 9. Edric's Brigandine AD d8 = 4, so Edric takes 9 − 4 = 5 (16 → 11 HP)."),
-        ("3 Mara", (False, False, True), "Move, Attack with Shortbow: 1d6 = 4, +3 DEX = 7. Dire Wolf 3 has AV 1: 7 − 1 = 6 (15 → 9 HP). Keeps 1 AP."),
-        ("4 Senna", (False, False, True), "Move, Attack with Shortbow: 1d6 = 5, +3 DEX = 8. Mara declares Dodge [1 AP]: 1d20 = 11, +3 DEX = 14. A Check of 12 or more succeeds: Mara takes 0 (her 3 AP are spent). Senna keeps 1 AP."),
+        ("1 Edric", (False, False, False), "Move, Move, Interact: picks up the Dispatch Satchel. With 0 AP left it cannot take Reactions this round."),
+        ("2 Varek", (False, False, False), "Move, Move (Engaged with Edric), Attack with Battleaxe: 1d8 = 6, +3 STR = 9. Edric's Brigandine AD d8 = 4, so Edric takes 9 - 4 = 5 (16 → 11 HP)."),
+        ("3 Mara", (False, False, True), "Move, Attack with Shortbow: 1d6 = 4, +3 DEX = 7. Dire Wolf 3 has AV 1: 7 - 1 = 6 (15 → 9 HP). Keeps 1 AP."),
+        ("4 Senna", (False, False, True), "Move, then declare Shortbow Attack. Mara declares Dodge [1 AP] before damage is rolled. Senna: 1d6 = 5, +3 DEX = 8. Mara's DEX Check: 1d20 = 11, +3 = 14, a success. Mara takes 0 damage and has spent its 3 AP. Senna keeps 1 AP."),
     ]
     s.text(rx, y + 8, "Party Phase (activations alternate, Road Wardens first)", 9, 700)
     y += 13
@@ -97,7 +97,7 @@ def fig19():
     c, h = M.embed_map(s, sp, 0, 18, LEFT_W, bx=15, by=14)
     y = 18 + h + 4
     labels19 = {"hero-A": "One side's Heroes", "hero-B": "Other side's Heroes", "zone-A": "Zone, 4\" deep", "zone-B": "Zone, 4\" deep",
-              "mon": "Monster group", "chest": "Strongbox", "obj": "Satchel", "mk": "Monster Entry marker",
+              "mon": "Monster group (R = Resting)", "chest": "Strongbox", "obj": "Satchel", "mk": "Monster Entry marker",
               "ter-blocking": "Ruin: Blocking", "ter-impassable": "Cart or low wall: Impassable", "ter-cover": "Other piece: Cover",
               "ter-open": "Road", "range": "Range", "dim": "Distance"}
     yl = y
@@ -110,14 +110,14 @@ def fig19():
         "**Terrain:** a road across the centre; 2 ruins, carts or low walls within 4\" of the centre; 4 more 3\"×3\" pieces, one in each quarter. Ruins are Blocking, carts and low walls Impassable, other pieces Cover.",
         "**Deployment:** each side deploys within 4\" of opposite battlefield edges.",
         "**Monster Entry markers:** 3 markers around the centre, each 5–7\" from it, at least 4\" from each other and outside both deployment zones. The 3 groups (4 Goblins, 4 Skeleton Warriors, 4 Bandits) are assigned to the markers at random, one complete group per marker, with 1 Satchel on each marker. Every group begins Resting.",
-        "**Treasure:** the Strongbox (12c) at the centre; 3 Satchels (4c each). A carrier of the Strongbox has −2\" Speed, to a minimum of 1\".",
+        "**Treasure:** the Strongbox (12c) at the centre; 3 Satchels (4c each). A carrier of the Strongbox has -2\" Speed, to a minimum of 1\".",
         "**Extraction:** leave the battlefield through your own deployment edge; the carried treasure's Coin Value is added to your score.",
     ]
     for n_ in notes:
         y = s.para(rx, y + 7, n_, rw, 9, lead=10.5) + 2
     y += 2
     y = s.para(rx, y + 8, "**Example (assumed): Ironscar, SPD 4\", carries the Strongbox from the centre**", rw, 9, lead=10.5) - 4
-    ex_rows = [("Speed carrying the Strongbox", "4\" − 2\" = 2\" per Move"),
+    ex_rows = [("Speed carrying the Strongbox", "4\" - 2\" = 2\" per Move"),
                ("Centre to an edge, open ground", "12\"; 12\" ÷ 2\" = at least 6 Moves"),
                ("Score: Strongbox + 1 Satchel + 2 Goblins + 1 Bandit", "12 + 4 + 2 + 3 = 21c")]
     for a_, b_ in ex_rows:

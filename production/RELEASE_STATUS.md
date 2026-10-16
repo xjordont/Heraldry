@@ -2,9 +2,11 @@
 
 ## Current source - RC493
 
-Owner approval, 2026-10-15: "Approve all as proposed." All ten exact editorial corrections were promoted once to RC493; the five canon alignments are recorded in `docs/CANON_AUTHORITY.md` and startup contracts. The source SHA-256 is `c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd`. Exact reconstruction, unchanged prior bytes, content-anchor resolution, and preserved table-cell hashes are recorded in [verification](qa/rc493-editorial-verification.json). Six affected figures received actual source/render delta review; their source bindings are current, with four open minor figure-copy follow-ups.
+Owner approval, 2026-10-15: "Approve all as proposed." All ten exact editorial corrections were promoted once to RC493; the five canon alignments are recorded in `docs/CANON_AUTHORITY.md` and startup contracts. The source SHA-256 is `c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd`. Exact reconstruction, unchanged prior bytes, content-anchor resolution, and preserved table-cell hashes are recorded in [verification](qa/rc493-editorial-verification.json).
 
-Local validation: 190 tests PASS with 3 expected skips; dependency, baseline-contract, prior-snapshot, and whitespace checks PASS. Figure semantic currency PASS 57/57, no stale/open major findings, 4 open minor copy follow-ups. [Application record](qa/rc493-editorial-application.md). This is source/figure validation, not a new PDF release.
+All-figure pass, 2026-10-16: all 57 figures received fresh source comparison and actual rendered inspection, including all captions. Improved 25 SVGs and 9 captions; resolved the four prior copy follow-ups and newly found diagram defects. Current figure gate PASS 57/57, no stale entries or open findings. Source ambiguities and schematic limitations remain explicit. [Full figure review](qa/figure-review-all-rc493.md); [editorial application record](qa/rc493-editorial-application.md). This is source/figure validation, not a new PDF release.
+
+Validation: baseline and final development checks PASS, 190 tests run with 3 expected skips each; dependencies, baseline contracts, immutable history, and whitespace PASS. All 57 SVGs and both metadata files reproduce byte-for-byte from fresh generation; current inputs reproduce every inspected figure image. Native-width preview sizes are conservative relative to the current v4 frames. Final book placement and physical print remain untested.
 
 **The last delivered PDFs remain RC492-build-37 and do not contain RC493. No new PDF build was requested.** Physical print remains **NOT TESTED**. The delivery records and checkpoint notes below describe build 37 and its subsequent pre-RC493 work.
 

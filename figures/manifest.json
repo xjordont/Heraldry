@@ -45,7 +45,7 @@
     "file": "figures/out/FIG-02.svg",
     "size_pt": {
       "width": 504,
-      "height": 305.1
+      "height": 320.7
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Eligibility bullets and 5 steps compared with 3.3 and 3.3.1; 3 - 1 - 1 - 1 = 0 AP; Move and Attack 1 AP (4.2 table); Block 1 AP and shield requirement (5.5.1); Reactions do not begin or end an activation (4.5); unspent AP removed at End of Round (3.5, 3.3.2).",
@@ -63,7 +63,7 @@
       "5.4.3 Damage Types, AV example (1573-1610)"
     ],
     "geometry_spec": "Panel A: 5 numbered step boxes with flow arrows + Total Miss note. Panel B: Mitigation Order list; table 6 slashing + 4 fire, 5 AV -> 1 + 4 = 5 (source 5.1.1 example, numbers unchanged); table 9 slashing, d6 = 3 -> 6, with Block +2 AV -> 5 AV -> 4 (source 5.4.3 example).",
-    "caption": "The five-step attack sequence and the Mitigation Order. Source example: 6 slashing and 4 fire damage against 5 AV is (6 − 5) + 4 = 5 damage; with d6 AD rolling 3, 9 slashing is 9 − 3 = 6, or 9 − (3 + 2) = 4 with a +2 AV Block (see 5.2).",
+    "caption": "The five-step attack sequence and the Mitigation Order. Source example: 6 slashing and 4 fire damage against 5 AV is (6 - 5) + 4 = 5 damage; with d6 AD rolling 3, 9 slashing is 9 - 3 = 6, or 9 - (3 + 2) = 4 with a +2 AV Block (see 5.2).",
     "insert_after": "B01515",
     "scope": "full",
     "schematic": false,
@@ -181,7 +181,7 @@
     "editorial_patches": [
       "P-02"
     ],
-    "svg_sha256": "3c498cd01aacd8209db2fc410a87d0e44595c43a9df01c6f19fd20a26dc8c87a",
+    "svg_sha256": "320291b49379e64cbe7a944816cf56fdcaecf9bd761fb35a76cd2cd5a627ed79",
     "ambiguity": "Panel E's intervening combatant is assumed to be the same Sz as the target (the Ranger example in 2.8.4 does not state Sz)."
   },
   {
@@ -192,14 +192,14 @@
       "2.7.3 Areas of Effect (698-747)"
     ],
     "geometry_spec": "Panel A schematic templates with variable X; text states that a Cone or Line does not affect the combatant it originates from (P-01). Panel B Aura 2\" on a 7x7 grid: squares with centre within 2 of the source centre, ties included = 13 squares including the source square (an Aura includes its source square). Panel C Cone 3\" on a 6x5 grid: apex at the origin square centre, far edge 3 along the centreline and 3 wide; squares with centre inside, ties outward = 7 squares beyond the origin; the origin square is left unshaded (it is not counted) and the panel text says the combatant the cone originates from is not affected. Panel D same cone with one Blocking square at (2,3): square (3,3) is covered by the cone but its sight line from the origin crosses the Blocking square. Panel E four-step shared-damage flow.",
-    "caption": "A Grid Mode Aura 2\" affects 13 squares (including the source square); a 3\" Cone affects 7 squares beyond its origin square, and never affects the combatant it originates from. A square whose sight line from the origin is blocked by Blocking Terrain is unaffected even if the template covers it, and shared area damage is rolled once (see 2.7.3).",
+    "caption": "A Grid Mode Aura 2\" from a single source square affects 13 squares (including the source square); a 3\" Cone affects 7 squares beyond its origin square, and does not affect the combatant it originates from unless a rule says otherwise. A square whose sight line from the origin is blocked by Blocking Terrain is unaffected even if the template covers it, and shared area damage is rolled once (see 2.7.3).",
     "insert_after": "B00741",
     "scope": "full",
     "schematic": true,
     "file": "figures/out/FIG-08.svg",
     "size_pt": {
       "width": 504,
-      "height": 453.0
+      "height": 510.3
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Aura rule 'every square whose centre lies within the listed straight-line distance ... rounded outward at ties' and 'Include every source square' -> offsets with dx^2+dy^2<=4: 1+4+4+4=13. Cone rule 'every square whose centre lies within the cone' -> |dy|<=dx/2: x=1:1, x=2:3, x=3:3 = 7 squares beyond the origin; origin square not counted in the 7; per 2.7.3 as patched by P-01 the combatant a cone or line originates from is not affected (the patch concerns the combatant, not the square); make_figures.selfcheck asserts the origin square is not among the counted cone squares. Blocking: sight line origin-to-square-centre tested with a corner/interior check in code. Four-step order compared with the list at 741-745.",
@@ -208,7 +208,7 @@
     "editorial_patches": [
       "P-01"
     ],
-    "svg_sha256": "e13c38904a9db3e3cff11ea37fb61466567743c251e915052f54bee33929cabe",
+    "svg_sha256": "f3e1e73b91362f56c1964b3dcfd0bdbfa9c42d547d914d41bf05f6761ac86148",
     "ambiguity": "Resolved by P-01: the Cone panel, its text and the caption agree that the combatant the cone originates from is not affected; the origin square is simply not among the 7 counted squares. Not drawn: a Grid Line (the source text includes the origin square of a Line only 'if its centre lies within the line unless the rule says otherwise'; the figure draws no Grid Line and states only the P-01 sentence for templates in panel A)."
   },
   {
@@ -253,7 +253,7 @@
     "file": "figures/out/FIG-10.svg",
     "size_pt": {
       "width": 504,
-      "height": 352.8
+      "height": 373.5
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Trigger list compared with 9.4 bullets; '6\" movement trigger does not require LOS' and 'Hidden trips only within Hide distance' (7588); Awake permanence (7590); setup defaults 3\" / Guard Point (9.3). Rings drawn at 6:12 ratio only; panel labelled schematic.",
@@ -264,14 +264,14 @@
   {
     "id": "FIG-11",
     "title": "Standard Monster AI Script",
-    "purpose": "Show the five-instruction decision procedure: first valid instruction executes and the activation ends.",
+    "purpose": "Show the five-instruction decision procedure: first valid instruction executes and the activation ends unless a rule explicitly says it continues.",
     "source_refs": [
       "9.5 C Standard Monster AI Script (7626-7637)",
       "9.5 D AI Step Abilities (7638-7641)",
       "3.4.3 Monster Activations (1113-1120)"
     ],
     "geometry_spec": "Five condition boxes with yes arrows to outcome boxes and no arrows downward: AI Step, Engaged, Visible Target, Search, No Visible Target; preface states Primary Target and 'first valid instruction'.",
-    "caption": "The Standard Monster AI Script: a Monster executes the first valid instruction and its activation then ends. Each instruction is tried only if the one above it does not apply (see 9.5 C).",
+    "caption": "The Standard Monster AI Script: a Monster executes the first valid instruction and its activation then ends unless a rule explicitly says it continues. Each instruction is tried only if the one above it does not apply (see 9.5 C).",
     "insert_after": "B07636",
     "scope": "full",
     "schematic": false,
@@ -296,14 +296,14 @@
       "9.5 F Movement Priorities and Blocked Route (7652-7669)"
     ],
     "geometry_spec": "Panel A: Hidden enemy nearest but not visible; Primary Target is the nearest visible enemy. Panel B: two enemies at equal distance, example HP 4 and 7, ladder Lowest Current HP, Most Recent Attacker, Random Determination. Panel C 8x5 grid: nearest visible enemy ringed by Impassable Terrain (LOS not blocked, no route), other visible enemy reachable, becomes the new Primary Target.",
-    "caption": "Primary Target is the nearest visible enemy; equal candidates are separated by lowest current HP, then Most Recent Attacker, then Random Determination. If the Primary Target cannot be reached, the nearest reachable visible enemy becomes the new Primary Target (see 9.5 E and 9.5 F).",
+    "caption": "Primary Target is the nearest visible enemy; equal candidates are separated by lowest current HP, then Most Recent Attacker, then Random Determination. If the Monster cannot reach a position from which it may attack its Primary Target this activation, but can reach such a position against another visible enemy, the nearest such enemy becomes the new Primary Target (see 9.5 E and 9.5 F).",
     "insert_after": "B07662",
     "scope": "full",
     "schematic": true,
     "file": "figures/out/FIG-12.svg",
     "size_pt": {
       "width": 504,
-      "height": 351.0
+      "height": 340.4
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Primary Target and Hidden/Invisible exclusion (7644, 7624); tie hierarchy 1-3 (7646-7649); Blocked Route text (7662); Impassable Terrain does not block LOS (2.9.1). HP values 4 and 7 are labelled examples.",
@@ -409,7 +409,7 @@
       "10.4 The Spider's Silk Route (12209-12238)"
     ],
     "geometry_spec": "Four 36\"x36\" boards at 3.3 pt per inch (panel C is a 6.6 pt per inch detail of the centre): A 6\" bands, Trail 3.5\" wide (source 3-4\") full length, 2 Heroes per side on the Trail; B one 8\"-deep band on a short edge, Chasm 8\" wide; separation drawn as a dashed arc 6\" from the Party A Hero's marker edge plus a dimension line (arrowheads and end ticks) from that marker edge to the nearest Party B marker edge, 7\" (above the 6\" limit), with a 6\" radial dimension to the arc; C 8\"x8\" Safe Zone at 6.6 pt per inch with Hero markers at true 1\" size (r = 0.5\"): dashed ring 3\" from the Party A footprint edge, a 3\" radial dimension, and a dimension line from the Party A footprint edge to the nearest Party B footprint edge, 4\" (above the 3\" limit); all markers inside the zone; D 6\" bands and a 7\" Ravine (source 6-8\") between them. Unified iconography 2026-10-07: every symbol is drawn by the shared glyph functions of scenkit.py (zones with edge bands, Hero discs, markers, terrain patterns, dimension lines with end ticks, rings, step circles), explained by the key FIG-20; a compact key strip on the figure lists the glyphs it uses.",
-    "caption": "Special deployments: a Trail with at least two Heroes on it, one shared short edge within 8\" (no Hero within 6\" of an opposing Hero), a central 8\"×8\" Safe Zone (no Hero within 3\" of an opposing Hero), and short edges either side of a Ravine; key: FIG-20 (see 10.4).",
+    "caption": "Special deployments: a Trail with at least two Heroes on it (or the party's only Hero), one shared short edge within 8\" (no Hero within 6\" of an opposing Hero), a central 8\"×8\" Safe Zone (no Hero within 3\" of an opposing Hero), and short edges either side of a Ravine; key: FIG-20 (see 10.4).",
     "insert_after": "B11062",
     "scope": "full",
     "schematic": false,
@@ -422,7 +422,7 @@
     "semantic_check": "Trail, 8\", 6\", 3\" and Safe Zone texts compared with the four Party Deployment paragraphs (12170, 12997, 13062, 12238) and terrain paragraphs (12132, 12965, 13035, 12209). Correction pass: 13062 ('cannot be placed within 3\" of an opposing Hero', central 8\"x8\" Safe Zone) and 12997 ('within 6\"'; within 8\" of the edge) checked against the redrawn panels C and B; distances measured between the closest points of footprints per 2.6 (594). make_figures.selfcheck asserts that each separation dimension spans exactly the closest edges of the nearest opposing Heroes, that the gaps (B 7\", C 4\") exceed the limits (6\", 3\"), that every A-B pair in panel C is more than 3\" apart edge to edge, and that panel C markers lie inside the 8\"x8\" zone. Zone-depth dimensions (6\", 8\") span zone edge to zone edge. Redrawn with the shared dimension glyph (line with end ticks): the separation dimensions still span exactly the closest edges (2.6) and the selfcheck assertions on GEOM14 are unchanged; the Chasm now uses the shared Chasm pattern (a drop, not Impassable Terrain) and the Ravine the Difficult pattern used on FIG-24.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Release correction pass 2026-10-06: the floating 'min 3\"' label in panel C is replaced by a dimension line with arrowheads and end ticks that runs exactly between the closest edges (2.6) of one Party A Hero and the nearest Party B Hero (4\"), plus a dashed ring marking the 3\" limit; panel C markers are now true 1\" size at the stated 6.6 pt per inch. Panel B's 6\" label, which floated between markers, is replaced the same way (6\" arc and radial dimension, 7\" edge-to-edge dimension to the nearest Party B Hero). The remaining dimensions (6\", 8\") span zone edges and were checked. Selfcheck asserts the dimension endpoints. Earlier audit response: Minor fixed: panel C frame is dashed with an on-drawing 'centre detail' tag, and the dimension is labelled 'min 3\"'.",
-    "svg_sha256": "f083e99959602cb73d0320e933c4ff2606fced992f288988289eacfbe192b4f4",
+    "svg_sha256": "e070b9a30feaf25f60dcdd9eae8625216091ac5abd6518bc97c12478b321c65a",
     "iconography": "shared-v2",
     "ambiguity": "Source ranges (Trail 3-4\", Ravine 6-8\") are drawn at 3.5\" and 7\"; lateral Trail position and Ravine/Chasm position along the board are not fixed by the source and are drawn centred. The Chasm Crossing 'start' short edge is not specified (top drawn). The source states the limits as 'within 6\"' and 'within 3\"'; the redrawn Heroes are placed clearly outside the limits (7\" and 4\" between closest edges) so that no reading of the exact-limit case (exactly 6\" or 3\") is drawn. Panel B markers are enlarged and the dimension is measured between drawn marker edges at 3.3 pt per inch; the true 1\" footprints would be farther apart.",
     "coverage": {
@@ -456,13 +456,13 @@
     "file": "figures/out/FIG-15.svg",
     "size_pt": {
       "width": 504,
-      "height": 343.5
+      "height": 335.7
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "3\" map and stone distances, 8\" Chasm, 1\" wide ledges, 1-2\" gaps requiring Jump, 1-2 Crumbling ledges and Speed -1\" from 12965-12969; Jump cost 2\" per 1\" and DEX Check from 4.4.9; failed Jump into the Chasm = Chasm Fall, removed from play, Hero Defeated with a normal Injuries Roll, carried items including the Survey Map lost, replacing normal Falling (13003-13005); victory = Hero places the Survey Map adjacent to the Stone (13011). Correction pass, 13005-13007 compared sentence by sentence with panel C steps 6-8: Pushed off a Ledge or failed Crumbling Ledge Check -> immediately removed from play; Hero Defeated and normal Injuries Roll; non-Hero resolved as though reduced to 0 HP; replaces normal Falling; carried items including the Survey Map lost. Hero or Hireling with Fly or Climb Speed: may immediately spend 1 unspent AP, including AP reserved for Reactions; placed Prone in the nearest legal space on a Ledge; current movement ends; if the AP cannot be spent, Chasm Fall resolves normally. Monster with Fly or Climb Speed: placed Prone in the nearest legal space on a Ledge, activation ends (no AP cost stated). Redrawn with the shared glyphs: Chasm pattern, Ledge and Crumbling Ledge (crack line) glyphs, step circles, 3\" dimension lines with end ticks; all numbers and rules text unchanged.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Release correction pass 2026-10-06: step 5 stated the Chasm Fall consequence but omitted the Fly/Climb provisions of 13007. New panel C (steps 6-8) states the Chasm Fall (Hero Defeated with a normal Injuries Roll; non-Hero as though reduced to 0 HP; carried items lost) and separately the Hero or Hireling Fly/Climb option (spend 1 unspent AP, including AP reserved for Reactions; Prone on the nearest legal Ledge space; movement ends; Chasm Fall if the AP cannot be spent) and the Monster Fly/Climb provision (Prone on the nearest legal Ledge space; activation ends) in the source's wording. Caption notes the exceptions. Height 328 pt. Earlier audit response: MAJOR fixed: step 5 now states the scenario's own rule (failed Jump into the Chasm causes a Chasm Fall: removed from play, Hero Defeated with a normal Injuries Roll, carried items including the Survey Map lost, replacing normal Falling); caption mentions Chasm Fall; the generic-versus-scenario conflict is recorded in ambiguity. Minor fixed: step 4 now says the Map is placed adjacent to the Stone.",
-    "svg_sha256": "4b0ace584a52b631868ef8a9a58cce079fda1d7a078615ff3c18deea4042c17a",
+    "svg_sha256": "ee1ee3774b499b8941b28a99c1c640960c22431a66522412ed6d1bfce70c2010",
     "iconography": "shared-v2",
     "ambiguity": "The source gives 3-4 ledges, 1-2\" gaps, and does not give ledge length or the board position of the Chasm or ledge path; these are schematic. Treasure Chest positions (alcoves on both sides) and wall markers are not drawn. Generic 4.4.9 failure (last legal point before the gap, Prone, movement ends) versus the scenario's Chasm Fall: the scenario text says to use the normal Jump rules but a failed Jump into the Chasm causes a Chasm Fall, which replaces normal Falling; the figure states the scenario rule only and does not draw the generic failure result. Crumbling Ledge DEX Check failure also causes a Chasm Fall (13005)."
   },
@@ -492,7 +492,7 @@
       "P-04",
       "P-05"
     ],
-    "svg_sha256": "ee2d73d64f4e2c1396530cc69b2c044f987907991e2927475703211d76d835c8",
+    "svg_sha256": "aab154537f89f6da5f7acd26079f3486769e5e8e7e4b7fd41b37201ca343578b",
     "iconography": "shared-v2",
     "ambiguity": "Resolved by P-04 and P-05: the Warden stands adjacent to the first Stone a Hero Interacts with (the drawn Party A Hero's Stone, an illustrative choice of which Stone is first) and Group 2 stands inside the Central Clearing 4\" from its edge. Remaining schematic choices: the 4\" is drawn from the marker centre to the clearing edge, and Group 2's direction around the clearing is not fixed by the source. Groups 1 and 3 are not drawn."
   },
@@ -532,14 +532,14 @@
       "A.11 Sample Opening, Round 1 (16348-16490)"
     ],
     "geometry_spec": "Left: the 24\"x24\" battlefield drawn by the shared map renderer (scenario_specs.json, section appendix, 7.5 pt per inch) with the shared glyphs: 4\" deployment zones on the two short edges (Party A south, Party B north, A.11); 3\"x3\" centre ruin, Blocking, centred (A.2); low wall about 2\"x3\" (Impassable) and rubble about 3\"x3\" (Cover tagged Difficult), each 4-6\" from the centre on opposite flanks, and two Cover scatter pieces, all grey dashed because their positions are open; Dispatch Satchel adjacent to the ruin and 4 Dire Wolves within 2\" of it, grey dashed because the side of the ruin is not stated (one legal arrangement); Treasure Chest 5\" east of the centre with a 5\" dimension; Edric (12\",20\"), Mara (18\",20\"), Varek (12\",4\"), Senna (18\",4\") from the A.11 table with 6\" dimensions; exit arrows on all four edges. An inset at 10 pt per inch shows the A.11 relative layout (Wolves 1-4 2\" south, east, west and north of the Satchel). Right: Round 1 table with AP squares. A compact key strip at the bottom lists exactly the glyphs used; the full key is FIG-20.",
-    "caption": "Appendix A starting positions, with the Dispatch Satchel adjacent to the centre ruin, and Round 1 of the sample game. Edric ends the round with 16 − 5 = 11, 11 − 3 = 8 and 8 − 3 = 5 HP after Varek's attack and two Dire Wolf bites; key: FIG-20 (see A.11).",
+    "caption": "Appendix A starting positions, with the Dispatch Satchel adjacent to the centre ruin, and Round 1 of the sample game. Edric ends the round with 16 - 5 = 11, 11 - 3 = 8 and 8 - 3 = 5 HP after Varek's attack and two Dire Wolf bites; key: FIG-20 (see A.11).",
     "insert_after": "B16371",
     "scope": "full",
     "schematic": true,
     "file": "figures/out/FIG-18.svg",
     "size_pt": {
       "width": 504,
-      "height": 495.6
+      "height": 506.2
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Hero and Chest positions from the A.11 table (16358-16367); terrain from A.2 (16108-16111) as stated in the figure and asserted in scenario_specs.json (Satchel within 1\" of the ruin per the 2.1 adjacency definition at line 465, wolves within 2\" of the Satchel, low wall and rubble 4-6\" from the centre); Satchel adjacent to the centre ruin as patched by P-07; Wolves 2\" N/S/E/W of the Satchel (A.11); every printed inch value is found in its cited lines (check_scenmaps); initiative 13+0+1=14 vs 10+0+0=10; Varek 6+3=9, AD 4, 9-4=5; Mara 4+3=7, AV 1, 6; Dodge 11+3=14 >= 12; Wolf 1 5+1=6, AD 3 -> 3, STR 9+3=12 success; Wolf 2 max(4,7)+1=8, AD 5 -> 3, STR 6+3=9 fail. Only actions and Reactions named in A.7-A.8 are used (Move, Attack, Interact, Dodge, Pack Tactics); no advanced rules appear in the figure or its key strip.",
@@ -548,7 +548,7 @@
     "editorial_patches": [
       "P-07"
     ],
-    "svg_sha256": "2627c83d32b5c91333b6ebb22a1166756bd5a2f28733b836890785ef3a92b686",
+    "svg_sha256": "c16005bf9982073175e5dbf726e357ae3f73320f586bc953eb931485252ce045",
     "iconography": "shared-v2",
     "ambiguity": "Resolved by P-07: the Satchel is adjacent to the centre ruin. Remaining: the side of the ruin where the Satchel stands, and therefore where the Wolves stand, is not stated, so the board shows one legal arrangement in grey dashes (the Wolves within 2\" of it as A.4 says) and the inset shows the A.11 relative layout; the flank of the low wall and of the rubble is likewise open; the third scatter piece permitted by A.2 is not drawn."
   },
@@ -579,7 +579,7 @@
     "editorial_patches": [
       "P-06"
     ],
-    "svg_sha256": "fb50d064c7ce685f410f6188688a8e37abac0de8eafba61eaefc0d83f2d9226c",
+    "svg_sha256": "2d4fef806b68e888b092a93dda9865836aed8621943664671ca1a340df14aa55",
     "iconography": "shared-v2",
     "ambiguity": "Resolved by P-06: groups are assigned to Monster Entry markers at random, one complete group per marker (all markers carry identical group glyphs, so no assignment is drawn). The Monster group and Satchel are drawn beside, not on, each Entry marker for legibility. Terrain positions, the road's width, who places the markers and which opposite edges are the deployment edges are not specified (north and south drawn, grey dashed)."
   },
@@ -590,24 +590,24 @@
     "source_refs": [
       "10.1 Random Direction and Battlefield Edges (11056-11058)",
       "10.1 Setup Roll-off (11035) and Preparation Steps, step 11 (11072)",
-      "2.6 Measurement (594) and Size and Footprints (618-619)",
+      "2.6 Measurement (594-604) and Size and Footprints (618-619)",
       "2.9.1 Terrain Types (832-878)"
     ],
-    "geometry_spec": "Four columns of swatches (parties and zones; markers, Monsters and steps; terrain; pieces, distances, edges and status), 39 entries, one per glyph id in scenkit.REG, above six short notes on orientation, scale, counts, solid and dashed, not-placed elements and the step 11 default; no board geometry beyond the swatches. make_figures checks that every glyph and pattern id emitted by any setup diagram appears here.",
-    "caption": "Key to the setup and deployment diagrams: symbols for Heroes, zones, markers, Monster Groups, terrain, distances, edges and not-placed elements, with the orientation, scale and grey-dashed conventions every such diagram follows (see 10.4).",
+    "geometry_spec": "Four columns of swatches (parties and zones; markers, Monsters and steps; terrain; pieces, distances, edges and status), 39 entries, one per glyph id in scenkit.REG, above five short notes on orientation, scale, counts and labels, solid and dashed, and the step 11 default; no board geometry beyond the swatches. make_figures checks that every glyph and pattern id emitted by any setup diagram appears here.",
+    "caption": "Key to the setup and deployment diagrams: symbols for Heroes, zones, markers, Monster Groups, terrain, distances and edges, with the orientation, scale and grey-dashed conventions every such diagram follows (see 10.4).",
     "insert_after": "B11970",
     "scope": "full",
     "schematic": false,
     "file": "figures/out/FIG-20.svg",
     "size_pt": {
       "width": 504,
-      "height": 421.2
+      "height": 442.8
     },
     "generator": "figures/src/make_figures.py",
-    "semantic_check": "Swatches are drawn by the same shared glyph functions as the diagrams; every inch value printed (6\", 8\"x8\", 2\"x2\", 3\"x3\") is checked against lines 594, 618-619 and 11072; North/short/long edge naming against 11056-11058; closest-point measurement against 594. The registry check proves the key covers every id used on FIG-13 to FIG-16 and FIG-18 to FIG-57.",
+    "semantic_check": "Swatches are drawn by the same shared glyph functions as the diagrams; printed inch values are checked against lines 594-604, 618-619 and 11072; North/short/long edge naming against 11056-11058; paired Tabletop/Grid measurements against 594-604. The registry check proves the key covers every id used on FIG-13 to FIG-16 and FIG-18 to FIG-57.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "1d66a838af5dd263e854c2cf79dc4a414bfe6ec7fa8512e448624982dca2418a",
+    "svg_sha256": "c8ecb0336f3d4f2d80f612122f18e3d348bf5ab89da1fb8930ece2d39f7c8edd",
     "iconography": "shared-v2",
     "ambiguity": "None in the key. Terrain pieces whose type the scenario leaves to 2.9.1 ('Impassable or Blocking') use a neutral grey swatch rather than either type."
   },
@@ -711,7 +711,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12189-12259; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "b1309e66fbae6893e5504e9b096b0f2cf96649abb81a767d7e73607cb29c2999",
+    "svg_sha256": "0d413e1f05a548f6e624f9a3b1eb5f17a59a67103d9021093494bb39c42ff2c7",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -789,7 +789,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12427-12494; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "79224bd940b155188f1ec1bf2c185041d55c517f5f7c5c072960998aacf40606",
+    "svg_sha256": "f36d6379f1a3e1ccfa8a372d1dd8e6885818f0dc4aba3cc8afc8d3e2a86ea012",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -841,7 +841,7 @@
     "semantic_check": "Each element's source lines lie inside lines 12569-12623; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "2d12ad7322b8894cd23897a2842b9162bec67f83164a35e13a0e40a3ab893f36",
+    "svg_sha256": "d4bdc696311efe1b7f7ecfd5d4c910eff0eba384ee1e34c668f509a64a30e3c1",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -913,13 +913,13 @@
     "file": "figures/out/FIG-32.svg",
     "size_pt": {
       "width": 243,
-      "height": 253.4
+      "height": 263.8
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 12778-12876; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "a1c14185b5723555f90ae393cf0f1670366e5aaa4866d96095cf8ae608c4faa9",
+    "svg_sha256": "738a9d75221fd0b54ca067bcb5a1e8a55e0f375f33afbd4b0633152a156057f6",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1023,7 +1023,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13080-13186; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "c6a3a8e84c861e2ee58e22f4573788b5a6aefb5f969787ca079e43c825dee9d1",
+    "svg_sha256": "a1c6fef9e3f68fba63b93e467864b0f20bf669b92dd13bbe35293acfdf22e23e",
     "iconography": "shared-v2",
     "ambiguity": "Group 2 (13164): 'Place using normal alternating scenario placement' does not say who places the group or what limits apply; 10.1 step 7 and step 9 give an alternating rule only for terrain and weather markers. Group 2 is drawn as an unfixed (open) marker."
   },
@@ -1309,7 +1309,7 @@
     "semantic_check": "Each element's source lines lie inside lines 13903-13970; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "ae44621033fdcf16aeec9c5b72aea6274f531cfd94027a21efcddfb2212df6fe",
+    "svg_sha256": "3a6635ac7af17cb2df678833f66ca4fd9437d3815ef2457f4252272ce8451768",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1399,7 +1399,7 @@
       "10.4 The Mire Scenario 1: The Reliquary of Edrava Salttide (source lines 14197-14267)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 4 constrained and 11 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 3 mandatory, 4 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Reliquary of Edrava Salttide: parties deploy within 6\" of opposite short edges on the driest banks around a central Sunken Barrow whose flooded sanctum holds the Reliquary; key: FIG-20 (see 10.4, The Mire Scenario 1).",
     "insert_after": "B14254",
     "scope": "column",
@@ -1407,15 +1407,15 @@
     "file": "figures/out/FIG-51.svg",
     "size_pt": {
       "width": 243,
-      "height": 263.8
+      "height": 274.2
     },
     "generator": "figures/src/make_figures.py",
     "semantic_check": "Each element's source lines lie inside lines 14197-14267; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "ed537f31ac90ce29b6c4bec1d759f5e1264a3f6d2cf600592c31914f054681bf",
+    "svg_sha256": "52e6fc49b19529a7d0277e0c4793c660f2c6dcc2e2f70c6c732af31c387ecb8c",
     "iconography": "shared-v2",
-    "ambiguity": "Group 2 (14252): 'patrolling murky water' - the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258), while Group 2 patrols water outside the Barrow's sanctum; whether outer Shallow Water counts as murky is not stated. Group 2 is drawn as an illustrative marker in an outer Shallow patch."
+    "ambiguity": "Group 2 (14252) patrols murky water, while the only named Murky Water rule (14258) refers to water within the Sunken Barrow mound. The patrol area's extent is not delimited. No spatial Group 2 glyph is drawn; the footer preserves its required Resting state and patrol instruction."
   },
   {
     "id": "FIG-52",
@@ -1451,7 +1451,7 @@
       "10.4 The Mire Scenario 3: The Mire Titan's Fen (source lines 14343-14417)",
       "10.1 Preparation Steps, step 11 (11072)"
     ],
-    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 3 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
+    "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 1 mandatory, 3 constrained and 13 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
     "caption": "The Mire Titan's Fen: parties deploy in opposite corner zones on the outer banks (8\"×8\" by the 10.1 default), around a central Bubbling Fen where the Mire Titan starts Awake; key: FIG-20 (see 10.4, The Mire Scenario 3).",
     "insert_after": "B14402",
     "scope": "column",
@@ -1465,7 +1465,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14343-14417; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "7e0ae35e86dae55209bdb00bd78e7539d2514280924b72d266481bcd2cfb1816",
+    "svg_sha256": "85790209e40af8ebb28655d33c0622bef3402f5be1e512474ac020b6bc75895f",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1504,7 +1504,7 @@
       "10.1 Preparation Steps, step 11 (11072)"
     ],
     "geometry_spec": "36\"x36\" battlefield at 6 pt per inch (zones and stated distances to scale; markers enlarged; Large and Huge Monsters at footprint scale), drawn with the shared glyph set of FIG-20. 4 mandatory, 5 constrained and 10 illustrative elements, each citing its source lines in scenario_specs.json; illustrative elements are grey dashed.",
-    "caption": "Salttide's Reckoning: parties deploy along the outer banks within 6\" of opposite long edges (6\" is the 10.1 default) around a central Ritual Island holding Edrava Salttide and three Cursed Effigies; key: FIG-20 (see 10.4, The Mire Scenario 5).",
+    "caption": "Salttide's Reckoning: parties deploy along the outer banks within 6\" of opposite long edges (10.1 default) around a central Ritual Island holding Edrava Salttide and three Cursed Effigies; key: FIG-20 (see 10.4, The Mire Scenario 5).",
     "insert_after": "B14554",
     "scope": "column",
     "schematic": true,
@@ -1517,7 +1517,7 @@
     "semantic_check": "Each element's source lines lie inside lines 14497-14578; every printed inch value is found in its cited lines; distances, containments and 'at least' / 'within' relations are asserted in make_figures.selfcheck (check_scenmaps); zones, markers and Blocking or Impassable pieces are checked against the 10.1 step 7 and step 8 distances; every glyph and pattern emitted is listed in FIG-20.",
     "status": "redrawn 2026-10-07 for RC486 and minor review findings, pending independent re-review",
     "audit_response": "Redrawn 2026-10-07 against RC486 (P-08 to P-12 resolved elements, open minor findings fixed); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "c215176a27c3d5039c3654ce67e2b0de7adf8eaa689cc974d8ce23d96e594a75",
+    "svg_sha256": "f82588a455a03295a45d52c3ad21edc37dd260fdb1366db375118ffdc09c13ef",
     "iconography": "shared-v2",
     "ambiguity": "None affecting the drawing. Positions the source leaves open are drawn as one legal arrangement in grey dashes."
   },
@@ -1553,23 +1553,23 @@
     "purpose": "Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default deployment zones and the step 7 terrain exclusion distances on a generic battlefield.",
     "source_refs": [
       "10.1 Preparation Steps, steps 1-12 (11062-11073)",
-      "2.6 Measurement (592)"
+      "2.6 Measurement (592-604)"
     ],
-    "geometry_spec": "Left: the 12 Preparation Steps as numbered rows (steps 7 and 11 highlighted). Right: two 36\"x36\" boards at 3.3 pt per inch, drawn with the shared zone, Hero and dimension glyphs. Edge default: zones 6\" deep on opposite edges, exclusion (hatched) = 3\" from an edge and 6\" from a zone (allowed region 12\"-24\" across, 3\"-33\" down). Corner default: 8\"x8\" corner zones diagonally opposite, exclusion with rounded 6\" corners.",
-    "caption": "Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default zones (6\" deep or 8\"×8\" corners) and the step 7 limits on major Blocking and Impassable Terrain (3\" from an edge, 6\" from a zone); key: FIG-20 (see 10.1).",
+    "geometry_spec": "Left: the 12 Preparation Steps as numbered rows (steps 7 and 11 highlighted). Right: two Tabletop clearance schematics of 36\"x36\" boards at 3.3 pt per inch, drawn with the shared zone, Hero and dimension glyphs. Edge default: zones 6\" deep on opposite edges, exclusion (hatched) = 3\" from an edge and 6\" from a zone. Corner default: 8\"x8\" zones diagonally opposite, exclusion with rounded 6\" corners. Hatching remains visible inside deployment zones. The paired Grid clause refers to 2.6 and prints 1\" orthogonal/1.5\" diagonal distances.",
+    "caption": "Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default zones (6\" deep or 8\"×8\" corners) and the step 7 limits on major Blocking and Impassable Terrain (3\" from an edge, 6\" from a zone). Tabletop clearance is shown; Grid Mode uses 2.6; key: FIG-20 (see 10.1).",
     "insert_after": "B11062",
     "scope": "full",
     "schematic": true,
     "file": "figures/out/FIG-57.svg",
     "size_pt": {
       "width": 504,
-      "height": 338.5
+      "height": 373.3
     },
     "generator": "figures/src/make_figures.py",
-    "semantic_check": "Step text compared with lines 11062-11073; 3\" and 6\" from step 7 (11068), 6\", 8\"x8\" and alternate placing from step 11 (11072); selfcheck asserts 6+6=12, 36-12=24, 8+6=14 and that the printed inch values appear in the cited lines.",
+    "semantic_check": "Step text compared with lines 11062-11073; 3\" and 6\" from step 7 (11068), 6\", 8\"x8\" and alternate placing from step 11 (11072); Tabletop/Grid measurements against 594-604. Selfcheck asserts 6+6=12, 36-12=24, 8+6=14 and that printed inch values appear in the cited lines.",
     "status": "unified iconography 2026-10-07, pending independent review",
     "audit_response": "Iconography unified 2026-10-07 (shared glyph registry scenkit.REG, key FIG-20, mechanical registry check in make_figures); not yet independently re-reviewed. Earlier record: Not yet independently reviewed (drawn 2026-10-06; generator selfcheck and render inspection done).",
-    "svg_sha256": "85ebef91750f0f0e8f550841f60d08275c8b7813347f8921793d38b2e16d2c01",
+    "svg_sha256": "83321f5649c26b2063765aee63e366ee3febe834db8e4e48f48f4da930a2b8ee",
     "iconography": "shared-v2",
     "ambiguity": "None. Which edge pair or corner pair is used is chosen by the Setup Roll-off winner; the figure shows one example of each and says so."
   }
