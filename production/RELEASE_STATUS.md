@@ -1,5 +1,7 @@
 # Release status - RC493 source / RC492 delivery
 
+README automation, 2026-10-16: status and recent changes refresh locally during development checks and on GitHub after main pushes and repository workflow completions. Generated status keeps current-source validation separate from recorded PDF delivery. README publishing shares the publication queue and changes only README.md. This tooling does not rebuild or certify a PDF; RC493 source and RC492-build-37 delivery retain the scopes below. See [maintenance details](../docs/README_AUTOMATION.md).
+
 ## Current source - RC493
 
 Owner approval, 2026-10-15: "Approve all as proposed." All ten exact editorial corrections were promoted once to RC493; the five canon alignments are recorded in `docs/CANON_AUTHORITY.md` and startup contracts. The source SHA-256 is `c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd`. Exact reconstruction, unchanged prior bytes, content-anchor resolution, and preserved table-cell hashes are recorded in [verification](qa/rc493-editorial-verification.json).

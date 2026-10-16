@@ -77,6 +77,8 @@ def main():
             return 1
         if args.command == "doctor":
             return 0
+        if run(python, "tools/update_readme.py", "--write"):
+            return 1
         if run(python, "tools/preflight.py", "--baseline", "--report", str(report / "preflight.json")):
             return 1
         if run(python, "tools/check_history.py", "--base", args.base):
@@ -89,7 +91,7 @@ def main():
         except PublishError as exc:
             print("FAILED: " + str(exc), file=sys.stderr)
             return 1
-        print("PASS: dependencies, contracts, snapshot history, whitespace, and make test. No publication build.")
+        print("PASS: README refreshed; dependencies, contracts, snapshot history, whitespace, and make test. No publication build.")
         return 0
     except (ValueError, OSError) as exc:
         print("FAILED: " + str(exc), file=sys.stderr)

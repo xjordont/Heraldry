@@ -4,7 +4,7 @@
 
 Read [docs/CANON_AUTHORITY.md](docs/CANON_AUTHORITY.md) before rules or editorial work. The owner's 2026-10-15 approval settles five conflicts with older imported briefs in favour of the current-source conventions recorded there. Use `source/versions.json` to locate the active manuscript; preserve all other project instructions and the immutable revision workflow.
 
-Ordinary development starts with `python tools/dev.py check`; `doctor` checks the installed environment, and `status` reports Git and last-release state. These commands do not build the book or publish. Use the current build card only when the owner requests a build.
+Ordinary development starts with `python tools/dev.py check`; it refreshes the README's generated blocks before checking. `doctor` checks the installed environment, and `status` reports Git and last-release state. These commands do not build the book or publish. GitHub refreshes the README after pushes and repository workflows; see [docs/README_AUTOMATION.md](docs/README_AUTOMATION.md). Use the current build card only when the owner requests a build.
 
 Owner-supplied full manuscript updates use [docs/MANUSCRIPT_UPDATES.md](docs/MANUSCRIPT_UPDATES.md): prepare an exact review with `python tools/dev.py manuscript prepare --input <file.md>`, then apply the explicitly approved batch through the revision engine. Review affected anchors/figures and commit any bound companion configuration with the new RC. A manuscript update does not request a publication build.
 

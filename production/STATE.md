@@ -2,6 +2,12 @@
 
 Updated 2026-10-16. Working/delivery branch: **main**.
 
+## README automation - 2026-10-16
+
+Validation: baseline 190 tests and final 203 tests PASS (3 expected skips); all 13 README regressions PASS. Dependencies, baseline preflight, immutable history, and whitespace PASS. Corrected two existing Windows CI assertions to compare resolved temporary paths; both focused checks PASS. Hosted activation is checked after pushing this implementation; see GitHub's `Update GitHub README` run and its README-only bot commit for current execution evidence.
+
+Owner request: keep the GitHub README automatically updated after changes. Generated status and recent-change blocks now derive from checked repository records and Git history; surrounding guidance remains hand-written. `tools/dev.py check` refreshes locally. A main-push/workflow-completion Actions workflow publishes README-only commits after required checks, shares the publication queue, and defers for pending builds. Review found no blocking defect; the suggested non-race retry guard was applied. Implementation and recovery details: `docs/README_AUTOMATION.md`. Hosted activation and final check results are recorded with the delivery checkpoint; no new publication build is requested.
+
 ## Active manuscript
 
 `source/versions.json` identifies `source/Heraldry_RC493.md`, SHA-256 `c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd`. The owner approved all ten publication editorial replacements and five canon alignments on 2026-10-15. Exact applied evidence is `editorial/history/RC493.json`; prior snapshots and archives remain unchanged. `docs/CANON_AUTHORITY.md` records the approved working conventions.

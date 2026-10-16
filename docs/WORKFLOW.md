@@ -6,6 +6,8 @@ Before editing, inspect `git status`, the current branch, and the remote main he
 
 ## Routine development
 
+The ordinary check also refreshes the root README's generated status and recent-change blocks. Include that refresh in your checked commit. GitHub refreshes them again after every main push and other repository-workflow completions, including bot commits. It shares the publication queue and defers for pending builds. Details: [README maintenance](README_AUTOMATION.md). Its hand-written guidance remains editable outside the marked blocks.
+
 Run `python tools/dev.py check` after syncing and before publishing an ordinary iteration. It selects the project Python environment, checks every locked version and import, runs baseline preflight and snapshot-history protection against the local `origin/main` tracking ref, checks whitespace, and runs `make test`. Use `--base <commit>` when a different confirmed history boundary is required. `doctor` checks only the environment; `status` shows local Git state and the last requested release. These commands do not fetch, build the book, edit release ledgers, commit, or push. Their reports live in ignored `build/checks/`.
 
 The build-request and visual-review publishing helpers require a clean, current main before writing. They rerun `make test`, recheck main and the exact allowed files, and commit only their own request or ledger. Keep review records outside the checkout, such as `C:/Heraldry/art-scratch/review.json`. A rejected push preserves the local commit and stops for inspection; no automatic pull, rebase, reset, or force-push occurs.

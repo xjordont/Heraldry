@@ -67,7 +67,7 @@ class GitPublication(unittest.TestCase):
         self.assertEqual(publish.require_clean_main(self.root), self.base)
         self.write_payload()
         commit = self.publish_payload()
-        self.assertEqual(self.tests_run, [self.root])
+        self.assertEqual(self.tests_run, [self.root.resolve()])
         self.assertEqual(self.git("rev-parse", "main", cwd=self.remote), commit)
         self.assertEqual(self.git("show", "--format=", "--name-only", commit), "production/build-request.json")
         self.assertEqual(self.git("status", "--porcelain"), "")
