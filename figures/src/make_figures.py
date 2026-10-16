@@ -6,6 +6,7 @@ import importlib
 import json
 import os
 import sys
+import unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -40,7 +41,7 @@ def build(only=None):
         import figdata
         meta = figdata.META.get(fid, {})
         text = svg.render(h, title=meta.get("title", fid), desc=meta.get("purpose"))
-        with open(os.path.join(OUT, fid + ".svg"), "w", encoding="utf-8") as f:
+        with open(os.path.join(OUT, fid + ".svg"), "w", encoding="utf-8", newline="\n") as f:
             f.write(text)
         done.append((fid, svg.w, round(h, 1)))
     return done
@@ -86,6 +87,7 @@ def selfcheck():
     # FIG-14 panels B and C: each separation dimension runs exactly between the closest edges (2.6) of the
     # nearest opposing Heroes; those Heroes are farther apart than the limit; every marker is inside its zone
     import fig_scen
+    fig_scen.fig14()  # populate geometry even when the CLI regenerates a different SVG subset
     for key in ("B", "C"):
         g = fig_scen.GEOM14[key]
         (x1, y1), (x2, y2) = g["dim"]
@@ -107,6 +109,18 @@ def selfcheck():
     import fig_scenmaps
     problems = fig_scenmaps.check_scenmaps()
     assert not problems, "scenario map checks failed:\n  " + "\n  ".join(problems)
+
+
+def typography_errors(text):
+    """Apply the manuscript's visible-character lock to figure labels and captions."""
+    bad = set()
+    banned = "\u00a0\u00a7\u2018\u2019\u201c\u201d\u2026\u2032\u2033\u2035\u2036\u2212"
+    for i, char in enumerate(text):
+        if char in banned or (unicodedata.category(char) == "Pd" and char not in "-–"):
+            bad.add("U+%04X" % ord(char))
+        if char == "–" and not (i > 0 and i + 1 < len(text) and text[i - 1].isdigit() and text[i + 1].isdigit()):
+            bad.add("non-range U+2013")
+    return sorted(bad)
 
 
 def validate_svgs():
@@ -144,6 +158,8 @@ def validate_svgs():
                 if k == "stop-color":
                     errs.append("%s: stop-color" % fn)
             if tag == "text":
+                for problem in typography_errors("".join(el.itertext())):
+                    errs.append("%s: visible typography %s" % (fn, problem))
                 fs_ = float(el.get("font-size", "0"))
                 if fs_ < 9:
                     errs.append("%s: font-size %s < 9" % (fn, fs_))
@@ -179,6 +195,8 @@ def validate_placements():
             errs.append("duplicate %s" % fid)
         seen.add(fid)
         import re
+        for problem in typography_errors(m["caption"]):
+            errs.append("%s: caption typography %s" % (fid, problem))
         if not re.search(r"\(see [^)]+\)\.$", m["caption"]):
             errs.append("%s: caption does not end with a section reference" % fid)
         if len(re.findall(r"[.!?](?:\s|$)", m["caption"])) > 3:
@@ -213,7 +231,7 @@ def write_anchor_proposals():
                 break
         else:
             raise SystemExit("no unique anchor prefix for " + fid)
-    with open(os.path.join(HERE, "..", "anchor_proposals.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(HERE, "..", "anchor_proposals.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
@@ -243,7 +261,11 @@ def write_coverage(dims):
                    ambiguities_logged=amb_total,
                    global_notes=["Group placement constraints ('within 3\" of ...', 'at least 8\" from ...') are drawn for one marker per Monster Group; the text does not say whether every member of a multi-Monster group must satisfy them.",
                                  "Counts of scattered terrain are printed values; maps draw a few representative pieces and never resolve 10.6 scaling."])
-    out = dict(generated="2026-10-09", source="source/Heraldry_RC487.md", scenarios=rows, appendix=appendix, procedural=procedural, summary=summary)
+    with open(os.path.join(HERE, "..", "..", "source", "versions.json"), encoding="utf-8") as f:
+        versions = json.load(f)
+    current = next(r for r in versions["revisions"] if r["number"] == versions["current"])
+    out = dict(source=current["path"], source_sha256=current["sha256"], source_created_at=current["created_at"],
+               scenarios=rows, appendix=appendix, procedural=procedural, summary=summary)
     path = os.path.join(HERE, "..", "..", "production", "qa", "scenario-coverage.json")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     # independent-review records live in the same file: carry every existing "review" key over, never regenerate it
@@ -258,7 +280,7 @@ def write_coverage(dims):
         for sec in ("procedural", "summary"):
             if "review" in old.get(sec, {}):
                 out[sec]["review"] = old[sec]["review"]
-    with open(path, "w", encoding="utf-8") as f:
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
         f.write("\n")
 

@@ -35,9 +35,8 @@ def fig01():
     for i, (name, ref, items) in enumerate(phases):
         x = i * (bw + gap)
         s.rect(x, y0, bw, 22, fill=INK, stroke=INK, sw=0.9, rx=2.5)
-        callout(s, x + 12, y0 + 11, i + 1, 6.6)
-        s.rect(x + 5.4, y0 + 4.4, 13.2, 13.2, fill=WHITE, stroke=None)  # white ring for numeral
-        callout(s, x + 12, y0 + 11, i + 1, 6.6)
+        s.circle(x + 12, y0 + 11, 6.6, fill=WHITE, stroke=None)
+        s.text(x + 12, y0 + 14.2, str(i + 1), 9, 700, "middle", INK)
         s.text(x + 22, y0 + 15, name, 9.5, 700, "start", WHITE)
         yy = y0 + 22 + 3
         body_start = yy
@@ -113,10 +112,12 @@ def fig02():
         s.text(ax + 4, y + 9, "•", 9, 700)
         s.text(ax + 12, y + 9, e, 9)
         y += 10.6
+    hh = box(s, ax, y + 3, aw, "**Exception (3.3):** Stunned or Sleeping combatants remain eligible with 0 AP to end the condition if every other requirement is met. They take no actions and spend no AP.", anchor="start", fill=PALE, sw=0.7, pad=5)
+    y += hh + 8
     y += 7
     steps = ["Choose one eligible allied combatant.",
              "Resolve effects that occur at the start of that combatant's activation.",
-             "Spend at least 1 AP on actions, in any order the rules allow. Further AP may be spent in the same activation.",
+             "Spend at least 1 AP on legal actions. Further AP may be spent in the same activation. If unable to perform any action, spend no AP and proceed to step 4.",
              "Resolve effects that occur at the end of that combatant's activation.",
              "Mark the combatant as having activated this round."]
     y = step_list(s, ax, y, steps, aw, gap=5)
@@ -136,7 +137,7 @@ def fig02():
     y += 8
     rows = [
         ("Initiative Phase", 3, "Refresh to 3 AP.", "3.2"),
-        ("Party Phase — this Hero's one activation", 1, None, "3.3"),
+        ("Party Phase - this Hero's one activation", 1, None, "3.3"),
         ("Monster Phase", 0, "A Monster's slashing attack would damage the Hero: the Hero declares **Block** (Reaction, 1 AP). It is not an activation.", "5.5.1"),
         ("End of Round", 0, "Any unspent AP is removed.", "3.5"),
     ]
@@ -156,9 +157,9 @@ def fig02():
             # action chips with pips
             cx = bx + 4
             for name in ("Move", "Attack"):
-                w = tw(name + " – 1 AP", 9, 600) + 10
+                w = tw(name + " [1 AP]", 9, 600) + 10
                 s.rect(cx, ry - 2, w, 14, fill=WHITE, stroke=INK, sw=0.8, rx=2)
-                s.text(cx + w / 2, ry + 8, name + " – 1 AP", 9, 600, "middle")
+                s.text(cx + w / 2, ry + 8, name + " [1 AP]", 9, 600, "middle")
                 cx += w + 6
             s.text(cx + 2, ry + 8, "→", 9, 600)
             cx += 14
@@ -176,7 +177,7 @@ def fig02():
             s.text(bx + 4, ry + 8, "No AP is carried into the next round (3.3.2).", 9)
             ry += 14
         ry += 4
-    hh = box(s, bx, ry, bwid, "If no Reaction is taken, the 1 unspent AP is simply removed at End of Round. A combatant reduced below 1 AP by Reactions is no longer eligible to activate (3.3.2).", anchor="start", fill=PALE, sw=0.7, pad=5)
+    hh = box(s, bx, ry, bwid, "If no Reaction is taken, the 1 unspent AP is removed at End of Round. Below 1 AP, a combatant cannot activate unless a specific rule allows it; see the Stunned/Sleeping exception at left (3.3).", anchor="start", fill=PALE, sw=0.7, pad=5)
     yb = ry + hh
     return s, max(ya, yb) + 4
 
@@ -219,7 +220,7 @@ def fig03():
     panel_title(s, bx, 0, "B", "Mitigation Order and worked example (5.1.1)")
     y = 21
     mo = [
-        "Keep each damage type separate. Apply AV once to blunt, piercing and slashing damage only; reduce each type to a minimum of 0.",
+        "Keep damage types separate. Apply AV and flat mitigation once. If a value reduces several types, use the source's listed order. Reduce each type to a minimum of 0. AV applies only to blunt, piercing and slashing.",
         "Apply Immune, Resistant and Vulnerable to each remaining type.",
         "Total the remaining damage and apply it.",
     ]
@@ -234,7 +235,7 @@ def fig03():
     for c, hd in zip(cols, hdr):
         s.text(c + 5, y + 10.8, hd, 9, 700, "start", WHITE)
     y += 15
-    rowsd = [("slashing", "6", "− 5", "1"), ("fire (ignores AV)", "4", "—", "4")]
+    rowsd = [("slashing", "6", "- 5", "1"), ("fire (ignores AV)", "4", "None", "4")]
     for r in rowsd:
         s.rect(bx, y, bw, 16, fill=WHITE, stroke=INK, sw=0.7)
         for c, val in zip(cols, r):
@@ -252,8 +253,8 @@ def fig03():
     for c, hd in zip((bx, bx + 126, bx + 190), ("Case", "AV", "Suffered")):
         s.text(c + 5, y + 10.8, hd, 9, 700, "start", WHITE)
     y += 15
-    for case, av, res in (("9 slashing, no Block (d6 = 3)", "3", "9 − 3 = 6"),
-                          ("same attack, Block (+2 AV)", "3 + 2 = 5", "9 − 5 = 4")):
+    for case, av, res in (("9 slashing, no Block (d6 = 3)", "3", "9 - 3 = 6"),
+                          ("same attack, Block (+2 AV)", "3 + 2 = 5", "9 - 5 = 4")):
         s.rect(bx, y, bw, 16, fill=WHITE, stroke=INK, sw=0.7)
         s.text(bx + 4, y + 11.5, case, 9)
         s.text(bx + 131, y + 11.5, av, 9)

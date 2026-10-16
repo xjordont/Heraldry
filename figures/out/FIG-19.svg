@@ -204,14 +204,14 @@
 <text x="218" y="120.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">random, one complete group per marker, with 1 Satchel on each marker.</text>
 <text x="218" y="131" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Every group begins Resting.</text>
 <text x="218" y="150.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Treasure:</tspan><tspan font-weight="400"> the Strongbox (12c) at the centre; 3 Satchels (4c each). A carrier of</tspan></text>
-<text x="218" y="161" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the Strongbox has −2" Speed, to a minimum of 1".</text>
+<text x="218" y="161" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the Strongbox has -2" Speed, to a minimum of 1".</text>
 <text x="218" y="180.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Extraction:</tspan><tspan font-weight="400"> leave the battlefield through your own deployment edge; the</tspan></text>
 <text x="218" y="191" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">carried treasure's Coin Value is added to your score.</text>
 <text x="218" y="213.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Example (assumed): Ironscar, SPD 4", carries the Strongbox from the</tspan></text>
 <text x="218" y="224" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">centre</tspan></text>
 <rect x="218" y="230.5" width="286" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
 <text x="222" y="241.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Speed carrying the Strongbox</text>
-<text x="500" y="241.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">4" − 2" = 2" per Move</text>
+<text x="500" y="241.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">4" - 2" = 2" per Move</text>
 <rect x="218" y="246.5" width="286" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
 <text x="222" y="257.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Centre to an edge, open ground</text>
 <text x="500" y="257.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="end">12"; 12" ÷ 2" = at least 6 Moves</text>
@@ -295,7 +295,7 @@
 <polygon points="375.47,349.3 372.98,353.6 368.02,353.6 365.53,349.3 368.02,345 372.98,345" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
 </g>
 </g>
-<text x="389.5" y="352.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster group</text>
+<text x="389.5" y="352.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster group (R = Resting)</text>
 <g data-strip="ter-blocking">
 <g data-glyph="ter-blocking">
 <rect x="2" y="358.8" width="26" height="12" fill="#4a4a4a" stroke="#000" stroke-width="0.9"/>

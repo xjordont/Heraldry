@@ -387,6 +387,15 @@ def draw_feature(c, e):
     sw = e.get("sw", 0.9)
     outline = e.get("outline") != "none"
     kind, p = feat_path(c, e)
+    # Open land over a surrounding water/terrain layer must clear that hatch.
+    # Opt in per source feature; ordinary room/cavern outlines stay transparent.
+    if e.get("knockout"):
+        if kind == "rect":
+            s.rect(*p, fill=WHITE, stroke=None)
+        elif kind == "circle":
+            s.circle(*p, fill=WHITE, stroke=None)
+        elif kind == "poly":
+            s.polygon(p, fill=WHITE, stroke=None)
     if kind == "rect":
         K.terrain_shape(s, t, "rect", p, open_, sw, outline)
         bb = (p[0], p[1], p[0] + p[2], p[1] + p[3])
@@ -440,6 +449,17 @@ def draw_feature(c, e):
         c.add_label(e["id"], e["label"], cx, cy, 0, pref=lp, fixed="c" if lp == "c" else None, weight=600, leader=False)
 
 
+def glyph_label(c, e, x, y, radius):
+    """Optional explicit label centre moves copy without moving the rules glyph."""
+    fixed = None
+    if e.get("label_at"):
+        lines = e["label"].split("\n")
+        w = max(tw(t, 9, 600) for t in lines) + 3.4
+        h = len(lines) * 10 + 1.6
+        fixed = (c.X(e["label_at"][0]) - w / 2, c.Y(e["label_at"][1]) - h / 2)
+    c.add_label(e["id"], e["label"], x, y, radius, pref=e.get("lp", "rltb"), fixed=fixed)
+
+
 def draw_marker(c, e):
     x, y = c.X(e["at"][0]), c.Y(e["at"][1])
     r = 5.2
@@ -448,7 +468,7 @@ def draw_marker(c, e):
     K.marker(c.s, e["glyph"], x, y, is_open(e), r)
     c.occupy(x - r - 0.5, y - r - 0.5, x + r + 0.5, y + r + 0.5)
     if e.get("label"):
-        c.add_label(e["id"], e["label"], x, y, r, pref=e.get("lp", "rltb"))
+        glyph_label(c, e, x, y, r)
 
 
 def draw_monster(c, e):
@@ -456,7 +476,7 @@ def draw_monster(c, e):
     half = K.monster(c.s, e.get("sz", "M"), x, y, is_open(e), c.sc)
     c.occupy(x - half - 0.5, y - half - 0.5, x + half + 0.5, y + half + 0.5)
     if e.get("label"):
-        c.add_label(e["id"], e["label"], x, y, half, pref=e.get("lp", "rltb"))
+        glyph_label(c, e, x, y, half)
 
 
 def draw_hero(c, e):
@@ -712,8 +732,8 @@ FIRST_MAP_FIG = 21
 LEGEND_FIG = "FIG-20"
 LEGEND_ANCHOR_LINE = 11970
 TEMPLATE_ANCHOR_LINE = 11062
-LEGEND_LINES = [594, 618, 619, 11035, 11056, 11058, 11072]
-TEMPLATE_LINES = [592, 11062, 11068, 11069, 11071, 11072, 11073]
+LEGEND_LINES = [594, 596, 598, 604, 618, 619, 11035, 11056, 11058, 11072]
+TEMPLATE_LINES = [592, 594, 596, 598, 604, 11062, 11068, 11069, 11071, 11072, 11073]
 SHARED_OK = list(range(11029, 11077)) + list(range(14870, 14967)) + [10984, 594, 592]
 
 
@@ -758,6 +778,10 @@ def _legend_col(s, x, y, title, ids, width, audit):
         text = K.REG[gid]["label"]
         lines = wrap(text, width - 36, 9)
         h = max(15, len(lines) * 10.4 + 4)
+        if gid == "mon-L":
+            h = max(h, 22)
+        elif gid == "mon-H":
+            h = max(h, 28)
         K.swatch(s, gid, x, y + h / 2)
         for k, ln in enumerate(lines):
             s.text(x + 36, y + 7.6 + k * 10.4 + (h - len(lines) * 10.4) / 2 - 1, ln, 9)
@@ -780,8 +804,8 @@ def fig20():
     s.line(0, y - 3, FULL_W, y - 3, INK, 0.6)
     notes = [
         "**Orientation.** North is drawn at the top. The Setup Roll-off winner designates the North edge before setup; North and South are the short battlefield edges and East and West the long ones, even on a square battlefield (10.1).",
-        "**Scale.** The battlefield, zones and stated distances are drawn to scale; markers are enlarged, and Large and Huge Monsters are drawn at their 2\"×2\" and 3\"×3\" footprints. Distances are measured between closest points, except from a centre or origin where the rule says so (2.6).",
-        "**Counts.** Scattered terrain is drawn as a few representative pieces; the printed counts and the 10.6 scaling stay in the scenario text. Group numbers are the scenario's own. Hidden contents (face-down markers) are never drawn.",
+        "**Scale and measurement.** The battlefield, zones and stated distances are drawn to scale; markers are enlarged, and Large and Huge Monsters use 2\"×2\" and 3\"×3\" footprints. **Tabletop:** measure between closest points, except from a point or origin where specified. **Grid:** apply 2.6 to occupied squares and terrain; use shortest grid distances at 1\" orthogonally and 1.5\" diagonally unless a rule says otherwise.",
+        "**Counts and labels.** Scattered terrain is drawn as a few representative pieces; the printed counts and the 10.6 scaling stay in the scenario text. G1, G2 and so on are Monster Group numbers. A means Awake; R means Resting. R2, R3 and R4 beside arrival arrows mean arrival at the start of that round. Hidden contents (face-down markers) are never drawn.",
         "**Solid and dashed.** A solid marker or zone with a distance symbol is one position that meets the printed limit; only the battlefield, zone depths and stated distances are exact. Grey dashed pieces show one legal arrangement of something the rules leave open. Letters A and B name the drawn zones; where a scenario assigns the parties by die roll, the zones do not say who is which.",
         "**Where a scenario is silent**, 10.1 step 11 applies: the Setup Roll-off winner chooses the edge or corner zone and the other party takes the opposite one; zones are 6\" deep or 8\"×8\" corners, marked \"(default)\" on a map, and parties alternate placing Heroes, starting with the party that lost the Roll-off.",
     ]
@@ -802,7 +826,7 @@ TPL_STEPS = [
     ("Generate Secondary Objectives: record only.", False),
     ("Generate Weather: record only.", False),
     ("Resolve the Setup Roll-off.", False),
-    ("**Place Terrain.** Major Blocking or Impassable Terrain stays 3\" from a battlefield edge and 6\" from a deployment zone unless the scenario says otherwise.", True),
+    ("**Place Terrain.** Major Blocking or Impassable Terrain cannot be within 3\" of a battlefield edge or within 6\" of a deployment zone unless the scenario says otherwise.", True),
     ("Place Objectives and Markers.", False),
     ("Generate and Place Monsters.", False),
     ("Assign Guard Points.", False),
@@ -842,7 +866,7 @@ def _tpl_board(s, ox, oy, variant, audit):
     s.rect(ox, oy, bs, bs, fill="none", stroke=INK, sw=1.2)
     for party, (x0, y0, x1, y1) in zones:
         sides = [b[0] for b in K.band_sides((x0, y0, x1, y1), 36)]
-        K.zone(s, ox + x0 * ST, oy + y0 * ST, (x1 - x0) * ST, (y1 - y0) * ST, party, sides)
+        K.zone(s, ox + x0 * ST, oy + y0 * ST, (x1 - x0) * ST, (y1 - y0) * ST, party, sides, fill=PAT["aoe"])
         cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
         if variant == "edge":
             for f in (0.2, 0.5, 0.8):
@@ -888,13 +912,14 @@ def fig57():
     rx = 232
     box_w = FULL_W - rx
     s.rect(rx, 6, box_w, 17, fill=WHITE, stroke=INK, sw=1.2, rx=2)
-    s.text(rx + box_w / 2, 18.2, "Template — not a fixed battlefield", 10, 700, "middle")
+    s.text(rx + box_w / 2, 18.2, "Template - not a fixed battlefield", 10, 700, "middle")
     bw = 36 * ST
     gap = 14
     ox1, ox2 = rx + 6, rx + 6 + bw + gap
-    oy = 44
-    s.text(ox1, 36.8, "Step 11 default: edge zones", 9, 700)
-    s.text(ox2, 36.8, "Step 11 default: corner zones", 9, 700)
+    s.text(rx, 34, "Tabletop clearance shown; Grid Mode below.", 9, 600)
+    oy = 58
+    s.text(ox1, 50.8, "Step 11 default: edge zones", 9, 700)
+    s.text(ox2, 50.8, "Step 11 default: corner zones", 9, 700)
     _tpl_board(s, ox1, oy, "edge", audit)
     _tpl_board(s, ox2, oy, "corner", audit)
     yb = oy + bw + 12
@@ -905,8 +930,8 @@ def fig57():
     audit += [t1, t2]
     yk = max(ya, yb2) + 6
     yk = K.key_strip(s, ["ter-excl", "zone-A", "zone-B", "hero-A", "hero-B", "dim"], rx, yk, box_w, title=None) + 2
-    yk = s.para(rx, yk + 7, "Hatched: step 7 forbids major Blocking or Impassable Terrain. White: allowed.", box_w, 9, 400, lead=10.4) - 3
-    nt = "Drawn to scale at 3.3 pt per inch on a 36\"×36\" battlefield; the 3\" edge margin and the 6\" distance from a zone are measured from the zone's outline, so corner zones leave a rounded exclusion."
+    yk = s.para(rx, yk + 7, "Hatched areas, including deployment zones: step 7 excludes major Blocking or Impassable Terrain unless the scenario says otherwise. White areas: outside these exclusions.", box_w, 9, 400, lead=10.4) - 3
+    nt = "**Tabletop:** The drawings show the 3\" margin from the battlefield edge and the 6\" clearance from the deployment-zone outline, including rounded corner exclusions. **Grid:** Apply 2.6 to the zones and terrain; count shortest grid distances at 1\" orthogonally and 1.5\" diagonally."
     ye = s.para(rx, yk + 14, nt, box_w, 9, 400, lead=10.4)
     audit += [nt]
     fig57.audit = audit
@@ -933,11 +958,11 @@ def meta_entries():
         title="Key to the setup and deployment diagrams",
         purpose="One shared key for every setup and deployment diagram (the deployment patterns, the Chasm Crossing and Whispering Grove details, the Appendix A and B maps and the 36 Core Scenario maps): one swatch per glyph, pattern, line type and status convention, drawn by the same functions as the diagrams.",
         source_refs=["10.1 Random Direction and Battlefield Edges (11056-11058)", "10.1 Setup Roll-off (11035) and Preparation Steps, step 11 (11072)",
-                     "2.6 Measurement (594) and Size and Footprints (618-619)", "2.9.1 Terrain Types (832-878)"],
-        geometry_spec="Four columns of swatches (parties and zones; markers, Monsters and steps; terrain; pieces, distances, edges and status), %d entries, one per glyph id in scenkit.REG, above six short notes on orientation, scale, counts, solid and dashed, not-placed elements and the step 11 default; no board geometry beyond the swatches. make_figures checks that every glyph and pattern id emitted by any setup diagram appears here." % len(key_ids()),
-        caption="Key to the setup and deployment diagrams: symbols for Heroes, zones, markers, Monster Groups, terrain, distances, edges and not-placed elements, with the orientation, scale and grey-dashed conventions every such diagram follows (see 10.4).",
+                     "2.6 Measurement (594-604) and Size and Footprints (618-619)", "2.9.1 Terrain Types (832-878)"],
+        geometry_spec="Four columns of swatches (parties and zones; markers, Monsters and steps; terrain; pieces, distances, edges and status), %d entries, one per glyph id in scenkit.REG, above five short notes on orientation, scale, counts and labels, solid and dashed, and the step 11 default; no board geometry beyond the swatches. make_figures checks that every glyph and pattern id emitted by any setup diagram appears here." % len(key_ids()),
+        caption="Key to the setup and deployment diagrams: symbols for Heroes, zones, markers, Monster Groups, terrain, distances and edges, with the orientation, scale and grey-dashed conventions every such diagram follows (see 10.4).",
         insert_after="B%05d" % LEGEND_ANCHOR_LINE, scope="full", schematic=False,
-        semantic_check="Swatches are drawn by the same shared glyph functions as the diagrams; every inch value printed (6\", 8\"x8\", 2\"x2\", 3\"x3\") is checked against lines 594, 618-619 and 11072; North/short/long edge naming against 11056-11058; closest-point measurement against 594. The registry check proves the key covers every id used on FIG-13 to FIG-16 and FIG-18 to FIG-57.",
+        semantic_check="Swatches are drawn by the same shared glyph functions as the diagrams; printed inch values are checked against lines 594-604, 618-619 and 11072; North/short/long edge naming against 11056-11058; paired Tabletop/Grid measurements against 594-604. The registry check proves the key covers every id used on FIG-13 to FIG-16 and FIG-18 to FIG-57.",
         ambiguity="None in the key. Terrain pieces whose type the scenario leaves to 2.9.1 ('Impassable or Blocking') use a neutral grey swatch rather than either type.",
         new_figure=True)
     for key in scenario_order():
@@ -961,11 +986,11 @@ def meta_entries():
     out["FIG-%d" % (FIRST_MAP_FIG + 36)] = dict(
         title="10.1 Preparation Steps: procedural template",
         purpose="Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default deployment zones and the step 7 terrain exclusion distances on a generic battlefield.",
-        source_refs=["10.1 Preparation Steps, steps 1-12 (11062-11073)", "2.6 Measurement (592)"],
-        geometry_spec="Left: the 12 Preparation Steps as numbered rows (steps 7 and 11 highlighted). Right: two 36\"x36\" boards at 3.3 pt per inch, drawn with the shared zone, Hero and dimension glyphs. Edge default: zones 6\" deep on opposite edges, exclusion (hatched) = 3\" from an edge and 6\" from a zone (allowed region 12\"-24\" across, 3\"-33\" down). Corner default: 8\"x8\" corner zones diagonally opposite, exclusion with rounded 6\" corners.",
-        caption="Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default zones (6\" deep or 8\"×8\" corners) and the step 7 limits on major Blocking and Impassable Terrain (3\" from an edge, 6\" from a zone); key: FIG-20 (see 10.1).",
+        source_refs=["10.1 Preparation Steps, steps 1-12 (11062-11073)", "2.6 Measurement (592-604)"],
+        geometry_spec="Left: the 12 Preparation Steps as numbered rows (steps 7 and 11 highlighted). Right: two Tabletop clearance schematics of 36\"x36\" boards at 3.3 pt per inch, drawn with the shared zone, Hero and dimension glyphs. Edge default: zones 6\" deep on opposite edges, exclusion (hatched) = 3\" from an edge and 6\" from a zone. Corner default: 8\"x8\" zones diagonally opposite, exclusion with rounded 6\" corners. Hatching remains visible inside deployment zones. The paired Grid clause refers to 2.6 and prints 1\" orthogonal/1.5\" diagonal distances.",
+        caption="Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default zones (6\" deep or 8\"×8\" corners) and the step 7 limits on major Blocking and Impassable Terrain (3\" from an edge, 6\" from a zone). Tabletop clearance is shown; Grid Mode uses 2.6; key: FIG-20 (see 10.1).",
         insert_after="B%05d" % TEMPLATE_ANCHOR_LINE, scope="full", schematic=True,
-        semantic_check="Step text compared with lines 11062-11073; 3\" and 6\" from step 7 (11068), 6\", 8\"x8\" and alternate placing from step 11 (11072); selfcheck asserts 6+6=12, 36-12=24, 8+6=14 and that the printed inch values appear in the cited lines.",
+        semantic_check="Step text compared with lines 11062-11073; 3\" and 6\" from step 7 (11068), 6\", 8\"x8\" and alternate placing from step 11 (11072); Tabletop/Grid measurements against 594-604. Selfcheck asserts 6+6=12, 36-12=24, 8+6=14 and that printed inch values appear in the cited lines.",
         ambiguity="None. Which edge pair or corner pair is used is chosen by the Setup Roll-off winner; the figure shows one example of each and says so.",
         new_figure=True)
     return out
@@ -997,7 +1022,7 @@ TERRAIN_2_9_1 = [
     ("undergrowth", {"coverdiff"}, "undergrowth: Cover + Difficult"), ("rubble", {"coverdiff"}, "rubble fields: Cover + Difficult"),
     ("debris", {"coverdiff"}, "debris fields: Cover + Difficult"), ("dune", {"coverdiff"}, "dunes: Cover + Difficult"),
     ("outcrop", {"coverdiff"}, "rocky outcrops: Cover + Difficult"), ("thorny vines", {"coverdiff"}, "scenario: Cover + Difficult"),
-    ("deep sand", {"difficult"}, "deep sand: Open + Difficult"), ("muck", {"difficult"}, "muck: Open + Difficult"),
+    ("deep sand", {"difficult"}, "deep sand: Open + Difficult"), ("deep mud", {"difficult"}, "mud: Open + Difficult"), ("muck", {"difficult"}, "muck: Open + Difficult"),
     ("workbench", {"impassable"}, "workbenches: Impassable"), ("low wall", {"impassable"}, "low walls: Impassable"),
     ("ice barricade", {"impassable"}, "scenario: Impassable"), ("barricade", {"impassable"}, "barricades: Impassable"),
     ("altar", {"impassable"}, "altars: Impassable"), ("column", {"impassable"}, "broken columns: Impassable"),

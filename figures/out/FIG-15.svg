@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="343.5pt" viewBox="0 0 504 343.5">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="335.7pt" viewBox="0 0 504 335.7">
 <title>The Chasm Crossing: ledges and objective placement</title>
 <desc>Show where the Survey Map, ledges, Chasm and Cartographer's Stone sit relative to the shared deployment edge, and how Jump applies to ledge gaps.</desc>
 <defs>
@@ -91,7 +91,7 @@
 <text x="58.4" y="130.25" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">3"</text>
 <text x="154.8" y="59.09" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="end">start side</text>
 <text x="154.8" y="159.3" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="end">delivery side</text>
-<text x="158.8" y="192.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#333" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="end">Schematic — not to scale</text>
+<text x="158.8" y="192.8" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#333" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="end">Schematic - not to scale</text>
 <rect x="180.8" y="0" width="13" height="13" fill="#000"/>
 <text x="187.3" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
 <text x="198.8" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Reading the placement</text>
@@ -213,12 +213,11 @@
 <text x="6.6" y="294.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">7</text>
 </g>
 <text x="19.2" y="292" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Hero or Hireling with a Fly or Climb Speed</tspan><tspan font-weight="400"> that would fall may immediately spend 1 unspent AP, including AP reserved for</tspan></text>
-<text x="19.2" y="302.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reactions, to catch themselves. Place them Prone in the nearest legal space on a Ledge, and end their current movement. If they</text>
-<text x="19.2" y="313" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">cannot spend the AP, resolve the Chasm Fall normally.</text>
+<text x="19.2" y="302.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reactions, to catch itself. Place it Prone in the nearest legal space on a Ledge, and end its current movement. If it cannot spend</text>
+<text x="19.2" y="313" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the AP, resolve the Chasm Fall normally.</text>
 <g data-glyph="step">
 <circle cx="6.6" cy="326.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="6.6" y="329.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">8</text>
 </g>
-<text x="19.2" y="327.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Monster with a Fly or Climb Speed</tspan><tspan font-weight="400"> that would fall is placed Prone in the nearest legal space on a Ledge, and their activation</tspan></text>
-<text x="19.2" y="338" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">ends.</text>
+<text x="19.2" y="327.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Monster with a Fly or Climb Speed</tspan><tspan font-weight="400"> that would fall is placed Prone in the nearest legal space on a Ledge, and its activation ends.</tspan></text>
 </svg>

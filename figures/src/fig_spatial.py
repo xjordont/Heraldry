@@ -44,7 +44,7 @@ def fig04():
     s.text(ax, ay + 70, "Measured between the closest points", 9)
     s.text(ax, ay + 81, "of the source and target spaces.", 9)
     yy = s.para(0, ay + 100, "Rules footprints are used, not the miniature's base. Rules that measure from a point use that point.", 150, 9, lead=10.6)
-    s.text(0, yy + 6, "Schematic \u2014 not to scale", 9, 600, "start", "#333")
+    s.text(0, yy + 6, "Schematic - not to scale", 9, 600, "start", "#333")
     ya = yy + 8
     # ---------------- Panel B: Grid range ----------------
     bx = 170
@@ -81,7 +81,7 @@ def fig04():
         s.text(xx + w / 2, base + 11, lab, 9, 700, "middle")
         s.text(xx + w / 2, base + 21, "%d×%d" % (n, n), 9, 400, "middle")
         xx += w + 9
-    yy = s.para(cx0, base + 36, "A combatant occupies the squares of their Sz footprint (S and M 1×1, L 2×2, H 3×3). Their whole footprint must fit in every legal final position.", 152, 9, lead=10.6)
+    yy = s.para(cx0, base + 36, "A combatant occupies the squares of its Sz footprint (S and M 1×1, L 2×2, H 3×3). Its whole footprint must fit in every legal final position.", 152, 9, lead=10.6)
     yc = yy
     # ---------------- Row 2: Declared State ----------------
     y = max(ya, yb, yc) + 10
@@ -350,7 +350,7 @@ def fig07():
     y = maxy[1] + 4
     s.line(0, y, FULL_W, y, MID, 0.6)
     y += 4
-    yy = s.para(0, y + 8, "**Cover** is binary and does not stack. Against a target with Cover, ranged weapon and thrown attacks roll their base damage dice with Disadvantage. Cover never applies to melee attacks, and Areas of Effect and hazards ignore Cover (2.8.4). Tabletop Mode: the sight line runs centre to centre, and 1\" or more of continuous Cover Terrain between the spaces blocks LOS (2.7.2).", FULL_W, 9, lead=10.6)
+    yy = s.para(0, y + 8, "**Cover** is binary and does not stack. Against a target with Cover, ranged weapon and thrown attacks roll their base damage dice with Disadvantage. Cover never applies to melee attacks. Areas of Effect and hazards ignore Cover unless a rule says otherwise (2.8.4). Tabletop Mode: the sight line runs centre to centre, and 1\" or more of continuous Cover Terrain between the spaces blocks LOS (2.7.2).", FULL_W, 9, lead=10.6)
     y = legend(s, [("A", "Party A"), ("M", "Monster"), ("blocking", "Blocking"), ("cover", "Cover Terrain"), ("impassable", "Impassable"), ("los", "sight line"), ("blockx", "where LOS is blocked"), ("move", "Shift"), ("ghost", "starting position")], 0, yy + 2, FULL_W)
     return s, y + 2
 
@@ -459,7 +459,7 @@ def fig08():
     pill(s, ox3 + 13, oy3 - 3, "X\"", 9, 600)
     s.text(ox3 + 28, oy3 - 20, "Aura X\"", 9, 700)
     yy = s.para(X[0], 200, "Line width is 1\" unless listed. Unless a rule says otherwise, a Cone or Line does not affect the combatant it originates from. Tabletop: affected if any part of the footprint is within or touches the boundary.", PW, 9, lead=10.4)
-    s.text(X[0], yy + 3, "Schematic \u2014 not to scale", 9, 600, "start", "#333")
+    s.text(X[0], yy + 3, "Schematic - not to scale", 9, 600, "start", "#333")
     ya = yy + 5
     # ------------- Panel B: aura grid -------------
     panel_title(s, X[1], 0, "B", "Grid: Aura 2\"")
@@ -483,7 +483,7 @@ def fig08():
     ox_, oy_ = g.c(*src)
     s.polygon([(ox_, oy_), (ox_ + 3 * K, oy_ - 1.5 * K), (ox_ + 3 * K, oy_ + 1.5 * K)], fill="none", stroke=INK, sw=1.1)
     g.token(0, 2, "A", r=5.5)
-    yc = s.para(X[2], g.oy + 5 * K + 12, "Squares whose centre lies within the cone (ties rounded outward): **%d squares** beyond the origin square. The combatant the cone originates from is not affected." % len(cs), PW, 9, lead=10.4)
+    yc = s.para(X[2], g.oy + 5 * K + 12, "Squares whose centre lies within the cone (ties rounded outward): **%d squares** beyond the origin square. Unless a rule says otherwise, the combatant the cone originates from is not affected." % len(cs), PW, 9, lead=10.4)
     # ------------- Panel D: blocked -------------
     panel_title(s, X[3], 0, "D", "Blocked by terrain")
     g = Grid(s, X[3] + 4, 24, 6, 5, K)
@@ -503,6 +503,8 @@ def fig08():
     g.token(0, 2, "A", r=5.5)
     yd = s.para(X[3], g.oy + 5 * K + 12, "A square is unaffected if the sight line from the origin to it is blocked by Blocking Terrain, even though the cone covers it.", PW, 9, lead=10.4)
     y = max(ya, yb, yc, yd) + 6
+    hh = box(s, 0, y, FULL_W, "**Aura sources:** the Aura drawn in Panel A has a point source. A combatant's Aura measures from its footprint in Tabletop Mode and every occupied source square in Grid Mode (2.7.3).", anchor="start", fill=PALE, sw=0.7, pad=5)
+    y += hh + 6
     s.line(0, y, FULL_W, y, MID, 0.6)
     panel_title(s, 0, y + 6, "E", "When one damage roll is shared by several combatants (2.7.3)")
     y += 26
@@ -510,7 +512,7 @@ def fig08():
         ("Declare", "Each affected combatant that can take a legal Reaction may declare at most one (4.5)."),
         ("Roll once", "Roll the shared damage once, unless the effect says otherwise."),
         ("Luck", "Resolve any Luck reroll (2.10) before defence or mitigation begins."),
-        ("Resolve", "Using the final roll, each affected combatant separately resolves their Reaction, then applies AD, AV, Resistance, Vulnerability, Immunity and other mitigation (5.1.1)."),
+        ("Resolve", "Using the final roll, each affected combatant separately resolves its Reaction, determines AV (including applicable AD, 5.4.3), then applies AV and flat mitigation before Immune, Resistant and Vulnerable (5.1.1)."),
     ]
     y = _flow_boxes(s, 0, y, boxes, FULL_W)
     y += 8

@@ -343,7 +343,7 @@ def dim(s, x1, y1, x2, y2, label, size=9, off=0, side="above", tick=3.0, weight=
     pill(s, lx, ly + 3, label, size, weight)
 
 
-def schematic(s, x, y, anchor="end", text="Schematic — not to scale"):
+def schematic(s, x, y, anchor="end", text="Schematic - not to scale"):
     s.text(x, y, text, 9, 600, anchor, "#333")
 
 

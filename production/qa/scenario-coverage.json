@@ -1,6 +1,7 @@
 {
-  "generated": "2026-10-09",
-  "source": "source/Heraldry_RC487.md",
+  "source": "source/Heraldry_RC493.md",
+  "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+  "source_created_at": "2026-10-15T23:10:45.186323+00:00",
   "scenarios": [
     {
       "key": "Greenmark 1",
@@ -622,7 +623,7 @@
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 253.4
+        "height": 263.8
       },
       "review": {
         "figure": "FIG-32",
@@ -1598,7 +1599,7 @@
       "elements": {
         "mandatory": 3,
         "constrained": 4,
-        "illustrative": 11,
+        "illustrative": 10,
         "unresolved": 0
       },
       "undrawn_conditional": [
@@ -1615,17 +1616,25 @@
           "lines": [
             14245
           ]
+        },
+        {
+          "what": "Random Monster Group 2",
+          "why": "Resting and patrolling murky water; the source does not delimit its patrol area, so no particular starting point is asserted.",
+          "lines": [
+            14252,
+            14258
+          ]
         }
       ],
       "unresolved_elements": [],
       "ambiguities": [
-        "Group 2 (14252): 'patrolling murky water' - the only rule-defined Murky Water is 'within the Sunken Barrow mound' (14258), while Group 2 patrols water outside the Barrow's sanctum; whether outer Shallow Water counts as murky is not stated. Group 2 is drawn as an illustrative marker in an outer Shallow patch."
+        "Group 2 (14252) patrols murky water, while the only named Murky Water rule (14258) refers to water within the Sunken Barrow mound. The patrol area's extent is not delimited. No spatial Group 2 glyph is drawn; the footer preserves its required Resting state and patrol instruction."
       ],
       "iconography": "shared-v2",
       "status": "drawn",
       "map_size_pt": {
         "width": 243,
-        "height": 263.8
+        "height": 274.2
       },
       "review": {
         "figure": "FIG-51",
@@ -1722,7 +1731,7 @@
       "elements": {
         "mandatory": 1,
         "constrained": 3,
-        "illustrative": 10,
+        "illustrative": 13,
         "unresolved": 0
       },
       "undrawn_conditional": [
@@ -1953,7 +1962,7 @@
       "status": "drawn with the shared map renderer and glyph set; compact key strip on the figure",
       "map_size_pt": {
         "width": 504,
-        "height": 495.6
+        "height": 506.2
       },
       "review": {
         "figure": "FIG-18",
@@ -2055,7 +2064,7 @@
     "elements": {
       "mandatory": 71,
       "constrained": 248,
-      "illustrative": 296,
+      "illustrative": 298,
       "unresolved": 0
     },
     "iconography": "shared-v2",

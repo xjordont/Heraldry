@@ -263,12 +263,12 @@ def band_sides(rect, n):
     return out
 
 
-def zone(s, x, y, w, h, party, bands, open_=False, bw=3.2):
+def zone(s, x, y, w, h, party, bands, open_=False, bw=3.2, fill=PALE):
     """Deployment zone: pale area with a dashed outline.  `bands` is a list of sides 'L','R','T','B' where the zone
     touches the battlefield edge it is measured from.  Party A: solid black band; Party B: open band;
-    both parties: black band with white dashes."""
+    both parties: black band with white dashes. `fill` preserves an explicit exclusion overlay in the setup template."""
     _open(s, "zone-" + party, open_)
-    s.rect(x, y, w, h, fill=PALE, stroke=GREY if open_ else INK, sw=0.9, dash="3.2 2.2")
+    s.rect(x, y, w, h, fill=fill, stroke=GREY if open_ else INK, sw=0.9, dash="3.2 2.2")
     for side in bands:
         if side == "L":
             r_ = (x, y, bw, h)

@@ -24,7 +24,7 @@
 <text x="0" y="130" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Rules footprints are used, not the</text>
 <text x="0" y="140.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">miniature's base. Rules that measure</text>
 <text x="0" y="151.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">from a point use that point.</text>
-<text x="0" y="167.8" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#333">Schematic — not to scale</text>
+<text x="0" y="167.8" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#333">Schematic - not to scale</text>
 <rect x="170" y="0" width="13" height="13" fill="#000"/>
 <text x="176.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
 <text x="188" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Grid Mode: range / distance (2.6)</text>
@@ -104,10 +104,10 @@
 <rect x="445" y="40" width="44" height="44" fill="url(#p-mon)" stroke="#000" stroke-width="1.2"/>
 <text x="467" y="97" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">H</text>
 <text x="467" y="107" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000" text-anchor="middle">3×3</text>
-<text x="350" y="122" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A combatant occupies the squares of</text>
-<text x="350" y="132.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">their Sz footprint (S and M 1×1, L 2×2, H</text>
-<text x="350" y="143.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">3×3). Their whole footprint must fit in</text>
-<text x="350" y="153.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">every legal final position.</text>
+<text x="350" y="122" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A combatant occupies the squares of its</text>
+<text x="350" y="132.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Sz footprint (S and M 1×1, L 2×2, H 3×3).</text>
+<text x="350" y="143.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Its whole footprint must fit in every legal</text>
+<text x="350" y="153.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">final position.</text>
 <line x1="0" y1="212" x2="504" y2="212" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
 <rect x="0" y="218" width="13" height="13" fill="#000"/>
 <text x="6.5" y="228.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">D</text>

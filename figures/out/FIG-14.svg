@@ -65,11 +65,11 @@
 <text x="0" y="162.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">chooses the short edge where</text>
 <text x="0" y="172.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the Trail enters and deploys</text>
 <text x="0" y="183" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">within 6" of it with at least two</text>
-<text x="0" y="193.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Heroes on the Trail. The other</text>
-<text x="0" y="203.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">party does the same at the</text>
-<text x="0" y="214.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">opposite short edge. The Trail</text>
-<text x="0" y="224.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">is 3–4" wide and runs the full</text>
-<text x="0" y="235" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">length.</text>
+<text x="0" y="193.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Heroes, or its only Hero, on the</text>
+<text x="0" y="203.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Trail. The other party does the</text>
+<text x="0" y="214.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">same at the opposite short</text>
+<text x="0" y="224.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">edge. The Trail is 3–4" wide and</text>
+<text x="0" y="235" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">runs the full length.</text>
 <rect x="126" y="0" width="13" height="13" fill="#000"/>
 <text x="132.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
 <text x="144" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">One shared edge</text>
@@ -329,7 +329,7 @@
 <text x="251.15" y="290.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Range</text>
 <text x="0" y="305.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Zones, the Trail, the Chasm and the Ravine are drawn to scale on a 36"×36" battlefield (3.3 pt per inch); Hero markers are enlarged.</text>
 <text x="0" y="316.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Zone-depth dimensions show the stated limits. In panels B and C no Hero is placed within the stated distance of an opposing Hero: the</text>
-<text x="0" y="326.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">ring (B, 6", from a Party A Hero’s edge; C, 3") marks that distance, and the dimension line between the nearest opposing Heroes runs</text>
+<text x="0" y="326.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">ring (B, 6", from a Party A Hero's edge; C, 3") marks that distance, and the dimension line between the nearest opposing Heroes runs</text>
 <text x="0" y="337.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">between their closest edges (2.6), 7" in B and 4" in C, both outside the limit. Panel B is measured between drawn marker edges; panel</text>
 <text x="0" y="347.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">C markers are drawn at their true 1" size. Where the source gives a range (Trail 3–4", Ravine 6–8"), a value inside the range is drawn</text>
 <text x="0" y="357.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">and its position is schematic.</text>

@@ -18,7 +18,7 @@
   "B01515": [
     {
       "id": "FIG-03",
-      "caption": "The five-step attack sequence and the Mitigation Order. Source example: 6 slashing and 4 fire damage against 5 AV is (6 − 5) + 4 = 5 damage; with d6 AD rolling 3, 9 slashing is 9 − 3 = 6, or 9 − (3 + 2) = 4 with a +2 AV Block (see 5.2).",
+      "caption": "The five-step attack sequence and the Mitigation Order. Source example: 6 slashing and 4 fire damage against 5 AV is (6 - 5) + 4 = 5 damage; with d6 AD rolling 3, 9 slashing is 9 - 3 = 6, or 9 - (3 + 2) = 4 with a +2 AV Block (see 5.2).",
       "width": "100%",
       "scope": "full"
     }
@@ -58,7 +58,7 @@
   "B00741": [
     {
       "id": "FIG-08",
-      "caption": "A Grid Mode Aura 2\" affects 13 squares (including the source square); a 3\" Cone affects 7 squares beyond its origin square, and never affects the combatant it originates from. A square whose sight line from the origin is blocked by Blocking Terrain is unaffected even if the template covers it, and shared area damage is rolled once (see 2.7.3).",
+      "caption": "A Grid Mode Aura 2\" from a single source square affects 13 squares (including the source square); a 3\" Cone affects 7 squares beyond its origin square, and does not affect the combatant it originates from unless a rule says otherwise. A square whose sight line from the origin is blocked by Blocking Terrain is unaffected even if the template covers it, and shared area damage is rolled once (see 2.7.3).",
       "width": "100%",
       "scope": "full"
     }
@@ -82,7 +82,7 @@
   "B07636": [
     {
       "id": "FIG-11",
-      "caption": "The Standard Monster AI Script: a Monster executes the first valid instruction and its activation then ends. Each instruction is tried only if the one above it does not apply (see 9.5 C).",
+      "caption": "The Standard Monster AI Script: a Monster executes the first valid instruction and its activation then ends unless a rule explicitly says it continues. Each instruction is tried only if the one above it does not apply (see 9.5 C).",
       "width": "100%",
       "scope": "full"
     }
@@ -90,7 +90,7 @@
   "B07662": [
     {
       "id": "FIG-12",
-      "caption": "Primary Target is the nearest visible enemy; equal candidates are separated by lowest current HP, then Most Recent Attacker, then Random Determination. If the Primary Target cannot be reached, the nearest reachable visible enemy becomes the new Primary Target (see 9.5 E and 9.5 F).",
+      "caption": "Primary Target is the nearest visible enemy; equal candidates are separated by lowest current HP, then Most Recent Attacker, then Random Determination. If the Monster cannot reach a position from which it may attack its Primary Target this activation, but can reach such a position against another visible enemy, the nearest such enemy becomes the new Primary Target (see 9.5 E and 9.5 F).",
       "width": "100%",
       "scope": "full"
     }
@@ -104,13 +104,13 @@
     },
     {
       "id": "FIG-14",
-      "caption": "Special deployments: a Trail with at least two Heroes on it, one shared short edge within 8\" (no Hero within 6\" of an opposing Hero), a central 8\"×8\" Safe Zone (no Hero within 3\" of an opposing Hero), and short edges either side of a Ravine; key: FIG-20 (see 10.4).",
+      "caption": "Special deployments: a Trail with at least two Heroes on it (or the party's only Hero), one shared short edge within 8\" (no Hero within 6\" of an opposing Hero), a central 8\"×8\" Safe Zone (no Hero within 3\" of an opposing Hero), and short edges either side of a Ravine; key: FIG-20 (see 10.4).",
       "width": "100%",
       "scope": "full"
     },
     {
       "id": "FIG-57",
-      "caption": "Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default zones (6\" deep or 8\"×8\" corners) and the step 7 limits on major Blocking and Impassable Terrain (3\" from an edge, 6\" from a zone); key: FIG-20 (see 10.1).",
+      "caption": "Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default zones (6\" deep or 8\"×8\" corners) and the step 7 limits on major Blocking and Impassable Terrain (3\" from an edge, 6\" from a zone). Tabletop clearance is shown; Grid Mode uses 2.6; key: FIG-20 (see 10.1).",
       "width": "100%",
       "scope": "full"
     }
@@ -142,7 +142,7 @@
   "B16371": [
     {
       "id": "FIG-18",
-      "caption": "Appendix A starting positions, with the Dispatch Satchel adjacent to the centre ruin, and Round 1 of the sample game. Edric ends the round with 16 − 5 = 11, 11 − 3 = 8 and 8 − 3 = 5 HP after Varek's attack and two Dire Wolf bites; key: FIG-20 (see A.11).",
+      "caption": "Appendix A starting positions, with the Dispatch Satchel adjacent to the centre ruin, and Round 1 of the sample game. Edric ends the round with 16 - 5 = 11, 11 - 3 = 8 and 8 - 3 = 5 HP after Varek's attack and two Dire Wolf bites; key: FIG-20 (see A.11).",
       "width": "100%",
       "scope": "full"
     }
@@ -158,7 +158,7 @@
   "B11970": [
     {
       "id": "FIG-20",
-      "caption": "Key to the setup and deployment diagrams: symbols for Heroes, zones, markers, Monster Groups, terrain, distances, edges and not-placed elements, with the orientation, scale and grey-dashed conventions every such diagram follows (see 10.4).",
+      "caption": "Key to the setup and deployment diagrams: symbols for Heroes, zones, markers, Monster Groups, terrain, distances and edges, with the orientation, scale and grey-dashed conventions every such diagram follows (see 10.4).",
       "width": "100%",
       "scope": "full"
     }
@@ -438,7 +438,7 @@
   "B14554": [
     {
       "id": "FIG-55",
-      "caption": "Salttide's Reckoning: parties deploy along the outer banks within 6\" of opposite long edges (6\" is the 10.1 default) around a central Ritual Island holding Edrava Salttide and three Cursed Effigies; key: FIG-20 (see 10.4, The Mire Scenario 5).",
+      "caption": "Salttide's Reckoning: parties deploy along the outer banks within 6\" of opposite long edges (10.1 default) around a central Ritual Island holding Edrava Salttide and three Cursed Effigies; key: FIG-20 (see 10.4, The Mire Scenario 5).",
       "width": "100%",
       "scope": "column"
     }
