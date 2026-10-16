@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`ad95ae60`](https://github.com/xjordont/Heraldry/commit/ad95ae6020088ee0e082d437de77ae350fbe12c2) docs: keep GitHub README current automatically
 - [`c1e48475`](https://github.com/xjordont/Heraldry/commit/c1e48475b59166039fcc871c6af7c18722dc0dd9) figures: preserve existing scenario specification formatting
 - [`d2d4d211`](https://github.com/xjordont/Heraldry/commit/d2d4d21145ffd80f0a3ebc40a8b25776dd5ca0be) figures: review all 57 and repair clarity, accuracy and design
 - [`39fcc4cb`](https://github.com/xjordont/Heraldry/commit/39fcc4cbdcf4e0213c9f199e8ade03d6d03dacaa) text(RC493): apply approved editorial fixes and canon alignment
 - [`bb0e4b30`](https://github.com/xjordont/Heraldry/commit/bb0e4b308479efad703088dc078b85574c1ae201) publication: correct calibration and prepare editorial checks
 - [`1a890818`](https://github.com/xjordont/Heraldry/commit/1a890818694fd03f6f2d44e6508e787b6879280c) export: add explicit editable InDesign project workflow
-- [`b54ddb8c`](https://github.com/xjordont/Heraldry/commit/b54ddb8c5bc7beed17b62f16fec3de80fd8eb3a6) workflow: add reviewed full-manuscript updates
 
 <!-- END AUTO:recent -->
 
