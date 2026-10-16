@@ -1,6 +1,6 @@
 {
- "reviewer": "Independent Claude Opus subagent, RC489 delta review (FIG-13..16, FIG-20..56; all other entries carried forward with hashes unchanged); earlier reviewers retained in rc488_reviewer, rc487_reviewer and prior_reviewer",
- "reviewed_at": "2026-10-10",
+ "reviewer": "Codex RC493 delta reviewers for FIG-06/11/12/16/18/19; 51 unchanged entries carried forward from recorded prior reviewers",
+ "reviewed_at": "2026-10-15",
  "figures": [
   {
    "id": "FIG-01",
@@ -136,7 +136,16 @@
      "fix": "None. Triaged as A-12 NOT_AN_AMBIGUITY."
     }
    ],
-   "rules_sha256": "0fb4f27e637f8249d86a04ddd32eed46e0832a8971fb9ddb7b8ece48635e6902"
+   "rules_sha256": "54b70505eeac96080a0001de5bef77e11dd62232e2cdd6931e01324832267132",
+   "rc493_review": {
+    "reviewer": "Codex delegated source-proof/figure reviewer (same model family; drafted source proposals)",
+    "date": "2026-10-15",
+    "source_revision": 493,
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "previous_rules_sha256": "0fb4f27e637f8249d86a04ddd32eed46e0832a8971fb9ddb7b8ece48635e6902",
+    "evidence": "production/qa/rc493-figure-review-ai.md",
+    "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
+   }
   },
   {
    "id": "FIG-07",
@@ -259,19 +268,43 @@
    "id": "FIG-11",
    "svg_sha256": "1e5f3f6044822265041b4b981aa80478f44121742703d6a8d498837e929fe930",
    "caption_sha256": "8da7d89daaa60fbf9f01e91971cfa7dafd10c016db63e670bc9fd22b6ce3ae01",
-   "verdict": "PASS",
+   "verdict": "PASS_WITH_NOTES",
    "checked_against_lines": [
     "7626-7637",
     "7638-7641",
     "1113-1120"
    ],
-   "findings": [],
-   "rules_sha256": "00c239576fd853dca920544d0d195be730841820fb5b05bdb9e17d70f352936e",
+   "findings": [
+    {
+     "id": "RC493-F11-M01",
+     "severity": "minor",
+     "status": "open",
+     "issue": "SVG preface retains the singular Monster pronoun \"they continue\"; current 9.5 uses \"it continues\". Proposed figure-copy follow-up, not applied.",
+     "evidence": "production/qa/rc493-figure-review-ai.md: FIG-11"
+    },
+    {
+     "id": "RC493-F11-M02",
+     "severity": "minor",
+     "status": "open",
+     "issue": "Caption states activation ending without the explicit continuation exception. The SVG itself prints the exception. Proposed caption alignment remains unapplied.",
+     "evidence": "production/qa/rc493-figure-review-ai.md: FIG-11"
+    }
+   ],
+   "rules_sha256": "f9d695a6b8ceb164269fee683d9b62b9426d4d322693aa0511d7f5b752e879fe",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
     "note": "AI first-valid-Step termination agrees with F09’s explicitly performed named charge attacks; same-Group alliance exception does not change this generic enemy-selection flow.",
     "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+   },
+   "rc493_review": {
+    "reviewer": "Codex delegated source-proof/figure reviewer (same model family; drafted source proposals)",
+    "date": "2026-10-15",
+    "source_revision": 493,
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "previous_rules_sha256": "00c239576fd853dca920544d0d195be730841820fb5b05bdb9e17d70f352936e",
+    "evidence": "production/qa/rc493-figure-review-ai.md",
+    "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
    }
   },
   {
@@ -298,14 +331,30 @@
      "issue": "Panel C is valid only for a melee Monster; a ranged Monster with a legal firing position would not trigger Blocked Route. The figure states 'melee Monster'.",
      "evidence_source_line": "7662",
      "fix": "None. Triaged as A-15."
+    },
+    {
+     "id": "RC493-F12-M01",
+     "severity": "minor",
+     "status": "open",
+     "issue": "Four U+2014 em dashes in SVG prose violate the typography lock. Proposed generator/SVG copy substitutions remain unapplied.",
+     "evidence": "production/qa/rc493-figure-review-ai.md: FIG-12"
     }
    ],
-   "rules_sha256": "4b9a257a8b54903b267dfb6cc7e755329d966f6de895f6a02c1ac93a299dcfbb",
+   "rules_sha256": "2eee4832b5377f529b7c048e4ee932be50481c22deb1a42bec3d18fa316aef91",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
     "note": "Generic Primary Target and movement priorities are unchanged; same-Group allies are excluded by governing allegiance.",
     "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+   },
+   "rc493_review": {
+    "reviewer": "Codex delegated source-proof/figure reviewer (same model family; drafted source proposals)",
+    "date": "2026-10-15",
+    "source_revision": 493,
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "previous_rules_sha256": "4b9a257a8b54903b267dfb6cc7e755329d966f6de895f6a02c1ac93a299dcfbb",
+    "evidence": "production/qa/rc493-figure-review-ai.md",
+    "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
    }
   },
   {
@@ -658,7 +707,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "54c56a5dba42f519233901490946ae25742afff4b2b77b4c443115e3e7861384",
+   "rules_sha256": "869e39c91a8afac6869ab4aca7751855328f4ddb7896a320f8271e32af21ad03",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -699,6 +748,15 @@
     "date": "2026-10-10",
     "previous_rules_sha256": "54c56a5dba42f519233901490946ae25742afff4b2b77b4c443115e3e7861384",
     "scope": "RC491 delta review: the only dependent-section change is 10.4 line 13351 (Undermarches 6 Shadow Brand reward: allied Spectre Summon -> allied Noxcloth Summon). The other RC491 change (9508, Desert Naga flavour) is in no figure's dependent sections. The SVG and caption are byte-identical. No figure, caption or scenario spec names Spectre, Shadow Brand, Noxcloth or Desert Naga (grep). Line numbers are unchanged (remap: 0). Prior verdict stands."
+   },
+   "rc493_review": {
+    "reviewer": "Codex delegated authority/setup figure reviewer (same model family; not patch author)",
+    "date": "2026-10-15",
+    "source_revision": 493,
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "previous_rules_sha256": "54c56a5dba42f519233901490946ae25742afff4b2b77b4c443115e3e7861384",
+    "evidence": "production/qa/rc493-figure-review-setup.md",
+    "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
    }
   },
   {
@@ -754,7 +812,8 @@
      "status": "accepted",
      "issue": "Geometry re-measured (7 pt/in; board 168 pt = 24\"): deployment bands 28 pt = 4\" from the short edges; Edric and Varek on the centre line 4\" from their edges; Mara and Senna 6\" east of it (Senna drawn on the east side as north-facing view); ruin 21 pt = 3\" at the centre; Treasure Chest 35 pt = 5\" east of the centre and outside both zones and the ruin ring. The label \"Satchel: adjacent to ruin\" sits north of the ruin outline, which could be read as a side; the figure states the side is unstated. Optionally move the label beside the ring with a leader.",
      "evidence_source_line": "16160-16210; 16348-16380",
-     "fix": "None required."
+     "fix": "None required.",
+     "rc493_observation": "Historical location wording retained as provenance: the current viewed PNG places the label south/below the Satchel and states one legal arrangement; do not repeat north-of-ruin as a current observation."
     },
     {
      "severity": "minor",
@@ -769,14 +828,30 @@
      "issue": "Appendix scope re-checked after redraw: every cited line is inside A.2/A.4/A.7-A.9/A.11 (16094-16112, 16172-16208, 16348-16371); no 10.1/10.6 line is cited; terrain per A.2 (ruin Blocking, low wall Impassable, rubble Cover+Difficult drawn with the Rubble swatch, two Cover pieces); Chest 5\" east of centre from the A.11 table; zones 4\"; extraction at any edge (16194). No Hide, Powers or advanced rules appear. Key strip glyphs (Heroes, zones, North, Scale bar, Satchel, Chest, Dire Wolf, Centre ruin, Low wall, Cover piece, Rubble, Distance, ring, Range, Exit edge, Leader line, Grey dashed) all appear in FIG-20.",
      "evidence_source_line": "16108-16111; 16194; 16358-16363",
      "fix": "None."
+    },
+    {
+     "id": "RC493-F18-M01",
+     "severity": "minor",
+     "status": "open",
+     "issue": "Compact Senna/Dodge outcome row prints the fixed damage result before \"Mara declares Dodge\"; it does not explicitly grant a late choice, but adding declaration-before-damage wording would avoid teaching ambiguity. Proposed figure-copy follow-up remains unapplied.",
+     "evidence": "production/qa/rc493-figure-review-setup.md: FIG-18"
     }
    ],
-   "rules_sha256": "0d21a2a30bec258e6f78ff0e324be2ed038d83119260de77875b14e0a8ea10d6",
+   "rules_sha256": "894d234f58ca960a33618502f6786a4149c7f08d74b6ea8e705996527fadfd86",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
     "note": "Round 1 teaching figure is unchanged; the corrected Mara/Varek ledgers affect Round 2 only.",
     "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+   },
+   "rc493_review": {
+    "reviewer": "Codex delegated authority/setup figure reviewer (same model family; not patch author)",
+    "date": "2026-10-15",
+    "source_revision": 493,
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "previous_rules_sha256": "0d21a2a30bec258e6f78ff0e324be2ed038d83119260de77875b14e0a8ea10d6",
+    "evidence": "production/qa/rc493-figure-review-setup.md",
+    "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
    }
   },
   {
@@ -846,13 +921,22 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "197d272c16c30581b176d8feedc533aa05bdfe4138298a0abc5d73f8524987bd",
+   "rules_sha256": "385bbb51aec6acc3852dac54d683b0f646971a86a1aaf77bdd19d650bd6be153",
    "reviewed_at": "2026-10-07T10:58:00Z",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
     "note": "Default Basic Mode setup remains unchanged. Hidden Strongbox and Traps interaction is a separate variant not depicted.",
     "rendered_evidence": "Typst figures.pdf contact sheets; detailed FIG-02, 24, 36, 50 and 51 PNGs."
+   },
+   "rc493_review": {
+    "reviewer": "Codex delegated authority/setup figure reviewer (same model family; not patch author)",
+    "date": "2026-10-15",
+    "source_revision": 493,
+    "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+    "previous_rules_sha256": "197d272c16c30581b176d8feedc533aa05bdfe4138298a0abc5d73f8524987bd",
+    "evidence": "production/qa/rc493-figure-review-setup.md",
+    "scope": "Actual source/caption/SVG comparison and viewed standalone 144 ppi PNG; not final placed PDF or physical print."
    }
   },
   {
@@ -4428,5 +4512,26 @@
   "date": "2026-10-10",
   "figures_updated": 41,
   "method": "diff RC491 vs RC492 (3 content lines: Basilisk flavour, Basilisk size M to L, Undermarches 6 Shadow Brand reward Noxcloth to Spectre). Every SVG and caption is byte-identical. grep finds no Basilisk, Noxcloth, Spectre summon or Shadow Brand in figures/out, figures/src, placements.json or scenario_specs.json. The only change in a dependent section (10.4) is the campaign reward sentence, which no map depicts, so no drawn content changed."
- }
+ },
+ "prior_to_rc493_reviewer": "Independent Claude Opus subagent, RC489 delta review (FIG-13..16, FIG-20..56; all other entries carried forward with hashes unchanged); earlier reviewers retained in rc488_reviewer, rc487_reviewer and prior_reviewer",
+ "prior_to_rc493_reviewed_at": "2026-10-10",
+ "rc493_delta_review": {
+  "figures_reviewed": [
+   "FIG-06",
+   "FIG-11",
+   "FIG-12",
+   "FIG-16",
+   "FIG-18",
+   "FIG-19"
+  ],
+  "new_open_minors": 4,
+  "open_majors": 0,
+  "reports": [
+   "production/qa/rc493-figure-review-ai.md",
+   "production/qa/rc493-figure-review-setup.md"
+  ],
+  "svg_and_caption_bytes_unchanged": true,
+  "unaffected_51_entries_unchanged": true
+ },
+ "rc493_review_limits": "Source/figure delta and standalone PNG review only; not human independence, final book placement, full proofreading, accessibility, or physical print."
 }

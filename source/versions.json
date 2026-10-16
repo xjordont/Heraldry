@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 492,
+  "current": 493,
   "revisions": [
     {
       "number": 484,
@@ -230,6 +230,30 @@
       ],
       "patch_file": "editorial/history/RC492.json",
       "patch_sha256": "163f52e16a2b6c303fcd2bfc5392e13b90c5d7d3c8a0f79a47a9389e8862da62"
+    },
+    {
+      "number": 493,
+      "path": "source/Heraldry_RC493.md",
+      "sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+      "bytes": 1454196,
+      "parent_sha256": "a5ca7e72ad05a0cd69bb0bdca8238c10a635cf18345ae719c047c42fd3a8552a",
+      "created_at": "2026-10-15T23:10:45.186323+00:00",
+      "reason": "Apply ten approved publication editorial corrections: tutorial AI sequencing, Search reference, Parry and Reaction examples, contextual pronouns, and Basic Mode components",
+      "authorization": "Owner instruction 2026-10-15 in Codex: \"Approve all as proposed.\", approving the exact ten replacements and five canon alignments presented after commit bb0e4b30.",
+      "patch_ids": [
+        "PUB-E01",
+        "PUB-E02",
+        "PUB-E03",
+        "PUB-E04",
+        "PUB-E05",
+        "PUB-E06a",
+        "PUB-E06b",
+        "PUB-E06c",
+        "PUB-E07a",
+        "PUB-E07b"
+      ],
+      "patch_file": "editorial/history/RC493.json",
+      "patch_sha256": "a9303b69f0b167350d87b83dd2ec2cb7c1baa5f8f2cb1300205dd48eaccca1dc"
     }
   ]
 }

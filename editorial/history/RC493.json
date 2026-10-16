@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "status": "proposed",
+  "status": "approved",
   "source_revision": 492,
   "base_sha256": "a5ca7e72ad05a0cd69bb0bdca8238c10a635cf18345ae719c047c42fd3a8552a",
-  "scope": "Bounded source proof: seven findings, ten exact draft replacements. No manuscript or PDF changed.",
-  "authorization": "Proposal only. User authorized the improvement review; these exact text edits and the tutorial activation interpretation await owner approval. Not authorized for promotion.",
+  "scope": "Owner-approved first publication editorial batch: seven findings and ten exact replacements; one next immutable revision; no PDF build.",
+  "authorization": "Owner instruction 2026-10-15 in Codex: \"Approve all as proposed.\", following the ten exact manuscript corrections and five canon-alignment decisions presented at commit bb0e4b30.",
   "patches": [
     {
       "id": "PUB-E01",
-      "status": "proposed",
+      "status": "approved",
       "finding": "E01",
       "decision_class": "requires_owner_decision",
       "source_line": 16323,
@@ -18,7 +18,7 @@
     },
     {
       "id": "PUB-E02",
-      "status": "proposed",
+      "status": "approved",
       "finding": "E02",
       "decision_class": "main_rule_alignment_for_owner_review",
       "source_line": 17938,
@@ -28,7 +28,7 @@
     },
     {
       "id": "PUB-E03",
-      "status": "proposed",
+      "status": "approved",
       "finding": "E03",
       "decision_class": "example_profile_choice_requires_owner_review",
       "source_line": 1675,
@@ -38,7 +38,7 @@
     },
     {
       "id": "PUB-E04",
-      "status": "proposed",
+      "status": "approved",
       "finding": "E04",
       "decision_class": "main_rule_timing_alignment_for_owner_review",
       "source_line": 16309,
@@ -48,7 +48,7 @@
     },
     {
       "id": "PUB-E05",
-      "status": "proposed",
+      "status": "approved",
       "finding": "E05",
       "decision_class": "teaching_copy_alignment",
       "source_line": 16455,
@@ -58,7 +58,7 @@
     },
     {
       "id": "PUB-E06a",
-      "status": "proposed",
+      "status": "approved",
       "finding": "E06",
       "decision_class": "contextual_copy_only",
       "source_line": 187,
@@ -68,7 +68,7 @@
     },
     {
       "id": "PUB-E06b",
-      "status": "proposed",
+      "status": "approved",
       "finding": "E06",
       "decision_class": "contextual_copy_only",
       "source_line": 1456,
@@ -78,7 +78,7 @@
     },
     {
       "id": "PUB-E06c",
-      "status": "proposed",
+      "status": "approved",
       "finding": "E06",
       "decision_class": "contextual_copy_only",
       "source_line": 7628,
@@ -88,7 +88,7 @@
     },
     {
       "id": "PUB-E07a",
-      "status": "proposed",
+      "status": "approved",
       "finding": "E07",
       "decision_class": "existing_requirement_reference_alignment",
       "source_line": 16555,
@@ -98,7 +98,7 @@
     },
     {
       "id": "PUB-E07b",
-      "status": "proposed",
+      "status": "approved",
       "finding": "E07",
       "decision_class": "existing_requirement_reference_alignment",
       "source_line": 16556,
@@ -106,5 +106,6 @@
       "replace": "- **3 Monster Entry** markers or **4** for the **Advanced Ogre** variant",
       "expected_count": 1
     }
-  ]
+  ],
+  "approved_at": "2026-10-15"
 }

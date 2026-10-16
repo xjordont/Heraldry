@@ -2,11 +2,13 @@
 
 Owner instruction, 2026-10-15: "Continue as you suggest", following the publication-improvement report. This authorises the initial authority review, bounded editorial review, calibration correction, and preparation of reader, accessibility, and physical-proof checks. It does not resolve a substantive rules conflict, approve an unseen manuscript patch, commission a person, or request a new book PDF.
 
-Current baseline: RC492-build-37. Use `source/versions.json`, `dist/RELEASE.json`, and `production/RELEASE_RESULT.json` to confirm the current source and last delivery when executing this protocol. Later code changes do not update the released files. These checks supplement the existing release gates; this document does not add automatic publication gates or replace the existing ledgers.
+Owner approval update, 2026-10-15: "Approve all as proposed." The five canon alignments are recorded in `CANON_AUTHORITY.md`; the ten approved editorial replacements are applied in RC493 and archived in `editorial/history/RC493.json`. No new publication build was requested.
+
+Current delivered-file baseline: RC492-build-37. Use `source/versions.json`, `dist/RELEASE.json`, and `production/RELEASE_RESULT.json` to confirm the current source and last delivery when executing this protocol. Later code changes do not update the released files. These checks supplement the existing release gates; this document does not add automatic publication gates or replace the existing ledgers.
 
 ## Evidence and status
 
-The first-pass record is [publication-first-pass.md](../production/qa/publication-first-pass.md). Authority questions are in [publication-authority-review.md](../production/qa/publication-authority-review.md); contextual editorial findings and exact draft edits are in [independent-editorial-first-pass.md](../production/qa/independent-editorial-first-pass.md) and `editorial/proposals/publication-first-pass.json`.
+The first-pass record is [publication-first-pass.md](../production/qa/publication-first-pass.md). Authority questions are in [publication-authority-review.md](../production/qa/publication-authority-review.md); contextual editorial findings and exact draft edits are in [independent-editorial-first-pass.md](../production/qa/independent-editorial-first-pass.md) and `editorial/history/RC493.json`.
 
 Use these distinct statuses:
 

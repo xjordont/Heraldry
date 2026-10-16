@@ -1,5 +1,7 @@
 # Publication improvement first pass
 
+Approval update, 2026-10-15: the owner approved all proposed canon alignments and ten exact manuscript corrections. The revision engine has created RC493; approved evidence is archived at `editorial/history/RC493.json`. See `rc493-editorial-verification.json` and the RC493 figure-review reports. The original first-pass checkpoint below is retained as history; its pending decisions are now resolved for this batch.
+
 Date: 2026-10-15. Owner authorisation: "Continue as you suggest", following the research report's recommended initial package. Base commit: `1a890818694fd03f6f2d44e6508e787b6879280c`.
 
 ## Outcome and scope
@@ -38,6 +40,6 @@ Baseline and post-change `python tools/dev.py check` passed: 190 tests each, 3 e
 
 All ten proposed manuscript replacements were checked against the current source and an in-memory sequential application: each matches exactly once, every status remains `proposed`, and the base SHA-256 matches. A readable diff is ignored at `build/checks/publication-first-pass/editorial-draft.diff`. No candidate manuscript file or next revision was written.
 
-## Pending decisions
+## Decision disposition
 
-The authority matrix and exact editorial draft are concrete review packets. Preserve their proposed/pending status until the owner's actual disposition. Continue to distinguish proposed wording from approved source, fresh model review from human independence, source rendering from released-file review, and file preflight from physical proof.
+The owner subsequently approved the matrix and exact editorial packet; both are applied as recorded above. The earlier pending status describes the first-pass checkpoint only. Continue to distinguish approved source from released-file review, fresh model review from human independence, and file preflight from physical proof. Reader/accessibility/physical execution remains outstanding.

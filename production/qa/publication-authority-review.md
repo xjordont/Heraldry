@@ -1,10 +1,10 @@
 # Publication authority review
 
-Date: 2026-10-15. Status: evidence complete for the five scoped conflicts; owner disposition pending. No manuscript, standing-contract, or archived-patch change is authorised by this report.
+Date: 2026-10-15. Status: all five proposed canon alignments approved by the owner: "Approve all as proposed." The approved future-work supplement is `docs/CANON_AUTHORITY.md`, linked from both startup contracts. This authority alignment retains existing mechanics; the separately approved ten editorial corrections are applied in RC493.
 
-Active manuscript: `source/Heraldry_RC492.md`, SHA-256 `a5ca7e72ad05a0cd69bb0bdca8238c10a635cf18345ae719c047c42fd3a8552a` (verified against actual file bytes and `source/versions.json:218-220`). Review base: Git commit `1a890818`. This is a source-authority comparison, not a new PDF review or physical proof.
+Reviewed source baseline: `source/Heraldry_RC492.md`, SHA-256 `a5ca7e72ad05a0cd69bb0bdca8238c10a635cf18345ae719c047c42fd3a8552a` (verified against actual file bytes and `source/versions.json:218-220`). Review base: Git commit `1a890818`. This is a source-authority comparison, not a new PDF review or physical proof.
 
-The supplied session brief conflicts with current manuscript text on the Town Phase allowance, Druidic tradition name, reference location, armour procedure, and Monster Checks. Current manuscript evidence supports retaining the settled manuscript while the owner decides whether to align that brief. Its mismatch with a standing brief does not establish an error in the released rules or authorise a mechanical reversion.
+The supplied session brief conflicts with current manuscript text on the Town Phase allowance, Druidic tradition name, reference location, armour procedure, and Monster Checks. The owner approved retaining the settled manuscript conventions and aligning the future-work brief. Its mismatch with a standing brief does not establish an error in the released rules or authorise a mechanical reversion.
 
 ## Decision matrix
 
@@ -41,4 +41,4 @@ Line numbers identify Markdown source, not printed pages. The supplied session b
 1. Confirm retaining **4 TAP**, **Druidic Rituals**, and **Appendix C. Rules Reference** in future-work instructions, with all existing exceptions and full-rule precedence.
 2. Confirm retaining **automatic Chest AD / AV under 5.4.3**, **Block for shield mitigation**, and **no Monster Checks under 2.3**, including the higher-LVL casting restriction. Align the brief to those existing procedures rather than adding Brace or an ML Check.
 
-Record the owner's actual response before editing any standing contract. If any choice differs, prepare the exact affected text and dependencies for review before promoting a new manuscript revision. No owner response or manuscript approval is assumed by this recommendation.
+Owner disposition, 2026-10-15: "Approve all as proposed." Both recommendations above are accepted, covering all five matrix rows and their exceptions. `docs/CANON_AUTHORITY.md`, `CLAUDE.md`, and `AGENTS.md` record the approved future-work alignment. The source registry now selects RC493; the RC492 passages above retain the original trace evidence.

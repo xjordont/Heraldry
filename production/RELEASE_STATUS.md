@@ -1,6 +1,14 @@
-# Release status — Heraldry Skirmish RC492
+# Release status - RC493 source / RC492 delivery
 
-## Current delivery - 2026-10-15 handoff
+## Current source - RC493
+
+Owner approval, 2026-10-15: "Approve all as proposed." All ten exact editorial corrections were promoted once to RC493; the five canon alignments are recorded in `docs/CANON_AUTHORITY.md` and startup contracts. The source SHA-256 is `c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd`. Exact reconstruction, unchanged prior bytes, content-anchor resolution, and preserved table-cell hashes are recorded in [verification](qa/rc493-editorial-verification.json). Six affected figures received actual source/render delta review; their source bindings are current, with four open minor figure-copy follow-ups.
+
+Local validation: 190 tests PASS with 3 expected skips; dependency, baseline-contract, prior-snapshot, and whitespace checks PASS. Figure semantic currency PASS 57/57, no stale/open major findings, 4 open minor copy follow-ups. [Application record](qa/rc493-editorial-application.md). This is source/figure validation, not a new PDF release.
+
+**The last delivered PDFs remain RC492-build-37 and do not contain RC493. No new PDF build was requested.** Physical print remains **NOT TESTED**. The delivery records and checkpoint notes below describe build 37 and its subsequent pre-RC493 work.
+
+## RC492-build-37 delivery - 2026-10-15 handoff
 
 Publication improvement first pass, 2026-10-15: the calibration source now derives its body/table/minimum labels from active values and includes current source/header samples; both cream/white PNG diagnostics passed scoped review. Authority conflicts were traced to supplied RC484, a bounded second model source proof produced seven findings/ten exact draft replacements, and reader/accessibility/physical protocols were prepared. All manuscript replacements remain proposed; owner canon dispositions are pending. No new PDF, human copyedit, reader study, screen-reader result, or physical proof is claimed. Build-37 files/ledgers remain unchanged; corrected calibration awaits the next requested build. Details: [first-pass record](qa/publication-first-pass.md) and [protocol](../docs/PUBLICATION_CHECKS.md). Physical print remains **NOT TESTED**.
 

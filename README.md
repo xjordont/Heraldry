@@ -4,8 +4,8 @@ The publication repository for the Heraldry Skirmish rulebook. It holds the manu
 
 ## Current state
 
-- **Manuscript:** RC492 (`source/versions.json`). Earlier snapshots, from the original RC484 onwards, are immutable.
-- **Last requested build:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages and 675 digital pages. Later code/workflow changes await the next requested build. Evidence and limits are in [production/RELEASE_STATUS.md](production/RELEASE_STATUS.md).
+- **Manuscript:** RC493 (`source/versions.json`). Earlier snapshots, from the original RC484 onwards, are immutable.
+- **Last requested build:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages and 675 digital pages. RC493 manuscript corrections and later source/tooling changes await the next requested build. Evidence and limits are in [production/RELEASE_STATUS.md](production/RELEASE_STATUS.md).
 - **Illustrations:** all 275 approved; the generation queue is empty.
 - **Physical printing:** NOT TESTED until real sheets are examined.
 
