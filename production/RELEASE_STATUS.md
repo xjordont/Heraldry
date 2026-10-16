@@ -1,5 +1,9 @@
 # Release status - RC493 source / RC492 delivery
 
+## PDF layout and density review - 2026-10-16
+
+[Detailed review and proposed trials](../reports/Rulebook%20layout%20and%20density%20review.md): all 672 pages of the exact RC492-build-37 cream interior were geometry-censused; 25 distinct Heraldry pages and 24 selected pages across all ten hash-verified private reference books were directly viewed. Live RC493 pipeline/code review identified a confirmed QA page-map/PDF discrepancy (cause unresolved), inconsistent style/measurement values, alignment/continuation/marker defects, and bounded density opportunities. Retain 11 pt body, current margins, complete-unit keeps, and accepted p6 blank verso for the proposed first specimen trial. Baseline development tests: 203 PASS with 3 expected skips. Review/proposals only; no implementation, new PDF/build/release, approval, or ledger rebinding. No quantified page saving or physical proof is claimed. Current RC493 source and RC492-build-37 delivery remain distinct.
+
 README automation, 2026-10-16: status and recent changes refresh locally during development checks and on GitHub after main pushes and repository workflow completions. Generated status keeps current-source validation separate from recorded PDF delivery. README publishing shares the publication queue and changes only README.md. This tooling does not rebuild or certify a PDF; RC493 source and RC492-build-37 delivery retain the scopes below. See [maintenance details](../docs/README_AUTOMATION.md).
 
 ## Current source - RC493
