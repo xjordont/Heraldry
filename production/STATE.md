@@ -1,12 +1,20 @@
-# Production state — RC487, main
+# Production state - RC493 source, main
 
-Updated 2026-10-10. Working/delivery branch: **main**.
+Updated 2026-10-15. Working/delivery branch: **main**.
 
 ## Active manuscript
 
+`source/versions.json` identifies `source/Heraldry_RC493.md`, SHA-256 `c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd`. The owner approved all ten publication editorial replacements and five canon alignments on 2026-10-15. Exact applied evidence is `editorial/history/RC493.json`; prior snapshots and archives remain unchanged. `docs/CANON_AUTHORITY.md` records the approved working conventions.
+
+Last PDF delivery remains **RC492-build-37**, 672 interior / 675 digital pages, and predates RC493. No RC493 PDF or full-format/physical approval is claimed. See `production/RELEASE_STATUS.md` and the latest checkpoint below.
+
+## Historical RC487 checkpoint - 2026-10-10
+
+### Manuscript authority at that checkpoint
+
 `source/versions.json` identifies `source/Heraldry_RC487.md`, SHA-256 `d77a72f9030061f76ea61e947bf520dcc81628bd653f61ba144f2a474a088254`. RC487 applies one owner-authorized batch of 48 exact repairs archived in `editorial/history/RC487.json`. RC484–RC486 and their archived history remain unchanged. Future text edits follow `docs/WORKFLOW.md` and promote a new snapshot; artwork/figure/layout edits use Git commits without an RC bump.
 
-## Current delivery and verification
+### Delivery and verification at that checkpoint
 
 RC487 digital: 600 pages; cream and white interiors: 597 pages each. All 597 cream interior pages were inspected on contact sheets, with nineteen detailed pages, both cover variants, calibration and an overscan specimen. Visual/figure ledgers describe the actual review scope and current hashes. Current figure review is by the repair author; historical independent findings are retained.
 
@@ -14,7 +22,7 @@ RC487 digital: 600 pages; cream and white interiors: 597 pages each. All 597 cre
 
 The contradiction audit is closed for F01–F21 and U01–U06 in `production/qa/manuscript-contradiction-resolution.md`; the original RC486 audit remains historical evidence. Owner-authorized completions and new illustrative dice results are explicit in the closure record. Exact reconstruction and immutable hashes are verified by `production/qa/manuscript-repair-verification.json`.
 
-## Remaining inputs
+### Remaining inputs at that checkpoint
 
 The original workflow email's three annotation texts remain unavailable through the plugin; cancelled browser sign-in supplied no further evidence. No conjectural mapping of annotations is claimed. Pen-and-ink candidate approval and physical inkjet proof remain separate outstanding work; no new artwork is approved by this manuscript repair. Physical proof: NOT TESTED. Author/publisher/copyright/ISBN details remain unset. Commercial wrap/PDF-X: NOT APPLICABLE.
 
@@ -698,3 +706,16 @@ Owner instruction: "Continue as you suggest", following the researched proposal 
 Evidence: `production/qa/publication-first-pass.md`, `publication-authority-review.md`, `independent-editorial-first-pass.md`, `calibration-source-review.md`, and `editorial/proposals/publication-first-pass.json`. Main source remains RC492 with unchanged SHA-256; all artwork/figure approvals, historical snapshots/archives, production release/visual ledgers, and released PDFs remain unchanged. Delivery remains RC492-build-37; source calibration changes await the next separately requested build. Physical print **NOT TESTED**.
 
 Validation: baseline and post-change `python tools/dev.py check` PASS (190 tests each, 3 expected empty-queue skips; exact dependencies/pip consistency, 8 baseline contracts, 17 protected prior snapshots/evidence files, and whitespace PASS). Actual cream/white PNG compilation and scoped visual review PASS; ten proposed patches each match once and were applied only in memory to produce an ignored readable diff. No new unit tests, manuscript promotion, production PDF build, actual reader study, screen-reader session, or physical proof occurred.
+
+
+## 2026-10-15: owner-approved RC493 editorial revision and canon alignment
+
+Owner instructions: "Approve all as proposed." and "Continue". Promoted the ten exact reviewed replacements once through `tools/revise_manuscript.py`, creating RC493 and its immutable approved archive. New source SHA-256: `c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd`; parent RC492 and all prior snapshots/archives are unchanged. All seven findings in the approved packet are applied; no additional manuscript wording was introduced beyond those ten replacements and the revision marker.
+
+- Applied the teaching Dire Wolf's one-Bite control flow and rider timing, C.13 Search branch, legal Shortsword Parry arithmetic, Block declaration timing, Mara's available reaction comparison, three contextual pronoun/grammar repairs, and optional Ogre component counts. Exact reconstruction matches RC493 bytes and all 332 table-cell hashes are preserved.
+- Added `docs/CANON_AUTHORITY.md` and linked it from both startup contracts. Recorded the owner's five approved existing conventions: 4 TAP with Journey exceptions, Druidic Rituals, Appendix C precedence, automatic armour/no Brace with shield mitigation through Block, and no Monster ability Checks with existing exceptions. Updated authority-review dispositions without rewriting their RC492 trace evidence.
+- Reparsed source/index inventories: 833 headings, 332 tables, zero ragged tables, 63 anchors resolved. Parser-generated metadata was normalised to repository LF without changing JSON values. Avoided `make parse` because its extras also build PDFs; no book or diagnostic PDF was generated.
+- Actual SVG/caption/source and standalone PNG reviews covered affected FIG-06, 11, 12, 16, 18, and 19. Updated only their reviewed source bindings, retaining 51 unaffected entries and all SVG/caption bytes. Current figure gate PASS 57/57, zero stale/open majors, with four new open minor figure-copy proposals recorded separately. No minor was silently accepted or fixed as part of the approved source batch.
+- Canonical approved evidence is `editorial/history/RC493.json`, SHA-256 `a9303b69f0b167350d87b83dd2ec2cb7c1baa5f8f2cb1300205dd48eaccca1dc`. Removed its applied proposal duplicate only after recording byte identity and archive hash; the earlier proposed form remains in Git history. See `production/qa/rc493-editorial-verification.json` and `rc493-editorial-application.md`.
+
+Validation: baseline and post-integration `python tools/dev.py check` PASS (190 tests each, 3 expected empty-queue skips; exact dependencies, pip consistency, 8 baseline contracts, 17 prior protected source/archive files, and whitespace). Source reconstruction and preserved table/anchor evidence PASS; actual scoped figure review and currency gate PASS with 4 open minors. No additional unit tests, production PDF build, hosted publication run, full-format/human proof, reader study, or screen-reader session was performed. Last delivered PDFs and their release/visual/package/gate records remain RC492-build-37 and predate RC493. Physical print **NOT TESTED**.

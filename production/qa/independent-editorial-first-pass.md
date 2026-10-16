@@ -2,11 +2,11 @@
 
 Date: 2026-10-15. Reviewer: Codex, a fresh delegated review context in the same OpenAI model family as the integrating agent. This is a second source-review pass, not an independent human copyedit, a full-book certification, or a full-detail proof of the delivered PDF.
 
-Status: **OPEN FINDINGS - PROPOSALS ONLY**. No manuscript text was changed, no revision was promoted, and no PDF was built or reviewed for this report. Physical proof: **NOT TESTED**.
+Disposition update, 2026-10-15: **ALL TEN CORRECTIONS APPROVED AND APPLIED IN RC493** under the owner instruction "Approve all as proposed." The original bounded review below concerns RC492; its coverage does not become a complete RC493 proof. The exact approved evidence is `editorial/history/RC493.json`; reconstruction and unchanged prior files are verified in `production/qa/rc493-editorial-verification.json`. No PDF was built or reviewed. Physical proof: **NOT TESTED**.
 
 ## Source and scope
 
-- Active source: `source/Heraldry_RC492.md`, confirmed by `source/versions.json`.
+- Reviewed source baseline: `source/Heraldry_RC492.md`, confirmed by the registry at review time; current authority is RC493.
 - SHA-256: `a5ca7e72ad05a0cd69bb0bdca8238c10a635cf18345ae719c047c42fd3a8552a`.
 - Checkout when review began: clean `main`, commit `1a890818694fd03f6f2d44e6508e787b6879280c`, matching local `origin/main`.
 - Governing files read: `AGENTS.md`, `CLAUDE.md`, `production/STATE.md`, `docs/WORKFLOW.md`, and `docs/BUILD_AUTOMATION.md`. Append-only historical state entries do not replace the active registry or current source.
@@ -33,7 +33,7 @@ Method: contextual source reading; comparison of teaching/reference text to the 
 
 ## Findings and proposed corrections
 
-Severity describes the observed source issue within this scope. It is not a new release-gate result. All exact changes are drafted in `editorial/proposals/publication-first-pass.json` with `status: proposed`; none is authorized for promotion by this report.
+Severity describes the observed source issue within this scope. It is not a new release-gate result. All ten exact changes were subsequently owner-approved, promoted once through the revision engine, and archived in `editorial/history/RC493.json`. The proposed language below records the original recommendation and is superseded by that explicit approval; no further approval is required for this applied batch.
 
 ### E01 - Tutorial Dire Wolf instructions can resolve two attacks
 
@@ -115,10 +115,10 @@ Acceptance: the materials list supplies every marker required by Advanced Ogre, 
 
 ## Next editorial stage and acceptance
 
-1. Owner reviews the exact draft replacements and the one-Bite tutorial interpretation. Promote only the explicitly approved batch through the revision engine, once, with its source hash and authorization retained. No source snapshot may be edited in place.
+1. Completed: the owner approved all ten replacements and the one-Bite tutorial interpretation. The revision engine created RC493 once, with the original RC492 hash, actual authorisation, and exact patch archive retained. Prior snapshots remain unchanged.
 2. Commission or arrange a complete human copyedit against the authoritative current source, using an agreed terminology/style sheet and an issue log. This pass is supporting evidence, not completion of that task. No person was contacted.
 3. After a separately requested publication build, proof the actual delivered PDF at readable detail: all pages, tables, captions, running matter, cross-references, links/bookmarks, final line breaks, and glyphs. Review altered examples and all affected downstream pagination. A source pass cannot approve those surfaces.
 4. Run reader tasks without designer assistance and record observed rule-lookup errors, including Reaction timing, an already Engaged tutorial wolf, and Monster Search. No user-test result is claimed here.
 5. Examine actual printed sheets and binding before replacing NOT TESTED with a physical-proof result.
 
-The drafted files are a concrete review packet. They neither approve the editorial changes nor supersede the hash-bound visual record for the released PDF.
+The approved batch is applied in RC493. This source review and approval do not supersede the hash-bound visual record for the released RC492 PDF or complete the remaining human, final-format, accessibility, or physical checks.

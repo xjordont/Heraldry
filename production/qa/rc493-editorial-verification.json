@@ -1,0 +1,44 @@
+{
+  "source_revision": 493,
+  "source_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+  "exact_approved_patch_count": 10,
+  "prior_manuscript_and_archive_bytes_preserved": true,
+  "reconstruction_matches_exact_bytes": true,
+  "all_332_table_cell_hashes_unchanged": true,
+  "anchors_resolved": 63,
+  "affected_figures": [
+    "FIG-06",
+    "FIG-11",
+    "FIG-12",
+    "FIG-16",
+    "FIG-18",
+    "FIG-19"
+  ],
+  "owner_authorization": "Approve all as proposed.",
+  "pdf_build_requested": false,
+  "approved_batch_archive": "editorial/history/RC493.json",
+  "approved_batch_sha256": "a9303b69f0b167350d87b83dd2ec2cb7c1baa5f8f2cb1300205dd48eaccca1dc",
+  "former_proposal_path": "editorial/proposals/publication-first-pass.json",
+  "proposal_copy_byte_identical_before_archiving": true,
+  "figure_semantic_gate": {
+    "status": "PASS",
+    "figures_pass": 57,
+    "figures_total": 57,
+    "stale": [],
+    "open_major_count": 0,
+    "open_minor_count": 4,
+    "report": "build/checks/RC493/figure-review-gate.json"
+  },
+  "local_developer_checks": {
+    "baseline": "PASS",
+    "post_integration": "PASS",
+    "tests_run": 190,
+    "expected_skips": 3,
+    "post_integration_seconds": 118.112,
+    "baseline_contract_checks": 8,
+    "prior_protected_manuscript_archive_files": 17,
+    "hosted_build_tested": false
+  },
+  "last_release_ledgers_unchanged": true,
+  "proposal_copy_removed_after_archive_verification": true
+}
