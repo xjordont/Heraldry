@@ -3,10 +3,11 @@ from __future__ import annotations
 import math, re
 from metrics import width
 
-PT = 9.5            # table body size
-LEAD = 12.0         # table leading
-PAD = 4.0           # horizontal cell padding (each side)
-VPAD = 3.0
+# Must match typst/heraldry.typ's live table components, not retired v1 tokens.
+PT = 9.3            # active table-size
+LEAD = 12.0         # 9.3pt text plus 2.7pt line leading
+PAD = 5.0           # active htable inset (each side)
+VPAD = 4.0          # active htable inset (top and bottom)
 COL_W = 250.5       # one text column (design v4: (7.2 in - 0.24 in) / 2)
 FULL_W = 518.4      # full text frame (design v4: 8.5 in - 0.75 in - 0.55 in = 7.2 in)
 BODY_H = 792 - 0.68 * 72 - 0.7 * 72   # 688.6 pt text frame height (design v4)
