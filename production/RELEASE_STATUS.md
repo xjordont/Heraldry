@@ -1,5 +1,11 @@
 # Release status - RC493 source / RC492 delivery
 
+
+## Publishing validation follow-up - 2026-10-17
+
+The source-code publishing pipeline has received cross-platform file-handle, authority, geometry, table-alignment, table-metric, and semantic-marker fixes with regression tests. The effective profile is the approved four-font v4 layout; obsolete three-font preflight assumptions were corrected. These are code and configuration updates; no new PDF, release, visual-review ledger, or physical print was produced. RC493 remains source-only, RC492-build-37 remains the last recorded delivered PDF, and the historical page-map evidence mismatch remains scoped to that delivery. The next explicit candidate build must supply end-to-end rendered evidence before claiming the discrepancy fully resolved.
+
+
 ## PDF page-map verification repair - 2026-10-17
 
 Publishing code now captures position metadata in the PDF compiler process and binds it to the exact cream PDF and generated Typst source hashes. A new mandatory physical-PDF check compares uniquely named section positions against the PDF's bookmark destinations and rejects mismatches or insufficient evidence. Regression tests cover the recorded C.5 discrepancy and stale PDF hashes. This fixes a verification loophole; it does not retroactively correct the historical RC492-build-37 page-map report or certify a new RC493 PDF. No candidate build, release, or physical proof was performed in this change.
