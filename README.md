@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`7adfb552`](https://github.com/xjordont/Heraldry/commit/7adfb5521e01b49d7602cd39a633cd11ffef907a) fix(config): replace retired v1 tokens with active Grim Heraldry v4 profile
+- [`ca532b93`](https://github.com/xjordont/Heraldry/commit/ca532b93295f253dd154f738a09655e46edbcd27) fix(config): reflect effective approved v4 book typography and margins
+- [`9fc336f4`](https://github.com/xjordont/Heraldry/commit/9fc336f46b20dee948b11df7b6b48892fb0550ee) fix(layout): synchronize table allocator metrics with actual Typst renderer
 - [`41b46295`](https://github.com/xjordont/Heraldry/commit/41b462953738438dcc3f31c6b1e93e58dfce9489) tests: detect invisible cream/white geometry and link-target drift
 - [`59ce8ef7`](https://github.com/xjordont/Heraldry/commit/59ce8ef7a54848a20f0522d642668f0a356e9495) fix(print): compare cream/white text, image, vector, and navigation geometry
 - [`2ee67e5d`](https://github.com/xjordont/Heraldry/commit/2ee67e5d64ba0b9fad0e39ee25a4bd8f6f2699ac) tests: protect PDF query authority, table alignment, and marker extents
-- [`0cb0198d`](https://github.com/xjordont/Heraldry/commit/0cb0198dc099621c3298fd0a668d780d0ea6ff0f) fix(qa): retire independent Typst position query and require PDF-bound records
-- [`7c83a2a2`](https://github.com/xjordont/Heraldry/commit/7c83a2a217f10420f3bd71c6d26b89f24fd0a307) fix(layout): preserve right alignment and mark true figure/stat extents
-- [`de020d04`](https://github.com/xjordont/Heraldry/commit/de020d041d204fd7e36e8defbfb29970845f5cbb) fix(qa): close PyMuPDF document after page-map inspection on Windows
 
 <!-- END AUTO:recent -->
 
