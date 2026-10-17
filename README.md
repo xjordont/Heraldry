@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`de020d04`](https://github.com/xjordont/Heraldry/commit/de020d041d204fd7e36e8defbfb29970845f5cbb) fix(qa): close PyMuPDF document after page-map inspection on Windows
 - [`e751845d`](https://github.com/xjordont/Heraldry/commit/e751845dd26afa06dcdbc6e18e06d240bf82625d) docs: record PDF page-map gate repair and outstanding build verification
 - [`066ed142`](https://github.com/xjordont/Heraldry/commit/066ed1424d457d8f499916723213c66ad890f725) docs: record PDF page-map gate repair and outstanding build verification
 - [`11c5da46`](https://github.com/xjordont/Heraldry/commit/11c5da46e0551faf92d4f1c103cdefdadb3977bc) tests: reject stale compile-query hashes before release verification
 - [`1391620a`](https://github.com/xjordont/Heraldry/commit/1391620ab8a25f4ec35f5fbda8ce26459e73d58a) tests: regress C.5 bookmark drift and invalid PDF page maps
 - [`f757acb5`](https://github.com/xjordont/Heraldry/commit/f757acb5f5835114c437b230b3da852791b34c5d) qa: make independent PDF page-map accuracy a mandatory release gate
-- [`2310ea35`](https://github.com/xjordont/Heraldry/commit/2310ea35490a3435d0a9e14f757f59319b79ebaa) qa: consume PDF-bound query and fail closed on page-map disagreement
 
 <!-- END AUTO:recent -->
 
