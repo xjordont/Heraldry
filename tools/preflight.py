@@ -96,7 +96,7 @@ def main() -> int:
         for key in ('warm_cream_hex', 'paper_white_hex'):
             require(re.fullmatch(r'#[0-9A-Fa-f]{6}', t['substrate'][key]) is not None, 'Invalid substrate colour')
         require(t['type_pt']['minimum_essential'] == c['format']['minimum_essential_text_pt'], 'Type minimum differs')
-        require(t['fonts']['max_families'] <= 3 and not t['ornament']['ordinary_page_perimeter_frame'] and not t['ornament']['decorative_watermark'], 'Visual restraint contract changed')
+        require(t['fonts']['max_families'] == 4 and not t['ornament']['ordinary_page_perimeter_frame'] and not t['ornament']['decorative_watermark'], 'Visual restraint contract changed')
         return 'Portrait Letter borderless/cream tokens, safe area, and print checks reconcile'
 
     def agent_contracts():
