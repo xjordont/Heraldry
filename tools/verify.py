@@ -66,6 +66,20 @@ def tquery(sel):
     return QUERY_CACHE[sel]
 
 
+def marker_pair_errors(records):
+    """Every table/figure must have one start and one terminal marker."""
+    counts = {}
+    for m in records:
+        item = counts.setdefault(m.get("id"), {"s": 0, "e": 0, "unexpected": 0})
+        edge = m.get("edge")
+        if edge in ("s", "e"):
+            item[edge] += 1
+        else:
+            item["unexpected"] += 1
+    return {key: values for key, values in counts.items()
+            if key is None or values != {"s": 1, "e": 1, "unexpected": 0}}
+
+
 def main():
     QA.mkdir(parents=True, exist_ok=True)
     cream = DIST / f"Heraldry_{version()}_inkjet-borderless.pdf"
@@ -124,12 +138,8 @@ def main():
     allpos = tquery("<tblpos>")
     for m in allpos:
         pos.setdefault(m["id"], []).append(m)
-    starts = {}
-    for m in allpos:
-        if m["edge"] == "s":
-            starts[m["id"]] = starts.get(m["id"], 0) + 1
-    dup = {k: v for k, v in starts.items() if v != 1}
-    st["no_duplicate_tables_figures"] = "PASS" if not dup else "FAIL"
+    marker_errors = marker_pair_errors(allpos)
+    st["no_duplicate_tables_figures"] = "PASS" if not marker_errors else "FAIL"
     rows = []
     for t in inv:
         ps = pos.get(t["id"], [])
