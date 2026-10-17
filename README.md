@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
-- [`7adfb552`](https://github.com/xjordont/Heraldry/commit/7adfb5521e01b49d7602cd39a633cd11ffef907a) fix(config): replace retired v1 tokens with active Grim Heraldry v4 profile
-- [`ca532b93`](https://github.com/xjordont/Heraldry/commit/ca532b93295f253dd154f738a09655e46edbcd27) fix(config): reflect effective approved v4 book typography and margins
-- [`9fc336f4`](https://github.com/xjordont/Heraldry/commit/9fc336f46b20dee948b11df7b6b48892fb0550ee) fix(layout): synchronize table allocator metrics with actual Typst renderer
-- [`41b46295`](https://github.com/xjordont/Heraldry/commit/41b462953738438dcc3f31c6b1e93e58dfce9489) tests: detect invisible cream/white geometry and link-target drift
-- [`59ce8ef7`](https://github.com/xjordont/Heraldry/commit/59ce8ef7a54848a20f0522d642668f0a356e9495) fix(print): compare cream/white text, image, vector, and navigation geometry
-- [`2ee67e5d`](https://github.com/xjordont/Heraldry/commit/2ee67e5d64ba0b9fad0e39ee25a4bd8f6f2699ac) tests: protect PDF query authority, table alignment, and marker extents
+- [`76492caf`](https://github.com/xjordont/Heraldry/commit/76492caf09523725154661e44a1d17aa60a6a612) docs: record publishing hardening scope and required full-build proof
+- [`cb1ac24b`](https://github.com/xjordont/Heraldry/commit/cb1ac24b808e28107b7f17694ecb46d3274f38c3) docs: record publishing hardening scope and required full-build proof
+- [`25b20f23`](https://github.com/xjordont/Heraldry/commit/25b20f23d5c4b8dc52dcdd861e4b3809f5ad1a82) fix(preflight): enforce owner-approved four-family v4 typography
+- [`5ab99137`](https://github.com/xjordont/Heraldry/commit/5ab99137c69fb69065c341581eed95c447fb06f4) tests: reject orphaned and duplicated table/figure markers
+- [`3ce6496e`](https://github.com/xjordont/Heraldry/commit/3ce6496ecc2e6ae84c2eacd012c5004c8936ccbe) fix(qa): require exactly one start and end marker for each table and figure
+- [`e5b8086f`](https://github.com/xjordont/Heraldry/commit/e5b8086f361402ab64ea899cdd7f0c1c71916385) tests: prevent duplicated and reversed keep markers from passing
 
 <!-- END AUTO:recent -->
 
