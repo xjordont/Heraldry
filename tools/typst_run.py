@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Compile content.typ once (fresh process, bounded memory) and optionally dump queries."""
-import json, sys, time
+import hashlib, json, sys, time
 from pathlib import Path
 import typst
 from manuscript import pdf_epoch
@@ -36,5 +36,18 @@ else:
         res["pm"] = json.loads(typst.query(str(CONTENT), "<pm>", field="value", **kw))
         res["hpos"] = json.loads(typst.query(str(CONTENT), "<hpos>", field="value", **kw))[0]
 if qfile:
+    # These records come from the same compiler instance that wrote this PDF.
+    # They are bound to its exact bytes and the generated Typst source. The
+    # verifier must never replace them with an independent compiler query.
+    selectors = ("<tblpos>", "<ixpos>", "<hpos>", "<um-pos>")
+    res["positions"] = {
+        selector: json.loads(c.query(selector, field="value")) if c is not None
+        else json.loads(typst.query(str(CONTENT), selector, field="value", **kw))
+        for selector in selectors
+    }
+    res["pdf_sha256"] = hashlib.sha256(out_path.read_bytes()).hexdigest()
+    res["content_sha256"] = hashlib.sha256(CONTENT.read_bytes()).hexdigest()
+    res["substrate"] = variant
+    res["edition"] = edition
     qf.write_text(json.dumps(res))
 print(f"{res['dt']:.1f}")
