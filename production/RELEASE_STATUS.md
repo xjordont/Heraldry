@@ -1,5 +1,10 @@
 # Release status - RC493 source / RC492 delivery
 
+## PDF page-map verification repair - 2026-10-17
+
+Publishing code now captures position metadata in the PDF compiler process and binds it to the exact cream PDF and generated Typst source hashes. A new mandatory physical-PDF check compares uniquely named section positions against the PDF's bookmark destinations and rejects mismatches or insufficient evidence. Regression tests cover the recorded C.5 discrepancy and stale PDF hashes. This fixes a verification loophole; it does not retroactively correct the historical RC492-build-37 page-map report or certify a new RC493 PDF. No candidate build, release, or physical proof was performed in this change.
+
+
 ## PDF layout and density review - 2026-10-16
 
 [Detailed review and proposed trials](../reports/Rulebook%20layout%20and%20density%20review.md): all 672 pages of the exact RC492-build-37 cream interior were geometry-censused; 25 distinct Heraldry pages and 24 selected pages across all ten hash-verified private reference books were directly viewed. Live RC493 pipeline/code review identified a confirmed QA page-map/PDF discrepancy (cause unresolved), inconsistent style/measurement values, alignment/continuation/marker defects, and bounded density opportunities. Retain 11 pt body, current margins, complete-unit keeps, and accepted p6 blank verso for the proposed first specimen trial. Baseline development tests: 203 PASS with 3 expected skips. Review/proposals only; no implementation, new PDF/build/release, approval, or ledger rebinding. No quantified page saving or physical proof is claimed. Current RC493 source and RC492-build-37 delivery remain distinct.
