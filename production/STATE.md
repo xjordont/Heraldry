@@ -1,5 +1,15 @@
 # Production state - RC493 source, main
 
+
+## Publishing integrity corrections - 2026-10-17
+
+Scoped code-only hardening, no manuscript revision and no PDF build. CI investigation found four Windows test cleanup failures from an unclosed PyMuPDF document (fixed with a context manager), plus an obsolete preflight restriction of three font families despite the approved v4's four families (corrected). The remaining standalone query utility now reads hash-checked positions captured by the PDF compiler instead of invoking a second layout pass.
+
+Corrections include: active v4 production/design tokens and table estimator sizes; preservation of right-aligned table cells; one true start/end marker for each stat block and figure; mandatory rejection of duplicate, orphaned, or reversed keep/table/figure markers; and cream/white comparison of word geometry, raster/vector placements, links and PDF outlines, not just extracted text. Cross-platform regression tests cover the affected cases. Old RC492 release files and historical audits were not rewritten.
+
+Limits: the next owner-requested RC493 candidate must exercise the entire revised compiler, pagination, physical PDF location gate, marker accounting, and cream/white geometry gate on the full book. Earlier confirmed historical RC492 C.5 page-map disagreement has not been retroactively cured. Continue table/scenario naming, paragraph-tail design improvements, measurement calibration and physical printing through rendered specimens and physical proof, not unverified layout changes.
+
+
 ## PDF page-map gate repair - 2026-10-17
 
 Code-only repair on main: `tools/typst_run.py` now captures all QA location queries in the same compiler process that writes the cream print PDF, recording that PDF's SHA-256 and the generated Typst source hash. `tools/verify.py` consumes only the compile-bound query; a second Typst compiler cannot silently supply uncorroborated page numbers. The new mandatory `page_map_accuracy` check independently compares uniquely named headings against physical bookmark destinations in the serialized PDF and validates the bounds of heading, table, index, and keep markers. Missing coverage, different hashes, or page disagreements block publication. Regression tests reproduce the previously reported C.5 page shift and stale hashes.
