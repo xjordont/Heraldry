@@ -2,7 +2,7 @@
 """Release verification gate. Runs every deterministic check on the final files in dist/
 and writes production/qa/*.json plus production/qa/STATUS.json. Exits non-zero when a
 mandatory check fails, so a failed build cannot be labelled an unconditional release."""
-import json, subprocess, sys
+import hashlib, json, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -49,11 +49,20 @@ def run(args, report=None):
 def tquery(sel):
     global QUERY_CACHE
     if QUERY_CACHE is None:
-        cmd = [PY, "tools/query_typst.py"]
-        r = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
-        if r.returncode != 0:
-            raise RuntimeError("Typst query failed: " + (r.stderr or r.stdout or "unknown error"))
-        QUERY_CACHE = json.loads(r.stdout)
+        # Read the query captured by the compiler that serialized the cream PDF,
+        # not a fresh Typst instance whose independently laid-out pages may differ.
+        q = load_json(ROOT / "build/query.json")
+        pdf = DIST / f"Heraldry_{version()}_inkjet-borderless.pdf"
+        source = ROOT / "typst/content.typ"
+        if not isinstance(q, dict) or q.get("substrate") != "cream" or q.get("edition") != "print":
+            raise RuntimeError("Missing cream-print compiler query; rebuild")
+        if q.get("pdf_sha256") != hashlib.sha256(pdf.read_bytes()).hexdigest():
+            raise RuntimeError("Compiler query is not bound to the exact cream PDF; rebuild")
+        if q.get("content_sha256") != hashlib.sha256(source.read_bytes()).hexdigest():
+            raise RuntimeError("Compiler query does not match the generated Typst source; rebuild")
+        QUERY_CACHE = q.get("positions")
+        if not isinstance(QUERY_CACHE, dict):
+            raise RuntimeError("Compiler query has no position records; rebuild")
     return QUERY_CACHE[sel]
 
 
@@ -81,6 +90,8 @@ def main():
     st["layout_detectors"] = "PASS" if lay == "PASS" and not lj.get("counts") else "FAIL"
     tquery("<um-pos>")
     (ROOT / "build/positions.json").write_text(json.dumps(QUERY_CACHE))
+    st["page_map_accuracy"], _ = run(["tools/page_map_accuracy.py", "--positions", "build/positions.json", "--pdf", str(cream),
+                                      "--report", str(QA / "page-map-accuracy.json")], QA / "page-map-accuracy.json")
     st["one_page_keeps"], _ = run(["tools/keep_audit.py", "--positions", "build/positions.json", "--pdf", str(cream),
                                    "--report", str(QA / "keep-audit.json")], QA / "keep-audit.json")
     st["inkjet_checker_cream"], _ = run(["tools/verify_inkjet_pdf.py", str(cream), "--report", str(QA / "inkjet-preflight.json")], QA / "inkjet-preflight.json")
