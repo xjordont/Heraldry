@@ -12,6 +12,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 
 import query_typst
 from qa_contract import MANDATORY_CHECKS
+from tables import PT, LEAD, PAD, VPAD
 
 
 class CompileBoundQuery(unittest.TestCase):
@@ -65,6 +66,29 @@ class LayoutSourceContract(unittest.TestCase):
         self.assertEqual(block.count('#tmark(id, "s")'), 1)
         self.assertEqual(block.count('#tmark(id, "e")'), 1)
         self.assertLess(block.index("#line(length: 100%"), block.index('#tmark(id, "e")'))
+
+    def test_effective_layout_profile_matches_renderer(self):
+        prod = json.loads((ROOT / "config/production.json").read_text(encoding="utf-8"))
+        tokens = json.loads((ROOT / "config/design_tokens.json").read_text(encoding="utf-8"))
+        v4 = (ROOT / "typst/templates/system.typ").read_text(encoding="utf-8")
+        book = (ROOT / "typst/heraldry.typ").read_text(encoding="utf-8")
+        fmt = prod["format"]
+        self.assertIn("#let m-in = 0.75in", v4)
+        self.assertIn("#let m-out = 0.55in", v4)
+        self.assertIn("#let m-top = 0.68in", v4)
+        self.assertIn("#let gap = 0.24in", v4)
+        self.assertIn("#let body-size = 11pt", v4)
+        self.assertEqual([fmt["inside_margin_inches"], fmt["outside_margin_inches"],
+                          fmt["top_margin_inches"], fmt["column_gap_inches"]],
+                         [0.75, 0.55, 0.68, 0.24])
+        self.assertEqual((fmt["body_font_size_pt"], fmt["table_font_size_pt"]), (11, 9.3))
+        self.assertEqual((tokens["type_pt"]["body"], tokens["type_pt"]["chapter"],
+                          tokens["fonts"]["max_families"]), (11, 50, 4))
+        self.assertIn("#let table-size = 9.3pt", book)
+        self.assertIn("#let table-lead = 2.7pt", book)
+        self.assertEqual((PT, LEAD, PAD, VPAD), (9.3, 12, 5.0, 4.0))
+        self.assertEqual((tokens["spacing_pt"]["table_horizontal_padding"],
+                          tokens["spacing_pt"]["table_vertical_padding"]), (PAD, VPAD))
 
 
 if __name__ == "__main__":
