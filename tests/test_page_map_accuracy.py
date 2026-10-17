@@ -64,6 +64,15 @@ class PageMapAccuracy(unittest.TestCase):
         doc.close()
         self.assertEqual(analyze(self.pdf, self.headings, self.positions)["status"], "FAIL")
 
+    def test_table_and_figure_marker_pairs_cannot_silently_miss_ends(self):
+        good = [{"id": "T327", "edge": "s"}, {"id": "T327", "edge": "e"},
+                {"id": "FIG-01", "edge": "s"}, {"id": "FIG-01", "edge": "e"}]
+        self.assertEqual(verify.marker_pair_errors(good), {})
+        bad = good + [{"id": "T327", "edge": "s"}, {"id": "FIG-02", "edge": "s"}]
+        errors = verify.marker_pair_errors(bad)
+        self.assertEqual(errors["T327"]["s"], 2)
+        self.assertEqual(errors["FIG-02"]["e"], 0)
+
     def test_pdf_hash_binding_blocks_stale_query(self):
         root = Path(self.dir.name)
         (root / "build").mkdir()
