@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`f757acb5`](https://github.com/xjordont/Heraldry/commit/f757acb5f5835114c437b230b3da852791b34c5d) qa: make independent PDF page-map accuracy a mandatory release gate
+- [`2310ea35`](https://github.com/xjordont/Heraldry/commit/2310ea35490a3435d0a9e14f757f59319b79ebaa) qa: consume PDF-bound query and fail closed on page-map disagreement
+- [`4ea04c33`](https://github.com/xjordont/Heraldry/commit/4ea04c3326510fdf59779f1db2ccd5de28dcacb1) qa: check page-map positions against actual PDF bookmarks
+- [`5985e54d`](https://github.com/xjordont/Heraldry/commit/5985e54d2704f4ee1a6d15f20e0ba3616d0446ef) qa: bind Typst position queries to the compiled PDF
 - [`82a14575`](https://github.com/xjordont/Heraldry/commit/82a14575f6d802e9042796d773fa9b2f1dc71877) research: audit PDF layout, density and design workflow
 - [`ad95ae60`](https://github.com/xjordont/Heraldry/commit/ad95ae6020088ee0e082d437de77ae350fbe12c2) docs: keep GitHub README current automatically
-- [`c1e48475`](https://github.com/xjordont/Heraldry/commit/c1e48475b59166039fcc871c6af7c18722dc0dd9) figures: preserve existing scenario specification formatting
-- [`d2d4d211`](https://github.com/xjordont/Heraldry/commit/d2d4d21145ffd80f0a3ebc40a8b25776dd5ca0be) figures: review all 57 and repair clarity, accuracy and design
-- [`39fcc4cb`](https://github.com/xjordont/Heraldry/commit/39fcc4cbdcf4e0213c9f199e8ade03d6d03dacaa) text(RC493): apply approved editorial fixes and canon alignment
-- [`bb0e4b30`](https://github.com/xjordont/Heraldry/commit/bb0e4b308479efad703088dc078b85574c1ae201) publication: correct calibration and prepare editorial checks
 
 <!-- END AUTO:recent -->
 
