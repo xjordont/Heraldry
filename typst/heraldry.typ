@@ -396,7 +396,7 @@
   set text(font: sans, size: table-size, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining", number-width: "tabular", hyphenate: false)
   set par(leading: table-lead, spacing: 4pt, justify: false)
   set strong(delta: 200)
-  let al(x) = { let a = aligns.at(x); if a == left { left } else { center } }
+  let al(x) = { let a = aligns.at(x); if a == left { left } else if a == right { right } else { center } }
   set table.cell(breakable: false)   // keep ordinary rows intact
   block(width: 100%, above: 10pt, below: 12pt, breakable: true)[
     #pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")
@@ -433,7 +433,7 @@
 #let statstrip(id, header, values, pre: none) = {
   set text(font: sans, number-type: "lining", number-width: "tabular", hyphenate: false)
   block(width: 100%, above: 7pt, below: 8pt, breakable: false)[
-    #pre#pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")#tmark(id, "e")
+    #pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")
     #coin-text(table(
       columns: (1fr,) * header.len(),
       align: center + horizon,
@@ -445,6 +445,7 @@
     ), s: 0.8em)
     #v(-2pt)
     #brush(weight: 2pt, seed: 7)
+    #tmark(id, "e")
   ]
 }
 
@@ -453,7 +454,7 @@
   set text(font: sans, size: table-size, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining")
   set par(justify: false)
   block(width: 100%, above: 7pt, below: 8pt, breakable: false)[
-    #pre#pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")#tmark(id, "e")
+    #pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")
     #coin-text(table(
       columns: (auto, 1fr),
       inset: (x: 6pt, y: 3.6pt),
@@ -463,6 +464,7 @@
     ))
     #v(-1pt)
     #brush(weight: 2pt, seed: 9)
+    #tmark(id, "e")
   ]
 }
 
@@ -508,4 +510,5 @@
     caption
   })
   #line(length: 100%, stroke: 0.6pt + ink)
+  #tmark(id, "e")
 ]
