@@ -32,10 +32,13 @@ def analyze(pdf, headings, positions):
     Ambiguous repeated titles are skipped, never arbitrarily assigned. Each
     position selector is additionally checked against the actual page count.
     """
-    doc = pymupdf.open(pdf)
-    page_count = len(doc)
-    if page_count < 1:
-        raise ValueError("Empty publication PDF")
+    # PyMuPDF keeps a native handle open until the document is closed. On
+    # Windows, that handle prevents temporary PDFs from being removed.
+    with pymupdf.open(pdf) as doc:
+        page_count = len(doc)
+        if page_count < 1:
+            raise ValueError("Empty publication PDF")
+        toc = doc.get_toc(simple=True)
     hpos = heading_positions(positions)
     bad_bounds = []
     for selector in SELECTORS:
@@ -52,7 +55,6 @@ def analyze(pdf, headings, positions):
               if isinstance(h, dict) and h.get("id") and h.get("title")
               and counts[normalized(h["title"])] == 1}
     qpos = {h["id"]: h["page"] for h in hpos}
-    toc = doc.get_toc(simple=True)
     toc_counts = Counter(normalized(t[1]) for t in toc)
     matched, mismatches = [], []
     for _, title, actual_page in toc:
