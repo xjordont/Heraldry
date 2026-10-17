@@ -1,13 +1,17 @@
 """Regression tests for PDF-bound Typst page-location evidence."""
+import hashlib
+import json
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 import pymupdf
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 from page_map_accuracy import analyze
+import verify
 
 
 class PageMapAccuracy(unittest.TestCase):
@@ -59,6 +63,29 @@ class PageMapAccuracy(unittest.TestCase):
         doc.save(self.pdf, incremental=True, encryption=pymupdf.PDF_ENCRYPT_KEEP)
         doc.close()
         self.assertEqual(analyze(self.pdf, self.headings, self.positions)["status"], "FAIL")
+
+    def test_pdf_hash_binding_blocks_stale_query(self):
+        root = Path(self.dir.name)
+        (root / "build").mkdir()
+        (root / "typst").mkdir()
+        (root / "dist").mkdir()
+        content = root / "typst/content.typ"
+        content.write_text("current source")
+        pdf = root / "dist/Heraldry_RC999_inkjet-borderless.pdf"
+        pdf.write_bytes(b"current pdf")
+        query = {"substrate": "cream", "edition": "print",
+                 "pdf_sha256": hashlib.sha256(pdf.read_bytes()).hexdigest(),
+                 "content_sha256": hashlib.sha256(content.read_bytes()).hexdigest(),
+                 "positions": self.positions}
+        (root / "build/query.json").write_text(json.dumps(query))
+        with patch.object(verify, "ROOT", root), patch.object(verify, "DIST", root / "dist"), \
+             patch.object(verify, "version", return_value="RC999"), patch.object(verify, "QUERY_CACHE", None):
+            self.assertEqual(verify.tquery("<tblpos>"), self.positions["<tblpos>"])
+        pdf.write_bytes(b"different pdf")
+        with patch.object(verify, "ROOT", root), patch.object(verify, "DIST", root / "dist"), \
+             patch.object(verify, "version", return_value="RC999"), patch.object(verify, "QUERY_CACHE", None):
+            with self.assertRaisesRegex(RuntimeError, "not bound to the exact cream PDF"):
+                verify.tquery("<tblpos>")
 
 
 if __name__ == "__main__":
