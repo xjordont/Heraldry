@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Supplementary file checks not covered by verify_inkjet_pdf.py:
-substrate painted to every sheet edge, cream/white page-map identity,
+substrate painted to every sheet edge, cream/white page-map and geometry identity,
 raster inventory with effective ppi, internal link and bookmark resolution."""
 import argparse, json
 from pathlib import Path
@@ -52,32 +52,88 @@ def rasters(doc):
     return out
 
 
+def _rect(rect):
+    """Compare geometry, not substrate-dependent colour or PDF object numbers."""
+    return tuple(round(float(v), 2) for v in rect)
+
+
+def _link_signature(link):
+    dest = link.get("to")
+    if dest is None:
+        target = None
+    elif hasattr(dest, "x"):
+        target = (round(float(dest.x), 2), round(float(dest.y), 2))
+    else:
+        target = str(dest)
+    return (link.get("kind"), link.get("page"), link.get("uri"),
+            link.get("nameddest"), _rect(link["from"]), target)
+
+
+def compare_geometry(cream_page, white_page):
+    """Find content-position differences even when extracted page text is equal.
+
+    Text words, raster placements, vector drawing geometry, and link targets
+    must agree; colours are deliberately excluded because substrate changes.
+    """
+    cw, ww = cream_page.get_text("words"), white_page.get_text("words")
+    text_ok = len(cw) == len(ww) and all(
+        a[4] == b[4] and _rect(a[:4]) == _rect(b[:4])
+        for a, b in zip(cw, ww)
+    )
+    ci = sorted(_rect(i["bbox"]) for i in cream_page.get_image_info(hashes=False, xrefs=False))
+    wi = sorted(_rect(i["bbox"]) for i in white_page.get_image_info(hashes=False, xrefs=False))
+    raster_ok = ci == wi
+    def strokes(page):
+        return sorted((d["type"], _rect(d["rect"]), len(d["items"]))
+                      for d in page.get_drawings())
+    vector_ok = strokes(cream_page) == strokes(white_page)
+    cl = sorted((_link_signature(l) for l in cream_page.get_links()), key=str)
+    wl = sorted((_link_signature(l) for l in white_page.get_links()), key=str)
+    links_ok = cl == wl
+    return {"text": text_ok, "raster": raster_ok, "vector": vector_ok, "links": links_ok}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cream", required=True)
     ap.add_argument("--white", required=True)
     ap.add_argument("--report", required=True)
     a = ap.parse_args()
-    c, w = pymupdf.open(a.cream), pymupdf.open(a.white)
-    res = {"pages": {"cream": len(c), "white": len(w)}}
-    res["substrate_edges"] = {"cream": edge_check(c, SUB["cream"]), "white": edge_check(w, SUB["white"])}
-    diffs = []
-    if len(c) == len(w):
-        for i in range(len(c)):
-            if c[i].get_text("text") != w[i].get_text("text"):
-                diffs.append(i + 1)
-    res["page_map_identical"] = len(c) == len(w) and not diffs
-    res["page_text_differences"] = diffs[:20]
-    res["links"] = {"cream": links_check(c), "white": links_check(w)}
-    res["rasters"] = rasters(c)
-    res["page_labels_sample"] = [c[i].get_label() for i in (0, len(c) // 2, len(c) - 1)]
-    ok = (not res["substrate_edges"]["cream"] and not res["substrate_edges"]["white"] and res["page_map_identical"]
+    # Explicit closure is required on Windows, where native PDF handles lock files.
+    with pymupdf.open(a.cream) as c, pymupdf.open(a.white) as w:
+        res = {"pages": {"cream": len(c), "white": len(w)}}
+        res["substrate_edges"] = {"cream": edge_check(c, SUB["cream"]), "white": edge_check(w, SUB["white"])}
+        differences = {"page_text": [], "text_geometry": [], "raster_geometry": [],
+                       "vector_geometry": [], "navigation_geometry": []}
+        res["toc_identical"] = c.get_toc(simple=True) == w.get_toc(simple=True)
+        if len(c) == len(w):
+            for i in range(len(c)):
+                if c[i].get_text("text") != w[i].get_text("text"):
+                    differences["page_text"].append(i + 1)
+                geometry = compare_geometry(c[i], w[i])
+                for key, field in (("text", "text_geometry"), ("raster", "raster_geometry"),
+                                   ("vector", "vector_geometry"), ("links", "navigation_geometry")):
+                    if not geometry[key]:
+                        differences[field].append(i + 1)
+        res["page_map_identical"] = len(c) == len(w) and not differences["page_text"]
+        res["page_text_differences"] = differences["page_text"][:20]
+        res["geometry_identical"] = len(c) == len(w) and res["toc_identical"] and all(
+            not vals for key, vals in differences.items() if key != "page_text"
+        )
+        res["geometry_differences"] = {key: vals[:20] for key, vals in differences.items() if key != "page_text"}
+        res["links"] = {"cream": links_check(c), "white": links_check(w)}
+        res["rasters"] = rasters(c)
+        res["page_labels_sample"] = [c[i].get_label() for i in (0, len(c) // 2, len(c) - 1)]
+    ok = (not res["substrate_edges"]["cream"] and not res["substrate_edges"]["white"]
+          and res["page_map_identical"] and res["geometry_identical"]
           and res["links"]["cream"]["unresolved_links"] == 0 and res["links"]["white"]["unresolved_links"] == 0
           and res["links"]["cream"]["bookmarks_bad_target"] == 0 and res["links"]["white"]["bookmarks_bad_target"] == 0
           and all(r["effective_ppi"] >= 300 for r in res["rasters"]))
     res["status"] = "PASS" if ok else "FAIL"
     Path(a.report).write_text(json.dumps(res, indent=1))
-    print(json.dumps({k: res[k] for k in ("status", "pages", "page_map_identical")} | {"edges_bad": [len(res["substrate_edges"]["cream"]), len(res["substrate_edges"]["white"])], "links": res["links"]["cream"], "rasters": len(res["rasters"])}))
+    print(json.dumps({k: res[k] for k in ("status", "pages", "page_map_identical", "geometry_identical")}
+                     | {"edges_bad": [len(res["substrate_edges"]["cream"]), len(res["substrate_edges"]["white"])],
+                        "links": res["links"]["cream"], "rasters": len(res["rasters"])}))
     raise SystemExit(0 if ok else 1)
 
 
