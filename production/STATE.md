@@ -1,5 +1,12 @@
 # Production state - RC493 source, main
 
+## PDF page-map gate repair - 2026-10-17
+
+Code-only repair on main: `tools/typst_run.py` now captures all QA location queries in the same compiler process that writes the cream print PDF, recording that PDF's SHA-256 and the generated Typst source hash. `tools/verify.py` consumes only the compile-bound query; a second Typst compiler cannot silently supply uncorroborated page numbers. The new mandatory `page_map_accuracy` check independently compares uniquely named headings against physical bookmark destinations in the serialized PDF and validates the bounds of heading, table, index, and keep markers. Missing coverage, different hashes, or page disagreements block publication. Regression tests reproduce the previously reported C.5 page shift and stale hashes.
+
+Scope: publishing-tool code and tests only. Neither the canonical RC493 manuscript nor the RC492-build-37 PDFs and their historical QA ledgers were modified. The October 16 page-map discrepancy in that historical delivery remains documented; the new gate must be exercised against the next explicitly requested full candidate build before its end-to-end behaviour can be certified. No PDF build or physical proof was performed as part of this repair.
+
+
 Updated 2026-10-16. Working/delivery branch: **main**.
 
 ## PDF layout and density review - 2026-10-16
