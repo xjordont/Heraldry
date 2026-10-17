@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`11c5da46`](https://github.com/xjordont/Heraldry/commit/11c5da46e0551faf92d4f1c103cdefdadb3977bc) tests: reject stale compile-query hashes before release verification
 - [`1391620a`](https://github.com/xjordont/Heraldry/commit/1391620ab8a25f4ec35f5fbda8ce26459e73d58a) tests: regress C.5 bookmark drift and invalid PDF page maps
 - [`f757acb5`](https://github.com/xjordont/Heraldry/commit/f757acb5f5835114c437b230b3da852791b34c5d) qa: make independent PDF page-map accuracy a mandatory release gate
 - [`2310ea35`](https://github.com/xjordont/Heraldry/commit/2310ea35490a3435d0a9e14f757f59319b79ebaa) qa: consume PDF-bound query and fail closed on page-map disagreement
 - [`4ea04c33`](https://github.com/xjordont/Heraldry/commit/4ea04c3326510fdf59779f1db2ccd5de28dcacb1) qa: check page-map positions against actual PDF bookmarks
 - [`5985e54d`](https://github.com/xjordont/Heraldry/commit/5985e54d2704f4ee1a6d15f20e0ba3616d0446ef) qa: bind Typst position queries to the compiled PDF
-- [`82a14575`](https://github.com/xjordont/Heraldry/commit/82a14575f6d802e9042796d773fa9b2f1dc71877) research: audit PDF layout, density and design workflow
 
 <!-- END AUTO:recent -->
 
