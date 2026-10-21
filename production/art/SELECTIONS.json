@@ -9385,5 +9385,38 @@
    "max_print_w_in_300ppi": 2.877
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-BLACKKNIFE": {
+  "family": "hero",
+  "title": "Blackknife",
+  "heading_id": "h-blackknife",
+  "route": "gpt",
+  "spec_sha256": "c1c7ec69073a7fa0bed058f48fd585008c1c5a625fc27b0c497dc0055df23581",
+  "prompt_sha256": "623f3e55f2d101e2ab9e02fffb45d5777471303c92fb1bb79be20820a5a6f478",
+  "status": "received",
+  "received_at": "2026-10-21T15:17:25+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-BLACKKNIFE.png",
+   "sha256": "9d36ed712393ee78637eadd359e2ccfc5cef07c0ccda31649c4cb25678f702be",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-BLACKKNIFE.png",
+   "sha256": "9c470f7f94a44b64da6a1bad8a78282bdcd4462e3b74b4a923e98605cc30760c",
+   "px": [
+    762,
+    1490
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.54
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
