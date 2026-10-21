@@ -9682,5 +9682,38 @@
    "max_print_w_in_300ppi": 3.28
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-GNAWTHOUGHT": {
+  "family": "hero",
+  "title": "Gnawthought",
+  "heading_id": "h-gnawthought",
+  "route": "gpt",
+  "spec_sha256": "2c1de2025e68df61ac5687262b023c9d260b9c0e8f477f3150c966dd372953ba",
+  "prompt_sha256": "0ad42621ef5d6b81a883432979323ad09c844ed74417a7585df91371247dd307",
+  "status": "received",
+  "received_at": "2026-10-21T15:36:29+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; all required features present and prohibitions absent.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-GNAWTHOUGHT.png",
+   "sha256": "0d00efe36ce8f698d000bd5ae5027de00196e1ee27a0a9a0d376c99b6a802883",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-GNAWTHOUGHT.png",
+   "sha256": "8d716ba6a8bf83b21d8db351d141356822f02dd8b087d9ed6e8dce4a0d2b5109",
+   "px": [
+    964,
+    1320
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.213
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
