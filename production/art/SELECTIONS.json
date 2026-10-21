@@ -9517,5 +9517,38 @@
    "max_print_w_in_300ppi": 3.253
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-EMBERVOW": {
+  "family": "hero",
+  "title": "Embervow",
+  "heading_id": "h-embervow",
+  "route": "gpt",
+  "spec_sha256": "bd4a92766c878bd963d6fe0386c7d6fc8f2d7a800c9e748932e7fd83fc9e1e9a",
+  "prompt_sha256": "80c146caff53e3a195e7b8b0205869d0e7bbeac39e3114a7832bec5858d5c25d",
+  "status": "received",
+  "received_at": "2026-10-21T15:26:07+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged stray edge marks (0.15%) and narrow margin (3.2% of outer 6% band); visual review confirms full figure, tail, and staff are uncut. Preserve warnings.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-EMBERVOW.png",
+   "sha256": "0e2c009ed357a225488d724b0bdf1f57cb5ed06c331d07eea1c8eadd67f42a69",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-EMBERVOW.png",
+   "sha256": "985f61754b9be0ca812ae295451ebaefc6d5998a5ee1497c0bf3854d44a55ab8",
+   "px": [
+    813,
+    1503
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.71
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
