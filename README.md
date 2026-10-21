@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`8dd23355`](https://github.com/xjordont/Heraldry/commit/8dd23355f8bb8db00419b874fcf4b79337abfe12) art(gpt): ART-HER-ASHBORN .. ART-HER-ASHBORN
 - [`2bfa68a6`](https://github.com/xjordont/Heraldry/commit/2bfa68a632a15b6f85d623a6934d40aee8fd0bb3) art: queue 24 Basic Mode Hero illustrations (hero family, briefs, prompts)
 - [`3f9fa1b3`](https://github.com/xjordont/Heraldry/commit/3f9fa1b36bb84fdf4571c4e6fabeb9284aed683d) manuscript: retain higher uploaded RC numbers automatically
 - [`9684f774`](https://github.com/xjordont/Heraldry/commit/9684f7741199490aab4872c037d7518669809ee8) text(RC512): promote owner manuscript with 24 Basic Mode Heroes
 - [`d449c841`](https://github.com/xjordont/Heraldry/commit/d449c8414ab7f20e137521a1692871f1b5d0ea73) docs: preserve UTF-8 characters in manuscript workflow notes
 - [`e2fb5a9e`](https://github.com/xjordont/Heraldry/commit/e2fb5a9ea187d062bd543294a8a8c81c4ca1a95c) manuscript: support explicitly reviewed forward version jumps
-- [`61a74b87`](https://github.com/xjordont/Heraldry/commit/61a74b8799b294c99a51c216361948144ea660e4) perf(layout): cache verified measurements and streamline proof workflow
 
 <!-- END AUTO:recent -->
 
