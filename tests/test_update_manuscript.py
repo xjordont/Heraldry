@@ -44,7 +44,7 @@ class ManuscriptUpdates(unittest.TestCase):
             "section": "h-11-speed", "type": "para", "prefix": 'Move 6".'}})
         self.write_json("config/figure_dependencies.json", {"FIG-01": ["1.1"], "FIG-02": ["1.2"]})
         self.incoming = self.directory / "Owner update.md"
-        self.proposed = self.text.replace("Rest here.", "Rest here, then finish. café × 2.")
+        self.proposed = self.text.replace("Rest here.", "Rest here, then finish. café × 2.").replace("484 (RC484)", "485 (RC485)")
         self.incoming.write_bytes(self.proposed.encode("utf-8"))
         self.bundle = self.directory / "review bundle"
 
@@ -82,7 +82,7 @@ class ManuscriptUpdates(unittest.TestCase):
         self.assertEqual(record, check(self.root))
         self.assertEqual(record["number"], 485)
         self.assertEqual(self.source.read_bytes(), before)
-        expected = self.proposed.replace("484 (RC484)", "485 (RC485)").encode("utf-8")
+        expected = self.proposed.encode("utf-8")
         self.assertEqual((self.root / record["path"]).read_bytes(), expected)
         self.assertEqual((self.root / record["patch_file"]).read_bytes(), (self.bundle / "approved-patches.json").read_bytes())
         after = self.snapshot()
@@ -91,7 +91,7 @@ class ManuscriptUpdates(unittest.TestCase):
         self.assertEqual(self.snapshot(), after)
 
     def test_bom_crlf_and_next_marker_are_explicit_normalisations(self):
-        raw = b"\xef\xbb\xbf" + self.proposed.replace("484 (RC484)", "485 (RC485)").replace("\n", "\r\n").encode("utf-8")
+        raw = b"\xef\xbb\xbf" + self.proposed.replace("\n", "\r\n").encode("utf-8")
         self.incoming.write_bytes(raw)
         _, report = self.prepare()
         self.assertEqual(report["normalisations"], {"incoming_rc": 485, "utf8_bom_removed": True, "line_endings_normalised": True})
@@ -109,11 +109,10 @@ class ManuscriptUpdates(unittest.TestCase):
         self.assertEqual(self.snapshot(), before)
 
     def test_invalid_version_markers_refuse(self):
-        for text in (self.proposed.replace("484 (RC484)", "483 (RC483)"),
-                     self.proposed.replace("484 (RC484)", "490 (RC490)"),
-                     self.proposed.replace("484 (RC484)", "484 (RC485)"),
-                     self.proposed + "\n**Release Candidate 484 (RC484)**\n",
-                     self.proposed.replace("**Release Candidate 484 (RC484)**", "")):
+        for text in (self.proposed.replace("485 (RC485)", "483 (RC483)"),
+                     self.proposed.replace("485 (RC485)", "484 (RC485)"),
+                     self.proposed + "\n**Release Candidate 485 (RC485)**\n",
+                     self.proposed.replace("**Release Candidate 485 (RC485)**", "")):
             with self.subTest(text=text[:70]), self.assertRaises(ValueError):
                 normalise(text.encode("utf-8"), 484)
 
@@ -129,10 +128,8 @@ class ManuscriptUpdates(unittest.TestCase):
         self.assertFalse((self.bundle / "approved-patches.json").exists())
 
     def test_explicit_version_jump_preserves_exact_input_and_parent(self):
-        raw = self.proposed.replace("484 (RC484)", "512 (RC512)").encode("utf-8")
+        raw = self.proposed.replace("485 (RC485)", "512 (RC512)").encode("utf-8")
         self.incoming.write_bytes(raw)
-        with self.assertRaises(ValueError):
-            self.prepare()
         _, report = prepare(self.root, self.incoming, self.bundle, target_rc=512)
         self.assertEqual(report["next_rc"], 512)
         result = self.apply(approve=True)
@@ -141,21 +138,50 @@ class ManuscriptUpdates(unittest.TestCase):
         self.assertEqual((self.root / result["path"]).read_bytes(), raw)
         self.assertFalse((self.root / "source/Heraldry_RC485.md").exists())
 
+    def test_higher_uploaded_version_is_selected_without_an_override(self):
+        for number in (485, 512, 1200):
+            with self.subTest(number=number):
+                raw = self.proposed.replace("485 (RC485)", f"{number} (RC{number})").encode("utf-8")
+                report, batch, candidate, _ = analyse(self.root, raw)
+                self.assertEqual(report["next_rc"], number)
+                self.assertEqual(candidate, raw)
+                if number > 485:
+                    self.assertEqual(batch["target_rc"], number)
+        self.incoming.write_bytes(self.proposed.replace("485 (RC485)", "512 (RC512)").encode("utf-8"))
+        self.prepare()
+        result = self.apply(approve=True)
+        self.assertEqual(result["number"], 512)
+        self.assertEqual(result, check(self.root))
+        next_input = (self.root / result["path"]).read_bytes().replace(b'Rest here, then finish.', b'Rest once, then finish.')
+        with self.assertRaisesRegex(ValueError, "never overwrite or renumber"):
+            analyse(self.root, next_input)
+        next_input = next_input.replace(b"512 (RC512)", b"513 (RC513)")
+        report, _, candidate, _ = analyse(self.root, next_input)
+        self.assertEqual(report["next_rc"], 513)
+        self.assertEqual(candidate, next_input)
+
+    def test_override_cannot_downgrade_a_higher_upload(self):
+        raw = self.proposed.replace("485 (RC485)", "512 (RC512)").encode("utf-8")
+        with self.assertRaisesRegex(ValueError, "must match the supplied"):
+            analyse(self.root, raw, target_rc=490)
+
     def test_invalid_jump_targets_and_changed_review_target_refuse(self):
         for target in (484, 483, True, "512"):
             with self.subTest(target=target), self.assertRaises(ValueError):
                 analyse(self.root, self.incoming.read_bytes(), target)
+        self.incoming.write_bytes(self.proposed.replace("485 (RC485)", "512 (RC512)").encode("utf-8"))
         prepare(self.root, self.incoming, self.bundle, target_rc=512)
         summary = self.bundle / "summary.json"
         data = json.loads(summary.read_bytes())
         data["target_rc"] = 513
         summary.write_text(json.dumps(data), encoding="utf-8")
         before = self.snapshot()
-        with self.assertRaisesRegex(ValueError, "analysis/configuration changed"):
+        with self.assertRaisesRegex(ValueError, "must match the supplied|analysis/configuration changed"):
             self.apply(approve=True)
         self.assertEqual(self.snapshot(), before)
 
     def test_jump_history_requires_import_evidence(self):
+        self.incoming.write_bytes(self.proposed.replace("485 (RC485)", "512 (RC512)").encode("utf-8"))
         prepare(self.root, self.incoming, self.bundle, target_rc=512)
         result = self.apply(approve=True)
         evidence_path = self.root / result["patch_file"]
@@ -246,6 +272,8 @@ class ManuscriptUpdates(unittest.TestCase):
             original = source.read_bytes()
             # Isolated in-memory input only; never modify or promote the real manuscript.
             incoming = original.replace(b"A competitive GM-less", b"A fixture competitive GM-less", 1)
+            current = check(ROOT)["number"]
+            incoming = incoming.replace(f"{current} (RC{current})".encode(), f"{current + 1} (RC{current + 1})".encode())
             report, batch, _, _ = analyse(ROOT, incoming)
         self.assertEqual(report["impact"]["blockers"], [])
         self.assertEqual(report["impact"]["affected_figures"], [])

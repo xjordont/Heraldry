@@ -36,9 +36,10 @@ def normalise(raw, current, target_rc=None):
     incoming = int(markers[0][1])
     if target_rc is not None and (type(target_rc) is not int or target_rc <= current):
         raise ValueError("Target RC must be an integer greater than the current RC")
-    if incoming not in {current, current + 1} and incoming != target_rc:
-        raise ValueError(f"Input identifies RC{incoming}; use the current RC{current} or next RC{current + 1} marker, "
-                         "or an owner-authorised --target-rc matching the supplied marker")
+    if incoming < current:
+        raise ValueError(f"Input identifies older RC{incoming}; current manuscript is RC{current}")
+    if target_rc is not None and target_rc != incoming:
+        raise ValueError("Target RC must match the supplied manuscript RC; uploads are never renumbered")
     marker = f"**Release Candidate {current} (RC{current})**"
     text = text[:markers[0].start()] + marker + text[markers[0].end():]
     return text, {"incoming_rc": incoming, "utf8_bom_removed": raw.startswith(b"\xef\xbb\xbf"),
@@ -197,9 +198,11 @@ def analyse(root, raw, target_rc=None):
     old = check(root)
     original = (root / old["path"]).read_text(encoding="utf-8")
     proposed, normalisations = normalise(raw, old["number"], target_rc)
-    number = target_rc if target_rc is not None else old["number"] + 1
+    number = normalisations["incoming_rc"]
     if proposed == original:
         raise ValueError("No manuscript text changes after normalisation; no revision is needed")
+    if number <= old["number"]:
+        raise ValueError("Uploaded manuscript RC must be higher than the current RC; never overwrite or renumber an upload")
     marker = f"**Release Candidate {old['number']} (RC{old['number']})**"
     patches = exact_patches(original, proposed, marker)
     candidate = proposed.replace(marker, f"**Release Candidate {number} (RC{number})**", 1)
@@ -211,9 +214,9 @@ def analyse(root, raw, target_rc=None):
               "impact": impact(root, original, proposed)}
     batch = {"base_sha256": old["sha256"], "import": {"input_sha256": digest(raw),
              "candidate_sha256": digest(candidate_bytes), "normalisations": normalisations}, "patches": patches}
-    if target_rc is not None:
-        report["target_rc"] = target_rc
-        batch["target_rc"] = target_rc
+    if target_rc is not None or number > old["number"] + 1:
+        report["target_rc"] = number
+        batch["target_rc"] = number
     diff_lines = difflib.unified_diff(original.splitlines(keepends=True), candidate.splitlines(keepends=True),
                                     fromfile=old["path"], tofile=f"source/Heraldry_RC{number}.md")
     diff = "".join(line if line.endswith("\n") else line + "\n\\ No newline at end of file\n" for line in diff_lines)
@@ -299,7 +302,7 @@ def main(argv=None):
     prep = sub.add_parser("prepare", help="prepare a review bundle without changing the active manuscript")
     prep.add_argument("--input", required=True, type=Path)
     prep.add_argument("--review-dir", type=Path)
-    prep.add_argument("--target-rc", type=int, help="explicit owner-authorised higher revision number, bound into the review")
+    prep.add_argument("--target-rc", type=int, help="optional assertion of the uploaded RC number; cannot renumber it")
     apply = sub.add_parser("apply", help="promote an explicitly approved review to its reviewed RC")
     apply.add_argument("--review-dir", required=True, type=Path)
     apply.add_argument("--approve", action="store_true")
