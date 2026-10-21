@@ -9781,5 +9781,38 @@
    "max_print_w_in_300ppi": 3.053
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-IRONSCAR": {
+  "family": "hero",
+  "title": "Ironscar",
+  "heading_id": "h-ironscar",
+  "route": "gpt",
+  "spec_sha256": "84e6a9679788e29d761f8e7a1b05619757a53f865c26d524b7a215a3035e3665",
+  "prompt_sha256": "7056a9ebff8167284ed8636618eee710678ea0c36caa8c4fa6374429815b8941",
+  "status": "received",
+  "received_at": "2026-10-21T20:09:07+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged possible grey wash (12% midtones); visual review shows ink hatch. All required details visible. Preserve warning.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-IRONSCAR.png",
+   "sha256": "fe1fb49acd5e2db04b5d0851b85c89e1077fa12cd4bfecb0a07cc01770c9ef9b",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-IRONSCAR.png",
+   "sha256": "12c1d6a04679d9d87f70f61835a6ec8abbaae560b3046e958d67f5f9bc2f7200",
+   "px": [
+    990,
+    1381
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.3
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
