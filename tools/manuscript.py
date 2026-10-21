@@ -44,7 +44,7 @@ def check(root=ROOT):
         expected = f"source/Heraldry_RC{r['number']}.md"
         if r["path"] != expected or sha256(root / expected) != r["sha256"] or (root / expected).stat().st_size != r["bytes"]:
             raise ValueError(f"Snapshot altered: {expected}; create a new revision instead")
-        if previous and (r["number"] != previous["number"] + 1 or r.get("parent_sha256") != previous["sha256"]):
+        if previous and (type(r["number"]) is not int or r["number"] <= previous["number"] or r.get("parent_sha256") != previous["sha256"]):
             raise ValueError("Revision sequence or parent hash broken")
         if previous and not (r.get("reason") and r.get("authorization")):
             raise ValueError("Revision needs reason and authorization")
@@ -54,6 +54,12 @@ def check(root=ROOT):
             parent_text = (root / previous["path"]).read_text(encoding="utf-8")
             rebuilt = parent_text
             evidence = json.loads((root / r["patch_file"]).read_text(encoding="utf-8"))
+            if r["number"] != previous["number"] + 1:
+                imported = evidence.get("import")
+                if (evidence.get("target_rc") != r["number"] or not isinstance(imported, dict)
+                        or imported.get("candidate_sha256") != r["sha256"]
+                        or evidence.get("base_sha256") != previous["sha256"]):
+                    raise ValueError("Revision jump needs exact reviewed import evidence")
             patches = evidence["patches"]
             if [p["id"] for p in patches] != r["patch_ids"] or not patches:
                 raise ValueError("Revision patch IDs differ from its evidence")

@@ -2,11 +2,11 @@
 
 Give Codex the complete updated UTF-8 Markdown file and say: "Prepare this manuscript update for review." After reviewing the exact changes, approve that batch. Codex uses the same commands below. No manuscript prose is generated during import.
 
-The active version is always the last record in `source/versions.json`. Each approved update creates exactly one next RC, preserves every previous snapshot, and archives the exact replacements and owner authorization. A manuscript update does not request a PDF build.
+The active version is always the last record in `source/versions.json`. Each approved update creates exactly one new RC, preserves every previous snapshot, and archives the exact replacements and owner authorization. A manuscript update does not request a PDF build.
 
 ## 1. Supply the updated file
 
-Start from the active `source/Heraldry_RC###.md`. Save your edited copy outside `source/`, such as `C:/Heraldry/art-scratch/updated-manuscript.md`. Keep the existing Markdown headings, tables, and the single `**Release Candidate N (RCN)**` line. That line may identify the current or next RC; the importer manages the final next number. It refuses older versions, number jumps, duplicate markers, and inconsistent numbers.
+Start from the active `source/Heraldry_RC###.md`. Save your edited copy outside `source/`, such as `C:/Heraldry/art-scratch/updated-manuscript.md`. Keep the existing Markdown headings, tables, and the single `**Release Candidate N (RCN)**` line. That line may identify the current or next RC; the importer manages the final next number. It refuses older versions, unrequested number jumps, duplicate markers, and inconsistent numbers. For an owner-authorised jump, pass `--target-rc N` to `prepare`; the target must exceed the current number and is bound into the review and archived import evidence. Skipped numbers create no snapshots. Ordinary imports and exact-patch batches still use the next number.
 
 Use UTF-8 `.md` or `.markdown`. Export Word or other editor formats to Markdown first and inspect the export. Word/PDF conversion and rules rewriting are outside this import command. A UTF-8 BOM and Windows line endings are accepted: the review records BOM removal and conversion to LF. Every other character, including the final newline, is preserved exactly apart from the managed RC marker. A marker-only or unchanged submission creates no revision.
 
@@ -45,7 +45,7 @@ The CLI requires main equal to freshly fetched origin/main and a clean working t
 
 The command calls `tools/revise_manuscript.py` and writes these four files as one checked transaction:
 
-- `source/Heraldry_RC<N>.md`: the next immutable snapshot, equal to the reviewed candidate hash.
+- `source/Heraldry_RC<N>.md`: the reviewed immutable snapshot, equal to the reviewed candidate hash.
 - `editorial/history/RC<N>.json`: exact approved patches, input/candidate hashes, and normalisation record.
 - `source/versions.json`: the appended revision, parent hash, reason, and authorization.
 - `config/production.json`: the active source and publication version.
