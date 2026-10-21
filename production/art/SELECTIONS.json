@@ -10012,5 +10012,38 @@
    "max_print_w_in_300ppi": 3.29
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-STARCINDER": {
+  "family": "hero",
+  "title": "Starcinder",
+  "heading_id": "h-starcinder",
+  "route": "gpt",
+  "spec_sha256": "a5d55bd917a508301ef0a9e821fcfd5e48808dcef4e6bd2cc81cb863b74d1203",
+  "prompt_sha256": "211f3f29b31ed02af2812f8e4835b40018c3fd234870ae19f0b3facfa599f6d6",
+  "status": "received",
+  "received_at": "2026-10-21T20:39:49+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker warned narrow margin (3.0% of outer 6% band); visual review confirms full figure and staff are uncut. Preserve warning.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-STARCINDER.png",
+   "sha256": "67232b84fd1a43bc0324f0a921d2861595599f293da8d8327e375732de9f0a35",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-STARCINDER.png",
+   "sha256": "b2b4f79ffe5d8ef36a494ced021ab326242debe0f105e3be96371304fb205c38",
+   "px": [
+    782,
+    1492
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.607
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
