@@ -9616,5 +9616,38 @@
    "max_print_w_in_300ppi": 3.333
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-GALLOWTUSK": {
+  "family": "hero",
+  "title": "Gallowtusk",
+  "heading_id": "h-gallowtusk",
+  "route": "gpt",
+  "spec_sha256": "f309aa49be393b26919c7ebaceb7eba83753358ac2e2cddd0824651005fc2c1a",
+  "prompt_sha256": "42129eb4c3b0683a79d193b465e81eb6dff8bc3dab1e94be4b5b7248737724dd",
+  "status": "received",
+  "received_at": "2026-10-21T15:32:25+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged possible grey wash or soft shading (13% midtones); visual review finds old-school black ink hatching. Record for reviewer.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-GALLOWTUSK.png",
+   "sha256": "acac74f04b45074cc574c773bf4c9157a12797c4f1ee0ae2ba3d2def05a13bd7",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-GALLOWTUSK.png",
+   "sha256": "96d88b0c47f29411061da31eb9316041f9a03da6efcc9e09999abadb5c7a9c24",
+   "px": [
+    1003,
+    1487
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.343
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
