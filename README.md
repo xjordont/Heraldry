@@ -9,7 +9,7 @@ The publication repository for the Heraldry Skirmish rulebook. It holds the manu
 - **Manuscript:** [RC512](source/Heraldry_RC512.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC512 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 275 approved of 297; 24 generation-queue items.
+- **Illustration records:** 275 approved of 298; 24 generation-queue items.
 - **Rules figures:** 57; 57/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`36ec24f9`](https://github.com/xjordont/Heraldry/commit/36ec24f9f79d366bb848ef0f00762004ef2a79df) art: intake of ChatGPT Work images
+- [`a4dbd594`](https://github.com/xjordont/Heraldry/commit/a4dbd594483c8e3f6535bd88539ea2907c2bb33d) art(gpt): ART-HER-THORNMERE .. ART-HER-THORNMERE
 - [`4fa10b5f`](https://github.com/xjordont/Heraldry/commit/4fa10b5f67c486ecf0fbea611569b2b960e9f359) art: intake of ChatGPT Work images
 - [`eb063cf2`](https://github.com/xjordont/Heraldry/commit/eb063cf270119c60217d17fe3bfbbd23251813e0) art(gpt): ART-HER-STORMCROOK .. ART-HER-STORMCROOK
 - [`8a33c9f4`](https://github.com/xjordont/Heraldry/commit/8a33c9f406a42eb56ac984ea101b10894ebbb69b) art: intake of ChatGPT Work images
 - [`bb567033`](https://github.com/xjordont/Heraldry/commit/bb56703301ee51bdcd9841169263c7eae04e3f87) art(gpt): ART-HER-STARCINDER .. ART-HER-STARCINDER
-- [`0b447c2a`](https://github.com/xjordont/Heraldry/commit/0b447c2a9bf2eb2304011b5aca3802cdce182556) Merge branch 'main' of https://github.com/xjordont/Heraldry
-- [`7f968712`](https://github.com/xjordont/Heraldry/commit/7f968712f75a9851aca0eb7b18dca08683c8673f) docs: record the Typst and Canva player-aid route trial
 
 <!-- END AUTO:recent -->
 
