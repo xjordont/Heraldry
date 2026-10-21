@@ -1,5 +1,9 @@
 # Production state - RC512 source, main
 
+## Automatic higher-numbered manuscript intake - 2026-10-21
+
+Owner authorised accepting any higher numbered uploaded iteration as the newest manuscript version. The reviewed importer now selects that uploaded RC automatically, without a target flag or a separate version-jump decision. The uploaded manuscript keeps its own RC number exactly. Changed current-number or older inputs are refused rather than renumbered or overwritten; an optional target assertion must equal the uploaded number. Exact-content approval, hash-bound import evidence, immutable history, anchor checks, and transactional promotion remain in force. Focused regression coverage includes automatic jumps, exact input preservation, unchanged-number refusal and exact subsequent upload numbering, and downgrade refusal. RC512 manuscript bytes remain unchanged; no new manuscript or PDF build is part of this tooling update. Verification: `python tools/dev.py check` PASS; 326 tests, 3 expected skips; dependencies, baseline, immutable history, and whitespace PASS.
+
 ## Owner-supplied RC512 manuscript - 2026-10-21
 
 Owner instruction: "Update the repo to have RC512 be the new working manuscript after updating the import workflow to support version jumps." The reviewed import promotes RC493 directly to RC512, retaining every earlier snapshot and exact patch archive; no RC494-RC511 snapshots are invented. `source/versions.json` and `config/production.json` identify `source/Heraldry_RC512.md`. Its SHA-256 is `816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd`, byte-identical to the supplied upload, with no normalisations. The manuscript includes 24 Basic Mode Hero profiles.
