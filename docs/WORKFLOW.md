@@ -1,5 +1,7 @@
 # Iteration workflow
 
+For layout changes, follow [LAYOUT_WORKFLOW.md](LAYOUT_WORKFLOW.md). It captures the compact-layout run's lessons: semantic table selectors, verified measurement reuse, content-bound balancing hints, staged fail-fast checks, and durable timing/evidence receipts.
+
 `main` is the single working and delivery branch. The owner has authorized ordinary verified iterations on main. Create another branch only following an explicit owner decision with a recorded purpose; one project does not require a branch per component. The existing Claude build branch is an archived checkpoint, not a destination for new work.
 
 Before editing, inspect `git status`, the current branch, and the remote main head. Bring an untouched checkout up to date with `git fetch origin` and `git switch main`, then `git pull --ff-only`. Preserve unrelated local work and inspect divergence rather than force-pushing or resetting it. Claude cloud may impose its own branch restrictions; report an actual restriction if encountered. Do not invent an exception to this policy or change account settings.

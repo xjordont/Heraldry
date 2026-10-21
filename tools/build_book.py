@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from tables import classify, cell_plain, COL_W, FULL_W  # noqa: E402
 from layout_profile import (MARGIN_TOP_PT, MARGIN_BOTTOM_PT, PAGE_HEIGHT_PT, PAGE_WIDTH_PT,
     BODY_HEIGHT_PT, profile_dict)
+from layout_balance_cache import load_hint, save_hint
 
 ROOT = Path(__file__).resolve().parents[1]
 ART_SEL = ROOT / "production/art/SELECTIONS.json"
@@ -47,7 +48,7 @@ def load_spot_art():
 
 
 FLOAT_FIGS = set(json.loads((ROOT / "config/design_tokens.json").read_text()).get("layout", {}).get("float_figures", []))
-TABLE_SCOPE_OVERRIDES = json.loads((ROOT / "config/design_tokens.json").read_text()).get('layout', {}).get('table_scope_overrides', {})
+TABLE_SCOPE_POLICIES = json.loads((ROOT / "config/design_tokens.json").read_text()).get('layout', {}).get('table_scope_policies', {})
 BUILD = ROOT / "build"
 MAP = ROOT / "production/mappings"
 
@@ -79,19 +80,69 @@ def table_content_sha256(table):
     return hashlib.sha256(json.dumps(values, ensure_ascii=False, separators=(',', ':')).encode('utf-8')).hexdigest()
 
 
+def semantic_heading(title):
+    """Ignore section numbering, preserving the confirmed heading words exactly."""
+    return re.sub(r'^(?:Appendix [A-Z]\.\s+|(?:\d+(?:\.\d+)*|[A-Z](?:\.\d+)+)\.?\s+)',
+                  '', ' '.join(title.split()))
+
+
+class TableScopePolicyError(ValueError):
+    def __init__(self, message, diagnostics):
+        super().__init__(message)
+        self.diagnostics = diagnostics
+
+
+def resolve_table_scope_policies(tables, policies):
+    """Resolve reviewed width preferences by full heading path and header cells.
+
+    Cell hashes describe the reviewed specimen; they never supply cached heights.
+    A removed/renamed target is unused, while duplicate semantic targets fail.
+    """
+    resolved, diagnostics, errors = {}, [], []
+    for name, policy in policies.items():
+        selector = policy['selector']
+        path = [semantic_heading(t) for t in selector['heading_path']]
+        matches = [b for b, actual_path in tables
+                   if [semantic_heading(t) for t in actual_path] == path
+                   and [cell_plain(c) for c in b['header']] == selector['headers']]
+        record = {'policy': name, 'selector': selector,
+                  'reviewed_content_sha256': policy['reviewed_content_sha256']}
+        if not matches:
+            diagnostics.append(record | {'status': 'missing', 'table_id': None,
+                'message': 'No semantic target; width preference unused. Check removed or renamed headings/headers.'})
+            continue
+        if len(matches) != 1:
+            ids = [b['id'] for b in matches]
+            diagnostics.append(record | {'status': 'ambiguous', 'table_ids': ids})
+            errors.append(f'{name}: ambiguous semantic table selector matches {", ".join(ids)}')
+            continue
+        table = matches[0]
+        current_hash = table_content_sha256(table)
+        status = 'matched' if current_hash == policy['reviewed_content_sha256'] else 'content_changed'
+        record |= {'status': status, 'table_id': table['id'], 'content_sha256': current_hash,
+                   'measurement': 'Fresh allocation and normal rendered measurement required; no reviewed height reused.'}
+        diagnostics.append(record)
+        if table['id'] in resolved:
+            errors.append(f'{table["id"]}: multiple width policies resolve to the same table')
+        else:
+            resolved[table['id']] = policy | {'audit': record}
+    if errors:
+        raise TableScopePolicyError('; '.join(errors), diagnostics)
+    return resolved, diagnostics
+
+
 def apply_table_scope_override(table, classification, policy):
-    """Apply a measured width decision only to the exact reviewed cell contents."""
+    """Reallocate current cells at the reviewed preferred width; never reuse heights."""
     from tables import allocate, measure_table
     if policy.get('scope') != 'full' or classification.get('rep') != 'table':
         raise ValueError('Unsupported table scope override: ' + table['id'])
-    if policy.get('content_sha256') != table_content_sha256(table):
-        raise ValueError('Table content changed; review its width override: ' + table['id'])
     mins, maxs, _ = measure_table(table)
     widths, _ = allocate(mins, maxs, FULL_W)
     if widths is None:
         raise ValueError('Reviewed table no longer fits full width: ' + table['id'])
     return classification | {'scope':'full', 'widths':[round(x,2) for x in widths],
-                              'max_pt':[round(x,1) for x in maxs], 'scope_reason':policy['reason']}
+        'max_pt':[round(x,1) for x in maxs], 'scope_reason':policy['reason'],
+        'scope_policy': policy['audit']}
 
 
 class Emitter:
@@ -254,31 +305,32 @@ class Book:
         """Classify every table, then unify families (same header signature within the
         same H3 section) so that sibling tables share one representation and widths."""
         from tables import measure_table, allocate
-        tabs = []
-        def walk(bs, sec):
+        tabs, contexts = [], []
+        def walk(bs, sec, path):
+            path = list(path)
             for b in bs:
                 if b["type"] == "heading" and b["level"] <= 3:
                     sec = b["id"]
                 if b["type"] == "heading":
-                    self._current_table_title = b["title"]
+                    path = [(level, title) for level, title in path if level < b['level']]
+                    path.append((b['level'], b['title']))
                 if b["type"] == "table":
                     tabs.append((b, sec))
-                    self.table_titles[b["id"]] = getattr(self, '_current_table_title', b["id"])
+                    contexts.append((b, [title for _, title in path]))
+                    self.table_titles[b["id"]] = path[-1][1] if path else b['id']
                 for it in b.get("items", []):
-                    walk(it["blocks"], sec)
-                walk(b.get("blocks", []), sec)
+                    walk(it["blocks"], sec, path)
+                walk(b.get("blocks", []), sec, path)
             return sec
         sec = None
         for ch in self.model["chapters"]:
-            sec = walk(ch["blocks"], sec)
+            sec = walk(ch["blocks"], sec, [])
         res, fam = {}, {}
-        unknown_overrides = set(TABLE_SCOPE_OVERRIDES) - {b['id'] for b, _ in tabs}
-        if unknown_overrides:
-            raise ValueError('Unknown reviewed table width IDs: ' + ', '.join(sorted(unknown_overrides)))
+        policies, self.table_scope_diagnostics = resolve_table_scope_policies(contexts, TABLE_SCOPE_POLICIES)
         for b, sec in tabs:
             c = classify(b, None)
-            if b['id'] in TABLE_SCOPE_OVERRIDES:
-                c = apply_table_scope_override(b, c, TABLE_SCOPE_OVERRIDES[b['id']])
+            if b['id'] in policies:
+                c = apply_table_scope_override(b, c, policies[b['id']])
             res[b["id"]] = c
             fam.setdefault((sec, tuple(c["header"])), []).append(b)
         self.families = {}
@@ -400,6 +452,7 @@ class Book:
                    "rows": c["rows"], "header": c["header"]}
         if c.get('scope_reason'):
             mapping['scope_reason'] = c['scope_reason']
+            mapping['scope_policy'] = c['scope_policy']
         if rep == "stat" or (c["header"][:6] == ["HP", "AV", "SPD", "LVL", "CV", "Sz"]):
             short = all(len(cell_plain(v)) <= 12 for v in b["rows"][0]) if b["rows"] else False
             if len(b["rows"]) == 1 and c["scope"] == "column" and rep == "stat" and short:
@@ -851,10 +904,10 @@ class Book:
             return
         sid = self.seg_count
         self.seg_count += 1
-        sig = f"{pieces[0][0]['id']}:{len(pieces)}"
+        sig = segment_signature(pieces)
         self.seg_sigs[str(sid)] = sig
         entry = self.balance.get(str(sid))
-        tail = entry[1] if entry and entry[0] == sig and len(pieces) - entry[1] <= 60 else None
+        tail = entry[1] if valid_balance_entry(entry, sig) and entry[1] < len(pieces) and len(pieces) - entry[1] <= 60 else None
         parts = []
         for j, (b, s) in enumerate(pieces):
             self.block_map.append((b["id"], b["src"], "column", sid))
@@ -893,9 +946,13 @@ def compile_book(variant="cream", out=None, query=True, edition="print"):
     out = out or BUILD / f"book-{variant}.pdf"
     qf = BUILD / "query.json"
     args = [sys.executable, str(ROOT / "tools/typst_run.py"), str(out), variant, edition] + ([str(qf)] if query else [])
+    compile_book.last_warnings = []
     r = subprocess.run(args, capture_output=True, text=True)
     if r.returncode:
         raise SystemExit(r.stderr[-3000:])
+    compile_book.last_warnings = r.stderr.strip().splitlines()
+    if compile_book.last_warnings:
+        print(r.stderr.rstrip(), file=sys.stderr)
     dt = float(r.stdout.strip().splitlines()[-1])
     if query:
         q = json.loads(qf.read_text())
@@ -926,7 +983,7 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None):
         end = [m for m in ms if m["edge"] == "e"][0]
         L = end["page"]
         pt = prev.get(str(sid))
-        pt = pt[1] if pt and pt[0] == sigs.get(str(sid)) else None
+        pt = pt[1] if valid_balance_entry(pt, sigs.get(str(sid))) else None
         byp = {m["piece"]: m for m in starts}
         on_last = [m for m in starts if m["page"] == L]
         tiny_tail = (end.get('x', 0) < PAGE_WIDTH_PT / 2 and end['y'] < TOP_Y + 90 and len(on_last) <= 5)
@@ -980,6 +1037,48 @@ def stabilize_balance(proposed, previous, flips, excluded):
     return result
 
 
+def segment_signature(pieces):
+    """Bind balance hints to rendered text/structure and the full layout profile."""
+    value = {'pieces': [[b['id'], rendered] for b, rendered in pieces], 'profile': profile_dict()}
+    data = json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode('utf-8')
+    return 'v2:' + hashlib.sha256(data).hexdigest()
+
+
+def valid_balance_entry(entry, signature=None):
+    return (isinstance(entry, (list, tuple)) and len(entry) == 2
+            and isinstance(entry[0], str) and re.fullmatch(r'v2:[0-9a-f]{64}', entry[0]) is not None
+            and (signature is None or entry[0] == signature)
+            and type(entry[1]) is int and entry[1] >= 0)
+
+
+def filtered_balance_plan(balance, signatures=None):
+    if not isinstance(balance, dict):
+        return {}
+    return {key: list(value) for key, value in balance.items()
+            if isinstance(key, str) and re.fullmatch(r'0|[1-9][0-9]*', key) is not None
+            and valid_balance_entry(value)
+            and (signatures is None or value[0] == signatures.get(key))}
+
+
+def save_converged_balance(path, balance, signatures, converged):
+    """Cache only the actually emitted plan and its current segment signatures."""
+    if not converged:
+        return False
+    current = filtered_balance_plan(balance, signatures)
+    path.write_text(json.dumps(current), encoding='utf-8', newline='\n')
+    return True
+
+
+def report_table_scope_policies(diagnostics):
+    (MAP / 'table_scope_policies.json').write_text(
+        json.dumps({'policies': diagnostics}, ensure_ascii=False, indent=2) + '\n',
+        encoding='utf-8', newline='\n')
+    for record in diagnostics:
+        if record['status'] != 'matched':
+            print(f"WARNING table width policy {record['policy']}: {record['status']}"
+                  + (f" ({record['table_id']})" if record.get('table_id') else ''))
+
+
 def main():
     import time
     started = time.perf_counter()
@@ -991,6 +1090,8 @@ def main():
     ap.add_argument("--variant", default="cream")
     ap.add_argument("--passes", type=int, default=5)
     ap.add_argument("--no-balance", action="store_true")
+    ap.add_argument("--no-measurement-cache", action="store_true",
+                    help="bypass measurement reuse and persisted balance hints")
     ap.add_argument("--variants-only", action="store_true", help="compile white + digital from the current content.typ")
     ap.add_argument("--allow-nonconverged", action="store_true", help="diagnostic output only; final publication requires convergence")
     a = ap.parse_args()
@@ -1002,33 +1103,66 @@ def main():
     model = json.loads((BUILD / "blocks.json").read_text())
     balance = {}
     bal_file = BUILD / "balance.json"
-    if bal_file.exists() and not a.no_balance:
-        balance = json.loads(bal_file.read_text())
+    local_balance_exists = bal_file.exists()
+    balance_cache_diagnostics = []
+    if local_balance_exists and not a.no_balance:
+        try:
+            candidate = json.loads(bal_file.read_text())
+            balance = filtered_balance_plan(candidate)
+            balance_cache_diagnostics.append({'status': 'local', 'segments': len(balance),
+                'discarded': len(candidate) - len(balance) if isinstance(candidate, dict) else 1})
+        except (OSError, ValueError) as error:
+            balance_cache_diagnostics.append({'status': 'invalid-local', 'reason': str(error)})
+            print('WARNING ignoring unreadable balance plan: ' + str(error), file=sys.stderr)
     # measurement pass: classify keep units from their real rendered heights
     import subprocess
-    probe = Book(model, balance)
+    try:
+        probe = Book(model, balance)
+    except TableScopePolicyError as error:
+        report_table_scope_policies(error.diagnostics)
+        raise
+    report_table_scope_policies(probe.table_scope_diagnostics)
     probe.emit()
     (ROOT / "typst/measure.typ").write_text(
         '#import "heraldry.typ": *\n#show: book\n' + "".join(probe.measure_requests)
         + '\n#context { pdf.attach("/heraldry-unit-measurements.json", '
         'bytes(json.encode(query(<um>).map(m => m.value))), '
         'mime-type: "application/json", relationship: "supplement") }\n', encoding="utf-8", newline="\n")
-    r = subprocess.run([sys.executable, str(ROOT / "tools/measure_units.py")], capture_output=True, text=True)
+    measure_args = [sys.executable, str(ROOT / "tools/measure_units.py")]
+    if a.no_measurement_cache:
+        measure_args.append('--no-cache')
+    r = subprocess.run(measure_args, capture_output=True, text=True)
     if r.returncode:
         raise SystemExit(r.stderr[-3000:])
     print(r.stdout.strip())
+    binding_file = BUILD / 'unit_measure.binding.json'
+    try:
+        measurement_binding = json.loads(binding_file.read_text())
+    except (OSError, ValueError):
+        measurement_binding = {}
+    if a.no_measurement_cache or a.no_balance:
+        balance_cache_diagnostics.append({'status': 'disabled', 'reason': 'cache bypass or balancing disabled'})
+    elif not local_balance_exists:
+        balance = load_hint(ROOT, measurement_binding, diagnostics=balance_cache_diagnostics)
+    else:
+        balance_cache_diagnostics.append({'status': 'skipped-load', 'reason': 'local balance file present'})
     flips, pass_log, excluded = {}, [], set()
     converged = False
+    compile_warnings = []
     for p in range(a.passes):
         book = Book(model, balance)
         (ROOT / "typst/content.typ").write_text(book.emit(), encoding="utf-8", newline="\n")
         out, dt, (pm, hpos) = compile_book(a.variant)
+        warnings = getattr(compile_book, 'last_warnings', [])
+        warnings = list(warnings) if isinstance(warnings, (list, tuple)) else []
+        compile_warnings.extend(warnings)
         new = compute_balance(pm, balance, book.seg_sigs, book.piece_heads, hpos) if not a.no_balance else {}
         raw_changes = sum(1 for k in set(new) | set(balance) if new.get(k) != balance.get(k))
         new = stabilize_balance(new, balance, flips, excluded)
         changes = sum(1 for k in set(new) | set(balance) if new.get(k) != balance.get(k))
         pass_log.append({'pass': p + 1, 'compile_seconds': dt, 'segments': book.seg_count,
                          'balanced': len(new), 'changes': changes, 'raw_changes': raw_changes,
+                         'warnings': warnings,
                          'natural_flow_segments': sorted(excluded)})
         print(f"pass {p+1}: {dt:.1f}s, segments={book.seg_count}, balanced={len(new)}, changed={sum(1 for k in set(new)|set(balance) if new.get(k)!=balance.get(k))}")
         if new == balance or a.no_balance:
@@ -1043,6 +1177,11 @@ def main():
             break
         balance = new
         bal_file.write_text(json.dumps(balance))
+    save_converged_balance(bal_file, balance, book.seg_sigs, converged)
+    final_balance = filtered_balance_plan(balance, book.seg_sigs)
+    if not a.no_measurement_cache and not a.no_balance:
+        balance_cache_diagnostics.append(save_hint(ROOT, measurement_binding, final_balance,
+            converged=converged, warnings=compile_warnings))
     MAP.mkdir(parents=True, exist_ok=True)
     (MAP / "tables.json").write_text(json.dumps(book.table_map, ensure_ascii=False, indent=0), encoding="utf-8", newline="\n")
     (MAP / "blocks.json").write_text(json.dumps(book.block_map, ensure_ascii=False), encoding="utf-8", newline="\n")
@@ -1054,6 +1193,8 @@ def main():
         "content_sha256": hashlib.sha256((ROOT / "typst/content.typ").read_bytes()).hexdigest()}))
     (BUILD / 'layout-build.json').write_text(json.dumps({'profile': profile_dict(), 'passes': pass_log,
         'converged': converged, 'natural_flow_segments': sorted(excluded),
+        'balance_cache': balance_cache_diagnostics, 'warnings': compile_warnings,
+        'table_scope_policies': book.table_scope_diagnostics,
         'seconds': round(time.perf_counter() - started, 3),
         'source_sha256': model['sha256'], 'content_sha256': hashlib.sha256((ROOT / 'typst/content.typ').read_bytes()).hexdigest()}, indent=2))
     if not converged and not a.allow_nonconverged:

@@ -94,60 +94,200 @@
       "FIG-20"
     ],
     "float_figures_note": "Full-width figures taller than the space left on the page float to the next page top (no half-page void).",
-    "table_scope_overrides": {
-      "T055": {
+    "table_scope_policies": {
+      "potions-tier-1": {
+        "selector": {
+          "heading_path": [
+            "Equipment and Items",
+            "Potions",
+            "Tier 1 Potions"
+          ],
+          "headers": [
+            "d20",
+            "Item",
+            "Cost (c)",
+            "Effect"
+          ]
+        },
         "scope": "full",
-        "content_sha256": "1161a8b4b084f22883426b5903ea3b976a31b2f05af0804f468c25b8f1fc805a",
+        "reviewed_content_sha256": "1161a8b4b084f22883426b5903ea3b976a31b2f05af0804f468c25b8f1fc805a",
         "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
       },
-      "T056": {
+      "potions-tier-2": {
+        "selector": {
+          "heading_path": [
+            "Equipment and Items",
+            "Potions",
+            "Tier 2 Potions"
+          ],
+          "headers": [
+            "d20",
+            "Item",
+            "Cost (c)",
+            "Effect"
+          ]
+        },
         "scope": "full",
-        "content_sha256": "27bd69652e090363dcc9d9902b2676d5df21afb81932e4a54130804daf8a1aa8",
+        "reviewed_content_sha256": "27bd69652e090363dcc9d9902b2676d5df21afb81932e4a54130804daf8a1aa8",
         "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
       },
-      "T057": {
+      "potions-tier-3": {
+        "selector": {
+          "heading_path": [
+            "Equipment and Items",
+            "Potions",
+            "Tier 3 Potions"
+          ],
+          "headers": [
+            "d20",
+            "Item",
+            "Cost (c)",
+            "Effect"
+          ]
+        },
         "scope": "full",
-        "content_sha256": "639901a7fa1909870b386292dc2ee7e875e4e19de149b5bf49d899f2a2128334",
+        "reviewed_content_sha256": "639901a7fa1909870b386292dc2ee7e875e4e19de149b5bf49d899f2a2128334",
         "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
       },
-      "T058": {
+      "potions-tier-4": {
+        "selector": {
+          "heading_path": [
+            "Equipment and Items",
+            "Potions",
+            "Tier 4 Potions"
+          ],
+          "headers": [
+            "d20",
+            "Item",
+            "Cost (c)",
+            "Effect"
+          ]
+        },
         "scope": "full",
-        "content_sha256": "bac57fb61703d1dbb13795bc9f689e5cccb5d07cb15f9ba7ef51cd63e4a59cff",
+        "reviewed_content_sha256": "bac57fb61703d1dbb13795bc9f689e5cccb5d07cb15f9ba7ef51cd63e4a59cff",
         "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
       },
-      "T059": {
+      "potions-tier-5": {
+        "selector": {
+          "heading_path": [
+            "Equipment and Items",
+            "Potions",
+            "Tier 5 Potions"
+          ],
+          "headers": [
+            "d20",
+            "Item",
+            "Cost (c)",
+            "Effect"
+          ]
+        },
         "scope": "full",
-        "content_sha256": "00865077eee3efe31ee52475a84c32af6680866c13fb2945e260b0e8e68c5757",
+        "reviewed_content_sha256": "00865077eee3efe31ee52475a84c32af6680866c13fb2945e260b0e8e68c5757",
         "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
       },
-      "T060": {
+      "poisons-tier-1": {
+        "selector": {
+          "heading_path": [
+            "Equipment and Items",
+            "Poisons",
+            "Tier 1 Poisons"
+          ],
+          "headers": [
+            "d20",
+            "Item",
+            "Cost (c)",
+            "Effect"
+          ]
+        },
         "scope": "full",
-        "content_sha256": "498816830fd9489631fb4d191aa28d1dc4eabf73735d4517dec671c290c3825e",
+        "reviewed_content_sha256": "498816830fd9489631fb4d191aa28d1dc4eabf73735d4517dec671c290c3825e",
         "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
       },
-      "T061": {
+      "poisons-tier-2": {
+        "selector": {
+          "heading_path": [
+            "Equipment and Items",
+            "Poisons",
+            "Tier 2 Poisons"
+          ],
+          "headers": [
+            "d20",
+            "Item",
+            "Cost (c)",
+            "Effect"
+          ]
+        },
         "scope": "full",
-        "content_sha256": "0e7dbef21e38da0c34833047a8874bfb3906b1238c6d3ea4172126355f9f317d",
+        "reviewed_content_sha256": "0e7dbef21e38da0c34833047a8874bfb3906b1238c6d3ea4172126355f9f317d",
         "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
       },
-      "T062": {
+      "poisons-tier-3": {
+        "selector": {
+          "heading_path": [
+            "Equipment and Items",
+            "Poisons",
+            "Tier 3 Poisons"
+          ],
+          "headers": [
+            "d20",
+            "Item",
+            "Cost (c)",
+            "Effect"
+          ]
+        },
         "scope": "full",
-        "content_sha256": "15b3ef6a3d7b8613144022f65c472c75e7073859bbefdd995c78233ce7b105c3",
+        "reviewed_content_sha256": "15b3ef6a3d7b8613144022f65c472c75e7073859bbefdd995c78233ce7b105c3",
         "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
       },
-      "T063": {
+      "poisons-tier-4": {
+        "selector": {
+          "heading_path": [
+            "Equipment and Items",
+            "Poisons",
+            "Tier 4 Poisons"
+          ],
+          "headers": [
+            "d20",
+            "Item",
+            "Cost (c)",
+            "Effect"
+          ]
+        },
         "scope": "full",
-        "content_sha256": "d474cf9a9978c75adc9440e7b63781cd5a0a31ad7961c8b214fc70f202807e5c",
+        "reviewed_content_sha256": "d474cf9a9978c75adc9440e7b63781cd5a0a31ad7961c8b214fc70f202807e5c",
         "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
       },
-      "T064": {
+      "poisons-tier-5": {
+        "selector": {
+          "heading_path": [
+            "Equipment and Items",
+            "Poisons",
+            "Tier 5 Poisons"
+          ],
+          "headers": [
+            "d20",
+            "Item",
+            "Cost (c)",
+            "Effect"
+          ]
+        },
         "scope": "full",
-        "content_sha256": "478636906a00faa94a648074605ea6a58edacf7146de4ba178c5dcf9ddc9435a",
+        "reviewed_content_sha256": "478636906a00faa94a648074605ea6a58edacf7146de4ba178c5dcf9ddc9435a",
         "reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents."
       },
-      "T332": {
+      "equipment-quick-reference": {
+        "selector": {
+          "heading_path": [
+            "Rules Reference",
+            "Equipment Quick Reference"
+          ],
+          "headers": [
+            "Procedure",
+            "Rule"
+          ]
+        },
         "scope": "full",
-        "content_sha256": "e5c4b5339f002fc63b6bfd1779740536e5b6d8fd2e1d872ba460f5757b34eed4",
+        "reviewed_content_sha256": "e5c4b5339f002fc63b6bfd1779740536e5b6d8fd2e1d872ba460f5757b34eed4",
         "reason": "Actual-source 9 pt width trial, 2026-10-20: complete C.14 heading, intro, table and notes fit in 488.595 pt at full width. Preserve every cell and source paragraph."
       }
     }

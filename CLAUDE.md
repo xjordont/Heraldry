@@ -1,5 +1,7 @@
 # Heraldry publication repository
 
+Layout iteration follows [docs/LAYOUT_WORKFLOW.md](docs/LAYOUT_WORKFLOW.md). Use its plan/check entry points before an explicitly requested full local proof; preserve exact-input cache validation and all publication gates.
+
 README maintenance: ordinary `python tools/dev.py check` refreshes its generated status/recent-change blocks. Include the refresh in checked commits. GitHub also refreshes after main pushes and completed repository workflows, with publication deferral. Preserve hand-written guidance outside the marked blocks. See [docs/README_AUTOMATION.md](docs/README_AUTOMATION.md).
 
 Read [docs/CANON_AUTHORITY.md](docs/CANON_AUTHORITY.md) before rules or editorial work. It records the owner's 2026-10-15 approval of five current-source conventions and supersedes conflicting older imported briefs for those points. Resolve the current manuscript through `source/versions.json`; do not treat a historical review's RC number as the active version.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Cover data (verbatim manuscript text), cover sheets, calibration sheet."""
-import json, sys
+import argparse, json, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -72,9 +72,13 @@ def compile_doc(src, out, variant):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--instructions-output', type=Path, default=ROOT / 'dist/PRINT_INSTRUCTIONS.md',
+                        help='local proofs can keep instructions outside the last-delivery directory')
+    args = parser.parse_args()
     instructions = (ROOT / "docs/PRINT_INSTRUCTIONS_TEMPLATE.md").read_text().replace("{{VERSION}}", version())
-    (ROOT / "dist").mkdir(exist_ok=True)
-    (ROOT / "dist/PRINT_INSTRUCTIONS.md").write_text(instructions, encoding="utf-8", newline="\n")
+    args.instructions_output.parent.mkdir(parents=True, exist_ok=True)
+    args.instructions_output.write_text(instructions, encoding="utf-8", newline="\n")
     d = cover_data()
     print(json.dumps({k: d[k] for k in ("title", "version")}))
     out = ROOT / "build"

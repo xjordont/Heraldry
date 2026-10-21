@@ -1,5 +1,7 @@
 # Unattended build and release chain (owner decisions 2026-10-14)
 
+Local layout iteration uses [LAYOUT_WORKFLOW.md](LAYOUT_WORKFLOW.md). Candidate and delivery jobs share the verified measurement cache; restoring it does not skip fresh composition or any publication gate. Local proofs do not dispatch this release chain.
+
 Codex orchestrates the whole build and release overnight, including the all-page visual review that gates it ("Hand it all over to codex";
 "I want Codex to have full rights to release like you do"). GitHub is the delivery channel. Codex uses
 the Git login it already has. The owner's 2026-10-15 primary-developer handoff and `docs/WORKFLOW.md`

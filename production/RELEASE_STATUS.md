@@ -1,5 +1,11 @@
 # Release status - RC493 source / RC492 delivery
 
+## Layout workflow reuse - 2026-10-20, no new release
+
+Verified measurement and balancing-hint caches, semantic table policies, and a staged local layout runner now retain the prior run's lessons. See [the workflow](../docs/LAYOUT_WORKFLOW.md). Only exact matching inputs can reuse measurements; updated manuscripts still require fresh measurement and review. Regression fixtures validate the tooling. No new full-book proof, candidate, release, or physical print is claimed; the compact proof below remains historical evidence for its exact inputs.
+
+Final repository verification: 321 tests, 3 expected skips, no failures; dependency, baseline, immutable-history, and whitespace checks PASS.
+
 ## Compact layout implementation - 2026-10-20, local proof reviewed
 
 The approved compact implementation produces **603-page cream/white interiors** from unchanged RC493, compared with the same-source 673-page baseline: **70 pages saved (10.40%)**. Digital: 606 pages. Source/cell reconciliation, exhaustive fit keeps, physical page evidence, zero-flag layout detectors, figure currency, and both inkjet file profiles pass. Supplementary cream/white geometry and content comparison PASS. All-page contact review, every manifest detail, covers, calibration, and targeted renders found no confirmed major defect at the reviewed resolution. Residual cosmetic whitespace and source C.13's multi-page "Single-Sheet" title are qualified in [the implementation report](../reports/Compact%20layout%20implementation.md).
