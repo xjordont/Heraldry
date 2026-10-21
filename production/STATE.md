@@ -1,5 +1,15 @@
 # Production state - RC493 source, main
 
+## Approved compact layout implementation - 2026-10-20, local proof reviewed
+
+Owner authorization: all researched layout proposals accepted, with 10.5 pt body, 9 pt tables, narrower margins, and more assertive improvement; resumed by "Continue". RC493 is unchanged at SHA-256 `c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd`. The same-source old-layout baseline is 673 pages; the final local interiors are **603 pages**, saving **70 pages (10.40%)**. Digital: 606 pages. See [implementation and evidence](../reports/Compact%20layout%20implementation.md).
+
+The shared compact profile controls composition, table allocation, measurement, and QA. Full-width opening flavour, two-column rules, tighter component spacing, measured table widening, substantive heading keeps, safe native list splits, real continuation identity, and Index clearance are implemented. Exact-PDF attachments replace separately recompiled position/height queries. Source keep coverage is independently enumerated and physical destinations corroborate the final attachment.
+
+Final cream SHA-256 `bda0a463dd2c4082cfe795fc985f953dfdc7dbc80c8699c6d5a45793e79da927`. Local checks: all 8,430 source blocks and 10,315 cells reconcile in cream/digital; 2,736/2,736 keeps audited, 2,492 fit-capable, zero avoidable splits/missing coverage; 832 physical destinations agree; zero layout detector flags; cream/white inkjet checks PASS; supplementary cream/white geometry and content comparison PASS. All 57 manifest review images were actually inspected with no confirmed major finding; twelve extra integration detail renders were inspected. Residual cosmetic whitespace is documented, not claimed eliminated. Physical print and glyph-by-glyph proofreading are not certified.
+
+`python tools/dev.py check`: 281 tests run, 3 expected skips, no failures; dependencies, baseline preflight, immutable history, and whitespace PASS. Evidence is preserved under ignored `build/checks/layout-v5/`; the original recovery stash and `resume-preserved-20261020/` remain retained. Local proof is not a published candidate or a production visual-ledger approval. No new RC, art approval, or release ledger was created. Last delivered release remains RC492-build-37; physical print **NOT TESTED**.
+
 
 ## Publishing integrity corrections - 2026-10-17
 

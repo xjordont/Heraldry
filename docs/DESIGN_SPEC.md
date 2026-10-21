@@ -1,5 +1,7 @@
 # Heraldry publication design specification
 
+> **2026-10-16 compact approval, implemented from 2026-10-20:** 10.5 pt body, 9 pt tables, narrower margins, and the approved refinement report supersede earlier size/geometry proposals. The effective profile is `config/design_tokens.json`, shared by Typst and `tools/layout_profile.py`. Complete-unit keeps and source fidelity remain mandatory. Physical proof is NOT TESTED.
+
 > **2026-10-12:** `docs/BOOK_DESIGN_PLAN.md` (design system v2, "Ink and Iron") supersedes this document's visual identity: display face, heading, furniture and component styling, and the page-type templates. Grid, print, source-fidelity and pagination rules here and in DESIGN_REFINEMENT.md remain in force.
 
 Status: implementation brief, distilled from the ten owner-selected visual references. `docs/DESIGN_REFINEMENT.md` supplies the latest owner-requested iteration and overrides the earlier specimen freeze. These specifications guide the first stress specimen. Tune optical details once after rendering, then apply the resulting system consistently. MASTER_PROMPT.md governs source preservation and completion. The manuscript governs all mechanics and terminology.
@@ -14,24 +16,24 @@ Default substrate: flat `#FCFAF5` warm cream from edge to edge, with a paper-whi
 
 ## 2. Page grid
 
-Every primary page is 8.5 × 11 inches (612 × 792 pt), portrait, single pages with facing-page furniture. No landscape fallback or imposed spreads. Start inside margin 0.875 inch, outside 0.625 inch, top 0.65 inch, bottom 0.7 inch; reassess gutter against final binding/page count. This creates a 7-inch horizontal text frame before any adjustments.
+Every primary page is 8.5 × 11 inches (612 × 792 pt), portrait, single pages with facing-page furniture. No landscape fallback or imposed spreads. Use inside 45 pt, outside 42 pt, top 45 pt, and bottom 45 pt. The 525 × 702 pt frame retains a binding allowance and measured safe navigation. Reassess binding against the physical proof; a smaller file is not evidence of binding comfort.
 
-Two columns, 0.25-inch gap, for normal short rules and reference entries. At the starting margins, each column is 3.375 inches. Permit one continuous full-width region for wide tables/diagrams; avoid repeated full-width islands separated by tiny two-column fragments. Use single-column pages for procedures/scenarios when it improves the reading path.
+Two columns with a 16.2 pt (0.225-inch) gap for ordinary rules and reference entries; each column is 254.4 pt wide. Permit one continuous full-width region for wide tables/diagrams; avoid repeated full-width islands separated by tiny two-column fragments. Opening chapter/section flavour uses an inset single-column region; substantive scenario/procedure prose follows the same two-column grammar.
 
 Running heads identify chapter and major section, 9 pt. Folios sit at lower outer corners. All essential furniture stays at least 0.375 inch from every sheet edge, in addition to the binding exclusion zone. Borderless backgrounds do not remove text margins. Major chapter titles may occupy more space; normal running navigation stays quiet. Avoid a permanent navigation rail.
 
 ## 3. Type hierarchy
 
-Candidate roles: Source Serif 4, Source Sans 3, Cinzel. Verify font licensing, available weights, embedding, and glyph coverage. Bundle approved files and licences. At most three families; decorative blackletter is not an additional default family.
+Four intentional roles are Source Serif 4 rules, Source Sans 3 data/navigation, Grenze Gotisch display, and IM FELL English roman flavour. Verify licensing, available weights, embedding, and glyph coverage. Bundle approved files and licences.
 
 | Role | Starting specification | Behaviour |
 |---|---|---|
-| Body | Serif 10.5–11 pt / 13–14 pt leading | Ragged right initially; deliberate paragraph spacing |
-| Chapter title | Display 26–32 pt | Original ornament/art may accompany it; preserve canonical numbering |
-| Major section | Display or serif semibold 16–18 pt | Keep with meaningful following content |
-| Subsection | Serif semibold 12.5–14 pt | Clear vertical separation; no gratuitous box |
+| Body | Serif 10.5 pt / about 13.925 pt baseline pitch | Justified within limits; 4.5 pt paragraph spacing |
+| Chapter title | Display 50 pt | Original ornament/art may accompany it; preserve canonical numbering |
+| Major section | Display 21 pt | Keep with meaningful following content |
+| Subsection | Serif semibold 12.5 pt | Clear vertical separation; no gratuitous box |
 | Minor heading | Body-sized bold | Run-in only where source structure permits |
-| Table body | Sans 9.5–10 pt / about 12 pt | Minimum 9 pt essential text; real semibold headers |
+| Table body | Sans 9 pt / about 11.85 pt | Minimum 9 pt essential text; bold headers |
 | Example | Body family, 10–10.5 pt | Explicit title; subtle outline/left rule; clean substrate |
 | Diagram label/caption | Sans 9–10 pt | Legible at placed size; no downscaling below minimum |
 | Index | Sans or serif 9–9.5 pt | Hanging indent; two or three columns after legibility testing |
@@ -42,13 +44,13 @@ These are targets, not measurements copied from the books. Optical adjustment is
 
 Apply the explicit fresh-page and conditional-keep policy in DESIGN_REFINEMENT.md. Chapters, major numbered sections and named scenarios start on fresh pages, with the first section composed with its chapter opener. Nested headings keep meaningful opening content; all complete fit-capable sections, subsections, scenarios, tables and entries must stay on a single physical page and move whole when remaining space is insufficient, including their headings and necessary associated content. Keep definition, procedure, exceptions, and interpretive table notes together where practical. Keep headings with at least a meaningful paragraph or two complete list items. Prevent single-line widows/orphans without forcing large gaps. Keep ordinary table rows intact; handle over-height rows explicitly.
 
-Start with non-justified body text. If adopting justification, require Canadian English hyphenation and inspect spacing/rivers. Prevent breaks within short dice notation, bracketed costs, modifiers, and values with units, using layout semantics rather than changing canonical text.
+Use bounded justification, Canadian English hyphenation, and inspect spacing/rivers. Prevent breaks within short dice notation, bracketed costs, modifiers, and values with units, using layout semantics rather than changing canonical text.
 
 Examples attach to their subject rule; art attaches to a relevant entry or chapter transition. Do not use arbitrary art to hide a pagination defect. Do not wrap text tightly around irregular illustration contours in dense rules sections.
 
 ## 5. Table components
 
-Shared grammar: semibold headers, modest cell padding (start 4 pt horizontal and 3 pt vertical), useful column width, consistent alignment, light rules, optional grayscale bands on the chosen clean substrate. Start rules around 0.5–0.7 pt and verify at print size. Start bands around 6% black but treat shading as optional; labels/rules must work without it.
+Shared grammar: bold headers, modest cell padding (4 pt horizontal and 2.2 pt vertical), useful column width, consistent alignment, light rules, optional grayscale bands on the chosen clean substrate. Start rules around 0.5–0.7 pt and verify at print size. Start bands around 6% black but treat shading as optional; labels/rules must work without it.
 
 | Component | Layout |
 |---|---|

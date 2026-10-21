@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Print the exact PDF-bound QA locations; never independently lay out the book.
 
-The compile-time query is captured by tools/typst_run.py when it writes the cream
-print PDF. Re-querying the same source in a new compiler can produce locations
-that do not correspond to the serialized PDF.
+Positions are serialized inside the PDF export, then captured by typst_run.py.
+Calling Compiler.query also recompiles, even on the same compiler instance.
 """
 import hashlib
 import json
 
 from manuscript import ROOT, version
+from pdf_positions import validate_sidecar
 
 SELECTORS = ("<tblpos>", "<ixpos>", "<hpos>", "<um-pos>")
 
@@ -27,7 +27,10 @@ def compiled_positions(root=ROOT):
     positions = q.get("positions")
     if not isinstance(positions, dict) or any(not isinstance(positions.get(s), list) for s in SELECTORS):
         raise ValueError("Missing compile-bound position selectors; rebuild")
-    return {s: positions[s] for s in SELECTORS}
+    try:
+        return validate_sidecar(positions, pdf, root=root)
+    except Exception as exc:
+        raise ValueError("Missing or stale serialized PDF position evidence: " + str(exc)) from exc
 
 
 if __name__ == "__main__":

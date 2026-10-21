@@ -5,6 +5,7 @@ raster inventory with effective ppi, internal link and bookmark resolution."""
 import argparse, json
 from pathlib import Path
 import pymupdf
+from pypdf import PdfReader
 
 SUB = {"cream": (0xFC, 0xFA, 0xF5), "white": (0xFF, 0xFF, 0xFF)}
 
@@ -57,6 +58,23 @@ def _rect(rect):
     return tuple(round(float(v), 2) for v in rect)
 
 
+def _geometry(value):
+    """Preserve path/control-point/transform geometry, omitting colour only."""
+    if isinstance(value, (tuple, list, pymupdf.Rect, pymupdf.Point, pymupdf.Quad, pymupdf.Matrix)):
+        return tuple(_geometry(v) for v in value)
+    if isinstance(value, float):
+        return round(value, 3)
+    return value
+
+
+def _near(a, b, tolerance=0.02):
+    if isinstance(a, (float, int)) and isinstance(b, (float, int)):
+        return abs(a - b) <= tolerance
+    if isinstance(a, (tuple, list)) and isinstance(b, (tuple, list)):
+        return len(a) == len(b) and all(_near(x, y, tolerance) for x, y in zip(a, b))
+    return a == b
+
+
 def _link_signature(link):
     dest = link.get("to")
     if dest is None:
@@ -75,21 +93,24 @@ def compare_geometry(cream_page, white_page):
     Text words, raster placements, vector drawing geometry, and link targets
     must agree; colours are deliberately excluded because substrate changes.
     """
-    cw, ww = cream_page.get_text("words"), white_page.get_text("words")
-    text_ok = len(cw) == len(ww) and all(
-        a[4] == b[4] and _rect(a[:4]) == _rect(b[:4])
-        for a, b in zip(cw, ww)
-    )
-    ci = sorted(_rect(i["bbox"]) for i in cream_page.get_image_info(hashes=False, xrefs=False))
-    wi = sorted(_rect(i["bbox"]) for i in white_page.get_image_info(hashes=False, xrefs=False))
-    raster_ok = ci == wi
+    def glyphs(page):
+        return [(s["font"], s["size"], s.get("flags"), c["c"], tuple(c["origin"]), tuple(c["bbox"]))
+                for b in page.get_text("rawdict")["blocks"] for l in b.get("lines", [])
+                for s in l["spans"] for c in s["chars"]]
+    text_ok = _near(glyphs(cream_page), glyphs(white_page))
+    def images(page):
+        return sorted([(tuple(i["bbox"]), tuple(i["transform"]), i["width"], i["height"], i.get("digest"))
+                       for i in page.get_image_info(hashes=True, xrefs=False)], key=str)
+    raster_ok = _near(images(cream_page), images(white_page))
     def strokes(page):
-        return sorted((d["type"], _rect(d["rect"]), len(d["items"]))
-                      for d in page.get_drawings())
-    vector_ok = strokes(cream_page) == strokes(white_page)
+        return sorted([(d["type"], _geometry(d["rect"]), _geometry(d["items"]),
+                        d.get("width"), d.get("dashes"), _geometry(d.get("lineCap")),
+                        d.get("lineJoin"), d.get("closePath"), d.get("even_odd"))
+                       for d in page.get_drawings()], key=str)
+    vector_ok = _near(strokes(cream_page), strokes(white_page))
     cl = sorted((_link_signature(l) for l in cream_page.get_links()), key=str)
     wl = sorted((_link_signature(l) for l in white_page.get_links()), key=str)
-    links_ok = cl == wl
+    links_ok = _near(cl, wl)
     return {"text": text_ok, "raster": raster_ok, "vector": vector_ok, "links": links_ok}
 
 
@@ -123,7 +144,12 @@ def main():
         res["geometry_differences"] = {key: vals[:20] for key, vals in differences.items() if key != "page_text"}
         res["links"] = {"cream": links_check(c), "white": links_check(w)}
         res["rasters"] = rasters(c)
-        res["page_labels_sample"] = [c[i].get_label() for i in (0, len(c) // 2, len(c) - 1)]
+        # Parse /PageLabels with pypdf. Older PyMuPDF releases can misread the
+        # catalog entry and report spurious label differences.
+        labels = PdfReader(a.cream).page_labels
+        res["page_labels_sample"] = [labels[i] for i in (0, len(c) // 2, len(c) - 1)]
+        res["geometry_tolerance_pt"] = 0.02
+        res["geometry_method"] = "glyph/font/origin/bbox; raster bytes/transform; vector paths/strokes; links; colours excluded"
     ok = (not res["substrate_edges"]["cream"] and not res["substrate_edges"]["white"]
           and res["page_map_identical"] and res["geometry_identical"]
           and res["links"]["cream"]["unresolved_links"] == 0 and res["links"]["white"]["unresolved_links"] == 0

@@ -12,6 +12,7 @@ PY = sys.executable
 from manuscript import version
 from provenance import check as check_provenance
 from qa_contract import MANDATORY_CHECKS
+from pdf_positions import validate_sidecar
 QUERY_CACHE = None
 
 
@@ -31,7 +32,7 @@ def ensure_build_artifacts(*paths):
         raise FileNotFoundError("Build artifacts missing; generate the publication first: " + ", ".join(missing))
 
 
-def run(args, report=None):
+def run(args, report=None, report_validator=None):
     if report:
         Path(report).unlink(missing_ok=True)
     r = subprocess.run([PY] + args, cwd=ROOT, capture_output=True, text=True)
@@ -41,16 +42,34 @@ def run(args, report=None):
             status = "FAIL"
         else:
             payload = load_json(report)
-            if not isinstance(payload, dict) or payload.get("status") != "PASS":
+            valid = (report_validator(payload) if report_validator is not None else
+                     isinstance(payload, dict) and payload.get("status") == "PASS")
+            if not valid:
                 status = "FAIL"
     return status, (r.stdout + r.stderr)[-600:]
+
+
+def layout_report_clean(payload):
+    """A successful detector process needs a complete, fresh, flag-free report."""
+    return (isinstance(payload, dict)
+            and isinstance(payload.get("pdf"), str) and bool(payload["pdf"])
+            and type(payload.get("pages")) is int and payload["pages"] > 0
+            and isinstance(payload.get("counts"), dict) and payload["counts"] == {}
+            and isinstance(payload.get("flags"), list) and payload["flags"] == []
+            and isinstance(payload.get("flagged_pages"), list) and payload["flagged_pages"] == []
+            and payload.get("status", "PASS") == "PASS")
+
+
+def layout_check(pdf, report):
+    return run(["tools/layout_qa.py", str(pdf), "--report", str(report)], report,
+               report_validator=layout_report_clean)
 
 
 def tquery(sel):
     global QUERY_CACHE
     if QUERY_CACHE is None:
-        # Read the query captured by the compiler that serialized the cream PDF,
-        # not a fresh Typst instance whose independently laid-out pages may differ.
+        # Compiler.query recompiles too. Require the serialized PDF attachment,
+        # and compare its pages with the PDF's independent named destinations.
         q = load_json(ROOT / "build/query.json")
         pdf = DIST / f"Heraldry_{version()}_inkjet-borderless.pdf"
         source = ROOT / "typst/content.typ"
@@ -63,6 +82,10 @@ def tquery(sel):
         QUERY_CACHE = q.get("positions")
         if not isinstance(QUERY_CACHE, dict):
             raise RuntimeError("Compiler query has no position records; rebuild")
+        try:
+            QUERY_CACHE = validate_sidecar(QUERY_CACHE, pdf, root=ROOT)
+        except Exception as exc:
+            raise RuntimeError("Compiler query lacks exact serialized PDF evidence: " + str(exc)) from exc
     return QUERY_CACHE[sel]
 
 
@@ -99,9 +122,7 @@ def main():
     st["source_integrity"] = src_ok
     st["reconciliation"], _ = run(["tools/reconcile.py", str(cream), "--report", str(QA / "reconciliation.json")], QA / "reconciliation.json")
     st["reconciliation_digital"], _ = run(["tools/reconcile.py", str(digital), "--skip-covers", "--report", str(QA / "reconciliation-digital.json")], QA / "reconciliation-digital.json")
-    lay, _ = run(["tools/layout_qa.py", str(cream), "--report", str(QA / "layout.json")])
-    lj = load_json(QA / "layout.json") or {}
-    st["layout_detectors"] = "PASS" if lay == "PASS" and not lj.get("counts") else "FAIL"
+    st["layout_detectors"], _ = layout_check(cream, QA / "layout.json")
     tquery("<um-pos>")
     (ROOT / "build/positions.json").write_text(json.dumps(QUERY_CACHE))
     st["page_map_accuracy"], _ = run(["tools/page_map_accuracy.py", "--positions", "build/positions.json", "--pdf", str(cream),

@@ -54,20 +54,27 @@ def cover_data():
         facts.append(txt if take is None else txt.split(". ")[0] + ".")
     data = {"title": [t1, t2], "subtitle": plain(fr[1]["c"]), "version": plain(fr[2]["c"]),
             "lead": lead, "facts": facts, "art": cover_art(), "source_blocks": ["h-heraldry-skirmish-the-dying-lands", "B00003", "B00005", "B00163", "B00169", "B00173", "B00175"]}
-    (ROOT / "build/cover.json").write_text(json.dumps(data, ensure_ascii=False, indent=1))
+    (ROOT / "build/cover.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
     return data
 
 
 def compile_doc(src, out, variant):
     import typst
-    typst.compile(str(src), output=str(out), root=str(ROOT), font_paths=[str(ROOT / "fonts/static")],
-                  ignore_system_fonts=True, sys_inputs={"substrate": variant}, timestamp=pdf_epoch())
+    compiler = typst.Compiler(str(src), root=str(ROOT), font_paths=[str(ROOT / "fonts/static")],
+                              ignore_system_fonts=True, sys_inputs={"substrate": variant})
+    _, warnings = compiler.compile_with_warnings(output=str(out), timestamp=pdf_epoch())
+    diagnostics = [str(warning) for warning in warnings]
+    if any(any(word in diagnostic.lower() for word in ("converg", "introspection", "stabiliz", "stabilis"))
+           for diagnostic in diagnostics):
+        raise ValueError("Supplementary PDF did not converge: " + "\n".join(diagnostics))
+    for diagnostic in diagnostics:
+        print(diagnostic, file=sys.stderr)
 
 
 def main():
     instructions = (ROOT / "docs/PRINT_INSTRUCTIONS_TEMPLATE.md").read_text().replace("{{VERSION}}", version())
     (ROOT / "dist").mkdir(exist_ok=True)
-    (ROOT / "dist/PRINT_INSTRUCTIONS.md").write_text(instructions)
+    (ROOT / "dist/PRINT_INSTRUCTIONS.md").write_text(instructions, encoding="utf-8", newline="\n")
     d = cover_data()
     print(json.dumps({k: d[k] for k in ("title", "version")}))
     out = ROOT / "build"

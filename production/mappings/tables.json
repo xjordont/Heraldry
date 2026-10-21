@@ -922,7 +922,7 @@
 4167
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 4,
 "rows": 20,
 "header": [
@@ -931,6 +931,7 @@
 "Cost (c)",
 "Effect"
 ],
+"scope_reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents.",
 "family": "T055"
 },
 {
@@ -940,7 +941,7 @@
 4192
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 4,
 "rows": 20,
 "header": [
@@ -949,6 +950,7 @@
 "Cost (c)",
 "Effect"
 ],
+"scope_reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents.",
 "family": "T055"
 },
 {
@@ -958,7 +960,7 @@
 4217
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 4,
 "rows": 20,
 "header": [
@@ -967,6 +969,7 @@
 "Cost (c)",
 "Effect"
 ],
+"scope_reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents.",
 "family": "T055"
 },
 {
@@ -976,7 +979,7 @@
 4242
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 4,
 "rows": 20,
 "header": [
@@ -985,6 +988,7 @@
 "Cost (c)",
 "Effect"
 ],
+"scope_reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents.",
 "family": "T055"
 },
 {
@@ -994,7 +998,7 @@
 4267
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 4,
 "rows": 20,
 "header": [
@@ -1003,6 +1007,7 @@
 "Cost (c)",
 "Effect"
 ],
+"scope_reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents.",
 "family": "T055"
 },
 {
@@ -1012,7 +1017,7 @@
 4310
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 4,
 "rows": 20,
 "header": [
@@ -1021,6 +1026,7 @@
 "Cost (c)",
 "Effect"
 ],
+"scope_reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents.",
 "family": "T060"
 },
 {
@@ -1030,7 +1036,7 @@
 4335
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 4,
 "rows": 20,
 "header": [
@@ -1039,6 +1045,7 @@
 "Cost (c)",
 "Effect"
 ],
+"scope_reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents.",
 "family": "T060"
 },
 {
@@ -1048,7 +1055,7 @@
 4360
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 4,
 "rows": 20,
 "header": [
@@ -1057,6 +1064,7 @@
 "Cost (c)",
 "Effect"
 ],
+"scope_reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents.",
 "family": "T060"
 },
 {
@@ -1066,7 +1074,7 @@
 4385
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 4,
 "rows": 20,
 "header": [
@@ -1075,6 +1083,7 @@
 "Cost (c)",
 "Effect"
 ],
+"scope_reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents.",
 "family": "T060"
 },
 {
@@ -1084,7 +1093,7 @@
 4410
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 4,
 "rows": 20,
 "header": [
@@ -1093,6 +1102,7 @@
 "Cost (c)",
 "Effect"
 ],
+"scope_reason": "Measured 9 pt potion/poison family width trial, 2026-10-20: preserve cells and shared family widths; reduce long-effect continuations. Recheck changed cell contents.",
 "family": "T060"
 },
 {
@@ -4954,7 +4964,7 @@
 11903
 ],
 "rep": "table",
-"scope": "full",
+"scope": "column",
 "columns": 3,
 "rows": 6,
 "header": [
@@ -4971,7 +4981,7 @@
 11914
 ],
 "rep": "table",
-"scope": "full",
+"scope": "column",
 "columns": 3,
 "rows": 6,
 "header": [
@@ -5004,7 +5014,7 @@
 11938
 ],
 "rep": "table",
-"scope": "full",
+"scope": "column",
 "columns": 3,
 "rows": 6,
 "header": [
@@ -5021,7 +5031,7 @@
 11949
 ],
 "rep": "table",
-"scope": "full",
+"scope": "column",
 "columns": 3,
 "rows": 6,
 "header": [
@@ -5038,7 +5048,7 @@
 11960
 ],
 "rep": "table",
-"scope": "full",
+"scope": "column",
 "columns": 3,
 "rows": 6,
 "header": [
@@ -6610,16 +6620,17 @@
 {
 "id": "T332",
 "src": [
-17958,
-17969
+17959,
+17970
 ],
 "rep": "table",
-"scope": "column",
+"scope": "full",
 "columns": 2,
 "rows": 10,
 "header": [
 "Procedure",
 "Rule"
-]
+],
+"scope_reason": "Actual-source 9 pt width trial, 2026-10-20: complete C.14 heading, intro, table and notes fit in 488.595 pt at full width. Preserve every cell and source paragraph."
 }
 ]

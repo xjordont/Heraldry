@@ -5,10 +5,12 @@ Detectors flag pages for visual review; they do not prove good layout."""
 import argparse, json
 from pathlib import Path
 import pymupdf
+from layout_profile import PAGE_WIDTH_PT, PAGE_HEIGHT_PT, MARGIN_TOP_PT, MARGIN_BOTTOM_PT, TOKENS
+from layout_diagnostics import page_diagnostics
 
-W, H = 612, 792
-SAFE = 27
-TOP, BOT = 0.68 * 72, 792 - 0.7 * 72
+W, H = PAGE_WIDTH_PT, PAGE_HEIGHT_PT
+SAFE = TOKENS["page"]["essential_edge_safe_pt"]
+TOP, BOT = MARGIN_TOP_PT, H - MARGIN_BOTTOM_PT
 TAB = 0.42 * 72   # design v4 thumb-tab strip
 
 
@@ -42,12 +44,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("pdf")
     ap.add_argument("--report", required=True)
-    ap.add_argument("--first-body-page", type=int, default=1)
+    ap.add_argument("--first-body-page", type=int)
     a = ap.parse_args()
     doc = pymupdf.open(a.pdf)
-    flags = []
+    body_starts = [page for level, _, page in doc.get_toc(simple=True) if level == 1 and page > 0]
+    first_body_page = a.first_body_page if a.first_body_page is not None else min(body_starts, default=1)
+    flags, diagnostics = [], []
     for i, page in enumerate(doc):
         n = i + 1
+        diagnostics.append(page_diagnostics(page, n, top=TOP, bottom=BOT, tab=TAB))
         ls = lines_of(page)
         # overlap: shrink boxes slightly (ascender/descender overlap is normal)
         boxes = [(pymupdf.Rect(r.x0 + 1, r.y0 + r.height * 0.3, r.x1 - 1, r.y1 - r.height * 0.3), t, s) for r, t, s in ls]
@@ -68,8 +73,9 @@ def main():
             furniture = s <= 9.6 and (r.y1 < TOP or r.y0 > BOT - 2)
             if not furniture and (r.y1 > BOT + 2 or r.y0 < TOP - 14):
                 flags.append({"page": n, "code": "outside_body_frame", "text": t[:50], "bbox": [round(v) for v in r]})
-        for t in stranded_headings(page):
-            flags.append({"page": n, "code": "stranded_heading", "text": t})
+        if n >= first_body_page:
+            for t in stranded_headings(page):
+                flags.append({"page": n, "code": "stranded_heading", "text": t})
         body = [r for r, t, s in ls if TOP - 2 < r.y0 and r.y1 < BOT + 2 and TAB < r.x0 < W - TAB]
         # furniture (running-head rules, folio shield, tab) draws on every page, so only art or drawings
         # inside the body frame count as content
@@ -77,14 +83,17 @@ def main():
         body_drw = [dr for dr in page.get_drawings() if dr["rect"].y0 > TOP + 4 and dr["rect"].y1 < BOT - 4 and TAB < dr["rect"].x0 < W - TAB]
         # a deliberate blank verso before a chapter opener (Chapter 1 starts on a recto) is book convention
         blank_verso = not body and n % 2 == 0 and n < len(doc) and "Chapter " in doc[n].get_text()[:400]
-        if n >= a.first_body_page and len(body) < 6 and not body_art and not body_drw and not blank_verso:
+        if n >= first_body_page and len(body) < 6 and not body_art and not body_drw and not blank_verso:
             flags.append({"page": n, "code": "near_empty", "lines": len(body)})
     codes = {}
     for f in flags:
         codes[f["code"]] = codes.get(f["code"], 0) + 1
-    rep = {"pdf": a.pdf, "pages": len(doc), "counts": codes, "flagged_pages": sorted({f["page"] for f in flags}), "flags": flags[:400]}
+    rep = {"pdf": a.pdf, "pages": len(doc), "counts": codes, "flagged_pages": sorted({f["page"] for f in flags}), "flags": flags[:400],
+           "density_triage": diagnostics,
+           "density_method": "Diagnostic only: vertical union of text, raster and vector bounds clipped to body; bounding boxes overestimate occupied ink. Sparse pages, column imbalance and short paragraphs require visual inspection; deliberate starts, blank verso and artwork are not automatic failures."}
+    doc.close()
     Path(a.report).write_text(json.dumps(rep, indent=1, ensure_ascii=False))
-    print(json.dumps({"pages": len(doc), "counts": codes, "flagged_pages": rep["flagged_pages"][:60]}))
+    print(json.dumps({"pages": rep["pages"], "counts": codes, "flagged_pages": rep["flagged_pages"][:60]}))
 
 
 if __name__ == "__main__":

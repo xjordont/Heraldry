@@ -2,6 +2,8 @@
 
 Review date: 2026-10-16. **Review and proposals only; no layout implementation or PDF build.**
 
+Subsequent owner decision: the complete proposal was approved, with 10.5 pt body, 9 pt tables, narrower margins, and more assertive refinement. Implementation resumed on 2026-10-20. The observations and conservative trial proposals below retain their original review-date scope; current settings and acceptance results belong to `docs/DESIGN_REFINEMENT.md` and the subsequent production checkpoint.
+
 Heraldry should recover space through more accurate composition, smaller component overhead, and better continuation handling before reducing its rules type. The strongest verified defect is in the evidence pathway: a keep/table page map names different physical pages from the exact PDF whose hash it records. Several implementation inconsistencies also undermine predictable layout, including competing style definitions, mismatched table measurements, discarded right alignment, and missing continuation identity. The existing 11 pt serif text, quiet reading field, heraldic navigation, and subject-specific ink art already form a useful visual foundation. Keep that foundation, make ordinary rules consistently two columns, and give opening flavour and genuinely wide tables or diagrams explicit spanning roles. Wider margins would reduce usable space; a modest spacing and table-inset trial is a better first density experiment. **No defensible page-saving percentage exists yet**, because the latest RC493 manuscript has not been compiled under either a baseline or a proposed layout in this review.
 
 ## Repair measurement and continuation defects before shrinking type

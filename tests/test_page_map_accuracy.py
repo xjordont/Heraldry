@@ -89,7 +89,10 @@ class PageMapAccuracy(unittest.TestCase):
         (root / "build/query.json").write_text(json.dumps(query))
         with patch.object(verify, "ROOT", root), patch.object(verify, "DIST", root / "dist"), \
              patch.object(verify, "version", return_value="RC999"), patch.object(verify, "QUERY_CACHE", None):
-            self.assertEqual(verify.tquery("<tblpos>"), self.positions["<tblpos>"])
+            # Matching hashes of a fake PDF and later query are insufficient.
+            # Real serialized attachment/anchor checks have separate fixtures.
+            with self.assertRaisesRegex(RuntimeError, "serialized PDF evidence"):
+                verify.tquery("<tblpos>")
         pdf.write_bytes(b"different pdf")
         with patch.object(verify, "ROOT", root), patch.object(verify, "DIST", root / "dist"), \
              patch.object(verify, "version", return_value="RC999"), patch.object(verify, "QUERY_CACHE", None):

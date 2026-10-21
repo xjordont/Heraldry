@@ -1,8 +1,8 @@
-# Book design plan: "Grim Heraldry" (design system v4)
+# Book design plan: "Grim Heraldry" (compact design system v5)
 
-Status: owner-requested design pass (2026-10-12), rebuilt as v3 at the owner's direction: "add much more character and rebuild the whole graphic design moving in a more ornate grim dark direction while focusing on clarity and ease of use. Ensure the tables are not only beautiful but also very easy to read." The templates are implemented as Typst components in `typst/templates/system.typ` and shown on fourteen specimen pages in `typst/templates/specimens.typ`. These are set with real RC492 text, approved art and the real vector figures, and rendered to PNG by `tools/render_template_specimens.py`. No book PDF was produced.
+Status: compact v5 implements the owner's 2026-10-16 approval of the layout review, explicitly allowing **10.5 pt body**, **9 pt tables**, narrower margins, and more assertive refinement. The owner resumed this implementation on 2026-10-20. This supersedes the earlier 11 pt lock and conservative trial values. `config/design_tokens.json` is the single effective geometry/type/spacing authority; Typst imports it and Python uses `tools/layout_profile.py`. `config/production.json` mirrors public format values and is checked for agreement.
 
-The current book build (`typst/heraldry.typ`) is unchanged until the owner asks for a build. Then it adopts this system as described in section 10.
+The original v4 reference study and component rationale below remain useful where the v5 profile does not supersede them. Ordinary rules use two columns. Chapter/section opening flavour has an explicit, inset single-column region; wide tables and diagrams retain deliberate spanning roles. Fit-capable complete source units, source order, readable figures, the accepted blank verso, and independent visual review remain mandatory. Physical proof is **NOT TESTED**. Local specimens and measured builds are evidence of their stated scope, not a new release approval.
 
 The evidence is in `docs/design/REFERENCE_STUDY.md`: all ten reference books were mapped page by page, and about 90 pages were inspected closely.
 
@@ -29,13 +29,13 @@ The ordinary rules page is the product. The cover and chapter openers set the mo
 | Element | Value |
 |---|---|
 | Trim | US Letter portrait, 612 × 792 pt, borderless inkjet; cream `#FCFAF5` and a white companion with identical pagination |
-| Margins | inside (binding) 0.75 in, outside 0.55 in, top 0.68 in, bottom 0.7 in (owner 2026-10-12: narrower) |
-| Text frame | 7.2 × 9.62 in; two columns of 3.48 in with a 0.24 in gutter (about 6% more text per page than v3) |
-| Edge safety | essential content at least 0.375 in from every edge (thumb tabs are navigation, not essential) |
+| Margins | inside 45 pt (0.625 in), outside 42 pt (0.5833 in), top/bottom 45 pt (0.625 in); final binding requires physical proof |
+| Text frame | 525 × 702 pt; two 254.4 pt columns with a 16.2 pt (0.225 in) gutter |
+| Edge safety | essential content and navigation lettering at least 27 pt (0.375 in) from trim; decoration may reach the edge |
 | Full-width regions | section titles, chapter openers, wide tables, wide figures, scenario heads |
 | Column regions | prose, examples, notes, monster entries, powers, dossiers |
 
-The outer margin carries the 0.32 in thumb tabs with 0.23 in clear space before the text.
+The decorative pennant occupies the outer margin. Its 9 pt keyword sits on the inner face, with actual rotated glyph bounds checked against the 27 pt safe line and the body frame. Initial 36 pt outer and 40.5 pt top margins failed this check; 42 pt outer and 45 pt top margins preserve clearance.
 
 ## 3. Type
 
@@ -43,25 +43,25 @@ Four families are used, all under the OFL, with licences in `fonts/licences/`. E
 
 | Role | Face | Size / leading | Notes |
 |---|---|---|---|
-| Rules text | Source Serif 4 | 11 / about 15 pt, justified within limits (owner lock 2026-10-12) | Hyphenation discouraged but allowed (en-CA) |
-| Flavour, leads, lore | IM FELL English (roman) | 10.2 to 12.4 pt, near-black (84%), leading about 14.5 pt | Owner 2026-10-12: easier to read than the italic, and plainly a different voice from the rules |
+| Rules text | Source Serif 4 | 10.5 pt with 2.9 pt additive leading, about 13.925 pt baseline pitch | Hyphenation discouraged but allowed (en-CA) |
+| Flavour, leads, lore | IM FELL English (roman) | 10.5 pt, near-black (84%), 3.3 pt additive leading | Owner 2026-10-12: easier to read than the italic, and plainly a different voice from the rules |
 | Chapter title | Grenze Gotisch SemiBold | 50 pt | Centred under the opener art and the chapter's arms |
-| Section (x.y) | Grenze Gotisch SemiBold | 24 pt | Number in an engraved black shield; brush rule beneath |
+| Section (x.y) | Grenze Gotisch SemiBold | 21 pt | Number in an engraved black shield; brush rule beneath |
 | Subsection (x.y.z) | Source Serif 4 Bold | 12.5 pt | Lozenge, then a quiet number in Source Sans 3 Bold 9.5 pt, 42% grey |
 | Minor named heading, table titles | Grenze Gotisch SemiBold | 14 to 15.5 pt | |
 | Entry names | Grenze Gotisch SemiBold | 15.5 to 36 pt | Power 15.5, monster 21, place 28, scenario 32, class 36 |
-| Tab keywords | Grenze Gotisch Bold | up to 12 pt, auto-fitted | Reversed, centred, rotated to run along the edge |
-| Labels and tags | Source Sans 3 Bold | 6.6 to 7.8 pt caps, +0.09 to 0.16 em tracking | Entry anatomy, dossier fields, banner tags, table headers |
-| Tables | Source Sans 3 | 9.3 pt (8.8 pt in Appendix C) / about 12 pt | Tabular lining figures |
-| Captions | Source Sans 3 | 8.6 pt | Number and title in the black caption band |
-| Running head | Source Sans 3 SemiBold | 7.4 pt caps, +0.16 em | |
-| Folio | Source Sans 3 Bold | 7.6 pt | Reversed in an engraved shield |
+| Tab keywords | Grenze Gotisch Bold | 9 pt | Reversed, centred, rotated to run along the edge |
+| Publication labels and tags | Source Sans 3 Bold | At least 9 pt | Table headers, captions, and essential navigation use the shared size floor; smaller legacy specimen labels are not publication settings |
+| Tables | Source Sans 3 | 9 pt with 2.4 pt additive leading, about 11.85 pt baseline pitch | Tabular lining figures |
+| Captions | Source Sans 3 | 9 pt | Number and title in the black caption band |
+| Running head | Source Sans 3 SemiBold | 9 pt, +0.12 em | |
+| Folio | Source Sans 3 Bold | 9 pt | Reversed in an engraved shield |
 
-The minimum essential size is 8.6 pt for captions and 8.8 pt for dense reference tables. The DESIGN_SPEC floor of 9 pt for running text still applies to body copy.
+The essential rules, table, caption, and navigation size floor is 9 pt. Do not shrink individual pages to force fit. Legacy demonstration-only labels are not a licence to reduce the publication components below that floor.
 
-**One treatment for flavour (owner 2026-10-12, revised the same day):** all flavour text is IM FELL roman at the running body size (11 pt; see below), justified and hyphenated, with 9 pt of space between paragraphs (no first-line indents). Justification uses Typst `justification-limits` (word space 90–140%, letter spacing −0.5% to +2% of the em) so even the 3.5 in monster columns set without rivers. Section-level flavour (chapter leads, the flavour under a section title, place lore, scenario flavour) is the `lead-block` component: a centred measure 80% of the frame wide (82% for chapter leads), with the text justified inside it. Entry flavour inside a column (monsters, classes, backgrounds) is the `flavour` component: the same face, size, colour and spacing at full column width. Justified was chosen over centred after a side-by-side on the Deepwarden page: centred multi-paragraph lore leaves ragged edges on both sides; justified reads as one quiet block. The specimen renderer can still show the centred variant with `tools/render_template_specimens.py --lead center` for comparison.
+**One treatment for flavour (owner 2026-10-12, revised the same day):** all flavour text is IM FELL roman at the running body size (10.5 pt; see below), justified and hyphenated, with 6 pt of space between paragraphs (no first-line indents). Justification uses Typst `justification-limits` (word space 90–140%, letter spacing −0.5% to +2% of the em) so even the 3.5 in monster columns set without rivers. Section-level flavour (chapter leads, the flavour under a section title, place lore, scenario flavour) is the `lead-block` component: a centred measure 82% of the frame wide, with the text justified inside it. Entry flavour inside a column (monsters, classes, backgrounds) is the `flavour` component: the same face, size, colour and spacing at full column width. Justified was chosen over centred after a side-by-side on the Deepwarden page: centred multi-paragraph lore leaves ragged edges on both sides; justified reads as one quiet block. The specimen renderer can still show the centred variant with `tools/render_template_specimens.py --lead center` for comparison.
 
-**One body size: 11 pt (owner 2026-10-12):** "Let's lock rules at 11pt", then "I actually think it makes more sense to set all body text (flavour and rules) to the same font size ... maybe 11pt?". All running text is 11 pt: rules text, flavour, examples, rules notes, setup dossiers, monster and class entry text and power effects. Rules text sets on about 15 pt; flavour keeps its own face and slightly more open leading. Claude Code agreed 11 pt is the right size: 10 pt and below is hard to read on Letter at arm's length, and 12 pt would add about a third to the text pages. At 11 pt the 3.48 in columns carry about 51 characters a line, and text pages grow about 15% over the earlier 10.25 pt. Note that IM FELL has a smaller x-height than Source Serif 4, so 11 pt flavour looks slightly smaller than 11 pt rules text; this is accepted for consistent sizing. Data text keeps its own sizes: table cells, captions, stat strips, labels and tags.
+**One body size: 10.5 pt (owner approval, 2026-10-16):** running rules, flavour, examples, notes, monster/class entries, and power effects retain their semantic roles at the common body size. Source Serif uses 2.9 pt additive leading, 4.5 pt paragraph spacing, and 2.8 pt list-item spacing. IM FELL retains slightly more open flavour leading. Nominal size and additive leading are distinct from actual baseline pitch; specimens verify the serialized geometry. Table text is 9 pt with 4 pt horizontal and 2.2 pt vertical inset. Example panels use 8 pt horizontal and 6 pt vertical inset. These are shared settings, never content-dependent shrinking.
 
 **Banner tags on titles:** every banner tag that labels a title (monster role, BASTION, HERO CLASS, scenario number) is set by the `entry-title` component: the tag sits on its own line directly above the title, 5 pt above the cap height, always at the title's top-left corner, whether the title is set left or centred (owner 2026-10-12: "The black tags should consistently be aligned to the top left of the text they reference; not centred above it"). The tag never shares a line with the title and never floats against its baseline.
 
@@ -184,9 +184,9 @@ As in section 5. The contents takes two pages, facing if possible.
 - **Example:**
   - a 5.5% tinted field with a 2.4 pt black left rule and the tag "EXAMPLE";
   - an optional title after a middle dot;
-  - 11 pt text.
+  - 10.5 pt text, from the shared body token.
   - Where an example walks through a figure, its steps are numbered to match the figure labels (TNA lesson: 1.1, 1.2...).
-- **Rules note:** the example panel (tinted field, black spine, tag at the top left, 11 pt text) with its own tag: "RULES NOTE", "CLARIFICATION" or "DESIGN NOTE" (owner 2026-10-12: "change the ugly in line 'rules note' format to be the same as example format but with a different tag"). It is used only where the manuscript sets a note apart. The book never invents notes.
+- **Rules note:** the example panel (tinted field, black spine, tag at the top left, 10.5 pt text) with its own tag: "RULES NOTE", "CLARIFICATION" or "DESIGN NOTE" (owner 2026-10-12: "change the ugly in line 'rules note' format to be the same as example format but with a different tag"). It is used only where the manuscript sets a note apart. The book never invents notes.
 
 ### 6.8 Rules with a figure (specimen 5)
 
@@ -205,15 +205,15 @@ As in section 5. The contents takes two pages, facing if possible.
 
 Owner 2026-10-12: "The tables look amateur. We should be centring values in cells ... changing (c) to a symbol for a coin." There is one grammar for all 332 tables, built on the Deth Wizards (page 22) and Black Death City (page 66) lessons: centred values, calm rules and no boxes.
 
-1. **Title**, when the source gives one: blackletter 15.5 pt directly above the table. They never separate.
-2. **Edges:** a hand-inked brush stroke above the header and another below the last row. There are no vertical rules and no side frame.
-3. **Header band:** solid black, reversed 7.6 pt bold caps. Each label is aligned like its column: centred over centred values, left over left. The band repeats on every continuation page.
+1. **Title:** retain the source heading at its semantic rank. The repeated identity uses 9 pt sans bold. Suppress its duplicate opening text when the immediately preceding source heading already supplies that title, and retain its fixed continuation geometry.
+2. **Edges:** retain the hand-inked brush below the last row. The top brush is omitted because it crossed the identity text. There is no outer box around an ordinary lookup table.
+3. **Header band:** solid black, reversed 9 pt bold caps. Each label is aligned like its column: centred over centred values, left over left. The band repeats on every continuation page.
 4. **Column alignment** is set per column type:
    - **key**: bold, left;
    - **text**: left;
    - **value**: centred (numbers, dice, damage, short codes);
    - **roll**: centred bold on a 9% tinted column.
-5. **Rows:** 4.2 pt vertical padding, 9.3 pt sans, alternate rows banded at 5%, hairlines at 24% between rows. A long text in a row may move to a spanning second line.
+5. **Rows:** 2.2 pt vertical padding, 9 pt sans, alternate rows banded at 5%, hairlines at 24% between rows. A long text in a row may move to a spanning second line.
 6. **The coin:** the source's "c" for coins is set as the coin mark.
    - In a header, "Cost (c)" becomes "COST" followed by a paper coin.
    - In a value, "36c" becomes "36" followed by the coin.
@@ -296,7 +296,7 @@ Every named scenario starts a fresh page.
   - its AI Steps and abilities as in the bestiary.
 - **Special Rules and Victory Conditions** follow in two columns. Victory Conditions and Tiebreaker close in the ruled outcome frame.
 - **No invented labels.** The book adds no phase labels the source lacks; Black Death City's "Before / During / After" is a lesson in grouping, not in labels.
-- **Pagination:** a scenario that fits one page is one page. A longer one continues with "Scenario Pale City 2, continued" in the running head and never splits its setup from its map.
+- **Pagination:** a scenario that fits one page is one page. Later pages repeat its source title with "(continued)" in the running head until the next scenario, climate, or higher-rank section. Long running titles shorten at a word boundary with an ellipsis; essential navigation remains 9 pt. Preserve fit-capable setup/map units.
 
 ### 6.17 Campaign play (Chapter 11)
 
@@ -317,8 +317,8 @@ Every named scenario starts a fresh page.
 ### 6.19 Rules reference (Appendix C; specimen 12)
 
 - Each C.x opens under an iron reference band: the code in a paper shield and the title in reversed blackletter.
-- Tables are full width at 8.8 pt and banded.
-- C.13 (the single-sheet summary) is designed as one self-contained page that can be printed alone.
+- Reference tables use the approved 9 pt size and measured column/full-width placement, with light banding.
+- C.13 retains its source title, "Single-Sheet Rules Summary". The complete current source exceeds one page at the approved size; its title is not permission to omit content or shrink essential text.
 - C.11 (the glossary) uses index-style hanging entries in two columns.
 
 ### 6.20 Index (specimen 13)
@@ -462,10 +462,10 @@ Owner 2026-10-12: "We should be very careful of how we set up policy and procedu
 
    Never stretch spacing or enlarge type to fill a page.
 10. Column balance: two-column runs balance on their last page, but a keep unit is never broken to balance.
-11. The narrower v4 margins give about 6% more text per page. Tables use full width whenever their columns would otherwise wrap a header or a short value.
+11. The compact profile provides a 525 pt by 702 pt usable frame and 254.4 pt columns. Report actual page savings from same-source builds; frame area alone does not predict pagination. Tables use full width whenever their columns would otherwise wrap a header or a short value.
 
 **Measure and rhythm**
-12. All vertical spacing is a multiple of the 3.3 pt half-line, so text in facing columns lines up.
+12. Use the shared spacing tokens consistently. Actual line pitch includes the font's vertical metrics; additive leading alone does not establish a baseline grid. Inspect facing-column rhythm in rendered pages rather than claiming alignment from a nominal spacing unit.
 13. Long prose cells (over about 25 words) in tables move to a spanning second line or a `cards` transformation instead of shrinking type.
 14. Type never shrinks below the section 3 minimums to make something fit. Content is never omitted.
 

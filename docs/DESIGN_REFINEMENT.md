@@ -1,8 +1,14 @@
 # Design refinement — owner request, 2026-10-07
 
-Status: reviewed requirements for the next layout iteration; not an implemented redesign or a new PDF release. This document overrides the old specimen freeze where they conflict. Keep the active RC485 manuscript unchanged. Work on main and retain all existing figures and content checks. Read REFERENCE_ANALYSIS.md, DESIGN_SPEC.md and VISUAL_QA.md with this brief.
+Status: standing refinement requirements with the approved compact implementation in progress. No new release is implied. This document overrides the old specimen freeze where they conflict. Resolve the active manuscript through `source/versions.json` and preserve its bytes. Work on main and retain all existing figures and content checks. Read REFERENCE_ANALYSIS.md, DESIGN_SPEC.md and VISUAL_QA.md with this brief.
 
-## Evidence and diagnosis
+## Compact profile approval - 2026-10-16; implementation resumed 2026-10-20
+
+The owner approved the complete layout review and explicitly authorized 10.5 pt body text, 9 pt tables, narrower margins, and more assertive refinement. This supersedes earlier 11 pt and unchanged-margin trial proposals. Use the effective profile in `config/design_tokens.json` through Typst and `tools/layout_profile.py`; the production format record is a checked mirror. Four font roles remain intentional. Ordinary rules use two columns; opening flavour uses a distinct inset single-column region. Preserve manuscript bytes, complete fit-capable units, source order, all source-bound figures, deliberate wide objects, and the accepted blank verso.
+
+Measured furniture safety takes priority over the smallest margin: the initial outside 36 pt/top 40.5 pt/bottom 40.5 pt trial left rotated navigation, running heads, and folios outside the 27 pt safe line. The corrected profile is inside/outside/top/bottom 45/42/45/45 pt, with a 16.2 pt column gap. A physical binding/device/media proof remains NOT TESTED. Page savings and full-book acceptance must come from the actual same-source builds and their recorded review, not these token changes alone.
+
+## Historical evidence and diagnosis - 2026-10-07
 
 Inspected the latest verified delivery from GitHub Actions run 37537036480 (build input 75c430e0033f66eca34b31383491de6fd41a3366): digital PDF 453 pages, interiors 450 pages. Digital SHA-256: 68bc90e062cf7f01ef438e720fba0c8d9ee46b5f6f2ce54134a4803ded6ad0e7. Reviewed 13 representative digital pages at page-composition scale, plus detailed pages 23 and 427; this is not a new all-page approval. Inspected 23 selected pages across all ten owner-selected reference PDFs; page numbers in the reference analysis are 1-based PDF viewer numbers.
 
@@ -22,7 +28,7 @@ The table audit lists 64 multi-page tables or transformed entry sets. That count
 
 ## Page treatments to implement
 
-Retain portrait Letter, flat #FCFAF5 cream/white companions, safe margins, existing three licensed font families and readable body/table sizes. Distinguish pages through information architecture and composition, not more texture or decorative borders.
+Retain portrait Letter, flat #FCFAF5 cream/white companions, safe margins, four intentional licensed font roles and readable body/table sizes. Distinguish pages through information architecture and composition, not more texture or decorative borders.
 
 1. Chapter opener: one source-specific horizontal ink scene, substantial title with clear chapter number, short lead and a clean transition into rules. Target roughly one third of the page for art when available. Make the scene asymmetrical and leave useful negative space. No generic hooded skull repeated eleven times. Use ART_MANIFEST subject plans and check each against current source lore.
 2. Ordinary rules: calm two-column prose with clearly different major, subsection and run-in treatments. Use larger major headings when full width allows them; nested headings remain serif. Keep existing emphasis rather than making all text heavier. Use a consistent rhythm of spacing and a small number of horizontal rules.
@@ -65,9 +71,9 @@ Extend the layout audit to record semantic heading starts and their following co
 Inspect all revised pages at contact-sheet scale for rhythm, every continuation/table exception and all scenario openings at readable size, then the cream/white pairing and overscan crops. Reconcile all text/cells, rebuild navigation and package from the same final input hashes. Record the current design outcome separately from historical geometry PASS. Physical printer proof remains NOT TESTED.
 
 
-## InDesign export — on hold
+## Optional InDesign export - separate owner-invoked workflow
 
-The owner has deferred InDesign output. Do not build an IDML exporter, assembly script or .indd edition. Complete the portrait Letter PDF and artwork integration. Revisit another publishing format only after an explicit owner decision.
+The earlier hold was superseded by the owner's explicit 2026-10-15 InDesign request. The optional export now follows `docs/INDESIGN_EXPORT.md`; it remains separate from ordinary development, this PDF refinement, and the candidate/release chain. Do not invoke it automatically. Native composition, native visual review, and physical proof require their own evidence and cannot be inferred from a structural IDML check.
 
 ## Sources consulted 2026-10-07
 

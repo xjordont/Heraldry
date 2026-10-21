@@ -6,6 +6,7 @@
 // Direction (owner 2026-10-12): ornate, grim, medieval heraldry; tasteful; never distracting from
 // text or art; clarity, ease of use and no page bloat first. Ornament lives at boundaries only.
 
+// Owner 2026-10-16: compact v5 profile supersedes the earlier 11 pt lock.
 // ================================================================ tokens
 #let substrate-name = sys.inputs.at("substrate", default: "cream")
 #let paper = if substrate-name == "white" { rgb("#FFFFFF") } else { rgb("#FCFAF5") }
@@ -16,25 +17,33 @@
 #let tint = rgb(0, 0, 0, 5%)          // banding, examples, panels (transparent: cream and white)
 #let tint2 = rgb(0, 0, 0, 9%)         // die column of roll tables
 
-#let serif = "Source Serif 4"         // rules text
-#let sans = "Source Sans 3"           // data, labels, navigation
-#let goth = "Grenze Gotisch"          // blackletter: titles, names, tabs (never all caps, never cells)
-#let fell = "IM FELL English"         // flavour text (roman), leads
+#let profile = json("../../config/design_tokens.json")
+#let type-token = profile.type_pt
+#let space-token = profile.spacing_pt
+#let serif = profile.fonts.body
+#let sans = profile.fonts.table_label
+#let goth = profile.fonts.display
+#let fell = profile.fonts.flavour
 
-#let page-w = 612pt
-#let page-h = 792pt
-#let m-in = 0.75in                    // binding side
-#let m-out = 0.55in                   // outer side: tab (0.32in) + clear space
-#let m-top = 0.68in
-#let m-bot = 0.7in
-#let gap = 0.24in
+#let page-w = profile.page.width_pt * 1pt
+#let page-h = profile.page.height_pt * 1pt
+#let m-in = profile.page.inside_margin_pt * 1pt
+#let m-out = profile.page.outside_margin_pt * 1pt
+#let m-top = profile.page.top_margin_pt * 1pt
+#let m-bot = profile.page.bottom_margin_pt * 1pt
+#let gap = profile.page.column_gap_pt * 1pt
 #let frame-w = page-w - m-in - m-out
 #let col-w = (frame-w - gap) / 2
 
-#let body-size = 11pt                 // owner 2026-10-12: "Let's lock rules at 11pt"
-#let body-lead = 3.55pt               // same proportion as the 10.25 pt setting
-// Owner 2026-10-12: all body text, flavour and rules alike, is one size (11 pt).
-#let aside-size = body-size           // examples, notes, entry anatomy, power effects
+#let body-size = type-token.body * 1pt
+#let body-lead = type-token.body_leading_additive * 1pt
+#let table-size = type-token.table * 1pt
+#let table-lead = type-token.table_leading_additive * 1pt
+#let table-x = space-token.table_horizontal_padding * 1pt
+#let table-y = space-token.table_vertical_padding * 1pt
+#let par-space = space-token.paragraph_after * 1pt
+#let list-space = space-token.list_item * 1pt
+#let aside-size = body-size
 #let aside-lead = body-lead
 #let dossier-size = body-size
 
@@ -151,24 +160,27 @@
   "Monsters", "Scenarios", "Campaign", "Learn", "Basic", "Reference", "Index")
 #let thumb-tab(n, recto) = {
   let top0 = 0.4in
-  let slot-h = (page-h - 2 * top0) / tab-keys.len()
+  // End the navigation ladder above the lower folio, not near the trim.
+  let tab-bottom = page-h - m-bot - 12pt
+  let slot-h = (tab-bottom - top0) / tab-keys.len()
   let y = top0 + slot-h * (n - 1)
-  let w = 0.42in                               // keyword clears the 3% borderless overscan
+  let w = m-out                                // decoration remains wholly outside the body frame
   let h = slot-h - 3pt
   let k = 4.5pt                                 // bevelled inner corners
   let pts = if recto { ((w, 0pt), (k, 0pt), (0pt, k), (0pt, h - k), (k, h), (w, h)) }
             else { ((0pt, 0pt), (w - k, 0pt), (w, k), (w, h - k), (w - k, h), (0pt, h)) }
   let inner = if recto { ((w, 1.8pt), (k + 0.6pt, 1.8pt), (1.8pt, k + 0.6pt), (1.8pt, h - k - 0.6pt), (k + 0.6pt, h - 1.8pt), (w, h - 1.8pt)) }
               else { ((0pt, 1.8pt), (w - k - 0.6pt, 1.8pt), (w - 1.8pt, k + 0.6pt), (w - 1.8pt, h - k - 0.6pt), (w - k - 0.6pt, h - 1.8pt), (0pt, h - 1.8pt)) }
-  let avail = h - 7pt
+  let avail = h - 4pt
   let word = context {
-    let t = text(font: goth, weight: 700, size: 12pt, fill: paper, tab-keys.at(n - 1))
-    let m = measure(t)
-    let s = if m.width > avail { 12pt * (avail / m.width) } else { 12pt }
-    text(font: goth, weight: 700, size: s, fill: paper, tab-keys.at(n - 1))
+    let s = type-token.navigation * 1pt
+    let t = text(font: goth, weight: 700, size: s, fill: paper, tab-keys.at(n - 1))
+    assert(s >= type-token.minimum_essential * 1pt, message: "Navigation type is below the essential floor")
+    assert(measure(t).width <= avail, message: "Navigation keyword exceeds its slot at the approved size")
+    t
   }
   // the visible face is the part inside the trim's 0.04in overscan allowance
-  let face = w - 0.14in                        // keyword set on the inner part, clear of the 3% overscan
+  let face = w - profile.page.essential_edge_safe_pt * 1pt // lettering inside the essential safe line
   place(top + left, dx: if recto { page-w - w } else { 0pt }, dy: y, box(width: w, height: h, {
     place(polygon(fill: ink, ..pts))
     place(polygon(fill: none, stroke: 0.45pt + paper, ..inner))
@@ -229,7 +241,7 @@
     header: if furniture { running-head(chapter, section, recto, tab: tab) },
     header-ascent: 14pt,
     footer: if folio-on and not frame { folio(n, recto) },
-    footer-descent: 14pt,
+    footer-descent: 2pt,
     background: {
       if frame { opener-frame(recto, n: if folio-on { n }) }
       if tab != none { thumb-tab(tab, recto) }
@@ -243,14 +255,14 @@
 // lines ("runts"), hyphenation discouraged but allowed in narrow columns. Body text is justified
 // within limits (owner 2026-10-12); --body rag in the specimen renderer shows the ragged alternative.
 #let base(body) = {
-  set text(font: serif, size: body-size, lang: "en", region: "CA", fill: ink, hyphenate: true,
+  set text(font: serif, size: body-size, lang: "en", region: "CA", fill: ink, hyphenate: true, overhang: false,
     top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining",
     costs: (hyphenation: 100%, runt: 160%, widow: 1000%, orphan: 1000%))
-  set par(leading: body-lead, spacing: 6.5pt, justify: sys.inputs.at("body", default: "justify") == "justify", first-line-indent: 0pt,
+  set par(leading: body-lead, spacing: par-space, justify: sys.inputs.at("body", default: "justify") == "justify", first-line-indent: 0pt,
     justification-limits: (spacing: (min: 90%, max: 140%), tracking: (min: -0.005em, max: 0.02em)))
   set strong(delta: 200)
-  set list(marker: (box(baseline: -1.2pt, lozenge(size: 4.4pt)), [–]), indent: 1pt, body-indent: 6pt, spacing: 4.5pt)
-  set enum(indent: 1pt, body-indent: 6pt, spacing: 4.5pt, numbering: n => text(font: sans, weight: 700, size: 9pt)[#n.])
+  set list(marker: (box(baseline: -1.2pt, lozenge(size: 4.4pt)), [–]), indent: 1pt, body-indent: 6pt, spacing: list-space)
+  set enum(indent: 1pt, body-indent: 6pt, spacing: list-space, numbering: n => text(font: sans, weight: 700, size: 9pt)[#n.])
   // A list item (a talent, a package, a step) is a reference entry: it never splits across a column or page.
   show list.item: it => block(breakable: false, it)
   show enum.item: it => block(breakable: false, it)
@@ -303,13 +315,13 @@
 #let flav-size = body-size
 #let lead-mode = sys.inputs.at("lead", default: "justify")
 #let flavour-set(body) = {
-  set par(justify: lead-mode == "justify", leading: 4.1pt, spacing: 9pt,
+  set par(justify: lead-mode == "justify", leading: space-token.flavour_leading_additive * 1pt, spacing: space-token.flavour_paragraph_after * 1pt,
     justification-limits: (spacing: (min: 90%, max: 140%), tracking: (min: -0.005em, max: 0.02em)))
   set text(font: fell, size: flav-size, fill: ink2, hyphenate: lead-mode == "justify")
   body
 }
 #let flavour(body, size: none) = block(above: 5pt, below: 9pt, flavour-set(body))
-#let lead-block(body, size: none, width: 80%) = block(width: 100%, above: 7pt, below: 11pt,
+#let lead-block(body, size: none, width: 80%) = block(width: 100%, above: space-token.lead_above * 1pt, below: space-token.lead_below * 1pt,
   align(center, block(width: width, align(if lead-mode == "justify" { left } else { center }, flavour-set(body)))))
 
 // Entry title: the banner tag always stands directly above the top-left corner of its title,
@@ -322,8 +334,8 @@
 
 // Set-apart panel shared by worked examples and rules notes (owner 2026-10-12): tinted field on a
 // black spine, the banner tag at the top left, body text at the running size.
-#let panel(label, body) = block(width: 100%, above: 10pt, below: 11pt, breakable: false,
-  fill: tint, stroke: (left: 2.6pt + ink), inset: (left: 11pt, right: 9pt, top: 7pt, bottom: 9pt))[
+#let panel(label, body) = block(width: 100%, above: space-token.panel_above * 1pt, below: space-token.panel_below * 1pt, breakable: false,
+  fill: tint, stroke: (left: 2.6pt + ink), inset: (x: space-token.panel_horizontal_padding * 1pt, y: space-token.panel_vertical_padding * 1pt))[
   #tag(label)
   #v(3pt)
   #set text(size: aside-size)
@@ -354,9 +366,9 @@
   text(font: goth, weight: 600, size: 15.5pt, body))
 
 // aligns: one of "key" (bold, left), "text" (left), "c" (centre) per column. Header labels follow.
-#let ref-table(widths, aligns, header, rows, title: none, roll: false, band: true, notes: none, size: 9.3pt) = {
+#let ref-table(widths, aligns, header, rows, title: none, roll: false, band: true, notes: none, size: table-size) = {
   set text(font: sans, size: size, number-type: "lining", number-width: "tabular", hyphenate: false)
-  set par(leading: 2.7pt, spacing: 4pt, justify: false)
+  set par(leading: table-lead, spacing: par-space, justify: false)
   let n = header.len()
   let al(x) = { let a = aligns.at(x, default: "text"); if a == "c" or a == "roll" { center } else { left } }
   let cells = ()
@@ -367,19 +379,19 @@
     })
     if notes != none and notes.at(i, default: none) != none {
       cells.push(table.cell(colspan: n, inset: (left: 16pt, right: 6pt, top: 0pt, bottom: 4.5pt),
-        text(size: size - 0.6pt, fill: ink2, notes.at(i))))
+        text(size: calc.max(type-token.minimum_essential * 1pt, size - 0.6pt), fill: ink2, notes.at(i))))
     }
   }
   let head = header.enumerate().map(((i, h)) => table.cell(align: al(i) + horizon,
-    text(weight: 700, size: 7.6pt, tracking: 0.09em, fill: paper, if type(h) == str { upper(h) } else { h })))
-  block(width: 100%, above: 10pt, below: 13pt, breakable: true)[
+    text(weight: 700, size: table-size, tracking: 0.04em, fill: paper, if type(h) == str { upper(h) } else { h })))
+  block(width: 100%, above: space-token.table_above * 1pt, below: space-token.table_below * 1pt, breakable: true)[
     #if title != none { table-title(title) }
     #brush(weight: 2.4pt, seed: 3)
     #v(-2.2pt)
     #table(
       columns: widths,
       align: (x, y) => al(x) + horizon,
-      inset: (x: 6pt, y: 4.2pt),
+      inset: (x: table-x, y: table-y),
       fill: (x, y) => if y == 0 { ink } else if aligns.at(x, default: "") == "roll" { tint2 } else if band and calc.even(y) { tint } else { none },
       stroke: (x, y) => (bottom: if y == 0 { none } else { 0.35pt + hair }),
       table.header(repeat: true, ..head),
@@ -396,9 +408,9 @@
   #align(center, image(file, width: width))
   #v(4pt)
   #block(width: 100%, fill: ink, inset: (x: 7pt, y: 3.6pt), spacing: 0pt,
-    text(font: sans, size: 7.8pt, weight: 700, tracking: 0.1em, fill: paper)[#id #h(4pt)#lozenge(size: 4pt, fill: paper)#h(4pt) #upper(title)])
+    text(font: sans, size: 9pt, weight: 700, tracking: 0.1em, fill: paper)[#id #h(4pt)#lozenge(size: 4pt, fill: paper)#h(4pt) #upper(title)])
   #block(width: 100%, inset: (x: 6pt, top: 4.5pt, bottom: 5pt), spacing: 0pt, {
-    set text(font: sans, size: 8.6pt)
+    set text(font: sans, size: 9pt)
     set par(leading: 2.5pt, justify: false)
     caption
   })
@@ -571,7 +583,7 @@
     box(fill: ink, inset: 1.4pt, box(stroke: 0.45pt + paper, inset: (x: 4.5pt, top: 1pt, bottom: 3pt), text(font: goth, weight: 600, size: 17pt, fill: paper, l))),
     line(length: 100%, stroke: 0.6pt + ink)))
 #let index-entry(term, pages, sub: false) = block(above: 1.4pt, below: 1.4pt, {
-  set text(font: sans, size: 8.6pt)
+  set text(font: sans, size: 9pt)
   set par(hanging-indent: 10pt, justify: false, leading: 2.3pt)
   if sub { h(8pt) }
   [#term#h(4pt)#text(fill: ink3, pages)]
