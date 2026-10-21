@@ -9418,5 +9418,38 @@
    "max_print_w_in_300ppi": 2.54
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-CAIRNWRATH": {
+  "family": "hero",
+  "title": "Cairnwrath",
+  "heading_id": "h-cairnwrath",
+  "route": "gpt",
+  "spec_sha256": "619dfdf29daf8ebf477033902933ac5ac81511d5eda1259c2566d6c916260cea",
+  "prompt_sha256": "16b91bdd204b3d1d63a22cdc799389ca6429d720b2ae326fd83d4685f69bc2ee",
+  "status": "received",
+  "received_at": "2026-10-21T15:20:24+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged possible grey wash or soft shading (10%), stray edge marks (0.18%), and narrow margin (3.3% of outer 6% band). Visual review: bold black hatch on white paper, all required items visible, full figure and axe uncut, no disallowed content. Preserve warnings for review; no retry.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-CAIRNWRATH.png",
+   "sha256": "bc755be0f96fadfc72234332a22f679fa05d54de0edf8c6cb0066a33d6a78ff4",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-CAIRNWRATH.png",
+   "sha256": "44d950c52aa0b180e1c26cc1560d0e358e285ae4bece025d5028715f1583759d",
+   "px": [
+    985,
+    1520
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.283
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
