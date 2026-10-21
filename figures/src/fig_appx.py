@@ -111,7 +111,7 @@ def fig19():
         "**Deployment:** each side deploys within 4\" of opposite battlefield edges.",
         "**Monster Entry markers:** 3 markers around the centre, each 5–7\" from it, at least 4\" from each other and outside both deployment zones. The 3 groups (4 Goblins, 4 Skeleton Warriors, 4 Bandits) are assigned to the markers at random, one complete group per marker, with 1 Satchel on each marker. Every group begins Resting.",
         "**Treasure:** the Strongbox (12c) at the centre; 3 Satchels (4c each). A carrier of the Strongbox has -2\" Speed, to a minimum of 1\".",
-        "**Extraction:** leave the battlefield through your own deployment edge; the carried treasure's Coin Value is added to your score.",
+        "**Extraction:** leave the battlefield through your own deployment edge; remove the carrier from play and add the carried treasure's Coin Value to your score.",
     ]
     for n_ in notes:
         y = s.para(rx, y + 7, n_, rw, 9, lead=10.5) + 2
@@ -126,6 +126,6 @@ def fig19():
         s.text(rx + rw - 4, y + 11.4, b_, 9, 700, "end")
         y += 16
     y += 4
-    yy = s.para(rx, y + 8, "Picking up the Strongbox also costs Interact [1 AP]. Coin Values: Goblin 1c, Skeleton Warrior 1c, Bandit 3c (B.5). The game ends after Round 6; the higher score wins (B.6).", rw, 9, lead=10.6)
+    yy = s.para(rx, y + 8, "An adjacent, unengaged combatant picks up the Strongbox or a Satchel with Interact [1 AP]. Coin Values: Goblin 1c, Skeleton Warrior 1c, Bandit 3c (B.5). The game ends after Round 6; the higher score wins. Ties: the Strongbox-extracting side wins; otherwise draw (B.6).", rw, 9, lead=10.6)
     yk = K.strip_for(s, 0, max(yl, yy) + 6, FULL_W, labels19)
     return s, yk + 2

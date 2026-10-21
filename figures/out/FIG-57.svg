@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="373.3pt" viewBox="0 0 504 373.3">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="368.2pt" viewBox="0 0 504 368.2">
 <title>10.1 Preparation Steps: procedural template</title>
-<desc>Template, not a fixed battlefield: the twelve Preparation Steps, with the step 11 default deployment zones and the step 7 terrain exclusion distances on a generic battlefield.</desc>
+<desc>Template of the twelve Preparation Steps, zones determined at step 7, terrain placement restrictions, and deployment at step 11.</desc>
 <defs>
 <pattern id="p-cover" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><path d="M0 0.5H5M0.5 0V5" stroke="#444" stroke-width="0.7" fill="none"/></pattern>
 <pattern id="p-diff" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#fff"/><circle cx="1" cy="1" r="0.75" fill="#222"/><circle cx="3" cy="3" r="0.75" fill="#222"/></pattern>
@@ -60,59 +60,58 @@
 </g>
 <text x="22" y="126.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve the Setup Roll-off.</text>
 <line x1="9.5" y1="131.3" x2="9.5" y2="135.6" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
-<rect x="0" y="135" width="214" height="46.6" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2"/>
+<rect x="0" y="135" width="214" height="88.2" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2"/>
 <g data-glyph="step">
-<circle cx="9.5" cy="158.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="9.5" y="162.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">7</text>
+<circle cx="9.5" cy="179.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="9.5" y="182.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">7</text>
 </g>
-<text x="22" y="145.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Place Terrain.</tspan><tspan font-weight="400"> Major Blocking or Impassable</tspan></text>
-<text x="22" y="155.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Terrain cannot be within 3" of a battlefield edge or</text>
-<text x="22" y="166" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">within 6" of a deployment zone unless the</text>
-<text x="22" y="176.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">scenario says otherwise.</text>
-<line x1="9.5" y1="165.6" x2="9.5" y2="185.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<text x="22" y="145.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Place Terrain.</tspan><tspan font-weight="400"> Determine deployment zones first</tspan></text>
+<text x="22" y="155.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(scenario instructions; otherwise the Roll-off</text>
+<text x="22" y="166" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">winner chooses opposite edges or corners).</text>
+<text x="22" y="176.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Defaults: 6" deep or 8"×8" corners. Alternate</text>
+<text x="22" y="186.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">remaining major terrain, Roll-off loser first. Unless</text>
+<text x="22" y="197.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">overridden, alternately placed Blocking or</text>
+<text x="22" y="207.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Impassable Terrain cannot be inside a zone;</text>
+<text x="22" y="218" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking pieces must be more than 2" apart.</text>
+<line x1="9.5" y1="186.4" x2="9.5" y2="226.8" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
 <g data-glyph="step">
-<circle cx="9.5" cy="193.1" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="9.5" y="196.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">8</text>
+<circle cx="9.5" cy="234.7" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="9.5" y="238" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">8</text>
 </g>
-<text x="22" y="195.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Place Objectives and Markers.</text>
-<line x1="9.5" y1="199.9" x2="9.5" y2="204.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<text x="22" y="236.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Place Objectives and Markers.</text>
+<line x1="9.5" y1="241.5" x2="9.5" y2="245.8" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
 <g data-glyph="step">
-<circle cx="9.5" cy="212.1" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="9.5" y="215.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">9</text>
+<circle cx="9.5" cy="253.7" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="9.5" y="257" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">9</text>
 </g>
-<text x="22" y="214.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Generate and Place Monsters.</text>
-<line x1="9.5" y1="218.9" x2="9.5" y2="223.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<text x="22" y="255.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Generate and Place Monsters.</text>
+<line x1="9.5" y1="260.5" x2="9.5" y2="264.8" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
 <g data-glyph="step">
-<circle cx="9.5" cy="231.1" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="9.5" y="234.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">10</text>
+<circle cx="9.5" cy="272.7" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="9.5" y="276" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">10</text>
 </g>
-<text x="22" y="233.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Assign Guard Points.</text>
-<line x1="9.5" y1="237.9" x2="9.5" y2="242.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
-<rect x="0" y="241.6" width="214" height="57" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2"/>
+<text x="22" y="274.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Assign Guard Points.</text>
+<line x1="9.5" y1="279.5" x2="9.5" y2="283.8" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<rect x="0" y="283.2" width="214" height="36.2" fill="#f0f0f0" stroke="#000" stroke-width="0.9" rx="2"/>
 <g data-glyph="step">
-<circle cx="9.5" cy="270.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="9.5" y="273.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">11</text>
+<circle cx="9.5" cy="301.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="9.5" y="305.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">11</text>
 </g>
-<text x="22" y="251.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Deploy the Parties</tspan><tspan font-weight="400"> as the scenario instructs.</tspan></text>
-<text x="22" y="262.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Where it is silent: the Roll-off winner chooses an</text>
-<text x="22" y="272.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">edge or corner zone and the other party takes the</text>
-<text x="22" y="283" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">opposite one; alternate placing Heroes, the</text>
-<text x="22" y="293.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Roll-off loser first.</text>
-<line x1="9.5" y1="277.4" x2="9.5" y2="302.2" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
+<text x="22" y="293.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Deploy the Parties</tspan><tspan font-weight="400"> in the zones determined in</tspan></text>
+<text x="22" y="303.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">step 7. Follow scenario instructions; otherwise</text>
+<text x="22" y="314.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">alternate placing Heroes, the Roll-off loser first.</text>
+<line x1="9.5" y1="308.6" x2="9.5" y2="323" stroke="#000" stroke-width="1" stroke-linecap="butt"/>
 <g data-glyph="step">
-<circle cx="9.5" cy="310.1" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="9.5" y="313.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">12</text>
+<circle cx="9.5" cy="330.9" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="9.5" y="334.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">12</text>
 </g>
-<text x="22" y="312.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Begin Round 1 with the Initiative Phase.</text>
+<text x="22" y="332.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Begin Round 1 with the Initiative Phase.</text>
 <rect x="232" y="6" width="272" height="17" fill="#fff" stroke="#000" stroke-width="1.2" rx="2"/>
 <text x="368" y="18.2" font-weight="700" font-family="'Source Sans 3'" font-size="10" fill="#000" text-anchor="middle">Template - not a fixed battlefield</text>
-<text x="232" y="34" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Tabletop clearance shown; Grid Mode below.</text>
-<text x="238" y="50.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 11 default: edge zones</text>
-<text x="370.8" y="50.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 11 default: corner zones</text>
-<g data-glyph="ter-excl">
-<rect x="238" y="58" width="118.8" height="118.8" fill="url(#p-aoe)"/>
-</g>
-<rect x="277.6" y="67.9" width="39.6" height="99" fill="#fff"/>
+<text x="232" y="34" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#000">Deployment zones determined before terrain.</text>
+<text x="238" y="50.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 7 default: edge zones</text>
+<text x="370.8" y="50.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 7 default: corner zones</text>
+<rect x="238" y="58" width="118.8" height="118.8" fill="#fff"/>
 <rect x="238" y="58" width="118.8" height="118.8" fill="none" stroke="#000" stroke-width="1.2"/>
 <g data-glyph="zone-A">
 <rect x="238" y="58" width="19.8" height="118.8" fill="url(#p-aoe)" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
@@ -149,22 +148,7 @@
 <line x1="257.8" y1="96.78" x2="257.8" y2="102.38" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 </g>
 <text x="247.9" y="102.78" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">6"</text>
-<g data-glyph="dim">
-<line x1="257.8" y1="99.58" x2="277.6" y2="99.58" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="257.8" y1="96.78" x2="257.8" y2="102.38" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="277.6" y1="96.78" x2="277.6" y2="102.38" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-</g>
-<text x="267.7" y="102.78" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">6"</text>
-<g data-glyph="dim">
-<line x1="297.4" y1="58" x2="297.4" y2="67.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="300.2" y1="58" x2="294.6" y2="58" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="300.2" y1="67.9" x2="294.6" y2="67.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-</g>
-<text x="297.4" y="66.15" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">3"</text>
-<g data-glyph="ter-excl">
-<rect x="370.8" y="58" width="118.8" height="118.8" fill="url(#p-aoe)"/>
-</g>
-<path d="M417 67.9 H479.7 V130.6 H463.2 A19.8 19.8 0 0 0 443.4 150.4 V166.9 H380.7 V104.2 H397.2 A19.8 19.8 0 0 0 417 84.4 V67.9 Z" fill="#fff"/>
+<rect x="370.8" y="58" width="118.8" height="118.8" fill="#fff"/>
 <rect x="370.8" y="58" width="118.8" height="118.8" fill="none" stroke="#000" stroke-width="1.2"/>
 <g data-glyph="zone-A">
 <rect x="370.8" y="58" width="26.4" height="26.4" fill="url(#p-aoe)" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
@@ -196,71 +180,60 @@
 <line x1="397.2" y1="86.55" x2="397.2" y2="92.15" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 </g>
 <text x="384" y="92.55" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">8"</text>
-<g data-glyph="dim">
-<line x1="430.2" y1="58" x2="430.2" y2="67.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="433" y1="58" x2="427.4" y2="58" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="433" y1="67.9" x2="427.4" y2="67.9" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-</g>
-<text x="430.2" y="66.15" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">3"</text>
-<line x1="397.2" y1="84.4" x2="411.2" y2="98.4" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<text x="418.98" y="102.88" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">6"</text>
 <text x="238" y="188.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Zones are 6" deep. The other pair</text>
 <text x="238" y="199.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">of opposite edges works the</text>
 <text x="238" y="209.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">same way.</text>
 <text x="370.8" y="188.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Corner zones are 8"×8"; the</text>
 <text x="370.8" y="199.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">second zone is diagonally</text>
 <text x="370.8" y="209.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">opposite.</text>
-<g data-strip="ter-excl">
-<rect x="234" y="225.5" width="26" height="12" fill="url(#p-aoe)" stroke="#000" stroke-width="0.8"/>
-</g>
-<text x="266" y="234.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Step 7 exclusion</text>
 <g data-strip="zone-A">
 <g data-glyph="zone-A">
-<rect x="335.94" y="224.5" width="30" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
-<rect x="335.94" y="224.5" width="3.2" height="14" fill="#000"/>
+<rect x="232" y="224.5" width="30" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="232" y="224.5" width="3.2" height="14" fill="#000"/>
 </g>
 <g data-glyph="hero-A">
-<circle cx="353.94" cy="231.5" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="250" cy="231.5" r="4.4" fill="#000" stroke="#000" stroke-width="0.75"/>
 </g>
 </g>
-<text x="369.94" y="234.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A zone</text>
+<text x="266" y="234.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A zone</text>
 <g data-strip="zone-B">
 <g data-glyph="zone-B">
-<rect x="232" y="240" width="30" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
-<rect x="232" y="240" width="3.2" height="14" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<rect x="321.57" y="224.5" width="30" height="14" fill="#f0f0f0" stroke="#000" stroke-width="0.9" stroke-dasharray="3.2 2.2"/>
+<rect x="321.57" y="224.5" width="3.2" height="14" fill="#fff" stroke="#000" stroke-width="0.8"/>
 </g>
 <g data-glyph="hero-B">
-<circle cx="250" cy="247" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
-<circle cx="250" cy="247" r="1.6" fill="#000"/>
+<circle cx="339.57" cy="231.5" r="4.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="339.57" cy="231.5" r="1.6" fill="#000"/>
 </g>
 </g>
-<text x="266" y="250" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B zone</text>
+<text x="355.57" y="234.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B zone</text>
 <g data-strip="hero-A">
 <g data-glyph="hero-A">
-<circle cx="336.98" cy="247" r="5" fill="#000" stroke="#000" stroke-width="0.75"/>
+<circle cx="426.55" cy="231.5" r="5" fill="#000" stroke="#000" stroke-width="0.75"/>
 </g>
 </g>
-<text x="355.98" y="250" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A Hero</text>
+<text x="445.55" y="234.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A Hero</text>
 <g data-strip="hero-B">
 <g data-glyph="hero-B">
-<circle cx="426.8" cy="247" r="5" fill="#fff" stroke="#000" stroke-width="1.4"/>
-<circle cx="426.8" cy="247" r="1.6" fill="#000"/>
+<circle cx="247" cy="247" r="5" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="247" cy="247" r="1.6" fill="#000"/>
 </g>
 </g>
-<text x="445.8" y="250" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B Hero</text>
+<text x="266" y="250" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party B Hero</text>
 <g data-strip="dim">
 <g data-glyph="dim">
-<line x1="234" y1="262.5" x2="260" y2="262.5" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="234" y1="259.5" x2="234" y2="265.5" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
-<line x1="260" y1="259.5" x2="260" y2="265.5" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="324.22" y1="247" x2="350.22" y2="247" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="324.22" y1="244" x2="324.22" y2="250" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="350.22" y1="244" x2="350.22" y2="250" stroke="#000" stroke-width="0.8" stroke-linecap="butt"/>
 </g>
 </g>
-<text x="266" y="265.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Stated distance</text>
-<text x="232" y="285.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hatched areas, including deployment zones: step 7 excludes major</text>
-<text x="232" y="295.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking or Impassable Terrain unless the scenario says otherwise.</text>
-<text x="232" y="306.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">White areas: outside these exclusions.</text>
-<text x="232" y="327.7" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Tabletop:</tspan><tspan font-weight="400"> The drawings show the 3" margin from the battlefield edge</tspan></text>
-<text x="232" y="338.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">and the 6" clearance from the deployment-zone outline, including</text>
-<text x="232" y="348.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">rounded corner exclusions. </tspan><tspan font-weight="700">Grid:</tspan><tspan font-weight="400"> Apply 2.6 to the zones and terrain;</tspan></text>
-<text x="232" y="358.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">count shortest grid distances at 1" orthogonally and 1.5" diagonally.</text>
+<text x="356.22" y="250" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Stated distance</text>
+<text x="232" y="270" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Hatched zones: alternately placed Blocking or Impassable Terrain</text>
+<text x="232" y="280.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">cannot be inside these zones unless the scenario says otherwise.</text>
+<text x="232" y="290.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Required scenario terrain follows its printed instructions.</text>
+<text x="232" y="312.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Tabletop:</tspan><tspan font-weight="400"> Unless the scenario says otherwise, alternately placed</tspan></text>
+<text x="232" y="322.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking Terrain must be more than 2" from all other Blocking Terrain,</text>
+<text x="232" y="333" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">measured between nearest edges. </tspan><tspan font-weight="700">Grid:</tspan><tspan font-weight="400"> The same restriction is more</tspan></text>
+<text x="232" y="343.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">than 2 squares. No general battlefield-edge or deployment-zone</text>
+<text x="232" y="353.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">clearance band applies.</text>
 </svg>

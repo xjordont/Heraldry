@@ -9,7 +9,7 @@ def fig01():
     phases = [
         ("Initiative Phase", "3.2", [
             "Refresh AP for each combatant that has an AP maximum.",
-            "Each side rolls 1d20 + its Party Leader's INT and SPI. The higher total wins Initiative.",
+            "Competitive: each side rolls 1d20 + its Party Leader's INT and SPI. Solo/cooperative: use 10.5.4 PvE Initiative.",
             "The winner chooses which side takes the first Party Phase activation.",
             "Resolve start-of-round effects.",
         ]),
@@ -26,7 +26,7 @@ def fig01():
         ]),
         ("End of Round", "3.5", [
             "Resolve end-of-round effects.",
-            "End effects that last until the end of the round.",
+            "End effects that last until the end of the round; remove remaining Temporary HP.",
             "Remove unspent AP.",
             "Resolve scoring, extraction, round limits and victory conditions.",
         ]),
@@ -121,7 +121,7 @@ def fig02():
              "Resolve effects that occur at the end of that combatant's activation.",
              "Mark the combatant as having activated this round."]
     y = step_list(s, ax, y, steps, aw, gap=5)
-    hh = box(s, ax, y + 1, aw, "**Reactions** (4.5): taken when a rule's trigger occurs, usually outside the reacting combatant's activation. Taking one does not begin or end an activation. Only 1 Reaction may modify the same action or effect against a given combatant.", anchor="start", fill=PALE, sw=0.7, pad=5)
+    hh = box(s, ax, y + 1, aw, "**Reactions** (4.5): taken when a rule's trigger occurs, usually outside the reacting combatant's activation. Taking one does not begin or end an activation. Declare before the source's damage dice; pay or commit costs under 4.5. Only 1 Reaction may modify the source against a given combatant.", anchor="start", fill=PALE, sw=0.7, pad=5)
     ya = y + 1 + hh
     # ---------------- Panel B: AP timeline ----------------
     bx = 250
@@ -138,7 +138,7 @@ def fig02():
     rows = [
         ("Initiative Phase", 3, "Refresh to 3 AP.", "3.2"),
         ("Party Phase - this Hero's one activation", 1, None, "3.3"),
-        ("Monster Phase", 0, "A Monster's slashing attack would damage the Hero: the Hero declares **Block** (Reaction, 1 AP). It is not an activation.", "5.5.1"),
+        ("Monster Phase", 0, "Before a Monster's slashing attack rolls damage, the Hero declares and pays for **Block** (1 AP). Resolve Block during defence; this is not an activation.", "5.5.1"),
         ("End of Round", 0, "Any unspent AP is removed.", "3.5"),
     ]
     ry = y + 6
@@ -190,9 +190,9 @@ def fig03():
     y = 21
     steps = [
         ("Declare and verify.", "Attacker, attack, target, primary damage type and any additional types. Confirm LOS, visibility, range, Cover and other targeting rules."),
-        ("Resolve declaration Reactions.", "Redirection and similar Reactions first, then verify again. The defender may declare at most one Reaction that modifies the attack (4.5)."),
+        ("Declare Reactions.", "Resolve redirection, verify legality, then declare all Reactions before any damage dice. Pay or commit costs under 4.5, including result-dependent Reactions. Resolve effects at their stated timings."),
         ("Roll and build damage.", "Base dice with Advantage/Disadvantage, Total Miss and Critical Hit checks, exploding dice, modifiers by damage type. Any Luck reroll (2.10) happens before consequences."),
-        ("Defend and mitigate.", "Resolve the chosen Reaction, then apply the Mitigation Order (5.1.1)."),
+        ("Defend and mitigate.", "Resolve the predeclared defensive Reaction, then apply the Mitigation Order (5.1.1). No new Reaction may be declared after the roll."),
         ("Apply and finish.", "Reduce HP, then resolve remaining Critical Hit effects, damage-triggered effects and conditions."),
     ]
     for i, (hd, body) in enumerate(steps, 1):
@@ -220,13 +220,13 @@ def fig03():
     panel_title(s, bx, 0, "B", "Mitigation Order and worked example (5.1.1)")
     y = 21
     mo = [
-        "Keep damage types separate. Apply AV and flat mitigation once. If a value reduces several types, use the source's listed order. Reduce each type to a minimum of 0. AV applies only to blunt, piercing and slashing.",
+        "Keep damage types separate. Apply AV first, then other flat mitigation in the controller's chosen order. Apply each value once; reduce several types in the source's listed order. Reduce each type to a minimum of 0. AV applies only to blunt, piercing and slashing.",
         "Apply Immune, Resistant and Vulnerable to each remaining type.",
         "Total the remaining damage and apply it.",
     ]
     y = step_list(s, bx, y, mo, bw, gap=4)
     y += 2
-    s.text(bx, y + 8, "Example: a Fighter declares Block", 9, 700)
+    s.text(bx, y + 8, "Example: Fighter pays 1 AP for Block before damage", 9, 700)
     y += 14
     # table
     cols = [bx, bx + 78, bx + 128, bx + 188]

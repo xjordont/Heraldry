@@ -193,15 +193,15 @@ def fig13():
     set_scale(4.0)
     P = 228
     ys = []
-    ys.append(deploy_panel(0, s, "A", "Opposite long edges", "Each party deploys within 6\" of its own long battlefield edge (6\" is the 10.1 step 11 default where the scenario gives no depth).", d_long, row_pitch=P))
-    ys.append(deploy_panel(1, s, "B", "Opposite short edges", "Each party deploys within 6\" of its own short battlefield edge (6\" is the 10.1 step 11 default where the scenario gives no depth).", d_short, row_pitch=P))
-    ys.append(deploy_panel(2, s, "C", "Roll-off winner chooses the edge", "(1) The Setup Roll-off winner chooses the edge (a long edge, or any battlefield edge, as the scenario states; the 10.1 step 11 default where it is silent). (2) The other party takes the opposite edge. Both are within 6\" of it.", d_choose, row_pitch=P))
-    ys.append(deploy_panel(3, s, "D", "Roll-off winner chooses a corner", "(1) The Setup Roll-off winner chooses an 8\"×8\" corner zone (as the scenario states; also the 10.1 step 11 default). (2) The other party deploys in the diagonally opposite corner.", d_corner_choose, row_pitch=P))
+    ys.append(deploy_panel(0, s, "A", "Opposite long edges", "Each party deploys within 6\" of its own long battlefield edge (6\" is the 10.1 step 7 default where the scenario gives no depth).", d_long, row_pitch=P))
+    ys.append(deploy_panel(1, s, "B", "Opposite short edges", "Each party deploys within 6\" of its own short battlefield edge (6\" is the 10.1 step 7 default where the scenario gives no depth).", d_short, row_pitch=P))
+    ys.append(deploy_panel(2, s, "C", "Roll-off winner chooses the edge", "(1) The Setup Roll-off winner chooses the edge (a long edge, or any battlefield edge, as the scenario states; the 10.1 step 7 default where it is silent). (2) The other party takes the opposite edge. Both are within 6\" of it.", d_choose, row_pitch=P))
+    ys.append(deploy_panel(3, s, "D", "Roll-off winner chooses a corner", "(1) The Setup Roll-off winner chooses an 8\"×8\" corner zone (as the scenario states; also the 10.1 step 7 default). (2) The other party deploys in the diagonally opposite corner.", d_corner_choose, row_pitch=P))
     ys.append(deploy_panel(4, s, "E", "Opposite corners, alternate placing", "Opposite 8\"×8\" corner zones. Parties alternate placing Heroes within their zone, starting with the party that lost the Setup Roll-off (stated, or the 10.1 step 11 default).", d_corner_alt, row_pitch=P))
     lx, ly = 2 * 168 + 4, P + 22
     yk = K.strip_for(s, lx, ly, 160, {"hero-A": "Party A Heroes (enlarged)", "hero-B": "Party B Heroes (enlarged)", "zone-A": "Party A zone", "zone-B": "Party B zone"}, title="Key (full key: FIG-20)")
     y = max(ys[3], ys[4], yk) + 6
-    yl = s.para(0, y, "Zones and bands are drawn to scale on a 36\"\u00d736\" battlefield (4 pt per inch); Hero markers are enlarged. North and South are the short edges and East and West the long edges, even on a square battlefield (10.1). Each party may field 1\u20134 Heroes; two or three are shown. Where a scenario states no depth or zone size (Sun-Drowned 2 and 3, The Mire 3, 5 and 6), the 10.1 step 11 default applies: 6\" from the edge, 8\"\u00d78\" corners. Where it states no placing order (these, Pale City 1 and most edge scenarios), Heroes are placed alternately from the Roll-off loser. Where only \"opposite battlefield edges\" are named, the Roll-off winner chooses the edge.", FULL_W, 9, lead=10.4)
+    yl = s.para(0, y, "Zones and bands are drawn to scale on a 36\"\u00d736\" battlefield (4 pt per inch); Hero markers are enlarged. North and South are the short edges and East and West the long edges, even on a square battlefield (10.1). Each party may field 1\u20134 Heroes; two or three are shown. Where a scenario states no depth or zone size (Sun-Drowned 2 and 3, The Mire 3, 5 and 6), the 10.1 step 7 default applies: 6\" from the edge, 8\"\u00d78\" corners. Where it states no placing order (these, Pale City 1 and most edge scenarios), Heroes are placed alternately from the Roll-off loser. Where only \"opposite battlefield edges\" are named, the Roll-off winner chooses the edge.", FULL_W, 9, lead=10.4)
     return s, yl + 2
 
 
@@ -271,7 +271,7 @@ def fig15():
         "**Survey Map:** a carried objective that starts on the start side, 3\" from the first ledge. Its carrier's Speed is reduced by 1\" while carrying it.",
         "**Path of Ledges:** 3–4 narrow (1\" wide) platform markers bridging the Chasm, with 1–2\" gaps that require a Jump. 1–2 ledges are marked Crumbling: a Hero ending an activation on one makes a DEX Check and falls on a failure.",
         "**Cartographer's Stone:** a 1\" marker on the delivery side, 3\" from the last ledge. The first party to place the Survey Map adjacent to it wins immediately.",
-        "**Jumping the Gaps (4.4.9):** each 1\" jumped costs 2\" of movement; declare a landing point, then make a DEX Check. A failed Jump into the Chasm causes a Chasm Fall (panel C).",
+        "**Jumping the Gaps (4.4.9):** each 1\" jumped costs 2\" of movement; declare a landing point, then make a DEX Check. A failed Jump leaves the jumper Prone at the last legal point before the gap and ends its movement; it does not cause a Chasm Fall. Monsters automatically succeed on Terrain Checks (2.3).",
     ]
     y = K.step_list(s, rx, y, notes, rw, gap=5)
     y += 2
@@ -282,7 +282,7 @@ def fig15():
     panel_title(s, 0, y, "C", "Chasm Fall (Undermarches 2 Special Rules)")
     y += 22
     falls = [
-        "**Chasm Fall:** a combatant Pushed off a Ledge into the Chasm, or that fails a Crumbling Ledge Check and falls, is immediately removed from play. A Hero is Defeated and makes a normal Injuries Roll. A non-Hero is resolved as though reduced to 0 HP. This replaces the normal Falling rule. Any carried items, including the Survey Map, fall into the Chasm and are lost.",
+        "**Chasm Fall:** a combatant carried into the Chasm by forced movement, or that fails a Crumbling Ledge Check and falls, is immediately removed from play. A Hero resolves being reduced to 0 HP under 5.8, including its Wound and Injuries Roll, then is removed as Defeated even if the roll restores HP. A non-Hero is resolved as though reduced to 0 HP. This replaces the normal Falling rule. Any carried items, including the Survey Map, fall into the Chasm and are lost.",
         "**Hero or Hireling with a Fly or Climb Speed** that would fall may immediately spend 1 unspent AP, including AP reserved for Reactions, to catch itself. Place it Prone in the nearest legal space on a Ledge, and end its current movement. If it cannot spend the AP, resolve the Chasm Fall normally.",
         "**Monster with a Fly or Climb Speed** that would fall is placed Prone in the nearest legal space on a Ledge, and its activation ends.",
     ]
@@ -343,7 +343,7 @@ def fig16():
         "**Rival attempt:** a Party B Hero later attempts to activate another Stone.",
         "**Antlered Warden:** not placed at setup. When a Hero first Interacts with a Standing Stone, it is placed adjacent to that Stone (here, the Party A Hero's Stone) and is Awake when placed.",
         "**Monster Phase:** the Warden's Target Priority is the valid Hero who most recently activated or attempted to activate a Standing Stone, here the Party B Hero. If no listed target is valid, the normal Monster target priorities apply (9.5 E).",
-        "**AI Step 1, Entangling Roots:** if the Primary Target is within 8\" and not Immobilized, it must pass a DEX Check or become Immobilized. The activation then ends.",
+        "**AI Step 1, Entangling Roots:** if the Primary Target is within 8\" and not Immobilized, it becomes Immobilized. The activation then ends.",
         "**Random Monster Group 2:** placed inside the Central Clearing, 4\" from its edge, Resting. Groups 1 and 3 (near a Stone and a Treasure Chest) are not drawn.",
     ]
     y = K.step_list(s, rx, y, notes, rw, gap=5)

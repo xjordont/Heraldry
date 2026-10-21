@@ -328,7 +328,7 @@
 <text x="0" y="370" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Solid and dashed.</tspan><tspan font-weight="400"> A solid marker or zone with a distance symbol is one position that meets the printed limit; only the battlefield, zone</tspan></text>
 <text x="0" y="380.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">depths and stated distances are exact. Grey dashed pieces show one legal arrangement of something the rules leave open. Letters A</text>
 <text x="0" y="391.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">and B name the drawn zones; where a scenario assigns the parties by die roll, the zones do not say who is which.</text>
-<text x="0" y="407.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Where a scenario is silent</tspan><tspan font-weight="400">, 10.1 step 11 applies: the Setup Roll-off winner chooses the edge or corner zone and the other party takes</tspan></text>
-<text x="0" y="418.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the opposite one; zones are 6" deep or 8"×8" corners, marked "(default)" on a map, and parties alternate placing Heroes, starting with</text>
-<text x="0" y="429" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the party that lost the Roll-off.</text>
+<text x="0" y="407.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Where a scenario is silent</tspan><tspan font-weight="400">, 10.1 steps 7 and 11 apply: the Setup Roll-off winner chooses the edge or corner zone and the other party</tspan></text>
+<text x="0" y="418.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">takes the opposite one; zones are 6" deep or 8"×8" corners, marked "(default)" on a map, and parties alternate placing Heroes,</text>
+<text x="0" y="429" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">starting with the party that lost the Roll-off.</text>
 </svg>

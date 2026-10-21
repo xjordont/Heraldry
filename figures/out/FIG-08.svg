@@ -198,10 +198,11 @@
 <circle cx="11" cy="356.9" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="11" y="360.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
 <text x="22" y="359.9" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Declare</text>
-<text x="5" y="371.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Each affected combatant</text>
-<text x="5" y="382.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">that can take a legal</text>
-<text x="5" y="393.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reaction may declare at</text>
-<text x="5" y="403.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">most one (4.5).</text>
+<text x="5" y="371.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resolve redirection and</text>
+<text x="5" y="382.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">confirm targets. Declare all</text>
+<text x="5" y="393.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reactions before any</text>
+<text x="5" y="403.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">damage dice; pay or</text>
+<text x="5" y="414.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">commit costs under 4.5.</text>
 <line x1="117" y1="356.9" x2="122" y2="356.9" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
 <polygon points="128,356.9 121,353.7 121,360.1" fill="#000"/>
 <rect x="129.5" y="345.9" width="115.5" height="119.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
@@ -226,15 +227,15 @@
 <circle cx="399.5" cy="356.9" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="399.5" y="360.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
 <text x="410.5" y="359.9" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Resolve</text>
-<text x="393.5" y="371.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Using the final roll, each</text>
-<text x="393.5" y="382.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">affected combatant</text>
-<text x="393.5" y="393.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">separately resolves its</text>
-<text x="393.5" y="403.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Reaction, determines AV</text>
-<text x="393.5" y="414.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(including applicable AD,</text>
-<text x="393.5" y="424.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">5.4.3), then applies AV and</text>
-<text x="393.5" y="435.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">flat mitigation before</text>
-<text x="393.5" y="446.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Immune, Resistant and</text>
-<text x="393.5" y="456.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Vulnerable (5.1.1).</text>
+<text x="393.5" y="371.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Each combatant resolves its</text>
+<text x="393.5" y="382.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">predeclared defence using</text>
+<text x="393.5" y="393.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the final roll. Apply AV first,</text>
+<text x="393.5" y="403.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">then other flat mitigation in</text>
+<text x="393.5" y="414.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">its controller's chosen</text>
+<text x="393.5" y="424.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">order, then Immune,</text>
+<text x="393.5" y="435.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Resistant and Vulnerable</text>
+<text x="393.5" y="446.1" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(5.1.1). No new Reaction</text>
+<text x="393.5" y="456.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">may be declared.</text>
 <text x="0" y="481.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
 <circle cx="31.88" cy="481.3" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
 <text x="48.88" y="484.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Source / origin</text>

@@ -1,19 +1,12 @@
 {
- "reviewer": "Codex integration owner and two delegated figure reviewers; all 57 freshly inspected; repair authors, not an independent human review",
- "reviewed_at": "2026-10-16",
+ "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+ "reviewed_at": "2026-10-21",
  "figures": [
   {
    "id": "FIG-01",
-   "svg_sha256": "ef4dcbe2044bb1a18ed96591f7b16a779948a153fc244ad8a3e9fa605975a71c",
+   "svg_sha256": "673a6cd908691f01526d71949229ac9fd68a83892bd890c984cc451415a6682e",
    "caption_sha256": "52861a6881d4605007bb65dbf1b5fdc4e48ae089709972c007b9e373633557d6",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "985-1016",
-    "1017-1036",
-    "1037-1090",
-    "1091-1120",
-    "1121-1131"
-   ],
    "findings": [
     {
      "id": "RC493-FIG-01-FULL",
@@ -24,7 +17,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "d1a72d227329f5931d351c9692f4eb8f098c34e88c637edf11242d8d97943548",
+   "rules_sha256": "56a48b41a40cdd53ca545294012b97d8420a359d01c8255c404161d798652c61",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -45,20 +38,52 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.5",
+    "10.5.4",
+    "5.4.2"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "3.1",
+     "3.2",
+     "3.3",
+     "3.4",
+     "3.5",
+     "10.5.4",
+     "5.4.2"
+    ],
+    "observations": "Compared 3.1-3.5: four phases and override loop retained. Added competitive versus PvE initiative route and Temporary HP removal at End of Round step 2. Inspected final render: phase headers, bullet lists and loop fit within frame. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-01.png",
+     "png_sha256": "676e2518da3a9aea9b94b602f9d14af2e03c5ec0f05deb6513e464f2ccb62a6f",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-02",
-   "svg_sha256": "e01dc73c3a8e2a05b4e2af34a17ee1a33b24f49b3944f6e326f0c1f390b878e8",
+   "svg_sha256": "77870340690440f89f1576e9edb91e35a2a40a6ef0e58581fec216cfe7c4f0b2",
    "caption_sha256": "ed4ed4f46d21fef9323d26e776d16e5dec23538dd2debe48cc8b8963d4e216ab",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "564-571",
-    "1055-1080",
-    "1200-1220",
-    "1418-1435",
-    "1623-1632"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -76,7 +101,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "b736ff7957a6700b34ce2588199ac3299cdfb6764f9e0b8cc5ddfd67193698cf",
+   "rules_sha256": "cf872f906caad58e0701379c277c10fb9f7577d8dc52aee0465ab5d5ed023009",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -103,19 +128,54 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "2.5",
+    "3.3.1",
+    "3.3.2",
+    "4.2",
+    "4.5",
+    "5.5.1",
+    "3.3",
+    "3.5"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "2.5",
+     "3.3.1",
+     "3.3.2",
+     "4.2",
+     "4.5",
+     "5.5.1",
+     "3.3",
+     "3.5"
+    ],
+    "observations": "Compared 2.5,3.3,4.5,5.5.1: activation eligibility, Stunned/Sleeping zero-AP exception and 3-to-1-to-0 AP example retained. Added pre-roll declaration and cost payment or commitment. Block now explicitly declared and paid before damage and resolved during defence. Render inspected: AP squares, boxes and notes fit. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-02.png",
+     "png_sha256": "85ef77bdca92b133874aa7bb4b94247c24545b425f3c540e3482fca33216ea15",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-03",
-   "svg_sha256": "2d23e5cd3f5a4066a986ec6000e71779a3c5a749633c06eb7a6ba2b665c6f123",
+   "svg_sha256": "46e81444dc17747bece94bb3eecda89774c66d2eaf7ec90e81e757add560aae9",
    "caption_sha256": "6d55c01c7630a81e9ac7634f63590cd13bbe3e5abba7626d0f4280f37c6f985f",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "1486-1501",
-    "1511-1522",
-    "1523-1546",
-    "1573-1610"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -134,7 +194,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "a3ed7f5a303b089a293b4971c9b47e41dbabd4381b7906d7f63bd756bc802ce9",
+   "rules_sha256": "066c1d0c26ec5bba00f607571635bf5019040a8fd6d346729503fea622ba70fc",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -155,6 +215,41 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "5.1.1",
+    "5.2",
+    "5.3",
+    "5.4.3",
+    "4.5"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "5.1.1",
+     "5.2",
+     "5.3",
+     "5.4.3",
+     "4.5"
+    ],
+    "observations": "Compared 5.1.1,5.2,5.3,5.4.3: all Reactions declared before dice, result-dependent commitments and no new post-roll declaration made explicit; AV precedes other flat mitigation in controller order. Block example pays before damage. Both arithmetic examples verified. Render inspected: five steps and both tables legible without overlap. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-03.png",
+     "png_sha256": "d3b2fe19ca4442ac02f2f2118c512e3a5fd505b0034bafc13f90e40b82cae6b4",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -162,12 +257,8 @@
    "svg_sha256": "ed49b1efbbfa1023ba875ae753aaa1861632a43e768c153bf8f8a3a72d854c68",
    "caption_sha256": "af0a2348990a339cb58f9c310a312c21d2bf0509ff7c0827544a8671fe2c7a82",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "588-628",
-    "629-647"
-   ],
    "findings": [],
-   "rules_sha256": "f8ca9f36f833cd713aff701a69e1dd72987d11fb52905b708d378c8b57dedbe5",
+   "rules_sha256": "1db3d05b3efaaa078c4f8b9accfb34dba8b154e19a32fde1e992b22f985863a6",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -188,19 +279,42 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "2.6",
+    "2.6.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "2.6",
+     "2.6.1"
+    ],
+    "observations": "Compared 2.6,2.6.1: closest-footprint Tabletop measurement, 1/1.5 grid range, S/M/L/H footprints and declaration/verification/lock timing remain correct. Render inspected: four panels, distances and flow boxes fit. No content change. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes. Monster hatch distinguishes footprints; all size labels and measurements fit.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-04.png",
+     "png_sha256": "01f9323e38d2d6540dedba1080aa021d1d845eced381b0f3bb1562ca08fd44b4",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-05",
    "svg_sha256": "2aec8ebe1666a0d3916285470008ce62af98b1ea3edd2328b07220265027a344",
    "caption_sha256": "3c8b97284dbb16f647708e93f2b3c1c04fd3293df1642e819c788366902789f1",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "598-600",
-    "893-896",
-    "1310-1331",
-    "1376-1383"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "major",
@@ -217,7 +331,7 @@
      "fix": "Optional: use a neutral hatch. Accepted."
     }
    ],
-   "rules_sha256": "420b6f83c7b85679fb2c60c75e6be4b3db5d3df2e986bfb14a32b03754c87c2d",
+   "rules_sha256": "2ef7d61dd0be7b679fb0ae4f46d1bfd808bf43d8fb83921ffd16e95a089dec4f",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -238,19 +352,46 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "2.6",
+    "2.9.3",
+    "4.4.3",
+    "4.4.7"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "2.6",
+     "2.9.3",
+     "4.4.3",
+     "4.4.7"
+    ],
+    "observations": "Compared 2.6,2.9.3,4.4.3,4.4.7: 1+1.5+1.5+1=5, forbidden next diagonal5.5, Difficult costs2/3, maximum overlapping movement cost and diagonal intermediate-position rule verified. Render inspected: path totals, footprints and allowed/forbidden corners remain clear. No content change. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes. Difficult Terrain stipple, footprint hatch and dashed destination remain distinct; cost labels readable.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-05.png",
+     "png_sha256": "c6a71a619d82f26b995f34b9f8b03335f1a097556efd06ed146ea18e570da590",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-06",
-   "svg_sha256": "95b6280c207fe96d78d386a2f3662ce4a93a59f93fdc40051f9d04a7d177b8e8",
-   "caption_sha256": "2b64538ff90d7b6bf81b00fc10ab6af2508ff75c98b78c44ddb2309b98f3604c",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "1454-1485",
-    "1332-1343",
-    "1677-1688",
-    "629-647"
-   ],
+   "svg_sha256": "1d49d1327ac86487b009531e0d3a9b1170cc426617eb97ec0e05f76afdf9f929",
+   "caption_sha256": "d32a4a3b9b0f37ea252e9615a0cb7c6fef3ca9f327f2fd3194976a12eb21a13b",
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -267,7 +408,7 @@
      "fix": "None. Triaged as A-12 NOT_AN_AMBIGUITY."
     }
    ],
-   "rules_sha256": "54b70505eeac96080a0001de5bef77e11dd62232e2cdd6931e01324832267132",
+   "rules_sha256": "3264b55898ad06ceb0f45c2e45bed91eb313d6f4d6b2a0d2e50a14656caa49c1",
    "rc493_review": {
     "reviewer": "Codex delegated source-proof/figure reviewer (same model family; drafted source proposals)",
     "date": "2026-10-15",
@@ -297,21 +438,46 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "2.6.1",
+    "4.4.4",
+    "5.1",
+    "5.5.4"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "2.6.1",
+     "4.4.4",
+     "5.1",
+     "5.5.4"
+    ],
+    "observations": "Compared5.1,4.4.4,5.5.4: added Knocked Out exclusion from Engagement; horizontal melee/Reach square bands retained. Move trigger point, Shift and forced movement exclusions correct. Render inspected: bands, tokens, paths and expanded caption fit. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes. Dashed ghosts and solid movement arrows visible; Reach shades remain distinct.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-06.png",
+     "png_sha256": "35a5f661f4e1100def4a5b75c658fc225d837b7cb5145983e18d91719c78b350",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-07",
-   "svg_sha256": "320291b49379e64cbe7a944816cf56fdcaecf9bd761fb35a76cd2cd5a627ed79",
-   "caption_sha256": "9aace777a0ef13cc944e5a164ff9619a7904b7c507c45bd82647ac80cf90ba82",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "664-681",
-    "682-697",
-    "789-813",
-    "832-880",
-    "838",
-    "872"
-   ],
+   "svg_sha256": "b9ec19058ebb3e37cae08dc27587beb116e5073ec37ab6fb9fd0a4cdb4bf0f59",
+   "caption_sha256": "da2684af33d1f94724dd1c1ec89f91c25edf6090b317d4dab6adec65cd06bf72",
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -343,7 +509,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "2c44cf737fb0cff529cfeef78a0cd24cd33a076e26a8b02d9ff4587f580f7ba0",
+   "rules_sha256": "5428e3df0dcc9af7df7247885c62d67888bbd7940db3dd188b00e993f051d94a",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -364,19 +530,48 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "2.7.1",
+    "2.7.2",
+    "2.8.4",
+    "2.9.1",
+    "4.4.4"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "2.7.1",
+     "2.7.2",
+     "2.8.4",
+     "2.9.1",
+     "4.4.4"
+    ],
+    "observations": "Compared2.7.2,2.8.4,2.9.1: sight lines verified against interiors and shared corners, ally Cover and Impassable defaults. Fixed illegal diagonal Shift1 to orthogonal1 and moved callout clear of token. Added ranged Power base-dice and harmful LOS-based Power Check Cover effects. Render inspected: six panels and expanded strip fit with clear callout2. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes. Patterned Cover, Impassable, and Monster marks are distinct; dashed LOS and solid Shift separate clearly. Orthogonal Shift clears the ally.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-07.png",
+     "png_sha256": "40602ce7fa590a7063f742de4fccbe4fdf44683b9ff049dbf29b2f0dfc6e4e45",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-08",
-   "svg_sha256": "f3e1e73b91362f56c1964b3dcfd0bdbfa9c42d547d914d41bf05f6761ac86148",
+   "svg_sha256": "ae8e5a93964aeab171f4b12166e9d3bee265131e62981c918d86c01186810734",
    "caption_sha256": "ea71fbfe0c101eb942d0c1165c467baf33266a6fc2d671a7c30a04cf45650c47",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "698-747",
-    "727",
-    "728",
-    "741"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -409,7 +604,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "79254c859187a2e1710e07bad7ca841c517644403f4f15f649022374b66ce2c9",
+   "rules_sha256": "00f71fc99238f5fb6f764a90cc32230d76875cc492d954edc8f8c9444574ea25",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -430,18 +625,48 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "2.7.3",
+    "4.5",
+    "5.1.1",
+    "5.4.3",
+    "8.2"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "2.7.3",
+     "4.5",
+     "5.1.1",
+     "5.4.3",
+     "8.2"
+    ],
+    "observations": "Compared2.7.3,4.5,5.1.1: 13-square Aura2 and 7-square Cone3 masks correct, blocking excludes screened cone square; footprint aura note preserved. Shared-roll flow now redirection/confirmation/all-Reactions/costs before dice; AV-first ordered flat mitigation and no post-roll declaration. Render inspected: all panels and expanded flow boxes fit. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes. Area hatching and solid Blocking square render correctly; seven cone squares and blocked-square cross visible.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-08.png",
+     "png_sha256": "e6a5cc368f57cf31e3037b0dbe595a1b7287ec39533cd9f15f9162ee6c5078be",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-09",
    "svg_sha256": "b45caa4c89bd326753aefc4da65f914c425811ec57bde9ad8549aa2707cfb34b",
    "caption_sha256": "541b0cb23f14eaf54fa559fef9c62dc83584c24808e496e78e9eb3942a2eb2e6",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "1350-1375",
-    "1376-1383",
-    "1701-1708"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -472,6 +697,37 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "4.4.6",
+    "4.4.7",
+    "5.6.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "4.4.6",
+     "4.4.7",
+     "5.6.1"
+    ],
+    "observations": "Compared4.4.6,4.4.7,4.4.10: Push/Pull/Slide direction, costs, no Reflex Attack, last-legal Collision with no inherent damage and ledge edge-point then falling sequence remain correct. Render inspected: paths, ledge dimensions and explanatory paragraphs fit. No content change. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes. Dotted forced-movement arrows, terrain hatch and edge-point target distinct.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-09.png",
+     "png_sha256": "0c487f848a1f3c6c4ce83c5344ecb34572261f2ac2acae5bbbb0b8187d23e53c",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -479,11 +735,6 @@
    "svg_sha256": "38d5f9c1879deda527706abbf229630d9273d9adaaef694011ae6a9c8208932a",
    "caption_sha256": "4839eb469dc7059f722eddbb959d8140ea89a8c3e1e8c69be21a6d1102f90ab8",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "7551-7572",
-    "7573-7590",
-    "1866-1870"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -502,7 +753,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "81d4f7ac6034183ba29085355d20a3fa2d779d93d62b3d310727be7d646a2e3e",
+   "rules_sha256": "e9c96038057b53da43bffab2b7c48117664df4388e251b352f68494520ebaf9a",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex core figure reviewer",
@@ -523,18 +774,44 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "5.9",
+    "9.3",
+    "9.4"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "5.9",
+     "9.3",
+     "9.4"
+    ],
+    "observations": "Compared9.3,9.4: Resting default, Guard Point, group placement, five wake-up triggers,6-inch no-LOS and Hidden/Invisible exceptions retained. Render inspected: distance circles and three examples clear. No content change. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes. Dashed 12-inch ring, solid 6-inch ring, sight lines and wall crosses render clearly.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-10.png",
+     "png_sha256": "0c7659280cbfee8360262d24ffad881e57983256d57921b3f43fe8f9ed2cec4c",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-11",
-   "svg_sha256": "56173aa391ae8f4243f4c9e179a5eb1361bdf931643636f403e994dd9491dd09",
+   "svg_sha256": "19cba43c60d75c03768c3380dda0e046bdfded36735af68740937296ecbcbd89",
    "caption_sha256": "600f954dc6577dfeec6d79eb5a3a19037f9cd56134184df898933b8b5144b980",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "7626-7637",
-    "7638-7641",
-    "1113-1120"
-   ],
    "findings": [
     {
      "id": "RC493-F11-M01",
@@ -561,7 +838,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "f9d695a6b8ceb164269fee683d9b62b9426d4d322693aa0511d7f5b752e879fe",
+   "rules_sha256": "a3cd2cb96a6b3399856d9d44f03781b3571998e89a6bb1b2e398d4df28b46bf4",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -597,18 +874,42 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "3.4.3",
+    "9.5"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "3.4.3",
+     "9.5"
+    ],
+    "observations": "Compared9.5C-F: added Knocked Out Primary Target melee attack without Engagement and random legal attack selection, including ranged Multi-Attack choice. First valid AI Step, Search and No Visible Target unchanged. Render inspected: expanded outcome boxes and yes/no connectors fit. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-11.png",
+     "png_sha256": "8613b9c179e418c0e4b96e8b19540f461aabcf9a34886cf589f0b9ff454b148b",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-12",
-   "svg_sha256": "676089746c0d33ee1b2604dfda6db5eee97e0877677d41704c9e60e131580cda",
+   "svg_sha256": "dd34cc6439481947e8c1b734ec8b0f5925cb2b5d688612df3777d0e6cf7a4754",
    "caption_sha256": "716f96cb579ece9398a8ceeaf468786df9db73bec39f5f066ebdf4166b0c356d",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "7605-7614",
-    "7642-7651",
-    "7652-7669"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -641,7 +942,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "ab68a132ff34338f113ad9641cee4dfc263dba9944a375d27fb282aca10cbe38",
+   "rules_sha256": "11d8204b7f2eee09988b77a09ad52d1b0c23c8ee767f05783e9b43a6cf55c957",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -677,53 +978,46 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "9.5",
+    "2.6",
+    "2.9.1",
+    "2.3"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "9.5",
+     "2.6",
+     "2.9.1",
+     "2.3"
+    ],
+    "observations": "Compared9.5E-F and2.3: nearest visible selection, HP/Most Recent Attacker/random ties and movement priorities retained. Blocked-route example now explicitly says no attack route this activation including Climb/Jump, respecting new automatic Terrain Check success. Render inspected: tie ladder and route caption fit. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes. Hatched enclosure permits LOS through it; target and route remain readable.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-12.png",
+     "png_sha256": "3613147f972788708196569987f03b36e8c36b56e1fe33b069f51469407536bb",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-13",
-   "svg_sha256": "56ba2a97c17cbcdb86e042ee147da88b0d19ae8608d8e69587bb4b9e41221a6a",
-   "caption_sha256": "2a0de41b660deb37e1f141fbe382326cf855c028ca8a01e36bb69e0e648c7165",
+   "svg_sha256": "cd5709adf3fda64e0edb5c251595d1f1182402f16dfd27fc6ca63209517a6b96",
+   "caption_sha256": "e72ccc70036d3d19d3618e0973b12fb21347a341fb4d39e5fd2350ecdd7de51a",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "11029-11075",
-    "11072",
-    "12025",
-    "12096",
-    "12170",
-    "12238",
-    "12314",
-    "12398",
-    "12481",
-    "12546",
-    "12604",
-    "12680",
-    "12759",
-    "12846",
-    "12929",
-    "12997",
-    "13062",
-    "13166",
-    "13239",
-    "13318",
-    "13404",
-    "13470",
-    "13541",
-    "13603",
-    "13671",
-    "13745",
-    "13819",
-    "13884",
-    "13955",
-    "14018",
-    "14089",
-    "14168",
-    "14254",
-    "14325",
-    "14402",
-    "14477",
-    "14554",
-    "14633"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -762,7 +1056,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "87410effc52c145db32ea62db17306a3cd096dcb2c6768fa3b593e40b1223fc6",
+   "rules_sha256": "fed979ffc912421d148e7a226589bad44827976fc7981676933cbdc7e4870ba7",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -824,20 +1118,42 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "10.1",
+    "10.4"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.1",
+     "10.4"
+    ],
+    "observations": "Five deployment panels inspected: 6-inch edge and 8-inch corner zones, step 7 choice/depth and step 11 alternate placement labels fit; enlarged Hero markers and compact key are clear.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-13.png",
+     "png_sha256": "9cc83115b70850bcdba4d064d7a794042677c83ebe70b6a9fb9c644314c7f84d",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-14",
    "svg_sha256": "e070b9a30feaf25f60dcdd9eae8625216091ac5abd6518bc97c12478b321c65a",
    "caption_sha256": "f4a27a1a867587d4f23c9c616c7132e09202d2a769b7ac8147afd47a1e0a1eca",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "12132-12170",
-    "12209-12238",
-    "12965-12997",
-    "13035-13062",
-    "11072"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -876,7 +1192,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "3f6184820c510f013384079d0a3acd3b43b6458efb99f98f9e7762731ae7a77c",
+   "rules_sha256": "b28b4461986e28c7146d3718152f47fe00c994517d04e451e022dabb78c7a979",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -938,18 +1254,42 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "10.4",
+    "2.6"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "2.6"
+    ],
+    "observations": "Four deployment cases inspected: Trail, shared-edge Chasm, enlarged central Safe Zone and Ravine. Nearest opposing edges show 7 inches versus 6-inch limit and 4 versus 3-inch limit; dimensions and keys readable.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-14.png",
+     "png_sha256": "8a283c3b07b1f1345eb06490358992aae56022addcdfe758e3c38725abf13259",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-15",
-   "svg_sha256": "ee1ee3774b499b8941b28a99c1c640960c22431a66522412ed6d1bfce70c2010",
-   "caption_sha256": "9ad7ddf4dd7899960895ce2aa3af130450d8492101c1d158ed0e0fdf0187977e",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "12945-13014",
-    "1394-1405",
-    "13011"
-   ],
+   "svg_sha256": "d27cac0ee2e3163a632b83edfcf6c9a87c389165f208a1ac7e0cb480ff98affc",
+   "caption_sha256": "0a0b3fd58d19e818228ffd3603b53b1377f8e14854987e882882f2ec5f9593b7",
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "major",
@@ -987,7 +1327,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "164cb74b8b1ca488a72cc943a36ddb1364923af4072ad6635a3f8f416cafdea1",
+   "rules_sha256": "d7bec4e4543435d94a0314bf9463c3209d38dae4bdc55ba41be2926bbd74d8fe",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1049,20 +1389,44 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "10.4",
+    "4.4.9",
+    "2.3"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "4.4.9",
+     "2.3"
+    ],
+    "observations": "Chasm map, 3-inch objective placements, platform schematic and all eight notes inspected. Failed Jump now ends Prone before gap without Chasm Fall; all forced movement into Chasm, 5.8 Wound/Injuries and removal despite restored HP, and automatic Monster Terrain Checks explicit. Text and key fit.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-15.png",
+     "png_sha256": "8440b8d3eb434f193c0833adf461719fb12669578257cbd347db7962f795cbaa",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-16",
-   "svg_sha256": "aab154537f89f6da5f7acd26079f3486769e5e8e7e4b7fd41b37201ca343578b",
+   "svg_sha256": "dc13f842db66a46bb609c1e18b34f9499c7d0f7c30513c84a1a383ab6d1aa0f5",
    "caption_sha256": "ae5fde33740332bc58851e5f222f4cb7d6a742c0b0bcd7b59081340c117c55d7",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "12042-12111",
-    "12088",
-    "12093",
-    "12100",
-    "7642-7651"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -1100,7 +1464,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "869e39c91a8afac6869ab4aca7751855328f4ddb7896a320f8271e32af21ad03",
+   "rules_sha256": "e231b4eb1d6060e5d715b223127ccd8c8c2c1346feb830de784a9a44fc557d93",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1171,6 +1535,35 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "10.4",
+    "9.5"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "9.5"
+    ],
+    "observations": "Whispering Grove target arrow, Stone spacing, 4-inch Clearing-edge placement and Warden 2-inch footprint inspected. Entangling Roots automatically Immobilizes; removed DEX Check. Six steps and compact key legible.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-16.png",
+     "png_sha256": "0b45a4423a70863427843481bfed335222c5053d20c107ea596468ec3a7385fc",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -1178,12 +1571,6 @@
    "svg_sha256": "c2d2eaae5ed8a465b4b5f92d4e9d92298827624fd8f4c3d24fb395d504d91087",
    "caption_sha256": "9bbff0ec3080c708ed8841aacc21de7f3ab9e2b3496f5307f163a768e14c3b43",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "15189-15199",
-    "15200-15216",
-    "15221-15252",
-    "15405-15480"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -1193,7 +1580,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "cd934f28a5a2da349d0ac16c724ce2520adad6ba5321f38ee5f132e4dfe8b4ce",
+   "rules_sha256": "e2e645314b3dbdc970bc329704886e585d7868c4239f68eb8ec480efba84f08b",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -1220,20 +1607,46 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "11.2",
+    "11.2.1",
+    "11.2.3",
+    "11.2.4"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "11.2",
+     "11.2.1",
+     "11.2.3",
+     "11.2.4"
+    ],
+    "observations": "Compared11.2.1-11.2.4: four-phase cycle,4TAP default/Journey override, checklist and six locations remain correct. Render inspected: phase boxes, loop, checklist and location rows fit. No content change. Final Typst render inspected with actual bundled sans-serif typography: no clipped text or overlapping boxes.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-17.png",
+     "png_sha256": "5374d90bef938e062cc868b6f0ed11395c1c329dc5d1c4fd727cc52eab524c22",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-18",
    "svg_sha256": "c16005bf9982073175e5dbf726e357ae3f73320f586bc953eb931485252ce045",
    "caption_sha256": "bb91f97acb9764f77c17c65ad3005629e883300ccf5fdc36cff09fb3149593d2",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "16082-16208",
-    "16254-16339",
-    "16348-16490",
-    "16182",
-    "16358"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -1282,7 +1695,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "894d234f58ca960a33618502f6786a4149c7f08d74b6ea8e705996527fadfd86",
+   "rules_sha256": "bc06363e8ad1ed8dbf83c1cdbf567b7e51d45077fc2ab3e05c6f3c82771688aa",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -1318,21 +1731,40 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "A"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "A"
+    ],
+    "observations": "Appendix A map, relative Wolves inset and fixed Round 1 table inspected against A.4/A.11. Initiative14/10, damage5/6/0 and3/3, final Edric5HP Prone, AP pips and blocked Wolves3/4 match current source; panels and key fit.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-18.png",
+     "png_sha256": "edd1e19ba5abd9d2dc8abbc3c5e5d6f6eb3dadbb7a0d8ea04c469c50bab65d04",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-19",
-   "svg_sha256": "2d4fef806b68e888b092a93dda9865836aed8621943664671ca1a340df14aa55",
+   "svg_sha256": "8595cd625d2a4ae5f9fc0c337bc9e13203915f7f274d627a574c104048a23d74",
    "caption_sha256": "fe49806f43a98b023b889e149ab5d124fada5cd1ddb23fceae5a6a02f9988d64",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "16519-16532",
-    "17016-17070",
-    "17072-17095",
-    "16584-16590",
-    "17080",
-    "16540-16541"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -1396,7 +1828,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "385bbb51aec6acc3852dac54d683b0f646971a86a1aaf77bdd19d650bd6be153",
+   "rules_sha256": "646f12a93778563b65910440762130a36112fd7a477c752b9ab72f068e7984af",
    "reviewed_at": "2026-10-07T10:58:00Z",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1433,22 +1865,40 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "B"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "B"
+    ],
+    "observations": "Appendix B 24-inch map, 4-inch zones, three Resting groups and Satchels, Strongbox and road inspected. Ironscar Speed4 to2 and six-Move minimum and21c sum correct; extraction removes carrier, pickup adjacency/not Engaged and Round6 tie-break now explicit. Text, arithmetic rows and key fit.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-19.png",
+     "png_sha256": "98ff153f230f6efacfa586de211a32b821f7d51eb3894b26055d3c44635430bb",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-20",
-   "svg_sha256": "c8ecb0336f3d4f2d80f612122f18e3d348bf5ab89da1fb8930ece2d39f7c8edd",
+   "svg_sha256": "2f54a1af47978626fdfea73c8c8e8211805abf84bfaab2e6811a755d4ba5ea17",
    "caption_sha256": "a63ce41dec67f78d599463298aaaf0171c81b80d91fa13fc1c61ba164b3c07b5",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "11056-11073",
-    "594",
-    "618-619",
-    "845-873"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "major",
@@ -1497,7 +1947,7 @@
      "review_report": "production/qa/figure-review-key-template-rc493.md"
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1559,20 +2009,46 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "10.1",
+    "10.4",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.1",
+     "10.4",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Shared key inspected: all terrain hatch patterns, Hero/Monster footprints, status rings, arrival/exit arrows and dimension glyphs visible. Orientation, scale, representative counts and steps7/11 default notes fit and match RC512.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-20.png",
+     "png_sha256": "951c9c18db14fb6a474d14c8805a23dcec29c36f9fdeeb7d776641c262eb6a08",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-57",
-   "svg_sha256": "83321f5649c26b2063765aee63e366ee3febe834db8e4e48f48f4da930a2b8ee",
-   "caption_sha256": "df2b40190ea6c76019c3af4c7ba9fee6eb359dad06eccfe97eef0063a908fd06",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "11060-11073",
-    "592"
-   ],
+   "svg_sha256": "946c0157dde4af19325a7e4bd1bb52a42286b1303ce6daece0ad35a3967af88f",
+   "caption_sha256": "2c948c7b2e626bf200820350f4a1e407d4b9e068111daebeaeadc034e6f388dc",
+   "verdict": "PASS",
    "findings": [
     {
      "id": "RC493-FIG-57-FULL",
@@ -1583,7 +2059,7 @@
      "review_report": "production/qa/figure-review-key-template-rc493.md"
     }
    ],
-   "rules_sha256": "4180613dd50441150a67913ed7da29ae376fb3cc30afabf7a10917721d984311",
+   "rules_sha256": "50dc3b5442ed8b4264865d1d0b296ddaf5ab7d905503856445b0661d40731d8d",
    "rc493_full_review": {
     "reviewed_at": "2026-10-16",
     "reviewer": "Codex integration owner",
@@ -1604,6 +2080,35 @@
      "Repair-author/model review, not independent human proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "checked_source_sections": [
+    "10.1",
+    "2.6"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.1",
+     "2.6"
+    ],
+    "observations": "Twelve-step flow and two generic boards inspected. Zones established at step7, 6-inch edge/8-inch corner areas hatched; no obsolete 3-inch edge or6-inch zone bands. Step7 Blocking spacing >2 inches (Grid >2 squares), scenario exceptions and step11 alternating deployment fit.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-57.png",
+     "png_sha256": "c04fcf04da3d0cf699b176a09883da104890d92dbf3bdbea98bae77d1418123c",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -1611,12 +2116,6 @@
    "svg_sha256": "9e9892a4661387bcce6c10b99720b520763d45f6f957f0410a35b7d43e8d3b4f",
    "caption_sha256": "24e3de61ebae16efb499c45473c6d3e9c9ddbce16f7b430265f1800c74a005c0",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "11974-12041",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -1626,7 +2125,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1700,20 +2199,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Greenmark 1 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Boar·A, c1, c2, c3, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-21.png",
+     "png_sha256": "f74491edfbf472584e39fd38462b1d7fe406e90b5c49c894739eeddcc4817a78",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-22",
    "svg_sha256": "0289816a622eb896610f23040c89b1bdeffdea9da8b6889716c16c6ee47fcc9f",
    "caption_sha256": "a088dc773ba845429fdf518e08da129cc8186ac21979a0622bbcfb4863acd8e1",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "12042-12111",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -1746,7 +2271,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1820,20 +2345,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Greenmark 2 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Stone, s2, s3, c1, c2, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-22.png",
+     "png_sha256": "2fef1a9e615bf0ecbb0c330d1d04b516c5c737edf2ad7dc93a0c84a0bf34858d",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-23",
    "svg_sha256": "b7f5efdf485fe2f85df7b158ee09ee3f030823977303518840858817f87670d2",
    "caption_sha256": "09fa3f984d5cabc6476a1102b4acbb2102cfceaf80f06e869dbb9ad0dd7d30c3",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "12112-12188",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "major",
@@ -1873,7 +2424,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1947,6 +2498,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Greenmark 3 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: W1 · 8\" from edge, W2, W3 · 8\" from edge, Captain·A, G1·R, G2·R, G3·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-23.png",
+     "png_sha256": "8c2a56f6ae94418c1575f467ae85ec70dbcf6bd2926a36fbca4529cb2eae2e35",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -1954,13 +2538,6 @@
    "svg_sha256": "0d413e1f05a548f6e624f9a3b1eb5f17a59a67103d9021093494bb39c42ff2c7",
    "caption_sha256": "070284bf0c1b93210c8271212de40db49e6781bafdfe9eb2ce8f80c191e7bd90",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "12189-12259",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "852"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -2001,7 +2578,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2075,6 +2652,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Greenmark 4 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: b1, Central Bundle, b3, Brood·A, t1, Tarantula·A, t3. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-24.png",
+     "png_sha256": "ac808be74f0215f58fbe49a3da298afa9667cec69acf5bf2686b54e900b352a6",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -2082,13 +2692,6 @@
    "svg_sha256": "b4244a8f6cc1b6b70d366c6885cbd58d4b859e16bbdf81d4e528b412d91c4d62",
    "caption_sha256": "f8ed61a55822f6ba3ebb6b49e3ae9e289110a5e2c64fa8e1158864efa6437853",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "12260-12337",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
    "findings": [
     {
      "severity": "major",
@@ -2121,7 +2724,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2195,6 +2798,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Greenmark 5 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Clue, k2, k3, k4, c1, c2, G1·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-25.png",
+     "png_sha256": "61417f2e4f9d73e23893f726b9d03d957e8be91b1ec11dc72b1a5db3ba5feaf1",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -2202,13 +2838,6 @@
    "svg_sha256": "5a51b9fb8aee3619f39f6d53be5b20219bb64d2e1128d6ada0145f985c2767cf",
    "caption_sha256": "5a88723a16616abb589343f0598bba92a24c6db77fccd13db59578f6b1f9830e",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "12338-12424",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -2249,7 +2878,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2323,6 +2952,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Greenmark 6 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Treant·A, Totem, c1, c2, c3, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-26.png",
+     "png_sha256": "0a79d9e08d91ff0e17341681bab6354d84395517a167e6a81b93cc8795813732",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -2330,13 +2992,6 @@
    "svg_sha256": "f36d6379f1a3e1ccfa8a372d1dd8e6885818f0dc4aba3cc8afc8d3e2a86ea012",
    "caption_sha256": "1ce746937550aa3d5589748232462aa88db6f0ddb11938d5c2343879b09137cc",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "12427-12494",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -2379,7 +3034,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2453,6 +3108,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Ashlands 1 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: pc1, pc2, Lens, u1, u2, u3, Sentinel·A. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-27.png",
+     "png_sha256": "48419afcf0941c5603779add8ba31e45391226fedd1c582fd03d3421b4e99352",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -2460,14 +3148,6 @@
    "svg_sha256": "356b531bd6c4c92f139abb9c8236adb8f484e46995a39a335db222b0e49fc0c6",
    "caption_sha256": "03d2bafaaa4596a0d5bef8ae1efc15497c01b0a48341eb2d8ae7698e19725dee",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "12495-12568",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863",
-    "873"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -2500,7 +3180,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2574,6 +3254,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Ashlands 2 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Insight, Might, Will, c1, c2, G1·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-28.png",
+     "png_sha256": "4cebb14d22171a7280608a8d0f960dd77ac9a28122cdd4ac2a4385403b709426",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -2581,13 +3294,6 @@
    "svg_sha256": "d4bdc696311efe1b7f7ecfd5d4c910eff0eba384ee1e34c668f509a64a30e3c1",
    "caption_sha256": "ce89ad7247593b2f87859ece91d6e5809d444e310e809d1aa02cc291758d495e",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "12569-12623",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
    "findings": [
     {
      "severity": "major",
@@ -2629,7 +3335,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2703,19 +3409,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Ashlands 3 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: G1·R, G2·R, G3·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-29.png",
+     "png_sha256": "9031a8ee9123aa893fc6d6843c69b8d65092f7221eeb28f8feb6d0cf8cf1a266",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-30",
    "svg_sha256": "a9c445f527bb36680c5be14ec001a5db1136c7d1de1fdf10aaf784933c41a2dd",
    "caption_sha256": "8a22d6432a10ba1a6487af97cd7728fbf46551ac2d9fb5f2b05271016f2cc002",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "12624-12703",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -2747,7 +3480,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2821,20 +3554,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Ashlands 4 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Dust, dh2, dh3, Codex, Warden·R, Cache, ca2. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-30.png",
+     "png_sha256": "b8cfe3c10609a2b527021062f7977727bc4d1dd2255c85a8526866078399069c",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-31",
    "svg_sha256": "8b54212c12d104d649cbaa3089b78204969536d8691607314c447d1630ea6029",
    "caption_sha256": "8b8db7c5a96a1eae9ac8785598503f7e2e33e077ccd7897def5f0e7d8e65120e",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "12704-12777",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "870"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -2859,7 +3618,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -2933,6 +3692,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Ashlands 5 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Reliquary, Revenants·R, rv2, Bone, bf2, c1, c2. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-31.png",
+     "png_sha256": "d8f31f4d5d8fb1513861fb24ac72e0bd58d52c558dff9849469a13459b0d6c31",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -2940,13 +3732,6 @@
    "svg_sha256": "738a9d75221fd0b54ca067bcb5a1e8a55e0f375f33afbd4b0633152a156057f6",
    "caption_sha256": "299cb39bb185df20d39b5f3cf92925614e623ab5c63502c070b309ab61220a9a",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "12778-12876",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -2979,7 +3764,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3053,6 +3838,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Ashlands 6 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: bp1, bp2, bp3, Record, c1, c2, G1·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame. Vault Presence correctly absent at setup; first simultaneous all-Broken placement remains a later event.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-32.png",
+     "png_sha256": "2d4c226a6466752396d4d34a128d7fb40f501f8ebe3f0f5d3e85dcc5d54eae95",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -3060,12 +3878,6 @@
    "svg_sha256": "91d5bed6462264467175dc145edef175f0930f5a0511d40736b1d3d098003d31",
    "caption_sha256": "9a4a3e0acc9d93714ef2a566f9e884ac4fdadba6e33a9e750341742f9d12eb51",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "12879-12944",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -3098,7 +3910,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3172,19 +3984,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Undermarches 1 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Node, n1, n2, n4, n5, Lurker·A, G1·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-33.png",
+     "png_sha256": "e0c46404819d2c77925beee16687d8bf053865d92c620b65c966ec8643b6c86b",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-34",
    "svg_sha256": "d6d1dd9c8351df0c7cf1c223bbd78d368386ee5524eacda38ebe2c8909a59c82",
    "caption_sha256": "870bd56f84aef729295144d8af56822901b3e84bc15c9185a541368b709cdbd6",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "12945-13014",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -3215,7 +4054,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3289,6 +4128,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Undermarches 2 setup against RC512 source citations and RC493-to-RC512 diff; 1 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Map, Stone, c1, c2, c3, 1, 2. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-34.png",
+     "png_sha256": "9be040e0a40871e935e1c7788d000922003aeedd514e167ddf140eda9eab17d5",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -3296,13 +4168,6 @@
    "svg_sha256": "3b89e9e697dfd21b03168df9c848e52ed64be66b4176e0b60571abbbf40750bd",
    "caption_sha256": "22bd865dbd2cb161ee661022be8f4bbb937a72445eae74b03172d96f7a665c23",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "13015-13079",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -3320,7 +4185,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3394,6 +4259,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Undermarches 3 setup against RC512 source citations and RC493-to-RC512 diff; 1 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Vein, v2, v3, c1, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-35.png",
+     "png_sha256": "4c77a52511a6ab4f4ee421ecd3b6e1abf8c9a522ac79f41f9779b40408a7de07",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -3401,14 +4299,6 @@
    "svg_sha256": "a1c6fef9e3f68fba63b93e467864b0f20bf669b92dd13bbe35293acfdf22e23e",
    "caption_sha256": "ac1bc8f01ad5029bbd8a9b4f22d099cc6bbd345554c44fcd5b796ed09c4ba0ba",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "13080-13186",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863",
-    "870"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -3456,7 +4346,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3530,20 +4420,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Undermarches 4 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Plans, c1, c2, Commander·A, Guard·A, gd2, G1·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-36.png",
+     "png_sha256": "6e86ba1b9e765b25183f5433d235b46bdc7e24ce0051445044f1f631029a0efe",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-37",
    "svg_sha256": "5619ae31958308dad68169e3ed2f89313d701ac67d1d60ad51a004fe4382978f",
    "caption_sha256": "13cbf14c7b47fb52d82cf76cec9f9e75d7accc5e4e00765079f665baafed8050",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "13187-13259",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "873"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "major",
@@ -3582,7 +4498,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3656,6 +4572,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Undermarches 5 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Font, f2, f3, Heart, Shade·A, c1, c2. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-37.png",
+     "png_sha256": "091cc49dc4d4f975d5515a831b0aef462632d6ae942db4591f092ba34aad9e31",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -3663,12 +4612,6 @@
    "svg_sha256": "93547f1b5ecbdbd5ae8161b3a0388816f939db06d610b85543843746abd6f641",
    "caption_sha256": "3cbe27fbfab686100e750213d176449b681abb3e56937651555a25acd81cb30d",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "13260-13363",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -3693,7 +4636,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3767,20 +4710,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Undermarches 6 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Orb, o2, o3, Caller·A, G1·A, G2·R, c1. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-38.png",
+     "png_sha256": "8140ca5a40b80366e562223b27e864ecb9deaa2d1b637a30f7913077c989a50f",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-39",
-   "svg_sha256": "d908d658eaee9c31b61f3a10ae83b7b9a5c6452e0549ee98e92a10a72f0194a3",
+   "svg_sha256": "d0847f6d1ab6f8894836ec9cc4aedad3e9625c28d7a8094f2a8cc0982da5d022",
    "caption_sha256": "13f12a59491dffa6f52050f7a2518613084ca0565b1aa730946cf6a659e831bf",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "13366-13417",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -3814,7 +4783,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3888,6 +4857,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Pale City 1 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: c1, c2, c3, c4, c5, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame. Moved illustrative walls to give 2.5-inch and3-inch gaps from Buildings, meeting new >2-inch Blocking spacing.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-39.png",
+     "png_sha256": "260ca0a13b205a9828805a6a32a80860e63aa9a34c467ba45268db502df80e22",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -3895,13 +4897,6 @@
    "svg_sha256": "3c9917e4cecfd02907231cf4f73cc5eb78c62d4a4b39531ae46344bd2cd269cd",
    "caption_sha256": "e8be7e6d362e7365c34f59828aae77aa3ec01578618e731161d65f110755230c",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "13418-13487",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "870"
-   ],
    "findings": [
     {
      "severity": "major",
@@ -3925,7 +4920,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -3999,6 +4994,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Pale City 2 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Reagent, rc2, rc3, Chest, Golem·A, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-40.png",
+     "png_sha256": "400934a29dd643961d67753976d0e4bf87175fc9da9d3f3f1d270f4f71dd60c9",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -4006,12 +5034,6 @@
    "svg_sha256": "6864534af2d9fa263d3d45fb9a6dbeb6a3297d5f4c5378e6d618142a05467f5c",
    "caption_sha256": "6907dc8ea9a1e2bd22bc70c530f9681ab771df1bd34b463d7b1b9fd86338c613",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "13488-13556",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -4036,7 +5058,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4111,20 +5133,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Pale City 3 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Sarcophagus, sa2, sa3, sa4, sa5, Chest, G1·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-41.png",
+     "png_sha256": "5851a2cb8eb61b12e503fdc99992ebec7cc57a942e7fe33ffb409b7ce1a62c2f",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-42",
    "svg_sha256": "bf2126e3de536ae105a3a428591128e6ebf6a1dd41344ada61f3bcd8e7b26410",
    "caption_sha256": "08b85b987ca1b35e5c4a428829cd4d195e12fa27a85be74bd92d7549f9ad93be",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "13557-13616",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "870"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -4163,7 +5211,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4237,19 +5285,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Pale City 4 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Conduit, sc2, sc3, sc4, Chest, c2, c3. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-42.png",
+     "png_sha256": "8f418b76590aaa8647830de3f06db66890c7bf0a9ecc4ae47ab57babc0b4b001",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-43",
    "svg_sha256": "32fb8d989bc129f8594e95e9ddc99d3f1db5dbc1cfdf7507e76fd7a6a0e0bc96",
    "caption_sha256": "696980c4a640dc106f7560f39ad9ff073034130aa1d42026b0947bdd26ff0622",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "13617-13692",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -4274,7 +5349,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4348,19 +5423,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Pale City 5 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Wyrm·A, Hoard, c1, c2, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-43.png",
+     "png_sha256": "31828bd46289918bcd80fbfe73d1ce329357964783156e48df45e1f40ed3be16",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-44",
    "svg_sha256": "1f25e4ea1a092601eb838fb366e4e8020ce145e66a88d685a5b9f5e73705299a",
    "caption_sha256": "a5cafdb87a508cd6d929132674b0e028c6598d957cc8b2156efe33fe0625005d",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "13693-13768",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -4392,7 +5494,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4466,6 +5568,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Pale City 6 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Bailiff·A, Mephit·A, c1, c2, G1·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-44.png",
+     "png_sha256": "1e7d53be0ebff0b58205eab7a1a98aad995fd5b5fed7b76edd2adca260636a6a",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -4473,13 +5608,6 @@
    "svg_sha256": "4b3e02446a4903a6c9e30a3e282771223e92e94955079a5a72d95c2632cea321",
    "caption_sha256": "544c8db44d30d68a170e82b87f93e59acd8c613cd1a78241cdd5b6da180b07fa",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "13771-13837",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -4505,7 +5633,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4579,6 +5707,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Sun-Drowned 1 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Wellspring, c1, c2, c3, Chieftain·A, G1·A, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-45.png",
+     "png_sha256": "ab4c2fece333c50184365c6376f05b2b6ee08ae21dacf502e60cdf4fc13da471",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -4586,13 +5747,6 @@
    "svg_sha256": "36d0d10666a2892bf08c1b85665b1d78d77f4bc435583f91dbb24cc8f3e4b037",
    "caption_sha256": "fb6594f930d50d81cbc37664daf0cca076daedeef6d97a663abf493565575591",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "13838-13902",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
    "findings": [
     {
      "severity": "minor",
@@ -4617,7 +5771,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4691,21 +5845,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Sun-Drowned 2 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Locus (Impassable), lc2, lc3, c1, c2, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-46.png",
+     "png_sha256": "edefc24afd419913edcf72686164c174616454cf0c7e719b0705b0f9c49b5660",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-47",
    "svg_sha256": "3a6635ac7af17cb2df678833f66ca4fd9437d3815ef2457f4252272ce8451768",
    "caption_sha256": "8f66e4b11b21a3e9422a15715b49fb82e77c071d1d8c7709f1ded3a47ff2719c",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "13903-13970",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "852",
-    "870"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "major",
@@ -4746,7 +5925,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4820,20 +5999,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Sun-Drowned 3 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Herald·A, sa1, sa2, sa3, Chest, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame. Pressure Plates explicitly remain undrawn until1d3 placement before deployment; new disarm range is outside this setup drawing.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-47.png",
+     "png_sha256": "31902a24eefae5a663d1092d708d6ef020648a9912edc80431f4cfe1282fe1ee",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-48",
    "svg_sha256": "f672a58ef6499e63dcd84b23bd4ebd3cc6551f44b4ba2e74f522d1dcdf9a5a4e",
    "caption_sha256": "54ef4455882afc5eabba98a2e45bf7c2492e506a281d52828d5c07adde12f0dc",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "13971-14032",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -4873,7 +6078,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -4947,20 +6152,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Sun-Drowned 4 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: c1, c2, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-48.png",
+     "png_sha256": "2390ccaa7357c413b82e1e73616cc53653d76121938451fe6e969924104574a4",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-49",
    "svg_sha256": "1f0fd6d9d1fbc15158572d905843518149b0ec51903bbcf21d18e528a47aa93d",
    "caption_sha256": "752bf3f58b809e97a2d9d3982846f343def50359b09e0b623af8afcf7f886514",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "14033-14107",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "863"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -5000,7 +6231,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5074,20 +6305,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Sun-Drowned 5 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Rune, Heartstone, c1, c2, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame. Inert Colossus is terrain at setup; animated Sz H replacement occurs during play and is not a setup token.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-49.png",
+     "png_sha256": "ac59dbb72d74826ef0c1b30d0aad87d16b88642d5b8f482f888834757a0d249a",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-50",
    "svg_sha256": "471b49328b6a953dfe67713a650fd067a9a64c5eaa5c1e930d321b8888a0a519",
    "caption_sha256": "67a4283af306188eee04688bb10c4ac0f60ba4ed0c4bce5dc33e42eaefd682ee",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "14108-14194",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "870"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "minor",
@@ -5111,7 +6368,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5185,21 +6442,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared Sun-Drowned 6 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Stone (Impassable), gs2, gs3, c1, c2, Mephit·A, mp2. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-50.png",
+     "png_sha256": "5aac608d84e3c0e9e4c803708914f0d9eb597c153e66068cde31d9e73f215ced",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-51",
    "svg_sha256": "52e6fc49b19529a7d0277e0c4793c660f2c6dcc2e2f70c6c732af31c387ecb8c",
    "caption_sha256": "8ed4b790280f1a99b72e41841c37f130d4eb71445f8faf6816ce1ab290d5845e",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "14197-14267",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "859",
-    "861"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "major",
@@ -5250,7 +6532,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5324,6 +6606,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared The Mire 1 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Reliquary, Leeches·A, c1, c2, c3, G1·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-51.png",
+     "png_sha256": "473c9632be471e0d7cc5c2b77a2d5a88843de5cabd0f4d8831d4eeba6d1d84fd",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -5331,13 +6646,6 @@
    "svg_sha256": "79c93b404cbd974e8344e31da1da0f0dd0a47819d0b7b130e874255c836c5fd4",
    "caption_sha256": "6622d45c42690e499c14e13929ac78d0df19fabfc16359fbed143a1c2e24970a",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "14268-14342",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "862"
-   ],
    "findings": [
     {
      "severity": "major",
@@ -5395,7 +6703,7 @@
      "resolution": "RC488 second follow-up re-review 2026-10-10 (SVG sha256 79c93b40..., stable across two reads one minute apart while make clean all ran): sgo moved to (13.4,21.9), both labels (Shaman·A at x121.6,y171.3; Swamp Goblins·A at x94.9,y183.0) now sit below the encampment, each on its own vertical leader (x=121.5 and x=93.9) that exits only through the encampment bottom edge (y=158). Checked in SVG coordinates and in the Typst render: no label or leader crosses any text, glyph, Party zone boundary (x=49.5 / 193.5), Shallow Water box dashed edge, Encampment edge (other than the leaders exiting the bottom) or the two labels each other. Goblin hex (x 88.9-98.9, y 141.1-149.7) and Shaman hex are inside Encampment rect x 85.5-157.5, y 86-158. Clearances are tight but positive: goblin leader is 2.4 units right of the lower-left Shallow box edge (x=91.5) and the goblin label starts 3.4 units right of it; the label ends ~162 vs lower-right Shallow box at x=169.5."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5476,6 +6784,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared The Mire 2 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Pile, of2, of3, Shaman·A, Swamp Goblins·A, Reeds 1. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-52.png",
+     "png_sha256": "9cad0e36dc73368475bf051eb932c03aa2d6f0c13b22a36244c5d0838756db01",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -5483,14 +6824,6 @@
    "svg_sha256": "85790209e40af8ebb28655d33c0622bef3402f5be1e512474ac020b6bc75895f",
    "caption_sha256": "a265935108bb677a0691bdbdc83c6734d8a6df1a7cd0d7d27c840dd94b11e62f",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "14343-14417",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "859",
-    "852"
-   ],
    "findings": [
     {
      "severity": "major",
@@ -5524,7 +6857,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5598,21 +6931,46 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared The Mire 3 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Geode, ge2, ge3, Titan·A, Reeds 1, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-53.png",
+     "png_sha256": "79a2369cf870834deff62754b338e51ec8930ec7c821af1da735433f2d76c3ee",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
    "id": "FIG-54",
    "svg_sha256": "b361774f32dc63807c9fac145be9a0f436adf73c138dde20eb85665180cbf097",
    "caption_sha256": "bc8d245f6f693cc8f28fb4b08d44d4032834a8e7a37efd79b06bd4c090d36c07",
-   "verdict": "PASS_WITH_NOTES",
-   "checked_against_lines": [
-    "14418-14496",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "852",
-    "859"
-   ],
+   "verdict": "PASS",
    "findings": [
     {
      "severity": "major",
@@ -5644,7 +7002,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5718,6 +7076,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared The Mire 4 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Heartwood, c1, c2, Treant·A, Thornlings·A, Vine 1, G1·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-54.png",
+     "png_sha256": "774eedbbe06f92564b20c7087a11b62dd5ce0dd8853b49f4b31c34aa88d3698e",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -5725,14 +7116,6 @@
    "svg_sha256": "f82588a455a03295a45d52c3ad21edc37dd260fdb1366db375118ffdc09c13ef",
    "caption_sha256": "2d3dd4cf3017961e8caf998ac733a6ad8d279f3a4fe0ab5d16dd863b46745eef",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "14497-14578",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "859",
-    "852"
-   ],
    "findings": [
     {
      "severity": "major",
@@ -5782,7 +7165,7 @@
      "review_report": "production/qa/figure-review-maps-rc493.md"
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5857,6 +7240,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared The Mire 5 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: Salttide·A, Effigy, ef2, ef3, Croc·A, cr2, c1. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-55.png",
+     "png_sha256": "5e2c20ae002b1f278d4a80073f0b06d2cfaddfacddb3802ffa1b608b145ac8a3",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   },
   {
@@ -5864,14 +7280,6 @@
    "svg_sha256": "90606eb507a023889cf4a40a421de456189cec6404cf50102db36de78ba177c9",
    "caption_sha256": "d99b1e8d5a335dc3f1b5f629a6ab67b2e4552d378a98b9facd1468da3dc015ea",
    "verdict": "PASS",
-   "checked_against_lines": [
-    "14579-14648",
-    "11068-11072",
-    "10962-10990",
-    "14901-14915",
-    "852",
-    "859"
-   ],
    "findings": [
     {
      "severity": "major",
@@ -5897,7 +7305,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "7609f396df0037dc38dcccd934a59bbb27022dfeee6d99d736efd6f49be80b69",
+   "rules_sha256": "176b0d8d6bf5f795fa8869779e2b9b9f4b88066da2bc4c6a20f8beeef712eb52",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -5971,6 +7379,39 @@
      "verdict": "PASS",
      "report": "production/qa/figure-review-map-captions-rc493.md"
     }
+   },
+   "checked_source_sections": [
+    "10.4",
+    "10.1",
+    "2.6",
+    "2.9.1"
+   ],
+   "rc512_full_review": {
+    "reviewed_at": "2026-10-21",
+    "reviewer": "Codex integration owner and two bounded figure reviewers; repair-author model review, not independent human proof",
+    "source": "source/Heraldry_RC512.md",
+    "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+    "checked_source_sections": [
+     "10.4",
+     "10.1",
+     "2.6",
+     "2.9.1"
+    ],
+    "observations": "Compared The Mire 6 setup against RC512 source citations and RC493-to-RC512 diff; 2 deployment zones, required objective/Monster placement and status labels checked. Render inspected: hc1, hc2, Hoard, G1·R, G2·R. Terrain patterns, dashed illustrative positions, dimensions, compass and footnotes remain visible within the frame.",
+    "report": "production/qa/figure-review-rc512.md",
+    "render": {
+     "png": "build/checks/RC512/final/FIG-56.png",
+     "png_sha256": "a76049e1f393ac486481fd41ffaf71dae4f83f0b5428ea9b9363f32a2a989fda",
+     "scale": 2,
+     "method": "Typst SVG with fonts/static, ignore_system_fonts=True; PyMuPDF rasterisation",
+     "current_render_matches_inspected_png": true
+    },
+    "limits": [
+     "Standalone figures; full-book placement and pagination untested for RC512.",
+     "Scenario maps reviewed on six-figure contact sheets; detailed diagrams individually.",
+     "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
+     "Physical print NOT TESTED."
+    ]
    }
   }
  ],
@@ -6420,5 +7861,7 @@
     "column": 250.56
    }
   }
- }
+ },
+ "source": "source/Heraldry_RC512.md",
+ "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd"
 }

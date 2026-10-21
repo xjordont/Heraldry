@@ -100,9 +100,9 @@ def fig11():
         ("AI Step Abilities", "Does the Monster have a listed AI Step ability whose trigger is met?",
          "Resolve the first valid AI Step, in ascending order. A step marked d6 N+ is valid only on a roll of N or higher. The activation ends unless the ability says it continues (9.5 D)."),
         ("Engaged", "Is the Monster Engaged?",
-         "Attack the enemy it is Engaged with; if more than one, the one with the lowest current HP (ties: Most Recent Attacker, then Random Determination). Use Multi-Attack if listed; otherwise a legal melee attack, or a legal ranged attack if it has no legal melee attack."),
+         "Attack the enemy it is Engaged with; if more than one, the one with the lowest current HP (ties: Most Recent Attacker, then Random Determination). Use Multi-Attack if listed; otherwise a legal melee attack, or a legal ranged attack if none is legal. Choose randomly among legal attacks of the required type."),
         ("Visible Target", "Not Engaged, but is an enemy visible?",
-         "Move toward the Primary Target; if Engaged by that movement, attack as in step 2. If it has a ranged attack and can attack without becoming Engaged, it instead moves to the nearest legal firing position and attacks."),
+         "Move toward the Primary Target and attack if Engaged. For a Knocked Out target, stop within melee distance and attack despite no Engagement. If ranged fire is possible without Engagement, move to the nearest legal firing position and attack; use legal ranged Multi-Attack, otherwise choose randomly among legal ranged attacks."),
         ("Search", "No enemy visible, but is a Hidden enemy within 12\" and LOS?",
          "That enemy's controller makes a DEX Check; on a failure that enemy loses Hidden. If several, choose the nearest, using 9.5 E for ties. The activation then ends."),
         ("No Visible Target", "None of the above applies.",
@@ -220,7 +220,7 @@ def fig12():
     callout(s, g.c(4, 2)[0] + 13, g.c(4, 2)[1] - 12, 1, 6.0)
     callout(s, g.c(7, 4)[0] - 4, g.c(7, 4)[1] - 14, 2, 6.0)
     yy = g.oy + 5 * K + 12
-    yy = s.para(cx0 - 4, yy, "**1** The nearest visible enemy cannot be attacked this activation: Impassable Terrain does not block LOS, but closes every route to it for this melee Monster. **2** A legal route reaches another visible enemy, which becomes the new Primary Target.", PW, 9, lead=10.6)
+    yy = s.para(cx0 - 4, yy, "**1** The nearest visible enemy cannot be attacked this activation: Impassable Terrain does not block LOS, but closes every route to it this activation for this melee Monster, including Climb and Jump. **2** A legal route reaches another visible enemy, which becomes the new Primary Target.", PW, 9, lead=10.6)
     yc = yy
     y = max(ya, yb, yc) + 6
     s.line(0, y, FULL_W, y, MID, 0.6)

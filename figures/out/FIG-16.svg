@@ -135,15 +135,14 @@
 <text x="228.6" y="178.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
 </g>
 <text x="241.2" y="176" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">AI Step 1, Entangling Roots:</tspan><tspan font-weight="400"> if the Primary Target is within 8" and not</tspan></text>
-<text x="241.2" y="186.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Immobilized, it must pass a DEX Check or become Immobilized. The</text>
-<text x="241.2" y="197" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">activation then ends.</text>
+<text x="241.2" y="186.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Immobilized, it becomes Immobilized. The activation then ends.</text>
 <g data-glyph="step">
-<circle cx="228.6" cy="211.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="228.6" y="214.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">6</text>
+<circle cx="228.6" cy="201" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="228.6" y="204.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">6</text>
 </g>
-<text x="241.2" y="212.5" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Random Monster Group 2:</tspan><tspan font-weight="400"> placed inside the Central Clearing, 4"</tspan></text>
-<text x="241.2" y="223" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">from its edge, Resting. Groups 1 and 3 (near a Stone and a Treasure</text>
-<text x="241.2" y="233.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Chest) are not drawn.</text>
+<text x="241.2" y="202" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Random Monster Group 2:</tspan><tspan font-weight="400"> placed inside the Central Clearing, 4"</tspan></text>
+<text x="241.2" y="212.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">from its edge, Resting. Groups 1 and 3 (near a Stone and a Treasure</text>
+<text x="241.2" y="223" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Chest) are not drawn.</text>
 <text x="0" y="276.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key (full key: FIG-20)</text>
 <g data-strip="hero-A">
 <g data-glyph="hero-A">
