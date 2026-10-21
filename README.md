@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`90022b3c`](https://github.com/xjordont/Heraldry/commit/90022b3c3e443b03ed8d37902b745e24db895652) aids: measured flowchart layout and Oxford commas throughout
 - [`bba496a8`](https://github.com/xjordont/Heraldry/commit/bba496a82f090eac95c1b89a86a46ec02711bd10) art: rewrite 24 hero briefs for distinct, cleaner figures and queue the redo
 - [`5e6cb94d`](https://github.com/xjordont/Heraldry/commit/5e6cb94d738f5ed708f1730c7a63085d706397f4) aids: art inside the margin, second wording pass, larger tags
 - [`47353672`](https://github.com/xjordont/Heraldry/commit/473536723667d846a023a964cb1aa7708e8cba6d) aids: remove a stray rendered PDF and ignore renders beside sources
 - [`1cbb391e`](https://github.com/xjordont/Heraldry/commit/1cbb391e27276f7a067d6b2e0cae79ac7e670c2d) aids: compose the ten player-aid sheets PA-1 to PA-10
 - [`330d6719`](https://github.com/xjordont/Heraldry/commit/330d6719fb17fe455e6dd9a84e49d1d75b244891) text(RC513): label every Monster AI Step as ending or continuing
-- [`e11b3f73`](https://github.com/xjordont/Heraldry/commit/e11b3f73a4c36bbeb0f874e7d0096dcd68d49011) Merge branch 'main' of https://github.com/xjordont/Heraldry
 
 <!-- END AUTO:recent -->
 
