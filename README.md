@@ -9,7 +9,7 @@ The publication repository for the Heraldry Skirmish rulebook. It holds the manu
 - **Manuscript:** [RC512](source/Heraldry_RC512.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC512 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 275 approved of 294; 24 generation-queue items.
+- **Illustration records:** 275 approved of 295; 24 generation-queue items.
 - **Rules figures:** 57; 57/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`64cc2758`](https://github.com/xjordont/Heraldry/commit/64cc2758f4abd2a38bdeafda018f158feb85d11e) art: intake of ChatGPT Work images
+- [`86137cd6`](https://github.com/xjordont/Heraldry/commit/86137cd65dcfd086ac3120885c7bea3aa20ffa12) art(gpt): ART-HER-SOOTFINGER .. ART-HER-SOOTFINGER
 - [`2c1b47e4`](https://github.com/xjordont/Heraldry/commit/2c1b47e4dd047685b4d1aa333dd00f9bbab6bf2c) art: intake of ChatGPT Work images
 - [`e1ec610a`](https://github.com/xjordont/Heraldry/commit/e1ec610ae014cbfda93307d5923ff15c3e556286) art(gpt): ART-HER-SILKSHADE .. ART-HER-SILKSHADE
 - [`1cb08adc`](https://github.com/xjordont/Heraldry/commit/1cb08adc8daa79817e4a1a4c1b0f1b88560a1e70) art: intake of ChatGPT Work images
 - [`153d3867`](https://github.com/xjordont/Heraldry/commit/153d386725a859b55bbf4248c5039efb8d87e266) art(gpt): ART-HER-REDHAND .. ART-HER-REDHAND
-- [`874851a5`](https://github.com/xjordont/Heraldry/commit/874851a513ecf7e0240c01b035c0192e5ba20947) Merge branch 'main' of https://github.com/xjordont/Heraldry
-- [`039b1ffb`](https://github.com/xjordont/Heraldry/commit/039b1ffba1f82e6a93a0aa56fdb89233f189e767) docs: player-aid design and art direction, with a Monster AI specimen
 
 <!-- END AUTO:recent -->
 
