@@ -6,7 +6,7 @@ The active version is always the last record in `source/versions.json`. Each app
 
 ## 1. Supply the updated file
 
-Start from the active `source/Heraldry_RC###.md`. Save your edited copy outside `source/`, such as `C:/Heraldry/art-scratch/updated-manuscript.md`. Keep the existing Markdown headings, tables, and the single `**Release Candidate N (RCN)**` line. That line may identify the current or next RC; the importer manages the final next number. It refuses older versions, unrequested number jumps, duplicate markers, and inconsistent numbers. For an owner-authorised jump, pass `--target-rc N` to `prepare`; the target must exceed the current number and is bound into the review and archived import evidence. Skipped numbers create no snapshots. Ordinary imports and exact-patch batches still use the next number.
+Start from the active `source/Heraldry_RC###.md`. Save your edited copy outside `source/`, such as `C:/Heraldry/art-scratch/updated-manuscript.md`. Keep the existing Markdown headings, tables, and the single `**Release Candidate N (RCN)**` line. That line may identify the current RC, next RC, or explicitly requested target RC; the importer manages the final number. It refuses older versions, unrequested number jumps, duplicate markers, and inconsistent numbers. For an owner-authorised jump, pass `--target-rc N` to `prepare`; the target must exceed the current number and is bound into the review and archived import evidence. Skipped numbers create no snapshots. Ordinary imports and exact-patch batches still use the next number.
 
 Use UTF-8 `.md` or `.markdown`. Export Word or other editor formats to Markdown first and inspect the export. Word/PDF conversion and rules rewriting are outside this import command. A UTF-8 BOM and Windows line endings are accepted: the review records BOM removal and conversion to LF. Every other character, including the final newline, is preserved exactly apart from the managed RC marker. A marker-only or unchanged submission creates no revision.
 
@@ -18,7 +18,7 @@ Sync a clean `main` with `git pull --ff-only origin main`. Run commands from the
 python tools/dev.py manuscript prepare --input "C:/Heraldry/art-scratch/updated-manuscript.md"
 ```
 
-The command prints a review directory under ignored `build/manuscript-updates/`. Its name includes the next RC and hashes of the input/configuration. Use `--review-dir "C:/Heraldry/art-scratch/my-review"` to keep a review outside build caches. An existing review directory is never overwritten; use a new directory when preparing again.
+The command prints a review directory under ignored `build/manuscript-updates/`. Its name includes the target RC and hashes of the input/configuration. Use `--review-dir "C:/Heraldry/art-scratch/my-review"` to keep a review outside build caches. An existing review directory is never overwritten; use a new directory when preparing again.
 
 | File | What to review |
 |---|---|

@@ -27,12 +27,12 @@
   "FIG-08": {
     "section": "h-273-areas-of-effect",
     "type": "list",
-    "prefix": "Each affected combatant that can take a legal Reaction against the effect may declare at most one under 4.5. Roll the shared damage. Before resolving any defence or mitigation, res"
+    "prefix": "Resolve target redirection, confirm affected combatants, then declare all Reactions to the source before rolling any damage dice, following 4.5. Pay or commit t"
   },
   "FIG-07": {
     "section": "h-284-cover",
     "type": "para",
-    "prefix": "If a target has Cover, ranged weapon attacks and thrown weapon attacks against them roll their base damage dice with Disadvantage. If a non-area damaging ranged Power rolls damage "
+    "prefix": "If a target has Cover, ranged weapon attacks and thrown weapon attacks against them roll their base damage dice with Disadvantage. If a non-area damaging ranged"
   },
   "FIG-01": {
     "section": "h-31-overview-of-a-round",
@@ -77,7 +77,7 @@
   "FIG-12": {
     "section": "h-f-movement-priorities",
     "type": "para",
-    "prefix": "Blocked Route: If no legal route lets the Monster reach a position this activation from which it may attack its Primary Target, but a legal route lets it reach a position this acti"
+    "prefix": "Blocked Route: If no legal route lets the Monster reach a position this activation from which they may attack their Primary Target, but a legal route lets them "
   },
   "FIG-13": {
     "section": "h-preparation-steps",

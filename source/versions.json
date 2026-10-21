@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 493,
+  "current": 512,
   "revisions": [
     {
       "number": 484,
@@ -254,6 +254,21 @@
       ],
       "patch_file": "editorial/history/RC493.json",
       "patch_sha256": "a9303b69f0b167350d87b83dd2ec2cb7c1baa5f8f2cb1300205dd48eaccca1dc"
+    },
+    {
+      "number": 512,
+      "path": "source/Heraldry_RC512.md",
+      "sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+      "bytes": 1528528,
+      "parent_sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
+      "created_at": "2026-10-21T13:29:07.580086+00:00",
+      "reason": "Import owner-supplied RC512 with 24 Basic Mode Heroes as the new working manuscript",
+      "authorization": "Owner instruction 2026-10-21: Update the repo to have RC512 be the new working manuscript after updating the import workflow to support version jumps.",
+      "patch_ids": [
+        "IMPORT-001"
+      ],
+      "patch_file": "editorial/history/RC512.json",
+      "patch_sha256": "e100da1c0dbcaa9ba5860c2a337d81fe5887504c6f4c9476a1e9258692ebe79a"
     }
   ]
 }
