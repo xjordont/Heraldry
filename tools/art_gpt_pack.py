@@ -18,7 +18,7 @@ import art_generate as g  # noqa: E402
 GPT = ROOT / "production/art/gpt"
 SCHEMA = 2
 SIZES = {"3:2": "1536x1024", "2:3": "1024x1536", "1:1": "1024x1024"}
-ORDER = ["bastion", "climate", "monster", "class", "ancestry", "boss", "scenario", "world", "campaign",
+ORDER = ["bastion", "climate", "monster", "class", "hero", "ancestry", "boss", "scenario", "world", "campaign",
          "tradition", "background", "item", "chapter", "cover"]
 IMAGE_SUFFIXES = (".jpg", ".jpeg", ".png", ".webp")
 

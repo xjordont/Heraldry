@@ -40,6 +40,38 @@ def table_cell(blk, col):
     return None
 
 
+def hero_entries(model):
+    """Basic Mode Hero profiles (Appendix B.4): one entry per level-4 heading, with the class, ancestry,
+    background, size and equipment names read verbatim from the profile. Profiles have no flavour block."""
+    out = []
+    for ch in model["chapters"]:
+        blocks, inside, cur = ch["blocks"], False, None
+        for b in blocks:
+            if b["type"] == "heading" and int(b["level"]) <= 3:
+                inside = b["title"].startswith("B.4 ")
+            if not inside:
+                continue
+            if b["type"] == "heading" and int(b["level"]) == 4:
+                cur = {"id": "ART-HER-" + slug(b["title"]), "family": "hero", "heading_id": b["id"], "title": b["title"],
+                       "context": [ch["title"], "B.4 Basic Mode Hero Profiles"], "facts": {}, "src_lines": b["src"]}
+                out.append(cur)
+            elif cur is not None and b["type"] == "para":
+                t = text(b["c"])
+                m = re.match(r"Class: (.+?) \| Ancestry and Background: (.+?) \| Level:", t)
+                if m:
+                    ancestry, _, background = m.group(2).rpartition(" ")
+                    cur["facts"].update(cls=m.group(1), ancestry=ancestry, background=background)
+                m = re.search(r"Sz: (\w+)", t)
+                if m:
+                    cur["facts"]["size_code"] = m.group(1)
+                if t.strip() == "Equipment and Items":
+                    cur["_eq"] = True
+            elif cur is not None and cur.get("_eq") and b["type"] == "list":
+                cur["facts"]["equipment"] = [text(i["blocks"][0]["c"]).split(":")[0].split(" [")[0].strip() for i in b["items"]]
+                cur.pop("_eq")
+    return out
+
+
 PLAN = ROOT / "production/art/SUBJECT_PLAN.json"
 OWNER = ROOT / "production/art/OWNER_PROMPTS.json"
 
@@ -107,6 +139,7 @@ def main():
                             "title": name, "context": [t for _, t in stack[:-1]][-2:],
                             "flavour": text(blocks[i + 1]["c"]).strip(), "facts": facts,
                             "src_lines": b["src"]})
+    entries += hero_entries(model)
     # orchestrator art direction: fresh chapter subjects, boss family, per-entry unique subjects
     plan = json.loads(PLAN.read_text()) if PLAN.exists() else {"chapters": {}, "direction": {}}
     for e in entries:
@@ -129,6 +162,9 @@ def main():
     for e in entries:
         keys = ("family", "title", "subject", "composition", "flavour", "facts", "context") + tuple(k for k in ("direction", "brief", "owner_prompt_sha256") if k in e)
         e["spec_sha256"] = hashlib.sha256(json.dumps({k: e.get(k) for k in keys}, sort_keys=True).encode()).hexdigest()
+    unbriefed = [e["id"] for e in entries if e["family"] == "hero" and "brief" not in e]
+    if unbriefed:
+        raise SystemExit(f"Hero entries without a brief in production/art/briefs/heroes.json: {unbriefed}")
     audit(entries)
     counts = {}
     for e in entries:

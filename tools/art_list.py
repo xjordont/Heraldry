@@ -12,7 +12,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import art_generate as g  # noqa: E402
 
 ORDER = [("cover", "Cover"), ("chapter", "Chapter openers"), ("world", "World sections"), ("climate", "Climates"),
-         ("bastion", "Bastions"), ("ancestry", "Ancestries"), ("background", "Backgrounds"), ("class", "Classes"),
+         ("bastion", "Bastions"), ("ancestry", "Ancestries"), ("background", "Backgrounds"), ("class", "Classes"), ("hero", "Basic Mode Heroes"),
          ("item", "Equipment"), ("tradition", "Spell and power tiers"), ("monster", "Monsters"), ("boss", "Bosses"),
          ("scenario", "Scenarios"), ("campaign", "Stronghold rooms")]
 
