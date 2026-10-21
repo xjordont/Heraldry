@@ -1,8 +1,8 @@
 {
- "sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
- "bytes": 1528528,
+ "sha256": "f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1",
+ "bytes": 1529651,
  "lines": 18498,
- "words_whitespace": 253274,
+ "words_whitespace": 253446,
  "headings_by_level": {
   "1": 1,
   "2": 15,
@@ -16,9 +16,9 @@
  "tables_ragged_rows": [],
  "constructs": {
   "heading": 845,
-  "inline_text": 59317,
+  "inline_text": 59319,
   "para": 8042,
-  "inline_strong": 24582,
+  "inline_strong": 24583,
   "hr": 42,
   "list": 1575,
   "list_item": 4364,

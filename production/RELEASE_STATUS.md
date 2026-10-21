@@ -1,4 +1,15 @@
-# Release status - RC512 source / RC492 delivery
+# Release status - RC513 source / RC492 delivery
+
+## RC513 Monster AI Step endings - 2026-10-21
+
+Owner instruction: "The 24 monster AI steps that don't explicitly state either they end the turn really ought to for consistency and clarity ... Update the manuscript to reflect this. Check all the monster ai steps to ensure they are correctly sorted and labeled as ends turn or continue turn afterwards." All 115 AI Steps were read: 100 bestiary and Boss steps and 15 scenario steps. One 28-replacement batch (`editorial/history/RC513.json`) created RC513, SHA-256 `f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1`.
+
+- 23 unlabelled steps were whole turns (they move and attack, or attack), so each now ends the activation. Vaultfang's Plummet already ended by removal from play and now says so. Thought-Eater's Dominate was already explicit.
+- Both Naga **Hexscale** steps changed from "continues" to "ends": continuing let the Naga make a second Venom Spit through step 3 every turn, unlike every comparable ranged attack-and-rider step.
+- 9.5 D, C.8 and C.13 now state that a Monster that continues proceeds to step 2 of the Standard Monster AI Script (the Engaged check).
+- Result: 64 bestiary and Boss steps end and 36 continue; all 15 scenario steps end. No other rule changed.
+
+Parsed inventories were refreshed without the PDF extras. FIG-11, FIG-12 and FIG-16 (dependent on 9.5) were re-reviewed from rendered PNGs; no figure change was needed and the figure gate is PASS 57/57. Last delivered PDFs remain RC492-build-37 and predate RC513; physical print **NOT TESTED**.
 
 ## RC512 figures reconciled - 2026-10-21
 

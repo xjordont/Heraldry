@@ -3,7 +3,7 @@
 "term": "Acid",
 "key": "g-acid",
 "locators": [
-"B17392"
+"B17906"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -11,9 +11,9 @@
 "term": "Active Party",
 "key": "g-active-party",
 "locators": [
-"B17394",
+"B17908",
 "h-1112-active-party-roster-and-bench",
-"B15017"
+"B15056"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -21,7 +21,7 @@
 "term": "Adamantine",
 "key": "g-adamantine",
 "locators": [
-"B17396",
+"B17910",
 "h-76-treasure-tables"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -30,7 +30,7 @@
 "term": "Adjacent",
 "key": "g-adjacent",
 "locators": [
-"B17398"
+"B17912"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -38,25 +38,25 @@
 "term": "Advantage",
 "key": "g-advantage",
 "locators": [
-"B17400",
+"B17914",
 "h-241-attack-advantage-and-disadvantage",
-"B03423"
+"B03448"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
 {
 "term": "Aftermath",
 "see": "Aftermath Phase",
-"source": "B17402"
+"source": "B17916"
 },
 {
 "term": "Aftermath Phase",
 "key": "g-aftermath-phase",
 "locators": [
-"B17404",
+"B17918",
 "h-112-the-campaign-cycle",
-"B15195",
-"B17369"
+"B15234",
+"B17883"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -64,7 +64,7 @@
 "term": "AI Step",
 "key": "g-ai-step",
 "locators": [
-"B17406",
+"B17920",
 "h-d-ai-step-abilities",
 "h-hostile-ai-step-1-example"
 ],
@@ -74,7 +74,7 @@
 "term": "Allied",
 "key": "g-allied",
 "locators": [
-"B17408",
+"B17922",
 "h-1051-allied-force-size"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -83,7 +83,7 @@
 "term": "Ally",
 "key": "g-ally",
 "locators": [
-"B17410"
+"B17924"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -91,12 +91,12 @@
 "term": "AP",
 "key": "g-ap",
 "locators": [
-"B17412",
+"B17926",
 "h-332-unspent-ap-and-reactions",
 "h-431-interact-1-ap",
 "h-432-hide-1-ap",
 "B00412",
-"B03127"
+"B03152"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -104,12 +104,12 @@
 "term": "APL",
 "key": "g-apl",
 "locators": [
-"B17414",
+"B17928",
 "h-614-average-party-level-apl",
 "h-tier-1-treasure-table-apl-12",
 "h-tier-2-treasure-table-apl-34",
-"B03202",
-"B14814"
+"B03227",
+"B14853"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -117,7 +117,7 @@
 "term": "Arcane",
 "key": "g-arcane",
 "locators": [
-"B17416",
+"B17930",
 "h-tier-1-arcane-scrolls",
 "h-tier-2-arcane-scrolls",
 "h-tier-3-arcane-scrolls"
@@ -128,7 +128,7 @@
 "term": "Area of Effect",
 "key": "g-area-of-effect",
 "locators": [
-"B17418",
+"B17932",
 "h-273-areas-of-effect"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -137,8 +137,8 @@
 "term": "Armour Dice (AD)",
 "key": "g-armour-dice-ad",
 "locators": [
-"B17420",
-"B01601"
+"B17934",
+"B01615"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -146,8 +146,8 @@
 "term": "Armour Value (AV)",
 "key": "g-armour-value-av",
 "locators": [
-"B17422",
-"B01596"
+"B17936",
+"B01610"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -155,7 +155,7 @@
 "term": "Aura",
 "key": "g-aura",
 "locators": [
-"B17424",
+"B17938",
 "h-273-areas-of-effect",
 "h-26-measurement-size-distances-and-rounding"
 ],
@@ -165,11 +165,11 @@
 "term": "Awake",
 "key": "g-awake",
 "locators": [
-"B17426",
+"B17940",
 "h-1066-monster-deployment-and-awake-groups",
 "h-1067-scenario-specific-awake-groups",
-"B07578",
-"B07608"
+"B07606",
+"B07636"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -177,7 +177,7 @@
 "term": "Base Damage Dice",
 "key": "g-base-damage-dice",
 "locators": [
-"B17428"
+"B17942"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -185,10 +185,10 @@
 "term": "Beast",
 "key": "g-beast",
 "locators": [
-"B17430",
-"B07682",
-"B07798",
-"B07897"
+"B17944",
+"B07712",
+"B07830",
+"B07929"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -196,9 +196,9 @@
 "term": "Bench",
 "key": "g-bench",
 "locators": [
-"B17432",
+"B17946",
 "h-1112-active-party-roster-and-bench",
-"B15019"
+"B15058"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -206,9 +206,9 @@
 "term": "Bleeding",
 "key": "g-bleeding",
 "locators": [
-"B17434",
+"B17948",
 "h-bleeding",
-"B01826"
+"B01849"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -216,9 +216,9 @@
 "term": "Blinded",
 "key": "g-blinded",
 "locators": [
-"B17436",
+"B17950",
 "h-blinded",
-"B01832"
+"B01855"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -226,7 +226,7 @@
 "term": "Block",
 "key": "g-block",
 "locators": [
-"B17438",
+"B17952",
 "h-551-block-1-ap"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -235,8 +235,8 @@
 "term": "Blocking Terrain",
 "key": "g-blocking-terrain",
 "locators": [
-"B17440",
-"B00840"
+"B17954",
+"B00842"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -244,8 +244,10 @@
 "term": "Blood Price",
 "key": "g-blood-price",
 "locators": [
-"B17442",
-"B06294"
+"B17956",
+"B06321",
+"B17334",
+"B17367"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -253,8 +255,8 @@
 "term": "Blood Surge",
 "key": "g-blood-surge",
 "locators": [
-"B17444",
-"B03103"
+"B17958",
+"B03128"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -262,8 +264,8 @@
 "term": "Blunt",
 "key": "g-blunt",
 "locators": [
-"B17446",
-"B17299"
+"B17960",
+"B17811"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -271,7 +273,7 @@
 "term": "Boss",
 "key": "g-boss",
 "locators": [
-"B17448"
+"B17962"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -279,7 +281,7 @@
 "term": "Boss Scale",
 "key": "g-boss-scale",
 "locators": [
-"B17450",
+"B17964",
 "h-97-the-bestiary"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -288,7 +290,7 @@
 "term": "Burning",
 "key": "g-burning",
 "locators": [
-"B17452",
+"B17966",
 "h-burning"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -297,7 +299,7 @@
 "term": "Carried Objective",
 "key": "g-carried-objective",
 "locators": [
-"B17454"
+"B17968"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -305,8 +307,8 @@
 "term": "Caster Supremacy",
 "key": "g-caster-supremacy",
 "locators": [
-"B17456",
-"B02697"
+"B17970",
+"B02722"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -314,7 +316,7 @@
 "term": "Casting Check",
 "key": "g-casting-check",
 "locators": [
-"B17458"
+"B17972"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -322,7 +324,7 @@
 "term": "Celestial",
 "key": "g-celestial",
 "locators": [
-"B17460"
+"B17974"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -330,7 +332,7 @@
 "term": "Check",
 "key": "g-check",
 "locators": [
-"B17462",
+"B17976",
 "h-23-ability-checks"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -339,7 +341,7 @@
 "term": "Climb",
 "key": "g-climb",
 "locators": [
-"B17464",
+"B17978",
 "h-448-climb"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -348,7 +350,7 @@
 "term": "Coin Value",
 "key": "g-coin-value",
 "locators": [
-"B17466"
+"B17980"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -356,7 +358,7 @@
 "term": "Coins",
 "key": "g-coins",
 "locators": [
-"B17468"
+"B17982"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -364,7 +366,7 @@
 "term": "Collision",
 "key": "g-collision",
 "locators": [
-"B17470",
+"B17984",
 "h-446-forced-movement"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -373,8 +375,17 @@
 "term": "Combatant",
 "key": "g-combatant",
 "locators": [
-"B17472",
+"B17986",
 "h-331-activating-a-combatant"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Contesting Objectives",
+"key": "g-contesting-objectives",
+"locators": [
+"B17988",
+"B11012"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -382,13 +393,13 @@
 "term": "Cover",
 "key": "g-cover",
 "locators": [
-"B17474",
+"B17990",
 "h-28-cover-light-hidden-and-visibility",
 "h-284-cover",
 "h-grid-los-and-cover-example",
-"B00758",
-"B00802",
-"B00808"
+"B00760",
+"B00804",
+"B00810"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -396,9 +407,9 @@
 "term": "Cover Terrain",
 "key": "g-cover-terrain",
 "locators": [
-"B17476",
-"B00688",
-"B00836"
+"B17992",
+"B00690",
+"B00838"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -406,9 +417,9 @@
 "term": "Critical Cast",
 "key": "g-critical-cast",
 "locators": [
-"B17478",
+"B17994",
 "h-82-casting-powers",
-"B05435"
+"B05462"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -416,7 +427,7 @@
 "term": "Critical Failure",
 "key": "g-critical-failure",
 "locators": [
-"B17480"
+"B17996"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -424,9 +435,9 @@
 "term": "Critical Hit",
 "key": "g-critical-hit",
 "locators": [
-"B17482",
-"B01527",
-"B04927"
+"B17998",
+"B01541",
+"B04954"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -434,7 +445,7 @@
 "term": "Critical Success",
 "key": "g-critical-success",
 "locators": [
-"B17484"
+"B18000"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -442,10 +453,10 @@
 "term": "Cursed",
 "key": "g-cursed",
 "locators": [
-"B17486",
+"B18002",
 "h-cursed",
-"B01844",
-"B14078"
+"B01867",
+"B14111"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -453,10 +464,10 @@
 "term": "Dangerous Terrain",
 "key": "g-dangerous-terrain",
 "locators": [
-"B17488",
+"B18004",
 "h-294-dangerous-terrain",
-"B00886",
-"B17946"
+"B00888",
+"B18469"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -464,11 +475,11 @@
 "term": "Darkness",
 "key": "g-darkness",
 "locators": [
-"B17490",
+"B18006",
 "h-283-darkness",
-"B00767",
-"B00785",
-"B17951"
+"B00769",
+"B00787",
+"B18474"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -476,8 +487,8 @@
 "term": "Darkvision",
 "key": "g-darkvision",
 "locators": [
-"B17492",
-"B02157"
+"B18008",
+"B02182"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -485,7 +496,7 @@
 "term": "Declared State",
 "key": "g-declared-state",
 "locators": [
-"B17494",
+"B18010",
 "h-261-declared-movement-and-positional-state"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -494,10 +505,10 @@
 "term": "Deep Water",
 "key": "g-deep-water",
 "locators": [
-"B17496",
+"B18012",
 "h-297-deep-water",
-"B00889",
-"B17948"
+"B00891",
+"B18471"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -505,7 +516,7 @@
 "term": "DEX Check",
 "key": "g-dex-check",
 "locators": [
-"B17498"
+"B18014"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -513,7 +524,7 @@
 "term": "DEX Pen",
 "key": "g-dex-pen",
 "locators": [
-"B17500",
+"B18016",
 "h-710-armour"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -522,11 +533,11 @@
 "term": "Difficult Terrain",
 "key": "g-difficult-terrain",
 "locators": [
-"B17502",
+"B18018",
 "h-293-difficult-terrain",
-"B00885",
-"B00891",
-"B01380"
+"B00887",
+"B00893",
+"B01382"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -534,7 +545,7 @@
 "term": "Disadvantage",
 "key": "g-disadvantage",
 "locators": [
-"B17504",
+"B18020",
 "h-241-attack-advantage-and-disadvantage"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -543,9 +554,9 @@
 "term": "Dodge",
 "key": "g-dodge",
 "locators": [
-"B17506",
+"B18022",
 "h-552-dodge-1-ap",
-"B01500"
+"B01514"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -553,10 +564,10 @@
 "term": "Elevation",
 "key": "g-elevation",
 "locators": [
-"B17508",
+"B18024",
 "h-299-elevation",
-"B00939",
-"B17953"
+"B00941",
+"B18476"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -564,10 +575,10 @@
 "term": "Empower",
 "key": "g-empower",
 "locators": [
-"B17510",
+"B18026",
 "h-82-casting-powers",
 "h-empower",
-"B05318"
+"B05345"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -575,7 +586,7 @@
 "term": "Enemy",
 "key": "g-enemy",
 "locators": [
-"B17512"
+"B18028"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -583,8 +594,9 @@
 "term": "Engaged",
 "key": "g-engaged",
 "locators": [
-"B17514",
-"B07631"
+"B18030",
+"h-51-combat-basics",
+"B07659"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -592,7 +604,7 @@
 "term": "Explosion",
 "key": "g-explosion",
 "locators": [
-"B17516",
+"B18032",
 "h-273-areas-of-effect"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -601,7 +613,7 @@
 "term": "Extract",
 "key": "g-extract",
 "locators": [
-"B17518"
+"B18034"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -609,7 +621,7 @@
 "term": "Falling",
 "key": "g-falling",
 "locators": [
-"B17520",
+"B18036",
 "h-4410-falling"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -618,10 +630,10 @@
 "term": "Fiend",
 "key": "g-fiend",
 "locators": [
-"B17522",
-"B07696",
-"B09279",
-"B09358"
+"B18038",
+"B07726",
+"B09311",
+"B09390"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -629,11 +641,11 @@
 "term": "Finesse",
 "key": "g-finesse",
 "locators": [
-"B17524",
+"B18040",
 "h-77-weapon-traits",
-"B16616",
-"B16651",
-"B16761"
+"B16695",
+"B16766",
+"B16804"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -641,7 +653,7 @@
 "term": "Fire",
 "key": "g-fire",
 "locators": [
-"B17526"
+"B18042"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -649,7 +661,7 @@
 "term": "Footprint",
 "key": "g-footprint",
 "locators": [
-"B17528",
+"B18044",
 "h-26-measurement-size-distances-and-rounding"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -658,9 +670,9 @@
 "term": "Forced Movement",
 "key": "g-forced-movement",
 "locators": [
-"B17530",
+"B18046",
 "h-446-forced-movement",
-"B01352"
+"B01354"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -668,9 +680,9 @@
 "term": "Frightened",
 "key": "g-frightened",
 "locators": [
-"B17532",
+"B18048",
 "h-frightened",
-"B01850"
+"B01873"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -678,7 +690,7 @@
 "term": "Guard Point",
 "key": "g-guard-point",
 "locators": [
-"B17534"
+"B18050"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -686,7 +698,7 @@
 "term": "Heal / Healing",
 "key": "g-heal-healing",
 "locators": [
-"B17536"
+"B18052"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -694,9 +706,9 @@
 "term": "Heard the Song",
 "key": "g-heard-the-song",
 "locators": [
-"B17538",
+"B18054",
 "h-97-the-bestiary",
-"B10364"
+"B10392"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -704,7 +716,7 @@
 "term": "Hero",
 "key": "g-hero",
 "locators": [
-"B17540",
+"B18056",
 "h-damaging-a-knocked-out-hero",
 "h-63-core-hero-creation-rules",
 "h-64-hero-attributes"
@@ -715,13 +727,13 @@
 "term": "Hidden",
 "key": "g-hidden",
 "locators": [
-"B17542",
+"B18058",
 "h-59-conditions",
 "h-28-cover-light-hidden-and-visibility",
 "h-285-hidden-and-invisible",
 "h-hidden",
-"B00680",
-"B00704"
+"B00682",
+"B00706"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -729,7 +741,7 @@
 "term": "Hireling",
 "key": "g-hireling",
 "locators": [
-"B17544"
+"B18060"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -737,7 +749,7 @@
 "term": "Holy",
 "key": "g-holy",
 "locators": [
-"B17546"
+"B18062"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -745,21 +757,13 @@
 "term": "HP",
 "key": "g-hp",
 "locators": [
-"B17548",
+"B18064",
 "h-541-hp-loss-and-untyped-harm",
 "h-542-temporary-hp",
 "h-reduced-to-0-hp",
-"B03128",
-"B07519",
-"B16587"
-],
-"basis": "glossary + cited sections + titled sections + definitional bold"
-},
-{
-"term": "Huge (H)",
-"key": "g-huge-h",
-"locators": [
-"B17550"
+"B01665",
+"B03153",
+"B07547"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -767,9 +771,17 @@
 "term": "HP loss",
 "key": "g-hp-loss",
 "locators": [
-"B17552",
+"B18066",
 "h-54-damage-types-av-and-damage-modifiers",
 "h-541-hp-loss-and-untyped-harm"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Huge (H)",
+"key": "g-huge-h",
+"locators": [
+"B18068"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -777,7 +789,7 @@
 "term": "Ice",
 "key": "g-ice",
 "locators": [
-"B17554"
+"B18070"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -785,9 +797,9 @@
 "term": "Immobilized",
 "key": "g-immobilized",
 "locators": [
-"B17556",
+"B18072",
 "h-immobilized",
-"B01888"
+"B01911"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -795,11 +807,11 @@
 "term": "Immune",
 "key": "g-immune",
 "locators": [
-"B17558",
+"B18074",
 "h-544-immune-resistant-and-vulnerable",
-"B01613",
-"B08138",
-"B08161"
+"B01627",
+"B08170",
+"B08193"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -807,8 +819,8 @@
 "term": "Impassable Terrain",
 "key": "g-impassable-terrain",
 "locators": [
-"B17560",
-"B00838"
+"B18076",
+"B00840"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -816,10 +828,22 @@
 "term": "Initiative",
 "key": "g-initiative",
 "locators": [
-"B17562",
+"B18078",
 "h-32-initiative-phase",
 "h-1054-pve-initiative",
-"B01984"
+"B02007"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Initiative Bonus",
+"key": "g-initiative-bonus",
+"locators": [
+"B18080",
+"h-64-hero-attributes",
+"h-32-initiative-phase",
+"h-1054-pve-initiative",
+"B02070"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -827,7 +851,7 @@
 "term": "Initiative Winner",
 "key": "g-initiative-winner",
 "locators": [
-"B17564"
+"B18082"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -835,7 +859,7 @@
 "term": "Injuries Table",
 "key": "g-injuries-table",
 "locators": [
-"B17566",
+"B18084",
 "h-581-injuries-table"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -844,7 +868,7 @@
 "term": "INT Check",
 "key": "g-int-check",
 "locators": [
-"B17568"
+"B18086"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -852,10 +876,10 @@
 "term": "Invisible",
 "key": "g-invisible",
 "locators": [
-"B17570",
+"B18088",
 "h-285-hidden-and-invisible",
 "h-invisible",
-"B01898"
+"B01921"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -863,7 +887,7 @@
 "term": "Journey Table",
 "key": "g-journey-table",
 "locators": [
-"B17572",
+"B18090",
 "h-1123-phase-3-aftermath"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -872,7 +896,7 @@
 "term": "Jump",
 "key": "g-jump",
 "locators": [
-"B17574",
+"B18092",
 "h-449-jump"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -881,12 +905,12 @@
 "term": "Knocked Out",
 "key": "g-knocked-out",
 "locators": [
-"B17576",
+"B18094",
 "h-58-knocked-out-wounds-and-death",
 "h-damaging-a-knocked-out-hero",
 "h-knocked-out",
-"B01757",
-"B01906"
+"B01780",
+"B01929"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -894,7 +918,7 @@
 "term": "Large (L)",
 "key": "g-large-l",
 "locators": [
-"B17578"
+"B18096"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -902,8 +926,9 @@
 "term": "Legendary Artifact",
 "key": "g-legendary-artifact",
 "locators": [
-"B17580",
-"h-716-adventuring-equipment",
+"B18098",
+"h-762-treasure-generation-rules",
+"h-717-permanent-special-items",
 "h-tier-5-legendary-artifact-weapons-apl-910",
 "h-tier-5-legendary-artifact-armour-and-shields-d20"
 ],
@@ -913,7 +938,7 @@
 "term": "Legendary Veteran",
 "key": "g-legendary-veteran",
 "locators": [
-"B17582",
+"B18100",
 "h-114-legendary-veterans"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -922,8 +947,8 @@
 "term": "Light Source",
 "key": "g-light-source",
 "locators": [
-"B17584",
-"B17950"
+"B18102",
+"B18473"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -931,7 +956,7 @@
 "term": "Lightning",
 "key": "g-lightning",
 "locators": [
-"B17586"
+"B18104"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -939,7 +964,7 @@
 "term": "Line of Sight (LOS)",
 "key": "g-line-of-sight-los",
 "locators": [
-"B17588"
+"B18106"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -947,8 +972,8 @@
 "term": "Living Combatant",
 "key": "g-living-combatant",
 "locators": [
-"B17590",
-"B17904"
+"B18108",
+"B18427"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -956,7 +981,7 @@
 "term": "Luck (Luck Points)",
 "key": "g-luck-luck-points",
 "locators": [
-"B17592",
+"B18110",
 "h-210-luck-points"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -965,8 +990,8 @@
 "term": "Magical Darkness",
 "key": "g-magical-darkness",
 "locators": [
-"B17594",
-"B00787"
+"B18112",
+"B00789"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -974,8 +999,8 @@
 "term": "Magical Weapon",
 "key": "g-magical-weapon",
 "locators": [
-"B17596",
-"B17905"
+"B18114",
+"B18428"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -983,15 +1008,7 @@
 "term": "Martial Supremacy",
 "key": "g-martial-supremacy",
 "locators": [
-"B17598"
-],
-"basis": "glossary + cited sections + titled sections + definitional bold"
-},
-{
-"term": "Medium (M)",
-"key": "g-medium-m",
-"locators": [
-"B17600"
+"B18116"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -999,7 +1016,7 @@
 "term": "Max HP",
 "key": "g-max-hp",
 "locators": [
-"B17603",
+"B18118",
 "h-62-character-creation-procedure"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1008,8 +1025,8 @@
 "term": "Max NRG",
 "key": "g-max-nrg",
 "locators": [
-"B17605",
-"h-62-character-creation-procedure"
+"B18120",
+"h-64-hero-attributes"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1017,8 +1034,16 @@
 "term": "Max Speed",
 "key": "g-max-speed",
 "locators": [
-"B17607",
+"B18122",
 "h-710-armour"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Medium (M)",
+"key": "g-medium-m",
+"locators": [
+"B18124"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1026,12 +1051,12 @@
 "term": "Metal Equipment",
 "key": "g-metal-equipment",
 "locators": [
-"B17609",
+"B18126",
 "h-72-universal-item-rules",
 "h-82-casting-powers",
 "h-metal-equipment-and-traditions",
-"B03353",
-"B17972"
+"B03378",
+"B18495"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1039,7 +1064,7 @@
 "term": "Monster",
 "key": "g-monster",
 "locators": [
-"B17611",
+"B18128",
 "h-34-monster-phase",
 "h-341-monster-wake-up",
 "h-342-monster-group-activation-order"
@@ -1050,7 +1075,7 @@
 "term": "Monster Allegiance",
 "key": "g-monster-allegiance",
 "locators": [
-"B17613"
+"B18130"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1058,7 +1083,7 @@
 "term": "Monster Group",
 "key": "g-monster-group",
 "locators": [
-"B17616",
+"B18132",
 "h-342-monster-group-activation-order"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1067,13 +1092,13 @@
 "term": "Monster Phase",
 "key": "g-monster-phase",
 "locators": [
-"B17618",
+"B18134",
 "h-34-monster-phase",
 "h-the-monster-phase",
 "h-a9-monster-phase",
-"B01001",
-"B16225",
-"B16411"
+"B01003",
+"B16267",
+"B16453"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1081,9 +1106,9 @@
 "term": "Move",
 "key": "g-move",
 "locators": [
-"B17621",
+"B18136",
 "h-442-move-1-ap",
-"B16260"
+"B16302"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1091,9 +1116,9 @@
 "term": "Natural",
 "key": "g-natural",
 "locators": [
-"B17623",
-"B00884",
-"B17952"
+"B18138",
+"B00886",
+"B18475"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1101,7 +1126,7 @@
 "term": "Necrotic",
 "key": "g-necrotic",
 "locators": [
-"B17625"
+"B18140"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1109,7 +1134,7 @@
 "term": "Negative Condition",
 "key": "g-negative-condition",
 "locators": [
-"B17627"
+"B18142"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1117,7 +1142,7 @@
 "term": "NRG",
 "key": "g-nrg",
 "locators": [
-"B17629"
+"B18144"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1125,7 +1150,7 @@
 "term": "Off-Hand Weapon",
 "key": "g-off-hand-weapon",
 "locators": [
-"B17631",
+"B18146",
 "h-613-hero-classes"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1134,8 +1159,8 @@
 "term": "Open Terrain",
 "key": "g-open-terrain",
 "locators": [
-"B17633",
-"B00834"
+"B18148",
+"B00836"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1143,10 +1168,10 @@
 "term": "Parry",
 "key": "g-parry",
 "locators": [
-"B17635",
+"B18150",
 "h-553-parry-1-ap",
-"B01655",
-"B12159"
+"B01678",
+"B12193"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1154,7 +1179,7 @@
 "term": "Party",
 "key": "g-party",
 "locators": [
-"B17637",
+"B18152",
 "h-33-party-phase",
 "h-61-party-structure",
 "h-party-leader"
@@ -1165,10 +1190,10 @@
 "term": "Party Leader",
 "key": "g-party-leader",
 "locators": [
-"B17639",
+"B18154",
 "h-61-party-structure",
 "h-party-leader",
-"B01988"
+"B02011"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1176,12 +1201,12 @@
 "term": "Party Phase",
 "key": "g-party-phase",
 "locators": [
-"B17641",
+"B18156",
 "h-33-party-phase",
 "h-the-party-phase",
-"B00995",
-"B16224",
-"B17158"
+"B00997",
+"B16266",
+"B17668"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1189,7 +1214,7 @@
 "term": "Party Treasury",
 "key": "g-party-treasury",
 "locators": [
-"B17643"
+"B18158"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1197,8 +1222,8 @@
 "term": "Piercing",
 "key": "g-piercing",
 "locators": [
-"B17645",
-"B17298"
+"B18160",
+"B17810"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1206,7 +1231,7 @@
 "term": "Poison",
 "key": "g-poison",
 "locators": [
-"B17647",
+"B18162",
 "h-7141-poison-use-rules"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1215,7 +1240,7 @@
 "term": "Poisoned [dX]",
 "key": "g-poisoned-dx",
 "locators": [
-"B17649",
+"B18164",
 "h-poisoned-dx"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1224,7 +1249,7 @@
 "term": "Power",
 "key": "g-power",
 "locators": [
-"B17651",
+"B18166",
 "h-power-navigation",
 "h-power-entry-format",
 "h-power-durations"
@@ -1235,11 +1260,22 @@
 "term": "Pressure Clock",
 "key": "g-pressure-clock",
 "locators": [
-"B17653",
+"B18168",
 "h-1057-pressure-clocks",
-"B11992",
-"B12060",
-"B12130"
+"B12026",
+"B12094",
+"B12164"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Primary Casting Score",
+"key": "g-primary-casting-score",
+"locators": [
+"B18170",
+"h-64-hero-attributes",
+"h-613-hero-classes",
+"h-82-casting-powers"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1247,9 +1283,9 @@
 "term": "Primary Target",
 "key": "g-primary-target",
 "locators": [
-"B17655",
+"B18172",
 "h-95-universal-monster-ai-principles",
-"B07598"
+"B07626"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1257,7 +1293,7 @@
 "term": "Primary Weapon",
 "key": "g-primary-weapon",
 "locators": [
-"B17657",
+"B18174",
 "h-613-hero-classes"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1266,9 +1302,9 @@
 "term": "Prone",
 "key": "g-prone",
 "locators": [
-"B17659",
+"B18176",
 "h-prone",
-"B01926"
+"B01949"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1276,7 +1312,7 @@
 "term": "Psychic",
 "key": "g-psychic",
 "locators": [
-"B17661",
+"B18178",
 "h-psychic-feedback-psions",
 "h-87-psychic-abilities",
 "h-tier-0-psychic-techniques-psion"
@@ -1284,11 +1320,20 @@
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
 {
+"term": "Psychic Ability",
+"key": "g-psychic-ability",
+"locators": [
+"B18180",
+"h-87-psychic-abilities"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
 "term": "Pull X\"",
 "key": "g-pull-x",
 "locators": [
-"B17663",
-"B01356"
+"B18182",
+"B01358"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1296,17 +1341,8 @@
 "term": "Push X\"",
 "key": "g-push-x",
 "locators": [
-"B17665",
-"B01354"
-],
-"basis": "glossary + cited sections + titled sections + definitional bold"
-},
-{
-"term": "Psychic Ability",
-"key": "g-psychic-ability",
-"locators": [
-"B17667",
-"h-87-psychic-abilities"
+"B18184",
+"B01356"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1314,9 +1350,9 @@
 "term": "Random Determination",
 "key": "g-random-determination",
 "locators": [
-"B17669",
+"B18186",
 "h-263-random-determination",
-"B07648"
+"B07676"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1324,9 +1360,9 @@
 "term": "Reach",
 "key": "g-reach",
 "locators": [
-"B17671",
-"B01460",
-"B01466"
+"B18188",
+"B01474",
+"B01480"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1334,7 +1370,8 @@
 "term": "Reaction",
 "key": "g-reaction",
 "locators": [
-"B17673",
+"B18190",
+"h-45-reactions",
 "h-512-combat-reaction-guide"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1343,8 +1380,8 @@
 "term": "Recharge X-Y",
 "key": "g-recharge-x-y",
 "locators": [
-"B17675",
-"B07603"
+"B18192",
+"B07631"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1352,7 +1389,7 @@
 "term": "Reflex Attack",
 "key": "g-reflex-attack",
 "locators": [
-"B17677",
+"B18194",
 "h-554-reflex-attack-1-ap"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1361,7 +1398,7 @@
 "term": "Relentless Assault",
 "key": "g-relentless-assault",
 "locators": [
-"B17679",
+"B18196",
 "h-97-the-bestiary"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1370,8 +1407,18 @@
 "term": "Reload [1 AP]",
 "key": "g-reload-1-ap",
 "locators": [
-"B17681",
+"B18198",
 "h-435-reload-1-ap"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Resistance",
+"key": "g-resistance",
+"locators": [
+"B18200",
+"h-544-immune-resistant-and-vulnerable",
+"B01629"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1379,11 +1426,11 @@
 "term": "Resistant",
 "key": "g-resistant",
 "locators": [
-"B17683",
+"B18202",
 "h-544-immune-resistant-and-vulnerable",
-"B01614",
-"B07867",
-"B07976"
+"B01628",
+"B07899",
+"B08008"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1391,7 +1438,7 @@
 "term": "Riposte",
 "key": "g-riposte",
 "locators": [
-"B17685"
+"B18204"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1399,9 +1446,9 @@
 "term": "Roster",
 "key": "g-roster",
 "locators": [
-"B17687",
+"B18206",
 "h-1112-active-party-roster-and-bench",
-"B15018"
+"B15057"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1409,7 +1456,7 @@
 "term": "Round",
 "key": "g-round",
 "locators": [
-"B17689",
+"B18208",
 "h-31-overview-of-a-round",
 "h-35-end-of-round",
 "h-a6-round-structure"
@@ -1420,7 +1467,7 @@
 "term": "Same-Named Effects",
 "key": "g-same-named-effects",
 "locators": [
-"B17691",
+"B18210",
 "h-212-same-named-effects"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1429,7 +1476,7 @@
 "term": "Setup Roll-off",
 "key": "g-setup-roll-off",
 "locators": [
-"B17693",
+"B18212",
 "h-101-adventure-preparation-sequence",
 "h-setup-roll-off"
 ],
@@ -1439,10 +1486,10 @@
 "term": "Shallow Water",
 "key": "g-shallow-water",
 "locators": [
-"B17695",
+"B18214",
 "h-296-shallow-water",
-"B00888",
-"B17947"
+"B00890",
+"B18470"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1450,9 +1497,9 @@
 "term": "Shift",
 "key": "g-shift",
 "locators": [
-"B17697",
+"B18216",
 "h-444-shift-1-ap",
-"B16263"
+"B16305"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1460,9 +1507,9 @@
 "term": "Silenced",
 "key": "g-silenced",
 "locators": [
-"B17699",
+"B18218",
 "h-silenced",
-"B01932"
+"B01955"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1470,7 +1517,7 @@
 "term": "Size (Sz)",
 "key": "g-size-sz",
 "locators": [
-"B17701",
+"B18220",
 "h-26-measurement-size-distances-and-rounding"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1479,8 +1526,8 @@
 "term": "Slashing",
 "key": "g-slashing",
 "locators": [
-"B17703",
-"B17300"
+"B18222",
+"B17812"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1488,10 +1535,10 @@
 "term": "Sleeping",
 "key": "g-sleeping",
 "locators": [
-"B17705",
+"B18224",
 "h-sleeping",
-"B01938",
-"B01940"
+"B01961",
+"B01963"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1499,9 +1546,9 @@
 "term": "Slippery Terrain",
 "key": "g-slippery-terrain",
 "locators": [
-"B17707",
+"B18226",
 "h-295-slippery-terrain",
-"B00887"
+"B00889"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1509,9 +1556,9 @@
 "term": "Slowed",
 "key": "g-slowed",
 "locators": [
-"B17709",
+"B18228",
 "h-slowed",
-"B01946"
+"B01969"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1519,7 +1566,7 @@
 "term": "Small (S)",
 "key": "g-small-s",
 "locators": [
-"B17711"
+"B18230"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1527,7 +1574,7 @@
 "term": "Sorcery",
 "key": "g-sorcery",
 "locators": [
-"B17713",
+"B18232",
 "h-85-sorceries"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1536,7 +1583,7 @@
 "term": "Space",
 "key": "g-space",
 "locators": [
-"B17715",
+"B18234",
 "h-26-measurement-size-distances-and-rounding"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1545,7 +1592,7 @@
 "term": "Speed (SPD)",
 "key": "g-speed-spd",
 "locators": [
-"B17717"
+"B18236"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1553,7 +1600,7 @@
 "term": "SPI Check",
 "key": "g-spi-check",
 "locators": [
-"B17719"
+"B18238"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1561,12 +1608,12 @@
 "term": "Spot",
 "key": "g-spot",
 "locators": [
-"B17721",
+"B18240",
 "h-59-conditions",
 "h-43-interact-hide-spot-and-read-scroll",
 "h-433-spot-1-ap",
-"B01266",
-"B01268"
+"B01268",
+"B01270"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1574,7 +1621,7 @@
 "term": "Stand",
 "key": "g-stand",
 "locators": [
-"B17723"
+"B18242"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1582,9 +1629,9 @@
 "term": "Storage",
 "key": "g-storage",
 "locators": [
-"B17725",
+"B18244",
 "h-1114-treasury-and-storage",
-"B15063"
+"B15102"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1592,7 +1639,7 @@
 "term": "STR Check",
 "key": "g-str-check",
 "locators": [
-"B17727"
+"B18246"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1600,7 +1647,7 @@
 "term": "Stronghold",
 "key": "g-stronghold",
 "locators": [
-"B17729",
+"B18248",
 "h-113-building-the-stronghold",
 "h-the-stronghold-chapel"
 ],
@@ -1610,7 +1657,7 @@
 "term": "Stronghold Component",
 "key": "g-stronghold-component",
 "locators": [
-"B17731",
+"B18250",
 "h-113-building-the-stronghold"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1619,9 +1666,9 @@
 "term": "Stunned",
 "key": "g-stunned",
 "locators": [
-"B17733",
+"B18252",
 "h-stunned",
-"B01952"
+"B01975"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1629,7 +1676,7 @@
 "term": "Summon",
 "key": "g-summon",
 "locators": [
-"B17735",
+"B18254",
 "h-251-summon-limits",
 "h-summon-power-standard"
 ],
@@ -1639,8 +1686,8 @@
 "term": "Sunder",
 "key": "g-sunder",
 "locators": [
-"B17737",
-"B02696"
+"B18256",
+"B02721"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1648,9 +1695,9 @@
 "term": "Swim (X\")",
 "key": "g-swim-x",
 "locators": [
-"B17739",
-"B00923",
-"B07723"
+"B18258",
+"B00925",
+"B07754"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1658,7 +1705,7 @@
 "term": "TAP",
 "key": "g-tap",
 "locators": [
-"B17741",
+"B18260",
 "h-train-1-tap"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1667,11 +1714,11 @@
 "term": "Target",
 "key": "g-target",
 "locators": [
-"B17743",
+"B18262",
 "h-e-target-priorities-and-tie-breakers",
-"B05433",
-"B05440",
-"B05446"
+"B05460",
+"B05467",
+"B05473"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1679,11 +1726,11 @@
 "term": "Target Priority",
 "key": "g-target-priority",
 "locators": [
-"B17745",
+"B18264",
 "h-95-universal-monster-ai-principles",
-"B07599",
-"B12006",
-"B12076"
+"B07627",
+"B12040",
+"B12110"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1691,10 +1738,10 @@
 "term": "Temporary HP",
 "key": "g-temporary-hp",
 "locators": [
-"B17747",
+"B18266",
 "h-542-temporary-hp",
-"B01561",
-"B01569"
+"B01575",
+"B01583"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1702,11 +1749,20 @@
 "term": "Terrain",
 "key": "g-terrain",
 "locators": [
-"B17749",
+"B18268",
 "h-29-terrain",
 "h-291-terrain-types",
 "h-292-terrain-tags",
-"B17076"
+"B17586"
+],
+"basis": "glossary + cited sections + titled sections + definitional bold"
+},
+{
+"term": "Terrain Check",
+"key": "g-terrain-check",
+"locators": [
+"B18270",
+"h-23-ability-checks"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1714,7 +1770,7 @@
 "term": "Terrain Tag",
 "key": "g-terrain-tag",
 "locators": [
-"B17751"
+"B18272"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1722,7 +1778,7 @@
 "term": "Terrain Type",
 "key": "g-terrain-type",
 "locators": [
-"B17753"
+"B18274"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1730,9 +1786,9 @@
 "term": "Total Miss",
 "key": "g-total-miss",
 "locators": [
-"B17755",
+"B18276",
 "h-53-critical-hits-and-exploding-damage-dice",
-"B01529"
+"B01543"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1740,7 +1796,7 @@
 "term": "Treasure roll",
 "key": "g-treasure-roll",
 "locators": [
-"B17757",
+"B18278",
 "h-761-treasure-rolls"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1749,7 +1805,7 @@
 "term": "Treasury",
 "key": "g-treasury",
 "locators": [
-"B17759",
+"B18280",
 "h-112-the-campaign-cycle",
 "h-1114-treasury-and-storage"
 ],
@@ -1759,10 +1815,10 @@
 "term": "Triumph",
 "key": "g-triumph",
 "locators": [
-"B17761",
+"B18282",
 "h-1154-triumph-finale",
 "B00429",
-"B15109"
+"B15148"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1770,7 +1826,7 @@
 "term": "Vault Reserve",
 "key": "g-vault-reserve",
 "locators": [
-"B17763",
+"B18284",
 "h-113-building-the-stronghold"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1779,7 +1835,7 @@
 "term": "Visible",
 "key": "g-visible",
 "locators": [
-"B17765"
+"B18286"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1787,11 +1843,11 @@
 "term": "Vulnerable",
 "key": "g-vulnerable",
 "locators": [
-"B17767",
+"B18288",
 "h-544-immune-resistant-and-vulnerable",
-"B01615",
-"B08116",
-"B08139"
+"B01630",
+"B08148",
+"B08171"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1799,9 +1855,9 @@
 "term": "Weakened",
 "key": "g-weakened",
 "locators": [
-"B17769",
+"B18290",
 "h-weakened",
-"B01958"
+"B01981"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1809,7 +1865,7 @@
 "term": "Weather Shift",
 "key": "g-weather-shift",
 "locators": [
-"B17771"
+"B18292"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1817,7 +1873,7 @@
 "term": "Wild Shape",
 "key": "g-wild-shape",
 "locators": [
-"B17773",
+"B18294",
 "h-612-general-talents"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
@@ -1826,7 +1882,7 @@
 "term": "Wound",
 "key": "g-wound",
 "locators": [
-"B17775"
+"B18296"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
@@ -1834,7 +1890,7 @@
 "term": "Wounded",
 "key": "g-wounded",
 "locators": [
-"B17777"
+"B18298"
 ],
 "basis": "glossary + cited sections + titled sections + definitional bold"
 },
