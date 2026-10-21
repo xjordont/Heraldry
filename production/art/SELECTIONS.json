@@ -9913,5 +9913,38 @@
    "max_print_w_in_300ppi": 2.703
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-REDHAND": {
+  "family": "hero",
+  "title": "Redhand",
+  "heading_id": "h-redhand",
+  "route": "gpt",
+  "spec_sha256": "9c1f683ee005512718a955903ea1fa748b988bd7873ebdaaf4ada5636deda711",
+  "prompt_sha256": "bc61ffd00f0cce88755178f1b284763a50121be011908073a958cfd21387ff7b",
+  "status": "received",
+  "received_at": "2026-10-21T20:24:19+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged stray edge marks (0.29%) and narrow margin (3.4% of outer 6% band); visual review confirms complete uncut figure and axe. Preserve warnings.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-REDHAND.png",
+   "sha256": "ec83404a0ff93b75202293fef9d36b2e23708ba87fd8552238da00f4c6f2310b",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-REDHAND.png",
+   "sha256": "710b53ce3cf1602cf3f47e2bd3e538a4bbb2d3a09607d287601d1e141109d999",
+   "px": [
+    884,
+    1507
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.947
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
