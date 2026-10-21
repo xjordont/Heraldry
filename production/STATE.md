@@ -1,5 +1,13 @@
 # Production state - RC493 source, main
 
+## Repeatable layout workflow - 2026-10-20, tooling only
+
+The compact-layout pass's lessons are integrated into [the layout workflow](../docs/LAYOUT_WORKFLOW.md): exact-input, PDF-verified measurement caching shared by local and CI runs; semantic table-width policies that survive numbering changes; content-bound converged balancing hints; and a local plan/check/run front door with fail-fast stages, input freezing, timings, report hashes, and archived review substrates. Changed manuscripts receive fresh measurements and full QA. Last-delivered print instructions and release ledgers are preserved.
+
+This iteration uses regression tests and bounded compiler fixtures, not another full-book build. The 603-page proof below remains evidence for its previous exact inputs, not certification of the updated workflow's full output. RC493 and approved art/figures are unchanged. Last delivered release remains RC492-build-37; physical print **NOT TESTED**.
+
+Verification: focused workflow check PASS; dependency, baseline, immutable-history, and whitespace checks PASS; final `make test` runs 321 tests with 3 expected skips and no failures. The final suite includes cache invalidation/corruption/bypass, numbering-stable policies, edited-content tail rejection, and staged failure handling. No new full-book timing benchmark is claimed.
+
 ## Approved compact layout implementation - 2026-10-20, local proof reviewed
 
 Owner authorization: all researched layout proposals accepted, with 10.5 pt body, 9 pt tables, narrower margins, and more assertive improvement; resumed by "Continue". RC493 is unchanged at SHA-256 `c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd`. The same-source old-layout baseline is 673 pages; the final local interiors are **603 pages**, saving **70 pages (10.40%)**. Digital: 606 pages. See [implementation and evidence](../reports/Compact%20layout%20implementation.md).
