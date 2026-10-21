@@ -10045,5 +10045,38 @@
    "max_print_w_in_300ppi": 2.607
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-STORMCROOK": {
+  "family": "hero",
+  "title": "Stormcrook",
+  "heading_id": "h-stormcrook",
+  "route": "gpt",
+  "spec_sha256": "97aa015efde633e0aabe91707c1a7bd3ea21c9cb720f6f7c700cd57c23f593fc",
+  "prompt_sha256": "658a614dd455cf74703661080bb11b1ccfbb3c853e96925277fd3a0a75abb40b",
+  "status": "received",
+  "received_at": "2026-10-21T20:44:14+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; required items present and prohibitions absent.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-STORMCROOK.png",
+   "sha256": "3136fede17378a565137cdb9bfded7d600017bd975b9a4d358c37dd1b61ebc5e",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-STORMCROOK.png",
+   "sha256": "1de67c2e278324e5bc1447f1bb86cc5b5095935d30c079006c28ac2a5d4092d4",
+   "px": [
+    979,
+    1449
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.263
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
