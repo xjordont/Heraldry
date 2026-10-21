@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="320.7pt" viewBox="0 0 504 320.7">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="331.5pt" viewBox="0 0 504 331.5">
 <title>Activation, AP and Reaction timing</title>
 <desc>Show the activation procedure and where AP and Reactions fall in a round, using a Hero's 3 AP.</desc>
 <defs>
@@ -43,12 +43,13 @@
 <circle cx="6.6" cy="240" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="6.6" y="243.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
 <text x="19.2" y="241" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Mark the combatant as having activated this round.</text>
-<rect x="0" y="254.2" width="232" height="62.5" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<rect x="0" y="254.2" width="232" height="73.3" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
 <text x="5" y="266.58" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Reactions</tspan><tspan font-weight="400"> (4.5): taken when a rule's trigger occurs, usually</tspan></text>
 <text x="5" y="277.38" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">outside the reacting combatant's activation. Taking one</text>
-<text x="5" y="288.18" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">does not begin or end an activation. Only 1 Reaction may</text>
-<text x="5" y="298.98" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">modify the same action or effect against a given</text>
-<text x="5" y="309.78" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant.</text>
+<text x="5" y="288.18" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">does not begin or end an activation. Declare before the</text>
+<text x="5" y="298.98" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">source's damage dice; pay or commit costs under 4.5. Only</text>
+<text x="5" y="309.78" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">1 Reaction may modify the source against a given</text>
+<text x="5" y="320.58" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">combatant.</text>
 <rect x="250" y="0" width="13" height="13" fill="#000"/>
 <text x="256.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
 <text x="268" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">One Hero's AP through a round (example)</text>
@@ -97,9 +98,9 @@
 <rect x="282" y="182.4" width="11" height="11" fill="#fff" stroke="#000" stroke-width="1"/>
 <line x1="284" y1="184.4" x2="291" y2="191.4" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
 <line x1="284" y1="191.4" x2="291" y2="184.4" stroke="#000" stroke-width="0.9" stroke-linecap="butt"/>
-<text x="304" y="190.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A Monster's slashing attack would damage the Hero:</text>
-<text x="304" y="201" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">the Hero declares </tspan><tspan font-weight="700">Block</tspan><tspan font-weight="400"> (Reaction, 1 AP). It is not an</tspan></text>
-<text x="304" y="211.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">activation.</text>
+<text x="304" y="190.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Before a Monster's slashing attack rolls damage, the</text>
+<text x="304" y="201" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Hero declares and pays for </tspan><tspan font-weight="700">Block</tspan><tspan font-weight="400"> (1 AP). Resolve</tspan></text>
+<text x="304" y="211.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Block during defence; this is not an activation.</text>
 <rect x="250" y="223.2" width="254" height="14" fill="#000" stroke="#000" stroke-width="0.8" rx="2"/>
 <text x="255" y="233.6" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">End of Round</text>
 <text x="499" y="233.6" font-weight="600" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="end">3.5</text>

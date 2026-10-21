@@ -1,30 +1,30 @@
 {
- "sha256": "c8e72ea694fde5c85df112514b5aaaabd03b34900c143eab082a2f73b5c039dd",
- "bytes": 1454196,
- "lines": 17975,
- "words_whitespace": 241952,
+ "sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+ "bytes": 1528528,
+ "lines": 18498,
+ "words_whitespace": 253274,
  "headings_by_level": {
   "1": 1,
   "2": 15,
   "3": 134,
-  "4": 402,
+  "4": 414,
   "5": 281
  },
- "headings": 833,
- "tables": 332,
+ "headings": 845,
+ "tables": 333,
  "max_table_columns": 12,
  "tables_ragged_rows": [],
  "constructs": {
-  "heading": 833,
-  "inline_text": 55795,
-  "para": 7747,
-  "inline_strong": 22847,
+  "heading": 845,
+  "inline_text": 59317,
+  "para": 8042,
+  "inline_strong": 24582,
   "hr": 42,
-  "list": 1519,
-  "list_item": 4189,
+  "list": 1575,
+  "list_item": 4364,
   "inline_link": 149,
-  "inline_em": 447,
-  "table": 332,
+  "inline_em": 448,
+  "table": 333,
   "inline_soft": 672,
   "quote": 1,
   "inline_br": 18
@@ -48,7 +48,7 @@
   {
    "id": "h-2-core-mechanics",
    "title": "2. Core Mechanics",
-   "blocks": 226
+   "blocks": 227
   },
   {
    "id": "h-3-the-game-round",
@@ -58,17 +58,17 @@
   {
    "id": "h-4-actions-and-movement",
    "title": "4. Actions and Movement",
-   "blocks": 125
+   "blocks": 131
   },
   {
    "id": "h-5-combat",
    "title": "5. Combat",
-   "blocks": 214
+   "blocks": 216
   },
   {
    "id": "h-6-your-adventuring-party",
    "title": "6. Your Adventuring Party",
-   "blocks": 416
+   "blocks": 417
   },
   {
    "id": "h-7-equipment-and-items",
@@ -83,12 +83,12 @@
   {
    "id": "h-9-monsters",
    "title": "9. Monsters",
-   "blocks": 1268
+   "blocks": 1269
   },
   {
    "id": "h-10-scenarios",
    "title": "10. Scenarios",
-   "blocks": 1523
+   "blocks": 1529
   },
   {
    "id": "h-11-campaign-play",
@@ -103,12 +103,12 @@
   {
    "id": "h-appendix-b-basic-mode",
    "title": "Appendix B. Basic Mode",
-   "blocks": 243
+   "blocks": 408
   },
   {
    "id": "h-appendix-c-rules-reference",
    "title": "Appendix C. Rules Reference",
-   "blocks": 321
+   "blocks": 328
   }
  ],
  "patches_applied": [],

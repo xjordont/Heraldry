@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="305.6pt" viewBox="0 0 504 305.6">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="337.4pt" viewBox="0 0 504 337.4">
 <title>Attack sequence, Mitigation Order and damage/defence examples</title>
 <desc>Show the five attack steps (with Total Miss branch) and apply the Mitigation Order to the source's own damage examples.</desc>
 <defs>
@@ -19,88 +19,92 @@
 <text x="24" y="52.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">visibility, range, Cover and other targeting rules.</text>
 <line x1="13" y1="58.8" x2="13" y2="64.8" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
 <polygon points="13,70.8 9.8,63.8 16.2,63.8" fill="#000"/>
-<rect x="0" y="70.8" width="236" height="48.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<rect x="0" y="70.8" width="236" height="59" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
 <circle cx="13" cy="82.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="13" y="86.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
-<text x="24" y="80.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Resolve declaration Reactions.</tspan><tspan font-weight="400"> Redirection and</tspan></text>
-<text x="24" y="91.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">similar Reactions first, then verify again. The defender</text>
-<text x="24" y="102" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">may declare at most one Reaction that modifies the</text>
-<text x="24" y="112.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">attack (4.5).</text>
-<line x1="13" y1="119.2" x2="13" y2="125.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
-<polygon points="13,131.2 9.8,124.2 16.2,124.2" fill="#000"/>
-<rect x="0" y="131.2" width="236" height="48.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="13" cy="143.2" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="13" y="146.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
-<text x="24" y="141.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Roll and build damage.</tspan><tspan font-weight="400"> Base dice with</tspan></text>
-<text x="24" y="151.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Advantage/Disadvantage, Total Miss and Critical Hit</text>
-<text x="24" y="162.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">checks, exploding dice, modifiers by damage type.</text>
-<text x="24" y="173" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Any Luck reroll (2.10) happens before consequences.</text>
-<line x1="13" y1="179.6" x2="13" y2="185.6" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
-<polygon points="13,191.6 9.8,184.6 16.2,184.6" fill="#000"/>
-<rect x="0" y="191.6" width="236" height="27.2" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="13" cy="203.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="13" y="206.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
-<text x="24" y="201.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Defend and mitigate.</tspan><tspan font-weight="400"> Resolve the chosen Reaction,</tspan></text>
-<text x="24" y="212.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">then apply the Mitigation Order (5.1.1).</text>
-<line x1="13" y1="218.8" x2="13" y2="224.8" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
-<polygon points="13,230.8 9.8,223.8 16.2,223.8" fill="#000"/>
-<rect x="0" y="230.8" width="236" height="37.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
-<circle cx="13" cy="242.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="13" y="246.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
-<text x="24" y="240.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Apply and finish.</tspan><tspan font-weight="400"> Reduce HP, then resolve remaining</tspan></text>
-<text x="24" y="251.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Critical Hit effects, damage-triggered effects and</text>
-<text x="24" y="262" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">conditions.</text>
-<rect x="0" y="273.6" width="236" height="28" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
-<text x="5" y="284.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Total Miss</tspan><tspan font-weight="400"> (5.3): if every retained base damage die shows a</tspan></text>
-<text x="5" y="295.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">natural 1, the attack deals no damage and ends at step 3.</text>
+<text x="24" y="80.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Declare Reactions.</tspan><tspan font-weight="400"> Resolve redirection, verify</tspan></text>
+<text x="24" y="91.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">legality, then declare all Reactions before any damage</text>
+<text x="24" y="102" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">dice. Pay or commit costs under 4.5, including</text>
+<text x="24" y="112.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">result-dependent Reactions. Resolve effects at their</text>
+<text x="24" y="123.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">stated timings.</text>
+<line x1="13" y1="129.8" x2="13" y2="135.8" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="13,141.8 9.8,134.8 16.2,134.8" fill="#000"/>
+<rect x="0" y="141.8" width="236" height="48.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="13" cy="153.8" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="13" y="157.1" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="24" y="151.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Roll and build damage.</tspan><tspan font-weight="400"> Base dice with</tspan></text>
+<text x="24" y="162.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Advantage/Disadvantage, Total Miss and Critical Hit</text>
+<text x="24" y="173" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">checks, exploding dice, modifiers by damage type.</text>
+<text x="24" y="183.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Any Luck reroll (2.10) happens before consequences.</text>
+<line x1="13" y1="190.2" x2="13" y2="196.2" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="13,202.2 9.8,195.2 16.2,195.2" fill="#000"/>
+<rect x="0" y="202.2" width="236" height="48.4" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="13" cy="214.2" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="13" y="217.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">4</text>
+<text x="24" y="212.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Defend and mitigate.</tspan><tspan font-weight="400"> Resolve the predeclared</tspan></text>
+<text x="24" y="222.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">defensive Reaction, then apply the Mitigation Order</text>
+<text x="24" y="233.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(5.1.1). No new Reaction may be declared after the</text>
+<text x="24" y="244" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">roll.</text>
+<line x1="13" y1="250.6" x2="13" y2="256.6" stroke="#000" stroke-width="1.2" stroke-linecap="butt"/>
+<polygon points="13,262.6 9.8,255.6 16.2,255.6" fill="#000"/>
+<rect x="0" y="262.6" width="236" height="37.8" fill="#fff" stroke="#000" stroke-width="0.9" rx="2.5"/>
+<circle cx="13" cy="274.6" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="13" y="277.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">5</text>
+<text x="24" y="272.6" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Apply and finish.</tspan><tspan font-weight="400"> Reduce HP, then resolve remaining</tspan></text>
+<text x="24" y="283.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Critical Hit effects, damage-triggered effects and</text>
+<text x="24" y="293.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">conditions.</text>
+<rect x="0" y="305.4" width="236" height="28" fill="#f0f0f0" stroke="#000" stroke-width="0.7" rx="2.5"/>
+<text x="5" y="316.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Total Miss</tspan><tspan font-weight="400"> (5.3): if every retained base damage die shows a</tspan></text>
+<text x="5" y="327" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">natural 1, the attack deals no damage and ends at step 3.</text>
 <rect x="252" y="0" width="13" height="13" fill="#000"/>
 <text x="258.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">B</text>
 <text x="270" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9.5" fill="#000">Mitigation Order and worked example (5.1.1)</text>
 <circle cx="258.6" cy="26" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="258.6" y="29.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
-<text x="271.2" y="27" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Keep damage types separate. Apply AV and flat mitigation</text>
-<text x="271.2" y="37.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">once. If a value reduces several types, use the source's listed</text>
-<text x="271.2" y="48" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">order. Reduce each type to a minimum of 0. AV applies only to</text>
-<text x="271.2" y="58.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">blunt, piercing and slashing.</text>
-<circle cx="258.6" cy="72" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="258.6" y="75.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
-<text x="271.2" y="73" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Apply Immune, Resistant and Vulnerable to each remaining</text>
-<text x="271.2" y="83.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">type.</text>
-<circle cx="258.6" cy="97" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="258.6" y="100.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
-<text x="271.2" y="98" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Total the remaining damage and apply it.</text>
-<text x="252" y="119.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Example: a Fighter declares Block</text>
-<rect x="252" y="125.2" width="252" height="15" fill="#000" stroke="#000" stroke-width="0.8"/>
-<text x="257" y="136" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Damage type</text>
-<text x="335" y="136" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Rolled</text>
-<text x="385" y="136" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">AV</text>
-<text x="445" y="136" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Suffered</text>
-<rect x="252" y="140.2" width="252" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
-<text x="257" y="151.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">slashing</text>
-<text x="335" y="151.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">6</text>
-<text x="385" y="151.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">- 5</text>
-<text x="445" y="151.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">1</text>
-<rect x="252" y="156.2" width="252" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
-<text x="257" y="167.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">fire (ignores AV)</text>
-<text x="335" y="167.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">4</text>
-<text x="385" y="167.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">None</text>
-<text x="445" y="167.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">4</text>
-<rect x="252" y="172.2" width="252" height="16" fill="#f0f0f0" stroke="#000" stroke-width="0.7"/>
-<text x="257" y="183.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Total damage</text>
-<text x="445" y="183.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1 + 4 = 5</text>
-<text x="252" y="202.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">The Fighter's 5 AV (armour AD plus shield AD) reduces the 6</text>
-<text x="252" y="212.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">slashing damage to 1. Fire damage ignores AV.</text>
-<text x="252" y="235.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Second example: Hero with d6 AD Chest armour (5.4.3)</text>
-<rect x="252" y="241.4" width="252" height="15" fill="#000" stroke="#000" stroke-width="0.8"/>
-<text x="257" y="252.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Case</text>
-<text x="383" y="252.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">AV</text>
-<text x="447" y="252.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Suffered</text>
-<rect x="252" y="256.4" width="252" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
-<text x="256" y="267.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">9 slashing, no Block (d6 = 3)</text>
-<text x="383" y="267.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">3</text>
-<text x="447" y="267.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">9 - 3 = 6</text>
-<rect x="252" y="272.4" width="252" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
-<text x="256" y="283.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">same attack, Block (+2 AV)</text>
-<text x="383" y="283.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">3 + 2 = 5</text>
-<text x="447" y="283.9" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">9 - 5 = 4</text>
+<text x="271.2" y="27" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Keep damage types separate. Apply AV first, then other flat</text>
+<text x="271.2" y="37.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">mitigation in the controller's chosen order. Apply each value</text>
+<text x="271.2" y="48" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">once; reduce several types in the source's listed order. Reduce</text>
+<text x="271.2" y="58.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">each type to a minimum of 0. AV applies only to blunt,</text>
+<text x="271.2" y="69" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">piercing and slashing.</text>
+<circle cx="258.6" cy="82.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="258.6" y="85.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<text x="271.2" y="83.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Apply Immune, Resistant and Vulnerable to each remaining</text>
+<text x="271.2" y="94" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">type.</text>
+<circle cx="258.6" cy="107.5" r="6.6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="258.6" y="110.8" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
+<text x="271.2" y="108.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Total the remaining damage and apply it.</text>
+<text x="252" y="129.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Example: Fighter pays 1 AP for Block before damage</text>
+<rect x="252" y="135.7" width="252" height="15" fill="#000" stroke="#000" stroke-width="0.8"/>
+<text x="257" y="146.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Damage type</text>
+<text x="335" y="146.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Rolled</text>
+<text x="385" y="146.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">AV</text>
+<text x="445" y="146.5" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Suffered</text>
+<rect x="252" y="150.7" width="252" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="257" y="162.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">slashing</text>
+<text x="335" y="162.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">6</text>
+<text x="385" y="162.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">- 5</text>
+<text x="445" y="162.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">1</text>
+<rect x="252" y="166.7" width="252" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="257" y="178.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">fire (ignores AV)</text>
+<text x="335" y="178.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">4</text>
+<text x="385" y="178.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">None</text>
+<text x="445" y="178.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">4</text>
+<rect x="252" y="182.7" width="252" height="16" fill="#f0f0f0" stroke="#000" stroke-width="0.7"/>
+<text x="257" y="194.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Total damage</text>
+<text x="445" y="194.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">1 + 4 = 5</text>
+<text x="252" y="212.7" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">The Fighter's 5 AV (armour AD plus shield AD) reduces the 6</text>
+<text x="252" y="223.3" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">slashing damage to 1. Fire damage ignores AV.</text>
+<text x="252" y="245.9" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Second example: Hero with d6 AD Chest armour (5.4.3)</text>
+<rect x="252" y="251.9" width="252" height="15" fill="#000" stroke="#000" stroke-width="0.8"/>
+<text x="257" y="262.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Case</text>
+<text x="383" y="262.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">AV</text>
+<text x="447" y="262.7" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff">Suffered</text>
+<rect x="252" y="266.9" width="252" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="256" y="278.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">9 slashing, no Block (d6 = 3)</text>
+<text x="383" y="278.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">3</text>
+<text x="447" y="278.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">9 - 3 = 6</text>
+<rect x="252" y="282.9" width="252" height="16" fill="#fff" stroke="#000" stroke-width="0.7"/>
+<text x="256" y="294.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">same attack, Block (+2 AV)</text>
+<text x="383" y="294.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">3 + 2 = 5</text>
+<text x="447" y="294.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">9 - 5 = 4</text>
 </svg>

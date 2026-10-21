@@ -230,7 +230,7 @@ def fig06():
     s.rect(g.ox + 5 * K + 8, g.oy + 60, 12, 9, fill=PALE, stroke=INK, sw=0.6)
     s.text(g.ox + 5 * K + 24, g.oy + 68, "within Reach (2 squares)", 9)
     yy = g.oy + 5 * K + 12
-    yy = s.para(4, yy, "**Engaged** = adjacent to at least one enemy: the Party B combatant is adjacent, so both are Engaged. The Monster is within Reach distance but not adjacent, so it does not Engage. Digits give the distance in squares. Tabletop Mode: melee 1\", Reach 2\". Reach does not change Engagement.", 236, 9, lead=10.6)
+    yy = s.para(4, yy, "**Engaged** = adjacent to at least one enemy that is not Knocked Out. A Knocked Out combatant is never Engaged. The Party B combatant is adjacent, so both are Engaged. The Monster is within Reach distance but not adjacent, so it does not Engage. Digits give the distance in squares. Tabletop Mode: melee 1\", Reach 2\". Reach does not change Engagement.", 236, 9, lead=10.6)
     ya = yy
     # ---------------- Panel B ----------------
     bx = 262
@@ -317,12 +317,12 @@ def fig07():
     a = g5.c(0, 2); b = g5.c(7, 2)
     s.line(a[0], a[1], b[0], b[1], INK, 1.0, dash="4.5 2.8")
     # shift
-    arrow(s, a[0] + 5, a[1] - 5, g5.c(1, 1)[0] - 6, g5.c(1, 1)[1] + 5, "move")
-    a2 = g5.c(1, 1)
+    arrow(s, a[0] + 5, a[1] - 5, g5.c(0, 1)[0] - 6, g5.c(0, 1)[1] + 5, "move")
+    a2 = g5.c(0, 1)
     s.line(a2[0], a2[1], b[0], b[1], INK, 1.0, dash="4.5 2.8")
-    g5.token(1, 1, "A"); g5.token(7, 2, "M")
+    g5.token(0, 1, "A"); g5.token(7, 2, "M")
     callout(s, g5.pt(3.8, 3.2)[0], g5.pt(3.8, 3.2)[1], 1, 6.0)
-    callout(s, g5.pt(0.35, 1.15)[0], g5.pt(0.35, 1.15)[1], 2, 6.0)
+    callout(s, g5.pt(1.15, 0.7)[0], g5.pt(1.15, 0.7)[1], 2, 6.0)
     callout(s, g5.pt(4.6, 1.45)[0], g5.pt(4.6, 1.45)[1], 3, 6.0)
     # P6 Impassable
     g6, ox6, oy6 = base(5, "F", "Impassable Terrain")
@@ -335,7 +335,7 @@ def fig07():
         (g2, ox2, oy2, "LOS blocked.", "Grid Mode: the line touches a corner shared by 2 Blocking squares (2.7.2)."),
         (g3, ox3, oy3, "LOS blocked.", "Grid Mode: the line passes through the interior of a Cover Terrain square that neither occupies (2.7.2)."),
         (g4, ox4, oy4, "LOS clear; target has Cover.", "The line only touches the corner of a non-Open feature, which still grants Cover (2.7.2, 2.8.4)."),
-        (g5, ox5, oy5, "Cover at 1; none at 3.", "1 The line crosses an ally that is not Prone or Knocked Out and is the same Sz or larger than the target: Cover. 2 Shift 1 AP clear of the line. 3 No Cover (2.8.4)."),
+        (g5, ox5, oy5, "Cover at 1; none at 3.", "1 The line crosses an ally that is not Prone or Knocked Out and is the same Sz or larger than the target: Cover. 2 Shift 1\" [1 AP] orthogonally clear of the line. 3 No Cover (2.8.4)."),
         (g6, ox6, oy6, "LOS clear; Cover by default.", "A generic Impassable feature provides Cover unless its terrain entry says otherwise (chasms and pits provide none), and does not block LOS (2.9.1, 2.8.4)."),
     ]
     maxy = [0, 0]
@@ -350,7 +350,7 @@ def fig07():
     y = maxy[1] + 4
     s.line(0, y, FULL_W, y, MID, 0.6)
     y += 4
-    yy = s.para(0, y + 8, "**Cover** is binary and does not stack. Against a target with Cover, ranged weapon and thrown attacks roll their base damage dice with Disadvantage. Cover never applies to melee attacks. Areas of Effect and hazards ignore Cover unless a rule says otherwise (2.8.4). Tabletop Mode: the sight line runs centre to centre, and 1\" or more of continuous Cover Terrain between the spaces blocks LOS (2.7.2).", FULL_W, 9, lead=10.6)
+    yy = s.para(0, y + 8, "**Cover** is binary and does not stack. Against a target with Cover, ranged weapon, thrown weapon, and non-area ranged Power base damage dice have Disadvantage; harmful LOS-based Power Checks by the caster also have Disadvantage. Cover never applies to melee attacks. Areas of Effect and hazards ignore Cover unless a rule says otherwise (2.8.4). Tabletop Mode: the sight line runs centre to centre, and 1\" or more of continuous Cover Terrain between the spaces blocks LOS (2.7.2).", FULL_W, 9, lead=10.6)
     y = legend(s, [("A", "Party A"), ("M", "Monster"), ("blocking", "Blocking"), ("cover", "Cover Terrain"), ("impassable", "Impassable"), ("los", "sight line"), ("blockx", "where LOS is blocked"), ("move", "Shift"), ("ghost", "starting position")], 0, yy + 2, FULL_W)
     return s, y + 2
 
@@ -509,10 +509,10 @@ def fig08():
     panel_title(s, 0, y + 6, "E", "When one damage roll is shared by several combatants (2.7.3)")
     y += 26
     boxes = [
-        ("Declare", "Each affected combatant that can take a legal Reaction may declare at most one (4.5)."),
+        ("Declare", "Resolve redirection and confirm targets. Declare all Reactions before any damage dice; pay or commit costs under 4.5."),
         ("Roll once", "Roll the shared damage once, unless the effect says otherwise."),
         ("Luck", "Resolve any Luck reroll (2.10) before defence or mitigation begins."),
-        ("Resolve", "Using the final roll, each affected combatant separately resolves its Reaction, determines AV (including applicable AD, 5.4.3), then applies AV and flat mitigation before Immune, Resistant and Vulnerable (5.1.1)."),
+        ("Resolve", "Each combatant resolves its predeclared defence using the final roll. Apply AV first, then other flat mitigation in its controller's chosen order, then Immune, Resistant and Vulnerable (5.1.1). No new Reaction may be declared."),
     ]
     y = _flow_boxes(s, 0, y, boxes, FULL_W)
     y += 8

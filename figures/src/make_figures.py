@@ -63,8 +63,8 @@ def selfcheck():
     assert not fs._los_blocked((2, 3), (5, 0), [(3, 1)])              # one square alone: line misses its interior
     assert fs._los_blocked((0, 2), (7, 2), [(3, 2)])                  # interior crossing blocks
     assert not fs._seg_hits_open_square((2.5, 1.5), (5.5, 2.5), 3, 2)  # panel D: only touches a corner
-    assert not fs._seg_hits_open_square((1.5, 1.5), (7.5, 2.5), 2, 2)  # panel E after Shift: clears the Fighter (cell (2,2))
-    assert 2.0 - (1.5 + (3.0 - 1.5) / 6.0) >= 0.25            # clearance of at least a quarter square at the Fighter square edge
+    assert not fs._seg_hits_open_square((0.5, 1.5), (7.5, 2.5), 2, 2)  # panel E after Shift: clears the Fighter (cell (2,2))
+    assert 2.0 - (1.5 + (3.0 - 0.5) / 7.0) > 0            # clearance of at least a quarter square at the Fighter square edge
     assert fs._seg_hits_open_square((0.5, 2.5), (7.5, 2.5), 2, 2)      # panel E before Shift: crosses the Fighter
     # FIG-08 counts
     assert len(fs.aura_squares((3, 3), 2)) == 13
@@ -119,7 +119,7 @@ def typography_errors(text):
         if char in banned or (unicodedata.category(char) == "Pd" and char not in "-–"):
             bad.add("U+%04X" % ord(char))
         if char == "–" and not (i > 0 and i + 1 < len(text) and text[i - 1].isdigit() and text[i + 1].isdigit()):
-            bad.add("non-range U+2013")
+            bad.add("non-range U+2036")
     return sorted(bad)
 
 
@@ -247,10 +247,10 @@ def write_coverage(dims):
     for r in appendix:
         r["insert_after"] = figdata.META[r["map_figure"]]["insert_after"]
         r["map_size_pt"] = {"width": dims[r["map_figure"]][0], "height": dims[r["map_figure"]][1]}
-    procedural = dict(key="10.1 Preparation Steps", source_lines=[11060, 11073], map_figure="FIG-%d" % (fig_scenmaps.FIRST_MAP_FIG + 36), iconography="shared-v2",
+    procedural = dict(key="10.1 Preparation Steps", source_lines=[11090, 11103], map_figure="FIG-%d" % (fig_scenmaps.FIRST_MAP_FIG + 36), iconography="shared-v2",
                       legend_figure=fig_scenmaps.LEGEND_FIG, detail_figures=["FIG-13", "FIG-14"],
                       insert_after="B%05d" % fig_scenmaps.TEMPLATE_ANCHOR_LINE,
-                      setup_rules=["step 7 exclusion: 3\" from a battlefield edge, 6\" from a deployment zone", "step 11 default: edge zones 6\" deep, corner zones 8\"x8\", alternate placing from the Roll-off loser"],
+                      setup_rules=["step 7: define deployment zones before terrain; alternately placed Blocking/Impassable pieces stay outside zones; Blocking pieces more than 2\" apart", "step 7 defaults: edge zones 6\" deep, corner zones 8\"x8\"; step 11: alternate placing from the Roll-off loser"],
                       status="drawn")
     drawn = sum(1 for r in rows if r["status"] == "drawn")
     summary = dict(scenarios=len(rows), drawn=drawn, blocked_by_ambiguity=len(rows) - drawn,

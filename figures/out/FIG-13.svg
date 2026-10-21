@@ -75,7 +75,7 @@
 <text x="139.2" y="146" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">long edge</text>
 </g>
 <text x="0" y="177" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Each party deploys within 6" of its own</text>
-<text x="0" y="187.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">long battlefield edge (6" is the 10.1 step 11</text>
+<text x="0" y="187.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">long battlefield edge (6" is the 10.1 step 7</text>
 <text x="0" y="197.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">default where the scenario gives no</text>
 <text x="0" y="208.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">depth).</text>
 <rect x="168" y="0" width="13" height="13" fill="#000"/>
@@ -126,8 +126,8 @@
 <text x="175" y="37.2" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">short edge</text>
 <text x="175" y="157.2" font-family="'Source Sans 3'" font-size="9" font-weight="600" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke">short edge</text>
 <text x="168" y="177" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Each party deploys within 6" of its own</text>
-<text x="168" y="187.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">short battlefield edge (6" is the 10.1 step</text>
-<text x="168" y="197.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">11 default where the scenario gives no</text>
+<text x="168" y="187.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">short battlefield edge (6" is the 10.1 step 7</text>
+<text x="168" y="197.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">default where the scenario gives no</text>
 <text x="168" y="208.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">depth).</text>
 <rect x="336" y="0" width="13" height="13" fill="#000"/>
 <text x="342.5" y="10.4" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">C</text>
@@ -184,7 +184,7 @@
 </g>
 <text x="336" y="177" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(1) The Setup Roll-off winner chooses the</text>
 <text x="336" y="187.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">edge (a long edge, or any battlefield edge,</text>
-<text x="336" y="197.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">as the scenario states; the 10.1 step 11</text>
+<text x="336" y="197.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">as the scenario states; the 10.1 step 7</text>
 <text x="336" y="208.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">default where it is silent). (2) The other</text>
 <text x="336" y="218.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">party takes the opposite edge. Both are</text>
 <text x="336" y="229" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">within 6" of it.</text>
@@ -238,7 +238,7 @@
 <text x="48" y="269.2" font-family="'Source Sans 3'" font-size="9" font-weight="700" fill="#000" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" text-anchor="middle">8"</text>
 <text x="0" y="405" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">(1) The Setup Roll-off winner chooses an</text>
 <text x="0" y="415.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">8"×8" corner zone (as the scenario states;</text>
-<text x="0" y="425.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">also the 10.1 step 11 default). (2) The other</text>
+<text x="0" y="425.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">also the 10.1 step 7 default). (2) The other</text>
 <text x="0" y="436.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">party deploys in the diagonally opposite</text>
 <text x="0" y="446.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">corner.</text>
 <rect x="168" y="228" width="13" height="13" fill="#000"/>
@@ -338,7 +338,7 @@
 <text x="374" y="351.5" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Stated distance</text>
 <text x="0" y="463" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Zones and bands are drawn to scale on a 36"×36" battlefield (4 pt per inch); Hero markers are enlarged. North and South are the short</text>
 <text x="0" y="473.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">edges and East and West the long edges, even on a square battlefield (10.1). Each party may field 1–4 Heroes; two or three are shown.</text>
-<text x="0" y="483.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Where a scenario states no depth or zone size (Sun-Drowned 2 and 3, The Mire 3, 5 and 6), the 10.1 step 11 default applies: 6" from the</text>
+<text x="0" y="483.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Where a scenario states no depth or zone size (Sun-Drowned 2 and 3, The Mire 3, 5 and 6), the 10.1 step 7 default applies: 6" from the</text>
 <text x="0" y="494.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">edge, 8"×8" corners. Where it states no placing order (these, Pale City 1 and most edge scenarios), Heroes are placed alternately from</text>
 <text x="0" y="504.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">the Roll-off loser. Where only "opposite battlefield edges" are named, the Roll-off winner chooses the edge.</text>
 </svg>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="429.2pt" viewBox="0 0 504 429.2">
+<svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="450.2pt" viewBox="0 0 504 450.2">
 <title>Line of sight, Cover and Blocking Terrain</title>
 <desc>Show six Grid Mode sight-line cases separating what blocks LOS from what only grants Cover.</desc>
 <defs>
@@ -141,15 +141,15 @@
 <circle cx="222" cy="248" r="7.6" fill="#000" stroke="#000" stroke-width="0.75"/>
 <circle cx="182" cy="248" r="7" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="1.6 2"/>
 <line x1="182" y1="248" x2="322" y2="248" stroke="#000" stroke-width="1" stroke-linecap="butt" stroke-dasharray="4.5 2.8"/>
-<line x1="187" y1="243" x2="191.32" y2="238.2" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
-<polygon points="196,233 193.84,240.48 188.79,235.93" fill="#000"/>
-<line x1="202" y1="228" x2="322" y2="248" stroke="#000" stroke-width="1" stroke-linecap="butt" stroke-dasharray="4.5 2.8"/>
-<circle cx="202" cy="228" r="7.6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<line x1="187" y1="243" x2="181.18" y2="237.71" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="176,233 183.47,235.19 178.89,240.22" fill="#000"/>
+<line x1="182" y1="228" x2="322" y2="248" stroke="#000" stroke-width="1" stroke-linecap="butt" stroke-dasharray="4.5 2.8"/>
+<circle cx="182" cy="228" r="7.6" fill="#000" stroke="#000" stroke-width="0.75"/>
 <polygon points="330.21,248 326.1,255.11 317.9,255.11 313.79,248 317.9,240.89 326.1,240.89" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
 <circle cx="248" cy="262" r="6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="248" y="265.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">1</text>
-<circle cx="179" cy="221" r="6" fill="#000" stroke="#000" stroke-width="0.5"/>
-<text x="179" y="224.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
+<circle cx="195" cy="212" r="6" fill="#000" stroke="#000" stroke-width="0.5"/>
+<text x="195" y="215.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">2</text>
 <circle cx="264" cy="227" r="6" fill="#000" stroke="#000" stroke-width="0.5"/>
 <text x="264" y="230.3" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#fff" text-anchor="middle">3</text>
 <rect x="344" y="178" width="13" height="13" fill="#000"/>
@@ -194,38 +194,40 @@
 <text x="172" y="290" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Cover at 1; none at 3.</text>
 <text x="172" y="300.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">1 The line crosses an ally that is not Prone</text>
 <text x="172" y="311.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">or Knocked Out and is the same Sz or</text>
-<text x="172" y="321.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">larger than the target: Cover. 2 Shift 1 AP</text>
-<text x="172" y="332" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">clear of the line. 3 No Cover (2.8.4).</text>
+<text x="172" y="321.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">larger than the target: Cover. 2 Shift 1" [1</text>
+<text x="172" y="332" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">AP] orthogonally clear of the line. 3 No</text>
+<text x="172" y="342.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Cover (2.8.4).</text>
 <text x="344" y="290" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">LOS clear; Cover by default.</text>
 <text x="344" y="300.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A generic Impassable feature provides</text>
 <text x="344" y="311.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Cover unless its terrain entry says</text>
 <text x="344" y="321.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">otherwise (chasms and pits provide none),</text>
 <text x="344" y="332" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">and does not block LOS (2.9.1, 2.8.4).</text>
-<line x1="0" y1="346.4" x2="504" y2="346.4" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
-<text x="0" y="358.4" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> is binary and does not stack. Against a target with Cover, ranged weapon and thrown attacks roll their base damage dice with</tspan></text>
-<text x="0" y="369" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Disadvantage. Cover never applies to melee attacks. Areas of Effect and hazards ignore Cover unless a rule says otherwise (2.8.4).</text>
-<text x="0" y="379.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Tabletop Mode: the sight line runs centre to centre, and 1" or more of continuous Cover Terrain between the spaces blocks LOS (2.7.2).</text>
-<text x="0" y="400.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
-<circle cx="31.88" cy="400.2" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
-<text x="48.88" y="403.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A</text>
-<polygon points="101.04,400.2 97.8,405.81 91.32,405.81 88.08,400.2 91.32,394.59 97.8,394.59" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
-<text x="111.56" y="403.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster</text>
-<rect x="154.31" y="394.7" width="16" height="11" fill="#4a4a4a" stroke="#000" stroke-width="0.8"/>
-<text x="178.31" y="403.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking</text>
-<rect x="223" y="394.7" width="16" height="11" fill="url(#p-cover)" stroke="#000" stroke-width="0.8"/>
-<text x="247" y="403.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Cover Terrain</text>
-<rect x="309.82" y="394.7" width="16" height="11" fill="url(#p-imp)" stroke="#000" stroke-width="0.8"/>
-<text x="333.82" y="403.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Impassable</text>
-<line x1="387.99" y1="400.2" x2="405.99" y2="400.2" stroke="#000" stroke-width="1.1" stroke-linecap="butt" stroke-dasharray="4.5 2.8"/>
-<circle cx="387.99" cy="400.2" r="1.9" fill="#000"/>
-<circle cx="405.99" cy="400.2" r="1.9" fill="#000"/>
-<text x="412.99" y="403.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">sight line</text>
-<line x1="4.8" y1="411" x2="13.2" y2="419.4" stroke="#000" stroke-width="1.6" stroke-linecap="round"/>
-<line x1="4.8" y1="419.4" x2="13.2" y2="411" stroke="#000" stroke-width="1.6" stroke-linecap="round"/>
-<text x="26" y="418.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">where LOS is blocked</text>
-<line x1="116.13" y1="415.2" x2="129.13" y2="415.2" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
-<polygon points="136.13,415.2 129.13,418.6 129.13,411.8" fill="#000"/>
-<text x="142.13" y="418.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Shift</text>
-<circle cx="178.71" cy="415.2" r="6" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="1.6 2"/>
-<text x="195.71" y="418.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">starting position</text>
+<line x1="0" y1="356.8" x2="504" y2="356.8" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
+<text x="0" y="368.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Cover</tspan><tspan font-weight="400"> is binary and does not stack. Against a target with Cover, ranged weapon, thrown weapon, and non-area ranged Power base</tspan></text>
+<text x="0" y="379.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">damage dice have Disadvantage; harmful LOS-based Power Checks by the caster also have Disadvantage. Cover never applies to</text>
+<text x="0" y="390" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">melee attacks. Areas of Effect and hazards ignore Cover unless a rule says otherwise (2.8.4). Tabletop Mode: the sight line runs centre</text>
+<text x="0" y="400.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">to centre, and 1" or more of continuous Cover Terrain between the spaces blocks LOS (2.7.2).</text>
+<text x="0" y="421.2" font-weight="700" font-family="'Source Sans 3'" font-size="9" fill="#000">Key</text>
+<circle cx="31.88" cy="421.2" r="6" fill="#000" stroke="#000" stroke-width="0.75"/>
+<text x="48.88" y="424.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Party A</text>
+<polygon points="101.04,421.2 97.8,426.81 91.32,426.81 88.08,421.2 91.32,415.59 97.8,415.59" fill="url(#p-mon)" stroke="#000" stroke-width="1" stroke-linejoin="round"/>
+<text x="111.56" y="424.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Monster</text>
+<rect x="154.31" y="415.7" width="16" height="11" fill="#4a4a4a" stroke="#000" stroke-width="0.8"/>
+<text x="178.31" y="424.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Blocking</text>
+<rect x="223" y="415.7" width="16" height="11" fill="url(#p-cover)" stroke="#000" stroke-width="0.8"/>
+<text x="247" y="424.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Cover Terrain</text>
+<rect x="309.82" y="415.7" width="16" height="11" fill="url(#p-imp)" stroke="#000" stroke-width="0.8"/>
+<text x="333.82" y="424.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Impassable</text>
+<line x1="387.99" y1="421.2" x2="405.99" y2="421.2" stroke="#000" stroke-width="1.1" stroke-linecap="butt" stroke-dasharray="4.5 2.8"/>
+<circle cx="387.99" cy="421.2" r="1.9" fill="#000"/>
+<circle cx="405.99" cy="421.2" r="1.9" fill="#000"/>
+<text x="412.99" y="424.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">sight line</text>
+<line x1="4.8" y1="432" x2="13.2" y2="440.4" stroke="#000" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="4.8" y1="440.4" x2="13.2" y2="432" stroke="#000" stroke-width="1.6" stroke-linecap="round"/>
+<text x="26" y="439.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">where LOS is blocked</text>
+<line x1="116.13" y1="436.2" x2="129.13" y2="436.2" stroke="#000" stroke-width="1.6" stroke-linecap="butt"/>
+<polygon points="136.13,436.2 129.13,439.6 129.13,432.8" fill="#000"/>
+<text x="142.13" y="439.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Shift</text>
+<circle cx="178.71" cy="436.2" r="6" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="1.6 2"/>
+<text x="195.71" y="439.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">starting position</text>
 </svg>

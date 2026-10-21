@@ -1,5 +1,13 @@
 # Release status - RC512 source / RC492 delivery
 
+## RC512 figures reconciled - 2026-10-21
+
+Verification: `python tools/dev.py check` PASS (326 tests); figure generation geometry/arithmetic, glyph registry, source-citation and placement checks PASS; current semantic gate 57/57 PASS; `git diff --check` PASS.
+
+Owner request: double-check the latest uploaded manuscript against every figure and update incorrect, unclear or outdated figures. All 57 figures were compared with RC512 and visually inspected through standalone Typst SVG specimens using the bundled fonts. Fifteen SVGs changed: Reaction declaration and commitment, AV-first mitigation, Temporary HP/PvE initiative, Knocked Out Engagement/AI, Cover, legal orthogonal Shift, step 7 zones/terrain spacing, step 11 placement, Jump versus Chasm Fall, automatic Monster Terrain Checks, automatic Entangling Roots, Basic Mode extraction and one illustrative wall arrangement. Captions, current line citations, dependency bindings, placement metadata, setup specifications and current parsed inventories were reconciled.
+
+Per-figure observations and limits: [RC512 figure review](qa/figure-review-rc512.md). The semantic ledger binds the actual current SVG/caption/rule-section hashes and inspected render hashes; all 57 pass with no stale review or unresolved major finding. Review is by repair-author models, not independent human proof. Scenario maps were inspected on contact sheets and detailed diagrams individually. No manuscript bytes changed, no RC increment, and no full-book build/release. Current RC512 book placement and pagination await a requested build. Last delivered PDFs remain RC492-build-37; physical print **NOT TESTED**.
+
 ## Automatic higher-numbered manuscript intake - 2026-10-21
 
 Owner authorised accepting any higher numbered uploaded iteration as the newest manuscript version. The reviewed importer now selects that uploaded RC automatically, without a target flag or a separate version-jump decision. The uploaded manuscript keeps its own RC number exactly. Changed current-number or older inputs are refused rather than renumbered or overwritten; an optional target assertion must equal the uploaded number. Exact-content approval, hash-bound import evidence, immutable history, anchor checks, and transactional promotion remain in force. Focused regression coverage includes automatic jumps, exact input preservation, unchanged-number refusal and exact subsequent upload numbering, and downgrade refusal. RC512 manuscript bytes remain unchanged; no new manuscript or PDF build is part of this tooling update. Verification: `python tools/dev.py check` PASS; 326 tests, 3 expected skips; dependencies, baseline, immutable history, and whitespace PASS.

@@ -118,10 +118,11 @@
 <text x="344" y="124" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">1</tspan><tspan font-weight="400"> The nearest visible enemy cannot be</tspan></text>
 <text x="344" y="134.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">attacked this activation: Impassable</text>
 <text x="344" y="145.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Terrain does not block LOS, but closes</text>
-<text x="344" y="155.8" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">every route to it for this melee Monster. </tspan><tspan font-weight="700">2</tspan></text>
-<text x="344" y="166.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">A legal route reaches another visible</text>
-<text x="344" y="177" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">enemy, which becomes the new Primary</text>
-<text x="344" y="187.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Target.</text>
+<text x="344" y="155.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">every route to it this activation for this</text>
+<text x="344" y="166.4" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">melee Monster, including Climb and</text>
+<text x="344" y="177" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="400">Jump. </tspan><tspan font-weight="700">2</tspan><tspan font-weight="400"> A legal route reaches another</tspan></text>
+<text x="344" y="187.6" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">visible enemy, which becomes the new</text>
+<text x="344" y="198.2" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">Primary Target.</text>
 <line x1="0" y1="267.2" x2="504" y2="267.2" stroke="#8c8c8c" stroke-width="0.6" stroke-linecap="butt"/>
 <text x="0" y="282.2" font-family="'Source Sans 3'" font-size="9" fill="#000"><tspan font-weight="700">Movement Priorities (9.5 F):</tspan><tspan font-weight="400"> (1) shortest legal route; (2) among equally short routes, avoid hazardous terrain if possible; (3) end in the</tspan></text>
 <text x="0" y="292.8" font-weight="400" font-family="'Source Sans 3'" font-size="9" fill="#000">nearest legal position from which the Monster can attack or threaten the target.</text>
