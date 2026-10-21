@@ -9484,5 +9484,38 @@
    "max_print_w_in_300ppi": 3.28
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-DAWNWARDEN": {
+  "family": "hero",
+  "title": "Dawnwarden",
+  "heading_id": "h-dawnwarden",
+  "route": "gpt",
+  "spec_sha256": "e9cf7f623f32ac93bbf72fb4c3f1f64abff93d3f213af31bc9d3d6e2397417a0",
+  "prompt_sha256": "b9db165c3fd3996b8c19464fb45a88fc0f24d04dcef5d1e553658a83a7b6f05f",
+  "status": "received",
+  "received_at": "2026-10-21T15:24:18+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker warned narrow margin (2.4% of outer 6% band); visually full figure and weapons are uncut. Required details visible; preserve warning for review.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-DAWNWARDEN.png",
+   "sha256": "46e4303fde50c6e27bcd83c46fce1b93429522fea1a5f6af025439cb6ce99c23",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-DAWNWARDEN.png",
+   "sha256": "7390d14264f2aabbf122a2f5b4607b38438d33e3c536b94ed74224d2b2df92a7",
+   "px": [
+    976,
+    1446
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.253
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
