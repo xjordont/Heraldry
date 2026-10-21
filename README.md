@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`e2fb5a9e`](https://github.com/xjordont/Heraldry/commit/e2fb5a9ea187d062bd543294a8a8c81c4ca1a95c) manuscript: support explicitly reviewed forward version jumps
 - [`61a74b87`](https://github.com/xjordont/Heraldry/commit/61a74b8799b294c99a51c216361948144ea660e4) perf(layout): cache verified measurements and streamline proof workflow
 - [`ba3a167c`](https://github.com/xjordont/Heraldry/commit/ba3a167cc4c1e2135a373dbf3a7dac724d0b3034) layout: refine compact rulebook composition and exact-PDF validation
 - [`76492caf`](https://github.com/xjordont/Heraldry/commit/76492caf09523725154661e44a1d17aa60a6a612) docs: record publishing hardening scope and required full-build proof
 - [`cb1ac24b`](https://github.com/xjordont/Heraldry/commit/cb1ac24b808e28107b7f17694ecb46d3274f38c3) docs: record publishing hardening scope and required full-build proof
 - [`25b20f23`](https://github.com/xjordont/Heraldry/commit/25b20f23d5c4b8dc52dcdd861e4b3809f5ad1a82) fix(preflight): enforce owner-approved four-family v4 typography
-- [`5ab99137`](https://github.com/xjordont/Heraldry/commit/5ab99137c69fb69065c341581eed95c447fb06f4) tests: reject orphaned and duplicated table/figure markers
 
 <!-- END AUTO:recent -->
 
