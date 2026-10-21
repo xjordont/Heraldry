@@ -10078,5 +10078,38 @@
    "max_print_w_in_300ppi": 3.263
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-THORNMERE": {
+  "family": "hero",
+  "title": "Thornmere",
+  "heading_id": "h-thornmere",
+  "route": "gpt",
+  "spec_sha256": "7ad0e0ab1d1f1aa09217478c73f4d05144db8c206f591e86ca9b769583565ab7",
+  "prompt_sha256": "9c7ead821ce2eb77492080e7c7a8f1e8da9d5f438a7ded257e1a6804896a33a8",
+  "status": "received",
+  "received_at": "2026-10-21T20:49:35+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (no model label exposed)",
+  "notes": "Print-size visual review: full Human Ranger Scout, bow with nocked arrow, quiver, belt sickle, leather coat and hooded cloak are present; full figure/equipment uncut. Preserve automated stray edge marks 0.06% and narrow margin 2.1% warnings.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-THORNMERE.png",
+   "sha256": "0cd92a9051ddf6bff2e41ce2cd225ec4f4f8854c513fe91bd1ea2b2a246ac31a",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-THORNMERE.png",
+   "sha256": "da246d6fbf947b9ae30a54ae0e3f2b4fa5a522bdbfba5424ce379e1cfbb9b988",
+   "px": [
+    992,
+    1495
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.307
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
