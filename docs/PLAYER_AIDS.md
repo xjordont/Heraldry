@@ -1,6 +1,6 @@
 # Player aids: design and art direction
 
-Status: direction proposed 2026-10-21; production route chosen the same day (Route A, section 10) at the owner's request ("a consistent well thought out design and art direction across all reference sheets ... medieval heraldic grimdark fantasy ... mainly b&w ink penned design elements"). The owner chooses the production route (section 10). No player-aid sheet has been released. The specimen in section 12 is a design proof, not reviewed rules text. Physical print is **NOT TESTED**.
+Status: direction proposed 2026-10-21 and Route A chosen the same day (section 10). All ten sheets, PA-1 to PA-10, were composed on 2026-10-21 from RC513 (section 12). Their wording was checked against the source by the author, not yet by an independent review. Built PDFs are not committed. Physical print is **NOT TESTED**.
 
 The player aids are a companion series of printable reference sheets for the table. They are not part of the manuscript, and they do not advance the RC number. Adding them, or a pointer to them, inside the book's appendices is a manuscript change that needs its own owner decision.
 
@@ -26,11 +26,11 @@ US Letter portrait, 612 × 792 pt. The sheets are unbound, so the margins are sy
 
 | Zone | Specification |
 |---|---|
-| Margins | 36 pt (0.5 in) on all sides. Essential content stays at least 27 pt (0.375 in) inside the trim. Only art and decoration may reach the edge |
+| Margins | 36 pt (0.5 in) top and sides; 64 pt at the foot, which holds the footer. Essential content, footer text included, stays at least 27 pt (0.375 in) inside the trim (measured: 30.6 pt). Only art and decoration may reach the edge |
 | Iron header band | Full frame width, about 48 pt tall, solid black. Left: the chapter's arms at 34 pt. Centre-left: the sheet title in Grenze Gotisch SemiBold 30 pt, reversed. Right: "PLAYER AID n" and the § references in Source Sans 3 Bold 9 pt, tracked, reversed. Under the band: a 1.5 pt gap, then a 0.6 pt rule (the book's thick-and-thin) |
 | Body | Two zones. The main diagram takes about 62% of the width on the left. Reference panels (tie-breakers, priorities, short tables) take the right column. A sheet whose subject is one table uses the full width |
 | Art | One approved ink vignette per side at most, at a boundary (lower or upper outer corner), standing on the footer rule or bleeding off the outer edge. No more than about 18% of the page area. Never behind or under text |
-| Footer | A thick-and-thin rule (1.4 pt, 2 pt gap, 0.4 pt). Left: the castle logo at 13 pt and "HERALDRY SKIRMISH · THE DYING LANDS". Right: "Rules RC<n> · front/back" in 42% grey |
+| Footer | In the bottom margin, its text 30 pt from the trim: a thick-and-thin rule (1.6 pt, 2 pt gap, 0.4 pt). Left: the castle logo at 13 pt and "HERALDRY SKIRMISH · THE DYING LANDS". Right: "Rules RC<n> · front/back" in 42% grey |
 
 Each sheet is double-sided where it needs to be. The front carries the procedure players reach for most. The back carries the supporting lookups (for example wake-up triggers and Group order behind the Monster AI script). A one-sided sheet leaves its back blank rather than padding it.
 
@@ -80,16 +80,16 @@ Flow runs top to bottom and left to right. The main spine stays in one column, w
 
 | Code | Sheet | Arms | Front | Back |
 |---|---|---|---|---|
-| PA-1 | The Round | 3 Round (hourglass) | Round structure: Initiative, Party, Monster, End of Round, as a loop | Activating a combatant, Passing, unspent AP and Reactions, Initiative tie-breakers |
-| PA-2 | Monster AI | 9 Monsters (wyvern) | The Standard Monster AI Script, target ties, movement, Blocked Route | Wake-up triggers, Group activation order, Bosses, created Monsters |
-| PA-3 | Combat | 5 Combat (axe and sword) | The attack sequence and the Mitigation Order | Critical riders by damage type, AV, multiple attacks, the Reaction guide |
-| PA-4 | The Fallen | 5 Combat | 0 HP, Knocked Out, Wounds and death, as a flow | The Injuries Table (d20) |
-| PA-5 | Conditions | 5 Combat | Conditions A to M | Conditions N to Z |
-| PA-6 | Movement | 4 Actions (arrows) | Movement costs, footprints, Shift, Push and Trip | Engagement, Reach, Reflex Attack |
-| PA-7 | Sight and Ground | 2 Mechanics (die) | LOS, Cover, Hidden, terrain types | Area-of-effect templates at true scale, for cutting out |
-| PA-8 | The Campaign | 11 Campaign (pavilion) | The campaign cycle: Expedition, Skirmish, Aftermath, Town | The Expedition Event Table and the start-of-adventure order |
-| PA-9 | The Town | 11 Campaign | The Town Phase checklist and the six buildings | Building services and costs |
-| PA-10 | Setup | 10 Scenarios (ruined arch) | The adventure preparation sequence | Deployment patterns (from FIG-13 and FIG-14) |
+| PA-1 | The Round | 3 Round (hourglass) | The four phases as a loop around the arms; activating, eligibility, solo and co-op PvE Initiative | Actions table, Checks, Advantage, timing and simultaneous effects, Luck |
+| PA-2 | Monster AI | 9 Monsters (wyvern) | The Standard Monster AI Script as a flowchart; Primary Target, ties, movement, Blocked Route, Never | The Monster Phase, wake-up triggers, setup and Guard Points, allegiance, Bosses, areas, AP changes |
+| PA-3 | Combat | 5 Combat (axe and sword) | The attack sequence; the dice, Critical riders, Mitigation Order | Reactions table; reacting, damage and AV, attacks, attack modifiers |
+| PA-4 | The Fallen | 6 Party (tattered banner) | 0 HP to Wounds, death or the Injuries Roll, as a flow; hit while down, Knocked Out, others at 0 HP, death marker | The Injuries Table (d20); the Chapel's healing |
+| PA-5 | Conditions | 14 Reference (open book) | Stacking, recovery immunity, conditions A to I | Conditions K to Z, Heard the Song, negative conditions |
+| PA-6 | Movement | 4 Actions (arrows) | Movement types; moving, costs, Climb, Jump and Falling | Engagement and Reach, Reflex Attack, sizes, forced movement, Push and Trip |
+| PA-7 | Sight and Ground | 2 Mechanics (die) | LOS, concealment, Cover, Hidden, light and darkness | Terrain types and tags, elevation, areas of effect |
+| PA-8 | The Campaign | 11 Campaign (pavilion) | The campaign cycle as a loop; start-of-adventure order, Monster CV, the Three Fates, Triumph, limits | The Expedition Event Table, Journey Home, keeping a record |
+| PA-9 | The Town | 11 Campaign | Town Phase checklist; the Grand Hall, the Chapel, the Arcane Spire | The Training Grounds, the Ironworks, the Guild of Keys, Hirelings, Stronghold costs |
+| PA-10 | Setup | 10 Scenarios (ruined arch) | The twelve preparation steps, Setup Roll-off, Random Direction compass | Climate and Core Scenario roll table |
 
 Later sheets (Journey tables by Climate, Weather, hero creation and advancement, trackers and record sheets) use the same anatomy. A record sheet uses the book's heavy-box form.
 
@@ -145,6 +145,12 @@ The owner asked to try both routes on PA-2 Monster AI (front) and compare. Both 
 - The wording matches the manuscript sections in the fidelity record, reviewed against the current RC.
 - It reads correctly as a greyscale print and as a cream and a white print.
 
-## 12. Specimen
+## 12. The sheets
 
-PA-2 Monster AI, front, was composed on 2026-10-21 with the book's components and the approved Minotaur ink (`ART-MON-MINOTAUR`). Its source is `typst/aids/pa02_specimen.typ`; compile it from the repository root with `fonts/static` as the font path. It is a design proof, not a release, and no PDF of it is committed. Its wording is abridged from RC512 §9.5 and C.8 and has not had its semantic review.
+Each sheet is `typst/aids/paNN.typ`, built on the shared kit `typst/aids/kit.typ`. The rules RC printed in each footer is read from `source/versions.json`.
+
+- Render: `python tools/render_aids.py --paper both [--png]` writes each sheet and a combined 20-page set for cream and white paper to `build/aids/`, and fails any sheet that is not exactly two pages. Outputs are never committed.
+- Fidelity: `python tools/aids_fidelity.py` compares each sheet's source sections with those recorded in `production/aids/fidelity.json` and lists the stale sheets after a manuscript revision. After re-reviewing a sheet's wording, run `record` with an honest `--reviewer` note. A hash only shows what was reviewed; it is not a review.
+- Art used (all approved inks): Minotaur, Fighter, Berserker, Ghoul, Night Hag, Ranger, Assassin, the Road, Hearthhold and Greenmark, at most one per side.
+- Rulebook figures were tried and left out: below 504 pt wide their labels fall under the 9 pt minimum, and no side has room at full width.
+- The true-scale area templates planned for PA-7 are not included: a 6″ cone does not fit beside the rules on one side. They would need a sheet of their own.
