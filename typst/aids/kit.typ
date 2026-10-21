@@ -39,7 +39,8 @@
   #v(11pt)
   #body
   #if art != none {
-    let dx = if art-at == right { M - 10pt + art-dx } else { -M + 10pt + art-dx }
+    // Inside the text frame: the art's outer edge sits 4pt in from the margin line.
+    let dx = if art-at == right { -4pt + art-dx } else { 4pt + art-dx }
     place(bottom + art-at, dx: dx, dy: art-dy, image("/assets/art/ink/" + art + ".png", width: art-w))
   }
   #footer(face)
@@ -61,7 +62,7 @@
     (x + 8pt, len - 18pt), (x + 2.9pt, len - 15pt), (x + 1.3pt, 0pt))
   place(polygon(fill: ink, ..if up { pts.map(((xx, y)) => (xx, len - y)) } else { pts }))
 })
-#let flag(t) = tag(t, size: 8.2pt)
+#let flag(t) = tag(t, size: 8.6pt)
 #let yes-arrow(w: 62pt, label: "Yes") = box(width: w, {
   align(center, flag(label)); v(-1pt); forged-h(w)
 })
@@ -82,8 +83,8 @@
 
 // Action box; `ends` pins an ENDS banner to the lower-right corner.
 #let endbox(body, ends: true, tag-text: "Ends", fill: none) = block(width: 100%, inset: (right: if ends { 7pt } else { 0pt }), {
-  block(width: 100%, stroke: 1.3pt + ink, fill: fill, inset: (left: 8pt, right: 10pt, top: 7pt, bottom: if ends { 11pt } else { 7pt }), body)
-  if ends { place(bottom + right, dx: 7pt, dy: 7pt, tag(tag-text)) }
+  block(width: 100%, stroke: 1.3pt + ink, fill: fill, inset: (left: 8pt, right: 10pt, top: 7pt, bottom: if ends { 12pt } else { 7pt }), body)
+  if ends { place(bottom + right, dx: 7pt, dy: 8pt, tag(tag-text, size: 8.6pt)) }
 })
 #let rung(n, q, act, w: 160pt, ends: true) = grid(columns: (26pt, w, 62pt, 1fr), column-gutter: 4pt, align: horizon,
   num(n), plaque(q, w: w), yes-arrow(), endbox(act, ends: ends))
@@ -119,14 +120,15 @@
   text(font: goth, weight: 700, size: size, t); v(-4pt); brush(weight: 2.4pt, seed: seed)
 })
 #let mini(n, body) = block(above: 4pt, below: 0pt, grid(columns: (17pt, 1fr), column-gutter: 6pt, align: top,
-  shield(w: 15pt, body: text(weight: 800, size: 8.4pt, fill: paper, str(n))), body))
+  shield(w: 15pt, body: text(weight: 800, size: 9pt, fill: paper, str(n))), body))
 #let steps(..items, start: 1) = for (i, s) in items.pos().enumerate() { mini(i + start, s) }
 #let dot(body) = block(above: 4pt, below: 0pt, grid(columns: (10pt, 1fr), column-gutter: 3pt, align: top,
   box(baseline: -1.5pt, lozenge(size: 5pt)), body))
 #let caps(t) = text(weight: 800, size: 9pt, tracking: 0.14em, upper(t))
 #let gap-v = v(12pt)
-#let note(body) = panel("Rules Note", body)
-#let cost(t) = cost-tag(text(size: 8.6pt, t))
+#let note(body) = block(width: 100%, above: 7pt, below: 8pt, breakable: false, fill: tint, stroke: (left: 2.6pt + ink),
+  inset: (x: 8pt, y: 6pt))[#tag("Rules Note", size: 8.6pt) #v(3pt) #body]
+#let cost(t) = cost-tag(text(size: 9pt, t))
 
 // Reference table at aid size (the book's ledger table).
 #let aid-table(widths, aligns, header, rows, title: none, size: 9.5pt, notes: none) = block(above: 0pt, below: 4pt, {

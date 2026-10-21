@@ -40,9 +40,9 @@
 
 #side(..head, face: "back")[
   #aid-table((84pt, 1fr, 1.25fr, 1.6fr), ("key", "text", "text", "text"), ("Reaction (1 AP)", "Trigger", "Effect", "Notes"), (
-    ([Block], [Blunt, piercing or slashing damage would hit you; shield equipped.], [Roll the shield's AD and add its flat AV to your AV against that source.], []),
-    ([Dodge], [An attack or harmful effect from another combatant would affect you.], [DEX Check (DEX counts up to +5). Success: the source has no effect on you. Natural 1: also Prone.], [Not against: sources that give you a Check avoiding all of it; recurring Aura, condition or delayed effects; hazards, terrain, weather, Falling; your own HP loss.]),
-    ([Parry], [A blunt, piercing or slashing melee attack targets you; Parrying weapon.], [Roll its base dice plus normal attack modifier. Equal to or above the attack's total damage (before mitigation): take none of it.], [All natural 1s: fails and the attack ignores your AV. Success with a maximum die: the attacker takes a *Riposte* equal to the parry total (AV applies).]),
+    ([Block], [Blunt, piercing or slashing damage would hit you; shield equipped.], [Roll the shield's AD and add its flat AV to your AV against that source.], [Resolves in step 4, Defend and mitigate.]),
+    ([Dodge], [An attack or harmful effect from another combatant would affect you.], [DEX Check (DEX counts up to +5). Success: the source has no effect on you. Natural 1: also Prone. Resolves in step 4.], [Not against: sources that give you a Check avoiding all of it; recurring Aura, condition or delayed effects; hazards, terrain, weather, Falling; your own HP loss.]),
+    ([Parry], [A blunt, piercing or slashing melee attack targets you; Parrying weapon.], [Roll its base dice plus normal attack modifier. Equal to or above the attack's total damage (before mitigation): take none of it. Resolves in step 4.], [All natural 1s: fails and the attack ignores your AV. Success with a maximum die: the attacker takes a *Riposte* equal to the parry total (AV applies).]),
     ([Reflex Attack], [In an enemy's activation it leaves your melee distance with Move, or makes a ranged attack within it.], [One melee attack, base dice with Disadvantage.], [Not Shift, forced movement or ranged Reactions. Movement: resolve before it leaves. Ranged: declare before its damage; resolve right after it.]),
   ), title: [Reactions])
   #v(2pt)

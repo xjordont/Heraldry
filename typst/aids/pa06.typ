@@ -26,7 +26,7 @@
   [
     #aside-head(seed: 3, size: 16pt)[Costs]
     #dot[*Difficult Terrain, Climb, Jump:* 2″ per 1″. Several on the same 1″: only the highest.]
-    #dot[*Grid:* orthogonal square 1″, diagonal 1.5″; Difficult 2″ / 3″; a jumped square 2″ / 3″.]
+    #dot[*Grid*, orthogonal / diagonal square: 1″ / 1.5″; Difficult 2″ / 3″; jumped 2″ / 3″.]
     #dot[*Corners:* a diagonal step needs one legal orthogonal route around it.]
     #dot[*Shift:* a diagonal square costs 1″; it must pay terrain costs and cannot Climb or Jump.]
     #dot[Track in 0.5″; never round movement.]
