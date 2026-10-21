@@ -29,7 +29,7 @@ US Letter portrait, 612 × 792 pt. The sheets are unbound, so the margins are sy
 | Margins | 36 pt (0.5 in) top and sides; 64 pt at the foot, which holds the footer. Essential content, footer text included, stays at least 27 pt (0.375 in) inside the trim (measured: 30.6 pt). Only art and decoration may reach the edge |
 | Iron header band | Full frame width, about 48 pt tall, solid black. Left: the chapter's arms at 34 pt. Centre-left: the sheet title in Grenze Gotisch SemiBold 30 pt, reversed. Right: "PLAYER AID n" and the § references in Source Sans 3 Bold 9 pt, tracked, reversed. Under the band: a 1.5 pt gap, then a 0.6 pt rule (the book's thick-and-thin) |
 | Body | Two zones. The main diagram takes about 62% of the width on the left. Reference panels (tie-breakers, priorities, short tables) take the right column. A sheet whose subject is one table uses the full width |
-| Art | One approved ink vignette per side at most, at a boundary (lower or upper outer corner), standing on the footer rule or bleeding off the outer edge. No more than about 18% of the page area. Never behind or under text |
+| Art | One approved ink vignette per side at most, inside the text frame at a lower corner (outer edge 4 pt in from the margin line), standing on the footer rule. No more than about 18% of the page area. Never behind or under text (owner 2026-10-21: art moved in from the margin) |
 | Footer | In the bottom margin, its text 30 pt from the trim: a thick-and-thin rule (1.6 pt, 2 pt gap, 0.4 pt). Left: the castle logo at 13 pt and "HERALDRY SKIRMISH · THE DYING LANDS". Right: "Rules RC<n> · front/back" in 42% grey |
 
 Each sheet is double-sided where it needs to be. The front carries the procedure players reach for most. The back carries the supporting lookups (for example wake-up triggers and Group order behind the Monster AI script). A one-sided sheet leaves its back blank rather than padding it.
@@ -42,7 +42,7 @@ Each sheet is double-sided where it needs to be. The front carries the procedure
 | Panel heading | Grenze Gotisch Bold 18 pt with a 2.4 pt brush rule beneath |
 | Decision text | Source Sans 3 ExtraBold 11.5 pt, centred |
 | Step and panel text | Source Sans 3 10.5 pt, key terms in Bold |
-| Small caps labels (YES, NO, THEN, TIES IN ORDER) | Source Sans 3 Bold 7.6 to 8.6 pt, tracked +0.12 to +0.16 em. These are wayfinding labels, not essential text |
+| Banner tags (YES, NO, ENDS, RULES NOTE) | Source Sans 3 Bold 8.6 pt, all capitals, tracked, reversed. Cost tags (1 AP, 1 TAP) 9 pt. Step-shield numbers 9 pt |
 | Rules note | Source Sans 3 or Source Serif 4, at least 9.5 pt, in the book's tinted panel with the RULES NOTE banner tag |
 | Minimum for essential text | 9 pt, as in the book |
 

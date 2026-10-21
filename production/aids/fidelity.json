@@ -2,7 +2,7 @@
  "rc": 513,
  "source_sha256": "f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1",
  "recorded_at": "2026-10-21",
- "reviewer": "Claude, 2026-10-21: author's own line-by-line comparison of each sheet with the listed RC513 sections while composing and on rendered pages; not an independent review",
+ "reviewer": "Claude, 2026-10-21, second pass on owner request: every sheet re-read line by line against the listed RC513 sections and on rendered pages; 14 wording fixes; still the author's own review, not independent",
  "sheets": {
   "pa01": {
    "2.3": "fb3609d369c04cdddefde65ea6dd0c92d41b5f8f7c60345b879c8909860b6e85",

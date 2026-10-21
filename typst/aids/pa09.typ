@@ -38,7 +38,7 @@
   ])
 ]
 
-#side(..head, face: "back", art: "ART-BAS-HEARTHHOLD", art-w: 230pt)[
+#side(..head, face: "back", art: "ART-BAS-HEARTHHOLD", art-w: 200pt)[
   #grid(columns: (1fr, 1fr), column-gutter: 20pt,
   [
     #place-head([The Training Grounds], [Veterans and technique], seed: 2)

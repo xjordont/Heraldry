@@ -2,40 +2,42 @@
 #import "kit.typ": *
 #let head = (9, "2", "Monster AI", "§ 9.3–9.5 · § 3.4 · C.8")
 
-#side(..head, face: "front", art: "ART-MON-MINOTAUR", art-w: 118pt)[
+#side(..head, face: "front", art: "ART-MON-MINOTAUR", art-w: 96pt)[
   #block(spacing: 0pt, inset: (left: 30pt, right: 7pt), endbox(ends: false)[
     #text(font: goth, weight: 700, size: 15pt)[Each Monster activates] #h(6pt)
     Remove Prone. Pick the *Primary Target* (printed Target Priority first). Roll for spent Recharge abilities. Resolve start-of-activation Special Abilities.])
-  #down(label: none, h: 16pt)
+  #down(label: none, h: 14pt)
   #rung(1, [Any AI Step valid?], [Resolve the *first* valid one, lowest number first. *on d6 N+:* roll 1d6, need N or higher. #h(1fr) #text(size: 9.5pt)[_Says it continues? Go to step 2._]])
-  #down(h: 18pt)
+  #down(h: 15pt)
   #rung(2, [Engaged?], [Attack the Engaged enemy with the *lowest current HP*. Use Multi-Attack if listed; otherwise melee, or ranged if it has no melee attack.])
-  #down(h: 18pt)
-  #rung(3, [Enemy visible?], [Move toward the Primary Target; attack if Engaged on arrival. *Ranged:* move to the nearest legal firing position, then attack. *Knocked Out target:* stop within melee distance and attack.])
-  #down(h: 18pt)
+  #down(h: 15pt)
+  #rung(3, [Enemy visible?], [Move toward the Primary Target; attack if Engaged on arrival. *Ranged, and able to fire without becoming Engaged:* move to the nearest legal firing position, then attack. *Knocked Out target:* stop within melee distance and attack.])
+  #down(h: 15pt)
   #rung(4, [Hidden enemy within 12″ and LOS?], [*Search:* the nearest one's controller makes a DEX Check. On a failure, that enemy is no longer Hidden.])
-  #down(h: 18pt)
+  #down(h: 15pt)
   #grid(columns: (26pt, 1fr), column-gutter: 4pt, align: horizon, num(5),
     endbox[Move toward the Guard Point, objective, patrol route or scenario destination.])
-  #v(8pt)
+  #v(6pt)
   #grid(columns: (1fr, 1fr, 1fr), column-gutter: 18pt,
   [
     #aside-head(seed: 1)[Primary Target]
-    The *nearest visible enemy* within 12″ and LOS. Hidden and Invisible enemies don't count unless a rule says so. Re-pick if it stops being legal.
-    #v(5pt)
+    The *nearest visible enemy*: in perception range (12″, or a sense's range) and LOS. Hidden and Invisible enemies don't count unless a rule says so. Re-pick if it stops being legal.
+    #v(4pt)
     #caps[Ties, in order]
     #steps[Lowest current HP][Last to damage this Monster][Random Determination]
   ],
   [
     #aside-head(seed: 3)[Movement]
-    #steps[Shortest legal route][Tied routes: avoid hazards][End at the nearest spot to attack or threaten]
-    #v(10pt)
-    #aside-head(seed: 7)[Never]
-    No AP, NRG or Reactions. Effects that call for a Check apply unless Immune; Terrain Checks always succeed.
+    #steps[Shortest legal route][Tied routes: avoid hazards][End nearest to attack or threaten]
+    #v(8pt)
+    #aside-head(seed: 5)[Blocked Route]
+    Can't reach and attack the Primary Target? Switch to the nearest visible enemy it can. None: move full Speed toward the target (or a firing position); no attack.
   ],
   [
-    #aside-head(seed: 5)[Blocked Route]
-    Can't reach and attack the Primary Target? Switch to the nearest visible enemy it can. None: move full Speed toward the target (or a firing position) and don't attack.
+    #aside-head(seed: 7)[Never]
+    No AP, NRG or Reactions. Effects that call for a Check apply unless Immune; Terrain Checks always succeed.
+    #v(4pt)
+    #text(size: 9.5pt)[A Power cast at a Monster of higher LVL than the caster's Level: Casting Check with Disadvantage.]
   ])
 ]
 

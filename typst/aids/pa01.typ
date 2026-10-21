@@ -13,7 +13,7 @@
     stage(2, [Party Phase])[
       #dot[Sides alternate activating *one* eligible combatant at a time.]
       #dot[Each combatant activates *once* per round and must spend at least 1 AP, unless it can take no action.]
-      #dot[A side with no eligible combatant must *Pass*; it cannot activate again this round. Its AP still pays for Reactions.]
+      #dot[A side *Passes* only when it has no eligible combatant; then it activates no one else this round, not even a new Summon. Its unspent AP still pays for Reactions.]
       #dot[Ends when every side has Passed.]],
     forged-v(40pt, up: true),
     arms(3, w: 46pt),
@@ -52,9 +52,9 @@
     #aid-table((auto, auto, 1fr), ("key", "c", "text"), ("Action", "AP", "Effect"), (
       ([Move], [1], [Move up to your Speed.]),
       ([Shift], [1], [Move 1″ without triggering Reflex Attack.]),
-      ([Attack], [1], [One melee or ranged attack.]),
-      ([Push], [1], [One Push attempt.]),
-      ([Trip], [1], [One Trip attempt.]),
+      ([Attack], [1], [One melee or ranged attack. A Hero's 2nd+ weapon attack in an activation: Disadvantage.]),
+      ([Push], [1], [Adjacent target; STR Check with Disadvantage. Success: Push it 2″.]),
+      ([Trip], [1], [Needs a Trip weapon; target your Sz or smaller. STR or DEX Check with Disadvantage. Success: Prone.]),
       ([Power], [var.], [Use one Power you know.]),
       ([Read Scroll], [1], [Use one equipped scroll.]),
       ([Special Ability], [var.], [Use one activated ability; it lists its AP.]),
@@ -68,7 +68,7 @@
     #text(size: 9.5pt)[The same non-Reaction 0 AP action only once per activation. Monsters use Monster AI instead.]
     #gap-v
     #aside-head(seed: 6)[Luck]
-    Spend *1 Luck Point* after seeing a d20 Check by or against the Hero, or a damage roll from or affecting them, before its consequences. Reroll the whole roll, keeping Advantage or Disadvantage, and use the new result. Once per roll; one Hero only (Initiative winner's side decides first). Refreshes each adventure.
+    A Hero may spend *1 Luck Point* after seeing a d20 Check made by or against them, or a damage roll they caused or that directly affects them, before its consequences apply. Reroll the whole roll, keeping Advantage or Disadvantage, and use the new result. Once per roll; one Hero only (Initiative winner's side decides first). Refreshes each adventure.
   ],
   [
     #aside-head(seed: 2)[Checks]

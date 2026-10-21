@@ -16,7 +16,7 @@
     #v(4pt)
     Hidden and Invisible never block LOS.
     #gap-v
-    #aid-table((24pt, 64pt, 1fr), ("roll", "key", "text"), ("", "State", "Effect"), (
+    #aid-table((34pt, 64pt, 1fr), ("roll", "key", "text"), ("Step", "State", "Effect"), (
       ([1], [Exposed], [No Cover; targeted normally.]),
       ([2], [Cover], [Targeted, but ranged attacks and effects have Disadvantage.]),
       ([3], [Hidden], [Cannot be targeted by anything that needs LOS.]),
@@ -40,7 +40,7 @@
     #aside-head(seed: 4)[Hidden]
     *Hide (1 AP):* be outside every enemy's LOS, or in Cover (not from a combatant) from each enemy with LOS and none within your *Hide distance* (2″). Not while Engaged or carrying a Light Source.
     #v(4pt)
-    *Lose Hidden* when you take damage, become Engaged, an enemy within Hide distance has LOS, an enemy with LOS has you out of Cover, you are Spotted, you Push or Trip, or after your first attack, harmful Power or Special Ability.
+    *Lose Hidden* when you take damage, become Engaged, an enemy within Hide distance has LOS, an enemy with LOS has you out of Cover, you are Spotted, you Push or Trip, an enemy moves through your space, or after your first attack, harmful Power or Special Ability.
     #v(4pt)
     *Check* after each Move or Shift, each action, Power or Reaction, and at the end of each activation.
     #v(4pt)
