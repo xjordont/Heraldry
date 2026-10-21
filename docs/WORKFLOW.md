@@ -29,7 +29,7 @@ Use descriptive commits such as `text(RC486): clarify ...`, `art: add ...`, `fig
 
 For a complete updated Markdown manuscript, use the reviewed import path in [MANUSCRIPT_UPDATES.md](MANUSCRIPT_UPDATES.md): `python tools/dev.py manuscript prepare --input <file.md>`, inspect its exact diff/candidate and impact report, then run its explicit `apply --approve` command with the actual owner authorization. Preparation changes no active manuscript or production evidence. Approval calls the same revision engine described below, checks the exact candidate hash and current base, and creates one new RC (normally the next number; explicit import targets may jump forward). No PDF build, commit, or push occurs automatically.
 
-RC485 contains the seven previously authorized clarifications P-01â€“P-07, promoted from the former RC484 publication patch layer. RC484 remains byte-for-byte the supplied original. The published version now accurately identifies the interactive manuscript snapshot.
+RC485 contains the seven previously authorized clarifications P-01–P-07, promoted from the former RC484 publication patch layer. RC484 remains byte-for-byte the supplied original. The published version now accurately identifies the interactive manuscript snapshot.
 
 One revision represents one approved, committed batch. Several related replacements approved together can share a revision; a subsequent text-patch batch always increments again. Whitespace, wording, values, table cells and rules edits all count as manuscript text changes. Artwork or a changed page count alone does not. Do not overwrite RC485 to prepare RC486, or make changes only in generated Typst/PDF text.
 
