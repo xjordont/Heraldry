@@ -9946,5 +9946,38 @@
    "max_print_w_in_300ppi": 2.947
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-SILKSHADE": {
+  "family": "hero",
+  "title": "Silkshade",
+  "heading_id": "h-silkshade",
+  "route": "gpt",
+  "spec_sha256": "5d919e4589c6254e72f61f6550752ddc93e5f28e458d1e46419c4047b84a238a",
+  "prompt_sha256": "71cc5f9d51793a934e82ea72c91238c0c4290293940945dc4acff6045a8f8036",
+  "status": "received",
+  "received_at": "2026-10-21T20:28:14+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker warned narrow margin (2.7% outer 6% band); visual review confirms full figure and sash uncut. Preserve warning.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-SILKSHADE.png",
+   "sha256": "fbda4ed0a83389762aca3bdae3b9e7a32d0c04c8d28398a6b302476e30a66f6a",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-SILKSHADE.png",
+   "sha256": "ce78c8b6a5f69e323951a838d27fc67d120a7ac64bcf1fa1158304be42be26f8",
+   "px": [
+    854,
+    1496
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.847
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
