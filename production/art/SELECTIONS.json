@@ -9550,5 +9550,38 @@
    "max_print_w_in_300ppi": 2.71
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-FURROWROOT": {
+  "family": "hero",
+  "title": "Furrowroot",
+  "heading_id": "h-furrowroot",
+  "route": "gpt",
+  "spec_sha256": "cb0d235a09fe6605e8945e5ace4416512a4e3b1d340aa56ee4ea07aebc745111",
+  "prompt_sha256": "fae49a05fbf62b4aaac1e39770ff4c868699b74e58718f5afb56b42b20825f02",
+  "status": "received",
+  "received_at": "2026-10-21T15:27:49+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged possible grey wash (11% midtones) and narrow margin (2.5% of outer 6% band); visual review confirms listed details and full uncut figure. Preserve warnings.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-FURROWROOT.png",
+   "sha256": "9f8358dedb28ee1cbbc940d9ea59386958eac5591d6fc57f48eb10b5921e2061",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-FURROWROOT.png",
+   "sha256": "aee114e9de4718b0187d1152e22afee339283d4854fde5489662921ed5d209b6",
+   "px": [
+    942,
+    1477
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.14
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
