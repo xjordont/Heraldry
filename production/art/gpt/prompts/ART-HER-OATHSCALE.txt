@@ -1,6 +1,6 @@
 OATHSCALE - GRITTY OLD-SCHOOL INK ILLUSTRATION
 
-Create a gritty, old-school black-and-white ink illustration of Oathscale, a Drakeblood Paladin with a Soldier background: a medium-sized, heavily armoured, scale-skinned oath-bearing soldier, named for the scales on the throat and the oath cord tied on the mace, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Oathscale, a Drakeblood Paladin with a Soldier background: a medium-sized, heavily armoured oath-bearing soldier, named for the scales on the throat and the oath cord on the mace, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 
 FORMAT AND ISOLATION
 Tall 2:3 portrait composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing.
@@ -8,38 +8,44 @@ A single subject drawn whole, isolated on blank ivory-white paper: only a small 
 Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
 
 COMPOSITION
-Full figure in three-quarter view standing upright, heater shield forward on the left arm, mace raised at the shoulder in the right hand, chin lifted.
+Full figure in three-quarter view standing upright, heater shield forward on the left arm, mace raised at the shoulder in the right hand, chin lifted. Tonal key: bright plate and white surcoat, black shield border. Silhouette: a tall armoured block with a raised mace.
 Single full-length Hero standing alone, drawn whole from the top of the head to the soles of the feet, in a ready three-quarter pose that shows the listed ancestry, class, background and every listed item of equipment. Borderless and isolated on blank white paper with no background of any kind: only a few sparse strokes of ground and a short cast shadow directly under the feet.
 
 SUBJECT DETAILS
-* Fine scales along the jaw, neck and backs of the hands, smoother skin elsewhere
-* Ridge of small horns on the brow and crown, no wings, no tail
-* Breastplate (a plate cuirass) over a padded coat, with a plain worn surcoat of cloth, torn but clean, no device
-* Heater shield on the left arm, plain and dented
-* Flanged mace in the right hand, a knotted oath cord tied on the haft
-* Soldier's open kettle helm carried hanging at the belt rather than worn
+* A fully human-shaped head and face with an ordinary nose and mouth, NOT a snout: scales appear only as a small patch along the jaw and down the neck and on the backs of the hands
+* A short ridge of small horns on the brow and crown, no wings, no tail
+* Breastplate (plate cuirass) over a padded coat, with a short plain white surcoat tied at the waist, clean hem
+* Heater shield (flat-topped, pointed at the foot) on the left arm, plain face with a bold black border
+* Flanged mace in the right hand with a knotted oath cord on the haft
+* A dagger in a plain sheath clearly visible on the belt at the hip
+* Soldier's open kettle helm hanging at the belt on a strap; no cloak
 Must be shown exactly:
 * Mace in the right hand
 * Heater shield on the left arm
 * Breastplate (plate cuirass)
-* Ridge horns and scales
+* A dagger in a sheath clearly visible at the belt
+* Ridge horns and scales on a human-shaped face
 
 ARTISTIC STYLE AND ATMOSPHERE
 Unbending, old majesty in a human frame.
-Ink it like gritty old-school rulebook monster and character art: a bold, rough brush contour of uneven weight, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag where form turns from light into shadow. High contrast, with few in-between textures; small human imperfections such as broken lines and dry-brush streaks are welcome. It reads as a strong silhouette first and detail second: no stippled skin, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn, scarred and weathered. It must look drawn by hand with brush, pen and ink, not generated or rendered.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
+* No snout, no reptile muzzle, no full dragon head.
 * No breath weapon, flame or wings.
-* Do not draw a full dragon head.
 * Not the Demonborn horns-and-tail look: use ridge horns and scales.
 * No glowing weapon.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
-Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be gritty, bold and readable at small size and print crisply in pure black ink, like original ink art in an old-school fantasy rulebook.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
 The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.

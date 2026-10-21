@@ -1,6 +1,6 @@
 ASHBORN - GRITTY OLD-SCHOOL INK ILLUSTRATION
 
-Create a gritty, old-school black-and-white ink illustration of Ashborn, a Demonborn Sorcerer with a Cultist background: a medium-sized, soot-marked, volatile single-target caster, named for the ash smeared across the brow and the cuffs, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Ashborn, a Demonborn Sorcerer with a Cultist background: a medium-sized, soot-marked, volatile single-target caster, named for the ash on the brow and cuffs, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 
 FORMAT AND ISOLATION
 Tall 2:3 portrait composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing.
@@ -8,26 +8,26 @@ A single subject drawn whole, isolated on blank ivory-white paper: only a small 
 Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
 
 COMPOSITION
-Full figure in three-quarter view, bare feet apart, one sooty hand held out flat with a few ash flakes drifting from the sleeve, a short club hanging in the other hand.
+Full figure in three-quarter view, bare feet apart, one open hand held out flat with a few ash flakes drifting from it, a short club hanging in the other hand. Tonal key: almost solid black cassock with a pale face and hand. Silhouette: a narrow dark column with a curled tail.
 Single full-length Hero standing alone, drawn whole from the top of the head to the soles of the feet, in a ready three-quarter pose that shows the listed ancestry, class, background and every listed item of equipment. Borderless and isolated on blank white paper with no background of any kind: only a few sparse strokes of ground and a short cast shadow directly under the feet.
 
 SUBJECT DETAILS
-* Slim, haggard build, small curved horns breaking through hair
-* A slender barbed tail emerging from under the coat hem
-* Ash smeared in a stripe across the brow and cheeks, hands and cuffs sooty and scorched
-* Leather coat worn under a torn dark cultist's cassock, hood thrown back
+* Slim, haggard build, two clearly drawn small curved horns breaking through cropped hair
+* A slender barbed tail visible behind the legs, bold in silhouette
+* A solid black ash stripe across the brow and cheeks, blackened hands and cuffs
+* A close-fitting, buttoned black cassock to the ankle, clean hem, over a leather coat, sleeves with a pale inner lining, no hood and no cloak
 * A plain short club in one hand
-* Ash flakes and cinder flecks drifting from the sleeve as a few small dark marks, no flame
-* Bare, soot-stained feet or wrapped cloth shoes
+* Ash flakes drifting from the open hand as a few small solid black marks, no flame
+* Bare feet
 Must be shown exactly:
 * A short wooden club in one hand
-* Leather coat under a torn dark cassock
+* Leather coat under a black cassock
 * Horns and a tail
-* Sooty open hand
+* Blackened open hand
 
 ARTISTIC STYLE AND ATMOSPHERE
 Burnt out and waiting to burn again.
-Ink it like gritty old-school rulebook monster and character art: a bold, rough brush contour of uneven weight, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag where form turns from light into shadow. High contrast, with few in-between textures; small human imperfections such as broken lines and dry-brush streaks are welcome. It reads as a strong silhouette first and detail second: no stippled skin, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn, scarred and weathered. It must look drawn by hand with brush, pen and ink, not generated or rendered.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
@@ -35,12 +35,16 @@ Do not draw:
 * No fire, flame effect, glow or lettered sigils.
 * Not an Imp or Demon monster.
 * No ritual dagger or staff.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
-Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be gritty, bold and readable at small size and print crisply in pure black ink, like original ink art in an old-school fantasy rulebook.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
 The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.

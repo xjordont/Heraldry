@@ -12086,17 +12086,17 @@
     16662
    ],
    "brief": {
-    "identity": "Ironscar, a Dwarf Fighter with a Soldier background: a medium-sized, very broad and heavy shield-wall veteran, named for the old iron-hard scar that splits the face.",
-    "composition": "Full figure in three-quarter view, braced low behind a heater shield held forward on the left arm, mace held back at the hip in the right hand, ready to strike over the shield rim.",
+    "identity": "Ironscar, a Dwarf Fighter with a Soldier background: a medium-sized, very broad, heavy shield-wall veteran, named for the old iron-hard scar that splits the face.",
+    "composition": "Full figure in three-quarter view, braced low behind a heater shield held forward on the left arm, mace drawn back at the hip in the right hand. Tonal key: dark shield and helm against a pale coat. Silhouette: a wide square block.",
     "details": [
-     "Very broad shoulders, short thick limbs, stocky frame, human height but far heavier in build",
-     "A deep old scar running from brow to jaw through one cheek and into the braided beard, drawn as a pale ridge cut through the hatching",
-     "Mail shirt (linked rings) over a padded arming coat, patched with a few bright riveted iron plates where it was once torn",
-     "Dented open kettle helm with a brim, no visor",
-     "Heater shield (kite-shaped, flat top) scarred and dented, strapped to the left forearm",
-     "Plain flanged mace with a short wooden haft in the right hand",
-     "Dagger sheathed at the belt, hilt visible",
-     "Soldier's discipline: boots planted wide, weight forward"
+     "Very broad shoulders, short thick limbs, human height but far heavier in build",
+     "A deep old scar from brow to jaw through one cheek and the braided beard, drawn as one bold pale line",
+     "Mail shirt (linked rings) drawn as a simple ringed texture on the chest and upper arms only, over a plain padded coat",
+     "Dented open kettle helm with a wide brim, no visor",
+     "Heater shield: flat-topped and pointed at the foot, its face divided into a solid black upper half and a plain white lower half, with a few dents",
+     "Plain flanged mace with a short haft in the right hand",
+     "Dagger sheathed at the belt, hilt clearly visible",
+     "No cloak and no surcoat: bare mail and coat, belt and plain boots"
     ],
     "must": [
      "One mace (single-handed) and one heater shield, both visibly held",
@@ -12107,10 +12107,14 @@
      "Not a plate knight: mail shirt only",
      "No horned helmet",
      "Not a comic dwarf: serious proportions, no oversized nose",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Stoic, unbreakable, the last stone of the line.",
@@ -12121,7 +12125,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "84e6a9679788e29d761f8e7a1b05619757a53f865c26d524b7a215a3035e3665"
+   "spec_sha256": "391e6acb71ffeb9f35ea400b002e92fab75141aedce638a18049f593bfd4443b"
   },
   {
    "id": "ART-HER-GALLOWTUSK",
@@ -12149,31 +12153,36 @@
     16698
    ],
    "brief": {
-    "identity": "Gallowtusk, an Orc Fighter with a Vagabond background: a medium-sized, very powerful roving sellsword, named for the heavy tusks and the worn rope loop at the belt.",
-    "composition": "Full figure in three-quarter view mid-stride, a great falchion held two-handed across the body in a low sweeping ready, blade angled outward.",
+    "identity": "Gallowtusk, an Orc Fighter with a Vagabond background: a medium-sized, very powerful roving sellsword, named for the heavy tusks and the rope loop at the belt.",
+    "composition": "Full figure in three-quarter view mid-stride, a great falchion held two-handed across the body in a low sweeping ready, blade angled outward. Tonal key: bare skin and bright blade against black trousers and boots. Silhouette: a long diagonal blade.",
     "details": [
-     "Huge shoulders, thick neck, grey scarred skin, heavy lower tusks, one tusk chipped",
-     "Great falchion: a very large single-edged, forward-weighted blade with a curved back, long two-handed grip",
-     "Ring shirt (mail of small rings) over a patched road coat, sleeves torn",
+     "Huge shoulders, thick neck, scarred skin, heavy lower tusks with one chipped, shaved scalp with a single topknot",
+     "Great falchion: a very large single-edged, forward-weighted blade with a curved back and a long two-handed grip, kept bold and simple",
+     "Ring shirt with short sleeves, drawn as a ringed texture on the torso only, bare scarred forearms",
      "Handaxe hung at the belt on a loop",
      "A roll of bandages tied to the belt",
-     "A short length of frayed rope looped and knotted at the belt, a hint of the gallows",
-     "Vagabond's road gear: patched travelling cloak flung back, a knotted cloth bundle slung across the back, worn-through boots"
+     "A loop of plain rope hanging from the belt",
+     "Vagabond: a single bundle strapped across the back with two straps, a wide belt, tall boots, baggy trousers",
+     "No cloak and no coat skirts: the outline is bare arms and a short body"
     ],
     "must": [
      "Great falchion held with both hands",
      "Handaxe at the belt",
-     "Ring shirt of small linked rings",
+     "Ring shirt",
      "Roll of bandages at the belt"
     ],
     "avoid": [
-     "Not a raider: no snarl, no trophies, no ragged furs",
+     "Not a raider: no snarl, no trophies, no furs",
      "No horned helm or fantasy barbarian cliche",
      "No shield",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Road-worn menace held under control.",
@@ -12184,7 +12193,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "f309aa49be393b26919c7ebaceb7eba83753358ac2e2cddd0824651005fc2c1a"
+   "spec_sha256": "bb0d8cb4ed5169063463646d424954f7236535d958232c46f8251e2916a909c0"
   },
   {
    "id": "ART-HER-BLACKKNIFE",
@@ -12213,14 +12222,14 @@
    ],
    "brief": {
     "identity": "Blackknife, a Human Rogue with a Smuggler background: a medium-sized, lean, quick-handed runner of false-bottomed cargo, named for the blackened blade they carry.",
-    "composition": "Full figure in three-quarter view, a low silent stalking step, blackened dagger held in a reverse grip close to the hip, head turned over the shoulder.",
+    "composition": "Full figure in three-quarter view, a low silent stalking step, blackened dagger held in a reverse grip close to the hip, head turned over the shoulder. Tonal key: nearly solid black coat with a few white highlights. Silhouette: a narrow dark column.",
     "details": [
-     "Lean, wiry human build, hair cropped, watchful narrowed eyes",
-     "Dagger with a blade blackened with soot, shown as a solid black blade with a thin white edge line",
-     "Leather coat with a turned-up collar, patched at the elbows and cut with many small hidden inner pockets",
+     "Lean, wiry build, cropped hair, narrowed watchful eyes, a flat cap pulled low",
+     "Dagger with a solid black blade and a thin white edge line",
+     "Knee-length dark leather coat with a turned-up collar and a row of plain buttons, intact and neatly hemmed, drawn mostly as a solid black shape with a few white fold lines",
      "A bandolier across the chest holding two throwing knives with leather-wrapped grips",
-     "Roll of lockpicks tucked in a belt pouch with a few picks showing",
-     "Soft-soled boots; a false-bottomed satchel with a tiny hinge slung behind the hip"
+     "Roll of lockpicks in a belt pouch with a few picks showing",
+     "Soft-soled boots; a small false-bottomed satchel at the hip"
     ],
     "must": [
      "Dagger in reverse grip",
@@ -12232,10 +12241,14 @@
      "Not the Assassin: no hood, no venom vial, no ambush crouch",
      "No mask clichés",
      "Do not show a drawn rapier",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Quiet, practised, always one step from the door.",
@@ -12246,7 +12259,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "c1c7ec69073a7fa0bed058f48fd585008c1c5a625fc27b0c497dc0055df23581"
+   "spec_sha256": "77171a570a59f7a4d9833bdf6182a76e3fbcad8a8459f80af9e3141e183db280"
   },
   {
    "id": "ART-HER-SOOTFINGER",
@@ -12276,13 +12289,13 @@
    ],
    "brief": {
     "identity": "Sootfinger, a Goblin Rogue with a Pauper background: a small-sized, child-sized, quick-footed fencer and treasure runner, named for the soot-black fingers.",
-    "composition": "Full figure in three-quarter view in a springing en garde, rapier extended forward in one hand, the other hand trailing a thin wisp of smoke from a tube.",
+    "composition": "Full figure in three-quarter view in a springing en garde, rapier extended forward in one hand, the other hand trailing a thin wisp of smoke from a short tube. Tonal key: light shirt, dark waistcoat. Silhouette: a small figure with one long diagonal blade.",
     "details": [
-     "Child-sized body, long pointed ears, large bright eyes, wide mouth showing a tooth",
-     "Fingers and wrists smeared black with soot, soot smudges on the face and cuffs",
+     "Child-sized body, long pointed ears, large bright eyes, wide mouth showing a tooth, a knotted headscarf",
+     "Fingers, wrists and one cheek drawn solid black as soot",
      "Rapier with a swept hilt in the leading hand; dagger tucked into the belt at the back",
-     "Oversized leather coat clearly handed down, sleeves rolled, patched in several places",
-     "Rope-tied cloth shoes, trousers patched at the knees",
+     "A short leather waistcoat over a plain shirt with the sleeves rolled to the elbow, one neat square patch, hems neat",
+     "Plain short trousers and bare lower legs with rope-tied cloth shoes",
      "Roll of lockpicks at the belt, a short smokestick (a tube with a trailing wisp) in the off hand"
     ],
     "must": [
@@ -12293,12 +12306,16 @@
     ],
     "avoid": [
      "Not the Goblin monster: no notched blade, no hunched malicious snarl, no crude trophies",
-     "Not a rag-wearing raider: patched but kept clothing",
+     "Not a rag-wearing raider: clean, mended clothing",
      "Do not make it toy-like or cartoonish",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Cheeky, hungry, light on the feet.",
@@ -12309,7 +12326,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "762af3d6df28989d7fed6e46afe2d0cb16aae22d047e87288873aec6380eb817"
+   "spec_sha256": "afca817254946254512cc930b14f4863a4bc9dbb30f119a319ccf2a21a33c18b"
   },
   {
    "id": "ART-HER-HEARTHBELL",
@@ -12338,31 +12355,35 @@
    ],
    "brief": {
     "identity": "Hearthbell, a Dwarf Cleric with a Soldier background: a medium-sized, broad, steady field chaplain of the shield line, named for the small bell at the belt.",
-    "composition": "Full figure in three-quarter view standing guard, heater shield half-raised on the left arm, mace lowered in the right hand, head bent in watchfulness toward unseen wounded behind.",
+    "composition": "Full figure in three-quarter view standing guard, heater shield half-raised on the left arm, mace lowered in the right hand, head bent toward unseen wounded behind. Tonal key: a large pale surcoat. Silhouette: a tall bell-shaped robe with a shield at one side.",
     "details": [
-     "Very broad, short, thick build; braided beard with a plain iron ring",
-     "Ring shirt (mail of linked rings) under a plain habit-like surcoat with a single bare circle mark, no lettering",
-     "Hood thrown back over the shoulders, a close-fitting mail coif beneath",
-     "Heater shield strapped to the left forearm, dented and sooted as if from a hearth",
+     "Very broad, short, thick build; long braided beard with a plain iron ring, a close mail coif with the hood thrown back",
+     "Ring shirt visible at the sleeves and collar under a plain ankle-length white surcoat with a single bare circle on the chest, hems straight and clean",
+     "Heater shield on the left arm with a plain pale face and a heavy black rim",
      "Flanged mace in the right hand",
-     "A small hand-bell hung from the belt by a cord, clapper still",
-     "Two rolls of bandages tucked into the belt"
+     "A small hand-bell hung from the belt by a cord, drawn clearly in silhouette",
+     "Two rolls of bandages tucked into the belt",
+     "No cloak"
     ],
     "must": [
      "Mace in the right hand",
      "Heater shield on the left arm",
-     "Ring shirt under a surcoat",
+     "Ring shirt at the sleeves under a surcoat",
      "Small bell hanging at the belt",
      "Two bandage rolls at the belt"
     ],
     "avoid": [
      "Not the Fighter: no scarred face, no helm, no dagger",
-     "No glowing hands, halo or holy symbol lettering",
+     "No halo or holy symbol lettering",
      "Not a comic dwarf",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Gentle, grim, the warm coal in a cold line.",
@@ -12373,7 +12394,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "8f4a20584f7c68e824327a26178996a44d85943271b9942148a3b1329c22dab6"
+   "spec_sha256": "ae524d7469550eb029e6f037c3d980b914bdb809055fc3db3ecdd04a65692569"
   },
   {
    "id": "ART-HER-EMBERVOW",
@@ -12400,22 +12421,21 @@
     16844
    ],
    "brief": {
-    "identity": "Embervow, a Demonborn Cleric with a Noble background: a medium-sized, composed, fallen-noble bodyguard-priest, named for the burnt-down vow cord at the wrist.",
-    "composition": "Full figure in three-quarter view, upright and unhurried, quarterstaff held two-handed and angled across the body in a guarding stance, one flask ready at the belt.",
+    "identity": "Embervow, a Demonborn Cleric with a Noble background: a medium-sized, composed, fallen-noble bodyguard-priest, named for the burnt vow cord at the wrist.",
+    "composition": "Full figure in three-quarter view, upright and unhurried, quarterstaff held two-handed and angled across the body in a guarding stance. Tonal key: dark coat with pale trim. Silhouette: a tall thin vertical with a curled tail.",
     "details": [
-     "Slim, upright, long-limbed build; small curved horns breaking through swept-back hair",
-     "A slender barbed tail emerging from under the cloak hem",
-     "Eyes drawn as dark rings with a tiny white point, unlit",
-     "Quilted gambeson with faded noble trim along cuffs and hem, fine stitching, once-rich and now worn",
-     "Long cloak with a heavy clasp, embroidered hem with no readable device",
-     "Quarterstaff with iron-free wooden ends, worn smooth by use",
+     "Slim, upright, long-limbed build; two clearly drawn curved horns rising from swept-back hair, bold in silhouette",
+     "A slender barbed tail curling out from behind and clear of the hem, bold in silhouette",
+     "Eyes drawn as dark rings with a tiny white point",
+     "Fitted quilted gambeson cut like a long frock coat, high collar, a clean row of vertical quilting lines and a pale braided trim along the cuffs and front, hems straight",
+     "No cloak: the coat is the whole outer garment",
+     "Quarterstaff with plain wooden ends",
      "Two stoppered holy water flasks hanging at the belt",
-     "A knotted vow cord at the wrist, its ends burnt black and frayed",
-     "Signet ring on one finger"
+     "A knotted vow cord at the wrist with burnt-black ends, a signet ring"
     ],
     "must": [
      "Quarterstaff held with both hands",
-     "Gambeson",
+     "Quilted gambeson",
      "Two stoppered flasks at the belt",
      "Horns and a tail"
     ],
@@ -12424,10 +12444,14 @@
      "No fire, halo or glowing sigil",
      "Not an Imp or Demon monster",
      "No sword",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Burnt pride, cold devotion.",
@@ -12438,7 +12462,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "bd4a92766c878bd963d6fe0386c7d6fc8f2d7a800c9e748932e7fd83fc9e1e9a"
+   "spec_sha256": "244471ca46026e3c7d205b874e7be13b9f85cecffde206a7ba96275fb80ddaa3"
   },
   {
    "id": "ART-HER-GRAVEGLASS",
@@ -12465,15 +12489,14 @@
    ],
    "brief": {
     "identity": "Graveglass, a Gnome Wizard with a Scholar background: a small-sized, child-sized, long-range arcane scholar, named for the lens of glass and the tomb dust on the hem.",
-    "composition": "Full figure in three-quarter view, one arm raised holding a lit torch up and forward, the other hand holding a short club low, head tilted as if inspecting something just out of frame.",
+    "composition": "Full figure in three-quarter view, one arm raised holding a lit torch up and forward, the other hand holding a short club low, head tilted inspecting something just out of frame. Tonal key: mid-pale robe, dark satchel. Silhouette: a small column with one raised torch.",
     "details": [
-     "Child-sized, adult-faced, large nose, one eye magnified by a flip-down brass-rimmed lens",
-     "Long layered scholar's robe with a scuffed, dust-grey hem and ink-stained sleeves",
+     "Child-sized, adult-faced, large nose, one eye magnified by a flip-down brass-rimmed lens, a close skullcap",
+     "Ankle-length belted scholar's robe with long sleeves, clean straight hem with a few dust smudges at the bottom only",
      "Plain short club in one hand",
-     "A lit torch in the other hand, drawn as a short stick with a simple flame in a few broken lines",
+     "A lit torch in the other hand, a short stick with a simple flame in a few bold lines",
      "A second unlit torch stuck through the belt",
-     "A heavy satchel of books and rolled notes on a strap across the chest",
-     "Soft cap or bare head with thin wispy hair"
+     "A heavy book satchel on a strap across the chest, with a clasp"
     ],
     "must": [
      "A short club in one hand",
@@ -12486,10 +12509,14 @@
      "No robot or steampunk goggles beyond one lens",
      "No spell effects",
      "Do not give it a staff",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Curious, scholarly, unwisely close to the dark.",
@@ -12500,7 +12527,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "9e9237cb61da4f7541fca6e249e5c4097f7799980abeb2d5287eb46bfbe18d80"
+   "spec_sha256": "1a298f13c6618538f49a856b79cd7963b9ce00f9111462777726ec37a1f30dd3"
   },
   {
    "id": "ART-HER-STARCINDER",
@@ -12527,14 +12554,14 @@
    ],
    "brief": {
     "identity": "Starcinder, an Elf Wizard with an Artisan background: a medium-sized, slender craftsperson-mage, named for the cut-star inlays and singed sleeves.",
-    "composition": "Full figure in three-quarter view, upright and balanced, a fine masterwork quarterstaff held two-handed across the body with the lower end braced, singed sleeves swept back.",
+    "composition": "Full figure in three-quarter view, upright and balanced, a fine masterwork quarterstaff held two-handed with the lower end braced. Tonal key: pale robe, dark apron. Silhouette: a very tall slim vertical with a staff.",
     "details": [
-     "Tall, slim elf with long pointed ears and a calm, exact expression",
-     "Masterwork quarterstaff: straight-grained wood with fine inlaid star shapes and brass-free tips, noticeably better made than a common staff",
-     "Long robe cinched under a leather artisan's apron with tool loops and a few small tools",
-     "Sleeves singed black at the cuffs; small burn marks on the apron",
-     "A roll of bandages tucked into the apron pocket",
-     "Callused, capable hands; hair tied back with a cord"
+     "Tall, slim elf with long pointed ears, a calm exact expression, hair tied back with a cord",
+     "Masterwork quarterstaff: straight-grained, with a row of small inlaid five-point star shapes and fine carved ends, clearly better made than a common staff",
+     "Wide-sleeved ankle-length robe, plain and pale, with sleeve cuffs blackened solid at the edge as if singed (no ragged edges)",
+     "A dark leather artisan's apron over the robe with a few tool loops and a small mallet",
+     "A roll of bandages in the apron pocket",
+     "Bare headed"
     ],
     "must": [
      "Masterwork quarterstaff held with both hands",
@@ -12547,10 +12574,14 @@
      "No pointy star-covered hat",
      "No spell effects, fire or ice drawn",
      "Not a court elf: no ornate finery",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Patient craft meeting dangerous fire.",
@@ -12561,7 +12592,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "a5d55bd917a508301ef0a9e821fcfd5e48808dcef4e6bd2cc81cb863b74d1203"
+   "spec_sha256": "c9774636c090a78fd3f2a347bd07a28c0fca35492ef51908d4f9d4a535b6192a"
   },
   {
    "id": "ART-HER-REDHAND",
@@ -12589,15 +12620,15 @@
    ],
    "brief": {
     "identity": "Redhand, an Orc Berserker with a Farmer background: a medium-sized, huge, field-hardened farmhand turned frenzied axeman, named for the painted handprint on the chest.",
-    "composition": "Full figure in three-quarter view mid-charge, mouth open in a roar, a greataxe raised two-handed over the shoulder ready to chop down.",
+    "composition": "Full figure in three-quarter view mid-charge, mouth open in a roar, a greataxe raised two-handed over the shoulder ready to chop down. Tonal key: bright bare arms and baggy pale trousers, dark cuirass. Silhouette: a wide triangle with a raised axe.",
     "details": [
-     "Huge shoulders and a thick neck, grey scarred skin, heavy lower tusks, wild matted hair",
-     "Greataxe: a long haft and a heavy broad single bit, held in both hands",
+     "Huge shoulders and thick neck, scarred skin, heavy lower tusks, wild hair tied in a thick tail",
+     "Greataxe: a long haft and a heavy broad single bit, held in both hands, kept bold and simple",
      "Hide cuirass (boiled hide breastplate) over bare scarred arms",
-     "A large handprint painted in solid black across the chest, fingers spread, the single dark mark on the cuirass",
-     "Homespun trousers bound at the shin with straw rope, heavy farm boots caked with earth",
+     "A large handprint painted solid black across the chest, fingers spread",
+     "Baggy homespun trousers tied at the shin with straw rope, heavy farm boots",
      "Dagger at the belt",
-     "Corded, callused forearms from years of plough and scythe"
+     "No cloak"
     ],
     "must": [
      "Greataxe held with both hands",
@@ -12609,10 +12640,14 @@
      "Not the Orc monster: no trophies, no horned helm",
      "No gore",
      "Do not give the figure a shield",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Plain-spoken rage, a farm's patience finally spent.",
@@ -12623,7 +12658,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "9c1f683ee005512718a955903ea1fa748b988bd7873ebdaaf4ada5636deda711"
+   "spec_sha256": "d57a03476d8d1512a170c5d6b4b3f6034905e0845dc4c8b1bc4b788f0c3c1186"
   },
   {
    "id": "ART-HER-CAIRNWRATH",
@@ -12650,16 +12685,16 @@
     16984
    ],
    "brief": {
-    "identity": "Cairnwrath, a Dwarf Berserker with a Nomad background: a medium-sized, durable executioner of the open country, named for the small stacked cairn stones tied to the belt.",
-    "composition": "Full figure in three-quarter view, planted wide and leaning into a roar, battleaxe held high in both hands overhead, ready to chop down.",
+    "identity": "Cairnwrath, a Dwarf Berserker with a Nomad background: a medium-sized, durable executioner of the open country, named for the small stacked stones tied to the belt.",
+    "composition": "Full figure in three-quarter view, planted wide and leaning into a roar, battleaxe held high in both hands overhead. Tonal key: dark mantle and beard, pale tunic. Silhouette: a squat triangle with an overhead axe.",
     "details": [
-     "Very broad, short, thick build; thick braided beard bound with cords and small stones",
+     "Very broad, short, thick build; thick beard braided in two ropes bound with cords and small stones",
      "Battleaxe: a single broad bit on a medium haft, gripped two-handed",
-     "Hide cuirass (boiled hide breastplate) over a felt tunic, bare scarred forearms",
+     "Hide cuirass over a plain felt tunic, bare scarred forearms",
      "Dagger at the belt",
-     "A string of small flat stones stacked and tied to the belt like a miniature cairn",
-     "Nomad's felt cloak flung back, a rolled felt shelter bundle bound with cords across the back",
-     "Hard, tall travelling boots wrapped with cord"
+     "A string of small flat stones stacked and tied to the belt like a miniature cairn, drawn clearly",
+     "A thick felt mantle over the shoulders only, cleanly cut with a simple stitched zigzag border, no ragged edge, and a rolled felt shelter bundle across the back",
+     "Hard tall boots wrapped with cord"
     ],
     "must": [
      "Battleaxe held with both hands",
@@ -12672,10 +12707,14 @@
      "No horned helm",
      "Not a comic dwarf",
      "No gore",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Implacable, patient, the verdict walking in.",
@@ -12686,7 +12725,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "619dfdf29daf8ebf477033902933ac5ac81511d5eda1259c2566d6c916260cea"
+   "spec_sha256": "4c05966cee729cffa97838e89cab5031f6c1399b819a08b660aedbc5118647c5"
   },
   {
    "id": "ART-HER-THORNMERE",
@@ -12713,30 +12752,34 @@
     17021
    ],
    "brief": {
-    "identity": "Thornmere, a Human Ranger with a Scout background: a medium-sized, lean, marsh-and-bramble archer, named for the thorn sprigs woven into the hooded cloak.",
-    "composition": "Full figure in three-quarter view at full draw, shortbow pulled to the cheek with an arrow nocked, the lead foot planted forward and the other braced back.",
+    "identity": "Thornmere, a Human Ranger with a Scout background: a medium-sized, lean, marsh-and-bramble archer, named for the thorn sprigs woven into the hood.",
+    "composition": "Full figure in three-quarter view at full draw, shortbow pulled to the cheek with an arrow nocked, lead foot planted forward. Tonal key: mid-dark hood and coat. Silhouette: a profile archer with the bow forming a large curve.",
     "details": [
-     "Lean, weathered human with sharp watchful eyes",
+     "Lean, weathered, sharp watchful eyes",
      "Shortbow of plain wood, bowstring drawn, arrow with fletching at the cheek",
-     "Leather coat with a hooded cloak, faded and patched, bramble and thorn sprigs stitched into the hood and shoulders for cover",
-     "Quiver on the hip with a few visible arrow fletchings",
-     "Elven sickle (a slender curved single-edged blade with a leaf-shaped grip) hung at the belt",
-     "Leaf litter clinging to the boots"
+     "A close-fitting hood and short shoulder cape, cleanly cut, with four or five bold thorn sprigs stitched on, over a plain leather coat with a laced front",
+     "Quiver on the hip with a few visible fletchings",
+     "Elven sickle (slender curved single-edged blade with a leaf-shaped grip) hung at the belt",
+     "Bound shins and plain boots"
     ],
     "must": [
      "Shortbow drawn with an arrow nocked",
      "Quiver at the hip",
      "Elven sickle at the belt",
-     "Leather coat with a hooded cloak"
+     "Leather coat with a hood"
     ],
     "avoid": [
      "Not the Assassin: no hooded crouch, no dagger-first pose",
      "No animal companion",
      "No target or enemy drawn",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Silent, unhurried, already aimed.",
@@ -12747,7 +12790,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "7ad0e0ab1d1f1aa09217478c73f4d05144db8c206f591e86ca9b769583565ab7"
+   "spec_sha256": "aee9bce76d6411bae7483cb30a1659059f55f50ed1acc009a90159b6ffe7b3bd"
   },
   {
    "id": "ART-HER-GALEFLETCH",
@@ -12775,15 +12818,15 @@
    ],
    "brief": {
     "identity": "Galefletch, an Elf Ranger with a Courier background: a medium-sized, fast-moving archer messenger, named for the long wind-torn fletching of the arrows.",
-    "composition": "Full figure in three-quarter view mid-stride, a shortbow carried ready in both hands and an arrow half-drawn from the quiver, cloak and hair streaming back in the wind.",
+    "composition": "Full figure in three-quarter view mid-stride, a shortbow carried ready in both hands, hair and a long scarf streaming back in the wind. Tonal key: light coat, dark boots, black hair. Silhouette: a leaning diagonal with streaming lines.",
     "details": [
-     "Slim, long-limbed elf with long pointed ears and a keen, forward gaze",
-     "Shortbow held two-handed, bowstring slack, arrow ready",
-     "Quiver across the back with long arrow fletching feathers streaming in the wind",
-     "Leather coat, light and well mended, with a short travelling cloak blown back",
-     "Elven dagger (a slender double-edged blade with a leaf-shaped grip) at the belt",
-     "Leather dispatch satchel with a buckle and a plain wax seal slung on the hip",
-     "Light boots with wrapped shins built for running"
+     "Slim, long-limbed elf with long pointed ears and a keen forward gaze, bare headed with loose hair streaming",
+     "Shortbow held two-handed, bowstring slack, an arrow ready",
+     "Quiver across the back with arrows whose long fletching feathers stream in the wind",
+     "A short, close-fitted leather coat with a long scarf streaming back; no cloak",
+     "Elven dagger (slender double-edged blade with a leaf-shaped grip) at the belt",
+     "Leather dispatch satchel with a buckle and a plain wax seal on the hip",
+     "Light boots and wrapped shins built for running"
     ],
     "must": [
      "Shortbow held in both hands",
@@ -12792,13 +12835,17 @@
      "Leather coat"
     ],
     "avoid": [
-     "Not the Thornmere archer: no hood, no bramble cloak",
+     "Not the Thornmere archer: no hood, no bramble",
      "Not a court elf: no ornate finery",
      "No animal companion",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Speed over broken roads.",
@@ -12809,7 +12856,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "707739418fb76e85dff7ed4164ad79f19ac68def06c6f7ac02612d95d7c15034"
+   "spec_sha256": "26a338bf0d807d52eb70991180e62aea41d53fe3355b53b6221c5a895493b35c"
   },
   {
    "id": "ART-HER-OATHSCALE",
@@ -12836,31 +12883,37 @@
     17094
    ],
    "brief": {
-    "identity": "Oathscale, a Drakeblood Paladin with a Soldier background: a medium-sized, heavily armoured, scale-skinned oath-bearing soldier, named for the scales on the throat and the oath cord tied on the mace.",
-    "composition": "Full figure in three-quarter view standing upright, heater shield forward on the left arm, mace raised at the shoulder in the right hand, chin lifted.",
+    "identity": "Oathscale, a Drakeblood Paladin with a Soldier background: a medium-sized, heavily armoured oath-bearing soldier, named for the scales on the throat and the oath cord on the mace.",
+    "composition": "Full figure in three-quarter view standing upright, heater shield forward on the left arm, mace raised at the shoulder in the right hand, chin lifted. Tonal key: bright plate and white surcoat, black shield border. Silhouette: a tall armoured block with a raised mace.",
     "details": [
-     "Fine scales along the jaw, neck and backs of the hands, smoother skin elsewhere",
-     "Ridge of small horns on the brow and crown, no wings, no tail",
-     "Breastplate (a plate cuirass) over a padded coat, with a plain worn surcoat of cloth, torn but clean, no device",
-     "Heater shield on the left arm, plain and dented",
-     "Flanged mace in the right hand, a knotted oath cord tied on the haft",
-     "Soldier's open kettle helm carried hanging at the belt rather than worn"
+     "A fully human-shaped head and face with an ordinary nose and mouth, NOT a snout: scales appear only as a small patch along the jaw and down the neck and on the backs of the hands",
+     "A short ridge of small horns on the brow and crown, no wings, no tail",
+     "Breastplate (plate cuirass) over a padded coat, with a short plain white surcoat tied at the waist, clean hem",
+     "Heater shield (flat-topped, pointed at the foot) on the left arm, plain face with a bold black border",
+     "Flanged mace in the right hand with a knotted oath cord on the haft",
+     "A dagger in a plain sheath clearly visible on the belt at the hip",
+     "Soldier's open kettle helm hanging at the belt on a strap; no cloak"
     ],
     "must": [
      "Mace in the right hand",
      "Heater shield on the left arm",
      "Breastplate (plate cuirass)",
-     "Ridge horns and scales"
+     "A dagger in a sheath clearly visible at the belt",
+     "Ridge horns and scales on a human-shaped face"
     ],
     "avoid": [
+     "No snout, no reptile muzzle, no full dragon head",
      "No breath weapon, flame or wings",
-     "Do not draw a full dragon head",
      "Not the Demonborn horns-and-tail look: use ridge horns and scales",
      "No glowing weapon",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Unbending, old majesty in a human frame.",
@@ -12871,7 +12924,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "1fcce45122678592f3b1e664697d2d26eef9dedeae3d8e24a3c4ccaf9076e4ed"
+   "spec_sha256": "f365836989906b11018f47e7f124da4816aaff33891658e6b6017317e5963650"
   },
   {
    "id": "ART-HER-DAWNWARDEN",
@@ -12900,29 +12953,33 @@
    ],
    "brief": {
     "identity": "Dawnwarden, a Human Paladin with a Believer background: a medium-sized, mail-clad, charging protector of the faithful, named for the sunrise device on the shield.",
-    "composition": "Full figure in three-quarter view mid-charge, leaning forward with a targe held out front, mace drawn back at the shoulder, two flasks swinging at the belt.",
+    "composition": "Full figure in three-quarter view mid-charge, leaning forward with a targe held out front, mace drawn back at the shoulder. Tonal key: white surcoat, black-and-white shield. Silhouette: a forward-leaning wedge.",
     "details": [
-     "Sturdy human build, jaw set, eyes forward",
-     "Ring shirt (mail of linked rings) under a plain surcoat of cloth, torn at the hem",
-     "Targe: a small round shield with a central boss and a simple rising-sun device of straight rays, no lettering",
+     "Sturdy build, jaw set, eyes forward, bare headed with short hair",
+     "Ring shirt drawn as a ringed texture on the arms and skirt under a clean knee-length white surcoat belted at the waist",
+     "Targe: a small round shield with a central boss, its face half solid black and half white with a simple rising-sun of straight rays, no lettering",
      "Flanged mace drawn back in the right hand",
      "Two stoppered holy water vials hanging at the belt",
-     "A plain cloak of faded cloth thrown back as the figure moves, a small unlit lantern hooked at the back of the belt"
+     "No cloak"
     ],
     "must": [
      "Mace in the right hand",
      "Targe (small round shield) on the left arm",
-     "Ring shirt of linked rings",
+     "Ring shirt",
      "Two stoppered vials at the belt"
     ],
     "avoid": [
      "Not the Cleric: no kneeling, no quarterstaff",
      "No glowing sword, halo or wings",
      "No readable lettering on the shield",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Faith as forward motion.",
@@ -12933,7 +12990,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "e9cf7f623f32ac93bbf72fb4c3f1f64abff93d3f213af31bc9d3d6e2397417a0"
+   "spec_sha256": "1ed14362002cfe7ccfa8a0f6bf7c42ceaf22068c2205d1e63407b25f125176a7"
   },
   {
    "id": "ART-HER-MOSSGRAVE",
@@ -12959,29 +13016,33 @@
     17163
    ],
    "brief": {
-    "identity": "Mossgrave, a Human Druid with a Hermit background: a medium-sized, unkempt, moss-grown recluse and healer, named for the moss that has settled on the coat and shoulders.",
-    "composition": "Full figure in three-quarter view standing still and slightly stooped, a knotted club held low in one hand and the other hand open with the palm outward, head tilted as if listening.",
+    "identity": "Mossgrave, a Human Druid with a Hermit background: a medium-sized, unkempt, moss-grown recluse and healer, named for the moss that has settled on the shoulders.",
+    "composition": "Full figure in three-quarter view standing still and slightly stooped, a knotted club held low in one hand and the other hand open with the palm outward, head tilted as if listening. Tonal key: mixed, the moss as the one dark cluster. Silhouette: a stooped column.",
     "details": [
-     "Long unkempt beard and hair, bare weathered face, a still, attentive gaze",
-     "Leather coat patched with bark-like cloth, with patches of moss and lichen drawn along the shoulders and collar",
+     "Long unkempt beard and hair, bare weathered face, a still attentive gaze",
+     "A plain long hermit's coat, neatly hemmed and hanging in a few large simple folds, with the moss shown only as a cluster of simple black leaf-and-rosette shapes on the shoulders and collar",
      "Plain knotted wooden club in one hand",
-     "Open free hand with the palm outward, dirt in the creases",
-     "Feet wrapped in strips of cloth, one boot sole flapping",
-     "A pouch of herbs and a few dried stems tied at the belt, a twig or two in the hair"
+     "Open free hand with the palm outward",
+     "Feet wrapped in strips of cloth",
+     "A herb pouch and a bundle of dried stems tied at the belt, a twig in the hair"
     ],
     "must": [
      "A short wooden club in one hand",
-     "Leather coat with moss along the shoulders",
+     "Leather coat with moss shapes along the shoulders",
      "An open palm in the other hand"
     ],
     "avoid": [
      "Not the Tier 3 tradition image: no bark skin or antlers",
      "No animal companion",
-     "No magical effects or glow",
+     "No grey or olive tone: the moss is drawn in black line and solid black only",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Solitary, quiet, tender with growing things.",
@@ -12992,7 +13053,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "ede7a6d1d589bbbad93ed24b7576ccf3c1497383649f6fc1db5cb8e1c8503717"
+   "spec_sha256": "01e5983023718b92283c073d361131e6ba276a27506faee47ac90a298b619d4c"
   },
   {
    "id": "ART-HER-FURROWROOT",
@@ -13021,15 +13082,15 @@
    ],
    "brief": {
     "identity": "Furrowroot, a Halfling Druid with a Farmer background: a small-sized, child-sized, stout, soil-stained field druid, named for the furrow-mud on the boots and the roots at the belt.",
-    "composition": "Full figure in three-quarter view, feet planted wide in a ready stance, an elven sickle held low and curved forward in one hand, a sling coiled in the other.",
+    "composition": "Full figure in three-quarter view, feet planted wide in a ready stance, an elven sickle held low and curved forward in one hand, a sling coiled in the other. Tonal key: pale smock and hat, dark coat. Silhouette: a short wide figure with a big round hat.",
     "details": [
-     "Child-sized, round-faced adult halfling, hair wild and curled, bare broad feet with thick hair on the tops",
-     "Elven sickle (a slender curved single-edged blade with a leaf-shaped grip) in the leading hand",
-     "A sling with a leather pouch of stones coiled in the other hand or looped over the belt",
-     "Leather coat patched at the elbows, sleeves rolled, over a farmhand's smock",
+     "Child-sized, round-faced adult, curled hair under a wide straw hat pushed back, bare broad hairy feet",
+     "Elven sickle (slender curved single-edged blade with a leaf-shaped grip) in the leading hand",
+     "A sling with a leather pouch of stones coiled in the other hand",
+     "A leather coat worn open over a plain farmer's smock and a wide apron, sleeves rolled, clean hems",
      "A roll of bandages tied to the belt",
-     "A few roots and a tuft of herbs hung from the belt by their stems",
-     "Boots or leggings thick with furrow mud, straw-brimmed hat pushed back"
+     "Three roots hung from the belt by their stems",
+     "Muddy trouser cuffs shown as a few solid black blots"
     ],
     "must": [
      "Elven sickle in one hand",
@@ -13041,10 +13102,14 @@
      "Do not duplicate the Gnome's bandolier and lens silhouette",
      "Not toy-like or cartoonish",
      "No magical effects",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Stubborn and kind, rooted in plough-turned ground.",
@@ -13055,7 +13120,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "cb0d235a09fe6605e8945e5ace4416512a4e3b1d340aa56ee4ea07aebc745111"
+   "spec_sha256": "4ce6af200cf7a2611787bfb4341ae7f03336337dd009547e8b16a3cd5fd1f49e"
   },
   {
    "id": "ART-HER-THOUGHTWAKE",
@@ -13081,15 +13146,15 @@
     17239
    ],
    "brief": {
-    "identity": "Thoughtwake, a Human Psion with a Scholar background: a medium-sized, intent, ink-cuffed mind-fighter, named for the ripple of disturbed hair and cloak that trails behind their thoughts.",
-    "composition": "Full figure in three-quarter view, standing still with two fingers pressed to the temple, club held low in the other hand, hair and cloak lifted behind as if stirred by an unseen current.",
+    "identity": "Thoughtwake, a Human Psion with a Scholar background: a medium-sized, intent, ink-cuffed mind-fighter, named for the ripple of disturbed hair trailing behind their thoughts.",
+    "composition": "Full figure in three-quarter view, standing still with two fingers pressed to the temple, club held low in the other hand, hair lifted behind by an unseen current. Tonal key: a pale coat front with hatching only on the shadow side. Silhouette: a slim column with a tall cap.",
     "details": [
-     "Spare, intense human with a furrowed brow and narrowed eyes",
+     "Spare, intense build, furrowed brow, narrowed eyes, long hair lifted back in a few bold strands",
      "Two fingertips pressed to the temple of the bowed head",
      "Plain short club in the other hand, held low",
-     "Leather coat with ink-stained cuffs and a scholar's pen case at the belt",
-     "Hair and cloak hem drifting backward in thin broken lines of ink, an unseen wake behind the figure",
-     "A scholar's flat cap or bare head with cropped hair"
+     "A smooth knee-length leather coat, belted, with ink-black cuffs, intact and clean-hemmed",
+     "A scholar's pen case at the belt, a tall flat scholar's cap",
+     "No cloak"
     ],
     "must": [
      "A short club in one hand",
@@ -13100,10 +13165,14 @@
      "Not the Wizard: no staff, no books, no robe",
      "No glowing eyes, aura or floating objects",
      "No spell effects",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "A quiet, listening cruelty.",
@@ -13114,7 +13183,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "956818be57c4a0f8b433500ca545a9528c1286f7a1a848f9634efa535ffbce19"
+   "spec_sha256": "744d9c5f3b44c6f1fefccc3b455e884a510a577225bedb9b7055f3932788f024"
   },
   {
    "id": "ART-HER-GNAWTHOUGHT",
@@ -13142,16 +13211,15 @@
     17269
    ],
    "brief": {
-    "identity": "Gnawthought, a Ratkin Psion with an Alchemist background: a small-sized, child-sized, twitchy, chemical-stained mind-fighter, named for the gnawed hem and the chewed-off glove tips.",
-    "composition": "Full figure in three-quarter view in a wary half-crouch, dagger held low in one hand, the other hand raised with a stoppered acid pot ready to throw.",
+    "identity": "Gnawthought, a Ratkin Psion with an Alchemist background: a small-sized, child-sized, twitchy, chemical-stained mind-fighter, named for the chewed glove tips.",
+    "composition": "Full figure in three-quarter view in a wary half-crouch, dagger held low in one hand, the other hand raised with a stoppered acid pot ready to throw. Tonal key: dark apron, pale fur. Silhouette: a small crouch with a long curling tail.",
     "details": [
      "Child-sized body with a rat-like muzzle, long whiskers, round ears and bright watchful eyes",
      "Long scaly tail curled around the feet",
-     "Leather coat gnawed ragged along the hem, fingerless gloves chewed off at the tips, stained with chemicals",
+     "A short leather coat with a heavy leather alchemist's apron over it, intact hems, fingerless gloves chewed off at the tips",
      "A stoppered ceramic acid pot with a wax seal in the raised hand",
      "A second acid pot and a corked glass healing flask hung at the belt",
-     "A short dagger in the low hand",
-     "Scorched leather apron strings and a smear of soot across the muzzle"
+     "A short dagger in the low hand"
     ],
     "must": [
      "Dagger in one hand",
@@ -13165,10 +13233,14 @@
      "Do not draw it as a literal rat: upright, humanoid, clothed",
      "No glowing eyes or aura",
      "No staff or books",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Skittish, bright and dangerous.",
@@ -13179,7 +13251,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "2c1de2025e68df61ac5687262b023c9d260b9c0e8f477f3150c966dd372953ba"
+   "spec_sha256": "3b82f85499395ed5e4ffdcd68550a6cbef6404fa0f4e8a7d6c174b0e3c0ef378"
   },
   {
    "id": "ART-HER-ASHBORN",
@@ -13205,32 +13277,36 @@
     17308
    ],
    "brief": {
-    "identity": "Ashborn, a Demonborn Sorcerer with a Cultist background: a medium-sized, soot-marked, volatile single-target caster, named for the ash smeared across the brow and the cuffs.",
-    "composition": "Full figure in three-quarter view, bare feet apart, one sooty hand held out flat with a few ash flakes drifting from the sleeve, a short club hanging in the other hand.",
+    "identity": "Ashborn, a Demonborn Sorcerer with a Cultist background: a medium-sized, soot-marked, volatile single-target caster, named for the ash on the brow and cuffs.",
+    "composition": "Full figure in three-quarter view, bare feet apart, one open hand held out flat with a few ash flakes drifting from it, a short club hanging in the other hand. Tonal key: almost solid black cassock with a pale face and hand. Silhouette: a narrow dark column with a curled tail.",
     "details": [
-     "Slim, haggard build, small curved horns breaking through hair",
-     "A slender barbed tail emerging from under the coat hem",
-     "Ash smeared in a stripe across the brow and cheeks, hands and cuffs sooty and scorched",
-     "Leather coat worn under a torn dark cultist's cassock, hood thrown back",
+     "Slim, haggard build, two clearly drawn small curved horns breaking through cropped hair",
+     "A slender barbed tail visible behind the legs, bold in silhouette",
+     "A solid black ash stripe across the brow and cheeks, blackened hands and cuffs",
+     "A close-fitting, buttoned black cassock to the ankle, clean hem, over a leather coat, sleeves with a pale inner lining, no hood and no cloak",
      "A plain short club in one hand",
-     "Ash flakes and cinder flecks drifting from the sleeve as a few small dark marks, no flame",
-     "Bare, soot-stained feet or wrapped cloth shoes"
+     "Ash flakes drifting from the open hand as a few small solid black marks, no flame",
+     "Bare feet"
     ],
     "must": [
      "A short wooden club in one hand",
-     "Leather coat under a torn dark cassock",
+     "Leather coat under a black cassock",
      "Horns and a tail",
-     "Sooty open hand"
+     "Blackened open hand"
     ],
     "avoid": [
      "No bat wings, hooves or fiery body: a person with horns and a tail",
      "No fire, flame effect, glow or lettered sigils",
      "Not an Imp or Demon monster",
      "No ritual dagger or staff",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Burnt out and waiting to burn again.",
@@ -13241,7 +13317,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "ff2a77b26140cba4457175c3112fa8ef9c5cfc098008d296f35b0ab19e253926"
+   "spec_sha256": "e451613fdeeec3a88794d7c04ff7b0560081391c1c194dbee65d1247a168653a"
   },
   {
    "id": "ART-HER-STORMCROOK",
@@ -13269,16 +13345,15 @@
     17339
    ],
    "brief": {
-    "identity": "Stormcrook, a Drakeblood Sorcerer with a Shepherd background: a medium-sized, wind-whipped, scale-skinned flock-watcher, named for the hooked shepherd's staff and the storm that follows them.",
-    "composition": "Full figure in three-quarter view, planted wide on the windward side, a crook-topped quarterstaff gripped two-handed and slanted against the wind, cloak and hair torn back.",
+    "identity": "Stormcrook, a Drakeblood Sorcerer with a Shepherd background: a medium-sized, wind-whipped, scale-skinned flock-watcher, named for the hooked shepherd's staff and the storm that follows.",
+    "composition": "Full figure in three-quarter view planted on the windward side, a crook-topped quarterstaff gripped two-handed and slanted against the wind, cloak and hair blown back. Tonal key: dark cloak, pale coat. Silhouette: a strong diagonal staff with a flying cloak.",
     "details": [
-     "Fine scales along the jaw, neck and the backs of the hands, smoother skin elsewhere",
-     "Ridge of small horns on the brow and crown, no wings, no tail",
-     "Quarterstaff with a hooked shepherd's crook at the top, worn by long handling",
+     "A fully human-shaped face; fine scales only along the jaw and neck and backs of the hands",
+     "A short ridge of small horns on the brow and crown, no wings, no tail",
+     "Quarterstaff with a hooked shepherd's crook at the top",
      "Sling and a pouch of stones coiled at the belt",
-     "Leather coat and a heavy travelling cloak flung out sideways by unseen wind, hair streaming",
-     "A roll of bandages tied at the belt",
-     "Heavy, wrapped herder's boots"
+     "A heavy hooded travelling cloak with a clean cut edge, blown out sideways in a few bold sweeping folds; this is the only windblown cloak in the series",
+     "A leather coat beneath, a roll of bandages at the belt, wrapped herder's boots"
     ],
     "must": [
      "Quarterstaff with a hooked crook top held with both hands",
@@ -13287,14 +13362,18 @@
      "Leather coat"
     ],
     "avoid": [
-     "No breath weapon, flame or lightning effect drawn",
-     "No wings or full dragon head",
+     "No breath weapon, flame or lightning drawn",
+     "No snout, no wings, no full dragon head",
      "Do not copy the Demonborn look: use ridge horns and scales",
      "No sheep or animals",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Wind and weather answering the watcher.",
@@ -13305,7 +13384,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "97aa015efde633e0aabe91707c1a7bd3ea21c9cb720f6f7c700cd57c23f593fc"
+   "spec_sha256": "0161932afe008704e7b9b6ec1cb797d0bfb0372cbc86ba57a4c355bf0907be13"
   },
   {
    "id": "ART-HER-SILKSHADE",
@@ -13333,17 +13412,16 @@
     17380
    ],
    "brief": {
-    "identity": "Silkshade, a Human Assassin with a Performer background: a medium-sized, lithe acrobat-killer, named for the trailing silk sash and the shadow the half-mask throws.",
-    "composition": "Full figure in three-quarter view, balanced on the balls of the feet in a light, poised stance, dagger held in a reverse grip low at the hip, a silk sash trailing behind.",
+    "identity": "Silkshade, a Human Assassin with a Performer background: a medium-sized, lithe acrobat-killer, named for the trailing silk sash and the shadow of the half-mask.",
+    "composition": "Full figure in three-quarter view, balanced on the balls of the feet in a light poised stance, dagger in a reverse grip low at the hip, a silk sash trailing behind. Tonal key: checkered black and white jacket. Silhouette: a balanced S-curve with a long trailing sash.",
     "details": [
-     "Lithe, narrow human build, a performer's poised carriage",
-     "Half-face theatrical mask covering only the eyes and nose, cracked and mended, tie strings at the back",
-     "Close-fitting leather coat cut like a tumbler's jacket, mended cuffs",
-     "Long loose silk sash knotted at the waist, one end trailing in a flowing S-curve",
-     "Dagger in reverse grip, the edge dulled dark",
+     "Lithe, narrow build, a performer's poised carriage, short hair",
+     "Half-face theatrical mask over the eyes and nose, tie strings behind the head",
+     "A close-fitting tumbler's jacket in leather with a diamond-pattern of stitched panels (like a harlequin, two values only), clean cuffs",
+     "A long loose silk sash knotted at the waist, one end trailing in a bold S-curve",
+     "Dagger in reverse grip, the blade drawn solid black",
      "A bandolier across the chest holding two plain throwing knives",
-     "A corked vial of venom at the belt",
-     "Soft soled boots"
+     "A corked vial of venom at the belt, soft soled boots; no cloak"
     ],
     "must": [
      "Dagger in reverse grip",
@@ -13353,12 +13431,16 @@
     ],
     "avoid": [
      "Not the Rogue: no lockpicks",
-     "Not the Blackknife rogue: do not repeat the stalking crouch or turned collar",
+     "Not the Blackknife rogue: no stalking crouch, no turned collar, no long coat",
      "Do not show the target or gore",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Elegant, quiet, rehearsed.",
@@ -13369,7 +13451,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "5d919e4589c6254e72f61f6550752ddc93e5f28e458d1e46419c4047b84a238a"
+   "spec_sha256": "b15c34dbe40360301eeaf76b788094359814ba8a4e6f2b2f0169b0a937b3eedd"
   },
   {
    "id": "ART-HER-NIGHTLOOM",
@@ -13398,17 +13480,16 @@
     17416
    ],
    "brief": {
-    "identity": "Nightloom, a Deep Elf Assassin with a Smuggler background: a medium-sized, pale-skinned, dark-clad duellist-poisoner, named for the loom-woven cloak of loose dark threads.",
-    "composition": "Full figure in three-quarter view in a low forward lunge stance, slender elven rapier extended forward in one hand, the elven dagger reversed in the other.",
+    "identity": "Nightloom, a Deep Elf Assassin with a Smuggler background: a medium-sized, pale-skinned, dark-clad duellist-poisoner, named for the woven pattern of the cloak.",
+    "composition": "Full figure in three-quarter view in a low forward lunge, slender elven rapier extended forward in one hand, the elven dagger reversed in the other. Tonal key: patterned dark cloak, pale face and blades. Silhouette: a low lunge with a long blade.",
     "details": [
      "Pale skin, long pointed ears, slim graceful build, narrow shadowed eyes",
-     "Deep hood pulled low against daylight, scarf at the throat",
-     "Fine dark leather coat, close fitted, plain trim with no court heraldry",
-     "Long dark cloak woven in fine cross-hatched threads, the hem ending in a ragged fringe of loose strands like a half-unwoven cloth",
+     "Deep hood and a scarf at the throat",
+     "A long dark cloak hanging closed behind in a few long clean folds, its whole surface a bold woven diamond lattice drawn as simple black-and-white lines (the loom), hem straight and neat, no fringe and no tatters",
+     "Fine dark leather coat, close fitted, plain trim",
      "Elven rapier: a long, slim blade with a swept elven hilt",
-     "Elven dagger: a slender double-edged blade with a leaf-shaped grip, held reversed in the other hand",
-     "Two corked venom vials and a short smokestick tube at the belt",
-     "Rope coil and small hidden pockets visible at the hip, a smuggler's habit"
+     "Elven dagger: a slender double-edged blade with a leaf-shaped grip, held reversed",
+     "Two corked venom vials and a short smokestick tube at the belt, a coil of rope at the hip"
     ],
     "must": [
      "Elven rapier in one hand",
@@ -13419,12 +13500,16 @@
     ],
     "avoid": [
      "Not the Deep Elf Warrior or Priest monster: no ornate court armour, no hand crossbow",
-     "Not a light-cloaked surface elf: keep dark gear and hood",
      "No spider imagery",
+     "Do not draw the cloak ragged or fringed",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Silent, deliberate, a thread pulled in the dark.",
@@ -13435,7 +13520,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "91991a97c9ca5f90a36e7f4dd14dea90d2edede0ff64dcbf1b2ad97a416f2777"
+   "spec_sha256": "30e16462acb539b5cc5c44416b3737047a463da35e44523d5b387c9e5a51d5c1"
   },
   {
    "id": "ART-HER-CROWWICK",
@@ -13462,16 +13547,16 @@
     17453
    ],
    "brief": {
-    "identity": "Crowwick, a Halfling Trickster with an Apprentice background: a small-sized, child-sized, scrap-clothed apprentice illusionist, named for the black crow feather in the hat and the candle-stub wick at the belt.",
-    "composition": "Full figure in three-quarter view up on tiptoe with a grin, a half-unrolled scroll held out in one hand and a short club in the other, as if about to play a trick.",
+    "identity": "Crowwick, a Halfling Trickster with an Apprentice background: a small-sized, child-sized, borrowed-clothes apprentice illusionist, named for the black crow feather in the hat and the candle-stub wick at the belt.",
+    "composition": "Full figure in three-quarter view up on tiptoe with a grin, a half-unrolled scroll held out in one hand and a short club in the other. Tonal key: mid-dark oversized coat, a pale scroll. Silhouette: a small figure with a tall peaked cap and one outstretched scroll.",
     "details": [
-     "Child-sized, round-faced adult halfling, hair wild and curled, bare broad feet with thick hair on the tops",
-     "Oversized hand-me-down leather coat with sleeves rolled many times and hanging past the knees",
-     "A black crow feather tucked into a shapeless cap",
-     "A half-unrolled scroll with a ribbon seal, held out in the left hand, covered in blank wavy lines (no lettering)",
-     "Plain short club held in the other hand",
+     "Child-sized, round-faced adult, bare broad hairy feet",
+     "A big apprentice's smock-coat clearly too large, with sleeves rolled into thick cuffs, belted with a cord, clean hem hanging to the shins",
+     "A tall soft peaked cap with a black crow feather tucked in the band",
+     "A half-unrolled scroll with a ribbon seal held out in one hand, covered in blank wavy lines (no lettering)",
+     "Plain short club in the other hand",
      "A stub of candle in a small tin holder clipped to the belt, its wick burnt",
-     "Singed, ink-stained fingertips"
+     "Ink-black fingertips"
     ],
     "must": [
      "A half-unrolled scroll in one hand",
@@ -13481,13 +13566,17 @@
     ],
     "avoid": [
      "Do not draw a crow bird or an animal companion",
-     "Do not duplicate the Furrowroot halfling's hat, sickle and sling",
+     "Do not duplicate the Furrowroot halfling's straw hat, sickle and sling",
      "No readable writing on the scroll",
      "No magical effects or double of the figure",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Grinning, borrowed-coat mischief.",
@@ -13498,7 +13587,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "eded3a3e8574f5bc01b2e1d713cca0c327e8406f698e524d2549dc682a6c0646"
+   "spec_sha256": "32217352d178f17537c86cf06460420f4885a17fbff70921e24abf6d9ddf9ade"
   },
   {
    "id": "ART-HER-GILDMIRROR",
@@ -13525,15 +13614,15 @@
     17485
    ],
    "brief": {
-    "identity": "Gildmirror, a Gnome Trickster with a Merchant background: a small-sized, child-sized, well-dressed duellist-salesperson, named for the gilt-framed hand mirror carried in the off hand.",
-    "composition": "Full figure in three-quarter view in a dapper fencing en garde, an elven rapier extended forward in one hand, a gilt hand mirror raised in the other as if flashing it at an unseen opponent.",
+    "identity": "Gildmirror, a Gnome Trickster with a Merchant background: a small-sized, child-sized, well-dressed duellist-salesperson, named for the gilt hand mirror carried in the off hand.",
+    "composition": "Full figure in three-quarter view in a dapper fencing en garde, an elven rapier extended forward in one hand, a gilt hand mirror raised in the other. Tonal key: dark coat, bright buttons and blade. Silhouette: a small fencer with a long blade and a raised oval mirror.",
     "details": [
-     "Child-sized, adult-faced, large nose, bright shrewd eyes, neat pointed beard or sideburns",
+     "Child-sized, adult-faced, large nose, bright shrewd eyes, neat pointed beard",
      "Elven rapier: a long, slim blade with a swept elven hilt, extended forward",
      "Hand mirror with an ornate gilt frame and a blank oval face, raised in the off hand",
-     "Fine leather coat with a row of gilt buttons, trimmed cuffs, a merchant's moneybag at the belt",
+     "A fine knee-length leather frock coat with a row of large gilt buttons, trimmed cuffs, a merchant's moneybag at the belt, clean hems",
      "A roll of bandages tucked into the belt",
-     "A bunched merchant's cap or bare head with neat hair; polished buckled boots"
+     "A bunched merchant's cap, polished buckled boots"
     ],
     "must": [
      "Elven rapier extended in one hand",
@@ -13546,10 +13635,14 @@
      "Do not turn it into a steampunk robot",
      "Do not duplicate the Graveglass gnome's lens and satchel silhouette",
      "Not toy-like or cartoonish",
+     "No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches",
+     "No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes",
+     "No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only",
      "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
      "No frame, border, panel box or vignette edge",
      "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
      "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+     "Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow",
      "No glow, aura, magical effect or speed lines"
     ],
     "atmosphere": "Dapper, calculating, all flourish.",
@@ -13560,7 +13653,7 @@
      "6.13 Hero Classes"
     ]
    },
-   "spec_sha256": "b479b79fadeb782b874d431df997978b624d87c3e297fe89b4b7c8293f94c380"
+   "spec_sha256": "c41e67ab924e301c07cccc7a87549785f7f6c2cdf2c68cd1d97aa7ada2d8440c"
   }
  ]
 }

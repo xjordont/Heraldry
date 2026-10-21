@@ -9360,7 +9360,7 @@
   "route": "gpt",
   "spec_sha256": "ff2a77b26140cba4457175c3112fa8ef9c5cfc098008d296f35b0ab19e253926",
   "prompt_sha256": "d812f9983b8c68ead3a213c202a0f6d84e0cae1aa1cbae5636cce02739bd1f6a",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:15:35+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9384,7 +9384,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.877
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:25+00:00",
+  "rejected_reason": "Show horns and tail clearly and use a buttoned, clean black cassock instead of a ragged robe; reduce dense hatching. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-BLACKKNIFE": {
   "family": "hero",
@@ -9393,7 +9395,7 @@
   "route": "gpt",
   "spec_sha256": "c1c7ec69073a7fa0bed058f48fd585008c1c5a625fc27b0c497dc0055df23581",
   "prompt_sha256": "623f3e55f2d101e2ab9e02fffb45d5777471303c92fb1bb79be20820a5a6f478",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:17:25+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9417,7 +9419,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.54
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:23+00:00",
+  "rejected_reason": "Make the knee-length leather coat intact and nearly solid black with a flat cap, not ragged. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-CAIRNWRATH": {
   "family": "hero",
@@ -9426,7 +9430,7 @@
   "route": "gpt",
   "spec_sha256": "619dfdf29daf8ebf477033902933ac5ac81511d5eda1259c2566d6c916260cea",
   "prompt_sha256": "16b91bdd204b3d1d63a22cdc799389ca6429d720b2ae326fd83d4685f69bc2ee",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:20:24+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9450,7 +9454,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.283
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:24+00:00",
+  "rejected_reason": "Show the tied cairn stones clearly, use a cleanly cut felt mantle with a stitched border and keep specks away from the top edge. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-CROWWICK": {
   "family": "hero",
@@ -9459,7 +9465,7 @@
   "route": "gpt",
   "spec_sha256": "eded3a3e8574f5bc01b2e1d713cca0c327e8406f698e524d2549dc682a6c0646",
   "prompt_sha256": "7c3c448b92fa781ad2aa9ee838c2ba7234cd8b35713825afb2613a35cea527d7",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:22:32+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9483,7 +9489,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.28
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:25+00:00",
+  "rejected_reason": "Use an oversized smock-coat with a clean hem and a tall peaked cap with a feather; keep the scroll, club and candle stub, and avoid copying Furrowroot's hat. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-DAWNWARDEN": {
   "family": "hero",
@@ -9492,7 +9500,7 @@
   "route": "gpt",
   "spec_sha256": "e9cf7f623f32ac93bbf72fb4c3f1f64abff93d3f213af31bc9d3d6e2397417a0",
   "prompt_sha256": "b9db165c3fd3996b8c19464fb45a88fc0f24d04dcef5d1e553658a83a7b6f05f",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:24:18+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9516,7 +9524,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.253
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:24+00:00",
+  "rejected_reason": "Use a clean white surcoat and a half-black targe with a sunburst; more margin; no tattered cloak. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-EMBERVOW": {
   "family": "hero",
@@ -9525,7 +9535,7 @@
   "route": "gpt",
   "spec_sha256": "bd4a92766c878bd963d6fe0386c7d6fc8f2d7a800c9e748932e7fd83fc9e1e9a",
   "prompt_sha256": "80c146caff53e3a195e7b8b0205869d0e7bbeac39e3114a7832bec5858d5c25d",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:26:07+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9549,7 +9559,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.71
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:23+00:00",
+  "rejected_reason": "Show the horns and tail clearly in silhouette and use a fitted quilted frock-coat gambeson with pale trim instead of a ragged cloak. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-FURROWROOT": {
   "family": "hero",
@@ -9558,7 +9570,7 @@
   "route": "gpt",
   "spec_sha256": "cb0d235a09fe6605e8945e5ace4416512a4e3b1d340aa56ee4ea07aebc745111",
   "prompt_sha256": "fae49a05fbf62b4aaac1e39770ff4c868699b74e58718f5afb56b42b20825f02",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:27:49+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9582,7 +9594,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.14
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:24+00:00",
+  "rejected_reason": "Use a smock, apron and open leather coat with a wide straw hat; avoid dense hatching that reads as grey. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-GALEFLETCH": {
   "family": "hero",
@@ -9591,7 +9605,7 @@
   "route": "gpt",
   "spec_sha256": "707739418fb76e85dff7ed4164ad79f19ac68def06c6f7ac02612d95d7c15034",
   "prompt_sha256": "f17220947a27a2c4fdb88fe27b9a8b6fe909ec7396bc6114326346df974c426b",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:30:10+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9615,7 +9629,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.333
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:24+00:00",
+  "rejected_reason": "Drop the ragged cloak: a short coat with a streaming scarf and hair, long fletching, satchel and dagger, with more margin. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-GALLOWTUSK": {
   "family": "hero",
@@ -9624,7 +9640,7 @@
   "route": "gpt",
   "spec_sha256": "f309aa49be393b26919c7ebaceb7eba83753358ac2e2cddd0824651005fc2c1a",
   "prompt_sha256": "42129eb4c3b0683a79d193b465e81eb6dff8bc3dab1e94be4b5b7248737724dd",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:32:25+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9648,7 +9664,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.343
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:23+00:00",
+  "rejected_reason": "Keep the great falchion and rope loop but make this a bare-armed figure with a topknot and no tattered coat skirts or cloak. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-GILDMIRROR": {
   "family": "hero",
@@ -9657,7 +9675,7 @@
   "route": "gpt",
   "spec_sha256": "b479b79fadeb782b874d431df997978b624d87c3e297fe89b4b7c8293f94c380",
   "prompt_sha256": "9b26ac8f96e993f5d4777410d0369688c01899419c39c0d6007702d458eec666",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:34:25+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9681,7 +9699,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.28
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:25+00:00",
+  "rejected_reason": "Use a dapper frock coat with gilt buttons and intact hems; keep the rapier, gilt mirror and bandages. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-GNAWTHOUGHT": {
   "family": "hero",
@@ -9690,7 +9710,7 @@
   "route": "gpt",
   "spec_sha256": "2c1de2025e68df61ac5687262b023c9d260b9c0e8f477f3150c966dd372953ba",
   "prompt_sha256": "0ad42621ef5d6b81a883432979323ad09c844ed74417a7585df91371247dd307",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:36:29+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9714,7 +9734,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.213
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:24+00:00",
+  "rejected_reason": "Use a leather apron over a short coat with chewed glove tips and an intact hem; keep the acid pot, flask, dagger and tail. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-GRAVEGLASS": {
   "family": "hero",
@@ -9723,7 +9745,7 @@
   "route": "gpt",
   "spec_sha256": "9e9237cb61da4f7541fca6e249e5c4097f7799980abeb2d5287eb46bfbe18d80",
   "prompt_sha256": "257429363aff6b7566bc53392736706dc4902d20b4a36876201cbfb187e37a79",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T15:39:03+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9747,7 +9769,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.197
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:23+00:00",
+  "rejected_reason": "Use an intact belted robe with only dust smudges at the hem and keep the torch, club, second torch and lens. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-HEARTHBELL": {
   "family": "hero",
@@ -9756,7 +9780,7 @@
   "route": "gpt",
   "spec_sha256": "8f4a20584f7c68e824327a26178996a44d85943271b9942148a3b1329c22dab6",
   "prompt_sha256": "86a72e0bad824595cbc6dcf1e5c70d930c08e48c7a88d2f7f3cc6d52e1047cb8",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:05:35+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9780,7 +9804,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.053
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:23+00:00",
+  "rejected_reason": "Use a clean ankle-length white surcoat with a bare circle and a clearly drawn bell; no tattered hem. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-IRONSCAR": {
   "family": "hero",
@@ -9789,7 +9815,7 @@
   "route": "gpt",
   "spec_sha256": "84e6a9679788e29d761f8e7a1b05619757a53f865c26d524b7a215a3035e3665",
   "prompt_sha256": "7056a9ebff8167284ed8636618eee710678ea0c36caa8c4fa6374429815b8941",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:09:07+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9813,7 +9839,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.3
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:23+00:00",
+  "rejected_reason": "Keep the scar, kettle helm, mail shirt, mace and dagger, but drop the shredded cloth and use a half-black heater shield for a strong silhouette. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-MOSSGRAVE": {
   "family": "hero",
@@ -9822,7 +9850,7 @@
   "route": "gpt",
   "spec_sha256": "ede7a6d1d589bbbad93ed24b7576ccf3c1497383649f6fc1db5cb8e1c8503717",
   "prompt_sha256": "7d07ccc9e622e37afec4fd27fbb427318c1e8f4e974f3f8ca2c68dd8e3a5a5f2",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:13:11+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9846,7 +9874,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.09
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:24+00:00",
+  "rejected_reason": "The moss had an olive tint: draw it in pure black line and solid black only, simplify the coat to a few big folds, and avoid tatters. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-NIGHTLOOM": {
   "family": "hero",
@@ -9855,7 +9885,7 @@
   "route": "gpt",
   "spec_sha256": "91991a97c9ca5f90a36e7f4dd14dea90d2edede0ff64dcbf1b2ad97a416f2777",
   "prompt_sha256": "97733bc73c2e0be1052219b3615cbf4ccd9019f1a5eddf1ea74b13a2ef96f0d5",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:17:05+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9879,7 +9909,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.267
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:25+00:00",
+  "rejected_reason": "Remove the fringed, ragged cloak: a closed cloak with a bold woven diamond lattice and a neat straight hem, with the rapier, dagger, vials and smokestick. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-OATHSCALE": {
   "family": "hero",
@@ -9888,7 +9920,7 @@
   "route": "gpt",
   "spec_sha256": "1fcce45122678592f3b1e664697d2d26eef9dedeae3d8e24a3c4ccaf9076e4ed",
   "prompt_sha256": "3480e661863b6077dbb370ea8655bcd775841291212efef4b8ef9d6c86a79842",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:20:40+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9912,7 +9944,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.703
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:24+00:00",
+  "rejected_reason": "Give the face a human shape with scales only on jaw, neck and hands (no snout), and show the dagger clearly sheathed at the belt. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-REDHAND": {
   "family": "hero",
@@ -9921,7 +9955,7 @@
   "route": "gpt",
   "spec_sha256": "9c1f683ee005512718a955903ea1fa748b988bd7873ebdaaf4ada5636deda711",
   "prompt_sha256": "bc61ffd00f0cce88755178f1b284763a50121be011908073a958cfd21387ff7b",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:24:19+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9945,7 +9979,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.947
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:24+00:00",
+  "rejected_reason": "Keep the handprint, hide cuirass and greataxe but remove the tattered trousers and any edge specks. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-SILKSHADE": {
   "family": "hero",
@@ -9954,7 +9990,7 @@
   "route": "gpt",
   "spec_sha256": "5d919e4589c6254e72f61f6550752ddc93e5f28e458d1e46419c4047b84a238a",
   "prompt_sha256": "71cc5f9d51793a934e82ea72c91238c0c4290293940945dc4acff6045a8f8036",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:28:14+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -9978,7 +10014,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.847
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:25+00:00",
+  "rejected_reason": "Use a stitched harlequin-diamond tumbler's jacket with a bold trailing sash; keep the mask, dagger, knives and venom vial; more margin. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-SOOTFINGER": {
   "family": "hero",
@@ -9987,7 +10025,7 @@
   "route": "gpt",
   "spec_sha256": "762af3d6df28989d7fed6e46afe2d0cb16aae22d047e87288873aec6380eb817",
   "prompt_sha256": "be62a00d3e75bff36179f76f5b7c1fb5058ecc08e3cfa355cf489c130fc5764b",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:33:23+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -10011,7 +10049,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.29
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:23+00:00",
+  "rejected_reason": "Replace the oversized shredded coat with a short waistcoat, rolled sleeves and a knotted headscarf; keep rapier, dagger, lockpicks and smokestick. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-STARCINDER": {
   "family": "hero",
@@ -10020,7 +10060,7 @@
   "route": "gpt",
   "spec_sha256": "a5d55bd917a508301ef0a9e821fcfd5e48808dcef4e6bd2cc81cb863b74d1203",
   "prompt_sha256": "211f3f29b31ed02af2812f8e4835b40018c3fd234870ae19f0b3facfa599f6d6",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:39:49+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -10044,7 +10084,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.607
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:23+00:00",
+  "rejected_reason": "Use a pale wide-sleeved robe with a dark artisan's apron and inlaid star staff; singed cuffs are solid black, not ragged. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-STORMCROOK": {
   "family": "hero",
@@ -10053,7 +10095,7 @@
   "route": "gpt",
   "spec_sha256": "97aa015efde633e0aabe91707c1a7bd3ea21c9cb720f6f7c700cd57c23f593fc",
   "prompt_sha256": "658a614dd455cf74703661080bb11b1ccfbb3c853e96925277fd3a0a75abb40b",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:44:14+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (tool gave no model label)",
@@ -10077,7 +10119,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.263
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:25+00:00",
+  "rejected_reason": "Keep the crook staff, but give the windblown cloak a clean cut edge and make the face human-shaped with scales only on jaw, neck and hands. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-THORNMERE": {
   "family": "hero",
@@ -10086,7 +10130,7 @@
   "route": "gpt",
   "spec_sha256": "7ad0e0ab1d1f1aa09217478c73f4d05144db8c206f591e86ca9b769583565ab7",
   "prompt_sha256": "9c7ead821ce2eb77492080e7c7a8f1e8da9d5f438a7ded257e1a6804896a33a8",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:49:35+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (no model label exposed)",
@@ -10110,7 +10154,9 @@
    "flags": [],
    "max_print_w_in_300ppi": 3.307
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:24+00:00",
+  "rejected_reason": "Use a close hood and short cape with a few bold thorn sprigs instead of a ragged cloak, and keep more margin. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  },
  "ART-HER-THOUGHTWAKE": {
   "family": "hero",
@@ -10119,7 +10165,7 @@
   "route": "gpt",
   "spec_sha256": "956818be57c4a0f8b433500ca545a9528c1286f7a1a848f9634efa535ffbce19",
   "prompt_sha256": "b33f1b738ea076bd99476548771eadc2809198d60943a6baf9fe2b8c2b38e2ae",
-  "status": "received",
+  "status": "rejected",
   "received_at": "2026-10-21T20:52:15+00:00",
   "surface": "Codex",
   "model": "Imagegen default model (no model label exposed)",
@@ -10143,6 +10189,8 @@
    "flags": [],
    "max_print_w_in_300ppi": 2.853
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
+  "rejected_at": "2026-10-21T23:46:24+00:00",
+  "rejected_reason": "Use a smooth belted leather coat with ink-black cuffs and a tall flat cap instead of a ragged cloak; more margin. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
  }
 }

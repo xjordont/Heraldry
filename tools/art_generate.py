@@ -120,9 +120,9 @@ def prompt_for(e, with_refs, guided=False):
     if e.get("flavour"):
         out.append("SOURCE TEXT\nDepict this faithfully and invent nothing that contradicts it:\n\"" + e["flavour"] + "\"")
     atm = b.get("atmosphere", "The atmosphere is grounded, austere, mysterious and subtly ominous.")
-    out.append("ARTISTIC STYLE AND ATMOSPHERE\n" + atm + "\n" + v2.get("style_" + kind, v2["style_figure"]))
+    out.append("ARTISTIC STYLE AND ATMOSPHERE\n" + atm + "\n" + (fam.get("style") or v2.get("style_" + kind, v2["style_figure"])))
     final = ["Do not draw:"] + ["* " + x.rstrip(".") + "." for x in b["avoid"]] if b.get("avoid") else []
-    final.append(v2["final_" + ("scene" if kind == "scene" else "figure")])
+    final.append(fam.get("final") or v2["final_" + ("scene" if kind == "scene" else "figure")])
     out.append("FINAL VISUAL REQUIREMENTS\n" + "\n".join(final))
     if with_refs:
         out.append("STYLE REFERENCES\n" + v2["reference"])
