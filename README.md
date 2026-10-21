@@ -9,7 +9,7 @@ The publication repository for the Heraldry Skirmish rulebook. It holds the manu
 - **Manuscript:** [RC512](source/Heraldry_RC512.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC512 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 275 approved of 295; 24 generation-queue items.
+- **Illustration records:** 275 approved of 296; 24 generation-queue items.
 - **Rules figures:** 57; 57/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`8a33c9f4`](https://github.com/xjordont/Heraldry/commit/8a33c9f406a42eb56ac984ea101b10894ebbb69b) art: intake of ChatGPT Work images
+- [`bb567033`](https://github.com/xjordont/Heraldry/commit/bb56703301ee51bdcd9841169263c7eae04e3f87) art(gpt): ART-HER-STARCINDER .. ART-HER-STARCINDER
 - [`0b447c2a`](https://github.com/xjordont/Heraldry/commit/0b447c2a9bf2eb2304011b5aca3802cdce182556) Merge branch 'main' of https://github.com/xjordont/Heraldry
 - [`7f968712`](https://github.com/xjordont/Heraldry/commit/7f968712f75a9851aca0eb7b18dca08683c8673f) docs: record the Typst and Canva player-aid route trial
 - [`64cc2758`](https://github.com/xjordont/Heraldry/commit/64cc2758f4abd2a38bdeafda018f158feb85d11e) art: intake of ChatGPT Work images
 - [`86137cd6`](https://github.com/xjordont/Heraldry/commit/86137cd65dcfd086ac3120885c7bea3aa20ffa12) art(gpt): ART-HER-SOOTFINGER .. ART-HER-SOOTFINGER
-- [`2c1b47e4`](https://github.com/xjordont/Heraldry/commit/2c1b47e4dd047685b4d1aa333dd00f9bbab6bf2c) art: intake of ChatGPT Work images
-- [`e1ec610a`](https://github.com/xjordont/Heraldry/commit/e1ec610ae014cbfda93307d5923ff15c3e556286) art(gpt): ART-HER-SILKSHADE .. ART-HER-SILKSHADE
 
 <!-- END AUTO:recent -->
 
