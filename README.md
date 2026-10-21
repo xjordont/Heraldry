@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`0b447c2a`](https://github.com/xjordont/Heraldry/commit/0b447c2a9bf2eb2304011b5aca3802cdce182556) Merge branch 'main' of https://github.com/xjordont/Heraldry
+- [`7f968712`](https://github.com/xjordont/Heraldry/commit/7f968712f75a9851aca0eb7b18dca08683c8673f) docs: record the Typst and Canva player-aid route trial
 - [`64cc2758`](https://github.com/xjordont/Heraldry/commit/64cc2758f4abd2a38bdeafda018f158feb85d11e) art: intake of ChatGPT Work images
 - [`86137cd6`](https://github.com/xjordont/Heraldry/commit/86137cd65dcfd086ac3120885c7bea3aa20ffa12) art(gpt): ART-HER-SOOTFINGER .. ART-HER-SOOTFINGER
 - [`2c1b47e4`](https://github.com/xjordont/Heraldry/commit/2c1b47e4dd047685b4d1aa333dd00f9bbab6bf2c) art: intake of ChatGPT Work images
 - [`e1ec610a`](https://github.com/xjordont/Heraldry/commit/e1ec610ae014cbfda93307d5923ff15c3e556286) art(gpt): ART-HER-SILKSHADE .. ART-HER-SILKSHADE
-- [`1cb08adc`](https://github.com/xjordont/Heraldry/commit/1cb08adc8daa79817e4a1a4c1b0f1b88560a1e70) art: intake of ChatGPT Work images
-- [`153d3867`](https://github.com/xjordont/Heraldry/commit/153d386725a859b55bbf4248c5039efb8d87e266) art(gpt): ART-HER-REDHAND .. ART-HER-REDHAND
 
 <!-- END AUTO:recent -->
 
