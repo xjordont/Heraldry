@@ -9,7 +9,7 @@ The publication repository for the Heraldry Skirmish rulebook. It holds the manu
 - **Manuscript:** [RC512](source/Heraldry_RC512.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC512 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 275 approved of 280; 24 generation-queue items.
+- **Illustration records:** 275 approved of 281; 24 generation-queue items.
 - **Rules figures:** 57; 1/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`1031e84e`](https://github.com/xjordont/Heraldry/commit/1031e84ec8db52f8724816d71a041b98ed937ed8) art: intake of ChatGPT Work images
+- [`871215c2`](https://github.com/xjordont/Heraldry/commit/871215c26d6b7b8966154d742ba8c07e143119fd) art(gpt): ART-HER-EMBERVOW .. ART-HER-EMBERVOW
 - [`f3b67fa9`](https://github.com/xjordont/Heraldry/commit/f3b67fa9eb086bcb4525fb6c28274d0610f49d56) art: intake of ChatGPT Work images
 - [`07969ec0`](https://github.com/xjordont/Heraldry/commit/07969ec052007e2d201dfac0416c7fb14b182802) art(gpt): ART-HER-DAWNWARDEN .. ART-HER-DAWNWARDEN
 - [`dd2de807`](https://github.com/xjordont/Heraldry/commit/dd2de807e1b43e5a3c9992273c50c970567f45cf) art: intake of ChatGPT Work images
 - [`99266041`](https://github.com/xjordont/Heraldry/commit/99266041da44ca02837c9377dadac2644d432b47) art(gpt): ART-HER-CROWWICK .. ART-HER-CROWWICK
-- [`ab6e9eb1`](https://github.com/xjordont/Heraldry/commit/ab6e9eb1862055c5d65fcacb704ba9012e079229) art: intake of ChatGPT Work images
-- [`41574fea`](https://github.com/xjordont/Heraldry/commit/41574fea84a68b5deba1a85a5afa649841570cfb) art(gpt): ART-HER-CAIRNWRATH .. ART-HER-CAIRNWRATH
 
 <!-- END AUTO:recent -->
 
