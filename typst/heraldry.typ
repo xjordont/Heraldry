@@ -28,8 +28,11 @@
 #let col-w = v4.col-w
 #let body-size = v4.body-size
 #let body-lead = v4.body-lead
-#let table-size = 9.3pt
-#let table-lead = 2.7pt
+#let table-size = v4.table-size
+#let table-lead = v4.table-lead
+#let table-x = v4.table-x
+#let table-y = v4.table-y
+#let space-token = v4.space-token
 #let brush = v4.brush
 #let shield = v4.shield
 #let arms = v4.arms
@@ -75,7 +78,7 @@
 }
 #let coin-text(body, s: 0.82em, fill: ink) = {
   show regex("\(c\)"): it => under-coin("(c)", s, fill)
-  show regex("(\d)c\b"): it => [#it.text.slice(0, -1)#h(0.8pt)#under-coin("c", s, fill)]
+  show regex("\b\d[\d,]*c\b"): it => box[#it.text.slice(0, -1)#h(0.8pt)#under-coin("c", s, fill)]
   body
 }
 
@@ -118,19 +121,59 @@
   if os.len() == 0 { none } else { opener-tab(os.last().value) }
 }
 
+// A scenario identity remains active until another heading of its rank or higher.
+// Running furniture cannot alter the body flow or introduce a manuscript label.
+#let heading-scope(rank, title, anchor, body) = {
+  // Keep metadata outside the source heading body, which is also reused by
+  // numbered-title styling and running furniture. Resolve the real heading
+  // anchor: this zero-height wrapper can otherwise remain on the prior page.
+  if rank <= 4 { context {
+    let targets = query(label(anchor))
+    if targets.len() > 0 { [#metadata((rank: rank,
+      title: if title.match(regex("^Scenario \d+:")) != none { title } else { none },
+      page: targets.first().location().page())) <scenario-boundary>] }
+  } }
+  body
+}
+#let ongoing-scenario(p) = {
+  let events = query(<scenario-boundary>).filter(m => m.value.page <= p)
+  let candidates = events.filter(m => m.value.title != none and m.value.page < p)
+  if candidates.len() == 0 { return none }
+  let scenario = candidates.last()
+  let later = events.slice(events.position(m => m.location() == scenario.location()) + 1)
+  if later.any(m => m.value.rank <= scenario.value.rank) { return none }
+  let chapter = current-heading(1)
+  if chapter != none and chapter.location().page() > scenario.value.page { return none }
+  scenario
+}
+#let scenario-continuation-title(scenario) = {
+  let words = scenario.value.title.split(" ")
+  let title = scenario.value.title + " (continued)"
+  let width = frame-w - 21pt
+  let extent(s) = measure(text(font: sans, size: tokens.type_pt.navigation * 1pt,
+    weight: 600, tracking: 0.12em, smallcaps(all: true, s))).width
+  while extent(title) > width and words.len() > 2 {
+    let _ = words.pop()
+    title = words.join(" ") + "... (continued)"
+  }
+  title
+}
+
 #let header-content = context {
   let p = here().page()
   if opener-on(p).len() > 0 or not in-main(p) { return }
   let ch = current-heading(1)
   let sec = current-heading(2)
   let recto = calc.odd(p)
-  let label = if not recto {
+  let ordinary-label = if not recto {
     if ch != none { ch.body }
   } else {
     if sec != none and (ch == none or sec.location().page() >= ch.location().page()) { sec.body } else if ch != none { ch.body }
   }
+  let scenario = ongoing-scenario(p)
+  let label = if scenario != none { scenario-continuation-title(scenario) } else { ordinary-label }
   let tab = current-tab(p)
-  set text(font: sans, size: 9pt, weight: 600, tracking: 0.12em, fill: ink2)
+  set text(font: sans, size: tokens.type_pt.navigation * 1pt, weight: 600, tracking: 0.12em, fill: ink2)
   // the arms overlay the line (no added height), so the head stays clear of the 0.375 in edge
   let a = if tab != none { box(width: 15pt, height: 7pt, place(dy: -6pt, arms(tab, w: 15pt))) } else { lozenge(size: 4.4pt) }
   block(width: 100%, below: 0pt, {
@@ -149,7 +192,7 @@
   if opener-on(p).filter(m => type(m.value) == dictionary).len() > 0 { return }   // the opener frame carries the folio
   let n = counter(page).display()
   let recto = calc.odd(p)
-  let sh = shield(w: 23pt, inner: true, body: text(font: sans, size: 9pt, weight: 700, fill: paper, number-type: "lining", n))
+  let sh = shield(w: 23pt, inner: true, body: text(font: sans, size: tokens.type_pt.navigation * 1pt, weight: 700, fill: paper, number-type: "lining", n))
   let b = box(width: 40pt, baseline: -6pt, brush(weight: 1.2pt, seed: p))
   if recto { align(right)[#b#h(5pt)#sh] } else { align(left)[#sh#h(5pt)#b] }
 }
@@ -184,17 +227,17 @@
     margin: (inside: m-in, outside: m-out, top: m-top, bottom: m-bot),
     binding: left,
     header: header-content, header-ascent: 3pt,
-    footer: footer-content, footer-descent: 7pt,
+    footer: footer-content, footer-descent: 2pt,
     background: background-content,
   )
   set text(font: serif, size: body-size, lang: "en", region: "CA", fill: ink,
-    top-edge: 0.8em, bottom-edge: -0.25em, hyphenate: true, number-type: "lining",
+    top-edge: 0.8em, bottom-edge: -0.25em, hyphenate: true, overhang: false, number-type: "lining",
     costs: (hyphenation: 100%, runt: 160%, widow: 1000%, orphan: 1000%))
-  set par(leading: body-lead, spacing: 6.5pt, justify: true, first-line-indent: 0pt,
+  set par(leading: body-lead, spacing: v4.par-space, justify: true, first-line-indent: 0pt,
     justification-limits: (spacing: (min: 90%, max: 140%), tracking: (min: -0.005em, max: 0.02em)))
   set strong(delta: 200)
-  set list(marker: (box(baseline: -1.2pt, lozenge(size: 4.4pt)), [–], [·]), indent: 1pt, body-indent: 6pt, spacing: 4.5pt)
-  set enum(indent: 1pt, body-indent: 6pt, spacing: 4.5pt, numbering: n => text(font: sans, weight: 700, size: 9pt)[#n.])
+  set list(marker: (box(baseline: -1.2pt, lozenge(size: 4.4pt)), [–], [·]), indent: 1pt, body-indent: 6pt, spacing: v4.list-space)
+  set enum(indent: 1pt, body-indent: 6pt, spacing: v4.list-space, numbering: n => text(font: sans, weight: 700, size: 9pt)[#n.])
   show list.item: it => block(breakable: false, it)
   show enum.item: it => block(breakable: false, it)
   set table(stroke: none)
@@ -203,16 +246,16 @@
   show heading: set par(justify: false)
 
   // chapter title (H2 in the manuscript → level 1): set inside the opener
-  show heading.where(level: 1): it => block(text(font: goth, weight: 600, size: 50pt, hyphenate: false, it.body))
+  show heading.where(level: 1): it => block(text(font: goth, weight: 600, size: tokens.type_pt.chapter * 1pt, hyphenate: false, it.body))
   // numbered section: the number in an engraved shield, blackletter title, brush rule beneath
   show heading.where(level: 2): it => {
     let (num, title) = split-num(it.body)
-    block(above: 16pt, below: 10pt, sticky: true, breakable: false, width: 100%)[
+    block(above: space-token.section_before * 1pt, below: space-token.section_after * 1pt, sticky: true, breakable: false, width: 100%)[
       #if num != none {
         grid(columns: (auto, 1fr), column-gutter: 9pt, align: horizon,
           shield(w: if num.len() > 3 { 30pt } else { 25pt }, inner: true, body: text(font: sans, weight: 700, size: 9pt, fill: paper, num)),
-          text(font: goth, weight: 600, size: 21pt, top-edge: "cap-height", bottom-edge: "baseline", title))
-      } else { text(font: goth, weight: 600, size: 21pt, title) }
+          text(font: goth, weight: 600, size: tokens.type_pt.section * 1pt, top-edge: "cap-height", bottom-edge: "baseline", title))
+      } else { text(font: goth, weight: 600, size: tokens.type_pt.section * 1pt, title) }
       #v(5pt)
       #section-rule
     ]
@@ -220,13 +263,13 @@
   // subsection: lozenge, quiet number, bold serif
   show heading.where(level: 3): it => {
     let (num, title) = split-num(it.body)
-    block(above: 13pt, below: 5pt, sticky: true, breakable: false)[
+    block(above: space-token.subsection_before * 1pt, below: space-token.subsection_after * 1pt, sticky: true, breakable: false)[
       #set par(leading: 2.5pt)
-      #lozenge(size: 5.5pt)#h(5pt)#if num != none [#text(font: sans, weight: 700, size: 9.5pt, fill: ink3, num)#h(5pt)]#text(font: serif, weight: 700, size: 12.5pt, title)
+      #lozenge(size: 5.5pt)#h(5pt)#if num != none [#text(font: sans, weight: 700, size: 9.5pt, fill: ink3, num)#h(5pt)]#text(font: serif, weight: 700, size: tokens.type_pt.subsection * 1pt, title)
     ]
   }
   // minor named heading: blackletter
-  show heading.where(level: 4): it => block(above: 11pt, below: 4pt, sticky: true, breakable: false,
+  show heading.where(level: 4): it => block(above: space-token.minor_before * 1pt, below: space-token.minor_after * 1pt, sticky: true, breakable: false,
     text(font: goth, weight: 600, size: 14.5pt, it.body))
   show link: it => it
   body
@@ -265,12 +308,26 @@
 #let pm(seg, piece, edge) = context [#metadata((seg: seg, piece: piece, edge: edge, page: here().page(), y: here().position().y.pt(), x: here().position().x.pt())) <pm>]
 
 #let pmx(..args) = none
-#let tmark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), folio: counter(page).display())) <tblpos>]
+#let tmark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), folio: counter(page).display(), x: here().position().x.pt(), y: here().position().y.pt())) <tblpos>]
 #let ixm(k) = [#metadata(k) #label("ix-" + k)#context [#metadata((k: k, page: here().page(), folio: counter(page).display())) <ixpos>]]
 // One summary of every labelled heading's position (balancing + index audit).
-#let hpos-summary() = context [#metadata(query(heading).filter(h => h.has("label")).map(h => (
-  id: str(h.label), page: h.location().page(), y: h.location().position().y.pt(), x: h.location().position().x.pt(),
-  folio: counter(page).at(h.location()).first()))) <hpos>]
+#let hpos-summary() = context {
+  [#metadata(query(heading).filter(h => h.has("label")).map(h => (
+    id: str(h.label), page: h.location().page(), y: h.location().position().y.pt(), x: h.location().position().x.pt(),
+    level: h.level, outlined: h.outlined, bookmarked: h.bookmarked,
+    folio: counter(page).at(h.location()).first()))) <hpos>]
+  // Serialized with the very PDF whose layout these positions describe.
+  pdf.attach("/heraldry-positions.json", bytes(json.encode((
+    schema: 1, identity: json(bytes(sys.inputs.at("position-identity", default: "{}"))),
+    positions: (
+      "<pm>": query(<pm>).map(x => x.value),
+      "<tblpos>": query(<tblpos>).map(x => x.value),
+      "<ixpos>": query(<ixpos>).map(x => x.value),
+      "<hpos>": query(<hpos>).map(x => x.value),
+      "<um-pos>": query(<um-pos>).map(x => x.value),
+    ),
+  ))), mime-type: "application/json", relationship: "supplement")
+}
 #let seg(body) = columns(2, gutter: gap, body)
 
 // Balanced tail: pieces are top-level blocks that sat on one page in the previous pass.
@@ -279,19 +336,16 @@
 // ---------------------------------------------------------------- keep units (one-page rule)
 #let umark(id, edge) = context [#metadata((id: id, edge: edge, page: here().page(), y: here().position().y.pt())) <um-pos>]
 // Column-fit unit: unbreakable inside the two-column flow.
-#let keepcol(body) = {
-  let b = block(breakable: false, width: 100%, above: 6pt, below: 6pt, body)
-  // Typst force-places an unbreakable block into an empty column that is too short, so check
-  // the remaining space here and again after one column break (at the new position).
-  let fits() = measure(block(width: col-w, b)).height + 6pt <= body-bottom - here().position().y
-  context {
-    if not fits() { colbreak() }
-    context {
-      if not fits() { colbreak() }
-      b
-    }
-  }
-}
+#let keepcol(body, padded: true) = layout(size => {
+  let padding = if padded { 6pt } else { 0pt }
+  let b = block(breakable: false, width: 100%, above: padding, below: padding, body)
+  // The current layout region supplies its remaining height directly. A position query here
+  // would observe the break it causes, creating a self-referential pagination fixed point.
+  if measure(block(width: col-w, b)).height > size.height { colbreak() }
+  b
+})
+// Figure components already own their outer spacing; the keep adds no second inset.
+#let keepfigure(body) = keepcol(body, padded: false)
 // Height of pieces laid out as a balanced two-column run (same search as `bal`).
 #let bal-split(ps) = {
   // best split index k: minimises the taller of the two stacks
@@ -331,16 +385,49 @@
   }
 }
 
-#let full(body) = block(width: 100%, above: 8pt, below: 10pt, body)
-// Prose-only run: real flowing columns at half the stacked height plus three lines of slack.
-#let flow-height(ps) = measure(block(width: col-w, { for p in ps { p } })).height / 2 + 40pt
-// A run holding only position markers (no visible content) takes no space, so it can never push an
-// empty page before a section break.
+#let full(body) = block(width: 100%, above: 6pt, below: 8pt, body)
+#let full-opening(body) = context {
+  let height = measure(block(width: frame-w, body)).height
+  block(width: 100%, above: 6pt, below: 8pt,
+    breakable: height > body-bottom - m-top - 12pt, body)
+}
+// Prose balances at line boundaries, preserving its complete physical-page keep.
+// Paragraph line boxes use the same explicit 0.8em/-0.25em edges as book().
+#let prose-headings(body) = {
+  if type(body) != content { return () }
+  if body.func() == heading { return (body,) }
+  if body.has("children") { return body.children.map(prose-headings).flatten() }
+  if body.has("body") { return prose-headings(body.body) }
+  ()
+}
+#let flow-height(ps) = {
+  let stacked = measure(block(width: col-w, { for p in ps { p } })).height
+  if stacked < 1pt { return 0pt }
+  let pitch = body-size * 1.05 + body-lead
+  // Internal sticky headings can move across the split with their opening lines.
+  // The opening heading already starts in the left column and needs no extra reserve.
+  let internal = ps.slice(calc.min(1, ps.len())).map(prose-headings).flatten()
+  let head-reserve = if internal.len() == 0 { 0pt } else {
+    internal.map(h => measure(block(width: col-w, h)).height).fold(0pt, calc.max)
+  }
+  stacked / 2 + 2 * pitch + head-reserve
+}
 #let flowcols(ps) = context {
-  if measure(block(width: col-w, { for p in ps { p } })).height < 1pt { for p in ps { p } }
-  else { block(width: 100%, height: flow-height(ps), above: 0pt, below: 8pt, breakable: false,
+  let height = flow-height(ps)
+  if height < 1pt { for p in ps { p } }
+  else { block(width: 100%, height: height, above: 0pt, below: 8pt, breakable: false,
     columns(2, gutter: gap, { for p in ps { p } })) }
 }
+#let flowtail(ps) = layout(size => {
+  if flow-height(ps) <= size.height { flowcols(ps) }
+  else { seg({ for p in ps { p } }) }
+})
+// Complete list items are legal column split points, with the native markers and indents.
+#let list-fragment(number: none, body) = block(above: 0pt, below: v4.list-space, breakable: false, {
+  show list: set block(above: 0pt, below: 0pt)
+  show enum: set block(above: 0pt, below: 0pt)
+  if number == none { list(body) } else { enum(start: number, body) }
+})
 // Page-fit unit: one unbreakable composition (balanced column runs and full-width parts).
 #let keeppage(id: none, ..parts) = block(breakable: false, width: 100%, above: 0pt, below: 10pt, {
   if id != none { umark(id, "s") }
@@ -369,14 +456,16 @@
 // A paragraph that is only a bold label acts as a minor heading: keep it with what follows.
 #let runin(body) = block(sticky: true, above: 6pt, below: 6pt, body)
 // Flavour: IM FELL roman at the running size, justified (the source marks it with emphasis).
-#let flavour(body) = block(above: 5pt, below: 9pt, v4.flavour-set(fell-body(body)))
+#let flavour(body) = block(above: 4pt, below: 7pt, v4.flavour-set(fell-body(body)))
+// Semantic opening only: generator emits this outside the ordinary two-column run.
+#let section-lead(body, width: 82%) = v4.lead-block(fell-body(body), width: width)
 // generated pen-and-ink spot art (transparent ink, so the page substrate shows through)
 #let spotart(path, w) = block(width: 100%, above: 4pt, below: 2pt, breakable: false, align(center, image(path, width: w)))
 
 // Worked example and rules note: one panel (tinted field, black spine). The source's own label
 // ("Example:", "Recommended First Party:") leads in bold, so no word is added or repeated.
-#let panel(body) = block(width: 100%, above: 10pt, below: 11pt, breakable: true,
-  fill: tint, stroke: (left: 2.6pt + ink), inset: (left: 11pt, right: 9pt, top: 8pt, bottom: 9pt))[
+#let panel(body) = block(width: 100%, above: space-token.panel_above * 1pt, below: space-token.panel_below * 1pt, breakable: true,
+  fill: tint, stroke: (left: 2.6pt + ink), inset: (x: space-token.panel_horizontal_padding * 1pt, y: space-token.panel_vertical_padding * 1pt))[
   #set par(justify: true)
   #body
 ]
@@ -392,35 +481,49 @@
 #let head-cell(h) = text(font: sans, weight: 700, size: table-size, fill: paper,
   coin-text(smallcaps(all: true, h), s: 1.05em, fill: paper))
 
-#let htable(id, widths, aligns, header, rows, kind: "table", title: none, pre: none) = {
+// Native repeated headers retain the real table's identity on each continuation.
+#let table-identity(id, title, continued: none, initial-title: true) = context {
+  let starts = query(label("tbl-" + id))
+  let is-continuation = if continued != none { continued } else { starts.len() > 0 and here().page() > starts.first().location().page() }
+  // Repeated headers must have identical geometry before their page is known.
+  // Removing the first identity row changes table placement, which changes the
+  // queried start page and can oscillate indefinitely. Hidden text keeps the
+  // measured continuation geometry while suppressing a duplicate opening title.
+  let identity = text(font: sans, weight: 700, size: table-size, fill: ink,
+    [#if title != none { title } else { id }#if is-continuation [ (continued)] else { hide[ (continued)] }])
+  if initial-title or is-continuation { identity } else { hide(identity) }
+}
+
+#let htable(id, widths, aligns, header, rows, kind: "table", title: none, initial-title: true, pre: none) = {
   set text(font: sans, size: table-size, top-edge: 0.8em, bottom-edge: -0.25em, number-type: "lining", number-width: "tabular", hyphenate: false)
   set par(leading: table-lead, spacing: 4pt, justify: false)
   set strong(delta: 200)
   let al(x) = { let a = aligns.at(x); if a == left { left } else if a == right { right } else { center } }
+  let identity = table.cell(colspan: header.len(), fill: none, inset: (x: 0pt, top: 0pt, bottom: 3pt), align: left, table-identity(id, title, initial-title: initial-title))
   set table.cell(breakable: false)   // keep ordinary rows intact
-  block(width: 100%, above: 10pt, below: 12pt, breakable: true)[
+  block(width: 100%, above: space-token.table_above * 1pt, below: space-token.table_below * 1pt, breakable: true)[
     #pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")
     // the opening (rule, header band and about two rows) never splits from the heading above it
-    // the reserve is the measured height of the header band plus the first row (never less than 64 pt), so a
+    // The reserve measures the identity, header band, and first row at the actual profile, so a
     // table with a tall first row cannot leave its heading and rule alone at the bottom of a column
     #context {
       let probe = coin-text(table(
         columns: widths.map(w => w * 1pt),
-        inset: (x: 5pt, y: 4pt),
-        table.header(..header.enumerate().map(((x, h)) => table.cell(head-cell(h)))),
+        inset: (x: table-x, y: table-y),
+        table.header(identity, ..header.enumerate().map(((x, h)) => table.cell(fill: ink, head-cell(h)))),
         ..rows.slice(0, calc.min(1, rows.len())).map(r => r.enumerate().map(((x, c)) => if x == 0 and aligns.at(0) == left { strong(c) } else { c })).flatten(),
       ))
-      let reserve = calc.min(calc.max(measure(probe).height, 64pt), 150pt)
-      block(breakable: false, height: reserve, above: 0pt, below: 0pt, brush(weight: 2.2pt, seed: 3))
+      let reserve = measure(probe).height + 2.2pt
+      block(breakable: false, height: reserve, above: 0pt, below: 0pt, none)
       v(-reserve)
     }
     #coin-text(table(
       columns: widths.map(w => w * 1pt),
       align: (x, y) => al(x) + horizon,
-      inset: (x: 5pt, y: 4pt),
-      fill: (x, y) => if y == 0 { ink } else if calc.even(y) { tint } else { none },
-      stroke: (x, y) => (bottom: if y == 0 { none } else { 0.35pt + hair }),
-      table.header(repeat: true, ..header.enumerate().map(((x, h)) => table.cell(align: al(x) + horizon, head-cell(h)))),
+      inset: (x: table-x, y: table-y),
+      fill: (x, y) => if y < 2 { none } else if calc.even(y) { tint } else { none },
+      stroke: (x, y) => (bottom: if y < 2 { none } else { 0.35pt + hair }),
+      table.header(repeat: true, identity, ..header.enumerate().map(((x, h)) => table.cell(fill: ink, align: al(x) + horizon, head-cell(h)))),
       ..rows.map(r => r.enumerate().map(((x, c)) => if x == 0 and aligns.at(0) == left { strong(c) } else { c })).flatten(),
     ))
     #v(-1pt)
@@ -440,7 +543,7 @@
       inset: (x, y) => (x: 2pt, y: if y == 0 { 3pt } else { 4.5pt }),
       fill: (x, y) => if y == 0 { ink } else { none },
       stroke: (x, y) => (left: if y == 1 and x > 0 { 0.35pt + hair } else { none }),
-      table.header(..header.map(h => text(weight: 700, size: 9pt, fill: paper, smallcaps(all: true, h)))),
+      table.header(..header.map(h => text(weight: 700, size: table-size, fill: paper, smallcaps(all: true, h)))),
       ..values.map(v => text(weight: 600, size: 12pt, v)),
     ), s: 0.8em)
     #v(-2pt)
@@ -460,7 +563,7 @@
       inset: (x: 6pt, y: 3.6pt),
       fill: (x, y) => if x == 0 { ink } else if calc.odd(y) { tint } else { none },
       stroke: (x, y) => (bottom: if x == 1 { 0.35pt + hair } else { none }),
-      ..header.zip(values).map(((h, v)) => (text(weight: 700, size: 9pt, fill: paper, smallcaps(all: true, h)), v)).flatten(),
+      ..header.zip(values).map(((h, v)) => (text(weight: 700, size: table-size, fill: paper, smallcaps(all: true, h)), v)).flatten(),
     ))
     #v(-1pt)
     #brush(weight: 2pt, seed: 9)
@@ -469,32 +572,32 @@
 }
 
 // Prose-heavy many-column tables: one labelled entry per source row.
-#let cards(id, entries, title-label: none, pre: none) = {
-  block(width: 100%, above: 8pt, below: 10pt, breakable: true)[
+#let cards(id, entries, title-label: none, pre: none) = layout(size => {
+  let entry(e) = block(width: 100%, above: 0pt, below: 0pt, inset: (top: 4pt, bottom: 5pt),
+    stroke: (bottom: 0.35pt + hair))[
+    #set par(leading: body-lead, spacing: 3pt, justify: false)
+    #block(sticky: true, below: 3pt)[#text(font: sans, size: body-size, e.title)]
+    #if e.fields.len() > 0 {
+      set text(font: sans, size: table-size, number-type: "lining")
+      block(below: 3pt, e.fields.map(((k, v)) => box[#text(weight: 700, size: table-size, fill: ink3, smallcaps(all: true, k))#h(3pt)#v]).join(h(9pt, weak: true)))
+    }
+    #for (k, v) in e.desc {
+      block(below: 2pt)[#text(font: sans, size: table-size, weight: 700, fill: ink3, smallcaps(all: true, k)) #h(2pt) #text(size: body-size, v)]
+    }
+  ]
+  let continuation-height = measure(block(width: size.width, table-identity(id, title-label, continued: true))).height + 3pt
+  block(width: 100%, above: space-token.table_above * 1pt, below: space-token.table_below * 1pt, breakable: true)[
     #pre#metadata(id) #label("tbl-" + id)#tmark(id, "s")
-    #block(breakable: false, height: 54pt, above: 0pt, below: 0pt, brush(weight: 2.2pt, seed: 11))
-    #v(-54pt + 2.2pt)
-    #coin-text(for e in entries {
-      block(width: 100%, above: 0pt, below: 0pt, breakable: true, inset: (top: 5pt, bottom: 6pt),
-        stroke: (bottom: 0.35pt + hair))[
-        #set par(leading: 2.8pt, spacing: 3pt, justify: false)
-        #block(sticky: true, below: 3pt)[
-          #set text(font: sans, size: 10pt)
-          #e.title
-        ]
-        #if e.fields.len() > 0 {
-          set text(font: sans, size: table-size, number-type: "lining")
-          block(below: 3pt, e.fields.map(((k, v)) => box[#text(weight: 700, size: table-size, fill: ink3, smallcaps(all: true, k))#h(3pt)#v]).join(h(9pt, weak: true)))
-        }
-        #for (k, v) in e.desc {
-          block(below: 2pt)[#text(font: sans, size: table-size, weight: 700, fill: ink3, smallcaps(all: true, k)) #h(2pt) #text(size: 10pt, v)]
-        }
-      ]
-    })
+    #coin-text(table(columns: (1fr,), inset: 0pt, stroke: none,
+      table.header(repeat: true, table.cell(inset: (bottom: 3pt), table-identity(id, title-label))),
+      ..entries.map(e => table.cell(
+        // A genuinely over-height entry may continue; fit-capable entries remain intact.
+        breakable: measure(block(width: size.width, entry(e))).height > page-h - m-top - m-bot - continuation-height, entry(e))),
+    ))
     #brush(weight: 2.2pt, seed: 13)
     #tmark(id, "e")
   ]
-}
+})
 
 // ---------------------------------------------------------------- figures
 // Caption welded to the figure: a black band with the number, the caption beneath, a rule.
@@ -503,9 +606,9 @@
   #align(center, image(file, width: width))
   #v(4pt)
   #block(width: 100%, fill: ink, inset: (x: 7pt, y: 3.6pt), spacing: 0pt,
-    text(font: sans, size: 9pt, weight: 700, fill: paper)[#id])
+    text(font: sans, size: tokens.type_pt.caption * 1pt, weight: 700, fill: paper)[#id])
   #block(width: 100%, inset: (x: 6pt, top: 4.5pt, bottom: 5pt), spacing: 0pt, {
-    set text(font: sans, size: 9pt, fill: ink)
+    set text(font: sans, size: tokens.type_pt.caption * 1pt, fill: ink)
     set par(leading: 2.5pt, justify: false)
     caption
   })

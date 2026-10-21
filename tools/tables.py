@@ -3,14 +3,18 @@ from __future__ import annotations
 import math, re
 from metrics import width
 
-# Must match typst/heraldry.typ's live table components, not retired v1 tokens.
-PT = 9.3            # active table-size
-LEAD = 12.0         # 9.3pt text plus 2.7pt line leading
-PAD = 5.0           # active htable inset (each side)
-VPAD = 4.0          # active htable inset (top and bottom)
-COL_W = 250.5       # one text column (design v4: (7.2 in - 0.24 in) / 2)
-FULL_W = 518.4      # full text frame (design v4: 8.5 in - 0.75 in - 0.55 in = 7.2 in)
-BODY_H = 792 - 0.68 * 72 - 0.7 * 72   # 688.6 pt text frame height (design v4)
+from layout_profile import (TABLE_SIZE_PT, TABLE_LEADING_PT,
+    TABLE_HORIZONTAL_PADDING_PT, TABLE_VERTICAL_PADDING_PT,
+    COLUMN_WIDTH_PT, FRAME_WIDTH_PT, BODY_HEIGHT_PT)
+
+# Width allocation is advisory; final keep decisions use real Typst measurements.
+PT = TABLE_SIZE_PT
+LEAD = PT * 1.05 + TABLE_LEADING_PT  # renderer's 0.8em top and -0.25em bottom edges
+PAD = TABLE_HORIZONTAL_PADDING_PT
+VPAD = TABLE_VERTICAL_PADDING_PT
+COL_W = COLUMN_WIDTH_PT
+FULL_W = FRAME_WIDTH_PT
+BODY_H = BODY_HEIGHT_PT
 
 
 def runs(nodes, bold=False, ital=False):
@@ -30,9 +34,9 @@ def runs(nodes, bold=False, ital=False):
 
 
 def seg_width(s, bold, ital, size=PT, header=False):
-    w = "Semibold" if (bold or header) else "Regular"
+    w = "Bold" if header else "Semibold" if bold else "Regular"
     if ital:
-        w = "SemiboldItalic" if w == "Semibold" else "Italic"
+        w = w + "Italic" if w != "Regular" else "Italic"
     return width(s, size, "SourceSans3", w)
 
 

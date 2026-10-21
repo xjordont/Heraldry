@@ -26,18 +26,12 @@ class KeepMarkerCoverage(unittest.TestCase):
                      "units": [{"id": "UNIT", "kind": "section", "class": "page",
                                 "h1": 10, "h2": 10}]}
             (root / "build/units.json").write_text(json.dumps(units))
-            pos = root / "positions.json"
-            pos.write_text(json.dumps({"<um-pos>": markers}))
-            pdf = root / "fixture.pdf"
-            pdf.write_bytes(b"fixture PDF")
-            report = root / "report.json"
-            with patch.object(keep_audit, "ROOT", root), \
-                 patch.object(sys, "argv", ["keep_audit.py", "--positions", str(pos),
-                                           "--pdf", str(pdf), "--report", str(report)]), \
-                 contextlib.redirect_stdout(io.StringIO()):
-                with self.assertRaises(SystemExit) as code:
-                    keep_audit.main()
-            return code.exception.code, json.loads(report.read_text())
+            units["expected_unit_ids"] = ["UNIT"]
+            units["source_unit_manifest"] = [{"id": "UNIT", "kind": "section"}]
+            # Test marker analysis directly. Real exact-PDF binding is covered
+            # by test_pdf_position_evidence, not invalid placeholder PDF bytes.
+            report = keep_audit.analyze_units(units, {"<um-pos>": markers}, 5)
+            return 0 if report["status"] == "PASS" else 1, report
 
     def test_exact_one_start_end_passes(self):
         rc, report = self.run_audit([{"id": "UNIT", "edge": "s", "page": 3},

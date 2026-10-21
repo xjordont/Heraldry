@@ -24,8 +24,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from parse_source import plain  # noqa: E402
 
-TOP, BOT = 0.68 * 72 - 4, 792 - 0.7 * 72 + 4
-TAB = 0.42 * 72          # thumb-tab strip at the outer edge (furniture, never body text)
+from layout_profile import MARGIN_TOP_PT, MARGIN_BOTTOM_PT, PAGE_HEIGHT_PT, PAGE_WIDTH_PT, MARGIN_OUTSIDE_PT
+TOP, BOT = MARGIN_TOP_PT - 4, PAGE_HEIGHT_PT - MARGIN_BOTTOM_PT + 4
+TAB = MARGIN_OUTSIDE_PT - 0.1  # exclude navigation, retain every body glyph at its frame edge
 
 
 def norm(s: str) -> str:
@@ -52,7 +53,7 @@ def pdf_stream(pdf, skip_covers=False):
                 y0, y1 = l["bbox"][1], l["bbox"][3]
                 if y1 < TOP or y0 > BOT:
                     continue
-                if l["bbox"][2] < TAB or l["bbox"][0] > 612 - TAB:
+                if l["bbox"][2] < TAB or l["bbox"][0] > PAGE_WIDTH_PT - TAB:
                     continue
                 for sp in l["spans"]:
                     t = sp["text"]
@@ -67,8 +68,9 @@ def pdf_stream(pdf, skip_covers=False):
                 bold.append(" ")
                 ital.append(" ")
                 parts.append("\n")
-    raw = "".join(parts)
-    return norm(raw), norm("".join(bold)), norm("".join(ital)), len(doc)
+    raw, pages = "".join(parts), len(doc)
+    doc.close()
+    return norm(raw), norm("".join(bold)), norm("".join(ital)), pages
 
 
 def runs(nodes, kind, acc, inside=False):

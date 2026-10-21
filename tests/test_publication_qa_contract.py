@@ -6,11 +6,13 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+from types import SimpleNamespace
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
 import query_typst
+import verify
 from qa_contract import MANDATORY_CHECKS
 from tables import PT, LEAD, PAD, VPAD
 
@@ -31,8 +33,10 @@ class CompileBoundQuery(unittest.TestCase):
                        "pdf_sha256": hashlib.sha256(pdf.read_bytes()).hexdigest(),
                        "positions": {k: [] for k in query_typst.SELECTORS}}
             (root / "build/query.json").write_text(json.dumps(payload), encoding="utf-8")
-            with patch.object(query_typst, "version", return_value="RC999"):
+            with patch.object(query_typst, "version", return_value="RC999"), \
+                 patch.object(query_typst, 'validate_sidecar', return_value=payload['positions']) as validate:
                 self.assertEqual(query_typst.compiled_positions(root), payload["positions"])
+                validate.assert_called_once_with(payload['positions'], pdf, root=root)
                 pdf.write_bytes(b"different PDF")
                 with self.assertRaisesRegex(ValueError, "Stale PDF"):
                     query_typst.compiled_positions(root)
@@ -43,6 +47,50 @@ class CompileBoundQuery(unittest.TestCase):
 
     def test_page_map_is_mandatory(self):
         self.assertIn("page_map_accuracy", MANDATORY_CHECKS)
+
+
+class LayoutReportGate(unittest.TestCase):
+    def clean_report(self):
+        return {"pdf": "fixture.pdf", "pages": 2, "counts": {}, "flags": [], "flagged_pages": []}
+
+    def run_detector(self, payload, *, exit_code=0, stale=None):
+        with tempfile.TemporaryDirectory() as tmp:
+            report = Path(tmp) / "layout.json"
+            if stale is not None:
+                report.write_text(json.dumps(stale))
+            def process(args, **kwargs):
+                # A previous PASS must have been removed before the new process.
+                self.assertFalse(report.exists())
+                self.assertIn("--report", args)
+                if payload is not None:
+                    report.write_text(payload if isinstance(payload, str) else json.dumps(payload))
+                return SimpleNamespace(returncode=exit_code, stdout="", stderr="")
+            with patch.object(verify.subprocess, "run", side_effect=process):
+                return verify.layout_check("fixture.pdf", report)[0]
+
+    def test_clean_counts_and_complete_report_pass(self):
+        self.assertEqual(self.run_detector(self.clean_report()), "PASS")
+
+    def test_missing_or_malformed_report_cannot_pass_successful_exit(self):
+        for payload in (None, "{not json", {}, [], {"counts": {}}, self.clean_report() | {"counts": None},
+                        self.clean_report() | {"counts": []}, self.clean_report() | {"pages": 0}):
+            with self.subTest(payload=payload):
+                self.assertEqual(self.run_detector(payload), "FAIL")
+
+    def test_stale_pass_does_not_mask_missing_current_report(self):
+        self.assertEqual(self.run_detector(None, stale=self.clean_report()), "FAIL")
+
+    def test_real_flags_and_contradictory_counts_remain_failures(self):
+        for code in ("near_empty", "stranded_heading", "text_overlap", "unsafe_edge", "small_type"):
+            payload = self.clean_report() | {"counts": {code: 1},
+                "flags": [{"page": 1, "code": code}], "flagged_pages": [1]}
+            with self.subTest(code=code):
+                self.assertEqual(self.run_detector(payload), "FAIL")
+        for change in ({"flags": [{"page": 1, "code": "near_empty"}]}, {"flagged_pages": [1]}, {"status": "FAIL"}):
+            self.assertEqual(self.run_detector(self.clean_report() | change), "FAIL")
+
+    def test_nonzero_detector_exit_cannot_be_overruled_by_clean_report(self):
+        self.assertEqual(self.run_detector(self.clean_report(), exit_code=1), "FAIL")
 
 
 class LayoutSourceContract(unittest.TestCase):
@@ -73,20 +121,20 @@ class LayoutSourceContract(unittest.TestCase):
         v4 = (ROOT / "typst/templates/system.typ").read_text(encoding="utf-8")
         book = (ROOT / "typst/heraldry.typ").read_text(encoding="utf-8")
         fmt = prod["format"]
-        self.assertIn("#let m-in = 0.75in", v4)
-        self.assertIn("#let m-out = 0.55in", v4)
-        self.assertIn("#let m-top = 0.68in", v4)
-        self.assertIn("#let gap = 0.24in", v4)
-        self.assertIn("#let body-size = 11pt", v4)
-        self.assertEqual([fmt["inside_margin_inches"], fmt["outside_margin_inches"],
-                          fmt["top_margin_inches"], fmt["column_gap_inches"]],
-                         [0.75, 0.55, 0.68, 0.24])
-        self.assertEqual((fmt["body_font_size_pt"], fmt["table_font_size_pt"]), (11, 9.3))
+        self.assertIn('json("../../config/design_tokens.json")', v4)
+        self.assertIn('#let body-size = type-token.body * 1pt', v4)
+        from layout_profile import validate, MARGIN_INSIDE_PT, MARGIN_OUTSIDE_PT, MARGIN_TOP_PT, COLUMN_GAP_PT
+        self.assertTrue(validate())
+        for key, value in (('inside_margin_inches', MARGIN_INSIDE_PT), ('outside_margin_inches', MARGIN_OUTSIDE_PT),
+                           ('top_margin_inches', MARGIN_TOP_PT), ('column_gap_inches', COLUMN_GAP_PT)):
+            self.assertAlmostEqual(fmt[key], value / 72)
+        self.assertEqual((fmt["body_font_size_pt"], fmt["table_font_size_pt"]), (10.5, 9))
         self.assertEqual((tokens["type_pt"]["body"], tokens["type_pt"]["chapter"],
-                          tokens["fonts"]["max_families"]), (11, 50, 4))
-        self.assertIn("#let table-size = 9.3pt", book)
-        self.assertIn("#let table-lead = 2.7pt", book)
-        self.assertEqual((PT, LEAD, PAD, VPAD), (9.3, 12, 5.0, 4.0))
+                          tokens["fonts"]["max_families"]), (10.5, 50, 4))
+        self.assertIn("#let table-size = v4.table-size", book)
+        self.assertIn("#let table-lead = v4.table-lead", book)
+        self.assertEqual((PT, PAD, VPAD), (9, 4.0, 2.2))
+        self.assertAlmostEqual(LEAD, PT * 1.05 + tokens['type_pt']['table_leading_additive'])
         self.assertEqual((tokens["spacing_pt"]["table_horizontal_padding"],
                           tokens["spacing_pt"]["table_vertical_padding"]), (PAD, VPAD))
 

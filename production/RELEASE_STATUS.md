@@ -1,5 +1,11 @@
 # Release status - RC493 source / RC492 delivery
 
+## Compact layout implementation - 2026-10-20, local proof reviewed
+
+The approved compact implementation produces **603-page cream/white interiors** from unchanged RC493, compared with the same-source 673-page baseline: **70 pages saved (10.40%)**. Digital: 606 pages. Source/cell reconciliation, exhaustive fit keeps, physical page evidence, zero-flag layout detectors, figure currency, and both inkjet file profiles pass. Supplementary cream/white geometry and content comparison PASS. All-page contact review, every manifest detail, covers, calibration, and targeted renders found no confirmed major defect at the reviewed resolution. Residual cosmetic whitespace and source C.13's multi-page "Single-Sheet" title are qualified in [the implementation report](../reports/Compact%20layout%20implementation.md).
+
+This is an authorized local layout proof, not a GitHub candidate or release; production build/QA/release ledgers and last-delivered print instructions remain historical RC492-build-37 evidence. RC493 manuscript bytes and approved artwork/figures are preserved. Repository check: 281 tests, 3 expected skips, no failures. Physical print **NOT TESTED**.
+
 
 ## Publishing validation follow-up - 2026-10-17
 

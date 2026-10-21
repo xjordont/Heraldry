@@ -8,11 +8,13 @@ rendered as line breaks, table representations) are recorded in
 production/mappings/.
 """
 from __future__ import annotations
-import argparse, json, re, sys
+import argparse, hashlib, json, re, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from tables import classify, cell_plain, COL_W, FULL_W  # noqa: E402
+from layout_profile import (MARGIN_TOP_PT, MARGIN_BOTTOM_PT, PAGE_HEIGHT_PT, PAGE_WIDTH_PT,
+    BODY_HEIGHT_PT, profile_dict)
 
 ROOT = Path(__file__).resolve().parents[1]
 ART_SEL = ROOT / "production/art/SELECTIONS.json"
@@ -45,6 +47,7 @@ def load_spot_art():
 
 
 FLOAT_FIGS = set(json.loads((ROOT / "config/design_tokens.json").read_text()).get("layout", {}).get("float_figures", []))
+TABLE_SCOPE_OVERRIDES = json.loads((ROOT / "config/design_tokens.json").read_text()).get('layout', {}).get('table_scope_overrides', {})
 BUILD = ROOT / "build"
 MAP = ROOT / "production/mappings"
 
@@ -68,6 +71,27 @@ def nobreak(s: str) -> str:
 
 def lit(s: str) -> str:
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+
+def table_content_sha256(table):
+    values = [[cell_plain(cell) for cell in table['header']],
+              [[cell_plain(cell) for cell in row] for row in table['rows']]]
+    return hashlib.sha256(json.dumps(values, ensure_ascii=False, separators=(',', ':')).encode('utf-8')).hexdigest()
+
+
+def apply_table_scope_override(table, classification, policy):
+    """Apply a measured width decision only to the exact reviewed cell contents."""
+    from tables import allocate, measure_table
+    if policy.get('scope') != 'full' or classification.get('rep') != 'table':
+        raise ValueError('Unsupported table scope override: ' + table['id'])
+    if policy.get('content_sha256') != table_content_sha256(table):
+        raise ValueError('Table content changed; review its width override: ' + table['id'])
+    mins, maxs, _ = measure_table(table)
+    widths, _ = allocate(mins, maxs, FULL_W)
+    if widths is None:
+        raise ValueError('Reviewed table no longer fits full width: ' + table['id'])
+    return classification | {'scope':'full', 'widths':[round(x,2) for x in widths],
+                              'max_pt':[round(x,1) for x in maxs], 'scope_reason':policy['reason']}
 
 
 class Emitter:
@@ -132,8 +156,8 @@ def first_text(b) -> str:
     return s.strip()
 
 
-RIGID = ("#htable(", "#statstrip(", "#statcard(", "#cards(", "#keepcol[", "#figure-block(", "#list(", "#enum(",
-         "#example[", "#keep[", "#runin[", "#note-box[", "#gloss[", "#flavour[")
+RIGID = ("#htable(", "#statstrip(", "#statcard(", "#cards(", "#keepcol[", "#keepfigure[", "#figure-block(", "#list(", "#enum(",
+         "#list-fragment(", "#example[", "#keep[", "#runin[", "#note-box[", "#gloss[", "#flavour[")
 
 
 def is_rigid(s: str) -> bool:
@@ -144,7 +168,7 @@ def is_rigid(s: str) -> bool:
 def inject(s: str, mark: str) -> str:
     """Put a zero-size marker INSIDE a rendered block so that no stray inline content
     sits between a heading and the block it must keep with."""
-    for f in ("#example[", "#flavour[", "#note-box[", "#runin[", "#keep[", "#gloss[", "#keepcol["):
+    for f in ("#example[", "#flavour[", "#note-box[", "#runin[", "#keep[", "#gloss[", "#keepcol[", "#keepfigure["):
         if s.startswith(f):
             return f + mark + s[len(f):]
     for f in ("#htable(", "#statstrip(", "#statcard(", "#cards(", "#figure-block("):
@@ -186,6 +210,20 @@ def is_example(b) -> bool:
 class Book:
     def __init__(self, model, balance):
         self.model = model
+        # Scope continuation events to chapters containing actual numbered scenarios.
+        # Scanning every heading body in every running header triples compile time.
+        def headings(blocks):
+            for block in blocks:
+                if block['type'] == 'heading':
+                    yield block
+                for item in block.get('items', []):
+                    yield from headings(item['blocks'])
+                yield from headings(block.get('blocks', []))
+        self.scenario_scope_ids = set()
+        for chapter in model['chapters']:
+            chapter_heads = list(headings(chapter['blocks']))
+            if any(re.match(r'^Scenario \d+:', h['title']) for h in chapter_heads):
+                self.scenario_scope_ids.update(h['id'] for h in chapter_heads)
         self.balance = balance  # seg index -> tail start piece
         anchors = set()
         for ch in model["chapters"]:
@@ -197,6 +235,10 @@ class Book:
         self.in_glossary = False
         self.measure_requests = []
         self.unit_log = []
+        self.logged_units = set()
+        self.extra_units = {}
+        self.requested_units = set()
+        self.table_titles = {}
         mf = BUILD / "unit_measure.json"
         self.measures = json.loads(mf.read_text()) if mf.exists() else {}
         self.piece_heads = {}
@@ -217,8 +259,11 @@ class Book:
             for b in bs:
                 if b["type"] == "heading" and b["level"] <= 3:
                     sec = b["id"]
+                if b["type"] == "heading":
+                    self._current_table_title = b["title"]
                 if b["type"] == "table":
                     tabs.append((b, sec))
+                    self.table_titles[b["id"]] = getattr(self, '_current_table_title', b["id"])
                 for it in b.get("items", []):
                     walk(it["blocks"], sec)
                 walk(b.get("blocks", []), sec)
@@ -227,8 +272,13 @@ class Book:
         for ch in self.model["chapters"]:
             sec = walk(ch["blocks"], sec)
         res, fam = {}, {}
+        unknown_overrides = set(TABLE_SCOPE_OVERRIDES) - {b['id'] for b, _ in tabs}
+        if unknown_overrides:
+            raise ValueError('Unknown reviewed table width IDs: ' + ', '.join(sorted(unknown_overrides)))
         for b, sec in tabs:
             c = classify(b, None)
+            if b['id'] in TABLE_SCOPE_OVERRIDES:
+                c = apply_table_scope_override(b, c, TABLE_SCOPE_OVERRIDES[b['id']])
             res[b["id"]] = c
             fam.setdefault((sec, tuple(c["header"])), []).append(b)
         self.families = {}
@@ -266,7 +316,10 @@ class Book:
         body = self.em.inl(b["c"])
         bm = "true" if lvl <= 3 else "false"
         ol = "true" if lvl <= 2 else "false"
-        return f"#heading(level: {lvl}, outlined: {ol}, bookmarked: {bm})[{body}] #label({lit(b['id'])})"
+        rendered = f"#heading(level: {lvl}, outlined: {ol}, bookmarked: {bm})[{body}] #label({lit(b['id'])})"
+        if b['id'] in getattr(self, 'scenario_scope_ids', set()):
+            rendered = f"#heading-scope({lvl}, {lit(b['title'])}, {lit(b['id'])})[{rendered}]"
+        return rendered
 
     def para(self, b, role=None):
         body = self.em.inl(b["c"])
@@ -276,6 +329,8 @@ class Book:
         if is_flavour(b):
             art = self.spot_art.get(b["id"])
             pre = f"#spotart({lit(art[0])}, {art[1]:.3f}in)" if art else ""
+            if role == 'section-lead':
+                return f"{pre}#section-lead[{tag}{body}]"
             return f"{pre}#flavour[{tag}{body}]"
         if is_caption(b):
             return f"#runin[{tag}{body}]\n"
@@ -288,16 +343,28 @@ class Book:
         if t == "para":
             return self.tags(b["id"]) + self.em.inl(b["c"])
         if t == "list":
-            return self.lst(b)
+            return self.contained(b, self.lst(b))
         if t == "table":
-            return self.table(b, force_column=True)
+            return self.contained(b, self.table(b, force_column=True)[0])
         if t == "quote":
-            return self.quote(b)
+            return self.contained(b, self.quote(b))
         if t == "heading":
             raise SystemExit(f"heading inside container {b['id']}")
         if t == "hr":
             return "#hr-ornament()"
         raise SystemExit(t)
+
+    def contained(self, b, text):
+        """Track a nested or joined source unit instead of losing it from the audit."""
+        self.extra_units[b['id']] = dict(b=b, s=text, kind='c', id=b['id'], typ=b['type'])
+        self.log_unit(self.extra_units[b['id']], 'contained')
+        return f"#umark({lit(b['id'])}, \"s\"){text}#umark({lit(b['id'])}, \"e\")"
+
+    def log_unit(self, x, mode):
+        if x['id'] not in self.logged_units:
+            self.logged_units.add(x['id'])
+            self.unit_log.append({'id': x['id'], 'kind': 'section' if 'head' in x else x['typ'],
+                                  'class': mode, **self.measures.get(x['id'], {})})
 
     def tags(self, bid):
         if bid.startswith("h-"):
@@ -313,17 +380,26 @@ class Book:
             return f"#enum(start: {b['start']}, " + ", ".join(items) + ")\n"
         return "#list(" + ", ".join(items) + ")\n"
 
+    def list_fragments(self, block):
+        """Offer complete source items as legal two-column split points."""
+        for index, item in enumerate(block['items']):
+            body = '#parbreak()'.join(self.block_inline(child) for child in item['blocks'])
+            number = str(block['start'] + index) if block['ordered'] else 'none'
+            yield f'#list-fragment(number: {number})[{body}]'
+
     def quote(self, b):
         inner = "#parbreak()".join(self.block_inline(x) for x in b["blocks"])
         return f"#note-box[{inner}]"
 
-    def table(self, b, force_column=False):
+    def table(self, b, force_column=False, initial_title=True):
         c = self.tclass[b["id"]]
         hdr = [self.em.inl(h) for h in b["header"]]
         rows = [[self.em.inl(cell) for cell in r] for r in b["rows"]]
         rep = c["rep"]
         mapping = {"id": b["id"], "src": b["src"], "rep": rep, "scope": c["scope"], "columns": c["columns"],
                    "rows": c["rows"], "header": c["header"]}
+        if c.get('scope_reason'):
+            mapping['scope_reason'] = c['scope_reason']
         if rep == "stat" or (c["header"][:6] == ["HP", "AV", "SPD", "LVL", "CV", "Sz"]):
             short = all(len(cell_plain(v)) <= 12 for v in b["rows"][0]) if b["rows"] else False
             if len(b["rows"]) == 1 and c["scope"] == "column" and rep == "stat" and short:
@@ -336,11 +412,11 @@ class Book:
                 mapping["field_map"] = {h: f"row1.{h}" for h in c["header"]}
                 s = f"#statcard({lit(b['id'])}, ({', '.join('[' + h + ']' for h in hdr)},), ({', '.join('[' + v + ']' for v in rows[0])},))"
             else:
-                s = self._plain_table(b, c, hdr, rows)
+                s = self._plain_table(b, c, hdr, rows, initial_title=initial_title)
         elif rep == "cards":
             s = self._cards(b, c, hdr, rows, mapping)
         else:
-            s = self._plain_table(b, c, hdr, rows)
+            s = self._plain_table(b, c, hdr, rows, initial_title=initial_title)
         mapping["scope"] = c["scope"]
         if "family" in c:
             mapping["family"] = c["family"]
@@ -359,7 +435,7 @@ class Book:
                 al.append("left")
         return al
 
-    def _plain_table(self, b, c, hdr, rows):
+    def _plain_table(self, b, c, hdr, rows, initial_title=True):
         total = COL_W if c["scope"] == "column" else FULL_W
         w = list(c["widths"])
         slack = total - sum(w)
@@ -371,7 +447,7 @@ class Book:
         rs = ", ".join("(" + ", ".join("[" + v + "]" for v in r) + ",)" for r in rows)
         ws = ", ".join(f"{x:.2f}" for x in w)
         als = ", ".join(aligns)
-        return f"#htable({lit(b['id'])}, ({ws},), ({als},), ({hs},), ({rs},))"
+        return f"#htable({lit(b['id'])}, ({ws},), ({als},), ({hs},), ({rs},), title: [#{lit(self.table_titles.get(b['id'], b['id']))}], initial-title: {str(initial_title).lower()})"
 
     def _cards(self, b, c, hdr, rows, mapping):
         heads = c["header"]
@@ -391,7 +467,7 @@ class Book:
         for i, h in enumerate(heads):
             fmap[h] = "entry.title.roll" if (die and i == 0) else "entry.title.name" if i == name_col else ("entry.desc" if i in desc else "entry.field")
         mapping["field_map"] = fmap
-        return f"#cards({lit(b['id'])}, ({', '.join(entries)},))"
+        return f"#cards({lit(b['id'])}, ({', '.join(entries)},), title-label: [#{lit(self.table_titles.get(b['id'], b['id']))}])"
 
     def emit(self):
         o = self.out
@@ -456,20 +532,31 @@ class Book:
     def chapter_items(self, rest_blocks):
         """Flatten a chapter into rendered items: dict(b, s, kind 'c'|'f', id, typ)."""
         items = []
+        # Further chapter-intro paragraphs continue in the full-width page flow.
+        # Packing them into the unbreakable title/art opener can overflow a page.
+        introduction = bool(rest_blocks and is_flavour(rest_blocks[0]))
         for k, b in enumerate(rest_blocks):
             nxt = rest_blocks[k + 1] if k + 1 < len(rest_blocks) else None
             if b["type"] == "hr" and nxt is None:
                 self.block_map.append((b["id"], b["src"], "hr-absorbed-by-chapter-break", None))
                 continue
             if b["type"] == "table":
-                s, scope = self.table(b)
+                introduction = False
+                duplicate_title = bool(items and items[-1]['typ'] == 'heading' and
+                    self.table_titles.get(b['id']) == items[-1]['b'].get('title'))
+                s, scope = self.table(b, initial_title=not duplicate_title)
                 if items and items[-1]["s"].startswith("#runin[") and items[-1]["kind"] == "c":
                     lab = items.pop()
                     self.block_map.append((lab["id"], lab["b"]["src"], "label-with-table", None))
                     s = lab["s"] + s
                 items.append(dict(b=b, s=s + "\n", kind="f" if scope == "full" else "c", id=b["id"], typ="table"))
                 continue
-            r = self.render(b)
+            # Opening flavour belongs to chapters, numbered sections and named scenarios.
+            # Individual monster/power/gear entry flavour remains within its ordinary column.
+            opening = b['type'] == 'para' and is_flavour(b) and introduction
+            introduction = opening or (b['type'] == 'heading' and
+                (b['level'] <= 3 or bool(re.match(r'^Scenario \d+: ', b.get('title', '')))))
+            r = self.para(b, role='section-lead') if opening else self.render(b)
             if (b["type"] == "para" and items and items[-1]["typ"] == "heading" and r.endswith("\n\n")
                     and len(first_text_full(b)) < 300 and not r.startswith(("#example[", "#flavour[", "#runin["))):
                 r = f"#keep[{r.rstrip()}]\n"
@@ -481,13 +568,13 @@ class Book:
                 # an entry's numbered title ("2. Heaven's Spear [3 AP, 10 NRG]") never splits from its Range/Area/Effect lines
                 title = items.pop()
                 self.block_map.append((title["id"], title["b"]["src"], "title-with-list", None))
-                r = f"#keep[{title['s'].rstrip()}{r.rstrip()}]\n"
+                r = f"#keep[{self.contained(title['b'], title['s'].rstrip())}{r.rstrip()}]\n"
             if typ in ("list", "quote") and items and items[-1]["s"].startswith("#runin[") and items[-1]["kind"] == "c":
                 # a bold run-in label ("Attacks", "Adept Assassin Talents") travels with the list it introduces
                 lab = items.pop()
                 self.block_map.append((lab["id"], lab["b"]["src"], "label-with-list", None))
                 r = lab["s"] + r
-            items.append(dict(b=b, s=r, kind="c", id=b["id"], typ=typ))
+            items.append(dict(b=b, s=r, kind="f" if opening else "c", id=b["id"], typ=typ))
             for fig in self.figs_for(b):
                 full = fig.get("scope") == "full"
                 items.append(dict(b={"type": "figure", "id": fig["id"], "src": b["src"]}, s=self.figure(fig, full=full),
@@ -511,7 +598,7 @@ class Book:
                 stack[-1]["children"].append(it)
         return root
 
-    def flat_parts(self, x):
+    def flat_parts(self, x, marked=False):
         """[(kind, [strings])] runs for measuring/placing a whole unit on one page."""
         parts = []
         glue = [False]
@@ -524,14 +611,23 @@ class Book:
             else:
                 parts.append((kind, [s]))
             glue[0] = is_head and kind == "c"
-        def walk(n):
+        def walk(n, outer=False):
+            tracked = marked and not outer and self.measurable(n)
+            prefix = f"#umark({lit(n['id'])}, \"s\")" if tracked else ''
             if "head" in n:
-                add("c", n["head"]["s"], True)
+                add("c", prefix + n["head"]["s"], True)
                 for c in n["children"]:
                     walk(c)
             else:
-                add(n["kind"], n["s"], n["s"].startswith("#runin["))
-        walk(x)
+                if n['typ'] == 'list' and n['s'].startswith(('#list(', '#enum(')):
+                    for index, fragment in enumerate(self.list_fragments(n['b'])):
+                        add(n['kind'], (prefix if index == 0 else '') + fragment)
+                else:
+                    add(n["kind"], inject(n["s"], prefix) if prefix else n["s"], n["s"].startswith("#runin["))
+            if tracked:
+                self.log_unit(n, 'contained')
+                parts[-1][1][-1] += f"#umark({lit(n['id'])}, \"e\")"
+        walk(x, outer=True)
         return parts
 
     @staticmethod
@@ -576,15 +672,22 @@ class Book:
         for c in root["children"]:
             self.collect_units(c, units)
         for u in units:
-            self.measure_requests.append(f"#munit({lit(u['id'])}, ({self.parts_typst(self.flat_parts(u))},))\n")
+            self.request_measure(u)
+        for u in list(self.extra_units.values()):
+            self.request_measure(u)
         cur = []
         prev_heading_only = True     # chapter opener counts as the start of the opening composition
         for c in root["children"]:
             cur, prev_heading_only = self.emit_x(c, cur, prev_heading_only)
         self.flush(cur)
 
+    def request_measure(self, u):
+        if u['id'] not in self.requested_units:
+            self.requested_units.add(u['id'])
+            self.measure_requests.append(f"#munit({lit(u['id'])}, ({self.parts_typst(self.flat_parts(u))},))\n")
+
     def is_fresh(self, n):
-        return n["level"] == 3 or bool(re.match(r"^Scenario \d+: ", n.get("title", "")))
+        return n["level"] == 3 or bool(re.match(r"^(?:Scenario \d+: |Climate \d+: .* Scenarios$)", n.get("title", "")))
 
     def record(self, x, mode):
         def walk(n):
@@ -606,18 +709,18 @@ class Book:
             self.flush(cur)
             cur = []
             self.out.append("#pagebreak(weak: true)\n")
+            after_heading = True
         cls = self.unit_class(x, fresh)
-        self.unit_log.append({"id": x["id"], "kind": "section", "level": x["level"], "class": cls,
-                              **self.measures.get(x["id"], {})})
+        self.log_unit(x, cls)
         if cls == "col":
             self.record(x, "keep-col")
-            body = "".join(s for _, ss in self.flat_parts(x) for s in ss)
+            body = "".join(s for _, ss in self.flat_parts(x, marked=True) for s in ss)
             cur.append((x["head"]["b"], f"#keepcol[#umark({lit(x['id'])}, \"s\"){body}#umark({lit(x['id'])}, \"e\")]\n"))
             return cur, False
         if cls == "page":
             self.record(x, "keep-page")
             self.flush(cur)
-            self.out.append(f"#keeppage(id: {lit(x['id'])}, {self.parts_typst(self.flat_parts(x))})\n")
+            self.out.append(f"#keeppage(id: {lit(x['id'])}, {self.parts_typst(self.flat_parts(x, marked=True))})\n")
             return [], False
         # over-height: heading sticks to its content; children keep their own units
         self.block_map.append((x["head"]["id"], x["head"]["b"]["src"], "column", None))
@@ -627,7 +730,12 @@ class Book:
             # heading travels with a leading full-width element
             self.flush(cur)
             cur = []
-            self.out.append(f"#full[{head}{kids[0]['s']}]\n".replace("#pm(", "#pmx("))
+            first = kids[0]
+            piece = first['s']
+            if self.measurable(first):
+                self.log_unit(first, 'full')
+                piece = f"#umark({lit(first['id'])}, \"s\"){piece}#umark({lit(first['id'])}, \"e\")"
+            self.out.append(f"#full-opening[{head}{piece}]\n".replace("#pm(", "#pmx("))
             self.record(kids[0], "full")
             kids = kids[1:]
             after = False
@@ -640,20 +748,28 @@ class Book:
                 return k["typ"] in ("para", "heading") and len(first_text_full(k["b"])) < 1200
             if kids and "head" not in kids[0] and kids[0]["kind"] == "c" and small(kids[0]):
                 lead.append(kids[0])
-                if (kids[0]["typ"] == "para" and first_text_full(kids[0]["b"]).rstrip().endswith(":")
+                intro_text = first_text_full(kids[0]['b']).rstrip()
+                if (kids[0]["typ"] == "para" and len(intro_text) <= 300 and
+                        (intro_text.endswith(":") or len(intro_text.split()) <= 4)
                         and len(kids) > 1 and "head" not in kids[1] and kids[1]["kind"] == "c"
-                        and self.measures.get(kids[1]["id"], {}).get("h1", 1e9) <= FRAME_FIT / 2):
+                        and small(kids[1])):
                     lead.append(kids[1])
             if lead:
                 for l in lead:
                     self.record(l, "keep-with-heading")
-                body = head + "".join(l["s"] for l in lead)
+                body = head
+                for l in lead:
+                    if self.measurable(l):
+                        self.log_unit(l, 'keep-with-heading')
+                        body += f"#umark({lit(l['id'])}, \"s\"){l['s']}#umark({lit(l['id'])}, \"e\")"
+                    else:
+                        body += l['s']
                 cur.append((x["head"]["b"], f"#keepcol[{body.rstrip()}]\n"))
                 kids = kids[len(lead):]
                 after = False
             else:
                 cur.append((x["head"]["b"], head))
-                after = True
+                after = after_heading
         for c in kids:
             cur, after = self.emit_x(c, cur, after)
         cur.append(({"type": "marker", "id": x["id"] + ":end", "src": x["head"]["b"]["src"]},
@@ -666,19 +782,22 @@ class Book:
             self.flush(cur)
             m = self.measures.get(mid)
             self.record(x, "full")
+            tracked = self.measurable(x)
+            body = (f"#umark({lit(mid)}, \"s\"){x['s']}#umark({lit(mid)}, \"e\")"
+                    if tracked else x['s'])
             if x.get("float"):
-                self.out.append(f"#place(auto, float: true, clearance: 12pt)[#umark({lit(mid)}, \"s\"){x['s']}#umark({lit(mid)}, \"e\")]\n")
+                self.out.append(f"#place(auto, float: true, clearance: 12pt)[{body}]\n")
             else:
                 brk = "false" if (m and m["h2"] <= FRAME_FIT) else "true"
-                self.out.append(f"#full[#block(breakable: {brk}, width: 100%)[#umark({lit(mid)}, \"s\"){x['s']}#umark({lit(mid)}, \"e\")]]\n")
-            if self.measurable(x):
-                self.unit_log.append({"id": mid, "kind": x["typ"], "class": "full", **(m or {})})
+                self.out.append(f"#full[#block(breakable: {brk}, width: 100%)[{body}]]\n")
+            if tracked:
+                self.log_unit(x, 'full')
             return []
         if not self.measurable(x):
             cur.append((x["b"], x["s"]))
             return cur
         cls = self.unit_class(x, False)
-        self.unit_log.append({"id": mid, "kind": x["typ"], "class": cls, **self.measures.get(mid, {})})
+        self.log_unit(x, cls)
         if cls == "page":
             self.flush(cur)
             self.record(x, "keep-page")
@@ -686,7 +805,8 @@ class Book:
             return []
         s = x["s"].rstrip("\n")
         body = f"#umark({lit(mid)}, \"s\"){s}#umark({lit(mid)}, \"e\")"
-        cur.append((x["b"], (f"#keepcol[{body}]" if cls == "col" else body) + "\n"))
+        wrapper = '#keepfigure' if x['typ'] == 'figure' else '#keepcol'
+        cur.append((x["b"], (f"{wrapper}[{body}]" if cls == "col" else body) + "\n"))
         return cur
 
     def figs_for(self, b):
@@ -760,9 +880,10 @@ class Book:
             if carry:
                 tp.append(carry)
             tp[-1] = tp[-1] + end
-            if len(tp) == 1 and not is_rigid(tp[0]):
-                # a single prose tail flows across both columns at half height
-                self.out.append("#flowcols(([" + tp[0] + "],))\n")
+            if all(not is_rigid(piece) for piece in tp):
+                # Zero-size terminal markers do not turn a prose tail into a
+                # whole-piece grid with an empty right column.
+                self.out.append("#flowtail((" + ', '.join('[' + piece + ']' for piece in tp) + ",))\n")
             else:
                 self.out.append("#bal(" + ", ".join("[" + x + "]" for x in tp) + ")\n")
 
@@ -783,10 +904,10 @@ def compile_book(variant="cream", out=None, query=True, edition="print"):
 
 
 STRADDLE_MAX = 250
-TOP_Y = 0.68 * 72
-FRAME_H = 792 - 0.68 * 72 - 0.7 * 72      # usable frame of an empty page (pt; design v4 margins)
-FRAME_FIT = FRAME_H - 24                  # conservative fitting tolerance (block spacing, sticky headings)
-BODY_BOTTOM = 792 - 0.7 * 72
+TOP_Y = MARGIN_TOP_PT
+FRAME_H = BODY_HEIGHT_PT
+FRAME_FIT = FRAME_H - 12                 # measured component overhead and a documented boundary tolerance
+BODY_BOTTOM = PAGE_HEIGHT_PT - MARGIN_BOTTOM_PT
 
 
 def compute_balance(pm, prev, sigs, heads=None, hpos=None):
@@ -807,10 +928,11 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None):
         pt = prev.get(str(sid))
         pt = pt[1] if pt and pt[0] == sigs.get(str(sid)) else None
         byp = {m["piece"]: m for m in starts}
-        if pt is not None and pt in byp and byp[pt]["page"] == L:
+        on_last = [m for m in starts if m["page"] == L]
+        tiny_tail = (end.get('x', 0) < PAGE_WIDTH_PT / 2 and end['y'] < TOP_Y + 90 and len(on_last) <= 5)
+        if pt is not None and pt in byp and byp[pt]["page"] == L and not tiny_tail:
             res[str(sid)] = [sigs[str(sid)], pt]
             continue
-        on_last = [m for m in starts if m["page"] == L]
         if not on_last:
             lastp = starts[-1] if starts else None
             if lastp and lastp["page"] == L - 1 and BODY_BOTTOM - lastp["y"] < STRADDLE_MAX:
@@ -825,7 +947,9 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None):
             prevp = prevs[-1]
             first = on_last[0]
             at_top = abs(first["y"] - TOP_Y) < 20 and first["x"] < 300
-            if not at_top:
+            if tiny_tail and prevp['page'] == L - 1 and BODY_BOTTOM - prevp['y'] < STRADDLE_MAX:
+                t = prevp['piece']
+            elif not at_top:
                 if BODY_BOTTOM - prevp["y"] < STRADDLE_MAX or prevp["page"] == L:
                     t = prevp["piece"]
                 else:
@@ -838,7 +962,27 @@ def compute_balance(pm, prev, sigs, heads=None, hpos=None):
     return res
 
 
+def stabilize_balance(proposed, previous, flips, excluded):
+    """Use natural column flow for an oscillating tail, rather than freezing a proposal.
+
+    Exclusions are explicit planner policy. The final emitted balance must equal
+    a fresh proposal filtered by that policy; keeping a previous alternating
+    variant alone is not convergence.
+    """
+    result = dict(proposed)
+    for key in set(result) | set(previous):
+        if result.get(key) != previous.get(key) and key not in excluded:
+            flips[key] = flips.get(key, 0) + 1
+            if flips[key] > 2:
+                excluded.add(key)
+    for key in excluded:
+        result.pop(key, None)
+    return result
+
+
 def main():
+    import time
+    started = time.perf_counter()
     BUILD.mkdir(parents=True, exist_ok=True)
     MAP.mkdir(parents=True, exist_ok=True)
     if not (BUILD / "blocks.json").exists():
@@ -848,6 +992,7 @@ def main():
     ap.add_argument("--passes", type=int, default=5)
     ap.add_argument("--no-balance", action="store_true")
     ap.add_argument("--variants-only", action="store_true", help="compile white + digital from the current content.typ")
+    ap.add_argument("--allow-nonconverged", action="store_true", help="diagnostic output only; final publication requires convergence")
     a = ap.parse_args()
     if a.variants_only:
         for v, ed, name in (("white", "print", "book-white.pdf"), ("cream", "digital", "book-digital.pdf")):
@@ -863,42 +1008,56 @@ def main():
     import subprocess
     probe = Book(model, balance)
     probe.emit()
-    (ROOT / "typst/measure.typ").write_text('#import "heraldry.typ": *\n#show: book\n' + "".join(probe.measure_requests))
+    (ROOT / "typst/measure.typ").write_text(
+        '#import "heraldry.typ": *\n#show: book\n' + "".join(probe.measure_requests)
+        + '\n#context { pdf.attach("/heraldry-unit-measurements.json", '
+        'bytes(json.encode(query(<um>).map(m => m.value))), '
+        'mime-type: "application/json", relationship: "supplement") }\n', encoding="utf-8", newline="\n")
     r = subprocess.run([sys.executable, str(ROOT / "tools/measure_units.py")], capture_output=True, text=True)
     if r.returncode:
         raise SystemExit(r.stderr[-3000:])
     print(r.stdout.strip())
-    flips = {}
+    flips, pass_log, excluded = {}, [], set()
+    converged = False
     for p in range(a.passes):
         book = Book(model, balance)
-        (ROOT / "typst/content.typ").write_text(book.emit())
+        (ROOT / "typst/content.typ").write_text(book.emit(), encoding="utf-8", newline="\n")
         out, dt, (pm, hpos) = compile_book(a.variant)
         new = compute_balance(pm, balance, book.seg_sigs, book.piece_heads, hpos) if not a.no_balance else {}
+        raw_changes = sum(1 for k in set(new) | set(balance) if new.get(k) != balance.get(k))
+        new = stabilize_balance(new, balance, flips, excluded)
+        changes = sum(1 for k in set(new) | set(balance) if new.get(k) != balance.get(k))
+        pass_log.append({'pass': p + 1, 'compile_seconds': dt, 'segments': book.seg_count,
+                         'balanced': len(new), 'changes': changes, 'raw_changes': raw_changes,
+                         'natural_flow_segments': sorted(excluded)})
         print(f"pass {p+1}: {dt:.1f}s, segments={book.seg_count}, balanced={len(new)}, changed={sum(1 for k in set(new)|set(balance) if new.get(k)!=balance.get(k))}")
         if new == balance or a.no_balance:
+            converged = True
             break
-        for k in set(new) | set(balance):
-            if new.get(k) != balance.get(k):
-                flips[k] = flips.get(k, 0) + 1
-                if flips[k] > 2:
-                    if k in balance:
-                        new[k] = balance[k]
-                    else:
-                        new.pop(k, None)
         for k, (sig, t) in list(new.items()):
             while t > 0 and f"{k}:{t-1}" in book.piece_heads:
                 t -= 1
             new[k] = [sig, t]
         if p == a.passes - 1 or new == balance:
+            converged = new == balance
             break
         balance = new
         bal_file.write_text(json.dumps(balance))
     MAP.mkdir(parents=True, exist_ok=True)
-    (MAP / "tables.json").write_text(json.dumps(book.table_map, ensure_ascii=False, indent=0))
-    (MAP / "blocks.json").write_text(json.dumps(book.block_map, ensure_ascii=False))
+    (MAP / "tables.json").write_text(json.dumps(book.table_map, ensure_ascii=False, indent=0), encoding="utf-8", newline="\n")
+    (MAP / "blocks.json").write_text(json.dumps(book.block_map, ensure_ascii=False), encoding="utf-8", newline="\n")
     import hashlib
+    from source_units import source_unit_manifest
+    manifest = source_unit_manifest(model, book.fig_slots)
     (BUILD / "units.json").write_text(json.dumps({"frame_fit_pt": FRAME_FIT, "units": book.unit_log,
+        "expected_unit_ids": [u['id'] for u in manifest], 'source_unit_manifest': manifest,
         "content_sha256": hashlib.sha256((ROOT / "typst/content.typ").read_bytes()).hexdigest()}))
+    (BUILD / 'layout-build.json').write_text(json.dumps({'profile': profile_dict(), 'passes': pass_log,
+        'converged': converged, 'natural_flow_segments': sorted(excluded),
+        'seconds': round(time.perf_counter() - started, 3),
+        'source_sha256': model['sha256'], 'content_sha256': hashlib.sha256((ROOT / 'typst/content.typ').read_bytes()).hexdigest()}, indent=2))
+    if not converged and not a.allow_nonconverged:
+        raise SystemExit('Layout balancing did not converge; diagnostic PDF preserved but cannot be published')
     print("links:", len(book.em.links), "->", out)
 
 

@@ -8,6 +8,7 @@ from collections import Counter
 from pathlib import Path
 
 import pymupdf
+from pdf_positions import validate_sidecar
 
 ROOT = Path(__file__).resolve().parents[1]
 SELECTORS = ("<tblpos>", "<ixpos>", "<hpos>", "<um-pos>")
@@ -99,9 +100,11 @@ def main():
     positions = json.loads(Path(args.positions).read_text())
     if positions != meta.get("positions"):
         raise ValueError("Position file differs from the compile-bound location query")
+    binding = validate_sidecar(positions, pdf, root=ROOT)["binding"]
     headings = json.loads((ROOT / "production/inventory/headings.json").read_text())
     report = analyze(pdf, headings, positions)
     report["pdf_sha256"] = meta["pdf_sha256"]
+    report["serialized_position_binding"] = binding
     Path(args.report).write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps({k: v for k, v in report.items() if k not in ("note", "pdf_sha256")}))
     raise SystemExit(0 if report["status"] == "PASS" else 1)

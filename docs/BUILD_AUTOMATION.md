@@ -1,8 +1,10 @@
 # Unattended build and release chain (owner decisions 2026-10-14)
 
 Codex orchestrates the whole build and release overnight, including the all-page visual review that gates it ("Hand it all over to codex";
-"I want Codex to have full rights to release like you do"). GitHub is the only channel: no token, no API call, no local PDF build. Codex uses
-the Git login it already has.
+"I want Codex to have full rights to release like you do"). GitHub is the delivery channel. Codex uses
+the Git login it already has. The owner's 2026-10-15 primary-developer handoff and `docs/WORKFLOW.md`
+allow local specimens and full-book diagnosis during an explicitly requested layout pass. Local output
+does not constitute a published candidate or bypass the exact-PDF review and GitHub release chain below.
 
 ```
 Codex (Windows PC)                       GitHub Actions
