@@ -65,7 +65,7 @@ All-figure pass completed 2026-10-16: all 57 figures freshly compared with RC493
 
 ### Manuscript authority at that checkpoint
 
-`source/versions.json` identifies `source/Heraldry_RC487.md`, SHA-256 `d77a72f9030061f76ea61e947bf520dcc81628bd653f61ba144f2a474a088254`. RC487 applies one owner-authorized batch of 48 exact repairs archived in `editorial/history/RC487.json`. RC484â€“RC486 and their archived history remain unchanged. Future text edits follow `docs/WORKFLOW.md` and promote a new snapshot; artwork/figure/layout edits use Git commits without an RC bump.
+`source/versions.json` identifies `source/Heraldry_RC487.md`, SHA-256 `d77a72f9030061f76ea61e947bf520dcc81628bd653f61ba144f2a474a088254`. RC487 applies one owner-authorized batch of 48 exact repairs archived in `editorial/history/RC487.json`. RC484–RC486 and their archived history remain unchanged. Future text edits follow `docs/WORKFLOW.md` and promote a new snapshot; artwork/figure/layout edits use Git commits without an RC bump.
 
 ### Delivery and verification at that checkpoint
 
@@ -73,7 +73,7 @@ RC487 digital: 600 pages; cream and white interiors: 597 pages each. All 597 cre
 
 17 regression tests and 8 source preflight checks pass. Reconciliation preserves 8,429 text blocks in order and all 332 tables / 10,315 current cells. All 835 printed item Cost/Value cells are unchanged; development price multipliers/formulas and quality-table Value columns are removed. All 50 special weapon base profiles resolve. 1,539 fit-capable units have no avoidable splits or missing coverage. All 57 figures pass the current source-bound review gate. The 19-check release gate and package audit are recorded in `production/qa/STATUS.json` and `production/qa/package-audit.json`.
 
-The contradiction audit is closed for F01â€“F21 and U01â€“U06 in `production/qa/manuscript-contradiction-resolution.md`; the original RC486 audit remains historical evidence. Owner-authorized completions and new illustrative dice results are explicit in the closure record. Exact reconstruction and immutable hashes are verified by `production/qa/manuscript-repair-verification.json`.
+The contradiction audit is closed for F01–F21 and U01–U06 in `production/qa/manuscript-contradiction-resolution.md`; the original RC486 audit remains historical evidence. Owner-authorized completions and new illustrative dice results are explicit in the closure record. Exact reconstruction and immutable hashes are verified by `production/qa/manuscript-repair-verification.json`.
 
 ### Remaining inputs at that checkpoint
 
@@ -82,13 +82,13 @@ The original workflow email's three annotation texts remain unavailable through 
 GitHub delivery rebuilding verifies the committed visual ledger before committing generated PDFs to main. Do not force-push or re-promote RC487. Historical checkpoints below retain their original scope.
 
 ## Run 2026-10-06 (scenario maps, layout)
-- Art: BLOCKED â€” no authorized image route at that historical checkpoint. 0/12 produced then; superseded by the supplied masters below.
+- Art: BLOCKED — no authorized image route at that historical checkpoint. 0/12 produced then; superseded by the supplied masters below.
 - Figures: FIG-20 legend, FIG-21..56 maps for all 36 Core Scenarios, FIG-57 10.1 procedural template; FIG-18/19 retained as Appendix A/B maps; FIG-14 dimension fix confirmed. Independent review: 0 open majors; gate PASS. 15 ambiguities logged for owner decision; maps with undrawn elements: Undermarches 1, Sun-Drowned 3, The Mire 2, The Mire 5.
 - Layout: glossary hanging indent; formula stat profiles as key/value cards; tall legend floats (void removed).
 - Manuscript: unchanged (RC485). No text patches proposed this run.
 - Verified: 18/18 checks PASS; all 450 pages inspected; package rebuilt.
 
-## Owner design review â€” 2026-10-07
+## Owner design review — 2026-10-07
 
 The owner requests a less plain design, better sectional/table pagination, a GPT art route and an InDesign feasibility assessment. Read docs/DESIGN_REFINEMENT.md and docs/ART_AUTOMATION.md next. The ten correct reference books were inspected at 23 selected pages; docs/REFERENCE_ANALYSIS.md replaces the incorrect larger reference analysis and the standing brief now uses only these ten.
 
@@ -96,7 +96,7 @@ Representative current draft/code review found avoidable T004 splitting, awkward
 
 Next: preflight/tests; enforce fresh-page/conditional-keep policy and improve components on the specified real-content stress cases; integrate the supplied ChatGPT Work masters according to production/art/HANDOFF.md; apply across the book, inspect continuations/scenarios and all-page rhythm, reconcile, rebuild navigation and package with current hashes. Work on main. Continue through implementation, verification and packaging.
 
-## ChatGPT Work artwork handoff â€” 2026-10-07 UTC
+## ChatGPT Work artwork handoff — 2026-10-07 UTC
 
 All twelve atmospheric masters are generated and visually reviewed. The exact owner-selected skeleton image was corrected to remove its third arm. Prompts, native RGBA dimensions, hashes, alpha and reduced 300ppi placement sizes are recorded under production/art/. Claude integrates these supplied assets; external image API generation is disabled. InDesign output is on hold. RC485 and all prior manuscript snapshots remain unchanged.
 
@@ -104,51 +104,51 @@ Preflight and all twelve workflow tests pass. Existing dist PDFs remain the prev
 
 GitHub artwork transfer completed: all twelve originals were downloaded from stored LFS objects and verified by SHA256/byte count before their pointers were committed to main. The artwork-only ZIP passed native-file checks in GitHub Actions run 37555457110. Temporary transfer files are removed after the import. PDF rebuilding remains a separate gated step after placement and visual-ledger updates; instruction-only workflow edits do not trigger delivery rebuilding.
 
-## Owner one-page keep clarification â€” 2026-10-07 UTC
+## Owner one-page keep clarification — 2026-10-07 UTC
 
 Mandatory: every complete fit-capable scenario, section/subsection, table, procedure and entry stays on one physical page with its heading and necessary associated content; move the whole unit when remaining space is insufficient. Measure against an empty usable page at approved widths; protect nested short children even in long parents. Implement before balancing, audit every stable source ID with current input/PDF hashes, and make avoidable splits or missing coverage release failures. See DESIGN_REFINEMENT.md. This instructions-only checkpoint leaves RC485 and existing PDFs unchanged; enforcement and all-page review are required in the next build.
 
-## Illustrated build and one-page keeps â€” 2026-10-07
+## Illustrated build and one-page keeps — 2026-10-07
 - Art integrated: 11 chapter openers + front cover at native 300 ppi (exact px/300 in), alpha preserved; cover title remains live type.
-- Pagination rebuilt around measured keep units (tools/measure_units.py â†’ build/unit_measure.json): sections/subsections/scenarios, tables, lists, examples and figures that fit an empty usable page stay on one page (column move or whole-page composition); numbered sections and named scenarios start fresh pages; run-in labels/lead-ins stay with their lists.
+- Pagination rebuilt around measured keep units (tools/measure_units.py → build/unit_measure.json): sections/subsections/scenarios, tables, lists, examples and figures that fit an empty usable page stay on one page (column move or whole-page composition); numbered sections and named scenarios start fresh pages; run-in labels/lead-ins stay with their lists.
 - New mandatory gate check `one_page_keeps` (tools/keep_audit.py, bound to content.typ and PDF hashes): 1538 fit-capable units, 0 avoidable splits, 0 missing coverage.
 - Fixed a bug from the owner's guard commit (lost tuple when appending column figures).
-- Interiors grew 450 â†’ 594 pages from fresh-page starts and whole-unit moves (intentional whitespace per DESIGN_REFINEMENT.md).
+- Interiors grew 450 → 594 pages from fresh-page starts and whole-unit moves (intentional whitespace per DESIGN_REFINEMENT.md).
 - Verified: 19/19 checks PASS; all 594 pages inspected; reconciliation unchanged (8,426 blocks, 10,341 cells). Release ZIP (156 MB) exceeds GitHub's file limit: delivered as the CI artifact, not committed.
 - Not done: entry-anatomy restyle beyond existing cards, spot art; 4 scenario maps still await owner decisions. Physical proof NOT TESTED.
 
-## Scenario diagrams unified â€” 2026-10-07
+## Scenario diagrams unified — 2026-10-07
 - All 44 setup/deployment diagrams (FIG-13-16, 18-57) drawn from one glyph registry (figures/src/scenkit.py); FIG-20 key explains all 40 glyphs; selfcheck fails on any glyph missing from the key; captions cite the key; FIG-13-16/18/19 carry compact key strips.
 - Appendix A/B maps redrawn on the core map renderer. Unresolved elements (Undermarches 1, Sun-Drowned 3, The Mire 2, The Mire 5) shown with a '?' tag and note, not placed.
 - Terrain types corrected to the 2.9.1 table on 24 maps, with a terrain-type selfcheck.
 - Independent review: 0 open majors, gate PASS 57/57 (29 open minors, e.g. FIG-51 G1/Chest glyph touch).
 - Interiors 596 pages; all inspected; 19/19 checks PASS.
 
-## RC486 placements and figure minors â€” 2026-10-07
+## RC486 placements and figure minors — 2026-10-07
 - Owner instruction 2026-10-07: "Fix the unplaced elements and minor notes to the best of your ability." RC486 created with tools/revise_manuscript.py from RC485 (P-08..P-12, editorial/proposals/rc486-scenario-placements.json): Undermarches 1 arrival point, Sun-Drowned 3 guard position, The Mire 2 and 5 escape edges, The Mire 5 Group 1 short-edge arrival.
 - FIG-33, 47, 52, 55 now draw these elements; the '?' unresolved glyph was removed from the FIG-20 key and registry.
 - 29 open figure minors: 25 fixed, 4 accepted with reasons in figure-semantic-review.json (FIG-19 label on ring, FIG-27 ruler over dome, FIG-29 label halo over a dashed ring, FIG-51 Group 2 logged ambiguity). Gate PASS 57/57, 0 open majors/minors.
 - Clean build: interiors 596 pages, digital 599; all 596 pages inspected on contact sheets, FIG-55 at 70 dpi; 19/19 checks PASS; release ZIP built (CI artifact). Physical proof NOT TESTED.
 
-## Automated pen-and-ink art pipeline â€” 2026-10-08
+## Automated pen-and-ink art pipeline — 2026-10-08
 - Owner instruction: "I want to automate the entire process with as little effort as possible. While the existing art assets can serve as a generate inspiration I think it would be best to replace them as well to ensure consistency." Route changed from ChatGPT Work to the Gemini image API (CLAUDE.md, docs/ART_AUTOMATION.md).
-- Built: tools/art_catalog.py (275 entries), config/art_style.json (style bible, $150 cap), tools/art_generate.py (anchors â†’ approval â†’ batch, automated judge, budget ledger), tools/art_ink.py (pure ink on transparent), the `Generate pen-and-ink artwork` workflow, and layout slots (spot art above flavour text inside keep units; cover and chapter fall back to the original masters).
+- Built: tools/art_catalog.py (275 entries), config/art_style.json (style bible, $150 cap), tools/art_generate.py (anchors → approval → batch, automated judge, budget ledger), tools/art_ink.py (pure ink on transparent), the `Generate pen-and-ink artwork` workflow, and layout slots (spot art above flavour text inside keep units; cover and chapter fall back to the original masters).
 - Layout test with four stand-in images: clean build PASS on all checks except the expected visual ledger; test art removed.
 - BLOCKED on the owner: repository secret GEMINI_API_KEY is not set (first anchors run failed at the key check; $0 spent). Next: run anchors, review and approve anchors, run batch, review contact sheets and placed pages, rebuild and update the visual ledger.
 - 2026-10-08 style definition: owner supplied four samples and asked to define the style ("Dark Souls inspiration as well"). Three samples are stored as generation references in assets/art/style/ (original JPEG bytes as plain git blobs, because this cloud session cannot upload LFS; excluded from packages and provenance); the old CH01 master is recorded as the density counter-example. config/art_style.json was rewritten: one illustrator, figure and scene registers, classic RPG interior ink, withered-beauty mood. The anchors phase now uses the owner samples; the batch uses the approved anchors plus the samples. Still waiting on the GEMINI_API_KEY secret.
 
-## Manuscript contradiction audit â€” 2026-10-09
+## Manuscript contradiction audit — 2026-10-09
 
-- Audit completed across all chapters and Appendices Aâ€“C of active RC486. Semantic clearance: OPEN FINDINGS. Evidence: [report](qa/manuscript-contradiction-audit.md), [findings](qa/manuscript-contradiction-audit.json), [reproducible verification](qa/manuscript-contradiction-verification.json).
+- Audit completed across all chapters and Appendices A–C of active RC486. Semantic clearance: OPEN FINDINGS. Evidence: [report](qa/manuscript-contradiction-audit.md), [findings](qa/manuscript-contradiction-audit.json), [reproducible verification](qa/manuscript-contradiction-verification.json).
 - 21 open findings, 6 explicitly isolated uncertainties; stale Spot/DEX Pen/terrain/allegiance/AI references, enhanced-value differences, incomplete equipment/AI procedures, scenario deployment/objective/ending gaps, two teaching-example errors, and combined Basic Mode variants. No unverified behaviour or unseen dice results asserted.
 - Exact candidate batch: `editorial/proposals/rc487-contradiction-audit.json`, 13 proposed replacements (9 summary/name repairs; 4 whole-table replacements for 15 value cells). Uniform market/treasure valuation remains an intent question. All entries are `proposed`; substantive decisions and example rolls are excluded.
-- Verified: 15/15 tests; 8/8 preflight; all 274 recognizable enhanced-quality rows; 93 direct die-range tables without gaps/overlaps; 633 section references; 1,898 bestiary mentions; 86 evidence anchors; all 13 unique patch matches; exact P-01â€“P-12 reconstruction and immutable snapshot hashes.
-- RC484â€“RC486, registry/history and existing PDFs are unchanged. This evidence update does not grant a semantic release PASS, reapprove artwork/layout, or substitute for physical proof. The original GitHub email's three annotation texts remain unavailable; no conjectural mapping is claimed.
+- Verified: 15/15 tests; 8/8 preflight; all 274 recognizable enhanced-quality rows; 93 direct die-range tables without gaps/overlaps; 633 section references; 1,898 bestiary mentions; 86 evidence anchors; all 13 unique patch matches; exact P-01–P-12 reconstruction and immutable snapshot hashes.
+- RC484–RC486, registry/history and existing PDFs are unchanged. This evidence update does not grant a semantic release PASS, reapprove artwork/layout, or substitute for physical proof. The original GitHub email's three annotation texts remain unavailable; no conjectural mapping is claimed.
 - Next manuscript work: decide open mechanics/placement/timing questions, author complete corrected teaching ledgers, approve an exact patch batch and promote RC487 once, then reconcile/rebuild and review affected figures/PDFs.
 - 2026-10-10 unique illustration plan (owner: "Ensure unique art planned for every illustration... Include planned prompts"): production/art/SUBJECT_PLAN.json adds 11 fresh chapter subjects and concrete direction for 78 entries. Named bosses are a separate `boss` family; scenarios show place with creatures small; backgrounds are still lifes. tools/art_catalog.py gained a uniqueness gate. production/art/ILLUSTRATION_LIST.md (tools/art_list.py) lists all 275 entries with exact prompts. The six anchors are unchanged and still valid.
 - 2026-10-10 prompts v2 and ChatGPT Work route (owner: "considering" switching to ChatGPT Work for subscription use and better GPT Image results; supplied a Greythorn prompt and render). The prompt template now follows the owner's Greythorn structure; OWNER_PROMPTS.json holds that prompt verbatim. Two Sonnet workers wrote 274 manuscript-based briefs (production/art/briefs/), with orchestrator fixes (Six Climates scope, Warden size, chapter 9 duplicate, Orc weapon). tools/art_gpt_pack.py writes production/art/gpt/ (INSTRUCTIONS, QUEUE, prompts); tools/art_intake.py plus the 'Intake ChatGPT artwork' workflow ink-prepare committed images (the owner Greythorn render has been received). Art-relevant manuscript notes are in production/art/SOURCE_NOTES.md. The route switch is NOT yet recorded in CLAUDE.md, pending owner confirmation; the Gemini route is unchanged.
 
-## RC488 owner refinements and ChatGPT Work art route â€” 2026-10-10
+## RC488 owner refinements and ChatGPT Work art route — 2026-10-10
 - Owner instruction: "Yes make the chat gpt work the official image generation pathway." CLAUDE.md and docs/ART_AUTOMATION.md now name ChatGPT Work (queue, then ChatGPT Work commits, then the intake workflow, then orchestrator approval) as official. The Gemini pipeline is retired as a fallback; its six test drawings are superseded.
 - Owner-instructed manuscript batch promoted as RC488 (13 patches, editorial/history/RC488.json):
   - Undead Champion: War Maul.
@@ -166,7 +166,7 @@ Mandatory: every complete fit-capable scenario, section/subsection, table, proce
 - Clean build: 597 interior pages, identical pagination; 11 pages differ from RC487, all inspected. 19/19 checks PASS; release ZIP built. The RC486/RC487 dist PDFs are retired from dist/. Physical proof NOT TESTED.
 - Next: owner starts ChatGPT Work on production/art/gpt/INSTRUCTIONS.md (anchors queue: 5 items; Greythorn already received).
 
-## Independent RC488 audit resolved: RC489 and RC490 â€” 2026-10-10
+## Independent RC488 audit resolved: RC489 and RC490 — 2026-10-10
 - Owner asked to double-check the manuscript and illustration instructions. Two independent audits were archived in production/qa/rc488-audit-manuscript.json and rc488-audit-art.json.
 - **RC489** (31 patches; owner: "yes but replace staff with the mundane weapon quarterstaff"):
   - Forsaken Duelist rapier.
@@ -289,7 +289,7 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
     - Wikimedia rate-limited this connection.
     - Gutenberg's Sime plates are halftone grey, and its Pyle plates carry lettering and frames.
     - From Art Institute of Chicago CC0 prints, four were added as STYLE-REF-41 to 44: two Callot beggars, Piranesi's *The Drawbridge* and Haden's *Challow Farm*. Each was levelled to black on white, with the plate number or signature painted out; provenance is in `STYLE_REFS.json` under `public_domain`.
-    - Rejected: Bresdin (too dense, and black after levelling), Rembrandt's *Monk in the Cornfield* (subject unsuitable), and DorÃ© paintings (grey).
+    - Rejected: Bresdin (too dense, and black after levelling), Rembrandt's *Monk in the Cornfield* (subject unsuitable), and Doré paintings (grey).
     - No usable gritty public-domain desert, ash or snow landscape was found; this is recorded as still open.
   - **Mapping v7:** 17 reference sets, in `docs/ART_DIRECTION.md`. Five monster kinds are assigned by ID, with a coverage check; every other family has its own set. `ref_set` is recorded per item, and ten items, one per set, lead the queue.
   - **Prompt audit:** all 270 prompts linted clean. Fixed: 32 dense-stipple brief details, the Elf longbow comparison, the chapter and cover composition duplication, the title line and the reference sentence. Still lifes have their own style line.
@@ -587,7 +587,7 @@ Validation: source preflight PASS (8 checks); art preflight READY; documentation
 - **One body size; rules note as a panel** (owner, 2026-10-12: "I actually think it makes more sense to set all body text (flavour and rules) to the same font size ... maybe 11pt? Also please change the ugly in line "rules note" format to be the same as example format but with a different tag. Also the tags on these should also be aligned to top left just like the rest of the tags").
   - All running text is 11 pt: rules, flavour, examples, notes, dossiers, entry text and power effects. Data text (tables, captions, stat strips, tags) keeps its own sizes.
   - Rules notes now use the example panel (`panel` component) with their own tag, set at the top left; the corner-iron note is retired.
-  - Justification limits tightened (word space 90â€“140%, letter spacing âˆ’0.5% to +2%) after squeezed flavour lines at 11 pt.
+  - Justification limits tightened (word space 90–140%, letter spacing −0.5% to +2%) after squeezed flavour lines at 11 pt.
   - List items (talents, packages, steps) are now unbreakable, after a Fighter talent split across columns.
   - Specimens re-rendered (PNG only, no build); all 15 pages fit.
 - **Heraldic marks, round 2** (owner, 2026-10-12: "Rerun the chapter arms and logo through nano banana 2.1 with more clear prompting that they are heraldry inspired logos to be in the grim dark fantasy medieval style black and white ink pen only. No grey, shading, or dense lining. They will serve as icons of a sort so they symbology in the chapter arms should be simplistic iconography."). Round 1 cost $3.39 (34 images, gemini-nano-banana-2.1). PROMPTS.json was rewritten as flat icon prompts: solid black or white only, plain white field, one simple silhouette charge, the same bold double-rimmed heater shield. `mark_generate.py` saves round 2 as `<ID>-r2-v<n>.png` beside round 1, and the ledger records the round.
