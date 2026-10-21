@@ -1,5 +1,5 @@
 // SPECIMEN — Player Aid 2, Monster AI (front), v2.
-// Wording condensed from RC512 §9.5 (A–F), §3.4 and C.8; not yet semantically reviewed.
+// Wording condensed from RC513 §9.5 (A–F), §3.4 and C.8; not yet semantically reviewed.
 #import "/typst/templates/system.typ": *
 
 #let M = 36pt
@@ -125,5 +125,5 @@
   grid(columns: (auto, 1fr, auto), column-gutter: 6pt, align: horizon,
     signature(s: 14pt),
     text(size: 9pt, weight: 700, tracking: 0.1em)[HERALDRY SKIRMISH · THE DYING LANDS],
-    text(size: 9pt, fill: ink3)[Rules RC512 · front · SPECIMEN])
+    text(size: 9pt, fill: ink3)[Rules RC513 · front · SPECIMEN])
 }))

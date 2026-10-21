@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "current": 512,
+  "current": 513,
   "revisions": [
     {
       "number": 484,
@@ -269,6 +269,48 @@
       ],
       "patch_file": "editorial/history/RC512.json",
       "patch_sha256": "e100da1c0dbcaa9ba5860c2a337d81fe5887504c6f4c9476a1e9258692ebe79a"
+    },
+    {
+      "number": 513,
+      "path": "source/Heraldry_RC513.md",
+      "sha256": "f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1",
+      "bytes": 1529651,
+      "parent_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd",
+      "created_at": "2026-10-21T22:33:01.541130+00:00",
+      "reason": "Label every Monster AI Step as ending or continuing the activation: 23 unlabelled whole-turn steps now end their activation; both Naga Hexscale steps corrected from continue to end (they otherwise made a second Venom Spit each turn); 9.5 D, C.8 and C.13 state that a continuing activation resumes at the Engaged step",
+      "authorization": "Owner instruction 2026-10-21: 'The 24 monster AI steps that don't explicitly state either they end the turn really ought to for consistency and clarity. Please read those 24 monster ai steps to determine if each one should be a monsters full time turn or if it should continue the turn as usual afterwards. Update the manuscript to reflect this. Check all the monster ai steps to ensure they are correctly sorted and labeled as ends turn or continue turn afterwards.'",
+      "patch_ids": [
+        "AI-01",
+        "AI-02",
+        "AI-03",
+        "AI-04",
+        "AI-05",
+        "AI-06",
+        "AI-07",
+        "AI-08",
+        "AI-09",
+        "AI-10",
+        "AI-11",
+        "AI-12",
+        "AI-13",
+        "AI-14",
+        "AI-15",
+        "AI-16",
+        "AI-17",
+        "AI-18",
+        "AI-19",
+        "AI-20",
+        "AI-21",
+        "AI-22",
+        "AI-23",
+        "AI-24",
+        "AI-25",
+        "AI-26",
+        "AI-27",
+        "AI-28"
+      ],
+      "patch_file": "editorial/history/RC513.json",
+      "patch_sha256": "b7515c766cb0affcebcd32b30e46f007c231c813f7d6341f37e9a21ab01c45be"
     }
   ]
 }

@@ -226,12 +226,12 @@
    "current": {
     "svg_sha256": "19cba43c60d75c03768c3380dda0e046bdfded36735af68740937296ecbcbd89",
     "caption_sha256": "600f954dc6577dfeec6d79eb5a3a19037f9cd56134184df898933b8b5144b980",
-    "rules_sha256": "a3cd2cb96a6b3399856d9d44f03781b3571998e89a6bb1b2e398d4df28b46bf4"
+    "rules_sha256": "fdbb14b717e825dffa01f6256d6401c78db1b570c4f61f45806ee6ec49f4ec24"
    },
    "reviewed": {
     "svg_sha256": "19cba43c60d75c03768c3380dda0e046bdfded36735af68740937296ecbcbd89",
     "caption_sha256": "600f954dc6577dfeec6d79eb5a3a19037f9cd56134184df898933b8b5144b980",
-    "rules_sha256": "a3cd2cb96a6b3399856d9d44f03781b3571998e89a6bb1b2e398d4df28b46bf4"
+    "rules_sha256": "fdbb14b717e825dffa01f6256d6401c78db1b570c4f61f45806ee6ec49f4ec24"
    },
    "reviewed_present": true,
    "stale": false,
@@ -247,12 +247,12 @@
    "current": {
     "svg_sha256": "dd34cc6439481947e8c1b734ec8b0f5925cb2b5d688612df3777d0e6cf7a4754",
     "caption_sha256": "716f96cb579ece9398a8ceeaf468786df9db73bec39f5f066ebdf4166b0c356d",
-    "rules_sha256": "11d8204b7f2eee09988b77a09ad52d1b0c23c8ee767f05783e9b43a6cf55c957"
+    "rules_sha256": "4496675c5fabca3ddfb00b73ee086e9bbf84d55c878e04d0e75c35e4b5769c6e"
    },
    "reviewed": {
     "svg_sha256": "dd34cc6439481947e8c1b734ec8b0f5925cb2b5d688612df3777d0e6cf7a4754",
     "caption_sha256": "716f96cb579ece9398a8ceeaf468786df9db73bec39f5f066ebdf4166b0c356d",
-    "rules_sha256": "11d8204b7f2eee09988b77a09ad52d1b0c23c8ee767f05783e9b43a6cf55c957"
+    "rules_sha256": "4496675c5fabca3ddfb00b73ee086e9bbf84d55c878e04d0e75c35e4b5769c6e"
    },
    "reviewed_present": true,
    "stale": false,
@@ -331,12 +331,12 @@
    "current": {
     "svg_sha256": "dc13f842db66a46bb609c1e18b34f9499c7d0f7c30513c84a1a383ab6d1aa0f5",
     "caption_sha256": "ae5fde33740332bc58851e5f222f4cb7d6a742c0b0bcd7b59081340c117c55d7",
-    "rules_sha256": "e231b4eb1d6060e5d715b223127ccd8c8c2c1346feb830de784a9a44fc557d93"
+    "rules_sha256": "402acc7434bdf6dfdbb2cf18cd40b11bd95fb3b0e3cd23180209257ea8b9c395"
    },
    "reviewed": {
     "svg_sha256": "dc13f842db66a46bb609c1e18b34f9499c7d0f7c30513c84a1a383ab6d1aa0f5",
     "caption_sha256": "ae5fde33740332bc58851e5f222f4cb7d6a742c0b0bcd7b59081340c117c55d7",
-    "rules_sha256": "e231b4eb1d6060e5d715b223127ccd8c8c2c1346feb830de784a9a44fc557d93"
+    "rules_sha256": "402acc7434bdf6dfdbb2cf18cd40b11bd95fb3b0e3cd23180209257ea8b9c395"
    },
    "reviewed_present": true,
    "stale": false,

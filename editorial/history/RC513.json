@@ -1,0 +1,286 @@
+{
+ "id": "AI-STEP-ENDINGS",
+ "status": "approved",
+ "patches": [
+  {
+   "id": "AI-01",
+   "status": "approved",
+   "monster": "Dire Bear",
+   "source_line": 8039,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "against a **Prone** target their attacks roll their base damage dice with **Advantage**.",
+   "replace": "against a **Prone** target their attacks roll their base damage dice with **Advantage**. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-02",
+   "status": "approved",
+   "monster": "Gorebeak Bear",
+   "source_line": 8085,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "they make one **Goring Beak** attack, dealing an additional **1d8 piercing damage**.",
+   "replace": "they make one **Goring Beak** attack, dealing an additional **1d8 piercing damage**. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-03",
+   "status": "approved",
+   "monster": "Werewolf",
+   "source_line": 8159,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "or the nearest visible enemy if none are **Bleeding**, then makes their attacks.",
+   "replace": "or the nearest visible enemy if none are **Bleeding**, then makes their attacks. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-04",
+   "status": "approved",
+   "monster": "Undead Sentinel",
+   "source_line": 8332,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "skip movement and attack the nearest enemy in **Reach**. Otherwise, advance on the nearest visible enemy and attack.",
+   "replace": "skip movement and attack the nearest enemy in **Reach**. Otherwise, advance on the nearest visible enemy and attack. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-05",
+   "status": "approved",
+   "monster": "Gargoyle",
+   "source_line": 8371,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "Uses their **Fly** Speed to reach the nearest visible enemy not already **Engaged** with an ally, then attacks.",
+   "replace": "Uses their **Fly** Speed to reach the nearest visible enemy not already **Engaged** with an ally, then attacks. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-06",
+   "status": "approved",
+   "monster": "Stone Sentinel",
+   "source_line": 8392,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "If no ally is on the battlefield, advance on the nearest visible enemy and attack if able.",
+   "replace": "If no ally is on the battlefield, advance on the nearest visible enemy and attack if able. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-07",
+   "status": "approved",
+   "monster": "Forsaken Archer",
+   "source_line": 8454,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "or the nearest visible enemy if none are **Cursed**.",
+   "replace": "or the nearest visible enemy if none are **Cursed**. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-08",
+   "status": "approved",
+   "monster": "Forsaken Duelist",
+   "source_line": 8491,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "they make their **Rapier** attacks using the normal **Engaged** target priorities.",
+   "replace": "they make their **Rapier** attacks using the normal **Engaged** target priorities. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-09",
+   "status": "approved",
+   "monster": "Ashen Revenant",
+   "source_line": 8532,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "if a legal path and target exist; otherwise they target the nearest visible enemy.",
+   "replace": "if a legal path and target exist; otherwise they target the nearest visible enemy. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-10",
+   "status": "approved",
+   "monster": "Vault Ooze",
+   "source_line": 8786,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "that is not already swallowed, then makes their **Pseudopod** attack.",
+   "replace": "that is not already swallowed, then makes their **Pseudopod** attack. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-11",
+   "status": "approved",
+   "monster": "Vrymk",
+   "source_line": 8809,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "their attacks this activation roll their base damage dice with **Advantage**, then they make their attacks.",
+   "replace": "their attacks this activation roll their base damage dice with **Advantage**, then they make their attacks. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-12",
+   "status": "approved",
+   "monster": "White Court Sentinel",
+   "source_line": 9182,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "the melee distance of **Greatshield Bash**. Otherwise, advance on the nearest visible enemy and attack.",
+   "replace": "the melee distance of **Greatshield Bash**. Otherwise, advance on the nearest visible enemy and attack. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-13",
+   "status": "approved",
+   "monster": "Fallen Paladin",
+   "source_line": 9220,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "the **Aura of Despair** affects every enemy they pass within **4\"** of during this move.",
+   "replace": "the **Aura of Despair** affects every enemy they pass within **4\"** of during this move. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-14",
+   "status": "approved",
+   "monster": "Frost Wyvern",
+   "source_line": 9280,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "not already **Engaged** with an ally, then makes their attacks.",
+   "replace": "not already **Engaged** with an ally, then makes their attacks. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-15",
+   "status": "approved",
+   "monster": "Skeletal Beast",
+   "source_line": 9506,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "they make one **Bone Jaws** attack with **Advantage** on its base damage die.",
+   "replace": "they make one **Bone Jaws** attack with **Advantage** on its base damage die. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-16",
+   "status": "approved",
+   "monster": "Tomb Guardian",
+   "source_line": 9638,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "If neither exists, advance on the nearest visible enemy and attack if able.",
+   "replace": "If neither exists, advance on the nearest visible enemy and attack if able. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-17",
+   "status": "approved",
+   "monster": "Orc",
+   "source_line": 7944,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "then makes their attacks if able. If no visible enemy has a legal route, this step is invalid.",
+   "replace": "then makes their attacks if able. This Monster then ends their activation. If no visible enemy has a legal route, this step is invalid.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-18",
+   "status": "approved",
+   "monster": "Elder Vrymk",
+   "source_line": 8901,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "the melee distance of their attacks, if able. If no such ally is on the battlefield, this step is invalid.",
+   "replace": "the melee distance of their attacks, if able. This Monster then ends their activation. If no such ally is on the battlefield, this step is invalid.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-19",
+   "status": "approved",
+   "monster": "White Court Executioner",
+   "source_line": 9259,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "moves toward and attacks the visible enemy with the lowest current HP. If no visible enemy has a legal route, this step is invalid.",
+   "replace": "moves toward and attacks the visible enemy with the lowest current HP. This Monster then ends their activation. If no visible enemy has a legal route, this step is invalid.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-20",
+   "status": "approved",
+   "monster": "Brass Golem",
+   "source_line": 9660,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "with the highest current HP, then attacks if able. If no visible enemy has a legal route, this step is invalid.",
+   "replace": "with the highest current HP, then attacks if able. This Monster then ends their activation. If no visible enemy has a legal route, this step is invalid.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-21",
+   "status": "approved",
+   "monster": "Mire Titan",
+   "source_line": 10107,
+   "decision": "Whole-turn move/attack step: label as ending the activation",
+   "find": "then makes their **Bite** if able. If no enemy is within the melee distance of **Tentacle**, this step is invalid.",
+   "replace": "then makes their **Bite** if able. This Monster then ends their activation. If no enemy is within the melee distance of **Tentacle**, this step is invalid.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-22",
+   "status": "approved",
+   "monster": "Blood Ape",
+   "source_line": 8061,
+   "decision": "Attack step: label as ending the activation; the fall-back to normal action is unchanged",
+   "find": "they make their **Pummel** attacks against the nearest **Engaged** enemy with **Advantage** this activation. Otherwise, they act normally.",
+   "replace": "they make their **Pummel** attacks against the nearest **Engaged** enemy with **Advantage** this activation, then end their activation. Otherwise, they act normally.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-23",
+   "status": "approved",
+   "monster": "Vaultfang",
+   "source_line": 8649,
+   "decision": "Already ends by removal from play; state it for consistency",
+   "find": "they make a **Drop** attack and are then removed from play. Otherwise, they do not activate.",
+   "replace": "they make a **Drop** attack and are then removed from play, ending their activation. Otherwise, they do not activate.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-24",
+   "status": "approved",
+   "monster": "Desert Naga",
+   "source_line": 9546,
+   "decision": "Mis-sorted: continuing let the Naga make a second Venom Spit through step 3 of the script every turn; every comparable ranged attack-and-rider step ends the activation",
+   "find": "that target must pass a **SPI Check** or become **Sleeping**. This Monster then continues their activation normally.",
+   "replace": "that target must pass a **SPI Check** or become **Sleeping**. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-25",
+   "status": "approved",
+   "monster": "Swamp Naga",
+   "source_line": 9942,
+   "decision": "Mis-sorted: continuing let the Naga make a second Venom Spit through step 3 of the script every turn; every comparable ranged attack-and-rider step ends the activation",
+   "find": "that target also becomes **Slowed** until the end of the round. This Monster then continues their activation normally.",
+   "replace": "that target also becomes **Slowed** until the end of the round. This Monster then ends their activation.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-26",
+   "status": "approved",
+   "monster": "9.5 D AI Step Abilities",
+   "source_line": 7668,
+   "decision": "Clarify where a continuing activation resumes (consistent with existing step order and the 9.6 movement rule)",
+   "find": "The first valid AI Step resolves, and the activation ends unless that ability explicitly says it continues. Remaining AI Steps are not evaluated once a valid AI Step has resolved.",
+   "replace": "The first valid AI Step resolves, and the activation ends unless that ability explicitly says it continues. Remaining AI Steps are not evaluated once a valid AI Step has resolved. A Monster that continues their activation proceeds to step 2 of the **Standard Monster AI Script**.",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-27",
+   "status": "approved",
+   "monster": "C.8 Monster AI Summary",
+   "source_line": 17860,
+   "decision": "Summary states the end/continue rule",
+   "find": "Resolve the first valid AI Step, if any. Otherwise, attack an **Engaged** enemy,",
+   "replace": "Resolve the first valid AI Step, if any; it ends the activation unless it says the Monster continues. If no AI Step is valid, or the Monster continues, attack an **Engaged** enemy,",
+   "expected_count": 1
+  },
+  {
+   "id": "AI-28",
+   "status": "approved",
+   "monster": "C.13 Monster AI Flow",
+   "source_line": 18458,
+   "decision": "Summary states where a continuing activation resumes",
+   "find": "Resolving a valid step ends the activation unless that step explicitly says it continues. If no step is valid, proceed to step 5.",
+   "replace": "Resolving a valid step ends the activation unless that step explicitly says it continues. If no step is valid, or the step continues the activation, proceed to step 5.",
+   "expected_count": 1
+  }
+ ]
+}

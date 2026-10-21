@@ -838,7 +838,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "a3cd2cb96a6b3399856d9d44f03781b3571998e89a6bb1b2e398d4df28b46bf4",
+   "rules_sha256": "fdbb14b717e825dffa01f6256d6401c78db1b570c4f61f45806ee6ec49f4ec24",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -903,6 +903,12 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc513_review": {
+    "reviewer": "Claude",
+    "date": "2026-10-21",
+    "note": "RC513 delta review 2026-10-21 (Claude, source comparison and rendered PNG inspection): the only change to the dependent sections is one added sentence in 9.5 D, 'A Monster that continues their activation proceeds to step 2 of the Standard Monster AI Script.' FIG-11 already states that the activation ends unless the ability says it continues; it does not draw the resume point, which the rule now names (optional enhancement, not an error). SVG and caption unchanged; no correction required.",
+    "rendered_evidence": "Typst-rendered PNGs of figures/out/FIG-11.svg, FIG-12.svg and FIG-16.svg (local build/aids)"
    }
   },
   {
@@ -942,7 +948,7 @@
      "review_report": "production/qa/figure-review-core-rc493.md"
     }
    ],
-   "rules_sha256": "11d8204b7f2eee09988b77a09ad52d1b0c23c8ee767f05783e9b43a6cf55c957",
+   "rules_sha256": "4496675c5fabca3ddfb00b73ee086e9bbf84d55c878e04d0e75c35e4b5769c6e",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
     "date": "2026-10-09",
@@ -1011,6 +1017,12 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc513_review": {
+    "reviewer": "Claude",
+    "date": "2026-10-21",
+    "note": "RC513 delta review 2026-10-21 (Claude, source comparison and rendered PNG inspection): the only change to the dependent sections is one added sentence in 9.5 D, 'A Monster that continues their activation proceeds to step 2 of the Standard Monster AI Script.' FIG-12 depicts 9.5 A, E and F (target choice, ties, Blocked Route, Movement Priorities), which are unchanged. SVG and caption unchanged; no correction required.",
+    "rendered_evidence": "Typst-rendered PNGs of figures/out/FIG-11.svg, FIG-12.svg and FIG-16.svg (local build/aids)"
    }
   },
   {
@@ -1464,7 +1476,7 @@
      "fix": "None."
     }
    ],
-   "rules_sha256": "e231b4eb1d6060e5d715b223127ccd8c8c2c1346feb830de784a9a44fc557d93",
+   "rules_sha256": "402acc7434bdf6dfdbb2cf18cd40b11bd95fb3b0e3cd23180209257ea8b9c395",
    "reviewed_at": "2026-10-10",
    "rc487_review": {
     "reviewer": "Codex; source comparison and actual Typst-render inspection (same author of current diagram edits)",
@@ -1564,6 +1576,12 @@
      "Model repair-author review, not independent human proof or glyph-by-glyph proof.",
      "Physical print NOT TESTED."
     ]
+   },
+   "rc513_review": {
+    "reviewer": "Claude",
+    "date": "2026-10-21",
+    "note": "RC513 delta review 2026-10-21 (Claude, source comparison and rendered PNG inspection): the only change to the dependent sections is one added sentence in 9.5 D, 'A Monster that continues their activation proceeds to step 2 of the Standard Monster AI Script.' FIG-16's Entangling Roots step still ends the activation, and the scenario text is unchanged. SVG and caption unchanged; no correction required.",
+    "rendered_evidence": "Typst-rendered PNGs of figures/out/FIG-11.svg, FIG-12.svg and FIG-16.svg (local build/aids)"
    }
   },
   {
@@ -7862,6 +7880,7 @@
    }
   }
  },
- "source": "source/Heraldry_RC512.md",
- "source_sha256": "816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd"
+ "source": "source/Heraldry_RC513.md",
+ "source_sha256": "f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1",
+ "rc513_delta_review": "2026-10-21: FIG-11, FIG-12 and FIG-16 re-reviewed after RC513 changed 9.5 D; all PASS without figure changes."
 }
