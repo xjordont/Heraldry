@@ -8,17 +8,16 @@ A single subject drawn whole, isolated on blank ivory-white paper: only a small 
 Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
 
 COMPOSITION
-Full figure in three-quarter view, one arm raised holding a lit torch up and forward, the other hand holding a short club low, head tilted as if inspecting something just out of frame.
+Full figure in three-quarter view, one arm raised holding a lit torch up and forward, the other hand holding a short club low, head tilted inspecting something just out of frame. Tonal key: mid-pale robe, dark satchel. Silhouette: a small column with one raised torch.
 Single full-length Hero standing alone, drawn whole from the top of the head to the soles of the feet, in a ready three-quarter pose that shows the listed ancestry, class, background and every listed item of equipment. Borderless and isolated on blank white paper with no background of any kind: only a few sparse strokes of ground and a short cast shadow directly under the feet.
 
 SUBJECT DETAILS
-* Child-sized, adult-faced, large nose, one eye magnified by a flip-down brass-rimmed lens
-* Long layered scholar's robe with a scuffed, dust-grey hem and ink-stained sleeves
+* Child-sized, adult-faced, large nose, one eye magnified by a flip-down brass-rimmed lens, a close skullcap
+* Ankle-length belted scholar's robe with long sleeves, clean straight hem with a few dust smudges at the bottom only
 * Plain short club in one hand
-* A lit torch in the other hand, drawn as a short stick with a simple flame in a few broken lines
+* A lit torch in the other hand, a short stick with a simple flame in a few bold lines
 * A second unlit torch stuck through the belt
-* A heavy satchel of books and rolled notes on a strap across the chest
-* Soft cap or bare head with thin wispy hair
+* A heavy book satchel on a strap across the chest, with a clasp
 Must be shown exactly:
 * A short club in one hand
 * A lit torch in the other hand
@@ -27,7 +26,7 @@ Must be shown exactly:
 
 ARTISTIC STYLE AND ATMOSPHERE
 Curious, scholarly, unwisely close to the dark.
-Ink it like gritty old-school rulebook monster and character art: a bold, rough brush contour of uneven weight, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag where form turns from light into shadow. High contrast, with few in-between textures; small human imperfections such as broken lines and dry-brush streaks are welcome. It reads as a strong silhouette first and detail second: no stippled skin, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn, scarred and weathered. It must look drawn by hand with brush, pen and ink, not generated or rendered.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
@@ -35,12 +34,16 @@ Do not draw:
 * No robot or steampunk goggles beyond one lens.
 * No spell effects.
 * Do not give it a staff.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
-Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be gritty, bold and readable at small size and print crisply in pure black ink, like original ink art in an old-school fantasy rulebook.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
 The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.

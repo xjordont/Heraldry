@@ -1,6 +1,6 @@
 GALLOWTUSK - GRITTY OLD-SCHOOL INK ILLUSTRATION
 
-Create a gritty, old-school black-and-white ink illustration of Gallowtusk, an Orc Fighter with a Vagabond background: a medium-sized, very powerful roving sellsword, named for the heavy tusks and the worn rope loop at the belt, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Gallowtusk, an Orc Fighter with a Vagabond background: a medium-sized, very powerful roving sellsword, named for the heavy tusks and the rope loop at the belt, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 
 FORMAT AND ISOLATION
 Tall 2:3 portrait composition. Pure black ink on warm ivory-white paper, with no colour, lettering, borders, or decorative framing.
@@ -8,38 +8,43 @@ A single subject drawn whole, isolated on blank ivory-white paper: only a small 
 Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
 
 COMPOSITION
-Full figure in three-quarter view mid-stride, a great falchion held two-handed across the body in a low sweeping ready, blade angled outward.
+Full figure in three-quarter view mid-stride, a great falchion held two-handed across the body in a low sweeping ready, blade angled outward. Tonal key: bare skin and bright blade against black trousers and boots. Silhouette: a long diagonal blade.
 Single full-length Hero standing alone, drawn whole from the top of the head to the soles of the feet, in a ready three-quarter pose that shows the listed ancestry, class, background and every listed item of equipment. Borderless and isolated on blank white paper with no background of any kind: only a few sparse strokes of ground and a short cast shadow directly under the feet.
 
 SUBJECT DETAILS
-* Huge shoulders, thick neck, grey scarred skin, heavy lower tusks, one tusk chipped
-* Great falchion: a very large single-edged, forward-weighted blade with a curved back, long two-handed grip
-* Ring shirt (mail of small rings) over a patched road coat, sleeves torn
+* Huge shoulders, thick neck, scarred skin, heavy lower tusks with one chipped, shaved scalp with a single topknot
+* Great falchion: a very large single-edged, forward-weighted blade with a curved back and a long two-handed grip, kept bold and simple
+* Ring shirt with short sleeves, drawn as a ringed texture on the torso only, bare scarred forearms
 * Handaxe hung at the belt on a loop
 * A roll of bandages tied to the belt
-* A short length of frayed rope looped and knotted at the belt, a hint of the gallows
-* Vagabond's road gear: patched travelling cloak flung back, a knotted cloth bundle slung across the back, worn-through boots
+* A loop of plain rope hanging from the belt
+* Vagabond: a single bundle strapped across the back with two straps, a wide belt, tall boots, baggy trousers
+* No cloak and no coat skirts: the outline is bare arms and a short body
 Must be shown exactly:
 * Great falchion held with both hands
 * Handaxe at the belt
-* Ring shirt of small linked rings
+* Ring shirt
 * Roll of bandages at the belt
 
 ARTISTIC STYLE AND ATMOSPHERE
 Road-worn menace held under control.
-Ink it like gritty old-school rulebook monster and character art: a bold, rough brush contour of uneven weight, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag where form turns from light into shadow. High contrast, with few in-between textures; small human imperfections such as broken lines and dry-brush streaks are welcome. It reads as a strong silhouette first and detail second: no stippled skin, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn, scarred and weathered. It must look drawn by hand with brush, pen and ink, not generated or rendered.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
-* Not a raider: no snarl, no trophies, no ragged furs.
+* Not a raider: no snarl, no trophies, no furs.
 * No horned helm or fantasy barbarian cliche.
 * No shield.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
-Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be gritty, bold and readable at small size and print crisply in pure black ink, like original ink art in an old-school fantasy rulebook.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
 The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.

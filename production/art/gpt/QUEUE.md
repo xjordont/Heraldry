@@ -4,7 +4,7 @@ Follow `production/art/gpt/INSTRUCTIONS.md`. Attach each item's own references (
 
 | Set | Reference images |
 |---|---|
-| A | `assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg`<br>`assets/art/style/STYLE-REF-41-callot-beggar-cloak.jpg`<br>`assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg`<br>`assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg`<br>`assets/art/style/STYLE-REF-61-herbalist-kneeling.jpg` |
+| A | `assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg`<br>`assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg`<br>`assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg`<br>`assets/art/style/STYLE-REF-61-herbalist-kneeling.jpg`<br>`assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg` |
 
 | # | ID | Subject | Size | Set | Tries | Prompt |
 |---|---|---|---|---|---|---|

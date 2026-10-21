@@ -8,39 +8,43 @@ A single subject drawn whole, isolated on blank ivory-white paper: only a small 
 Leave at least 8% clean white margin on every side; nothing touches or is cropped by the image edge. The silhouette must read clearly when printed about two inches wide.
 
 COMPOSITION
-Full figure in three-quarter view standing guard, heater shield half-raised on the left arm, mace lowered in the right hand, head bent in watchfulness toward unseen wounded behind.
+Full figure in three-quarter view standing guard, heater shield half-raised on the left arm, mace lowered in the right hand, head bent toward unseen wounded behind. Tonal key: a large pale surcoat. Silhouette: a tall bell-shaped robe with a shield at one side.
 Single full-length Hero standing alone, drawn whole from the top of the head to the soles of the feet, in a ready three-quarter pose that shows the listed ancestry, class, background and every listed item of equipment. Borderless and isolated on blank white paper with no background of any kind: only a few sparse strokes of ground and a short cast shadow directly under the feet.
 
 SUBJECT DETAILS
-* Very broad, short, thick build; braided beard with a plain iron ring
-* Ring shirt (mail of linked rings) under a plain habit-like surcoat with a single bare circle mark, no lettering
-* Hood thrown back over the shoulders, a close-fitting mail coif beneath
-* Heater shield strapped to the left forearm, dented and sooted as if from a hearth
+* Very broad, short, thick build; long braided beard with a plain iron ring, a close mail coif with the hood thrown back
+* Ring shirt visible at the sleeves and collar under a plain ankle-length white surcoat with a single bare circle on the chest, hems straight and clean
+* Heater shield on the left arm with a plain pale face and a heavy black rim
 * Flanged mace in the right hand
-* A small hand-bell hung from the belt by a cord, clapper still
+* A small hand-bell hung from the belt by a cord, drawn clearly in silhouette
 * Two rolls of bandages tucked into the belt
+* No cloak
 Must be shown exactly:
 * Mace in the right hand
 * Heater shield on the left arm
-* Ring shirt under a surcoat
+* Ring shirt at the sleeves under a surcoat
 * Small bell hanging at the belt
 * Two bandage rolls at the belt
 
 ARTISTIC STYLE AND ATMOSPHERE
 Gentle, grim, the warm coal in a cold line.
-Ink it like gritty old-school rulebook monster and character art: a bold, rough brush contour of uneven weight, heavy solid-black shadow shapes, and scratchy hatching or dry-brush drag where form turns from light into shadow. High contrast, with few in-between textures; small human imperfections such as broken lines and dry-brush streaks are welcome. It reads as a strong silhouette first and detail second: no stippled skin, no uniform micro-texture, no over-rendered surfaces. Light falls from the upper left. Believable anatomy, armour construction, weapon grips and materials, worn, scarred and weathered. It must look drawn by hand with brush, pen and ink, not generated or rendered.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
 * Not the Fighter: no scarred face, no helm, no dagger.
-* No glowing hands, halo or holy symbol lettering.
+* No halo or holy symbol lettering.
 * Not a comic dwarf.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
-Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, painterly shading, smooth gradients, grey wash or grey ink tones, airbrush, colour, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions and cropped limbs. The finished artwork should be gritty, bold and readable at small size and print crisply in pure black ink, like original ink art in an old-school fantasy rulebook.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
 The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.

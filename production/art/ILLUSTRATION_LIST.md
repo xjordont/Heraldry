@@ -2307,75 +2307,88 @@ Do not draw:
 
 Printed 1.9 in wide · aspect 2:3. Family framing: Single full-length Hero standing alone, drawn whole from the top of the head to the soles of the feet, in a ready three-quarter pose that shows the listed ancestry, class, background and every listed item of equipment. Borderless and isolated on blank white paper with no background of any kind: only a few sparse strokes of ground and a short cast shadow directly under the feet.
 
-### 1. Ironscar
+### 1. Ironscar ✗
 
 `ART-HER-IRONSCAR`
 
 ```text
 IRONSCAR - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Ironscar, a Dwarf Fighter with a Soldier background: a medium-sized, very broad and heavy shield-wall veteran, named for the old iron-hard scar that splits the face, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Ironscar, a Dwarf Fighter with a Soldier background: a medium-sized, very broad, heavy shield-wall veteran, named for the old iron-hard scar that splits the face, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view, braced low behind a heater shield held forward on the left arm, mace held back at the hip in the right hand, ready to strike over the shield rim.
+Full figure in three-quarter view, braced low behind a heater shield held forward on the left arm, mace drawn back at the hip in the right hand. Tonal key: dark shield and helm against a pale coat. Silhouette: a wide square block.
 SUBJECT DETAILS
-* Very broad shoulders, short thick limbs, stocky frame, human height but far heavier in build
-* A deep old scar running from brow to jaw through one cheek and into the braided beard, drawn as a pale ridge cut through the hatching
-* Mail shirt (linked rings) over a padded arming coat, patched with a few bright riveted iron plates where it was once torn
-* Dented open kettle helm with a brim, no visor
-* Heater shield (kite-shaped, flat top) scarred and dented, strapped to the left forearm
-* Plain flanged mace with a short wooden haft in the right hand
-* Dagger sheathed at the belt, hilt visible
-* Soldier's discipline: boots planted wide, weight forward
+* Very broad shoulders, short thick limbs, human height but far heavier in build
+* A deep old scar from brow to jaw through one cheek and the braided beard, drawn as one bold pale line
+* Mail shirt (linked rings) drawn as a simple ringed texture on the chest and upper arms only, over a plain padded coat
+* Dented open kettle helm with a wide brim, no visor
+* Heater shield: flat-topped and pointed at the foot, its face divided into a solid black upper half and a plain white lower half, with a few dents
+* Plain flanged mace with a short haft in the right hand
+* Dagger sheathed at the belt, hilt clearly visible
+* No cloak and no surcoat: bare mail and coat, belt and plain boots
 Must be shown exactly:
 * One mace (single-handed) and one heater shield, both visibly held
 * A dagger sheathed at the belt
 * Mail shirt of linked rings
 Stoic, unbreakable, the last stone of the line.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not a plate knight: mail shirt only.
 * No horned helmet.
 * Not a comic dwarf: serious proportions, no oversized nose.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 2. Gallowtusk
+### 2. Gallowtusk ✗
 
 `ART-HER-GALLOWTUSK`
 
 ```text
 GALLOWTUSK - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Gallowtusk, an Orc Fighter with a Vagabond background: a medium-sized, very powerful roving sellsword, named for the heavy tusks and the worn rope loop at the belt, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Gallowtusk, an Orc Fighter with a Vagabond background: a medium-sized, very powerful roving sellsword, named for the heavy tusks and the rope loop at the belt, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view mid-stride, a great falchion held two-handed across the body in a low sweeping ready, blade angled outward.
+Full figure in three-quarter view mid-stride, a great falchion held two-handed across the body in a low sweeping ready, blade angled outward. Tonal key: bare skin and bright blade against black trousers and boots. Silhouette: a long diagonal blade.
 SUBJECT DETAILS
-* Huge shoulders, thick neck, grey scarred skin, heavy lower tusks, one tusk chipped
-* Great falchion: a very large single-edged, forward-weighted blade with a curved back, long two-handed grip
-* Ring shirt (mail of small rings) over a patched road coat, sleeves torn
+* Huge shoulders, thick neck, scarred skin, heavy lower tusks with one chipped, shaved scalp with a single topknot
+* Great falchion: a very large single-edged, forward-weighted blade with a curved back and a long two-handed grip, kept bold and simple
+* Ring shirt with short sleeves, drawn as a ringed texture on the torso only, bare scarred forearms
 * Handaxe hung at the belt on a loop
 * A roll of bandages tied to the belt
-* A short length of frayed rope looped and knotted at the belt, a hint of the gallows
-* Vagabond's road gear: patched travelling cloak flung back, a knotted cloth bundle slung across the back, worn-through boots
+* A loop of plain rope hanging from the belt
+* Vagabond: a single bundle strapped across the back with two straps, a wide belt, tall boots, baggy trousers
+* No cloak and no coat skirts: the outline is bare arms and a short body
 Must be shown exactly:
 * Great falchion held with both hands
 * Handaxe at the belt
-* Ring shirt of small linked rings
+* Ring shirt
 * Roll of bandages at the belt
 Road-worn menace held under control.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
-* Not a raider: no snarl, no trophies, no ragged furs.
+* Not a raider: no snarl, no trophies, no furs.
 * No horned helm or fantasy barbarian cliche.
 * No shield.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 3. Blackknife
+### 3. Blackknife ✗
 
 `ART-HER-BLACKKNIFE`
 
@@ -2383,32 +2396,38 @@ Do not draw:
 BLACKKNIFE - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Blackknife, a Human Rogue with a Smuggler background: a medium-sized, lean, quick-handed runner of false-bottomed cargo, named for the blackened blade they carry, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view, a low silent stalking step, blackened dagger held in a reverse grip close to the hip, head turned over the shoulder.
+Full figure in three-quarter view, a low silent stalking step, blackened dagger held in a reverse grip close to the hip, head turned over the shoulder. Tonal key: nearly solid black coat with a few white highlights. Silhouette: a narrow dark column.
 SUBJECT DETAILS
-* Lean, wiry human build, hair cropped, watchful narrowed eyes
-* Dagger with a blade blackened with soot, shown as a solid black blade with a thin white edge line
-* Leather coat with a turned-up collar, patched at the elbows and cut with many small hidden inner pockets
+* Lean, wiry build, cropped hair, narrowed watchful eyes, a flat cap pulled low
+* Dagger with a solid black blade and a thin white edge line
+* Knee-length dark leather coat with a turned-up collar and a row of plain buttons, intact and neatly hemmed, drawn mostly as a solid black shape with a few white fold lines
 * A bandolier across the chest holding two throwing knives with leather-wrapped grips
-* Roll of lockpicks tucked in a belt pouch with a few picks showing
-* Soft-soled boots; a false-bottomed satchel with a tiny hinge slung behind the hip
+* Roll of lockpicks in a belt pouch with a few picks showing
+* Soft-soled boots; a small false-bottomed satchel at the hip
 Must be shown exactly:
 * Dagger in reverse grip
 * Two throwing knives on a bandolier
 * Lockpick roll at the belt
 * Leather coat
 Quiet, practised, always one step from the door.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Assassin: no hood, no venom vial, no ambush crouch.
 * No mask clichés.
 * Do not show a drawn rapier.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 4. Sootfinger
+### 4. Sootfinger ✗
 
 `ART-HER-SOOTFINGER`
 
@@ -2416,13 +2435,13 @@ Do not draw:
 SOOTFINGER - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Sootfinger, a Goblin Rogue with a Pauper background: a small-sized, child-sized, quick-footed fencer and treasure runner, named for the soot-black fingers, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view in a springing en garde, rapier extended forward in one hand, the other hand trailing a thin wisp of smoke from a tube.
+Full figure in three-quarter view in a springing en garde, rapier extended forward in one hand, the other hand trailing a thin wisp of smoke from a short tube. Tonal key: light shirt, dark waistcoat. Silhouette: a small figure with one long diagonal blade.
 SUBJECT DETAILS
-* Child-sized body, long pointed ears, large bright eyes, wide mouth showing a tooth
-* Fingers and wrists smeared black with soot, soot smudges on the face and cuffs
+* Child-sized body, long pointed ears, large bright eyes, wide mouth showing a tooth, a knotted headscarf
+* Fingers, wrists and one cheek drawn solid black as soot
 * Rapier with a swept hilt in the leading hand; dagger tucked into the belt at the back
-* Oversized leather coat clearly handed down, sleeves rolled, patched in several places
-* Rope-tied cloth shoes, trousers patched at the knees
+* A short leather waistcoat over a plain shirt with the sleeves rolled to the elbow, one neat square patch, hems neat
+* Plain short trousers and bare lower legs with rope-tied cloth shoes
 * Roll of lockpicks at the belt, a short smokestick (a tube with a trailing wisp) in the off hand
 Must be shown exactly:
 * Rapier in the leading hand
@@ -2430,18 +2449,24 @@ Must be shown exactly:
 * Lockpick roll at the belt
 * Smokestick with a thin wisp of smoke
 Cheeky, hungry, light on the feet.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Goblin monster: no notched blade, no hunched malicious snarl, no crude trophies.
-* Not a rag-wearing raider: patched but kept clothing.
+* Not a rag-wearing raider: clean, mended clothing.
 * Do not make it toy-like or cartoonish.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 5. Hearthbell
+### 5. Hearthbell ✗
 
 `ART-HER-HEARTHBELL`
 
@@ -2449,71 +2474,82 @@ Do not draw:
 HEARTHBELL - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Hearthbell, a Dwarf Cleric with a Soldier background: a medium-sized, broad, steady field chaplain of the shield line, named for the small bell at the belt, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view standing guard, heater shield half-raised on the left arm, mace lowered in the right hand, head bent in watchfulness toward unseen wounded behind.
+Full figure in three-quarter view standing guard, heater shield half-raised on the left arm, mace lowered in the right hand, head bent toward unseen wounded behind. Tonal key: a large pale surcoat. Silhouette: a tall bell-shaped robe with a shield at one side.
 SUBJECT DETAILS
-* Very broad, short, thick build; braided beard with a plain iron ring
-* Ring shirt (mail of linked rings) under a plain habit-like surcoat with a single bare circle mark, no lettering
-* Hood thrown back over the shoulders, a close-fitting mail coif beneath
-* Heater shield strapped to the left forearm, dented and sooted as if from a hearth
+* Very broad, short, thick build; long braided beard with a plain iron ring, a close mail coif with the hood thrown back
+* Ring shirt visible at the sleeves and collar under a plain ankle-length white surcoat with a single bare circle on the chest, hems straight and clean
+* Heater shield on the left arm with a plain pale face and a heavy black rim
 * Flanged mace in the right hand
-* A small hand-bell hung from the belt by a cord, clapper still
+* A small hand-bell hung from the belt by a cord, drawn clearly in silhouette
 * Two rolls of bandages tucked into the belt
+* No cloak
 Must be shown exactly:
 * Mace in the right hand
 * Heater shield on the left arm
-* Ring shirt under a surcoat
+* Ring shirt at the sleeves under a surcoat
 * Small bell hanging at the belt
 * Two bandage rolls at the belt
 Gentle, grim, the warm coal in a cold line.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Fighter: no scarred face, no helm, no dagger.
-* No glowing hands, halo or holy symbol lettering.
+* No halo or holy symbol lettering.
 * Not a comic dwarf.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 6. Embervow
+### 6. Embervow ✗
 
 `ART-HER-EMBERVOW`
 
 ```text
 EMBERVOW - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Embervow, a Demonborn Cleric with a Noble background: a medium-sized, composed, fallen-noble bodyguard-priest, named for the burnt-down vow cord at the wrist, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Embervow, a Demonborn Cleric with a Noble background: a medium-sized, composed, fallen-noble bodyguard-priest, named for the burnt vow cord at the wrist, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view, upright and unhurried, quarterstaff held two-handed and angled across the body in a guarding stance, one flask ready at the belt.
+Full figure in three-quarter view, upright and unhurried, quarterstaff held two-handed and angled across the body in a guarding stance. Tonal key: dark coat with pale trim. Silhouette: a tall thin vertical with a curled tail.
 SUBJECT DETAILS
-* Slim, upright, long-limbed build; small curved horns breaking through swept-back hair
-* A slender barbed tail emerging from under the cloak hem
-* Eyes drawn as dark rings with a tiny white point, unlit
-* Quilted gambeson with faded noble trim along cuffs and hem, fine stitching, once-rich and now worn
-* Long cloak with a heavy clasp, embroidered hem with no readable device
-* Quarterstaff with iron-free wooden ends, worn smooth by use
+* Slim, upright, long-limbed build; two clearly drawn curved horns rising from swept-back hair, bold in silhouette
+* A slender barbed tail curling out from behind and clear of the hem, bold in silhouette
+* Eyes drawn as dark rings with a tiny white point
+* Fitted quilted gambeson cut like a long frock coat, high collar, a clean row of vertical quilting lines and a pale braided trim along the cuffs and front, hems straight
+* No cloak: the coat is the whole outer garment
+* Quarterstaff with plain wooden ends
 * Two stoppered holy water flasks hanging at the belt
-* A knotted vow cord at the wrist, its ends burnt black and frayed
-* Signet ring on one finger
+* A knotted vow cord at the wrist with burnt-black ends, a signet ring
 Must be shown exactly:
 * Quarterstaff held with both hands
-* Gambeson
+* Quilted gambeson
 * Two stoppered flasks at the belt
 * Horns and a tail
 Burnt pride, cold devotion.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * No bat wings, hooves or fiery body: a person with horns and a tail.
 * No fire, halo or glowing sigil.
 * Not an Imp or Demon monster.
 * No sword.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 7. Graveglass
+### 7. Graveglass ✗
 
 `ART-HER-GRAVEGLASS`
 
@@ -2521,34 +2557,39 @@ Do not draw:
 GRAVEGLASS - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Graveglass, a Gnome Wizard with a Scholar background: a small-sized, child-sized, long-range arcane scholar, named for the lens of glass and the tomb dust on the hem, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view, one arm raised holding a lit torch up and forward, the other hand holding a short club low, head tilted as if inspecting something just out of frame.
+Full figure in three-quarter view, one arm raised holding a lit torch up and forward, the other hand holding a short club low, head tilted inspecting something just out of frame. Tonal key: mid-pale robe, dark satchel. Silhouette: a small column with one raised torch.
 SUBJECT DETAILS
-* Child-sized, adult-faced, large nose, one eye magnified by a flip-down brass-rimmed lens
-* Long layered scholar's robe with a scuffed, dust-grey hem and ink-stained sleeves
+* Child-sized, adult-faced, large nose, one eye magnified by a flip-down brass-rimmed lens, a close skullcap
+* Ankle-length belted scholar's robe with long sleeves, clean straight hem with a few dust smudges at the bottom only
 * Plain short club in one hand
-* A lit torch in the other hand, drawn as a short stick with a simple flame in a few broken lines
+* A lit torch in the other hand, a short stick with a simple flame in a few bold lines
 * A second unlit torch stuck through the belt
-* A heavy satchel of books and rolled notes on a strap across the chest
-* Soft cap or bare head with thin wispy hair
+* A heavy book satchel on a strap across the chest, with a clasp
 Must be shown exactly:
 * A short club in one hand
 * A lit torch in the other hand
 * A second torch at the belt
 * A flip-down lens at one eye
 Curious, scholarly, unwisely close to the dark.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * No pointy star-covered hat.
 * No robot or steampunk goggles beyond one lens.
 * No spell effects.
 * Do not give it a staff.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 8. Starcinder
+### 8. Starcinder ✗
 
 `ART-HER-STARCINDER`
 
@@ -2556,33 +2597,39 @@ Do not draw:
 STARCINDER - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Starcinder, an Elf Wizard with an Artisan background: a medium-sized, slender craftsperson-mage, named for the cut-star inlays and singed sleeves, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view, upright and balanced, a fine masterwork quarterstaff held two-handed across the body with the lower end braced, singed sleeves swept back.
+Full figure in three-quarter view, upright and balanced, a fine masterwork quarterstaff held two-handed with the lower end braced. Tonal key: pale robe, dark apron. Silhouette: a very tall slim vertical with a staff.
 SUBJECT DETAILS
-* Tall, slim elf with long pointed ears and a calm, exact expression
-* Masterwork quarterstaff: straight-grained wood with fine inlaid star shapes and brass-free tips, noticeably better made than a common staff
-* Long robe cinched under a leather artisan's apron with tool loops and a few small tools
-* Sleeves singed black at the cuffs; small burn marks on the apron
-* A roll of bandages tucked into the apron pocket
-* Callused, capable hands; hair tied back with a cord
+* Tall, slim elf with long pointed ears, a calm exact expression, hair tied back with a cord
+* Masterwork quarterstaff: straight-grained, with a row of small inlaid five-point star shapes and fine carved ends, clearly better made than a common staff
+* Wide-sleeved ankle-length robe, plain and pale, with sleeve cuffs blackened solid at the edge as if singed (no ragged edges)
+* A dark leather artisan's apron over the robe with a few tool loops and a small mallet
+* A roll of bandages in the apron pocket
+* Bare headed
 Must be shown exactly:
 * Masterwork quarterstaff held with both hands
 * Artisan's apron with tool loops
 * Bandage roll in the apron
 * Pointed elf ears
 Patient craft meeting dangerous fire.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Sorcerer: no wild windblown hair.
 * No pointy star-covered hat.
 * No spell effects, fire or ice drawn.
 * Not a court elf: no ornate finery.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 9. Redhand
+### 9. Redhand ✗
 
 `ART-HER-REDHAND`
 
@@ -2590,101 +2637,119 @@ Do not draw:
 REDHAND - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Redhand, an Orc Berserker with a Farmer background: a medium-sized, huge, field-hardened farmhand turned frenzied axeman, named for the painted handprint on the chest, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view mid-charge, mouth open in a roar, a greataxe raised two-handed over the shoulder ready to chop down.
+Full figure in three-quarter view mid-charge, mouth open in a roar, a greataxe raised two-handed over the shoulder ready to chop down. Tonal key: bright bare arms and baggy pale trousers, dark cuirass. Silhouette: a wide triangle with a raised axe.
 SUBJECT DETAILS
-* Huge shoulders and a thick neck, grey scarred skin, heavy lower tusks, wild matted hair
-* Greataxe: a long haft and a heavy broad single bit, held in both hands
+* Huge shoulders and thick neck, scarred skin, heavy lower tusks, wild hair tied in a thick tail
+* Greataxe: a long haft and a heavy broad single bit, held in both hands, kept bold and simple
 * Hide cuirass (boiled hide breastplate) over bare scarred arms
-* A large handprint painted in solid black across the chest, fingers spread, the single dark mark on the cuirass
-* Homespun trousers bound at the shin with straw rope, heavy farm boots caked with earth
+* A large handprint painted solid black across the chest, fingers spread
+* Baggy homespun trousers tied at the shin with straw rope, heavy farm boots
 * Dagger at the belt
-* Corded, callused forearms from years of plough and scythe
+* No cloak
 Must be shown exactly:
 * Greataxe held with both hands
 * Hide cuirass
 * A dagger at the belt
 * A black handprint on the chest
 Plain-spoken rage, a farm's patience finally spent.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Orc monster: no trophies, no horned helm.
 * No gore.
 * Do not give the figure a shield.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 10. Cairnwrath
+### 10. Cairnwrath ✗
 
 `ART-HER-CAIRNWRATH`
 
 ```text
 CAIRNWRATH - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Cairnwrath, a Dwarf Berserker with a Nomad background: a medium-sized, durable executioner of the open country, named for the small stacked cairn stones tied to the belt, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Cairnwrath, a Dwarf Berserker with a Nomad background: a medium-sized, durable executioner of the open country, named for the small stacked stones tied to the belt, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view, planted wide and leaning into a roar, battleaxe held high in both hands overhead, ready to chop down.
+Full figure in three-quarter view, planted wide and leaning into a roar, battleaxe held high in both hands overhead. Tonal key: dark mantle and beard, pale tunic. Silhouette: a squat triangle with an overhead axe.
 SUBJECT DETAILS
-* Very broad, short, thick build; thick braided beard bound with cords and small stones
+* Very broad, short, thick build; thick beard braided in two ropes bound with cords and small stones
 * Battleaxe: a single broad bit on a medium haft, gripped two-handed
-* Hide cuirass (boiled hide breastplate) over a felt tunic, bare scarred forearms
+* Hide cuirass over a plain felt tunic, bare scarred forearms
 * Dagger at the belt
-* A string of small flat stones stacked and tied to the belt like a miniature cairn
-* Nomad's felt cloak flung back, a rolled felt shelter bundle bound with cords across the back
-* Hard, tall travelling boots wrapped with cord
+* A string of small flat stones stacked and tied to the belt like a miniature cairn, drawn clearly
+* A thick felt mantle over the shoulders only, cleanly cut with a simple stitched zigzag border, no ragged edge, and a rolled felt shelter bundle across the back
+* Hard tall boots wrapped with cord
 Must be shown exactly:
 * Battleaxe held with both hands
 * Hide cuirass
 * A dagger at the belt
 * A small cairn of tied stones at the belt
 Implacable, patient, the verdict walking in.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Fighter: no shield, no mail, no helm.
 * No horned helm.
 * Not a comic dwarf.
 * No gore.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 11. Thornmere
+### 11. Thornmere ✗
 
 `ART-HER-THORNMERE`
 
 ```text
 THORNMERE - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Thornmere, a Human Ranger with a Scout background: a medium-sized, lean, marsh-and-bramble archer, named for the thorn sprigs woven into the hooded cloak, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Thornmere, a Human Ranger with a Scout background: a medium-sized, lean, marsh-and-bramble archer, named for the thorn sprigs woven into the hood, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view at full draw, shortbow pulled to the cheek with an arrow nocked, the lead foot planted forward and the other braced back.
+Full figure in three-quarter view at full draw, shortbow pulled to the cheek with an arrow nocked, lead foot planted forward. Tonal key: mid-dark hood and coat. Silhouette: a profile archer with the bow forming a large curve.
 SUBJECT DETAILS
-* Lean, weathered human with sharp watchful eyes
+* Lean, weathered, sharp watchful eyes
 * Shortbow of plain wood, bowstring drawn, arrow with fletching at the cheek
-* Leather coat with a hooded cloak, faded and patched, bramble and thorn sprigs stitched into the hood and shoulders for cover
-* Quiver on the hip with a few visible arrow fletchings
-* Elven sickle (a slender curved single-edged blade with a leaf-shaped grip) hung at the belt
-* Leaf litter clinging to the boots
+* A close-fitting hood and short shoulder cape, cleanly cut, with four or five bold thorn sprigs stitched on, over a plain leather coat with a laced front
+* Quiver on the hip with a few visible fletchings
+* Elven sickle (slender curved single-edged blade with a leaf-shaped grip) hung at the belt
+* Bound shins and plain boots
 Must be shown exactly:
 * Shortbow drawn with an arrow nocked
 * Quiver at the hip
 * Elven sickle at the belt
-* Leather coat with a hooded cloak
+* Leather coat with a hood
 Silent, unhurried, already aimed.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Assassin: no hooded crouch, no dagger-first pose.
 * No animal companion.
 * No target or enemy drawn.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 12. Galefletch
+### 12. Galefletch ✗
 
 `ART-HER-GALEFLETCH`
 
@@ -2692,67 +2757,81 @@ Do not draw:
 GALEFLETCH - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Galefletch, an Elf Ranger with a Courier background: a medium-sized, fast-moving archer messenger, named for the long wind-torn fletching of the arrows, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view mid-stride, a shortbow carried ready in both hands and an arrow half-drawn from the quiver, cloak and hair streaming back in the wind.
+Full figure in three-quarter view mid-stride, a shortbow carried ready in both hands, hair and a long scarf streaming back in the wind. Tonal key: light coat, dark boots, black hair. Silhouette: a leaning diagonal with streaming lines.
 SUBJECT DETAILS
-* Slim, long-limbed elf with long pointed ears and a keen, forward gaze
-* Shortbow held two-handed, bowstring slack, arrow ready
-* Quiver across the back with long arrow fletching feathers streaming in the wind
-* Leather coat, light and well mended, with a short travelling cloak blown back
-* Elven dagger (a slender double-edged blade with a leaf-shaped grip) at the belt
-* Leather dispatch satchel with a buckle and a plain wax seal slung on the hip
-* Light boots with wrapped shins built for running
+* Slim, long-limbed elf with long pointed ears and a keen forward gaze, bare headed with loose hair streaming
+* Shortbow held two-handed, bowstring slack, an arrow ready
+* Quiver across the back with arrows whose long fletching feathers stream in the wind
+* A short, close-fitted leather coat with a long scarf streaming back; no cloak
+* Elven dagger (slender double-edged blade with a leaf-shaped grip) at the belt
+* Leather dispatch satchel with a buckle and a plain wax seal on the hip
+* Light boots and wrapped shins built for running
 Must be shown exactly:
 * Shortbow held in both hands
 * Elven dagger at the belt
 * Dispatch satchel with a wax seal
 * Leather coat
 Speed over broken roads.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
-* Not the Thornmere archer: no hood, no bramble cloak.
+* Not the Thornmere archer: no hood, no bramble.
 * Not a court elf: no ornate finery.
 * No animal companion.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 13. Oathscale
+### 13. Oathscale ✗
 
 `ART-HER-OATHSCALE`
 
 ```text
 OATHSCALE - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Oathscale, a Drakeblood Paladin with a Soldier background: a medium-sized, heavily armoured, scale-skinned oath-bearing soldier, named for the scales on the throat and the oath cord tied on the mace, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Oathscale, a Drakeblood Paladin with a Soldier background: a medium-sized, heavily armoured oath-bearing soldier, named for the scales on the throat and the oath cord on the mace, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view standing upright, heater shield forward on the left arm, mace raised at the shoulder in the right hand, chin lifted.
+Full figure in three-quarter view standing upright, heater shield forward on the left arm, mace raised at the shoulder in the right hand, chin lifted. Tonal key: bright plate and white surcoat, black shield border. Silhouette: a tall armoured block with a raised mace.
 SUBJECT DETAILS
-* Fine scales along the jaw, neck and backs of the hands, smoother skin elsewhere
-* Ridge of small horns on the brow and crown, no wings, no tail
-* Breastplate (a plate cuirass) over a padded coat, with a plain worn surcoat of cloth, torn but clean, no device
-* Heater shield on the left arm, plain and dented
-* Flanged mace in the right hand, a knotted oath cord tied on the haft
-* Soldier's open kettle helm carried hanging at the belt rather than worn
+* A fully human-shaped head and face with an ordinary nose and mouth, NOT a snout: scales appear only as a small patch along the jaw and down the neck and on the backs of the hands
+* A short ridge of small horns on the brow and crown, no wings, no tail
+* Breastplate (plate cuirass) over a padded coat, with a short plain white surcoat tied at the waist, clean hem
+* Heater shield (flat-topped, pointed at the foot) on the left arm, plain face with a bold black border
+* Flanged mace in the right hand with a knotted oath cord on the haft
+* A dagger in a plain sheath clearly visible on the belt at the hip
+* Soldier's open kettle helm hanging at the belt on a strap; no cloak
 Must be shown exactly:
 * Mace in the right hand
 * Heater shield on the left arm
 * Breastplate (plate cuirass)
-* Ridge horns and scales
+* A dagger in a sheath clearly visible at the belt
+* Ridge horns and scales on a human-shaped face
 Unbending, old majesty in a human frame.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
+* No snout, no reptile muzzle, no full dragon head.
 * No breath weapon, flame or wings.
-* Do not draw a full dragon head.
 * Not the Demonborn horns-and-tail look: use ridge horns and scales.
 * No glowing weapon.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 14. Dawnwarden
+### 14. Dawnwarden ✗
 
 `ART-HER-DAWNWARDEN`
 
@@ -2760,64 +2839,76 @@ Do not draw:
 DAWNWARDEN - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Dawnwarden, a Human Paladin with a Believer background: a medium-sized, mail-clad, charging protector of the faithful, named for the sunrise device on the shield, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view mid-charge, leaning forward with a targe held out front, mace drawn back at the shoulder, two flasks swinging at the belt.
+Full figure in three-quarter view mid-charge, leaning forward with a targe held out front, mace drawn back at the shoulder. Tonal key: white surcoat, black-and-white shield. Silhouette: a forward-leaning wedge.
 SUBJECT DETAILS
-* Sturdy human build, jaw set, eyes forward
-* Ring shirt (mail of linked rings) under a plain surcoat of cloth, torn at the hem
-* Targe: a small round shield with a central boss and a simple rising-sun device of straight rays, no lettering
+* Sturdy build, jaw set, eyes forward, bare headed with short hair
+* Ring shirt drawn as a ringed texture on the arms and skirt under a clean knee-length white surcoat belted at the waist
+* Targe: a small round shield with a central boss, its face half solid black and half white with a simple rising-sun of straight rays, no lettering
 * Flanged mace drawn back in the right hand
 * Two stoppered holy water vials hanging at the belt
-* A plain cloak of faded cloth thrown back as the figure moves, a small unlit lantern hooked at the back of the belt
+* No cloak
 Must be shown exactly:
 * Mace in the right hand
 * Targe (small round shield) on the left arm
-* Ring shirt of linked rings
+* Ring shirt
 * Two stoppered vials at the belt
 Faith as forward motion.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Cleric: no kneeling, no quarterstaff.
 * No glowing sword, halo or wings.
 * No readable lettering on the shield.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 15. Mossgrave
+### 15. Mossgrave ✗
 
 `ART-HER-MOSSGRAVE`
 
 ```text
 MOSSGRAVE - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Mossgrave, a Human Druid with a Hermit background: a medium-sized, unkempt, moss-grown recluse and healer, named for the moss that has settled on the coat and shoulders, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Mossgrave, a Human Druid with a Hermit background: a medium-sized, unkempt, moss-grown recluse and healer, named for the moss that has settled on the shoulders, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view standing still and slightly stooped, a knotted club held low in one hand and the other hand open with the palm outward, head tilted as if listening.
+Full figure in three-quarter view standing still and slightly stooped, a knotted club held low in one hand and the other hand open with the palm outward, head tilted as if listening. Tonal key: mixed, the moss as the one dark cluster. Silhouette: a stooped column.
 SUBJECT DETAILS
-* Long unkempt beard and hair, bare weathered face, a still, attentive gaze
-* Leather coat patched with bark-like cloth, with patches of moss and lichen drawn along the shoulders and collar
+* Long unkempt beard and hair, bare weathered face, a still attentive gaze
+* A plain long hermit's coat, neatly hemmed and hanging in a few large simple folds, with the moss shown only as a cluster of simple black leaf-and-rosette shapes on the shoulders and collar
 * Plain knotted wooden club in one hand
-* Open free hand with the palm outward, dirt in the creases
-* Feet wrapped in strips of cloth, one boot sole flapping
-* A pouch of herbs and a few dried stems tied at the belt, a twig or two in the hair
+* Open free hand with the palm outward
+* Feet wrapped in strips of cloth
+* A herb pouch and a bundle of dried stems tied at the belt, a twig in the hair
 Must be shown exactly:
 * A short wooden club in one hand
-* Leather coat with moss along the shoulders
+* Leather coat with moss shapes along the shoulders
 * An open palm in the other hand
 Solitary, quiet, tender with growing things.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Tier 3 tradition image: no bark skin or antlers.
 * No animal companion.
-* No magical effects or glow.
+* No grey or olive tone: the moss is drawn in black line and solid black only.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 16. Furrowroot
+### 16. Furrowroot ✗
 
 `ART-HER-FURROWROOT`
 
@@ -2825,81 +2916,92 @@ Do not draw:
 FURROWROOT - GRITTY OLD-SCHOOL INK ILLUSTRATION
 Create a gritty, old-school black-and-white ink illustration of Furrowroot, a Halfling Druid with a Farmer background: a small-sized, child-sized, stout, soil-stained field druid, named for the furrow-mud on the boots and the roots at the belt, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view, feet planted wide in a ready stance, an elven sickle held low and curved forward in one hand, a sling coiled in the other.
+Full figure in three-quarter view, feet planted wide in a ready stance, an elven sickle held low and curved forward in one hand, a sling coiled in the other. Tonal key: pale smock and hat, dark coat. Silhouette: a short wide figure with a big round hat.
 SUBJECT DETAILS
-* Child-sized, round-faced adult halfling, hair wild and curled, bare broad feet with thick hair on the tops
-* Elven sickle (a slender curved single-edged blade with a leaf-shaped grip) in the leading hand
-* A sling with a leather pouch of stones coiled in the other hand or looped over the belt
-* Leather coat patched at the elbows, sleeves rolled, over a farmhand's smock
+* Child-sized, round-faced adult, curled hair under a wide straw hat pushed back, bare broad hairy feet
+* Elven sickle (slender curved single-edged blade with a leaf-shaped grip) in the leading hand
+* A sling with a leather pouch of stones coiled in the other hand
+* A leather coat worn open over a plain farmer's smock and a wide apron, sleeves rolled, clean hems
 * A roll of bandages tied to the belt
-* A few roots and a tuft of herbs hung from the belt by their stems
-* Boots or leggings thick with furrow mud, straw-brimmed hat pushed back
+* Three roots hung from the belt by their stems
+* Muddy trouser cuffs shown as a few solid black blots
 Must be shown exactly:
 * Elven sickle in one hand
 * Sling with a stone pouch
 * Roll of bandages at the belt
 * Leather coat
 Stubborn and kind, rooted in plough-turned ground.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Do not duplicate the Gnome's bandolier and lens silhouette.
 * Not toy-like or cartoonish.
 * No magical effects.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 17. Thoughtwake
+### 17. Thoughtwake ✗
 
 `ART-HER-THOUGHTWAKE`
 
 ```text
 THOUGHTWAKE - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Thoughtwake, a Human Psion with a Scholar background: a medium-sized, intent, ink-cuffed mind-fighter, named for the ripple of disturbed hair and cloak that trails behind their thoughts, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Thoughtwake, a Human Psion with a Scholar background: a medium-sized, intent, ink-cuffed mind-fighter, named for the ripple of disturbed hair trailing behind their thoughts, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view, standing still with two fingers pressed to the temple, club held low in the other hand, hair and cloak lifted behind as if stirred by an unseen current.
+Full figure in three-quarter view, standing still with two fingers pressed to the temple, club held low in the other hand, hair lifted behind by an unseen current. Tonal key: a pale coat front with hatching only on the shadow side. Silhouette: a slim column with a tall cap.
 SUBJECT DETAILS
-* Spare, intense human with a furrowed brow and narrowed eyes
+* Spare, intense build, furrowed brow, narrowed eyes, long hair lifted back in a few bold strands
 * Two fingertips pressed to the temple of the bowed head
 * Plain short club in the other hand, held low
-* Leather coat with ink-stained cuffs and a scholar's pen case at the belt
-* Hair and cloak hem drifting backward in thin broken lines of ink, an unseen wake behind the figure
-* A scholar's flat cap or bare head with cropped hair
+* A smooth knee-length leather coat, belted, with ink-black cuffs, intact and clean-hemmed
+* A scholar's pen case at the belt, a tall flat scholar's cap
+* No cloak
 Must be shown exactly:
 * A short club in one hand
 * A leather coat
 * Fingers pressed to the temple
 A quiet, listening cruelty.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Wizard: no staff, no books, no robe.
 * No glowing eyes, aura or floating objects.
 * No spell effects.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 18. Gnawthought
+### 18. Gnawthought ✗
 
 `ART-HER-GNAWTHOUGHT`
 
 ```text
 GNAWTHOUGHT - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Gnawthought, a Ratkin Psion with an Alchemist background: a small-sized, child-sized, twitchy, chemical-stained mind-fighter, named for the gnawed hem and the chewed-off glove tips, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Gnawthought, a Ratkin Psion with an Alchemist background: a small-sized, child-sized, twitchy, chemical-stained mind-fighter, named for the chewed glove tips, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view in a wary half-crouch, dagger held low in one hand, the other hand raised with a stoppered acid pot ready to throw.
+Full figure in three-quarter view in a wary half-crouch, dagger held low in one hand, the other hand raised with a stoppered acid pot ready to throw. Tonal key: dark apron, pale fur. Silhouette: a small crouch with a long curling tail.
 SUBJECT DETAILS
 * Child-sized body with a rat-like muzzle, long whiskers, round ears and bright watchful eyes
 * Long scaly tail curled around the feet
-* Leather coat gnawed ragged along the hem, fingerless gloves chewed off at the tips, stained with chemicals
+* A short leather coat with a heavy leather alchemist's apron over it, intact hems, fingerless gloves chewed off at the tips
 * A stoppered ceramic acid pot with a wax seal in the raised hand
 * A second acid pot and a corked glass healing flask hung at the belt
 * A short dagger in the low hand
-* Scorched leather apron strings and a smear of soot across the muzzle
 Must be shown exactly:
 * Dagger in one hand
 * Stoppered ceramic acid pot in the raised hand
@@ -2907,141 +3009,162 @@ Must be shown exactly:
 * Leather coat
 * A curled tail
 Skittish, bright and dangerous.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Do not make it a plague-ridden scavenger or a monster Ratkin Warrior or Scavenger.
 * Do not draw it as a literal rat: upright, humanoid, clothed.
 * No glowing eyes or aura.
 * No staff or books.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 19. Ashborn
+### 19. Ashborn ✗
 
 `ART-HER-ASHBORN`
 
 ```text
 ASHBORN - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Ashborn, a Demonborn Sorcerer with a Cultist background: a medium-sized, soot-marked, volatile single-target caster, named for the ash smeared across the brow and the cuffs, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Ashborn, a Demonborn Sorcerer with a Cultist background: a medium-sized, soot-marked, volatile single-target caster, named for the ash on the brow and cuffs, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view, bare feet apart, one sooty hand held out flat with a few ash flakes drifting from the sleeve, a short club hanging in the other hand.
+Full figure in three-quarter view, bare feet apart, one open hand held out flat with a few ash flakes drifting from it, a short club hanging in the other hand. Tonal key: almost solid black cassock with a pale face and hand. Silhouette: a narrow dark column with a curled tail.
 SUBJECT DETAILS
-* Slim, haggard build, small curved horns breaking through hair
-* A slender barbed tail emerging from under the coat hem
-* Ash smeared in a stripe across the brow and cheeks, hands and cuffs sooty and scorched
-* Leather coat worn under a torn dark cultist's cassock, hood thrown back
+* Slim, haggard build, two clearly drawn small curved horns breaking through cropped hair
+* A slender barbed tail visible behind the legs, bold in silhouette
+* A solid black ash stripe across the brow and cheeks, blackened hands and cuffs
+* A close-fitting, buttoned black cassock to the ankle, clean hem, over a leather coat, sleeves with a pale inner lining, no hood and no cloak
 * A plain short club in one hand
-* Ash flakes and cinder flecks drifting from the sleeve as a few small dark marks, no flame
-* Bare, soot-stained feet or wrapped cloth shoes
+* Ash flakes drifting from the open hand as a few small solid black marks, no flame
+* Bare feet
 Must be shown exactly:
 * A short wooden club in one hand
-* Leather coat under a torn dark cassock
+* Leather coat under a black cassock
 * Horns and a tail
-* Sooty open hand
+* Blackened open hand
 Burnt out and waiting to burn again.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * No bat wings, hooves or fiery body: a person with horns and a tail.
 * No fire, flame effect, glow or lettered sigils.
 * Not an Imp or Demon monster.
 * No ritual dagger or staff.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 20. Stormcrook
+### 20. Stormcrook ✗
 
 `ART-HER-STORMCROOK`
 
 ```text
 STORMCROOK - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Stormcrook, a Drakeblood Sorcerer with a Shepherd background: a medium-sized, wind-whipped, scale-skinned flock-watcher, named for the hooked shepherd's staff and the storm that follows them, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Stormcrook, a Drakeblood Sorcerer with a Shepherd background: a medium-sized, wind-whipped, scale-skinned flock-watcher, named for the hooked shepherd's staff and the storm that follows, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view, planted wide on the windward side, a crook-topped quarterstaff gripped two-handed and slanted against the wind, cloak and hair torn back.
+Full figure in three-quarter view planted on the windward side, a crook-topped quarterstaff gripped two-handed and slanted against the wind, cloak and hair blown back. Tonal key: dark cloak, pale coat. Silhouette: a strong diagonal staff with a flying cloak.
 SUBJECT DETAILS
-* Fine scales along the jaw, neck and the backs of the hands, smoother skin elsewhere
-* Ridge of small horns on the brow and crown, no wings, no tail
-* Quarterstaff with a hooked shepherd's crook at the top, worn by long handling
+* A fully human-shaped face; fine scales only along the jaw and neck and backs of the hands
+* A short ridge of small horns on the brow and crown, no wings, no tail
+* Quarterstaff with a hooked shepherd's crook at the top
 * Sling and a pouch of stones coiled at the belt
-* Leather coat and a heavy travelling cloak flung out sideways by unseen wind, hair streaming
-* A roll of bandages tied at the belt
-* Heavy, wrapped herder's boots
+* A heavy hooded travelling cloak with a clean cut edge, blown out sideways in a few bold sweeping folds; this is the only windblown cloak in the series
+* A leather coat beneath, a roll of bandages at the belt, wrapped herder's boots
 Must be shown exactly:
 * Quarterstaff with a hooked crook top held with both hands
 * Sling coiled at the belt
 * Roll of bandages at the belt
 * Leather coat
 Wind and weather answering the watcher.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
-* No breath weapon, flame or lightning effect drawn.
-* No wings or full dragon head.
+* No breath weapon, flame or lightning drawn.
+* No snout, no wings, no full dragon head.
 * Do not copy the Demonborn look: use ridge horns and scales.
 * No sheep or animals.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 21. Silkshade
+### 21. Silkshade ✗
 
 `ART-HER-SILKSHADE`
 
 ```text
 SILKSHADE - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Silkshade, a Human Assassin with a Performer background: a medium-sized, lithe acrobat-killer, named for the trailing silk sash and the shadow the half-mask throws, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Silkshade, a Human Assassin with a Performer background: a medium-sized, lithe acrobat-killer, named for the trailing silk sash and the shadow of the half-mask, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view, balanced on the balls of the feet in a light, poised stance, dagger held in a reverse grip low at the hip, a silk sash trailing behind.
+Full figure in three-quarter view, balanced on the balls of the feet in a light poised stance, dagger in a reverse grip low at the hip, a silk sash trailing behind. Tonal key: checkered black and white jacket. Silhouette: a balanced S-curve with a long trailing sash.
 SUBJECT DETAILS
-* Lithe, narrow human build, a performer's poised carriage
-* Half-face theatrical mask covering only the eyes and nose, cracked and mended, tie strings at the back
-* Close-fitting leather coat cut like a tumbler's jacket, mended cuffs
-* Long loose silk sash knotted at the waist, one end trailing in a flowing S-curve
-* Dagger in reverse grip, the edge dulled dark
+* Lithe, narrow build, a performer's poised carriage, short hair
+* Half-face theatrical mask over the eyes and nose, tie strings behind the head
+* A close-fitting tumbler's jacket in leather with a diamond-pattern of stitched panels (like a harlequin, two values only), clean cuffs
+* A long loose silk sash knotted at the waist, one end trailing in a bold S-curve
+* Dagger in reverse grip, the blade drawn solid black
 * A bandolier across the chest holding two plain throwing knives
-* A corked vial of venom at the belt
-* Soft soled boots
+* A corked vial of venom at the belt, soft soled boots; no cloak
 Must be shown exactly:
 * Dagger in reverse grip
 * Two throwing knives on a bandolier
 * A corked venom vial at the belt
 * Half-face mask and a trailing silk sash
 Elegant, quiet, rehearsed.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Rogue: no lockpicks.
-* Not the Blackknife rogue: do not repeat the stalking crouch or turned collar.
+* Not the Blackknife rogue: no stalking crouch, no turned collar, no long coat.
 * Do not show the target or gore.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 22. Nightloom
+### 22. Nightloom ✗
 
 `ART-HER-NIGHTLOOM`
 
 ```text
 NIGHTLOOM - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Nightloom, a Deep Elf Assassin with a Smuggler background: a medium-sized, pale-skinned, dark-clad duellist-poisoner, named for the loom-woven cloak of loose dark threads, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Nightloom, a Deep Elf Assassin with a Smuggler background: a medium-sized, pale-skinned, dark-clad duellist-poisoner, named for the woven pattern of the cloak, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view in a low forward lunge stance, slender elven rapier extended forward in one hand, the elven dagger reversed in the other.
+Full figure in three-quarter view in a low forward lunge, slender elven rapier extended forward in one hand, the elven dagger reversed in the other. Tonal key: patterned dark cloak, pale face and blades. Silhouette: a low lunge with a long blade.
 SUBJECT DETAILS
 * Pale skin, long pointed ears, slim graceful build, narrow shadowed eyes
-* Deep hood pulled low against daylight, scarf at the throat
-* Fine dark leather coat, close fitted, plain trim with no court heraldry
-* Long dark cloak woven in fine cross-hatched threads, the hem ending in a ragged fringe of loose strands like a half-unwoven cloth
+* Deep hood and a scarf at the throat
+* A long dark cloak hanging closed behind in a few long clean folds, its whole surface a bold woven diamond lattice drawn as simple black-and-white lines (the loom), hem straight and neat, no fringe and no tatters
+* Fine dark leather coat, close fitted, plain trim
 * Elven rapier: a long, slim blade with a swept elven hilt
-* Elven dagger: a slender double-edged blade with a leaf-shaped grip, held reversed in the other hand
-* Two corked venom vials and a short smokestick tube at the belt
-* Rope coil and small hidden pockets visible at the hip, a smuggler's habit
+* Elven dagger: a slender double-edged blade with a leaf-shaped grip, held reversed
+* Two corked venom vials and a short smokestick tube at the belt, a coil of rope at the hip
 Must be shown exactly:
 * Elven rapier in one hand
 * Elven dagger in the other hand
@@ -3049,84 +3172,102 @@ Must be shown exactly:
 * A smokestick at the belt
 * Deep hood and long pointed ears
 Silent, deliberate, a thread pulled in the dark.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Not the Deep Elf Warrior or Priest monster: no ornate court armour, no hand crossbow.
-* Not a light-cloaked surface elf: keep dark gear and hood.
 * No spider imagery.
+* Do not draw the cloak ragged or fringed.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 23. Crowwick
+### 23. Crowwick ✗
 
 `ART-HER-CROWWICK`
 
 ```text
 CROWWICK - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Crowwick, a Halfling Trickster with an Apprentice background: a small-sized, child-sized, scrap-clothed apprentice illusionist, named for the black crow feather in the hat and the candle-stub wick at the belt, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Crowwick, a Halfling Trickster with an Apprentice background: a small-sized, child-sized, borrowed-clothes apprentice illusionist, named for the black crow feather in the hat and the candle-stub wick at the belt, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view up on tiptoe with a grin, a half-unrolled scroll held out in one hand and a short club in the other, as if about to play a trick.
+Full figure in three-quarter view up on tiptoe with a grin, a half-unrolled scroll held out in one hand and a short club in the other. Tonal key: mid-dark oversized coat, a pale scroll. Silhouette: a small figure with a tall peaked cap and one outstretched scroll.
 SUBJECT DETAILS
-* Child-sized, round-faced adult halfling, hair wild and curled, bare broad feet with thick hair on the tops
-* Oversized hand-me-down leather coat with sleeves rolled many times and hanging past the knees
-* A black crow feather tucked into a shapeless cap
-* A half-unrolled scroll with a ribbon seal, held out in the left hand, covered in blank wavy lines (no lettering)
-* Plain short club held in the other hand
+* Child-sized, round-faced adult, bare broad hairy feet
+* A big apprentice's smock-coat clearly too large, with sleeves rolled into thick cuffs, belted with a cord, clean hem hanging to the shins
+* A tall soft peaked cap with a black crow feather tucked in the band
+* A half-unrolled scroll with a ribbon seal held out in one hand, covered in blank wavy lines (no lettering)
+* Plain short club in the other hand
 * A stub of candle in a small tin holder clipped to the belt, its wick burnt
-* Singed, ink-stained fingertips
+* Ink-black fingertips
 Must be shown exactly:
 * A half-unrolled scroll in one hand
 * A short club in the other hand
 * A leather coat
 * A candle stub at the belt
 Grinning, borrowed-coat mischief.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Do not draw a crow bird or an animal companion.
-* Do not duplicate the Furrowroot halfling's hat, sickle and sling.
+* Do not duplicate the Furrowroot halfling's straw hat, sickle and sling.
 * No readable writing on the scroll.
 * No magical effects or double of the figure.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
-### 24. Gildmirror
+### 24. Gildmirror ✗
 
 `ART-HER-GILDMIRROR`
 
 ```text
 GILDMIRROR - GRITTY OLD-SCHOOL INK ILLUSTRATION
-Create a gritty, old-school black-and-white ink illustration of Gildmirror, a Gnome Trickster with a Merchant background: a small-sized, child-sized, well-dressed duellist-salesperson, named for the gilt-framed hand mirror carried in the off hand, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
+Create a gritty, old-school black-and-white ink illustration of Gildmirror, a Gnome Trickster with a Merchant background: a small-sized, child-sized, well-dressed duellist-salesperson, named for the gilt hand mirror carried in the off hand, in the dark fantasy world of Heraldry Skirmish, drawn the way a human illustrator inked the interior art of a late-1970s or 1980s fantasy rulebook or adventure module: brush, dip pen and India ink on paper, with the bite of a woodcut.
 COMPOSITION
-Full figure in three-quarter view in a dapper fencing en garde, an elven rapier extended forward in one hand, a gilt hand mirror raised in the other as if flashing it at an unseen opponent.
+Full figure in three-quarter view in a dapper fencing en garde, an elven rapier extended forward in one hand, a gilt hand mirror raised in the other. Tonal key: dark coat, bright buttons and blade. Silhouette: a small fencer with a long blade and a raised oval mirror.
 SUBJECT DETAILS
-* Child-sized, adult-faced, large nose, bright shrewd eyes, neat pointed beard or sideburns
+* Child-sized, adult-faced, large nose, bright shrewd eyes, neat pointed beard
 * Elven rapier: a long, slim blade with a swept elven hilt, extended forward
 * Hand mirror with an ornate gilt frame and a blank oval face, raised in the off hand
-* Fine leather coat with a row of gilt buttons, trimmed cuffs, a merchant's moneybag at the belt
+* A fine knee-length leather frock coat with a row of large gilt buttons, trimmed cuffs, a merchant's moneybag at the belt, clean hems
 * A roll of bandages tucked into the belt
-* A bunched merchant's cap or bare head with neat hair; polished buckled boots
+* A bunched merchant's cap, polished buckled boots
 Must be shown exactly:
 * Elven rapier extended in one hand
 * A gilt-framed hand mirror in the other hand
 * Leather coat with buttons
 * A roll of bandages at the belt
 Dapper, calculating, all flourish.
+Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
 Do not draw:
 * Do not draw a second figure or a mirror double.
 * Do not turn it into a steampunk robot.
 * Do not duplicate the Graveglass gnome's lens and satchel silhouette.
 * Not toy-like or cartoonish.
+* No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
+* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
 * No lettering, runes, name or caption anywhere, including on shields, scrolls and banners.
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
+* Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 ```
 
 ## Equipment (2)

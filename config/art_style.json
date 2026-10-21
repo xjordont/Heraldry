@@ -110,7 +110,9 @@
    "aspect": "2:3",
    "size": "1K",
    "print_w_in": 1.9,
-   "framing": "Single full-length Hero standing alone, drawn whole from the top of the head to the soles of the feet, in a ready three-quarter pose that shows the listed ancestry, class, background and every listed item of equipment. Borderless and isolated on blank white paper with no background of any kind: only a few sparse strokes of ground and a short cast shadow directly under the feet."
+   "framing": "Single full-length Hero standing alone, drawn whole from the top of the head to the soles of the feet, in a ready three-quarter pose that shows the listed ancestry, class, background and every listed item of equipment. Borderless and isolated on blank white paper with no background of any kind: only a few sparse strokes of ground and a short cast shadow directly under the feet.",
+   "style": "Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.",
+   "final": "Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook."
   }
  },
  "anchor_ids": [
@@ -299,6 +301,13 @@
     "assets/art/style/STYLE-REF-27-carved-scroll-case.jpg",
     "assets/art/style/STYLE-REF-33-bound-bone-cross.jpg",
     "assets/art/style/STYLE-REF-56-weapons-sheet.jpg"
+   ],
+   "hero": [
+    "assets/art/style/STYLE-REF-06-hooded-figure-brush.jpg",
+    "assets/art/style/STYLE-REF-54-dwarf-warrior-shield-axe.jpg",
+    "assets/art/style/STYLE-REF-57-armoured-swordswoman.jpg",
+    "assets/art/style/STYLE-REF-61-herbalist-kneeling.jpg",
+    "assets/art/style/STYLE-REF-63-wizard-flame-hand.jpg"
    ]
   },
   "kind_sets": {
