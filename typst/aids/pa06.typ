@@ -18,7 +18,7 @@
   [
     #aside-head(seed: 1, size: 16pt)[Moving]
     #dot[Through allies, never enemies (except a Hidden enemy, or a Small mover past Large or Huge).]
-    #dot[Never end overlapping a combatant, Impassable or Blocking Terrain.]
+    #dot[Never end overlapping a combatant, Impassable Terrain, or Blocking Terrain.]
     #dot[Prone may move, but not Climb or Jump.]
     #dot[Finish one Move before another action.]
     #dot[*Fly:* ignores ground terrain and Impassable Terrain, passes over combatants; not through Blocking Terrain; must end legal or Fall.]
@@ -51,7 +51,7 @@
     #dot[Blocked LOS between two combatants: not adjacent, not Engaged.]
     #gap-v
     #aside-head(seed: 4)[Reflex Attack]
-    1 AP Reaction: an enemy, in its activation, leaves your melee distance with *Move*, or makes a ranged attack within it. One melee attack, base dice with Disadvantage. Never from Shift, forced movement, Falling or ranged Reactions.
+    1 AP Reaction: an enemy, in its activation, leaves your melee distance with *Move*, or makes a ranged attack within it. One melee attack, base dice with Disadvantage. Never from Shift, forced movement, Falling, or ranged Reactions.
     #gap-v
     #aid-table((26pt, 1fr, 1fr), ("key", "c", "c"), ("Sz", "Footprint", "Grid"), (
       ([S], [1″ × 1″], [1 square]),
@@ -69,7 +69,7 @@
     #dot[Terrain costs count against the distance; hazards resolve after it ends.]
     #gap-v
     #aside-head(seed: 8)[Push and Trip]
-    Your own activation only; not attacks, so no Block, Dodge or Parry, and no multi-attack chain. Hostile: a Hidden actor loses Hidden.
+    Your own activation only; not attacks, so no Block, Dodge, or Parry, and no multi-attack chain. Hostile: a Hidden actor loses Hidden.
     #v(4pt)
     #grid(columns: (auto, 1fr), column-gutter: 6pt, row-gutter: 6pt,
       cost[Push 1 AP], [Adjacent target. STR Check with Disadvantage. Success: Push 2″ away.],

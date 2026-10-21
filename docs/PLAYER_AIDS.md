@@ -6,7 +6,7 @@ The player aids are a companion series of printable reference sheets for the tab
 
 ## 1. The idea: field orders of a fallen realm
 
-Each sheet should look like an order posted in a war camp by the herald of a broken kingdom. It carries an iron header band, the realm's arms, numbered steps on engraved shields, and one ink drawing of the threat it describes. The mood comes from black ink, blackletter and heraldry. Clarity comes from modern information design: one diagram language, one type system and generous space.
+Each sheet should look like an order posted in a war camp by the herald of a broken kingdom. It carries an iron header band, the realm's arms, numbered steps on engraved shields, and one ink drawing of the threat it describes. The mood comes from black ink, blackletter, and heraldry. Clarity comes from modern information design: one diagram language, one type system, and generous space.
 
 The sheets are the book's design system turned outward, not a new style. A player should recognise a sheet as Heraldry from across the table, and find the answer on it within five seconds.
 
@@ -14,8 +14,8 @@ The sheets are the book's design system turned outward, not a new style. A playe
 
 Everything below comes from the book's "Grim Heraldry" system (`docs/BOOK_DESIGN_PLAN.md`, `config/design_tokens.json`, `typst/templates/system.typ`). Where this document is silent, the book's rules apply.
 
-- **Marks:** the owner-approved armoury only (BOOK_DESIGN_PLAN section 12): chapter arms, the broken-castle logo, the engraved shield, the brush rule, the banner tag, the corner flourish, the lozenge and the coin. No new emblems, skulls, occult glyphs or clip-art icons.
-- **Type:** the book's four families. Grenze Gotisch for titles and panel heads only, never in all capitals and never for running text or numbers. Source Sans 3 for all diagram text, labels and numbers. Source Serif 4 for any longer rules note. No flavour face: the sheets carry no flavour or editorial lines (owner, 2026-10-21).
+- **Marks:** the owner-approved armoury only (BOOK_DESIGN_PLAN section 12): chapter arms, the broken-castle logo, the engraved shield, the brush rule, the banner tag, the corner flourish, the lozenge, and the coin. No new emblems, skulls, occult glyphs, or clip-art icons.
+- **Type:** the book's four families. Grenze Gotisch for titles and panel heads only, never in all capitals and never for running text or numbers. Source Sans 3 for all diagram text, labels, and numbers. Source Serif 4 for any longer rules note. No flavour face: the sheets carry no flavour or editorial lines (owner, 2026-10-21).
 - **Ink:** black only, with the book's transparent tints: 5% for panels and decision fills, 9% for die columns, 24% for hairlines, 42% and 58% for quiet labels. Colour never carries meaning, so every sheet must read when photocopied in greyscale.
 - **Paper:** cream `#FCFAF5` and a white companion, identical in layout.
 - **Not used:** parchment texture, stains, burned edges, gradients, drop shadows, glows, coloured highlights, or icons that need a legend.
@@ -60,33 +60,33 @@ One shape language across every sheet, so a player learns it once. Every distinc
 | Yes or a taken branch | A forged arrow to the right, about 62 pt long: a tapered shaft swelling from 2.6 to 5.8 pt into a barbed broadhead, with a black YES banner tag above it |
 | No or fall-through | The same forged arrow pointing down, with a black NO banner tag beside it |
 | Optional or conditional path | A short italic note inside the box it leaves ("Says it continues? Go to step 2."), or a dashed arrow where a drawn route is clearer |
-| Ends (activation, step or phase) | A black banner tag reading ENDS, pinned to the lower-right corner of the box |
+| Ends (activation, step, or phase) | A black banner tag reading ENDS, pinned to the lower-right corner of the box |
 | Dice roll | A box with a double rule, the die named in a black cost tag ("d20", "1d6") |
 | AP or Coin cost | A black cost tag ("1 AP"), and the coin mark for "c" |
-| Rules note or exception | The book's panel: 5% tint, a 2.6 pt left rule and a RULES NOTE banner tag |
+| Rules note or exception | The book's panel: 5% tint, a 2.6 pt left rule, and a RULES NOTE banner tag |
 | Grouped lookup | A panel with corner flourishes (the book's dossier frame), at most one per side |
 | Cross-reference | "§ 9.5" in Source Sans 3, 42% grey |
 
-Flow runs top to bottom and left to right. The main spine stays in one column, with branches leaving to the right, so a finger can trace it. Arrowheads are solid triangles. Lines never cross. Shared geometry (zones, markers, terrain, dimension lines) reuses the figure glyphs explained by FIG-20, so the sheets and the book's diagrams agree.
+Flowcharts are laid out by measured kit components (`flow`, `cycle`), never by hand: each plaque and its action box share a centre line, the shield and YES arrow sit on that line, every gap between rows is the same, each connector runs from one plaque to the next (at least 28 pt long), and paired stages in a loop share one height. Flow runs top to bottom and left to right. The main spine stays in one column, with branches leaving to the right, so a finger can trace it. Arrowheads are solid triangles. Lines never cross. Shared geometry (zones, markers, terrain, dimension lines) reuses the figure glyphs explained by FIG-20, so the sheets and the book's diagrams agree.
 
-## 6. Ink, tone and art
+## 6. Ink, tone, and art
 
 - **Ink style:** gritty old-school black-and-white ink, as in `docs/ART_DIRECTION.md`: bold brush contours, solid black shadow shapes, scratchy hatching and dry-brush, high contrast. No grey wash or stipple.
 - **Art source:** approved illustrations only (`production/art/SELECTIONS.json` status `approved`, ink files in `assets/art/ink/`). The vignette shows the sheet's subject: the threat for Monster AI, a melee for combat, the war camp or road for the campaign, a town building for the Town Phase. No art is generated for the sheets without an owner instruction, and the paid image API is not used.
-- **Black areas stay small and structural:** the header band, the step shields, tags and the art's own shadows. No large black panels. They waste inkjet ink and cockle the paper.
+- **Black areas stay small and structural:** the header band, the step shields, tags, and the art's own shadows. No large black panels. They waste inkjet ink and cockle the paper.
 - **Ornament restraint:** at most two ornamental marks per side outside the header and footer (for example one corner-flourished panel and one brush-ruled heading group). Nothing ornamental inside a diagram box or a table cell.
 
 ## 7. The series
 
 | Code | Sheet | Arms | Front | Back |
 |---|---|---|---|---|
-| PA-1 | The Round | 3 Round (hourglass) | The four phases as a loop around the arms; activating, eligibility, solo and co-op PvE Initiative | Actions table, Checks, Advantage, timing and simultaneous effects, Luck |
+| PA-1 | The Round | 3 Round (hourglass) | The four phases as a loop around the arms; activating, eligibility, and solo and co-op PvE Initiative | Actions table, Checks, Advantage, timing and simultaneous effects, Luck |
 | PA-2 | Monster AI | 9 Monsters (wyvern) | The Standard Monster AI Script as a flowchart; Primary Target, ties, movement, Blocked Route, Never | The Monster Phase, wake-up triggers, setup and Guard Points, allegiance, Bosses, areas, AP changes |
 | PA-3 | Combat | 5 Combat (axe and sword) | The attack sequence; the dice, Critical riders, Mitigation Order | Reactions table; reacting, damage and AV, attacks, attack modifiers |
-| PA-4 | The Fallen | 6 Party (tattered banner) | 0 HP to Wounds, death or the Injuries Roll, as a flow; hit while down, Knocked Out, others at 0 HP, death marker | The Injuries Table (d20); the Chapel's healing |
+| PA-4 | The Fallen | 6 Party (tattered banner) | 0 HP to Wounds, death, or the Injuries Roll, as a flow; hit while down, Knocked Out, others at 0 HP, death marker | The Injuries Table (d20); the Chapel's healing |
 | PA-5 | Conditions | 14 Reference (open book) | Stacking, recovery immunity, conditions A to I | Conditions K to Z, Heard the Song, negative conditions |
-| PA-6 | Movement | 4 Actions (arrows) | Movement types; moving, costs, Climb, Jump and Falling | Engagement and Reach, Reflex Attack, sizes, forced movement, Push and Trip |
-| PA-7 | Sight and Ground | 2 Mechanics (die) | LOS, concealment, Cover, Hidden, light and darkness | Terrain types and tags, elevation, areas of effect |
+| PA-6 | Movement | 4 Actions (arrows) | Movement types; moving, costs, Climb, Jump, and Falling | Engagement and Reach, Reflex Attack, sizes, forced movement, and Push and Trip |
+| PA-7 | Sight and Ground | 2 Mechanics (die) | LOS, concealment, Cover, Hidden, and light and darkness | Terrain types and tags, elevation, areas of effect |
 | PA-8 | The Campaign | 11 Campaign (pavilion) | The campaign cycle as a loop; start-of-adventure order, Monster CV, the Three Fates, Triumph, limits | The Expedition Event Table, Journey Home, keeping a record |
 | PA-9 | The Town | 11 Campaign | Town Phase checklist; the Grand Hall, the Chapel, the Arcane Spire | The Training Grounds, the Ironworks, the Guild of Keys, Hirelings, Stronghold costs |
 | PA-10 | Setup | 10 Scenarios (ruined arch) | The twelve preparation steps, Setup Roll-off, Random Direction compass | Climate and Core Scenario roll table |
@@ -95,10 +95,11 @@ Later sheets (Journey tables by Climate, Weather, hero creation and advancement,
 
 ## 8. Words
 
-- Wording is the most concise reading that keeps every meaning: every condition, exception, number and tie-break survives, but connective prose does not.
-- Every word on a sheet comes from the current manuscript, resolved through `source/versions.json`. Wording may be abridged and reordered, but never reinterpreted, and no rule, number, exception or condition may be added or dropped.
-- Each sheet keeps a fidelity record: the sections it draws on, the manuscript RC and the sha256 of each section's text. A new RC that changes one of those sections marks the sheet stale until it is reviewed again.
+- Wording is the most concise reading that keeps every meaning: every condition, exception, number, and tie-break survives, but connective prose does not.
+- Every word on a sheet comes from the current manuscript, resolved through `source/versions.json`. Wording may be abridged and reordered, but never reinterpreted, and no rule, number, exception, or condition may be added or dropped.
+- Each sheet keeps a fidelity record: the sections it draws on, the manuscript RC, and the sha256 of each section's text. A new RC that changes one of those sections marks the sheet stale until it is reviewed again.
 - Every sheet passes a semantic review against its sections before release, as for the book's figures. A hash is never a substitute for that review.
+- Always use the Oxford comma (owner, 2026-10-21).
 - Capitalised game terms keep the manuscript's capitalisation. Canadian spelling, as in the manuscript.
 
 ## 9. Print
@@ -113,31 +114,31 @@ Owner decision 2026-10-21, after the trial below: "Canva was inferior. Let's kee
 
 The direction is the same on either route. The difference is how faithfully and cheaply it can be reproduced.
 
-**Route A, the book's Typst kit (recommended).** The sheets are composed from the components in `system.typ`, with the exact approved marks, the seeded brush rule and the bundled fonts. The text can be bound to the manuscript and its hashes, and every sheet rebuilds when the rules change. The specimen in section 12 was made this way. The PDFs can still be imported into Canva for light editing or sharing.
+**Route A, the book's Typst kit (recommended).** The sheets are composed from the components in `system.typ`, with the exact approved marks, the seeded brush rule, and the bundled fonts. The text can be bound to the manuscript and its hashes, and every sheet rebuilds when the rules change. The specimen in section 12 was made this way. The PDFs can still be imported into Canva for light editing or sharing.
 
 **Route B, Canva.** Canva is a comfortable editing surface, but it cannot read the repository or check text against the manuscript. Before the first sheet:
 
-1. Export an asset kit: the arms, logo and coin SVGs from `typst/templates/marks/cream/` and `white/`, plus SVG renders of the brush rule, engraved shields 1 to 12, the six-sided plaque, the ENDS and RULES NOTE tags, arrowheads and corner flourishes. The brush rule and shields exist only as Typst code today.
+1. Export an asset kit: the arms, logo, and coin SVGs from `typst/templates/marks/cream/` and `white/`, plus SVG renders of the brush rule, engraved shields 1 to 12, the six-sided plaque, the ENDS and RULES NOTE tags, arrowheads, and corner flourishes. The brush rule and shields exist only as Typst code today.
 2. Load the four font families. All are OFL; uploading custom fonts to Canva needs a paid Canva plan.
-3. Build one master Letter template with guides at 27 pt (safe) and 36 pt (margin), the header band, footer and colour swatches: `#000000`, `#FCFAF5`, `#FFFFFF`, with tints made as black at 5%, 9%, 24%, 42% and 58% opacity.
-4. Lock the master and duplicate it for each sheet. Do not use Canva's generated layouts, generated images or stock graphics, because they would break both the style and the art rules.
+3. Build one master Letter template with guides at 27 pt (safe) and 36 pt (margin), the header band, footer, and colour swatches: `#000000`, `#FCFAF5`, `#FFFFFF`, with tints made as black at 5%, 9%, 24%, 42%, and 58% opacity.
+4. Lock the master and duplicate it for each sheet. Do not use Canva's generated layouts, generated images, or stock graphics, because they would break both the style and the art rules.
 5. Export "PDF Print" at Letter size. Keep the wording ledger (section 8) outside Canva, and re-check every sheet by hand after a rules revision.
 
 The Canva account currently shows one brand kit; whether it is the Heraldry kit has not been checked.
 
 ### Route trial, 2026-10-21
 
-The owner asked to try both routes on PA-2 Monster AI (front) and compare. Both used the same approved Minotaur ink, the Monsters arms, the logo and the same abridged wording. The Canva design is "Monster AI player aid flyer" in the owner's Canva account, generated by Canva from a written brief and then corrected through the connector.
+The owner asked to try both routes on PA-2 Monster AI (front) and compare. Both used the same approved Minotaur ink, the Monsters arms, the logo, and the same abridged wording. The Canva design is "Monster AI player aid flyer" in the owner's Canva account, generated by Canva from a written brief and then corrected through the connector.
 
 - **Wording:** Canva's generator changed the supplied text in six places even though the brief said to use it exactly: "reproducibly" became "Reproducing"; "§" became "$"; "it can reach" became "to an reach"; "on arrival" became "or arrival"; and two punctuation changes altered how a step reads. All six were corrected by hand. Route A sets the text exactly as written.
 - **Art:** Canva added its own AI-generated dragon in the art slot, which breaks the approved-art rule. It was replaced with the approved Minotaur. The page background is also a Canva image, not the flat cream.
 - **Type:** Canva chose its own blackletter and sans and set almost all text bold. The connector cannot set a font family, so the book's four faces can only be applied by hand in the Canva editor, after uploading them (paid plan).
-- **Shapes:** Canva drew every box, plaque, arrow and tag as a picture fill, so they cannot be restyled as one family. Two decision plaques let their text run into the plaque's edge. Route A draws them as vectors from shared components.
+- **Shapes:** Canva drew every box, plaque, arrow, and tag as a picture fill, so they cannot be restyled as one family. Two decision plaques let their text run into the plaque's edge. Route A draws them as vectors from shared components.
 - **Feel:** Canva's larger, bolder type reads from farther away. Route A is closer to the book and fits more on the side.
 
 ## 11. Acceptance checklist (every side)
 
-- The iron band, title, arms, § references, footer and RC stamp are present and placed as in section 3.
+- The iron band, title, arms, § references, footer, and RC stamp are present and placed as in section 3.
 - Every shape follows the grammar in section 5; no colour, no new symbol.
 - Nothing essential lies within 27 pt of the trim; type is at least 9 pt for essential text; nothing is hyphenated.
 - The flow can be traced with a finger without a crossing line.
@@ -151,6 +152,6 @@ Each sheet is `typst/aids/paNN.typ`, built on the shared kit `typst/aids/kit.typ
 
 - Render: `python tools/render_aids.py --paper both [--png]` writes each sheet and a combined 20-page set for cream and white paper to `build/aids/`, and fails any sheet that is not exactly two pages. Outputs are never committed.
 - Fidelity: `python tools/aids_fidelity.py` compares each sheet's source sections with those recorded in `production/aids/fidelity.json` and lists the stale sheets after a manuscript revision. After re-reviewing a sheet's wording, run `record` with an honest `--reviewer` note. A hash only shows what was reviewed; it is not a review.
-- Art used (all approved inks): Minotaur, Fighter, Berserker, Ghoul, Night Hag, Ranger, Assassin, the Road, Hearthhold and Greenmark, at most one per side.
+- Art used (all approved inks): Minotaur, Fighter, Berserker, Ghoul, Night Hag, Ranger, Assassin, the Road, Hearthhold, and Greenmark, at most one per side.
 - Rulebook figures were tried and left out: below 504 pt wide their labels fall under the 9 pt minimum, and no side has room at full width.
 - The true-scale area templates planned for PA-7 are not included: a 6″ cone does not fit beside the rules on one side. They would need a sheet of their own.
