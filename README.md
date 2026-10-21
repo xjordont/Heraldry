@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`330d6719`](https://github.com/xjordont/Heraldry/commit/330d6719fb17fe455e6dd9a84e49d1d75b244891) text(RC513): label every Monster AI Step as ending or continuing
 - [`e11b3f73`](https://github.com/xjordont/Heraldry/commit/e11b3f73a4c36bbeb0f874e7d0096dcd68d49011) Merge branch 'main' of https://github.com/xjordont/Heraldry
 - [`51dc7f38`](https://github.com/xjordont/Heraldry/commit/51dc7f38e7e0cbbda969eacf1ed930aef574c87d) aids: polish PA-2 Monster AI and record the route decision
 - [`fddfe83e`](https://github.com/xjordont/Heraldry/commit/fddfe83e1897dfdc4f2cd6d04546350cf3d415a8) art: intake of ChatGPT Work images
 - [`66af5a0e`](https://github.com/xjordont/Heraldry/commit/66af5a0e5568fdc4c83cb9df73b5404df435403a) art(gpt): ART-HER-THOUGHTWAKE .. ART-HER-THOUGHTWAKE
 - [`36ec24f9`](https://github.com/xjordont/Heraldry/commit/36ec24f9f79d366bb848ef0f00762004ef2a79df) art: intake of ChatGPT Work images
-- [`a4dbd594`](https://github.com/xjordont/Heraldry/commit/a4dbd594483c8e3f6535bd88539ea2907c2bb33d) art(gpt): ART-HER-THORNMERE .. ART-HER-THORNMERE
 
 <!-- END AUTO:recent -->
 
