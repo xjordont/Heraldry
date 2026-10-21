@@ -1,4 +1,14 @@
-# Production state - RC493 source, main
+# Production state - RC512 source, main
+
+## Owner-supplied RC512 manuscript - 2026-10-21
+
+Owner instruction: "Update the repo to have RC512 be the new working manuscript after updating the import workflow to support version jumps." The reviewed import promotes RC493 directly to RC512, retaining every earlier snapshot and exact patch archive; no RC494-RC511 snapshots are invented. `source/versions.json` and `config/production.json` identify `source/Heraldry_RC512.md`. Its SHA-256 is `816a3f9c81f91351cf24209580c18b3bd26e95ad747c9a13623304cf584ac5dd`, byte-identical to the supplied upload, with no normalisations. The manuscript includes 24 Basic Mode Hero profiles.
+
+The import reports +1,358 / -835 text lines; all 63 publication anchors resolve after updating only FIG-07, FIG-08, and FIG-12 prefixes to the corresponding new passages. 56 figure dependencies changed (all except FIG-09); these require fresh semantic review and source-citation inspection before the next release. Existing artwork/figure approvals and hash-bound PDF evidence were not renewed. The pending Hero illustration request has not generated any images; the art queue remains empty.
+
+Verification after promotion: `python tools/dev.py check` PASS; 324 tests, 3 expected skips, dependencies, baseline, immutable history (19 previous snapshot/evidence files), and whitespace PASS.
+
+No PDF build or release was requested. Last delivered PDFs remain RC492-build-37; the RC493 compact local proof and existing `dist/` ledgers describe historical inputs. Physical print **NOT TESTED**.
 
 ## Explicit manuscript import targets - 2026-10-21
 
