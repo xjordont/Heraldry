@@ -33,7 +33,7 @@ def _images():
 
 
 IMAGES = _images()
-ORDER = ["bastion", "climate", "monster", "class", "ancestry", "boss", "scenario", "world", "campaign",
+ORDER = ["bastion", "climate", "monster", "class", "hero", "ancestry", "boss", "scenario", "world", "campaign",
          "tradition", "background", "item", "chapter", "cover"]
 SIZES = {"3:2": "1536x1024", "2:3": "1024x1536", "1:1": "1024x1024"}
 NOTES = {  # family: (looks right when, typical failure)
@@ -41,6 +41,7 @@ NOTES = {  # family: (looks right when, typical failure)
     "climate": ("The climate's diagnostic terrain and danger; tiny figures for scale only if the prompt lists them.", "Generic scenery; large figures; people where the prompt says none; no signature feature of the climate."),
     "monster": ("One creature, whole body, isolated; size class respected; must-list counts exact.", "Scenery behind it; wrong limb counts; a scale figure on a Small or Medium creature; a cropped tail or weapon."),
     "class": ("One full-length adventurer, action-ready, class-typical gear, isolated.", "Gear not held properly; background scenery; a cropped weapon."),
+    "hero": ("One named Basic Mode Hero, whole from head to ground, alone on bare white paper with every listed item of gear shown.", "Gear missing or swapped for another hero's; any background or ground scenery; a cropped weapon or foot; lettering on a shield or scroll."),
     "ancestry": ("One full-length adventurer of the ancestry in travel-worn gear, traits as stated.", "Stock ears or horns the source does not give; scenery; the same pose as the class art."),
     "boss": ("The unique named individual in its own setting, dramatic in scale; Size line respected.", "A generic monster; a poster-symmetric composition; a human where the prompt says none."),
     "scenario": ("The place and situation as the parties arrive; named creatures only small, partial or in silhouette.", "A creature portrait instead of a place; a copy of the bestiary art."),

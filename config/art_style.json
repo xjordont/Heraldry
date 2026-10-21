@@ -105,6 +105,12 @@
    "size": "1K",
    "print_w_in": 2.6,
    "framing": "The unique named boss shown with its distinguishing features in its own lair or setting, dramatic in scale; clearly an individual, not a typical member of a kind. Composition reads as a vignette that thins out into white paper toward irregular edges; no frame."
+  },
+  "hero": {
+   "aspect": "2:3",
+   "size": "1K",
+   "print_w_in": 1.9,
+   "framing": "Single full-length Hero standing alone, drawn whole from the top of the head to the soles of the feet, in a ready three-quarter pose that shows the listed ancestry, class, background and every listed item of equipment. Borderless and isolated on blank white paper with no background of any kind: only a few sparse strokes of ground and a short cast shadow directly under the feet."
   }
  },
  "anchor_ids": [
@@ -198,7 +204,8 @@
    "class": "person",
    "ancestry": "person",
    "background": "still",
-   "item": "still"
+   "item": "still",
+   "hero": "person"
   },
   "sets": {
    "scene": [

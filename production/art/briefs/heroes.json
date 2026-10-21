@@ -1,0 +1,876 @@
+{
+ "_meta": {
+  "author": "orchestrator",
+  "source": "RC512 B.4 Basic Mode Hero Profiles"
+ },
+ "ART-HER-IRONSCAR": {
+  "identity": "Ironscar, a Dwarf Fighter with a Soldier background: a medium-sized, very broad and heavy shield-wall veteran, named for the old iron-hard scar that splits the face.",
+  "composition": "Full figure in three-quarter view, braced low behind a heater shield held forward on the left arm, mace held back at the hip in the right hand, ready to strike over the shield rim.",
+  "details": [
+   "Very broad shoulders, short thick limbs, stocky frame, human height but far heavier in build",
+   "A deep old scar running from brow to jaw through one cheek and into the braided beard, drawn as a pale ridge cut through the hatching",
+   "Mail shirt (linked rings) over a padded arming coat, patched with a few bright riveted iron plates where it was once torn",
+   "Dented open kettle helm with a brim, no visor",
+   "Heater shield (kite-shaped, flat top) scarred and dented, strapped to the left forearm",
+   "Plain flanged mace with a short wooden haft in the right hand",
+   "Dagger sheathed at the belt, hilt visible",
+   "Soldier's discipline: boots planted wide, weight forward"
+  ],
+  "must": [
+   "One mace (single-handed) and one heater shield, both visibly held",
+   "A dagger sheathed at the belt",
+   "Mail shirt of linked rings"
+  ],
+  "avoid": [
+   "Not a plate knight: mail shirt only",
+   "No horned helmet",
+   "Not a comic dwarf: serious proportions, no oversized nose",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Stoic, unbreakable, the last stone of the line.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Ironscar",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-GALLOWTUSK": {
+  "identity": "Gallowtusk, an Orc Fighter with a Vagabond background: a medium-sized, very powerful roving sellsword, named for the heavy tusks and the worn rope loop at the belt.",
+  "composition": "Full figure in three-quarter view mid-stride, a great falchion held two-handed across the body in a low sweeping ready, blade angled outward.",
+  "details": [
+   "Huge shoulders, thick neck, grey scarred skin, heavy lower tusks, one tusk chipped",
+   "Great falchion: a very large single-edged, forward-weighted blade with a curved back, long two-handed grip",
+   "Ring shirt (mail of small rings) over a patched road coat, sleeves torn",
+   "Handaxe hung at the belt on a loop",
+   "A roll of bandages tied to the belt",
+   "A short length of frayed rope looped and knotted at the belt, a hint of the gallows",
+   "Vagabond's road gear: patched travelling cloak flung back, a knotted cloth bundle slung across the back, worn-through boots"
+  ],
+  "must": [
+   "Great falchion held with both hands",
+   "Handaxe at the belt",
+   "Ring shirt of small linked rings",
+   "Roll of bandages at the belt"
+  ],
+  "avoid": [
+   "Not a raider: no snarl, no trophies, no ragged furs",
+   "No horned helm or fantasy barbarian cliche",
+   "No shield",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Road-worn menace held under control.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Gallowtusk",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-BLACKKNIFE": {
+  "identity": "Blackknife, a Human Rogue with a Smuggler background: a medium-sized, lean, quick-handed runner of false-bottomed cargo, named for the blackened blade they carry.",
+  "composition": "Full figure in three-quarter view, a low silent stalking step, blackened dagger held in a reverse grip close to the hip, head turned over the shoulder.",
+  "details": [
+   "Lean, wiry human build, hair cropped, watchful narrowed eyes",
+   "Dagger with a blade blackened with soot, shown as a solid black blade with a thin white edge line",
+   "Leather coat with a turned-up collar, patched at the elbows and cut with many small hidden inner pockets",
+   "A bandolier across the chest holding two throwing knives with leather-wrapped grips",
+   "Roll of lockpicks tucked in a belt pouch with a few picks showing",
+   "Soft-soled boots; a false-bottomed satchel with a tiny hinge slung behind the hip"
+  ],
+  "must": [
+   "Dagger in reverse grip",
+   "Two throwing knives on a bandolier",
+   "Lockpick roll at the belt",
+   "Leather coat"
+  ],
+  "avoid": [
+   "Not the Assassin: no hood, no venom vial, no ambush crouch",
+   "No mask clichés",
+   "Do not show a drawn rapier",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Quiet, practised, always one step from the door.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Blackknife",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-SOOTFINGER": {
+  "identity": "Sootfinger, a Goblin Rogue with a Pauper background: a small-sized, child-sized, quick-footed fencer and treasure runner, named for the soot-black fingers.",
+  "composition": "Full figure in three-quarter view in a springing en garde, rapier extended forward in one hand, the other hand trailing a thin wisp of smoke from a tube.",
+  "details": [
+   "Child-sized body, long pointed ears, large bright eyes, wide mouth showing a tooth",
+   "Fingers and wrists smeared black with soot, soot smudges on the face and cuffs",
+   "Rapier with a swept hilt in the leading hand; dagger tucked into the belt at the back",
+   "Oversized leather coat clearly handed down, sleeves rolled, patched in several places",
+   "Rope-tied cloth shoes, trousers patched at the knees",
+   "Roll of lockpicks at the belt, a short smokestick (a tube with a trailing wisp) in the off hand"
+  ],
+  "must": [
+   "Rapier in the leading hand",
+   "Dagger at the belt",
+   "Lockpick roll at the belt",
+   "Smokestick with a thin wisp of smoke"
+  ],
+  "avoid": [
+   "Not the Goblin monster: no notched blade, no hunched malicious snarl, no crude trophies",
+   "Not a rag-wearing raider: patched but kept clothing",
+   "Do not make it toy-like or cartoonish",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Cheeky, hungry, light on the feet.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Sootfinger",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-HEARTHBELL": {
+  "identity": "Hearthbell, a Dwarf Cleric with a Soldier background: a medium-sized, broad, steady field chaplain of the shield line, named for the small bell at the belt.",
+  "composition": "Full figure in three-quarter view standing guard, heater shield half-raised on the left arm, mace lowered in the right hand, head bent in watchfulness toward unseen wounded behind.",
+  "details": [
+   "Very broad, short, thick build; braided beard with a plain iron ring",
+   "Ring shirt (mail of linked rings) under a plain habit-like surcoat with a single bare circle mark, no lettering",
+   "Hood thrown back over the shoulders, a close-fitting mail coif beneath",
+   "Heater shield strapped to the left forearm, dented and sooted as if from a hearth",
+   "Flanged mace in the right hand",
+   "A small hand-bell hung from the belt by a cord, clapper still",
+   "Two rolls of bandages tucked into the belt"
+  ],
+  "must": [
+   "Mace in the right hand",
+   "Heater shield on the left arm",
+   "Ring shirt under a surcoat",
+   "Small bell hanging at the belt",
+   "Two bandage rolls at the belt"
+  ],
+  "avoid": [
+   "Not the Fighter: no scarred face, no helm, no dagger",
+   "No glowing hands, halo or holy symbol lettering",
+   "Not a comic dwarf",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Gentle, grim, the warm coal in a cold line.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Hearthbell",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-EMBERVOW": {
+  "identity": "Embervow, a Demonborn Cleric with a Noble background: a medium-sized, composed, fallen-noble bodyguard-priest, named for the burnt-down vow cord at the wrist.",
+  "composition": "Full figure in three-quarter view, upright and unhurried, quarterstaff held two-handed and angled across the body in a guarding stance, one flask ready at the belt.",
+  "details": [
+   "Slim, upright, long-limbed build; small curved horns breaking through swept-back hair",
+   "A slender barbed tail emerging from under the cloak hem",
+   "Eyes drawn as dark rings with a tiny white point, unlit",
+   "Quilted gambeson with faded noble trim along cuffs and hem, fine stitching, once-rich and now worn",
+   "Long cloak with a heavy clasp, embroidered hem with no readable device",
+   "Quarterstaff with iron-free wooden ends, worn smooth by use",
+   "Two stoppered holy water flasks hanging at the belt",
+   "A knotted vow cord at the wrist, its ends burnt black and frayed",
+   "Signet ring on one finger"
+  ],
+  "must": [
+   "Quarterstaff held with both hands",
+   "Gambeson",
+   "Two stoppered flasks at the belt",
+   "Horns and a tail"
+  ],
+  "avoid": [
+   "No bat wings, hooves or fiery body: a person with horns and a tail",
+   "No fire, halo or glowing sigil",
+   "Not an Imp or Demon monster",
+   "No sword",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Burnt pride, cold devotion.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Embervow",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-GRAVEGLASS": {
+  "identity": "Graveglass, a Gnome Wizard with a Scholar background: a small-sized, child-sized, long-range arcane scholar, named for the lens of glass and the tomb dust on the hem.",
+  "composition": "Full figure in three-quarter view, one arm raised holding a lit torch up and forward, the other hand holding a short club low, head tilted as if inspecting something just out of frame.",
+  "details": [
+   "Child-sized, adult-faced, large nose, one eye magnified by a flip-down brass-rimmed lens",
+   "Long layered scholar's robe with a scuffed, dust-grey hem and ink-stained sleeves",
+   "Plain short club in one hand",
+   "A lit torch in the other hand, drawn as a short stick with a simple flame in a few broken lines",
+   "A second unlit torch stuck through the belt",
+   "A heavy satchel of books and rolled notes on a strap across the chest",
+   "Soft cap or bare head with thin wispy hair"
+  ],
+  "must": [
+   "A short club in one hand",
+   "A lit torch in the other hand",
+   "A second torch at the belt",
+   "A flip-down lens at one eye"
+  ],
+  "avoid": [
+   "No pointy star-covered hat",
+   "No robot or steampunk goggles beyond one lens",
+   "No spell effects",
+   "Do not give it a staff",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Curious, scholarly, unwisely close to the dark.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Graveglass",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-STARCINDER": {
+  "identity": "Starcinder, an Elf Wizard with an Artisan background: a medium-sized, slender craftsperson-mage, named for the cut-star inlays and singed sleeves.",
+  "composition": "Full figure in three-quarter view, upright and balanced, a fine masterwork quarterstaff held two-handed across the body with the lower end braced, singed sleeves swept back.",
+  "details": [
+   "Tall, slim elf with long pointed ears and a calm, exact expression",
+   "Masterwork quarterstaff: straight-grained wood with fine inlaid star shapes and brass-free tips, noticeably better made than a common staff",
+   "Long robe cinched under a leather artisan's apron with tool loops and a few small tools",
+   "Sleeves singed black at the cuffs; small burn marks on the apron",
+   "A roll of bandages tucked into the apron pocket",
+   "Callused, capable hands; hair tied back with a cord"
+  ],
+  "must": [
+   "Masterwork quarterstaff held with both hands",
+   "Artisan's apron with tool loops",
+   "Bandage roll in the apron",
+   "Pointed elf ears"
+  ],
+  "avoid": [
+   "Not the Sorcerer: no wild windblown hair",
+   "No pointy star-covered hat",
+   "No spell effects, fire or ice drawn",
+   "Not a court elf: no ornate finery",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Patient craft meeting dangerous fire.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Starcinder",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-REDHAND": {
+  "identity": "Redhand, an Orc Berserker with a Farmer background: a medium-sized, huge, field-hardened farmhand turned frenzied axeman, named for the painted handprint on the chest.",
+  "composition": "Full figure in three-quarter view mid-charge, mouth open in a roar, a greataxe raised two-handed over the shoulder ready to chop down.",
+  "details": [
+   "Huge shoulders and a thick neck, grey scarred skin, heavy lower tusks, wild matted hair",
+   "Greataxe: a long haft and a heavy broad single bit, held in both hands",
+   "Hide cuirass (boiled hide breastplate) over bare scarred arms",
+   "A large handprint painted in solid black across the chest, fingers spread, the single dark mark on the cuirass",
+   "Homespun trousers bound at the shin with straw rope, heavy farm boots caked with earth",
+   "Dagger at the belt",
+   "Corded, callused forearms from years of plough and scythe"
+  ],
+  "must": [
+   "Greataxe held with both hands",
+   "Hide cuirass",
+   "A dagger at the belt",
+   "A black handprint on the chest"
+  ],
+  "avoid": [
+   "Not the Orc monster: no trophies, no horned helm",
+   "No gore",
+   "Do not give the figure a shield",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Plain-spoken rage, a farm's patience finally spent.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Redhand",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-CAIRNWRATH": {
+  "identity": "Cairnwrath, a Dwarf Berserker with a Nomad background: a medium-sized, durable executioner of the open country, named for the small stacked cairn stones tied to the belt.",
+  "composition": "Full figure in three-quarter view, planted wide and leaning into a roar, battleaxe held high in both hands overhead, ready to chop down.",
+  "details": [
+   "Very broad, short, thick build; thick braided beard bound with cords and small stones",
+   "Battleaxe: a single broad bit on a medium haft, gripped two-handed",
+   "Hide cuirass (boiled hide breastplate) over a felt tunic, bare scarred forearms",
+   "Dagger at the belt",
+   "A string of small flat stones stacked and tied to the belt like a miniature cairn",
+   "Nomad's felt cloak flung back, a rolled felt shelter bundle bound with cords across the back",
+   "Hard, tall travelling boots wrapped with cord"
+  ],
+  "must": [
+   "Battleaxe held with both hands",
+   "Hide cuirass",
+   "A dagger at the belt",
+   "A small cairn of tied stones at the belt"
+  ],
+  "avoid": [
+   "Not the Fighter: no shield, no mail, no helm",
+   "No horned helm",
+   "Not a comic dwarf",
+   "No gore",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Implacable, patient, the verdict walking in.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Cairnwrath",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-THORNMERE": {
+  "identity": "Thornmere, a Human Ranger with a Scout background: a medium-sized, lean, marsh-and-bramble archer, named for the thorn sprigs woven into the hooded cloak.",
+  "composition": "Full figure in three-quarter view at full draw, shortbow pulled to the cheek with an arrow nocked, the lead foot planted forward and the other braced back.",
+  "details": [
+   "Lean, weathered human with sharp watchful eyes",
+   "Shortbow of plain wood, bowstring drawn, arrow with fletching at the cheek",
+   "Leather coat with a hooded cloak, faded and patched, bramble and thorn sprigs stitched into the hood and shoulders for cover",
+   "Quiver on the hip with a few visible arrow fletchings",
+   "Elven sickle (a slender curved single-edged blade with a leaf-shaped grip) hung at the belt",
+   "Leaf litter clinging to the boots"
+  ],
+  "must": [
+   "Shortbow drawn with an arrow nocked",
+   "Quiver at the hip",
+   "Elven sickle at the belt",
+   "Leather coat with a hooded cloak"
+  ],
+  "avoid": [
+   "Not the Assassin: no hooded crouch, no dagger-first pose",
+   "No animal companion",
+   "No target or enemy drawn",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Silent, unhurried, already aimed.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Thornmere",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-GALEFLETCH": {
+  "identity": "Galefletch, an Elf Ranger with a Courier background: a medium-sized, fast-moving archer messenger, named for the long wind-torn fletching of the arrows.",
+  "composition": "Full figure in three-quarter view mid-stride, a shortbow carried ready in both hands and an arrow half-drawn from the quiver, cloak and hair streaming back in the wind.",
+  "details": [
+   "Slim, long-limbed elf with long pointed ears and a keen, forward gaze",
+   "Shortbow held two-handed, bowstring slack, arrow ready",
+   "Quiver across the back with long arrow fletching feathers streaming in the wind",
+   "Leather coat, light and well mended, with a short travelling cloak blown back",
+   "Elven dagger (a slender double-edged blade with a leaf-shaped grip) at the belt",
+   "Leather dispatch satchel with a buckle and a plain wax seal slung on the hip",
+   "Light boots with wrapped shins built for running"
+  ],
+  "must": [
+   "Shortbow held in both hands",
+   "Elven dagger at the belt",
+   "Dispatch satchel with a wax seal",
+   "Leather coat"
+  ],
+  "avoid": [
+   "Not the Thornmere archer: no hood, no bramble cloak",
+   "Not a court elf: no ornate finery",
+   "No animal companion",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Speed over broken roads.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Galefletch",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-OATHSCALE": {
+  "identity": "Oathscale, a Drakeblood Paladin with a Soldier background: a medium-sized, heavily armoured, scale-skinned oath-bearing soldier, named for the scales on the throat and the oath cord tied on the mace.",
+  "composition": "Full figure in three-quarter view standing upright, heater shield forward on the left arm, mace raised at the shoulder in the right hand, chin lifted.",
+  "details": [
+   "Fine scales along the jaw, neck and backs of the hands, smoother skin elsewhere",
+   "Ridge of small horns on the brow and crown, no wings, no tail",
+   "Breastplate (a plate cuirass) over a padded coat, with a plain worn surcoat of cloth, torn but clean, no device",
+   "Heater shield on the left arm, plain and dented",
+   "Flanged mace in the right hand, a knotted oath cord tied on the haft",
+   "Soldier's open kettle helm carried hanging at the belt rather than worn"
+  ],
+  "must": [
+   "Mace in the right hand",
+   "Heater shield on the left arm",
+   "Breastplate (plate cuirass)",
+   "Ridge horns and scales"
+  ],
+  "avoid": [
+   "No breath weapon, flame or wings",
+   "Do not draw a full dragon head",
+   "Not the Demonborn horns-and-tail look: use ridge horns and scales",
+   "No glowing weapon",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Unbending, old majesty in a human frame.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Oathscale",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-DAWNWARDEN": {
+  "identity": "Dawnwarden, a Human Paladin with a Believer background: a medium-sized, mail-clad, charging protector of the faithful, named for the sunrise device on the shield.",
+  "composition": "Full figure in three-quarter view mid-charge, leaning forward with a targe held out front, mace drawn back at the shoulder, two flasks swinging at the belt.",
+  "details": [
+   "Sturdy human build, jaw set, eyes forward",
+   "Ring shirt (mail of linked rings) under a plain surcoat of cloth, torn at the hem",
+   "Targe: a small round shield with a central boss and a simple rising-sun device of straight rays, no lettering",
+   "Flanged mace drawn back in the right hand",
+   "Two stoppered holy water vials hanging at the belt",
+   "A plain cloak of faded cloth thrown back as the figure moves, a small unlit lantern hooked at the back of the belt"
+  ],
+  "must": [
+   "Mace in the right hand",
+   "Targe (small round shield) on the left arm",
+   "Ring shirt of linked rings",
+   "Two stoppered vials at the belt"
+  ],
+  "avoid": [
+   "Not the Cleric: no kneeling, no quarterstaff",
+   "No glowing sword, halo or wings",
+   "No readable lettering on the shield",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Faith as forward motion.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Dawnwarden",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-MOSSGRAVE": {
+  "identity": "Mossgrave, a Human Druid with a Hermit background: a medium-sized, unkempt, moss-grown recluse and healer, named for the moss that has settled on the coat and shoulders.",
+  "composition": "Full figure in three-quarter view standing still and slightly stooped, a knotted club held low in one hand and the other hand open with the palm outward, head tilted as if listening.",
+  "details": [
+   "Long unkempt beard and hair, bare weathered face, a still, attentive gaze",
+   "Leather coat patched with bark-like cloth, with patches of moss and lichen drawn along the shoulders and collar",
+   "Plain knotted wooden club in one hand",
+   "Open free hand with the palm outward, dirt in the creases",
+   "Feet wrapped in strips of cloth, one boot sole flapping",
+   "A pouch of herbs and a few dried stems tied at the belt, a twig or two in the hair"
+  ],
+  "must": [
+   "A short wooden club in one hand",
+   "Leather coat with moss along the shoulders",
+   "An open palm in the other hand"
+  ],
+  "avoid": [
+   "Not the Tier 3 tradition image: no bark skin or antlers",
+   "No animal companion",
+   "No magical effects or glow",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Solitary, quiet, tender with growing things.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Mossgrave",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-FURROWROOT": {
+  "identity": "Furrowroot, a Halfling Druid with a Farmer background: a small-sized, child-sized, stout, soil-stained field druid, named for the furrow-mud on the boots and the roots at the belt.",
+  "composition": "Full figure in three-quarter view, feet planted wide in a ready stance, an elven sickle held low and curved forward in one hand, a sling coiled in the other.",
+  "details": [
+   "Child-sized, round-faced adult halfling, hair wild and curled, bare broad feet with thick hair on the tops",
+   "Elven sickle (a slender curved single-edged blade with a leaf-shaped grip) in the leading hand",
+   "A sling with a leather pouch of stones coiled in the other hand or looped over the belt",
+   "Leather coat patched at the elbows, sleeves rolled, over a farmhand's smock",
+   "A roll of bandages tied to the belt",
+   "A few roots and a tuft of herbs hung from the belt by their stems",
+   "Boots or leggings thick with furrow mud, straw-brimmed hat pushed back"
+  ],
+  "must": [
+   "Elven sickle in one hand",
+   "Sling with a stone pouch",
+   "Roll of bandages at the belt",
+   "Leather coat"
+  ],
+  "avoid": [
+   "Do not duplicate the Gnome's bandolier and lens silhouette",
+   "Not toy-like or cartoonish",
+   "No magical effects",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Stubborn and kind, rooted in plough-turned ground.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Furrowroot",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-THOUGHTWAKE": {
+  "identity": "Thoughtwake, a Human Psion with a Scholar background: a medium-sized, intent, ink-cuffed mind-fighter, named for the ripple of disturbed hair and cloak that trails behind their thoughts.",
+  "composition": "Full figure in three-quarter view, standing still with two fingers pressed to the temple, club held low in the other hand, hair and cloak lifted behind as if stirred by an unseen current.",
+  "details": [
+   "Spare, intense human with a furrowed brow and narrowed eyes",
+   "Two fingertips pressed to the temple of the bowed head",
+   "Plain short club in the other hand, held low",
+   "Leather coat with ink-stained cuffs and a scholar's pen case at the belt",
+   "Hair and cloak hem drifting backward in thin broken lines of ink, an unseen wake behind the figure",
+   "A scholar's flat cap or bare head with cropped hair"
+  ],
+  "must": [
+   "A short club in one hand",
+   "A leather coat",
+   "Fingers pressed to the temple"
+  ],
+  "avoid": [
+   "Not the Wizard: no staff, no books, no robe",
+   "No glowing eyes, aura or floating objects",
+   "No spell effects",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "A quiet, listening cruelty.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Thoughtwake",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-GNAWTHOUGHT": {
+  "identity": "Gnawthought, a Ratkin Psion with an Alchemist background: a small-sized, child-sized, twitchy, chemical-stained mind-fighter, named for the gnawed hem and the chewed-off glove tips.",
+  "composition": "Full figure in three-quarter view in a wary half-crouch, dagger held low in one hand, the other hand raised with a stoppered acid pot ready to throw.",
+  "details": [
+   "Child-sized body with a rat-like muzzle, long whiskers, round ears and bright watchful eyes",
+   "Long scaly tail curled around the feet",
+   "Leather coat gnawed ragged along the hem, fingerless gloves chewed off at the tips, stained with chemicals",
+   "A stoppered ceramic acid pot with a wax seal in the raised hand",
+   "A second acid pot and a corked glass healing flask hung at the belt",
+   "A short dagger in the low hand",
+   "Scorched leather apron strings and a smear of soot across the muzzle"
+  ],
+  "must": [
+   "Dagger in one hand",
+   "Stoppered ceramic acid pot in the raised hand",
+   "A corked healing flask at the belt",
+   "Leather coat",
+   "A curled tail"
+  ],
+  "avoid": [
+   "Do not make it a plague-ridden scavenger or a monster Ratkin Warrior or Scavenger",
+   "Do not draw it as a literal rat: upright, humanoid, clothed",
+   "No glowing eyes or aura",
+   "No staff or books",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Skittish, bright and dangerous.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Gnawthought",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-ASHBORN": {
+  "identity": "Ashborn, a Demonborn Sorcerer with a Cultist background: a medium-sized, soot-marked, volatile single-target caster, named for the ash smeared across the brow and the cuffs.",
+  "composition": "Full figure in three-quarter view, bare feet apart, one sooty hand held out flat with a few ash flakes drifting from the sleeve, a short club hanging in the other hand.",
+  "details": [
+   "Slim, haggard build, small curved horns breaking through hair",
+   "A slender barbed tail emerging from under the coat hem",
+   "Ash smeared in a stripe across the brow and cheeks, hands and cuffs sooty and scorched",
+   "Leather coat worn under a torn dark cultist's cassock, hood thrown back",
+   "A plain short club in one hand",
+   "Ash flakes and cinder flecks drifting from the sleeve as a few small dark marks, no flame",
+   "Bare, soot-stained feet or wrapped cloth shoes"
+  ],
+  "must": [
+   "A short wooden club in one hand",
+   "Leather coat under a torn dark cassock",
+   "Horns and a tail",
+   "Sooty open hand"
+  ],
+  "avoid": [
+   "No bat wings, hooves or fiery body: a person with horns and a tail",
+   "No fire, flame effect, glow or lettered sigils",
+   "Not an Imp or Demon monster",
+   "No ritual dagger or staff",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Burnt out and waiting to burn again.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Ashborn",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-STORMCROOK": {
+  "identity": "Stormcrook, a Drakeblood Sorcerer with a Shepherd background: a medium-sized, wind-whipped, scale-skinned flock-watcher, named for the hooked shepherd's staff and the storm that follows them.",
+  "composition": "Full figure in three-quarter view, planted wide on the windward side, a crook-topped quarterstaff gripped two-handed and slanted against the wind, cloak and hair torn back.",
+  "details": [
+   "Fine scales along the jaw, neck and the backs of the hands, smoother skin elsewhere",
+   "Ridge of small horns on the brow and crown, no wings, no tail",
+   "Quarterstaff with a hooked shepherd's crook at the top, worn by long handling",
+   "Sling and a pouch of stones coiled at the belt",
+   "Leather coat and a heavy travelling cloak flung out sideways by unseen wind, hair streaming",
+   "A roll of bandages tied at the belt",
+   "Heavy, wrapped herder's boots"
+  ],
+  "must": [
+   "Quarterstaff with a hooked crook top held with both hands",
+   "Sling coiled at the belt",
+   "Roll of bandages at the belt",
+   "Leather coat"
+  ],
+  "avoid": [
+   "No breath weapon, flame or lightning effect drawn",
+   "No wings or full dragon head",
+   "Do not copy the Demonborn look: use ridge horns and scales",
+   "No sheep or animals",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Wind and weather answering the watcher.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Stormcrook",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-SILKSHADE": {
+  "identity": "Silkshade, a Human Assassin with a Performer background: a medium-sized, lithe acrobat-killer, named for the trailing silk sash and the shadow the half-mask throws.",
+  "composition": "Full figure in three-quarter view, balanced on the balls of the feet in a light, poised stance, dagger held in a reverse grip low at the hip, a silk sash trailing behind.",
+  "details": [
+   "Lithe, narrow human build, a performer's poised carriage",
+   "Half-face theatrical mask covering only the eyes and nose, cracked and mended, tie strings at the back",
+   "Close-fitting leather coat cut like a tumbler's jacket, mended cuffs",
+   "Long loose silk sash knotted at the waist, one end trailing in a flowing S-curve",
+   "Dagger in reverse grip, the edge dulled dark",
+   "A bandolier across the chest holding two plain throwing knives",
+   "A corked vial of venom at the belt",
+   "Soft soled boots"
+  ],
+  "must": [
+   "Dagger in reverse grip",
+   "Two throwing knives on a bandolier",
+   "A corked venom vial at the belt",
+   "Half-face mask and a trailing silk sash"
+  ],
+  "avoid": [
+   "Not the Rogue: no lockpicks",
+   "Not the Blackknife rogue: do not repeat the stalking crouch or turned collar",
+   "Do not show the target or gore",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Elegant, quiet, rehearsed.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Silkshade",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-NIGHTLOOM": {
+  "identity": "Nightloom, a Deep Elf Assassin with a Smuggler background: a medium-sized, pale-skinned, dark-clad duellist-poisoner, named for the loom-woven cloak of loose dark threads.",
+  "composition": "Full figure in three-quarter view in a low forward lunge stance, slender elven rapier extended forward in one hand, the elven dagger reversed in the other.",
+  "details": [
+   "Pale skin, long pointed ears, slim graceful build, narrow shadowed eyes",
+   "Deep hood pulled low against daylight, scarf at the throat",
+   "Fine dark leather coat, close fitted, plain trim with no court heraldry",
+   "Long dark cloak woven in fine cross-hatched threads, the hem ending in a ragged fringe of loose strands like a half-unwoven cloth",
+   "Elven rapier: a long, slim blade with a swept elven hilt",
+   "Elven dagger: a slender double-edged blade with a leaf-shaped grip, held reversed in the other hand",
+   "Two corked venom vials and a short smokestick tube at the belt",
+   "Rope coil and small hidden pockets visible at the hip, a smuggler's habit"
+  ],
+  "must": [
+   "Elven rapier in one hand",
+   "Elven dagger in the other hand",
+   "Two venom vials at the belt",
+   "A smokestick at the belt",
+   "Deep hood and long pointed ears"
+  ],
+  "avoid": [
+   "Not the Deep Elf Warrior or Priest monster: no ornate court armour, no hand crossbow",
+   "Not a light-cloaked surface elf: keep dark gear and hood",
+   "No spider imagery",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Silent, deliberate, a thread pulled in the dark.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Nightloom",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-CROWWICK": {
+  "identity": "Crowwick, a Halfling Trickster with an Apprentice background: a small-sized, child-sized, scrap-clothed apprentice illusionist, named for the black crow feather in the hat and the candle-stub wick at the belt.",
+  "composition": "Full figure in three-quarter view up on tiptoe with a grin, a half-unrolled scroll held out in one hand and a short club in the other, as if about to play a trick.",
+  "details": [
+   "Child-sized, round-faced adult halfling, hair wild and curled, bare broad feet with thick hair on the tops",
+   "Oversized hand-me-down leather coat with sleeves rolled many times and hanging past the knees",
+   "A black crow feather tucked into a shapeless cap",
+   "A half-unrolled scroll with a ribbon seal, held out in the left hand, covered in blank wavy lines (no lettering)",
+   "Plain short club held in the other hand",
+   "A stub of candle in a small tin holder clipped to the belt, its wick burnt",
+   "Singed, ink-stained fingertips"
+  ],
+  "must": [
+   "A half-unrolled scroll in one hand",
+   "A short club in the other hand",
+   "A leather coat",
+   "A candle stub at the belt"
+  ],
+  "avoid": [
+   "Do not draw a crow bird or an animal companion",
+   "Do not duplicate the Furrowroot halfling's hat, sickle and sling",
+   "No readable writing on the scroll",
+   "No magical effects or double of the figure",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Grinning, borrowed-coat mischief.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Crowwick",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ },
+ "ART-HER-GILDMIRROR": {
+  "identity": "Gildmirror, a Gnome Trickster with a Merchant background: a small-sized, child-sized, well-dressed duellist-salesperson, named for the gilt-framed hand mirror carried in the off hand.",
+  "composition": "Full figure in three-quarter view in a dapper fencing en garde, an elven rapier extended forward in one hand, a gilt hand mirror raised in the other as if flashing it at an unseen opponent.",
+  "details": [
+   "Child-sized, adult-faced, large nose, bright shrewd eyes, neat pointed beard or sideburns",
+   "Elven rapier: a long, slim blade with a swept elven hilt, extended forward",
+   "Hand mirror with an ornate gilt frame and a blank oval face, raised in the off hand",
+   "Fine leather coat with a row of gilt buttons, trimmed cuffs, a merchant's moneybag at the belt",
+   "A roll of bandages tucked into the belt",
+   "A bunched merchant's cap or bare head with neat hair; polished buckled boots"
+  ],
+  "must": [
+   "Elven rapier extended in one hand",
+   "A gilt-framed hand mirror in the other hand",
+   "Leather coat with buttons",
+   "A roll of bandages at the belt"
+  ],
+  "avoid": [
+   "Do not draw a second figure or a mirror double",
+   "Do not turn it into a steampunk robot",
+   "Do not duplicate the Graveglass gnome's lens and satchel silhouette",
+   "Not toy-like or cartoonish",
+   "No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper",
+   "No frame, border, panel box or vignette edge",
+   "No lettering, runes, name or caption anywhere, including on shields, scrolls and banners",
+   "Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet",
+   "No glow, aura, magical effect or speed lines"
+  ],
+  "atmosphere": "Dapper, calculating, all flourish.",
+  "sources": [
+   "B.4 Basic Mode Hero Profiles: Gildmirror",
+   "6.9 Ancestries",
+   "6.10 Backgrounds",
+   "6.13 Hero Classes"
+  ]
+ }
+}

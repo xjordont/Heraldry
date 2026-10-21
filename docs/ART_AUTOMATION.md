@@ -9,9 +9,9 @@ This document is the current state; the dated history is in `production/STATE.md
 
 ## Scope
 
-`tools/art_catalog.py` derives the catalog deterministically from the current manuscript. It covers every heading whose first block is flavour text, plus the cover and the 11 chapter openers. It writes `production/art/SPOT_CATALOG.json`.
+`tools/art_catalog.py` derives the catalog deterministically from the current manuscript. It covers every heading whose first block is flavour text, the cover and the 11 chapter openers, and (since RC512) the 24 Basic Mode Hero profiles of Appendix B.4. It writes `production/art/SPOT_CATALOG.json`.
 
-There are 275 entries:
+There are 299 entries:
 
 | Family | Count |
 |---|---|
@@ -21,6 +21,7 @@ There are 275 entries:
 | Bosses | 15 |
 | Tradition tiers | 15 |
 | Classes | 12 |
+| Basic Mode Heroes | 24 |
 | Ancestries | 11 |
 | Campaign rooms | 11 |
 | Chapter openers | 11 |
@@ -30,7 +31,7 @@ There are 275 entries:
 | Equipment sections | 2 |
 | Cover | 1 |
 
-Flavour text is quoted verbatim in every prompt.
+Flavour text is quoted verbatim in every prompt. Hero profiles have no flavour text: each `hero` entry reads its class, ancestry, background, size and equipment names from the profile, and its brief (`production/art/briefs/heroes.json`) adds the visual identity from the Hero's name. A hero is one alone, full-length figure from head to ground on blank white paper (2:3, 1.9 in wide, `person` references, one generation). Hero art is generated and approved like any other family, but no layout slot is wired yet: approved hero art is not placed until the owner asks for a layout pass.
 
 ## Art direction and prompts
 
