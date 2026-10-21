@@ -4,27 +4,22 @@
 #let small(t) = text(size: 9.5pt, t)
 
 #side(..head, face: "front")[
-  #grid(columns: (1fr, 34pt, 1fr), rows: (auto, 50pt, auto), align: (x, y) => if x == 1 or y == 1 { center + horizon } else { top },
-    stage(1, [Expedition])[
+  #cycle(
+    (1, [Expedition], [
       After choosing the Active Party, before the battlefield, each party rolls *1d10* on the Expedition Event Table (back). Apply it now unless it names a later setup timing.
       #v(3pt)
-      #small[Same timing: the Setup Roll-off winner orders them. Roll-off effects apply before that roll.]],
-    forged-h(34pt),
-    stage(2, [Skirmish])[
-      Generate the battlefield, deploy and play the adventure (Player Aid 10).
+      #small[Same timing: the Setup Roll-off winner orders them. Roll-off effects apply before that roll.]]),
+    (2, [Skirmish], [
+      Generate the battlefield, deploy, and play the adventure (Player Aid 10).
       #v(3pt)
-      #small[An allied Hero adjacent to a death marker may *Interact* (1 AP) to recover a dead Hero's items; secured only if they extract.]],
-    forged-v(36pt, up: true),
-    arms(11, w: 46pt),
-    forged-v(36pt),
-    stage(4, [Town])[
-      Spend *4 TAP* on Town actions (Player Aid 9). Some Journey results change the TAP or give a discount for this Town Phase only.],
-    forged-h(34pt, back: true),
-    stage(3, [Aftermath])[
+      #small[An allied Hero adjacent to a death marker may *Interact* (1 AP) to recover a dead Hero's items; secured only if they extract.]]),
+    (3, [Aftermath], [
       Every adventure, won or lost:
-      #steps[*Secure:* secured Coins to the Treasury, unequipped items to Storage, once each.][*The fallen:* apply rolled results. A dead Hero leaves the Roster; keep the record until the next adventure, for resurrection.][*Journey home:* roll *1d20* on the Climate's Journey Table.]],
-  )
-  #v(6pt)
+      #steps[*Secure:* secured Coins to the Treasury, unequipped items to Storage, once each.][*The fallen:* apply rolled results. A dead Hero leaves the Roster; keep the record until the next adventure, for resurrection.][*Journey home:* roll *1d20* on the Climate's Journey Table.]]),
+    (4, [Town], [
+      Spend *4 TAP* on Town actions (Player Aid 9). Some Journey results change the TAP or give a discount for this Town Phase only.]),
+    arms(11, w: 46pt))
+  #v(12pt)
   #block(width: 100%, stroke: (top: 0.5pt + ink, bottom: 0.5pt + ink), inset: (y: 6pt))[
     *Start of the next adventure:* refresh each Hero's normal resources, *then* apply Journey results, *then* Expedition Events.]
   #v(8pt)
@@ -63,14 +58,14 @@
   #grid(columns: (1fr, 1fr), column-gutter: 18pt,
   [
     #aside-head(seed: 2, size: 16pt)[Journey Home]
-    Roll *1d20* on the Journey Table of the Climate just completed (§11.2.3). A discount, free service or similar benefit applies to the very next Town Phase only. A more specific scenario or campaign rule wins any conflict.
+    Roll *1d20* on the Journey Table of the Climate just completed (§11.2.3). A discount, free service, or similar benefit applies to the very next Town Phase only. A more specific scenario or campaign rule wins any conflict.
   ],
   [
     #aside-head(seed: 4, size: 16pt)[Keep a Record]
     Between adventures, record enough to resume:
     #dot[the Roster and Active Party;]
-    #dot[each Hero's Level, Wounds, advancement and lasting rewards;]
+    #dot[each Hero's Level, Wounds, advancement, and lasting rewards;]
     #dot[Treasury and Storage; Hirelings and Animal Companions;]
-    #dot[Stronghold Components; any death, retirement, Journey result or injury that still matters.]
+    #dot[Stronghold Components; any death, retirement, Journey result, or injury that still matters.]
   ])
 ]

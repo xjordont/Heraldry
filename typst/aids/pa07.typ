@@ -10,7 +10,7 @@
     #v(5pt)
     #caps[Blocked by]
     #dot[Blocking Terrain;]
-    #dot[a solid floor, roof or platform between;]
+    #dot[a solid floor, roof, or platform between;]
     #dot[1″ or more of continuous Cover Terrain between the spaces (Grid: crossing the interior of a Cover square neither occupies);]
     #dot[Grid: touching a corner shared by 2 Blocking squares.]
     #v(4pt)
@@ -35,14 +35,14 @@
     #dot[the sight line crosses a combatant of your Sz or larger that is not Prone or Knocked Out;]
     #dot[a rule says so.]
     #v(4pt)
-    *Effect:* ranged and thrown weapon attacks and non-area damaging ranged Powers roll base dice with *Disadvantage*; the caster's harmful LOS-based Power Checks have Disadvantage. Never melee, Areas or hazards. Binary: never stacks.
+    *Effect:* ranged and thrown weapon attacks and non-area damaging ranged Powers roll base dice with *Disadvantage*; the caster's harmful LOS-based Power Checks have Disadvantage. Never melee, Areas, or hazards. Binary: never stacks.
     #gap-v
     #aside-head(seed: 4)[Hidden]
     *Hide (1 AP):* be outside every enemy's LOS, or in Cover (not from a combatant) from each enemy with LOS and none within your *Hide distance* (2″). Not while Engaged or carrying a Light Source.
     #v(4pt)
-    *Lose Hidden* when you take damage, become Engaged, an enemy within Hide distance has LOS, an enemy with LOS has you out of Cover, you are Spotted, you Push or Trip, an enemy moves through your space, or after your first attack, harmful Power or Special Ability.
+    *Lose Hidden* when you take damage, become Engaged, an enemy within Hide distance has LOS, an enemy with LOS has you out of Cover, you are Spotted, you Push or Trip, an enemy moves through your space, or after your first attack, harmful Power, or harmful Special Ability.
     #v(4pt)
-    *Check* after each Move or Shift, each action, Power or Reaction, and at the end of each activation.
+    *Check* after each Move or Shift, each action, Power, or Reaction, and at the end of each activation.
     #v(4pt)
     *Spot (1 AP):* INT or SPI Check (higher) against 12.
   ])
@@ -61,15 +61,15 @@
   [
     #aside-head(seed: 5, size: 16pt)[Terrain Tags]
     #dot[*Difficult:* 2″ per 1″ (Grid: 2″ orthogonal, 3″ diagonal).]
-    #dot[*Dangerous:* entering, crossing or ending movement in it applies its hazard, at most once per movement.]
+    #dot[*Dangerous:* entering, crossing, or ending movement in it applies its hazard, at most once per movement.]
     #dot[*Slippery:* first voluntary move through it each activation: DEX Check; fail: Prone, movement ends. Anyone made Prone or falling on it Slides 2″ in their direction of travel.]
     #dot[*Shallow Water:* Difficult; no Cover by itself.]
-    #dot[*Deep Water:* swim at the surface; Difficult; cannot be Prone; Disadvantage on attack damage, STR and DEX Checks. *Swim* ignores all of this.]
+    #dot[*Deep Water:* swim at the surface; Difficult; cannot be Prone; Disadvantage on attack damage, STR Checks, and DEX Checks. *Swim* ignores all of this.]
     #gap-v
     #aside-head(seed: 7, size: 16pt)[Elevation]
     #dot[*Higher:* 2″ or more above. Attacks on the lower enemy: base dice with *Advantage*.]
     #dot[Raised ground with no stated height is 2″.]
-    #dot[Elevation changes only adjacency and melee distance, not range, LOS, Cover or Areas.]
+    #dot[Elevation changes only adjacency and melee distance, not range, LOS, Cover, or Areas.]
   ],
   [
     #aid-table((60pt, 1fr), ("key", "text"), ("Area", "Shape"), (
@@ -79,7 +79,7 @@
     ), title: [Areas of Effect], size: 10pt)
     #dot[A cone or line starts at its source and never affects its source.]
     #dot[Hits anything it touches; Grid: squares whose centre is inside, ties outward.]
-    #dot[Cannot pass Blocking Terrain or a solid floor, roof or platform. Cover never protects; Hidden and Invisible are still hit.]
+    #dot[Cannot pass Blocking Terrain or a solid floor, roof, or platform. Cover never protects; Hidden and Invisible are still hit.]
     #dot[Roll damage once; apply it to each target separately.]
     #dot[Measured flat: elevation adds no distance.]
   ])

@@ -4,28 +4,23 @@
 #let small(t) = text(size: 9.5pt, t)
 
 #side(..head, face: "front")[
-  #grid(columns: (1fr, 34pt, 1fr), rows: (auto, 56pt, auto), align: (x, y) => if x == 1 or y == 1 { center + horizon } else { top },
-    stage(1, [Initiative Phase])[
+  #cycle(
+    (1, [Initiative Phase], [
       #steps[Refresh AP to maximum.][Each side rolls *1d20 + Party Leader's INT + SPI*; higher wins. No Leader on the battlefield: another allied Hero; no Hero: no modifier.][The winner chooses which side activates first.][Resolve start-of-round effects.]
       #v(4pt)
-      #small[*Ties:* highest DEX among the Heroes rolled (if both sides used one); then, from Round 2, last round's winner; then roll again.]],
-    forged-h(34pt),
-    stage(2, [Party Phase])[
+      #small[*Ties:* highest DEX among the Heroes rolled (if both sides used one); then, from Round 2, last round's winner; then roll again.]]),
+    (2, [Party Phase], [
       #dot[Sides alternate activating *one* eligible combatant at a time.]
       #dot[Each combatant activates *once* per round and must spend at least 1 AP, unless it can take no action.]
       #dot[A side *Passes* only when it has no eligible combatant; then it activates no one else this round, not even a new Summon. Its unspent AP still pays for Reactions.]
-      #dot[Ends when every side has Passed.]],
-    forged-v(40pt, up: true),
-    arms(3, w: 46pt),
-    forged-v(40pt),
-    stage(4, [End of Round])[
-      #steps[Resolve end-of-round effects (timing order, back).][End "until the end of the round" effects; remove Temporary HP.][Remove unspent AP.][Resolve scoring, extraction, round limits and victory.]],
-    forged-h(34pt, back: true),
-    stage(3, [Monster Phase])[
+      #dot[Ends when every side has Passed.]]),
+    (3, [Monster Phase], [
       #steps[Resolve wake-up rules.][Each Awake Group activates in ascending Group number (Player Aid 2).]
       #v(4pt)
-      #small[A Boss acts by *Relentless Assault* during the Party Phase instead.]],
-  )
+      #small[A Boss acts by *Relentless Assault* during the Party Phase instead.]]),
+    (4, [End of Round], [
+      #steps[Resolve end-of-round effects (timing order, back).][End "until the end of the round" effects; remove Temporary HP.][Remove unspent AP.][Resolve scoring, extraction, round limits, and victory.]]),
+    arms(3, w: 46pt))
   #v(12pt)
   #grid(columns: (1fr, 1fr, 1fr), column-gutter: 18pt,
   [

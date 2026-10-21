@@ -36,7 +36,7 @@
       [*Weather:* roll or choose; record, don't place.],
       [*Setup Roll-off,* unless the scenario replaces it.],
       [*Terrain:* fix deployment zones (scenario silent: winner picks an edge, 6″ deep, or an 8″ × 8″ corner; the other party takes the opposite). Place required terrain, then alternate the rest, Roll-off loser first. Alternately placed Impassable and Blocking Terrain stays out of deployment zones; Blocking pieces more than 2″ apart.],
-      [*Objectives and markers:* scenario, Secondary Objective and Weather markers, outside deployment zones; alternate Weather markers, loser first.],
+      [*Objectives and markers:* scenario, Secondary Objective, and Weather markers, outside deployment zones; alternate Weather markers, loser first.],
       [*Monsters:* generate and place the Groups.],
       [*Guard Points:* as the scenario directs, else the default.],
       [*Deploy:* alternate placing Heroes, Roll-off loser first, unless the scenario orders it.],
