@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`e1ec610a`](https://github.com/xjordont/Heraldry/commit/e1ec610ae014cbfda93307d5923ff15c3e556286) art(gpt): ART-HER-SILKSHADE .. ART-HER-SILKSHADE
 - [`1cb08adc`](https://github.com/xjordont/Heraldry/commit/1cb08adc8daa79817e4a1a4c1b0f1b88560a1e70) art: intake of ChatGPT Work images
 - [`153d3867`](https://github.com/xjordont/Heraldry/commit/153d386725a859b55bbf4248c5039efb8d87e266) art(gpt): ART-HER-REDHAND .. ART-HER-REDHAND
 - [`874851a5`](https://github.com/xjordont/Heraldry/commit/874851a513ecf7e0240c01b035c0192e5ba20947) Merge branch 'main' of https://github.com/xjordont/Heraldry
 - [`039b1ffb`](https://github.com/xjordont/Heraldry/commit/039b1ffba1f82e6a93a0aa56fdb89233f189e767) docs: player-aid design and art direction, with a Monster AI specimen
 - [`1cda6fb6`](https://github.com/xjordont/Heraldry/commit/1cda6fb61fa40ce9ea1b6f4241a1b7ba85b5922b) art: intake of ChatGPT Work images
-- [`fcd9be96`](https://github.com/xjordont/Heraldry/commit/fcd9be96ef739a3bb953a7946049866eccdf4ecf) art(gpt): ART-HER-OATHSCALE .. ART-HER-OATHSCALE
 
 <!-- END AUTO:recent -->
 
