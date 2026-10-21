@@ -25,7 +25,7 @@ def json_bytes(value):
     return (json.dumps(value, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
 
 
-def normalise(raw, current):
+def normalise(raw, current, target_rc=None):
     """Only remove a UTF-8 BOM, normalise line endings, and manage the RC marker."""
     text = raw.decode("utf-8-sig").replace("\r\n", "\n").replace("\r", "\n")
     if "\x00" in text:
@@ -34,8 +34,11 @@ def normalise(raw, current):
     if len(markers) != 1 or markers[0][1] != markers[0][2]:
         raise ValueError("Input needs exactly one **Release Candidate N (RCN)** line with matching numbers")
     incoming = int(markers[0][1])
-    if incoming not in {current, current + 1}:
-        raise ValueError(f"Input identifies RC{incoming}; use the current RC{current} or next RC{current + 1} marker")
+    if target_rc is not None and (type(target_rc) is not int or target_rc <= current):
+        raise ValueError("Target RC must be an integer greater than the current RC")
+    if incoming not in {current, current + 1} and incoming != target_rc:
+        raise ValueError(f"Input identifies RC{incoming}; use the current RC{current} or next RC{current + 1} marker, "
+                         "or an owner-authorised --target-rc matching the supplied marker")
     marker = f"**Release Candidate {current} (RC{current})**"
     text = text[:markers[0].start()] + marker + text[markers[0].end():]
     return text, {"incoming_rc": incoming, "utf8_bom_removed": raw.startswith(b"\xef\xbb\xbf"),
@@ -189,26 +192,30 @@ def impact(root, original, proposed):
             "line_numbers_shift": any(i2 - i1 != j2 - j1 for _, i1, i2, j1, j2 in changed)}
 
 
-def analyse(root, raw):
+def analyse(root, raw, target_rc=None):
     root = Path(root)
     old = check(root)
     original = (root / old["path"]).read_text(encoding="utf-8")
-    proposed, normalisations = normalise(raw, old["number"])
+    proposed, normalisations = normalise(raw, old["number"], target_rc)
+    number = target_rc if target_rc is not None else old["number"] + 1
     if proposed == original:
         raise ValueError("No manuscript text changes after normalisation; no revision is needed")
     marker = f"**Release Candidate {old['number']} (RC{old['number']})**"
     patches = exact_patches(original, proposed, marker)
-    candidate = proposed.replace(marker, f"**Release Candidate {old['number'] + 1} (RC{old['number'] + 1})**", 1)
+    candidate = proposed.replace(marker, f"**Release Candidate {number} (RC{number})**", 1)
     candidate_bytes = candidate.encode("utf-8")
     report = {"schema": SCHEMA, "base_rc": old["number"], "base_sha256": old["sha256"],
-              "next_rc": old["number"] + 1, "input_sha256": digest(raw),
+              "next_rc": number, "input_sha256": digest(raw),
               "candidate_sha256": digest(candidate_bytes), "normalisations": normalisations,
               "configuration_sha256": {name: digest((root / name).read_bytes()) for name in CONFIGS},
               "impact": impact(root, original, proposed)}
     batch = {"base_sha256": old["sha256"], "import": {"input_sha256": digest(raw),
              "candidate_sha256": digest(candidate_bytes), "normalisations": normalisations}, "patches": patches}
+    if target_rc is not None:
+        report["target_rc"] = target_rc
+        batch["target_rc"] = target_rc
     diff_lines = difflib.unified_diff(original.splitlines(keepends=True), candidate.splitlines(keepends=True),
-                                    fromfile=old["path"], tofile=f"source/Heraldry_RC{old['number'] + 1}.md")
+                                    fromfile=old["path"], tofile=f"source/Heraldry_RC{number}.md")
     diff = "".join(line if line.endswith("\n") else line + "\n\\ No newline at end of file\n" for line in diff_lines)
     return report, batch, candidate_bytes, diff.encode("utf-8")
 
@@ -220,12 +227,12 @@ def review_location(root, path):
     return path
 
 
-def prepare(root, input_path, review_dir=None):
+def prepare(root, input_path, review_dir=None, target_rc=None):
     root, input_path = Path(root), Path(input_path)
     if input_path.suffix.lower() not in {".md", ".markdown"}:
         raise ValueError("Supply a UTF-8 Markdown (.md or .markdown) manuscript")
     raw = input_path.read_bytes()
-    report, batch, candidate, diff = analyse(root, raw)
+    report, batch, candidate, diff = analyse(root, raw, target_rc)
     suffix = digest(json_bytes(report["configuration_sha256"]))[:8]
     path = review_location(root, review_dir or root / f"build/manuscript-updates/RC{report['next_rc']}-{digest(raw)[:12]}-{suffix}")
     path.mkdir(parents=True, exist_ok=False)
@@ -271,7 +278,7 @@ def apply_review(root, review_dir, reason, authorization, approve=False):
     current = check(root)
     if current["sha256"] != recorded.get("base_sha256"):
         raise ValueError("Review base is stale; prepare against the current manuscript and review again")
-    report, batch, candidate, diff = analyse(root, (path / "incoming.md").read_bytes())
+    report, batch, candidate, diff = analyse(root, (path / "incoming.md").read_bytes(), recorded.get("target_rc"))
     if report != {key: value for key, value in recorded.items() if key != "files"}:
         raise ValueError("Review analysis/configuration changed; prepare and review again")
     if (candidate != (path / "candidate.md").read_bytes() or diff != (path / "changes.diff").read_bytes()
@@ -292,7 +299,8 @@ def main(argv=None):
     prep = sub.add_parser("prepare", help="prepare a review bundle without changing the active manuscript")
     prep.add_argument("--input", required=True, type=Path)
     prep.add_argument("--review-dir", type=Path)
-    apply = sub.add_parser("apply", help="promote an explicitly approved review to the next RC")
+    prep.add_argument("--target-rc", type=int, help="explicit owner-authorised higher revision number, bound into the review")
+    apply = sub.add_parser("apply", help="promote an explicitly approved review to its reviewed RC")
     apply.add_argument("--review-dir", required=True, type=Path)
     apply.add_argument("--approve", action="store_true")
     apply.add_argument("--reason", required=True)
@@ -300,7 +308,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     try:
         if args.command == "prepare":
-            path, report = prepare(ROOT, args.input, args.review_dir)
+            path, report = prepare(ROOT, args.input, args.review_dir, args.target_rc)
             print(f"Review bundle: {path}")
             print(f"RC{report['base_rc']} -> RC{report['next_rc']}: +{report['impact']['lines_added']} / -{report['impact']['lines_removed']} text lines")
             print("Affected figures: " + (", ".join(report["impact"]["affected_figures"]) or "none"))

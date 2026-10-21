@@ -18,7 +18,7 @@ The build-request and visual-review publishing helpers require a clean, current 
 
 | Track | Authoritative files | Version and review |
 |---|---|---|
-| Manuscript text | `source/versions.json`, immutable `source/Heraldry_RC###.md`, `editorial/history/RC###.json` | Each approved text-patch batch advances RC by exactly one; retain all earlier snapshots and exact patch evidence |
+| Manuscript text | `source/versions.json`, immutable `source/Heraldry_RC###.md`, `editorial/history/RC###.json` | Each approved text-patch batch creates one new RC (normally the next number; reviewed owner-authorised imports may jump forward); retain all earlier snapshots and exact patch evidence |
 | Atmospheric artwork | `production/art/ART_MANIFEST.json`, `assets/art/incoming/` | Git commits and asset manifest; no manuscript bump; review the art itself now, and fit and repagination at the next requested build |
 | Rules figures | `figures/src/`, `figures/out/`, manifests, `config/figure_dependencies.json` | Git commits; semantic review bound to SVG, caption and dependent rule sections; no manuscript bump unless rules prose changes |
 | Layout and publishing | `typst/`, `config/design_tokens.json`, `tools/`, `editorial/how_to_use.json` | Git commits; PDF/visual QA at the next requested build; no manuscript bump |
@@ -27,9 +27,9 @@ Use descriptive commits such as `text(RC486): clarify ...`, `art: add ...`, `fig
 
 ## Manuscript changes
 
-For a complete updated Markdown manuscript, use the reviewed import path in [MANUSCRIPT_UPDATES.md](MANUSCRIPT_UPDATES.md): `python tools/dev.py manuscript prepare --input <file.md>`, inspect its exact diff/candidate and impact report, then run its explicit `apply --approve` command with the actual owner authorization. Preparation changes no active manuscript or production evidence. Approval calls the same revision engine described below, checks the exact candidate hash and current base, and creates one next RC. No PDF build, commit, or push occurs automatically.
+For a complete updated Markdown manuscript, use the reviewed import path in [MANUSCRIPT_UPDATES.md](MANUSCRIPT_UPDATES.md): `python tools/dev.py manuscript prepare --input <file.md>`, inspect its exact diff/candidate and impact report, then run its explicit `apply --approve` command with the actual owner authorization. Preparation changes no active manuscript or production evidence. Approval calls the same revision engine described below, checks the exact candidate hash and current base, and creates one new RC (normally the next number; explicit import targets may jump forward). No PDF build, commit, or push occurs automatically.
 
-RC485 contains the seven previously authorized clarifications P-01–P-07, promoted from the former RC484 publication patch layer. RC484 remains byte-for-byte the supplied original. The published version now accurately identifies the interactive manuscript snapshot.
+RC485 contains the seven previously authorized clarifications P-01â€“P-07, promoted from the former RC484 publication patch layer. RC484 remains byte-for-byte the supplied original. The published version now accurately identifies the interactive manuscript snapshot.
 
 One revision represents one approved, committed batch. Several related replacements approved together can share a revision; a subsequent text-patch batch always increments again. Whitespace, wording, values, table cells and rules edits all count as manuscript text changes. Artwork or a changed page count alone does not. Do not overwrite RC485 to prepare RC486, or make changes only in generated Typst/PDF text.
 

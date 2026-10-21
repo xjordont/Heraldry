@@ -128,6 +128,47 @@ class ManuscriptUpdates(unittest.TestCase):
         self.assertEqual(self.snapshot(), before)
         self.assertFalse((self.bundle / "approved-patches.json").exists())
 
+    def test_explicit_version_jump_preserves_exact_input_and_parent(self):
+        raw = self.proposed.replace("484 (RC484)", "512 (RC512)").encode("utf-8")
+        self.incoming.write_bytes(raw)
+        with self.assertRaises(ValueError):
+            self.prepare()
+        _, report = prepare(self.root, self.incoming, self.bundle, target_rc=512)
+        self.assertEqual(report["next_rc"], 512)
+        result = self.apply(approve=True)
+        self.assertEqual(result, check(self.root))
+        self.assertEqual(result["parent_sha256"], self.base_sha)
+        self.assertEqual((self.root / result["path"]).read_bytes(), raw)
+        self.assertFalse((self.root / "source/Heraldry_RC485.md").exists())
+
+    def test_invalid_jump_targets_and_changed_review_target_refuse(self):
+        for target in (484, 483, True, "512"):
+            with self.subTest(target=target), self.assertRaises(ValueError):
+                analyse(self.root, self.incoming.read_bytes(), target)
+        prepare(self.root, self.incoming, self.bundle, target_rc=512)
+        summary = self.bundle / "summary.json"
+        data = json.loads(summary.read_bytes())
+        data["target_rc"] = 513
+        summary.write_text(json.dumps(data), encoding="utf-8")
+        before = self.snapshot()
+        with self.assertRaisesRegex(ValueError, "analysis/configuration changed"):
+            self.apply(approve=True)
+        self.assertEqual(self.snapshot(), before)
+
+    def test_jump_history_requires_import_evidence(self):
+        prepare(self.root, self.incoming, self.bundle, target_rc=512)
+        result = self.apply(approve=True)
+        evidence_path = self.root / result["patch_file"]
+        evidence = json.loads(evidence_path.read_bytes())
+        del evidence["target_rc"]
+        evidence_path.write_text(json.dumps(evidence), encoding="utf-8")
+        registry_path = self.root / "source/versions.json"
+        registry = json.loads(registry_path.read_bytes())
+        registry["revisions"][-1]["patch_sha256"] = hashlib.sha256(evidence_path.read_bytes()).hexdigest()
+        registry_path.write_text(json.dumps(registry), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "jump needs"):
+            check(self.root)
+
     def test_changed_bundle_files_refuse_before_promotion(self):
         self.prepare()
         before = self.snapshot()

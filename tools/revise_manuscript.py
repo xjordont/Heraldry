@@ -145,7 +145,11 @@ def _revise(root, patch_path, reason, authorization):
     original = (root / old["path"]).read_text(encoding="utf-8")
     if text == original:
         raise ValueError("Batch has no net text change")
-    number = old["number"] + 1
+    number = batch.get("target_rc", old["number"] + 1)
+    if type(number) is not int or number <= old["number"]:
+        raise ValueError("Target RC must be an integer greater than the current RC")
+    if number != old["number"] + 1 and not isinstance(batch.get("import"), dict):
+        raise ValueError("Version jumps require a reviewed manuscript import")
     old_marker = f"**Release Candidate {old['number']} (RC{old['number']})**"
     new_marker = f"**Release Candidate {number} (RC{number})**"
     if text.count(old_marker) != 1:
