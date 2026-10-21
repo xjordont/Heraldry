@@ -9847,5 +9847,71 @@
    "max_print_w_in_300ppi": 3.09
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-NIGHTLOOM": {
+  "family": "hero",
+  "title": "Nightloom",
+  "heading_id": "h-nightloom",
+  "route": "gpt",
+  "spec_sha256": "91991a97c9ca5f90a36e7f4dd14dea90d2edede0ff64dcbf1b2ad97a416f2777",
+  "prompt_sha256": "97733bc73c2e0be1052219b3615cbf4ccd9019f1a5eddf1ea74b13a2ef96f0d5",
+  "status": "received",
+  "received_at": "2026-10-21T20:17:05+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flagged possible grey wash (10% midtones); visual review sees crosshatching. Required details present; preserve warning.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-NIGHTLOOM.png",
+   "sha256": "5c62940c8e61286fbb833dc91395f3b2ec347d16ee242c66feffd1fe5301250f",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-NIGHTLOOM.png",
+   "sha256": "ed9942f39259df0f17b8f8684ed86799c08096fd8e38c91b8e5d15c38e8ed072",
+   "px": [
+    980,
+    1466
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.267
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-OATHSCALE": {
+  "family": "hero",
+  "title": "Oathscale",
+  "heading_id": "h-oathscale",
+  "route": "gpt",
+  "spec_sha256": "1fcce45122678592f3b1e664697d2d26eef9dedeae3d8e24a3c4ccaf9076e4ed",
+  "prompt_sha256": "3480e661863b6077dbb370ea8655bcd775841291212efef4b8ef9d6c86a79842",
+  "status": "received",
+  "received_at": "2026-10-21T20:20:40+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Required belt dagger is not clearly visible; face has a strongly draconic snout that may conflict with no full dragon head. Checker warned narrow margin (2.1%). Preserve for review.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-OATHSCALE.png",
+   "sha256": "610c84389f201b9c9b0e297a196e95cb71024dd22eb92dec0fb009d38c3416b1",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-OATHSCALE.png",
+   "sha256": "ea441ce3e4f988630e523567219db4400c36e3b35ae50082b062eed4c216e780",
+   "px": [
+    811,
+    1494
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.703
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
