@@ -9352,5 +9352,38 @@
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
   "approved_at": "2026-10-13T17:19:59+00:00"
+ },
+ "ART-HER-ASHBORN": {
+  "family": "hero",
+  "title": "Ashborn",
+  "heading_id": "h-ashborn",
+  "route": "gpt",
+  "spec_sha256": "ff2a77b26140cba4457175c3112fa8ef9c5cfc098008d296f35b0ab19e253926",
+  "prompt_sha256": "d812f9983b8c68ead3a213c202a0f6d84e0cae1aa1cbae5636cce02739bd1f6a",
+  "status": "received",
+  "received_at": "2026-10-21T15:15:35+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "Tripwire warned of 9.36% mid-gray pixels; visual inspection found high-contrast ink hatching on white paper, not a visible grey wash.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-ASHBORN.png",
+   "sha256": "bd622b27cf260136aa3c66e38a1a12a8fdbc0b29cce447226dc0371305c37e64",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-ASHBORN.png",
+   "sha256": "7266e12a13646023197c1916f2a71f0fd54efc9e753c1283a92ada84244b312e",
+   "px": [
+    863,
+    1479
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 2.877
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
