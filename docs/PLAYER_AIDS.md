@@ -1,6 +1,6 @@
 # Player aids: design and art direction
 
-Status: direction proposed 2026-10-21 at the owner's request ("a consistent well thought out design and art direction across all reference sheets ... medieval heraldic grimdark fantasy ... mainly b&w ink penned design elements"). The owner chooses the production route (section 10). No player-aid sheet has been released. The specimen in section 12 is a design proof, not reviewed rules text. Physical print is **NOT TESTED**.
+Status: direction proposed 2026-10-21; production route chosen the same day (Route A, section 10) at the owner's request ("a consistent well thought out design and art direction across all reference sheets ... medieval heraldic grimdark fantasy ... mainly b&w ink penned design elements"). The owner chooses the production route (section 10). No player-aid sheet has been released. The specimen in section 12 is a design proof, not reviewed rules text. Physical print is **NOT TESTED**.
 
 The player aids are a companion series of printable reference sheets for the table. They are not part of the manuscript, and they do not advance the RC number. Adding them, or a pointer to them, inside the book's appendices is a manuscript change that needs its own owner decision.
 
@@ -15,7 +15,7 @@ The sheets are the book's design system turned outward, not a new style. A playe
 Everything below comes from the book's "Grim Heraldry" system (`docs/BOOK_DESIGN_PLAN.md`, `config/design_tokens.json`, `typst/templates/system.typ`). Where this document is silent, the book's rules apply.
 
 - **Marks:** the owner-approved armoury only (BOOK_DESIGN_PLAN section 12): chapter arms, the broken-castle logo, the engraved shield, the brush rule, the banner tag, the corner flourish, the lozenge and the coin. No new emblems, skulls, occult glyphs or clip-art icons.
-- **Type:** the book's four families. Grenze Gotisch for titles and panel heads only, never in all capitals and never for running text or numbers. Source Sans 3 for all diagram text, labels and numbers. Source Serif 4 for any longer rules note. IM FELL English for one optional line of source flavour.
+- **Type:** the book's four families. Grenze Gotisch for titles and panel heads only, never in all capitals and never for running text or numbers. Source Sans 3 for all diagram text, labels and numbers. Source Serif 4 for any longer rules note. No flavour face: the sheets carry no flavour or editorial lines (owner, 2026-10-21).
 - **Ink:** black only, with the book's transparent tints: 5% for panels and decision fills, 9% for die columns, 24% for hairlines, 42% and 58% for quiet labels. Colour never carries meaning, so every sheet must read when photocopied in greyscale.
 - **Paper:** cream `#FCFAF5` and a white companion, identical in layout.
 - **Not used:** parchment texture, stains, burned edges, gradients, drop shadows, glows, coloured highlights, or icons that need a legend.
@@ -28,7 +28,6 @@ US Letter portrait, 612 × 792 pt. The sheets are unbound, so the margins are sy
 |---|---|
 | Margins | 36 pt (0.5 in) on all sides. Essential content stays at least 27 pt (0.375 in) inside the trim. Only art and decoration may reach the edge |
 | Iron header band | Full frame width, about 48 pt tall, solid black. Left: the chapter's arms at 34 pt. Centre-left: the sheet title in Grenze Gotisch SemiBold 30 pt, reversed. Right: "PLAYER AID n" and the § references in Source Sans 3 Bold 9 pt, tracked, reversed. Under the band: a 1.5 pt gap, then a 0.6 pt rule (the book's thick-and-thin) |
-| Lead line (optional) | One source sentence in IM FELL 11 pt, 84% black, centred, quoted verbatim from the manuscript. Leave it out if no sentence fits; never write one |
 | Body | Two zones. The main diagram takes about 62% of the width on the left. Reference panels (tie-breakers, priorities, short tables) take the right column. A sheet whose subject is one table uses the full width |
 | Art | One approved ink vignette per side at most, at a boundary (lower or upper outer corner), standing on the footer rule or bleeding off the outer edge. No more than about 18% of the page area. Never behind or under text |
 | Footer | A thick-and-thin rule (1.4 pt, 2 pt gap, 0.4 pt). Left: the castle logo at 13 pt and "HERALDRY SKIRMISH · THE DYING LANDS". Right: "Rules RC<n> · front/back" in 42% grey |
@@ -39,10 +38,10 @@ Each sheet is double-sided where it needs to be. The front carries the procedure
 
 | Role | Face and size |
 |---|---|
-| Sheet title | Grenze Gotisch SemiBold 30 pt, reversed in the iron band |
-| Panel heading | Grenze Gotisch SemiBold 16 pt with a 1.8 pt brush rule beneath |
-| Decision text | Source Sans 3 Bold 10 pt, centred |
-| Step and panel text | Source Sans 3 9.5 pt, key terms in Bold |
+| Sheet title | Grenze Gotisch Bold 38 pt, reversed in the iron band, beside the arms at 40 pt |
+| Panel heading | Grenze Gotisch Bold 18 pt with a 2.4 pt brush rule beneath |
+| Decision text | Source Sans 3 ExtraBold 11.5 pt, centred |
+| Step and panel text | Source Sans 3 10.5 pt, key terms in Bold |
 | Small caps labels (YES, NO, THEN, TIES IN ORDER) | Source Sans 3 Bold 7.6 to 8.6 pt, tracked +0.12 to +0.16 em. These are wayfinding labels, not essential text |
 | Rules note | Source Sans 3 or Source Serif 4, at least 9.5 pt, in the book's tinted panel with the RULES NOTE banner tag |
 | Minimum for essential text | 9 pt, as in the book |
@@ -58,9 +57,9 @@ One shape language across every sheet, so a player learns it once. Every distinc
 | Numbered step | A black engraved shield carrying the step number (the book's procedure shield), at the left of the step |
 | Action or process | A rectangle with a 0.8 pt black rule and no fill |
 | Decision | A six-sided plaque (a lozenge drawn out sideways) with a 1.1 pt rule and 5% fill. Its question ends in "?" |
-| Yes or a taken branch | A solid 1 pt arrow to the right, labelled YES |
-| No or fall-through | A solid 1 pt arrow downward, labelled NO |
-| Optional or conditional path | A dashed 1 pt arrow, labelled with its condition |
+| Yes or a taken branch | A forged arrow to the right, about 62 pt long: a tapered shaft swelling from 2.6 to 5.8 pt into a barbed broadhead, with a black YES banner tag above it |
+| No or fall-through | The same forged arrow pointing down, with a black NO banner tag beside it |
+| Optional or conditional path | A short italic note inside the box it leaves ("Says it continues? Go to step 2."), or a dashed arrow where a drawn route is clearer |
 | Ends (activation, step or phase) | A black banner tag reading ENDS, pinned to the lower-right corner of the box |
 | Dice roll | A box with a double rule, the die named in a black cost tag ("d20", "1d6") |
 | AP or Coin cost | A black cost tag ("1 AP"), and the coin mark for "c" |
@@ -96,6 +95,7 @@ Later sheets (Journey tables by Climate, Weather, hero creation and advancement,
 
 ## 8. Words
 
+- Wording is the most concise reading that keeps every meaning: every condition, exception, number and tie-break survives, but connective prose does not.
 - Every word on a sheet comes from the current manuscript, resolved through `source/versions.json`. Wording may be abridged and reordered, but never reinterpreted, and no rule, number, exception or condition may be added or dropped.
 - Each sheet keeps a fidelity record: the sections it draws on, the manuscript RC and the sha256 of each section's text. A new RC that changes one of those sections marks the sheet stale until it is reviewed again.
 - Every sheet passes a semantic review against its sections before release, as for the book's figures. A hash is never a substitute for that review.
@@ -107,7 +107,9 @@ Later sheets (Journey tables by Climate, Weather, hero creation and advancement,
 - Recommended stock: matte card (65 to 110 lb cover) or heavy matte paper. Sheet protectors with a dry-erase marker suit the trackers.
 - Every sheet is checked as a greyscale print and at 1.03 overscan, like the book.
 
-## 10. Production route (owner decision)
+## 10. Production route
+
+Owner decision 2026-10-21, after the trial below: "Canva was inferior. Let's keep the design here within our workflow." The sheets are made with Route A. Route B stays documented only as the record of the trial.
 
 The direction is the same on either route. The difference is how faithfully and cheaply it can be reproduced.
 
