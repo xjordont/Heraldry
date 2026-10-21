@@ -9748,5 +9748,38 @@
    "max_print_w_in_300ppi": 3.197
   },
   "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
+ },
+ "ART-HER-HEARTHBELL": {
+  "family": "hero",
+  "title": "Hearthbell",
+  "heading_id": "h-hearthbell",
+  "route": "gpt",
+  "spec_sha256": "8f4a20584f7c68e824327a26178996a44d85943271b9942148a3b1329c22dab6",
+  "prompt_sha256": "86a72e0bad824595cbc6dcf1e5c70d930c08e48c7a88d2f7f3cc6d52e1047cb8",
+  "status": "received",
+  "received_at": "2026-10-21T20:05:35+00:00",
+  "surface": "Codex",
+  "model": "Imagegen default model (tool gave no model label)",
+  "notes": "One generation, 1024x1536. Checker flags possible grey wash (11% midtones); visually seen as crosshatching. Preserve warning for review.",
+  "intake_warnings": [],
+  "master": {
+   "path": "assets/art/incoming/ART-HER-HEARTHBELL.png",
+   "sha256": "9bd16f0fbc638714a51181d7f46a34f25a5a06a9d04e54666ef2c12b2b7241ac",
+   "px": [
+    1024,
+    1536
+   ]
+  },
+  "ink": {
+   "path": "assets/art/ink/ART-HER-HEARTHBELL.png",
+   "sha256": "c7b07fff33639f9cfd510a20e84ffa30e61aa64e6a17c553f8daf01d2e63a30f",
+   "px": [
+    916,
+    1424
+   ],
+   "flags": [],
+   "max_print_w_in_300ppi": 3.053
+  },
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
