@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`6861ddb2`](https://github.com/xjordont/Heraldry/commit/6861ddb2318667f6e38aa5f518490440805a7aff) figures: reconcile all 57 diagrams with RC512
 - [`77a04745`](https://github.com/xjordont/Heraldry/commit/77a047452a241fda7f493a07e4eb8a9ee9505952) art: intake of ChatGPT Work images
 - [`2b76d638`](https://github.com/xjordont/Heraldry/commit/2b76d6384856761f7bad16d3c2485c66223a965d) art(gpt): ART-HER-GRAVEGLASS .. ART-HER-GRAVEGLASS
 - [`33a1ac21`](https://github.com/xjordont/Heraldry/commit/33a1ac2199f0f577c0ee2b86680c1f1c1e8ef0a6) art: intake of ChatGPT Work images
 - [`f93e210c`](https://github.com/xjordont/Heraldry/commit/f93e210ccbc8fe9b06b1f2107ad451221b4d59ab) art(gpt): ART-HER-GNAWTHOUGHT .. ART-HER-GNAWTHOUGHT
 - [`fb9f56ba`](https://github.com/xjordont/Heraldry/commit/fb9f56ba5eb72e6c8148dcc0e036f8059d89ac44) art: intake of ChatGPT Work images
-- [`55ccc402`](https://github.com/xjordont/Heraldry/commit/55ccc4029aa587989cb4330e40aebf9695a6987f) art(gpt): ART-HER-GILDMIRROR .. ART-HER-GILDMIRROR
 
 <!-- END AUTO:recent -->
 
