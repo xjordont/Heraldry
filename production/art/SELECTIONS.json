@@ -9424,17 +9424,17 @@
   "title": "Cairnwrath",
   "heading_id": "h-cairnwrath",
   "route": "gpt",
-  "spec_sha256": "619dfdf29daf8ebf477033902933ac5ac81511d5eda1259c2566d6c916260cea",
-  "prompt_sha256": "16b91bdd204b3d1d63a22cdc799389ca6429d720b2ae326fd83d4685f69bc2ee",
-  "status": "rejected",
-  "received_at": "2026-10-21T15:20:24+00:00",
+  "spec_sha256": "4c05966cee729cffa97838e89cab5031f6c1399b819a08b660aedbc5118647c5",
+  "prompt_sha256": "dec8a8f19f2cbbd7d66e05232dffa2dc1dc178fd13bca1c02b18d9afee48659a",
+  "status": "received",
+  "received_at": "2026-10-22T01:37:26+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Checker flagged possible grey wash or soft shading (10%), stray edge marks (0.18%), and narrow margin (3.3% of outer 6% band). Visual review: bold black hatch on white paper, all required items visible, full figure and axe uncut, no disallowed content. Preserve warnings for review; no retry.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Correction: clearly show the small cairn of tied stones at the belt and a cleanly cut felt mantle with stitched border; keep the hide cuirass, belt dagger and two-handed battleaxe. Correction: use intact clothing, bold simple shapes, sparse hatching and pure black ink, with at least 10% clean margin and no stray specks; keep the full figure and equipment visible. Automated warnings retained: stray marks at image edge 0.10%, narrow margin 2.7%.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-CAIRNWRATH.png",
-   "sha256": "bc755be0f96fadfc72234332a22f679fa05d54de0edf8c6cb0066a33d6a78ff4",
+   "sha256": "bde8c0209e02624ad70a954ea2845062e8edd4bdaf76e64c726cd6f815a7c128",
    "px": [
     1024,
     1536
@@ -9442,17 +9442,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-CAIRNWRATH.png",
-   "sha256": "44d950c52aa0b180e1c26cc1560d0e358e285ae4bece025d5028715f1583759d",
+   "sha256": "8803412e3014d529ddd2ebffba26743c435d3472b171373f47cd85c46b7ef3f4",
    "px": [
-    985,
-    1520
+    944,
+    1494
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.283
+   "max_print_w_in_300ppi": 3.147
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:24+00:00",
-  "rejected_reason": "Show the tied cairn stones clearly, use a cleanly cut felt mantle with a stitched border and keep specks away from the top edge. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-CROWWICK": {
   "family": "hero",
