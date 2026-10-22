@@ -9589,17 +9589,17 @@
   "title": "Galefletch",
   "heading_id": "h-galefletch",
   "route": "gpt",
-  "spec_sha256": "26a338bf0d807d52eb70991180e62aea41d53fe3355b53b6221c5a895493b35c",
-  "prompt_sha256": "d2975d67674a20d8de2094fb145c2c0ae07a31ec6b79db66f624029903aef87b",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:45:36+00:00",
+  "spec_sha256": "bef639ce79ae184f84963b7d9e4bcc1b864ef69d2754ea2ca9b8559e5860f5ec",
+  "prompt_sha256": "ace6bee53c0508997fa23083d4e28ff8511012abe0a2a5f4e325fc9321b8ba15",
+  "status": "received",
+  "received_at": "2026-10-22T15:21:05+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: replace any ragged cloak with a short, cleanly hemmed leather coat and streaming scarf/hair; keep the shortbow, long arrow fletching, belt dagger and wax-sealed dispatch satchel. Correction: keep bold simple shapes, sparse hatching, pure black ink, at least 10% clean margin and no stray marks; keep the full figure and equipment visible. Automated narrow-margin warning 2.4%; no crop or edge contact.",
+  "model": "not shown",
+  "notes": "Narrow-margin advisory inspected: complete bow, scarf and figure, no crop or edge contact.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GALEFLETCH.png",
-   "sha256": "4bda1a730369785325a1e0ea44b14788f82644cc50c935d7b0d97b167e2ae71d",
+   "sha256": "1168494ee2f008002fc7899f595cae518375540dc8fcc474907ae00ad115eea5",
    "px": [
     1024,
     1536
@@ -9607,17 +9607,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GALEFLETCH.png",
-   "sha256": "4a05e5087dbc89106d0b824863b2715f741aa74abe356bc6c6428d5dcd920194",
+   "sha256": "22f36c18938dffa089796d7d21d9b8f5767bf9d8d6f3eca7939dc2b0429b0721",
    "px": [
-    952,
-    1470
+    960,
+    1450
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.173
+   "max_print_w_in_300ppi": 3.2
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-GALLOWTUSK": {
   "family": "hero",
