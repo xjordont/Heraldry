@@ -9754,17 +9754,17 @@
   "title": "Hearthbell",
   "heading_id": "h-hearthbell",
   "route": "gpt",
-  "spec_sha256": "ae524d7469550eb029e6f037c3d980b914bdb809055fc3db3ecdd04a65692569",
-  "prompt_sha256": "28be3cd22c33f93412ad443ef3e4394c4002f15eaefb571a623d96a820485b88",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:55:13+00:00",
+  "spec_sha256": "311e8e335714b498aea1baab8204aecf4989678b9cdc27c3c69221a954b9be51",
+  "prompt_sha256": "b731ff87a50c74da8ae31261976e15de2adf031bf201ab04348011b94b57af06",
+  "status": "received",
+  "received_at": "2026-10-22T15:33:06+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: use a clean ankle-length white surcoat with a bare circle on the chest and show the small belt bell clearly; keep the heater shield, right-hand mace, ring shirt and two bandage rolls. Correction: keep hems intact and clean, bold simple shapes with sparse hatching, pure black ink, at least 10% clear margin and no stray specks; keep the full figure and all equipment visible.",
+  "model": "not shown",
+  "notes": "Midtone advisory inspected: directional ink strokes and rings, no visible smooth grey wash.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-HEARTHBELL.png",
-   "sha256": "cee2f7b5b51a2b6b126b5ee1966a1c134f8d15df40cf9639ced9567857f20822",
+   "sha256": "833cd9ce7b1b411e9ecb4ba1f54f4702799a99b8ba44ed18f1079eac183b2295",
    "px": [
     1024,
     1536
@@ -9772,17 +9772,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-HEARTHBELL.png",
-   "sha256": "0941f965391e1afbee7f15fed61886ccc287122d0ac197b5f39cc61def6a2ba2",
+   "sha256": "5a565867110105b78cb93eafa73edc336a7c6c9f45ea8a65f1c3116be39d89b3",
    "px": [
-    886,
-    1436
+    937,
+    1421
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.953
+   "max_print_w_in_300ppi": 3.123
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-IRONSCAR": {
   "family": "hero",
