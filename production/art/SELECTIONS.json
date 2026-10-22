@@ -9820,17 +9820,17 @@
   "title": "Mossgrave",
   "heading_id": "h-mossgrave",
   "route": "gpt",
-  "spec_sha256": "ede7a6d1d589bbbad93ed24b7576ccf3c1497383649f6fc1db5cb8e1c8503717",
-  "prompt_sha256": "7d07ccc9e622e37afec4fd27fbb427318c1e8f4e974f3f8ca2c68dd8e3a5a5f2",
-  "status": "rejected",
-  "received_at": "2026-10-21T20:13:11+00:00",
+  "spec_sha256": "01e5983023718b92283c073d361131e6ba276a27506faee47ac90a298b619d4c",
+  "prompt_sha256": "b37f76475ddd7440f0b7a73066c417bc6e5965e24ce6983b07e81e4f64a3d9a4",
+  "status": "received",
+  "received_at": "2026-10-22T01:59:40+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Visible faint olive tint in moss violates strict black-and-white requirement; checker also flagged possible grey wash (12% midtones). Preserve both issues for review.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Reviewer correction: moss uses pure black; coat folds simplified and hems intact. Top and left margins remain below 10%.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-MOSSGRAVE.png",
-   "sha256": "ab45ed8643b312936600df1ae2cf777312b7f0ef951a1cee20c46da3d4ad8738",
+   "sha256": "07c9a7b6ad2b111ffc4b005019d4353517ac294ad7bcd2538fde1672ef4a7ef2",
    "px": [
     1024,
     1536
@@ -9838,17 +9838,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-MOSSGRAVE.png",
-   "sha256": "3ee5f867b614c1162c7e10cef00d8b80e2abe1e6ba0172a9fba871220da23e63",
+   "sha256": "d9b00457972165a806a2137043c882ddf8432d6eeed4f809ec8551e20eaf89b7",
    "px": [
-    927,
-    1447
+    921,
+    1427
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.09
+   "max_print_w_in_300ppi": 3.07
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:24+00:00",
-  "rejected_reason": "The moss had an olive tint: draw it in pure black line and solid black only, simplify the coat to a few big folds, and avoid tatters. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-NIGHTLOOM": {
   "family": "hero",
