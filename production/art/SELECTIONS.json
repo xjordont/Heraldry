@@ -9853,17 +9853,17 @@
   "title": "Nightloom",
   "heading_id": "h-nightloom",
   "route": "gpt",
-  "spec_sha256": "30e16462acb539b5cc5c44416b3737047a463da35e44523d5b387c9e5a51d5c1",
-  "prompt_sha256": "c2c48e248ce96c24b1a87487c1e34179e57e4fdd9896739e0f8cdd832e2cc9a6",
-  "status": "rejected",
-  "received_at": "2026-10-22T02:01:40+00:00",
+  "spec_sha256": "78113a9b06149a45d7f5e920c22276d5293cc03471cab48aa14027468e4959cb",
+  "prompt_sha256": "544f41aa0f2b8344ce864925c5d5d6790ac66563ac91aef4e2a008b85d90bad5",
+  "status": "received",
+  "received_at": "2026-10-22T15:40:02+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Reviewer correction: closed cloak has a bold lattice and neat hem; rapier tip, hood and boots remain under 10% margin.",
+  "model": "not shown",
+  "notes": "Midtone warning inspected: ink hatch marks, no visible smooth grey wash. Additional sheathed belt blade present.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-NIGHTLOOM.png",
-   "sha256": "004eff2485cbc4fe35738f0071fcef65cf093e2ba66e7343ac28ee6128a334de",
+   "sha256": "2c4142d2f3c445aea797e21ba0247c755ea6cf9536991b7a2145990a6d204c85",
    "px": [
     1024,
     1536
@@ -9871,17 +9871,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-NIGHTLOOM.png",
-   "sha256": "4f537f3e3df8ac1c328832cbc23b81d16b77fe5957e78e3ba0145b568da91d8b",
+   "sha256": "cd2ae9d783ea13d6f3a983de68cc50394ded813794bfb3d0417c8de4c7b55541",
    "px": [
-    941,
-    1406
+    970,
+    1425
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.137
+   "max_print_w_in_300ppi": 3.233
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-OATHSCALE": {
   "family": "hero",
