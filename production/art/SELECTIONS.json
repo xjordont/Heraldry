@@ -9490,17 +9490,17 @@
   "title": "Dawnwarden",
   "heading_id": "h-dawnwarden",
   "route": "gpt",
-  "spec_sha256": "e9cf7f623f32ac93bbf72fb4c3f1f64abff93d3f213af31bc9d3d6e2397417a0",
-  "prompt_sha256": "b9db165c3fd3996b8c19464fb45a88fc0f24d04dcef5d1e553658a83a7b6f05f",
-  "status": "rejected",
-  "received_at": "2026-10-21T15:24:18+00:00",
+  "spec_sha256": "1ed14362002cfe7ccfa8a0f6bf7c42ceaf22068c2205d1e63407b25f125176a7",
+  "prompt_sha256": "be1530defcb5a9417f1f73a548a4c69abd43b1896d85ed3450f52edd1bb44cff",
+  "status": "received",
+  "received_at": "2026-10-22T01:40:44+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Checker warned narrow margin (2.4% of outer 6% band); visually full figure and weapons are uncut. Required details visible; preserve warning for review.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Correction: use a clean white surcoat and a half-black round targe with a sunburst, with no cloak; keep the right-hand mace, ring shirt and two belt vials. Correction: keep all clothing intact and cleanly hemmed, bold simple forms, sparse hatching, pure black ink, at least 10% margin and no stray specks; keep the full figure and equipment visible.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-DAWNWARDEN.png",
-   "sha256": "46e4303fde50c6e27bcd83c46fce1b93429522fea1a5f6af025439cb6ce99c23",
+   "sha256": "b215df9214290e6ccb067ea212ea1e51323d23250cd59562a843ddd437d5632d",
    "px": [
     1024,
     1536
@@ -9508,17 +9508,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-DAWNWARDEN.png",
-   "sha256": "7390d14264f2aabbf122a2f5b4607b38438d33e3c536b94ed74224d2b2df92a7",
+   "sha256": "a80ee25413be15498779d7cab6ff727c6e19ae7cdea5157b29f9c5d71afbb5be",
    "px": [
-    976,
-    1446
+    892,
+    1403
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.253
+   "max_print_w_in_300ppi": 2.973
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:24+00:00",
-  "rejected_reason": "Use a clean white surcoat and a half-black targe with a sunburst; more margin; no tattered cloak. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-EMBERVOW": {
   "family": "hero",
