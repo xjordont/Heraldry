@@ -9985,17 +9985,17 @@
   "title": "Sootfinger",
   "heading_id": "h-sootfinger",
   "route": "gpt",
-  "spec_sha256": "762af3d6df28989d7fed6e46afe2d0cb16aae22d047e87288873aec6380eb817",
-  "prompt_sha256": "be62a00d3e75bff36179f76f5b7c1fb5058ecc08e3cfa355cf489c130fc5764b",
-  "status": "rejected",
-  "received_at": "2026-10-21T20:33:23+00:00",
+  "spec_sha256": "afca817254946254512cc930b14f4863a4bc9dbb30f119a319ccf2a21a33c18b",
+  "prompt_sha256": "8ef3d8c7414a679840c28d2d50b407c3d6069a68805bd85691511d1a9444dd57",
+  "status": "received",
+  "received_at": "2026-10-22T02:08:50+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; required details present and prohibitions absent.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Reviewer correction: short waistcoat, rolled sleeves, knotted headscarf and listed gear are present. Rapier tip, head and feet leave less than 10% margin.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-SOOTFINGER.png",
-   "sha256": "73d86b01bf0570f896e51b7ebdd3fcfd92f15d9d5423d0059984540a22cc50d1",
+   "sha256": "090f16f78fbd3e310a3f625c030b05b73207a6958c9302c8d9c5df7ed7f08741",
    "px": [
     1024,
     1536
@@ -10003,17 +10003,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-SOOTFINGER.png",
-   "sha256": "3615079caa62990afe948c915a648b245a9ff9cee199c91328024183b6071310",
+   "sha256": "54305ced3bab0e285484538281cf1e6bfd83b6c13d9df19977d580783bdb6943",
    "px": [
-    987,
-    1398
+    979,
+    1364
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.29
+   "max_print_w_in_300ppi": 3.263
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:23+00:00",
-  "rejected_reason": "Replace the oversized shredded coat with a short waistcoat, rolled sleeves and a knotted headscarf; keep rapier, dagger, lockpicks and smokestick. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-STARCINDER": {
   "family": "hero",
