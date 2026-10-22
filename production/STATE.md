@@ -1,5 +1,17 @@
 # Production state - RC513 source, main
 
+## Compact Hero sheet redesign - 2026-10-22
+
+Owner requested a rigorous sheet audit, research in Mordheim, Lasting Tales, Five Leagues third edition, Frostgrave second edition, and comparable games, followed by a beautiful, readable, compact US Letter redesign. Actual reference sheets were inspected before authoring; evidence and the 22-point baseline audit are in `docs/HERO_SHEET_RESEARCH.md`. `docs/HERO_SHEETS.md` documents the implementation and print directions.
+
+New native Typst components replace repeated engraved plates/ribbons and the large portrait arch with restrained identity, aligned statistics, explicit current/maximum resources, quiet table rules, and approved V1 individual portraits. The blank operational record is one side; its expanded alternative adds a campaign reverse with the full advancement reference and more writing space. Eight Basic Mode Heroes fit one side, and sixteen use two, retaining every B.4 rule, value, sub-item, sense reminder, and full shared Basic Mode note. Equipment and the Hands/0 HP rules stay on the front. The 48-page print packs include empty backs after compact Heroes to preserve one Hero per duplex sheet.
+
+All 54 redesigned PDFs pass the standalone QA: portrait Letter geometry, minimum 9 pt type, 28.65 pt minimum actual glyph inset, embedded fonts, exact profile/shared-note coverage, cream/white layout equivalence, pack-versus-individual identity, approved-art hash matching, and 1.03 overscan text clipping. `tools/hero_sheet_qa.py` reproduces the checks and all-page Poppler review images. Eight contact sheets cover 86 individual page images; eight full-page details were inspected. The exact-hash author review is in `production/qa/hero-sheet-design-review.json`. This is not independent player testing, tagged-PDF certification, or a physical proof.
+
+Validation: `python tools/dev.py check` PASS, including 343 tests, dependencies, contracts, immutable history, and whitespace. Standalone Hero-sheet QA PASS for all 54 redesigned PDFs.
+
+No manuscript, artwork approval, party-ledger layout, full-book PDF, or release changed. Local sheet PDFs are in ignored `build/heroes/`; last published book PDFs remain RC492-build-37. Physical print remains **NOT TESTED**.
+
 ## Shared agent workflows - 2026-10-22
 
 Owner instruction: "Update the code base so ChatGPT work and codex are able to do anything that Claude code can do." Claude Code, Codex, and ChatGPT Work now have equal repository developer, orchestrator, repair, review, and delivery authority. The shared governing contract is `docs/PROJECT_CONTRACT.md`; `AGENTS.md` and the Claude loader point to it. Five portable specialist contracts in `docs/agents/` are loaded by the existing Claude-native adapters and are directly readable from any client.

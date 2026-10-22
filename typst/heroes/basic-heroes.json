@@ -311,7 +311,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-FIGHTER"
+   "art": "ART-HER-IRONSCAR"
   },
   {
    "name": "Gallowtusk",
@@ -567,7 +567,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-FIGHTER"
+   "art": "ART-HER-GALLOWTUSK"
   },
   {
    "name": "Blackknife",
@@ -828,7 +828,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-ROGUE"
+   "art": "ART-HER-BLACKKNIFE"
   },
   {
    "name": "Sootfinger",
@@ -1074,7 +1074,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-ROGUE"
+   "art": "ART-HER-SOOTFINGER"
   },
   {
    "name": "Hearthbell",
@@ -1332,7 +1332,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-CLERIC"
+   "art": "ART-HER-HEARTHBELL"
   },
   {
    "name": "Embervow",
@@ -1586,7 +1586,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-CLERIC"
+   "art": "ART-HER-EMBERVOW"
   },
   {
    "name": "Graveglass",
@@ -1814,7 +1814,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-WIZARD"
+   "art": "ART-HER-GRAVEGLASS"
   },
   {
    "name": "Starcinder",
@@ -2069,7 +2069,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-WIZARD"
+   "art": "ART-HER-STARCINDER"
   },
   {
    "name": "Redhand",
@@ -2324,7 +2324,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-BERSERKER"
+   "art": "ART-HER-REDHAND"
   },
   {
    "name": "Cairnwrath",
@@ -2563,7 +2563,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-BERSERKER"
+   "art": "ART-HER-CAIRNWRATH"
   },
   {
    "name": "Thornmere",
@@ -2822,7 +2822,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-RANGER"
+   "art": "ART-HER-THORNMERE"
   },
   {
    "name": "Galefletch",
@@ -3082,7 +3082,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-RANGER"
+   "art": "ART-HER-GALEFLETCH"
   },
   {
    "name": "Oathscale",
@@ -3289,7 +3289,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-PALADIN"
+   "art": "ART-HER-OATHSCALE"
   },
   {
    "name": "Dawnwarden",
@@ -3547,7 +3547,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-PALADIN"
+   "art": "ART-HER-DAWNWARDEN"
   },
   {
    "name": "Mossgrave",
@@ -3894,7 +3894,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-DRUID"
+   "art": "ART-HER-MOSSGRAVE"
   },
   {
    "name": "Furrowroot",
@@ -4201,7 +4201,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-DRUID"
+   "art": "ART-HER-FURROWROOT"
   },
   {
    "name": "Thoughtwake",
@@ -4432,7 +4432,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-PSION"
+   "art": "ART-HER-THOUGHTWAKE"
   },
   {
    "name": "Gnawthought",
@@ -4722,7 +4722,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-PSION"
+   "art": "ART-HER-GNAWTHOUGHT"
   },
   {
    "name": "Ashborn",
@@ -4983,7 +4983,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-SORCERER"
+   "art": "ART-HER-ASHBORN"
   },
   {
    "name": "Stormcrook",
@@ -5325,7 +5325,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-SORCERER"
+   "art": "ART-HER-STORMCROOK"
   },
   {
    "name": "Silkshade",
@@ -5566,7 +5566,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-ASSASSIN"
+   "art": "ART-HER-SILKSHADE"
   },
   {
    "name": "Nightloom",
@@ -5839,7 +5839,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-ASSASSIN"
+   "art": "ART-HER-NIGHTLOOM"
   },
   {
    "name": "Crowwick",
@@ -6099,7 +6099,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-TRICKSTER"
+   "art": "ART-HER-CROWWICK"
   },
   {
    "name": "Gildmirror",
@@ -6397,7 +6397,7 @@
      ]
     }
    ],
-   "art": "ART-CLA-TRICKSTER"
+   "art": "ART-HER-GILDMIRROR"
   }
  ]
 }

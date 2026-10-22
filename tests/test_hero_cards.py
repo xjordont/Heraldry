@@ -1,4 +1,4 @@
-"""Hero cards stay bound to Appendix B.4, and every hero leaf prints as one duplex sheet."""
+"""Hero cards preserve Appendix B.4 and fit within one US Letter sheet per Hero."""
 import json
 from pathlib import Path
 import sys
@@ -53,15 +53,32 @@ class HeroLeaves(unittest.TestCase):
         self.assertEqual(self.compile_pages("sheet.typ"), 2)
         self.assertEqual(self.compile_pages("ledger.typ"), 2)
 
-    def test_every_hero_card_is_two_sides(self):
-        self.assertEqual(self.compile_pages("cards.typ", hero="all"), 48)
+    def test_compact_blank_sheet_is_one_side(self):
+        pdf = self.compile("compact-sheet.typ", "compact")
+        reader = PdfReader(str(pdf))
+        self.assertEqual(len(reader.pages), 1)
+        text = reader.pages[0].extract_text()
+        for label in ("Name", "Ancestry", "Background", "Class", "Level", "STR", "DEX", "INT", "SPI",
+                      "Initiative", "Current", "Max", "Temp", "NRG", "Luck", "AP", "Speed", "Size",
+                      "Chest", "Shield", "AD", "AV", "Wounds", "Lingering Injuries", "Known Powers",
+                      "Talents and Special Abilities", "Equipped and Carried", "Coins", "Fate"):
+            self.assertIn(label, text)
+
+    def test_compiled_set_uses_at_most_one_sheet_per_hero(self):
+        reader = PdfReader(str(self.compile("cards.typ", "pack", hero="all")))
+        self.assertEqual(len(reader.pages), 48)
+        data = json.loads(hero_cards.DATA.read_text(encoding="utf-8"))
+        for i, hero in enumerate(data["heroes"]):
+            self.assertIn(hero["name"], reader.pages[2 * i].extract_text())
+            back = reader.pages[2 * i + 1].extract_text().strip()
+            self.assertTrue(not back or hero["name"] in back)
 
     def test_every_card_prints_its_whole_profile_clear_of_the_notes(self):
         data = json.loads(hero_cards.DATA.read_text(encoding="utf-8"))
         for hero in data["heroes"]:
             with self.subTest(hero=hero["name"]):
                 pdf = self.compile("cards.typ", hero["name"], hero=hero["name"])
-                self.assertEqual(hero_cards.card_problems(pdf, hero, data["reminders"]), [])
+                self.assertEqual(hero_cards.card_problems(pdf, hero, data["reminders"], data["notes"]), [])
 
 
 if __name__ == "__main__":
