@@ -9754,17 +9754,17 @@
   "title": "Hearthbell",
   "heading_id": "h-hearthbell",
   "route": "gpt",
-  "spec_sha256": "8f4a20584f7c68e824327a26178996a44d85943271b9942148a3b1329c22dab6",
-  "prompt_sha256": "86a72e0bad824595cbc6dcf1e5c70d930c08e48c7a88d2f7f3cc6d52e1047cb8",
-  "status": "rejected",
-  "received_at": "2026-10-21T20:05:35+00:00",
+  "spec_sha256": "ae524d7469550eb029e6f037c3d980b914bdb809055fc3db3ecdd04a65692569",
+  "prompt_sha256": "28be3cd22c33f93412ad443ef3e4394c4002f15eaefb571a623d96a820485b88",
+  "status": "received",
+  "received_at": "2026-10-22T01:55:13+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Checker flags possible grey wash (11% midtones); visually seen as crosshatching. Preserve warning for review.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Correction: use a clean ankle-length white surcoat with a bare circle on the chest and show the small belt bell clearly; keep the heater shield, right-hand mace, ring shirt and two bandage rolls. Correction: keep hems intact and clean, bold simple shapes with sparse hatching, pure black ink, at least 10% clear margin and no stray specks; keep the full figure and all equipment visible.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-HEARTHBELL.png",
-   "sha256": "9bd16f0fbc638714a51181d7f46a34f25a5a06a9d04e54666ef2c12b2b7241ac",
+   "sha256": "cee2f7b5b51a2b6b126b5ee1966a1c134f8d15df40cf9639ced9567857f20822",
    "px": [
     1024,
     1536
@@ -9772,17 +9772,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-HEARTHBELL.png",
-   "sha256": "c7b07fff33639f9cfd510a20e84ffa30e61aa64e6a17c553f8daf01d2e63a30f",
+   "sha256": "0941f965391e1afbee7f15fed61886ccc287122d0ac197b5f39cc61def6a2ba2",
    "px": [
-    916,
-    1424
+    886,
+    1436
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.053
+   "max_print_w_in_300ppi": 2.953
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:23+00:00",
-  "rejected_reason": "Use a clean ankle-length white surcoat with a bare circle and a clearly drawn bell; no tattered hem. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-IRONSCAR": {
   "family": "hero",
