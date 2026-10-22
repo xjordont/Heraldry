@@ -21,7 +21,7 @@ Latest direction: finish the blank record before adapting Basic Mode Heroes. The
 
 Identity occupies a compact three-row field grid beside an empty portrait arch. There is no default portrait, crest, or label inside that arch. The book signature appears only in the title. Attribute shields retain legible sans-serif abbreviations; Initiative, Speed, Size, HP, NRG, Luck, and AP use open writing lines. Current, maximum, and Temporary HP remain distinct.
 
-Ornament stays at section boundaries. Open ledger rules separate entries without an outer panel, inner frame, tinted label band, or grey-filled writing cell. All printed type is at least 9 pt. Cream and white exports have identical text and geometry.
+Ornament stays at section boundaries. Black title bands with reversed blackletter and black attribute-shield chiefs restore visual weight, following the owner's feedback that the black boxes were aesthetic. Open ledger rules separate entries without an outer panel, inner frame, tinted label band, or grey-filled writing cell. Coins, Adventures, and Fate remain on white writing surfaces beside the black bands. All writing capacities and row pitches are unchanged. All printed type is at least 9 pt. Cream and white exports have identical text and geometry.
 
 ## Blank record
 

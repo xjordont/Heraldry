@@ -14,11 +14,11 @@
 })
 
 #let section(title, seed: 1, right: none) = block(width: 100%, height: 23pt, spacing: 0pt, {
-  place(grid(columns: (auto, 1fr, auto), column-gutter: 6pt, align: horizon,
-    box(baseline: 0pt, lozenge(size: 4.5pt)),
-    text(font: goth, weight: 600, size: 18pt, title),
-    if right == none { [] } else { right }))
-  place(bottom + left, brush(weight: 1.1pt, seed: seed))
+  place(grid(columns: if right == none { (1fr,) } else { (1fr, auto) }, column-gutter: 10pt, align: horizon,
+    block(width: 100%, height: 21pt, fill: ink, inset: (left: 8pt, top: 1pt),
+      text(font: goth, weight: 600, size: 17pt, fill: paper, title)),
+    ..if right == none { () } else { (right,) }))
+  place(bottom + left, brush(weight: 0.7pt, seed: seed))
 })
 
 // Open ledger: only column separators and row rules, with no outer or nested frame.
@@ -38,8 +38,9 @@
 
 #let ability(abbr) = box(width: 55pt, height: 52pt, {
   shield-curve(55pt, 52pt, stroke: 1pt + ink)
+  place(rect(width: 55pt, height: 17pt, fill: ink, stroke: none))
   place(dx: 0pt, dy: 3pt, box(width: 55pt, align(center,
-    text(font: sans, weight: 700, size: 11pt, abbr))))
+    text(font: sans, weight: 700, size: 11pt, fill: paper, abbr))))
   place(dx: 10pt, dy: 37pt, writing-line(w: 35pt))
 })
 
