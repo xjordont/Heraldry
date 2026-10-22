@@ -9358,17 +9358,17 @@
   "title": "Ashborn",
   "heading_id": "h-ashborn",
   "route": "gpt",
-  "spec_sha256": "e451613fdeeec3a88794d7c04ff7b0560081391c1c194dbee65d1247a168653a",
-  "prompt_sha256": "59e3504c291be6dfe7e1cc96244644c6b8b5d22d42c1ab13f0a1972f57ba79e1",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:33:27+00:00",
+  "spec_sha256": "0c01886faf5cd54e23d7e224cc7943323848d57d59319433bd2d3fcb9258ec6a",
+  "prompt_sha256": "b9bd2a25ca6fbc47880dfabf5bc871ded38e42714d2ccf5746d638dfb03ede87",
+  "status": "received",
+  "received_at": "2026-10-22T15:06:30+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: clearly show two small horns and the barbed tail; keep Ashborn human-bodied with the blackened open hand and club visible. Correction: replace any ragged robe with the buttoned clean black cassock over a leather coat, use sparse hatching and pure black ink, and keep at least 10% clean margin with no stray marks; keep the pose and listed equipment.",
+  "model": "not shown",
+  "notes": "Maximum resolution and quality requested; tool exposes no size or quality selectors.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-ASHBORN.png",
-   "sha256": "f55db96d34572d8e20a9abe0d043e20dc95961733e98775804a5855827fb0577",
+   "sha256": "162ffd4c35c6a1d718e3c3807c2e66eb6c8a17d3c21eda190f8eccf456afd964",
    "px": [
     1024,
     1536
@@ -9376,17 +9376,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-ASHBORN.png",
-   "sha256": "76eb6a6021159d85596e3c72f665b463ddd675d9c436cefc0278aa9b283b5faf",
+   "sha256": "fbadd00d4efa6e0aebff4e3bf5d3e875447039402547bfa9ce4eabf619fb32e0",
    "px": [
-    873,
-    1466
+    877,
+    1478
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.91
+   "max_print_w_in_300ppi": 2.923
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-BLACKKNIFE": {
   "family": "hero",
