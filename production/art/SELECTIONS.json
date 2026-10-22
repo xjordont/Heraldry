@@ -9523,17 +9523,17 @@
   "title": "Embervow",
   "heading_id": "h-embervow",
   "route": "gpt",
-  "spec_sha256": "244471ca46026e3c7d205b874e7be13b9f85cecffde206a7ba96275fb80ddaa3",
-  "prompt_sha256": "56c6f74380e84c443c221e8b0c7cb1775a99fb507e270b317984c5af61d9db28",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:42:29+00:00",
+  "spec_sha256": "ab274de92c2c63d66e935cf8c8600d6a67f20c00b5a1e7cf09c751255047d782",
+  "prompt_sha256": "07fe9b1780849074ac89cd9b2cc94b03a5baac28d644404bc19eecee98bff6b6",
+  "status": "received",
+  "received_at": "2026-10-22T15:16:51+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: show two curved horns and the barbed tail clearly in silhouette; keep Embervow human-bodied, the two-handed quarterstaff and both belt flasks visible. Correction: use a fitted, quilted frock-coat gambeson with pale trim instead of any ragged cloak; keep clothing intact, use bold simple shapes, sparse hatching, pure black ink and at least 10% clean margin with no stray specks. Flag: small red tint at eyes; automated narrow-margin warning 2.3%.",
+  "model": "not shown",
+  "notes": "Automated midtone and narrow-margin advisories inspected: ink hatching, no smooth grey wash, no edge contact or crop.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-EMBERVOW.png",
-   "sha256": "b3f6b459d4438550f1d6dabb42e707bc79b2d06c285ae6d2b2fad6f0ce651e75",
+   "sha256": "05180cf69295836e6b5e5e6d3341090f8cc04dc46800a05dd10f1e752f85d856",
    "px": [
     1024,
     1536
@@ -9541,17 +9541,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-EMBERVOW.png",
-   "sha256": "3896c3ec17b5781f60aa91aeca498c246f18f7df3afe859e95eef0672de805cb",
+   "sha256": "8d612c626548003c3f2fca07bf45b5aabfdf106dddc8d17cc0568b64a2733228",
    "px": [
-    905,
-    1485
+    844,
+    1492
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.017
+   "max_print_w_in_300ppi": 2.813
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-FURROWROOT": {
   "family": "hero",
