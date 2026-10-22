@@ -9688,17 +9688,17 @@
   "title": "Gnawthought",
   "heading_id": "h-gnawthought",
   "route": "gpt",
-  "spec_sha256": "3b82f85499395ed5e4ffdcd68550a6cbef6404fa0f4e8a7d6c174b0e3c0ef378",
-  "prompt_sha256": "8f0d427a685f01c025f9d20fcf21d1ddc8929ac98dfd5374d2d754532e6267f2",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:51:28+00:00",
+  "spec_sha256": "50864242f72b08a060368b7ab60eb1daf562995f0352f31d69470796fc5d99fd",
+  "prompt_sha256": "cd08c747d3f9c6d063f542746c677b4616ca7515ae0e863f5fa0eeca6a867f60",
+  "status": "received",
+  "received_at": "2026-10-22T15:28:43+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: use a short coat with leather apron, chewed glove tips and intact hem; keep the raised sealed acid pot, belt flask, dagger and curled tail. Correction: keep garments cleanly finished, bold simple shapes, sparse hatching, pure black ink, at least 10% clear margin and no stray specks; keep the upright full figure and all equipment visible.",
+  "model": "not shown",
+  "notes": "Faint warm tint persists on nose, fingers and tail; recorded for reviewer. Midtone warning otherwise reflects dense ink hatching.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GNAWTHOUGHT.png",
-   "sha256": "38fc8e71f4d69703e511a159419247dd3a89f959b44419c9fd2ac76a773ee39e",
+   "sha256": "5c4f9867fd47d7f6a6d9167e24283a17a76ebfc2e11a2ea006a64047741fdab2",
    "px": [
     1024,
     1536
@@ -9706,17 +9706,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GNAWTHOUGHT.png",
-   "sha256": "6acddc6a48eb68fdff3f260848e5550abf0e4b1e3f77658f3d1278e34d7229fe",
+   "sha256": "478ad81076581c2105868ee56819ca44713287cbf12267b8c2499720d298194d",
    "px": [
-    927,
-    1259
+    959,
+    1321
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.09
+   "max_print_w_in_300ppi": 3.197
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-GRAVEGLASS": {
   "family": "hero",
