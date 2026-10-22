@@ -9886,17 +9886,17 @@
   "title": "Oathscale",
   "heading_id": "h-oathscale",
   "route": "gpt",
-  "spec_sha256": "1fcce45122678592f3b1e664697d2d26eef9dedeae3d8e24a3c4ccaf9076e4ed",
-  "prompt_sha256": "3480e661863b6077dbb370ea8655bcd775841291212efef4b8ef9d6c86a79842",
-  "status": "rejected",
-  "received_at": "2026-10-21T20:20:40+00:00",
+  "spec_sha256": "f365836989906b11018f47e7f124da4816aaff33891658e6b6017317e5963650",
+  "prompt_sha256": "61289856c1b032fdbc4c31862a61437f8b0b2ac606c3d7f581c9905fa3361b32",
+  "status": "received",
+  "received_at": "2026-10-22T02:03:16+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Required belt dagger is not clearly visible; face has a strongly draconic snout that may conflict with no full dragon head. Checker warned narrow margin (2.1%). Preserve for review.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Reviewer correction: face is human-shaped with localized jaw/neck/hand scales, and dagger is sheathed at belt. Margin remains under 10% at mace and ground.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-OATHSCALE.png",
-   "sha256": "610c84389f201b9c9b0e297a196e95cb71024dd22eb92dec0fb009d38c3416b1",
+   "sha256": "708fd66719096bd62e3d9d1dfe684f8f9e71d3a6ffbe3ebeb0c3efe54ceafe41",
    "px": [
     1024,
     1536
@@ -9904,17 +9904,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-OATHSCALE.png",
-   "sha256": "ea441ce3e4f988630e523567219db4400c36e3b35ae50082b062eed4c216e780",
+   "sha256": "3789dfb946f827bfdf47621ca9f5fd4d661ee635eec9ae4c2bb1cd665e8842ee",
    "px": [
-    811,
-    1494
+    820,
+    1439
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.703
+   "max_print_w_in_300ppi": 2.733
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:24+00:00",
-  "rejected_reason": "Give the face a human shape with scales only on jaw, neck and hands (no snout), and show the dagger clearly sheathed at the belt. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-REDHAND": {
   "family": "hero",
