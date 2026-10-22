@@ -1,6 +1,14 @@
 # Release status - RC513 source / RC492 delivery
 
-## Expanded Hero sheet revision - 2026-10-22
+## Blank Hero record refinement - 2026-10-22
+
+Only the blank expanded record has been revised in this pass, as the owner requested. It now shares the rulebook's font and mark sources, replaces nested/grey cells with open writing areas, combines carried and equipped possessions into Inventory, leaves the portrait arch empty, and removes duplicated ancestry/background rules, reminders, the advancement lookup, and Party Leader checkbox. Both cream and white versions remain exactly two portrait Letter sides. Basic Mode adaptation is deferred; all 50 existing individual/pack PDFs are hash-verified unchanged.
+
+Print preflight and cream/white equivalence pass; all four blank page images were inspected. Current blank evidence is `production/qa/blank-hero-sheet-design-review.json`. This is author review pending the owner's aesthetic assessment. Physical printing, handwriting, erasing, and duplex registration remain **NOT TESTED**. RC513 and the published RC492-build-37 book delivery are unchanged.
+
+`python tools/dev.py check` PASS, including 344 tests. Scoped blank QA and unchanged Basic Mode PDF checks PASS.
+
+## Previous expanded Hero sheet revision - blank superseded, 2026-10-22
 
 The owner rejected the previous graphic draft and requested consistent two-sided expanded records. The revised blank and all 24 Basic Mode Heroes now have populated fronts and backs with attached labels, bounded fields, integrated panel headers, and the approved portraits. There are no current one-sided sheets or empty pack versos. All 52 revised PDFs pass source and print QA; actual author observations bind the exact files separately. Owner aesthetic review remains pending.
 

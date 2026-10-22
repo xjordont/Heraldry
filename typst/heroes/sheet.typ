@@ -1,2 +1,2 @@
 // The blank expanded record always has a front and a populated reverse.
-#include "expanded-sheet.typ"
+#include "blank-record.typ"

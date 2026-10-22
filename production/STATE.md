@@ -1,6 +1,16 @@
 # Production state - RC513 source, main
 
-## Consistent expanded Hero records - owner-directed revision, 2026-10-22
+## Blank Hero record refined first - owner-directed revision, 2026-10-22
+
+The owner requested the main rulebook's typography and style, substantially less framing, no grey inner boxes, no reminders, an empty portrait/arms field, no duplicated ancestry/background panel, one combined Inventory, and removal of the Party Leader and boxed coins fields. This pass changes only the blank. The 50 Basic Mode individual/pack PDFs retain their preceding hashes, and their template and artwork are unchanged.
+
+`typst/heroes/blank-record.typ` imports the book's existing font tokens and original signature, shield, lozenge, and brush-rule components. It replaces nested panels with open writing lines and ledgers. The front provides compact identity, statistics, resources, defence, Wounds/injuries, 3 weapon rows, and 12 Inventory rows. The reverse provides 7 full-width Power entries and 7 full-width talent/special-ability entries, each with two description lines, plus Hero Details, Adventures, and Fate. Coins use a small unboxed line. No rules reminder or advancement reference remains on the blank.
+
+Both local blank PDFs pass standalone print QA at a 9 pt minimum and 27 pt minimum glyph inset, with identical cream/white geometry. All four final Poppler page images were inspected at full-page detail. Exact-file author evidence is recorded in `production/qa/blank-hero-sheet-design-review.json`. Owner aesthetic approval remains pending; physical printing, handwriting, erasing, and duplex registration remain **NOT TESTED**. No manuscript, art approval, party ledger, Basic Mode layout, or published book changed.
+
+Validation: `python tools/dev.py check` PASS, including 344 tests; seven focused Hero tests PASS. `python tools/hero_sheet_qa.py --only-blank --render-review` PASS for both blank PDFs and all 50 unchanged Basic Mode PDF hashes.
+
+## Previous expanded Hero records - blank superseded, 2026-10-22
 
 The owner rejected the previous mixed-format draft and its graphic design, specifically detached headers over loose blank lines. The current revision replaces it with exactly one populated front and back for the blank record and every Basic Mode Hero. No compact one-side renderer or blank pack verso remains.
 

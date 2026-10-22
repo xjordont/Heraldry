@@ -2,6 +2,8 @@
 
 Owner direction, 2026-10-22: use one consistent expanded record, always one US Letter sheet printed front and back. The owner rejected the preceding mixed one-/two-side draft and its detached headings and writing lines. That version is superseded.
 
+Latest direction: finish the blank record before adapting Basic Mode Heroes. The blank now imports the book's type and marks directly, removes nested frames and grey writing fields, merges equipped and carried possessions into one Inventory, and removes reminders. Basic Mode PDFs and their template remain at the preceding checkpoint.
+
 ## Current outputs
 
 | File | Printed format |
@@ -13,21 +15,25 @@ Owner direction, 2026-10-22: use one consistent expanded record, always one US L
 
 `<paper>` is `white` or `cream`. Local PDFs are in ignored `build/heroes/`. There is no current compact one-side output and no padding with empty backs. The retired compact sources have been removed. Print actual size / 100%, Letter portrait, duplex, flipping on the long edge.
 
-## Visual system
+## Blank record visual system
 
-`typst/heroes/expanded.typ` defines one field and panel grammar. Every writing field has a closed border, an attached tinted label band, and a dedicated writing area. Major section titles are integrated into their enclosing panels. Shared field edges, a regular 8 pt panel gutter, fixed table columns, and measured panel heights replace the detached labels and loose rules of the rejected draft.
+`typst/heroes/blank-record.typ` imports `typst/aids/kit.typ` and the main rulebook's `typst/templates/system.typ`. Grenze Gotisch headings, Source Serif 4 resource headings, Source Sans 3 labels, the approved signature, shield marks, lozenges, and deterministic brush rules use the book's existing sources. There is no substitute font system or new artwork.
 
-Identity is one connected framed block, including the Hero name, role, class, ancestry, background, level, archetype, casting attribute, HP per Level, Senses, and a framed portrait. Four shield-shaped attribute cells provide the heraldic accent; Initiative, Speed, and Size use corresponding bounded statistic fields. HP, NRG, Luck, and AP have connected labelled cells. Current and maximum values are separate, with Temporary HP separate from both.
+Identity occupies a compact three-row field grid beside an empty portrait arch. There is no default portrait, crest, or label inside that arch. The book signature appears only in the title. Attribute shields retain legible sans-serif abbreviations; Initiative, Speed, Size, HP, NRG, Luck, and AP use open writing lines. Current, maximum, and Temporary HP remain distinct.
 
-The book's existing blackletter is restricted to the Hero name and the reverse title. Source Serif prints fixed values; Source Sans prints labels and rules. Type is at least 9 pt; Basic Mode rules use 10 pt. Artwork is the owner's approved V1 portrait for each Hero, with its proportions preserved. No new art or art approval was created.
+Ornament stays at section boundaries. Open ledger rules separate entries without an outer panel, inner frame, tinted label band, or grey-filled writing cell. All printed type is at least 9 pt. Cream and white exports have identical text and geometry.
 
 ## Blank record
 
-The front contains identity, attributes, resources, Chest and Shield armour parameters, Wounds and lingering injuries, 3 weapon rows, ancestry/background/other special ability fields, carried items, coins, and Party Leader status.
+The front contains identity, attributes, resources, Chest and Shield armour parameters, Wounds and lingering injuries, 3 weapon rows at 26 pt, and 12 Inventory rows at 18 pt. The Inventory records quantity, item, equipped status/location, and notes in one list. Coins use a small writing line in the section heading rather than a separate box.
 
-The reverse contains 6 Power rows, 11 talent/ability rows, all 11 equipped slots, 5 Permanent Special Item marks, adventures and Fate, and the complete Level 1-10 advancement lookup with gains, Training Costs, Retirement Payouts, and archetype reminders. These are writing capacities, not mechanical limits. Full Power descriptions can be referenced by section when too long for a row.
+The reverse devotes the full page width to 7 Power entries at 38 pt and 7 talent/special-ability entries at 32 pt. Each entry has a name column and a broad description column with two writing lines. Hero Details provides two additional full-width lines, with small Adventures and Fate fields. These are writing capacities, not mechanical limits.
 
-## Pre-generated Heroes
+The duplicated ancestry/background rules panel, separate equipped-slot list, Party Leader checkbox, boxed Carried Coins field, weapon/armour reminders, and entire advancement reference have been removed from the blank. Ancestry and Background remain once in identity; their abilities can be recorded with the other special abilities. Permanent item details can be recorded in Inventory notes. No manuscript or game rule changed.
+
+## Pre-generated Heroes - adaptation deferred
+
+The following describes the previous expanded design. It has not been restyled during the blank-only pass. `typst/heroes/expanded.typ`, the approved portraits, and all 50 individual/pack PDFs retain their previous hashes.
 
 Every front contains identity and portrait, statistics and trackers, every equipment entry, full shared Basic Mode Hands and 0 HP rules, active Hands fields, carried coins, and a bounded carried-item/change area.
 
@@ -39,15 +45,15 @@ The renderer retains every B.4 word and emphasis run through the exact extractor
 
 ```text
 python tools/hero_cards.py check
-python tools/hero_cards.py render --paper both
-python tools/hero_sheet_qa.py --render-review
+python tools/hero_cards.py render --paper both --only hero-sheet
+python tools/hero_sheet_qa.py --only-blank --render-review
 ```
 
 The render command rejects anything other than 2 pages for an individual Hero and 48 pages for the full set, and rejects compiler warnings. It audits all profile text, sub-items, statistics, shared notes, front equipment, footer clearance, and the reverse Notes boundary.
 
-The standalone QA checks every redesigned PDF for Letter geometry, minimum type size, essential text safety, font embedding, searchable text, and simulated 1.03 overscan text clipping. It checks cream/white geometry, approved art hashes, and exact agreement between each pack pair and the corresponding individual two-page file. The blank and individual pages are rendered by Poppler for actual visual review. The current receipt is `build/hero-redesign/qa.json`; permanent author observations and exact hashes are recorded separately in `production/qa/hero-sheet-design-review.json`.
+Blank-only QA checks Letter geometry, exactly two pages, minimum type size, essential text safety, font embedding, searchable text, simulated 1.03 overscan text clipping, and cream/white geometry. It compares the 50 Basic Mode PDFs against their preceding hashes, without rebuilding them or replacing their review images. The four blank sides are rendered by Poppler. The scoped receipt is `build/hero-redesign/blank/qa.json`; author observations and exact hashes are in `production/qa/blank-hero-sheet-design-review.json`. Use the commands without `--only`/`--only-blank` for a separately authorized complete Hero-set pass.
 
-`tests/test_hero_cards.py` verifies source extraction, required blank-sheet field categories, exact two-side output, populated pack versos, and complete profile coverage. Run `python tools/dev.py check` before pushing sources.
+`tests/test_hero_cards.py` verifies source extraction, required blank fields, absence of redundant sections and grey-filled inner cells, the empty portrait area, exact two-side output, populated pack versos, and complete profile coverage. Run `python tools/dev.py check` before pushing sources.
 
 ## Review status
 

@@ -1204,5 +1204,8 @@
   },
   "capacity_limits": "Blank reverse provides 6 Power rows and 11 talent/special-ability rows, plus 3 front trait fields. These are writing capacities, not game limits.",
   "physical_print": "NOT TESTED",
-  "handwriting_erasing_duplex_registration": "NOT TESTED"
+  "handwriting_erasing_duplex_registration": "NOT TESTED",
+  "blank_record_status": "SUPERSEDED; prior exact hashes retained as historical evidence",
+  "blank_record_superseded_by": "production/qa/blank-hero-sheet-design-review.json",
+  "basic_mode_status": "Unchanged at 4293a055; adaptation deferred until blank record is settled"
 }
