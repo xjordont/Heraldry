@@ -9391,17 +9391,17 @@
   "title": "Blackknife",
   "heading_id": "h-blackknife",
   "route": "gpt",
-  "spec_sha256": "77171a570a59f7a4d9833bdf6182a76e3fbcad8a8459f80af9e3141e183db280",
-  "prompt_sha256": "c4bc053fcab718fa243ee7b462bade0cd7321913876e565dd284dba92147c341",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:35:13+00:00",
+  "spec_sha256": "823ded0a6247457bb0eaa08ba139b00d62ca8292d336534d9d4d1e0e7e8e1514",
+  "prompt_sha256": "2dad6d79ce496ba72d00612fce239b7a2e9bc4f6395ac4d216573f58dc0765b2",
+  "status": "received",
+  "received_at": "2026-10-22T15:08:44+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: keep the knee-length leather coat intact and nearly solid black with a flat cap, preserving the reverse-grip dagger, two bandolier knives and belt lockpick roll. Correction: keep hems clean and use bold simple shapes with sparse hatching, pure black ink and at least 10% margin without stray marks; keep the full figure and gear visible. Automated narrow-margin warning 2.1%; no subject content is cropped.",
+  "model": "not shown",
+  "notes": "",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-BLACKKNIFE.png",
-   "sha256": "647cd0289b2ffb358fde1aa182d34844b96c7a18ed5b0cf2251019b755b2ed31",
+   "sha256": "fce296063984b89579574226501d5c7f171b76ee8b0157cd153a6aea84d3446e",
    "px": [
     1024,
     1536
@@ -9409,17 +9409,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-BLACKKNIFE.png",
-   "sha256": "bbc86eed4a378c3e2e03d709cde8e51ff0516e21116b7a607a5969312c244ecf",
+   "sha256": "913f05fb919a306ee57e3b00b035fb62a52f41a0ab0c99a6e64fce5d0cdb1b40",
    "px": [
-    835,
-    1472
+    765,
+    1453
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.783
+   "max_print_w_in_300ppi": 2.55
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-CAIRNWRATH": {
   "family": "hero",
