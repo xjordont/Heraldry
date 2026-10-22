@@ -3,14 +3,13 @@
 // sys.inputs.hero: one Hero's name, or "all" for the full set in roster order.
 #import "hero.typ": *
 
-#let rules-head(t) = block(above: 9pt, below: 2pt, sticky: true, {
-  text(font: goth, weight: 700, size: 13.5pt, t)
-  v(-5pt)
-  brush(weight: 1.6pt, seed: t.len())
+#let rules-head(t) = block(above: 9pt, below: 3pt, sticky: true, {
+  grid(columns: (auto, 1fr), column-gutter: 6pt, align: horizon,
+    text(font: goth, weight: 700, size: 13.5pt, t),
+    box(width: 100%, height: 4pt, align(horizon, line(length: 100%, stroke: 0.5pt + ink))))
 })
 
-#let back-rules(hr) = leaf(hr.name, "Basic Mode Hero", "Rules · Appendix B.4 · Side 2 of 2",
-  face: "back", arm: 13, title-size: 24pt)[
+#let back-rules(hr) = leaf(hr.name, hr.class + " · " + hr.role, face: "back", arm: 13, title-size: 26pt)[
   #set text(size: 10pt)
   #let body = {
     for s in hr.sections.filter(s => s.title != "Equipment and Items") {
@@ -22,13 +21,12 @@
       let key = if senses.starts-with("Superior") { "Superior Darkvision" } else { "Darkvision" }
       let r = DATA.reminders.at(key)
       rules-head(r.head)
-      block(above: 4pt, rich(r.runs))
+      block(above: 5pt, rich(r.runs))
     }
   }
-  #block(above: -7pt, balanced-pair(body))
-  #v(6pt)
-  #sheet-head("Notes", seed: 11, right: "Conditions, ongoing effects, and reminders in pencil")
-  #ruled(h: 1fr)
+  #plate(title: "Rules", inset: (x: 12pt, top: 13pt, bottom: 10pt), balanced-pair(body))
+  #v(BAND)
+  #block(height: 1fr, plate(title: "Notes", h: "fill")[#ruled(h: 1fr)])
 ]
 
 #let pick = sys.inputs.at("hero", default: "all")
