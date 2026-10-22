@@ -155,3 +155,4 @@ Each sheet is `typst/aids/paNN.typ`, built on the shared kit `typst/aids/kit.typ
 - Art used (all approved inks): Minotaur, Fighter, Berserker, Ghoul, Night Hag, Ranger, Assassin, the Road, Hearthhold, and Greenmark, at most one per side.
 - Rulebook figures were tried and left out: below 504 pt wide their labels fall under the 9 pt minimum, and no side has room at full width.
 - The true-scale area templates planned for PA-7 are not included: a 6″ cone does not fit beside the rules on one side. They would need a sheet of their own.
+- Hero sheets, the party ledger, and the 24 Basic Mode hero cards share this kit and are documented in [HERO_SHEETS.md](HERO_SHEETS.md).
