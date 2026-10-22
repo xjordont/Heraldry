@@ -9622,17 +9622,17 @@
   "title": "Gallowtusk",
   "heading_id": "h-gallowtusk",
   "route": "gpt",
-  "spec_sha256": "bb0d8cb4ed5169063463646d424954f7236535d958232c46f8251e2916a909c0",
-  "prompt_sha256": "4bc2e137a1db2b491ed75e1313b4c16f7d085929481a54d613931af23c58202e",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:47:34+00:00",
+  "spec_sha256": "3630343e6c87a26fd70b0f0c35f961eebc7ace0138aa092dcbf844aabeab412b",
+  "prompt_sha256": "090aab86ca48bf909783b86ec4c1cf3acf844398647796c586a8af587190be7f",
+  "status": "received",
+  "received_at": "2026-10-22T15:24:16+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: keep Gallowtusk bare-armed with a single topknot, the two-handed great falchion and belt rope loop; remove any cloak or tattered coat skirts. Correction: retain the handaxe, ring shirt and bandage roll, keep clothing intact and shapes bold with sparse hatching, pure black ink, at least 10% clean margin and no stray specks; keep the whole figure visible.",
+  "model": "not shown",
+  "notes": "Automated midtone and margin warnings inspected: textured ink strokes and rings, complete blade tip with no edge contact.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GALLOWTUSK.png",
-   "sha256": "11c3044aaaaccfd484a5405c586b7ffac035bda060be40c2cd4d1e713eb6e30d",
+   "sha256": "6e137d69ae3202a4162d281d5cea13819767698e3851c7defdf83ecf2df1c78c",
    "px": [
     1024,
     1536
@@ -9640,17 +9640,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GALLOWTUSK.png",
-   "sha256": "4ac9e12d2e178b1896294d9a099e178e9a285381627ca4c091d84ef802c14fc2",
+   "sha256": "ae85643dedfa7c6a073c82ff636ffa48a63f44e6ff884999aff55dacd43c660d",
    "px": [
-    942,
-    1436
+    909,
+    1468
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.14
+   "max_print_w_in_300ppi": 3.03
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-GILDMIRROR": {
   "family": "hero",
