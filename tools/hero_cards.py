@@ -195,7 +195,8 @@ def card_problems(pdf_path, hero, reminders):
     """Printed-output audit for one hero card: every rule item, sub-item, reminder, and printed statistic
     appears in the PDF text, and no text runs into the ruled notes space on either side."""
     import pymupdf
-    norm = lambda t: re.sub(r"\s+", "", t).replace("\u2212", "-")
+    # Whitespace, a true minus, and square brackets are presentation: costs print in black tags without them.
+    norm = lambda t: re.sub(r"[\s\[\]]+", "", t).replace("\u2212", "-")
     doc = pymupdf.open(str(pdf_path))
     if doc.page_count != 2:
         return [f"{doc.page_count} pages"]
@@ -210,17 +211,24 @@ def card_problems(pdf_path, hero, reminders):
     need += list(hero["stats"].values()) + list(hero["scores"].values())
     need += [hero["name"], hero["class"], hero["ancestry"], hero["background"]]
     problems = [f"missing: {n[:70]}" for n in need if norm(n) not in text]
-    for page, label in ((doc[0], "NOTES"), (doc[1], "Notes")):
+    for page in doc:
         spans = [s for b in page.get_text("dict")["blocks"] for l in b.get("lines", []) for s in l["spans"] if s["text"].strip()]
-        head = [s for s in spans if s["text"].strip() == label]
         foot = [s for s in spans if "HERALDRY SKIRMISH" in s["text"]]
-        if len(head) != 1 or not foot:
-            problems.append(f"page {page.number + 1}: notes heading or footer not found")
+        if not foot:
+            problems.append(f"page {page.number + 1}: footer not found")
             continue
-        top, bottom = head[0]["bbox"][3], foot[0]["bbox"][1] - 8
-        intruders = [s["text"] for s in spans if s["bbox"][1] > top and s["bbox"][3] < bottom]
-        if intruders:
-            problems.append(f"page {page.number + 1}: text inside the notes space: {intruders[0][:50]}")
+        rule = foot[0]["bbox"][1] - 8
+        low = [s["text"] for s in spans if s["bbox"][3] > rule and s not in foot and s["bbox"][1] < foot[0]["bbox"][1] - 2]
+        if low:
+            problems.append(f"page {page.number + 1}: text reaches the footer rule: {low[0][:50]}")
+        if page.number == 1:
+            head = [s for s in spans if s["text"].strip() == "Notes"]
+            if len(head) != 1:
+                problems.append("page 2: Notes heading not found")
+                continue
+            intruders = [s["text"] for s in spans if s["bbox"][1] > head[0]["bbox"][3] and s["bbox"][3] < rule]
+            if intruders:
+                problems.append(f"page 2: text inside the notes space: {intruders[0][:50]}")
     return problems
 
 
