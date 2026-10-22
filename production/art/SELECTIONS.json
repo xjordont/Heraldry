@@ -10051,17 +10051,17 @@
   "title": "Stormcrook",
   "heading_id": "h-stormcrook",
   "route": "gpt",
-  "spec_sha256": "97aa015efde633e0aabe91707c1a7bd3ea21c9cb720f6f7c700cd57c23f593fc",
-  "prompt_sha256": "658a614dd455cf74703661080bb11b1ccfbb3c853e96925277fd3a0a75abb40b",
-  "status": "rejected",
-  "received_at": "2026-10-21T20:44:14+00:00",
+  "spec_sha256": "0161932afe008704e7b9b6ec1cb797d0bfb0372cbc86ba57a4c355bf0907be13",
+  "prompt_sha256": "35024184146dc8e8c0ee9512603cbfaa9db0ca66cc2b2a70ac10e63bd2bfe957",
+  "status": "received",
+  "received_at": "2026-10-22T02:11:56+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; required items present and prohibitions absent.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Reviewer correction: crook staff, human-shaped face with localized scales, and intact clean-cut cloak are present. Left cloak and lower staff margins remain under 10%.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-STORMCROOK.png",
-   "sha256": "3136fede17378a565137cdb9bfded7d600017bd975b9a4d358c37dd1b61ebc5e",
+   "sha256": "cc3ddbde493c6171ee604550a5f5b44ef47cf22a4bd4c738f4c5677ac63e1e83",
    "px": [
     1024,
     1536
@@ -10069,17 +10069,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-STORMCROOK.png",
-   "sha256": "1de67c2e278324e5bc1447f1bb86cc5b5095935d30c079006c28ac2a5d4092d4",
+   "sha256": "404d34cdaac8f17b7e554539fb08aad0762621f5af05987666cb35564501b4f3",
    "px": [
-    979,
-    1449
+    920,
+    1388
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.263
+   "max_print_w_in_300ppi": 3.067
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:25+00:00",
-  "rejected_reason": "Keep the crook staff, but give the windblown cloak a clean cut edge and make the face human-shaped with scales only on jaw, neck and hands. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-THORNMERE": {
   "family": "hero",
