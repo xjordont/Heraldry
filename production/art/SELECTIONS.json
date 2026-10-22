@@ -9424,17 +9424,17 @@
   "title": "Cairnwrath",
   "heading_id": "h-cairnwrath",
   "route": "gpt",
-  "spec_sha256": "4c05966cee729cffa97838e89cab5031f6c1399b819a08b660aedbc5118647c5",
-  "prompt_sha256": "dec8a8f19f2cbbd7d66e05232dffa2dc1dc178fd13bca1c02b18d9afee48659a",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:37:26+00:00",
+  "spec_sha256": "95b52cbc9b134b11543ea18be3e461ac23c80eb3b8cf11b65c6e95c40af61ade",
+  "prompt_sha256": "4aece5159fd032f1eee8ae2bfc10e7edd6b8442af30b2d2e492e9aa0dbb70a06",
+  "status": "received",
+  "received_at": "2026-10-22T15:10:42+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: clearly show the small cairn of tied stones at the belt and a cleanly cut felt mantle with stitched border; keep the hide cuirass, belt dagger and two-handed battleaxe. Correction: use intact clothing, bold simple shapes, sparse hatching and pure black ink, with at least 10% clean margin and no stray specks; keep the full figure and equipment visible. Automated warnings retained: stray marks at image edge 0.10%, narrow margin 2.7%.",
+  "model": "not shown",
+  "notes": "Automated midtone and margin warnings: inspected native and print preview; hatching rather than grey wash, entire axe and boots inside image with no edge contact.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-CAIRNWRATH.png",
-   "sha256": "bde8c0209e02624ad70a954ea2845062e8edd4bdaf76e64c726cd6f815a7c128",
+   "sha256": "bfd244239a9ebaf889ff5786182f51195f32c4e2e475190059990e379181bab0",
    "px": [
     1024,
     1536
@@ -9442,17 +9442,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-CAIRNWRATH.png",
-   "sha256": "8803412e3014d529ddd2ebffba26743c435d3472b171373f47cd85c46b7ef3f4",
+   "sha256": "2278cb547c66053cb60bc63338f858b96bd4a6361be79551ccf62ec617d44c90",
    "px": [
-    944,
-    1494
+    959,
+    1511
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.147
+   "max_print_w_in_300ppi": 3.197
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-CROWWICK": {
   "family": "hero",
