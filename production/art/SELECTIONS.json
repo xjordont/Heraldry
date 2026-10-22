@@ -10117,17 +10117,17 @@
   "title": "Thoughtwake",
   "heading_id": "h-thoughtwake",
   "route": "gpt",
-  "spec_sha256": "956818be57c4a0f8b433500ca545a9528c1286f7a1a848f9634efa535ffbce19",
-  "prompt_sha256": "b33f1b738ea076bd99476548771eadc2809198d60943a6baf9fe2b8c2b38e2ae",
-  "status": "rejected",
-  "received_at": "2026-10-21T20:52:15+00:00",
+  "spec_sha256": "744d9c5f3b44c6f1fefccc3b455e884a510a577225bedb9b7055f3932788f024",
+  "prompt_sha256": "a969c5f631191e1ce446dca5dc1ae5049deb72b2957afdbba8524ac0058543e2",
+  "status": "received",
+  "received_at": "2026-10-22T02:15:03+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (no model label exposed)",
-  "notes": "Print-size visual review: required club, leather coat and temple gesture are present; whole figure and equipment remain uncut. Preserve automated narrow-margin warning 2.7%.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Reviewer correction: smooth belted leather coat, black cuffs, tall flat cap, short club and temple gesture are visible. Cap and boots leave less than 10% margin.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-THOUGHTWAKE.png",
-   "sha256": "5bea35a5e93dfc7a602103a2c42da2ca15dbd60dadd34c66e7afb6fa5b9875cd",
+   "sha256": "3c04c57c4b541a146966e8ba1de429cc72ed060e2ad62347f5add8941fb124a3",
    "px": [
     1024,
     1536
@@ -10135,16 +10135,14 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-THOUGHTWAKE.png",
-   "sha256": "cd0161e30bfd184734f0efb9d305f11b79a0877d15279f6942e84317190b7ce9",
+   "sha256": "56f707340372f27ab45010d2d53d7fa7c7a83b6586e61ad6ef1fc51b25f171da",
    "px": [
-    856,
-    1478
+    680,
+    1471
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.853
+   "max_print_w_in_300ppi": 2.267
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:24+00:00",
-  "rejected_reason": "Use a smooth belted leather coat with ink-black cuffs and a tall flat cap instead of a ragged cloak; more margin. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  }
 }
