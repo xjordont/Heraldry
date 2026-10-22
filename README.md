@@ -13,7 +13,7 @@ Claude Code, Codex, and ChatGPT Work share the same repository workflows and fiv
 - **Manuscript:** [RC513](source/Heraldry_RC513.md) (`source/versions.json`). Earlier snapshots are immutable.
 - **Last recorded delivery:** [RC492-build-37](https://github.com/xjordont/Heraldry/releases/tag/RC492-build-37), 672 interior pages. RC513 source changes await a separately requested PDF build. [Evidence and limits](production/RELEASE_STATUS.md).
 - **Last release workflow result:** RELEASED. This records that run, not verification of newer inputs.
-- **Illustration records:** 275 approved of 299; 24 generation-queue items.
+- **Illustration records:** 299 approved of 299; 24 generation-queue items.
 - **Rules figures:** 57; 57/57 current source/SVG/caption review bindings; 0 open findings. [Review ledger](production/qa/figure-semantic-review.json).
 - **Physical printing:** NOT TESTED. Automated checks do not replace examination of real sheets.
 
@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
-- [`22d49c9f`](https://github.com/xjordont/Heraldry/commit/22d49c9ffb6c969d96ec511cd6b1a3844f75f1c7) tools: share agent workflows, roles, and authority across clients
-- [`7c339066`](https://github.com/xjordont/Heraldry/commit/7c339066d115ff40f2156ec6a830d574a46e7188) art: intake of ChatGPT Work images
-- [`4a0314ed`](https://github.com/xjordont/Heraldry/commit/4a0314edb0666466c879198f1728c8e90dd49997) art(gpt): ART-HER-THOUGHTWAKE .. ART-HER-THOUGHTWAKE
-- [`8a66d2f0`](https://github.com/xjordont/Heraldry/commit/8a66d2f050b0b0339f150bcde760342fe23046e8) art: intake of ChatGPT Work images
-- [`76e4ebda`](https://github.com/xjordont/Heraldry/commit/76e4ebdae1782f957fac3483c8fedf1aaa4e8778) art(gpt): ART-HER-THORNMERE .. ART-HER-THORNMERE
-- [`1c743438`](https://github.com/xjordont/Heraldry/commit/1c74343844157b660b1cc4548b242327fb72a267) art: intake of ChatGPT Work images
+- [`1db890ee`](https://github.com/xjordont/Heraldry/commit/1db890ee2ccfdf6abb349565fcf4b93419014927) art: intake of ChatGPT Work images
+- [`d3267978`](https://github.com/xjordont/Heraldry/commit/d3267978f8a3d114496101e7ea4b030f5a4c8e10) art(gpt): ART-HER-THOUGHTWAKE .. ART-HER-THOUGHTWAKE
+- [`14e0a48d`](https://github.com/xjordont/Heraldry/commit/14e0a48d77a423cc7fc1b0a780bd0e7b19ba08a1) art: intake of ChatGPT Work images
+- [`022b79b0`](https://github.com/xjordont/Heraldry/commit/022b79b0a67a572094ab03a97e8307ab185ce009) art(gpt): ART-HER-THORNMERE .. ART-HER-THORNMERE
+- [`7b27c283`](https://github.com/xjordont/Heraldry/commit/7b27c28393b840dd3e5792b83b77fd79d2f5fd4e) art: intake of ChatGPT Work images
+- [`ab3b167f`](https://github.com/xjordont/Heraldry/commit/ab3b167feb2948c9d34ae66ef99b2e32fca8e77b) art(gpt): ART-HER-STORMCROOK .. ART-HER-STORMCROOK
 
 <!-- END AUTO:recent -->
 

@@ -1,5 +1,9 @@
 # Release status - RC513 source / RC492 delivery
 
+## Basic hero art selection - 2026-10-22
+
+The owner selected all 24 V1 basic hero portraits after comparing V1, V2, and V3. Active incoming masters and ink derivatives now use the hash-verified V1 files, and the corresponding selection records are approved. The last delivered PDFs remain RC492-build-37 and predate this art update; no new PDF or release was built. Physical print remains **NOT TESTED**.
+
 ## Shared agent workflows - 2026-10-22
 
 Owner instruction: "Update the code base so ChatGPT work and codex are able to do anything that Claude code can do." Claude Code, Codex, and ChatGPT Work now have equal repository developer, orchestrator, repair, review, and delivery authority. The shared governing contract is `docs/PROJECT_CONTRACT.md`; `AGENTS.md` and the Claude loader point to it. Five portable specialist contracts in `docs/agents/` are loaded by the existing Claude-native adapters and are directly readable from any client.
