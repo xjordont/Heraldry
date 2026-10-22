@@ -2,6 +2,10 @@
 
 The publication repository for the Heraldry Skirmish rulebook. It holds the manuscript, the Typst book build, editable rules figures, and the pen-and-ink illustration pipeline that produces a borderless US Letter PDF edition in a clean dark-fantasy style.
 
+## Agent workflows
+
+Claude Code, Codex, and ChatGPT Work share the same repository workflows and five specialist roles. Start with [shared agent operations](docs/AGENT_OPERATIONS.md), `python tools/dev.py agent list`, and `python tools/dev.py agent check`. Platform tools and credentials must be available in the current session.
+
 ## Current state
 
 <!-- BEGIN AUTO:status -->
@@ -23,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
-- [`523070d8`](https://github.com/xjordont/Heraldry/commit/523070d87119ac3fb7a131552fbee8b88a224c37) Merge branch 'main' of https://github.com/xjordont/Heraldry
-- [`51c8161c`](https://github.com/xjordont/Heraldry/commit/51c8161cb3af0cce9a0c52904c2c3dac06b2bdfd) heroes: redesign sheets, ledger, and cards as engraved plates
-- [`fa27a870`](https://github.com/xjordont/Heraldry/commit/fa27a870a15c117847ba5b313fb12785d0fd01f9) art: intake of ChatGPT Work images
-- [`f8c63698`](https://github.com/xjordont/Heraldry/commit/f8c636985a2c8ae3942332912e380f9bdf82cc2e) art(gpt): ART-HER-HEARTHBELL .. ART-HER-HEARTHBELL
-- [`e8d43db1`](https://github.com/xjordont/Heraldry/commit/e8d43db117f689227f92b3c73030597d92864a3a) art: intake of ChatGPT Work images
-- [`b30f900f`](https://github.com/xjordont/Heraldry/commit/b30f900f49933fb259002f3747291a9e6ce36ed8) art(gpt): ART-HER-GRAVEGLASS .. ART-HER-GRAVEGLASS
+- [`7c339066`](https://github.com/xjordont/Heraldry/commit/7c339066d115ff40f2156ec6a830d574a46e7188) art: intake of ChatGPT Work images
+- [`4a0314ed`](https://github.com/xjordont/Heraldry/commit/4a0314edb0666466c879198f1728c8e90dd49997) art(gpt): ART-HER-THOUGHTWAKE .. ART-HER-THOUGHTWAKE
+- [`8a66d2f0`](https://github.com/xjordont/Heraldry/commit/8a66d2f050b0b0339f150bcde760342fe23046e8) art: intake of ChatGPT Work images
+- [`76e4ebda`](https://github.com/xjordont/Heraldry/commit/76e4ebdae1782f957fac3483c8fedf1aaa4e8778) art(gpt): ART-HER-THORNMERE .. ART-HER-THORNMERE
+- [`1c743438`](https://github.com/xjordont/Heraldry/commit/1c74343844157b660b1cc4548b242327fb72a267) art: intake of ChatGPT Work images
+- [`4717e76d`](https://github.com/xjordont/Heraldry/commit/4717e76d743c517db5858d8dcd3e7dda171a70bb) art(gpt): ART-HER-STORMCROOK .. ART-HER-STORMCROOK
 
 <!-- END AUTO:recent -->
 

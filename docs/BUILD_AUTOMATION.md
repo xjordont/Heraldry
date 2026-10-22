@@ -1,5 +1,10 @@
 # Unattended build and release chain (owner decisions 2026-10-14)
 
+## Shared client authority
+
+Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal developer, orchestrator, repair, and reviewer authority under `docs/AGENT_OPERATIONS.md`. Client names in the procedure identify the original route, not exclusive permissions. A generation-only worker remains scoped to its assigned image/receipt delivery and does not approve its own work. An assigned reviewer on any client may inspect, approve, reject, and send redos using the existing evidence gates. Use the actual client and reviewer name in provenance. Native model/tool, authentication, file, and transport availability must be checked in the current session.
+
+
 Local layout iteration uses [LAYOUT_WORKFLOW.md](LAYOUT_WORKFLOW.md). Candidate and delivery jobs share the verified measurement cache; restoring it does not skip fresh composition or any publication gate. Local proofs do not dispatch this release chain.
 
 Codex orchestrates the whole build and release overnight, including the all-page visual review that gates it ("Hand it all over to codex";
@@ -22,7 +27,7 @@ build_request.py release-wait <--git--   commits production/RELEASE_RESULT.json
 ## The review gate stays real
 
 `tools/verify.py` still requires `production/qa/visual-review.json` bound to the SHA-256 of the exact cream PDF with every page recorded.
-The review is now by Codex, from images, and the ledger says so (reviewer name, `limits`: not glyph-level proofreading, not an independent second review,
+The review is by the assigned reviewer on any supported client, from images, and the ledger says so (reviewer name, `limits`: not glyph-level proofreading, not an independent second review,
 not a physical proof). `tools/visual_review_bind.py` keeps it honest: it refuses unless the candidate is `CANDIDATE_READY` and matches the manifest
 PDF hash, every contact sheet, detail page and the calibration sheet has real observations (60+ characters), the image files on disk match the manifest
 hashes (no LFS stubs), a reviewer is named, and no finding is `major`. A major finding blocks the release and is reported. The release workflow
@@ -38,7 +43,7 @@ reproducible (proved on RC492).
 | `.github/workflows/build-candidate.yml` | starts on a push of the request file (or by hand); builds, verifies, makes the review aids, publishes the pre-release, commits `BUILD_STATUS.json` (also on failure) and `production/qa/review/` |
 | `tools/build_status.py` | `CANDIDATE_READY` (only `visual_review_currency` failing) or `FAILED`; PDF hashes |
 | `tools/review_aids.py` | 24-page contact sheets (all pages), 100 dpi detail pages (covers, chapter openers, every 50th page), calibration, `manifest.json` |
-| `tools/visual_review_bind.py` | validates Codex's review record and writes the ledger (`--push` commits and pushes it) |
+| `tools/visual_review_bind.py` | validates the assigned reviewer's record and writes the ledger (`--push` commits and pushes it) |
 | `.github/workflows/rebuild-delivery.yml` | the release; also starts when `production/qa/visual-review.json` is pushed to main; writes `RELEASE_RESULT.json` |
 | `tools/release_result.py` | `RELEASED` or `FAILED` for a ledger commit |
 | `production/codex-build/CODEX_BUILD_CARD.md`, `CODEX_BUILD_PROMPT.md` | Codex's contract and the prompt to paste |

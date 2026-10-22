@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Request and follow an unattended candidate build (standard library only; runs on the owner's Windows PC under Codex).
+"""Request and follow an unattended candidate build (standard library only; shared by all repository agents).
 
 The build itself runs on GitHub Actions (.github/workflows/build-candidate.yml), which starts when this tool pushes
 production/build-request.json to main. No GitHub token, API call or local PDF build is involved: git is the only channel.
@@ -71,7 +71,7 @@ def cmd_request(a):
         now = datetime.datetime.now(datetime.timezone.utc)
         rid = now.strftime("%Y%m%dT%H%M%SZ")
         (ROOT / REQUEST).write_text(json.dumps({"request_id": rid, "requested_at": now.isoformat(timespec="seconds"),
-                                                "requested_by": "codex", "base_commit": base}, indent=1) + "\n",
+                                                "requested_by": getattr(a, "requested_by", "repository operator"), "base_commit": base}, indent=1) + "\n",
                                     encoding="utf-8")
         commit = publish_files(ROOT, [REQUEST], f"build: request candidate build {rid}", base)
     except PublishError as exc:
@@ -119,7 +119,9 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("check").set_defaults(f=cmd_check)
-    sub.add_parser("request").set_defaults(f=cmd_request)
+    request = sub.add_parser("request")
+    request.add_argument("--requested-by", default="repository operator", help="actual requesting client or operator, recorded in provenance")
+    request.set_defaults(f=cmd_request)
     w = sub.add_parser("wait")
     w.add_argument("--id", required=True)
     w.add_argument("--timeout-min", type=int, default=100)

@@ -1,5 +1,10 @@
 # Standing Heraldry artwork prompts
 
+## Shared client authority
+
+Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal developer, orchestrator, repair, and reviewer authority under `docs/AGENT_OPERATIONS.md`. Client names in the procedure identify the original route, not exclusive permissions. A generation-only worker remains scoped to its assigned image/receipt delivery and does not approve its own work. An assigned reviewer on any client may inspect, approve, reject, and send redos using the existing evidence gates. Use the actual client and reviewer name in provenance. Native model/tool, authentication, file, and transport availability must be checked in the current session.
+
+
 ## Primary route: local Codex and GitHub main
 
 Use Codex on the owner's Windows PC with the authenticated `xjordont/Heraldry` checkout on `main`. GitHub holds the authoritative prompts, queue, references, artwork, receipts, and review decisions. The separate art checkout provides local file bytes and Git LFS transport.
@@ -12,7 +17,7 @@ Installing these instructions does not authorize image production. A readiness-o
 
 ## Offline Work fallback
 
-The owner pastes this into ChatGPT Work to start an art session, with a freshly built input package attached (`Heraldry_Work_Input_<phase>.zip`: download it from a run of the `Build art packages` workflow, or ask Claude Code to build it; packages are not committed).
+The owner pastes this into ChatGPT Work to start an art session, with a freshly built input package attached (`Heraldry_Work_Input_<phase>.zip`: download it from a run of the `Build art packages` workflow, or use the assigned orchestrator to build it; packages are not committed).
 
 **No credentials ever go into a Work conversation.** An earlier draft (2026-10-11) had Work clone and push with a GitHub token. ChatGPT refused it and flagged the pasted token as a leaked secret, and it was right to: a credential pasted into a third-party chat is exposed. That route is withdrawn. Use only what is below. If a token was ever pasted, revoke it.
 
@@ -28,4 +33,4 @@ Use the attached Heraldry Work input package. Our GitHub repo is the source of t
 7. Give me the review ZIP (/mnt/data/Heraldry_Work_Review_<phase>.zip) as a downloadable file, with a short report: each ID, the image model name, the pixel size produced, attempts used, any QA failures or accepted flags, and the bundle SHA-256. State plainly that nothing was pushed and nothing is approved. Hand over one ZIP per bundle and continue until status says NOTHING LEFT or your usage ends.
 ```
 
-Returning the review ZIP: upload it unchanged to `production/art/work/inbox/` on GitHub (Add file, Upload files), or attach it to Claude Code. The `Import Work review bundle` workflow verifies it, commits the images through LFS and runs the intake.
+Returning the review ZIP: upload it unchanged to `production/art/work/inbox/` on GitHub (Add file, Upload files), or attach it to the assigned orchestrator. The `Import Work review bundle` workflow verifies it, commits the images through LFS and runs the intake.

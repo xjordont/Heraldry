@@ -1,5 +1,15 @@
 # Release status - RC513 source / RC492 delivery
 
+## Shared agent workflows - 2026-10-22
+
+Owner instruction: "Update the code base so ChatGPT work and codex are able to do anything that Claude code can do." Claude Code, Codex, and ChatGPT Work now have equal repository developer, orchestrator, repair, review, and delivery authority. The shared governing contract is `docs/PROJECT_CONTRACT.md`; `AGENTS.md` and the Claude loader point to it. Five portable specialist contracts in `docs/agents/` are loaded by the existing Claude-native adapters and are directly readable from any client.
+
+`python tools/dev.py agent list|check|role|run` exposes the same 16 workflow entry points to all three clients through `config/agent_workflows.json`, delegates to existing tools with the selected Python runtime and exact arguments, and propagates their exit codes. Build requests record an explicitly supplied actual operator (`--requested-by`), rather than falsely labelling every request Codex. Preflight validates shared role/adapter wiring, and release packages include the generic `AGENTS.md` entry point. Active art and build cards scope worker restrictions to generation tasks and permit assigned reviewers on any client.
+
+All existing manuscript, guarded art-delivery, actual visual-review, exact-PDF release, no-paid-image-API, and physical-proof safeguards remain. Runtime model/tool access, native delegation, authenticated Git/LFS, image generation, and installed InDesign still depend on the session; the shared operations guide documents direct and offline routes without claiming new platform permissions. No manuscript bytes, art approvals, or PDF artifacts changed; RC513 remains active, last delivered PDFs remain RC492-build-37, and physical print is **NOT TESTED**.
+
+Validation: `python tools/dev.py check` PASS, including 341 tests, exact dependencies, baseline contracts, immutable history, and whitespace. Ten focused parity regressions and 20 art skill source/package tests also PASS. Build-request and visual-review CLI help were exercised through the shared launcher without creating a request or ledger. Local execution is verified on Windows; Ubuntu/Windows CI exercises the same tests after push. No live ChatGPT Work session or Claude model/tool availability is certified by these checks.
+
 ## RC513 Monster AI Step endings - 2026-10-21
 
 Owner instruction: "The 24 monster AI steps that don't explicitly state either they end the turn really ought to for consistency and clarity ... Update the manuscript to reflect this. Check all the monster ai steps to ensure they are correctly sorted and labeled as ends turn or continue turn afterwards." All 115 AI Steps were read: 100 bestiary and Boss steps and 15 scenario steps. One 28-replacement batch (`editorial/history/RC513.json`) created RC513, SHA-256 `f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1`.

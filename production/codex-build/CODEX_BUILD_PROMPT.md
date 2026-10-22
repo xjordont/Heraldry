@@ -1,5 +1,10 @@
 # Prompt to paste into Codex for the unattended build and release
 
+## Shared client authority
+
+Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal developer, orchestrator, repair, and reviewer authority under `docs/AGENT_OPERATIONS.md`. Client names in the procedure identify the original route, not exclusive permissions. A generation-only worker remains scoped to its assigned image/receipt delivery and does not approve its own work. An assigned reviewer on any client may inspect, approve, reject, and send redos using the existing evidence gates. Use the actual client and reviewer name in provenance. Native model/tool, authentication, file, and transport availability must be checked in the current session.
+
+
 ```text
 You are the Heraldry primary developer, build orchestrator, and page reviewer in C:\Heraldry\art-producer (xjordont/Heraldry, branch main). Read CLAUDE.md, AGENTS.md, production/STATE.md, docs/WORKFLOW.md, docs/BUILD_AUTOMATION.md, and production/codex-build/CODEX_BUILD_CARD.md. Use C:\Heraldry\art-venv\Scripts\python.exe with PYTHONUTF8=1 and HERALDRY_SCRATCH=C:\Heraldry\art-scratch.
 

@@ -1,18 +1,23 @@
 # Codex runbook: Heraldry illustration generation (local Windows PC)
 
+## Shared client authority
+
+Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal developer, orchestrator, repair, and reviewer authority under `docs/AGENT_OPERATIONS.md`. Client names in the procedure identify the original route, not exclusive permissions. A generation-only worker remains scoped to its assigned image/receipt delivery and does not approve its own work. An assigned reviewer on any client may inspect, approve, reject, and send redos using the existing evidence gates. Use the actual client and reviewer name in provenance. Native model/tool, authentication, file, and transport availability must be checked in the current session.
+
+
 **For production sessions, `BATCH_CARD.md` is the operative one-page contract.** This runbook is background and first-time setup.
 
-Owner decision 2026-10-11: image generation continues in **Codex on the owner's Windows PC**, which has the owner's own GitHub login, Git, Git LFS and Python. GitHub `main` is the primary source and delivery route; ZIP hand-off is reserved for the offline fallback when authenticated inputs or guarded delivery are unavailable. Codex clones `xjordont/Heraldry`, generates the queued images, and pushes them through LFS with the guarded delivery script. GitHub Actions ink-prepares them, and Claude Code reviews and approves them, then publishes the next queue.
+Owner decision 2026-10-11: image generation continues in **Codex on the owner's Windows PC**, which has the owner's own GitHub login, Git, Git LFS and Python. GitHub `main` is the primary source and delivery route; ZIP hand-off is reserved for the offline fallback when authenticated inputs or guarded delivery are unavailable. Codex clones `xjordont/Heraldry`, generates the queued images, and pushes them through LFS with the guarded delivery script. GitHub Actions ink-prepares them, and the assigned reviewer reviews and approves them, then publishes the next queue.
 
 ## Roles
 
 | Who | Owns | Never does |
 |---|---|---|
-| Claude Code (orchestrator) | prompts, queue, references, art direction, review and approval (`tools/art_intake.py`), manuscript, layout, builds, all shared files | generate the final art |
-| Codex (art worker) | generating images, mechanical checks, its own visual QA record, saving to `assets/art/incoming/<ID>.<ext>` plus `production/art/gpt/RECEIPTS.jsonl`, guarded delivery | edit prompts, queue, manuscript, tools, config or the skill; approve art; build PDFs; push anything other than incoming images and receipts; force-push; create branches |
+| Orchestrator (any supported client) | prompts, queue, references, art direction, review and approval (`tools/art_intake.py`), manuscript, layout, builds, all shared files | generate the final art |
+| Generation worker (any supported client) | generating images, mechanical checks, its own visual QA record, saving to `assets/art/incoming/<ID>.<ext>` plus `production/art/gpt/RECEIPTS.jsonl`, guarded delivery | edit prompts, queue, manuscript, tools, config or the skill; approve art; build PDFs; push anything other than incoming images and receipts; force-push; create branches |
 | Owner | starts Codex sessions, art-direction calls, final say | |
 
-Codex is a worker with disjoint ownership in the sense of `CLAUDE.md`. Its only writable paths are `assets/art/incoming/ART-*.{png,jpg,webp}` and `production/art/gpt/RECEIPTS.jsonl`, and `delivery_guard.py` enforces this.
+Within a generation-only assignment, the worker has disjoint ownership in the sense of `CLAUDE.md`. Its only writable paths are `assets/art/incoming/ART-*.{png,jpg,webp}` and `production/art/gpt/RECEIPTS.jsonl`, and `delivery_guard.py` enforces this.
 
 ## One-time setup (PowerShell)
 
@@ -80,7 +85,7 @@ The first real item proves the capabilities: the image tool must accept every li
 3. Save the native file to `$env:HERALDRY_SCRATCH`, then `heraldry_art.py check ID FILE`. Look at the image and the print-size preview beside the references.
 4. `heraldry_art.py qa ID FILE` and complete the draft it names: the attestations, `register_compared` and all ten criteria with real, specific evidence.
 5. `heraldry_art.py save ID FILE --must "..." --avoid-clear --model "..."` (the draft is found automatically).
-6. One generation per item, in a fresh context, never a retry; a hard fail is saved with `--accept-flags --notes "..."` and Claude Code decides on a redo.
+6. One generation per item, in a fresh context, never a retry; a hard fail is saved with `--accept-flags --notes "..."` and the assigned reviewer decides on a redo.
 
 ## Primary delivery: guarded Git LFS to main
 
@@ -109,4 +114,4 @@ If an authenticated checkout cannot be obtained, use the explicitly selected off
 - `CLAUDE.md` governs the repository. Work on `main` only, never force-push, never rewrite history.
 - Never print, log or commit a credential. Git uses the owner's existing Windows login.
 - Build on request only: Codex never runs `make all`, builds PDFs or dispatches the delivery rebuild.
-- Nothing Codex delivers is approved. Claude Code reviews every image.
+- Generated delivery is not approval. The assigned reviewer inspects every image.

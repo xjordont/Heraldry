@@ -2,7 +2,7 @@
 """Write production/BUILD_STATUS.json after a candidate build (called by build-candidate.yml; also unit-tested).
 
 A candidate is READY when the build succeeded and the only mandatory check that fails is the hash-bound
-all-page visual review (visual_review_currency): that review is a human/Claude inspection of the exact PDF, so an
+all-page visual review (visual_review_currency): that review is a named reviewer image inspection of the exact PDF, so an
 unattended run can never satisfy it. Any other failed check, or a failed step, makes the result FAILED.
 """
 import argparse
@@ -63,7 +63,7 @@ def main():
     pdfs = {p.name: {"bytes": p.stat().st_size, "sha256": sha(p)} for p in sorted((ROOT / "dist").glob("Heraldry_*.pdf"))} if (ROOT / "dist").is_dir() else {}
     out = {"request_id": a.request_id, "result": result, "note": note, "failed_checks": failed, "source_commit": a.source_commit,
            "run_url": a.run_url, "release_url": a.release_url, "pdfs": pdfs,
-           "physical_print": "NOT TESTED", "next": "Codex inspects every review image and binds the exact PDF; pushing production/qa/visual-review.json starts release." if result == "CANDIDATE_READY" else "Fix the failure; do not release."}
+           "physical_print": "NOT TESTED", "next": "The assigned reviewer inspects every review image and binds the exact PDF; pushing production/qa/visual-review.json starts release." if result == "CANDIDATE_READY" else "Fix the failure; do not release."}
     (ROOT / "production/BUILD_STATUS.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
     print(json.dumps({k: out[k] for k in ("request_id", "result", "note")}))
     return 0

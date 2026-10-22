@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "clients": [
+    "claude-code",
+    "codex",
+    "chatgpt-work"
+  ],
+  "roles": [
+    {
+      "name": "book-designer",
+      "instructions": "docs/agents/book-designer.md",
+      "claude_adapter": ".claude/agents/book-designer.md"
+    },
+    {
+      "name": "mechanical-assistant",
+      "instructions": "docs/agents/mechanical-assistant.md",
+      "claude_adapter": ".claude/agents/mechanical-assistant.md"
+    },
+    {
+      "name": "publication-auditor",
+      "instructions": "docs/agents/publication-auditor.md",
+      "claude_adapter": ".claude/agents/publication-auditor.md"
+    },
+    {
+      "name": "publication-engineer",
+      "instructions": "docs/agents/publication-engineer.md",
+      "claude_adapter": ".claude/agents/publication-engineer.md"
+    },
+    {
+      "name": "rules-illustrator",
+      "instructions": "docs/agents/rules-illustrator.md",
+      "claude_adapter": ".claude/agents/rules-illustrator.md"
+    }
+  ],
+  "workflows": {
+    "manuscript": {
+      "script": "tools/update_manuscript.py",
+      "description": "Prepare and apply exact approved manuscript imports."
+    },
+    "revision": {
+      "script": "tools/revise_manuscript.py",
+      "description": "Promote approved patch batches with immutable history."
+    },
+    "art-catalog": {
+      "script": "tools/art_catalog.py",
+      "description": "Inspect and regenerate the source-derived art catalog."
+    },
+    "art-queue": {
+      "script": "tools/art_gpt_pack.py",
+      "description": "Prepare verbatim art prompts and generation queues."
+    },
+    "art-intake": {
+      "script": "tools/art_intake.py",
+      "description": "Scan, review, approve, or reject delivered artwork."
+    },
+    "art-package": {
+      "script": "tools/art_work_package.py",
+      "description": "Build, verify, and import offline art bundles."
+    },
+    "art-worker": {
+      "script": "production/art/skill/heraldry-classic-ink-art/scripts/heraldry_art.py",
+      "description": "Run the scoped image-production queue."
+    },
+    "art-delivery": {
+      "script": "production/art/skill/heraldry-classic-ink-art/scripts/delivery_guard.py",
+      "description": "Deliver generated images through the existing Git/LFS guard."
+    },
+    "figure-generate": {
+      "script": "figures/src/make_figures.py",
+      "description": "Generate rules figures from approved sources."
+    },
+    "figure-review": {
+      "script": "tools/figure_review_gate.py",
+      "description": "Check hash-bound figure semantic reviews."
+    },
+    "layout": {
+      "script": "tools/layout_workflow.py",
+      "description": "Plan, check, and run explicitly requested local proofs."
+    },
+    "build": {
+      "script": "tools/build_request.py",
+      "description": "Check, request, and follow an owner-requested candidate/release."
+    },
+    "visual-review": {
+      "script": "tools/visual_review_bind.py",
+      "description": "Bind actual image observations to the exact candidate PDF."
+    },
+    "indesign": {
+      "script": "tools/export_indesign.py",
+      "description": "Export or compose an explicitly requested editable InDesign project."
+    },
+    "verify": {
+      "script": "tools/verify.py",
+      "description": "Verify an explicitly requested publication build."
+    },
+    "package": {
+      "script": "tools/package.py",
+      "description": "Package a matching verified publication build."
+    }
+  }
+}
