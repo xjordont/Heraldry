@@ -9787,17 +9787,17 @@
   "title": "Ironscar",
   "heading_id": "h-ironscar",
   "route": "gpt",
-  "spec_sha256": "84e6a9679788e29d761f8e7a1b05619757a53f865c26d524b7a215a3035e3665",
-  "prompt_sha256": "7056a9ebff8167284ed8636618eee710678ea0c36caa8c4fa6374429815b8941",
-  "status": "rejected",
-  "received_at": "2026-10-21T20:09:07+00:00",
+  "spec_sha256": "391e6acb71ffeb9f35ea400b002e92fab75141aedce638a18049f593bfd4443b",
+  "prompt_sha256": "9c844e0e26fe3ef1763365b8191634a10a3eda6c5e77da94c143170a7f05d290",
+  "status": "received",
+  "received_at": "2026-10-22T01:57:44+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Checker flagged possible grey wash (12% midtones); visual review shows ink hatch. All required details visible. Preserve warning.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Reviewer correction: clean, intact cloth and half-black heater shield; margin remains below 10% at the mace on the left. Full composition inspected at print size.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-IRONSCAR.png",
-   "sha256": "fe1fb49acd5e2db04b5d0851b85c89e1077fa12cd4bfecb0a07cc01770c9ef9b",
+   "sha256": "024180ae79e40ebb518ab3c775af0cc67a63b8e009d3f43f3272e92c2b6935b2",
    "px": [
     1024,
     1536
@@ -9805,17 +9805,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-IRONSCAR.png",
-   "sha256": "12c1d6a04679d9d87f70f61835a6ec8abbaae560b3046e958d67f5f9bc2f7200",
+   "sha256": "82b82a4c5d7e73d26cf85ddf13b23918e4880d92ed1f9b7cd493e88d3539b7c8",
    "px": [
-    990,
-    1381
+    955,
+    1371
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.3
+   "max_print_w_in_300ppi": 3.183
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:23+00:00",
-  "rejected_reason": "Keep the scar, kettle helm, mail shirt, mace and dagger, but drop the shredded cloth and use a half-black heater shield for a strong silhouette. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-MOSSGRAVE": {
   "family": "hero",
