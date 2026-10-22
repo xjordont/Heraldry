@@ -9655,17 +9655,17 @@
   "title": "Gildmirror",
   "heading_id": "h-gildmirror",
   "route": "gpt",
-  "spec_sha256": "b479b79fadeb782b874d431df997978b624d87c3e297fe89b4b7c8293f94c380",
-  "prompt_sha256": "9b26ac8f96e993f5d4777410d0369688c01899419c39c0d6007702d458eec666",
-  "status": "rejected",
-  "received_at": "2026-10-21T15:34:25+00:00",
+  "spec_sha256": "c41e67ab924e301c07cccc7a87549785f7f6c2cdf2c68cd1d97aa7ada2d8440c",
+  "prompt_sha256": "d584d1181bdcf42a7fdd0352416b4310be7cf0ec62438552d89ab0ad611871f6",
+  "status": "received",
+  "received_at": "2026-10-22T01:49:48+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; required items present and prohibitions absent.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Correction: use an intact dapper leather frock coat with gilt buttons; keep the extended rapier, blank gilt-framed mirror and belt bandages, with no duplicate figure. Correction: keep garments cleanly hemmed, shapes bold and hatching sparse, pure black ink, at least 10% clear margin and no stray specks; keep the full figure and accessories visible.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GILDMIRROR.png",
-   "sha256": "fbdeccb2f3e6e23381d7bfa349e778412342e209cf1368a733cc05010eb40c75",
+   "sha256": "26cf3ee0123f9172f805122ffc92bf7b8d97bb6f7eb4b3994434f7d4acec0e5e",
    "px": [
     1024,
     1536
@@ -9673,17 +9673,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GILDMIRROR.png",
-   "sha256": "e2077df0cab06e1c6482ee5c838039ddb8150bc7eb612bcb5dde35cc561b93c7",
+   "sha256": "c7c461967cd3472ef7fd9878d7cfb01758a51e518db703ae65ee616e52fcb3b9",
    "px": [
-    984,
-    1342
+    983,
+    1300
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.28
+   "max_print_w_in_300ppi": 3.277
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:25+00:00",
-  "rejected_reason": "Use a dapper frock coat with gilt buttons and intact hems; keep the rapier, gilt mirror and bandages. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-GNAWTHOUGHT": {
   "family": "hero",
