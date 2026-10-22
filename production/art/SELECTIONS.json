@@ -9490,17 +9490,17 @@
   "title": "Dawnwarden",
   "heading_id": "h-dawnwarden",
   "route": "gpt",
-  "spec_sha256": "1ed14362002cfe7ccfa8a0f6bf7c42ceaf22068c2205d1e63407b25f125176a7",
-  "prompt_sha256": "be1530defcb5a9417f1f73a548a4c69abd43b1896d85ed3450f52edd1bb44cff",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:40:44+00:00",
+  "spec_sha256": "f59a9b9b2491e3863a2d438dd49698a60707919b99adc9e08686e4d9d60b0408",
+  "prompt_sha256": "aabbb5efca1d613781611cc7c4d9767449dad8b87b27063ebc38bba497c967bd",
+  "status": "received",
+  "received_at": "2026-10-22T15:14:50+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: use a clean white surcoat and a half-black round targe with a sunburst, with no cloak; keep the right-hand mace, ring shirt and two belt vials. Correction: keep all clothing intact and cleanly hemmed, bold simple forms, sparse hatching, pure black ink, at least 10% margin and no stray specks; keep the full figure and equipment visible.",
+  "model": "not shown",
+  "notes": "Round shield appears oversized for the specified small targe; delivered for reviewer decision.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-DAWNWARDEN.png",
-   "sha256": "b215df9214290e6ccb067ea212ea1e51323d23250cd59562a843ddd437d5632d",
+   "sha256": "fddd94dcf834fe27b2a7d8b86db577e8c729e381726e522a37be473f5930f96f",
    "px": [
     1024,
     1536
@@ -9508,17 +9508,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-DAWNWARDEN.png",
-   "sha256": "a80ee25413be15498779d7cab6ff727c6e19ae7cdea5157b29f9c5d71afbb5be",
+   "sha256": "65e813a7929612ea7b4226a498724cadd207ecf38f33fb4d71bb2d6d8d3d315c",
    "px": [
-    892,
+    922,
     1403
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.973
+   "max_print_w_in_300ppi": 3.073
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-EMBERVOW": {
   "family": "hero",
