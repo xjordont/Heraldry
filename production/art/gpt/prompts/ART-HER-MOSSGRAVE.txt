@@ -25,7 +25,7 @@ Must be shown exactly:
 
 ARTISTIC STYLE AND ATMOSPHERE
 Solitary, quiet, tender with growing things.
-Ink it like clean, confident old-school rulebook character art: a bold brush contour of varied weight, large solid-black shapes for the darkest garments and shadows, and open white paper for lit cloth and skin. Use hatching sparingly, only on the shadow side of a form and only where it explains the form; use a few long fold lines on cloth instead of fine crosshatching, and never all-over texture, stipple or tone. Garments are intact and cleanly hemmed, worn but kept, not shredded. Give this figure its own clothing shapes, materials and silhouette so it is never mistaken for another hero. Keep detail bold enough to read when printed about two inches wide, with every item of gear drawn clearly. Light falls from the upper left. It must look drawn by hand with brush and pen in pure black ink, not generated or rendered.
+Aim halfway between the two attached versions, with a clear preference for version 1's old-school pen-and-ink character. Use lively variable-weight dip-pen contours, rough brush accents, scratchy directional hatching, local crosshatching and dry-brush shadows. Recover version 1's tactile, hand-drawn materials without its indiscriminate distress or crowded texture. Balance this with version 2's readable solid blacks, open white areas, intact clothing, distinct silhouette and clearly constructed equipment. Use medium detail density: richer and rougher than version 2, quieter than version 1. Clothing is worn but maintained, with intact hems and occasional neat repairs. Each hero has individual facial features, clothing and material choices. Keep all required equipment legible at about two inches wide. Light from upper left. Pure black ink on white, no grey wash, colour or digital polish.
 
 FINAL VISUAL REQUIREMENTS
 Do not draw:
@@ -33,7 +33,7 @@ Do not draw:
 * No animal companion.
 * No grey or olive tone: the moss is drawn in black line and solid black only.
 * No tattered, torn, ragged, frayed or fringed cloth anywhere: every hem and cloak edge is cleanly cut or neatly hemmed, with at most one or two small neat patches.
-* No all-over fine cross-hatching or dense stippled texture: leave large calm areas of plain white cloth with only a few fold lines, and use solid black fills for the darkest shapes.
+* No uniform all-over hatch mesh or stipple fields: use expressive local scratchy hatching and crosshatching on shadowed forms, balanced with solid blacks and open white highlights.
 * No tint, tone or colour of any kind, including on foliage, skin and metal: pure black ink on white paper only.
 * No background, scenery, wall, doorway, sky or second figure: the hero stands alone on bare white paper.
 * No frame, border, panel box or vignette edge.
@@ -41,7 +41,7 @@ Do not draw:
 * Nothing cropped: the whole figure and every weapon are visible from the top of the head to the soles of the feet.
 * Nothing touches the edge: keep at least 10% clean white margin on all four sides, and no stray specks, spatter or ground strokes outside the figure and its short shadow.
 * No glow, aura, magical effect or speed lines.
-Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, dense crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
+Avoid photorealism, digital-render polish, clean vector-like line, stippled or noisy texture, all-over mechanical crosshatching, painterly shading, smooth gradients, grey wash, grey or coloured tint, airbrush, typography, readable runes, watermarks, signatures, modern objects, cartoon or anime proportions, tattered or ragged cloth, stray specks, cropped limbs and anything touching the image edge. The finished artwork is pure black ink on white, bold and readable at small size, with at least 10% clean white margin on every side, and prints crisply, like original ink art in an old-school fantasy rulebook.
 
 STYLE REFERENCES
-The attached reference images show the target ink style. Match their bold, rough contours, heavy solid blacks, scratchy hatching, dry-brush texture, contrast and finish. Some are centuries-old etchings or woodcuts: take only their line, blacks and finish, never their period costume. Do not copy their subjects or compositions, and draw in pure black ink only.
+Exactly two attached references show this same hero: reference 1 is version 1; reference 2 is version 2. Create a new third version approximately halfway between them. Prefer reference 1 for its expressive old-school pen line, tactile hatching and gritty hand-drawn materials. Prefer reference 2 for maintained clothing, distinctive character, clear equipment and silhouette. Do not inherit torn hems, excessive distress, colour, pseudo-writing or anatomical mistakes from either image. Written requirements and targeted corrections take precedence. Preserve this hero's identity rather than combining two different people.

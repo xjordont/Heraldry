@@ -31,6 +31,8 @@ def received(sels=None):
 def ref_set(e):
     """(name, candidates) for an entry: kind_sets (by ID) over family_sets (by family) over the register set."""
     cfg = g.CFG["gpt_reference_sets"]
+    if (e.get("brief") or {}).get("reference_images"):
+        return e["id"] + ":v3-pair", [x["path"] for x in e["brief"]["reference_images"]]
     for kind, spec in cfg.get("kind_sets", {}).items():
         if e["id"] in spec["ids"]:
             return f"{e['family']}:{kind}", spec["refs"]
@@ -62,6 +64,21 @@ def references_for(e, sels, root=ROOT, guided=True):
     always (they must exist), anchor IDs once approved. Never the entry itself."""
     cfg = g.CFG["gpt_reference_sets"]
     out = []
+    explicit = (e.get("brief") or {}).get("reference_images", [])
+    if explicit:
+        if len(explicit) > cfg["max_refs"]:
+            raise SystemExit("too many explicit reference images")
+        for ref in explicit:
+            path = (root / ref["path"]).resolve()
+            if not path.is_relative_to(root.resolve()) or not path.is_file():
+                raise SystemExit(f"reference image missing or outside repository: {ref['path']}")
+            raw = path.read_bytes()
+            # Git LFS pointer checkouts still bind the exact native object hash.
+            digest = g.sha(raw)
+            if raw.startswith(b"version https://git-lfs.github.com/spec/v1\n"):
+                digest = raw.decode().split("oid sha256:", 1)[1].splitlines()[0]
+            if digest != ref["sha256"]:
+                raise SystemExit(f"reference image hash mismatch: {ref['path']}")
     for cand in ref_set(e)[1]:
         if cand.lower().endswith(IMAGE_SUFFIXES):
             if not (root / cand).is_file():
