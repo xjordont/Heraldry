@@ -9457,17 +9457,17 @@
   "title": "Crowwick",
   "heading_id": "h-crowwick",
   "route": "gpt",
-  "spec_sha256": "eded3a3e8574f5bc01b2e1d713cca0c327e8406f698e524d2549dc682a6c0646",
-  "prompt_sha256": "7c3c448b92fa781ad2aa9ee838c2ba7234cd8b35713825afb2613a35cea527d7",
-  "status": "rejected",
-  "received_at": "2026-10-21T15:22:32+00:00",
+  "spec_sha256": "32217352d178f17537c86cf06460420f4885a17fbff70921e24abf6d9ddf9ade",
+  "prompt_sha256": "88aa82f970eecf13baf7f53d60e0728cdd5c1d089dc36439cb0e3de48c56cda9",
+  "status": "received",
+  "received_at": "2026-10-22T01:38:58+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Visually checked full image and print-size preview; required items present and listed prohibitions absent.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Correction: show the oversized leather smock-coat with a clean hem and a tall peaked cap with feather, avoiding Furrowroot's straw hat, sickle and sling; keep the blank scroll, club and candle stub. Correction: keep hems intact, bold simple shapes, sparse hatching, pure black ink, at least 10% margin and no stray specks; keep the full figure and listed gear visible.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-CROWWICK.png",
-   "sha256": "8806016beb31c58a23f4cbb1e21b38ee88dbfea5f5f3c8ae066753f1d4a3ac6a",
+   "sha256": "541fe32cd6dfe8e2f483c66924b89537d34473f8d79e1f84e18aecb996f5b89c",
    "px": [
     1024,
     1536
@@ -9475,17 +9475,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-CROWWICK.png",
-   "sha256": "fa8ebcb6d02c8878b3d75afe408d106f74221a2c266d8b1a1741c0b445031c40",
+   "sha256": "36404ba70cd563a52440535914499308421f40da9b65befd96ea53f708091796",
    "px": [
-    984,
-    1457
+    961,
+    1473
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.28
+   "max_print_w_in_300ppi": 3.203
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:25+00:00",
-  "rejected_reason": "Use an oversized smock-coat with a clean hem and a tall peaked cap with a feather; keep the scroll, club and candle stub, and avoid copying Furrowroot's hat. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-DAWNWARDEN": {
   "family": "hero",
