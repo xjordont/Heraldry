@@ -51,7 +51,7 @@ def main():
         pack = pymupdf.open(hero_cards.OUT / f"basic-heroes-{paper}.pdf")
         if len(pack) != 48:
             problems.append(f"{paper}: print pack must be 48 pages")
-        stems = ["hero-sheet-compact", "hero-sheet"] + [f"hero-{h['name'].lower()}" for h in data["heroes"]]
+        stems = ["hero-sheet"] + [f"hero-{h['name'].lower()}" for h in data["heroes"]]
         for stem in stems + ["basic-heroes"]:
             path = hero_cards.OUT / f"{stem}-{paper}.pdf"
             result = inspect(path, config)
@@ -76,9 +76,8 @@ def main():
                 if len(pack) == 48:
                     if signature(pack[index * 2]) != signature(doc[0]):
                         problems.append(f"{hr['name']}: pack front differs")
-                    if len(doc) == 1:
-                        if pack[index * 2 + 1].get_text().strip():
-                            problems.append(f"{hr['name']}: compact print-pack verso is not blank")
+                    if len(doc) != 2:
+                        problems.append(f"{hr['name']}: every Hero must have exactly two populated sides")
                     elif signature(pack[index * 2 + 1]) != signature(doc[1]):
                         problems.append(f"{hr['name']}: pack reverse differs")
                 if paper == "cream" and len(doc) == 1:

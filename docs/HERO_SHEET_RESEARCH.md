@@ -1,5 +1,7 @@
 # Hero sheet research and redesign audit
 
+**Current direction:** The owner rejected the first compact implementation below and selected a consistent expanded, two-sided record for every Hero. The current revision uses attached field-label bands, framed section headers, closed writing areas, aligned panels, and the same front/back system throughout. See `docs/HERO_SHEETS.md` for current outputs; the initial implementation results are historical evidence, not owner approval.
+
 Owner request, 2026-10-22: scrutinize the existing Hero sheets, research comparable games before further design, and improve their beauty, readability, density, and organization within one US Letter sheet per Hero, preferably one side. Active rules authority: RC513. This is a graphic and information design pass, not permission to change rules.
 
 ## Evidence and method
@@ -67,7 +69,7 @@ Use portrait as the primary format because it supports the existing book identit
 
 The final receipt records measured results and actual page observations after implementation. Compilation and text coverage do not establish independent semantic review, tagged-PDF accessibility, handwriting comfort, or physical print quality. Physical print remains **NOT TESTED**. The current task is a sheet redesign, not a full-book build or release.
 
-## Implemented outcome
+## First implemented outcome - rejected by the owner
 
 The redesigned blank operational record fits one portrait Letter side. Its optional expanded reverse retains the complete advancement lookup and increases the total capacity to 7 Powers and 15 abilities. The compact blank has 3 weapon rows, 4 Power rows, and 4 ability rows; those are finite writing capacities, not game limits.
 
