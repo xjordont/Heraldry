@@ -1,12 +1,22 @@
 # Production state - RC513 source, main
 
-## Compact Hero sheet redesign - 2026-10-22
+## Consistent expanded Hero records - owner-directed revision, 2026-10-22
+
+The owner rejected the previous mixed-format draft and its graphic design, specifically detached headers over loose blank lines. The current revision replaces it with exactly one populated front and back for the blank record and every Basic Mode Hero. No compact one-side renderer or blank pack verso remains.
+
+`typst/heroes/expanded.typ` defines attached shaded field-label bands, closed writing fields, connected identity rows, shield attributes, connected resource trackers, framed portraits, enclosed section headers, and measured panels. `expanded-sheet.typ` lays out the two-sided blank. Every pre-generated front keeps equipment, Hands/0 HP rules, active Hands fields, coins, and carried-item writing space; every reverse contains all remaining profile rules and a framed Notes area. Long form-rule text can continue at a sentence boundary without changing any source characters or emphasis.
+
+Current local QA passes all 52 redesigned PDFs: every individual has exactly two populated pages, the combined set is 48 pages, full source coverage is retained, cream/white geometry matches, approved portrait hashes match, and print preflight passes at a 9 pt minimum with a 28.65 pt minimum glyph inset. Actual page review and final development validation are recorded with the revision's exact file hashes. This is author review pending the owner's aesthetic assessment, not owner approval. Physical printing remains **NOT TESTED**. No manuscript, art approval, party ledger, or published book release changed.
+
+Validation: `python tools/dev.py check` PASS, including 344 tests. Seven focused Hero tests pass, including containment of field labels inside their attached bands. The current exact-file review is `production/qa/hero-sheet-design-review.json`; the rejected draft's ledger is retained under `production/qa/history/hero-sheet-design-review-06ab3e62-owner-rejected.json`.
+
+## Historical compact Hero sheet redesign - rejected by owner, 2026-10-22
 
 Owner requested a rigorous sheet audit, research in Mordheim, Lasting Tales, Five Leagues third edition, Frostgrave second edition, and comparable games, followed by a beautiful, readable, compact US Letter redesign. Actual reference sheets were inspected before authoring; evidence and the 22-point baseline audit are in `docs/HERO_SHEET_RESEARCH.md`. `docs/HERO_SHEETS.md` documents the implementation and print directions.
 
 New native Typst components replace repeated engraved plates/ribbons and the large portrait arch with restrained identity, aligned statistics, explicit current/maximum resources, quiet table rules, and approved V1 individual portraits. The blank operational record is one side; its expanded alternative adds a campaign reverse with the full advancement reference and more writing space. Eight Basic Mode Heroes fit one side, and sixteen use two, retaining every B.4 rule, value, sub-item, sense reminder, and full shared Basic Mode note. Equipment and the Hands/0 HP rules stay on the front. The 48-page print packs include empty backs after compact Heroes to preserve one Hero per duplex sheet.
 
-All 54 redesigned PDFs pass the standalone QA: portrait Letter geometry, minimum 9 pt type, 28.65 pt minimum actual glyph inset, embedded fonts, exact profile/shared-note coverage, cream/white layout equivalence, pack-versus-individual identity, approved-art hash matching, and 1.03 overscan text clipping. `tools/hero_sheet_qa.py` reproduces the checks and all-page Poppler review images. Eight contact sheets cover 86 individual page images; eight full-page details were inspected. The exact-hash author review is in `production/qa/hero-sheet-design-review.json`. This is not independent player testing, tagged-PDF certification, or a physical proof.
+All 54 redesigned PDFs passed the standalone QA: portrait Letter geometry, minimum 9 pt type, 28.65 pt minimum actual glyph inset, embedded fonts, exact profile/shared-note coverage, cream/white layout equivalence, pack-versus-individual identity, approved-art hash matching, and 1.03 overscan text clipping. Eight contact sheets covered 86 individual page images; eight full-page details were inspected. The rejected draft's exact-hash author review is retained in `production/qa/history/hero-sheet-design-review-06ab3e62-owner-rejected.json`. This was not independent player testing, tagged-PDF certification, a physical proof, or owner approval.
 
 Validation: `python tools/dev.py check` PASS, including 343 tests, dependencies, contracts, immutable history, and whitespace. Standalone Hero-sheet QA PASS for all 54 redesigned PDFs.
 

@@ -198,7 +198,7 @@ def card_problems(pdf_path, hero, reminders, notes=None):
     # Whitespace, a true minus, and square brackets are presentation: costs print in black tags without them.
     norm = lambda t: re.sub(r"[\s\[\]]+", "", t).replace("\u2212", "-")
     doc = pymupdf.open(str(pdf_path))
-    if doc.page_count not in (1, 2):
+    if doc.page_count != 2:
         return [f"{doc.page_count} pages"]
     text = norm("".join(p.get_text() for p in doc))
     items = [it for s in hero["sections"] for it in s["items"]]
@@ -225,12 +225,13 @@ def card_problems(pdf_path, hero, reminders, notes=None):
         if not foot:
             problems.append(f"page {page.number + 1}: footer not found")
             continue
-        rule = foot[0]["bbox"][1] - 8
-        low = [s["text"] for s in spans if s["bbox"][3] > rule and s not in foot and s["bbox"][1] < foot[0]["bbox"][1] - 2]
+        footer = max(foot, key=lambda s: s["bbox"][1])
+        rule = footer["bbox"][1] - 8
+        low = [s["text"] for s in spans if s["bbox"][3] > rule and s not in foot and s["bbox"][1] < footer["bbox"][1] - 2]
         if low:
             problems.append(f"page {page.number + 1}: text reaches the footer rule: {low[0][:50]}")
         if page.number == doc.page_count - 1:
-            head = [s for s in spans if s["text"].strip() == "Notes"]
+            head = [s for s in spans if s["text"].strip().casefold() == "notes"]
             if len(head) != 1:
                 problems.append("page 2: Notes heading not found")
                 continue
@@ -247,15 +248,14 @@ def render(paper, png, only):
     kw = dict(root=str(ROOT), font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True)
     data = json.loads(DATA.read_text(encoding="utf-8"))
     names = [h["name"] for h in data["heroes"]]
-    jobs = [("hero-sheet", {}, (2,)), ("hero-sheet-compact", {}, (1,)), ("party-ledger", {}, (2,))]
-    jobs += [(f"hero-{n.lower()}", {"hero": n}, (1, 2)) for n in names]
+    jobs = [("hero-sheet", {}, (2,)), ("party-ledger", {}, (2,))]
+    jobs += [(f"hero-{n.lower()}", {"hero": n}, (2,)) for n in names]
     jobs += [("basic-heroes", {"hero": "all"}, (48,))]
     bad = 0
     for stem, extra, want in jobs:
         if only and stem not in only and extra.get("hero") not in only:
             continue
-        src = SRC / ("ledger.typ" if stem == "party-ledger" else "sheet.typ" if stem == "hero-sheet"
-                     else "compact-sheet.typ" if stem == "hero-sheet-compact" else "cards.typ")
+        src = SRC / ("ledger.typ" if stem == "party-ledger" else "sheet.typ" if stem == "hero-sheet" else "cards.typ")
         c = typst.Compiler(str(src), sys_inputs={"substrate": paper, **extra}, **kw)
         out = OUT / f"{stem}-{paper}"
         for old in OUT.glob(f"{out.name}-*.png"):

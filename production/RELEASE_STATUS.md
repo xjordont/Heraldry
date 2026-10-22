@@ -1,8 +1,16 @@
 # Release status - RC513 source / RC492 delivery
 
-## Local Hero sheet redesign - 2026-10-22
+## Expanded Hero sheet revision - 2026-10-22
 
-The owner-requested standalone sheet pass is implemented: a one-sided blank Hero record, an expanded duplex alternative, and 24 complete Basic Mode Hero records using the approved V1 portraits. Eight Hero profiles fit one side, and sixteen use two. Both combined print packs contain 48 pages with intentional empty versos after compact Heroes. The 54 redesigned local PDFs pass print, source, art-hash, layout-equivalence, and pack checks; author visual observations bind the exact files in `production/qa/hero-sheet-design-review.json`.
+The owner rejected the previous graphic draft and requested consistent two-sided expanded records. The revised blank and all 24 Basic Mode Heroes now have populated fronts and backs with attached labels, bounded fields, integrated panel headers, and the approved portraits. There are no current one-sided sheets or empty pack versos. All 52 revised PDFs pass source and print QA; actual author observations bind the exact files separately. Owner aesthetic review remains pending.
+
+Development validation passes, including 344 tests. Ten contact sheets cover all 100 individual page images, with seven full-page detail inspections recorded in `production/qa/hero-sheet-design-review.json`.
+
+This is local sheet work only. RC513 manuscript bytes, art approvals, and the published RC492-build-37 book delivery are unchanged. Physical printing, handwriting, erasing, and duplex registration remain **NOT TESTED**.
+
+## Historical compact sheet draft - owner rejected, 2026-10-22
+
+The previous standalone sheet draft used a one-sided blank Hero record, an expanded duplex alternative, and 24 complete Basic Mode Hero records using the approved V1 portraits. Eight Hero profiles fit one side, and sixteen used two. Both combined print packs contained 48 pages with intentional empty versos after compact Heroes. The 54 local PDFs passed mechanical checks, but the owner rejected the graphic design and mixed format. Its author observations are retained in `production/qa/history/hero-sheet-design-review-06ab3e62-owner-rejected.json` and do not constitute owner approval.
 
 These are local sheet artifacts in ignored `build/heroes/`, not a full-book build or a new published release. RC513 manuscript bytes and all art approvals are unchanged. Last published book PDFs remain RC492-build-37. Physical print, handwriting, erasing, and duplex registration remain **NOT TESTED**.
 

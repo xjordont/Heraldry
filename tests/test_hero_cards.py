@@ -53,16 +53,33 @@ class HeroLeaves(unittest.TestCase):
         self.assertEqual(self.compile_pages("sheet.typ"), 2)
         self.assertEqual(self.compile_pages("ledger.typ"), 2)
 
-    def test_compact_blank_sheet_is_one_side(self):
-        pdf = self.compile("compact-sheet.typ", "compact")
+    def test_expanded_blank_has_all_required_fields(self):
+        pdf = self.compile("sheet.typ", "expanded")
         reader = PdfReader(str(pdf))
-        self.assertEqual(len(reader.pages), 1)
-        text = reader.pages[0].extract_text()
+        self.assertEqual(len(reader.pages), 2)
+        text = "\n".join(p.extract_text() for p in reader.pages).casefold()
         for label in ("Name", "Ancestry", "Background", "Class", "Level", "STR", "DEX", "INT", "SPI",
                       "Initiative", "Current", "Max", "Temp", "NRG", "Luck", "AP", "Speed", "Size",
                       "Chest", "Shield", "AD", "AV", "Wounds", "Lingering Injuries", "Known Powers",
-                      "Talents and Special Abilities", "Equipped and Carried", "Coins", "Fate"):
-            self.assertIn(label, text)
+                      "Talents and Special Abilities", "Equipped Items", "Carried Items", "Coins", "Fate"):
+            self.assertIn(label.casefold(), text)
+
+    def test_field_labels_are_inside_attached_bands(self):
+        import pymupdf
+        pdf = pymupdf.open(str(self.compile("sheet.typ", "label-bands")))
+        page = pdf[0]
+        bands = [d["rect"] for d in page.get_drawings()
+                 if d.get("fill") is not None and sum(d["fill"]) / len(d["fill"]) < 0.98
+                 and d["rect"].get_area() < 6500]
+        spans = [s for b in page.get_text("dict")["blocks"] for line in b.get("lines", []) for s in line["spans"]]
+        for label in ("Name", "Class", "Ancestry", "Background", "Level", "Casting", "Senses",
+                      "Current", "Max", "Temp", "Allowance", "Carried Coins", "Party Leader"):
+            matches = [s for s in spans if s["text"].strip() == label]
+            self.assertTrue(matches, label)
+            for span in matches:
+                r = pymupdf.Rect(span["bbox"])
+                centre = pymupdf.Point((r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2)
+                self.assertTrue(any(centre in band for band in bands), f"Detached field label: {label}")
 
     def test_compiled_set_uses_at_most_one_sheet_per_hero(self):
         reader = PdfReader(str(self.compile("cards.typ", "pack", hero="all")))
@@ -71,7 +88,7 @@ class HeroLeaves(unittest.TestCase):
         for i, hero in enumerate(data["heroes"]):
             self.assertIn(hero["name"], reader.pages[2 * i].extract_text())
             back = reader.pages[2 * i + 1].extract_text().strip()
-            self.assertTrue(not back or hero["name"] in back)
+            self.assertIn(hero["name"], back, "Every Hero requires a populated reverse")
 
     def test_every_card_prints_its_whole_profile_clear_of_the_notes(self):
         data = json.loads(hero_cards.DATA.read_text(encoding="utf-8"))
