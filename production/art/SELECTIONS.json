@@ -10051,17 +10051,17 @@
   "title": "Stormcrook",
   "heading_id": "h-stormcrook",
   "route": "gpt",
-  "spec_sha256": "0161932afe008704e7b9b6ec1cb797d0bfb0372cbc86ba57a4c355bf0907be13",
-  "prompt_sha256": "35024184146dc8e8c0ee9512603cbfaa9db0ca66cc2b2a70ac10e63bd2bfe957",
-  "status": "rejected",
-  "received_at": "2026-10-22T02:11:56+00:00",
+  "spec_sha256": "5a26e554a67f7be50fa3f5788ef6e008644102a9ae1eee2929b289e56d26a1be",
+  "prompt_sha256": "8593661bcf8f721aae451313420e35ca5906121ce2cf9c5e0041d6da0046f158",
+  "status": "received",
+  "received_at": "2026-10-22T16:24:53+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Reviewer correction: crook staff, human-shaped face with localized scales, and intact clean-cut cloak are present. Left cloak and lower staff margins remain under 10%.",
+  "model": "not shown",
+  "notes": "Ridge-horn correction achieved. Midtone advisory inspected: ink hatching without visible grey wash.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-STORMCROOK.png",
-   "sha256": "cc3ddbde493c6171ee604550a5f5b44ef47cf22a4bd4c738f4c5677ac63e1e83",
+   "sha256": "439d72e45d1260f79b89640bef2b5cbc49de00924fb13277c8bd53a164e0ec51",
    "px": [
     1024,
     1536
@@ -10069,17 +10069,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-STORMCROOK.png",
-   "sha256": "404d34cdaac8f17b7e554539fb08aad0762621f5af05987666cb35564501b4f3",
+   "sha256": "c31be10dd49f5a66d593cc80a773da3fa9241a2b66ba774451ff2ef48020232f",
    "px": [
-    920,
-    1388
+    989,
+    1437
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.067
+   "max_print_w_in_300ppi": 3.297
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-THORNMERE": {
   "family": "hero",
