@@ -131,7 +131,7 @@ def parse_hero(block, roster, facts):
         "hp_per_level": f["hp_per_level"], "casting": f["casting"],
         "stats": stats, "scores": scores,
         "sections": [{"title": t, "items": parse_items(secs[t])} for t in SECTIONS if t in secs],
-        "art": "ART-CLA-" + r["class"].upper(),
+        "art": "ART-HER-" + name.upper(),
     }
 
 
@@ -191,14 +191,14 @@ def dumps(doc):
     return re.sub(r'\[\n\s*("(?:[^"\\]|\\.)*"),\n\s*(true|false)\n\s*\]', r"[\1, \2]", text)
 
 
-def card_problems(pdf_path, hero, reminders):
+def card_problems(pdf_path, hero, reminders, notes=None):
     """Printed-output audit for one hero card: every rule item, sub-item, reminder, and printed statistic
     appears in the PDF text, and no text runs into the ruled notes space on either side."""
     import pymupdf
     # Whitespace, a true minus, and square brackets are presentation: costs print in black tags without them.
     norm = lambda t: re.sub(r"[\s\[\]]+", "", t).replace("\u2212", "-")
     doc = pymupdf.open(str(pdf_path))
-    if doc.page_count != 2:
+    if doc.page_count not in (1, 2):
         return [f"{doc.page_count} pages"]
     text = norm("".join(p.get_text() for p in doc))
     items = [it for s in hero["sections"] for it in s["items"]]
@@ -210,7 +210,15 @@ def card_problems(pdf_path, hero, reminders):
         need.append("".join(t for t, _ in reminders[key]["runs"]))
     need += list(hero["stats"].values()) + list(hero["scores"].values())
     need += [hero["name"], hero["class"], hero["ancestry"], hero["background"]]
+    if notes:
+        need += ["".join(t for t, _ in rs) for rs in notes.values()]
     problems = [f"missing: {n[:70]}" for n in need if norm(n) not in text]
+    front = norm(doc[0].get_text())
+    front_required = ["".join(t for t, _ in it["runs"])
+                      for s in hero["sections"] if s["title"] == "Equipment and Items" for it in s["items"]]
+    if notes:
+        front_required += ["".join(t for t, _ in rs) for rs in notes.values()]
+    problems += [f"missing on front: {n[:70]}" for n in front_required if norm(n) not in front]
     for page in doc:
         spans = [s for b in page.get_text("dict")["blocks"] for l in b.get("lines", []) for s in l["spans"] if s["text"].strip()]
         foot = [s for s in spans if "HERALDRY SKIRMISH" in s["text"]]
@@ -221,7 +229,7 @@ def card_problems(pdf_path, hero, reminders):
         low = [s["text"] for s in spans if s["bbox"][3] > rule and s not in foot and s["bbox"][1] < foot[0]["bbox"][1] - 2]
         if low:
             problems.append(f"page {page.number + 1}: text reaches the footer rule: {low[0][:50]}")
-        if page.number == 1:
+        if page.number == doc.page_count - 1:
             head = [s for s in spans if s["text"].strip() == "Notes"]
             if len(head) != 1:
                 problems.append("page 2: Notes heading not found")
@@ -239,14 +247,15 @@ def render(paper, png, only):
     kw = dict(root=str(ROOT), font_paths=[str(ROOT / "fonts/static")], ignore_system_fonts=True)
     data = json.loads(DATA.read_text(encoding="utf-8"))
     names = [h["name"] for h in data["heroes"]]
-    jobs = [("hero-sheet", {}, 2), ("party-ledger", {}, 2)]
-    jobs += [(f"hero-{n.lower()}", {"hero": n}, 2) for n in names]
-    jobs += [("basic-heroes", {"hero": "all"}, 48)]
+    jobs = [("hero-sheet", {}, (2,)), ("hero-sheet-compact", {}, (1,)), ("party-ledger", {}, (2,))]
+    jobs += [(f"hero-{n.lower()}", {"hero": n}, (1, 2)) for n in names]
+    jobs += [("basic-heroes", {"hero": "all"}, (48,))]
     bad = 0
     for stem, extra, want in jobs:
         if only and stem not in only and extra.get("hero") not in only:
             continue
-        src = SRC / ("ledger.typ" if stem == "party-ledger" else "sheet.typ" if stem == "hero-sheet" else "cards.typ")
+        src = SRC / ("ledger.typ" if stem == "party-ledger" else "sheet.typ" if stem == "hero-sheet"
+                     else "compact-sheet.typ" if stem == "hero-sheet-compact" else "cards.typ")
         c = typst.Compiler(str(src), sys_inputs={"substrate": paper, **extra}, **kw)
         out = OUT / f"{stem}-{paper}"
         for old in OUT.glob(f"{out.name}-*.png"):
@@ -257,12 +266,12 @@ def render(paper, png, only):
         if png and stem != "basic-heroes":
             c.compile(output=str(out) + "-{p}.png", format="png", ppi=110)
         pages = len(PdfReader(str(out) + ".pdf").pages)
-        status = "ok" if pages == want else "FAIL"
+        status = "ok" if pages in want and not warnings else "FAIL"
         bad += status == "FAIL"
         print(f"{status} {out.relative_to(ROOT)}.pdf ({pages} pages, want {want})")
         if extra.get("hero", "all") != "all":
             hero = next(h for h in data["heroes"] if h["name"] == extra["hero"])
-            for p in card_problems(str(out) + ".pdf", hero, data["reminders"]):
+            for p in card_problems(str(out) + ".pdf", hero, data["reminders"], data["notes"]):
                 bad += 1
                 print(f"FAIL {stem}: {p}")
     return bad
@@ -282,7 +291,7 @@ def main():
     doc = build_doc(rc, sha, lines)
     text = dumps(doc)
     if a.action == "extract":
-        DATA.write_text(text, encoding="utf-8")
+        DATA.write_text(text, encoding="utf-8", newline="\n")
         print(f"extracted {len(doc['heroes'])} Heroes from RC{rc}; every profile rebuilds line for line")
         return
     if not DATA.exists() or DATA.read_text(encoding="utf-8") != text:

@@ -1,5 +1,11 @@
 # Release status - RC513 source / RC492 delivery
 
+## Local Hero sheet redesign - 2026-10-22
+
+The owner-requested standalone sheet pass is implemented: a one-sided blank Hero record, an expanded duplex alternative, and 24 complete Basic Mode Hero records using the approved V1 portraits. Eight Hero profiles fit one side, and sixteen use two. Both combined print packs contain 48 pages with intentional empty versos after compact Heroes. The 54 redesigned local PDFs pass print, source, art-hash, layout-equivalence, and pack checks; author visual observations bind the exact files in `production/qa/hero-sheet-design-review.json`.
+
+These are local sheet artifacts in ignored `build/heroes/`, not a full-book build or a new published release. RC513 manuscript bytes and all art approvals are unchanged. Last published book PDFs remain RC492-build-37. Physical print, handwriting, erasing, and duplex registration remain **NOT TESTED**.
+
 ## Basic hero art selection - 2026-10-22
 
 The owner selected all 24 V1 basic hero portraits after comparing V1, V2, and V3. Active incoming masters and ink derivatives now use the hash-verified V1 files, and the corresponding selection records are approved. The last delivered PDFs remain RC492-build-37 and predate this art update; no new PDF or release was built. Physical print remains **NOT TESTED**.

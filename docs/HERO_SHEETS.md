@@ -1,48 +1,55 @@
-# Hero sheets, party ledger, and Basic Mode hero cards
+# Hero sheets and Basic Mode Hero records
 
-Owner request, 2026-10-22: a blank, pencil-friendly hero sheet that holds everything the hero creation and campaign chapters ask a player to record, and then the 24 Basic Mode heroes on the same sheet, one hero per printed sheet, with their full rules, room to write, and the book's design.
+The 2026-10-22 redesign follows the owner's request for a scrutinized, research-led, compact US Letter sheet. The comparative evidence, close audit of the previous design, and page-shape decision are in [HERO_SHEET_RESEARCH.md](HERO_SHEET_RESEARCH.md). Current rules authority is RC513; no manuscript text changed.
 
-## Design (second version, 2026-10-22)
+## Choose a record
 
-Owner, after the first version: "Ok I think we can do much better. Bette flat out. Better graphic design. More polished professional look. Look online at how good some character sheets look." Studied: the official D&D 2024 sheet (one family of framed panels with shaped corners, heavy outer and fine inner rules, labels set small beneath their lines, iconic circles and shields for the numbers that matter); a hand-drawn Mörk Borg sheet (illustration and blackletter carrying the mood, scroll banners for section titles); and several Shadowdark sheets (strong black title tabs, generous writing space, no clutter). Mordheim's and Frostgrave's rosters informed the party ledger.
-
-The kit (`typst/heroes/parts.typ`) turns those lessons into the book's Grim Heraldry language:
-
-- **Plate:** every panel is an engraved plate with a 1.5 pt outer rule, a 0.5 pt inner rule 2.8 pt inside it, concave notched corners, and a lozenge jewel at each corner.
-- **Ribbon:** each plate's title sits in a swallowtail ribbon in blackletter, reversed out of black, across the plate's top edge. Grey hint text is kept to one quiet line at the foot of a plate.
-- **Shields, roundels, and lozenges:** ability scores stand in heater shields with the abbreviation reversed out of a black chief. Level, Initiative, SPD, Sz, AP, and each maximum sit in double-ringed roundels. Wounds are outlined lozenges to fill.
-- **Arch:** the portrait stands in a pointed gothic arch with the same double rule.
-- **Fields and costs:** write-in fields put their label small beneath the line. Printed values on the cards use the book's serif with lining figures and a true minus. A rule's bracketed cost (for example "1 AP, 0 NRG") prints in a black cost tag, word for word.
-- **Page:** each page opens with the chapter arms, a blackletter title, a small-caps kicker, and a brush rule, and closes with the series footer. The last plate on each side fills the remaining height with ruled lines, so every side ends cleanly at the footer.
-
-The family otherwise matches the player aids ([PLAYER_AIDS.md](PLAYER_AIDS.md)): black ink, cream or white US Letter, and nothing within 27 pt of the trim.
-
-## What is printed
-
-All three are two-sided: print duplex, flipping on the long edge.
-
-| File | Side 1 | Side 2 |
+| Output | Size | Use |
 | --- | --- | --- |
-| Blank hero sheet (`typst/heroes/sheet.typ`) | The Hero (Name, Senses, Ancestry, Background, Class, Level, Archetype, Primary Casting Score, Max HP per Level, Party Leader) beside the portrait arch; STR, DEX, INT, and SPI shields and the Initiative roundel; Hit Points (current, Temp, max), Energy, Luck, SPD, Sz, and AP; Armour (Chest and Shield: AD, AV, DEX Pen, and Max SPD); 3 Wounds and lingering injuries; Weapons (Primary and Off-Hand); Carried items and Coins | Known Powers; General Talents, Class Talents, and Special Abilities by the level that grants them; the Level 1–10 track with each level's gain, Training Cost, and Retirement Payout; the eleven Equipped slots with the 5 Permanent Special Items; Fate (adventures, Died, Retired, Legendary Veteran, and Triumph) |
-| Party ledger (`typst/heroes/ledger.typ`) | The Party (name, Party Leader, campaign type, Hero deaths, and Triumph); Roster of 8 with Wounds and Active marks; the ten Stronghold Components with their Legendary Veterans and the unassigned Veterans; Notes | Campaign log and Treasury; 8 Hirelings and Animal Companions; Storage |
-| Basic Mode hero card (`typst/heroes/cards.typ`, 24 of them) | The hero sheet's side 1, filled in, with the hero's equipment verbatim and ruled space, an Armour panel (Armour Dice, Hands, and Carried Coins), and the Basic Mode panel (active-Hands rule and 0 HP rule) above ruled space | Every other profile rule verbatim in one Rules plate (ancestry traits, background rule, talents, Powers, special rules, weapon trait rules, and the Darkvision reminder when the hero has it), then a ruled Notes plate |
+| `hero-sheet-compact-<paper>.pdf` | 1 portrait Letter side | Operational blank record: identity, statistics, resources, armour, weapons, Powers, abilities, equipment, Wounds, injuries, and campaign fields |
+| `hero-sheet-<paper>.pdf` | 2 portrait Letter sides | Same front plus more Powers and ability space, complete Level 1-10 advancement reference, Training Costs, Retirement Payouts, and Fate |
+| `hero-<name>-<paper>.pdf` | 1 or 2 portrait Letter sides | One pre-generated Basic Mode Hero with all of its B.4 rules, shared Hands/0 HP rules, sense reminder if applicable, approved V1 portrait, and writing space |
+| `basic-heroes-<paper>.pdf` | 48 pages / 24 duplex sheets | Print pack. One-sided Heroes have deliberately empty versos, so every Hero begins on a new sheet |
+| `party-ledger-<paper>.pdf` | 2 sides | Existing party resource record; its layout was not redesigned in this pass |
 
-Sources for side text and sheet labels: § 6.4 (fields), § 6.13 (progression, archetype abilities, Primary and Off-Hand Weapons), § 6.16 (training), § 7.2 and § 7.10 (equip limits, Hands, DEX Pen, shields), § 5.8 (Wounds), § 11.1–11.4 (Roster, Treasury, Storage, Fates, payouts, Hirelings, Stronghold, Legendary Veterans), § 11.5 (solo and cooperative deaths and Triumph), and Appendix B (Basic Mode).
+`<paper>` is `cream` or `white`. Outputs live in ignored `build/heroes/`; built PDFs are never committed. This is local player-sheet work, not a full-book build or a new published release.
 
-## Fidelity: the cards never retype a rule
+The compact blank has 3 weapon rows, 4 Power rows, and 4 ability rows. The expanded reverse adds 3 Power rows and 11 ability rows, retaining the full reference that was printed in the previous sheet. The compact sheet is a finite working record, not a promise that an arbitrarily long custom spell description or inventory will fit. Use the expanded record when more space is needed. Handwriting and erasing comfort still require a physical trial.
 
-`tools/hero_cards.py extract` parses B.4 of the current manuscript into `typst/heroes/basic-heroes.json`. Rules are stored as runs of plain and bold text, exactly as printed. The extractor refuses markup it cannot carry and proves itself: rebuilding Markdown from the JSON reproduces every profile line for line. Archetype, Max HP per Level, and Primary Casting Score come from the class entries in § 6.13. The only computed value is Initiative Bonus (INT + SPI, § 6.4). Senses shows "—" when a profile lists none.
+## Design
 
-- `python tools/hero_cards.py` (check) fails when the committed JSON no longer matches the manuscript. A revision that changes B.4, the Basic Mode 0 HP paragraph, or a class entry needs `extract` and a look at the affected cards in the same commit. Other revisions leave the JSON unchanged.
-- `python tools/hero_cards.py render --paper both [--png]` writes every file to ignored `build/heroes/`, including the 48-page `basic-heroes-<paper>.pdf`. It fails a file that is not exactly two sides per hero. It also fails a card whose PDF text is missing any rule item, sub-item, reminder, or printed statistic (ignoring whitespace and the square brackets that cost tags replace), any text that reaches the footer rule, or text that runs into the back's Notes space.
-- `tests/test_hero_cards.py` runs the same checks in `make test`.
+The new `typst/heroes/compact.typ` uses the existing book fonts, selected substrates, and black ink. Blackletter and approved illustration identify the Hero; clear sans serif labels, consistent statistic order, single rules, aligned table columns, and open resource fields do the reference work. Repeated plate borders, ribbons, double roundels, and the large portrait arch are removed from these Hero records. The separate party ledger still uses the previous kit.
 
-## Art
+Current and maximum HP, NRG, and Luck are explicit. Temporary HP is separate. AP allowance and current AP are distinct. Active Hands and carried coins have write-in fields. Chest and Shield retain separate AD/AV parameters and the Block restriction. Compact blank equipment includes all eleven slots and the five Permanent Special Item marks; shared Treasury and Storage remain on the party ledger.
 
-The 24 hero portraits (ART-HER-*) are all rejected in `production/art/SELECTIONS.json`, so each card uses its class's approved ink (ART-CLA-*) in the portrait frame. When hero portraits are approved, change `art` in `tools/hero_cards.py` and re-extract. The blank sheet leaves the frame empty for a sketch or arms.
+Pre-generated rules use 9.5 pt text with 9 pt labels, costs retain brackets, and no profile prose is summarized. The one-side fit is measured at the actual column width and font settings. If it does not fit, the renderer chooses a paragraph/item boundary across two sides. It also measures column boundaries so a sentence is not split between columns. A heading stays with its first entry. Equipment, shared Hands rules, and Basic Mode 0 HP rules stay on the front. Long profiles have substantial ruled room on both sides.
 
-## Measured (2026-10-22, second version)
+Individual files: 8 Heroes use one side, and 16 use two. One-sided: Sootfinger, Hearthbell, Starcinder, Oathscale, Dawnwarden, Thoughtwake, Ashborn, and Crowwick. A source or typography change can change this measured allocation; the renderer must fail if any Hero exceeds two sides.
 
-52 PDF pages per paper (2 + 2 + 48), all exactly two-sided; smallest text 9 pt; nearest text bounding box to the trim 28.3 pt (the title's ascender box). Every side was inspected at preview resolution on cream, with spot checks on white.
+## Source fidelity and art
 
-Source note for the owner: Nightloom's profile prints "**2 Basic Venom** [1 AP]:" with the cost outside the bold, unlike Silkshade's "**Basic Venom [1 AP]:**". The card reproduces it as printed; a fix would need an approved RC revision. Physical print **NOT TESTED**: check pencil take-up and erasing on the chosen paper, and duplex registration.
+`tools/hero_cards.py extract` deterministically parses B.4 into `typst/heroes/basic-heroes.json`, retaining every rule, value, sub-item, and bold run. Reconstructing the Markdown must reproduce each profile line for line. Archetype, HP per Level, and casting attribute come from the class entries; Initiative is INT + SPI. `check` rejects stale extracted data. Extraction writes stable LF newlines on Windows and POSIX.
+
+The art selector now uses `ART-HER-<NAME>`, matching the owner's approved V1 selections from 2026-10-22. Original portrait proportions are preserved. No new art was generated and no approval status changed. `tools/hero_sheet_qa.py` requires each selected ink to be approved and to match its recorded SHA-256.
+
+## Render and verify
+
+```text
+python tools/hero_cards.py check
+python tools/hero_cards.py render --paper both --png
+python tools/hero_sheet_qa.py --render-review
+```
+
+Use `--only hero-sheet-compact hero-sheet Crowwick Mossgrave` for a bounded specimen. `render` checks page count, refuses compiler warnings, and audits each individual Hero PDF for all rules, sub-items, values, sense reminders, and shared Basic Mode notes. It also checks the Notes boundary and footer clearance. The combined pack must contain exactly 48 pages.
+
+`hero_sheet_qa.py` audits every individual and combined output with the existing Letter preflight: page boxes, orientation, at least 9 pt type, 27 pt essential text safety, embedded fonts, searchable text, and centred 1.03 overscan text clipping. It compares cream and white text/geometry and checks every pack front/reverse against the matching individual file, including blank versos. `--render-review` uses Poppler to produce all-page images and contact sheets in ignored `build/hero-redesign/review/`. The exact PDF and image hashes, source hash, selected art hashes, and design input hashes are recorded in `build/hero-redesign/qa.json`. This mechanical receipt does not approve visual quality.
+
+`tests/test_hero_cards.py` checks exact profile extraction, markup refusal, all required compact-sheet categories, page limits, every profile's printed coverage, and the combined pack's Hero-to-sheet mapping. The full repository check remains required before a source push.
+
+## Print and review limits
+
+Print at actual size / 100%, US Letter, portrait, one PDF page per side. Use the white version for the lowest background ink. Print the 48-page pack duplex, flipping on the long edge; the intentional blank backs keep all 24 Heroes on separate sheets. Individual one-page files print one-sided. The expanded blank prints duplex, flipping on the long edge. First test the driver's duplex direction on a small batch.
+
+Working margins are 32 pt horizontally, 40 pt at the top, and 50 pt at the bottom, with the footer in the bottom margin. Verify actual glyph bounds rather than treating those frame coordinates as evidence. A borderless driver can still enlarge a page; the overscan test is a conservative simulated crop, not a measurement of a particular printer.
+
+The graphic review is by the same Codex author who made the changes. It is not independent player testing, comprehensive tagged-PDF accessibility testing, a full-book review, or a physical proof. Physical print remains **NOT TESTED**. Last published book PDFs remain RC492-build-37.

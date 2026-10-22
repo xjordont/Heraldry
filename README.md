@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`966a4bb8`](https://github.com/xjordont/Heraldry/commit/966a4bb892f24013927e73f1405a76ab718d57e1) art: select V1 portraits for basic heroes
 - [`1db890ee`](https://github.com/xjordont/Heraldry/commit/1db890ee2ccfdf6abb349565fcf4b93419014927) art: intake of ChatGPT Work images
 - [`d3267978`](https://github.com/xjordont/Heraldry/commit/d3267978f8a3d114496101e7ea4b030f5a4c8e10) art(gpt): ART-HER-THOUGHTWAKE .. ART-HER-THOUGHTWAKE
 - [`14e0a48d`](https://github.com/xjordont/Heraldry/commit/14e0a48d77a423cc7fc1b0a780bd0e7b19ba08a1) art: intake of ChatGPT Work images
 - [`022b79b0`](https://github.com/xjordont/Heraldry/commit/022b79b0a67a572094ab03a97e8307ab185ce009) art(gpt): ART-HER-THORNMERE .. ART-HER-THORNMERE
 - [`7b27c283`](https://github.com/xjordont/Heraldry/commit/7b27c28393b840dd3e5792b83b77fd79d2f5fd4e) art: intake of ChatGPT Work images
-- [`ab3b167f`](https://github.com/xjordont/Heraldry/commit/ab3b167feb2948c9d34ae66ef99b2e32fca8e77b) art(gpt): ART-HER-STORMCROOK .. ART-HER-STORMCROOK
 
 <!-- END AUTO:recent -->
 
