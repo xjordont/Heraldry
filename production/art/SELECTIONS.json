@@ -9919,17 +9919,17 @@
   "title": "Redhand",
   "heading_id": "h-redhand",
   "route": "gpt",
-  "spec_sha256": "d57a03476d8d1512a170c5d6b4b3f6034905e0845dc4c8b1bc4b788f0c3c1186",
-  "prompt_sha256": "575da11078d9f6e8bad83eaf963aa0c7fda9256b584c544093049505813d9ce1",
-  "status": "rejected",
-  "received_at": "2026-10-22T02:05:09+00:00",
+  "spec_sha256": "44753671ab3b2ab85f81bc876099cca4dbf43ac590b7ec261338784fedd6c132",
+  "prompt_sha256": "9c07214a5048b68d1099acc17a46ae74fe19442079671c8b879a9ecc318b0400",
+  "status": "received",
+  "received_at": "2026-10-22T15:57:51+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Reviewer correction kept handprint and two-handed greataxe with intact trousers. Best allowed attempt still lacks a distinct hide cuirass and has stray edge marks and under-10% margins.",
+  "model": "not shown",
+  "notes": "Hide cuirass fix achieved. Hanging waist cloth remains ragged. Automated edge/margin warnings inspected: no crop or edge contact.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-REDHAND.png",
-   "sha256": "71a01756feeff2da7489cbcd343e6783fee5272c8f7ed286831194950d547b78",
+   "sha256": "fc20428a60b8ff07b6cbae7f698d5c96a93405b58410c2e012338e055a61642c",
    "px": [
     1024,
     1536
@@ -9937,17 +9937,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-REDHAND.png",
-   "sha256": "f10765d86bd60ab5dc98907186ad2b59e59b1ec77fab65cab14e937e3d084a7b",
+   "sha256": "cded637a6b0bc270b1692a64faf0a101f8ee93764d5717c9d83fc9e396467b5c",
    "px": [
-    866,
-    1492
+    907,
+    1494
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.887
+   "max_print_w_in_300ppi": 3.023
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-SILKSHADE": {
   "family": "hero",
