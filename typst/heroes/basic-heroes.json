@@ -1,0 +1,6403 @@
+{
+ "b4_sha256": "240eb96ef46394c8489fdcf6f7c8805a194d1c36c710bcdfc0583dfa9bbdcc60",
+ "reminders": {
+  "Darkvision": {
+   "head": "Darkvision (12\") Reminder",
+   "runs": [
+    ["Within ", false],
+    ["12\"", true],
+    [", a Hero with ", false],
+    ["Darkvision", true],
+    [" ignores ", false],
+    ["Cover", true],
+    [" and visual penalties caused solely by nonmagical ", false],
+    ["Darkness", true],
+    [" when determining ", false],
+    ["LOS", true],
+    [" to, targeting, or resolving an effect against a combatant, object, space, or area origin. It does not create ", false],
+    ["Light", true],
+    [", remove ", false],
+    ["Darkness", true],
+    [", or ignore ", false],
+    ["Hidden", true],
+    [" or ", false],
+    ["Invisible", true],
+    [". ", false],
+    ["Magical Darkness", true],
+    [" applies normally.", false]
+   ]
+  },
+  "Superior Darkvision": {
+   "head": "Superior Darkvision (18\") Reminder",
+   "runs": [
+    ["Within ", false],
+    ["18\"", true],
+    [", a Hero with ", false],
+    ["Superior Darkvision", true],
+    [" ignores ", false],
+    ["Cover", true],
+    [" and visual penalties caused solely by nonmagical ", false],
+    ["Darkness", true],
+    [" when determining ", false],
+    ["LOS", true],
+    [" to, targeting, or resolving an effect against a combatant, object, space, or area origin. It does not create ", false],
+    ["Light", true],
+    [", remove ", false],
+    ["Darkness", true],
+    [", or ignore ", false],
+    ["Hidden", true],
+    [" or ", false],
+    ["Invisible", true],
+    [". ", false],
+    ["Magical Darkness", true],
+    [" applies normally.", false]
+   ]
+  }
+ },
+ "notes": {
+  "hands": [
+   ["Before deployment, choose each Hero's active Hands equipment within the ", false],
+   ["2 Hands", true],
+   [" limit; remaining listed weapons are carried. Use ", false],
+   ["Interact [1 AP]", true],
+   [" to change active Hands equipment under ", false],
+   ["7.2", true],
+   [". Printed ability scores exclude ", false],
+   ["DEX Pen", true],
+   ["; apply only the worse equipped Chest or shield penalty when resolving a DEX-based value.", false]
+  ],
+  "knocked_out": [
+   ["When a Hero reaches ", false],
+   ["0 HP", true],
+   [" in Basic Mode, they become ", false],
+   ["Knocked Out", true],
+   [" and ", false],
+   ["Prone", true],
+   [" and drop carried treasure. Do not gain Wounds or roll on the ", false],
+   ["Injuries Table", true],
+   [". Healing above ", false],
+   ["0 HP", true],
+   [" removes ", false],
+   ["Knocked Out", true],
+   [" normally. Further damage or HP loss while ", false],
+   ["Knocked Out", true],
+   [" removes the Hero from this game.", false]
+  ]
+ },
+ "heroes": [
+  {
+   "name": "Ironscar",
+   "class": "Fighter",
+   "ancestry": "Dwarf",
+   "background": "Soldier",
+   "role": "Shield wall and steady melee damage",
+   "level": "1",
+   "archetype": "Martial",
+   "hp_per_level": "+3",
+   "casting": "None",
+   "stats": {
+    "HP": "19",
+    "AD": "d6 (Chest) + d8 (Shield, Block only)",
+    "SPD": "4\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "0",
+    "Senses": "Darkvision (12\")"
+   },
+   "scores": {
+    "STR": "+4",
+    "DEX": "+0",
+    "INT": "+0",
+    "SPI": "+0"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Dwarven Resilience:", true],
+        [" ", false],
+        ["Checks", true],
+        [" against poison are rolled with ", false],
+        ["Advantage", true],
+        [". Reduce poison damage taken by ", false],
+        ["1", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Heavy Step:", true],
+        [" Reduce the magnitude of the ", false],
+        ["DEX Pen", true],
+        [" of equipped Chest armour with ", false],
+        ["STR Req 4", true],
+        [" or higher by ", false],
+        ["1", true],
+        ["; for example, ", false],
+        ["-3", true],
+        [" becomes ", false],
+        ["-2", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Soldier:", true],
+        [" Your first melee attack each round deals an additional ", false],
+        ["1 damage of that attack's primary damage type", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Mace:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR blunt damage", true],
+        [", ", false],
+        ["Parrying", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Heater Shield:", true],
+        [" Shield ", false],
+        ["AD d8", true],
+        [" when using ", false],
+        ["Block", true],
+        [", ", false],
+        ["DEX Pen -1", true],
+        [", ", false],
+        ["Max Speed 7\"", true],
+        [". Use only the worse of this penalty and Chest armour ", false],
+        ["DEX Pen", true],
+        ["; they do not stack.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Mail Shirt:", true],
+        [" Chest ", false],
+        ["AD d6", true],
+        [", ", false],
+        ["DEX Pen -1", true],
+        [", ", false],
+        ["Max Speed 7\"", true],
+        [". Apply the ", false],
+        ["DEX Pen", true],
+        [" to your ", false],
+        ["DEX Checks", true],
+        [", including ", false],
+        ["Dodge", true],
+        [", and to any damage total that adds your ", false],
+        ["DEX", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Dagger:", true],
+        [" Melee weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Agile", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Bulwark:", true],
+        [" While you are equipped with metal Chest armour as defined in ", false],
+        ["7.2", true],
+        [", increase your ", false],
+        ["Max HP", true],
+        [" by ", false],
+        ["4", true],
+        [". This HP increase is already included in this Hero profile.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Shield Drill:", true],
+        [" While you are equipped with a shield, you gain ", false],
+        ["+1 AV", true],
+        [" against melee weapon attacks.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Finesse:", true],
+        [" Attacks use your ", false],
+        ["DEX", true],
+        [" modifier instead of your ", false],
+        ["STR", true],
+        [" modifier for damage calculations.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-FIGHTER"
+  },
+  {
+   "name": "Gallowtusk",
+   "class": "Fighter",
+   "ancestry": "Orc",
+   "background": "Vagabond",
+   "role": "Two-handed sweeping attacks",
+   "level": "1",
+   "archetype": "Martial",
+   "hp_per_level": "+3",
+   "casting": "None",
+   "stats": {
+    "HP": "15",
+    "AD": "d6 (Chest)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "2",
+    "NRG": "0",
+    "Senses": "Darkvision (12\")"
+   },
+   "scores": {
+    "STR": "+4",
+    "DEX": "+1",
+    "INT": "-2",
+    "SPI": "-1"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Aggressive:", true],
+        [" If not ", false],
+        ["Engaged", true],
+        [" at the start of their activation, this Hero may move up to ", false],
+        ["2\"", true],
+        [" toward the nearest enemy in ", false],
+        ["LOS", true],
+        [" before taking their first action. This movement is voluntary movement and may trigger ", false],
+        ["Reflex Attack", true],
+        [" normally.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Savage Attacks:", true],
+        [" On a melee ", false],
+        ["Critical Hit", true],
+        [", add ", false],
+        ["+2", true],
+        [" to one exploding bonus die. This modifier cannot cause another explosion.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Vagabond:", true],
+        [" Increase maximum ", false],
+        ["Luck", true],
+        [" by ", false],
+        ["1", true],
+        [". Already included in this profile's Luck. Once per round, when you roll a natural ", false],
+        ["1", true],
+        [" on a non-", false],
+        ["Casting Check", true],
+        [" that is not part of any ", false],
+        ["Reaction", true],
+        [", reroll it before resolving ", false],
+        ["Critical Failure", true],
+        [". You must use the new result.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Great Falchion:", true],
+        [" Melee weapon, ", false],
+        ["1d10 + STR slashing damage", true],
+        [", two-handed, ", false],
+        ["Graze", true],
+        [", ", false],
+        ["Sweep", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Ring Shirt:", true],
+        [" Chest ", false],
+        ["AD d6", true],
+        [", ", false],
+        ["DEX Pen -2", true],
+        [", ", false],
+        ["Max Speed 6\"", true],
+        [". Apply the ", false],
+        ["DEX Pen", true],
+        [" to your ", false],
+        ["DEX Checks", true],
+        [", including ", false],
+        ["Dodge", true],
+        [", and to any damage total that adds your ", false],
+        ["DEX", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Handaxe:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR slashing damage", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Thrown 6\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Bandages:", true],
+        [" ", false],
+        ["Interact [1 AP]:", true],
+        [" Make an ", false],
+        ["INT Check", true],
+        [". On a success, remove ", false],
+        ["Bleeding", true],
+        [" from this Hero or 1 adjacent ally. One use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Heavy Strike [2 AP]:", true],
+        [" Make one melee weapon attack with a two-handed weapon that uses ", false],
+        ["STR", true],
+        [". That attack rolls one additional base damage die.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Combat Mastery:", true],
+        [" Your second weapon attack during your activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from the ", false],
+        ["Multiple Attacks", true],
+        [" rule. Later attacks resolve normally.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Graze:", true],
+        [" If this attack is a ", false],
+        ["Total Miss", true],
+        [" or is ", false],
+        ["Dodged", true],
+        [", the target loses ", false],
+        ["2 HP", true],
+        [" instead, despite ", false],
+        ["Dodge", true],
+        [" normally preventing ", false],
+        ["HP", true],
+        [" loss.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Sweep:", true],
+        [" When you make a melee attack with this weapon, you may target all enemies within the weapon's melee distance. Roll one base damage die with ", false],
+        ["Disadvantage", true],
+        [", even if a rule such as ", false],
+        ["Martial Supremacy", true],
+        [" would grant additional base damage dice, and apply the result to each target separately. Each target may declare ", false],
+        ["Block", true],
+        [", ", false],
+        ["Dodge", true],
+        [", or ", false],
+        ["Parry", true],
+        [" against a Sweep attack as though it targeted them alone. Because one damage roll is shared, resolve the attack using the shared-roll procedure in ", false],
+        ["2.7.3", true],
+        [". A Sweep attack counts as a single attack for the multi-attack rule.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Thrown:", true],
+        [" This weapon may make a ranged attack out to its listed ", false],
+        ["Thrown", true],
+        [" range. Add the higher of your ", false],
+        ["STR", true],
+        [" or ", false],
+        ["DEX", true],
+        [" modifier to the damage total; if the weapon also has ", false],
+        ["Finesse", true],
+        [", use ", false],
+        ["DEX", true],
+        [". Each individual ", false],
+        ["Thrown", true],
+        [" weapon may be thrown once per activation and is recovered at the start of your next activation. On a ", false],
+        ["Total Miss", true],
+        [" (all retained base damage dice are natural ", false],
+        ["1s", true],
+        ["), that individual weapon is lost.", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-FIGHTER"
+  },
+  {
+   "name": "Blackknife",
+   "class": "Rogue",
+   "ancestry": "Human",
+   "background": "Smuggler",
+   "role": "Stealth and flanking strikes",
+   "level": "1",
+   "archetype": "Martial",
+   "hp_per_level": "+2",
+   "casting": "None",
+   "stats": {
+    "HP": "11",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "2",
+    "NRG": "0"
+   },
+   "scores": {
+    "STR": "+1",
+    "DEX": "+3",
+    "INT": "+1",
+    "SPI": "+0"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Versatile:", true],
+        [" At Hero creation, add ", false],
+        ["+1", true],
+        [" to any one ability score. Already included in this profile's scores.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Determined Resolve:", true],
+        [" When this Hero is reduced to ", false],
+        ["0 HP", true],
+        [", they may spend ", false],
+        ["1 Luck Point", true],
+        [" to make a ", false],
+        ["SPI Check", true],
+        [" before gaining a Wound. On a success, they remain at ", false],
+        ["0 HP", true],
+        [", ", false],
+        ["Knocked Out", true],
+        [", and ", false],
+        ["Prone", true],
+        [", but do not gain that Wound and do not roll on the ", false],
+        ["Injuries Table", true],
+        [". This use of ", false],
+        ["Luck", true],
+        [" is not a reroll. This trait cannot prevent ", false],
+        ["True Death", true],
+        [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
+        ["Injuries Table", true],
+        [", so this trait has no effect in Basic Mode.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Smuggler:", true],
+        [" While you are in ", false],
+        ["Cover", true],
+        [", your ", false],
+        ["Hide distance", true],
+        [" is ", false],
+        ["0\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Dagger:", true],
+        [" Melee weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Agile", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Lockpicks:", true],
+        [" ", false],
+        ["Interact", true],
+        [" ", false],
+        ["Checks", true],
+        [" made to inspect a treasure marker for a trap in the ", false],
+        ["Traps", true],
+        [" variant are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["2 Throwing Knives:", true],
+        [" Thrown weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Thrown 10\"", true],
+        [", ", false],
+        ["Agile", true],
+        [", ", false],
+        ["Light", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Finesse Strike:", true],
+        [" After applying ", false],
+        ["Advantage", true],
+        [" and ", false],
+        ["Disadvantage", true],
+        [" to a melee weapon attack with a ", false],
+        ["Finesse", true],
+        [" weapon, but before determining ", false],
+        ["Total Miss", true],
+        [" or ", false],
+        ["Critical Hit", true],
+        [", you may add ", false],
+        ["+1", true],
+        [" to one retained base damage die. If this brings that die to its maximum value, the attack is a ", false],
+        ["Critical Hit", true],
+        [" and resolves exploding bonus dice as normal.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Backstab:", true],
+        [" The first melee weapon attack during each of your activations against an enemy that is ", false],
+        ["Prone", true],
+        [", ", false],
+        ["Weakened", true],
+        [", ", false],
+        ["Engaged", true],
+        [" by one of your allies, or without ", false],
+        ["LOS", true],
+        [" to you deals additional damage equal to your ", false],
+        ["DEX", true],
+        [", using that attack's primary damage type, before mitigation.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Finesse:", true],
+        [" Attacks use your ", false],
+        ["DEX", true],
+        [" modifier instead of your ", false],
+        ["STR", true],
+        [" modifier for damage calculations.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Thrown:", true],
+        [" This weapon may make a ranged attack out to its listed ", false],
+        ["Thrown", true],
+        [" range. Add the higher of your ", false],
+        ["STR", true],
+        [" or ", false],
+        ["DEX", true],
+        [" modifier to the damage total; if the weapon also has ", false],
+        ["Finesse", true],
+        [", use ", false],
+        ["DEX", true],
+        [". Each individual ", false],
+        ["Thrown", true],
+        [" weapon may be thrown once per activation and is recovered at the start of your next activation. On a ", false],
+        ["Total Miss", true],
+        [" (all retained base damage dice are natural ", false],
+        ["1s", true],
+        ["), that individual weapon is lost.", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-ROGUE"
+  },
+  {
+   "name": "Sootfinger",
+   "class": "Rogue",
+   "ancestry": "Goblin",
+   "background": "Pauper",
+   "role": "Fast fencer and treasure runner",
+   "level": "1",
+   "archetype": "Martial",
+   "hp_per_level": "+2",
+   "casting": "None",
+   "stats": {
+    "HP": "9",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "S",
+    "AP": "3",
+    "Luck": "3",
+    "NRG": "0"
+   },
+   "scores": {
+    "STR": "-1",
+    "DEX": "+4",
+    "INT": "+1",
+    "SPI": "-1"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Small", true]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Nimble Escape:", true],
+        [" Once per round, when damaged by a melee or ranged attack, ", false],
+        ["Shift 1\"", true],
+        [" directly away from the attacker.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Vicious Opportunist:", true],
+        [" Your attacks deal ", false],
+        ["+1 damage", true],
+        [" of their primary damage type against an enemy that has at least 1 Wound or is at half their ", false],
+        ["Max HP", true],
+        [" or less when you declare the attack.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Pauper:", true],
+        [" Increase maximum ", false],
+        ["Luck", true],
+        [" by ", false],
+        ["1", true],
+        [". Already included in this profile's Luck. Once per adventure, when damage or HP loss would reduce you to ", false],
+        ["0 HP", true],
+        [", roll ", false],
+        ["1d6", true],
+        [". On ", false],
+        ["4–6", true],
+        [", remain at ", false],
+        ["1 HP", true],
+        [" instead.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Rapier:", true],
+        [" Melee weapon, ", false],
+        ["1d8 + DEX piercing damage", true],
+        [", ", false],
+        ["Agile", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Parrying", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Dagger:", true],
+        [" Melee weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Agile", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Lockpicks:", true],
+        [" ", false],
+        ["Interact", true],
+        [" ", false],
+        ["Checks", true],
+        [" made to inspect a treasure marker for a trap in the ", false],
+        ["Traps", true],
+        [" variant are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Smokestick [1 AP]:", true],
+        [" Create an ", false],
+        ["Aura 3\"", true],
+        [" area of smoke centred on a point in your space. The area provides ", false],
+        ["Cover", true],
+        [" until the end of the round. One use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Dodge Roll:", true],
+        [" When you succeed on ", false],
+        ["Dodge", true],
+        [", you may ", false],
+        ["Shift 2\"", true],
+        [" after the triggering effect resolves. If the triggering effect was a melee weapon attack, instead ", false],
+        ["Shift 3\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Quick Step:", true],
+        [" When you take the universal ", false],
+        ["Shift", true],
+        [" action, you may ", false],
+        ["Shift 4\"", true],
+        [" instead of ", false],
+        ["1\"", true],
+        [". After you ", false],
+        ["Hide", true],
+        [", you may immediately ", false],
+        ["Shift 4\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Finesse:", true],
+        [" Attacks use your ", false],
+        ["DEX", true],
+        [" modifier instead of your ", false],
+        ["STR", true],
+        [" modifier for damage calculations.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-ROGUE"
+  },
+  {
+   "name": "Hearthbell",
+   "class": "Cleric",
+   "ancestry": "Dwarf",
+   "background": "Soldier",
+   "role": "Healing and protection",
+   "level": "1",
+   "archetype": "Caster",
+   "hp_per_level": "+2",
+   "casting": "SPI",
+   "stats": {
+    "HP": "16",
+    "AD": "d6 (Chest) + d8 (Shield, Block only)",
+    "SPD": "4\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "9",
+    "Senses": "Darkvision (12\")"
+   },
+   "scores": {
+    "STR": "+2",
+    "DEX": "-2",
+    "INT": "-1",
+    "SPI": "+4"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Dwarven Resilience:", true],
+        [" ", false],
+        ["Checks", true],
+        [" against poison are rolled with ", false],
+        ["Advantage", true],
+        [". Reduce poison damage taken by ", false],
+        ["1", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Heavy Step:", true],
+        [" Reduce the magnitude of the ", false],
+        ["DEX Pen", true],
+        [" of equipped Chest armour with ", false],
+        ["STR Req 4", true],
+        [" or higher by ", false],
+        ["1", true],
+        ["; for example, ", false],
+        ["-3", true],
+        [" becomes ", false],
+        ["-2", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Soldier:", true],
+        [" Your first melee attack each round deals an additional ", false],
+        ["1 damage of that attack's primary damage type", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Mace:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR blunt damage", true],
+        [", ", false],
+        ["Parrying", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Heater Shield:", true],
+        [" Shield ", false],
+        ["AD d8", true],
+        [" when using ", false],
+        ["Block", true],
+        [", ", false],
+        ["DEX Pen -1", true],
+        [", ", false],
+        ["Max Speed 7\"", true],
+        [". Use only the worse of this penalty and Chest armour ", false],
+        ["DEX Pen", true],
+        ["; they do not stack.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Ring Shirt:", true],
+        [" Chest ", false],
+        ["AD d6", true],
+        [", ", false],
+        ["DEX Pen -2", true],
+        [", ", false],
+        ["Max Speed 6\"", true],
+        [". Apply the ", false],
+        ["DEX Pen", true],
+        [" to your ", false],
+        ["DEX Checks", true],
+        [", including ", false],
+        ["Dodge", true],
+        [", and to any damage total that adds your ", false],
+        ["DEX", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["2 Bandages:", true],
+        [" ", false],
+        ["Interact [1 AP]:", true],
+        [" Make an ", false],
+        ["INT Check", true],
+        [". On a success, remove ", false],
+        ["Bleeding", true],
+        [" from this Hero or 1 adjacent ally. Each Bandage is one use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Inner Light:", true],
+        [" You count as a ", false],
+        ["Light Source", true],
+        [" with ", false],
+        ["Aura 3\"", true],
+        [", and increase your ", false],
+        ["Max HP", true],
+        [" by ", false],
+        ["3", true],
+        [". This HP increase is already included in this Hero profile.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Healing Hands:", true],
+        [" Whenever you restore HP to one or more allies with a Power or item, each affected ally regains ", false],
+        ["+2", true],
+        [" additional HP.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Cleric Orisons [1 AP, 0 NRG]:", true],
+        [" Choose one: ", false],
+        ["Sacred Spark", true],
+        [", range ", false],
+        ["10\"", true],
+        [", target ", false],
+        ["1 combatant", true],
+        [", deal ", false],
+        ["1d4 holy damage", true],
+        ["; ", false],
+        ["Sign of Warding", true],
+        [", range ", false],
+        ["6\"", true],
+        [", target self or ", false],
+        ["1 ally", true],
+        [", that target gains ", false],
+        ["+1 AV", true],
+        [" the next time they apply ", false],
+        ["AV", true],
+        [" this round; or ", false],
+        ["Lantern of Faith", true],
+        [", range ", false],
+        ["10\"", true],
+        [", target ", false],
+        ["1 point in space", true],
+        [", an ", false],
+        ["Aura 5\"", true],
+        [" area around the target point becomes ", false],
+        ["Light", true],
+        [" until the end of the round, and ", false],
+        ["Hidden", true],
+        [" enemies in that area immediately lose ", false],
+        ["Hidden", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Healing Touch [1 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 1\". ", false],
+        ["Target:", true],
+        [" Self or 1 ally. ", false],
+        ["Effect:", true],
+        [" The target regains ", false],
+        ["1d10 + SPI HP", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Armour of Faith [1 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 12\". ", false],
+        ["Target:", true],
+        [" Self or 1 ally. ", false],
+        ["Effect:", true],
+        [" The target gains ", false],
+        ["+2 AV", true],
+        [" until the end of the round.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-CLERIC"
+  },
+  {
+   "name": "Embervow",
+   "class": "Cleric",
+   "ancestry": "Demonborn",
+   "background": "Noble",
+   "role": "Holy damage and bodyguard",
+   "level": "1",
+   "archetype": "Caster",
+   "hp_per_level": "+2",
+   "casting": "SPI",
+   "stats": {
+    "HP": "11",
+    "AD": "d3 (Chest)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "9",
+    "Senses": "Darkvision (12\")"
+   },
+   "scores": {
+    "STR": "+0",
+    "DEX": "-1",
+    "INT": "+0",
+    "SPI": "+4"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Infernal Resistance:", true],
+        [" You are ", false],
+        ["Resistant", true],
+        [" to fire damage: you take half fire damage, rounded down.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Fiendish Legacy (Hellstep) [1 AP]:", true],
+        [" ", false],
+        ["Shift 3\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Noble:", true],
+        [" Increase maximum ", false],
+        ["Luck", true],
+        [" by ", false],
+        ["1", true],
+        [". Already included in this profile's Luck. Basic Mode does not use the ", false],
+        ["Treasury", true],
+        [", so this background's coin reward has no effect in Basic Mode.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Quarterstaff:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR blunt damage", true],
+        [", two-handed, ", false],
+        ["Parrying", true],
+        [", ", false],
+        ["Trip", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Gambeson:", true],
+        [" Chest ", false],
+        ["AD d3", true],
+        [", ", false],
+        ["DEX Pen -1", true],
+        [", ", false],
+        ["Max Speed 7\"", true],
+        [". Apply the ", false],
+        ["DEX Pen", true],
+        [" to your ", false],
+        ["DEX Checks", true],
+        [", including ", false],
+        ["Dodge", true],
+        [", and to any damage total that adds your ", false],
+        ["DEX", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["2 Holy Water [1 AP]:", true],
+        [" ", false],
+        ["Thrown 6\"", true],
+        [" (", false],
+        ["Aura 1\"", true],
+        ["): ", false],
+        ["Undead", true],
+        [" and ", false],
+        ["Fiend", true],
+        [" combatants in the area suffer ", false],
+        ["1d6 holy damage", true],
+        [". Other combatants are unaffected. Each flask is one use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Intercessor [1 AP Reaction]:", true],
+        [" ", false],
+        ["Trigger:", true],
+        [" An ally within ", false],
+        ["2\"", true],
+        [" is chosen as the target of an attack or effect from a source you can see, you are not already a target of that source, and you are otherwise a legal target. ", false],
+        ["Effect:", true],
+        [" You become the target instead. Reduce the triggering source's damage against you by ", false],
+        ["2", true],
+        [". ", false],
+        ["Intercessor", true],
+        [" cannot redirect an Area of Effect.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Wrath of Faith:", true],
+        [" When a Power or weapon attack you control deals ", false],
+        ["holy", true],
+        [" damage, that effect deals an additional ", false],
+        ["2 holy damage", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Cleric Orisons [1 AP, 0 NRG]:", true],
+        [" Choose one: ", false],
+        ["Sacred Spark", true],
+        [", range ", false],
+        ["10\"", true],
+        [", target ", false],
+        ["1 combatant", true],
+        [", deal ", false],
+        ["1d4 holy damage", true],
+        ["; ", false],
+        ["Sign of Warding", true],
+        [", range ", false],
+        ["6\"", true],
+        [", target self or ", false],
+        ["1 ally", true],
+        [", that target gains ", false],
+        ["+1 AV", true],
+        [" the next time they apply ", false],
+        ["AV", true],
+        [" this round; or ", false],
+        ["Lantern of Faith", true],
+        [", range ", false],
+        ["10\"", true],
+        [", target ", false],
+        ["1 point in space", true],
+        [", an ", false],
+        ["Aura 5\"", true],
+        [" area around the target point becomes ", false],
+        ["Light", true],
+        [" until the end of the round, and ", false],
+        ["Hidden", true],
+        [" enemies in that area immediately lose ", false],
+        ["Hidden", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Sacred Flame [1 AP, 2 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 24\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" Deal ", false],
+        ["1d10 + SPI holy damage", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Warding Sigil [2 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 12\". ", false],
+        ["Target:", true],
+        [" 1 ally. ", false],
+        ["Effect:", true],
+        [" Until the end of the round, the first time the target would take damage, reduce it by ", false],
+        ["1d6 + SPI", true],
+        [", to a minimum of ", false],
+        ["0", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Trip:", true],
+        [" You may use this weapon to take the ", false],
+        ["Trip", true],
+        [" action.", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-CLERIC"
+  },
+  {
+   "name": "Graveglass",
+   "class": "Wizard",
+   "ancestry": "Gnome",
+   "background": "Scholar",
+   "role": "Long-range Power damage",
+   "level": "1",
+   "archetype": "Caster",
+   "hp_per_level": "+2",
+   "casting": "INT",
+   "stats": {
+    "HP": "9",
+    "AD": "None",
+    "SPD": "5\"",
+    "Sz": "S",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "15",
+    "Senses": "Darkvision (12\")"
+   },
+   "scores": {
+    "STR": "-2",
+    "DEX": "-1",
+    "INT": "+6",
+    "SPI": "+0"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Small", true]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Gnome Cunning:", true],
+        [" Your ", false],
+        ["INT", true],
+        [" and ", false],
+        ["SPI Checks", true],
+        [" made to resist enemy effects that would make you ", false],
+        ["Blinded", true],
+        [", ", false],
+        ["Frightened", true],
+        [", ", false],
+        ["Sleeping", true],
+        [", or ", false],
+        ["Weakened", true],
+        [", or force your movement, attacks, or target choices, are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Artificer's Touch:", true],
+        [" ", false],
+        ["INT Checks", true],
+        [" made to ", false],
+        ["Interact", true],
+        [" with, understand, or examine mechanical hazards and devices are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Scholar:", true],
+        [" Your ", false],
+        ["INT Checks", true],
+        [" made to ", false],
+        ["Interact", true],
+        [" with, decipher, or investigate nonmagical objects, inscriptions, clues, and hazards are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Club:", true],
+        [" ", false],
+        ["1d4 + STR blunt damage", true],
+        [". One hand. No requirement. No traits.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["2 Torches:", true],
+        [" A carried torch is a ", false],
+        ["Light Source", true],
+        [" with ", false],
+        ["Aura 3\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Knowledge:", true],
+        [" Add ", false],
+        ["+2", true],
+        [" to your ", false],
+        ["Casting Checks", true],
+        [" for ", false],
+        ["Tier 0", true],
+        [" and ", false],
+        ["Tier 1", true],
+        [" Powers.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Arcane Reserve:", true],
+        [" Increase your ", false],
+        ["Max NRG", true],
+        [" by ", false],
+        ["1 + your Level", true],
+        [". The Max NRG increase is already included in this Hero profile.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Wizard Cantrips [1 AP, 0 NRG]:", true],
+        [" Choose one: ", false],
+        ["Arcane Dart", true],
+        [", range ", false],
+        ["12\"", true],
+        [", target ", false],
+        ["1 combatant", true],
+        [", deal ", false],
+        ["1d4 arcane damage", true],
+        [", and on a ", false],
+        ["Critical Cast", true],
+        [" you may immediately ", false],
+        ["Shift 1\"", true],
+        ["; ", false],
+        ["Mage Hand", true],
+        [", range ", false],
+        ["8\"", true],
+        [", target ", false],
+        ["1 unsecured object, unlocked door, lever, latch, or similar small interactable element", true],
+        [", interact with the target within ", false],
+        ["8\"", true],
+        [" to open or close an unlocked door, pull a lever, lift or place one unsecured object, or perform a similar ", false],
+        ["Interact", true],
+        [" effect at range, but this can never deal damage, make an attack, or complete an objective unless that objective explicitly allows ", false],
+        ["Mage Hand", true],
+        ["; or ", false],
+        ["Spark Ward", true],
+        [", range self, target self, add ", false],
+        ["+3 AV", true],
+        [" the next time you apply ", false],
+        ["AV", true],
+        [" this round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Arcane Salvo [2 AP, 2 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 24\". ", false],
+        ["Target:", true],
+        [" 1–3 combatants. ", false],
+        ["Effect:", true],
+        [" Resolve three damage instances in the declared order, each dealing ", false],
+        ["1d4 + 2 arcane damage", true],
+        [". At declaration, assign each instance to a chosen target and distribute the points of your ", false],
+        ["INT", true],
+        [" modifier among the instances without changing their sign. Each instance is a separate effect for damage, mitigation, ", false],
+        ["Luck", true],
+        [", and Reaction limits. Declare all Reactions before the first instance's damage dice under ", false],
+        ["4.5", true],
+        [". ", false],
+        ["[Empower 1 NRG]:", true],
+        [" Resolve one additional damage instance (4 damage instances total).", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Arcane Bolt [2 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 20\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" Deal ", false],
+        ["1d12 + INT lightning damage", true],
+        [". ", false],
+        ["[Empower 1 NRG]:", true],
+        [" Increase the die to ", false],
+        ["2d8", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-WIZARD"
+  },
+  {
+   "name": "Starcinder",
+   "class": "Wizard",
+   "ancestry": "Elf",
+   "background": "Artisan",
+   "role": "Close-range fire, ice, and teleportation",
+   "level": "1",
+   "archetype": "Caster",
+   "hp_per_level": "+2",
+   "casting": "INT",
+   "stats": {
+    "HP": "9",
+    "AD": "None",
+    "SPD": "6\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "11"
+   },
+   "scores": {
+    "STR": "-2",
+    "DEX": "+0",
+    "INT": "+5",
+    "SPI": "+0"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Fey Ancestry:", true],
+        [" This Hero is ", false],
+        ["Immune", true],
+        [" to ", false],
+        ["Sleeping", true],
+        [". Their ", false],
+        ["Checks", true],
+        [" made to resist ", false],
+        ["Frightened", true],
+        [" are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Elven Grace:", true],
+        [" Once per round, after completing a ", false],
+        ["Move", true],
+        [", ", false],
+        ["Shift 1\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Artisan:", true],
+        [" One chosen mundane starting weapon, piece of Chest armour, or shield gains the ", false],
+        ["Masterwork", true],
+        [" quality. This profile's Quarterstaff already has it.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Masterwork Quarterstaff:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR blunt damage", true],
+        [", two-handed, ", false],
+        ["Parrying", true],
+        [", ", false],
+        ["Trip", true],
+        [", ", false],
+        ["Masterwork", true],
+        [". This weapon does not count as metal for the restrictions in ", false],
+        ["8.2", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Bandages:", true],
+        [" ", false],
+        ["Interact [1 AP]:", true],
+        [" Make an ", false],
+        ["INT Check", true],
+        [". On a success, remove ", false],
+        ["Bleeding", true],
+        [" from this Hero or 1 adjacent ally. One use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Sharp Mind [0 AP, 1 NRG]:", true],
+        [" Once during your activation, the next Power you cast during this activation costs ", false],
+        ["1 less AP", true],
+        [", minimum ", false],
+        ["1 AP", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Dimensional Step [0 AP, 1 NRG]:", true],
+        [" Once during each activation, teleport up to ", false],
+        ["6\"", true],
+        [" to a legal unoccupied space you can see.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Wizard Cantrips [1 AP, 0 NRG]:", true],
+        [" Choose one: ", false],
+        ["Arcane Dart", true],
+        [", range ", false],
+        ["12\"", true],
+        [", target ", false],
+        ["1 combatant", true],
+        [", deal ", false],
+        ["1d4 arcane damage", true],
+        [", and on a ", false],
+        ["Critical Cast", true],
+        [" you may immediately ", false],
+        ["Shift 1\"", true],
+        ["; ", false],
+        ["Mage Hand", true],
+        [", range ", false],
+        ["8\"", true],
+        [", target ", false],
+        ["1 unsecured object, unlocked door, lever, latch, or similar small interactable element", true],
+        [", interact with the target within ", false],
+        ["8\"", true],
+        [" to open or close an unlocked door, pull a lever, lift or place one unsecured object, or perform a similar ", false],
+        ["Interact", true],
+        [" effect at range, but this can never deal damage, make an attack, or complete an objective unless that objective explicitly allows ", false],
+        ["Mage Hand", true],
+        ["; or ", false],
+        ["Spark Ward", true],
+        [", range self, target self, add ", false],
+        ["+3 AV", true],
+        [" the next time you apply ", false],
+        ["AV", true],
+        [" this round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Burning Hands [2 AP, 2 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 3\". ", false],
+        ["Area:", true],
+        [" ", false],
+        ["Cone 3\"", true],
+        [". ", false],
+        ["Effect:", true],
+        [" Deal ", false],
+        ["1d6 + INT fire damage", true],
+        [" to all enemies in the cone. ", false],
+        ["[Empower 1 NRG]:", true],
+        [" The area becomes a ", false],
+        ["Cone 6\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Ice Ray [2 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 18\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" Deal ", false],
+        ["1d10 + INT ice damage", true],
+        [" and reduce the target's ", false],
+        ["Speed", true],
+        [" by ", false],
+        ["3\"", true],
+        [" until the end of the round. ", false],
+        ["[Empower 1 NRG]:", true],
+        [" The ", false],
+        ["Speed", true],
+        [" reduction becomes ", false],
+        ["5\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Trip:", true],
+        [" You may use this weapon to take the ", false],
+        ["Trip", true],
+        [" action.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Masterwork:", true],
+        [" Once per round, reroll one retained natural ", false],
+        ["1", true],
+        [" rolled by this item's base damage dice. Resolve this reroll before determining ", false],
+        ["Total Miss", true],
+        [" or ", false],
+        ["Critical Hit", true],
+        [", and use the new result.", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-WIZARD"
+  },
+  {
+   "name": "Redhand",
+   "class": "Berserker",
+   "ancestry": "Orc",
+   "background": "Farmer",
+   "role": "Heavy two-handed damage",
+   "level": "1",
+   "archetype": "Martial",
+   "hp_per_level": "+2",
+   "casting": "None",
+   "stats": {
+    "HP": "19",
+    "AD": "d4 (Chest)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "0",
+    "Senses": "Darkvision (12\")"
+   },
+   "scores": {
+    "STR": "+4",
+    "DEX": "+1",
+    "INT": "-3",
+    "SPI": "+0"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Aggressive:", true],
+        [" If not ", false],
+        ["Engaged", true],
+        [" at the start of their activation, this Hero may move up to ", false],
+        ["2\"", true],
+        [" toward the nearest enemy in ", false],
+        ["LOS", true],
+        [" before taking their first action. This movement is voluntary movement and may trigger ", false],
+        ["Reflex Attack", true],
+        [" normally.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Savage Attacks:", true],
+        [" On a melee ", false],
+        ["Critical Hit", true],
+        [", add ", false],
+        ["+2", true],
+        [" to one exploding bonus die. This modifier cannot cause another explosion.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Farmer:", true],
+        [" Gain ", false],
+        ["+3 Max HP", true],
+        [". Already included in this profile's HP.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Greataxe:", true],
+        [" Melee weapon, ", false],
+        ["1d12+1 + STR slashing damage", true],
+        [", ", false],
+        ["Heavy", true],
+        [", ", false],
+        ["Cleave", true],
+        [", ", false],
+        ["Fatal", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Hide Cuirass:", true],
+        [" Chest ", false],
+        ["AD d4", true],
+        [", ", false],
+        ["DEX Pen -2", true],
+        [", ", false],
+        ["Max Speed 7\"", true],
+        [". Apply the ", false],
+        ["DEX Pen", true],
+        [" to your ", false],
+        ["DEX Checks", true],
+        [", including ", false],
+        ["Dodge", true],
+        [", and to any damage total that adds your ", false],
+        ["DEX", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Dagger:", true],
+        [" Melee weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Agile", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Vicious:", true],
+        [" Add ", false],
+        ["+2", true],
+        [" damage to your melee weapon attacks against ", false],
+        ["Prone", true],
+        [" or ", false],
+        ["Stunned", true],
+        [" targets. When a target you successfully ", false],
+        ["Push", true],
+        [" suffers a ", false],
+        ["Collision", true],
+        [", they lose ", false],
+        ["1 HP", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Rage:", true],
+        [" Your melee weapon attacks deal ", false],
+        ["+2 damage", true],
+        [" while you are at half your ", false],
+        ["Max HP", true],
+        [" or less.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Heavy:", true],
+        [" A ", false],
+        ["Small", true],
+        [" combatant cannot equip a weapon with this trait. On a ", false],
+        ["Critical Hit", true],
+        [" with this weapon, you may choose to ", false],
+        ["Push", true],
+        [" the target ", false],
+        ["2\"", true],
+        [" directly away or make them ", false],
+        ["Prone", true],
+        [", in addition to the weapon's primary damage type critical effect.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Cleave:", true],
+        [" After attacking and reducing a target to ", false],
+        ["0 HP", true],
+        [", you may immediately make a free attack against another target within the attack's melee distance. A free attack granted by ", false],
+        ["Cleave", true],
+        [" may trigger ", false],
+        ["Cleave", true],
+        [" again if it reduces its target to ", false],
+        ["0 HP", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Fatal:", true],
+        [" On a ", false],
+        ["Critical Hit", true],
+        [", each exploding bonus die triggered by this weapon's retained base damage dice is one size larger than the weapon's base damage die. For example, a ", false],
+        ["d12", true],
+        [" base weapon rolls a ", false],
+        ["d20", true],
+        [" for each such exploding die.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Finesse:", true],
+        [" Attacks use your ", false],
+        ["DEX", true],
+        [" modifier instead of your ", false],
+        ["STR", true],
+        [" modifier for damage calculations.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-BERSERKER"
+  },
+  {
+   "name": "Cairnwrath",
+   "class": "Berserker",
+   "ancestry": "Dwarf",
+   "background": "Nomad",
+   "role": "Durable executioner",
+   "level": "1",
+   "archetype": "Martial",
+   "hp_per_level": "+2",
+   "casting": "None",
+   "stats": {
+    "HP": "16",
+    "AD": "d4 (Chest)",
+    "SPD": "4\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "0",
+    "Senses": "Darkvision (12\")"
+   },
+   "scores": {
+    "STR": "+3",
+    "DEX": "+0",
+    "INT": "-1",
+    "SPI": "+1"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Dwarven Resilience:", true],
+        [" ", false],
+        ["Checks", true],
+        [" against poison are rolled with ", false],
+        ["Advantage", true],
+        [". Reduce poison damage taken by ", false],
+        ["1", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Heavy Step:", true],
+        [" Reduce the magnitude of the ", false],
+        ["DEX Pen", true],
+        [" of equipped Chest armour with ", false],
+        ["STR Req 4", true],
+        [" or higher by ", false],
+        ["1", true],
+        ["; for example, ", false],
+        ["-3", true],
+        [" becomes ", false],
+        ["-2", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Nomad:", true],
+        [" Once per round, when terrain, weather, or a scenario hazard would cause this Hero to suffer damage or HP loss, reduce that damage or HP loss by ", false],
+        ["1", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Battleaxe:", true],
+        [" Melee weapon, ", false],
+        ["1d8 + STR slashing damage", true],
+        [" one-handed or ", false],
+        ["1d10 + STR slashing damage", true],
+        [" two-handed, ", false],
+        ["Cleave", true],
+        [", ", false],
+        ["Parrying", true],
+        [", ", false],
+        ["Versatile", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Hide Cuirass:", true],
+        [" Chest ", false],
+        ["AD d4", true],
+        [", ", false],
+        ["DEX Pen -2", true],
+        [", ", false],
+        ["Max Speed 7\"", true],
+        [". Apply the ", false],
+        ["DEX Pen", true],
+        [" to your ", false],
+        ["DEX Checks", true],
+        [", including ", false],
+        ["Dodge", true],
+        [", and to any damage total that adds your ", false],
+        ["DEX", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Dagger:", true],
+        [" Melee weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Agile", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Weapon Specialist (Slashing):", true],
+        [" The first melee weapon attack that deals ", false],
+        ["slashing", true],
+        [" damage you make during each of your activations deals ", false],
+        ["+2 damage", true],
+        [" of its primary damage type.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Blood Frenzy:", true],
+        [" Your melee weapon attacks deal ", false],
+        ["+2 damage", true],
+        [" against an enemy that is at half their ", false],
+        ["Max HP", true],
+        [" or less when you declare the attack.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Cleave:", true],
+        [" After attacking and reducing a target to ", false],
+        ["0 HP", true],
+        [", you may immediately make a free attack against another target within the attack's melee distance. A free attack granted by ", false],
+        ["Cleave", true],
+        [" may trigger ", false],
+        ["Cleave", true],
+        [" again if it reduces its target to ", false],
+        ["0 HP", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Versatile:", true],
+        [" If used two-handed, use the higher listed damage die.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Finesse:", true],
+        [" Attacks use your ", false],
+        ["DEX", true],
+        [" modifier instead of your ", false],
+        ["STR", true],
+        [" modifier for damage calculations.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-BERSERKER"
+  },
+  {
+   "name": "Thornmere",
+   "class": "Ranger",
+   "ancestry": "Human",
+   "background": "Scout",
+   "role": "Archery and control",
+   "level": "1",
+   "archetype": "Hybrid",
+   "hp_per_level": "+2",
+   "casting": "SPI",
+   "stats": {
+    "HP": "13",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "2",
+    "NRG": "3"
+   },
+   "scores": {
+    "STR": "+0",
+    "DEX": "+3",
+    "INT": "+0",
+    "SPI": "+1"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Versatile:", true],
+        [" At Hero creation, add ", false],
+        ["+1", true],
+        [" to any one ability score. Already included in this profile's scores.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Determined Resolve:", true],
+        [" When this Hero is reduced to ", false],
+        ["0 HP", true],
+        [", they may spend ", false],
+        ["1 Luck Point", true],
+        [" to make a ", false],
+        ["SPI Check", true],
+        [" before gaining a Wound. On a success, they remain at ", false],
+        ["0 HP", true],
+        [", ", false],
+        ["Knocked Out", true],
+        [", and ", false],
+        ["Prone", true],
+        [", but do not gain that Wound and do not roll on the ", false],
+        ["Injuries Table", true],
+        [". This use of ", false],
+        ["Luck", true],
+        [" is not a reroll. This trait cannot prevent ", false],
+        ["True Death", true],
+        [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
+        ["Injuries Table", true],
+        [", so this trait has no effect in Basic Mode.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Scout:", true],
+        [" During each ", false],
+        ["Move", true],
+        [", ignore the first ", false],
+        ["1\"", true],
+        [" of additional movement cost imposed by ", false],
+        ["Difficult Terrain", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Shortbow:", true],
+        [" Ranged weapon, ", false],
+        ["1d6 + DEX piercing damage", true],
+        [", ", false],
+        ["Ranged 12\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Elven Sickle:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR slashing damage", true],
+        [", ", false],
+        ["Elven", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Trip", true],
+        [". This weapon does not count as metal for the restrictions in ", false],
+        ["8.2", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Keen Shot:", true],
+        [" After applying ", false],
+        ["Advantage", true],
+        [" and ", false],
+        ["Disadvantage", true],
+        [" to a ranged weapon attack that deals ", false],
+        ["piercing", true],
+        [" damage, but before determining ", false],
+        ["Total Miss", true],
+        [" or ", false],
+        ["Critical Hit", true],
+        [", you may add ", false],
+        ["+1", true],
+        [" to one retained base damage die. If this brings that die to its maximum value, the attack is a ", false],
+        ["Critical Hit", true],
+        [" and resolves exploding bonus dice as normal.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Hunter's Mark [0 AP, 1 NRG]:", true],
+        [" Choose one visible enemy within ", false],
+        ["12\"", true],
+        [". The first attack or damaging Power you resolve against that target during each of your activations deals ", false],
+        ["2 additional damage of its primary damage type before mitigation", true],
+        [". The mark lasts until you choose a new target or the target leaves play.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Ranger Minor Rituals [1 AP, 1 NRG]:", true],
+        [" Choose one: ", false],
+        ["Thorn Shot", true],
+        [", range ", false],
+        ["12\"", true],
+        [", target 1 combatant, deal ", false],
+        ["1d8 + SPI piercing damage", true],
+        ["; the target must pass a ", false],
+        ["STR Check", true],
+        [", or be ", false],
+        ["Pulled 1\"", true],
+        [" directly toward you; ", false],
+        ["Trail Sign", true],
+        [", range ", false],
+        ["8\"", true],
+        [", target 1 point on the ground, create an ", false],
+        ["Aura 3\"", true],
+        [" ", false],
+        ["Difficult Terrain", true],
+        [" area until the end of the round; or ", false],
+        ["Falcon Eye", true],
+        [", self, your next ranged attack this round ignores penalties from ", false],
+        ["Cover", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Entangling Roots [1 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 18\". ", false],
+        ["Area:", true],
+        [" ", false],
+        ["4\"×4\"", true],
+        [" square. ", false],
+        ["Effect:", true],
+        [" Enemies in the area must pass a ", false],
+        ["STR Check", true],
+        [" or become ", false],
+        ["Immobilized", true],
+        [" until the end of the round.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Ranged:", true],
+        [" This weapon uses ranged attack rules. It cannot be used to make melee attacks unless a rule or profile says otherwise. You add your ", false],
+        ["DEX", true],
+        [" modifier to the damage total of attacks made with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Trip:", true],
+        [" You may use this weapon to take the ", false],
+        ["Trip", true],
+        [" action.", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-RANGER"
+  },
+  {
+   "name": "Galefletch",
+   "class": "Ranger",
+   "ancestry": "Elf",
+   "background": "Courier",
+   "role": "Fast skirmishing archer",
+   "level": "1",
+   "archetype": "Hybrid",
+   "hp_per_level": "+2",
+   "casting": "SPI",
+   "stats": {
+    "HP": "12",
+    "AD": "d2 (Chest)",
+    "SPD": "7\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "3"
+   },
+   "scores": {
+    "STR": "-1",
+    "DEX": "+3",
+    "INT": "+1",
+    "SPI": "+1"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Fey Ancestry:", true],
+        [" This Hero is ", false],
+        ["Immune", true],
+        [" to ", false],
+        ["Sleeping", true],
+        [". Their ", false],
+        ["Checks", true],
+        [" made to resist ", false],
+        ["Frightened", true],
+        [" are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Elven Grace:", true],
+        [" Once per round, after completing a ", false],
+        ["Move", true],
+        [", ", false],
+        ["Shift 1\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Courier:", true],
+        [" Gain ", false],
+        ["+1\" SPD", true],
+        [". Already included in this profile's SPD.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Shortbow:", true],
+        [" Ranged weapon, ", false],
+        ["1d6 + DEX piercing damage", true],
+        [", two-handed, ", false],
+        ["Ranged 12\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Elven Dagger:", true],
+        [" Melee weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Elven", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Agile", true],
+        [". This weapon does not count as metal for the restrictions in ", false],
+        ["8.2", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Camouflage:", true],
+        [" While you are in ", false],
+        ["Cover Terrain", true],
+        [" or ", false],
+        ["Difficult Terrain", true],
+        [", your ", false],
+        ["Hide distance", true],
+        [" is ", false],
+        ["0\"", true],
+        [". Once during your activation, after you ", false],
+        ["Move", true],
+        [" through ", false],
+        ["Cover Terrain", true],
+        [" or ", false],
+        ["Difficult Terrain", true],
+        [", you may ", false],
+        ["Shift 1\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Ambush Archer:", true],
+        [" Add ", false],
+        ["+2 damage", true],
+        [" to your ranged weapon attacks against enemies that have not yet activated this round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Ranger Minor Rituals [1 AP, 1 NRG]:", true],
+        [" Choose one: ", false],
+        ["Thorn Shot", true],
+        [", range ", false],
+        ["12\"", true],
+        [", target 1 combatant, deal ", false],
+        ["1d8 + SPI piercing damage", true],
+        ["; the target must pass a ", false],
+        ["STR Check", true],
+        [", or be ", false],
+        ["Pulled 1\"", true],
+        [" directly toward you; ", false],
+        ["Trail Sign", true],
+        [", range ", false],
+        ["8\"", true],
+        [", target 1 point on the ground, create an ", false],
+        ["Aura 3\"", true],
+        [" ", false],
+        ["Difficult Terrain", true],
+        [" area until the end of the round; or ", false],
+        ["Falcon Eye", true],
+        [", self, your next ranged attack this round ignores penalties from ", false],
+        ["Cover", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Tanglefoot [1 AP, 0 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 12\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" The target must pass a ", false],
+        ["STR Check", true],
+        [" or become ", false],
+        ["Immobilized", true],
+        [" until the end of the round.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Ranged:", true],
+        [" This weapon uses ranged attack rules. It cannot be used to make melee attacks unless a rule or profile says otherwise. You add your ", false],
+        ["DEX", true],
+        [" modifier to the damage total of attacks made with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Finesse:", true],
+        [" Attacks use your ", false],
+        ["DEX", true],
+        [" modifier instead of your ", false],
+        ["STR", true],
+        [" modifier for damage calculations.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-RANGER"
+  },
+  {
+   "name": "Oathscale",
+   "class": "Paladin",
+   "ancestry": "Drakeblood",
+   "background": "Soldier",
+   "role": "Armoured melee and support",
+   "level": "1",
+   "archetype": "Hybrid",
+   "hp_per_level": "+3",
+   "casting": "SPI",
+   "stats": {
+    "HP": "14",
+    "AD": "d6 (Chest) + d8 (Shield, Block only)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "5"
+   },
+   "scores": {
+    "STR": "+3",
+    "DEX": "-1",
+    "INT": "+0",
+    "SPI": "+2"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Draconic Resistance (fire):", true],
+        [" You are ", false],
+        ["Resistant", true],
+        [" to fire damage: you take half fire damage, rounded down.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Breath Weapon [2 AP]:", true],
+        [" Once per round, make a ", false],
+        ["SPI Check", true],
+        [" to project either a ", false],
+        ["Cone 6\"", true],
+        [" or ", false],
+        ["Line 6\"", true],
+        [" of fire. On a success, affected enemies suffer ", false],
+        ["1d6 fire damage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Soldier:", true],
+        [" Your first melee attack each round deals an additional ", false],
+        ["1 damage of that attack's primary damage type", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Mace:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR blunt damage", true],
+        [", ", false],
+        ["Parrying", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Heater Shield:", true],
+        [" Shield ", false],
+        ["AD d8", true],
+        [" when using ", false],
+        ["Block", true],
+        [", ", false],
+        ["DEX Pen -1", true],
+        [", ", false],
+        ["Max Speed 7\"", true],
+        [". Use only the worse of this penalty and Chest armour ", false],
+        ["DEX Pen", true],
+        ["; they do not stack.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Breastplate:", true],
+        [" Chest ", false],
+        ["AD d6", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 7\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Shield Master:", true],
+        [" While you are equipped with a shield, your ", false],
+        ["Block", true],
+        [" gains ", false],
+        ["+1 AV", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Lay on Hands [1 AP, 1 NRG]:", true],
+        [" Restore ", false],
+        ["1d4 + SPI", true],
+        [" HP to yourself or one adjacent ally.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Paladin Orisons [1 AP, 1 NRG]:", true],
+        [" Choose one: ", false],
+        ["Oathspark", true],
+        [", range ", false],
+        ["1\"", true],
+        [", deal ", false],
+        ["1d6 + SPI holy damage", true],
+        ["; ", false],
+        ["Steadfast Word", true],
+        [", range ", false],
+        ["3\"", true],
+        [", remove ", false],
+        ["Frightened", true],
+        [" from yourself or 1 ally and let that target immediately ", false],
+        ["Stand", true],
+        [" for ", false],
+        ["0 AP", true],
+        [" if ", false],
+        ["Prone", true],
+        ["; or ", false],
+        ["Mark of Challenge", true],
+        [", range ", false],
+        ["6\"", true],
+        [", target 1 enemy in ", false],
+        ["LOS", true],
+        ["; until the end of the round, that enemy's attack damage rolls against any ally other than you are made with ", false],
+        ["Disadvantage", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Blessing [1 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 12\". ", false],
+        ["Target:", true],
+        [" Up to 2 allies. ", false],
+        ["Effect:", true],
+        [" Each target gains ", false],
+        ["+1", true],
+        [" to their next ", false],
+        ["Check", true],
+        [" before the end of the round.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-PALADIN"
+  },
+  {
+   "name": "Dawnwarden",
+   "class": "Paladin",
+   "ancestry": "Human",
+   "background": "Believer",
+   "role": "Charging protector",
+   "level": "1",
+   "archetype": "Hybrid",
+   "hp_per_level": "+3",
+   "casting": "SPI",
+   "stats": {
+    "HP": "14",
+    "AD": "d6 (Chest) + d4 (Shield, Block only)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "2",
+    "NRG": "5"
+   },
+   "scores": {
+    "STR": "+2",
+    "DEX": "-1",
+    "INT": "+0",
+    "SPI": "+2"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Versatile:", true],
+        [" At Hero creation, add ", false],
+        ["+1", true],
+        [" to any one ability score. Already included in this profile's scores.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Determined Resolve:", true],
+        [" When this Hero is reduced to ", false],
+        ["0 HP", true],
+        [", they may spend ", false],
+        ["1 Luck Point", true],
+        [" to make a ", false],
+        ["SPI Check", true],
+        [" before gaining a Wound. On a success, they remain at ", false],
+        ["0 HP", true],
+        [", ", false],
+        ["Knocked Out", true],
+        [", and ", false],
+        ["Prone", true],
+        [", but do not gain that Wound and do not roll on the ", false],
+        ["Injuries Table", true],
+        [". This use of ", false],
+        ["Luck", true],
+        [" is not a reroll. This trait cannot prevent ", false],
+        ["True Death", true],
+        [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
+        ["Injuries Table", true],
+        [", so this trait has no effect in Basic Mode.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Believer:", true],
+        [" You are ", false],
+        ["Immune", true],
+        [" to ", false],
+        ["Frightened", true],
+        [". Allies within ", false],
+        ["6\"", true],
+        [" roll Checks to resist or remove ", false],
+        ["Frightened", true],
+        [" with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Mace:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR blunt damage", true],
+        [", ", false],
+        ["Parrying", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Targe:", true],
+        [" Shield ", false],
+        ["AD d4", true],
+        [" when using ", false],
+        ["Block", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [". When you use ", false],
+        ["Block", true],
+        [" with a Targe against a melee weapon attack, add ", false],
+        ["+1", true],
+        [" to the Targe's ", false],
+        ["AD", true],
+        [" roll.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Ring Shirt:", true],
+        [" Chest ", false],
+        ["AD d6", true],
+        [", ", false],
+        ["DEX Pen -2", true],
+        [", ", false],
+        ["Max Speed 6\"", true],
+        [". Apply the ", false],
+        ["DEX Pen", true],
+        [" to your ", false],
+        ["DEX Checks", true],
+        [", including ", false],
+        ["Dodge", true],
+        [", and to any damage total that adds your ", false],
+        ["DEX", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["2 Holy Water [1 AP]:", true],
+        [" ", false],
+        ["Thrown 6\"", true],
+        [" (", false],
+        ["Aura 1\"", true],
+        ["): ", false],
+        ["Undead", true],
+        [" and ", false],
+        ["Fiend", true],
+        [" combatants in the area suffer ", false],
+        ["1d6 holy damage", true],
+        [". Other combatants are unaffected. Each flask is one use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Headlong Rush:", true],
+        [" Once during each activation, when you make a melee weapon attack after using ", false],
+        ["Move", true],
+        [" to move at least ", false],
+        ["4\"", true],
+        [" in a straight line toward that attack's target during the same activation, that attack rolls one additional base damage die.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Oath of Protection [1 AP Reaction, 1 NRG]:", true],
+        [" ", false],
+        ["Trigger:", true],
+        [" A visible source is declared that would deal damage to 1 ally within ", false],
+        ["6\"", true],
+        [". ", false],
+        ["Effect:", true],
+        [" Reduce the triggering source's damage against that ally by ", false],
+        ["1d4 + SPI", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Paladin Orisons [1 AP, 1 NRG]:", true],
+        [" Choose one: ", false],
+        ["Oathspark", true],
+        [", range ", false],
+        ["1\"", true],
+        [", deal ", false],
+        ["1d6 + SPI holy damage", true],
+        ["; ", false],
+        ["Steadfast Word", true],
+        [", range ", false],
+        ["3\"", true],
+        [", remove ", false],
+        ["Frightened", true],
+        [" from yourself or 1 ally and let that target immediately ", false],
+        ["Stand", true],
+        [" for ", false],
+        ["0 AP", true],
+        [" if ", false],
+        ["Prone", true],
+        ["; or ", false],
+        ["Mark of Challenge", true],
+        [", range ", false],
+        ["6\"", true],
+        [", target 1 enemy in ", false],
+        ["LOS", true],
+        ["; until the end of the round, that enemy's attack damage rolls against any ally other than you are made with ", false],
+        ["Disadvantage", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Smite [1 AP, 2 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" Self. ", false],
+        ["Effect:", true],
+        [" Until the end of the round, your next melee damage instance deals an additional ", false],
+        ["1d8 + SPI holy damage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-PALADIN"
+  },
+  {
+   "name": "Mossgrave",
+   "class": "Druid",
+   "ancestry": "Human",
+   "background": "Hermit",
+   "role": "Shapeshifting and healing",
+   "level": "1",
+   "archetype": "Caster",
+   "hp_per_level": "+2",
+   "casting": "SPI",
+   "stats": {
+    "HP": "13",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "2",
+    "NRG": "9"
+   },
+   "scores": {
+    "STR": "+0",
+    "DEX": "+0",
+    "INT": "-1",
+    "SPI": "+4"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Versatile:", true],
+        [" At Hero creation, add ", false],
+        ["+1", true],
+        [" to any one ability score. Already included in this profile's scores.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Determined Resolve:", true],
+        [" When this Hero is reduced to ", false],
+        ["0 HP", true],
+        [", they may spend ", false],
+        ["1 Luck Point", true],
+        [" to make a ", false],
+        ["SPI Check", true],
+        [" before gaining a Wound. On a success, they remain at ", false],
+        ["0 HP", true],
+        [", ", false],
+        ["Knocked Out", true],
+        [", and ", false],
+        ["Prone", true],
+        [", but do not gain that Wound and do not roll on the ", false],
+        ["Injuries Table", true],
+        [". This use of ", false],
+        ["Luck", true],
+        [" is not a reroll. This trait cannot prevent ", false],
+        ["True Death", true],
+        [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
+        ["Injuries Table", true],
+        [", so this trait has no effect in Basic Mode.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Hermit:", true],
+        [" While no ally is within ", false],
+        ["4\"", true],
+        [", your non-Casting ", false],
+        ["SPI Checks", true],
+        [" are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Club:", true],
+        [" ", false],
+        ["1d4 + STR blunt damage", true],
+        [". One hand. No requirement. No traits.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Guiding Presence:", true],
+        [" Allies within ", false],
+        ["6\"", true],
+        [" of you gain ", false],
+        ["+1", true],
+        [" on ", false],
+        ["SPI Checks", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Wild Shape [0 AP]:", true],
+        [" Once during each activation, transform into one ", false],
+        ["Novice Beast Form", true],
+        [". The form ends at the end of your next activation, when you are reduced to ", false],
+        ["0 HP", true],
+        [", or when you end it for ", false],
+        ["0 AP", true],
+        [". You cannot use ", false],
+        ["Wild Shape", true],
+        [" after casting a ", false],
+        ["Tier 1", true],
+        [" or higher ", false],
+        ["Druidic Ritual", true],
+        [" during the same activation, while a form is active, or again during the same activation after a form ends.", false]
+       ],
+       "sub": [
+        [
+         ["Form Rules:", true],
+         [" Replace your ", false],
+         ["SPD", true],
+         [" and ", false],
+         ["Sz", true],
+         [" with the form's listed ", false],
+         ["SPD", true],
+         [" and ", false],
+         ["Sz", true],
+         [", and use the form's listed flat ", false],
+         ["AV", true],
+         [". Because ", false],
+         ["Small", true],
+         [" is derived from ", false],
+         ["Sz S", true],
+         [", you gain or lose ", false],
+         ["Small", true],
+         [" as your Size changes. Your Chest armour and shield remain equipped, but their ", false],
+         ["AD", true],
+         [", ", false],
+         ["AV", true],
+         [", ", false],
+         ["DEX Pen", true],
+         [", ", false],
+         ["Max Speed", true],
+         [", Item Qualities, and other rules are suspended; you cannot use ", false],
+         ["Block", true],
+         [" or ", false],
+         ["Parry", true],
+         [". Other modifiers still apply. Replace your weapon attacks with the form's natural attack. It counts as a weapon attack only for its normal AP cost and ", false],
+         ["Multiple Attacks", true],
+         [", and is not a weapon for other rules unless they explicitly affect natural attacks. Add the higher of ", false],
+         ["STR", true],
+         [" or ", false],
+         ["SPI", true],
+         [" to its damage; at Level 1 it rolls ", false],
+         ["1", true],
+         [" base damage die. Items that occupy Hands remain equipped but cannot be used. Retain your HP, Wounds, NRG, ability scores, Talents, ancestry traits, known Powers, and class features. You cannot cast Powers or use scrolls. You may use ", false],
+         ["Dodge", true],
+         [", ", false],
+         ["Reflex Attack", true],
+         [", ", false],
+         ["Hide", true],
+         [", ", false],
+         ["Spot", true],
+         [", and ", false],
+         ["Interact", true],
+         [" unless the form says otherwise.", false]
+        ],
+        [
+         ["Wolf Shape:", true],
+         [" Speed ", false],
+         ["7\"", true],
+         [", ", false],
+         ["Sz M", true],
+         [", ", false],
+         ["AV 1", true],
+         [", ", false],
+         ["Bite:", true],
+         [" 1d6 piercing damage. When you declare ", false],
+         ["Bite", true],
+         [" against an enemy adjacent to at least 1 of your allies, the attack rolls 1 additional base damage die.", false]
+        ],
+        [
+         ["Boar:", true],
+         [" Speed ", false],
+         ["6\"", true],
+         [", ", false],
+         ["Sz M", true],
+         [", ", false],
+         ["AV 2", true],
+         [", ", false],
+         ["Tusks:", true],
+         [" 1d6 piercing damage. When you make a ", false],
+         ["Tusks", true],
+         [" attack after using ", false],
+         ["Move", true],
+         [" to move at least ", false],
+         ["3\"", true],
+         [" in a straight line toward the target during the same activation, the target is ", false],
+         ["Pushed 1\"", true],
+         [" directly away from you when this attack damages the target.", false]
+        ],
+        [
+         ["Great Eagle:", true],
+         [" Speed ", false],
+         ["5\"", true],
+         [", ", false],
+         ["Fly (10\")", true],
+         [", ", false],
+         ["Sz L", true],
+         [", ", false],
+         ["AV 1", true],
+         [", ", false],
+         ["Talons:", true],
+         [" 1d4 slashing damage. While using ", false],
+         ["Fly", true],
+         [", you do not gain ", false],
+         ["Cover", true],
+         [" from a terrain feature.", false]
+        ],
+        [
+         ["Lynx:", true],
+         [" Speed ", false],
+         ["7\"", true],
+         [", ", false],
+         ["Sz S", true],
+         [", ", false],
+         ["AV 1", true],
+         [", ", false],
+         ["Claws:", true],
+         [" 1d4 slashing damage. While in this form and in ", false],
+         ["Cover", true],
+         [", your ", false],
+         ["Hide distance", true],
+         [" is ", false],
+         ["0\"", true],
+         [". You ignore additional movement costs from ", false],
+         ["Difficult Terrain", true],
+         [" and do not make terrain ", false],
+         ["Checks", true],
+         [" caused by ", false],
+         ["Slippery Terrain", true],
+         [". ", false],
+         ["Small.", true]
+        ]
+       ]
+      },
+      {
+       "runs": [
+        ["Druidic Minor Rituals [1 AP, 0 NRG]:", true],
+        [" Choose one: ", false],
+        ["Vine Lash", true],
+        [", range ", false],
+        ["4\"", true],
+        [", deal ", false],
+        ["1d8 + 1 piercing damage", true],
+        ["; the target must pass a ", false],
+        ["STR Check", true],
+        [" or be ", false],
+        ["Pulled 1\"", true],
+        [" directly toward you; ", false],
+        ["Verdant Touch", true],
+        [", range ", false],
+        ["1\"", true],
+        [", remove ", false],
+        ["Bleeding", true],
+        [", ", false],
+        ["Burning", true],
+        [", or ", false],
+        ["Poisoned [dX]", true],
+        [" from self or 1 ally, and that target gains ", false],
+        ["Temporary HP", true],
+        [" = 2 until the end of the round; or ", false],
+        ["Pebble Ward", true],
+        [", range ", false],
+        ["6\"", true],
+        [", self or 1 ally gains ", false],
+        ["+3 AV", true],
+        [" the next time they apply ", false],
+        ["AV", true],
+        [" this round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Ironbark [1 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 12\". ", false],
+        ["Target:", true],
+        [" Self or 1 ally. ", false],
+        ["Effect:", true],
+        [" The target gains ", false],
+        ["+1 AV", true],
+        [" until the end of the round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Regrowth [2 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 12\". ", false],
+        ["Target:", true],
+        [" 1 ally. ", false],
+        ["Effect:", true],
+        [" The target regains ", false],
+        ["1d10 + SPI HP", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-DRUID"
+  },
+  {
+   "name": "Furrowroot",
+   "class": "Druid",
+   "ancestry": "Halfling",
+   "background": "Farmer",
+   "role": "Battlefield control",
+   "level": "1",
+   "archetype": "Caster",
+   "hp_per_level": "+2",
+   "casting": "SPI",
+   "stats": {
+    "HP": "14",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "S",
+    "AP": "3",
+    "Luck": "2",
+    "NRG": "9"
+   },
+   "scores": {
+    "STR": "-1",
+    "DEX": "+1",
+    "INT": "-1",
+    "SPI": "+4"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Small", true]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Naturally Stealthy:", true],
+        [" While this Hero is in ", false],
+        ["Cover", true],
+        [", their ", false],
+        ["Hide distance", true],
+        [" is ", false],
+        ["0\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Brave Heart:", true],
+        [" You are ", false],
+        ["Immune", true],
+        [" to ", false],
+        ["Frightened", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Farmer:", true],
+        [" Gain ", false],
+        ["+3 Max HP", true],
+        [". Already included in this profile's HP.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Elven Sickle:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR slashing damage", true],
+        [", ", false],
+        ["Elven", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Trip", true],
+        [". This weapon does not count as metal for the restrictions in ", false],
+        ["8.2", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Sling:", true],
+        [" Ranged weapon, ", false],
+        ["1d4 + DEX blunt damage", true],
+        [", ", false],
+        ["Ranged 12\"", true],
+        [", ", false],
+        ["Agile", true],
+        [", ", false],
+        ["Reload", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Bandages:", true],
+        [" ", false],
+        ["Interact [1 AP]:", true],
+        [" Make an ", false],
+        ["INT Check", true],
+        [". On a success, remove ", false],
+        ["Bleeding", true],
+        [" from this Hero or 1 adjacent ally. One use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Tactician:", true],
+        [" While you are on the battlefield, your party gains ", false],
+        ["+1", true],
+        [" on Initiative rolls. Multiple instances of ", false],
+        ["Tactician", true],
+        [" do not stack.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Thornwhip [1 AP, 1 NRG]:", true],
+        [" Once during each activation, choose one enemy within ", false],
+        ["8\"", true],
+        [" of you and within your ", false],
+        ["LOS", true],
+        [". The target suffers ", false],
+        ["1d6 + SPI piercing damage", true],
+        [", and you may ", false],
+        ["Pull", true],
+        [" them ", false],
+        ["2\"", true],
+        [" directly toward you.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Druidic Minor Rituals [1 AP, 0 NRG]:", true],
+        [" Choose one: ", false],
+        ["Vine Lash", true],
+        [", range ", false],
+        ["4\"", true],
+        [", deal ", false],
+        ["1d8 + 1 piercing damage", true],
+        ["; the target must pass a ", false],
+        ["STR Check", true],
+        [" or be ", false],
+        ["Pulled 1\"", true],
+        [" directly toward you; ", false],
+        ["Verdant Touch", true],
+        [", range ", false],
+        ["1\"", true],
+        [", remove ", false],
+        ["Bleeding", true],
+        [", ", false],
+        ["Burning", true],
+        [", or ", false],
+        ["Poisoned [dX]", true],
+        [" from self or 1 ally, and that target gains ", false],
+        ["Temporary HP", true],
+        [" = 2 until the end of the round; or ", false],
+        ["Pebble Ward", true],
+        [", range ", false],
+        ["6\"", true],
+        [", self or 1 ally gains ", false],
+        ["+3 AV", true],
+        [" the next time they apply ", false],
+        ["AV", true],
+        [" this round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Fog Bank [1 AP, 0 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 18\". ", false],
+        ["Area:", true],
+        [" ", false],
+        ["4\"×4\"", true],
+        [" square. ", false],
+        ["Effect:", true],
+        [" ", false],
+        ["LOS", true],
+        [" is blocked through the area until the end of the round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Earthen Spike [2 AP, 2 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 18\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" Deal ", false],
+        ["1d8 + SPI piercing damage", true],
+        [". The target becomes ", false],
+        ["Prone", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Trip:", true],
+        [" You may use this weapon to take the ", false],
+        ["Trip", true],
+        [" action.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Ranged:", true],
+        [" This weapon uses ranged attack rules. It cannot be used to make melee attacks unless a rule or profile says otherwise. You add your ", false],
+        ["DEX", true],
+        [" modifier to the damage total of attacks made with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Reload:", true],
+        [" After making an attack with this weapon, you cannot attack again with this weapon until you take the ", false],
+        ["Reload [1 AP]", true],
+        [" action. See ", false],
+        ["4.3.5", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-DRUID"
+  },
+  {
+   "name": "Thoughtwake",
+   "class": "Psion",
+   "ancestry": "Human",
+   "background": "Scholar",
+   "role": "Psychic damage and forced movement",
+   "level": "1",
+   "archetype": "Caster",
+   "hp_per_level": "+2",
+   "casting": "INT",
+   "stats": {
+    "HP": "11",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "2",
+    "NRG": "9"
+   },
+   "scores": {
+    "STR": "-1",
+    "DEX": "+0",
+    "INT": "+4",
+    "SPI": "+0"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Versatile:", true],
+        [" At Hero creation, add ", false],
+        ["+1", true],
+        [" to any one ability score. Already included in this profile's scores.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Determined Resolve:", true],
+        [" When this Hero is reduced to ", false],
+        ["0 HP", true],
+        [", they may spend ", false],
+        ["1 Luck Point", true],
+        [" to make a ", false],
+        ["SPI Check", true],
+        [" before gaining a Wound. On a success, they remain at ", false],
+        ["0 HP", true],
+        [", ", false],
+        ["Knocked Out", true],
+        [", and ", false],
+        ["Prone", true],
+        [", but do not gain that Wound and do not roll on the ", false],
+        ["Injuries Table", true],
+        [". This use of ", false],
+        ["Luck", true],
+        [" is not a reroll. This trait cannot prevent ", false],
+        ["True Death", true],
+        [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
+        ["Injuries Table", true],
+        [", so this trait has no effect in Basic Mode.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Scholar:", true],
+        [" Your ", false],
+        ["INT Checks", true],
+        [" made to ", false],
+        ["Interact", true],
+        [" with, decipher, or investigate nonmagical objects, inscriptions, clues, and hazards are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Club:", true],
+        [" ", false],
+        ["1d4 + STR blunt damage", true],
+        [". One hand. No requirement. No traits.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Observant:", true],
+        [" Your ", false],
+        ["Spot Checks", true],
+        [" are rolled with ", false],
+        ["Advantage", true],
+        [". Once during each of your activations, choose one ", false],
+        ["Hidden", true],
+        [" or ", false],
+        ["Invisible", true],
+        [" enemy within ", false],
+        ["4\"", true],
+        [". You know that enemy's current space, but this does not remove their state or independently make them a legal target.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Mental Shield [1 AP Reaction]:", true],
+        [" ", false],
+        ["Trigger:", true],
+        [" A Power or a source that deals ", false],
+        ["arcane", true],
+        [" or ", false],
+        ["psychic", true],
+        [" damage is declared and would affect you. ", false],
+        ["Effect:", true],
+        [" Reduce the triggering source's damage against you by ", false],
+        ["6", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Psychic Techniques [1 AP, 0 NRG]:", true],
+        [" Choose one: ", false],
+        ["Mind Needle", true],
+        [", range ", false],
+        ["10\"", true],
+        [", target ", false],
+        ["1 combatant", true],
+        [", deal ", false],
+        ["1d6 psychic damage", true],
+        ["; ", false],
+        ["Telekinetic Hand", true],
+        [", range ", false],
+        ["6\"", true],
+        [", target ", false],
+        ["1 unsecured, non-objective object, latch, lever, or similar small interactable element", true],
+        [", move the target up to ", false],
+        ["2\"", true],
+        [", open or close it if legal, or place one unattended item from within range into an adjacent space. This can never deal damage. ", false],
+        ["Telekinetic Hand", true],
+        [" cannot manipulate Treasure Chests, traps, scenario objective markers, carried objective items, equipped items, locked objects, or any object that requires an ", false],
+        ["Interact", true],
+        [" ", false],
+        ["Check", true],
+        [" unless a rule explicitly allows it; or ", false],
+        ["Thought Barrier", true],
+        [", range ", false],
+        ["6\"", true],
+        [", target self or ", false],
+        ["1 ally", true],
+        [", that target gains ", false],
+        ["+2", true],
+        [" on their next ", false],
+        ["SPI", true],
+        [" or ", false],
+        ["INT Check", true],
+        [" made to resist a Power before the end of the round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Mind Spike [2 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 18\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" Deal ", false],
+        ["1d10 + INT psychic damage", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Telekinetic Push [1 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 12\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" ", false],
+        ["Push", true],
+        [" the target ", false],
+        ["4\"", true],
+        [" directly away. On a ", false],
+        ["Collision", true],
+        [", they suffer ", false],
+        ["1d8 + INT psychic damage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-PSION"
+  },
+  {
+   "name": "Gnawthought",
+   "class": "Psion",
+   "ancestry": "Ratkin",
+   "background": "Alchemist",
+   "role": "Psychic disruption and support",
+   "level": "1",
+   "archetype": "Caster",
+   "hp_per_level": "+2",
+   "casting": "INT",
+   "stats": {
+    "HP": "9",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "S",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "7",
+    "Senses": "Darkvision (12\")"
+   },
+   "scores": {
+    "STR": "-2",
+    "DEX": "+2",
+    "INT": "+3",
+    "SPI": "-1"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Small", true]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Teeth:", true],
+        [" This Hero has a natural melee weapon occupying ", false],
+        ["0 Hands", true],
+        [": ", false],
+        ["1d4 piercing damage", true],
+        [", ", false],
+        ["Finesse", true],
+        [". Add ", false],
+        ["DEX", true],
+        [" to its damage normally. Teeth cannot be dual-wielded, disarmed, removed, bought, sold, or given Item Qualities, and otherwise count as a melee weapon for attacks, Talents, and class abilities.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Pack Hunter:", true],
+        [" Deal an additional ", false],
+        ["1 damage of that attack's primary damage type", true],
+        [" when attacking a target already ", false],
+        ["Engaged", true],
+        [" by one of your allies.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Alchemist:", true],
+        [" Basic Mode does not use treasure tables, so this background's extra-potion rule has no effect in Basic Mode.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Dagger:", true],
+        [" Melee weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Agile", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Acid (Phosphoric) [1 AP]:", true],
+        [" ", false],
+        ["Thrown 6\"", true],
+        [" (", false],
+        ["Aura 1\"", true],
+        ["): All affected combatants suffer ", false],
+        ["1d6 acid damage", true],
+        [". One use.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Healing Potion [1 AP]:", true],
+        [" Drink it, or give it to 1 adjacent ally to drink. The drinker regains ", false],
+        ["1d6 HP", true],
+        [". One use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Combat Assessment:", true],
+        [" Once per round, when an ally within ", false],
+        ["6\"", true],
+        [" of you and within your ", false],
+        ["LOS", true],
+        [" declares a weapon attack, add ", false],
+        ["1 damage of that attack's primary damage type", true],
+        [" to that attack before mitigation.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Mind Spear:", true],
+        [" Add ", false],
+        ["+3 damage", true],
+        [" when you deal ", false],
+        ["psychic", true],
+        [" damage with a Power.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Psychic Techniques [1 AP, 0 NRG]:", true],
+        [" Choose one: ", false],
+        ["Mind Needle", true],
+        [", range ", false],
+        ["10\"", true],
+        [", target ", false],
+        ["1 combatant", true],
+        [", deal ", false],
+        ["1d6 psychic damage", true],
+        ["; ", false],
+        ["Telekinetic Hand", true],
+        [", range ", false],
+        ["6\"", true],
+        [", target ", false],
+        ["1 unsecured, non-objective object, latch, lever, or similar small interactable element", true],
+        [", move the target up to ", false],
+        ["2\"", true],
+        [", open or close it if legal, or place one unattended item from within range into an adjacent space. This can never deal damage. ", false],
+        ["Telekinetic Hand", true],
+        [" cannot manipulate Treasure Chests, traps, scenario objective markers, carried objective items, equipped items, locked objects, or any object that requires an ", false],
+        ["Interact", true],
+        [" ", false],
+        ["Check", true],
+        [" unless a rule explicitly allows it; or ", false],
+        ["Thought Barrier", true],
+        [", range ", false],
+        ["6\"", true],
+        [", target self or ", false],
+        ["1 ally", true],
+        [", that target gains ", false],
+        ["+2", true],
+        [" on their next ", false],
+        ["SPI", true],
+        [" or ", false],
+        ["INT Check", true],
+        [" made to resist a Power before the end of the round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Neural Jolt [1 AP, 2 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 18\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" Deal ", false],
+        ["1d6 + INT psychic damage", true],
+        [". If the target is a ", false],
+        ["Monster", true],
+        [", they cannot use any ", false],
+        ["AI Step", true],
+        [" abilities before the end of their next activation. Any other target must pass an ", false],
+        ["INT Check", true],
+        [" or lose ", false],
+        ["1 AP", true],
+        [" immediately, minimum ", false],
+        ["0", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Thought Snare [1 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 14\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" The target must pass a ", false],
+        ["SPI Check", true],
+        [" or become ", false],
+        ["Immobilized", true],
+        [" until the end of the round.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Finesse:", true],
+        [" Attacks use your ", false],
+        ["DEX", true],
+        [" modifier instead of your ", false],
+        ["STR", true],
+        [" modifier for damage calculations.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-PSION"
+  },
+  {
+   "name": "Ashborn",
+   "class": "Sorcerer",
+   "ancestry": "Demonborn",
+   "background": "Cultist",
+   "role": "Volatile single-target damage",
+   "level": "1",
+   "archetype": "Caster",
+   "hp_per_level": "+2",
+   "casting": "SPI",
+   "stats": {
+    "HP": "11",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "0",
+    "NRG": "9",
+    "Senses": "Darkvision (12\")"
+   },
+   "scores": {
+    "STR": "-1",
+    "DEX": "+0",
+    "INT": "+1",
+    "SPI": "+4"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Infernal Resistance:", true],
+        [" You are ", false],
+        ["Resistant", true],
+        [" to fire damage: you take half fire damage, rounded down.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Fiendish Legacy (Ash Tongue):", true],
+        [" ", false],
+        ["Checks", true],
+        [" to resist fire and smoke are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Cultist, Dark Devotion:", true],
+        [" Once per round, when you or an ally within ", false],
+        ["6\"", true],
+        [" reduces an enemy to ", false],
+        ["0 HP", true],
+        [", restore up to ", false],
+        ["2 HP", true],
+        [" to yourself.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Club:", true],
+        [" ", false],
+        ["1d4 + STR blunt damage", true],
+        [". One hand. No requirement. No traits.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Conviction [1 AP Reaction]:", true],
+        [" Declare before the source's damage dice under ", false],
+        ["4.5", true],
+        [". ", false],
+        ["Trigger:", true],
+        [" After applying ", false],
+        ["Advantage", true],
+        [" and ", false],
+        ["Disadvantage", true],
+        [", one retained base damage die for your attack shows ", false],
+        ["1", true],
+        [", before determining ", false],
+        ["Total Miss", true],
+        [" or ", false],
+        ["Critical Hit", true],
+        [". ", false],
+        ["Effect:", true],
+        [" Reroll that die. You must use the new result.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Burning Soul:", true],
+        [" Add ", false],
+        ["+1 fire damage", true],
+        [" to your weapon attacks and to your damaging ", false],
+        ["Sorceries", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Blood Price:", true],
+        [" Each Sorcery lists a ", false],
+        ["Blood", true],
+        [" value. Your ", false],
+        ["Casting Check", true],
+        [" for a Sorcery is also its ", false],
+        ["Blood Price Check", true],
+        [". On a success, the Sorcery resolves normally. On a failure, the Sorcery still resolves, but you immediately lose HP equal to its ", false],
+        ["Blood", true],
+        [" value. On a natural ", false],
+        ["1", true],
+        [", the Sorcery still resolves, you pay ", false],
+        ["Blood Price", true],
+        [", and you roll on ", false],
+        ["Sorcerous Backlash", true],
+        [" in ", false],
+        ["8.2", true],
+        [". ", false],
+        ["Blood Price", true],
+        [" is HP loss, not damage. It ignores ", false],
+        ["AV", true],
+        [", ", false],
+        ["AD", true],
+        [", ", false],
+        ["Resistant", true],
+        [", ", false],
+        ["Immune", true],
+        [", ", false],
+        ["Vulnerable", true],
+        [", ", false],
+        ["Block", true],
+        [", ", false],
+        ["Dodge", true],
+        [", ", false],
+        ["Parry", true],
+        [", and all ", false],
+        ["Reactions", true],
+        [", and it can reduce you to ", false],
+        ["0 HP", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Tier 0 Sorceries [1 AP, 0 NRG, Blood: 1]:", true],
+        [" Choose one: ", false],
+        ["Ember Pulse", true],
+        [", range ", false],
+        ["8\"", true],
+        [", deal ", false],
+        ["1d4 fire damage", true],
+        ["; ", false],
+        ["Blood Flicker", true],
+        [", teleport up to ", false],
+        ["2\"", true],
+        [" to a legal space in ", false],
+        ["LOS", true],
+        [" without triggering ", false],
+        ["Reflex Attacks", true],
+        ["; or ", false],
+        ["Hex Glare", true],
+        [", range ", false],
+        ["8\"", true],
+        [", the target enemy in ", false],
+        ["LOS", true],
+        [" must pass a ", false],
+        ["SPI Check", true],
+        [" or become ", false],
+        ["Blinded", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Chaos Bolt [2 AP, 1 NRG, Blood: 1]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 20\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" Choose ", false],
+        ["fire", true],
+        [", ", false],
+        ["ice", true],
+        [", ", false],
+        ["lightning", true],
+        [", or ", false],
+        ["arcane", true],
+        [". Deal ", false],
+        ["1d12 + SPI", true],
+        [" damage of that type.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Bloodspark [1 AP, 2 NRG, Blood: 1]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 18\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" Deal ", false],
+        ["1d10 + SPI lightning damage", true],
+        [". If you fail the ", false],
+        ["Casting Check", true],
+        [", your ", false],
+        ["Blood Price", true],
+        [" HP loss increases by ", false],
+        ["+1", true],
+        [" (total ", false],
+        ["2", true],
+        [").", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-SORCERER"
+  },
+  {
+   "name": "Stormcrook",
+   "class": "Sorcerer",
+   "ancestry": "Drakeblood",
+   "background": "Shepherd",
+   "role": "Lightning and area damage",
+   "level": "1",
+   "archetype": "Caster",
+   "hp_per_level": "+2",
+   "casting": "SPI",
+   "stats": {
+    "HP": "11",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "9"
+   },
+   "scores": {
+    "STR": "+0",
+    "DEX": "+0",
+    "INT": "+0",
+    "SPI": "+4"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Draconic Resistance (lightning):", true],
+        [" You are ", false],
+        ["Resistant", true],
+        [" to lightning damage: you take half lightning damage, rounded down.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Breath Weapon [2 AP]:", true],
+        [" Once per round, make a ", false],
+        ["SPI Check", true],
+        [" to project either a ", false],
+        ["Cone 6\"", true],
+        [" or ", false],
+        ["Line 6\"", true],
+        [" of lightning. On a success, affected enemies suffer ", false],
+        ["1d6 lightning damage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Shepherd:", true],
+        [" When a ", false],
+        ["Monster", true],
+        [" selects a ", false],
+        ["Primary Target", true],
+        [" or chooses whom to attack, they ignore you if they have ", false],
+        ["LOS", true],
+        [" to another non-", false],
+        ["Monster", true],
+        [" combatant within ", false],
+        ["8\"", true],
+        [" of you that is no farther from that ", false],
+        ["Monster", true],
+        [" than you are. This rule does not apply to a ", false],
+        ["Monster", true],
+        [" you damaged this round or that is ", false],
+        ["Engaged", true],
+        [" with you.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Quarterstaff:", true],
+        [" Melee weapon, ", false],
+        ["1d6 + STR blunt damage", true],
+        [", two-handed, ", false],
+        ["Parrying", true],
+        [", ", false],
+        ["Trip", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Sling:", true],
+        [" Ranged weapon, ", false],
+        ["1d4 + DEX blunt damage", true],
+        [", ", false],
+        ["Ranged 12\"", true],
+        [", ", false],
+        ["Agile", true],
+        [", ", false],
+        ["Reload", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Bandages:", true],
+        [" ", false],
+        ["Interact [1 AP]:", true],
+        [" Make an ", false],
+        ["INT Check", true],
+        [". On a success, remove ", false],
+        ["Bleeding", true],
+        [" from this Hero or 1 adjacent ally. One use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Channel Energy [2 AP]:", true],
+        [" Once per round, restore ", false],
+        ["2 NRG", true],
+        [", up to your ", false],
+        ["Max NRG", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Infernal Grace:", true],
+        [" Once per round, when a failed ", false],
+        ["Sorcery Casting Check", true],
+        [" would make you lose HP from ", false],
+        ["Blood Price", true],
+        [", reduce that HP loss by ", false],
+        ["2", true],
+        [", minimum ", false],
+        ["0", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Blood Price:", true],
+        [" Each Sorcery lists a ", false],
+        ["Blood", true],
+        [" value. Your ", false],
+        ["Casting Check", true],
+        [" for a Sorcery is also its ", false],
+        ["Blood Price Check", true],
+        [". On a success, the Sorcery resolves normally. On a failure, the Sorcery still resolves, but you immediately lose HP equal to its ", false],
+        ["Blood", true],
+        [" value. On a natural ", false],
+        ["1", true],
+        [", the Sorcery still resolves, you pay ", false],
+        ["Blood Price", true],
+        [", and you roll on ", false],
+        ["Sorcerous Backlash", true],
+        [" in ", false],
+        ["8.2", true],
+        [". ", false],
+        ["Blood Price", true],
+        [" is HP loss, not damage. It ignores ", false],
+        ["AV", true],
+        [", ", false],
+        ["AD", true],
+        [", ", false],
+        ["Resistant", true],
+        [", ", false],
+        ["Immune", true],
+        [", ", false],
+        ["Vulnerable", true],
+        [", ", false],
+        ["Block", true],
+        [", ", false],
+        ["Dodge", true],
+        [", ", false],
+        ["Parry", true],
+        [", and all ", false],
+        ["Reactions", true],
+        [", and it can reduce you to ", false],
+        ["0 HP", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Tier 0 Sorceries [1 AP, 0 NRG, Blood: 1]:", true],
+        [" Choose one: ", false],
+        ["Ember Pulse", true],
+        [", range ", false],
+        ["8\"", true],
+        [", deal ", false],
+        ["1d4 fire damage", true],
+        ["; ", false],
+        ["Blood Flicker", true],
+        [", teleport up to ", false],
+        ["2\"", true],
+        [" to a legal space in ", false],
+        ["LOS", true],
+        [" without triggering ", false],
+        ["Reflex Attacks", true],
+        ["; or ", false],
+        ["Hex Glare", true],
+        [", range ", false],
+        ["8\"", true],
+        [", the target enemy in ", false],
+        ["LOS", true],
+        [" must pass a ", false],
+        ["SPI Check", true],
+        [" or become ", false],
+        ["Blinded", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Crackling Jolt [1 AP, 2 NRG, Blood: 1]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 18\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" Deal ", false],
+        ["1d6 + SPI lightning damage", true],
+        [" and ", false],
+        ["Push", true],
+        [" the target ", false],
+        ["1\"", true],
+        [" directly away from you.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Razorwind [1 AP, 4 NRG, Blood: 1]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 18\". ", false],
+        ["Area:", true],
+        [" ", false],
+        ["4\"×2\"", true],
+        [" rectangle. ", false],
+        ["Effect:", true],
+        [" Deal ", false],
+        ["1d6 + SPI slashing damage", true],
+        [" to all enemies in the area.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Trip:", true],
+        [" You may use this weapon to take the ", false],
+        ["Trip", true],
+        [" action.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Ranged:", true],
+        [" This weapon uses ranged attack rules. It cannot be used to make melee attacks unless a rule or profile says otherwise. You add your ", false],
+        ["DEX", true],
+        [" modifier to the damage total of attacks made with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Reload:", true],
+        [" After making an attack with this weapon, you cannot attack again with this weapon until you take the ", false],
+        ["Reload [1 AP]", true],
+        [" action. See ", false],
+        ["4.3.5", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-SORCERER"
+  },
+  {
+   "name": "Silkshade",
+   "class": "Assassin",
+   "ancestry": "Human",
+   "background": "Performer",
+   "role": "Melee ambush and poison",
+   "level": "1",
+   "archetype": "Martial",
+   "hp_per_level": "+2",
+   "casting": "None",
+   "stats": {
+    "HP": "11",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "2",
+    "NRG": "0"
+   },
+   "scores": {
+    "STR": "-1",
+    "DEX": "+2",
+    "INT": "+2",
+    "SPI": "+0"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Versatile:", true],
+        [" At Hero creation, add ", false],
+        ["+1", true],
+        [" to any one ability score. Already included in this profile's scores.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Determined Resolve:", true],
+        [" When this Hero is reduced to ", false],
+        ["0 HP", true],
+        [", they may spend ", false],
+        ["1 Luck Point", true],
+        [" to make a ", false],
+        ["SPI Check", true],
+        [" before gaining a Wound. On a success, they remain at ", false],
+        ["0 HP", true],
+        [", ", false],
+        ["Knocked Out", true],
+        [", and ", false],
+        ["Prone", true],
+        [", but do not gain that Wound and do not roll on the ", false],
+        ["Injuries Table", true],
+        [". This use of ", false],
+        ["Luck", true],
+        [" is not a reroll. This trait cannot prevent ", false],
+        ["True Death", true],
+        [", a third Wound, or death caused by a rule that causes immediate death. Basic Mode does not use Wounds or the ", false],
+        ["Injuries Table", true],
+        [", so this trait has no effect in Basic Mode.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Performer:", true],
+        [" Once per round, after you damage one enemy within ", false],
+        ["6\"", true],
+        [", reduce the final damage dealt to each target by that enemy's next attack this round by ", false],
+        ["1", true],
+        [", to a minimum of ", false],
+        ["0", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Dagger:", true],
+        [" Melee weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Agile", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Basic Venom [1 AP]:", true],
+        [" Coat one weapon. The poison takes effect the first time an attack made with that weapon damages a target, or it expires at the end of the round, whichever comes first. The weapon attack deals an additional ", false],
+        ["1d4 poison damage", true],
+        [". One use.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["2 Throwing Knives:", true],
+        [" Thrown weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Thrown 10\"", true],
+        [", ", false],
+        ["Agile", true],
+        [", ", false],
+        ["Light", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Surprise Attack:", true],
+        [" During each of your activations, add ", false],
+        ["+2", true],
+        [" damage when you attack an enemy that did not have ", false],
+        ["LOS", true],
+        [" to you at the start of that activation.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Marked for Death [0 AP]:", true],
+        [" Once during each activation, choose one visible enemy within ", false],
+        ["12\"", true],
+        [". The first weapon attack you make against that enemy during each of your activations deals ", false],
+        ["+3 damage", true],
+        [". The mark ends when you choose a new target, the target leaves play, or you are reduced to ", false],
+        ["0 HP", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Finesse:", true],
+        [" Attacks use your ", false],
+        ["DEX", true],
+        [" modifier instead of your ", false],
+        ["STR", true],
+        [" modifier for damage calculations.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Thrown:", true],
+        [" This weapon may make a ranged attack out to its listed ", false],
+        ["Thrown", true],
+        [" range. Add the higher of your ", false],
+        ["STR", true],
+        [" or ", false],
+        ["DEX", true],
+        [" modifier to the damage total; if the weapon also has ", false],
+        ["Finesse", true],
+        [", use ", false],
+        ["DEX", true],
+        [". Each individual ", false],
+        ["Thrown", true],
+        [" weapon may be thrown once per activation and is recovered at the start of your next activation. On a ", false],
+        ["Total Miss", true],
+        [" (all retained base damage dice are natural ", false],
+        ["1s", true],
+        ["), that individual weapon is lost.", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-ASSASSIN"
+  },
+  {
+   "name": "Nightloom",
+   "class": "Assassin",
+   "ancestry": "Deep Elf",
+   "background": "Smuggler",
+   "role": "Melee poison and sleep",
+   "level": "1",
+   "archetype": "Martial",
+   "hp_per_level": "+2",
+   "casting": "None",
+   "stats": {
+    "HP": "10",
+    "AD": "d2 (Chest)",
+    "SPD": "6\"",
+    "Sz": "M",
+    "AP": "3",
+    "Luck": "1",
+    "NRG": "0",
+    "Senses": "Superior Darkvision (18\")"
+   },
+   "scores": {
+    "STR": "-1",
+    "DEX": "+3",
+    "INT": "+2",
+    "SPI": "-1"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Sunlight Sensitivity:", true],
+        [" While in ", false],
+        ["Light", true],
+        [", which includes direct sunlight and any equivalent effect, this Hero suffers ", false],
+        ["Disadvantage", true],
+        [" on ranged attack damage rolls and on ", false],
+        ["INT Checks", true],
+        [" relying on sight. Basic Mode battlefields are in ", false],
+        ["Light", true],
+        [" unless a variant says otherwise.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Deep Elf Magic (Lull):", true],
+        [" Once per round, spend ", false],
+        ["1 Luck Point", true],
+        [" to cast ", false],
+        ["Lull", true],
+        [" for ", false],
+        ["1 AP", true],
+        [" and ", false],
+        ["0 NRG", true],
+        [", following all normal ", false],
+        ["Casting Check", true],
+        [" rules. You may cast it even though you have no ", false],
+        ["NRG", true],
+        [" pool and no class casting tradition. Use ", false],
+        ["INT", true],
+        [" as the Casting Score. The metal equipment restrictions in ", false],
+        ["8.2", true],
+        [" apply normally; your listed equipment is non-metal. ", false],
+        ["Empower", true],
+        [" options cannot be used. ", false],
+        ["Lull:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 1\". ", false],
+        ["Target:", true],
+        [" 1 enemy combatant. ", false],
+        ["Effect:", true],
+        [" The target must pass a ", false],
+        ["SPI Check", true],
+        [". On a failure, the target becomes ", false],
+        ["Sleeping", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Smuggler:", true],
+        [" While you are in ", false],
+        ["Cover", true],
+        [", your ", false],
+        ["Hide distance", true],
+        [" is ", false],
+        ["0\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Elven Rapier:", true],
+        [" Melee weapon, ", false],
+        ["1d8 + DEX piercing damage", true],
+        [", ", false],
+        ["Elven", true],
+        [", ", false],
+        ["Agile", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Parrying", true],
+        [". This weapon does not count as metal for the restrictions in ", false],
+        ["8.2", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Elven Dagger:", true],
+        [" Melee weapon, ", false],
+        ["1d4 + DEX piercing damage", true],
+        [", ", false],
+        ["Elven", true],
+        [", ", false],
+        ["Light", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Agile", true],
+        [". This weapon does not count as metal for the restrictions in ", false],
+        ["8.2", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["2 Basic Venom", true],
+        [" ", false],
+        ["[1 AP]:", true],
+        [" Coat one weapon. The poison takes effect the first time an attack made with that weapon damages a target, or it expires at the end of the round, whichever comes first. The weapon attack deals an additional ", false],
+        ["1d4 poison damage", true],
+        [". Each use is consumed when it takes effect or expires.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Smokestick [1 AP]:", true],
+        [" Create an ", false],
+        ["Aura 3\"", true],
+        [" area of smoke centred on a point in your space. The area provides ", false],
+        ["Cover", true],
+        [" until the end of the round. One use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Acrobatic:", true],
+        [" You are ", false],
+        ["Immune", true],
+        [" to becoming ", false],
+        ["Immobilized", true],
+        [". Your ", false],
+        ["Climb", true],
+        [" costs ", false],
+        ["1\"", true],
+        [" of movement per ", false],
+        ["1\"", true],
+        [" climbed instead of ", false],
+        ["2\"", true],
+        [". Standing from ", false],
+        ["Prone", true],
+        [" costs ", false],
+        ["0 AP", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Poison Hand:", true],
+        [" Poisons you apply deal ", false],
+        ["+3 poison damage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Finesse:", true],
+        [" Attacks use your ", false],
+        ["DEX", true],
+        [" modifier instead of your ", false],
+        ["STR", true],
+        [" modifier for damage calculations.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Light:", true],
+        [" This weapon may be dual-wielded. To attack with two ", false],
+        ["Light", true],
+        [" weapons, declare both weapons, their damage types, and one target; both weapons must be legal for that attack. Declare Reactions before rolling either weapon. A Reaction may be declared if legal against either weapon, but fails without refund if illegal against the weapon finally chosen. Roll each weapon separately, choose one total, and discard the other. Only the chosen weapon's damage type, traits, qualities, poison, and other attack effects apply. ", false],
+        ["Luck", true],
+        [" rerolls both weapon rolls before choosing again. This is one attack for Reaction limits and ", false],
+        ["Multiple Attacks", true],
+        [", and it is not an ", false],
+        ["Off-Hand Weapon", true],
+        [" attack (", false],
+        ["6.13", true],
+        [").", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-ASSASSIN"
+  },
+  {
+   "name": "Crowwick",
+   "class": "Trickster",
+   "ancestry": "Halfling",
+   "background": "Apprentice",
+   "role": "Arcane mobility and pushes",
+   "level": "1",
+   "archetype": "Hybrid",
+   "hp_per_level": "+2",
+   "casting": "INT",
+   "stats": {
+    "HP": "9",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "S",
+    "AP": "3",
+    "Luck": "2",
+    "NRG": "7"
+   },
+   "scores": {
+    "STR": "-2",
+    "DEX": "+3",
+    "INT": "+2",
+    "SPI": "+1"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Small", true]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Naturally Stealthy:", true],
+        [" While this Hero is in ", false],
+        ["Cover", true],
+        [", their ", false],
+        ["Hide distance", true],
+        [" is ", false],
+        ["0\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Brave Heart:", true],
+        [" You are ", false],
+        ["Immune", true],
+        [" to ", false],
+        ["Frightened", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Apprentice:", true],
+        [" Increase your ", false],
+        ["Max NRG", true],
+        [" by ", false],
+        ["2", true],
+        [". Already included in this profile's NRG.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Club:", true],
+        [" ", false],
+        ["1d4 + STR blunt damage", true],
+        [". One hand. No requirement. No traits.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Scroll of Minor Illusion [1 AP]:", true],
+        [" Use with ", false],
+        ["Read Scroll [1 AP]", true],
+        [". This is an Arcane scroll: make an ", false],
+        ["INT", true],
+        [" Casting Check against ", false],
+        ["12", true],
+        [", using no ", false],
+        ["NRG", true],
+        [". On a failure, the scroll is destroyed with no effect. On a natural ", false],
+        ["1", true],
+        [", also roll on ", false],
+        ["Arcane Mishaps", true],
+        [" in ", false],
+        ["8.2", true],
+        [". You may use no more than ", false],
+        ["1", true],
+        [" scroll per round. ", false],
+        ["Range:", true],
+        [" 6\". ", false],
+        ["Target:", true],
+        [" 1 point in space. ", false],
+        ["Effect:", true],
+        [" Place a false sound, brief image, or distraction until the end of the round. The first enemy that makes a ", false],
+        ["Spot Check", true],
+        [" or ranged attack while within ", false],
+        ["3\"", true],
+        [" of that point this round suffers ", false],
+        ["Disadvantage", true],
+        [" on that roll. One use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Practised Vanishing:", true],
+        [" Your ", false],
+        ["Hide distance", true],
+        [" is ", false],
+        ["0\"", true],
+        [". You may become and remain ", false],
+        ["Hidden", true],
+        [" at any distance from an enemy, provided you meet every other requirement in ", false],
+        ["4.3.2", true],
+        [". You still cannot take ", false],
+        ["Hide", true],
+        [" while ", false],
+        ["Engaged", true],
+        [", and you still lose ", false],
+        ["Hidden", true],
+        [" when you become ", false],
+        ["Engaged", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Savvy:", true],
+        [" Once per round, when you fail a ", false],
+        ["Check", true],
+        [" during ", false],
+        ["Interact", true],
+        [" with a non-scoring trap, lock, hazard, or object, ignore the consequences of that failure unless the die was a natural ", false],
+        ["1", true],
+        [". ", false],
+        ["Savvy", true],
+        [" cannot affect objectives, Treasure Chests, extraction, or scenario scoring unless a rule explicitly allows it.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Smoke and Mirrors:", true],
+        [" Once per round. After you succeed on ", false],
+        ["Dodge", true],
+        [" or successfully cast an ", false],
+        ["Arcane Spell", true],
+        [", you may ", false],
+        ["Shift 2\"", true],
+        [". If you then meet the conditions to become ", false],
+        ["Hidden", true],
+        [" in ", false],
+        ["4.3.2", true],
+        [", you become ", false],
+        ["Hidden", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Trickster Cantrips [1 AP, 0 NRG]:", true],
+        [" Choose one: ", false],
+        ["Glamour Shard", true],
+        [", range ", false],
+        ["2\"", true],
+        [", deal ", false],
+        ["1d6 + INT arcane damage", true],
+        [" and then ", false],
+        ["Shift 2\"", true],
+        ["; ", false],
+        ["False Footing", true],
+        [", range ", false],
+        ["2\"", true],
+        [", the target enemy becomes ", false],
+        ["Prone", true],
+        ["; or ", false],
+        ["Stage Smoke", true],
+        [", range ", false],
+        ["6\"", true],
+        [", create an ", false],
+        ["Aura 2\"", true],
+        [" area of smoke that provides ", false],
+        ["Cover", true],
+        [" until the end of the round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Force Push [2 AP, 2 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 12\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" ", false],
+        ["Push", true],
+        [" the target ", false],
+        ["2\"", true],
+        [" directly away. On a ", false],
+        ["Collision", true],
+        [", they suffer ", false],
+        ["1d4 + INT arcane damage", true],
+        [". ", false],
+        ["[Empower 1 NRG]:", true],
+        [" The ", false],
+        ["Push", true],
+        [" distance becomes ", false],
+        ["4\"", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-TRICKSTER"
+  },
+  {
+   "name": "Gildmirror",
+   "class": "Trickster",
+   "ancestry": "Gnome",
+   "background": "Merchant",
+   "role": "Illusory fencing and disruption",
+   "level": "1",
+   "archetype": "Hybrid",
+   "hp_per_level": "+2",
+   "casting": "INT",
+   "stats": {
+    "HP": "10",
+    "AD": "d2 (Chest)",
+    "SPD": "5\"",
+    "Sz": "S",
+    "AP": "3",
+    "Luck": "2",
+    "NRG": "7",
+    "Senses": "Darkvision (12\")"
+   },
+   "scores": {
+    "STR": "-2",
+    "DEX": "+2",
+    "INT": "+3",
+    "SPI": "+0"
+   },
+   "sections": [
+    {
+     "title": "Ancestry Traits",
+     "items": [
+      {
+       "runs": [
+        ["Small", true]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Gnome Cunning:", true],
+        [" Your ", false],
+        ["INT", true],
+        [" and ", false],
+        ["SPI Checks", true],
+        [" made to resist enemy effects that would make you ", false],
+        ["Blinded", true],
+        [", ", false],
+        ["Frightened", true],
+        [", ", false],
+        ["Sleeping", true],
+        [", or ", false],
+        ["Weakened", true],
+        [", or force your movement, attacks, or target choices, are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Artificer's Touch:", true],
+        [" ", false],
+        ["INT Checks", true],
+        [" made to ", false],
+        ["Interact", true],
+        [" with, understand, or examine mechanical hazards and devices are rolled with ", false],
+        ["Advantage", true],
+        [".", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Background Rule",
+     "items": [
+      {
+       "runs": [
+        ["Merchant:", true],
+        [" Increase maximum ", false],
+        ["Luck", true],
+        [" by ", false],
+        ["1", true],
+        [". Already included in this profile's Luck. Basic Mode does not use the ", false],
+        ["Town Phase", true],
+        [", so this background's trading rule has no effect in Basic Mode.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Equipment and Items",
+     "items": [
+      {
+       "runs": [
+        ["Elven Rapier:", true],
+        [" Melee weapon, ", false],
+        ["1d8 + DEX piercing damage", true],
+        [", ", false],
+        ["Elven", true],
+        [", ", false],
+        ["Agile", true],
+        [", ", false],
+        ["Finesse", true],
+        [", ", false],
+        ["Parrying", true],
+        [". This weapon does not count as metal for the restrictions in ", false],
+        ["8.2", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Leather Coat:", true],
+        [" Chest ", false],
+        ["AD d2", true],
+        [", ", false],
+        ["DEX Pen 0", true],
+        [", ", false],
+        ["Max Speed 8\"", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Bandages:", true],
+        [" ", false],
+        ["Interact [1 AP]:", true],
+        [" Make an ", false],
+        ["INT Check", true],
+        [". On a success, remove ", false],
+        ["Bleeding", true],
+        [" from this Hero or 1 adjacent ally. One use.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Talents, Powers, and Special Rules",
+     "items": [
+      {
+       "runs": [
+        ["Practised Vanishing:", true],
+        [" Your ", false],
+        ["Hide distance", true],
+        [" is ", false],
+        ["0\"", true],
+        [". You may become and remain ", false],
+        ["Hidden", true],
+        [" at any distance from an enemy, provided you meet every other requirement in ", false],
+        ["4.3.2", true],
+        [". You still cannot take ", false],
+        ["Hide", true],
+        [" while ", false],
+        ["Engaged", true],
+        [", and you still lose ", false],
+        ["Hidden", true],
+        [" when you become ", false],
+        ["Engaged", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Tumble [0 AP]:", true],
+        [" Once during each activation, ", false],
+        ["Shift 2\"", true],
+        [". During this ", false],
+        ["Shift", true],
+        [", you may move through enemy spaces, but you cannot end this movement in an enemy space. This ", false],
+        ["Shift", true],
+        [" does not trigger ", false],
+        ["Reflex Attack", true],
+        [" from enemies whose spaces you move through.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Sleight of Spell:", true],
+        [" The first ", false],
+        ["Trickster Tier 0 Cantrip", true],
+        [" you use during each of your activations costs ", false],
+        ["0 AP", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Trickster Cantrips [1 AP, 0 NRG]:", true],
+        [" Choose one: ", false],
+        ["Glamour Shard", true],
+        [", range ", false],
+        ["2\"", true],
+        [", deal ", false],
+        ["1d6 + INT arcane damage", true],
+        [" and then ", false],
+        ["Shift 2\"", true],
+        ["; ", false],
+        ["False Footing", true],
+        [", range ", false],
+        ["2\"", true],
+        [", the target enemy becomes ", false],
+        ["Prone", true],
+        ["; or ", false],
+        ["Stage Smoke", true],
+        [", range ", false],
+        ["6\"", true],
+        [", create an ", false],
+        ["Aura 2\"", true],
+        [" area of smoke that provides ", false],
+        ["Cover", true],
+        [" until the end of the round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Grease [1 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 18\". ", false],
+        ["Area:", true],
+        [" ", false],
+        ["2\"×2\"", true],
+        [" square. ", false],
+        ["Effect:", true],
+        [" The area is ", false],
+        ["Slippery Terrain", true],
+        [" until the end of the round.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Static Field [1 AP, 1 NRG]:", true],
+        [" ", false],
+        ["Range:", true],
+        [" 12\". ", false],
+        ["Target:", true],
+        [" 1 combatant. ", false],
+        ["Effect:", true],
+        [" Deal ", false],
+        ["1d4 + INT lightning damage", true],
+        [". The target must pass an ", false],
+        ["INT Check", true],
+        [", or they cannot use ", false],
+        ["Reactions", true],
+        [" until the end of the round.", false]
+       ],
+       "sub": []
+      }
+     ]
+    },
+    {
+     "title": "Weapon Trait Rules",
+     "items": [
+      {
+       "runs": [
+        ["Agile:", true],
+        [" The second weapon attack you make with this weapon during an activation does not suffer ", false],
+        ["Disadvantage", true],
+        [" from ", false],
+        ["Multiple Attacks", true],
+        [".", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Finesse:", true],
+        [" Attacks use your ", false],
+        ["DEX", true],
+        [" modifier instead of your ", false],
+        ["STR", true],
+        [" modifier for damage calculations.", false]
+       ],
+       "sub": []
+      },
+      {
+       "runs": [
+        ["Parrying:", true],
+        [" You may use the ", false],
+        ["Parry", true],
+        [" Reaction with this weapon.", false]
+       ],
+       "sub": []
+      }
+     ]
+    }
+   ],
+   "art": "ART-CLA-TRICKSTER"
+  }
+ ]
+}
