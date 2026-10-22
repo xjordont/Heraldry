@@ -9952,17 +9952,17 @@
   "title": "Silkshade",
   "heading_id": "h-silkshade",
   "route": "gpt",
-  "spec_sha256": "b15c34dbe40360301eeaf76b788094359814ba8a4e6f2b2f0169b0a937b3eedd",
-  "prompt_sha256": "885f0063cd8ac58c4dad853a7dd81101e8a4c2e75c5f01367ebbc14c0196a5fe",
-  "status": "rejected",
-  "received_at": "2026-10-22T02:07:26+00:00",
+  "spec_sha256": "56928bbd28f3872ece5831aa0dc9bc46333d6e4eef0f679b54e98cb2cf1fa947",
+  "prompt_sha256": "aae7a5bee4fcef50b8563b2e65f90c43266d73b28dd614a9408115e29b8a9fd2",
+  "status": "received",
+  "received_at": "2026-10-22T16:04:01+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Reviewer correction: stitched diamond jacket and bold trailing sash with requested weapons and vial. Hair, sash and boot margins remain below 10%.",
+  "model": "not shown",
+  "notes": "Turned-up collar and ragged rear waist cloth recorded for reviewer. Narrow margin inspected: complete figure, no edge contact.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-SILKSHADE.png",
-   "sha256": "ee0d178ab3cdcfe9ef791cb03902fd361a3a8f0b8d38860d0be873bd6ea477c5",
+   "sha256": "8a056a44e76a31346232b7e2a489b713411f47291d61978c5b6b9f8c88013162",
    "px": [
     1024,
     1536
@@ -9970,17 +9970,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-SILKSHADE.png",
-   "sha256": "3dba975788d96439dd13f7f2534b9c6fc2da74eae7205f4bfaba6f9ab161d0a2",
+   "sha256": "e4fbe6b7a38d08dc4bfd37eb796cdc9575df435927753a7cc5410695c63102b2",
    "px": [
-    837,
-    1464
+    839,
+    1484
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.79
+   "max_print_w_in_300ppi": 2.797
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-SOOTFINGER": {
   "family": "hero",
