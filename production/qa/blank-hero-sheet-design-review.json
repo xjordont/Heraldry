@@ -3,16 +3,16 @@
   "status": "AUTHOR_REVIEWED_OWNER_REVIEW_PENDING",
   "reviewer": "Codex author",
   "independent_review": false,
-  "reviewed_at": "2026-10-22T20:19:59.024154+00:00",
+  "reviewed_at": "2026-10-22T20:45:28.600922+00:00",
   "owner_aesthetic_approval": "PENDING",
   "source": "source/Heraldry_RC513.md",
   "source_sha256": "f106082c78fdee60edf0943f3962581290ab5c4127aaa6bd455cbb00ebc118b1",
   "manuscript_changed": false,
-  "qa_receipt_sha256": "9cd4751fd81518297b1601565387e9efddc38faacb190b54d5a386780ba2927d",
+  "qa_receipt_sha256": "9e0b42e76b6be42e8521ccd7dcea8d8cf70b7cda49746b380de07bd28ff74a41",
   "pdfs": [
     {
       "path": "build\\heroes\\hero-sheet-cream.pdf",
-      "sha256": "14bfa5498cb3cbb1648e00d577f4c7777f3d4e277491e50db6c0ac6acf77b963",
+      "sha256": "ba20a4a9c49adbd270036ffc41d3ca1db566bc5f45da5fa6293a53ae980b7e73",
       "pages": 2,
       "print_preflight": "PASS",
       "failures": [],
@@ -21,7 +21,7 @@
     },
     {
       "path": "build\\heroes\\hero-sheet-white.pdf",
-      "sha256": "737ba177bdd69e403a3075dcb30c3baea851552f45b94903798803159ed72c86",
+      "sha256": "fe819c9d523e12005e4c11611fb3e40eb0e49eaa7a07e83a7ee9da146a2429c9",
       "pages": 2,
       "print_preflight": "PASS",
       "failures": [],
@@ -54,7 +54,7 @@
     "tools\\hero_sheet_qa.py": "1009639d9689169e834396825ecc573f41c7b73fca1323416db145f1e7386582",
     "tools\\verify_inkjet_pdf.py": "00d0db3fe6e23a42d93884dda7782f1eb975b6f4a73c1ad5d2ba5f3368a6db53",
     "typst\\aids\\kit.typ": "fbac27a84050b047b2bc54854513b6ae679995638d83257e21258092633327c2",
-    "typst\\heroes\\blank-record.typ": "da719222080f35cb404db4eed2e4817bd29e05f874a0013761a30d9733da1050",
+    "typst\\heroes\\blank-record.typ": "3a7663855af0f3dde002eb4ef618de92c878e33c4a8795bfb153c2345f0b2ff3",
     "typst\\heroes\\parts.typ": "2e9f098ea8227d506dc482179b9a6c4c4c7a62e3419fbd95750570112535e466",
     "typst\\heroes\\sheet.typ": "b58ec8fa288edd613190051b86e558455e85e5231271580c53753b90bc9e4271",
     "typst\\templates\\marks\\cream\\logo.svg": "3ccd39a6e99b776f51a6fea40f1eaa11a7bdfc7650ac2c900f9cc68c7566fa7e",
@@ -66,54 +66,55 @@
   "visual_review": [
     {
       "path": "build\\hero-redesign\\blank\\review\\hero-sheet-cream-1.png",
-      "sha256": "ad462e9a411adeef6df4061ff4cabbb2d39aebdd7f99cfac80dc50f5a6daa0be",
+      "sha256": "c824e374b27d6f972036f0cf9d4b558ea34d965993db59f3912a0e2c388da5cc",
       "inspection": "Full-page Poppler image at 1500 px",
       "observations": [
-        "Book blackletter headings, serif resource headings, sans-serif data labels, signature, shields, lozenges, and brush separators are visible.",
-        "No grey-filled inner fields or nested section frames. Writing areas remain open with ledger rules.",
-        "Identity lines, attribute shields, resource lines, defence values, Wounds, and weapons align within the shared page grid.",
-        "Portrait arch is empty. Inventory combines quantity, item, equipped/location, and notes in one twelve-row list; Coins is an unboxed line.",
-        "No apparent clipped text, overlapping labels, footer intrusion, or detached section title observed."
+        "Black section-title bands with reversed book blackletter provide visible anchors above open ledgers.",
+        "Black attribute-shield chiefs have legible white abbreviations; portrait arch remains empty.",
+        "Coins is on white beside Inventory, without an enclosing box.",
+        "No grey-filled inner cells, nested frames, apparent text clipping, label overlap, or footer intrusion observed.",
+        "Cream and white versions retain the same field positions and row structure."
       ]
     },
     {
       "path": "build\\hero-redesign\\blank\\review\\hero-sheet-cream-2.png",
-      "sha256": "5693615aa9a97146e8b2e36f0e767b4c93da4640ccc088081f1e5c12607c813a",
+      "sha256": "5634032763f04751c3118e020725f067ef67baf0457c668108a5497fa67c3da7",
       "inspection": "Full-page Poppler image at 1500 px",
       "observations": [
-        "Book blackletter headings, serif resource headings, sans-serif data labels, signature, shields, lozenges, and brush separators are visible.",
-        "No grey-filled inner fields or nested section frames. Writing areas remain open with ledger rules.",
-        "Powers and Talents use full-width tables with a broad two-line description column; name columns remain separate.",
-        "Hero Details has two full-width writing lines. Adventures and Fate sit in the section header without enclosing boxes.",
-        "No apparent clipped text, overlapping labels, footer intrusion, or detached section title observed."
+        "Black section-title bands with reversed book blackletter provide visible anchors above open ledgers.",
+        "Powers, Talents and Special Abilities, and Hero Details have black title bands, with description rules and writing space unchanged.",
+        "Adventures and Fate remain on white beside the Hero Details band, leaving their writing lines usable.",
+        "No grey-filled inner cells, nested frames, apparent text clipping, label overlap, or footer intrusion observed.",
+        "Cream and white versions retain the same field positions and row structure."
       ]
     },
     {
       "path": "build\\hero-redesign\\blank\\review\\hero-sheet-white-1.png",
-      "sha256": "8ffa7ea6ace80ab3fcafb2fb71c7a03af15b8931bd7053421069ef80b46fccb3",
+      "sha256": "af8a66fcc2f09037fe88f3efae3aa78ba36f563ffc7dc39dbae8133133c2585d",
       "inspection": "Full-page Poppler image at 1500 px",
       "observations": [
-        "Book blackletter headings, serif resource headings, sans-serif data labels, signature, shields, lozenges, and brush separators are visible.",
-        "No grey-filled inner fields or nested section frames. Writing areas remain open with ledger rules.",
-        "Identity lines, attribute shields, resource lines, defence values, Wounds, and weapons align within the shared page grid.",
-        "Portrait arch is empty. Inventory combines quantity, item, equipped/location, and notes in one twelve-row list; Coins is an unboxed line.",
-        "No apparent clipped text, overlapping labels, footer intrusion, or detached section title observed."
+        "Black section-title bands with reversed book blackletter provide visible anchors above open ledgers.",
+        "Black attribute-shield chiefs have legible white abbreviations; portrait arch remains empty.",
+        "Coins is on white beside Inventory, without an enclosing box.",
+        "No grey-filled inner cells, nested frames, apparent text clipping, label overlap, or footer intrusion observed.",
+        "Cream and white versions retain the same field positions and row structure."
       ]
     },
     {
       "path": "build\\hero-redesign\\blank\\review\\hero-sheet-white-2.png",
-      "sha256": "cd6f5c48737f734b9c71fdafdb563acd6eea822ebffa0cb0b7d9e9e873e4eb0a",
+      "sha256": "c7b4f5787170d8890c0dc7984b374d68ead569263ee77dd69a5863a38379eed6",
       "inspection": "Full-page Poppler image at 1500 px",
       "observations": [
-        "Book blackletter headings, serif resource headings, sans-serif data labels, signature, shields, lozenges, and brush separators are visible.",
-        "No grey-filled inner fields or nested section frames. Writing areas remain open with ledger rules.",
-        "Powers and Talents use full-width tables with a broad two-line description column; name columns remain separate.",
-        "Hero Details has two full-width writing lines. Adventures and Fate sit in the section header without enclosing boxes.",
-        "No apparent clipped text, overlapping labels, footer intrusion, or detached section title observed."
+        "Black section-title bands with reversed book blackletter provide visible anchors above open ledgers.",
+        "Powers, Talents and Special Abilities, and Hero Details have black title bands, with description rules and writing space unchanged.",
+        "Adventures and Fate remain on white beside the Hero Details band, leaving their writing lines usable.",
+        "No grey-filled inner cells, nested frames, apparent text clipping, label overlap, or footer intrusion observed.",
+        "Cream and white versions retain the same field positions and row structure."
       ]
     }
   ],
   "design_changes": [
+    "Restores black section-title bands and black attribute-shield chiefs, preserving all writing capacities and field positions.",
     "Imports the same font tokens and original boundary marks as the main rulebook.",
     "Removes nested frames, grey label bands, redundant ancestry/background rules, the Party Leader checkbox, and boxed Carried Coins.",
     "Removes weapon/armour reminders and the complete advancement reference from the blank only.",
@@ -138,8 +139,8 @@
     "mechanical_qa": "PASS",
     "development_check": "PASS",
     "development_tests": 344,
-    "focused_hero_tests": "7 PASS",
-    "development_log_sha256": "6ab139ea43755523db3e6494da7b1970ab40e0b0eb56d47641542959a424aac9",
+    "focused_hero_tests": "Covered by the final 344-test development check",
+    "development_log_sha256": "6dd72a5911d957247b04109a4ae60e84add9789bfe73eea8887bb0eb9b293138",
     "cream_white_geometry": "IDENTICAL",
     "minimum_type_pt": 9,
     "minimum_actual_glyph_inset_pt": 27,
@@ -349,5 +350,7 @@
   ],
   "physical_print": "NOT TESTED",
   "handwriting_erasing_duplex_registration": "NOT TESTED",
-  "limits": "Author visual review. No independent player testing, owner aesthetic approval, every-glyph proof, or accessibility certification."
+  "limits": "Author visual review. No independent player testing, owner aesthetic approval, every-glyph proof, or accessibility certification.",
+  "supersedes_blank_review": "production/qa/history/blank-hero-sheet-design-review-3006eb12-open-headings.json",
+  "owner_feedback": "The black boxes were at least somewhat aesthetic."
 }

@@ -1,5 +1,11 @@
 # Release status - RC513 source / RC492 delivery
 
+## Blank Hero record visual-weight adjustment - 2026-10-22
+
+The owner preferred the aesthetic weight of the black boxes. Black section-title bands and black attribute-shield chiefs are restored on the blank only, preserving every writing area, row count, and field position. Grey inner cells, nested panels, redundant sections, and reminders remain removed. Both two-side PDF variants pass print QA and have been visually inspected. Basic Mode outputs, RC513, art approvals, and the published book delivery are unchanged. Owner aesthetic assessment is pending; physical printing remains **NOT TESTED**.
+
+Development validation PASS, including 344 tests. Scoped blank QA PASS; all 50 Basic Mode PDF hashes remain unchanged.
+
 ## Blank Hero record refinement - 2026-10-22
 
 Only the blank expanded record has been revised in this pass, as the owner requested. It now shares the rulebook's font and mark sources, replaces nested/grey cells with open writing areas, combines carried and equipped possessions into Inventory, leaves the portrait arch empty, and removes duplicated ancestry/background rules, reminders, the advancement lookup, and Party Leader checkbox. Both cream and white versions remain exactly two portrait Letter sides. Basic Mode adaptation is deferred; all 50 existing individual/pack PDFs are hash-verified unchanged.

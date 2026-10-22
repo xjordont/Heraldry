@@ -27,12 +27,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
+- [`3006eb12`](https://github.com/xjordont/Heraldry/commit/3006eb124720854a231cb20276ec0830259d6215) layout: refine blank Hero record with book typography and open ledgers
 - [`4293a055`](https://github.com/xjordont/Heraldry/commit/4293a055d7953d194bf8f3640e4e27ba2066ff93) layout: standardize expanded Hero records with attached field labels
 - [`06ab3e62`](https://github.com/xjordont/Heraldry/commit/06ab3e62874246d8ca69f9e9492039acc85f047f) layout: redesign compact Hero sheets with complete profile coverage
 - [`966a4bb8`](https://github.com/xjordont/Heraldry/commit/966a4bb892f24013927e73f1405a76ab718d57e1) art: select V1 portraits for basic heroes
 - [`1db890ee`](https://github.com/xjordont/Heraldry/commit/1db890ee2ccfdf6abb349565fcf4b93419014927) art: intake of ChatGPT Work images
 - [`d3267978`](https://github.com/xjordont/Heraldry/commit/d3267978f8a3d114496101e7ea4b030f5a4c8e10) art(gpt): ART-HER-THOUGHTWAKE .. ART-HER-THOUGHTWAKE
-- [`14e0a48d`](https://github.com/xjordont/Heraldry/commit/14e0a48d77a423cc7fc1b0a780bd0e7b19ba08a1) art: intake of ChatGPT Work images
 
 <!-- END AUTO:recent -->
 

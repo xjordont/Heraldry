@@ -1,5 +1,13 @@
 # Production state - RC513 source, main
 
+## Black visual anchors restored to blank Hero record - 2026-10-22
+
+Owner feedback: "The black boxes were at least somewhat aesthetic." The blank now restores black section-title bands with reversed book blackletter, plus black chiefs on the four attribute shields. This changes visual weight without reclaiming any writing space: all row counts, row heights, field positions, and the two-side format remain unchanged. Coins, Adventures, and Fate stay on white writing surfaces next to their bands. Nested frames, grey writing cells, redundant panels, and reminders remain removed. Basic Mode PDFs and their template remain unchanged.
+
+Both blank PDFs pass print QA with identical cream/white geometry. All four final page images were inspected. Updated exact-file evidence is in `production/qa/blank-hero-sheet-design-review.json`; the preceding open-heading review is retained under `production/qa/history/`. Owner aesthetic review is pending, and physical printing remains **NOT TESTED**.
+
+Validation: `python tools/dev.py check` PASS, including 344 tests; scoped blank PDF QA PASS, with all 50 Basic Mode PDF hashes unchanged.
+
 ## Blank Hero record refined first - owner-directed revision, 2026-10-22
 
 The owner requested the main rulebook's typography and style, substantially less framing, no grey inner boxes, no reminders, an empty portrait/arms field, no duplicated ancestry/background panel, one combined Inventory, and removal of the Party Leader and boxed coins fields. This pass changes only the blank. The 50 Basic Mode individual/pack PDFs retain their preceding hashes, and their template and artwork are unchanged.
