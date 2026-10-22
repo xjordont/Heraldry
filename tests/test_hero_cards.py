@@ -60,26 +60,34 @@ class HeroLeaves(unittest.TestCase):
         text = "\n".join(p.extract_text() for p in reader.pages).casefold()
         for label in ("Name", "Ancestry", "Background", "Class", "Level", "STR", "DEX", "INT", "SPI",
                       "Initiative", "Current", "Max", "Temp", "NRG", "Luck", "AP", "Speed", "Size",
-                      "Chest", "Shield", "AD", "AV", "Wounds", "Lingering Injuries", "Known Powers",
-                      "Talents and Special Abilities", "Equipped Items", "Carried Items", "Coins", "Fate"):
+                      "Chest", "Shield", "AD", "AV", "Wounds", "Lingering Injuries", "Powers",
+                      "Talents and Special Abilities", "Inventory", "Coins", "Fate", "Hero Details"):
             self.assertIn(label.casefold(), text)
 
-    def test_field_labels_are_inside_attached_bands(self):
+    def test_blank_removes_redundancy_and_has_no_grey_inner_boxes(self):
         import pymupdf
-        pdf = pymupdf.open(str(self.compile("sheet.typ", "label-bands")))
-        page = pdf[0]
-        bands = [d["rect"] for d in page.get_drawings()
-                 if d.get("fill") is not None and sum(d["fill"]) / len(d["fill"]) < 0.98
-                 and d["rect"].get_area() < 6500]
-        spans = [s for b in page.get_text("dict")["blocks"] for line in b.get("lines", []) for s in line["spans"]]
-        for label in ("Name", "Class", "Ancestry", "Background", "Level", "Casting", "Senses",
-                      "Current", "Max", "Temp", "Allowance", "Carried Coins", "Party Leader"):
-            matches = [s for s in spans if s["text"].strip() == label]
-            self.assertTrue(matches, label)
-            for span in matches:
-                r = pymupdf.Rect(span["bbox"])
-                centre = pymupdf.Point((r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2)
-                self.assertTrue(any(centre in band for band in bands), f"Detached field label: {label}")
+        pdf = pymupdf.open(str(self.compile("sheet.typ", "open-fields")))
+        self.addCleanup(pdf.close)
+        text = "\n".join(p.get_text() for p in pdf)
+        for removed in ("Ancestry Traits", "Background Rule", "Ancestry and Background",
+                        "Equipped Items", "Carried Items", "Carried Coins", "Party Leader",
+                        "Advancement Reference", "Shield AD and AV apply", "Off-Hand: exactly"):
+            self.assertNotIn(removed, text)
+        self.assertEqual(text.count("Inventory"), 1)
+        self.assertEqual(text.count("Ancestry"), 1)
+        self.assertEqual(text.count("Background"), 1)
+        for page in pdf:
+            for drawing in page.get_drawings():
+                fill = drawing.get("fill")
+                if fill is not None and drawing["rect"].get_area() < page.rect.get_area() * 0.9:
+                    paper = (252 / 255, 250 / 255, 245 / 255)
+                    is_paper = all(abs(a - b) < 0.002 for a, b in zip(fill, paper))
+                    self.assertTrue(max(fill) < 0.01 or min(fill) > 0.99 or is_paper,
+                                    "Blank writing areas must not have grey filled boxes")
+        portrait = pymupdf.Rect(477, 79, 575, 165)
+        self.assertEqual(pdf[0].get_textbox(portrait).strip(), "")
+        self.assertFalse(any(pymupdf.Rect(img["bbox"]).intersects(portrait)
+                             for img in pdf[0].get_image_info()))
 
     def test_compiled_set_uses_at_most_one_sheet_per_hero(self):
         reader = PdfReader(str(self.compile("cards.typ", "pack", hero="all")))

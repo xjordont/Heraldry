@@ -30,10 +30,71 @@ def signature(page):
             for line in b.get("lines", []) for s in line["spans"] if s["text"].strip()]
 
 
+def audit_blank(render_review):
+    """Review only the blank form, preserving Basic Mode outputs and their review images."""
+    review = ROOT / "build/hero-redesign/blank/review"
+    review.mkdir(parents=True, exist_ok=True)
+    config = json.loads((ROOT / "config/production.json").read_text(encoding="utf-8"))
+    files, images, problems = [], [], []
+    cream_signatures = None
+    for paper in ("cream", "white"):
+        path = hero_cards.OUT / f"hero-sheet-{paper}.pdf"
+        result = inspect(path, config)
+        doc = pymupdf.open(path)
+        if len(doc) != 2:
+            problems.append(f"{paper}: blank must have exactly two pages")
+        if result["status"] != "PASS":
+            problems.append(f"{paper}: print preflight failed")
+        sig = [signature(page) for page in doc]
+        if paper == "cream":
+            cream_signatures = sig
+        elif sig != cream_signatures:
+            problems.append("Blank cream/white text or geometry differs")
+        spans = [s for page in sig for s in page]
+        files.append({"path": str(path.relative_to(ROOT)), "sha256": sha(path), "pages": len(doc),
+                      "print_preflight": result["status"], "failures": result["failure_examples_first_50"],
+                      "minimum_type_pt": min(s[1] for s in spans),
+                      "minimum_text_inset_pt": round(min(min(s[2][0], s[2][1], 612 - s[2][2], 792 - s[2][3])
+                                                         for s in spans), 2)})
+        if render_review:
+            executable = shutil.which("pdftoppm")
+            if not executable:
+                raise RuntimeError("Poppler pdftoppm is required for the review render")
+            prefix = review / path.stem
+            subprocess.run([executable, "-scale-to", "1500", "-png", str(path), str(prefix)],
+                           check=True, capture_output=True)
+            for image_path in sorted(review.glob(prefix.name + "-*.png")):
+                images.append({"path": str(image_path.relative_to(ROOT)), "sha256": sha(image_path)})
+    prior = json.loads((ROOT / "production/qa/hero-sheet-design-review.json").read_text(encoding="utf-8"))
+    basic = [p for p in prior["pdfs"] if "hero-sheet-" not in p["path"]]
+    for item in basic:
+        if sha(ROOT / item["path"]) != item["sha256"]:
+            problems.append(f"Basic Mode output changed during blank-only work: {item['path']}")
+    inputs = [ROOT / p for p in ("typst/heroes/blank-record.typ", "typst/heroes/sheet.typ", "typst/heroes/parts.typ",
+                                 "typst/aids/kit.typ", "typst/templates/system.typ", "config/design_tokens.json",
+                                 "config/production.json", "tools/hero_sheet_qa.py", "tools/verify_inkjet_pdf.py")]
+    inputs += list((ROOT / "fonts/static").glob("*"))
+    inputs += [ROOT / f"typst/templates/marks/{p}/logo.svg" for p in ("cream", "white")]
+    receipt = {"status": "FAIL" if problems else "PASS", "scope": "Blank record only; Basic Mode is deferred",
+               "files": files, "review_images": images,
+               "design_inputs": {str(p.relative_to(ROOT)): sha(p) for p in sorted(inputs) if p.is_file()},
+               "unchanged_basic_pdf_count": len(basic), "unchanged_basic_pdf_hashes": basic,
+               "problems": problems, "physical_print": "NOT TESTED",
+               "limits": "Mechanical receipt only; author visual observations and owner aesthetic review are separate."}
+    target = ROOT / "build/hero-redesign/blank/qa.json"
+    target.write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8", newline="\n")
+    print(json.dumps({"status": receipt["status"], "files": len(files), "unchanged_basic_pdf_count": len(basic),
+                      "problems": problems, "receipt": str(target)}, indent=2))
+    return int(bool(problems))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--render-review", action="store_true")
+    ap.add_argument("--only-blank", action="store_true", help="Audit the blank record without rebuilding Basic Mode Heroes")
     a = ap.parse_args()
+    if a.only_blank:
+        return audit_blank(a.render_review)
     REVIEW.mkdir(parents=True, exist_ok=True)
     data = json.loads(hero_cards.DATA.read_text(encoding="utf-8"))
     selections = json.loads((ROOT / "production/art/SELECTIONS.json").read_text(encoding="utf-8"))

@@ -1,6 +1,6 @@
 # Hero sheet research and redesign audit
 
-**Current direction:** The owner rejected the first compact implementation below and selected a consistent expanded, two-sided record for every Hero. The current revision uses attached field-label bands, framed section headers, closed writing areas, aligned panels, and the same front/back system throughout. See `docs/HERO_SHEETS.md` for current outputs; the initial implementation results are historical evidence, not owner approval.
+**Current direction:** Keep the consistent expanded, two-sided format, and finish the blank record before adapting Basic Mode Heroes. The latest blank uses the main book's type, signature, shields, lozenges, and brush rules with open writing fields. It removes grey inner cells, nested frames, redundant ancestry/background rules, reminders, the advancement lookup, and the Party Leader checkbox. Equipment and carried possessions share one Inventory. The preceding framed Basic Mode design remains unchanged pending the blank's refinement. See `docs/HERO_SHEETS.md` for current outputs; earlier implementation results below are historical evidence, not owner approval.
 
 Owner request, 2026-10-22: scrutinize the existing Hero sheets, research comparable games before further design, and improve their beauty, readability, density, and organization within one US Letter sheet per Hero, preferably one side. Active rules authority: RC513. This is a graphic and information design pass, not permission to change rules.
 
