@@ -9457,17 +9457,17 @@
   "title": "Crowwick",
   "heading_id": "h-crowwick",
   "route": "gpt",
-  "spec_sha256": "32217352d178f17537c86cf06460420f4885a17fbff70921e24abf6d9ddf9ade",
-  "prompt_sha256": "88aa82f970eecf13baf7f53d60e0728cdd5c1d089dc36439cb0e3de48c56cda9",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:38:58+00:00",
+  "spec_sha256": "1421c80d7947c73ac771f8bbffdfe2503fa83ae9628f8527d95fc7bf44414262",
+  "prompt_sha256": "7d57a5fea705acfd5bf4a462fed4d7443aedd0ab3d1fab20b9d4e88d987836b5",
+  "status": "received",
+  "received_at": "2026-10-22T15:12:51+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: show the oversized leather smock-coat with a clean hem and a tall peaked cap with feather, avoiding Furrowroot's straw hat, sickle and sling; keep the blank scroll, club and candle stub. Correction: keep hems intact, bold simple shapes, sparse hatching, pure black ink, at least 10% margin and no stray specks; keep the full figure and listed gear visible.",
+  "model": "not shown",
+  "notes": "Correction used: targeted blank-scroll requirement supersedes older wavy-lines phrase. Inner shirt tails remain ragged; outer coat intact. Automated midtone/edge warnings inspected: hatch marks, no crop.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-CROWWICK.png",
-   "sha256": "541fe32cd6dfe8e2f483c66924b89537d34473f8d79e1f84e18aecb996f5b89c",
+   "sha256": "5ca8727b5d7820ba966f9bc56b3d301310fc1690e5cc0f634dcb51fbfd646f44",
    "px": [
     1024,
     1536
@@ -9475,17 +9475,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-CROWWICK.png",
-   "sha256": "36404ba70cd563a52440535914499308421f40da9b65befd96ea53f708091796",
+   "sha256": "01a59f32387c80277800e83b9e243e5d86845f7a866f9a7e7a17a9a1a50fc200",
    "px": [
-    961,
-    1473
+    990,
+    1424
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.203
+   "max_print_w_in_300ppi": 3.3
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-DAWNWARDEN": {
   "family": "hero",
