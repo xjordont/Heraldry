@@ -10018,17 +10018,17 @@
   "title": "Starcinder",
   "heading_id": "h-starcinder",
   "route": "gpt",
-  "spec_sha256": "c9774636c090a78fd3f2a347bd07a28c0fca35492ef51908d4f9d4a535b6192a",
-  "prompt_sha256": "f35428628281f871616c6b6874b0db582f3d6c88e2d207b204226e2c7effb8f9",
-  "status": "rejected",
-  "received_at": "2026-10-22T02:10:35+00:00",
+  "spec_sha256": "a830805d90d118312425f6fb0d9d440c85cb92193fb19f3203066000b44374c6",
+  "prompt_sha256": "4c98973170faa8e15fdd9cf5262709a26c73f1b8f1721da9f822212ab8c5ad95",
+  "status": "received",
+  "received_at": "2026-10-22T16:18:23+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Reviewer correction: pale robe, dark apron, tool loops, bandage roll and star-inlaid staff are present; staff ends leave under 10% margin.",
+  "model": "not shown",
+  "notes": "Narrow-margin advisory inspected: complete staff and figure inside image without edge contact.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-STARCINDER.png",
-   "sha256": "0ff8c1a6f59a089e7e204aa76a00a377f304025b72b03b0e5a66df8856679902",
+   "sha256": "4b485bf4e236f3fd9b1ef9acd3882b1971f7a4210ae84e7ec39fc1afbbd5485f",
    "px": [
     1024,
     1536
@@ -10036,17 +10036,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-STARCINDER.png",
-   "sha256": "cef1d101ad49574cae08612d012a4e44273df380e015c6cf71878af86c4bd11f",
+   "sha256": "9b8dafc4786a5fdb07042b229ab4756170486b647abb09ffb4d1e13e4f1fc141",
    "px": [
-    681,
-    1481
+    750,
+    1474
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.27
+   "max_print_w_in_300ppi": 2.5
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-STORMCROOK": {
   "family": "hero",
