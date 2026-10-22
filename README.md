@@ -23,12 +23,12 @@ Targeted editorial, reader, accessibility, and physical-proof checks: [publicati
 
 <!-- BEGIN AUTO:recent -->
 
-- [`dda0f180`](https://github.com/xjordont/Heraldry/commit/dda0f180838931a6a183fa95a82c736f469a7cf6) heroes: blank hero sheet, party ledger, and 24 Basic Mode hero cards
-- [`90022b3c`](https://github.com/xjordont/Heraldry/commit/90022b3c3e443b03ed8d37902b745e24db895652) aids: measured flowchart layout and Oxford commas throughout
-- [`bba496a8`](https://github.com/xjordont/Heraldry/commit/bba496a82f090eac95c1b89a86a46ec02711bd10) art: rewrite 24 hero briefs for distinct, cleaner figures and queue the redo
-- [`5e6cb94d`](https://github.com/xjordont/Heraldry/commit/5e6cb94d738f5ed708f1730c7a63085d706397f4) aids: art inside the margin, second wording pass, larger tags
-- [`47353672`](https://github.com/xjordont/Heraldry/commit/473536723667d846a023a964cb1aa7708e8cba6d) aids: remove a stray rendered PDF and ignore renders beside sources
-- [`1cbb391e`](https://github.com/xjordont/Heraldry/commit/1cbb391e27276f7a067d6b2e0cae79ac7e670c2d) aids: compose the ten player-aid sheets PA-1 to PA-10
+- [`523070d8`](https://github.com/xjordont/Heraldry/commit/523070d87119ac3fb7a131552fbee8b88a224c37) Merge branch 'main' of https://github.com/xjordont/Heraldry
+- [`51c8161c`](https://github.com/xjordont/Heraldry/commit/51c8161cb3af0cce9a0c52904c2c3dac06b2bdfd) heroes: redesign sheets, ledger, and cards as engraved plates
+- [`fa27a870`](https://github.com/xjordont/Heraldry/commit/fa27a870a15c117847ba5b313fb12785d0fd01f9) art: intake of ChatGPT Work images
+- [`f8c63698`](https://github.com/xjordont/Heraldry/commit/f8c636985a2c8ae3942332912e380f9bdf82cc2e) art(gpt): ART-HER-HEARTHBELL .. ART-HER-HEARTHBELL
+- [`e8d43db1`](https://github.com/xjordont/Heraldry/commit/e8d43db117f689227f92b3c73030597d92864a3a) art: intake of ChatGPT Work images
+- [`b30f900f`](https://github.com/xjordont/Heraldry/commit/b30f900f49933fb259002f3747291a9e6ce36ed8) art(gpt): ART-HER-GRAVEGLASS .. ART-HER-GRAVEGLASS
 
 <!-- END AUTO:recent -->
 
