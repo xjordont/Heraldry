@@ -10084,17 +10084,17 @@
   "title": "Thornmere",
   "heading_id": "h-thornmere",
   "route": "gpt",
-  "spec_sha256": "aee9bce76d6411bae7483cb30a1659059f55f50ed1acc009a90159b6ffe7b3bd",
-  "prompt_sha256": "5ea0697b1e2592fd1bd63b666b421f8172ef700f13f959ec1e9fff3b6a19854b",
-  "status": "rejected",
-  "received_at": "2026-10-22T02:13:38+00:00",
+  "spec_sha256": "5b7deb10d7331aaa29ecb2178540833c7464da84561980e33b98c35a9d07c5b3",
+  "prompt_sha256": "15b382829dcd6937579bcfe1a8031efc81860153b7eaa60754592fd1d5ea70b1",
+  "status": "received",
+  "received_at": "2026-10-22T16:33:23+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Reviewer correction: close hood and short cape with bold thorn sprigs replace ragged cloak; bow, quiver and sickle present. Bow top and arrow tip leave less than 10% margin.",
+  "model": "not shown",
+  "notes": "Automated edge warning inspected: complete bow and arrow point inside image with no edge contact.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-THORNMERE.png",
-   "sha256": "520659cb3c0c6a209afa461fc7bc8aafcef7673446277e55e50a8156eb998183",
+   "sha256": "fff8ddb216146db6f2d83757878be4fe9bf4922ab3767be02419cecbe31466bb",
    "px": [
     1024,
     1536
@@ -10102,17 +10102,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-THORNMERE.png",
-   "sha256": "32554721b04715acd92c6a4b946d8989ac58a49a46eaa1c261ffff608f8a78da",
+   "sha256": "1f8330c0333845e34400c5cdc982e328315b09b0b195525519eeed90b244d478",
    "px": [
-    894,
-    1468
+    907,
+    1490
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.98
+   "max_print_w_in_300ppi": 3.023
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-THOUGHTWAKE": {
   "family": "hero",
