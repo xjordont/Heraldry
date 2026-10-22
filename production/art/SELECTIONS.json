@@ -9589,17 +9589,17 @@
   "title": "Galefletch",
   "heading_id": "h-galefletch",
   "route": "gpt",
-  "spec_sha256": "707739418fb76e85dff7ed4164ad79f19ac68def06c6f7ac02612d95d7c15034",
-  "prompt_sha256": "f17220947a27a2c4fdb88fe27b9a8b6fe909ec7396bc6114326346df974c426b",
-  "status": "rejected",
-  "received_at": "2026-10-21T15:30:10+00:00",
+  "spec_sha256": "26a338bf0d807d52eb70991180e62aea41d53fe3355b53b6221c5a895493b35c",
+  "prompt_sha256": "d2975d67674a20d8de2094fb145c2c0ae07a31ec6b79db66f624029903aef87b",
+  "status": "received",
+  "received_at": "2026-10-22T01:45:36+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Checker warned narrow margin (2.6% outer 6% band); visual review shows no crop and all required gear. Preserve warning.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Correction: replace any ragged cloak with a short, cleanly hemmed leather coat and streaming scarf/hair; keep the shortbow, long arrow fletching, belt dagger and wax-sealed dispatch satchel. Correction: keep bold simple shapes, sparse hatching, pure black ink, at least 10% clean margin and no stray marks; keep the full figure and equipment visible. Automated narrow-margin warning 2.4%; no crop or edge contact.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GALEFLETCH.png",
-   "sha256": "2b24f764f78ff2d2719523a088024112db82e28f5f837806129233b1629da594",
+   "sha256": "4bda1a730369785325a1e0ea44b14788f82644cc50c935d7b0d97b167e2ae71d",
    "px": [
     1024,
     1536
@@ -9607,17 +9607,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GALEFLETCH.png",
-   "sha256": "01d3702bf0b4496d08bc200f0bc0c7a8394aa26fc02d1e954404af876a85eb35",
+   "sha256": "4a05e5087dbc89106d0b824863b2715f741aa74abe356bc6c6428d5dcd920194",
    "px": [
-    1000,
-    1475
+    952,
+    1470
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.333
+   "max_print_w_in_300ppi": 3.173
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:24+00:00",
-  "rejected_reason": "Drop the ragged cloak: a short coat with a streaming scarf and hair, long fletching, satchel and dagger, with more margin. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-GALLOWTUSK": {
   "family": "hero",
