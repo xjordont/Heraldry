@@ -9523,17 +9523,17 @@
   "title": "Embervow",
   "heading_id": "h-embervow",
   "route": "gpt",
-  "spec_sha256": "bd4a92766c878bd963d6fe0386c7d6fc8f2d7a800c9e748932e7fd83fc9e1e9a",
-  "prompt_sha256": "80c146caff53e3a195e7b8b0205869d0e7bbeac39e3114a7832bec5858d5c25d",
-  "status": "rejected",
-  "received_at": "2026-10-21T15:26:07+00:00",
+  "spec_sha256": "244471ca46026e3c7d205b874e7be13b9f85cecffde206a7ba96275fb80ddaa3",
+  "prompt_sha256": "56c6f74380e84c443c221e8b0c7cb1775a99fb507e270b317984c5af61d9db28",
+  "status": "received",
+  "received_at": "2026-10-22T01:42:29+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "One generation, 1024x1536. Checker flagged stray edge marks (0.15%) and narrow margin (3.2% of outer 6% band); visual review confirms full figure, tail, and staff are uncut. Preserve warnings.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Correction: show two curved horns and the barbed tail clearly in silhouette; keep Embervow human-bodied, the two-handed quarterstaff and both belt flasks visible. Correction: use a fitted, quilted frock-coat gambeson with pale trim instead of any ragged cloak; keep clothing intact, use bold simple shapes, sparse hatching, pure black ink and at least 10% clean margin with no stray specks. Flag: small red tint at eyes; automated narrow-margin warning 2.3%.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-EMBERVOW.png",
-   "sha256": "0e2c009ed357a225488d724b0bdf1f57cb5ed06c331d07eea1c8eadd67f42a69",
+   "sha256": "b3f6b459d4438550f1d6dabb42e707bc79b2d06c285ae6d2b2fad6f0ce651e75",
    "px": [
     1024,
     1536
@@ -9541,17 +9541,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-EMBERVOW.png",
-   "sha256": "985f61754b9be0ca812ae295451ebaefc6d5998a5ee1497c0bf3854d44a55ab8",
+   "sha256": "3896c3ec17b5781f60aa91aeca498c246f18f7df3afe859e95eef0672de805cb",
    "px": [
-    813,
-    1503
+    905,
+    1485
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.71
+   "max_print_w_in_300ppi": 3.017
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:23+00:00",
-  "rejected_reason": "Show the horns and tail clearly in silhouette and use a fitted quilted frock-coat gambeson with pale trim instead of a ragged cloak. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-FURROWROOT": {
   "family": "hero",
