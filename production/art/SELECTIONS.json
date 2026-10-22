@@ -9655,17 +9655,17 @@
   "title": "Gildmirror",
   "heading_id": "h-gildmirror",
   "route": "gpt",
-  "spec_sha256": "c41e67ab924e301c07cccc7a87549785f7f6c2cdf2c68cd1d97aa7ada2d8440c",
-  "prompt_sha256": "d584d1181bdcf42a7fdd0352416b4310be7cf0ec62438552d89ab0ad611871f6",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:49:48+00:00",
+  "spec_sha256": "d4e7f190f2410d7133a3f52051ab8f7b3f88e295e8ad9fbaf02d628dddd8354c",
+  "prompt_sha256": "5bb28e77f3a03bb09b7f6d35fee27ebf89721911ca985be441755c985c2262f3",
+  "status": "received",
+  "received_at": "2026-10-22T15:26:39+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Correction: use an intact dapper leather frock coat with gilt buttons; keep the extended rapier, blank gilt-framed mirror and belt bandages, with no duplicate figure. Correction: keep garments cleanly hemmed, shapes bold and hatching sparse, pure black ink, at least 10% clear margin and no stray specks; keep the full figure and accessories visible.",
+  "model": "not shown",
+  "notes": "",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-GILDMIRROR.png",
-   "sha256": "26cf3ee0123f9172f805122ffc92bf7b8d97bb6f7eb4b3994434f7d4acec0e5e",
+   "sha256": "735bb6357e6acde9174877f38ebeaae1d1ec8a23b9947d7a3f5dc87a727e574f",
    "px": [
     1024,
     1536
@@ -9673,17 +9673,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-GILDMIRROR.png",
-   "sha256": "c7c461967cd3472ef7fd9878d7cfb01758a51e518db703ae65ee616e52fcb3b9",
+   "sha256": "ac6c0254d7368c535f9c37498e397ac54e27d60277606ce083314b63e6bc15cb",
    "px": [
-    983,
-    1300
+    986,
+    1348
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.277
+   "max_print_w_in_300ppi": 3.287
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-GNAWTHOUGHT": {
   "family": "hero",
