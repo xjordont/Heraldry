@@ -9358,17 +9358,17 @@
   "title": "Ashborn",
   "heading_id": "h-ashborn",
   "route": "gpt",
-  "spec_sha256": "ff2a77b26140cba4457175c3112fa8ef9c5cfc098008d296f35b0ab19e253926",
-  "prompt_sha256": "d812f9983b8c68ead3a213c202a0f6d84e0cae1aa1cbae5636cce02739bd1f6a",
-  "status": "rejected",
-  "received_at": "2026-10-21T15:15:35+00:00",
+  "spec_sha256": "e451613fdeeec3a88794d7c04ff7b0560081391c1c194dbee65d1247a168653a",
+  "prompt_sha256": "59e3504c291be6dfe7e1cc96244644c6b8b5d22d42c1ab13f0a1972f57ba79e1",
+  "status": "received",
+  "received_at": "2026-10-22T01:33:27+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool gave no model label)",
-  "notes": "Tripwire warned of 9.36% mid-gray pixels; visual inspection found high-contrast ink hatching on white paper, not a visible grey wash.",
+  "model": "Imagegen default model (tool exposed no model label)",
+  "notes": "Correction: clearly show two small horns and the barbed tail; keep Ashborn human-bodied with the blackened open hand and club visible. Correction: replace any ragged robe with the buttoned clean black cassock over a leather coat, use sparse hatching and pure black ink, and keep at least 10% clean margin with no stray marks; keep the pose and listed equipment.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-ASHBORN.png",
-   "sha256": "bd622b27cf260136aa3c66e38a1a12a8fdbc0b29cce447226dc0371305c37e64",
+   "sha256": "f55db96d34572d8e20a9abe0d043e20dc95961733e98775804a5855827fb0577",
    "px": [
     1024,
     1536
@@ -9376,17 +9376,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-ASHBORN.png",
-   "sha256": "7266e12a13646023197c1916f2a71f0fd54efc9e753c1283a92ada84244b312e",
+   "sha256": "76eb6a6021159d85596e3c72f665b463ddd675d9c436cefc0278aa9b283b5faf",
    "px": [
-    863,
-    1479
+    873,
+    1466
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 2.877
+   "max_print_w_in_300ppi": 2.91
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-21T23:46:25+00:00",
-  "rejected_reason": "Show horns and tail clearly and use a buttoned, clean black cassock instead of a ragged robe; reduce dense hatching. Regenerate from the rewritten prompt: clean intact clothing with no tattered hems, bold simple shapes with sparing hatching, pure black ink only, at least 10% white margin and no stray specks."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-BLACKKNIFE": {
   "family": "hero",
