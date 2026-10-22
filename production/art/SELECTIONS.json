@@ -9787,17 +9787,17 @@
   "title": "Ironscar",
   "heading_id": "h-ironscar",
   "route": "gpt",
-  "spec_sha256": "391e6acb71ffeb9f35ea400b002e92fab75141aedce638a18049f593bfd4443b",
-  "prompt_sha256": "9c844e0e26fe3ef1763365b8191634a10a3eda6c5e77da94c143170a7f05d290",
-  "status": "rejected",
-  "received_at": "2026-10-22T01:57:44+00:00",
+  "spec_sha256": "ccf11f7dcd1387ae3be17bcdacacf20bbf6ec810be59222ab191911abb6608d1",
+  "prompt_sha256": "ffcc6e15101a80c6592c64fc5ea5f8121780df630e63df37fe3be54fa2c48855",
+  "status": "received",
+  "received_at": "2026-10-22T15:35:29+00:00",
   "surface": "Codex",
-  "model": "Imagegen default model (tool exposed no model label)",
-  "notes": "Reviewer correction: clean, intact cloth and half-black heater shield; margin remains below 10% at the mace on the left. Full composition inspected at print size.",
+  "model": "not shown",
+  "notes": "Faint reddish scar and warm tint on pale cloth/shield recorded; midtone advisory otherwise reflects hatching.",
   "intake_warnings": [],
   "master": {
    "path": "assets/art/incoming/ART-HER-IRONSCAR.png",
-   "sha256": "024180ae79e40ebb518ab3c775af0cc67a63b8e009d3f43f3272e92c2b6935b2",
+   "sha256": "c8a28e16f4413cea06bdf92d1d29b22f3b60b0b36bedcfe6888012b5f58abe6a",
    "px": [
     1024,
     1536
@@ -9805,17 +9805,15 @@
   },
   "ink": {
    "path": "assets/art/ink/ART-HER-IRONSCAR.png",
-   "sha256": "82b82a4c5d7e73d26cf85ddf13b23918e4880d92ed1f9b7cd493e88d3539b7c8",
+   "sha256": "50c4d99e960bd21d16a2ddb805f4b22daf67deabc5a2ba1fee18982b339f1362",
    "px": [
-    955,
-    1371
+    976,
+    1373
    ],
    "flags": [],
-   "max_print_w_in_300ppi": 3.183
+   "max_print_w_in_300ppi": 3.253
   },
-  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn.",
-  "rejected_at": "2026-10-22T14:17:58+00:00",
-  "rejected_reason": "Owner requests V3 halfway between own V1 and V2: favour V1 pen style and V2 intact clothing and individuality; follow revised targeted fixes."
+  "provenance": "AI-generated in Codex from the recorded prompt; not hand-drawn."
  },
  "ART-HER-MOSSGRAVE": {
   "family": "hero",
