@@ -52,12 +52,12 @@ def status():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=("doctor", "check", "status", "manuscript", "indesign", "layout"))
+    parser.add_argument("command", choices=("doctor", "check", "status", "manuscript", "indesign", "layout", "agent"))
     parser.add_argument("--python", help="override automatic .venv / Heraldry environment selection")
     parser.add_argument("--base", default="origin/main", help="snapshot history reference for check (local tracking ref)")
     # Delegate optional commands' help/options to their selected-runtime tools.
     argv = sys.argv[1:]
-    delegated = next((name for name in argv if name in {"manuscript", "indesign", "layout"}), None)
+    delegated = next((name for name in argv if name in {"manuscript", "indesign", "layout", "agent"}), None)
     if delegated:
         position = argv.index(delegated)
         args = parser.parse_args(argv[:position + 1])
@@ -67,9 +67,9 @@ def main():
     try:
         python = select_python(override=args.python)
         print("Python: " + python, flush=True)
-        if args.command in {"manuscript", "indesign", "layout"}:
+        if args.command in {"manuscript", "indesign", "layout", "agent"}:
             script = {"manuscript": "tools/update_manuscript.py", "indesign": "tools/export_indesign.py",
-                      "layout": "tools/layout_workflow.py"}[args.command]
+                      "layout": "tools/layout_workflow.py", "agent": "tools/agent_workflow.py"}[args.command]
             return run(python, script, *delegated_args)
         if args.command == "status":
             return status()

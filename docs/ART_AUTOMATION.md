@@ -1,5 +1,10 @@
 # Artwork workflow — GPT image pen-and-ink route
 
+## Shared client authority
+
+Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal developer, orchestrator, repair, and reviewer authority under `docs/AGENT_OPERATIONS.md`. Client names in the procedure identify the original route, not exclusive permissions. A generation-only worker remains scoped to its assigned image/receipt delivery and does not approve its own work. An assigned reviewer on any client may inspect, approve, reject, and send redos using the existing evidence gates. Use the actual client and reviewer name in provenance. Native model/tool, authentication, file, and transport availability must be checked in the current session.
+
+
 Images are generated with GPT image generation within the owner's ChatGPT plan, with no paid image API (owner decisions 2026-10-10 and 2026-10-11).
 - **Current route:** Codex on the owner's Windows PC, following `production/art/codex/BATCH_CARD.md`.
 - **Fallback:** ChatGPT Work with the offline input package.
@@ -109,12 +114,12 @@ Only `approved` and `anchor-approved` art is placed in the book.
   - `validate_skill.py` checks a built ZIP.
 - **`tools/art_skill_build.py`** writes the skill's `references/FAMILIES.md` from the config and builds the ZIP deterministically. The tests build it fresh and validate it.
 
-Claude Code owns the prompts, queue, references, review and approval. The skill only runs the queue and checks what it delivers.
+The assigned orchestrator owns the prompts, queue, references, review and approval. The skill only runs the queue and checks what it delivers.
 
 ## Codex cadence
 
 - **Per image:** `push_every: 1`, so each saved image is delivered at once, and a 5-hour or weekly usage limit never strands work.
-- **Every tenth image:** a drift review (`sheet --recent 10 --refs`, `style_audit.py --recent 10`). Codex reports drift and keeps going (owner 2026-10-12: run the whole list); Claude Code reviews and sends redos.
+- **Every tenth image:** a drift review (`sheet --recent 10 --refs`, `style_audit.py --recent 10`). Codex reports drift and keeps going (owner 2026-10-12: run the whole list); the assigned reviewer reviews and sends redos.
 - **Usage:** ChatGPT Plus resets every 5 hours. Codex stops at the limit with everything delivered, and the same prompt resumes. Codex's image tool accepts at most five reference images (it refused six on 2026-10-12).
 - **Resumable:** the next session's identical prompt (`CODEX_PROMPT.md`) resumes from `next`.
 - **Lean token use:**

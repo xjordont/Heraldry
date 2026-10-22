@@ -1,5 +1,10 @@
 # Codex build card (primary developer, build orchestrator, and reviewer)
 
+## Shared client authority
+
+Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal developer, orchestrator, repair, and reviewer authority under `docs/AGENT_OPERATIONS.md`. Client names in the procedure identify the original route, not exclusive permissions. A generation-only worker remains scoped to its assigned image/receipt delivery and does not approve its own work. An assigned reviewer on any client may inspect, approve, reject, and send redos using the existing evidence gates. Use the actual client and reviewer name in provenance. Native model/tool, authentication, file, and transport availability must be checked in the current session.
+
+
 Owner decisions 2026-10-14: Codex orchestrates the whole build and release overnight, and Codex performs the all-page visual review
 that gates the release. The owner's 2026-10-15 handoff makes Codex the primary developer. Read `CLAUDE.md`, `AGENTS.md`,
 `production/STATE.md`, `docs/WORKFLOW.md`, and `docs/BUILD_AUTOMATION.md`. Work in PowerShell from `C:\Heraldry\art-producer` on `main`, with

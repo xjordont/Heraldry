@@ -10,7 +10,7 @@
         Extract into an empty temporary folder and check the manifest, prompt hashes and reference decoding, then run
         the packaged work_preflight.py --offline-package and helper doctor/status with Git credentials unavailable.
   python3 tools/art_work_package.py verify-bundle BUNDLE.zip
-        Claude Code's first step on a Work review bundle: hashes, receipts, QA reports and references against this repo.
+        The assigned reviewer's first step on a Work review bundle: hashes, receipts, QA reports and references against this repo.
         It approves nothing.
   python3 tools/art_work_package.py import-bundle BUNDLE.zip
         verify-bundle, then copy the native images into assets/art/incoming and append receipts_append.jsonl to
@@ -163,7 +163,7 @@ python {SCRIPTS}/style_audit.py --repo . --limit 10 --out {s}/style.json
 `receipts_append.jsonl`, every QA report, your evidence and a hash manifest. Give it to the owner as a
 downloadable file and state plainly: nothing was pushed to GitHub; nothing is approved. Bundle at least every
 {q.get('push_every', 5)} saved images (the review bundle should stay under GitHub's 25 MB browser upload). Continue
-until `status` says NOTHING LEFT (anchors phase: stop after the anchors). Claude Code reviews independently.
+until `status` says NOTHING LEFT (anchors phase: stop after the anchors). An assigned reviewer on any supported client reviews the delivered art; generation-only workers do not approve their own delivery.
 """
 
 

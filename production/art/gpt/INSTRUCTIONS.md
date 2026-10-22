@@ -1,6 +1,11 @@
 # Standing instructions for Heraldry illustrations (skill v8)
 
-The GitHub repository is the source of truth. Claude Code prepares prompts, queue, reference sets and review decisions. The art worker (Codex on the owner's PC; ChatGPT Work as the fallback) generates native images and returns exact bytes, receipts, and QA evidence. Work never edits prompts, queue, source rules, or other code while processing illustration batches.
+## Shared client authority
+
+Owner instruction, 2026-10-22: Claude Code, Codex, and ChatGPT Work have equal developer, orchestrator, repair, and reviewer authority under `docs/AGENT_OPERATIONS.md`. Client names in the procedure identify the original route, not exclusive permissions. A generation-only worker remains scoped to its assigned image/receipt delivery and does not approve its own work. An assigned reviewer on any client may inspect, approve, reject, and send redos using the existing evidence gates. Use the actual client and reviewer name in provenance. Native model/tool, authentication, file, and transport availability must be checked in the current session.
+
+
+The GitHub repository is the source of truth. The assigned orchestrator prepares prompts, queue, reference sets and review decisions. The art worker (Codex on the owner's PC; ChatGPT Work as the fallback) generates native images and returns exact bytes, receipts, and QA evidence. The generation-only worker never edits prompts, queue, source rules, or other code while processing illustration batches.
 
 Use the installed `heraldry-classic-ink-art` v8 skill (source in `production/art/skill/heraldry-classic-ink-art/`). If not installed, read `SKILL.md` from the checked-out repository. The queue remains `production/art/gpt/QUEUE.json`, schema 2; prompts and prompt_sha256 are immutable per item; each item lists its own references (at most 6), must-show and do-not-draw clauses, native size, and attempt budget.
 
@@ -23,7 +28,7 @@ Commands use the full path `python production/art/skill/heraldry-classic-ink-art
 - Save the original native image to a scratch file; keep it byte-identical. Never alter or upscale it for delivery.
 - Run `heraldry_art.py check ID SCRATCH_IMAGE` and inspect its actual print-size preview and referenced images. The tripwires cannot judge artistic excellence.
 - Run `heraldry_art.py qa ID IMAGE` to create the scratch QA JSON, fill all ten visual checks with genuine image-specific evidence, and ensure image/reference/prompt hashes match. For a passing candidate, run `heraldry_art.py save ID IMAGE [--must ...] [--avoid-clear]` (the draft is found automatically). No QA report means no save.
-- Stop at the first clearly passing candidate, within the queue's `max_attempts`. At exhaustion only, the existing `--accept-flags` route may hand off a flagged result, with explicit unresolved issues. Work never approves publication art.
+- Stop at the first clearly passing candidate, within the queue's `max_attempts`. At exhaustion only, the existing `--accept-flags` route may hand off a flagged result, with explicit unresolved issues. The generation-only worker never approves publication art.
 - Record one `production/art/gpt/RECEIPTS.jsonl` line per save, preserving existing fields; the helper embeds the ten evidence-backed QA decisions and adds native-image SHA metadata.
 
 ## Batches and safe delivery
@@ -32,7 +37,7 @@ Each image is delivered as soon as it is saved (`push_every: 1`); `status` says 
 
 Run `delivery_guard.py ship --execute --repo .`; it validates everything first and needs Git LFS and remote authentication. The guard stages ONLY queued incoming images and receipts, refuses unrelated worktree changes, checks LFS pointers, fast-forwards over upstream commits only when they touch none of the delivered files, stops on divergence or overlap, and never force-pushes or merges. If it stops or a tool is unavailable, run `heraldry_art.py bundle --evidence <contact sheet> --evidence <style audit JSON>` outside the clone; deliver the ZIP as a downloadable file without claiming a Git push. In the offline package, `delivery_guard.py` refuses (no Git), so `bundle` is the only delivery; it applies the same receipt and QA hash gate first.
 
-An `anchors` phase, when one is published, ends after delivery of its items until Claude Code reviews them. In the batch phase, a rejected image returns as a `redo` with the reviewer's reason and a fresh attempt budget; `status` puts redos first.
+An `anchors` phase, when one is published, ends after delivery of its items until the assigned reviewer reviews them. In the batch phase, a rejected image returns as a `redo` with the reviewer's reason and a fresh attempt budget; `status` puts redos first.
 
 ## Authority and limitations
 
@@ -41,4 +46,4 @@ An `anchors` phase, when one is published, ends after delivery of its items unti
 3. The v8 skill governs production and QA steps without overriding canonical subject facts.
 4. The manuscript and lore remain untouched by Work.
 
-This process improves consistency but cannot guarantee visually identical generation across all subjects. Exact replay of an already approved asset requires copying the approved bytes rather than regenerating it. Automated tests verify package integrity and mechanical gates, not final artistic quality. Claude Code/owner makes the final publishing decision.
+This process improves consistency but cannot guarantee visually identical generation across all subjects. Exact replay of an already approved asset requires copying the approved bytes rather than regenerating it. Automated tests verify package integrity and mechanical gates, not final artistic quality. The owner or assigned reviewer makes the final publishing decision.

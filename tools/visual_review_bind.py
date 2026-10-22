@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bind the all-page visual review of a candidate PDF into production/qa/visual-review.json (standard library only).
 
-Owner decision 2026-10-14: the review of the candidate is done by Codex, unattended. This tool keeps that review honest.
+Owner decision 2026-10-14: the candidate requires actual image inspection by the assigned reviewer on any supported client. This tool keeps that review honest.
 Input: a JSON review record the reviewer wrote after actually viewing every file listed in production/qa/review/manifest.json.
 Refuses unless: the candidate is CANDIDATE_READY and matches the manifest's PDF hash; every contact sheet, detail page and the
 calibration sheet has an entry with real observations; the image files on disk match the manifest hashes (the reviewer had the
@@ -9,7 +9,7 @@ real images, not LFS stubs); a reviewer is named; and no finding is marked major
 the tool prints it and exits 2.
 
 Review record:
-  {"reviewer": "Codex (OpenAI model, image inspection)",
+  {"reviewer": "Actual client and model, image inspection",
    "sheets":  [{"file": "sheet-01.jpg", "observations": "...", "findings": [{"page": 12, "severity": "minor|major", "text": "..."}]}, ...],
    "details": [{"file": "page-0001.jpg", "observations": "..."}, ...],
    "covers": [{"file": "cover-front.jpg", "observations": "..."}, {"file": "cover-back.jpg", "observations": "..."}],

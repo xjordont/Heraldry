@@ -1,6 +1,6 @@
-# Agents working in this repository (Codex and others)
+# Agents working in this repository (Claude Code, Codex, and ChatGPT Work)
 
-`CLAUDE.md` is the governing contract for every agent. Read it, `production/STATE.md`, `docs/WORKFLOW.md`, and `docs/BUILD_AUTOMATION.md` before continuing work.
+`docs/PROJECT_CONTRACT.md` is the shared governing contract for every agent. Read it, `docs/AGENT_OPERATIONS.md`, `production/STATE.md`, `docs/WORKFLOW.md`, and `docs/BUILD_AUTOMATION.md` before continuing work.
 
 For layout work, follow [docs/LAYOUT_WORKFLOW.md](docs/LAYOUT_WORKFLOW.md): plan/check first, exact-input measurement caching, semantic table policies, and fail-fast local proof receipts. Tooling changes alone do not authorize full-book builds.
 
@@ -12,9 +12,9 @@ Owner-supplied full manuscript updates use [docs/MANUSCRIPT_UPDATES.md](docs/MAN
 
 InDesign is an optional, explicitly invoked export ([docs/INDESIGN_EXPORT.md](docs/INDESIGN_EXPORT.md)). Use `python tools/dev.py indesign export --output <new-folder>` or the manual-only workflow. Never attach it to ordinary checks, manuscript promotion, artwork intake, or PDF builds. Native INDD composition requires installed InDesign; keep structural validation, native composition, visual review, and physical proof statuses separate. Linked SVG originals remain editable source graphics; do not claim native InDesign paths or a PDF-identical layout.
 
-## Codex role (owner handoff, 2026-10-15)
+## Equal agent authority (owner instruction, 2026-10-22)
 
-Codex is the primary developer and integration owner across manuscript tooling, artwork, figures, layout, tests, documentation, and releases. This supersedes the former art-worker-only role and restricted build-orchestrator carve-out. Continue authorized work and repair build failures within the governing contract; substantive rules ambiguities still require an owner decision.
+Claude Code, Codex, and ChatGPT Work may each act as primary developer and integration owner across manuscript tooling, artwork, figures, layout, tests, documentation, and releases. This supersedes the former art-worker-only role and restricted build-orchestrator carve-out. Continue authorized work and repair build failures within the governing contract; substantive rules ambiguities still require an owner decision.
 
 ## Required safeguards
 
@@ -29,6 +29,6 @@ Codex is the primary developer and integration owner across manuscript tooling, 
 
 ## Track-specific instructions
 
-For artwork generation and guarded delivery, follow the live `production/art/codex/BATCH_CARD.md`, `production/art/codex/CODEX_RUNBOOK.md`, and `production/art/skill/heraldry-classic-ink-art/SKILL.md`. Delivery is not approval; record an actual visual review before approving artwork. Old worker allowlists apply to that delivery procedure, not to Codex's overall developer role.
+For artwork generation and guarded delivery, follow the live `production/art/codex/BATCH_CARD.md`, `production/art/codex/CODEX_RUNBOOK.md`, and `production/art/skill/heraldry-classic-ink-art/SKILL.md`. Delivery is not approval; record an actual visual review before approving artwork. Old worker allowlists apply to the scoped generation/delivery procedure, not to any client's overall developer or review role. Use `python tools/dev.py agent list` for shared workflows and `agent role NAME` for portable specialist instructions.
 
-The build cards and historical prompts describe their scoped runs. Where they retain the former role restriction or require stopping at a repairable build failure, this owner handoff supersedes those restrictions. Preserve all manuscript, review, release, credential, and physical-proof safeguards.
+The build cards and historical prompts describe their scoped runs. Where they retain the former role restriction or require stopping at a repairable build failure, this equal-authority owner instruction supersedes those restrictions for all three clients. Preserve all manuscript, review, release, credential, and physical-proof safeguards.

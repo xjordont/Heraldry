@@ -16,7 +16,8 @@ SOURCE_HASH = '2744833106569e6b20f6913340de5d80c7869782556e23b8f738a0407e4f16f3'
 AGENTS = {'book-designer': 'medium', 'publication-engineer': 'high',
           'publication-auditor': 'high', 'rules-illustrator': 'high',
           'mechanical-assistant': None}
-REQUIRED = ['MASTER_PROMPT.md', 'CLAUDE.md', 'README.md',
+REQUIRED = ['MASTER_PROMPT.md', 'CLAUDE.md', 'AGENTS.md', 'README.md',
+            'docs/PROJECT_CONTRACT.md', 'docs/AGENT_OPERATIONS.md', 'config/agent_workflows.json',
             'docs/DESIGN_SPEC.md', 'docs/ART_DIRECTION.md', 'docs/REFERENCE_ANALYSIS.md',
             'docs/LAUNCH_CHECKLIST.md', 'source/source_inventory.json',
             'references/reference_manifest.json', 'references/README.md',
@@ -118,7 +119,9 @@ def main() -> int:
             require(fields.get('effort') == effort, f'{name}: effort mismatch')
             tools = {x.strip() for x in fields.get('tools', '').split(',')}
             require({'Read', 'Write', 'Bash'} <= tools and 'Agent' not in tools, f'{name}: invalid tool contract')
-        return 'Five bounded model/effort/tool definitions validated; runtime resolution is separate'
+        from agent_workflow import catalog
+        shared = catalog(root)
+        return f"Five Claude-native adapters and {len(shared['workflows'])} shared workflows validated for all three clients; runtime resolution is separate"
 
     def references():
         m = json.loads((root / 'references/reference_manifest.json').read_text(encoding='utf-8'))
@@ -153,12 +156,12 @@ def main() -> int:
         check('shipped_baseline', baseline)
     commands = {n: bool(shutil.which(n)) for n in ['git', 'python3', 'typst', 'pandoc', 'pdfinfo', 'pdftoppm', 'qpdf', 'gs']}
     modules = {n: importlib.util.find_spec(n) is not None for n in ['typst', 'fitz', 'pypdf', 'markdown_it', 'fontTools', 'PIL']}
-    result = {'scope': 'Repository contracts only; not publication or live-Claude-account certification',
+    result = {'scope': 'Repository contracts only; not publication or live-agent-account certification',
               'kit_status': 'FAIL' if any(c['status'] == 'FAIL' for c in checks) else 'PASS',
               'checks': checks,
               'runtime_observed': {'python': sys.version.split()[0], 'commands': commands, 'python_modules': modules},
-              'external_inputs': {'claude_model_access': 'VERIFY_IN_CLAUDE',
-                                  'cloud_network_and_dependency_provisioning': 'VERIFY_IN_CLAUDE',
+              'external_inputs': {'agent_model_and_tool_access': 'VERIFY_IN_CURRENT_CLIENT',
+                                  'cloud_network_and_dependency_provisioning': 'VERIFY_IN_CURRENT_CLIENT',
                                   'original_illustrations': 'CHATGPT_WORK_GENERATED_MASTERS; INTEGRATE_AND_REVIEW',
                                   'physical_inkjet_proof': 'NOT TESTED; DOES NOT BLOCK FILE COMPLETION',
                                   'commercial_cover_wrap': 'NOT APPLICABLE UNLESS SEPARATELY REQUESTED'},
